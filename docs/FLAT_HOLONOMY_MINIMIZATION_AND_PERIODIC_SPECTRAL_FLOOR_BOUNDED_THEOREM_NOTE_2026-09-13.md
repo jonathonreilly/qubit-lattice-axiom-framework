@@ -1,0 +1,431 @@
+---
+claim_id: flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13
+claim_type: bounded_theorem
+claim_scope: "For supplied charged rotor Hamiltonians, derive a ring holonomy-minimization limit and loop concentration, and propose the leading fixed-volume periodic spectral floor from normal oscillators and flat-connection matter energies. An exact rational certificate shows a nonidentity flat twist lowers the specified 3-cubed mixed-carrier free-matter ground energy. Ring joint cutoff convergence and periodic iterated cutoff recovery are distinguished. No thermodynamic charged phase, uniform finite-payload rate, common interacting cone, Hamiltonian selection or axiom update is claimed."
+upstream_dependencies:
+  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
+runner: scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py
+---
+
+# Flat holonomies and the finite-volume spectral floor
+
+**Date:** 2026-09-13
+**Type:** bounded_theorem
+**Status:** proposed_retained
+
+Flat global holonomies survive local plaquette constraints and can change
+the weak-coupling matter vacuum. An exact charged-ring argument gives
+convergence of every fixed low eigenvalue to the minimum over holonomies,
+with loop concentration at pi in the stated example. The periodic rotor
+extension below adds normal gauge oscillators and gives a proposed leading
+spectral floor. A strict finite-box comparison in the actual mixed carrier
+demonstrates why the identity comparator cannot be assumed to minimize it.
+
+~~~yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Exact ring min-max and concentration, proposed finite-volume localization theorem, and rationally certified flat-twist comparison."
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Retain global flat gauge degrees of freedom when identifying the charged periodic weak-coupling vacuum."
+source_of_blocker_text: user_goal
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "Derive the slow holonomy Hamiltonian and its volume dependence, then separate those levels from transverse and charged excitation observables."
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+~~~
+
+The [minimal framework memo](MINIMAL_AXIOMS_2026-06-29.md),
+[edge matter construction](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md)
+and [current integer-link source](THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md)
+are conditional comparison context. Graph, CAR representation, reference
+charge, time and Hamiltonian coefficients remain supplied. All operators
+and the relevant proofs are stated below; unmerged campaign notes are not
+theorem premises. No axiom, approved primitive or audit verdict is changed.
+
+Flux minimization is an established problem. [Nakano](https://arxiv.org/pdf/math-ph/0006022),
+sections 1-2, studies a spinful Hubbard ring using occupation-graph fluxes.
+Its particle-count formula is not imported into the spinless two-particle
+example below, which is diagonalized directly. Semiclassical localization
+near manifolds of minima is also established methodology; the present
+fixed-graph argument spells out its normal metric, constant connection and
+partition estimates instead of importing a differently scoped phase theorem.
+
+
+Provisional derivation, personally developed after the open-box spectrum
+milestone. No independent review, retained status, phase theorem or axiom
+update. The ring result below is elementary. The periodic rotor argument
+is a proposed bounded theorem requiring a fresh focused proof review.
+
+## Exact charged ring and a direct weak-coupling theorem
+
+Take four vertices on an oriented cycle, one CAR orbital per vertex, two
+particles, reference eta=(0,1,0,1), unit real hopping, and no onsite term.
+There is no plaquette attached to this one-dimensional ring. The full loop
+holonomy is therefore a flat global variable, not a plaquette defect.
+Use integer electric links and Gauss divergence E=N-eta. For occupation f,
+rho_f=N_f-eta and the exact electric field is
+
+```text
+E=E0(f)+n(1,1,1,1),
+E0(f)=(rho_0,rho_0+rho_1,rho_0+rho_1+rho_2,0), n in Z.
+H_g=(g^2/2) sum_l E_l^2
+   +sum_(oriented links x,y)(c_x^dag U_(x,y)c_y+h.c.).
+```
+
+At finite S the domain is |E0(f)+n|_infinity<=S. The exact Fourier transform
+of the untruncated n coordinate identifies it with L^2(S^1) tensor the six
+dimensional two-particle space. Here n=-i partial_theta, tree hoppings have
+unit comparator and the closing hop has exp(i theta). Thus
+
+```text
+H_g=(g^2/2) sum_l[-i partial_theta+E0_l(f)]^2 + H_free(theta).
+```
+
+The electric expression is a positive quadratic form, including the
+occupation-dependent connection. The free matrix H_free(theta) is continuous
+and periodic. Let e_*=min_theta lambda_min H_free(theta).
+
+**Claim:** for every fixed eigenvalue index j, as g->0 and S->infinity
+along any joint sequence, E_j(g,S)->e_*. The untruncated operator at each
+g>0 has compact resolvent and obeys the same limit.
+
+Proof of the lower bound: H_free(theta)>=e_* I pointwise, the electric form
+is positive, and compression to the exact finite-S physical domain preserves
+the inequality. Hence every eigenvalue is at least e_*.
+
+Proof of the upper bound: choose theta_* minimizing the lowest eigenvalue
+and a normalized matter eigenvector v_* there. On a sufficiently small open
+interval I around theta_*, continuity gives
+v_*^dag H_free(theta)v_*<=e_*+epsilon. Choose j+1 orthonormal smooth scalar
+functions supported in I and multiply each by v_*. Their finite-dimensional
+span has matter Rayleigh quotient at most e_*+epsilon and finite electric
+quadratic form, with coefficient g^2. Approximate that entire span by
+finite Fourier polynomials in form norm at fixed epsilon. Because there
+are only six charge offsets, sufficiently large S contains every such
+polynomial in the exact affine domain. The finite-span error can be made
+arbitrarily small before taking g->0 and S->infinity. Min-max gives the
+matching upper limit. No claim about a uniform index or rate is needed.
+
+For this uniform ring, discrete Fourier diagonalization of the one-particle
+matrix gives eigenvalues 2cos((theta+2pi m)/4), m=0,1,2,3. For 0<=theta<=2pi,
+the two occupied negative levels sum to
+
+```text
+e(theta)=-2[cos(theta/4)+sin(theta/4)]
+        =-2 sqrt(2) cos((theta-pi)/4).
+e(0)=-2,       e(pi)=-2 sqrt(2)=e_*.
+```
+
+The minimum is unique on the circle. The theorem therefore excludes the
+identity-comparator ground energy -2 as the weak-coupling ring limit.
+It also gives E_j-E_0->0 for every fixed j. This low-level accumulation is
+different from the discrete fixed-index oscillator spectrum of a contractible
+box. The difference comes from a global flat coordinate, not a failed local
+Gauss law or an axiom contradiction.
+
+For any physical ground states with E_0->e_*, their angle probability
+outside a neighborhood of pi tends to zero. Indeed the positive electric
+term gives integral[e(theta)-e_*]||psi(theta)||^2<=E_0-e_*, and the continuous
+gap e(theta)-e_* has a positive minimum on each closed complement. It follows
+that the loop expectation <Re W_loop> tends to -1. Compression does not
+alter this expectation in a finite-S state embedded by zero extension.
+
+The local expansion has e''(pi)=sqrt(2)/8 and principal electric kinetic
+term -2g^2 partial_theta^2. A formal harmonic expansion predicts
+
+```text
+E_0=-2sqrt(2)+2^(-5/4)g+O(g^2),
+E_1-E_0=2^(-1/4)g+O(g^2).
+```
+
+The numerical prototype challenges these coefficients but is not a proof
+of these rates. A uniform Born-Oppenheimer error estimate and finite-cutoff
+error bound have not been supplied. Only the rate-free min-max statement
+and holonomy concentration are asserted above.
+
+## Proposed periodic-rotor extension
+
+Fix a finite periodic cubic box with L_i>=3, all plaquettes, four CAR
+orbitals per site and a nonempty fixed total-number sector. Supply positive
+electric/magnetic weights, a>0 and bounded number-preserving hopping/onsite
+matrices. Use untruncated integer rotors for this argument. The preceding
+Gauss reduction E=E0(f)+C n is valid on any connected graph; only the claim
+that plaquettes generate all cycles changes with topology. For completeness,
+let D be the outgoing-minus-incoming incidence matrix, choose a rooted
+spanning tree and its integer flow matrix R with D R=I-e_root 1^T and zero
+chord rows. For each chord j put C_j=e_j-R D e_j. Chord rows of C form
+identity and D C=0. Removing tree leaves shows that every integer cycle is
+uniquely C n. Supply integer eta_x and total matter number sum eta_x, and
+put E0(f)=R(N_f-eta). Then |f,n> maps isometrically onto
+|f,E0(f)+C n>, with finite cutoff |E0(f)+C n|_infinity<=S.
+For the oriented plaquette boundary matrix F, define Z by F=C Z. An oriented
+charged hop changes E by e_l and charge by D e_l, hence changes n by zero
+on tree links and by the corresponding unit vector on a chord. Thus
+H_matter(theta) is precisely the finite onsite/CAR hopping matrix with tree
+comparators I and chord j comparator exp(i theta_j). These definitions retain
+all charge offsets and physical states; no unmerged reduction theorem is
+required as a premise.
+
+After Fourier transformation, theta belongs to T^c and
+
+```text
+H_g=(g^2/(2a))(C[-i partial_theta]+E0(f))^T W_E
+                         (C[-i partial_theta]+E0(f))
+    +V(theta)/(g^2 a)+H_matter(theta),
+V(theta)=sum_p w_p[1-cos(z_p dot theta)],
+K=C^T W_E C>0,   A=Z W_B Z^T>=0.
+```
+
+The flat manifold M={theta:z_p dot theta=0 modulo2pi for every p} is the
+torus of flat connections modulo vertex gauge transformations. For this
+periodic cubic complex, H_1=Z^3 makes M a connected three-dimensional torus.
+It has a constant normal Hessian A and rank r=c-3. The gauge normal oscillator
+has positive frequencies sqrt(lambda_+(K^(1/2) A K^(1/2)))/a, equivalently
+the nonzero weighted curl frequencies. Write E_perp for half their sum and
+e_M=min_(theta in M)lambda_min H_matter(theta).
+
+**Proposed leading result:** for every fixed index j of the untruncated
+periodic operator, E_j(g)->E_perp+e_M as g->0. This is a spectral floor and
+accumulation statement, not the full photon/fermion excitation spectrum.
+
+Proof strategy with quantitative local bounds:
+
+1. The positive electric form is elliptic on the compact torus at fixed g,
+so the operator has compact resolvent. Its charge-dependent constant
+connection can be completed into the K metric plus a nonnegative longitudinal
+constant. On each simply connected chart the connection is removed by a
+componentwise scalar phase for lower kinetic estimates. Pointwise matter
+eigenvalue bounds are unchanged by that phase.
+
+2. Cover the flat torus with finitely many linear tubular charts and an
+exterior region, and choose a smooth quadratic partition of unity. For
+fixed chart width delta, the localization identity subtracts an electric
+error bounded by C_delta g^2. Magnetic and matter terms commute with the
+scalar partition. Outside a delta tube, V has a strictly positive lower
+bound, so the exterior form exceeds any fixed energy for small enough g.
+
+3. In a tube choose linear normal and tangent coordinates making the constant
+kinetic metric block diagonal. This is possible by shifting the tangent
+coordinate by a linear function of the normal coordinate; it leaves the
+normal coordinates and V unchanged. On normal radius delta,
+V is bounded below by (1-C delta^2) times its normal quadratic form. This
+follows from the cosine Taylor remainder and finite fixed plaquette vectors.
+The Dirichlet-localized normal kinetic/potential form is bounded below by
+the full-space normal oscillator ground energy, multiplied by
+sqrt(1-C delta^2). The remaining tangent kinetic term is nonnegative.
+Continuity gives H_matter(theta)>=(e_M-C' delta)I in the tube. Combining
+the partition gives liminf E_0>=E_perp+e_M after delta->0.
+
+4. For the upper bound select a point of M minimizing the matter energy,
+a fixed matter vector there, and j+1 orthonormal smooth tangent functions
+supported in a small common chart about that point. Multiply them by the
+normal oscillator Gaussian with width g, with a fixed compact normal cutoff.
+The normal energy tends to E_perp; cosine quartic errors have size O(g^2)
+for these Gaussians. Tangent electric energy and the fixed charge-connection
+terms tend to zero. The finite matter matrix varies continuously, giving
+energy at most e_M+o(1)+O(delta). Min-max and delta->0 produce the upper
+limit for every fixed j. Infinite-dimensional tangent functions are what
+permit arbitrary fixed multiplicity at the limiting floor.
+
+This argument still needs a fresh proof review of the tubular coordinate,
+localization and charge-connection estimates. It does not assume a gapped
+matter band on all of M and does not derive the next-order Berry connection
+or tangent effective Hamiltonian. Matrix degeneracies can matter at that
+next order.
+
+For fixed g>0, finite Fourier sums in the exact affine electric domain form
+a core as S->infinity. Variational compression therefore recovers each
+untruncated eigenvalue. This supplies an iterated S->infinity then g->0
+comparison. No rate or sufficient joint S(g) is claimed for the periodic
+extension. In particular this is not a proof at one fixed finite payload
+uniform in volume and infrared scale.
+
+## Normal-coordinate cross-check
+
+An exact mixed-coordinate fixture checks the normal kinetic factor in the
+periodic argument. Wedge one filled square plaquette and one unfilled ring
+at a common vertex, with charged matter only on the ring. The cycles have
+disjoint edge supports. In mixed flux coordinates take plaquette flux n1+n2
+and ring flux n2. The electric metric and magnetic Hessian are
+
+```text
+K=4 [[1,1],[1,2]],       A=[[1,0],[0,0]].
+q=theta1,               t=theta2-theta1.
+K_(q,t)=diag(4,4).
+```
+
+The normal frequency is 2, agreeing with the exact tensor product of a
+one-plaquette gauge oscillator and the charged ring. A Schur complement
+4-4^2/8=2 used as the normal kinetic coefficient would incorrectly give
+sqrt(2). The tangent coordinate is changed to remove mixed kinetic terms;
+the normal coordinate and its coefficient remain fixed. This fixture
+challenges that load-bearing step without assuming a full periodic phase.
+
+## Strict flat-twist comparison in the actual mixed carrier
+
+Use the supplied four-orbital symbol, with orbital sigma and flavor tau:
+
+```text
+H(k)=(a+b1 tau_z+m1 tau_x)sigma1+sin(ky)sigma2
+     +(c+d tau_z+m3 tau_x)sigma3,
+a=-cos(kx)sin b, b1=sin(kx)cos b,
+c=2+zeta-cos(kx)cos b-cos ky-cos kz, d=-sin(kx)sin b,
+m1=mu sin b, m3=mu cos b.
+```
+
+Here a in the symbol is a scalar coefficient, unrelated to lattice spacing;
+the energy units r/lattice_spacing are set to one for this comparison.
+Supply sin b=4/5, cos b=3/5, zeta=3/5, mu=1/5. This is nonzero onsite flavor
+mixing within the earlier stated carrier parameter range. On an L^3 periodic
+box a uniform link phase phi_i/L has holonomy exp(i phi_i) and exactly zero
+plaquette angle. Discrete Fourier diagonalization shifts the momenta to
+k_i=(2pi n_i+phi_i)/L.
+
+The square of H has scalar S and three anticommuting matrix coefficients:
+
+```text
+S=sin^2 ky+a^2+b1^2+c^2+d^2+m1^2+m3^2,
+U=(a b1+c d)^2+(a m1+c m3)^2+(b1 m3-d m1)^2,
+E_+/-=sqrt(S+/-2sqrt(U)).
+```
+
+The nonscalar matrices are tau_z, tau_x and sigma2 tau_y. Their squares are
+identity and they anticommute pairwise. The fixed-momentum anti-symmetry
+sigma2 times complex conjugation sends H to -H, so the four energies are
+(-E_+,-E_-,E_-,E_+). Filling two orbitals per momentum minimizes the free
+fixed-number Hamiltonian at total N=2L^3 when these grid energies are nonzero.
+
+At L=3, both phi=(0,0,0) and phi=(0,pi,0) give rational S and U: cosines
+are 1,-1/2 or 1/2,-1 and every sine is a rational multiple of sqrt(3).
+The certificate encloses every nested square root using integer arithmetic.
+For rational x>=0 and integer scale Q=10^35, set
+k=floor(sqrt(floor(x Q^2))); then (k/Q)^2<=x<=((k+1)/Q)^2.
+Monotonicity propagates these rational intervals through E_+/- and their
+sum. The result is the strict inequality
+
+```text
+-1.4425 < E_free(0,pi,0)-E_free(0,0,0) < -1.4424.
+```
+
+The decimal displays are approximately -155.05835052386497 and
+-153.61594517421963, respectively. Exact rational endpoints, rather than
+rounded floating values, certify the inequality. Independent direct
+108-by-108 site matrices and 27 four-by-four Bloch matrices agree numerically.
+Both comparisons are free matter in a flat supplied connection. This does
+not identify the global twist minimum, its volume scaling or the interacting
+ground state. Under the periodic leading-floor theorem, it does exclude
+the identity twist as the automatic limiting matter-energy choice for
+this actual finite-box carrier.
+
+## Consequence for the next campaign
+
+The free matter input in a periodic weak-coupling comparator must include
+global twists. A nonzero flat holonomy costs no plaquette magnetic energy,
+so its matter energy cannot be discarded. The correct first question is
+the twist-dependent fixed-volume matter energy and its minima; the next
+question is the induced slow holonomy Hamiltonian and its volume dependence.
+Neither a ring holonomy nor this proposed finite-volume spectral floor
+establishes confinement, deconfinement, a Weyl charged pole, metric attraction
+or selection of the native Hamiltonian by the framework axioms.
+
+
+## No-Go Discipline Gate
+
+These are constructive finite-volume comparisons with narrow exclusions of
+particular vacuum identifications. The broader charged phase remains open.
+
+**N1 — Distinct actual attack routes.**
+
+| Route | Mechanism and actual disposition | Marker |
+|---|---|---|
+| Exact ring Gauss/Fourier representation | Retains the global angle and occupation-dependent connection; the identity comparator alone omits a physical degree of freedom. | ATTEMPTED |
+| Variational spectral and concentration argument | Gives every fixed ring level's limiting floor and loop concentration with an explicit finite-cutoff core argument. | ATTEMPTED |
+| Normal/tangent localization of the periodic rotor | Gives the proposed normal-oscillator plus minimum-matter floor; slow effective dynamics and growing-volume control are not derived. | ATTEMPTED |
+| Mixed-cycle kinetic-coordinate test | An exact transformed wedge model distinguishes the correct normal frequency from a wrongly used Schur complement. | ATTEMPTED |
+| Algebraic mixed-carrier twist certificate | Exact rational square-root enclosures certify a strict nonidentity improvement at L=3; they do not locate the global minimum. | ATTEMPTED |
+| Separate real-space, Bloch and finite charged spectra | Independent matrix constructions challenge the algebra and sampled limiting behavior; samples do not establish arbitrary-volume rates. | ATTEMPTED |
+
+These formulations differ in object and proof mechanism. Their count is a
+procedural record, not an exhaustive search against alternative phases.
+
+**N2 — Implication audit.**
+
+| Results or targets | Established relation | Unresolved relation |
+|---|---|---|
+| Ring limit and periodic floor | The ring shows why a flat direction changes fixed-index comparison; the periodic argument additionally controls normal modes. | A ring calculation alone does not establish that additional control. |
+| Periodic floor and strict carrier comparison | Together they exclude the identity twist as the automatic matter-energy minimum for the specified 3-cubed comparator. | They do not determine the global minimizing twist or slow spectrum. |
+| Finite-volume floor and thermodynamic charged phase | No uniform growing-volume estimate is supplied. | Neither equivalence nor independence is asserted. |
+| Thermodynamic phase and common interacting cone | Both remain research targets in the specified model. | No implication in either direction is established here. |
+
+No independent-wall count is assigned to unknown relations or downstream
+corollaries.
+
+**N3 — Hidden-premise scan.** The graph topology, nonempty fixed-number
+sector, rotor family, charge offsets, weights, Hamiltonian time and matter
+matrices are explicit. The ring has no magnetic plaquette; its loop is a
+global variable. The periodic theorem uses untruncated rotors and an iterated
+finite-cutoff recovery, while the ring admits the stronger stated joint
+sequence. Fixed volume, finite-dimensional matter, compact angle space,
+primitive topological characterization and positive normal Hessian are
+load-bearing. No isolated matter band on the full flat torus is assumed.
+Formal slow-gap coefficients are labeled as unproved asymptotics.
+
+**N4 — Residual matching.** Framework sources provide comparison context,
+not no-go witnesses against other encodings. Nakano's spinful Hubbard formula
+is not a premise for the spinless ring or the mixed four-orbital torus.
+The strict twist witness compares two free flat backgrounds, not two complete
+interacting ground states. Its use in the latter limit is conditional on the
+periodic localization argument. No historical obstruction is promoted to an
+axiom-level impossibility result.
+
+**N5 — Resolution audit.** Per element, integer square-root enclosures and
+unit link phases are checked. Per site, separate CAR and full site matrices
+are checked. Per mode, analytic ring branches and the normal kinetic factor
+are checked; slow coefficients receive numerical challenges only. Per block,
+the actual 3-cubed strict energy difference is certified. Lattice wide, the
+periodic theorem quantifies over a fixed finite box; thermodynamic charged
+correlations, common-cone attraction and a uniform payload rate remain open.
+
+**N6 — Partial closure and conventions.** Choosing a different energy zero
+does not remove the difference between two flat matter backgrounds or change
+loop concentration. Keeping the holonomy variable resolves the comparator
+omission without adding a framework axiom. Fixing a holonomy externally,
+changing boundary conditions or encoding a different gauge model changes
+the declared comparison domain; those remain possible research routes.
+
+**N7 — Steelman.** Global holonomy effects can be finite-size effects in
+local observables, and a charged Coulomb phase can coexist with slow global
+levels. The present result makes that separation a proof obligation rather
+than arguing against the phase. A successful uniform correlation or effective
+Hamiltonian derivation could close a broader target without contradicting
+any ring or finite-box witness here.
+
+**N8 — Cross-cycle echo.** The open-box campaign obtained a discrete
+oscillator/matter spectrum after exact Gauss reduction. This note restores
+the periodic topological sector and identifies its different limiting
+observable. It does not count the same thermodynamic gap again as a new wall
+or treat multiple author artifacts as independent acceptance.
+
+## Checks and review boundary
+
+The primary checks the mixed-carrier square symbolically, the three Clifford
+coefficients and spectral anti-symmetry. Integer arithmetic certifies the
+nested-radical energy interval and its strict difference. Separate 108-by-108
+site and four-by-four Bloch matrices challenge the identification. Separate
+six-state CAR matrices challenge the ring Fourier potential. Charged finite
+ring spectra and loop expectations challenge the rate-free limit and the
+explicitly formal next-order coefficients. An exact mixed-coordinate metric
+fixture challenges the normal kinetic reduction.
+
+These checks do not prove localization, min-max, the global twist minimum,
+all matrix dimensions, an asymptotic rate or a thermodynamic phase. The proof
+and its exact hypotheses carry those proposed analytic statements. Raw
+exploration, certificate endpoints, source history and deliberate incorrect
+formula checks are preserved in the branch packet. All development and
+source review were personal author work. Independent review, full integrated
+validation and formal audit remain pending.

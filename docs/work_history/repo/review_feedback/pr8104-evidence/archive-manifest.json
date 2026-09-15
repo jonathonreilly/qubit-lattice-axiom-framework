@@ -1,0 +1,1010 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "identity",
+      "git_blob": "8adc08d78ee326d0c6d410ab01dce45ad22e9524",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/AUTHOR_REVIEW.md",
+      "raw_bytes": 2871,
+      "raw_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893",
+      "stored_path": "kept/pr8104-AUTHOR_REVIEW-f47757c621d16573.md",
+      "stored_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7386536ff49734aafb7807e69629582866fbc377",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stdout",
+      "raw_bytes": 8830,
+      "raw_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441",
+      "stored_path": "_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+      "stored_sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7386536ff49734aafb7807e69629582866fbc377",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER_TWISTS.json",
+      "raw_bytes": 8830,
+      "raw_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441",
+      "stored_path": "_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+      "stored_sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6068a1f20e573d94fad471ba45b5691e482edd89",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_DERIVATION.md",
+      "raw_bytes": 13128,
+      "raw_sha256": "30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9",
+      "stored_path": "_objects/30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9.gz",
+      "stored_sha256": "be3e6927b1d463ca996b2c7070203cc2a9e6eb95b9813cec5640a0023a727426"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7fc6cd96134f17bfad8a07604ea2ef89d94e77d8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stdout",
+      "raw_bytes": 818,
+      "raw_sha256": "d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef",
+      "stored_path": "_objects/d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef.gz",
+      "stored_sha256": "ce35ed6072af5156fa45313b636485cd543d792f991f6454001d06bb82d05749"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c484e599c2f74fe95f57a9933572eec83f6bd715",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST_CERTIFICATE.json",
+      "raw_bytes": 7954,
+      "raw_sha256": "234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7",
+      "stored_path": "_objects/234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7.gz",
+      "stored_sha256": "b03c127af6f673c9a0b9a0ff1be0427204ecbad946c42a0d2410e78d274533f3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1b62bd6daa2cd6f21a640dcd6975b603b4ba0b94",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stdout",
+      "raw_bytes": 2092,
+      "raw_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c",
+      "stored_path": "_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+      "stored_sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1b62bd6daa2cd6f21a640dcd6975b603b4ba0b94",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY_EXPLORATION.json",
+      "raw_bytes": 2092,
+      "raw_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c",
+      "stored_path": "_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+      "stored_sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c14edd232f8da4601fd6e2f4c5f026b5c60ce46b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz",
+      "raw_bytes": 1062,
+      "raw_sha256": "319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700",
+      "stored_path": "_objects/319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700.gz",
+      "stored_sha256": "545a76dc26024c9a71875d033f08c1a6910e14a4214d2ce424ad5a5447655977"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "71f20e6165ae6c161d5239a143d563769e3a32e4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_EXECUTION.json",
+      "raw_bytes": 2199,
+      "raw_sha256": "654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9",
+      "stored_path": "_objects/654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9.gz",
+      "stored_sha256": "795b1ce595026ca8aa0086d7b8da39f98d8dcbb44b1dd38613a55d6bfea72a16"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3ef8651140d68f9e23e4978c51c573c1da724acd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CHANGED_EVIDENCE.json",
+      "raw_bytes": 210,
+      "raw_sha256": "9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963",
+      "stored_path": "_objects/9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963.gz",
+      "stored_sha256": "7479b5e20daabc0677ad644b8c2a93bc0fd7677ac99d54a544552881ed0f6f95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0608cdb2031f965a5bd1be35b19579714045e76e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CORRECTIONS.md",
+      "raw_bytes": 740,
+      "raw_sha256": "7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437",
+      "stored_path": "_objects/7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437.gz",
+      "stored_sha256": "064636e2a3e4a07ca6027d87f854938f524f4c4f94ae991af05f8884b8c3cebb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ec3a22131f243388451dda31814734107c43dbc6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stdout",
+      "raw_bytes": 1722,
+      "raw_sha256": "2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430",
+      "stored_path": "_objects/2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430.gz",
+      "stored_sha256": "5e5a859f771cd019b2a437ce2f0e221874bec0967f1fdd33de0c3d48181bda35"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ab32de5a23f291013057bdc82eb4969b0459e23f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_BEFORE_DEFINITION_REFRESH.json",
+      "raw_bytes": 1144,
+      "raw_sha256": "830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb",
+      "stored_path": "_objects/830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb.gz",
+      "stored_sha256": "bd84b2d840d5f1f76ddf960edf6b1c550553052aaa19e9c4b246c76de9b79be7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4b1f4f91801c9e3e3f25e30be37f911d318000f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_DELTA.json",
+      "raw_bytes": 1144,
+      "raw_sha256": "b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b",
+      "stored_path": "_objects/b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b.gz",
+      "stored_sha256": "da9dc279355d57c8a839da944866d8c3aa8d39a4407c29e2852757fadd305c4a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e707f2fde80a9dc5bc7ce36e292ff0f24b05c529",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/LITERATURE_SCOPE.md",
+      "raw_bytes": 472,
+      "raw_sha256": "acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4",
+      "stored_path": "_objects/acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4.gz",
+      "stored_sha256": "748ab2aab8b72eead211f32fe61ebb67181f58b5b4ac02db449960bf73136f14"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1dd0b25664cd81202b584b829d2d9e2fe6fd4d70",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/MUTATIONS.json",
+      "raw_bytes": 18724,
+      "raw_sha256": "2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503",
+      "stored_path": "_objects/2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503.gz",
+      "stored_sha256": "b99400a9b53eba1397c0fd42a8e52b9f4ba11751f1bf44a77249dc6db55d31c7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3d819f5e8dd37abc3a2f7076b6ac8b3b641b78ec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/SOURCE_READINESS.json",
+      "raw_bytes": 271,
+      "raw_sha256": "3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202",
+      "stored_path": "_objects/3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202.gz",
+      "stored_sha256": "32dadfb1d457492bdf1ec1b747950a21859286e87d7ce88fd0009c18d2b66190"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b5fe2b0500927a92b2b97558cca56d64310087ba",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_carrier_twists.py",
+      "raw_bytes": 2450,
+      "raw_sha256": "19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126",
+      "stored_path": "_objects/19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126.gz",
+      "stored_sha256": "734567a182668bde9961cbc1dc801e43ee591bbcad22fe31e6a131c4156317a1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f96c17e3f8d22f3784c0d02c84e097f6fa92a9b9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stdout",
+      "raw_bytes": 357,
+      "raw_sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d",
+      "stored_path": "_objects/6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d.gz",
+      "stored_sha256": "f27d6de0872dd71aab9d13beb66110ee291ec018863797de8af8e75ead157f16"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "820770b90bd6dea4bcdb1990c10c517356f34298",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_holonomy_explore.py",
+      "raw_bytes": 2303,
+      "raw_sha256": "06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad",
+      "stored_path": "_objects/06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad.gz",
+      "stored_sha256": "2bf67f2870a0a2f36bfb8eaabc738d2a37296b2387f054506a6afc06d8ab3d9f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_vocab.json",
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "stored_path": "_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+      "stored_sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "91f3a12cf1cc253899c41685e441ea3d9a17ab9d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/check_block15_exact_twist.py",
+      "raw_bytes": 2769,
+      "raw_sha256": "99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9",
+      "stored_path": "_objects/99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9.gz",
+      "stored_sha256": "a7140a3576b7a0c69747f773edf9da98ea64acaaa4309869f6b2f539773e7b2c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ffd54e7e371d484a058920a20b4f566a44e904de",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/make_primary.py",
+      "raw_bytes": 5389,
+      "raw_sha256": "fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a",
+      "stored_path": "_objects/fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a.gz",
+      "stored_sha256": "6b272ae169e4b05e984141a083c6263c2314a446f05b3e02b55e372aa336115a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "adf64c91cff0b43697ad5818e643397d967cb76c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py.gz",
+      "raw_bytes": 3938,
+      "raw_sha256": "d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c",
+      "stored_path": "_objects/d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c.gz",
+      "stored_sha256": "3a8e3d3384ca2a27d7cc2e58315663ba30978a9260a8c2c6fe2c4ad501e22b22"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "60f9a92543e86a44b15c67067a1ebba3f7a50827",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stderr.gz",
+      "raw_bytes": 344,
+      "raw_sha256": "a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e",
+      "stored_path": "_objects/a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e.gz",
+      "stored_sha256": "0a6944bd8d9d171e3d75296a821086d1cbd20b253eccfa3467e830a542b1d0cc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "54c5f69b8c08f4b4e1237e3ece6071e2519f4124",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py.gz",
+      "raw_bytes": 3940,
+      "raw_sha256": "7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23",
+      "stored_path": "_objects/7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23.gz",
+      "stored_sha256": "3c910fb8a2d67d54e6258919a87095a9804a39cd507266a8eb87fab932cd9d5b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6a6798f89dbb170c8274aea9b19861f8db2009c9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stderr.gz",
+      "raw_bytes": 382,
+      "raw_sha256": "47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869",
+      "stored_path": "_objects/47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869.gz",
+      "stored_sha256": "6954f0e5f1a73f78147bbaf743df71d73bca9cc5976f29eabc7b0024be4d620a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "be85825523f6f25f20287920c452570df6eff166",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py.gz",
+      "raw_bytes": 3940,
+      "raw_sha256": "8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd",
+      "stored_path": "_objects/8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd.gz",
+      "stored_sha256": "97dabf4361483da8ef3b76cc42d041b538636ccf825d487106a625998fbd4c1b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d5a0d166a574398f8394fb7d1a447ac442cbb031",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stderr.gz",
+      "raw_bytes": 383,
+      "raw_sha256": "9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a",
+      "stored_path": "_objects/9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a.gz",
+      "stored_sha256": "e60e62cd8dc436ceec3416306bd691c710a695bd9817b136572c344fa2c3db68"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dac5178f680cde13037da15ae3022a461eec07eb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py.gz",
+      "raw_bytes": 3941,
+      "raw_sha256": "0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b",
+      "stored_path": "_objects/0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b.gz",
+      "stored_sha256": "462e00e513dadc3f884ec05a8486c4b3937938ec81f9fbc0b1e0fdc364db6d07"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "92c153ab23daaccc49e3df00ccc06c034e48c3c8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stderr.gz",
+      "raw_bytes": 359,
+      "raw_sha256": "4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e",
+      "stored_path": "_objects/4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e.gz",
+      "stored_sha256": "833f0de291047a9edb6d2e51f6696a993df1c93a912053af3ede85d5c9968447"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "489217be3de7e5bca870d6ee6371fc8dbba69a14",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py.gz",
+      "raw_bytes": 3941,
+      "raw_sha256": "dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4",
+      "stored_path": "_objects/dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4.gz",
+      "stored_sha256": "6d9a91b2bc304de196ee22d0206b5088b69803e28bfbe62e6ac99a65e80ffb64"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9928b332f2547da248929fc2e4f60e49f85cfbd9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stderr.gz",
+      "raw_bytes": 349,
+      "raw_sha256": "bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe",
+      "stored_path": "_objects/bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe.gz",
+      "stored_sha256": "f7d1807a0e3ad681dfcc154825dc62aab15ce23ce67eb126bd95f557a61ffcce"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "28073ffda50a18067bf989e1cab5c24b18aacc35",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py.gz",
+      "raw_bytes": 3940,
+      "raw_sha256": "ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d",
+      "stored_path": "_objects/ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d.gz",
+      "stored_sha256": "f2945d45a9182fd26a4bda5173439fccd949bd1490b5b5aec9c451f2c5d20203"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4264fc13c1e972f7541599db8dde36787c9fb2f5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stderr.gz",
+      "raw_bytes": 346,
+      "raw_sha256": "19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620",
+      "stored_path": "_objects/19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620.gz",
+      "stored_sha256": "a12a8ed4e972504a058b9a30e02148f9caec5c583e195fcc58e1c4da45373120"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "245b74eaff6f69300520b4ab924d23298f5a7257",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py.gz",
+      "raw_bytes": 3936,
+      "raw_sha256": "c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b",
+      "stored_path": "_objects/c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b.gz",
+      "stored_sha256": "afb88631d8f95591b3276e502c566186ee79b861ddb8b7c96c856eaec919d530"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6826360f882c766c65dcb422e5e391c931483872",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stderr.gz",
+      "raw_bytes": 347,
+      "raw_sha256": "4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d",
+      "stored_path": "_objects/4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d.gz",
+      "stored_sha256": "16c8b64820e063a4cfa06dcb34f307acb1b0fc295781fe1fe69e882b0a8d304f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5f7712be8119358ae343cc2deedbf3e7329a4103",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py.gz",
+      "raw_bytes": 3941,
+      "raw_sha256": "5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60",
+      "stored_path": "_objects/5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60.gz",
+      "stored_sha256": "50cd9b79510b11ba35ffc62f30ca7eb2c2840a80e43a7a939513981c23c1fb20"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "17b85636d5ced3f974885c6117c58a3adbc5f79e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stderr.gz",
+      "raw_bytes": 371,
+      "raw_sha256": "21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177",
+      "stored_path": "_objects/21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177.gz",
+      "stored_sha256": "4593d32fbec8d578d6b24db5a6672b80ca4d7c37d4903f9984c5d124ee81adde"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6503ef9da545ce31508fec716e483c56cead8049",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py.gz",
+      "raw_bytes": 3938,
+      "raw_sha256": "d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6",
+      "stored_path": "_objects/d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6.gz",
+      "stored_sha256": "1d1d5c8d7db7122f5f86965222ed712073db4d8cab99fdd2ac64cb8c3362d50a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "277b4ced33e8e77bedf54f1bea4de142c1803088",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stderr.gz",
+      "raw_bytes": 351,
+      "raw_sha256": "0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1",
+      "stored_path": "_objects/0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1.gz",
+      "stored_sha256": "55236539318278164edfcbf1559d50b9553aeeae24427576bf4dea96865093df"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "14661521675b95542806617999d4c625a9b61992",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py.gz",
+      "raw_bytes": 3942,
+      "raw_sha256": "55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658",
+      "stored_path": "_objects/55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658.gz",
+      "stored_sha256": "da6edb7f1278c1c30cef741085164888ca9aae15b1b58517369ae2e008e37f3b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7452f585bf2d9819b8d19e97e3f4b3eda88d3762",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stderr.gz",
+      "raw_bytes": 401,
+      "raw_sha256": "a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146",
+      "stored_path": "_objects/a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146.gz",
+      "stored_sha256": "3376367a7e1b5b10983e83b6a95f1b7c5a701d88f29870e6c38a960c978efb38"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5fb4a5f5f12a6c5377ae05e9dd14e512dd75fb3f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py.gz",
+      "raw_bytes": 3940,
+      "raw_sha256": "c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0",
+      "stored_path": "_objects/c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0.gz",
+      "stored_sha256": "a3290a2e2ef6e2c84e42af893e8a4911a0467f95059020e5473ae71c2e74ea46"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2110f4310dad463d3d8638d2c51ae7642a040d89",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stderr.gz",
+      "raw_bytes": 420,
+      "raw_sha256": "d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0",
+      "stored_path": "_objects/d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0.gz",
+      "stored_sha256": "030a5176cdf8efe5a8552000390fcbbf1421871bed7184b3c5c624eae0cf8ed8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b0618f04d654fc4721a04b2ab199ddc65da6d30f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py.gz",
+      "raw_bytes": 3944,
+      "raw_sha256": "cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26",
+      "stored_path": "_objects/cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26.gz",
+      "stored_sha256": "c68ef2b4549a0afca5332c590d6eb718cbe4daab0d522a0bf985bcca3b1d84ad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "50a992508c74010ae8eb15baa2454bf4fd76b7b9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stderr.gz",
+      "raw_bytes": 346,
+      "raw_sha256": "d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354",
+      "stored_path": "_objects/d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354.gz",
+      "stored_sha256": "2bc1fc3ef3d0e20393780c678774fab0df9fbcda108df96d91fce82de3574423"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9aaf4da00d276220cefa7d3e485b6e2d5d007df9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py.gz",
+      "raw_bytes": 3941,
+      "raw_sha256": "3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b",
+      "stored_path": "_objects/3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b.gz",
+      "stored_sha256": "33eeb944900155a15a4a6aaea1b0f717f4000436467acb89c5e22d6bafd868ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1df93348fe2d6d30c5284b29a39af40082baf114",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stderr.gz",
+      "raw_bytes": 369,
+      "raw_sha256": "2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8",
+      "stored_path": "_objects/2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8.gz",
+      "stored_sha256": "6b03b1b380c61fdf74ec2f216a4709933b8eccbec7a14de4adee87892a633fd2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "12bf5975db65d20e8593ea71f08305c91ca2ba0e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py.gz",
+      "raw_bytes": 3927,
+      "raw_sha256": "deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1",
+      "stored_path": "_objects/deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1.gz",
+      "stored_sha256": "1dfce2ae07b22a37b051cd1ebb44d0df7ad5b0626323b31ffbf18df55b0a5926"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "94b0edb9c0abbfa4ebd131246c5a75ee6e950ce0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stderr.gz",
+      "raw_bytes": 339,
+      "raw_sha256": "eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383",
+      "stored_path": "_objects/eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383.gz",
+      "stored_sha256": "f127a608a9ecacd9ad515b85befdd95aa71c13a7bcdcce3ed4602177430335d3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8fe36d40872ab0288807b9a93035d7fedfcf005d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/package_source.py",
+      "raw_bytes": 11824,
+      "raw_sha256": "3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357",
+      "stored_path": "_objects/3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357.gz",
+      "stored_sha256": "3a4479d2f2d5e273b5adb900ca32a1d9a828a9828e3e6c77d0250fbc21b6f95e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fabbdfd3996085570922164770e6cb4befd727a7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/verify_block15.py",
+      "raw_bytes": 3675,
+      "raw_sha256": "9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf",
+      "stored_path": "_objects/9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf.gz",
+      "stored_sha256": "b5e4dfac4c72162147c5a3c0a6d21177763f006ef44301e0655dc4df7b08d309"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/",
+  "revision": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+  "schema_version": 1,
+  "unique_blobs": {
+    "0608cdb2031f965a5bd1be35b19579714045e76e": {
+      "occurrences": 1,
+      "raw_bytes": 740,
+      "raw_sha256": "7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437"
+    },
+    "12bf5975db65d20e8593ea71f08305c91ca2ba0e": {
+      "occurrences": 1,
+      "raw_bytes": 3927,
+      "raw_sha256": "deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1"
+    },
+    "14661521675b95542806617999d4c625a9b61992": {
+      "occurrences": 1,
+      "raw_bytes": 3942,
+      "raw_sha256": "55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658"
+    },
+    "17b85636d5ced3f974885c6117c58a3adbc5f79e": {
+      "occurrences": 1,
+      "raw_bytes": 371,
+      "raw_sha256": "21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177"
+    },
+    "1b62bd6daa2cd6f21a640dcd6975b603b4ba0b94": {
+      "occurrences": 2,
+      "raw_bytes": 2092,
+      "raw_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c"
+    },
+    "1dd0b25664cd81202b584b829d2d9e2fe6fd4d70": {
+      "occurrences": 1,
+      "raw_bytes": 18724,
+      "raw_sha256": "2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503"
+    },
+    "1df93348fe2d6d30c5284b29a39af40082baf114": {
+      "occurrences": 1,
+      "raw_bytes": 369,
+      "raw_sha256": "2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8"
+    },
+    "2110f4310dad463d3d8638d2c51ae7642a040d89": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0"
+    },
+    "245b74eaff6f69300520b4ab924d23298f5a7257": {
+      "occurrences": 1,
+      "raw_bytes": 3936,
+      "raw_sha256": "c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b"
+    },
+    "277b4ced33e8e77bedf54f1bea4de142c1803088": {
+      "occurrences": 1,
+      "raw_bytes": 351,
+      "raw_sha256": "0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1"
+    },
+    "28073ffda50a18067bf989e1cab5c24b18aacc35": {
+      "occurrences": 1,
+      "raw_bytes": 3940,
+      "raw_sha256": "ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d"
+    },
+    "3d819f5e8dd37abc3a2f7076b6ac8b3b641b78ec": {
+      "occurrences": 1,
+      "raw_bytes": 271,
+      "raw_sha256": "3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202"
+    },
+    "3ef8651140d68f9e23e4978c51c573c1da724acd": {
+      "occurrences": 1,
+      "raw_bytes": 210,
+      "raw_sha256": "9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963"
+    },
+    "4264fc13c1e972f7541599db8dde36787c9fb2f5": {
+      "occurrences": 1,
+      "raw_bytes": 346,
+      "raw_sha256": "19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620"
+    },
+    "489217be3de7e5bca870d6ee6371fc8dbba69a14": {
+      "occurrences": 1,
+      "raw_bytes": 3941,
+      "raw_sha256": "dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4"
+    },
+    "4b1f4f91801c9e3e3f25e30be37f911d318000f7": {
+      "occurrences": 1,
+      "raw_bytes": 1144,
+      "raw_sha256": "b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b"
+    },
+    "50a992508c74010ae8eb15baa2454bf4fd76b7b9": {
+      "occurrences": 1,
+      "raw_bytes": 346,
+      "raw_sha256": "d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354"
+    },
+    "54c5f69b8c08f4b4e1237e3ece6071e2519f4124": {
+      "occurrences": 1,
+      "raw_bytes": 3940,
+      "raw_sha256": "7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23"
+    },
+    "5f7712be8119358ae343cc2deedbf3e7329a4103": {
+      "occurrences": 1,
+      "raw_bytes": 3941,
+      "raw_sha256": "5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60"
+    },
+    "5fb4a5f5f12a6c5377ae05e9dd14e512dd75fb3f": {
+      "occurrences": 1,
+      "raw_bytes": 3940,
+      "raw_sha256": "c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0"
+    },
+    "6068a1f20e573d94fad471ba45b5691e482edd89": {
+      "occurrences": 1,
+      "raw_bytes": 13128,
+      "raw_sha256": "30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9"
+    },
+    "60f9a92543e86a44b15c67067a1ebba3f7a50827": {
+      "occurrences": 1,
+      "raw_bytes": 344,
+      "raw_sha256": "a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e"
+    },
+    "6503ef9da545ce31508fec716e483c56cead8049": {
+      "occurrences": 1,
+      "raw_bytes": 3938,
+      "raw_sha256": "d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6"
+    },
+    "6826360f882c766c65dcb422e5e391c931483872": {
+      "occurrences": 1,
+      "raw_bytes": 347,
+      "raw_sha256": "4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d"
+    },
+    "6a6798f89dbb170c8274aea9b19861f8db2009c9": {
+      "occurrences": 1,
+      "raw_bytes": 382,
+      "raw_sha256": "47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869"
+    },
+    "71f20e6165ae6c161d5239a143d563769e3a32e4": {
+      "occurrences": 1,
+      "raw_bytes": 2199,
+      "raw_sha256": "654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9"
+    },
+    "7386536ff49734aafb7807e69629582866fbc377": {
+      "occurrences": 2,
+      "raw_bytes": 8830,
+      "raw_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441"
+    },
+    "7452f585bf2d9819b8d19e97e3f4b3eda88d3762": {
+      "occurrences": 1,
+      "raw_bytes": 401,
+      "raw_sha256": "a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146"
+    },
+    "7fc6cd96134f17bfad8a07604ea2ef89d94e77d8": {
+      "occurrences": 1,
+      "raw_bytes": 818,
+      "raw_sha256": "d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef"
+    },
+    "820770b90bd6dea4bcdb1990c10c517356f34298": {
+      "occurrences": 1,
+      "raw_bytes": 2303,
+      "raw_sha256": "06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad"
+    },
+    "86e43ea3218b5890302b754bbf8927f94e79f7ee": {
+      "occurrences": 14,
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "8adc08d78ee326d0c6d410ab01dce45ad22e9524": {
+      "occurrences": 1,
+      "raw_bytes": 2871,
+      "raw_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893"
+    },
+    "8fe36d40872ab0288807b9a93035d7fedfcf005d": {
+      "occurrences": 1,
+      "raw_bytes": 11824,
+      "raw_sha256": "3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357"
+    },
+    "91f3a12cf1cc253899c41685e441ea3d9a17ab9d": {
+      "occurrences": 1,
+      "raw_bytes": 2769,
+      "raw_sha256": "99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9"
+    },
+    "92c153ab23daaccc49e3df00ccc06c034e48c3c8": {
+      "occurrences": 1,
+      "raw_bytes": 359,
+      "raw_sha256": "4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e"
+    },
+    "94b0edb9c0abbfa4ebd131246c5a75ee6e950ce0": {
+      "occurrences": 1,
+      "raw_bytes": 339,
+      "raw_sha256": "eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383"
+    },
+    "9928b332f2547da248929fc2e4f60e49f85cfbd9": {
+      "occurrences": 1,
+      "raw_bytes": 349,
+      "raw_sha256": "bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe"
+    },
+    "9aaf4da00d276220cefa7d3e485b6e2d5d007df9": {
+      "occurrences": 1,
+      "raw_bytes": 3941,
+      "raw_sha256": "3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b"
+    },
+    "a7a5ff59f978c9fd9dc659702f5317e2038479ff": {
+      "occurrences": 1,
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    "ab32de5a23f291013057bdc82eb4969b0459e23f": {
+      "occurrences": 1,
+      "raw_bytes": 1144,
+      "raw_sha256": "830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb"
+    },
+    "adf64c91cff0b43697ad5818e643397d967cb76c": {
+      "occurrences": 1,
+      "raw_bytes": 3938,
+      "raw_sha256": "d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c"
+    },
+    "b0618f04d654fc4721a04b2ab199ddc65da6d30f": {
+      "occurrences": 1,
+      "raw_bytes": 3944,
+      "raw_sha256": "cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26"
+    },
+    "b5fe2b0500927a92b2b97558cca56d64310087ba": {
+      "occurrences": 1,
+      "raw_bytes": 2450,
+      "raw_sha256": "19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126"
+    },
+    "be85825523f6f25f20287920c452570df6eff166": {
+      "occurrences": 1,
+      "raw_bytes": 3940,
+      "raw_sha256": "8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd"
+    },
+    "c14edd232f8da4601fd6e2f4c5f026b5c60ce46b": {
+      "occurrences": 1,
+      "raw_bytes": 1062,
+      "raw_sha256": "319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700"
+    },
+    "c484e599c2f74fe95f57a9933572eec83f6bd715": {
+      "occurrences": 1,
+      "raw_bytes": 7954,
+      "raw_sha256": "234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7"
+    },
+    "d5a0d166a574398f8394fb7d1a447ac442cbb031": {
+      "occurrences": 1,
+      "raw_bytes": 383,
+      "raw_sha256": "9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a"
+    },
+    "dac5178f680cde13037da15ae3022a461eec07eb": {
+      "occurrences": 1,
+      "raw_bytes": 3941,
+      "raw_sha256": "0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 5,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e707f2fde80a9dc5bc7ce36e292ff0f24b05c529": {
+      "occurrences": 1,
+      "raw_bytes": 472,
+      "raw_sha256": "acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4"
+    },
+    "ec3a22131f243388451dda31814734107c43dbc6": {
+      "occurrences": 1,
+      "raw_bytes": 1722,
+      "raw_sha256": "2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430"
+    },
+    "f96c17e3f8d22f3784c0d02c84e097f6fa92a9b9": {
+      "occurrences": 1,
+      "raw_bytes": 357,
+      "raw_sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d"
+    },
+    "fabbdfd3996085570922164770e6cb4befd727a7": {
+      "occurrences": 1,
+      "raw_bytes": 3675,
+      "raw_sha256": "9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf"
+    },
+    "ffd54e7e371d484a058920a20b4f566a44e904de": {
+      "occurrences": 1,
+      "raw_bytes": 5389,
+      "raw_sha256": "fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a"
+    }
+  }
+}

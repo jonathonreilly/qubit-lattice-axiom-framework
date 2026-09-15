@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 20 (2026-09-15) — no long-range order on planes and lines
+- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 01 (on `main`; the static reading). Proposed, unaudited. PRs #8151, #8152 and #8153 referenced as evidence addresses for H4 only.
+- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading on windows contained in a coordinate plane or line (no records outside); the exponential overlap `e^{βt}` with `β` supplied; tori of even side.
+- Scaffolding: the sup-norm shells of `{−L+1, …, L}²` to `L = 12`; the dyadic blocks to `m = 12`; the `4×4` and `8` tori for the bond counts and Parseval; the generator about `e₂`; the two-site instance and the direct sums in the refuting pass.
+- Standard mathematical imports at definition level: the unitarity of the discrete torus transform; integration by parts for the divergence-free rotation field on the sphere (executed for polynomials); `|sin t| ≤ |t|`.
+- References named, not used: Mermin–Wagner; Mermin; Hohenberg; McBryan–Spencer; Fröhlich–Pfister; Dobrushin–Shlosman; main's three quantum no-order notes.
+- Counterfactual pass: a discrete menu (no rotation generator, no lower bound; block 17 orders on the plane); the formation reading (block 12's eroder never orders on the plane for a different reason); `d = 3` (the lattice sum stays bounded; block 19 orders above `3√3π/8`); the Born overlap (H1's integration by parts still applies to any smooth positive density, but block 19's upper bound does not, and nothing is claimed).

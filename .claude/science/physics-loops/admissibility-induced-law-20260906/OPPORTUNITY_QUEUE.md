@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 20 opening (2026-09-15)
+
+Block 20 opened for review (independent PR against main): no long-range order on planes and lines for the unsoldered static law; the Green-function channel needs the third dimension. Ranked next:
+
+1. **The kernel's normalization on `Z³`** (the exact constant of the transverse correlator; a spin-wave lower bound) — hard.
+2. **What replaces the channel on the plane** (algebraic decay of the plane's correlations by a complex-rotation route; the rate is open here) — medium.
+3. **The band below `3√3π/8` on `Z³`; sharpen block 17's constants** — medium.
+4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.

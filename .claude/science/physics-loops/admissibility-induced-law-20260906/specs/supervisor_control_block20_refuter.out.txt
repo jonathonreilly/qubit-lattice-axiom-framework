@@ -1,0 +1,15 @@
+R1 beta=1/2: u(pi)=0.228988 >= full bound 0.021636 >= simplified 0.017959 (M^2=0.6565): True
+R1 beta=1: u(pi)=0.154228 >= full bound 0.015438 >= simplified 0.014067 (M^2=0.7687): True
+R1 beta=2: u(pi)=0.083110 >= full bound 0.010271 >= simplified 0.009823 (M^2=0.8753): True
+R1 beta=5: u(pi)=0.033333 >= full bound 0.004936 >= simplified 0.004852 (M^2=0.9500): True
+R1 sum rule u(0) + u(pi) = N/3 exactly: True ; all four couplings consistent: True
+R2 plane L=2: S=0.26066 >= 0.09801; implied M^4 <= 11.5090 <= note's 30.6088
+R2 plane L=8: S=0.48460 >= 0.25413; implied M^4 <= 6.1907 <= note's 11.8051
+R2 plane L=64: S=0.81596 >= 0.46342; implied M^4 <= 3.6767 <= note's 6.4736
+R2 plane: direct sums dominate the proved lower bound, and the note's bound is the weaker one, for L = 2..64, beta = 1/4, 1, 4: True
+R3 line L=1: S=0.10714 >= 0.09491; implied M^4 <= 28.0000 <= note's 63.2176
+R3 line L=16: S=1.69402 >= 0.37964; implied M^4 <= 1.7709 <= note's 15.8044
+R3 line L=400: S=11.49490 >= 1.89820; implied M^4 <= 0.2610 <= note's 3.1609
+R3 line: direct sums dominate the proved lower bound, and the note's bound is the weaker one, for L = 2..400, beta = 1/4, 1, 4: True ; L = 1 violations (the count 2m fails there): [(1, 0.25)]
+R4 sphere average with the polar axis along e_1: 1/3 ; Parseval residue on a random 6x6 field: 3.6e-15
+R5 H_(L-1) >= log L for L = 2..10^4: True

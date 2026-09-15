@@ -1,0 +1,11 @@
+loop: clock-endpoint-reflection-20260915
+mode: milestone
+status: active
+branch: physics-loop/clock-endpoint-reflection-20260915
+main_revision: 5deabeb698a27c2c3f68c5df685af2521ef15307
+campaign_source_revision: 18ff8d43faa1c4078b7af27bdb93038f2a9c4de1
+execution: personally_no_subagents_or_delegated_workers
+actual_current_surface_status: bounded-support
+independent_review: pending
+formal_audit: deferred
+next_action: Complete final source, finite fault, cache and graph checks; push the milestone and verify its PR. The parent campaign continues through2026-09-15 13:30:44UTC.

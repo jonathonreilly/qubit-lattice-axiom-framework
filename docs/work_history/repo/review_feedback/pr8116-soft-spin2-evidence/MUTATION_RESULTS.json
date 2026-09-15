@@ -1,0 +1,125 @@
+{
+  "primary_sha256": "93009e775551058256922f967814600e748ea7d39cf7c6184b1a3effb474f423",
+  "results": [
+    {
+      "name": "collision_gradient_difference",
+      "family": "collision_geometry",
+      "old": "row[j,a]-=z[b]",
+      "new": "row[j,a]+=z[b]",
+      "replacements": 1,
+      "mutant_sha256": "cc4a979ab1d0260f77fb28176ff569e9a6b2555d6421843c9349b09d702a32e9",
+      "exit_code": 1,
+      "elapsed_sec": 0.5728362500667572,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_collision_gradient_difference.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_collision_gradient_difference.py\", line 35, in collision_geometry\n    assert np.max(abs(C@basis))<1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "tilted_shell_cross_term",
+      "family": "cubic_and_integrability",
+      "old": "rad=L**2+k*",
+      "new": "rad=L**2-k*",
+      "replacements": 1,
+      "mutant_sha256": "5ac0c4bdc3ebe98d475d02dbab9c662f531f025c4730bd2e1504d451cec74672",
+      "exit_code": 1,
+      "elapsed_sec": 0.4591560000553727,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_tilted_shell_cross_term.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_tilted_shell_cross_term.py\", line 79, in cubic_and_integrability\n    assert all(sp.simplify(z)==0 for z in f0*v-(-b*E+A*p+a))\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "symmetric_soft_residue",
+      "family": "soft_pole_check",
+      "old": "q[j]*int(i==nu and i!=j)",
+      "new": "-q[j]*int(i==nu and i!=j)",
+      "replacements": 2,
+      "mutant_sha256": "cf5ef016db24d4ff86383aa3d910c64c925183db5de5b2d0634a248ab42fa6ec",
+      "exit_code": 1,
+      "elapsed_sec": 0.5538304169895127,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_symmetric_soft_residue.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_symmetric_soft_residue.py\", line 125, in soft_pole_check\n    assert all(sum(x*y for x,y in zip(row,expected))==0 for row in rows)\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "positive_band_projector",
+      "family": "dirac_band_collision",
+      "old": "P=(np.eye(4)+h/e)/2",
+      "new": "P=(np.eye(4)-h/e)/2",
+      "replacements": 1,
+      "mutant_sha256": "70d0f32b5bcd7ebb8b769186d1dfa10584f7b3c439f5542171d4436a277ec451",
+      "exit_code": 1,
+      "elapsed_sec": 0.5889762920560315,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_positive_band_projector.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_positive_band_projector.py\", line 182, in dirac_band_collision\n    assert np.max(abs(velocity-np.sin(2*p)/(2*e)))<1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "improved_stencil_normalization",
+      "family": "improved_derivatives",
+      "old": "sp.Rational(2*(-1)**(r+1),r)",
+      "new": "sp.Rational(3*(-1)**(r+1),r)",
+      "replacements": 1,
+      "mutant_sha256": "23fa3fb8a7da26107145ad35f55c944b201ff2bdad1a8d4f2ec838cf5b91a859",
+      "exit_code": 1,
+      "elapsed_sec": 0.8506163749843836,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_improved_stencil_normalization.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_improved_stencil_normalization.py\", line 207, in improved_derivatives\n    assert sum(coeff[r-1]*r**(2*j+1) for r in range(1,R+1))==int(j==0)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "reaction_reciprocal_transfer",
+      "family": "reaction_offsets_and_native_band",
+      "old": "G=sp.Matrix([-2,4,2])",
+      "new": "G=sp.Matrix([-2,4,0])",
+      "replacements": 1,
+      "mutant_sha256": "c29478f2d87e5fc72db3f11f3712fb7768eac63ce4c3b70951306a5a7dc0d26b",
+      "exit_code": 1,
+      "elapsed_sec": 1.138962708064355,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_reaction_reciprocal_transfer.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_reaction_reciprocal_transfer.py\", line 229, in reaction_offsets_and_native_band\n    assert R*K==G and R.rank()==R.row_join(G).rank()==2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "actual_Wilson_mass_term",
+      "family": "reaction_offsets_and_native_band",
+      "old": "2+zeta-np.cos(p).sum()",
+      "new": "3+zeta-np.cos(p).sum()",
+      "replacements": 1,
+      "mutant_sha256": "5b3b6f89b4b9e1a0a0c67bebf44236f044395350173785e0e9aefb2fb0eaf37a",
+      "exit_code": 1,
+      "elapsed_sec": 1.059839625027962,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_actual_Wilson_mass_term.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_actual_Wilson_mass_term.py\", line 242, in reaction_offsets_and_native_band\n    assert abs(e*e-expected)<1e-13 and expected<q*q\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "spin_chain_hopping_sign",
+      "family": "lattice_causal_tails",
+      "old": "H[b^(1<<x)^(1<<(x+1)),b]=-J",
+      "new": "H[b^(1<<x)^(1<<(x+1)),b]=J",
+      "replacements": 1,
+      "mutant_sha256": "2a90111d92fe159840bf8e7551c0d6fd93d908f341e51a76337554a493cd1c1b",
+      "exit_code": 1,
+      "elapsed_sec": 1.1756916249869391,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_spin_chain_hopping_sign.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_spin_chain_hopping_sign.py\", line 268, in lattice_causal_tails\n    assert np.array_equal(h,np.diag([-J]*(N-1),1)+np.diag([-J]*(N-1),-1))\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "aether_kinetic_sign",
+      "family": "preferred_frame_quadratic",
+      "old": "ae=-c1*sum",
+      "new": "ae=c1*sum",
+      "replacements": 1,
+      "mutant_sha256": "bb14f138ef58e8b396da203ce7f50e6c7e15aa03197e7a5c0ccdf82c946f755e",
+      "exit_code": 1,
+      "elapsed_sec": 1.2063695000251755,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_aether_kinetic_sign.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_aether_kinetic_sign.py\", line 316, in preferred_frame_quadratic\n    assert sp.simplify(LT-((1-c13)*w*w-k*k)*t*t/2)==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "source_transformation_sign",
+      "family": "preferred_frame_quadratic",
+      "old": "Vg=-w*xi",
+      "new": "Vg=w*xi",
+      "replacements": 2,
+      "mutant_sha256": "ba28382f0affd3303c448828860d99270c48ac9ca4456562453aa0e362579cc7",
+      "exit_code": 1,
+      "elapsed_sec": 1.599837625049986,
+      "assertion_detected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_source_transformation_sign.py\", line 398, in <module>\n    print('PASS',f.__name__,json.dumps(f(),sort_keys=True))\n                                       ~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe_block8_mutant_source_transformation_sign.py\", line 340, in preferred_frame_quadratic\n    _,Dg=action(Hg,Vg);assert Dg==sp.zeros(4)\n                              ^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

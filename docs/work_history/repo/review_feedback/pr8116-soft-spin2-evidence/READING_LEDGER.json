@@ -1,0 +1,53 @@
+{
+  "recorded_utc": "2026-09-14T08:25:50.870822+00:00",
+  "main_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "literature": [
+    {
+      "source": "https://arxiv.org/abs/1704.05071v2",
+      "pdf_sha256": "30f8d85d4688780df2cc7f9937577b32c79e93cc30765fc2915119e908ec14e2",
+      "scope": "All six pages; page 4 also rendered and visually inspected. Prior soft universality argument; no novelty claim for its conclusion."
+    },
+    {
+      "source": "https://arxiv.org/abs/2005.01744v2",
+      "pdf_sha256": "ec909c9596cc746aa5a0a0d2ad2a128339b47c9107cf606c2ea2b1e64393c14d",
+      "scope": "Main pages 1\u201310 fully; appendix formulas on page 11 read but not rederived or used; only first reference portion on page 12. Restricted continuum exchange ansatz and source assumptions."
+    },
+    {
+      "source": "https://arxiv.org/abs/math-ph/0605069v1",
+      "pdf_sha256": "3b3fab8946f32f241574f92eef32e112eccdb42b33a590871d4e2cb7177bd558",
+      "scope": "All four pages. Periodic/measurable theorem is prior art; its weaker regularity and Hessian hypotheses are not imported into this C1 proof."
+    },
+    {
+      "source": "https://arxiv.org/abs/0801.1547v2",
+      "pdf_sha256": "890db77202844e8c9a1f5aa01c126e5266d964538be3f03f18860f0343171ce5",
+      "scope": "Title page, action/matter pages 2\u20133, partial page 4 context, linear waves and energy pages 5\u20136. No full phenomenology or 18-page review claimed."
+    }
+  ],
+  "repo_sources": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "scope": "Opening 210 lines refreshed; axioms fully reviewed earlier in campaign; no changed premise."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_REFLECTED_CURVATURE_CANONICAL_REDUCTION_SCHUR_POLE_TT_SPECTRAL_WEIGHT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-23.md",
+      "scope": "All 301 lines read. Supplied finite TT covariance is not a scattering/soft Ward premise."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_CYCLE713_RECORD_STRESS_BLOCK44_IR_REFLECTED_CARRIER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "scope": "Scoped search matches only; not a scientific premise or claimed full review."
+    }
+  ],
+  "unmerged_comparators": [
+    {
+      "pr": 8099,
+      "head": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+      "scope": "Wilson symbol, root and derivative-metric definitions, source claims; selected passages. Symbol reconstructed in this note and runner."
+    },
+    {
+      "pr": 8095,
+      "head": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+      "scope": "First approximately 400 lines plus lines 415\u2013590; native ADM/moving-frame O(a) consistency context. Not a full appendix review or imported interacting theorem."
+    }
+  ],
+  "author_check": "Entire final working derivation and primary cold-read; all narrow changed passages reread. Independent scientific review pending."
+}

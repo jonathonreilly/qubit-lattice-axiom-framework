@@ -23,13 +23,13 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 27,
+  "direct_in_degree": 29,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 23.138,
+  "load_bearing_score": 24.147,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1568,6 +1568,6 @@
   },
   "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
   "title": "SU(3) Character Diagonal Convolution Equivalence Narrow Theorem",
-  "transitive_descendants": 796,
+  "transitive_descendants": 801,
   "verdict_rationale": null
 }

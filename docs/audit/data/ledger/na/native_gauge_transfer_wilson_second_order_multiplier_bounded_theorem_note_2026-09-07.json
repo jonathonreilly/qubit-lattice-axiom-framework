@@ -19,13 +19,13 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "native_gauge_transfer_a2_reflection_uniform_half_line_gap_theorem_note_2026-09-02"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -34,7 +34,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.5,
+  "load_bearing_score": 3.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/native_gauge_transfer_wilson_second_order_multiplier_2026_09_07.py",
   "title": "Native Wilson second-order multiplier with a global remainder",
-  "transitive_descendants": 3,
+  "transitive_descendants": 5,
   "verdict_rationale": null
 }

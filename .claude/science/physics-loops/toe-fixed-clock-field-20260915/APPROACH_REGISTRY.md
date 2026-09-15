@@ -27,3 +27,11 @@ activity order with all finite component shapes. The remaining summation
 is not supplied by this fixed-order result. Next quantify constant growth
 and retain signed spatial operators through the residual interactions;
 do not infer physical activity-one convergence from coefficientwise decay.
+
+Block2, 16:52 UTC: fixed-order constants have a coarse factorial majorant,
+so direct summation remains unsupported. Gaussian replica factorization
+retains full same-species interactions in unrestricted signed loops, and
+a four-source Schatten inequality sums their non-Gaussian remainder over
+all lengths. Actual compatibility, residual mixed factors and branching
+remain. Next test an operator representation of support exclusions; do not
+replace them by an arbitrary bounded multiplier in a scalar trace estimate.

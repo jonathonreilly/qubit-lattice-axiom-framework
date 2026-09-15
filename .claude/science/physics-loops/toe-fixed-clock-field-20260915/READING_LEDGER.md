@@ -123,3 +123,39 @@ between installed and this main revision, SHA256
 Applied its semantic/artifact and discriminating-gate review personally;
 the user's explicit no-subagent instruction controls execution. No independent
 review, audit verdict, axiom change or editable prompt change is implied.
+
+Read the original Froehlich-Spencer IHES P81/40 preprint section 3, PDF
+pages 53-70, including every displayed formula by rendering the PDF. The
+section writes the Wilson action and explicitly allows the Villain action
+on page 55. Its separated-current ensemble has positive weights; complex
+link shifts make each renormalized electric factor real and bounded, with
+small activities at large N. The source argument proves perimeter lower
+bounds, not the full Gaussian field law. Section 2.8-2.12 text was read
+through PDF page 50; displayed formulas on pages 35, 37, 40 and 41 were
+visually inspected. Remaining section-2 formulas are not yet fully checked.
+Primary PDF SHA256 df50724043f7706f31432fb000a9d7c510f4fdc78d2aef578e3aa252eef76fe1.
+Possible printed-sign/transcription issues are not used as imported estimates.
+
+Bauerschmidt-Park-Rodriguez discrete-Gaussian papers I/II were located
+(arXiv2202.02286/2202.02287); abstracts and a routed section-2 excerpt were
+read. The full smoothing and RG hypotheses remain to be checked. Their
+two-dimensional scalar law is not the present four-dimensional gauge law.
+Re-read the current Haar full-score theorem sections 2-5 and the clock
+smoothing section 6.5. An exact positive mixture alone would still require
+control of covariance fluctuations between its conditional fields.
+
+Read Bauerschmidt-Park-Rodriguez I section 2.2 fully, including Lemma 2.2
+and its Fourier Banach-algebra proof, then section 2.3 through the initial
+stiffness coordinates. Primary arXiv2202.02286v2 HTML SHA256
+d29fbc8989a298da23c70499998b38ff1a8293b40e9836861b05ffab1368ac10.
+Its independent coordinate lattice enables a product scalar theta potential;
+that product property is not available for the clock flux sublattice. No RG
+theorem is imported. The Imperial PDF endpoint returned HTTP403; the arXiv
+HTML supplied the displayed formulas instead.
+
+Read Audenaert arXiv:math/0701129v2 introduction and Theorem 1, and section2
+through its Holder proof passage. The new cycle estimate uses precisely
+the r>=1 ALT direction for positive matrices and outer trace exponent one.
+All complex diagonal phases are removed before its application. This is
+an imported standard matrix inequality with checked hypotheses, not an
+independent check of the whole new physics derivation.

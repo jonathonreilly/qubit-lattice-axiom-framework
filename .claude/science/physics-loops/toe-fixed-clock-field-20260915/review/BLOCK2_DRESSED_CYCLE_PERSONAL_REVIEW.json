@@ -1,0 +1,29 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T16:53:21.104246+00:00",
+  "checked_hypotheses": [
+    "same-species replica covariance PSD, fixed independently of component labels",
+    "complex phase removed before positive ALT inequality; p=1,4/3,2,4",
+    "full self-weight split counted once; source reserve uses same component weight at every vertex",
+    "source traces use all-shape half-activity moments and infinite-kernel smooth sources",
+    "infinite component passage uses marked Schatten tails and strong unmarked factors"
+  ],
+  "scope_limits": [
+    "restricted loop functional permits repeated and incompatible labels",
+    "no residual mixed factors or branching graph summation",
+    "no physical pressure combinatorial identification",
+    "no selected-state, quadratic-limit or finite-free-boundary result",
+    "factorial majorant does not prove actual divergence"
+  ],
+  "verification_limits": [
+    "author only; shared cochain constructor is declared",
+    "finite matrix and quadrature checks do not establish infinite-volume hypotheses",
+    "full finite source check uses float cochain inputs with higher-precision scalar arithmetic"
+  ],
+  "inputs": {
+    "notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md": "60b089f85bc330bbd6b2d5510526677028a7e66c8087a68201307488dafe3e04",
+    "notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md": "367baafcb812f1ce37f88135d75f0084266cb7d63efa2d146bed581da1cf8a98",
+    "evidence/block2_gaussian_cycle_check.py": "0fae6e9fe635947a42c0bc0ea435fb58975ab5c145b0d7553fde6bd7ed9819a4",
+    "evidence/block2_gaussian_cycle_check.json": "18c9bc5b1ce78fde2263ee3549d31592d51dc7fd24dbe3fd6eeb9f0d40697d96"
+  }
+}

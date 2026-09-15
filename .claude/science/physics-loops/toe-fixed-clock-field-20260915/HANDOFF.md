@@ -194,3 +194,31 @@ sign subtraction agree to 1.06e-52 and 1.38e-54 respectively. Four actual
 mutations are rejected by assertion. A zero-string parsing failure is
 frozen; fixed with an integer zero. Personal claim review only, no agents
 or independent review. Main afef263 is fresh for relevant unchanged sources.
+
+## Block 2: order growth and Gaussian-dressed cycle summation, 16:52 UTC
+
+The fixed-order cut construction admits the deliberately loose upper bound
+A B^n (n!)^50 a^3. This majorant is not summable; it is not a lower bound
+or a divergence result for the actual gas. An explicit Gaussian/Rademacher
+mixture shows why coefficientwise Gaussianity cannot establish the law at
+activity one. The new growth note records the accounting and quantifiers.
+
+A separate signed resummation now retains the full same-species stable
+Gaussian through real Gaussian replica fields. Conditional vertex phases
+are diagonal contractions, so the sine-loop operator bound survives. A
+Schatten/ALT trace inequality controls all distributions of four source
+insertions, including coincident ones. The physical source trace is O(a^4),
+and the restricted loop remainder has a convergent sum over every length.
+This loop functional allows repeated/overlapping component labels and has
+no residual mixed pair factors or branching. It is not the physical gas.
+Hard-core compatibility is the next specific issue. A bounded arbitrary
+residual can destroy the cancellation, as an exact Hadamard control shows.
+
+The checker compares actual-cochain fixed-field loop traces to direct sums
+(max error 2.38e-17), Gaussian characteristic quadrature (4.22e-15 at its
+explicitly scaled diagnostic covariance), and the full unscaled finite
+source remainder. The source trace inequality covers coincident patterns,
+singular matrices and a sharp rank-one case. Shared cochain code is declared;
+there is no independent review. Both x>=16384 give a conservative operator
+norm bound below 4.83e-34; beta512,N4096 is a fixed finite example, not a
+claimed phase window. Main freshness remains pinned at afef263.

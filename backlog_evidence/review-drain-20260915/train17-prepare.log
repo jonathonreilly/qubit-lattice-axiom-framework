@@ -1,0 +1,206 @@
+[detached HEAD c30eee77a0] Land independently reviewed bounded PR8045 source and history
+ Date: Tue Sep 15 10:03:49 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 107 files changed, 5745 insertions(+)
+ create mode 100644 docs/NATIVE_LOCAL_NATURAL_RING_DYNAMICS_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/AUTHOR_VERIFICATION_DRIVER.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_BUILD.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_BUILD.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_MANIFEST.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/LIVE.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/LIVE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/WRAPPER_CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/bare_X_instead_native.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/bare_X_instead_native.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/missing_folded_term.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/missing_folded_term.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_bare_X_instead_native.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_missing_folded_term.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_wrong_harmonic_input_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_wrong_homological_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_homological_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_homological_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_ring_matrix_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/pr8045-independent-canonical-review-GRAPH_CONFIRMATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/pr8045-independent-canonical-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/bare_X_instead_native.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/bare_X_instead_native.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/missing_folded_term.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/missing_folded_term.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_bare_X_instead_native.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_missing_folded_term.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_wrong_harmonic_input_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_wrong_homological_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_harmonic_input_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_harmonic_input_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_homological_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_homological_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-cold-review/CONTROL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-cold-review/pr8045-originals-native-local-harmonics-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/pr8045-originals-native-local-harmonics-root-CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/pr8045-originals-native-local-harmonics-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-prethermal-applicability/SOURCE_RECEIPTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-prethermal-applicability/pr8045-originals-native-local-prethermal-applicability-APPLICABILITY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-ROOT_CONTROL_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-ROOT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-INDEPENDENT_PROOF_COMPARISON.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/SOURCE_FIVE_STEP_CONTROL.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/STDERR
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-CONTROL_RECEIPT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-ROOT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-MUTATION_COVERAGE_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ROOT_CANONICAL_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_local_natural_ring_dynamics_2026_09_08.txt
+ create mode 100644 outputs/native_local_natural_ring_dynamics_2026_09_08.json
+ create mode 100644 scripts/native_local_natural_ring_dynamics_2026_09_08.py
+ create mode 100644 scripts/native_local_ring_constants_2026_09_08.py
+ create mode 100644 scripts/native_local_ring_harmonics_2026_09_08.py
+ create mode 100644 scripts/native_local_ring_matrix_2026_09_08.py
+[detached HEAD 30218a2e27] Land independently reviewed bounded PR8051 source and history
+ Date: Tue Sep 15 10:03:49 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 68 files changed, 3163 insertions(+)
+ create mode 100644 docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/AUTHOR_VERIFICATION_DRIVER.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/LIVE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MANIFEST.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ORIGINAL_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/WRAPPER_CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/dispersion.diff
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/flux.diff
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/pr8051-independent-canonical-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/pr8051-originals-native-zero-penalty-flux-selection-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/FINAL_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/SOURCE_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/STDERR
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/pr8051-originals-native-zero-penalty-flux-selection-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/pr8051-originals-native-zero-penalty-flux-selection-root-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/pr8051-originals-native-zero-penalty-pi-dispersion-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/pr8051-originals-native-zero-penalty-pi-dispersion-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/partition.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/partition.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ROOT_CANONICAL_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-STATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-TRACE_GATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/seam.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/seam.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/trivial_flux.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/trivial_flux.stdout
+ create mode 100644 logs/runner-cache/native_zero_penalty_optimal_flux_dispersion_2026_09_08.txt
+ create mode 100644 outputs/native_zero_penalty_optimal_flux_dispersion_2026_09_08.json
+ create mode 100644 scripts/native_zero_penalty_dispersion_exact_2026_09_08.py
+ create mode 100644 scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py
+ create mode 100644 scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py
+FROZEN 30218a2e270fbf7c51074432461002cf5fc235e7 sources 175 inputs 189 notes 2

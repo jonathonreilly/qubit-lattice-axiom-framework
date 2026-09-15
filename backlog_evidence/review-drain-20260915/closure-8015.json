@@ -1,0 +1,16 @@
+{
+  "pr": 8015,
+  "original_head": "99bf0f1984aff1a9cd1fde5cc1ef4f667a046544",
+  "branch": "codex/native-flux-error-block25-20260907",
+  "landing": "018902e8d7570c4ed2800cc4884f0157096da944",
+  "lease_deleted": true,
+  "dependent_base_maintenance": [],
+  "closedAt": null,
+  "state": "OPEN",
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:08:59Z",
+    "headRefOid": "99bf0f1984aff1a9cd1fde5cc1ef4f667a046544",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8015"
+  }
+}

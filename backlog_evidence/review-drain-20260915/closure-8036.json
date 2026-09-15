@@ -1,0 +1,16 @@
+{
+  "pr": 8036,
+  "original_head": "6067254e3bca867aa6e737f7aa2bb6078e5d622d",
+  "branch": "codex/native-product-to-gibbs-20260908",
+  "landing": "018902e8d7570c4ed2800cc4884f0157096da944",
+  "lease_deleted": true,
+  "dependent_base_maintenance": [],
+  "closedAt": null,
+  "state": "OPEN",
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:09:09Z",
+    "headRefOid": "6067254e3bca867aa6e737f7aa2bb6078e5d622d",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8036"
+  }
+}

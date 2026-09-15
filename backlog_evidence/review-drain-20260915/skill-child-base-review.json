@@ -1,0 +1,49 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent process source review; no science acceptance or GitHub action",
+  "base": "7927f9e170566b351b2cf6f801cb7176f8b87226",
+  "staged_tree": "5cd5d610d56049ecc9b90bc6eb9e687124f5a5a9",
+  "files": [
+    {
+      "path": ".claude/commands/review-loop.md",
+      "sha256": "b26587b3268d07e05088b2f53f191ebda7141afe9c530140fe37a4cd97c55c2f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/audit/scripts/check_review_loop_skill_contract.py",
+      "sha256": "a2ea07c1241a2d4d8cae6f39b935ff44f1b6309c78fc919d283db80f2e46a329",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/audit/scripts/tests/test_review_loop_skill_contract.py",
+      "sha256": "94fff2511ea43b2e1745cfdfeedfa789b0cc481329955fd5834ba5b3dfe86334",
+      "index_equals_worktree": true
+    }
+  ],
+  "findings": [],
+  "checks": [
+    "Independent unittest invocation:73 tests PASS in14.068s",
+    "Contract checker:31families PASS",
+    "Read raw4-file staged diff, surrounding deletion and train closure contract, checker prose scan and mutation helper",
+    "Read dependent-base-recovery.json:8017/8020 original head identities unchanged after reopen and retarget"
+  ],
+  "adversarial_cases": {
+    "drafts_out_of_unit": "Explicit inventory inclusion prevents current-unit cutoff",
+    "head_drift": "Frozen dependent head comparison preserves parent branch",
+    "new_old_base_dependent": "Immediate predelete relist preserves parent branch",
+    "retarget_failure": "No deletion until verified open/head/base; failed operation retained",
+    "delete_race_auto_close": "Postdelete verification plus exact absent-ref lease restoration; reopen unchanged dependent then retarget",
+    "ref_recreated_concurrently": "Absent-ref lease fails rather than overwrite; failure recorded",
+    "partial_parent_salvage": "Retarget requires complete reviewed parent source durable on main",
+    "science_scope": "Retarget explicitly base maintenance only; original delta frozen for later scientific review"
+  },
+  "limits": [
+    "Documentation workflow and regression contract; tests do not simulate GitHub service behavior",
+    "No external mutation or full pipeline executed by reviewer"
+  ]
+}

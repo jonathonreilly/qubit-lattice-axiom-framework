@@ -1,0 +1,29 @@
+{
+  "base": "018902e8d7570c4ed2800cc4884f0157096da944",
+  "source_head": "4994b354ed33e28c7b409be7ff0a492394f03a21",
+  "source_tree": "690cc9edb08dd1c65239b05ba70d3d6d3c35006c",
+  "heads": {},
+  "source_commits": [
+    "9d77c78f72"
+  ],
+  "source_owners": {
+    ".claude/commands/review-loop.md": "skill-child-base-review",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "skill-child-base-review",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "skill-child-base-review",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "skill-child-base-review"
+  },
+  "inputs": {
+    ".claude/commands/review-loop.md": "b26587b3268d07e05088b2f53f191ebda7141afe9c530140fe37a4cd97c55c2f",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "a2ea07c1241a2d4d8cae6f39b935ff44f1b6309c78fc919d283db80f2e46a329",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "94fff2511ea43b2e1745cfdfeedfa789b0cc481329955fd5834ba5b3dfe86334"
+  },
+  "reports": {
+    "skill-child-base-review": {
+      "md": "5a3be4d2bad9a7835b89bd01d33eda3bcd052c977f9ebb89146855d41d0dccad",
+      "json": "2f64f3221f62c4545d6cdeb13c145730b778e36ce1e4927a45ac4becc719142f"
+    }
+  },
+  "departure": "Required single-unit fallback after train04 affected-row type mismatch; complete standalone methodology unit",
+  "interaction_check": "Pure branch/dependent maintenance instructions and contract tests. Source hashes identical to independent PASS; no scientific premises, verdicts or source rows changed."
+}

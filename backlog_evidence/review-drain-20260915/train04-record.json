@@ -1,0 +1,67 @@
+{
+  "base": "018902e8d7570c4ed2800cc4884f0157096da944",
+  "source_head": "8439ff3df309cc67b1461b69b46da0d28191545c",
+  "source_tree": "6b808c9f9ecef346ec3509669607aed885c4bca2",
+  "heads": {
+    "8034": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+    "8035": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d",
+    "8102": "fe094b01714c5abaa8038a0b136e6577dfaae034"
+  },
+  "source_commits": [
+    "9d77c78f72",
+    "c87390a940",
+    "88491eb41c"
+  ],
+  "source_owners": {
+    ".claude/commands/review-loop.md": "skill-child-base-review",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "skill-child-base-review",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "skill-child-base-review",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "skill-child-base-review",
+    "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md": "review-8035",
+    "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md": "review-8035",
+    "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt": "review-8035",
+    "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt": "review-8035",
+    "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py": "review-8035",
+    "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py": "review-8035",
+    "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "review-8102",
+    "logs/runner-cache/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt": "review-8102",
+    "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py": "review-8102"
+  },
+  "inputs": {
+    ".claude/commands/review-loop.md": "b26587b3268d07e05088b2f53f191ebda7141afe9c530140fe37a4cd97c55c2f",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "a2ea07c1241a2d4d8cae6f39b935ff44f1b6309c78fc919d283db80f2e46a329",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "94fff2511ea43b2e1745cfdfeedfa789b0cc481329955fd5834ba5b3dfe86334",
+    "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a",
+    "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7",
+    "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt": "165de66a9b907d9f218b77a7849849f076f9a8ffeb8aad4853ce9a7464f29ce9",
+    "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt": "a2b0da0d54768b2c280023e4e8f8e4e11bcffec4f373ebfce891b7d9d289c23d",
+    "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5",
+    "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+    "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0",
+    "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141",
+    "logs/runner-cache/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt": "965263155485bf37dea816c17c1214a37011eff7f7121bb2f3d3bfe831c33fcd",
+    "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py": "57316434b0d9d48b46f0803227af1ad10940e7931b9663cf599e603cc8a08e74"
+  },
+  "reports": {
+    "skill-child-base-review": {
+      "md": "5a3be4d2bad9a7835b89bd01d33eda3bcd052c977f9ebb89146855d41d0dccad",
+      "json": "2f64f3221f62c4545d6cdeb13c145730b778e36ce1e4927a45ac4becc719142f"
+    },
+    "review-8035": {
+      "md": "573629424deb02369642684ccead95a8601ffb074e0c47f913bf54e2bd208b37",
+      "json": "287767d3ee62e77c106c335a9fa1a5e468f83795001eca00701fb055eee1ff02"
+    },
+    "review-8102": {
+      "md": "17cb7889424f3b0dfbe7b3d7b1afa80278b6fc5880f6d705d52d68abb0172d5a",
+      "json": "34bd99d0ecf7383e5ff43ee24e8a9b0aab30bc94b12a6d8d38498c5e603a35e9"
+    }
+  },
+  "departure": "All ready compatible units at prior train completion; no fixed collection wait",
+  "interaction_check": "Distinct strip, Gaussian and finite-menu order-census models retain their declared conditional domains. Reviewed science inputs unchanged. Workflow fix only preserves dependent PR base state; no scientific rule or evidence policy changed."
+}

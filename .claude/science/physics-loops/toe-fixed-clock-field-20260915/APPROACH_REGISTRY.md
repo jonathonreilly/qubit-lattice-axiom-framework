@@ -80,3 +80,13 @@ an overbroad support obstruction with a checked map of action, regularity
 and state hypotheses. No selected naturality/regularity axiom or physical
 kinetic completion is supplied. Further native work must match an actual
 physical carrier, not repeat prepared-menu nonselection or attach a spectator.
+
+
+Block6: an exact positive real-tilt auxiliary representation includes both
+clock sectors. A fixed integrable quadratic regulator fails on ordinary
+planar loops by an actual lower bound; a current-dependent translation
+escapes that norm failure. The translated source law is exactly smoothed
+dual-clock flux, with an explicit independent-noise identity and O(a^2)
+mean-square source equivalence. This is a resolved representation loop,
+not a full-field closure. Further RG/response work or the matter frontier
+should address a different unresolved step.

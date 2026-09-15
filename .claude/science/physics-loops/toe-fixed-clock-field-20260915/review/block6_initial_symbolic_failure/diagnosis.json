@@ -1,0 +1,6 @@
+{
+  "failure": "structural comparison of expanded and factored Hermite polynomial",
+  "exact_difference": "expand((z^4-6*z^2+3)+6-(z^2-3)^2)=0",
+  "scientific_formulas_changed": false,
+  "numerical_tolerances_changed": false
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "/tmp/toe-fixed-clock-field-20260915-literature/brydges-keller-1994.pdf",
+    "bytes": 24999631,
+    "sha256": "4453b11f150590954043c6d3d8511d5916047d46cb7fd279ac389560d91d219a",
+    "read_scope": "all75 extracted pages",
+    "visually_checked_pdf_pages": [
+      6,
+      10,
+      21,
+      59,
+      70
+    ]
+  },
+  {
+    "file": "/tmp/toe-fixed-clock-field-20260915-literature/brydges-dimock-hurd-1998.pdf",
+    "bytes": 292180,
+    "sha256": "ee2708dddff31f5beea51633a852a056d5b21dda47f0a1eb41aabfef43631f97",
+    "read_scope": "web extraction PDF1-8 opening only",
+    "visually_checked_pdf_pages": []
+  }
+]

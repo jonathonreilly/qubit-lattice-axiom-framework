@@ -404,3 +404,36 @@ review. The N1-N8 packet rejects a framework-wide no-go: the group/regularity
 contracts remain declared, compatible seeds and common-fiber constructions
 survive, and the approved kinetic primitive has no matched physical carrier
 in these candidate processes. No axiom update is forced or adopted.
+
+
+## Block6: positive two-sector representation and an exact return to duality
+
+The full finite clock source has an exact positive Gaussian/current law.
+A current-dependent translation removes the explicit filling-area cost and
+makes filling independence pointwise by bg=2piN. Poisson comparison then
+identifies its source variable as minus the dual lattice Gaussian plus an
+independent Gaussian of covariance R-I. The translated field is an exact
+smoothing of that dual flux, with source coupling error <=c||Bh||^2.
+This returns to the dual clock problem rather than closing its infrared law.
+
+A planar L-by-L sheet has squared norm L^2 but boundary Green energy
+<=sqrt(3)pi L/2, using positivity and the three-dimensional line Green sum.
+A free-box projection exhaustion transfers the comparison to finite boxes.
+For every fixed integrable quadratic regulator kappa<1, the unshifted
+positive electric activity norm grows at least exponentially in L^2.
+This rejects that precise regulator, while the translated positive route
+remains. A positive Hermite-4 density gives an explicit non-Gaussian
+self-dual scalar source law, so duality alone cannot close the gap.
+
+Actual finite clock/image sums, a separate auxiliary quadrature and dual
+lattice enumeration agree through full sources, covariance and fourth
+cumulants; maximum source gap4.45e-15 and fourth gap1.38e-14. Cutoff
+comparisons are not interval certificates. One structural polynomial
+comparison failure and its exact-zero diagnosis are frozen. All work is
+personal and provisional. No axiom-level wall or independent audit.
+
+Brydges-Keller1994 was read in full extracted form, with five hypothesis
+pages visually checked. Its initial local scalar-gradient norm is not
+matched to the coupled clock law. Next re-rank opportunities: pursue an
+actual new mechanism or another physical bottleneck, without recounting
+this duality loop as a new solution. Deadline remains01:45:03UTC.

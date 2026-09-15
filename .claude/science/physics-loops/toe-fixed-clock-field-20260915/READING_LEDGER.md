@@ -256,3 +256,28 @@ search excerpt was read; no general Lie-group theorem is imported. The
 M2 proof is written directly using two explicit unipotent matrices and
 dominated convergence. The continuous/Borel support distinction and both
 kernel constructions have complete local proofs and explicit current scope.
+
+
+Block6 literature: read all extracted pages1-75 of Brydges-Keller1994,
+Correlation functions of general observables in dipole-type systems I,
+DOI https://doi.org/10.5169/seals-116641 . Primary E-Periodica supplied an
+explicit bot link after its verification page; that published link returned
+the PDF. Visually inspected PDFpages6,10,21,59,70 to verify hypotheses,
+localization and iteration formulas. Its small local scalar-gradient
+polymer norm and Gaussian scale decomposition control the stated
+two-observable bounds. Its discussion of more insertions is not itself
+a full finite-clock field theorem. References imported inside its proof
+have not all been independently read. No theorem was applied to our model.
+
+Downloaded Brydges-Dimock-Hurd1998, Estimates on renormalization group
+transformations, DOI https://doi.org/10.4153/CJM-1998-041-5, from the primary Cambridge PDF.
+Only opening through section2.4/Lemma3 and the start of its proof were
+read in the web extraction (PDFpages1-8); the remaining body is unread.
+It specifies local analytic scalar-field activities, regulators and
+fluctuation/extraction/scaling. Its general scope is not a checked
+finite-clock application. Both PDFs stay outside the worktree.
+
+Re-read the entire main finite-clock Gaussian-smoothing source. Inspected
+the exact duality/centered-MGF passages of the finite-clock score source
+(lines110-220) and spectral concentration source (lines80-245); the latter
+was not read in full this block. Block6 derives its own finite identities.

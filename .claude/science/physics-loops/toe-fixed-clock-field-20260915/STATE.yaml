@@ -9,10 +9,11 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 5
-current_target: full-algebra naturality and a record-generated support-preserving kernel
+block: 6
+current_target: positive two-sector auxiliary representation, planar regulator test
+  and route re-ranking
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T19:13:12.975037+00:00'
-next_step: reassess frontier; pursue an actual physical bridge or new full-field
-  summation mechanism rather than repeat conditional classification
+last_checkpoint_utc: '2026-09-15T19:52:15.832815+00:00'
+next_step: choose a new coupled-field mechanism or re-rank the mobile-matter bottleneck;
+  do not repeat the exact duality loop

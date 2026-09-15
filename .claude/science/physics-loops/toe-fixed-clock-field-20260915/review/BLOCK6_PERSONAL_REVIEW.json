@@ -1,0 +1,33 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T19:52:15.832815+00:00",
+  "current_main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "broad_no_go": "FAIL_explicit_translation_and_other_methods_survive",
+  "checked": [
+    "free integral homology and proper subspace Gaussian",
+    "full source normalization and real rather than imaginary auxiliary tilt",
+    "positive joint law and current-dependent square completion",
+    "integer filling periodicity",
+    "dual lattice factor1/sqrt(beta), not g",
+    "independent-noise and smoothing identification by MGF uniqueness",
+    "planar perimeter Green bound and free projection exhaustion",
+    "actual fixed-regulator lower bound, not model divergence",
+    "non-Gaussian positive scalar self-duality control"
+  ],
+  "verification_limits": [
+    "same author only",
+    "three-cube checks do not execute four-dimensional thermodynamics",
+    "quadrature/image/Fourier cutoffs not interval certified",
+    "initial structural equality failure preserved",
+    "no full RG norm matching or source summation",
+    "initial unverified BDH DOI corrected against primary Cambridge page before checkpoint"
+  ],
+  "inputs": {
+    "evidence/block6_positive_auxiliary_check.json": "09472164446676dc6ab09c21c4fc662ba5cfe7a3f74f286a134313078ae31ce7",
+    "evidence/block6_positive_auxiliary_check.py": "161420b8dc0efe2f43a9908b903d234b73ebea2e3b79a08bfff3cb1a58b21b41",
+    "evidence/block6_positive_auxiliary_check.txt": "0c024bea28102c71090754c265f8a83e43499ac1866849a215851db7d3079f81",
+    "notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md": "6c78af85c320beabfa182f7aa81c14eb00ebc0b2cc6e837c6bc692c249078fe2",
+    "notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md": "92efb24ac59edb39b9c44db1292ca7d08b51c86a5c140158c3341e6b6b89b7f5",
+    "notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md": "78d0122491c82aa978fafcbc689d16f94d40944e66ae45ca983ccda0edf135a5"
+  }
+}

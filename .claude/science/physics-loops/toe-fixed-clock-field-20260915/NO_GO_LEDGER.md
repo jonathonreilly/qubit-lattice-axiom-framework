@@ -26,3 +26,11 @@ inverse-corner law escapes the latter at triangular profiles, and compatible
 noncentral state data escape empty-start centrality. The internal action
 contract is not selected by the axiom wording. Framework-wide impossibility
 or a forced update FAILS the accompanying N1-N8 review.
+
+
+Block6: the norm sup F_S/G_kappa for a fixed Gaussian-integrable quadratic
+regulator (kappa<1) diverges along planar electric loops. This is a direct
+activity lower bound with a free-volume exhaustion proof. Current-dependent
+translation explicitly survives, and the resulting law is a smoothed dual
+clock field. The scalar duality counterexample rules out only a logical
+shortcut. Broad physical/framework no-go FAILS the companion N1-N8 review.

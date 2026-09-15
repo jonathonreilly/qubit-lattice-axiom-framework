@@ -1,0 +1,115 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "identity",
+      "git_blob": "8b0db8d28f9dd3b483d6026e86eb09de99f11e58",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/adapted_frame.md",
+      "raw_bytes": 4061,
+      "raw_sha256": "45ae235fe174b53a3773048424625db79c39bf27b05f6371add565f8b13476da",
+      "stored_path": "kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md",
+      "stored_sha256": "45ae235fe174b53a3773048424625db79c39bf27b05f6371add565f8b13476da"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "495ee9ea9c50a6a45db028ff32bddde1f716efe8",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/four_solve.md",
+      "raw_bytes": 7590,
+      "raw_sha256": "540c8154d256ade91183731da29757185974c54aa27dce22c1e3cb27e86a552b",
+      "stored_path": "kept/pr8061-proof-four_solve-eff578cafd7f48f7.md",
+      "stored_sha256": "540c8154d256ade91183731da29757185974c54aa27dce22c1e3cb27e86a552b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "5fbe47de38f1dcc45a193256319a5259a936f0d2",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/projection.md",
+      "raw_bytes": 5540,
+      "raw_sha256": "c2c2a4b06b603e7032e27d91d407bc5e2e2a783fb1bd30512b613fb097ca2dae",
+      "stored_path": "kept/pr8061-proof-projection-e801411de605cecc.md",
+      "stored_sha256": "c2c2a4b06b603e7032e27d91d407bc5e2e2a783fb1bd30512b613fb097ca2dae"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b65a16320c8d9577cc85d5ae0ad435dd08f70fd3",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/projection_cold.md",
+      "raw_bytes": 3884,
+      "raw_sha256": "c4300e00d5515452727a9697575ef4af531bf220d58c67f3a869f98281fc2a22",
+      "stored_path": "_objects/c4300e00d5515452727a9697575ef4af531bf220d58c67f3a869f98281fc2a22.gz",
+      "stored_sha256": "6ce29fd1647f6c1419197026d1a4ca617ba494e080a1e3963abb92c1f094ca0a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "297a844d1a3b256f3a1d93c5f336f840de583e93",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/real_error.md",
+      "raw_bytes": 7943,
+      "raw_sha256": "e7e08db0e59a8b0f0cb1020dc1ae71c6339ea35746f5a3e9bee9a84b84315e5e",
+      "stored_path": "kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md",
+      "stored_sha256": "e7e08db0e59a8b0f0cb1020dc1ae71c6339ea35746f5a3e9bee9a84b84315e5e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ecefd63a7f36726b15c09de22d1b4e46466f76d4",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/real_sign.md",
+      "raw_bytes": 4042,
+      "raw_sha256": "2260e10052bf853f1f48a1f61933c65a09a8783217d8adc7e6bf2ed4e8516a85",
+      "stored_path": "kept/pr8061-proof-real_sign-c2692f5746303191.md",
+      "stored_sha256": "2260e10052bf853f1f48a1f61933c65a09a8783217d8adc7e6bf2ed4e8516a85"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "235917e8188f219601e38db4069b5565c191fc00",
+      "original_mode": "100644",
+      "original_path": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/third_order_parent.md",
+      "raw_bytes": 21943,
+      "raw_sha256": "bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8",
+      "stored_path": "_objects/bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8.gz",
+      "stored_sha256": "fb3c48a51d8a2356dee7306a50207a4c520fb81ea5ae3a6e110f1d6f955781d0"
+    }
+  ],
+  "prefix": "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/",
+  "revision": "da572021da3cd5469af0b5bae4f028faf4af3d98",
+  "schema_version": 1,
+  "unique_blobs": {
+    "235917e8188f219601e38db4069b5565c191fc00": {
+      "occurrences": 1,
+      "raw_bytes": 21943,
+      "raw_sha256": "bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8"
+    },
+    "297a844d1a3b256f3a1d93c5f336f840de583e93": {
+      "occurrences": 1,
+      "raw_bytes": 7943,
+      "raw_sha256": "e7e08db0e59a8b0f0cb1020dc1ae71c6339ea35746f5a3e9bee9a84b84315e5e"
+    },
+    "495ee9ea9c50a6a45db028ff32bddde1f716efe8": {
+      "occurrences": 1,
+      "raw_bytes": 7590,
+      "raw_sha256": "540c8154d256ade91183731da29757185974c54aa27dce22c1e3cb27e86a552b"
+    },
+    "5fbe47de38f1dcc45a193256319a5259a936f0d2": {
+      "occurrences": 1,
+      "raw_bytes": 5540,
+      "raw_sha256": "c2c2a4b06b603e7032e27d91d407bc5e2e2a783fb1bd30512b613fb097ca2dae"
+    },
+    "8b0db8d28f9dd3b483d6026e86eb09de99f11e58": {
+      "occurrences": 1,
+      "raw_bytes": 4061,
+      "raw_sha256": "45ae235fe174b53a3773048424625db79c39bf27b05f6371add565f8b13476da"
+    },
+    "b65a16320c8d9577cc85d5ae0ad435dd08f70fd3": {
+      "occurrences": 1,
+      "raw_bytes": 3884,
+      "raw_sha256": "c4300e00d5515452727a9697575ef4af531bf220d58c67f3a869f98281fc2a22"
+    },
+    "ecefd63a7f36726b15c09de22d1b4e46466f76d4": {
+      "occurrences": 1,
+      "raw_bytes": 4042,
+      "raw_sha256": "2260e10052bf853f1f48a1f61933c65a09a8783217d8adc7e6bf2ed4e8516a85"
+    }
+  }
+}

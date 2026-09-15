@@ -1,0 +1,39 @@
+{
+  "status": "PASS_SCOPED_LOCAL_ADAPTER_REVIEW",
+  "reviewer": "/root/review_8011",
+  "scope": "Two local integration adapter deltas only; full surrounding adapters read. No remote skill or scientific source change.",
+  "files": [
+    {
+      "path": "/private/tmp/review-drain-20260915/prepare_candidate_typed.py",
+      "sha256": "b81c3bfaf984d83913c35299442d5561e00d213a1fd46dc9e9ecceea654b3d40"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/finish_candidate_typed.py",
+      "sha256": "e05f570ddd382cc64345affb28422a7eaf552c3fedfeebf5b8223186574be5de"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8093-prepare-adapter.diff",
+      "sha256": "09d5419f7a6df9ab05f27bd230214ce764cfb42254d70be3bc3a9639b256ef5b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8093-finish-adapter.diff",
+      "sha256": "e384d7c0d32d10c8a76ac61ec84968259210554cecd7413a6ca60ffbc8866df1"
+    }
+  ],
+  "findings": "No material issue. Explicit reviewed procedural-only meta expectation is path/hash/review-bound; actual Type checked at prepare, one unaudited meta ledger row required at finish. Unexpected scientific rows remain in original bounded_theorem checks; existing science count/dependency/cache guards retained.",
+  "controls": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8093/check-adapters.py",
+      "sha256": "704059b93f17ecf10f6da4381785a8ea2706beb528d72962b3f6bec86f9f62ab"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8093/adapter-controls.txt",
+      "sha256": "ab53c98fb864524815385af70a17b16bff549d925215ebb87a30c1b4f616d768"
+    }
+  ],
+  "control_result": "11 actual extracted-block controls pass: positive meta plus rejects wrong Type/hash/review/procedural flag/status/duplicate or missing ledger rows; ordinary science row remains in science set. No adapter publication or integration executed by reviewer.",
+  "source_review": {
+    "path": "/private/tmp/review-drain-20260915/review-8093-final.json",
+    "sha256": "1dcf0ed9642cf0e0a78a1f15fbefdeef6edbce0aa63326b6e50e5ea83bb3e3ae"
+  }
+}

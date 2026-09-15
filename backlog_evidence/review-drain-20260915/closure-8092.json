@@ -1,0 +1,19 @@
+{
+  "pr": 8092,
+  "original_head": "4ad50beb2237097578815a623d963f3427cdcd78",
+  "branch": "physics-loop/native-common-frame-20260913",
+  "landing": "a3ddbc2e6f80584b8e45fe3a46382d7c7878fa6f",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-common-frame-20260913",
+    "headRefOid": "4ad50beb2237097578815a623d963f3427cdcd78",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8092,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8092"
+  }
+}

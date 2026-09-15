@@ -1,0 +1,12 @@
+runprep:good
+runprep:type:rejected
+runprep:hash:rejected
+runprep:review:rejected
+runprep:procedural:rejected
+runfinish:good
+runfinish:type:rejected
+runfinish:status:rejected
+runfinish:duplicate:rejected
+runfinish:missing:rejected
+runfinish:hash:rejected
+checks 11

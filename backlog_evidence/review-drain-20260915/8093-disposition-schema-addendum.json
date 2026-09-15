@@ -1,0 +1,30 @@
+{
+  "original_review": {
+    "path": "/private/tmp/review-drain-20260915/review-8093-final.json",
+    "sha256": "1dcf0ed9642cf0e0a78a1f15fbefdeef6edbce0aa63326b6e50e5ea83bb3e3ae"
+  },
+  "original_record": {
+    "path": "/private/tmp/review-drain-20260915/8093-unit-v1-final.json",
+    "sha256": "78d519c8d4e674e4c861508d356bb1a9eb540423ed6db448d5c0ca395ce572b2"
+  },
+  "failed_preflight": {
+    "path": "/private/tmp/review-drain-20260915/8093-final-preflight.json",
+    "sha256": "f3dc13bbb1415540b0b7b516272782ed15e0abae2a0dfad8cb543344a06aee19"
+  },
+  "scope": "Identity/field mapping correction only. Original source review unchanged. Prior row lacked recovery/final_path/final_sha256 required schema names; map existing reviewed identities without inferring new PASS.",
+  "original_dispositions": [
+    {
+      "original_path": "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md",
+      "original_sha256": "ca17e270ef14c6b44ac0143d074da4d90b4ac38df2b76d05edbbe9f67c6b6e64",
+      "disposition": "Complete original683-line proposal preserved byte-exact; current note corrected to scoped planning questions, with18-section map. No current proof fragment omitted or misclassified.",
+      "recovery": {
+        "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+        "path": "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md",
+        "historical_path": "docs/work_history/repo/review_feedback/pr8093-evidence/pr8093-original-proposal.md",
+        "historical_sha256": "ca17e270ef14c6b44ac0143d074da4d90b4ac38df2b76d05edbbe9f67c6b6e64"
+      },
+      "final_path": "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md",
+      "final_sha256": "d62d986e0d9bb755a17affb64ecfa259fb69b269d66a31d552fb8b9106916c9a"
+    }
+  ]
+}

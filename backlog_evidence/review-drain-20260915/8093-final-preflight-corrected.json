@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8093-meta-final-schema-corrected",
+  "tree": "3117cb9a58712a1a92b6cc86bc148ed5ec5df2ce",
+  "cache_checked": true,
+  "notes": [],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8748,
+      "misses": 4361
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4359
+    },
+    "declared_inputs": {
+      "hits": 8773,
+      "misses": 4492
+    }
+  },
+  "record_sha256": "7ed4bed91c3d1a9676ba533fa84a3adb3d2017662f957b082df157cb86ab5384",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

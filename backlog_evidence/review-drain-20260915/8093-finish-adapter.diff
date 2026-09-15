@@ -1,0 +1,19 @@
+--- finish_candidate.py	2026-09-15 08:04:05
++++ finish_candidate_typed.py	2026-09-15 12:35:37
+@@ -19,7 +19,15 @@
+ assert set(git('diff','--name-only',r['base']+'...HEAD').splitlines())==set(r['source_owners'])
+ rows=json.loads((root/'docs/audit/data/audit_ledger.json').read_text())['rows']
+ affected={k:v for k,v in rows.items() if v.get('note_path') in r['source_owners']}
+-science={k:v for k,v in affected.items() if not v.get('note_path','').startswith('docs/work_history/')}
++non_science_expectations=r.get('non_science_expectations',{})
++for path,expected in non_science_expectations.items():
++ assert path in r['source_owners'] and expected['claim_type']=='meta'
++ assert expected['review'] in r['review_evidence_hashes']
++ assert digest(out/expected['review'])==r['review_evidence_hashes'][expected['review']]
++ assert digest(root/path)==expected['sha256']
++ matches=[v for v in affected.values() if v.get('note_path')==path]
++ assert len(matches)==1 and matches[0]['claim_type']=='meta' and matches[0]['audit_status']=='unaudited', ('unreviewed or promoted meta row',path)
++science={k:v for k,v in affected.items() if not v.get('note_path','').startswith('docs/work_history/') and v.get('note_path') not in non_science_expectations}
+ assert len(science)==a.notes,(len(science),a.notes)
+ for k,v in science.items():
+  assert v['audit_status']=='unaudited' and v['claim_type']=='bounded_theorem',(k,v['audit_status'],v['claim_type'])

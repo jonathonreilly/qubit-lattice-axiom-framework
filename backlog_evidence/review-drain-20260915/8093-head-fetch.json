@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+  "fetched_ref": "refs/review-loop/fetched/8093-9796a96bbcc24f9b80d393fc230c9ccf",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "claude/toe-derivation-campaign-3a97a2",
+    "headRefOid": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+    "isDraft": false,
+    "number": 8093,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

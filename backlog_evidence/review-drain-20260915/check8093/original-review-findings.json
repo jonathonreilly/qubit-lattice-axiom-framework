@@ -1,0 +1,31 @@
+{
+  "status": "FINDINGS_CONFIRMED_NOT_FINAL_PASS",
+  "original": {
+    "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "paths": {
+      "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md": "ca17e270ef14c6b44ac0143d074da4d90b4ac38df2b76d05edbbe9f67c6b6e64"
+    },
+    "current_base": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+    "tree": "0e9d06fe26808d1a224579623bb42f18099e2fe4"
+  },
+  "source_read": "Entire683-line original note read independently; current axiom memo and Q8 predecessor scope read, current registered primitive scope reused by exact identity from prior review.",
+  "findings": [
+    "Unsupported repository-wide audit/axiom conclusion",
+    "Invariant deterministic order conflated with covariance of process families",
+    "Exchange necessity needs reachable positive-prefix hypotheses",
+    "M2(C) versus supplied Bloch/finite-family restriction",
+    "Complex conjugation is not SO3-commuting or complex-linear; specify star-automorphisms",
+    "Fixed axis component not diagonal-cubic invariant without selector",
+    "Haar singleton/menu distinction",
+    "Affineness does not fix Born coefficient without endpoint condition",
+    "Neighbour-only T factor can cancel in conditional normalization",
+    "Finite classification may remain inconclusive; family no-go not universal",
+    "Fisher local rank not global identifiability; singular parametrization",
+    "Different rate/order/joint laws need not always give distinct final laws",
+    "Zero patterns do not identify physical fermions; support group does not prove gauge physics",
+    "Minimal clause needs comparison criterion, is not forced axiom update"
+  ],
+  "root_author_scope": "Current meta may be rewritten as scoped actionable questions preserving all12targets; complete original preserved as historical proposal, not current supporting proof.",
+  "no_execution": "No campaign or primary runner executed."
+}

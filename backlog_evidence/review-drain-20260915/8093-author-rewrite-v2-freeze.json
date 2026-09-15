@@ -1,0 +1,19 @@
+{
+  "base": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+  "tree": "0d56bd0fb1927e040037e62fa95b1ff3e137f8ad",
+  "source_paths": {
+    "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md": "037c06473e86ce70c07f78e7130e653cb9839ea4aa49615c1a5997240e4886cc",
+    "docs/work_history/repo/review_feedback/pr8093-evidence/README.md": "59cdd3e2962074e94b578af033d3aac5b11b0482b46711a360ba1d14f023d588",
+    "docs/work_history/repo/review_feedback/pr8093-evidence/pr8093-original-proposal.md": "ca17e270ef14c6b44ac0143d074da4d90b4ac38df2b76d05edbbe9f67c6b6e64"
+  },
+  "original": {
+    "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "paths": {
+      "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md": "ca17e270ef14c6b44ac0143d074da4d90b4ac38df2b76d05edbbe9f67c6b6e64"
+    },
+    "current_base": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+    "tree": "0e9d06fe26808d1a224579623bb42f18099e2fe4"
+  },
+  "change": "All twelve target sections retained as research questions with explicit obligations. Entire original proposal preserved byte-exact, including detailed experiments and proposed clauses; no campaign execution or premise adoption."
+}

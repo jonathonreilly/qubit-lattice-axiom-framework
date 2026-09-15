@@ -1,0 +1,19 @@
+{
+  "pr": 8091,
+  "original_head": "28dd88687270388140ad45fbfac9b145f6f8972f",
+  "branch": "physics-loop/native-lapse-response-20260913",
+  "landing": "a3ddbc2e6f80584b8e45fe3a46382d7c7878fa6f",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-lapse-response-20260913",
+    "headRefOid": "28dd88687270388140ad45fbfac9b145f6f8972f",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8091,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8091"
+  }
+}

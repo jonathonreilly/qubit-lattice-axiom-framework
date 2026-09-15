@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py
+runner_sha256: 57316434b0d9d48b46f0803227af1ad10940e7931b9663cf599e603cc8a08e74
+input_fingerprint_sha256: 4bac015fe532245f3fda24d3cf7544ca3c0a70dba3923f4bbd550ee4312457c4
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 17.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md
+AUDIT_TIMEOUT_SEC: 900
+scope: six-projector menu; product rules (3,1,2),(5,2,4), constant (2,2,2), binary Ising-type e^J=2; windows path3, P4, star4, cycle4, 2x3 rectangle, 2x2x2 cube; every order
+mutation: none
+PASS: A1 note carries its claim id
+PASS: A2 axiom sentences quoted verbatim needles 5 missing 0
+PASS: A3 classification parent present
+PASS: A4 monotone parent present
+PASS: B1 six projectors Hermitian idempotent trace one
+PASS: B2 pair census parallel/antiparallel/orthogonal (6, 6, 24)
+PASS: B3 24 proper rotations transitive orbit-preserving count 24 images 6
+PASS: B4 windows: cube 8 sites 12 bit-flip edges degree 3; rect 6 sites 7 edges cube edges 12
+PASS: B5 acyclic orientations = order-induced orientations path3 4; P4 8; star4 8; cycle4 14; rect 98; cube 1862
+PASS: B6 linear extensions of the product order rect 5 cube 48
+PASS: B7 every cube order has largest recorded set 3 {3: 40320}
+PASS: C1 one-neighbour normalizer constant p+q+4r; binary 5 (3, 1, 2):12 (5, 2, 4):23
+PASS: C2 chain law = static weight / multiset denominator evaluated 424320 mismatches 0
+PASS: C3 every multiset law sums to one (small windows, rect)
+PASS: C4 tree partition function M*Z1^(n-1); orders equal to static path3 4; P4 8; star4 12; cycle4 0
+PASS: C5 cube partition function: contraction = full pass Z(3,1,2)=6982520832
+PASS: D1 census on path3/P4/star4/cycle4 = (4,2) (8,8,8) (12,6,2,2,2) (8,8,4,4) path3 2; P4 3; star4 5; cycle4 4
+PASS: D2 cycle4 uniform order mixture gap reproduces E5 899/2341664 3478458125/23066700436908
+PASS: D3 rect: multisets over 720 orders 28
+PASS: D4 rect: distinct laws at (3,1,2),(5,2,4) = multisets (28, 28)
+PASS: D5 rect: forward and reverse orders share a multiset ((1, 3), (2, 4))
+PASS: D6 rect: orders in the monotone-box class 48
+PASS: D7 rect TV(mono,static) (3, 1, 2) 166597/6750000
+PASS: D8 rect TV(mix,static) (3, 1, 2) 0.029104037152
+PASS: D9 rect TV(mix,mono) (3, 1, 2) 44446481797/2046477026880
+PASS: D10 rect max|mix-static| (3, 1, 2) 8535587/105456000000
+PASS: D11 rect spread max_m TV(m,static) (3, 1, 2) 16549/281250
+PASS: D7 rect TV(mono,static) (5, 2, 4) 18031280990/1152766563947
+PASS: D8 rect TV(mix,static) (5, 2, 4) 0.017380198182
+PASS: D9 rect TV(mix,mono) (5, 2, 4) 0.013603057424
+PASS: D10 rect max|mix-static| (5, 2, 4) 0.000020951945
+PASS: D11 rect spread max_m TV(m,static) (5, 2, 4) 125508731/3410832276
+PASS: D12 constant rule: normalizer tables constant, one law on rect and cube groups 1
+PASS: D13 cube: multisets over 40320 orders 542
+PASS: D14 cube: distinct laws at (3,1,2),(5,2,4) (542, 542)
+PASS: D15 cube: family separates the multisets (groups needing the full pass) ambiguous (0, 0)
+PASS: D16 cube: monotone and reversed multisets as declared, distinct
+PASS: D17 cube: orders in the monotone-box class 120
+PASS: D18 cube TV(mono,static)=TV(rev,static) (3, 1, 2) 1182193085/23402354976
+PASS: D19 cube TV(mono,rev) (3, 1, 2) 8207/7830108
+PASS: D20 cube family max|mix-static| (3, 1, 2) 0.000033816129
+PASS: D21 cube family max|mix-mono| (3, 1, 2) 3230469/511813120000
+PASS: D18 cube TV(mono,static)=TV(rev,static) (5, 2, 4) 0.029767147923
+PASS: D19 cube TV(mono,rev) (5, 2, 4) 78076639367/38683213526034
+PASS: D20 cube family max|mix-static| (5, 2, 4) 0.000004549342
+PASS: D21 cube family max|mix-mono| (5, 2, 4) 0.000000878109
+PASS: D22 exchange identity holds only at empty backgrounds; constant rule everywhere (3, 1, 2) (0,1):72/216 (5, 2, 4) (0,1):216/216
+PASS: D23 cube unlabeled degree histogram collision; 1862 labeled vectors, 8 histograms
+PASS: E1 binary path3 chain vs ends-first: TV 9/50, masses 8/25 vs 4/17, 8 cells 9/50
+PASS: E2 binary cycle4: laws (8,8,4,4); cyclic vs opposite TV 9/50; cells 16
+PASS: E3 binary rect: 28 laws; row-major = reverse; corners vs row-major 44/64 cells TV 135/578 laws 28
+PASS: E4 binary constant rule: one law over all 720 orders laws 1
+PASS: E5 binary cube: 542 distinct normalized laws on all 256 configurations laws 542
+PASS: F1 note carries the fence sentences
+PASS: F2 note avoids closing and selecting language
+PASS: F3 runner source carries no floating-point literal or conversion hits 0
+per_element: executed — projector, pair, rotation and window checks on the declared menu and windows
+per_site: executed — one-site normalizers and recorded-neighbour sets for every site of every window
+per_mode: executed — every formation order of every declared window; every acyclic orientation
+per_block: executed — census, mixture, monotone-box and exchange results per window and triple
+lattice_wide: not claimed — no infinite-volume statement, no rule, order or reading selected
+PASS: G1 resolution certificate printed
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

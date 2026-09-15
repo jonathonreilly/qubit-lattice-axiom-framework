@@ -1,6 +1,6 @@
 {
- "edge_count": 12759,
- "node_count": 5228,
+ "edge_count": 12774,
+ "node_count": 5241,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4961,6 +4961,10 @@
   "finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_bounded_theorem_note_2026-09-14": {
    "deps_hash": "61520f2a99a3",
    "out_degree": 1
+  },
+  "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "cbfdfa9b6409",
+   "out_degree": 2
   },
   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",
@@ -13698,6 +13702,10 @@
    "deps_hash": "a9cb5a27b029",
    "out_degree": 4
   },
+  "optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "8237288c57b0",
+   "out_degree": 2
+  },
   "orbit_constant_mass_dimension_cycle906_support_note_2026-08-09": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -20245,6 +20253,50 @@
   "work_history.repo.review_feedback.pr8119-halfline-evidence.readme": {
    "deps_hash": "441caa075c52",
    "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8120-clock-spectral-evidence.pr8120-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8120-clock-spectral-evidence.pr8120-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8120-clock-spectral-evidence.pr8120-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8120-clock-spectral-evidence.pr8120-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8120-clock-spectral-evidence.readme": {
+   "deps_hash": "9eedfbc13e43",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.pr8121-block13_numerical_correction": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.pr8121-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.pr8121-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.pr8121-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.pr8121-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.readme": {
+   "deps_hash": "e18b68c678ec",
+   "out_degree": 6
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

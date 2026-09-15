@@ -1,0 +1,15 @@
+{
+  "pr": 8113,
+  "verdict": "PASS \u2014 empty repository scientific claim dependency set is honest",
+  "prior_review": "review-8113.json",
+  "prior_review_sha256": "e978fb7191bf860178ecb9c2ea5b5daf0d24b54d0c062091b27156cd4482a11a",
+  "source_path": "docs/SPIN10_SYMMETRIC_ATOMIC_GAPS_MIRROR_BOUNDARY_PROJECTION_AND_CURRENT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+  "source_sha256": "52f49ed0d6dd544a5892d58ae039ce86245d4e16832fa4934b8a8f8fe20b6024",
+  "repository_scientific_claim_dependencies": [],
+  "reason": "All CAR structure, matrices, representation, Hamiltonians, width, state, gauge probe and couplings are redeclared supplied model data; no repository scientific theorem or primitive is used as a mathematical premise. Minimal axioms/three primitives are mentioned to deny selection of these data. Historical archive link is provenance.",
+  "external_context": "Five explicit primary-research links remain disclosed in Sources and review boundary; they are external model/method context, not hidden repository parents. Prior report documents independent model checks and external-context reading.",
+  "own_note_cache_pin": "Proof identity only, not a claim dependency on itself.",
+  "repository_parent_needed": null,
+  "runner_repeated": false,
+  "audit_applied": false
+}

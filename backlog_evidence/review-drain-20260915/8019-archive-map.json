@@ -1,0 +1,218 @@
+[
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "976924260aad350c180a8a7797f561542b2f3eebacc94bbc5e86b953177fa6e2",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ASSUMPTIONS_AND_IMPORTS.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/CANONICAL_HASHES.json",
+    "sha256": "943b327cd571b749afc132835dbfe885b6d7a671cf08630ab523b53c822849e8",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_HASHES.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/CANONICAL_RAW.json",
+    "sha256": "eb0eb4d638b094fe57a2828741c5a75838a57b3b0ab866ee5340f3d228e6cdee",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_RAW.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "6c46a231da3fd6cff757745d38bbc763d74a3f0318a11249d87e851503615a76",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-CLAIM_STATUS_CERTIFICATE.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/HANDOFF.md",
+    "sha256": "e10cd29aa719efdedf464ff2d501fa1197ff14ddc963cc1d95867e43021c5caf",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-HANDOFF.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/LITERATURE_BRIDGES.md",
+    "sha256": "792678eeb65d9966142c530d25b8bce5611734bde67bba35243382a37f84505d",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-LITERATURE_BRIDGES.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "sha256": "a2c3da3aee021fa5b6308a351ce0817f67e726737f072dd7827c3f21668b2af8",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_DISCIPLINE_CHECKLIST.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/NO_GO_LEDGER.md",
+    "sha256": "9d2f695321433b9e801a69a69792fc2337b4f1430e2e4ec1c22e5826f72b3da7",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_LEDGER.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/REVIEW_HISTORY.md",
+    "sha256": "23647b290cf5a605b8ff393af116258ca19c9efc79221f73589d0071d0f425b6",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-REVIEW_HISTORY.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ROOT_FINAL_PORT_REVIEW.md",
+    "sha256": "367b06adf63b8ef30262f74817da886b9eeab51a1aefb5c622d7d88b7b4ba0fe",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ROOT_FINAL_PORT_REVIEW.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ROOT_REPORTING_REPAIR.json",
+    "sha256": "1dccc0afb3fab6b95eeaa59efb591872a043e3c20a48ee1546ad17570a4e1b28",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/ROOT_REPORTING_REPAIR.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/TRACE_GATE.md",
+    "sha256": "5775b75398db441da6333beb40786b2dcfb18ccaf9e9204c8a0cb89226dbff68",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-TRACE_GATE.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/PACK_INDEX.md",
+    "sha256": "c50261f0d5fc4fd228c39c11c767507a05ac52390cb704858e29506431e3cef5",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/pr8019-original-staging-PACK_INDEX.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/COMPOSITION_SCOPE_CLARIFICATION.md",
+    "sha256": "59f8bfff7cb0c7946ddf2520049b720f70db13faea94707799e60ba207f21598",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-COMPOSITION_SCOPE_CLARIFICATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/DERIVATION.md",
+    "sha256": "8363d46a6bfc02b22a94d3959dc338c0d79254c3761a7f1d650487f814c348e1",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-DERIVATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/PREREGISTRATION.md",
+    "sha256": "fd76edf48b5a07aecf168107195071f6b9cf78151a26efbbd6e25c036e1877ef",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-PREREGISTRATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/check.py",
+    "sha256": "c8c01c1ea78e9a5b47b9132ba616686d0a860df90ffa64b66b0f3ff7c979068e",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/check.py"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/result.json",
+    "sha256": "93bc2db8b82480a24a2da1ffa837577e027154c7418a1ce73515347d5f3fa136",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/result.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/DERIVATION.md",
+    "sha256": "230e7f325100b27e2f1f1642383f526fc52be7e23792e42f5981b9f8e6720b31",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-DERIVATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/EXPONENT_LEDGER.json",
+    "sha256": "6b051c296518afbf8905eaa73206d67fcaa17fe7a8e262aa984bb1ce41f2885e",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/EXPONENT_LEDGER.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/PREREGISTRATION.md",
+    "sha256": "b16679a70310f7d7ebef847e260f7fe8fcd8ee0972218f826d738a81a85e36fb",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-PREREGISTRATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/SCALAR_CONTROL_FAILURE.md",
+    "sha256": "9146aa0e31daf44a06130093e47ba32b27506e1b3362da41d03a38fb4e6da3d0",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_CONTROL_FAILURE.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/SCALAR_SUPPLEMENT_PREREGISTRATION.md",
+    "sha256": "a9c4b9530150f80bfbc4af3852e05eb1d53b5fc20df45d2dfd7c2d2a9c1a72f9",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_SUPPLEMENT_PREREGISTRATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/check_before_structural_zero_fix.py",
+    "sha256": "3f128c095eacea03c4fe77e6bd7dc621f994f742edd87d9e5847f70263376b5c",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/check_before_structural_zero_fix.py"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-fixed-review/CONTROL_CORRECTION.md",
+    "sha256": "6e853f3963dfce780d9deec23d894700c7757e3dbeb032878dfc2095ccf711c9",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-CONTROL_CORRECTION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-fixed-review/REVIEW.md",
+    "sha256": "8f4f7bf3d3ab970fb479a7d284ab3e4c16219e2fb1fd7afa0dcf0d5822af97b4",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-REVIEW.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-fixed-review/SCALAR_CONTROLS.json",
+    "sha256": "8d77dd0aae2f5079f44e1d5cc9b23114d6a131744976e2d43d402682cf1222a5",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/SCALAR_CONTROLS.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/NATIVE_SHARPER_REVIEW.md",
+    "sha256": "7b55e777c9b4a196d935e72c75cec48d7ed469c082b05645de85515666b830fd",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-NATIVE_SHARPER_REVIEW.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/ROOT_REVIEW.md",
+    "sha256": "a0a93508ccf290861fa82d9001f6712eb7aca3481bb721afe9c7d4e1b0d40cfd",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-ROOT_REVIEW.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/check.py",
+    "sha256": "04f2c1fd009223f26164bfa2d3b08593065e5f30b06e3683ca6140e973109263",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/check.py"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/result.json",
+    "sha256": "1ff64817cbdd5ea40242fe8db1dcac61884766193de88538514552494f98d093",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/result.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/root-independent98/DERIVATION.md",
+    "sha256": "8ab508377035ab60321889c8f2ae44f3efc308fcc146aac8f0505549099986f3",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-DERIVATION.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/root-independent98/PROVENANCE.md",
+    "sha256": "fa40466ad8af1ac4560650c91300fae1c853f8f3493cd41e8f729cd5cb4f2e88",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-PROVENANCE.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/root-independent98/ROOT_NATIVE_SHARPER_REVIEW.md",
+    "sha256": "37c6d0bed0d0e523ab15430f66a9770570639415afc5567b43efba324eed48b6",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-ROOT_NATIVE_SHARPER_REVIEW.md"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/result.json",
+    "sha256": "e3a2e557661fece52fac42e0346e0e3f03b9bbd00a69f3f5b22d7b7e8b4cdf4b",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/result.json"
+  },
+  {
+    "head": "d57943620edd5098df7b6410f952d569730276f5",
+    "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+    "sha256": "d93d5290273fbb36c16fdc2007ba5e89c89aaeceac88837f48207976038cd9b7",
+    "final_path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py"
+  }
+]

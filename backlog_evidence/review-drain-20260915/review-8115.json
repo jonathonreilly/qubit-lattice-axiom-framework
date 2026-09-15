@@ -1,0 +1,812 @@
+{
+  "unit": [
+    8115
+  ],
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "36607532327386ca6e1ced470d5aa93a026989d5",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "candidate_base": "b1d0d941c7cd982fe8013af193ecc51630911fc2",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "8fc0cdce54cf3fd9fa8ca634912afdeb7dd89a9060f108220f6573ab11409da8",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "8fc0cdce54cf3fd9fa8ca634912afdeb7dd89a9060f108220f6573ab11409da8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/HANDOFF.md",
+      "original_sha256": "f0fedc6274e1c9f4753f10b36cd72c9be13208265b643a653d5df23740965ce1",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-HANDOFF.md",
+      "final_sha256": "f0fedc6274e1c9f4753f10b36cd72c9be13208265b643a653d5df23740965ce1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/MECHANICAL_CHECKS.json",
+      "original_sha256": "43970051407526923efaab8e0b94e4e64c079840614f5155a918e42f287f2608",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/MECHANICAL_CHECKS.json",
+      "final_sha256": "43970051407526923efaab8e0b94e4e64c079840614f5155a918e42f287f2608"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/MUTATION_RESULTS.json",
+      "original_sha256": "6a3878f11e9aa303993a92efde486e8ea67143204162ffaab914db3a53f3b31a",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/MUTATION_RESULTS.json",
+      "final_sha256": "6a3878f11e9aa303993a92efde486e8ea67143204162ffaab914db3a53f3b31a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/PRIMARY_RESULT.json",
+      "original_sha256": "7d383b3419fbb0b91426b98f38d402f7c3d64fd0668d728defcb8158d60cae72",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/PRIMARY_RESULT.json",
+      "final_sha256": "7d383b3419fbb0b91426b98f38d402f7c3d64fd0668d728defcb8158d60cae72"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/READING_LEDGER.json",
+      "original_sha256": "2b2ba0eb7f489b93436c37f63c07391894c45497dfb187ec7fd96d28d9302e40",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/READING_LEDGER.json",
+      "final_sha256": "2b2ba0eb7f489b93436c37f63c07391894c45497dfb187ec7fd96d28d9302e40"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/REVIEW_HISTORY.md",
+      "original_sha256": "b1db3a05f681b328314aa3701de5c5714221252d69b131567a1d163cd770821b",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-REVIEW_HISTORY.md",
+      "final_sha256": "b1db3a05f681b328314aa3701de5c5714221252d69b131567a1d163cd770821b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/TRACE_GATE.md",
+      "original_sha256": "b4123dc1da2f484e2d90f0e4966340a1004759fe17f0976d3a81a3e608974300",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-TRACE_GATE.md",
+      "final_sha256": "b4123dc1da2f484e2d90f0e4966340a1004759fe17f0976d3a81a3e608974300"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/CAR_occupation_sign.py.gz",
+      "original_sha256": "db7983814915e447cb1128b1586dd1ff4a0d898fd879ec5e2c0adde1acf02fe2",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.py.gz",
+      "final_sha256": "db7983814915e447cb1128b1586dd1ff4a0d898fd879ec5e2c0adde1acf02fe2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/CAR_occupation_sign.stderr.gz",
+      "original_sha256": "ab640eb577a9145fa7553dc15c2e334937deee54e6c920d02dca7f3c061eab3d",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.stderr.gz",
+      "final_sha256": "ab640eb577a9145fa7553dc15c2e334937deee54e6c920d02dca7f3c061eab3d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/CAR_occupation_sign.stdout.gz",
+      "original_sha256": "0bc40fd5f842ab144393f9aa66b98568d1a709118cd613cd49bd566806fdf7ee",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.stdout.gz",
+      "final_sha256": "0bc40fd5f842ab144393f9aa66b98568d1a709118cd613cd49bd566806fdf7ee"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/Jordan_Wigner_intervening_parity.py.gz",
+      "original_sha256": "27fa8cf8a9b71ebc9bbf5a2e33f42b313333f5f14e88514b8cafce5257b24d7b",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.py.gz",
+      "final_sha256": "27fa8cf8a9b71ebc9bbf5a2e33f42b313333f5f14e88514b8cafce5257b24d7b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/Jordan_Wigner_intervening_parity.stderr.gz",
+      "original_sha256": "ff9f86a58f4f4bb88751ae79a494a45b7b7f50e3ff894412fd2931d71585e0f0",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.stderr.gz",
+      "final_sha256": "ff9f86a58f4f4bb88751ae79a494a45b7b7f50e3ff894412fd2931d71585e0f0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/Jordan_Wigner_intervening_parity.stdout.gz",
+      "original_sha256": "77bc9208e94a2377c81b8db4852c47b2446f99273d4916840f157e400e80540e",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.stdout.gz",
+      "final_sha256": "77bc9208e94a2377c81b8db4852c47b2446f99273d4916840f157e400e80540e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/controlled_Pauli_cross_phase.py.gz",
+      "original_sha256": "406477c45f2a8521c581ca16f4cdaa4e4fc07c779f66fdc202fd95299c0c6f78",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.py.gz",
+      "final_sha256": "406477c45f2a8521c581ca16f4cdaa4e4fc07c779f66fdc202fd95299c0c6f78"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/controlled_Pauli_cross_phase.stderr.gz",
+      "original_sha256": "213ddee3adb66a47276e071a46a329442aeae988b4184d6a3c9c4dd1afe9c1bb",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.stderr.gz",
+      "final_sha256": "213ddee3adb66a47276e071a46a329442aeae988b4184d6a3c9c4dd1afe9c1bb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/controlled_Pauli_cross_phase.stdout.gz",
+      "original_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.stdout.gz",
+      "final_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/edge_addition_endpoint_parities.py.gz",
+      "original_sha256": "c2943e667fd3217f5d9703d743498c89577fab5662ea86c9f0c046ef81417e68",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.py.gz",
+      "final_sha256": "c2943e667fd3217f5d9703d743498c89577fab5662ea86c9f0c046ef81417e68"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/edge_addition_endpoint_parities.stderr.gz",
+      "original_sha256": "a235fbd80b198276ea6343d7fc455ab223d090f898c2a6f498ba4c5b22192659",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.stderr.gz",
+      "final_sha256": "a235fbd80b198276ea6343d7fc455ab223d090f898c2a6f498ba4c5b22192659"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/edge_addition_endpoint_parities.stdout.gz",
+      "original_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.stdout.gz",
+      "final_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/graph_orientation_signs.py.gz",
+      "original_sha256": "524ef14a737e8977fb759f247b37e18172bfeb2c913432a3e434a586f152a444",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.py.gz",
+      "final_sha256": "524ef14a737e8977fb759f247b37e18172bfeb2c913432a3e434a586f152a444"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/graph_orientation_signs.stderr.gz",
+      "original_sha256": "f33dda9d126f01fca0eedd7b25ad3e57d52fe8fb0509abfc635627c27c0dea82",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.stderr.gz",
+      "final_sha256": "f33dda9d126f01fca0eedd7b25ad3e57d52fe8fb0509abfc635627c27c0dea82"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/graph_orientation_signs.stdout.gz",
+      "original_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.stdout.gz",
+      "final_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/incidence_CZ_cross_phase.py.gz",
+      "original_sha256": "e76cd62e2a16f8be70b9bd54b85a658e164f72ec6f5424d1f60476f8e4071a29",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.py.gz",
+      "final_sha256": "e76cd62e2a16f8be70b9bd54b85a658e164f72ec6f5424d1f60476f8e4071a29"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/incidence_CZ_cross_phase.stderr.gz",
+      "original_sha256": "af8635a997b3c7c8beeb1d862eb1672ff2e2f1e489b6f0127d1c20ca4c207578",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.stderr.gz",
+      "final_sha256": "af8635a997b3c7c8beeb1d862eb1672ff2e2f1e489b6f0127d1c20ca4c207578"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/incidence_CZ_cross_phase.stdout.gz",
+      "original_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.stdout.gz",
+      "final_sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/local_loader_suffix.py.gz",
+      "original_sha256": "f5f1a65472519cc846dfaaf8a35b1da1aa80d9db2e8b9c9fa0cc5d46fa188f06",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.py.gz",
+      "final_sha256": "f5f1a65472519cc846dfaaf8a35b1da1aa80d9db2e8b9c9fa0cc5d46fa188f06"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/local_loader_suffix.stderr.gz",
+      "original_sha256": "ce60c18a52228a6fd952396f06faa3bd57ee005f87f246767396109db404a453",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.stderr.gz",
+      "final_sha256": "ce60c18a52228a6fd952396f06faa3bd57ee005f87f246767396109db404a453"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/local_loader_suffix.stdout.gz",
+      "original_sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.stdout.gz",
+      "final_sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/ordinary_BKSF_hopping_sign.py.gz",
+      "original_sha256": "30883f68452528cf7490b8538bd00f25c719e99866adebf323b20b5d51fc2f87",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.py.gz",
+      "final_sha256": "30883f68452528cf7490b8538bd00f25c719e99866adebf323b20b5d51fc2f87"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/ordinary_BKSF_hopping_sign.stderr.gz",
+      "original_sha256": "9d5afe7dcfd5b3ec2212143513b9fa8bb707b11c0be3bb7736a6f40e4ab8c3dd",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.stderr.gz",
+      "final_sha256": "9d5afe7dcfd5b3ec2212143513b9fa8bb707b11c0be3bb7736a6f40e4ab8c3dd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/ordinary_BKSF_hopping_sign.stdout.gz",
+      "original_sha256": "7543ef51852a83e8dc70a13b83ae0ca7cdd1794c9cc1c9de4ab6e61bc7a484fa",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.stdout.gz",
+      "final_sha256": "7543ef51852a83e8dc70a13b83ae0ca7cdd1794c9cc1c9de4ab6e61bc7a484fa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/physical_complete_cell_string.py.gz",
+      "original_sha256": "283639db26d2a4ecad09f8dd7607486abfbf9ff9ef4c2d073b1916af922ea869",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.py.gz",
+      "final_sha256": "283639db26d2a4ecad09f8dd7607486abfbf9ff9ef4c2d073b1916af922ea869"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/physical_complete_cell_string.stderr.gz",
+      "original_sha256": "399c244411f43567ab7ba4008cacf79bf9e300d828fd8c81dd1bbbc54fd3343d",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.stderr.gz",
+      "final_sha256": "399c244411f43567ab7ba4008cacf79bf9e300d828fd8c81dd1bbbc54fd3343d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/physical_complete_cell_string.stdout.gz",
+      "original_sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.stdout.gz",
+      "final_sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/target_cell_spectator.py.gz",
+      "original_sha256": "11af9225f593639b47b02f1c532766b4ef730a3bea6e857480478376fcc7318e",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.py.gz",
+      "final_sha256": "11af9225f593639b47b02f1c532766b4ef730a3bea6e857480478376fcc7318e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/target_cell_spectator.stderr.gz",
+      "original_sha256": "971776a8a91c2159f7686c27f1b0f7e842a29b8977b71cccdf4620e74d63c060",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.stderr.gz",
+      "final_sha256": "971776a8a91c2159f7686c27f1b0f7e842a29b8977b71cccdf4620e74d63c060"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block7/mutation_evidence/target_cell_spectator.stdout.gz",
+      "original_sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7",
+      "disposition": "accepted byte-exact historical proof/control/provenance record, not current verdict",
+      "final_path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.stdout.gz",
+      "final_sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7"
+    },
+    {
+      "original_path": "docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_sha256": "e09f90bb2f4e0366eddc0b3a81b12b8722425bb9ec3a16f21b8126ed056126b1",
+      "disposition": "accepted bounded source; only historical-review archive link changes",
+      "final_path": "docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "240f0f508a02c343b4c239a43d2d6b005b65ac25d17b1f2991f8caf341fceb64"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "64fbe1fe026a4bd07658bc4a2e34e04ab99d4e8f5686da6fd20e2b981644bc0f",
+      "disposition": "superseded topology manifest; coordinator regenerates final graph acknowledgment",
+      "recovery": "36607532327386ca6e1ced470d5aa93a026989d5:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.txt",
+      "original_sha256": "0150fccc4ebc65d0a5acdfe5b7a8976b6e93022d842706f47b0b28d6044485c2",
+      "disposition": "accepted bounded source; only historical-review archive link changes",
+      "final_path": "logs/runner-cache/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.txt",
+      "final_sha256": "0150fccc4ebc65d0a5acdfe5b7a8976b6e93022d842706f47b0b28d6044485c2"
+    },
+    {
+      "original_path": "scripts/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.py",
+      "original_sha256": "6d2323216429296d5a218366e80be5701bfb23112c17fd57d7b694ca1a0d314f",
+      "disposition": "accepted bounded source; only historical-review archive link changes",
+      "final_path": "scripts/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.py",
+      "final_sha256": "6d2323216429296d5a218366e80be5701bfb23112c17fd57d7b694ca1a0d314f"
+    }
+  ],
+  "original_path_count": 42,
+  "archive_file_count": 38,
+  "coverage": "complete685line original note and749line original runner read; all8 historical text/JSON records read;30gzip mutation artifacts decompressed and exact edits/assertion receipts inspected",
+  "claims": {
+    "1": "arbitrary-compression commutator norm bound1 and gateerror|sin\u03b8| under exact local-X intertwiner; leakage does not evade",
+    "2": "joint odd-sector projection weight bound and nwb<m perturbation selection with explicitly invariant resolvents/analytic fixedbox coefficients",
+    "3": "same phase-oriented local-D BKSF code ranks/logicalX suffix/disjointmode5loaders; no physical preparation asserted",
+    "4": "all-total-order opengrid indexgap lowerbound and conservative radiusvolume bound, one-dimensional/missingstreams excluded",
+    "5": "localunitary circuit lightcone eta>=|sin2\u03b8|/2 and conditional encoder-depth tradeoff; boundedrange and fixedancillas explicit",
+    "6": "actual directed sixport grammar closed exchange mismatch; staticflux/rephasing invariant, evenparity and stationaryspectator controls; fixedgrammar only",
+    "7": "ordinaryfixedparity and singledistinguishedreference algebraic escapes, lacklocaloddloader; imported architecture reconstructed directly",
+    "8": "signed controlledPauli edge-addition onto matched graphcode, inverse returns ancillas, exactloader/D/vacuum phases, incidenceCZ/orientationZ and conservative1895 boundedrange depth"
+  },
+  "inputs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE703_BKSF_PATCH_TABLEAU_COVARIANCE_NOTE_2026-07-25.md",
+      "sha256": "e356e1828e7343889d49d042fd4cf976a4072704f2601de8573af66a0fb72b25",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md",
+      "sha256": "325e19300d93dda124225d5c93e0274adb06705e2282e29ddf196ecb03b44015",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md",
+      "sha256": "abee86330380daf21a497f398c7e2e7f1b9e5e5bb826fa82f702cfe85582ca1f",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_NOTE_2026-07-17.md",
+      "sha256": "0a8a768c8b68b151b356f7a4ba88d14dfd5a71a048ca85ade6a0f2febe25e3bf",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "scripts/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py",
+      "sha256": "8240ab7d3cd27f3058a7b44c1cfe35dda638cf011fbdd12ccecc1bc8054043c9",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+      "sha256": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py",
+      "sha256": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245",
+      "role": "historical model/grammar fidelity context, not imported theorem",
+      "read_scope": "current hash checked; actual loader/directed operand definitions and closest-note claim boundaries inspected where loadbearing; no whole historical runner review claimed"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority context only; exact prior complete read reused, no accepted premise selects model/gates/clock"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "framework authority context only; exact prior complete read reused, no accepted premise selects model/gates/clock"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "framework authority context only; exact prior complete read reused, no accepted premise selects model/gates/clock"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "role": "framework authority context only; exact prior complete read reused, no accepted premise selects model/gates/clock"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "framework authority context only; exact prior complete read reused, no accepted premise selects model/gates/clock"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "framework authority context only; exact prior complete read reused, no accepted premise selects model/gates/clock"
+    }
+  ],
+  "runtime_inputs": "selfcontained NumPy/SciPy/standard-library runner; no scientific file reads, helpers, AUDIT_INPUT_PATHS or moving upstream; fresh cache binds runner source",
+  "repository_dependencies": "Empty scientific repo deps justified: all supplied mathematical definitions and proofs restated; historical comparison sources not theorem authority. No fabricated new premise link.",
+  "external_methods": [
+    {
+      "url": "https://arxiv.org/abs/1810.05274v2",
+      "scope": "primary abstract inspected for standard superfastencoding prior art; code rank/algebra reconstructed in note"
+    },
+    {
+      "url": "https://arxiv.org/abs/2201.05153v1",
+      "scope": "primary abstract inspected for2DClifford/gLU prior art; its classification is not imported in3D"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "finding": "38 unique historical source/control/provenance records missing, including broken reviewlink",
+      "resolution": "byteexact archive, unique MD basenames, explicit original-name mapping, historical authority boundary and repaired canonical link",
+      "status": "resolved, same-session final confirmed"
+    }
+  ],
+  "checks": {
+    "metadata": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "original_repository_citations": [],
+    "original_cache_status": "fresh",
+    "original_execution": {
+      "exit": 0,
+      "seconds": 3.682799999951385,
+      "source_sha256": "6d2323216429296d5a218366e80be5701bfb23112c17fd57d7b694ca1a0d314f",
+      "stdout_sha256": "95a204d8e445ff5572d7c1d914efd8498176f4e4128ab43b8a94629b1c6e88e8",
+      "lastline": [
+        "TOTAL: PASS=4 FAIL=0"
+      ]
+    },
+    "independent_math": {
+      "six_port_exterior_algebra_exchange": [
+        {
+          "path": "exchange",
+          "CAR": -1,
+          "extended_local_grammar": 1
+        },
+        {
+          "path": "one_particle",
+          "CAR": 1,
+          "extended_local_grammar": 1
+        }
+      ],
+      "symbolic_lightcone_commutator_square": "4 sin(2theta)^2 T^2",
+      "sharp_commuting_error": 1,
+      "explicit_edge_addition_S": "X tensor Y",
+      "all24square_orders_min_bandwidth": 2,
+      "constant_depth_budget": 1895,
+      "scope": "Independent exterior-algebra actions and symbolic dense formulas, no imported primary implementation"
+    },
+    "historical_mutation_validation": [
+      {
+        "name": "CAR_occupation_sign",
+        "decompressed_sha256": "5fc2bac630e9ff081af11c5dbf3644a6282776af230d9ffa17b0d6de0d6d5fdf",
+        "changes": [
+          "-     return (n ^ 1 << i, (-1) ** (n & (1 << i) - 1).bit_count())",
+          "+     return (n ^ 1 << i, 1)"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=1 FAIL=3"
+        ]
+      },
+      {
+        "name": "Jordan_Wigner_intervening_parity",
+        "decompressed_sha256": "1eff884aa25de2f34eb71d725d136d89ff0f37157ee3bc93f2fe0b4734192682",
+        "changes": [
+          "-     bet = ((1 << j) - 1) ^ ((1 << (i + 1)) - 1)",
+          "+     bet = 0"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=2 FAIL=2"
+        ]
+      },
+      {
+        "name": "local_loader_suffix",
+        "decompressed_sha256": "15a5cf9c4e7c7e0362da3fff57f38381078456e7a91ab4376472e1fb9df44e44",
+        "changes": [
+          "-                 xs.append(P(3) @ mul((self.B(vs[b]) for b in range(a, self.q))) @ self.A(vs[a], vs[-1]))",
+          "+                 xs.append(P(3) @ mul((self.B(vs[b]) for b in range(a + 1, self.q))) @ self.A(vs[a], vs[-1]))"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "physical_complete_cell_string",
+        "decompressed_sha256": "ca559035123780e06f2abbb61c20d3763b1aab031c14869f61ffcda25350bbb1",
+        "changes": [
+          "-     bet = mul((g.B(g.vid[g.cells[k], s]) for k in range(ci + 1, di) for s in range(g.q))) if between else P()",
+          "+     bet = mul((g.B(g.vid[g.cells[k], s]) for k in range(ci + 2, di) for s in range(g.q))) if between else P()"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "target_cell_spectator",
+        "decompressed_sha256": "91fc098a76a76a42fb656b21cd506d97e2b1ffe727b6d763c1359c41231c9cb0",
+        "changes": [
+          "-     spectator = mul((g.B(g.vid[d, s]) for s in range(g.q) if s != b))",
+          "+     spectator = mul((g.B(g.vid[d, s]) for s in range(g.q) if s != a))"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "controlled_Pauli_cross_phase",
+        "decompressed_sha256": "ba4a76d96ff2d3f011b212ade4be32ac5871f1c1fa9033d0c987223567e92e4f",
+        "changes": [
+          "-     return P((out.p + 2 * a * b) % 4, out.x, out.z)",
+          "+     return P(out.p % 4, out.x, out.z)"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "edge_addition_endpoint_parities",
+        "decompressed_sha256": "1a7c20a9a14814c45d7eabe44e96458ff551892b69712b999977197399336e9c",
+        "changes": [
+          "-     S = P(0 if u < v else 2) @ g.B(u) @ g.B(v) @ L",
+          "+     S = P(0 if u < v else 2) @ L"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "incidence_CZ_cross_phase",
+        "decompressed_sha256": "1546409f60659001bcc27b226750b4148c2d69746316061a2537b5a30c004e52",
+        "changes": [
+          "-     return P((row.p + 2 * a * b) % 4, row.x, row.z ^ (a << f) ^ (b << e))",
+          "+     return P(row.p % 4, row.x, row.z ^ (a << f) ^ (b << e))"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "graph_orientation_signs",
+        "decompressed_sha256": "fb99bf7dacc5f184eb10084b9c236c094e7afab716f574e7f8fc897ed561c43c",
+        "changes": [
+          "-     orientation_mask = sum((1 << mapping[e] for e, (u, v, _) in enumerate(g.edges) if (u < v) != (vertex_map[u] < vertex_map[v])))",
+          "+     orientation_mask = 0"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      },
+      {
+        "name": "ordinary_BKSF_hopping_sign",
+        "decompressed_sha256": "fbd5519c161630da24352bdb06047af5a6c299dc8ebfda4a76995a7a2579101c",
+        "changes": [
+          "-         mapped = 1j * dense(g.A(u, v), n) @ (dense(g.B(u), n) - dense(g.B(v), n)) / 2",
+          "+         mapped = -1j * dense(g.A(u, v), n) @ (dense(g.B(u), n) - dense(g.B(v), n)) / 2"
+        ],
+        "intended_assertion_present": true,
+        "historical_stdout_final": [
+          "TOTAL: PASS=3 FAIL=1"
+        ]
+      }
+    ],
+    "mutations_reexecuted": false,
+    "full_pipeline_count": 0,
+    "audit_actions": 0,
+    "unique_archive_markdown_names": true,
+    "README_links_resolve": true,
+    "independent_artifact_hashes": {
+      "check8115/original.stdout": "95a204d8e445ff5572d7c1d914efd8498176f4e4128ab43b8a94629b1c6e88e8",
+      "check8115/historical-mutation-validation.json": "2087196bcafd4ec92943c13cad7646951dd69bf65bea631ca24d80285e820db1",
+      "check8115/write_review.py": "d6fde390cade2926441e0baddb730bf673d6b2a4f33da2baa9e409d94f394c05",
+      "check8115/original-execution.json": "5ac40ec11496cf34ee3762364c4f98d961f240c2083fde2fa89f1261415fc57e",
+      "check8115/original.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "check8115/independent_math.py": "6fbaf251a752e5e8884f19dbd27703442c08e3c81060328b18da6419efca8e47",
+      "check8115/independent-math.json": "774ef061e38733711a73e9328955e8d0f05f09e3c1e75d239ee047d617616c3a"
+    }
+  },
+  "current_main_preservation": "original delta3newsource/cache paths and historical evidence; no existing main scientific source replaced/deleted. Eight comparison sources retain original frozen identities.",
+  "limitations": "Sameencoding/local-loader and fixedgrammar only; no general fermion-onqubit obstruction, physical nearestneighborsite routing, selected dynamics/clock, globalupdateword exclusion or retained/audit grade.",
+  "reviewer_source_edits": 0,
+  "staged_tree": "f492fdb445457ee2c2c790abf2035fb5a2436ef5",
+  "final_files": [
+    {
+      "path": "docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "240f0f508a02c343b4c239a43d2d6b005b65ac25d17b1f2991f8caf341fceb64",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/MECHANICAL_CHECKS.json",
+      "sha256": "43970051407526923efaab8e0b94e4e64c079840614f5155a918e42f287f2608",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/MUTATION_RESULTS.json",
+      "sha256": "6a3878f11e9aa303993a92efde486e8ea67143204162ffaab914db3a53f3b31a",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/PRIMARY_RESULT.json",
+      "sha256": "7d383b3419fbb0b91426b98f38d402f7c3d64fd0668d728defcb8158d60cae72",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/READING_LEDGER.json",
+      "sha256": "2b2ba0eb7f489b93436c37f63c07391894c45497dfb187ec7fd96d28d9302e40",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/README.md",
+      "sha256": "df0cfba37ca5dbc22effed7f5bea1064c71aa25c86b282dedf178d04dbe06066",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.py.gz",
+      "sha256": "db7983814915e447cb1128b1586dd1ff4a0d898fd879ec5e2c0adde1acf02fe2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.stderr.gz",
+      "sha256": "ab640eb577a9145fa7553dc15c2e334937deee54e6c920d02dca7f3c061eab3d",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.stdout.gz",
+      "sha256": "0bc40fd5f842ab144393f9aa66b98568d1a709118cd613cd49bd566806fdf7ee",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.py.gz",
+      "sha256": "27fa8cf8a9b71ebc9bbf5a2e33f42b313333f5f14e88514b8cafce5257b24d7b",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.stderr.gz",
+      "sha256": "ff9f86a58f4f4bb88751ae79a494a45b7b7f50e3ff894412fd2931d71585e0f0",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.stdout.gz",
+      "sha256": "77bc9208e94a2377c81b8db4852c47b2446f99273d4916840f157e400e80540e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.py.gz",
+      "sha256": "406477c45f2a8521c581ca16f4cdaa4e4fc07c779f66fdc202fd95299c0c6f78",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.stderr.gz",
+      "sha256": "213ddee3adb66a47276e071a46a329442aeae988b4184d6a3c9c4dd1afe9c1bb",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.stdout.gz",
+      "sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.py.gz",
+      "sha256": "c2943e667fd3217f5d9703d743498c89577fab5662ea86c9f0c046ef81417e68",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.stderr.gz",
+      "sha256": "a235fbd80b198276ea6343d7fc455ab223d090f898c2a6f498ba4c5b22192659",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.stdout.gz",
+      "sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.py.gz",
+      "sha256": "524ef14a737e8977fb759f247b37e18172bfeb2c913432a3e434a586f152a444",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.stderr.gz",
+      "sha256": "f33dda9d126f01fca0eedd7b25ad3e57d52fe8fb0509abfc635627c27c0dea82",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.stdout.gz",
+      "sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.py.gz",
+      "sha256": "e76cd62e2a16f8be70b9bd54b85a658e164f72ec6f5424d1f60476f8e4071a29",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.stderr.gz",
+      "sha256": "af8635a997b3c7c8beeb1d862eb1672ff2e2f1e489b6f0127d1c20ca4c207578",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.stdout.gz",
+      "sha256": "8fdebdb3e45e258b01eedb30808b26f9d39dd2286416526f2bbdbd4d82c93faa",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.py.gz",
+      "sha256": "f5f1a65472519cc846dfaaf8a35b1da1aa80d9db2e8b9c9fa0cc5d46fa188f06",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.stderr.gz",
+      "sha256": "ce60c18a52228a6fd952396f06faa3bd57ee005f87f246767396109db404a453",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.stdout.gz",
+      "sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.py.gz",
+      "sha256": "30883f68452528cf7490b8538bd00f25c719e99866adebf323b20b5d51fc2f87",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.stderr.gz",
+      "sha256": "9d5afe7dcfd5b3ec2212143513b9fa8bb707b11c0be3bb7736a6f40e4ab8c3dd",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.stdout.gz",
+      "sha256": "7543ef51852a83e8dc70a13b83ae0ca7cdd1794c9cc1c9de4ab6e61bc7a484fa",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.py.gz",
+      "sha256": "283639db26d2a4ecad09f8dd7607486abfbf9ff9ef4c2d073b1916af922ea869",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.stderr.gz",
+      "sha256": "399c244411f43567ab7ba4008cacf79bf9e300d828fd8c81dd1bbbc54fd3343d",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.stdout.gz",
+      "sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.py.gz",
+      "sha256": "11af9225f593639b47b02f1c532766b4ef730a3bea6e857480478376fcc7318e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.stderr.gz",
+      "sha256": "971776a8a91c2159f7686c27f1b0f7e842a29b8977b71cccdf4620e74d63c060",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.stdout.gz",
+      "sha256": "48a074e313c9d4bac3204e197fd87f51b607bf1d112bc6169d216e9da674dfe7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "8fc0cdce54cf3fd9fa8ca634912afdeb7dd89a9060f108220f6573ab11409da8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-HANDOFF.md",
+      "sha256": "f0fedc6274e1c9f4753f10b36cd72c9be13208265b643a653d5df23740965ce1",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-REVIEW_HISTORY.md",
+      "sha256": "b1db3a05f681b328314aa3701de5c5714221252d69b131567a1d163cd770821b",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-TRACE_GATE.md",
+      "sha256": "b4123dc1da2f484e2d90f0e4966340a1004759fe17f0976d3a81a3e608974300",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.txt",
+      "sha256": "0150fccc4ebc65d0a5acdfe5b7a8976b6e93022d842706f47b0b28d6044485c2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.py",
+      "sha256": "6d2323216429296d5a218366e80be5701bfb23112c17fd57d7b694ca1a0d314f",
+      "index_equals_worktree": true
+    }
+  ],
+  "final_cache_status": "fresh; exact reproduced stdout",
+  "final_citations": [
+    "docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-REVIEW_HISTORY.md"
+  ],
+  "disposition_map_sha256": "d7dbfd137c896a200f77053e7fbb75c6943d3aca8cdee442093ee34c1c333610",
+  "final_confirmation": "Same reviewer confirms42stagedpaths,38historicalfilehashes,only Reviewlink changed,runner/cache unchanged,allcontext/authorityhashes stable"
+}

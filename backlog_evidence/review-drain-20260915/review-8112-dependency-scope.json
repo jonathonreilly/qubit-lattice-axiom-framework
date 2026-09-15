@@ -1,0 +1,23 @@
+{
+  "unit": "PR8112",
+  "verdict": "PASS: empty repository claim dependencies honestly match reviewed scope",
+  "source_commit": "5121f45919b37a2da2c320c8eb8b40c80e6883bb",
+  "note": {
+    "path": "docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+    "sha256": "089368d3b9c4fc9387ad3eb3d9320552f8a6e3836e4f81db7f45d8b32c10dcbd",
+    "blob": "b30316abc9304f4b2941a9ea8fcec0844e7b8ac9"
+  },
+  "original_review_json_sha256": "625f76c2a5ebcad3d9054d3ce7548ec2b8f5fd4aa5b63e6d35863a3ac30498c8",
+  "source_binding_report": "/private/tmp/review-drain-20260915/review-8112.json",
+  "source_binding_report_sha256": "625f76c2a5ebcad3d9054d3ce7548ec2b8f5fd4aa5b63e6d35863a3ac30498c8",
+  "repository_claim_dependencies": [],
+  "rationale": "The finite model and all scientific premises/proofs are specified in the note and self-contained runner. Repository axiom/primitive and neighboring-result references delimit context and native-identification limits; no theorem conclusion is imported from a repository parent. Historical evidence links preserve provenance, not claim authority.",
+  "external_mathematical_methods": [
+    "canonical symmetric-tensor constrained reduction and linear Hamiltonian algebra",
+    "Fourier character invariance, polynomial/moment Taylor estimates",
+    "finite Weyl/stabilizer algebra and quadratic constrained minimization"
+  ],
+  "external_source_boundary": "Gu-Wen continuum comparators are explicitly credited and rederived. Xu-Horava/Pretko supply context; the BDL product-space theorem is explicitly not imported into the stabilizer code. No external phase theorem is accepted.",
+  "new_science_run": false,
+  "scope": "Original-session dependency classification only; does not grant audit/retained status or change source."
+}

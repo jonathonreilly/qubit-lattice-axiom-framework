@@ -1,0 +1,59 @@
+{
+  "base": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+  "source_head": "d36f8bb497d21c268ab3730cf2639ce03ef99570",
+  "source_tree": "65f76edd253ab6a1e8de1b801cc1f3cda1e73ed6",
+  "heads": {
+    "8105": "d2be589c75282455e012ce112caa29521d0efe14"
+  },
+  "source_owners": {
+    "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "review-8105",
+    "logs/runner-cache/admissibility_handed_rule_pseudoscalar_census_2026_09_13.txt": "review-8105",
+    "scripts/admissibility_handed_rule_pseudoscalar_census_2026_09_13.py": "review-8105"
+  },
+  "inputs": {
+    "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d",
+    "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md": "b13856ad88d4bd4c2773525bcd22dcd8ebb98c18c0e1f48279013c596833ac19",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/repo/DEFERRED_DECISIONS.md": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "logs/runner-cache/admissibility_handed_rule_pseudoscalar_census_2026_09_13.txt": "68d27038e4ce6c5c2a408e891a5ca72dec1f0c6aa965eae0ad2ce1b883b9382e",
+    "scripts/admissibility_handed_rule_pseudoscalar_census_2026_09_13.py": "40387117315fe1b2dad93b870747b4a491ce97a337845e1430b947704d022b61",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "reports": {
+    "review-8105.md": "efb8b10c40dd7799d67100b94c9c185bdb969b3dc78cd58265f072ed6bc604b9",
+    "review-8105.json": "ae28c37724249378410003e251a69f8b4cb65b8f8fb76b5592fb82487b170f25",
+    "review-8105-workflow-addendum.json": "ccb4ac1702e81920bf977bbbd94a5dfcf00e4fb04e3b79a55fb1d247ce3d9a7a",
+    "review-8105-dependency-links.md": "9a005018cb9d60df41b86b93425fe8c640e75643d78877e0776ff826939cfa3a",
+    "review-8105-dependency-links.json": "2846b194e045b270e20bde44d8fe2379f392775ba321ffe65b47ec73762cb95c"
+  },
+  "departure": "Same-unit corrected retry after missing-dependency rejection",
+  "interaction_check": "Only three existing declared upstream references linked and note-bound cache refreshed; original reviewer confirms identical mathematical claims and premise bytes. Main helper-map addition has no citation-parser code change.",
+  "dependency_expectations": {
+    "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md": {
+      "required_claim_ids": [
+        "minimal_axioms",
+        "realized_state_primitive",
+        "a_mirror_asymmetric_admissibility_rule_registers_its_own_parity_odd_texture_and_nothing_else_the_emergent_fermions_movers_are_time_reversal_images_with_identical_record_laws_bounded_note_2026-09-05"
+      ],
+      "independent_review": "review-8105-dependency-links.json",
+      "reason": "Three declared source/authority dependencies now linked and independently confirmed"
+    }
+  },
+  "candidate_commit": "b1d0d941c7cd982fe8013af193ecc51630911fc2",
+  "candidate_tree": "dedc554cb9cd2ba1b504221d28ba15984c2b4d14",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 1,
+  "validation_logs": {
+    "fallback05-8105-retry-pipeline.log": "eb421cd05ea0e634d3a47851b0f0f3ce5ae681a151f924d62d713b6a5f399802",
+    "fallback05-8105-retry-strict.log": "ee769608e7347640404769b4dea696ebc31fa48edaf9f0c214b60182fb361c9c",
+    "fallback05-8105-retry-evidence.txt": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+    "fallback05-8105-retry-validated-rows.json": "dc21a422adf3f3e851f3bb3f8bff3dd8a8c0282ca74516d8c2124fd4e7c56349"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
+}

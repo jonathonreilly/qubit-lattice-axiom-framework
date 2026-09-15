@@ -1,0 +1,24 @@
+{
+  "pr": 8105,
+  "original_head": "d2be589c75282455e012ce112caa29521d0efe14",
+  "branch": "claude/handed-rule-pseudoscalar-census",
+  "landing": "b1d0d941c7cd982fe8013af193ecc51630911fc2",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "claude/handed-rule-pseudoscalar-census",
+    "headRefOid": "d2be589c75282455e012ce112caa29521d0efe14",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8105,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8105"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "d2be589c75282455e012ce112caa29521d0efe14",
+    "state": "CLOSED"
+  }
+}

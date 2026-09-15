@@ -1,0 +1,1251 @@
+{
+  "unit": "PR8019",
+  "source_final_verdict": "PASS",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "d57943620edd5098df7b6410f952d569730276f5",
+  "original_parent": "5680b56f4205536f746340d1f2070e243820981c",
+  "confirmation_base": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+  "staged_tree": "72e1510052183d8327c050cf1c2928166139feac",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ARTIFACT_PLAN.md",
+      "original_status": "A",
+      "original_blob": "7ac0a45766b992357dc929b4d3fb8aafabe44b35",
+      "original_sha256": "cc639326570b0cdf07fc8720d691572d969b1c09c6bed62b364b70f2347fe953",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/ARTIFACT_PLAN.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_status": "A",
+      "original_blob": "2d0ea9cc02c7ac113c232f4565a8cacf132f94c0",
+      "original_sha256": "976924260aad350c180a8a7797f561542b2f3eebacc94bbc5e86b953177fa6e2",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "976924260aad350c180a8a7797f561542b2f3eebacc94bbc5e86b953177fa6e2",
+        "blob": "2d0ea9cc02c7ac113c232f4565a8cacf132f94c0"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/CANONICAL_HASHES.json",
+      "original_status": "A",
+      "original_blob": "d9311ce1a8248bc3d0a53aa52851df059070f214",
+      "original_sha256": "943b327cd571b749afc132835dbfe885b6d7a671cf08630ab523b53c822849e8",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_HASHES.json",
+        "sha256": "943b327cd571b749afc132835dbfe885b6d7a671cf08630ab523b53c822849e8",
+        "blob": "d9311ce1a8248bc3d0a53aa52851df059070f214"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/CANONICAL_RAW.json",
+      "original_status": "A",
+      "original_blob": "34bafc65b44c8bfdd7a7dc5e09df643f1e6cb094",
+      "original_sha256": "eb0eb4d638b094fe57a2828741c5a75838a57b3b0ab866ee5340f3d228e6cdee",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_RAW.json",
+        "sha256": "eb0eb4d638b094fe57a2828741c5a75838a57b3b0ab866ee5340f3d228e6cdee",
+        "blob": "34bafc65b44c8bfdd7a7dc5e09df643f1e6cb094"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_status": "A",
+      "original_blob": "b16972187f9ee85e1f81acea8816a4eda856eda9",
+      "original_sha256": "6c46a231da3fd6cff757745d38bbc763d74a3f0318a11249d87e851503615a76",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "6c46a231da3fd6cff757745d38bbc763d74a3f0318a11249d87e851503615a76",
+        "blob": "b16972187f9ee85e1f81acea8816a4eda856eda9"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "original_status": "A",
+      "original_blob": "10319c345fef995c1ff7125796b8eab96cc155d7",
+      "original_sha256": "734f8372bde82911b6adfac09e128743480e22deaa906d70e10305742a47c30f",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "original_status": "A",
+      "original_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_READINESS.json",
+      "original_status": "A",
+      "original_blob": "f58d6b94ecf0926a6cba1727bcd07f7fd341d371",
+      "original_sha256": "2d2f6a90fc27be2f02b0f7459af43b0b8bb622f671e2591c76db67947ecf84ec",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_READINESS.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_STRICT.log",
+      "original_status": "A",
+      "original_blob": "122e91ffd2b44cf922b12bcdd3ffe11f914d2bea",
+      "original_sha256": "db1073c7718af41515f3c982604a546cc336da29f68254bbc3b78c9f986852da",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_STRICT.log",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "original_status": "A",
+      "original_blob": "f14d65baf1d4b098408863b06b6fa3b092832fe0",
+      "original_sha256": "73bdcf94e88f3614a02243dab448caf8a7da1b0d0c00c5d5d471815f8abfa4dc",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_VALIDATION.md",
+      "original_status": "A",
+      "original_blob": "0b3b7e8b48173127a033ea8c9df6e62d2097bf41",
+      "original_sha256": "ab75c69841434f39cc92bd62775333967241c2d23bb6f52fbcf4e3ff69ca365c",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_MAIN66_VALIDATION.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_VALIDATION.md",
+      "original_status": "A",
+      "original_blob": "d0479c4296c491b0a6d16e99d4be828fcaaf27fb",
+      "original_sha256": "887fbcbd2b8959661ef01083464ef9f85462de09cd448f292a43fdcd56ea25bc",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_VALIDATION.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_VOCAB_LINT.txt",
+      "original_status": "A",
+      "original_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/FINAL_VOCAB_LINT.txt",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/GOAL.md",
+      "original_status": "A",
+      "original_blob": "ae5f20eb294f4bd902ed41a110eb2ec04f5bfd23",
+      "original_sha256": "6110001e437ea8a92ba4de133db6b38190befda991886621a8f965dc71251da4",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/GOAL.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/HANDOFF.md",
+      "original_status": "A",
+      "original_blob": "687baeeb9bfdb066fb32415a159b27cb614e74c2",
+      "original_sha256": "e10cd29aa719efdedf464ff2d501fa1197ff14ddc963cc1d95867e43021c5caf",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-HANDOFF.md",
+        "sha256": "e10cd29aa719efdedf464ff2d501fa1197ff14ddc963cc1d95867e43021c5caf",
+        "blob": "687baeeb9bfdb066fb32415a159b27cb614e74c2"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/LITERATURE_BRIDGES.md",
+      "original_status": "A",
+      "original_blob": "e76f61cb780878726f06da4fc7c56d8bdf077964",
+      "original_sha256": "792678eeb65d9966142c530d25b8bce5611734bde67bba35243382a37f84505d",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-LITERATURE_BRIDGES.md",
+        "sha256": "792678eeb65d9966142c530d25b8bce5611734bde67bba35243382a37f84505d",
+        "blob": "e76f61cb780878726f06da4fc7c56d8bdf077964"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_status": "A",
+      "original_blob": "9f0442b8435ee4e54a137b969a67a13affdc493c",
+      "original_sha256": "a2c3da3aee021fa5b6308a351ce0817f67e726737f072dd7827c3f21668b2af8",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_DISCIPLINE_CHECKLIST.md",
+        "sha256": "a2c3da3aee021fa5b6308a351ce0817f67e726737f072dd7827c3f21668b2af8",
+        "blob": "9f0442b8435ee4e54a137b969a67a13affdc493c"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/NO_GO_LEDGER.md",
+      "original_status": "A",
+      "original_blob": "5caed432672fd6b397e9a580151604ef7f386ef9",
+      "original_sha256": "9d2f695321433b9e801a69a69792fc2337b4f1430e2e4ec1c22e5826f72b3da7",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_LEDGER.md",
+        "sha256": "9d2f695321433b9e801a69a69792fc2337b4f1430e2e4ec1c22e5826f72b3da7",
+        "blob": "5caed432672fd6b397e9a580151604ef7f386ef9"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/OPPORTUNITY_QUEUE.md",
+      "original_status": "A",
+      "original_blob": "eaad687d6bec6812173d632f6de1919795aac45f",
+      "original_sha256": "177d96df343c9cd597aee00eb7cd30ebc732f7b3fa273cfd579af0eee3984d25",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/OPPORTUNITY_QUEUE.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/PR_BACKLOG.md",
+      "original_status": "A",
+      "original_blob": "af392f85183992fe2c5208ea36db1686dfa8dcc1",
+      "original_sha256": "94091fbe8d373029053dfd78fe2167027e0ab85453b82074fda59c74c1c3d2a9",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/PR_BACKLOG.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_status": "A",
+      "original_blob": "078275655666d2a79307055160144f7f58c6ab17",
+      "original_sha256": "c8e874ef4d7a333432501502b58ef0aae9c6c05b24f0dd21b1ddb0c7dffd2ca7",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/REVIEW_HISTORY.md",
+      "original_status": "A",
+      "original_blob": "10e26c3cd70c67860a9fab6b916b0a364993aabd",
+      "original_sha256": "23647b290cf5a605b8ff393af116258ca19c9efc79221f73589d0071d0f425b6",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-REVIEW_HISTORY.md",
+        "sha256": "23647b290cf5a605b8ff393af116258ca19c9efc79221f73589d0071d0f425b6",
+        "blob": "10e26c3cd70c67860a9fab6b916b0a364993aabd"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "original_status": "A",
+      "original_blob": "724ec18b416b40af4f20901a371c986bc000b1dd",
+      "original_sha256": "367b06adf63b8ef30262f74817da886b9eeab51a1aefb5c622d7d88b7b4ba0fe",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ROOT_FINAL_PORT_REVIEW.md",
+        "sha256": "367b06adf63b8ef30262f74817da886b9eeab51a1aefb5c622d7d88b7b4ba0fe",
+        "blob": "724ec18b416b40af4f20901a371c986bc000b1dd"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ROOT_REPORTING_REPAIR.json",
+      "original_status": "A",
+      "original_blob": "9983c52955b74405887262a1fe26736a96ded982",
+      "original_sha256": "1dccc0afb3fab6b95eeaa59efb591872a043e3c20a48ee1546ad17570a4e1b28",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/ROOT_REPORTING_REPAIR.json",
+        "sha256": "1dccc0afb3fab6b95eeaa59efb591872a043e3c20a48ee1546ad17570a4e1b28",
+        "blob": "9983c52955b74405887262a1fe26736a96ded982"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/ROUTE_PORTFOLIO.md",
+      "original_status": "A",
+      "original_blob": "eec8769223a7cfa08036d3e56c331e993d0c48b6",
+      "original_sha256": "3e0c5d00d71662bc6a20af02a251ebabbc530a48efe6d4a4a97677e690744caa",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/ROUTE_PORTFOLIO.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/SCOPED_VOCAB_LINT.txt",
+      "original_status": "A",
+      "original_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/SCOPED_VOCAB_LINT.txt",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/STATE.yaml",
+      "original_status": "A",
+      "original_blob": "35f0ffe00d49f27fa9541a38e7c0c182832356c9",
+      "original_sha256": "f07a238acf1c6366f9d94e14647c501a9c8d80ae7cf02fede73f1d46290899b2",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/STATE.yaml",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/TRACE_GATE.md",
+      "original_status": "A",
+      "original_blob": "d46a385a19a68c4362aa5c06871ab358c192045f",
+      "original_sha256": "5775b75398db441da6333beb40786b2dcfb18ccaf9e9204c8a0cb89226dbff68",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-TRACE_GATE.md",
+        "sha256": "5775b75398db441da6333beb40786b2dcfb18ccaf9e9204c8a0cb89226dbff68",
+        "blob": "d46a385a19a68c4362aa5c06871ab358c192045f"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_status": "A",
+      "original_blob": "a4f5aea958c3e9f98075eacbe87cba5488c4af35",
+      "original_sha256": "bcd5fabbd9dc1845069f7e86e95afd6db745f4e9feefc4033607981fd9aa736b",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_status": "A",
+      "original_blob": "f3b37e900b83dc42e08bd084bc03ce65c88bc59f",
+      "original_sha256": "b1dfa9efa440af4773e105c31042fb46b927cfa0b5cd6f0654c1d317e61d88e6",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_READINESS.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_status": "A",
+      "original_blob": "110b9525abd9c63e4b8b816e4f1b05a24f6669f5",
+      "original_sha256": "244a6beae0be897e3ab89ee85d476b63866feea90e15ced4c088bf1e52f226ed",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_STRICT.log",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_status": "A",
+      "original_blob": "1669c3a840ddf2af8c25aa3d6580d9299d5a5f28",
+      "original_sha256": "73d831eb64aeff06af375f4c93538e05be8473d6136c122ab4caa470f86a2dbc",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/PACK_INDEX.md",
+      "original_status": "A",
+      "original_blob": "d52d2d21ee2642ddf45c61c5e906e594d7e1c836",
+      "original_sha256": "c50261f0d5fc4fd228c39c11c767507a05ac52390cb704858e29506431e3cef5",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/pr8019-original-staging-PACK_INDEX.md",
+        "sha256": "c50261f0d5fc4fd228c39c11c767507a05ac52390cb704858e29506431e3cef5",
+        "blob": "d52d2d21ee2642ddf45c61c5e906e594d7e1c836"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/PORT_RECEIPT.json",
+      "original_status": "A",
+      "original_blob": "a0686f964d4976218bee1b4e9344bf14da001874",
+      "original_sha256": "b5babfe9143f4d03674b3758204c224a5bd4a18f013c740e2d38b0845d01e4a8",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/PORT_RECEIPT.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/STRICT_ARGS_RECEIPT.json",
+      "original_status": "A",
+      "original_blob": "57de52262946f7a7bbaea620e9f162d9c6fc02eb",
+      "original_sha256": "a1945cfc5556b17ae2df1038bf2534eafa29964a28b4aa97727498934538c4df",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/STRICT_ARGS_RECEIPT.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_status": "A",
+      "original_blob": "1a78c5175e3c5f2b247187d83f042b4abedad92f",
+      "original_sha256": "3b2a9a36297100d11c7dd965723d79c7ac32da01a8de9dadae4e90ed6336318e",
+      "disposition": "superseded exact original canonical-note copy",
+      "final": {
+        "path": "docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "71f72e6b3440701000d964ec7d6c5a3b7ae02ece4de6936696409bd9264adac1",
+        "blob": "b970e16294473c9d5cb5fc00c7a4f449572e507b"
+      },
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "coverage": "Exact original canonical duplicate verified; all mathematics preserved in final canonical source."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_status": "A",
+      "original_blob": "5ab08eeb57a71ea972ba4a105db3ef376dc4172f",
+      "original_sha256": "8081f6a2db8b3ed1f92498510a8687ca0dfae9354991dfee2b31453d91b26d4f",
+      "disposition": "superseded exact original canonical-note copy",
+      "final": {
+        "path": "docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "699c81baaa9c50af621ebb8b00bb1088bd6869a41115df417a67b3175ab4969c",
+        "blob": "a64466a9a169ff47e906d070eb2745682cbce933"
+      },
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "coverage": "Exact original canonical duplicate verified; all mathematics preserved in final canonical source."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/COMPOSITION_SCOPE_CLARIFICATION.md",
+      "original_status": "A",
+      "original_blob": "7b4f2c2eb3c9e9c5888d61d734a3d1fad06afc79",
+      "original_sha256": "59f8bfff7cb0c7946ddf2520049b720f70db13faea94707799e60ba207f21598",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-COMPOSITION_SCOPE_CLARIFICATION.md",
+        "sha256": "59f8bfff7cb0c7946ddf2520049b720f70db13faea94707799e60ba207f21598",
+        "blob": "7b4f2c2eb3c9e9c5888d61d734a3d1fad06afc79"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/DERIVATION.md",
+      "original_status": "A",
+      "original_blob": "2968d4b91562f7c2e15f07822a8a7b678bf7f075",
+      "original_sha256": "8363d46a6bfc02b22a94d3959dc338c0d79254c3761a7f1d650487f814c348e1",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-DERIVATION.md",
+        "sha256": "8363d46a6bfc02b22a94d3959dc338c0d79254c3761a7f1d650487f814c348e1",
+        "blob": "2968d4b91562f7c2e15f07822a8a7b678bf7f075"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/PREREGISTRATION.md",
+      "original_status": "A",
+      "original_blob": "3b5160c93047635c08219a10bb0615ee0b471fbd",
+      "original_sha256": "fd76edf48b5a07aecf168107195071f6b9cf78151a26efbbd6e25c036e1877ef",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-PREREGISTRATION.md",
+        "sha256": "fd76edf48b5a07aecf168107195071f6b9cf78151a26efbbd6e25c036e1877ef",
+        "blob": "3b5160c93047635c08219a10bb0615ee0b471fbd"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/check.py",
+      "original_status": "A",
+      "original_blob": "ede18805fe68e8da9bd0d222443a7aec16023334",
+      "original_sha256": "c8c01c1ea78e9a5b47b9132ba616686d0a860df90ffa64b66b0f3ff7c979068e",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/check.py",
+        "sha256": "c8c01c1ea78e9a5b47b9132ba616686d0a860df90ffa64b66b0f3ff7c979068e",
+        "blob": "ede18805fe68e8da9bd0d222443a7aec16023334"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-fixed/result.json",
+      "original_status": "A",
+      "original_blob": "e2704b82d2495341d544ca119dc1309eadb6fc12",
+      "original_sha256": "93bc2db8b82480a24a2da1ffa837577e027154c7418a1ce73515347d5f3fa136",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/result.json",
+        "sha256": "93bc2db8b82480a24a2da1ffa837577e027154c7418a1ce73515347d5f3fa136",
+        "blob": "e2704b82d2495341d544ca119dc1309eadb6fc12"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/DERIVATION.md",
+      "original_status": "A",
+      "original_blob": "051e28125f876523620a7d7067a35eec16e967fc",
+      "original_sha256": "230e7f325100b27e2f1f1642383f526fc52be7e23792e42f5981b9f8e6720b31",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-DERIVATION.md",
+        "sha256": "230e7f325100b27e2f1f1642383f526fc52be7e23792e42f5981b9f8e6720b31",
+        "blob": "051e28125f876523620a7d7067a35eec16e967fc"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/EXPONENT_LEDGER.json",
+      "original_status": "A",
+      "original_blob": "e92b6e53d61cbfd0f39a8ecb66abb6f1b3461eb4",
+      "original_sha256": "6b051c296518afbf8905eaa73206d67fcaa17fe7a8e262aa984bb1ce41f2885e",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/EXPONENT_LEDGER.json",
+        "sha256": "6b051c296518afbf8905eaa73206d67fcaa17fe7a8e262aa984bb1ce41f2885e",
+        "blob": "e92b6e53d61cbfd0f39a8ecb66abb6f1b3461eb4"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/PREREGISTRATION.md",
+      "original_status": "A",
+      "original_blob": "752f209c25e5b03e8e0cd3a54b5acf402b8d5b34",
+      "original_sha256": "b16679a70310f7d7ebef847e260f7fe8fcd8ee0972218f826d738a81a85e36fb",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-PREREGISTRATION.md",
+        "sha256": "b16679a70310f7d7ebef847e260f7fe8fcd8ee0972218f826d738a81a85e36fb",
+        "blob": "752f209c25e5b03e8e0cd3a54b5acf402b8d5b34"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/SCALAR_CONTROL_FAILURE.md",
+      "original_status": "A",
+      "original_blob": "d294d09a4083ceceb2e914e3b0168a1da057a1e3",
+      "original_sha256": "9146aa0e31daf44a06130093e47ba32b27506e1b3362da41d03a38fb4e6da3d0",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_CONTROL_FAILURE.md",
+        "sha256": "9146aa0e31daf44a06130093e47ba32b27506e1b3362da41d03a38fb4e6da3d0",
+        "blob": "d294d09a4083ceceb2e914e3b0168a1da057a1e3"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/SCALAR_SUPPLEMENT_PREREGISTRATION.md",
+      "original_status": "A",
+      "original_blob": "9afb89f6c2b817dee56728f9af27c5b7a008b5ff",
+      "original_sha256": "a9c4b9530150f80bfbc4af3852e05eb1d53b5fc20df45d2dfd7c2d2a9c1a72f9",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_SUPPLEMENT_PREREGISTRATION.md",
+        "sha256": "a9c4b9530150f80bfbc4af3852e05eb1d53b5fc20df45d2dfd7c2d2a9c1a72f9",
+        "blob": "9afb89f6c2b817dee56728f9af27c5b7a008b5ff"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/native-uniform/check_before_structural_zero_fix.py",
+      "original_status": "A",
+      "original_blob": "c2f0ccfc9fdf56adfd9a63901c2e77dda067c527",
+      "original_sha256": "3f128c095eacea03c4fe77e6bd7dc621f994f742edd87d9e5847f70263376b5c",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/check_before_structural_zero_fix.py",
+        "sha256": "3f128c095eacea03c4fe77e6bd7dc621f994f742edd87d9e5847f70263376b5c",
+        "blob": "c2f0ccfc9fdf56adfd9a63901c2e77dda067c527"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-fixed-review/CONTROL_CORRECTION.md",
+      "original_status": "A",
+      "original_blob": "cb16c68eb68b29065e154b89c042eb93c73be95b",
+      "original_sha256": "6e853f3963dfce780d9deec23d894700c7757e3dbeb032878dfc2095ccf711c9",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-CONTROL_CORRECTION.md",
+        "sha256": "6e853f3963dfce780d9deec23d894700c7757e3dbeb032878dfc2095ccf711c9",
+        "blob": "cb16c68eb68b29065e154b89c042eb93c73be95b"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-fixed-review/REVIEW.md",
+      "original_status": "A",
+      "original_blob": "ac04727b025148de57339375c77212a97ec85e31",
+      "original_sha256": "8f4f7bf3d3ab970fb479a7d284ab3e4c16219e2fb1fd7afa0dcf0d5822af97b4",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-REVIEW.md",
+        "sha256": "8f4f7bf3d3ab970fb479a7d284ab3e4c16219e2fb1fd7afa0dcf0d5822af97b4",
+        "blob": "ac04727b025148de57339375c77212a97ec85e31"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-fixed-review/SCALAR_CONTROLS.json",
+      "original_status": "A",
+      "original_blob": "591cbb0d93e945ebab83772fa800280d2e76ead0",
+      "original_sha256": "8d77dd0aae2f5079f44e1d5cc9b23114d6a131744976e2d43d402682cf1222a5",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/SCALAR_CONTROLS.json",
+        "sha256": "8d77dd0aae2f5079f44e1d5cc9b23114d6a131744976e2d43d402682cf1222a5",
+        "blob": "591cbb0d93e945ebab83772fa800280d2e76ead0"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/NATIVE_SHARPER_REVIEW.md",
+      "original_status": "A",
+      "original_blob": "e4d27c06f1d908de9af99a09787f27170bc3848a",
+      "original_sha256": "7b55e777c9b4a196d935e72c75cec48d7ed469c082b05645de85515666b830fd",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-NATIVE_SHARPER_REVIEW.md",
+        "sha256": "7b55e777c9b4a196d935e72c75cec48d7ed469c082b05645de85515666b830fd",
+        "blob": "e4d27c06f1d908de9af99a09787f27170bc3848a"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/ROOT_REVIEW.md",
+      "original_status": "A",
+      "original_blob": "44f60b4cf9e4138d5ba3715acb757b745d0ce33c",
+      "original_sha256": "a0a93508ccf290861fa82d9001f6712eb7aca3481bb721afe9c7d4e1b0d40cfd",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-ROOT_REVIEW.md",
+        "sha256": "a0a93508ccf290861fa82d9001f6712eb7aca3481bb721afe9c7d4e1b0d40cfd",
+        "blob": "44f60b4cf9e4138d5ba3715acb757b745d0ce33c"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/check.py",
+      "original_status": "A",
+      "original_blob": "e32b86e6c614e1ba670b1b1d1e90862c78bf839a",
+      "original_sha256": "04f2c1fd009223f26164bfa2d3b08593065e5f30b06e3683ca6140e973109263",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/check.py",
+        "sha256": "04f2c1fd009223f26164bfa2d3b08593065e5f30b06e3683ca6140e973109263",
+        "blob": "e32b86e6c614e1ba670b1b1d1e90862c78bf839a"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/primary-uniform-reviews/result.json",
+      "original_status": "A",
+      "original_blob": "077cad73baf4c695cc777005f8c571e27c7642ff",
+      "original_sha256": "1ff64817cbdd5ea40242fe8db1dcac61884766193de88538514552494f98d093",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/result.json",
+        "sha256": "1ff64817cbdd5ea40242fe8db1dcac61884766193de88538514552494f98d093",
+        "blob": "077cad73baf4c695cc777005f8c571e27c7642ff"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/root-independent98/DERIVATION.md",
+      "original_status": "A",
+      "original_blob": "cd31d42708488ed3a237999a6b107c32427b63c4",
+      "original_sha256": "8ab508377035ab60321889c8f2ae44f3efc308fcc146aac8f0505549099986f3",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-DERIVATION.md",
+        "sha256": "8ab508377035ab60321889c8f2ae44f3efc308fcc146aac8f0505549099986f3",
+        "blob": "cd31d42708488ed3a237999a6b107c32427b63c4"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/root-independent98/PROVENANCE.md",
+      "original_status": "A",
+      "original_blob": "e43bcec808509e92a18a20db84328fd152815cbe",
+      "original_sha256": "fa40466ad8af1ac4560650c91300fae1c853f8f3493cd41e8f729cd5cb4f2e88",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-PROVENANCE.md",
+        "sha256": "fa40466ad8af1ac4560650c91300fae1c853f8f3493cd41e8f729cd5cb4f2e88",
+        "blob": "e43bcec808509e92a18a20db84328fd152815cbe"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/evidence/root-independent98/ROOT_NATIVE_SHARPER_REVIEW.md",
+      "original_status": "A",
+      "original_blob": "25e233ae5ba6f448cb85f388a9b661710478c8d7",
+      "original_sha256": "37c6d0bed0d0e523ab15430f66a9770570639415afc5567b43efba324eed48b6",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-ROOT_NATIVE_SHARPER_REVIEW.md",
+        "sha256": "37c6d0bed0d0e523ab15430f66a9770570639415afc5567b43efba324eed48b6",
+        "blob": "25e233ae5ba6f448cb85f388a9b661710478c8d7"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/result.json",
+      "original_status": "A",
+      "original_blob": "7f56187fda8f00376dda3f3f06252d6d23a9cf85",
+      "original_sha256": "e3a2e557661fece52fac42e0346e0e3f03b9bbd00a69f3f5b22d7b7e8b4cdf4b",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/result.json",
+        "sha256": "e3a2e557661fece52fac42e0346e0e3f03b9bbd00a69f3f5b22d7b7e8b4cdf4b",
+        "blob": "7f56187fda8f00376dda3f3f06252d6d23a9cf85"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/original-staging/scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+      "original_status": "A",
+      "original_blob": "5da3be499569ca91f697c89c20ee098911246942",
+      "original_sha256": "d93d5290273fbb36c16fdc2007ba5e89c89aaeceac88837f48207976038cd9b7",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+        "sha256": "d93d5290273fbb36c16fdc2007ba5e89c89aaeceac88837f48207976038cd9b7",
+        "blob": "5da3be499569ca91f697c89c20ee098911246942"
+      },
+      "disposition": "accepted unchanged as historical proof/provenance",
+      "coverage": "Original scientific proof/control/preregistration or provenance inspected; no new audit authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/validated_claims_before_generated_cleanup.json",
+      "original_status": "A",
+      "original_blob": "18de2fcff70462ecc934b5f2279e451239d6a61a",
+      "original_sha256": "af124bc52561c506c92b083087dfbf6928073b86d34972696a88acd2625351c5",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/validated_claims_before_generated_cleanup.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/anisotropic-source-semigroup-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_status": "A",
+      "original_blob": "79c46a96fac3ed245146bfc02304ee7a08d232a7",
+      "original_sha256": "3d148946257721def2fcfafb395e4defa1311d9c5f02338b66c029ed75f5bfee",
+      "disposition": "superseded historical operational snapshot; not a source premise",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:.claude/science/physics-loops/anisotropic-source-semigroup-20260907/validated_readiness_before_generated_cleanup.json",
+      "coverage": "Old publication/validation/queue/lock/readiness/generated-row or port bookkeeping. No unique scientific proof/input omitted; current gate must regenerate, not import old authority."
+    },
+    {
+      "original_path": "docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_status": "A",
+      "original_blob": "1a78c5175e3c5f2b247187d83f042b4abedad92f",
+      "original_sha256": "3b2a9a36297100d11c7dd965723d79c7ac32da01a8de9dadae4e90ed6336318e",
+      "final": {
+        "path": "docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "71f72e6b3440701000d964ec7d6c5a3b7ae02ece4de6936696409bd9264adac1",
+        "blob": "b970e16294473c9d5cb5fc00c7a4f449572e507b"
+      },
+      "disposition": "accepted with evidence/reporting correction",
+      "coverage": "Complete two-note proofs/runner/cache reviewed."
+    },
+    {
+      "original_path": "docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_status": "A",
+      "original_blob": "5ab08eeb57a71ea972ba4a105db3ef376dc4172f",
+      "original_sha256": "8081f6a2db8b3ed1f92498510a8687ca0dfae9354991dfee2b31453d91b26d4f",
+      "final": {
+        "path": "docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "699c81baaa9c50af621ebb8b00bb1088bd6869a41115df417a67b3175ab4969c",
+        "blob": "a64466a9a169ff47e906d070eb2745682cbce933"
+      },
+      "disposition": "accepted with evidence/reporting correction",
+      "coverage": "Complete two-note proofs/runner/cache reviewed."
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_status": "M",
+      "original_blob": "612eb922bff5b335c8dbf2c98dd93917ba8c2ad1",
+      "original_sha256": "d0bba9e36dc6042b078b04714e0f65169bf8a25268b93903817c166386f75d98",
+      "disposition": "superseded generated manifest; combined regeneration pending",
+      "recovery": "d57943620edd5098df7b6410f952d569730276f5:docs/audit/data/citation_graph_manifest.json",
+      "coverage": "Original full delta two nodes/five edges; scientific dependencies remain linked in source."
+    },
+    {
+      "original_path": "logs/runner-cache/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.txt",
+      "original_status": "A",
+      "original_blob": "df376990b886e18ddbc1e79aba3816e009e12842",
+      "original_sha256": "d1dc254665eef2edd42540ae9f3078ea775b46caf33bd4b7b002a370eca44834",
+      "final": {
+        "path": "logs/runner-cache/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.txt",
+        "sha256": "5b3715a5b9ae7a911cfc5f546d4bb2e8e5176945ae9eaf1b5d002763a78c805e",
+        "blob": "ded0d5a8c9478eafb020b79068b070344b4fdff8"
+      },
+      "disposition": "accepted with evidence/reporting correction",
+      "coverage": "Complete two-note proofs/runner/cache reviewed."
+    },
+    {
+      "original_path": "scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+      "original_status": "A",
+      "original_blob": "6340a643e6272c2cd2515e7ac1226f7edebc1824",
+      "original_sha256": "3df765aee360998fe4b56cbc0f8d020c4397895d8207e1cad57e4d464ca1a57d",
+      "final": {
+        "path": "scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+        "sha256": "79d5dad29a3b3f71ecb0182bd8af7db260b3728c05eac57227f16263086df48a",
+        "blob": "c2074f6eb3a01f9cb4bd108d89f1928eb2a8a54e"
+      },
+      "disposition": "accepted with evidence/reporting correction",
+      "coverage": "Complete two-note proofs/runner/cache reviewed."
+    }
+  ],
+  "final_paths": [
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "71f72e6b3440701000d964ec7d6c5a3b7ae02ece4de6936696409bd9264adac1",
+      "blob": "b970e16294473c9d5cb5fc00c7a4f449572e507b"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "699c81baaa9c50af621ebb8b00bb1088bd6869a41115df417a67b3175ab4969c",
+      "blob": "a64466a9a169ff47e906d070eb2745682cbce933"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_HASHES.json",
+      "sha256": "943b327cd571b749afc132835dbfe885b6d7a671cf08630ab523b53c822849e8",
+      "blob": "d9311ce1a8248bc3d0a53aa52851df059070f214"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_RAW.json",
+      "sha256": "eb0eb4d638b094fe57a2828741c5a75838a57b3b0ab866ee5340f3d228e6cdee",
+      "blob": "34bafc65b44c8bfdd7a7dc5e09df643f1e6cb094"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/README.md",
+      "sha256": "a7727726530baf700fdca056dc33e591010ae017c0f4d64275874caf8716916c",
+      "blob": "6e33e6e038f7a14a62760e5fb0c9bbdf0443d81c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/ROOT_REPORTING_REPAIR.json",
+      "sha256": "1dccc0afb3fab6b95eeaa59efb591872a043e3c20a48ee1546ad17570a4e1b28",
+      "blob": "9983c52955b74405887262a1fe26736a96ded982"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/check.py",
+      "sha256": "c8c01c1ea78e9a5b47b9132ba616686d0a860df90ffa64b66b0f3ff7c979068e",
+      "blob": "ede18805fe68e8da9bd0d222443a7aec16023334"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-COMPOSITION_SCOPE_CLARIFICATION.md",
+      "sha256": "59f8bfff7cb0c7946ddf2520049b720f70db13faea94707799e60ba207f21598",
+      "blob": "7b4f2c2eb3c9e9c5888d61d734a3d1fad06afc79"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-DERIVATION.md",
+      "sha256": "8363d46a6bfc02b22a94d3959dc338c0d79254c3761a7f1d650487f814c348e1",
+      "blob": "2968d4b91562f7c2e15f07822a8a7b678bf7f075"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-PREREGISTRATION.md",
+      "sha256": "fd76edf48b5a07aecf168107195071f6b9cf78151a26efbbd6e25c036e1877ef",
+      "blob": "3b5160c93047635c08219a10bb0615ee0b471fbd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/result.json",
+      "sha256": "93bc2db8b82480a24a2da1ffa837577e027154c7418a1ce73515347d5f3fa136",
+      "blob": "e2704b82d2495341d544ca119dc1309eadb6fc12"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/EXPONENT_LEDGER.json",
+      "sha256": "6b051c296518afbf8905eaa73206d67fcaa17fe7a8e262aa984bb1ce41f2885e",
+      "blob": "e92b6e53d61cbfd0f39a8ecb66abb6f1b3461eb4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/check_before_structural_zero_fix.py",
+      "sha256": "3f128c095eacea03c4fe77e6bd7dc621f994f742edd87d9e5847f70263376b5c",
+      "blob": "c2f0ccfc9fdf56adfd9a63901c2e77dda067c527"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-DERIVATION.md",
+      "sha256": "230e7f325100b27e2f1f1642383f526fc52be7e23792e42f5981b9f8e6720b31",
+      "blob": "051e28125f876523620a7d7067a35eec16e967fc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-PREREGISTRATION.md",
+      "sha256": "b16679a70310f7d7ebef847e260f7fe8fcd8ee0972218f826d738a81a85e36fb",
+      "blob": "752f209c25e5b03e8e0cd3a54b5acf402b8d5b34"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_CONTROL_FAILURE.md",
+      "sha256": "9146aa0e31daf44a06130093e47ba32b27506e1b3362da41d03a38fb4e6da3d0",
+      "blob": "d294d09a4083ceceb2e914e3b0168a1da057a1e3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_SUPPLEMENT_PREREGISTRATION.md",
+      "sha256": "a9c4b9530150f80bfbc4af3852e05eb1d53b5fc20df45d2dfd7c2d2a9c1a72f9",
+      "blob": "9afb89f6c2b817dee56728f9af27c5b7a008b5ff"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/SCALAR_CONTROLS.json",
+      "sha256": "8d77dd0aae2f5079f44e1d5cc9b23114d6a131744976e2d43d402682cf1222a5",
+      "blob": "591cbb0d93e945ebab83772fa800280d2e76ead0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-CONTROL_CORRECTION.md",
+      "sha256": "6e853f3963dfce780d9deec23d894700c7757e3dbeb032878dfc2095ccf711c9",
+      "blob": "cb16c68eb68b29065e154b89c042eb93c73be95b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-REVIEW.md",
+      "sha256": "8f4f7bf3d3ab970fb479a7d284ab3e4c16219e2fb1fd7afa0dcf0d5822af97b4",
+      "blob": "ac04727b025148de57339375c77212a97ec85e31"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/check.py",
+      "sha256": "04f2c1fd009223f26164bfa2d3b08593065e5f30b06e3683ca6140e973109263",
+      "blob": "e32b86e6c614e1ba670b1b1d1e90862c78bf839a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-NATIVE_SHARPER_REVIEW.md",
+      "sha256": "7b55e777c9b4a196d935e72c75cec48d7ed469c082b05645de85515666b830fd",
+      "blob": "e4d27c06f1d908de9af99a09787f27170bc3848a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-ROOT_REVIEW.md",
+      "sha256": "a0a93508ccf290861fa82d9001f6712eb7aca3481bb721afe9c7d4e1b0d40cfd",
+      "blob": "44f60b4cf9e4138d5ba3715acb757b745d0ce33c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/result.json",
+      "sha256": "1ff64817cbdd5ea40242fe8db1dcac61884766193de88538514552494f98d093",
+      "blob": "077cad73baf4c695cc777005f8c571e27c7642ff"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-DERIVATION.md",
+      "sha256": "8ab508377035ab60321889c8f2ae44f3efc308fcc146aac8f0505549099986f3",
+      "blob": "cd31d42708488ed3a237999a6b107c32427b63c4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-PROVENANCE.md",
+      "sha256": "fa40466ad8af1ac4560650c91300fae1c853f8f3493cd41e8f729cd5cb4f2e88",
+      "blob": "e43bcec808509e92a18a20db84328fd152815cbe"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-ROOT_NATIVE_SHARPER_REVIEW.md",
+      "sha256": "37c6d0bed0d0e523ab15430f66a9770570639415afc5567b43efba324eed48b6",
+      "blob": "25e233ae5ba6f448cb85f388a9b661710478c8d7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/pr8019-original-staging-PACK_INDEX.md",
+      "sha256": "c50261f0d5fc4fd228c39c11c767507a05ac52390cb704858e29506431e3cef5",
+      "blob": "d52d2d21ee2642ddf45c61c5e906e594d7e1c836"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/result.json",
+      "sha256": "e3a2e557661fece52fac42e0346e0e3f03b9bbd00a69f3f5b22d7b7e8b4cdf4b",
+      "blob": "7f56187fda8f00376dda3f3f06252d6d23a9cf85"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+      "sha256": "d93d5290273fbb36c16fdc2007ba5e89c89aaeceac88837f48207976038cd9b7",
+      "blob": "5da3be499569ca91f697c89c20ee098911246942"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "976924260aad350c180a8a7797f561542b2f3eebacc94bbc5e86b953177fa6e2",
+      "blob": "2d0ea9cc02c7ac113c232f4565a8cacf132f94c0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "6c46a231da3fd6cff757745d38bbc763d74a3f0318a11249d87e851503615a76",
+      "blob": "b16972187f9ee85e1f81acea8816a4eda856eda9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-HANDOFF.md",
+      "sha256": "e10cd29aa719efdedf464ff2d501fa1197ff14ddc963cc1d95867e43021c5caf",
+      "blob": "687baeeb9bfdb066fb32415a159b27cb614e74c2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-LITERATURE_BRIDGES.md",
+      "sha256": "792678eeb65d9966142c530d25b8bce5611734bde67bba35243382a37f84505d",
+      "blob": "e76f61cb780878726f06da4fc7c56d8bdf077964"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "a2c3da3aee021fa5b6308a351ce0817f67e726737f072dd7827c3f21668b2af8",
+      "blob": "9f0442b8435ee4e54a137b969a67a13affdc493c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_LEDGER.md",
+      "sha256": "9d2f695321433b9e801a69a69792fc2337b4f1430e2e4ec1c22e5826f72b3da7",
+      "blob": "5caed432672fd6b397e9a580151604ef7f386ef9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-REVIEW_HISTORY.md",
+      "sha256": "23647b290cf5a605b8ff393af116258ca19c9efc79221f73589d0071d0f425b6",
+      "blob": "10e26c3cd70c67860a9fab6b916b0a364993aabd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ROOT_FINAL_PORT_REVIEW.md",
+      "sha256": "367b06adf63b8ef30262f74817da886b9eeab51a1aefb5c622d7d88b7b4ba0fe",
+      "blob": "724ec18b416b40af4f20901a371c986bc000b1dd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-TRACE_GATE.md",
+      "sha256": "5775b75398db441da6333beb40786b2dcfb18ccaf9e9204c8a0cb89226dbff68",
+      "blob": "d46a385a19a68c4362aa5c06871ab358c192045f"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.txt",
+      "sha256": "5b3715a5b9ae7a911cfc5f546d4bb2e8e5176945ae9eaf1b5d002763a78c805e",
+      "blob": "ded0d5a8c9478eafb020b79068b070344b4fdff8"
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+      "sha256": "79d5dad29a3b3f71ecb0182bd8af7db260b3728c05eac57227f16263086df48a",
+      "blob": "c2074f6eb3a01f9cb4bd108d89f1928eb2a8a54e"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "c92586ae507a05f6cf0a38a304951f56c0f9af796ee5b3f64d18e6dd914c11cb",
+      "blob": "ff1ab34b3c09bc74dcb3d145532590efd383d67f"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "21eafab0abb8168e245869b8ffcb0f41823039e67a8843a60877d77f9ce98f32",
+      "blob": "51c5d2f9f352ad8c867036bf604198cee5c7bcf3"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "6323745b5142cae7d054dc5be6eed6a8706abedfcaf616d9a108b3888121ccaf",
+      "blob": "455aa6bbed441b4ee408204486228312418ff00d"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.txt",
+      "sha256": "8aea72a12cd0aa943c5a1df33162a50baa0aee05f20078f506447822ed2fe985",
+      "blob": "9218e7c019602f993a3973230b8e3da7d9d56e14"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.txt",
+      "sha256": "8283c86ae3eab5f8d768d17a2304dcd9f64c34dd1312d42f8eec3f56672b6661",
+      "blob": "51dcdd637eadb1245540b46a8de25124e5725ffc"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.txt",
+      "sha256": "933e412368512f1e5f60b7af67454e5eccaced29c5aba6bedfccc83311a8496c",
+      "blob": "2a190f06b8499827abe396836d8bdf22716aebb0"
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+      "sha256": "ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5",
+      "blob": "f1f73eb82e53f28a82df40888ba32cbe04081a2e"
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py",
+      "sha256": "6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4",
+      "blob": "5d2458f3292e25f0526257b43c39b0b3cc492faf"
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+      "sha256": "d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a",
+      "blob": "21c99d55795a514a042941ad650635ea0ea4ad98"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_TWO_SOURCE_CUBIC_CANCELLATION_RATE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "6738e13b3c0c0a608691c57485716aa8c2a6c662047dbf8041b5303465c881ee",
+      "blob": "acba41f7a36697896a1c5e7eed9615f2e1181509"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.txt",
+      "sha256": "41b13f173e29829ef037a5aff051a944c3073e7ee9b25e55bc44bf8ab2bafbea",
+      "blob": "5494efd6b126d1bbae6c145406d06c7f37e6cb5b"
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.py",
+      "sha256": "5f9a1b2d5f293ebd0977de15e1233fcc927dd59971c974f1a65a7d05ccef23b9",
+      "blob": "68fb56ef58d8361f990b776d96233f7de5a455c3"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_CHARACTER_MIXING_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a712309322ca21a95d9ec78ccde73cb09953604037c76e3e5fffa68a546985e2",
+      "blob": "1c1723e774fc7c2c5193fa27a4ed53959b8a8376"
+    },
+    {
+      "path": "docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "sha256": "abe6a7484775e8ce98e68c67f286988104b78aafd86ac01dc845b16643b51e4e",
+      "blob": "56e4b8afe87e1073382a5ee010b456915312cb20"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md",
+      "sha256": "9f5ac4c3864eb4061572bcc07a4a5805a69b78fd14fe7e91efcbfca36824f24d",
+      "blob": "3758d001d14bca327dab92af1bcca034fc605cef"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+    }
+  ],
+  "scientific_runtime_file_inputs": [],
+  "prior_bindings": [
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "c92586ae507a05f6cf0a38a304951f56c0f9af796ee5b3f64d18e6dd914c11cb",
+      "matches_prior": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "21eafab0abb8168e245869b8ffcb0f41823039e67a8843a60877d77f9ce98f32",
+      "matches_prior": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "6323745b5142cae7d054dc5be6eed6a8706abedfcaf616d9a108b3888121ccaf",
+      "matches_prior": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.txt",
+      "sha256": "8aea72a12cd0aa943c5a1df33162a50baa0aee05f20078f506447822ed2fe985",
+      "matches_prior": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.txt",
+      "sha256": "8283c86ae3eab5f8d768d17a2304dcd9f64c34dd1312d42f8eec3f56672b6661",
+      "matches_prior": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.txt",
+      "sha256": "933e412368512f1e5f60b7af67454e5eccaced29c5aba6bedfccc83311a8496c",
+      "matches_prior": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+      "sha256": "ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5",
+      "matches_prior": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py",
+      "sha256": "6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4",
+      "matches_prior": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+      "sha256": "d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a",
+      "matches_prior": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_TWO_SOURCE_CUBIC_CANCELLATION_RATE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "6738e13b3c0c0a608691c57485716aa8c2a6c662047dbf8041b5303465c881ee",
+      "matches_prior": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.txt",
+      "sha256": "41b13f173e29829ef037a5aff051a944c3073e7ee9b25e55bc44bf8ab2bafbea",
+      "matches_prior": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.py",
+      "sha256": "5f9a1b2d5f293ebd0977de15e1233fcc927dd59971c974f1a65a7d05ccef23b9",
+      "matches_prior": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "8019-evidence",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8019-reporting",
+      "status": "fixed and same-session confirmed"
+    }
+  ],
+  "independent_checks": {
+    "tree_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "covariance": "Matrix([[2*(10*k**2 + 17*k + 5)/(4*k**2 + 6*k + 1), 2*k*(10*k + 13)/(4*k**2 + 6*k + 1)], [2*k*(10*k + 13)/(4*k**2 + 6*k + 1), 2*(10*k**2 + 17*k + 5)/(4*k**2 + 6*k + 1)]])",
+    "detH": "k**7*(k + 1)**2*(2*k + 3)*(4*k**2 + 6*k + 1)/8",
+    "large_k_time_series": "2*sqrt(5)*u/5 - 7*sqrt(5)*u**3/300 + O(u**4)",
+    "Gaussian_L2": "1/(256*pi**4*sm**2*sp**2)",
+    "normalization_powers": [
+      48,
+      50,
+      52
+    ],
+    "schedule_error_power": -3,
+    "OU_qc": "-5*c*q + 14*c",
+    "status": "PASS"
+  },
+  "original_execution": {
+    "exit_code": 0,
+    "elapsed_seconds": 0.5393712499644607,
+    "timeout_sec": 180,
+    "memory_cap_MiB": 180
+  },
+  "current_main_loss_check": "All staged source/archive paths additions; original2node5edge generated delta deferred to combined regeneration. Relevant12 inherited prior source/cache identities preserved exactly.",
+  "pipeline_count": 0,
+  "disposition_map_sha256": "f7c8f80ae8870d27a914338c2b4138b315f668fb3947024282a52c19c2509c69",
+  "report_sha256": "b8ea31e68a8ecdf17c5b2c0ac5f37341cfe11221a14dc8716aaf3b5fae777dc8",
+  "final_execution": {
+    "status": "canonical cache inspected; reporting-only correction",
+    "TOTAL": 23,
+    "FAIL": 0,
+    "wrapper_elapsed_sec": 0.64,
+    "rss_MiB": 64.625,
+    "runner_sha256": "79d5dad29a3b3f71ecb0182bd8af7db260b3728c05eac57227f16263086df48a",
+    "reviewer_rerun_required": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "pr": 8114,
+  "original_head": "2c2aba9a86a57c19e007c390e5db2ab6272c7850",
+  "merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "status": "complete",
+  "original_dispositions": {
+    "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "Full original bytes preserved under check8114/original; source-only addition, no main deletion",
+    "logs/runner-cache/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.txt": "Full original bytes preserved under check8114/original; source-only addition, no main deletion",
+    "scripts/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.py": "Full original bytes preserved under check8114/original; source-only addition, no main deletion"
+  },
+  "source_read": "452-line original note,1017-line runner,78-line cache in full",
+  "type_extractor": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "authority_hashes": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  "baseline": {
+    "exit": 0,
+    "elapsed": 4.260466875042766,
+    "cap": 90
+  },
+  "independent_controls": {
+    "loops": {
+      "4": 6,
+      "6": 16,
+      "8": 6
+    },
+    "paths": {
+      "1": 12,
+      "2": 24,
+      "3": 48,
+      "4": 72,
+      "5": 120,
+      "6": 96,
+      "7": 72
+    },
+    "matching_counts": [
+      1,
+      12,
+      42,
+      44,
+      9
+    ],
+    "histogram": [
+      "694/12495",
+      "1388/4165",
+      "24894/54145",
+      "23432/162435",
+      "389/54145"
+    ],
+    "status": "PASS"
+  },
+  "findings": [
+    {
+      "finding": "Finite menus/static support do not establish every axiom/primitive or a physical Z2 gauge theory. Supply all roles, fields, fair coin law; distinguish code analogy from model bridge.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Invariant scalar functionals are sum rules; invariant subspaces are broader. Complete binary cube rule census retained, box minimal-support census only four A/D+A codes. No universal group-closed box exclusion.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Actual current role parent T2 pins parity skeleton at NN. NNN needed for alternating corner pins absent here; no necessary axiom widening follows.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Sequential completed-check law at a link reads other links two fine-lattice steps away; static V Gauss check NN is distinct. Empty support means attempt/abort, not normalized axiom distribution.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "All-order full-record law requires triangular-pivot proof; eight independent rows grouped by last site give8-d pivots and n-8+d fair free coordinates. Successful code dimension n-8, equal fibers, probability2^-d. Full-record subprobability only; partial-hole locations/law not computed.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Unsigned q3 C sums are chosen BFS readout, not oriented circulation; soldering necessity not shown. Explicit signed geometric edge orientation can support antisymmetric differences.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Canonical runner contains no matching inclusion-exclusion; original3paths preserve no mutation scripts. Historical original claims labelled honestly, immutable originalhead linked. Reviewer independently reproduced matching integral histogram externally.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Runner fail-closed exit, actual per_*scope, explicit input metadata for source dependencies; fresh cache currently lacks inputs. Type extractor already correct bounded_theorem.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Parity relative-to-centre phrase wrong for coordinates0..2: centreC. Glued minimal-support usage is defined code interpretation, not current hierarchy dynamical theorem.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    },
+    {
+      "finding": "Declared composition_law_selection upstream absent in base; actual source/dependency needs correction or historical contextual disposition.",
+      "resolution": "Corrected by separate author; same-session full source confirmation PASS"
+    }
+  ],
+  "original_unique_evidence": "Only3paths in full original delta. No tracked matching checker/mutation packet. Prose history preserved; no invented archive.",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "reviewer_session": "/root/skill_review",
+  "worktree": "/private/tmp/review-drain-20260915/unit8114-author-copy",
+  "final_tree": "a1cdafac5598d3ed21ffd58ad4628ac720e15f45",
+  "final_source_sha256": {
+    "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63",
+    "logs/runner-cache/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.txt": "0da7474a37580facc61733eadc0ebb650aba7eb1da2b59536d3f11cac1732055",
+    "scripts/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.py": "2f710cb39dcff85812dac75a577ab7cf2ad9daf8b38ff60fb8a96ababd282c90"
+  },
+  "inputs": {
+    "scripts/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.py": "2f710cb39dcff85812dac75a577ab7cf2ad9daf8b38ff60fb8a96ababd282c90",
+    "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd",
+    "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd"
+  },
+  "final_checks": {
+    "checks": 38,
+    "failures": 0,
+    "exit_code": 0,
+    "elapsed_sec": 4.278842210769653,
+    "timeout_sec": 900,
+    "stdout_bytes": 6509,
+    "stdout_cap": 9000,
+    "type": "bounded_theorem",
+    "graph_dependencies": 5,
+    "vocab_violations": 0,
+    "three_diff_checks": "clean",
+    "original_staged_tree_unchanged": true
+  },
+  "cache_status": "fresh",
+  "final_argument_confirmation": "Strict minimal-support definition, explicit finite model and radius2/faircoin scope, triangular all-order proof and review-added exact matching control independently verified. Original arithmetic unchanged aside from new finding-scoped independent control; executable fails closed.",
+  "claims": {
+    "T1_T2": "finite proper-cubic scalar/subspace and binarycube countclass census",
+    "T3_T4": "selected kernels and explicitly unsigned field readouts/minimal supports; no universalbox exclusion",
+    "T5": "supplied graph(div) code and finite479 minimal supports, not physical gauge theory",
+    "T6": "every-order uniform conditional successful output with suppliedfaircoins; exact finite orderhistograms; no partial-hole distribution",
+    "upstreams": "five linked interpretation boundaries; unavailable composition ID removed and historicalcontext explicitly preserved"
+  },
+  "loss": "All original3paths fully reconciled. No source deletions frommain, no unique tracked archive discarded; historical method/mutation claims labelled not independently recovered.",
+  "combined_gate": "coordinator responsibility; no per-unit full pipeline",
+  "audit": "No verdict or registry mutation",
+  "independent_artifacts": {
+    "check8114/review-draft.json": "84fe8911dce68889f302a4a94d3a6aa730d039a29d3dd4c72aef3b28b1aaad81",
+    "check8114/control.py": "9f369acad45afa797ac590288aec7e94f8ff7b203662eeaf91cbc9f5795ce2e9",
+    "check8114/provisional-findings.json": "8d1d2174af4ee00b9778c8c7f078560ecc7e4ccad563aa3412d2845beafaeb9e",
+    "check8114/baseline.json": "fcffb92dee0ced8964b1176223d05173d9121d8a4c295e2f4bee0d3caa2074c8",
+    "check8114/baseline.stdout": "412273191a1f3abb74f73f1f26b042bfde1130fe8ea60259f9f7e947ad72eb41",
+    "check8114/matching-proof.md": "59038495cd3693fccd23bdd3f999674708e19d7aea5de631900edbf39add7dfc",
+    "check8114/baseline.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check8114/control.json": "3db4a9d9a6f3fb00b671713dc37c109188b2e8593efb1ac747ef5f01e9d49b7e"
+  }
+}

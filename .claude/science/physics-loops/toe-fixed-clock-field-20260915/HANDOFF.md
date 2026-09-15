@@ -122,3 +122,36 @@ sources. Unrestricted linear cycles admit operator-trace control; check
 distinct-component and hard-core restrictions before using that control.
 They can remove cancellations, so trace positivity cannot simply be imposed
 on the restricted sum. The deadline is still 2026-09-16 01:45:03 UTC.
+
+## Block 2: signed operator, physical source, stable forest construction
+
+The full sine kernel on component L2 spaces has the bound
+c sqrt(Me(2)Mm(2))+(c^3/6)sqrt(Me(6)Mm(6)), using a signed frame operator
+for its linear part and weighted Schur bounds for the remainder. Half-self
+measures give norm <6e-8, including orientation factors, for both x>=4096.
+Unrestricted alternating closed walks obey operator-trace bounds. A checked
+distinct-label fourth-cycle identity gives an absolute trace bound, but
+hard-core restrictions and arbitrary higher networks remain open.
+
+For a smooth macroscopic physical source on Z4, inverse-gradient potentials
+are O(a) and their lattice gradients O(a^2). A closed mass-m component sees
+at most C min(a m,a^2 m^2), so bounded complex sources consume only O(a) of
+its energy reserve. Component third/fourth source moments vanish at O(a^2)
+and O(a^4). These are not interacting cumulants or uniform finite-boundary
+estimates. Finite matrix/cycle and Fourier-mode challenges passed.
+
+A new forest interpolation changes each mixed pair factor affinely, keeping
+integer phase periodicity and modulus <=1. Same-species Gram couplings can
+be modified only on incompatible pairs, while hard core is softened, to
+leave a uniform exp(-x m/64) mass reserve at every forest interpolation.
+At full coupling the law is unchanged. Finite BKAR partition inversion is
+applicable. The differentiated tree sum still needs a signed spatial bound;
+Schur contraction of a fixed forest matrix is not by itself that bound.
+The finite challenge now passes: direct connected partition inversion and
+order-16 forest quadrature agree to at most 2.33e-12 for compatible,
+electric-overlapping and doubly overlapping four-component lists. The
+coarser order-10 error reaches 0.00330 for double overlap and is retained.
+Raw phase interpolation changes by 2 under a valid filling gauge change;
+the affine interpolation changes by only 8.55e-15 numerically. An initial
+graph-search infinite loop was interrupted, frozen, and repaired with a
+visited set; it occurred before science assertions. No tolerance change.

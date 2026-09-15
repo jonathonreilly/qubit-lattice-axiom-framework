@@ -69,3 +69,36 @@ section IV. The key duality/phase discussion modifies the law by restricting
 monopoles; its finite-mass extension is qualitative. No import to the
 unmodified fixed-clock full-field target. Bibliographic search of spectral
 Ising/zero-free methods is new routing only; full hypotheses still unread.
+
+Freshness at 15:34 UTC: remote main is
+0641ef197a36124872e898265b0d7fc16422b051. Fetched that immutable object without
+updating the shared origin/main ref. Against 5aca, no changes in the relevant
+clock/Villain/Gaussian notes, SCIENCE_WORKFLOW, minimal axioms or premise
+registry. The campaign base stays explicit and unchanged.
+
+Read Eldan-Koehler-Zeitouni arXiv2007.08200v2 introduction, Theorem 1 and its
+proof through section 2.0.1, then section 2.1 into Lemma 7. Its positive Ising
+law and spectral assumption after a diagonal shift do not match a complex
+joint defect weight. For sparse occupancies 0,+1,-1, a diagonal shift changes
+activity, unlike fixed Ising spins. No gap theorem imported.
+
+Read the complete body, sections 1-5, of Bolina-Parreira cond-mat/9809023v1.
+It concerns fixed-length nonoverlapping two-dimensional dipoles and a
+correlation upper bound. Its treatment of sinh remainders is not a quantified
+all-order clock estimate. No omitted remainder is discarded here.
+
+Read the full primary author-uploaded body of Procacci-Pereira-Neves-Marchetti,
+"Coulomb interaction, symmetries and the Mayer series in the two-dimensional
+dipole gas", DOI 10.1007/BF02181248 (1997), via ResearchGate. Some displayed
+math is garbled in text extraction, so exact constants were not imported.
+The authors separate graphwise infrared finiteness from all-order analyticity.
+Their comparison loop kernel has factorial growth; the full signed dipole
+linear loops instead have an exponential bound. This supports retaining
+spatial signs; it is not a no-go result for the actual gas.
+
+Read Lohmann section 2.1.3 and equation (16) fully for the finite BKAR forest
+identity. The new interpolation checks its finite smoothness and factorization
+hypotheses directly. The massive convergence theorem remains unmatched.
+Brydges-Yau 1990 is still metadata/abstract only: the publisher full text was
+not available and the Project Euclid page returned an access challenge.
+No full-text reading or exhaustive literature claim is made.

@@ -1,0 +1,6 @@
+{
+  "source_sha256": "29cfd648a42b24c5f9ca312f5291976770d5430d83730f1e2b2d3647b4d88e07",
+  "utc": "2026-09-15T15:48:14.670124+00:00",
+  "process": 81168,
+  "finding": "Candidate three-edge graph may be a triangle plus isolated vertex; DFS omitted visited set, so failed to terminate when seeking isolated vertex. No scientific assertion or quadrature completed. Interrupt and fix graph traversal."
+}

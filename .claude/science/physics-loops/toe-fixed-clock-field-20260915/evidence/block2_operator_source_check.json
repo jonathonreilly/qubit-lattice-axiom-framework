@@ -1,0 +1,193 @@
+{
+  "status": "finite_cycle_and_source_checks_passed",
+  "cycles": {
+    "matrix_rows": [
+      {
+        "shape": [
+          2,
+          2
+        ],
+        "distinct_cycle": 0.0006757898849404484,
+        "trace_four": 0.008752310235878009,
+        "logdet_sum": 0.004143009711985245,
+        "majorant": 0.005713534524781652
+      },
+      {
+        "shape": [
+          3,
+          4
+        ],
+        "distinct_cycle": -0.0023133224190129147,
+        "trace_four": 0.012948667615181335,
+        "logdet_sum": 0.006140643501328894,
+        "majorant": 0.008162198579389263
+      },
+      {
+        "shape": [
+          5,
+          6
+        ],
+        "distinct_cycle": 0.0008059070626487901,
+        "trace_four": 0.011967547678751122,
+        "logdet_sum": 0.005700938215401135,
+        "majorant": 0.009629328631886737
+      }
+    ],
+    "compatible_distinct_cycle": -0.3754651225367022,
+    "compatible_unrestricted_trace": 1.2661941297744947,
+    "repeated_label_positivity_negative_control": true,
+    "half_measure_rho_upper": "0.0000000235121163383395000975367881170832722589356952988929446757864395228776",
+    "orientation_included_upper": "0.00000004702423267667900019507357623416654451787139059778588935157287904575519"
+  },
+  "sources": [
+    {
+      "L": 32,
+      "a": 0.19634954084936207,
+      "potential_over_a": 0.28636790022586445,
+      "gradient_over_a2": 0.5690627605083896,
+      "rectangles": [
+        {
+          "R": 1,
+          "mass": 4,
+          "electric_pair_abs": 0.027477152411860255,
+          "magnetic_pair_abs": 0.011075989779895047,
+          "bound": 9.869604401089358
+        },
+        {
+          "R": 2,
+          "mass": 8,
+          "electric_pair_abs": 0.10727767573339615,
+          "magnetic_pair_abs": 0.043878315043825444,
+          "bound": 25.132741228718345
+        },
+        {
+          "R": 4,
+          "mass": 16,
+          "electric_pair_abs": 0.3888289854519017,
+          "magnetic_pair_abs": 0.16883318446779577,
+          "bound": 50.26548245743669
+        },
+        {
+          "R": 8,
+          "mass": 32,
+          "electric_pair_abs": 1.01605910412382,
+          "magnetic_pair_abs": 0.5764325481885868,
+          "bound": 100.53096491487338
+        }
+      ],
+      "nonclosed_edge_over_a2": 1.4584597396413765
+    },
+    {
+      "L": 64,
+      "a": 0.09817477042468103,
+      "potential_over_a": 0.2858780747295203,
+      "gradient_over_a2": 0.5708381338035411,
+      "rectangles": [
+        {
+          "R": 1,
+          "mass": 4,
+          "electric_pair_abs": 0.006880695806146969,
+          "magnetic_pair_abs": 0.0027575897417918575,
+          "bound": 2.4674011002723395
+        },
+        {
+          "R": 2,
+          "mass": 8,
+          "electric_pair_abs": 0.027357260740726683,
+          "magnetic_pair_abs": 0.011003801870502082,
+          "bound": 9.869604401089358
+        },
+        {
+          "R": 4,
+          "mass": 16,
+          "electric_pair_abs": 0.10680958866140937,
+          "magnetic_pair_abs": 0.04359233754712812,
+          "bound": 25.132741228718345
+        },
+        {
+          "R": 16,
+          "mass": 64,
+          "electric_pair_abs": 1.01162571080351,
+          "magnetic_pair_abs": 0.572675641457296,
+          "bound": 100.53096491487338
+        }
+      ],
+      "nonclosed_edge_over_a2": 2.9119301577470345
+    },
+    {
+      "L": 128,
+      "a": 0.04908738521234052,
+      "potential_over_a": 0.2857552568690056,
+      "gradient_over_a2": 0.5712810254912946,
+      "rectangles": [
+        {
+          "R": 1,
+          "mass": 4,
+          "electric_pair_abs": 0.0017208854042956379,
+          "magnetic_pair_abs": 0.0006886859826890684,
+          "bound": 0.6168502750680849
+        },
+        {
+          "R": 2,
+          "mass": 8,
+          "electric_pair_abs": 0.006873179393055157,
+          "magnetic_pair_abs": 0.002753084825902208,
+          "bound": 2.4674011002723395
+        },
+        {
+          "R": 4,
+          "mass": 16,
+          "electric_pair_abs": 0.027327375903701333,
+          "magnetic_pair_abs": 0.010985825591746141,
+          "bound": 9.869604401089358
+        },
+        {
+          "R": 32,
+          "mass": 128,
+          "electric_pair_abs": 1.0105206195524323,
+          "magnetic_pair_abs": 0.5717400941720281,
+          "bound": 100.53096491487338
+        }
+      ],
+      "nonclosed_edge_over_a2": 5.821358290585155
+    },
+    {
+      "L": 256,
+      "a": 0.02454369260617026,
+      "potential_over_a": 0.2857245299938775,
+      "gradient_over_a2": 0.5713916889114424,
+      "rectangles": [
+        {
+          "R": 1,
+          "mass": 4,
+          "electric_pair_abs": 0.0004302657929757053,
+          "magnetic_pair_abs": 0.0001721270537704714,
+          "bound": 0.15421256876702122
+        },
+        {
+          "R": 2,
+          "mass": 8,
+          "electric_pair_abs": 0.0017204152659921884,
+          "magnetic_pair_abs": 0.0006884045321809392,
+          "bound": 0.6168502750680849
+        },
+        {
+          "R": 4,
+          "mass": 16,
+          "electric_pair_abs": 0.006871301670755292,
+          "magnetic_pair_abs": 0.002751959701908617,
+          "bound": 2.4674011002723395
+        },
+        {
+          "R": 64,
+          "mass": 256,
+          "electric_pair_abs": 1.0102445497755077,
+          "magnetic_pair_abs": 0.5715064368244601,
+          "bound": 100.53096491487338
+        }
+      ],
+      "nonclosed_edge_over_a2": 11.641464655650331
+    }
+  ],
+  "scope": "Matrix identities and periodic Fourier-mode diagnostics; no interacting cumulants, infinite-volume proof, or independent review."
+}

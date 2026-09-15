@@ -106,10 +106,10 @@ source_review_correction:
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
 
-# ---------------------------------------------------------------- block 14 opening (2026-09-15)
+# ---------------------------------------------------------------- block 14 close (2026-09-15)
 # block: 14
 # branch: physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915 (independent; base origin/main f1755b6e10; blocks 06-13 are open PRs #8034, #8035, #8138-#8142, #8146, #8147)
-# pr_status: opening — PR number recorded at close-out; hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8148 (base = main); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=22 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: control -> contract with a lens pass -> primary (R1-R6, runner) -> refuting pass (per-order closed forms; census cache; independent types; structural trees; random-point identities) -> fold"
 # review_findings: "clocks -> jump chain lambda_x/Lambda; value-blind laws = mixtures through the multiset key; witness on 2x3 (uniform 0.0291 = census; seeded 0.0203; attracting 0.0258), the cube and the plaquette; trees: seeded growth = static exactly; plaquette: no covariant rate law (value-dependent included) is the static law at any non-constant rule (G(p,d) strictly increasing in d = 1/K_2; equal type multisets); static not in the convex hull of order laws; parallel growth outside their span; clause candidates recorded, not adopted"

@@ -1,6 +1,6 @@
 {
  "edge_count": 13448,
- "node_count": 5899,
+ "node_count": 5900,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -753,6 +753,10 @@
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",
    "out_degree": 2
+  },
+  "admissibility_rule_unsoldered_sphere_static_law_plane_correlations_decay_algebraically_at_every_coupling_complex_rotations_explicit_exponent_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "f21f2489334d",

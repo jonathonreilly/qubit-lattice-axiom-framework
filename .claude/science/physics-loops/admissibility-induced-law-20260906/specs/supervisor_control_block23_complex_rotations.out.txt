@@ -1,0 +1,16 @@
+(1) cos(phi + i a) identity: True
+(1) |exp(c cos(phi+ia))| = exp(c cos phi cosh a): Re part is c cos phi cosh a: True
+(1) cos phi + (cosh a - 1) - cos phi cosh a = (1 - cos phi)(cosh a - 1) >= 0: True
+(1) coefficient ratios of (cosh t - 1)/((t^2/2) cosh t) at t^{2k}, k=1..9: [1, 1/6, 1/15, 1/28, 1/45, 1/66, 1/91, 1/120, 1/153] = 2/((2k)(2k-1)): True
+(1) d/du (u - log(1+u)) = u/(1+u) >= 0: True
+(2) |a_y - a_z| <= gamma/(1 + min(|y|,|z|)) on all bonds of a 81x81 patch: True; worst ratio 0.9758
+(2) 4(1 + sum_{j<=R} 8j/(1+j)^2) <= 4(1 + 8 H_R) for R <= 40 exactly: True
+(2) torus sup-norm shells: 8j points for j < L, 4L-1 <= 8L for j = L, L = 2..12: True
+(2) H_R <= 1 + log R for R <= 10^5: True
+(3) partial sum 1+1+1/2+1/6 = 8/3 <= e; 65/24 + 1/100 =  1631/600 <= 11/4: True ; cosh 1 <= (11/4 + 3/8)/2 = 25/16 <= 8/5: True
+(3) gamma* = 5/(256*beta) ; kappa(gamma*) = 5/(512*beta) ; 18 beta gamma*^2 (8/5) = 45/(4096*beta) ; at beta = 5/256: 9/16
+(3) small beta: gamma = 1: kappa = 1 - 128 beta/5 >= 1/2 iff beta <= 5/256: beta <= 5/256
+(4) P1's inequality on 2- and 3-site chains for 41 shift values, beta in (1/4, 1, 4): True; tightest bound/truth = 1.773
+(5) L=10: sum_j 8j(1+j)^-kappa = 241.89 <= 8 L (1+L)^(1-kappa) = 428.61: True
+(5) L=100: sum_j 8j(1+j)^-kappa = 11839.58 <= 8 L (1+L)^(1-kappa) = 20235.55: True
+(5) L=1000: sum_j 8j(1+j)^-kappa = 592512.75 <= 8 L (1+L)^(1-kappa) = 1007845.22: True

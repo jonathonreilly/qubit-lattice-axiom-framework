@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 23 — V1-V5 (supervisor, 2026-09-15)
+- V1: block 20's absence of order on planes (PR #8154) with a logarithmic rate; what replaces block 19's channel there.
+- V2: the lens pass in `GOAL_block23.md` ("this is the 1977 theorem" — re-proved at scope with explicit constants on windows and the torus; "the exponent is tiny" — the dependence on `β` is the content; "the torus wraps" — the torus distance is Lipschitz and its shells never exceed `8j`; "exterior records" — `Λ ⊇ {d < R}`).
+- V3: P1–P4 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on six routes with no findings and recorded a factor ten of room in the bond sum.
+- V4: no reading, rule, coupling or dimension selected; the true rate and sharpness not claimed; blocks 19 and 20 not re-proved.
+- V5: consumers named — #8093's assembly (the dimension placement with a rate); the campaign's queue.
+
+## block 23 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block23.md`): as V2. Control: the identities; the Lipschitz bound on an `81×81` patch; the shell sums on `Z²` and tori; the harmonic bound; the `e` bounds; the optimization; P1's inequality on solvable chains. Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block23_findings.md`): Monte Carlo on a `4×4` window; the torus Lipschitz bound with wrapping; exact bond sums; a grid; direct shell sums — no findings. Author checks only; independent review pending.
+
+## block 23 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `47dd808347`; nothing pinned from a branch or PR (PRs #8153/#8154 are evidence addresses for the placement only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the true rate and sharpness marked open; the existence of plane laws not assumed; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

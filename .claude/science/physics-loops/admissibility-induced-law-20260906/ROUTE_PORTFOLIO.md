@@ -84,3 +84,8 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 23 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–22 are open PRs #8034, #8035, #8138–#8142, #8146–#8156)
+Searched commit: `origin/main` = `47dd808347`.
+- `git grep -l -iE "mcbryan|complex rotation|algebraic decay|power-law decay" origin/main -- 'docs/*.md'` → nothing for the sphere-valued record law; block 20 (no order on planes, logarithmic rate) is the predecessor.
+Classification: **open after the matched-hit review.** Routes: Z-A complex rotations with the logarithmic shift function (P1–P3) — chosen; Z-B a sharper shell count or a smoother shift function (the bond sum has a factor ten of room) — not pursued; Z-C the infrared bound plus a two-dimensional sum rule (block 20's route) — gives no rate for correlations; Z-D the true (exponential) decay of the three-component model — not attempted (not elementary).

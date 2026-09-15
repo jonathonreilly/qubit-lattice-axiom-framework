@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 23 (2026-09-15) — algebraic decay on the plane
+- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 01 (on `main`; the static reading). Proposed, unaudited. PRs #8153 and #8154 referenced as evidence addresses for the placement only.
+- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading on plane windows with exterior records (no records outside) and on tori; the exponential overlap with `β` supplied.
+- Scaffolding: the cylindrical coordinates `(ρ cos φ, ρ sin φ, ζ)`; the trigonometric polynomial `(Σ_{m≤4}(c cos φ)^m/m!)e^{iφ}` for the shift lemma; sup-norm shells on `Z²` (`j < 30`) and on tori (`L ≤ 12`); `R ≤ 60` for the shell sum; the two-site instance; a `4×4` window, a `24×24` torus, `R ≤ 40` bond sums and a `10⁵`-point grid in the refuting pass.
+- Standard mathematical imports at definition level: the shift lemma for the period integral of an entire `2π`-periodic function; the area-preserving cylindrical projection (`dσ = dζ dφ`).
+- References named, not used: McBryan–Spencer; Fröhlich–Spencer; Fröhlich–Pfister; Kosterlitz–Thouless.
+- Counterfactual pass: a discrete menu (no angle to rotate; block 17 orders on the plane); `d = 3` (the shell sum grows like `R`, not `log R`, and the bound is useless — consistent with block 19's order); the Born overlap (the shift argument applies to any weight entire in the angles; its constants are not computed); the formation reading (block 12).

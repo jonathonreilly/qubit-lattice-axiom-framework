@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 23, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "#8093's gravity node: blocks 19-22 (PRs #8153-#8156) locate its kernel in the ordered unsoldered static law on Z^3 with window [sqrt(3)/6, 76/100] and show it needs the third dimension; what replaces it on a plane"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "on planes |<s_0.s_x>| <= (3/2) e^{9/16} (1 + d(x))^{-kappa(beta)}, kappa = 5/(512 beta) for beta >= 5/256, uniformly in the window and the side; M_N^2 <= 6 e^{9/16} (1+L)^{-min(kappa,1)} + 1/(4L^2); a coupling-dependent power law, so no Green-function-type kernel on planes. Next: the weak side's coefficient; the normalization; the Born overlap. Consumers: #8093's assembly; the campaign's queue"
+```

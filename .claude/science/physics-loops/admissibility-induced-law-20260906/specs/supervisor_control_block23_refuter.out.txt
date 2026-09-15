@@ -1,0 +1,11 @@
+R1 4x4 window beta=0.5 gamma=0.5000: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = -0.0089; P1 bound = 0.4958; dominates: True
+R1 4x4 window beta=0.5 gamma=0.0391: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = -0.0089; P1 bound = 0.9381; dominates: True
+R1 4x4 window beta=2.0 gamma=0.5000: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = 0.1702; P1 bound = 0.7254; dominates: True
+R1 4x4 window beta=2.0 gamma=0.0098: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = 0.1702; P1 bound = 0.9841; dominates: True
+R2 torus L=12: the shift function's Lipschitz bound holds on every bond for R = 3, 8, 12, 16 (wrapping): True
+R3 H_R <= 1 + log R at R = 10^k, k <= 6: True
+R3 exact bond sums on Z^2 (R <= 40, gamma = 0.7) are below 2 gamma^2 cosh(gamma)(1 + 8 H_R): True; largest ratio 0.101
+R4 beta=0.1: grid max of gamma - (128/5) beta gamma^2 on (0,1] = 0.097656 vs the note's 0.097656
+R4 beta=1.0: grid max of gamma - (128/5) beta gamma^2 on (0,1] = 0.009766 vs the note's 0.009766
+R4 beta=10.0: grid max of gamma - (128/5) beta gamma^2 on (0,1] = 0.000977 vs the note's 0.000977
+R5 torus shell sums <= 8 L (1+L)^(1-kappa') for L <= 200 at kappa' = 1/2, 1: True

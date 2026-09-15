@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 23 opening (2026-09-15)
+
+Block 23 opened for review (independent PR against main): algebraic decay on the plane with `κ(β) = 5/(512β)`; block 20's rate upgraded to a power of the side; no Green-function-type kernel on planes. The lane's picture of the unsoldered sphere static law is now: `Z³` — unique and short-range below `√3/6`, ordered with the Green-function channel above `76/100`; planes and lines — never ordered, power-law bounded. Ranked next:
+
+1. **The weak side's sharper coefficient** (prove the zero-field maximum of the mean absolute deviation; `β < 1/3`) — medium; narrows the band.
+2. **The kernel's normalization on `Z³`** — hard.
+3. **The Born overlap under the unsoldered reading** (reflection positivity holds to `ℓ = 1`; no Gaussian domination; what orders?) — medium-hard.
+4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.

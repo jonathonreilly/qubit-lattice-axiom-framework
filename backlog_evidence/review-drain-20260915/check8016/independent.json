@@ -1,0 +1,17 @@
+{
+  "C": "Matrix([[64/11, 46/11], [46/11, 64/11]])",
+  "detH": "55/2",
+  "restored_C": "Matrix([[77/60, 23/60], [23/60, 77/60]])",
+  "wrong_halfweight_C": "Matrix([[16/5, 9/5], [9/5, 16/5]])",
+  "Sigma": "Matrix([[192/11, 138/11], [138/11, 192/11]])",
+  "a": "8/135",
+  "b": "23/270",
+  "omega": "sqrt(55)/90",
+  "theta": "32/23 - 3*sqrt(55)/23",
+  "j0": "sqrt(3)/(48*pi**5)",
+  "lambda0": "-177917432*sqrt(165)*pi/2114396602587 + 63466992721*sqrt(3)*pi/101491036924176",
+  "lambda0_numeric": 7.097775283156647e-06,
+  "beta6_leading": 0.009198716766971014,
+  "degree2_eigenfunction_control": "PASS",
+  "gauge_only_precision_invariance": "PASS"
+}

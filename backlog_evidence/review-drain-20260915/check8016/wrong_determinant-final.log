@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8016/wrong_determinant-final.py", line 55, in <module>
+    ck('published adapted Hessian determinant',reduce(lambda a,b:a*b,pivots,F(1))==F(54,2))
+  File "/private/tmp/review-drain-20260915/check8016/wrong_determinant-final.py", line 11, in ck
+    if name in checks or not bool(value):raise AssertionError(name)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: published adapted Hessian determinant

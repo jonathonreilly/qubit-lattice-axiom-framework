@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8016/wrong_weight-final.py", line 47, in <module>
+    ck('declared ten spatial and twelve temporal weights',sum(f['weight']==s.Rational(1,2) for f in kept)==10 and sum(f['weight']==1 for f in kept)==12)
+  File "/private/tmp/review-drain-20260915/check8016/wrong_weight-final.py", line 37, in ck
+    if n in checks or not bool(b):raise AssertionError(n)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: declared ten spatial and twelve temporal weights

@@ -1,0 +1,52 @@
+{
+  "branch0": {
+    "Q": [
+      1.788854381999913,
+      4.000000000000181
+    ],
+    "heat": 4.000000000000001,
+    "total": 1.8695048315001979
+  },
+  "branch1": {
+    "Q": [
+      2.6832815729997486,
+      10.0
+    ],
+    "heat": 10.000000000000004,
+    "total": 3.3042572472504412
+  },
+  "checks": [
+    "1D integral n0 x-1.2",
+    "1D integral n0 x0.3",
+    "1D integral n0 x1.1",
+    "1D integral n1 x-1.2",
+    "1D integral n1 x0.3",
+    "1D integral n1 x1.1",
+    "1D integral n2 x-1.2",
+    "1D integral n2 x0.3",
+    "1D integral n2 x1.1",
+    "1D integral n3 x-1.2",
+    "1D integral n3 x0.3",
+    "1D integral n3 x1.1",
+    "1D integral n4 x-1.2",
+    "1D integral n4 x0.3",
+    "1D integral n4 x1.1",
+    "1D integral n5 x-1.2",
+    "1D integral n5 x0.3",
+    "1D integral n5 x1.1",
+    "1D integral n6 x-1.2",
+    "1D integral n6 x0.3",
+    "1D integral n6 x1.1",
+    "quadrature moments 0",
+    "direct heat norm 0",
+    "quadrature moments 1",
+    "direct heat norm 1",
+    "sixshift quadratic",
+    "sixshift quartic",
+    "PN cubic cross terms",
+    "ceiling low+actual tail",
+    "ratio ceiling"
+  ],
+  "low_integral": 21200.164451027176,
+  "scope": "Independent finite numeric and symbolic cross-checks; analytic general proof separately reconstructed."
+}

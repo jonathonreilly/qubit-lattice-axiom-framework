@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8016/wrong_word-final.py", line 23, in <module>
+    ck('actual noncommuting fiveface disk word',reduce(word)==U)
+  File "/private/tmp/review-drain-20260915/check8016/wrong_word-final.py", line 11, in ck
+    assert n not in checks and bool(v),n
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: actual noncommuting fiveface disk word

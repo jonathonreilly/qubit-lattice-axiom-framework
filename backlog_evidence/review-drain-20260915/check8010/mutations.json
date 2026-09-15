@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Mehler branch",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant0.py\", line 12, in <module>\n    ck('Mehler inverse width',s.simplify(theta*d)==1)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant0.py\", line 9, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Mehler inverse width\n"
+  },
+  {
+    "name": "quartic multiplier",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant1.py\", line 44, in <module>\n    ck('ground full coefficient' if n==0 else 'excited full coefficient',s.simplify(total-((5-7/omega) if n==0 else (8-s.Rational(21,2)/omega)))==0)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant1.py\", line 9, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ground full coefficient\n"
+  },
+  {
+    "name": "linear multiplier",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant2.py\", line 44, in <module>\n    ck('ground full coefficient' if n==0 else 'excited full coefficient',s.simplify(total-((5-7/omega) if n==0 else (8-s.Rational(21,2)/omega)))==0)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant2.py\", line 9, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ground full coefficient\n"
+  },
+  {
+    "name": "heat exponent",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant3.py\", line 26, in <module>\n    ck('mapped physical ground exponent',s.simplify(cc/dd-a)==0)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant3.py\", line 9, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: mapped physical ground exponent\n"
+  },
+  {
+    "name": "heat normalization",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant4.py\", line 44, in <module>\n    ck('ground full coefficient' if n==0 else 'excited full coefficient',s.simplify(total-((5-7/omega) if n==0 else (8-s.Rational(21,2)/omega)))==0)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant4.py\", line 9, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ground full coefficient\n"
+  },
+  {
+    "name": "angular spectrum",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant5.py\", line 21, in <module>\n    ck('top and first excited simplicity',degrees[3]==1 and degrees[4]==0 and degrees[5]==1 and all(degrees[j]==0 for j in range(3)))\n  File \"/private/tmp/review-drain-20260915/check8010/mutant5.py\", line 9, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: top and first excited simplicity\n"
+  },
+  {
+    "name": "reflection sign",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant6.py\", line 17, in <module>\n    ck('determinant sign '+str(j),w.det()==sgn)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant6.py\", line 10, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: determinant sign 1\n"
+  },
+  {
+    "name": "alternant sign",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant7.py\", line 26, in <module>\n    ck('small endpoint coefficient '+str(n),s.simplify(term-(s.I*Delta if n==3 else 0))==0)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant7.py\", line 10, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: small endpoint coefficient 3\n"
+  },
+  {
+    "name": "factor six",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant8.py\", line 29, in <module>\n    ck('symmetrized cubic integrand normalization',s.simplify(s.I*Delta*term-Delta**2/6)==0)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant8.py\", line 10, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: symmetrized cubic integrand normalization\n"
+  },
+  {
+    "name": "ratio bound",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8010/mutant9.py\", line 45, in <module>\n    ck('final wall uniform ceiling',C<1700)\n  File \"/private/tmp/review-drain-20260915/check8010/mutant9.py\", line 10, in ck\n    if name in checks or not bool(v):raise AssertionError(name)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: final wall uniform ceiling\n"
+  }
+]

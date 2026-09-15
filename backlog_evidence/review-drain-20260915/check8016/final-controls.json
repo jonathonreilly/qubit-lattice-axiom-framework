@@ -1,0 +1,52 @@
+{
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "sympy": "1.14.0",
+  "runners": {
+    "weak": {
+      "exit": 0,
+      "checks": 16,
+      "seconds": 0.00849475001450628,
+      "rss_MiB": 20.3125,
+      "sha256": "d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a",
+      "cache_bound": true
+    },
+    "adapted": {
+      "exit": 0,
+      "checks": 25,
+      "seconds": 0.01695195899810642,
+      "rss_MiB": 20.609375,
+      "sha256": "ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5",
+      "cache_bound": true
+    },
+    "covariance": {
+      "exit": 0,
+      "checks": 32,
+      "seconds": 0.33136187493801117,
+      "rss_MiB": 64.359375,
+      "sha256": "6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4",
+      "cache_bound": true
+    }
+  },
+  "mutations": {
+    "wrong_weight": {
+      "exit": 1,
+      "failure": "AssertionError: declared ten spatial and twelve temporal weights"
+    },
+    "wrong_covariance": {
+      "exit": 1,
+      "failure": "AssertionError: published source covariance"
+    },
+    "wrong_ground_factor": {
+      "exit": 1,
+      "failure": "AssertionError: absolute Gaussian ground eigenvalue"
+    },
+    "wrong_determinant": {
+      "exit": 1,
+      "failure": "AssertionError: published adapted Hessian determinant"
+    },
+    "wrong_word": {
+      "exit": 1,
+      "failure": "AssertionError: actual noncommuting fiveface disk word"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8016/wrong_covariance-final.py", line 49, in <module>
+    ck('published source covariance',Cov==s.Matrix([[192,138],[138,192]])/11)
+  File "/private/tmp/review-drain-20260915/check8016/wrong_covariance-final.py", line 37, in ck
+    if n in checks or not bool(b):raise AssertionError(n)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: published source covariance

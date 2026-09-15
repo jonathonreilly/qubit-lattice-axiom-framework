@@ -1,0 +1,1027 @@
+{
+  "pr": 8010,
+  "reviewer_session": "/root/backlog_topology",
+  "original_head": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e",
+  "original_merge_base": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
+  "confirmation_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "reviewed_tree": "9813ed85a685c93fafc16c564a1108cfcda5c0cd",
+  "source_verdict": "PASS",
+  "landing_verdict": "not issued; coordinator combined gates still required",
+  "final_paths": [
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "be4bf9f7729a896965f9f75caf7052a79dd2585f",
+      "sha256": "0f5417310b14c293889055abec70af13c982668142e8c65d030400a2026206a4",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "05875f5f209f389b3bf73b2dde5ab274bf1702cd",
+      "sha256": "5b90632f073740993145c9a21b637e0f275339af249efe4420a0f2f79df3a1b0",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "blob": "609ce877d79e9293a91d49be97168a77798122b1",
+      "sha256": "a7f27d33e964dd046dd57b15adf3617714f62199bf10ffaeaf24379b4b9daf7f",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/PREREGISTRATION.md",
+      "blob": "1032373378a31d423e6d9e2c5213af952ca20537",
+      "sha256": "ffeea13957d6cc333a09fd325dcf570b7739186fbc912d7bb91f05a80f3e72ef",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/PREREGISTRATION_ORIGINAL.md",
+      "blob": "8bbeffa3af94f08df1fa8e746fe65e69b09dd038",
+      "sha256": "a9ca7825d7402ec955f34ed7d69aa9922853d76a138c370574052aed531e626a",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/README.md",
+      "blob": "b50cf3c0593b3215c6b85f44533849b67fc36f99",
+      "sha256": "baacfa495269a007dbe8c095d94f4b633b3179b2d224c5a6d386a3f4b8ffe4e5",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/REVIEW.md",
+      "blob": "eaa06dd7a689d21e53faf7fa66fd0fe48525ed9c",
+      "sha256": "1d0b77d4c5d21b3777decf21160eba73f93bf216a6c33ce45f0de74fe20d07ea",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/SOURCE_RECEIPT.json",
+      "blob": "a779cfdd846e0fbb912778c553bbbd82240160cc",
+      "sha256": "b87c9d81d4f0859a6b5803897d41e36318c26f83419293c7acb74b55e45e7a4a",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/allocation-reference.py",
+      "blob": "04eac0cbeea7bea04b9eed1cb26c818e57817fac",
+      "sha256": "8f09240d60541b73352dc8741c9a34a85d1a2f620defc8abd356443137568346",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/result.json",
+      "blob": "4315db56673cd098b4f82a61ca62b000cffdd9a9",
+      "sha256": "0cdbe133fcc67f6dc30178891b1f1be24f201b14818bb6049851565b7e757ff3",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8010-native-wall/staging/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+      "blob": "6cace61ac8097b1830ec20e4dda06c68dc4e374f",
+      "sha256": "7212789c92fd504dd10afc204b42538a656e5cfc632ecad19ae988d55e5d8aee",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "logs/runner-cache/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.txt",
+      "blob": "c669236177591f8bfe3d0c82f39f2119207a0ad8",
+      "sha256": "1850c6ddee3879f6412f18cc1daba3d41fda739fa181ef76cb9f84c38f214930",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "logs/runner-cache/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.txt",
+      "blob": "13ce8da73a72b42c54da3566d56d8a2936b3ac51",
+      "sha256": "015f534da104e3ac718e0298d45d5464fa3083abdfefb8673d45dff3f3e28786",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "logs/runner-cache/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.txt",
+      "blob": "a47055196853fc40d5278e8cba8743bbf9e5fbaa",
+      "sha256": "cb82a2081662f50ae959a4bb9f72c99ac89023e38d6d116715b6f7217cbe0c11",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "blob": "0b2748f43981ee213eea129d4250a7aa8962bd6c",
+      "sha256": "e244cb57e510c9a904a5fa26e872ce24dbdc0f63bda8f837dcda21bf38abb363",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py",
+      "blob": "a4f11c8f3312558b51deab429233e75f210d50e4",
+      "sha256": "f87e4ac65a65161ee1e9681121d053174757c59a372832ed34102fde635c1b7f",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+      "blob": "4bbf8ab2e1adeaf9fba05d40049fef18af579c95",
+      "sha256": "e7d68496d11e1f0b0aac4c49200ddcdbafefc75c84dda6ef88eaed980d46c72d",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    },
+    {
+      "path": "scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py",
+      "blob": "754c6569d981d461b171132896920945b3295b31",
+      "sha256": "514b6d3acf83dc9d3823ba130237dab10664a2546fbd2866745fd61c1180b7b5",
+      "coverage": "Complete final added source/evidence read; existing tooling consumer context plus complete one-line change inspected where applicable"
+    }
+  ],
+  "original_constituent_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/ARTIFACT_PLAN.md",
+      "original_blob": "6774a364b7d13ffef07fd3fa6644b160ac301267",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_blob": "e3b3ef3e02b1fd397150b57314cedf3223314b5f",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_blob": "94623d65803ebecb3a86e93d20b1acb30854184e",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/CONFORMANCE.md",
+      "original_blob": "6b64cb57aeb0a9586363b717ba5d62454e23bca6",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/CONFORMANCE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/FINAL_VALIDATION.md",
+      "original_blob": "80309906860dcddc9d56753653679321b73bbce4",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/FINAL_VOCAB_LINT.txt",
+      "original_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/GOAL.md",
+      "original_blob": "a8518cc46d484e073acc6f3745b65a6fac664705",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/GOAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/HANDOFF.md",
+      "original_blob": "6f6cafb77e65301db4e19fc6bab6e01c037c9e9e",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/LANDED_PRIMARY_CACHE_REPAIR.json",
+      "original_blob": "61e44bf777a225da2ca53d36c213448b9c6f33ce",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/LANDED_PRIMARY_CACHE_REPAIR.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/LANDED_PRIMARY_CACHE_REPAIR.md",
+      "original_blob": "e38d7b6821aaec470d8877721ea7366ea01e2345",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/LANDED_PRIMARY_CACHE_REPAIR.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/LITERATURE_BRIDGES.md",
+      "original_blob": "8e5840bae0f1c10ff0f4c23d7b5f5b6cbfd309aa",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/LITERATURE_BRIDGES.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/NATIVE_WALL_CANONICAL_CACHE.json",
+      "original_blob": "0894e16254d34b550aa2ee76cc282a21d25ebc4e",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/NATIVE_WALL_CANONICAL_CACHE.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/NATIVE_WALL_HELPER_COLD_REVIEW.md",
+      "original_blob": "e3bf767b1141a521dfaffd59f6604e82a534b187",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/NATIVE_WALL_HELPER_COLD_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/NATIVE_WALL_PORT_RECEIPT.json",
+      "original_blob": "394be0fcb0f1ec3c1761aaef5308b6eb8c9c3cc5",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/NATIVE_WALL_PORT_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/NORMALIZATION_MODEL_DICTIONARY.md",
+      "original_blob": "808aaae86003196d1a21f0aa4a15f987e01d401b",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/NORMALIZATION_MODEL_DICTIONARY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_blob": "9107b037005314c22b06f88185880ec4ae2ca193",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/NO_GO_LEDGER.md",
+      "original_blob": "ad0d415a0393d686aee42ac18cfeb4d876ec5740",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/NO_GO_LEDGER.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/OPPORTUNITY_QUEUE.md",
+      "original_blob": "694523cb804b247794f47e32c0ccf627eaa56509",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_blob": "711f2a38ea5346ed8490429249919afa569ac856",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log",
+      "original_blob": "8a36dd83f5c0d523e83096a4723f0b3a9e7dea8e",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json",
+      "original_blob": "3a6b2d99579883741ec7f895f88965d36239d0be",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log",
+      "original_blob": "1227591028393f635103e5b76c9e9239fdc00c4e",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md",
+      "original_blob": "ae26e660f2cee7fcb4208a878a1f5fe777906c18",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PROVENANCE.md",
+      "original_blob": "a7dbd958a1723bb169c23312b9b8a3812823a923",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PROVENANCE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/PR_BACKLOG.md",
+      "original_blob": "0c000773129d739d17e07b5243b0039db4b1501f",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/PR_BACKLOG.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_blob": "c67342e5728fd7f1bc7723eb90dbec82a8593bce",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/REVIEW_HISTORY.md",
+      "original_blob": "a531207528591b8a96ff0d33d364b1619a71a8d3",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "original_blob": "3178ae642461e72ef95407b5124bd83357223253",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/ROOT_FINAL_PORT_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/ROUTE_PORTFOLIO.md",
+      "original_blob": "a57a2c899961cbd26dfd40bcd0aa6bc566c61832",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/SCOPED_VALIDATION.json",
+      "original_blob": "b44734a436b6ae7e810b5aa10253fe0b86eb7602",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/SCOPED_VALIDATION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/SCOPED_VALIDATION.md",
+      "original_blob": "56ac9333a1581ab58ad133650e63a83303c87af8",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/SCOPED_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/STATE.yaml",
+      "original_blob": "98907f7a31b98b3361787f670130924b369c07fa",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/TRACE_GATE.md",
+      "original_blob": "63936261b342e7173e5ebb3a50b3bb397314ec26",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/TRACE_GATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_blob": "d9bed37289add5af1670006c13fac899214f84ad",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_blob": "50fcc89fd3736635e2c87b59c314995c17d70782",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_blob": "d11204bff483d0db6b96468a1b0e7d9e86029361",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_blob": "d429b0858f098741dde5d674b37c6e1fe46ce65a",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/VOCAB_VALIDATION.json",
+      "original_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/VOCAB_VALIDATION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided-canonical.json",
+      "original_blob": "84f75e96aebdbba941981daa126976b661dc70ba",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided-canonical.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided-review/REVIEW.md",
+      "original_blob": "df1bfffedaed1a734ad3f47d3c5f57cf3e6066e1",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided-review/REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided-review/live-certificate.json",
+      "original_blob": "aa0d0881cd5c8812994c58813507697f4dcb8295",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided-review/live-certificate.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/CERTIFICATE_PREREGISTRATION.md",
+      "original_blob": "1528f41690daf57ff270c966f00024ec649c3bbb",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/CERTIFICATE_PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/DERIVATION.md",
+      "original_blob": "c5c5c410e0c7c234d09d4a75e471f472ad43a565",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/HASHES.json",
+      "original_blob": "9aeebaed6ed270bf095a4041548dd78dc8daa24e",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/PREREGISTRATION.md",
+      "original_blob": "4cd529a14785c73cc72e3fd0bc729f625ffb7d72",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/check.py",
+      "original_blob": "ce9e971e4fbe7654327d99d275577e4685fa0555",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/result.json",
+      "original_blob": "b51ecbf2e863071dfbffb3cbf30eb6baa6508668",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/HASHES.json",
+      "original_blob": "d7f1c053654a7f5cfb9ee2e76ed53b7129c39373",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/PORT_RECEIPT.json",
+      "original_blob": "b7cf60efff98d4533f6e48b478403e6c5f5cc15c",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/PORT_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "41cffaab4063d4358a90c14886d84124efb07762",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/result.json",
+      "original_blob": "f2a60a578e0ceab3b98e400bdf86734dec777983",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py",
+      "original_blob": "aed06f85c60e3951073a53e7698b23f429246450",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/dimension-divided/staging/scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/PREREGISTRATION.md",
+      "original_blob": "1032373378a31d423e6d9e2c5213af952ca20537",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/PREREGISTRATION.md",
+      "final_blob": "1032373378a31d423e6d9e2c5213af952ca20537",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/PREREGISTRATION_ORIGINAL.md",
+      "original_blob": "8bbeffa3af94f08df1fa8e746fe65e69b09dd038",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/PREREGISTRATION_ORIGINAL.md",
+      "final_blob": "8bbeffa3af94f08df1fa8e746fe65e69b09dd038",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/PREREGISTRATION_ORIGINAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/REVIEW.md",
+      "original_blob": "eaa06dd7a689d21e53faf7fa66fd0fe48525ed9c",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/REVIEW.md",
+      "final_blob": "eaa06dd7a689d21e53faf7fa66fd0fe48525ed9c",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/SOURCE_RECEIPT.json",
+      "original_blob": "a779cfdd846e0fbb912778c553bbbd82240160cc",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/SOURCE_RECEIPT.json",
+      "final_blob": "a779cfdd846e0fbb912778c553bbbd82240160cc",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/SOURCE_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/allocation-reference.py",
+      "original_blob": "04eac0cbeea7bea04b9eed1cb26c818e57817fac",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/allocation-reference.py",
+      "final_blob": "04eac0cbeea7bea04b9eed1cb26c818e57817fac",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/allocation-reference.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/result.json",
+      "original_blob": "4315db56673cd098b4f82a61ca62b000cffdd9a9",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/result.json",
+      "final_blob": "4315db56673cd098b4f82a61ca62b000cffdd9a9",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/staging/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+      "original_blob": "6cace61ac8097b1830ec20e4dda06c68dc4e374f",
+      "disposition": "accepted unchanged",
+      "reason": "Exact historical diagnostic provenance relocated with explicit non-authority README.",
+      "final_path": "docs/work_history/repo/review_feedback/pr8010-native-wall/staging/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+      "final_blob": "6cace61ac8097b1830ec20e4dda06c68dc4e374f",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/native-wall-check/staging/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian-canonical.json",
+      "original_blob": "4056b7cc3b704e3ca87d533537bb1153ea1ab5cb",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian-canonical.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian-review/REVIEW.md",
+      "original_blob": "2e0b0cf06ecf06bd8c7d6448b060487fcada68da",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian-review/REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian-review/live-certificate.json",
+      "original_blob": "2d4f0a9656a4f3f473769ec4520d46a0be03e478",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian-review/live-certificate.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/DERIVATION.md",
+      "original_blob": "b12617ee8aceceda5f655948cc718633ed76aac0",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/HASHES.json",
+      "original_blob": "d12f5027afe00481a209422f7859c1ad91962eac",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/PREREGISTRATION.md",
+      "original_blob": "bd833685bd66fc90b345991dc9d285221114cda4",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/check.py",
+      "original_blob": "a253eb1f759b632bfc5a04a2d9e0dfd6c60ae8f4",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/result.json",
+      "original_blob": "c9fdf9d6b56f2ad6686bf7b714204bd61a7490ad",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/HASHES.json",
+      "original_blob": "91b98fdf68f5ffbc4aa8509dfcacbb1df09cc1cb",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/PORT_RECEIPT.json",
+      "original_blob": "3541af9b8fdeb8712e82ba37c1e209f3e04947a4",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/PORT_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "be4bf9f7729a896965f9f75caf7052a79dd2585f",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/result.json",
+      "original_blob": "58f9e50a9e95bed802a2be1fe13d30d166b59660",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py",
+      "original_blob": "f7b7063efb89a2f4b11823dd803f72efbde536f1",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/physical-gaussian/staging/scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/validated_claims_before_generated_cleanup.json",
+      "original_blob": "ee54cad9111fd3f7f89b04b9a5b0d5f5c5622cc8",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/dimension-divided-spectral-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_blob": "598fa8927bbdc5de46bc7ecead0e444c341aee9f",
+      "disposition": "superseded",
+      "reason": "Historical planning/review/validation/port records or duplicate theorem/certificate. No independent current authority. Complete canonical notes/runners preserve mathematical content; unique native-grid results/preregistration restored separately. Frozen original Git objects remain the historical recovery handle.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:.claude/science/physics-loops/dimension-divided-spectral-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "original_path": "docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "be4bf9f7729a896965f9f75caf7052a79dd2585f",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_blob": "be4bf9f7729a896965f9f75caf7052a79dd2585f",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:docs/NATIVE_GAUGE_TRANSFER_CENTRAL_CHARACTER_GAUSSIAN_SPECTRAL_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "original_path": "docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "315f016c276576374b7dc60efdb5fad4e7c1c6c5",
+      "disposition": "narrowed",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_blob": "05875f5f209f389b3bf73b2dde5ab274bf1702cd",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:docs/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_blob": "8c11561868659c3a3e30d11e2970f76f390648cd",
+      "disposition": "rejected",
+      "reason": "Stale generated manifest; regenerate from combined current-main source, not scientific authority.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "docs/audit/scripts/build_citation_graph.py",
+      "original_blob": "de6a92e96b94820300577f66eeecd106de455a7e",
+      "disposition": "narrowed",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "docs/audit/scripts/build_citation_graph.py",
+      "final_blob": "609ce877d79e9293a91d49be97168a77798122b1",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:docs/audit/scripts/build_citation_graph.py"
+    },
+    {
+      "original_path": "logs/runner-cache/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.txt",
+      "original_blob": "c669236177591f8bfe3d0c82f39f2119207a0ad8",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "logs/runner-cache/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.txt",
+      "final_blob": "c669236177591f8bfe3d0c82f39f2119207a0ad8",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:logs/runner-cache/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.txt"
+    },
+    {
+      "original_path": "logs/runner-cache/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.txt",
+      "original_blob": "13ce8da73a72b42c54da3566d56d8a2936b3ac51",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "logs/runner-cache/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.txt",
+      "final_blob": "13ce8da73a72b42c54da3566d56d8a2936b3ac51",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:logs/runner-cache/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.txt"
+    },
+    {
+      "original_path": "logs/runner-cache/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.txt",
+      "original_blob": "a47055196853fc40d5278e8cba8743bbf9e5fbaa",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "logs/runner-cache/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.txt",
+      "final_blob": "a47055196853fc40d5278e8cba8743bbf9e5fbaa",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:logs/runner-cache/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.txt"
+    },
+    {
+      "original_path": "scripts/audit_packet_script_deps.py",
+      "original_blob": "f1730165c2f1f638e4a1f0f66969b389d44b8242",
+      "disposition": "narrowed",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "scripts/audit_packet_script_deps.py",
+      "final_blob": "0b2748f43981ee213eea129d4250a7aa8962bd6c",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:scripts/audit_packet_script_deps.py"
+    },
+    {
+      "original_path": "scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py",
+      "original_blob": "a4f11c8f3312558b51deab429233e75f210d50e4",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py",
+      "final_blob": "a4f11c8f3312558b51deab429233e75f210d50e4",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:scripts/native_gauge_transfer_central_character_gaussian_spectral_second_order_2026_09_07.py"
+    },
+    {
+      "original_path": "scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+      "original_blob": "4bbf8ab2e1adeaf9fba05d40049fef18af579c95",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+      "final_blob": "4bbf8ab2e1adeaf9fba05d40049fef18af579c95",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py"
+    },
+    {
+      "original_path": "scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py",
+      "original_blob": "754c6569d981d461b171132896920945b3295b31",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical claim/evidence retained; note provenance pointer repaired; both tooling maps preserve all main entries plus one original helper entry.",
+      "final_path": "scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py",
+      "final_blob": "754c6569d981d461b171132896920945b3295b31",
+      "recovery": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e:scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "claim": "dimension-divided multiplier",
+      "disposition": "accepted with provenance pointer correction",
+      "domain": "every real beta>=2048 and every dominant integer label",
+      "result": "uniform absolute1710/beta^2 remainder for c_p/(d_p c0); wall-uniform divided alternant; diagnostic21rows not proof",
+      "proof": "CONDITIONAL on supplied Wilson recurrence/reflection,PN low remainder and denominator bounds"
+    },
+    {
+      "claim": "central-character Gaussian sandwich spectrum",
+      "disposition": "accepted unchanged",
+      "domain": "supplied one-link character sandwich, Dirichlet chamber",
+      "result": "complete spectrum theta^(3k+2n+1); simple leading theta^4 and theta^6 branches; k0=5-7/sqrt5,k1=8-21/(2sqrt5); o(beta^-1) branch remainder",
+      "proof": "CONDITIONAL on divided multiplier,heat and Gaussian quadrature/compact convergence; no physical multi-link gap or finite onset"
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_SECOND_ORDER_MULTIPLIER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "fac69d63e40e8d6d4363daa8218e0dda3ea5f417",
+      "sha256": "b6268763cf6dd9ee4dd6c010557d01cc0e3965a43b5e87b73047f9f058d0f2b5",
+      "coverage": "complete analytic source; PN and denominator2618,lower bound,normalizations"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_KILLED_HEAT_SECOND_ORDER_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "06f9f82cc24254f82a1e345974d0c95c4eaa165c",
+      "sha256": "59ebec33acc714c7267d7b3398284810de01687e76f67b32e0a1d98f7af6f289",
+      "coverage": "complete analytic source; uniform kernel remainder and general two-weight bound"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_FULL_TOP_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "1b4c6321b4e10b15091b0100f5ee0e0dc7294059",
+      "sha256": "873e6895b04641fff4aaf353889ddd6bdfa85ffe79f71b43fcd2746c588b35e9",
+      "coverage": "complete source; only Euler-Maclaurin/quasimode/isolation consumed, not native coefficient or its discrete-insertion proof"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_A2_REFLECTION_UNIFORM_HALF_LINE_GAP_THEOREM_NOTE_2026-09-02.md",
+      "blob": "18f2b35d2f89fb34922947696a16a7a6b58813c8",
+      "sha256": "4164e2aed57ee0dc248575402daa21c51dd40090cdbefbbdca0a2d90562c9089",
+      "coverage": "sections1-5 complete; exact recurrence/reflection/Fourier and compact sandwich convergence"
+    },
+    {
+      "path": "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
+      "blob": "5d217d5220026804e057deebd387e78112a84a33",
+      "sha256": "095d6aeaeb8a71e20e29e98c8e7423e41526288ff0678b467e05cc9953fb3635",
+      "coverage": "complete source; Wilson kernel and Schur c/d normalization"
+    },
+    {
+      "path": "docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "blob": "2b641572df23a503d1d9c2597d60860240d46d8c",
+      "sha256": "a7368f7ed443ad289acfd40cdf9f70bd1e0432833af37650b90ed5af939e6e7a",
+      "coverage": "finite B4 source; dimension-generic index contraction independently checked; infinite labels also supplied by Wilson positivity section4"
+    },
+    {
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md",
+      "blob": "bc70bf80c69d957804e54eabd4f8e54b0fb60748",
+      "sha256": "4f9661cbd486b814a2c4ac2d8b04c4171eb80dc9d87444f2d91d1dc2b041e1a5",
+      "coverage": "section6 complete; actual six-neighbor recurrence and boundary omissions; full spatial transfer unconsumed"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "complete authority"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "complete authority"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "complete authority"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "coverage": "complete authority; unconsumed units primitive"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "coverage": "complete authority; does not choose Wilson model"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "coverage": "complete authority; no state data imported"
+    }
+  ],
+  "runtime_scientific_input_files": [],
+  "finding_dispositions": [
+    {
+      "id": "8010-1",
+      "status": "resolved same session",
+      "problem": "Dropped unique diagnostic history while note asserted preserved loop pack",
+      "resolution": "Seven byte-identical historical native-wall files plus README and corrected live note pointer; no receipt restamping"
+    }
+  ],
+  "imports": {
+    "Wilson SU3 action and sandwich": "explicit model/normalization conditions",
+    "Haar and Dirichlet chamber": "explicit normalization/boundary conditions",
+    "recurrence/reflection/heat/quadrature": "conditional mathematical source inputs inspected in consumed scope",
+    "observations/fits/PDG/state-data": "none"
+  },
+  "evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8010/origin.json",
+      "sha256": "d1b154e86fd56f150be0d8bd589eb7b2ee1857593c46e8025735e6315472cdcb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8010/helper_independent.json",
+      "sha256": "b8bcd03d25fddb4ba75996e526903eea51e438ebe4e5a80e9e1e772e1855d035"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8010/divided.json",
+      "sha256": "22b767ae465ef41a056569ce083de2d52e8ad62def1e6fa2bc2554318083a7c1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8010/mutations.json",
+      "sha256": "5711a371e8f7e8973a4ec6836c36bd2e6a530317cecbe202878f42bf5225c7e8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8010/independent.json",
+      "sha256": "152c5cbb85e9cdb1548c26ed991decf4d02a85dbc4cfc92e568ec7fd714d09d1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8010/spectral.json",
+      "sha256": "e4dd6e8a13bda9fab9d85b685522ab4ede163eed4cc633f0ed69b6ffca218a2a"
+    }
+  ],
+  "disposition_map_sha256": "0a710301530e95e6db5ebe2770cdee428c44f14f3dd4dffdc097ae35ba93b900",
+  "limitations": "No full pipeline invoked. Source review does not apply an audit status or certify integrated current-main gates. Review markdown records analytic reasoning and all lenses.",
+  "findings_file_sha256": "0750765a38e7246892364a097779bcd2faa3db9dc58fc7beca2f4889943986f6"
+}

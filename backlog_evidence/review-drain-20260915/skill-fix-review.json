@@ -1,0 +1,76 @@
+{
+  "scope": "Independent bounded process review; seven changed files including new fixture test",
+  "reviewer_session": "/root/backlog_topology",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "files": [
+    {
+      "path": ".claude/commands/review-loop.md",
+      "sha256": "c37d2d015825fe0d78463b66a944bac7cd68b84235a8ce31a8800ded4c57e7fe",
+      "git_blob": "33cb5aec33806750a5cd9867a18477e4e6bb0c8b"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "e6bbf30b38c19816755479fbc24359cce25c656b418eb6c7c5f8adc76a9f8fa3",
+      "git_blob": "dd4c0253f4c363b3fa8f956c7a5e7e199d8a7276"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "3bc61e8301b06b699400dc31320f8213b5449c1a628a2efc56234651c569ce1a",
+      "git_blob": "5f27b6d35df36dc2f595df9fd4063e2c645ea5c8"
+    },
+    {
+      "path": "docs/audit/scripts/check_review_loop_skill_contract.py",
+      "sha256": "ef9dbc807c39f8e278c57811958b490019444f66293528044ea704d712dffd2b",
+      "git_blob": "bf1d508ffb7148624fd1af3be3c93f3a28903088"
+    },
+    {
+      "path": "docs/audit/scripts/run_pipeline.sh",
+      "sha256": "338638f351dd37d2c5a591b09ce912bbcc4d38c33cbf26fadf8091f8be4ef3e5",
+      "git_blob": "7ab8962b1e6925f01d44f6ba0900fad4432bdfff"
+    },
+    {
+      "path": "docs/audit/scripts/tests/test_pipeline_manifest_staging.py",
+      "sha256": "92a741eca3a0927780ddcb4d8e1e26374f12b49915c4789d8d0cc6d02fe2afbe",
+      "git_blob": "defa4f9bb5c3d5429ca9dceb92ef54f138382edc"
+    },
+    {
+      "path": "docs/audit/scripts/tests/test_review_loop_skill_contract.py",
+      "sha256": "1ec6c5b70fd4d70dda9a76acb4aa04ca180b706543f38b1abaae153107e701c8",
+      "git_blob": "c81fcfd1c88fc697518f4adc02dca2a529250471"
+    }
+  ],
+  "findings": [],
+  "verdict": "PASS",
+  "tests": [
+    {
+      "command": "python3 -m unittest discover -s docs/audit/scripts/tests -p test_pipeline_manifest_staging.py -v",
+      "count": 6,
+      "result": "OK",
+      "seconds": 3.989
+    },
+    {
+      "command": "python3 -m unittest discover -s docs/audit/scripts/tests -p test_review_loop_skill_contract.py -v",
+      "count": 71,
+      "result": "OK",
+      "seconds": 12.266
+    },
+    {
+      "command": "bash -n docs/audit/scripts/run_pipeline.sh",
+      "result": "exit0"
+    },
+    {
+      "command": "python3 docs/audit/scripts/check_review_loop_skill_contract.py",
+      "result": "OK29families"
+    },
+    {
+      "command": "git diff --check",
+      "result": "exit0"
+    },
+    {
+      "command": "independent scratch adversarial.py",
+      "result": "four staging/generation mutants rejected;pre-staged unrelated index preserved"
+    }
+  ],
+  "limitations": "Fixture producers replace scientific pipeline tools; no full science pipeline run or scientific verdict. Stage18 invariant source inspected independently to verify actual index semantics; opt-in acknowledgment does not itself supply semantic topology review.",
+  "findings_sha256": "a2d1e8a7ce961faac7834bbe5b517822e0797353880502f52b92ef142c98228f"
+}

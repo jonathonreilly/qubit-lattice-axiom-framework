@@ -1,0 +1,135 @@
+{
+  "checks": 281,
+  "fixtures": [
+    {
+      "triple": [
+        3,
+        1,
+        2
+      ],
+      "corner_equal_to_TL": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "mirror_TV": "2764753/79505712",
+      "center_formation": [
+        "88209/171526",
+        "1521/171526",
+        "20449/171526",
+        "20449/171526",
+        "20449/171526",
+        "20449/171526"
+      ],
+      "center_static": [
+        "81/146",
+        "1/146",
+        "8/73",
+        "8/73",
+        "8/73",
+        "8/73"
+      ]
+    },
+    {
+      "triple": [
+        5,
+        2,
+        4
+      ],
+      "corner_equal_to_TL": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "mirror_TV": "27302976973/1247845597614",
+      "center_formation": [
+        "3705625/10602722",
+        "116281/10602722",
+        "847602/5301361",
+        "847602/5301361",
+        "847602/5301361",
+        "847602/5301361"
+      ],
+      "center_static": [
+        "125/333",
+        "16/1665",
+        "256/1665",
+        "256/1665",
+        "256/1665",
+        "256/1665"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        2,
+        1
+      ],
+      "corner_equal_to_TL": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "mirror_TV": "1709/28800",
+      "center_formation": [
+        "25/59",
+        "25/59",
+        "9/236",
+        "9/236",
+        "9/236",
+        "9/236"
+      ],
+      "center_static": [
+        "4/9",
+        "4/9",
+        "1/36",
+        "1/36",
+        "1/36",
+        "1/36"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        2,
+        2
+      ],
+      "corner_equal_to_TL": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "mirror_TV": "0",
+      "center_formation": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "center_static": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ]
+    }
+  ],
+  "elimination_schedules": 96,
+  "conditional_controls": 96,
+  "scope": "2x3 full exact marginals at four triples; 96 all-label and mixed-boundary controls; 3x3/3x4 symbolic trimming, not full census",
+  "seconds": 3.27170645899605,
+  "peak_MiB": 56.4375,
+  "input_sha256": {
+    "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md": "f6e1354fcec1cdac53c1daa6c1f2250f30066bcc602e089b94a8214b0d890caf",
+    "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+  },
+  "source_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+}

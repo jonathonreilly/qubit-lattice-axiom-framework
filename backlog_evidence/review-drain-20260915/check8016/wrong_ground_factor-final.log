@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8016/wrong_ground_factor-final.py", line 88, in <module>
+    ck('absolute Gaussian ground eigenvalue',s.simplify(lambda0-candidate)==0)
+  File "/private/tmp/review-drain-20260915/check8016/wrong_ground_factor-final.py", line 37, in ck
+    if n in checks or not bool(b):raise AssertionError(n)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: absolute Gaussian ground eigenvalue

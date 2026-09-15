@@ -1,0 +1,1 @@
+{"generator": "25x25 exact array equality against enumerated six-neighbor graph", "rows_checked": 21, "ratio_identity": "exact symbolic numerator b*u-a*v; denominator b*(b+v)", "runtime_inputs": []}

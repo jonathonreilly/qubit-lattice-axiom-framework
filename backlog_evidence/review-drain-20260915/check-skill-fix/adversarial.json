@@ -1,0 +1,26 @@
+[
+  {
+    "mutation": "removed-stage",
+    "rejected": true,
+    "reason": "7 != 0 : ==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)\n==> 0/18 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)\n==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)\n==> 1/18 run_citation_graph_build.py (serialized graph build)\n==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)\n==> 1c/18 compute_load_bearing.py pre-seed topology refresh\n"
+  },
+  {
+    "mutation": "broad-stage",
+    "rejected": true,
+    "reason": "'do not stage\\n' != 'old\\n'\n- do not stage\n+ old\n"
+  },
+  {
+    "mutation": "ignored-stage-failure",
+    "rejected": true,
+    "reason": "'compute_load_bearing.py' unexpectedly found in '-c import secrets; print(secrets.token_hex(16))\\ndocs/audit/scripts/static_pipeline_checkpoint.py begin\\ndocs/audit/scripts/ledger_io.py --materialize\\ndocs/audit/scripts/check_axiom_premise_clean.py\\nscripts/audit_model_family_normalization_guard.py\\ndocs/audit/scripts/run_citation_graph_build.py\\ndocs/audit/scripts/write_citation_graph_manifest.py\\ndocs/audit/scripts/compute_load_bearing.py\\ndocs/audit/scripts/seed_audit_ledger.py\\ndocs/audit/sc"
+  },
+  {
+    "mutation": "ignored-generator-failure",
+    "rejected": true,
+    "reason": "0 != 9 : ==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)\n==> 0/18 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)\n==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)\n==> 1/18 run_citation_graph_build.py (serialized graph build)\n==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)\n==> 1c/18 compute_load_bearing.py pre-seed topology refresh\n==> 2/18 seed_a"
+  },
+  {
+    "case": "pre-staged unrelated path unchanged",
+    "passed": true
+  }
+]

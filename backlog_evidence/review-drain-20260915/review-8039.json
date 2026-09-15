@@ -1,0 +1,892 @@
+{
+  "unit": "PR8039",
+  "reviewer_session": "/root/review_8011",
+  "original_head": "96827c8023a008b5616464fe5d66369b8fa4424f",
+  "declared_base": "main",
+  "original_merge_base": "8257bddfc97ab763d208b43e9bdc8677fe89b1e8",
+  "confirmation_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "reviewed_staged_tree": "549f46ef3fda728b6b468a776bb0fad01078d054",
+  "source_state": "staged candidate",
+  "original_path_count": 47,
+  "deleted_original_paths": [],
+  "disposition_map": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/ARTIFACT_PLAN.md",
+      "status": "A",
+      "original_blob": "804bb95871942b4026c07d3b1d0b03c0a06c1e5a",
+      "original_sha256": "43dd62f7cef9ae3a9df6144ff15064b5cd92f362a5684cb62de8dc5a3fc44181",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/ARTIFACT_PLAN.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "status": "A",
+      "original_blob": "581ad5cbf6131f2197ee3a08f0f98ccea184a7d1",
+      "original_sha256": "50f12d281ea84b9cbe99969f13eb69130eca18a39bd391cfb1673b59a6433e6f",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/CHECKS.md",
+      "status": "A",
+      "original_blob": "dd9801cd0d9e2cf23928b0604f091a0e494c218d",
+      "original_sha256": "5e33b794b4fb2e2e61dc4c933784c480cb3d8abf9f416af848ce1d0e57239760",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/CHECKS.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "status": "A",
+      "original_blob": "bb3c9732f1ecd149c1a2b55ae741b05d2bebcb7c",
+      "original_sha256": "5a5d42459599521947df60c1a1bcb68b2debdb1c1056ac82e151a1e0d0fb8269",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/GOAL.md",
+      "status": "A",
+      "original_blob": "8fd8102164f2a0024ff2c0902e484aa44ce066c6",
+      "original_sha256": "1bdb1e113d2bdb045bcd3afce1de266368693d0d9872849dcf544550d393c81a",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/GOAL.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/HANDOFF.md",
+      "status": "A",
+      "original_blob": "7f66541899d0b9c68cf6db4e4818879ffd075985",
+      "original_sha256": "e35b4dc688bfa31489725e366dad6f78ce3c73416551b5fbca110ced91a49ac9",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/HANDOFF.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/INTERFACE_CHECKS.json",
+      "status": "A",
+      "original_blob": "830e655cf4ff52122d5c8c132bace7183239d854",
+      "original_sha256": "cb2f77e046eb817a7fd6ddad2fff0d9f002a6c9342a0695e6ac77393fbf1c81c",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/INTERFACE_CHECKS.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/ISOLATED_CLOSURE.json",
+      "status": "A",
+      "original_blob": "a328c95d3143c54f7892cc73a5d812da244aef8a",
+      "original_sha256": "e63555da93844104d60c1fbf717259e6fa6dbd157671c646976d566a1a6bfa7e",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/ISOLATED_CLOSURE.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/ISOLATED_CLOSURE.stdout",
+      "status": "A",
+      "original_blob": "3becb740924c62a408232c004429cd51e363c025",
+      "original_sha256": "92460f731ba5b48b81aa3325ac5ad5d3a8f6653172b47b7bee6737ef7e8d6763",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/ISOLATED_CLOSURE.stdout",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/LITERATURE_BRIDGES.md",
+      "status": "A",
+      "original_blob": "4cd2756b27a3b7a7187f683dc32cdf287448367d",
+      "original_sha256": "607e13055d43e7f27fd99d0d6fbe911b4dac0a8b94c67c12d23d145de0275d4e",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/LITERATURE_BRIDGES.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/LIVE_RESULT.json",
+      "status": "A",
+      "original_blob": "4d837e79063ce3831b596c19695af6d7285018c7",
+      "original_sha256": "71c3330325c947eb6733a036903aaa26dbde3911a0d3890c735a69f43370b4a3",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/LIVE_RESULT.json",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Exact probability/control payload recoverable in canonical execution; historical timing and source hashes preserved only at original head.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/LIVE_STDERR.txt",
+      "status": "A",
+      "original_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/LIVE_STDERR.txt",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/LIVE_STDOUT.txt",
+      "status": "A",
+      "original_blob": "223cf795a9fc86b04ed77f96b5efdc3af484b728",
+      "original_sha256": "463798c7a7d01f20a59ffae4d52cc3243ebf04fbd723a3955c07d52d6ec5205f",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/LIVE_STDOUT.txt",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Exact probability/control payload recoverable in canonical execution; historical timing and source hashes preserved only at original head.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/MUTATION_RECORD.json",
+      "status": "A",
+      "original_blob": "d8e0852e81a76bf2e93846778d3270b9ee8a028d",
+      "original_sha256": "cde35e2391d9a91e3b99bc4f0da0a6fff2e6d998aa187674e44a254ff197b5d0",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/MUTATION_RECORD.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/NO_GO_LEDGER.md",
+      "status": "A",
+      "original_blob": "b12c0cf9279885c256ffa03efc698c990eba12ac",
+      "original_sha256": "650b37126f115d9f72370b51efb6835f4a2d735715043b9edcb561cceb6118a7",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/NO_GO_LEDGER.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/OPPORTUNITY_QUEUE.md",
+      "status": "A",
+      "original_blob": "9c7404cff926c51720483b90cd3728389fb4dc03",
+      "original_sha256": "04ad7908131036b3d3f472401e016362c49441fc56e4679b0defbd1336a93f89",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/OPPORTUNITY_QUEUE.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/PORT_HASHES.json",
+      "status": "A",
+      "original_blob": "f2f5351e4b2e804ee021041b3f962d663eae79ae",
+      "original_sha256": "c4f34eb8083604a6da5a3a09d2edbcbe8ec3a366d7fcc181507bf8b4427bfc08",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/PORT_HASHES.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/PORT_RECEIPT.json",
+      "status": "A",
+      "original_blob": "e3a2cbacc383f2ed136d5c3e624ca9258df28b9a",
+      "original_sha256": "dd1e3d60090003e48e378cae35c1ba57b7c63ef8ea2b5f94597c514f9223d9cd",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/PORT_RECEIPT.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/PORT_SCOPE.md",
+      "status": "A",
+      "original_blob": "bdaf1dd1c3297f723abd2fb1bc8dd273f1815cc9",
+      "original_sha256": "f4a82d5a73a57c2d16f7fafadbba3b1b9b162baee0951339c9fa0114e0f447b3",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/PORT_SCOPE.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/PR_BACKLOG.md",
+      "status": "A",
+      "original_blob": "f719a93df4ecfdf7cdce9e92ec15de4ff2c08575",
+      "original_sha256": "44be4b0dbe40bd2f90a024e6f4c5c497f585de2d7ee1eb7d1e1dd36dcf9888b4",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/PR_BACKLOG.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/REVIEW_HISTORY.md",
+      "status": "A",
+      "original_blob": "7c5da978a1ac6b0bf453fad77eeee64954364abc",
+      "original_sha256": "7ce9c27d0bbc7b697439178c47822bd6db8ce5d700fa54df60f9f33392246581",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/REVIEW_HISTORY.md",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/BEFORE_WHITESPACE_LIVE_STDOUT.txt",
+      "status": "A",
+      "original_blob": "619b7598f55609e5afce39fa292dcaf5cdb4b603",
+      "original_sha256": "f57ea6977aae5f3a87b0a2efc0c03d290f0996cb365196e3032aa3e493457f34",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/BEFORE_WHITESPACE_LIVE_STDOUT.txt",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Exact probability/control payload recoverable in canonical execution; historical timing and source hashes preserved only at original head.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/BEFORE_WHITESPACE_NOTE.md.gz",
+      "status": "A",
+      "original_blob": "e67a761241ca364c3f7e1d7dc0f33c7f1a0cb369",
+      "original_sha256": "b520a8f2bbcf010b96ff9074ce71f1375003a45bdc0fb44bc6e3b75add61427e",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/BEFORE_WHITESPACE_NOTE.md.gz",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/CANONICAL_PORT_REVIEW.md",
+      "status": "A",
+      "original_blob": "5360443dd40f3f693d111f1cf8b84ef83acf2a33",
+      "original_sha256": "2f88e687e33876ee3aee5fb3b0e26cf291db4ded9315f470bf6063b7d4e2ae32",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/CANONICAL_PORT_REVIEW.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/DERIVATION.md",
+      "status": "A",
+      "original_blob": "884b5debc4728e7e3414a1f70b739a7658ce532f",
+      "original_sha256": "4b009f919ce508de283dd9073f9591bd4308118fc91b3bd1578e37e66529a703",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/DERIVATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/NATIVE_PROOF_REVIEW.md",
+      "status": "A",
+      "original_blob": "e58b22d4aaf659f41b2a6680a6084e040db1fe91",
+      "original_sha256": "e73ef431fb922716c21189347fe8d8e7243e3e79843d12d484933f59c8fd6336",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/NATIVE_PROOF_REVIEW.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/ORIENTATION_MIXTURE.md",
+      "status": "A",
+      "original_blob": "23779773de94329ff1634fe0e1904daadf3b9bf0",
+      "original_sha256": "1ae5d57e7ab49ad1c6be1f07cdc1639ee3874f80daf5f2d3aec0c9f100236171",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/ORIENTATION_MIXTURE.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/PREREGISTRATION.md",
+      "status": "A",
+      "original_blob": "2ff9a59a0295ebdac30fc5b8ee2bcffe68ee37c4",
+      "original_sha256": "a64139619d50fbec2589c56ae307fd3cc474a47964059d3c6def8897403da7c3",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/PREREGISTRATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/READ_HASHES.json",
+      "status": "A",
+      "original_blob": "8b118e19f22bbdadbe4c1ea61d92d953987b02c9",
+      "original_sha256": "f3b6cf7028d184286bee894c0e3ca24d49a85cfbb3e2c8293da7a4f1bbd45887",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/READ_HASHES.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/RESULT.json",
+      "status": "A",
+      "original_blob": "fb40bc9d00e5ebcd4a86f57898f0f31814df251b",
+      "original_sha256": "0896592ef6809f34689476e4d828a702eb9310ec30e70b32bc9009497b1fc795",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/RESULT.json",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Exact probability/control payload recoverable in canonical execution; historical timing and source hashes preserved only at original head.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/check.py",
+      "status": "A",
+      "original_blob": "b8d31ff8d50ca435e27edd73afd400aa0c29412f",
+      "original_sha256": "688c5af3e82d99ef76f2edc1feb93861706602a9f20cdcef26f4d3676ff43f29",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/independent/check.py",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Original exact checker retained in canonical computation; independent nonuniform/all-label/p=q boundary controls salvaged, with duplicate2x3 core already covered.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/DERIVATION.md",
+      "status": "A",
+      "original_blob": "82258ec4aa3964e0d852ff1d7b75204af2ec86cb",
+      "original_sha256": "d121533e8b977e54429baa51d64a3ff3b5b08e4d03718255180472a88a1542cc",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/DERIVATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/HASHES.json",
+      "status": "A",
+      "original_blob": "7dd0a2d6caf747ab71b45f03b06bb7ca84781a6f",
+      "original_sha256": "0e7782d7da35f4d05104f209f2565ea509babba69d662abd6a80399029f1cccb",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/HASHES.json",
+      "disposition": "rejected",
+      "reason": "Non-source historical process/status/identity/validation artifacts; inspected for unique science obligations; not landed as audit or review authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/PREREGISTRATION.md",
+      "status": "A",
+      "original_blob": "97f42b009f469afd0aeb70cf93c9fb447b5b2337",
+      "original_sha256": "352917d7cc9e3e72dd1271021cc3e39d146cc81af10526ea912a50177e4d975b",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/PREREGISTRATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/SOURCE_BINDING.md",
+      "status": "A",
+      "original_blob": "acad46c1854273e0ba62c57094ba29dc0785c1ef",
+      "original_sha256": "b8d8cfdaf99a3027dddfe7e16c943fe7256da330317fc7da1f65ad4b2da9f707",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/SOURCE_BINDING.md",
+      "disposition": "superseded",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Valid proof/conditions and mixture scope retained in canonical note. Independent row-stationarity/monotone-class routes establish same claims as leaf-removal/martingale route; no extra theorem lost. Compressed predecessor differs only whitespace. Prior reviews are historical evidence, not authority.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/check.py",
+      "status": "A",
+      "original_blob": "101f073f50e4aa84b78c3cc1e163da73e02e2a3e",
+      "original_sha256": "02ba73730a877a4bf9bee26f72b02ca65eae8b9772d92340510d0b7c693416b9",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/check.py",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Original exact checker retained in canonical computation; independent nonuniform/all-label/p=q boundary controls salvaged, with duplicate2x3 core already covered.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/result.json",
+      "status": "A",
+      "original_blob": "74c6df7689e480f743ba4ff47139fa67f0746ce8",
+      "original_sha256": "790c3d1d33f5b0bde13a618447e9bc3605c9be968944ea9930513f689d938bd2",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/evidence/original/result.json",
+      "disposition": "superseded",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Exact probability/control payload recoverable in canonical execution; historical timing and source hashes preserved only at original head.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/omit_normalizer.py",
+      "status": "A",
+      "original_blob": "1734160202528b65d9010c233db38224d0a59644",
+      "original_sha256": "f230cd0ca35a6bbddefb04e305a11dbfc2f82f13693477c86cdfa277bc816a67",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/omit_normalizer.py",
+      "disposition": "rejected",
+      "reason": "Intentionally false historical source mutants and their failure logs, not scientific source. Failure mode remains recoverable."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/omit_normalizer.stderr",
+      "status": "A",
+      "original_blob": "983d891a8f9a83c7caa26f4bf06f0f7f837ccbb5",
+      "original_sha256": "9fe2fe56e5862da32fcd0ed304a960573e0723c5cb03a05d18cf1a06d0f7d11f",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/omit_normalizer.stderr",
+      "disposition": "rejected",
+      "reason": "Intentionally false historical source mutants and their failure logs, not scientific source. Failure mode remains recoverable."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/omit_normalizer.stdout",
+      "status": "A",
+      "original_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/omit_normalizer.stdout",
+      "disposition": "rejected",
+      "reason": "Intentionally false historical source mutants and their failure logs, not scientific source. Failure mode remains recoverable."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/one_center_normalizer.py",
+      "status": "A",
+      "original_blob": "abbbe88fbf38c4ee23b90553a1254f23915f3998",
+      "original_sha256": "e1c1d66c472a7eef38b1a5261634352c444207989266c644fc081b89f23261c0",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/one_center_normalizer.py",
+      "disposition": "rejected",
+      "reason": "Intentionally false historical source mutants and their failure logs, not scientific source. Failure mode remains recoverable."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/one_center_normalizer.stderr",
+      "status": "A",
+      "original_blob": "36031d2bc2bcca4b4c9bde296e27ea6fcff51938",
+      "original_sha256": "29c6d57a09882d03baad9a516ed3d480ebab5d2e0c09f17fdc975a5f04bcb8be",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/one_center_normalizer.stderr",
+      "disposition": "rejected",
+      "reason": "Intentionally false historical source mutants and their failure logs, not scientific source. Failure mode remains recoverable."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/one_center_normalizer.stdout",
+      "status": "A",
+      "original_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:.claude/science/physics-loops/admissibility-plane-formation-20260908/mutations/one_center_normalizer.stdout",
+      "disposition": "rejected",
+      "reason": "Intentionally false historical source mutants and their failure logs, not scientific source. Failure mode remains recoverable."
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "status": "A",
+      "original_blob": "2d90022b0bc629479728fd536f2129aee48280d1",
+      "original_sha256": "2ca20b60762dcd33ff5d0cab6c8dde7416177bbb7eaa1806973fed7e9b264f4a",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "disposition": "narrowed",
+      "final_path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "reason": "Original science retained; complete recovered control scope and accurate historical provenance/cached execution.",
+      "final_blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "final_sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "status": "M",
+      "original_blob": "8fdf407843d0873eee05232ca77a575be7fbec5f",
+      "original_sha256": "0c1393ac0f6142bb80af4acdc62011a6b526428f0edcbf80ec795eeb79f5cb8d",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:docs/audit/data/citation_graph_manifest.json",
+      "disposition": "superseded",
+      "reason": "Generated topology manifest reserved for combined current-tree regeneration."
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_plane_formation_diagonal_interaction_2026_09_08.txt",
+      "status": "A",
+      "original_blob": "c9bba79ba3fab470ea5b34a0c1906d2cbcc58b69",
+      "original_sha256": "c3dc8693083f8e4a537e27bd7fec17caa509a7447bbccad85ae321c3f20a66eb",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:logs/runner-cache/admissibility_plane_formation_diagonal_interaction_2026_09_08.txt",
+      "disposition": "narrowed",
+      "final_path": "logs/runner-cache/admissibility_plane_formation_diagonal_interaction_2026_09_08.txt",
+      "reason": "Original science retained; complete recovered control scope and accurate historical provenance/cached execution.",
+      "final_blob": "b3e14c37fddc980a92ae6a31f85a8301c69ef1ad",
+      "final_sha256": "d8f2c8089117db157ae542a4f0152433c55d3f3ed21c9d3cb475bd5f8043248c"
+    },
+    {
+      "original_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "status": "A",
+      "original_blob": "c25a312f245b064d5f3b59179266072b08709d49",
+      "original_sha256": "9f9e37a7b45940de781baddf7628108e6b910e9f2874c4a0202f9a3504613370",
+      "recovery": "96827c8023a008b5616464fe5d66369b8fa4424f:scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "disposition": "narrowed",
+      "final_path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "reason": "Original science retained; complete recovered control scope and accurate historical provenance/cached execution.",
+      "final_blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "final_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    }
+  ],
+  "disposition_map_sha256": "139bed535fede238f57222bdfe4621d51596b851632ff8d70bcb29f60231c189",
+  "source_paths": [
+    {
+      "path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+      "blob": "8340b41fdc7cd3942e2a4eceac9d44a1ebe2d595",
+      "sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_plane_formation_diagonal_interaction_2026_09_08.txt",
+      "blob": "b3e14c37fddc980a92ae6a31f85a8301c69ef1ad",
+      "sha256": "d8f2c8089117db157ae542a4f0152433c55d3f3ed21c9d3cb475bd5f8043248c"
+    },
+    {
+      "path": "scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+      "blob": "e8b925cd46e35713f31593b3fb9759011eef6412",
+      "sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Entire current authority; all four axioms and formation-site/rate/readout limits."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "Classification procedure; no approved primitive used by changed theorem."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Entire registry; no supplied clock/start slice/menu selection grant."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "coverage": "Inherited six-projector menu/orbit/product and records-only probability definition only; unchanged prior necessary source read. Static-law classification not used."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "62e0f6f10eea8fb0bd922a725799af6114b7a594",
+      "sha256": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+      "coverage": "Current P1,P2 and P7(a) proofs and finite-menu/product definitions, read in prior8011 session; unchanged exact bytes reverified. Needed rectangle density, normalized DAG and opposite-corner identity. P4\u2013P6 and strip machinery are not needed."
+    }
+  ],
+  "runtime_inputs": "Canonical runner reads only note and monotone parent bytes for declared SHA256 binding; mathematical arithmetic is standalone standard-library. Both source inputs and runner hash match fresh cache.",
+  "current_main_loss_check": "All three science paths are additions absent on confirmation base. Current corrected monotone parent preserved, no overwritten/deleted main science; generated manifest regenerated at combined gate.",
+  "claims": [
+    "All translated subrectangle consistency and unique chosen cylinder extension to plane",
+    "All-positive nonconstant two diagonal classes differ; constant boundary iid",
+    "Finite-set Gibbs specification with axial-logK and SW\u2013NE+logH potentials; no Gibbs uniqueness claim",
+    "Positive-event discrepancy from original axial specification and any convex mixture of the two classes; equal mixture restores square-dihedral symmetry only"
+  ],
+  "independent_evidence": {
+    "direct_causal_complete_2x3_configurations": 46656,
+    "mirror_TV": "2764753/79505712",
+    "direct_causal_marginals": 4,
+    "center_boundary_controls": 72,
+    "fixtures": [
+      {
+        "triple": [
+          3,
+          1,
+          2
+        ],
+        "all_center_and_mixed_boundary_checks": "PASS"
+      },
+      {
+        "triple": [
+          5,
+          2,
+          4
+        ],
+        "all_center_and_mixed_boundary_checks": "PASS"
+      },
+      {
+        "triple": [
+          2,
+          2,
+          1
+        ],
+        "all_center_and_mixed_boundary_checks": "PASS"
+      },
+      {
+        "triple": [
+          2,
+          2,
+          2
+        ],
+        "all_center_and_mixed_boundary_checks": "PASS"
+      }
+    ],
+    "symbolic_nonconstant_identities": "PASS"
+  },
+  "final_controls": {
+    "final_cache": {
+      "checks": 281,
+      "fixtures": [
+        {
+          "triple": [
+            3,
+            1,
+            2
+          ],
+          "corner_equal_to_TL": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "mirror_TV": "2764753/79505712",
+          "center_formation": [
+            "88209/171526",
+            "1521/171526",
+            "20449/171526",
+            "20449/171526",
+            "20449/171526",
+            "20449/171526"
+          ],
+          "center_static": [
+            "81/146",
+            "1/146",
+            "8/73",
+            "8/73",
+            "8/73",
+            "8/73"
+          ]
+        },
+        {
+          "triple": [
+            5,
+            2,
+            4
+          ],
+          "corner_equal_to_TL": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "mirror_TV": "27302976973/1247845597614",
+          "center_formation": [
+            "3705625/10602722",
+            "116281/10602722",
+            "847602/5301361",
+            "847602/5301361",
+            "847602/5301361",
+            "847602/5301361"
+          ],
+          "center_static": [
+            "125/333",
+            "16/1665",
+            "256/1665",
+            "256/1665",
+            "256/1665",
+            "256/1665"
+          ]
+        },
+        {
+          "triple": [
+            2,
+            2,
+            1
+          ],
+          "corner_equal_to_TL": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "mirror_TV": "1709/28800",
+          "center_formation": [
+            "25/59",
+            "25/59",
+            "9/236",
+            "9/236",
+            "9/236",
+            "9/236"
+          ],
+          "center_static": [
+            "4/9",
+            "4/9",
+            "1/36",
+            "1/36",
+            "1/36",
+            "1/36"
+          ]
+        },
+        {
+          "triple": [
+            2,
+            2,
+            2
+          ],
+          "corner_equal_to_TL": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "mirror_TV": "0",
+          "center_formation": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ],
+          "center_static": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "elimination_schedules": 96,
+      "conditional_controls": 96,
+      "scope": "2x3 full exact marginals at four triples; 96 all-label and mixed-boundary controls; 3x3/3x4 symbolic trimming, not full census",
+      "seconds": 3.3331862499471754,
+      "peak_MiB": 61.375,
+      "input_sha256": {
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7",
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+      },
+      "source_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    "independent_execution": {
+      "checks": 281,
+      "fixtures": [
+        {
+          "triple": [
+            3,
+            1,
+            2
+          ],
+          "corner_equal_to_TL": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "mirror_TV": "2764753/79505712",
+          "center_formation": [
+            "88209/171526",
+            "1521/171526",
+            "20449/171526",
+            "20449/171526",
+            "20449/171526",
+            "20449/171526"
+          ],
+          "center_static": [
+            "81/146",
+            "1/146",
+            "8/73",
+            "8/73",
+            "8/73",
+            "8/73"
+          ]
+        },
+        {
+          "triple": [
+            5,
+            2,
+            4
+          ],
+          "corner_equal_to_TL": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "mirror_TV": "27302976973/1247845597614",
+          "center_formation": [
+            "3705625/10602722",
+            "116281/10602722",
+            "847602/5301361",
+            "847602/5301361",
+            "847602/5301361",
+            "847602/5301361"
+          ],
+          "center_static": [
+            "125/333",
+            "16/1665",
+            "256/1665",
+            "256/1665",
+            "256/1665",
+            "256/1665"
+          ]
+        },
+        {
+          "triple": [
+            2,
+            2,
+            1
+          ],
+          "corner_equal_to_TL": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "mirror_TV": "1709/28800",
+          "center_formation": [
+            "25/59",
+            "25/59",
+            "9/236",
+            "9/236",
+            "9/236",
+            "9/236"
+          ],
+          "center_static": [
+            "4/9",
+            "4/9",
+            "1/36",
+            "1/36",
+            "1/36",
+            "1/36"
+          ]
+        },
+        {
+          "triple": [
+            2,
+            2,
+            2
+          ],
+          "corner_equal_to_TL": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "mirror_TV": "0",
+          "center_formation": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ],
+          "center_static": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "elimination_schedules": 96,
+      "conditional_controls": 96,
+      "scope": "2x3 full exact marginals at four triples; 96 all-label and mixed-boundary controls; 3x3/3x4 symbolic trimming, not full census",
+      "seconds": 3.27170645899605,
+      "peak_MiB": 56.4375,
+      "input_sha256": {
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md": "f6e1354fcec1cdac53c1daa6c1f2250f30066bcc602e089b94a8214b0d890caf",
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+      },
+      "source_sha256": "2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc"
+    },
+    "note_only_final_rebinding": "Runner and numeric outputs identical; final cache refreshed after explanatory note changes; every declared input SHA verified against final staged source. No duplicate science execution needed.",
+    "syntax": "AST PASS",
+    "diff_check": "PASS",
+    "unstaged_paths": [],
+    "current_mutants": "None executed for8039; historical failure controls inspected; independent direct causal formula/boundary checks performed."
+  },
+  "findings": {
+    "F1": "fixed: canonical recovered controls, honest historical recovery and fresh bound cache"
+  },
+  "proof_obligations": "CONDITIONAL and closed at supplied positive symmetric six-state orbit rule/records-only rectangle scope, with standard countable probability extension and conditional-expectation convergence. No physical order/action/instrument selection.",
+  "lenses": {
+    "code": "PASS",
+    "physics": "BOUNDED",
+    "proof": "CONDITIONAL",
+    "imports": "DISCLOSED",
+    "nature_retention": "BOUNDED",
+    "no_go": "honest finite-family scope, N1\u2013N8 present; no universal no-go or fabricated exhaustive route claim",
+    "labeling": "PASS",
+    "governance": "source PASS; combined gate pending"
+  },
+  "full_pipeline_count": 0,
+  "combined_gate": "coordinator pending",
+  "findings_sha256": "f44757242914b17167e9747d1bd0d01ae0312190f23baf4c180f881244fc0204",
+  "verdict": "FINAL VERDICT: PASS",
+  "verdict_scope": "source only; no audit or landing authority"
+}

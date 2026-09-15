@@ -1,0 +1,46 @@
+{
+  "base": "87e358da4512e6c35ffd53afa4bf3d92ea1ca91d",
+  "source_head": "fa80dc6f3a12b1325b209fc27f60f8004bf77407",
+  "source_tree": "84bfc43585ac31178dac93ee5053ddcc56630592",
+  "heads": {
+    "8010": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e",
+    "8013": "fc49894fc09b33042752f69bf33d637955bee208",
+    "8016": "2343266be6c4faf3ba9112ec1cab56b00c471c52",
+    "8039": "96827c8023a008b5616464fe5d66369b8fa4424f"
+  },
+  "records": {
+    "skill-fix-review": {
+      "report_sha256": "8010906f93175b27cc6e5025993d1aa2b2ac76a9067a3e8cf3502937bc754f76",
+      "findings_sha256": "a2d1e8a7ce961faac7834bbe5b517822e0797353880502f52b92ef142c98228f",
+      "reviewer": "/root/backlog_topology",
+      "source_inputs_unchanged": true
+    },
+    "review-8010": {
+      "report_sha256": "d32af1d0236e01f5cb566782e88a050cf0f6455202764eb3967042c045802dc8",
+      "findings_sha256": "0750765a38e7246892364a097779bcd2faa3db9dc58fc7beca2f4889943986f6",
+      "reviewer": "/root/backlog_topology",
+      "source_inputs_unchanged": true
+    },
+    "review-8016": {
+      "report_sha256": "5c0c2aca6b51f06d0cb0544c200332cfc11c69fd7f8ccab1e08886a5516e1203",
+      "findings_sha256": "a5df977ac46e55d7052baca99f2cfc0f1b6c03fe6ea7b0e14c9f22ec71b913eb",
+      "reviewer": "/root/review_8011",
+      "source_inputs_unchanged": true
+    },
+    "review-8039": {
+      "report_sha256": "eb95f976d20f3417f25768ff0b1a9accc12a67c200e1ef0bfce5555392740771",
+      "findings_sha256": "f44757242914b17167e9747d1bd0d01ae0312190f23baf4c180f881244fc0204",
+      "reviewer": "/root/review_8011",
+      "source_inputs_unchanged": true
+    }
+  },
+  "source_commits": [
+    "3744dd9e39",
+    "177b9f8c8e",
+    "92d7c191c3",
+    "8059796611"
+  ],
+  "departure": "All ready compatible confirmed units; no wait for batch count",
+  "interaction_check": "Disjoint source paths. The gauge one-link spectral comparison, fixed finite Wilson slab, and formation plane law retain separate supplied models; no unit imports another new unit as a proof premise. All actual reviewed proof inputs unchanged. Pipeline fix changes manifest staging only, no evidence or claim logic.",
+  "generated_authority": "No PR-submitted generated audit outputs enrolled."
+}

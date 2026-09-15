@@ -1,0 +1,41 @@
+{
+  "direct_causal_complete_2x3_configurations": 46656,
+  "mirror_TV": "2764753/79505712",
+  "direct_causal_marginals": 4,
+  "center_boundary_controls": 72,
+  "fixtures": [
+    {
+      "triple": [
+        3,
+        1,
+        2
+      ],
+      "all_center_and_mixed_boundary_checks": "PASS"
+    },
+    {
+      "triple": [
+        5,
+        2,
+        4
+      ],
+      "all_center_and_mixed_boundary_checks": "PASS"
+    },
+    {
+      "triple": [
+        2,
+        2,
+        1
+      ],
+      "all_center_and_mixed_boundary_checks": "PASS"
+    },
+    {
+      "triple": [
+        2,
+        2,
+        2
+      ],
+      "all_center_and_mixed_boundary_checks": "PASS"
+    }
+  ],
+  "symbolic_nonconstant_identities": "PASS"
+}

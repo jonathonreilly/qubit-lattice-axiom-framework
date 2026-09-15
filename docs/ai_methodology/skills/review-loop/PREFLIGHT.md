@@ -87,7 +87,11 @@ seed edges you must intend.
 
 ## 6. Graph topology
 
-During the shared full validation pass, if the citation-graph delta gate
+Before the shared full validation pass, inspect the intended topology changes
+against the reviewed source. Use the skill's `--stage-citation-manifest` full-run
+option so stage 1b's generated acknowledgment reaches the index before stage 18;
+no separate pre-pipeline graph build or per-unit full run is needed.
+During that shared pass, if the citation-graph delta gate
 (stage 18 vs the tracked manifest, stage 1b) names nodes your change adds, removes, or rewires
 (rewiring surfaces as a changed node; read your source diff and the manifest
 diff for the edge identities): confirm each is intended, then acknowledge by

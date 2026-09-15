@@ -519,12 +519,18 @@ review-only flags contradict the drain's land-end-to-end contract).
    Check the final source-only delta against current main, including inherited
    science and all omitted/generated paths, before starting validation.
 
-   On the frozen integrated candidate, run one combined validation pass (or
-   reuse the identical successful receipt under the placement rule above):
+   On the frozen integrated candidate, first inspect the intended topology
+   changes against the reviewed source. Use the explicit full-run option below
+   to stage only the freshly generated citation-graph manifest immediately after
+   stage 1b; stage 18 checks the index, not the working-copy manifest. This avoids
+   a separate pre-pipeline graph build. The option cannot be combined with
+   `--verdict-only`; ordinary pipeline callers do not stage anything.
+   Run one combined validation pass (or reuse the identical successful receipt
+   under the placement rule above):
 
    ```bash
    TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
-   if ! { bash docs/audit/scripts/run_pipeline.sh \
+   if ! { bash docs/audit/scripts/run_pipeline.sh --stage-citation-manifest \
           && python3 docs/audit/scripts/audit_lint.py --strict \
           && python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main; }; then
      echo "FAILED: combined validation; preserve log and do not land" >&2
@@ -534,7 +540,11 @@ review-only flags contradict the drain's land-end-to-end contract).
 
    Restore only identified generated audit outputs under the Audit-System
    Compatibility Gate, regenerate the citation-graph manifest when required,
-   inspect its exact acknowledgment, and then run the final clean-state checks:
+   inspect its exact acknowledgment, and retain it in the final committed
+   integration sequence before freezing the landing tree. Do not strip this
+   intended acknowledgment with generated audit residue or leave it only staged:
+   the landing replay must reconstruct the validated tree. Then run the final
+   clean-state checks:
 
    ```bash
    TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate

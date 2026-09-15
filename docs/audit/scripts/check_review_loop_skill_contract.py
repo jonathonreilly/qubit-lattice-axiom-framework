@@ -34,7 +34,7 @@ python3 docs/audit/scripts/check_review_loop_skill_contract.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then"""
 TRAIN_VALIDATION_CONTEXT = """   TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
-   if ! { bash docs/audit/scripts/run_pipeline.sh \\
+   if ! { bash docs/audit/scripts/run_pipeline.sh --stage-citation-manifest \\
           && python3 docs/audit/scripts/audit_lint.py --strict \\
           && python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main; }; then
      echo "FAILED: combined validation; preserve log and do not land" >&2
@@ -320,7 +320,7 @@ COMMAND_RULES: dict[str, tuple[str, ...]] = {
     ),
     "command_unit_validation": (
         r"complete constituent\s+claim/content disposition map",
-        r"perform one full `docs/audit/scripts/run_pipeline\.sh`",
+        r"perform one full `docs/audit/scripts/run_pipeline\.sh --stage-citation-manifest`",
         r"do not require duplicate per-PR or per-unit full runs",
         r"no fixed\s+collection wait",
         r"Mark-ready is not PASS and still-draft PRs cannot\s+land",

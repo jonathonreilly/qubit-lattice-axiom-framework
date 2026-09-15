@@ -6,6 +6,10 @@
 # gate. The shell entry point repeats the complete checkpoint proof, so direct
 # callers cannot bypass eligibility with stale-but-present caches.
 #
+# ``--stage-citation-manifest`` is an explicit full-run integration option:
+# after topology review, acknowledge only the freshly generated manifest in the
+# index before stage 18. It never stages other generated audit outputs.
+#
 # This script is mechanical and deterministic. It does NOT perform any
 # audits — those are done by the current best Codex GPT model at maximum
 # reasoning (or any independent auditor)
@@ -54,16 +58,17 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
 PIPELINE_MODE="full"
+STAGE_CITATION_MANIFEST=0
 if [[ $# -gt 1 ]]; then
-  echo "usage: $0 [--verdict-only]" >&2
+  echo "usage: $0 [--verdict-only | --stage-citation-manifest]" >&2
   exit 2
 fi
 if [[ $# -eq 1 ]]; then
-  if [[ "$1" != "--verdict-only" ]]; then
-    echo "usage: $0 [--verdict-only]" >&2
-    exit 2
-  fi
-  PIPELINE_MODE="verdict-only"
+  case "$1" in
+    --verdict-only) PIPELINE_MODE="verdict-only" ;;
+    --stage-citation-manifest) STAGE_CITATION_MANIFEST=1 ;;
+    *) echo "usage: $0 [--verdict-only | --stage-citation-manifest]" >&2; exit 2 ;;
+  esac
 fi
 
 # Repeat the complete proof inside the shell entry point immediately before
@@ -99,6 +104,10 @@ if [[ "${PIPELINE_MODE}" == "full" ]]; then
 
   echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
   python3 docs/audit/scripts/write_citation_graph_manifest.py
+  if [[ "${STAGE_CITATION_MANIFEST}" == "1" ]]; then
+    # Stage 18 reads the index, not stage 1b's working-copy output.
+    git add -- docs/audit/data/citation_graph_manifest.json
+  fi
 
   echo "==> 1c/18 compute_load_bearing.py pre-seed topology refresh"
   # seed_audit_ledger.py consumes prior criticality when deciding whether a

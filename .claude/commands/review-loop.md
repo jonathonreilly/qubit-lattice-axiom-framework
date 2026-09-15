@@ -43,7 +43,7 @@ Mode selection:
    actual execution/attempt limits; never restamp evidence after an input change.
 5. Enforce audit-system compatibility without running the independent audit:
    no bare `retained` / `promoted` status lines. Run focused source/runner/
-   premise checks per unit; perform one full `docs/audit/scripts/run_pipeline.sh`,
+   premise checks per unit; perform one full `docs/audit/scripts/run_pipeline.sh --stage-citation-manifest`,
    `python3 docs/audit/scripts/audit_lint.py --strict`, and changed-evidence
    validation on the exact integrated current-main candidate. Reuse an identical
    successful base/tree receipt only under the skill's full provenance rule;

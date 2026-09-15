@@ -1,0 +1,19 @@
+{
+  "worktree": "/private/tmp/review-drain-20260915/train18",
+  "head": "0ded9940cb9fccaf5909d348ea2f03717879e666",
+  "archive": "/private/tmp/review-drain-20260915/train18-ignored-validation-recovery.tar.gz",
+  "archive_sha256": "668dafe0615b93fd8ad4615afc749e83c19608ac9e1c38881c27f799c926ebe1",
+  "files": {
+    "docs/audit/AUDIT_LEDGER.md": "01044d697ecf53e65005b26d62900c8c0052476c766ebf20efaa70b90617b32e",
+    "docs/audit/data/audit_ledger.json": "4fd4bd858762ec91b329e5987dda9cd13f401f09e9a80dd9dab052e1180de1bf",
+    "docs/audit/data/audit_publication_lane.json": "4aa2db28677f039982a0939a36f0913822ce0e07655777a4b5709c62a38822aa",
+    "docs/audit/data/audit_queue.json": "acc75a001959525d52272560ef87e3227325b2bab3fb65c3421f8fce9e9a74bf",
+    "docs/audit/data/citation_graph.json": "8c1aa1e1ce84ddac23e782766635840d7e2c8aef3a51184c70d70f200f0de6d8",
+    "docs/audit/data/ledger_cache_manifest.json": "bbab7bb260c5828f3fa3cb41c484535486415d37fa591367ead62bf71c068e96",
+    "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+    "docs/audit/data/runner_classification.json": "a9f93f01cf9870752e6ba1cccb7223d161cd7c908ea8805be1920658a2b8089b",
+    "docs/audit/data/static_pipeline_checkpoint.json": "d88ab8bf0cf4bb292d423cf64da62bfd176dd3ffe4761e41317b1d31f385b438",
+    "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "Verified exact recovery copy of completed run generated ignored artifacts; no audit authority applied. Source HEAD preserved remotely and locally."
+}

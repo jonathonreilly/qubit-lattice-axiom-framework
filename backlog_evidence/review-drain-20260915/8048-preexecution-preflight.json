@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8048",
+  "tree": "ed5dd33408eb1465ca32d082accf70d6d3562aa4",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_SIXTH_OFFDIAGONAL_SIGN_OBSTRUCTION_NOTE_2026-09-08.md",
+      "claim_id": "native_sixth_offdiagonal_sign_obstruction_note_2026-09-08",
+      "primary_runner": "scripts/native_sixth_offdiagonal_sign_obstruction_2026_09_08.py",
+      "helpers": [
+        "scripts/native_sixth_coefficients_2026_09_08.py",
+        "scripts/native_sixth_l4_2026_09_08.py",
+        "scripts/native_sixth_l6_2026_09_08.py",
+        "scripts/native_sixth_normalization_2026_09_08.py",
+        "scripts/native_sixth_seed_component_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_sixth_coefficients_2026_09_08.py",
+        "scripts/native_sixth_l4_2026_09_08.py",
+        "scripts/native_sixth_l6_2026_09_08.py",
+        "scripts/native_sixth_normalization_2026_09_08.py",
+        "scripts/native_sixth_seed_component_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_sixth_coefficients_2026_09_08.py",
+        "scripts/native_sixth_l4_2026_09_08.py",
+        "scripts/native_sixth_l6_2026_09_08.py",
+        "scripts/native_sixth_normalization_2026_09_08.py",
+        "scripts/native_sixth_seed_component_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8048-sixth-sign-evidence/kept/pr8048-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4324
+    },
+    "packet_imports": {
+      "hits": 8734,
+      "misses": 4322
+    },
+    "declared_inputs": {
+      "hits": 8774,
+      "misses": 4455
+    }
+  },
+  "record_sha256": "511d6988bfad087168c17747aef6b14259c541004b961f5235ee355829bd8cb5",
+  "checker_sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf"
+}

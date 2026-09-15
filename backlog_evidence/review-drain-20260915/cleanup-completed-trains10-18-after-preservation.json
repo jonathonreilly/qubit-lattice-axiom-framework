@@ -1,0 +1,56 @@
+[
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train10",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train10-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train11",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train11-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train12",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train12-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train13",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train13-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train14",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train14-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train15",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train15-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train16",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train16-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train17",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train17-ignored-validation-recovery.json"
+  },
+  {
+    "worktree": "/private/tmp/review-drain-20260915/train18",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery_manifest": "train18-ignored-validation-recovery.json"
+  }
+]

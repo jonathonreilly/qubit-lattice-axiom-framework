@@ -1,0 +1,21 @@
+{
+  "kind": "Original-reviewer explicit non-science publication dispositions",
+  "reviewer_session": "/root/review_8012",
+  "provisional_report": {
+    "path": "/private/tmp/review-drain-20260915/review-8048-provisional.json",
+    "sha256": "e66b72ff7489af58803e59d2e6e8a45b5d08f25567585ca5d186f81f4fbae5b0"
+  },
+  "source_tree": "ed5dd33408eb1465ca32d082accf70d6d3562aa4",
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8048-sixth-sign-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4",
+      "rationale": "Historical storage and review provenance only. No scientific assertion or historical PASS is adopted as current authority; complete current theorem/proof is in canonical note and original payloads remain recoverable through the independently anchored manifest."
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8048-sixth-sign-evidence/kept/pr8048-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "sha256": "9ad9edeb2cbfd48f55b0be4ca273ff9c221d7147103581e560e5eb90a51737c0",
+      "rationale": "Historical storage and review provenance only. No scientific assertion or historical PASS is adopted as current authority; complete current theorem/proof is in canonical note and original payloads remain recoverable through the independently anchored manifest."
+    }
+  ]
+}

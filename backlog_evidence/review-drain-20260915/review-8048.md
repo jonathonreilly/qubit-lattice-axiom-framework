@@ -1,0 +1,29 @@
+# PR8048 independent science review — FINAL VERDICT: PASS
+
+Original head `cdb5b89190f51b7a84b554a2a873fe420f8b86d0`, original incremental8044 parent `3e08a48f4a2f6e2c209dbda365c393f2f46f7145`; review base current main `5d3a910feb102c627e8a5b63269ce0728606c59c`.131 original paths:117 historical,13 canonical and one generated manifest. Full final note, six scripts, all original proof variants/independent methods/failed-search and failed-review history consumed. Original mathematical data match research/canonical/isolated payloads. Prior historical PASS labels confer no current authority.
+
+## Scientific closure
+
+No mathematical blocker. Balanced ice differences form alternating Eulerian supports; through degree six the only nonempty transitions are simple four- or six-cycles. A four-cycle correction repeats a cycle edge or adds one twice-used spoke/disjoint edge. Simplicity/bipartition excludes extra chords connecting two four-cycle vertices. There are exactly sixteen spokes, and both spoke occupations have equal coefficients. Disconnected canonical positive-overlap isometries factor, so no extensive disconnected offdiagonal correction remains.
+
+The graph-wave recurrence includes energy feedback. Positive-overlap normalization derives the forward metric similarity, while the generic noncommuting fixture discriminates its inverse without treating that fixture as native physics. Independent full spectral-projector idempotence/commutation recursion and symmetric Riesz sandwich reproduce all three native matrices through sixth order and the generic fourth coefficient. A subset-state dynamic program gives the six-cycle ratio −3/8 without enumerating the candidate's720 permutations. Exact arithmetic gives −3/2+16(−17/48)=−43/6; parent diagonal −1053N/40 is in the same canonical convention.
+
+The finite-volume contour bound is valid on |z|=U with D_Q≥2. It bounds the complex Riesz projection within1/3 of P, allows the analytic inverse-square-root branch and gives norm2U at coupling radius U/(4L). For real coupling this is the actual positive-overlap canonical column; no unjustified complex adjoint is used. Global edge parity is scalar on ice and supplies evenness of the whole compressed operator. The even Cauchy tail yields2^19 a^8/(3U^7); all three strict sufficient sign-window inequalities and margins are correct. These are analytical global finite-volume estimates, not executed dynamics or uniform thermodynamic bounds.
+
+All delivered L4, L6 and numerical-seed loop states, preparation and closures were independently reconstructed by coordinates, literal degrees and endpoint-based native phase action. Their four-transition products are−1. Every physical edge occurs evenly, so arbitrary real coupling signs cancel around the loop. Diagonal phases telescope and cannot make four nonzero entries all real nonpositive. The two-flip preparation establishes actual seed-component membership; no flux/component or ergodicity assumption is used. Zero-/one-flip failures are only the declared cube-loop template failures, not universal preparation minimality.
+
+Independent controls: `check8048/control.py` (0.074s) and `check8048/witness_control.py` (0.008s). No candidate imports. No numerical runner is offered as proof of the general support or analytic norm argument.
+
+## Author corrections requested
+
+Literal static five-helper execution preserving fresh ordered dataflow and outer deadline; own-note proofidentity helper pins; canonical cache link;3700 total distinguished as3698 mathematical plus two resource guards; historical subprocess mutation wording; analytical norm/sign-window versus finite execution N5; focused honest N1–N8 for the diagonal-phase obstruction. No calculation change requested. All corrected source/archive/input/cache bindings are now confirmed.
+
+The newly landed review-loop core `8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310` and same-revision references were read before this review. Corrected8044 science/history/premise bytes remain unchanged; its older methodology context is explicitly replaced for this new unit, not silently reused. The schema-v1 preexecution preflight passed against the frozen candidate. No full pipeline or audit verdict is performed here.
+
+## Final same-session confirmation
+
+Final staged tree `e17b8c95803340bad077290105562f46704b82f4` passes with the bounded claims above. The single actual canonical invocation passed3700/0 under180s, peak27.09375MiB and empty stderr. All mathematical fields equal the frozen original; the full cached stdout JSON equals the canonical primary output and all five refreshed helper outputs match its parts. The final primary, nine declared inputs, all helper proof pins and cache fingerprint match. Both actual resolvers find five helpers; Type is bounded_theorem.
+
+After the runner successfully wrote its canonical cache, the author's external receipt serializer failed on the tuple/Path return. The actual cache/header/stdout were preserved and recovered without rerunning science. Wrapper time is known only to the cache header's two decimals (0.41s); internal scientific timing0.339354666s is preserved. This reporting failure does not alter the executed source, output or mathematical checks; the recovery narrative is hash-bound.
+
+All131 original dispositions are explicit. All117 historical paths retain exact mode/blob/raw identity in the independently anchored compressed manifest;122 final paths are additions. Corrected8044 science/history and transitive premise bytes are unchanged. The only methodology context change is the already reviewed landed operational core used from the start of this new unit. Provisional reports remain immutable; the final report contains fresh output mappings. All three diff checks pass. No full pipeline, audit status or publication action occurred.

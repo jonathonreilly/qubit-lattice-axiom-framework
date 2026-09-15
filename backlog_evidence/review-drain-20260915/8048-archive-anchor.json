@@ -1,0 +1,12 @@
+{
+  "revision": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+  "prefix": ".claude/science/physics-loops/native-sixth-offdiagonal-sign-obstruction-20260908/",
+  "manifest_path": "/private/tmp/review-drain-20260915/unit8048-author-copy/docs/work_history/repo/review_feedback/pr8048-sixth-sign-evidence/archive-manifest.json",
+  "manifest_sha256": "4413a188cc7a9752d8ec88334f574b632b4892d3f6b71281cb17152c5a9ee162",
+  "original_inventory_verified": true,
+  "count": 117,
+  "keep_raw": [
+    "REVIEW_HISTORY.md"
+  ],
+  "consumer_scope": "Only canonical note historical entry link; entry has no Markdown links; no canonical runtime archive reads."
+}

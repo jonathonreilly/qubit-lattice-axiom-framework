@@ -1,0 +1,46 @@
+{
+  "pass": true,
+  "method": "Independent coordinate-edge endpoint/vertex reconstruction, direct lower incident occupation phase action, all delivered states/preparation and closed XOR transitions; no candidate import or flow/search rerun.",
+  "results": [
+    {
+      "kind": "l4",
+      "vertices": 64,
+      "full_states": 4,
+      "native_phases": [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "effective_product": -1,
+      "real_coupling_signs_cancel": true
+    },
+    {
+      "kind": "l6",
+      "vertices": 216,
+      "full_states": 4,
+      "native_phases": [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "effective_product": -1,
+      "real_coupling_signs_cancel": true
+    },
+    {
+      "kind": "seed_component",
+      "vertices": 216,
+      "full_states": 4,
+      "native_phases": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "effective_product": -1,
+      "real_coupling_signs_cancel": true
+    }
+  ],
+  "elapsed_sec": 0.008340083993971348
+}

@@ -1,0 +1,60 @@
+{
+  "pass": true,
+  "method": "Independent full spectral-projector idempotence/commutation recursion and symmetric compressed Riesz sandwich, reversed native edge ordering; six-cycle subset DP rather than720permutations; exact global-tail/sign-window arithmetic. No candidate imports.",
+  "native_rows": [
+    {
+      "spoke": false,
+      "bit": 0,
+      "H6": [
+        [
+          "-5/2",
+          "-3/2"
+        ],
+        [
+          "-3/2",
+          "-5/2"
+        ]
+      ]
+    },
+    {
+      "spoke": true,
+      "bit": 0,
+      "H6": [
+        [
+          "-97/24",
+          "-89/48"
+        ],
+        [
+          "-89/48",
+          "-97/24"
+        ]
+      ]
+    },
+    {
+      "spoke": true,
+      "bit": 1,
+      "H6": [
+        [
+          "-97/24",
+          "-89/48"
+        ],
+        [
+          "-89/48",
+          "-97/24"
+        ]
+      ]
+    }
+  ],
+  "six_cycle": "-3/8",
+  "generic_K4": [
+    [
+      "2",
+      "5/8"
+    ],
+    [
+      "5/8",
+      "1/4"
+    ]
+  ],
+  "elapsed_sec": 0.07408283394761384
+}

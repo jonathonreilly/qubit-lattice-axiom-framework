@@ -238,3 +238,16 @@ Lens (`GOAL_block10.md`): the "this is Theorem B" objection (different conclusio
 
 ## block 10 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
 1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note (main `7495de3076`), block 08's note (the stack's reviewed delta); block 09 and #8102 cited only. 2 cache/execution: PASS. 3 claim-scope honesty: PASS (no "certified"; names only under Prior art and Imports). 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS (obligation table; fail-closed literals; controls in the pack). 8: run at the gates. 9–11: PASS. 12: run before the PR.
+
+## block 11 — V1-V5 (supervisor, 2026-09-15)
+- V1: blocks 08, 09 and 10 (stacked) name "the third difference of `log K_3` is nonzero at every nonconstant triple" as their strongest missing lemma; the derivation campaign's assembly needs the interaction structure of the formation-law node.
+- V2: new — the complete exceptional locus (six points), the collapse-line explanation, the exact off-line pair with its quintic exchange, the two-body non-vanishing (X1), and the hypothesis map for blocks 08–10 (X4). Searched `origin/main` at `7495de3076` (record in `ROUTE_PORTFOLIO.md`): nothing classifies a normalizer term's zero set.
+- V3: yes — X1, X2, X4 proved in the note; X3 executed by exact elimination with every step a polynomial identity or an exact isolating interval; the open items (a structural reason for the off-line pair; `k ≥ 4`) named.
+- V4: yes — before: three notes conditioned on an unproved lemma; after: the lemma is settled (false at exactly five nonconstant points), the notes' three-body statements are unconditional off a finite explicit set, and their Markov-graph conclusions hold everywhere nonconstant.
+- V5: not a variant — no prior cycle computes a locus; the objects (an elimination basis over `Q`, algebraic points) are new to the campaign.
+
+## block 11 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block11.md`): the "one witness is not pair-additivity" objection (answered by the full test of all 16 numerators at every candidate), the "is `t*` a zero of every third difference" objection (answered by the three-letter collapse). Primary: the note and the runner (20 checks, 11 mutations). Refuting pass (`CHECKER_block11_findings.md`): the other elimination order (the resultant with exact interval exclusion of 20 of 25 candidate pairs), the direct enumeration on the `p = r` line, and the independent reductions of control F, all consistent; three drafting defects fixed (a refined-interval containment test that could not pass; method names outside the allowed sections; a forbidden token). Author checks only; independent review pending.
+
+## block 11 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 08's and block 10's notes (the stack's reviewed deltas). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the exceptional points are given as minimal polynomials and isolating intervals, numeric labels marked as such. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

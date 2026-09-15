@@ -149,3 +149,14 @@ source_review_correction:
 # strongest_unresolved_proof_obligation: "nonzero mixed differences at every nonconstant triple; infinite-volume laws for non-monotone classes"
 # next_exact_action: "queue refresh 2026-09-15 (block 10 opening): the region's boundary; strong coupling; a campaign handoff at the budget's end"
 # lock: held (campaign continues)
+
+# ---------------------------------------------------------------- block 11 close (2026-09-15)
+# block: 11
+# branch: physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915 (stacked on block 10, PR #8141)
+# pr_status: opened for review — PR «PR11» (base = block 10's branch); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=20 FAIL=0; 11 mutations, census 11/11 in-family; refuting pass consistent; gates: see HANDOFF.md"
+# seats: "supervisor-run: controls A, C-F -> contract with a lens pass -> primary (X1-X5, runner) -> refuting pass (other elimination order; exact enclosures) -> fold"
+# review_findings: "the three-body term vanishes at exactly six points up to scale: the constant rule; p=q=t* r (t^3-3t^2-6t-1); (1,rho) r and (rho,1) r (x^3-3x^2-15x-19); (sigma1,sigma2) r and its mirror (x^6-6x^5-3x^4+4x^3-3x^2-6x+31, p = psi(q)); the two-body term never vanishes at a nonconstant triple; the pair part survives at the five points; the declared triples are off the locus"
+# strongest_unresolved_proof_obligation: "a structural reason for the off-line pair; the loci for k >= 4"
+# next_exact_action: "queue refresh 2026-09-15 (block 11 opening): the region's boundary; strong coupling; the campaign handoff"
+# lock: held (campaign continues)

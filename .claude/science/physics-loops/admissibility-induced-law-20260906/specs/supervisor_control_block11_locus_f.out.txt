@@ -1,0 +1,8 @@
+distinct nonzero third-difference numerators (r = 1): 16
+(sigma_1, sigma_2, 1): p = psi(q) mod sextic: numerators not vanishing = 0 of 16  -> ON the pair-additive locus
+(t*, t*, 1): p = q mod t-cubic: numerators not vanishing = 0 of 16  -> ON the pair-additive locus
+(1, rho_1, 1): p = 1 mod rho-cubic: numerators not vanishing = 0 of 16  -> ON the pair-additive locus
+symmetry check of a numerator under p<->q (difference simplifies to 0): True
+(1, 1, 1): p = 1 mod (q - 1): numerators not vanishing = 0 of 16  -> ON the pair-additive locus
+declared triple (p,q)/r = (3/2, 1/2): nonzero numerators = 16 of 16
+declared triple (p,q)/r = (5/4, 1/2): nonzero numerators = 16 of 16

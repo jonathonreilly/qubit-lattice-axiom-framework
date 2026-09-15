@@ -159,3 +159,25 @@ the r>=1 ALT direction for positive matrices and outer trace exponent one.
 All complex diagonal phases are removed before its application. This is
 an imported standard matrix inequality with checked hypotheses, not an
 independent check of the whole new physics derivation.
+
+At 17:08 UTC remote main is b64cd9c7599a8149666506c65c3fa9bfe55442ee,
+fetched immutably without moving the shared tracking ref. No current clock,
+Villain, Gaussian, SCIENCE_WORKFLOW or premise source changed against afef263.
+Nine older native/campaign notes were newly integrated. Read the complete
+new axiom-sufficiency campaign planning note: it is a meta plan, explicitly
+not an all-axiom witness or axiom-update verdict. Other new native notes
+were listed but not fully read in this refresh. Read the review-loop skill
+diff: current supporting proof fragments need version-2 supporting_proofs
+relationships and full scientific review; they are not non-science exemptions.
+This is not a review-loop invocation or an audit verdict.
+
+Re-read the full prior BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT note at
+e3fc0b7707dce894ef98e7981a9feaf6041708f8, including the precise support graph.
+That graph matches the local footprint used in the new exclusion-operator
+identity: common electric endpoints and common magnetic four-cells.
+
+Jost-Schroer-Pohlmeyer and massless free-field characterization were searched
+as another possible route. Only routed theorem excerpts/abstracts were read;
+no tensor-field or contact-term theorem has been imported. Exact continuum
+covariance, OS hypotheses, rotational invariance and physical contact control
+would still have to be supplied for such a route.

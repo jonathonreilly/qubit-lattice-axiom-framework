@@ -222,3 +222,42 @@ singular matrices and a sharp rank-one case. Shared cochain code is declared;
 there is no independent review. Both x>=16384 give a conservative operator
 norm bound below 4.83e-34; beta512,N4096 is a fixed finite example, not a
 claimed phase window. Main freshness remains pinned at afef263.
+
+## Block 2: complete hard core in the loop family and its quadratic limit
+
+An exact auxiliary exclusion identity uses one norm-one nilpotent lowering
+operator per local occupied resource. Two components sharing a resource
+produce zero. The product-vector matrix element costs 2^|footprint| per
+component, and the physical support graph has footprint size <=3m. This
+linear mass cost fits the local activity reserve. No auxiliary resource
+dimension enters the trace estimate: both boundary vectors have norm one,
+and two boundary maps are Hilbert-Schmidt with the scalar sine norm.
+All exclusion operators commute. A scalar three-lines argument extends a
+coincident four-source bound to every source distribution, giving
+rho^(l-2) Tr(|L|^4 J^2). The latter trace is O(a^4) using order-six
+filling moments. Thus the all-length loop source remainder now retains
+actual complete support exclusion and the full same-species Gaussian.
+
+The two-source form gives C l^2 rho^(l-2) operator bounds. At each fixed
+length the spatial cycle has an absolute rooted Holder bound, so its
+quadratic coefficient has a continuous Fourier symbol. The geometric
+operator-norm sum preserves continuity. Cubic symmetry makes each species'
+zero-frequency symbol scalar; independent species sign reversal eliminates
+the cross quadratic coefficient in THIS loop family. The summed source
+functional therefore has a quadratic macroscopic limit. Neither its
+exponential's positivity nor its identification with a physical pressure
+is asserted. Residual mixed pairs, softened forest exclusions, branching,
+selected-state matching and the full physical law remain open.
+
+The finite exclusion/operator checks pass, including a nonzero six-cycle,
+all 35 four-source placements on four vertices, and actual cochain support
+adjacency. A projector substitution and a missing activity normalization
+are explicitly rejected. The physical beta=.5,N=3 fixture has boosted
+operator norm >1 and is only an identity test. Both x>=32768 give the
+separate analytic norm majorant below 3.862e-33; beta1024,N8192 is one
+fixed example, not a phase-window claim. No new independent review.
+
+Main freshness: b64cd9c7599a8149666506c65c3fa9bfe55442ee changes no relevant
+clock/Villain/Gaussian or premise source. The new axiom-sufficiency document
+was read fully and is a planning note, not an axiom verdict. Campaign
+deadline remains September16 01:45:03UTC; continue personally with no agents.

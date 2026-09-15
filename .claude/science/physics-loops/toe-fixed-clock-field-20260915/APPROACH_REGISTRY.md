@@ -35,3 +35,12 @@ a four-source Schatten inequality sums their non-Gaussian remainder over
 all lengths. Actual compatibility, residual mixed factors and branching
 remain. Next test an operator representation of support exclusions; do not
 replace them by an arbitrary bounded multiplier in a scalar trace estimate.
+
+Block2 follow-up: complete physical support exclusion now has an exact
+commuting-contraction representation with only a linear mass activity cost.
+It preserves all-length signed Gaussian-dressed loop source bounds. Their
+quadratic operators also sum and have continuous cubic symbols. Remaining
+F2 work is the graph family omitted by these loops, especially residual
+mixed pair factors, branching and the softened exclusions in the stable
+forest representation. Do not identify the restricted loop sum with the
+physical log characteristic functional.

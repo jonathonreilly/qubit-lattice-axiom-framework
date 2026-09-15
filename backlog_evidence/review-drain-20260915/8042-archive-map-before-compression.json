@@ -1,0 +1,352 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ABSOLUTE_PHASE_CORRECTION.diff",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ABSOLUTE_PHASE_CORRECTION.diff",
+    "sha256": "8c1234b20eb30a18afa1163538c46ea81f3b78fd8d6187ba241cdf953682a7f2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ARTIFACT_PLAN.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ARTIFACT_PLAN.md",
+    "sha256": "9af7da8149efe41c0096a0a7b0244ea23553371fb311faba4b23ac8315f27176"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "dae8140fd6213d5c030fd3d10b11484f1d599581fc86aa2b08fc3c8bf9cd4f31"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+    "sha256": "38d68056a8a813844af0918d91b5996401f19d416f4c9d0edb898a2a737bc2eb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/CANONICAL_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-CANONICAL_REVIEW.md",
+    "sha256": "0296cf08190e47107eeb72607b44fd13dd736b267a03f4c0ba2b3e7f5ada2a38"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "c33c2512dabe23165c4c304e4462fe89147939f62cc89d31ca08f461390b8864"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/DOMAIN_CONTROL_CONTRACT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-DOMAIN_CONTROL_CONTRACT.md",
+    "sha256": "ab2891388cd91b9f8c3c0a6c796e60ef9ba12957d0fb37d7c5e7862cbbf46695"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-GOAL.md",
+    "sha256": "66899c5a44f7918db3c8dbedac17533a2541b58cbce4da288351fe09caa95b86"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/GRAPH_BUILD.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_BUILD.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/GRAPH_BUILD.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_BUILD.stdout",
+    "sha256": "0bf58ef9e2e1092246561accc18d21ef47faa61833eb0395fc1f10d04dae1dec"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/GRAPH_DELTA.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_DELTA.json",
+    "sha256": "f9ad61a69fa720a00fb532489aacda961559172722749f31fec7b65bd67aab16"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/GRAPH_MANIFEST.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_MANIFEST.stdout",
+    "sha256": "5b1883276abcb7df9bd84790b3d26867cba252fe5bfb9650bfb3fd048da8e84f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/GRAPH_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-GRAPH_REVIEW.md",
+    "sha256": "8e99b00011ba7a47c986796f0b9aaf0567428fec8c413544125e954d8902fe71"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-HANDOFF.md",
+    "sha256": "2a004a1b330bdc5a55b18c877a0bd209dd8895055189699fa9e17ffb960f81f1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ISOLATED.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ISOLATED.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ISOLATED.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ISOLATED.stdout",
+    "sha256": "d51e43c6e131bf3c933cd2a0aee75c8f65937c8eab9e61a5bced25a6aa72ce81"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ISOLATED_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ISOLATED_CLOSURE.json",
+    "sha256": "e79eb967cf440c3b6619170219f7997a1bc54d64c8554fffc6ad31054348a6fb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/LITERATURE_BRIDGES.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-LITERATURE_BRIDGES.md",
+    "sha256": "0c783fbbe00eb8c05d00f60971c395b06e818857baaa96a282f361d0123c6de4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/LIVE.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/LIVE.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/LIVE.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/LIVE.stdout",
+    "sha256": "ff80ffac8a385b1ce6182c6fa0518b8896d1d7f37569f715eb1b3f8b6e81e8e8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/MUTATIONS.json",
+    "sha256": "82ecdd0968b5a54b2d5d6bc5faed7dd880bf6bbb2db766806791d66f905ba828"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/NO_GO_LEDGER.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-NO_GO_LEDGER.md",
+    "sha256": "13c53841fc316354264d06f5b23fdd3dd27bf9a7797b47b07d64e8c74e7e1fd8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/OPPORTUNITY_QUEUE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-OPPORTUNITY_QUEUE.md",
+    "sha256": "e6343e18896bf9dd36792c5976b48236aa265dec5588eefcc455b2ddd83a7af6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/PORT_NOTES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/PORT_NOTES.json",
+    "sha256": "baeb367eaf5600af97c366cc30d3196609ba9b62fa197d8bd144d1ac1a232bd0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/PORT_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/PORT_RECEIPT.json",
+    "sha256": "825db3b586cd3c96023ea6cd4573f9ed4e80d6b236f34df04f493a256885c049"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/PR_BACKLOG.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-PR_BACKLOG.md",
+    "sha256": "154d2e6139fedb1fcb2fe4ee04dcc982baff014ed3acd93c3f2949e90c2ced63"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-REVIEW_HISTORY.md",
+    "sha256": "9374832d32f1610c967eb511eaa3346ddf5a946adc7665171659d717bcba5058"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ROOT_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ROOT_REVIEW.md",
+    "sha256": "43303cd0051dd8666e466dce4209d1617e46f061879e3f14a703c57c99321ab8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/ROUTE_PORTFOLIO.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ROUTE_PORTFOLIO.md",
+    "sha256": "06959bd0c5acdf82c8d320f90abe0afc43b0c451847f83588631022f2ce7cde4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/SOURCE_FREEZE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/SOURCE_FREEZE.json",
+    "sha256": "7ec343380e3295d35efd068550f2f7a674ebbdf59dbbde3652c6cdf31e8618fe"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/STATE.yaml",
+    "sha256": "4daa62d92aaf02bf29e086b3b16e428c95807c390080ac9dc47acbad62732b47"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-TRACE_GATE.md",
+    "sha256": "b798f6ac5dbe464c84e22522805f8788481db2d6cdd889b72e4683744e2f2dfc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/WRAPPER_CONTROLS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/WRAPPER_CONTROLS.json",
+    "sha256": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/inputs/GLOBAL_D4_SEED.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/inputs/GLOBAL_D4_SEED.json",
+    "sha256": "f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/missing_hole_minus.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/missing_hole_minus.stderr",
+    "sha256": "03fa1a29fffd15b091d835f455a2c5243ea32462533bb7ddf6343b07a266e88b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/missing_hole_minus.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/missing_hole_minus.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/mutant_missing_hole_minus.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_missing_hole_minus.py",
+    "sha256": "14e9741dd6d18900ff2b44d168e4ea6f8ae79e2797543b67c561a1b9eb597d05"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/mutant_removed_no_double.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_removed_no_double.py",
+    "sha256": "28034ef4d8068f8cf7a6b45e2e3a4fcb0dbd9504fdc9d2d1db00d7b1e0b242a3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/mutant_wrong_absolute_basis_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_wrong_absolute_basis_phase.py",
+    "sha256": "04add28fbb0c1175dd857bafad61c33bad735454978387f5d5b1fa079cfdb8a2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/mutant_wrong_gauss_sign.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_wrong_gauss_sign.py",
+    "sha256": "9cc571eef75d08e4452a78a78f8be206ec6d31d04e1e24117c49781ecd1e9224"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/removed_no_double.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/removed_no_double.stderr",
+    "sha256": "da2c4aab4c2434b73d178cfdff01bb3c7b1a3018ce30ff61b21afa202b4fa47a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/removed_no_double.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/removed_no_double.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/wrong_absolute_basis_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_absolute_basis_phase.stderr",
+    "sha256": "c8025298eaf29ad1a82333c9100812392960a70d878a60de0ccff8819d0eead0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/wrong_absolute_basis_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_absolute_basis_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/wrong_gauss_sign.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_gauss_sign.stderr",
+    "sha256": "365032fe7c82e4d5eb21524845d84ae0e03d6037ca923986dd83e8251f7b0e29"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/mutations/wrong_gauss_sign.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_gauss_sign.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/global-D4-seed-provenance/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/global-D4-seed-provenance/pr8042-originals-global-D4-seed-provenance-DERIVATION.md",
+    "sha256": "830105ab1cece1c098928cc15c9ea344bb8e432a0556ff493041ddf1ae8c099b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/global-D4-seed-provenance/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/global-D4-seed-provenance/HASHES.json",
+    "sha256": "e6edd4faa67fef8b074e3ae05d317aab519d701c186e7280182d197117bea61c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/global-D4-seed-provenance/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/global-D4-seed-provenance/pr8042-originals-global-D4-seed-provenance-PREREGISTRATION.md",
+    "sha256": "88efb5370184170eef9c0eed9a65bf07e831c4acf3874a413e7a80a5df54e6cf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-cold-review/ABSOLUTE_CONTROL_SOURCE_REVIEW.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/ABSOLUTE_CONTROL_SOURCE_REVIEW.json",
+    "sha256": "80a872981c595ba88434df6b39ef53ebde55211d7f7546fd7a58304539e39cd5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-cold-review/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/HASHES.json",
+    "sha256": "12864d446e8a40451593e86781b475480b2e0836a38aa7e79da25e0ecb377aba"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-cold-review/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/pr8042-originals-native-low-charge-u1-cold-review-PREREGISTRATION.md",
+    "sha256": "2540e8a7bd212338e2be9e3ded7b4a781cf11b8f8c420097a62c2469b0a0a0a7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-cold-review/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/RESULT.json",
+    "sha256": "ad28544fe4f0e0b06062422287f8a3d79113ec0590c5b8abc67cb1c4d7917675"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/pr8042-originals-native-low-charge-u1-cold-review-REVIEW.md",
+    "sha256": "789063d64c1c449f4d9c19b4c364be8c4aa21d0e6380991aa3c25ceedd9d52ec"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-cold-review/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/check.py",
+    "sha256": "6cc843753cbc192d22a3c4bb5430a700f2d16085e06142fff3d7d3db8ea84d55"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/ABSOLUTE_PHASE_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/ABSOLUTE_PHASE_RESULT.json",
+    "sha256": "1280338cd684b963c2f9fdbe1ed9633357e31354f375cd2c9d5b082734f1b58d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/pr8042-originals-native-low-charge-u1-dictionary-DERIVATION.md",
+    "sha256": "a70724ba0ae48a66a7e416bbd5c6ee5d1eb5b56024a46c7989a633cd30dc4d51"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/DERIVATION_BEFORE_ABSOLUTE_PHASE_CORRECTION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/pr8042-originals-native-low-charge-u1-dictionary-DERIVATION_BEFORE_ABSOLUTE_PHASE_CORRECTION.md",
+    "sha256": "41f673ce3090b45ac11cf6b250dd8650efa4a211d48e0529fc66ee7cc753d835"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/HASHES.json",
+    "sha256": "08d0a831eccbd7f56c84032a9dcc313fa3949791e2533cb19bf14d45682518b5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/HASHES_BEFORE_ABSOLUTE_PHASE_CORRECTION.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/HASHES_BEFORE_ABSOLUTE_PHASE_CORRECTION.json",
+    "sha256": "da3a10dc513a6f99caa0f94a64f583f70a0240ced63aff9c407508ccddf160a4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/pr8042-originals-native-low-charge-u1-dictionary-PREREGISTRATION.md",
+    "sha256": "4898618ef05a16fc004a281373c5c3aad8ec566e87efa489053ee5704e45a6cd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/RESULT.json",
+    "sha256": "19a3cf541f06a813cbe4f79af31053b998263b0bbded95ed27ca3a152acb227d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/RESULT_BEFORE_ABSOLUTE_PHASE_CORRECTION.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/RESULT_BEFORE_ABSOLUTE_PHASE_CORRECTION.json",
+    "sha256": "19a3cf541f06a813cbe4f79af31053b998263b0bbded95ed27ca3a152acb227d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/absolute_phase_control.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/absolute_phase_control.py",
+    "sha256": "fdcbfe9919422becce6b5c88899c155989ba2f39fd63a774655ce5de78e80a23"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-dictionary/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/check.py",
+    "sha256": "c7170e7527981a3eba867c23832c343a283b9dc1bf46e8823d501cf4606ec947"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-prior-art/COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/pr8042-originals-native-low-charge-u1-prior-art-COMPARISON.md",
+    "sha256": "c3011a922d0687cf6ac45fcdd46904b26269b5624b1f798c7f9add5c470f483b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-prior-art/CONTROLS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/CONTROLS.json",
+    "sha256": "e526610508c5e6c7703b3fc639bfaa5630d6a128c6eb2b158945d6d55db7b1a2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-prior-art/CONTROL_CONTRACT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/pr8042-originals-native-low-charge-u1-prior-art-CONTROL_CONTRACT.md",
+    "sha256": "62b523b1d95be225cd519377bb14c4623add17af31b0bdc1c5f722ed373d8203"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-prior-art/PR8038_SOURCE_READ.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/pr8042-originals-native-low-charge-u1-prior-art-PR8038_SOURCE_READ.md",
+    "sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-low-charge-u1-dictionary-20260908/originals/native-low-charge-u1-prior-art/SOURCE_COVERAGE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/SOURCE_COVERAGE.json",
+    "sha256": "e97fe5025a3a2a6241196c5b4faf9dda288cab7b0a9d866ab636ddedc87bd259"
+  }
+]

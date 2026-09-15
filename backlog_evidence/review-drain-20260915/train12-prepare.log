@@ -1,0 +1,76 @@
+[detached HEAD 75e3cf3fa5] Integrate independently reviewed bounded clock results from PR8129
+ Date: Tue Sep 15 09:15:50 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1005 insertions(+)
+ create mode 100644 docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt
+ create mode 100644 scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py
+[detached HEAD c7f1f13094] Integrate independently reviewed bounded clock results from PR8130
+ Date: Tue Sep 15 09:15:50 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 2919 insertions(+)
+ create mode 100644 docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/FINITE_CLOCK_LOGARITHMIC_MAXWELL_SCALING_AND_GLOBAL_DEFECT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.txt
+ create mode 100644 logs/runner-cache/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.txt
+ create mode 100644 scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py
+ create mode 100644 scripts/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.py
+[detached HEAD 8533ef1a4a] Integrate reviewed finite clock results from PR8131
+ Date: Tue Sep 15 09:19:43 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 897 insertions(+)
+ create mode 100644 docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.txt
+ create mode 100644 scripts/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.py
+[detached HEAD 8727f7a1b7] Integrate reviewed finite clock results from PR8132
+ Date: Tue Sep 15 09:19:43 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 908 insertions(+)
+ create mode 100644 docs/FINITE_CLOCK_CONDITIONAL_GAUSSIAN_MIXTURE_WARD_RESIDUAL_AND_HAAR_QUADRATURE_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.txt
+ create mode 100644 scripts/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.py
+FROZEN 8727f7a1b764dcfd0dc593f94e1dbdc7811a7fa9 sources 15 inputs 22 notes 5

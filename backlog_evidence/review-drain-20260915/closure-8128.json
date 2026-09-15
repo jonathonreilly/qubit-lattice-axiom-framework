@@ -1,0 +1,24 @@
+{
+  "pr": 8128,
+  "original_head": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+  "branch": "physics-loop/principal-flux-transfer-20260914",
+  "landing": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/principal-flux-transfer-20260914",
+    "headRefOid": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8128,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+    "state": "CLOSED"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "base": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "source_head": "8727f7a1b764dcfd0dc593f94e1dbdc7811a7fa9",
+  "source_tree": "6274ee1ec9ca844478c9d1d7f6adb28ff63c950b",
+  "heads": {
+    "8129": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+    "8130": "7656dcdb01f32b3d47ecbcda04c89cb3b03996f0",
+    "8131": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+    "8132": "20866d4606e9fd519cff663028f554d42b2b1013"
+  },
+  "source_owners": {
+    "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": "review-8129",
+    "logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt": "review-8129",
+    "scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py": "review-8129",
+    "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "review-8130",
+    "docs/FINITE_CLOCK_LOGARITHMIC_MAXWELL_SCALING_AND_GLOBAL_DEFECT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-14.md": "review-8130",
+    "logs/runner-cache/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.txt": "review-8130",
+    "logs/runner-cache/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.txt": "review-8130",
+    "scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py": "review-8130",
+    "scripts/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.py": "review-8130",
+    "docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md": "review-8131",
+    "logs/runner-cache/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.txt": "review-8131",
+    "scripts/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.py": "review-8131",
+    "docs/FINITE_CLOCK_CONDITIONAL_GAUSSIAN_MIXTURE_WARD_RESIDUAL_AND_HAAR_QUADRATURE_BOUNDED_THEOREM_NOTE_2026-09-14.md": "review-8132",
+    "logs/runner-cache/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.txt": "review-8132",
+    "scripts/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.py": "review-8132"
+  },
+  "inputs": {
+    "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": "b09dff36b0032b9ae1e7c6fae72f3ba8a457b4031495b1bc8b374152ff1784b6",
+    "logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt": "a0c5026f30dfa0460a3717acfc0e8c999c7784a393a629a798a73b7decb0c05e",
+    "scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py": "0ed013c81d5a8788767be3f18cf34b28e3ac04686306431546f9ec1720bb9a76",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "f65c7cdf9af62fdb14a91695bac6ec1a6c9ebcc64012009a60227577602a023f",
+    "docs/FINITE_CLOCK_LOGARITHMIC_MAXWELL_SCALING_AND_GLOBAL_DEFECT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-14.md": "b319c08696d697239b5630144d7ac09f3fa3f839ac248f9c696a1060bf1142dd",
+    "logs/runner-cache/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.txt": "6aacda5ba945aeb1d8267eaa75be99e31163b6981f3c0c8fdab2dc6bdce87317",
+    "logs/runner-cache/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.txt": "a7e9bbea65b5460f71794d5edd96f84f003e06714e5311969cb87331ec10f61d",
+    "scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py": "ec590b5791e5bfc460c40c21eaab78608bfa39f6ed1a9b9d2fef1692f1db5aa6",
+    "scripts/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.py": "62bb39b7e6d2f48136aab234553fccb23f534230a76b8bfec98d3ac1dd136dbc",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/FREE_FIELD_LATTICE_TO_CONTINUUM_GAUSSIAN_MEASURE_BOUNDED_NOTE_2026-05-30.md": "748b88e4a304ef66c7f1e128bfe9cbf7db0c29569a0880601cee66159182cf1e",
+    "docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md": "67ae7180b90cbc349101525c65690d00c0db3b2069ef2f830c4d27836e02015e",
+    "logs/runner-cache/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.txt": "8c4c5f3f39d8e7a33bf93c77bd4928c186d1e9765ca955285ad1b006c593bd37",
+    "scripts/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.py": "1bc7a9cb5c8040eb95e107102ee1025dcbce324c25aa6f83a2eda0127ac7d9cf",
+    "docs/FINITE_CLOCK_CONDITIONAL_GAUSSIAN_MIXTURE_WARD_RESIDUAL_AND_HAAR_QUADRATURE_BOUNDED_THEOREM_NOTE_2026-09-14.md": "37adda2107d7a6c0661720aecdd2b07e9e7c78d96e5a5389c432d704ae5209f8",
+    "logs/runner-cache/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.txt": "56b6f0522e2ffb10d92e3ed5e322ecc5cb62ba1a72fac838fc7209b3c23082cb",
+    "scripts/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.py": "2837b21ef0d07127577acd15ba478083307a24976a777a6dbb835997b4dcd868"
+  },
+  "review_evidence_hashes": {
+    "review-8129.md": "3dafc19b0cb53ec7eb1b0af91c4338b9598363adfd49f4dacb665a8ec1ea14d4",
+    "review-8129.json": "37f519b023529c0634de164641449256ca6a00bda5132c675e5e2da1ca8cf846",
+    "review-8130.md": "9b9799777a9861b0b11b7ab6f7d0beb22ec6cd1f94e1e2afc1dff405656ecd53",
+    "review-8130.json": "fb6c2b6e52901842e842097736ec966333cfbe474b3911e976970f5c8195c74f",
+    "review-8131.md": "cb2039e2cfcf4dac26fb9721c2e2d4cc81c3f2e0b90beaa3a8534a06b24e4006",
+    "review-8131.json": "37a42e8423f906bfe2515591f077a02d0834fc1268f2e86a8f27f7ef3c196ba4",
+    "review-8132.md": "ad1593374be399dc70cd08510a012f0cda0eac3cf4ebcdff38f52fe6302bf2c1",
+    "review-8132.json": "e483ec9266b10f0cd77436ce9aff3a53f9d3831627d7ca1bf009932ccc21e62d"
+  },
+  "dependency_expectations": {
+    "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8129.json",
+      "reason": "Self-contained supplied clock Hamiltonian and direct graded-interaction/ground-limit proofs. PR8123/8128/campaign references are context only, no theorem or audit authority imported."
+    },
+    "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8130.json",
+      "reason": "Direct source self-contained. Logarithmic source consumes complete same-unit direct source via actual Markdown link; its hash is bound here. No runners read scientific files or helpers. Current main8127 is contextual comparison only, not a proof premise."
+    },
+    "docs/FINITE_CLOCK_LOGARITHMIC_MAXWELL_SCALING_AND_GLOBAL_DEFECT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "required_claim_ids": [
+        "finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_bounded_theorem_note_2026-09-14"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_bounded_theorem_note_2026-09-14",
+          "graph_id": "finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_bounded_theorem_note_2026-09-14",
+          "source_path": "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "sha256": "f65c7cdf9af62fdb14a91695bac6ec1a6c9ebcc64012009a60227577602a023f"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8130.json",
+      "reason": "Direct source self-contained. Logarithmic source consumes complete same-unit direct source via actual Markdown link; its hash is bound here. No runners read scientific files or helpers. Current main8127 is contextual comparison only, not a proof premise."
+    },
+    "docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8131.json",
+      "reason": "Self-contained supplied finite-clock image kernel and conditional OS theorem; no repository theorem or runtime scientific input. Driver1987 is context only, its actual closed-test current theorem checked."
+    },
+    "docs/FINITE_CLOCK_CONDITIONAL_GAUSSIAN_MIXTURE_WARD_RESIDUAL_AND_HAAR_QUADRATURE_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8132.json",
+      "reason": "Self-contained finite supplied-model mathematics; actual repo citations empty, no scientific files or helpers loaded. Primitive authorities are unchanged context only."
+    }
+  },
+  "cheap_preflight": {
+    "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "primary_runner": "scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [],
+      "required_claim_ids": []
+    },
+    "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "primary_runner": "scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [],
+      "required_claim_ids": []
+    },
+    "docs/FINITE_CLOCK_LOGARITHMIC_MAXWELL_SCALING_AND_GLOBAL_DEFECT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "primary_runner": "scripts/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "required_claim_ids": [
+        "finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_bounded_theorem_note_2026-09-14"
+      ]
+    },
+    "docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "primary_runner": "scripts/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [],
+      "required_claim_ids": []
+    },
+    "docs/FINITE_CLOCK_CONDITIONAL_GAUSSIAN_MIXTURE_WARD_RESIDUAL_AND_HAAR_QUADRATURE_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "primary_runner": "scripts/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [],
+      "required_claim_ids": []
+    }
+  },
+  "units": [
+    "8129",
+    "8130",
+    "8131",
+    "8132"
+  ],
+  "departure": "Four ready coherent units depart immediately after train11 landing; no timer.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match."
+}

@@ -1,0 +1,24 @@
+{
+  "pr": 8127,
+  "original_head": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+  "branch": "physics-loop/periodic-clock-covariance-20260914",
+  "landing": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/periodic-clock-covariance-20260914",
+    "headRefOid": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8127,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+    "state": "CLOSED"
+  }
+}

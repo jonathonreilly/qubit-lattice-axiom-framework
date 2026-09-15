@@ -1,6 +1,6 @@
 {
- "edge_count": 13407,
- "node_count": 5836,
+ "edge_count": 13411,
+ "node_count": 5839,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12402,6 +12402,10 @@
    "deps_hash": "902cbaf48a4c",
    "out_degree": 4
   },
+  "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "f52127449f6a",
+   "out_degree": 4
+  },
   "local_parity_exchange_carrier_recurrent_bell_cycle821_bounded_theorem_note_2026-07-30": {
    "deps_hash": "b7437e336fa1",
    "out_degree": 4
@@ -22315,6 +22319,14 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8098-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8099-evidence.kept.pr8099-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8099-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

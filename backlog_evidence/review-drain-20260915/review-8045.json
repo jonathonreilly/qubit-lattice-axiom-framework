@@ -1,0 +1,1396 @@
+{
+  "source_verdict": "FINAL VERDICT: PASS",
+  "original_head": "31abab83cbec35bac1ad69db1e3e82d1f8e92447",
+  "original_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+  "review_base": "129e68850945ec48bfbb7ff9289312a26968066d",
+  "candidate": "/private/tmp/review-drain-20260915/unit8045-author-copy",
+  "candidate_HEAD": "129e68850945ec48bfbb7ff9289312a26968066d",
+  "staged_tree": "e39ddb4ab0bcf1ed0e549f2756253262eedea2b6",
+  "original_path_dispositions": {
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ARTIFACT_PLAN.md": {
+      "original_sha256": "72af0f0032e86e029f86e3836f61562abd3930aef7d00092caa8820dcd57b4d6",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ARTIFACT_PLAN.md",
+      "final_sha256": "72af0f0032e86e029f86e3836f61562abd3930aef7d00092caa8820dcd57b4d6",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ASSUMPTIONS_AND_IMPORTS.md": {
+      "original_sha256": "c39308cb837b36e46157c1869cae55663b7e0a31445ec5891bc138a225d724f7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "c39308cb837b36e46157c1869cae55663b7e0a31445ec5891bc138a225d724f7",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/AUTHOR_VERIFICATION_DRIVER.py": {
+      "original_sha256": "03d51cada5d70e0e7c74ad5bd4e935e79ae7cc1a2bd98e94a2aab28c621aafde",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+      "final_sha256": "03d51cada5d70e0e7c74ad5bd4e935e79ae7cc1a2bd98e94a2aab28c621aafde",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/CLAIM_STATUS_CERTIFICATE.md": {
+      "original_sha256": "36fb4667234a46b80ca4994df422fea9a310bb5e1e130f272533fa0693852075",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "36fb4667234a46b80ca4994df422fea9a310bb5e1e130f272533fa0693852075",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/CONTROL_CONTRACT.md": {
+      "original_sha256": "c826ed3538ec7ba6f8c3817814ddb01fda6c086bb2dde6cba3502eea651f8646",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-CONTROL_CONTRACT.md",
+      "final_sha256": "c826ed3538ec7ba6f8c3817814ddb01fda6c086bb2dde6cba3502eea651f8646",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/GOAL.md": {
+      "original_sha256": "0722c7ca38cdb93b29338d9a9117007d8a511b13d3be1770b1a1542d10a4d950",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-GOAL.md",
+      "final_sha256": "0722c7ca38cdb93b29338d9a9117007d8a511b13d3be1770b1a1542d10a4d950",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/GRAPH_BUILD.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_BUILD.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/GRAPH_BUILD.stdout": {
+      "original_sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_BUILD.stdout",
+      "final_sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/GRAPH_DELTA.json": {
+      "original_sha256": "693059acfbdc19eae2fd0c1922c7bac495fa9a96e6daa89686ce3e87db7898c9",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_DELTA.json",
+      "final_sha256": "693059acfbdc19eae2fd0c1922c7bac495fa9a96e6daa89686ce3e87db7898c9",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/GRAPH_MANIFEST.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_MANIFEST.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/GRAPH_MANIFEST.stdout": {
+      "original_sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_MANIFEST.stdout",
+      "final_sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/HANDOFF.md": {
+      "original_sha256": "4e8f93081ad72f90495abc9868c6a151d16c597b266c4f3207c9f754df38c107",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-HANDOFF.md",
+      "final_sha256": "4e8f93081ad72f90495abc9868c6a151d16c597b266c4f3207c9f754df38c107",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ISOLATED.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ISOLATED.stdout": {
+      "original_sha256": "89887e78abf7a8e17df0d8489b81cbfdd4add988395af4a07b0b7ae228d267e5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED.stdout",
+      "final_sha256": "89887e78abf7a8e17df0d8489b81cbfdd4add988395af4a07b0b7ae228d267e5",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ISOLATED_CLOSURE.json": {
+      "original_sha256": "61c6f30813837bc3a7941cc5be9cd035de6aa7566b1b53276c0aff203d27aaca",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED_CLOSURE.json",
+      "final_sha256": "61c6f30813837bc3a7941cc5be9cd035de6aa7566b1b53276c0aff203d27aaca",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/LITERATURE_BRIDGES.md": {
+      "original_sha256": "5a2c3cfb3a93bcca26f5542a6292f12248727742b2a58882ef77113a0c305888",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-LITERATURE_BRIDGES.md",
+      "final_sha256": "5a2c3cfb3a93bcca26f5542a6292f12248727742b2a58882ef77113a0c305888",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/LIVE.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/LIVE.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/LIVE.stdout": {
+      "original_sha256": "cc831bfcf683d77e8591642f2732bffb153b18ef75208a054426d8670ed83dce",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/LIVE.stdout",
+      "final_sha256": "cc831bfcf683d77e8591642f2732bffb153b18ef75208a054426d8670ed83dce",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/MUTATIONS.json": {
+      "original_sha256": "6039436e4340cc55d62a6ff8983c8ca6205fa26b3f2d1d83a6a53f660d9de268",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/MUTATIONS.json",
+      "final_sha256": "6039436e4340cc55d62a6ff8983c8ca6205fa26b3f2d1d83a6a53f660d9de268",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/MUTATION_COVERAGE_CORRECTION.md": {
+      "original_sha256": "078dc1d05cbe70e9cdda797c54f251dfabc1dbce9029679f8b6c91c45e8d431e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-MUTATION_COVERAGE_CORRECTION.md",
+      "final_sha256": "078dc1d05cbe70e9cdda797c54f251dfabc1dbce9029679f8b6c91c45e8d431e",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/NO_GO_LEDGER.md": {
+      "original_sha256": "4c8f4009800db13ec4ba4315464a036a574c29419fdf20ebfbb5130bea4f0475",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-NO_GO_LEDGER.md",
+      "final_sha256": "4c8f4009800db13ec4ba4315464a036a574c29419fdf20ebfbb5130bea4f0475",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/OPPORTUNITY_QUEUE.md": {
+      "original_sha256": "de39b6fb268aa59024303c3cf2a6d4408c51bd658b1010871c40f5e215e4627e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-OPPORTUNITY_QUEUE.md",
+      "final_sha256": "de39b6fb268aa59024303c3cf2a6d4408c51bd658b1010871c40f5e215e4627e",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/PORT_RECEIPT.json": {
+      "original_sha256": "e136533bb9cd3eac973cb731efd35699b33b6931a90ab522804f66bd04434548",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/PORT_RECEIPT.json",
+      "final_sha256": "e136533bb9cd3eac973cb731efd35699b33b6931a90ab522804f66bd04434548",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/PR_BACKLOG.md": {
+      "original_sha256": "73fd2ad92c5fcb1a4123d0ace5919b10d8b765aea3594b858012b08967507d1b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-PR_BACKLOG.md",
+      "final_sha256": "73fd2ad92c5fcb1a4123d0ace5919b10d8b765aea3594b858012b08967507d1b",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/REVIEW_HISTORY.md": {
+      "original_sha256": "0b48d15453cad3af12473045f6e9c858086adc9a22e70fb472dc5014207ab01b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-REVIEW_HISTORY.md",
+      "final_sha256": "0b48d15453cad3af12473045f6e9c858086adc9a22e70fb472dc5014207ab01b",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ROOT_CANONICAL_REVIEW.md": {
+      "original_sha256": "319685bd364ed4a614345f931917b788033cea3fd15edca53cc7d79233182d31",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ROOT_CANONICAL_REVIEW.md",
+      "final_sha256": "319685bd364ed4a614345f931917b788033cea3fd15edca53cc7d79233182d31",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/ROUTE_PORTFOLIO.md": {
+      "original_sha256": "d80117ef432ce7efdf6be87fbb4b8844d4b286d8999e9105b0029799485b58a0",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ROUTE_PORTFOLIO.md",
+      "final_sha256": "d80117ef432ce7efdf6be87fbb4b8844d4b286d8999e9105b0029799485b58a0",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/SOURCE_FREEZE.json": {
+      "original_sha256": "529f497f1b1a9458d4dbaad493522610640aec187dcb1db844a64e820b1bc940",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/SOURCE_FREEZE.json",
+      "final_sha256": "529f497f1b1a9458d4dbaad493522610640aec187dcb1db844a64e820b1bc940",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/STATE.yaml": {
+      "original_sha256": "6299267b9480372c95f6ead24bf030fbddbb070515618a91133ec86b356fe4cf",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/STATE.yaml",
+      "final_sha256": "6299267b9480372c95f6ead24bf030fbddbb070515618a91133ec86b356fe4cf",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/TRACE_GATE.md": {
+      "original_sha256": "23ae54493b9c839621aaad41af21ac7260208027e43f1b71000b2272f6d5bc3c",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-TRACE_GATE.md",
+      "final_sha256": "23ae54493b9c839621aaad41af21ac7260208027e43f1b71000b2272f6d5bc3c",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/WRAPPER_CONTROLS.json": {
+      "original_sha256": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/WRAPPER_CONTROLS.json",
+      "final_sha256": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/bare_X_instead_native.stderr": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/bare_X_instead_native.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/bare_X_instead_native.stdout": {
+      "original_sha256": "586d97fc98561b097d87900e3125fd11a09614ba7980217e20c92ef6e3ad2cac",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/bare_X_instead_native.stdout",
+      "final_sha256": "586d97fc98561b097d87900e3125fd11a09614ba7980217e20c92ef6e3ad2cac",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/missing_folded_term.stderr": {
+      "original_sha256": "42df10f3eeb8472891765f5604f18ea93ebbea60d252d9a81de1e6d5b5ca17f8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/missing_folded_term.stderr",
+      "final_sha256": "42df10f3eeb8472891765f5604f18ea93ebbea60d252d9a81de1e6d5b5ca17f8",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/missing_folded_term.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/missing_folded_term.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/mutant_bare_X_instead_native.py": {
+      "original_sha256": "b0a157011071d9cc29a4a4693d16428e97493a8ea8a47409874e8c80befad6cd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_bare_X_instead_native.py",
+      "final_sha256": "b0a157011071d9cc29a4a4693d16428e97493a8ea8a47409874e8c80befad6cd",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/mutant_missing_folded_term.py": {
+      "original_sha256": "3b10bd779e8384c8f9085f920ed1939c5b3e15a04ba4a9ca915cc4d465cbc1e1",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_missing_folded_term.py",
+      "final_sha256": "3b10bd779e8384c8f9085f920ed1939c5b3e15a04ba4a9ca915cc4d465cbc1e1",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/mutant_wrong_harmonic_input_sign.py": {
+      "original_sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_wrong_harmonic_input_sign.py",
+      "final_sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/mutant_wrong_homological_sign.py": {
+      "original_sha256": "dc08a29e3b55ed9180b149b308cc65e747e2d0fc436a94fc31f1efbf0bcd0897",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_wrong_homological_sign.py",
+      "final_sha256": "dc08a29e3b55ed9180b149b308cc65e747e2d0fc436a94fc31f1efbf0bcd0897",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stderr": {
+      "original_sha256": "ccf1a856336559fa6524e786d48d3e8e3762b18c0aa9c8782ffb9f6f0059adb5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stderr",
+      "final_sha256": "ccf1a856336559fa6524e786d48d3e8e3762b18c0aa9c8782ffb9f6f0059adb5",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/wrong_homological_sign.stderr": {
+      "original_sha256": "d6dbc7b30dc1359b77d1509e8313e7005ad2c233b8b558cbd92e4879ecc31ebc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_homological_sign.stderr",
+      "final_sha256": "d6dbc7b30dc1359b77d1509e8313e7005ad2c233b8b558cbd92e4879ecc31ebc",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/mutations/wrong_homological_sign.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_homological_sign.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.json": {
+      "original_sha256": "c8ea712ab890d7f0e564d022d5578eb2b7bd5709cb1883bff1811fe9f52214d9",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.json",
+      "final_sha256": "c8ea712ab890d7f0e564d022d5578eb2b7bd5709cb1883bff1811fe9f52214d9",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.py": {
+      "original_sha256": "0b98182977acf2540421509f0814025309f6dce2e50c51e4c6e859d00a18b920",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.py",
+      "final_sha256": "0b98182977acf2540421509f0814025309f6dce2e50c51e4c6e859d00a18b920",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/before-absolute-fourth-control/native_local_ring_matrix_2026_09_08.py": {
+      "original_sha256": "a4bfa6fc63fdba7165b01e941ee33ef6b1fd64ad928210c8c51079e469bd578a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_ring_matrix_2026_09_08.py",
+      "final_sha256": "a4bfa6fc63fdba7165b01e941ee33ef6b1fd64ad928210c8c51079e469bd578a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/independent-canonical-review/GRAPH_CONFIRMATION.md": {
+      "original_sha256": "cda981a591164c7ab8ad54d700c6c4875651b5c0f0480cc1ee303d54fe1a0fd9",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/pr8045-independent-canonical-review-GRAPH_CONFIRMATION.md",
+      "final_sha256": "cda981a591164c7ab8ad54d700c6c4875651b5c0f0480cc1ee303d54fe1a0fd9",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/independent-canonical-review/READ_HASHES.json": {
+      "original_sha256": "27dcf047f0070c5848b7d3862ead152dd902b47c26db380fd30fc427bd702e9e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/READ_HASHES.json",
+      "final_sha256": "27dcf047f0070c5848b7d3862ead152dd902b47c26db380fd30fc427bd702e9e",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/independent-canonical-review/REVIEW.md": {
+      "original_sha256": "74000ef3645518b4771dedcf48079a4afedfd0adccd188be3e58b96329c66dfd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/pr8045-independent-canonical-review-REVIEW.md",
+      "final_sha256": "74000ef3645518b4771dedcf48079a4afedfd0adccd188be3e58b96329c66dfd",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/bare_X_instead_native.stderr": {
+      "original_sha256": "02d23c936b7f9c9bab07e45ad27ac66d4b75877e1a80145fa5083b21fd2915c5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/bare_X_instead_native.stderr",
+      "final_sha256": "02d23c936b7f9c9bab07e45ad27ac66d4b75877e1a80145fa5083b21fd2915c5",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/bare_X_instead_native.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/bare_X_instead_native.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/missing_folded_term.stderr": {
+      "original_sha256": "fecb8587334ed32fc4a782cd8ebc33c8a9e88acb2ef3c713acb8fb2764e77875",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/missing_folded_term.stderr",
+      "final_sha256": "fecb8587334ed32fc4a782cd8ebc33c8a9e88acb2ef3c713acb8fb2764e77875",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/missing_folded_term.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/missing_folded_term.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/mutant_bare_X_instead_native.py": {
+      "original_sha256": "a7715551c300b78370a5a74febba0984601d678e45c88c750f14ad91058054f2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_bare_X_instead_native.py",
+      "final_sha256": "a7715551c300b78370a5a74febba0984601d678e45c88c750f14ad91058054f2",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/mutant_missing_folded_term.py": {
+      "original_sha256": "d9ff4751be0e3f63541d33657afc5fc909f2ac39e6d7278c21685e08b48a050a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_missing_folded_term.py",
+      "final_sha256": "d9ff4751be0e3f63541d33657afc5fc909f2ac39e6d7278c21685e08b48a050a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/mutant_wrong_harmonic_input_sign.py": {
+      "original_sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_wrong_harmonic_input_sign.py",
+      "final_sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/mutant_wrong_homological_sign.py": {
+      "original_sha256": "a7e48de393949d4eeda97cb9dbc5bff392350a7ae3ca37cf2e56016c1a800cae",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_wrong_homological_sign.py",
+      "final_sha256": "a7e48de393949d4eeda97cb9dbc5bff392350a7ae3ca37cf2e56016c1a800cae",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/wrong_harmonic_input_sign.stderr": {
+      "original_sha256": "8aa03932c0ea431b46c9ec8aeac63d691e0f56399424014c324fc19c9393dcad",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_harmonic_input_sign.stderr",
+      "final_sha256": "8aa03932c0ea431b46c9ec8aeac63d691e0f56399424014c324fc19c9393dcad",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/wrong_harmonic_input_sign.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_harmonic_input_sign.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/wrong_homological_sign.stderr": {
+      "original_sha256": "a3e317b6d69f6836bd64fa5fda22185756299d0587f87b1672ab6c2a60390940",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_homological_sign.stderr",
+      "final_sha256": "a3e317b6d69f6836bd64fa5fda22185756299d0587f87b1672ab6c2a60390940",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/mutations/wrong_homological_sign.stdout": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_homological_sign.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-harmonics-cold-review/CONTROL.json": {
+      "original_sha256": "0b285811a8a8c3bad4d9d4582326114c96ae82071a158d18bfd24b8c99365e64",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-cold-review/CONTROL.json",
+      "final_sha256": "0b285811a8a8c3bad4d9d4582326114c96ae82071a158d18bfd24b8c99365e64",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-harmonics-cold-review/REVIEW.md": {
+      "original_sha256": "d11ab74f9c80b1d087a7ef7437f3996901c2730d3c0f19b04e4fd5942d0fb6e0",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-cold-review/pr8045-originals-native-local-harmonics-cold-review-REVIEW.md",
+      "final_sha256": "d11ab74f9c80b1d087a7ef7437f3996901c2730d3c0f19b04e4fd5942d0fb6e0",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-harmonics-root/CONTRACT.md": {
+      "original_sha256": "d707b819b47bfbfe203ddec9b54bfcf04e69d6314e838e264eb681749a8311b6",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/pr8045-originals-native-local-harmonics-root-CONTRACT.md",
+      "final_sha256": "d707b819b47bfbfe203ddec9b54bfcf04e69d6314e838e264eb681749a8311b6",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-harmonics-root/DERIVATION.md": {
+      "original_sha256": "1449c0e1724db004ac8ec9fc828a01dec3eb2ebf64be2658ca60c9bf4e57bfae",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/pr8045-originals-native-local-harmonics-root-DERIVATION.md",
+      "final_sha256": "1449c0e1724db004ac8ec9fc828a01dec3eb2ebf64be2658ca60c9bf4e57bfae",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-harmonics-root/RESULT.json": {
+      "original_sha256": "6c85f5f53dc7f809d6e324f1b3d745778f5ece6b3632291d63ed7697fd349c52",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/RESULT.json",
+      "final_sha256": "6c85f5f53dc7f809d6e324f1b3d745778f5ece6b3632291d63ed7697fd349c52",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-harmonics-root/check.py": {
+      "original_sha256": "1c436c16043599a2adecd64b4328f581a0fbc15016939ba453b0549f8719dc22",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/check.py",
+      "final_sha256": "1c436c16043599a2adecd64b4328f581a0fbc15016939ba453b0549f8719dc22",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-prethermal-applicability/APPLICABILITY.md": {
+      "original_sha256": "c85c60a117c889b3bdf605dc25b0db9b7ef0cafb012858ceb66cb9316a7ba3ad",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-prethermal-applicability/pr8045-originals-native-local-prethermal-applicability-APPLICABILITY.md",
+      "final_sha256": "c85c60a117c889b3bdf605dc25b0db9b7ef0cafb012858ceb66cb9316a7ba3ad",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-prethermal-applicability/SOURCE_RECEIPTS.json": {
+      "original_sha256": "33fed0c5c4c5f8c085747ad4a8a06db91d8fab1b7dbec9cf5dc73ba0136e36bd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-prethermal-applicability/SOURCE_RECEIPTS.json",
+      "final_sha256": "33fed0c5c4c5f8c085747ad4a8a06db91d8fab1b7dbec9cf5dc73ba0136e36bd",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-sharpening/DERIVATION.md": {
+      "original_sha256": "b34ef7dea4b1e52f8ed8d3387977f5e4b6c14d94136a08ffda05c984ea9ff3a4",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-DERIVATION.md",
+      "final_sha256": "b34ef7dea4b1e52f8ed8d3387977f5e4b6c14d94136a08ffda05c984ea9ff3a4",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-sharpening/HASHES.json": {
+      "original_sha256": "4ffb15ff61bb637e7f2639d83871ff43e385e0732ba37baaa913a39c6a5fbe94",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/HASHES.json",
+      "final_sha256": "4ffb15ff61bb637e7f2639d83871ff43e385e0732ba37baaa913a39c6a5fbe94",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-sharpening/PREREGISTRATION.md": {
+      "original_sha256": "b83db5c406da320f83c6ae01c6201411225d1955dd9f81907ffcffef2d6b9483",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-PREREGISTRATION.md",
+      "final_sha256": "b83db5c406da320f83c6ae01c6201411225d1955dd9f81907ffcffef2d6b9483",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-sharpening/RESULT.json": {
+      "original_sha256": "75d63390586aa17170d36d32c366a6e77466e4fd01662e5671eb81ac85ef8b89",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/RESULT.json",
+      "final_sha256": "75d63390586aa17170d36d32c366a6e77466e4fd01662e5671eb81ac85ef8b89",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-sharpening/ROOT_CONTROL_REVIEW.md": {
+      "original_sha256": "967b385cfcafc7d1890fcd2c2b1509b7bba8eeae1e4144c8299cfc2f990f76b9",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-ROOT_CONTROL_REVIEW.md",
+      "final_sha256": "967b385cfcafc7d1890fcd2c2b1509b7bba8eeae1e4144c8299cfc2f990f76b9",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-sharpening/check.py": {
+      "original_sha256": "de7e08f1bb61c6fee39997f69fffb8ef7c5b9c978316366feab4528eaebb77dc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/check.py",
+      "final_sha256": "de7e08f1bb61c6fee39997f69fffb8ef7c5b9c978316366feab4528eaebb77dc",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-cold-proof/DERIVATION.md": {
+      "original_sha256": "761aaa6cc6a500a9a96ed66ddf6afce88cf05bb738b1550a4d6d6a5a375378fe",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-DERIVATION.md",
+      "final_sha256": "761aaa6cc6a500a9a96ed66ddf6afce88cf05bb738b1550a4d6d6a5a375378fe",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-cold-proof/HASHES.json": {
+      "original_sha256": "0af34a1331480a77e9a49da610e692c1e9633ca25384bdce7aaada54bf50284f",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/HASHES.json",
+      "final_sha256": "0af34a1331480a77e9a49da610e692c1e9633ca25384bdce7aaada54bf50284f",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-cold-proof/PREREGISTRATION.md": {
+      "original_sha256": "cf2779e9c79ab7aaae9197d9831232508c517ee95663cc84504ae9af6ccc004c",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-PREREGISTRATION.md",
+      "final_sha256": "cf2779e9c79ab7aaae9197d9831232508c517ee95663cc84504ae9af6ccc004c",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-cold-proof/RESULT.json": {
+      "original_sha256": "a5667e3b7dd43d9c5bf5a345ee1621b664db86ca7793993eb536a3620f8646fd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/RESULT.json",
+      "final_sha256": "a5667e3b7dd43d9c5bf5a345ee1621b664db86ca7793993eb536a3620f8646fd",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-cold-proof/ROOT_REVIEW.md": {
+      "original_sha256": "142f1c075425a2b709bf11f7598b32a34d01924989f122746ed537f816450b91",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-ROOT_REVIEW.md",
+      "final_sha256": "142f1c075425a2b709bf11f7598b32a34d01924989f122746ed537f816450b91",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-cold-proof/check.py": {
+      "original_sha256": "8efa898918e1088b49e3d5d10c0f50cb8e619d8d63568c2a700d18a00ff4c859",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/check.py",
+      "final_sha256": "8efa898918e1088b49e3d5d10c0f50cb8e619d8d63568c2a700d18a00ff4c859",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-root/CONTROL_CONTRACT.md": {
+      "original_sha256": "869a02c809f315eba80e1ae8aca86fa0e3ca587416466bb13b5a9c42b08d3f67",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-CONTROL_CONTRACT.md",
+      "final_sha256": "869a02c809f315eba80e1ae8aca86fa0e3ca587416466bb13b5a9c42b08d3f67",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-root/DERIVATION.md": {
+      "original_sha256": "113e3f03aba2285d5554b0f2dba25cd5300d00823edf5eae23dc5ecca87bec74",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-DERIVATION.md",
+      "final_sha256": "113e3f03aba2285d5554b0f2dba25cd5300d00823edf5eae23dc5ecca87bec74",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-root/INDEPENDENT_PROOF_COMPARISON.md": {
+      "original_sha256": "ec93d548cbada5cc7918e0b6ba9b1f3010af01f6a16232788fdb02acda951a5b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-INDEPENDENT_PROOF_COMPARISON.md",
+      "final_sha256": "ec93d548cbada5cc7918e0b6ba9b1f3010af01f6a16232788fdb02acda951a5b",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-root/RESULT.json": {
+      "original_sha256": "25c439cf4af262a39c1bf7f595e3605dab80d5ceebc58f48bafd1221ee66a132",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/RESULT.json",
+      "final_sha256": "25c439cf4af262a39c1bf7f595e3605dab80d5ceebc58f48bafd1221ee66a132",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-local-ring-truncation-root/check.py": {
+      "original_sha256": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/check.py",
+      "final_sha256": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/CONTROL_CONTRACT.md": {
+      "original_sha256": "d18647db5e853e49e0732933b8323e87f4c0bb8d099c8138ecbdf2da7eb7ba53",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-CONTROL_CONTRACT.md",
+      "final_sha256": "d18647db5e853e49e0732933b8323e87f4c0bb8d099c8138ecbdf2da7eb7ba53",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/CONTROL_RECEIPT.md": {
+      "original_sha256": "2090c937ea1aedfb99b09c73e505bee763b76ad215bf95a8279247b9e1c6134c",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-CONTROL_RECEIPT.md",
+      "final_sha256": "2090c937ea1aedfb99b09c73e505bee763b76ad215bf95a8279247b9e1c6134c",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/DERIVATION.md": {
+      "original_sha256": "dd74a849d885c973aec0df4f4b610a1d6264545b8393c2b7a6bced144ae4beb5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-DERIVATION.md",
+      "final_sha256": "dd74a849d885c973aec0df4f4b610a1d6264545b8393c2b7a6bced144ae4beb5",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/RESULT.json": {
+      "original_sha256": "c2ebb1550d54196359ff72eb98b3e91d4271e68bfeb7ebedbc33a486143321f3",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/RESULT.json",
+      "final_sha256": "c2ebb1550d54196359ff72eb98b3e91d4271e68bfeb7ebedbc33a486143321f3",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/SOURCE_FIVE_STEP_CONTROL.py": {
+      "original_sha256": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/SOURCE_FIVE_STEP_CONTROL.py",
+      "final_sha256": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/STDERR": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/STDERR",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale-root/check.py": {
+      "original_sha256": "7b9eaf27223baddf63b880db60b023a0bc3f601d3bbd18eada8430334f0b3c83",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/check.py",
+      "final_sha256": "7b9eaf27223baddf63b880db60b023a0bc3f601d3bbd18eada8430334f0b3c83",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale/DERIVATION.md": {
+      "original_sha256": "5f11f6e9b8601a1771894923078abcec27f143d7c2223d9e7afc2850b558c548",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-DERIVATION.md",
+      "final_sha256": "5f11f6e9b8601a1771894923078abcec27f143d7c2223d9e7afc2850b558c548",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale/HASHES.json": {
+      "original_sha256": "5f023242b98377ff40b68da1d784d96885e274648cb50b92a57ea4f5dc5f9a09",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/HASHES.json",
+      "final_sha256": "5f023242b98377ff40b68da1d784d96885e274648cb50b92a57ea4f5dc5f9a09",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale/PREREGISTRATION.md": {
+      "original_sha256": "4b9f534c11f1af0f56bc5bb7f3cd92b883d6ef049a156937376c451860b45eaa",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-PREREGISTRATION.md",
+      "final_sha256": "4b9f534c11f1af0f56bc5bb7f3cd92b883d6ef049a156937376c451860b45eaa",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale/RESULT.json": {
+      "original_sha256": "162e642eb582c7ebd6d287e69eb3559473ae69be89db22b563f4f175f46f24bc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/RESULT.json",
+      "final_sha256": "162e642eb582c7ebd6d287e69eb3559473ae69be89db22b563f4f175f46f24bc",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale/ROOT_REVIEW.md": {
+      "original_sha256": "a6e884e0be80b2e5baf6ef3bc8972c280b77295199b60c98eb753baad347f8c5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-ROOT_REVIEW.md",
+      "final_sha256": "a6e884e0be80b2e5baf6ef3bc8972c280b77295199b60c98eb753baad347f8c5",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    ".claude/science/physics-loops/native-local-ring-dynamics-20260908/originals/native-natural-ring-timescale/check.py": {
+      "original_sha256": "312e4f2b13dc419c2bfbba32f7f179f9be285f231c2c5f8277725e362a0f340b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/check.py",
+      "final_sha256": "312e4f2b13dc419c2bfbba32f7f179f9be285f231c2c5f8277725e362a0f340b",
+      "disposition": "Exact historical proof/control/provenance payload preserved, decoded where compressed. Independent proof and code read; identity-duplicate reuse recorded separately. Historical execution/assessment is not current authority."
+    },
+    "docs/NATIVE_LOCAL_NATURAL_RING_DYNAMICS_NOTE_2026-09-08.md": {
+      "original_sha256": "982fdfbd845a7c1e0cd29f42fce19ee561264d9293e321466f7f6863e50c9bfe",
+      "final_path": "docs/NATIVE_LOCAL_NATURAL_RING_DYNAMICS_NOTE_2026-09-08.md",
+      "final_sha256": "343c50657d53a86f6567ec28d6bbf9bc3033384bcbd9dc38ad155f1ca93d100b",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "original_sha256": "38dd863449f099219daa980dfc6977c71bd821b95fe9bf4a428624d540cfdbdd",
+      "disposition": "Generated original manifest excluded for integrated regeneration; original blob preserved externally."
+    },
+    "outputs/native_local_natural_ring_dynamics_2026_09_08.json": {
+      "original_sha256": "b0012aca5213ba0a5cc59de182d310e91541af002915c97bd534ccfe57dff0b2",
+      "final_path": "outputs/native_local_natural_ring_dynamics_2026_09_08.json",
+      "final_sha256": "ff623b6430e257a586adb221ddfa8ca392b458fa36f06f189311feb69daa9b02",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_local_natural_ring_dynamics_2026_09_08.py": {
+      "original_sha256": "d7b82347e104fc1dc832200a9bcf3f1b524ffe9e2cd71cc140b5828650b92113",
+      "final_path": "scripts/native_local_natural_ring_dynamics_2026_09_08.py",
+      "final_sha256": "215be1869472520b7eb68412cde88c9b43c6f739bd18344ee80fbc9d7faa797f",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_local_ring_constants_2026_09_08.py": {
+      "original_sha256": "cd9f061f9fa468cb0ebcc6fa04614c74e5cda0cabf95b73abf23989ba1d124e7",
+      "final_path": "scripts/native_local_ring_constants_2026_09_08.py",
+      "final_sha256": "cd9f061f9fa468cb0ebcc6fa04614c74e5cda0cabf95b73abf23989ba1d124e7",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_local_ring_harmonics_2026_09_08.py": {
+      "original_sha256": "481755120b78c5ff633e1d2c726bb6b84e396c8fe9a9a6ed7ff016bca80a35f9",
+      "final_path": "scripts/native_local_ring_harmonics_2026_09_08.py",
+      "final_sha256": "481755120b78c5ff633e1d2c726bb6b84e396c8fe9a9a6ed7ff016bca80a35f9",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    },
+    "scripts/native_local_ring_matrix_2026_09_08.py": {
+      "original_sha256": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d",
+      "final_path": "scripts/native_local_ring_matrix_2026_09_08.py",
+      "final_sha256": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d",
+      "disposition": "Canonical source retained with bounded packaging and scope corrections; mathematical payload unchanged; actual output refreshed."
+    }
+  },
+  "final_path_sha256": {
+    "docs/NATIVE_LOCAL_NATURAL_RING_DYNAMICS_NOTE_2026-09-08.md": "343c50657d53a86f6567ec28d6bbf9bc3033384bcbd9dc38ad155f1ca93d100b",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/AUTHOR_VERIFICATION_DRIVER.py": "03d51cada5d70e0e7c74ad5bd4e935e79ae7cc1a2bd98e94a2aab28c621aafde",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_BUILD.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_BUILD.stdout": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_DELTA.json": "693059acfbdc19eae2fd0c1922c7bac495fa9a96e6daa89686ce3e87db7898c9",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_MANIFEST.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/GRAPH_MANIFEST.stdout": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED.stdout": "89887e78abf7a8e17df0d8489b81cbfdd4add988395af4a07b0b7ae228d267e5",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/ISOLATED_CLOSURE.json": "61c6f30813837bc3a7941cc5be9cd035de6aa7566b1b53276c0aff203d27aaca",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/LIVE.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/LIVE.stdout": "cc831bfcf683d77e8591642f2732bffb153b18ef75208a054426d8670ed83dce",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/MUTATIONS.json": "6039436e4340cc55d62a6ff8983c8ca6205fa26b3f2d1d83a6a53f660d9de268",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/PORT_RECEIPT.json": "e136533bb9cd3eac973cb731efd35699b33b6931a90ab522804f66bd04434548",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/README.md": "245c356d9257433b364281a0ed038e653aa5b771c38d66668fbf55e6a5acef18",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/SOURCE_FREEZE.json": "529f497f1b1a9458d4dbaad493522610640aec187dcb1db844a64e820b1bc940",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/STATE.yaml": "6299267b9480372c95f6ead24bf030fbddbb070515618a91133ec86b356fe4cf",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/WRAPPER_CONTROLS.json": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/bare_X_instead_native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/bare_X_instead_native.stdout": "586d97fc98561b097d87900e3125fd11a09614ba7980217e20c92ef6e3ad2cac",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/missing_folded_term.stderr": "42df10f3eeb8472891765f5604f18ea93ebbea60d252d9a81de1e6d5b5ca17f8",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/missing_folded_term.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_bare_X_instead_native.py": "b0a157011071d9cc29a4a4693d16428e97493a8ea8a47409874e8c80befad6cd",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_missing_folded_term.py": "3b10bd779e8384c8f9085f920ed1939c5b3e15a04ba4a9ca915cc4d465cbc1e1",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_wrong_harmonic_input_sign.py": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/mutant_wrong_homological_sign.py": "dc08a29e3b55ed9180b149b308cc65e747e2d0fc436a94fc31f1efbf0bcd0897",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stderr": "ccf1a856336559fa6524e786d48d3e8e3762b18c0aa9c8782ffb9f6f0059adb5",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_homological_sign.stderr": "d6dbc7b30dc1359b77d1509e8313e7005ad2c233b8b558cbd92e4879ecc31ebc",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/mutations/wrong_homological_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.json": "c8ea712ab890d7f0e564d022d5578eb2b7bd5709cb1883bff1811fe9f52214d9",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.py": "0b98182977acf2540421509f0814025309f6dce2e50c51e4c6e859d00a18b920",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/before-absolute-fourth-control/native_local_ring_matrix_2026_09_08.py": "a4bfa6fc63fdba7165b01e941ee33ef6b1fd64ad928210c8c51079e469bd578a",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/READ_HASHES.json": "27dcf047f0070c5848b7d3862ead152dd902b47c26db380fd30fc427bd702e9e",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/pr8045-independent-canonical-review-GRAPH_CONFIRMATION.md": "cda981a591164c7ab8ad54d700c6c4875651b5c0f0480cc1ee303d54fe1a0fd9",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/independent-canonical-review/pr8045-independent-canonical-review-REVIEW.md": "74000ef3645518b4771dedcf48079a4afedfd0adccd188be3e58b96329c66dfd",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/bare_X_instead_native.stderr": "02d23c936b7f9c9bab07e45ad27ac66d4b75877e1a80145fa5083b21fd2915c5",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/bare_X_instead_native.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/missing_folded_term.stderr": "fecb8587334ed32fc4a782cd8ebc33c8a9e88acb2ef3c713acb8fb2764e77875",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/missing_folded_term.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_bare_X_instead_native.py": "a7715551c300b78370a5a74febba0984601d678e45c88c750f14ad91058054f2",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_missing_folded_term.py": "d9ff4751be0e3f63541d33657afc5fc909f2ac39e6d7278c21685e08b48a050a",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_wrong_harmonic_input_sign.py": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/mutant_wrong_homological_sign.py": "a7e48de393949d4eeda97cb9dbc5bff392350a7ae3ca37cf2e56016c1a800cae",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_harmonic_input_sign.stderr": "8aa03932c0ea431b46c9ec8aeac63d691e0f56399424014c324fc19c9393dcad",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_harmonic_input_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_homological_sign.stderr": "a3e317b6d69f6836bd64fa5fda22185756299d0587f87b1672ab6c2a60390940",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/mutations/wrong_homological_sign.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-cold-review/CONTROL.json": "0b285811a8a8c3bad4d9d4582326114c96ae82071a158d18bfd24b8c99365e64",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-cold-review/pr8045-originals-native-local-harmonics-cold-review-REVIEW.md": "d11ab74f9c80b1d087a7ef7437f3996901c2730d3c0f19b04e4fd5942d0fb6e0",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/RESULT.json": "6c85f5f53dc7f809d6e324f1b3d745778f5ece6b3632291d63ed7697fd349c52",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/check.py": "1c436c16043599a2adecd64b4328f581a0fbc15016939ba453b0549f8719dc22",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/pr8045-originals-native-local-harmonics-root-CONTRACT.md": "d707b819b47bfbfe203ddec9b54bfcf04e69d6314e838e264eb681749a8311b6",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-harmonics-root/pr8045-originals-native-local-harmonics-root-DERIVATION.md": "1449c0e1724db004ac8ec9fc828a01dec3eb2ebf64be2658ca60c9bf4e57bfae",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-prethermal-applicability/SOURCE_RECEIPTS.json": "33fed0c5c4c5f8c085747ad4a8a06db91d8fab1b7dbec9cf5dc73ba0136e36bd",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-prethermal-applicability/pr8045-originals-native-local-prethermal-applicability-APPLICABILITY.md": "c85c60a117c889b3bdf605dc25b0db9b7ef0cafb012858ceb66cb9316a7ba3ad",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/HASHES.json": "4ffb15ff61bb637e7f2639d83871ff43e385e0732ba37baaa913a39c6a5fbe94",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/RESULT.json": "75d63390586aa17170d36d32c366a6e77466e4fd01662e5671eb81ac85ef8b89",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/check.py": "de7e08f1bb61c6fee39997f69fffb8ef7c5b9c978316366feab4528eaebb77dc",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-DERIVATION.md": "b34ef7dea4b1e52f8ed8d3387977f5e4b6c14d94136a08ffda05c984ea9ff3a4",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-PREREGISTRATION.md": "b83db5c406da320f83c6ae01c6201411225d1955dd9f81907ffcffef2d6b9483",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-sharpening/pr8045-originals-native-local-ring-sharpening-ROOT_CONTROL_REVIEW.md": "967b385cfcafc7d1890fcd2c2b1509b7bba8eeae1e4144c8299cfc2f990f76b9",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/HASHES.json": "0af34a1331480a77e9a49da610e692c1e9633ca25384bdce7aaada54bf50284f",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/RESULT.json": "a5667e3b7dd43d9c5bf5a345ee1621b664db86ca7793993eb536a3620f8646fd",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/check.py": "8efa898918e1088b49e3d5d10c0f50cb8e619d8d63568c2a700d18a00ff4c859",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-DERIVATION.md": "761aaa6cc6a500a9a96ed66ddf6afce88cf05bb738b1550a4d6d6a5a375378fe",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-PREREGISTRATION.md": "cf2779e9c79ab7aaae9197d9831232508c517ee95663cc84504ae9af6ccc004c",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-cold-proof/pr8045-originals-native-local-ring-truncation-cold-proof-ROOT_REVIEW.md": "142f1c075425a2b709bf11f7598b32a34d01924989f122746ed537f816450b91",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/RESULT.json": "25c439cf4af262a39c1bf7f595e3605dab80d5ceebc58f48bafd1221ee66a132",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/check.py": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-CONTROL_CONTRACT.md": "869a02c809f315eba80e1ae8aca86fa0e3ca587416466bb13b5a9c42b08d3f67",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-DERIVATION.md": "113e3f03aba2285d5554b0f2dba25cd5300d00823edf5eae23dc5ecca87bec74",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-local-ring-truncation-root/pr8045-originals-native-local-ring-truncation-root-INDEPENDENT_PROOF_COMPARISON.md": "ec93d548cbada5cc7918e0b6ba9b1f3010af01f6a16232788fdb02acda951a5b",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/RESULT.json": "c2ebb1550d54196359ff72eb98b3e91d4271e68bfeb7ebedbc33a486143321f3",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/SOURCE_FIVE_STEP_CONTROL.py": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/STDERR": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/check.py": "7b9eaf27223baddf63b880db60b023a0bc3f601d3bbd18eada8430334f0b3c83",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-CONTROL_CONTRACT.md": "d18647db5e853e49e0732933b8323e87f4c0bb8d099c8138ecbdf2da7eb7ba53",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-CONTROL_RECEIPT.md": "2090c937ea1aedfb99b09c73e505bee763b76ad215bf95a8279247b9e1c6134c",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale-root/pr8045-originals-native-natural-ring-timescale-root-DERIVATION.md": "dd74a849d885c973aec0df4f4b610a1d6264545b8393c2b7a6bced144ae4beb5",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/HASHES.json": "5f023242b98377ff40b68da1d784d96885e274648cb50b92a57ea4f5dc5f9a09",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/RESULT.json": "162e642eb582c7ebd6d287e69eb3559473ae69be89db22b563f4f175f46f24bc",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/check.py": "312e4f2b13dc419c2bfbba32f7f179f9be285f231c2c5f8277725e362a0f340b",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-DERIVATION.md": "5f11f6e9b8601a1771894923078abcec27f143d7c2223d9e7afc2850b558c548",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-PREREGISTRATION.md": "4b9f534c11f1af0f56bc5bb7f3cd92b883d6ef049a156937376c451860b45eaa",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/originals/native-natural-ring-timescale/pr8045-originals-native-natural-ring-timescale-ROOT_REVIEW.md": "a6e884e0be80b2e5baf6ef3bc8972c280b77295199b60c98eb753baad347f8c5",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ARTIFACT_PLAN.md": "72af0f0032e86e029f86e3836f61562abd3930aef7d00092caa8820dcd57b4d6",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ASSUMPTIONS_AND_IMPORTS.md": "c39308cb837b36e46157c1869cae55663b7e0a31445ec5891bc138a225d724f7",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-CLAIM_STATUS_CERTIFICATE.md": "36fb4667234a46b80ca4994df422fea9a310bb5e1e130f272533fa0693852075",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-CONTROL_CONTRACT.md": "c826ed3538ec7ba6f8c3817814ddb01fda6c086bb2dde6cba3502eea651f8646",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-GOAL.md": "0722c7ca38cdb93b29338d9a9117007d8a511b13d3be1770b1a1542d10a4d950",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-HANDOFF.md": "4e8f93081ad72f90495abc9868c6a151d16c597b266c4f3207c9f754df38c107",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-LITERATURE_BRIDGES.md": "5a2c3cfb3a93bcca26f5542a6292f12248727742b2a58882ef77113a0c305888",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-MUTATION_COVERAGE_CORRECTION.md": "078dc1d05cbe70e9cdda797c54f251dfabc1dbce9029679f8b6c91c45e8d431e",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-NO_GO_LEDGER.md": "4c8f4009800db13ec4ba4315464a036a574c29419fdf20ebfbb5130bea4f0475",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-OPPORTUNITY_QUEUE.md": "de39b6fb268aa59024303c3cf2a6d4408c51bd658b1010871c40f5e215e4627e",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-PR_BACKLOG.md": "73fd2ad92c5fcb1a4123d0ace5919b10d8b765aea3594b858012b08967507d1b",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-REVIEW_HISTORY.md": "0b48d15453cad3af12473045f6e9c858086adc9a22e70fb472dc5014207ab01b",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ROOT_CANONICAL_REVIEW.md": "319685bd364ed4a614345f931917b788033cea3fd15edca53cc7d79233182d31",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-ROUTE_PORTFOLIO.md": "d80117ef432ce7efdf6be87fbb4b8844d4b286d8999e9105b0029799485b58a0",
+    "docs/work_history/repo/review_feedback/pr8045-native-local-ring-evidence/pr8045-TRACE_GATE.md": "23ae54493b9c839621aaad41af21ac7260208027e43f1b71000b2272f6d5bc3c",
+    "logs/runner-cache/native_local_natural_ring_dynamics_2026_09_08.txt": "a724d728cdaf59da21703f9dfcc1d60b168ac3fc8c9a19fbd2d5f9a0bf59f13b",
+    "outputs/native_local_natural_ring_dynamics_2026_09_08.json": "ff623b6430e257a586adb221ddfa8ca392b458fa36f06f189311feb69daa9b02",
+    "scripts/native_local_natural_ring_dynamics_2026_09_08.py": "215be1869472520b7eb68412cde88c9b43c6f739bd18344ee80fbc9d7faa797f",
+    "scripts/native_local_ring_constants_2026_09_08.py": "cd9f061f9fa468cb0ebcc6fa04614c74e5cda0cabf95b73abf23989ba1d124e7",
+    "scripts/native_local_ring_harmonics_2026_09_08.py": "481755120b78c5ff633e1d2c726bb6b84e396c8fe9a9a6ed7ff016bca80a35f9",
+    "scripts/native_local_ring_matrix_2026_09_08.py": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d"
+  },
+  "source_inputs": {
+    "docs/NATIVE_LOCAL_NATURAL_RING_DYNAMICS_NOTE_2026-09-08.md": "343c50657d53a86f6567ec28d6bbf9bc3033384bcbd9dc38ad155f1ca93d100b",
+    "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "scripts/native_local_ring_matrix_2026_09_08.py": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d",
+    "scripts/native_local_ring_harmonics_2026_09_08.py": "481755120b78c5ff633e1d2c726bb6b84e396c8fe9a9a6ed7ff016bca80a35f9",
+    "scripts/native_local_ring_constants_2026_09_08.py": "cd9f061f9fa468cb0ebcc6fa04614c74e5cda0cabf95b73abf23989ba1d124e7"
+  },
+  "input_fingerprint_sha256": "338531a3b60f91346cb92669c108733c5f3b5a7b828a124c107c1cf6f2d05011",
+  "helper_discovery": [
+    "scripts/native_local_ring_constants_2026_09_08.py",
+    "scripts/native_local_ring_harmonics_2026_09_08.py",
+    "scripts/native_local_ring_matrix_2026_09_08.py"
+  ],
+  "claim_type": "bounded_theorem",
+  "authority_inputs": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_from_previously_read8121": true
+    }
+  },
+  "tool_input_sha256": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "archive_map_sha256": "8b3d3f4f15c9bb875faa785e78ecb1fa3ad8904a33a6c8c404eecb1f902062bd",
+  "archive_duplicate_identity_map": [
+    {
+      "path": "ARTIFACT_PLAN.md",
+      "sha256": "72af0f0032e86e029f86e3836f61562abd3930aef7d00092caa8820dcd57b4d6",
+      "duplicate_of": null
+    },
+    {
+      "path": "ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "c39308cb837b36e46157c1869cae55663b7e0a31445ec5891bc138a225d724f7",
+      "duplicate_of": null
+    },
+    {
+      "path": "AUTHOR_VERIFICATION_DRIVER.py",
+      "sha256": "03d51cada5d70e0e7c74ad5bd4e935e79ae7cc1a2bd98e94a2aab28c621aafde",
+      "duplicate_of": null
+    },
+    {
+      "path": "CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "36fb4667234a46b80ca4994df422fea9a310bb5e1e130f272533fa0693852075",
+      "duplicate_of": null
+    },
+    {
+      "path": "CONTROL_CONTRACT.md",
+      "sha256": "c826ed3538ec7ba6f8c3817814ddb01fda6c086bb2dde6cba3502eea651f8646",
+      "duplicate_of": null
+    },
+    {
+      "path": "GOAL.md",
+      "sha256": "0722c7ca38cdb93b29338d9a9117007d8a511b13d3be1770b1a1542d10a4d950",
+      "duplicate_of": null
+    },
+    {
+      "path": "GRAPH_BUILD.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": null
+    },
+    {
+      "path": "GRAPH_BUILD.stdout",
+      "sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "duplicate_of": null
+    },
+    {
+      "path": "GRAPH_DELTA.json",
+      "sha256": "693059acfbdc19eae2fd0c1922c7bac495fa9a96e6daa89686ce3e87db7898c9",
+      "duplicate_of": null
+    },
+    {
+      "path": "GRAPH_MANIFEST.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "GRAPH_MANIFEST.stdout",
+      "sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "duplicate_of": null
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "4e8f93081ad72f90495abc9868c6a151d16c597b266c4f3207c9f754df38c107",
+      "duplicate_of": null
+    },
+    {
+      "path": "ISOLATED.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "ISOLATED.stdout",
+      "sha256": "89887e78abf7a8e17df0d8489b81cbfdd4add988395af4a07b0b7ae228d267e5",
+      "duplicate_of": null
+    },
+    {
+      "path": "ISOLATED_CLOSURE.json",
+      "sha256": "61c6f30813837bc3a7941cc5be9cd035de6aa7566b1b53276c0aff203d27aaca",
+      "duplicate_of": null
+    },
+    {
+      "path": "LITERATURE_BRIDGES.md",
+      "sha256": "5a2c3cfb3a93bcca26f5542a6292f12248727742b2a58882ef77113a0c305888",
+      "duplicate_of": null
+    },
+    {
+      "path": "LIVE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "LIVE.stdout",
+      "sha256": "cc831bfcf683d77e8591642f2732bffb153b18ef75208a054426d8670ed83dce",
+      "duplicate_of": null
+    },
+    {
+      "path": "MUTATIONS.json",
+      "sha256": "6039436e4340cc55d62a6ff8983c8ca6205fa26b3f2d1d83a6a53f660d9de268",
+      "duplicate_of": null
+    },
+    {
+      "path": "MUTATION_COVERAGE_CORRECTION.md",
+      "sha256": "078dc1d05cbe70e9cdda797c54f251dfabc1dbce9029679f8b6c91c45e8d431e",
+      "duplicate_of": null
+    },
+    {
+      "path": "NO_GO_LEDGER.md",
+      "sha256": "4c8f4009800db13ec4ba4315464a036a574c29419fdf20ebfbb5130bea4f0475",
+      "duplicate_of": null
+    },
+    {
+      "path": "OPPORTUNITY_QUEUE.md",
+      "sha256": "de39b6fb268aa59024303c3cf2a6d4408c51bd658b1010871c40f5e215e4627e",
+      "duplicate_of": null
+    },
+    {
+      "path": "PORT_RECEIPT.json",
+      "sha256": "e136533bb9cd3eac973cb731efd35699b33b6931a90ab522804f66bd04434548",
+      "duplicate_of": null
+    },
+    {
+      "path": "PR_BACKLOG.md",
+      "sha256": "73fd2ad92c5fcb1a4123d0ace5919b10d8b765aea3594b858012b08967507d1b",
+      "duplicate_of": null
+    },
+    {
+      "path": "REVIEW_HISTORY.md",
+      "sha256": "0b48d15453cad3af12473045f6e9c858086adc9a22e70fb472dc5014207ab01b",
+      "duplicate_of": null
+    },
+    {
+      "path": "ROOT_CANONICAL_REVIEW.md",
+      "sha256": "319685bd364ed4a614345f931917b788033cea3fd15edca53cc7d79233182d31",
+      "duplicate_of": null
+    },
+    {
+      "path": "ROUTE_PORTFOLIO.md",
+      "sha256": "d80117ef432ce7efdf6be87fbb4b8844d4b286d8999e9105b0029799485b58a0",
+      "duplicate_of": null
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "529f497f1b1a9458d4dbaad493522610640aec187dcb1db844a64e820b1bc940",
+      "duplicate_of": null
+    },
+    {
+      "path": "STATE.yaml",
+      "sha256": "6299267b9480372c95f6ead24bf030fbddbb070515618a91133ec86b356fe4cf",
+      "duplicate_of": null
+    },
+    {
+      "path": "TRACE_GATE.md",
+      "sha256": "23ae54493b9c839621aaad41af21ac7260208027e43f1b71000b2272f6d5bc3c",
+      "duplicate_of": null
+    },
+    {
+      "path": "WRAPPER_CONTROLS.json",
+      "sha256": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/bare_X_instead_native.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/bare_X_instead_native.stdout",
+      "sha256": "586d97fc98561b097d87900e3125fd11a09614ba7980217e20c92ef6e3ad2cac",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/missing_folded_term.stderr",
+      "sha256": "42df10f3eeb8472891765f5604f18ea93ebbea60d252d9a81de1e6d5b5ca17f8",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/missing_folded_term.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/mutant_bare_X_instead_native.py",
+      "sha256": "b0a157011071d9cc29a4a4693d16428e97493a8ea8a47409874e8c80befad6cd",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/mutant_missing_folded_term.py",
+      "sha256": "3b10bd779e8384c8f9085f920ed1939c5b3e15a04ba4a9ca915cc4d465cbc1e1",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/mutant_wrong_harmonic_input_sign.py",
+      "sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/mutant_wrong_homological_sign.py",
+      "sha256": "dc08a29e3b55ed9180b149b308cc65e747e2d0fc436a94fc31f1efbf0bcd0897",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stderr",
+      "sha256": "ccf1a856336559fa6524e786d48d3e8e3762b18c0aa9c8782ffb9f6f0059adb5",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/wrong_harmonic_input_sign.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/wrong_homological_sign.stderr",
+      "sha256": "d6dbc7b30dc1359b77d1509e8313e7005ad2c233b8b558cbd92e4879ecc31ebc",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/mutations/wrong_homological_sign.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.json",
+      "sha256": "c8ea712ab890d7f0e564d022d5578eb2b7bd5709cb1883bff1811fe9f52214d9",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/native_local_natural_ring_dynamics_2026_09_08.py",
+      "sha256": "0b98182977acf2540421509f0814025309f6dce2e50c51e4c6e859d00a18b920",
+      "duplicate_of": null
+    },
+    {
+      "path": "before-absolute-fourth-control/native_local_ring_matrix_2026_09_08.py",
+      "sha256": "a4bfa6fc63fdba7165b01e941ee33ef6b1fd64ad928210c8c51079e469bd578a",
+      "duplicate_of": null
+    },
+    {
+      "path": "independent-canonical-review/GRAPH_CONFIRMATION.md",
+      "sha256": "cda981a591164c7ab8ad54d700c6c4875651b5c0f0480cc1ee303d54fe1a0fd9",
+      "duplicate_of": null
+    },
+    {
+      "path": "independent-canonical-review/READ_HASHES.json",
+      "sha256": "27dcf047f0070c5848b7d3862ead152dd902b47c26db380fd30fc427bd702e9e",
+      "duplicate_of": null
+    },
+    {
+      "path": "independent-canonical-review/REVIEW.md",
+      "sha256": "74000ef3645518b4771dedcf48079a4afedfd0adccd188be3e58b96329c66dfd",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/bare_X_instead_native.stderr",
+      "sha256": "02d23c936b7f9c9bab07e45ad27ac66d4b75877e1a80145fa5083b21fd2915c5",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/bare_X_instead_native.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "mutations/missing_folded_term.stderr",
+      "sha256": "fecb8587334ed32fc4a782cd8ebc33c8a9e88acb2ef3c713acb8fb2764e77875",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/missing_folded_term.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "mutations/mutant_bare_X_instead_native.py",
+      "sha256": "a7715551c300b78370a5a74febba0984601d678e45c88c750f14ad91058054f2",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/mutant_missing_folded_term.py",
+      "sha256": "d9ff4751be0e3f63541d33657afc5fc909f2ac39e6d7278c21685e08b48a050a",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/mutant_wrong_harmonic_input_sign.py",
+      "sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+      "duplicate_of": "before-absolute-fourth-control/mutations/mutant_wrong_harmonic_input_sign.py"
+    },
+    {
+      "path": "mutations/mutant_wrong_homological_sign.py",
+      "sha256": "a7e48de393949d4eeda97cb9dbc5bff392350a7ae3ca37cf2e56016c1a800cae",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/wrong_harmonic_input_sign.stderr",
+      "sha256": "8aa03932c0ea431b46c9ec8aeac63d691e0f56399424014c324fc19c9393dcad",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/wrong_harmonic_input_sign.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "mutations/wrong_homological_sign.stderr",
+      "sha256": "a3e317b6d69f6836bd64fa5fda22185756299d0587f87b1672ab6c2a60390940",
+      "duplicate_of": null
+    },
+    {
+      "path": "mutations/wrong_homological_sign.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "originals/native-local-harmonics-cold-review/CONTROL.json",
+      "sha256": "0b285811a8a8c3bad4d9d4582326114c96ae82071a158d18bfd24b8c99365e64",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-harmonics-cold-review/REVIEW.md",
+      "sha256": "d11ab74f9c80b1d087a7ef7437f3996901c2730d3c0f19b04e4fd5942d0fb6e0",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-harmonics-root/CONTRACT.md",
+      "sha256": "d707b819b47bfbfe203ddec9b54bfcf04e69d6314e838e264eb681749a8311b6",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-harmonics-root/DERIVATION.md",
+      "sha256": "1449c0e1724db004ac8ec9fc828a01dec3eb2ebf64be2658ca60c9bf4e57bfae",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-harmonics-root/RESULT.json",
+      "sha256": "6c85f5f53dc7f809d6e324f1b3d745778f5ece6b3632291d63ed7697fd349c52",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-harmonics-root/check.py",
+      "sha256": "1c436c16043599a2adecd64b4328f581a0fbc15016939ba453b0549f8719dc22",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-prethermal-applicability/APPLICABILITY.md",
+      "sha256": "c85c60a117c889b3bdf605dc25b0db9b7ef0cafb012858ceb66cb9316a7ba3ad",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-prethermal-applicability/SOURCE_RECEIPTS.json",
+      "sha256": "33fed0c5c4c5f8c085747ad4a8a06db91d8fab1b7dbec9cf5dc73ba0136e36bd",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-sharpening/DERIVATION.md",
+      "sha256": "b34ef7dea4b1e52f8ed8d3387977f5e4b6c14d94136a08ffda05c984ea9ff3a4",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-sharpening/HASHES.json",
+      "sha256": "4ffb15ff61bb637e7f2639d83871ff43e385e0732ba37baaa913a39c6a5fbe94",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-sharpening/PREREGISTRATION.md",
+      "sha256": "b83db5c406da320f83c6ae01c6201411225d1955dd9f81907ffcffef2d6b9483",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-sharpening/RESULT.json",
+      "sha256": "75d63390586aa17170d36d32c366a6e77466e4fd01662e5671eb81ac85ef8b89",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-sharpening/ROOT_CONTROL_REVIEW.md",
+      "sha256": "967b385cfcafc7d1890fcd2c2b1509b7bba8eeae1e4144c8299cfc2f990f76b9",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-sharpening/check.py",
+      "sha256": "de7e08f1bb61c6fee39997f69fffb8ef7c5b9c978316366feab4528eaebb77dc",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-cold-proof/DERIVATION.md",
+      "sha256": "761aaa6cc6a500a9a96ed66ddf6afce88cf05bb738b1550a4d6d6a5a375378fe",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-cold-proof/HASHES.json",
+      "sha256": "0af34a1331480a77e9a49da610e692c1e9633ca25384bdce7aaada54bf50284f",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-cold-proof/PREREGISTRATION.md",
+      "sha256": "cf2779e9c79ab7aaae9197d9831232508c517ee95663cc84504ae9af6ccc004c",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-cold-proof/RESULT.json",
+      "sha256": "a5667e3b7dd43d9c5bf5a345ee1621b664db86ca7793993eb536a3620f8646fd",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-cold-proof/ROOT_REVIEW.md",
+      "sha256": "142f1c075425a2b709bf11f7598b32a34d01924989f122746ed537f816450b91",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-cold-proof/check.py",
+      "sha256": "8efa898918e1088b49e3d5d10c0f50cb8e619d8d63568c2a700d18a00ff4c859",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-root/CONTROL_CONTRACT.md",
+      "sha256": "869a02c809f315eba80e1ae8aca86fa0e3ca587416466bb13b5a9c42b08d3f67",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-root/DERIVATION.md",
+      "sha256": "113e3f03aba2285d5554b0f2dba25cd5300d00823edf5eae23dc5ecca87bec74",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-root/INDEPENDENT_PROOF_COMPARISON.md",
+      "sha256": "ec93d548cbada5cc7918e0b6ba9b1f3010af01f6a16232788fdb02acda951a5b",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-root/RESULT.json",
+      "sha256": "25c439cf4af262a39c1bf7f595e3605dab80d5ceebc58f48bafd1221ee66a132",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-local-ring-truncation-root/check.py",
+      "sha256": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale/DERIVATION.md",
+      "sha256": "5f11f6e9b8601a1771894923078abcec27f143d7c2223d9e7afc2850b558c548",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale/HASHES.json",
+      "sha256": "5f023242b98377ff40b68da1d784d96885e274648cb50b92a57ea4f5dc5f9a09",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale/PREREGISTRATION.md",
+      "sha256": "4b9f534c11f1af0f56bc5bb7f3cd92b883d6ef049a156937376c451860b45eaa",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale/RESULT.json",
+      "sha256": "162e642eb582c7ebd6d287e69eb3559473ae69be89db22b563f4f175f46f24bc",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale/ROOT_REVIEW.md",
+      "sha256": "a6e884e0be80b2e5baf6ef3bc8972c280b77295199b60c98eb753baad347f8c5",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale/check.py",
+      "sha256": "312e4f2b13dc419c2bfbba32f7f179f9be285f231c2c5f8277725e362a0f340b",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/CONTROL_CONTRACT.md",
+      "sha256": "d18647db5e853e49e0732933b8323e87f4c0bb8d099c8138ecbdf2da7eb7ba53",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/CONTROL_RECEIPT.md",
+      "sha256": "2090c937ea1aedfb99b09c73e505bee763b76ad215bf95a8279247b9e1c6134c",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/DERIVATION.md",
+      "sha256": "dd74a849d885c973aec0df4f4b610a1d6264545b8393c2b7a6bced144ae4beb5",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/RESULT.json",
+      "sha256": "c2ebb1550d54196359ff72eb98b3e91d4271e68bfeb7ebedbc33a486143321f3",
+      "duplicate_of": null
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/SOURCE_FIVE_STEP_CONTROL.py",
+      "sha256": "45d10cca7546ec4dc83b9e46579ed2cd57eef3f1d2f269a015c061c6518c532a",
+      "duplicate_of": "originals/native-local-ring-truncation-root/check.py"
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/STDERR",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "duplicate_of": "GRAPH_BUILD.stderr"
+    },
+    {
+      "path": "originals/native-natural-ring-timescale-root/check.py",
+      "sha256": "7b9eaf27223baddf63b880db60b023a0bc3f601d3bbd18eada8430334f0b3c83",
+      "duplicate_of": null
+    }
+  ],
+  "archive_data_coverage_sha256": "3188d5a85f1d4e53f38e1c9e29ea7b80fae999306ac8db18f4cf8b59d11b2141",
+  "independent_controls": {
+    "pass_": true,
+    "method": "Independent degree/length convolution for all14 majorants and radius; combinatorial harmonic multiplicities; direct common-neighbor four-cycle/support enumeration on three tori. Analytical proof reviewed separately.",
+    "majorants": {
+      "1": "44",
+      "2": "170368",
+      "3": "1690391296",
+      "4": "77185410486272/3",
+      "5": "508096152076812288",
+      "6": "60337474429345180942336/5",
+      "7": "14885456840539659018589700096/45",
+      "8": "643006335984956138086166951886848/63",
+      "9": "12203750352360129169209061553899307008/35",
+      "10": "2463930979866620258495124303937855689850880/189",
+      "11": "2499038066292062963651581523237066858575226208256/4725",
+      "12": "12142506489008470550081440357286178418660820792639488/525",
+      "13": "3074143974412715684814288146113200641683887656616174026752/2835",
+      "14": "1428443546268885421935888168990143611874114004062843038546788352/26325"
+    },
+    "rho": "2925/586625872653488918659181556677876988854098764905751938178593346112",
+    "geometry": [
+      {
+        "extents": [
+          4,
+          4,
+          4
+        ],
+        "edges": 192,
+        "cycles": 240,
+        "max_cycles_per_edge": 5,
+        "max_supports_per_edge": 25
+      },
+      {
+        "extents": [
+          6,
+          6,
+          6
+        ],
+        "edges": 648,
+        "cycles": 648,
+        "max_cycles_per_edge": 4,
+        "max_supports_per_edge": 20
+      },
+      {
+        "extents": [
+          4,
+          6,
+          8
+        ],
+        "edges": 576,
+        "cycles": 624,
+        "max_cycles_per_edge": 5,
+        "max_supports_per_edge": 22
+      }
+    ],
+    "matrix_control": "All14 recorded effective coefficients conserve D and obey exact trace and trace-square similarity identities",
+    "time_powers": {
+      "order5": -7,
+      "order13": 1,
+      "order14": 2,
+      "slow": 2
+    },
+    "elapsed_sec": 0.0351790419081226
+  },
+  "independent_control_sha256": "9c7c7024c95201817f5aadc091c7b4245c9027f8f3fbd4f0752be1fea8b1e9e4",
+  "execution": {
+    "receipt": "/private/tmp/review-drain-20260915/8045-author-final-execution.json",
+    "receipt_sha256": "4033988cfebbb82f25df6f2645c6d85fcc015274e71fcaaae8277bf7b5110f1b",
+    "wrapper_elapsed_sec": 2.8264970779418945,
+    "internal_elapsed_sec": 2.760334875085391,
+    "peak_rss_mib": 24.515625,
+    "cap_sec": 180,
+    "cap_mib": 384,
+    "exit_code": 0,
+    "TOTAL": "PASS=11091 FAIL=0",
+    "scientific_payload_unchanged": true,
+    "cache_stdout_scope": "Complete stdout retained and JSON payload equals canonical output"
+  },
+  "claim_dispositions": {
+    "finite_normal_form": "PASS support-preserving14-step homological elimination, finite majorants, convergent Lie potential and Cauchy degree15 tail",
+    "ice_gauge": "PASS lower ice coefficients scalar/zero identify fourth coefficient only; ambient slow extension needs no auxiliary compression",
+    "natural_time": "PASS fast epsilon and slow epsilon4 cones yield epsilon2 at fixed rescaled time; uniform local expectations with dressed states/readout",
+    "physical_scope": "No bare extensive preparation, global band, optimal prethermal accuracy, RK potential, phase or physical selection",
+    "historical_proofs": "All original five/thirteen/fourteen-step variants and compression alternative preserved; original bare-X mutant survival and repair explicitly retained"
+  },
+  "current_main_preservation": "All 107 staged paths additions; all corrected8044 source/history and pinned inputs unchanged, including inherited8038;8046 excluded.",
+  "dependency_scope": "Three linked repository mathematical sources:8044 mechanism,8038 native dictionary and instrument; ownnote proofidentity and three executinghelpers. All parenttransitive source and authority identities rechecked. ADHH/Else are contextual published methods, not imported optimal bounds or physical conclusions.",
+  "external_reads": [
+    {
+      "url": "https://arxiv.org/pdf/1509.05386",
+      "scope": "Sections3.1\u20133.3 onsite static setup, theorem and local dynamics; no optimal constants/conclusion used in canonical proof"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1704.08703",
+      "scope": "Abstract and AppendixA strong-support extension; direct local support argument separately checked"
+    }
+  ],
+  "remaining_findings": [],
+  "full_pipeline_runs": 0,
+  "audit_verdict": null
+}

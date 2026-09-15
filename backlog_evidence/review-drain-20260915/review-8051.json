@@ -1,0 +1,929 @@
+{
+  "source_verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "116505696042571b2759a8dc5d73368eee727794",
+  "original_base": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+  "confirmation_base": "972ceb3df2c0d58a8ecca407272365cbcc5cbe6f",
+  "original_path_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ARTIFACT_PLAN.md",
+      "sha256": "263217bd8baf24509bf032ada942e30121171e91bef790aade7e239f31ac5380",
+      "blob": "843ba734cc3aa95e020954ca23977b0dea781a02",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ARTIFACT_PLAN.md",
+      "final_sha256": "263217bd8baf24509bf032ada942e30121171e91bef790aade7e239f31ac5380"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "48586d839565bc6cf19495a22b9f8f1f1e299bfda167a342e59d90ea392943c4",
+      "blob": "fc17b3b30e777d6cf84230b811d0f06ce910c00a",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "48586d839565bc6cf19495a22b9f8f1f1e299bfda167a342e59d90ea392943c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+      "sha256": "fc0cb4b905255d21242ad2e0f47782a975c3d445dfa87bf4c05e4976f69c1fd7",
+      "blob": "08dbec0bd95e5f53bba710f3a2fc70d09652d576",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+      "final_sha256": "fc0cb4b905255d21242ad2e0f47782a975c3d445dfa87bf4c05e4976f69c1fd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "f492d6eaa2dc2787d30d1b3a4c45892421ec03d62638b6b87ea0f9cf44a6a810",
+      "blob": "2a2ea893e8f92e50502018bbfd6dad4f40c352ce",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "f492d6eaa2dc2787d30d1b3a4c45892421ec03d62638b6b87ea0f9cf44a6a810"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/CONTROL_CONTRACT.md",
+      "sha256": "6490e4267b524508083c001db0bc9d81e8372d2a2a1811327632db33a4f3535c",
+      "blob": "575e198f421d1b0b3607175fa4d048a0d45cea3e",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-CONTROL_CONTRACT.md",
+      "final_sha256": "6490e4267b524508083c001db0bc9d81e8372d2a2a1811327632db33a4f3535c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/GOAL.md",
+      "sha256": "4f6a0bd315c9b9a66d57bc949dd9b76f492b16e23a0a763ccbd86fb6f4183269",
+      "blob": "9a54f29bfc5f12a56faa7e33395cc62731731c5a",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-GOAL.md",
+      "final_sha256": "4f6a0bd315c9b9a66d57bc949dd9b76f492b16e23a0a763ccbd86fb6f4183269"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/GRAPH.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/GRAPH.stdout",
+      "sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+      "blob": "81cf25b768e6839e2e6bd61db255a682859a6b9d",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH.stdout",
+      "final_sha256": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/GRAPH_DELTA.json",
+      "sha256": "f045004fa77735fccc8a4c174042631f4590fe702acc2389673902b499c27f9a",
+      "blob": "95994eee907312d2a5f7f30fee0fb27e05725e96",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH_DELTA.json",
+      "final_sha256": "f045004fa77735fccc8a4c174042631f4590fe702acc2389673902b499c27f9a"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/HANDOFF.md",
+      "sha256": "e01f85ffebd279e23dd8a0b13465ce7a876667a7c5edaa2aba5705ffdd1a0dc0",
+      "blob": "83ceac33712a1c3051ff13da24abd072cae39b2c",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-HANDOFF.md",
+      "final_sha256": "e01f85ffebd279e23dd8a0b13465ce7a876667a7c5edaa2aba5705ffdd1a0dc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ISOLATED.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ISOLATED.stdout",
+      "sha256": "9a65a198ccdca6975efd1d3a677cc27876a749567c86f85d16a417855f8333eb",
+      "blob": "8482303dd1298e5c7d3d0777fddd76b4d271d217",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED.stdout",
+      "final_sha256": "9a65a198ccdca6975efd1d3a677cc27876a749567c86f85d16a417855f8333eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ISOLATED_CLOSURE.json",
+      "sha256": "ab25cbce9471334921b964d10940d9a8d827a9782dddc43b3e54526033ec18e8",
+      "blob": "25cf8eb608fc34c6d30b4e088e1f5e60e955e60a",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED_CLOSURE.json",
+      "final_sha256": "ab25cbce9471334921b964d10940d9a8d827a9782dddc43b3e54526033ec18e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/LITERATURE_BRIDGES.md",
+      "sha256": "8db82b38ac6181580b1ca5d02575c893995b13069710baeb24a92c0fd92f3de9",
+      "blob": "8d55b59bdce78b3f210093e5fa4c497ea8a17c75",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-LITERATURE_BRIDGES.md",
+      "final_sha256": "8db82b38ac6181580b1ca5d02575c893995b13069710baeb24a92c0fd92f3de9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/LIVE.stdout",
+      "sha256": "75ced69236fe7da882f21fc9b7c9f468f51faaa3b3fe3d01087697777f212452",
+      "blob": "10ea995d53b1d6d7180d63c16697586e47fce2e4",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/LIVE.stdout",
+      "final_sha256": "75ced69236fe7da882f21fc9b7c9f468f51faaa3b3fe3d01087697777f212452"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/MANIFEST.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MANIFEST.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/MANIFEST.stdout",
+      "sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+      "blob": "50ec8df066cd3a538cd74b120006c2278ef9f0e7",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MANIFEST.stdout",
+      "final_sha256": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/MUTATIONS.json",
+      "sha256": "7d78bbf784397d890dfc2fb614269d2753afb0d403f14c07a29be9537b7509b9",
+      "blob": "4ebb8bd2ddd8faa9f0c08fc365bdee4dc66d2cf5",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MUTATIONS.json",
+      "final_sha256": "7d78bbf784397d890dfc2fb614269d2753afb0d403f14c07a29be9537b7509b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/NO_GO_LEDGER.md",
+      "sha256": "136d8e2404dd8a6f29455a0536adf3145a42427323aa1495a7c4b0081d138ce0",
+      "blob": "d4e981bf904315fe7624aedb0d07fd6f9305466c",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-NO_GO_LEDGER.md",
+      "final_sha256": "136d8e2404dd8a6f29455a0536adf3145a42427323aa1495a7c4b0081d138ce0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/OPPORTUNITY_QUEUE.md",
+      "sha256": "87268dc3e38eae940450604591fd6573faba1f049d696300320ca12ce67de25f",
+      "blob": "4012dc4f4c4929d2fd25652856d1c7206c51eb9b",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-OPPORTUNITY_QUEUE.md",
+      "final_sha256": "87268dc3e38eae940450604591fd6573faba1f049d696300320ca12ce67de25f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ORIGINAL_HASHES.json",
+      "sha256": "d0ba5928d2870bde6bce96edb31647a6d48bb4531b9a32614d08c202718209e6",
+      "blob": "9773bc5d5244d9024d0764f22073e43b95406cd5",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ORIGINAL_HASHES.json",
+      "final_sha256": "d0ba5928d2870bde6bce96edb31647a6d48bb4531b9a32614d08c202718209e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/PORT_RECEIPT.json",
+      "sha256": "98e8a28e72434f79c519cc6365f2a49900ea63a9bc8b0433781663239ba8285c",
+      "blob": "b38c8a3ec3c8e041b32c30f66dae12bfcbeb3027",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/PORT_RECEIPT.json",
+      "final_sha256": "98e8a28e72434f79c519cc6365f2a49900ea63a9bc8b0433781663239ba8285c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/PR_BACKLOG.md",
+      "sha256": "988e93b425c5035e748c709759e18a556b5e66d864f7f014c9a21ae5db37e9aa",
+      "blob": "4d5c4d647c6aecd0c67e2a637006a8c7d8651ae4",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-PR_BACKLOG.md",
+      "final_sha256": "988e93b425c5035e748c709759e18a556b5e66d864f7f014c9a21ae5db37e9aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/REVIEW_HISTORY.md",
+      "sha256": "de6d7db8afbd1cbfcf25d93b5959deefd37e5ff8d281459df4508dec788bf7ae",
+      "blob": "2d3dcd738fea59271284ce093da8cfb674d0f950",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-REVIEW_HISTORY.md",
+      "final_sha256": "de6d7db8afbd1cbfcf25d93b5959deefd37e5ff8d281459df4508dec788bf7ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ROOT_CANONICAL_REVIEW.md",
+      "sha256": "171b20ee0595fef143e274fa605b67f45045febff7d217ddbbe0726968a5904b",
+      "blob": "55a8ba82111ecd81f9240808b5b8f1f3d8639a36",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ROOT_CANONICAL_REVIEW.md",
+      "final_sha256": "171b20ee0595fef143e274fa605b67f45045febff7d217ddbbe0726968a5904b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/ROUTE_PORTFOLIO.md",
+      "sha256": "12ce54bca2107988517c47ceab59d3188cbf51bf5506543c7231aea7c0ae66be",
+      "blob": "13ebcca274098997eff94821ed61a444203683df",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ROUTE_PORTFOLIO.md",
+      "final_sha256": "12ce54bca2107988517c47ceab59d3188cbf51bf5506543c7231aea7c0ae66be"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/SOURCE_FREEZE.json",
+      "sha256": "1da20f2e52a38b93e41da045ae34e9df977da9ecb7e301a53e120c3918706565",
+      "blob": "660bb8df48617eb27acccc229013fb687525501d",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/SOURCE_FREEZE.json",
+      "final_sha256": "1da20f2e52a38b93e41da045ae34e9df977da9ecb7e301a53e120c3918706565"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/STATE.md",
+      "sha256": "444f52a2579fe73c992a70c23a51f148b86494f0c91f176cecc1bf7842f27ab2",
+      "blob": "1409ed619cce020ec23f0220d7892ddf861ec21d",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-STATE.md",
+      "final_sha256": "444f52a2579fe73c992a70c23a51f148b86494f0c91f176cecc1bf7842f27ab2"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/STATE.yaml",
+      "sha256": "85dd92afc35206d444f17795ce82074822b77a9da47a47e5c295b0bcd185e37b",
+      "blob": "fc1663bbfe1fe159ebf51d4dc3b4e16a4f0e34ed",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/STATE.yaml",
+      "final_sha256": "85dd92afc35206d444f17795ce82074822b77a9da47a47e5c295b0bcd185e37b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/TRACE_GATE.md",
+      "sha256": "9403787ef59896b14f17c7e30213ba099d8263e3ab31a9ec46d286533470b8ef",
+      "blob": "a8f1f71952db4b890933d0b7bc7afbac0ba6a709",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-TRACE_GATE.md",
+      "final_sha256": "9403787ef59896b14f17c7e30213ba099d8263e3ab31a9ec46d286533470b8ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/WRAPPER_CONTROLS.json",
+      "sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc",
+      "blob": "180b09f436b5bec46acce4f86d683593f145f984",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/WRAPPER_CONTROLS.json",
+      "final_sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/independent-canonical-review/READ_HASHES.json",
+      "sha256": "472d6e764527d9f055d03eaa8134a9ff23b667e80f670c918a88b38791878f0e",
+      "blob": "a38538d4005b080460d75e1fe90c9f342362c957",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/READ_HASHES.json",
+      "final_sha256": "472d6e764527d9f055d03eaa8134a9ff23b667e80f670c918a88b38791878f0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/independent-canonical-review/RESULT.json",
+      "sha256": "1386f4e59eab8ad0aacb82372c13bf9d0c307ca715b89ebe1352fa5c97ba6234",
+      "blob": "d8b57135283f98624db18fc34da27e0e50e39e0f",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/RESULT.json",
+      "final_sha256": "1386f4e59eab8ad0aacb82372c13bf9d0c307ca715b89ebe1352fa5c97ba6234"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/independent-canonical-review/REVIEW.md",
+      "sha256": "cbb354e13ed8c52ded0dd9151f0a3292a16ec1dcdf2c95d3c46ec767174e5ab8",
+      "blob": "1f591a0cfb214c6609b2ea851ecd7da5f4283e0a",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/pr8051-independent-canonical-review-REVIEW.md",
+      "final_sha256": "cbb354e13ed8c52ded0dd9151f0a3292a16ec1dcdf2c95d3c46ec767174e5ab8"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/independent-canonical-review/dispersion.diff",
+      "sha256": "023601744ff54de253efe003e6afc6150a7a9bdf19bb6ed3a7560ddd93cde522",
+      "blob": "c72b45f73d6740e2471b0e149465282ea12e6296",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/dispersion.diff",
+      "final_sha256": "023601744ff54de253efe003e6afc6150a7a9bdf19bb6ed3a7560ddd93cde522"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/independent-canonical-review/flux.diff",
+      "sha256": "543c65782f43eda95a074871862ffda9c8277061ee239a770075a0c4aa4b7ffa",
+      "blob": "d35ed006413f62a1a87b30f243f26fe5eb40a0b6",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/flux.diff",
+      "final_sha256": "543c65782f43eda95a074871862ffda9c8277061ee239a770075a0c4aa4b7ffa"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-cold-review/READ_HASHES.json",
+      "sha256": "b9ea2c5f325ff8a62756dcbcd30e458dd888e36eba6ab061892b020d1f845c22",
+      "blob": "b17791ec7a6721415b5cf4a7da57ecad29514720",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/READ_HASHES.json",
+      "final_sha256": "b9ea2c5f325ff8a62756dcbcd30e458dd888e36eba6ab061892b020d1f845c22"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-cold-review/RESULT.json",
+      "sha256": "faf3e211f1416884d42a6c835bd425384b3d53838de7762b40df5832c96378fe",
+      "blob": "4f568671902dff8e8eb4cacd341cab9462193a9a",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/RESULT.json",
+      "final_sha256": "faf3e211f1416884d42a6c835bd425384b3d53838de7762b40df5832c96378fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-cold-review/REVIEW.md",
+      "sha256": "9923a93b11f786342d0e9fe9a1a17f84f995c8e60c577df7c3cf036960261489",
+      "blob": "11dfa738f550fef364b1016a5486a095b027891d",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/pr8051-originals-native-zero-penalty-flux-selection-cold-review-REVIEW.md",
+      "final_sha256": "9923a93b11f786342d0e9fe9a1a17f84f995c8e60c577df7c3cf036960261489"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-cold-review/check.py",
+      "sha256": "df52def1912eb3de71d6384176fd2acf3f42f708ba0ac992b21af66941ad6773",
+      "blob": "2eeb9c3f5ffe1116854e773b2b232e0be43b1c8b",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/check.py",
+      "final_sha256": "df52def1912eb3de71d6384176fd2acf3f42f708ba0ac992b21af66941ad6773"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/DERIVATION.md",
+      "sha256": "a54fddac4ac8962e7ddfa55de140e056664812c42fc5106a115f6924bfeed643",
+      "blob": "7e71f37cd50ceee8944993fbb127e60da4919744",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/pr8051-originals-native-zero-penalty-flux-selection-root-DERIVATION.md",
+      "final_sha256": "a54fddac4ac8962e7ddfa55de140e056664812c42fc5106a115f6924bfeed643"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/FINAL_FREEZE.json",
+      "sha256": "265e350d3c4fbc24ed1d9204210a7cb9bdc9e0b92bddecab6d5b8a4affe80fb6",
+      "blob": "b1b0dd77cafe2d5143255afa9dab3b79a9d914a3",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/FINAL_FREEZE.json",
+      "final_sha256": "265e350d3c4fbc24ed1d9204210a7cb9bdc9e0b92bddecab6d5b8a4affe80fb6"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/PREREGISTRATION.md",
+      "sha256": "cb291e8298b02b38d11cd1c1e7250d95c603e53bcf15e54272ad4486c10c7703",
+      "blob": "2736f0cf6ec6a46238a2e91f0cca31beeb83312e",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/pr8051-originals-native-zero-penalty-flux-selection-root-PREREGISTRATION.md",
+      "final_sha256": "cb291e8298b02b38d11cd1c1e7250d95c603e53bcf15e54272ad4486c10c7703"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/RESULT.json",
+      "sha256": "26cd9d33b8be1a5ffdc6f70ca11be33a57496a8ac23e7fc8c081de7aa9ce7cc9",
+      "blob": "9f3d7873c4fc2f72fc594aef66b65660751d1f21",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/RESULT.json",
+      "final_sha256": "26cd9d33b8be1a5ffdc6f70ca11be33a57496a8ac23e7fc8c081de7aa9ce7cc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/SOURCE_RECEIPT.json",
+      "sha256": "551693f870a1a0d9b8a355b2b1253b97f66b14643d80f15034597eb464ca7569",
+      "blob": "1f7e1287f419673aaa271e3d11602221f053c7a1",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/SOURCE_RECEIPT.json",
+      "final_sha256": "551693f870a1a0d9b8a355b2b1253b97f66b14643d80f15034597eb464ca7569"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/STDERR",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/STDERR",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/check.py",
+      "sha256": "b066614ac8169cdfef280db5403f6349c85744d13dd69c429d0a42bd0352ff53",
+      "blob": "1cd4a2675bdace23491a27c2256d193070452bd6",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/check.py",
+      "final_sha256": "b066614ac8169cdfef280db5403f6349c85744d13dd69c429d0a42bd0352ff53"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion-cold-review/PREREGISTRATION.md",
+      "sha256": "13ecbe14a8fcde3901a052634d830b099ef696bb92b9a01fe41d97d587d08028",
+      "blob": "e637c78d426fbffdb414d3d361ae009128280d05",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-PREREGISTRATION.md",
+      "final_sha256": "13ecbe14a8fcde3901a052634d830b099ef696bb92b9a01fe41d97d587d08028"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion-cold-review/RESULT.json",
+      "sha256": "8993348854250efa403c38047348178c29a96781c490bbcc3f8e9c4b0771cdc6",
+      "blob": "da83fbf3a45f3d32cf6a8e7cb1505ebc7d569b5f",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/RESULT.json",
+      "final_sha256": "8993348854250efa403c38047348178c29a96781c490bbcc3f8e9c4b0771cdc6"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion-cold-review/REVIEW.md",
+      "sha256": "b94041c85fc481862e10a6ca02bb92a31f157b856e80b5db44a791af990ba2e0",
+      "blob": "1a8e474383b7fd9a46b1000101f57954d7ce7cbf",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-REVIEW.md",
+      "final_sha256": "b94041c85fc481862e10a6ca02bb92a31f157b856e80b5db44a791af990ba2e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion-cold-review/check.py",
+      "sha256": "bb71e64ebf363779f0e461897f9c2cd3f250d272aa3d070e4595d40fe7626bd8",
+      "blob": "8526d4adcb74ef4b31b4a060ef51692939d4c650",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/check.py",
+      "final_sha256": "bb71e64ebf363779f0e461897f9c2cd3f250d272aa3d070e4595d40fe7626bd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion/DERIVATION.md",
+      "sha256": "f37822f58b95e3a49b376d40951a39fac81b32ffac4e02380070712825e5325a",
+      "blob": "145bd1047e331a4f6022f764cf58ab38badb83b2",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/pr8051-originals-native-zero-penalty-pi-dispersion-DERIVATION.md",
+      "final_sha256": "f37822f58b95e3a49b376d40951a39fac81b32ffac4e02380070712825e5325a"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion/PREREGISTRATION.md",
+      "sha256": "baff886d4c3004ecd0d8588451b751e577f49815e62de7ad3bede7a9ac52568e",
+      "blob": "bbca14fc8e462953a34d4542bc61bfda7942888d",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/pr8051-originals-native-zero-penalty-pi-dispersion-PREREGISTRATION.md",
+      "final_sha256": "baff886d4c3004ecd0d8588451b751e577f49815e62de7ad3bede7a9ac52568e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion/RESULT.json",
+      "sha256": "315e190569a0236d1c64b3614001fa441db40a516f9dfc411fe6b73d421a42fc",
+      "blob": "cd4b026ab957efae535399174fbe0da1aa2fce8f",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/RESULT.json",
+      "final_sha256": "315e190569a0236d1c64b3614001fa441db40a516f9dfc411fe6b73d421a42fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion/check.py",
+      "sha256": "5028c1c514920f2df78dc733e1a3720738835ee912a35ee5b8690f69cf52b12d",
+      "blob": "0af486bb736da63cf37fa1d6ba8a57e410faf5af",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/check.py",
+      "final_sha256": "5028c1c514920f2df78dc733e1a3720738835ee912a35ee5b8690f69cf52b12d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/partition.stderr",
+      "sha256": "9d01a4cc2c76953ff38fe7f1428b218d820df4e2ded0292bcc2678e2d4abbdee",
+      "blob": "e3b00a445b4970a9ba715ee7e9a69ff758a6d430",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/partition.stderr",
+      "final_sha256": "9d01a4cc2c76953ff38fe7f1428b218d820df4e2ded0292bcc2678e2d4abbdee"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/partition.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/partition.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/seam.stderr",
+      "sha256": "48e86a950099d7361876a39c3dde254da2a8504d9658a74270400fa5450d682b",
+      "blob": "9f34fc21a12d526c92800edd3c6d27f9fe2cde4a",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/seam.stderr",
+      "final_sha256": "48e86a950099d7361876a39c3dde254da2a8504d9658a74270400fa5450d682b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/seam.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/seam.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/trivial_flux.stderr",
+      "sha256": "c875778658fbcb3450998a4f7c45c16797755647297abf3b036554cffa527262",
+      "blob": "229ddd463ba2e6edd56e2ebcba24e2be19f8085e",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/trivial_flux.stderr",
+      "final_sha256": "c875778658fbcb3450998a4f7c45c16797755647297abf3b036554cffa527262"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/trivial_flux.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "Preserve exact historical bytes; proof/evidence reviewed, old verdict is not current acceptance",
+      "final_path": "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/trivial_flux.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "disposition": "Accepted with confirmed mechanical loader/input metadata and honest evidence wording corrections; scientific calculations/proofs preserved",
+      "final_path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "final_sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "78c177a3f8816d1a2496ded857763036f7b62293df002e8b597455ab5d799431",
+      "blob": "3178a47da704c86299492a164372d68f80ce6b95",
+      "disposition": "Generated citation manifest excluded from source proposal; integration pipeline regenerates authority-neutral graph metadata"
+    },
+    {
+      "path": "outputs/native_zero_penalty_optimal_flux_dispersion_2026_09_08.json",
+      "sha256": "f282f0f6d8c285c4467cb50057c5e7d3511fc35a4b68b1b918e510c54cb85b6b",
+      "blob": "fdf7b2ff891779d2b44769106fcf33366e79fc28",
+      "disposition": "Original scientific fields compared against live/helper results; replace with final bound execution output",
+      "final_path": "outputs/native_zero_penalty_optimal_flux_dispersion_2026_09_08.json",
+      "final_sha256": "7d677f4936bc750929d7406b00eee2929a7e94be5d58aff619b18582fefe27ab"
+    },
+    {
+      "path": "scripts/native_zero_penalty_dispersion_exact_2026_09_08.py",
+      "sha256": "c94380769f5ac2303d6090f49c2977af4629ac3ed7ddd0ac439939afd49a4899",
+      "blob": "64b9eda9eaf53fe13cb0662f88ae54889996e093",
+      "disposition": "Accepted with confirmed mechanical loader/input metadata and honest evidence wording corrections; scientific calculations/proofs preserved",
+      "final_path": "scripts/native_zero_penalty_dispersion_exact_2026_09_08.py",
+      "final_sha256": "a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809"
+    },
+    {
+      "path": "scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py",
+      "sha256": "60969f5e09f70d0a448f097412a9c355720e43c0acd9f14c9817f13700bcfc6a",
+      "blob": "27ceb4f6e9f6082ded58fc5bbe2c00d9b55de00d",
+      "disposition": "Accepted with confirmed mechanical loader/input metadata and honest evidence wording corrections; scientific calculations/proofs preserved",
+      "final_path": "scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py",
+      "final_sha256": "09311aa9b54a967cd1e86641c082ee4b4edcd3d88f737b06fd83e0d0d07e39e8"
+    },
+    {
+      "path": "scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py",
+      "sha256": "0b471be98f0a40276bfa95b68bc44a724f6881df4c7cc047101c9d43f73e78b5",
+      "blob": "2a028145a9bdcea486e8d12952c945e43a4eab9f",
+      "disposition": "Accepted with confirmed mechanical loader/input metadata and honest evidence wording corrections; scientific calculations/proofs preserved",
+      "final_path": "scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py",
+      "final_sha256": "6d1d28e3b8555f630d604e42efc0d5ab06e46c587d4428b8518f1bcb8ab6f96c"
+    }
+  ],
+  "disposition_sha256": "418f143f41c18edd46f167fc00ae78d56ec652155ec5e830684ca384ed24cbf4",
+  "proof_review": "/private/tmp/review-drain-20260915/check8051/proof-review.md",
+  "proof_review_sha256": "5e293c09762848872a9a558ca2993101b5a5db1f7e973faa8f9bc434817ebd77",
+  "original_actual_run": {
+    "exit_code": 0,
+    "elapsed": 0.25006308301817626,
+    "cap": 180,
+    "source_sha256": "60969f5e09f70d0a448f097412a9c355720e43c0acd9f14c9817f13700bcfc6a"
+  },
+  "independent_control": {
+    "status": "PASS",
+    "spectrum_cases": [
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          -1,
+          -1
+        ],
+        "error": 1.4210854715202004e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          -1,
+          1
+        ],
+        "error": 1.865174681370263e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          1,
+          -1
+        ],
+        "error": 1.4210854715202004e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          1,
+          1
+        ],
+        "error": 1.5987211554602254e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          -1,
+          -1
+        ],
+        "error": 1.3322676295501878e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          -1,
+          1
+        ],
+        "error": 1.3322676295501878e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          1,
+          -1
+        ],
+        "error": 1.509903313490213e-14
+      },
+      {
+        "L": [
+          4,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          1,
+          1
+        ],
+        "error": 1.509903313490213e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          -1,
+          -1
+        ],
+        "error": 2.042810365310288e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          -1,
+          1
+        ],
+        "error": 2.042810365310288e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          1,
+          -1
+        ],
+        "error": 3.019806626980426e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          -1,
+          1,
+          1
+        ],
+        "error": 1.7763568394002505e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          -1,
+          -1
+        ],
+        "error": 1.687538997430238e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          -1,
+          1
+        ],
+        "error": 1.9539925233402755e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          1,
+          -1
+        ],
+        "error": 2.6201263381153694e-14
+      },
+      {
+        "L": [
+          6,
+          6,
+          4
+        ],
+        "tau": [
+          1,
+          1,
+          1
+        ],
+        "error": 1.865174681370263e-14
+      }
+    ],
+    "trace_cases": 14,
+    "scope": "Independent dense spectra numerical corroboration, exact occupation identities; no exhaustive all-flux optimization",
+    "elapsed": 0.020907250000163913
+  },
+  "independent_control_source_sha256": "174ce0f48dfadcf56b000b0117a1317bbdb809d56dd7955f1fa5208781864568",
+  "authority_context": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "unchanged authority scope reused from prior full read"
+    }
+  ],
+  "remaining_findings": [],
+  "scientific_findings_remaining": [],
+  "full_pipeline_runs": 0,
+  "audit_verdict": null,
+  "reviewer_source_edits": false,
+  "child8054_excluded": true,
+  "candidate": "/private/tmp/review-drain-20260915/unit8051-author-copy",
+  "staged_tree": "53982269fe9fad99775676fec31dfc1354b97702",
+  "final_path_identities": {
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/AUTHOR_VERIFICATION_DRIVER.py": "fc0cb4b905255d21242ad2e0f47782a975c3d445dfa87bf4c05e4976f69c1fd7",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH.stdout": "d1aceb11ff8236aaed13dd326f2a299302e260adf1e5a28787c05b91886a4fe8",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/GRAPH_DELTA.json": "f045004fa77735fccc8a4c174042631f4590fe702acc2389673902b499c27f9a",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED.stdout": "9a65a198ccdca6975efd1d3a677cc27876a749567c86f85d16a417855f8333eb",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ISOLATED_CLOSURE.json": "ab25cbce9471334921b964d10940d9a8d827a9782dddc43b3e54526033ec18e8",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/LIVE.stdout": "75ced69236fe7da882f21fc9b7c9f468f51faaa3b3fe3d01087697777f212452",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MANIFEST.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MANIFEST.stdout": "4d976ae35511cae939db1e1504237d652553c65fac1124793c522478d4e0f4dc",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/MUTATIONS.json": "7d78bbf784397d890dfc2fb614269d2753afb0d403f14c07a29be9537b7509b9",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/ORIGINAL_HASHES.json": "d0ba5928d2870bde6bce96edb31647a6d48bb4531b9a32614d08c202718209e6",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/PORT_RECEIPT.json": "98e8a28e72434f79c519cc6365f2a49900ea63a9bc8b0433781663239ba8285c",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/README.md": "a07616eedc93cc8c46f3989f6f6fccf298a28685461bb02fd60f19f50bddd11e",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/SOURCE_FREEZE.json": "1da20f2e52a38b93e41da045ae34e9df977da9ecb7e301a53e120c3918706565",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/STATE.yaml": "85dd92afc35206d444f17795ce82074822b77a9da47a47e5c295b0bcd185e37b",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/WRAPPER_CONTROLS.json": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/READ_HASHES.json": "472d6e764527d9f055d03eaa8134a9ff23b667e80f670c918a88b38791878f0e",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/RESULT.json": "1386f4e59eab8ad0aacb82372c13bf9d0c307ca715b89ebe1352fa5c97ba6234",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/dispersion.diff": "023601744ff54de253efe003e6afc6150a7a9bdf19bb6ed3a7560ddd93cde522",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/flux.diff": "543c65782f43eda95a074871862ffda9c8277061ee239a770075a0c4aa4b7ffa",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/independent-canonical-review/pr8051-independent-canonical-review-REVIEW.md": "cbb354e13ed8c52ded0dd9151f0a3292a16ec1dcdf2c95d3c46ec767174e5ab8",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/READ_HASHES.json": "b9ea2c5f325ff8a62756dcbcd30e458dd888e36eba6ab061892b020d1f845c22",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/RESULT.json": "faf3e211f1416884d42a6c835bd425384b3d53838de7762b40df5832c96378fe",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/check.py": "df52def1912eb3de71d6384176fd2acf3f42f708ba0ac992b21af66941ad6773",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-cold-review/pr8051-originals-native-zero-penalty-flux-selection-cold-review-REVIEW.md": "9923a93b11f786342d0e9fe9a1a17f84f995c8e60c577df7c3cf036960261489",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/FINAL_FREEZE.json": "265e350d3c4fbc24ed1d9204210a7cb9bdc9e0b92bddecab6d5b8a4affe80fb6",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/RESULT.json": "26cd9d33b8be1a5ffdc6f70ca11be33a57496a8ac23e7fc8c081de7aa9ce7cc9",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/SOURCE_RECEIPT.json": "551693f870a1a0d9b8a355b2b1253b97f66b14643d80f15034597eb464ca7569",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/STDERR": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/check.py": "b066614ac8169cdfef280db5403f6349c85744d13dd69c429d0a42bd0352ff53",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/pr8051-originals-native-zero-penalty-flux-selection-root-DERIVATION.md": "a54fddac4ac8962e7ddfa55de140e056664812c42fc5106a115f6924bfeed643",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-flux-selection-root/pr8051-originals-native-zero-penalty-flux-selection-root-PREREGISTRATION.md": "cb291e8298b02b38d11cd1c1e7250d95c603e53bcf15e54272ad4486c10c7703",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/RESULT.json": "8993348854250efa403c38047348178c29a96781c490bbcc3f8e9c4b0771cdc6",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/check.py": "bb71e64ebf363779f0e461897f9c2cd3f250d272aa3d070e4595d40fe7626bd8",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-PREREGISTRATION.md": "13ecbe14a8fcde3901a052634d830b099ef696bb92b9a01fe41d97d587d08028",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion-cold-review/pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-REVIEW.md": "b94041c85fc481862e10a6ca02bb92a31f157b856e80b5db44a791af990ba2e0",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/RESULT.json": "315e190569a0236d1c64b3614001fa441db40a516f9dfc411fe6b73d421a42fc",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/check.py": "5028c1c514920f2df78dc733e1a3720738835ee912a35ee5b8690f69cf52b12d",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/pr8051-originals-native-zero-penalty-pi-dispersion-DERIVATION.md": "f37822f58b95e3a49b376d40951a39fac81b32ffac4e02380070712825e5325a",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/originals/native-zero-penalty-pi-dispersion/pr8051-originals-native-zero-penalty-pi-dispersion-PREREGISTRATION.md": "baff886d4c3004ecd0d8588451b751e577f49815e62de7ad3bede7a9ac52568e",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/partition.stderr": "9d01a4cc2c76953ff38fe7f1428b218d820df4e2ded0292bcc2678e2d4abbdee",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/partition.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ARTIFACT_PLAN.md": "263217bd8baf24509bf032ada942e30121171e91bef790aade7e239f31ac5380",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ASSUMPTIONS_AND_IMPORTS.md": "48586d839565bc6cf19495a22b9f8f1f1e299bfda167a342e59d90ea392943c4",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-CLAIM_STATUS_CERTIFICATE.md": "f492d6eaa2dc2787d30d1b3a4c45892421ec03d62638b6b87ea0f9cf44a6a810",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-CONTROL_CONTRACT.md": "6490e4267b524508083c001db0bc9d81e8372d2a2a1811327632db33a4f3535c",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-GOAL.md": "4f6a0bd315c9b9a66d57bc949dd9b76f492b16e23a0a763ccbd86fb6f4183269",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-HANDOFF.md": "e01f85ffebd279e23dd8a0b13465ce7a876667a7c5edaa2aba5705ffdd1a0dc0",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-LITERATURE_BRIDGES.md": "8db82b38ac6181580b1ca5d02575c893995b13069710baeb24a92c0fd92f3de9",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-NO_GO_LEDGER.md": "136d8e2404dd8a6f29455a0536adf3145a42427323aa1495a7c4b0081d138ce0",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-OPPORTUNITY_QUEUE.md": "87268dc3e38eae940450604591fd6573faba1f049d696300320ca12ce67de25f",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-PR_BACKLOG.md": "988e93b425c5035e748c709759e18a556b5e66d864f7f014c9a21ae5db37e9aa",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-REVIEW_HISTORY.md": "de6d7db8afbd1cbfcf25d93b5959deefd37e5ff8d281459df4508dec788bf7ae",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ROOT_CANONICAL_REVIEW.md": "171b20ee0595fef143e274fa605b67f45045febff7d217ddbbe0726968a5904b",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-ROUTE_PORTFOLIO.md": "12ce54bca2107988517c47ceab59d3188cbf51bf5506543c7231aea7c0ae66be",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-STATE.md": "444f52a2579fe73c992a70c23a51f148b86494f0c91f176cecc1bf7842f27ab2",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-TRACE_GATE.md": "9403787ef59896b14f17c7e30213ba099d8263e3ab31a9ec46d286533470b8ef",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/seam.stderr": "48e86a950099d7361876a39c3dde254da2a8504d9658a74270400fa5450d682b",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/seam.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/trivial_flux.stderr": "c875778658fbcb3450998a4f7c45c16797755647297abf3b036554cffa527262",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/trivial_flux.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/runner-cache/native_zero_penalty_optimal_flux_dispersion_2026_09_08.txt": "fa38b0636ff8accf0866bc93c24a216277dd24c935370fc08a76ae968d1360d5",
+    "outputs/native_zero_penalty_optimal_flux_dispersion_2026_09_08.json": "7d677f4936bc750929d7406b00eee2929a7e94be5d58aff619b18582fefe27ab",
+    "scripts/native_zero_penalty_dispersion_exact_2026_09_08.py": "a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809",
+    "scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py": "09311aa9b54a967cd1e86641c082ee4b4edcd3d88f737b06fd83e0d0d07e39e8",
+    "scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py": "6d1d28e3b8555f630d604e42efc0d5ab06e46c587d4428b8518f1bcb8ab6f96c"
+  },
+  "source_inputs": {
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py": "6d1d28e3b8555f630d604e42efc0d5ab06e46c587d4428b8518f1bcb8ab6f96c",
+    "scripts/native_zero_penalty_dispersion_exact_2026_09_08.py": "a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809"
+  },
+  "final_actual_run": {
+    "runner": "scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "{\n  \"executed_predicates\": 7059,\n  \"parts\": {\n    \"flux\": {\n      \"checks\": 6962,\n      \"partition_controls\": [\n        {\n          \"vertices\": 2,\n          \"frequencies\": [],\n          \"native\": {\n            \"0\": 2\n          },\n          \"auxiliary\": {\n            \"0\": 4\n          }\n        },\n        {\n          \"vertices\": 2,\n          \"frequencies\": [\n            1\n          ],\n          \"native\": {\n            \"-1\": 1,\n            \"1\": 1\n          },\n          \"auxiliary\": {\n            \"-2\": 1,\n            \"0\": 2,\n            \"2\": 1\n          }\n        },\n        {\n          \"vertices\": 4,\n          \"frequencies\": [\n            1\n          ],\n          \"native\": {\n            \"-1\": 4,\n            \"1\": 4\n          },\n          \"auxiliary\": {\n            \"-2\": 4,\n            \"0\": 8,\n            \"2\": 4\n          }\n        },\n        {\n          \"vertices\": 4,\n          \"frequencies\": [\n            1,\n            2\n          ],\n          \"native\": {\n            \"-3\": 2,\n            \"1\": 2,\n            \"-1\": 2,\n            \"3\": 2\n          },\n          \"auxiliary\": {\n            \"-6\": 1,\n            \"-2\": 3,\n            \"2\": 3,\n            \"-4\": 2,\n            \"0\": 4,\n            \"4\": 2,\n            \"6\": 1\n          }\n        },\n        {\n          \"vertices\": 6,\n          \"frequencies\": [],\n          \"native\": {\n            \"0\": 32\n          },\n          \"auxiliary\": {\n            \"0\": 64\n          }\n        },\n        {\n          \"vertices\": 6,\n          \"frequencies\": [\n            1,\n            1,\n            3\n          ],\n          \"native\": {\n            \"-5\": 4,\n            \"1\": 4,\n            \"-3\": 8,\n            \"3\": 8,\n            \"-1\": 4,\n            \"5\": 4\n          },\n          \"auxiliary\": {\n            \"-10\": 1,\n            \"-4\": 6,\n            \"2\": 9,\n            \"-8\": 4,\n            \"-2\": 9,\n            \"4\": 6,\n            \"-6\": 6,\n            \"0\": 12,\n            \"6\": 6,\n            \"8\": 4,\n            \"10\": 1\n          }\n        }\n      ],\n      \"torus_controls\": [\n        {\n          \"extents\": [\n            4,\n            4,\n            4\n          ],\n          \"vertices\": 64,\n          \"basic_cycles\": 240,\n          \"reflections\": 6,\n          \"crossing_invariances\": 480,\n          \"wrong_trivial_background_cycles\": 192\n        },\n        {\n          \"extents\": [\n            6,\n            6,\n            6\n          ],\n          \"vertices\": 216,\n          \"basic_cycles\": 756,\n          \"reflections\": 9,\n          \"crossing_invariances\": 1620,\n          \"wrong_trivial_background_cycles\": 648\n        },\n        {\n          \"extents\": [\n            4,\n            6,\n            8\n          ],\n          \"vertices\": 192,\n          \"basic_cycles\": 680,\n          \"reflections\": 9,\n          \"crossing_invariances\": 1440,\n          \"wrong_trivial_background_cycles\": 576\n        }\n      ],\n      \"seconds\": 0.024542875005863607,\n      \"rss_mib\": 22.71875,\n      \"scope\": \"exact objective identity and theorem assumption fixtures; no numerical optimization or phase claim\"\n    },\n    \"dispersion\": {\n      \"predicates\": 97,\n      \"rows\": [\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            -1,\n            -1,\n            -1\n          ],\n          \"rank\": 56,\n          \"active_zero_modes\": 8\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            -1,\n            -1,\n            1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            -1,\n            1,\n            -1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            -1,\n            1,\n            1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            1,\n            -1,\n            -1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            1,\n            -1,\n            1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            1,\n            1,\n            -1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            4\n          ],\n          \"tau\": [\n            1,\n            1,\n            1\n          ],\n          \"rank\": 64,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            -1,\n            -1,\n            -1\n          ],\n          \"rank\": 88,\n          \"active_zero_modes\": 8\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            -1,\n            -1,\n            1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            -1,\n            1,\n            -1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            -1,\n            1,\n            1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            1,\n            -1,\n            -1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            1,\n            -1,\n            1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            1,\n            1,\n            -1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        },\n        {\n          \"L\": [\n            4,\n            4,\n            6\n          ],\n          \"tau\": [\n            1,\n            1,\n            1\n          ],\n          \"rank\": 96,\n          \"active_zero_modes\": 0\n        }\n      ],\n      \"seconds\": 0.17342766700312495,\n      \"rss_bytes\": 25280512,\n      \"source_sha256\": \"a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809\"\n    }\n  },\n  \"elapsed_seconds\": 0.20501595793757588,\n  \"peak_rss_mib\": 24.109375,\n  \"source_sha256\": \"09311aa9b54a967cd1e86641c082ee4b4edcd3d88f737b06fd83e0d0d07e39e8\",\n  \"input_sha256\": {\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\",\n    \"docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md\": \"810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py\": \"6d1d28e3b8555f630d604e42efc0d5ab06e46c587d4428b8518f1bcb8ab6f96c\",\n    \"scripts/native_zero_penalty_dispersion_exact_2026_09_08.py\": \"a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809\"\n  },\n  \"scope\": \"Supplied U0 with explicit imported flux theorem; finite exact dispersion, no phase claim.\"\n}\nper_element: canonical hopping and seam signs.\nper_site: bipartite reflection geometry.\nper_mode: exact Majorana frequency squares and rank.\nper_block: physical-even and auxiliary-full partition identity.\nlattice_wide: checked and not executed; the all-torus optimizer follows analytically from the explicit imported theorem and verified hypotheses. Executed checks cover only the declared finite partition, reflection and dispersion fixtures.\nTOTAL: PASS=7059 FAIL=0\nResources: 0.205016s, 24.109MiB; timeout180s, RSS384MiB.\n",
+    "stderr": "",
+    "elapsed_sec": 0.2587718963623047,
+    "timeout_sec": 180,
+    "live_log": "/private/tmp/review-drain-20260915/unit8051-author-copy/logs/runner-cache/.in-progress/native_zero_penalty_optimal_flux_dispersion_2026_09_08.txt"
+  },
+  "final_execution_receipt_sha256": "1d146723c9e020f50ceca6587ec0f34de9ae9c97fa7d8c1bc0d41000e05b1fb2",
+  "preexecution_sha256": "a92497dce2272caac19b2dac5a2158eb0026038ae81ef2772934225b88ea261b",
+  "helper_discovery": [
+    "native_zero_penalty_dispersion_exact_2026_09_08",
+    "native_zero_penalty_optimal_flux_exact_2026_09_08"
+  ],
+  "actual_claim_type": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "citations": [
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "docs/work_history/repo/review_feedback/pr8051-native-optimal-flux-evidence/pr8051-HANDOFF.md"
+  ],
+  "current_main_loss": "None: proposal adds paths only atop accepted8049; inherited current parent inputs match prior verified hashes",
+  "dependency_scope": "Three linked mathematical repository parents (endpoint/full dictionary/native algebra). Historical HANDOFF is context only; canonical cache is execution evidence. External Macris\u2013Nachtergaele theorem and finite-temperature remark are explicit load-bearing mathematical imports; Lieb historical context.",
+  "claim_disposition": [
+    "Finite uniform U0 even rectangular torus optimizer: accepted conditional on supplied native model and explicit reflection theorem",
+    "Exact all-eight-twist dispersion, nullity, signed multiplicities and physical ground energy: accepted finite supplied model",
+    "Full-Fock trace objective conversion: accepted; fixed-number trace excluded",
+    "Historical original standalone dispersion non-optimization caveat preserved and reconciled with later explicit import",
+    "Uniqueness, concentration, flux gap, nonzero-U, continuum phase, species and action selection: explicitly not established"
+  ],
+  "confirmed_fixes": [
+    "static helper loader executes each module.out once with outer alarm preserved",
+    "helper180 metadata and own-note proof pins",
+    "6961+97 mathematical predicates plus one RSS guard",
+    "analytical lattice-wide certificate and historical mutation attribution",
+    "61 exact historical files plus README/name map",
+    "fresh source/input-bound cache and output scientific-field equality"
+  ]
+}

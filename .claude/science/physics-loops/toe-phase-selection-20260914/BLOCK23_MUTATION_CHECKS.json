@@ -1,0 +1,148 @@
+{
+  "checked_at_utc": "2026-09-15T05:43:22.007846+00:00",
+  "source": ".claude/science/physics-loops/toe-phase-selection-20260914/block23_rishon_reflection_check.py",
+  "source_sha256": "93adaa878ed0d5c77de501a6108e68fa7a69e7f0372b2d0ed81b5b14b9ca21dd",
+  "scope": "Actual altered runner copies; assertion failures challenge finite structural checks, not independent proof review.",
+  "mutations": [
+    {
+      "mutation": "dual_base_shift",
+      "replace": "E[shift(v, k, -1, L), k] = eps * value",
+      "with": "E[shift(v, k, 0, L), k] = eps * value",
+      "sha256": "3585986efd0bc7844ec82eccbcd427e6165c070db5aae1fbb0de9e6369b4dbd3",
+      "exit_code": 1,
+      "elapsed_seconds": 0.7586193750612438,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/dual_base_shift.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/dual_base_shift.py\", line 525, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/dual_base_shift.py\", line 136, in field_projection_checks\n    assert divergence(E, L) == d2(b, L)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "particle_hole",
+      "replace": "return {(v, i, s): 2 - n[reflect_vertex",
+      "with": "return {(v, i, s): n[reflect_vertex",
+      "sha256": "9b88238ce52d3f1e3e527aec06fff949d134bfcfb6aaa6725e745101c8f69341",
+      "exit_code": 1,
+      "elapsed_seconds": 0.3312473330879584,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/particle_hole.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/particle_hole.py\", line 525, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/particle_hole.py\", line 141, in field_projection_checks\n    assert cone_projection_predicate(n, normal, L)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "corner_reflection_sign",
+      "replace": "-s if i == normal else s): -power",
+      "with": "-s if i == normal else s): power",
+      "sha256": "79e013553e8637a61b15d99d3edfaaef35efc7688e8f70ddfd2fd94c6f5d5a30",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2793764160014689,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/corner_reflection_sign.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/corner_reflection_sign.py\", line 524, in run\n    'endpoint_rings':ring_and_reflection_checks(),\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/corner_reflection_sign.py\", line 251, in ring_and_reflection_checks\n    assert theta_word(left, normal, L) == right\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "normal_winding",
+      "replace": "if normal_flux:\n",
+      "with": "if False:\n",
+      "sha256": "5377bc72562cc85a7b60392d50a5a87d41d70e557d40430948d3792bc135e3b9",
+      "exit_code": 1,
+      "elapsed_seconds": 0.291011541034095,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/normal_winding.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/normal_winding.py\", line 525, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/normal_winding.py\", line 155, in field_projection_checks\n    assert not cone_projection_predicate(nn, normal, L)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "tangential_winding",
+      "replace": "return tuple(n[key] for key in cross), tangential",
+      "with": "return tuple(n[key] for key in cross), (0, 0)",
+      "sha256": "847ae576c30721a0b62ea9aafb2750486ef47aac346741df3faaed67dfbae829",
+      "exit_code": 1,
+      "elapsed_seconds": 0.23369608307257295,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/tangential_winding.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/tangential_winding.py\", line 525, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/tangential_winding.py\", line 155, in field_projection_checks\n    assert not cone_projection_predicate(nn, normal, L)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "crossing_link_constraint",
+      "replace": "return tuple(n[key] for key in cross), tangential",
+      "with": "return (), tangential",
+      "sha256": "893af492aad7f2d49f2ecf1c5ae4e4f1f3d583f910f3bad7fe2df9eb312887bd",
+      "exit_code": 1,
+      "elapsed_seconds": 0.3644472500309348,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/crossing_link_constraint.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/crossing_link_constraint.py\", line 525, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/crossing_link_constraint.py\", line 189, in field_projection_checks\n    assert a[0] != b[0]\n           ^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "cyclic_endpoint_shift",
+      "replace": "ans[key] += power",
+      "with": "ans[key] = (ans[key] + power) % 3",
+      "sha256": "9d18b3a5e10ff1fd34f00b3ebdb2782e8ec050ce23e4c1fd4837dc33cb01a6e6",
+      "exit_code": 1,
+      "elapsed_seconds": 0.19230100000277162,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/cyclic_endpoint_shift.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/cyclic_endpoint_shift.py\", line 524, in run\n    'endpoint_rings':ring_and_reflection_checks(),\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/cyclic_endpoint_shift.py\", line 270, in ring_and_reflection_checks\n    assert (got is not None) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "endpoint_amplitude",
+      "replace": "R = sp.Matrix([[0, 0, 0], [1, 0, 0], [0, 1, 0]])",
+      "with": "R = sp.Matrix([[0, 0, 0], [sp.sqrt(2), 0, 0], [0, 1, 0]])",
+      "sha256": "12698223027ce312d9d278573e1dd7d5c1fdc037bb5cdf277a209a46aa8b32d8",
+      "exit_code": 1,
+      "elapsed_seconds": 0.21688829199410975,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/endpoint_amplitude.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/endpoint_amplitude.py\", line 524, in run\n    'endpoint_rings':ring_and_reflection_checks(),\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/endpoint_amplitude.py\", line 283, in ring_and_reflection_checks\n    assert embedding.T * sp.kronecker_product(R, R.T) * embedding == R\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "dissemination_plane",
+      "replace": "(2*ell-1-v[axis]) % L",
+      "with": "(2*ell-v[axis]) % L",
+      "sha256": "247091f238c17ed32c8dee9cf0aa3bcca891a7d3559a224dcf382fe9bac63ac9",
+      "exit_code": 1,
+      "elapsed_seconds": 0.34692729206290096,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/dissemination_plane.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/dissemination_plane.py\", line 526, in run\n    'dissemination':dissemination_and_checkerboards(),\n                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/dissemination_plane.py\", line 328, in dissemination_and_checkerboards\n    assert all(labels[v] == initial for v in it.product(*(range(x) for x in lengths)))\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "checkerboard_sign",
+      "replace": "val = -k * parity * (selected - 1)",
+      "with": "val = k * parity * (selected - 1)",
+      "sha256": "5c631fee2fb1b5f43659953cffecedd8756f18972e4a76e2f30e457a400668df",
+      "exit_code": 1,
+      "elapsed_seconds": 0.3551231670426205,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/checkerboard_sign.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/checkerboard_sign.py\", line 526, in run\n    'dissemination':dissemination_and_checkerboards(),\n                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/checkerboard_sign.py\", line 346, in dissemination_and_checkerboards\n    assert q == {v: 3*k*((-1)**sum(v)) for v in vs}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "spectral_radius",
+      "replace": "math.sqrt(h0*h0+8)",
+      "with": "math.sqrt(h0*h0+4)",
+      "sha256": "871ac9e8d2c8612afc528bdd3d5662065edbb65c1d417682e61c8f56e82fa26b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.47152062493842095,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/spectral_radius.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/spectral_radius.py\", line 527, in run\n    'local_norm':local_spectral_constant(),\n                 ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/spectral_radius.py\", line 371, in local_spectral_constant\n    assert abs(actual-exact) < 1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "missing_cohomology_period",
+      "replace": "C = np.vstack((D,periods))",
+      "with": "C = np.vstack((D,periods[:2]))",
+      "sha256": "674060242c3de377e58c748ff81f304e882c65fe08ba915dc2274f96a09b293a",
+      "exit_code": 1,
+      "elapsed_seconds": 0.49250783293973655,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/missing_cohomology_period.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/missing_cohomology_period.py\", line 528, in run\n    'cohomology_and_original_clock':cohomology_and_wrap_checks(),\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/missing_cohomology_period.py\", line 420, in cohomology_and_wrap_checks\n    assert ranks == [126,63,66]\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "clock_wrap_normalization",
+      "replace": "mismatch=numerator//3",
+      "with": "mismatch=numerator//2",
+      "sha256": "4b14f79f729270db38a08d6c213f0259024164815e3721ba413e4e8e5125962e",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4944517499534413,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/clock_wrap_normalization.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/clock_wrap_normalization.py\", line 528, in run\n    'cohomology_and_original_clock':cohomology_and_wrap_checks(),\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/clock_wrap_normalization.py\", line 457, in cohomology_and_wrap_checks\n    assert same == (norm in (0,4))\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "crossing_hopping_sign",
+      "replace": "np.kron(I,d)-np.kron(R,R)-np.kron(R.T,R.T)",
+      "with": "np.kron(I,d)+np.kron(R,R)+np.kron(R.T,R.T)",
+      "sha256": "465b3f5cc2488602511383a45a3cd70b129884edf7bba143efccd693d8a6bee3",
+      "exit_code": 1,
+      "elapsed_seconds": 0.6045740420231596,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/crossing_hopping_sign.py\", line 533, in <module>\n    run()\n    ~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/crossing_hopping_sign.py\", line 529, in run\n    'finite_reflection_functional':finite_reflection_functional()}, indent=2))\n                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block23-fault-oro_9kjw/crossing_hopping_sign.py\", line 507, in finite_reflection_functional\n    assert abs(fg)**2<=ff.real*gg.real+1e-9\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

@@ -13,24 +13,26 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 22
-active_route: fixed_clock_flux_repair_and_large_beta_score_control
+block: 23
+active_route: endpoint_qutrit_reflection_and_uniform_clock_sector_energy_bound
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Finish cold checking block22 large-beta clock control and its probability construction; then personally
-  attack the actual N=3 penalty-Hamiltonian phase with a materially new comparison, preserving all scope differences.
-  Continue through2026-09-15 13:30:44UTC.
-strongest_unresolved_obligation: A fixed-beta, fixed-clock full physical-score Gaussian limit; the actual N=3 Hamiltonian
-  phase and native law remain separate open obligations.
-working_result: PR8134 remains pending independent review. Block22 privately proposes fixed-clock component-mass
-  localization, integer physical flux repair, and an almost-sure covariant frame selected from the original Gibbs
-  environment. A separate positive polymer/loss-network derivation proposes a strictly positive white-noise physical-score
-  limit and zero repaired-flux limit for the same N=3 isotropic law at beta>=20. Finite geometry, exact finite laws,
-  controlled Villain sums and frame fixtures pass author checks; cold proof review and public conformance are incomplete.
+next_action: Cold-review the block23 reflection cone, physical winding projection, chessboard argument and ground-density
+  consequence; run decisive fault checks and prepare one coherent milestone if they hold. Continue personally through2026-09-15
+  13:30:44UTC.
+strongest_unresolved_obligation: The proposed volume-uniform charge-sector bound now has an explicit endpoint-reflection
+  proof awaiting cold review. A nonzero stiffness and Gaussian response for the actual neutral N=3 Hamiltonian remain
+  independent open physics targets.
+working_result: Campaign8ddc2e5efb21814e72a45fe1652f918df5ca76b4 is verified pushed. Private block22 has covariant
+  physical flux repair and a large-beta same-model white-noise control. New block23 proposes A_cons >= e_neutral
+  I-c N with c=max(0,3t*rho(exp(-4mu))-9K/4) on dyadic periodic cubic tori, using an exact endpoint-qutrit reflection
+  factorization and the original zero-mod3 winding projection. This gives a proposed actual-ground quadratic defect-density
+  bound. Exact finite cohomology, original-clock transitions, reflection projection, ring normalization and dissemination
+  checks passed; author proof review, public conformance and independent review remain pending.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

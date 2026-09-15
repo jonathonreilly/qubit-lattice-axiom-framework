@@ -1,3 +1,44 @@
+# Current checkpoint — 2026-09-15 05:27 UTC
+
+Continue personally through **2026-09-15 13:30:44UTC**; no subagents.
+Campaign8ddc2e5efb21814e72a45fe1652f918df5ca76b4 is verified pushed and was
+clean before the new block23 files. No delivery checkout was created.
+
+A new endpoint-qutrit factorization appears to supply the previously missing
+volume-uniform sector-energy comparison. Spin-one link E is represented by
+n_left+n_right=2, E=n_left-1, with truncated UNIT endpoint shifts. The
+plaquette ring factors into vertex corners. Bond reflection combined with
+particle-hole conjugation makes crossing rings positive reflected products.
+The original mod-three Gauss and zero-winding projection also has an explicit
+positive reflection-cone decomposition; dropping that projection is avoided.
+
+A dyadic chessboard inequality then compares an arbitrary charge pattern to
+five checkerboard patterns. Crude bounds only on these five sectors give
+A_cons>=e_neutral I-c N, c=max(0,3t*rho(exp(-4mu))-9K/4), with
+rho(h)=(h+sqrt(h²+8))/2. Combined with the earlier local mixed-wrap estimate,
+this proposes <N>/E<=48v²/(lambda-c-12v)², v=2t exp(-mu), for actual ground
+states at lambda>c+12v. The claim is restricted to the supplied model and
+periodic dyadic tori; its neutral Coulomb phase is still open.
+
+BLOCK23_RISHON_REFLECTION_SECTOR_BOUND_DERIVATION.md contains the full active
+proof. The self-contained private runner checks1944 physical endpoint/ring
+transitions,24 actual L4 clock fields,72 wrong-winding fields and24 broken-link
+controls through all three reflection normals. It also checks16 dissemination
+geometries,10 feasible checkerboards, the exact local spectral polynomial,
+mod3 cohomology ranks126/63/66,288 original clock moves and three forced neutral
+full wraps. Nine finite matrix reflection functionals pass, while a reversed
+hopping-sign control has a negative reflection form. An initial SymPy-symbol
+assumption mismatch in the characteristic-polynomial checker was fixed; it
+was a checker-variable issue, not a changed spectral formula.
+
+These are finite author falsifiers. The full reflection/chessboard theorem
+still needs cold proof review, deliberate-fault checks, public packaging and
+later independent mathematical review. No phase, ground gap, native law,
+axiom update or audit verdict is claimed. Next: attack those proof steps
+before relying on the proposed comparison downstream.
+
+---
+
 # Current checkpoint — 2026-09-15 04:52 UTC
 
 Continue personally without subagents through **2026-09-15 13:30:44UTC**.

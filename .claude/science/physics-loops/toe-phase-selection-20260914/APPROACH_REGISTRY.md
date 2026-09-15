@@ -1,3 +1,20 @@
+# Block23 active mechanism — 2026-09-15 05:27UTC
+
+The new formulation is the exact endpoint-qutrit tensor factorization of the
+actual three-state charge-conserving ring Hamiltonian. Unlike the earlier
+shared-link reflection attempt, no quantum factor lies on both sides of the
+cut. The hard physical link and winding constraints are retained as a
+reflection-cone projection. The target terminal estimate is a chessboard
+partition inequality, followed by elementary bounds on five disseminated
+charge sectors; it is strictly more specific than assuming arbitrary neutral
+sector ordering. The proposed result is A_cons>=e_neutral-cN and an actual
+finite-penalty quadratic ground-density estimate. Phase stiffness remains open.
+
+Finite checks pass. Cold review and independent review are pending; no large
+chain of downstream consequences is authorized by an author check alone.
+
+---
+
 # Block22 update — 2026-09-15 04:52UTC
 
 - Exact full-rank image/Fourier duality: already present in prior blocks; no

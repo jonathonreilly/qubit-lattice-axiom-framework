@@ -13,3 +13,13 @@
 
 Re-rank after each substantive gain or exhausted route. More coefficients or
 relabelled corollaries do not constitute a new campaign milestone.
+
+
+Block7 pivot: field Block6 closes exactly onto dual clock smoothing. The
+remaining field problem is substantive and open, but another rewrite of
+that loop would add little. Re-read the native full-carrier dictionary,
+low-charge U1 dictionary, RK charge-stability and complete D2-connectivity
+notes. Investigate actual unitary charge motion and a momentum-resolved
+charged-sector source bound for that supplied Hamiltonian. These are
+stronger dynamical questions than nonzero hopping support, while long-time
+transport, photon background and native action selection remain separate.

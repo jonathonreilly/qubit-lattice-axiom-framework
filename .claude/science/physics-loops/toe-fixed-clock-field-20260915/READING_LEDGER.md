@@ -281,3 +281,25 @@ Re-read the entire main finite-clock Gaussian-smoothing source. Inspected
 the exact duality/centered-MGF passages of the finite-clock score source
 (lines110-220) and spectral concentration source (lines80-245); the latter
 was not read in full this block. Block6 derives its own finite identities.
+
+
+Block7: fully read current native RK charge stability, global charge
+connectivity/exchange, low-charge U1 dictionary and dynamical-cycle
+fermion-Z2 dictionary. The first combined output truncated a passage of
+connectivity, then the complete file was read separately. These are
+conditional supplied-carrier/operator sources, not selected native laws
+or independent audit grades. Reuse their mathematical hypotheses
+explicitly; no physical mass or mobility claim is inherited automatically.
+
+Block7 literature: Wan-Carrasquilla-Melko, arXiv1510.00979v2 HTML main text
+lines27-110 read fully. AppendixA lines170-189, B190-236, C237-271 and
+D272-297 read in the next retrieval; the combined output truncates part
+of AppendixA, so complete appendix reading is not claimed. The source
+uses a diamond lattice, approximate uniform two-spinon ground state,
+Pauling path weights, and numerical spectral continuation. Its mass is
+not imported. https://arxiv.org/html/1510.00979v2
+Stern etal arXiv1911.05742: abstract only; requested v3 HTML failed and
+was not treated as a full read. It concerns quasi-static spin backgrounds;
+no theorem was imported. https://arxiv.org/abs/1911.05742
+Current SCIENCE_WORKFLOW.md fully reread in this block; personal work
+continues under the user's no-subagent instruction. Formal review not claimed.

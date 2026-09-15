@@ -90,3 +90,13 @@ dual-clock flux, with an explicit independent-noise identity and O(a^2)
 mean-square source equivalence. This is a resolved representation loop,
 not a full-field closure. Further RG/response work or the matter frontier
 should address a different unresolved step.
+
+## Block7 — local unitary motion and momentum spectral measure
+
+New resolved step: charge paths become a positive finite-time escape bound
+with volume-independent remainder; a phase-correct symmetry construction
+gives charged-sector momentum trials and nontrivial low-energy spectral weight.
+A propagation upper bound follows from the charge-distance commutator.
+No connectivity assumption is needed for the selected symmetric ground state.
+Remaining target: quasiparticle concentration/dispersion and a physical time
+dictionary; spectral means alone do not supply either.

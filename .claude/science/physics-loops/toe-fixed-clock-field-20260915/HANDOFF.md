@@ -437,3 +437,28 @@ pages visually checked. Its initial local scalar-gradient norm is not
 matched to the coupled clock law. Next re-rank opportunities: pursue an
 actual new mechanism or another physical bottleneck, without recounting
 this duality loop as a new solution. Deadline remains01:45:03UTC.
+
+## Block 7: native matter moves, with uniform bounds
+
+For the supplied low-charge native Hamiltonian, derived an exact positive-charge
+escape coefficient between3 and4 for ANY state localized at one positive position.
+The full ring-hopping commutator has norm<=192J_max independent of volume.
+A unitary Duhamel bound gives actual P_leave(s)>=(3/4)|t|^2 s^2 up to
+sqrt(3)/(192J_max+64|t|). Charge-distance second moment and exponential
+tails have propagation constants depending only on |t|, not ring strength.
+
+On equal cubic tori with uniform J, symmetry averaging a nonnegative ground
+vector avoids a connectivity/uniqueness import. Odd translations need a
+bit complement to preserve signed charge identity. A positive-position
+Fourier trial has mean excitation between(6|t|/5)sum(1-cos k_i) and
+(4|t|/3)sum(1-cos k_i). At least half its spectral weight lies below twice
+the upper bound. This proves a charged-sector low-energy trial and spectral
+weight, not a lowest-band lower bound, particle pole or physical mass.
+
+The independently implemented native operators (same author) check18 global
+configurations,126 hops,3238 ring entries,4416 local commutator pairs and
+untruncated full commutator columns. Native J=0 unitary escape is also
+checked at three rational times by exact path powers through order4 and
+a rigorous operator-tail bound; the largest support has554 states. These
+are not full D2 censuses or native ground-state diagonalizations.
+No independent review, axiom update or main landing. Continue the campaign.

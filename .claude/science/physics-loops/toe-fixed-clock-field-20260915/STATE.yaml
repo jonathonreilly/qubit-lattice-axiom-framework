@@ -9,11 +9,11 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 6
-current_target: positive two-sector auxiliary representation, planar regulator test
-  and route re-ranking
+block: 7
+current_target: native charged-sector motion, spectral weight, and next transport
+  obligation
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T19:52:15.832815+00:00'
-next_step: choose a new coupled-field mechanism or re-rank the mobile-matter bottleneck;
-  do not repeat the exact duality loop
+last_checkpoint_utc: '2026-09-15T20:14:47.614177+00:00'
+next_step: test what is required for an actual charged-particle dispersion beyond
+  the proved finite-time motion and spectral mean

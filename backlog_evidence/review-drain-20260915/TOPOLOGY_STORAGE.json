@@ -1,0 +1,6 @@
+{
+  "topology_original_sha256": "fcb8ab2d38bac4a7e80a14193b58480ab05cad44eab3e195940d2f1c5603ee5e",
+  "topology_original_bytes": 171569398,
+  "compressed_path": "topology.json.gz",
+  "compression": "gzip; exact original bytes recoverable"
+}

@@ -1,0 +1,571 @@
+{
+  "pr": 8012,
+  "original_head": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69",
+  "declared_base": "main (coordinator inventory)",
+  "actual_merge_base": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
+  "confirmation_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "reviewer_session": "/root/review_8012",
+  "verdict": "PASS",
+  "disposition_map": [
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/ARTIFACT_PLAN.md",
+      "original_blob": "05978717a26299a19b0479b328b767008e477059",
+      "original_sha256": "d16982550ba8a39ed1c77d8b5d60079ecd1ec7a8155151d454ed4b900138e6e2",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/ARTIFACT_PLAN.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_blob": "3e368b3e481c6e572c0299d7d1757a0229af6a8b",
+      "original_sha256": "7a2510536b5f3911a3ccdec8baaf89d4a4007f2a7ab08c04dbd8f3905a87ce5c",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/CANONICAL_CACHE.json",
+      "original_blob": "11828889a8bdede19d699fa76ef246e45f6f79a8",
+      "original_sha256": "c52b1b6a3ab7b9b71cf0a9526560d72c46c9c88b63c2a4b4ee15ab955d3a67fc",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/CANONICAL_CACHE.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_blob": "1c6af5a8dcb46555ccdebac6b1222d30d4044c54",
+      "original_sha256": "7fc3b77b36c1b6e0c052b04cd487d9f5d386d04b95cd980971d9862c45a8c574",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/CONFORMANCE.md",
+      "original_blob": "3b2996c2d0a10d7f1a9de239278c9ad6028a6ea5",
+      "original_sha256": "f082b432f2b036b13ab98dc2b2fe0cb52b7993d28a6b5388ec2b19bbb42d6814",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/CONFORMANCE.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/FINAL_VALIDATION.md",
+      "original_blob": "88ee860ae08ffe84ff4bae41968e047d68e8a2f6",
+      "original_sha256": "c41703d1924db36baa32de0aebb3086db577eb2270363590470370cad7dad31b",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/FINAL_VALIDATION.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/FINAL_VOCAB_LINT.txt",
+      "original_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/FINAL_VOCAB_LINT.txt",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/GOAL.md",
+      "original_blob": "1a5732d3a788a33248757ea507cdc8aa6d6c31a3",
+      "original_sha256": "1e7febc889d0587f46b55f9bd7e372727d55f4601fb2f88b2c1b0fde3ca45609",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/GOAL.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/HANDOFF.md",
+      "original_blob": "56b168fb9624d7243c2f9fb7c9d49905bad3d3ec",
+      "original_sha256": "d7cf85a3756b0650f41cd6915039ea185ce8a8dd25b5d4007912bb5c1f7a5956",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/HANDOFF.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/INTEGRATION_RECEIPT.json",
+      "original_blob": "ad7352d8ec0e0c9b7806dc0844135015f34f7adf",
+      "original_sha256": "af786f753f927f07d44aab91133a5a41776f33ea2f52fa3411dcdeba13d8b553",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/INTEGRATION_RECEIPT.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/LATEST_MAIN_SYNC_20260907.md",
+      "original_blob": "8b54a26f74b7cfc07b68d53de221dde116368fcb",
+      "original_sha256": "e03279a63c9845f548c5798e27d7b1df179a6e109d5d58d5d6ece44e5dafd1b7",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/LATEST_MAIN_SYNC_20260907.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/LITERATURE_BRIDGES.md",
+      "original_blob": "138b9cffa94f37e660742fa2dce0fdc0a2e46df4",
+      "original_sha256": "6d2ece319ed45333a41d04e202dca147769eeabce06ee226e3b741ec01eabea2",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/LITERATURE_BRIDGES.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_blob": "6be1fda6b178d7869af0525d1f10511cc9787bd0",
+      "original_sha256": "c10e7d096e9bc818733021c6734c0f4047472294506af81f4ca5cf30bdbb48b6",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "disposition": "superseded",
+      "reason": "Eight scope obligations now ported to canonical No-Go Discipline Gate; historical syntax/control receipts recoverable at original object.",
+      "final_path": "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_blob": "c274a729b2664c6363fe8884feaaa970e38cae0d",
+      "final_sha256": "0a78c35eed8f1977f7a51c2622c783e08ee3808d1ed583a83d75eee12e8385ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/NO_GO_LEDGER.md",
+      "original_blob": "6269c148185d9bb918d3ae64f97fb35890ad4031",
+      "original_sha256": "8868804c9ecaec928b304e436982ab3688124552661dbc6fa1ffecff7d8eddfd",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/NO_GO_LEDGER.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/OPPORTUNITY_QUEUE.md",
+      "original_blob": "6005c7a45f2ca9e677735cf8728a970eed0d4030",
+      "original_sha256": "d34ba1728f78856f193b0482ee2ff29bd356fcf5a835ee78bbbf37ca493e9e4a",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/OPPORTUNITY_QUEUE.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_blob": "b33f05bb28048ee63f13b48a878603a82393b6e4",
+      "original_sha256": "1a44c4940ab75b065d23f8fe37a6de2c4f5c30769928515f74c634e86b4f39d8",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log",
+      "original_blob": "cdcdf87e8741d7f1381b90e6d0df9f8e6541b850",
+      "original_sha256": "78adf1532ee57797b697e061fd4fc470687f4dfde8fe6e4a6324bae76aaccbb0",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json",
+      "original_blob": "66f459c9bef7ae552fc6e872d9cea7a68c9939ac",
+      "original_sha256": "d3a4642578a095253edb398233c87763d5edddf792c8c7af4554f4299c8b7efb",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log",
+      "original_blob": "8a6998ee2ac1b98b6264b742941983037c91bbd8",
+      "original_sha256": "e8f404a2569e9a230a0365596dba1831867c1994432d74db6b4c1ff49b476f83",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md",
+      "original_blob": "616a2915782fe4c464801b71f3f11587068df43c",
+      "original_sha256": "e2452a9aa75abea51a2e4ae970e89f05568399b351e8fdc84650e22b8ed7f03c",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PROVENANCE.md",
+      "original_blob": "1674e209c5fa3969cb298166fc4d4890902cffc3",
+      "original_sha256": "d7f242d09f50d6fbdffc62727550e28ba9862259f5c2181a1547de73972798ac",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PROVENANCE.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/PR_BACKLOG.md",
+      "original_blob": "02ca4ca0f6de87fd8a1d335f8764daf841ca2cca",
+      "original_sha256": "6710c60bbe9631d96699964addd13d7d3b644f17b0ca1f1a551ee61a938c494f",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/PR_BACKLOG.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_blob": "25532774f344ba133031e03dfde62ca8a72bea78",
+      "original_sha256": "be51d1db188a78818d0624af362c02bf195c6ab764ff53a04423680b342315f2",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/REVIEW_HISTORY.md",
+      "original_blob": "4d47a0bcff5c18b407c6bfeed830a160959fd5c1",
+      "original_sha256": "3f9488ef997ad6d92ca415d7b47ddb00d27efe9fbdc2041c1a457ebcb23f643a",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/REVIEW_HISTORY.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/ROOT_FINAL_PORT_RECEIPT.json",
+      "original_blob": "e49508596efbc32aa7f151e307eb848fe69d243f",
+      "original_sha256": "b8e5bf298b109bf98d4a6f5b036046c33582c004147fb367dcbc2ebcb6dcf7bc",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/ROOT_FINAL_PORT_RECEIPT.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "original_blob": "cc64d5b886d07950724ff4947ddb334d830a86a8",
+      "original_sha256": "8603629f50ca881b27896bd4a8f8134e110279ba62d59a1101bc8e20648df5fd",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/ROUTE_PORTFOLIO.md",
+      "original_blob": "8b2acc0de59d2aa6fb5599ca2e71023d8b8ed92f",
+      "original_sha256": "ea5d59ed47f4b759f02d332af8f09ac9ec723715e79bfa87fcc49b7dfd3b3a68",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/ROUTE_PORTFOLIO.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/STATE.yaml",
+      "original_blob": "58cef738ecdbc79d0c15b318c8c74f26e1117547",
+      "original_sha256": "dcdf2f4a890ceb0784fff1b2665963393a84f0b32b80318942b838826071c507",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/STATE.yaml",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/TRACE_GATE.md",
+      "original_blob": "ca8e1f6adee2da7bc00681e91400ec9d5a121e27",
+      "original_sha256": "fc6563ce41219a07149d30df7a7445acfc2507993b54006b1f8ac17349e2676e",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/TRACE_GATE.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_blob": "94c51bde1092ae85c3f87ae9778338aa0b6d13dc",
+      "original_sha256": "7bb4a287d3d001fd1bd562691ba82ca360e03f44b0c7368d00eedfe4420722d5",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_blob": "4ed823ad8bf2d58dea47fd07e22b19747a5fff3e",
+      "original_sha256": "1bf2951a3b3e9c4ef158d65a461b35a6f7cb21c176b37d39f9b5e384507243d4",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_READINESS.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_blob": "6863aae6cd97be3f6e306379108eea4d061a8717",
+      "original_sha256": "8e5f66a240bcf4548dc98f5314ac2935adb51baedfc16d3fb4298c192d9c6a0b",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_STRICT.log",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_blob": "fbece90a0fdd56a11fc9096655a5fb6ca3b6b188",
+      "original_sha256": "284301b76bf707c00baa430623d475a0183a5929004964a219ce6b0c32592dd2",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/VOCAB_VALIDATION.json",
+      "original_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/VOCAB_VALIDATION.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/HANDOFF.md",
+      "original_blob": "2877085781b9a1e79e3ef732284442fc431e27c7",
+      "original_sha256": "b77a71675f53dabd34f15cbb447eed6c1f520b8f2c0c72c162b6caf500a5612f",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/HANDOFF.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/HASHES.json",
+      "original_blob": "038c194a876d567d288c34fb0f72c564f344b330",
+      "original_sha256": "fb689f1e91fc9365da2c4104b38f84db4c1444b34903d49f99979c7df7e9a3ae",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/HASHES.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/N1_N8.md",
+      "original_blob": "ee2d247f4e46403b9b3fcee476ad1210054a0406",
+      "original_sha256": "905200e20a68cfd032d66bb859e1f333e11f82d4a2dded332a5c23ff70951a61",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/N1_N8.md",
+      "disposition": "superseded",
+      "reason": "Eight scope obligations now ported to canonical No-Go Discipline Gate; historical syntax/control receipts recoverable at original object.",
+      "final_path": "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_blob": "c274a729b2664c6363fe8884feaaa970e38cae0d",
+      "final_sha256": "0a78c35eed8f1977f7a51c2622c783e08ee3808d1ed583a83d75eee12e8385ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/PORT_RECEIPT.json",
+      "original_blob": "d23211a17a437e00087074683802ff63c8fc9888",
+      "original_sha256": "3998b4dfecebcc7b359f685ba77f141a24e9c1e8492e6bc91e44c8c8b1f31be8",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/PORT_RECEIPT.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "f7a19e5a927e8c15558652742fadaf206dc4b313",
+      "original_sha256": "fbe0f9d6c6cadc894db37e247e7a620d9bc617f901c185ce99263657feaf96e4",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "disposition": "superseded",
+      "final_path": "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Full theorem/proof carried in canonical source; frozen note has broader old scope metadata.",
+      "final_blob": "c274a729b2664c6363fe8884feaaa970e38cae0d",
+      "final_sha256": "0a78c35eed8f1977f7a51c2622c783e08ee3808d1ed583a83d75eee12e8385ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/DERIVATION.md",
+      "original_blob": "efaf112db4ad271877afe145872c3bac2879bb52",
+      "original_sha256": "94b4d3292e945df450843038bfbf6c596833ec6881638e8388a3e19c662c9118",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/DERIVATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Full theorem/proof carried in canonical source; frozen note has broader old scope metadata.",
+      "final_blob": "c274a729b2664c6363fe8884feaaa970e38cae0d",
+      "final_sha256": "0a78c35eed8f1977f7a51c2622c783e08ee3808d1ed583a83d75eee12e8385ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/HASHES.json",
+      "original_blob": "28481f1c0ee17fd89222d821a80f86e4f824fb1f",
+      "original_sha256": "6d62e1e7bf026775514c4f7618c43cc26a5fcdc7b8286166190167a10b90d4af",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/HASHES.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/PREREGISTRATION.md",
+      "original_blob": "5ebdae39c5aa80b8d823c7b9d99b9293fa08ed68",
+      "original_sha256": "cc91ce15d43a09131e97feeaebaaa417c84542e3641f885f3e44962be4fad386",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/PREREGISTRATION.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/check-pre-syntax-fix.py",
+      "original_blob": "21880b90eb1678f9a8d44ed51ddfdd959723ae9f",
+      "original_sha256": "b293f98ddde86643ae376fac8716197e9d7d8ac6165981b4ac802dfd29dd4fd0",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/check-pre-syntax-fix.py",
+      "disposition": "rejected",
+      "reason": "Historical syntax failure (else1024) preserved at recovery object; repaired science survives in canonical runner."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/check.py",
+      "original_blob": "c845788dbd286494e71513d1475b61d493bc1b70",
+      "original_sha256": "9ff725aab0baaee92931084c486e920d522247cc137443f1c97e18afa2168902",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/check.py",
+      "disposition": "superseded",
+      "final_path": "scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "reason": "Same 15 scientific assertions in canonical runner; check.py only lacks canonical output protocol.",
+      "final_blob": "d2fd2110b8eb5fd02cc795c9522261196522b88b",
+      "final_sha256": "c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/result.json",
+      "original_blob": "db867cc2ca650b2204e05a4ac7b985a9e78e478e",
+      "original_sha256": "7c8ca4896281d28abfc746d3f6c3064c0ef222e6dfbc3a5b0653316fe7cfdac4",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/result.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/u1-profile-review/HASHES.json",
+      "original_blob": "41eadd465efbee98e24efdffd4f5b255ec49225b",
+      "original_sha256": "c9127220a476033e3993b44eea12a0eb58dd9535f796c7d0255ad9d5302d40e3",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/u1-profile-review/HASHES.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/u1-profile-review/REVIEW.md",
+      "original_blob": "c792f820d60c45498a4da7503a8d4341139c497e",
+      "original_sha256": "7485f1af96e6513a625aea9525db3142ae2c2c1674290671fca1c7af3c88b3b1",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/evidence/u1-profile-review/REVIEW.md",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/result.json",
+      "original_blob": "79dee36ca6ada274a08ca37405aae17aad4f04ee",
+      "original_sha256": "565a5a5f6b8372cb4f816e2dee5eb528ac8facf45616b494942b52e2f700a079",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/result.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "original_blob": "6ea69f5adaca295b78d40bf29bac89f32c70e36e",
+      "original_sha256": "752b5079904ffcdb6b71f21e7bf5b7ad3e50534b946a2272c3235e44ebcdc37e",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/frozen-staging/scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "disposition": "superseded",
+      "final_path": "scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "reason": "Same 15 scientific assertions in canonical runner; check.py only lacks canonical output protocol.",
+      "final_blob": "d2fd2110b8eb5fd02cc795c9522261196522b88b",
+      "final_sha256": "c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/validated_claims_before_generated_cleanup.json",
+      "original_blob": "4b7ab3d9df30ccbaa96da475bbdd6d7ae4f16cee",
+      "original_sha256": "bc9fc0ecd3653a3a4d58050c37d7857dff803fdf97768958f42300f54f0516ca",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/validated_claims_before_generated_cleanup.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-profile-tradeoff-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_blob": "6f430777db86f4a6c76036ba729a53e4374f9f47",
+      "original_sha256": "36e56e98b4e89d4b9536fd8b1264433b8551a6db3e730aa5f3d4caa9c2c9830e",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:.claude/science/physics-loops/record-profile-tradeoff-20260907/validated_readiness_before_generated_cleanup.json",
+      "disposition": "superseded",
+      "reason": "Read historical workflow/provenance/review/validation or preregistration artifact. No unique source theorem or runtime input; bounded scope and live open selector preserved in canonical note. Historical receipt supplies no current authority."
+    },
+    {
+      "original_path": "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "a71c02aa6e8a4b4e1957cfe13e89b70c7bfdf67c",
+      "original_sha256": "a89c848908de6114d7e19d1dd09639aef8a1d471b3b0c6fe7f55c55912a12e69",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "disposition": "narrowed",
+      "final_path": "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Theorem unchanged; canonical checklist and honest resolution output added, cache refreshed (F8012-1).",
+      "final_blob": "c274a729b2664c6363fe8884feaaa970e38cae0d",
+      "final_sha256": "0a78c35eed8f1977f7a51c2622c783e08ee3808d1ed583a83d75eee12e8385ff"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_blob": "c0a7a0ddc3f22efbfd348c7f212cd8f1a4d10989",
+      "original_sha256": "0b01e080e0215b0c62a9281b5ece2eff1c55f0c8a5ac5535b284d9f9ec6803e6",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:docs/audit/data/citation_graph_manifest.json",
+      "disposition": "superseded",
+      "reason": "Historical topology acknowledgment; coordinator must regenerate on combined candidate."
+    },
+    {
+      "original_path": "logs/runner-cache/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.txt",
+      "original_blob": "ee966e7977d0221e0ba3517dcc6beda0e30c8284",
+      "original_sha256": "1e4d218c492f8a987d50fdbe633bbf41cd276d326d0648821e4b888670418693",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:logs/runner-cache/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.txt",
+      "disposition": "narrowed",
+      "final_path": "logs/runner-cache/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.txt",
+      "reason": "Theorem unchanged; canonical checklist and honest resolution output added, cache refreshed (F8012-1).",
+      "final_blob": "49f1c140dececb9c3445e276ad2a63febb4b6951",
+      "final_sha256": "adceae3abd21719c33fe5ecc539e8d341c235b0b339962edb5b3c32df2f57177"
+    },
+    {
+      "original_path": "scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "original_blob": "6ea69f5adaca295b78d40bf29bac89f32c70e36e",
+      "original_sha256": "752b5079904ffcdb6b71f21e7bf5b7ad3e50534b946a2272c3235e44ebcdc37e",
+      "recovery": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69:scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "disposition": "narrowed",
+      "final_path": "scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+      "reason": "Theorem unchanged; canonical checklist and honest resolution output added, cache refreshed (F8012-1).",
+      "final_blob": "d2fd2110b8eb5fd02cc795c9522261196522b88b",
+      "final_sha256": "c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7"
+    }
+  ],
+  "source_verdict": "FINAL VERDICT: PASS",
+  "staged_tree": "f5bbf3fd8e0557131cae43dd9037757026247d13",
+  "reviewed_head": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "final_changed_paths": [
+    "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "logs/runner-cache/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.txt",
+    "scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py"
+  ],
+  "source_and_input_hashes": {
+    "docs/U1_RECORD_OVERLAP_FIXED_CONCENTRATION_SHARP_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "git_blob": "c274a729b2664c6363fe8884feaaa970e38cae0d",
+      "sha256": "0a78c35eed8f1977f7a51c2622c783e08ee3808d1ed583a83d75eee12e8385ff"
+    },
+    "logs/runner-cache/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.txt": {
+      "git_blob": "49f1c140dececb9c3445e276ad2a63febb4b6951",
+      "sha256": "adceae3abd21719c33fe5ecc539e8d341c235b0b339962edb5b3c32df2f57177"
+    },
+    "scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py": {
+      "git_blob": "d2fd2110b8eb5fd02cc795c9522261196522b88b",
+      "sha256": "c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    "docs/U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "git_blob": "e8697a74d4bf27fc68723eb2046329e43be253ba",
+      "sha256": "72dc93d92423edbc39dbb3efc26212c7a1063274f4b0b12ab930f3884488b113"
+    },
+    "docs/U1_REPRESENTATION_POSITIVE_REGISTRATION_KERNEL_TO_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "git_blob": "768eca1b5e638fd0812e8ba559fac36dc74cfcf7",
+      "sha256": "eef4dd413420b3d000f24ddd9465b0643c337a999e60a820424687352bfcc00e"
+    }
+  },
+  "runtime_file_inputs": [],
+  "runtime_packages": {
+    "python": "3.12.8",
+    "sympy": "1.14.0"
+  },
+  "proof_obligation_disposition": "CLOSED within supplied H2 probability-profile domain; physical selection remains conditional/open",
+  "lenses": [
+    "theorem/proof obligation",
+    "independent math/code runner",
+    "premise/import",
+    "no-go N1-N8 scope",
+    "source preservation",
+    "reproducibility",
+    "native vocabulary and audit separation"
+  ],
+  "findings": [
+    {
+      "id": "F8012-1",
+      "status": "fixed and confirmed in same reviewer session",
+      "severity": "packaging/source preservation"
+    }
+  ],
+  "combined_gate": "NOT RUN by reviewer; coordinator owns combined integrated validation",
+  "final_runner_receipt": {
+    "path": "/private/tmp/review-drain-20260915/8012-final-run.log",
+    "sha256": "adceae3abd21719c33fe5ecc539e8d341c235b0b339962edb5b3c32df2f57177",
+    "exit_code": 0,
+    "pass": 15,
+    "fail": 0,
+    "elapsed_sec": 0.37
+  },
+  "checks": {
+    "three_diff_checks": "PASS",
+    "staged_equals_worktree": "PASS",
+    "vocabulary_receipt": "0 violations",
+    "independent_quadrature": "/private/tmp/review-drain-20260915/check8012/independent-quadrature.json"
+  },
+  "disposition_map_sha256": "156df6d9153355b9ca1d0fdfa2a3b521dd94b6c91b7798def9ed3cdb61a9e8d2",
+  "findings_sha256": "22ca95ae30155ab6abc0807bae9a3a44db96f74616c629f41c49b587a1943e0a"
+}

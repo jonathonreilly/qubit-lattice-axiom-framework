@@ -1,0 +1,41 @@
+{
+  "remote_main": "5e89e529a1fc267df2a0652223c079ab3313f2c6",
+  "resources": [
+    {
+      "path": "PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "identical": true
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+      "identical": true
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+      "identical": true
+    },
+    {
+      "path": "references/OPERATIONS.md",
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+      "identical": true
+    },
+    {
+      "path": "references/UNIT_RECEIPT.md",
+      "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+      "identical": true
+    },
+    {
+      "path": "scripts/review_receipt.py",
+      "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+      "identical": true
+    },
+    {
+      "path": "scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "identical": true
+    }
+  ],
+  "all_identical": true
+}

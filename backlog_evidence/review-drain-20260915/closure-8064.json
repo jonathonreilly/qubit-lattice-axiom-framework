@@ -1,0 +1,19 @@
+{
+  "pr": 8064,
+  "original_head": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+  "branch": "codex/native-full-star-infrared-response-20260909",
+  "landing": "5e89e529a1fc267df2a0652223c079ab3313f2c6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-full-star-infrared-response-20260909",
+    "headRefOid": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8064,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8064"
+  }
+}

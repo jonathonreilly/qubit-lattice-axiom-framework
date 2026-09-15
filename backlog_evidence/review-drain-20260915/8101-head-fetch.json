@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "da5b152430bd5a1159a05a586e51e61a7c2c2b7f",
+  "fetched_ref": "refs/review-loop/fetched/8101-28dbc2b96e304e17affbae5cefbd31de",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/finite-link-weak-coupling-payload-20260913",
+    "headRefOid": "da5b152430bd5a1159a05a586e51e61a7c2c2b7f",
+    "isDraft": false,
+    "number": 8101,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

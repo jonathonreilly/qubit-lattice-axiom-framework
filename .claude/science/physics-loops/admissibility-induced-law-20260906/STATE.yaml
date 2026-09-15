@@ -109,7 +109,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 23 close (2026-09-15)
 # block: 23
 # branch: physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915 (independent; base origin/main 47dd808347; blocks 06-22 are open PRs #8034, #8035, #8138-#8142, #8146-#8156)
-# pr_status: opened for review (number recorded at close-out); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8157 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8157); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on six routes, no findings; gates: see HANDOFF.md"
 # seats: "supervisor-run: control (identities; Lipschitz bound on a patch; shell sums; constants; solvable chains) -> contract with a lens pass -> primary (P1-P4, runner) -> refuting pass (Monte Carlo window; torus Lipschitz; exact bond sums; grid; shell sums) -> fold (none needed)"
 # review_findings: "unsoldered sphere static law on a plane: complex rotations give |<s_0.s_x>| <= (3/2) e^{9/16} (1 + d(x))^{-kappa(beta)}, kappa = 5/(512 beta) for beta >= 5/256 and 1 - 128 beta/5 below, uniformly in the window (with exterior records), the side and for infinite-volume laws; M_N^2 <= 6 e^{9/16} (1+L)^{-min(kappa,1)} + 1/(4L^2) on the torus (block 20 had (log L)^{-1/2}); a coupling-dependent power law, so no Green-function-type kernel on planes at any coupling"

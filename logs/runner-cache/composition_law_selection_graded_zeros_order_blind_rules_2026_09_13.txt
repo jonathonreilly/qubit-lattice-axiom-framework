@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py
 runner_sha256: 461559764375cda8335da20f4a91b7a8dc0c271656db5ad76e11bd718c425915
-input_fingerprint_sha256: d711843c49688a3afea1ed1ec1c6a403d34035a20d76b0de0aef22d640485d93
+input_fingerprint_sha256: 4e91e0db2bf27769399c244fdf4c9f98c9ef73a3358fc0f7aaa3e36d281af1a0
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 85.88
+elapsed_sec: 70.83
 status: ok
 ----- stdout -----
 PASS grid2x3 N=2: graded H-E kernel dimension kernel dim 1

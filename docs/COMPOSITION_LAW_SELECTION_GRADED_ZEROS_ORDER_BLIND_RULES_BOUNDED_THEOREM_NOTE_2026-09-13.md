@@ -80,6 +80,14 @@ sector dependence is not a unique fingerprint of grading. The two exterior
 conventions are distinct supplied conditions, not an exhaustive classification
 of possible exteriors.
 
+## Upstream sources
+
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md)
+- [Realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
+- [Composition and support comparison context](COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md)
+- [Composition and support comparison context](FINITE_BKSF_SIGN_AND_SUPERLATTICE_MARKER_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-02.md)
+- [Role support and record values](THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md)
+
 ## Machine status and trace
 
 ```yaml

@@ -1,0 +1,24 @@
+{
+  "pr": 8043,
+  "original_head": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+  "branch": "codex/native-u1-pair-and-all-sector-support-20260908",
+  "landing": "f8ac15d64b204a850747b391c1981d454c0f06d3",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-u1-pair-and-all-sector-support-20260908",
+    "headRefOid": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8043,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8043"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+    "state": "CLOSED"
+  }
+}

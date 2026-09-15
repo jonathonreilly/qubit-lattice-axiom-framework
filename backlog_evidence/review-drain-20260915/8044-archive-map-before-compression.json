@@ -1,0 +1,1307 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ARTIFACT_PLAN.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-ARTIFACT_PLAN.md",
+    "sha256": "8947b242d3a784bc9668b68a5ffc2f23ed00623ee8c0c52fd82aa530ddc47bd5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "ea284ab5b2ff8899b9abbd9c424b3332b8954f168881b7ff9374eca305129ca3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+    "sha256": "2a053fd38e1a86f4f7768a252055236fa18d20115a8d5e0a533905d5abaef1f5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "917cdbfe88dec962c719d91c02629c2a8e177c1b51cc0c11d301fac62cce2cea"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/FULL_GLOBAL_PROSPECTIVE_CONTRACT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-FULL_GLOBAL_PROSPECTIVE_CONTRACT.md",
+    "sha256": "dcac84ba713350b17636847641f72658e7ee553a5fdc3e73e30487eb13853672"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-GOAL.md",
+    "sha256": "e36b446404f191ce9cc94cd623e96acb76eef9eb500ae150dbe7446596b46ef7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/GRAPH_BUILD.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/GRAPH_BUILD.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/GRAPH_BUILD.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/GRAPH_BUILD.stdout",
+    "sha256": "6b0451971ce179ae35e2f7f1203e48c30009830c47bfdb567c3a7ee6136cab45"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/GRAPH_DELTA.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/GRAPH_DELTA.json",
+    "sha256": "857112b2a136db0a007f29969493c45dc1ad2c1a6c1bf0c14ce816814540da52"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/GRAPH_MANIFEST.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/GRAPH_MANIFEST.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/GRAPH_MANIFEST.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/GRAPH_MANIFEST.stdout",
+    "sha256": "c2d0fee4492d2ac70403c579a18fae20f18c1ab0a4205f3b4ce7692177ca1fb2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-HANDOFF.md",
+    "sha256": "3fa70e22842080876f999a5030cc9db56f9110db697e46af47e515e33db09a50"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ISOLATED.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/ISOLATED.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ISOLATED.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/ISOLATED.stdout",
+    "sha256": "1bacef2747c08dfa366827b43f6676a78994c10a8121b26733ddeb4e530d586f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ISOLATED_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/ISOLATED_CLOSURE.json",
+    "sha256": "4acd1b35bbf70187f21c3cdf47f75090b305a10fd075caa213e085e167b5dc33"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/LITERATURE_BRIDGES.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-LITERATURE_BRIDGES.md",
+    "sha256": "e89bc16deb7d3e8917e04d6de7c493a01c3f10d8aeb351661b893015a4e20650"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/LIVE.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/LIVE.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/LIVE.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/LIVE.stdout",
+    "sha256": "59290bf7fadee79dc907c74712c21e1a4c56bd800829f76b8b32b2b5feafe1b8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/MUTATIONS.json",
+    "sha256": "8891c07b3097c496bd6a6a0be431bc3d0ca412f74c89c907f1de130c01025770"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/NO_GO_LEDGER.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-NO_GO_LEDGER.md",
+    "sha256": "f72498cafc8495d78d91e195bb97676915d4c5818e8500780b01164b196aa57d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/OPPORTUNITY_QUEUE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-OPPORTUNITY_QUEUE.md",
+    "sha256": "c4c02f5330a0aa90c4c81b1963ee2345798978345bfef537bba3b0b79d3abaee"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/PORT_INPUTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/PORT_INPUTS.json",
+    "sha256": "777e8be79fe7f3c92ab11efe265966c6170af07dcdaf055375a6d1b55fd0fb9a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/PORT_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/PORT_RECEIPT.json",
+    "sha256": "7f053696d92fb0fe6e2f7855cd674d669770e2da54330b9c7c9a341d6ad48613"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/PR_BACKLOG.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-PR_BACKLOG.md",
+    "sha256": "5d12caaef72cbe5d299bf57604e74eb110864aeac8657b5f6651c5987a58fa3b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-REVIEW_HISTORY.md",
+    "sha256": "432e4e7e7f3d939ecc2ecc82e3692f5effc08f39cc289a05d4b433c56a009ad6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ROOT_CANONICAL_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-ROOT_CANONICAL_REVIEW.md",
+    "sha256": "be761f7a796e2aba525c2f5cc6cb1d684d433499c8392ff92befc1d5411048be"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/ROUTE_PORTFOLIO.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-ROUTE_PORTFOLIO.md",
+    "sha256": "6491a00dbb2783740b2ec91f038d0de9d9f86ae167b02320a611fdbaaa5878e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/SCALAR_CONTROL_CONTRACT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-SCALAR_CONTROL_CONTRACT.md",
+    "sha256": "df83c857882c23c5db128875d8c56fc97800290be9d9796c483aba4aa221949a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/SOURCE_FREEZE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/SOURCE_FREEZE.json",
+    "sha256": "50b4feb8b875f750e29ca14a64b51468964e33d49aa17ed75bbef25983a6f713"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/STATE.yaml",
+    "sha256": "8f5341362eaf5ad1b53231828e2393f29a691395a8582d31342064d459d4ab3f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pr8044-TRACE_GATE.md",
+    "sha256": "69c61fa8537d3aa42f7853bdb9411214bab4ee044b873ec1c678302c0f5e7a83"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/WRAPPER_CONTROLS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/WRAPPER_CONTROLS.json",
+    "sha256": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/independent-canonical-review/GRAPH_CONFIRMATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/independent-canonical-review/pr8044-independent-canonical-review-GRAPH_CONFIRMATION.md",
+    "sha256": "17d3fc801f4097dade546f736c97d5dc384f433d1086de4e253b5cc9b838ca28"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/independent-canonical-review/READ_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/independent-canonical-review/READ_HASHES.json",
+    "sha256": "fd2f170745779498423b1c88d251d7496a2068765ccd8e00ec65a7c7aac3f67a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/independent-canonical-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/independent-canonical-review/pr8044-independent-canonical-review-REVIEW.md",
+    "sha256": "b696f62fd5e0b979f0d83ad1d8fd3fb3f7befad9a5aca933d03922c149aafc76"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/inputs/FOUR_ICE_BACKGROUNDS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/inputs/FOUR_ICE_BACKGROUNDS.json",
+    "sha256": "893b968c6ff25569f751c767ecd2a38bce3f7a79d1bf670902b6fccf0e4af47b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/full_missing_feedback.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/full_missing_feedback.stderr",
+    "sha256": "9e531f524ba9ba324243fd493fac3de4a9e0ba1af9ea56411f311111bb0ab90b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/full_missing_feedback.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/full_missing_feedback.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/full_missing_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/full_missing_phase.stderr",
+    "sha256": "abbf4f86d3ca42d6b4aa689897526ee12214d805e0f7221799545a8598dd55e3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/full_missing_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/full_missing_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/full_to_hard_support.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/full_to_hard_support.stderr",
+    "sha256": "a9451ad752f125b502d97af448caf60fa8aa8a0374e0eced91a705841165ddea"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/full_to_hard_support.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/full_to_hard_support.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/missing_folded_cross.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/missing_folded_cross.stderr",
+    "sha256": "72e12d3506617d49fcc82938616edf52c3f63a214ab9e23764a6e991a32c6341"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/missing_folded_cross.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/missing_folded_cross.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/missing_sixth_feedback.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/missing_sixth_feedback.stderr",
+    "sha256": "1e97149b95ccb042d1b0565ad65a504997fee9d61150ef93515bae4ef32196d3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/missing_sixth_feedback.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/missing_sixth_feedback.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/missing_sixth_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/missing_sixth_phase.stderr",
+    "sha256": "26971d5a48b44075b4b206c65e526ff5c7d281cc181051ec3ca6006247910d1d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/missing_sixth_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/missing_sixth_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_full_missing_feedback.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_full_missing_feedback.py",
+    "sha256": "2e0e61de64d73e7d6e4a6dc108223d1189a8bdb7b363d7e5ce01d6f4c43af909"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_full_missing_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_full_missing_phase.py",
+    "sha256": "2a9d669361e60f3caa343f25d6598c4561eb53c3f0db24c4568e23f88fd13081"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_full_to_hard_support.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_full_to_hard_support.py",
+    "sha256": "310db3ffc2af9d6f56acd00af5959befa193ca5e4252480330b279f3e3c38d02"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_missing_folded_cross.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_missing_folded_cross.py",
+    "sha256": "633d61241c85362b47880af4699aa4840b4f8f8389ee9b0641ae6dc568a2f2f4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_missing_sixth_feedback.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_missing_sixth_feedback.py",
+    "sha256": "b9e3bc17a239fc5d914dedd3423bfe66e7469de3329e376b011968d704c3d050"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_missing_sixth_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_missing_sixth_phase.py",
+    "sha256": "6b58bb761b3ea206db2374cdcd7d85b97387065cea79ae579cd66439115ed1ff"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_native_to_bare_X.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_native_to_bare_X.py",
+    "sha256": "70bd2fa079ca7465489aa8557621527f295a608984181e5eadd2064efd30653f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_relaxed_sixth_support.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_relaxed_sixth_support.py",
+    "sha256": "00de0b06c99704c4c35dc14e3767cfe46172127c64e2df07714d95312074b7ee"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_wrong_D4_denominator.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_wrong_D4_denominator.py",
+    "sha256": "f46b2ea4c780751b35936fe03ddcee0a5008e3ef7604a041de24ba8f0facc6a6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/mutant_wrong_remainder_tail.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/mutant_wrong_remainder_tail.py",
+    "sha256": "90a3848d0eb37f356e4e5fc528c572fdfb5da20f6f7808e74fea9b78ae97beb7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/native_to_bare_X.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/native_to_bare_X.stderr",
+    "sha256": "b8f5252774347fafab8a8d9ab051effeb56a4aec028798193293c541f6e3fcec"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/native_to_bare_X.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/native_to_bare_X.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/relaxed_sixth_support.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/relaxed_sixth_support.stderr",
+    "sha256": "95b10dcd87400f39ef2efab2cbaad7bd8bad348d342dc37b94b03c281526dafb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/relaxed_sixth_support.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/relaxed_sixth_support.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/wrong_D4_denominator.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/wrong_D4_denominator.stderr",
+    "sha256": "54e9f6647e157e5da53d9dfae7e7a89c748fa7607951a57428213bc070424c96"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/wrong_D4_denominator.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/wrong_D4_denominator.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/wrong_remainder_tail.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/wrong_remainder_tail.stderr",
+    "sha256": "26889d6b1ac555e357277e49b594a446e95303db4f327dd6788a3bbc39186c34"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/mutations/wrong_remainder_tail.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/mutations/wrong_remainder_tail.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/pr8044-originals-native-soft-charge-penalty-cold-proof-DERIVATION.md",
+    "sha256": "31321738a784e19f791ea82419a7f182956c191c9746945c08257be97246fe09"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/HARD_REFERENCE.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/HARD_REFERENCE.py",
+    "sha256": "fe0cc9280c9fe6c0aa1b03854a03928372e4bc5ed1d848f0801042c90ccfa52b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/HASHES.json",
+    "sha256": "2751bb92a4091ace7d52f35481c941faefe290ee09eeeccbeffbf60bb18ca1b2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/pr8044-originals-native-soft-charge-penalty-cold-proof-PREREGISTRATION.md",
+    "sha256": "28aacb2c526e4bcf0eccc5013c7f98f35da27f7f35384059588d922aa216bf69"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/RESULT.json",
+    "sha256": "a83c517604dc24b600190b9b1f1932cebec7d933961539d0df60167b5356ada2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/ROOT_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/pr8044-originals-native-soft-charge-penalty-cold-proof-ROOT_COMPARISON.md",
+    "sha256": "23535da242460c7b144c612ad64451e16f9c9431615d3bdd0595fe8fa4f083f2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/STDOUT.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/STDOUT.txt",
+    "sha256": "054a6f3519652c7d7c915a2e35d0743d3de53485c6b6ac9571c2930c48d52cd7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/SUPPLEMENT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/SUPPLEMENT.json",
+    "sha256": "2995384b53e759b6831a993dc62493a79d7fcf2f44da276cd87c3922be0e959d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-cold-proof/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-cold-proof/check.py",
+    "sha256": "f82f83ad3e9bde9d9353e1b261f70afbc9fe1a2abb034d782ab3a2eee4420c3e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/pr8044-originals-native-soft-charge-penalty-root-DERIVATION.md",
+    "sha256": "037f822cdd882e25763d2e756ec0bd2ae89cd7b3228c66e8f85774a5c81a300b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/FOURTH_SOURCE_HARD.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/FOURTH_SOURCE_HARD.py",
+    "sha256": "f18b7f34c04c5de2e7cad278b58ae325e47235ba3e4e150f64c5f3fef764344e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/FULL_FOURTH_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/FULL_FOURTH_RESULT.json",
+    "sha256": "a44e299121d281e0b3c7e36603ff0474dc8185a3c744b3e5f483a5ce51a92342"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/HASHES.json",
+    "sha256": "310fa4c30813306e7b7d134993bd2df0b3a2fd66aa8bfeaad8ec20bc8326bbc8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/pr8044-originals-native-soft-charge-penalty-root-PREREGISTRATION.md",
+    "sha256": "29b21bc8a9ff94191dd529aa2ea60eee482dca50517139be19160d14b8b65ffc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/PROVENANCE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/pr8044-originals-native-soft-charge-penalty-root-PROVENANCE.md",
+    "sha256": "03777cc70012ed1a02b26133ee5586915ece2dc817329145bffcb337656d5c95"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/RESULT.json",
+    "sha256": "997b84fc93ab3634c1083d86482e9664a7294641c99764c2c1d0075eb2bf3079"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/SOURCE_ORIGINAL_HARD_HELPER.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/SOURCE_ORIGINAL_HARD_HELPER.py",
+    "sha256": "be33641d3432829bb867c0db7bd26b2b80367c22462656f1f66d07bd95e3b7ca"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/check.py",
+    "sha256": "18459da5bc46e979950bd4dcf7010fd4a454b9759c76d9b58d86dc2b1f1265bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-soft-charge-penalty-root/full_fourth_check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-soft-charge-penalty-root/full_fourth_check.py",
+    "sha256": "156847b33b1e973d6f6c25211027bb3841242619f21a75db9c524e9b2f14bda0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring-cold-proof/AUTHOR_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring-cold-proof/pr8044-originals-native-virtual-pair-induced-ring-cold-proof-AUTHOR_REVIEW.md",
+    "sha256": "41b84356c80925c7b22fbf721e54242e7826b9dff6eab65da73a5eb00c8b86ed"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring-cold-proof/pr8044-originals-native-virtual-pair-induced-ring-cold-proof-DERIVATION.md",
+    "sha256": "65411b7942e7e6f33e224e4053669b080ab0287e229766b6e50bdb929d69eefc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring-cold-proof/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring-cold-proof/HASHES.json",
+    "sha256": "32894ea087d979566de75a94d3ad15771974a6b30baa8b5bbbbc938a5d36eeae"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring-cold-proof/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring-cold-proof/pr8044-originals-native-virtual-pair-induced-ring-cold-proof-PREREGISTRATION.md",
+    "sha256": "a73740de24f02e344f7e2a5ade09d6d7ec1458ccd7970221cfb3ecd75f1bc30d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring-cold-proof/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring-cold-proof/RESULT.json",
+    "sha256": "5aaa6605a1b22a9927e7f05c61d3cd4fd3caf0cbfb17286277913cc20e3556b1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring-cold-proof/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring-cold-proof/check.py",
+    "sha256": "68bcb3956d540fb81ad954ada846b42ad9ded8c8f866ff49a4235e8fd2dc721a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/pr8044-originals-native-virtual-pair-induced-ring-DERIVATION.md",
+    "sha256": "edf1d16c6a361646a4609a347958be85eea833df6a31e4ca6ce892ec61d09d5e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/HASHES.json",
+    "sha256": "37c5e820410a5b90f5a451e5a1d1ba5ddd9d5e1b1cc9e42fed5956e196d16ef5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/INDEPENDENT_PROOF_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/pr8044-originals-native-virtual-pair-induced-ring-INDEPENDENT_PROOF_COMPARISON.md",
+    "sha256": "33a15e42ff2bfd27f4f452ae93abcb7d2ffefb7387c76c27446691e5a42c6911"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/MUTANT_bare_X_substituted_for_native.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/MUTANT_bare_X_substituted_for_native.py",
+    "sha256": "73500e4e00090c4be1c7fcd170ba3578752cb5dd369065a916bbf4bd039cf713"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/MUTANT_omitted_folded_cross_term.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/MUTANT_omitted_folded_cross_term.py",
+    "sha256": "0a703e8e45341eb339b9598ca1c4b86432e40c030a3381823cd3419d1ad7ea31"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/MUTANT_wrong_four_charge_denominator.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/MUTANT_wrong_four_charge_denominator.py",
+    "sha256": "0ee4ab4990bbbfdf1c936931b88509de459b472115addab6064a5598fbf8d0ec"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/MUTATIONS.json",
+    "sha256": "f295bc5ac1b742b4e6019359f3d4bf1a8293c901d679e3042e3feb1d496c9213"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/pr8044-originals-native-virtual-pair-induced-ring-PREREGISTRATION.md",
+    "sha256": "6fe1f49a1cd32b3844923f39ef140bab4168d3c89e0592d6a0773ba7d73f25b9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/RESULT.json",
+    "sha256": "d2a5feae59269423a8a8ab25f11806b1dde6415f7089c22510f1b13cddfe537d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/STDERR.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/STDERR.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stderr",
+    "sha256": "74dc1bad10631038a102db77f117f6c0ffead92c31b58917da5a30ee73fc50cb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/check.py",
+    "sha256": "f18b7f34c04c5de2e7cad278b58ae325e47235ba3e4e150f64c5f3fef764344e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stderr",
+    "sha256": "6fbf67671c5c905a517ca90dd80da9bca6035c1e2bbbea4ce9783dc1369934fc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stderr",
+    "sha256": "8e2d2f2253e90dc726cfed52eb967438a7719e98801b086704625543a1d47ba2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/AUTHOR_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/pr8044-originals-native-virtual-pair-sixth-cold-proof-AUTHOR_COMPARISON.md",
+    "sha256": "96f564052ef8ce2dc84085bcd0a5cf167d884baa75c99931cd48a2a9d83949b9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/pr8044-originals-native-virtual-pair-sixth-cold-proof-DERIVATION.md",
+    "sha256": "0e5c75cddf52a82cb4c83e68b453b2ca090b7fadf6793e839b48ce36a7502e11"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/HASHES.json",
+    "sha256": "bf9d94ef1a81586c1f564c5355504b319323fbfff31d060f9afb2a3916b17a0a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/PAIR_AND_COUNT_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/PAIR_AND_COUNT_RESULT.json",
+    "sha256": "cf1082db39f27c73b9aaaac4de268803510dfcc47493d2791943c2ccae2cb149"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/pr8044-originals-native-virtual-pair-sixth-cold-proof-PREREGISTRATION.md",
+    "sha256": "dfb4cac24d357084d6f1b9ff907e8950bab2970fe076d915e6a2e4a50bbc6fc8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/RESULT.json",
+    "sha256": "52fde503a27bd46db64a96c6b14c2a2b4aef428d0b9f7cab069d382536cc8b8f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/STDOUT.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/STDOUT.txt",
+    "sha256": "52fde503a27bd46db64a96c6b14c2a2b4aef428d0b9f7cab069d382536cc8b8f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-cold-proof/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-cold-proof/check.py",
+    "sha256": "fe0cc9280c9fe6c0aa1b03854a03928372e4bc5ed1d848f0801042c90ccfa52b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/pr8044-originals-native-virtual-pair-sixth-diagonal-DERIVATION.md",
+    "sha256": "b55df9d562578b0c832284ee9a483af655d2639f77bd6df6880cab32e73805de"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/FULL_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/FULL_RESULT.json",
+    "sha256": "7ddaa58bb51487e7ccf3a1a33ea025b04100501e8c50aadd6ead3c956de8d9dd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/HASHES.json",
+    "sha256": "854ad8b83b347929af89f0d71d35a8847d255c005b96111b36bf285517af90b6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/MUTANT_omitted_energy_feedback.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/MUTANT_omitted_energy_feedback.py",
+    "sha256": "9e59d5126eb3ecf49762fa30528f8bc9c91cedf59daa719a496d1ba81d903087"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/MUTANT_relaxed_low_projection.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/MUTANT_relaxed_low_projection.py",
+    "sha256": "e5e3a42a405ab91d49f438027cd4e1e57eb39d9e7ff9c011c48f2fe2efe990f9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/MUTANT_removed_native_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/MUTANT_removed_native_phase.py",
+    "sha256": "a779ed103e7fa8e9c181239e3dc4effef59cf81db4d676d283287b7fd77e8dc0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/MUTATIONS.json",
+    "sha256": "2f13d7c6434e2d97da65d2b907088e577fd3f9fda096d7173b8a1417601e7d82"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/pr8044-originals-native-virtual-pair-sixth-diagonal-PREREGISTRATION.md",
+    "sha256": "2e87732f0fe4bbafc51cdfeaf7b689d71da5a5c66de7e3169316b1523826d6a8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/RESULT.json",
+    "sha256": "9e3fd10bbf72c84c9f9520ffbf995add999ea0fcf389452356694e0ba01baa3b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/check.py",
+    "sha256": "be33641d3432829bb867c0db7bd26b2b80367c22462656f1f66d07bd95e3b7ca"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/full_background_check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/full_background_check.py",
+    "sha256": "7b1abbb434e2ac63c30a136e7ccb18fc5122e6a4a0fdb5b4b3ec00b041d7e22f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stderr",
+    "sha256": "9a17c65f85189d13cf05f41546d3e08adaa86c07b406c3a8f92406b0156fe2e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stderr",
+    "sha256": "14d1b6f9137f3ff27663e7778176f20e10d32ff54bf083cd34f3f6988163b974"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stderr",
+    "sha256": "723cb192d869bcc1da455df5ec04b1b101939797931da5f365c34e439993b370"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-primary-literature/COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-primary-literature/pr8044-originals-native-virtual-ring-primary-literature-COMPARISON.md",
+    "sha256": "8e8a56cadabaf2e7d531d41b52dc3b8930678a2cd2a612ab9238f3cfe4b488b4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-primary-literature/SOURCE_RECEIPTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-primary-literature/SOURCE_RECEIPTS.json",
+    "sha256": "60b1ac5d19e5ff896d18094eadd0aea108f36ae02778ee8b1724b9ed5ed2f4d0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-cold-review/CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-cold-review/CONTROL.json",
+    "sha256": "c8e762a4d9855d0ee9a29740eae12d5910a46cdd381750d9400125efaf0df6c7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-cold-review/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-cold-review/HASHES.json",
+    "sha256": "478f8d2bbb9c4c4398d20a92f1ce04c8b992c46823c9e133757d5b5a5ebd4b49"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-cold-review/pr8044-originals-native-virtual-ring-remainder-cold-review-REVIEW.md",
+    "sha256": "cf18b6743afb8f6893844b77f71722d647c74d075b32e811aceb3c2afae0dc1a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/pr8044-originals-native-virtual-ring-remainder-root-DERIVATION.md",
+    "sha256": "44bc39bbd5fde8c779d219062bf46d54385637ddc2d3b582ae44567b346eed5e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/EXACT_CONSTANT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/EXACT_CONSTANT.json",
+    "sha256": "f2bb6d1d1f9a7b4a1e79bfb475b605985f21e586b19c183247389a2e3f522048"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/HASHES.json",
+    "sha256": "e45c6ad0c39843120e5a687b1fe529ba20efae24def240802e325e9083db7172"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/pr8044-originals-native-virtual-ring-remainder-root-PREREGISTRATION.md",
+    "sha256": "f98951f41f8e3c4453677cca5a424c3c59f2682cd947fc10e243adf822f96c21"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/SPECTRAL_CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/SPECTRAL_CONTROL.json",
+    "sha256": "cf61c43c8d39c18326eead2c563d9cb4041f4c47315e687e20dd9927995b716e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/SPECTRAL_CONTROL_REPAIR.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/pr8044-originals-native-virtual-ring-remainder-root-SPECTRAL_CONTROL_REPAIR.md",
+    "sha256": "fe9ee1e7d5d1bf6da93be613c71930b87daa76a92b54b3d49c2e782dc02d64ba"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/spectral_control.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/spectral_control.py",
+    "sha256": "148fa5a8baa608821c9f0a0ed105ac1ed705ce0e99388c2ce7cb8a33c7991bff"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/originals/native-virtual-ring-remainder-root/spectral_control_BEFORE_JSON_INT_FIX.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/originals/native-virtual-ring-remainder-root/spectral_control_BEFORE_JSON_INT_FIX.py",
+    "sha256": "cfc3588b0bef02efc15ef6a0bb47c7cd4e92039613935735ffbfa2b61af526ac"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/docs/pr8044-pre-soft-extension-docs-NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+    "sha256": "d369812cd3b8664a2d249d06b13ee385d0c4ea4aae24f612e99c6fdee9332da6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/outputs/native_virtual_pair_ring_mechanism_2026_09_08.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/outputs/native_virtual_pair_ring_mechanism_2026_09_08.json",
+    "sha256": "231bac5ea864d94521ed518e2dfaaf9b8a5f1d88a0d63d5c415d78f29439dd62"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/ARTIFACT_PLAN.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-ARTIFACT_PLAN.md",
+    "sha256": "8947b242d3a784bc9668b68a5ffc2f23ed00623ee8c0c52fd82aa530ddc47bd5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/ASSUMPTIONS_AND_IMPORTS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "2e0598605cb04c47683a6542060007bf82031cdee35eaf6e411adf9ec8dc3130"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/AUTHOR_VERIFICATION_DRIVER.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/AUTHOR_VERIFICATION_DRIVER.py",
+    "sha256": "75bc80fbc3c84899da759d1113cef34cfd1848ca4d9c598c9a420f7d823eeedf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "917cdbfe88dec962c719d91c02629c2a8e177c1b51cc0c11d301fac62cce2cea"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-GOAL.md",
+    "sha256": "e36b446404f191ce9cc94cd623e96acb76eef9eb500ae150dbe7446596b46ef7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-HANDOFF.md",
+    "sha256": "f2b82d5f0d7d7e2d172e3412b37fa1890fb8829a22ad280ffda34500355672f4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/ISOLATED.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/ISOLATED.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/ISOLATED.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/ISOLATED.stdout",
+    "sha256": "4aa6305d755dc3eff5c13726193be78e0199f86ad7e6bc9653d0bbbb12bfedd7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/ISOLATED_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/ISOLATED_CLOSURE.json",
+    "sha256": "30ff0d221a0a5fcd3823483259bd09af7d32064197ec35f0a0a1675a0c4093c1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/LITERATURE_BRIDGES.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-LITERATURE_BRIDGES.md",
+    "sha256": "e89bc16deb7d3e8917e04d6de7c493a01c3f10d8aeb351661b893015a4e20650"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/LIVE.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/LIVE.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/LIVE.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/LIVE.stdout",
+    "sha256": "74cd52c9dbb6da5e4ae27f28c3a64b42311800995d53a279b4818a2ddf44f513"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/MUTATIONS.json",
+    "sha256": "6166389a1315bdbc4c87a7dc3d0be9a7bde59f75901de2216fb148ea3499b59a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/NO_GO_LEDGER.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-NO_GO_LEDGER.md",
+    "sha256": "f72498cafc8495d78d91e195bb97676915d4c5818e8500780b01164b196aa57d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/OPPORTUNITY_QUEUE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-OPPORTUNITY_QUEUE.md",
+    "sha256": "c4c02f5330a0aa90c4c81b1963ee2345798978345bfef537bba3b0b79d3abaee"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/PORT_INPUTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/PORT_INPUTS.json",
+    "sha256": "777e8be79fe7f3c92ab11efe265966c6170af07dcdaf055375a6d1b55fd0fb9a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/PORT_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/PORT_RECEIPT.json",
+    "sha256": "f0ef3032df8b72fb3157f3de594ab3e73cdcf5f23de71fdcc84ba2081353679a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/PR_BACKLOG.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-PR_BACKLOG.md",
+    "sha256": "df9421877ff994a9e04b8c5a9e6f6e2d02d77a1ea092016cf2c27fa90afdb941"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-REVIEW_HISTORY.md",
+    "sha256": "e30ba979b1ff0f49daf3e6ee20feba7772aeef29860d642f1b5993c15706dd27"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/ROUTE_PORTFOLIO.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-ROUTE_PORTFOLIO.md",
+    "sha256": "6491a00dbb2783740b2ec91f038d0de9d9f86ae167b02320a611fdbaaa5878e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/SCALAR_CONTROL_CONTRACT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-SCALAR_CONTROL_CONTRACT.md",
+    "sha256": "df83c857882c23c5db128875d8c56fc97800290be9d9796c483aba4aa221949a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/SOURCE_FREEZE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/SOURCE_FREEZE.json",
+    "sha256": "22293ca604a74897aba9f7e384f422ee1e844a0cfe6497b71ac591f37bcb77d1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/STATE.yaml",
+    "sha256": "62c60ebb8bfe6243f4caf412570dda96f9c59e5f1d38c6669af6eb95ddebc1bf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/pr8044-pre-soft-extension-packet-TRACE_GATE.md",
+    "sha256": "69c61fa8537d3aa42f7853bdb9411214bab4ee044b873ec1c678302c0f5e7a83"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/WRAPPER_CONTROLS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/WRAPPER_CONTROLS.json",
+    "sha256": "0d13a36e6379afa814e2e3ec17ff7f65a427672f6564d503b3de5839571143bb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/inputs/FOUR_ICE_BACKGROUNDS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/inputs/FOUR_ICE_BACKGROUNDS.json",
+    "sha256": "893b968c6ff25569f751c767ecd2a38bce3f7a79d1bf670902b6fccf0e4af47b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/missing_folded_cross.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/missing_folded_cross.stderr",
+    "sha256": "6b5d55807707b86866c0da3c00e7de0aacdac7d94cc42594b5150ad59f46f9b3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/missing_folded_cross.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/missing_folded_cross.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/missing_sixth_feedback.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/missing_sixth_feedback.stderr",
+    "sha256": "c0a8706086e7915c90651258eb52f72740df8bd549d25f827c9428cca47dccb3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/missing_sixth_feedback.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/missing_sixth_feedback.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/missing_sixth_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/missing_sixth_phase.stderr",
+    "sha256": "3a12df8e2ca794640569c0279a197f12daeca4c9f3c1d858bea9b478f700414a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/missing_sixth_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/missing_sixth_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_missing_folded_cross.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_missing_folded_cross.py",
+    "sha256": "633d61241c85362b47880af4699aa4840b4f8f8389ee9b0641ae6dc568a2f2f4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_missing_sixth_feedback.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_missing_sixth_feedback.py",
+    "sha256": "b9e3bc17a239fc5d914dedd3423bfe66e7469de3329e376b011968d704c3d050"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_missing_sixth_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_missing_sixth_phase.py",
+    "sha256": "6b58bb761b3ea206db2374cdcd7d85b97387065cea79ae579cd66439115ed1ff"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_native_to_bare_X.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_native_to_bare_X.py",
+    "sha256": "70bd2fa079ca7465489aa8557621527f295a608984181e5eadd2064efd30653f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_relaxed_sixth_support.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_relaxed_sixth_support.py",
+    "sha256": "00de0b06c99704c4c35dc14e3767cfe46172127c64e2df07714d95312074b7ee"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_wrong_D4_denominator.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_wrong_D4_denominator.py",
+    "sha256": "f46b2ea4c780751b35936fe03ddcee0a5008e3ef7604a041de24ba8f0facc6a6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/mutant_wrong_remainder_tail.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/mutant_wrong_remainder_tail.py",
+    "sha256": "90a3848d0eb37f356e4e5fc528c572fdfb5da20f6f7808e74fea9b78ae97beb7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/native_to_bare_X.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/native_to_bare_X.stderr",
+    "sha256": "ffcba514c5da51400e99dcd1f1fdf98b904a3ff5668a1941ac9dbb462cc9b29b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/native_to_bare_X.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/native_to_bare_X.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/relaxed_sixth_support.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/relaxed_sixth_support.stderr",
+    "sha256": "38faaa47e082b9a15a800cfd2b1cf01e1531667f06e2bd0a5bb059bdc3545f93"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/relaxed_sixth_support.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/relaxed_sixth_support.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/wrong_D4_denominator.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/wrong_D4_denominator.stderr",
+    "sha256": "abedb73c143e20010b61a7eb9e49ed62b988e43db7082d029bfded1c603f185d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/wrong_D4_denominator.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/wrong_D4_denominator.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/wrong_remainder_tail.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/wrong_remainder_tail.stderr",
+    "sha256": "f3d0f00175679731e79dbb572a331ff859424f9255dabc353368d9695f4cce3d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/mutations/wrong_remainder_tail.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/mutations/wrong_remainder_tail.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/AUTHOR_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-cold-proof-AUTHOR_REVIEW.md",
+    "sha256": "41b84356c80925c7b22fbf721e54242e7826b9dff6eab65da73a5eb00c8b86ed"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-cold-proof-DERIVATION.md",
+    "sha256": "65411b7942e7e6f33e224e4053669b080ab0287e229766b6e50bdb929d69eefc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/HASHES.json",
+    "sha256": "32894ea087d979566de75a94d3ad15771974a6b30baa8b5bbbbc938a5d36eeae"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-cold-proof-PREREGISTRATION.md",
+    "sha256": "a73740de24f02e344f7e2a5ade09d6d7ec1458ccd7970221cfb3ecd75f1bc30d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/RESULT.json",
+    "sha256": "5aaa6605a1b22a9927e7f05c61d3cd4fd3caf0cbfb17286277913cc20e3556b1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring-cold-proof/check.py",
+    "sha256": "68bcb3956d540fb81ad954ada846b42ad9ded8c8f866ff49a4235e8fd2dc721a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-DERIVATION.md",
+    "sha256": "edf1d16c6a361646a4609a347958be85eea833df6a31e4ca6ce892ec61d09d5e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/HASHES.json",
+    "sha256": "37c5e820410a5b90f5a451e5a1d1ba5ddd9d5e1b1cc9e42fed5956e196d16ef5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/INDEPENDENT_PROOF_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-INDEPENDENT_PROOF_COMPARISON.md",
+    "sha256": "33a15e42ff2bfd27f4f452ae93abcb7d2ffefb7387c76c27446691e5a42c6911"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTANT_bare_X_substituted_for_native.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTANT_bare_X_substituted_for_native.py",
+    "sha256": "73500e4e00090c4be1c7fcd170ba3578752cb5dd369065a916bbf4bd039cf713"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTANT_omitted_folded_cross_term.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTANT_omitted_folded_cross_term.py",
+    "sha256": "0a703e8e45341eb339b9598ca1c4b86432e40c030a3381823cd3419d1ad7ea31"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTANT_wrong_four_charge_denominator.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTANT_wrong_four_charge_denominator.py",
+    "sha256": "0ee4ab4990bbbfdf1c936931b88509de459b472115addab6064a5598fbf8d0ec"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/MUTATIONS.json",
+    "sha256": "f295bc5ac1b742b4e6019359f3d4bf1a8293c901d679e3042e3feb1d496c9213"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-PREREGISTRATION.md",
+    "sha256": "6fe1f49a1cd32b3844923f39ef140bab4168d3c89e0592d6a0773ba7d73f25b9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/RESULT.json",
+    "sha256": "d2a5feae59269423a8a8ab25f11806b1dde6415f7089c22510f1b13cddfe537d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/STDERR.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/STDERR.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stderr",
+    "sha256": "74dc1bad10631038a102db77f117f6c0ffead92c31b58917da5a30ee73fc50cb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/bare_X_substituted_for_native.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/check.py",
+    "sha256": "f18b7f34c04c5de2e7cad278b58ae325e47235ba3e4e150f64c5f3fef764344e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stderr",
+    "sha256": "6fbf67671c5c905a517ca90dd80da9bca6035c1e2bbbea4ce9783dc1369934fc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/omitted_folded_cross_term.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stderr",
+    "sha256": "8e2d2f2253e90dc726cfed52eb967438a7719e98801b086704625543a1d47ba2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-induced-ring/wrong_four_charge_denominator.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/AUTHOR_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-cold-proof-AUTHOR_COMPARISON.md",
+    "sha256": "96f564052ef8ce2dc84085bcd0a5cf167d884baa75c99931cd48a2a9d83949b9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-cold-proof-DERIVATION.md",
+    "sha256": "0e5c75cddf52a82cb4c83e68b453b2ca090b7fadf6793e839b48ce36a7502e11"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/HASHES.json",
+    "sha256": "bf9d94ef1a81586c1f564c5355504b319323fbfff31d060f9afb2a3916b17a0a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/PAIR_AND_COUNT_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/PAIR_AND_COUNT_RESULT.json",
+    "sha256": "cf1082db39f27c73b9aaaac4de268803510dfcc47493d2791943c2ccae2cb149"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-cold-proof-PREREGISTRATION.md",
+    "sha256": "dfb4cac24d357084d6f1b9ff907e8950bab2970fe076d915e6a2e4a50bbc6fc8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/RESULT.json",
+    "sha256": "52fde503a27bd46db64a96c6b14c2a2b4aef428d0b9f7cab069d382536cc8b8f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/STDOUT.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/STDOUT.txt",
+    "sha256": "52fde503a27bd46db64a96c6b14c2a2b4aef428d0b9f7cab069d382536cc8b8f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-cold-proof/check.py",
+    "sha256": "fe0cc9280c9fe6c0aa1b03854a03928372e4bc5ed1d848f0801042c90ccfa52b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-diagonal-DERIVATION.md",
+    "sha256": "b55df9d562578b0c832284ee9a483af655d2639f77bd6df6880cab32e73805de"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/FULL_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/FULL_RESULT.json",
+    "sha256": "7ddaa58bb51487e7ccf3a1a33ea025b04100501e8c50aadd6ead3c956de8d9dd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/HASHES.json",
+    "sha256": "854ad8b83b347929af89f0d71d35a8847d255c005b96111b36bf285517af90b6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTANT_omitted_energy_feedback.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTANT_omitted_energy_feedback.py",
+    "sha256": "9e59d5126eb3ecf49762fa30528f8bc9c91cedf59daa719a496d1ba81d903087"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTANT_relaxed_low_projection.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTANT_relaxed_low_projection.py",
+    "sha256": "e5e3a42a405ab91d49f438027cd4e1e57eb39d9e7ff9c011c48f2fe2efe990f9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTANT_removed_native_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTANT_removed_native_phase.py",
+    "sha256": "a779ed103e7fa8e9c181239e3dc4effef59cf81db4d676d283287b7fd77e8dc0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/MUTATIONS.json",
+    "sha256": "2f13d7c6434e2d97da65d2b907088e577fd3f9fda096d7173b8a1417601e7d82"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-diagonal-PREREGISTRATION.md",
+    "sha256": "2e87732f0fe4bbafc51cdfeaf7b689d71da5a5c66de7e3169316b1523826d6a8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/RESULT.json",
+    "sha256": "9e3fd10bbf72c84c9f9520ffbf995add999ea0fcf389452356694e0ba01baa3b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/check.py",
+    "sha256": "be33641d3432829bb867c0db7bd26b2b80367c22462656f1f66d07bd95e3b7ca"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/full_background_check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/full_background_check.py",
+    "sha256": "7b1abbb434e2ac63c30a136e7ccb18fc5122e6a4a0fdb5b4b3ec00b041d7e22f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stderr",
+    "sha256": "9a17c65f85189d13cf05f41546d3e08adaa86c07b406c3a8f92406b0156fe2e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/omitted_energy_feedback.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stderr",
+    "sha256": "14d1b6f9137f3ff27663e7778176f20e10d32ff54bf083cd34f3f6988163b974"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/relaxed_low_projection.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stderr",
+    "sha256": "723cb192d869bcc1da455df5ec04b1b101939797931da5f365c34e439993b370"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-pair-sixth-diagonal/removed_native_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-primary-literature/COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-primary-literature/pr8044-pre-soft-extension-packet-originals-native-virtual-ring-primary-literature-COMPARISON.md",
+    "sha256": "8e8a56cadabaf2e7d531d41b52dc3b8930678a2cd2a612ab9238f3cfe4b488b4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-primary-literature/SOURCE_RECEIPTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-primary-literature/SOURCE_RECEIPTS.json",
+    "sha256": "60b1ac5d19e5ff896d18094eadd0aea108f36ae02778ee8b1724b9ed5ed2f4d0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-cold-review/CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-cold-review/CONTROL.json",
+    "sha256": "c8e762a4d9855d0ee9a29740eae12d5910a46cdd381750d9400125efaf0df6c7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-cold-review/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-cold-review/HASHES.json",
+    "sha256": "478f8d2bbb9c4c4398d20a92f1ce04c8b992c46823c9e133757d5b5a5ebd4b49"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-cold-review/pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-cold-review-REVIEW.md",
+    "sha256": "cf18b6743afb8f6893844b77f71722d647c74d075b32e811aceb3c2afae0dc1a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-root-DERIVATION.md",
+    "sha256": "44bc39bbd5fde8c779d219062bf46d54385637ddc2d3b582ae44567b346eed5e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/EXACT_CONSTANT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/EXACT_CONSTANT.json",
+    "sha256": "f2bb6d1d1f9a7b4a1e79bfb475b605985f21e586b19c183247389a2e3f522048"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/HASHES.json",
+    "sha256": "e45c6ad0c39843120e5a687b1fe529ba20efae24def240802e325e9083db7172"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-root-PREREGISTRATION.md",
+    "sha256": "f98951f41f8e3c4453677cca5a424c3c59f2682cd947fc10e243adf822f96c21"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/SPECTRAL_CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/SPECTRAL_CONTROL.json",
+    "sha256": "cf61c43c8d39c18326eead2c563d9cb4041f4c47315e687e20dd9927995b716e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/SPECTRAL_CONTROL_REPAIR.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-root-SPECTRAL_CONTROL_REPAIR.md",
+    "sha256": "fe9ee1e7d5d1bf6da93be613c71930b87daa76a92b54b3d49c2e782dc02d64ba"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/spectral_control.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/spectral_control.py",
+    "sha256": "148fa5a8baa608821c9f0a0ed105ac1ed705ce0e99388c2ce7cb8a33c7991bff"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/spectral_control_BEFORE_JSON_INT_FIX.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/packet/originals/native-virtual-ring-remainder-root/spectral_control_BEFORE_JSON_INT_FIX.py",
+    "sha256": "cfc3588b0bef02efc15ef6a0bb47c7cd4e92039613935735ffbfa2b61af526ac"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/scripts/native_virtual_pair_fourth_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/scripts/native_virtual_pair_fourth_2026_09_08.py",
+    "sha256": "1495920838ff7e6f60ca11bbe55d13603a0af51ccf08f98a185c173e054a4160"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/scripts/native_virtual_pair_remainder_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/scripts/native_virtual_pair_remainder_2026_09_08.py",
+    "sha256": "002f4990a82e2e94d148b4c69cc79dbd3ffbe80d671b89c1611abdccb444bee7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/scripts/native_virtual_pair_ring_mechanism_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/scripts/native_virtual_pair_ring_mechanism_2026_09_08.py",
+    "sha256": "762b0e4a03b59a0d9068953b3f44e2f444ade880e4c06d8bc9016ec298634b2e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/scripts/native_virtual_pair_sixth_global_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/scripts/native_virtual_pair_sixth_global_2026_09_08.py",
+    "sha256": "25e5d7f9c69824d20b61975c964aec4d69b4c8ae596f41a530f2abc939fea8e8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-virtual-pair-ring-mechanism-20260908/pre-soft-extension/scripts/native_virtual_pair_sixth_local_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/pre-soft-extension/scripts/native_virtual_pair_sixth_local_2026_09_08.py",
+    "sha256": "0e0d84dd7579ee584e3c6704aca815f3b444525bedb87416edb4d0f334a88c0e"
+  }
+]

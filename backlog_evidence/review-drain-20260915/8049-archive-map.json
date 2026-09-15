@@ -1,0 +1,327 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ARTIFACT_PLAN.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-ARTIFACT_PLAN.md",
+    "sha256": "c027bf58834527f2a5e16699236bbafb52b50b47ab5dab64bbaa8565ac0a7435"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "67c991b3a1c0184ac93b007b09b0d0f61965c912de2700980b1a5d2e02e23455"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+    "sha256": "73a9438339d87652475f46b86727b93275777a81400d4aae905b5538938fc1f9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "3c1e8513c82b79e154422bac42a9228bb8ceb6cb1a41e6afa921bb3d71842d5b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/CONTROL_CONTRACT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-CONTROL_CONTRACT.md",
+    "sha256": "017d238cca136ccd41341de21d233a31429e5c8d7ead8fa7f908d5b79998af8e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-GOAL.md",
+    "sha256": "cfb955836fecf6a036b5a09ed2689a25dfddba7bb764223ca122ffba14858205"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/GRAPH.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/GRAPH.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/GRAPH.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/GRAPH.stdout",
+    "sha256": "6b0451971ce179ae35e2f7f1203e48c30009830c47bfdb567c3a7ee6136cab45"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/GRAPH_DELTA.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/GRAPH_DELTA.json",
+    "sha256": "24565b0b1e7eeac195e0dfacd7bf99eaa5437d822692dff22d9e8d1af631e991"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-HANDOFF.md",
+    "sha256": "cc9fd4c3e7a2f14e2dd1a4c952eb90afa556a1c18386fa71d600d6096bdf6520"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ISOLATED.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/ISOLATED.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ISOLATED.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/ISOLATED.stdout",
+    "sha256": "62e875034b2565731acb481880be7b4788bfbd7d6726036701695112ef076f27"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ISOLATED_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/ISOLATED_CLOSURE.json",
+    "sha256": "e8fac204ff798f46f4c872c404c90faed36e79399087d5d84d222e3bdd6f6c8d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/LITERATURE_BRIDGES.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-LITERATURE_BRIDGES.md",
+    "sha256": "1a9a8a9d9ff9e0b2e145781464656c6667b54f439bf9578d93921ae9f89f42e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/LIVE.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/LIVE.stdout",
+    "sha256": "db83ddb7c81bd4ed3d10bc1abbb13aa7d4a877b42aa0417657d403157cf64731"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/MANIFEST.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/MANIFEST.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/MANIFEST.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/MANIFEST.stdout",
+    "sha256": "c2d0fee4492d2ac70403c579a18fae20f18c1ab0a4205f3b4ce7692177ca1fb2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/MUTATIONS.json",
+    "sha256": "ccb3228cac0ab7b1a6ac59fcb11ff22ab2f7ae723a1139cbdd73927d0349e527"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/NO_GO_LEDGER.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-NO_GO_LEDGER.md",
+    "sha256": "b0bd4b20e500732fd7863843bf02c7e9d6714755483bae491bb2943316941572"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/OPPORTUNITY_QUEUE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-OPPORTUNITY_QUEUE.md",
+    "sha256": "e7359edd995cf8d7f5cb7a58833de7a53a68a50793fecbc1af2e4b6542699cc7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ORIGINAL_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/ORIGINAL_HASHES.json",
+    "sha256": "0d8d04121755e47bd4adde593114fdd8c4e2b57ea8dca5d1a6bdd06ab8670984"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/PORT_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/PORT_RECEIPT.json",
+    "sha256": "531527364ed13b93753c07c13463b613b0411108d7d735d9c1b3b05e32125099"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/PR_BACKLOG.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-PR_BACKLOG.md",
+    "sha256": "df69341214ce041796c91fbf9641f9f91e503b6915a4d546d8741ede87452b07"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-REVIEW_HISTORY.md",
+    "sha256": "0be2eea2a0490d92fd5a686d3b04bbe66c01042869b44cf131a19448ac127da4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ROOT_CANONICAL_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-ROOT_CANONICAL_REVIEW.md",
+    "sha256": "2f5a54f56621cc1acb9cac4f467b6c22fce27a0c987fb5ee07af327e0bd57e78"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/ROUTE_PORTFOLIO.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-ROUTE_PORTFOLIO.md",
+    "sha256": "ac352bafda693907ae70c71c45182c5810ae06cfde7f56c4a98433e0bb12f8b8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/SOURCE_FREEZE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/SOURCE_FREEZE.json",
+    "sha256": "7a818d008754551099ec514f2ae334c7e9f283f92387fdb28097b6053cc84f64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/STATE.yaml",
+    "sha256": "4c49f96abd1429ed832084bf41c2d38d8ad3987c8803c6651f21311c593ed5c3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/pr8049-TRACE_GATE.md",
+    "sha256": "468165bc8797fe4674d07e3a12774dbce2c77bda0d479efaca20c248edc3eb92"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/WRAPPER_CONTROLS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/WRAPPER_CONTROLS.json",
+    "sha256": "0bdd2ccee10f728ecfdcd0f78e03fa11bd8943b9c5b8092721a3324685a6f0e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/independent-canonical-review/READ_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/independent-canonical-review/READ_HASHES.json",
+    "sha256": "6bec0661b4d1d408e8398944b8ab8e791f5dda843f0251fa6f383deb5fb8bf92"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/independent-canonical-review/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/independent-canonical-review/RESULT.json",
+    "sha256": "46a4a953b2f45c23add8f992171e79b6242d22b18ca9898c1640c76181271125"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/independent-canonical-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/independent-canonical-review/pr8049-independent-canonical-review-REVIEW.md",
+    "sha256": "c1668ee7c5bcec8568d077789def1af1e49d8fc3bb7b7b787521af2b3ba0f262"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/independent-canonical-review/check_port.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/independent-canonical-review/check_port.py",
+    "sha256": "93fd5370289092462558af1cef43437a44bd1913732c96e19f450d7fbf59a314"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/odd_Gauss_domain.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/odd_Gauss_domain.stderr",
+    "sha256": "3b384715424d69e7b2c1fa29da15d917b6f3be70dc8dad6f06b0afd72e5c2dff"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/odd_Gauss_domain.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/odd_Gauss_domain.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint-cold-review/READ_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint-cold-review/READ_HASHES.json",
+    "sha256": "4e9a2dbcfa88cd07cdc81f69f9c21c7d59fe1f736765e0b6afab0da14a636757"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint-cold-review/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint-cold-review/RESULT.json",
+    "sha256": "15e03cb78af0e0b166e0305da631c5eeeb7aa5718fc50f36a8d39fb1b5500277"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint-cold-review/pr8049-originals-native-zero-penalty-endpoint-cold-review-REVIEW.md",
+    "sha256": "6325ba00931cbab2266f829ab4fc373587471d1abd6190e070ba6e3376e06199"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint-cold-review/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint-cold-review/check.py",
+    "sha256": "5b7e207ca0c72ee528b00d98e0cb3ea5488ff07499c1a0e4e825a70f6c3078e0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint/pr8049-originals-native-zero-penalty-endpoint-DERIVATION.md",
+    "sha256": "c96844a87fd69eb3fc2f5f2c61f5468518339141f0b8981f2a357104d9d24265"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint/HASHES.json",
+    "sha256": "28554a4b74e54328029b8538436ac2b779007335491884cfbb7beaa3fdb71401"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint/pr8049-originals-native-zero-penalty-endpoint-PREREGISTRATION.md",
+    "sha256": "46a7bb27265814835b2984ea8708432def488be07461a962c284c348963449ab"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint/RESULT.json",
+    "sha256": "f0f08e24ccb2313d3bb3ac1af52220d6fcd475bffb799685fea8c48a8784dab1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint/SOURCE_BINDING.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint/SOURCE_BINDING.json",
+    "sha256": "e95dc50a5ab6f5f5eaa767e9d09bc88253c05627ecb014920ccc1e057ff9d276"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-endpoint/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-endpoint/check.py",
+    "sha256": "29e397bb5725911bcd566c83519e60c4c3ab0fab59fc8a2007b642b13c8a39ea"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/HASHES.json",
+    "sha256": "433ce1076a415586d768ac43e3d55af621c518d518cda6fb4a9e68973aac01a9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/MUTATIONS.json",
+    "sha256": "3e22953e49e4655f43cbe91d854a7416f1dd0c789888493e0eb5af7551016ca9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/pr8049-originals-native-zero-penalty-stdlib-controls-PREREGISTRATION.md",
+    "sha256": "6d9e5c9b334c29005677079608fc658ca62ab0e07182c81345c8f28892b8c2cc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/REPORT.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/pr8049-originals-native-zero-penalty-stdlib-controls-REPORT.md",
+    "sha256": "193b127e45a0158704a3b0adfcd04cf49c3dc3c48998b86c9c58200d2b3c7e25"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/RESULT.json",
+    "sha256": "ab5eaad585456280a0f25253bf20d715c99961397c26413df88047173f1f6029"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/check.py",
+    "sha256": "b32119b563feeca64ee7e823e97206ec87b32dc482184b83b1a81508bfb3c693"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/mutant_odd_Gauss_domain.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/mutant_odd_Gauss_domain.py",
+    "sha256": "c78b16ecf5a3e651e6c64e39060b1f6579d4dc2e1d12702e3fc700d649d5adb2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/mutant_wrong_K_factor.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/mutant_wrong_K_factor.py",
+    "sha256": "5aabf30608714cf19b6268c3e97c7fc29608d4cb9077890e6fed243d809e52ad"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/mutant_wrong_spectator_count.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/mutant_wrong_spectator_count.py",
+    "sha256": "e87255885a8696042fc38a0ac2192755c87f0da7ca3899db29f3c7d54cf2be6a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/odd_Gauss_domain.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/odd_Gauss_domain.stderr",
+    "sha256": "dd1052208e7f75ef38d330d625e3194b6d849a153f360183cfbb278126b51320"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/odd_Gauss_domain.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/odd_Gauss_domain.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/wrong_K_factor.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/wrong_K_factor.stderr",
+    "sha256": "d09efc006d7e9d4a2972b8090cbd67ae42223f0c571d5d07f0ae5e7740cdd350"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/wrong_K_factor.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/wrong_K_factor.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/wrong_spectator_count.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/wrong_spectator_count.stderr",
+    "sha256": "04fde70d527ee9e7c851f1d854efc509bb858828f8722f9978f8d29e9998542d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/originals/native-zero-penalty-stdlib-controls/wrong_spectator_count.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/originals/native-zero-penalty-stdlib-controls/wrong_spectator_count.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/wrong_K_factor.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/wrong_K_factor.stderr",
+    "sha256": "c9739e1e2a5c5a3ab1ad9e02e959dfc94d17c259fc6ab411e69645b8e7a3d09d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/wrong_K_factor.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/wrong_K_factor.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/wrong_spectator_count.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/wrong_spectator_count.stderr",
+    "sha256": "02b1d9dfd24ed7bce99a0748dbe4e26ea3daf6f9a2730c2a70101da68f7a9eeb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-zero-penalty-endpoint-20260908/wrong_spectator_count.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8049-native-zero-penalty-evidence/wrong_spectator_count.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

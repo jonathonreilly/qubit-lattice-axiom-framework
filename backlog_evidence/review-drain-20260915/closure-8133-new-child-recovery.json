@@ -1,0 +1,10 @@
+{
+  "child": 8140,
+  "original_missing_object": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+  "resolution": "Fetched exact observed commit before freezing delta; ordinary dependent preservation then succeeded. No source acceptance or scope expansion.",
+  "post_parent_delete": {
+    "baseRefName": "main",
+    "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+    "state": "OPEN"
+  }
+}

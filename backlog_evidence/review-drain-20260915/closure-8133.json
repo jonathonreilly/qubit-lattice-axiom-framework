@@ -1,0 +1,101 @@
+{
+  "pr": 8133,
+  "original_head": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+  "branch": "physics-loop/coupled-defect-convexity-20260915",
+  "landing": "f8ac15d64b204a850747b391c1981d454c0f06d3",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "physics-loop/coupled-defect-convexity-20260915",
+        "closedAt": null,
+        "headRefName": "physics-loop/clock-static-charge-20260915",
+        "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8140,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140"
+      },
+      "original_merge_base": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "delta_sha256": "fda31f9bed0cdaf07fab0b950a4a19de26562214e81b4951efea7b0ef9e71482",
+      "delta_file": "closure-8133-child-8140-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "physics-loop/clock-static-charge-20260915",
+        "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8140,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "physics-loop/clock-static-charge-20260915",
+        "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8140,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "physics-loop/coupled-defect-convexity-20260915",
+        "closedAt": null,
+        "headRefName": "physics-loop/haar-villain-full-score-20260915",
+        "headRefOid": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8134,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134"
+      },
+      "original_merge_base": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "delta_sha256": "a790085b0503a383ad2c40116aee567156c0cfe4e7f510fdc54fff4aaa759ac1",
+      "delta_file": "closure-8133-child-8134-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "physics-loop/haar-villain-full-score-20260915",
+        "headRefOid": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8134,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "physics-loop/haar-villain-full-score-20260915",
+        "headRefOid": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8134,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T13:41:13Z",
+    "headRefName": "physics-loop/coupled-defect-convexity-20260915",
+    "headRefOid": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8133,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+    "state": "CLOSED"
+  }
+}

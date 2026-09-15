@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13.py",
+  "limit_sec": 90,
+  "record_sha256": "49f6d4b0d4161debca037edc901dee94ed4791a7c2192a09981a16b30a6f35f5"
+}

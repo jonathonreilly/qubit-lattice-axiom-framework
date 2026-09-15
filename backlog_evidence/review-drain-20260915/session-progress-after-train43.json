@@ -1,0 +1,29 @@
+{
+  "original_total": 116,
+  "landed_and_closed": 92,
+  "remaining_original": 24,
+  "remote_main": "5e89e529a1fc267df2a0652223c079ab3313f2c6",
+  "active_integration": {
+    "label": "train44",
+    "prs": [
+      8099
+    ],
+    "worktree": "/private/tmp/review-drain-20260915/integration-one",
+    "session_id": 1582
+  },
+  "cold_review": {
+    "8100": "Original reviewer complete, preexecution preflight preparing/running;508expected90sec; root8100-author-capture.py prepared but not run",
+    "8066_8067": "Original author/reviewer preparing coherent pair"
+  },
+  "next_author_packet": {
+    "pr": 8101,
+    "worktree": "/private/tmp/review-drain-20260915/author-slot-one",
+    "owner": "pr8101-author",
+    "tree": "72c5117c6014786ba310cd06a52df9c451572c65",
+    "reviewed": false,
+    "executed": false
+  },
+  "remote_skill": "all7 resources byte-identical after train43",
+  "original_scope_heads": "fresh snapshot after train42: none moved;29 outside frozen scope",
+  "cleanup": "completed36,37b,38,39 removed after verified recovery;train40 remains stable coordinator"
+}

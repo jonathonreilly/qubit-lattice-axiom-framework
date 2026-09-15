@@ -1,0 +1,31 @@
+{
+  "utc": "2026-09-15T13:22:18.708858+00:00",
+  "main": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "planning": "e46727ef96aeae04353efbd4ce4b3f460122b4ba",
+  "minimal_axiom_source_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "read": "Complete minimal axioms memo reread at final current-main snapshot. No changes to minimal axioms, premise registry or SCIENCE_WORKFLOW relative06a7cadd. Concurrent source integrations inspected by commit metadata/stat only; not treated as independent review of this campaign.",
+  "private_ignored_files": [
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block11_direct_wilson_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block17_local_source_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block1_projection_sector_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block22_covariant_frame_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block22_flux_repair_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block22_large_beta_clock_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block29_clock_ginibre_transfer_probe.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block2_clock_lift_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block2_cubic_boundary_minor_probe.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block2_cubic_path_exact_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block2_discrete_sector_probe.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block2_exact_sector_counterexample.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block30_local_projective_corridor_probe_failed_v1.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block4_codec_relay_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block4_periodic_routing_check.cpython-313.pyc",
+    ".claude/science/physics-loops/toe-phase-selection-20260914/__pycache__/block8_principal_transfer_check.cpython-313.pyc",
+    "logs/.physics_worker_lock.guard",
+    "logs/physics_worker_lock.json",
+    "scripts/__pycache__/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.cpython-313.pyc",
+    "scripts/__pycache__/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_explicit_certificate_2026_08_23.cpython-313.pyc",
+    "scripts/__pycache__/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_released7333_fixture_2026_09_10.cpython-313.pyc"
+  ],
+  "ignored_disposition": "Python bytecode and local cooperative lock only; no ignored scientific source or unique result."
+}

@@ -1,0 +1,304 @@
+{
+  "status": "personal_finite_checks_not_independent_review",
+  "source_sha256": "96dc54da5ae8f68f953481fc80129289b1cb1da377baff6aff100ee41895baa9",
+  "cases": [
+    {
+      "N": 2,
+      "beta": 0.4,
+      "min_max_weight_ratio": 0.2776155659873511,
+      "cases": [
+        {
+          "current": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "independent_vertices": [
+            1
+          ],
+          "transfer_ratio": 0.6154702638297552,
+          "kernel_ratio_bound": 0.9229295975215227,
+          "energy": 0.4853686467428085,
+          "degree2_floor": 0.08020232309641738,
+          "cubic_degree6_floor": 0.00045789121036871944
+        },
+        {
+          "current": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "charge": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "independent_vertices": [
+            0,
+            2
+          ],
+          "transfer_ratio": 0.48351978397158163,
+          "kernel_ratio_bound": 0.8517990419812399,
+          "energy": 0.7266630466806598,
+          "degree2_floor": 0.16040464619283476,
+          "cubic_degree6_floor": 0.0009157824207374389
+        },
+        {
+          "current": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "charge": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "independent_vertices": [
+            1,
+            3
+          ],
+          "transfer_ratio": 0.48351978397158163,
+          "kernel_ratio_bound": 0.8517990419812399,
+          "energy": 0.7266630466806598,
+          "degree2_floor": 0.16040464619283476,
+          "cubic_degree6_floor": 0.0009157824207374389
+        },
+        {
+          "current": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "independent_vertices": [],
+          "transfer_ratio": 1.0000000000000002,
+          "kernel_ratio_bound": 1.0,
+          "energy": -2.2204460492503128e-16,
+          "degree2_floor": -0.0,
+          "cubic_degree6_floor": -0.0
+        }
+      ],
+      "maximum_nontrivial_conditional_harmonic": 0.8568888304773237,
+      "conditional_harmonic_bound": 0.9229295975215227,
+      "conditional_distributions": 4,
+      "trivial_harmonic_exceeds_bound": 0.0770704024784773
+    },
+    {
+      "N": 3,
+      "beta": 0.6,
+      "min_max_weight_ratio": 0.2733918594142603,
+      "cases": [
+        {
+          "current": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "independent_vertices": [
+            1
+          ],
+          "transfer_ratio": 0.49873229249663115,
+          "kernel_ratio_bound": 0.9252568912060133,
+          "energy": 0.6956858151744906,
+          "degree2_floor": 0.07768385980411728,
+          "cubic_degree6_floor": 0.00041764199266821706
+        },
+        {
+          "current": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "charge": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "independent_vertices": [
+            0,
+            2
+          ],
+          "transfer_ratio": 0.33305063607378016,
+          "kernel_ratio_bound": 0.8561003147242163,
+          "energy": 1.0994607402800638,
+          "degree2_floor": 0.15536771960823456,
+          "cubic_degree6_floor": 0.0008352839853364341
+        },
+        {
+          "current": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "charge": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "independent_vertices": [
+            1,
+            3
+          ],
+          "transfer_ratio": 0.33305063607378016,
+          "kernel_ratio_bound": 0.8561003147242163,
+          "energy": 1.0994607402800638,
+          "degree2_floor": 0.15536771960823456,
+          "cubic_degree6_floor": 0.0008352839853364341
+        },
+        {
+          "current": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "independent_vertices": [],
+          "transfer_ratio": 1.000000000000001,
+          "kernel_ratio_bound": 1.0,
+          "energy": -1.110223024625156e-15,
+          "degree2_floor": -0.0,
+          "cubic_degree6_floor": -0.0
+        }
+      ],
+      "maximum_nontrivial_conditional_harmonic": 0.8049308265283319,
+      "conditional_harmonic_bound": 0.9252568912060133,
+      "conditional_distributions": 9,
+      "trivial_harmonic_exceeds_bound": 0.07474310879398671
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "min_max_weight_ratio": 0.0385925951208853,
+      "cases": [
+        {
+          "current": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "independent_vertices": [
+            1
+          ],
+          "transfer_ratio": 0.5723413029015967,
+          "kernel_ratio_bound": 0.9985106116018354,
+          "energy": 0.558019782152695,
+          "degree2_floor": 0.0014904986395889498,
+          "cubic_degree6_floor": 3.3038772255584994e-09
+        },
+        {
+          "current": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "charge": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "independent_vertices": [
+            0,
+            2
+          ],
+          "transfer_ratio": 0.42737007217959133,
+          "kernel_ratio_bound": 0.9970234414814714,
+          "energy": 0.8501049615259039,
+          "degree2_floor": 0.0029809972791778995,
+          "cubic_degree6_floor": 6.607754451116999e-09
+        },
+        {
+          "current": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "charge": [
+            3,
+            1,
+            3,
+            1
+          ],
+          "independent_vertices": [
+            1,
+            3
+          ],
+          "transfer_ratio": 0.42737007217959133,
+          "kernel_ratio_bound": 0.9970234414814714,
+          "energy": 0.8501049615259039,
+          "degree2_floor": 0.0029809972791778995,
+          "cubic_degree6_floor": 6.607754451116999e-09
+        },
+        {
+          "current": [
+            4,
+            0,
+            0,
+            0
+          ],
+          "charge": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "independent_vertices": [],
+          "transfer_ratio": 0.9999999999999962,
+          "kernel_ratio_bound": 1.0,
+          "energy": 3.774758283725539e-15,
+          "degree2_floor": -0.0,
+          "cubic_degree6_floor": -0.0
+        }
+      ],
+      "maximum_nontrivial_conditional_harmonic": 0.7803800139135245,
+      "conditional_harmonic_bound": 0.9985106116018354,
+      "conditional_distributions": 16,
+      "trivial_harmonic_exceeds_bound": 0.0014893883981645928
+    }
+  ],
+  "limits": "Finite squares and exact charge projections; cubic degree6 and infinite history passage are analytic statements."
+}

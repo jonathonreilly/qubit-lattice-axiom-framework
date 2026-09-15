@@ -1,0 +1,145 @@
+{
+  "utc": "2026-09-15T13:11:15.529769+00:00",
+  "data": {
+    "data": {
+      "repository": {
+        "p8123": {
+          "number": 8123,
+          "title": "[physics-loop] toe-phase-selection: bounded_theorem local clock probabilities and projected harmonics (bounded-support)",
+          "state": "CLOSED",
+          "headRefOid": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123"
+        },
+        "p8124": {
+          "number": 8124,
+          "title": "[physics-loop] toe-phase-selection: bounded_theorem finite-step Gaussian canonical locality (bounded-support)",
+          "state": "OPEN",
+          "headRefOid": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124"
+        },
+        "p8125": {
+          "number": 8125,
+          "title": "[physics-loop] periodic Gaussian matrix codec: bounded_theorem, bounded-support",
+          "state": "OPEN",
+          "headRefOid": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125"
+        },
+        "p8126": {
+          "number": 8126,
+          "title": "[physics-loop] causal-gaussian-likelihood bounded_theorem bounded-support",
+          "state": "OPEN",
+          "headRefOid": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126"
+        },
+        "p8127": {
+          "number": 8127,
+          "title": "[physics-loop] periodic-clock bounded_theorem conditional-support: spectra and Maxwell scaling",
+          "state": "OPEN",
+          "headRefOid": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127"
+        },
+        "p8128": {
+          "number": 8128,
+          "title": "Construct positive principal-flux transfer and bound its Hamiltonian limit",
+          "state": "OPEN",
+          "headRefOid": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128"
+        },
+        "p8129": {
+          "number": 8129,
+          "title": "Control the clock penalty locally and derive its ground-state limit",
+          "state": "OPEN",
+          "headRefOid": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129"
+        },
+        "p8130": {
+          "number": 8130,
+          "title": "Logarithmic finite-clock Maxwell scaling and Coulomb Wilson interactions",
+          "state": "OPEN",
+          "headRefOid": "7656dcdb01f32b3d47ecbcda04c89cb3b03996f0",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130"
+        },
+        "p8131": {
+          "number": 8131,
+          "title": "Fixed-clock image noise and positive-time physical equivalence",
+          "state": "OPEN",
+          "headRefOid": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131"
+        },
+        "p8132": {
+          "number": 8132,
+          "title": "Uniform finite-clock Ward residuals and Haar observable comparison",
+          "state": "OPEN",
+          "headRefOid": "20866d4606e9fd519cff663028f554d42b2b1013",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132"
+        },
+        "p8133": {
+          "number": 8133,
+          "title": "Derive coupled clock defects, convex current extension and exact quantized bounds",
+          "state": "OPEN",
+          "headRefOid": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133"
+        },
+        "p8134": {
+          "number": 8134,
+          "title": "[physics-loop] haar-score bounded_theorem bounded-support: fixed-coupling Maxwell limit",
+          "state": "OPEN",
+          "headRefOid": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8",
+          "baseRefName": "physics-loop/coupled-defect-convexity-20260915",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134"
+        },
+        "p8135": {
+          "number": 8135,
+          "title": "[physics-loop] clock-reflection bounded_theorem bounded-support: uniform defect bound",
+          "state": "OPEN",
+          "headRefOid": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135"
+        },
+        "p8136": {
+          "number": 8136,
+          "title": "[physics-loop] clock-smoothing bounded_theorem bounded-support: exact flux bridge",
+          "state": "OPEN",
+          "headRefOid": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8136"
+        },
+        "p8140": {
+          "number": 8140,
+          "title": "[physics-loop] clock-static-charge: bounded_theorem, bounded-support",
+          "state": "OPEN",
+          "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+          "baseRefName": "physics-loop/coupled-defect-convexity-20260915",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140"
+        },
+        "p8143": {
+          "number": 8143,
+          "title": "[physics-loop] full-domain-projective-corridor: bounded_theorem, conditional-support",
+          "state": "OPEN",
+          "headRefOid": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+          "baseRefName": "main",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8143"
+        },
+        "p8144": {
+          "number": 8144,
+          "title": "[physics-loop] static-charge-transfer-sector: bounded_theorem, bounded-support",
+          "state": "OPEN",
+          "headRefOid": "691f96525772ec0e7d06a528d14ad17324400f22",
+          "baseRefName": "physics-loop/clock-static-charge-20260915",
+          "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8144"
+        }
+      }
+    }
+  }
+}

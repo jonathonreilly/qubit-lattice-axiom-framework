@@ -69,3 +69,10 @@
 - Scaffolding: the five pattern values; the 16 distinct numerators; the witnesses `E_1`, `E_2 = −(p−q)² G`; the minimal polynomials `t³−3t²−6t−1`, `x³−3x²−15x−19`, `s(x) = x⁶−6x⁵−3x⁴+4x³−3x²−6x+31`; the quintic `ψ`.
 - External methods (executed exactly, sympy over `Q`): factorization, resultants, the lex elimination basis, sign-change root isolation with rational refinement, inversion and reduction modulo a minimal polynomial.
 - Counterfactual pass: zero weights (outside positivity); other menus (different pattern values); `k ≥ 4` loci (not computed).
+
+## Block 12 (2026-09-15) — the strong-coupling side
+- Dependencies: `minimal_axioms`; block 05 (on main; the rectangle law, rows and columns as `K`-chains); blocks 08 and 09 (stacked; the plane chain, the region, the `Z^3` law; the Gibbs identification, not load-bearing). Proposed, unaudited.
+- Named premises: the records-only reading; positivity; the six-axis menu; the product form; the monotone class as the supplied order class; for S4 the finiteness of the cross-section.
+- Scaffolding: level time and the projection `π`; the binary coarse-graining `ξ`; the majority automaton with noise `ε`; the couplings `(p, 1, 2)`; the `2×2` cross-section with its `48`-fold orbit quotient and the full `1296`-state chain.
+- External references, not used and not re-proved (named under Prior art and Imports only): the stability theorem for noisy monotone eroders (Toom 1980) and its modern contour presentations. Everything stated as a theorem (S0–S5) is proved in the note.
+- Counterfactual pass: a menu with `q ≥ p` or `r ≥ p` (the majority is not the most likely output; S1's condition fails, S3's `ε` is not small); a non-product rule (no closed forms); zero weights (outside positivity; `K`'s eigenvalue can reach one only there); an order class in which a site has two predecessors on the same level (not the monotone class; the level chain would not be Markov of order one).

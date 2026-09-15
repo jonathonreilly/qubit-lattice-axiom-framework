@@ -251,3 +251,16 @@ Lens (`GOAL_block11.md`): the "one witness is not pair-additivity" objection (an
 
 ## block 11 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
 1 self-containment: PASS — inputs: this note, the axioms memo, block 08's and block 10's notes (the stack's reviewed deltas). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the exceptional points are given as minimal polynomials and isolating intervals, numeric labels marked as such. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+
+## block 12 — V1-V5 (supervisor, 2026-09-15)
+- V1: block 08's region `c < 1/3` leaves the strong-coupling side of the `Z^3` formation law open (its queue item); the campaign handoff §3 names the noisy-majority structure as the highest-blast-radius residual; the campaign's standing question "one law or several" now for the formation law.
+- V2: the lens pass in `GOAL_block12.md` (the "you cannot prove the stability theorem in a session" objection — answered by structuring the side exactly and stating the obligation with its inputs instead of claiming; the "2D has no phase either" objection — turned into S5; the "finite W is always unique" objection — turned into S4's metastability).
+- V3: S0–S5 proved; S6 an obligation; executed with exact arithmetic (20 checks, 13 mutations); the refuting pass found two real defects (F1 the `ε` literals; F2 the quotient cannot see the slow mode) and both were folded before the census.
+- V4: no order, corner or coupling selected; no bridge, Born or gravity statement; the reference theorem named and not used; the ordered phase not claimed anywhere (the forbidden-phrase scan carries "ordered phase exists" and "phase transition is proved").
+- V5: consumers named — the campaign's queue; #8093's assembly (the formation-law node's phase structure); the parked statistical-bridge material (read-only).
+
+## block 12 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block12.md`): as V2. Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block12_findings.md`): `ε(p)` from the three closed-form patterns (caught the antipodal-for-orthogonal literals at `p ≥ 30`), the full `1296`-state chain by the `Fraction` route (caught the quotient's blindness to the slow mode; the full-chain memory table replaced it as the executed witness), an exhaustive island generator (575 islands). Two drafting defects also fixed (decimal strings under the float scan; a method name outside the allowed sections). Author checks only; independent review pending.
+
+## block 12 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 08's and block 09's notes (the stack's reviewed deltas); block 05's note on main. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the ordered phase is labeled an obligation in the scope line, the status block, the obligation table, S6, the fences and the certificate. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

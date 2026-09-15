@@ -45,3 +45,15 @@
 | F11.2 two-witness elimination | `E_1 = 0`, `G = 0` | lex elimination basis; `p` linear in `q` on the sextic | none | exact | candidate-complete | X3 (C1–C3) | — |
 | F11.3 full sufficiency test | all 16 numerators mod minimal polynomials | exact reduction | none | exact | candidate-complete | C4 | — |
 | F11.4 algebraic-field gcd | gcd over `Q(p_0)` | — | — | — | retired (too slow) | control B | — |
+
+## Block 12 — the strong-coupling side: level automaton, noise map, eroder, metastability, the obligation (2026-09-15)
+
+| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| F12.1 level time | `L_t = {x : Σ x_i = t}`, projection `π(x) = (x_2, x_3)` | every predecessor lies one level down; north-east-center offsets | none | exact | candidate-complete | S0 (B1) | — |
+| F12.2 noise map | the three-neighbor conditional at the four patterns | closed forms; `1/p` deviations; majority most likely iff `p > max(q, r)` | none | exact | candidate-complete | S1 (B2–B4) | — |
+| F12.3 eroder | the noiseless majority rule on levels | coordinate maxima never increase | none | exact | candidate-complete | S2 (C1–C2) | — |
+| F12.4 domination | `ξ_x = 1{v_x ≠ a}` vs the noisy majority automaton | site-by-site monotone coupling; `ε(p)` exact | none | exact | candidate-complete | S3 (B5) | — |
+| F12.5 finite-cross-section metastability | `P_C(p) → P_C(∞)` with six absorbing states | root continuity; simple eigenvalue 1 at finite `p` | none | exact | candidate-complete | S4 (D1, D1b, D2) | — |
+| F12.6 two-dimensional contrast | rows as `K`-chains; the two-predecessor limit | eigenvalues `(p−q)/Z_1`, `(p+q−2r)/Z_1` | none | exact | candidate-complete | S5 (D3) | — |
+| F12.7 contour proof of stability | explanation trees for a `1` from the all-`0` level | union bound over minimal explanations | the sparse-contour lemma (length linear in the noise count) | would settle S6 | blocked-equivalent (obstruction recorded) | S6 text | a contour construction re-proved at scope |

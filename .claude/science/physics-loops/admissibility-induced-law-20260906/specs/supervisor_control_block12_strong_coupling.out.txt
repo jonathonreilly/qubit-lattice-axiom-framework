@@ -1,0 +1,26 @@
+=== (1) the noise map at (p, 1, 2): P(majority) for the triple patterns; deviation = 1 - P(majority)
+p=3: P(a|a,a,a)=0.45000000 dev=0.55000000; P(a|a,a,b⊥)=0.34615384 dev=0.65384615; P(a|a,a,-a)=0.20454545 dev=0.79545454; tie (a,b,c): P(a)=P(b)=P(c)=0.25000000, P(-a)=0.08333333
+p=10: P(a|a,a,a)=0.96805421 dev=0.03194578; P(a|a,a,b⊥)=0.76335877 dev=0.23664122; P(a|a,a,-a)=0.70422535 dev=0.29577464; tie (a,b,c): P(a)=P(b)=P(c)=0.30303030, P(-a)=0.03030303
+p=30: P(a|a,a,a)=0.99877926 dev=0.00122073; P(a|a,a,b⊥)=0.92687950 dev=0.07312049; P(a|a,a,-a)=0.93555093 dev=0.06444906; tie (a,b,c): P(a)=P(b)=P(c)=0.32258064, P(-a)=0.01075268
+p=100: P(a|a,a,a)=0.99996700 dev=0.00003299; P(a|a,a,b⊥)=0.97933601 dev=0.02066398; P(a|a,a,-a)=0.98697196 dev=0.01302803; tie (a,b,c): P(a)=P(b)=P(c)=0.33003300, P(-a)=0.00330033
+p=1000: P(a|a,a,a)=0.99999996 dev=0.00000003; P(a|a,a,b⊥)=0.99799303 dev=0.00200696; P(a|a,a,-a)=0.99896906 dev=0.00103093; tie (a,b,c): P(a)=P(b)=P(c)=0.33300033, P(-a)=0.00033300
+closed forms: P(a|a,a,a) = p^3/(p^3+q^3+4r^3); P(a|a,a,b⊥) = p^2 r/(r(p^2+q^2)+r^2(p+q)+2r^3); P(a|a,a,-a) = p^2 q/(pq(p+q)+4r^3); tie P(a) = p r^2/(3 r^2 (p+q)) = p/(3(p+q))
+   verified: True True True True
+
+=== (2) the deterministic majority rule on levels is an eroder: death time vs the bound M1+M2+M3 - t0 + 1
+   300 random islands (up to 12 sites, levels 3..12): every island dies; max death time 9; bound M1+M2+M3-t0+1 always holds
+   line of 6 ones on level 10: death time 6; bound 6
+   filled triangle of 15 ones on level 12: death time 9; bound 9
+
+=== (3) the 2x2 orbit quotient at (p,1,2): TV contraction after n steps (max over row pairs), n = 1, 2, 4, 8
+   p=3: [(1, '0.072029'), (2, '0.002008'), (4, '0.000001'), (8, '0.000000')]  (0.7s)
+   p=10: [(1, '0.393104'), (2, '0.113234'), (4, '0.007298'), (8, '0.000021')]  (0.9s)
+   p=30: [(1, '0.653361'), (2, '0.320619'), (4, '0.066726'), (8, '0.001813')]  (1.3s)
+   p=100: [(1, '0.734878'), (2, '0.413945'), (4, '0.110339'), (8, '0.005940')]  (1.6s)
+
+=== (4) two dimensions at (p,1,2): row flip probability 1 - p/Z1 and the row correlation eigenvalue (p-q)/Z1
+   p=3: flip prob 0.75000000, eigenvalue 0.16666666 (< 1 for every finite p: no long-range order along rows)
+   p=10: flip prob 0.47368421, eigenvalue 0.47368421 (< 1 for every finite p: no long-range order along rows)
+   p=30: flip prob 0.23076923, eigenvalue 0.74358974 (< 1 for every finite p: no long-range order along rows)
+   p=100: flip prob 0.08256880, eigenvalue 0.90825688 (< 1 for every finite p: no long-range order along rows)
+   p=1000: flip prob 0.00891972, eigenvalue 0.99008919 (< 1 for every finite p: no long-range order along rows)

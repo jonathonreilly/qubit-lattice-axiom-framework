@@ -1,6 +1,6 @@
 {
- "edge_count": 13235,
- "node_count": 5667,
+ "edge_count": 13267,
+ "node_count": 5696,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12934,6 +12934,10 @@
    "deps_hash": "05fc281e1618",
    "out_degree": 2
   },
+  "native_eighth_diagonal_cycle_potential_note_2026-09-08": {
+   "deps_hash": "211135b0c4c7",
+   "out_degree": 4
+  },
   "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13": {
    "deps_hash": "543a03b87175",
    "out_degree": 7
@@ -21280,6 +21284,118 @@
   },
   "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.readme": {
    "deps_hash": "85335c00999f",
+   "out_degree": 28
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.independent-canonical-review.pr8047-independent-canonical-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-combined-cold-review.pr8047-originals-native-eighth-combined-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-combined.pr8047-originals-native-eighth-combined-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-global-reduction-cold-review.pr8047-originals-native-eighth-global-reduction-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-global-reduction-root.pr8047-originals-native-eighth-global-reduction-root-contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-global-reduction-root.pr8047-originals-native-eighth-global-reduction-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-global-witness-cold-review.pr8047-originals-native-eighth-global-witness-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-eighth-global-witness.pr8047-originals-native-eighth-global-witness-review_and_witness": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-full-eighth-cold-review.pr8047-originals-native-full-eighth-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-full-eighth-diagonal.pr8047-originals-native-full-eighth-diagonal-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-full-eighth-diagonal.pr8047-originals-native-full-eighth-diagonal-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.originals.native-virtual-pair-eighth-plan.pr8047-originals-native-virtual-pair-eighth-plan-plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-graph_confirmation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-root_canonical_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.pr8047-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.readme": {
+   "deps_hash": "69d4404d3c76",
    "out_degree": 28
   },
   "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.independent-canonical-review.pr8049-independent-canonical-review-review": {

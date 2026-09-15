@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py
+runner_sha256: c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+PASS: 15 exact assertions
+per_element: symbolic integrals check profile mass, concentration, derivative energy and supported-profile second derivative
+per_site: checked and not executed — this circle-profile variational theorem has no spatial lattice-site model
+per_mode: first and second cosine harmonics checked for equal concentration and fourfold derivative-energy penalty
+per_block: both profile branches satisfy threshold matching; supported endpoint value and first derivative vanish
+lattice_wide: checked and not executed — no lattice-wide dynamics or physical profile-selection law is simulated
+source_sha256: c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -315,3 +315,30 @@ not read or treated as scientific authority. The full formation-order
 classification and full existing priority-formation theorem were read. The
 new frontier assessment preserves a possible sharper Fourier energy route
 and motivates testing an actual full-domain global formation model pair.
+
+
+## Block3: global record pair, conditional order theorem, foundation scope open
+
+Defined intrinsic kernels on all M2(C), with proper support {0,I}, and proved
+a global irreversible process with exact local formation odds. Coalescing
+parent chains give nearest-neighbour agreement separation at least 1/14 for
+p=1/4 versus p=3/4, at the same supplied empty initial condition. The models
+have identical full support on final bit histories and different probability
+laws. No finite window is misidentified as an infinite-lattice marginal.
+
+A separate theorem extends binary order classification to standard Borel
+alphabets: two-site reversal plus the path identity make the common
+one-neighbour Markov operator selfadjoint with K^2=Pi, hence K=Pi. Stars
+give all neighbour kernels independent almost everywhere. Pointwise claims
+need additional continuity/support hypotheses. Preserved both a null-profile
+escape and an explicit direction-sensitive order-independent port process.
+
+The intended full-foundation nonselection claim FAILS this personal review:
+no actual matched matter/evolution carrier verifies the approved c_t=c_s
+primitive, and the formation-conditional interpretation remains declared.
+The N1-N8 record preserves these obligations without inventing an axiom
+update. Finite exact formula checks pass; independent review is absent.
+
+Next return to F2 with the Fourier energy bound and Gaussian feature
+registers, testing whether their degree cost is compatible with the actual
+connected graph multiplicities. Deadline unchanged; continue personally.

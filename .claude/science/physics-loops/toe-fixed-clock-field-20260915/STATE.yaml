@@ -9,10 +9,10 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 2
-current_target: fixed-finite-clock full physical electromagnetic field scaling
+block: 3
+current_target: return to F2 after scoped global record model pair checkpoint
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T18:04:41.329638+00:00'
-next_step: reassess native full-domain/global-formation model pair while retaining
-  the mixed-phase and physical graph-sum obligations
+last_checkpoint_utc: '2026-09-15T18:34:58.970223+00:00'
+next_step: derive Fourier component energy control and Gaussian derivative feature registers;
+  preserve the remaining physical graph and full-foundation obligations

@@ -52,3 +52,13 @@ local to actual footprint intersection. Random-partition interpolation is
 retained as an alternative with nonlocal derivative cancellations. Next
 resolve cofactor ordering signs and test whether their locality and operator
 source bounds can coexist before attacking general branching.
+
+
+Block3: the native-foundation route now has a full-domain global record pair
+and an exact final-record discriminator, under a declared formation-law
+interpretation. Approved kinetic compatibility remains open. The general
+order theorem is conditional and has explicit directional/null-profile
+escapes. Do not claim all-foundation underdetermination or select an update.
+Return to F2: sharpen component energy to O(||j||1 ||j||2), then preserve
+Gaussian derivative sums by feature registers. Test physical graph counting
+separately; an estimate for a prescribed decorated cycle is not its sum.

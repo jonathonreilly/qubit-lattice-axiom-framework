@@ -1,6 +1,6 @@
 {
- "edge_count": 13120,
- "node_count": 5566,
+ "edge_count": 13189,
+ "node_count": 5629,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13074,6 +13074,10 @@
    "deps_hash": "2a9d6130ac3c",
    "out_degree": 2
   },
+  "native_local_natural_ring_dynamics_note_2026-09-08": {
+   "deps_hash": "4578d7bc3a88",
+   "out_degree": 4
+  },
   "native_low_charge_u1_dictionary_note_2026-09-08": {
    "deps_hash": "7165261fd0dd",
    "out_degree": 4
@@ -13105,6 +13109,10 @@
   "native_zero_penalty_endpoint_note_2026-09-08": {
    "deps_hash": "087864283a7d",
    "out_degree": 3
+  },
+  "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08": {
+   "deps_hash": "3249f6ddff35",
+   "out_degree": 4
   },
   "nature_discovery_directions_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
@@ -20998,6 +21006,154 @@
    "deps_hash": "f5e2a2f64b13",
    "out_degree": 69
   },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.independent-canonical-review.pr8045-independent-canonical-review-graph_confirmation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.independent-canonical-review.pr8045-independent-canonical-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-harmonics-cold-review.pr8045-originals-native-local-harmonics-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-harmonics-root.pr8045-originals-native-local-harmonics-root-contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-harmonics-root.pr8045-originals-native-local-harmonics-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-prethermal-applicability.pr8045-originals-native-local-prethermal-applicability-applicability": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-sharpening.pr8045-originals-native-local-ring-sharpening-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-sharpening.pr8045-originals-native-local-ring-sharpening-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-sharpening.pr8045-originals-native-local-ring-sharpening-root_control_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-truncation-cold-proof.pr8045-originals-native-local-ring-truncation-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-truncation-cold-proof.pr8045-originals-native-local-ring-truncation-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-truncation-cold-proof.pr8045-originals-native-local-ring-truncation-cold-proof-root_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-truncation-root.pr8045-originals-native-local-ring-truncation-root-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-truncation-root.pr8045-originals-native-local-ring-truncation-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-local-ring-truncation-root.pr8045-originals-native-local-ring-truncation-root-independent_proof_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-natural-ring-timescale-root.pr8045-originals-native-natural-ring-timescale-root-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-natural-ring-timescale-root.pr8045-originals-native-natural-ring-timescale-root-control_receipt": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-natural-ring-timescale-root.pr8045-originals-native-natural-ring-timescale-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-natural-ring-timescale.pr8045-originals-native-natural-ring-timescale-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-natural-ring-timescale.pr8045-originals-native-natural-ring-timescale-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.originals.native-natural-ring-timescale.pr8045-originals-native-natural-ring-timescale-root_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-mutation_coverage_correction": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-root_canonical_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.pr8045-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.readme": {
+   "deps_hash": "28cc77ef1dfc",
+   "out_degree": 37
+  },
   "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.independent-canonical-review.pr8049-independent-canonical-review-review": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -21081,6 +21237,102 @@
   "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.readme": {
    "deps_hash": "55c1b568b96b",
    "out_degree": 21
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.independent-canonical-review.pr8051-independent-canonical-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-flux-selection-cold-review.pr8051-originals-native-zero-penalty-flux-selection-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-flux-selection-root.pr8051-originals-native-zero-penalty-flux-selection-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-flux-selection-root.pr8051-originals-native-zero-penalty-flux-selection-root-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-pi-dispersion-cold-review.pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-pi-dispersion-cold-review.pr8051-originals-native-zero-penalty-pi-dispersion-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-pi-dispersion.pr8051-originals-native-zero-penalty-pi-dispersion-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.originals.native-zero-penalty-pi-dispersion.pr8051-originals-native-zero-penalty-pi-dispersion-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-root_canonical_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-state": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.pr8051-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.readme": {
+   "deps_hash": "b8210cacff0f",
+   "out_degree": 24
   },
   "work_history.repo.review_feedback.pr8065-charged-history-evidence.final_root_review.pr8065-final_root_review-packaging_note": {
    "deps_hash": "e3b0c44298fc",

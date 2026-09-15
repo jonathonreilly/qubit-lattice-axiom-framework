@@ -1,0 +1,184 @@
+--- 
++++ 
+@@ -67,8 +67,10 @@
+ Take a>0, g>0 and r>=0. On a finite cubic graph with distinct endpoints for each link, use four CAR
+ orbitals per cell and an integer rotor on each oriented link. Write
+ 
++```text
+ H=H_on + sum_alpha(V_alpha+V_alpha^dagger) + sum_l k_l E_l^2,
+ G_x=div(E)_x-(N_x-2).
++```
+ 
+ Each V_alpha is a bounded hopping or plaquette term, shifts each participating
+ link by s_alpha,l in {-1,+1}, and commutes with the other electric operators.
+@@ -107,20 +109,26 @@
+ H=R_l+B_l+B_l^dagger, [R_l,E_l]=0, [E_l,B_l]=B_l, ||B_l||<=J_l.
+ On a finite larger cutoff K, for lambda>0,
+ 
++```text
+ exp(lambda E_l) H_K exp(-lambda E_l)
+  =R_l+exp(lambda) B_l+exp(-lambda) B_l^dagger.
++```
+ 
+ The norm of its anti-Hermitian part (H_lambda-H_lambda^dagger)/(2i) is at
+ most 2 J_l sinh(lambda). Differentiating the squared norm of weighted
+ Schrodinger evolution and applying Gronwall therefore gives
+ 
++```text
+ ||exp(lambda E_l) exp(-it H_K) exp(-lambda E_l)||
+  <=exp(2 J_l |t| sinh(lambda)).                              (A)
++```
+ 
+ For any real thresholds L>=M and either sign epsilon=+1 or -1,
+ 
++```text
+ ||1_{epsilon E_l>=L} exp(-it H_K) 1_{epsilon E_l<=M}||
+  <=exp[-lambda(L-M)+2 J_l |t| sinh(lambda)].                 (B)
++```
+ 
+ This is an operator norm bound, so arbitrary matter/link entanglement in the
+ initial low-flux subspace is allowed. Both one-sided bounds hold with the same
+@@ -142,28 +150,36 @@
+ Let I_S embed the truncated space and P_M be the all-link cutoff M<=S. With
+ U(t)=exp(-itH), U_S(t)=exp(-itH_S), Duhamel gives
+ 
++```text
+ [U(t)-I_S U_S(t) I_S^dagger] P_M
+  =-i integral_0^t U(t-s) (I-P_S) H P_S U_S(s) P_M ds.         (C)
++```
+ 
+ For one V_alpha, crossing the boundary requires at least one of its shifted
+ links to start at the outward endpoint E_l=s_alpha,l S. A union of these
+ commuting endpoint projectors is bounded in vector norm by the sum of their
+ norms. Thus each V_alpha and its adjoint contribute at most
+ 
++```text
+ ||V_alpha|| sum_{l in alpha} [||1_{E_l=S} U_S(s)P_M||
+                               +||1_{E_l=-S} U_S(s)P_M||].
++```
+ 
+ Overcounting a plaquette that reaches several endpoints only enlarges this
+ upper bound. Inserting (B) into (C) yields the explicit safe estimate
+ 
++```text
+ D_S(t):=||[U(t)-I_S U_S(t) I_S^dagger] P_M||
+  <=2 |t| sum_l J_l exp[-lambda(S-M)+2 J_l |t|sinh(lambda)].   (D)
++```
+ 
+ It may always be capped by 2. If J_l<=J and there are N links,
+ D_S(t)<=2 N J |t| exp[-lambda(S-M)+2 J |t|sinh(lambda)].
+ For lambda=1 and nonzero Jt, the sufficient choice
+ 
++```text
+ S>=M+2 J |t|sinh(1)+log(2 N J |t|/epsilon)
++```
+ 
+ rounded upward and constrained S>=M gives D_S<=epsilon. For zero coupling or
+ time the error is exactly zero. The sharper one-sided tail exponent, if
+@@ -191,17 +207,21 @@
+ and let H_B retain only terms completely inside B_R. There are constants
+ C_X,v,nu>0 independent of S and ambient volume with
+ 
++```text
+ ||A_H(t)-A_HB(t)|| <= C_X ||A|| exp(v|t|-nu R).               (E)
++```
+ 
+ The same bound holds for the compressed theory. Constants absorb the fixed
+ support cardinality/range and boundary polynomial factors. For an initial
+ state with all fluxes supported in |E_l|<=M, its reduced state in B_R has the
+ same support condition. Apply (D) in B_R and (E) on both sides to obtain
+ 
++```text
+ |<A_H(t)>-<A_HS(t)>|
+  <=2 C_X ||A|| exp(v|t|-nu R)
+    +4 ||A|| |t| sum_{l in B_R} J_l
+            exp[-lambda(S-M)+2 J_l |t|sinh(lambda)].           (F)
++```
+ 
+ Compression of A is understood. The spatial restriction need not preserve
+ all boundary Gauss constraints: the comparison is made in the ambient
+@@ -220,9 +240,11 @@
+ 
+ Let s=sin b,c=cos b, 0<b<pi/2, 1/2<zeta<1, 0<mu^2<1-zeta^2. Define
+ 
++```text
+ h_on=(2+zeta) sigma3+mu tau_x(s sigma1+c sigma3),
+ C_x=-s sigma1-c sigma3, S_x=tau_z(c sigma1-s sigma3),
+ C_y=C_z=-sigma3, S_y=sigma2, S_z=0, T_i=(C_i-i S_i)/2.
++```
+ 
+ These are the explicitly aligned four-orbital carrier coefficients; the
+ present finite-link theorem requires only their boundedness and symmetry,
+@@ -235,8 +257,10 @@
+ For supplied positive diagonal D, physical coordinates y_i=a n_i/D_i, and
+ w_i=det(D)/D_i^2, choose
+ 
++```text
+ H_E=(g^2/(2a)) sum_{links axis i} w_i E_l^2,
+ H_B=-(1/(2g^2 a)) sum_{plaquettes normal i} w_i(W_p+W_p^dagger).
++```
+ 
+ The small-angle quadratic expansion of the untruncated rotor classical symbol
+ has unit photon speed in y. A finite compressed U_S is not being identified
+@@ -251,7 +275,9 @@
+ For an axis-i link in the cubic bulk, four plaquettes meet it, two of normal
+ j and two of normal k. Thus a valid local flux-growth constant is
+ 
++```text
+ J_i <= [2r+(w_j+w_k)/g^2]/a.                                (G)
++```
+ 
+ This makes the coupling/spacing dependence of (D)-(F) explicit. In particular,
+ the construction does not assert a cutoff uniform in a continuum limit a->0
+@@ -268,8 +294,10 @@
+ First put S=2 and use the five orthonormal discrete phase states of one link.
+ For H_E=E^2/2 the off-diagonal heat kernel at phase separation 4pi/5 is
+ 
++```text
+ K_2(2;tau)=[1+2 exp(-tau/2)cos(4pi/5)
+              +2 exp(-2tau)cos(8pi/5)]/5.
++```
+ 
+ K_2(2;0)=0 and K_2'(2;0)=(5-3sqrt(5))/20<0. Therefore this exact finite-link
+ electric transfer matrix has a negative off-diagonal phase-basis entry for
+@@ -285,7 +313,9 @@
+ h(phi) is eight-dimensional, with h_on at each endpoint and off-diagonal
+ T_y exp(i phi). Write
+ 
++```text
+ W(delta)=det[I+exp(-delta h(pi)) exp(-delta h(pi/2)) exp(-delta h(0))].
++```
+ 
+ This is the usual grand-canonical number-conserving fermionic trace for that
+ specified history, before Gauss projection or temporal-link integration.
+@@ -295,24 +325,30 @@
+ T_y=[[-1,-1],[1,1]]/2. Let w(A,B;delta) denote the determinant of one block.
+ Direct matrix multiplication of the convergent power series at delta=0 gives
+ 
++```text
+ log w = 4 log 2 + (18 A^2+18 B^2+1)delta^2/4
+         +i A delta^3
+         -(162 A^4+324 A^2 B^2-110 A^2+162 B^4-28 B^2+1)delta^4/96
+         -i A(7 A^2+7 B^2-1)delta^5/4 + O(delta^6).            (H)
++```
+ 
+ For completeness, these coefficients are finite algebra, with no spectral
+ assumption: form P(delta)=exp(-delta h_3)exp(-delta h_2)exp(-delta h_1),
+ P_n=(-1)^n sum_{a+b+c=n}h_3^a h_2^b h_1^c/(a!b!c!), and use
+ 
++```text
+ [delta^n](log w-4log2)
+  =sum_{r=1}^n (-1)^(r+1)/(r 2^r)
+    sum_{n1+...+nr=n; nj>=1} Tr(P_n1 ... P_nr).              (I)
++```
+ 
+ The displayed four-by-four block matrices and (I) are a reproducible exact
+ certificate for (H), not a floating-point phase fit. Adding eta=+/- cancels
+ the cubic terms but leaves
+ 
++```text
+ Im log W(delta)=-7 B0 m1 m3 delta^5+O(delta^6).              (J)
++```
+ 
+ For the aligned carrier m1=mu sin b, m3=mu cos b. In its stated open parameter
+ range this coefficient is nonzero. An explicit rational fixture has

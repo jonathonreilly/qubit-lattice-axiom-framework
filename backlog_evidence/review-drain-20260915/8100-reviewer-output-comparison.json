@@ -1,0 +1,877 @@
+{
+  "original_capture": "Frozen original CANONICAL_EXECUTION.json; no original rerun",
+  "current_receipt": "/private/tmp/review-drain-20260915/8100-execution-charged_finite_link_local_dynamics_and_phase_bridge_2026_09_13.json",
+  "count": 508,
+  "structure_and_nonfloat_fields_equal": true,
+  "excluded_fields": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "floating_differences": [
+    {
+      "path": "/checks/33/actual",
+      "original": 1.4142135623730965,
+      "current": 1.4142135623730958,
+      "absolute_difference": 6.661338147750939e-16
+    },
+    {
+      "path": "/checks/49/actual",
+      "original": 1.4142135623730956,
+      "current": 1.414213562373096,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "path": "/checks/87/actual",
+      "original": 0.04905310483552066,
+      "current": 0.04905310483552069,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "path": "/checks/90/actual",
+      "original": 8.978220553720182e-06,
+      "current": 8.978220553720184e-06,
+      "absolute_difference": 1.6940658945086007e-21
+    },
+    {
+      "path": "/checks/92/actual",
+      "original": 5.219747056940367e-10,
+      "current": 5.219747056940368e-10,
+      "absolute_difference": 1.0339757656912846e-25
+    },
+    {
+      "path": "/checks/93/actual",
+      "original": 5.170017496803013e-10,
+      "current": 5.170017496803014e-10,
+      "absolute_difference": 1.0339757656912846e-25
+    },
+    {
+      "path": "/checks/96/actual",
+      "original": 1.0585431858790395,
+      "current": 1.0585431858790393,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/98/actual",
+      "original": 0.04905310483552066,
+      "current": 0.04905310483552069,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "path": "/checks/101/actual",
+      "original": 8.978220553720182e-06,
+      "current": 8.978220553720184e-06,
+      "absolute_difference": 1.6940658945086007e-21
+    },
+    {
+      "path": "/checks/103/actual",
+      "original": 5.219747056940367e-10,
+      "current": 5.219747056940368e-10,
+      "absolute_difference": 1.0339757656912846e-25
+    },
+    {
+      "path": "/checks/104/actual",
+      "original": 5.170017496803013e-10,
+      "current": 5.170017496803014e-10,
+      "absolute_difference": 1.0339757656912846e-25
+    },
+    {
+      "path": "/checks/107/actual",
+      "original": 1.1053418399470039,
+      "current": 1.1053418399470036,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/109/actual",
+      "original": 0.04905310483552066,
+      "current": 0.04905310483552069,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "path": "/checks/112/actual",
+      "original": 8.978220553720182e-06,
+      "current": 8.978220553720184e-06,
+      "absolute_difference": 1.6940658945086007e-21
+    },
+    {
+      "path": "/checks/114/actual",
+      "original": 5.219747056940367e-10,
+      "current": 5.219747056940368e-10,
+      "absolute_difference": 1.0339757656912846e-25
+    },
+    {
+      "path": "/checks/115/actual",
+      "original": 5.170017496803013e-10,
+      "current": 5.170017496803014e-10,
+      "absolute_difference": 1.0339757656912846e-25
+    },
+    {
+      "path": "/checks/120/actual",
+      "original": 6.949878089852598e-10,
+      "current": 6.949878089852593e-10,
+      "absolute_difference": 4.1359030627651384e-25
+    },
+    {
+      "path": "/checks/122/actual",
+      "original": 1.0811923233715544,
+      "current": 1.081192323371554,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "path": "/checks/124/actual",
+      "original": 0.2514100339333205,
+      "current": 0.25141003393332056,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "/checks/126/actual",
+      "original": 0.0014007626985869802,
+      "current": 0.00140076269858698,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/127/actual",
+      "original": 0.0013861921801493202,
+      "current": 0.00138619218014932,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/130/actual",
+      "original": 2.2187768370506885e-06,
+      "current": 2.2187768370506877e-06,
+      "absolute_difference": 8.470329472543003e-22
+    },
+    {
+      "path": "/checks/133/actual",
+      "original": 1.341320324737094,
+      "current": 1.3413203247370937,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/135/actual",
+      "original": 0.2514100339333205,
+      "current": 0.25141003393332056,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "/checks/137/actual",
+      "original": 0.0014007626985869802,
+      "current": 0.00140076269858698,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/138/actual",
+      "original": 0.0013861921801493202,
+      "current": 0.00138619218014932,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/141/actual",
+      "original": 2.2187768370506885e-06,
+      "current": 2.2187768370506877e-06,
+      "absolute_difference": 8.470329472543003e-22
+    },
+    {
+      "path": "/checks/146/actual",
+      "original": 0.2514100339333205,
+      "current": 0.25141003393332056,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "/checks/148/actual",
+      "original": 0.0014007626985869802,
+      "current": 0.00140076269858698,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/149/actual",
+      "original": 0.0013861921801493202,
+      "current": 0.00138619218014932,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/152/actual",
+      "original": 2.2187768370506885e-06,
+      "current": 2.2187768370506877e-06,
+      "absolute_difference": 8.470329472543003e-22
+    },
+    {
+      "path": "/checks/154/actual",
+      "original": 0.29971705823581507,
+      "current": 0.2997170582358152,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/155/actual",
+      "original": 0.026168530629335836,
+      "current": 0.02616853062933584,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/checks/157/actual",
+      "original": 3.0560531386940773e-06,
+      "current": 3.0560531386940765e-06,
+      "absolute_difference": 8.470329472543003e-22
+    },
+    {
+      "path": "/checks/159/actual",
+      "original": 1.150689340370899,
+      "current": 1.1506893403708993,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/160/actual",
+      "original": 0.4903463689774333,
+      "current": 0.4903463689774334,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/161/actual",
+      "original": 0.4390349407759333,
+      "current": 0.4390349407759334,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/163/actual",
+      "original": 0.010083204716681355,
+      "current": 0.010083204716681357,
+      "absolute_difference": 1.734723475976807e-18
+    },
+    {
+      "path": "/checks/164/actual",
+      "original": 0.010183663573520997,
+      "current": 0.010183663573521,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/checks/166/actual",
+      "original": 6.668380760389635e-05,
+      "current": 6.668380760389634e-05,
+      "absolute_difference": 1.3552527156068805e-20
+    },
+    {
+      "path": "/checks/167/actual",
+      "original": 6.287811934738499e-05,
+      "current": 6.287811934738502e-05,
+      "absolute_difference": 2.710505431213761e-20
+    },
+    {
+      "path": "/checks/170/actual",
+      "original": 1.6976984143143232,
+      "current": 1.6976984143143226,
+      "absolute_difference": 6.661338147750939e-16
+    },
+    {
+      "path": "/checks/171/actual",
+      "original": 0.4903463689774333,
+      "current": 0.4903463689774334,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/172/actual",
+      "original": 0.4390349407759333,
+      "current": 0.4390349407759334,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/174/actual",
+      "original": 0.010083204716681355,
+      "current": 0.010083204716681357,
+      "absolute_difference": 1.734723475976807e-18
+    },
+    {
+      "path": "/checks/175/actual",
+      "original": 0.010183663573520997,
+      "current": 0.010183663573521,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/checks/177/actual",
+      "original": 6.668380760389635e-05,
+      "current": 6.668380760389634e-05,
+      "absolute_difference": 1.3552527156068805e-20
+    },
+    {
+      "path": "/checks/178/actual",
+      "original": 6.287811934738499e-05,
+      "current": 6.287811934738502e-05,
+      "absolute_difference": 2.710505431213761e-20
+    },
+    {
+      "path": "/checks/182/actual",
+      "original": 0.4903463689774333,
+      "current": 0.4903463689774334,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/183/actual",
+      "original": 0.4390349407759333,
+      "current": 0.4390349407759334,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/185/actual",
+      "original": 0.010083204716681355,
+      "current": 0.010083204716681357,
+      "absolute_difference": 1.734723475976807e-18
+    },
+    {
+      "path": "/checks/186/actual",
+      "original": 0.010183663573520997,
+      "current": 0.010183663573521,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/checks/188/actual",
+      "original": 6.668380760389635e-05,
+      "current": 6.668380760389634e-05,
+      "absolute_difference": 1.3552527156068805e-20
+    },
+    {
+      "path": "/checks/189/actual",
+      "original": 6.287811934738499e-05,
+      "current": 6.287811934738502e-05,
+      "absolute_difference": 2.710505431213761e-20
+    },
+    {
+      "path": "/checks/191/actual",
+      "original": 0.5507278657669132,
+      "current": 0.5507278657669131,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/192/actual",
+      "original": 0.09850437684775132,
+      "current": 0.09850437684775133,
+      "absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "path": "/checks/193/actual",
+      "original": 0.013221627961536584,
+      "current": 0.013221627961536586,
+      "absolute_difference": 1.734723475976807e-18
+    },
+    {
+      "path": "/checks/204/actual",
+      "original": 5.208759505185921e-10,
+      "current": 5.208759505185924e-10,
+      "absolute_difference": 3.101927297073854e-25
+    },
+    {
+      "path": "/checks/208/actual",
+      "original": 1.0585067793476364,
+      "current": 1.0585067793476362,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/215/actual",
+      "original": 5.208759505185921e-10,
+      "current": 5.208759505185924e-10,
+      "absolute_difference": 3.101927297073854e-25
+    },
+    {
+      "path": "/checks/219/actual",
+      "original": 1.105274874189232,
+      "current": 1.1052748741892318,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/226/actual",
+      "original": 5.208759505185921e-10,
+      "current": 5.208759505185924e-10,
+      "absolute_difference": 3.101927297073854e-25
+    },
+    {
+      "path": "/checks/230/actual",
+      "original": 0.0008981434128522076,
+      "current": 0.0008981434128522074,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/231/actual",
+      "original": 1.1561304937179618e-05,
+      "current": 1.1561304937179616e-05,
+      "absolute_difference": 1.6940658945086007e-21
+    },
+    {
+      "path": "/checks/232/actual",
+      "original": 6.939074467125204e-10,
+      "current": 6.939074467125208e-10,
+      "absolute_difference": 4.1359030627651384e-25
+    },
+    {
+      "path": "/checks/239/actual",
+      "original": 0.0013830620028647078,
+      "current": 0.0013830620028647074,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "path": "/checks/242/actual",
+      "original": 2.144463545519045e-06,
+      "current": 2.1444635455190446e-06,
+      "absolute_difference": 4.235164736271502e-22
+    },
+    {
+      "path": "/checks/245/actual",
+      "original": 1.3366134367363243,
+      "current": 1.3366134367363245,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/250/actual",
+      "original": 0.0013830620028647078,
+      "current": 0.0013830620028647074,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "path": "/checks/253/actual",
+      "original": 2.144463545519045e-06,
+      "current": 2.1444635455190446e-06,
+      "absolute_difference": 4.235164736271502e-22
+    },
+    {
+      "path": "/checks/256/actual",
+      "original": 1.6641961704649664,
+      "current": 1.6641961704649655,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "path": "/checks/261/actual",
+      "original": 0.0013830620028647078,
+      "current": 0.0013830620028647074,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "path": "/checks/264/actual",
+      "original": 2.144463545519045e-06,
+      "current": 2.1444635455190446e-06,
+      "absolute_difference": 4.235164736271502e-22
+    },
+    {
+      "path": "/checks/267/actual",
+      "original": 0.025961942135563985,
+      "current": 0.025961942135563982,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "/checks/268/actual",
+      "original": 0.0017753745406934864,
+      "current": 0.0017753745406934862,
+      "absolute_difference": 2.168404344971009e-19
+    },
+    {
+      "path": "/checks/269/actual",
+      "original": 2.917006025804147e-06,
+      "current": 2.9170060258041467e-06,
+      "absolute_difference": 4.235164736271502e-22
+    },
+    {
+      "path": "/checks/271/actual",
+      "original": 1.1470545458871133,
+      "current": 1.1470545458871135,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/272/actual",
+      "original": 0.48953558761063315,
+      "current": 0.4895355876106331,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "/checks/279/actual",
+      "original": 5.508563283641268e-05,
+      "current": 5.5085632836412686e-05,
+      "absolute_difference": 6.776263578034403e-21
+    },
+    {
+      "path": "/checks/282/actual",
+      "original": 1.6781217000538875,
+      "current": 1.6781217000538877,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/283/actual",
+      "original": 0.48953558761063315,
+      "current": 0.4895355876106331,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "/checks/290/actual",
+      "original": 5.508563283641268e-05,
+      "current": 5.5085632836412686e-05,
+      "absolute_difference": 6.776263578034403e-21
+    },
+    {
+      "path": "/checks/294/actual",
+      "original": 0.48953558761063315,
+      "current": 0.4895355876106331,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "/checks/301/actual",
+      "original": 5.508563283641268e-05,
+      "current": 5.5085632836412686e-05,
+      "absolute_difference": 6.776263578034403e-21
+    },
+    {
+      "path": "/checks/303/actual",
+      "original": 0.5580363974246303,
+      "current": 0.5580363974246304,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/checks/306/actual",
+      "original": 7.329031097167446e-05,
+      "current": 7.329031097167447e-05,
+      "absolute_difference": 1.3552527156068805e-20
+    },
+    {
+      "path": "/checks/309/actual",
+      "original": 1.0092167459716954,
+      "current": 1.0092167459716952,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/313/actual",
+      "original": 2.0860617124887355e-07,
+      "current": 2.0860617124887347e-07,
+      "absolute_difference": 7.940933880509066e-23
+    },
+    {
+      "path": "/checks/314/actual",
+      "original": 2.1965630646612436e-07,
+      "current": 2.196563064661244e-07,
+      "absolute_difference": 2.6469779601696886e-23
+    },
+    {
+      "path": "/checks/316/actual",
+      "original": 1.0585812017245344e-13,
+      "current": 1.0585812017245367e-13,
+      "absolute_difference": 2.271919407036514e-28
+    },
+    {
+      "path": "/checks/317/actual",
+      "original": 1.1110976697041106e-13,
+      "current": 1.1110976697041107e-13,
+      "absolute_difference": 1.262177448353619e-29
+    },
+    {
+      "path": "/checks/320/actual",
+      "original": 1.0351705826926072,
+      "current": 1.0351705826926074,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/324/actual",
+      "original": 2.0860617124887355e-07,
+      "current": 2.0860617124887347e-07,
+      "absolute_difference": 7.940933880509066e-23
+    },
+    {
+      "path": "/checks/325/actual",
+      "original": 2.1965630646612436e-07,
+      "current": 2.196563064661244e-07,
+      "absolute_difference": 2.6469779601696886e-23
+    },
+    {
+      "path": "/checks/327/actual",
+      "original": 1.0585812017245344e-13,
+      "current": 1.0585812017245367e-13,
+      "absolute_difference": 2.271919407036514e-28
+    },
+    {
+      "path": "/checks/328/actual",
+      "original": 1.1110976697041106e-13,
+      "current": 1.1110976697041107e-13,
+      "absolute_difference": 1.262177448353619e-29
+    },
+    {
+      "path": "/checks/331/actual",
+      "original": 1.06274778472207,
+      "current": 1.0627477847220699,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/checks/335/actual",
+      "original": 2.0860617124887355e-07,
+      "current": 2.0860617124887347e-07,
+      "absolute_difference": 7.940933880509066e-23
+    },
+    {
+      "path": "/checks/336/actual",
+      "original": 2.1965630646612436e-07,
+      "current": 2.196563064661244e-07,
+      "absolute_difference": 2.6469779601696886e-23
+    },
+    {
+      "path": "/checks/338/actual",
+      "original": 1.0585812017245344e-13,
+      "current": 1.0585812017245367e-13,
+      "absolute_difference": 2.271919407036514e-28
+    },
+    {
+      "path": "/checks/339/actual",
+      "original": 1.1110976697041106e-13,
+      "current": 1.1110976697041107e-13,
+      "absolute_difference": 1.262177448353619e-29
+    },
+    {
+      "path": "/checks/342/actual",
+      "original": 0.00015419724308473272,
+      "current": 0.00015419724308473267,
+      "absolute_difference": 5.421010862427522e-20
+    },
+    {
+      "path": "/checks/343/actual",
+      "original": 2.768492550183455e-07,
+      "current": 2.7684925501834535e-07,
+      "absolute_difference": 1.5881867761018131e-22
+    },
+    {
+      "path": "/checks/344/actual",
+      "original": 1.4548977859454904e-13,
+      "current": 1.454897652397413e-13,
+      "absolute_difference": 1.3354807740360033e-20
+    },
+    {
+      "path": "/checks/346/actual",
+      "original": 1.0039848135694112,
+      "current": 1.0039848135694107,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "path": "/checks/347/actual",
+      "original": 0.015195375676418764,
+      "current": 0.015195375676418743,
+      "absolute_difference": 2.0816681711721685e-17
+    },
+    {
+      "path": "/checks/350/actual",
+      "original": 1.0709505765896704e-07,
+      "current": 1.0709505765896667e-07,
+      "absolute_difference": 3.705769144237564e-22
+    },
+    {
+      "path": "/checks/353/actual",
+      "original": 7.916820233183474e-14,
+      "current": 7.916820233182831e-14,
+      "absolute_difference": 6.437104986603456e-27
+    },
+    {
+      "path": "/checks/354/actual",
+      "original": 9.907299375921401e-14,
+      "current": 9.907299375920926e-14,
+      "absolute_difference": 4.745787205809607e-27
+    },
+    {
+      "path": "/checks/357/actual",
+      "original": 1.0155571559965506,
+      "current": 1.01555715599655,
+      "absolute_difference": 6.661338147750939e-16
+    },
+    {
+      "path": "/checks/358/actual",
+      "original": 0.015195375676418764,
+      "current": 0.015195375676418743,
+      "absolute_difference": 2.0816681711721685e-17
+    },
+    {
+      "path": "/checks/361/actual",
+      "original": 1.0709505765896704e-07,
+      "current": 1.0709505765896667e-07,
+      "absolute_difference": 3.705769144237564e-22
+    },
+    {
+      "path": "/checks/364/actual",
+      "original": 7.916820233183474e-14,
+      "current": 7.916820233182831e-14,
+      "absolute_difference": 6.437104986603456e-27
+    },
+    {
+      "path": "/checks/365/actual",
+      "original": 9.907299375921401e-14,
+      "current": 9.907299375920926e-14,
+      "absolute_difference": 4.745787205809607e-27
+    },
+    {
+      "path": "/checks/368/actual",
+      "original": 1.0291675059819958,
+      "current": 1.0291675059819951,
+      "absolute_difference": 6.661338147750939e-16
+    },
+    {
+      "path": "/checks/369/actual",
+      "original": 0.015195375676418764,
+      "current": 0.015195375676418743,
+      "absolute_difference": 2.0816681711721685e-17
+    },
+    {
+      "path": "/checks/372/actual",
+      "original": 1.0709505765896704e-07,
+      "current": 1.0709505765896667e-07,
+      "absolute_difference": 3.705769144237564e-22
+    },
+    {
+      "path": "/checks/375/actual",
+      "original": 7.916820233183474e-14,
+      "current": 7.916820233182831e-14,
+      "absolute_difference": 6.437104986603456e-27
+    },
+    {
+      "path": "/checks/376/actual",
+      "original": 9.907299375921401e-14,
+      "current": 9.907299375920926e-14,
+      "absolute_difference": 4.745787205809607e-27
+    },
+    {
+      "path": "/checks/378/actual",
+      "original": 0.01791835399050188,
+      "current": 0.017918353990501863,
+      "absolute_difference": 1.734723475976807e-17
+    },
+    {
+      "path": "/checks/379/actual",
+      "original": 9.637062572452605e-05,
+      "current": 9.637062572453124e-05,
+      "absolute_difference": 5.1906179007743525e-18
+    },
+    {
+      "path": "/checks/380/actual",
+      "original": 1.6794677791928483e-07,
+      "current": 1.6794677791931419e-07,
+      "absolute_difference": 2.9354985578281846e-20
+    },
+    {
+      "path": "/checks/381/actual",
+      "original": 1.2319266885804174e-13,
+      "current": 1.2319267790320675e-13,
+      "absolute_difference": 9.045165017817707e-21
+    },
+    {
+      "path": "/checks/383/actual",
+      "original": 1.0064395984196404,
+      "current": 1.0064395984196395,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "path": "/checks/384/actual",
+      "original": 0.02723465101149806,
+      "current": 0.02723465101149803,
+      "absolute_difference": 3.122502256758253e-17
+    },
+    {
+      "path": "/checks/387/actual",
+      "original": 1.8474264954992378e-07,
+      "current": 1.8474264954992375e-07,
+      "absolute_difference": 2.6469779601696886e-23
+    },
+    {
+      "path": "/checks/390/actual",
+      "original": 9.276094531540291e-14,
+      "current": 9.276094531540714e-14,
+      "absolute_difference": 4.228294451984623e-27
+    },
+    {
+      "path": "/checks/391/actual",
+      "original": 4.906255439758171e-14,
+      "current": 4.906255439757518e-14,
+      "absolute_difference": 6.52545740798821e-27
+    },
+    {
+      "path": "/checks/394/actual",
+      "original": 1.0251214935846462,
+      "current": 1.025121493584645,
+      "absolute_difference": 1.1102230246251565e-15
+    },
+    {
+      "path": "/checks/395/actual",
+      "original": 0.02723465101149806,
+      "current": 0.02723465101149803,
+      "absolute_difference": 3.122502256758253e-17
+    },
+    {
+      "path": "/checks/398/actual",
+      "original": 1.8474264954992378e-07,
+      "current": 1.8474264954992375e-07,
+      "absolute_difference": 2.6469779601696886e-23
+    },
+    {
+      "path": "/checks/401/actual",
+      "original": 9.276094531540291e-14,
+      "current": 9.276094531540714e-14,
+      "absolute_difference": 4.228294451984623e-27
+    },
+    {
+      "path": "/checks/402/actual",
+      "original": 4.906255439758171e-14,
+      "current": 4.906255439757518e-14,
+      "absolute_difference": 6.52545740798821e-27
+    },
+    {
+      "path": "/checks/405/actual",
+      "original": 1.0471198390704783,
+      "current": 1.0471198390704772,
+      "absolute_difference": 1.1102230246251565e-15
+    },
+    {
+      "path": "/checks/406/actual",
+      "original": 0.02723465101149806,
+      "current": 0.02723465101149803,
+      "absolute_difference": 3.122502256758253e-17
+    },
+    {
+      "path": "/checks/409/actual",
+      "original": 1.8474264954992378e-07,
+      "current": 1.8474264954992375e-07,
+      "absolute_difference": 2.6469779601696886e-23
+    },
+    {
+      "path": "/checks/412/actual",
+      "original": 9.276094531540291e-14,
+      "current": 9.276094531540714e-14,
+      "absolute_difference": 4.228294451984623e-27
+    },
+    {
+      "path": "/checks/413/actual",
+      "original": 4.906255439758171e-14,
+      "current": 4.906255439757518e-14,
+      "absolute_difference": 6.52545740798821e-27
+    },
+    {
+      "path": "/checks/415/actual",
+      "original": 0.03232161332239474,
+      "current": 0.0323216133223947,
+      "absolute_difference": 4.163336342344337e-17
+    },
+    {
+      "path": "/checks/416/actual",
+      "original": 0.0001424195069541006,
+      "current": 0.00014241950695411103,
+      "absolute_difference": 1.043544591017298e-17
+    },
+    {
+      "path": "/checks/417/actual",
+      "original": 1.9342721870820832e-07,
+      "current": 1.9342721870825226e-07,
+      "absolute_difference": 4.393983413881683e-20
+    },
+    {
+      "path": "/checks/418/actual",
+      "original": 1.0589273350109868e-13,
+      "current": 1.0589263791168584e-13,
+      "absolute_difference": 9.558941283835127e-20
+    },
+    {
+      "path": "/checks/425/actual",
+      "original": 0.0008734781295349688,
+      "current": 0.0008734781295349687,
+      "absolute_difference": 1.0842021724855044e-19
+    },
+    {
+      "path": "/checks/428/actual",
+      "original": 0.004944532637062659,
+      "current": 0.004944532637062658,
+      "absolute_difference": 1.734723475976807e-18
+    }
+  ],
+  "policy": "Every final source assertion ran unchanged. Listed floating changes are observations, not new tolerances or substituted scientific criteria. Original and final source differ only by TOTAL footer; no numerical threshold changed."
+}

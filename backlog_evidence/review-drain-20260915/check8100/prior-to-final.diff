@@ -1,0 +1,17 @@
+--- 
++++ 
+@@ -121,10 +121,13 @@
+       check('one-sided low-flux leakage bound',value<=one+1e-11,electric=electric,time=t,L=L,sign=sign,actual=value,bound=one)
+      ind=np.flatnonzero(abs(Ef)>=L);value=norm(U[np.ix_(ind,P0)])
+      check('orthogonal two-tail bound',value<=np.sqrt(2)*one+1e-11,electric=electric,time=t,L=L)
+-   for cutoff in [1,2,4]:
++   for cutoff in [0,1,2,4]:
+     p=np.flatnonzero(abs(Ef)<=cutoff);hs=H[np.ix_(p,p)];us=expm(-1j*t*hs);embed=np.zeros_like(U[:,P0]);loc=[list(p).index(v) for v in P0];embed[p,:]=us[:,loc]
+     error=norm(U[:,P0]-embed);lam=1.;bound=2*t*J*np.exp(-lam*cutoff+2*J*t*np.sinh(lam))
+     check('Duhamel Hamiltonian cutoff bound',error<=bound+2e-11,electric=electric,time=t,cutoff=cutoff,actual=error,bound=bound)
++ e0,u0=rotor(4);H0=.7*(u0+u0.T);t0=.0001;initial=np.flatnonzero(e0==0);full0=expm(-1j*t0*H0)[:,initial];embedded0=np.eye(9)[:,initial]
++ err0=norm(full0-embedded0);bound0=2*t0*.7*np.exp(2*.7*t0*np.sinh(1))
++ check('coincident outward boundaries require safe prefactor',err0<=bound0 and err0>1.4*.7*t0,actual=err0,bound=bound0)
+  # Multi-link term: one shift can hit both boundaries; counting it once per
+  # incident link is deliberately an upper bound, not cancellation.
+  K=4;e,u=rotor(K);d=len(e);E=np.array(list(itertools.product(e,e)));U1=np.kron(u,np.eye(d));U2=np.kron(np.eye(d),u)

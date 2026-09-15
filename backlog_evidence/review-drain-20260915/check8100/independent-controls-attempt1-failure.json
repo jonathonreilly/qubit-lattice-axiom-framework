@@ -1,0 +1,1 @@
+{"exit_code":1,"assertion":"weighted_generator_onsite_cancels","diagnosis":"SymPy did not reduce exponential/sinh identity to literal zero. Rewriting sinh to exponentials gives exact zero matrix. All general determinant coefficients passed before this control-harness failure; no scientific formula changed."}

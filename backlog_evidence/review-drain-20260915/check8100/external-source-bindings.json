@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/2110.06942v2",
+    "sha256": "9d5adf738860c9aed9f390e6937d54eaf7a19addced3ced4428336d61533094b",
+    "read_scope": "AppendixB Eq24 and r=0 discussion pp18\u201320; AppendixD Theorem6/proof pp25\u201327; AppendixI Lemma13/proof pp43\u201344. Nearby leakage proof pp21\u201323 also inspected.",
+    "role": "Bounded-shift truncation precedent and actual onsite-independent locality method: finite-range bounded even interactions and bounded-degree geometry after onsite interaction picture. This note supplies its own weighted estimate/Duhamel constants; no isolated-eigenstate or ground-state phase import."
+  },
+  {
+    "url": "https://arxiv.org/pdf/cond-mat/0305401v3",
+    "sha256": "afa65aed4d78ec09923e6df0da96ee355205b8df36b7f4307ea9f94c433d84d6",
+    "read_scope": "Sections IIIA\u2013C and IVA pp9\u201312, effective action/corrections and gapped electric/magnetic charges.",
+    "role": "Effective-phase comparator only; gapped-spinons/monopoles domain does not establish phase with this gapless quartet."
+  }
+]

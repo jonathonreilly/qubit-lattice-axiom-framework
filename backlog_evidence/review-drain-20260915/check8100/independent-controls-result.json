@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "count": 13,
+  "checks": [
+    "general_log_coefficient_1",
+    "general_log_coefficient_2",
+    "general_log_coefficient_3",
+    "general_log_coefficient_4",
+    "general_log_coefficient_5",
+    "quartet_imaginary_fifth",
+    "rational_witness",
+    "phase_kernel_slope",
+    "Gauss_dimension_0",
+    "Gauss_dimension_1",
+    "Gauss_dimension_2",
+    "two_outward_endpoint_factor",
+    "weighted_generator_onsite_cancels"
+  ],
+  "elapsed_seconds": 0.5216024160617962,
+  "primary_imported": false
+}

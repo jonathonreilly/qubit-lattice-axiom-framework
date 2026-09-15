@@ -1,0 +1,19 @@
+{
+  "pr": 8099,
+  "original_head": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+  "branch": "physics-loop/local-hall-free-mixed-quartet-20260913",
+  "landing": "c57451d65cca05ec54099c3b552b44e493a66c7b",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T20:30:11Z",
+    "headRefName": "physics-loop/local-hall-free-mixed-quartet-20260913",
+    "headRefOid": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8099,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8099"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "da3f41192f4d4cbe94b741e1decbbfeae4cf9545",
+  "fetched_ref": "refs/review-loop/fetched/8100-48cdc8e6c62849f6a1aa160c6fc043d8",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/charged-finite-link-dynamics-20260913",
+    "headRefOid": "da3f41192f4d4cbe94b741e1decbbfeae4cf9545",
+    "isDraft": false,
+    "number": 8100,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

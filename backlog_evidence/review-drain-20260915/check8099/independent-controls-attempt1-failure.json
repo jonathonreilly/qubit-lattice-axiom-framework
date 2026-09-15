@@ -1,0 +1,1 @@
+{"exit_code":1,"assertion":"full_characteristic_polynomial","diagnosis":"SymPy charpoly creates a generator distinct from the real-assumed E symbol. Compare exact coefficient lists instead; no scientific formula changes."}

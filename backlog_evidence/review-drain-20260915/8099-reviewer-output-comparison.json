@@ -1,0 +1,91 @@
+{
+  "original_capture": "Frozen original CANONICAL_EXECUTION.json; no original rerun",
+  "current_receipt": "/private/tmp/review-drain-20260915/8099-execution-local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.json",
+  "count": 959,
+  "structure_and_nonfloat_fields_equal": true,
+  "excluded_fields": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "floating_differences": [
+    {
+      "path": "/rows/112/smallest_nonzero",
+      "original": 4.0,
+      "current": 3.999999999999998,
+      "absolute_difference": 2.220446049250313e-15
+    },
+    {
+      "path": "/rows/219/smallest_nonzero",
+      "original": 0.43136515494258,
+      "current": 0.4313651549425802,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "/rows/433/smallest_nonzero",
+      "original": 1.5970699416922016,
+      "current": 1.597069941692203,
+      "absolute_difference": 1.3322676295501878e-15
+    },
+    {
+      "path": "/rows/647/smallest_nonzero",
+      "original": 0.7393868022259538,
+      "current": 0.7393868022259533,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "path": "/rows/753/smallest_nonzero",
+      "original": 0.5749127413730148,
+      "current": 0.5749127413730145,
+      "absolute_difference": 3.3306690738754696e-16
+    },
+    {
+      "path": "/rows/859/smallest_nonzero",
+      "original": 3.999999999999997,
+      "current": 4.000000000000003,
+      "absolute_difference": 5.773159728050814e-15
+    },
+    {
+      "path": "/rows/935/error",
+      "original": 1.0658141036401503e-14,
+      "current": 1.2434497875801753e-14,
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "path": "/rows/936/error",
+      "original": 7.105427357601002e-15,
+      "current": 2.842170943040401e-14,
+      "absolute_difference": 2.1316282072803006e-14
+    },
+    {
+      "path": "/rows/936/contact",
+      "original": 59.15963728062707,
+      "current": 59.15963728062708,
+      "absolute_difference": 1.4210854715202004e-14
+    },
+    {
+      "path": "/rows/936/bubble",
+      "original": -59.15963728062706,
+      "current": -59.15963728062705,
+      "absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "path": "/rows/947/error",
+      "original": 1.1546319456101628e-14,
+      "current": 8.881784197001252e-15,
+      "absolute_difference": 2.6645352591003757e-15
+    },
+    {
+      "path": "/rows/948/error",
+      "original": 5.684341886080802e-14,
+      "current": 1.4210854715202004e-14,
+      "absolute_difference": 4.263256414560601e-14
+    },
+    {
+      "path": "/rows/948/contact",
+      "original": 95.49178382471223,
+      "current": 95.49178382471216,
+      "absolute_difference": 7.105427357601002e-14
+    }
+  ],
+  "policy": "Every final source assertion ran unchanged. Listed floating changes are observations, not new tolerances or substituted scientific criteria. Original and final source differ only by TOTAL footer; no numerical threshold changed."
+}

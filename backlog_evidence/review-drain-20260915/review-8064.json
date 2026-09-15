@@ -1,0 +1,655 @@
+{
+  "status": "FINAL VERDICT: PASS WITH BOUNDED CLAIMS",
+  "reviewer": "/root/review_8012",
+  "base": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "tree": "ad737d79500495735d8aea8b7c2af1b937c80339",
+  "constituent_dispositions": {
+    "8064": [
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md",
+        "original_sha256": "7e1c6cf5c393b7b3d59b642bdbbdbc814894ae0a6c2e553dfa683677a7bda879",
+        "original_mode": "100644",
+        "original_git_blob": "df0ec9b3c170d489c8f318e9a38d71851848905e",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/7e1c6cf5c393b7b3d59b642bdbbdbc814894ae0a6c2e553dfa683677a7bda879.gz",
+        "final_sha256": "1e1b82cd3d23c97293e7da33b5b51312ce7b61b721ff85f982a5249eef73499e",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+        "original_sha256": "912fb42336190ad7551d6ac15879005620ffebddc0cf8061fc9bdcca61981d32",
+        "original_mode": "100644",
+        "original_git_blob": "32ea61ff776ccdb05a763d81c222f4f229766d61",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/912fb42336190ad7551d6ac15879005620ffebddc0cf8061fc9bdcca61981d32.gz",
+        "final_sha256": "5c771be02b7b72b197b953f7452d731477b8b34fd9a20b67d8f1a7c6ab272d4a",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md",
+        "original_sha256": "1d169551b1d6ac908ee2ebb08ea56237412b9481bdc03ec53c33435d847b4e23",
+        "original_mode": "100644",
+        "original_git_blob": "4128c1808f2b84e8a15010ddd4f4823cdfe65880",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/1d169551b1d6ac908ee2ebb08ea56237412b9481bdc03ec53c33435d847b4e23.gz",
+        "final_sha256": "f1bc7f8aafc3b6df013ddc5700c3f1cd67e3d8de9ab9ae7db8ac35657b38d687",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md",
+        "original_sha256": "ced0edfe5fb281c3cd6ab40772b763d46e3bee3fb771df2a5508339424277ea2",
+        "original_mode": "100644",
+        "original_git_blob": "a8be548ac39e29fb7493252b3399256e1ed83536",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/ced0edfe5fb281c3cd6ab40772b763d46e3bee3fb771df2a5508339424277ea2.gz",
+        "final_sha256": "3f30d889b920edae9d91bd86ff040691b52fced7d874766d68b611221649b6e8",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md",
+        "original_sha256": "986a75805434df9ba36ceac2e9eddf94d011f304ed02c53abee0f3bef834adb6",
+        "original_mode": "100644",
+        "original_git_blob": "80c77a11beffb724f8e82e4497dc84db88aa3a81",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/kept/pr8064-HANDOFF-9ef67db77ea9ef6f.md",
+        "final_sha256": "986a75805434df9ba36ceac2e9eddf94d011f304ed02c53abee0f3bef834adb6",
+        "encoding": "identity",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md",
+        "original_sha256": "e680bd95d6aabeeb4b7c08333ec2e46cf0a116f7490826bfaf0186bc4d60acd1",
+        "original_mode": "100644",
+        "original_git_blob": "9938f219abfff6afd3359b0e93a40a0377e01be2",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e680bd95d6aabeeb4b7c08333ec2e46cf0a116f7490826bfaf0186bc4d60acd1.gz",
+        "final_sha256": "3d4f5ecbcd18ecd4f34eafb525ac7119bd7fea9b229295f2aaf2c62ae8a03569",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md",
+        "original_sha256": "0d55ecae82b64b010648da639da973fb63a0e469760871b574fd90d8868429d3",
+        "original_mode": "100644",
+        "original_git_blob": "d7693c9cc7e170c26d54b86d5f27c1365a5ac68b",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/0d55ecae82b64b010648da639da973fb63a0e469760871b574fd90d8868429d3.gz",
+        "final_sha256": "ab751c758123fa1a18892dce0990d54d983cf90ee0cab7fb2c0cf1931d672058",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "1a52fb81b8cf9fa07b2643d3a5b88236d3878e60265781f1c6176198e0496c7f",
+        "original_mode": "100644",
+        "original_git_blob": "cc0d3a5cee7c983db44ca070b4e9de3db7dcf7a3",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/1a52fb81b8cf9fa07b2643d3a5b88236d3878e60265781f1c6176198e0496c7f.gz",
+        "final_sha256": "2065488b23f4caa673ef3eeb51e038becfd1c8548b45a13304f104079067eb2b",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md",
+        "original_sha256": "423d009f74f97ce5106f46eeb8d30418b4aff51d2ef99a6dba326c738d476083",
+        "original_mode": "100644",
+        "original_git_blob": "f184af10f1909cb4772bb39a94a5c58d13f70361",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/423d009f74f97ce5106f46eeb8d30418b4aff51d2ef99a6dba326c738d476083.gz",
+        "final_sha256": "39f08d8157dad1c86aa7f6283d78688760772f4ff6e77830d060f1c3cc4fd037",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md",
+        "original_sha256": "1ca31cf9b736ec074147aa8327611c5d4aba23061b5cb362d4704970d47c4669",
+        "original_mode": "100644",
+        "original_git_blob": "b5fdc30ee5149797596eef020b35c0cad93af37d",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/kept/pr8064-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "final_sha256": "1ca31cf9b736ec074147aa8327611c5d4aba23061b5cb362d4704970d47c4669",
+        "encoding": "identity",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md",
+        "original_sha256": "e3b3f2353b25c7051948cbe80f09a4ffe907cff8009ab2086b0a2aa83de143fc",
+        "original_mode": "100644",
+        "original_git_blob": "35f313aee452d684d576abd3205a7462305b248b",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e3b3f2353b25c7051948cbe80f09a4ffe907cff8009ab2086b0a2aa83de143fc.gz",
+        "final_sha256": "8c7dc02305fb96f89470cd2c99a15c61ba81e6f8d94f88da4832804c65954045",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml",
+        "original_sha256": "ae6cb946c722ae63f2843cf26c08166f39a090d5ea67dcd0e3358099426144c5",
+        "original_mode": "100644",
+        "original_git_blob": "1a58f1ee98e6cd8d2c4d12030d87904c9ecd3985",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/ae6cb946c722ae63f2843cf26c08166f39a090d5ea67dcd0e3358099426144c5.gz",
+        "final_sha256": "182ce5c811bb75ce0122cd44f5af0ed894d159d707d81f8bd9f921eb5a46944c",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md",
+        "original_sha256": "2385d6c20e09204699d8fff6851c1587fbbb44eeff760a04d387618946189763",
+        "original_mode": "100644",
+        "original_git_blob": "f4e1406308cfa399d3f2df0c9a260598cca2053d",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/2385d6c20e09204699d8fff6851c1587fbbb44eeff760a04d387618946189763.gz",
+        "final_sha256": "51961c97bb318a312a5b0555f017d472c67c965f4134349c3434f4ac061e5f51",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SOFT_TAIL.md",
+        "original_sha256": "5adfb8e39dde484cdc1ddde64dc4cc464eb29e5c6bf2859b91240da89b0d5483",
+        "original_mode": "100644",
+        "original_git_blob": "d8aa0a82b0f4e33c613a47e7e742525bbbbfc6aa",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/5adfb8e39dde484cdc1ddde64dc4cc464eb29e5c6bf2859b91240da89b0d5483.gz",
+        "final_sha256": "99babdded59b943e54d7e9f3358bf22c3375d846438f23b8c6c9423f39d0173e",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SOFT_TAIL.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SPATIAL_SUMMABILITY.md",
+        "original_sha256": "545ea28ea75d5bf10b7576fb0a772cd5cafbcbd3ce65fce1532f6032899a32fb",
+        "original_mode": "100644",
+        "original_git_blob": "66e2bf17677db3ce5122292d7e35f40249306488",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/545ea28ea75d5bf10b7576fb0a772cd5cafbcbd3ce65fce1532f6032899a32fb.gz",
+        "final_sha256": "e9e2d34fa131ae781babbfbc661d6925946aab48bdb7cdad0e929cc200762692",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SPATIAL_SUMMABILITY.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md",
+        "original_sha256": "1d4eaedc0634368ffba815d965b90c7e4828a0390d94b26faaf7ccfe56f612c6",
+        "original_mode": "100644",
+        "original_git_blob": "6667993f396e887a9b7546e5b0c612be4ed7b4e3",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/1d4eaedc0634368ffba815d965b90c7e4828a0390d94b26faaf7ccfe56f612c6.gz",
+        "final_sha256": "1e35ae16faee4b00ee9864f17ddc4352036e50addf883cd9615f8b965e19c0bd",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json",
+        "original_sha256": "88650aabf99953eae87a34a2c238e2913c70b627f0da1758433196cc1c5c3f0b",
+        "original_mode": "100644",
+        "original_git_blob": "f4a2c886711f44919c36578ec5e7c065c7d6fabf",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/88650aabf99953eae87a34a2c238e2913c70b627f0da1758433196cc1c5c3f0b.gz",
+        "final_sha256": "26073ebd9a2bded19e3c381113d002645afade0036929ac526a4c3403d69b642",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md",
+        "original_sha256": "d175d58295d2b1125fa00db3f0e6608420151ae2a0ab9104323e46966cb98e07",
+        "original_mode": "100644",
+        "original_git_blob": "d7e081818c9b1ef2d06863e03373745d6679fc07",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/d175d58295d2b1125fa00db3f0e6608420151ae2a0ab9104323e46966cb98e07.gz",
+        "final_sha256": "324008dc7aa1242470af1e612f7c433351ebd959b35330abe77ae8846b695d78",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json",
+        "original_sha256": "132919440d7b92f3324cca6d3994441cd4007ccc4463c3b22c4ce0e15b6c9ebc",
+        "original_mode": "100644",
+        "original_git_blob": "62f0066d7fc605551c58f8aff2fa19b72c4b82d7",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/132919440d7b92f3324cca6d3994441cd4007ccc4463c3b22c4ce0e15b6c9ebc.gz",
+        "final_sha256": "d32145da5fb4ad0e71467930d885f98ccd4d769b5ca227d520610ceef7cb2f0d",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md",
+        "original_sha256": "58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c",
+        "original_mode": "100644",
+        "original_git_blob": "35083673e4f9c1df7cacfbb7ff3ad69baf8565f2",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c.gz",
+        "final_sha256": "6ad636c051e5c5456eddd3bc8142fb3cbeac23be79eec5dd564087f996f44921",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note. Full original infrared derivation checked and included in canonical sections1-8; earlier748-control stage remains historical.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py",
+        "original_sha256": "2c31a8cd2a3769b1b80405841eb1a45b498f3cda93181d3fd91ebc39323117ef",
+        "original_mode": "100644",
+        "original_git_blob": "e87c876962d17546918eabb9ceac280f207981d7",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/2c31a8cd2a3769b1b80405841eb1a45b498f3cda93181d3fd91ebc39323117ef.gz",
+        "final_sha256": "8e9589f437ad11870c15fb0008452a67455c30919cd16c1537f3aa46efe8ef0e",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/CANONICAL_REVIEW.md",
+        "original_sha256": "6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc",
+        "original_mode": "100644",
+        "original_git_blob": "bcedd6a4674de896b6d50c431cd87928bca51848",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc.gz",
+        "final_sha256": "931271662903aa64ada14915b848b610e6697cbd3f4841132332bd16a464062c",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/CANONICAL_REVIEW.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/REVIEW.md",
+        "original_sha256": "44c98fbad566640a4d9f9d203010469e289e452986d8ee2313d6aad966f7cd6a",
+        "original_mode": "100644",
+        "original_git_blob": "a9cf6b742a217570ba743bf399c430a0f8b13edd",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/44c98fbad566640a4d9f9d203010469e289e452986d8ee2313d6aad966f7cd6a.gz",
+        "final_sha256": "a5f524f6fa50c14efbd74b4e67ac191c38da5bda881a9068bd3fbb964527f9c2",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/REVIEW.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/SPATIAL_REVIEW.md",
+        "original_sha256": "3cf0545078515a30f1be34fd2effbd305a30ea23e9a20e185d44cb602fde16c3",
+        "original_mode": "100644",
+        "original_git_blob": "045c76d4d373b4cde5e083cef916c5065a53e1db",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/3cf0545078515a30f1be34fd2effbd305a30ea23e9a20e185d44cb602fde16c3.gz",
+        "final_sha256": "557d053579f6ff73277ddfdea963fe176c00a26b3b48c2dd576146e166a5fe66",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/SPATIAL_REVIEW.md"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json",
+        "original_sha256": "547ac247535dce1da47a99bc9eb773077901443c14e812bc58d1dbb67cc622b8",
+        "original_mode": "100644",
+        "original_git_blob": "2907b97a1a7e0f88762c29cd01310454efa15a09",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/547ac247535dce1da47a99bc9eb773077901443c14e812bc58d1dbb67cc622b8.gz",
+        "final_sha256": "941cc773dc0619f769e25cefe751393b2047b0cc6299bb4b3194eeabc2377e11",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/DELIVERY_FREEZE.json",
+        "original_sha256": "6169aaa7c679d0897240170032143038ec3df58ce8a768c0d15c3a223b7f0965",
+        "original_mode": "100644",
+        "original_git_blob": "5667298820ddcb11f9d5ec6c150cbb7091c74f37",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/6169aaa7c679d0897240170032143038ec3df58ce8a768c0d15c3a223b7f0965.gz",
+        "final_sha256": "25aa38c6755ec5fe941ff746522caf11779833da281b828a490b06035b098b83",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/DELIVERY_FREEZE.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json",
+        "original_sha256": "41a4cacb7dff50eed2b6a8cf43cd302581f4b519a4a36090afdf4db59067c953",
+        "original_mode": "100644",
+        "original_git_blob": "0831a5df98538059df344ad7e1979b256d18a147",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/41a4cacb7dff50eed2b6a8cf43cd302581f4b519a4a36090afdf4db59067c953.gz",
+        "final_sha256": "b53714c0bcf5bcca09802f2dfa8c996f0f57914158da7b7e4b0c24a019f08fd9",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json",
+        "original_sha256": "769390f0fa173d4462cc04ba97e76996639fd4b1398e91fb4081c619623a5a38",
+        "original_mode": "100644",
+        "original_git_blob": "0ddd2225539881b3022a17a5042e800743f84657",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/769390f0fa173d4462cc04ba97e76996639fd4b1398e91fb4081c619623a5a38.gz",
+        "final_sha256": "4e78cf622be026fbcc2e08fc8bf16cc6d3620b6e6c6d536d899ecc4a4553b26c",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.stderr",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_mode": "100644",
+        "original_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.stderr"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json",
+        "original_sha256": "a35a7527021fd19960e6fe79c2e23bfff78b85d66a4275c20acb708b3a513005",
+        "original_mode": "100644",
+        "original_git_blob": "072603d62d45e2ebaf024190e5ca26cbbe938ee9",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/a35a7527021fd19960e6fe79c2e23bfff78b85d66a4275c20acb708b3a513005.gz",
+        "final_sha256": "8a0b97f9ec8157301547fe47d05a23fd289eeb5397d1c18ef43b111877f511d6",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ACCEPTANCE.json",
+        "original_sha256": "f026f212de33de5d198636f990a451b9b4fada2893886965882b74d84f73ad60",
+        "original_mode": "100644",
+        "original_git_blob": "d43577483512309d440d44a15b8869b39c48e012",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/f026f212de33de5d198636f990a451b9b4fada2893886965882b74d84f73ad60.gz",
+        "final_sha256": "47552c0fac2124527fb89e5e4ac77c5da07523e54081f75e5a3ae7b16d849bef",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ACCEPTANCE.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_DELIVERY_FREEZE.json",
+        "original_sha256": "9611394c5cc04ecfd01af7c58f50b5b71a7ceb32d36ba1a2f3808ab6e36d9c8c",
+        "original_mode": "100644",
+        "original_git_blob": "7d362afb966299b043246f41fd1b5050cf7cf155",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/9611394c5cc04ecfd01af7c58f50b5b71a7ceb32d36ba1a2f3808ab6e36d9c8c.gz",
+        "final_sha256": "93647fa9a9a037778e7f2489cc69aa22f2d38f2cd8c860b2fa3f7a555133c959",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_DELIVERY_FREEZE.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.json",
+        "original_sha256": "4b0fe13d44bb172afcd863e9df50d65dcfd0bbc5454fefa74b8d170ea5733bab",
+        "original_mode": "100644",
+        "original_git_blob": "bafdc6ca797dc3ed9fea6e757da2272487a95756",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/4b0fe13d44bb172afcd863e9df50d65dcfd0bbc5454fefa74b8d170ea5733bab.gz",
+        "final_sha256": "163adfc1c01c441e59c0caf5c0af16e24c3a32ac2a9688172f40bae3439716c9",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.json"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.stderr",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_mode": "100644",
+        "original_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.stderr"
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_SOURCE_FREEZE.json",
+        "original_sha256": "78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c",
+        "original_mode": "100644",
+        "original_git_blob": "ae91363a701ad04b3f752c3ba727cf005c183b7c",
+        "status": "A",
+        "final_path": "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c.gz",
+        "final_sha256": "9bd5fb4fec8de9e355924827e2d7c36360cb770f94a41ad98f730f24c1473344",
+        "encoding": "gzip",
+        "disposition": "Exact historical proof, review, control, mutation and provenance fully consumed; historical verdicts are not authority. Canonical current proof obligations appear in final note.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_SOURCE_FREEZE.json"
+      },
+      {
+        "original_path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "original_sha256": "4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c",
+        "original_mode": "100644",
+        "original_git_blob": "18bf35f687bec68f82d2ab04880875dbb1982f71",
+        "status": "A",
+        "final_path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "final_sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+        "encoding": null,
+        "disposition": "Canonical self-contained supplied-model proof/control/output retained; only cold-reviewed packaging changes. Actual final output completed; all original mathematical payload fields exactly equal.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md"
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "812fa1eddebc2ccb0a4b007277ba74086833e460861f9e8c665a512d07f040ad",
+        "original_mode": "100644",
+        "original_git_blob": "0c1b1470533a87da96d678df4f21276213416f38",
+        "status": "M",
+        "final_path": null,
+        "final_sha256": null,
+        "encoding": null,
+        "disposition": "Structured incremental generated graph read; excluded from authority and proposal. Current main graph preserved for coordinator regeneration.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:docs/audit/data/citation_graph_manifest.json"
+      },
+      {
+        "original_path": "outputs/native_full_star_infrared_response_2026_09_09.json",
+        "original_sha256": "dff861b3c9c7cf754ba8e8fd64381de34e28ae5f5c7d633071eb0fa90df7b67a",
+        "original_mode": "100644",
+        "original_git_blob": "e7d7ab7a4bdda3ceae26f54aa317fe9038775040",
+        "status": "A",
+        "final_path": "outputs/native_full_star_infrared_response_2026_09_09.json",
+        "final_sha256": "5795c7bba492181abfbc2bef11170fa7ad89c72cbe32ce373b82fbfaccf5737f",
+        "encoding": null,
+        "disposition": "Canonical self-contained supplied-model proof/control/output retained; only cold-reviewed packaging changes. Actual final output completed; all original mathematical payload fields exactly equal.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:outputs/native_full_star_infrared_response_2026_09_09.json"
+      },
+      {
+        "original_path": "scripts/native_full_star_infrared_controls_2026_09_09.py",
+        "original_sha256": "144a40e270c8f0419bbf033e347436540f3df0079d59a4bc2c6206c9736f1264",
+        "original_mode": "100644",
+        "original_git_blob": "61535d228b686b8f9ab1640bd5477044c3848ef3",
+        "status": "A",
+        "final_path": "scripts/native_full_star_infrared_controls_2026_09_09.py",
+        "final_sha256": "0b942d42160768ce61fac504f3e65fe5d301cd5407b3b3388e8563deb5f1c436",
+        "encoding": null,
+        "disposition": "Canonical self-contained supplied-model proof/control/output retained; only cold-reviewed packaging changes. Actual final output completed; all original mathematical payload fields exactly equal.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:scripts/native_full_star_infrared_controls_2026_09_09.py"
+      },
+      {
+        "original_path": "scripts/native_full_star_infrared_response_2026_09_09.py",
+        "original_sha256": "0ae55cd857751eb3c49446e04134e7cb468d349177945c25d52dc0aef1b5e7a9",
+        "original_mode": "100644",
+        "original_git_blob": "6b09b7d3e51ac0bac058932f060554133b837a26",
+        "status": "A",
+        "final_path": "scripts/native_full_star_infrared_response_2026_09_09.py",
+        "final_sha256": "67dec92c934027435ac8a040a11ac4c09d1dea16d21fa97814c743f451a35a8f",
+        "encoding": null,
+        "disposition": "Canonical self-contained supplied-model proof/control/output retained; only cold-reviewed packaging changes. Actual final output completed; all original mathematical payload fields exactly equal.",
+        "recovery": "70d0f3c793ff8eb835b1661c710cb42ea2b46879:scripts/native_full_star_infrared_response_2026_09_09.py"
+      }
+    ]
+  },
+  "source_hashes": {
+    "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/README.md": "9eae03fd0c96520bd390be913be994658a135a9290c8dfa99c232c18335227fb",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/0d55ecae82b64b010648da639da973fb63a0e469760871b574fd90d8868429d3.gz": "ab751c758123fa1a18892dce0990d54d983cf90ee0cab7fb2c0cf1931d672058",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/132919440d7b92f3324cca6d3994441cd4007ccc4463c3b22c4ce0e15b6c9ebc.gz": "d32145da5fb4ad0e71467930d885f98ccd4d769b5ca227d520610ceef7cb2f0d",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/1a52fb81b8cf9fa07b2643d3a5b88236d3878e60265781f1c6176198e0496c7f.gz": "2065488b23f4caa673ef3eeb51e038becfd1c8548b45a13304f104079067eb2b",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/1d169551b1d6ac908ee2ebb08ea56237412b9481bdc03ec53c33435d847b4e23.gz": "f1bc7f8aafc3b6df013ddc5700c3f1cd67e3d8de9ab9ae7db8ac35657b38d687",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/1d4eaedc0634368ffba815d965b90c7e4828a0390d94b26faaf7ccfe56f612c6.gz": "1e35ae16faee4b00ee9864f17ddc4352036e50addf883cd9615f8b965e19c0bd",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/2385d6c20e09204699d8fff6851c1587fbbb44eeff760a04d387618946189763.gz": "51961c97bb318a312a5b0555f017d472c67c965f4134349c3434f4ac061e5f51",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/2c31a8cd2a3769b1b80405841eb1a45b498f3cda93181d3fd91ebc39323117ef.gz": "8e9589f437ad11870c15fb0008452a67455c30919cd16c1537f3aa46efe8ef0e",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/3cf0545078515a30f1be34fd2effbd305a30ea23e9a20e185d44cb602fde16c3.gz": "557d053579f6ff73277ddfdea963fe176c00a26b3b48c2dd576146e166a5fe66",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/41a4cacb7dff50eed2b6a8cf43cd302581f4b519a4a36090afdf4db59067c953.gz": "b53714c0bcf5bcca09802f2dfa8c996f0f57914158da7b7e4b0c24a019f08fd9",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/423d009f74f97ce5106f46eeb8d30418b4aff51d2ef99a6dba326c738d476083.gz": "39f08d8157dad1c86aa7f6283d78688760772f4ff6e77830d060f1c3cc4fd037",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/44c98fbad566640a4d9f9d203010469e289e452986d8ee2313d6aad966f7cd6a.gz": "a5f524f6fa50c14efbd74b4e67ac191c38da5bda881a9068bd3fbb964527f9c2",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/4b0fe13d44bb172afcd863e9df50d65dcfd0bbc5454fefa74b8d170ea5733bab.gz": "163adfc1c01c441e59c0caf5c0af16e24c3a32ac2a9688172f40bae3439716c9",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/545ea28ea75d5bf10b7576fb0a772cd5cafbcbd3ce65fce1532f6032899a32fb.gz": "e9e2d34fa131ae781babbfbc661d6925946aab48bdb7cdad0e929cc200762692",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/547ac247535dce1da47a99bc9eb773077901443c14e812bc58d1dbb67cc622b8.gz": "941cc773dc0619f769e25cefe751393b2047b0cc6299bb4b3194eeabc2377e11",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c.gz": "6ad636c051e5c5456eddd3bc8142fb3cbeac23be79eec5dd564087f996f44921",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/5adfb8e39dde484cdc1ddde64dc4cc464eb29e5c6bf2859b91240da89b0d5483.gz": "99babdded59b943e54d7e9f3358bf22c3375d846438f23b8c6c9423f39d0173e",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/6169aaa7c679d0897240170032143038ec3df58ce8a768c0d15c3a223b7f0965.gz": "25aa38c6755ec5fe941ff746522caf11779833da281b828a490b06035b098b83",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc.gz": "931271662903aa64ada14915b848b610e6697cbd3f4841132332bd16a464062c",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/769390f0fa173d4462cc04ba97e76996639fd4b1398e91fb4081c619623a5a38.gz": "4e78cf622be026fbcc2e08fc8bf16cc6d3620b6e6c6d536d899ecc4a4553b26c",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c.gz": "9bd5fb4fec8de9e355924827e2d7c36360cb770f94a41ad98f730f24c1473344",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/7e1c6cf5c393b7b3d59b642bdbbdbc814894ae0a6c2e553dfa683677a7bda879.gz": "1e1b82cd3d23c97293e7da33b5b51312ce7b61b721ff85f982a5249eef73499e",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/88650aabf99953eae87a34a2c238e2913c70b627f0da1758433196cc1c5c3f0b.gz": "26073ebd9a2bded19e3c381113d002645afade0036929ac526a4c3403d69b642",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/912fb42336190ad7551d6ac15879005620ffebddc0cf8061fc9bdcca61981d32.gz": "5c771be02b7b72b197b953f7452d731477b8b34fd9a20b67d8f1a7c6ab272d4a",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/9611394c5cc04ecfd01af7c58f50b5b71a7ceb32d36ba1a2f3808ab6e36d9c8c.gz": "93647fa9a9a037778e7f2489cc69aa22f2d38f2cd8c860b2fa3f7a555133c959",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/a35a7527021fd19960e6fe79c2e23bfff78b85d66a4275c20acb708b3a513005.gz": "8a0b97f9ec8157301547fe47d05a23fd289eeb5397d1c18ef43b111877f511d6",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/ae6cb946c722ae63f2843cf26c08166f39a090d5ea67dcd0e3358099426144c5.gz": "182ce5c811bb75ce0122cd44f5af0ed894d159d707d81f8bd9f921eb5a46944c",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/ced0edfe5fb281c3cd6ab40772b763d46e3bee3fb771df2a5508339424277ea2.gz": "3f30d889b920edae9d91bd86ff040691b52fced7d874766d68b611221649b6e8",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/d175d58295d2b1125fa00db3f0e6608420151ae2a0ab9104323e46966cb98e07.gz": "324008dc7aa1242470af1e612f7c433351ebd959b35330abe77ae8846b695d78",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e3b3f2353b25c7051948cbe80f09a4ffe907cff8009ab2086b0a2aa83de143fc.gz": "8c7dc02305fb96f89470cd2c99a15c61ba81e6f8d94f88da4832804c65954045",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/e680bd95d6aabeeb4b7c08333ec2e46cf0a116f7490826bfaf0186bc4d60acd1.gz": "3d4f5ecbcd18ecd4f34eafb525ac7119bd7fea9b229295f2aaf2c62ae8a03569",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/_objects/f026f212de33de5d198636f990a451b9b4fada2893886965882b74d84f73ad60.gz": "47552c0fac2124527fb89e5e4ac77c5da07523e54081f75e5a3ae7b16d849bef",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/archive-manifest.json": "ba258cdf92bdd3663dabbb892d6948fa0bf0938536e5541f9656f4c8547ffc89",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/kept/pr8064-HANDOFF-9ef67db77ea9ef6f.md": "986a75805434df9ba36ceac2e9eddf94d011f304ed02c53abee0f3bef834adb6",
+    "docs/work_history/repo/review_feedback/pr8064-evidence/kept/pr8064-REVIEW_HISTORY-3f4cb79c836849bf.md": "1ca31cf9b736ec074147aa8327611c5d4aba23061b5cb362d4704970d47c4669",
+    "logs/runner-cache/native_full_star_infrared_response_2026_09_09.txt": "85e9eab92ec735bf20d6f1e7304ba26ce8939fdf5149cc89688978c4ebee78bc",
+    "outputs/native_full_star_infrared_response_2026_09_09.json": "5795c7bba492181abfbc2bef11170fa7ad89c72cbe32ce373b82fbfaccf5737f",
+    "scripts/native_full_star_infrared_controls_2026_09_09.py": "0b942d42160768ce61fac504f3e65fe5d301cd5407b3b3388e8563deb5f1c436",
+    "scripts/native_full_star_infrared_response_2026_09_09.py": "67dec92c934027435ac8a040a11ac4c09d1dea16d21fa97814c743f451a35a8f"
+  },
+  "actual_inputs": {
+    "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "scripts/native_full_star_infrared_controls_2026_09_09.py": "0b942d42160768ce61fac504f3e65fe5d301cd5407b3b3388e8563deb5f1c436"
+  },
+  "science": "# Independent original PR8064 scientific closure\n\nOriginal70d0f3c793ff8eb835b1661c710cb42ea2b46879, incremental8063 aea1602ec35a045e5b06be563acef0c28dadcbd4. All40 paths frozen and read, including35 history files, complete canonical note/two scripts/output and generated manifest delta. No original primary run. Historical748 and final1217 stages are distinct. Both HIGHER_ODD proof fragments and original DERIVATION are included in the canonical proof; no missing current fragment.\n\nThe local annihilation norm uses graded support, not a one-particle restriction. Positive occupation energies give P_(0,e] <= soft number and AP minimum frequency absorbs finite-grid +1. Dyadic support m~r^3 with arbitrary rapid norm tails gives cubic spectral weight. Stieltjes coefficient beta/(beta-s) retains absent zero atom and strict endpoints. Thermodynamic characteristic functions follow from common local approximation/dynamics; positive-energy moments give tightness and uniform low-energy integrability gives inverse moments. Odd infinite Gaussian Fock space has no zero atom since dispersion is positive almost everywhere.\n\nActual Gaussian linear extraction gives a quasi-local Z whose whole vacuum image has at least three particles. Triple graded brackets alternate anti/ordinary/anti and remain local; factorial soft-number inequality precedes shellwise bounds. p>9 gives ninth-power spectral bound; s<9 and q<9/2, no endpoint or nonzero limiting weight claimed.\n\nSummable anticommutator bounds give the Bessel translate map via A*A <= {A*,A}; composition with H^-1 chi gives full rows in l2 only. Higher-odd spatial result uses real positive-frequency f, not arbitrary inverse: X*Omega=f(-H)Z*Omega=0. All derivatives of f are L2, giving every weighted L1 Fourier moment through Cauchy-Schwarz. Scaled moments epsilon^(-p-1), infrared vector error epsilon^(7/2), spatial errors epsilon^-1 R^-q and epsilon^(-p-1)R^-p yield exponents49/16,249/8,25/8. The minimum exceeds3, yielding higher-odd l1 and dominated centered-row convergence only. No full sixth-order operator, full-kernel l1, or interacting stability inference.\n\nIndependent scratch controls passed six rational three-mode nested CAR cases,96 occupation predicates, general Stieltjes coefficient, one-sided adjoint-vacuum identity and two-sided counterexample, and exact spatial exponents. Two preliminary SymPy Boolean conversion failures are preserved; they concern scratch harness conversion and no canonical code. Current parent/input hashes were checked after replay; corrected cold review and preflight passed before the single actual capture.\n",
+  "original_closure": "All40 paths fully read: note,two scripts,output,incremental graph and35 historical files in complete unique-content packet0..2. Both higher-odd proof fragments and original derivation fully included in canonical sections1-8. Historical748 and final1217 stages remain distinct.",
+  "controls": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/science-closure.md",
+      "sha256": "d3a20e75d3bd8ecbf3ac7849b72ac8ca1b486c4b5b92a9ce3f0369a5345f6fb6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/control.py",
+      "sha256": "908e17ffa9501f3f9ea9d0e3487f583985cb9026e6a5b889522784da4b522b89"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/control.json",
+      "sha256": "1ac290fd6eb1ca1227ba35ce9ee9f31fac9c8f84dc5840587ac64b8907401534"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/control-first-attempt.py",
+      "sha256": "891d1d25773984fda981945b8e54dc3a78801ad13b3d4ca1a25a71272775f67f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/control-first-attempt.json",
+      "sha256": "032517afd3588d73cb84fc959912557867451a7bda44ce170bbbc78760d09061"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/control-second-attempt.py",
+      "sha256": "df9debe9097a4081e15f0585aa1b510185f0730a7a30ee2c6af88ddfc9e262d8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/control-second-attempt.json",
+      "sha256": "f3fea85733fa8076a7e2f2ad3290a74359fd196c97df633fd2dc929c3fa85ea8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/read-map.json",
+      "sha256": "5832c8ca375629313e6609b4ec9781bc5632b5a1305e88fb4be18f4f49c4dd95"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8064/context-reuse.json",
+      "sha256": "a8b67bebbdd76d856a6ea2046476444198e91afe9011c4013e6c3c3ec372e43f"
+    }
+  ],
+  "archives": [
+    {
+      "path": "/private/tmp/review-drain-20260915/8064-author-archive-receipt.json",
+      "sha256": "ba258cdf92bdd3663dabbb892d6948fa0bf0938536e5541f9656f4c8547ffc89"
+    }
+  ],
+  "capture": {
+    "path": "/private/tmp/review-drain-20260915/8064-author-capture.py",
+    "sha256": "4a78cceb9908e9a1fcf0ce9f1ecc8396cb3c8fa67ac106d818a4c5ad11cbdf02"
+  },
+  "corrections": "DisplayedType, compiled-byte literal loader, helper30-second cap/note pin, portable RSS, actualoutput/TOTAL1217, truthful scopes/cache/history and boundedN1-N8; helper math AST unchanged.",
+  "current_main_preservation": "All40 staged paths additions; inherited corrected parents and generated graph unchanged.",
+  "full_pipeline_runs": 0,
+  "audit_verdict": null,
+  "parent_reuse": {
+    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "0db93bb1365a24debba2bf36d184c8b1895c482f998962187b89526216059a61"
+  },
+  "supersedes_adapter": {
+    "path": "/private/tmp/review-drain-20260915/review-8064-provisional.json",
+    "sha256": "3b3afb232fadc74bb9e02252a7a99d8d7ff7d22e5709dd92890bfb5c112181bb",
+    "reason": "Correct generic inherited historical disposition wording before preflight; no source change"
+  },
+  "executions": [
+    {
+      "path": "/private/tmp/review-drain-20260915/8064-author-final-execution.json",
+      "sha256": "d4c73133583dafa16fee3e6eef9c28cc09258ff3d0d1aef0b191c6b8a7d993f9"
+    }
+  ],
+  "execution_summary": [
+    {
+      "pr": 8064,
+      "total": 1217,
+      "fail": 0,
+      "seconds": 0.20294809341430664,
+      "sampled_whole_tree_peak_bytes": 53460992,
+      "samples": 6,
+      "unchanged_math_fields": [
+        "scope",
+        "PASS",
+        "FAIL",
+        "groups",
+        "counterexamples_exhibited",
+        "fixture_particle_weights",
+        "full_inverse_moments",
+        "status",
+        "actual_current_surface_status"
+      ]
+    }
+  ],
+  "preflight": {
+    "path": "/private/tmp/review-drain-20260915/8064-preexecution-preflight.json",
+    "sha256": "279f76e6e5069ec34689df62d66d04ac76afc016e98fc3677857dd73c47b4672"
+  },
+  "preexecution_record": {
+    "path": "/private/tmp/review-drain-20260915/8064-unit-bound-preexecution-v2.json",
+    "sha256": "c7927a21ce232bf8672d7897992f0d4d0b64562737d97cfa3fa2227e9dd0a2f2"
+  },
+  "original_provisional_report": {
+    "path": "/private/tmp/review-drain-20260915/review-8064-preexecution-review.json",
+    "sha256": "9bfe62d1eef1d0e50281fd7c14d3ead7d046dbdf3a688adf98226386c5dc3844"
+  },
+  "final_freeze": {
+    "path": "/private/tmp/review-drain-20260915/8064-author-final-freeze.json",
+    "sha256": "7031f6bc17089e393e4acb290dca804e88b7f8e1889fb4def2f227039bc6284e"
+  },
+  "final_cache_check_owner": "/root; no reviewer duplicate",
+  "science_report": {
+    "path": "/private/tmp/review-drain-20260915/review-8064.md",
+    "sha256": "72625a5763804560cffe79434cd5433ff013fd4c4dd392c7a5612b5e50bd3b1e"
+  }
+}

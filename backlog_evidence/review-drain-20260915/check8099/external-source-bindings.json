@@ -1,0 +1,8 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/1109.6137v2",
+    "sha256": "a7f97594c44a514b550e7300b3a4b785b9b77c19c96195bea2442917e9780842",
+    "read_scope": "Sections I and II, pp1\u20133 through end of IID. Material-specific section III and transport predictions not imported.",
+    "role": "Prior-art comparator only: time-reversal Hall cancellation and four-node phases. This ordinary T-square-one symbol, roots and stability are independently proved; no material-model theorem imported."
+  }
+]

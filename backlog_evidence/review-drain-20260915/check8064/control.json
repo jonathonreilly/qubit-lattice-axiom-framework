@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "triple_graded_cases": 6,
+  "occupation_predicates": 96,
+  "stieltjes_coefficient": "beta/(beta-s), with s<beta and no zero atom",
+  "spatial_exponents": [
+    "49/16",
+    "249/8",
+    "25/8"
+  ],
+  "positive_frequency_adjoint_vacuum": true,
+  "two_sided_counterexample": true,
+  "scope": "Independent three-mode rational CAR and symbolic bound checks; analytical continuum proof read separately",
+  "seconds": 0.057330708019435406
+}

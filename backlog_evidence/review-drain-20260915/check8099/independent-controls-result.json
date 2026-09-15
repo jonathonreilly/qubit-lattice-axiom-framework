@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "count": 11,
+  "checks": [
+    "full_characteristic_polynomial",
+    "qdet_unit_circle",
+    "aligned_spectator",
+    "aligned_cross_zero",
+    "aligned_xspeed",
+    "aligned_zspeed",
+    "chirality_orientation",
+    "spectral_antisymmetry",
+    "time_reversal_symbol",
+    "mixed_commutant_scalar",
+    "spinless_TRIM_rank"
+  ],
+  "elapsed_seconds": 0.12639724998734891,
+  "primary_imported": false
+}

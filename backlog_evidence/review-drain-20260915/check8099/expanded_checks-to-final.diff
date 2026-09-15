@@ -1,0 +1,18 @@
+--- 
++++ 
+@@ -197,6 +197,15 @@
+   for index,k in enumerate(roots_formula(*parameters)):
+    C,overlap=cube_charge(k,parameters);target=-np.sign(np.cos(k[1])*np.sin(k[0])*np.sin(k[2]));close(f'occupied_cube_charge_{num}_{index}',C,target,2e-10,min_overlap=overlap);check(f'cube_overlap_{num}_{index}',overlap>.95)
+   for kz in [0.,.31,1.2,2.4]:close(f'zero_total_slice_chern_{num}_{kz}',slice_chern(kz,parameters),0,2e-10)
++ # A differentiated full projector checks the normalization of the Kubo
++ # curvature, independently of its oddness under time reversal.
++ for num,parameters in enumerate([cases[1],cases[2],cases[7]]):
++  k=np.array([.21,.43,1.17]);step=1e-5;u=occupied(k,parameters);P=u@u.conj().T;dp=[]
++  for axis in np.eye(3):
++   up=occupied(k+step*axis,parameters);um=occupied(k-step*axis,parameters);dp.append((up@up.conj().T-um@um.conj().T)/(2*step))
++  for i,j in [(0,1),(0,2),(1,2)]:
++   projector=(np.trace(P@(dp[i]@dp[j]-dp[j]@dp[i]))/1j).real
++   close(f'Kubo_projector_normalization_{num}_{i}_{j}',curvature(k,parameters,i,j),projector,2e-8)
+  # Boundary and gapped fixtures challenge the complete analytic zero set;
+  # a finite momentum scan alone would not establish absence of other zeros.
+  b=.4;zeta=.7;critical=np.sqrt(1-zeta*zeta)

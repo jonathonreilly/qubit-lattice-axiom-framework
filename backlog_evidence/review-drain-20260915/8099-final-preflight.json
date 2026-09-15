@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8099-final",
+  "tree": "2c45914364c04d5befa1fb3223d66e12e846c3c8",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8099-evidence/kept/pr8099-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8750,
+      "misses": 4389
+    },
+    "packet_imports": {
+      "hits": 8740,
+      "misses": 4387
+    },
+    "declared_inputs": {
+      "hits": 8776,
+      "misses": 4520
+    }
+  },
+  "record_sha256": "e09b0e9e83278e01252e38b5ff3669c377175480dcc84a84e4a33b37dae5adca",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

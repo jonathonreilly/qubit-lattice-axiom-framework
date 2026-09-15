@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+  "fetched_ref": "refs/review-loop/fetched/8099-eddbb1b1cb9e469d8fa1c37d5ade2204",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/local-hall-free-mixed-quartet-20260913",
+    "headRefOid": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+    "isDraft": false,
+    "number": 8099,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

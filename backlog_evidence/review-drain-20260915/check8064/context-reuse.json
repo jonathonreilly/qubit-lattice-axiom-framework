@@ -1,0 +1,135 @@
+{
+  "prior_report": {
+    "path": "/private/tmp/review-drain-20260915/review-8057.json",
+    "sha256": "28f9dd0d41e0b6a2ec3b244258c1f1cddcdc259263d887d0fa02918da5f2021c"
+  },
+  "unchanged_inputs": {
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md": "da1849644f34f729eda9f8fe8c1fc19602d775404f6c85c6ac365e7fa540c7d0",
+    "docs/NATIVE_FLUX_DEFECT_COMPARISON_AND_WINDING_GAP_NOTE_2026-09-08.md": "b215cd8b596d7fa4a5680331f21a2d86a5965ecaa8a207dff1c87ccff1d164e9",
+    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md": "7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-ACCEPTED_ANALYSIS-bb1eb67529b71878.json": "3c2f4cb0f6a23f6a0cb2d02495d3a61693b5cee1e966095eb0f077fcb42c1148",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-CUBE_INPUTS-e349e7d083b342b6.json": "91e619e403cb48c28aeb2edb8548699a3a4ce94cd157f6298f623c297646fd71",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-DERIVATION-56a9efd9c26e932a.md": "6fd23bb6e509d1d38d105cd05cbe9c9d5f25359a101db49f49db0e2bdbfc0a97",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-DERIVATION-d6dd768171696f18.md": "41c6cbb1fb92cbe5c81445a73c03d2ab6f59297769dae03bb4fb3b95ef7ccea9",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-INPUTS-48adf9da61fe6c51.json": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-MANIFEST-9a57f0f91e41ccea.json": "fd6ba465e9514a4f3445dc295756d08b1678155880eb2cdee510d1d385fb82c8",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-TRIG_INPUTS-52f925d4cc781ecd.json": "5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job00.jsonl-ef603010a28476d5.gz": "c4f3b620d3714e687fb2842db42320041710fa4f2a44718ce227a94567c8bc5b",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job01.jsonl-fe015586fbabe652.gz": "d269a3060d7f5c2d575a63202348d664c0fd8930012fab943263ea9b2c5c6754",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job02.jsonl-b1cb811d4078993e.gz": "12c6e88944f8f11d2dd03b07ce017c36e8dcb051ca796c510777daae5740ef32",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job03.jsonl-58733cb10849bf9e.gz": "1813c02ebc192f3af29699427953a80a6bb9f061bb38607f3fb633f0ffcffc70",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job04.jsonl-9ad3fb85f9e8cd93.gz": "131b5dd029ff571b9aba59446e220dab564a428aaf836541999369527374a1e2",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job05.jsonl-9f8ffca264884671.gz": "6cb6342c26aff3553bbbe146741dd9047faa4447c5fec39aa990f3c6b87b8296",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job06.jsonl-80a8ae7a102ae173.gz": "6a4d9fb5cb1268382b38bf2dc9e087ef3e80c83f3e7dc594148e06a00485b91e",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job07.jsonl-ce36cc0fbd17670a.gz": "71135bd5e3c475f456bf34fbf7e923d1896e4e83504db0e64a7e145f8b42526c",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job08.jsonl-590ecacc668ffe65.gz": "989bd6333f6cdc4a9c956157baec37cc90c865904fb566c810cc8cab03e425c4",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job09.jsonl-9a686324def89c35.gz": "31f556102c48ded86e1ec861f33a9e1c5d1c8d0951d15a798e2bc1aabd3d405b",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job10.jsonl-cb8350c40fbd6143.gz": "098bcb133f20da83c9288d19e7831a5c45715551843aa85887f83aa51fc786c0",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job11.jsonl-c56139f8786f79f0.gz": "9639216a7476856981ceaa981ee863874c1271a3a7b0d075adccfaece0a5e8fe",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job12.jsonl-a0e300a9a069ea6e.gz": "439fc534d74a0eed312c5d95e7ebd72c36c4f48080159e00b7eb0d06d3529171",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job13.jsonl-0225b58afe8cc106.gz": "7be3acdd8f2079c7a40b7d93f9e1bbd0738757b2e7088300a1f3ce88f4be9ca5",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job14.jsonl-b11fe7baa733b80e.gz": "0ee010697b7574847c4e7d1a7231e625503ce67ad217bf98c459f83bbc1e0a86",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job15.jsonl-67846cdf4956d8fc.gz": "6910d2e567f814cb0cea26856a828673bdaf3dc558a1ae1b68a98ebf1997ee3b",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job16.jsonl-ea04502ec96733ff.gz": "cc63f08e53100d48c3ed4856af4e0e647a7723ad1e32a53e70271e401956bb36",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job17.jsonl-c191b43286e430ad.gz": "9dd1d151d6f5fc2519eb48ac9894c7a33518c64b4c9a03ac75ce72d032d8a453",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job18.jsonl-0d804779daf100e3.gz": "e765a56611f92203fde2cd280dbf486631dbb36fb540a2898e6d9f1fde0c6ae3",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job19.jsonl-67a3ca267dc9eac3.gz": "d13aeeef923d061cdb804b399003cb2c10abb65fdc914106c3172dcb8262dbec",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job20.jsonl-4fdf8e638eff5b57.gz": "cce0d7a1453c41188eb0b2903716d7e198cba4a28688ba2f798474521be8903c",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job21.jsonl-416dcb3c69855da9.gz": "af9325f17bbd1139cd082dcaadf9ab3a395e28b6791f6e0c81b9c448a0c7b847",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job22.jsonl-3d2523630476198d.gz": "b4908d32b92265e508b4d7167d8c3103f6b679c0f8f63b67572cf4bdfb051aac",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-job23.jsonl-a2a48c7bddc9546c.gz": "278969d463fc7d1b3f3a78bffbc322946566c1a9aaff32421841f435f7cdbf78",
+    "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-make_inputs-4eb3be87e14dbfb6.py": "0f2c03c0b65d1c684b63024de87a22d4da709e67cf53ef54a69a1050221c3401",
+    "scripts/native_even_torus_flux_isolation_2026_09_08.py": "ce911c49659fcc732528f66d622a4b503785d981d0c0e8dfdbaf820eeb5f1953",
+    "scripts/native_even_torus_flux_isolation_controls_2026_09_08.py": "c36f54a436c04143c512526ce38deda4929a7bf10fc8bb0a8676c48781775c99",
+    "scripts/native_flux_defect_combinatorics_2026_09_08.py": "9c1c7fac29dc8ea2f29c42970a8c52b6b14c461423f764420d339657cce910b5",
+    "scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py": "a42bf36f29e618cd85dcc67306dba3118f6e08627d860180ebd35bd232d47134",
+    "scripts/native_flux_defect_geometry_2026_09_08.py": "cdf37b7431888c4c401b32fe41558fe49e6506b6b26afe0e5d7f8d81c433c514",
+    "scripts/native_uniform_cubic_flux_certificate_2026_09_08.py": "01dafe1b5f33893410e1f33e62b42541758f9fd28bc02239340c5fca42450b66",
+    "scripts/native_uniform_cubic_flux_defect_stiffness_2026_09_08.py": "43c496b5bf5c6e59604f12dcd6de6ede84212b3cdd5d457c9b3d2fdd518673ee",
+    "scripts/native_uniform_cubic_flux_matrix_2026_09_08.py": "d9a04735ad0165f7f97484cecbfc79151cdcc00d7acad6814bb97cb8095c5bb0",
+    "scripts/native_weak_electric_defect_density_2026_09_08.py": "b0a5dc340fbcf475e8328c3a05ccaef277a55aba1234ed94aeb61623e0f1d41d",
+    "scripts/native_weak_electric_defect_density_controls_2026_09_08.py": "28f8de4f10219ee58a234e041be8c34b3aeb4edf41d08c6077d2cbaac2341ff5",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/work_history/repo/review_feedback/pr8054-evidence/kept/pr8054-HANDOFF-9ef67db77ea9ef6f.md": "d2896dda67fc67741a87f0fad18702a42666afd12bdac8d731ffcc31e1b49efa",
+    "docs/work_history/repo/review_feedback/pr8055-evidence/kept/pr8055-HANDOFF-9ef67db77ea9ef6f.md": "41d4d35fbb2f309cdb4b32040f6c07340c60caa0066e5d4e2380509c94d885ee",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "method_context": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ]
+}

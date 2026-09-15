@@ -1,0 +1,19 @@
+{
+  "comparison": {
+    "path": "/private/tmp/review-drain-20260915/8099-reviewer-output-comparison.json",
+    "sha256": "1aac472fc3622208c6b557005a98c7e2d0ed1024e6cd8f439990b1a7ff0b2720"
+  },
+  "initial_attempt": {
+    "script": "check8099/final-bind.py",
+    "sha256": "609a76922cd17573a27588c0a633e8663e293bc2bacc64a9f1171ecd5165cef5",
+    "exit_code": 2,
+    "reason": "Intentional stop for floating difference inspection, no primary failure"
+  },
+  "classification": {
+    "smallest_nonzero": "Six finite singular values, 0.431 to 4, changed by at most 5.774e-15. Original nullity threshold 1e-10 unchanged; all integer nullities exactly agree. Exact independent commutant control also passes.",
+    "spectrum_errors": "Rows935/947 are finite gauge spectrum residuals: current1.244e-14 and8.882e-15 versus unchanged default close threshold1e-10.",
+    "contact_cancellation_errors": "Rows936/948 are occupied-energy curvature residuals: current2.842e-14 and1.421e-14 versus unchanged1e-9.",
+    "contact_bubble": "Finite separate terms of magnitude59.16/95.49, largest change7.106e-14. Contact nontriviality abs(contact)>1 remains unchanged and passed."
+  },
+  "conclusion": "All13 differences individually assigned to actual diagnostic roles. Structure/nonfloat fields and all other floating fields exactly agree. No new scientific tolerance, no source change, no primary rerun."
+}

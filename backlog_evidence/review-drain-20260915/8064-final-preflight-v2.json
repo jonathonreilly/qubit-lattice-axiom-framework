@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8064",
+  "tree": "ad737d79500495735d8aea8b7c2af1b937c80339",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "claim_id": "native_full_star_infrared_response_note_2026-09-09",
+      "primary_runner": "scripts/native_full_star_infrared_response_2026_09_09.py",
+      "helpers": [
+        "scripts/native_full_star_infrared_controls_2026_09_09.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_full_star_infrared_controls_2026_09_09.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_full_star_infrared_controls_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8064-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8751,
+      "misses": 4395
+    },
+    "packet_imports": {
+      "hits": 8740,
+      "misses": 4393
+    },
+    "declared_inputs": {
+      "hits": 8777,
+      "misses": 4526
+    }
+  },
+  "record_sha256": "788784e8a9e080274f54b0264d1c08796ca665ecf1d0ff12cc3f31290ef0978d",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

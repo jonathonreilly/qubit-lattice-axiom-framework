@@ -1,0 +1,22 @@
+{
+  "archive_count": 136,
+  "all_exact": true,
+  "mutants_verified": 26,
+  "prior_sources": {
+    "first_checks": {
+      "count": 765,
+      "source_sha256": "e3ddecefa3d0eb324178ca6adf896f13ecfe5073ecc291a45dce5a2bd0ae7e40",
+      "diff": "/private/tmp/review-drain-20260915/check8099/first_checks-to-final.diff"
+    },
+    "expanded_checks": {
+      "count": 950,
+      "source_sha256": "25caf1b8ada6669aa6576e8ce2a570aba4199564f7dc68ce6466cfe0c953ba3e",
+      "diff": "/private/tmp/review-drain-20260915/check8099/expanded_checks-to-final.diff"
+    }
+  },
+  "original_path_count": 139,
+  "original_status_counts": {
+    "M": 1,
+    "A": 138
+  }
+}

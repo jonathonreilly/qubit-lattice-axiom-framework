@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "scope": "Local integration adapter Type predicate only; no source science execution or integration replay",
+  "base_adapter_sha256": "edf38425ffc13b32e0a6d24c4ee86467d789e5caf8385eeb1537bac3a80e703b",
+  "candidate_adapter_sha256": "0bc8837341d91b0484f1a5f43dbd535d5991c42e82d9385f92922a80fcc88f1f",
+  "graph_api_path": "/private/tmp/review-drain-20260915/coordinator/docs/audit/scripts/build_citation_graph.py",
+  "graph_api_sha256": "9c64af533fb5dd2c48724e4489dd45c645c2ba3982f0cbd36defc60a0253b755",
+  "source_commit": "6facf9a47fbbd2b8e6414f2974812716ff8082a8",
+  "controls": [
+    {
+      "name": "actual8061",
+      "hint": [
+        "bounded_theorem. **Status:** conditional-support.",
+        "bounded_theorem"
+      ],
+      "accepted": true,
+      "expected": true,
+      "source_sha256": "622e10839b881fdf14c08065807caacae45334c8e9995f65abfa3ca3cbd7f081"
+    },
+    {
+      "name": "actual8059",
+      "hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "accepted": true,
+      "expected": true,
+      "source_sha256": "ace955515db1402f967402fffb21d106e0b1cb8ee10543431278c566fc64aa67"
+    },
+    {
+      "name": "ordinary_bounded",
+      "hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "accepted": true,
+      "expected": true,
+      "source_sha256": "ea332372ad7e3620a1af4c4b4363ca07f0845a96af3fd85926f431c4a74e028d"
+    },
+    {
+      "name": "unknown_type",
+      "hint": [
+        "unknown_type",
+        null
+      ],
+      "accepted": false,
+      "expected": false,
+      "source_sha256": "76ab4d6622f62badfde94a78bbe0878a066cf67e8e46e24caf25b47f41d9093f"
+    },
+    {
+      "name": "meta_type",
+      "hint": [
+        "meta",
+        "meta"
+      ],
+      "accepted": false,
+      "expected": false,
+      "source_sha256": "06829806541a86b4e9b50a8b0d44a3e02485c93dfcc8755ca70469c1fdab54b1"
+    },
+    {
+      "name": "missing_type",
+      "hint": [
+        null,
+        null
+      ],
+      "accepted": false,
+      "expected": false,
+      "source_sha256": "fbbfba555f68d1dcbbd624a2b0049d964462f55da516a651c1a94006f1d98b1f"
+    }
+  ],
+  "exact_single_replacement": true,
+  "api_contract": "extract_claim_type_hint returns (raw_text, normalized_known_type). Only normalized field identifies the supported bounded theorem category.",
+  "typed_variant_boundary": "prepare_candidate_typed.py contains additional explicit meta expectation checks and is not the base of this change; this review does not authorize dropping those checks when that specialized adapter is required.",
+  "reviewer": "/root/review_8012",
+  "verdict": "PASS: local normalized-Type adapter correction",
+  "control": {
+    "path": "/private/tmp/review-drain-20260915/check-adapter-normalized/control.py",
+    "sha256": "cacfa6a192b7a03e5120d1ee5483bf6ef3b098e7848c8d34d02320ea05331e06"
+  },
+  "actual_results": {
+    "path": "/private/tmp/review-drain-20260915/check-adapter-normalized/result.json",
+    "sha256": "6b5ae06b387cc4a374dc80ca91d43d2e8b71c7e4bcf522a2be88f30e05ae12c9"
+  },
+  "science_effect": "None. Source6facf9a47fbbd2b8e6414f2974812716ff8082a8 and its existing final independent review/cache acceptance remain unchanged; no numerical recapture.",
+  "full_pipeline_runs": 0
+}

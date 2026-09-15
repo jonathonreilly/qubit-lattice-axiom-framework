@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "historical_originals": [
+    {
+      "pr": "8059",
+      "originals": 686,
+      "manifest_sha256": "8dc1e401dbe1c18ee0ffa13305f4cfc3f1fae92535f2b961f951d50349a96e7f"
+    },
+    {
+      "pr": "8061",
+      "originals": 76,
+      "manifest_sha256": "2d44aece7aa7ca0e648bea2edb96bd399e2cc3fd180e1605e976bf4ed8af0a98"
+    }
+  ],
+  "seven_proof_originals_exact": true
+}

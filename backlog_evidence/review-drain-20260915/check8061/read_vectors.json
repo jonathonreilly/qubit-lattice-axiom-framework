@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "all14_compressed_and_raw_hashes_verified": true,
+  "all7_complete_bit_bridges": [
+    {
+      "name": "firstP",
+      "complete_coordinates": 1048576,
+      "raw_phase": "real",
+      "bitwise_bridge": true
+    },
+    {
+      "name": "firstO",
+      "complete_coordinates": 1048576,
+      "raw_phase": "real",
+      "bitwise_bridge": true
+    },
+    {
+      "name": "secondP",
+      "complete_coordinates": 1048576,
+      "raw_phase": "i",
+      "bitwise_bridge": true
+    },
+    {
+      "name": "secondO",
+      "complete_coordinates": 1048576,
+      "raw_phase": "i",
+      "bitwise_bridge": true
+    },
+    {
+      "name": "sourceP",
+      "complete_coordinates": 1048576,
+      "raw_phase": "i",
+      "bitwise_bridge": true
+    },
+    {
+      "name": "sourceO",
+      "complete_coordinates": 1048576,
+      "raw_phase": "i",
+      "bitwise_bridge": true
+    },
+    {
+      "name": "chi_real",
+      "complete_coordinates": 1048576,
+      "raw_phase": "i",
+      "bitwise_bridge": true
+    }
+  ],
+  "seconds": 0.15175904100760818,
+  "no_H_action_residual_or_solve": true
+}

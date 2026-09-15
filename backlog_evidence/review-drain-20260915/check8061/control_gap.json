@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "baseline_exact_spectrum": [
+    32,
+    48,
+    24,
+    4
+  ],
+  "two_direct_full_inverses": [
+    {
+      "mask": "3",
+      "gap": "4321905502367014392586020347504039658545130067991/10954071644573079271025000000000000000000000000000",
+      "direct108_inverse_residual": true
+    },
+    {
+      "mask": "12",
+      "gap": "4321905502367014392586020347504039658545130067991/10954071644573079271025000000000000000000000000000",
+      "direct108_inverse_residual": true
+    }
+  ],
+  "seconds": 1.273872833000496,
+  "canonical_helpers_imported": false
+}

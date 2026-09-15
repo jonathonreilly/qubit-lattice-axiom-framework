@@ -1,0 +1,342 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/ARTIFACT_PLAN.md",
+    "sha256": "1d50377ab92895635cab28393fa0b621917fba05e21573779ca3f4acbedafa61",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "75e92e5c3459531854eded84e811da59f8e67bc7fd200b34e77dcb831ff0d24a",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "179f4f93222cf8e89bc54c31df56b64e0e8083fb596532ba570d2907e07b8bd7",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/FULL_REPLAY_PROTOCOL.md",
+    "sha256": "11beaf26ee82560fd6b8ebe9f4e573d330a26e82a681089bd1072647bcd030b7",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/GOAL.md",
+    "sha256": "89efa07c4aaa42633bb30e3d2758775865185879719cc6cc3a4e1efec552b2b2",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/HANDOFF.md",
+    "sha256": "90f5fe93a111d6bddf3b1f67c276e681c18006b17d96e2710e3e3620c43ae248",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/LITERATURE_BRIDGES.md",
+    "sha256": "c642747318c8bf13bdf80a0632a076c8bda7c781cd2c5848f1c71524ec6fabca",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/NO_GO_LEDGER.md",
+    "sha256": "dc0ebd3fd2fc05a5d92a5d13890fa96dd0cdb790bd4c0e8c6faaa294759db3af",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/OPPORTUNITY_QUEUE.md",
+    "sha256": "1c157de22f58ab718f734eeb63b19b4e5408115b0bbf90d348a4212f441934c2",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/PR_BACKLOG.md",
+    "sha256": "8ef98e8f161a17704005235d3f299983790a0f148cdc3204e53fd51fe9c5c416",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/REVIEW_HISTORY.md",
+    "sha256": "90ee59c2cdefac110e832f2069ef9608e5cc16a4acfe4829ed14e2b39e058049",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/ROUTE_PORTFOLIO.md",
+    "sha256": "ff5759d6e4344491340c14b6b936ddd5514d66b325594148e43ed1e24afe463d",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/PROTOCOL.md",
+    "sha256": "5fe2287afcaf29fe4c4c90a3dcd870bb2aa318f841c22fec812395efc77d6e13",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/TRACE_GATE.md",
+    "sha256": "418b20941d5c28b5e6dd31d940b38c22481865984367d5e6396b23792d4d901e",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/PROTOCOL.md",
+    "sha256": "ac5418924ac8a0562e37f28b92d6e3dc9f3d347fa30f7c81d4b8aa039b665f00",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-post-review/REVIEW.md",
+    "sha256": "50b4d2729170f4ceb717d42de8952963644a4a914cb4ec5f7a0057d186d454af",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-root-review/REVIEW.md",
+    "sha256": "d01160faa0250c41cbf9b852a74d7b872cc30319a73b7fa14c7687ec903913de",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-cold-review/COST_POST_REVIEW.md",
+    "sha256": "1e0a728ea8d60a531b09c1edb5f32bf1e85e3e2764bc18216a6c68c5c2e451f2",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-cold-review/FINAL_PACKAGE_ADDENDUM.md",
+    "sha256": "24ed8cb26dc92dd49cbae571783a3b40119b7bcb8666df98f7b7d2c67dd0e1f5",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-cold-review/REVIEW.md",
+    "sha256": "ab7b4a2816004ff8a989c8483583286101e3b1e0257a537fdc6e59069181dce5",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-root-review/REVIEW.md",
+    "sha256": "e7d64d8cb6d2e77f3924c9ff5cd4228494687c007daf9948240354abe4717337",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-cold-review/FINAL_REVIEW.md",
+    "sha256": "e49c286b11df4724a5a0e7112a0d7906e93a157407d6148148de25228d24fcfb",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-cold-review/INITIAL_REVIEWER_SCHEMA_FAILURE.md",
+    "sha256": "f7df865e1b2a02240d0f5575926f42a08b97a02ec60cee27dc5ebebc1e5f5c40",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/GUARD_CORRECTION.md",
+    "sha256": "2d8bae15561e0c934408e6a7cdf209c7de53b8161870239ed454f183967e1189",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/PROTOCOL.md",
+    "sha256": "92ef01bbda5a303c18a91722ea758746e6aed481e255add62276efd43f30081b",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-root-review/REVIEW.md",
+    "sha256": "f16f87d7fefcc3c80c15510c9dbdda75414821acb08919c205ab8d0835ef99ff",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-prefix-census/DERIVATION.md",
+    "sha256": "2cd12f6cf37502772ce1c900614e6db725786113f74358453f1d8a47f8ca7a75",
+    "unique_paragraphs": 21
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-prefix-census/NEXT_GATE.md",
+    "sha256": "0f42ae149a79dd4f8458e6f133ed0b188ed51ed1b3714c352a0dd6de640bccd5",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-prefix-census/PREREGISTRATION.md",
+    "sha256": "c9360ff380232ed060a6954b9f9a6e13f75c0e7f10c6d4ea2a7686da05b0306d",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-full-port-root-review/REVIEW.md",
+    "sha256": "cedbad4148f29ba96746fd4ab4fcfd1e87fa87da0f8e94ab87795e7b18774366",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-cold-review/REVIEW.md",
+    "sha256": "f4067370497baea7b88d33bed6862d47111ea60b8ce7c70c83554c6a992cf907",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/DERIVATION.md",
+    "sha256": "c206180e67354f642794dbe8647e5fe5f00cc22a821e40ae64771c0ca0cd5565",
+    "unique_paragraphs": 17
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/EXTERNAL_BRIDGE_CORRECTION.md",
+    "sha256": "9914352833f6e3486efea45dfa2d60655ffec4453e507e92fb6f2276e1cd5108",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/PREREGISTRATION.md",
+    "sha256": "88472dacce328862edb9603ca6c784686fce70ec83cf9970ca5f93d6bb026271",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-nosite-root-review/REVIEW.md",
+    "sha256": "70ac0f45bd2f87cf9ac562a72b6b2dedcd07d319e6c0ff3d36bb91af0f73469e",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-semantic-root-review/REVIEW.md",
+    "sha256": "8dc5ace7907220c2d209fe6f7dfee56acf2d9c30ac70f567e8aa86174a718aa6",
+    "unique_paragraphs": 3
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_ACCEPTED_PORT_METADATA/CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "14eaaaaed47ae23b15f408708f532c1c37a06e15ef9871c2ebf58579d3813966",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_ACCEPTED_PORT_METADATA/HANDOFF.md",
+    "sha256": "15e603fe826b8667d7ccae640c27ba2424e299ce2f1f9dd880a1da61850c07a1",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_ACCEPTED_PORT_METADATA/REVIEW_HISTORY.md",
+    "sha256": "931843d798dd1d1a9d60577781c06d6794aaaa48e3228dd0b13ba37aba12383a",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_CASE_RETENTION_3b529/FULL_REPLAY_PROTOCOL.md",
+    "sha256": "f1320ed963e7757d29e20be36ca7d4aa5c4ed222403f87e54278d93f831a3625",
+    "unique_paragraphs": 5
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_FINAL_NOTE_81bd/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md",
+    "sha256": "1542465fae0065d8079bbd96a4b87f675c7eec827f161b2db7b087837c5ffcf4",
+    "unique_paragraphs": 13
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_RUNTIME_FAILURE_5bb/FULL_REPLAY_PROTOCOL.md",
+    "sha256": "f1320ed963e7757d29e20be36ca7d4aa5c4ed222403f87e54278d93f831a3625",
+    "unique_paragraphs": 0
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_RUNTIME_FAILURE_5bb/STATUS.md",
+    "sha256": "6475112bdadb2393946d756b5884ee69354fc1f865a4b006e6e6f9844c1f37f6",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/SEMANTIC_BEFORE_556/PROTOCOL.md",
+    "sha256": "647cbcf786e362af98481cd5e14e26263c699bad17657a18eaee289873148123",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/ARTIFACT_PLAN.md",
+    "sha256": "19f73455e9512d636ec8fac0fdfdfe9f2f4a6bd3050d89e88655b7b69d65e00e",
+    "unique_paragraphs": 2
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "e9a428d501ee0596a9f0a77bf9a86c448b746abb2f8c7ed634870c257c739148",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+    "sha256": "d26bfacb640ad152824461e194ccd718cdfc37822c4f8851e983eacf8da352e3",
+    "unique_paragraphs": 0
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/CANONICAL_EXECUTION/HANDOFF.md",
+    "sha256": "54a259790334c683ba0a197f57aa331a2cddfeb2a8a147c734fa956f3dfe9d5e",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "d303fceae65b802216f59e042d5520e192757de5046d1f99c6b6b99b50eea525",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/COMPLETION.md",
+    "sha256": "d449ecba3c94ad3a00ac25bd02668fa0cfe2d8a7d6b43f761b5ea71591980da7",
+    "unique_paragraphs": 3
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/FINAL_ROOT_REVIEW/FINAL_DELTA.md",
+    "sha256": "1d91bf60db54f7a398d8c34a42f3095784f3ba087ba854f547b237065c545cf5",
+    "unique_paragraphs": 4
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+    "sha256": "887cc47042ba6b97e6924a02df6a85e30a47ff6fa8f9c3f63806cda4dfcc2571",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+    "sha256": "2a2526a84ccd8aaca302f063c351f0b4af07a1bae0028d5bd7bafa49d8120dea",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/GOAL.md",
+    "sha256": "dd5c641a8ded08d8038dea224a2ee49e7fc2429c346f761e84d1d6c920639c4e",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/HANDOFF.md",
+    "sha256": "7b2ceb0095bf0c30785e6f756c7cd4e5564857501d4490d35c668fb6b066042e",
+    "unique_paragraphs": 3
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/HISTORY/native-l6-direct-four-solve-replay/DESIGN.md",
+    "sha256": "adc359a3494f7b5336708295a66f11166493592c45df1c950d00cc12b2dcb611",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/HISTORY/native-l6-four-solve-memory-postmortem/DIAGNOSIS.md",
+    "sha256": "229abf9ce1977d26fc4091d2b7fbc8fb3dcefaa16ef902bfce1b2b7b10dc4658",
+    "unique_paragraphs": 12
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/HISTORY/native-l6-nonlinear-vertex-cold-review/REVIEW.md",
+    "sha256": "c4300e00d5515452727a9697575ef4af531bf220d58c67f3a869f98281fc2a22",
+    "unique_paragraphs": 0
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/HISTORY/native-l6-real-arithmetic-cold-review/IMPLEMENTATION_PLAN.md",
+    "sha256": "8641c03b5201312ab74fd071f383072cc725400d29ec4089072f57856882fd8b",
+    "unique_paragraphs": 10
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/HISTORY/native-l6-real-arithmetic-cold-review/REVIEW.md",
+    "sha256": "dd11c1f881e2454852b419d67771a02e9ad9586f46a59d4d9d9a82eb3ee5191d",
+    "unique_paragraphs": 7
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/LITERATURE_BRIDGES.md",
+    "sha256": "aebc9f2ba0e02cdf82ce8cc45b398925578f038a9d713e269a4cf105b1d204b6",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/NO_GO_LEDGER.md",
+    "sha256": "917f14db867a208a04f6d559c7213b498ec1b5b2912ea8039924f563bd6b0ff9",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/OPPORTUNITY_QUEUE.md",
+    "sha256": "9f0cbbf6970de504b81795e645f2c94726cd60bdfebbf5d3495c2d8d05b8c605",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/PORT_RECORDS/ISOLATED_VERIFICATION_PROPOSAL.md",
+    "sha256": "983b6e9296c01dc58ba339b6de68ea1161eb888eb91391373cd7dd9711337e5c",
+    "unique_paragraphs": 6
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/PR_BACKLOG.md",
+    "sha256": "8f447feb448414fcc28c86a637858928aa8ba1b02fb2f0254d6cb626f4adce74",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/REVIEW_HISTORY.md",
+    "sha256": "1361874334b25f3d745ba4b25b9722bba4e589e5da06c6613498eb358b5b939e",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/ROUTE_PORTFOLIO.md",
+    "sha256": "04dfe4211eab51e9fbca59d5dc723e374a0dd8d3f35cb37b48653d8fef3034be",
+    "unique_paragraphs": 1
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/TRACE_GATE.md",
+    "sha256": "eac2717441f9568d059d3d4d3cd2d08cec64067c63229f7875cc252d9444edb6",
+    "unique_paragraphs": 1
+  }
+]

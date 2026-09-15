@@ -1,0 +1,282 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/baseline.py",
+    "sha256": "b018311706e5c34dbab3d1be51ec9c2b1cb5edc5a0d3fad831df8267ccb96c09",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8059/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/run.py",
+    "sha256": "cddd963c01b906229a61ec835b39b979a0752cf09ea6d1002a8eda53cd8f031f",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/singleton_actual.py",
+    "sha256": "13907713383409b87b6594a83868319ccb3e32149328f91133ebb723e356a99c",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/singleton_unrestricted_parity.py",
+    "sha256": "15fafc3db3d23057e96b07c1e0334736579672114bf090c9525b071fc4be286a",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/singleton_actual.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/worker.py",
+    "sha256": "2427682800906cb98df871e42186d903161de8e326745242d484150538e2d7cc",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/wrong_inverse_term.py",
+    "sha256": "e5e2edafa3d661e25c3778fd86963638c7ddf6c17d93d19da7308d1485bf39e9",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/wrong_native_normalization.py",
+    "sha256": "c5e8c6a9dd0c0e222b98feaa7137658362404a378f18127f75c63e783fb234c0",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/build.py",
+    "sha256": "7e75fc1a87d88e7baa790dbb3d45249e8d47e63dfda069df42c6ef34d96c549c",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/controls.py",
+    "sha256": "63c42d818854f764f10cf896dc4649a8137179d6b17647bbb24b0bfa892f9570",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/core.py",
+    "sha256": "89f2be12384efbc53659f69b3ad698159f4cc02ed14c7f0c65bf8cfe169de82d",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/freeze.py",
+    "sha256": "a9b4da105b83a8d60a2c0e9de42149d1d15776f4f04ff14f1ad88fda4125abed",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/launch.py",
+    "sha256": "cf82951352708f811748dc0bf347b138c626eba2217e5465cf366339401fdf42",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/run_shard.py",
+    "sha256": "37d0762057100c93518e56602e74f8423c4f32a2585941befd955d37c6d4b607",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/verify.py",
+    "sha256": "477b956fd19fa139f3573ad80cacf9fb3aefe6b7898395c13fed49fd800300af",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-post-review/check.py",
+    "sha256": "2f66938935fbb1026e28e45cea952a0893e7c711c1c6c4d39de8371731172386",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-root-review/run_once.py",
+    "sha256": "c64e53a050af2335fa351cda843652b247dfe0e30192466ebaec73c8fd504487",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-cold-review/geometry_check.py",
+    "sha256": "7dde90b0fb61eab2ed3ccf08ef442af92df4c7624448878637b1a719c7f336ca",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-root-review/run_once.py",
+    "sha256": "5c2616dff43414bbe9ced365ca5c669aac7cdba0657666594ed69cff1dbfb4ab",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-root-review/run_once.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/common.py",
+    "sha256": "6602f45a53b92d87c30ea11e65d39ec8ddbb25669cd5052ff2005cfd4635069f",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/controls.py",
+    "sha256": "43151a07ad99fe251279026d69e03a063215f81f45fde79e5c86c1586257c0a7",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/core.py",
+    "sha256": "55632dbb32b3646ed7c08b267a2ca1643961fd001aee1fbf8d03be6cea8c46e4",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/core.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/independent.py",
+    "sha256": "22a1cc058e536cec173e5d8d9ac89660861693bb6c6ea93625dad404409c59be",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/launch.py",
+    "sha256": "b639ec58c599aef2b0baa8ba5f07303ba875adcf0c8e33f87bf5419e66cbbfbb",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/preflight.py",
+    "sha256": "9497e1819f1a904bde41ccbe3c22fa41e13ae06fa62e61f9b09f6291697c061c",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-design/worker.py",
+    "sha256": "af30f82d78897d70dcc6d267ab6b1daba27366c8b6056ad02124f37090401611",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-fullscan-root-review/run_once.py",
+    "sha256": "7856cd9ff518834cffc9cea19ff8628861a354d88c3160d2ae206d663fc06381",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-root-review/run_once.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-nonadjacent-prefix-census/check.py",
+    "sha256": "95e405561bdbde45c40c6a1f9771c202027bbbcc5601cb3e20d4156df534992b",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-full-port-root-review/child.py",
+    "sha256": "2705b91c048ccc12f3e864f1cc8313ca4c98b141470331d0522d7a95708042ac",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-full-port-root-review/run_once.py",
+    "sha256": "54f0adfd5fbda95c45024018476cce1a4cb153ac8fdd5aefb2f61e7fd0982582",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-root-review/run_once.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-cold-review/check.py",
+    "sha256": "c83c0163ec5a53331c09bac47f5fe378c193b07867bf2e004f08f57b1410d610",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-cold-review/check_BEFORE_COMPLETION_FILTER.py",
+    "sha256": "2b231d103f1d72b2c4a484c43ccb8fc99466832fbdf3781f1012ad61b0ec0729",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-cold-review/check.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-cold-review/check_BEFORE_EXPLICIT_GUARDS.py",
+    "sha256": "6e425fda45b1b6d22bcc7c284bf3e7ca1b995e05982e8f4075eb3628ebbc6638",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-cold-review/check_BEFORE_COMPLETION_FILTER.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/census.py",
+    "sha256": "da4b666c76167dcfcc50257ae2c55874a445e1b3b828ec9393d220e50ba77a14",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/gap_pilot.py",
+    "sha256": "eba4b8bcce6257955e89f9aedbfde747eb7886a3a294a7bbe365fe25543901c6",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-allprefix-gap/core.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/gap_pilot_BEFORE_EXTERNAL_BRIDGE_FIX.py",
+    "sha256": "1ccbcfc81cb46feabb5652b55ba6f065020161a2aa8b97358dba034e28f43ce8",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-gap-probe/gap_pilot.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-nosite-root-review/child.py",
+    "sha256": "b168d8bad5b453daa05fbf7b0662b6d6c8e7f19b8d774ece90c2055f61e9a176",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-full-port-root-review/child.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-nosite-root-review/run_once.py",
+    "sha256": "47461114ada3638be23d8323208b59f31a0632e28c0e2b6b2b6190cc0723295d",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-full-port-root-review/run_once.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-semantic-root-review/run_once.py",
+    "sha256": "a542ab253955c0d9299ad80211ec61c041f0d5735b43e3b35db79d41549ff78c",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-complete-prefix-port-root-review/run_once.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_CASE_RETENTION_3b529/native_l6_sixth_prefix_gap_certificate_2026_09_08.py",
+    "sha256": "fda358458010652536ca4d5649c743fb7c1967e9538b45ed52ac146fd1e08512",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/scripts/native_l6_sixth_prefix_gap_certificate_2026_09_08.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/BEFORE_RUNTIME_FAILURE_5bb/child.py",
+    "sha256": "2705b91c048ccc12f3e864f1cc8313ca4c98b141470331d0522d7a95708042ac",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/evidence/native-l6-prefix-full-port-root-review/child.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/SEMANTIC_BEFORE_556/baseline.py",
+    "sha256": "b018311706e5c34dbab3d1be51ec9c2b1cb5edc5a0d3fad831df8267ccb96c09",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8059/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/SEMANTIC_BEFORE_556/run.py",
+    "sha256": "29a7685c80801833b1cfd3f4531796a685ab1b2fe14ced5c3faf6ba2a76e4cd3",
+    "diff_from": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/run.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/SEMANTIC_BEFORE_556/worker.py",
+    "sha256": "2427682800906cb98df871e42186d903161de8e326745242d484150538e2d7cc",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/worker.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/SEMANTIC_BEFORE_556/wrong_inverse_term.py",
+    "sha256": "e5e2edafa3d661e25c3778fd86963638c7ddf6c17d93d19da7308d1485bf39e9",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/wrong_inverse_term.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/history/SEMANTIC_BEFORE_556/wrong_native_normalization.py",
+    "sha256": "c5e8c6a9dd0c0e222b98feaa7137658362404a378f18127f75c63e783fb234c0",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8059/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/wrong_native_normalization.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_star_vertex_2026_09_09.py",
+    "sha256": "a3ae4f95a78968e5765d3e341943e714457255bad5cd765796a7608fe5230cc0",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_vertex_envelope_2026_09_09.py",
+    "sha256": "590a6605ec2bf59de6b07aa522a2c201b6588b9fbd35fae6e8b0068fae324944",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py",
+    "sha256": "ba521a392e8424777b59cb26900c2e8829d3d0832e955bf2a7b1c9a8873787bb",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_vertex_geometry_2026_09_09.py",
+    "sha256": "451bb6187c122a1fbe1c151d7e569f7d3e5a90eeadc74e9ff5844248c2664c81",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_vertex_review_2026_09_09.py",
+    "sha256": "f6d174743cffc7e492cf30275acc57371f1f77b87a1424533943b35ae49a96f9",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_vertex_review_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_vertex_transport_2026_09_09.py",
+    "sha256": "eb2eb65f7901ad858830d349a273abed8dddba1eafb7e23a55a1b795b2074bc1",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/AS_RUN_4d625/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py",
+    "sha256": "eb703b1a339af76efd2d8f47dfdc5abf010faceb27e9f70e9fdc80c096a687e1",
+    "exact_same_as": "/private/tmp/review-drain-20260915/check8061/original-8061/scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/CANONICAL_EXECUTION/root_accept.py",
+    "sha256": "b2934f5844c55d015ecde242ed471123023ce8f63e3419f150a8805a814aa37a",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/CANONICAL_EXECUTION/run_once.py",
+    "sha256": "5e5100ff9b68688c8ca174b692456f576e0b2b2398f41a9a387156c6d84271fd",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/CANONICAL_EXECUTION/worker.py",
+    "sha256": "8b1253eaa848edc2508df0cc208d42abe8bc473b226c48608b2d44ae4359f4fa",
+    "diff_from": null
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8061/original-8061/.claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/PORT_RECORDS/semantic_controls.py",
+    "sha256": "e1a3d72323c1b5f7b6deecb60cdeb64450bd929302d73d76a6e74c4b999b7df5",
+    "diff_from": null
+  }
+]

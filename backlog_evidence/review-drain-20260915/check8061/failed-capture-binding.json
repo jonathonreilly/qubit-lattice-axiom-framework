@@ -1,0 +1,8 @@
+{
+  "status": "All preserved failed-attempt hashes verified; no execution/resource PASS adopted",
+  "failure_receipt_sha256": "139dff3f9466e9820ca22881adef8711b510510f5791d5a24badde3d834c289d",
+  "changed_generation_paths": [
+    "outputs"
+  ],
+  "lost_stdout_and_watchdog_summary": true
+}

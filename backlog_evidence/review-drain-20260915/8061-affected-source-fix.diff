@@ -1,0 +1,53 @@
+diff --git a/outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/SOURCE_MANIFEST.json b/outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/SOURCE_MANIFEST.json
+index e2438a2b22..458d56985d 100644
+--- a/outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/SOURCE_MANIFEST.json
++++ b/outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/SOURCE_MANIFEST.json
+@@ -39,7 +39,7 @@
+   "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz": "ab00aab76b5276e2ed87dfd6d22e593125de4445e16b74aef993e61701813e01",
+   "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz": "9ac8a4be5831104cb2b01bf79ed1468d3f570744e9835672a08745ff7137e4be",
+   "outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz": "c88a7ba67dee4f42c2abd1f129cc9ed8855ffb9ad1b0b4d956713ec2349b85fb",
+-  "scripts/native_l6_nonlinear_star_vertex_2026_09_09.py": "ece94ccab7d8d7a769230bdaf28c3927921d7f34bc246b5ac7a413d54f92bb52",
++  "scripts/native_l6_nonlinear_star_vertex_2026_09_09.py": "2feabbdeabc2c23bc3f627db8ff7e80c7c526843dce5db7b09e481d28b265306",
+   "scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py": "ea9712dfcb5d5239b43f7f45c7470018b589d1aa8202c81bd98e40b07f1ea929",
+   "scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py": "b630b84d9482e0ab6118b0245d54db5923d918370c16c85a594daba02530f148",
+   "scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py": "fbc5e988fd0ac8079b62c31723a4fc867ec1206699f9e60b5fbb46265b33ee56",
+diff --git a/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py b/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py
+index 69cd6fc05a..d43ae82eaa 100644
+--- a/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py
++++ b/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py
+@@ -83,8 +83,10 @@ def main():
+  require(sys.flags.isolated and sys.flags.dont_write_bytecode,'use -I -B')
+  for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS'):require(os.environ.get(k)=='1','single thread '+k)
+  start=time.monotonic();signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError('audit timeout')));signal.alarm(AUDIT_TIMEOUT_SEC)
+- output=ROOT/'outputs/native_l6_nonlinear_star_vertex_2026_09_09.json';stage='pins'
++ output=ROOT/'outputs/native_l6_nonlinear_star_vertex_2026_09_09.json';stage='pins';diagnostics=Path(tempfile.mkdtemp(prefix='l6-replay-failure-'))
+  try:
++  candidate_diagnostics=Path(os.environ.get('REVIEW_CAPTURE_DIAGNOSTICS') or diagnostics).resolve()
++  require(not candidate_diagnostics.is_relative_to(ROOT),'diagnostics must be outside repository input ancestors');candidate_diagnostics.mkdir(parents=True,exist_ok=True);diagnostics=candidate_diagnostics
+   manifest=pins();geometry=load_canonical_geometry().check(INPUT)
+   imported={}
+   imported['envelope']=load_envelope()
+@@ -115,13 +117,13 @@ def main():
+     require(target.stat().st_size==row['bytes'] and sha(target)==row['sha256'],'decompressed hash')
+    def progress(s,**detail):
+     nonlocal stage
+-    stage=s;(output.with_suffix('.PARTIAL.json')).write_text(json.dumps(dict(stage=s,detail=detail,seconds=time.monotonic()-start),indent=2)+'\n')
++    stage=s;(diagnostics/'PROGRESS.json').write_text(json.dumps(dict(stage=s,detail=detail,seconds=time.monotonic()-start),indent=2)+'\n')
+    actual=imported['canonical_replay'].replay(folder,progress)
+   require(actual['Echi']==report['Echi'] and actual['particle_intervals']==report['particle_intervals'],'accepted exact payload')
+   rounded=claims(actual);require(pins()==manifest,'post source closure');peak=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+   if sys.platform!='darwin':peak*=1024
+   require(peak<384*1048576 and time.monotonic()-start<180,'resource cap')
+-  output.write_text(json.dumps(dict(status='PASS',scope='finite L6 supplied-model vacuum image',runtime_environment=execution_environment(),geometry=geometry,replay=actual,claims=rounded,input_hashes=manifest,seconds=time.monotonic()-start,peak_bytes=peak),indent=2)+'\n');print(output.read_text())
++  output.write_text(json.dumps(dict(status='PASS',scope='finite L6 supplied-model vacuum image',runtime_environment=execution_environment(),diagnostics_path=str(diagnostics),geometry=geometry,replay=actual,claims=rounded,input_hashes=manifest,seconds=time.monotonic()-start,peak_bytes=peak),indent=2)+'\n');print(output.read_text())
+   if not args.json:
+    print('TOTAL: PASS=8 FAIL=0')
+    print('per_element: actual saved-candidate replay is restricted to the declared finite L6 star support.')
+@@ -130,6 +132,6 @@ def main():
+    print('per_block: no half-slab simulation is executed; four fresh residuals certify the saved vectors.')
+    print('lattice_wide: the supplied finite L6 certificate is replayed; no all-volume interacting claim is tested.')
+  except BaseException as e:
+-  failure=output.with_suffix('.FAILED.json');failure.write_text(json.dumps(dict(status='FAIL',stage=stage,error=repr(e),seconds=time.monotonic()-start),indent=2)+'\n');raise
++  failure=diagnostics/'FAILED.json';failure.write_text(json.dumps(dict(status='FAIL',stage=stage,error=repr(e),seconds=time.monotonic()-start),indent=2)+'\n');raise
+  finally:signal.alarm(0)
+ if __name__=='__main__':main()

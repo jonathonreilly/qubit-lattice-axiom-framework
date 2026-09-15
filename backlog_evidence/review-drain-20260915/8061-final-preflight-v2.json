@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8059-PR8061",
+  "tree": "ef0e5d0d477c81946117518db7d7eaff1ca38b14",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md",
+      "claim_id": "native_l6_sixth_prefix_gap_certificate_note_2026-09-08",
+      "primary_runner": "scripts/native_l6_sixth_prefix_gap_certificate_2026_09_08.py",
+      "helpers": [
+        "scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py",
+        "scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py",
+        "scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py",
+        "scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8059-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+      "claim_id": "native_l6_nonlinear_star_vertex_note_2026-09-09",
+      "primary_runner": "scripts/native_l6_nonlinear_star_vertex_2026_09_09.py",
+      "helpers": [
+        "scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_review_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_review_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_review_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py",
+        "scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md",
+        "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8061-proof-sources/README.md",
+        "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md",
+        "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md",
+        "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md",
+        "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md",
+        "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md",
+      "canonical_note": "docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "CURRENT scientific proof fully read and checked under8061: projection/corollaries, exact adapted space, four-solve transport, phase convention or elementary-operation error envelope. Not autonomous; premises and interaction included in owner review.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8061.json",
+        "sha256": "04884b96adbf0f67a1fe80daa0847004595acf4effced6d589398e5f3ed3b4a0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md",
+      "canonical_note": "docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "CURRENT scientific proof fully read and checked under8061: projection/corollaries, exact adapted space, four-solve transport, phase convention or elementary-operation error envelope. Not autonomous; premises and interaction included in owner review.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8061.json",
+        "sha256": "04884b96adbf0f67a1fe80daa0847004595acf4effced6d589398e5f3ed3b4a0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md",
+      "canonical_note": "docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "CURRENT scientific proof fully read and checked under8061: projection/corollaries, exact adapted space, four-solve transport, phase convention or elementary-operation error envelope. Not autonomous; premises and interaction included in owner review.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8061.json",
+        "sha256": "04884b96adbf0f67a1fe80daa0847004595acf4effced6d589398e5f3ed3b4a0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md",
+      "canonical_note": "docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "CURRENT scientific proof fully read and checked under8061: projection/corollaries, exact adapted space, four-solve transport, phase convention or elementary-operation error envelope. Not autonomous; premises and interaction included in owner review.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8061.json",
+        "sha256": "04884b96adbf0f67a1fe80daa0847004595acf4effced6d589398e5f3ed3b4a0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md",
+      "canonical_note": "docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "CURRENT scientific proof fully read and checked under8061: projection/corollaries, exact adapted space, four-solve transport, phase convention or elementary-operation error envelope. Not autonomous; premises and interaction included in owner review.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8061.json",
+        "sha256": "04884b96adbf0f67a1fe80daa0847004595acf4effced6d589398e5f3ed3b4a0"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8758,
+      "misses": 4384
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4382
+    },
+    "declared_inputs": {
+      "hits": 8820,
+      "misses": 4515
+    }
+  },
+  "record_sha256": "c8aecf700a7f7296fa3a4128ebf0e5c6fc271345fbaacb43f5e6ab44c4d1ed05",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

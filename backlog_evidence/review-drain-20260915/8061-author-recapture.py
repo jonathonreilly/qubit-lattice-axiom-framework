@@ -1,0 +1,53 @@
+"""Author capture with externally sampled supervisor/worker RSS; no review verdict."""
+from pathlib import Path
+import sys,json,hashlib,subprocess,threading,time,os,signal
+w=Path('/private/tmp/review-drain-20260915/author-pool/author-backlog');b=Path('/private/tmp/review-drain-20260915');sys.path.insert(0,str(w/'scripts'));import runner_cache as c
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();f=json.loads((b/'8061-author-recapture-preexecution.json').read_text());prepath=Path(sys.argv[1]);pre=json.loads(prepath.read_text());assert pre['mechanical_status']=='ok' and pre['tree']==f['tree'] and not pre['cache_checked']
+def verify():
+ for p,h in (f['nonoutput_sources']|f['inputs']).items():assert sha(w/p)==h,p
+old_receipt=b/'8059-author-final-execution.json';records=[{'pr':8059,'receipt':str(old_receipt),'sha256':sha(old_receipt)}];caches=[c.cache_path_for('scripts/native_l6_sixth_prefix_gap_certificate_2026_09_08.py').relative_to(w).as_posix()]
+os.environ['REVIEW_CAPTURE_DIAGNOSTICS']=str(b/'8061-recapture-diagnostics')
+for pr,primary,count in [(8061,'scripts/native_l6_nonlinear_star_vertex_2026_09_09.py',8)]:
+ verify();receipt=b/f'{pr}-author-recapture-execution.json';assert not receipt.exists();stop=threading.Event();watch={'limit_bytes':384*1048576,'interval_sec':0.02,'root_pid':os.getpid(),'samples':0,'peak_tree_rss_bytes':0,'violations':[],'boundary':'Externally sampled sum of supervisor and descendants, including short-lived ps sampler; inner self guards also remain.'}
+ def monitor():
+  family={os.getpid()}
+  try:
+   while not stop.is_set():
+    raw=subprocess.check_output(['ps','-axo','pid=,ppid=,rss='],text=True,timeout=0.5);rows={int(v[0]):(int(v[1]),int(v[2])*1024) for line in raw.splitlines() if len(v:=line.split())==3};family={os.getpid()}
+    while True:
+     grown=family|{pid for pid,(ppid,rss) in rows.items() if ppid in family}
+     if grown==family:break
+     family=grown
+    rss=sum(rows.get(pid,(0,0))[1] for pid in family);watch['samples']+=1;watch['peak_tree_rss_bytes']=max(watch['peak_tree_rss_bytes'],rss)
+    if rss>watch['limit_bytes']:
+     watch['violations'].append({'rss_bytes':rss,'pids':sorted(family)})
+     for pid in family-{os.getpid()}:
+      try:os.kill(pid,signal.SIGKILL)
+      except ProcessLookupError:pass
+     return
+    stop.wait(0.02)
+  except BaseException as e:
+   watch['violations'].append({'monitor_error':repr(e)})
+   try:family.update(map(int,subprocess.check_output(['pgrep','-P',str(os.getpid())],text=True,timeout=0.5).split()))
+   except (subprocess.SubprocessError,ValueError,OSError):pass
+   for pid in family-{os.getpid()}:
+    try:os.kill(pid,signal.SIGKILL)
+    except ProcessLookupError:pass
+ thread=threading.Thread(target=monitor,daemon=True);thread.start()
+ r=None;cache=None;capture_error=None
+ try:r,cache=c.execute_and_write_cache(primary,180)
+ except BaseException as error:capture_error=repr(error)
+ finally:stop.set();thread.join()
+ if capture_error is not None:
+  failure={'status':'capture_error','error':capture_error,'whole_tree_watchdog':watch,'execution_result_unavailable':True,'capture_script':str(Path(__file__).resolve()),'capture_script_sha256':sha(Path(__file__))};receipt.write_text(json.dumps(failure,indent=2)+'\n');raise RuntimeError('capture failed; exact watchdog/error receipt preserved')
+ r['whole_tree_watchdog']=watch;r['capture_script']=str(Path(__file__).resolve());r['capture_script_sha256']=sha(Path(__file__));receipt.write_text(json.dumps(r,indent=2)+'\n');records.append({'pr':pr,'receipt':str(receipt),'sha256':sha(receipt)})
+ assert r['status']=='ok' and r['exit_code']==0 and f'TOTAL: PASS={count} FAIL=0' in r['stdout'] and not watch['violations'] and watch['samples']>0,r
+ verify();assert c.cache_status(primary)=='fresh';caches.append(cache.relative_to(w).as_posix());print(pr,count,r['elapsed_sec'],watch['peak_tree_rss_bytes'],flush=True)
+ # Preserve exact generated progress receipts outside the publication tree.
+ for suffix in ['.PARTIAL.json','.FAILED.json']:
+  p=w/'outputs'/Path(primary).with_suffix(suffix).name
+  if p.exists():
+   target=b/(str(pr)+'-actual'+suffix);assert not target.exists();target.write_bytes(p.read_bytes());assert sha(target)==sha(p);p.unlink()
+subprocess.run(['git','-C',str(w),'add','--',*f['outputs'],*caches],check=True)
+for args in [('diff','--check'),('diff','--cached','--check'),('diff','HEAD','--check')]:subprocess.run(['git','-C',str(w),*args],check=True)
+g=lambda *a:subprocess.check_output(['git','-C',str(w),*a],text=True).strip();paths=g('diff','--cached','--name-only').splitlines();result={'role':'author exact evidence binding; no source verdict','base':g('rev-parse','HEAD'),'tree':g('write-tree'),'source_paths':{p:sha(w/p) for p in paths},'inputs':f['inputs'],'executions':records,'preflight_path':str(prepath),'preflight_sha256':sha(prepath)};(b/'8061-author-recapture-final-freeze.json').write_text(json.dumps(result,indent=2)+'\n');print('FINAL',result['tree'],flush=True)

@@ -1,0 +1,61 @@
+{
+  "tree": "ef0e5d0d477c81946117518db7d7eaff1ca38b14",
+  "review": {
+    "path": "/private/tmp/review-drain-20260915/review-8061.json",
+    "sha256": "04884b96adbf0f67a1fe80daa0847004595acf4effced6d589398e5f3ed3b4a0"
+  },
+  "science": {
+    "path": "/private/tmp/review-drain-20260915/review-8061.md",
+    "sha256": "5869da45c258b32eef8d370f1652521327264fbc44a12b545e002c0e708433ac"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/8061-unit-final-v2.json",
+    "sha256": "c8aecf700a7f7296fa3a4128ebf0e5c6fc271345fbaacb43f5e6ab44c4d1ed05"
+  },
+  "payload_confirmation": {
+    "8059": {
+      "exact_original_math_fields_equal": [
+        "status",
+        "certificate_groups",
+        "geometry",
+        "minimum",
+        "common_floor",
+        "native_units",
+        "rows",
+        "scope"
+      ],
+      "actual_elapsed_sec": 47.991750955581665,
+      "sampled_whole_tree_peak_bytes": 122175488,
+      "watchdog_samples": 1233,
+      "total": 6489,
+      "runtime_environment": null,
+      "output_sha256": "2e5d07ced08435e664029b11c7b43bd38f5c5fb9ef86999a3d3d3c2b6c08bde6"
+    },
+    "8061": {
+      "exact_original_math_fields_equal": [
+        "status",
+        "scope",
+        "geometry",
+        "replay",
+        "claims"
+      ],
+      "actual_elapsed_sec": 10.511737823486328,
+      "sampled_whole_tree_peak_bytes": 359284736,
+      "watchdog_samples": 260,
+      "total": 8,
+      "runtime_environment": {
+        "python_executable": "/usr/local/bin/python3",
+        "python_version": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "python_sha256": "a7f5b535d61d1c7326824204ac80f045a97a652abb154421e2c74fcc365a3539",
+        "numpy_origin": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/__init__.py",
+        "numpy_version": "2.4.1",
+        "numpy_sha256": "2e8da3e4385e79c4885b3f7324a8b957e6f01732b239e99e266a12c62a008b8d",
+        "numpy_native_sha256": {
+          "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-darwin.so": "3634839edc3dd9d097c0883d23f6bdcc807c6c667ae307bac713ad54cb1412fb",
+          "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_umath_linalg.cpython-312-darwin.so": "86f2c3a5e1a516211e144ba13d90c18b9db903477fa66154ee5cdc4cc59c3067"
+        }
+      },
+      "output_sha256": "c9d3ed9c3a2c134c16c1481ccab6f8f97a6d18db5649daaef176d86e2bc4678c"
+    }
+  }
+}

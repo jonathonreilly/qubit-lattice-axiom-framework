@@ -1,0 +1,30 @@
+[
+  {
+    "pr": 8059,
+    "head": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+    "prefix": ".claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/",
+    "original_history_count": 686,
+    "keep_raw": [
+      "HANDOFF.md",
+      "REVIEW_HISTORY.md",
+      "history/BEFORE_ACCEPTED_PORT_METADATA/HANDOFF.md",
+      "history/BEFORE_ACCEPTED_PORT_METADATA/REVIEW_HISTORY.md",
+      "live_inputs/ADJACENT_CENSUS.json",
+      "live_inputs/ADJACENT_COMPLETE.json",
+      "live_inputs/NONADJACENT_CENSUS.json",
+      "live_inputs/NONADJACENT_ROWS.json",
+      "live_inputs/TARGETS.json"
+    ]
+  },
+  {
+    "pr": 8061,
+    "head": "da572021da3cd5469af0b5bae4f028faf4af3d98",
+    "prefix": ".claude/science/physics-loops/native-l6-nonlinear-star-vertex-20260909/",
+    "original_history_count": 76,
+    "keep_raw": [
+      "CANONICAL_EXECUTION/HANDOFF.md",
+      "HANDOFF.md",
+      "REVIEW_HISTORY.md"
+    ]
+  }
+]

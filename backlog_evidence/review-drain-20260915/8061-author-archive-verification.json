@@ -1,0 +1,17 @@
+{
+  "8059": {
+    "count": 686,
+    "manifest_sha256": "8dc1e401dbe1c18ee0ffa13305f4cfc3f1fae92535f2b961f951d50349a96e7f",
+    "exact": true
+  },
+  "8061": {
+    "count": 76,
+    "manifest_sha256": "2d44aece7aa7ca0e648bea2edb96bd399e2cc3fd180e1605e976bf4ed8af0a98",
+    "exact": true
+  },
+  "8061-proof": {
+    "count": 7,
+    "manifest_sha256": "2000b76ff78e5e68d4947b5542a92546b3a8d84e91d50a2ac5f06ecc9b3f7e25",
+    "exact": true
+  }
+}

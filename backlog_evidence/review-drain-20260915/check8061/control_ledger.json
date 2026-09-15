@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "all48_blocks_exact_adapted_submatrices": true,
+  "all15_transports_smallest_correct_site_map": true,
+  "both_six_predecessor_sets_exact": true,
+  "seconds": 0.004761334042996168,
+  "canonical_helpers_imported": false,
+  "inputs": {
+    "ADAPTED.json": "ab65c1d4e810f268ce1e666e345771bfaabb591e9d0cc9d9f32fb2f1e5eec20a",
+    "BLOCKS.json": "49e704cb4b1b86e8327373effa777ee2c8012500425bbab6b8db964ba50cf1ff",
+    "LEDGER.json": "502b1d86f5ba29c090984a7cc90d67161e4ebca074f48a01f8f11ce5e2d9e7f0",
+    "TRANSPORTS.json": "df83c47a387e7a4e63c950f858fc742b8d8e67d653466ee7c21e4759530cc0f2"
+  }
+}

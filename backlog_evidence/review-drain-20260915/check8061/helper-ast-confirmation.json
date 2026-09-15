@@ -1,0 +1,34 @@
+{
+  "native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "9bd8f3b0269aa4fc4dc9772ddb28456d4bb2fe6fc8fd0949db5990a93b537786"
+  },
+  "native_l6_sixth_prefix_gap_geometry_2026_09_08.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "922062f0d3261f69c0ed43d926c24351ce2019b972cad05411470785e6beeb33"
+  },
+  "native_l6_nonlinear_vertex_review_2026_09_09.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "0c484f5f68f0411ebbe22a27c37a58c3c037d34386951a43820f5154e0b8f82a"
+  },
+  "native_l6_nonlinear_vertex_fp_guard_2026_09_09.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "b630b84d9482e0ab6118b0245d54db5923d918370c16c85a594daba02530f148"
+  },
+  "native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "18ba3bcb055eab1b3115f3a4e953bac0a74c582e2c62615e50f1a84b07e5b080"
+  },
+  "native_l6_nonlinear_vertex_geometry_2026_09_09.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "fbc5e988fd0ac8079b62c31723a4fc867ec1206699f9e60b5fbb46265b33ee56"
+  },
+  "native_l6_nonlinear_vertex_transport_2026_09_09.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "17426f1ec82f8a5589832efeee850dea1fe50db47c6b9d5bbea25525b653bc28"
+  },
+  "native_l6_nonlinear_vertex_envelope_2026_09_09.py": {
+    "math_ast_identical_after_metadata_removal": true,
+    "final_sha256": "ea9712dfcb5d5239b43f7f45c7470018b589d1aa8202c81bd98e40b07f1ea929"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "pr": 8095,
+  "original_head": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+  "branch": "physics-loop/native-canonical-metric-20260913",
+  "landing": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T17:08:11Z",
+    "headRefName": "physics-loop/native-canonical-metric-20260913",
+    "headRefOid": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8095,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8095"
+  }
+}

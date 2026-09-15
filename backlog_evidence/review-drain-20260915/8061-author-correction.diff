@@ -1,0 +1,349 @@
+--- original/docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md
++++ author/docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md
+@@ -26,13 +26,13 @@
+ audit_required_before_effective_retained: true
+ ```
+ 
+-The prerequisites are the [whole-carrier dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), [U0 endpoint](NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md), [exact L6 prefix denominator certificate](NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md), and [third-order star theorem, pinned upstream snapshot](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/third_order_parent.md). The last snapshot preserves the actual8058 source because this branch is stacked on8059, whose tree does not contain that note. No parent claim is silently replaced.
++The prerequisites are the [whole-carrier dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), [U0 endpoint](NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md), [exact L6 prefix denominator certificate](NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md), and [third-order star theorem, current reviewed source](NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md). The original branch used a pinned8058 snapshot; its mathematical body agrees with the linked current reviewed parent. The snapshot remains exactly recoverable as historical provenance, and the current parent is explicitly source-pinned.
+ 
+ ## Statement and normalization
+ 
+ Fix the supplied uniform native Hamiltonian at U=0 on the periodic6³ torus, canonical pi-flux signs, Kij=-2t xiij, and the physical active parity. Let Ω be the normalized canonical active vacuum. Write χ=O0(E0)Ω for the third-order singleton-star active vertex, stripping the three powers of the electric coupling. Set |t|=1. The six incident insertions each contribute1/2; the resulting normalization is1/8. It is not the special L4 vacuum-linearity coefficient.
+ 
+-Let a1,…,a108 be the full canonical complex annihilation modes. Then the accepted certificate gives the strict bounds
++Let a1,…,a108 be the full canonical complex annihilation modes. Then the saved-candidate certificate gives the strict bounds
+ 
+     0.001921920169 < inf_L ||(O0(E0)-L)Ω||² < 0.001921920178,
+     0.04383 < inf_L ||(O0(E0)-L)Ω|| < 0.04384,
+@@ -89,8 +89,33 @@
+ 
+ The [accepted result](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json), [independent replay](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json) and [whole-run acceptance](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json) preserve the exact rational values and source bindings. The accepted attempt charged35.85 seconds including14 prior seconds and reached338542592 bytes whole-tree peak. The earlier CG memory failure remains a closed failed attempt; this direct architecture is separately preregistered evidence, not a silent retry.
+ 
+-The [vector manifest](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json) binds compressed and uncompressed bytes for all seven NPY/raw pairs. The primary replays these candidates without solving or applying a new physical approximation. It verifies source bytes, exact geometry and coefficient inputs, raw phase bridges, fresh residuals, source reconstructions, final weights and rounded inequalities. The proposed isolated replay has180 seconds and384MiB; a root process watchdog must enforce whole-tree resources. An unexecuted canonical runner is not described as a completed canonical run.
++The [vector manifest](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json) binds compressed and uncompressed bytes for all seven NPY/raw pairs. The primary replays these candidates without solving or applying a new physical approximation. It verifies source bytes, exact geometry and coefficient inputs, raw phase bridges, fresh residuals, source reconstructions, final weights and rounded inequalities. The canonical isolated replay has180 seconds and384MiB; an external process watchdog enforces the whole supervisor/worker tree. The final capture receipt records actual execution; earlier accepted receipts remain historical evidence.
+ 
+ ## Complete imported proof records
+ 
+-The following source proofs are included byte-for-byte and remain distinguishable from this note: [projection theorem](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/projection.md), [independent projection review](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/projection_cold.md), [adapted-frame construction](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/adapted_frame.md), [four-solve identity](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/four_solve.md), [real sign convention](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/real_sign.md), and [full arithmetic envelope](../outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/proofs/real_error.md). Historical words such as “candidate” or “unlaunched” in these preserved sources describe their original stage. They do not replace the current accepted-evidence status above. The port author participated in the original candidate and packaging implementation; the independent replay and cold reviews retain their separate authorship.
++The following source proofs are included byte-for-byte and remain distinguishable from this note: [projection theorem](work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md), [independent projection review](work_history/repo/review_feedback/pr8061-proof-sources/README.md), [adapted-frame construction](work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md), [four-solve identity](work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md), [real sign convention](work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md), and [full arithmetic envelope](work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md). Historical words such as “candidate” or “unlaunched” in these preserved sources describe their original stage. They do not constitute current review authority or replace the full current replay and independent source review. The port author participated in the original candidate and packaging implementation; the independent replay and cold reviews retain their separate authorship.
++
++
++## Current execution and historical provenance
++
++The canonical default runner performs the full saved-vector replay under isolated Python, disabled bytecode and single-thread numerical libraries. It does not solve for new vectors. The accepted status fields and old receipts are historical integrity checks, not a current review verdict. The original8058 snapshot and projection cold review remain exactly recoverable in the [proof-source mapping](work_history/repo/review_feedback/pr8061-proof-sources/README.md); the linked current8058 theorem is the actual parent. The five linked mathematical proof fragments remain current scientific inputs, byte-identical to the originals.
++
++[Canonical cache](../logs/native_l6_nonlinear_star_vertex_2026_09_09.txt).
++
++## No-Go Discipline Gate
++
++**N1 — Counterroutes.** ATTEMPTED — the full108-mode linear vacuum-action space is compared with the reduced21-mode computation using the explicit projection proof. ATTEMPTED — all odd particle buckets are retained rather than inferring linearity from a few low sectors. ATTEMPTED — source error is propagated once with the declared1/8 factor and global phase convention. ATTEMPTED — the87 complementary modes are shown not to lower the distance. ATTEMPTED — nonlinear dressings, omitted mixed channels and full sixth-order cancellations are outside the claimed obstruction. These are analytical/source controls and preserved historical attempts, not five new numerical campaigns.
++
++**N2 — One obstruction.** The certified positive distance is one finite vacuum-image obstruction to a linear Majorana representation in the stated reference. The individual positive particle buckets are not independent universal walls.
++
++**N3 — Premises.** The supplied finite canonical L6 Hamiltonian, physical parity, fixed-parity prefix gap and explicit floating-operation assumptions remain premises. The full-carrier projection and error-envelope mathematics are stated imports; no physical parameter is selected.
++
++**N4 — Scope of support.** The prefix denominator theorem supports the four residual certificates. It does not by itself establish a nonlinear vertex or the full effective Hamiltonian.
++
++**N5 — Actual coverage.** TOTAL8 counts terminal claims assertions. The subordinate replay includes7 full vectors,4 fresh residuals,27 transports and9 exact norm scans; those counts are not added to8. Full108-carrier projection is analytical, not an executed108-mode Fock-space enumeration. Larger volumes are unexecuted.
++
++**N6 — Escapes.** Nonlinear state/readout dressing, a different reference or interactions, and full mixed-channel cancellation lie beyond this fixed-reference linear-image exclusion. No universal no-go or new-axiom necessity follows.
++
++**N7 — Strongest remaining route.** The other mixed third-order histories and their contribution to the full sixth-order operator remain separate obligations. The singleton-star certificate does not preclude those routes.
++
++**N8 — Historical resolution.** The finite L4 vacuum-linearity result does not imply L6 linearity. The explicit L6 projection and replay address that narrower uncertainty while preserving the original failed candidate-generation attempts as history.
+--- original/docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md
++++ author/docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md
+@@ -11,7 +11,7 @@
+ 
+ # Exact L6 proper-prefix gaps for six declared spectator supports
+ 
+-**Type:** bounded_theorem  
++**Type:** bounded_theorem
+ **Status:** conditional-support
+ 
+ ```yaml
+@@ -82,3 +82,26 @@
+ The arithmetic helper implements the symmetric inverse formula above for both rank-two and rank-three updates. It constructs and verifies the baseline inverse once, checks each small inverse residual, and uses exact integer square-root enclosures. The geometry helper separately reconstructs literal edge incidences and prefix membership. An offending computed row is retained before equality or floor checks; an exception during computation identifies its current case. Complete row outputs, source hashes and execution receipts belong to the companion packet, whose execution records describe each invocation without changing this theorem's premises.
+ 
+ The packet preserves the original proofs, independent cold reviews, source freezes, the failed rank-two proposal, the adjacent source shards, and the nonadjacent production and independent replay receipts. Historical calculations remain attributed to their original sources. The declared live closure contains the mathematical premises, three portable scripts and five exact input ledgers; it does not relabel archived output as freshly computed evidence. Resource forecasts, watchdog contracts, timing records and isolated-copy receipts are execution metadata in that packet, rather than additional mathematical assumptions.
++
++
++## Current execution and historical provenance
++
++The canonical replay writes all6489 rational rows to the tracked output and reports a concise stdout certificate. Historical candidate-generation and mutation campaigns are preserved as original evidence, not new executions. The exact five live ledgers remain raw runtime inputs. [Historical packet](work_history/repo/review_feedback/pr8059-evidence/README.md). [Canonical cache](../logs/native_l6_sixth_prefix_gap_certificate_2026_09_08.txt).
++
++## No-Go Discipline Gate
++
++**N1 — Counterroutes.** ATTEMPTED — distinguish an unrestricted singleton zero mode from the fixed physical-parity denominator. ATTEMPTED — the failed rank-two external-bridge treatment is replaced by the required rank-three support. ATTEMPTED — retain the full108-mode vacuum offset and native hopping factor. ATTEMPTED — frozen TARGETS are compared with recomputed exact rational gaps, not treated as substitute calculations. ATTEMPTED — enumerate the six declared supports without claiming all flux sectors. These are analytical/source controls and preserved historical attempts, not five newly launched campaigns.
++
++**N2 — Common mechanism.** The result is a common fixed-parity lower bound for declared proper masks. Individual masks are not independent universal obstructions.
++
++**N3 — Premises.** The supplied finite canonical L6 model, active physical parity, exact gauge dictionary and native normalization are explicit. Rational matrix identities are mathematical inputs; no coupling or physical law is selected.
++
++**N4 — Limits.** A denominator certificate does not determine sixth-order coefficients, a general flux gap or a bulk interacting phase.
++
++**N5 — Actual coverage.** TOTAL6489 counts exact proper-mask row certificates. Geometry, inverse identities, coverage and resource subchecks are separate and uncounted in that total. The full finite matrices are analytically represented; no larger-volume or all-flux sweep is executed.
++
++**N6 — Escapes.** Different supports, parity sectors or volumes require separate arguments. The finite certificate is not a universal impossibility theorem.
++
++**N7 — Strongest remaining route.** Assemble the relevant mixed-channel numerators and their cancellations before drawing conclusions about an effective operator. Positive denominators alone do not settle them.
++
++**N8 — Historical resolution.** The external-bridge correction and exact full-trace replay retire the earlier restricted-rank attempt within the six-support domain; they do not broaden that domain.
+--- original/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_star_vertex_2026_09_09.py
+@@ -1,4 +1,4 @@
+-"""Portable saved-candidate certificate. --verify performs the full replay; never a solve."""
++"""Canonical full saved-candidate replay; no solves. Explicit readiness mode is historical only."""
+ import argparse,gzip,hashlib,importlib.util,json,os,resource,signal,sys,tempfile,time
+ from fractions import Fraction as F
+ from pathlib import Path
+@@ -6,6 +6,7 @@
+ INPUT=ROOT/'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs'
+ PREFIX='native_l6_nonlinear_vertex_'
+ AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md', 'docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/_objects/bbddcf8229a92a19408caa0a829ef716c44767985f8402af334c95c155b230f8.gz', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/_objects/c4300e00d5515452727a9697575ef4af531bf220d58c67f3a869f98281fc2a22.gz', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/SOURCE_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz', 'scripts/native_l6_nonlinear_star_vertex_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_review_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py')
+ 
+ def require(x,s):
+  if not x:raise ValueError(s)
+@@ -19,11 +20,42 @@
+  for p,h in m.items():require(sha(ROOT/p)==h,'source '+p)
+  return m
+ 
+-def load(alias,name):
+- p=ROOT/'scripts'/(PREFIX+name+'_2026_09_09.py');data=p.read_bytes()
++def load_canonical_geometry():
++ p=ROOT/'scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py';data=p.read_bytes()
+  require(hashlib.sha256(data).hexdigest()==json.loads((INPUT/'SOURCE_MANIFEST.json').read_text())[str(p.relative_to(ROOT))],'verified source bytes')
+- spec=importlib.util.spec_from_file_location(alias,p);m=importlib.util.module_from_spec(spec);sys.modules[alias]=m;exec(compile(data,str(p),'exec'),m.__dict__);m.P=INPUT
++ spec=importlib.util.spec_from_file_location('canonical_geometry',ROOT/'scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py');m=importlib.util.module_from_spec(spec);sys.modules['canonical_geometry']=m;spec.loader.exec_module(m);m.P=INPUT
+  return m
++
++def load_envelope():
++ p=ROOT/'scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py';data=p.read_bytes()
++ require(hashlib.sha256(data).hexdigest()==json.loads((INPUT/'SOURCE_MANIFEST.json').read_text())[str(p.relative_to(ROOT))],'verified source bytes')
++ spec=importlib.util.spec_from_file_location('envelope',ROOT/'scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py');m=importlib.util.module_from_spec(spec);sys.modules['envelope']=m;spec.loader.exec_module(m);m.P=INPUT
++ return m
++
++def load_transport():
++ p=ROOT/'scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py';data=p.read_bytes()
++ require(hashlib.sha256(data).hexdigest()==json.loads((INPUT/'SOURCE_MANIFEST.json').read_text())[str(p.relative_to(ROOT))],'verified source bytes')
++ spec=importlib.util.spec_from_file_location('transport',ROOT/'scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py');m=importlib.util.module_from_spec(spec);sys.modules['transport']=m;spec.loader.exec_module(m);m.P=INPUT
++ return m
++
++def load_fp_guard():
++ p=ROOT/'scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py';data=p.read_bytes()
++ require(hashlib.sha256(data).hexdigest()==json.loads((INPUT/'SOURCE_MANIFEST.json').read_text())[str(p.relative_to(ROOT))],'verified source bytes')
++ spec=importlib.util.spec_from_file_location('fp_guard',ROOT/'scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py');m=importlib.util.module_from_spec(spec);sys.modules['fp_guard']=m;spec.loader.exec_module(m);m.P=INPUT
++ return m
++
++def load_validate_coefficients():
++ p=ROOT/'scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py';data=p.read_bytes()
++ require(hashlib.sha256(data).hexdigest()==json.loads((INPUT/'SOURCE_MANIFEST.json').read_text())[str(p.relative_to(ROOT))],'verified source bytes')
++ spec=importlib.util.spec_from_file_location('validate_coefficients',ROOT/'scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py');m=importlib.util.module_from_spec(spec);sys.modules['validate_coefficients']=m;spec.loader.exec_module(m);m.P=INPUT
++ return m
++
++def load_canonical_replay():
++ p=ROOT/'scripts/native_l6_nonlinear_vertex_review_2026_09_09.py';data=p.read_bytes()
++ require(hashlib.sha256(data).hexdigest()==json.loads((INPUT/'SOURCE_MANIFEST.json').read_text())[str(p.relative_to(ROOT))],'verified source bytes')
++ spec=importlib.util.spec_from_file_location('canonical_replay',ROOT/'scripts/native_l6_nonlinear_vertex_review_2026_09_09.py');m=importlib.util.module_from_spec(spec);sys.modules['canonical_replay']=m;spec.loader.exec_module(m);m.P=INPUT
++ return m
++
+ 
+ def claims(result, factor=F(1)):
+  require(result.get('status')=='PASS' and result.get('scientific_pass') is True,'certificate passed')
+@@ -36,15 +68,22 @@
+  return {'squared_distance_strict_decimal':['0.001921920169','0.001921920178'],'distance_strict_decimal':['0.04383','0.04384'],'full_linear_modes':108,'positive_particle_sectors':[3,5,7]}
+ 
+ def main():
+- ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.add_argument('--verify',action='store_true');args=ap.parse_args()
++ ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.add_argument('--verify',action='store_true');ap.add_argument('--readiness-only',action='store_true');args=ap.parse_args()
++ require(not (args.verify and args.readiness_only),'incompatible verify/readiness flags')
++ if not (sys.flags.isolated and sys.flags.dont_write_bytecode) or any(os.environ.get(k)!='1' for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS')):
++  env=dict(os.environ);env.update({k:'1' for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS')});os.execve(sys.executable,[sys.executable,'-I','-B',str(Path(__file__).resolve()),*sys.argv[1:]],env)
+  require(sys.flags.isolated and sys.flags.dont_write_bytecode,'use -I -B')
+  for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS'):require(os.environ.get(k)=='1','single thread '+k)
+  start=time.monotonic();signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError('audit timeout')));signal.alarm(AUDIT_TIMEOUT_SEC)
+  output=ROOT/'outputs/native_l6_nonlinear_star_vertex_2026_09_09.json';stage='pins'
+  try:
+-  manifest=pins();geometry=load('canonical_geometry','geometry').check(INPUT)
++  manifest=pins();geometry=load_canonical_geometry().check(INPUT)
+   imported={}
+-  for alias,name in [('envelope','envelope'),('transport','transport'),('fp_guard','fp_guard'),('validate_coefficients','validate_coefficients'),('canonical_replay','review')]:imported[alias]=load(alias,name)
++  imported['envelope']=load_envelope()
++  imported['transport']=load_transport()
++  imported['fp_guard']=load_fp_guard()
++  imported['validate_coefficients']=load_validate_coefficients()
++  imported['canonical_replay']=load_canonical_replay()
+   accepted=json.loads((INPUT/'accepted/INDEPENDENT_REVIEW.json').read_text())
+   report=accepted
+   receipt=json.loads((INPUT/'accepted/ROOT_ACCEPTANCE.json').read_text())
+@@ -52,9 +91,8 @@
+   for key,name in [('production_result_sha256','RESULT.json'),('independent_replay_sha256','INDEPENDENT_REVIEW.json'),('worker_complete_sha256','WORKER_COMPLETE.json')]:require(receipt[key]==sha(INPUT/'accepted'/name),'accepted binding '+key)
+   require(receipt['Echi']==report['Echi'] and receipt['particle_intervals']==report['particle_intervals'],'accepted certificate binding')
+   rounded=claims(report)
+-  if not args.verify:
++  if args.readiness_only:
+    print(json.dumps({'status':'READINESS_ONLY','geometry':geometry,'rounded_accepted_evidence':rounded,'physical_replay_executed':False}));return
+-  require(not output.exists(),'fresh canonical output')
+   with tempfile.TemporaryDirectory(prefix='l6-certificate-') as temp:
+    folder=Path(temp)
+    for p in (INPUT/'accepted').glob('*'):
+@@ -76,6 +114,13 @@
+   if sys.platform!='darwin':peak*=1024
+   require(peak<384*1048576 and time.monotonic()-start<180,'resource cap')
+   output.write_text(json.dumps(dict(status='PASS',scope='finite L6 supplied-model vacuum image',geometry=geometry,replay=actual,claims=rounded,input_hashes=manifest,seconds=time.monotonic()-start,peak_bytes=peak),indent=2)+'\n');print(output.read_text())
++  if not args.json:
++   print('TOTAL: PASS=8 FAIL=0')
++   print('per_cone: actual saved-candidate replay is restricted to the declared finite L6 star support.')
++   print('per_mode: the complete108-mode linear vacuum-action comparison is certified by the stated projection proof.')
++   print('per_boundary_sample: seven saved full vectors are replayed; no new candidate sampling or solve is performed.')
++   print('half_slab: no half-slab simulation is executed; four fresh residuals certify the saved vectors.')
++   print('lattice_wide: the supplied finite L6 certificate is replayed; no all-volume interacting claim is tested.')
+  except BaseException as e:
+   failure=output.with_suffix('.FAILED.json');failure.write_text(json.dumps(dict(status='FAIL',stage=stage,error=repr(e),seconds=time.monotonic()-start),indent=2)+'\n');raise
+  finally:signal.alarm(0)
+--- original/scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz')
+ """Exact rational a-priori envelopes; no array operations or physical calls."""
+ from fractions import Fraction as F
+ from math import isqrt
+--- original/scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz')
+ """Same-process candidate certificate prerequisite; never changes FP environment."""
+ import ctypes,sys,platform,struct,hashlib
+ 
+--- original/scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz')
+ """Exact L6 frame reconstruction; no Fock arrays or numerical spectrum."""
+ from itertools import product
+ from fractions import Fraction as F
+--- original/scripts/native_l6_nonlinear_vertex_review_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_vertex_review_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz')
+ """Unlaunched full evidence replay. No CG or candidate generation."""
+ import json, hashlib, math, struct
+ from pathlib import Path
+@@ -105,7 +107,7 @@
+ 
+ def replay(folder, progress=lambda stage, **detail:None):
+  folder=Path(folder);fp_guard.check();result=json.loads((folder/'RESULT.json').read_text());c=json.loads((P/'COEFFICIENTS.json').read_text());l=json.loads((P/'LEDGER.json').read_text());validate(c,json.loads((P/'ADAPTED.json').read_text()),hashlib.sha256((P/'ADAPTED.json').read_bytes()).hexdigest())
+- 
++
+  if result.get('algorithm')!='direct_gaussian_once' or set(result.get('candidate_diagnostics',{}))!={'firstP','firstO','secondP','secondO'}:raise ValueError('direct algorithm')
+  for name,d in result['candidate_diagnostics'].items():
+   diagnostics(d);saved=json.loads((folder/(name+'_candidate.json')).read_text())
+--- original/scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz')
+ """Candidate exterior transport; physical-length action is not executed by controls."""
+ from pathlib import Path
+ from fractions import Fraction as F
+--- original/scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py
++++ author/scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_NONLINEAR_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-adapted_frame-4eb81c02792f3306.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-four_solve-eff578cafd7f48f7.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-projection-e801411de605cecc.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_error-57d49d5cf78c0e3e.md', 'docs/work_history/repo/review_feedback/pr8061-proof-sources/kept/pr8061-proof-real_sign-c2692f5746303191.md', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/ADAPTED.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/BLOCKS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/COEFFICIENTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/LEDGER.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/TRANSPORTS.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/VECTOR_MANIFEST.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/INDEPENDENT_REVIEW.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/RESULT.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/ROOT_ACCEPTANCE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/WORKER_COMPLETE.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/firstP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondO_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/accepted/secondP_candidate.json', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/chi_real.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/firstP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/secondP.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceO.npy.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.bin.gz', 'outputs/native_l6_nonlinear_star_vertex_2026_09_09_inputs/vectors/sourceP.npy.gz')
+ from fractions import Fraction as F
+ from math import isqrt,isfinite
+ import hashlib,json
+--- original/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py
++++ author/scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_CENSUS-678691e77473f39d.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_COMPLETE-1cbe308dc1f7dcc7.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_CENSUS-e1706553032432f1.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_ROWS-3586b7f01bc15347.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-TARGETS-ff56893c03dca52b.json')
+ """Ported independent rank-four/rank-six inverse-trace replay; no author core import."""
+ from pathlib import Path
+ from fractions import Fraction as F
+@@ -52,4 +54,3 @@
+  # C^-1=[[0,I],[I,-G*G]], avoiding author's I+C*G inverse formula.
+  Ci=[[F(0) if i<rank and j<rank else F(int(i==j+rank or j==i+rank)) if (i<rank)!=(j<rank) else -F(GG[i-rank][j-rank]) for j in range(size)] for i in range(size)]
+  S=[[Ci[i][j]+UtRU[i][j] for j in range(size)] for i in range(size)];Si=inv(S);ck(mat(S,Si)==[[F(i==j) for j in range(size)] for i in range(size)],'small inverse');correction=mat(Si,UtR2U);trace=sum(R[i][i] for i in range(108))-sum(correction[i][i] for i in range(size));upper=F(1323,10)+F(5,2)*(108-F(25,4)*trace);canonical=72+40*F(isqrt(3*10**60),10**30)+48*F(isqrt(6*10**60),10**30);return canonical-upper,max(x.denominator.bit_length() for row in mat(Si,Ci) for x in row)
+-
+--- original/scripts/native_l6_sixth_prefix_gap_certificate_2026_09_08.py
++++ author/scripts/native_l6_sixth_prefix_gap_certificate_2026_09_08.py
+@@ -7,40 +7,49 @@
+  'docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md',
+  'scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py',
+  'scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py',
+- '.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/live_inputs/ADJACENT_CENSUS.json',
+- '.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/live_inputs/NONADJACENT_CENSUS.json',
+- '.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/live_inputs/ADJACENT_COMPLETE.json',
+- '.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/live_inputs/NONADJACENT_ROWS.json',
+- '.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/live_inputs/TARGETS.json',
++ 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_CENSUS-678691e77473f39d.json',
++ 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_CENSUS-e1706553032432f1.json',
++ 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_COMPLETE-1cbe308dc1f7dcc7.json',
++ 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_ROWS-3586b7f01bc15347.json',
++ 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-TARGETS-ff56893c03dca52b.json',
+ )
+ def main():
+- import argparse,json,hashlib,runpy,signal,time,resource
++ import argparse,json,hashlib,importlib.util,signal,time,resource,sys
+  from pathlib import Path
+  from fractions import Fraction as F
+  from math import isqrt
+- ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.parse_args()
++ ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');args=ap.parse_args()
+  signal.alarm(175);start=time.monotonic();root=Path(__file__).resolve().parents[1];rows=[];current_case=None
+  def guard():
+-  if time.monotonic()-start>=175 or resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>384*1048576:raise RuntimeError('175s384MiB supplemental guard')
++  if time.monotonic()-start>=175 or resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)>384*1048576:raise RuntimeError('175s384MiB supplemental guard')
+  def read(i):return json.loads((root/AUDIT_INPUT_PATHS[i]).read_text())
+  try:
+   hashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
+-  core=runpy.run_path(str(root/AUDIT_INPUT_PATHS[4]));geom=runpy.run_path(str(root/AUDIT_INPUT_PATHS[5]))
++  spec=importlib.util.spec_from_file_location('gap_arithmetic',root/'scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py');core=importlib.util.module_from_spec(spec);spec.loader.exec_module(core)
++  spec=importlib.util.spec_from_file_location('gap_geometry',root/'scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py');geom=importlib.util.module_from_spec(spec);spec.loader.exec_module(geom)
+   adj,non,old_adj,old_non,target=[read(i) for i in range(6,11)];cases=target['cases']
+   if [int(c['mask']) for c in cases]!=sorted(int(c['mask']) for c in cases):raise ValueError('numeric target order')
+-  geometry=geom['check'](adj,non,cases,old_adj,old_non);guard()
+-  B,R,bi,wi=core['baseline'](adj);guard()
++  geometry=geom.check(adj,non,cases,old_adj,old_non);guard()
++  B,R,bi,wi=core.baseline(adj);guard()
+   for case in cases:
+    current_case=case
+    if case['singleton'] is not None:gap=F(2*isqrt(3*10**60),10**30);bits=None;method='fixed initial parity singleton'
+-   else:gap,bits=core['gap'](int(case['mask']),case['center'],adj,B,R,bi,wi);method='exact full-trace Newton/Woodbury'
++   else:gap,bits=core.gap(int(case['mask']),case['center'],adj,B,R,bi,wi);method='exact full-trace Newton/Woodbury'
+    equality=gap==F(case['gap_lower']);floor=gap>F(1,3)
+    rows.append(dict(mask=case['mask'],center=case['center'],singleton=case['singleton'],gap_lower=str(gap),denominator_bits=bits,equality=equality,above_common_floor=floor,method=method))
+    if not equality or not floor:raise ValueError('actual rational source equality/common floor')
+    guard()
+   if len(rows)!=6489:raise ValueError('full coverage')
+-  payload=dict(status='PASS',certificate_groups=6489,geometry=geometry,minimum=str(min(F(r['gap_lower']) for r in rows)),common_floor='1/3',native_units='|t|=1; scale gap by |t|, h=2|t|',rows=rows,input_sha256=hashes,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),seconds=time.monotonic()-start,rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,scope='six declared supports only; no coefficient, all-flux or bulk claim')
+-  print(json.dumps(payload,indent=2))
++  payload=dict(status='PASS',certificate_groups=6489,geometry=geometry,minimum=str(min(F(r['gap_lower']) for r in rows)),common_floor='1/3',native_units='|t|=1; scale gap by |t|, h=2|t|',rows=rows,input_sha256=hashes,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),seconds=time.monotonic()-start,rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024),scope='six declared supports only; no coefficient, all-flux or bulk claim')
++  (root/'outputs/native_l6_sixth_prefix_gap_certificate_2026_09_08.json').write_text(json.dumps(payload,indent=2)+'\n')
++  print(json.dumps({k:v for k,v in payload.items() if k!='rows'},indent=2))
++  if not args.json:
++   print('TOTAL: PASS=6489 FAIL=0')
++   print('per_cone: exact prefix geometry covers only the six declared finite L6 supports.')
++   print('per_mode: every declared proper mask has its fixed-parity rational denominator bound checked.')
++   print('per_boundary_sample: saved finite-support coverage is checked; no boundary ensemble is sampled.')
++   print('half_slab: no half-slab field or stochastic slab evolution is executed by this certificate.')
++   print('lattice_wide: all6489 declared proper masks replay; no all-flux or all-volume enumeration.')
+  except BaseException as e:
+   print(json.dumps(dict(status='FAILED',error=repr(e),current_case=current_case,completed_or_failed_rows=rows,seconds=time.monotonic()-start)),flush=True);raise
+ if __name__=='__main__':main()
+--- original/scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py
++++ author/scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_L6_SIXTH_PREFIX_GAP_CERTIFICATE_NOTE_2026-09-08.md', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_CENSUS-678691e77473f39d.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-ADJACENT_COMPLETE-1cbe308dc1f7dcc7.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_CENSUS-e1706553032432f1.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-NONADJACENT_ROWS-3586b7f01bc15347.json', 'docs/work_history/repo/review_feedback/pr8059-evidence/kept/pr8059-TARGETS-ff56893c03dca52b.json')
+ """Exact reconstruction of declared insertion families; no spectral arithmetic."""
+ from itertools import product,combinations
+ from functools import lru_cache

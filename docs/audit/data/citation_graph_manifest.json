@@ -1,6 +1,6 @@
 {
- "edge_count": 12973,
- "node_count": 5425,
+ "edge_count": 12982,
+ "node_count": 5434,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4977,6 +4977,10 @@
   "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "718efe9ea279",
+   "out_degree": 1
   },
   "finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
@@ -21033,6 +21037,38 @@
   "work_history.repo.review_feedback.pr8135-clock-endpoint-evidence.readme": {
    "deps_hash": "15f2e795b5d0",
    "out_degree": 7
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-cluster_cap_evaluation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-novelty_and_search": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.pr8136-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8136-clock-smoothing-evidence.readme": {
+   "deps_hash": "2439f6d0ebe5",
+   "out_degree": 8
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

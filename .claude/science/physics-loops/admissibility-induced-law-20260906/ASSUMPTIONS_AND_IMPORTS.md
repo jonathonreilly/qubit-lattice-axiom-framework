@@ -48,3 +48,10 @@
 - Cross-section boundary: open (no exterior records); a fixed exterior record would enter as a recorded neighbor of the boundary sites, changing `c` to the sensitivities of larger recorded sets (bounded by `c_3`'s analogue with up to four neighbors); not treated.
 - Menu: the sensitivities `c_k` are menu-specific; the theorems (A)–(E) hold for any finite menu with a positive symmetric covariant `φ` with the same proofs; only the exact numbers are six-menu.
 - Order class: a non-monotone order (snake, random priority) has different recorded sets; the coupling theorem's mechanism (discrepancy along recorded-neighbor paths) applies to any order with the branching number replaced by the maximal out-degree of the recorded-set graph; not executed here.
+
+## Block 09 (2026-09-15) — Markov graph, corner laws, the sweep's imprint
+- Dependencies: `minimal_axioms`; block 08 (stacked; the Z^3 law, its product form, region and decay); block 02 (the static specification); the plane-law note (on main since 2026-09-15; the 2D contrast). All proposed, unaudited.
+- Named premises: as blocks 01–05, 08; the corner κ of the monotone class made explicit; block 08's region c < 1/3; the nonzero third difference of log K_3 as the hypothesis of R1's dependence, R2 and R3(b) (executed at (3,1,2), (5,2,4)).
+- Scaffolding: the dependency offsets κ_i e_i − κ_j e_j; the 24 proper rotations as signed permutations of determinant +1; the reversed transfer P*(v,w) = π(w)P(w,v)/π(v).
+- External references (re-proved or cited definition-level): DLR equations for finite-range specifications; uniqueness of conditional probabilities; the ergodic decomposition (used only in R3(c)'s last sentence).
+- Counterfactual pass: a triple with vanishing third difference would silence R1's dependence and hence R2–R3 (not known to exist among nonconstant triples); outside the region the Z^3 object is not constructed; on a larger cross-section the irreversibility is expected but not computed; the random-priority law (covariant by construction) has no corner and no sweep imprint — its Markov graph is not analyzed here.

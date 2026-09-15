@@ -100,3 +100,12 @@ Commands and hits:
 Classification: **open after the matched-hit review.**
 
 Routes (mathematical approach families; see `APPROACH_REGISTRY.md`): R1 projective consistency in 3D (closed by the exact `2×2` witness; the no-cancellation lemma explains the failure of the 2D telescoping); R2 the plane-transfer Markov chain (finite cross-sections by positivity; the column law); R3 the causal coupling (monotone paths, three predecessors; the region `3c < 1`; uniform-in-W; the full-plane and half-space law); R4 the Gibbs form with the three-body normalizer (algebraic; irreducibility by a third difference); R5 down-set consistency (any dimension) for the quadrant column. Executed on the supervisor's controls before the contract (`specs/supervisor_control_block08_z3.py`, `_b.py`).
+
+## Block 09 (2026-09-15) — prior-art search and routes
+
+Searched commit: `origin/main` = `7495de3076` (fetched 2026-09-15 before the block; the plane-law note landed on main that day).
+- `git grep -n -iE "canonical potential|Möbius|Hammersley|Brook ratio|vacuum potential" origin/main -- 'docs/*.md'` → block 01 (Brook lemma re-proved; Hammersley–Clifford referenced only), an Opus Born-evidence note (Hammersley–Clifford scope remarks), unrelated Möbius uses. No Markov-graph statement for a formation law.
+- `git grep -n -iE "face.diagonal|next-nearest|second.neighbou?r" origin/main -- 'docs/ADMISSIBILITY_RULE_*.md'` → none.
+- `git grep -n -iE "(reversib|time.revers|detailed balance|arrow).*(formation|sweep|record)|…" origin/main -- 'docs/*.md'` → the time-directed-sweep note of 2026-09-05 (a current's image under a sweep; different object); no reversibility statement for a formation chain.
+- The landed plane-law note (read on main): 2D Gibbs identification, two diagonal classes, the center's conditional not the static rule — the two-dimensional analogue of R1–R2; nothing on Z^3, on eight classes, or on reversibility.
+Classification: **open after the matched-hit review.** Routes: R-A the DLR limit (L1); R-B full-support uniqueness of the specification (L2) — the load-bearing new lemma; R-C dependency-set combinatorics for the corner family; R-D exact 2x2 column computations for the sweep's imprint.

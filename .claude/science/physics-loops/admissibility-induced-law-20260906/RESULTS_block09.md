@@ -1,0 +1,15 @@
+# RESULTS — block 09: the Markov graph of the three-dimensional formation law, the eight corner laws, the sweep's imprint (2026-09-15)
+
+**Deliverables (branch `physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915`, stacked on block 08):** the note `docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py` (22 checks, 15 mutations, exact, about 48 s); the pinned cache; the control `specs/supervisor_control_block09_markov_corner_arrow.py` and the refuting pass `specs/supervisor_control_block09_refuter.py` with outputs; `GOAL_block09.md`; `CHECKER_block09_findings.md`; this record.
+
+## Result, in one paragraph
+
+In block 08's region the three-dimensional monotone law `μ_κ` (corner `κ`) is a Gibbs measure for the potential `−log K` on edges and `+log K_3` on the predecessor triples (L1: the finite conditional identity passed to the limit), hence a Markov field for the graph of six axial and six face-diagonal neighbors `x + κ_i e_i − κ_j e_j`, and its full conditional genuinely depends on the face-diagonal sites (exact witness `793975879125/24719290847393` at (3,1,2)). A full-support law determines its continuous finite-range specification (L2), so `μ_κ` is not a nearest-neighbor Markov field and differs from every static Gibbs law of block 02's specification — unique or not — at every triple in the region with nonzero third difference of `log K_3` (executed at (3,1,2), (5,2,4)). The eight corner laws are pairwise distinct (four dependency sets; within a point-reflection pair the conditionals differ by `1646222697/263752139417` at (3,1,2)), form one orbit of the proper rotations, each invariant only under the three-fold rotations about its own body diagonal; their equal mixture is covariant but not translation-ergodic. The sweep leaves an imprint: on the 2x2 column the two-plane joint law is not its transpose (TV `0.04934116…` at (3,1,2), `0.0311…` at (5,2,4), `0` at the constant rule), the in-plane reflection changes the one-plane law (`0.02177093…`), and the eight predecessor structures give four one-plane laws with the sweep direction visible only in the joint law. No order or corner is selected; no arrow of time follows.
+
+## Certificate
+- Runner: `TOTAL: PASS=22 FAIL=0`; 15 mutations each in its family (census in REVIEW_HISTORY.md); no floating-point literal (F3); classical names only under Prior art and Imports (F4).
+- Refuting pass (disjoint machinery: the 3x3x3 product-form conditional; the reversed transfer): the two witnesses and the irreversibility value reproduced exactly (`CHECKER_block09_findings.md`).
+- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
+
+## Not claimed
+The third difference nonzero at every nonconstant triple; distinctness outside the region; affine independence of the eight laws; the random-priority law's Markov structure; an arrow of time.

@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/finite_integer_link_weak_coupling_payload_and_monopole_density_2026_09_13.py",
+  "limit_sec": 90,
+  "record_sha256": "12ad7daa3d57f94bfb0f9e88a1b044fbd896f03b55156f9f51546eae339f3214"
+}

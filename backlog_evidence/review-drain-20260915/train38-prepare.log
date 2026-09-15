@@ -1,0 +1,31 @@
+[detached HEAD 39374e6fce] Preserve independently reviewed source unit PR8096
+ Date: Tue Sep 15 13:14:27 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 15 files changed, 1470 insertions(+)
+ create mode 100644 docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-APPROACH_REGISTRY-eca75a325166a0da.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-ASSUMPTIONS_AND_IMPORTS-04947ad72d106df1.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-CLAIM_STATUS_CERTIFICATE-4a3d4f79e164376b.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-GOAL-525566f7a8b7cb8d.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-HANDOFF-9ef67db77ea9ef6f.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-OPPORTUNITY_QUEUE-ccb74c0b7866140d.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-REVIEW_HISTORY-3f4cb79c836849bf.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-ROUTE_PORTFOLIO-026cc4e1e794b8fa.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-STATE-3b9688acc891237e.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-TRACE_GATE-f67515f6cce5b41d.md
+ create mode 100644 logs/runner-cache/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.txt
+ create mode 100644 scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py
+FROZEN 39374e6fcec5de07ba7ccc26ea86fab77535b708 sources 15 inputs 37 notes 1

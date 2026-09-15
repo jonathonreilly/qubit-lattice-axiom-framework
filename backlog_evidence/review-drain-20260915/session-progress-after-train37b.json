@@ -1,0 +1,68 @@
+{
+  "main": "ac9085395843717c074d96515cc1f808681b29b6",
+  "frozen_count": 116,
+  "landed_original_count": 85,
+  "not_open_original_count": 85,
+  "remaining_original_count": 31,
+  "remaining_originals": [
+    8060,
+    8062,
+    8063,
+    8064,
+    8066,
+    8067,
+    8068,
+    8069,
+    8070,
+    8071,
+    8072,
+    8073,
+    8074,
+    8075,
+    8076,
+    8077,
+    8078,
+    8079,
+    8080,
+    8081,
+    8082,
+    8083,
+    8096,
+    8097,
+    8098,
+    8099,
+    8100,
+    8101,
+    8103,
+    8104,
+    8106
+  ],
+  "moved_original_heads": [],
+  "outside_cohort_open_count": 23,
+  "skill_remote_installed_complete": true,
+  "skill_main": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+  "skill_verification": "receipt-support-remote-installed-verification.json",
+  "active_gate": {
+    "label": "train38",
+    "unit": "8096",
+    "session": 93678
+  },
+  "active_science": {
+    "8060": "Type-only coldfix/newpreflight, no capture yet; authorbacklog/reviewer8012",
+    "8097": "originalsource and cacheunchanged; full independent source/history/importreview; reviewer8011",
+    "8098": "rootprepared coldtree559dd17a9b799ec402cf2fbba9ca6d746e2cb60e; not reviewed/not executed"
+  },
+  "latest_closures_confirmed": [
+    8093,
+    8095,
+    8059,
+    8061
+  ],
+  "removed_clean_worktrees": [
+    "train31",
+    "train32",
+    "train33",
+    "train34",
+    "train35"
+  ]
+}

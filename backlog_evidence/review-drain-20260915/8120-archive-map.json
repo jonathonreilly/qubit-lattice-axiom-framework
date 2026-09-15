@@ -1,0 +1,277 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/BLOCK12_FILTER_RUN.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/BLOCK12_FILTER_RUN.txt",
+    "sha256": "fbad35414ba0da2d4e6a6dfde95fdebfc2316480e61ba2a07e2a782ebfc3672a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/BLOCK12_TRANSFER_RUN.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/BLOCK12_TRANSFER_RUN.txt",
+    "sha256": "3b3b0fb7aa22f5cbacaec3f93893c87f562cfd3a1c4ab48ae2e1ed88c85b303f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/pr8120-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "369e1a62bc6dd9fd94c0d8f54d74e3d650b69944765a28fad0a62103c3a5f891"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/pr8120-HANDOFF.md",
+    "sha256": "6f4c4d9b5b7cc13c890b1677ed50c101fa43e7153d212453e947f7a56e56b6b4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/INITIAL_MUTATION_GAP.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/INITIAL_MUTATION_GAP.json",
+    "sha256": "affab2bbb2eb7a8b31db555d242f75cf0b75406a761236e0754f3edb2711c2fb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/MECHANICAL_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/MECHANICAL_CHECKS.json",
+    "sha256": "d3f14012a1cc370bd4c2d1c417e1e54df3bb322ac42775e2a752b0a3f033db17"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/MUTATION_RESULTS.json",
+    "sha256": "c020915fc380d3088f5311ca672e32ae916b6057f261be2f8a7c65e564455295"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/PRIMARY_RESULT.json",
+    "sha256": "ea2b175387c05d3e8e2be17034aa309e8ca8786d5ac35aab15d4821d77466ace"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/READING_LEDGER.json",
+    "sha256": "3d9dfbd7678782ac414f55bd0f904d84533f47fb7b7f4d8e2b40652522d4257c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/pr8120-REVIEW_HISTORY.md",
+    "sha256": "e72b741e9a4effa370c9527878c0120acbc8e2b094070875d429789c2f3b6c35"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/pr8120-TRACE_GATE.md",
+    "sha256": "c7ce96bf93e68c57f202ea26ad550a871e1dd48a71535b04653f50287037d04c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/VOCABULARY_REPORT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/VOCABULARY_REPORT.json",
+    "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/citation_build.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/citation_build.txt",
+    "sha256": "cdc315c10da65cf3d129ac09ea1398ab116cd7b19f497dd6c3d0db583869b0ec"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/initial_mutation_evidence/reversed_seam_similarity.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/initial_mutation_evidence/reversed_seam_similarity.py.gz",
+    "sha256": "5319daa583c7ec915621e37612a17066e9e49f5539e280cf3011d3493179b18a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/initial_mutation_evidence/reversed_seam_similarity.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/initial_mutation_evidence/reversed_seam_similarity.stderr.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/initial_mutation_evidence/reversed_seam_similarity.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/initial_mutation_evidence/reversed_seam_similarity.stdout.gz",
+    "sha256": "e84a6bb676a5759c175cf068d86bcd05571102b6050ff50ec18a64306608735c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/initial_mutation_evidence/shared_edge_fourier_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/initial_mutation_evidence/shared_edge_fourier_sign.py.gz",
+    "sha256": "a97f3d3fe6ae67e7e2338851182314376d7c837d296f1fe146a1d7c376dbf046"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/initial_mutation_evidence/shared_edge_fourier_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/initial_mutation_evidence/shared_edge_fourier_sign.stderr.gz",
+    "sha256": "b68ed3760fc968d98306d2b99d483b868a86c3cd2d8c74f2c4d224e00daac8cb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/initial_mutation_evidence/shared_edge_fourier_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/initial_mutation_evidence/shared_edge_fourier_sign.stdout.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/broken_closed_current.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/broken_closed_current.py.gz",
+    "sha256": "d8560aa993d49f2b4f60e59009fa1c01c4c674955bcfdcbdbdd61b5b59cd381d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/broken_closed_current.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/broken_closed_current.stderr.gz",
+    "sha256": "f5ad1180fa889aebeeee7623bb5962567ae4ae0eab7e5f051aa7416af7cbb353"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/broken_closed_current.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/broken_closed_current.stdout.gz",
+    "sha256": "635d3268c788f13432b4b7413822ef747b373fb68383361c043587f6f6f37ee1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/dropped_unitary_endpoint.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/dropped_unitary_endpoint.py.gz",
+    "sha256": "ed328d6b69ba0401dc45692ece54708e802fa67e9aa0dc362c7546ca0f3fed13"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/dropped_unitary_endpoint.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/dropped_unitary_endpoint.stderr.gz",
+    "sha256": "9ba219c4362d5e64e481e3bc0f8517f1b770dbd2ba740a3d4483deb6de7f44bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/dropped_unitary_endpoint.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/dropped_unitary_endpoint.stdout.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/incorrect_triangular_density.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/incorrect_triangular_density.py.gz",
+    "sha256": "3e61d343e6d0eac625e98af4844eb844f9403e28765c7993bdcc36494b2d1202"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/incorrect_triangular_density.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/incorrect_triangular_density.stderr.gz",
+    "sha256": "6ccbb11bfb70327f4bed9d92d4079ca6231403198a49922a06c835be8a7f761b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/incorrect_triangular_density.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/incorrect_triangular_density.stdout.gz",
+    "sha256": "3f35e614f85dcefa429122071a00e30ae871ee83eac898a7ae48f2d9cd7b360d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/lost_ground_compression.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/lost_ground_compression.py.gz",
+    "sha256": "b01b145182ad5797ccbaf118cbe951cccc79563e57046f0f60a7f0bfe02b381d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/lost_ground_compression.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/lost_ground_compression.stderr.gz",
+    "sha256": "8a269cce139f4dada69bcec939020759747f514b06e9c59adf18d08cc80d7552"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/lost_ground_compression.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/lost_ground_compression.stdout.gz",
+    "sha256": "67a24432a90a4091fc2eced1c028ed0cf078b5a16a809d3163cf23185cf41f2a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/membrane_misses_loop.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/membrane_misses_loop.py.gz",
+    "sha256": "b8ddc37eb1fe78fa640a9ebe75894b9976db1c9260de3759ac160640235a2cbf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/membrane_misses_loop.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/membrane_misses_loop.stderr.gz",
+    "sha256": "0cdf3be44c840cfe9c0c4ee59dbaa0bc3c501c915eaf9f2eb91621d830a4ce67"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/membrane_misses_loop.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/membrane_misses_loop.stdout.gz",
+    "sha256": "635d3268c788f13432b4b7413822ef747b373fb68383361c043587f6f6f37ee1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/missing_positive_density_trace.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/missing_positive_density_trace.py.gz",
+    "sha256": "7b35a2c86dd791cc77c2376d1925b252d7fc1cff0861f9d90ffda0309b13fadd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/missing_positive_density_trace.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/missing_positive_density_trace.stderr.gz",
+    "sha256": "266ec6705fe9550dc7ff1013febaf5bf1d563830f2b29fbf9abece15e17cb06d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/missing_positive_density_trace.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/missing_positive_density_trace.stdout.gz",
+    "sha256": "6c19f494ca35d4fbbd9a71199bc50f2c759e5485a9cbcd436801d7be63f04566"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/missing_time_displacement.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/missing_time_displacement.py.gz",
+    "sha256": "92fa4af80aa19f11b65916d8b737060cfd8a3f1c7827d5f594126ecd87f82525"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/missing_time_displacement.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/missing_time_displacement.stderr.gz",
+    "sha256": "c4773f98139f70c8ec84d4439fd91ba01805241d5d5408b577ea96e3c541d7de"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/missing_time_displacement.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/missing_time_displacement.stdout.gz",
+    "sha256": "3f35e614f85dcefa429122071a00e30ae871ee83eac898a7ae48f2d9cd7b360d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/nontrivial_link_phase.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/nontrivial_link_phase.py.gz",
+    "sha256": "26c41bc9251706d94b84e53c6290a6834cd9005e8652cd40f6f69cc0257687fa"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/nontrivial_link_phase.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/nontrivial_link_phase.stderr.gz",
+    "sha256": "657a41cfdec3d39e13c485fe2817eadcecf36c3bdfd0a86b3ed778a05097b8a9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/nontrivial_link_phase.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/nontrivial_link_phase.stdout.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/reversed_seam_similarity.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/reversed_seam_similarity.py.gz",
+    "sha256": "c83c2b5b072b6aa718e5afa9fe02325a8c634f9722ae8c41205b5e3fa6a585f1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/reversed_seam_similarity.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/reversed_seam_similarity.stderr.gz",
+    "sha256": "843602c599d9f77a39199c4470e3f9bd7a422669ea22dfb2d15b030c3dd251ab"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/reversed_seam_similarity.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/reversed_seam_similarity.stdout.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/shared_edge_fourier_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/shared_edge_fourier_sign.py.gz",
+    "sha256": "2683a3853bc42e924d2de3067637656a48026b681f136d7da87feea617b40a88"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/shared_edge_fourier_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/shared_edge_fourier_sign.stderr.gz",
+    "sha256": "3eec2b1e8f6f4f431791dacb0428dfa8bd66ca2c88fc627ea98002866b48fdef"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/shared_edge_fourier_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/shared_edge_fourier_sign.stdout.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/spectral_filter_gap_loss.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/spectral_filter_gap_loss.py.gz",
+    "sha256": "f1feef068118734ae7d5283c17d6e1cde312229f095bfd2298758a9c4568161e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/spectral_filter_gap_loss.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/spectral_filter_gap_loss.stderr.gz",
+    "sha256": "d5f6af8593eb6454777ba0dfd39e3d504c1ed641e6b0c914a86bdcae5e2bf4ca"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/spectral_filter_gap_loss.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/spectral_filter_gap_loss.stdout.gz",
+    "sha256": "3f35e614f85dcefa429122071a00e30ae871ee83eac898a7ae48f2d9cd7b360d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/wrong_dynamical_conjugation.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/wrong_dynamical_conjugation.py.gz",
+    "sha256": "6f4bfdcab7e3476cbacd8a717a93a548901bb895f3d9074dcaff3cad092769eb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/wrong_dynamical_conjugation.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/wrong_dynamical_conjugation.stderr.gz",
+    "sha256": "b3957e66c948fa5aec649ed469f8a1a07199c03baa00cb33c3f9e08a098b37f3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/mutation_evidence/wrong_dynamical_conjugation.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8120-clock-spectral-evidence/mutation_evidence/wrong_dynamical_conjugation.stdout.gz",
+    "sha256": "3f35e614f85dcefa429122071a00e30ae871ee83eac898a7ae48f2d9cd7b360d"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "pr": {
+    "baseRefName": "main",
+    "child_prs": [
+      8040,
+      8042,
+      8044,
+      8049,
+      8065
+    ],
+    "headRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+    "headRefOid": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8038,
+    "parent_pr": null,
+    "stack_depth": 0,
+    "title": "[physics-loop] full native fermion and constrained Z2 link dictionary",
+    "topology_state": "declared_main_root",
+    "updatedAt": "2026-09-08T14:19:43Z",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8038"
+  },
+  "merge_base": "8257bddfc97ab763d208b43e9bdc8677fe89b1e8",
+  "original_patch_sha256": "7e023a03d4c725b753259c64aca1797069ee11dd05f9a8afa34e3b64fdf6f78e",
+  "raw_inventory_sha256": "0ab44ffdf6e63529d10732070a1d25781579173c3c2daded6c0be5e3a067e8ad",
+  "status": "mechanical routing only; no scientific acceptance",
+  "reason": "Root of five existing dependency branches; reserve as next independent legacy review unit"
+}

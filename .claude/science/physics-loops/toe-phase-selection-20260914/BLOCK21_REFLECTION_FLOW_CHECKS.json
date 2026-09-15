@@ -1,0 +1,316 @@
+{
+  "reflection": [
+    {
+      "d": 1,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        2,
+        1
+      ],
+      "periodic_dimensions": [
+        4,
+        4
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 2
+    },
+    {
+      "d": 1,
+      "L": 2,
+      "period": 6,
+      "free_dimensions": [
+        3,
+        2
+      ],
+      "periodic_dimensions": [
+        6,
+        6
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 4
+    },
+    {
+      "d": 1,
+      "L": 3,
+      "period": 8,
+      "free_dimensions": [
+        4,
+        3
+      ],
+      "periodic_dimensions": [
+        8,
+        8
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 6
+    },
+    {
+      "d": 1,
+      "L": 7,
+      "period": 16,
+      "free_dimensions": [
+        8,
+        7
+      ],
+      "periodic_dimensions": [
+        16,
+        16
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 14
+    },
+    {
+      "d": 2,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        4,
+        4,
+        1
+      ],
+      "periodic_dimensions": [
+        16,
+        32,
+        16
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 4,
+      "wrong_edge_parity_defect_entries": 16
+    },
+    {
+      "d": 2,
+      "L": 3,
+      "period": 8,
+      "free_dimensions": [
+        16,
+        24,
+        9
+      ],
+      "periodic_dimensions": [
+        64,
+        128,
+        64
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 4,
+      "wrong_edge_parity_defect_entries": 96
+    },
+    {
+      "d": 3,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        8,
+        12,
+        6,
+        1
+      ],
+      "periodic_dimensions": [
+        64,
+        192,
+        192,
+        64
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 8,
+      "wrong_edge_parity_defect_entries": 96
+    },
+    {
+      "d": 3,
+      "L": 2,
+      "period": 6,
+      "free_dimensions": [
+        27,
+        54,
+        36,
+        8
+      ],
+      "periodic_dimensions": [
+        216,
+        648,
+        648,
+        216
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 8,
+      "wrong_edge_parity_defect_entries": 432
+    },
+    {
+      "d": 4,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        16,
+        32,
+        24,
+        8,
+        1
+      ],
+      "periodic_dimensions": [
+        256,
+        1024,
+        1536,
+        1024,
+        256
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 16,
+      "wrong_edge_parity_defect_entries": 512
+    },
+    {
+      "d": 4,
+      "L": 2,
+      "period": 6,
+      "free_dimensions": [
+        81,
+        216,
+        216,
+        96,
+        16
+      ],
+      "periodic_dimensions": [
+        1296,
+        5184,
+        7776,
+        5184,
+        1296
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 16,
+      "wrong_edge_parity_defect_entries": 3456
+    }
+  ],
+  "positive_integrals": {
+    "order": 60,
+    "k_schur": 1.466666666666667,
+    "delta": 0.027999999999999997,
+    "M3": 0.055999999999999994,
+    "contraction": 0.041066666666666675,
+    "cases": [
+      {
+        "tilt": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "third_cumulant": 2.032879073410321e-18,
+        "derived_bound": 0.007213060038194475
+      },
+      {
+        "tilt": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "third_cumulant": -1.0299920638612292e-18,
+        "derived_bound": 0.006670511978091857
+      },
+      {
+        "tilt": [
+          0.2,
+          -0.3,
+          0.1
+        ],
+        "third_cumulant": 4.215323535407419e-05,
+        "derived_bound": 0.007213060038194475
+      },
+      {
+        "tilt": [
+          0.2,
+          -0.3,
+          0.1
+        ],
+        "third_cumulant": 7.562829493611839e-07,
+        "derived_bound": 0.006670511978091857
+      },
+      {
+        "tilt": [
+          -0.4,
+          0.1,
+          0.3
+        ],
+        "third_cumulant": -4.151115817687754e-05,
+        "derived_bound": 0.007213060038194475
+      },
+      {
+        "tilt": [
+          -0.4,
+          0.1,
+          0.3
+        ],
+        "third_cumulant": 2.1890596133274684e-05,
+        "derived_bound": 0.006670511978091857
+      },
+      {
+        "source_scale": 0.1,
+        "log_mgf_remainder": 1.7888491306728566e-10,
+        "derived_bound": 1.2021766730324135e-06
+      },
+      {
+        "source_scale": 0.3,
+        "log_mgf_remainder": 1.4484938491710064e-08,
+        "derived_bound": 3.2458770171875155e-05
+      },
+      {
+        "source_scale": 1.0,
+        "log_mgf_remainder": 1.7816229797851246e-06,
+        "derived_bound": 0.0012021766730324125
+      },
+      {
+        "source_scale": 2.0,
+        "log_mgf_remainder": 2.8158369295011587e-05,
+        "derived_bound": 0.0096174133842593
+      }
+    ]
+  },
+  "quadrature_order_comparison": 2.2085198253529725e-16,
+  "collective_control": {
+    "variance": 0.7914738442156867,
+    "fourth_cumulant": 0.1306480668960459,
+    "dimension_independent_non_gaussian": true,
+    "cases": [
+      {
+        "dimension": 1,
+        "source_ell3_cubed": 1.0,
+        "third_influence_bound": 0.4,
+        "product": 0.4
+      },
+      {
+        "dimension": 4,
+        "source_ell3_cubed": 0.5,
+        "third_influence_bound": 0.8,
+        "product": 0.4
+      },
+      {
+        "dimension": 16,
+        "source_ell3_cubed": 0.25,
+        "third_influence_bound": 1.6,
+        "product": 0.4
+      },
+      {
+        "dimension": 64,
+        "source_ell3_cubed": 0.125,
+        "third_influence_bound": 3.2,
+        "product": 0.4
+      },
+      {
+        "dimension": 256,
+        "source_ell3_cubed": 0.0625,
+        "third_influence_bound": 6.4,
+        "product": 0.4
+      },
+      {
+        "dimension": 1024,
+        "source_ell3_cubed": 0.03125,
+        "third_influence_bound": 12.8,
+        "product": 0.4
+      }
+    ]
+  },
+  "qualification": "Exact finite incidence identities and deterministic positive integrals challenge the proof. No Riesz lp theorem, stationary-flow differentiability theorem, covariance homogenization, or physical state matching is established by finite checks."
+}

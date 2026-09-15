@@ -72,62 +72,70 @@ A uniform covariance upper bound suffices to extract Gaussian subsequential
 limits for a finite set of tests. That is weaker than the named Maxwell
 limit and must not be substituted for covariance homogenization.
 
-## 3. Proof through a stationary preconditioned flow
+## 3. Proof through a finite-time preconditioned flow
 
-On Gamma consider the SDE
+On Gamma, starting at omega_0=0, consider the SDE
 
  d omega_t =[-omega_t+K grad R(omega_t)+K h]dt
              +sqrt(2K)dB_t.                          (5)
 
 The noise and drift preserve Gamma. The density(2) is invariant by direct
 integration by parts in Gamma: the drift equals K times the gradient of
-its log density. The uniform Hessian lower bound in section1, or synchronous
-coupling with k2 delta<1, gives uniqueness of its invariant law and
-convergence from finite initial data. No limit uniform in the number of
-coordinates is needed to identify this finite-dimensional invariant law.
+its log density. Global boundedness of R'' makes the drift globally
+Lipschitz. The positive Hessian lower bound in section1 supplies all
+stationary moments. With synchronous Brownian noise, variation of
+constants and Gronwall give
 
-For two solutions with the same Brownian path, variation of constants and
-Gronwall give contraction at least exp[-(1-kp delta)t] in ell^p for each
-p=2,3,3/2. This is a bound on differences; the Brownian path itself is not
-assumed uniformly bounded for all time.
+ ||omega_t-omega'_t||_p
+ <=exp[-(1-kp delta)t]||omega_0-omega'_0||_p.
 
-Use a two-sided Brownian path and the stationary pullback solution. Its
-first derivative v_a(t)=D_a omega_t^h with respect to the source h solves
+In particular the p=2 bound, applied with a stationary initial condition
+having law mu_h, proves E omega_T^h -> E_mu_h omega as T tends to infinity.
+This is for each finite dimension and fixed h. Neither a uniform bound
+on the Brownian path nor a dimension-uniform mixing theorem is assumed.
 
- v_a(t)=K a+integral_(-infinity)^t exp[-(t-s)]
+For finite T the first source derivative v_a(t)=D_a omega_t^h obeys
+
+ v_a(t)=(1-exp[-t])K a+integral_0^t exp[-(t-s)]
                     K R''(omega_s^h) v_a(s) ds.      (6)
 
-The time-integral operator is a contraction in the norm sup_t||v(t)||_3,
-with norm at most k3 delta. Thus it has a unique bounded solution and
+The time-integral operator has norm at most k3 delta on the normed space
+sup_(0<=t<=T)||v(t)||_3. Thus
 
- sup_t||v_a(t)||_3<=C3||a||_3.                       (7)
+ sup_(0<=t<=T)||v_a(t)||_3<=C3||a||_3.               (7)
 
-This bound holds for each noise realization. Differentiate once more:
-w_bc(t)=D_bD_c omega_t^h satisfies
+This holds for every noise realization and every T. A second derivative
+w_bc(t)=D_bD_c omega_t^h obeys
 
- w_bc(t)=integral_(-infinity)^t exp[-(t-s)] K
+ w_bc(t)=integral_0^t exp[-(t-s)] K
    [R''(omega_s^h)w_bc(s)+R'''(omega_s^h)[v_b(s),v_c(s)]] ds.            (8)
 
-The same contraction in ell^(3/2), using self-adjointness of K, and(1),(7)
+The same contraction in ell^(3/2), using self-adjointness of K and(1),(7),
 gives
 
- sup_t||w_bc(t)||_(3/2)<=M3 C3^3 ||b||_3 ||c||_3.     (9)
+ sup_(0<=t<=T)||w_bc(t)||_(3/2)
+ <=M3 C3^3 ||b||_3 ||c||_3.                          (9)
 
-The source derivatives can be justified by finite-past solutions followed
-by pullback. First and second variations obey the same uniform bounds.
-Contraction forgets the initial condition, and the continuity of R'' and
-R''' plus dominated convergence transfers the variation equations to the
-stationary solution. Equivalently, difference quotients in(6),(8) converge
-by the contraction estimate. This argument uses C3 regularity and the
-uniform bounds(1), not a formal derivative of an unspecified infinite law.
+Finite-time source differentiation follows from the usual difference-
+quotient equations for a finite-dimensional SDE with additive noise and
+C2 drift. Here it is simply differentiation of a random integral equation;
+(1),(7),(9) supply deterministic bounds on the derivatives. Thus, putting
+m_T(h)=E omega_T^h, Holder gives
 
-Since DF(h)[a]=E(a,omega_0^h), equations(7),(9) justify differentiation
-under this expectation twice. Therefore
+ |D_bD_c(a,m_T(h))|<=M3 C3^3||a||_3||b||_3||c||_3.
 
- D^3F(h)[a,b,c]=E(a,w_bc(0)).
+To pass this bound to stationarity, no interchange of an infinite-time
+limit with a derivative is needed. Integrate the displayed bound over a
+source rectangle h+s b+t c,0<=s<=u,0<=t<=v. The resulting four-term
+finite-difference bound passes to the limit T->infinity because each
+m_T at a rectangle corner converges to m(h)=E_mu_h omega. Divide by uv
+and let u,v decrease to zero. The function m(h)=DF(h) is already smooth
+by the proper Gaussian tails in(2), so its mixed derivative has the same
+bound. This is(3).
 
-Holder with exponents3 and3/2 proves(3). The constants contain no hidden
-factor of the dimension M.
+This finite-time argument replaces the draft's unnecessary stationary
+pullback differentiation. It makes the limiting step explicit and does
+not assume convergence of derivatives of stationary stochastic solutions.
 
 ## 4. Checkable sufficient conditions for extended carrier interactions
 
@@ -164,7 +172,7 @@ The hypotheses correctly refuse to infer a Gaussian limit for this model.
 A dimensional Hessian bound cannot replace the uniform third-order
 influence condition.
 
-## 5. Intended three-form application and still-unchecked inputs
+## 5. Intended three-form application and input map
 
 For the block21 auxiliary measure choose the local Hodge derivative
 Dcal phi=(d_2*phi,d_3 phi), so Dcal*Dcal=H. Let
@@ -204,10 +212,12 @@ beta. This would remove Gaussianity as a separate assumption in block21;
 its covariance homogenization, state matching and finite-clock electric
 current obligations would remain.
 
-Next checks: challenge(3) with finite positive integrations and the
-collective-coordinate control; derive the free-cube ell^3 projection bound
-and explicit carrier derivative estimates; then reassess the covariance
-identification rather than promoting a conditional chain prematurely.
+The following sections supply the reflection, carrier and periodic
+projection derivations. The separate reflection/positive-integral runner
+challenges finite geometry and the third-derivative estimate, including
+the collective-coordinate control. Those calculations are not an
+independent review of the analytic proofs. Covariance identification and
+the physical-state bridge remain separate obligations.
 
 ## 6. Free-cube reflection removes the boundary mismatch
 
@@ -274,10 +284,10 @@ Source caution: the published Conlon-Dabkowski page14 was visually checked.
 Its displayed Theorem3.1/eq(3.17) omits the inverse on the Laplacian; the
 surrounding eqs(3.16),(4.2),(4.3) use the inverse. The literal displayed
 operator cannot have the asserted limiting norm1 at p=2. We therefore
-record(13) as the correctly specified standard CZ input, with an additional
-source/proof check outstanding, rather than importing the misprinted
-formula. The reflection argument(11)-(12) is explicit and independent of
-that typography issue.
+record(13) as the correctly specified standard CZ input rather than
+importing the misprinted formula. Section8 gives a direct proof of that
+input. Both that proof and the reflection argument(11)-(12) remain subject
+to independent mathematical review.
 
 ## 7. Carrier bounds in the operator form needed above
 
@@ -322,3 +332,125 @@ by const(beta)||h_a||_3^3=O_beta(a^2). This is a specific reduction of the
 Gaussianity obligation to checked operator and carrier estimates. A
 Maxwell covariance limit and the free/periodic state match are still not
 proved by this argument.
+
+## 8. Direct derivation of the correctly specified periodic Riesz bound
+
+Here is a proof route for(13) that does not rely on the misprinted display.
+For m>0 on Z^d write delta_j(k)=exp(i k_j)-1 and
+lambda(k)=sum_j |delta_j(k)|^2. The scalar multiplier is
+
+ M_mu,nu,m(k)=delta_mu(k) conjugate(delta_nu(k))/(lambda(k)+m^2),
+ k in [-pi,pi]^d.                                    (16)
+
+Its absolute value is at most1, hence its ell2 norm is at most1 by
+Plancherel. In a fixed coordinate chart around0, differentiation of the
+rational expression, using lambda(k) comparable to |k|^2, shows
+
+ |partial^alpha M_mu,nu,m(k)|<=C_(alpha,d)|k|^(-|alpha|), k!=0,          (17)
+
+uniformly in m>0. Each derivative either differentiates a smooth numerator
+vanishing quadratically or a denominator bounded below by const|k|^2+m^2;
+rescaling k=r u on an annulus r/2<=|k|<=2r makes all such derivatives
+uniformly bounded in m/r. Away from0 the bounds are uniformly smooth.
+
+Use a smooth dyadic partition of unity into annuli of radii r=2^-j near0
+and finitely many smooth periodic coordinate charts away from0. A localized
+multiplier on an r-annulus has derivatives of order n bounded in L1 by
+C r^(d-n). Repeated integration by parts in its compact coordinate chart
+therefore bounds its Fourier coefficient K_r(x) by
+
+ |K_r(x)|<=C r^d(1+r|x|)^(-d-2).
+
+The same argument after differentiating the Fourier transform with respect
+to its real argument gives C r^(d+1)(1+r|x|)^(-d-2). Integrating this latter
+bound along the segment from x to x-y, with |x|>=2|y|, yields the difference
+bound C |y| r^(d+1)(1+r|x|)^(-d-2). The finitely many away-from-zero
+charts satisfy the same estimates with r comparable to1. Summing over
+annuli gives the uniform kernel estimates
+
+ |K_m(x)|<=C(1+|x|)^(-d),
+ |K_m(x-y)-K_m(x)|<=C |y|(1+|x|)^(-d-1), |x|>=2|y|.                  (18)
+
+In particular the discrete Hormander sum over |x|>=2|y| of the second
+absolute difference is bounded by a dimension-dependent constant. The
+case y=0 is zero. These estimates also follow as limits of finite annular
+sums; their ell2 multiplier norms are uniformly bounded by the finite
+overlap of the partition.
+
+For clarity, the standard discrete Calderon-Zygmund step can be carried
+out on dyadic cubes in Z^d. Given a summable function f and threshold a>0,
+choose maximal dyadic cubes Q whose average |f| exceeds a. Their total
+cardinality is at most ||f||1/a, and each cube average is at most2^d a.
+Write f=g+sum_Q b_Q, with g equal to the cube average on each Q and f
+elsewhere. Then ||g||infinity<=2^d a, ||g||1<=||f||1, each b_Q has zero
+sum, and sum_Q||b_Q||1<=2||f||1. The ell2 bound controls the exceptional
+set for Tg by const||f||1/a. Outside fixed enlargements of the cubes,
+subtract the kernel value at a chosen cube center and use the Hormander
+sum in(18) to get
+
+ sum_(outside enlarged cubes)|T sum_Q b_Q|<=C||f||1.
+
+The enlarged cubes themselves also have cardinality at mostC||f||1/a.
+Chebyshev's inequality proves a uniform weak(1,1) bound. Marcinkiewicz
+interpolation with the ell2 bound gives a uniform strong ell^(3/2) bound.
+The adjoint swaps mu and nu and obeys the same bounds, so duality gives
+a uniform strong ell3 bound. This argument uses the standard interpolation
+inequality between weak(1,1) and strong(2,2), not an assumption about the
+unknown gauge measure.
+
+For fixed m>0 the multiplier(16) is smooth on the whole torus and its
+kernel is absolutely summable. Periodizing that kernel on a finite cycle
+product gives the corresponding finite-period multiplier. Its ellp norm
+is no larger than the infinite-lattice norm: first truncate the summable
+kernel, apply the infinite-lattice operator to a periodic test repeated
+on an increasing union of periods, divide the pth power norm by the
+number of periods, and let the union grow. Finite kernel range makes the
+boundary fraction vanish. Then remove the kernel cutoff using its ell1
+tail. Finally let m decrease to zero on the fixed finite torus. Each
+nonzero Fourier mode converges to the multiplier with denominator lambda;
+the zero mode remains zero. Finite-dimensional norm convergence preserves
+the same uniform bound. This proves(13), in particular at3 and3/2, with
+finite constants depending only on dimension and exponent.
+
+The proof checks the inverse, the zero mode, the mass-uniform derivatives,
+and the finite-period transfer separately. The earlier reflection proof
+then supplies the intended free-cube estimate; it does not assume that
+an arbitrary boundary-value projection enjoys the same bound.
+
+## 9. Exact finite-volume flux Gaussian remainder, before homogenization
+
+The previous sections give a stronger intermediate target than simply
+removing T in a scaling limit. Let T_r=(I-cH_r)^-1 on degree-r free-cube
+cochains. The cochain identities imply
+
+ T_3 d_2=d_2 T_2.
+
+Each H_r is the tensor sum of one-dimensional Dirichlet/Neumann scalar
+Laplacians on its orientation component. Its absolute row and column
+sums are at most4d, so c=1/(8d) gives ||T_r||_(p->p)<=2 for every p.
+Consequently the exact real tilt in block21 is
+
+ -beta^-1/2(phi,T_3 d_2 h)=-(T_2 h,omega_first).
+
+Apply(4) to that source. The quadratic term combines with the explicit
+Gaussian prefactor in the exact flux identity to give precisely the
+actual finite-volume covariance of X, by equation(6) in the full-flux
+note. Thus, conditional only on the explicitly recorded carrier estimates
+and the present proof steps, at every sufficiently large fixed beta,
+
+ |log E exp[i(h,X)]+Var(h,X)/2|
+ <=(4/3) M3 C3^3 ||h||_3^3                         (19)
+
+uniformly over all finite free four-cubes and real two-form sources h.
+The logarithm is real and well-defined because the exact characteristic
+is a positive Gaussian prefactor times a positive real MGF. The factor
+4/3 is 2^3/6. No Gaussian limit or covariance limit has been assumed in
+deriving(19).
+
+For smooth macroscopic cell-average sources, ||h_a||3^3=O(a^2). Together
+with the centered full-flux MGF domination, this makes every covariance-
+convergent finite-dimensional subsequence Gaussian. It does not fix the
+covariance kernel, prove that all subsequences agree, or identify the
+physical angle-state limit. In particular(19) cannot by itself replace
+the remaining covariance homogenization with a guessed Maxwell tensor.
+The finite-clock model remains outside the Haar-unfolding hypothesis.

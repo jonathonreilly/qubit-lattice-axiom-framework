@@ -6,14 +6,18 @@ for24hours total from2026-09-14 13:30:44UTC. Historical01:30:44deadlines below
 are superseded. Do not stop at the old deadline, pause the heartbeat, or remove
 the active campaign checkout then. Finish a milestone, reassess and continue.
 
-Current work: block20 unconditioned Gaussian innovation readout; its exact
-complex covariance and truncation checks now pass. A first assertion compared
-unsimplified symbolic expressions structurally; every simplified difference
-was exactly zero, and the checker now tests that algebraic difference. The derivation uses Gaussian conditional residuals to avoid
-rare Y=0 selection for a FIXED-source readout, while exposing inverse-kernel
-locality and unchanged branch probabilities. Block19 is a private conditional
-history resource tradeoff, not an axiom wall. Eleven review-pendingPRs8123–8133
-are durable and all completed delivery checkouts have been removed.
+Current work: block21 fixed-coupling full compact-U(1) flux Gaussianity and
+covariance. A finite-time preconditioned-flow proof, explicit cochain
+reflection, direct periodic Riesz argument and carrier derivative bounds
+give a candidate uniform log-characteristic Gaussian remainder. Finite
+geometry and positive-integration checks pass, including a nonlocal
+countercontrol that makes the third-influence hypothesis essential. The
+new covariance design uses a stationary-environment spectral response and
+a finite effective matrix; its physical-state match remains open. This is
+personal author science, not independently reviewed or retained. Block20
+standard Gaussian innovation sampling and block19 history-resource bounds
+remain private support results. Eleven review-pendingPRs8123–8133 are
+durable and all completed delivery checkouts have been removed.
 
 # Personal twelve-hour phase-selection campaign
 

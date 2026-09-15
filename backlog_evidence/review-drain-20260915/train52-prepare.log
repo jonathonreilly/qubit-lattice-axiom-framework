@@ -1,0 +1,64 @@
+[detached HEAD a9237a270d] Preserve independently reviewed source unit PR8071
+ Date: Tue Sep 15 17:37:07 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 48 files changed, 1221 insertions(+)
+ create mode 100644 docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/_objects/f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/kept/pr8071-HANDOFF-9ef67db77ea9ef6f.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/kept/pr8071-REVIEW_HISTORY-3f4cb79c836849bf.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/original-SOURCE_MANIFEST.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8071-evidence/original-native_mixed_gaussian_transition_2026_09_09.json
+ create mode 100644 logs/runner-cache/native_mixed_gaussian_transition_2026_09_09.txt
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09.json
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md
+ create mode 100644 outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md
+ create mode 100644 scripts/native_mixed_gaussian_transition_2026_09_09.py
+ create mode 100644 scripts/native_mixed_gaussian_transition_2026_09_09_fast.py
+ create mode 100644 scripts/native_mixed_gaussian_transition_2026_09_09_fock.py
+FROZEN a9237a270d5484862f602ac17ecc7d9004340fb5 sources 48 inputs 72 notes 1

@@ -1,0 +1,11 @@
+{
+  "root_preflight_sha256": "cf1aa53b60e9e111653f4bd15283b6292fdf31a7b3e336788d745669417b9c5b",
+  "record_sha256": "902afabd3ea5ed37bef3eee40220d6fb21a4e024eb9d1b41922e910ef60ee038",
+  "transitive_evidence": {
+    "8050-unit-preexecution-v1.json": "902afabd3ea5ed37bef3eee40220d6fb21a4e024eb9d1b41922e910ef60ee038",
+    "review-8050-provisional.json": "87ea1b572153affe7ae7a5698540e3642c8e5af43daaf41704cb5e5de66fd548",
+    "check8050/control.json": "b2e54de0cae0e67410fdae4218a0c074c2b99d41adba86c249fa03b20aa52eec",
+    "review-8050-working.md": "b3160a9dd1bf2784aca9a202e367a91df7ce4478bd5bcc19918d75d6a5ba3bcb",
+    "8050-archive-anchor.json": "7c64038da4588cb8b43e7d3bc791ad94770296332ca965efbb3a756fbb996514"
+  }
+}

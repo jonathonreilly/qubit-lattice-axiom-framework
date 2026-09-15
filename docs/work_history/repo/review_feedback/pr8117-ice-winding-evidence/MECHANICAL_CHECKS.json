@@ -1,0 +1,32 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "source_sha256": "5fd4bec4cfd417bc847e1d424ef7aa34c8b2419bbfdea15aea5cc0890aef7155",
+  "local_links": [
+    "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+    "logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt",
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/REVIEW_HISTORY.md"
+  ],
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "mutations_detected": 11,
+  "independent_review": "pending",
+  "integration_gate": "deferred section 12",
+  "citation_graph": {
+    "nodes": 5042,
+    "edges": 12519,
+    "added": [
+      "cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_bounded_theorem_note_2026-09-14"
+    ],
+    "removed": [],
+    "rewired": []
+  }
+}

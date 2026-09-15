@@ -131,7 +131,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 09 close (2026-09-15)
 # block: 9
 # branch: physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915 (stacked on block 08, PR #8138; the stack rebased onto main 7495de3076)
-# pr_status: opened for review — PR «PR09» (base = block 08's branch); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8139 (base = block 08's branch); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=22 FAIL=0; 15 mutations, census 15/15 in-family; refuting pass 3/3 equal; gates: see HANDOFF.md"
 # seats: "supervisor-run: control -> contract with a four-lens pass -> primary (lemmas L1-L2, R1-R5, runner) -> refuting pass (3x3x3 product form; reversed transfer) -> fold"
 # review_findings: "the Z^3 monotone law is Gibbs for -log K (edges) + log K_3 (predecessor triples): Markov for the axial+face-diagonal graph, not the NN graph (exact witness TV 793975879125/24719290847393); a full-support law determines its finite-range specification, so it differs from every static Gibbs law on Z^3 at nonzero third difference; eight distinct corner laws (pair witness TV 1646222697/263752139417), one rotation orbit, the mixture covariant but not ergodic; the plane chain irreversible on the 2x2 column (TV 0.04934...), the in-plane reflection visible (0.02177...), four one-plane laws"

@@ -1,0 +1,19 @@
+{
+  "pr": 8097,
+  "original_head": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+  "branch": "physics-loop/native-local-quartic-20260913",
+  "landing": "fa0200b439231d7dff40066b75236f5d46cda999",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-local-quartic-20260913",
+    "headRefOid": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8097,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8097"
+  }
+}

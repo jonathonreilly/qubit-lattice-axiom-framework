@@ -670,3 +670,29 @@ fixtures obey the bounds and detailed balance. The constants are loose and
 the hard-cutoff comparator remains finite. Generic complex Lanczos starts
 avoid an artificial symmetry restriction; separate three-level checks agree.
 No scientific check failed. All review remains personal.
+
+
+## Block17 — cyclic weak-coupling scaling and a quarter-alias counterexample
+
+Exact Gauss reduction over Z_N, including composite N, gives a periodic
+Schroedinger limit when ell=gN tends to a finite positive value. When ell
+diverges, chord coercivity recovers the full fixed-volume oscillator; when
+ell vanishes, the gauge excitation gap diverges and only the finite matter
+levels remain. The one-plaquette periodic ground has0<E0(ell)<1, while the
+hard Dirichlet comparator is above1. Mathieu asymptotics are credited and
+challenged by exact oscillator coefficients, not counted as new mathematics.
+
+On two adjacent plaquettes the uniform cyclic state has integer Gauss
+alias probability S(S+1)/(2S+1)^2, tending to1/4. Actual ground states have
+that limit when ell->0 even while the magnetic deficit vanishes. Finite
+positive ell also retains positive alias probability in this pure-gauge
+fixture. This does not contradict Block16, which kept g fixed. A uniform
+physical trial proves an O(g²) cyclic ground deficit at bounded ell, including
+fixed N; the hard shift-chain cutoff ceiling does not apply to this regulator.
+
+Finite exact-Gauss, charged CAR, Fourier and special-function checks agree
+after two preserved solver failures. A stalled nearly degenerate cluster
+was solved densely with unchanged residual tolerance. A sparse run also
+missed a third degenerate charged level despite small residuals; conserved
+number blocks now retain all multiplicities. The spectral theorem remains
+fixed-volume and provisional, with no photon or axiom-update claim.

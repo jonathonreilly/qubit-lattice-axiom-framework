@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-15T23:18:04.505480+00:00",
+  "failure": "ARPACK reached 2891 iterations with one of three eigenvectors converged in a 289-dimensional two-plaquette fixture; no formula assertion failed",
+  "planned_correction": "keep all three eigenlevels and the original residual tolerance; use direct Hermitian dense diagonalization for these finite matrices",
+  "hashes": {
+    "notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md": "0feb8d558e5e84bfd9e2c038808d526d91fce567e47c3e576f9ca98262568934",
+    "evidence/block17_cyclic_scaling_check.py": "8aea2e56a75dc1437d040f7b2ab5b05554f4487413a6cad4659b015d5258aa31",
+    "evidence/block17_cyclic_scaling_check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block17_cyclic_scaling_check.stderr": "dd3e9333ae8c0cefa3c60d5bc4ee1909372fa952416df050aa29f1e44745b99e",
+    "review/BLOCK17_PREFLIGHT.json": "af9aedd41548d6a4a7f5ee2a9ea4d2b0ac8cea9aba19cb488dbc26a5ac571773"
+  }
+}

@@ -9,10 +9,11 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 17
-current_target: cyclic weak-coupling payload scaling and periodic oscillator comparison
+block: 18
+current_target: positive cyclic electric-generator cone and calibrated dispersion
+  accuracy
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T23:06:43.746007+00:00'
-next_step: derive exact cyclic Gauss coordinates and the Ng finite/infinite scaling
-  limits
+last_checkpoint_utc: '2026-09-15T23:25:33.255512+00:00'
+next_step: prove or refute nearest-neighbor optimality within the full nonnegative
+  phase-kernel class

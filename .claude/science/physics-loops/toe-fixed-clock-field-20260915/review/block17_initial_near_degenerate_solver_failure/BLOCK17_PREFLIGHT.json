@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-15T23:12:31.980775+00:00",
+  "target": "derive finite-volume cyclic weak-coupling limits at Ng finite, infinite and vanishing",
+  "status": "analytic draft frozen before companion checks",
+  "source_sha256": "115d55579d04668355321a176a540b4b63eaca60dbe12de9269924103889f166",
+  "planned_checks": [
+    "composite-N exact Gauss coordinates",
+    "periodic versus hard boundary and kinetic normalization",
+    "fixed-index spectra in three scaling regimes",
+    "charged shift signs and free-link matter comparator",
+    "uniform divergence-free trial and deficit inequality",
+    "independent Mathieu and oscillator asymptotic constants"
+  ],
+  "new_phase_solve": false
+}

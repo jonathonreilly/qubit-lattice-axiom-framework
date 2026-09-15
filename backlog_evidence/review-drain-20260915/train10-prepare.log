@@ -1,0 +1,145 @@
+[detached HEAD 8bac17e99a] Preserve reviewed native RK charge bounds and complete helper evidence
+ Date: Tue Sep 15 08:59:17 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 75 files changed, 8913 insertions(+)
+ create mode 100644 docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/GRAPH_BUILD.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/GRAPH_MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/READ_HASHES_INITIAL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/CANONICAL.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/native_rk_charge_mobile_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/native_rk_charge_stability_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/pr8040-before-variational-expansion-NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/before-variational-expansion/pr8040-before-variational-expansion-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/omit_signed_hole_order/native_rk_charge_ordered_holes_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/omit_signed_hole_order/pr8040-mutations-omit_signed_hole_order-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/omit_signed_hole_order/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/omit_signed_hole_order/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/one_common_neighbor/native_rk_charge_counting_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/one_common_neighbor/pr8040-mutations-one_common_neighbor-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/one_common_neighbor/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/one_common_neighbor/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/under_count_capacity/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/under_count_capacity/pr8040-mutations-under_count_capacity-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/under_count_capacity/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/under_count_capacity/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_path_charge/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_path_charge/pr8040-mutations-wrong_path_charge-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_path_charge/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_path_charge/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_reverse_phase/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_reverse_phase/pr8040-mutations-wrong_reverse_phase-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_reverse_phase/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/mutations/wrong_reverse_phase/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/mobile/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/mobile/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/mobile/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/mobile/pr8040-originals-mobile-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/mobile/pr8040-originals-mobile-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/static/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/static/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/static/SOURCE_BINDING.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/static/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/static/pr8040-originals-static-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/static/pr8040-originals-static-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/COUNT_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/count_check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/pr8040-originals-variational-COUNTING_EXTENSION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/pr8040-originals-variational-COUNTING_EXTENSION_PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/pr8040-originals-variational-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/pr8040-originals-variational-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/originals/variational/pr8040-originals-variational-SOURCE_BINDING.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/pr8040-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/pr8040-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/pr8040-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/pr8040-REVIEW_INITIAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8040-native-rk-charge-evidence/pr8040-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_rk_charge_stability_2026_09_08.txt
+ create mode 100644 outputs/native_rk_charge_stability_2026_09_08.json
+ create mode 100644 scripts/native_rk_charge_counting_2026_09_08.py
+ create mode 100644 scripts/native_rk_charge_mobile_2026_09_08.py
+ create mode 100644 scripts/native_rk_charge_ordered_holes_2026_09_08.py
+ create mode 100644 scripts/native_rk_charge_stability_2026_09_08.py
+ create mode 100644 scripts/native_rk_charge_static_2026_09_08.py
+[detached HEAD 45144be72c] Report verified Gaussian locality execution families and scope
+ Date: Tue Sep 15 08:59:19 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1201 insertions(+)
+ create mode 100644 docs/FINITE_STEP_GAUSSIAN_GAUGE_CANONICAL_LOGARITHM_AND_COULOMB_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/finite_step_gaussian_gauge_canonical_log_2026_09_14.txt
+ create mode 100644 scripts/finite_step_gaussian_gauge_canonical_log_2026_09_14.py
+[detached HEAD 194a5d3c55] Report verified periodic Gaussian codec execution families and scope
+ Date: Tue Sep 15 08:59:19 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1706 insertions(+)
+ create mode 100644 docs/PERIODIC_GAUSSIAN_FULL_PAYLOAD_MATRIX_CODEC_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/periodic_gaussian_full_payload_matrix_codec_2026_09_14.txt
+ create mode 100644 scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py
+[detached HEAD e5291d62a2] Report checked local Gaussian likelihood execution and exact scope
+ Date: Tue Sep 15 09:01:35 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 2210 insertions(+)
+ create mode 100644 docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt
+ create mode 100644 scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py
+FROZEN e5291d62a2e078dbb02a3a285e447da6b1647c2d sources 84 inputs 96 notes 4

@@ -1,9 +1,9 @@
 {
   "scope": "Original inventory116non-draft PRs;11drafts excluded; new arrivals not absorbed",
-  "landed_pr_count": 33,
-  "main": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "landed_pr_count": 38,
+  "main": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
   "workflow": "Prior efficiency changes verified remote; stage-manifest and dependent-base lifecycle fixes reviewed, landed, installed sync4994b354ed",
-  "current_validation": "train08: coherent PR8120+8121,116sourcepaths,two notes",
+  "current_validation": "train10 fourunits84sourcepaths4notes",
   "no_final_completion_claim": true,
   "prs": [
     {
@@ -94,7 +94,7 @@
     {
       "number": 8038,
       "original_head": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
-      "state": "independent review/author corrections/finalconfirmation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8039,
@@ -104,12 +104,12 @@
     {
       "number": 8040,
       "original_head": "2699dd9a380178ca79f4626f5a978d169f1a07b9",
-      "state": "pending source review"
+      "state": "independently reviewed; train10 validation running"
     },
     {
       "number": 8041,
       "original_head": "73965627fe841159f9c9a6cb43989156572970c9",
-      "state": "pending source review"
+      "state": "independent source review running"
     },
     {
       "number": 8042,
@@ -504,47 +504,47 @@
     {
       "number": 8120,
       "original_head": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
-      "state": "independently reviewed; train08 validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8121,
       "original_head": "6f9f79c030fe880cc1aea7c9aaf5fb4f9cc5e14f",
-      "state": "independently reviewed; train08 validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8122,
       "original_head": "a293aa3b67d64eda29ba959d43c209056c9ef7e4",
-      "state": "independent review/author corrections/finalconfirmation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8123,
       "original_head": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
-      "state": "independent review/author corrections/finalconfirmation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8124,
       "original_head": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
-      "state": "pending source review"
+      "state": "independently reviewed; train10 validation running"
     },
     {
       "number": 8125,
       "original_head": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
-      "state": "pending source review"
+      "state": "independently reviewed; train10 validation running"
     },
     {
       "number": 8126,
       "original_head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
-      "state": "pending source review"
+      "state": "independently reviewed; train10 validation running"
     },
     {
       "number": 8127,
       "original_head": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
-      "state": "pending source review"
+      "state": "independent source review running"
     },
     {
       "number": 8128,
       "original_head": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
-      "state": "pending source review"
+      "state": "independent source review running"
     },
     {
       "number": 8129,

@@ -1,0 +1,24 @@
+{
+  "pr": 8123,
+  "original_head": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+  "branch": "physics-loop/clock-penalty-local-support-20260914",
+  "landing": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/clock-penalty-local-support-20260914",
+    "headRefOid": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8123,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+    "state": "CLOSED"
+  }
+}

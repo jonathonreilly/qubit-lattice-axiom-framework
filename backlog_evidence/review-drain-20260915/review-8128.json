@@ -1,0 +1,131 @@
+{
+  "unit": "PR8128",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+  "original_merge_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "confirmation_base": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "final_tree": "80419d28ae6bdf4937aa22393df0ace19ab3997f",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8128",
+  "source_sha256": {
+    "docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": "f9a7f48025f12b3da542447520c2ed86463be7e9eb25f1277d16d6b9368e055b",
+    "logs/runner-cache/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.txt": "b35749ff721ed09ff20bbec4b03181931a268e3490ce84254d3b9041b3d637bf",
+    "scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py": "7be0f5094485e928aee98b7546f98759a728a7cc82d72da6379eef4de9f39827"
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_status": "A",
+      "original_sha256": "f9a7f48025f12b3da542447520c2ed86463be7e9eb25f1277d16d6b9368e055b",
+      "disposition": "accepted unchanged",
+      "final_path": "docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "f9a7f48025f12b3da542447520c2ed86463be7e9eb25f1277d16d6b9368e055b",
+      "recovery": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd:docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_status": "M",
+      "original_sha256": "7ea2063ebd83922b00fbda97fd59b5a924f77f6181f579e364f7c0c1a0c52526",
+      "disposition": "superseded topology acknowledgment; one zero-dependency node regenerated on combined current graph",
+      "final_path": null,
+      "final_sha256": null,
+      "recovery": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.txt",
+      "original_status": "A",
+      "original_sha256": "b35749ff721ed09ff20bbec4b03181931a268e3490ce84254d3b9041b3d637bf",
+      "disposition": "accepted unchanged",
+      "final_path": "logs/runner-cache/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.txt",
+      "final_sha256": "b35749ff721ed09ff20bbec4b03181931a268e3490ce84254d3b9041b3d637bf",
+      "recovery": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd:logs/runner-cache/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.txt"
+    },
+    {
+      "original_path": "scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py",
+      "original_status": "A",
+      "original_sha256": "7be0f5094485e928aee98b7546f98759a728a7cc82d72da6379eef4de9f39827",
+      "disposition": "accepted unchanged",
+      "final_path": "scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py",
+      "final_sha256": "7be0f5094485e928aee98b7546f98759a728a7cc82d72da6379eef4de9f39827",
+      "recovery": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd:scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "runtime_scientific_inputs": [],
+  "repository_claim_dependencies": [],
+  "dependency_scope": "All Hamiltonian/kernel objects restated and proofs self-contained. PR8123 and earlier campaign are provenance/context only; no claim authority or theorem imported. PR8127 has no changed-source overlap; confirmed with its reviewer.",
+  "external_methods": [
+    "Gaussian Fourier transform/Poisson periodization; restriction of positive kernels",
+    "Finite gauge group projection and exact cubical complex over Z3",
+    "Poisson/Dyson history expansion and finite-dimensional contraction, logarithm resolvent and spectral perturbation bounds",
+    "Perron-Frobenius for finite connected nonnegative matrix"
+  ],
+  "external_context": [
+    {
+      "url": "https://arxiv.org/html/2505.00079v2",
+      "scope": "Wilson principal-flux monopole numerical photon evidence; not proof premise"
+    },
+    {
+      "url": "https://arxiv.org/html/2401.04800v2",
+      "scope": "Modified Villain independent integer plaquette fields and constrained duality; distinct model, no phase theorem imported"
+    }
+  ],
+  "coverage": [
+    "Complete original note/373-line runner/cache/merge-base manifest delta; no .claude paths",
+    "Integer principal-flux gauge geometry, physical projection and original-link multiplicities",
+    "Strict positive Gaussian restriction and normalized spacetime kernel, mu0 endpoint",
+    "Principal image-tail difference; local Poisson disjoint-face factorization gives extensive29E error",
+    "Potential/commutator bounds, fixed-volume semigroup and canonical logarithm with local first coefficient",
+    "Exact physical three-square principal-kernel negative form and successful completion/two-step alternatives",
+    "All N1\u2013N8 scoped routes and no phase/native-law inference"
+  ],
+  "findings": [],
+  "review_boundaries": [
+    "Eighteen historical faults are author narrative, not independent receipts",
+    "Cube numerical truncation tail bounds omission, not floating-point roundoff; prose explicitly states this",
+    "No thermodynamic phase, uniform gap, all-orders logarithm locality, native law or axiom update established"
+  ],
+  "independent_control": {
+    "path": "/private/tmp/review-drain-20260915/check8128/independent.json",
+    "sha256": "0a6c815ca185fff0d7c4be77df6c275e159b6801911d8463448e9fd33b1adbed",
+    "summary": "39,690 exact rational grouped-boundary summands reproduce -901886967/55267035185152; analytic Fourier, Poisson, logarithmic expansion and gauge controls"
+  },
+  "execution": {
+    "command": [
+      "python3",
+      "scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py"
+    ],
+    "cwd": "/private/tmp/review-drain-20260915/unit8128",
+    "elapsed_sec": 1.5025196075439453,
+    "timeout_sec": 180,
+    "exit_code": 0,
+    "status": "ok",
+    "runner_sha256": "7be0f5094485e928aee98b7546f98759a728a7cc82d72da6379eef4de9f39827",
+    "stdout_sha256": "ab75b449425e88b59c1ea0c025ed06f0522c8f50ebccd9ab0f0521f049f4a5de",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receipt_path": "/private/tmp/review-drain-20260915/check8128/primary-execution.json",
+    "receipt_sha256": "da8a3922032d2663a4b9d2aac3937295333fd22bc142678ae6edae5ef7647ebe",
+    "families": 9,
+    "failures": 0,
+    "attempts": 1,
+    "cache_disposition": "Original source-identical cache preserved; independent actual execution captured separately, no restamping"
+  },
+  "source_loss_check": "Current-base delta consists only of three additions, all original canonical bytes preserved. Original generated manifest delta accounted and superseded by coordinator combined graph. No deleted or modified current source.",
+  "combined_gate": "Coordinator responsibility; no per-unit full pipeline or independent audit applied",
+  "claim_strength": "Bounded supplied-model positive transfer and extensive finite-volume Hamiltonian approximation, plus exact finite physical principal-kernel counterexample. Not retained-grade or phase certification."
+}

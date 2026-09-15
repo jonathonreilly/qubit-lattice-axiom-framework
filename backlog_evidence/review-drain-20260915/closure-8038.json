@@ -1,0 +1,215 @@
+{
+  "pr": 8038,
+  "original_head": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+  "branch": "codex/native-dynamical-cycle-dictionary-20260908",
+  "landing": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-charged-record-histories-20260909",
+        "headRefOid": "b20fb72faf9fb793487a664fb927296c65f7d493",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8065,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8065"
+      },
+      "original_merge_base": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "delta_sha256": "9bce5ecc649a8b7de96590fac0f2b84a994ece29a50989114904ce47e27a609e",
+      "delta_file": "closure-8038-child-8065-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-charged-record-histories-20260909",
+        "headRefOid": "b20fb72faf9fb793487a664fb927296c65f7d493",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8065,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8065"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-charged-record-histories-20260909",
+        "headRefOid": "b20fb72faf9fb793487a664fb927296c65f7d493",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8065,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8065"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-endpoint-20260908",
+        "headRefOid": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8049,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8049"
+      },
+      "original_merge_base": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "delta_sha256": "cb6a36153072e78d8c2ec9d0a0fc46ce481543b38727b3b0a81e8bc60017a41c",
+      "delta_file": "closure-8038-child-8049-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-endpoint-20260908",
+        "headRefOid": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8049,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8049"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-endpoint-20260908",
+        "headRefOid": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8049,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8049"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "headRefOid": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8044,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8044"
+      },
+      "original_merge_base": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "delta_sha256": "f6a64709fd5cf4ddb42e73ac4b5a59f62e2aab11869d6998e3c1e44e01a091dc",
+      "delta_file": "closure-8038-child-8044-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "headRefOid": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8044,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8044"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "headRefOid": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8044,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8044"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-low-charge-u1-dictionary-20260908",
+        "headRefOid": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8042,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8042"
+      },
+      "original_merge_base": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "delta_sha256": "cf48c0b46de8de3f203c50588e1f380052594d17647ad496dd1c0a4d0fa9a70b",
+      "delta_file": "closure-8038-child-8042-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-low-charge-u1-dictionary-20260908",
+        "headRefOid": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8042,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8042"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-low-charge-u1-dictionary-20260908",
+        "headRefOid": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8042,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8042"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-rk-charge-stability-20260908",
+        "headRefOid": "2699dd9a380178ca79f4626f5a978d169f1a07b9",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8040,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8040"
+      },
+      "original_merge_base": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "delta_sha256": "eb21e9e4a2c70d87ee4cb041bad0f87ad52e6e4ab77ec3d4f7e6b8833a35b84c",
+      "delta_file": "closure-8038-child-8040-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-rk-charge-stability-20260908",
+        "headRefOid": "2699dd9a380178ca79f4626f5a978d169f1a07b9",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8040,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8040"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-rk-charge-stability-20260908",
+        "headRefOid": "2699dd9a380178ca79f4626f5a978d169f1a07b9",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8040,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8040"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T13:00:28Z",
+    "headRefName": "codex/native-dynamical-cycle-dictionary-20260908",
+    "headRefOid": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8038,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8038"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+    "state": "CLOSED"
+  }
+}

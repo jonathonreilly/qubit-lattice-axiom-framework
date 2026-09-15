@@ -1,0 +1,24 @@
+{
+  "pr": 8120,
+  "original_head": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+  "branch": "physics-loop/toe-clock-spectral-loops-20260914",
+  "landing": "87bdeedb1c55e90f6b14bd95fe19f28dea7d6061",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-clock-spectral-loops-20260914",
+    "headRefOid": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8120,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8120"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+    "state": "CLOSED"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "unit": "PR8126",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+  "original_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "confirmation_base": "87bdeedb1c55e90f6b14bd95fe19f28dea7d6061",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8126-author-copy",
+  "final_tree": "3e4290e8255b43c23b8a33d8534a15f13c2da87d",
+  "source_sha256": {
+    "docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md": "42261237f8b78c63e37cc7da02cf92095ff0958cf9d17f540aa6738c37f77f4f",
+    "logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt": "f4d511e2b8768efa5415b88812d0117428f7cfc35ff90b17ef2fd28e3c3d8de3",
+    "scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py": "efdca14d5c5ffef25c7363215542c129ad5c8671ac50e8bc3451c6e452de82ed"
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_sha256": "42261237f8b78c63e37cc7da02cf92095ff0958cf9d17f540aa6738c37f77f4f",
+      "status": "A",
+      "disposition": "accepted unchanged",
+      "final_path": "docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "42261237f8b78c63e37cc7da02cf92095ff0958cf9d17f540aa6738c37f77f4f",
+      "recovery": "17484511b5afc6396d4709795b9e14951d3ec3b3:docs/PERMANENT_LOCAL_GAUSSIAN_LIKELIHOOD_PROTOCOL_AND_DK_POSTSELECTION_COST_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "b7c9e6d672d101452da700cf4266026f99d281860bca1a65e29350345be41bf6",
+      "status": "M",
+      "disposition": "superseded generated topology acknowledgment; one new zero-dependency node; coordinator regenerates combined current topology",
+      "final_path": null,
+      "final_sha256": null,
+      "recovery": "17484511b5afc6396d4709795b9e14951d3ec3b3:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt",
+      "original_sha256": "52529833936cb9c68f92c32a2a8fe420c974ccca48fa64b6ea19f4093c248f07",
+      "status": "A",
+      "disposition": "superseded original cache by actual final receipt",
+      "final_path": "logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt",
+      "final_sha256": "f4d511e2b8768efa5415b88812d0117428f7cfc35ff90b17ef2fd28e3c3d8de3",
+      "recovery": "17484511b5afc6396d4709795b9e14951d3ec3b3:logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt"
+    },
+    {
+      "original_path": "scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py",
+      "original_sha256": "8c309572e83ef500171c44d93ed6dc992daf034b881b199f054239613e369482",
+      "status": "A",
+      "disposition": "accepted mathematics unchanged; six output certificate/footer lines added",
+      "final_path": "scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py",
+      "final_sha256": "efdca14d5c5ffef25c7363215542c129ad5c8671ac50e8bc3451c6e452de82ed",
+      "recovery": "17484511b5afc6396d4709795b9e14951d3ec3b3:scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "repository_claim_dependencies": [],
+  "runtime_scientific_inputs": [
+    {
+      "path": "scripts/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_released7333_fixture_2026_09_10.py",
+      "sha256": "8d2e071da05f0e540c8ec061b5dbea6cb996040a33b90efcd2f6e11b73d52cd2",
+      "role": "supplied finite matrix construction definition; fully read helper and used supplier definitions"
+    },
+    {
+      "path": "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+      "sha256": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445",
+      "role": "supplied finite matrix construction definition; fully read helper and used supplier definitions"
+    }
+  ],
+  "dependency_scope": "Two linked and pinned runtime source definitions are load-bearing supplied matrix inputs. Historical DK note is comparison context; no repository theorem or audit status imported, so empty claim-node dependencies are honest.",
+  "external_methods": [
+    "Complex Gaussian conditioning, determinant identity and Schur complement (derived in note)",
+    "Hermitian quadratic-form and block covariance norm bounds; finite-rank resolvent identity",
+    "KL convexity/Pinsker inequality and sharp scalar reweighting bound (normalization independently checked)"
+  ],
+  "coverage": [
+    "Complete original note, runner, cache and manifest delta; no .claude packet",
+    "Full released fixture and used EX/ET/shift-lift supplier definitions",
+    "Normalized complex Gaussian finite-alpha posterior, determinant and positive-window costs",
+    "Periodic immersion, disjoint detours, causal type-DAG levels and one-write carrier rule",
+    "Finite DK logical circuit common roster and local Hodge/massive coercivity",
+    "Sharp finite-menu tilt and conditional low-rank resolvent bound; no arbitrary-cover rank certificate"
+  ],
+  "findings": [
+    {
+      "id": "reporting",
+      "status": "fixed confirmed",
+      "detail": "Canonical TOTAL4/0 and five honest resolution statements; no mathematical statements changed"
+    },
+    {
+      "id": "no-go-packet",
+      "status": "not applicable",
+      "detail": "Actual no-go classifier false; positive bounded development does not require new N1\u2013N8 section"
+    },
+    {
+      "id": "historical-mutations",
+      "status": "review boundary only",
+      "detail": "Twelve historical mutations are author narrative; no surviving executable receipts claimed or fabricated"
+    }
+  ],
+  "independent_control": {
+    "path": "/private/tmp/review-drain-20260915/check8126/independent.json",
+    "sha256": "f5d7287edb9d19101dfc3ea65db52147fe48d1c0758d30c6a4668ea29791abee"
+  },
+  "final_execution": {
+    "path": "/private/tmp/review-drain-20260915/8126-author-final-execution.json",
+    "sha256": "ca4153fdf4d6d874b190c59116cfbcea471f1b31a41fc37a2755336086f0b531",
+    "elapsed_sec": 27.273421049118042,
+    "timeout_sec": 180,
+    "exit_code": 0,
+    "families": 4,
+    "failures": 0,
+    "extra_primary_reruns": 0
+  },
+  "source_loss_check": "Exactly three added canonical source/evidence paths relative to current base; no current-main deletion or inherited replacement. Original manifest regenerated by coordinator; complete original recovered by frozen commit.",
+  "combined_gate": "Coordinator responsibility; no per-unit full pipeline or audit verdict applied",
+  "claim_strength": "Supplied permanent local Gaussian likelihood and posterior-cost theorem; no native law, typical phase, original Record-star law, quantum/fermion identification, massless estimate or executed full DK coordinate roster."
+}

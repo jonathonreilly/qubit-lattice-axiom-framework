@@ -1,0 +1,67 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/BLOCK26_FAULT_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/BLOCK26_FAULT_CHECKS.json",
+    "sha256": "0b387e52b5472c4974a2e9bb0a1c99f6a8d44e1fcb9097dddee325fc91ded86f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "899c692652255b4d17d707d14b49c9d410fb73d538b25722e76a6ebd4e2994b3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/CLUSTER_CAP_EVALUATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-CLUSTER_CAP_EVALUATION.md",
+    "sha256": "c8c83e1cb78f2ec80c671ac938c67742ad0ce9dc30362c1c4814e999e3ce9fbf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+    "sha256": "9a5201ca4f2bb1e010fba9d70fa33a88cd5d35bd01e17a77cb4c32f5fb178217"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-GOAL.md",
+    "sha256": "04f67e02b731145c9860e9b25926f5ef146bb0b4b9292fb461fd4cde19bd7cb8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-HANDOFF.md",
+    "sha256": "0cb8e8a5d6c11484dcbb4f2954c5b46a6b6b6365fc6b6252a01505aed62ed7c6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/INITIAL_CONTACT_FAILURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/INITIAL_CONTACT_FAILURE.json",
+    "sha256": "10593fd4870325ea619eb354392bc1310db5d6568b8b6314e7daaaddb2e3cd56"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/NOVELTY_AND_SEARCH.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-NOVELTY_AND_SEARCH.md",
+    "sha256": "a21b3be6f8f351036a4bbcc50dd15e99bd02a85e645c2914910967293e3b22ac"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/READING_LEDGER.json",
+    "sha256": "2a58619ca708426873906a529eafc8b85048e489242b2c85dda15286a242e63a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-REVIEW_HISTORY.md",
+    "sha256": "e89e650cb9fe89ebaf0e9b6922608de96d6ec4a6f5f3b549552a3b6eb56dac3a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/SOURCE_DISPOSITION.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/SOURCE_DISPOSITION.json",
+    "sha256": "1fd1b562aaaffd956ea72ce96d61920d45a5a4df14bb14681f3a4738e07ee569"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/STATE.yaml",
+    "sha256": "fb51ed974d393f14ec0e8b9a897f4b09bd92e3011cb1512e84ec7f8bede5bcda"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-spectrum-20260915/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-TRACE_GATE.md",
+    "sha256": "0b1f628c0f73962c53253a9c5b0f1b743f26248537be9bdab4c7ac7ccaea75c9"
+  }
+]

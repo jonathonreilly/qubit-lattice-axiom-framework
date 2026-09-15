@@ -1,0 +1,35 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "source_sha256": "493c813fd0aac2e764e1013d223fbf4bf0ff041b7606d9abf2efbc7b04685405",
+  "note_sha256": "4d2ee86d9b9dbcf82a1130315e1215f8baea4cd12a164500c366fb973f635bc3",
+  "local_links": [
+    "scripts/finite_clock_transfer_disorder_and_spectral_gap_perimeter_2026_09_14.py",
+    "logs/runner-cache/finite_clock_transfer_disorder_and_spectral_gap_perimeter_2026_09_14.txt",
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block12/REVIEW_HISTORY.md",
+    "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+  ],
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "mutations_detected": 12,
+  "independent_review": "pending",
+  "integration_gate": "Full mechanical pipeline, strict global lint and changed-evidence validation deferred under science workflow to exact integrated candidate; not claimed passed.",
+  "initial_missed_mutation": "Reversed seam orientation escaped symmetric summed traces; fixed-start flux path sums repaired the evidence. Initial receipts retained.",
+  "citation_graph": {
+    "nodes": 5042,
+    "edges": 12520,
+    "added": [
+      "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14"
+    ],
+    "removed": [],
+    "rewired": []
+  }
+}

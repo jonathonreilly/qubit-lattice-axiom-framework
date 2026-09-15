@@ -1,0 +1,90 @@
+{
+  "primary_sha256": "493c813fd0aac2e764e1013d223fbf4bf0ff041b7606d9abf2efbc7b04685405",
+  "results": [
+    {
+      "name": "shared_edge_fourier_sign",
+      "source_sha256": "bc265053d4ea5d6a597d2c3b57bd1efb2bae4e1e1cca8812a3165f1705eb3fb9",
+      "exit_code": 1,
+      "elapsed_sec": 0.7188876250293106,
+      "detected": true
+    },
+    {
+      "name": "reversed_seam_similarity",
+      "source_sha256": "26e6d43d18208033855f5092269a9a9bfba8d51ff31f2af4438e5c9de979ad44",
+      "exit_code": 1,
+      "elapsed_sec": 0.6222852079663426,
+      "detected": true
+    },
+    {
+      "name": "dropped_unitary_endpoint",
+      "source_sha256": "d1da61df94267de95c21ea0b671df0bcee14059394c7b99b4d52f404536eef46",
+      "exit_code": 1,
+      "elapsed_sec": 0.3824765000026673,
+      "detected": true
+    },
+    {
+      "name": "nontrivial_link_phase",
+      "source_sha256": "bd967fb7b890c227be9fd4ee07a580b1815c68086e2718b8833a2b8414c54983",
+      "exit_code": 1,
+      "elapsed_sec": 0.36415583302732557,
+      "detected": true
+    },
+    {
+      "name": "missing_positive_density_trace",
+      "source_sha256": "cd68708e60a47ab1da760e17c35a4cc1008f09e945288da4825653603bbd8ef4",
+      "exit_code": 1,
+      "elapsed_sec": 0.7365270409500226,
+      "detected": true
+    },
+    {
+      "name": "membrane_misses_loop",
+      "source_sha256": "e3235cdb125c7665bffd71126fd48df8e16a368a5c553756dff1e476cccdb518",
+      "exit_code": 1,
+      "elapsed_sec": 0.7383757499046624,
+      "detected": true
+    },
+    {
+      "name": "broken_closed_current",
+      "source_sha256": "d0e86196bbfd6e63cca4cdc5f6fde65f15a47b1a306695ae082266c111907af2",
+      "exit_code": 1,
+      "elapsed_sec": 0.7953491250518709,
+      "detected": true
+    },
+    {
+      "name": "wrong_dynamical_conjugation",
+      "source_sha256": "4aa9ffaf0ea3c45292b6d259626bb703fcce9568edc971dd01cc4de8ec024824",
+      "exit_code": 1,
+      "elapsed_sec": 0.7436996250180528,
+      "detected": true
+    },
+    {
+      "name": "missing_time_displacement",
+      "source_sha256": "c26fc156b34a886edac6f6a154f947fb8a99d67545f6740e60432452478755a6",
+      "exit_code": 1,
+      "elapsed_sec": 0.7755365829216316,
+      "detected": true
+    },
+    {
+      "name": "spectral_filter_gap_loss",
+      "source_sha256": "865cb7a489b146eebf8d8b504f8b1284d04b09a3406a8089a288eaf6e0b75e48",
+      "exit_code": 1,
+      "elapsed_sec": 0.748071042005904,
+      "detected": true
+    },
+    {
+      "name": "incorrect_triangular_density",
+      "source_sha256": "b6df86c011b2a3a6fc1bc6f785aa266c09f21573f7db175490e559a294805db0",
+      "exit_code": 1,
+      "elapsed_sec": 0.7321570409694687,
+      "detected": true
+    },
+    {
+      "name": "lost_ground_compression",
+      "source_sha256": "ef94e6b4c7d78427d43eba019e340b2b1581705be96c92645bdb599794b2f82e",
+      "exit_code": 1,
+      "elapsed_sec": 0.78389533306472,
+      "detected": true
+    }
+  ],
+  "independence": "Author falsifiers, not independent scientific review."
+}

@@ -1,0 +1,12 @@
+{
+  "base": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+  "before_nodes": 5042,
+  "after_nodes": 5043,
+  "before_edges": 12520,
+  "after_edges": 12521,
+  "added": [
+    "optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_bounded_theorem_note_2026-09-14"
+  ],
+  "removed": [],
+  "changed_existing": []
+}

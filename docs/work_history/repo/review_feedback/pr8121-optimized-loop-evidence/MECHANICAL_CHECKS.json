@@ -1,0 +1,26 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "source_sha256": "b4d5937fb08f7808bc003993e3c946c2977675b796bd423b16197827500393b8",
+  "note_sha256": "ac2fc8121f11d9be227a0ba13064d9fb280c19be0a2438e34e9d4c3b647e74ae",
+  "local_links": [
+    "scripts/optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_2026_09_14.py",
+    "logs/runner-cache/optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_2026_09_14.txt",
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block13/REVIEW_HISTORY.md",
+    "docs/FINITE_CLOCK_TRANSFER_DISORDER_AND_SPECTRAL_GAP_PERIMETER_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+  ],
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "mutations_detected": 13,
+  "independent_review": "pending",
+  "upstream_dependency": "PR8120 b9f5a6e279d6b5528e3488c8a9f02bbcc622b554; also pending independent review.",
+  "integration_gate": "Full mechanical pipeline, strict global lint and changed-evidence validation deferred under science workflow to exact integrated candidate; not claimed passed."
+}

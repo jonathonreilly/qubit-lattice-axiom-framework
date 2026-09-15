@@ -1,0 +1,31 @@
+{
+  "main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "personal_no_agents": true,
+  "prior_main": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "main_delta": "Only dispatch shadow date changed; fully inspected.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/math-ph/0603064v1",
+      "scope": "setup pp1-2, Theorem2.1 and full proof pp3-4, p5 through Theorem2.2 statement and start of proof",
+      "pdf_sha256": "d956ebb18b1d999f4121be6a01bf4c82429d10d3ffffeaea7d37cbdb31398698"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevD.21.1574",
+      "scope": "pp1-6 and start7; sectionIII relative-error critique",
+      "pdf_sha256": "343d515bcca57cc8d5acae76de920f7eb97c58739d80a6edbfe3fbc8354101c6"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevD.25.3325",
+      "scope": "all six pages",
+      "pdf_sha256": "cce82d25beb9f97c6f834ce84c63bd749afc8a2ffa794183a218f7300983c370"
+    },
+    {
+      "url": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
+      "scope": "pp1-70 and selected later passages; not full86 pages or published journal version",
+      "pdf_sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17"
+    }
+  ],
+  "repository_full_read": {
+    "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": "87142f568071bfe09ca5ca8ad513b02fdc10f9d839ef2ef3c4fab0327be909ac"
+  }
+}

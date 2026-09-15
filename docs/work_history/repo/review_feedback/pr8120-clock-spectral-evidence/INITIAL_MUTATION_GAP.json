@@ -1,0 +1,8 @@
+{
+  "mutation": "reversed_seam_similarity",
+  "exit_code": 0,
+  "detected": false,
+  "reason": "Charge-conjugation symmetric summed traces did not distinguish the insertion orientation.",
+  "repair": "Added independently enumerated fixed-start flux path sums and compared every diagonal matrix element.",
+  "scientific_effect": "Evidence strengthened; exact operator identity unchanged."
+}

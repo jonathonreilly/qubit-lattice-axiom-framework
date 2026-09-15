@@ -1,6 +1,6 @@
 {
- "edge_count": 13284,
- "node_count": 5715,
+ "edge_count": 13290,
+ "node_count": 5721,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13090,6 +13090,10 @@
    "deps_hash": "2a9d6130ac3c",
    "out_degree": 2
   },
+  "native_leading_ring_stoquastic_gauge_note_2026-09-08": {
+   "deps_hash": "24394f690c47",
+   "out_degree": 6
+  },
   "native_local_natural_ring_dynamics_note_2026-09-08": {
    "deps_hash": "4578d7bc3a88",
    "out_degree": 4
@@ -21509,6 +21513,26 @@
   "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.readme": {
    "deps_hash": "55c1b568b96b",
    "out_degree": 21
+  },
+  "work_history.repo.review_feedback.pr8050-leading-ring-evidence.kept.pr8050-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8050-leading-ring-evidence.kept.pr8050-review-e9c265c34aa8f6b7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8050-leading-ring-evidence.kept.pr8050-root_canonical_review-857933c7e06ad6ff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8050-leading-ring-evidence.kept.pr8050-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8050-leading-ring-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.independent-canonical-review.pr8051-independent-canonical-review-review": {
    "deps_hash": "e3b0c44298fc",

@@ -98,3 +98,16 @@ retain its decoded hash if compressing that historical delta. Then follow the
 full skill rules for retargeting, fresh head checks, exact-lease parent deletion
 and post-delete recovery. Drafts and children outside the frozen review backlog
 receive base preservation only; this operation never enrolls or accepts them.
+
+## Bounded Git blob verification
+
+Batch Git blob verification at a frozen revision with NUL-delimited
+`git cat-file --batch -z` requests where supported. Bound each batch by file
+count and a byte-size target; oversized individual blobs remain a separate
+memory consideration. Parse each full blob record strictly and compare every
+payload to its expected byte content or SHA-256. Missing/non-blob entries,
+protocol errors, source drift and command failures fail closed. A local index
+query and a fetched commit query are different authorities: use explicit
+stage-0 paths for index checks and one resolved commit ID for landed-source
+checks. Preserve both freshness passes and fresh PR-head/child/lease checks;
+batching changes transport only.

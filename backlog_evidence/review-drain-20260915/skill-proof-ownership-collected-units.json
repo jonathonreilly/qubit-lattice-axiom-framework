@@ -1,0 +1,37 @@
+{
+  "units": [
+    {
+      "unit": "skill-proof-ownership",
+      "prs": [],
+      "commits": [
+        "282b202fdebcf52b1e8cfe806c3f79a7ece185cf"
+      ],
+      "final_head": "282b202fdebcf52b1e8cfe806c3f79a7ece185cf",
+      "source_paths": {
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+      },
+      "inputs": {
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+      },
+      "reports": [
+        "skill-proof-ownership-independent-review.json",
+        "skill-proof-ownership-draft.json",
+        "check8076/procedural_api_control.py",
+        "8069-owned-proof-classification-addendum.json",
+        "8069-owned-proof-adapter-controls.json"
+      ],
+      "review_evidence_hashes": {
+        "skill-proof-ownership-independent-review.json": "aef7f75d0331111e17b8eeb999f233ccef01d481e7fe88133aa6e260eac4a015",
+        "skill-proof-ownership-draft.json": "45ba1a8035097aa3b2fb6cb7a852c718199b4cfcec05831ff20901641da04ca7",
+        "check8076/procedural_api_control.py": "781067cf93cfa461dd448b88ed59bda35de2476acd80a686f77fe8e144465523",
+        "8069-owned-proof-classification-addendum.json": "83d7ae62f9bb053c5b71b4a49bc8781a0ee90de17cf654852191bc2fc0814413",
+        "8069-owned-proof-adapter-controls.json": "cbc6f8d512922c3ea3b61a2de20cb79dd700305531df53db0600f815579b4882"
+      },
+      "procedural_only": true,
+      "procedural_review": "skill-proof-ownership-independent-review.json"
+    }
+  ],
+  "science_notes": 0,
+  "source_count": 1,
+  "collection_closed": "Independently reviewed procedural clarification; depart after existing units bound to prior reference revision."
+}

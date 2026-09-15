@@ -1,0 +1,22 @@
+{
+  "tree": "e6e65aa922946de431b81056234f08bfc9ede802",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8071-final.json",
+      "sha256": "4e99fda6118732f74b4e9a12b6a16c789c0d3da63abd8a242f90e1fd59b9c006"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-unit-v1-final.json",
+      "sha256": "4125f35dfb8d789d751dff6957b986a986060d99c6837defb8543ee6480a7baa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-final-preflight.json",
+      "sha256": "40ab307ae32c8d0873677d52352c591d8c582cbf06c89c45306bdf8c0b3670e1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8071.md",
+      "sha256": "08af5ea18aab565d0ee1108c1c190da8eafe9c9e8ea4c1f37e7e153f8087587c"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "old_reference_path": "/private/tmp/review-drain-20260915/8071-author-preexecution.json",
+  "preserved_path": "/private/tmp/review-drain-20260915/8071-author-preexecution-before-link-fix.json",
+  "sha256": "a183c8773d292461b57a55582cf2be94373d74d6ee8a80b44e35e5daec2edc11",
+  "scope": "Original author freeze referenced by prior corrected report relocated byte-exact by root; current author-preexecution path contains new final link correction. Prior reports remain unchanged.",
+  "current_source_tree": "0bf23b87103f7b07274a41610795cd36ad71d259"
+}

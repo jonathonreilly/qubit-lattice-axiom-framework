@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8071-final",
+  "tree": "e6e65aa922946de431b81056234f08bfc9ede802",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+      "claim_id": "native_mixed_gaussian_transition_note_2026-09-09",
+      "primary_runner": "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+      "helpers": [
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+      ],
+      "citations": [
+        "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8071-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8754,
+      "misses": 4414
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4412
+    },
+    "declared_inputs": {
+      "hits": 8780,
+      "misses": 4545
+    }
+  },
+  "record_sha256": "4125f35dfb8d789d751dff6957b986a986060d99c6837defb8543ee6480a7baa",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

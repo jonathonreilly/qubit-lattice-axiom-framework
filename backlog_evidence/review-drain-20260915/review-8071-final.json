@@ -1,0 +1,1826 @@
+{
+  "unit": "8071",
+  "reviewer_session": "/root/review_8011",
+  "status": "FINAL_SOURCE_CONFIRMATION",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "source_base": "1de0b3bcfbc785b12d4587aba3910b69e8af09cc",
+  "source_tree": "e6e65aa922946de431b81056234f08bfc9ede802",
+  "constituents": [
+    {
+      "number": 8071,
+      "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+      "original_base": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+      "canonical": [
+        "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+        "outputs/native_mixed_gaussian_transition_2026_09_09.json",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+        "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+        "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+      ],
+      "paths": [
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md",
+          "sha256": "457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+          "sha256": "b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json",
+          "sha256": "a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md",
+          "sha256": "cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json",
+          "sha256": "eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md",
+          "sha256": "c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md",
+          "sha256": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md",
+          "sha256": "892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md",
+          "sha256": "8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md",
+          "sha256": "1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md",
+          "sha256": "f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md",
+          "sha256": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md",
+          "sha256": "aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json",
+          "sha256": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml",
+          "sha256": "6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md",
+          "sha256": "94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json",
+          "sha256": "44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json",
+          "sha256": "a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json",
+          "sha256": "5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+          "sha256": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json",
+          "sha256": "93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json",
+          "sha256": "2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md",
+          "sha256": "e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json",
+          "sha256": "6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md",
+          "sha256": "3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json",
+          "sha256": "01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt",
+          "sha256": "b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd"
+        },
+        {
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json",
+          "sha256": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f"
+        },
+        {
+          "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+          "sha256": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "6ad883a47162f97de4b58f0fe2731a2cb61087b8a2a850fd773103104dd62979"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09.json",
+          "sha256": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+          "sha256": "fea46c382c9684dfe305ed7cdd8eaa7645fe0c3733e295fe29ed2ba478cb3fa2"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+          "sha256": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+          "sha256": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+          "sha256": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+          "sha256": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+          "sha256": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+          "sha256": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+          "sha256": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+          "sha256": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd"
+        },
+        {
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+          "sha256": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac"
+        },
+        {
+          "path": "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+          "sha256": "7f1552fddb5df60ae0c19843c9c79a5fd1aafe99fd8ee87a7c5ed60407224cf1"
+        },
+        {
+          "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+          "sha256": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f"
+        },
+        {
+          "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+          "sha256": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
+        }
+      ]
+    }
+  ],
+  "original_dispositions": {
+    "8071": [
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md",
+        "original_sha256": "457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14.gz",
+        "final_sha256": "dce0e0e97f4a12e75d4322e911592a009fe6b79ebeb6b8c5997d47fa12147a1f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "3c72f6b01d29451dbe9da9b351b18099d1e6569a",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md",
+          "raw_bytes": 161,
+          "raw_sha256": "457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14",
+          "stored_path": "_objects/457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14.gz",
+          "stored_sha256": "dce0e0e97f4a12e75d4322e911592a009fe6b79ebeb6b8c5997d47fa12147a1f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+        "original_sha256": "b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f.gz",
+        "final_sha256": "649de9615e5ee4683e03302d1544a048540d16eddd72b50e1f0c9db637ba75ec",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "55c58156682401c872ae04a96bfaa916e777dd05",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+          "raw_bytes": 309,
+          "raw_sha256": "b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f",
+          "stored_path": "_objects/b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f.gz",
+          "stored_sha256": "649de9615e5ee4683e03302d1544a048540d16eddd72b50e1f0c9db637ba75ec"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json",
+        "original_sha256": "a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0.gz",
+        "final_sha256": "dab5490bfba969f3c211bedf8d7f88fb011a27077ea8ff6d984569a7ffde70a8",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "521c47a7b80adc6df15c484186a8a5ae7c66c550",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json",
+          "raw_bytes": 364,
+          "raw_sha256": "a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0",
+          "stored_path": "_objects/a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0.gz",
+          "stored_sha256": "dab5490bfba969f3c211bedf8d7f88fb011a27077ea8ff6d984569a7ffde70a8"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md",
+        "original_sha256": "cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb.gz",
+        "final_sha256": "737e7602eb742cc2fe94c8805f1ae7797611c4c0c684a8816e23a5d2b6342d2a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ba2029a1c2e44c663c368ac1a6a730f39b22e00e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md",
+          "raw_bytes": 746,
+          "raw_sha256": "cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb",
+          "stored_path": "_objects/cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb.gz",
+          "stored_sha256": "737e7602eb742cc2fe94c8805f1ae7797611c4c0c684a8816e23a5d2b6342d2a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json",
+        "original_sha256": "eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee.gz",
+        "final_sha256": "7899095de3347d54a7336eb89edf676b946d9aeb64a3063b9dffa58bd50d5fa6",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "bbce490ae423c592b042c412b6854d6298ffd30c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json",
+          "raw_bytes": 5258,
+          "raw_sha256": "eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee",
+          "stored_path": "_objects/eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee.gz",
+          "stored_sha256": "7899095de3347d54a7336eb89edf676b946d9aeb64a3063b9dffa58bd50d5fa6"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md",
+        "original_sha256": "c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943.gz",
+        "final_sha256": "5bee23a00927dea8a6cfdc59dcd6cb598ee0a7601d3881dbc5605d97072dbc78",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "38ae98832d884177fb16d5bfe46465469e338ec7",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md",
+          "raw_bytes": 140,
+          "raw_sha256": "c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943",
+          "stored_path": "_objects/c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943.gz",
+          "stored_sha256": "5bee23a00927dea8a6cfdc59dcd6cb598ee0a7601d3881dbc5605d97072dbc78"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md",
+        "original_sha256": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/kept/pr8071-HANDOFF-9ef67db77ea9ef6f.md",
+        "final_sha256": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "ee9abaf10610fdc5bf4587073e720cddda47d4bd",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md",
+          "raw_bytes": 1300,
+          "raw_sha256": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330",
+          "stored_path": "kept/pr8071-HANDOFF-9ef67db77ea9ef6f.md",
+          "stored_sha256": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md",
+        "original_sha256": "892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421.gz",
+        "final_sha256": "d5a19ff3528d95db720db276211c5454c9e1784a3dc1595248c22f49b5331d8e",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b2356c820b0346b35206f58321b00455afec7d9a",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md",
+          "raw_bytes": 155,
+          "raw_sha256": "892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421",
+          "stored_path": "_objects/892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421.gz",
+          "stored_sha256": "d5a19ff3528d95db720db276211c5454c9e1784a3dc1595248c22f49b5331d8e"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md",
+        "original_sha256": "8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a.gz",
+        "final_sha256": "c39ed4c5392b3d6ded81a92ff26f520f3d03df5282f8415512d19942a0a5c102",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1c30090592295cdd3c2a4488a7534d50816ed8a9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md",
+          "raw_bytes": 185,
+          "raw_sha256": "8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a",
+          "stored_path": "_objects/8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a.gz",
+          "stored_sha256": "c39ed4c5392b3d6ded81a92ff26f520f3d03df5282f8415512d19942a0a5c102"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593.gz",
+        "final_sha256": "14b6d47488e934af8b6ee9670eda1eaad74f5fc69cb49204ea8487b880ec6e75",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "0e27638f33b68e6cb312d2eed814cbfbd168ed6b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md",
+          "raw_bytes": 176,
+          "raw_sha256": "1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593",
+          "stored_path": "_objects/1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593.gz",
+          "stored_sha256": "14b6d47488e934af8b6ee9670eda1eaad74f5fc69cb49204ea8487b880ec6e75"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md",
+        "original_sha256": "f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a.gz",
+        "final_sha256": "c4a80132b0bc75b3be72f3ee22ac44edc194cbbe4ca503f5f4491a35c8772b85",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "20b303edc5577c708b28e1888513d07b6ee9f6f8",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md",
+          "raw_bytes": 161,
+          "raw_sha256": "f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a",
+          "stored_path": "_objects/f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a.gz",
+          "stored_sha256": "c4a80132b0bc75b3be72f3ee22ac44edc194cbbe4ca503f5f4491a35c8772b85"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md",
+        "original_sha256": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/kept/pr8071-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "final_sha256": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "94a2542fd59bbb1ce7fdb58aa0deb4954eb3fc1a",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md",
+          "raw_bytes": 556,
+          "raw_sha256": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32",
+          "stored_path": "kept/pr8071-REVIEW_HISTORY-3f4cb79c836849bf.md",
+          "stored_sha256": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md",
+        "original_sha256": "aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1.gz",
+        "final_sha256": "e50d50e1cb4f078cc81d4b8930e213646849c638d63b2e82cbf585d7072cd86d",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "625b1239cb4ee5b924f13b7452018bdd55336d3a",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md",
+          "raw_bytes": 233,
+          "raw_sha256": "aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1",
+          "stored_path": "_objects/aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1.gz",
+          "stored_sha256": "e50d50e1cb4f078cc81d4b8930e213646849c638d63b2e82cbf585d7072cd86d"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json",
+        "original_sha256": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e.gz",
+        "final_sha256": "cadb75fca206265ceed1f818dcd93af71bc250ea4a628e1f4c11e6dd487b6f17",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7d64eb9d7497d3b3a4ec8a09fb90c01eef4c2930",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json",
+          "raw_bytes": 2502,
+          "raw_sha256": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
+          "stored_path": "_objects/57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e.gz",
+          "stored_sha256": "cadb75fca206265ceed1f818dcd93af71bc250ea4a628e1f4c11e6dd487b6f17"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml",
+        "original_sha256": "6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f.gz",
+        "final_sha256": "47dd4c5d75e8052035f01608e79b8571d40257947e7df97b3d2d409eba0a0d0f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b8e1283dfafe9bb07371aefc1dfcab7e94fdb081",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml",
+          "raw_bytes": 1435,
+          "raw_sha256": "6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f",
+          "stored_path": "_objects/6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f.gz",
+          "stored_sha256": "47dd4c5d75e8052035f01608e79b8571d40257947e7df97b3d2d409eba0a0d0f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md",
+        "original_sha256": "94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4.gz",
+        "final_sha256": "79f4b34bda76e952700895e2225fb9d48f790fbc0f6bce969bd86fee6a2eb047",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5fe54e10c736d83407f13687f3015fbef3dbb7e3",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md",
+          "raw_bytes": 627,
+          "raw_sha256": "94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4",
+          "stored_path": "_objects/94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4.gz",
+          "stored_sha256": "79f4b34bda76e952700895e2225fb9d48f790fbc0f6bce969bd86fee6a2eb047"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json",
+        "original_sha256": "44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f.gz",
+        "final_sha256": "b9cbb011747989ec0c89fc8dca97c2f81f5406715366fa071b1fbcc653859f86",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "33804f5a4821269b66dec2ff08238539c27f3171",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json",
+          "raw_bytes": 249,
+          "raw_sha256": "44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f",
+          "stored_path": "_objects/44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f.gz",
+          "stored_sha256": "b9cbb011747989ec0c89fc8dca97c2f81f5406715366fa071b1fbcc653859f86"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json",
+        "original_sha256": "a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e.gz",
+        "final_sha256": "b442a42e3463912db51d48d15f3ad4ba1bc39d3890dbd0b725de9d1ac50f2567",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6e397ef26c394ae9be0a4563284209e2883b98c9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json",
+          "raw_bytes": 2825,
+          "raw_sha256": "a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e",
+          "stored_path": "_objects/a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e.gz",
+          "stored_sha256": "b442a42e3463912db51d48d15f3ad4ba1bc39d3890dbd0b725de9d1ac50f2567"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json",
+        "original_sha256": "5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224.gz",
+        "final_sha256": "f1b0207105e8d710fc376cdccf76bccef7f95522de9ea3019e31bb78c3ba7de6",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e465c9eef92ee3991a5712e551790253e3c9ec0f",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json",
+          "raw_bytes": 2618,
+          "raw_sha256": "5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224",
+          "stored_path": "_objects/5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224.gz",
+          "stored_sha256": "f1b0207105e8d710fc376cdccf76bccef7f95522de9ea3019e31bb78c3ba7de6"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+        "original_sha256": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00.gz",
+        "final_sha256": "0c0496128f41953c77b3de8c5840d4523351dd8a56deac5e68914afe4c431cb2",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b8e3d0d23d9382935563e435cb13d1f3fc838116",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+          "raw_bytes": 15214,
+          "raw_sha256": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00",
+          "stored_path": "_objects/cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00.gz",
+          "stored_sha256": "0c0496128f41953c77b3de8c5840d4523351dd8a56deac5e68914afe4c431cb2"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json",
+        "original_sha256": "93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81.gz",
+        "final_sha256": "5a45fbcbe353620ca68f26c41b7a98a89fe1d938bc8b88e844b7f0e60ee673a0",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f6c74147fe9b8704f09f6e5d841b019aa1e2d1b9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json",
+          "raw_bytes": 2502,
+          "raw_sha256": "93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81",
+          "stored_path": "_objects/93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81.gz",
+          "stored_sha256": "5a45fbcbe353620ca68f26c41b7a98a89fe1d938bc8b88e844b7f0e60ee673a0"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json",
+        "original_sha256": "2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba.gz",
+        "final_sha256": "b1a6f340d97960a795ee0d651786a499978d33c4c3cc9369d9e2f9d7b82dba21",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "15d358675b7e15b812dee04d01760ebbd8a26aa1",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json",
+          "raw_bytes": 2150,
+          "raw_sha256": "2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba",
+          "stored_path": "_objects/2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba.gz",
+          "stored_sha256": "b1a6f340d97960a795ee0d651786a499978d33c4c3cc9369d9e2f9d7b82dba21"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md",
+        "original_sha256": "e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc.gz",
+        "final_sha256": "70a07e4b6b80d4273785a2bef4f81445ecdca629d065a0392328b50af1e3b29f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c7b80a281dda94a8dab9b13b9d46b444266034ef",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md",
+          "raw_bytes": 1893,
+          "raw_sha256": "e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc",
+          "stored_path": "_objects/e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc.gz",
+          "stored_sha256": "70a07e4b6b80d4273785a2bef4f81445ecdca629d065a0392328b50af1e3b29f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json",
+        "original_sha256": "6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2.gz",
+        "final_sha256": "c11b08a5cc7b13ccce1589642d60bce428b8b16d0a835370244d818df8bf0aa4",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "183fc79c9aabd77285405ddfe69dcd8b0f6c261e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json",
+          "raw_bytes": 2521,
+          "raw_sha256": "6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2",
+          "stored_path": "_objects/6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2.gz",
+          "stored_sha256": "c11b08a5cc7b13ccce1589642d60bce428b8b16d0a835370244d818df8bf0aa4"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md",
+        "original_sha256": "3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a.gz",
+        "final_sha256": "c338f521bf610802f0b3f26e67f742fca0fdc1db68e1c59fe6ac6fcf17b1ad1d",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5e23301be08053047279af58a9114be68c736488",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md",
+          "raw_bytes": 342,
+          "raw_sha256": "3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a",
+          "stored_path": "_objects/3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a.gz",
+          "stored_sha256": "c338f521bf610802f0b3f26e67f742fca0fdc1db68e1c59fe6ac6fcf17b1ad1d"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json",
+        "original_sha256": "01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42.gz",
+        "final_sha256": "daeb384d12987ce5648660991e7e586d05be1b68cfca515f161d5e4bcdac18f1",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5ef560700d2fa84ac6f490b2d2cf5c152c44affe",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json",
+          "raw_bytes": 117,
+          "raw_sha256": "01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42",
+          "stored_path": "_objects/01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42.gz",
+          "stored_sha256": "daeb384d12987ce5648660991e7e586d05be1b68cfca515f161d5e4bcdac18f1"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt",
+        "original_sha256": "b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd.gz",
+        "final_sha256": "2ca70ed31bf8a6b4acd87bb012272e026d9b9688c0a0ea3f59fd46997d155bd4",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "dba18cb1b8d2c24f3e76d9606f8dadfd5c484651",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt",
+          "raw_bytes": 753,
+          "raw_sha256": "b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd",
+          "stored_path": "_objects/b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd.gz",
+          "stored_sha256": "2ca70ed31bf8a6b4acd87bb012272e026d9b9688c0a0ea3f59fd46997d155bd4"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json",
+        "original_sha256": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f",
+        "original_status": "A",
+        "disposition": "Exact original historical author evidence; no current audit/reviewer authority.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f.gz",
+        "final_sha256": "07230fec70d8f99b392ec130a86551de4023ac3e6e120606bbf65208824329f1",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "a044213b791ef56639b3092c6f5cfcee9653ffde",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json",
+          "raw_bytes": 2825,
+          "raw_sha256": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f",
+          "stored_path": "_objects/3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f.gz",
+          "stored_sha256": "07230fec70d8f99b392ec130a86551de4023ac3e6e120606bbf65208824329f1"
+        }
+      },
+      {
+        "original_path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+        "original_sha256": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md"
+        },
+        "final_path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+        "final_sha256": "00a76a21b4dcc8000f68a9145511b93dc518d53104705898fca9deeb7de97c41",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "6ad883a47162f97de4b58f0fe2731a2cb61087b8a2a850fd773103104dd62979",
+        "original_status": "M",
+        "disposition": "Generated graph omitted and regenerated by integration; no submitted authority retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "docs/audit/data/citation_graph_manifest.json"
+        },
+        "final_path": null,
+        "final_sha256": null,
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09.json",
+        "original_sha256": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09.json"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09.json",
+        "final_sha256": "2428e9ce96fff2ef3ab9ecf8fe55f896d19da5aeedd6609253dcf71e42b01c61",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+        "original_sha256": "fea46c382c9684dfe305ed7cdd8eaa7645fe0c3733e295fe29ed2ba478cb3fa2",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+        "final_sha256": "44f8a5ae149595ed7836654ff2bac16c4e5ff6b84c2a37f6ffaa0098ef569221",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+        "original_sha256": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+        "final_sha256": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+        "original_sha256": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+        "final_sha256": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+        "original_sha256": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+        "final_sha256": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+        "original_sha256": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+        "final_sha256": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+        "original_sha256": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+        "final_sha256": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+        "original_sha256": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+        "final_sha256": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+        "original_sha256": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+        "final_sha256": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+        "original_sha256": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+        "final_sha256": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+        "original_sha256": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md"
+        },
+        "final_path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+        "final_sha256": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+        "original_sha256": "7f1552fddb5df60ae0c19843c9c79a5fd1aafe99fd8ee87a7c5ed60407224cf1",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "scripts/native_mixed_gaussian_transition_2026_09_09.py"
+        },
+        "final_path": "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+        "final_sha256": "b6a092c9ee74d3a181fe4d4c557b039945998b86d949e91c18d282ec38beb35b",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "original_sha256": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py"
+        },
+        "final_path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "final_sha256": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+        "original_sha256": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308",
+        "original_status": "A",
+        "disposition": "Current supplied-model proof/code/data preserved with reviewed operational metadata, current input pins and canonical output packaging; original recovery retained.",
+        "recovery": {
+          "head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+          "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+        },
+        "final_path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+        "final_sha256": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f",
+        "archive_mapping": null
+      }
+    ]
+  },
+  "source_paths": [
+    {
+      "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+      "sha256": "00a76a21b4dcc8000f68a9145511b93dc518d53104705898fca9deeb7de97c41"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42.gz",
+      "sha256": "daeb384d12987ce5648660991e7e586d05be1b68cfca515f161d5e4bcdac18f1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593.gz",
+      "sha256": "14b6d47488e934af8b6ee9670eda1eaad74f5fc69cb49204ea8487b880ec6e75"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba.gz",
+      "sha256": "b1a6f340d97960a795ee0d651786a499978d33c4c3cc9369d9e2f9d7b82dba21"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a.gz",
+      "sha256": "c338f521bf610802f0b3f26e67f742fca0fdc1db68e1c59fe6ac6fcf17b1ad1d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f.gz",
+      "sha256": "07230fec70d8f99b392ec130a86551de4023ac3e6e120606bbf65208824329f1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f.gz",
+      "sha256": "b9cbb011747989ec0c89fc8dca97c2f81f5406715366fa071b1fbcc653859f86"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14.gz",
+      "sha256": "dce0e0e97f4a12e75d4322e911592a009fe6b79ebeb6b8c5997d47fa12147a1f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e.gz",
+      "sha256": "cadb75fca206265ceed1f818dcd93af71bc250ea4a628e1f4c11e6dd487b6f17"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224.gz",
+      "sha256": "f1b0207105e8d710fc376cdccf76bccef7f95522de9ea3019e31bb78c3ba7de6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f.gz",
+      "sha256": "47dd4c5d75e8052035f01608e79b8571d40257947e7df97b3d2d409eba0a0d0f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2.gz",
+      "sha256": "c11b08a5cc7b13ccce1589642d60bce428b8b16d0a835370244d818df8bf0aa4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a.gz",
+      "sha256": "c39ed4c5392b3d6ded81a92ff26f520f3d03df5282f8415512d19942a0a5c102"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421.gz",
+      "sha256": "d5a19ff3528d95db720db276211c5454c9e1784a3dc1595248c22f49b5331d8e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81.gz",
+      "sha256": "5a45fbcbe353620ca68f26c41b7a98a89fe1d938bc8b88e844b7f0e60ee673a0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4.gz",
+      "sha256": "79f4b34bda76e952700895e2225fb9d48f790fbc0f6bce969bd86fee6a2eb047"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0.gz",
+      "sha256": "dab5490bfba969f3c211bedf8d7f88fb011a27077ea8ff6d984569a7ffde70a8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e.gz",
+      "sha256": "b442a42e3463912db51d48d15f3ad4ba1bc39d3890dbd0b725de9d1ac50f2567"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1.gz",
+      "sha256": "e50d50e1cb4f078cc81d4b8930e213646849c638d63b2e82cbf585d7072cd86d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd.gz",
+      "sha256": "2ca70ed31bf8a6b4acd87bb012272e026d9b9688c0a0ea3f59fd46997d155bd4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f.gz",
+      "sha256": "649de9615e5ee4683e03302d1544a048540d16eddd72b50e1f0c9db637ba75ec"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943.gz",
+      "sha256": "5bee23a00927dea8a6cfdc59dcd6cb598ee0a7601d3881dbc5605d97072dbc78"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb.gz",
+      "sha256": "737e7602eb742cc2fe94c8805f1ae7797611c4c0c684a8816e23a5d2b6342d2a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00.gz",
+      "sha256": "0c0496128f41953c77b3de8c5840d4523351dd8a56deac5e68914afe4c431cb2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc.gz",
+      "sha256": "70a07e4b6b80d4273785a2bef4f81445ecdca629d065a0392328b50af1e3b29f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/eb873c1c37e51dcdb2c95ff6ac3edaa7ae0325ffeeb223fd8543ea1e66cd67ee.gz",
+      "sha256": "7899095de3347d54a7336eb89edf676b946d9aeb64a3063b9dffa58bd50d5fa6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/_objects/f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a.gz",
+      "sha256": "c4a80132b0bc75b3be72f3ee22ac44edc194cbbe4ca503f5f4491a35c8772b85"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/archive-manifest.json",
+      "sha256": "e87fe75f94fabd28316219bba98528ce5fe9ad22d0369259f608e75c92d01abb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/kept/pr8071-HANDOFF-9ef67db77ea9ef6f.md",
+      "sha256": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/kept/pr8071-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "sha256": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/original-SOURCE_MANIFEST.json",
+      "sha256": "fea46c382c9684dfe305ed7cdd8eaa7645fe0c3733e295fe29ed2ba478cb3fa2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8071-evidence/original-native_mixed_gaussian_transition_2026_09_09.json",
+      "sha256": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f"
+    },
+    {
+      "path": "logs/runner-cache/native_mixed_gaussian_transition_2026_09_09.txt",
+      "sha256": "b08b5ff24c7c53157e7ecc59e5488706d21caa057c6dfc915d548aa2724b2860"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09.json",
+      "sha256": "2428e9ce96fff2ef3ab9ecf8fe55f896d19da5aeedd6609253dcf71e42b01c61"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+      "sha256": "44f8a5ae149595ed7836654ff2bac16c4e5ff6b84c2a37f6ffaa0098ef569221"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+      "sha256": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+      "sha256": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+      "sha256": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+      "sha256": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+      "sha256": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+      "sha256": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+      "sha256": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+      "sha256": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+      "sha256": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac"
+    },
+    {
+      "path": "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+      "sha256": "b6a092c9ee74d3a181fe4d4c557b039945998b86d949e91c18d282ec38beb35b"
+    },
+    {
+      "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+      "sha256": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2"
+    },
+    {
+      "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+      "sha256": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f"
+    }
+  ],
+  "runtime_scientific_inputs": [
+    {
+      "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+    },
+    {
+      "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+    },
+    {
+      "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+      "sha256": "00a76a21b4dcc8000f68a9145511b93dc518d53104705898fca9deeb7de97c41"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+      "sha256": "44f8a5ae149595ed7836654ff2bac16c4e5ff6b84c2a37f6ffaa0098ef569221"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+      "sha256": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+      "sha256": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+      "sha256": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+      "sha256": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+      "sha256": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+      "sha256": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+      "sha256": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+      "sha256": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd"
+    },
+    {
+      "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+      "sha256": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac"
+    },
+    {
+      "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+      "sha256": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2"
+    },
+    {
+      "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+      "sha256": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f"
+    }
+  ],
+  "input_bindings": {
+    "runtime": [
+      {
+        "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+        "sha256": "00a76a21b4dcc8000f68a9145511b93dc518d53104705898fca9deeb7de97c41"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json",
+        "sha256": "44f8a5ae149595ed7836654ff2bac16c4e5ff6b84c2a37f6ffaa0098ef569221"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json",
+        "sha256": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json",
+        "sha256": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md",
+        "sha256": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md",
+        "sha256": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md",
+        "sha256": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json",
+        "sha256": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json",
+        "sha256": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md",
+        "sha256": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd"
+      },
+      {
+        "path": "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md",
+        "sha256": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac"
+      },
+      {
+        "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "sha256": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2"
+      },
+      {
+        "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+        "sha256": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "sha256": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2"
+      },
+      {
+        "path": "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py",
+        "sha256": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+      },
+      {
+        "path": "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+        "sha256": "4849d98ce1cf17fad72f91082ebeed348505f2a98d0a5d78869c2364c7f2b6c3"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8071-evidence/README.md",
+        "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md",
+      "claim_id": "native_mixed_gaussian_transition_note_2026-09-09",
+      "declared_claim_id": "native_mixed_gaussian_transition",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_mixed_gaussian_transition_2026_09_09.py",
+      "helpers": [
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py",
+        "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py"
+      ],
+      "citations": [
+        "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8071-evidence/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+      ],
+      "dependency_rationale": "8070 supplies real skew finite-time chart with norm <= .99 and trace-class control;8067 supplies common finite-excitation CAR/Fock setting. Transitive chart/thermodynamic/node premises are context-bound. No8069 numerical overlap or alpha certificate is imported."
+    }
+  ],
+  "claim_dispositions": [
+    [
+      "Positive finite-time overlap",
+      "Common real CAR reference, real skew trace-class Z with norm<=.99; trace-log series and homotopy from zero yield strictly positive determinant branch at each fixed finite time. Hilbert-Schmidt compression products converge in trace norm. No uniform amplitude floor or physical alpha evaluation."
+    ],
+    [
+      "Ordered CAR/Wick",
+      "A=(I-ZC ZA)^-1,F=-A ZC,B=ZA A,C=-ZA A ZC; transpose CAR, antisymmetry and bilinear coefficient convention. Fixed degree bound uses ordered Wick signs/contact; transition functional need not be positive."
+    ],
+    [
+      "Certified approximations",
+      "2048-term Neumann bound, trace-log tail with trace norm, product-input telescope and common actual/approximate norm margins. Doubling/residual certificate and finite LU sign homotopy justified. Exact rational atanh enclosure gives scalar logs; no unconditional relative cost claim."
+    ],
+    [
+      "Repository premises",
+      "8070 Riccati forcing strict2r-99(1-r\u00b2)=99/10000 and finite-compression passage;8067 common GNS/Fock and relative-energy convention;8068 weighted rank-one chart constants,8063 thermodynamic CAR limit and node-reduction Green bound checked.8069 is not a numerical premise."
+    ],
+    [
+      "Execution boundary",
+      "Synthetic two/four-mode716 predicates include one resource predicate;16 exact fast controls. Independent6-mode Pfaffian/control suite separate. Native matrices, overlap values and physical calls are absent."
+    ]
+  ],
+  "independent_checks": {
+    "pass_count": 12,
+    "controls": [
+      "six-mode Pfaffian overlap determinant",
+      "six-mode ordered block (False, False)",
+      "six-mode ordered block (False, True)",
+      "six-mode ordered block (True, False)",
+      "six-mode ordered block (True, True)",
+      "transpose CAR contacts",
+      "fixed degree constants",
+      "2048-term tail strict",
+      "nonnormal fresh residual exact",
+      "permutation sign cannot be dropped",
+      "scalar log enclosure independent high precision",
+      "parent disk strict margin"
+    ],
+    "elapsed_seconds": 0.03304383298382163,
+    "scope": "Different six-mode Pfaffian coefficients and rational nonnormal residual/sign controls; no primary/helper or native physical execution."
+  },
+  "findings_resolved": [
+    "Parser Type placement, static discoverable helper loading, explicit source timeouts, isolation and platform RSS, honest N5/TOTAL count, actual current manifest pins. No mathematics modified."
+  ],
+  "historical_boundary": "Original manifest pins Fock34245618... while final frozen original source is47941c33...; earlier saved716+16 execution cannot certify exact final PR bytes. Both original manifest/output remain byte-exact in archive; new capture required. Historical review/freezes are author provenance, not current independent review.",
+  "supporting_proofs": "MIXED_PROOF,FAST_PROOF,FIXED_DEGREE read completely and explicitly runtime-bound. They are outputs-directory files excluded by actual graph.discover_notes, so schema2 discovered-note support records do not apply. FAST_PROOF approximate anchor norm must use canonical corrected actual approximate norm bound; no automatic1+r\u00b2 bound for arbitrary approximant.",
+  "external_methods": "Elementary CAR/exterior algebra, finite Wick expansion, trace-class Fredholm determinant series, operator-norm Neumann and exact rational logarithm enclosures used with stated finite/trace-class hypotheses; direct derivations checked. No external empirical values or unverified external theorem constants imported.",
+  "current_context": {
+    "main": "47dd808347266342e3d8c526e54c40533fa4d736",
+    "unchanged_inputs": [
+      {
+        "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "sha256": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+      },
+      {
+        "path": "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+        "sha256": "4849d98ce1cf17fad72f91082ebeed348505f2a98d0a5d78869c2364c7f2b6c3"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ],
+    "interaction": "Actual parent proof inputs unchanged on current main; independent later supplied gauge/Weyl packets do not modify common reference or Gaussian hypotheses."
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/inventory.json",
+      "sha256": "c1ddb961e1c344161a7dfc0801f4dbc10912d0f12eeedee08ff7bc1ea81411cc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/original-statuses.json",
+      "sha256": "be9b9876888c300842cc7574c9f72e646b9f7ca6eafff4e417591e4336b809ec"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/history-verification.json",
+      "sha256": "45dfd71aad07d0c0e5d7a4cb87bcc85dfbc7fa6dc2dbb07c0ae5d459a770398d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/verify-history.py",
+      "sha256": "0beb6a96311463f3bb0a01adc8b5c03cbe059d1965248eec6ebd75a780a6a20b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/canonical-author.diff",
+      "sha256": "5617515c7d651a22e6463f4af8e517ac91809edfee3dc672764dd377ab3c473c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/independent-controls.py",
+      "sha256": "2fa93d8fd2e2258ce79a906370e3669e80564a1557072cd1c89847758c001b29"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8071/independent-controls-result.json",
+      "sha256": "75a25427b51293bc4dd3307c24c58d207a9d9170e68c41e702fe4015a78f60ab"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-head-fetch.json",
+      "sha256": "93ebf179abbc10ab75a9f8cd145c43b324428407a9af24525485f9dc4d557727"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-draft-v2.json",
+      "sha256": "5e68588d8378d5143554ba4cb8cd5cd8804d303d60995bb2d54bc921528d05e6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8106-final.json",
+      "sha256": "3146774aaa77020f5af8764ffc61983692bf40ba801e6fc4bd5b2b5eec3efbba"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-preexecution.json",
+      "sha256": "0f3639f42672273e4702a126e3de18be3fa56e1e88125c13d7cae1279bd25786"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8071-preexecution.json",
+      "sha256": "e2b6dbc1b8a7896613280e7047963eba5829810618ea9677c5ac146e66d9f938"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-preexecution-preflight.json",
+      "sha256": "50f035f34f757ff0066b81b606c53e28749ff9f4c7cb9a01c6485bac6cb5df16"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8071-preexecution-corrected.json",
+      "sha256": "cbec954552ab638ad72ff7cabe5e1e89b731d64cab842863c1a9d12053bbfc7e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-preexecution-preflight-corrected.json",
+      "sha256": "725102179a7235a16f7e74097b0848163bcd29c6a9443edfcfba94abc2a721dd"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8071-preexecution-final.json",
+      "sha256": "d22f49fac8de35a9bea8a7f613473c132c4c463c8b5c3b1194cb89bbf6213f0f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-unit-v1-preexecution-final.json",
+      "sha256": "d4ef7179eccfd42d59db50af826e25094dc29ecb8a3bd7e22507f83021ae9e17"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-preexecution-preflight-final.json",
+      "sha256": "df8a7fe45ce0496a294141e4db7d73248f18e1ad74c250c645b42206229e09a6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-final-freeze.json",
+      "sha256": "f4b2ca785e337e5d1de69e692e27402e242421952793fc0b5b688a6cdc6cddb4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-final-execution.json",
+      "sha256": "80544b71cd5a589569c4756b416fb10da91ed25b37408358702d678476f7589f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-capture.py",
+      "sha256": "22577efbbf8a63b32840443451e9c300ba2417f650b9f80bcd55fcc901de9c67"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-capture-started.json",
+      "sha256": "a334b7ccdfeb38f060167f567fcc68519c59ea95a3276e2fafdd9bdfb8ce577c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-capture.log",
+      "sha256": "a773d107b36af159f326052c2a55a25e87fc5ebe0d596fc961b186ab27b29fb5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-final-output-comparison.json",
+      "sha256": "05eefaed9bd60bebf39d726317b6622d194ffee4fef8703a5957f1df54803078"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-preexecution-evidence-relocation.json",
+      "sha256": "a8cd2da668b7901868ef1240de0217bc3a04aeb46731a20fb418bd4548512285"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8071-author-preexecution-before-link-fix.json",
+      "sha256": "a183c8773d292461b57a55582cf2be94373d74d6ee8a80b44e35e5daec2edc11"
+    }
+  ],
+  "scope": "Conditional supplied real-Gaussian finite-time overlap and fixed-degree ordered-CAR/residual certificates; no selected native law, numerical alpha, uniform-time amplitude floor, axiom adoption or audit verdict.",
+  "remaining": "One final mechanical cache preflight and root combined integration gate; no primary rerun.",
+  "execution": {
+    "result": {
+      "path": "/private/tmp/review-drain-20260915/8071-author-final-execution.json",
+      "sha256": "80544b71cd5a589569c4756b416fb10da91ed25b37408358702d678476f7589f"
+    },
+    "primary_executions": 1,
+    "passed": 732,
+    "failed": 0,
+    "elapsed_seconds": 0.19105315208435059,
+    "timeout_seconds": 30,
+    "watchdog": {
+      "limit_bytes": 402653184,
+      "interval_sec": 0.02,
+      "root_pid": 49150,
+      "samples": 6,
+      "peak_tree_rss_bytes": 50593792,
+      "violations": [],
+      "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; inner self guards also remain."
+    },
+    "cache_sha256": "b08b5ff24c7c53157e7ecc59e5488706d21caa057c6dfc915d548aa2724b2860"
+  },
+  "output_comparison": {
+    "mathematical_output_fields_identical": true,
+    "changed_input_pins": {
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": {
+        "original": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
+        "current": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+      },
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": {
+        "original": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
+        "current": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": {
+        "original": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
+        "current": "00a76a21b4dcc8000f68a9145511b93dc518d53104705898fca9deeb7de97c41"
+      },
+      "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": {
+        "original": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
+        "current": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2"
+      },
+      "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": {
+        "original": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308",
+        "current": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f"
+      }
+    },
+    "physical_calls": 0,
+    "scope": "Only refreshed current source identities differ; no numerical mathematical field differs. Historical prior execution remains separately scoped."
+  }
+}

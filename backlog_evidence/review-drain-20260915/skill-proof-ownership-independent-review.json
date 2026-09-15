@@ -1,0 +1,15 @@
+{
+  "status": "PASS: procedural clarification only",
+  "source_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+  "checks": [
+    "Actual graph excludes outputs proof and rejects outside-docs Markdown target",
+    "Actual timeout API returns declared positive value and None when absent",
+    "Actual schema2 requires discovered proof; runtime input categories accept ordinary non-note paths under schema1",
+    "Owned-proof parent distinction confirmed by independent train50 adapter controls"
+  ],
+  "evidence": [
+    "8069-owned-proof-classification-addendum.json",
+    "8069-owned-proof-adapter-controls.json"
+  ],
+  "scope": "No checker change, full gate, source mutation or scientific execution; deferred landing context only."
+}

@@ -1,0 +1,27 @@
+{
+  "mathematical_output_fields_identical": true,
+  "changed_input_pins": {
+    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": {
+      "original": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
+      "current": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07"
+    },
+    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": {
+      "original": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
+      "current": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+    },
+    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": {
+      "original": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
+      "current": "00a76a21b4dcc8000f68a9145511b93dc518d53104705898fca9deeb7de97c41"
+    },
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": {
+      "original": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
+      "current": "f2f7fd6dec4bc2d5c27d6bd87cbb6f29bc971f004a84ddd987dc0dcc063488d2"
+    },
+    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": {
+      "original": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308",
+      "current": "3f2d247df5b2acc1901c16a39febbb9070124a7b0979600d59dfa3517461d56f"
+    }
+  },
+  "physical_calls": 0,
+  "scope": "Only refreshed current source identities differ; no numerical mathematical field differs. Historical prior execution remains separately scoped."
+}

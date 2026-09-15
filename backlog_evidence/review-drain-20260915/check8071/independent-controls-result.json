@@ -1,0 +1,19 @@
+{
+  "pass_count": 12,
+  "controls": [
+    "six-mode Pfaffian overlap determinant",
+    "six-mode ordered block (False, False)",
+    "six-mode ordered block (False, True)",
+    "six-mode ordered block (True, False)",
+    "six-mode ordered block (True, True)",
+    "transpose CAR contacts",
+    "fixed degree constants",
+    "2048-term tail strict",
+    "nonnormal fresh residual exact",
+    "permutation sign cannot be dropped",
+    "scalar log enclosure independent high precision",
+    "parent disk strict margin"
+  ],
+  "elapsed_seconds": 0.03304383298382163,
+  "scope": "Different six-mode Pfaffian coefficients and rational nonnormal residual/sign controls; no primary/helper or native physical execution."
+}

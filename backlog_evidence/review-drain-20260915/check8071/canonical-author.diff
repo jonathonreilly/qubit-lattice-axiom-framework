@@ -1,0 +1,129 @@
+docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md
+--- 
++++ 
+@@ -5,6 +5,8 @@
+ runner: scripts/native_mixed_gaussian_transition_2026_09_09.py
+ ---
+ # Positive mixed Gaussian overlaps and certified transition arithmetic
++
++**Type:** bounded_theorem
+ 
+ For the supplied real infinite native model, normalized finite-imaginary-time impurity vacua in a single common reference CAR frame have strictly positive mixed overlap. For unit real Majorana combinations, their overlap-normalized two- and four-insertion transition ratios are uniformly bounded by199 and118803. This note also supplies efficient finite-matrix inverse/logarithm certificates, with explicit input and Hilbert–Schmidt tail obligations. It performs no native evolution, overlap, or alpha calculation.
+ 
+@@ -166,3 +168,28 @@
+ The portable runner executes only the preserved synthetic2/4-mode literal Fock/CAR controls and exact2x2 doubling/log-tail controls. The716 Fock supporting predicates include one resource predicate; the16 fast predicates are exact rational controls. Wrong-sign comparisons are finite algebra discriminations, not mutated native physical solvers. No physical replay, determinant evaluation on native data, or timing forecast is included.
+ 
+ Original mathematical proofs, control receipts and source-bound independent reviews are preserved and pinned in the paired provenance directory. The assembled canonical proof includes only one clarification beyond those sources: approximate anchor upper norms use the actual certified approximate norm rather than silently inheriting r. Research protocol status is provenance, not a claim that a new computation ran. Formal audit status is not assigned by these supporting controls.
++
++
++## Canonical evidence and original recovery
++
++The [canonical cache](../logs/runner-cache/native_mixed_gaussian_transition_2026_09_09.txt) records the actual finite supporting controls under the original isolated 30-second and 384MiB contract. Memory supervision samples the executing process tree. No native evolution or physical oracle is launched.
++
++The [original packet](work_history/repo/review_feedback/pr8071-evidence/README.md) preserves source history and historical review statements. The raw paired provenance remains readable and hash-bound. Historical review labels are provenance, not a current source verdict. Current parent and helper pins are refreshed only after their scope and source changes are reviewed.
++
++## No-Go Discipline Gate
++
++**N1 — Tested and analytical alternatives.** Literal finite CAR controls distinguish contraction order and signs. The proof separately controls positive overlap phase, inverse residuals, determinant signs, logarithm enclosures and omitted Hilbert–Schmidt tails. These are finite controls and explicit analytical obligations, not completed native physical attempts.
++
++**N2 — Common scope.** The conclusions concern real skew pairings in one common reference disk and supplied certified approximations. They do not exclude other frames or computational representations.
++
++**N3 — Premises.** The linked imaginary-time reference-chart and Ward Fock/scalar results supply the stated model premises. No Green scalar certificate, new framework axiom or physical encoding is inferred.
++
++**N4 — Provenance.** Preserved proof snapshots and prior reviews document the original derivation. Current claims are stated in this canonical argument and require the actual common frame, pairing norms and error allocations.
++
++**N5 — Coverage.** The primary executes716 literal Fock predicates including one resource predicate and16 rational arithmetic predicates. Infinite-volume overlap and convergence are analytical. No native matrix or overlap is computed.
++
++**N6 — Remaining routes.** Certified native pairings, residuals and Hilbert–Schmidt tails could instantiate the conditional formulas. A positive overlap alone gives no dimension-independent amplitude floor or positive inserted kernel.
++
++**N7 — Next obligation.** Certify the common finite frame, matrix inputs, residuals, scalar enclosures and omitted tails before reporting physical transition kernels or algorithmic cost.
++
++**N8 — Result boundary.** The construction supplies bounded overlap and transition arithmetic within the stated chart. It supplies neither an alpha value nor an autonomous interacting phase.
+
+scripts/native_mixed_gaussian_transition_2026_09_09.py
+--- 
++++ 
+@@ -1,7 +1,29 @@
+ #!/usr/bin/env python3
+ """Portable supporting checks; no physical evolution or matrix evaluation."""
+-import argparse, contextlib, hashlib, io, json
++import os,sys
++if __name__=='__main__' and not (sys.flags.isolated and sys.dont_write_bytecode and sys.flags.no_site and sys.flags.optimize==2):
++ os.execv(sys.executable,[sys.executable,'-I','-B','-S','-OO',__file__,*sys.argv[1:]])
++import argparse, contextlib, hashlib, io, json, importlib.util
+ from pathlib import Path
++
++AUDIT_TIMEOUT_SEC=30
++AUDIT_INPUT_PATHS=('docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md', 'docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md', 'docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md', 'scripts/native_mixed_gaussian_transition_2026_09_09_fast.py', 'scripts/native_mixed_gaussian_transition_2026_09_09_fock.py', 'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json')
++
++def _capture_fock(root):
++ path=root/'scripts/native_mixed_gaussian_transition_2026_09_09_fock.py'
++ out=io.StringIO()
++ with contextlib.redirect_stdout(out):
++  spec=importlib.util.spec_from_file_location('__main__',root/'scripts/native_mixed_gaussian_transition_2026_09_09_fock.py');module=importlib.util.module_from_spec(spec)
++  exec(compile((root/'scripts/native_mixed_gaussian_transition_2026_09_09_fock.py').read_bytes(),str(path),'exec'),module.__dict__)
++ return json.loads(out.getvalue())
++
++def _capture_fast(root):
++ path=root/'scripts/native_mixed_gaussian_transition_2026_09_09_fast.py'
++ out=io.StringIO()
++ with contextlib.redirect_stdout(out):
++  spec=importlib.util.spec_from_file_location('__main__',root/'scripts/native_mixed_gaussian_transition_2026_09_09_fast.py');module=importlib.util.module_from_spec(spec)
++  exec(compile((root/'scripts/native_mixed_gaussian_transition_2026_09_09_fast.py').read_bytes(),str(path),'exec'),module.__dict__)
++ return json.loads(out.getvalue())
+ 
+ def main():
+  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--json',action='store_true');args=p.parse_args()
+@@ -11,13 +33,16 @@
+  for rel,digest in pins.items():
+   if hashlib.sha256((root/rel).read_bytes()).hexdigest()!=digest:raise ValueError('source binding: '+rel)
+  reports=[]
+- for name,count in [('fock',716),('fast',16)]:
+-  path=root/('scripts/native_mixed_gaussian_transition_2026_09_09_'+name+'.py')
+-  out=io.StringIO()
+-  with contextlib.redirect_stdout(out):exec(compile(path.read_bytes(),str(path),'exec'),{'__name__':'__main__','__file__':str(path)})
+-  row=json.loads(out.getvalue())
++ for loader,count in [(_capture_fock,716),(_capture_fast,16)]:
++  row=loader(root)
+   if row['predicates']!=count or row['physical_calls']!=0 or not row['status'].startswith('PASS'):raise ValueError('supporting control result')
+   row.pop('seconds',None);row.pop('rss_bytes',None);reports.append(row)
+  result={'status':'PASS_SUPPORTING_CONTROLS','claim_status':'conditional-support','physical_calls':0,'controls':reports,'input_hashes':pins,'scope':'Synthetic literal CAR and exact finite arithmetic only; no native overlap or alpha certificate.'}
+- print(json.dumps(result,sort_keys=True,indent=2))
++ payload=json.dumps(result,sort_keys=True,indent=2)+'\n';(root/'outputs/native_mixed_gaussian_transition_2026_09_09.json').write_text(payload);print(payload,end='')
++ print('TOTAL: PASS='+str(sum(row['predicates'] for row in reports))+' FAIL=0')
++ print('per_element: literal synthetic ordered CAR and rational identities are checked; no native matrix is evaluated.')
++ print('per_site: only declared two-mode and four-mode synthetic fixtures execute; no native spatial propagation is performed.')
++ print('per_mode: relative pairing frames and Majorana signs are analytical obligations and synthetic finite controls, not computed native orbitals.')
++ print('per_block:716 Fock predicates include one resource predicate;16 exact fast controls check finite arithmetic, not physical solver mutants.')
++ print('lattice_wide: infinite overlap positivity and tail estimates are conditional analytical results; no alpha value, amplitude floor or native evolution is computed.')
+ if __name__=='__main__':main()
+
+scripts/native_mixed_gaussian_transition_2026_09_09_fast.py
+--- 
++++ 
+@@ -1,3 +1,4 @@
++AUDIT_TIMEOUT_SEC=30
+ from fractions import Fraction as F
+ import json
+ q=F(9801,10000);g=1-q;n=0
+
+scripts/native_mixed_gaussian_transition_2026_09_09_fock.py
+--- 
++++ 
+@@ -1,6 +1,7 @@
+ """Independent literal Fock algebra; synthetic 2/4-mode rational pairings only."""
++AUDIT_TIMEOUT_SEC=29
+ from fractions import Fraction as Q
+-import json,signal,time,resource
++import json,signal,time,resource,sys
+ signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError('29s exact controls')));signal.alarm(29)
+ start=time.monotonic();checks=0;wrong_sign_failures=0
+ 
+@@ -101,6 +102,6 @@
+ r=Q(99,100);q=r*r
+ req(q**2049/(1-q)<Q(1,10**15),'finite Neumann tail')
+ req(1/(1-q)==Q(10000,199),'inverse bound')
+-seconds=time.monotonic()-start;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++seconds=time.monotonic()-start;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)
+ req(seconds<30 and rss<384*1048576,'resources')
+ print(json.dumps({'status':'PASS','predicates':checks,'fixtures':4,'wrong_F_sign_discriminations':wrong_sign_failures,'seconds':seconds,'rss_bytes':rss,'physical_calls':0,'scope':'literal synthetic Fock exponent, ordered CAR, overlap determinant and Majorana Wick tests; no native evolution'},indent=2))

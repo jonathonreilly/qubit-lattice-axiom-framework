@@ -1,0 +1,29 @@
+{
+  "source_sha256": "2f12fa7be53742b085ccadf09ca2b64542fed3fa27f5e79662ec97538c45aaaf",
+  "mutations": [
+    {
+      "name": "missing_smoothing_noise",
+      "old": "return value * gaussian",
+      "new": "return value",
+      "sha256": "97a678c456a9bd35d395bf59740ac4038748d7b8e9d1b91c9b9e80825c604bee",
+      "exit_code": 1,
+      "assertion_failed": true
+    },
+    {
+      "name": "wrong_rate_energy",
+      "old": "math.exp(-q / 4) * law.mgf(-Av / 2)",
+      "new": "math.exp(-q / 8) * law.mgf(-Av / 2)",
+      "sha256": "bdd26e0b16ed24b69252c3ecbfef24be5c323edbcee13612c6345e133fbbfc46",
+      "exit_code": 1,
+      "assertion_failed": true
+    },
+    {
+      "name": "wrong_shift_phase",
+      "old": "q/2 - 1j*np.dot(t, v)",
+      "new": "q/2 + 1j*np.dot(t, v)",
+      "sha256": "14b65ab84cafb648d7b3df7cec70c6919bc5e66f9664b3d897afd4287f7823e4",
+      "exit_code": 1,
+      "assertion_failed": true
+    }
+  ]
+}

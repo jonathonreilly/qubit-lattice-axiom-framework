@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/toe-clock-wrong_rate_energy.py", line 141, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/toe-clock-wrong_rate_energy.py", line 98, in main
+    assert 0 < rate_plus.real <= bound + 2e-13
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

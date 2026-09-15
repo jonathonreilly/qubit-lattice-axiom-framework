@@ -1,0 +1,17 @@
+campaign: toe-fixed-clock-field-20260915
+status: active_discovery
+actual_claim_status: provisional
+start_utc: '2026-09-15 13:45:03 UTC'
+deadline_utc: '2026-09-16 01:45:03 UTC'
+base_main: 6ad6a2184b7c2067e597528e0964753874493b4a
+planning_revision: 6e143f6c6a76ad1cf783adf9310bb822b2c841b2
+branch: physics-loop/toe-fixed-clock-field-20260915
+execution: personal_no_subagents
+delivery: milestone
+checkpoint_minutes: 30
+block: 1
+current_target: fixed-finite-clock full physical electromagnetic field scaling
+review_status: author_exploration_no_independent_review
+previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
+last_checkpoint_utc: '2026-09-15T14:14:37.923847+00:00'
+next_step: actual hybrid diffusion-jump curvature and response test

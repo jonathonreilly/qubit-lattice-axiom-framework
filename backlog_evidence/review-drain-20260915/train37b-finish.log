@@ -1,0 +1,31 @@
+native_l6_nonlinear_star_vertex_note_2026-09-09 bounded_theorem unaudited ['scripts/native_l6_nonlinear_vertex_envelope_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_fp_guard_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_geometry_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_review_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_transport_2026_09_09.py', 'scripts/native_l6_nonlinear_vertex_validate_coefficients_2026_09_09.py']
+native_l6_sixth_prefix_gap_certificate_note_2026-09-08 bounded_theorem unaudited ['scripts/native_l6_sixth_prefix_gap_arithmetic_2026_09_08.py', 'scripts/native_l6_sixth_prefix_gap_geometry_2026_09_08.py']
+docs/audit/data/citation_graph_manifest.json | 72 +++++++++++++++++++++++++++-
+ 1 file changed, 70 insertions(+), 2 deletions(-)
+[detached HEAD ac90853958] Acknowledge reviewed source topology for train37b
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 70 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   b64cd9c759..ac90853958  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED ac9085395843717c074d96515cc1f808681b29b6

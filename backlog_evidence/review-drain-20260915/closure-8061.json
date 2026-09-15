@@ -1,0 +1,19 @@
+{
+  "pr": 8061,
+  "original_head": "da572021da3cd5469af0b5bae4f028faf4af3d98",
+  "branch": "codex/native-l6-nonlinear-star-vertex-20260909",
+  "landing": "ac9085395843717c074d96515cc1f808681b29b6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T17:17:42Z",
+    "headRefName": "codex/native-l6-nonlinear-star-vertex-20260909",
+    "headRefOid": "da572021da3cd5469af0b5bae4f028faf4af3d98",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8061,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8061"
+  }
+}

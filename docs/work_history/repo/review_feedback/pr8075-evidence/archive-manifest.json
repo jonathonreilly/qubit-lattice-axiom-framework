@@ -1,0 +1,1285 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "1ceba7f8d8665ee14500df8dc194edfccb883e03",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 249,
+      "raw_sha256": "11251aec1e26cc358d1ae53b1d979be6e55518b2e78589b584e43c235040660d",
+      "stored_path": "_objects/11251aec1e26cc358d1ae53b1d979be6e55518b2e78589b584e43c235040660d.gz",
+      "stored_sha256": "ccb0c600cc2720a1b9a4d55c259b855889319f21ad84717ed0184d2f09cdaa54"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9db802e3862f9ad31f569628e280a4b5375a9b04",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 345,
+      "raw_sha256": "0f0670e50489d8023113ada056706e71a87343d92dcbc3f0e9296076eceb3801",
+      "stored_path": "_objects/0f0670e50489d8023113ada056706e71a87343d92dcbc3f0e9296076eceb3801.gz",
+      "stored_sha256": "23dd3aa5aa96ebc212d5793acdb53e218c1eede8bc2ad65deaae26700aef47f8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8e88129a9c490501322ece32470931ae284f83ad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 387,
+      "raw_sha256": "9cb1669b7b08b7fdb3d905763d57ad0a95be2ccee445ca7c8a6d80ddd5ab2799",
+      "stored_path": "_objects/9cb1669b7b08b7fdb3d905763d57ad0a95be2ccee445ca7c8a6d80ddd5ab2799.gz",
+      "stored_sha256": "5b1744eb148d756105fd9c9bfd1828cdf8e2f7e399fb9cf9e6688909d75ae731"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "da2dcc7f9953bf553b36a0ff930d0c4281914147",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/DELIVERY_FREEZE.json",
+      "raw_bytes": 258,
+      "raw_sha256": "72354fa5edcb16de8dbc0213cfbf15573ddcdbf6a6512f31db990c9d6e3a275f",
+      "stored_path": "_objects/72354fa5edcb16de8dbc0213cfbf15573ddcdbf6a6512f31db990c9d6e3a275f.gz",
+      "stored_sha256": "311e4dbcf3722e151796824a44ddb3960b7e05b497530d4b0371cdd5934b2a8a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ff5c2b44d7bf5c9e6a52f9b9f879b5ce62eb35af",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/GOAL.md",
+      "raw_bytes": 261,
+      "raw_sha256": "219f9338ed8ddcbe278b36c6cedd4bb6af2a1c79f320d189fff2205196a33c36",
+      "stored_path": "_objects/219f9338ed8ddcbe278b36c6cedd4bb6af2a1c79f320d189fff2205196a33c36.gz",
+      "stored_sha256": "ce0ccec01c1feb85eb104e3cdfd94b8485a25a633ab4f8931dfe6311c57f51ac"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "f426ac946fa277662be971b51fd67fc149fb46d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/HANDOFF.md",
+      "raw_bytes": 777,
+      "raw_sha256": "4db4267525b1ce3ca550a6d5de8f35e81091a52cdfd8fbb24ef3b523712cce8f",
+      "stored_path": "kept/pr8075-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "4db4267525b1ce3ca550a6d5de8f35e81091a52cdfd8fbb24ef3b523712cce8f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0ccd3d6455c943fc03f42db68f2cab2efbac397f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 226,
+      "raw_sha256": "985e2c62064d8480d277c6d0a6e95ded7b4d05f6ae3a511cf8f0cabccc03908d",
+      "stored_path": "_objects/985e2c62064d8480d277c6d0a6e95ded7b4d05f6ae3a511cf8f0cabccc03908d.gz",
+      "stored_sha256": "226bb8f0d65391eeb343eda6bcd179e29532f4e9257f15842f6ba13620365b30"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2e0ed3304d7ec82a077e33fb5e83e3425b6a0537",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 245,
+      "raw_sha256": "1126cdf2ee0847355290e92296a5650eb51a17f8dcc597e2d214192745d3190f",
+      "stored_path": "_objects/1126cdf2ee0847355290e92296a5650eb51a17f8dcc597e2d214192745d3190f.gz",
+      "stored_sha256": "a6499e60746e80ff11ca7f85f3eb30ee90c96d203d0c52d305a2c825a26d4f22"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3c3cb9a7127b7c154d9589ccc78c4744fa62f914",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 189,
+      "raw_sha256": "57c39ee0291abfeb1c5468b4aa346d6f76a176d5e55952bb6465c6ade612273d",
+      "stored_path": "_objects/57c39ee0291abfeb1c5468b4aa346d6f76a176d5e55952bb6465c6ade612273d.gz",
+      "stored_sha256": "2f5fddfb314b642418c14d5571822767e380d9f85f0f660fdaee56b02206516b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1fbcf97d5266f5c0f3ad0bfc5b64436143c2b906",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/PR_BACKLOG.md",
+      "raw_bytes": 158,
+      "raw_sha256": "326ade155a7cee7eef60df9f3254a04e3c8419843e283e1ca33f3c3af1724f55",
+      "stored_path": "_objects/326ade155a7cee7eef60df9f3254a04e3c8419843e283e1ca33f3c3af1724f55.gz",
+      "stored_sha256": "4c62923c3897cc18a642282e3e26f7ff9c70f9cec46bace78b01bcada86fc0bc"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "45fc56b03d3ee058661cbeadb0c60e34a2c8b962",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 425,
+      "raw_sha256": "20176d22e1b18e8689559680bebeb5304bb1f47311a8856a669a08a42d151396",
+      "stored_path": "kept/pr8075-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "20176d22e1b18e8689559680bebeb5304bb1f47311a8856a669a08a42d151396"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bc813048bce2525ba8036ded95d8017c419bc39a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 215,
+      "raw_sha256": "665d1afc0f885547c98a02291ca240b2e20d8a9a9ce81b1e5a336436a664f071",
+      "stored_path": "_objects/665d1afc0f885547c98a02291ca240b2e20d8a9a9ce81b1e5a336436a664f071.gz",
+      "stored_sha256": "bf08db2bd0f2e55496282e019cc759080f3f198805a8ca8525f383d9cf5060ef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ae987e940d0abb29457c14e4e4fe0c1a881a0c06",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/SOURCE_FREEZE.json",
+      "raw_bytes": 17219,
+      "raw_sha256": "7e6fa58c7248c0c766b53772db19515c58979f214cf05abce23f96d328ede5a3",
+      "stored_path": "_objects/7e6fa58c7248c0c766b53772db19515c58979f214cf05abce23f96d328ede5a3.gz",
+      "stored_sha256": "29c404f46b38bbe31ba3d5f55a50d45eba2ed6413c559d44b1fb393157121b85"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2b86726087245d6d54185a486efcc894795c4c5d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/STATE.yaml",
+      "raw_bytes": 374,
+      "raw_sha256": "df183d44425b2d135404cf98984a09e00350c542c2a41214e4db1be2348402a2",
+      "stored_path": "_objects/df183d44425b2d135404cf98984a09e00350c542c2a41214e4db1be2348402a2.gz",
+      "stored_sha256": "59879dcecb786837bbce574c886517f0f9b441ae624458c9098bfd73592a636a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3a667c00e680fff6389faf1322cfa33d57234d9f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/TRACE_GATE.md",
+      "raw_bytes": 333,
+      "raw_sha256": "9293f77f59fcf3328350f274c1575c4a07d40096850fde0b9abaa73d739daba1",
+      "stored_path": "_objects/9293f77f59fcf3328350f274c1575c4a07d40096850fde0b9abaa73d739daba1.gz",
+      "stored_sha256": "f424f855e315511f8afe8fc8bda4e3a9449cc7b52290f777eaa2ebc0ce9f919b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "12cb26d69d5536fdb571ccec2d85706a6f31d54b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/FAILURE_RECOVERY.json",
+      "raw_bytes": 1865,
+      "raw_sha256": "43d66c914416f675dac88420b6dd5b8b8e8f9650794485fb0f6df363ef6b95ac",
+      "stored_path": "_objects/43d66c914416f675dac88420b6dd5b8b8e8f9650794485fb0f6df363ef6b95ac.gz",
+      "stored_sha256": "871f15cf2e987ea91cfa459cb64dc1441c81df7c5329672366ff5493fc6f2951"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f982445469f25d91f0ebf058b77a245464ebd629",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/OUTPUT.json",
+      "raw_bytes": 1172,
+      "raw_sha256": "890208b1dc04df856457f075ba7ac3b18febec4a67b4615474e6fddbca733f17",
+      "stored_path": "_objects/890208b1dc04df856457f075ba7ac3b18febec4a67b4615474e6fddbca733f17.gz",
+      "stored_sha256": "2d7501ed45b84d93363cbbd01dad94d1d9204d1dd9beca01bc3d07fa478b29ad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "992298eab3898c70e310b064838673158f2e8ee9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/OUTPUT_CURRENT.json",
+      "raw_bytes": 1188,
+      "raw_sha256": "01bcb95de2ad0f6b9fcb4fdece39a57bec889c7dc2885ed5fea021aa73b18d97",
+      "stored_path": "_objects/01bcb95de2ad0f6b9fcb4fdece39a57bec889c7dc2885ed5fea021aa73b18d97.gz",
+      "stored_sha256": "24955955aba869e18f9d52ca46541c88da40cbe9c8cc0a4fbb35a63ff238667a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f054ea32c2ff549aafe9d6da28c00ff692638280",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/RECOVERY_MANIFEST.json",
+      "raw_bytes": 38854,
+      "raw_sha256": "e11fad74b8ab786d6c17e1f4a43df418e8901b60fa9bd51563b02f8d64717bbf",
+      "stored_path": "_objects/e11fad74b8ab786d6c17e1f4a43df418e8901b60fa9bd51563b02f8d64717bbf.gz",
+      "stored_sha256": "e0a2554ed8817e3ce5cc1560068e52ade492a9fe61a0e356c5d7a4311558aeaf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ca1abd1bc7efa0b469369c1ba7d0721ace73c71a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/RUN_RECORD.md",
+      "raw_bytes": 708,
+      "raw_sha256": "9998e8f3711a5db64c14eebc417e63645417b62f6244fc36de0874786709a6df",
+      "stored_path": "_objects/9998e8f3711a5db64c14eebc417e63645417b62f6244fc36de0874786709a6df.gz",
+      "stored_sha256": "91797ef71516d7930a147d74035bf11f383994dde72808423205eac58ee66366"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3c0aa1f6925f3be1ff04a167a045d0f15a43ddec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/SCALARS.json",
+      "raw_bytes": 2822,
+      "raw_sha256": "d1f9d8b68b47ad6ec7703ecde2e0b06489363c1dc562392dc64cc6a598f26201",
+      "stored_path": "_objects/d1f9d8b68b47ad6ec7703ecde2e0b06489363c1dc562392dc64cc6a598f26201.gz",
+      "stored_sha256": "8246e3ae82695b99a487e916addd2ee6a06947cd7de2bc8dc9ed4f9300bb6976"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ae70bd568ef22d7a005968095e1117e11f82fe12",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/SOURCE_MANIFEST.json",
+      "raw_bytes": 12742,
+      "raw_sha256": "d37f28baf3f1138bb877c3e025c7bcf7922a82b8b7c8f7866a094a5fbc5678b2",
+      "stored_path": "_objects/d37f28baf3f1138bb877c3e025c7bcf7922a82b8b7c8f7866a094a5fbc5678b2.gz",
+      "stored_sha256": "afe729fe271a01384e0d0af8be2a4390091da3450a2371b0a86d6ae594fe995f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4257150b78d9bfb32c09dfe9da449acd7c3e8c0d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-root-review/POST_ACCEPTANCE.json",
+      "raw_bytes": 1107,
+      "raw_sha256": "8680151c38f7c0aba6dbae968b2d12c6d32bc2a5be7ee39655175f5129559016",
+      "stored_path": "_objects/8680151c38f7c0aba6dbae968b2d12c6d32bc2a5be7ee39655175f5129559016.gz",
+      "stored_sha256": "338745c08efb3566d9f912cba7cfd03afd235f7c9a2a508fb1bd2f5fb7e44c1a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8b424ff0f91186ad90510b875f3e5b0045470a40",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-root-review/RECEIPT.json",
+      "raw_bytes": 293,
+      "raw_sha256": "2eb113c664b233da03b4bb444561b8156afd5d80d4d3799e9a0050cd00cc134a",
+      "stored_path": "_objects/2eb113c664b233da03b4bb444561b8156afd5d80d4d3799e9a0050cd00cc134a.gz",
+      "stored_sha256": "eceb6c44e56496ae7ec1eefbfa2effcb0bce485268bd367171b1b3b882f3c239"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aa2c9c72baa1bc1c1561717cb54b16a16806a9db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-root-review/REMOTE_PREREGISTRATION.json",
+      "raw_bytes": 346,
+      "raw_sha256": "f6d4a17b5736126af8555becc3bea40e5a3bc68cb40eabbdad046f14e520ddcf",
+      "stored_path": "_objects/f6d4a17b5736126af8555becc3bea40e5a3bc68cb40eabbdad046f14e520ddcf.gz",
+      "stored_sha256": "c92a4cd4b4b60911c375316c53be2005ee9f5c1f22fd0d7ccea0e3118c4237a4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aa90d18fef51051c9b52dd2c01cac81a2fd0522e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-root-review/ROOT.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "32f6bcf3bfe14b790d2b7e22a296f3d432723bb9eb83f43b01da2f1ca625acda",
+      "stored_path": "_objects/32f6bcf3bfe14b790d2b7e22a296f3d432723bb9eb83f43b01da2f1ca625acda.gz",
+      "stored_sha256": "f3788bad3eb9a3752a0f09a00e19bbaf3f4a712cc2ec522464e8e9f0f58a6ce0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3ac654c9d0291834d8d5ecb55e5581750fbd80db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-root-review/ROOT_ACCEPTANCE.json",
+      "raw_bytes": 1331,
+      "raw_sha256": "5c0faa7e35b64aa8eec614fc96da3f4f01fb13ef955e82ddcee10dce2b963be3",
+      "stored_path": "_objects/5c0faa7e35b64aa8eec614fc96da3f4f01fb13ef955e82ddcee10dce2b963be3.gz",
+      "stored_sha256": "7e03f4ef46a6861add1ebf1333fb216e7dc662e04dc551291336d80c120dfc3e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1e607f38afc3467bded778426d6281ea722f9470",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-run-3ac6/RESULT.json",
+      "raw_bytes": 1622,
+      "raw_sha256": "b1f2579917c7d03fa4174fa9d32e4f5f24fcefbcc74b251a66f9a7699d798248",
+      "stored_path": "_objects/b1f2579917c7d03fa4174fa9d32e4f5f24fcefbcc74b251a66f9a7699d798248.gz",
+      "stored_sha256": "4d14805439c2333aa338639dd0f50ace74acc212e170a44fa83d7e38c938891d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b5bb29f79285a49e3104edcf1cc57e7c3a79369",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-catalog-run-3ac6/WORKER_COMPLETE.json",
+      "raw_bytes": 266,
+      "raw_sha256": "a2af01d17adcb0416a546155a1a278b8687ee4eb7e269287d8b50484b1f525da",
+      "stored_path": "_objects/a2af01d17adcb0416a546155a1a278b8687ee4eb7e269287d8b50484b1f525da.gz",
+      "stored_sha256": "35ec334e0465051f83314cc39bdff9b5a5271bdca1947ffaa71682fd8fde99f3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "47300de7cd1ba994ecf7d33ff6ba28ad0b53ba8b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-full-node-saved-root-review/RECEIPT.json",
+      "raw_bytes": 278,
+      "raw_sha256": "878d19d1f76b02a2fb68ce81822492940196b224004ac8eed502220098668854",
+      "stored_path": "_objects/878d19d1f76b02a2fb68ce81822492940196b224004ac8eed502220098668854.gz",
+      "stored_sha256": "0f10c2eb4996f14f036d2bd8ac2936e7e018ded86d0ad052665d276b42d7cfa7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "05318e68df75b32f4cc843d751a46b9044ecba0b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-full-node-saved-root-review/REMOTE_PREREGISTRATION.json",
+      "raw_bytes": 347,
+      "raw_sha256": "a0b9f3086c39667a8bce8d95637df7b88f2fbea13db7263d08b6f3dfa61a41c2",
+      "stored_path": "_objects/a0b9f3086c39667a8bce8d95637df7b88f2fbea13db7263d08b6f3dfa61a41c2.gz",
+      "stored_sha256": "7790fbdf92b53a19600573e48a85eea59a2fff7d44505113591f5164a428e087"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bfbe74dbf34f7e2cb208dfc7536623c5613b0400",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-full-node-saved-root-review/ROOT.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "0dfb75acc4021abb66b605bc501ec1e48647ef894dfaa00e76b5e3a9a791f666",
+      "stored_path": "_objects/0dfb75acc4021abb66b605bc501ec1e48647ef894dfaa00e76b5e3a9a791f666.gz",
+      "stored_sha256": "9767fef4af3b4fda78b2e4cf4d7de83b8ff47b75b6da5e76a6ee8991c52ac7db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ef73b4d2da87ab0e5bbf283d426f53e67bf6db9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-full-node-saved-run-4f93/RESULT.json",
+      "raw_bytes": 714,
+      "raw_sha256": "2c6bda64fa3c9b873f7180192cb4817d09e18c2eb26dcd36dd3e0607d12ce82b",
+      "stored_path": "_objects/2c6bda64fa3c9b873f7180192cb4817d09e18c2eb26dcd36dd3e0607d12ce82b.gz",
+      "stored_sha256": "4c676915092a77b68776fad064722c3f1103717fb68a61ff2a006adfa158b830"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "17e0a220820b43e18ddc3169d47031cc34f8a859",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-nu-full-node-saved-run-4f93/WORKER_COMPLETE.json",
+      "raw_bytes": 346,
+      "raw_sha256": "d993a2ad5b7737a620bf6ee9a9527f50fab2183845ef74dd6b104b64810598ad",
+      "stored_path": "_objects/d993a2ad5b7737a620bf6ee9a9527f50fab2183845ef74dd6b104b64810598ad.gz",
+      "stored_sha256": "d101f63fcc7fd64603d7d6191de7836f3892e3a89f05fc3eea4d52a672048042"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "50c394dbb8696b82f9d4de3bd11fe1f59fafab69",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-root-review/POST_ACCEPTANCE.json",
+      "raw_bytes": 1147,
+      "raw_sha256": "a256ac65761f8387a06cb5c360288f216b09f823ce7ab116f55be5f3e74ab39a",
+      "stored_path": "_objects/a256ac65761f8387a06cb5c360288f216b09f823ce7ab116f55be5f3e74ab39a.gz",
+      "stored_sha256": "9d889505adcec8a169c76b1527cbac9f3389f70b79914eb4a665ea46e003d444"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b619cac499655376e33d8037fd42830f1413ae22",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-root-review/RECEIPT.json",
+      "raw_bytes": 295,
+      "raw_sha256": "9ede04e1c37655f3a016993ad9f992197c27773bf4e28be7c786373580b8580c",
+      "stored_path": "_objects/9ede04e1c37655f3a016993ad9f992197c27773bf4e28be7c786373580b8580c.gz",
+      "stored_sha256": "06c8a4dad4b392c90009205334af307c956218023447a15db3367c6c6296f85b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9be39ecb148168e2fc39641f07fd6ada5387708d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-root-review/REMOTE_PREREGISTRATION.json",
+      "raw_bytes": 347,
+      "raw_sha256": "8bcbe837d6f0f764108e056aa24da7ce4634b7dbe0675ff5b34c184b1aabded5",
+      "stored_path": "_objects/8bcbe837d6f0f764108e056aa24da7ce4634b7dbe0675ff5b34c184b1aabded5.gz",
+      "stored_sha256": "40f076e0c4d41d53a18624c478361388a58e65ee47d6c232491bad1232c2ad02"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f69944da8c4efc67213b27ee87b97c6869328675",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-root-review/ROOT.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "9843176d6b9826d4af9ead63a29d14473f0d314c9a4a2b977f98d686424f11f3",
+      "stored_path": "_objects/9843176d6b9826d4af9ead63a29d14473f0d314c9a4a2b977f98d686424f11f3.gz",
+      "stored_sha256": "77a740bd893d98f0a957126063919fe35983ae194d683279811fcf09ba93a8fa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2164b3da2ea079bfdaac9a4eb23a41ebaa1e71f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-root-review/ROOT_ACCEPTANCE.json",
+      "raw_bytes": 1993,
+      "raw_sha256": "148d1da7c9c3d88cef95bf80b05cd71c2f1e8ecf543f69ca2ccab392d1376d14",
+      "stored_path": "_objects/148d1da7c9c3d88cef95bf80b05cd71c2f1e8ecf543f69ca2ccab392d1376d14.gz",
+      "stored_sha256": "37346556bffda50c6d124d8fc1b34ace65dad33116dab85f822026ed74890a78"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "64001d971c20207b6f7af85355ba5cc296d04068",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-run-442f/RESULT.json",
+      "raw_bytes": 1246,
+      "raw_sha256": "bcd1092415a6f07a7536124851459c91a01a75ec660651e6152eeed91e341407",
+      "stored_path": "_objects/bcd1092415a6f07a7536124851459c91a01a75ec660651e6152eeed91e341407.gz",
+      "stored_sha256": "163a9b2f29f1909976867e9ea49691b91712d35f9d2287620effce1135bb5d9d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "081199ac3a68348b01889c100d0ac4b235e5c42c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-run-442f/WORKER_COMPLETE.json",
+      "raw_bytes": 266,
+      "raw_sha256": "182c420a2d66cadcb349a0f952785146c33cfff0e1aff548cdad504fc9a81204",
+      "stored_path": "_objects/182c420a2d66cadcb349a0f952785146c33cfff0e1aff548cdad504fc9a81204.gz",
+      "stored_sha256": "f2f7291dbdb34e02e2246eb4956a4a6d0e79331bed656e252f36ade7fad099bb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "10f4376b57b3603648b68fc37cceffa9925b184d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-saved-root-review/RECEIPT.json",
+      "raw_bytes": 279,
+      "raw_sha256": "2f0eb1cf11da38b934b1361d1db529ee0065b089435b7da57be8b1c90a5b74d4",
+      "stored_path": "_objects/2f0eb1cf11da38b934b1361d1db529ee0065b089435b7da57be8b1c90a5b74d4.gz",
+      "stored_sha256": "b9c653beeeff50d17edcba0161371dc8d89267fe92ceb6c72619dd636e804d3a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5f0f3a285bf64e2bf5ddd343ebe0304d2a969df2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-saved-root-review/REMOTE_PREREGISTRATION.json",
+      "raw_bytes": 347,
+      "raw_sha256": "c8ebae9bdc236208c79509aab57129d82b0024759b277d1324b2388bedb3c8d2",
+      "stored_path": "_objects/c8ebae9bdc236208c79509aab57129d82b0024759b277d1324b2388bedb3c8d2.gz",
+      "stored_sha256": "1060487f9ff53d9ae794f64b0d1a69dc0e6b12641bb882a189ea7c9c5e1e68bb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "22ed82e305129f3aaa02c65f137597881d0b2dd4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-saved-root-review/ROOT.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "058779925d7b7143ce142b79ecd0455abf804b74cc6d7ea6636119efa8502e6e",
+      "stored_path": "_objects/058779925d7b7143ce142b79ecd0455abf804b74cc6d7ea6636119efa8502e6e.gz",
+      "stored_sha256": "861ce9bd49096de1c11178f544923230760aa41966b8aa10056651227ec8f170"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eb30f45352a61effd34dede8edae5f8f4b2f3f97",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-saved-run-3b86/RESULT.json",
+      "raw_bytes": 1001,
+      "raw_sha256": "45ea94b0769b5163b4832ffc5713cc0a8e14bc01d4e9a31643d2219cd731d1a0",
+      "stored_path": "_objects/45ea94b0769b5163b4832ffc5713cc0a8e14bc01d4e9a31643d2219cd731d1a0.gz",
+      "stored_sha256": "4fc94c79c636e50b867682a2368921e7c7285a749fe550774869d777974827b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d0029e9ba89b8853e6d50b90e6b54e979af504b9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/evidence/native-rho4-two-moment-saved-run-3b86/WORKER_COMPLETE.json",
+      "raw_bytes": 346,
+      "raw_sha256": "13b55ae158895b1d2aee79a1b04ee32d1fda15056a74e1a411dd9a1a6763d746",
+      "stored_path": "_objects/13b55ae158895b1d2aee79a1b04ee32d1fda15056a74e1a411dd9a1a6763d746.gz",
+      "stored_sha256": "72a23fe211533a8f5f96c32e2c25c64ec56f4a3de90edbf2d3050252684be962"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f698bfaaafe0d3ff4fd2275f379d2376898b0277",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 398,
+      "raw_sha256": "df70ec4045b3505468c7d52cce5b9104b85d7ea366d79425f203d040c9e8b5f3",
+      "stored_path": "_objects/df70ec4045b3505468c7d52cce5b9104b85d7ea366d79425f203d040c9e8b5f3.gz",
+      "stored_sha256": "07b842395d14a802bda48fcce4c24c23f2a43a1d15c08852206a2965438c6b9d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8584fd93a93602d60b6a42e722a601b9c1ed5332",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/HANDOFF.md",
+      "raw_bytes": 539,
+      "raw_sha256": "f5d47ba131db9c6fae32118af1e529d05a498e0106f9aadd1f84c26f6f92397a",
+      "stored_path": "_objects/f5d47ba131db9c6fae32118af1e529d05a498e0106f9aadd1f84c26f6f92397a.gz",
+      "stored_sha256": "8c45a4289dcea768e005f69add38c594980a26ac366741272efd2f17c80d17b1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a054975afa197e2f8a1ae22e46814d4021dc8400",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/REVIEW_HISTORY.md",
+      "raw_bytes": 301,
+      "raw_sha256": "2509fe1afe008e035b471516990dd74be968486e7fd8f0ff5d4e79eee2979c3a",
+      "stored_path": "_objects/2509fe1afe008e035b471516990dd74be968486e7fd8f0ff5d4e79eee2979c3a.gz",
+      "stored_sha256": "78405aafc72f4c41314a056fffc27a189f9d88c24e42235049e13ea2a1940f48"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7fb62c1af61de1dbee100826d4744ecdb4480544",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/SOURCE_FREEZE.json",
+      "raw_bytes": 15650,
+      "raw_sha256": "bc195389dcb4f6e0d17110d51c905b9f716410510e1dde250f6e0459f906b775",
+      "stored_path": "_objects/bc195389dcb4f6e0d17110d51c905b9f716410510e1dde250f6e0459f906b775.gz",
+      "stored_sha256": "7a831e87b13052c3e3fc7e8c1c45bc33899aaac84f1a93d6fdf8f02407b4f47e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "67870977820d68a74ae93981e656a88e5f5bcc3f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/SOURCE_MANIFEST.json",
+      "raw_bytes": 12548,
+      "raw_sha256": "c796bc6fe6cb7d853c3f72390e00477238566e8f22fe51d9f3b2749fbbdee441",
+      "stored_path": "_objects/c796bc6fe6cb7d853c3f72390e00477238566e8f22fe51d9f3b2749fbbdee441.gz",
+      "stored_sha256": "2d46619025083061654d9b5c4b488d7e6d0d065da9012aa18d5c5074d768dcff"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f5d2dc3f81e0d313d62164a3b4dd23d642535d35",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/STATE.yaml",
+      "raw_bytes": 360,
+      "raw_sha256": "52f8d9244df88e054f6545be139d9a51bc5cf80312adbcb2c7e173ec54307ff3",
+      "stored_path": "_objects/52f8d9244df88e054f6545be139d9a51bc5cf80312adbcb2c7e173ec54307ff3.gz",
+      "stored_sha256": "3d984b31f011f5d6390e4069fc682bda4138b702aab4124aa77a0001caaaa305"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3c2f66357004201d8c888ba2e8ef9785eca24d8f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/recovery/SIXTY_EIGHTH_SHA256.json",
+      "raw_bytes": 14296,
+      "raw_sha256": "77d21183798850805aa8d8423daeb6d9d31f19b96a9d33f7c352c7bda343cedd",
+      "stored_path": "_objects/77d21183798850805aa8d8423daeb6d9d31f19b96a9d33f7c352c7bda343cedd.gz",
+      "stored_sha256": "936dc8963e943dbea0b13d9004730de2f34ff2e17caeb0972205ba8091c05703"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "25233035975e2374191a5e2ac4616ddc86522fe3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/recovery/SIXTY_FIFTH_SHA256.json",
+      "raw_bytes": 9123,
+      "raw_sha256": "e5e6149b6a5ce2a56f6f02934a1c6b62466e43aafd9dcb3d010bc53db5f55fe0",
+      "stored_path": "_objects/e5e6149b6a5ce2a56f6f02934a1c6b62466e43aafd9dcb3d010bc53db5f55fe0.gz",
+      "stored_sha256": "db26f8d190ea30aa5a1b01180d9e52e6bbfd4076acd607f42703e06c6c2c42be"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6c9c17f418f3197e210f444b33daa24208b0538",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/recovery/SIXTY_NINTH_SHA256.json",
+      "raw_bytes": 21885,
+      "raw_sha256": "5031b856cac5b42ac4e764aaec10b152f9c523fa75278c0cce54efda3576c0f6",
+      "stored_path": "_objects/5031b856cac5b42ac4e764aaec10b152f9c523fa75278c0cce54efda3576c0f6.gz",
+      "stored_sha256": "d902201fb47c6a7764cded156ce2e8c00256b2311d056133cdd012ca8a2a355a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "49cdf8a61148bf810f27cf2f973c97e9df70ba0b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/recovery/SIXTY_SEVENTH_SHA256.json",
+      "raw_bytes": 17089,
+      "raw_sha256": "8c66b41e6096d6f5a1b889ff51a75e262427f8f4651a57ca727ed8add7aaa5b1",
+      "stored_path": "_objects/8c66b41e6096d6f5a1b889ff51a75e262427f8f4651a57ca727ed8add7aaa5b1.gz",
+      "stored_sha256": "a376e50358f7edce0c21aa7e782cb5cb0a5d79607828103414229480c9216902"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "65fcced96e4f254d7d11f97480e40d333e687cfb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/recovery/SIXTY_SIXTH_SHA256.json",
+      "raw_bytes": 19930,
+      "raw_sha256": "eaa2df38524d2d37f84859bd5dbc46b6ac8e36d6028aafbbebd15460c7e9aa39",
+      "stored_path": "_objects/eaa2df38524d2d37f84859bd5dbc46b6ac8e36d6028aafbbebd15460c7e9aa39.gz",
+      "stored_sha256": "ea20f7ef37d94348f500c60eae2e8a46dcca60e5fc355c3cca78ce22ef69bf5e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eb67a32a4d60fa22a140495e415cf0636817b3f8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/CANONICAL_AFFECTED_REVIEW.md",
+      "raw_bytes": 834,
+      "raw_sha256": "62964447c4ad48a6121fbe7850758648671d93651796ba3c8da1fff585688a75",
+      "stored_path": "_objects/62964447c4ad48a6121fbe7850758648671d93651796ba3c8da1fff585688a75.gz",
+      "stored_sha256": "b189cfdf6db8487d5e471763a259b33d8d4b9f332a0a2b630f7a2b3a7a58c6d6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7e5c133bf0f2b8d6fd2762dfe1a2101f68e57f6a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/CANONICAL_ROOT_REVIEW.md",
+      "raw_bytes": 2375,
+      "raw_sha256": "97d69a007b83db84437a3ca89366c64980cc3af316cc7ad347f57ffdd9919171",
+      "stored_path": "_objects/97d69a007b83db84437a3ca89366c64980cc3af316cc7ad347f57ffdd9919171.gz",
+      "stored_sha256": "1d6165abfecfa0e6b05d7b238e94500fad4363f92030408a16b1ba8e02fa018e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "957cfba1091f91d1afd7f5b88509a5b0f8d5148c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-nu-catalog-supplier-cold-review/REVIEW.md",
+      "raw_bytes": 3186,
+      "raw_sha256": "efcd5851d7c90973d5b4d1af7af583ec5c5776a0ef096c6e14ea27f331640ed1",
+      "stored_path": "_objects/efcd5851d7c90973d5b4d1af7af583ec5c5776a0ef096c6e14ea27f331640ed1.gz",
+      "stored_sha256": "9fd450f5d5f680b216d4c7363b14cafc5dab75a9dceed82d5f389b72c847e985"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8c4d9f58bc5b6e7c0109f7c82aff9f54f9fe63f6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-nu-full-node-saved-cold-review/REVIEW.md",
+      "raw_bytes": 2314,
+      "raw_sha256": "02334932b6bffac7c8a3731a2c03897e44fe412147f0fedf7b6928e121cc5982",
+      "stored_path": "_objects/02334932b6bffac7c8a3731a2c03897e44fe412147f0fedf7b6928e121cc5982.gz",
+      "stored_sha256": "4c284777771650194836b49f137b75399f909ccb4b33000e9271879510a64b38"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "825d2924ebb3d812febc25a6b1eda0d0314bf6a8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-nu-full-node-saved-cold-review/ROOT_ADDENDUM.md",
+      "raw_bytes": 1434,
+      "raw_sha256": "7a1afcbdc9a445b7814bd44c619b34d1898fc92a3616ed5767e650a8cf7b3dde",
+      "stored_path": "_objects/7a1afcbdc9a445b7814bd44c619b34d1898fc92a3616ed5767e650a8cf7b3dde.gz",
+      "stored_sha256": "393ee9c65f0f353d97abc67da9be83f465181b7139773b45d2f7a1520309a475"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f21a49d899b522b0f46559d9febadfb3f9f8e873",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-nu-root-cold-review/REVIEW.md",
+      "raw_bytes": 1664,
+      "raw_sha256": "094f1f9916466903b77b0c2644a77dd098b9d1d89aa2b60f221a998df13d2a96",
+      "stored_path": "_objects/094f1f9916466903b77b0c2644a77dd098b9d1d89aa2b60f221a998df13d2a96.gz",
+      "stored_sha256": "7b2935dffb13f59746a52cdeab68b315398d5ce25d453b39c4235b0b9b0074a4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1779984fc7ac650172b9e1d6088ef8edf62ed2e8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-nu-runtime-cold-review/REVIEW.md",
+      "raw_bytes": 2400,
+      "raw_sha256": "35b9cd525f5e31bddf5587c7805dd47cb636d499fe6b6c4aa6fd205f393a30b8",
+      "stored_path": "_objects/35b9cd525f5e31bddf5587c7805dd47cb636d499fe6b6c4aa6fd205f393a30b8.gz",
+      "stored_sha256": "42e07b26a479d80d827e222c64503f0442d75ce3cb091083e2b089ed5f50e57c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "41994f76d49a9d8f9e18e9b0d682574c70b2d34a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-rho4-dual-saved-cold-review/REVIEW.md",
+      "raw_bytes": 2742,
+      "raw_sha256": "4a0929d2be82b5e5bf03c5f91d594412dfa39a415958da6cd14b4a47691037c1",
+      "stored_path": "_objects/4a0929d2be82b5e5bf03c5f91d594412dfa39a415958da6cd14b4a47691037c1.gz",
+      "stored_sha256": "bc85cde75952696293dbef1c3d15eec0e9ce8798be6e0f41282ad51311731eac"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "56cf5715c18babd2d252d14c0b8371982c1291b0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-rho4-dual-saved-cold-review/ROOT_ADDENDUM.md",
+      "raw_bytes": 1558,
+      "raw_sha256": "27d7bd4a0fb751f68c42dcee3c0fb5d81286858e3d3025893015d3144264f7cf",
+      "stored_path": "_objects/27d7bd4a0fb751f68c42dcee3c0fb5d81286858e3d3025893015d3144264f7cf.gz",
+      "stored_sha256": "ed8b8daed0c409576551c97bb14f108c016dd6db140e9bee0329624b4beb7a05"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bb46f1662440b1b28cfdffa3d5972133702eed49",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-rho4-two-moment-cold-review/REVIEW.md",
+      "raw_bytes": 2641,
+      "raw_sha256": "6b49fb00ecd4fd1f3e9d3ef2ae9a99c21fddfc5e3281e13a392b62b6fa3aab66",
+      "stored_path": "_objects/6b49fb00ecd4fd1f3e9d3ef2ae9a99c21fddfc5e3281e13a392b62b6fa3aab66.gz",
+      "stored_sha256": "8900299d543387134e478c4ab1ef0d8dda64a1fd29283a58fbb3c9a1fd743643"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3366c1523e3a57406ee3fb88999c1f0f7dbf62ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-rho4-two-moment-runtime-cold-review/REVIEW.md",
+      "raw_bytes": 2022,
+      "raw_sha256": "6c2ed99e01b520ab6cc02e2815cef5e47a633e8d3c80cf533f6598a22d8a7bbe",
+      "stored_path": "_objects/6c2ed99e01b520ab6cc02e2815cef5e47a633e8d3c80cf533f6598a22d8a7bbe.gz",
+      "stored_sha256": "206d16d2f70fad705b6f2c3fe783c9bdb55ada424e521e31b92f5a99dce2880e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d93112bbefbf3b48e21a4dd7e3412dc25cfc2adc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/native-rho4-two-moment-runtime-cold-review/ROOT_ADDENDUM.md",
+      "raw_bytes": 1353,
+      "raw_sha256": "9f7e380cb8d1070434f9b0caf5f7d922bb96dc4769db0fc1d66ccd23bba389cb",
+      "stored_path": "_objects/9f7e380cb8d1070434f9b0caf5f7d922bb96dc4769db0fc1d66ccd23bba389cb.gz",
+      "stored_sha256": "9a4357c7725e18ddbdc9b03b77d333ef296be421672bf45ad88477547b35c580"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "64c3d2dcee404923fb1f1f3f111177bf4b0bcd1a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-design/DERIVATION.md",
+      "raw_bytes": 5167,
+      "raw_sha256": "776d56bbd514528cbfc87faecfcf12406a0460abe1c66433568881a2076f0f1b",
+      "stored_path": "_objects/776d56bbd514528cbfc87faecfcf12406a0460abe1c66433568881a2076f0f1b.gz",
+      "stored_sha256": "f60fa7a634a0171b0179ba9a1358600f5f0ef2fb3144afee820a8ff6b976fe87"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "710557ec2aa64567c048d5afb8d048e8f01970bb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-runtime-design/ROUNDING_LEDGER.md",
+      "raw_bytes": 1182,
+      "raw_sha256": "a94aa8679d50512b55e4ca0549c17994b5c643eb9bb67a08d99323c341d44403",
+      "stored_path": "_objects/a94aa8679d50512b55e4ca0549c17994b5c643eb9bb67a08d99323c341d44403.gz",
+      "stored_sha256": "1edca57fd44c95487f306c78c3180047273c9ec64d01eff560a00700e8b4eda1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f13d933a119e26c4f49ec9cfa092b2ee80ab1568",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-runtime-design/compute.py",
+      "raw_bytes": 2630,
+      "raw_sha256": "fdc81df2aebe9cb6e06b0dfba58eab11a2a19c50b97a9c54c55c7723aea6f471",
+      "stored_path": "_objects/fdc81df2aebe9cb6e06b0dfba58eab11a2a19c50b97a9c54c55c7723aea6f471.gz",
+      "stored_sha256": "f83194a0d32838e253bc11c31d564e1098afccf8099820b8250f3ce13aa6eab3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80bb261117f1de40dd0ae5f491d301497f9e0e5a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-runtime-design/interval.py",
+      "raw_bytes": 677,
+      "raw_sha256": "ad85a7c99ec42ac483f23645886852438077a8467190392d641bc3e67f067ab9",
+      "stored_path": "_objects/ad85a7c99ec42ac483f23645886852438077a8467190392d641bc3e67f067ab9.gz",
+      "stored_sha256": "a95b2eedee51fb64ea166105f07852bdd3a53152860904d52db60702a65cd4e9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80bb261117f1de40dd0ae5f491d301497f9e0e5a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-design/interval.py",
+      "raw_bytes": 677,
+      "raw_sha256": "ad85a7c99ec42ac483f23645886852438077a8467190392d641bc3e67f067ab9",
+      "stored_path": "_objects/ad85a7c99ec42ac483f23645886852438077a8467190392d641bc3e67f067ab9.gz",
+      "stored_sha256": "a95b2eedee51fb64ea166105f07852bdd3a53152860904d52db60702a65cd4e9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2a9112b49b2ad35a0694985a5508ee1160cd7879",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-runtime-design/interval_base.py",
+      "raw_bytes": 3463,
+      "raw_sha256": "cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9",
+      "stored_path": "_objects/cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9.gz",
+      "stored_sha256": "df9a364c55ce5296de917f3e43c9f2e6ea91a9a14eecdb50add23045ceaf5724"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2a9112b49b2ad35a0694985a5508ee1160cd7879",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-design/interval_base.py",
+      "raw_bytes": 3463,
+      "raw_sha256": "cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9",
+      "stored_path": "_objects/cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9.gz",
+      "stored_sha256": "df9a364c55ce5296de917f3e43c9f2e6ea91a9a14eecdb50add23045ceaf5724"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d83207a57c1521932fb4ececde774463a0cd0d01",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-runtime-design/loader.py",
+      "raw_bytes": 2189,
+      "raw_sha256": "8460b43dc4586fd04a53b6b5b79013c4b1d8855fa9b17f9cb99e1d804a6e3fe2",
+      "stored_path": "_objects/8460b43dc4586fd04a53b6b5b79013c4b1d8855fa9b17f9cb99e1d804a6e3fe2.gz",
+      "stored_sha256": "7a365b838bf54b698182cb0e53683b8e30f12a7f702fa120e206031bf9342791"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d83207a57c1521932fb4ececde774463a0cd0d01",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-design/loader.py",
+      "raw_bytes": 2189,
+      "raw_sha256": "8460b43dc4586fd04a53b6b5b79013c4b1d8855fa9b17f9cb99e1d804a6e3fe2",
+      "stored_path": "_objects/8460b43dc4586fd04a53b6b5b79013c4b1d8855fa9b17f9cb99e1d804a6e3fe2.gz",
+      "stored_sha256": "7a365b838bf54b698182cb0e53683b8e30f12a7f702fa120e206031bf9342791"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "74baf07a95d0da9542aa61573d34f4479d537599",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-catalog-supplier-runtime-design/run.py",
+      "raw_bytes": 2935,
+      "raw_sha256": "416d195ed240d817536118a77cdfe6cfdebd8e76d5e112f14cd0623865c30048",
+      "stored_path": "_objects/416d195ed240d817536118a77cdfe6cfdebd8e76d5e112f14cd0623865c30048.gz",
+      "stored_sha256": "3dd26e164f177067029dd136363fe33f4285dcba37c739228e8715e0c0912f6f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1bb89501e2b07d675c226903c696ccab477c7c29",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-full-node-saved-postcheck/check.py",
+      "raw_bytes": 8554,
+      "raw_sha256": "c190df7f91400136a7310b989d3b849800a1f3e942fa3cd1f831e17402efe929",
+      "stored_path": "_objects/c190df7f91400136a7310b989d3b849800a1f3e942fa3cd1f831e17402efe929.gz",
+      "stored_sha256": "25691b84a2313aa0989552419b131588dd0c9f12c41479857f340358b9bec026"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bb3b7caafa3387907b4633e9ff5fd1144abf6bc1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-nu-full-node-saved-postcheck/run.py",
+      "raw_bytes": 2986,
+      "raw_sha256": "ef8c847f002a629da8cb57ca14505b7b6099c22f47bfdb279ff0b4d67dfd8112",
+      "stored_path": "_objects/ef8c847f002a629da8cb57ca14505b7b6099c22f47bfdb279ff0b4d67dfd8112.gz",
+      "stored_sha256": "34e1bb3690c0e3ddb48bd576c4a01d4a647d6957a39b20c40cdd5add8d0ad2f0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2444762685c884858afc7a2608dcf43f97d558bf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-design/DERIVATION.md",
+      "raw_bytes": 3818,
+      "raw_sha256": "0dc5187c095dd569aedcd727831a6b5a7ab2ddd8152bbb8c666961c2b73cc550",
+      "stored_path": "_objects/0dc5187c095dd569aedcd727831a6b5a7ab2ddd8152bbb8c666961c2b73cc550.gz",
+      "stored_sha256": "1608db6900e87dc747b742dafa67c24ac37f7d79c3d7898e47057e0ab2cce0e6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "31f992948130adcde8f4cadc1384e97ef40fb0b3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-design/compute.py",
+      "raw_bytes": 3040,
+      "raw_sha256": "8a3c5f2b5345d6de6e37bdbfbfc6661b6a80661f3ec0f54f232ad5053320833c",
+      "stored_path": "_objects/8a3c5f2b5345d6de6e37bdbfbfc6661b6a80661f3ec0f54f232ad5053320833c.gz",
+      "stored_sha256": "4cf5e4661380fa147d738171bb86883c2d837fa38c8b59a9b9e7bc12684b7566"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "28c62b0efed8d5eaf7332029e0bb5f5de0054f1d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-design/run.py",
+      "raw_bytes": 3035,
+      "raw_sha256": "c08ff77e34ed47b10c041ac6d79a7f8a6b999fb2b69b3173e398249b8be26332",
+      "stored_path": "_objects/c08ff77e34ed47b10c041ac6d79a7f8a6b999fb2b69b3173e398249b8be26332.gz",
+      "stored_sha256": "5a9d31fda5002a762f1563109e0e6e2d558857b7b978871c09722163ebc95311"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "988a0f992b46ab10c6494caeed3d883f7f72ce9d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-saved-postcheck/check.py",
+      "raw_bytes": 8568,
+      "raw_sha256": "87a980005b3588c327c9c4c3f9b3d35710740b225f616afb7d11bc95b21eb85a",
+      "stored_path": "_objects/87a980005b3588c327c9c4c3f9b3d35710740b225f616afb7d11bc95b21eb85a.gz",
+      "stored_sha256": "db25058d334437db930b50de796b747a8e95174e0b0d9378901996392bd14221"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b28e3fbc3587c29dc3c657c43cffcb9131ac5a1a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/sources/native-rho4-two-moment-saved-postcheck/run.py",
+      "raw_bytes": 2994,
+      "raw_sha256": "bd6fea8b43a8a108518ad7edd4e3e5841e4a9da6b1d7d57215f3e7b44e774aaf",
+      "stored_path": "_objects/bd6fea8b43a8a108518ad7edd4e3e5841e4a9da6b1d7d57215f3e7b44e774aaf.gz",
+      "stored_sha256": "74df1ef86215b34787d50a733c70bdac243680a8b5043afa2e44d1de6c5fe16b"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/",
+  "revision": "64e92035cfd405932bef30bda1ddf6a365430ffe",
+  "schema_version": 1,
+  "unique_blobs": {
+    "05318e68df75b32f4cc843d751a46b9044ecba0b": {
+      "occurrences": 1,
+      "raw_bytes": 347,
+      "raw_sha256": "a0b9f3086c39667a8bce8d95637df7b88f2fbea13db7263d08b6f3dfa61a41c2"
+    },
+    "081199ac3a68348b01889c100d0ac4b235e5c42c": {
+      "occurrences": 1,
+      "raw_bytes": 266,
+      "raw_sha256": "182c420a2d66cadcb349a0f952785146c33cfff0e1aff548cdad504fc9a81204"
+    },
+    "0ccd3d6455c943fc03f42db68f2cab2efbac397f": {
+      "occurrences": 1,
+      "raw_bytes": 226,
+      "raw_sha256": "985e2c62064d8480d277c6d0a6e95ded7b4d05f6ae3a511cf8f0cabccc03908d"
+    },
+    "10f4376b57b3603648b68fc37cceffa9925b184d": {
+      "occurrences": 1,
+      "raw_bytes": 279,
+      "raw_sha256": "2f0eb1cf11da38b934b1361d1db529ee0065b089435b7da57be8b1c90a5b74d4"
+    },
+    "12cb26d69d5536fdb571ccec2d85706a6f31d54b": {
+      "occurrences": 1,
+      "raw_bytes": 1865,
+      "raw_sha256": "43d66c914416f675dac88420b6dd5b8b8e8f9650794485fb0f6df363ef6b95ac"
+    },
+    "1779984fc7ac650172b9e1d6088ef8edf62ed2e8": {
+      "occurrences": 1,
+      "raw_bytes": 2400,
+      "raw_sha256": "35b9cd525f5e31bddf5587c7805dd47cb636d499fe6b6c4aa6fd205f393a30b8"
+    },
+    "17e0a220820b43e18ddc3169d47031cc34f8a859": {
+      "occurrences": 1,
+      "raw_bytes": 346,
+      "raw_sha256": "d993a2ad5b7737a620bf6ee9a9527f50fab2183845ef74dd6b104b64810598ad"
+    },
+    "1bb89501e2b07d675c226903c696ccab477c7c29": {
+      "occurrences": 1,
+      "raw_bytes": 8554,
+      "raw_sha256": "c190df7f91400136a7310b989d3b849800a1f3e942fa3cd1f831e17402efe929"
+    },
+    "1ceba7f8d8665ee14500df8dc194edfccb883e03": {
+      "occurrences": 1,
+      "raw_bytes": 249,
+      "raw_sha256": "11251aec1e26cc358d1ae53b1d979be6e55518b2e78589b584e43c235040660d"
+    },
+    "1e607f38afc3467bded778426d6281ea722f9470": {
+      "occurrences": 1,
+      "raw_bytes": 1622,
+      "raw_sha256": "b1f2579917c7d03fa4174fa9d32e4f5f24fcefbcc74b251a66f9a7699d798248"
+    },
+    "1fbcf97d5266f5c0f3ad0bfc5b64436143c2b906": {
+      "occurrences": 1,
+      "raw_bytes": 158,
+      "raw_sha256": "326ade155a7cee7eef60df9f3254a04e3c8419843e283e1ca33f3c3af1724f55"
+    },
+    "2164b3da2ea079bfdaac9a4eb23a41ebaa1e71f7": {
+      "occurrences": 1,
+      "raw_bytes": 1993,
+      "raw_sha256": "148d1da7c9c3d88cef95bf80b05cd71c2f1e8ecf543f69ca2ccab392d1376d14"
+    },
+    "22ed82e305129f3aaa02c65f137597881d0b2dd4": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "058779925d7b7143ce142b79ecd0455abf804b74cc6d7ea6636119efa8502e6e"
+    },
+    "2444762685c884858afc7a2608dcf43f97d558bf": {
+      "occurrences": 1,
+      "raw_bytes": 3818,
+      "raw_sha256": "0dc5187c095dd569aedcd727831a6b5a7ab2ddd8152bbb8c666961c2b73cc550"
+    },
+    "25233035975e2374191a5e2ac4616ddc86522fe3": {
+      "occurrences": 1,
+      "raw_bytes": 9123,
+      "raw_sha256": "e5e6149b6a5ce2a56f6f02934a1c6b62466e43aafd9dcb3d010bc53db5f55fe0"
+    },
+    "28c62b0efed8d5eaf7332029e0bb5f5de0054f1d": {
+      "occurrences": 1,
+      "raw_bytes": 3035,
+      "raw_sha256": "c08ff77e34ed47b10c041ac6d79a7f8a6b999fb2b69b3173e398249b8be26332"
+    },
+    "2a9112b49b2ad35a0694985a5508ee1160cd7879": {
+      "occurrences": 2,
+      "raw_bytes": 3463,
+      "raw_sha256": "cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9"
+    },
+    "2b86726087245d6d54185a486efcc894795c4c5d": {
+      "occurrences": 1,
+      "raw_bytes": 374,
+      "raw_sha256": "df183d44425b2d135404cf98984a09e00350c542c2a41214e4db1be2348402a2"
+    },
+    "2e0ed3304d7ec82a077e33fb5e83e3425b6a0537": {
+      "occurrences": 1,
+      "raw_bytes": 245,
+      "raw_sha256": "1126cdf2ee0847355290e92296a5650eb51a17f8dcc597e2d214192745d3190f"
+    },
+    "2ef73b4d2da87ab0e5bbf283d426f53e67bf6db9": {
+      "occurrences": 1,
+      "raw_bytes": 714,
+      "raw_sha256": "2c6bda64fa3c9b873f7180192cb4817d09e18c2eb26dcd36dd3e0607d12ce82b"
+    },
+    "31f992948130adcde8f4cadc1384e97ef40fb0b3": {
+      "occurrences": 1,
+      "raw_bytes": 3040,
+      "raw_sha256": "8a3c5f2b5345d6de6e37bdbfbfc6661b6a80661f3ec0f54f232ad5053320833c"
+    },
+    "3366c1523e3a57406ee3fb88999c1f0f7dbf62ce": {
+      "occurrences": 1,
+      "raw_bytes": 2022,
+      "raw_sha256": "6c2ed99e01b520ab6cc02e2815cef5e47a633e8d3c80cf533f6598a22d8a7bbe"
+    },
+    "3a667c00e680fff6389faf1322cfa33d57234d9f": {
+      "occurrences": 1,
+      "raw_bytes": 333,
+      "raw_sha256": "9293f77f59fcf3328350f274c1575c4a07d40096850fde0b9abaa73d739daba1"
+    },
+    "3ac654c9d0291834d8d5ecb55e5581750fbd80db": {
+      "occurrences": 1,
+      "raw_bytes": 1331,
+      "raw_sha256": "5c0faa7e35b64aa8eec614fc96da3f4f01fb13ef955e82ddcee10dce2b963be3"
+    },
+    "3c0aa1f6925f3be1ff04a167a045d0f15a43ddec": {
+      "occurrences": 1,
+      "raw_bytes": 2822,
+      "raw_sha256": "d1f9d8b68b47ad6ec7703ecde2e0b06489363c1dc562392dc64cc6a598f26201"
+    },
+    "3c2f66357004201d8c888ba2e8ef9785eca24d8f": {
+      "occurrences": 1,
+      "raw_bytes": 14296,
+      "raw_sha256": "77d21183798850805aa8d8423daeb6d9d31f19b96a9d33f7c352c7bda343cedd"
+    },
+    "3c3cb9a7127b7c154d9589ccc78c4744fa62f914": {
+      "occurrences": 1,
+      "raw_bytes": 189,
+      "raw_sha256": "57c39ee0291abfeb1c5468b4aa346d6f76a176d5e55952bb6465c6ade612273d"
+    },
+    "41994f76d49a9d8f9e18e9b0d682574c70b2d34a": {
+      "occurrences": 1,
+      "raw_bytes": 2742,
+      "raw_sha256": "4a0929d2be82b5e5bf03c5f91d594412dfa39a415958da6cd14b4a47691037c1"
+    },
+    "4257150b78d9bfb32c09dfe9da449acd7c3e8c0d": {
+      "occurrences": 1,
+      "raw_bytes": 1107,
+      "raw_sha256": "8680151c38f7c0aba6dbae968b2d12c6d32bc2a5be7ee39655175f5129559016"
+    },
+    "45fc56b03d3ee058661cbeadb0c60e34a2c8b962": {
+      "occurrences": 1,
+      "raw_bytes": 425,
+      "raw_sha256": "20176d22e1b18e8689559680bebeb5304bb1f47311a8856a669a08a42d151396"
+    },
+    "47300de7cd1ba994ecf7d33ff6ba28ad0b53ba8b": {
+      "occurrences": 1,
+      "raw_bytes": 278,
+      "raw_sha256": "878d19d1f76b02a2fb68ce81822492940196b224004ac8eed502220098668854"
+    },
+    "49cdf8a61148bf810f27cf2f973c97e9df70ba0b": {
+      "occurrences": 1,
+      "raw_bytes": 17089,
+      "raw_sha256": "8c66b41e6096d6f5a1b889ff51a75e262427f8f4651a57ca727ed8add7aaa5b1"
+    },
+    "50c394dbb8696b82f9d4de3bd11fe1f59fafab69": {
+      "occurrences": 1,
+      "raw_bytes": 1147,
+      "raw_sha256": "a256ac65761f8387a06cb5c360288f216b09f823ce7ab116f55be5f3e74ab39a"
+    },
+    "56cf5715c18babd2d252d14c0b8371982c1291b0": {
+      "occurrences": 1,
+      "raw_bytes": 1558,
+      "raw_sha256": "27d7bd4a0fb751f68c42dcee3c0fb5d81286858e3d3025893015d3144264f7cf"
+    },
+    "5f0f3a285bf64e2bf5ddd343ebe0304d2a969df2": {
+      "occurrences": 1,
+      "raw_bytes": 347,
+      "raw_sha256": "c8ebae9bdc236208c79509aab57129d82b0024759b277d1324b2388bedb3c8d2"
+    },
+    "64001d971c20207b6f7af85355ba5cc296d04068": {
+      "occurrences": 1,
+      "raw_bytes": 1246,
+      "raw_sha256": "bcd1092415a6f07a7536124851459c91a01a75ec660651e6152eeed91e341407"
+    },
+    "64c3d2dcee404923fb1f1f3f111177bf4b0bcd1a": {
+      "occurrences": 1,
+      "raw_bytes": 5167,
+      "raw_sha256": "776d56bbd514528cbfc87faecfcf12406a0460abe1c66433568881a2076f0f1b"
+    },
+    "65fcced96e4f254d7d11f97480e40d333e687cfb": {
+      "occurrences": 1,
+      "raw_bytes": 19930,
+      "raw_sha256": "eaa2df38524d2d37f84859bd5dbc46b6ac8e36d6028aafbbebd15460c7e9aa39"
+    },
+    "67870977820d68a74ae93981e656a88e5f5bcc3f": {
+      "occurrences": 1,
+      "raw_bytes": 12548,
+      "raw_sha256": "c796bc6fe6cb7d853c3f72390e00477238566e8f22fe51d9f3b2749fbbdee441"
+    },
+    "710557ec2aa64567c048d5afb8d048e8f01970bb": {
+      "occurrences": 1,
+      "raw_bytes": 1182,
+      "raw_sha256": "a94aa8679d50512b55e4ca0549c17994b5c643eb9bb67a08d99323c341d44403"
+    },
+    "74baf07a95d0da9542aa61573d34f4479d537599": {
+      "occurrences": 1,
+      "raw_bytes": 2935,
+      "raw_sha256": "416d195ed240d817536118a77cdfe6cfdebd8e76d5e112f14cd0623865c30048"
+    },
+    "7b5bb29f79285a49e3104edcf1cc57e7c3a79369": {
+      "occurrences": 1,
+      "raw_bytes": 266,
+      "raw_sha256": "a2af01d17adcb0416a546155a1a278b8687ee4eb7e269287d8b50484b1f525da"
+    },
+    "7e5c133bf0f2b8d6fd2762dfe1a2101f68e57f6a": {
+      "occurrences": 1,
+      "raw_bytes": 2375,
+      "raw_sha256": "97d69a007b83db84437a3ca89366c64980cc3af316cc7ad347f57ffdd9919171"
+    },
+    "7fb62c1af61de1dbee100826d4744ecdb4480544": {
+      "occurrences": 1,
+      "raw_bytes": 15650,
+      "raw_sha256": "bc195389dcb4f6e0d17110d51c905b9f716410510e1dde250f6e0459f906b775"
+    },
+    "80bb261117f1de40dd0ae5f491d301497f9e0e5a": {
+      "occurrences": 2,
+      "raw_bytes": 677,
+      "raw_sha256": "ad85a7c99ec42ac483f23645886852438077a8467190392d641bc3e67f067ab9"
+    },
+    "825d2924ebb3d812febc25a6b1eda0d0314bf6a8": {
+      "occurrences": 1,
+      "raw_bytes": 1434,
+      "raw_sha256": "7a1afcbdc9a445b7814bd44c619b34d1898fc92a3616ed5767e650a8cf7b3dde"
+    },
+    "8584fd93a93602d60b6a42e722a601b9c1ed5332": {
+      "occurrences": 1,
+      "raw_bytes": 539,
+      "raw_sha256": "f5d47ba131db9c6fae32118af1e529d05a498e0106f9aadd1f84c26f6f92397a"
+    },
+    "8b424ff0f91186ad90510b875f3e5b0045470a40": {
+      "occurrences": 1,
+      "raw_bytes": 293,
+      "raw_sha256": "2eb113c664b233da03b4bb444561b8156afd5d80d4d3799e9a0050cd00cc134a"
+    },
+    "8c4d9f58bc5b6e7c0109f7c82aff9f54f9fe63f6": {
+      "occurrences": 1,
+      "raw_bytes": 2314,
+      "raw_sha256": "02334932b6bffac7c8a3731a2c03897e44fe412147f0fedf7b6928e121cc5982"
+    },
+    "8e88129a9c490501322ece32470931ae284f83ad": {
+      "occurrences": 1,
+      "raw_bytes": 387,
+      "raw_sha256": "9cb1669b7b08b7fdb3d905763d57ad0a95be2ccee445ca7c8a6d80ddd5ab2799"
+    },
+    "957cfba1091f91d1afd7f5b88509a5b0f8d5148c": {
+      "occurrences": 1,
+      "raw_bytes": 3186,
+      "raw_sha256": "efcd5851d7c90973d5b4d1af7af583ec5c5776a0ef096c6e14ea27f331640ed1"
+    },
+    "988a0f992b46ab10c6494caeed3d883f7f72ce9d": {
+      "occurrences": 1,
+      "raw_bytes": 8568,
+      "raw_sha256": "87a980005b3588c327c9c4c3f9b3d35710740b225f616afb7d11bc95b21eb85a"
+    },
+    "992298eab3898c70e310b064838673158f2e8ee9": {
+      "occurrences": 1,
+      "raw_bytes": 1188,
+      "raw_sha256": "01bcb95de2ad0f6b9fcb4fdece39a57bec889c7dc2885ed5fea021aa73b18d97"
+    },
+    "9be39ecb148168e2fc39641f07fd6ada5387708d": {
+      "occurrences": 1,
+      "raw_bytes": 347,
+      "raw_sha256": "8bcbe837d6f0f764108e056aa24da7ce4634b7dbe0675ff5b34c184b1aabded5"
+    },
+    "9db802e3862f9ad31f569628e280a4b5375a9b04": {
+      "occurrences": 1,
+      "raw_bytes": 345,
+      "raw_sha256": "0f0670e50489d8023113ada056706e71a87343d92dcbc3f0e9296076eceb3801"
+    },
+    "a054975afa197e2f8a1ae22e46814d4021dc8400": {
+      "occurrences": 1,
+      "raw_bytes": 301,
+      "raw_sha256": "2509fe1afe008e035b471516990dd74be968486e7fd8f0ff5d4e79eee2979c3a"
+    },
+    "aa2c9c72baa1bc1c1561717cb54b16a16806a9db": {
+      "occurrences": 1,
+      "raw_bytes": 346,
+      "raw_sha256": "f6d4a17b5736126af8555becc3bea40e5a3bc68cb40eabbdad046f14e520ddcf"
+    },
+    "aa90d18fef51051c9b52dd2c01cac81a2fd0522e": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "32f6bcf3bfe14b790d2b7e22a296f3d432723bb9eb83f43b01da2f1ca625acda"
+    },
+    "ae70bd568ef22d7a005968095e1117e11f82fe12": {
+      "occurrences": 1,
+      "raw_bytes": 12742,
+      "raw_sha256": "d37f28baf3f1138bb877c3e025c7bcf7922a82b8b7c8f7866a094a5fbc5678b2"
+    },
+    "ae987e940d0abb29457c14e4e4fe0c1a881a0c06": {
+      "occurrences": 1,
+      "raw_bytes": 17219,
+      "raw_sha256": "7e6fa58c7248c0c766b53772db19515c58979f214cf05abce23f96d328ede5a3"
+    },
+    "b28e3fbc3587c29dc3c657c43cffcb9131ac5a1a": {
+      "occurrences": 1,
+      "raw_bytes": 2994,
+      "raw_sha256": "bd6fea8b43a8a108518ad7edd4e3e5841e4a9da6b1d7d57215f3e7b44e774aaf"
+    },
+    "b619cac499655376e33d8037fd42830f1413ae22": {
+      "occurrences": 1,
+      "raw_bytes": 295,
+      "raw_sha256": "9ede04e1c37655f3a016993ad9f992197c27773bf4e28be7c786373580b8580c"
+    },
+    "bb3b7caafa3387907b4633e9ff5fd1144abf6bc1": {
+      "occurrences": 1,
+      "raw_bytes": 2986,
+      "raw_sha256": "ef8c847f002a629da8cb57ca14505b7b6099c22f47bfdb279ff0b4d67dfd8112"
+    },
+    "bb46f1662440b1b28cfdffa3d5972133702eed49": {
+      "occurrences": 1,
+      "raw_bytes": 2641,
+      "raw_sha256": "6b49fb00ecd4fd1f3e9d3ef2ae9a99c21fddfc5e3281e13a392b62b6fa3aab66"
+    },
+    "bc813048bce2525ba8036ded95d8017c419bc39a": {
+      "occurrences": 1,
+      "raw_bytes": 215,
+      "raw_sha256": "665d1afc0f885547c98a02291ca240b2e20d8a9a9ce81b1e5a336436a664f071"
+    },
+    "bfbe74dbf34f7e2cb208dfc7536623c5613b0400": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "0dfb75acc4021abb66b605bc501ec1e48647ef894dfaa00e76b5e3a9a791f666"
+    },
+    "c6c9c17f418f3197e210f444b33daa24208b0538": {
+      "occurrences": 1,
+      "raw_bytes": 21885,
+      "raw_sha256": "5031b856cac5b42ac4e764aaec10b152f9c523fa75278c0cce54efda3576c0f6"
+    },
+    "ca1abd1bc7efa0b469369c1ba7d0721ace73c71a": {
+      "occurrences": 1,
+      "raw_bytes": 708,
+      "raw_sha256": "9998e8f3711a5db64c14eebc417e63645417b62f6244fc36de0874786709a6df"
+    },
+    "d0029e9ba89b8853e6d50b90e6b54e979af504b9": {
+      "occurrences": 1,
+      "raw_bytes": 346,
+      "raw_sha256": "13b55ae158895b1d2aee79a1b04ee32d1fda15056a74e1a411dd9a1a6763d746"
+    },
+    "d83207a57c1521932fb4ececde774463a0cd0d01": {
+      "occurrences": 2,
+      "raw_bytes": 2189,
+      "raw_sha256": "8460b43dc4586fd04a53b6b5b79013c4b1d8855fa9b17f9cb99e1d804a6e3fe2"
+    },
+    "d93112bbefbf3b48e21a4dd7e3412dc25cfc2adc": {
+      "occurrences": 1,
+      "raw_bytes": 1353,
+      "raw_sha256": "9f7e380cb8d1070434f9b0caf5f7d922bb96dc4769db0fc1d66ccd23bba389cb"
+    },
+    "da2dcc7f9953bf553b36a0ff930d0c4281914147": {
+      "occurrences": 1,
+      "raw_bytes": 258,
+      "raw_sha256": "72354fa5edcb16de8dbc0213cfbf15573ddcdbf6a6512f31db990c9d6e3a275f"
+    },
+    "eb30f45352a61effd34dede8edae5f8f4b2f3f97": {
+      "occurrences": 1,
+      "raw_bytes": 1001,
+      "raw_sha256": "45ea94b0769b5163b4832ffc5713cc0a8e14bc01d4e9a31643d2219cd731d1a0"
+    },
+    "eb67a32a4d60fa22a140495e415cf0636817b3f8": {
+      "occurrences": 1,
+      "raw_bytes": 834,
+      "raw_sha256": "62964447c4ad48a6121fbe7850758648671d93651796ba3c8da1fff585688a75"
+    },
+    "f054ea32c2ff549aafe9d6da28c00ff692638280": {
+      "occurrences": 1,
+      "raw_bytes": 38854,
+      "raw_sha256": "e11fad74b8ab786d6c17e1f4a43df418e8901b60fa9bd51563b02f8d64717bbf"
+    },
+    "f13d933a119e26c4f49ec9cfa092b2ee80ab1568": {
+      "occurrences": 1,
+      "raw_bytes": 2630,
+      "raw_sha256": "fdc81df2aebe9cb6e06b0dfba58eab11a2a19c50b97a9c54c55c7723aea6f471"
+    },
+    "f21a49d899b522b0f46559d9febadfb3f9f8e873": {
+      "occurrences": 1,
+      "raw_bytes": 1664,
+      "raw_sha256": "094f1f9916466903b77b0c2644a77dd098b9d1d89aa2b60f221a998df13d2a96"
+    },
+    "f426ac946fa277662be971b51fd67fc149fb46d2": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "4db4267525b1ce3ca550a6d5de8f35e81091a52cdfd8fbb24ef3b523712cce8f"
+    },
+    "f5d2dc3f81e0d313d62164a3b4dd23d642535d35": {
+      "occurrences": 1,
+      "raw_bytes": 360,
+      "raw_sha256": "52f8d9244df88e054f6545be139d9a51bc5cf80312adbcb2c7e173ec54307ff3"
+    },
+    "f698bfaaafe0d3ff4fd2275f379d2376898b0277": {
+      "occurrences": 1,
+      "raw_bytes": 398,
+      "raw_sha256": "df70ec4045b3505468c7d52cce5b9104b85d7ea366d79425f203d040c9e8b5f3"
+    },
+    "f69944da8c4efc67213b27ee87b97c6869328675": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "9843176d6b9826d4af9ead63a29d14473f0d314c9a4a2b977f98d686424f11f3"
+    },
+    "f982445469f25d91f0ebf058b77a245464ebd629": {
+      "occurrences": 1,
+      "raw_bytes": 1172,
+      "raw_sha256": "890208b1dc04df856457f075ba7ac3b18febec4a67b4615474e6fddbca733f17"
+    },
+    "ff5c2b44d7bf5c9e6a52f9b9f879b5ce62eb35af": {
+      "occurrences": 1,
+      "raw_bytes": 261,
+      "raw_sha256": "219f9338ed8ddcbe278b36c6cedd4bb6af2a1c79f320d189fff2205196a33c36"
+    }
+  }
+}

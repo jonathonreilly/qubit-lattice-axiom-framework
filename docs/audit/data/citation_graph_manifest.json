@@ -1,6 +1,6 @@
 {
- "edge_count": 12774,
- "node_count": 5241,
+ "edge_count": 12813,
+ "node_count": 5270,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4955,6 +4955,10 @@
    "out_degree": 0
   },
   "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_clock_local_ground_probabilities_and_charge_projected_plaquette_harmonics_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -12810,6 +12814,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08": {
+   "deps_hash": "6d8ee4864489",
+   "out_degree": 4
+  },
   "native_edge_record_ambient_generator_erasure_bounded_theorem_note_2026-09-07": {
    "deps_hash": "74abb72ad760",
    "out_degree": 3
@@ -14821,6 +14829,10 @@
   "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "31cea2f579fd",
+   "out_degree": 9
   },
   "post_record_admitted_sample_target_vector_interface_2026-06-06": {
    "deps_hash": "e3b0c44298fc",
@@ -20057,6 +20069,110 @@
   "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.readme": {
    "deps_hash": "c174245ba2ae",
    "out_degree": 54
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.canonical-cold-review.pr8038-evidence-canonical-cold-review-final_delta_confirmation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.canonical-cold-review.pr8038-evidence-canonical-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-charged-cycle-bridge.pr8038-evidence-native-charged-cycle-bridge-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-charged-cycle-bridge.pr8038-evidence-native-charged-cycle-bridge-exchange_algebra": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-charged-cycle-bridge.pr8038-evidence-native-charged-cycle-bridge-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-common-carrier-cold-review.pr8038-evidence-native-common-carrier-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-cycle-projected-ice-review.pr8038-evidence-native-cycle-projected-ice-review-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-cycle-projected-ice-review.pr8038-evidence-native-cycle-projected-ice-review-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-dynamical-cycle-dictionary.pr8038-evidence-native-dynamical-cycle-dictionary-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.native-dynamical-cycle-dictionary.pr8038-evidence-native-dynamical-cycle-dictionary-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-absolute_alarm_correction": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-checks": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-format_correction": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.pr8038-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8038-native-cycle-evidence.readme": {
+   "deps_hash": "07eac9a6559a",
+   "out_degree": 26
   },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",

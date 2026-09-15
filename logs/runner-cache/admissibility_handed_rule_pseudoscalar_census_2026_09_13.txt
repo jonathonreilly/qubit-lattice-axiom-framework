@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_handed_rule_pseudoscalar_census_2026_09_13.py
+runner_sha256: 40387117315fe1b2dad93b870747b4a491ce97a337845e1430b947704d022b61
+input_fingerprint_sha256: 9ee559344a08f66fe5a58acc0114540051b6847f8f6ed80364f8f79f6151aee2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 14.54
+status: ok
+----- stdout -----
+PASS S1 cubic group has 48 elements, 24 proper and 24 improper
+PASS S1 every slot action permutes the six arms
+PASS S1 conjugation, x-mirror and inversion are improper and belong to the cubic group
+PASS S2 fast D4 agrees with the alternating-sum definition on 400 samples
+PASS S2 configuration index is consistent with the lexicographic enumeration
+S2 sign table (grading under the 48 cubic operations, three actions):
+  T     slots=odd   internal=odd   soldered=even
+  D4    slots=odd   internal=even  soldered=odd
+  Omega slots=mixed internal=mixed soldered=odd
+PASS S2 T is odd under improper slot operations and odd under improper internal operations
+PASS S2 T is EVEN under every soldered cubic operation (a scalar in the soldered reading)
+PASS S2 D4 is lattice-odd, internal-even and soldered-odd
+PASS S2 Omega is soldered-odd and carries no grading under slot-only or internal-only actions
+PASS S2 T, D4 and Omega are each nonzero on the axis alphabet
+S2 extreme values on the alphabet: max|T|=8 max|D4|=8 max|Omega|=3; nonzero counts T=14832 D4=14592 Omega=22016
+S3 orbit representatives: dots=2 dets=2 dot.dot=9 soldered monomials d1=2 d2=14
+S3 census, dimension of the lattice-odd (pseudo-scalar) span on the axis alphabet by degree:
+  unsoldered, internal SO(3) (dots+dets): d2=0 d3=1 d4=1
+  unsoldered, internal O(3) (dots only):  d2=0 d3=0 d4=1
+  soldered (all label components):        d1=0 d2=3
+PASS S3 coset parity: each ordered slot pair hit by equally many proper and improper ops
+PASS S3 unsoldered reading: no pseudo-scalar of degree <= 2 exists (SO(3) and O(3) families)
+PASS S3 unsoldered SO(3) reading: the lowest pseudo-scalar degree is 3 and the span is nonzero
+PASS S3 T equals (1/6) of the alternating slot projection of det[q_+x, q_+y, q_+z]
+PASS S3 every det monomial is odd under -I: the O(3) reading has no degree-3 term
+PASS S3 unsoldered O(3) reading: the lowest pseudo-scalar degree is 4 and D4 lies in that span
+PASS S3 soldered reading: no degree-1 pseudo-scalar; degree 2 is nonzero and contains Omega
+PASS S3 T is internally SO(3)-invariant and internally improper-odd; D4 is internally even
+PASS S3 Omega is not invariant under proper unsoldered slot rotations
+S4a Burnside (inv6, odd6, inv7, odd7; handed rule terms = odd7-odd6, achiral = inv7-inv6):
+  unsoldered SO(3): 98 26 468 116 -> handed 90, achiral 370
+  unsoldered O(3): 81 13 338 56 -> handed 43, achiral 257
+  soldered: 1138 896 6276 5436 -> handed 4540, achiral 5138
+PASS S4a Burnside agrees with direct orbit enumeration on the arms (three actions)
+PASS S4a every reading admits handed rule terms (odd7 > odd6); soldered odd6 >= S3 rank
+S4b unsoldered handed rule terms of total degree <= 4 (all families project to zero): F1=0, F2=0, F3=0, F3'=0, F4=0
+PASS S4b unsoldered readings: no handed rule term of total degree <= 4
+PASS S4b unsoldered SO(3): T.(v.s) is a handed rule term of degree 5
+PASS S4b unsoldered O(3): odd degree excluded by -I; D4.(v.s) is handed of degree 6
+PASS S4b soldered: no handed term of total degree <= 1 and no v^2-only degree-2 term
+S4b soldered v-linear arm-degree-1 handed terms: 5 orbit reps -> rank 1; adding A_DM = sum_i r_i x q_i: rank 1; max component |A_DM| = 4
+PASS S4b soldered: degree-2 handed terms are one-dimensional, spanned by v.A_DM (lattice curl)
+PASS S4b soldered: v.A_DM is proper-invariant, improper-odd on the window, zero v-sum
+PASS S4c every rule is normalised (sum_v = 1) on all 46656 arm configurations
+PASS S4c every rule is strictly positive on all 279936 (v, q) pairs
+PASS S4c every rule varies with the neighbour condition
+PASS S4c base rule at one recorded neighbour, (14 + a.v)/84, is the law at s_S = a
+S4c 400 samples: handed parts (proper-covariant?/improper grading) for slots, internal, soldered: T: cov/odd cov/odd cov/even; D4: cov/odd cov/even cov/odd; Omega: NOT/mixed NOT/mixed cov/odd; DM: NOT/mixed NOT/mixed cov/odd
+PASS S4c W_0 is covariant and mirror-even in every reading
+PASS S4c W_T: covariant, mirror-odd for unsoldered SO(3); mirror-even soldered
+PASS S4c W_D4: covariant, mirror-odd for unsoldered O(3) and soldered
+PASS S4c W_Omega and W_DM: covariant and mirror-odd only in the soldered reading
+PASS S4c mirror image of W_X is exactly W_-X (slot mirror: T, D4; soldered mirror: D4, Omega, DM)
+S5 centre-last E[P_Y] under W_X (rows X, cols Y; T, D4, Omega, DM):
+  T: 32/243 0 0 0
+  D4: 0 320/1377 0 0
+  Omega: 0 0 2/27 2/81
+  DM: 0 0 2/45 2/15
+S5 static: T=1387678/10609137 D4=94240/408969 Omega=1778/24057 DM=196/1485; mixture=centre-last/7
+PASS S5 W_0 leaves every parity-odd correlator at zero (centre-last and static)
+PASS S5 each handed rule leaves a positive trace in its own texture; its mirror negates it
+PASS S5 T-row and T-column cross entries vanish (internal parity)
+PASS S5 order classes with an unrecorded arm carry no handed trace (S = empty, one, five arms)
+PASS S5 even statistic E[v.s] identical for W_X and W_-X
+PASS S6 sampled image index agrees with the soldered action map
+S6 unsoldered SO(3): T=handed, D4=handed, Omega=not covariant, DM=not covariant
+S6 unsoldered O(3): T=not covariant, D4=handed, Omega=not covariant, DM=not covariant
+S6 soldered: T=achiral, D4=handed, Omega=handed, DM=handed
+PASS S6 witness pairs W_0/W_T (unsoldered SO(3)), W_0/W_D4 (O(3)), W_0/W_DM (soldered): covariant, differ on the handed trace, mirror rule negates it
+PASS S6 T: handed under unsoldered SO(3), not covariant under O(3), achiral when soldered
+PASS S6 D4 is handed in all three readings; Omega and DM are handed only when soldered
+scope per_element=6 letters; per_site=7-site cross; per_mode=cubic,400/120 samples; per_block=exact sums; lattice_wide=unrun
+PASS S6 stdout stays under the 6000-byte ceiling 5658 bytes
+TOTAL: PASS=46 FAIL=0
+
+----- stderr -----
+

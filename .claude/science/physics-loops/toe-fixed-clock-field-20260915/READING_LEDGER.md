@@ -396,3 +396,21 @@ dominance and low-energy operator already have September13 sources.
 The positive-scalar source has now been fully read in separate chunks;
 the sign must not be represented as still open or as new work here.
 The older infinite-node note was reread fully.
+
+Block15: the September13 positive Ward, infrared spectral dominance and
+low-energy operator notes were fully read in separate chunks. They already
+close the sign and the double-compressed local linearization; neither is
+claimed new. Native third-order star and weak-electric spectator-gap notes
+were reread through their complete proofs. The thermodynamic star note
+was reread fully, as were the full-star infrared proof and its summable
+higher-odd ending, recovering the initially truncated ending separately.
+The uniform quasi-local star proof was reread. Uniform stiffness theorem
+statement/domain and opening compatible-dissemination proof through line240
+were read; later full proof blocks were not newly audited. Its existing
+certificate remains a conditional dependency. The weak-electric joint-defect
+note was fully reread for the next target; mean density and an extensive
+cutoff are already present and must not be recounted as new.
+Primary Nachtergaele-Sims-Young https://arxiv.org/pdf/1705.08553 pp1–7
+through the opening proof of Lemma3.2 read, including all hypotheses and
+statement of Theorem3.1. Only even finite-range CAR propagation is used;
+no gapped-phase stability theorem is imported. The paper is not fully read.

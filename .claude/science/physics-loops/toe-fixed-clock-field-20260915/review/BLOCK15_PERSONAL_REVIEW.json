@@ -1,0 +1,32 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T22:43:10.688988+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "all mixed prefix fluxes retain original-reference full-active gap",
+    "singleton gapless inverse is not assigned the defect gap",
+    "canonical folded terms are scalar by size-independent through-five support/parity",
+    "unitary cocycles are separated, not their inverses",
+    "no exponential filter moment assumed; time split and clipped error retained",
+    "separated factors are odd and the state correlation is not factorized",
+    "graded cross-family operator bound precedes Fourier boundedness",
+    "complete higher-odd singleton contribution retained",
+    "literal common CAR frame fixes minus-four skew-matrix normalization",
+    "finite calibration error contributes o(L), not an unjustified uniform O(1)",
+    "matrix coefficient norm is not the many-body physical gap",
+    "local energy integrability survives the momentum singularity"
+  ],
+  "risks": [
+    "new all-history locality argument needs independent source review",
+    "upstream flux stiffness and positive-node results are conditional dependencies",
+    "no useful numerical mixed-kernel constant",
+    "no all-order or fixed-coupling phase result"
+  ],
+  "inputs": {
+    "notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md": "5c4619f904c5206e571e6e2241a73e191378fb20d376c0d9658a94ac12118528",
+    "notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md": "f59587d36650768b63954cd22df68fd814c5478cb8271386d826c758e5f55f6a",
+    "evidence/block15_mixed_history_check.py": "c125b42bafa009d3261d1fbe8f52324bfcea40c3329fba31e26e03d079fd7094",
+    "evidence/block15_mixed_history_check.json": "77ba8cde0ab144dac3dc566ba91dbb61ecfd1ee22e2893ea2ab0e4ee57e419ad",
+    "evidence/block15_mixed_history_check.txt": "77ba8cde0ab144dac3dc566ba91dbb61ecfd1ee22e2893ea2ab0e4ee57e419ad"
+  }
+}

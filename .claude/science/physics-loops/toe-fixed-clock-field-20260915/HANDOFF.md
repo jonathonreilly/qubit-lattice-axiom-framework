@@ -621,3 +621,30 @@ resolution. Symmetric momentum geometry and refined quadrature retain the
 original tolerances; an independent algebraic boundary integral was added.
 The maximum photon tensor discrepancy is4.4e-18 and boundary refinement
 difference2.6e-14. All verification is personal, not independent audit.
+
+
+## Block15 — complete mixed histories and the surviving sixth singularity
+
+At separated centers the complete native census has16200 singleton-middle
+and145800 mixed-middle histories. Every proper mixed prefix retains a
+wrong local flux and its uniform original-reference gap. Five smooth
+inverse filters turn a mixed word into two separated odd cocycle factors
+plus a rapidly summable error. A graded Schur/Bessel bound controls the
+remaining correlated two-point multiplier without assuming vacuum clustering.
+Thus the full mixed sixth multiplier is uniformly bounded. Close-center
+patterns add bounded finite-distance terms.
+
+The already positive node alpha and the complete higher-odd summable
+return then give iK6(k)=-4 alpha² iK(k)/omega(k)²+B(k), with B bounded.
+The complete mixed histories cannot cancel this1/omega term. The canonical
+coefficient matrix satisfies ||iK6_L||/L ->2 alpha²/(pi sqrt3 h). This
+is a nonuniformity of vacuum-only fixed-order elimination, not a physical
+divergent energy or a many-body gap. Local inverse moments and energy
+density remain integrable; joint active/spectator treatment and resummation
+remain available. No axiom update.
+
+The new result is analytical and conditional on the source stiffness and
+node chain. Four full native history censuses, literal cocycle/CAR identities,
+a non-Hermitian odd-family bound and the singleton sign/factor all pass
+personal checks. No native mixed spectrum was computed; the finite Bloch
+example is explicitly diagnostic. Independent review remains necessary.

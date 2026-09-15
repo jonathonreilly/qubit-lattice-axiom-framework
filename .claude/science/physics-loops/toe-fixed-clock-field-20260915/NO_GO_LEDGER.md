@@ -56,3 +56,8 @@ coincident cones, forbidden directions and zero coupling escape them.
 Vanishing relative width does not establish a pole. No microscopic-phase
 or universal-particle impossibility, and no axiom update, is inferred.
 See notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md.
+
+Block15: bounded mixed sixth multipliers cannot cancel the certified
+nonzero singleton1/omega term. This is a specific canonical coefficient
+statement. Local responses remain finite; joint fields, energy dependence
+and resummation survive. An all-phase or axiom wall FAILS N1–N8.

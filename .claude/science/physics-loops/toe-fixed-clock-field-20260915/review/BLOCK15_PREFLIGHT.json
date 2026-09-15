@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-15T22:34:50.319533+00:00",
+  "target": "prove bounded mixed sixth multiplier and retain the full singleton infrared singularity",
+  "status": "analytic draft frozen before companion checks",
+  "source_sha256": "5ef12296e0909164a1ffcc0de0a56bd07dfa5a01687a390069e5fd4a58da5a08",
+  "new_physical_solve": false,
+  "planned_checks": [
+    "complete native separated-star prefix census",
+    "finite CAR cocycle identity and separated factorization",
+    "graded cross-family norm bound",
+    "literal CAR second-order singleton sign and factor",
+    "finite Bloch diagnostic of volume scaling, not a full native coefficient sample"
+  ],
+  "claim_risks": [
+    "uniform wrong-flux gap must apply to every mixed prefix in the original energy convention",
+    "operator Bessel bound requires odd separated factors and polynomial time growth",
+    "no exponential filter moment may be assumed",
+    "folded canonical terms must not introduce a hidden nonscalar cancellation",
+    "finite-volume norm statement is for the coefficient matrix, not the exact physical gap"
+  ]
+}

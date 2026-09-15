@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py
+runner_sha256: 7175dc3137d0ce9081f8ab32ee8c64b4a444c047c7ec3aec6eb9559bfdd3bfc4
+input_fingerprint_sha256: 9ed001a43df5da3ada85364e8d98707a18efcdf320d5981a2dba9c7b1455a962
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Qubit/Admissibility/Record clauses and realized_state_primitive
+declared_math: proper cubic rotations, finite Markov kernels, zonal moments on S^2
+PASS: audit-input-paths the note, axiom memo, and realized-state primitive are the declared source packet
+PASS: qubit-no-privilege Qubit forbids privileging possibilities beyond the one-site algebra
+PASS: qubit-cl3-no-extra the Cl(3,0) presentation adds no further primitive structure
+PASS: admissibility-clauses Admissibility supplies one covariant rule that varies with neighbour conditions
+PASS: record-form Record supplies formation and readability of records only
+PASS: realized-state-no-average order-dependent statistics are registered data unless the rule is order-blind
+PASS: note-contract the note states the ends-independence derivation and the variation/order-dependence target
+PASS: note-dependency scientific authorities are the axiom memo and the realized-state primitive
+PASS: proper-cubic-group the determinant-positive signed-permutation group has 24 elements
+PASS: six-axis-orbit the proper cubic group is transitive on the six axis points
+PASS: unique-invariant-six-axis the cubic orbit average of any axis point mass is the uniform law 1/6
+PASS: two-state-k2-residual K^2(+|+) - K^2(+|-) = (pplus - pminus)^2 on every sampled two-state kernel
+PASS: two-state-k2-constant-iff-independent two-state K^2 is independent of the start if and only if the kernel is independent of the neighbour
+PASS: two-state-ising-k2-not-haar the declared Ising one-neighbour kernel has K^2(+|+) = 17/25 against K^2(+|-) = 8/25
+PASS: path3-ends-independent ends-first on path3 gives independent empty laws on the two ends
+PASS: path3-chain-ising-correlated the Ising chain's (L,R) marginal is 17/50 on (++), not the independent 1/4
+PASS: path3-independent-kernel-matches the independent kernel makes the chain (L,R) marginal equal the ends-first law
+PASS: six-axis-k2-same-minus-opp K^2(same) - K^2(opp) = (a-b)^2 on every sampled cubic kernel
+PASS: six-axis-k2-closed-form the closed forms equal the explicit six-by-six product for a non-uniform cubic kernel
+PASS: six-axis-uniform-is-haar-square the uniform kernel squares to itself, the unique invariant law
+PASS: six-axis-quadratic-is-a-square after a=b the Haar-square condition is (6c-1)^2/3 = 0, hence only c=a=b=1/6
+PASS: six-axis-no-other-small-denominator-solution the only cubic kernel with denominator at most 8 whose square is uniform is the uniform kernel
+PASS: sphere-dipole-moment the zonal dipole of 1 + beta t is beta/3, vanishing iff beta=0
+PASS: sphere-quadrupole-moment the zonal quadrupole of gamma P2 is gamma/5, vanishing iff gamma=0
+PASS: sphere-k2-haar-kills-moments K^2 Haar requires lambda_ell(K)^2 = 0, hence lambda_ell(K)=0, hence beta=gamma=0 in this family
+PASS: equator-two-step-not-haar the covariant equator kernel has vanishing dipole but two-step <t^2>=1/2 against Haar 1/3
+PASS: copy-kernel-atomic a covariant atom at the neighbour remains an atom under K^2; Haar has none
+PASS: star-three-leaves-in-z3 Z^3 contains the three-leaf star at the origin needed to promote K_1 = mu_0 to K_3 = mu_0
+PASS: note-quotes-identities the note quotes the two-state, six-axis, path3, and zonal identities
+PASS: note-no-selection the note selects neither a physical order nor a physical rule
+PASS: note-both-readings the derivation is executed on both the cubic six-axis menu and S^2
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

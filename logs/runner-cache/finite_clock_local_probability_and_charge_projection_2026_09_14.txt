@@ -1,0 +1,410 @@
+===== runner cache v1 =====
+runner: scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py
+runner_sha256: 84dbae9ac1081dc61774a423545d45cde307fd8dfe214180727809d027054fca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+{
+  "local_stars": {
+    "box": [
+      3,
+      3,
+      3
+    ],
+    "star_sizes": {
+      "2": 36,
+      "3": 72,
+      "4": 36
+    },
+    "closed_binary_wrap_patterns": 288,
+    "edges": 144
+  },
+  "projected_coefficients": [
+    {
+      "box": [
+        1,
+        1,
+        1
+      ],
+      "physical_dimension": 243,
+      "neutral_dimension": 141,
+      "coefficients": [
+        {
+          "exponent": 0,
+          "entries": 1680,
+          "integer_multiplicity": 1680
+        },
+        {
+          "exponent": 1,
+          "entries": 0,
+          "integer_multiplicity": 0
+        },
+        {
+          "exponent": 2,
+          "entries": 456,
+          "integer_multiplicity": 456
+        },
+        {
+          "exponent": 3,
+          "entries": 0,
+          "integer_multiplicity": 0
+        },
+        {
+          "exponent": 4,
+          "entries": 0,
+          "integer_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "box": [
+        1,
+        1,
+        2
+      ],
+      "physical_dimension": 19683,
+      "neutral_dimension": 6651,
+      "coefficients": [
+        {
+          "exponent": 0,
+          "entries": 125392,
+          "integer_multiplicity": 125392
+        },
+        {
+          "exponent": 1,
+          "entries": 0,
+          "integer_multiplicity": 0
+        },
+        {
+          "exponent": 2,
+          "entries": 28704,
+          "integer_multiplicity": 28704
+        },
+        {
+          "exponent": 3,
+          "entries": 2888,
+          "integer_multiplicity": 2888
+        },
+        {
+          "exponent": 4,
+          "entries": 0,
+          "integer_multiplicity": 0
+        }
+      ]
+    }
+  ],
+  "penalty_limits": {
+    "status": "finite_author_checks_only",
+    "parameters": {
+      "mu": 0.4,
+      "electric_stiffness_3K_over_2": 0.3,
+      "kappa_per_step": 0.7,
+      "T": 1.0
+    },
+    "neutral_energy": 10.743943172479543,
+    "offblock_norm": 7.284656839380127,
+    "finite_spatial_penalties": [
+      {
+        "lambda": 32.0,
+        "energy": 9.673969495584162,
+        "neutral_energy": 10.743943172479543,
+        "energy_lower_bound": 8.247420619019758,
+        "charged_weight": 0.028720931282025814,
+        "charged_weight_bound": 0.1174499378561836
+      },
+      {
+        "lambda": 64.0,
+        "energy": 10.172329530166738,
+        "neutral_energy": 10.743943172479543,
+        "energy_lower_bound": 9.747507678965775,
+        "charged_weight": 0.008383230926212966,
+        "charged_weight_bound": 0.018710275466711866
+      },
+      {
+        "lambda": 128.0,
+        "energy": 10.44973185687246,
+        "neutral_energy": 10.743943172479543,
+        "energy_lower_bound": 10.29137614350648,
+        "charged_weight": 0.00223585410054347,
+        "charged_weight_bound": 0.0038596473497209106
+      },
+      {
+        "lambda": 256.0,
+        "energy": 10.5948942858703,
+        "neutral_energy": 10.743943172479543,
+        "energy_lower_bound": 10.527572470145177,
+        "charged_weight": 0.0005748680568950179,
+        "charged_weight_bound": 0.0008822236854543048
+      },
+      {
+        "lambda": 512.0,
+        "energy": 10.668956869640251,
+        "neutral_energy": 10.743943172479543,
+        "energy_lower_bound": 10.638076670629397,
+        "charged_weight": 0.0001455718765425896,
+        "charged_weight_bound": 0.00021120243916887823
+      }
+    ],
+    "zeno_product_model": "Mhalf exp(-delta A) Mhalf, testing the block lemma",
+    "zeno": [
+      {
+        "steps": 8,
+        "delta": 0.125,
+        "operator_error": 0.0005896160125500445,
+        "block_bound": 1.1164216756773981,
+        "fast_block_norm": 0.11544043686630613
+      },
+      {
+        "steps": 16,
+        "delta": 0.0625,
+        "operator_error": 0.00022171324621052558,
+        "block_bound": 1.4504348314695013,
+        "fast_block_norm": 0.21841244012900252
+      },
+      {
+        "steps": 32,
+        "delta": 0.03125,
+        "operator_error": 7.5984180102501e-05,
+        "block_bound": 1.3404630814989975,
+        "fast_block_norm": 0.3211545534942461
+      },
+      {
+        "steps": 64,
+        "delta": 0.015625,
+        "operator_error": 2.8409556967160376e-05,
+        "block_bound": 0.9773739167357226,
+        "fast_block_norm": 0.39682597712023027
+      },
+      {
+        "steps": 128,
+        "delta": 0.0078125,
+        "operator_error": 1.1959286629287937e-05,
+        "block_bound": 0.6072803674605698,
+        "fast_block_norm": 0.4432131351135702
+      },
+      {
+        "steps": 256,
+        "delta": 0.00390625,
+        "operator_error": 5.456160189686999e-06,
+        "block_bound": 0.3417874501070431,
+        "fast_block_norm": 0.4689570908576975
+      }
+    ],
+    "wrong_model_challenges": {
+      "omitted_second_harmonic_operator_error": 3.27628332005931,
+      "wrong_semigroup_limit_distance": 1.2960525661057784e-05,
+      "bulk_exponent_on_boundary_operator_error": 1.8041543297025289,
+      "unnormalized_spin_raising_operator_error": 16.55764273314526,
+      "modular_instead_of_integer_constraint_witness": {
+        "source_flux": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "destination_flux": [
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "source_charge": [
+          0
+        ],
+        "destination_charge": [
+          1
+        ]
+      }
+    }
+  },
+  "local_probability_lemma": {
+    "dimension": 81,
+    "h": 0.17,
+    "C": 5.08,
+    "noncommuting_near_far_norm": 7.352048999705734,
+    "cases": [
+      {
+        "tau": 0.02,
+        "lower_probability": 9.466502674536992e-06,
+        "minimum_actual_probability": 0.2799092318175883,
+        "entrywise_semigroup_margin": 1.7542672936117682e-09
+      },
+      {
+        "tau": 0.1,
+        "lower_probability": 0.00010644659813325089,
+        "minimum_actual_probability": 0.2799092318175883,
+        "entrywise_semigroup_margin": 5.898756731856942e-07
+      },
+      {
+        "tau": 0.4,
+        "lower_probability": 8.53262554514986e-05,
+        "minimum_actual_probability": 0.2799092318175883,
+        "entrywise_semigroup_margin": 1.5665661575259243e-05
+      }
+    ]
+  },
+  "physical_cube_geometry": {
+    "two_edge_charge_assignment": {
+      "nonzero_edge_indexes": [
+        0,
+        1
+      ],
+      "nonzero_oriented_edges": [
+        [
+          [
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "edge_values": [
+        -1,
+        1
+      ],
+      "all_edge_values": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "face_flux": [
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "cube_charge": [
+        1
+      ]
+    },
+    "bulk_cube_region_size": 12,
+    "bulk_near_term_counts": {
+      "electric": 60,
+      "faces": 30,
+      "cubes": 19
+    }
+  },
+  "physical_cube_probabilities": {
+    "gauge_orbit_size": 2187,
+    "cases": [
+      {
+        "mu": 0.0,
+        "K": 0.0,
+        "lambda": 0.0,
+        "h": 1.0,
+        "C": 24.0,
+        "tau": 0.041666666666666664,
+        "log_lower_bound": -77.75766896235146,
+        "minimum_coordinate_probability": 1.8816764231588829e-06,
+        "charge_defect_probability": 0.41975308641975306
+      },
+      {
+        "mu": 0.4,
+        "K": 0.2,
+        "lambda": 2.0,
+        "h": 0.20189651799465538,
+        "C": 33.8,
+        "tau": 0.3697645682895877,
+        "log_lower_bound": -86.3274270693651,
+        "minimum_coordinate_probability": 3.723256830524002e-07,
+        "charge_defect_probability": 0.3045062259534336
+      },
+      {
+        "mu": 1.0,
+        "K": 0.5,
+        "lambda": 5.0,
+        "h": 0.01831563888873418,
+        "C": 48.5,
+        "tau": 0.24798841381717637,
+        "log_lower_bound": -153.46514372973238,
+        "minimum_coordinate_probability": 1.448136372857691e-08,
+        "charge_defect_probability": 0.0957822325063214
+      }
+    ]
+  },
+  "hypothesis_challenges": {
+    "positive_near_dropped_without_changing_C": {
+      "H": [
+        [
+          -100.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "lowest_near_eigenvalue": -100.02019789944299,
+      "false_bound_if_positive_near_is_dropped": 5.477435739940306,
+      "minimum_actual_probability": 0.00010196798629533636,
+      "valid_bound_after_local_scalar_shift": 1.3399872412088446e-05
+    },
+    "on_region_potential_misassigned_to_far": {
+      "H": [
+        [
+          2.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          102.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          102.0
+        ]
+      ],
+      "false_bound": 0.10032273504899315,
+      "minimum_actual_probability": 0.00010196798629533647
+    }
+  }
+}
+per_element: checked exact cyclic shifts and integer branch-mismatch coefficients on finite carriers.
+per_site: checked an original twelve-link cube assignment with integer charge and local term counts.
+per_mode: checked and not executed — no photon pole, spectral residue, or continuum mode calculation is claimed.
+per_block: checked complete one/two-cube projection matrices and a noncommuting four-qutrit probability example.
+lattice_wide: checked and not executed — the uniform local bound has an analytic proof; no infinite-volume matrix was computed.
+TOTAL: PASS=7 FAIL=0 (author check families; theorem scope is stated in the paired note)
+
+----- stderr -----
+

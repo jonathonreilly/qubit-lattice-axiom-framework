@@ -1,0 +1,92 @@
+{
+  "base": "f8ac15d64b204a850747b391c1981d454c0f06d3",
+  "source_head": "9e2ddce681d36659e077816f51d38252875a40be",
+  "source_tree": "7425b91cf8d300253c8637a5c8c7f67f69144ce1",
+  "heads": {
+    "8136": "8a5ace1afc3b41999e2296d0067a325294fb2c6e"
+  },
+  "source_owners": {
+    "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/BLOCK24_MUTATION_CHECKS.json": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/FOCUSED_EVIDENCE_CHECKS.json": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/INITIAL_MUTATION_COVERAGE.json": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/README.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/SOURCE_DISPOSITION.json": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/STATE.yaml": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLAIM_STATUS_CERTIFICATE.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLUSTER_CAP_EVALUATION.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-GOAL.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-HANDOFF.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-NOVELTY_AND_SEARCH.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-REVIEW_HISTORY.md": "review-8136",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-TRACE_GATE.md": "review-8136",
+    "logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt": "review-8136",
+    "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py": "review-8136"
+  },
+  "inputs": {
+    "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/BLOCK24_MUTATION_CHECKS.json": "a368f65ef3c533fb11908be6ed3a57d864a7494175a712136c7f2b8b495c6d39",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/FOCUSED_EVIDENCE_CHECKS.json": "df710d1ea4ac2fcc6caa53de57c5be1d92b06e241ed5d65530410a2c43fa27bc",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/INITIAL_MUTATION_COVERAGE.json": "070abcfed3b48876faf8ecb84c9c59d3207b41ba215dcb4b5d676395705a8839",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/README.md": "528ce7b28374c98277a7b3520120d730bfa10da815ddd987f3a66dc472a95e36",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/SOURCE_DISPOSITION.json": "d66c2feb06102b0dbf999757c10b843004ecf2e066ee0308c6f4b1b0f1ef217d",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/STATE.yaml": "5dc7e03da67d0b1dda982e96a885a091103dd6e9da3447e74a148434f8fb6da8",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLAIM_STATUS_CERTIFICATE.md": "3d15315bf80966557051fe237e5a9cc3f61ebd42febe7841e6a482b24db5c4a5",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLUSTER_CAP_EVALUATION.md": "a727a886f9c2a6632b84225de337ca3cbbba5146e2fdfbb366bfa7a1139f7bae",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-GOAL.md": "1d3bd229f54155f62ad915d1bc6bb0bad72a4330c66b31687637113215f9a76b",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-HANDOFF.md": "034111892b7ff18b12140355c9af2b40d1f64f0d3bd495842f5471071a06c8ab",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-NOVELTY_AND_SEARCH.md": "51293eae79ba68093e87e1978bd3bc227e48962d64533c303c6cc16eb7d33413",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-REVIEW_HISTORY.md": "71ae7e9be8dbee36a3d19085fed430e542a95ca6a0318eb90040be6018c7f723",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-TRACE_GATE.md": "8c9b58210b7230063c9c516a29f90874fb47f29ec931f8bc79042ee224f47f21",
+    "logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt": "41b4acfe9bf3bb2f5899c376c5bd9e806d33acf573d9afd414b654705169f3dd",
+    "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  "review_evidence_hashes": {
+    "review-8136.md": "6f1f28894495cfa6ba5f8c71e6ff25775ce3972ae83b555bbfef1bd2160ba092",
+    "review-8136.json": "a55a9a8ea243177cf4bd4b44dd8d128ddd2f607113818edc0bc2a52d0c83c2e6"
+  },
+  "dependency_expectations": {
+    "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8136.json",
+      "reason": "Self-contained supplied finite-clock Villain model. No repository scientific theorem or runtime data imported. Earlier campaign results are historical comparisons only. Hard-core cluster expansion is an explicit external mathematical import; Gaussian/Poisson and finite-dimensional stochastic analysis are standard methods, not repository premises."
+    }
+  },
+  "cheap_preflight": {
+    "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-HANDOFF.md"
+      ],
+      "required_claim_ids": []
+    }
+  },
+  "units": [
+    "8136"
+  ],
+  "departure": "One ready unit departs immediately after train14 landing; native source fixes continue independently.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match.",
+  "candidate_commit": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "candidate_tree": "f047fdbab101875131bf592cb93d71b4e4c18e5e",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 1,
+  "validation_logs": {
+    "train15-pipeline.log": "fc7ea07773ce490cf34ec23b8df8ac58446d2999b3ccb51c3d3305fab295be08",
+    "train15-strict.log": "dfa2d1d24958c1568d2f38efa0953fa9bb0d8af3dbffbf450f51f1e514005fcb",
+    "train15-evidence.txt": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+    "train15-validated-rows.json": "515e2c0c35e63dde6a3e378e428816cee6c498f7ba63be53e417a8a729e94591"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
+}

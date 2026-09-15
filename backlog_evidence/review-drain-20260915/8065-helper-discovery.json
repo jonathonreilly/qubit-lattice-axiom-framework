@@ -1,0 +1,10 @@
+{
+  "graph": [
+    "scripts/native_charged_record_history_car_2026_09_09.py",
+    "scripts/native_charged_record_history_controls_2026_09_09.py"
+  ],
+  "packet": [
+    "native_charged_record_history_car_2026_09_09",
+    "native_charged_record_history_controls_2026_09_09"
+  ]
+}

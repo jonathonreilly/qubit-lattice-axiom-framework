@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8089-final",
+  "tree": "9f1ff747782d18496b712974a8cfe3441e328144",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_informative_edge_record_and_disturbance_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_informative_edge_record_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8089-evidence/kept/pr8089-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+        "docs/work_history/repo/review_feedback/pr8089-evidence/kept/pr8089-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4358
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4356
+    },
+    "declared_inputs": {
+      "hits": 8775,
+      "misses": 4489
+    }
+  },
+  "record_sha256": "e3afaec0037985c90422020780c139e1b93c20c22087433304a26d093e7858b9",
+  "checker_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187"
+}

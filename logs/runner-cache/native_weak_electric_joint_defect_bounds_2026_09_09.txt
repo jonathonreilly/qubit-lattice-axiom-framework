@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py
+runner_sha256: 66b39154ccde4148ab9e17f01bc7500d9e53db0a3d44515b1bcfb138ab7b0b2a
+input_fingerprint_sha256: 12c5f998e7cf270aa86bccd24be07b3d272241254f51b3e0538b5d29561d6eab
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "groups": {
+    "geometry": 1120,
+    "flip_support": 4200,
+    "face_incidence": 840,
+    "flux_counterexample": 840,
+    "projector_selection": 16576,
+    "integer_cutoff": 11,
+    "recursion": 18924,
+    "macro_square": 9,
+    "young": 9,
+    "finite_volume": 3,
+    "mixture_boundary": 63
+  },
+  "total_checks": 42595,
+  "max_flipped": 8,
+  "face_terms": 32,
+  "scope": "Finite lemma controls; no physical ground-state computation.",
+  "input_sha256": {
+    "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "0db93bb1365a24debba2bf36d184c8b1895c482f998962187b89526216059a61",
+    "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md": "7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19",
+    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py": "ce52c1c717e3e56257b20ab1a7339fddf55b66b8a0c705e434e2b3819d35c47e"
+  },
+  "source_sha256": "66b39154ccde4148ab9e17f01bc7500d9e53db0a3d44515b1bcfb138ab7b0b2a",
+  "elapsed_seconds": 0.01321808306965977,
+  "peak_rss_bytes": 23445504,
+  "actual_current_surface_status": "conditional-support"
+}
+TOTAL: PASS=42595 FAIL=0
+per_element: exact local geometry and electric-pair face flips are checked on L4 and L6 tori.
+per_site: every finite test face has its complete incident electric-pair count checked.
+per_mode: no active-mode spectrum is computed; small commuting-projector selections are exact.
+per_block: integer stopping thresholds and finite recursion controls use exact rational arithmetic.
+lattice_wide: general joint bounds are analytical; no perturbed ground state or thermal sample is computed.
+
+----- stderr -----
+

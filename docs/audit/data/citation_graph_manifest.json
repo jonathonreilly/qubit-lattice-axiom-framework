@@ -1,6 +1,6 @@
 {
- "edge_count": 13383,
- "node_count": 5821,
+ "edge_count": 13386,
+ "node_count": 5822,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -744,6 +744,10 @@
   },
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
+   "out_degree": 3
+  },
+  "admissibility_rule_static_law_is_not_a_mixture_of_formation_laws_on_any_window_with_a_cycle_flip_monotonicity_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "a95e40c6cf02",
    "out_degree": 3
   },
   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {

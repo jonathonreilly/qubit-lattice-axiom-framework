@@ -105,3 +105,14 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- block 16 opening (2026-09-15)
+# block: 16
+# branch: physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915 (independent; base origin/main fa0200b439; blocks 06-15 are open PRs #8034, #8035, #8138-#8142, #8146-#8149)
+# pr_status: opening — PR number recorded at close-out; hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=17 FAIL=0; 10 mutations, census 10/10 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
+# seats: "supervisor-run: control -> contract with a lens pass -> primary (X1-X4, runner) -> refuting pass (full sequential laws; direct two-neighbour search; census cache; hand computation) -> fold"
+# review_findings: "flip lemma: w_sigma(v^z) >= w_sigma(v), strict iff z in a recorded set of size >= 2 (normalizer lemma); mixture theorem: sum P(sigma) mu_sigma = static iff P charges only orders with every |A_x| <= 1; no mixture is the static law on any window with a cycle; units in constant environments with block 15's criterion; value-dependent order laws open beyond the plaquette"
+# strongest_unresolved_proof_obligation: "value-dependent order laws on general windows"
+# next_exact_action: "queue refresh 2026-09-15 (block 16 opening): value-dependent order laws; the menus block"
+# lock: held (owner: don't stop; assess the next lane at each conclusion)

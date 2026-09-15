@@ -1,0 +1,16 @@
+# RESULTS — block 16: the static law is not a mixture of formation laws (2026-09-15)
+
+**Deliverables (branch `physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915`, independent PR against `main` at `fa0200b439`; parents on `main`: block 01 and the census note of 2026-09-13):** the note `docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py` (17 checks, 10 mutations, exact rational and symbolic arithmetic, ~25 s); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block16_flip_monotonicity.py`, `specs/supervisor_control_block16_refuter.py`); `GOAL_block16.md`; `CHECKER_block16_findings.md`; this record. Blocks 06–15 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8149.
+
+**Why this block.** Blocks 14 and 15 excluded rate and unit clauses on the plaquette through its symmetries. The normalizer lemma of block 15 gives a symmetry-free mechanism that settles every window at once.
+
+## Result, in one paragraph
+For an order `σ` let `w_σ(v) = μ_σ(v)/Π_edges K(v_e)`; the static law is a constant multiple of `Π_edges K`. Flipping one record of the constant pattern from `b` to `−b` (to an orthogonal value when `p = q`) changes only the normalizers `K_{|A_x|}` of sites whose recorded set contains the flipped site, and each of those strictly decreases by the exact lemma `K_k(b,…,b) − K_k(−b,b,…,b) = ((p−q)/Z_1)[(p/Z_1)^{k−1} − (q/Z_1)^{k−1}]`; so every order's weight ratio rises, strictly iff the flipped site lies in a recorded set of size at least two (X1). Hence for every probability law on orders the mixture of formation laws is the static law iff it charges only orders in which every site records at most one neighbour — a sum of nonnegative terms must vanish termwise — and on any window with a cycle no order qualifies (the last vertex of a cycle to form records two): no mixture over orders, whatever the mixing, is the static law (X2). The same holds for a unit against its joint law in a constant environment with block 15's criterion (X3). Value-dependent order laws are the open boundary beyond the plaquette (X4). Executed: the flip on every order–site pair of the plaquette (96) and `2×3` (4320) and every class–site pair of the cube (4336); the criterion on the path (4 of 6 orders qualify) and the star (48 of 120); the `2×3` uniform mixture at the census note's exact distance; random mixtures differ everywhere.
+
+## Certificate
+- Runner: `TOTAL: PASS=17 FAIL=0`; 10 mutations each in its family; no floating-point literal or conversion; classical names only under Prior art and Imports.
+- Refuting pass (`CHECKER_block16_findings.md`): the flip comparison from the full sequential laws, a direct search for two-neighbour sites, the census cache to twelve digits, the domino by hand — all consistent.
+- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
+
+## Not claimed
+Value-dependent order laws beyond the plaquette; other menus; non-constant environments for units; any clause; any selection of an order, mixture, rule or coupling as physical.

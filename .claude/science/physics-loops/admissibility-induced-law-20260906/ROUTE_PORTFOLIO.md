@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 16 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–15 are open PRs #8034, #8035, #8138–#8142, #8146–#8149)
+Searched commit: `origin/main` = `fa0200b439`.
+- `git grep -n -iE "mixture over (all )?orders|convex (hull|combination) of (the )?(order|sequential|formation) laws|random(ized)? formation" origin/main -- 'docs/*.md'` → the census note (the uniform mixture; Theorem 3); nothing on general mixtures or a monotonicity mechanism.
+- Open PRs: #8148 (the rate clause; plaquette hull by symmetry), #8149 (the unit criterion and the normalizer lemma) — this lane; none elsewhere.
+Classification: **open after the matched-hit review.** Routes: M-A the flip lemma from the normalizer lemma (X1) — chosen; M-B the termwise-vanishing sum with block 01's cycle lemma (X2) — chosen; M-C the constant-environment unit version (X3) — chosen; M-D value-dependent order laws on general windows — not taken (open; the plaquette case is #8148); M-E other menus — not taken.

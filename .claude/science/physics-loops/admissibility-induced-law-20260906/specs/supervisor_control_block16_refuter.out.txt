@@ -1,0 +1,4 @@
+R1 flip comparison from the full sequential laws agrees with the weight formula on every class of the plaquette, 2x3 and the cube: True
+R2 direct search for a site with two recorded neighbours agrees with the runner's qualifying-order test on the path and the star: True
+R3 the census runner's cache line: PASS: D8 rect TV(mix,static) (3, 1, 2) 0.029104037152 | exact value to 12 digits: 0.029104037152 | match: True
+R4 domino in the all-+x environment: the second site's normalizer K_6(first, five outside +x) at first = +x vs -x: 493/1492992 251/1492992 differ: True

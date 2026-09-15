@@ -23,3 +23,10 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 16 (2026-09-15) — the static law is not a mixture of formation laws
+- Dependencies: `minimal_axioms`; block 01 (Theorem B; the cycle lemma) and the census note (Lemma L; Theorem 3), both on `main`. Proposed, unaudited. PRs #8148 and #8149 referenced for context; the normalizer lemma re-proved here.
+- Named premises: the records-only reading; the six-axis menu; positivity; the product rule.
+- Scaffolding: the constant pattern and its one-site flips; the weight ratio `μ_σ/Π K`; the windows (plaquette, `2×3`, cube, path, star, domino); the all-`+x` environment for X3.
+- External methods: none beyond elementary comparison.
+- Counterfactual pass: the constant rule (all laws uniform); value-dependent order laws (outside X1); non-constant environments (the flip's monotonicity fails when other recorded values differ from the flipped site's original value); other menus.

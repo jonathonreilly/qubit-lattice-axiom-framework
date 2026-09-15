@@ -1,0 +1,5 @@
+plaquette: flip monotonicity and strictness-iff hold on all 96 (order, site) pairs: True; strict in 48; time 0.0s
+2x3: flip monotonicity and strictness-iff hold on all 4320 (order, site) pairs: True; strict in 2592; time 0.2s
+cube: flip monotonicity and strictness-iff hold on all 322560 (order, site) pairs: True; strict in 230400; time 23.2s
+path3: 4 good / 2 bad orders; uniform mixture over good = static: True; three random full mixtures differ: [True, True, True]
+star4: 48 good / 72 bad orders; uniform mixture over good = static: True; three random full mixtures differ: [True, True, True]

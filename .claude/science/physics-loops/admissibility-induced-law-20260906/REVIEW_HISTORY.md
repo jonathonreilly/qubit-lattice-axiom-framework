@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 16 — V1-V5 (supervisor, 2026-09-15)
+- V1: the campaign's standing question whether the repository's static law can arise from the formation reading by any randomization of the order (the census note's "witness-generating device"; the plaquette results of PRs #8148, #8149); #8093's assembly needs the status of the static reconstruction.
+- V2: the lens pass in `GOAL_block16.md` ("block 01 plus the census note" — those treat one order and one mixture, this treats every mixture on every window; "the order law could depend on the values" — outside X1, named as X4; "small block" — yes, wide scope).
+- V3: X1–X3 proved; executed exhaustively on the flips of three windows and the criterion on two trees (17 checks, 10 mutations); the refuting pass agreed on four routes.
+- V4: no order, mixture, rule or coupling selected; no clause adopted.
+- V5: consumers named — #8093's assembly; PRs #8148, #8149 as instances; the campaign's queue.
+
+## block 16 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block16.md`): as V2. Primary: the note and the runner (17 checks, 10 mutations). Refuting pass (`CHECKER_block16_findings.md`): the flip from the full sequential laws on every class of three windows, a direct two-neighbour search on two trees, the census cache to twelve digits, the domino by hand — all consistent; no defects in the primary; two scope notes folded (per-class cube check; constant environments for X3). Author checks only; independent review pending.
+
+## block 16 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01 and the census note, all on `main` at `fa0200b439`; nothing pinned from a branch or PR (PRs #8148/#8149 are context only; the lemma is re-proved). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — value-dependent order laws and non-constant environments marked open; the theorem quantifies over value-blind mixtures only. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

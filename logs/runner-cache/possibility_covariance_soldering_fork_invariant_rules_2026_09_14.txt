@@ -1,0 +1,121 @@
+===== runner cache v1 =====
+runner: scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py
+runner_sha256: fbbc2d045a9596640a2e535873ede93284fb7c1f9ddbbdf9d44b494b51a87e35
+input_fingerprint_sha256: cd5fa2e05118ff1e0dee86ea297a8fbbb8cc712c427c934f471dcb62183c58d3
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 11.03
+status: ok
+----- stdout -----
+1. domain, lattice group, recorded-slot strata
+ ok cubic group has order 24
+ ok every element is a proper rotation
+ ok all group elements distinct
+ ok closed under multiplication
+ ok slot action is faithful
+ ok slot action permutes the six lattice directions
+ ok antipodal slots stay antipodal
+ ok recorded-slot subsets fall into 10 orbits
+ ok orbit sizes sum to 64
+ ok orbit size times stabiliser order is 24
+ ok orbit representatives are the expected ten
+ ok barycentre is nonzero on exactly six strata
+ ok barycentre vanishes on the antipodally closed strata
+2. dimension of the covariant rule space, by reading
+ ok single Bloch vector, unsoldered: one invariant per even degree
+ ok single Bloch vector, soldered: cubic harmonics appear from degree 4
+ ok centre plus one recorded neighbour, unsoldered
+ ok centre plus one recorded neighbour, soldered
+ ok full neighbourhood, unsoldered SO(3)
+ ok full neighbourhood, unsoldered O(3): odd degrees vanish
+ ok full neighbourhood, soldered
+ ok soldering strictly enlarges the rule space at full-window scalar degrees1 through6
+ ok no scalar invariant is linear in the vectors, unsoldered
+ ok soldered linear terms match an independent Frobenius orbit count
+ ok soldered, one linear term where the barycentre vanishes, more where not
+ ok independent route reproduces the unsoldered full-window counts
+ ok independent route reproduces the soldered full-window counts
+3. per-stratum tables and the independent recomputation
+ ok scalar table, unsoldered SO(3)
+ ok scalar table, unsoldered O(3): every odd degree is empty
+ ok scalar table, soldered
+ ok Bloch-valued table, unsoldered SO(3)
+ ok Bloch-valued table, soldered
+ ok soldering identifies the lattice and internal vector representations
+ ok it does not identify them unsoldered
+ ok no occupancy-only Bloch response, unsoldered SO(3)
+ ok no occupancy-only Bloch response, unsoldered O(3)
+ ok one occupancy-only Bloch response soldered, exactly where d is nonzero
+ ok and none where the barycentre vanishes
+ ok no occupancy-only lattice-frame response, unsoldered
+ ok a lattice-frame response appears at first order on every occupied stratum
+ ok soldered, the empty neighbourhood already carries a frame response
+ ok character sums and derivation kernels agree on120 U/S scalar/internal-vector dimensions, degrees1–3
+4. explicit covariant rule terms and the frame a record registers
+ ok the axis-weighted sum has one term per lattice axis direction
+ ok it is invariant under the soldered action
+ ok it is not invariant under the unsoldered lattice action
+ ok internal so(3) does not annihilate it
+ ok the handed lattice term has 48 monomials
+ ok it is annihilated by internal so(3)
+ ok it is invariant under the unsoldered lattice action
+ ok it is the unique unsoldered cubic invariant of degree three
+ ok and it is handed: no such invariant survives adding the inversion
+ ok five explicit quadratic terms are unsoldered invariants
+ ok they are linearly independent
+ ok and they span the whole quadratic unsoldered space
+ ok the test internal rotation is a proper rotation
+ ok the recorded frame transforms as a lattice-by-internal bimodule
+ ok the recorded frame is generically invertible
+ ok so a record can register an identification the law does not supply
+5. the law at a site with no recorded neighbour
+ ok unsoldered, the sphere has no invariant past the constant to degree ten
+ ok soldered, a second invariant appears on the sphere at degree four
+ ok neither reading has a linear or a non-constant quadratic sphere invariant
+ ok rotation-invariant even axial moments are 1/3, 1/5, 1/7
+ ok and they match the one-dimensional projection integral
+ ok the rotation-invariant law normalises on the sphere at every order
+ ok every odd moment of the rotation-invariant law vanishes
+ ok the six-axis law is invariant under the lattice rotations
+ ok the six-axis law is not invariant under an internal rotation
+ ok its even axial moments are all 1/3, unlike 1/3, 1/5, 1/7
+ ok and it gives no weight to a mixed even monomial
+ ok both laws give the fair antipodal coin along a lattice axis
+ ok the two laws separate first at the quartic axis sum, 3/5 against 1
+6. two supplied positive menu functions with distinct covariance
+ ok the two models disagree on one recorded neighbour, 2/3 against 1/2
+ ok and they agree on the empty neighbourhood, the fair coin
+ ok tested menus of both models are normalized nonnegative probabilities
+ ok model A is covariant under the soldered action, whole group and strata
+ ok that test is not vacuous: the soldered action moves the menu it returns
+ ok model A is not covariant when the cubic rotation moves slots alone
+ ok the internal test rotation is proper and moves the menu direction
+ ok model A is not covariant under an independent internal rotation
+ ok model B is covariant under independent internal rotations
+ ok model B is covariant under the cubic rotation acting on slots alone
+ ok model B is covariant under the soldered action as well
+ ok so the pair is separated by the soldering, not by the lattice symmetry
+7. roles, translations, and where oriented link data can come from
+ ok translations act transitively on the sites of the parity cell
+ ok so a translation-invariant scalar function of one site is constant
+ ok the staggered labelling keeps an index-two subgroup of translations
+ ok translation-invariant functions of the parity class are the constants
+ ok the eight-distinct-label toy keeps the identity translation alone
+ ok a nearest-neighbour step has parity weight one and flips the class
+ ok a next-nearest step has parity weight two and preserves the class
+ ok the eight-label stabilizer is smaller than the parity stabilizer
+ ok translation-invariant functions of an ordered site pair span eight
+ ok the registered frame inverts exactly
+ ok through it a lattice direction reads as an internal vector, unsoldered
+ ok and that reading is not available from the law alone
+TOTAL: PASS=94 FAIL=0
+elapsed 11.0 s
+per_element: exact scalar, internal-vector and frame character expressions and rational polynomial identities are checked.
+per_site: all64 occupancy subsets of the six-neighbour window are represented by ten proper-cubic orbits; no formation law is run.
+per_mode: U/S scalar and internal-vector degrees1–3 have120 independent kernel/Reynolds comparisons; frame counts use characters.
+per_block: all24 cubic rotations, rational frame/menu examples, and the eight-label parity-cell translation toy are checked.
+lattice_wide: checked and not executed — no global admissibility, role-selection, dynamics or physical Record formation theorem is supplied.
+INPUT_SHA256 {"docs/ADMISSIBILITY_AXIS_SEPARABLE_BARYCENTER_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-14.md": "5aa5e8549b928d49025e52ff705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b", "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967", "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d", "docs/ADMISSIBILITY_SHARP_QUBIT_RECORD_WRITER_ORIENTATION_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md": "f07c5330951cc181a710e77d3273c2641a0a2292ca01ac61889211fdb4a1c733", "docs/ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md": "2610f30a0c0a6821e0d086f3b56785442b97c25c573a485ad290afc8e1772082", "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63", "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563", "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c"}
+
+----- stderr -----
+

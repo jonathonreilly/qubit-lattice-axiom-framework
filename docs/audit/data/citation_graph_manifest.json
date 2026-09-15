@@ -1,6 +1,6 @@
 {
- "edge_count": 13426,
- "node_count": 5851,
+ "edge_count": 13429,
+ "node_count": 5854,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5037,6 +5037,10 @@
   "finite_edge_qubit_parity_dictionary_occupation_zeros_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "9c83fb5042d9",
+   "out_degree": 3
   },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
    "deps_hash": "e3b0c44298fc",
@@ -22375,6 +22379,14 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8100-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8101-evidence.kept.pr8101-author_review-f47757c621d16573": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8101-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

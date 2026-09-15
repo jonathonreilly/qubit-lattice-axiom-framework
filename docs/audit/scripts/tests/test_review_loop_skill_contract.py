@@ -65,6 +65,22 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
     def test_committed_contract_passes(self):
         self.assertEqual(self.missing(), [])
 
+    def test_dependent_base_preservation_is_required(self):
+        for needle in (
+            "including drafts",
+            "re-list open PRs targeting the old base immediately before deletion",
+            "preserve the parent branch for recovery",
+            "After deletion, verify the expected dependent PRs remain open",
+            "restore the exact deleted parent ref with an absent-ref lease",
+        ):
+            with self.subTest(needle=needle):
+                self.assert_skill_mutation_fails(needle, "dependent_pr_base_preservation")
+
+    def test_command_preserves_dependent_prs(self):
+        self.assert_command_mutation_fails(
+            "retarget dependent bases to `main`", "command_dependent_base_preservation"
+        )
+
     def test_freshness_is_fail_closed(self):
         self.assert_skill_mutation_fails("## Skill Freshness", "freshness")
 

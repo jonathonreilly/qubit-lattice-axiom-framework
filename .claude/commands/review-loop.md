@@ -219,5 +219,13 @@ Mode selection:
   landing its content** (rejected / nothing salvaged / salvage deferred) --
   keep it as the handle on the un-landed work. Never delete a head that still
   backs another open PR, nor `main`.
+  Before deletion, inventory open PRs using this branch as their base, including
+  drafts and out-of-unit dependents. Freeze their original heads, bases and
+  deltas; after parent source lands, retarget dependent bases to `main` and
+  verify unchanged heads and open states. Re-list old-base dependents before
+  deleting; preserve the parent branch if any remain or a head changed.
+  Verify dependent PRs remain open after deletion. GitHub can close a PR when
+  its base disappears; follow the canonical exact-ref restoration/reopen
+  recovery if that occurs. Base maintenance grants no science acceptance.
 - Live unresolved review findings belong in `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
 - Long historical packets belong in `docs/work_history/repo/review_feedback/`.

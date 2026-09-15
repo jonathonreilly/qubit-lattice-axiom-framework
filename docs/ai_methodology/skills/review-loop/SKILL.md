@@ -72,7 +72,23 @@ intact. **Do NOT delete the head branch when a PR is closed without landing its
 content** -- rejected as non-landable with nothing salvaged, or with salvage
 deferred to a later pass: keep that branch as the working handle on the
 un-landed work. Never delete a head that still backs another open PR, nor `main`
-or a protected branch. (Closed PRs retain their commits either way; the live
+or a protected branch. Before deleting a landed branch, list open PRs that
+use it as their base, including drafts and PRs outside the current review unit.
+Freeze each dependent PR's number, head SHA, original base and original delta.
+After verifying the parent's complete reviewed source is durable on `main`,
+retarget those dependent PR bases to `main` without changing their heads or
+closing them. This is base maintenance, not review or landing of their content.
+Verify each dependent remains open with its frozen head and the new base, then
+re-list open PRs targeting the old base immediately before deletion. If any
+remain or a head changed, preserve the parent branch for recovery and record
+the pending base maintenance; do not delete it. GitHub closes open PRs whose
+base branch is deleted, so a same-head check alone cannot preserve the stack.
+After deletion, verify the expected dependent PRs remain open; if GitHub closed
+one, restore the exact deleted parent ref with an absent-ref lease, reopen the
+unchanged dependent, retarget its base, and repeat the checks before deletion.
+A failed retarget or recovery is a recorded operation failure, never permission
+to close unreviewed content.
+(Closed PRs retain their commits either way; the live
 branch matters as the recovery handle precisely when the content did not land.)
 It auto-corrects status vocabulary and terminology so a PR follows repo
 conventions by running `scripts/vocab_lint.py --fix` on all
@@ -779,8 +795,8 @@ review-only flags contradict the drain's land-end-to-end contract).
    that PR head again immediately before its own close. If it differs from the
    frozen SHA, leave that PR open and its branch intact, and record that only the
    older reviewed head landed. For an unchanged same-repository head, use the
-   lease-protected branch-deletion rule above; close only after its exact lease
-   succeeds. Never let one moved head prevent unaffected train members from
+   lease-protected branch-deletion and dependent-base preservation rules above;
+   close only after the required checks and exact lease succeed. Never let one moved head prevent unaffected train members from
    being checked and closed individually.
 
    If combined validation fails, preserve the failing command and log, do not

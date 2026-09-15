@@ -214,6 +214,15 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"post-push head check",
         r"force-with-lease=refs/heads/<head>:<frozen-head-sha>",
     ),
+    "dependent_pr_base_preservation": (
+        r"list open PRs that\s+use it as their base, including drafts",
+        r"Freeze each dependent PR's number, head SHA, original base and original delta",
+        r"retarget those dependent PR bases to `main` without changing their heads",
+        r"re-list open PRs targeting the old base immediately before deletion",
+        r"preserve the parent branch for recovery",
+        r"After deletion, verify the expected dependent PRs remain open",
+        r"restore the exact deleted parent ref with an absent-ref lease",
+    ),
     "live_surface_routing": (
         r"docs/KEY_SCIENCE\.md",
         r"relevant sharded rows under `docs/audit/data/ledger/`",
@@ -317,6 +326,13 @@ COMMAND_RULES: dict[str, tuple[str, ...]] = {
         r"verifies every frozen PR head\s+immediately before push",
         r"rechecks each head immediately before its own close",
         r"force-with-lease=<ref>:<frozen-head-sha>",
+    ),
+    "command_dependent_base_preservation": (
+        r"inventory open PRs using this branch as their base",
+        r"drafts and out-of-unit dependents",
+        r"retarget dependent bases to `main`",
+        r"preserve the parent branch if any remain or a head changed",
+        r"Verify dependent PRs remain open after deletion",
     ),
     "command_unit_validation": (
         r"complete constituent\s+claim/content disposition map",

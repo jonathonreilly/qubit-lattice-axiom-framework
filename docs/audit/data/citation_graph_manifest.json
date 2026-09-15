@@ -1,6 +1,6 @@
 {
- "edge_count": 13402,
- "node_count": 5832,
+ "edge_count": 13407,
+ "node_count": 5836,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12958,6 +12958,10 @@
    "deps_hash": "07c7d22c3d12",
    "out_degree": 4
   },
+  "native_full_star_infrared_response_note_2026-09-09": {
+   "deps_hash": "8b35dc0c6cb8",
+   "out_degree": 4
+  },
   "native_gauge_closure_note": {
    "deps_hash": "5420992392c0",
    "out_degree": 2
@@ -21920,6 +21924,18 @@
   },
   "work_history.repo.review_feedback.pr8063-evidence.readme": {
    "deps_hash": "fbfad8d3bcd9",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.pr8064-evidence.kept.pr8064-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8064-evidence.kept.pr8064-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8064-evidence.readme": {
+   "deps_hash": "e92de9dcf3f3",
    "out_degree": 1
   },
   "work_history.repo.review_feedback.pr8065-charged-history-evidence.final_root_review.pr8065-final_root_review-packaging_note": {

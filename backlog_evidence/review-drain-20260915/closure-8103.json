@@ -1,0 +1,19 @@
+{
+  "pr": 8103,
+  "original_head": "3201d7c5452e95c69399fbe7671f862e357623c5",
+  "branch": "physics-loop/gauss-reduced-weak-coupling-spectrum-20260913",
+  "landing": "1de0b3bcfbc785b12d4587aba3910b69e8af09cc",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/gauss-reduced-weak-coupling-spectrum-20260913",
+    "headRefOid": "3201d7c5452e95c69399fbe7671f862e357623c5",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8103,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8103"
+  }
+}

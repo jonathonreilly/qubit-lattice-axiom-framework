@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+  "limit_sec": 90,
+  "record_sha256": "8b4c87b87f88840a71ac63156a4a9045f2bdc5394a415975a1319c638a568c57"
+}

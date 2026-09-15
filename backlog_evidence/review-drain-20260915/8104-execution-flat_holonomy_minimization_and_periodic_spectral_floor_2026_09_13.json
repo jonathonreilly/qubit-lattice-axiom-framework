@@ -1,0 +1,17 @@
+{
+  "runner": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+  "limit_sec": 90,
+  "preexecution_record_sha256": "8b4c87b87f88840a71ac63156a4a9045f2bdc5394a415975a1319c638a568c57",
+  "result": {
+    "runner": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "EXACT_TWIST {\"identity_interval\": [\"-3840398629355490633662712139760926511/25000000000000000000000000000000000\", \"-7680797258710981267325424279521852983/50000000000000000000000000000000000\"], \"twist_interval\": [\"-387645876309662432167713875347967833/2500000000000000000000000000000000\", \"-3876458763096624321677138753479678311/25000000000000000000000000000000000\"], \"difference_interval\": [\"-72120267482267376028853227437503677/50000000000000000000000000000000000\", \"-180300668705668440072133068593759/125000000000000000000000000000000\"]}\nRING [{\"g\": 0.2, \"S\": 11, \"levels\": [-2.7321712666982143, -2.5652456610474443, -2.399677193029233, -2.2349047768445667], \"loop_real\": -0.7869638582135668, \"correction_over_g\": 0.4812792902398799, \"gap_over_g\": 0.8346280282538499}, {\"g\": 0.05, \"S\": 27, \"levels\": [-2.8066430879963096, -2.7646765398099964, -2.7227884461495, -2.680979028904134], \"loop_real\": -0.9421694537482042, \"correction_over_g\": 0.4356807349976144, \"gap_over_g\": 0.8393309637262636}, {\"g\": 0.01, \"S\": 77, \"levels\": [-2.8241921741828198, -2.8157863361932653, -2.807383625821103, -2.7989840448148184], \"loop_real\": -0.9881739984559207, \"correction_over_g\": 0.4234950563370532, \"gap_over_g\": 0.840583798955441}]\nper_element: exact radical square-root brackets and flat-link phases checked; no chosen coupling derived\nper_site: direct site matrix and independent finite CAR actions checked\nper_mode: ring energy branches, normal metric coefficient and sampled slow levels checked\nper_block: strict 3-cubed actual-carrier flat-twist comparison certified with integer arithmetic\nlattice_wide: finite-graph localization proof proposed; no uniform growing-volume phase or payload rate established\nTOTAL: PASS=640 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 1.1297688484191895,
+    "timeout_sec": 90,
+    "live_log": "/private/tmp/review-drain-20260915/author-slot-one/logs/runner-cache/.in-progress/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.txt"
+  },
+  "cache_path": "/private/tmp/review-drain-20260915/author-slot-one/logs/runner-cache/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.txt",
+  "cache_sha256": "617d5b80d7dc93b5c97d55816b003f945e327db4d0e9b9dd3d3f71cf195f29f9"
+}

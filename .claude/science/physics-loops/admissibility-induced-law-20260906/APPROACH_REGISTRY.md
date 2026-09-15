@@ -19,4 +19,4 @@
 | F17.4 disseminated bound | all bonds of one direction bad | counting | none | crude, exact | candidate-complete | T4 (C1) | a transfer-matrix value for a better constant |
 | F17.5 two-dimensional contours | planar cut–cycle duality; enclosing cycles | explicit counts; geometric series | none | exact; threshold `216 m` | candidate-complete | T5 (C2–C6) | — |
 | F17.6 long-range order to several Gibbs states | torus limits; tail triviality | DLR limit; conditioning on tail events; backward martingale | none | exact (named standard theorems) | candidate-complete | T6 | — |
-| F17.7 three dimensions | connected dual surfaces | the dual-surface connectivity lemma | re-prove the lemma at scope | conditional; threshold `34,992,000 m` | conditional | T7 (D1–D2) | the lemma re-proved |
+| F17.7 three dimensions | the in-plane count | two differing records are separated by bad bonds of their common plane; the three-dimensional chessboard normalization | none | exact; threshold `216 m` | candidate-complete | T7 (D1–D2) | — |

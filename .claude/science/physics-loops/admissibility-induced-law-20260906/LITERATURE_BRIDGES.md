@@ -18,4 +18,4 @@ Policy: reference and converge, never borrow; every statement used is re-proved 
 - Fröhlich–Israel–Lieb–Simon (1978): reflection positivity and chessboard estimates; Fröhlich–Lieb and Biskup's notes: discrete symmetry breaking by the chessboard route — the method re-proved here at scope for site reflections.
 - Peierls (1936): the contour argument — re-proved with explicit constants in two dimensions.
 - Whitney's planar cut–cycle duality and the separation theorem for lattice polygons; Lévy's backward martingale theorem; the extension theorem for consistent finite-dimensional laws — imported at definition level.
-- Timár (2013), "Boundary-connectivity via graph theory": the dual-surface connectivity lemma of `Z³` — named; the three-dimensional statement is conditional on it.
+- Timár (2013), "Boundary-connectivity via graph theory": the dual-surface connectivity lemma of `Z³` — considered for the three-dimensional case and not needed once the count is run inside a coordinate plane.

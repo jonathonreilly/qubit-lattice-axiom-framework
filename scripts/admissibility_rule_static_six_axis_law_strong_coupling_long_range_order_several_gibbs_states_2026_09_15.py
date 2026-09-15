@@ -7,8 +7,8 @@ spectrum of phi and the 48 signed permutations.  T2: reflection positivity throu
 (3,1,2) and at the indefinite triple (5,2,4), for pseudo-random F.  T3: chessboard instances.  T4: the disseminated bound
 (6m/p)^N on the ring and the 4x2 torus at p = 432.  T5: enclosing dual-cycle counts for lengths 4, 6, 8; the series identity and
 its value 5/8 at y = 1/2; the winding bound 45/256; the total 295/768; the threshold 216 m; an illustration on the 4x2 torus at
-p = 432.  T7: connected plaquette-set counts under the 12-neighbour adjacency for n <= 4 against 144^(n-1); the series at
-y = 4/5 and the threshold 34,992,000 m.  Exact rational and symbolic arithmetic only; the runner scans its own source for
+p = 432.  T7: the three-dimensional disseminated bound and an illustration on the 2x2x2 torus at p = 432 (the in-plane count needs no
+further lemma).  Exact rational and symbolic arithmetic only; the runner scans its own source for
 floating-point literals.
 """
 
@@ -51,7 +51,7 @@ MUTATION_GATE = {
     "winding_bound_wrong": "C",
     "threshold_wrong": "C",
     "unique_state_above_threshold_claimed": "C",
-    "three_d_count_bound_wrong": "D",
+    "three_d_disseminated_bound_wrong": "D",
     "claim_sharp_threshold": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -311,63 +311,46 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
 
 
 # ============================================================================================ family D
-def plaquette_neighbors(b):
-    """dual-edge adjacency of bonds in Z^3: perpendicular bonds at either endpoint (8) and parallel bonds shifted by a unit
-    perpendicular step (4): 12 neighbours."""
-    (x, d) = b
-    dirs = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
-    e = dirs[d]
-    y = tuple(x[k] + e[k] for k in range(3))
-    out = set()
-    for z in (x, y):
-        for dd in range(3):
-            if dd == d:
-                continue
-            for sgn in (1, -1):
-                w = tuple(z[k] + sgn * dirs[dd][k] for k in range(3))
-                out.add((z, dd) if sgn == 1 else (w, dd))
-    for dd in range(3):
-        if dd == d:
-            continue
-        for sgn in (1, -1):
-            out.add((tuple(x[k] + sgn * dirs[dd][k] for k in range(3)), d))
-    out.discard(b)
-    return out
+def torus_2x2x2(phi):
+    """the 2x2x2 torus: each pair of adjacent sites is joined by two bonds (periodic side 2); 8 direction-1 bond slots."""
+    sites = list(product(range(2), repeat=3))
+    idx = {s: k for k, s in enumerate(sites)}
+    pairs = {d: set() for d in range(3)}
+    for s in sites:
+        for d in range(3):
+            t_ = list(s)
+            t_[d] = (s[d] + 1) % 2
+            pairs[d].add(tuple(sorted((idx[s], idx[tuple(t_)]))))
+    w = {}
+    for v in product(range(M), repeat=8):
+        x = 1
+        for d in range(3):
+            for (a, b) in pairs[d]:
+                x *= phi[v[a]][v[b]] ** 2
+        w[v] = x
+    Z = sum(w.values())
+    return idx, pairs, {v: F(x, Z) for v, x in w.items()}
 
 
 def family_d(checks: Checks) -> None:
-    origin = ((0, 0, 0), 0)
-    assert len(plaquette_neighbors(origin)) == 12
-    frontier = {frozenset([origin])}
-    counts = {}
-    for n in range(1, 5):
-        counts[n] = len(frontier)
-        nxt = set()
-        for s in frontier:
-            nb = set()
-            for b in s:
-                nb |= plaquette_neighbors(b)
-            for b in nb - s:
-                nxt.add(frozenset(s | {b}))
-        frontier = nxt
-    bound_ok = all(counts[n] <= 144 ** (n - 1) for n in counts) and counts[1] == 1 and counts[2] == 12
-    if mut("three_d_count_bound_wrong"):
-        bound_ok = all(counts[n] <= 12 ** (n - 1) for n in counts)
-    checks.check("D1", bound_ok, f"T7: connected plaquette sets containing a given plaquette under the 12-neighbour adjacency, n = 1..4: {counts} <= 144^(n-1)")
-    y = sp.Rational(4, 5)
-    series6 = y ** 6 * (6 - 5 * y) / (1 - y) ** 2
-    bound = series6 / 72
-    eps = (y / 144) ** 3
-    p0 = 6 * 2 / eps
-    checks.check("D2", series6 == sp.Rational(8192, 625) and bound == sp.Rational(1024, 5625) and bound < sp.Rational(1, 2) and eps == sp.Rational(1, 5832000) and p0 == 34992000 * 2,
-                 "T7: sum_{n>=6} n y^n = 8192/625 at y = 4/5, the bound (1/72) of it = 1024/5625 < 1/2, eps = (y/144)^3 = 1/5832000, p_0 = 6m/eps = 34,992,000 m = 69,984,000 at m = 2")
+    m = 2
+    idx, pairs, mu = torus_2x2x2(phi_matrix(432, 1, 2))
+    p_alld1 = sum((pr for v, pr in mu.items() if all(v[a] != v[b] for (a, b) in pairs[0])), F(0))
+    eps = F(6 * m, 432)
+    d1 = p_alld1 <= eps ** 8
+    if mut("three_d_disseminated_bound_wrong"):
+        d1 = p_alld1 <= eps ** 16
+    checks.check("D1", d1, f"T7: on the 2x2x2 torus at p = 432 the probability that every direction-1 bond disagrees is {dec(p_alld1, 15)} <= (6m/p)^N = (1/36)^8")
+    same = sum((pr for v, pr in mu.items() if v[idx[(0, 0, 0)]] == v[idx[(1, 0, 0)]]), F(0))
+    d2 = same > F(1, 2) and all(len(pairs[d]) == 4 for d in range(3))
+    checks.check("D2", d2, f"T7 illustration: on the 2x2x2 torus at p = 432 neighbouring records agree with probability {dec(same)} > 1/2; each unit cube of a layer is canonical for one in-plane bond per in-plane direction")
 
 
 # ============================================================================================ family F
 FENCES = (
-    "This note proves long-range order and the existence of at least two Gibbs states for the static six-axis law on `Z²` when `p ≥ 216 max(q, r)`, and states the same on `Z³` for `p ≥ 34,992,000 max(q, r)` conditional on the named dual-surface connectivity lemma; it does not claim optimal thresholds, says nothing about the band between block 03's thresholds and these, says nothing about the formation law's phase (block 12's obligation stands), does not count the extremal states beyond the orbit bound, and does not select a coupling as physical.",
+    "This note proves long-range order and the existence of at least two Gibbs states for the static six-axis law on `Z²` when `p ≥ 216 max(q, r)`, and on `Z³` for the same threshold by the in-plane count; it does not claim optimal thresholds, says nothing about the band between block 03's thresholds and these, says nothing about the formation law's phase (block 12's obligation stands), does not count the extremal states beyond the orbit bound, and does not select a coupling as physical.",
     "No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
-    "No value, constant or theorem is imported as authority; the three standard mathematical imports are named at definition level.",
+    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
 )
 FORBIDDEN = (
     "the physical order", "the physical rule", "the physical phase", "for every coupling", "selects the", "fires wake condition", "the Bridge weights",
@@ -413,11 +396,11 @@ def family_f(checks: Checks, note_text: str) -> None:
 
 # ============================================================================================ family G
 N5_LINES = (
-    "per_element: executed — the spectrum symbolically; the 48 signed permutations; the series identities at y = 1/2 and y = 4/5; the enclosing-cycle counts for lengths 4, 6, 8; the plaquette-set counts n <= 4",
+    "per_element: executed — the spectrum symbolically; the 48 signed permutations; the series identity at y = 1/2; the enclosing-cycle counts for lengths 4, 6, 8",
     "per_site: executed — every configuration of the ring of 4 and the 4x2 torus in the reflection-positivity, chessboard and disseminated checks",
     "per_mode: executed — the chessboard instances on the ring and the 4x2 torus; the disseminated ratios at p = 432",
-    "per_block: executed — the 4x2 torus illustration at p = 432 (agreement above 1/2)",
-    "lattice_wide: T1-T6 proved for every positive triple with p >= 216 max(q, r) on Z^2; T7 conditional on the named dual-surface connectivity lemma on Z^3; thresholds not claimed optimal",
+    "per_block: executed — the 4x2 and 2x2x2 torus illustrations at p = 432 (agreement above 1/2)",
+    "lattice_wide: T1-T7 proved for every positive triple with p >= 216 max(q, r) on Z^2 and Z^3 (the in-plane count); thresholds not claimed optimal",
 )
 
 
@@ -445,7 +428,7 @@ def main(argv) -> int:
     for pth in AUDIT_INPUT_PATHS:
         print(f"  {pth}")
     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
-    print("scope: the static six-axis law at strong coupling — spectrum and symmetry, reflection positivity through site planes, chessboard, the disseminated bound, contour counts, the 2D threshold 216 m, the 3D conditional constants; exact")
+    print("scope: the static six-axis law at strong coupling — spectrum and symmetry, reflection positivity through site planes, chessboard, the disseminated bound, contour counts, the threshold 216 m on Z^2 and Z^3 (the in-plane count); exact")
     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
     report: dict = {}
     family_a(checks, texts)

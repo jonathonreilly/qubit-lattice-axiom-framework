@@ -112,7 +112,7 @@ source_review_correction:
 # pr_status: opened for review — PR #8151 (base = main); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: control -> contract with a lens pass -> primary (T1-T7, runner) -> refuting pass (sum of squares; second reflection; polyomino placements; partial sums; second adjacency) -> fold"
-# review_findings: "eigenvalues Z1, p-q (x3), p+q-2r (x2); RP through site planes for any weights (sum of squares); chessboard; disseminated bound (6m/p)^N; 2D: p >= 216 max(q,r) gives mu_L(v_0 != v_x) <= 295/768 < 1/2 (planar duality; counts (n/2)3^(n-1)); torus limits are Gibbs with LRO; unique => tail-trivial => short-range => contradiction: at least two Gibbs states on Z^2; 3D conditional on the dual-surface connectivity lemma: p >= 34,992,000 max(q,r); thresholds not optimal"
-# strongest_unresolved_proof_obligation: "the dual-surface connectivity lemma of Z^3 at scope; the band between block 03's thresholds and 216 m"
-# next_exact_action: "queue refresh 2026-09-15 (block 17 opening): the lemma; the constants; the menus block"
+# review_findings: "eigenvalues Z1, p-q (x3), p+q-2r (x2); RP through site planes for any weights (sum of squares); chessboard; disseminated bound (6m/p)^N; 2D: p >= 216 max(q,r) gives mu_L(v_0 != v_x) <= 295/768 < 1/2 (planar duality; counts (n/2)3^(n-1)); torus limits are Gibbs with LRO; unique => tail-trivial => short-range => contradiction: at least two Gibbs states on Z^2; 3D by the in-plane count at the same threshold; thresholds not optimal"
+# strongest_unresolved_proof_obligation: "the band between block 03's thresholds and 216 m"
+# next_exact_action: "queue refresh 2026-09-15 (block 17 opening): the constants; the menus block"
 # lock: held (owner: don't stop; assess the next lane at each conclusion)

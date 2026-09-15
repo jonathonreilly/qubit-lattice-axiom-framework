@@ -72,5 +72,5 @@ target_blocker_text: "'one law or several' for the static reading of the six-axi
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "the ordered side is settled on Z^2 (at least two Gibbs states for p >= 216 max(q, r)) and reduced on Z^3 to the dual-surface connectivity lemma with explicit constants (p >= 34,992,000 max(q, r)); next: re-prove the lemma at scope, sharpen the constants, close the band. Consumers: #8093's assembly; PR #8146; the campaign's queue"
+next_trace_action: "the ordered side is settled on Z^2 and Z^3 (at least two Gibbs states for p >= 216 max(q, r); the in-plane count); next: sharpen the constants, close the band. Consumers: #8093's assembly; PR #8146; the campaign's queue"
 ```

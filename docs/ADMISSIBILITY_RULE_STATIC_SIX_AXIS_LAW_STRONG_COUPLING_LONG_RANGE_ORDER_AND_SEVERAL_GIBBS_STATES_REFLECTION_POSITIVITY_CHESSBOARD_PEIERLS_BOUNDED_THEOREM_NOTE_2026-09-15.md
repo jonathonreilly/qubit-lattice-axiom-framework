@@ -1,25 +1,24 @@
 ---
 claim_id: admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_and_several_gibbs_states_reflection_positivity_chessboard_peierls_bounded_theorem_note_2026-09-15
 claim_type: bounded_theorem
-claim_scope: "For the static law of the six-axis covariant positive product rule with weights (p, q, r) on same, antipodal and orthogonal pairs, m = max(q, r): (T1) the weight matrix has eigenvalues p + q + 4r, p - q (three times) and p + q - 2r (twice) and is invariant under the full cube group, which acts transitively on the six values (proved; executed); (T2) on every torus of even side the law is reflection positive for reflections through planes containing sites, for every positive weight matrix (proved; executed on a ring and a 4x2 torus); (T3) the chessboard estimate for events attached to unit cells and reflected by site reflections (re-proved; executed); (T4) the probability that every bond of one direction joins different values has N-th root at most 6m/p on the torus of N sites (proved; executed); (T5, two dimensions) for p >= 216 m and a torus of side at least 44, the torus law gives v_0 = v_x with probability above 1/2 for every x within a quarter of the side: long-range order, by planar cut-cycle duality and contour counting with explicit constants (proved; the counts and series executed exactly); (T6) every limit point of the torus laws is a translation-invariant Gibbs state with that long-range order, and a unique Gibbs state would be extremal, hence tail-trivial, hence short-range correlated, so the static law on Z^2 has at least two Gibbs states for p >= 216 m (proved at scope, with the backward martingale theorem named as the standard import); (T7, three dimensions) the same chain with the dual-surface connectivity lemma of the cubic lattice named as an import gives long-range order and at least two Gibbs states on Z^3 for p >= 34,992,000 m (conditional on that lemma; constants executed). No coupling is selected as physical; the thresholds are existence constants, not optimal; the formation law's phase (block 12's obligation) is untouched; exact arithmetic throughout."
+claim_scope: "For the static law of the six-axis covariant positive product rule with weights (p, q, r) on same, antipodal and orthogonal pairs, m = max(q, r): (T1) the weight matrix has eigenvalues p + q + 4r, p - q (three times) and p + q - 2r (twice) and is invariant under the full cube group, which acts transitively on the six values (proved; executed); (T2) on every torus of even side the law is reflection positive for reflections through planes containing sites, for every positive weight matrix (proved; executed on a ring and a 4x2 torus); (T3) the chessboard estimate for events attached to unit cells and reflected by site reflections (re-proved; executed); (T4) the probability that every bond of one direction joins different values has N-th root at most 6m/p on the torus of N sites (proved; executed); (T5, two dimensions) for p >= 216 m and a torus of side at least 44, the torus law gives v_0 = v_x with probability above 1/2 for every x within a quarter of the side: long-range order, by planar cut-cycle duality and contour counting with explicit constants (proved; the counts and series executed exactly); (T6) every limit point of the torus laws is a translation-invariant Gibbs state with that long-range order, and a unique Gibbs state would be extremal, hence tail-trivial, hence short-range correlated, so the static law on Z^2 has at least two Gibbs states for p >= 216 m (proved at scope, with the backward martingale theorem named as the standard import); (T7, three dimensions) the same chain restricted to a coordinate plane through the origin — every in-plane path between two differing records crosses a bad in-plane bond, so the planar duality of T5 applies inside the plane while the chessboard estimate and the disseminated bound are the three-dimensional ones — gives long-range order in every coordinate plane and at least two Gibbs states on Z^3 for the same threshold p >= 216 m, with no further lemma (proved; executed on a 2x2x2 torus). No coupling is selected as physical; the thresholds are existence constants, not optimal; the formation law's phase (block 12's obligation) is untouched; exact arithmetic throughout."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06
 runner: scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
 ---
 
-# The static six-axis law at strong coupling has long-range order and several Gibbs states: reflection positivity through site planes, a chessboard estimate, and contour counting with explicit constants — a theorem on `Z²`, conditional on one named lemma on `Z³`
+# The static six-axis law at strong coupling has long-range order and several Gibbs states: reflection positivity through site planes, a chessboard estimate, and contour counting with explicit constants — a theorem on `Z²` and, by the in-plane count, on `Z³`
 
 **Date:** 2026-09-15
 **Type:** bounded_theorem
-**Status:** bounded-support (exact; the two-dimensional statement is unconditional; the three-dimensional one is conditional on the named dual-surface connectivity lemma; unaudited)
+**Status:** bounded-support (exact; both the two- and the three-dimensional statements are unconditional; unaudited)
 
 ## Result up front
 
 Block 03 settled the weak-coupling side of the static law: one Gibbs state
 where the influence of a single neighbour is small enough. This note settles
-the other side, in two dimensions outright and in three dimensions up to one
-named lemma of lattice topology. When the weight for agreeing neighbours is
+the other side, in two and in three dimensions. When the weight for agreeing neighbours is
 large enough compared with the weights for disagreeing ones — at least `216`
 times, in two dimensions — the record at the origin and the record far away
 agree with probability above one half in every finite torus, and that
@@ -32,16 +31,17 @@ turns "these `n` bonds all disagree" into a bound `(6m/p)^{n/2}`; and a
 count of the closed dual curves that could isolate the origin sums to less
 than one half. The constants are crude and are not claimed to be
 sharp: block 03's thresholds and this one leave a wide band where nothing is
-decided. The three-dimensional version needs the fact that a minimal
-separating set of bonds in the cubic lattice is connected as a dual surface;
-that fact is named, not re-proved, and the three-dimensional conclusion is
-conditional on it.
+decided. In three dimensions the same count is run inside a coordinate plane through
+the origin: two records that differ are separated by bad bonds of that plane,
+so the planar count applies, while the chessboard estimate and the
+disseminated bound are the three-dimensional ones with the same value. No
+surface topology is needed, and the threshold is the same.
 
 Exactly: `E_L[F · F∘θ] ≥ 0` for site reflections (T2);
 `μ_L(∩ A_c) ≤ Π μ_L(A_c^{diss})^{1/N}` (T3); `μ_L(all bonds of one direction bad)^{1/N} ≤ 6m/p`
 (T4); in two dimensions with `ε = 6m/p ≤ 1/36`,
 `μ_L(v_0 ≠ v_x) ≤ 5/24 + 45/256 = 295/768 < 1/2` (T5), hence at least two Gibbs states
-for `p ≥ 216 m` (T6); in three dimensions `p ≥ 34,992,000 m` (T7, conditional).
+for `p ≥ 216 m` (T6); in three dimensions the same threshold by the in-plane count (T7).
 Executed with exact arithmetic: 20 checks, 13 mutations.
 
 ## Machine status and trace
@@ -55,8 +55,8 @@ target_blocker_text: "the campaign's standing question 'one law or several' for 
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "the strong-coupling side is settled on Z^2 (at least two Gibbs states for p >= 216 m) and reduced on Z^3 to one named lattice-topology lemma with explicit constants; sharpening the constants and re-proving the lemma are the next items. Consumers: #8093's assembly (the static reading's phase structure); block 12 (PR #8146: the formation law's counterpart obligation); the campaign's queue"
-conditional_surface_status: "T1-T6 proved for every positive weight triple (T5-T6 for p >= 216 max(q, r) on Z^2); T7 conditional on the dual-surface connectivity lemma; executed at (p, 1, 2); conditional on the six-axis menu and the product rule as supplied conditions; the backward martingale theorem and planar cut-cycle duality named as standard imports"
+next_trace_action: "the strong-coupling side is settled on Z^2 and on Z^3 (at least two Gibbs states for p >= 216 m, by the in-plane count); sharpening the constants is the next item. Consumers: #8093's assembly (the static reading's phase structure); block 12 (PR #8146: the formation law's counterpart obligation); the campaign's queue"
+conditional_surface_status: "T1-T7 proved for every positive weight triple (T5-T7 for p >= 216 max(q, r), on Z^2 and Z^3); executed at (p, 1, 2) and (5, 2, 4); conditional on the six-axis menu and the product rule as supplied conditions; the backward martingale theorem, planar cut-cycle duality and the extension theorem named as standard imports"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
@@ -102,19 +102,19 @@ positivity and chessboard estimates are the Fröhlich–Israel–Lieb–Simon me
 (1978), applied to discrete symmetry breaking by Fröhlich–Lieb and in Biskup's
 lecture notes; Peierls's contour argument (1936) is classical; planar
 cut–cycle duality is Whitney's theorem (Diestel, Prop. 4.6.1), resting on the
-Jordan curve theorem for lattice polygons; the connectivity of a minimal
-separating bond set in `Z³` as a dual surface is Timár's lemma (2013); the
-backward martingale theorem is Lévy's. All are re-proved here except the three
-named imports (the Jordan curve theorem for lattice polygons, the backward
-martingale theorem, and Timár's lemma for `Z³`), which are cited at
-definition level and never as physics. Nothing on `main` (search recorded in
+Jordan curve theorem for lattice polygons; the backward martingale theorem
+is Lévy's. All are re-proved here except the named standard imports (the
+Jordan curve theorem for lattice polygons behind planar duality, the backward
+martingale theorem, and the extension theorem), which are cited at definition
+level and never as physics. Nothing on `main` (search recorded in
 `ROUTE_PORTFOLIO.md`) treats the six-axis static law's ordered side.
 
 New here: the exact statement for this rule with explicit constants; the
 observation that site reflections need no positivity of the weight matrix
 (so the argument covers weights where the matrix is indefinite, such as
-`(5, 2, 4)`, which block 03 also treats); the two-dimensional theorem; the
-three-dimensional conditional statement with its constants.
+`(5, 2, 4)`, which block 03 also treats); the two-dimensional theorem; and
+the in-plane count that gives the three-dimensional theorem at the same
+threshold without any surface-connectivity lemma.
 
 ## Exact target and obligation graph
 
@@ -126,7 +126,7 @@ three-dimensional conditional statement with its constants.
 | T4 the disseminated bound `ε ≤ 6m/p` | proved; executed on the ring and the `4×2` torus (C1) |
 | T5 two dimensions: contour count, series, winding term, threshold `216 m` | proved; the counts for lengths 4–8, the series at `y = 1/2` and the winding bound executed exactly (C2–C4) |
 | T6 long-range order ⇒ at least two Gibbs states | proved at scope (the backward martingale theorem named) |
-| T7 three dimensions | conditional on the dual-surface connectivity lemma; the connected-set bound and the series executed (D1–D2) |
+| T7 three dimensions by the in-plane count | proved; the three-dimensional disseminated bound and an illustration executed on the `2×2×2` torus (D1–D2) |
 | optimal thresholds; the band between block 03's thresholds and these; the formation law's phase | open; not this note |
 
 ## Theorem T1 — spectrum and symmetry
@@ -308,38 +308,36 @@ function on six points under a transitive action, between `2` and `6`. ∎
 dimensions several; the states are told apart by which axis the origin's
 record prefers. The band in between is undecided by these two arguments.
 
-## T7 — three dimensions, conditional on one lemma
+## Theorem T7 — three dimensions, by the in-plane count
 
-**The lemma (named import; not re-proved).** In `Z³`, if `A` is a finite
-connected set of sites and `B` the set of bonds joining `A` to the unbounded
-component of its complement, then the dual plaquettes of `B` form a set
-connected under the adjacency "sharing a dual edge" (each dual plaquette has
-`12` such neighbours). (Named under Imports.)
+**Statement.** Let `d = 3` and `ε = 6m/p ≤ 1/36` (i.e. `p ≥ 216 m`); let
+`L' ≥ 10`, `L ≥ 2L' + 2`, and `x = (x_1, x_2, 0)` with `|x|_∞ ≤ L'/2`. Then
+`μ_L(v_0 ≠ v_x) ≤ 295/768 < 1/2`. Every limit point of `(μ_L)` is a
+translation-invariant Gibbs state on `Z³` with `μ(v_0 = v_x) ≥ 1/2` for every
+`x` in a coordinate plane through the origin, and the static law on `Z³` has
+at least two Gibbs states for `p ≥ 216 m`.
 
-**Statement (conditional).** Assume the lemma. Let `d = 3`, `ε = 6m/p` and
-`y = 144 ε^{1/3} ≤ 4/5` (i.e. `p ≥ 34,992,000 m`). Then for a box of side
-`2L'` inside the torus and `|x|_∞ ≤ L'/2`, `μ_L(v_0 ≠ v_x) ≤ (1/36) Σ_{n≥6} n y^n + (winding term) < 1/2`
-for `L'` large, and every limit point of `μ_L` is a Gibbs state on `Z³` with
-`μ(v_0 = v_x) ≥ 1/2`; the static law on `Z³` has at least two Gibbs states.
+*Proof.* Let `S = {x_3 = 0}` be the coordinate plane through `0` and `x`; as a
+graph with the direction-`1` and direction-`2` bonds of the layer it is the
+two-dimensional torus of side `2L`. If `v_0 ≠ v_x`, every path from `0` to `x`
+*inside `S`* contains a bad bond, so the bad bonds of `S` meet every such path
+and the planar cut–cycle lemma applies to the box `Λ ∩ S`, with the two cases
+and the counts of T5 unchanged. For a set `B` of `n` bonds of `S`, each unit
+cube of the layer `0 ≤ x_3 ≤ 1` is the canonical cell of exactly one
+direction-`1` and one direction-`2` bond of `S`, so `B` occupies at least `n/2`
+canonical cells, and T3 with the three-dimensional disseminated bound of T4
+(`ε ≤ 6m/p` with `N = (2L)³`) gives `μ_L(B bad) ≤ ε^{n/2}`. The bound of T5
+therefore holds verbatim. The chain of T6 does not depend on the dimension
+(the DLR limit, the symmetry, tail triviality and the short-range property
+are stated for `Z^d`), with `x → ∞` taken within the plane. ∎ Executed: the
+three-dimensional disseminated bound on the `2×2×2` torus at `p = 432` (D1) and
+the agreement of neighbouring records there (D2).
 
-*Proof (given the lemma).* Let `A` be the good cluster of `0` within the box
-and suppose `x ∉ A`. If `x` lies in the unbounded component of `A`'s
-complement (in the box, the component touching the boundary), the lemma
-gives a connected dual surface of bad bonds of size `n ≥ 6` separating `0`
-from `x`; otherwise `x` lies in a bounded component and the same lemma applied
-to the good cluster of `x` gives a surface around `x`; surfaces that reach the
-box boundary have size at least `L'` and are handled like the winding term.
-A connected set of `n` plaquettes containing a given plaquette is encoded by a
-closed walk of `2(n−1)` steps in the adjacency graph (a depth-first traversal
-of a spanning tree), so there are at most `12^{2(n−1)} = 144^{n−1}` of them; the
-surface around `0` contains a plaquette crossing the ray from `0` within
-distance `n`, at most `n` choices. With the corollary of T4 (`d = 3`):
-`μ_L(v_0 ≠ v_x) ≤ 2 Σ_{n≥6} n · 144^{n−1} ε^{n/3} = (1/72) Σ_{n≥6} n y^n`, and
-`Σ_{n≥6} n y^n = y^6 (6 − 5y)/(1−y)^2 = 8192/625` at `y = 4/5`, so the bound is
-`(1/72)(8192/625) = 1024/5625 < 1/2` with room for the winding term. T6's chain is dimension-free. ∎ Executed: the number of
-connected plaquette sets under the `12`-neighbour adjacency for `n ≤ 5` by
-enumeration against `144^{n−1}` (D1); the series at `y = 4/5` and the threshold
-(D2).
+*Reading.* The three-dimensional lattice is not harder than the plane here:
+two records that differ are already cut apart by bad bonds of the plane they
+share, and the plane's contours are counted as before; the extra dimension
+enters only through the chessboard normalization, which does not change the
+constant.
 
 ## No-Go Discipline Gate
 
@@ -354,7 +352,7 @@ The negative sentence inside the theorem is "the Gibbs state is not unique"
 | 1 a symmetric unique state with long-range order | `ν(v_0 = v_x) ≥ 1/2` for a tail-trivial `ν` | tail triviality forces `ν(v_0 = v_x) → 1/6` (T6 iv) | RULED OUT AT SCOPE |
 | 2 the torus limits not being Gibbs | boundary effects | the torus law's conditional laws inside a box are the specification's kernels for large `L` (T6 i) | RULED OUT AT SCOPE |
 | 3 failure of the chessboard estimate for bond events | events not attached to cells | bond events are cell events (the corner values), disseminated by site reflections (T3) | RULED OUT AT SCOPE |
-| 4 the three-dimensional contour lemma failing | a minimal separating set that is not dual-connected | named import; the `Z³` conclusion is conditional on it (T7) | OBLIGATION NAMED |
+| 4 a three-dimensional separating set that is not a plane contour | surfaces rather than curves | not needed: the in-plane count separates the two records within their common plane (T7) | RULED OUT AT SCOPE |
 | 5 the band between block 03's thresholds and `216 m` | anything | undecided; not claimed either way | open |
 
 ### N2 — Wall-independence audit
@@ -369,12 +367,12 @@ Scanned for "we assume", "by construction", "as is standard", "the framework pro
 | block 03 (main): the uniqueness region | the weak-coupling side | the other side; the undecided band named | yes |
 | block 01 (main): the static reading | the object | the object | yes |
 | block 12 (PR #8146, open; not an input) | the formation law's phase | the contrast in the boundaries | context only |
-| planar cut–cycle duality with the separation theorem for lattice polygons; the backward martingale theorem; the dual-surface connectivity lemma | standard mathematics | named imports at definition level (T5, T6, T7) | declared |
+| planar cut–cycle duality with the separation theorem for lattice polygons; the backward martingale theorem; the extension theorem | standard mathematics | named imports at definition level (T5, T6) | declared |
 
 ### N5 — Resolution audit
 | phrase | per-element | per-site | per-mode | per-block | lattice-wide |
 |---|---|---|---|---|---|
-| "not unique above the threshold" | executed: the eigenvalues; the 48 symmetries; the series identities; the counts | executed: every configuration of the ring and the `4×2` torus in T2–T4 | executed: the chessboard instances; the disseminated ratios | executed: the two-dimensional illustration on the `4×2` torus at `p = 432` | proved for every positive triple with `p ≥ 216 m` on `Z²` (T5–T6); conditional on `Z³` (T7) |
+| "not unique above the threshold" | executed: the eigenvalues; the 48 symmetries; the series identities; the counts | executed: every configuration of the ring and the `4×2` torus in T2–T4 | executed: the chessboard instances; the disseminated ratios | executed: the two-dimensional illustration on the `4×2` torus at `p = 432` | proved for every positive triple with `p ≥ 216 m` on `Z²` and on `Z³` (T5–T7) |
 
 ### N6 — Partial-closure paths and primitive scan
 The registered primitives supply no coupling; none is a wall. The thresholds are existence constants and are not claimed optimal.
@@ -389,20 +387,20 @@ Block 03 (uniqueness by one-site contraction) and this note are the two sides of
 - An eigenvalue of `φ` outside the three listed, or a signed permutation not preserving `φ` (B1).
 - A function `F` on the ring or the `4×2` torus with `E[F · F∘θ] < 0` (B2); a chessboard instance violated (B3); a disseminated ratio above `(6m/p)^N` (C1).
 - A count of enclosing dual cycles of length `4, 6` or `8` above `(n/2) 3^{n−1}`, a series value at `y = 1/2` other than `5/8`, or a winding bound at `L' = 10` other than `45/256` (C2–C4); the `4×2` illustration at `p = 432` below `1/2` (C5).
-- A connected plaquette set count for `n ≤ 5` above `144^{n−1}`, or the three-dimensional series at `y = 4/5` at or above `1/2` (D1–D2).
+- A three-dimensional torus on which the disseminated ratio exceeds `(6m/p)^N`, or the `2×2×2` illustration at `p = 432` with neighbouring records agreeing with probability at most `1/2` (D1–D2).
 
 ## Boundaries and non-claims
-This note proves long-range order and the existence of at least two Gibbs states for the static six-axis law on `Z²` when `p ≥ 216 max(q, r)`, and states the same on `Z³` for `p ≥ 34,992,000 max(q, r)` conditional on the named dual-surface connectivity lemma; it does not claim optimal thresholds, says nothing about the band between block 03's thresholds and these, says nothing about the formation law's phase (block 12's obligation stands), does not count the extremal states beyond the orbit bound, and does not select a coupling as physical. No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the three standard mathematical imports are named at definition level.
+This note proves long-range order and the existence of at least two Gibbs states for the static six-axis law on `Z²` when `p ≥ 216 max(q, r)`, and on `Z³` for the same threshold by the in-plane count; it does not claim optimal thresholds, says nothing about the band between block 03's thresholds and these, says nothing about the formation law's phase (block 12's obligation stands), does not count the extremal states beyond the orbit bound, and does not select a coupling as physical. No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
 
 ## Imports
 - `minimal_axioms`: the sentences quoted under Premises.
 - Block 03 (on `main`): the uniqueness side, referenced for the contrast; block 01 (on `main`): the static reading. Proposed, unaudited.
-- Re-proved at scope: T1, T2, T3, T4, T5's counts and series, T6's chain except the named theorem.
-- Named standard imports at definition level (never as authority for physics): Whitney's planar cut–cycle duality with the Jordan curve theorem for lattice polygons (T5); Kolmogorov's extension and the backward martingale theorem (T6); Timár's dual-surface connectivity lemma for `Z³` (T7, on which T7 is conditional).
+- Re-proved at scope: T1, T2, T3, T4, T5's counts and series, T6's chain except the named theorems, T7's in-plane reduction.
+- Named standard imports at definition level (never as authority for physics): Whitney's planar cut–cycle duality with the Jordan curve theorem for lattice polygons (T5, T7); Kolmogorov's extension and the backward martingale theorem (T6).
 - Reference only (named, not used): the Fröhlich–Israel–Lieb–Simon method and Biskup's lecture notes for the chessboard route; Peierls's argument.
 
 ## Review record
-Supervisor-run block (owner directive: don't stop; assess the next lane and take it; no subagents). The control (`specs/supervisor_control_block17_static_order.py`) computed the spectrum, reflection positivity and chessboard instances, the disseminated ratio, the connected-set counts and the threshold before the contract; the lens pass is in `GOAL_block17.md`; the primary seat wrote T1–T7 and the runner; the refuting pass (`CHECKER_block17_findings.md`) recomputed reflection positivity by an explicit sum-of-squares decomposition, the chessboard instance by the two-step quadratic-form inequality, the contour counts by a second enumeration, and the series by numeric summation of partial sums. Facts settled while executing: the runner's first expected count of enclosing dual cycles of length six forgot the domino's two orientations (the count is `4`, within the bound); the three-dimensional threshold was first checked in units of `m` against its value at `m = 2`; three tokens the lane forbids as substrings were reworded; the refuting pass's first second-adjacency routine counted collinear bonds and was corrected to the common-unit-square adjacency.
+Supervisor-run block (owner directive: don't stop; assess the next lane and take it; no subagents). The control (`specs/supervisor_control_block17_static_order.py`) computed the spectrum, reflection positivity and chessboard instances, the disseminated ratio, the connected-set counts and the threshold before the contract; the lens pass is in `GOAL_block17.md`; the primary seat wrote T1–T7 and the runner; the refuting pass (`CHECKER_block17_findings.md`) recomputed reflection positivity by an explicit sum-of-squares decomposition, the chessboard instance by the two-step quadratic-form inequality, the contour counts by a second enumeration, and the series by numeric summation of partial sums. Facts settled while executing: the runner's first expected count of enclosing dual cycles of length six forgot the domino's two orientations (the count is `4`, within the bound); the three-dimensional statement was first written as conditional on a dual-surface connectivity lemma with a crude threshold, then replaced by the in-plane count, which needs no such lemma and gives the same threshold as in two dimensions; three tokens the lane forbids as substrings were reworded; the refuting pass's second-adjacency routine (for the superseded surface count) is retained in its output only as a record.
 
 ## Verification
 
@@ -413,4 +411,4 @@ python3 scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_rang
 python3 scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py --mutation unique_state_above_threshold_claimed
 ```
 
-Families: A authority and inputs; B the spectrum and symmetry, reflection positivity, the chessboard instances; C the disseminated bound, the two-dimensional counts, series, winding bound, threshold and illustration; D the three-dimensional counts and series; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+Families: A authority and inputs; B the spectrum and symmetry, reflection positivity, the chessboard instances; C the disseminated bound, the two-dimensional counts, series, winding bound, threshold and illustration; D the three-dimensional disseminated bound and illustration on the `2×2×2` torus; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.

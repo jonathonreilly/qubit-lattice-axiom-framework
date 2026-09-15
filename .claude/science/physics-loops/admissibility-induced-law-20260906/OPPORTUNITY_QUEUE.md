@@ -81,9 +81,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 
 ## Refresh at block 17 opening (2026-09-15)
 
-Block 17 opened for review (independent PR against main): the static law's ordered side — a theorem on `Z²`, conditional on one lemma on `Z³`. Ranked next:
+Block 17 opened for review (independent PR against main): the static law's ordered side — a theorem on `Z²` and `Z³` (the in-plane count). Ranked next:
 
-1. **Re-prove the dual-surface connectivity lemma of `Z³` at scope** (turns T7 into a theorem) — medium; graph-theoretic.
-2. **Sharpen the constants** (a transfer-matrix value for the disseminated partition function; a better contour count) — medium; would narrow the undecided band above block 03's thresholds.
-3. **The menus block** (#8093, "to compute") — small-to-medium.
-4. **Value-dependent order laws on general windows (block 16, X4); the stability theorem for the formation law (block 12, S6)** — hard; unchanged.
+1. **Sharpen the constants** (a transfer-matrix value for the disseminated partition function; a better contour count) — medium; would narrow the undecided band above block 03's thresholds.
+2. **The menus block** (#8093, "to compute") — small-to-medium.
+3. **Value-dependent order laws on general windows (block 16, X4); the stability theorem for the formation law (block 12, S6)** — hard; unchanged.

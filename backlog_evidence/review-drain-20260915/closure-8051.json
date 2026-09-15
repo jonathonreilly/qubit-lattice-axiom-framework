@@ -1,0 +1,63 @@
+{
+  "pr": 8051,
+  "original_head": "116505696042571b2759a8dc5d73368eee727794",
+  "branch": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+  "landing": "21c50d093e6e6888da4535eaeb5671bb0d52f302",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-even-torus-flux-isolation-20260908",
+        "headRefOid": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8054,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8054"
+      },
+      "original_merge_base": "116505696042571b2759a8dc5d73368eee727794",
+      "delta_sha256": "71d3b3fe756212a51666d5b21d94eee9b5a5b48ba689e9192e7f1b35e9aee5a1",
+      "delta_file": "closure-8051-child-8054-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-even-torus-flux-isolation-20260908",
+        "headRefOid": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8054,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8054"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-even-torus-flux-isolation-20260908",
+        "headRefOid": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8054,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8054"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+    "headRefOid": "116505696042571b2759a8dc5d73368eee727794",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8051,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8051"
+  },
+  "final_state_verification": {
+    "headRefOid": "116505696042571b2759a8dc5d73368eee727794",
+    "number": 8051,
+    "state": "CLOSED"
+  }
+}

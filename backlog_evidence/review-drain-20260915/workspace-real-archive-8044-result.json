@@ -1,0 +1,18 @@
+{
+  "original_revision": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+  "tool_sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+  "manifest_sha256": "c2c50e651bd6b4c8d0ffd369447c390a11168b40a36f429608065cb3182a3c68",
+  "verification": {
+    "mechanical_check": "passed",
+    "manifest_sha256": "c2c50e651bd6b4c8d0ffd369447c390a11168b40a36f429608065cb3182a3c68",
+    "original_paths": 261,
+    "stored_objects": 148
+  },
+  "original_paths": 261,
+  "unique_original_blobs": 148,
+  "original_bytes": 53932737,
+  "stored_bytes_including_manifest": 962218,
+  "reduction_percent": 98.22,
+  "elapsed_seconds": 0.553,
+  "boundary": "Mechanical test on frozen historical packet; no canonical source changes or scientific execution. Kept REVIEW_HISTORY raw; this demonstration is not a migrated live package."
+}

@@ -1,0 +1,38 @@
+{
+  "base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "staged_tree": "0efa37c350be6818c9bcc9f8ca5daee40828c783",
+  "source_paths": {
+    ".claude/commands/review-loop.md": "ace9e7a0bfc9904e27225c06a6a0bfffbebc10d1fc6eefb38b10b2ff11065d8b",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "8efe4f9b9b31953140a9dc7a6eba8657b36fda5732a5ed8eb6cb0f423a26dee9",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "1174c82fd117e04977866ac8549ab9a062d27f257a2924734501b0678fe45da4",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "a822feb915d832e1455c66c6ec88a9e2c2b4fef7db0f912c49ea983912093310",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "824ec73f4ccada29ff3611447cadea569f9af7c65e6db38d87bdbdecaf040b3b",
+    "docs/audit/scripts/tests/test_review_receipt.py": "5137dcfd5bd4d0c8f89b1c28b3f69bf3489bbd6377bb4ad3969a35a408c37b85",
+    "docs/audit/scripts/tests/test_review_workspace.py": "62a003fb1b61c571ff70988941c9b6f1ae93dee5cf77a6919a50704f1c984b2d"
+  },
+  "tests": {
+    "workspace_contract_sync": {
+      "count": 112,
+      "log": "skill-efficiency-root-tests.log",
+      "sha256": "fef624c23795b7540a2a28c0c6bff7a87d6b9dc33228993d482c0e3df7f94383"
+    },
+    "receipt": {
+      "count": 18,
+      "log": "skill-efficiency-receipt-final-tests.log",
+      "sha256": "0263ab5e2cadc262c832e10c384f56f5adc71070365ce68ee66eb970aa02b77d"
+    }
+  },
+  "skill_contract_families": 33,
+  "quick_validate": "Skill is valid!",
+  "vocabulary_violations": 0,
+  "diff_checks": [
+    "worktree",
+    "staged",
+    "base-relative"
+  ],
+  "authority": "Author verification only; independent final source verdict pending; no scientific acceptance or full gate inferred."
+}

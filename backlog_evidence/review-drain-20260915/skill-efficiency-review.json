@@ -1,0 +1,113 @@
+{
+  "source_verdict": "PASS",
+  "scope": "11-path operational review-loop efficiency change; no scientific source changes or audit verdict",
+  "base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "HEAD": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "source_tree": "0efa37c350be6818c9bcc9f8ca5daee40828c783",
+  "candidate_state": "All11exact reviewed paths staged; working/index equality independently verified.",
+  "source_paths": {
+    ".claude/commands/review-loop.md": "ace9e7a0bfc9904e27225c06a6a0bfffbebc10d1fc6eefb38b10b2ff11065d8b",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "8efe4f9b9b31953140a9dc7a6eba8657b36fda5732a5ed8eb6cb0f423a26dee9",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "1174c82fd117e04977866ac8549ab9a062d27f257a2924734501b0678fe45da4",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/scripts/check_review_loop_skill_contract.py": "a822feb915d832e1455c66c6ec88a9e2c2b4fef7db0f912c49ea983912093310",
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": "824ec73f4ccada29ff3611447cadea569f9af7c65e6db38d87bdbdecaf040b3b",
+    "docs/audit/scripts/tests/test_review_receipt.py": "5137dcfd5bd4d0c8f89b1c28b3f69bf3489bbd6377bb4ad3969a35a408c37b85",
+    "docs/audit/scripts/tests/test_review_workspace.py": "62a003fb1b61c571ff70988941c9b6f1ae93dee5cf77a6919a50704f1c984b2d"
+  },
+  "inputs": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+  },
+  "source_inventory_sha256": "f166ffe9967be99e69345ba6740fe2ebb9c3a4d60605331b51f38896d3c0cae7",
+  "findings": [
+    {
+      "id": "W1",
+      "problem": "Archive payload-only verification did not establish complete original path/mode inventory",
+      "resolution": "Raw/Git/mode consistency plus externally frozen expected-manifest digest mandatory for reuse; full original inventory anchored independently",
+      "status": "resolved"
+    },
+    {
+      "id": "W2",
+      "problem": "Symlink slot could redirect reuse outside pool",
+      "resolution": "plain path checks on slot, state, lock and journal; ownership/residue/detached/sequencer/ref checks",
+      "status": "resolved"
+    },
+    {
+      "id": "W3",
+      "problem": "Unclosed cat-file stdout",
+      "resolution": "Both pipes closed in finally",
+      "status": "resolved"
+    },
+    {
+      "id": "R1",
+      "problem": "Legitimate legacy declared IDs rejected",
+      "resolution": "Exact declared-to-canonical path mapping with canonical ambiguity rejection; Type normalized tuple index1",
+      "status": "resolved"
+    },
+    {
+      "id": "R2",
+      "problem": "Changed scientific note omitted from notes array could pass",
+      "resolution": "Independent discovered changed and primary/helper/declared-input affected note inventory; explicit hash-bound non-science dispositions",
+      "status": "resolved"
+    },
+    {
+      "id": "R3",
+      "problem": "Process-only units could not use required receipt",
+      "resolution": "Explicit empty science-note list allowed only with complete affected-document dispositions",
+      "status": "resolved"
+    },
+    {
+      "id": "R4",
+      "problem": "One-sided helper comparison could miss opposite disagreement",
+      "resolution": "Actual packet transitive equality to graph transitive closure; explicit sibling helpers separate; both directions tested",
+      "status": "resolved"
+    }
+  ],
+  "remaining_findings": [],
+  "verification": {
+    "receipt_tests": "18/18 passed independently11.484s final helper",
+    "contract_tests": "76/76 independently13.154s including3new mutation tests",
+    "workspace_and_related_tests": "112/112 independently22.857s including corrected workspace fixtures and earlier receipt tests",
+    "forward_controls": [
+      "Original omitted SECOND.md probe now rejects",
+      "Actual process-only prose fixture passes; omitted disposition rejects",
+      "Symlink redirect negative fixture",
+      "Real261-path archive exact original mode/blob inventory matched via git ls-tree and decoded/stored identities verified with externally anchored manifest"
+    ],
+    "diff_checks": "working/staged/HEAD-relative all clean",
+    "full_pipeline_runs": 0
+  },
+  "mechanical_api_scope": "Actual graph Type/citation/canonical IDs and graph transitive+explicit helpers; separate packet transitive API and cache declarations/freshness. All imported repository modules and actual graph registries bound. No ledger API execution, runner execution or audit materialization by receipt helper.",
+  "historical_archive_measurement": {
+    "original_revision": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+    "tool_sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "manifest_sha256": "c2c50e651bd6b4c8d0ffd369447c390a11168b40a36f429608065cb3182a3c68",
+    "verification": {
+      "mechanical_check": "passed",
+      "manifest_sha256": "c2c50e651bd6b4c8d0ffd369447c390a11168b40a36f429608065cb3182a3c68",
+      "original_paths": 261,
+      "stored_objects": 148
+    },
+    "original_paths": 261,
+    "unique_original_blobs": 148,
+    "original_bytes": 53932737,
+    "stored_bytes_including_manifest": 962218,
+    "reduction_percent": 98.22,
+    "elapsed_seconds": 0.553,
+    "boundary": "Mechanical test on frozen historical packet; no canonical source changes or scientific execution. Kept REVIEW_HISTORY raw; this demonstration is not a migrated live package."
+  },
+  "archive_measurement_evidence_sha256": "d99eb3e806bbef619147f8fafbea7045544dac1fa6ce70f737401b0843697c7d",
+  "authority_delta": "Only process identity, preflight, historical payload storage, checkout reuse and child-fetch rules change. All proof lenses, independent math, original constituent closure, actual premise/input review, same-session correction confirmation, retained science standards, whole-current-base/tree combined gate and strict/evidence gates remain mandatory. No theorem, scientific premise, runtime input or science acceptance criterion is changed.",
+  "prior_review_boundary": "Completed science reports remain immutable. A changed skill context hash is not silently retagged or ignored: record this exact operational delta in an identity-only addendum when a prior report needs mapping to the new workflow; original reviewer confirms affected bindings. It does not by itself require rerunning unchanged mathematics. Any actual scientific source/premise/input/interaction change reopens affected science; changed integration base/tree still requires exact integrated gates. No automatic status promotion or replay of a stale gate.",
+  "reviewer_edits": "External reports and scratch fixtures only; no implementation edits, staging, commits, pushes or audits",
+  "remote_scope": "Source verdict covers these exact bytes for subsequent coordinated remote sync; does not claim remote deployment occurred."
+}

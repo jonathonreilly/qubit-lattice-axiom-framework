@@ -1,0 +1,49 @@
+[detached HEAD 0b0ce2a567] Land independently reviewed bounded PR8084 feedback source and history
+ Date: Tue Sep 15 10:05:58 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 33 files changed, 2770 insertions(+)
+ create mode 100644 docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/native_feedback_collision_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stderr.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stdout.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt
+ create mode 100644 scripts/native_feedback_cap_check_2026_09_13.py
+ create mode 100644 scripts/native_feedback_collision_check_2026_09_13.py
+ create mode 100644 scripts/native_feedback_finite_apparatus_2026_09_13.py
+FROZEN 0b0ce2a567705c5bc5f3168876b1ba7d17905124 sources 33 inputs 44 notes 1

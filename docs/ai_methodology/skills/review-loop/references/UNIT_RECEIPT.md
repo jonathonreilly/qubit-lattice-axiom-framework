@@ -146,7 +146,12 @@ reading coverage from a successful runner.
 Each note maps its exact source path and `declared_claim_id` (the actual frontmatter
 value, or null when absent) to the graph API's canonical `claim_id`. A legitimate
 legacy short ID may differ from the canonical ID; neither source renaming nor a
-fabricated graph alias is needed. Canonical-ID ambiguity still fails.
+fabricated graph alias is needed. Canonical-ID ambiguity still fails for ordinary
+claims. A registered premise parent may share its stable ID with historical
+aliases only when the linked, hash-bound path is the premise registry
+`current_path`, that path belongs to exactly one registered alias set, and all
+discovered colliding paths belong to that same set. Superseded targets and
+unregistered collisions fail; the registry bytes remain receipt-bound.
 
 `notes` may be empty for a process-only unit, provided its affected discovered
 Markdown has complete explicit non-science dispositions. A nonempty source delta

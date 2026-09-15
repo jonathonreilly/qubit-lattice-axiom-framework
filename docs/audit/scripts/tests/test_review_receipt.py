@@ -162,6 +162,46 @@ class ReceiptTests(unittest.TestCase):
         self.record['inputs']['context'] = self.bind([registry])
         self.invalid(contains='ambiguous/noncanonical')
 
+    def registered_parent_fixture(self, current='docs/PARENT.md'):
+        registry = 'docs/audit/data/axiom_premise_nodes.json'
+        self.add_source('docs/OLD_PARENT.md', '# Historical premise\n')
+        self.add_source(registry, json.dumps({'nodes': {'minimal_axioms': {
+            'current_path': current,
+            'aliased_paths': ['docs/PARENT.md', 'docs/OLD_PARENT.md']}}}))
+        self.record['inputs']['context'] = self.bind([registry])
+        self.record['non_science_notes'] = [{'path': 'docs/OLD_PARENT.md',
+            'rationale': 'Historical superseded premise, not current authority.',
+            'review_reference': self.record['reviewer']['report']}]
+
+    def test_current_registered_parent_with_historical_alias(self):
+        self.registered_parent_fixture()
+        status, result = self.check()
+        self.assertEqual(status, 0, result)
+
+    def test_superseded_registered_parent_rejected(self):
+        self.registered_parent_fixture(current='docs/OLD_PARENT.md')
+        self.invalid(contains='not current registered authority')
+
+    def test_superseded_registered_parent_singleton_rejected(self):
+        self.registered_parent_fixture(current='docs/OLD_PARENT.md')
+        (self.repo / 'docs/OLD_PARENT.md').unlink()
+        self.git('add', '-u')
+        self.record['source']['tree'] = self.git('write-tree')
+        self.record['source']['paths'] = [row for row in self.record['source']['paths']
+                                          if row['path'] != 'docs/OLD_PARENT.md']
+        self.record['non_science_notes'] = []
+        self.invalid(contains='not current registered authority')
+
+    def test_unregistered_duplicate_of_registered_parent_rejected(self):
+        self.registered_parent_fixture()
+        self.add_source('docs/MINIMAL_AXIOMS.md', '# Unregistered duplicate\n')
+        self.invalid(contains='ambiguous parent claim ID')
+
+    def test_registered_current_parent_input_drift_rejected(self):
+        self.registered_parent_fixture()
+        self.write('docs/PARENT.md', '# Altered authority\n')
+        self.invalid(contains='hash')
+
     def test_noncanonical_id_and_missing_cache(self):
         self.record['notes'][0]['claim_id'] = 'invented'
         self.invalid(contains='claim ID')

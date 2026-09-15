@@ -20,6 +20,33 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def require_current_parent(repo, graph, ids, dependency):
+    """Permit dated premise aliases only for the registry-selected current source.
+
+    claim_id_from_path deliberately maps historical premise memos to one ID.
+    The same registry's current_path selects authority (also used by the
+    repository premise-clean guard); ordinary claim duplicates remain errors.
+    Registry and exact linked bytes are already receipt-bound and rechecked.
+    """
+    parent_id = graph.claim_id_from_path(repo / dependency)
+    registry_path = graph.AXIOM_PREMISE_NODES_PATH
+    registry = read_json(registry_path.read_bytes()) if registry_path.exists() else {}
+    nodes = registry.get('nodes', {})
+    entry = nodes.get(parent_id)
+    if entry is None:
+        require(len(ids.get(parent_id, [])) == 1, f'ambiguous parent claim ID: {parent_id}')
+        return
+    aliases = entry.get('aliased_paths', [])
+    require(dependency == entry.get('current_path') and dependency in aliases,
+            f'parent is not current registered authority: {dependency}')
+    require(sum(dependency in node.get('aliased_paths', []) for node in nodes.values()) == 1,
+            f'ambiguous registered authority path: {dependency}')
+    candidates = ids.get(parent_id, [])
+    require(repo / dependency in candidates and
+            all(path.relative_to(repo).as_posix() in aliases for path in candidates),
+            f'ambiguous parent claim ID: {parent_id}')
+
+
 def digest(data):
     return hashlib.sha256(data).hexdigest()
 
@@ -247,8 +274,7 @@ def check(repo, record, require_cache=False):
             deps = set(note['repository_dependencies'])
             require(deps <= citations and deps <= categories['parents'], f'unlinked/unbound repository dependency: {cid}')
             for dependency in deps:
-                parent_id = graph.claim_id_from_path(repo / dependency)
-                require(len(ids.get(parent_id, [])) == 1, f'ambiguous parent claim ID: {parent_id}')
+                require_current_parent(repo, graph, ids, dependency)
             require(isinstance(note['dependency_rationale'], str) and note['dependency_rationale'].strip(), 'dependency rationale required, including empty dependency lists')
             for runner in {primary} | helpers:
                 require(cache.declared_timeout_for(runner), f'runner timeout missing: {runner}')

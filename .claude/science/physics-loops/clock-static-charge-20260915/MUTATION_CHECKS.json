@@ -1,0 +1,139 @@
+{
+  "original_source_sha256": "2ca4c711d706d1b263504b59d2501fc748836fd8fe52b2a7ca7e90060036b3fd",
+  "status": "twelve_executed_mutations_rejected_by_assertions",
+  "independent_review": false,
+  "mutations": [
+    {
+      "family": "periodized_curvature",
+      "function": "check_wilson_shift",
+      "old": "upper=alpha+z*(2*np.pi)**2",
+      "new": "upper=alpha-z*(2*np.pi)**2",
+      "source_sha256": "29e14c8f30f82ec55b97a15bf8a6457429ccb8c339590f9a88006aaca818e65b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.39179870893713087,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/periodized_curvature.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_wilson_shift()\n                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/periodized_curvature.py\", line 99, in check_wilson_shift\n    assert actual>=bound-2e-13\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "evenness_control",
+      "function": "check_wilson_shift",
+      "old": "nonsym=periodized_log(80.,0.,-.2,.2)-periodized_log(80.,0.,0.,.2)",
+      "new": "nonsym=periodized_log(80.,0.,-.2,0.)-periodized_log(80.,0.,0.,0.)",
+      "source_sha256": "cf248bedf083dff6d5db8dddd66929bee2cb5b4acf69e4d198af771fe8dec32a",
+      "exit_code": 1,
+      "elapsed_seconds": 0.25001874996814877,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/evenness_control.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_wilson_shift()\n                                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/evenness_control.py\", line 109, in check_wilson_shift\n    assert nonsym< -80*.2**2/2-1\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "physical_current_coset",
+      "function": "check_wilson_shift",
+      "old": "shift=(source-source[-1])/ (1 if wrong_shift else n)",
+      "new": "shift=(source-source[-1])/ (1 if wrong_shift else 1)",
+      "source_sha256": "6c600a1e6f0f714251bc32fcaad18434943196678fb66e72dd896e61b5a330f8",
+      "exit_code": 1,
+      "elapsed_seconds": 0.8686913329875097,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/physical_current_coset.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_wilson_shift()\n                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/physical_current_coset.py\", line 126, in check_wilson_shift\n    assert abs(sums[-1]-exact)<3e-8\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "charge_alias",
+      "function": "check_wilson_shift",
+      "old": "alias=clock_character(3,2.,3*source)",
+      "new": "alias=clock_character(3,2.,source)",
+      "source_sha256": "d514418a4dcfb2ed6f90a91da38d18ec8d5ad7c5f04308ae4d8adf046acd2f95",
+      "exit_code": 1,
+      "elapsed_seconds": 3.114913334022276,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/charge_alias.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_wilson_shift()\n                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/charge_alias.py\", line 139, in check_wilson_shift\n    assert abs(alias-1)<2e-13\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "time_green_sum",
+      "function": "check_rectangle_green",
+      "old": "formula=t/lam-2*(1-r**t)/(lam*root)",
+      "new": "formula=t/lam-(1-r**t)/(lam*root)",
+      "source_sha256": "2b9c67a335039fdf0b2c263a00f6ebe4ee1f1b8106023128523653f13260f996",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2229215840343386,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/time_green_sum.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_rectangle_green()\n                                                                                                                                                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/time_green_sum.py\", line 208, in check_rectangle_green\n    assert abs(direct-formula)<2e-12*max(1,direct)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "periodic_hodge_energy",
+      "function": "check_rectangle_green",
+      "old": "part=float(np.sum(np.abs(hat)**2/lam)/side**4)",
+      "new": "part=float(np.sum(np.abs(hat)**2/lam)/side**3)",
+      "source_sha256": "2047fc146304770044d78eac197c001691ac93251358dc2ff591228e299671df",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2219689170597121,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/periodic_hodge_energy.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_rectangle_green()\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/periodic_hodge_energy.py\", line 216, in check_rectangle_green\n    assert abs(face-expected)<2e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "independent_poisson",
+      "function": "check_rectangle_green",
+      "old": "out=8*arr.copy()",
+      "new": "out=9*arr.copy()",
+      "source_sha256": "180606861a8489fd97616a3f7ea97801f8803903ed5714eee1b71221196487bc",
+      "exit_code": 1,
+      "elapsed_seconds": 0.39555366698186845,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/independent_poisson.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_rectangle_green()\n                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/independent_poisson.py\", line 241, in check_rectangle_green\n    assert abs(energy-fourier)<1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "integrated_rectangle_ends",
+      "function": "check_rectangle_green",
+      "old": "end=2*float(np.mean(dr2*(-np.expm1(-t*exponent))/root*(lam-l1)/lam))",
+      "new": "end=float(np.mean(dr2*(-np.expm1(-t*exponent))/root*(lam-l1)/lam))",
+      "source_sha256": "a89fb8f06c8b8ed5059b1834f90157d5124dff5626dc349dfb0a9374935be4d7",
+      "exit_code": 1,
+      "elapsed_seconds": 0.522288249921985,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/integrated_rectangle_ends.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.check_rectangle_green()\n                                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/integrated_rectangle_ends.py\", line 255, in check_rectangle_green\n    assert abs(last['1,1']['energy']-.5)<1e-7\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "ginibre_coupling_order",
+      "function": "ginibre_checks",
+      "old": "raised=base.copy();raised[p]+=.31",
+      "new": "raised=base.copy();raised[p]*=.5",
+      "source_sha256": "c3bc15811ec79a7683ad3d33e48c19fd70c81ec62a38195c83bce79869593283",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2272275419672951,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/ginibre_coupling_order.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.ginibre_checks()\n                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/ginibre_coupling_order.py\", line 308, in ginibre_checks\n    assert increment > -3e-12, (N,beta,p,increment)\n           ^^^^^^^^^^^^^^^^^^\nAssertionError: (2, 0.13, 1, -0.0032837960734856952)\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "carpet_diffusion_scale",
+      "function": "carpet_pinning_checks",
+      "old": "coeff=(ive(orders,coupling)/ive(0,coupling))**(m*m)",
+      "new": "coeff=(ive(orders,coupling)/ive(0,coupling))**m",
+      "source_sha256": "eb0a722ad6f298adac437b9983e891697c2e690b9173813ddf2d54f063735ca1",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22253899998031557,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/carpet_diffusion_scale.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.carpet_pinning_checks()\n                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/carpet_diffusion_scale.py\", line 382, in carpet_pinning_checks\n    assert rows[-1]['maximum_probability_error']<3e-5\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "haar_character_precision",
+      "function": "haar_and_divisibility_checks",
+      "old": "np.sum((k-charges)**2,axis=1)/(2*beta)",
+      "new": "np.sum((k-charges)**2,axis=1)/(20*beta)",
+      "source_sha256": "7b59d372820bec65a84aecb0d8229641fa3eea40c3e92d3970538a9589ccfbf2",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22415104100946337,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/haar_character_precision.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.haar_and_divisibility_checks()\n                                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/haar_character_precision.py\", line 341, in haar_and_divisibility_checks\n    assert clock-haar>-3e-12,(N,beta,r.tolist(),clock,haar)\n           ^^^^^^^^^^^^^^^^^\nAssertionError: (2, 0.35, [0, 1, 0, 0, 0], 0.4948766264166985, 1.6989728043957901)\n",
+      "stdout_tail": ""
+    },
+    {
+      "family": "temporal_charge_phase",
+      "function": "transfer_checks",
+      "old": "K+=row*np.exp(2j*np.pi*charge*(gamma@gauge_shift)/N)/count",
+      "new": "K+=row/count",
+      "source_sha256": "bb3d320d87b0a8c660065e8254b91f6eaca506a73abcefc0a1903c5b8c2140ba",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2354854999575764,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/temporal_charge_phase.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.transfer_checks()\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-charge-mutations-sjnbf9bt/temporal_charge_phase.py\", line 452, in transfer_checks\n    assert abs(explicit-temporal_gauge)<2e-11,(N,beta,charge,time)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (2, 0.24, 1, 1)\n",
+      "stdout_tail": ""
+    }
+  ]
+}

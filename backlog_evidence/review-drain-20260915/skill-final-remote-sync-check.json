@@ -1,7 +1,6 @@
 {
-  "main": "ebb89a16a3fb846ada2389c7960343d4194a8042",
-  "remote_skill_sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
-  "installed_skill_identical": true,
-  "prior_efficiency_review": "skill-fix-review.json and skill-child-base-review.json; prior remote commits verified in initial session",
-  "latest_science_landing_preserves_skill": true
+  "remote_main": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+  "remote_path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+  "installed_exact_match": true,
+  "sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab"
 }

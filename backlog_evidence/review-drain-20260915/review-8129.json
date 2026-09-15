@@ -1,0 +1,138 @@
+{
+  "unit": "PR8129",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+  "original_merge_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "latest_remote_head_verified_before_work": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+  "confirmation_base": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+  "final_tree": "e80912b89a2580a6dbe1cfad327021815ecc1e61",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8129",
+  "source_sha256": {
+    "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": "b09dff36b0032b9ae1e7c6fae72f3ba8a457b4031495b1bc8b374152ff1784b6",
+    "logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt": "a0c5026f30dfa0460a3717acfc0e8c999c7784a393a629a798a73b7decb0c05e",
+    "scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py": "0ed013c81d5a8788767be3f18cf34b28e3ac04686306431546f9ec1720bb9a76"
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_status": "A",
+      "original_sha256": "b09dff36b0032b9ae1e7c6fae72f3ba8a457b4031495b1bc8b374152ff1784b6",
+      "disposition": "accepted unchanged",
+      "final_path": "docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "b09dff36b0032b9ae1e7c6fae72f3ba8a457b4031495b1bc8b374152ff1784b6",
+      "recovery": "f032d39f0a3071a029c1491398231d219e8a6d1c:docs/CLOCK_PENALTY_LOCAL_NORMAL_FORM_AND_SIMULTANEOUS_GROUND_STATE_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_status": "M",
+      "original_sha256": "b6c5f67c36cbe4a78711783ea6d96e1db641a6718de85f2fc8b9fc966193cd0c",
+      "disposition": "superseded generated zero-dependency-node topology acknowledgment; coordinator regenerates combined graph",
+      "final_path": null,
+      "final_sha256": null,
+      "recovery": "f032d39f0a3071a029c1491398231d219e8a6d1c:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt",
+      "original_status": "A",
+      "original_sha256": "ce385a90cf8d0fa085b95c89a81270827ece0396ac9ebeaed645fa8eddcd2e2d",
+      "disposition": "superseded by actual fresh canonical cache; original absolute-header receipt preserved",
+      "final_path": "logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt",
+      "final_sha256": "a0c5026f30dfa0460a3717acfc0e8c999c7784a393a629a798a73b7decb0c05e",
+      "recovery": "f032d39f0a3071a029c1491398231d219e8a6d1c:logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt"
+    },
+    {
+      "original_path": "scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py",
+      "original_status": "A",
+      "original_sha256": "0ed013c81d5a8788767be3f18cf34b28e3ac04686306431546f9ec1720bb9a76",
+      "disposition": "accepted unchanged",
+      "final_path": "scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py",
+      "final_sha256": "0ed013c81d5a8788767be3f18cf34b28e3ac04686306431546f9ec1720bb9a76",
+      "recovery": "f032d39f0a3071a029c1491398231d219e8a6d1c:scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "runtime_scientific_inputs": [],
+  "repository_claim_dependencies": [],
+  "dependency_scope": "Self-contained supplied clock Hamiltonian and direct graded-interaction/ground-limit proofs. PR8123/8128/campaign references are context only, no theorem or audit authority imported.",
+  "external_methods": [
+    "Integer-graded local interaction algebra and convergent matrix conjugation",
+    "Finite-dimensional spectral theory, Perron-Frobenius, positivity and variational principle",
+    "Local-state compactness and constrained ground-state inequality"
+  ],
+  "external_context": [
+    {
+      "url": "https://arxiv.org/html/2604.13781v2",
+      "boundary": "Onsite Theorem1.1 versus larger-support strongly-local Remark1.2(vii); direct overlapping-cube grade proof supplies current estimates"
+    },
+    {
+      "url": "https://arxiv.org/html/2209.11242v2",
+      "boundary": "General approximate block diagonalization with finite remainder, not exact ground-sector selection"
+    },
+    {
+      "url": "https://arxiv.org/html/2301.05261v5",
+      "boundary": "Relevant exact local dressing is explicitly conjectured"
+    },
+    {
+      "url": "https://arxiv.org/html/2204.12896v2",
+      "boundary": "Pairwise reflection-positive spin coupling hypotheses not assumed for supplied plaquette model"
+    }
+  ],
+  "coverage": [
+    "Complete original merge-base four-path delta, entire note and385-line runner; no .claude packet",
+    "33-link local grade construction and reverse incidence; graded norm commutator/factorial/conjugation bounds",
+    "Exact first-step cancellation, geometric iteration and exponential local remainder with conservative threshold",
+    "Dressed observable locality and prepared-state average/per-cube qualification",
+    "Negative second-order effective correction and finite-mu retained second harmonic",
+    "Actual translation-invariant ground density6t/lambda and simultaneous volume/penalty subsequential constrained ground state",
+    "N1\u2013N8 scope, two-cube migration, Ising and local distinguishability controls"
+  ],
+  "findings": [
+    {
+      "id": "cache-header",
+      "status": "fixed by actual evidence regeneration",
+      "detail": "Author-specific absolute runner path normalized by single execute_and_write_cache call; scientific source unchanged"
+    }
+  ],
+  "review_boundaries": [
+    "Eighteen historical faults are author narrative, not independent receipts",
+    "Finite tested penalties are below conservative uniform theorem threshold, explicitly tests of identities only",
+    "Prepared-state lifetime does not select actual finite-penalty ground sector",
+    "No fixed-penalty Coulomb phase, unique limit, uniform spectral gap, native law or retained status inferred"
+  ],
+  "independent_control": {
+    "path": "/private/tmp/review-drain-20260915/check8129/independent.json",
+    "sha256": "2614a7c0a44ecdb22eb29ebf85777a255d7401a596ff2310bf709d4f1239ec9e",
+    "summary": "Exact rational complex degenerate-neutral block proves inverse/sign/correction;117 local face patterns check neutral endpoint harmonic; factorial coefficients and1/7,3/7 induction constants independently verified"
+  },
+  "execution": {
+    "path": "/private/tmp/review-drain-20260915/check8129/primary-execution.json",
+    "sha256": "8e15bd0f4e6b5bc3e4ddd1abcd176eb1f98ebb3ce7f167db5f2e0597658b553b",
+    "elapsed_sec": 1.1622838973999023,
+    "timeout_sec": 180,
+    "families": 9,
+    "failures": 0,
+    "exit_code": 0,
+    "stderr": "",
+    "attempts": 1,
+    "preexecution_source_freeze": "/private/tmp/review-drain-20260915/check8129/preexecution.json"
+  },
+  "source_loss_check": "Only three canonical additions relative current base. Note/runner byte-identical original; original cache retained at frozen commit and check8129/original. Full cumulative manifest delta accounted, no deleted or inherited source omitted.",
+  "combined_gate": "Coordinator responsibility; no per-unit pipeline or audit applied",
+  "claim_strength": "Supplied-model volume-uniform prepared dressed-neutral lifetime and actual simultaneous divergent-penalty/volume constrained ground-state limit; not a finite-penalty phase theorem."
+}

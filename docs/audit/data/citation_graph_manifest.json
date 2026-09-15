@@ -1,6 +1,6 @@
 {
- "edge_count": 13202,
- "node_count": 5636,
+ "edge_count": 13235,
+ "node_count": 5665,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13102,6 +13102,10 @@
    "deps_hash": "90007eb5200a",
    "out_degree": 2
   },
+  "native_same_hamiltonian_ramp_note_2026-09-08": {
+   "deps_hash": "856049afb739",
+   "out_degree": 5
+  },
   "native_u1_pair_operator_and_all_low_support_note_2026-09-08": {
    "deps_hash": "79db32e637e8",
    "out_degree": 4
@@ -21157,6 +21161,118 @@
   "work_history.repo.review_feedback.pr8045-native-local-ring-evidence.readme": {
    "deps_hash": "28cc77ef1dfc",
    "out_degree": 37
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.independent-canonical-review.pr8046-independent-canonical-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-ramp-initial-ice-cold-review.pr8046-originals-native-ramp-initial-ice-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-ramp-initial-ice-control.pr8046-originals-native-ramp-initial-ice-control-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-ramp-initial-ice-control.pr8046-originals-native-ramp-initial-ice-control-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-ramp-port-cold-review.pr8046-originals-native-ramp-port-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-ramp-port-controls.pr8046-originals-native-ramp-port-controls-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-ramp-port-controls.pr8046-originals-native-ramp-port-controls-report": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-same-hamiltonian-ramp-cold-proof.pr8046-originals-native-same-hamiltonian-ramp-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-same-hamiltonian-ramp-cold-proof.pr8046-originals-native-same-hamiltonian-ramp-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-same-hamiltonian-ramp-cold-proof.pr8046-originals-native-same-hamiltonian-ramp-cold-proof-root_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-same-hamiltonian-ramp-root.pr8046-originals-native-same-hamiltonian-ramp-root-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.originals.native-same-hamiltonian-ramp-root.pr8046-originals-native-same-hamiltonian-ramp-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-graph_confirmation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-root_canonical_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.pr8046-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8046-same-hamiltonian-ramp-evidence.readme": {
+   "deps_hash": "85335c00999f",
+   "out_degree": 28
   },
   "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.independent-canonical-review.pr8049-independent-canonical-review-review": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,24 @@
+{
+  "campaign_revision": "0255889351",
+  "campaign_branch": "physics-loop/toe-local-formation-20260912",
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "role": "Recoverable discovery source only; mathematical parent and runtime data are inside this same PR delta.",
+  "sources": [
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK14_DERIVATION.md",
+      "sha256": "bbfe78e48d8f36b57d428df10a9037ee3c8cc857684aef1e8dca22963aa3dedb"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/check_block14_spectral.py",
+      "sha256": "680dc711b1bbc1c91b1633a991edebb52f80a5b8d771f735714b8958fd0b0cfc"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK14_SPECTRAL_CHECKS.json",
+      "sha256": "0a8d9b0745c8302da6405f9f55e1cc92af3aba5f30a94aef45c78a2df296fc86"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK14_COLD_AUTHOR_REVIEW.md",
+      "sha256": "e87c6d8f5da3a06ada6118779aeef6015ccca51fea98a0951914657d8b2e9e8c"
+    }
+  ]
+}

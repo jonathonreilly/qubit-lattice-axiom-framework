@@ -1,0 +1,32 @@
+{
+  "campaign_revision": "a23c4a74f278e576588d6ff007e4cbf683440618",
+  "campaign_branch": "physics-loop/toe-local-formation-20260912",
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "role": "source recovery and discovery history only; old numeric certificates are not inputs to the elementary proof",
+  "sources": [
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK12_DERIVATION.md",
+      "sha256": "0ea1fd784f419249a1c7286d6f74b356cb58bd92db21d9601477e1944faffc10"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK12_MOMENT_FORMULAS.json",
+      "sha256": "5e207a291ab5fffa1aa386b77a927e8b7ac341308e3dc891569506692d5585d3"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK12_SEPARATE_FORMULAS.json",
+      "sha256": "4267eda70ef23d6786562eb945294dd76a079df3caa2eb811ae0901e85be0890"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK13_DERIVATION.md",
+      "sha256": "4afa74ee95896129bde1659a892b52ffac63c3dc6462ced0691280254d34d964"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK13_ELEMENTARY_RESULT.json",
+      "sha256": "b50a8017f3d79dc21bbbebedd34aac0d07273bc78445072a7629cd126aee758b"
+    },
+    {
+      "repository_path": ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK13_AUTHOR_REVIEW.md",
+      "sha256": "c6493cf50b6c7725d1e213c37c32b2ea2f934e3d8ef632f748d1d11261633a33"
+    }
+  ]
+}

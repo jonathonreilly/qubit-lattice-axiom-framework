@@ -1,0 +1,485 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "4efb696e8dfbee8c84a68f3545d1b1b9a0ebc81b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 753,
+      "raw_sha256": "cbd711adeb515e90067538e760d313cea22599ea5400b2c522bc152b402c6c11",
+      "stored_path": "_objects/cbd711adeb515e90067538e760d313cea22599ea5400b2c522bc152b402c6c11.gz",
+      "stored_sha256": "39aff45587410c25c0540e020aa857964cbc9ad61fbc02352845e75a36174ef9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a6c42017801d4f98986153cb09d798b6bf5b7f7c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/HANDOFF.md",
+      "raw_bytes": 1375,
+      "raw_sha256": "27a28577b73d15cf595b472906f5aa5d66ef72323a322e6ec0e6b523230d64bf",
+      "stored_path": "_objects/27a28577b73d15cf595b472906f5aa5d66ef72323a322e6ec0e6b523230d64bf.gz",
+      "stored_sha256": "379125f7e4e4425466293333f53323090f145636471686ad9471ed9cb83127ae"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "40d6d3ade33d8969bf1904ec3cb5b6d3299015b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/MOMENT_FORMULAS.json",
+      "raw_bytes": 2904,
+      "raw_sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5",
+      "stored_path": "kept/pr8086-ward-MOMENT_FORMULAS-e5533e9eb9859404.json",
+      "stored_sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "870401c13489ca34f6900ea9a4a9845b20c2ffed",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "raw_bytes": 504,
+      "raw_sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db",
+      "stored_path": "kept/pr8086-ward-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "stored_sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "becd5b11b9810f15f6dc0b7e24340ac5243850fa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/REVIEW_HISTORY.md",
+      "raw_bytes": 3957,
+      "raw_sha256": "adf8cd1a02bc0915b079431de565294e4a488122bf52b8d92f45531ee94e5d56",
+      "stored_path": "_objects/adf8cd1a02bc0915b079431de565294e4a488122bf52b8d92f45531ee94e5d56.gz",
+      "stored_sha256": "8d138333b9557943789f8eacb87e9643b36090b5afd68704181640aa058ee941"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "702e02d6a9a8d5f485754aaaa34e5d51a47def5c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/SOURCE_MANIFEST.json",
+      "raw_bytes": 1593,
+      "raw_sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20",
+      "stored_path": "kept/pr8086-ward-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "stored_sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e95f3cc42e75650d61cf268d19ea43d1af7abf64",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRACE_GATE.md",
+      "raw_bytes": 479,
+      "raw_sha256": "396f484cf579a96ceb43cdbb56857d098ea377556c8a18ba972f96e9f03d0591",
+      "stored_path": "_objects/396f484cf579a96ceb43cdbb56857d098ea377556c8a18ba972f96e9f03d0591.gz",
+      "stored_sha256": "6a409766a7cbda6ea0556f23faaaffb559c41832820eaba3f7780d424a67c5b9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a46629a26a6b6827bc59583ad7e56017b84662da",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRIAL_FORMULAS.json",
+      "raw_bytes": 5481,
+      "raw_sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a",
+      "stored_path": "kept/pr8086-ward-TRIAL_FORMULAS-1e477e0a5d21e13c.json",
+      "stored_sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9401720e94a89632a50ce726f172db3df12c9bf0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/WITNESS.json",
+      "raw_bytes": 458,
+      "raw_sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c",
+      "stored_path": "kept/pr8086-ward-WITNESS-dda1191fa385b3b9.json",
+      "stored_sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8a3f41084d0d8d7d9db354c27e6e5b2815782c16",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/RESULTS.json",
+      "raw_bytes": 6786,
+      "raw_sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2",
+      "stored_path": "kept/pr8086-ward-RESULTS-1edd1aa7af49c3cd.json",
+      "stored_sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6f1571414f8d91dfdd433a70076ea7a8e3565af8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/native_ward_scalar_algebra_2026_09_13.py",
+      "raw_bytes": 11735,
+      "raw_sha256": "940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d",
+      "stored_path": "_objects/940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d.gz",
+      "stored_sha256": "5b0ad2907c416c0911cd2c6d859f157d1acc717f42ff1097a84f8d517d9e37f9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a14c35684c89acef0d11e023e066fdda5a695f43",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stderr.txt",
+      "raw_bytes": 882,
+      "raw_sha256": "15cb240ab2b99d15d80cd26bc0ae93a08ba770b672098ab606745ec999bc9a63",
+      "stored_path": "_objects/15cb240ab2b99d15d80cd26bc0ae93a08ba770b672098ab606745ec999bc9a63.gz",
+      "stored_sha256": "ef2d59f3239db988bb9775f476f3155237add8f6c3afe302909d3f68d4f35c45"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "352ae2947478f7a16f51b327b72fbddc0ad98397",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/native_ward_scalar_algebra_2026_09_13.py",
+      "raw_bytes": 11676,
+      "raw_sha256": "7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2",
+      "stored_path": "_objects/7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2.gz",
+      "stored_sha256": "576a03a2cd8865ac54333b1e96cf36fba4777a3884bf87fb8f51a2db08b69e32"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cbf38ec5d87e213ca5bdf941172ec3f41ee692c0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stderr.txt",
+      "raw_bytes": 860,
+      "raw_sha256": "9643c260516971a0728ab8f1605a08cf5d46064f4c12091d217e1ffc06e1ac61",
+      "stored_path": "_objects/9643c260516971a0728ab8f1605a08cf5d46064f4c12091d217e1ffc06e1ac61.gz",
+      "stored_sha256": "90b28a17b7009cbddd784fd5a38bddec357dd8eded1fb45140b3eb1f4aad33de"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "658d4d163efa19c8f478c663e78cb794112f8671",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/native_ward_scalar_arithmetic_2026_09_13.py",
+      "raw_bytes": 10956,
+      "raw_sha256": "006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf",
+      "stored_path": "_objects/006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf.gz",
+      "stored_sha256": "9d64917bfc981ac50ee10af23c3e0356f325a3636f699cb93d6fca8697c41cac"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0ba07bae155b69ebf53137c24963c49915cb55f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stderr.txt",
+      "raw_bytes": 1030,
+      "raw_sha256": "c890af7a0ffc2fc6b82feb95d9c11f32d3f9479af450fdffc4ca8ac74b92bb03",
+      "stored_path": "_objects/c890af7a0ffc2fc6b82feb95d9c11f32d3f9479af450fdffc4ca8ac74b92bb03.gz",
+      "stored_sha256": "81ba9a42ae96acbd9008d14cf17ce1437f6f9d6a1822d5d501b20e2e463924a9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "76b073c8007e5f1caf5ebef7c607249c8655be37",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/native_ward_scalar_arithmetic_2026_09_13.py",
+      "raw_bytes": 10955,
+      "raw_sha256": "5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9",
+      "stored_path": "_objects/5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9.gz",
+      "stored_sha256": "e0ec1e95e29c827a90b26016270b80e7ed6723a4ed5ee7ae5bd2480b02db8d60"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a40dcf60e238a6d1dbfaeae73c8221cf988a0b08",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stderr.txt",
+      "raw_bytes": 882,
+      "raw_sha256": "3437b82ff1df8597fe5f65d219ab396b3861494b9ecaee1d144a95c4371a688e",
+      "stored_path": "_objects/3437b82ff1df8597fe5f65d219ab396b3861494b9ecaee1d144a95c4371a688e.gz",
+      "stored_sha256": "25dc062041fe7ab368b052cd8a9d9aea294c37a008626905a5f7cb47c68e36f6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a104cb2a836f862606f328f108655ae694b964fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/native_ward_scalar_native_checks_2026_09_13.py",
+      "raw_bytes": 14334,
+      "raw_sha256": "3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0",
+      "stored_path": "_objects/3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0.gz",
+      "stored_sha256": "ce3029f9e416e153be8052407582aa2c1418cdca7bb723af4d84a80b984528da"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0ef80d24a9c648d2fda14f77ef9d9aa56d0a8e13",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stderr.txt",
+      "raw_bytes": 1012,
+      "raw_sha256": "33a2f0a46a809edb27b4b501e226461f57701ce16489b12cee92d1fa9e4af937",
+      "stored_path": "_objects/33a2f0a46a809edb27b4b501e226461f57701ce16489b12cee92d1fa9e4af937.gz",
+      "stored_sha256": "9f530b5dc72265d61a741c61976fb4f6f087483de332548081f870298e3354e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ca7b2698b3c7906433b15b7d053bd97389718fd5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/native_ward_scalar_native_checks_2026_09_13.py",
+      "raw_bytes": 14332,
+      "raw_sha256": "60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119",
+      "stored_path": "_objects/60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119.gz",
+      "stored_sha256": "5d4825e15b21c26316e5ea059f814a1e3a582306030b09697ba279245e3a9737"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fa39c884a478799e62837105a1571cb0419b6fab",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stderr.txt",
+      "raw_bytes": 914,
+      "raw_sha256": "18d3d8bc192d211cc11ca568b761d9242338949e6b2ed928cfa3c8ee26d85806",
+      "stored_path": "_objects/18d3d8bc192d211cc11ca568b761d9242338949e6b2ed928cfa3c8ee26d85806.gz",
+      "stored_sha256": "b71ac73ecce2acbed123e3121b87eeeb542738ec707e5fdb1f85c33f9d277095"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6cb8bb95d2f2eb28458a655ddd6832414b4e96cc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/native_ward_scalar_arithmetic_2026_09_13.py",
+      "raw_bytes": 10949,
+      "raw_sha256": "2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f",
+      "stored_path": "_objects/2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f.gz",
+      "stored_sha256": "9c6d590fffed34079970cd97f408193bde6ee87255260697f7cc471cd1f4cea2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f2a24a784a749799ba1a3b6f41cb049de16972fd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stderr.txt",
+      "raw_bytes": 871,
+      "raw_sha256": "4ab4a36f3259b56caf6d680e5cbf60abaf25dc594a131c5a017e64073133f86e",
+      "stored_path": "_objects/4ab4a36f3259b56caf6d680e5cbf60abaf25dc594a131c5a017e64073133f86e.gz",
+      "stored_sha256": "f33e3c7c92e8da53d5dd4e1326b280549e70f81c27c7e2890cdc047bbea035f0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86bd7bccbd2d426edaf065b51678fdec24f80b0f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/native_ward_scalar_arithmetic_2026_09_13.py",
+      "raw_bytes": 10949,
+      "raw_sha256": "12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b",
+      "stored_path": "_objects/12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b.gz",
+      "stored_sha256": "30d6d7e39613d43b67d6ee6beee2daaa0390109ff433f431cf604a25fa592fc0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ae3564e43355ebbd954a5d95c214fb8d20786b95",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stderr.txt",
+      "raw_bytes": 1237,
+      "raw_sha256": "dea0ebca3d04a123eaacc098e0ed5248eccf7de5314abab851cb1d6489672c77",
+      "stored_path": "_objects/dea0ebca3d04a123eaacc098e0ed5248eccf7de5314abab851cb1d6489672c77.gz",
+      "stored_sha256": "55af9101788f278ca7b552c648f608dc0da2901c6a837b73c03cf12daed54137"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/",
+  "revision": "a3e5529b4d74f618df416747c39bf150b885e495",
+  "schema_version": 1,
+  "unique_blobs": {
+    "0ba07bae155b69ebf53137c24963c49915cb55f7": {
+      "occurrences": 1,
+      "raw_bytes": 1030,
+      "raw_sha256": "c890af7a0ffc2fc6b82feb95d9c11f32d3f9479af450fdffc4ca8ac74b92bb03"
+    },
+    "0ef80d24a9c648d2fda14f77ef9d9aa56d0a8e13": {
+      "occurrences": 1,
+      "raw_bytes": 1012,
+      "raw_sha256": "33a2f0a46a809edb27b4b501e226461f57701ce16489b12cee92d1fa9e4af937"
+    },
+    "352ae2947478f7a16f51b327b72fbddc0ad98397": {
+      "occurrences": 1,
+      "raw_bytes": 11676,
+      "raw_sha256": "7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2"
+    },
+    "40d6d3ade33d8969bf1904ec3cb5b6d3299015b4": {
+      "occurrences": 1,
+      "raw_bytes": 2904,
+      "raw_sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5"
+    },
+    "4efb696e8dfbee8c84a68f3545d1b1b9a0ebc81b": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "cbd711adeb515e90067538e760d313cea22599ea5400b2c522bc152b402c6c11"
+    },
+    "658d4d163efa19c8f478c663e78cb794112f8671": {
+      "occurrences": 1,
+      "raw_bytes": 10956,
+      "raw_sha256": "006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf"
+    },
+    "6cb8bb95d2f2eb28458a655ddd6832414b4e96cc": {
+      "occurrences": 1,
+      "raw_bytes": 10949,
+      "raw_sha256": "2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f"
+    },
+    "6f1571414f8d91dfdd433a70076ea7a8e3565af8": {
+      "occurrences": 1,
+      "raw_bytes": 11735,
+      "raw_sha256": "940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d"
+    },
+    "702e02d6a9a8d5f485754aaaa34e5d51a47def5c": {
+      "occurrences": 1,
+      "raw_bytes": 1593,
+      "raw_sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20"
+    },
+    "76b073c8007e5f1caf5ebef7c607249c8655be37": {
+      "occurrences": 1,
+      "raw_bytes": 10955,
+      "raw_sha256": "5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9"
+    },
+    "86bd7bccbd2d426edaf065b51678fdec24f80b0f": {
+      "occurrences": 1,
+      "raw_bytes": 10949,
+      "raw_sha256": "12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b"
+    },
+    "870401c13489ca34f6900ea9a4a9845b20c2ffed": {
+      "occurrences": 1,
+      "raw_bytes": 504,
+      "raw_sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db"
+    },
+    "8a3f41084d0d8d7d9db354c27e6e5b2815782c16": {
+      "occurrences": 1,
+      "raw_bytes": 6786,
+      "raw_sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2"
+    },
+    "9401720e94a89632a50ce726f172db3df12c9bf0": {
+      "occurrences": 1,
+      "raw_bytes": 458,
+      "raw_sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c"
+    },
+    "a104cb2a836f862606f328f108655ae694b964fb": {
+      "occurrences": 1,
+      "raw_bytes": 14334,
+      "raw_sha256": "3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0"
+    },
+    "a14c35684c89acef0d11e023e066fdda5a695f43": {
+      "occurrences": 1,
+      "raw_bytes": 882,
+      "raw_sha256": "15cb240ab2b99d15d80cd26bc0ae93a08ba770b672098ab606745ec999bc9a63"
+    },
+    "a40dcf60e238a6d1dbfaeae73c8221cf988a0b08": {
+      "occurrences": 1,
+      "raw_bytes": 882,
+      "raw_sha256": "3437b82ff1df8597fe5f65d219ab396b3861494b9ecaee1d144a95c4371a688e"
+    },
+    "a46629a26a6b6827bc59583ad7e56017b84662da": {
+      "occurrences": 1,
+      "raw_bytes": 5481,
+      "raw_sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    },
+    "a6c42017801d4f98986153cb09d798b6bf5b7f7c": {
+      "occurrences": 1,
+      "raw_bytes": 1375,
+      "raw_sha256": "27a28577b73d15cf595b472906f5aa5d66ef72323a322e6ec0e6b523230d64bf"
+    },
+    "ae3564e43355ebbd954a5d95c214fb8d20786b95": {
+      "occurrences": 1,
+      "raw_bytes": 1237,
+      "raw_sha256": "dea0ebca3d04a123eaacc098e0ed5248eccf7de5314abab851cb1d6489672c77"
+    },
+    "becd5b11b9810f15f6dc0b7e24340ac5243850fa": {
+      "occurrences": 1,
+      "raw_bytes": 3957,
+      "raw_sha256": "adf8cd1a02bc0915b079431de565294e4a488122bf52b8d92f45531ee94e5d56"
+    },
+    "ca7b2698b3c7906433b15b7d053bd97389718fd5": {
+      "occurrences": 1,
+      "raw_bytes": 14332,
+      "raw_sha256": "60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119"
+    },
+    "cbf38ec5d87e213ca5bdf941172ec3f41ee692c0": {
+      "occurrences": 1,
+      "raw_bytes": 860,
+      "raw_sha256": "9643c260516971a0728ab8f1605a08cf5d46064f4c12091d217e1ffc06e1ac61"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 8,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e95f3cc42e75650d61cf268d19ea43d1af7abf64": {
+      "occurrences": 1,
+      "raw_bytes": 479,
+      "raw_sha256": "396f484cf579a96ceb43cdbb56857d098ea377556c8a18ba972f96e9f03d0591"
+    },
+    "f2a24a784a749799ba1a3b6f41cb049de16972fd": {
+      "occurrences": 1,
+      "raw_bytes": 871,
+      "raw_sha256": "4ab4a36f3259b56caf6d680e5cbf60abaf25dc594a131c5a017e64073133f86e"
+    },
+    "fa39c884a478799e62837105a1571cb0419b6fab": {
+      "occurrences": 1,
+      "raw_bytes": 914,
+      "raw_sha256": "18d3d8bc192d211cc11ca568b761d9242338949e6b2ed928cfa3c8ee26d85806"
+    }
+  }
+}

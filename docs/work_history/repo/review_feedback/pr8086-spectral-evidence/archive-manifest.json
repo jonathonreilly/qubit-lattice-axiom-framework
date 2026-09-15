@@ -1,0 +1,575 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "7d23c049c2f3df6fd1e3369aef5021936180692f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 684,
+      "raw_sha256": "cb0205d00a4683fa93768fe8cef4eb11a4a0322ec43a94843f137d1ab8d84c70",
+      "stored_path": "_objects/cb0205d00a4683fa93768fe8cef4eb11a4a0322ec43a94843f137d1ab8d84c70.gz",
+      "stored_sha256": "e59a1460d506195ac2a7f523aa1e59ef6bae1c7f0885b3aeaab3e024158816e1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1ba035033558a4c9886b64731951db1e17415131",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/HANDOFF.md",
+      "raw_bytes": 1591,
+      "raw_sha256": "1c5949e75f319a999c6328a391c1b6910ac535226ae411a2a50d8cdd79ae8671",
+      "stored_path": "_objects/1c5949e75f319a999c6328a391c1b6910ac535226ae411a2a50d8cdd79ae8671.gz",
+      "stored_sha256": "3b635e9e69039af1367f94f11ad855d42f7e1433d2d0a9823a3ebdb9c7597147"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b48f27811293b38928c041a0a198441aaac130fd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/MECHANICAL_CHECKS.json",
+      "raw_bytes": 3856,
+      "raw_sha256": "837239587a9fe37e2bb592ebbd3840a823654950d13679d305e0fef362f7666d",
+      "stored_path": "_objects/837239587a9fe37e2bb592ebbd3840a823654950d13679d305e0fef362f7666d.gz",
+      "stored_sha256": "0dfbc2c6e99eb123aad4e0d3a8b6bd281977f4404cc0a3ded629ea8724622d11"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "971e51e965444a1aecdbde93686f6442d6d14fbe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "raw_bytes": 411,
+      "raw_sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49",
+      "stored_path": "kept/pr8086-spectral-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "stored_sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "393e3f0f20cf34dfb78a80d631305a75b04632ec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/REVIEW_HISTORY.md",
+      "raw_bytes": 5059,
+      "raw_sha256": "3bef775679cd3634dfa5c450aff0ce08742abc6ebb2d13cc12ef16c317d80f3d",
+      "stored_path": "_objects/3bef775679cd3634dfa5c450aff0ce08742abc6ebb2d13cc12ef16c317d80f3d.gz",
+      "stored_sha256": "0fddeab9325078b5f75441c97b037c7232824f9fb1df34db53a0aa80a3f621fa"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "476fb0e191a731d5ef8b24fdca718f3d3adfc19d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/SOURCE_MANIFEST.json",
+      "raw_bytes": 1139,
+      "raw_sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9",
+      "stored_path": "kept/pr8086-spectral-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "stored_sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "41dcbfc660e706b716d59d36e0f5a0d882f330d5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/TRACE_GATE.md",
+      "raw_bytes": 474,
+      "raw_sha256": "103b10e5d79dd62db26816e62360f33da478ef114fbeccf1c58129e5061bae0c",
+      "stored_path": "_objects/103b10e5d79dd62db26816e62360f33da478ef114fbeccf1c58129e5061bae0c.gz",
+      "stored_sha256": "0e1a7b65c730a4d748130e4c59bc8ec29ba734e83cb8e4fcf82188dab4c062b6"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "49ea2479e854458368214bf0032c0920a25b999e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/RESULTS.json",
+      "raw_bytes": 8580,
+      "raw_sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb",
+      "stored_path": "kept/pr8086-spectral-RESULTS-1edd1aa7af49c3cd.json",
+      "stored_sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2146ef874e003b546f065d30ef3605195a460b76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/mutant.py",
+      "raw_bytes": 13089,
+      "raw_sha256": "7871b0fd8aebd599e62001332cb2f7cf6d582aa56a29e3259c3b7b4a9e486dcc",
+      "stored_path": "_objects/7871b0fd8aebd599e62001332cb2f7cf6d582aa56a29e3259c3b7b4a9e486dcc.gz",
+      "stored_sha256": "4b91c8bf690102f588ce09e5e83f6f0792cd1ae0f2611244cb15f61959af8e38"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9428c6995abb51769893dd4dfd7e332efe35cfeb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/stderr.txt",
+      "raw_bytes": 1006,
+      "raw_sha256": "04a3f04f3b99cc2a5107a244039588b54956feb130f5e9f05ea56840847804a6",
+      "stored_path": "_objects/04a3f04f3b99cc2a5107a244039588b54956feb130f5e9f05ea56840847804a6.gz",
+      "stored_sha256": "583e0a9c3d18ea5caab0ae758be3d55233c75ae96623ac8d8e73fa77d38f9f6e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "280998a42fb167bf5f4e7b5a4101c7ec61120cf1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/mutant.py",
+      "raw_bytes": 13159,
+      "raw_sha256": "4bf3751b8dfa042aeb19cc880ebf68cf4b7d4ead5ccbbdf548e95e572e79ae9e",
+      "stored_path": "_objects/4bf3751b8dfa042aeb19cc880ebf68cf4b7d4ead5ccbbdf548e95e572e79ae9e.gz",
+      "stored_sha256": "ad4f96b6e6ec8f656a1209a8e4f36d3b33d30b968b7d4e75f9b3a184995b0ad3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "33e2451519c3a8554d074a10cb1eb2fbe6a7cd5f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/stderr.txt",
+      "raw_bytes": 1049,
+      "raw_sha256": "598f356da9b7112c9dad0027e79504f3ba746603a1526e80448387425da58f4d",
+      "stored_path": "_objects/598f356da9b7112c9dad0027e79504f3ba746603a1526e80448387425da58f4d.gz",
+      "stored_sha256": "46ab7504681620f6bacb741b69faa9a4660f57b460b8518140c60931276a472c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "14add6c8179ec355bbc3122ce1aa370f48e39255",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/mutant.py",
+      "raw_bytes": 13157,
+      "raw_sha256": "016c9a4a4b395fca7887c42b882b6746e7c5aa6acc48202b0918b34a5f8d2a3e",
+      "stored_path": "_objects/016c9a4a4b395fca7887c42b882b6746e7c5aa6acc48202b0918b34a5f8d2a3e.gz",
+      "stored_sha256": "007f8cb03b71c7df2288b1095557dfc3cf295f34c74fb31722b665976ce51ec9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6d49503b7f5f2e3b858e2619e389c18abe440b1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/stderr.txt",
+      "raw_bytes": 788,
+      "raw_sha256": "40895778e842ad921bca4eba8433ced5fda4f2b7181f163978b0c5b14daf0801",
+      "stored_path": "_objects/40895778e842ad921bca4eba8433ced5fda4f2b7181f163978b0c5b14daf0801.gz",
+      "stored_sha256": "a43136d3c6f7f5f1cf41ff12835733f097eafe3b62dbe1b9ed7ae01addc3cc47"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "aa6dcf32b057fbe00d3429d821650209c1e359eb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/mutant.py",
+      "raw_bytes": 13160,
+      "raw_sha256": "cfec5bdef71b9bae7aa33c88043360ddd9725ae4185bd6916d7648a60e7fb45e",
+      "stored_path": "_objects/cfec5bdef71b9bae7aa33c88043360ddd9725ae4185bd6916d7648a60e7fb45e.gz",
+      "stored_sha256": "33f29a8b07603271621408716756420c50729eee73bbee411a799de86547de5b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "26041a7ce86ee2ba99c684c5d1e31cae17442375",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/stderr.txt",
+      "raw_bytes": 832,
+      "raw_sha256": "4c50dd5ef79ac1d6156cf33b2735ac4e6968edb3b961d0068cfebd54192a558f",
+      "stored_path": "_objects/4c50dd5ef79ac1d6156cf33b2735ac4e6968edb3b961d0068cfebd54192a558f.gz",
+      "stored_sha256": "75c974a2ebeb7c80770a7b63d2fd2399b8d6cadabe5dcf972c547eadb097f45a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "debd38338c76ddfe294ff4b3e983a121b9802ff3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/mutant.py",
+      "raw_bytes": 13153,
+      "raw_sha256": "cf6e7d896f4d03f3905bdf8574b5e31ff13b6f9206f790ae1426b81e033ebde0",
+      "stored_path": "_objects/cf6e7d896f4d03f3905bdf8574b5e31ff13b6f9206f790ae1426b81e033ebde0.gz",
+      "stored_sha256": "1470c1fedb14c2dbc15fff8feb8c3eaa23a1eb079a20123649c765a73f52614f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3dc1a4345cfd1449eb60e36888cbd07c6e49dd7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/stderr.txt",
+      "raw_bytes": 1044,
+      "raw_sha256": "f139730bd6dd9d59b73b868913bca7aa40c29faf3e4d2d138138dc561f9fcb90",
+      "stored_path": "_objects/f139730bd6dd9d59b73b868913bca7aa40c29faf3e4d2d138138dc561f9fcb90.gz",
+      "stored_sha256": "802498d799b152e9c6dd078e1c162e426c19c269a599e228552605c2d0a92325"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "017fd74a3bad8fdb5b97a35a7ffb5f677a306a8c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/mutant.py",
+      "raw_bytes": 13159,
+      "raw_sha256": "75347a29bd95c0fdd07fbf26dfa25325f2126394b7b0fabe935eef13b9df99f3",
+      "stored_path": "_objects/75347a29bd95c0fdd07fbf26dfa25325f2126394b7b0fabe935eef13b9df99f3.gz",
+      "stored_sha256": "823d51b4799a41cf4aac49d895bb872e717cf2002a74e23dd499063cbddd4a64"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1f263223b7f3b5249913e8ea991f98e71e9e3acc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/stderr.txt",
+      "raw_bytes": 905,
+      "raw_sha256": "b7fc87658ba3c94aca145ff261a1623eaed4cd95da97610661d497bf1e61325d",
+      "stored_path": "_objects/b7fc87658ba3c94aca145ff261a1623eaed4cd95da97610661d497bf1e61325d.gz",
+      "stored_sha256": "4ab5af8c7ff3da8932b25b186e82c89451aeac583d4a87694cd03889186517e8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "353a17e011f62491adf960f1d20a45d83c1dcc2a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/mutant.py",
+      "raw_bytes": 13114,
+      "raw_sha256": "6a82d7698318338279f25922adb1039a3fc2a76ee2f3db91f27a606c8972a55b",
+      "stored_path": "_objects/6a82d7698318338279f25922adb1039a3fc2a76ee2f3db91f27a606c8972a55b.gz",
+      "stored_sha256": "46eab9e7acd30d733080a07b86660cc7622a85687c9cebe3d0c635b1885aaa58"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5962914f08cf6354f241ac6852d798b2c9dabd7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/stderr.txt",
+      "raw_bytes": 794,
+      "raw_sha256": "9a33d2fb62b7729ca613f5544e8ea78d59b1a3c233d8d2f8bb0747e5c09d2833",
+      "stored_path": "_objects/9a33d2fb62b7729ca613f5544e8ea78d59b1a3c233d8d2f8bb0747e5c09d2833.gz",
+      "stored_sha256": "eca9299ff256c420030b3ddd89e92e088700a937236d7489b9bb5d3bd6120586"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d66cc45b3b6602391728d2579ce163f9cba523c4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/mutant.py",
+      "raw_bytes": 13159,
+      "raw_sha256": "db527d558d488bb71e9620e60af760b6dc36116d0936d9eee8d225498bd9b859",
+      "stored_path": "_objects/db527d558d488bb71e9620e60af760b6dc36116d0936d9eee8d225498bd9b859.gz",
+      "stored_sha256": "256c7b45b003f1b75a47a9fcf9e26d4fa77dd36ebeb5c4946815e27a67a6d1ad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "918c6868034b88feddd3cc9da4cbbdd845fa9f71",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/stderr.txt",
+      "raw_bytes": 822,
+      "raw_sha256": "3bf90cf3325c4ee00d57bd99346112c0dc33c8c251ee2c3a2d7fcad5d987483b",
+      "stored_path": "_objects/3bf90cf3325c4ee00d57bd99346112c0dc33c8c251ee2c3a2d7fcad5d987483b.gz",
+      "stored_sha256": "bf76f9bd62232248cacd4357834c95286c1eb0c93b23e69e536ad5c740552ad2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c1f0e2dcf86818cd67359b7f554665f82afc1dc8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/mutant.py",
+      "raw_bytes": 13161,
+      "raw_sha256": "1b5191460163afc7458516dce4f2280d3df5d0f178a9db145007498cdc627a6d",
+      "stored_path": "_objects/1b5191460163afc7458516dce4f2280d3df5d0f178a9db145007498cdc627a6d.gz",
+      "stored_sha256": "5f838cd278b27f507f2333c9581506aca02c438d23c21ef0cc8f9e038aedd77b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d076dc060aff19ebd0fb22ab644a3f1c26b3a495",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/stderr.txt",
+      "raw_bytes": 867,
+      "raw_sha256": "aa84d25bcfa72789f146de3de201f4bbc50c140b83796c31edee755201365b6c",
+      "stored_path": "_objects/aa84d25bcfa72789f146de3de201f4bbc50c140b83796c31edee755201365b6c.gz",
+      "stored_sha256": "ee003f6660a6cc7ff72cf4b6479b1ecb3ac888b18fa34ae2cea38f5f237fb54e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2b2f65d1fd8033e5604dfa89ea3853ea16a9827c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/mutant.py",
+      "raw_bytes": 13146,
+      "raw_sha256": "522f7c57f64425bbcfaab847497e15383fe840655733ee63aef3473a70a50cd0",
+      "stored_path": "_objects/522f7c57f64425bbcfaab847497e15383fe840655733ee63aef3473a70a50cd0.gz",
+      "stored_sha256": "d2275ea353be778d28bc19129f9723ac733cc019b792065438242fef536cb80c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6272d153f1d65fa0365e0cd59af9ca544b9e837e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/stderr.txt",
+      "raw_bytes": 811,
+      "raw_sha256": "af18336df613f4f3bc5978f21304988aff70e16377baa93f0194008f9eb383ff",
+      "stored_path": "_objects/af18336df613f4f3bc5978f21304988aff70e16377baa93f0194008f9eb383ff.gz",
+      "stored_sha256": "f1260bf4fcbeb09a48f412697c7bb69973d1154c2ba4d59186d53362ee537cda"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "854c9f11e42b7066d7a5ebc0d98b986385031936",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_packaged_runner.py",
+      "raw_bytes": 13053,
+      "raw_sha256": "ee21ab8e5d66ee60d4cdb23566c58e4368c37c881fe34b2bc91027af2c0553ef",
+      "stored_path": "_objects/ee21ab8e5d66ee60d4cdb23566c58e4368c37c881fe34b2bc91027af2c0553ef.gz",
+      "stored_sha256": "f6a7711d73f8e35e2916c2f36075d4c9608435f1a679453f62c4884f50d56200"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d0df258fd7b18ab1ee9e3d1f0d8ff6f36469d97b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_stderr.txt",
+      "raw_bytes": 655,
+      "raw_sha256": "23ccb37a4864788d4cbe8b96840a6460403373a1495b19661124d05203fa5953",
+      "stored_path": "_objects/23ccb37a4864788d4cbe8b96840a6460403373a1495b19661124d05203fa5953.gz",
+      "stored_sha256": "5bb44012488ba958dee09f439f2795c9695ddd0329d5573b090bdfd825f3da95"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/",
+  "revision": "a3e5529b4d74f618df416747c39bf150b885e495",
+  "schema_version": 1,
+  "unique_blobs": {
+    "017fd74a3bad8fdb5b97a35a7ffb5f677a306a8c": {
+      "occurrences": 1,
+      "raw_bytes": 13159,
+      "raw_sha256": "75347a29bd95c0fdd07fbf26dfa25325f2126394b7b0fabe935eef13b9df99f3"
+    },
+    "14add6c8179ec355bbc3122ce1aa370f48e39255": {
+      "occurrences": 1,
+      "raw_bytes": 13157,
+      "raw_sha256": "016c9a4a4b395fca7887c42b882b6746e7c5aa6acc48202b0918b34a5f8d2a3e"
+    },
+    "1ba035033558a4c9886b64731951db1e17415131": {
+      "occurrences": 1,
+      "raw_bytes": 1591,
+      "raw_sha256": "1c5949e75f319a999c6328a391c1b6910ac535226ae411a2a50d8cdd79ae8671"
+    },
+    "1f263223b7f3b5249913e8ea991f98e71e9e3acc": {
+      "occurrences": 1,
+      "raw_bytes": 905,
+      "raw_sha256": "b7fc87658ba3c94aca145ff261a1623eaed4cd95da97610661d497bf1e61325d"
+    },
+    "2146ef874e003b546f065d30ef3605195a460b76": {
+      "occurrences": 1,
+      "raw_bytes": 13089,
+      "raw_sha256": "7871b0fd8aebd599e62001332cb2f7cf6d582aa56a29e3259c3b7b4a9e486dcc"
+    },
+    "26041a7ce86ee2ba99c684c5d1e31cae17442375": {
+      "occurrences": 1,
+      "raw_bytes": 832,
+      "raw_sha256": "4c50dd5ef79ac1d6156cf33b2735ac4e6968edb3b961d0068cfebd54192a558f"
+    },
+    "280998a42fb167bf5f4e7b5a4101c7ec61120cf1": {
+      "occurrences": 1,
+      "raw_bytes": 13159,
+      "raw_sha256": "4bf3751b8dfa042aeb19cc880ebf68cf4b7d4ead5ccbbdf548e95e572e79ae9e"
+    },
+    "2b2f65d1fd8033e5604dfa89ea3853ea16a9827c": {
+      "occurrences": 1,
+      "raw_bytes": 13146,
+      "raw_sha256": "522f7c57f64425bbcfaab847497e15383fe840655733ee63aef3473a70a50cd0"
+    },
+    "33e2451519c3a8554d074a10cb1eb2fbe6a7cd5f": {
+      "occurrences": 1,
+      "raw_bytes": 1049,
+      "raw_sha256": "598f356da9b7112c9dad0027e79504f3ba746603a1526e80448387425da58f4d"
+    },
+    "353a17e011f62491adf960f1d20a45d83c1dcc2a": {
+      "occurrences": 1,
+      "raw_bytes": 13114,
+      "raw_sha256": "6a82d7698318338279f25922adb1039a3fc2a76ee2f3db91f27a606c8972a55b"
+    },
+    "393e3f0f20cf34dfb78a80d631305a75b04632ec": {
+      "occurrences": 1,
+      "raw_bytes": 5059,
+      "raw_sha256": "3bef775679cd3634dfa5c450aff0ce08742abc6ebb2d13cc12ef16c317d80f3d"
+    },
+    "3dc1a4345cfd1449eb60e36888cbd07c6e49dd7f": {
+      "occurrences": 1,
+      "raw_bytes": 1044,
+      "raw_sha256": "f139730bd6dd9d59b73b868913bca7aa40c29faf3e4d2d138138dc561f9fcb90"
+    },
+    "41dcbfc660e706b716d59d36e0f5a0d882f330d5": {
+      "occurrences": 1,
+      "raw_bytes": 474,
+      "raw_sha256": "103b10e5d79dd62db26816e62360f33da478ef114fbeccf1c58129e5061bae0c"
+    },
+    "476fb0e191a731d5ef8b24fdca718f3d3adfc19d": {
+      "occurrences": 1,
+      "raw_bytes": 1139,
+      "raw_sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9"
+    },
+    "49ea2479e854458368214bf0032c0920a25b999e": {
+      "occurrences": 1,
+      "raw_bytes": 8580,
+      "raw_sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb"
+    },
+    "5962914f08cf6354f241ac6852d798b2c9dabd7f": {
+      "occurrences": 1,
+      "raw_bytes": 794,
+      "raw_sha256": "9a33d2fb62b7729ca613f5544e8ea78d59b1a3c233d8d2f8bb0747e5c09d2833"
+    },
+    "6272d153f1d65fa0365e0cd59af9ca544b9e837e": {
+      "occurrences": 1,
+      "raw_bytes": 811,
+      "raw_sha256": "af18336df613f4f3bc5978f21304988aff70e16377baa93f0194008f9eb383ff"
+    },
+    "7d23c049c2f3df6fd1e3369aef5021936180692f": {
+      "occurrences": 1,
+      "raw_bytes": 684,
+      "raw_sha256": "cb0205d00a4683fa93768fe8cef4eb11a4a0322ec43a94843f137d1ab8d84c70"
+    },
+    "854c9f11e42b7066d7a5ebc0d98b986385031936": {
+      "occurrences": 1,
+      "raw_bytes": 13053,
+      "raw_sha256": "ee21ab8e5d66ee60d4cdb23566c58e4368c37c881fe34b2bc91027af2c0553ef"
+    },
+    "918c6868034b88feddd3cc9da4cbbdd845fa9f71": {
+      "occurrences": 1,
+      "raw_bytes": 822,
+      "raw_sha256": "3bf90cf3325c4ee00d57bd99346112c0dc33c8c251ee2c3a2d7fcad5d987483b"
+    },
+    "9428c6995abb51769893dd4dfd7e332efe35cfeb": {
+      "occurrences": 1,
+      "raw_bytes": 1006,
+      "raw_sha256": "04a3f04f3b99cc2a5107a244039588b54956feb130f5e9f05ea56840847804a6"
+    },
+    "971e51e965444a1aecdbde93686f6442d6d14fbe": {
+      "occurrences": 1,
+      "raw_bytes": 411,
+      "raw_sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49"
+    },
+    "aa6dcf32b057fbe00d3429d821650209c1e359eb": {
+      "occurrences": 1,
+      "raw_bytes": 13160,
+      "raw_sha256": "cfec5bdef71b9bae7aa33c88043360ddd9725ae4185bd6916d7648a60e7fb45e"
+    },
+    "b48f27811293b38928c041a0a198441aaac130fd": {
+      "occurrences": 1,
+      "raw_bytes": 3856,
+      "raw_sha256": "837239587a9fe37e2bb592ebbd3840a823654950d13679d305e0fef362f7666d"
+    },
+    "c1f0e2dcf86818cd67359b7f554665f82afc1dc8": {
+      "occurrences": 1,
+      "raw_bytes": 13161,
+      "raw_sha256": "1b5191460163afc7458516dce4f2280d3df5d0f178a9db145007498cdc627a6d"
+    },
+    "c6d49503b7f5f2e3b858e2619e389c18abe440b1": {
+      "occurrences": 1,
+      "raw_bytes": 788,
+      "raw_sha256": "40895778e842ad921bca4eba8433ced5fda4f2b7181f163978b0c5b14daf0801"
+    },
+    "d076dc060aff19ebd0fb22ab644a3f1c26b3a495": {
+      "occurrences": 1,
+      "raw_bytes": 867,
+      "raw_sha256": "aa84d25bcfa72789f146de3de201f4bbc50c140b83796c31edee755201365b6c"
+    },
+    "d0df258fd7b18ab1ee9e3d1f0d8ff6f36469d97b": {
+      "occurrences": 1,
+      "raw_bytes": 655,
+      "raw_sha256": "23ccb37a4864788d4cbe8b96840a6460403373a1495b19661124d05203fa5953"
+    },
+    "d66cc45b3b6602391728d2579ce163f9cba523c4": {
+      "occurrences": 1,
+      "raw_bytes": 13159,
+      "raw_sha256": "db527d558d488bb71e9620e60af760b6dc36116d0936d9eee8d225498bd9b859"
+    },
+    "debd38338c76ddfe294ff4b3e983a121b9802ff3": {
+      "occurrences": 1,
+      "raw_bytes": 13153,
+      "raw_sha256": "cf6e7d896f4d03f3905bdf8574b5e31ff13b6f9206f790ae1426b81e033ebde0"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 11,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

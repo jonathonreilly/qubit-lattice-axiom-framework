@@ -1,0 +1,535 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "be80cc49d9436d322387bcfd48e519930bb201a4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 651,
+      "raw_sha256": "3588ae4dd3469f4fb463a060df512c5eb70e529ffb09516d8ba5e246f283dbcd",
+      "stored_path": "_objects/3588ae4dd3469f4fb463a060df512c5eb70e529ffb09516d8ba5e246f283dbcd.gz",
+      "stored_sha256": "7ec219cc10f5879c199494c8ac70a31ed4a0102e74210b5245d96b2fc25fb1d2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "be7fd3df52577d06b9e9d92612aa2198ae7862fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/HANDOFF.md",
+      "raw_bytes": 1815,
+      "raw_sha256": "688fe499aac9f318831f04eb7266b955d195fbb26f4dfbc680dbeb677dd9092e",
+      "stored_path": "_objects/688fe499aac9f318831f04eb7266b955d195fbb26f4dfbc680dbeb677dd9092e.gz",
+      "stored_sha256": "2dfa204002c4f69643ce07dfdc436abdb103e1e0c760d6459ac958fcbdd9e9f0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0627076b86967582bcbaeb5508ff8174da6ac5f8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/MECHANICAL_CHECKS.json",
+      "raw_bytes": 5454,
+      "raw_sha256": "bd144b383214e8d8d9c47af115f27c7397970028de50d55d3af72e363088d549",
+      "stored_path": "_objects/bd144b383214e8d8d9c47af115f27c7397970028de50d55d3af72e363088d549.gz",
+      "stored_sha256": "3bd297ee997c2d27a7be7b05879860130824cdd70f5f9575158e1d8a02fc1526"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "859291ca2edb988bb973e0ca1059e1c8a5312e18",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "raw_bytes": 404,
+      "raw_sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade",
+      "stored_path": "kept/pr8086-operator-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "stored_sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5c21b1c3e2f786d78a96d64fa926b104c0426614",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/REVIEW_HISTORY.md",
+      "raw_bytes": 5265,
+      "raw_sha256": "db0f0bd13e4fa7e591ff335b43df155ed3836f053b809d643066dd00e2cf3238",
+      "stored_path": "_objects/db0f0bd13e4fa7e591ff335b43df155ed3836f053b809d643066dd00e2cf3238.gz",
+      "stored_sha256": "ceb3f98bf0010160f82b1657b73a5344687fdac9521834cabda21f82268cc84e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "bc55818e4310e22330a5b36ca741b397f5942025",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/SOURCE_MANIFEST.json",
+      "raw_bytes": 1160,
+      "raw_sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19",
+      "stored_path": "kept/pr8086-operator-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "stored_sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "29ad1d88ecafa244d9203b7dc04831d00b6c419a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/TRACE_GATE.md",
+      "raw_bytes": 458,
+      "raw_sha256": "a6926a531b15858acc9d99743ddf9fd7db2090b64508b8547472c91507781598",
+      "stored_path": "_objects/a6926a531b15858acc9d99743ddf9fd7db2090b64508b8547472c91507781598.gz",
+      "stored_sha256": "e6bbf0eddc8a00914a1919d0f467fdbbe5e20dfbff6e51f358f66c3fd2fc84e0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "269bd7a4fb51afb5c2e7050450aa05e01faf2512",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/mutant.py",
+      "raw_bytes": 14301,
+      "raw_sha256": "2599ae36234314075ac9efc69f012f8d19253ebe2abd0a8146c39c3a202b7891",
+      "stored_path": "_objects/2599ae36234314075ac9efc69f012f8d19253ebe2abd0a8146c39c3a202b7891.gz",
+      "stored_sha256": "4dca7052faca803939b48415f5459883dfa9a8c4a7526e7edff5a0745199c25c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "949852bda8f3f06b55c376f2e20c42e7bedbcdc2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/stderr.txt",
+      "raw_bytes": 1060,
+      "raw_sha256": "2c217e88ff37abbb766675f18a5b3dfbfdb9336fb6d9451afa37b3ad684e3bf9",
+      "stored_path": "_objects/2c217e88ff37abbb766675f18a5b3dfbfdb9336fb6d9451afa37b3ad684e3bf9.gz",
+      "stored_sha256": "03f5f1d5c104e2dcfddb10b2fd2c6fd606176537bb7bf14184f7c2a0bb922f27"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/stdout.txt",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "5f21525e6d219e0df96c1c34ded7c8fe1286b6b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/RESULTS.json",
+      "raw_bytes": 8501,
+      "raw_sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481",
+      "stored_path": "kept/pr8086-operator-RESULTS-1edd1aa7af49c3cd.json",
+      "stored_sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8da979bf397d2830e7597e7961e4be892f6bda38",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/mutant.py",
+      "raw_bytes": 14315,
+      "raw_sha256": "ea57a07dab9de9884c5cce041cc25ea285ce343f856a112c181f051a1b40faf9",
+      "stored_path": "_objects/ea57a07dab9de9884c5cce041cc25ea285ce343f856a112c181f051a1b40faf9.gz",
+      "stored_sha256": "e254d4181f4fdfb20b59c47ec4e89521df831cb2b615bd00007ce39df52ccc17"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3468e8468f46a014ce442607639ef5c947402125",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/stderr.txt",
+      "raw_bytes": 1104,
+      "raw_sha256": "b9cb7db4abe0e3829df0cc63db5e6d73927070913bb2f33c4371a7083eaaaaf2",
+      "stored_path": "_objects/b9cb7db4abe0e3829df0cc63db5e6d73927070913bb2f33c4371a7083eaaaaf2.gz",
+      "stored_sha256": "8a8a2b6c94b5d7dd29f1c2959895103ec29d3fc5d45a9d7d46fe6426be515bdb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9462e1af05e7ba479ec458eb12a04f345ac7091a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/mutant.py",
+      "raw_bytes": 14303,
+      "raw_sha256": "5285b63551666e84846160eaedff1c092a3e93ecccb103520fd11928f188f6ce",
+      "stored_path": "_objects/5285b63551666e84846160eaedff1c092a3e93ecccb103520fd11928f188f6ce.gz",
+      "stored_sha256": "615a71c77db00ea65a22088ed2aec9acef4637d8bb5348dd23f3a2044c267690"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "305eca9b0cf33b3ba1f4975b7ff7ce0295daec7a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/stderr.txt",
+      "raw_bytes": 810,
+      "raw_sha256": "4305b499765cf9b30a24f4b3c2775360a94f8c8dc6f840ab3d139e380c7a1ac5",
+      "stored_path": "_objects/4305b499765cf9b30a24f4b3c2775360a94f8c8dc6f840ab3d139e380c7a1ac5.gz",
+      "stored_sha256": "7a7ab07a97875a0431a6cc9ddd092147b69e9e1dfbbc2fed4147b6b6b0cf2335"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d48dcb529427f44b29a66ff3b561f8d608df17f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/mutant.py",
+      "raw_bytes": 14296,
+      "raw_sha256": "29ec99d2d759196d34e182b9d91b072ab1df071f8d69651965830cc2d1ef3a76",
+      "stored_path": "_objects/29ec99d2d759196d34e182b9d91b072ab1df071f8d69651965830cc2d1ef3a76.gz",
+      "stored_sha256": "7e4a0746f48d65e8614a6d4d5123bf3dbe91003bd69f535b702fbaa9a1e5eacc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5f4ff3a3ce97e3b0d7c013fc13d33e5e47c4b324",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/stderr.txt",
+      "raw_bytes": 1059,
+      "raw_sha256": "2cbfed4d5dbefb899ba4df525c6d20744e9fcb6646ab77289c8ed919890fdf3c",
+      "stored_path": "_objects/2cbfed4d5dbefb899ba4df525c6d20744e9fcb6646ab77289c8ed919890fdf3c.gz",
+      "stored_sha256": "7a7a24be96de3f16473d2e5c5e42125b04e1c2b1be12af7bfae41192d85c6664"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "45073987a9b64f397319d521d13ed1d3bdfed265",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/mutant.py",
+      "raw_bytes": 14299,
+      "raw_sha256": "a1feee978572e42a4d426f9750491726cd35517126e293c3547c2dd0b6ecb500",
+      "stored_path": "_objects/a1feee978572e42a4d426f9750491726cd35517126e293c3547c2dd0b6ecb500.gz",
+      "stored_sha256": "4748e49e15889693aa85c0cca3196b4a6ca4882e0593499940bd06fafed02088"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5e11f8515fb66845fab593c8725bb46876ba2d6f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/stderr.txt",
+      "raw_bytes": 1059,
+      "raw_sha256": "15d574831837a95b9ba974b76a4a8bdb12322ae84f1c9b670760d1f83c28d588",
+      "stored_path": "_objects/15d574831837a95b9ba974b76a4a8bdb12322ae84f1c9b670760d1f83c28d588.gz",
+      "stored_sha256": "ded012209efb138ce416b6f62fbf817cef0d7aceed107fa9774c8ce0a39405a4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "59a80328f2fec261c80ee6487ac6be639ec0c471",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/mutant.py",
+      "raw_bytes": 14285,
+      "raw_sha256": "5c52d00276ef62715f45c937bd936073f506391aba3f4ab6b02e05f1d7c7e4f3",
+      "stored_path": "_objects/5c52d00276ef62715f45c937bd936073f506391aba3f4ab6b02e05f1d7c7e4f3.gz",
+      "stored_sha256": "55c88ce5e581f3302416f3edb87c4dab95fdb50d8923d9817b6e100bb9655edb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cfef1b4d598e06a1d53f3b66a434f3b4136ffdce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/stderr.txt",
+      "raw_bytes": 1036,
+      "raw_sha256": "89b6387f815696d1577e0bef19ac131b00a92d12b2fdaa607a6e5e944df3f551",
+      "stored_path": "_objects/89b6387f815696d1577e0bef19ac131b00a92d12b2fdaa607a6e5e944df3f551.gz",
+      "stored_sha256": "e0684c3723009fb0e1892d59c69474276eb2f985f0fa2d1510dc6158ebc50eee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2473e82cfdd60fd6889154a17518673394ffca86",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/mutant.py",
+      "raw_bytes": 14308,
+      "raw_sha256": "1507f29ec350e265df55cd3047418a15c2ff1f741486136e4c16a4625f5a9c1a",
+      "stored_path": "_objects/1507f29ec350e265df55cd3047418a15c2ff1f741486136e4c16a4625f5a9c1a.gz",
+      "stored_sha256": "fa7a24146be1dad593d632dbd3033be1cf06480888926f8eaa7bf238d657ce11"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3e9af2a3cfb612f5d9a6ad325f41b61b49cf1b57",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/stderr.txt",
+      "raw_bytes": 765,
+      "raw_sha256": "dc7741d799faf33b7854a5a3229588fd24fe449a65e10f05b9b8c922b5eb97ea",
+      "stored_path": "_objects/dc7741d799faf33b7854a5a3229588fd24fe449a65e10f05b9b8c922b5eb97ea.gz",
+      "stored_sha256": "5b29c0bcda59b175d576bd78fbfc4be01fab0948358fa639f8648862778e29a8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b27694800a6637a94f20049b45a9875860c4f5bb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/mutant.py",
+      "raw_bytes": 14314,
+      "raw_sha256": "6179c9bc83fbab3697a0ffd6d7edbd840c23ab65c031d602d41f921fb136cf1d",
+      "stored_path": "_objects/6179c9bc83fbab3697a0ffd6d7edbd840c23ab65c031d602d41f921fb136cf1d.gz",
+      "stored_sha256": "d13ea2206aac9d3d3a7b1459d366049abaf79e43c60db8347699b5b57dc7b2b0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0bd779345a0124e318021de2ef2bc083c67237be",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/stderr.txt",
+      "raw_bytes": 887,
+      "raw_sha256": "a4d64ac5cb4bb8e639f49857b8a373e5d1f7ba7f439e6a9ffbcf6be6989ceac3",
+      "stored_path": "_objects/a4d64ac5cb4bb8e639f49857b8a373e5d1f7ba7f439e6a9ffbcf6be6989ceac3.gz",
+      "stored_sha256": "cf1867ba401fda8619ff105a06f796557ddccc052e1210831526e189bd1dec3d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3bae5ab2c128b2db82083c1fb472cc33fbb4b69c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/mutant.py",
+      "raw_bytes": 14327,
+      "raw_sha256": "3899827f0da65e58fe952e8a614b2da9115ddc7c6185ba64323b313786739ab9",
+      "stored_path": "_objects/3899827f0da65e58fe952e8a614b2da9115ddc7c6185ba64323b313786739ab9.gz",
+      "stored_sha256": "fa4328fe9ab944e2c1995ed2cad46473a1da7ae3ab20440aa711cfe11ad02f18"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "896a96f31305bd0c159833a2fc90c169be10c152",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/stderr.txt",
+      "raw_bytes": 759,
+      "raw_sha256": "ec4f6d993ed7ca6285ac0c9ae3786c2764961c31f0d10ee90a5a44e08dba5431",
+      "stored_path": "_objects/ec4f6d993ed7ca6285ac0c9ae3786c2764961c31f0d10ee90a5a44e08dba5431.gz",
+      "stored_sha256": "4c0e7ff2509f3452b7955eeeb054b74bd4f2193dca7476d930f317581307b6b1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a55aacf83a0ad8b74492eee2038030ef18448b0a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/mutant.py",
+      "raw_bytes": 14317,
+      "raw_sha256": "62374c380b94af05ebe37d3e81e50a82d4c4c26255d0d8a118456a562694b972",
+      "stored_path": "_objects/62374c380b94af05ebe37d3e81e50a82d4c4c26255d0d8a118456a562694b972.gz",
+      "stored_sha256": "b26cf499e92b7158a51231e78cc7bde7864e7ed5dba4fdd87cd99af1daa43bf3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "625cdac3e772c3528d5e0a98eddfc2cd6e440d3f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/stderr.txt",
+      "raw_bytes": 1060,
+      "raw_sha256": "b2bb292ef43f7393411998b8e58a34b9568cb656278f42c95cc9755a36a25c0f",
+      "stored_path": "_objects/b2bb292ef43f7393411998b8e58a34b9568cb656278f42c95cc9755a36a25c0f.gz",
+      "stored_sha256": "b60b75f36921f26fdb77aa5bf9ab56045847eba1505d9cad72f5e93a0de65216"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/",
+  "revision": "a3e5529b4d74f618df416747c39bf150b885e495",
+  "schema_version": 1,
+  "unique_blobs": {
+    "0627076b86967582bcbaeb5508ff8174da6ac5f8": {
+      "occurrences": 1,
+      "raw_bytes": 5454,
+      "raw_sha256": "bd144b383214e8d8d9c47af115f27c7397970028de50d55d3af72e363088d549"
+    },
+    "0bd779345a0124e318021de2ef2bc083c67237be": {
+      "occurrences": 1,
+      "raw_bytes": 887,
+      "raw_sha256": "a4d64ac5cb4bb8e639f49857b8a373e5d1f7ba7f439e6a9ffbcf6be6989ceac3"
+    },
+    "2473e82cfdd60fd6889154a17518673394ffca86": {
+      "occurrences": 1,
+      "raw_bytes": 14308,
+      "raw_sha256": "1507f29ec350e265df55cd3047418a15c2ff1f741486136e4c16a4625f5a9c1a"
+    },
+    "269bd7a4fb51afb5c2e7050450aa05e01faf2512": {
+      "occurrences": 1,
+      "raw_bytes": 14301,
+      "raw_sha256": "2599ae36234314075ac9efc69f012f8d19253ebe2abd0a8146c39c3a202b7891"
+    },
+    "29ad1d88ecafa244d9203b7dc04831d00b6c419a": {
+      "occurrences": 1,
+      "raw_bytes": 458,
+      "raw_sha256": "a6926a531b15858acc9d99743ddf9fd7db2090b64508b8547472c91507781598"
+    },
+    "305eca9b0cf33b3ba1f4975b7ff7ce0295daec7a": {
+      "occurrences": 1,
+      "raw_bytes": 810,
+      "raw_sha256": "4305b499765cf9b30a24f4b3c2775360a94f8c8dc6f840ab3d139e380c7a1ac5"
+    },
+    "3468e8468f46a014ce442607639ef5c947402125": {
+      "occurrences": 1,
+      "raw_bytes": 1104,
+      "raw_sha256": "b9cb7db4abe0e3829df0cc63db5e6d73927070913bb2f33c4371a7083eaaaaf2"
+    },
+    "3bae5ab2c128b2db82083c1fb472cc33fbb4b69c": {
+      "occurrences": 1,
+      "raw_bytes": 14327,
+      "raw_sha256": "3899827f0da65e58fe952e8a614b2da9115ddc7c6185ba64323b313786739ab9"
+    },
+    "3e9af2a3cfb612f5d9a6ad325f41b61b49cf1b57": {
+      "occurrences": 1,
+      "raw_bytes": 765,
+      "raw_sha256": "dc7741d799faf33b7854a5a3229588fd24fe449a65e10f05b9b8c922b5eb97ea"
+    },
+    "45073987a9b64f397319d521d13ed1d3bdfed265": {
+      "occurrences": 1,
+      "raw_bytes": 14299,
+      "raw_sha256": "a1feee978572e42a4d426f9750491726cd35517126e293c3547c2dd0b6ecb500"
+    },
+    "59a80328f2fec261c80ee6487ac6be639ec0c471": {
+      "occurrences": 1,
+      "raw_bytes": 14285,
+      "raw_sha256": "5c52d00276ef62715f45c937bd936073f506391aba3f4ab6b02e05f1d7c7e4f3"
+    },
+    "5c21b1c3e2f786d78a96d64fa926b104c0426614": {
+      "occurrences": 1,
+      "raw_bytes": 5265,
+      "raw_sha256": "db0f0bd13e4fa7e591ff335b43df155ed3836f053b809d643066dd00e2cf3238"
+    },
+    "5e11f8515fb66845fab593c8725bb46876ba2d6f": {
+      "occurrences": 1,
+      "raw_bytes": 1059,
+      "raw_sha256": "15d574831837a95b9ba974b76a4a8bdb12322ae84f1c9b670760d1f83c28d588"
+    },
+    "5f21525e6d219e0df96c1c34ded7c8fe1286b6b5": {
+      "occurrences": 1,
+      "raw_bytes": 8501,
+      "raw_sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481"
+    },
+    "5f4ff3a3ce97e3b0d7c013fc13d33e5e47c4b324": {
+      "occurrences": 1,
+      "raw_bytes": 1059,
+      "raw_sha256": "2cbfed4d5dbefb899ba4df525c6d20744e9fcb6646ab77289c8ed919890fdf3c"
+    },
+    "625cdac3e772c3528d5e0a98eddfc2cd6e440d3f": {
+      "occurrences": 1,
+      "raw_bytes": 1060,
+      "raw_sha256": "b2bb292ef43f7393411998b8e58a34b9568cb656278f42c95cc9755a36a25c0f"
+    },
+    "859291ca2edb988bb973e0ca1059e1c8a5312e18": {
+      "occurrences": 1,
+      "raw_bytes": 404,
+      "raw_sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade"
+    },
+    "896a96f31305bd0c159833a2fc90c169be10c152": {
+      "occurrences": 1,
+      "raw_bytes": 759,
+      "raw_sha256": "ec4f6d993ed7ca6285ac0c9ae3786c2764961c31f0d10ee90a5a44e08dba5431"
+    },
+    "8da979bf397d2830e7597e7961e4be892f6bda38": {
+      "occurrences": 1,
+      "raw_bytes": 14315,
+      "raw_sha256": "ea57a07dab9de9884c5cce041cc25ea285ce343f856a112c181f051a1b40faf9"
+    },
+    "9462e1af05e7ba479ec458eb12a04f345ac7091a": {
+      "occurrences": 1,
+      "raw_bytes": 14303,
+      "raw_sha256": "5285b63551666e84846160eaedff1c092a3e93ecccb103520fd11928f188f6ce"
+    },
+    "949852bda8f3f06b55c376f2e20c42e7bedbcdc2": {
+      "occurrences": 1,
+      "raw_bytes": 1060,
+      "raw_sha256": "2c217e88ff37abbb766675f18a5b3dfbfdb9336fb6d9451afa37b3ad684e3bf9"
+    },
+    "a55aacf83a0ad8b74492eee2038030ef18448b0a": {
+      "occurrences": 1,
+      "raw_bytes": 14317,
+      "raw_sha256": "62374c380b94af05ebe37d3e81e50a82d4c4c26255d0d8a118456a562694b972"
+    },
+    "b27694800a6637a94f20049b45a9875860c4f5bb": {
+      "occurrences": 1,
+      "raw_bytes": 14314,
+      "raw_sha256": "6179c9bc83fbab3697a0ffd6d7edbd840c23ab65c031d602d41f921fb136cf1d"
+    },
+    "bc55818e4310e22330a5b36ca741b397f5942025": {
+      "occurrences": 1,
+      "raw_bytes": 1160,
+      "raw_sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19"
+    },
+    "be7fd3df52577d06b9e9d92612aa2198ae7862fb": {
+      "occurrences": 1,
+      "raw_bytes": 1815,
+      "raw_sha256": "688fe499aac9f318831f04eb7266b955d195fbb26f4dfbc680dbeb677dd9092e"
+    },
+    "be80cc49d9436d322387bcfd48e519930bb201a4": {
+      "occurrences": 1,
+      "raw_bytes": 651,
+      "raw_sha256": "3588ae4dd3469f4fb463a060df512c5eb70e529ffb09516d8ba5e246f283dbcd"
+    },
+    "cfef1b4d598e06a1d53f3b66a434f3b4136ffdce": {
+      "occurrences": 1,
+      "raw_bytes": 1036,
+      "raw_sha256": "89b6387f815696d1577e0bef19ac131b00a92d12b2fdaa607a6e5e944df3f551"
+    },
+    "d48dcb529427f44b29a66ff3b561f8d608df17f7": {
+      "occurrences": 1,
+      "raw_bytes": 14296,
+      "raw_sha256": "29ec99d2d759196d34e182b9d91b072ab1df071f8d69651965830cc2d1ef3a76"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 10,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

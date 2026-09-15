@@ -1,0 +1,47 @@
+{
+  "runner_source_issue": null,
+  "cache_status": "fresh",
+  "cache_header": {
+    "runner_path": "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+    "runner_sha256": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717",
+    "input_fingerprint_sha256": null,
+    "status": "ok",
+    "exit_code": "0"
+  },
+  "declared_and_envelope_timeout_sec": 180,
+  "N5_issue": null,
+  "source_no_go_artifact": false,
+  "source_requires_no_go_discipline_default": false,
+  "written_N1_N8": true,
+  "final_fault_count": 16,
+  "all_final_faults_caught": true,
+  "independent_review": "pending",
+  "combined_integrated_pipeline_strict_lint_changed_evidence": "pending at later authorized integration",
+  "source_note_sha256": "77db957017232dd439d501c7c21e7d0ed14f3c5f4ea145edbbf6751420156df5",
+  "graph_matches_source": true,
+  "graph_delta": {
+    "before_nodes": 5041,
+    "after_nodes": 5042,
+    "before_edges": 12519,
+    "after_edges": 12519,
+    "added_nodes": [
+      "finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15"
+    ],
+    "removed_nodes": [],
+    "changed_nodes": []
+  },
+  "markdown_links": [
+    {
+      "source": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "target": "https://arxiv.org/pdf/1002.3261",
+      "kind": "web"
+    }
+  ],
+  "python_compile_exit_code": 0,
+  "vocabulary_fix_and_report_exit_codes": [
+    0,
+    0
+  ],
+  "intended_path_count": 16,
+  "source_read": "Complete private proof and runner were read cold, followed by the complete staged public proof and every public runner change. No independent review is asserted."
+}

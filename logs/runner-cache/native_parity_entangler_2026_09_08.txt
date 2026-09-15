@@ -1,0 +1,251 @@
+===== runner cache v1 =====
+runner: scripts/native_parity_entangler_2026_09_08.py
+runner_sha256: 99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a
+input_fingerprint_sha256: ee6659b003718f20726e2d3c7f89fdb81f8b24733a521157cb9821b2c40b866e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "classification": "conditional-support",
+  "parts": {
+    "numeric": {
+      "status": "PASS",
+      "checks": {
+        "fullsuccesscolumns": true,
+        "completeinstrument": true,
+        "oddparityprojector": true,
+        "surviving_local_readout": true,
+        "independent_input_rotations": true,
+        "input_rotations_preserve_each_rail_number": true,
+        "prep_stays_inputdomain": true,
+        "success_half": true,
+        "output_Bell_concurrence": true,
+        "readable_coherence": true,
+        "operational_hop_then_Z_readout": true,
+        "readout_preserves_cut": true,
+        "forbidden_bridge_reuse": true,
+        "permanent_both_outcomes": true,
+        "full_failure_columns": true,
+        "full_complex_K_diagonal": true,
+        "full_complex_prepared_input": true,
+        "full_complex_Bell_output": true,
+        "actual_CHSH_matrix": true,
+        "actual_CHSH_value": true,
+        "all_settings_preserve_Record": true,
+        "all_settings_local_commute": true
+      },
+      "input_real": [
+        0.4999999999999999,
+        0.4999999999999999,
+        0.4999999999999999,
+        0.4999999999999999
+      ],
+      "input_imag": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "K_real": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "K_imag": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Kplus": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "output_real": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "output_imag": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "success_probability": 0.4999999999999998,
+      "CHSH_real": [
+        [
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        [
+          0.7071067811865478,
+          -0.7071067811865476
+        ]
+      ],
+      "CHSH_imag": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "source_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+    },
+    "exact": {
+      "status": "PASS",
+      "checks": {
+        "fullcomplex_K": true,
+        "fullcomplex_input": true,
+        "fullcomplex_output": true,
+        "full_input_complete": true,
+        "ownrail_preservation": true,
+        "unitaries": true,
+        "probhalf": true,
+        "bare_ZZ_sign": true,
+        "rotated_XX_exact": true,
+        "oldrecord_permanent": true,
+        "witness2": true,
+        "witness_spectrum": true,
+        "exact_full_failure_columns": true,
+        "exact_CHSH_matrix": true,
+        "exact_CHSH_local_commutation": true
+      },
+      "input_complex": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "K_complex": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "Kplus": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "CHSH_exact": [
+        [
+          "sqrt(2)/2",
+          "sqrt(2)/2"
+        ],
+        [
+          "sqrt(2)/2",
+          "-sqrt(2)/2"
+        ]
+      ],
+      "witness_eigenvalues": {
+        "-2": 1,
+        "0": 2,
+        "2": 1
+      },
+      "source_sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee"
+    }
+  },
+  "executed_assertions": 37,
+  "elapsed_seconds": 0.2488566249376163,
+  "peak_rss_mib": 72.890625,
+  "source_sha256": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a",
+  "scope": "Finite native physical matrix construction; preparation, signed hopping controls, Born Record schedule and CHSH settings supplied. Nonbridge lemma is analytic."
+}
+per_element: executed full complex success and failure columns on all four input basis states; both middle Z outcomes retained.
+per_site: executed the eight-dimensional carrier of three physical edge qubits; midpoint placement and control admissibility supplied.
+per_mode: executed four even-parity modes, crossed input rails, regrouped output rails and the complete prepared Bell vector.
+per_block: executed numeric and independent exact full instrument, witness spectrum and all four CHSH correlations on the finite three-qubit block.
+lattice_wide: checked and not executed — nonbridge scope is analytic; no spatial scaling, occurrence dynamics or arbitrary protocol simulation.
+TOTAL: PASS=37 FAIL=0
+Resources: 0.248857s, 72.891MiB; timeout180s, RSS384MiB.
+
+----- stderr -----
+

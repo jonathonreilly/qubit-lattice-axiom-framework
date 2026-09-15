@@ -1,6 +1,6 @@
 {
- "edge_count": 12583,
- "node_count": 5079,
+ "edge_count": 12586,
+ "node_count": 5084,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12402,6 +12402,10 @@
    "deps_hash": "95ca07898375",
    "out_degree": 6
   },
+  "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "11786fb5489b",
+   "out_degree": 2
+  },
   "massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -19649,6 +19653,22 @@
   "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.readme": {
    "deps_hash": "bc4adb3e6abd",
    "out_degree": 14
+  },
+  "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.readme": {
+   "deps_hash": "31e990b3954d",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

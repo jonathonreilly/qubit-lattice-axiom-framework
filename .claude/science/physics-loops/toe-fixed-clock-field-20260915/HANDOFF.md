@@ -719,3 +719,27 @@ there is no unrestricted positivity no-go or axiom update.
 Exact symbol/Gaussian checks and finite prime/composite matrix checks pass.
 Fourier refinements agree within5.1e-12. No scientific check failed. This
 is a provisional regulator-design result, not an interacting phase proof.
+
+
+## Block19 — charged-ring slow spectrum and the exact connection
+
+The ring parent's formal gap is now given a direct stability/quasimode
+proof. Its exact Gauss connection is locally removable in a common matter
+momentum basis, leaving the constant charge-variance matrix with ground
+expectation5/16. This gives E_j=-2sqrt2+Omega(j+1/2)g+
+[5/16-(2j²+2j+1)/128]g²+O_j(g³), Omega=2^(-1/4). In particular the
+gap is Omega g-g²/32+O(g³). The local frame is not falsely made global.
+
+The leading hard-cutoff spectrum is recovered if S sqrt(g)->infinity;
+a stronger S>=g^(-1/2-epsilon) suffices for the displayed remainder. An
+exact finite-chain bound shows S sqrt(g)->0 misses even the O(g) scale,
+although the rate-free floor can still converge. The loop deficit/g tends
+to2^(1/4), and g<E_l²> tends toOmega/8. This is a global ring mode, not
+a bulk photon or a three-dimensional charged phase.
+
+Literal full-field/CAR and reduced matrices agree. Exact frame and
+oscillator algebra give the coefficients; five finite spectra challenge
+them with residuals below6.2e-15. Deleting charge offsets produces the
+wrong23/128 coefficient instead of39/128. No scientific check failed.
+Simon1983's simple-level methodology and its1984 degenerate-parity erratum
+were checked; the coupled quasimode correction is explicit here.

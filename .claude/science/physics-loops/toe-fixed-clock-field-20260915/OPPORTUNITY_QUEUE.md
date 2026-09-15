@@ -37,3 +37,5 @@ choosing the next target. The fixed-clock all-order field limit remains open.
 Block16 closes the cyclic equilibrium bridge at fixed couplings. Next compare simultaneous weak coupling and regulator growth with the new exact-Gauss hard-cutoff oscillator result. Cyclic wrap may lead to a periodic, rather than Dirichlet, finite-payload scaling limit; derive before simulating.
 
 Block17 next: determine whether a different nonnegative phase-kernel electric generator can improve the cyclic cosine error at fixed curvature. Use the full positive jump cone and explicit escape conditions, not a finite menu of stencils.
+
+Block19 closes the explicit ring slow-gap obligation. Next prioritize volume dependence of global holonomy response or a genuinely interacting native obstruction; do not recount the ring as a bulk photon theorem. Reserve time for a full campaign claim/dependency review and durable PR packaging.

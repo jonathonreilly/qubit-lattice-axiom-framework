@@ -9,11 +9,11 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 19
-current_target: select the next phase or native infrared obligation from the refreshed
-  source frontier
+block: 20
+current_target: volume dependence of flat holonomy and separation from bulk excitation
+  claims
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T23:33:39.166902+00:00'
-next_step: read periodic holonomy source and compare against native fixed-coupling
-  alternatives before selecting
+last_checkpoint_utc: '2026-09-15T23:50:34.822359+00:00'
+next_step: derive the finite-size holonomy response in an explicitly declared Weyl
+  comparator, then review load-bearing campaign results

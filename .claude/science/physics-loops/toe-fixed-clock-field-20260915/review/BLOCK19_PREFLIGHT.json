@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-15T23:45:29.519621+00:00",
+  "status": "analytic draft frozen before companion checks",
+  "target": "actual charged-ring slow gap, Gauss-connection g-squared coefficient and hard cutoff scale",
+  "source_sha256": "4041a6a382dccedc8cc3ba7e808feeebd150b289b583efab55a53788dc4ba83b",
+  "planned_checks": [
+    "literal CAR and affine Gauss fields",
+    "exact connection/band derivative cancellation",
+    "g and g-squared physical spectral coefficients",
+    "observable loop and electric limits",
+    "cutoff floor and omitted-offset adverse comparator"
+  ],
+  "risks": [
+    "global nonperiodic frame must remain local",
+    "leading stability must precede quasimode identification",
+    "subleading cutoff rate needs stronger growth than S sqrt(g) infinity",
+    "ring mode is not a bulk photon"
+  ]
+}

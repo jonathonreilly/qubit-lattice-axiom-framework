@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-15T23:50:34.822359+00:00",
+  "status": "personal_provisional_review_no_independent_audit",
+  "checked": [
+    "exact affine physical fields and six-state CAR signs",
+    "A=1-X/4 makes local derivative coupling vanish",
+    "local frame boundary is not silently made periodic",
+    "C ground mean5/16 retained",
+    "leading min-max stability precedes quasimode spectral identification",
+    "off-band correction cancels order-g-squared residual with bounded inverse",
+    "Gaussian cutoff and finite Hermite correction give O(g-cubed) residual",
+    "leading smooth flux envelopes avoid sharp-boundary cost",
+    "subleading cutoff condition is explicitly stronger",
+    "exact finite-chain lower bound",
+    "loop/flux observables tied to convergence of positive energy parts",
+    "wrong deleted-offset model distinguished"
+  ],
+  "risks": [
+    "new quasimode and cutoff proof needs independent review",
+    "fixed ring only",
+    "no optimal subleading finite-payload bound or growing-volume theorem"
+  ],
+  "inputs": {
+    "notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md": "8ab522f6af53291843a3222c38f86ca8559987ebe67f62132056964766d744f6",
+    "notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md": "950c864f92a487309ddd4153bbaefc047b045fead887a69436c86c57414f1c71",
+    "evidence/block19_charged_ring_check.py": "36b033ea82f48b9337e35fa8902df1592fa1d954d4fddf2d4cc6498c4212dbf9",
+    "evidence/block19_charged_ring_check.json": "fbb7d7931bc2b5718506d7f0c12ba8201d5b1a86be3a88cd2f8cea7b3d77a642",
+    "evidence/block19_charged_ring_check.txt": "fbb7d7931bc2b5718506d7f0c12ba8201d5b1a86be3a88cd2f8cea7b3d77a642"
+  }
+}

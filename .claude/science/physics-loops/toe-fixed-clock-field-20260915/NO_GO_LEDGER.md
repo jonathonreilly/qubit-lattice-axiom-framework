@@ -67,3 +67,5 @@ Block16: provisional positive state/regulator theorem, N1-N8 recorded. No phase 
 Block17: exact regulator-specific counterexample to inferring an integer Gaussian state or oscillator spectrum from a small plaquette deficit. Cyclic and hard regulators differ at finite scaled payload. N1-N8 recorded; full finite-spin photon and axiom no-go FAIL/not claimed.
 
 Block18: full-class nearest-neighbor optimality only for translation-invariant single-link all-time nonnegative phase kernels at fixed curvature. Signed PSD stencil is a constructive escape. N1-N8 recorded; unrestricted positive representation/phase/axiom no-go FAIL/not claimed.
+
+Block19: positive ring slow-spectrum proof and regulator-specific lower bound. Rate-free floor convergence does not resolve O(g) levels. N1-N8 recorded; bulk photon/charged phase/axiom no-go FAIL/not claimed.

@@ -1,0 +1,137 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/HANDOFF.md",
+    "sha256": "a905aa8ca474a1b05f302af49b88d89ef1b2a6ba2cee5494b143c61f995e9fe4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/MUTATION_RESULTS.json",
+    "sha256": "0f167a875fd1d1b5409b8a4de8884d0f38542bffc999647a445612e3aad02189"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/PRIMARY_RESULT.json",
+    "sha256": "65066d43ac7e3fe2d8b4a1ad12ff6f9c01d62ecc01f9e80afb2f541503b9eee7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/READING_LEDGER.json",
+    "sha256": "2639d9c5c7af45cef47ae48a37eee94de5f1a028c55c93161aab5088a2f37417"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/REVIEW_HISTORY.md",
+    "sha256": "3cb9de5469f25c7519cd85da77b401aa2f8c83289288703ff3cd3725e36a3334"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/TRACE_GATE.md",
+    "sha256": "c73ba89b618c3be01c678bb2295d2587c07c98886333fd1199dbfe1a4635527a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.py.gz",
+    "sha256": "af3e35a9b6c394946dc080f20fc236268490bff32fc4c44fcff68c29591d7af1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.stderr.gz",
+    "sha256": "6a349f04e2d55e832ace76d40e618644d3c97f28a6b9441d67e90368faf0c326"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.stdout.gz",
+    "sha256": "9f95f428d0692fc2febf99d7559792762b25fe6025f9f6319a7396f3d1618b58"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.py.gz",
+    "sha256": "f8daf7f5afaeb9863480bc2da634cdfc9f82f776d4c054308cbcd1c374c47e62"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.stderr.gz",
+    "sha256": "456d66d0fa62e16229945454611b0f54f565fd6897efc93ff089a4c445c7a8e5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.stdout.gz",
+    "sha256": "8ce77228d2238a1327909ba6e8dd085d64d4994619577123e44edcc08138c120"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.py.gz",
+    "sha256": "cf3dd87c8a84ad3cb58c625ef9b6c21f966ce6dfa93f6fe540d005b90a22e66e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.stderr.gz",
+    "sha256": "ceba9e2270263784076d704752712b4b3ba6dba0467df7bddee9534997493f5f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.stdout.gz",
+    "sha256": "ac9a9b6ba923990932dc246c4a1a7c28e6989f6d838b64c9a237e044e6befb9b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.py.gz",
+    "sha256": "78338b712049f7fc3b63a2e407ebeaae984d4c2b49ab62cf236f4238712f6b2a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.stderr.gz",
+    "sha256": "8dafd1f9e3507180bff4418e610d4f8557817bc630580199609868b002ba54c2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.stdout.gz",
+    "sha256": "80582bbb48a3d54ac180d51ff3144beb169cdc1ce674b0e7615b2f706aafa927"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.py.gz",
+    "sha256": "57f3935d188310d8eb94d093679065d3651af15631cd6d31c909d041f95762a9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.stderr.gz",
+    "sha256": "a9a8aa9ec5f8e81f9c368402c0ecf6d5dde85a58539318d8ff526a874da7ee1f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.stdout.gz",
+    "sha256": "c1e4731ead4fcb90dd96fa546749f538fd5e7197b65c833fb59432f2abe63cc9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.py.gz",
+    "sha256": "394061993ce74b0de63e95507359c61d6b2a7923dae869b26a782b4c0c6ae324"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.stderr.gz",
+    "sha256": "fa35a3f3c9f2a897d2cf2be760a99916002aaeeec2fd42044e48126179b8531f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.stdout.gz",
+    "sha256": "63e1e1994a96f0b35a17f8f2444aa3bbca89bd92b3b76824d1682588118b16ee"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.py.gz",
+    "sha256": "487d76f29a24ac72a77e941a53eacaa26c5f9ba117bae5b8c0cae4c6291524b2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.stderr.gz",
+    "sha256": "f97b8fda0211e4e53c46373b8e122fad870cfe090bd5ac386e079b10beac39fc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.stdout.gz",
+    "sha256": "e185db83a0a7134da2753f21a6061f253af57b8a1068c48d64fec92cc1c38f74"
+  }
+]

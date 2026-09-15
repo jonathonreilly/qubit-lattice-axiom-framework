@@ -1,0 +1,9 @@
+# PR8108 independent source review — PASS
+
+**PASS** for staged tree `def0a8ff81f9dfbef0e53c87d79768cd2deba979`,31paths. Original31-path constituent delta fully accounted in companion JSON. All27historical evidence files are byte-identical to the frozen head; corrected note link and README distinguish historical author evidence from current review. No current-main source loss.
+
+Read the complete843-line proof and681-line runner. The massive-loop incidence majorant, quotient covariance/translation-exhaustion argument, integer sector unfolding and marginal Schur bound, density/current counterexample, and conditional signed-source lemma are sound within their explicit model/limit assumptions. The Brascamp–Lieb hypotheses and inequality were checked at the [primary source](https://arxiv.org/html/1106.0709v2); [Frohlich–Spencer](https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf) attribution/positive-type limitation checked on pages45–48. No compact-model theorem imported from it.
+
+Independent check differentiates the geometric generating function to obtain the exact all-length majorant, separately differentiates an analytically integrated nonquadratic marginal, proves the strict density parameter inequality rationally and checks square-current area growth. Canonical run:7families passed in1.75seconds; all7targeted mutants replayed and rejected at intended assertions. Fresh cache, exact final runner unchanged from that execution, correct actual metadata parser result.
+
+One packaging finding resolved; no remaining mathematical findings. Final hashes, authority freshness, complete dispositions and test receipts are in review-8108.json. PASS covers supplied-model conditional mathematics only. Compact phase, finite payload, Hamiltonian correspondence and physical identification remain open. No source edits, commits, full pipeline or audit mutation by reviewer.

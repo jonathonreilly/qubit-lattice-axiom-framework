@@ -1,0 +1,547 @@
+{
+  "status": "PASS",
+  "verdict": "FINAL SOURCE PASS",
+  "original_head": "de223212ed85f6f71f4a8e932eff4d37289dd580",
+  "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "candidate_base": "4994b354ed33e28c7b409be7ff0a492394f03a21",
+  "staged_tree": "def0a8ff81f9dfbef0e53c87d79768cd2deba979",
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/HANDOFF.md",
+      "sha256": "a905aa8ca474a1b05f302af49b88d89ef1b2a6ba2cee5494b143c61f995e9fe4",
+      "bytes": 2208,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/HANDOFF.md",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/MUTATION_RESULTS.json",
+      "sha256": "0f167a875fd1d1b5409b8a4de8884d0f38542bffc999647a445612e3aad02189",
+      "bytes": 3419,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/MUTATION_RESULTS.json",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/MUTATION_RESULTS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/PRIMARY_RESULT.json",
+      "sha256": "65066d43ac7e3fe2d8b4a1ad12ff6f9c01d62ecc01f9e80afb2f541503b9eee7",
+      "bytes": 21942,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/PRIMARY_RESULT.json",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/PRIMARY_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/READING_LEDGER.json",
+      "sha256": "2639d9c5c7af45cef47ae48a37eee94de5f1a028c55c93161aab5088a2f37417",
+      "bytes": 2143,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/READING_LEDGER.json",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/READING_LEDGER.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/REVIEW_HISTORY.md",
+      "sha256": "3cb9de5469f25c7519cd85da77b401aa2f8c83289288703ff3cd3725e36a3334",
+      "bytes": 4657,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/REVIEW_HISTORY.md",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/TRACE_GATE.md",
+      "sha256": "c73ba89b618c3be01c678bb2295d2587c07c98886333fd1199dbfe1a4635527a",
+      "bytes": 1276,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/TRACE_GATE.md",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.py.gz",
+      "sha256": "af3e35a9b6c394946dc080f20fc236268490bff32fc4c44fcff68c29591d7af1",
+      "bytes": 10141,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.stderr.gz",
+      "sha256": "6a349f04e2d55e832ace76d40e618644d3c97f28a6b9441d67e90368faf0c326",
+      "bytes": 311,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.stdout.gz",
+      "sha256": "9f95f428d0692fc2febf99d7559792762b25fe6025f9f6319a7396f3d1618b58",
+      "bytes": 3496,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/Gaussian_Fourier_attenuation.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.stdout.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.py.gz",
+      "sha256": "f8daf7f5afaeb9863480bc2da634cdfc9f82f776d4c054308cbcd1c374c47e62",
+      "bytes": 10143,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.stderr.gz",
+      "sha256": "456d66d0fa62e16229945454611b0f54f565fd6897efc93ff089a4c445c7a8e5",
+      "bytes": 274,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.stdout.gz",
+      "sha256": "8ce77228d2238a1327909ba6e8dd085d64d4994619577123e44edcc08138c120",
+      "bytes": 1601,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/constrained_face_variance.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.stdout.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.py.gz",
+      "sha256": "cf3dd87c8a84ad3cb58c625ef9b6c21f966ce6dfa93f6fe540d005b90a22e66e",
+      "bytes": 10141,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.stderr.gz",
+      "sha256": "ceba9e2270263784076d704752712b4b3ba6dba0467df7bddee9534997493f5f",
+      "bytes": 256,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.stdout.gz",
+      "sha256": "ac9a9b6ba923990932dc246c4a1a7c28e6989f6d838b64c9a237e044e6befb9b",
+      "bytes": 1365,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/curl_orientation.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.stdout.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.py.gz",
+      "sha256": "78338b712049f7fc3b63a2e407ebeaae984d4c2b49ab62cf236f4238712f6b2a",
+      "bytes": 10138,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.stderr.gz",
+      "sha256": "8dafd1f9e3507180bff4418e610d4f8557817bc630580199609868b002ba54c2",
+      "bytes": 259,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.stdout.gz",
+      "sha256": "80582bbb48a3d54ac180d51ff3144beb169cdc1ce674b0e7615b2f706aafa927",
+      "bytes": 2911,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/full_box_flux_removed.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.stdout.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.py.gz",
+      "sha256": "57f3935d188310d8eb94d093679065d3651af15631cd6d31c909d041f95762a9",
+      "bytes": 10141,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.stderr.gz",
+      "sha256": "a9a8aa9ec5f8e81f9c368402c0ecf6d5dde85a58539318d8ff526a874da7ee1f",
+      "bytes": 295,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.stdout.gz",
+      "sha256": "c1e4731ead4fcb90dd96fa546749f538fd5e7197b65c833fb59432f2abe63cc9",
+      "bytes": 1408,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/integer_lower_face_sign.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.stdout.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.py.gz",
+      "sha256": "394061993ce74b0de63e95507359c61d6b2a7923dae869b26a782b4c0c6ae324",
+      "bytes": 10145,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.stderr.gz",
+      "sha256": "fa35a3f3c9f2a897d2cf2be760a99916002aaeeec2fd42044e48126179b8531f",
+      "bytes": 284,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.stdout.gz",
+      "sha256": "63e1e1994a96f0b35a17f8f2444aa3bbca89bd92b3b76824d1682588118b16ee",
+      "bytes": 276,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/logdet_resolvent_sign.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.stdout.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.py.gz",
+      "sha256": "487d76f29a24ac72a77e941a53eacaa26c5f9ba117bae5b8c0cae4c6291524b2",
+      "bytes": 10142,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.py.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.py.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.stderr.gz",
+      "sha256": "f97b8fda0211e4e53c46373b8e122fad870cfe090bd5ac386e079b10beac39fc",
+      "bytes": 256,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.stderr.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.stderr.gz"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.stdout.gz",
+      "sha256": "e185db83a0a7134da2753f21a6061f253af57b8a1068c48d64fec92cc1c38f74",
+      "bytes": 153,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:.claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block2/mutation_evidence/loop_boundary_sign.stdout.gz",
+      "disposition": "byte-exact historical archive; not current authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.stdout.gz"
+    },
+    {
+      "path": "docs/MASSIVE_WILSON_LOOP_CURVATURE_NONCOMPACT_COVARIANCE_AND_COMPACT_DEFECT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "094b179bca207cd39ffacc9565f071ba8ce05fe6aadd514ef6992055ab3f2383",
+      "bytes": 45848,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:docs/MASSIVE_WILSON_LOOP_CURVATURE_NONCOMPACT_COVARIANCE_AND_COMPACT_DEFECT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "disposition": "canonical source/cache retained",
+      "final_path": "docs/MASSIVE_WILSON_LOOP_CURVATURE_NONCOMPACT_COVARIANCE_AND_COMPACT_DEFECT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "70e7487490e1e16dcec6c87b3505698b93135310f58bb8f6fb30a040fa1a3a69",
+      "bytes": 669973,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:docs/audit/data/citation_graph_manifest.json",
+      "disposition": "historical generated manifest excluded; current source regeneration belongs to coordinator"
+    },
+    {
+      "path": "logs/runner-cache/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.txt",
+      "sha256": "74ea35a678a758696f2d98f55002ab0a2c2f1d29e6b9ea54cdb28ab089190605",
+      "bytes": 21081,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:logs/runner-cache/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.txt",
+      "disposition": "canonical source/cache retained",
+      "final_path": "logs/runner-cache/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.txt"
+    },
+    {
+      "path": "scripts/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.py",
+      "sha256": "730b1603b36e6031b8a4fcee0285ade3946baf32a5fe368dee8a77b4f049107d",
+      "bytes": 35310,
+      "recovery": "de223212ed85f6f71f4a8e932eff4d37289dd580:scripts/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.py",
+      "disposition": "canonical source/cache retained",
+      "final_path": "scripts/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.py"
+    }
+  ],
+  "final_files": [
+    {
+      "path": "docs/MASSIVE_WILSON_LOOP_CURVATURE_NONCOMPACT_COVARIANCE_AND_COMPACT_DEFECT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "8d4893f49ce87421ce9a7cdc45002f3a89b9f15fa54307ca24294009ba4ee93e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/HANDOFF.md",
+      "sha256": "a905aa8ca474a1b05f302af49b88d89ef1b2a6ba2cee5494b143c61f995e9fe4",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/MUTATION_RESULTS.json",
+      "sha256": "0f167a875fd1d1b5409b8a4de8884d0f38542bffc999647a445612e3aad02189",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/PRIMARY_RESULT.json",
+      "sha256": "65066d43ac7e3fe2d8b4a1ad12ff6f9c01d62ecc01f9e80afb2f541503b9eee7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/READING_LEDGER.json",
+      "sha256": "2639d9c5c7af45cef47ae48a37eee94de5f1a028c55c93161aab5088a2f37417",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/README.md",
+      "sha256": "9759314161010f45fd5e4dc1a988c0b278df0dc53e823ff0e5aef9950fb9c900",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/REVIEW_HISTORY.md",
+      "sha256": "3cb9de5469f25c7519cd85da77b401aa2f8c83289288703ff3cd3725e36a3334",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/TRACE_GATE.md",
+      "sha256": "c73ba89b618c3be01c678bb2295d2587c07c98886333fd1199dbfe1a4635527a",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.py.gz",
+      "sha256": "af3e35a9b6c394946dc080f20fc236268490bff32fc4c44fcff68c29591d7af1",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.stderr.gz",
+      "sha256": "6a349f04e2d55e832ace76d40e618644d3c97f28a6b9441d67e90368faf0c326",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/Gaussian_Fourier_attenuation.stdout.gz",
+      "sha256": "9f95f428d0692fc2febf99d7559792762b25fe6025f9f6319a7396f3d1618b58",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.py.gz",
+      "sha256": "f8daf7f5afaeb9863480bc2da634cdfc9f82f776d4c054308cbcd1c374c47e62",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.stderr.gz",
+      "sha256": "456d66d0fa62e16229945454611b0f54f565fd6897efc93ff089a4c445c7a8e5",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/constrained_face_variance.stdout.gz",
+      "sha256": "8ce77228d2238a1327909ba6e8dd085d64d4994619577123e44edcc08138c120",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.py.gz",
+      "sha256": "cf3dd87c8a84ad3cb58c625ef9b6c21f966ce6dfa93f6fe540d005b90a22e66e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.stderr.gz",
+      "sha256": "ceba9e2270263784076d704752712b4b3ba6dba0467df7bddee9534997493f5f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/curl_orientation.stdout.gz",
+      "sha256": "ac9a9b6ba923990932dc246c4a1a7c28e6989f6d838b64c9a237e044e6befb9b",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.py.gz",
+      "sha256": "78338b712049f7fc3b63a2e407ebeaae984d4c2b49ab62cf236f4238712f6b2a",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.stderr.gz",
+      "sha256": "8dafd1f9e3507180bff4418e610d4f8557817bc630580199609868b002ba54c2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/full_box_flux_removed.stdout.gz",
+      "sha256": "80582bbb48a3d54ac180d51ff3144beb169cdc1ce674b0e7615b2f706aafa927",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.py.gz",
+      "sha256": "57f3935d188310d8eb94d093679065d3651af15631cd6d31c909d041f95762a9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.stderr.gz",
+      "sha256": "a9a8aa9ec5f8e81f9c368402c0ecf6d5dde85a58539318d8ff526a874da7ee1f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/integer_lower_face_sign.stdout.gz",
+      "sha256": "c1e4731ead4fcb90dd96fa546749f538fd5e7197b65c833fb59432f2abe63cc9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.py.gz",
+      "sha256": "394061993ce74b0de63e95507359c61d6b2a7923dae869b26a782b4c0c6ae324",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.stderr.gz",
+      "sha256": "fa35a3f3c9f2a897d2cf2be760a99916002aaeeec2fd42044e48126179b8531f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/logdet_resolvent_sign.stdout.gz",
+      "sha256": "63e1e1994a96f0b35a17f8f2444aa3bbca89bd92b3b76824d1682588118b16ee",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.py.gz",
+      "sha256": "487d76f29a24ac72a77e941a53eacaa26c5f9ba117bae5b8c0cae4c6291524b2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.stderr.gz",
+      "sha256": "f97b8fda0211e4e53c46373b8e122fad870cfe090bd5ac386e079b10beac39fc",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/mutation_evidence/loop_boundary_sign.stdout.gz",
+      "sha256": "e185db83a0a7134da2753f21a6061f253af57b8a1068c48d64fec92cc1c38f74",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.txt",
+      "sha256": "74ea35a678a758696f2d98f55002ab0a2c2f1d29e6b9ea54cdb28ab089190605",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.py",
+      "sha256": "730b1603b36e6031b8a4fcee0285ade3946baf32a5fe368dee8a77b4f049107d",
+      "index_equals_worktree": true
+    }
+  ],
+  "authority_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_coverage": "Identical to previously fully read authority revision; supplied Wilson/Maxwell/Villain models are not selected by axioms/primitives"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_coverage": "Identical to previously fully read authority revision; supplied Wilson/Maxwell/Villain models are not selected by axioms/primitives"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_coverage": "Identical to previously fully read authority revision; supplied Wilson/Maxwell/Villain models are not selected by axioms/primitives"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_coverage": "Identical to previously fully read authority revision; supplied Wilson/Maxwell/Villain models are not selected by axioms/primitives"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_coverage": "Identical to previously fully read authority revision; supplied Wilson/Maxwell/Villain models are not selected by axioms/primitives"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_coverage": "Identical to previously fully read authority revision; supplied Wilson/Maxwell/Villain models are not selected by axioms/primitives"
+    }
+  ],
+  "runtime_inputs": "Self-contained runner:Python standard library,Numpy,Scipy,SymPy; no scientific files or helper runners. Frozen mutation copies are historical-only.",
+  "metadata_check": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "issue": "Unique mutation/read-history packet omitted and review link dangling",
+      "resolution": "All27originalfiles byte-exact archived plus historical README; note link corrected",
+      "state": "resolved same reviewer session"
+    }
+  ],
+  "proof_coverage": {
+    "I": "Stable coordinate sorting preserves per-axis order and boundingbox;root-incidence bound yieldsm/2 sum n\u00b3(2n+1)^d q^n. Gauge quotient strict Hessian supports BL upper bound and score block-covariance lower bound. Even Wilson coefficients provide zero means; translation averaging,uniform subGaussian moments and nested curl projections justify limiting covariance. Directional diagonal bounds prohibit absolute summability in d>=3.",
+    "II": "Integer fillings extend physical determinant at integer charge; fullspace evenness is justified by real Clifford traces. BL/Schur complement gives marginal curvature without volume determinant factor. Integral contracting homotopy proves saturated sector quotient; normalized Haar unfolding and theta/Jensen yield sector density bound.",
+    "III": "Stationary Skellam square-current convolution has variance2Llambda and transverse response coefficientlambdaL4; comparison ensemble deliberately not actualmodel. Exactr2Wilson fullboxtrace/tail counterexample is within declared mass regime.",
+    "IV": "Signed-activity Hessian bound and BL variance give-R<=HesslogI<=R/(1-delta). Distinct source/current form bounds and positive normalized mixture preserve generating comparisons; exact actualmodel representation remains open."
+  },
+  "independent_check": {
+    "status": "PASS",
+    "majorant_closed_form": "-2*q**4*(64827*q**7 - 513616*q**6 + 1775237*q**5 - 3490960*q**4 + 4260157*q**3 - 3285488*q**2 + 1529107*q - 419904)/(q - 1)**8",
+    "c_exact": "449473436272693/67934252164000",
+    "alpha_decimal": "0.0661630064297491190",
+    "nonquadratic_marginal_cases": 6,
+    "density_upper_rational": "1/256162500000000000000000000",
+    "independent_current_area_cases": [
+      1,
+      3,
+      7
+    ]
+  },
+  "primary_execution": {
+    "exit": 0,
+    "seconds": 1.750034415978007
+  },
+  "primary_result": "7families/48895 finite assertions PASS; assertioncount is not independent scientific results",
+  "cache_status": "fresh",
+  "mutations": [
+    {
+      "mutation": "loop_boundary_sign",
+      "exit": 1,
+      "failure": "FAIL: loop_filling: original line 55",
+      "seconds": 0.025526875047944486
+    },
+    {
+      "mutation": "logdet_resolvent_sign",
+      "exit": 1,
+      "failure": "FAIL: wilson_curvature: original line 70",
+      "seconds": 0.08401595894247293
+    },
+    {
+      "mutation": "curl_orientation",
+      "exit": 1,
+      "failure": "FAIL: covariance_projection: original line 59",
+      "seconds": 0.3608463329728693
+    },
+    {
+      "mutation": "integer_lower_face_sign",
+      "exit": 1,
+      "failure": "FAIL: integer_cochain: original line 40",
+      "seconds": 0.22787979105487466
+    },
+    {
+      "mutation": "constrained_face_variance",
+      "exit": 1,
+      "failure": "FAIL: compact_marginal: original line 46",
+      "seconds": 0.3128507500514388
+    },
+    {
+      "mutation": "full_box_flux_removed",
+      "exit": 1,
+      "failure": "FAIL: compact_response: original line 61",
+      "seconds": 0.24869833409320563
+    },
+    {
+      "mutation": "Gaussian_Fourier_attenuation",
+      "exit": 1,
+      "failure": "FAIL: signed_source: original line 37",
+      "seconds": 0.336384917027317
+    }
+  ],
+  "external_inputs": [
+    {
+      "url": "https://arxiv.org/html/1106.0709v2",
+      "coverage": "Introduction hypotheses and variance inequality1.3 directly inspected; only external mathematical inequality consumed"
+    },
+    {
+      "url": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
+      "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17",
+      "coverage": "Pages45\u201346 covariance/nonsummability attribution,48positive-type step read; page45formula image inspected. Model theorem not imported."
+    }
+  ],
+  "current_main_loss_check": "All3canonical paths are additions absent from candidatebase; no currentmain source overwritten/deleted. Generated PRmanifest excluded.",
+  "limitations": [
+    "No compact Coulomb phase,finite-payload stability,Hamiltonian gap,physical photon count,DLR uniqueness or continuum limit certified",
+    "Dimock/repository comparison references context only,not consumed premises",
+    "No audit verdict/retention authority; coordinator combined gate separate"
+  ],
+  "full_pipeline_count": 0,
+  "reviewer_source_edits": false
+}

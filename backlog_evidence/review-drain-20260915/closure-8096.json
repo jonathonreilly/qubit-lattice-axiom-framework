@@ -1,0 +1,19 @@
+{
+  "pr": 8096,
+  "original_head": "d57291602d909246756f30975f0d862a08e8f836",
+  "branch": "physics-loop/formation-order-covariance-20260913",
+  "landing": "0cbc63122780a54e56f15f9b7e2a9220b9316140",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/formation-order-covariance-20260913",
+    "headRefOid": "d57291602d909246756f30975f0d862a08e8f836",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8096,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8096"
+  }
+}

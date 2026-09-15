@@ -1,0 +1,16 @@
+{
+  "before": {
+    "baseRefName": "main",
+    "headRefOid": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+    "number": 8060,
+    "state": "OPEN"
+  },
+  "after": {
+    "baseRefName": "main",
+    "headRefOid": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+    "number": 8060,
+    "state": "OPEN"
+  },
+  "fetched_head": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+  "original_delta_base": "063f73e73724d53e2b84c75f4b634d7f6373cdf3"
+}

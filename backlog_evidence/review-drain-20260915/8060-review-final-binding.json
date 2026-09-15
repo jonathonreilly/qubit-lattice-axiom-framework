@@ -1,0 +1,19 @@
+{
+  "tree": "a705ff267a6f1640b81129046a89f4525306c377",
+  "review": {
+    "path": "/private/tmp/review-drain-20260915/review-8060.json",
+    "sha256": "e609eba88846c619e6958d5265226563f904bba4895a19e86ad13c53f68946d6"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/8060-unit-final-v2.json",
+    "sha256": "cf48f251a54ee147da76399f02d21afc3ea8bd6cdceed067a0affde3ad5fc6a6"
+  },
+  "execution": {
+    "total": 42595,
+    "fail": 0,
+    "seconds": 0.07245993614196777,
+    "sampled_whole_tree_peak_bytes": 49217536,
+    "samples": 2,
+    "caps": "180 seconds,384MiB sampled supervisor/descendant RSS; original self guard retained"
+  }
+}

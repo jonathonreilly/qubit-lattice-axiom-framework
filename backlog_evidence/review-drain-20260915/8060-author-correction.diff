@@ -1,0 +1,68 @@
+--- original/docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md
++++ author/docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md
+@@ -132,3 +132,28 @@
+ A volume-uniform version of (1) for all finite \(C\) at fixed nonzero \(U\) would give a stronger local theorem, but remains unproved. The known mean-density estimate alone cannot supply it. On the same full carrier, mix a canonical flux state with weight \(1-p\) and a state with all elementary faces bad with weight \(p\). Both flux sectors exist on even cubic tori, using staggered canonical and uniform link signs. Every face marginal is \(p\), yet every nonempty joint event has probability \(p\), regardless of size. Translation averaging preserves these identities. These are counterexamples to an inference from mean density, **not** claimed ground states of \(H_U\).
+ 
+ The exact runner checks small geometry, projection-selection identities, integer thresholds and recursion arithmetic. Such finite controls support the explicit general proof; they do not establish it by enumerating examples or solve a perturbed ground state. The original proof and independent reviews are preserved in the branch-local packet. Independent audit status remains pending.
++
++
++## Current capture and historical provenance
++
++The canonical runner writes its actual42595 finite predicate checks and their group counts to the tracked output. These checks support the separate analytical proof; they do not solve a perturbed ground state or establish a uniform positive-coupling thermodynamic contour bound. The primary retains its180-second limit and384MiB self-memory guard with platform-correct units. [Canonical cache](../logs/runner-cache/native_weak_electric_joint_defect_bounds_2026_09_09.txt).
++
++The [original packet and path map](work_history/repo/review_feedback/pr8060-evidence/README.md) preserve historical proofs, reviews and controls exactly. Original mutation and review statements describe those historical attempts, not new executions or a current review verdict.
++
++## No-Go Discipline Gate
++
++**N1 — Counterroutes and provenance.** ATTEMPTED — use a compression inequality rather than commute the joint projector with the Hamiltonian; the norm bound retains coherent-state interference. ATTEMPTED — include disconnected face subsets created by recursion. ATTEMPTED — retain the ceiling-minus-one cutoff, including integer equality. ATTEMPTED — count contour walks by doubling every edge, including cycle-closing edges. ATTEMPTED — test the inference from mean density to joint bounds using the explicit mixture, which is not asserted to be a ground state. These are the stated analytical arguments and finite controls, not five new simulation campaigns.
++
++**N2 — Common limitation.** The outstanding local fixed-coupling conclusion needs stronger compression control. The various inference failures are not independent universal obstructions.
++
++**N3 — Premises.** The supplied finite native Hamiltonian, positive electric penalty, commuting bad-face projectors and assumed positive stiffness remain explicit. The explicit numerical stiffness applies only on its upstream domain. No active or winding spectral gap, physical parameter selection or new axiom is introduced.
++
++**N4 — Parent scope.** The mean-density theorem supports the macroscopic estimate but is not itself a joint-event or contour theorem. The present proof supplies two specified compression regimes without importing an unavailable local fixed-coupling result.
++
++**N5 — Actual coverage.** The actual helper total42595 counts finite mathematical predicates, with returned family counts; resource guards are separate. Geometry uses L4 and L6, while the general compression and contour arguments are analytical. No perturbed ground state, thermal ensemble or all-volume family is numerically solved.
++
++**N6 — Escapes.** A stronger volume-uniform compression estimate could support local bounds at fixed positive coupling. This route remains unproved, not ruled out. Pure winding defects and thermal states lie outside the stated conclusions.
++
++**N7 — Strongest remaining route.** Establish the needed compression bound for every finite prescribed face set at fixed nonzero coupling, with its coherent-state and disconnected-subset conditions intact. The extensive cutoff and shrinking1/N window do not accomplish that step.
++
++**N8 — Historical development.** The preceding mean-density result left joint-event control open. The two present regimes resolve part of that question while retaining their distinct limits; the nonground-state mixture only blocks an inference from mean density alone.
+--- original/scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py
++++ author/scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py
+@@ -8,14 +8,22 @@
+  'scripts/native_weak_electric_joint_defect_controls_2026_09_09.py',
+ )
+ def main():
+- import argparse,json,hashlib,signal,time,resource
++ import argparse,json,hashlib,signal,time,resource,sys,importlib.util
+  from pathlib import Path
+- ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.parse_args();signal.alarm(AUDIT_TIMEOUT_SEC);start=time.monotonic();root=Path(__file__).resolve().parents[1]
++ ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');args=ap.parse_args();signal.alarm(AUDIT_TIMEOUT_SEC);start=time.monotonic();root=Path(__file__).resolve().parents[1]
+  inputs={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
+- path=root/AUDIT_INPUT_PATHS[-1];data=path.read_bytes();ns={'__name__':'local_controls','__file__':str(path)};exec(compile(data,str(path),'exec'),ns);result=ns['check']()
++ path=root/'scripts/native_weak_electric_joint_defect_controls_2026_09_09.py';data=path.read_bytes();spec=importlib.util.spec_from_file_location('local_controls',root/'scripts/native_weak_electric_joint_defect_controls_2026_09_09.py');module=importlib.util.module_from_spec(spec);exec(compile(data,str(path),'exec'),module.__dict__);result=module.check()
+  if result['status']!='PASS' or result['max_flipped']!=8 or result['face_terms']!=32:raise ValueError('claim binding')
+- rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*(1 if sys.platform=='darwin' else 1024)
+  if rss>384*1048576:raise RuntimeError('memory cap')
+  result.update(input_sha256=inputs,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),elapsed_seconds=time.monotonic()-start,peak_rss_bytes=rss,actual_current_surface_status='conditional-support')
++ (root/'outputs/native_weak_electric_joint_defect_bounds_2026_09_09.json').write_text(json.dumps(result,indent=2)+'\n')
+  print(json.dumps(result,indent=2))
++ if not args.json:
++  print(f"TOTAL: PASS={result['total_checks']} FAIL=0")
++  print('per_element: exact local geometry and electric-pair face flips are checked on L4 and L6 tori.')
++  print('per_site: every finite test face has its complete incident electric-pair count checked.')
++  print('per_mode: no active-mode spectrum is computed; small commuting-projector selections are exact.')
++  print('per_block: integer stopping thresholds and finite recursion controls use exact rational arithmetic.')
++  print('lattice_wide: general joint bounds are analytical; no perturbed ground state or thermal sample is computed.')
+ if __name__=='__main__':main()
+--- original/scripts/native_weak_electric_joint_defect_controls_2026_09_09.py
++++ author/scripts/native_weak_electric_joint_defect_controls_2026_09_09.py
+@@ -1,3 +1,5 @@
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md',)
+ """Finite exact controls of the separate analytical proof; standard library only."""
+ from fractions import Fraction as F
+ from itertools import product,combinations

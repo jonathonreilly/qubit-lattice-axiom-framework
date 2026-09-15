@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Independent symbolic noncommuting projected eigen-equation; seam incidence; exact removal depth and optimized Young identity. No perturbed native ground-state solve.",
+  "symbolic_eigenvector_and_projected_equation": true,
+  "noncommuting": true,
+  "seam_faces": [
+    {
+      "L": 4,
+      "counts": {
+        "perpendicular": 24,
+        "opposite": 8
+      }
+    },
+    {
+      "L": 6,
+      "counts": {
+        "perpendicular": 24,
+        "opposite": 8
+      }
+    }
+  ],
+  "depth_max": 99,
+  "young_theta": [
+    "1/4",
+    "1/2",
+    "3/4"
+  ],
+  "seconds": 0.08608379098586738
+}

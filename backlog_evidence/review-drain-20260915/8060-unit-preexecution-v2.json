@@ -1,0 +1,452 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8060",
+  "constituents": [
+    {
+      "id": "PR8060",
+      "head": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+      "delta_base": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/review-8060-provisional.json",
+        "sha256": "cebbb8f8a92838041249fa921c6e3e85776105285935416c2b82f1b9099ba388",
+        "json_pointer": "/constituent_dispositions/8060"
+      }
+    }
+  ],
+  "source": {
+    "base": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+    "commit": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+    "tree": "9171b3b2f1ec41e21d1b670cb400eb19a09e89c9",
+    "paths": [
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+        "sha256": "406bfa231b5db01b910aadb9043945400176d65549041b1f93325702e6e6f7c8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/README.md",
+        "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/0f85440aa05b1e3e6f92dce582d4028c981b6f20206a16b58c4fb5020f6eb187.gz",
+        "sha256": "18a1c6ab8ec7934bd8f7ca3b8762851575c6f7634b6a2855586ef30bd1bc135d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/106db8109fc5e9a2f33cd26f47b642823b0725fa7d954335ddf6a7f89cbcad96.gz",
+        "sha256": "a1a1ae0e7d4f82da38e7710cd27eafdab6b3ae08997df1f4833720c60a67205c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/14c4fe4d748c2bd332d2396e7beb3f148fa1661233f72b571e82c6b1f8691501.gz",
+        "sha256": "313b12865f7668b391d93aa8a57574fc1254059b46381a4e307ce4da406cfade"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/179fcba98e7ed0edbabb984adc5f56d4a87ea4e1096d6fd64f9c0009ba697964.gz",
+        "sha256": "0c3c9455957b22765842b4c18ac8cd76c69613685fb5e3a6f83fa230bab56bdb"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/18ae1ae4f64f956bd9b625efa73d516f2173bd3bd62676f2b0af8823b05f9db7.gz",
+        "sha256": "1e36f7da6de591d9d8b404a4f22bce62a97752f566620c97d9b147822baabd1b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/2212ee4eac1d00f1508ea2fac6bc1cc12d985123971303ee99a92d302cb58f16.gz",
+        "sha256": "262007c13fdc2fe6d6158a4829e59030b6d328001039a44f47f099a374d1398c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/236d560a69499086d91e0eec5f608c0e5caf186ce9685e7b088e4dc850967e96.gz",
+        "sha256": "ba7034651ceb4b297c0ba09a0ac4bcc308747171de9d4adcb57154929aaa4f9b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/2544f1f603040226b974f7d60a27663566d4cebce7e76c6865b6cf15920633c6.gz",
+        "sha256": "743a088f79575864f70862c4ee32dee0836cef9e5871bac6a712ee08118f3bd5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/2702226a5e675315be3de12e63198311ccdabc28f109b9dbe1cffc06470105a5.gz",
+        "sha256": "67d98589fbb968d04a376d59e8180e5a927c95375bfb4d400aa0a3fc0f5ecdd3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/2ba2d0500b956105d7fef57cebedf74d36872b08d00f851a536c1896ca69f3ea.gz",
+        "sha256": "5f58966d18de9e898941c1dd91c17c8972459d615291d376a4c922a9428f3339"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/31a94d757a43ba76333a0d3b31b255590c3af82b5ff2d8c6869ce27272fa4ad1.gz",
+        "sha256": "7774df690911ac2a1628edfc8ac5c44640e46fc5e439a477b0c473378d348e7a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/3d3474a42577fbf7ae4b4ffef754e454d9366789bd0f19671c457bbe508ff4c9.gz",
+        "sha256": "04437c17db4ba70557ab63b063cdc5144b882cd195a7ad158de73f97b71198ab"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/470857554de8459c19d91558aa7b8fa5a842b9a818451e7dda5b00717a6ab98e.gz",
+        "sha256": "221d5cd0f0f2706d9c8ec95b0e67e0f43dce5e229723a4090513cac618c24a72"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/4d3d3b3b3f513ae22e7f294924fb8a034e0183333145ea49bbc41d5893511044.gz",
+        "sha256": "1829806f5e027a2ab51c5876925f54960c9fbb2a06ee2bda137d5c74cf3bf589"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/5260e89bdea0af9fa2cd08668d43c07c36427168f7a8d45c4ce542c58f0be79c.gz",
+        "sha256": "0fedc699c881b852c50506af17571516789d69b09614dcd90b69256518d89a6a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/53c700d3b726a1a8c7b6faabf49a56de7fa7074ae249ae595d82eadf589f3d3b.gz",
+        "sha256": "9c2427d5baa773d362fdc9ac1f8db150f1a89822818b81888f578735ce1259aa"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/5a2ebc4994f31aaafa7aad65b89b903c227264f1427f0c6fe4a54afb9a1d8d70.gz",
+        "sha256": "8e977dab2be04573d8b9ae985a4c6e7b27246117b30c3591c483f259fbf063e6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/619b22d62cdc8161da6c81f25e126957ccb36e9832566292626e6092068786d0.gz",
+        "sha256": "968cf057af1cb8469b6db3608adee53dc53e6c3238291275039264ef3b4fbb77"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/64cbc8bb40d58abf26a3332b1fe5cb89c64feee9b32cdee89e80a07d27827a1f.gz",
+        "sha256": "1b097d016f1e17e7f21a0b6b971460d5923d81d0b137044c8023dee54c4ce98b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/6819ddea6903661b7b8b2a10917286120dbc741de96e9a2546cb30bbdaacfc4b.gz",
+        "sha256": "e6c899c2853a945792460aa3b2a10fcc07106af480f74abe69f652d8cb86b981"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/6b16f6984f3378c913964f88c785f7977379c9bcaaee851ec33a22ddc73ff46c.gz",
+        "sha256": "541c2ad33b0aca673b12d18ea2656d3f8ebecf68adc02762a3106f8abbd03fd3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/6c1131e5efbffb418d1fca7a6d4e028be4163f7c31b44c5c6031b051bcaec5c4.gz",
+        "sha256": "3a6757e3e29c0491d97ae3065b2877df50d57ce8b60810b02a853e30a219e448"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/6ce34f6e0be5b4f30c8b191113a170b9b2f866b9ee45c90afe6f4fe786d8e4df.gz",
+        "sha256": "7a1a10c3f5367a6dccd1140c8e58cd17cd2529273cea212d0c1ca6698391b29a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/700090c2c70556c2a36456a2fa8af5af99a48d8205dda77062c91d05805dc318.gz",
+        "sha256": "a1102f4c45f21456b2ad211485469cf982b3a9a3d402c5b7477539ef2fa09d9a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/76191a9bd5c11cafd89026246cb164f843325a82db116a36dd9d84763688635c.gz",
+        "sha256": "9435378ca55723e08ce91d84d49c43efbc1ec19de617c92e980d7a6380c3b5fd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/84a306211e0d58a080ddc9cdbf7dc2b8a769a22bccfb1d853021b28e5eee7f8a.gz",
+        "sha256": "36fcb1f8f3f61ec64f3c1f44be35a6ebb413cb9941dc62d63368c00c5871c8d9"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/8811592bd411abfc82ec3cb168fbfded401bb143de88099968c3b08d4faa848a.gz",
+        "sha256": "8b3b27f193f45401df685443c64dd27303e85d814cebf98ba86e444db42c01ca"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/8df4a1a16561cf9dd0e2ce1156c2d695c25a3944b7a38f074b18df15201282fc.gz",
+        "sha256": "a21ee728efb3e45f4a95ad0ff0b4c6e967f503ab6c90c6ff489335202bffc445"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/96939bb7b3f9a2f8d8101ff173788e7d9e063d489c33b2f1faa66914b7d827c7.gz",
+        "sha256": "b1b1688730dadff2b01c60149d6477ac56ebdb5ea87e9ad53691bd88da1ff6e1"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/9bfd1f52149a3a57b146bb177f876cdd48808ad48bda48e4d051a00a141936eb.gz",
+        "sha256": "09dc5dcb73d27957759931652b48a8e7c39f94d5a59b0ae4f86b4ac0ab376f95"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/9e018d38e7218a7c880dc905ca1963b1cfd53a93f3010d31af2b01c55b0b3c10.gz",
+        "sha256": "479af079038d50b8a48eaf064e65f2837525748fb66a17f43b8f00cd833246a8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/a756c46f0ab76b97688d476773cee8c9bfce72644712a3c6e3f0d7682ce79e11.gz",
+        "sha256": "2c07073f46ad7bb5719e25205c8f9757b6d59b6fe43ba3e424ce6457e0b44ca6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/aaaedc8cbd64cc467d6d1ad1d6013e67a793588f77544794724e88c9fa6d2e6a.gz",
+        "sha256": "0a0fa742af2795a4ac18a26eec90b36496116045986390908bcd8659990d6ed8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/ab3cd205a638516b55f48e95c10a1e132f97d4b7af023789843e275c15b09449.gz",
+        "sha256": "b8fa5fb6eaca9b0a55338ca9aac28d94a77673eba4d911ee8d1b29be9edc5910"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/ae9718ef29ea8fbaddf96d7a5626bb9363254914df0388951dde0105c48d28ed.gz",
+        "sha256": "8798e11b72d7b86d8a98fe5397bf8f050daf8a96f942ec3bc5b8a1f5251e4276"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/bee41c13c347ff331431095cd3c79625e409f9230c8cdaebf28f46e7b5b9c3fd.gz",
+        "sha256": "e72e9db8a78b54995d67f6db02552a205306419475f5da72aecdf69e3730858c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/bff91253300ee11a153d19630879b23484ae96a802a9d5cb9967ba065a42d307.gz",
+        "sha256": "141daa6b6a004b1f647c416e0152c1ba1851dc01d5e1e90b62027396636d94fa"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/c9c8a27ef050e7e13e7738458d035a797372cbf36350ec647ac82489eda9f0ca.gz",
+        "sha256": "4ca2c99cee21c05ad5293831afd369b2fde32da96517f318bd79c369b0b81a0b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/cea59d3b9b63ed13c567f68baa3852332f09700513549f57166a837c222e20d8.gz",
+        "sha256": "3d9063f749b78b6b45a00720cb1f88ea5ed7d6384b954b7ff0bdc25db8b7f884"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/cf2e3f71b7f459635a121de0040651143a79a96c8cce39c1caccd0941648f86c.gz",
+        "sha256": "e207e5e33ae8c9c7da7a32bf3fa281bbe00b01f56707d9c32339d6704da1b407"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/d66f7ae7f2dca0bc49df414e52002fc748e8c017dd88721fe2df0f1d630a807f.gz",
+        "sha256": "6fdd8ce18e55d50174bc43e811834dbd5ab427294f3f1070dd29856f0e36fac5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/daf8c28282427ffd7def6c61a065feb169384631386d4cc5f4e2f197a78a0375.gz",
+        "sha256": "feadfe02307f81a391e0045a675f34898f6d5c5c2462783358edd5c84eceec28"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/db98773af3f389bac118be1e7a1b0c134716bcffe40d3fcb3a7f0ab893d27079.gz",
+        "sha256": "eadebf73fefbf41689fa0b7cd4ad80633bbde577231da3ee7e8dab1f1d9ec9dd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/dcabfc2a8e0aa79da2b08fb0e057abf2f47a57941b8b7288727b921a7852a23f.gz",
+        "sha256": "22b098f2a0dfa930e4c9e8d9b378315f15a45515ef28a38c5797c6abbaf30098"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/e79651344b4e3d21a78264d0c7a5513d9f3491198aa792a15b7fecf983ea32e7.gz",
+        "sha256": "5a09cfdfc298dde01d40125443695f185b59fab7a0ca5bf9a1dbb42d37f7a135"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/e85ff957dc00b0ef7363e59cfdaa420f19450a5beda066ee5bf1e6d8c5ac529a.gz",
+        "sha256": "e20154e7722aecd6904f5f8b582b528452356eaa4eef520243e70e7ad7eda257"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/_objects/ff8ed36cc76c6862b928cb128446ba81440e51e87edafc5b151c45ceb61ef0d9.gz",
+        "sha256": "7e99392ff567649ce2ca8d3de920ed4e1ecee3219f186eb0511eacf1bec523dc"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/archive-manifest.json",
+        "sha256": "e222fc26f286a13d51badbbac4375fab6667098319bcdbe46e437aae3a2cecdb"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/kept/pr8060-HANDOFF-9ef67db77ea9ef6f.md",
+        "sha256": "785fc71bc724b5d04102c48b10486e04b0bca8806cb126a35693c7f3044a64dc"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/kept/pr8060-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "sha256": "ddbec454cbb5cd5d857523fa7580ae83dd86074fa70375dedf00ab96ef835f8e"
+      },
+      {
+        "path": "outputs/native_weak_electric_joint_defect_bounds_2026_09_09.json",
+        "sha256": "18ae1ae4f64f956bd9b625efa73d516f2173bd3bd62676f2b0af8823b05f9db7"
+      },
+      {
+        "path": "scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py",
+        "sha256": "66b39154ccde4148ab9e17f01bc7500d9e53db0a3d44515b1bcfb138ab7b0b2a"
+      },
+      {
+        "path": "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py",
+        "sha256": "ce52c1c717e3e56257b20ab1a7339fddf55b66b8a0c705e434e2b3819d35c47e"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+        "sha256": "7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+        "sha256": "406bfa231b5db01b910aadb9043945400176d65549041b1f93325702e6e6f7c8"
+      },
+      {
+        "path": "scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py",
+        "sha256": "66b39154ccde4148ab9e17f01bc7500d9e53db0a3d44515b1bcfb138ab7b0b2a"
+      },
+      {
+        "path": "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py",
+        "sha256": "ce52c1c717e3e56257b20ab1a7339fddf55b66b8a0c705e434e2b3819d35c47e"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py",
+        "sha256": "ce52c1c717e3e56257b20ab1a7339fddf55b66b8a0c705e434e2b3819d35c47e"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+        "sha256": "7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8060-evidence/README.md",
+        "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8012",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/review-8060-provisional.json",
+      "sha256": "cebbb8f8a92838041249fa921c6e3e85776105285935416c2b82f1b9099ba388"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/check8060/control.py",
+        "sha256": "6e845e75e28a9ba6ca4485219c4c60fea6eddff1e06501509e545116938d98fa"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8060/control.json",
+        "sha256": "7d48c25d82d8bf212ca40c3e8a1847198fa11b5a7ac2d69cf050204fe7328092"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8060/read-map.json",
+        "sha256": "f21e440d45c5d36500fa0dc413e89a6115dc5409cb0349dfd40ebbe24a583e9c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8060/live-freeze.json",
+        "sha256": "ad2a9128ed37666474b291d7155cf1585888a328c84261e5df507be6ecab96e2"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8060/context-reuse.json",
+        "sha256": "3566b046ef98944ff2da1f7775ec432aafa992a80a2b45817c1eee2dc0b767da"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8060-author-archive-receipt.json",
+        "sha256": "e222fc26f286a13d51badbbac4375fab6667098319bcdbe46e437aae3a2cecdb"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8060-author-capture.py",
+        "sha256": "56fd5435f9e26d0f5723afc73ab965045b54a65b5d3753617f38bcb0f88952eb"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+      "claim_id": "native_weak_electric_joint_defect_bounds_note_2026-09-09",
+      "declared_claim_id": "native_weak_electric_joint_defect_bounds_note_2026-09-09",
+      "claim_type": null,
+      "primary_runner": "scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py",
+      "helpers": [
+        "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8060-evidence/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md"
+      ],
+      "dependency_rationale": "Current8057 supplies actual statewise electric75 bound and trial energy;8056 supplies conditional stiffness with explicit numerical domain; dictionary supplies full carrier and electric algebra. Projection/inverse norms, Young and Euler union bounds are elementary external mathematics derived in the note, distinct from framework premises. Historical reviews are not authority."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8060-evidence/README.md",
+      "rationale": "Historical source/review/provenance or recovery README only; full canonical proof is present in owner note, no new autonomous current claim adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8060-provisional.json",
+        "sha256": "cebbb8f8a92838041249fa921c6e3e85776105285935416c2b82f1b9099ba388"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8060-evidence/kept/pr8060-HANDOFF-9ef67db77ea9ef6f.md",
+      "rationale": "Historical source/review/provenance or recovery README only; full canonical proof is present in owner note, no new autonomous current claim adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8060-provisional.json",
+        "sha256": "cebbb8f8a92838041249fa921c6e3e85776105285935416c2b82f1b9099ba388"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8060-evidence/kept/pr8060-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "rationale": "Historical source/review/provenance or recovery README only; full canonical proof is present in owner note, no new autonomous current claim adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8060-provisional.json",
+        "sha256": "cebbb8f8a92838041249fa921c6e3e85776105285935416c2b82f1b9099ba388"
+      }
+    }
+  ]
+}

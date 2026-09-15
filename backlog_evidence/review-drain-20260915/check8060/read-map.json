@@ -1,0 +1,277 @@
+[
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ARTIFACT_PLAN.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/GOAL.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/HANDOFF.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/LITERATURE_BRIDGES.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/NO_GO_LEDGER.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stdout",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATION.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/MARKUP_DELTA.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/MUTATIONS.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/extra_cli.stderr",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/omit_eighth_face.stderr",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/omit_eighth_face.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/unknown_cli.stderr",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/wrong_integer_threshold.stderr",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/wrong_integer_threshold.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/wrong_periodic_seam.stderr",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/wrong_periodic_seam.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PR_BACKLOG.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/REVIEW_HISTORY.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROOT_RECORDS/FINAL_CONFIRMATION.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROOT_RECORDS/GRAPH_DELTA.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROOT_RECORDS/REVIEW.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROOT_RECORDS/ROOT_ACCEPTANCE.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROOT_RECORDS/STDERR.txt",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROOT_RECORDS/STDOUT.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/ROUTE_PORTFOLIO.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/SOURCE_FREEZE.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/STATE.yaml",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/TRACE_GATE.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/evidence/CANONICAL.json",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stdout"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_DOMAIN_6b16/ISOLATED.stdout",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_DOMAIN_6b16/ISOLATION.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_DOMAIN_6b16/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_DOMAIN_6b16/SOURCE_FREEZE.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/OUTPUT.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/ISOLATED.stderr",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/ISOLATED.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/OUTPUT.json"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/ISOLATION.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/MUTATIONS.json",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/MUTATIONS.json"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/extra_cli.stderr",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/extra_cli.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/omit_eighth_face.stderr",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/omit_eighth_face.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/omit_eighth_face.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/unknown_cli.stderr",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/unknown_cli.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/wrong_integer_threshold.stderr",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/wrong_integer_threshold.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/wrong_integer_threshold.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/wrong_periodic_seam.stderr",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/wrong_periodic_seam.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/PORT_RECORDS/wrong_periodic_seam.stdout",
+    "read": "exact identity reuse",
+    "same_as": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/BEFORE_MARKUP_2212/SOURCE_FREEZE.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/FREEZE.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/RESULT.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/REVIEW.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/check.py",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/macroscopic_delta/FREEZE.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/macroscopic_delta/RESULT.json",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/macroscopic_delta/REVIEW.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/independent_review/macroscopic_delta/check.py",
+    "read": "complete unique content read"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/original_derivation/DERIVATION.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/original_derivation/DERIVATION_BEFORE_FINITE_VOLUME_5260.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/original_derivation/DERIVATION_BEFORE_MACROSCOPIC_64cbc.md",
+    "read": "all unique paragraphs read; identical canonical/earlier paragraphs reused"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-weak-electric-joint-defect-bounds-20260909/history/original_derivation/HASHES.json",
+    "read": "complete unique content read"
+  }
+]

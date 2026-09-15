@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8060",
+  "tree": "a705ff267a6f1640b81129046a89f4525306c377",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+      "claim_id": "native_weak_electric_joint_defect_bounds_note_2026-09-09",
+      "primary_runner": "scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py",
+      "helpers": [
+        "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_weak_electric_joint_defect_controls_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8060-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8750,
+      "misses": 4377
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4375
+    },
+    "declared_inputs": {
+      "hits": 8776,
+      "misses": 4508
+    }
+  },
+  "record_sha256": "cf48f251a54ee147da76399f02d21afc3ea8bd6cdceed067a0affde3ad5fc6a6",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

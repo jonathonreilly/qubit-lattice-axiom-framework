@@ -1,0 +1,8 @@
+{
+  "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+  "actual_type": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "actual_runner": "scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py"
+}

@@ -1,0 +1,7 @@
+{
+  "cause": "32-angle azimuthal quadrature insufficient for the anisotropic cap boundary fixture",
+  "repair": "192 radial by128 angular versus256 by256; unchanged 1e-10 convergence tolerance",
+  "old_max_difference": 2.177412715311921e-08,
+  "new_max_difference": 2.583209254142238e-14,
+  "additional_analytic_control": "exact boundary coefficient 7/(12pi) derived from cap rescaling and semicircle moments"
+}

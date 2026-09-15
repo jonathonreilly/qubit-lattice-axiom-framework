@@ -190,3 +190,25 @@ ODEs and direct constitutive history agree. Prior quadratic polarization
 is unchanged. This is still a formal supplied phase with no uniform
 higher-order remainder. The next useful check is on-shell decay: real
 velocity running alone does not establish particle stability.
+
+
+## Block14 — decay channels and the angular-boundary correction
+
+For the supplied canonical continuum action, convexity separates the exact
+Cherenkov group-speed threshold from the photon phase-speed threshold.
+The general coframe has an angular-cap fermion integral and an explicit
+positive two-polarization photon-decay matrix. Exact isotropic number rate
+and radiated power have different coefficients and agree with the matched
+leading massless literature limits. Four Weyl nodes contribute without a
+chirality cancellation: at generic direction, the formal running quartet
+has relative widths proportional to1/z². This is not a pole-residue result.
+
+The zero-linear-contrast shear direction still emits: cap rescaling and
+semicircle moments give Gamma/E=7e²d²/(12pi)+o(e²d²). This diagnostic uses
+the fixed coframe; the actual quartet's boundary additionally needs its
+second-order photon metric and polarization. Two checker failures are
+preserved: soft-momentum cancellation and insufficient boundary azimuthal
+resolution. Symmetric momentum geometry and refined quadrature retain the
+original tolerances; an independent algebraic boundary integral was added.
+The maximum photon tensor discrepancy is4.4e-18 and boundary refinement
+difference2.6e-14. All verification is personal, not independent audit.

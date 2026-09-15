@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.py", line 98, in <module>
+    analytic=photon_tensor(V,k);numeric=photon_phase_space(V,k,64,8);refined=photon_phase_space(V,k,128,12)
+                                        ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.py", line 89, in photon_phase_space
+    require(abs(np.linalg.norm(m)-1)<2e-12,'photon final rescaled spin directions satisfy energy constraint')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.py", line 11, in require
+    if not ok:raise AssertionError(label)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: photon final rescaled spin directions satisfy energy constraint

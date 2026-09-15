@@ -384,3 +384,15 @@ lattices are listed as further work. No theorem is imported. Mastropietro
 its interaction is exponentially decaying density-density, not a massless
 photon. Remaining pages are not yet read. Vacuum Cherenkov/photon-decay
 primary sources0809.3217 and0809.3442 located; abstracts only so far.
+
+Block14: Klinkhamer-Schreck arXiv0809.3217v5 sections I–III through the
+opening of page7 and AppendixA pages11–12 read in full for these ranges.
+https://arxiv.org/pdf/0809.3217 . Its leading massless decay and power
+coefficients are matched; no empirical bound or all-deformation charge
+identification is imported. Hohensee et al.0809.3442 AppendixB ending
+B8–B9 excerpt read only, not the paper.
+Next-route refresh found that the positive Ward scalar, its spectral
+dominance and low-energy operator already have September13 sources.
+The positive-scalar source has now been fully read in separate chunks;
+the sign must not be represented as still open or as new work here.
+The older infinite-node note was reread fully.

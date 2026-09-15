@@ -50,3 +50,9 @@ above E_pol on the specified nonzero diagonal momentum line, J>0.
 Generic momentum, theta0, J0 and other backgrounds are not excluded;
 the symmetric source even has a theta=pi atom. Broad no-particle/no-axiom
 conclusion FAIL. See notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md.
+
+Block14: unequal cones permit specified leading-order decay channels;
+coincident cones, forbidden directions and zero coupling escape them.
+Vanishing relative width does not establish a pole. No microscopic-phase
+or universal-particle impossibility, and no axiom update, is inferred.
+See notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md.

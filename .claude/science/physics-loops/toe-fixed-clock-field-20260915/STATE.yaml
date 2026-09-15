@@ -9,10 +9,11 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 14
-current_target: on-shell Cherenkov and photon-decay diagnostics for the quartet contrast
+block: 15
+current_target: refresh full native star low-energy operator and choose the next analytic
+  bridge
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T22:02:10.393441+00:00'
-next_step: derive Weyl rates with canonical normalization and exact anisotropic photon
-  tensor
+last_checkpoint_utc: '2026-09-15T22:23:42.619325+00:00'
+next_step: read September13 spectral/operator sources fully before selecting a nonduplicated
+  target

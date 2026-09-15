@@ -1,6 +1,6 @@
 {
- "edge_count": 13358,
- "node_count": 5786,
+ "edge_count": 13372,
+ "node_count": 5803,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13114,6 +13114,14 @@
    "deps_hash": "a6224d3271b4",
    "out_degree": 3
   },
+  "native_l6_nonlinear_star_vertex_note_2026-09-09": {
+   "deps_hash": "1cd58b38a11f",
+   "out_degree": 10
+  },
+  "native_l6_sixth_prefix_gap_certificate_note_2026-09-08": {
+   "deps_hash": "a85a95ba0bcd",
+   "out_degree": 4
+  },
   "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13": {
    "deps_hash": "97e3c6b16435",
    "out_degree": 3
@@ -21791,6 +21799,66 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8058-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8059-evidence.kept.pr8059-handoff-892f3fded3737f56": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8059-evidence.kept.pr8059-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8059-evidence.kept.pr8059-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8059-evidence.kept.pr8059-review_history-fb1eed2147b3389e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8059-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-evidence.kept.pr8061-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-evidence.kept.pr8061-handoff-cfff3e220eafd110": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-evidence.kept.pr8061-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-proof-sources.kept.pr8061-proof-adapted_frame-4eb81c02792f3306": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-proof-sources.kept.pr8061-proof-four_solve-eff578cafd7f48f7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-proof-sources.kept.pr8061-proof-projection-e801411de605cecc": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-proof-sources.kept.pr8061-proof-real_error-57d49d5cf78c0e3e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-proof-sources.kept.pr8061-proof-real_sign-c2692f5746303191": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8061-proof-sources.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

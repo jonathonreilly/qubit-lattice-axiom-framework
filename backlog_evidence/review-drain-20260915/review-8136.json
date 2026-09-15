@@ -1,0 +1,259 @@
+{
+  "unit": "PR8136",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
+  "original_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "confirmation_base": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8136",
+  "final_tree": "5792eb4fb51edf02c3bbb7936dc8965a8585cabb",
+  "source_sha256": {
+    "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/BLOCK24_MUTATION_CHECKS.json": "a368f65ef3c533fb11908be6ed3a57d864a7494175a712136c7f2b8b495c6d39",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/FOCUSED_EVIDENCE_CHECKS.json": "df710d1ea4ac2fcc6caa53de57c5be1d92b06e241ed5d65530410a2c43fa27bc",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/INITIAL_MUTATION_COVERAGE.json": "070abcfed3b48876faf8ecb84c9c59d3207b41ba215dcb4b5d676395705a8839",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/README.md": "528ce7b28374c98277a7b3520120d730bfa10da815ddd987f3a66dc472a95e36",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/SOURCE_DISPOSITION.json": "d66c2feb06102b0dbf999757c10b843004ecf2e066ee0308c6f4b1b0f1ef217d",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/STATE.yaml": "5dc7e03da67d0b1dda982e96a885a091103dd6e9da3447e74a148434f8fb6da8",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLAIM_STATUS_CERTIFICATE.md": "3d15315bf80966557051fe237e5a9cc3f61ebd42febe7841e6a482b24db5c4a5",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLUSTER_CAP_EVALUATION.md": "a727a886f9c2a6632b84225de337ca3cbbba5146e2fdfbb366bfa7a1139f7bae",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-GOAL.md": "1d3bd229f54155f62ad915d1bc6bb0bad72a4330c66b31687637113215f9a76b",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-HANDOFF.md": "034111892b7ff18b12140355c9af2b40d1f64f0d3bd495842f5471071a06c8ab",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-NOVELTY_AND_SEARCH.md": "51293eae79ba68093e87e1978bd3bc227e48962d64533c303c6cc16eb7d33413",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-REVIEW_HISTORY.md": "71ae7e9be8dbee36a3d19085fed430e542a95ca6a0318eb90040be6018c7f723",
+    "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-TRACE_GATE.md": "8c9b58210b7230063c9c516a29f90874fb47f29ec931f8bc79042ee224f47f21",
+    "logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt": "41b4acfe9bf3bb2f5899c376c5bd9e806d33acf573d9afd414b654705169f3dd",
+    "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717"
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/BLOCK24_MUTATION_CHECKS.json",
+      "original_sha256": "a368f65ef3c533fb11908be6ed3a57d864a7494175a712136c7f2b8b495c6d39",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/BLOCK24_MUTATION_CHECKS.json",
+      "final_sha256": "a368f65ef3c533fb11908be6ed3a57d864a7494175a712136c7f2b8b495c6d39",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/BLOCK24_MUTATION_CHECKS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "3d15315bf80966557051fe237e5a9cc3f61ebd42febe7841e6a482b24db5c4a5",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "3d15315bf80966557051fe237e5a9cc3f61ebd42febe7841e6a482b24db5c4a5",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/CLUSTER_CAP_EVALUATION.md",
+      "original_sha256": "a727a886f9c2a6632b84225de337ca3cbbba5146e2fdfbb366bfa7a1139f7bae",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLUSTER_CAP_EVALUATION.md",
+      "final_sha256": "a727a886f9c2a6632b84225de337ca3cbbba5146e2fdfbb366bfa7a1139f7bae",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/CLUSTER_CAP_EVALUATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+      "original_sha256": "df710d1ea4ac2fcc6caa53de57c5be1d92b06e241ed5d65530410a2c43fa27bc",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+      "final_sha256": "df710d1ea4ac2fcc6caa53de57c5be1d92b06e241ed5d65530410a2c43fa27bc",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/FOCUSED_EVIDENCE_CHECKS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/GOAL.md",
+      "original_sha256": "1d3bd229f54155f62ad915d1bc6bb0bad72a4330c66b31687637113215f9a76b",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-GOAL.md",
+      "final_sha256": "1d3bd229f54155f62ad915d1bc6bb0bad72a4330c66b31687637113215f9a76b",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/GOAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/HANDOFF.md",
+      "original_sha256": "034111892b7ff18b12140355c9af2b40d1f64f0d3bd495842f5471071a06c8ab",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-HANDOFF.md",
+      "final_sha256": "034111892b7ff18b12140355c9af2b40d1f64f0d3bd495842f5471071a06c8ab",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/INITIAL_MUTATION_COVERAGE.json",
+      "original_sha256": "070abcfed3b48876faf8ecb84c9c59d3207b41ba215dcb4b5d676395705a8839",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/INITIAL_MUTATION_COVERAGE.json",
+      "final_sha256": "070abcfed3b48876faf8ecb84c9c59d3207b41ba215dcb4b5d676395705a8839",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/INITIAL_MUTATION_COVERAGE.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/NOVELTY_AND_SEARCH.md",
+      "original_sha256": "51293eae79ba68093e87e1978bd3bc227e48962d64533c303c6cc16eb7d33413",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-NOVELTY_AND_SEARCH.md",
+      "final_sha256": "51293eae79ba68093e87e1978bd3bc227e48962d64533c303c6cc16eb7d33413",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/NOVELTY_AND_SEARCH.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/REVIEW_HISTORY.md",
+      "original_sha256": "71ae7e9be8dbee36a3d19085fed430e542a95ca6a0318eb90040be6018c7f723",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-REVIEW_HISTORY.md",
+      "final_sha256": "71ae7e9be8dbee36a3d19085fed430e542a95ca6a0318eb90040be6018c7f723",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/SOURCE_DISPOSITION.json",
+      "original_sha256": "d66c2feb06102b0dbf999757c10b843004ecf2e066ee0308c6f4b1b0f1ef217d",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/SOURCE_DISPOSITION.json",
+      "final_sha256": "d66c2feb06102b0dbf999757c10b843004ecf2e066ee0308c6f4b1b0f1ef217d",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/SOURCE_DISPOSITION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/STATE.yaml",
+      "original_sha256": "5dc7e03da67d0b1dda982e96a885a091103dd6e9da3447e74a148434f8fb6da8",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/STATE.yaml",
+      "final_sha256": "5dc7e03da67d0b1dda982e96a885a091103dd6e9da3447e74a148434f8fb6da8",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/TRACE_GATE.md",
+      "original_sha256": "8c9b58210b7230063c9c516a29f90874fb47f29ec931f8bc79042ee224f47f21",
+      "original_git_status": "A",
+      "disposition": "accepted byte-exact historical evidence, no current reviewer or audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-TRACE_GATE.md",
+      "final_sha256": "8c9b58210b7230063c9c516a29f90874fb47f29ec931f8bc79042ee224f47f21",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:.claude/science/physics-loops/clock-smoothing-20260915/TRACE_GATE.md"
+    },
+    {
+      "original_path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "77db957017232dd439d501c7c21e7d0ed14f3c5f4ea145edbbf6751420156df5",
+      "original_git_status": "A",
+      "disposition": "accepted unchanged science; historical packet link appended",
+      "final_path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "final_sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "ec8b3b888b522fc1f8fb59659a874ed81c3c9f0f961b5b5690a978e2ab4a2e35",
+      "original_git_status": "M",
+      "disposition": "superseded generated manifest: one new zero-dependency node, combined regeneration by coordinator",
+      "final_path": null,
+      "final_sha256": null,
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt",
+      "original_sha256": "b350a0f21a7a821fa7ca2f10f122be69c2c40083f8f65ef5344b1e2ba3f29374",
+      "original_git_status": "A",
+      "disposition": "superseded by single fresh canonical bounded execution; original receipt retained in frozen head",
+      "final_path": "logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt",
+      "final_sha256": "41b4acfe9bf3bb2f5899c376c5bd9e806d33acf573d9afd414b654705169f3dd",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt"
+    },
+    {
+      "original_path": "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+      "original_sha256": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717",
+      "original_git_status": "A",
+      "disposition": "accepted unchanged",
+      "final_path": "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+      "final_sha256": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717",
+      "recovery": "8a5ace1afc3b41999e2296d0067a325294fb2c6e:scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "repository_claim_dependencies": [],
+  "runtime_scientific_inputs": [],
+  "tooling_inputs": [
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab"
+    }
+  ],
+  "dependency_scope": "Self-contained supplied finite-clock Villain model. No repository scientific theorem or runtime data imported. Earlier campaign results are historical comparisons only. Hard-core cluster expansion is an explicit external mathematical import; Gaussian/Poisson and finite-dimensional stochastic analysis are standard methods, not repository premises.",
+  "external_methods": [
+    {
+      "url": "https://arxiv.org/pdf/1002.3261",
+      "scope": "Bissacot-Fernandez-Procacci2010 sections2-3; actual cluster definitions, rooted-series bounds, KP criterion and site addition inspected. Setting mu_gamma=rho_gamma exp(m_gamma) satisfies their convergence bound; current-specific counting and marked real derivatives independently checked. No phase theorem imported.",
+      "local_pdf_sha256": "9297f72d58efb5b450466493fc4247ae93f6307df2feab635196202795769d58"
+    },
+    "Gaussian completion and Poisson lattice theta maximum",
+    "Integer cubical chain homotopy",
+    "Contractive finite-dimensional stationary Langevin response and weighted tensor contractions",
+    "Negative Sobolev compact embedding and dominated-convergence coupling"
+  ],
+  "coverage": [
+    "Complete original16-path cumulative delta including12 historical files and generated manifest",
+    "Exact unfolded normalized Haar/image density, determinant factor, bundle inverse and integer magnetic charge preservation",
+    "Gauge projection to conserved currents; finite-box integer fillings and signed cubic averaging; physical/off-carrier distinction",
+    "Massive weighted Schur bounds, Gaussian covariance split and positivity induction",
+    "Connected polymer count, tree majorant hypotheses, marked order1-3 summation with explicit constants",
+    "Stationary stochastic response including second response, all-root weighted tensor norms and uniform real C3 bounds",
+    "Convex extension only on an induced magnetic carrier; no unconstrained all-tilt covariance inference",
+    "Centered full-rank lattice Gaussian MGF, coupled resolvent error and local H^-s tightness for s>2",
+    "N1-N8 finite inference-control boundaries and honest N5 output; no physical phase or native-law selection",
+    "Same-session root archive correction exactbytes, uniqueMarkdown naming and local links"
+  ],
+  "findings": [
+    {
+      "id": "historical-recovery",
+      "status": "fixed and independently confirmed",
+      "detail": "Root preserved all12 original packet files byte-exact with README map and historical canonical link; science unchanged."
+    }
+  ],
+  "historical_evidence_boundary": "Final16 mutant source hashes reconstructed exactly from original/replacement records and frozen runner. Historical failures/tracebacks are author receipts, not new reviewer executions. Initial15-fault packet includes surviving orientation fault and remains preserved; final runner exercises three sweep orders. No historical failure erased.",
+  "independent_control": {
+    "path": "/private/tmp/review-drain-20260915/check8136/independent.json",
+    "sha256": "f9afc17789b2996df55592a743c6f2a09f26a4cf41fda9f01c7e20dd9038a2e1",
+    "script_sha256": "b0bd0e274136bafddb8e4e863643375e9e1d1c5d0ce99bfd6da6b33f032cacc1",
+    "detail": "Independent rational two-face completion/determinant/error identity; closed Gaussian integral third response with nonzero second response;15 signed-support counts; marked majorant constants and all-mass analytic inequality."
+  },
+  "final_execution": {
+    "path": "/private/tmp/review-drain-20260915/check8136/primary-execution.json",
+    "sha256": "a4815c485547bc167808065fdc169849f1436b85bf9f374d271b0ee3654df22b",
+    "elapsed_sec": 0.8190529346466064,
+    "timeout_sec": 180,
+    "exit_code": 0,
+    "families": 10,
+    "failures": 0,
+    "primary_attempts": 1,
+    "stderr_empty": true
+  },
+  "source_loss_check": "All16 final paths are additions against frozen current-main base; no current source deleted or replaced. Original16-path accounting complete,12 histories preserved, generated manifest reserved for combined regeneration. No inherited science premise assumed.",
+  "mechanical_checks": "Actual bounded_theorem extractor, exact cache runner binding, working/index byte equality, archive hashes, all new Markdown links and unique basenames, all three diff checks pass. Initial preflight imported a nonexistent helper name; corrected to actual build_citation_graph with no source changes or runner attempt.",
+  "combined_gate": "Coordinator responsibility; no per-unit pipeline or audit verdict applied",
+  "claim_strength": "Exact supplied-model smoothing/filtering and conditional smallness-range positive C3 extension, preserving magnetic charge and subsequential flux scaling limits; no full fixed-law photon/score limit, state selection, N=3 small-defect regime or TOE claim."
+}

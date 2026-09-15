@@ -1,0 +1,386 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8041-author-copy",
+    "head": "75675438fb9f81f6e1a5dae47106297ea32a07fe",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8041-author-copy",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8039",
+    "head": "8059796611f40703cfd259a3bf7607758cffe899",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8039",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8037",
+    "head": "10110451a4856101e1191696716bc69b7712d31d",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8037",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8036",
+    "head": "8153493142273f5116efe717c1467ad693176ffe",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8036",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback04-8035",
+    "head": "64402f54b06356cb9acf3e5631046e593cc83978",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback04-8035",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8038",
+    "head": "b9f01bc2c0c37e9623a066d1f8c60ad787630f4e",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8038",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8015-replay",
+    "head": "a3aa9d1a886ce8cabbd0b0a6a6b602090b7c679c",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8015-replay",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train03",
+    "head": "279451f1ca263369e444c28e17b18c7fbb1d298a",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train03",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8117",
+    "head": "8f9e6d981b40e011f0d695c0a489328563bd917e",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8117",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8110",
+    "head": "ad6f1c9ee274327f2a3d4c5739fe4658e349ddbc",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8110",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8119",
+    "head": "605ceb590c9dd183cf2b0377a4e380a62aaa42d6",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8119",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8126",
+    "head": "6d7b446bdf62f1851195a2afbc788b70a1932c29",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8126",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8121",
+    "head": "da476950c58eeedac34c86b44cf469e735afeee8",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8121",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train02",
+    "head": "7927f9e170566b351b2cf6f801cb7176f8b87226",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train02",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8118",
+    "head": "9208305274e8e5ece33a42efc3b82ab86ededc1f",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8118",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8111",
+    "head": "98a45a7275b35220ed3ba614761cd00809a9f942",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8111",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8116",
+    "head": "b178ef81e23e75e12101bec566878a1b191f95cc",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8116",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8105",
+    "head": "6ec58484bfa7a0c3e556002821b02d28650cdf56",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8105",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8102",
+    "head": "88491eb41c19fb1111a7163b6b97e713c74c4d09",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8102",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback05-8018",
+    "head": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback05-8018",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8022",
+    "head": "e9644f088c505a322ba79e94845bd35a3f9365b2",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8022",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback05-8107",
+    "head": "89ee425f870997fb9796ccc4f4bfe598a98f3b1c",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback05-8107",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8040",
+    "head": "a9e718fe9eb6fc4778e86fe2c09ded88306810ed",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8040",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8015",
+    "head": "4dadc38396154d983a015053a6f8546056202c99",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8015",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback05-8105-retry",
+    "head": "b1d0d941c7cd982fe8013af193ecc51630911fc2",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback05-8105-retry",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback05-8108",
+    "head": "20fcfa39f9af6c5b6966956253ba8a2aaa6430b3",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback05-8108",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8035",
+    "head": "8f5bdaa56bfc37aea15aab2c411913215c877125",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8035",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8113",
+    "head": "dcd8ac4b0b7607ba93a6301502498c78494ca7e1",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8113",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8114",
+    "head": "f15e122f505995d6b7cab8bb99c8ad6c6b786aa7",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8114",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8122",
+    "head": "93d35186822ec1f5c10858f2edbeef7256f7995c",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8122",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8125",
+    "head": "32e435a279c2fcfbfd911c4c3968e2516c76dc44",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8125",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train07",
+    "head": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train07",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train09",
+    "head": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train09",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8124",
+    "head": "d870263b685a33bbcbf9cffc843b9db93d5a2567",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8124",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8123",
+    "head": "8d00b30ebd706c4baa4978ef383c429f29db5970",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8123",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8115",
+    "head": "83bb69db284e30e6fd072f756d32f5155e6ddb6b",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8115",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8112",
+    "head": "5121f45919b37a2da2c320c8eb8b40c80e6883bb",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8112",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train08",
+    "head": "87bdeedb1c55e90f6b14bd95fe19f28dea7d6061",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train08",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train06",
+    "head": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train06",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train03-retry",
+    "head": "018902e8d7570c4ed2800cc4884f0157096da944",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/train03-retry",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback04-skill",
+    "head": "4994b354ed33e28c7b409be7ff0a492394f03a21",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback04-skill",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/fallback04-8102",
+    "head": "173381a6c85174f0b8d570958ac0588867fee67f",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/fallback04-8102",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8108",
+    "head": "37dfde39a9d53e1c234f336bb4101b0ab2d711b1",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8108",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8107",
+    "head": "0200b154666258bfc792ff9525eb50a63c63951c",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8107",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8109",
+    "head": "b534c04f3adf361cf9f634775fb9c52335f12210",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8109",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8019",
+    "head": "6eab5d77eefe2d3e2c646825aa56e6e86f0010fc",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8019",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8016",
+    "head": "92d7c191c32b107f7d194ac8b601dd3435fd4a7e",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8016",
+    "removed": true,
+    "message": ""
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/unit8018",
+    "head": "00a8e19890f9b72f6393bd899c254229f4af693f",
+    "status": "clean",
+    "ref": "refs/review-drain-preserved/unit8018",
+    "removed": true,
+    "message": ""
+  }
+]

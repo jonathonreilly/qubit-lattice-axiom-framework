@@ -1,0 +1,62 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/BLOCK24_MUTATION_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/BLOCK24_MUTATION_CHECKS.json",
+    "sha256": "a368f65ef3c533fb11908be6ed3a57d864a7494175a712136c7f2b8b495c6d39"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "3d15315bf80966557051fe237e5a9cc3f61ebd42febe7841e6a482b24db5c4a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/CLUSTER_CAP_EVALUATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-CLUSTER_CAP_EVALUATION.md",
+    "sha256": "a727a886f9c2a6632b84225de337ca3cbbba5146e2fdfbb366bfa7a1139f7bae"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+    "sha256": "df710d1ea4ac2fcc6caa53de57c5be1d92b06e241ed5d65530410a2c43fa27bc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-GOAL.md",
+    "sha256": "1d3bd229f54155f62ad915d1bc6bb0bad72a4330c66b31687637113215f9a76b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-HANDOFF.md",
+    "sha256": "034111892b7ff18b12140355c9af2b40d1f64f0d3bd495842f5471071a06c8ab"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/INITIAL_MUTATION_COVERAGE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/INITIAL_MUTATION_COVERAGE.json",
+    "sha256": "070abcfed3b48876faf8ecb84c9c59d3207b41ba215dcb4b5d676395705a8839"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/NOVELTY_AND_SEARCH.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-NOVELTY_AND_SEARCH.md",
+    "sha256": "51293eae79ba68093e87e1978bd3bc227e48962d64533c303c6cc16eb7d33413"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-REVIEW_HISTORY.md",
+    "sha256": "71ae7e9be8dbee36a3d19085fed430e542a95ca6a0318eb90040be6018c7f723"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/SOURCE_DISPOSITION.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/SOURCE_DISPOSITION.json",
+    "sha256": "d66c2feb06102b0dbf999757c10b843004ecf2e066ee0308c6f4b1b0f1ef217d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/STATE.yaml",
+    "sha256": "5dc7e03da67d0b1dda982e96a885a091103dd6e9da3447e74a148434f8fb6da8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-smoothing-20260915/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8136-clock-smoothing-evidence/pr8136-TRACE_GATE.md",
+    "sha256": "8c9b58210b7230063c9c516a29f90874fb47f29ec931f8bc79042ee224f47f21"
+  }
+]

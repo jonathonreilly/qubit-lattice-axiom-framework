@@ -1,0 +1,151 @@
+[detached HEAD 304628e35e] Integrate reviewed native pair channels and bounded support theorem
+ Date: Tue Sep 15 09:28:40 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 92 files changed, 65612 insertions(+)
+ create mode 100644 docs/NATIVE_U1_PAIR_OPERATOR_AND_ALL_LOW_SUPPORT_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_BUILD.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_BUILD.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/ISOLATION_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/PORT_TRANSFORM.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SCOPE_REPAIR.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SOURCE_FREEZE_BEFORE_SCOPE_REPAIR.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/CANONICAL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/CANONICAL_BEFORE_SCOPE_REPAIR.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/MUTANTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/PAYLOAD_COMPARISON.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/assemble.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/finish.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/pr8043-evidence-native-u1-all-sector-connectivity-cold-review-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/pr8043-evidence-native-u1-all-sector-connectivity-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/HASHES_BEFORE_BASIS_BIJECTION_CORRECTION.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/SUMMARY.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-BASIS_BIJECTION_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_BEFORE_BASIS_BIJECTION_QUALIFIER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_BEFORE_NONZERO_QUALIFIER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_REVIEWED_4c75.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/SOURCE_COVERAGE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/pr8043-evidence-native-u1-pair-creation-cold-review-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/pr8043-evidence-native-u1-pair-creation-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/pr8043-evidence-native-u1-pair-creation-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/pr8043-evidence-native-u1-pair-creation-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/parent-phase-history/pr8043-evidence-parent-phase-history-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/parent-phase-history/pr8043-evidence-parent-phase-history-DERIVATION_BEFORE_ABSOLUTE_PHASE_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/port.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pr8043-evidence-CANONICAL_BEFORE_SCOPE_REPAIR.md.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/inputs/GLOBAL_D4_SEED.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSEMBLY_SCOPE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSUMPTIONS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-N1_N8.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-PACK_INDEX.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ROOT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-SCOPE_REPAIR.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-STATUS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-TRACE.md
+ create mode 100644 logs/runner-cache/native_u1_pair_and_all_low_support_2026_09_08.txt
+ create mode 100644 outputs/native_u1_pair_and_all_low_support_2026_09_08.json
+ create mode 100644 outputs/native_u1_pair_and_all_low_support_2026_09_08.txt
+ create mode 100644 scripts/native_u1_pair_and_all_low_support_2026_09_08.py
+ create mode 100644 scripts/native_u1_pair_support_pair_author_2026_09_08.py
+ create mode 100644 scripts/native_u1_pair_support_pair_independent_2026_09_08.py
+ create mode 100644 scripts/native_u1_pair_support_support_author_2026_09_08.py
+ create mode 100644 scripts/native_u1_pair_support_support_independent_2026_09_08.py
+[detached HEAD d15aa2d3d6] Integrate reviewed coupled-defect and Haar full-score coherent proof unit
+ Date: Tue Sep 15 09:30:42 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 28 files changed, 9987 insertions(+)
+ create mode 100644 docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt
+ create mode 100644 logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt
+ create mode 100644 logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt
+ create mode 100644 logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt
+ create mode 100644 logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt
+ create mode 100644 scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py
+ create mode 100644 scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py
+ create mode 100644 scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py
+ create mode 100644 scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py
+ create mode 100644 scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py
+FROZEN d15aa2d3d61d29769f69d625d60d48ee2896ce4a sources 120 inputs 133 notes 8

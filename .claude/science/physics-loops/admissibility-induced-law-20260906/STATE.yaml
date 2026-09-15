@@ -109,10 +109,14 @@ source_review_correction:
 # ---------------------------------------------------------------- block 24 close (2026-09-15)
 # block: 24
 # branch: physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915 (independent; base origin/main df5316ee81; blocks 06-23 are open PRs #8034, #8035, #8138-#8142, #8146-#8157)
-# pr_status: opened for review (number recorded at close-out); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8158 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8158); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes, no findings; gates: see HANDOFF.md"
 # seats: "supervisor-run: control (eigenvalues; factors; three plaquette witnesses; the cube; the sphere; the forest) -> contract with a lens pass -> primary (Q1-Q5, runner) -> refuting pass (tensor contractions; random pendant and bridging components; quadrature; floats) -> fold (a wording correction)"
 # review_findings: "unrecorded sites: R1 (free window) = R2 (integrated exterior) iff every unrecorded component touches one recorded site (value covariance + transitivity); bridges: phi^2 with sectors Z1^2, (p-q)^2, (p+q-2r)^2 (constant iff p = q = r), phi^{k+2} for paths, the isotypic criterion in general, the sphere's sinh z/z; exact TV witnesses on the plaquette-plus-site and the cube; the clause pair recorded, not adopted; the lane's torus results reading-free"
 # strongest_unresolved_proof_obligation: "which reading of Record the axioms intend (an owner decision, not a theorem); the lane's hard items (normalization; S6; X4)"
 # next_exact_action: "queue refresh 2026-09-15 (block 24 opening): the weak side's coefficient; the three-attachment criterion; normalization; X4/S6 — or a documented stop"
 # lock: held (owner: don't stop; assess the next lane at each conclusion)
+
+# ---------------------------------------------------------------- lane assessment after block 24 (2026-09-15)
+# assessment: "the lane's derivation frontier for the unsoldered sphere static law is complete at the theorem level (Z^3: unique < sqrt(3)/6, ordered with the Green-function channel > 76/100; planes and lines: never ordered, power-law bounded); the remaining items are hard (the kernel's normalization; S6; X4) or incremental (the weak side's coefficient needs a two-parameter supremum; the three-attachment criterion); the light/clock/gauge lanes are the owner's live integration and record-matter is another worker's; no further block launched without the owner's choice among: a stretch attempt on S6 (the formation law's ordered phase, Toom-type), the kernel's normalization, or entry into an owner-held lane on its corrected base"
+# lock: held until the owner's direction; refreshed 2026-09-15

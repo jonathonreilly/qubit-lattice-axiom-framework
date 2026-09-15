@@ -303,3 +303,19 @@ was not treated as a full read. It concerns quasi-static spin backgrounds;
 no theorem was imported. https://arxiv.org/abs/1911.05742
 Current SCIENCE_WORKFLOW.md fully reread in this block; personal work
 continues under the user's no-subagent instruction. Formal review not claimed.
+
+Block8: full native global charge connectivity/exchange source reread; its
+six-edge-cut and chord/parking proof is explicitly used for finite positive
+ground amplitudes. Minimal axioms, all three approved primitives and registry
+reread; no new carrier/time premise adopted. Time-axis/history note lines1-230
+and Cycle713 Record-head/ADM archive note lines610-750 read to check novelty
+of a possible packing route; that dense-history packing obstruction is
+already present and was not repeated as a new result.
+Targeted primary graph/transport searches found arXiv2505.17215 and1212.4475
+abstracts, and arXiv2007.04143 abstract. They are routing only; no external
+theorem imported. Eulerian-orientation/loop searches found arXiv2006.16847,
+1103.5397 and the Springer Macroscopic Loops article10.1007/s00220-023-04633-9;
+search excerpts only, no long-range-order result imported.
+The periodic finite-clock covariance source sections1-10 through the
+opening of11 were reread: its shifted-theta curvature bound is one-sided;
+positive-mixture variance prevents a direct higher-cumulant inference.

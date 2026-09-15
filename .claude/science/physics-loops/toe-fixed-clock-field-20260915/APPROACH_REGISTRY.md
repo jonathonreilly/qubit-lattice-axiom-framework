@@ -100,3 +100,11 @@ A propagation upper bound follows from the charge-distance commutator.
 No connectivity assumption is needed for the selected symmetric ground state.
 Remaining target: quasiparticle concentration/dispersion and a physical time
 dictionary; spectral means alone do not supply either.
+
+## Block8 — topology-aware flux response
+
+Resolved which supplied twists are nontrivial: physical-sign difference
+is a polarization coboundary, species sum has an explicit winding cycle.
+Exact finite curvature equals a ground-state weighted conductance and
+an auxiliary winding-variance rate. Thermodynamic weights and physical
+particle identification remain open. This is not an axiom wall.

@@ -34,3 +34,8 @@ activity lower bound with a free-volume exhaustion proof. Current-dependent
 translation explicitly survives, and the resulting law is a smoothed dual
 clock field. The scalar duality counterexample rules out only a logical
 shortcut. Broad physical/framework no-go FAILS the companion N1-N8 review.
+
+Block8: opposite species twist is exactly removable by actual electric
+polarization. This is one finite operator identity, not a model mobility
+wall. Positive sum twist and real-time motion survive. Broad no-go FAIL.
+See notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md.

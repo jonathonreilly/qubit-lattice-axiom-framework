@@ -1,0 +1,30 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T20:37:51.536263+00:00",
+  "main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "checked": [
+    "actual electric divergence and polarization signs including periodic wrap",
+    "gated rings preserve polarization",
+    "entire spectrum depends only on sum of species twists",
+    "full native winding tape and phase product",
+    "explicit connectivity dependency for strict Perron positivity",
+    "ground-state transform and factor2 in curvature",
+    "cycle resistance lower bound versus symmetric upper bound",
+    "auxiliary Markov time and fixed-volume limit order",
+    "no broad immobility or axiom conclusion"
+  ],
+  "limits": [
+    "native ground amplitudes not computed",
+    "no uniform thermodynamic curvature lower bound",
+    "no native full spectrum diagonalized",
+    "toy matrix is separate algebra control",
+    "same author review only"
+  ],
+  "inputs": {
+    "notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md": "32ac1e5a4a88fe46daa5544259091aa0b80b9413fb951930415197e10e4b5417",
+    "notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md": "858fabc0f01a50499f7a661236145696e57a0cc61b0ecd2fec5fc84c46ab4d03",
+    "evidence/block8_native_twist_check.json": "52d60ac14a5d7ebf0fa3747aa7b819ddd23eee8a28f2d53184857f4a5f7735d6",
+    "evidence/block8_native_twist_check.txt": "52d60ac14a5d7ebf0fa3747aa7b819ddd23eee8a28f2d53184857f4a5f7735d6",
+    "evidence/block8_native_twist_check.py": "3fc01b8d9be0ff71f868e8c571e8d9ee69407eedea7e5e7e0f1238c86a604f27"
+  }
+}

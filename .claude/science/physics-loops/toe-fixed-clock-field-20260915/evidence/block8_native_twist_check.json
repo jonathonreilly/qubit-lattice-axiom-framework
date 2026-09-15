@@ -1,0 +1,2278 @@
+{
+  "status": "PASS_personal_finite_challenges_not_independent_review",
+  "N5_scope": {
+    "per_element": "108 actual native signed-hop increments and phases",
+    "per_site": "full low-charge vectors on every winding prefix;94 gated faces",
+    "per_mode": "one uniform twist per axis; no full native spectrum computed",
+    "per_block": "native D2 tapes; separate eight-vertex response algebra control",
+    "lattice_wide": "finiteL4,L6,L8 tapes; general finite identity is analytic; no thermodynamic stiffness"
+  },
+  "native_tapes": [
+    {
+      "L": 4,
+      "vertices": 64,
+      "edges": 192,
+      "flippable_ring_checks": 94,
+      "cycles": [
+        {
+          "axis": 0,
+          "length": 4,
+          "steps": 8,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                1,
+                0,
+                0
+              ],
+              "target": [
+                2,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d05"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                1,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da97a63a8f0d70f2a5d05"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                2,
+                0,
+                0
+              ],
+              "target": [
+                3,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da97a63a8f0d70f2a5d15"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                1,
+                0,
+                0
+              ],
+              "target": [
+                2,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72568565c7238da97a63a8f0d70f2a5d15"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                3,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72568565c7238da96a63a8f0d70f2a5d15"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                2,
+                0,
+                0
+              ],
+              "target": [
+                3,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72568565c7238da96a63a8f0d70f2a5d35"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                1,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d35"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                3,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d25"
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "length": 4,
+          "steps": 8,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                0,
+                1,
+                0
+              ],
+              "target": [
+                0,
+                2,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d11"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                1,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f6a5d11"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                0,
+                2,
+                0
+              ],
+              "target": [
+                0,
+                3,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f6a5d15"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                0,
+                1,
+                0
+              ],
+              "target": [
+                0,
+                2,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0970f6a5d15"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                0,
+                3,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0970f2a5d15"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                0,
+                2,
+                0
+              ],
+              "target": [
+                0,
+                3,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0970f2a5d1d"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                1,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d1d"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                0,
+                3,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d19"
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "length": 4,
+          "steps": 8,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                1
+              ],
+              "target": [
+                0,
+                0,
+                2
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d14"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                1
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d54"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                2
+              ],
+              "target": [
+                0,
+                0,
+                3
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d55"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                1
+              ],
+              "target": [
+                0,
+                0,
+                2
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5555"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                3
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5515"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                2
+              ],
+              "target": [
+                0,
+                0,
+                3
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5517"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                1
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d17"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                3
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0x99a6563a9a38dc72569565c7238da96a63a8f0d70f2a5d16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "vertices": 216,
+      "edges": 648,
+      "flippable_ring_checks": null,
+      "cycles": [
+        {
+          "axis": 0,
+          "length": 6,
+          "steps": 12,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                1,
+                0,
+                0
+              ],
+              "target": [
+                2,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d05"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                1,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9697a638ea3c3c35c3c3ca3c3c35c3c3ca9745d05"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                2,
+                0,
+                0
+              ],
+              "target": [
+                3,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9697a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                1,
+                0,
+                0
+              ],
+              "target": [
+                2,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569685665c71c8e38dc71c8e38da9697a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                3,
+                0,
+                0
+              ],
+              "target": [
+                4,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569685665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                2,
+                0,
+                0
+              ],
+              "target": [
+                3,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9697a99a38e371c7238e371c72569685665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                4,
+                0,
+                0
+              ],
+              "target": [
+                5,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9697a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                3,
+                0,
+                0
+              ],
+              "target": [
+                4,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569685665c71c8e38dc71c8e38da9697a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 8,
+              "charge": 1,
+              "source": [
+                5,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569685665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 9,
+              "charge": -1,
+              "source": [
+                4,
+                0,
+                0
+              ],
+              "target": [
+                5,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569685665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d35"
+            },
+            {
+              "step": 10,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                1,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d35"
+            },
+            {
+              "step": 11,
+              "charge": -1,
+              "source": [
+                5,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d25"
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "length": 6,
+          "steps": 12,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                0,
+                1,
+                0
+              ],
+              "target": [
+                0,
+                2,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d11"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                1,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3da9745d11"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                0,
+                2,
+                0
+              ],
+              "target": [
+                0,
+                3,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3da9745d15"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                0,
+                1,
+                0
+              ],
+              "target": [
+                0,
+                2,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c25c3c3da9745d15"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                0,
+                3,
+                0
+              ],
+              "target": [
+                0,
+                4,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c25c3c3ca9745d15"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                0,
+                2,
+                0
+              ],
+              "target": [
+                0,
+                3,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3da3c3c25c3c3ca9745d15"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                4,
+                0
+              ],
+              "target": [
+                0,
+                5,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3da3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                0,
+                3,
+                0
+              ],
+              "target": [
+                0,
+                4,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c25c3c3da3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 8,
+              "charge": 1,
+              "source": [
+                0,
+                5,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c25c3c3ca3c3c35c3c3ca9745d15"
+            },
+            {
+              "step": 9,
+              "charge": -1,
+              "source": [
+                0,
+                4,
+                0
+              ],
+              "target": [
+                0,
+                5,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c25c3c3ca3c3c35c3c3ca9745d1d"
+            },
+            {
+              "step": 10,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                1,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d1d"
+            },
+            {
+              "step": 11,
+              "charge": -1,
+              "source": [
+                0,
+                5,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d19"
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "length": 6,
+          "steps": 12,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                1
+              ],
+              "target": [
+                0,
+                0,
+                2
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d14"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                1
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d54"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                2
+              ],
+              "target": [
+                0,
+                0,
+                3
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d55"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                1
+              ],
+              "target": [
+                0,
+                0,
+                2
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745555"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                3
+              ],
+              "target": [
+                0,
+                0,
+                4
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745515"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                2
+              ],
+              "target": [
+                0,
+                0,
+                3
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9755515"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                4
+              ],
+              "target": [
+                0,
+                0,
+                5
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9755d15"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                3
+              ],
+              "target": [
+                0,
+                0,
+                4
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9555d15"
+            },
+            {
+              "step": 8,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                5
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9545d15"
+            },
+            {
+              "step": 9,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                4
+              ],
+              "target": [
+                0,
+                0,
+                5
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9545d17"
+            },
+            {
+              "step": 10,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                1
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d17"
+            },
+            {
+              "step": 11,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                5
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa66699966699958e3a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a99a38e371c7238e371c72569695665c71c8e38dc71c8e38da9696a638ea3c3c35c3c3ca3c3c35c3c3ca9745d16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "vertices": 512,
+      "edges": 1536,
+      "flippable_ring_checks": null,
+      "cycles": [
+        {
+          "axis": 0,
+          "length": 8,
+          "steps": 16,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                1,
+                0,
+                0
+              ],
+              "target": [
+                2,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d05"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                1,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969697a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d05"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                2,
+                0,
+                0
+              ],
+              "target": [
+                3,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969697a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                1,
+                0,
+                0
+              ],
+              "target": [
+                2,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969697a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                3,
+                0,
+                0
+              ],
+              "target": [
+                4,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                2,
+                0,
+                0
+              ],
+              "target": [
+                3,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969697a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                4,
+                0,
+                0
+              ],
+              "target": [
+                5,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969697a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                3,
+                0,
+                0
+              ],
+              "target": [
+                4,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969697a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 8,
+              "charge": 1,
+              "source": [
+                5,
+                0,
+                0
+              ],
+              "target": [
+                6,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 9,
+              "charge": -1,
+              "source": [
+                4,
+                0,
+                0
+              ],
+              "target": [
+                5,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969697a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 10,
+              "charge": 1,
+              "source": [
+                6,
+                0,
+                0
+              ],
+              "target": [
+                7,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969697a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 11,
+              "charge": -1,
+              "source": [
+                5,
+                0,
+                0
+              ],
+              "target": [
+                6,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969697a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 12,
+              "charge": 1,
+              "source": [
+                7,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 13,
+              "charge": -1,
+              "source": [
+                6,
+                0,
+                0
+              ],
+              "target": [
+                7,
+                0,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696856665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d35"
+            },
+            {
+              "step": 14,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                1,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d35"
+            },
+            {
+              "step": 15,
+              "charge": -1,
+              "source": [
+                7,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d25"
+            }
+          ]
+        },
+        {
+          "axis": 1,
+          "length": 8,
+          "steps": 16,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                0,
+                1,
+                0
+              ],
+              "target": [
+                0,
+                2,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d11"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                1,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f6a5d1745d11"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                0,
+                2,
+                0
+              ],
+              "target": [
+                0,
+                3,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f6a5d1745d15"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                0,
+                1,
+                0
+              ],
+              "target": [
+                0,
+                2,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0970f0f0f6a5d1745d15"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                0,
+                3,
+                0
+              ],
+              "target": [
+                0,
+                4,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0970f0f0f2a5d1745d15"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                0,
+                2,
+                0
+              ],
+              "target": [
+                0,
+                3,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f68f0f0f0970f0f0f2a5d1745d15"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                4,
+                0
+              ],
+              "target": [
+                0,
+                5,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f68f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                0,
+                3,
+                0
+              ],
+              "target": [
+                0,
+                4,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0970f0f0f68f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 8,
+              "charge": 1,
+              "source": [
+                0,
+                5,
+                0
+              ],
+              "target": [
+                0,
+                6,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0970f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 9,
+              "charge": -1,
+              "source": [
+                0,
+                4,
+                0
+              ],
+              "target": [
+                0,
+                5,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f68f0f0f0970f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 10,
+              "charge": 1,
+              "source": [
+                0,
+                6,
+                0
+              ],
+              "target": [
+                0,
+                7,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f68f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 11,
+              "charge": -1,
+              "source": [
+                0,
+                5,
+                0
+              ],
+              "target": [
+                0,
+                6,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0970f0f0f68f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 12,
+              "charge": 1,
+              "source": [
+                0,
+                7,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0970f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d15"
+            },
+            {
+              "step": 13,
+              "charge": -1,
+              "source": [
+                0,
+                6,
+                0
+              ],
+              "target": [
+                0,
+                7,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0970f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d1d"
+            },
+            {
+              "step": 14,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                1,
+                0
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d1d"
+            },
+            {
+              "step": 15,
+              "charge": -1,
+              "source": [
+                0,
+                7,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d19"
+            }
+          ]
+        },
+        {
+          "axis": 2,
+          "length": 8,
+          "steps": 16,
+          "signed_holonomy": 0,
+          "positive_only_holonomy": 1,
+          "common_holonomy": 2,
+          "native_product": [
+            1.0,
+            0.0
+          ],
+          "tape": [
+            {
+              "step": 0,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                1
+              ],
+              "target": [
+                0,
+                0,
+                2
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d14"
+            },
+            {
+              "step": 1,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                1
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d54"
+            },
+            {
+              "step": 2,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                2
+              ],
+              "target": [
+                0,
+                0,
+                3
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d55"
+            },
+            {
+              "step": 3,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                1
+              ],
+              "target": [
+                0,
+                0,
+                2
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745555"
+            },
+            {
+              "step": 4,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                3
+              ],
+              "target": [
+                0,
+                0,
+                4
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745515"
+            },
+            {
+              "step": 5,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                2
+              ],
+              "target": [
+                0,
+                0,
+                3
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1755515"
+            },
+            {
+              "step": 6,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                4
+              ],
+              "target": [
+                0,
+                0,
+                5
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1755d15"
+            },
+            {
+              "step": 7,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                3
+              ],
+              "target": [
+                0,
+                0,
+                4
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1555d15"
+            },
+            {
+              "step": 8,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                5
+              ],
+              "target": [
+                0,
+                0,
+                6
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1545d15"
+            },
+            {
+              "step": 9,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                4
+              ],
+              "target": [
+                0,
+                0,
+                5
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d5545d15"
+            },
+            {
+              "step": 10,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                6
+              ],
+              "target": [
+                0,
+                0,
+                7
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d5745d15"
+            },
+            {
+              "step": 11,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                5
+              ],
+              "target": [
+                0,
+                0,
+                6
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a555745d15"
+            },
+            {
+              "step": 12,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                7
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a551745d15"
+            },
+            {
+              "step": 13,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                6
+              ],
+              "target": [
+                0,
+                0,
+                7
+              ],
+              "native_phase": [
+                -0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a551745d17"
+            },
+            {
+              "step": 14,
+              "charge": 1,
+              "source": [
+                0,
+                0,
+                0
+              ],
+              "target": [
+                0,
+                0,
+                1
+              ],
+              "native_phase": [
+                0.0,
+                1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d17"
+            },
+            {
+              "step": 15,
+              "charge": -1,
+              "source": [
+                0,
+                0,
+                7
+              ],
+              "target": [
+                0,
+                0,
+                0
+              ],
+              "native_phase": [
+                0.0,
+                -1.0
+              ],
+              "configuration_before_hex": "0xa9999a6665999a6665999a6665638e3a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a999a38e38dc71c7238e38dc71c7238e38dc71c72569696956665c71c7238e38dc71c7238e38dc71c7238e38da969696a638e3a8f0f0f0d70f0f0f28f0f0f0d70f0f0f28f0f0f0d70f0f0f2a5d1745d16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exact_separate_graph": {
+    "curvature": "50728/4165095",
+    "cycle_lower": "1/88",
+    "bare_upper": "7/264",
+    "unitary_error": 4.440892098500626e-16,
+    "finite_angle_challenges": [
+      {
+        "angle": 0.08,
+        "energy": 3.8972131836531444e-05,
+        "curvature_estimate": 0.012178791198916076
+      },
+      {
+        "angle": 0.04,
+        "energy": 9.743346664261406e-06,
+        "curvature_estimate": 0.012179183330326757
+      },
+      {
+        "angle": 0.02,
+        "energy": 2.435856272749757e-06,
+        "curvature_estimate": 0.012179281363748785
+      }
+    ]
+  },
+  "checks": {
+    "simple physical edge geometry": 3,
+    "full polarized ice seed": 3,
+    "winding cycle has distinct intermediate configurations": 108,
+    "every winding prefix in actual D2 low domain": 216,
+    "nonzero ambient native hopping factor": 108,
+    "charged source and neutral target": 108,
+    "integer electric polarization": 311,
+    "exact physical signed-hop polarization increment": 108,
+    "forward native winding step": 108,
+    "winding restores every physical edge bit": 9,
+    "native complete winding phase positive": 9,
+    "both charges wind once": 9,
+    "difference twist trivial but common twist nontrivial": 9,
+    "second ice background": 1,
+    "actual gated face preserves charges": 94,
+    "actual gated face preserves polarization": 94,
+    "nonempty gated-ring control": 1,
+    "separate graph exact positive ground vector": 1,
+    "exact network versus eigenvalue perturbation positive": 1,
+    "exact network versus eigenvalue perturbation negative": 1,
+    "exact network versus eigenvalue perturbation difference": 1,
+    "exact network versus eigenvalue perturbation sum": 1,
+    "separate graph rank-one species response": 1,
+    "exact winding conductance sandwich": 1,
+    "discarding background corrector changes response": 1,
+    "separate graph finite-angle eigenvalue challenge": 3,
+    "separate graph full twist unitary identity": 1
+  },
+  "seconds": 0.1411934170173481,
+  "limits": [
+    "native checks use actual full configurations and phases",
+    "explicit winding tapes are not a full configuration census",
+    "weighted graph spectrum is a distinct algebra control, not native D2",
+    "native ground amplitudes and thermodynamic stiffness not computed",
+    "no independent scientific review"
+  ],
+  "sha256": {
+    "evidence/block8_native_twist_check.py": "3fc01b8d9be0ff71f868e8c571e8d9ee69407eedea7e5e7e0f1238c86a604f27",
+    "notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md": "858fabc0f01a50499f7a661236145696e57a0cc61b0ecd2fec5fc84c46ab4d03"
+  }
+}

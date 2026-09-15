@@ -462,3 +462,29 @@ checked at three rational times by exact path powers through order4 and
 a rigorous operator-tail bound; the largest support has554 states. These
 are not full D2 censuses or native ground-state diagonalizations.
 No independent review, axiom update or main landing. Continue the campaign.
+
+## Block8: exact twist diagnostic and finite winding response
+
+Define actual electric polarization P_a=-sum_v E_(v,a)/2. A signed hop
+changes it by q times its oriented step; alternating rings preserve it.
+Thus opposite boundary twists on the two charge species are exactly
+unitarily removable, while the full spectrum depends only on their sum.
+This does not imply immobility: Block7's real-time motion survives.
+
+An explicit polarized-ice pair advances around the torus in2L hops,
+restoring every bit while both charges wind once. Its sum-twist holonomy
+is nontrivial. With the reread provisional global-connectivity parent,
+Perron positivity gives strict finite response and a positive curvature.
+The curvature is2 times a weighted configuration-graph least-squares
+minimum, with weights lambda*psi_x*psi_y. Its finite lower bound is a
+cycle resistance, but no uniform lower bound on L^2 times curvature is
+proved. The upper bound is4lambda/(3L^2). The same quantity is the
+stationary winding-variance rate of the auxiliary ground-state Markov
+chain; its time is not physical unitary time. Opposite winding differences
+are bounded by finite electric polarization, so limit order matters.
+
+Checks retain9 actual full native winding tapes onL4,L6,L8,108 native
+hops and94 gated-ring controls. A separate weighted8-vertex graph checks
+exact curvature independently through eigenvalue perturbation and a
+network minimization; it is not the native ground spectrum. Broad
+immobility/axiom no-go FAIL; N1-N8 review committed. Continue personally.

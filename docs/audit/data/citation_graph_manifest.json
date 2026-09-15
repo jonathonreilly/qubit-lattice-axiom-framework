@@ -1,6 +1,6 @@
 {
- "edge_count": 13395,
- "node_count": 5829,
+ "edge_count": 13402,
+ "node_count": 5832,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13218,6 +13218,10 @@
    "deps_hash": "0f8945ef8d30",
    "out_degree": 3
   },
+  "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "129aa6372a21",
+   "out_degree": 7
+  },
   "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13": {
    "deps_hash": "aece02ce6139",
    "out_degree": 2
@@ -22287,6 +22291,14 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8097-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8098-evidence.kept.pr8098-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8098-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

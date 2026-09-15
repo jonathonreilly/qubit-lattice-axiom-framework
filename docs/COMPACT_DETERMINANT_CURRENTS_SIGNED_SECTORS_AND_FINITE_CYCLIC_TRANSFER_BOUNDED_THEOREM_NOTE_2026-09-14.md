@@ -23,7 +23,7 @@ limit, or the origin of the supplied microscopic law.
 
 **Runner:** [self-contained primary runner](../scripts/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.py).
 **Receipt:** [canonical execution cache](../logs/runner-cache/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.txt).
-**Review:** [historical author review record](work_history/repo/review_feedback/pr8109-compact-current-evidence/REVIEW_HISTORY.md); the [preserved evidence packet](work_history/repo/review_feedback/pr8109-compact-current-evidence/README.md) records its original execution and reading limits.
+**Review:** [historical author review record](work_history/repo/review_feedback/pr8109-compact-current-evidence/pr8109-REVIEW_HISTORY.md); the [preserved evidence packet](work_history/repo/review_feedback/pr8109-compact-current-evidence/README.md) records its original execution and reading limits.
 
 ## Premises and dependency structure
 

@@ -1,0 +1,58 @@
+{
+  "pr": 8070,
+  "original_head": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+  "branch": "codex/native-certified-imaginary-time-20260909",
+  "landing": "82c1310accbcfebcba95ff23c06049309c54cc0f",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-certified-imaginary-time-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-mixed-gaussian-transition-20260909",
+        "headRefOid": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8071,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8071"
+      },
+      "original_merge_base": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+      "delta_sha256": "3db1d36c05d94073204c72d1b790f675c1ba99676d7c6aed9ecce45a96fb4b5c",
+      "delta_file": "closure-8070-child-8071-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-mixed-gaussian-transition-20260909",
+        "headRefOid": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8071,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8071"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-mixed-gaussian-transition-20260909",
+        "headRefOid": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8071,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8071"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "codex/native-certified-local-green-scalars-20260909",
+    "closedAt": "2026-09-15T20:58:33Z",
+    "headRefName": "codex/native-certified-imaginary-time-20260909",
+    "headRefOid": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8070,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8070"
+  }
+}

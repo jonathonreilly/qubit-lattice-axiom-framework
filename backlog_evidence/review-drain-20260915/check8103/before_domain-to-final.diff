@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -274,6 +274,8 @@
+         reduced, rb = reduced_matrix(.37, S)
+         direct, db = direct_matrix(.37, S)
+         lookup = {label: j for j, label in enumerate(db)}
++        check(all((f, tuple(E0[f]+n)) in lookup for f, n in rb),
++              'every reduced label lies in the direct physical cutoff domain')
+         order = [lookup[f, tuple(E0[f]+n)] for f, n in rb]
+         check(len(db) == len(rb), 'direct Gauss enumeration is onto affine domain')
+         close(reduced.toarray(), direct[np.ix_(order, order)],

@@ -1,0 +1,31 @@
+{
+  "original_total": 116,
+  "landed_and_closed": 97,
+  "remaining_original": 19,
+  "main": "be5e5e07f67bbe71b4464bf512ab8bda6420776c",
+  "train48": {
+    "prs": [
+      8068,
+      8070
+    ],
+    "session": 88900,
+    "state": "fullgateactive"
+  },
+  "8103": {
+    "tree": "159ff8fd27c8974d5ef2d17157a2a96b89a4eef9",
+    "capture": "600/0,1.5107650756835938s under90",
+    "final_record": "8103-unit-v1-timeout-final.json",
+    "final_report": "review-8103-timeout-final.json",
+    "companion": "review-8103-timeout-final.md",
+    "reviewer_final_preflight_session": 54743,
+    "preserved_failure": "Original cache-reuse preflight rejected absent declaredtimeout; originalreport/record/cache preserved, narrowmetadatafix then single newcapture"
+  },
+  "8104": {
+    "tree": "8c9cffa4cdf18e5ae2917f8ea1f602aa741f7608",
+    "early_fix": "AUDIT_TIMEOUT_SEC=90 only",
+    "old_cache": "preservedstale; single newcapture required after fullreview/preflight",
+    "review": "next"
+  },
+  "8069": "author/reviewer active, own mathematical interval-evidence unit",
+  "remote_provenance": "ff714b191e"
+}

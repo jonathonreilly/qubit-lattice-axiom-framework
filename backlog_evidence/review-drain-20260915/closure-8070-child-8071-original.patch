@@ -1,0 +1,1426 @@
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md
+new file mode 100644
+index 0000000000..3c72f6b01d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md
+@@ -0,0 +1,3 @@
++# Artifact Plan
++
++One theorem note, primary, two exact supporting helpers, paired output, source manifest and this packet. Root owns citation graph and delivery.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md
+new file mode 100644
+index 0000000000..55c5815668
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md
+@@ -0,0 +1,3 @@
++# Assumptions And Imports
++
++Imports: uniform reference-chart theorem (8070), common Fock realization (8067). Trace/HS pairings, real skew structure, shared frame and certified q_* for both exact and approximate endpoints are explicit. No alpha value, physical matrix, phase selection or uniform overlap floor.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json
+new file mode 100644
+index 0000000000..521c47a7b8
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json
+@@ -0,0 +1,7 @@
++{
++  "status": "PASS_SUPPORTING_CONTROLS",
++  "command": "python3 -I -B -S -OO scripts/native_mixed_gaussian_transition_2026_09_09.py --json",
++  "output_sha256": "a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e",
++  "physical_calls": 0,
++  "scope": "Author synthetic supporting execution only; independent assembly review and root delivery pending"
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md
+new file mode 100644
+index 0000000000..ba2029a1c2
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md
+@@ -0,0 +1,18 @@
++# Claim status certificate
++
++```json
++{
++  "actual_current_surface_status": "conditional-support",
++  "trace_class": "upstream_support",
++  "reachability_to_target": "supports",
++  "conditional_surface_status": "Exact Gaussian transition formulas within the linked supplied-model/common-frame hypotheses",
++  "hypothetical_axiom_status": null,
++  "admitted_observation_status": null,
++  "proposal_allowed": false,
++  "proposal_allowed_reason": "Supplied physical model, unlanded parents and absent native numerical pairing/kernel certificate",
++  "audit_required_before_effective_retained": true,
++  "bare_retained_allowed": false
++}
++```
++
++Source review and finite supporting checks do not assign an independent audit verdict or current-main effective status.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json
+new file mode 100644
+index 0000000000..bbce490ae4
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/DELIVERY_FREEZE.json
+@@ -0,0 +1,32 @@
++{
++  "source_freeze": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
++  "packet_files": {
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ARTIFACT_PLAN.md": "457a5f2c427971627c64fd973751f157ba72a33c385f20f133c4226ba449af14",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ASSUMPTIONS_AND_IMPORTS.md": "b91c9b99f333e3415570b2bc9c26af2f598f86a809c985a7b84d03a4534b006f",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/AUTHOR_CHECK.json": "a1325b1206559a49e6480796685224210c6644ceea7bb9c53291a8038cc119f0",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/CLAIM_STATUS_CERTIFICATE.md": "cfcbcabaef71c35ddfe2972340f737e12b8216fbdbbd3a7d7630b321d853bbcb",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md": "c1f629f3c312389f1ba457e56003c84f5efba8066b3fdad53144bbb54eb2c943",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md": "e04d71f00b614ecc0d6a890a88b82a21ff5d378fbb23ec3900fe29538d0cc330",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md": "892eeb54890c782833f3bec549e6e8eecd1bee6525e598c81064d2b84dd45421",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md": "8230d627f5c7415624a83d44daebbc4c3253896d14679ac7c949ec09944db71a",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md": "1f783f5c24751859236ecd1794128dbf4d65d0dec5eae0a79358b49b3657f593",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md": "f882b709c75d2976078ebe19d15593789e68208eba3a90d27d4279c9fc03bc1a",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md": "b2bd48ae58ca99922c578a82efa10ba03a7ab1e0d4a7071c26f9590375fdfa32",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md": "aef49c6a7deec7304cafc9716b3e68ca2d662aa9f7b8ab6915fdd6bd565955c1",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml": "6d5632a8e7475a7b94d882622845a087e575d9259110f7f92485c66167b9875f",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md": "94701176eb1293bb5e42a1fe2b33c6cc2d0ba45adc4534deca3ff5b0bb6119a4",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json": "44f6169f276cc59c8548efe64843b2ab0ba056734b275ff521716b41b70a5b1f",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json": "a4901532c8975d006d42017f1703e4a3c3707d84d14436975f49c7bed341d69e",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json": "5f044add118c16eb60fd491b062ed5daf1a6c48994dca6e9e6ee24744fc42224",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json": "93b325d820ced0a4935e10445c2c07fef46f808505d3c03ba7cbd2df3eb48e81",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json": "2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md": "e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json": "6e95cbe86c6663f18d00bbb6d2cade01eda5da290af2447e6b6a386df847beb2",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md": "3048a79cb7eb180493e2f400e733df3e9b3018bc89ef7d8ce09d82d80702a80a",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json": "01fae41f4a89c70971c251307fe200ac4ee92188be889e199857c1a2e7d62d42",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt": "b5d7c4fdd659d87daf4a344e819541d26892542703cb936e2a56299c957b39cd",
++    ".claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json": "3f4acc92d413deae456e843b91ba8ea49deea0f756e04eebd781d9181f42a27f"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md
+new file mode 100644
+index 0000000000..38ae98832d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/GOAL.md
+@@ -0,0 +1,3 @@
++# Goal
++
++Prove positive mixed overlap and support efficient certified finite transition arithmetic under the supplied common real CAR chart.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md
+new file mode 100644
+index 0000000000..ee9abaf106
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/HANDOFF.md
+@@ -0,0 +1,9 @@
++# Handoff
++
++Positive uninserted mixed Gaussian overlaps, exact ordered CAR/Wick ratios and efficient residual-certified inverse/logarithm arithmetic are now a coherent source-reviewed conditional theorem. Unit real Majorana two/four-insertion ratio bounds are199/118803. Both true and approximate product norms enter q_*; HS/frame/time/scalar errors remain required. Native pairings andalpha are not computed.
++
++Stacked on exact PR8070head55c4b53; mathematical parents8070 and8067. Root reviewed full assembly and clarified introductory normalization without changing equations or helpers. Original source freeze93b325d8 and authored output are preserved. Final57bffd7d sourcefreeze passed isolated16file controls. Copy exact frozen inputs and run python3-I-B-S-OO scripts/native_mixed_gaussian_transition_2026_09_09.py --json. No original physical runs occur.
++
++One graph build and PR delivery pending. Later current-main integration must inspect unlanded parents and perform independent audit before any effective grade. No authority surfaces, merges or audit verdicts.
++
++One graph build complete:4889nodes12187edges, oneadded/twodeps, alloldnodesunchanged. Source isolated16file check passed716+16predicates. Source and graph ready for sciencePR delivery; fullcurrent-mainintegration remains pending.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md
+new file mode 100644
+index 0000000000..b2356c820b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/LITERATURE_BRIDGES.md
+@@ -0,0 +1,3 @@
++# Literature Bridges
++
++No newly imported external formula. Self-contained proofs and original reviewed source snapshots are pinned in SOURCE_MANIFEST.json.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md
+new file mode 100644
+index 0000000000..1c30090592
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/NO_GO_LEDGER.md
+@@ -0,0 +1,3 @@
++# No Go Ledger
++
++Do not infer nonzero inserted kernel from positive vacuum overlap. Do not use finite-N log bounds as an infinite-tail bound. Do not use unreviewed equivariant dilation.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md
+new file mode 100644
+index 0000000000..0e27638f33
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/OPPORTUNITY_QUEUE.md
+@@ -0,0 +1,3 @@
++# Opportunity Queue
++
++Future: certified actual pairing inputs and separately budgeted native transition evaluation. No current physical execution is authorized by this package.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md
+new file mode 100644
+index 0000000000..20b303edc5
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/PR_BACKLOG.md
+@@ -0,0 +1 @@
++Prepared for one conditional-support PR against codex/native-certified-imaginary-time-20260909 after graph verification. Root owns commit/push/create; no merge.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md
+new file mode 100644
+index 0000000000..94a2542fd5
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/REVIEW_HISTORY.md
+@@ -0,0 +1,5 @@
++# Review history
++
++Original mixed theorem reviewa77ae2ba and affected q_* confirmation8016b89d; fast certificate independent338038bf. Root canonical pass read all sources and made a unit-Majorana introductory clarification; prior exact body is preserved. Isolated16file execution passed716+16 supporting controls in0.132s with20,758,528B externalRSS. No native calls. One graph refresh remains; no formal audit or fullcurrent-mainintegration claim.
++
++Graph verification PASS:oneadded filename-derivednode/twodependencies, alloldnodesunchanged. Onebuildonly.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md
+new file mode 100644
+index 0000000000..625b1239cb
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/ROUTE_PORTFOLIO.md
+@@ -0,0 +1,3 @@
++# Route Portfolio
++
++Chosen route: Fredholm logarithm and literal CAR signs; binary Neumann plus residual certificate; real LU backward error and rational logarithm. Native propagation and finite-rank tail computation remain separate.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..7d64eb9d74
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/SOURCE_FREEZE.json
+@@ -0,0 +1,21 @@
++{
++  "files": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json": "fea46c382c9684dfe305ed7cdd8eaa7645fe0c3733e295fe29ed2ba478cb3fa2",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09.py": "7f1552fddb5df60ae0c19843c9c79a5fd1aafe99fd8ee87a7c5ed60407224cf1",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  },
++  "scope": "synthetic supporting certificate; no native execution"
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml
+new file mode 100644
+index 0000000000..b8e1283dfa
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/STATE.yaml
+@@ -0,0 +1,38 @@
++{
++  "actual_current_surface_status": "conditional-support",
++  "trace_class": "upstream_support",
++  "reachability_to_target": "supports",
++  "conditional_surface_status": "Exact Gaussian transition formulas within the linked supplied-model/common-frame hypotheses",
++  "hypothetical_axiom_status": null,
++  "admitted_observation_status": null,
++  "proposal_allowed": false,
++  "proposal_allowed_reason": "Supplied physical model, unlanded parents and absent native numerical pairing/kernel certificate",
++  "audit_required_before_effective_retained": true,
++  "bare_retained_allowed": false,
++  "updated_utc": "2026-09-09T17:31:20.712788+00:00",
++  "mode": "science_block",
++  "source_base": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
++  "branch": "codex/native-mixed-gaussian-transition-20260909",
++  "review_disposition": "pass",
++  "source_freeze": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
++  "checks": {
++    "fock": 716,
++    "fast": 16,
++    "physical_calls": 0,
++    "root_seconds": 0.132358625,
++    "external_rss_bytes": 20758528
++  },
++  "graph": {
++    "status": "PASS",
++    "nodes": 4889,
++    "edges": 12187,
++    "added": [
++      "native_mixed_gaussian_transition_note_2026-09-09"
++    ],
++    "old_nodes_unchanged": true,
++    "builds": 1,
++    "scope": "Stackedsourcegraph, not current-main integration or audit"
++  },
++  "pr": "pending root delivery",
++  "next_action": "Commit/push source and reviewPR; no merge/audit"
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md
+new file mode 100644
+index 0000000000..5fe54e10c7
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/TRACE_GATE.md
+@@ -0,0 +1,15 @@
++# Trace gate
++
++```json
++{
++  "trace_class": "upstream_support",
++  "target_claim_id": "native_open_node_alpha",
++  "target_blocker_text": "Actual common-frame Gaussian overlaps and inserted Ward kernels with certified total error",
++  "source_of_blocker_text": "handoff",
++  "reachability_to_target": "supports",
++  "artifact_role": "theorem",
++  "next_trace_action": "Build accepted common native pairings/insertions and propagate finite-frame, HS, scalar and time errors to alpha."
++}
++```
++
++The positive uninserted branch and bounded ordered contractions support the numerical kernel. They do not fix an inserted sign or compute alpha.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json
+new file mode 100644
+index 0000000000..33804f5a48
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/GRAPH_CHECK.json
+@@ -0,0 +1,11 @@
++{
++  "status": "PASS",
++  "nodes": 4889,
++  "edges": 12187,
++  "added": [
++    "native_mixed_gaussian_transition_note_2026-09-09"
++  ],
++  "old_nodes_unchanged": true,
++  "builds": 1,
++  "scope": "Stackedsourcegraph, not current-main integration or audit"
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json
+new file mode 100644
+index 0000000000..6e397ef26c
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/ORIGINAL_AUTHOR_OUTPUT.json
+@@ -0,0 +1,39 @@
++{
++  "claim_status": "conditional-support",
++  "controls": [
++    {
++      "fixtures": 4,
++      "physical_calls": 0,
++      "predicates": 716,
++      "scope": "literal synthetic Fock exponent, ordered CAR, overlap determinant and Majorana Wick tests; no native evolution",
++      "status": "PASS",
++      "wrong_F_sign_discriminations": 22
++    },
++    {
++      "doublings": 11,
++      "matrix_products": 22,
++      "physical_calls": 0,
++      "predicates": 16,
++      "status": "PASS_SYNTHETIC_EXACT"
++    }
++  ],
++  "input_hashes": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  },
++  "physical_calls": 0,
++  "scope": "Synthetic literal CAR and exact finite arithmetic only; no native overlap or alpha certificate.",
++  "status": "PASS_SUPPORTING_CONTROLS"
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json
+new file mode 100644
+index 0000000000..e465c9eef9
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_FREEZE.json
+@@ -0,0 +1,22 @@
++{
++  "review_sha256": "e03d7c6fb9ecafe49cddb2914fde5f5217e1162fde56161898328e67217772bc",
++  "canonical_source_freeze": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
++  "files": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json": "fea46c382c9684dfe305ed7cdd8eaa7645fe0c3733e295fe29ed2ba478cb3fa2",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09.py": "7f1552fddb5df60ae0c19843c9c79a5fd1aafe99fd8ee87a7c5ed60407224cf1",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md
+new file mode 100644
+index 0000000000..b8e3d0d23d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md
+@@ -0,0 +1,168 @@
++---
++claim_id: native_mixed_gaussian_transition
++claim_type: bounded_theorem
++actual_current_surface_status: conditional-support
++runner: scripts/native_mixed_gaussian_transition_2026_09_09.py
++---
++# Positive mixed Gaussian overlaps and certified transition arithmetic
++
++For the supplied real infinite native model, normalized finite-imaginary-time impurity vacua in a single common reference CAR frame have strictly positive mixed overlap. Their normalized two- and four-Majorana transition ratios are uniformly bounded by199 and118803. This note also supplies efficient finite-matrix inverse/logarithm certificates, with explicit input and Hilbert–Schmidt tail obligations. It performs no native evolution, overlap, or alpha calculation.
++
++The load-bearing physical import is the [uniform imaginary-time reference-chart theorem](NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md): real skew pairings at every finite time have norm<=99/100 and are trace class. The [finite-excitation Ward theorem](NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md) supplies the common Fock realization and finite relative-energy interpretation. These are supplied-model premises, not selection of a new microscopic theory. The finite-matrix arithmetic below requires a separately certified approximation to those pairings; no shifted Gram ghost representation is presumed physical.
++
++Conditional on the supplied real native reference frame and the linked uniform reference-chart theorem: each finite-time pairing Z_A(t) is real skew, trace class (HS suffices below), and ||Z_A(t)||<=r=99/100. Its normalized vector has the reference-positive convention
++
++    |Z>=a(Z) exp(½ f† Z f†)|0>,
++    a(Z)=det(I+Z*Z)^(-1/4)>0.
++
++The same single reference CAR frame is mandatory for both impurities. Independent gauge changes of one state must be transported, not discarded. No actual native time evolution or numerical matrix is computed here.
++
++## Nonzero overlap with fixed positive phase
++
++Put W=Z_A Z_C and q=r²=9801/10000. W is trace class with norm<=q<1. The Fredholm logarithm log(I-W)=-sum_(n>=1)W^n/n converges in trace norm; each trace is real. Finite exterior-algebra Gaussian overlap gives
++
++    O_AC=<Z_A|Z_C>
++      =a(Z_A)a(Z_C) exp[½ Tr log(I-Z_A Z_C)] >0.       (1)
++
++This is the positive square root of the Fredholm determinant, not an arbitrary numerical determinant branch. For finite matrices, scaling both pairings from zero never crosses a zero because ||W||<1; the real overlap starts at1. Finite-rank real compressions converge in HS, their products in trace norm, Gaussian vectors in Fock norm, and determinants continuously. Their positive logarithms converge to the finite real value in(1), proving strict positivity in infinite volume as well. Thus the uninserted mixed-vacuum phase obstruction is removed on this common disk. Majorana-inserted kernels can still vanish or have either sign/complex phase.
++
++Let T_A=||Z_A||HS²,T_C=||Z_C||HS². A conservative explicit lower bound is
++
++    log O_AC >= -(T_A+T_C)/4 -sqrt(T_A T_C)/(2(1-q)).
++
++The anchor bound uses log(I+Z*Z)<=Z*Z; the mixed logarithm uses ||W||1<=sqrt(T_A T_C). No positive amplitude floor independent of these trace quantities follows from the disk alone. For example many copies of opposite2-mode pairings have an exponentially small positive overlap. Work in logarithms to avoid underflow. Positive unnormalized evolution scalars multiply(1) and must be tracked separately.
++
++## Ordered CAR contractions: index convention is load bearing
++
++Define every transition expectation as <Z_A|operator|Z_C>/O_AC, in the displayed operator order. Write
++
++    A=(I-Z_C Z_A)^-1,
++    <f_i f_j†>=A_ij,
++    <f_i f_j>=F_ij,             F=-A Z_C,
++    <f_i† f_j†>=B_ij,           B=Z_A A,
++    <f_i† f_j>=C_ij,            C=-Z_A A Z_C.            (2)
++
++The ket relation f_i|Z_C>=sum_j (Z_C)_ij f_j†|Z_C> and its bra adjoint, together with CAR, derive(2). In particular F and B are skew and A+C^T=I. The transpose/order in C must not be replaced by a guessed occupation matrix. A2-mode check gives <f1 f2>=-z_C/(1+z_A z_C), fixing the minus sign. Uniformly
++
++    ||A||<=10000/199, ||F||,||B||<=r/(1-q), ||C||<=q/(1-q).
++
++For L=u^T f+v^T f†, use bilinear coefficients (no implicit complex conjugation):
++
++    D(L1,L2)=u1^T F u2+u1^T A v2+v1^T C u2+v1^T B v2.
++
++The physical Majoranas are a_j=f_j+f_j† and b_j=i(f_j†-f_j). Thus b has(u,v)=(-i e_j,i e_j). Odd insertions have zero transition expectation. For four ordered insertions Wick's rule gives
++
++    <L1 L2 L3 L4>=D12 D34-D13 D24+D14 D23.             (3)
++
++This also holds with repeated insertions; CAR contact terms are already in A. It is a quasifree transition functional, not a positive state when A and C differ. Multiply(2)-(3) by the positive overlap and any supplied positive evolution norms for unnormalized Ward kernels. All explicit i factors and any extra native operator coefficient remain necessary.
++
++## Stable finite series and computable tails
++
++For V=Z_C Z_A, A_N=sum_(n=0)^N V^n satisfies
++
++    ||A-A_N|| <= q^(N+1)/(1-q).
++
++No eigenvalue decomposition or square-root branch tracking is needed. The log-determinant truncation afterN terms obeys
++
++    |Tr log(I-W)+sum_(n=1)^N Tr W^n/n|
++      <=||W||1 q^N/((N+1)(1-q)).
++
++For the full normalized log overlap use
++
++    log O =¼ sum Tr(Z_A²)^n/n +¼ sum Tr(Z_C²)^n/n
++            -½ sum Tr(Z_A Z_C)^n/n.
++
++A common truncation bound is [¼(T_A+T_C)+½sqrt(T_A T_C)]q^N/((N+1)(1-q)). These formulas are finite-rank implementable once a common pairing approximation and its HS error are certified; the disk alone supplies neither that approximation nor a cost guarantee. The inverse tail atN=2048 is less10^-15 by exact rational comparison, although performing2048 dense products is not claimed practical. Faster certified solves may replace this deliberately simple series.
++
++## Input error rather than assumed floating-point stability
++
++Let hat pairings be real skew with norms<1. The number q_* must bound BOTH the actual and approximate product norms; for example choose q_*=max(r²,||hat Z_A||||hat Z_C||)<1. Set e_A=||Z_A-hat Z_A||, e_C analogously. Then
++
++    delta_V <= e_C||Z_A||+||hat Z_C||e_A,
++    ||A-hat A|| <=delta_V/[(1-||Z_C||||Z_A||)(1-||hat Z_C||||hat Z_A||)].
++
++Add the computed inverse residual or finite-series tail separately. For F, for example, error<=||A-hat A||||Z_C||+||hat A||e_C; B and C follow by the displayed two-/three-factor telescoping products. This is an actual absolute transition-kernel error bound, independent of how small O is.
++
++For HS input errors E_A,E_C, let delta_W1<=E_A||Z_C||HS+||hat Z_A||HS E_C. Then
++
++    |Delta log O| <=¼(||Z_A||HS+||hat Z_A||HS)E_A
++                    +¼(||Z_C||HS+||hat Z_C||HS)E_C
++                    +delta_W1/[2(1-q_*)].
++
++The anchor terms use the positive-matrix log Lipschitz bound with inverse norm<=1; the mixed term uses the trace-log series/line integral on the operator-norm ball. This yields multiplicative overlap error exp(±bound). A sufficient implementation must bound HS tails as well as operator norms, and preserve/reconstruct the real-skew common frame.
++
++For four insertions propagate the three products in(3): each product error is bounded by delta_Dij*|Dkl|+|hat Dij|*delta_Dkl, summed with absolute values. Combining O and an inserted scalar K uses |Delta(OK)|<=|Delta O||K|+|hat O||Delta K|. These estimates do not prove the sign of any inserted Ward sum or determine the unresolved alpha.
++
++## Fixed-degree Majorana consequences
++
++For a normalized real Majorana combination L=sum_j(x_j a_j+y_j b_j), ||x||²+||y||²=1, the annihilation/creation coefficient vectors u=x-iy and v=x+iy both have norm1. Therefore the four contraction-block bounds in the main derivation give
++
++    |D(L1,L2)| <=(1+2r+r²)/(1-r²)=(1+r)/(1-r)=199.
++
++The four-insertion Wick ratio is consequently at most3*199²=118803 in absolute value. Odd ratios vanish. These are uniform in volume and in the finite imaginary times for which the reviewed common-disk theorem holds. They bound only fixed-degree insertions normalized by the positive mixed overlap. They neither imply the inserted ratio is positive nor control arbitrary high-degree operators. They show that a small uninserted overlap does not by itself introduce an unbounded fixed-degree transition ratio; coefficient/operator approximation errors remain those in the main derivation.
++
++These inequalities are immediate consequences of the proved norm estimates, not results of a new physical calculation.
++
++## Efficient finite-matrix certificate
++
++Let E=Z_C Z_A, ||E||<=q<1, M=I−E, and g=1−q. For the exact native disk q=9801/10000 and g=199/10000. For approximate finite inputs use a certified common qbar bounding their actual products; do not assume the exact disk automatically applies to approximate matrices. Then sigma_min(M)>=g and ||M||<=1+q. The positive mixed determinant branch is supplied by the independently proved real Gaussian overlap theorem.
++
++## Eleven doubling steps
++
++Set P_1=E and S_1=I. Given P_n=E^n and S_n=sum[k=0..n−1]E^k, compute
++
++ S_2n=S_n+P_n S_n, P_2n=P_n P_n.
++
++Eleven steps give2048 terms with22 matrix products, not2048 products. The last power product can be omitted if only the sum is wanted. In exact arithmetic ||P_n||<=q^n and ||S_n||<1/g, so no exact intermediate magnitude grows exponentially. The inverse tail is q^2048/g<10^-15. No normality or spectral-eigenvector assumption is used.
++
++Floating or approximate products are candidates only. A fresh certified residual rho>=||I−M Shat|| gives
++
++ ||M^-1−Shat||<=rho/g.
++
++If the residual is computed for a matrix Mhat with certified ||M−Mhat||<=eta, use rho<=rhohat+eta||Shat||. Directed interval residual loops or an independently proved roundoff bound are required; a vendor multiplication result alone is not a certificate. This residual can replace lengthy forward propagation through all doubling products. Finite intermediate checks and a failed residual gate must stop the fixed attempt, not silently increase precision or iterations.
++
++For optional forward enclosures, if power/sum errors at n are ep,es and new product/addition roundoff envelopes are dp,ds, then
++
++ ep_next <=2 q^n ep+ep²+dp,
++ es_next <=(1+q^n)es+ep(1/g+es)+ds.
++
++These are sufficient, not claims that binary64 automatically meets a target. The fresh residual remains preferable. Transition F,B,C errors follow the previously reviewed two-/three-factor telescoping bounds.
++
++## LU candidate and certified log determinant
++
++Suppose a real LU candidate, including its row permutation Pi, defines the exact dyadic matrix B=Pi^-1 L U. Require finite stored entries and nonzero pivots. Unit diagonal L must actually be represented as unit, or its diagonal product must also be included. Build a certified residual bound eta>=||B−M|| with eta<g. Matrix-input error is included in eta, not omitted from the reconstruction residual.
++
++Every M+t(B−M) is invertible because its least singular value is >=g−t eta. Its real determinant cannot change sign. Since det M>0, det B>0. The exact sign from permutation and diagonal factors must agree; a disagreement means the candidate/residual certificate failed. No numerical determinant square-root branch is selected.
++
++The exact determinant differential gives
++
++ |log det B−log det M| <=−N log(1−eta/g).             (1)
++
++Indeed integrate |Tr[(M+tDelta)^−1 Delta]|<=N eta/(g−t eta). This works for nonsymmetric, nonnormal M. If a trace-norm residual tau>=||Delta||1 is available, the alternative bound tau/(g−eta) is valid. For eta/g<=1/2, the simple rational sufficient bound2N eta/g avoids evaluating the logarithm in(1). Thus a target delta_log may use eta<=g delta_log/(2N), with eta<=g/2. This is a dimension-dependent finite determinant bound, not a determinant continuity assertion based only on operator error in infinite dimension.
++
++The computed scalar log det B also needs enclosure; summing unproved libm logarithms is insufficient. Each |Lii| or |Uii| is an exact positive dyadic. Write x=2^k y with1<=y<2 by integer comparisons. For z=(y−1)/(y+1),0<=z<1/3,
++
++ log y=2 sum[j=0..m−1]z^(2j+1)/(2j+1)+R,
++ 0<=R<=2 z^(2m+1)/((2m+1)(1−z²)).
++
++Use z=1/3 for log2. Combine all k into one signed integer before multiplying its log2 enclosure; then sum the remaining log y intervals outward. This certifies log|det B| directly without multiplying enormous/small pivots. The determinant sign is accounted for separately as above. Scalar interval widths and residual bound(1) are added.
++
++## Normalized overlap and separate infinite-input error
++
++The finite normalized log overlap is
++
++ ell=½log det(I−Z_A Z_C)−¼log det(I+Z_A^T Z_A)−¼log det(I+Z_C^T Z_C).
++
++Using I−Z_CZ_A instead gives the same determinant. Each anchor has least singular value>=1 and norm<=1+||Z||² (use the certified approximate pairing norm for approximate inputs), so the same backward-certificate method works with g=1 (or certified Cholesky plus its residual). Add half the mixed log error and one quarter of each anchor log error. Positive overlap follows from the theorem, not an amplitude floor. An ell interval yields multiplicative error exp(±delta); a separate outward scalar exponential is needed only when an amplitude is requested.
++
++For true infinite pairings approximated by these finite matrices, first add the reviewed HS input bound with q_* controlling BOTH actual and approximate products. This is essential: finiteN LU error does not control omitted HS tails. Zero-padding a valid common finite CAR frame adds determinant1 and changes no state, while inventing numerical ghost modes is not justified. Relative gauges/frames and unnormalized evolution scalars remain separately bound.
++
++## Prospective cost and outputs
++
++Candidate inverse: at most22 doubling matrix products plus one fresh residual. Candidate log determinant: one real LU and one certified product residual per determinant, plus O(N) scalar log enclosures. These operation counts replace a2048-product narrative; no measured runtime or memory target is claimed. A later contract should save pairings/source hashes, qbar, inverse residual, exact pivot/permutation signs, LU residual, scalar log intervals and all HS/input allocations. No alpha or inserted-kernel sign conclusion follows.
++
++## Supporting evidence and scope
++
++The portable runner executes only the preserved synthetic2/4-mode literal Fock/CAR controls and exact2x2 doubling/log-tail controls. The716 Fock supporting predicates include one resource predicate; the16 fast predicates are exact rational controls. Wrong-sign comparisons are finite algebra discriminations, not mutated native physical solvers. No physical replay, determinant evaluation on native data, or timing forecast is included.
++
++Original mathematical proofs, control receipts and source-bound independent reviews are preserved and pinned in the paired provenance directory. The assembled canonical proof includes only one clarification beyond those sources: approximate anchor upper norms use the actual certified approximate norm rather than silently inheriting r. Research protocol status is provenance, not a claim that a new computation ran. Formal audit status is not assigned by these supporting controls.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..f6c74147fe
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_FREEZE.json
+@@ -0,0 +1,21 @@
++{
++  "files": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json": "2d647b61245e932a1380bd91805f69865349061f37c65f43706d53493f1fa6ba",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09.py": "7f1552fddb5df60ae0c19843c9c79a5fd1aafe99fd8ee87a7c5ed60407224cf1",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  },
++  "scope": "synthetic supporting certificate; no native execution"
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json
+new file mode 100644
+index 0000000000..15d358675b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_ORIGINAL_SOURCE_MANIFEST.json
+@@ -0,0 +1,18 @@
++{
++  "inputs": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "cfff1e8ee492cbcbdc552707b9790c9f08484ff1d708515eac46e3b45d94ed00",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md
+new file mode 100644
+index 0000000000..c7b80a281d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-canonical-root-review_REVIEW.md
+@@ -0,0 +1,9 @@
++# Canonical mixed Gaussian transition review
++
++PASS for the assembled conditional-support theorem and synthetic certificate. Root read the full168-line theorem, primary/helper sources, status/import boundary, original source-bound mathematical reviews and final pins. Root suggested exploring binary doubling earlier but did not author the underlying proof; Primary authored it and Zeno independently reviewed it. No formal audit verdict is applied.
++
++The real common-frame, norm disk, HS product and phase continuation hypotheses are explicit. Ordered CAR signs and transpose conventions agree with the original independent literal Fock checks; repeated insertions retain contact terms. The input log bound uses q_* for both actual and approximate products and includes HS tails. LU sign/real homotopy, dimension-dependent residual and scalar log enclosures retain their limits. The approximate-anchor upper norm clarification is correct. Native evolution/alpha and physical-model selection are explicitly absent.
++
++A narrow introductory clarification now states unit real Majorana combinations for the199/118803 bounds, matching the full fixed-degree theorem. The original note/manifest/freeze are retained. No equation or implementation changed. Canonical source helpers use explicit raise guards and remain effective under-OO.716 Fock controls include a resource predicate;16 fast controls are finite exact comparisons. These do not certify a native matrix, a full physics simulation, or current-main integration. The source-freeze/manifest bind all actual script and note inputs; immutable research snapshots are explanatory provenance.
++
++Root isolated execution pending in its separate frozen protocol. Graph build and final metadata must follow that check; one serialized graph refresh, no authority surfaces or audit. Source PASS is separate from eventual integration of unlanded parents.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json
+new file mode 100644
+index 0000000000..183fc79c9a
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_FREEZE.json
+@@ -0,0 +1,21 @@
++{
++  "source_freeze": "57bffd7d8dcff0bfebaa7321932988f7a7f782272a0687e2dcdf124d55146b2e",
++  "files": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json": "fea46c382c9684dfe305ed7cdd8eaa7645fe0c3733e295fe29ed2ba478cb3fa2",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09.py": "7f1552fddb5df60ae0c19843c9c79a5fd1aafe99fd8ee87a7c5ed60407224cf1",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md
+new file mode 100644
+index 0000000000..5e23301be0
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_PROTOCOL.md
+@@ -0,0 +1 @@
++One clean isolated portable synthetic supporting execution under-I-B-S-OO. Exact16fileclosure copied beforelaunch and frozen.30s384MiB budget; subprocess external/usr/bin/time and30s caller timeout. No physical oracle/overlap/matrix run. Compare logical output to author except intended refreshed inputhashes after unit-vector clarification.
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json
+new file mode 100644
+index 0000000000..5ef560700d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_RECEIPT.json
+@@ -0,0 +1,7 @@
++{
++  "pass": true,
++  "returncode": 0,
++  "seconds": 0.13235862500732765,
++  "physical_calls": 0,
++  "source_files": 16
++}
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt
+new file mode 100644
+index 0000000000..dba18cb1b8
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDERR.txt
+@@ -0,0 +1,20 @@
++real 0.09
++user 0.08
++sys 0.00
++            20758528  maximum resident set size
++                   0  average shared memory size
++                   0  average unshared data size
++                   0  average unshared stack size
++                2380  page reclaims
++                   2  page faults
++                   0  swaps
++                   0  block input operations
++                   0  block output operations
++                   0  messages sent
++                   0  messages received
++                   0  signals received
++                  44  voluntary context switches
++                  17  involuntary context switches
++          1908729250  instructions retired
++           372451434  cycles elapsed
++            10813944  peak memory footprint
+diff --git a/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json
+new file mode 100644
+index 0000000000..a044213b79
+--- /dev/null
++++ b/.claude/science/physics-loops/native-mixed-gaussian-transition-20260909/verification/native-mixed-gaussian-transition-root-isolated_STDOUT.json
+@@ -0,0 +1,39 @@
++{
++  "claim_status": "conditional-support",
++  "controls": [
++    {
++      "fixtures": 4,
++      "physical_calls": 0,
++      "predicates": 716,
++      "scope": "literal synthetic Fock exponent, ordered CAR, overlap determinant and Majorana Wick tests; no native evolution",
++      "status": "PASS",
++      "wrong_F_sign_discriminations": 22
++    },
++    {
++      "doublings": 11,
++      "matrix_products": 22,
++      "physical_calls": 0,
++      "predicates": 16,
++      "status": "PASS_SYNTHETIC_EXACT"
++    }
++  ],
++  "input_hashes": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  },
++  "physical_calls": 0,
++  "scope": "Synthetic literal CAR and exact finite arithmetic only; no native overlap or alpha certificate.",
++  "status": "PASS_SUPPORTING_CONTROLS"
++}
+diff --git a/docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md b/docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md
+new file mode 100644
+index 0000000000..e8c0db7cfe
+--- /dev/null
++++ b/docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md
+@@ -0,0 +1,168 @@
++---
++claim_id: native_mixed_gaussian_transition
++claim_type: bounded_theorem
++actual_current_surface_status: conditional-support
++runner: scripts/native_mixed_gaussian_transition_2026_09_09.py
++---
++# Positive mixed Gaussian overlaps and certified transition arithmetic
++
++For the supplied real infinite native model, normalized finite-imaginary-time impurity vacua in a single common reference CAR frame have strictly positive mixed overlap. For unit real Majorana combinations, their overlap-normalized two- and four-insertion transition ratios are uniformly bounded by199 and118803. This note also supplies efficient finite-matrix inverse/logarithm certificates, with explicit input and Hilbert–Schmidt tail obligations. It performs no native evolution, overlap, or alpha calculation.
++
++The load-bearing physical import is the [uniform imaginary-time reference-chart theorem](NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md): real skew pairings at every finite time have norm<=99/100 and are trace class. The [finite-excitation Ward theorem](NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md) supplies the common Fock realization and finite relative-energy interpretation. These are supplied-model premises, not selection of a new microscopic theory. The finite-matrix arithmetic below requires a separately certified approximation to those pairings; no shifted Gram ghost representation is presumed physical.
++
++Conditional on the supplied real native reference frame and the linked uniform reference-chart theorem: each finite-time pairing Z_A(t) is real skew, trace class (HS suffices below), and ||Z_A(t)||<=r=99/100. Its normalized vector has the reference-positive convention
++
++    |Z>=a(Z) exp(½ f† Z f†)|0>,
++    a(Z)=det(I+Z*Z)^(-1/4)>0.
++
++The same single reference CAR frame is mandatory for both impurities. Independent gauge changes of one state must be transported, not discarded. No actual native time evolution or numerical matrix is computed here.
++
++## Nonzero overlap with fixed positive phase
++
++Put W=Z_A Z_C and q=r²=9801/10000. W is trace class with norm<=q<1. The Fredholm logarithm log(I-W)=-sum_(n>=1)W^n/n converges in trace norm; each trace is real. Finite exterior-algebra Gaussian overlap gives
++
++    O_AC=<Z_A|Z_C>
++      =a(Z_A)a(Z_C) exp[½ Tr log(I-Z_A Z_C)] >0.       (1)
++
++This is the positive square root of the Fredholm determinant, not an arbitrary numerical determinant branch. For finite matrices, scaling both pairings from zero never crosses a zero because ||W||<1; the real overlap starts at1. Finite-rank real compressions converge in HS, their products in trace norm, Gaussian vectors in Fock norm, and determinants continuously. Their positive logarithms converge to the finite real value in(1), proving strict positivity in infinite volume as well. Thus the uninserted mixed-vacuum phase obstruction is removed on this common disk. Majorana-inserted kernels can still vanish or have either sign/complex phase.
++
++Let T_A=||Z_A||HS²,T_C=||Z_C||HS². A conservative explicit lower bound is
++
++    log O_AC >= -(T_A+T_C)/4 -sqrt(T_A T_C)/(2(1-q)).
++
++The anchor bound uses log(I+Z*Z)<=Z*Z; the mixed logarithm uses ||W||1<=sqrt(T_A T_C). No positive amplitude floor independent of these trace quantities follows from the disk alone. For example many copies of opposite2-mode pairings have an exponentially small positive overlap. Work in logarithms to avoid underflow. Positive unnormalized evolution scalars multiply(1) and must be tracked separately.
++
++## Ordered CAR contractions: index convention is load bearing
++
++Define every transition expectation as <Z_A|operator|Z_C>/O_AC, in the displayed operator order. Write
++
++    A=(I-Z_C Z_A)^-1,
++    <f_i f_j†>=A_ij,
++    <f_i f_j>=F_ij,             F=-A Z_C,
++    <f_i† f_j†>=B_ij,           B=Z_A A,
++    <f_i† f_j>=C_ij,            C=-Z_A A Z_C.            (2)
++
++The ket relation f_i|Z_C>=sum_j (Z_C)_ij f_j†|Z_C> and its bra adjoint, together with CAR, derive(2). In particular F and B are skew and A+C^T=I. The transpose/order in C must not be replaced by a guessed occupation matrix. A2-mode check gives <f1 f2>=-z_C/(1+z_A z_C), fixing the minus sign. Uniformly
++
++    ||A||<=10000/199, ||F||,||B||<=r/(1-q), ||C||<=q/(1-q).
++
++For L=u^T f+v^T f†, use bilinear coefficients (no implicit complex conjugation):
++
++    D(L1,L2)=u1^T F u2+u1^T A v2+v1^T C u2+v1^T B v2.
++
++The physical Majoranas are a_j=f_j+f_j† and b_j=i(f_j†-f_j). Thus b has(u,v)=(-i e_j,i e_j). Odd insertions have zero transition expectation. For four ordered insertions Wick's rule gives
++
++    <L1 L2 L3 L4>=D12 D34-D13 D24+D14 D23.             (3)
++
++This also holds with repeated insertions; CAR contact terms are already in A. It is a quasifree transition functional, not a positive state when A and C differ. Multiply(2)-(3) by the positive overlap and any supplied positive evolution norms for unnormalized Ward kernels. All explicit i factors and any extra native operator coefficient remain necessary.
++
++## Stable finite series and computable tails
++
++For V=Z_C Z_A, A_N=sum_(n=0)^N V^n satisfies
++
++    ||A-A_N|| <= q^(N+1)/(1-q).
++
++No eigenvalue decomposition or square-root branch tracking is needed. The log-determinant truncation afterN terms obeys
++
++    |Tr log(I-W)+sum_(n=1)^N Tr W^n/n|
++      <=||W||1 q^N/((N+1)(1-q)).
++
++For the full normalized log overlap use
++
++    log O =¼ sum Tr(Z_A²)^n/n +¼ sum Tr(Z_C²)^n/n
++            -½ sum Tr(Z_A Z_C)^n/n.
++
++A common truncation bound is [¼(T_A+T_C)+½sqrt(T_A T_C)]q^N/((N+1)(1-q)). These formulas are finite-rank implementable once a common pairing approximation and its HS error are certified; the disk alone supplies neither that approximation nor a cost guarantee. The inverse tail atN=2048 is less10^-15 by exact rational comparison, although performing2048 dense products is not claimed practical. Faster certified solves may replace this deliberately simple series.
++
++## Input error rather than assumed floating-point stability
++
++Let hat pairings be real skew with norms<1. The number q_* must bound BOTH the actual and approximate product norms; for example choose q_*=max(r²,||hat Z_A||||hat Z_C||)<1. Set e_A=||Z_A-hat Z_A||, e_C analogously. Then
++
++    delta_V <= e_C||Z_A||+||hat Z_C||e_A,
++    ||A-hat A|| <=delta_V/[(1-||Z_C||||Z_A||)(1-||hat Z_C||||hat Z_A||)].
++
++Add the computed inverse residual or finite-series tail separately. For F, for example, error<=||A-hat A||||Z_C||+||hat A||e_C; B and C follow by the displayed two-/three-factor telescoping products. This is an actual absolute transition-kernel error bound, independent of how small O is.
++
++For HS input errors E_A,E_C, let delta_W1<=E_A||Z_C||HS+||hat Z_A||HS E_C. Then
++
++    |Delta log O| <=¼(||Z_A||HS+||hat Z_A||HS)E_A
++                    +¼(||Z_C||HS+||hat Z_C||HS)E_C
++                    +delta_W1/[2(1-q_*)].
++
++The anchor terms use the positive-matrix log Lipschitz bound with inverse norm<=1; the mixed term uses the trace-log series/line integral on the operator-norm ball. This yields multiplicative overlap error exp(±bound). A sufficient implementation must bound HS tails as well as operator norms, and preserve/reconstruct the real-skew common frame.
++
++For four insertions propagate the three products in(3): each product error is bounded by delta_Dij*|Dkl|+|hat Dij|*delta_Dkl, summed with absolute values. Combining O and an inserted scalar K uses |Delta(OK)|<=|Delta O||K|+|hat O||Delta K|. These estimates do not prove the sign of any inserted Ward sum or determine the unresolved alpha.
++
++## Fixed-degree Majorana consequences
++
++For a normalized real Majorana combination L=sum_j(x_j a_j+y_j b_j), ||x||²+||y||²=1, the annihilation/creation coefficient vectors u=x-iy and v=x+iy both have norm1. Therefore the four contraction-block bounds in the main derivation give
++
++    |D(L1,L2)| <=(1+2r+r²)/(1-r²)=(1+r)/(1-r)=199.
++
++The four-insertion Wick ratio is consequently at most3*199²=118803 in absolute value. Odd ratios vanish. These are uniform in volume and in the finite imaginary times for which the reviewed common-disk theorem holds. They bound only fixed-degree insertions normalized by the positive mixed overlap. They neither imply the inserted ratio is positive nor control arbitrary high-degree operators. They show that a small uninserted overlap does not by itself introduce an unbounded fixed-degree transition ratio; coefficient/operator approximation errors remain those in the main derivation.
++
++These inequalities are immediate consequences of the proved norm estimates, not results of a new physical calculation.
++
++## Efficient finite-matrix certificate
++
++Let E=Z_C Z_A, ||E||<=q<1, M=I−E, and g=1−q. For the exact native disk q=9801/10000 and g=199/10000. For approximate finite inputs use a certified common qbar bounding their actual products; do not assume the exact disk automatically applies to approximate matrices. Then sigma_min(M)>=g and ||M||<=1+q. The positive mixed determinant branch is supplied by the independently proved real Gaussian overlap theorem.
++
++## Eleven doubling steps
++
++Set P_1=E and S_1=I. Given P_n=E^n and S_n=sum[k=0..n−1]E^k, compute
++
++ S_2n=S_n+P_n S_n, P_2n=P_n P_n.
++
++Eleven steps give2048 terms with22 matrix products, not2048 products. The last power product can be omitted if only the sum is wanted. In exact arithmetic ||P_n||<=q^n and ||S_n||<1/g, so no exact intermediate magnitude grows exponentially. The inverse tail is q^2048/g<10^-15. No normality or spectral-eigenvector assumption is used.
++
++Floating or approximate products are candidates only. A fresh certified residual rho>=||I−M Shat|| gives
++
++ ||M^-1−Shat||<=rho/g.
++
++If the residual is computed for a matrix Mhat with certified ||M−Mhat||<=eta, use rho<=rhohat+eta||Shat||. Directed interval residual loops or an independently proved roundoff bound are required; a vendor multiplication result alone is not a certificate. This residual can replace lengthy forward propagation through all doubling products. Finite intermediate checks and a failed residual gate must stop the fixed attempt, not silently increase precision or iterations.
++
++For optional forward enclosures, if power/sum errors at n are ep,es and new product/addition roundoff envelopes are dp,ds, then
++
++ ep_next <=2 q^n ep+ep²+dp,
++ es_next <=(1+q^n)es+ep(1/g+es)+ds.
++
++These are sufficient, not claims that binary64 automatically meets a target. The fresh residual remains preferable. Transition F,B,C errors follow the previously reviewed two-/three-factor telescoping bounds.
++
++## LU candidate and certified log determinant
++
++Suppose a real LU candidate, including its row permutation Pi, defines the exact dyadic matrix B=Pi^-1 L U. Require finite stored entries and nonzero pivots. Unit diagonal L must actually be represented as unit, or its diagonal product must also be included. Build a certified residual bound eta>=||B−M|| with eta<g. Matrix-input error is included in eta, not omitted from the reconstruction residual.
++
++Every M+t(B−M) is invertible because its least singular value is >=g−t eta. Its real determinant cannot change sign. Since det M>0, det B>0. The exact sign from permutation and diagonal factors must agree; a disagreement means the candidate/residual certificate failed. No numerical determinant square-root branch is selected.
++
++The exact determinant differential gives
++
++ |log det B−log det M| <=−N log(1−eta/g).             (1)
++
++Indeed integrate |Tr[(M+tDelta)^−1 Delta]|<=N eta/(g−t eta). This works for nonsymmetric, nonnormal M. If a trace-norm residual tau>=||Delta||1 is available, the alternative bound tau/(g−eta) is valid. For eta/g<=1/2, the simple rational sufficient bound2N eta/g avoids evaluating the logarithm in(1). Thus a target delta_log may use eta<=g delta_log/(2N), with eta<=g/2. This is a dimension-dependent finite determinant bound, not a determinant continuity assertion based only on operator error in infinite dimension.
++
++The computed scalar log det B also needs enclosure; summing unproved libm logarithms is insufficient. Each |Lii| or |Uii| is an exact positive dyadic. Write x=2^k y with1<=y<2 by integer comparisons. For z=(y−1)/(y+1),0<=z<1/3,
++
++ log y=2 sum[j=0..m−1]z^(2j+1)/(2j+1)+R,
++ 0<=R<=2 z^(2m+1)/((2m+1)(1−z²)).
++
++Use z=1/3 for log2. Combine all k into one signed integer before multiplying its log2 enclosure; then sum the remaining log y intervals outward. This certifies log|det B| directly without multiplying enormous/small pivots. The determinant sign is accounted for separately as above. Scalar interval widths and residual bound(1) are added.
++
++## Normalized overlap and separate infinite-input error
++
++The finite normalized log overlap is
++
++ ell=½log det(I−Z_A Z_C)−¼log det(I+Z_A^T Z_A)−¼log det(I+Z_C^T Z_C).
++
++Using I−Z_CZ_A instead gives the same determinant. Each anchor has least singular value>=1 and norm<=1+||Z||² (use the certified approximate pairing norm for approximate inputs), so the same backward-certificate method works with g=1 (or certified Cholesky plus its residual). Add half the mixed log error and one quarter of each anchor log error. Positive overlap follows from the theorem, not an amplitude floor. An ell interval yields multiplicative error exp(±delta); a separate outward scalar exponential is needed only when an amplitude is requested.
++
++For true infinite pairings approximated by these finite matrices, first add the reviewed HS input bound with q_* controlling BOTH actual and approximate products. This is essential: finiteN LU error does not control omitted HS tails. Zero-padding a valid common finite CAR frame adds determinant1 and changes no state, while inventing numerical ghost modes is not justified. Relative gauges/frames and unnormalized evolution scalars remain separately bound.
++
++## Prospective cost and outputs
++
++Candidate inverse: at most22 doubling matrix products plus one fresh residual. Candidate log determinant: one real LU and one certified product residual per determinant, plus O(N) scalar log enclosures. These operation counts replace a2048-product narrative; no measured runtime or memory target is claimed. A later contract should save pairings/source hashes, qbar, inverse residual, exact pivot/permutation signs, LU residual, scalar log intervals and all HS/input allocations. No alpha or inserted-kernel sign conclusion follows.
++
++## Supporting evidence and scope
++
++The portable runner executes only the preserved synthetic2/4-mode literal Fock/CAR controls and exact2x2 doubling/log-tail controls. The716 Fock supporting predicates include one resource predicate; the16 fast predicates are exact rational controls. Wrong-sign comparisons are finite algebra discriminations, not mutated native physical solvers. No physical replay, determinant evaluation on native data, or timing forecast is included.
++
++Original mathematical proofs, control receipts and source-bound independent reviews are preserved and pinned in the paired provenance directory. The assembled canonical proof includes only one clarification beyond those sources: approximate anchor upper norms use the actual certified approximate norm rather than silently inheriting r. Research protocol status is provenance, not a claim that a new computation ran. Formal audit status is not assigned by these supporting controls.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 1bd66adcaa..9fc6caed2e 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12185,
+- "node_count": 4888,
++ "edge_count": 12187,
++ "node_count": 4889,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -12426,6 +12426,10 @@
+    "deps_hash": "a1a031ff0cde",
+    "out_degree": 4
+   },
++  "native_mixed_gaussian_transition_note_2026-09-09": {
++   "deps_hash": "0a8ea140709d",
++   "out_degree": 2
++  },
+   "native_pair_vacuum_chart_note_2026-09-09": {
+    "deps_hash": "131ecc6a3488",
+    "out_degree": 3
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09.json b/outputs/native_mixed_gaussian_transition_2026_09_09.json
+new file mode 100644
+index 0000000000..a044213b79
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09.json
+@@ -0,0 +1,39 @@
++{
++  "claim_status": "conditional-support",
++  "controls": [
++    {
++      "fixtures": 4,
++      "physical_calls": 0,
++      "predicates": 716,
++      "scope": "literal synthetic Fock exponent, ordered CAR, overlap determinant and Majorana Wick tests; no native evolution",
++      "status": "PASS",
++      "wrong_F_sign_discriminations": 22
++    },
++    {
++      "doublings": 11,
++      "matrix_products": 22,
++      "physical_calls": 0,
++      "predicates": 16,
++      "status": "PASS_SYNTHETIC_EXACT"
++    }
++  ],
++  "input_hashes": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  },
++  "physical_calls": 0,
++  "scope": "Synthetic literal CAR and exact finite arithmetic only; no native overlap or alpha certificate.",
++  "status": "PASS_SUPPORTING_CONTROLS"
++}
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json
+new file mode 100644
+index 0000000000..43b56d1045
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json
+@@ -0,0 +1,18 @@
++{
++  "inputs": {
++    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
++    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++    "docs/NATIVE_MIXED_GAUSSIAN_TRANSITION_NOTE_2026-09-09.md": "ba0e708f4770e2e80911af17116168f893ab33658427d19de5e00448e1d091a6",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json": "3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md": "338038bfad1ec9c415b2cb45283f46241560943b9af5612e7490634cc9da3007",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json": "d7024d5200e07848a851ebc360911c5dd35d539ed47deead9ad5b011d1f01164",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++    "outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fast.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++    "scripts/native_mixed_gaussian_transition_2026_09_09_fock.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308"
++  }
++}
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json
+new file mode 100644
+index 0000000000..0602f578b2
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_CONTROL_RESULT.json
+@@ -0,0 +1 @@
++{"status": "PASS_SYNTHETIC_EXACT", "predicates": 16, "physical_calls": 0, "doublings": 11, "matrix_products": 22}
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json
+new file mode 100644
+index 0000000000..cf5f9663c0
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_FREEZE.json
+@@ -0,0 +1,10 @@
++{
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-transition-fast-certificate/check.py": "3482e799c63880fbe70b2ddbfad7b5468dc41c77d87fad7152eeddcb7ea9aa9f",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-transition-fast-certificate/RESULT.json": "027f7172a81579035b0dadd48e35a04737a0d33de0b4bfaf34d4f63868c7bb63",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-transition-fast-certificate/TIME.txt": "88f05f0c593c29938f060d77de01c1ad9bee5c738826ec0dfc5018ad82f49a72",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-transition-fast-certificate/PRE_RUN_SHA": "78a9221932b898004f00684108bd03d487b044431c76700ff2cf2cf7b39eacd6",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-transition-fast-certificate/PROTOCOL.md": "fc19891cfa4766ee5c7a3ad1a0d8e5977d885e80a6060cf4a51e00677fd6c022",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-transition-fast-certificate/DERIVATION.md": "7e631e53bc5c7f6cc0aff858d30bced4fb530ae9849ba5c7fb9c905447eed620",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/DERIVATION.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-cold-review/REVIEW.md": "8016b89d8eeca13b1d7c74aace628a1c54b4ecaf8dced568cb0d5077337843ac"
++}
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md
+new file mode 100644
+index 0000000000..24a8f4ec53
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_PROOF.md
+@@ -0,0 +1,59 @@
++# Efficient certified mixed transition inverse and logarithm
++
++Prospective finite-matrix arithmetic method, no native propagation or matrix evaluation. Inputs must already be certified real-skew pairings in one legitimate common CAR frame. Their approximation to infinite native pairings, HS tails and frame errors are separate obligations. A Gram-shift ghost representation is not admitted merely because the matrices below are invertible.
++
++Let E=Z_C Z_A, ||E||<=q<1, M=I−E, and g=1−q. For the exact native disk q=9801/10000 and g=199/10000. For approximate finite inputs use a certified common qbar bounding their actual products; do not assume the exact disk automatically applies to approximate matrices. Then sigma_min(M)>=g and ||M||<=1+q. The positive mixed determinant branch is supplied by the independently proved real Gaussian overlap theorem.
++
++## Eleven doubling steps
++
++Set P_1=E and S_1=I. Given P_n=E^n and S_n=sum[k=0..n−1]E^k, compute
++
++ S_2n=S_n+P_n S_n, P_2n=P_n P_n.
++
++Eleven steps give2048 terms with22 matrix products, not2048 products. The last power product can be omitted if only the sum is wanted. In exact arithmetic ||P_n||<=q^n and ||S_n||<1/g, so no exact intermediate magnitude grows exponentially. The inverse tail is q^2048/g<10^-15. No normality or spectral-eigenvector assumption is used.
++
++Floating or approximate products are candidates only. A fresh certified residual rho>=||I−M Shat|| gives
++
++ ||M^-1−Shat||<=rho/g.
++
++If the residual is computed for a matrix Mhat with certified ||M−Mhat||<=eta, use rho<=rhohat+eta||Shat||. Directed interval residual loops or an independently proved roundoff bound are required; a vendor multiplication result alone is not a certificate. This residual can replace lengthy forward propagation through all doubling products. Finite intermediate checks and a failed residual gate must stop the fixed attempt, not silently increase precision or iterations.
++
++For optional forward enclosures, if power/sum errors at n are ep,es and new product/addition roundoff envelopes are dp,ds, then
++
++ ep_next <=2 q^n ep+ep²+dp,
++ es_next <=(1+q^n)es+ep(1/g+es)+ds.
++
++These are sufficient, not claims that binary64 automatically meets a target. The fresh residual remains preferable. Transition F,B,C errors follow the previously reviewed two-/three-factor telescoping bounds.
++
++## LU candidate and certified log determinant
++
++Suppose a real LU candidate, including its row permutation Pi, defines the exact dyadic matrix B=Pi^-1 L U. Require finite stored entries and nonzero pivots. Unit diagonal L must actually be represented as unit, or its diagonal product must also be included. Build a certified residual bound eta>=||B−M|| with eta<g. Matrix-input error is included in eta, not omitted from the reconstruction residual.
++
++Every M+t(B−M) is invertible because its least singular value is >=g−t eta. Its real determinant cannot change sign. Since det M>0, det B>0. The exact sign from permutation and diagonal factors must agree; a disagreement means the candidate/residual certificate failed. No numerical determinant square-root branch is selected.
++
++The exact determinant differential gives
++
++ |log det B−log det M| <=−N log(1−eta/g).             (1)
++
++Indeed integrate |Tr[(M+tDelta)^−1 Delta]|<=N eta/(g−t eta). This works for nonsymmetric, nonnormal M. If a trace-norm residual tau>=||Delta||1 is available, the alternative bound tau/(g−eta) is valid. For eta/g<=1/2, the simple rational sufficient bound2N eta/g avoids evaluating the logarithm in(1). Thus a target delta_log may use eta<=g delta_log/(2N), with eta<=g/2. This is a dimension-dependent finite determinant bound, not a determinant continuity assertion based only on operator error in infinite dimension.
++
++The computed scalar log det B also needs enclosure; summing unproved libm logarithms is insufficient. Each |Lii| or |Uii| is an exact positive dyadic. Write x=2^k y with1<=y<2 by integer comparisons. For z=(y−1)/(y+1),0<=z<1/3,
++
++ log y=2 sum[j=0..m−1]z^(2j+1)/(2j+1)+R,
++ 0<=R<=2 z^(2m+1)/((2m+1)(1−z²)).
++
++Use z=1/3 for log2. Combine all k into one signed integer before multiplying its log2 enclosure; then sum the remaining log y intervals outward. This certifies log|det B| directly without multiplying enormous/small pivots. The determinant sign is accounted for separately as above. Scalar interval widths and residual bound(1) are added.
++
++## Normalized overlap and separate infinite-input error
++
++The finite normalized log overlap is
++
++ ell=½log det(I−Z_A Z_C)−¼log det(I+Z_A^T Z_A)−¼log det(I+Z_C^T Z_C).
++
++Using I−Z_CZ_A instead gives the same determinant. The two anchors have least singular value>=1 and norm<=1+r², so the same backward-certificate method works with g=1 (or certified Cholesky plus its residual). Add half the mixed log error and one quarter of each anchor log error. Positive overlap follows from the theorem, not an amplitude floor. An ell interval yields multiplicative error exp(±delta); a separate outward scalar exponential is needed only when an amplitude is requested.
++
++For true infinite pairings approximated by these finite matrices, first add the reviewed HS input bound with q_* controlling BOTH actual and approximate products. This is essential: finiteN LU error does not control omitted HS tails. Zero-padding a valid common finite CAR frame adds determinant1 and changes no state, while inventing numerical ghost modes is not justified. Relative gauges/frames and unnormalized evolution scalars remain separately bound.
++
++## Prospective cost and outputs
++
++Candidate inverse: at most22 doubling matrix products plus one fresh residual. Candidate log determinant: one real LU and one certified product residual per determinant, plus O(N) scalar log enclosures. These operation counts replace a2048-product narrative; no measured runtime or memory target is claimed. A later contract should save pairings/source hashes, qbar, inverse residual, exact pivot/permutation signs, LU residual, scalar log intervals and all HS/input allocations. No alpha or inserted-kernel sign conclusion follows.
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md
+new file mode 100644
+index 0000000000..789d18a968
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FAST_REVIEW.md
+@@ -0,0 +1,21 @@
++# Independent cold review of fast mixed-transition certificates
++
++Disposition: PASS for the prospective mathematical certificate method. Reviewed complete DERIVATION7e631e53, check.py3482e799, protocol, pre-run hash, result and timing, and all8 pins in freeze3cfb9ed8c7e391d4fe8a910c8ecc81dea7cb5153567808b1775f9f76ff66a2c5. Every pin matches. This reviewer authored the imported mixed-overlap/CAR theorem; that theorem is reused openly. The doubling/LU/log construction and its source are independently reviewed here, not authored by this reviewer. No B66 source was changed and no native computation occurred.
++
++## Algebra and inverse certificate
++
++The simultaneous recurrence S2n=Sn+PnSn,P2n=Pn² is correct without normality. After11 doublings the sum contains2048 terms and the stated exact tail is below1e-15. There are22 products, or21 if the final unused power is omitted. The fresh residual identity M^-1-Shat=M^-1(I-MShat) proves the claimed bound with g=1-q. Input-matrix error contributes eta||Shat|| by the triangle inequality. In implementation the displayed sum is the certified residual upper bound to use; no arbitrarily smaller rho is justified. The optional forward bounds correctly include both cross-error and quadratic terms. No vendor product accuracy is asserted.
++
++## Real LU and scalar logarithms
++
++For eta<g, M+tDelta remains invertible by the singular-value perturbation bound. Its real determinant therefore has constant positive sign. Row-permutation parity and all non-unit diagonal factors must be included exactly. The determinant differential and inverse bound integrate to -N log(1-eta/g); the alternative tau/(g-eta) and rational2Neta/g bounds follow. The finite dimension factor is explicit and cannot be carried to the infinite determinant without the separately imported HS input control.
++
++The positive-dyadic logarithm decomposition is correct, including negative powers of2. The atanh-series remainder bounds all omitted positive terms using the first omitted denominator and a geometric sum. Combining the signed integer powers before applying the log2 interval avoids redundant cancellation error. This remains a proof/design: the author helper does not implement a production LU or interval residual engine, and the note does not claim it does.
++
++For approximate anchors, the universally valid upper norm is1+||Zhat||²; the shorthand1+r² is available only when that same norm bound is certified. This is non-load-bearing for the anchor log certificate, which uses the valid lower singular bound1. Approximate product norms and both actual/approximate q_* are otherwise explicitly handled. Native-frame legitimacy, ghost modes, real structure, HS tails and positive unnormalized evolution scalars remain separate obligations.
++
++## Independent exact challenges
++
++I did not rerun the author's unchanged16 controls. A separately frozen literal rational test uses a different nonnormal2x2 matrix, a seven-term candidate and fresh inverse residual, then deliberately forces an odd row permutation in an exact LU. It verifies that ignoring permutation gives the wrong determinant sign, and that falsely declaring the nonzero candidate residual zero is rejected. Exact signed-exponent log intervals, including small dyadics, satisfy inversion consistency and the LU perturbation envelope. All14 predicates pass in0.00226 seconds. These are synthetic algebraic controls, not physical matrix runs or a runtime benchmark. The author's recorded16 controls ran in0.01 seconds with14,876,672-byte maximum RSS; this is author evidence, not my measured memory.
++
++No material blocker. A future numerical implementation still needs actual dyadic/interval residual code, source/runtime freezing, saved candidate matrices and pivots, error allocations and a resource contract. This review does not authorize such a run or infer a sign for an inserted kernel or alpha.
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md
+new file mode 100644
+index 0000000000..c20a57449e
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/FIXED_DEGREE.md
+@@ -0,0 +1,9 @@
++# Dimension-free bounds for fixed-degree transition insertions
++
++For a normalized real Majorana combination L=sum_j(x_j a_j+y_j b_j), ||x||²+||y||²=1, the annihilation/creation coefficient vectors u=x-iy and v=x+iy both have norm1. Therefore the four contraction-block bounds in the main derivation give
++
++    |D(L1,L2)| <=(1+2r+r²)/(1-r²)=(1+r)/(1-r)=199.
++
++The four-insertion Wick ratio is consequently at most3*199²=118803 in absolute value. Odd ratios vanish. These are uniform in volume and in the finite imaginary times for which the reviewed common-disk theorem holds. They bound only fixed-degree insertions normalized by the positive mixed overlap. They neither imply the inserted ratio is positive nor control arbitrary high-degree operators. They show that a small uninserted overlap does not by itself introduce an unbounded fixed-degree transition ratio; coefficient/operator approximation errors remain those in the main derivation.
++
++These inequalities are immediate consequences of the proved norm estimates, not results of a new physical calculation.
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json
+new file mode 100644
+index 0000000000..94b98c010e
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_CONTROL_RESULT.json
+@@ -0,0 +1,10 @@
++{
++  "status": "PASS",
++  "predicates": 716,
++  "fixtures": 4,
++  "wrong_F_sign_discriminations": 22,
++  "seconds": 0.06432125001447275,
++  "rss_bytes": 15745024,
++  "physical_calls": 0,
++  "scope": "literal synthetic Fock exponent, ordered CAR, overlap determinant and Majorana Wick tests; no native evolution"
++}
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json
+new file mode 100644
+index 0000000000..57eb14c2a2
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_FREEZE.json
+@@ -0,0 +1,10 @@
++{
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/BEFORE_QSTAR_DERIVATION.md": "6558f66b58310ae13142d26cb073f473bf8f5e2756e05ac47254c34eeda74042",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/BEFORE_QSTAR_FREEZE.json": "84522de55d9d1025cc19b06aa259f350e95590e68a37a3f8658eea5d04c1153f",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/CONTROL_PROTOCOL.md": "6f5df58165fe8c0bd4e942723e044c4d23452453c5aa7143b5eb3e3122aad124",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/check.py": "34245618ccb694fcc43bc1d762b81cf1c9af2659429a54470513d31fd73dc308",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/RESULT.json": "83578b9129d45a57aa7f23d1d7f99cefecbeb38ebab5da121c24344d4c6652cb",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/FIXED_DEGREE_BOUND.md": "820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/PRE_RUN_FREEZE.json": "42f6fb39dba9773b0d5d846c42934fb68c29180bab6e2718ed781ec9fa0b9979",
++  "/private/tmp/toe-24h-probes-20260908/native-mixed-gaussian-positive-overlap-stretch/DERIVATION.md": "5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd"
++}
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md
+new file mode 100644
+index 0000000000..b73a6e21ff
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_PROOF.md
+@@ -0,0 +1,84 @@
++# Positive mixed vacuum overlaps and CAR transition kernels
++
++Conditional on the supplied real native reference frame and the reviewed Riccati disk theorem74531a24: each finite-time pairing Z_A(t) is real skew, trace class (HS suffices below), and ||Z_A(t)||<=r=99/100. Its normalized vector has the reference-positive convention
++
++    |Z>=a(Z) exp(½ f† Z f†)|0>,
++    a(Z)=det(I+Z*Z)^(-1/4)>0.
++
++The same single reference CAR frame is mandatory for both impurities. Independent gauge changes of one state must be transported, not discarded. No actual native time evolution or numerical matrix is computed here.
++
++## Nonzero overlap with fixed positive phase
++
++Put W=Z_A Z_C and q=r²=9801/10000. W is trace class with norm<=q<1. The Fredholm logarithm log(I-W)=-sum_(n>=1)W^n/n converges in trace norm; each trace is real. Finite exterior-algebra Gaussian overlap gives
++
++    O_AC=<Z_A|Z_C>
++      =a(Z_A)a(Z_C) exp[½ Tr log(I-Z_A Z_C)] >0.       (1)
++
++This is the positive square root of the Fredholm determinant, not an arbitrary numerical determinant branch. For finite matrices, scaling both pairings from zero never crosses a zero because ||W||<1; the real overlap starts at1. Finite-rank real compressions converge in HS, their products in trace norm, Gaussian vectors in Fock norm, and determinants continuously. Their positive logarithms converge to the finite real value in(1), proving strict positivity in infinite volume as well. Thus the uninserted mixed-vacuum phase obstruction is removed on this common disk. Majorana-inserted kernels can still vanish or have either sign/complex phase.
++
++Let T_A=||Z_A||HS²,T_C=||Z_C||HS². A conservative explicit lower bound is
++
++    log O_AC >= -(T_A+T_C)/4 -sqrt(T_A T_C)/(2(1-q)).
++
++The anchor bound uses log(I+Z*Z)<=Z*Z; the mixed logarithm uses ||W||1<=sqrt(T_A T_C). No positive amplitude floor independent of these trace quantities follows from the disk alone. For example many copies of opposite2-mode pairings have an exponentially small positive overlap. Work in logarithms to avoid underflow. Positive unnormalized evolution scalars multiply(1) and must be tracked separately.
++
++## Ordered CAR contractions: index convention is load bearing
++
++Define every transition expectation as <Z_A|operator|Z_C>/O_AC, in the displayed operator order. Write
++
++    A=(I-Z_C Z_A)^-1,
++    <f_i f_j†>=A_ij,
++    <f_i f_j>=F_ij,             F=-A Z_C,
++    <f_i† f_j†>=B_ij,           B=Z_A A,
++    <f_i† f_j>=C_ij,            C=-Z_A A Z_C.            (2)
++
++The ket relation f_i|Z_C>=sum_j (Z_C)_ij f_j†|Z_C> and its bra adjoint, together with CAR, derive(2). In particular F and B are skew and A+C^T=I. The transpose/order in C must not be replaced by a guessed occupation matrix. A2-mode check gives <f1 f2>=-z_C/(1+z_A z_C), fixing the minus sign. Uniformly
++
++    ||A||<=10000/199, ||F||,||B||<=r/(1-q), ||C||<=q/(1-q).
++
++For L=u^T f+v^T f†, use bilinear coefficients (no implicit complex conjugation):
++
++    D(L1,L2)=u1^T F u2+u1^T A v2+v1^T C u2+v1^T B v2.
++
++The physical Majoranas are a_j=f_j+f_j† and b_j=i(f_j†-f_j). Thus b has(u,v)=(-i e_j,i e_j). Odd insertions have zero transition expectation. For four ordered insertions Wick's rule gives
++
++    <L1 L2 L3 L4>=D12 D34-D13 D24+D14 D23.             (3)
++
++This also holds with repeated insertions; CAR contact terms are already in A. It is a quasifree transition functional, not a positive state when A and C differ. Multiply(2)-(3) by the positive overlap and any supplied positive evolution norms for unnormalized Ward kernels. All explicit i factors and any extra native operator coefficient remain necessary.
++
++## Stable finite series and computable tails
++
++For V=Z_C Z_A, A_N=sum_(n=0)^N V^n satisfies
++
++    ||A-A_N|| <= q^(N+1)/(1-q).
++
++No eigenvalue decomposition or square-root branch tracking is needed. The log-determinant truncation afterN terms obeys
++
++    |Tr log(I-W)+sum_(n=1)^N Tr W^n/n|
++      <=||W||1 q^N/((N+1)(1-q)).
++
++For the full normalized log overlap use
++
++    log O =¼ sum Tr(Z_A²)^n/n +¼ sum Tr(Z_C²)^n/n
++            -½ sum Tr(Z_A Z_C)^n/n.
++
++A common truncation bound is [¼(T_A+T_C)+½sqrt(T_A T_C)]q^N/((N+1)(1-q)). These formulas are finite-rank implementable once a common pairing approximation and its HS error are certified; the disk alone supplies neither that approximation nor a cost guarantee. The inverse tail atN=2048 is less10^-15 by exact rational comparison, although performing2048 dense products is not claimed practical. Faster certified solves may replace this deliberately simple series.
++
++## Input error rather than assumed floating-point stability
++
++Let hat pairings be real skew with norms<1. The number q_* must bound BOTH the actual and approximate product norms; for example choose q_*=max(r²,||hat Z_A||||hat Z_C||)<1. Set e_A=||Z_A-hat Z_A||, e_C analogously. Then
++
++    delta_V <= e_C||Z_A||+||hat Z_C||e_A,
++    ||A-hat A|| <=delta_V/[(1-||Z_C||||Z_A||)(1-||hat Z_C||||hat Z_A||)].
++
++Add the computed inverse residual or finite-series tail separately. For F, for example, error<=||A-hat A||||Z_C||+||hat A||e_C; B and C follow by the displayed two-/three-factor telescoping products. This is an actual absolute transition-kernel error bound, independent of how small O is.
++
++For HS input errors E_A,E_C, let delta_W1<=E_A||Z_C||HS+||hat Z_A||HS E_C. Then
++
++    |Delta log O| <=¼(||Z_A||HS+||hat Z_A||HS)E_A
++                    +¼(||Z_C||HS+||hat Z_C||HS)E_C
++                    +delta_W1/[2(1-q_*)].
++
++The anchor terms use the positive-matrix log Lipschitz bound with inverse norm<=1; the mixed term uses the trace-log series/line integral on the operator-norm ball. This yields multiplicative overlap error exp(±bound). A sufficient implementation must bound HS tails as well as operator norms, and preserve/reconstruct the real-skew common frame.
++
++For four insertions propagate the three products in(3): each product error is bounded by delta_Dij*|Dkl|+|hat Dij|*delta_Dkl, summed with absolute values. Combining O and an inserted scalar K uses |Delta(OK)|<=|Delta O||K|+|hat O||Delta K|. These estimates do not prove the sign of any inserted Ward sum or determine the unresolved alpha.
+diff --git a/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md
+new file mode 100644
+index 0000000000..976a8acdbe
+--- /dev/null
++++ b/outputs/native_mixed_gaussian_transition_2026_09_09_inputs/provenance/MIXED_REVIEW.md
+@@ -0,0 +1,19 @@
++# Mixed Gaussian overlap independent review
++
++Main theorem and CAR/fixed-degree bounds PASS. Full source DERIVATION6558f66b58310ae13142d26cb073f473bf8f5e2756e05ac47254c34eeda74042 and FIXED_DEGREE_BOUND820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9 read, together with literal control source/receipt and the reviewed Riccati premise. No physical call or repeated toy run.
++
++One narrow clarification is required in the input-error subsection: q_* must bound BOTH the actual and approximating products, namely q_*>=max(||Z_A||||Z_C||,||hat Z_A||||hat Z_C||). Taking max(r²,approximate product) suffices. The current wording can be read as bounding only the approximate pairings. The trace-log line-segment estimate uses both endpoints. This does not affect the exact-overlap theorem or inverse formula, whose denominator already displays both endpoint bounds.
++
++For real skew pairings, Z_A*=-Z_A, so the determinant overlap is det(I−Z_AZ_C) with the claimed sign. Norm<1 prevents a zero along the simultaneous scaling path from the reference vacuum. The finite-dimensional real overlap therefore selects the positive square root. In infinite dimension HS compression gives trace-norm convergence of the products, and the logarithm series converges in trace norm with bound ||W||1/(1−q). The limiting logarithm is a finite real number, so its exponential is strictly positive, rather than merely a limit of positive numbers that might vanish. Gaussian vectors and anchors converge under the same HS approximation. No orientation/determinant branch is assumed without this argument.
++
++The lower bound uses the positive anchor log estimate and the trace-log bound correctly. It depends on actual HS quantities; opposite2-mode blocks demonstrate that the disk alone has no volume-independent amplitude floor. The result concerns normalized states in one common real reference CAR frame, not independently rephased native frames or inserted kernels.
++
++The ket/bra annihilator relations give the four ordered contractions as displayed. In particular C=-Z_A A Z_C has the stated index order and satisfies A+C^T=I. Direct2-mode algebra gives F12=−z_C/(1+z_Az_C) and B12=z_A/(1+z_Az_C). Wick's4-term signs and repeated-index contacts are consistent. Neumann bounds give10000/199 and the r/r²-scaled blocks. A normalized real Majorana has annihilation/creation coefficient norms1, giving the two-insertion ratio199 and four-insertion ratio118803. These bounds apply even when the positive overlap is extremely small because they are algebraic transition ratios, not division-error estimates based on an amplitude floor.
++
++The inverse and log series tail powers and constants are correct. The input inverse-error telescoping formula is correct; the log-anchor factors1/4 follow positive trace-log Lipschitz continuity, and the mixed term uses trace-class log continuity on the common q_* ball specified above. Operator error alone is insufficient for determinant/log error; the source correctly requires HS tails. Combining multiplicative overlap error with inserted-kernel absolute error does not prove the sign of a Ward sum or alpha.
++
++The716 literal synthetic checks support finite CAR/sign identities only. No physical overlap, native evolution, phase selection, or cost result is inferred. Reviewer authored related parent finite-excitation material and independently reviewed the Riccati theorem; this new mixed-overlap proof was not authored by the reviewer.
++
++## Affected-only final confirmation
++
++DERIVATION5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd explicitly makes q_* bound both actual and approximate products and gives the correct max example. This closes the sole wording finding. Final mathematical disposition PASS; no other source or control execution was repeated.
+diff --git a/scripts/native_mixed_gaussian_transition_2026_09_09.py b/scripts/native_mixed_gaussian_transition_2026_09_09.py
+new file mode 100644
+index 0000000000..502c71f09c
+--- /dev/null
++++ b/scripts/native_mixed_gaussian_transition_2026_09_09.py
+@@ -0,0 +1,23 @@
++#!/usr/bin/env python3
++"""Portable supporting checks; no physical evolution or matrix evaluation."""
++import argparse, contextlib, hashlib, io, json
++from pathlib import Path
++
++def main():
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--json',action='store_true');args=p.parse_args()
++ root=Path(__file__).resolve().parents[1]
++ manifest=root/'outputs/native_mixed_gaussian_transition_2026_09_09_inputs/SOURCE_MANIFEST.json'
++ pins=json.loads(manifest.read_text())['inputs']
++ for rel,digest in pins.items():
++  if hashlib.sha256((root/rel).read_bytes()).hexdigest()!=digest:raise ValueError('source binding: '+rel)
++ reports=[]
++ for name,count in [('fock',716),('fast',16)]:
++  path=root/('scripts/native_mixed_gaussian_transition_2026_09_09_'+name+'.py')
++  out=io.StringIO()
++  with contextlib.redirect_stdout(out):exec(compile(path.read_bytes(),str(path),'exec'),{'__name__':'__main__','__file__':str(path)})
++  row=json.loads(out.getvalue())
++  if row['predicates']!=count or row['physical_calls']!=0 or not row['status'].startswith('PASS'):raise ValueError('supporting control result')
++  row.pop('seconds',None);row.pop('rss_bytes',None);reports.append(row)
++ result={'status':'PASS_SUPPORTING_CONTROLS','claim_status':'conditional-support','physical_calls':0,'controls':reports,'input_hashes':pins,'scope':'Synthetic literal CAR and exact finite arithmetic only; no native overlap or alpha certificate.'}
++ print(json.dumps(result,sort_keys=True,indent=2))
++if __name__=='__main__':main()
+diff --git a/scripts/native_mixed_gaussian_transition_2026_09_09_fast.py b/scripts/native_mixed_gaussian_transition_2026_09_09_fast.py
+new file mode 100644
+index 0000000000..d1aa139917
+--- /dev/null
++++ b/scripts/native_mixed_gaussian_transition_2026_09_09_fast.py
+@@ -0,0 +1,24 @@
++from fractions import Fraction as F
++import json
++q=F(9801,10000);g=1-q;n=0
++def ck(x):
++ global n
++ if not x:raise ValueError('exact control')
++ n+=1
++ck(q**2048/g<F(1,10**15))
++def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(2)) for j in range(2)] for i in range(2)]
++def add(a,b):return [[a[i][j]+b[i][j] for j in range(2)] for i in range(2)]
++I=[[F(1),F(0)],[F(0),F(1)]]
++E=[[F(1,4),F(1,8)],[F(0),F(-1,4)]];P=E;S=I
++for k in range(11):
++ S=add(S,mm(P,S));P=mm(P,P)
++ M=[[I[i][j]-E[i][j] for j in range(2)] for i in range(2)];MS=mm(M,S)
++ ck(all(MS[i][j]==I[i][j]-P[i][j] for i in range(2) for j in range(2)))
++ck(2**11==2048)
++# Rational logarithm tail enclosure improves monotonically, no libm comparison.
++z=F(1,3);prev=None
++for m in (4,8,16,32):
++ lo=2*sum((z**(2*j+1)/F(2*j+1) for j in range(m)),F(0));hi=lo+2*z**(2*m+1)/(F(2*m+1)*(1-z*z))
++ if prev:ck(prev[0]<=lo<=hi<=prev[1])
++ prev=(lo,hi)
++print(json.dumps({'status':'PASS_SYNTHETIC_EXACT','predicates':n,'physical_calls':0,'doublings':11,'matrix_products':22}))
+diff --git a/scripts/native_mixed_gaussian_transition_2026_09_09_fock.py b/scripts/native_mixed_gaussian_transition_2026_09_09_fock.py
+new file mode 100644
+index 0000000000..ed84d6d556
+--- /dev/null
++++ b/scripts/native_mixed_gaussian_transition_2026_09_09_fock.py
+@@ -0,0 +1,106 @@
++"""Independent literal Fock algebra; synthetic 2/4-mode rational pairings only."""
++from fractions import Fraction as Q
++import json,signal,time,resource
++signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError('29s exact controls')));signal.alarm(29)
++start=time.monotonic();checks=0;wrong_sign_failures=0
++
++def req(x,msg):
++ global checks
++ if not x:raise ValueError(msg)
++ checks+=1
++
++def eye(n):return [[Q(i==j) for j in range(n)] for i in range(n)]
++def mm(a,b):return [[sum((a[i][k]*b[k][j] for k in range(len(b))),Q(0)) for j in range(len(b[0]))] for i in range(len(a))]
++def neg(a):return [[-x for x in r] for r in a]
++def sub(a,b):return [[x-y for x,y in zip(r,s)] for r,s in zip(a,b)]
++def inverse(a):
++ n=len(a);b=[r[:]+s for r,s in zip(a,eye(n))]
++ for i in range(n):
++  j=next(j for j in range(i,n) if b[j][i]);b[i],b[j]=b[j],b[i];z=b[i][i];b[i]=[v/z for v in b[i]]
++  for j in range(n):
++   if j!=i:
++    z=b[j][i];b[j]=[x-z*y for x,y in zip(b[j],b[i])]
++ return [r[n:] for r in b]
++def det(a):
++ a=[r[:] for r in a];v=Q(1);n=len(a)
++ for i in range(n):
++  inds=[j for j in range(i,n) if a[j][i]]
++  if not inds:return Q(0)
++  j=inds[0]
++  if j!=i:a[i],a[j]=a[j],a[i];v=-v
++  z=a[i][i];v*=z
++  for j in range(i+1,n):
++   c=a[j][i]/z;a[j]=[x-c*y for x,y in zip(a[j],a[i])]
++ return v
++
++def action(v,j,create):
++ out=[Q(0)]*len(v)
++ for b,x in enumerate(v):
++  if bool((b>>j)&1)==(not create):out[b^(1<<j)]+=(-1)**((b&((1<<j)-1)).bit_count())*x
++ return out
++
++def state(z):
++ n=len(z);v=[Q(0)]*(1<<n);v[0]=1;out=v[:]
++ for k in range(1,n//2+1):
++  nv=[Q(0)]*len(v)
++  for i in range(n):
++   for j in range(i+1,n):
++    w=action(action(v,j,True),i,True)
++    nv=[a+z[i][j]*b/k for a,b in zip(nv,w)]
++  v=nv;out=[a+b for a,b in zip(out,v)]
++ return out
++
++def inner(a,b):return sum((x*y for x,y in zip(a,b)),Q(0))
++def skew(n,entries):
++ z=[[Q(0)]*n for _ in range(n)]
++ for i,j,v in entries:z[i][j]=Q(v);z[j][i]=-Q(v)
++ return z
++
++def cp(x,power):
++ power%=4
++ return (x,Q(0)) if power==0 else (Q(0),x) if power==1 else (-x,Q(0)) if power==2 else (Q(0),-x)
++def ca(a,b):return a[0]+b[0],a[1]+b[1]
++def cm(a,b):return a[0]*b[0]-a[1]*b[1],a[0]*b[1]+a[1]*b[0]
++def cn(a):return -a[0],-a[1]
++za=skew(4,[(0,1,'1/5'),(0,2,'1/7'),(1,3,'-1/6'),(2,3,'1/8')])
++zc=skew(4,[(0,1,'-1/4'),(0,3,'1/9'),(1,2,'1/5'),(2,3,'1/10')])
++fixtures=[(skew(2,[(0,1,'99/100')]),skew(2,[(0,1,'-99/100')])),(za,zc),(za,za),(za,skew(4,[]))]
++for za,zc in fixtures:
++ n=len(za);va=state(za);vc=state(zc);ov=inner(va,vc)
++ req(ov>0,'positive unnormalized overlap');req(ov*ov==det(sub(eye(n),mm(za,zc))),'det overlap square')
++ req(inner(va,va)**2==det(sub(eye(n),mm(za,za))),'anchor determinant')
++ A=inverse(sub(eye(n),mm(zc,za)));F=neg(mm(A,zc));B=mm(za,A);C=neg(mm(mm(za,A),zc))
++ for create1,create2,expected in [(False,False,F),(False,True,A),(True,False,C),(True,True,B)]:
++  for i in range(n):
++   for j in range(n):
++    actual=inner(va,action(action(vc,j,create2),i,create1))/ov
++    req(actual==expected[i][j],'ordered CAR block')
++    if not create1 and not create2 and actual and actual!=-expected[i][j]:wrong_sign_failures+=1
++ def gamma(v,index):
++  j=index//2;b=index%2;ann=action(v,j,False);cre=action(v,j,True)
++  return [c-a if b else c+a for c,a in zip(cre,ann)]
++ def literal(indices):
++  v=vc
++  for j in reversed(indices):v=gamma(v,j)
++  return cp(inner(va,v)/ov,sum(j%2 for j in indices))
++ def contraction(i,j):
++  ii=i//2;jj=j//2
++  u1=cp(Q(1),3 if i%2 else 0);v1=cp(Q(1),1 if i%2 else 0)
++  u2=cp(Q(1),3 if j%2 else 0);v2=cp(Q(1),1 if j%2 else 0)
++  out=(Q(0),Q(0))
++  for x,y,z in [(u1,u2,F[ii][jj]),(u1,v2,A[ii][jj]),(v1,u2,C[ii][jj]),(v1,v2,B[ii][jj])]:out=ca(out,cm(cm(x,y),cp(z,0)))
++  return out
++ for i in range(2*n):
++  req(literal([i])==(0,0),'odd insertion')
++  for j in range(2*n):req(literal([i,j])==contraction(i,j),'complex Majorana pair')
++ for q in range(64):
++  m=2*n;i=q%m;j=(q//m)%m;k=(3*q+2)%m;l=(5*(q//m)+1)%m
++  wick=ca(ca(cm(contraction(i,j),contraction(k,l)),cn(cm(contraction(i,k),contraction(j,l)))),cm(contraction(i,l),contraction(j,k)))
++  req(literal([i,j,k,l])==wick,'ordered Wick4')
++req(wrong_sign_failures>0,'wrong F sign genuinely discriminated')
++r=Q(99,100);q=r*r
++req(q**2049/(1-q)<Q(1,10**15),'finite Neumann tail')
++req(1/(1-q)==Q(10000,199),'inverse bound')
++seconds=time.monotonic()-start;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++req(seconds<30 and rss<384*1048576,'resources')
++print(json.dumps({'status':'PASS','predicates':checks,'fixtures':4,'wrong_F_sign_discriminations':wrong_sign_failures,'seconds':seconds,'rss_bytes':rss,'physical_calls':0,'scope':'literal synthetic Fock exponent, ordered CAR, overlap determinant and Majorana Wick tests; no native evolution'},indent=2))

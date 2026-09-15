@@ -1,0 +1,10 @@
+{
+  "archive_count": 124,
+  "all_exact": true,
+  "mutants_verified": 32,
+  "original_path_count": 127,
+  "original_status_counts": {
+    "A": 126,
+    "M": 1
+  }
+}

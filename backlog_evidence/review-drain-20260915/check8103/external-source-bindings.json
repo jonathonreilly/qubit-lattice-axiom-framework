@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://www.slac.stanford.edu/pubs/slacpubs/2750/slac-pub-2864.pdf",
+    "sha256": "e95ee687f4af35aef23550fc8f0a0f28f2f7f508d1e462b01760423d7cf057c2",
+    "read_scope": "Exact prior same-session sections2 and3.2\u20133.4 gauge projection and integer flow reading reused.",
+    "role": "Historical method context, not a charged spectral theorem."
+  },
+  {
+    "url": "https://arxiv.org/pdf/1903.10656v1",
+    "sha256": "147f353084e43681695e160192288a91a9f6e2e91dd71c948d4ee574fa584156",
+    "read_scope": "Section1 assumptionsA/B,Theorem1.1 and corollaries pp1\u20133.",
+    "role": "Comparison only. Smooth Fourier embedding and scalar whole-space potential hypotheses differ; no norm-resolvent theorem/rate imported into the supplied moving-domain primitive-shift proof."
+  }
+]

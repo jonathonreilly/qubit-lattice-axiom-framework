@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+  "fetched_ref": "refs/review-loop/fetched/8106-46c85c21368c496b8ff976998fbdd9da",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-positive-charged-histories-20260914",
+    "headRefOid": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+    "isDraft": false,
+    "number": 8106,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

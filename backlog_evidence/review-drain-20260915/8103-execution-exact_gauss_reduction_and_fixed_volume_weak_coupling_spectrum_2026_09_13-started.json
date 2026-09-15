@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_2026_09_13.py",
+  "limit_sec": 90,
+  "record_sha256": "0e97e6f141cc8cafdc7edf52875c80d27493fa3539d5c85b7c6950f6b06d32fa"
+}

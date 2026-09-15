@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8103-timeout-preexecution",
+  "tree": "c8e3672a573406ced489d88c2900e9c4cf244a7f",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8752,
+      "misses": 4398
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4396
+    },
+    "declared_inputs": {
+      "hits": 8777,
+      "misses": 4529
+    }
+  },
+  "record_sha256": "0e97e6f141cc8cafdc7edf52875c80d27493fa3539d5c85b7c6950f6b06d32fa",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

@@ -1,0 +1,37 @@
+{
+  "unit": 8103,
+  "status": "PASS WITH BOUNDED CLAIMS",
+  "tree": "159ff8fd27c8974d5ef2d17157a2a96b89a4eef9",
+  "capture": "600/0,1.5107650756835938s,90s cap,one updated primary execution",
+  "final_cache": "corrected source PASS; initial missing-timeout failure preserved",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8103-timeout-final.json",
+      "sha256": "cc6d06a937f6f68207759b8a981db91b8e8c410efa8cd306c5ea5a4882c2770f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8103-unit-v1-timeout-final.json",
+      "sha256": "2f004691844b5f716055988cafb15fa5c09726d144c72e408d3fb457128070d5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8103-timeout-final.md",
+      "sha256": "cbac30591ab557c037da4ad4705be4f7bab06e65cd6c4325f10409cacd9f4484"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8103-timeout-final-preflight.json",
+      "sha256": "9b5f2fcf03546c91cbe71c52c87b67c9ffbdd00477ebdec092df55302230af5d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8103-timeout-final-preflight-execution.json",
+      "sha256": "5a83d5d7ecf54b39547cd8e79896ae6a259923e306471cdb9cf55109149dcb54"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8103-timeout-output-comparison.json",
+      "sha256": "2b39c1b6ca4a0ac0d46017b693c13ec8bf7e290b81e73d0cedc64998799fdf9a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8103-current-main-context.json",
+      "sha256": "9c82c18c2ee890e6a925ef0e1e469b48b640f6ccfa148bf54a3bdae8d3f2fc0f"
+    }
+  ]
+}

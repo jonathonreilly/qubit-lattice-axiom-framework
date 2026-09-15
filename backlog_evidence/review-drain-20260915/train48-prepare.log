@@ -1,0 +1,142 @@
+[detached HEAD e9afd7a965] Preserve independently reviewed source unit PR8068-8070
+ Date: Tue Sep 15 16:53:10 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 126 files changed, 2534 insertions(+)
+ create mode 100644 docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md
+ create mode 100644 docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/00654907cf5e006d7ce65f73a8b4c5437a3d1f310309c46a43b8e8d09dd3a093.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/018b5fa5e23dc4ccf94821d17deb2270078362e0639e3250fd67faf19353c333.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/01badf1994129de7bb47d1de18339687feaaa0c1fa496211483db0fd80182e59.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/0629c8778d112e4420709780f685b2b0e75a1bff4b2f4ab8f4d8388c6b4c5b87.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/06c6490e151d20b8ef6204df4f83172f649b9614375052761264756d4beaffdc.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/1b4176ac9a457d9755b8f413c1d3ef664ebd25b0fe47fee5ca2915147375512e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/1c1bd6ef8b37c921d52a2ccfaaa17907ffc119b5d3c76217c8a3992f4f9484c6.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/335aa61c1523ddeb15613ac1ab424b3e30ad60ca6e9c2bab8b0b1b4128623e9f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/33a4c6e4d43f6ba7b7d908392c7e169a7c77958a5564b2fab6048ff8813a727d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/3856c3bfcb697918871f1aa13c7767b6e95fe82f7b34d6c649ea1f0754fac0f2.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/38e00ffa607e76b50c0583c26de5f37dfaf36e7ca1dd0990e65da517861f88cc.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/39147870dc8c5fe5b731f92d06839cca3018acbd8111e9c9ba1d8bf6427e1507.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/48f9f5e4ea57451d7e9130e00594c0480c81b24675a2d9d8eddd94a62800ecfc.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/4f64d81cd165bd618031b3a840503017b3a765d20436e1f0c78b96749bb3dfc1.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/50b056f7e7b77e98d3003d42776970e0bf4b3c4f0606510a65a085e71aa19c4d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/519e9de7f9232e0cb6fd425daba29bad0510b69ea7b6fb43f1a39b15ee980355.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/5c7f925499f429f178a259b07f589819b02509ed98b5f5d4abbd77f3e95329fc.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/64520cdd7611945263d108b40c0e4c9bed79e50df154230957b9973400ce1c7a.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/64b3a6c47fe4684b3c77deaa8b22993a2a4ac05c5db0910cd8c515726e76e2d0.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/68a69ba37706badf2b88f360730720dd6b675f032e202a4827050ca4d4f80e07.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/6d4f29ca2b3f40bcea596a418907a101a8cf4cc3a48cabe20fd69880e6443648.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/6e56149e96ed93b449cac6b2b2d9b5805640e8c2712e82e0a871cbb09a9c0ffe.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/6fe35da2fda8c5b2b3a3a5c036f2477c67b61567b230dd11fd3fb74d9c36e068.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/7c7c23ac16b05f93c8c37e2e23ee9a9c69ae83a7f553dd5e6214fb0952acc4f8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/7e4e4a390f689f86a4b05478151951bdab6e0ab6be66807c2943e40c7fa6a73b.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/7f5fe7d0f9780f99b41437ab8166caf4afc43fc7f3e0f9ae09b382980eba6e62.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/81275ba7514c8383909842de7233095e4e9c88b2e3d307315cc2f83d2c5bce82.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/85087aed267a6486122ea06640575e39dfb56fd40af3c322d25fba3ddbb043f6.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/8dfe8f7df220d42f7ebab1af636abb43ae02a7c94b119cbf147962c079ff07f0.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/908b22ff452ca151fef9af73c44d5dfc251d04a18d9f58a4eb6637c2478ed594.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/9135552250996a05d47277d4527a185c9dfdbef2470b38eaca18a6125c097538.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/9631ce856a37631774d12e5d072f448d279c03a9a14ff72cdf3ac6604f5690a8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/9c34ab58ced98b2c86402e1f198810f01ca7084e579d11f51f730d65ae64c8ca.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/acb4513536435bbe42a553d51f92614f98e60d36b0b24132b8e4ba0e0846c732.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/acd1375f592e5b290b8a1cb11a21159e35c633bacb2be61d6946afc398ba9e75.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/b6ce4a681067120c3e6c37a05d4ed2ab17bdcdc328c1d5609834335c5f5f02d9.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/b86f94a94649e0a4812e20696130f15a51f8c53dbddc5eddb18b9eb3b700e338.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/b9a52d140162854182d884839334759dec6b0f7fb17097233f861c199c04cdb9.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/bad758168c12f3658bb42fd490d6104d115b268925737f31edf258c9c9d2edca.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/c4f787537791713d5e11ba8bcbe6de49247776e8a25457a9f7958db4117f206f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/caf54acf538c8b0e6d2cd841349464326a394b50e1ae9125efb3fa13b2c2e01b.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/ce73977efd00240b070174c332e5875d3cd738463ab99915fdef273abf9f7d57.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/cf0b96cf43e3f2f6db7b21f0dea2adb2a953c073e72c2121f7a2a77342cd1e4f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/cfc955b094ca1d3f26598711975db1281e879a39deda4deb3c40e1437481bf43.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/d4771caa61414e99c25f9cdf3a23e085fd5c65036e0a9267136111787287c878.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/d78a4ccd30b9b3f08a3c23de0a2216a4887c95c4ff00f7073d7635c543a2453c.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/d91d9ed9f856c80edd1524b3364300bcd9f37523364bd81bd9ac45a9bbc31ae2.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/dbd484529ac6fd1e302b734e4af966b33c298272553012c8eed08df45be79b99.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/dd377d0268fe832adc881126974fee6f03ec5b5878ef13e5894442612970f3ee.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/df08fb44bac1443fa6cb72c2d7d0a813be18c2b0f86c5472c2691fbbf52de95d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/e7774ad94c3853d591e6c0e836d63f4441fe96d549a20052e459d770a47ff9c8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/e889e868723391fadcba164f1e9454de12cfa87b61e273d8002fef6bc29b0602.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/fa1d8934b23b74ef9cd59d3af8cb1a23597b3616adc725355b1209b2acf30966.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/fba66bb03f3b7a3de28f6c82be1c86bbdfa56a2d5abe8c15f7c811ccc4b5aabd.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/_objects/fd4311d60450297745a1d176efa8e688388227e5d2381ccd7a374a4fda4510e1.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/kept/pr8068-HANDOFF-9ef67db77ea9ef6f.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/kept/pr8068-REVIEW_HISTORY-3f4cb79c836849bf.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/output-summary-map.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8068-evidence/pr8068-original-output-summary.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/040266aee7668e1bf89da4bb5839c85c0de33cdc7ddce1cec924f3b47a93559e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/0b0338e03e642b6f884d3a5eb277ac7e0cb5b9ac7840f2dc6126d411a92dfc80.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/13eb7e2d034fe93c4824a6bcc0d2c7d14914dddf475eb4a64bdcd4c07ccc9f3b.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/1fb80dc8ef9780d3650b0fa970ad0e36c778a6c85d3f651d00e73b8c76c4646f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/1ff4f5667bce84fd920b6a957432c9e965b71e07f2b814c76d0bb7393a9fa527.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/2b5f60f3ae7cb056d842a72ffb6d60e4d45c0c215f79a4c534f2677fd9105dfe.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/2ec04147ffa92905baaf85ff6ed3007460e2c00f2b814f7763706b675530aca8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/3de50e14e36a2c666ebcb6b39fac564c583ba20709ca615fb41eb47462bae32b.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/3ecf8cea048bbcf9a0d27265cdc1c426491cc93abe7cc308b248459b7032c76b.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/4896aa59fffa34c3552c7b9fb5c34b6cdb8ac8e13043155adc0b6d92f1f8facf.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/70a179b77e4631694613a28f631130268f8d52de8ad900a72784f85f1e581612.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/740f233e880167e57f00c313f2a96b691810d16ac90a0c8ba84035d3842b12dd.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/74531a247599e2dd0bb11c09bd24d0764bd81933a2f025607fb9b2de0effb15e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/8514fbb17d177e60bb19dfe133f9946bb13dc9d3f6baee11459b93779d2f8de3.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/85a48af8e10fc3106624026e0f72f55b5119175585ef4c5c557871ee58231c60.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/8ae4b2625cbdbcc8ff0eeeea95b0a0bc054907027e6d7c7c81e626b8386f0075.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/8dd3e8b991753a5143e25a623f5b27baade490c15141b3f19b6dde4780d002e7.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/8f072e0b3d90f711570752901a20963dd55544a62a05c6faa0d2650bc5986cf1.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/96f448bf5def75b0873a35971cdde8342fc24819f44bfa9cd0b23eb69683ea67.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/9f2664fabba1f8b5049c1c6253e3cd1041b8ed7f55ff479b9ff2889f7d2aef54.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/a5a04c99140c77c188dd1affec002e8ad3edd8fbff780ba839a90f7073793869.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/a5de9d2f123b0351bfb6fd62c8710d9c7b9009fc7ab3d339a6b9f2c68d00e114.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/c5f60f3b1d5a07b0170f95c2a2ade8fcaaccf1e181f9cef811e5275b1a82eb4d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/dd458512fa4f81ca4f765238d7af425f45feb67af1f29f02450d315276a8a3cb.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/e41127380a0ca4908cdcf232c4d4705aca2694a5560887f0d2209348f69a6d23.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/ef019573e9d49fe36d45bc9c7fe9482694e5d692d98fb9b7210fa553a1c16798.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/f36614f779810c80cbe03746fc3fb108c7beaeeac6dcbe4d5dcc060d8b399a4e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/f6e0043976c8184bf9fefc834c578879c133be0a9e923553f0957b275ce415a8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/_objects/f9705948525f3ecf086807c3ed78052c450d154ac394bd641efb4e6c6404e56a.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/kept/pr8070-HANDOFF-9ef67db77ea9ef6f.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/kept/pr8070-REVIEW_HISTORY-3f4cb79c836849bf.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/output-summary-map.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8070-evidence/pr8070-original-output-summary.md
+ create mode 100644 logs/runner-cache/native_certified_imaginary_time_2026_09_09.txt
+ create mode 100644 logs/runner-cache/native_pair_vacuum_chart_2026_09_09.txt
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09.json
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09.md
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md
+ create mode 100644 outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md
+ create mode 100644 outputs/native_pair_vacuum_chart_2026_09_09.json
+ create mode 100644 outputs/native_pair_vacuum_chart_2026_09_09.md
+ create mode 100644 outputs/native_pair_vacuum_chart_2026_09_09_inputs.json
+ create mode 100644 scripts/native_certified_imaginary_time_2026_09_09.py
+ create mode 100644 scripts/native_certified_imaginary_time_2026_09_09_algebra.py
+ create mode 100644 scripts/native_pair_vacuum_chart_2026_09_09.py
+ create mode 100644 scripts/native_pair_vacuum_chart_controls_2026_09_09.py
+FROZEN e9afd7a9659faa0a8efb94eb4098d324b0e330e7 sources 126 inputs 144 notes 2

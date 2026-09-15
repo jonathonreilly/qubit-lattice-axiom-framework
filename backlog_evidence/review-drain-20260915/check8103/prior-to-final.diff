@@ -1,0 +1,49 @@
+--- 
++++ 
+@@ -256,10 +256,26 @@
+ 
+ 
+ def spectral_checks():
++    g, S = .1, 8
++    n = np.arange(-S, S+1)
++    kinetic = np.diag(np.full(len(n), 1/g**2))
++    kinetic += np.diag(np.full(len(n)-1, -1/(2*g*g)), 1)
++    kinetic += np.diag(np.full(len(n)-1, -1/(2*g*g)), -1)
++    v = np.random.default_rng(148).normal(size=len(n))
++    close(v @ kinetic @ v, np.sum(np.diff(np.r_[0., v, 0.])**2)/(2*g*g),
++          'compressed magnetic form retains two zero-extension boundary terms')
++    dirichlet = kinetic + np.diag(2*g*g*n*n)
++    reflecting = dirichlet.copy()
++    reflecting[0, 0] -= 1/(2*g*g)
++    reflecting[-1, -1] -= 1/(2*g*g)
++    check(np.linalg.eigvalsh(dirichlet)[0]-np.linalg.eigvalsh(reflecting)[0] > .2,
++          'dropping the magnetic identity at endpoints changes the vacuum')
+     for S in [1, 2]:
+         reduced, rb = reduced_matrix(.37, S)
+         direct, db = direct_matrix(.37, S)
+         lookup = {label: j for j, label in enumerate(db)}
++        check(all((f, tuple(E0[f]+n)) in lookup for f, n in rb),
++              'every reduced label lies in the direct physical cutoff domain')
+         order = [lookup[f, tuple(E0[f]+n)] for f, n in rb]
+         check(len(db) == len(rb), 'direct Gauss enumeration is onto affine domain')
+         close(reduced.toarray(), direct[np.ix_(order, order)],
+@@ -320,11 +336,14 @@
+     print('SPECTRAL', json.dumps(dict(free=free.tolist(), fixed_boundary=records,
+                                    full_space=full, additive_targets=targets.tolist(),
+                                    doubled_flux_copies=doubles)))
+-    print('N5: same axioms -> no axiom selection: graph, CAR realization, time and Hamiltonian supplied')
+-    print('N5: alternative encoding -> finite spin and rotor routes remain outside this cutoff theorem')
+-    print('N5: domain escape -> periodic harmonic flux requires separate treatment, demonstrated by rank')
+-    print('N5: topology escape -> nonprimitive magnetic shifts preserve extra copies, not a unique oscillator')
+-    print('N5: phase escape -> fixed-volume weak-g spectrum and exact Coulomb term do not establish a charged thermodynamic photon phase')
++    for label, message in [
++        ('per_element', 'weighted electric projection and integer link-hop increments checked; no selected coupling'),
++        ('per_site', 'direct CAR matrices and exact charge neutrality checked in the four-site fixture'),
++        ('per_mode', 'one-plaquette oscillator spectra, finite-boundary vacuum and doubled parity copies checked'),
++        ('per_block', 'open cubical integer homology and exact charged Hamiltonian equivalence checked'),
++        ('lattice_wide', 'fixed finite contractible graph proof supplied; periodic harmonic directions exhibited; growing-volume phase unproved')]:
++        print(label+': '+message)
++
+ 
+ 
+ if __name__ == '__main__':

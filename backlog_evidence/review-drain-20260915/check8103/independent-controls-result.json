@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": 12,
+  "controls": [
+    "exact weighted minimizer satisfies Gauss",
+    "weighted transverse orthogonality",
+    "affine field remains fractional",
+    "weighted Pythagoras",
+    "primitive magnetic limit",
+    "nonprimitive doubled magnetic limit",
+    "Dirichlet quadratic form retains both endpoints",
+    "ground-state transformed ODE",
+    "normalized oscillator Gaussian",
+    "oscillator gap and zero point",
+    "charge domain smaller than product 1",
+    "charge domain smaller than product 2"
+  ],
+  "elapsed_seconds": 0.1609526249812916,
+  "scope": "Independent exact constrained minimization, shift symbols, zero-extension form and oscillator transform; no primary invocation."
+}

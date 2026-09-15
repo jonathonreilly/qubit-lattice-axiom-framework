@@ -1,0 +1,15 @@
+{
+  "unit": 8103,
+  "status": "PACKAGING_BLOCKER_FINAL_GATE_FAILED",
+  "finding": "Actual review_receipt final gate requires source-declared timeout; historical wrapper90s/cache freshness alone does not satisfy that gate.",
+  "scope": "No scientific conclusion changed. Initial final source report is not an enrollable handoff after mechanical failure.",
+  "repair": "Author add AUDIT_TIMEOUT_SEC=90, preserve original evidence, freeze changed source and capture once under90s. Reviewer confirms changed metadata and new final evidence.",
+  "failure": {
+    "path": "/private/tmp/review-drain-20260915/8103-final-preflight.json",
+    "sha256": "f2acd05854b465e36a719479c592f907cd679b4be083888005ee157fbf7e0f5c"
+  },
+  "prior_report": {
+    "path": "/private/tmp/review-drain-20260915/review-8103-final.json",
+    "sha256": "abb9e477cec8cf5846e534a906de9d84967f9ebad64ec204cf2e0e7409a49188"
+  }
+}

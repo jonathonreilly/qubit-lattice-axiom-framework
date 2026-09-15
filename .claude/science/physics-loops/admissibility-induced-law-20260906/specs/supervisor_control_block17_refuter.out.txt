@@ -1,0 +1,5 @@
+R1 sum-of-squares decomposition equals the direct expectation and is nonnegative (ring, both triples, 10 F each): True
+R2 two-step chessboard on the ring: P(A0∩A2)^2 <= P(A0∩θA0) P(A2∩θA2): True ; each of those squared <= P(all bad): True ; hence P(A0∩A2)^2 <= P(all bad): True
+R3 enclosing cycles by polyomino placements: {4: 1, 6: 4, 8: 22} ; by the runner's walk enumeration: {4: 1, 6: 4, 8: 22} ; equal: True
+R4 partial sums to 400 terms: at y=1/2 vs 5/8 gap < True ; at y=4/5 vs 8192/625 gap < True
+R5 second adjacency implementation agrees with the runner's on the origin's neighbourhood: True ; counts n=1..4: {1: 1, 2: 12, 3: 158, 4: 2148}

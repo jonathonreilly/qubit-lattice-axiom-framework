@@ -13,3 +13,9 @@ Policy: reference and converge, never borrow; every statement used is re-proved 
 - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
 - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
 - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
+
+## Block 17 (2026-09-15) — references named; three standard theorems imported at definition level
+- Fröhlich–Israel–Lieb–Simon (1978): reflection positivity and chessboard estimates; Fröhlich–Lieb and Biskup's notes: discrete symmetry breaking by the chessboard route — the method re-proved here at scope for site reflections.
+- Peierls (1936): the contour argument — re-proved with explicit constants in two dimensions.
+- Whitney's planar cut–cycle duality and the separation theorem for lattice polygons; Lévy's backward martingale theorem; the extension theorem for consistent finite-dimensional laws — imported at definition level.
+- Timár (2013), "Boundary-connectivity via graph theory": the dual-surface connectivity lemma of `Z³` — named; the three-dimensional statement is conditional on it.

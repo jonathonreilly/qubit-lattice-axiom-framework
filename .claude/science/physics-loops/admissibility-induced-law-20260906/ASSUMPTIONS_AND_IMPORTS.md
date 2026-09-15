@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 17 (2026-09-15) — the static law at strong coupling
+- Dependencies: `minimal_axioms`; block 03 (on `main`; the uniqueness side, for the contrast); block 01 (on `main`; the static reading). Proposed, unaudited. PR #8146 referenced for context.
+- Named premises: the static reading; the six-axis menu; positivity of the weights; the torus of even side.
+- Scaffolding: the ring of four and the `4×2` torus for the executed instances; the box `[−L', L']²` with `L' = 10`; the couplings `(p, 1, 2)` and `(5, 2, 4)`; `p = 432` for the illustration.
+- Standard mathematical theorems named at definition level (never as physics authority): planar cut–cycle duality with the separation theorem for lattice polygons (T5); the extension theorem for consistent finite-dimensional laws and the backward martingale theorem (T6); the dual-surface connectivity lemma of `Z³` (T7 is conditional on it).
+- References named, not used: the reflection-positivity/chessboard method and its application to discrete symmetry breaking; the classical contour argument.
+- Counterfactual pass: the constant rule (no order); weights with `p < m` (the bound is vacuous); odd torus sides (site reflections need an even side); the formation law (not this object).

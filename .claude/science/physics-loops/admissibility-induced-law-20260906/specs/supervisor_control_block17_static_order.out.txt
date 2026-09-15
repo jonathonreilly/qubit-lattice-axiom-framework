@@ -1,0 +1,7 @@
+eigenvalues of phi: {p + q + 4*r: 1, p + q - 2*r: 2, p - q: 3}
+RP (site reflection) on the ring of 4 for 20 random F: True
+RP on the 4x2 torus for 5 random F: True
+chessboard on the ring: P(bonds 01,23 bad) = 973/1732 <= P(all bad)^{2/4}: True
+4x2 torus: P(all dir-1 bonds bad) = 20177347/193958912 ; (6m/p)^N with N = 8 = 65536 ; per-site ratio 0.7536059009396876 vs 6m/p = 4.0
+connected bond-sets containing the origin bond, size n = 1..5: {1: 1, 2: 10, 3: 95, 4: 908, 5: 8795} ; bound (e*11)^(n-1): [1, 30, 894, 26734, 799372]
+x* with 3 sum_{n>=6} n x^n = 1/2: 0.481557348085537 ; eps = (x/30)^3 = 4.13599760197838e-6 ; p_0 = 6m/eps = 2901355.64736788

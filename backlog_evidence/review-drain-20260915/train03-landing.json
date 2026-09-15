@@ -1,0 +1,128 @@
+{
+  "base": "7927f9e170566b351b2cf6f801cb7176f8b87226",
+  "source_head": "cc8a500ff539a88dda6d31c343667cac6d722f6f",
+  "source_tree": "c246c9f2c3d6c1cad06b2f8935766d0fec58ccda",
+  "heads": {
+    "8014": "4aacc14450f2fa7877c25323b1ae25235bae91d5",
+    "8015": "99bf0f1984aff1a9cd1fde5cc1ef4f667a046544",
+    "8036": "6067254e3bca867aa6e737f7aa2bb6078e5d622d",
+    "8037": "9ae85474d22ed4a987508293b60bed48f9108a43"
+  },
+  "source_commits": [
+    "a3aa9d1a88",
+    "10110451a4",
+    "8153493142"
+  ],
+  "source_owners": {
+    "docs/NATIVE_EDGE_RECORD_Z4_FLUX_BRIDGE_CAPACITY_BOUNDED_THEOREM_NOTE_2026-09-07.md": 8015,
+    "docs/NATIVE_EDGE_RECORD_Z4_FLUX_ONE_SHOT_ERROR_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md": 8015,
+    "docs/audit/scripts/build_citation_graph.py": 8015,
+    "logs/runner-cache/native_edge_record_z4_flux_five_event_check_2026_09_07.txt": 8015,
+    "logs/runner-cache/native_edge_record_z4_flux_single_bridge_check_2026_09_07.txt": 8015,
+    "logs/runner-cache/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.txt": 8015,
+    "scripts/audit_packet_script_deps.py": 8015,
+    "scripts/native_edge_record_z4_flux_five_event_check_2026_09_07.py": 8015,
+    "scripts/native_edge_record_z4_flux_single_bridge_check_2026_09_07.py": 8015,
+    "scripts/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.py": 8015,
+    "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md": 8037,
+    "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md": 8037,
+    "logs/runner-cache/native_parity_entangler_2026_09_08.txt": 8037,
+    "outputs/native_parity_entangler_2026_09_08.json": 8037,
+    "outputs/native_parity_entangler_exact_2026_09_08.json": 8037,
+    "outputs/native_parity_entangler_numeric_2026_09_08.json": 8037,
+    "scripts/native_parity_entangler_2026_09_08.py": 8037,
+    "scripts/native_parity_entangler_exact_2026_09_08.py": 8037,
+    "scripts/native_parity_entangler_numeric_2026_09_08.py": 8037,
+    "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md": 8036,
+    "docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json": 8036,
+    "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt": 8036,
+    "scripts/native_product_gibbs_dimer_2026_09_08.py": 8036,
+    "scripts/native_product_gibbs_encoded_2026_09_08.py": 8036,
+    "scripts/native_product_gibbs_path_2026_09_08.py": 8036,
+    "scripts/native_product_gibbs_preparation_2026_09_08.py": 8036
+  },
+  "inputs": {
+    "docs/NATIVE_EDGE_RECORD_Z4_FLUX_BRIDGE_CAPACITY_BOUNDED_THEOREM_NOTE_2026-09-07.md": "151fd508c682cf1617e068fb489fb6dd7c38e8f9b4833f3c8dea379e481057cc",
+    "docs/NATIVE_EDGE_RECORD_Z4_FLUX_ONE_SHOT_ERROR_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md": "23c22397ee04b75c5b5eed05f01ce117f6ab7e2ff57ecc1d287a9be266a30064",
+    "docs/audit/scripts/build_citation_graph.py": "16ab9c731e275eddc27bd3869d074fd8fede91c5e26b168967ac002f8ef213da",
+    "logs/runner-cache/native_edge_record_z4_flux_five_event_check_2026_09_07.txt": "9c9c431a9b220e980c8edee9bfb6c8c9909a9e8b5a2cfbad4c026861c3c882d2",
+    "logs/runner-cache/native_edge_record_z4_flux_single_bridge_check_2026_09_07.txt": "d66d8962163b5f9cf1dd43538760af2648d9eae7dd815eff52ac6a899158044c",
+    "logs/runner-cache/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.txt": "c6e2d2da85753101a2a22c03ccd316af6a87a0b7564c8a224d862eaba6f748ec",
+    "scripts/audit_packet_script_deps.py": "1e3e04d43d055602f3d5301ca5227fcc6209a7dc80cae0b458de63252efbfc6c",
+    "scripts/native_edge_record_z4_flux_five_event_check_2026_09_07.py": "e3afa3b30d6a987ebfd5ea375b8764edf5f62bad15c5f646710ee30c31638c92",
+    "scripts/native_edge_record_z4_flux_single_bridge_check_2026_09_07.py": "0238fc68c6f4db04506d1960607178ac2471f03fbec448622144d274703b9986",
+    "scripts/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.py": "f960948a7da958e1d8bf2929b506eddf903de215bcab72eb0b5f744f29edb31e",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "3bc61e8301b06b699400dc31320f8213b5449c1a628a2efc56234651c569ce1a",
+    "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e",
+    "logs/runner-cache/native_parity_entangler_2026_09_08.txt": "4d245723022505b368d02316ffd6993f0d17fd80e9366c4439e4077ba12f71d8",
+    "outputs/native_parity_entangler_2026_09_08.json": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e",
+    "outputs/native_parity_entangler_exact_2026_09_08.json": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc",
+    "outputs/native_parity_entangler_numeric_2026_09_08.json": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64",
+    "scripts/native_parity_entangler_2026_09_08.py": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a",
+    "scripts/native_parity_entangler_exact_2026_09_08.py": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee",
+    "scripts/native_parity_entangler_numeric_2026_09_08.py": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931",
+    "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md": "e62de55f454bc3b57ffacad7aa770fd85fcfed747786553985ffe01cee680878",
+    "docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json": "f51435951f5324202fcece2fa4a99532acb104292010bfec209787b106561351",
+    "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt": "4914193ab850432da45915c63750fddcac1f8fa994f08ca225e3417a209053b0",
+    "scripts/native_product_gibbs_dimer_2026_09_08.py": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+    "scripts/native_product_gibbs_encoded_2026_09_08.py": "9fcc14cfbe903e35ac1077034e7b027e21f9c30f38b9f41e5e8ac49ea102704b",
+    "scripts/native_product_gibbs_path_2026_09_08.py": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
+    "scripts/native_product_gibbs_preparation_2026_09_08.py": "a0dfb765602bf98977ebb69a650026dacce4eb81e1c33a6a36f8c0c89b300a97",
+    "docs/NATIVE_EDGE_RECORD_LOCAL_CYCLE_TRANSPORT_AND_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "8c1b0dbb2b2cd8897871cf7e98773ff189fd894dfe1ad9ddfb4b732c4cbfa561"
+  },
+  "departure": "All ready compatible units; no fixed batch wait",
+  "reports": [
+    "review-8015",
+    "review-8015-replay",
+    "review-8036",
+    "review-8037",
+    "review-8037-integration"
+  ],
+  "report_identities": {
+    "review-8015": {
+      "md": "f8c05036ec00db3e233dcafb237e67de62053e2db4b63a27de040f2b7b8cebc9",
+      "json": "9a58e7d1fbf94e738c4e3f93d1a44bec8a768c93baf0973c67f10f28472019ef"
+    },
+    "review-8015-replay": {
+      "md": "a82b73f33a664262e4bca87cd1072b5b44619dd4e37ab0da7eae82e797b835d8",
+      "json": "ee88b7ee3ed1203ed078e04ac93a1924a50bc919b808c3bad21aee5d85ec9081"
+    },
+    "review-8036": {
+      "md": "79134e118fec74eaba52ceffefb8394065f91321827420d25d5a031fd7e2b308",
+      "json": "09a8ee822bd2b3337aee5d8689c7c66453fcf3d5a7a14756607cc67062908905"
+    },
+    "review-8037": {
+      "md": "6bc4d3d1fd4730935cef10842b8ece303afd8661f213f9c7c333d6b2253ea1ee",
+      "json": "e9deb766ce5b35150691c89ca97dc6d5e66cd63a823f1a0ee48bd809a474e8c8"
+    },
+    "review-8037-integration": {
+      "md": "3b6c657fac31418770de57bea0e3c2c394ecc83354f58e5b1588c83be6d47285",
+      "json": "b9086ec7ec6871e8af6633d491ce4817d8c20699701d6c8bf55c19d652ae10b8"
+    }
+  },
+  "interaction_check": "Independent supplied native instrument constructions. Shared parent source unchanged. No construction imports another new unit as a proof premise. Original reviewer confirmed changed helper/methodology context; science bytes unchanged.",
+  "candidate_commit": "279451f1ca263369e444c28e17b18c7fbb1d298a",
+  "candidate_tree": "daf83f2f1fef93990c6b940352864f404908a041",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 4,
+  "validation_logs": {
+    "train03-pipeline.log": "2cd38ba96fcf18ea55d5cfeffe8945ecd027eb7c4a9a3929d2c3788445a9d833",
+    "train03-strict.log": "420f6d973669949bc80eb5166acc558e0d4632126dace644557aa955c9e642c5",
+    "train03-evidence.txt": "e10943922cd6b7aba81469f2c3b8a2bffc8a06cc0a1179c7db899fe11b0bfead",
+    "train03-validated-rows.json": "2592ea7ac310e44623098b45c4757cd552190e4924b77908fd5d369a14784e86"
+  },
+  "audit_boundary": "No verdict applied; all4new rows unaudited; generated authority stripped.",
+  "manifest_inspection": "Four new bounded source nodes plus one explicitly historical source node; existing topology unchanged. Actual helper ingester returns1flux,2parity and3Gibbs helper sources.",
+  "landing_state": "NOT PUSHED: main advanced before push",
+  "observed_new_base": "7495de3076bdb308d4c17dea77a6126283619ee7",
+  "retry": "train03-retry"
+}

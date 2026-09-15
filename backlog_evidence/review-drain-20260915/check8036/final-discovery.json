@@ -1,0 +1,12 @@
+{
+  "graph": [
+    "scripts/native_product_gibbs_dimer_2026_09_08.py",
+    "scripts/native_product_gibbs_encoded_2026_09_08.py",
+    "scripts/native_product_gibbs_path_2026_09_08.py"
+  ],
+  "packet": [
+    "scripts/native_product_gibbs_dimer_2026_09_08.py",
+    "scripts/native_product_gibbs_encoded_2026_09_08.py",
+    "scripts/native_product_gibbs_path_2026_09_08.py"
+  ]
+}

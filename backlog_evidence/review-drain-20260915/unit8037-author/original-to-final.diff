@@ -1,0 +1,227 @@
+diff --git a/docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md b/docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md
+index 777f750c18..f9f640ecfe 100644
+--- a/docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md
++++ b/docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md
+@@ -156,7 +156,14 @@ Consequently the sum of the bare and rotated product expectations is
+ W=\langle-Z_AZ_B+X_AX_B\rangle.
+ \]
+ 
+-Every separable output state has \(W\le1\), by the two-component Bloch-vector Cauchy–Schwarz bound and convexity. The heralded state gives \(W=2\). This is a trusted-measurement entanglement witness. Each terminal readout consumes its outer edge, so different settings require fresh preparations.
++Every separable output state has \(W\le1\), by the two-component Bloch-vector Cauchy–Schwarz bound and convexity. The heralded state gives \(W=2\). For an arbitrary density matrix on the declared output encoding, define
++$\widehat W=-Z_AZ_B+X_AX_B$ and $F=\langle\Psi^+|\rho|\Psi^+\rangle$.
++The commuting Pauli products have Bell-basis eigenvalues $2,0,0,-2$ for
++$\widehat W$, with the eigenvalue $2$ on $|\Psi^+\rangle$. Thus
++$\widehat W\leq2|\Psi^+\rangle\langle\Psi^+|$ and $F\geq W/2$.
++This is the fidelity consequence of the same trusted measurement model.
++
++This is a trusted-measurement entanglement witness. Each terminal readout consumes its outer edge, so different settings require fresh preparations.
+ 
+ ## Native CHSH settings
+ 
+@@ -218,9 +225,49 @@ T_{23}=Y_2\frac{I-Z_1}{2},
+ 
+ and constructs occupation vectors by prefix parity. This checks the phases that concurrence or real-part output alone would not establish. The nonbridge result is analytic, using the parent code theorem; it is not inferred from the tree fixture.
+ 
+-Paired outputs are [numeric](../outputs/native_parity_entangler_numeric_2026_09_08.json), [exact](../outputs/native_parity_entangler_exact_2026_09_08.json) and [primary](../outputs/native_parity_entangler_2026_09_08.json). The [execution cache](../logs/runner-cache/native_parity_entangler_2026_09_08.txt) records actual execution. Original proofs, results, independent review and port history are preserved in the [branch-local handoff](../.claude/science/physics-loops/native-parity-entangler-20260908/HANDOFF.md).
+-
+-Root independently reviewed the canonical finite conditional algebra and its failure-map, trace and control corrections: **review PASS**. The original exact reviewer also performed the port; those roles are disclosed rather than treating the port as self-independent review. Formal audit status remains pending and is not granted by these checks.
++Paired outputs are [numeric](../outputs/native_parity_entangler_numeric_2026_09_08.json), [exact](../outputs/native_parity_entangler_exact_2026_09_08.json) and [primary](../outputs/native_parity_entangler_2026_09_08.json). The [execution cache](../logs/runner-cache/native_parity_entangler_2026_09_08.txt) records actual execution. Original review and port provenance are summarized in the
++[historical review record](work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md).
++The three outputs record the current live execution; the historical source's
++review label does not certify the present integration. Formal audit status
++remains pending and is not granted by these checks.
++
++## No-Go Discipline Gate
++
++This section checks the narrow nonbridge/bypass boundary; it asserts no universal
++no-go and no formal audit verdict.
++
++- **N1 — Routes and scope.** Keeping the bridge gives the explicit parity
++  entangler above. Adding a bypass while keeping this single physical Z event
++  yields the proved information-free isometry. Keeping crossed output rails
++  would require the deleted middle hopping. Regrouping into surviving components
++  gives the affirmative readout construction. Changing the measurement or using
++  multiple events is untested and outside this boundary. These distinctions
++  delimit the claim; their count is not proof of exhaustive protocol coverage.
++- **N2 — Independent conditions.** The cycle stabilizer and anticommutation
++  establish the fair outcome; unchanged component partition and the parent
++  dimension formula establish surjectivity. These are explicit hypotheses,
++  not independent universal obstructions to every control protocol.
++- **N3 — Supplied inputs.** Preparation, signed hopping, the native constrained
++  code, Born events and settings remain supplied. No registered primitive is
++  declared absent or converted into a wall.
++- **N4 — Residual.** The residual is exactly $K_z^\dagger K_z=P/2$ and the
++  surviving-algebra intertwiner. No missing physical number is fitted.
++- **N5 — Resolution.** The live finite helpers execute full complex success
++  and failure columns, the prepared Bell vector, and all four CHSH correlations
++  on three physical qubits. The nonbridge statement is analytic; spatial
++  scaling, arbitrary multi-event protocols and occurrence dynamics are not
++  numerically executed or certified by that fixture.
++- **N6 — Partial closure.** The bridge and regrouped-output construction is
++  an affirmative route already established here. Different measurement or
++  control protocols remain open; no new axiom is claimed necessary.
++- **N7 — Counter-route.** The strongest apparent counter-route adds a bypass
++  to retain connectivity. It changes the stabilizer action on this same Z
++  measurement and hence its information content; the displayed algebra resolves
++  only that route. It does not exclude a redesigned instrument.
++- **N8 — Historical scope.** The original packet's scoped-boundary ledger at
++  head `9ae85474d22ed4a987508293b60bed48f9108a43` said no formal no-go was
++  submitted. This canonical account retains that limit; prior review labels
++  are historical evidence, not repeated or current certification.
+ 
+ ## Prior art and remaining physical obligations
+ 
+diff --git a/docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md b/docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md
+new file mode 100644
+index 0000000000..1a4579e47c
+--- /dev/null
++++ b/docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md
+@@ -0,0 +1,32 @@
++# Historical native parity review and port record
++
++This is a source-preservation summary of PR 8037 head
++`9ae85474d22ed4a987508293b60bed48f9108a43`, not a current review verdict.
++The original `.claude/science/physics-loops/native-parity-entangler-20260908/`
++packet contained `HANDOFF.md`, `NO_GO_LEDGER.md`, and
++`evidence/native-parity-entangler-cold-review/REVIEW.md`.
++
++The historical handoff reported independent exact and root canonical review,
++followed by integration of main `8257bddfc9`. It explicitly left combined
++landing validation and formal audit pending. Its source preparation, signed
++partial hopping, physical placement, and scheduled Born/Record events remained
++supplied. Historical instructions to open a PR and continue the campaign are
++not current actions or scientific content.
++
++The cold reviewer reconstructed the physical hopping matrices by prefix-parity
++incidence inversion, independently checked complex success/input/output columns,
++and supplied the operational two-setting witness. It identified incomplete
++original phase/amplitude assertions as a coverage gap, not a false result;
++the exact portable helper includes those stronger checks. Its fidelity lemma
++uses the witness spectrum 2, 0, 0, -2 to give F(Psi+) >= W/2 and is now explicit
++in the canonical note. The later supplement checked the specified CHSH signs,
++local commutation, permanent middle Record, and the analytic nonbridge isometry.
++The exact reviewer also performed the port; the original source disclosed that
++role overlap and distinguished root canonical review from port self-review.
++None of these historical review labels confirms new source bytes.
++
++The original scoped-boundary ledger rejected reuse of the deleted middle edge,
++identifying even failure as two output qubits, and retaining the old bridge
++parity law after adding a bypass. It explicitly asserted no universal gate,
++control or occurrence exclusion. Those boundaries and the unique fidelity
++consequence survive in the canonical source.
+diff --git a/logs/runner-cache/native_parity_entangler_2026_09_08.txt b/logs/runner-cache/native_parity_entangler_2026_09_08.txt
+index cb7e8eea4c..910ca658fe 100644
+--- a/logs/runner-cache/native_parity_entangler_2026_09_08.txt
++++ b/logs/runner-cache/native_parity_entangler_2026_09_08.txt
+@@ -1,10 +1,10 @@
+ ===== runner cache v1 =====
+ runner: scripts/native_parity_entangler_2026_09_08.py
+-runner_sha256: 2cdf699df61e34371417016bbe628f554771f21ef9b7bd2078925042c82f9b61
+-input_fingerprint_sha256: ae85bbc573155c64f3accd9582be6e82e09fb67b75cd1ee971d500d2bcfd6e6d
++runner_sha256: 99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a
++input_fingerprint_sha256: ee6659b003718f20726e2d3c7f89fdb81f8b24733a521157cb9821b2c40b866e
+ timeout_sec: 180
+ exit_code: 0
+-elapsed_sec: 0.31
++elapsed_sec: 0.36
+ status: ok
+ ----- stdout -----
+ {
+@@ -234,18 +234,18 @@ status: ok
+     }
+   },
+   "executed_assertions": 37,
+-  "elapsed_seconds": 0.2081492919824086,
+-  "peak_rss_mib": 71.125,
+-  "source_sha256": "2cdf699df61e34371417016bbe628f554771f21ef9b7bd2078925042c82f9b61",
++  "elapsed_seconds": 0.2488566249376163,
++  "peak_rss_mib": 72.890625,
++  "source_sha256": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a",
+   "scope": "Finite native physical matrix construction; preparation, signed hopping controls, Born Record schedule and CHSH settings supplied. Nonbridge lemma is analytic."
+ }
+-per_element: the middle physical Z event retains both outcomes.
+-per_site: supplied edge-midpoint placement; no new one-site primitive.
+-per_mode: four modes with even parity, regrouped dual rails.
+-per_block: three physical qubits, full four-column success map and local CHSH settings.
+-lattice_wide: no scaling, formation-law or universal-gate conclusion.
++per_element: executed full complex success and failure columns on all four input basis states; both middle Z outcomes retained.
++per_site: executed the eight-dimensional carrier of three physical edge qubits; midpoint placement and control admissibility supplied.
++per_mode: executed four even-parity modes, crossed input rails, regrouped output rails and the complete prepared Bell vector.
++per_block: executed numeric and independent exact full instrument, witness spectrum and all four CHSH correlations on the finite three-qubit block.
++lattice_wide: checked and not executed — nonbridge scope is analytic; no spatial scaling, occurrence dynamics or arbitrary protocol simulation.
+ TOTAL: PASS=37 FAIL=0
+-Resources: 0.208149s, 71.125MiB; timeout180s, RSS384MiB.
++Resources: 0.248857s, 72.891MiB; timeout180s, RSS384MiB.
+ 
+ ----- stderr -----
+ 
+diff --git a/outputs/native_parity_entangler_2026_09_08.json b/outputs/native_parity_entangler_2026_09_08.json
+index 0a7f1541ca..df6ff0a292 100644
+--- a/outputs/native_parity_entangler_2026_09_08.json
++++ b/outputs/native_parity_entangler_2026_09_08.json
+@@ -225,8 +225,8 @@
+     }
+   },
+   "executed_assertions": 37,
+-  "elapsed_seconds": 0.2081492919824086,
+-  "peak_rss_mib": 71.125,
+-  "source_sha256": "2cdf699df61e34371417016bbe628f554771f21ef9b7bd2078925042c82f9b61",
++  "elapsed_seconds": 0.2488566249376163,
++  "peak_rss_mib": 72.890625,
++  "source_sha256": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a",
+   "scope": "Finite native physical matrix construction; preparation, signed hopping controls, Born Record schedule and CHSH settings supplied. Nonbridge lemma is analytic."
+ }
+diff --git a/scripts/native_parity_entangler_2026_09_08.py b/scripts/native_parity_entangler_2026_09_08.py
+index c5434e45ad..0687cd508e 100644
+--- a/scripts/native_parity_entangler_2026_09_08.py
++++ b/scripts/native_parity_entangler_2026_09_08.py
+@@ -7,19 +7,27 @@ AUDIT_INPUT_PATHS = (
+     'scripts/native_parity_entangler_exact_2026_09_08.py',
+ )
+ from pathlib import Path
+-import os,time,signal,resource,contextlib,io,runpy,json,hashlib,argparse
++import os,time,signal,resource,contextlib,io,importlib.util,json,hashlib,argparse
+ start=time.monotonic();signal.alarm(AUDIT_TIMEOUT_SEC)
+ for variable in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS'):
+     os.environ[variable]='1'
+ parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');args=parser.parse_args()
+-root=Path(__file__).resolve().parents[1];(root/'outputs').mkdir(exist_ok=True);parts={}
+-for name in ('numeric','exact'):
++root=Path(__file__).resolve().parents[1];(root/'outputs').mkdir(exist_ok=True)
++def load_helper(path):
++    # Fresh module execution with a static path visible to both packet resolvers.
++    spec = importlib.util.spec_from_file_location(path.stem, path)
++    module = importlib.util.module_from_spec(spec)
+     with contextlib.redirect_stdout(io.StringIO()):
+-        namespace=runpy.run_path(str(root/'scripts'/f'native_parity_entangler_{name}_2026_09_08.py'))
+-    data=namespace['result']
++        spec.loader.exec_module(module)
++    return module.result
++
++parts = {
++    'numeric': load_helper(root / 'scripts' / 'native_parity_entangler_numeric_2026_09_08.py'),
++    'exact': load_helper(root / 'scripts' / 'native_parity_entangler_exact_2026_09_08.py'),
++}
++for name, data in parts.items():
+     if data['status']!='PASS' or not data['checks'] or any(type(v) is not bool or not v for v in data['checks'].values()):
+         raise RuntimeError('incomplete live evidence')
+-    parts[name]=data
+ seconds=time.monotonic()-start
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1024**2 if os.uname().sysname=='Darwin' else 1024)
+ if not 0<rss<384 or seconds>=AUDIT_TIMEOUT_SEC:raise RuntimeError('resource contract')
+@@ -27,10 +35,10 @@ result={'status':'PASS','classification':'conditional-support','parts':parts,'ex
+ (root/'outputs/native_parity_entangler_2026_09_08.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+ print(json.dumps(result,indent=2,allow_nan=False))
+ if not args.json:
+-    print('per_element: the middle physical Z event retains both outcomes.')
+-    print('per_site: supplied edge-midpoint placement; no new one-site primitive.')
+-    print('per_mode: four modes with even parity, regrouped dual rails.')
+-    print('per_block: three physical qubits, full four-column success map and local CHSH settings.')
+-    print('lattice_wide: no scaling, formation-law or universal-gate conclusion.')
++    print('per_element: executed full complex success and failure columns on all four input basis states; both middle Z outcomes retained.')
++    print('per_site: executed the eight-dimensional carrier of three physical edge qubits; midpoint placement and control admissibility supplied.')
++    print('per_mode: executed four even-parity modes, crossed input rails, regrouped output rails and the complete prepared Bell vector.')
++    print('per_block: executed numeric and independent exact full instrument, witness spectrum and all four CHSH correlations on the finite three-qubit block.')
++    print('lattice_wide: checked and not executed — nonbridge scope is analytic; no spatial scaling, occurrence dynamics or arbitrary protocol simulation.')
+     print(f"TOTAL: PASS={result['executed_assertions']} FAIL=0")
+     print(f'Resources: {seconds:.6f}s, {rss:.3f}MiB; timeout180s, RSS384MiB.')

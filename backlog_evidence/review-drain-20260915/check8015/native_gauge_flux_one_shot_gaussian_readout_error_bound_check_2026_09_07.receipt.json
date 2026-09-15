@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "scripts/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.py",
+    "--json"
+  ],
+  "runner_sha256": "9e6f52c795f4ad070f52b9dc639abd9a5d35afbeba2612d0535d28ebf99f585f",
+  "exit_code": 0,
+  "elapsed": 0.05957484245300293,
+  "stdout_sha256": "d4d29effec2ab28ac2820b29871bb59f32e717bc7fe138e3a5fe9dcfc776f7d8"
+}

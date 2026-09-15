@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS",
+  "scope": "8037 affected input integration confirmation; original science review unchanged",
+  "reviewer_session": "/root/review_8012",
+  "head": "cc8a500ff539a88dda6d31c343667cac6d722f6f",
+  "tree": "c246c9f2c3d6c1cad06b2f8935766d0fec58ccda",
+  "changed_input_sha256": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "3bc61e8301b06b699400dc31320f8213b5449c1a628a2efc56234651c569ce1a",
+    "docs/audit/scripts/build_citation_graph.py": "16ab9c731e275eddc27bd3869d074fd8fede91c5e26b168967ac002f8ef213da",
+    "scripts/audit_packet_script_deps.py": "1e3e04d43d055602f3d5301ca5227fcc6209a7dc80cae0b458de63252efbfc6c"
+  },
+  "unchanged_inputs": "All remaining recorded science/runtime/premise/history/cache/output hashes identical",
+  "actual_graph_helpers": [
+    "scripts/native_parity_entangler_exact_2026_09_08.py",
+    "scripts/native_parity_entangler_numeric_2026_09_08.py"
+  ],
+  "actual_diagnostic_helpers": [
+    "scripts/native_parity_entangler_exact_2026_09_08.py",
+    "scripts/native_parity_entangler_numeric_2026_09_08.py"
+  ],
+  "methodology_delta": "Reviewed manifest stage-1b index staging option and committed acknowledgment retention; only combined gate procedure changes, no scientific premise or 8037 scope change.",
+  "interaction": "8010 and 8015 mappings are distinct claim keys and retain existing map entries; 8037 static helper discovery remains exact. Supplied constructions are independent; no new runtime or theoretical dependency is introduced.",
+  "combined_gate": "not run here; coordinator owns integrated gate",
+  "original_report_sha256": "e9deb766ce5b35150691c89ca97dc6d5e66cd63a823f1a0ee48bd809a474e8c8"
+}

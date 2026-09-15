@@ -1,0 +1,34 @@
+{
+  "cause": "GitHub automatically closed8017/8020 when their landed parent8016 base branch was deleted; own source heads intact.",
+  "first_recovery_attempt": "gh pr edit --base main on closed8017 rejected without mutation: cannot change base of closed PR.",
+  "recovery": "Restored exact original parent branch with absent-ref lease, reopened both children, retargeted each to main containing reviewed parent source, verified identical heads, then exact-lease deleted parent again only after no open PR targeted it.",
+  "prevention": "Inventory open PRs using landed head branch as base, preserve original identities/deltas, retarget to main after parent source landing and before deleting branch. Verify all expected open states.",
+  "events": [
+    {
+      "pr": 8017,
+      "before": {
+        "baseRefName": "codex/spatial-wilson-gaussian-block22-20260907",
+        "headRefOid": "5680b56f4205536f746340d1f2070e243820981c",
+        "state": "CLOSED"
+      },
+      "after": {
+        "baseRefName": "main",
+        "headRefOid": "5680b56f4205536f746340d1f2070e243820981c",
+        "state": "OPEN"
+      }
+    },
+    {
+      "pr": 8020,
+      "before": {
+        "baseRefName": "codex/spatial-wilson-gaussian-block22-20260907",
+        "headRefOid": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+        "state": "CLOSED"
+      },
+      "after": {
+        "baseRefName": "main",
+        "headRefOid": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+        "state": "OPEN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+diff --git a/docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md b/docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md
+index c8a320ae0e..51ab64cdb3 100644
+--- a/docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md
++++ b/docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md
+@@ -177,14 +177,16 @@ Independent campaign checks reconstruct the dimer in CAR matrices, the general t
+ 
+ Generic Gaussian state preparation and Givens synthesis are established quantum-algorithm tools; see [Jiang et al., Phys. Rev. Applied 9, 044036 (2018)](https://arxiv.org/abs/1711.05395). The contribution here is the explicit native physical edge/leaf Record implementation, its nonthermal product ready resource, parity accounting and complete success/failure map. It is not a claim of a new general Gibbs-preparation algorithm.
+ 
+-## Review and delivery record
++## Historical review and delivery record
++
++The following records the original author report frozen at PR 8036 head `6067254e3bca867aa6e737f7aa2bb6078e5d622d`; it is not confirmation of the current integration or a new execution receipt.
+ 
+ Focused independent reviews checked the complete canonical general-path proof, actual source authority and portable computations. The source's one numerical phase pulse was explicitly separated from the arbitrary-angle control condition used here. Forty-six fresh exact corner controls checked incidence, all ready leaf patterns for small paths, zero modes and repeated spectra. A separate reviewer checked the new encoded example and primary inclusion, with seven independent four-state exact controls for its restricted identity, Kraus map and energies. These controls supplement the earlier independent CAR/path reconstruction; reused checks are not recounted as new work.
+ 
+ The complete portable primary directly executed all 248 assertions successfully in about 1.14 seconds with a measured peak RSS of 166.6 MiB on this machine. The declared external timeout is 180 seconds; its internal elapsed-time and 384-MiB RSS checks occur after computation. A later resource failure would remain a failure. The primary imports fresh helper result objects; it is not a cached-result or independent schema verifier.
+ 
+-Ten scratch source mutations failed their intended predicates: halve the native hopping amplitude; collide physical midpoints; exchange a ready leaf value; change a unitary attenuation; duplicate a failure projector; reverse the Givens phase conjugation; remove the paired-sign phase; drop the thermal-prefactor half; alter the thermal energy formula; and change the encoded modal attenuation. The canonical helper hashes, exact substitutions and observed failures are recorded in the packet's mutation record. Mutations changed actual model controls or target formula code, rather than adding a stand-alone assertion that a deliberately wrong formula is wrong.
++Ten scratch source mutations failed their intended predicates: halve the native hopping amplitude; collide physical midpoints; exchange a ready leaf value; change a unitary attenuation; duplicate a failure projector; reverse the Givens phase conjugation; remove the paired-sign phase; drop the thermal-prefactor half; alter the thermal energy formula; and change the encoded modal attenuation. The canonical helper hashes, exact substitutions and observed failures are recorded in the [historical mutation record](work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json). Mutations changed actual model controls or target formula code, rather than adding a stand-alone assertion that a deliberately wrong formula is wrong.
+ 
+-The original path probe's unused paired-sign mutation survived; direct pair tests were subsequently added and the same mutation then failed. The survivor and historical revisions remain in the research checkpoint. No failed physics criterion was changed to obtain the final path checks. The encoded example corrected an exploratory overextension of Gaussian independent-ancilla reasoning: its correlated parity domain is now explicit, and no general interacting-compiler conclusion is carried here.
++The original author reported that an unused paired-sign mutation survived, after which direct pair tests were added and the same mutation failed. The preserved ten-mutation record contains the later failing mutation, not the earlier survivor checkpoint; that earlier report is historical context, not independently recovered execution evidence. No failed physics criterion was changed to obtain the final path checks. The encoded example corrected an exploratory overextension of Gaussian independent-ancilla reasoning: its correlated parity domain is now explicit, and no general interacting-compiler conclusion is carried here.
+ 
+-All three scientific computations are directly imported by the primary, so no helper-registry policy edit is requested. A later integrated landing must regenerate the citation manifest and pass the shared current-main pipeline, strict lint and changed-evidence gates. No effective grade, audit verdict or main landing is assigned by this author packet.
++All three scientific computations are freshly loaded by the primary through explicit static paths recognized by both packet helper resolvers; no helper-registry policy edit is requested. A later integrated landing must regenerate the citation manifest and pass the shared current-main pipeline, strict lint and changed-evidence gates. No effective grade, audit verdict or main landing is assigned by this author packet.
+diff --git a/docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json b/docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json
+new file mode 100644
+index 0000000000..718c5ca7b1
+--- /dev/null
++++ b/docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json
+@@ -0,0 +1,119 @@
++[
++  {
++    "name": "native_hopping_cubic",
++    "source": "native_product_gibbs_dimer_2026_09_08.py",
++    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
++    "mutant_sha256": "216f91bdaccf9db5ec7e461ca0d71c5cb3ce253dc2b39abb1ac4ec56a7d19303",
++    "old": "T.append(s.I*a*(B[i]-B[j])/2)",
++    "new": "T.append(s.I*a*(B[i]-B[j])/4)",
++    "expected_failure": "hopping_0_cubic",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.2023238750116434
++  },
++  {
++    "name": "physical_midpoint_collision",
++    "source": "native_product_gibbs_dimer_2026_09_08.py",
++    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
++    "mutant_sha256": "3518e9cf4e7a9d1974667c3f38dd85561bef587de7010b2e908eee112e066a4d",
++    "old": "(0,0,1)]",
++    "new": "(0,1,0)]",
++    "expected_failure": "physical_centers_distinct",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.16632970797945745
++  },
++  {
++    "name": "ready_leaf_swap",
++    "source": "native_product_gibbs_dimer_2026_09_08.py",
++    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
++    "mutant_sha256": "98834e96e398f8f38884791deca7ee5ba8ea84304a5377e11e4a1926edafbdba",
++    "old": "P=(Id-n[2])*n[3]",
++    "new": "P=(Id-n[2])*(Id-n[3])",
++    "expected_failure": "success_actual_Kraus_operator",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.3256334589968901
++  },
++  {
++    "name": "attenuation_control",
++    "source": "native_product_gibbs_dimer_2026_09_08.py",
++    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
++    "mutant_sha256": "88d524a30999f71f55cc1efcc91321e3cea0d47a145ad51dc62072589f4d3ed2",
++    "old": "Ua=pulse(T[1],r,v)",
++    "new": "Ua=pulse(T[1],v,r)",
++    "expected_failure": "success_actual_Kraus_operator",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.35619437499553896
++  },
++  {
++    "name": "lost_failure_outcome",
++    "source": "native_product_gibbs_dimer_2026_09_08.py",
++    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
++    "mutant_sha256": "01d6c436b60c40be31781c9f1e4373c885c8daafe0d0c11781abb9f5ff53c19c",
++    "old": "Qb=(Id-n[3]) if b==0 else n[3]",
++    "new": "Qb=(Id-n[3]) if b==0 else (Id-n[3])",
++    "expected_failure": "complete_instrument_on_ready_inputs",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.3195886250177864
++  },
++  {
++    "name": "givens_phase_orientation",
++    "source": "native_product_gibbs_path_2026_09_08.py",
++    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
++    "mutant_sha256": "68831d95f3c2f948fe8e27d1a2ccb13233d8d53a8d9c2a4a9798b49fc7725b5e",
++    "old": "gate=R@pulse(T[j],c,s)@R.conj().T",
++    "new": "gate=R.conj().T@pulse(T[j],c,s)@R",
++    "expected_failure": "phase_compilation",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.09945074998540804
++  },
++  {
++    "name": "paired_sign_resource",
++    "source": "native_product_gibbs_path_2026_09_08.py",
++    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
++    "mutant_sha256": "27ad1267c49b04aa47d3b0de827b53de572d94f8e286048fadd685125cdd7a17",
++    "old": "pulse(n[j]-n[j+1],-1.,0.)",
++    "new": "pulse(n[j]-n[j+1],1.,0.)",
++    "expected_failure": "direct_pair_sign_0_1",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.07556425000075251
++  },
++  {
++    "name": "thermal_prefactor",
++    "source": "native_product_gibbs_path_2026_09_08.py",
++    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
++    "mutant_sha256": "a1f81b914cf87ec7679236d79b0810e43499164aaba353c5f84a60f5535c5d22",
++    "old": "pref=np.exp(-beta*np.sum(abs(eps[eps<0]))/2)",
++    "new": "pref=np.exp(-beta*np.sum(abs(eps[eps<0])))",
++    "expected_failure": "actual_Kraus_vs_H_exponential",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.16298733299481682
++  },
++  {
++    "name": "thermal_energy_formula",
++    "source": "native_product_gibbs_path_2026_09_08.py",
++    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
++    "mutant_sha256": "a93895e68198860ae310a5445fffd9eb394b2725d68423099a9d4727ddd7aca8",
++    "old": "np.sum(eps/(1+np.exp(beta*eps)))",
++    "new": "np.sum(eps/(1+np.exp(beta*abs(eps))))",
++    "expected_failure": "thermal_energy",
++    "exit_code": 1,
++    "failed_as_expected": true,
++    "elapsed": 0.1635620419983752
++  },
++  {
++    "mutation": "encoded_modal_attenuation",
++    "old": "enumerate((r*r,S.Integer(1),r))",
++    "new": "enumerate((r,S.Integer(1),r))",
++    "source_sha256": "9fcc14cfbe903e35ac1077034e7b027e21f9c30f38b9f41e5e8ac49ea102704b",
++    "mutant_sha256": "63e8f7c7e74ab7ca2c7953ec0dedcdf23fc76c2a7c52205c0a49a902d28c36bf",
++    "exit_code": 1,
++    "failed_as_expected": true
++  }
++]
+diff --git a/logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt b/logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt
+index 1f1f214221..5ac53cac4c 100644
+--- a/logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt
++++ b/logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt
+@@ -1,10 +1,10 @@
+ ===== runner cache v1 =====
+ runner: scripts/native_product_gibbs_preparation_2026_09_08.py
+-runner_sha256: 4cbf1414d1903169317dcfb2d7abd3c76b31456da02ff449773b67bea807c929
+-input_fingerprint_sha256: a840bb5e19b66afce78186747d312102b7775f29aeb7d44c332e8746e11c72ec
++runner_sha256: a0dfb765602bf98977ebb69a650026dacce4eb81e1c33a6a36f8c0c89b300a97
++input_fingerprint_sha256: 709df69c1b653ddd6412b10251d8ce657543a2614c615da9442e5e025367d6dc
+ timeout_sec: 180
+ exit_code: 0
+-elapsed_sec: 1.23
++elapsed_sec: 1.63
+ status: ok
+ ----- stdout -----
+ {
+@@ -711,14 +711,20 @@ status: ok
+       "conditional_H": "-6071/12002",
+       "conditional_T": "-200/353",
+       "source_sha256": "9fcc14cfbe903e35ac1077034e7b027e21f9c30f38b9f41e5e8ac49ea102704b",
+-      "elapsed_sec": 0.5288582500070333
++      "elapsed_sec": 0.68129758303985
+     }
+   },
+   "executed_assertions": 248,
+-  "elapsed_seconds": 1.1390654589922633,
+-  "peak_rss_mib": 155.5625,
++  "elapsed_seconds": 1.5113195420708507,
++  "peak_rss_mib": 177.8125,
+   "scope": "Finite operator evidence for the declared construction. General path proof is analytic; preparation, controls, beta, h and Born events are supplied."
+ }
++per_element: executed full Kraus operators/columns and complete leaf outcomes in the dimer, path and encoded fixtures.
++per_site: executed distinct physical midpoint checks for 4, 8 and 6 edge qubits; physical control admissibility remains supplied.
++per_mode: executed m=4 at two coupling families and three beta values, plus exact dimer and constrained odd three-mode encoding.
++per_block: executed all 4 dimer outcomes, all 16 path outcomes in each of 6 cells, and all 8 encoded outcomes; 248 assertions total.
++lattice_wide: checked and not executed — arbitrary finite path coverage is analytic; no spatial scaling or formation-law simulation.
++TOTAL: PASS=248 FAIL=0
+ 
+ ----- stderr -----
+ 
+diff --git a/scripts/native_product_gibbs_preparation_2026_09_08.py b/scripts/native_product_gibbs_preparation_2026_09_08.py
+index 27c2280821..d4b435a30d 100644
+--- a/scripts/native_product_gibbs_preparation_2026_09_08.py
++++ b/scripts/native_product_gibbs_preparation_2026_09_08.py
+@@ -9,17 +9,26 @@ AUDIT_INPUT_PATHS = (
+     "scripts/native_product_gibbs_encoded_2026_09_08.py",
+ )
+ from pathlib import Path
+-import contextlib, io, json, os, resource, runpy, time
++import contextlib, io, json, os, resource, importlib.util, time
+ for resource_variable in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
+     os.environ[resource_variable] = "1"
+ start = time.monotonic()
+ root = Path(__file__).resolve().parents[1]
+-parts = {}
+-for name in ("dimer", "path", "encoded"):
++def load_helper(path):
++    # Fresh module execution with a static path visible to both packet resolvers.
++    spec = importlib.util.spec_from_file_location(path.stem, path)
++    module = importlib.util.module_from_spec(spec)
+     with contextlib.redirect_stdout(io.StringIO()):
+-        data = runpy.run_path(str(root / "scripts" / f"native_product_gibbs_{name}_2026_09_08.py"))
+-    parts[name] = data["result"]
+-    if parts[name]["status"] != "PASS" or not all(parts[name]["checks"].values()):
++        spec.loader.exec_module(module)
++    return module.result
++
++parts = {
++    "dimer": load_helper(root / "scripts" / "native_product_gibbs_dimer_2026_09_08.py"),
++    "path": load_helper(root / "scripts" / "native_product_gibbs_path_2026_09_08.py"),
++    "encoded": load_helper(root / "scripts" / "native_product_gibbs_encoded_2026_09_08.py"),
++}
++for name, data in parts.items():
++    if data["status"] != "PASS" or not all(data["checks"].values()):
+         raise RuntimeError(f"Incomplete {name} evidence")
+ seconds = time.monotonic() - start
+ rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+@@ -32,3 +41,10 @@ result = {"status": "PASS", "classification": "conditional-support", "parts": pa
+           "scope": "Finite operator evidence for the declared construction. General path proof is analytic; preparation, controls, beta, h and Born events are supplied."}
+ (root / "outputs" / "native_product_gibbs_preparation_2026_09_08.json").write_text(json.dumps(result, indent=2) + "\n")
+ print(json.dumps(result, indent=2))
++
++print('per_element: executed full Kraus operators/columns and complete leaf outcomes in the dimer, path and encoded fixtures.')
++print('per_site: executed distinct physical midpoint checks for 4, 8 and 6 edge qubits; physical control admissibility remains supplied.')
++print('per_mode: executed m=4 at two coupling families and three beta values, plus exact dimer and constrained odd three-mode encoding.')
++print('per_block: executed all 4 dimer outcomes, all 16 path outcomes in each of 6 cells, and all 8 encoded outcomes; 248 assertions total.')
++print('lattice_wide: checked and not executed — arbitrary finite path coverage is analytic; no spatial scaling or formation-law simulation.')
++print(f"TOTAL: PASS={result['executed_assertions']} FAIL=0")

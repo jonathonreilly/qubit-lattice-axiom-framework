@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "scripts/native_edge_record_z4_flux_single_bridge_check_2026_09_07.py",
+    "--json"
+  ],
+  "runner_sha256": "0238fc68c6f4db04506d1960607178ac2471f03fbec448622144d274703b9986",
+  "exit_code": 0,
+  "elapsed": 0.033872127532958984,
+  "stdout_sha256": "e3493bed79e08d4e2915143069d38e61348d25ee7d86fa36e3c4ec795f8c96d8"
+}

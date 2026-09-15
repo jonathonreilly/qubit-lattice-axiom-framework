@@ -1,0 +1,80 @@
+{
+  "four_input_columns": [
+    {
+      "input": [
+        0,
+        0
+      ],
+      "occupation": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "success": false
+    },
+    {
+      "input": [
+        0,
+        1
+      ],
+      "occupation": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "success": true
+    },
+    {
+      "input": [
+        1,
+        0
+      ],
+      "occupation": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "success": true
+    },
+    {
+      "input": [
+        1,
+        1
+      ],
+      "occupation": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "success": false
+    }
+  ],
+  "E": [
+    [
+      0.7071067811865475,
+      0.7071067811865475
+    ],
+    [
+      0.7071067811865474,
+      -0.7071067811865472
+    ]
+  ],
+  "CHSH": 2.82842712474619,
+  "local_means": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "fidelity_operator_residual_eigenvalues": [
+    -4.440892098500626e-16,
+    0.0,
+    0.0,
+    2.0
+  ],
+  "manual_separable_bound": "For product Bloch vectors, -az*bz+ax*bx <= sqrt(ax\u00b2+az\u00b2)sqrt(bx\u00b2+bz\u00b2)<=1; convexity handles mixtures."
+}

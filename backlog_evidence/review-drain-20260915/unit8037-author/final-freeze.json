@@ -1,0 +1,16 @@
+{
+  "original_head": "9ae85474d22ed4a987508293b60bed48f9108a43",
+  "base": "b6c7cbfcab3b9ddb078faaa8f6b7f46e32349425",
+  "staged_tree": "ae8a0c242b947d81d70d8450ecab10f0daa0e16d",
+  "files": {
+    "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0",
+    "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e",
+    "logs/runner-cache/native_parity_entangler_2026_09_08.txt": "4d245723022505b368d02316ffd6993f0d17fd80e9366c4439e4077ba12f71d8",
+    "outputs/native_parity_entangler_2026_09_08.json": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e",
+    "outputs/native_parity_entangler_exact_2026_09_08.json": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc",
+    "outputs/native_parity_entangler_numeric_2026_09_08.json": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64",
+    "scripts/native_parity_entangler_2026_09_08.py": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a",
+    "scripts/native_parity_entangler_exact_2026_09_08.py": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee",
+    "scripts/native_parity_entangler_numeric_2026_09_08.py": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+  }
+}

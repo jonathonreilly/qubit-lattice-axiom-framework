@@ -1,0 +1,165 @@
+{
+  "checks": 1426,
+  "rows": [
+    {
+      "m": 2,
+      "couplings": [
+        0.0
+      ],
+      "beta": 0.0,
+      "kraus_residual": 0.0,
+      "success": 1.0,
+      "outcomes": 4
+    },
+    {
+      "m": 2,
+      "couplings": [
+        0.0
+      ],
+      "beta": 0.7,
+      "kraus_residual": 0.0,
+      "success": 1.0,
+      "outcomes": 4
+    },
+    {
+      "m": 2,
+      "couplings": [
+        0.0
+      ],
+      "beta": 2.0,
+      "kraus_residual": 0.0,
+      "success": 1.0,
+      "outcomes": 4
+    },
+    {
+      "m": 2,
+      "couplings": [
+        -2.0
+      ],
+      "beta": 0.0,
+      "kraus_residual": 3.858916374093545e-16,
+      "success": 0.9999999999999997,
+      "outcomes": 4
+    },
+    {
+      "m": 2,
+      "couplings": [
+        -2.0
+      ],
+      "beta": 0.7,
+      "kraus_residual": 2.0770370905276122e-16,
+      "success": 0.38850099762710755,
+      "outcomes": 4
+    },
+    {
+      "m": 2,
+      "couplings": [
+        -2.0
+      ],
+      "beta": 2.0,
+      "kraus_residual": 5.382005793715205e-16,
+      "success": 0.2592416851013426,
+      "outcomes": 4
+    },
+    {
+      "m": 3,
+      "couplings": [
+        0.0,
+        0.0
+      ],
+      "beta": 0.0,
+      "kraus_residual": 0.0,
+      "success": 1.0,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        0.0,
+        0.0
+      ],
+      "beta": 0.7,
+      "kraus_residual": 0.0,
+      "success": 1.0,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        0.0,
+        0.0
+      ],
+      "beta": 2.0,
+      "kraus_residual": 0.0,
+      "success": 1.0,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        1.0,
+        0.0
+      ],
+      "beta": 0.0,
+      "kraus_residual": 5.4573318723067e-16,
+      "success": 0.9999999999999997,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        1.0,
+        0.0
+      ],
+      "beta": 0.7,
+      "kraus_residual": 8.3820000221454525e-16,
+      "success": 0.559941892881106,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        1.0,
+        0.0
+      ],
+      "beta": 2.0,
+      "kraus_residual": 2.830524433501838e-16,
+      "success": 0.32224655134048985,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        1.0,
+        1.0
+      ],
+      "beta": 0.0,
+      "kraus_residual": 2.5753104151914955e-15,
+      "success": 0.9999999999999984,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        1.0,
+        1.0
+      ],
+      "beta": 0.7,
+      "kraus_residual": 2.0274517080695875e-15,
+      "success": 0.47031852542678854,
+      "outcomes": 8
+    },
+    {
+      "m": 3,
+      "couplings": [
+        1.0,
+        1.0
+      ],
+      "beta": 2.0,
+      "kraus_residual": 1.5637009488370961e-15,
+      "success": 0.2804262456001392,
+      "outcomes": 8
+    }
+  ],
+  "route": "Independent CAR bit signs,exterior minors,direct matrix exponential; no author QR or native Pauli construction imported"
+}

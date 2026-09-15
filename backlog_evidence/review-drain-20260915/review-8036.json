@@ -1,0 +1,281 @@
+{
+  "pr": 8036,
+  "reviewer_session": "/root/backlog_topology",
+  "original_head": "6067254e3bca867aa6e737f7aa2bb6078e5d622d",
+  "original_merge_base": "7517b4a95f860fec43251c0281a981e6bb1f34d6",
+  "confirmation_base": "b6c7cbfcab3b9ddb078faaa8f6b7f46e32349425",
+  "reviewed_tree": "957be932f847fcdc53d606b04c9cd539f7aa4007",
+  "source_verdict": "PASS",
+  "landing_verdict": "not issued",
+  "final_paths": [
+    {
+      "path": "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md",
+      "blob": "51ab64cdb31bbcd6b39b82e7165216a73f54fc7b",
+      "sha256": "e62de55f454bc3b57ffacad7aa770fd85fcfed747786553985ffe01cee680878",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json",
+      "blob": "718c5ca7b1b9b0ebad2dca8e73ea2c2bde661b86",
+      "sha256": "f51435951f5324202fcece2fa4a99532acb104292010bfec209787b106561351",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    },
+    {
+      "path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "blob": "5ac53cac4cc32f78e88dd42d9defce1659dfffe7",
+      "sha256": "4914193ab850432da45915c63750fddcac1f8fa994f08ca225e3417a209053b0",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    },
+    {
+      "path": "scripts/native_product_gibbs_dimer_2026_09_08.py",
+      "blob": "6fd163ca074786ee7e5647ea936649722677ee25",
+      "sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    },
+    {
+      "path": "scripts/native_product_gibbs_encoded_2026_09_08.py",
+      "blob": "f407b9d731cc890d15b8e0ddfe1ec1eee46a1c0c",
+      "sha256": "9fcc14cfbe903e35ac1077034e7b027e21f9c30f38b9f41e5e8ac49ea102704b",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    },
+    {
+      "path": "scripts/native_product_gibbs_path_2026_09_08.py",
+      "blob": "1332675540e43f8aab91a876bfeaf211c9be3fad",
+      "sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    },
+    {
+      "path": "scripts/native_product_gibbs_preparation_2026_09_08.py",
+      "blob": "d4b435a30d3d4ab0476eb92523a26a229cae9621",
+      "sha256": "a0dfb765602bf98977ebb69a650026dacce4eb81e1c33a6a36f8c0c89b300a97",
+      "coverage": "Complete changed source/certificate; actual consumer contexts for tooling paths"
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/native-product-gibbs-20260908/MUTATION_RECORD.json",
+      "original_blob": "718c5ca7b1b9b0ebad2dca8e73ea2c2bde661b86",
+      "disposition": "accepted unchanged",
+      "reason": "Exact original ten-mutation evidence relocated and linked; no recovered survivor checkpoint asserted.",
+      "final_path": "docs/work_history/repo/review_feedback/native_product_gibbs_preparation_2026_09_08/MUTATION_RECORD.json",
+      "final_blob": "718c5ca7b1b9b0ebad2dca8e73ea2c2bde661b86",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:.claude/science/physics-loops/native-product-gibbs-20260908/MUTATION_RECORD.json"
+    },
+    {
+      "original_path": "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md",
+      "original_blob": "c8a320ae0e301bce5811b34a4a079132becf841f",
+      "disposition": "narrowed",
+      "reason": "Canonical scientific claim/evidence retained; wrapper discovery/output and provenance corrections where changed.",
+      "final_path": "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md",
+      "final_blob": "51ab64cdb31bbcd6b39b82e7165216a73f54fc7b",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_blob": "8e106be3823393c96bb9f05d5609537cf465f204",
+      "disposition": "rejected",
+      "reason": "Stale generated citation manifest; recompute on exact integrated current main.",
+      "final_path": null,
+      "final_blob": null,
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "original_blob": "1f1f2142216b043d5df9b79dca7acaeae6e80ba8",
+      "disposition": "narrowed",
+      "reason": "Canonical scientific claim/evidence retained; wrapper discovery/output and provenance corrections where changed.",
+      "final_path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "final_blob": "5ac53cac4cc32f78e88dd42d9defce1659dfffe7",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt"
+    },
+    {
+      "original_path": "outputs/native_product_gibbs_dimer_2026_09_08.json",
+      "original_blob": "9e0baa1bbb1a23f383418d9953051cce72f9530d",
+      "disposition": "superseded",
+      "reason": "Original whole output and each helper output exactly matched original canonical full stdout JSON; current canonical cache retains complete fresh outputs. No unique numeric science lost.",
+      "final_path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "final_blob": "5ac53cac4cc32f78e88dd42d9defce1659dfffe7",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:outputs/native_product_gibbs_dimer_2026_09_08.json"
+    },
+    {
+      "original_path": "outputs/native_product_gibbs_encoded_2026_09_08.json",
+      "original_blob": "d8b4e65cf6b199a9d06874b2357c082a59f900ae",
+      "disposition": "superseded",
+      "reason": "Original whole output and each helper output exactly matched original canonical full stdout JSON; current canonical cache retains complete fresh outputs. No unique numeric science lost.",
+      "final_path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "final_blob": "5ac53cac4cc32f78e88dd42d9defce1659dfffe7",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:outputs/native_product_gibbs_encoded_2026_09_08.json"
+    },
+    {
+      "original_path": "outputs/native_product_gibbs_path_2026_09_08.json",
+      "original_blob": "9b844263ae72aee4d1e8aef4ef0d1e9dae1a55c0",
+      "disposition": "superseded",
+      "reason": "Original whole output and each helper output exactly matched original canonical full stdout JSON; current canonical cache retains complete fresh outputs. No unique numeric science lost.",
+      "final_path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "final_blob": "5ac53cac4cc32f78e88dd42d9defce1659dfffe7",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:outputs/native_product_gibbs_path_2026_09_08.json"
+    },
+    {
+      "original_path": "outputs/native_product_gibbs_preparation_2026_09_08.json",
+      "original_blob": "9ae71fd5a4e3e34ec87516c3f3df63b4c0e1e44b",
+      "disposition": "superseded",
+      "reason": "Original whole output and each helper output exactly matched original canonical full stdout JSON; current canonical cache retains complete fresh outputs. No unique numeric science lost.",
+      "final_path": "logs/runner-cache/native_product_gibbs_preparation_2026_09_08.txt",
+      "final_blob": "5ac53cac4cc32f78e88dd42d9defce1659dfffe7",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:outputs/native_product_gibbs_preparation_2026_09_08.json"
+    },
+    {
+      "original_path": "scripts/native_product_gibbs_dimer_2026_09_08.py",
+      "original_blob": "6fd163ca074786ee7e5647ea936649722677ee25",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical scientific claim/evidence retained; wrapper discovery/output and provenance corrections where changed.",
+      "final_path": "scripts/native_product_gibbs_dimer_2026_09_08.py",
+      "final_blob": "6fd163ca074786ee7e5647ea936649722677ee25",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:scripts/native_product_gibbs_dimer_2026_09_08.py"
+    },
+    {
+      "original_path": "scripts/native_product_gibbs_encoded_2026_09_08.py",
+      "original_blob": "f407b9d731cc890d15b8e0ddfe1ec1eee46a1c0c",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical scientific claim/evidence retained; wrapper discovery/output and provenance corrections where changed.",
+      "final_path": "scripts/native_product_gibbs_encoded_2026_09_08.py",
+      "final_blob": "f407b9d731cc890d15b8e0ddfe1ec1eee46a1c0c",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:scripts/native_product_gibbs_encoded_2026_09_08.py"
+    },
+    {
+      "original_path": "scripts/native_product_gibbs_path_2026_09_08.py",
+      "original_blob": "1332675540e43f8aab91a876bfeaf211c9be3fad",
+      "disposition": "accepted unchanged",
+      "reason": "Canonical scientific claim/evidence retained; wrapper discovery/output and provenance corrections where changed.",
+      "final_path": "scripts/native_product_gibbs_path_2026_09_08.py",
+      "final_blob": "1332675540e43f8aab91a876bfeaf211c9be3fad",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:scripts/native_product_gibbs_path_2026_09_08.py"
+    },
+    {
+      "original_path": "scripts/native_product_gibbs_preparation_2026_09_08.py",
+      "original_blob": "27c2280821ca9c2c797b936ea395cc94c1acb2ca",
+      "disposition": "narrowed",
+      "reason": "Canonical scientific claim/evidence retained; wrapper discovery/output and provenance corrections where changed.",
+      "final_path": "scripts/native_product_gibbs_preparation_2026_09_08.py",
+      "final_blob": "d4b435a30d3d4ab0476eb92523a26a229cae9621",
+      "recovery": "6067254e3bca867aa6e737f7aa2bb6078e5d622d:scripts/native_product_gibbs_preparation_2026_09_08.py"
+    }
+  ],
+  "disposition_map_sha256": "9c4380d45df224f3d347b2cd2e4f0888a6367ec2a42a4f4dcdbe9674e5fda423",
+  "claim_dispositions": [
+    {
+      "claim": "General finite path Gibbs-filter construction",
+      "disposition": "accepted under explicit supplied apparatus",
+      "domain": "finite m>=2,real symmetric zero-diagonal nearest-neighbor h,finite beta>=0,all ready inputs",
+      "proof": "CONDITIONAL",
+      "content": [
+        "tree product-ready rank2^m and even-matter maximally mixed functional",
+        "empty/filled-leaf contractions and complete2^m history instrument",
+        "adjacent phase/hopping SO mode synthesis including residual signs",
+        "full Kraus c exp(-beta H/2)P;reference-stable identity",
+        "Gibbs functional on supplied mixed-ready state;success product and2^-m bound"
+      ],
+      "inputs": [
+        "native ordinary edge/CAR carrier",
+        "unrecorded sharp leaf preparations and mixed remaining qubits",
+        "arbitrary programmed hopping/difference-phase angles",
+        "Born/Lueders event and deletion convention",
+        "supplied h and beta"
+      ]
+    },
+    {
+      "claim": "Odd three-mode encoded density/hopping filter",
+      "disposition": "accepted only on stated rank4 correlated parity code",
+      "proof": "CONDITIONAL",
+      "content": [
+        "restricted quadratic identity,not ambient operator identity",
+        "complete8outcome native leaf instrument",
+        "exact r=3/5 spectral amplitudes and probability/energy/hopping values"
+      ],
+      "limits": [
+        "no general interacting many-mode compiler",
+        "no autonomous formation,energy supply,temperature or Hamiltonian selection"
+      ]
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "blob": "b8e423b64dadcb5dde7b75338a4fcc0277d81efd",
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+      "coverage": "Consumed complete definitions and theorems1-3: native physical edge/CAR algebra,tree parity dictionary,leaf event,post-record signs and support. Energy apparatus theorem not consumed."
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_LOCAL_CYCLE_TRANSPORT_AND_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "blob": "c0c76d89f882af306f1a89f11649b917ef773947",
+      "sha256": "8c1b0dbb2b2cd8897871cf7e98773ff189fd894dfe1ad9ddfb4b732c4cbfa561",
+      "coverage": "Complete source read; phase operator form consumed only; arbitrary angles separately supplied,not inferred from numeric0.7 pulse."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Already read in same reviewer session; verified byte-identical on this base."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Already read in same session; exact unchanged bytes verified."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "coverage": "Prior complete read reused after exact byte comparison; no units input."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "coverage": "Prior complete read reused after exact byte comparison; not a control-law supplier."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "coverage": "Prior complete read reused after exact byte comparison; does not supply ready state."
+    }
+  ],
+  "findings": [
+    {
+      "id": "8036-1",
+      "status": "resolved same session",
+      "issue": "Missing unique mutation provenance and unsupported checkpoint-preservation claim"
+    },
+    {
+      "id": "8036-2",
+      "status": "resolved same session",
+      "issue": "Dynamic wrapper omitted three helpers from actual source discovery"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8036/dimer_independent.json",
+      "sha256": "53c206b20ff1faf86578fd5f4fe80851d8899295b27b67eab5f90a97edaad7c3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8036/mutations.json",
+      "sha256": "012ffc8d6ed8d25dab5160f32539155d3c86bb62671072a6998c7172b3239ac1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8036/final-cache-check.json",
+      "sha256": "42019b61a5e7c9bbc52ccc9c160bc5d7ccb96d30e757d55f79eee077109239ab"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8036/final-discovery.json",
+      "sha256": "466d740b2aff1e6d2340b1ed362735f13a4b8ac73b70726d85b942e928eafafe"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8036/independent.json",
+      "sha256": "b40e37ccc78a7c0ef5ab3e39f4edb2c0140cb76eebb6d9fab839c264ec9f70fa"
+    }
+  ],
+  "limits": "Review is conditional source acceptance,not independent audit or integrated-current-main validation. All later source/input/helper changes require same-session confirmation.",
+  "findings_sha256": "79134e118fec74eaba52ceffefb8394065f91321827420d25d5a031fd7e2b308"
+}

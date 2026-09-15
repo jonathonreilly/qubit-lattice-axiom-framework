@@ -1,0 +1,634 @@
+{
+  "pr": 8037,
+  "original_head": "9ae85474d22ed4a987508293b60bed48f9108a43",
+  "base": "b6c7cbfcab3b9ddb078faaa8f6b7f46e32349425",
+  "merge_base": "8257bddfc97ab763d208b43e9bdc8677fe89b1e8",
+  "reviewer_session": "/root/review_8012",
+  "verdict": "PASS",
+  "disposition_map": [
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/ARTIFACT_PLAN.md",
+      "original_blob": "16848fb1290d9dbdef6eab1aa950faae2b3cd1ca",
+      "original_sha256": "331b7a3e8a85954f3910768a6018f17e756f78b356ff24f02dd9fe138524b517",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/ARTIFACT_PLAN.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_blob": "0273a112ddb03456c6c658ac50b8f00649b58248",
+      "original_sha256": "38513c28b67e1245f92a92558c7e0c7f86bbaab2d469512c5303ebb2e1fa7cee",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/CHECKS.md",
+      "original_blob": "94f77e47b281403741b797492b2203de75acbc9e",
+      "original_sha256": "ce6aae78bcb139c93cd5fbfe229b187c2dd7c4ed51155443edcf22f1ee01b0cf",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/CHECKS.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "original_blob": "2bba204ba3e8f588a410042cf6637b0c918d4be5",
+      "original_sha256": "5b5ad79469d6ebd1c7e801e0786997ef6b749b5bdb81f1073762065cf1eff94f",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/FAILURE_MAP_MUTATION.json",
+      "original_blob": "a752a1d6a2030bfa8836e1c617101594208d3cf2",
+      "original_sha256": "1f2bdd9ce85ccfb50d3cf3220560ded833ffce5389f32e7346116e67dbdb4e14",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/FAILURE_MAP_MUTATION.json",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/GOAL.md",
+      "original_blob": "278ee3dff9723cb782ba8572b46f58e68efde626",
+      "original_sha256": "5d095f72160fb4ae60ea9c5147defb983f6990bfe3341cb2e8aeb32d037fea07",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/GOAL.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/HANDOFF.md",
+      "original_blob": "129977d5169fc8fb26f40ea83fc6adf75afee881",
+      "original_sha256": "c3ff0e7595fa6db8e5ddaeffb35dcdf4b5c4a83db06e41b51db944832ef78e9d",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/HANDOFF.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/ISOLATED_CLOSURE.json",
+      "original_blob": "21ca168175e21ae3b322fe975f9c219f316f193b",
+      "original_sha256": "b731267011fec621bbc74ca653f3142e3a0404eb91a95d0434cd7391bc34d7db",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/ISOLATED_CLOSURE.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/ISOLATED_CLOSURE.stdout",
+      "original_blob": "8d0909222685cf973ae8619da9ece15fd9f60516",
+      "original_sha256": "7bf78b37eedd1ede5065da1655d4b98d36024a4cc91013c4d0c86b93be3ec616",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/ISOLATED_CLOSURE.stdout",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/LITERATURE_BRIDGES.md",
+      "original_blob": "49bdf0429a986d0f85735b8edd95642d826471e3",
+      "original_sha256": "47d37b92a7ea1699ced4987ad006430f703ba036956d3292ca96409a9bcf149d",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/LITERATURE_BRIDGES.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/MUTATIONS.json",
+      "original_blob": "f5656f0762a9f409dca43bb5e70195fbeac15245",
+      "original_sha256": "99c585e844f223882e27ce850aa4e681b5be5c5c7634a1e3d9a29128aac36cca",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/MUTATIONS.json",
+      "disposition": "historical control evidence superseded",
+      "final_path": "scripts/native_parity_entangler_numeric_2026_09_08.py",
+      "reason": "Frozen receipt records phase, CHSH-setting or failure-column negative control; corresponding exact complex predicates remain live, and independent decisive algebra separately confirms intended values. Receipt recoverable by immutable identity.",
+      "final_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/NO_GO_LEDGER.md",
+      "original_blob": "87fa9b61bcbdc8814d9caa75b2d816b92dba2615",
+      "original_sha256": "52d7f782b34554d6eb8bb806c835eb3fc8f7a1a27b1e170bed2d5e247ac56a53",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/NO_GO_LEDGER.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/OPPORTUNITY_QUEUE.md",
+      "original_blob": "1f3535f2a7f121ac4738064f5c4119f3f2278a61",
+      "original_sha256": "a59c721120c91af2f29f6081a14d8ca9dd91cb1f4b9c1006fde965e11627dcd7",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/OPPORTUNITY_QUEUE.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/PORT_HASHES.json",
+      "original_blob": "1d6683b2ae3e3428f9f809638fbdd10f2809f0d1",
+      "original_sha256": "b5b121aa07e7fba4af3972cdc25dcd9b7e515ebf4209be71c99705dc2305a9c2",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/PORT_HASHES.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/PORT_HASHES_BEFORE_EDITORIAL.json",
+      "original_blob": "e34388d98992e49d99445c25bb6cd7bcca21bd73",
+      "original_sha256": "cc25504d6e68b3db7159eda411de2661d5437460044695b8c2a3c53cddae6c51",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/PORT_HASHES_BEFORE_EDITORIAL.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/PORT_HASHES_BEFORE_ROOT_DELTA.json",
+      "original_blob": "c35c5fd5fc8c4807cdd792efb78ca18e86225db3",
+      "original_sha256": "7ed2783967354d05eada2a0b1f10644df76f2fa769e6b5ddfd4f13dc0f352f55",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/PORT_HASHES_BEFORE_ROOT_DELTA.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/PR_BACKLOG.md",
+      "original_blob": "6e44c84c9291cd8425c5e60fda1e6defd14df2c0",
+      "original_sha256": "e3fd4ad097b0e12b55df2116e0b987402de5a315c851591126fe6be497097581",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/PR_BACKLOG.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/REVIEW_HISTORY.md",
+      "original_blob": "73ccd6bd9a0f9d79571b8350bc338f32c8b7c2f0",
+      "original_sha256": "0421aa1327eb8a1547fc9cfb6467efb3fce27971b7b3307742a48f6a8d70cb4b",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/REVIEW_HISTORY.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/ROUTE_PORTFOLIO.md",
+      "original_blob": "2f6c38bee80321950e42358e45571847d7571960",
+      "original_sha256": "7cc7eab8f47353e79a6dbcbf14118f6bd6f3159b6677375254b12ad59f3f3046",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/ROUTE_PORTFOLIO.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/STATE.yaml",
+      "original_blob": "4e0b8ea8f114a088e4a40cfb64183e0dd17c9ab1",
+      "original_sha256": "2b4274dc1abfd69a753f93b87f1e6bfb264daf1b70c5a1d69cc1200c6a4f75c7",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/STATE.yaml",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/TRACE_GATE.md",
+      "original_blob": "762346881147ad60f388e87aaa79bca37fe92a7d",
+      "original_sha256": "a2dbc1ef8516fe13e23a62899592ddcb04734ebd48ea6d991bcfd209197ab2b9",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/TRACE_GATE.md",
+      "disposition": "consolidated history and scope",
+      "final_path": "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+      "reason": "Read workflow, assumptions, route/status or scoped-boundary artifact; supplied preparation/control/Born inputs and narrow no-go scope survive in canonical note N1\u2013N8; historical review/port role overlap and recovery identity survive in history. No current status inferred from old labels.",
+      "final_sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/CHSH_FREEZE.json",
+      "original_blob": "5f6be3eb60d11285f91c1c5dcd7e7232ffd83d9b",
+      "original_sha256": "8b5eb6b750beac030da33fc7bd71df104d2161d85e3fc269bedab08ea24044c0",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/CHSH_FREEZE.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/CHSH_RESULT.json",
+      "original_blob": "647a52d02b478b20a6f76b1587515bb9d8a11b76",
+      "original_sha256": "4b9161d6ec623d25ddd9b58a064db742f4c74afe5132810468d08e92c56fe840",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/CHSH_RESULT.json",
+      "disposition": "superseded execution evidence",
+      "final_path": "outputs/native_parity_entangler_exact_2026_09_08.json",
+      "reason": "Original finite numeric or symbolic scientific result agrees with current portable evidence and independent checks; original runtime/provenance preserved only as frozen history.",
+      "final_sha256": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/HASHES.json",
+      "original_blob": "952ce01a2768374245cb7ef8b43daffae2a10a8b",
+      "original_sha256": "5111cd2f83799684a41ddc6845e80e7c27b74042947e50cf0de341d4c22dff2e",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/HASHES.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/HASHES_BEFORE_CHSH.json",
+      "original_blob": "952ce01a2768374245cb7ef8b43daffae2a10a8b",
+      "original_sha256": "5111cd2f83799684a41ddc6845e80e7c27b74042947e50cf0de341d4c22dff2e",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/HASHES_BEFORE_CHSH.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/RESULT.json",
+      "original_blob": "5ada70abc45e0dfd53a33d6f4bfb9b9f2ba9b33f",
+      "original_sha256": "2d8e23d6574a6d498b5211ec08594f7aba1737d52c81b1e098e45d193d620435",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/RESULT.json",
+      "disposition": "superseded execution evidence",
+      "final_path": "outputs/native_parity_entangler_exact_2026_09_08.json",
+      "reason": "Original finite numeric or symbolic scientific result agrees with current portable evidence and independent checks; original runtime/provenance preserved only as frozen history.",
+      "final_sha256": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/REVIEW.md",
+      "original_blob": "7754bccbf06e9a7637e2524224e25fe57adfe683",
+      "original_sha256": "f6a87dfd5ddc740dbc50a6601cc3d50835447808f8143e938c4ede5980523657",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/REVIEW.md",
+      "disposition": "consolidated proof and scope",
+      "final_path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "reason": "Native instrument, regrouped encoding, witness/fidelity, CHSH signs and analytic nonbridge scope preserved; unique cold-review fidelity lemma explicitly restored. Role history retained separately.",
+      "final_sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/check.py",
+      "original_blob": "79dc26e4208336daed6419ef8fe449729262ff6d",
+      "original_sha256": "cf550976c7621411cfc65cc01879e4f1253e90063813fe3a7996fb8220d592c9",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/check.py",
+      "disposition": "consolidated source",
+      "final_path": "scripts/native_parity_entangler_exact_2026_09_08.py",
+      "reason": "Original full-column/phase or operational CHSH predicates retained or strengthened in portable exact/numeric helpers; local means independently verified in reviewer reduced-qubit control. No unique proof input discarded.",
+      "final_sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/check_chsh.py",
+      "original_blob": "33384fc40e75ae12cc2e610566fef671569752b5",
+      "original_sha256": "14a8a328feb8cd0443ce8ef388b0c7e1e06c6e8e3a873de82302acbdab77d0d5",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangler-cold-review/check_chsh.py",
+      "disposition": "consolidated source",
+      "final_path": "scripts/native_parity_entangler_exact_2026_09_08.py",
+      "reason": "Original full-column/phase or operational CHSH predicates retained or strengthened in portable exact/numeric helpers; local means independently verified in reviewer reduced-qubit control. No unique proof input discarded.",
+      "final_sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/DERIVATION.md",
+      "original_blob": "28d84207761f6d8c5b4f0fc2cbaf84374692d893",
+      "original_sha256": "5e59c7eceb90a80e6ecc260e3826b88616f32e171a71e07177f107b680cfae9c",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/DERIVATION.md",
+      "disposition": "consolidated proof and scope",
+      "final_path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "reason": "Native instrument, regrouped encoding, witness/fidelity, CHSH signs and analytic nonbridge scope preserved; unique cold-review fidelity lemma explicitly restored. Role history retained separately.",
+      "final_sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/HASHES.json",
+      "original_blob": "896919417e9c29fc187c59e161578c2d7f9c6239",
+      "original_sha256": "c8a0764b766e3d130278ea29b8d275255fa159e9bd8fa8ec3a60bec1dd327838",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/HASHES.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/PREREGISTRATION.md",
+      "original_blob": "67e90c053551670f013b992a604e66e28f3d6423",
+      "original_sha256": "735178ec8d14b2a322f0e4c185718c549e781a05ca47ae61a3593c878e5efda4",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/PREREGISTRATION.md",
+      "disposition": "consolidated proof and scope",
+      "final_path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "reason": "Native instrument, regrouped encoding, witness/fidelity, CHSH signs and analytic nonbridge scope preserved; unique cold-review fidelity lemma explicitly restored. Role history retained separately.",
+      "final_sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/RESULT.json",
+      "original_blob": "eaa41b8f087102c970d06d546759f76e3cdc4a92",
+      "original_sha256": "775a35da9c4174150dad2ae9bd343882dc72c9d5db2637c7ee1ba97a31a40677",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/RESULT.json",
+      "disposition": "superseded execution evidence",
+      "final_path": "outputs/native_parity_entangler_numeric_2026_09_08.json",
+      "reason": "Original finite numeric or symbolic scientific result agrees with current portable evidence and independent checks; original runtime/provenance preserved only as frozen history.",
+      "final_sha256": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/check.py",
+      "original_blob": "8549f4cf0d2f4d5de3c0775f52ca13aff6e7424a",
+      "original_sha256": "8a87bc51676841915f16b60c7e0eda8dc1de3cc694d568879ceef33bb629a4db",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-entangling-bridge/check.py",
+      "disposition": "consolidated source",
+      "final_path": "scripts/native_parity_entangler_numeric_2026_09_08.py",
+      "reason": "Original full-column/phase or operational CHSH predicates retained or strengthened in portable exact/numeric helpers; local means independently verified in reviewer reduced-qubit control. No unique proof input discarded.",
+      "final_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/DERIVATION.md",
+      "original_blob": "51fcbade16d3f553aa4dbbd650c2f26392ff2084",
+      "original_sha256": "211c610d93cd4d2228d2d8b14480f99591a330ded16568851bf1f25c617d46a6",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/DERIVATION.md",
+      "disposition": "consolidated proof and scope",
+      "final_path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "reason": "Native instrument, regrouped encoding, witness/fidelity, CHSH signs and analytic nonbridge scope preserved; unique cold-review fidelity lemma explicitly restored. Role history retained separately.",
+      "final_sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/HASHES.json",
+      "original_blob": "0d3039b96bbb6708b282e613a2788a2b570f36db",
+      "original_sha256": "5f5ddb7bb4a80e7f67b7408b9cd70921a6d32ad2a2c2a8f6a89d41db0636fbf9",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/HASHES.json",
+      "disposition": "superseded historical identity or execution receipt",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Read metadata/receipt; no additional source premise. Current bounded execution and final source identities supersede old-runtime certification; immutable original remains recoverable.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/PREREGISTRATION.md",
+      "original_blob": "51ff4b5f782f3062887c47bb8bb2125711dbfe2d",
+      "original_sha256": "ec8866d168242953c1346850d6cf02f8f309298ae60d24ca357b756e2c110b5d",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/PREREGISTRATION.md",
+      "disposition": "consolidated proof and scope",
+      "final_path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "reason": "Native instrument, regrouped encoding, witness/fidelity, CHSH signs and analytic nonbridge scope preserved; unique cold-review fidelity lemma explicitly restored. Role history retained separately.",
+      "final_sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/RESULT.json",
+      "original_blob": "3e77b2a1c07458061738b6b6535f7cc4ee4c30a9",
+      "original_sha256": "56a8b734fce4d848974772dc570b1b3a52131eb48a662bdd56504e3d902d3b0c",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/RESULT.json",
+      "disposition": "superseded execution evidence",
+      "final_path": "outputs/native_parity_entangler_numeric_2026_09_08.json",
+      "reason": "Original finite numeric or symbolic scientific result agrees with current portable evidence and independent checks; original runtime/provenance preserved only as frozen history.",
+      "final_sha256": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/check.py",
+      "original_blob": "b41e04c31d3212ebd8b14b1b6a52c8a3e14691fd",
+      "original_sha256": "9a8d77bf495ad9ab42e949666ad9cbfa26e82087906f7703fa45c89ca870db6f",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:.claude/science/physics-loops/native-parity-entangler-20260908/evidence/native-parity-resource-use/check.py",
+      "disposition": "consolidated source",
+      "final_path": "scripts/native_parity_entangler_numeric_2026_09_08.py",
+      "reason": "Original full-column/phase or operational CHSH predicates retained or strengthened in portable exact/numeric helpers; local means independently verified in reviewer reduced-qubit control. No unique proof input discarded.",
+      "final_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+    },
+    {
+      "path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "original_blob": "777f750c18ea645c8518e5f4d257c5f74b30e62d",
+      "original_sha256": "448fd7e26fe1dc302498a47e8a3f77aa95c16661bb6ae355abb4da79a257840f",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "disposition": "superseded with preserved science",
+      "final_path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "original_blob": "d0740c6fc3830737e9c9beef8388edd28c4719d7",
+      "original_sha256": "ca248b994817913b9e7f92aecd36fe03f182cadc68f0df7751c79fde611f9556",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:docs/audit/data/citation_graph_manifest.json",
+      "disposition": "superseded generated metadata",
+      "final_path": "docs/audit/data/citation_graph_manifest.json",
+      "reason": "Original generated manifest is not unique science. Current-main manifest retained; integrated regeneration belongs to combined gate.",
+      "final_sha256": "6c2f415458058052688a7b7f1788b2ae10da23b0838cde976c27e4a38af75cbb"
+    },
+    {
+      "path": "logs/runner-cache/native_parity_entangler_2026_09_08.txt",
+      "original_blob": "cb7e8eea4c48b4bc1a99593e31d7a6a8e524de95",
+      "original_sha256": "a5376a7cc290ef0828f0563707c3ffe0d890ed4b4782c9f16122cf0241ecb073",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:logs/runner-cache/native_parity_entangler_2026_09_08.txt",
+      "disposition": "superseded with preserved science",
+      "final_path": "logs/runner-cache/native_parity_entangler_2026_09_08.txt",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "4d245723022505b368d02316ffd6993f0d17fd80e9366c4439e4077ba12f71d8"
+    },
+    {
+      "path": "outputs/native_parity_entangler_2026_09_08.json",
+      "original_blob": "0a7f1541cabab869ae245209efd5bbf1b6782436",
+      "original_sha256": "9061542397b43d1080b9c77994597398c7cc0d2ee2ee1f354b6a69be093cd591",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:outputs/native_parity_entangler_2026_09_08.json",
+      "disposition": "superseded with preserved science",
+      "final_path": "outputs/native_parity_entangler_2026_09_08.json",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e"
+    },
+    {
+      "path": "outputs/native_parity_entangler_exact_2026_09_08.json",
+      "original_blob": "22465f8304d61c41ca70b75ff1c7d951054cdbcd",
+      "original_sha256": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:outputs/native_parity_entangler_exact_2026_09_08.json",
+      "disposition": "preserved",
+      "final_path": "outputs/native_parity_entangler_exact_2026_09_08.json",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc"
+    },
+    {
+      "path": "outputs/native_parity_entangler_numeric_2026_09_08.json",
+      "original_blob": "b4c700b9d482f1293f5ddfb907074e06ceaf86a8",
+      "original_sha256": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:outputs/native_parity_entangler_numeric_2026_09_08.json",
+      "disposition": "preserved",
+      "final_path": "outputs/native_parity_entangler_numeric_2026_09_08.json",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64"
+    },
+    {
+      "path": "scripts/native_parity_entangler_2026_09_08.py",
+      "original_blob": "c5434e45ad33f05492740d3774bf431522b00f60",
+      "original_sha256": "2cdf699df61e34371417016bbe628f554771f21ef9b7bd2078925042c82f9b61",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:scripts/native_parity_entangler_2026_09_08.py",
+      "disposition": "superseded with preserved science",
+      "final_path": "scripts/native_parity_entangler_2026_09_08.py",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a"
+    },
+    {
+      "path": "scripts/native_parity_entangler_exact_2026_09_08.py",
+      "original_blob": "7ac535d77141b7e566bfbcd6162d7b52c7953e98",
+      "original_sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:scripts/native_parity_entangler_exact_2026_09_08.py",
+      "disposition": "preserved",
+      "final_path": "scripts/native_parity_entangler_exact_2026_09_08.py",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee"
+    },
+    {
+      "path": "scripts/native_parity_entangler_numeric_2026_09_08.py",
+      "original_blob": "2a8fc404a345ed8ac809756970fdf8dfff734eeb",
+      "original_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931",
+      "recovery": "9ae85474d22ed4a987508293b60bed48f9108a43:scripts/native_parity_entangler_numeric_2026_09_08.py",
+      "disposition": "preserved",
+      "final_path": "scripts/native_parity_entangler_numeric_2026_09_08.py",
+      "reason": "Canonical science retained; only reviewed fidelity/scope/provenance, supported helper loader and fresh execution identities changed.",
+      "final_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+    }
+  ],
+  "source_verdict": "FINAL VERDICT: PASS",
+  "staged_tree": "ae8a0c242b947d81d70d8450ecab10f0daa0e16d",
+  "reviewed_head": "b6c7cbfcab3b9ddb078faaa8f6b7f46e32349425",
+  "changed_paths": [
+    "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+    "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md",
+    "logs/runner-cache/native_parity_entangler_2026_09_08.txt",
+    "outputs/native_parity_entangler_2026_09_08.json",
+    "outputs/native_parity_entangler_exact_2026_09_08.json",
+    "outputs/native_parity_entangler_numeric_2026_09_08.json",
+    "scripts/native_parity_entangler_2026_09_08.py",
+    "scripts/native_parity_entangler_exact_2026_09_08.py",
+    "scripts/native_parity_entangler_numeric_2026_09_08.py"
+  ],
+  "source_and_input_hashes": {
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+      "git_blob": "b8e423b64dadcb5dde7b75338a4fcc0277d81efd"
+    },
+    "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md": {
+      "sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0",
+      "git_blob": "f9f640ecfe5a46dcb75e81cebc69ddb7a5ed4e90"
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "fff1460d09b0d5f741d03eeeb4f8575c6b832f543e4713d26aaac6078eb82c9d",
+      "git_blob": "5c3d7778b892a0e8e8ed3256c8c7bd55903cb7b4"
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "9c64af533fb5dd2c48724e4489dd45c645c2ba3982f0cbd36defc60a0253b755",
+      "git_blob": "50b63a047f79b2818ad727422020220609176ca1"
+    },
+    "docs/work_history/repo/review_feedback/NATIVE_PARITY_ENTANGLER_HISTORY_2026-09-08.md": {
+      "sha256": "bee31dd127e1cc8465286467eac6e5c90be72bd0fe01c4cd8ab8e74aff98687e",
+      "git_blob": "1a4579e47cb6a0926e7948d4c1a9981cb04a1fb5"
+    },
+    "logs/runner-cache/native_parity_entangler_2026_09_08.txt": {
+      "sha256": "4d245723022505b368d02316ffd6993f0d17fd80e9366c4439e4077ba12f71d8",
+      "git_blob": "910ca658fe7365f59387392c27ebbc9090d1bc2a"
+    },
+    "outputs/native_parity_entangler_2026_09_08.json": {
+      "sha256": "03b09ba08a8adb5d28023ab2b2c0da54a96670a26a8ae1b0f09c5090bfe1ac1e",
+      "git_blob": "df6ff0a292e3d58281ff2024908ef6f65a424620"
+    },
+    "outputs/native_parity_entangler_exact_2026_09_08.json": {
+      "sha256": "b0a2d242966976f644f1413b0c0df94b8f3ccb31a9384c28888163867471d9cc",
+      "git_blob": "22465f8304d61c41ca70b75ff1c7d951054cdbcd"
+    },
+    "outputs/native_parity_entangler_numeric_2026_09_08.json": {
+      "sha256": "a9d850ca3d9dbc2be3d80fd3630a3b53e548787d476305c7c77716c08f900f64",
+      "git_blob": "b4c700b9d482f1293f5ddfb907074e06ceaf86a8"
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "92c728cfba31e6f381bf6a7a6c3d905493467fcf859df678373d737e3561c4b1",
+      "git_blob": "27db3357c6d7288a809b720e39276e474514d991"
+    },
+    "scripts/native_parity_entangler_2026_09_08.py": {
+      "sha256": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a",
+      "git_blob": "0687cd508e50e8d83d4be34d7e569329fca9c7db"
+    },
+    "scripts/native_parity_entangler_exact_2026_09_08.py": {
+      "sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee",
+      "git_blob": "7ac535d77141b7e566bfbcd6162d7b52c7953e98"
+    },
+    "scripts/native_parity_entangler_numeric_2026_09_08.py": {
+      "sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931",
+      "git_blob": "2a8fc404a345ed8ac809756970fdf8dfff734eeb"
+    }
+  },
+  "findings": [
+    {
+      "id": "F8037-1",
+      "status": "fixed confirmed same session",
+      "summary": "Unique fidelity proof, scoped N1\u2013N8, history and live outputs preserved."
+    },
+    {
+      "id": "F8037-2",
+      "status": "fixed confirmed same session",
+      "summary": "Static helper loader recognized by both actual dependency resolvers; no tooling map changes."
+    }
+  ],
+  "claim_dispositions": {
+    "instrument": "Conditional full two-outcome parity instrument on declared four-mode encoding, success probability 1/2; failure not two logical qubits.",
+    "entanglement": "Trusted observable witness W and fidelity consequence; finite ideal native CHSH 2sqrt2 with supplied controls, settings and Born events.",
+    "nonbridge": "Analytic information-free isometry under parent constrained-code assumptions, not universal physical/control exclusion."
+  },
+  "checks": {
+    "final_actual_runner": {
+      "executed_assertions": 37,
+      "elapsed_seconds": 0.20973433298058808,
+      "peak_rss_mib": 68.359375,
+      "source_sha256": "99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a"
+    },
+    "independent_control": "check8037/independent-controls.json: reduced two-qubit CHSH, zero local means, complete occupation columns and PSD fidelity inequality",
+    "helper_resolution": "Both actual graph and diagnostic resolve exactly numeric and exact; fresh spec loader executes each once; scientific outputs identical.",
+    "staged_worktree_equality": "PASS",
+    "diff_check": "PASS",
+    "source_loss": "All nine staged paths additions to current main; original canonical helper bytes and complete scientific output parts preserved. Unique proof/scope recovered."
+  },
+  "runtime_file_inputs": [
+    "primary script",
+    "scripts/native_parity_entangler_numeric_2026_09_08.py",
+    "scripts/native_parity_entangler_exact_2026_09_08.py"
+  ],
+  "declared_nonruntime_inputs": [
+    "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md"
+  ],
+  "lenses": [
+    "mathematical validity",
+    "domain and imported premises",
+    "complete original delta preservation",
+    "independent decisive checks",
+    "actual bounded runner",
+    "negative scope N1\u2013N8",
+    "reproducibility and helper discovery",
+    "history and audit separation"
+  ],
+  "combined_gate": "Not run by reviewer; coordinator integrated-candidate obligation",
+  "disposition_map_sha256": "d6597623ee9708712efe7733d81d40f58c2c8a652205cf114e1d70e4d34cbb37",
+  "findings_sha256": "6bc4d3d1fd4730935cef10842b8ece303afd8661f213f9c7c333d6b2253ea1ee"
+}

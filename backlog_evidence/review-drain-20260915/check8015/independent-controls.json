@@ -1,0 +1,10 @@
+{
+  "physical_pauli_matrix_and_exponential": "PASS",
+  "basis_inputs": 256,
+  "orthogonal_outputs": 256,
+  "max_exponential_error": 2.220446049250313e-16,
+  "random_complex_contractions": 1000,
+  "max_score": 0.8884021311288455,
+  "all_rank4_oriented_diagonal_rules": 252,
+  "four_single_error_vertices_present": true
+}

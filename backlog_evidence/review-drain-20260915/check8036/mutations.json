@@ -1,0 +1,62 @@
+[
+  {
+    "mutation": "native_hopping_cubic",
+    "exit": 1,
+    "predicate": "hopping_0_cubic",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/0/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 50, in <module>\n    check(f'hopping_{k}_cubic',zero(t**3-t))\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/0/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 44, in check\n    if not p:raise AssertionError(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: hopping_0_cubic\n"
+  },
+  {
+    "mutation": "physical_midpoint_collision",
+    "exit": 1,
+    "predicate": "physical_centers_distinct",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/1/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 54, in <module>\n    check('physical_centers_distinct',len(set(centers))==L)\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/1/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 44, in check\n    if not p:raise AssertionError(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: physical_centers_distinct\n"
+  },
+  {
+    "mutation": "ready_leaf_swap",
+    "exit": 1,
+    "predicate": "success_actual_Kraus_operator",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/2/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 85, in <module>\n    check('success_actual_Kraus_operator',zero(K-F*P))\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/2/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 44, in check\n    if not p:raise AssertionError(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: success_actual_Kraus_operator\n"
+  },
+  {
+    "mutation": "attenuation_control",
+    "exit": 1,
+    "predicate": "success_actual_Kraus_operator",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/3/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 85, in <module>\n    check('success_actual_Kraus_operator',zero(K-F*P))\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/3/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 44, in check\n    if not p:raise AssertionError(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: success_actual_Kraus_operator\n"
+  },
+  {
+    "mutation": "lost_failure_outcome",
+    "exit": 1,
+    "predicate": "complete_instrument_on_ready_inputs",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/4/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 83, in <module>\n    check('complete_instrument_on_ready_inputs',zero(normal-P))\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/4/scripts/native_product_gibbs_dimer_2026_09_08.py\", line 44, in check\n    if not p:raise AssertionError(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: complete_instrument_on_ready_inputs\n"
+  },
+  {
+    "mutation": "givens_phase_orientation",
+    "exit": 1,
+    "predicate": "phase_compilation",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/5/scripts/native_product_gibbs_path_2026_09_08.py\", line 81, in <module>\n    close(f'f{family}_g{step}_phase_compilation',gate,pulse(J,c,-s))\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/5/scripts/native_product_gibbs_path_2026_09_08.py\", line 40, in close\n    err=float(np.linalg.norm(a-b));residuals[name]=err;check(name,err<tol)\n                                                       ^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/5/scripts/native_product_gibbs_path_2026_09_08.py\", line 38, in check\n    if not condition:raise AssertionError(name)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: f0_g0_phase_compilation\n"
+  },
+  {
+    "mutation": "paired_sign_resource",
+    "exit": 1,
+    "predicate": "direct_pair_sign_0_1",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/6/scripts/native_product_gibbs_path_2026_09_08.py\", line 47, in <module>\n    for b in range(a+1,m):close(f'direct_pair_sign_{a}_{b}',paired_sign(a,b),B[a]@B[b])\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/6/scripts/native_product_gibbs_path_2026_09_08.py\", line 40, in close\n    err=float(np.linalg.norm(a-b));residuals[name]=err;check(name,err<tol)\n                                                       ^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/6/scripts/native_product_gibbs_path_2026_09_08.py\", line 38, in check\n    if not condition:raise AssertionError(name)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: direct_pair_sign_0_1\n"
+  },
+  {
+    "mutation": "thermal_prefactor",
+    "exit": 1,
+    "predicate": "actual_Kraus_vs_H_exponential",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/7/scripts/native_product_gibbs_path_2026_09_08.py\", line 122, in <module>\n    close(f'{tag}_actual_Kraus_vs_H_exponential',K,target)\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/7/scripts/native_product_gibbs_path_2026_09_08.py\", line 40, in close\n    err=float(np.linalg.norm(a-b));residuals[name]=err;check(name,err<tol)\n                                                       ^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/7/scripts/native_product_gibbs_path_2026_09_08.py\", line 38, in check\n    if not condition:raise AssertionError(name)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: f0_b0.7_actual_Kraus_vs_H_exponential\n"
+  },
+  {
+    "mutation": "thermal_energy_formula",
+    "exit": 1,
+    "predicate": "thermal_energy",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/8/scripts/native_product_gibbs_path_2026_09_08.py\", line 130, in <module>\n    check(f'{tag}_thermal_energy',abs(actual_energy-expected_energy)<2e-11)\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/8/scripts/native_product_gibbs_path_2026_09_08.py\", line 38, in check\n    if not condition:raise AssertionError(name)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: f0_b0.7_thermal_energy\n"
+  },
+  {
+    "mutation": "encoded_modal_attenuation",
+    "exit": 1,
+    "predicate": "full_success_spectral_target",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/9/scripts/native_product_gibbs_encoded_2026_09_08.py\", line 70, in <module>\n    K=branches['000'];ck('full_success_spectral_target',zero(S.simplify(K-F*Q)))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/check8036/mutants/9/scripts/native_product_gibbs_encoded_2026_09_08.py\", line 20, in ck\n    if not bool(p):raise AssertionError(k)\n                   ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: full_success_spectral_target\n"
+  }
+]

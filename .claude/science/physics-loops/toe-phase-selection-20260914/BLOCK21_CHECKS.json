@@ -1,0 +1,164 @@
+{
+  "exact_hodge": [
+    {
+      "d": 3,
+      "plaquettes": 6,
+      "three_cells": 1,
+      "hodge_spectrum": {
+        "6": 1
+      },
+      "exact_identities": true
+    },
+    {
+      "d": 4,
+      "plaquettes": 24,
+      "three_cells": 8,
+      "hodge_spectrum": {
+        "8": 4,
+        "6": 4
+      },
+      "exact_identities": true
+    }
+  ],
+  "three_cube": [
+    {
+      "beta": 0.1,
+      "source": 0,
+      "magnetic": 0.8500160902256421,
+      "poisson_comb": 0.8500160902256422,
+      "positive_auxiliary_quad": 0.850016090225642,
+      "maximum_error": 1.1102230246251565e-16,
+      "cutoff_error": 3.3306690738754696e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.008134062895683858,
+      "aux_covariance_error": 2.168404344971009e-18
+    },
+    {
+      "beta": 0.1,
+      "source": 1,
+      "magnetic": 0.9643509448001089,
+      "poisson_comb": 0.9643509448001092,
+      "positive_auxiliary_quad": 0.9643509448001087,
+      "maximum_error": 3.3306690738754696e-16,
+      "cutoff_error": 3.3306690738754696e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.016021997559286794,
+      "aux_covariance_error": 2.168404344971009e-18
+    },
+    {
+      "beta": 0.1,
+      "source": 2,
+      "magnetic": 0.825582016636656,
+      "poisson_comb": 0.8255820166366563,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 3.3306690738754696e-16,
+      "cutoff_error": 0.0,
+      "wrong_characteristic_instead_of_mgf_error": 0.0,
+      "aux_covariance_error": 2.168404344971009e-18
+    },
+    {
+      "beta": 0.4,
+      "source": 0,
+      "magnetic": 0.850325206066856,
+      "poisson_comb": 0.8503252060668561,
+      "positive_auxiliary_quad": 0.8503252060668562,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 4.440892098500626e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.008719048439696175,
+      "aux_covariance_error": 5.204170427930421e-18
+    },
+    {
+      "beta": 0.4,
+      "source": 1,
+      "magnetic": 0.9649857417854243,
+      "poisson_comb": 0.9649857417854245,
+      "positive_auxiliary_quad": 0.9649857417854247,
+      "maximum_error": 4.440892098500626e-16,
+      "cutoff_error": 6.661338147750939e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.017177415846211908,
+      "aux_covariance_error": 5.204170427930421e-18
+    },
+    {
+      "beta": 0.4,
+      "source": 2,
+      "magnetic": 0.825582016636656,
+      "poisson_comb": 0.8255820166366562,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 1.1102230246251565e-16,
+      "wrong_characteristic_instead_of_mgf_error": 2.220446049250313e-16,
+      "aux_covariance_error": 5.204170427930421e-18
+    },
+    {
+      "beta": 1.0,
+      "source": 0,
+      "magnetic": 0.8598451363298931,
+      "poisson_comb": 0.859845136329893,
+      "positive_auxiliary_quad": 0.8598451363298931,
+      "maximum_error": 1.1102230246251565e-16,
+      "cutoff_error": 3.3306690738754696e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.027300228586376263,
+      "aux_covariance_error": 2.7755575615628914e-17
+    },
+    {
+      "beta": 1.0,
+      "source": 1,
+      "magnetic": 0.9840822924010819,
+      "poisson_comb": 0.984082292401082,
+      "positive_auxiliary_quad": 0.9840822924010819,
+      "maximum_error": 1.1102230246251565e-16,
+      "cutoff_error": 2.220446049250313e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.05379612206444828,
+      "aux_covariance_error": 2.7755575615628914e-17
+    },
+    {
+      "beta": 1.0,
+      "source": 2,
+      "magnetic": 0.8255820166366563,
+      "poisson_comb": 0.8255820166366562,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 1.1102230246251565e-16,
+      "wrong_characteristic_instead_of_mgf_error": 2.220446049250313e-16,
+      "aux_covariance_error": 2.7755575615628914e-17
+    },
+    {
+      "beta": 3.0,
+      "source": 0,
+      "magnetic": 0.8678760560840294,
+      "poisson_comb": 0.8678760560840292,
+      "positive_auxiliary_quad": 0.8678760560840296,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 4.440892098500626e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.04331425690742052,
+      "aux_covariance_error": 0.0
+    },
+    {
+      "beta": 3.0,
+      "source": 1,
+      "magnetic": 0.9999343237352987,
+      "poisson_comb": 0.9999343237352987,
+      "positive_auxiliary_quad": 0.9999343237352989,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 0.0,
+      "wrong_characteristic_instead_of_mgf_error": 0.08533613645833193,
+      "aux_covariance_error": 0.0
+    },
+    {
+      "beta": 3.0,
+      "source": 2,
+      "magnetic": 0.8255820166366561,
+      "poisson_comb": 0.8255820166366559,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 0.0,
+      "wrong_characteristic_instead_of_mgf_error": 2.220446049250313e-16,
+      "aux_covariance_error": 0.0
+    }
+  ],
+  "wedge_symmetry": {
+    "generators": 7,
+    "symmetric_parameters": 21,
+    "invariant_dimension": 1,
+    "scope": "Quadratic-form algebra only; no homogenized energy existence or identification follows."
+  },
+  "qualification": "Personal exact identities and distinct finite representations; fixed-beta vector auxiliary CLT and matched state limit not executed or established."
+}

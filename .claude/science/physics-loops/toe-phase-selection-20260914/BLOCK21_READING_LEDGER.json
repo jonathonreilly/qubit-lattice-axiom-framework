@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Conlon-Dabkowski, Extensions of the Brascamp-Lieb Inequality and the Dipole Gas",
+    "doi": "10.1007/s10955-025-03478-x",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10955-025-03478-x.pdf",
+    "sha256": "ae24ac453a1e711ac5daa0a1b29025298ae1eb0facc52aba8c468f027dbb356e",
+    "total_pages": 39,
+    "read_scope": "Pages1-3 via web/PDF extracted;4-9,14-17,31-34 fully extracted; page14 visually rendered. Other pages not yet read.",
+    "role": "Preconditioned dynamics and ell-p source derivatives; actual source is scalar nearest-neighbor. Abstract finite-dimensional extension derived separately. Published Theorem3.1 visibly omits inverse in Riesz operator; correctly specified operator requires a separate source/proof check."
+  },
+  {
+    "title": "Conlon-Spencer, A strong central limit theorem for a class of random surfaces",
+    "url": "https://arxiv.org/pdf/1105.2814",
+    "version": "v3,2013-05-07",
+    "sha256": "a27a1c61797d82403863e3e89dcda622efc1e6e249296d537352236278c4cb44",
+    "total_pages": 14,
+    "read_scope": "Pages1-4 fully read; remaining pages unread.",
+    "role": "Second-order HS and source spread motivation only; no theorem directly imported to gauge model."
+  },
+  {
+    "title": "Dario-Wu, Massless phases for the Villain model in d>=3",
+    "url": "https://pauldario.pages.math.cnrs.fr/webpage-of-paul-dario/Villain3D__short_version_.pdf",
+    "sha256": "1adcdb53880054f22c1e5705b631671f302e665fe8d50ecf2ca79396a51f63ab",
+    "total_pages": 136,
+    "read_scope": "Prior ledger1-5,14-36. Newly read introduction4-7, section6 introduction/6.1 pages60-63; extracted fragments44-46 and70-71, not full intervening sections.",
+    "role": "Vector extended-gradient homogenization comparison; no rotator theorem asserted for gauge three-forms."
+  },
+  {
+    "title": "Dario-Wu, Parallel spin wave for the Villain model",
+    "url": "https://arxiv.org/pdf/2507.04098",
+    "version": "v1,2025-07-05",
+    "sha256": "ae9cb49374c4a0fca7489c23b2f1e0ddb808b80b021089388c74aeed70218cdf",
+    "total_pages": 57,
+    "read_scope": "Pages1-3 and portions4-7 in extracted lines1-240 and270-390; theorem statements1-2 and regularity strategy. Not full paper.",
+    "role": "Current vector-system regularity context; no Gaussian scaling theorem imported."
+  },
+  {
+    "title": "Naddaf-Spencer1997",
+    "doi": "10.1007/BF02509796",
+    "url": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-183/issue-1/On-homogenization-and-scaling-limit-of-some-gradient-perturbations-of/cmp/1158327835.pdf",
+    "read_scope": "Search excerpt of section3 only. Springer returned HTML and Euclid returned a bot error page; full paper not read.",
+    "role": "Unimported reading lead."
+  }
+]

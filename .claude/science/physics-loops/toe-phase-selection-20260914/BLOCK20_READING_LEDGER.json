@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Hoffman and Ribak, Constrained realizations of Gaussian fields: A simple algorithm",
+    "year": 1991,
+    "doi": "10.1086/186160",
+    "url": "https://articles.adsabs.harvard.edu/pdf/1991ApJ...380L...5H",
+    "sha256": "c39881aa8878035fa443419f3ed1916fae903e547006befff829930f27a5b918",
+    "read_scope": "All four pages L5-L8 personally read from rendered NASA ADS PDF. Equations2-4 checked.",
+    "role": "Standard Gaussian residual sampling context; no native physics inference. Noninjective projection does not use the paper's one-to-one wording."
+  },
+  {
+    "title": "Lindgren, Rue and Lindstrom, An explicit link between Gaussian fields and Gaussian Markov random fields: the stochastic partial differential equation approach",
+    "year": 2011,
+    "url": "https://joeid.folk.ntnu.no/StatGr/Lindgren_etal.pdf",
+    "read_scope": "PDF pages1-7 (printed423-429) extracted through web only; technical appendices and discussion unread.",
+    "role": "Context only; no theorem imported."
+  }
+]

@@ -137,3 +137,46 @@ No public PR, axiom/primitive change or formal audit status is requested for
 this private checkpoint. The block5 likelihood result remains correct with
 its original root/conditioning scope; the new construction changes the
 observable and does not retroactively change that earlier claim.
+
+## 6. Exact fixed-radius scope and primary-source disposition
+
+For independent site noise, any deterministic readout whose value at x
+uses only the noise in B_R(x) is independent of its value at y whenever
+dist(x,y)>2R. This conclusion allows nonlinear measurable readouts; the
+independent ancestor sets, rather than linearity, imply independence.
+
+In contrast, on a connected nearest-neighbor regular lattice the massive
+scalar source Q=m I+Delta, m>0, has strictly positive inverse entries at
+every pair of vertices. Indeed, writing Delta=2d I-A_adj gives
+
+ Q^-1=(m+2d)^-1 sum_(j>=0) [A_adj/(m+2d)]^j.
+
+Every summand has nonnegative entries, the series converges in operator
+norm, and a finite path gives a strictly positive summand for each pair.
+Thus no deterministic uniformly fixed-radius function of independent site
+noise gives this particular Gaussian field exactly on arbitrarily large
+connected lattices. This elementary statement does not cover random coding
+radii, correlated input noise, extra shared randomness, or a long local
+evolution. In particular it does not turn the approximate construction(3)
+into an axiom contradiction or a general impossibility for local formation.
+
+The Gaussian residual mechanism is established sampling mathematics.
+Hoffman and Ribak, *Constrained realizations of Gaussian fields: A simple
+algorithm*, ApJ380,L5-L8(1991), DOI10.1086/186160, was personally read in
+full, all four rendered pages. Their equations(2)-(4) give the conditional
+mean, residual covariance and mean-plus-residual construction. Here the
+joint field includes the supplied observation noise, so the same Gaussian
+orthogonal-projection mechanism yields(1). Their assertion of a one-to-one
+map between unconstrained and constrained realizations is not used: a
+projection imposing a nontrivial exact constraint is generally noninjective.
+
+Primary copy: https://articles.adsabs.harvard.edu/pdf/1991ApJ...380L...5H
+Local PDF SHA256:
+c39881aa8878035fa443419f3ed1916fae903e547006befff829930f27a5b918.
+The NASA copy was downloaded and rendered after the web screenshot route
+failed. No result depends on that web-rendering failure.
+
+Disposition: preserve this supporting calculation on the campaign branch.
+It does not yet justify another standalone theorem PR. The next substantive
+target is a physical-observable bridge for the fixed-law compact model,
+rather than another generic Gaussian sampler.

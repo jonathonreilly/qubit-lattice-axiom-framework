@@ -1,3 +1,33 @@
+# Block28 native kernel checkpoint — 2026-09-15 10:25 UTC
+
+A direct proposed theorem now covers every generated M2 subalgebra for
+full-domain simultaneous-similarity-covariant kernels that are uniformly
+tight on compact input sets. Weak continuity suffices. The genuinely added
+step is the noncommuting triangular case: a contracting input orbit makes
+any forbidden output component diverge, contradicting tightness. The earlier
+commutative-only statement remains correct under its weaker hypotheses.
+
+An exact algebraic inverse between two input-defined lines gives a total,
+permutation-covariant Borel escape when tightness is removed. The previous
+word kernel attains the allowed support and needs no fixed matrix metric.
+The theorem requires a common fiber comparison, stronger internal covariance,
+and a domain containing the degeneration limit; none is silently inserted
+into the axioms. A proper initial algebra remains preserved under a
+well-founded formation history. Irreducible seed data can escape that initial
+restriction without changing the kernel. No physical quantum or TOE no-go.
+
+Six exact finite families completed, including complex nonunitary similarities,
+all24 proper cubic permutations and an independent linear-system construction
+of the inverse. The initial symbolic-equality checker failure is preserved.
+This remains a private author proposal without independent review. It helps
+specify an honest native candidate but does not select its law or persistent
+observable sector. Do not generate more generic-kernel corollaries.
+
+Next inspect the actual spin-one neutral phase and matched primary sources.
+The user-authorized deadline remains2026-09-15 13:30:44UTC; no subagents.
+
+---
+
 # Current opportunity ranking — 2026-09-15 08:29 UTC
 
 1. **Coupled finite-clock defects and full physical sources.** The new PR8127

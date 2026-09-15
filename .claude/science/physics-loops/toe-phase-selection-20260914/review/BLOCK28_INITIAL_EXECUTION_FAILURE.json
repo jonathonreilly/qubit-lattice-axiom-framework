@@ -1,0 +1,13 @@
+{
+  "command": "/opt/homebrew/bin/python3 .claude/science/physics-loops/toe-phase-selection-20260914/block28_kernel_support_probe.py",
+  "exit_code": 1,
+  "failure": "AssertionError at inverse_pair: assert is_pair(p,b), initial line46; called from line121",
+  "initial_sha256": "4f21714f24f75c157eccbc27d18f62519dd1023ca14ec2db9e1db90f67de79e4",
+  "diagnostic": {
+    "P2_equals_P_structural": false,
+    "B_eq_PB1P_structural": false,
+    "simplified_P2_minus_P": "Matrix([[0, 0], [0, 0]])",
+    "simplified_B_minus_PB1P": "Matrix([[0, 0], [0, 0]])"
+  },
+  "disposition": "Complex rational expressions were compared structurally; use exact simplification before equality. No numeric tolerance change."
+}

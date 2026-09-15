@@ -1,3 +1,18 @@
+# Block28 approach update
+
+- Stabilizer invariance: sufficient for central, diagonal and Jordan tuples;
+  insufficient by itself for noncommuting triangular tuples with scalar stabilizer.
+- Orbit degeneration plus uniform tightness: direct new support proof for the
+  triangular case, completing the M2 classification within the stronger class.
+- Algebraic inverse on the rank-one pair stratum: explicit total Borel escape,
+  falsifying any attempt to omit the regularity/domain hypotheses.
+- Positive random-word kernel: prior block25 construction attains the maximum
+  allowed support; coefficient selection and persistent physics remain open.
+- Broader covariance, restricted domains, irreducible seeds and readout encodings
+  are distinct escapes/untouched routes, not refuted by this theorem.
+
+---
+
 # Block27 completed coefficient probe / open all-order estimate
 
 - Exact physical source: finite clock/image versus coupled-sum checks passed.

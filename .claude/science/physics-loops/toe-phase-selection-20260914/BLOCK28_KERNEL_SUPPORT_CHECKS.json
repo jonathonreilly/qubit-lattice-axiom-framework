@@ -1,0 +1,121 @@
+{
+  "scope": "Exact finite algebra controls; universal probability proof is in the note.",
+  "independent_review": false,
+  "families": {
+    "word_support_and_similarity": {
+      "ranks": [
+        {
+          "case": "empty",
+          "word_span_rank": 1,
+          "covariance_rank": 1
+        },
+        {
+          "case": "central",
+          "word_span_rank": 1,
+          "covariance_rank": 1
+        },
+        {
+          "case": "diagonal",
+          "word_span_rank": 2,
+          "covariance_rank": 2
+        },
+        {
+          "case": "jordan",
+          "word_span_rank": 2,
+          "covariance_rank": 2
+        },
+        {
+          "case": "triangular",
+          "word_span_rank": 3,
+          "covariance_rank": 3
+        },
+        {
+          "case": "full",
+          "word_span_rank": 4,
+          "covariance_rank": 4
+        }
+      ],
+      "exact_covariance_comparisons": 18
+    },
+    "degenerating_actions": {
+      "unipotent_polynomial_identity": true,
+      "diagonal_scaling_identity": true
+    },
+    "singular_inverse_escape": {
+      "cases": [
+        {
+          "t": "1",
+          "inverse_lower_entry": "1",
+          "squared_norm": "1"
+        },
+        {
+          "t": "1/2",
+          "inverse_lower_entry": "2",
+          "squared_norm": "4"
+        },
+        {
+          "t": "1/4",
+          "inverse_lower_entry": "4",
+          "squared_norm": "16"
+        },
+        {
+          "t": "1/16",
+          "inverse_lower_entry": "16",
+          "squared_norm": "256"
+        },
+        {
+          "t": "1/256",
+          "inverse_lower_entry": "256",
+          "squared_norm": "65536"
+        }
+      ],
+      "nonunitary_covariance_comparisons": 15
+    },
+    "regular_degeneration_control": {
+      "lower_output_variance": "0",
+      "entrywise_polynomial_limit": true,
+      "limit_rank": 2
+    },
+    "total_six_slot_escape": {
+      "proper_cubic_permutations": 24,
+      "valid_atoms": [
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "similarity_comparisons": 3
+    },
+    "hypothesis_removal_controls": {
+      "unitary_only_full_support_covariance_rank": 4,
+      "full_similarity_covariance_defect": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-3/4",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "triangular_tuple_commutant": "{(z3, 0, 0, z3)}",
+      "inverse_replaced_by_B_fails_BC_eq_P": true
+    }
+  }
+}

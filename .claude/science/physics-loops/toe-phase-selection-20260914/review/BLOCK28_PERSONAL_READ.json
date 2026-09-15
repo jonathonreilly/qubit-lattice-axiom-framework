@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-09-15T10:24:38.220731+00:00",
+  "personal_no_subagents": true,
+  "independent_review": false,
+  "files": {
+    "BLOCK28_REGULAR_KERNEL_SUPPORT_AND_SINGULAR_ESCAPE.md": "44f5f8f2fb39db0b77006df4af11fb4209249d1ffe27fb06cfe73ae0db53d4a2",
+    "block28_kernel_support_probe.py": "d2fd3581555160f2b9e70a84c5fbf879c4b80930f197a39c29097b0730441770",
+    "BLOCK28_KERNEL_SUPPORT_CHECKS.json": "2068d420bb9f88474b0e305180f7b9aa1e60bfb03d8d7960b261c27d81e1b09c"
+  },
+  "full_changed_argument_read": true,
+  "reading_scope": "All six sections and exact finite checker inspected personally; final domain qualification and failure disposition read. This is author checking, not independent review.",
+  "mathematical_challenges": {
+    "N1_alternatives": [
+      "Drop GL2 covariance: fixed Hermitian iid Gaussian provides U2-only full support.",
+      "Drop compact-input tightness: explicit inverse-pair Borel escape.",
+      "Restrict domain away from degeneration: irreducible relational Gaussian from block25.",
+      "Supply irreducible seed data: prior word law has full M2 support.",
+      "Change physical readout: encodings not constrained by the matrix-support theorem."
+    ],
+    "N2_wall_independence": "This result uses no coupled-defect or Hamiltonian phase lemma. Added regularity is explicit.",
+    "N3_hidden_walls": "Full domain and common-fiber comparison explicitly named; finite-ancestor history needed only for process consequence.",
+    "N4_residual_match": "Closes only all-generated-algebra support for the stronger candidate class, not physical law selection.",
+    "N5_rhetoric": "No native quantum no-go, axiom update, or independent validation asserted.",
+    "N6_partial_closure": "Maximal-support regular word law and singular escape both retained as positive constructions.",
+    "N7_steelman": "The inverse-pair escape directly realizes the gap left by a scalar stabilizer.",
+    "N8_cross_cycle": "Block25 commutative theorem unchanged; new tightness premise supplies the new triangular step."
+  },
+  "public_disposition": "private_checkpoint_no_PR; seek substantive physical consequence before extra review burden",
+  "final_addition": "Equation6a gives an explicit rational coordinate patch formula. It was checked against the linear-system inverse on every nonzero entry for all finite cases, then read personally."
+}

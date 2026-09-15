@@ -1,0 +1,184 @@
+#!/usr/bin/env python3
+"""Exact finite challenges for a private support theorem; no sampling proof."""
+from itertools import product, permutations
+import json
+from pathlib import Path
+import sympy as s
+
+I = s.eye(2)
+Z = s.zeros(2)
+E = [s.Matrix(2, 2, lambda i, j: int(2*i+j == k)) for k in range(4)]
+P, U, V, R = E
+
+
+def vec(a):
+    return s.Matrix(list(a))
+
+
+def adjoint(smat):
+    return s.Matrix.hstack(*(vec(smat*e*smat.inv()) for e in E))
+
+
+def words(eta):
+    out = [(0, I)]
+    for degree in range(1, 4):
+        for ix in product(range(len(eta)), repeat=degree):
+            a = I
+            for j in ix:
+                a = a*eta[j]
+            out.append((degree, a))
+    return out
+
+
+def word_covariance(eta):
+    cov = s.zeros(4)
+    for degree, a in words(eta):
+        v = vec(a)
+        cov += s.Rational(1, 4**(degree+1))*v*v.conjugate().T
+    return s.simplify(cov)
+
+
+def is_pair(p, b):
+    return (s.simplify(p*p-p) == Z and s.simplify(s.trace(p)-1) == 0
+            and s.simplify(b) != Z and s.simplify(b-p*b*(I-p)) == Z)
+
+
+def inverse_pair(p, b):
+    assert is_pair(p, b)
+    unknowns = s.symbols('c0:4')
+    c = s.Matrix(2, 2, unknowns)
+    eq = list(c-(I-p)*c*p) + list(b*c-p) + list(c*b-(I-p))
+    answer = s.linsolve(eq, unknowns)
+    assert len(answer) == 1
+    result = s.simplify(s.Matrix(2, 2, list(next(iter(answer)))))
+    assert not result.free_symbols
+    assert s.simplify(result-(I-p)*result*p) == Z
+    assert s.simplify(b*result-p) == Z and s.simplify(result*b-(I-p)) == Z
+    for i,j in product(range(2),repeat=2):
+        if s.simplify(b[i,j]) != 0:
+            ej_eit = s.Matrix(2,2,lambda k,l:int(k==j and l==i))
+            patch = (I-p)*ej_eit*p/b[i,j]
+            assert s.simplify(patch-result) == Z
+    return result
+
+
+def escape_atoms(eta):
+    atoms = []
+    for i, p in enumerate(eta):
+        for j, b in enumerate(eta):
+            if i != j and is_pair(p, b):
+                atoms.append(s.simplify(inverse_pair(p, b)))
+    if not atoms:
+        atoms = [sum(eta, Z)/6]
+    return sorted(tuple(map(str, a)) for a in atoms)
+
+
+def cubic_permutations():
+    sites = [(1,0,0), (-1,0,0), (0,1,0), (0,-1,0), (0,0,1), (0,0,-1)]
+    out = []
+    for perm in permutations(range(3)):
+        for signs in product([-1,1], repeat=3):
+            rot = s.Matrix(3, 3, lambda i,j: signs[i] if j == perm[i] else 0)
+            if rot.det() == 1:
+                out.append([sites.index(tuple(rot*s.Matrix(x))) for x in sites])
+    assert len(out) == 24 and len(set(map(tuple,out))) == 24
+    return out
+
+
+def main():
+    result = {"scope": "Exact finite algebra controls; universal probability proof is in the note.",
+              "independent_review": False, "families": {}}
+    cases = [('empty', [], 1), ('central', [2*I, -I], 1),
+             ('diagonal', [P, R], 2), ('jordan', [U, I+2*U], 2),
+             ('triangular', [P, U], 3), ('full', [U, V], 4)]
+    matrices = [s.Matrix([[2,1],[0,1]]), s.Matrix([[1,1],[1,2]]),
+                s.Matrix([[1,s.I],[1,1]])]
+    ranks = []
+    covariance_count = 0
+    for name, eta, expected in cases:
+        w = words(eta)
+        span = s.Matrix.hstack(*(vec(a) for _, a in w))
+        cov = word_covariance(eta)
+        assert span.rank() == expected and cov.rank() == expected
+        for smat in matrices:
+            transformed = [smat*a*smat.inv() for a in eta]
+            t = adjoint(smat)
+            assert s.simplify(word_covariance(transformed)-t*cov*t.conjugate().T) == s.zeros(4)
+            covariance_count += 1
+        ranks.append({'case': name, 'word_span_rank': span.rank(), 'covariance_rank': cov.rank()})
+    result['families']['word_support_and_similarity'] = {'ranks': ranks, 'exact_covariance_comparisons': covariance_count}
+
+    a,b,c,d,n = s.symbols('a b c d n')
+    y = s.Matrix([[a,b],[c,d]])
+    expected = s.Matrix([[a+n*c,b+n*(d-a)-n*n*c],[c,d-n*c]])
+    assert s.expand((I+n*U)*y*(I-n*U)-expected) == Z
+    r = s.symbols('r', positive=True)
+    dr = s.diag(r,1)
+    assert dr*y*dr.inv() == s.Matrix([[a,r*b],[c/r,d]])
+    result['families']['degenerating_actions'] = {'unipotent_polynomial_identity': True, 'diagonal_scaling_identity': True}
+
+    inverse_cases = []
+    for t in [s.Rational(1),s.Rational(1,2),s.Rational(1,4),s.Rational(1,16),s.Rational(1,256)]:
+        bmat = t*U
+        inv = inverse_pair(P,bmat)
+        assert inv == V/t
+        span = s.Matrix.hstack(*(vec(a) for _,a in words([P,bmat])))
+        assert span.rank() == 3 and span.row_join(vec(inv)).rank() == 4
+        for smat in matrices:
+            actual = inverse_pair(smat*P*smat.inv(),smat*bmat*smat.inv())
+            assert s.simplify(actual-smat*inv*smat.inv()) == Z
+        inverse_cases.append({'t': str(t), 'inverse_lower_entry': str(inv[1,0]),
+                              'squared_norm': str(s.trace(inv.conjugate().T*inv))})
+    result['families']['singular_inverse_escape'] = {'cases': inverse_cases, 'nonunitary_covariance_comparisons': 15}
+
+    t = s.symbols('t', real=True)
+    cov_t = word_covariance([P,t*U])
+    assert cov_t[2,:] == s.zeros(1,4) and cov_t[:,2] == s.zeros(4,1)
+    assert cov_t.subs(t,0) == word_covariance([P,Z])
+    assert all(s.denom(v) == 1 or not s.denom(v).has(t) for v in cov_t)
+    result['families']['regular_degeneration_control'] = {'lower_output_variance': str(cov_t[2,2]),
+                                                         'entrywise_polynomial_limit': True,
+                                                         'limit_rank': cov_t.subs(t,0).rank()}
+
+    eta = [P,U,R,V,Z,I]
+    expected_atoms = escape_atoms(eta)
+    assert expected_atoms == sorted([tuple(map(str,U)),tuple(map(str,V))])
+    perms = cubic_permutations()
+    for perm in perms:
+        assert escape_atoms([eta[j] for j in perm]) == expected_atoms
+    for smat in matrices:
+        out = escape_atoms([smat*a*smat.inv() for a in eta])
+        expected = sorted(tuple(map(str,s.simplify(smat*a*smat.inv()))) for a in [U,V])
+        assert out == expected
+    assert len(words([P,U,Z,Z,Z,Z])) == 259
+    result['families']['total_six_slot_escape'] = {'proper_cubic_permutations': len(perms),
+                                                 'valid_atoms': expected_atoms,
+                                                 'similarity_comparisons': len(matrices)}
+
+    # A fixed Hilbert-metric iid matrix Gaussian is U(2)-covariant at empty
+    # input and has full support. It violates full GL2 covariance, not the theorem.
+    haar_cov = s.eye(4)
+    unitary = s.Matrix([[1,s.I],[s.I,1]])/s.sqrt(2)
+    tu = adjoint(unitary)
+    assert s.simplify(tu*haar_cov*tu.conjugate().T-haar_cov) == s.zeros(4)
+    ts = adjoint(s.diag(2,1))
+    defect = ts*haar_cov*ts.conjugate().T-haar_cov
+    assert defect != s.zeros(4)
+    # The stabilizer of (P,U) is scalar, so stabilizer invariance alone
+    # cannot establish the support claim in the triangular case.
+    z0,z1,z2,z3 = s.symbols('z0:4')
+    zz = s.Matrix([[z0,z1],[z2,z3]])
+    commutant = s.linsolve(list(zz*P-P*zz)+list(zz*U-U*zz), (z0,z1,z2,z3))
+    assert commutant == s.FiniteSet((z3,0,0,z3))
+    result['families']['hypothesis_removal_controls'] = {
+        'unitary_only_full_support_covariance_rank': haar_cov.rank(),
+        'full_similarity_covariance_defect': [str(x) for x in defect],
+        'triangular_tuple_commutant': str(commutant),
+        'inverse_replaced_by_B_fails_BC_eq_P': U*U != P}
+    path = Path(__file__).with_name('BLOCK28_KERNEL_SUPPORT_CHECKS.json')
+    path.write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps({'families':len(result['families']), 'all_assertions_completed':True, 'output':str(path)},indent=2))
+
+
+if __name__ == '__main__':
+    main()

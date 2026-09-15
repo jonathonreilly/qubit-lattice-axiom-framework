@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-09-15T10:24:38.220731+00:00",
+  "main_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "prior_private_revision": "94631cbabb10fc6387b9b4b658d33f8e185e626e",
+  "sources": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "scope": "Entire current memo reread this block in two calls."
+    },
+    {
+      "path": "BLOCK25_RELATIONAL_METRIC_DERIVATION.md",
+      "sha256": "ead65933756b65ed5565296562f5c2c4f0de7c35916e700a65283f1b60fd6bf6",
+      "scope": "Full note read prior block; target, relational metric and sections9-12 reread this block."
+    }
+  ],
+  "web_search": "Targeted searches for continuous similarity-equivariant probability kernels and concomitants found no matched theorem. Search snippets only, no invariant-theory result imported and no priority claim.",
+  "proof_source": "Direct finite-dimensional argument and explicit linear inverse construction."
+}

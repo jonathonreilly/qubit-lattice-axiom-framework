@@ -1,3 +1,21 @@
+# Block28 author certificate
+
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+independent_review: pending
+formal_audit: deferred
+bare_retained_allowed: false
+
+A direct support theorem and exact Borel escape are personally derived and
+finitely challenged for an explicitly stronger candidate-kernel class. The
+common-fiber interface, internal GL2 covariance, full-domain extension and
+compact-input tightness remain supplied conditions. No law selection,
+physical sector, current-axiom inconsistency or forced update is established.
+
+---
+
 # Block27 author certificate — private incomplete stretch
 
 actual_current_surface_status: open

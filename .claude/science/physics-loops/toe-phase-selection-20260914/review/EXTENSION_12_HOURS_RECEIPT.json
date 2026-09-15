@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-09-15T01:22:41.807012+00:00",
+  "user_request": "add another 12 hours to the campaign",
+  "start_utc": "2026-09-14T13:30:44Z",
+  "old_deadline_utc": "2026-09-15T01:30:44Z",
+  "new_deadline_utc": "2026-09-15T13:30:44Z",
+  "total_hours": 24,
+  "automation_id": "toe-derivation-campaign-continuation",
+  "automation_status": "ACTIVE",
+  "execution": "personally_no_subagents",
+  "official_automation_context": "https://learn.chatgpt.com/docs/changelog",
+  "qualification": "Schedule and cooperative lock updated; the extra twelve hours have been authorized, not yet performed."
+}

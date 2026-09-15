@@ -1,3 +1,20 @@
+# User-authorized extension — controlling current deadline
+
+The user added another12hours while this same campaign was active. Continue
+PERSONALLY without subagents through2026-09-15 13:30:44UTC (09:30:44Eastern),
+for24hours total from2026-09-14 13:30:44UTC. Historical01:30:44deadlines below
+are superseded. Do not stop at the old deadline, pause the heartbeat, or remove
+the active campaign checkout then. Finish a milestone, reassess and continue.
+
+Current work: block20 unconditioned Gaussian innovation readout; its exact
+complex covariance and truncation checks now pass. A first assertion compared
+unsimplified symbolic expressions structurally; every simplified difference
+was exactly zero, and the checker now tests that algebraic difference. The derivation uses Gaussian conditional residuals to avoid
+rare Y=0 selection for a FIXED-source readout, while exposing inverse-kernel
+locality and unchanged branch probabilities. Block19 is a private conditional
+history resource tradeoff, not an axiom wall. Eleven review-pendingPRs8123–8133
+are durable and all completed delivery checkouts have been removed.
+
 # Personal twelve-hour phase-selection campaign
 
 Authorized by the user's request to repeat the exercise, find the leverage,

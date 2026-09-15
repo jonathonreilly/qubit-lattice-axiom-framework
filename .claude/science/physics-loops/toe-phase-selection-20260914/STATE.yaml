@@ -6,23 +6,24 @@ worktree: /Users/jonreilly/Documents/Codex/toe-phase-selection-20260914
 main_revision: 5deabeb698a27c2c3f68c5df685af2521ef15307
 planning_revision: 9cff766069e8f66b4cc5c36888b1e71600b8888e
 start_utc: '2026-09-14T13:30:44Z'
-deadline_utc: '2026-09-15T01:30:44Z'
-runtime_hours: 12
+initial_deadline_utc: '2026-09-15T01:30:44Z'
+deadline_utc: '2026-09-15T13:30:44Z'
+runtime_hours: 24
 execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 18
-active_route: integer_current_theta_and_quantization_after_actual_coupled_convex_extension
+block: 20
+active_route: unconditioned_gaussian_innovation_readout_and_native_physical_locality
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Deliver the three-note block15-17 milestone, then derive the generalized current theta identity and test the remaining quantization step personally until the deadline.
+next_action: Complete and review the unconditioned innovation readout and its locality/branch-weight costs, then pursue the strongest native-observable or fixed-law phase opportunity personally through the extended deadline.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Ten public PRs8123-8132 contain proposed theorem milestones. PR8131 derives fixed-law image-noise/contact and positive-time OS equivalence under its stated hypotheses. PR8130 at7656dcdb01f32b3d47ecbcda04c89cb3b03996f0 gives the direct Maxwell/Wilson construction and its logarithmic resource improvement, with an explicit global-removal method boundary. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
+working_result: Eleven public PRs8123-8133 contain sixteen proposed theorem sources. PR8133 atf8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8 derives exact coupled defects, a matched free-cubic convex current extension and exact quantized-current/Wilson identities. PR8131 derives fixed-law image-noise/contact and positive-time OS equivalence under its stated hypotheses. PR8130 at7656dcdb01f32b3d47ecbcda04c89cb3b03996f0 gives the direct Maxwell/Wilson construction and its logarithmic resource improvement, with an explicit global-removal method boundary. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
@@ -34,3 +35,4 @@ public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132
+  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133

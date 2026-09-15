@@ -1,0 +1,145 @@
+{
+  "exact_gaussian_models": [
+    {
+      "model": "rectangular",
+      "alpha": "1/2",
+      "source_dimension": 2,
+      "observation_dimension": 3,
+      "posterior_det": "3456/5597",
+      "target_det": "3456/1825",
+      "independent_of_observation": true,
+      "proper_noise_only": true,
+      "omitted_root_covariance_nonzero": true
+    },
+    {
+      "model": "rectangular",
+      "alpha": "1/5",
+      "source_dimension": 2,
+      "observation_dimension": 3,
+      "posterior_det": "86400/78161",
+      "target_det": "3456/1825",
+      "independent_of_observation": true,
+      "proper_noise_only": true,
+      "omitted_root_covariance_nonzero": true
+    },
+    {
+      "model": "square",
+      "alpha": "1/2",
+      "source_dimension": 2,
+      "observation_dimension": 2,
+      "posterior_det": "576/3677",
+      "target_det": "144/577",
+      "independent_of_observation": true,
+      "proper_noise_only": true,
+      "omitted_root_covariance_nonzero": true
+    },
+    {
+      "model": "square",
+      "alpha": "1/5",
+      "source_dimension": 2,
+      "observation_dimension": 2,
+      "posterior_det": "7200/35263",
+      "target_det": "144/577",
+      "independent_of_observation": true,
+      "proper_noise_only": true,
+      "omitted_root_covariance_nonzero": true
+    }
+  ],
+  "finite_range_truncations": [
+    {
+      "alpha": "0",
+      "K": 0,
+      "trace_error": "243/160",
+      "maximum_eigen_error": 1.2656249999999998,
+      "per_component_bound": "81/64",
+      "radius_at_most": 0
+    },
+    {
+      "alpha": "0",
+      "K": 1,
+      "trace_error": "15309/20480",
+      "maximum_eigen_error": 0.7119140625000002,
+      "per_component_bound": "729/1024",
+      "radius_at_most": 1
+    },
+    {
+      "alpha": "0",
+      "K": 2,
+      "trace_error": "531441/1310720",
+      "maximum_eigen_error": 0.40045166015625,
+      "per_component_bound": "6561/16384",
+      "radius_at_most": 2
+    },
+    {
+      "alpha": "0",
+      "K": 4,
+      "trace_error": "680775921/5368709120",
+      "maximum_eigen_error": 0.12670540809631348,
+      "per_component_bound": "531441/4194304",
+      "radius_at_most": 4
+    },
+    {
+      "alpha": "0",
+      "K": 8,
+      "trace_error": "1142552999304081/90071992547409920",
+      "maximum_eigen_error": 0.012684847755735973,
+      "per_component_bound": "3486784401/274877906944",
+      "radius_at_most": 8
+    },
+    {
+      "alpha": "1/2",
+      "K": 0,
+      "trace_error": "388800/828733",
+      "maximum_eigen_error": 0.36280925219582194,
+      "per_component_bound": "10368/28577",
+      "radius_at_most": 0
+    },
+    {
+      "alpha": "1/2",
+      "K": 1,
+      "trace_error": "185877504/1393100173",
+      "maximum_eigen_error": 0.12431774495228637,
+      "per_component_bound": "5971968/48037937",
+      "radius_at_most": 1
+    },
+    {
+      "alpha": "1/2",
+      "K": 2,
+      "trace_error": "101583175680/2341801390813",
+      "maximum_eigen_error": 0.04259787096520936,
+      "per_component_bound": "3439853568/80751772097",
+      "radius_at_most": 2
+    },
+    {
+      "alpha": "1/2",
+      "K": 4,
+      "trace_error": "33134458290831360/6617371039905133693",
+      "maximum_eigen_error": 0.0050014672993764515,
+      "per_component_bound": "1141260857376768/228185208272590817",
+      "radius_at_most": 4
+    },
+    {
+      "alpha": "1/2",
+      "K": 8,
+      "trace_error": "3643131069023014981069701120/52839212966993169687682161873853",
+      "maximum_eigen_error": 6.894718090935183e-05,
+      "per_component_bound": "125624647432518864803463168/1822041826448040334058005581857",
+      "radius_at_most": 8
+    }
+  ],
+  "branch_weight_boundary": {
+    "prior_weights": [
+      "1/2",
+      "1/2"
+    ],
+    "readout_weights": [
+      "1/2",
+      "1/2"
+    ],
+    "determinant_weights": [
+      "16/17",
+      "1/17"
+    ]
+  },
+  "qualification": "Personal exact covariance and finite polynomial checks; generic proofs, infinite-volume readout locality and native-observable identification are not established by finite execution."
+}

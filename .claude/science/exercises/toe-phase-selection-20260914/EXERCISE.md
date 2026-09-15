@@ -1,3 +1,7 @@
+> User extension: the controlling deadline is now2026-09-15 13:30:44UTC;
+> continue this same campaign personally for24hours total. The original
+> twelve-hour plan below is preserved as history.
+
 # Ground-sector selection and the actual collective phase
 
 Personal exercise, 2026-09-14. This packet is a research plan, not an audit or

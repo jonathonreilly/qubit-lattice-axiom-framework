@@ -1,3 +1,7 @@
+> User extension: the controlling deadline is now2026-09-15 13:30:44UTC;
+> continue this same campaign personally for24hours total. The original
+> twelve-hour plan below is preserved as history.
+
 # Campaign choice
 
 Highest immediate leverage: resolve the actual ground-sector and projected

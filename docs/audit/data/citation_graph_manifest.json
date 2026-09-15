@@ -1,6 +1,6 @@
 {
- "edge_count": 12560,
- "node_count": 5061,
+ "edge_count": 12580,
+ "node_count": 5078,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6266,9 +6266,17 @@
    "deps_hash": "d582b951a3ab",
    "out_degree": 1
   },
+  "gauge_wilson_cube_slab_first_spectral_corrections_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "7073fd51e573",
+   "out_degree": 4
+  },
   "gauge_wilson_cube_slab_nonlinear_saddle_dilated_kernel_bounded_theorem_note_2026-09-07": {
    "deps_hash": "65ab6777ac43",
    "out_degree": 3
+  },
+  "gauge_wilson_cube_slab_two_source_cubic_cancellation_rate_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "690ffc3f16aa",
+   "out_degree": 2
   },
   "gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07": {
    "deps_hash": "6c1f1762b6be",
@@ -19577,6 +19585,66 @@
   "work_history.repo.review_feedback.pr8010-native-wall.review": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.native-ground.pr8018-native-ground-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.native-ground.pr8018-native-ground-independent_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.native-ground.pr8018-native-ground-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.native-ground.pr8018-native-ground-primary_proof_interface_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.native-ground.pr8018-native-ground-word_control_noncommuting_supplement": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.native-ground.pr8018-native-ground-word_control_preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.orbital-excited.pr8018-orbital-excited-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.orbital-excited.pr8018-orbital-excited-derivation_precomputation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.orbital-excited.pr8018-orbital-excited-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.primary-excited.pr8018-primary-excited-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.primary-excited.pr8018-primary-excited-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.primary-ground-review.pr8018-primary-ground-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.primary-ground.pr8018-primary-ground-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.primary-ground.pr8018-primary-ground-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8018-spectral-correction-evidence.readme": {
+   "deps_hash": "bc4adb3e6abd",
+   "out_degree": 14
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

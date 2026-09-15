@@ -1,0 +1,131 @@
+{
+  "checked_utc": "2026-09-15T10:06:40.646959+00:00",
+  "prs": [
+    {
+      "headRefName": "physics-loop/clock-smoothing-20260915",
+      "headRefOid": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
+      "number": 8136,
+      "state": "OPEN",
+      "title": "[physics-loop] clock-smoothing bounded_theorem bounded-support: exact flux bridge",
+      "updatedAt": "2026-09-15T07:13:35Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8136"
+    },
+    {
+      "headRefName": "physics-loop/clock-endpoint-reflection-20260915",
+      "headRefOid": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+      "number": 8135,
+      "state": "OPEN",
+      "title": "[physics-loop] clock-reflection bounded_theorem bounded-support: uniform defect bound",
+      "updatedAt": "2026-09-15T05:59:27Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135"
+    },
+    {
+      "headRefName": "physics-loop/haar-villain-full-score-20260915",
+      "headRefOid": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8",
+      "number": 8134,
+      "state": "OPEN",
+      "title": "[physics-loop] haar-score bounded_theorem bounded-support: fixed-coupling Maxwell limit",
+      "updatedAt": "2026-09-15T03:41:36Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134"
+    },
+    {
+      "headRefName": "physics-loop/coupled-defect-convexity-20260915",
+      "headRefOid": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "number": 8133,
+      "state": "OPEN",
+      "title": "Derive coupled clock defects, convex current extension and exact quantized bounds",
+      "updatedAt": "2026-09-15T01:09:19Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133"
+    },
+    {
+      "headRefName": "physics-loop/clock-ward-quadrature-20260914",
+      "headRefOid": "20866d4606e9fd519cff663028f554d42b2b1013",
+      "number": 8132,
+      "state": "OPEN",
+      "title": "Uniform finite-clock Ward residuals and Haar observable comparison",
+      "updatedAt": "2026-09-15T00:04:55Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132"
+    },
+    {
+      "headRefName": "physics-loop/clock-image-noise-os-20260914",
+      "headRefOid": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+      "number": 8131,
+      "state": "OPEN",
+      "title": "Fixed-clock image noise and positive-time physical equivalence",
+      "updatedAt": "2026-09-14T23:36:49Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131"
+    },
+    {
+      "headRefName": "physics-loop/direct-clock-wilson-scaling-20260914",
+      "headRefOid": "7656dcdb01f32b3d47ecbcda04c89cb3b03996f0",
+      "number": 8130,
+      "state": "OPEN",
+      "title": "Logarithmic finite-clock Maxwell scaling and Coulomb Wilson interactions",
+      "updatedAt": "2026-09-14T23:16:53Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130"
+    },
+    {
+      "headRefName": "physics-loop/clock-penalty-normal-form-20260914",
+      "headRefOid": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+      "number": 8129,
+      "state": "OPEN",
+      "title": "Control the clock penalty locally and derive its ground-state limit",
+      "updatedAt": "2026-09-14T21:36:24Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129"
+    },
+    {
+      "headRefName": "physics-loop/principal-flux-transfer-20260914",
+      "headRefOid": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+      "number": 8128,
+      "state": "OPEN",
+      "title": "Construct positive principal-flux transfer and bound its Hamiltonian limit",
+      "updatedAt": "2026-09-14T20:53:43Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128"
+    },
+    {
+      "headRefName": "physics-loop/periodic-clock-covariance-20260914",
+      "headRefOid": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+      "number": 8127,
+      "state": "OPEN",
+      "title": "[physics-loop] periodic-clock bounded_theorem conditional-support: spectra and Maxwell scaling",
+      "updatedAt": "2026-09-15T08:26:58Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127"
+    },
+    {
+      "headRefName": "physics-loop/causal-gaussian-likelihood-20260914",
+      "headRefOid": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+      "number": 8126,
+      "state": "OPEN",
+      "title": "[physics-loop] causal-gaussian-likelihood bounded_theorem bounded-support",
+      "updatedAt": "2026-09-14T18:18:49Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126"
+    },
+    {
+      "headRefName": "physics-loop/periodic-gaussian-matrix-codec-20260914",
+      "headRefOid": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+      "number": 8125,
+      "state": "OPEN",
+      "title": "[physics-loop] periodic Gaussian matrix codec: bounded_theorem, bounded-support",
+      "updatedAt": "2026-09-14T16:45:07Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125"
+    },
+    {
+      "headRefName": "physics-loop/gaussian-transfer-canonical-log-20260914",
+      "headRefOid": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+      "number": 8124,
+      "state": "OPEN",
+      "title": "[physics-loop] toe-phase-selection: bounded_theorem finite-step Gaussian canonical locality (bounded-support)",
+      "updatedAt": "2026-09-14T15:45:10Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124"
+    },
+    {
+      "headRefName": "physics-loop/clock-penalty-local-support-20260914",
+      "headRefOid": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+      "number": 8123,
+      "state": "OPEN",
+      "title": "[physics-loop] toe-phase-selection: bounded_theorem local clock probabilities and projected harmonics (bounded-support)",
+      "updatedAt": "2026-09-14T14:44:46Z",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "status": "finite_checks_passed",
+  "independent_cochain_projection": {
+    "incidence_shape": [
+      216,
+      216
+    ],
+    "tensor_vs_incidence_max_error": 3.469446951953614e-16,
+    "wrong_dirichlet_boundary_fault": 0.3407678495727964,
+    "zero_extension_global_curl": 0.6164148179097356
+  },
+  "free_box_exhaustion": [
+    {
+      "radius": 1,
+      "projection_norm_squared": 0.6361375661375676,
+      "source_inner_product": 0.6361375661375668,
+      "closure_residual": 9.217861110751121e-17,
+      "coclosure_residual": 2.2853153108891408e-15
+    },
+    {
+      "radius": 2,
+      "projection_norm_squared": 0.5941330285918329,
+      "source_inner_product": 0.5941330285918328,
+      "closure_residual": 1.5148120541303187e-16,
+      "coclosure_residual": 8.046215382746916e-16,
+      "difference_from_previous_radius": 0.20495008549823396
+    },
+    {
+      "radius": 3,
+      "projection_norm_squared": 0.5919976557369369,
+      "source_inner_product": 0.5919976557369367,
+      "closure_residual": 9.862902110504816e-17,
+      "coclosure_residual": 7.901298790308842e-16,
+      "difference_from_previous_radius": 0.04621009472935372
+    },
+    {
+      "radius": 4,
+      "projection_norm_squared": 0.591689761272505,
+      "source_inner_product": 0.5916897612725049,
+      "closure_residual": 1.0109519275022214e-16,
+      "coclosure_residual": 1.1284867901035535e-15,
+      "difference_from_previous_radius": 0.017546921793634134
+    },
+    {
+      "radius": 6,
+      "projection_norm_squared": 0.5915751331398028,
+      "source_inner_product": 0.5915751331398025,
+      "closure_residual": 1.6839296256060766e-16,
+      "coclosure_residual": 1.1577306071852442e-15,
+      "difference_from_previous_radius": 0.010706452853418149
+    },
+    {
+      "radius": 8,
+      "projection_norm_squared": 0.5915546228365249,
+      "source_inner_product": 0.5915546228365257,
+      "closure_residual": 1.972604119516987e-16,
+      "coclosure_residual": 2.5440013557664632e-15,
+      "difference_from_previous_radius": 0.004528830232630609
+    },
+    {
+      "radius": 12,
+      "projection_norm_squared": 0.5915465465710614,
+      "source_inner_product": 0.5915465465710608,
+      "closure_residual": 1.0145412533063706e-16,
+      "coclosure_residual": 1.029090055867171e-15,
+      "difference_from_previous_radius": 0.002841877102619784
+    }
+  ],
+  "scope": "Finite tensor/incidence agreement and exhaustion diagnostics only; no certified rate or all-shape enumeration."
+}

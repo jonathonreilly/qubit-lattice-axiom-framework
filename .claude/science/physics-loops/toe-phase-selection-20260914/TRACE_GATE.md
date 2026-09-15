@@ -119,3 +119,9 @@ Block27 all-shape continuation extends the same coefficient mechanism to all
 finite component shapes using anchored moments. It remains upstream support
 for the fixed-clock scaling problem. It does not sum all orders or select
 the native physical law.
+
+Block27 boundary continuation closes, within the provisional candidate
+chain, the specific identification of the infinite coefficient with the
+original free-box log-source derivative. The full fixed-clock Gaussian law
+remains open. The Gaussian large-field test identifies a representation-norm
+failure and leaves signed/multiscale routes available.

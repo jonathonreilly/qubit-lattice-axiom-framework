@@ -1,3 +1,23 @@
+# Block27 completed coefficient probe / open all-order estimate
+
+- Exact physical source: finite clock/image versus coupled-sum checks passed.
+- Arbitrary closed components: anchored moments and half-energy source bounds
+  give the first mixed macroscopic quadratic functional in a stated regime.
+- Actual finite boundary: strong Hodge convergence and nonlinear operator
+  limits now match that functional to the iterated free-box source coefficient.
+- Absolute Riesz summation: loses needed signed cancellation; projection norm
+  remains bounded. No phase consequence follows from the bad norm.
+- One-sided complex Gaussian regulator: exact embedding, Schur-complement
+  variance lower bound and integer square-loop area/perimeter test reject the
+  displayed absolute majorant. More general complex, signed and scale-dependent
+  integration remain open, not eliminated.
+- Primary RG import: BDH1998 uses positive real Gaussian convolution; Shen's
+  scalar dipole model does not provide the missing two-species carrier match.
+- Full activity radius, physical activity1 and selected-state Gaussianity:
+  unresolved. No extra finite-order coefficient is presently the priority.
+
+---
+
 # Block27 source-mechanism checkpoint
 
 - Positive auxiliary integrand -> physical conditional moment law: invalid

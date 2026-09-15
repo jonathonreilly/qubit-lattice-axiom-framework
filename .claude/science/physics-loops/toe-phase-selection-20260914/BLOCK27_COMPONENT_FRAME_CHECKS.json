@@ -7,6 +7,8 @@
     },
     "factorization_error": 6.505213034913027e-19,
     "missing_projection_fault": 0.004013013680572543,
+    "full_nonlinear_factorization_error": 6.938893903907228e-18,
+    "missing_signed_nonlinear_term_fault": 0.007836439018741162,
     "schur_bounds": {
       "Kec": [
         0.010404662050687966,

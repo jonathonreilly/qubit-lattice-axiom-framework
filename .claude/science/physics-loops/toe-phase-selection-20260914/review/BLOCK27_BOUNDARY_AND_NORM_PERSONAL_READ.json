@@ -1,0 +1,33 @@
+{
+  "checkpoint_utc": "2026-09-15T10:06:40.646959+00:00",
+  "personal_cold_read": true,
+  "independent_review": false,
+  "source_notes": [
+    "BLOCK27_FREE_BOUNDARY_MIXED_COEFFICIENT_LIMIT.md",
+    "BLOCK27_ONE_SIDED_GAUSSIAN_LARGE_FIELD_TEST.md"
+  ],
+  "checks": [
+    "finite-source polynomial and derivative at0, not pressure density",
+    "eventually-interior Hodge tests and strong projection norm convergence",
+    "boundary mass bound57624*m^5, not assumed4*m^2",
+    "uniform half-weight tails and strong nonlinear vector factors",
+    "weak operator convergence suffices with strongly converging sources",
+    "iterated limits only",
+    "Gaussian Schur-complement restriction to real electric field",
+    "integer square fill area vs Coulomb perimeter energy",
+    "decoupled quantized-phase control rejects physical no-go inference"
+  ],
+  "unresolved": [
+    "all-order activity radius",
+    "physical activity1 law",
+    "arbitrary simultaneous box/scaling limit",
+    "independent review"
+  ],
+  "source_hashes": {
+    "BLOCK27_FREE_BOUNDARY_MIXED_COEFFICIENT_LIMIT.md": "806645a755ff786c967cc07d2acdaaccb711ed5907cc32856f910cdb88deb583",
+    "BLOCK27_ONE_SIDED_GAUSSIAN_LARGE_FIELD_TEST.md": "941f816732be336a244f35a294d1033d5ed6e4e0bfdf39b846a1a7d58a18e5f5",
+    "block27_component_frame_probe.py": "9ec9b90c2c9cf83ef3a727aa78ae8f359a4025e489df2a3ab14ca31c2f83b57e",
+    "block27_free_projection_probe.py": "916cc3697e1e773c1c4c390fee6c7c43338c1685056cbe5083babb30634b5d1b",
+    "block27_complex_gaussian_probe.py": "31fb4061edf679445c556ba8ea38fd6332909cefa91cf38c1af251fba3ee1cde"
+  }
+}

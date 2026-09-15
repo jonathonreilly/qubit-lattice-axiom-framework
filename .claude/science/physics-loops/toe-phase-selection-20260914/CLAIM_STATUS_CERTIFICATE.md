@@ -137,3 +137,10 @@ and derives its quadratic macroscopic limit in the stated sufficient regime.
 Finite frame challenges pass; independent review, finite-boundary pressure
 matching and complete activity convergence remain open. No public delivery
 or retained status is assigned.
+
+Block27 boundary continuation: the source-normalized first mixed log
+coefficient is now proposed to match the iterated free-box/macroscopic limit.
+The boundary-fill input and all-component proof remain independently unreviewed.
+The complete activity sum is open. The one-sided Gaussian absolute-norm
+calculation rules out that displayed majorant for large integer square fills;
+it is not a phase, broad method impossibility or axiom-wall claim.

@@ -88,6 +88,24 @@ def frames():
     direct_quadratic=np.sum(product*(2*C*(U[:,None]**2-V[None,:]**2)
                                     -4*sine*U[:,None]*V[None,:]))
     assert abs(quadratic-direct_quadratic)<1e-13
+    # Full nonlinear operator identity used in the finite-boundary passage.
+    # Stable removable-zero formulas retain components with tiny source.
+    def sinhc(z):
+        result=np.ones_like(z)
+        np.divide(np.sinh(z),z,out=result,where=z!=0)
+        return result
+    alpha=.5*sinhc(U/2)**2
+    eta=-.5*np.sinc(V/(2*np.pi))**2
+    Eh=S.T@((we*alpha*(C@(wm*np.cos(V))))[:,None]*S)
+    Mh=n.T@((wm*eta*(C.T@we))[:,None]*n)
+    Rh=S.T@(product*(sine-theta)*sinhc(U)[:,None]*np.sinc(V/np.pi)[None,:])@n
+    Je=S.T@(we*np.sinh(U))
+    Jm=n.T@(wm*np.sin(V))
+    nonlinear_factor=4*g*g*x@Eh@x+4*b*b*y@Mh@y-4*c*Je@P@Jm-4*g*b*x@Rh@y
+    nonlinear_factor_error=float(abs(nonlinear_factor-direct(1)))
+    assert nonlinear_factor_error<1e-13
+    missing_signed_term=float(abs((nonlinear_factor+4*c*Je@P@Jm)-direct(1)))
+    assert missing_signed_term>1e-6
     remainders=[dict(scale=e,remainder=float(direct(e)-e*e*quadratic),
                      divided_by_fourth_power=float((direct(e)-e*e*quadratic)/e**4))
                 for e in [1.,.5,.25,.125]]
@@ -122,6 +140,8 @@ def frames():
     assert abs(transformed-direct(1))<1e-13
     return dict(shape_counts={'electric_fills':len(S),'magnetic_fills':len(n)},
                 factorization_error=factor_error,missing_projection_fault=missing_projection,
+                full_nonlinear_factorization_error=nonlinear_factor_error,
+                missing_signed_nonlinear_term_fault=missing_signed_term,
                 schur_bounds=bounds,source_remainders=remainders,energy_checks=energy_checks,
                 filling_invariance={'phase_error':phase_error,'source_error':source_error,
                                     'coefficient_error':float(abs(transformed-direct(1)))},

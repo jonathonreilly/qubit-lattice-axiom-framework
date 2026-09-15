@@ -47,7 +47,7 @@
     "families": 4,
     "independent_review": false
   },
-  "latest_checkpoint_utc": "2026-09-15T09:42:37.059584+00:00",
+  "latest_checkpoint_utc": "2026-09-15T10:06:40.646959+00:00",
   "new_primary_reading": [
     {
       "url": "https://www.math.uchicago.edu/~lawler/srwbook.pdf",
@@ -73,6 +73,16 @@
       "local_pdf": "/tmp/toe-charged-reading-20260914/bdh1998-estimates.pdf",
       "sha256": "421a4205ce16a4ca53be8f04b8fceb052b3c3a620521e66ab480e050f5e92fa0",
       "scope": "Published1998,38pages. Opening PDF pages1-6 via web; PDF pages7-8 and32-37 locally read. Lemma3 positivity and Appendix real Gaussian covariance hypotheses checked. No full-paper read or complex two-species theorem imported."
+    },
+    {
+      "url": "https://omeka.ihes.fr/document/P_81_40.pdf",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/frohlich-spencer-1981.pdf",
+      "scope": "Preprint printed pages55(partial)-68(partial), text extraction, reread for real contour/ensemble positivity structure. Several displayed formulas missing in extraction; no new quantitative theorem imported from those missing formulas."
+    },
+    {
+      "url": "https://arxiv.org/pdf/hep-th/9812004",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/frohlich-marchetti-9812004.pdf",
+      "scope": "Opening PDF pages1-10(partial) via web; printed31(partial)-37(partial) locally. Authors distinguish kinematical recipes and approximate duality from proved continuum dynamics. No full-paper read or all-order Gaussian theorem imported."
     }
   ],
   "search_only": [
@@ -104,8 +114,16 @@
     },
     {
       "path": "BLOCK27_COMPONENT_FRAME_CHECKS.json",
-      "sha256": "a83bb275b6c0b6f1903e5b7dfbe37aad13565afbb04a6a7d9582242f650e016c",
+      "sha256": "fd69cdba7ea65ab7f3672b9ce6ed6963f1b2249299eb53978f7c368374ce73ec",
       "scope": "Finite cochain frames, factorization, source and energy challenges only."
+    },
+    {
+      "path": "BLOCK27_FREE_PROJECTION_CHECKS.json",
+      "sha256": "97ddeabc81d5233ed7a635ee5c74e41ca2eb6a4d77dfe977a2152e2ef097ed3c"
+    },
+    {
+      "path": "BLOCK27_COMPLEX_GAUSSIAN_CHECKS.json",
+      "sha256": "236b36e3f56de360ff37ab3a85295c2345a0d8a8c61da32a1ac9a5e6cd22ff79"
     }
   ]
 }

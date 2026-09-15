@@ -1,0 +1,105 @@
+{
+  "status": "finite_checks_passed",
+  "gaussian_embedding": {
+    "quadratures": [
+      {
+        "electric_face": 0,
+        "magnetic_face": 1,
+        "complex_identity_error": 3.275275528903928e-16,
+        "physical_weight_modulus": 0.08298182259162662,
+        "absolute_magnetic_vertex": 61.089204641411236
+      },
+      {
+        "electric_face": 0,
+        "magnetic_face": 3,
+        "complex_identity_error": 3.2345964853260537e-16,
+        "physical_weight_modulus": 0.08298182259162662,
+        "absolute_magnetic_vertex": 61.089204641411236
+      },
+      {
+        "electric_face": 2,
+        "magnetic_face": 5,
+        "complex_identity_error": 3.2345964853260537e-16,
+        "physical_weight_modulus": 0.08298182259162662,
+        "absolute_magnetic_vertex": 61.089204641411236
+      }
+    ],
+    "insufficient_imaginary_variance_fault_eigenvalue": -1.833145018350495,
+    "decoupled_quantized_phase_error": 6.075981269553319e-14
+  },
+  "planar_loop_diagnostics": [
+    {
+      "side": 1,
+      "torus_side": 16,
+      "integer_filling_norm_squared": 1,
+      "charge_mass": 4.0,
+      "coexact_coulomb_energy": 0.49999237060546886,
+      "exact_filling_energy": 0.49999237060546875,
+      "harmonic_correction": 1.52587890625e-05,
+      "charge_vs_projection_error": 1.1102230246251565e-16,
+      "exact_energy_per_area": 0.49999237060546875,
+      "coulomb_energy_per_perimeter": 0.12499809265136722
+    },
+    {
+      "side": 2,
+      "torus_side": 16,
+      "integer_filling_norm_squared": 4,
+      "charge_mass": 8.0,
+      "coexact_coulomb_energy": 1.3691863169867027,
+      "exact_filling_energy": 2.6305695423882973,
+      "harmonic_correction": 0.000244140625,
+      "charge_vs_projection_error": 0.0,
+      "exact_energy_per_area": 0.6576423855970743,
+      "coulomb_energy_per_perimeter": 0.17114828962333783
+    },
+    {
+      "side": 3,
+      "torus_side": 16,
+      "integer_filling_norm_squared": 9,
+      "charge_mass": 12.0,
+      "coexact_coulomb_energy": 2.3045326818428546,
+      "exact_filling_energy": 6.694231356243083,
+      "harmonic_correction": 0.0012359619140625,
+      "charge_vs_projection_error": 4.440892098500626e-16,
+      "exact_energy_per_area": 0.7438034840270092,
+      "coulomb_energy_per_perimeter": 0.19204439015357122
+    },
+    {
+      "side": 4,
+      "torus_side": 16,
+      "integer_filling_norm_squared": 16,
+      "charge_mass": 16.0,
+      "coexact_coulomb_energy": 3.2592798316365212,
+      "exact_filling_energy": 12.736813918363481,
+      "harmonic_correction": 0.00390625,
+      "charge_vs_projection_error": 2.220446049250313e-15,
+      "exact_energy_per_area": 0.7960508698977176,
+      "coulomb_energy_per_perimeter": 0.20370498947728258
+    },
+    {
+      "side": 6,
+      "torus_side": 24,
+      "integer_filling_norm_squared": 36,
+      "charge_mass": 24.0,
+      "coexact_coulomb_energy": 5.201398904381137,
+      "exact_filling_energy": 30.794694845618857,
+      "harmonic_correction": 0.00390625,
+      "charge_vs_projection_error": 6.217248937900877e-15,
+      "exact_energy_per_area": 0.8554081901560794,
+      "coulomb_energy_per_perimeter": 0.21672495434921404
+    },
+    {
+      "side": 8,
+      "torus_side": 32,
+      "integer_filling_norm_squared": 64,
+      "charge_mass": 32.0,
+      "coexact_coulomb_energy": 7.165653619540326,
+      "exact_filling_energy": 56.830440130459664,
+      "harmonic_correction": 0.00390625,
+      "charge_vs_projection_error": 9.769962616701378e-15,
+      "exact_energy_per_area": 0.8879756270384322,
+      "coulomb_energy_per_perimeter": 0.2239266756106352
+    }
+  ],
+  "scope": "Finite Gaussian quadrature and periodic cochain diagnostics; harmonic correction explicit. No phase claim or numerical proof of the infinite-lattice bound."
+}

@@ -1,3 +1,40 @@
+# Current checkpoint — block27 boundary match and large-field test
+
+Continue personally through **2026-09-15 13:30:44UTC**. No subagents.
+Prior exact remote checkpoint:51f21226626a2c4d0e2b847ca9e640822524a596.
+Main5deabeb698a27c2c3f68c5df685af2521ef15307 and planning
+9cff766069e8f66b4cc5c36888b1e71600b8888e were fetched again and are unchanged.
+All14 public campaign PRs8123-8136 remain open at their recorded heads.
+
+`BLOCK27_FREE_BOUNDARY_MIXED_COEFFICIENT_LIMIT.md` now proposes the missing
+finite-free-box identification. Weak Hodge identities plus projection norm
+convergence give strong convergence of P_L,Q_L. Uniform relative-boundary
+fill moments, positive cosine functionals and signed bounded operators give
+the full nonlinear first mixed coefficient limit. The continuum limit is
+ITERATED after the box limit. A source-normalized log coefficient is not
+ordinary pressure density. The finite-volume activity polynomial has a local
+logarithm at0; no uniform radius or evaluation at physical activity1 follows.
+
+Two finite implementations agree on the cochain projection within3.5e-16.
+A wrong Dirichlet boundary and an invalid globally closed zero-extension
+assumption are detected. Seven increasing cubes give exhaustion diagnostics,
+not a fitted convergence rate. The extended finite-frame checker also verifies
+the complete nonlinear operator factorization. Independent review is pending.
+
+`BLOCK27_ONE_SIDED_GAUSSIAN_LARGE_FIELD_TEST.md` tests one actual attempt
+to apply a real Gaussian regulator. Its exact complex embedding forces a
+large imaginary magnetic variance when the electric Gaussian stays real.
+Integer square-loop fills cost area in that norm but only perimeter in their
+Coulomb self-energy. That specified absolute-value majorant fails. Three
+Gaussian quadratures and six periodic square-loop checks pass; a decoupled
+integer-phase control shows why this is NOT a physical no-go or axiom wall.
+
+The all-order signed/large-field estimate remains unsolved. The coefficient
+work is preserved privately without another partial PR. Next: reassess the
+native selector and actual spin-one phase obligations for a distinct mechanism.
+
+---
+
 # Current checkpoint — block27 arbitrary-component coefficient
 
 Continue personally through **2026-09-15 13:30:44UTC**. No subagents.

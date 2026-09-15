@@ -1,6 +1,6 @@
 {
- "edge_count": 12525,
- "node_count": 5046,
+ "edge_count": 12526,
+ "node_count": 5047,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4929,6 +4929,10 @@
   "finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15": {
    "deps_hash": "c05aab2fed6a",
    "out_degree": 2
+  },
+  "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "c85ce5ad1461",
+   "out_degree": 1
   },
   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",

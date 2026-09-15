@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "checks": 40,
+  "replay": {
+    "status": "PASS",
+    "independent_direct_CAR_residuals": 30,
+    "particle_weights": {
+      "1": "99225/4096",
+      "3": "0",
+      "5": "0"
+    },
+    "seconds": 2.1953027499839664,
+    "rss_bytes": 23363584,
+    "author_import": false,
+    "checks": 32
+  },
+  "two_mode": {
+    "status": "PASS",
+    "direct_two_mode_cases": [
+      {
+        "x": "0",
+        "alpha": "315/64"
+      },
+      {
+        "x": "-6",
+        "alpha": "2745/172864"
+      },
+      {
+        "x": "1",
+        "alpha": "171/704"
+      },
+      {
+        "x": "2",
+        "alpha": "333/4160"
+      }
+    ],
+    "singleton_coefficient": "33075/8192",
+    "checks": 7
+  },
+  "input_sha256": {
+    "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_ZERO_PENALTY_L4_DELAYED_SPLITTING_NOTE_2026-09-08.md": "2c33f83b8039c9d9c02346d1317bf246f219afa53a28119765ea9dab5768cf6e",
+    "scripts/native_third_order_star_vertex_replay_2026_09_08.py": "82963698ea99be0c78518c3d76b319368be6addc42667b5b1e0784a77ea50298",
+    "scripts/native_third_order_star_vertex_two_mode_2026_09_08.py": "cedacf97840fd27e509216d84807551716ba33f543bd1d16f8ed2e344b15992f",
+    "docs/work_history/repo/review_feedback/pr8058-evidence/kept/pr8058-INPUTS-746fd36863573c71.json": "d747898bd6f2783ceca4542d39a28d1ee2ffbc2cf71ac21d33cf32d1e4c68ac4",
+    "docs/work_history/repo/review_feedback/pr8058-evidence/kept/pr8058-RESULT-8a461aeeaa3aae41.json": "66fe5f59eb4ba9c1382966d3d3f829f9eed0fc4f4860c607eea41c87e70d87b2",
+    "docs/work_history/repo/review_feedback/pr8058-evidence/kept/pr8058-SOLVE_VECTORS-8740fc5cfce5142d.json": "13aadfc2e7940e0bb635868f0309a83252f4a24be66e6060bbff4024636e41e9",
+    "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270"
+  },
+  "source_sha256": "17b2d3a3b4367dd98547426720c39f523a19a3e9b54a23ab5ad1559b1746bcd1",
+  "seconds": 2.199566666968167,
+  "rss_bytes": 23642112,
+  "scope": "39 helper predicate groups plus1 cross-path comparison; no new physical solve, bulk or full-sixth inference"
+}

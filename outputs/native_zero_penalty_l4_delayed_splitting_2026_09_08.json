@@ -1,0 +1,283 @@
+{
+  "executed_predicates": 93564,
+  "parts": {
+    "electric": {
+      "checks": 964,
+      "rows": [
+        {
+          "graph": "square",
+          "diagonal_fixed_flux_values": [
+            "4",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "0"
+          ],
+          "off_flux_pair_terms": 0
+        },
+        {
+          "graph": "K4",
+          "diagonal_fixed_flux_values": [
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3"
+          ],
+          "off_flux_pair_terms": 12
+        }
+      ],
+      "seconds": 0.030429249978624284,
+      "scope": "actual L4 all960 incident-pair deletions and exact small-graph gauge-parity compressions; no sampling"
+    },
+    "spectator": {
+      "checks": 87509,
+      "status": "PASS",
+      "five_pair_matching": false,
+      "six_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          37,
+          144
+        ],
+        [
+          0,
+          48
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          59,
+          85
+        ]
+      ],
+      "non_scalar_even_masks": [
+        3,
+        12
+      ],
+      "seconds": 0.2575096250511706,
+      "rss_mib": 22.328125,
+      "scope": "Finite support and Clifford controls; no sixth-order coefficient or cubic spectral-isolation test"
+    },
+    "isolation": {
+      "checks": 5091,
+      "status": "PASS",
+      "fixtures": [
+        {
+          "label": "one-edge-0",
+          "flipped_edges": [
+            0
+          ],
+          "wrong_basic_cycles": [
+            0,
+            1,
+            10,
+            36,
+            192
+          ],
+          "variance": 1280,
+          "nonzero_offdiagonal": 20
+        },
+        {
+          "label": "one-edge-3",
+          "flipped_edges": [
+            3
+          ],
+          "wrong_basic_cycles": [
+            1,
+            3,
+            4,
+            39,
+            193
+          ],
+          "variance": 1280,
+          "nonzero_offdiagonal": 20
+        },
+        {
+          "label": "one-edge-47",
+          "flipped_edges": [
+            47
+          ],
+          "wrong_basic_cycles": [
+            35,
+            46,
+            47,
+            190,
+            227
+          ],
+          "variance": 1280,
+          "nonzero_offdiagonal": 20
+        },
+        {
+          "label": "one-edge-191",
+          "flipped_edges": [
+            191
+          ],
+          "wrong_basic_cycles": [
+            142,
+            179,
+            190,
+            191,
+            239
+          ],
+          "variance": 1280,
+          "nonzero_offdiagonal": 20
+        },
+        {
+          "label": "axis-twist-0",
+          "flipped_edges": [
+            144,
+            147,
+            150,
+            153,
+            156,
+            159,
+            162,
+            165,
+            168,
+            171,
+            174,
+            177,
+            180,
+            183,
+            186,
+            189
+          ],
+          "wrong_basic_cycles": [
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207
+          ],
+          "variance": 4096,
+          "nonzero_offdiagonal": 64
+        },
+        {
+          "label": "axis-twist-1",
+          "flipped_edges": [
+            37,
+            40,
+            43,
+            46,
+            85,
+            88,
+            91,
+            94,
+            133,
+            136,
+            139,
+            142,
+            181,
+            184,
+            187,
+            190
+          ],
+          "wrong_basic_cycles": [
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223
+          ],
+          "variance": 4096,
+          "nonzero_offdiagonal": 64
+        },
+        {
+          "label": "axis-twist-2",
+          "flipped_edges": [
+            11,
+            23,
+            35,
+            47,
+            59,
+            71,
+            83,
+            95,
+            107,
+            119,
+            131,
+            143,
+            155,
+            167,
+            179,
+            191
+          ],
+          "wrong_basic_cycles": [
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239
+          ],
+          "variance": 4096,
+          "nonzero_offdiagonal": 64
+        }
+      ],
+      "seconds": 0.1336029579397291,
+      "rss_mib": 23.203125,
+      "scope": "Exact integer square matrices and basic flux controls; no all-sector eigensolver"
+    }
+  },
+  "elapsed_seconds": 0.42828595801256597,
+  "peak_rss_mib": 23.203125,
+  "source_sha256": "cdedf20414196526c66c40143a27762242238963c7cad4ff71e3c81c175150c5",
+  "input_sha256": {
+    "docs/NATIVE_ZERO_PENALTY_L4_DELAYED_SPLITTING_NOTE_2026-09-08.md": "2c33f83b8039c9d9c02346d1317bf246f219afa53a28119765ea9dab5768cf6e",
+    "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md": "810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "scripts/native_zero_penalty_electric_exact_2026_09_08.py": "18eb3db97cb1f292a1c0ab0129dffcb5dc02f96de4ae610ae7fa80d0c1c3203f",
+    "scripts/native_zero_penalty_spectator_exact_2026_09_08.py": "f466ccb0c0c8eb0914ed17198fa7b7040c2dd5943285b69bb80cbc9c744904a2",
+    "scripts/native_zero_penalty_isolation_exact_2026_09_08.py": "13c1867924c51159e539cb5ba19438e79622793c83267e4f191abf502b34b43c"
+  },
+  "scope": "Finite supplied L4 isolation and scalar canonical coefficients through five; sixth only support allowed."
+}

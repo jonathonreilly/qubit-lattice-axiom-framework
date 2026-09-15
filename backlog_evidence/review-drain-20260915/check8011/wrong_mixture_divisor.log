@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8011/wrong_mixture_divisor.py", line 30, in <module>
+    ck(f'mixture normalized {w}',sum(mix)==1)
+  File "/private/tmp/review-drain-20260915/check8011/wrong_mixture_divisor.py", line 10, in ck
+    if not v:raise AssertionError(n)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: mixture normalized (3, 1, 2)

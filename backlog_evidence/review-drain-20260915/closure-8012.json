@@ -1,0 +1,9 @@
+{
+  "pr": 8012,
+  "state": "CLOSED",
+  "closedAt": "2026-09-15T10:31:16Z",
+  "branch": "codex/record-profile-tradeoff-block19-20260907",
+  "branch_deleted_with_exact_lease": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69",
+  "landed": "b6c7cbfcab3b9ddb078faaa8f6b7f46e32349425",
+  "comment": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8012#issuecomment-5678704649"
+}

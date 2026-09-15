@@ -1,0 +1,22 @@
+{
+  "wrong_orbit": {
+    "exit": 1,
+    "failure": "AssertionError: exact native mixture TV"
+  },
+  "wrong_mixture_divisor": {
+    "exit": 1,
+    "failure": "AssertionError: mixture normalized (3, 1, 2)"
+  },
+  "unsafe_rule_uniform": {
+    "exit": 1,
+    "failure": "AssertionError: every center outcome unsafe 0"
+  },
+  "wrong_TV_literal": {
+    "exit": 1,
+    "failure": "AssertionError: exact native mixture TV"
+  },
+  "bad_exterior_label": {
+    "exit": 1,
+    "failure": "AssertionError: exterior repair locally supported (2, 0, 0)"
+  }
+}

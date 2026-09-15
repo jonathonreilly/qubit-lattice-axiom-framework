@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8011/wrong_TV_literal.py", line 50, in <module>
+    ck('exact native mixture TV', rows[0]['mixture_vs_monotone_TV']=='53348/4416984')
+  File "/private/tmp/review-drain-20260915/check8011/wrong_TV_literal.py", line 10, in ck
+    if not v:raise AssertionError(n)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: exact native mixture TV

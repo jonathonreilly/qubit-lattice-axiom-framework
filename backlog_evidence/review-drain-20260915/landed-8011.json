@@ -1,0 +1,28 @@
+{
+  "pr": 8011,
+  "original_head": "11395e60ff268110e8d105ebb61ef4102cbf4b4a",
+  "base": "b6c7cbfcab3b9ddb078faaa8f6b7f46e32349425",
+  "candidate_commit": "87e358da4512e6c35ffd53afa4bf3d92ea1ca91d",
+  "candidate_tree": "2ccd12e376c2f00d666950d67add195548f2ff86",
+  "source_commit": "16dd49aabb",
+  "reviewer": "/root/review_8011",
+  "source_verdict": "PASS",
+  "combined_gate": "PASS; single-unit fallback after train01 unstaged-manifest failure",
+  "checks": [
+    "full run_pipeline.sh",
+    "audit_lint.py --strict",
+    "check_changed_audit_evidence.py --base origin/main",
+    "three diff checks",
+    "all current source/input hashes unchanged"
+  ],
+  "python": "3.12.8",
+  "logs": {
+    "fallback8011-pipeline.log": "1c425102f03a6a012865e325796320b78cf9b9eb74cc6d50b302f688eb455aea",
+    "fallback8011-strict.log": "d03968c337e53efeea18adfadff809fefd0cc390c23dd4a65bb6f6ffbaec7870",
+    "fallback8011-evidence.txt": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+    "review-8011.md": "0727a13001671c954063998983d9b3fe4cab1ce5a51aed3907b56d742d253189",
+    "review-8011.json": "b923429e8b477d7478c574cdac79cb0b2f8125c765836fdcc9a6c64eeec90993"
+  },
+  "source_loss_check": "Only independently reviewed note/runner/cache additions and regenerated manifest. Existing main source unchanged.",
+  "audit_boundary": "No verdict applied; validation row unaudited."
+}

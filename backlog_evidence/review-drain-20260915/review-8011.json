@@ -1,0 +1,638 @@
+{
+  "unit": "PR8011",
+  "reviewer_session": "/root/review_8011",
+  "original_head": "11395e60ff268110e8d105ebb61ef4102cbf4b4a",
+  "declared_base": "main",
+  "original_actual_merge_base": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
+  "confirmation_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "reviewed_staged_tree": "207545594a6b8e6d4b86753eee029934b36514eb",
+  "reviewed_source_commits": [],
+  "source_state": "staged source candidate",
+  "original_path_count": 58,
+  "deleted_original_paths": [],
+  "source_paths": [
+    {
+      "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "path": "logs/runner-cache/native_record_support_preserving_priority_formation_2026_09_07.txt",
+      "blob": "b0c6dbed5272638f4d64a276f462515276dfeb3d",
+      "sha256": "96c01b36268e2738b65563c3f48eb79896b6a22c490587efd1ad20b27bea42cf"
+    },
+    {
+      "path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Entire current authority; all four axioms and formation-site/rate/readout limits."
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "Classification procedure; no approved primitive used by changed theorem."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Entire registry; no supplied clock/start slice/menu selection grant."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "coverage": "Necessary closure: lines 89-158 finite six-projector menu/action, positive product and records-only rule, formation product definition. Static-law classification and its compatibility parent are not consumed."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "62e0f6f10eea8fb0bd922a725799af6114b7a594",
+      "sha256": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+      "coverage": "Necessary closure: definitions/menu/product/order at lines 117-175; complete P1 proof lines 233-252; P2 formula checked as corroboration. Rows/columns/corner/staircase/snake theorems and their strip parent are not load-bearing to this unit."
+    }
+  ],
+  "runtime_inputs": "Python standard library only; runner reads own __file__ for self-hash; no external mathematical runtime inputs",
+  "disposition_map": [
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/ARTIFACT_PLAN.md",
+      "original_blob": "05978717a26299a19b0479b328b767008e477059",
+      "original_sha256": "d16982550ba8a39ed1c77d8b5d60079ecd1ec7a8155151d454ed4b900138e6e2",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/ARTIFACT_PLAN.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_blob": "1cbf5e54821230ba99fc11a83a4bb1a7763b3e70",
+      "original_sha256": "b8a29a947bf0c92bbc4db92d01e6a00b4080c649aae35da9aa75dcd8b2ddf2a0",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/CANONICAL_CACHE.json",
+      "original_blob": "c94b3bba9455aa665fed329eabcfc72a15f0496e",
+      "original_sha256": "4e5393e8a6838edfea0bb2a939325ba2b0645732f2c1856a6f3c21460c7ea943",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/CANONICAL_CACHE.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_blob": "1c6af5a8dcb46555ccdebac6b1222d30d4044c54",
+      "original_sha256": "7fc3b77b36c1b6e0c052b04cd487d9f5d386d04b95cd980971d9862c45a8c574",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/CONFORMANCE.md",
+      "original_blob": "3b2996c2d0a10d7f1a9de239278c9ad6028a6ea5",
+      "original_sha256": "f082b432f2b036b13ab98dc2b2fe0cb52b7993d28a6b5388ec2b19bbb42d6814",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/CONFORMANCE.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/FINAL_VALIDATION.md",
+      "original_blob": "50e1e02c4afd19c9d62b94e4487a3ac12f73338f",
+      "original_sha256": "696332712dcdb28b0881363267cb14f0e8922ef9b5087bc653052d1d391c66d2",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/FINAL_VALIDATION.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/FINAL_VOCAB_LINT.txt",
+      "original_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/FINAL_VOCAB_LINT.txt",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/GOAL.md",
+      "original_blob": "b2b409a78e3eb88acd50019c54055c408c8f3098",
+      "original_sha256": "6a02b6c4408ade40293b845f00c820744966fb523e443553cdfd95675ca4a7ed",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/GOAL.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/HANDOFF.md",
+      "original_blob": "b06bfdcbf6c973939d6bea19e34bf49c91499eac",
+      "original_sha256": "1a548fd44b72999eda5fb59fb135b54f08c3c055ad5ed372ad7f5932696f515d",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/HANDOFF.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/INTEGRATION_RECEIPT.json",
+      "original_blob": "b83976101d8fe2e7dba4df3139041992f64bc387",
+      "original_sha256": "a122ad4c20693137d8e335c715654e1ce9f64d4d4b753955a223c6d0d517426c",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/INTEGRATION_RECEIPT.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/LATEST_MAIN_SYNC_20260907.md",
+      "original_blob": "8a492ea92503aa62b9e25678e7db208fb666eebf",
+      "original_sha256": "81dfe3356987f94d3e0e4a1d72cc6e328f87dcbe795c64f8dba218fa10d6304b",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/LATEST_MAIN_SYNC_20260907.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/LITERATURE_BRIDGES.md",
+      "original_blob": "138b9cffa94f37e660742fa2dce0fdc0a2e46df4",
+      "original_sha256": "6d2ece319ed45333a41d04e202dca147769eeabce06ee226e3b741ec01eabea2",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/LITERATURE_BRIDGES.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_blob": "47d748cf2f45d4e29d6dd566ceb7a2da6b3988cc",
+      "original_sha256": "c360848b8f41864edac144e95a8592159a056bb19e7dbb42a4c9e2a0217c875d",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid proof/inputs/finite-scope checklist/limits ported to canonical note. Broad archived headings and unrelated profile boilerplate are not current claims.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/NO_GO_LEDGER.md",
+      "original_blob": "0663d687f1c20400774444df29c3a5220dc8fd2e",
+      "original_sha256": "375faa0ee7c81fd3553be9aec6077f149dae5b8b0866eef70b44fcb768782373",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/NO_GO_LEDGER.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/OPPORTUNITY_QUEUE.md",
+      "original_blob": "c5c11c8f05ae9608fcfa9f9a32f76f3dbf07fd24",
+      "original_sha256": "22f1aafb201f4fdd93c0fcd9e0d7b9fb99fafaebd5e8ed0dc13ec97ecf5415bb",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/OPPORTUNITY_QUEUE.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_blob": "3cb66e4c34d829dcbadd4456ab423a799ec09867",
+      "original_sha256": "318afcce2d435533671fe3600a1d9917d48c03cc28de2d5bf6342e26487ecf3b",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log",
+      "original_blob": "a592f0b0496cfb26802a6fa4f3b53979c24d8c20",
+      "original_sha256": "101187f107931cf3dcef363a52323c4c1692e7a3585ff42e6d94833bec407ae3",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json",
+      "original_blob": "11a2effca0f34c650d865e1027da9235060e62af",
+      "original_sha256": "bb47ce037c11899aefc57d11d12fdac224ca16762e8a546445ba0277bc757b38",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log",
+      "original_blob": "8a6998ee2ac1b98b6264b742941983037c91bbd8",
+      "original_sha256": "e8f404a2569e9a230a0365596dba1831867c1994432d74db6b4c1ff49b476f83",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md",
+      "original_blob": "75ab2847f5b7689d35fd1f2e35b9d9b1eba8282a",
+      "original_sha256": "a274aa5b38ae8c9306fa8f349f1751dcf155be7aa29dfc28a1b0ec4cb07d15da",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PROVENANCE.md",
+      "original_blob": "1674e209c5fa3969cb298166fc4d4890902cffc3",
+      "original_sha256": "d7f242d09f50d6fbdffc62727550e28ba9862259f5c2181a1547de73972798ac",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PROVENANCE.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/PR_BACKLOG.md",
+      "original_blob": "102f62ecf5fef32521f58c7bd1174bf4373b6788",
+      "original_sha256": "686d90c904b05f4617ca4c0f420731c5cb0671f358df0faff7448e2f32a24fa1",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/PR_BACKLOG.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_blob": "7c6d1ed23d6d018f2ca996c10bdda27593b0e605",
+      "original_sha256": "751627eff11f4a2c9afd22decbcefb0ebbfcd1242030f48265b4a12eb1045f95",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/REVIEW_HISTORY.md",
+      "original_blob": "37e8bd55c949d566404e8c1de0247bf7c24d9e93",
+      "original_sha256": "b1845505f55156af3f7f49fcd7803252e4c9e79260c4730925563d962b881a7f",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/REVIEW_HISTORY.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/ROOT_FINAL_PORT_RECEIPT.json",
+      "original_blob": "e1bce438740331d43ba499e72c4ea5d14cedd450",
+      "original_sha256": "8ae5347c251aacce65814dfae0a62e5ff7b25e487a1ebb48a56f875c2ec05a0a",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/ROOT_FINAL_PORT_RECEIPT.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "original_blob": "dc69d23dfcaf295ee58e310cae6628613840bc8e",
+      "original_sha256": "657794178593213daeab266614dd287dd05304455f32347082d130b0c9d3ae5e",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/ROUTE_PORTFOLIO.md",
+      "original_blob": "46398ac7be81e11c3d835a43931744ec15cd6f9d",
+      "original_sha256": "b107de07747e89fc31233247889b3aeb806e25b95361bde6aa2e82801b4c8682",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/ROUTE_PORTFOLIO.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/STATE.yaml",
+      "original_blob": "65ff5528ad6a50a43c5d053864ef9021906a7df6",
+      "original_sha256": "4605204ed91d3bc474f772e0764f95faf6c2867d9c1dc64742f59e292b1b31fe",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/STATE.yaml",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/TRACE_GATE.md",
+      "original_blob": "2ba6c92394db139a0e4531fd85a62281f057a915",
+      "original_sha256": "a1242715dce8a5c21cda36375aa705d12d635798f8132f1aa77e73f3a1602685",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/TRACE_GATE.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_blob": "27bbd8232edb1b81430793b7b1361b3872d14216",
+      "original_sha256": "6172943c979481d5a1b3b5a3c7a3d5161bfac6742401d797c5569a1d2f69b805",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_blob": "a0f17e3fc8467a3c34515aed5a37bdb96c59140f",
+      "original_sha256": "95dc66ece0e5e845547775b944403d57608c59cb344abc168962257dbfd27121",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_READINESS.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_blob": "6863aae6cd97be3f6e306379108eea4d061a8717",
+      "original_sha256": "8e5f66a240bcf4548dc98f5314ac2935adb51baedfc16d3fb4298c192d9c6a0b",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_STRICT.log",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_blob": "c9eb7f43059ca899b6f41b3200cd830619114f20",
+      "original_sha256": "608b0f91a7efd4b67b2a984de591475daf2a3a00c6663b9a4153116c739e9b11",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/VOCAB_VALIDATION.json",
+      "original_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/VOCAB_VALIDATION.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/HANDOFF.md",
+      "original_blob": "2877085781b9a1e79e3ef732284442fc431e27c7",
+      "original_sha256": "b77a71675f53dabd34f15cbb447eed6c1f520b8f2c0c72c162b6caf500a5612f",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/HANDOFF.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/HASHES.json",
+      "original_blob": "c97c220c4c8b57e9b2e791ce85e31760579af9c9",
+      "original_sha256": "e045bf3a1c65bcaad9ad30a219099b5367bb7b670070309f08f2b7c4cdc8c7e0",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/HASHES.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/N1_N8.md",
+      "original_blob": "ee2d247f4e46403b9b3fcee476ad1210054a0406",
+      "original_sha256": "905200e20a68cfd032d66bb859e1f333e11f82d4a2dded332a5c23ff70951a61",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/N1_N8.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid proof/inputs/finite-scope checklist/limits ported to canonical note. Broad archived headings and unrelated profile boilerplate are not current claims.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/PORT_RECEIPT.json",
+      "original_blob": "054805a3b3cb8f8f76e283e40ad644092e54584c",
+      "original_sha256": "52628068550be6a2d3e3d8276ffec7e86b167da713ca47a30aecd02e6a6ad440",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/PORT_RECEIPT.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "cf2147ac6c7e54e493d4180a4370ecb24569ce10",
+      "original_sha256": "768d65b3b08d097935dad1495bc8fb40721c6db2e41bf038a1c2e8b3fdd7fb9e",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid proof/inputs/finite-scope checklist/limits ported to canonical note. Broad archived headings and unrelated profile boilerplate are not current claims.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/DERIVATION.md",
+      "original_blob": "e4e54f9c05767d3b25fd2929a779ab74ead1cbde",
+      "original_sha256": "b39aed877eb9c7fb96e2142bcafeddeeee10b494b00623b9140a05d9d7cc70f9",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/DERIVATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid proof/inputs/finite-scope checklist/limits ported to canonical note. Broad archived headings and unrelated profile boilerplate are not current claims.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/DERIVATION_BEFORE_EXTERIOR_SCOPE_FIX.md",
+      "original_blob": "b8d2f9d8c210caf3ba075fa27a2cea25090f0095",
+      "original_sha256": "b1d8137c32b9d363200b62bc457cadc50b74502f3f097056f8f5e7c446e07f4c",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/DERIVATION_BEFORE_EXTERIOR_SCOPE_FIX.md",
+      "disposition": "narrowed",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid construction/criterion retained; false exterior/global liveness sentence rejected and repair explicitly preserved. Historical original is recovery only.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/EXTERIOR_SCOPE_CORRECTION.md",
+      "original_blob": "2929145d36695614d32b3ae1fb2cb4943f9d71d6",
+      "original_sha256": "7911af52efe85584a85707a0e7e8edce1c703b28c4ffba6f3c9dd12ab9c5864b",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/EXTERIOR_SCOPE_CORRECTION.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid proof/inputs/finite-scope checklist/limits ported to canonical note. Broad archived headings and unrelated profile boilerplate are not current claims.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/HASHES.json",
+      "original_blob": "1d8be15959643c6fa1963bebef7e2cf907949739",
+      "original_sha256": "0f5bb9ce64583582b01bf1b9a4b4e6dfd4cd7c8ccf972a401c525fa90db3b42c",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/HASHES.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/PREREGISTRATION.md",
+      "original_blob": "97051a4187bb79c7f90b20b7c15734ae7132e8f4",
+      "original_sha256": "50baa6b8138bdc90179865fd553a627be27571b4e8622b2931897d136b792418",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/PREREGISTRATION.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid proof/inputs/finite-scope checklist/limits ported to canonical note. Broad archived headings and unrelated profile boilerplate are not current claims.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/check.py",
+      "original_blob": "4cff4262ac01bd7aa8e9c8532dc8dfcb5b33edcb",
+      "original_sha256": "723b0de11eb330cad4e701a1828aeb10de6e9f7c50fc904688fe4e9afe6d9b98",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/check.py",
+      "disposition": "superseded",
+      "final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Original mathematical implementation preserved by canonical runner; only interface/resource controls and subsequent exact/repair assertions added.",
+      "final_blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "final_sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/INDEPENDENT_CRITERION.md",
+      "original_blob": "c82af9999f95f21957f2b29bc23a3720a755f37b",
+      "original_sha256": "a399adbf027f528c9117fcf3fac3d14def4a4e0e8c38146bdc9328c5c4fb4e0d",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/INDEPENDENT_CRITERION.md",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Valid local iff, covariance/clock/ancestor/downset boundaries retained; unique no-global-completion boundary ported. Broad liveness phrase rejected; finite isolated scope controls.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/REVIEW.md",
+      "original_blob": "d6c97a42cf17f3f46da754c7240f63fb2af946e2",
+      "original_sha256": "01d8f2693ec9c397b7b7ef26af75e0f67e1c114b429b5618535edf40cecb328a",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/REVIEW.md",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/exterior_repair.json",
+      "original_blob": "89f1c43d00f8a0fa9a4ec1736981b70ba1ebe88d",
+      "original_sha256": "8f602696d494fc140a5857d832f8a7b27d6198f50101db742fa9a2eaa8a72b0f",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/exterior_repair.json",
+      "disposition": "superseded",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "also_final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Unique exact two-append repair ported self-contained to note and runner, independently verified.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/live-certificate.json",
+      "original_blob": "4a9401bbb558eb5967bcbba2f7a18b2bcbe94573",
+      "original_sha256": "33a8b1a28354c1b892fb8fe20346f2972f9f5b839f635dd9251d44d9f77bbd90",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/formation-review/live-certificate.json",
+      "disposition": "superseded",
+      "final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Exact scientific payload matched canonical output; time/RSS/hash remain original historical receipts; fresh bound cache supersedes execution authority.",
+      "final_blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "final_sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/result.json",
+      "original_blob": "1be0b9f608191025dc807b428387823cd615231e",
+      "original_sha256": "f5fa5de15397a0ee51303c55cb28d64947ff7896831e334f2b7ac700a3fa333c",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/evidence/result.json",
+      "disposition": "superseded",
+      "final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Exact scientific payload matched canonical output; time/RSS/hash remain original historical receipts; fresh bound cache supersedes execution authority.",
+      "final_blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "final_sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/result.json",
+      "original_blob": "2a2ac951aa5f68b8dfef31065d40570c4fec9e85",
+      "original_sha256": "14ba4bd68a523531228d977af8de8005613c74e7303e289e062c291e3e173130",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/result.json",
+      "disposition": "superseded",
+      "final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Exact scientific payload matched canonical output; time/RSS/hash remain original historical receipts; fresh bound cache supersedes execution authority.",
+      "final_blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "final_sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "original_blob": "956b9487efcff87541cac564e02859768fe35b2b",
+      "original_sha256": "2446e34021ea8d922f98da5abfdc46b16fcafd060a08f50a5ca7fbd044124d3f",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/frozen-staging/scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "disposition": "superseded",
+      "final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Original mathematical implementation preserved by canonical runner; only interface/resource controls and subsequent exact/repair assertions added.",
+      "final_blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "final_sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/validated_claims_before_generated_cleanup.json",
+      "original_blob": "113b205e4d0b3adbeefed3eb63495580bab640ce",
+      "original_sha256": "3d2688624bf9c838f7436adba0390002d55c6346542681f5dc1cf6687c4ebf25",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/validated_claims_before_generated_cleanup.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/record-priority-formation-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_blob": "bb87f80dd15f9b496cde2dd916906c009bf7352b",
+      "original_sha256": "ae1601bfd24ec1ab2d70559bbf4cf5f6390c6a36c28d47b137e8c78729967a34",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:.claude/science/physics-loops/record-priority-formation-20260907/validated_readiness_before_generated_cleanup.json",
+      "disposition": "rejected",
+      "reason": "Non-source campaign state, review/status assertion, hashes or historical mechanical validation; inspected for unique source obligations. No independent audit/review authority imported; recovery remains immutable original head."
+    },
+    {
+      "original_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_blob": "398e46b8ea158a4a5ac087517be084cf9561ed27",
+      "original_sha256": "976610c1f20a376f33744dc1d2bbc83fb9d697d07fc3d98def8a94a25e543bcf",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "disposition": "narrowed",
+      "final_path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reason": "Original canonical mathematics preserved; checklist/exterior repair/no-global-completion boundary integrated, exact controls and resolution evidence strengthened.",
+      "final_blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "final_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_blob": "3765577a93113b4542f1aade0e538db4acbb0807",
+      "original_sha256": "795a370732961c9f88d12c6d845bb614685a119eee167b50900a560605ff0eea",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:docs/audit/data/citation_graph_manifest.json",
+      "disposition": "superseded",
+      "reason": "Generated topology acknowledgment must regenerate on combined current-main candidate; no scientific content lost."
+    },
+    {
+      "original_path": "logs/runner-cache/native_record_support_preserving_priority_formation_2026_09_07.txt",
+      "original_blob": "1ef9dfea83daddb7d9e96c2841435a14c6ad3cd7",
+      "original_sha256": "59ae1e1f3b459bd30bdf86e83936215b5714f75743ffca7d6b4b59d1647e9d57",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:logs/runner-cache/native_record_support_preserving_priority_formation_2026_09_07.txt",
+      "disposition": "narrowed",
+      "final_path": "logs/runner-cache/native_record_support_preserving_priority_formation_2026_09_07.txt",
+      "reason": "Original canonical mathematics preserved; checklist/exterior repair/no-global-completion boundary integrated, exact controls and resolution evidence strengthened.",
+      "final_blob": "b0c6dbed5272638f4d64a276f462515276dfeb3d",
+      "final_sha256": "96c01b36268e2738b65563c3f48eb79896b6a22c490587efd1ad20b27bea42cf"
+    },
+    {
+      "original_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "original_blob": "956b9487efcff87541cac564e02859768fe35b2b",
+      "original_sha256": "2446e34021ea8d922f98da5abfdc46b16fcafd060a08f50a5ca7fbd044124d3f",
+      "recovery": "11395e60ff268110e8d105ebb61ef4102cbf4b4a:scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "disposition": "narrowed",
+      "final_path": "scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+      "reason": "Original canonical mathematics preserved; checklist/exterior repair/no-global-completion boundary integrated, exact controls and resolution evidence strengthened.",
+      "final_blob": "7300985c031144c19d5dd4aedd15e0ca9c65b2c3",
+      "final_sha256": "80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6"
+    }
+  ],
+  "current_main_loss_check": "All three source paths are additions absent on confirmation base. No current-main proof/runner overwritten or deleted; current corrected parent bytes retained. Original inherited source is current-main context, not reintroduced from stale PR. Generated manifest omitted for combined regeneration.",
+  "findings": {
+    "F1": "fixed; note N1\u2013N8",
+    "F2": "fixed; self-contained exterior repair and historical scope",
+    "F3": "fixed; substantive resolution lines + cache; exact literals asserted",
+    "F4": "fixed; unique inherited no-finite-global-completion boundary and elementary proof retained"
+  },
+  "proof_obligations": "CONDITIONAL: closed within explicitly supplied finite-menu local rule, independent exponential times/marks, start slice and fixed prior Records. Full support needed for ongoing validity. No physical mechanism selection.",
+  "lenses": {
+    "code_runner": "PASS",
+    "physics_claim": "BOUNDED",
+    "proof": "CONDITIONAL",
+    "imports": "DISCLOSED",
+    "nature_retention": "BOUNDED; no Nature readiness",
+    "no_go": "finite support obstruction correct; N1\u2013N8 honest; no exhaustive five-family packet claimed under focused owner rule",
+    "labeling": "PASS; algebraic/probabilistic, not naming convention",
+    "governance": "PASS at source; combined pipeline pending"
+  },
+  "checks": {
+    "original_runner": "66 assertions, strict JSON, exit0",
+    "final_runner": "72 assertions, stdout exactly matches final cache, exit0",
+    "independent": "partial-state probability DP + signed-axis dot-product weights; exact TV/count and downset continuation; analytic race/ancestor and generator review; explicit exterior repair",
+    "mutations": {
+      "wrong_orbit": {
+        "exit": 1,
+        "failure": "AssertionError: exact native mixture TV"
+      },
+      "wrong_mixture_divisor": {
+        "exit": 1,
+        "failure": "AssertionError: mixture normalized (3, 1, 2)"
+      },
+      "unsafe_rule_uniform": {
+        "exit": 1,
+        "failure": "AssertionError: every center outcome unsafe 0"
+      },
+      "wrong_TV_literal": {
+        "exit": 1,
+        "failure": "AssertionError: exact native mixture TV"
+      },
+      "bad_exterior_label": {
+        "exit": 1,
+        "failure": "AssertionError: exterior repair locally supported (2, 0, 0)"
+      }
+    },
+    "diff_checks": "HEAD/worktree/staged clean",
+    "syntax": "AST parse success",
+    "full_pipeline_count": 0,
+    "combined_gate": "coordinator pending"
+  },
+  "external_reference": {
+    "url": "https://arxiv.org/pdf/math/0503519",
+    "checked": "Proposition1 proof page15 factorial decreasing-path argument; prior-art attribution correct; source proof is self-contained"
+  },
+  "verdict": "FINAL VERDICT: PASS",
+  "verdict_scope": "source only; no landing/audit grant",
+  "findings_sha256": "0727a13001671c954063998983d9b3fe4cab1ce5a51aed3907b56d742d253189",
+  "disposition_map_sha256": "1f670dd4a2013fcb35c1a98eb00f3d9305d58b507055dbe8902df02b7ffb3a0f"
+}

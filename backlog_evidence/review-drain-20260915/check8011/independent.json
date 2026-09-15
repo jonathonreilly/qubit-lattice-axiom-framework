@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "weights": [
+        3,
+        1,
+        2
+      ],
+      "TV": "53347/4416984",
+      "different": 720,
+      "downset_conditionals": 36
+    },
+    {
+      "weights": [
+        2,
+        2,
+        2
+      ],
+      "TV": "0",
+      "different": 0,
+      "downset_conditionals": 36
+    }
+  ],
+  "repair_valid": true,
+  "decreasing_order_counts_verified_through_edges": 7
+}

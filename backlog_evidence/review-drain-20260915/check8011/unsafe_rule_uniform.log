@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8011/unsafe_rule_uniform.py", line 42, in <module>
+    ck(f'every center outcome unsafe {t}',bool(bad));unsafe.append({'center':t,'violated_endpoint_contents':bad})
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/review-drain-20260915/check8011/unsafe_rule_uniform.py", line 10, in ck
+    if not v:raise AssertionError(n)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: every center outcome unsafe 0

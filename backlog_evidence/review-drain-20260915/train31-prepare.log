@@ -1,0 +1,38 @@
+[detached HEAD 478fdb77b2] Preserve independently reviewed source unit PR8090
+ Date: Tue Sep 15 12:01:10 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 22 files changed, 5400 insertions(+)
+ create mode 100644 docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/1e74ed658ed7d4fb59fa41bda1717015f9964b359205d5365e8b8ae2a944828f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/2a03375dae27c726b8c425a09d41618e8b51305697edadf6e6a2c7cedec5a78f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/43843d9818848747f0ef7122c941fd041d80a02d849601eaa2fef55473a477de.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/446e302b09c7407531e3aa9f5c3bf5fabc45fe42eab5db2ce0a84f7d202da8cf.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/4b9cb554583b53038dc6f69ee3751c40480f4bea72f98dc74590a5302f8a8486.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/5bed01ec6457d87df0c781defffcf171bfc78bd826dae0b4f0aef2d7db4c7185.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/749ff4deb2613f690c53b7df4e969ed5ab5a9f366ef67fc8a4d40905d0a8aafe.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/775327788d4619ef48e989025f8fcf6b9d772499ccdab24eca4aa2b64ba52600.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/7c49fbb742f15e20615facb477af05c35bf4f99a148863beec452a87f32a7519.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/961abcdc55d0291872c50e554128da28e17d8caf428dc41f5cfa1cbaf3e3c413.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/c610d828c1e425287ede7f8f5103c4f68576232a5004c0064e5efb4ba962972d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/cb26edaa75e7e8ada5d4f2032e41e927971637e4d977e7a33d49fbe394f6de41.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/df51a6eb6770202744e4a87fc8ad7d449ef70d671840ef34d6c082b37103b259.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/_objects/fa61cd94ab839ff19758ea18ebe99baa3389c6b83562835338806f20dedb1ee8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8090-evidence/kept/pr8090-REVIEW_HISTORY-3f4cb79c836849bf.md
+ create mode 100644 logs/runner-cache/native_interacting_weyl_2026_09_13.txt
+ create mode 100644 outputs/native_interacting_weyl_2026_09_13.json
+ create mode 100644 scripts/native_interacting_weyl_2026_09_13.py
+FROZEN 478fdb77b24cdf586174cc5a568b4e7994522bc9 sources 22 inputs 42 notes 1

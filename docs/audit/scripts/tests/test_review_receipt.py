@@ -139,7 +139,7 @@ class ReceiptTests(unittest.TestCase):
         self.invalid(contains='evidence hash changed')
 
     def test_unknown_version_and_missing_category(self):
-        self.record['schema_version'] = 2
+        self.record['schema_version'] = 3
         self.invalid(contains='schema version')
         self.record['schema_version'] = 1
         del self.record['inputs']['context']
@@ -247,6 +247,125 @@ class ReceiptTests(unittest.TestCase):
     def test_omitted_changed_note_rejected(self):
         self.add_source('docs/SECOND.md', '# Science\n**Type:** bounded_theorem\n')
         self.invalid(contains='uncovered changed/runner-affected')
+
+    def supporting_proof_fixture(self, linked=True, pinned=True, body='# Supporting proof\nComplete argument.\n'):
+        self.add_source('docs/PROOF.md', body)
+        if linked:
+            self.write('docs/NOTE.md', (self.repo / 'docs/NOTE.md').read_text() + '[proof](PROOF.md)\n')
+            self.record['notes'][0]['citations'].append('docs/PROOF.md')
+        if pinned:
+            self.write('scripts/primary.py', (self.repo / 'scripts/primary.py').read_text().replace(
+                '("data/input.txt",)', '("data/input.txt", "docs/PROOF.md")'))
+        self.git('add', '.')
+        self.record['source']['tree'] = self.git('write-tree')
+        self.record['source']['paths'] = self.bind(row['path'] for row in self.record['source']['paths'])
+        self.record['inputs']['runtime'] += self.bind(['docs/PROOF.md'])
+        # A fresh reviewer record maps the corrected canonical note/runner;
+        # the original constituent hashes and old report stay unchanged.
+        report = json.loads(Path(self.record['reviewer']['report']['path']).read_text())
+        for row in report['original_dispositions']:
+            row['final_sha256'] = self.hash(row['final_path'])
+        path = self.home / 'support-review.json'
+        path.write_text(json.dumps(report))
+        ref = {'path': str(path), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+        self.record['reviewer']['report'] = ref
+        self.record['constituents'][0]['dispositions'] = dict(ref, json_pointer='/original_dispositions')
+        self.record['schema_version'] = 2
+        self.record['supporting_proofs'] = [{'path': 'docs/PROOF.md', 'canonical_note': 'docs/NOTE.md',
+            'citations': [], 'rationale': 'Current proof fully reviewed as part of NOTE; no autonomous claim.',
+            'review_reference': ref}]
+
+    def test_current_supporting_proof_has_scientific_owner(self):
+        self.supporting_proof_fixture()
+        status, result = self.check()
+        self.assertEqual(status, 0, result)
+        self.assertEqual(result['record_schema_version'], 2)
+        self.assertEqual(result['supporting_proofs'][0]['canonical_note'], 'docs/NOTE.md')
+        self.assertEqual(self.record['non_science_notes'], [])
+        self.assertNotIn('verdict', result)
+
+    def test_supporting_proof_cannot_use_old_schema(self):
+        self.supporting_proof_fixture()
+        self.record['schema_version'] = 1
+        self.invalid(contains='requires receipt schema version 2')
+
+    def test_supporting_proof_requires_explicit_new_schema_list(self):
+        self.record['schema_version'] = 2
+        self.invalid(contains='supporting_proofs')
+        self.record['supporting_proofs'] = {}
+        self.invalid(contains='supporting_proofs must be explicit')
+
+    def test_supporting_proof_requires_reviewed_owner(self):
+        self.supporting_proof_fixture()
+        self.record['supporting_proofs'][0]['canonical_note'] = 'docs/PARENT.md'
+        self.invalid(contains='owner must be a reviewed canonical note')
+
+    def test_supporting_proof_requires_link_and_pin(self):
+        self.supporting_proof_fixture(linked=False)
+        self.invalid(contains='must be linked')
+
+    def test_supporting_proof_requires_actual_runner_pin(self):
+        self.supporting_proof_fixture(pinned=False)
+        self.invalid(contains='must be pinned')
+
+    def test_supporting_proof_requires_runtime_binding(self):
+        self.supporting_proof_fixture()
+        self.record['inputs']['runtime'] = self.bind(['data/input.txt'])
+        self.invalid(contains='scientific runtime input')
+
+    def test_supporting_proof_cannot_hide_autonomous_type(self):
+        self.supporting_proof_fixture(body='# Separate claim\n**Type:** bounded_theorem\n')
+        self.invalid(contains='autonomous claim')
+
+    def test_supporting_proof_cannot_hide_unknown_explicit_type(self):
+        self.supporting_proof_fixture(body='# Separate claim\n**Type:** novel_theorem\n')
+        self.invalid(contains='autonomous claim')
+
+    def test_supporting_proof_cannot_hide_own_runner(self):
+        self.supporting_proof_fixture(body='# Separate claim\nRunner: `scripts/primary.py`\n')
+        self.invalid(contains='autonomous claim')
+
+    def test_supporting_proof_cannot_hide_unresolved_runner_label(self):
+        self.supporting_proof_fixture(body='# Separate claim\n**Runner:** `scripts/absent.py`\n')
+        self.invalid(contains='autonomous claim')
+
+    def test_supporting_proof_cannot_hide_frontmatter_type(self):
+        self.supporting_proof_fixture(body='---\nclaim_type: invented_theorem\n---\n# Separate claim\n')
+        self.invalid(contains='autonomous claim')
+
+    def test_supporting_proof_cannot_hide_declared_claim_id(self):
+        self.supporting_proof_fixture(body='---\nclaim_id: proof\n---\n# Separate claim\n')
+        self.invalid(contains='autonomous claim')
+
+    def test_supporting_proof_coverage_requires_unique_category(self):
+        self.supporting_proof_fixture()
+        self.record['non_science_notes'] = [self.record['supporting_proofs'][0]]
+        self.invalid(contains='duplicate supporting proof')
+
+    def test_supporting_proof_requires_complete_citations(self):
+        self.supporting_proof_fixture(body='# Supporting proof\n[parent](PARENT.md)\n')
+        self.invalid(contains='supporting proof citation')
+        self.record['supporting_proofs'][0]['citations'] = ['docs/PARENT.md']
+        status, result = self.check()
+        self.assertEqual(status, 0, result)
+
+    def test_supporting_proof_rejects_missing_citation(self):
+        self.supporting_proof_fixture(body='# Supporting proof\n[missing](MISSING.md)\n')
+        self.invalid(contains='unresolved supporting proof citation')
+
+    def test_supporting_proof_requires_coverage_and_unchanged_evidence(self):
+        self.supporting_proof_fixture()
+        item = self.record['supporting_proofs'][0]
+        item['rationale'] = ''
+        self.invalid(contains='coverage rationale')
+        item['rationale'] = 'Current proof reviewed under NOTE.'
+        item['review_reference'] = dict(item['review_reference'], sha256='0' * 64)
+        self.invalid(contains='evidence hash changed')
+
+    def test_supporting_proof_source_drift_rejected(self):
+        self.supporting_proof_fixture()
+        self.write('docs/PROOF.md', '# Changed proof\n')
+        self.invalid(contains='hash changed')
 
     def test_explicit_historical_disposition(self):
         self.add_source('docs/HISTORY.md', '# Historical prose\n')

@@ -1,4 +1,4 @@
-# Unit receipt version 1
+# Unit receipts: version 1 and supporting-proof version 2
 
 This handoff format binds an existing independent review to concrete source and
 input bytes. It does not create a review, infer PASS, or replace the original
@@ -37,7 +37,10 @@ source, input, index and evidence identities before returning.
 
 ## Required record
 
-All keys below are required. All five input categories are explicit lists,
+All keys below are required. Version 1 remains valid for existing units.
+Version 2 additionally requires `supporting_proofs`, described below; old
+checkers reject version 2 rather than silently skip its scientific coverage.
+All five input categories are explicit lists,
 including when empty. File entries use repository-relative `path` and a SHA-256
 `sha256`. Paths cannot escape the repository or name a final symlink. Evidence
 references use existing absolute paths and SHA-256. Git identities are full
@@ -143,6 +146,42 @@ required rows and a hash reference to the original evidence. Point the constitue
 source identities. An adapter must not fill an absent judgment with PASS or infer
 reading coverage from a successful runner.
 
+## Current supporting proofs
+
+A proof fragment can belong to a canonical claim without being an autonomous
+claim note. Keep it as current scientific source: do not label it historical or
+non-scientific, fabricate a standalone claim/runner, or duplicate its argument
+solely to satisfy the record format. Use **schema version 2** and an explicit
+`supporting_proofs` list:
+
+```json
+{"path":"docs/PROOF_FRAGMENT.md","canonical_note":"docs/NOTE.md",
+ "citations":[],
+ "rationale":"Current supporting proof, fully reviewed under NOTE's stated hypotheses and conclusion; not an autonomous claim.",
+ "review_reference":{"path":"/absolute/review.json","sha256":"REPORT_SHA256"}}
+```
+
+The owner must be a full reviewed `notes` entry, including its ordinary runner,
+helper, premise and cache checks. Each supporting proof must be discovered
+Markdown, hash-bound in `inputs.runtime`, directly linked from that owner, and
+declared as an input of its primary or registered helper. Its own actual Markdown
+citations must exactly match `citations` and have bound target bytes; unresolved
+links fail. Its full argument, imported premises and interactions remain part of
+the owner's independent scientific review. The reviewer must explain that
+coverage and bind the corresponding report. The helper checks the recorded
+relationship, not the truth or completeness of that scientific judgment.
+
+An autonomous `claim_id`, extracted Type or primary runner requires a full
+`notes` entry instead. Duplicate classifications, absent/unreviewed owners,
+missing links/pins, missing input hashes and changed reports fail. Supporting
+proofs never belong in `non_science_notes`; that category retains its historical
+or non-scientific boundary. Version 1 cannot carry `supporting_proofs`. Version 2
+may use an empty list. Success output retains its envelope `schema_version: 1`
+and explicitly reports `record_schema_version` and the checked supporting proof
+relationships. Evidence remains immutable across versions.
+
+## Canonical and declared identities
+
 Each note maps its exact source path and `declared_claim_id` (the actual frontmatter
 value, or null when absent) to the graph API's canonical `claim_id`. A legitimate
 legacy short ID may differ from the canonical ID; neither source renaming nor a
@@ -157,7 +196,8 @@ unregistered collisions fail; the registry bytes remain receipt-bound.
 Markdown has complete explicit non-science dispositions. A nonempty source delta
 is still required. The checker independently inventories discovered Markdown changed by the proposal
 and unchanged notes affected by a changed primary, packet/transitive helper or
-literal declared input. Every such note must appear in `notes`, or have an explicit
+literal declared input. Every such note must appear in `notes`, be a checked
+version-2 supporting proof, or have an explicit
 entry in `non_science_notes` with `path`, a nonempty reviewer `rationale`, and a
 hash-bound absolute `review_reference`. The latter is for reviewed historical or
 non-scientific material, not an automatic directory exemption. Its source bytes

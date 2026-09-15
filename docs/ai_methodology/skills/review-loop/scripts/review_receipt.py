@@ -170,7 +170,13 @@ def memoized_discovery(repo, graph, cache, packet):
 
 
 def check(repo, record, require_cache=False):
-    require(type(record['schema_version']) is int and record['schema_version'] == 1, 'unknown receipt schema version')
+    require(type(record['schema_version']) is int and record['schema_version'] in (1, 2), 'unknown receipt schema version')
+    if record['schema_version'] == 1:
+        require('supporting_proofs' not in record, 'supporting_proofs requires receipt schema version 2')
+        supporting_proofs = []
+    else:
+        supporting_proofs = record['supporting_proofs']
+        require(isinstance(supporting_proofs, list), 'supporting_proofs must be explicit')
     require(isinstance(record['unit_id'], str) and record['unit_id'].strip(), 'unit_id required')
     source = record['source']
     for name in ('base', 'commit', 'tree'):
@@ -299,6 +305,43 @@ def check(repo, record, require_cache=False):
             require(isinstance(item['rationale'], str) and item['rationale'].strip(), 'non-science rationale required')
             evidence(item['review_reference'])
             exempt_paths.add(name)
+        # Current proof fragments belong to an explicitly reviewed claim. They
+        # are scientific inputs, never historical/non-science exemptions.
+        support_paths = set()
+        notes_by_path = {note['path']: note for note in discovered}
+        for item in supporting_proofs:
+            name, owner = item['path'], item['canonical_note']
+            require(name in bound and name not in seen | exempt_paths | support_paths,
+                    'unbound/duplicate supporting proof')
+            path = repo_file(repo, name)
+            require(path in all_notes, 'supporting proof must be discovered Markdown')
+            require(owner in notes_by_path, 'supporting proof owner must be a reviewed canonical note')
+            require(name in categories['runtime'], 'supporting proof must be a bound scientific runtime input')
+            parent = notes_by_path[owner]
+            require(name in parent['citations'], 'supporting proof must be linked by its canonical note')
+            declared_inputs = set()
+            for runner in {parent['primary_runner']} | set(parent['helpers']):
+                declared_inputs.update(cache.declared_input_paths(runner) or ())
+            require(name in declared_inputs, 'supporting proof must be pinned by its canonical runner/helper')
+            body = path.read_text()
+            require(not re.search(r'^\s*(?:claim_id|claim_type|runner|primary_runner):\s*\S+', body, re.M | re.I)
+                    and graph.extract_claim_type_hint(body)[0] is None
+                    and not any(graph.RUNNER_LABEL_RE.search(line) for line in body.splitlines())
+                    and graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix()) is None,
+                    'autonomous claim metadata/runner requires a full note record')
+            cid = graph.claim_id_from_path(path)
+            require(len(ids.get(cid, [])) == 1, 'ambiguous supporting proof ID')
+            for target in graph.LINK_RE.findall(body):
+                if not re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:|#', target) and target.split('#')[0].endswith('.md'):
+                    require(graph.resolve_link_target(target.split('#')[0], path) is not None,
+                            f'unresolved supporting proof citation: {target}')
+            citations = {p.relative_to(repo).as_posix() for p in graph.extract_citations(body, path)}
+            require(isinstance(item['citations'], list) and citations == set(item['citations'])
+                    and citations <= bound.keys(), 'supporting proof citation path/hash mapping mismatch')
+            require(isinstance(item['rationale'], str) and item['rationale'].strip(),
+                    'supporting proof coverage rationale required')
+            evidence(item['review_reference'])
+            support_paths.add(name)
         affected = set()
         for path in all_notes:
             name = path.relative_to(repo).as_posix()
@@ -315,7 +358,7 @@ def check(repo, record, require_cache=False):
                     runner_inputs.update(cache.declared_input_paths(runner) or ())
                 if (runners | runner_inputs) & changed:
                     affected.add(name)
-        require(affected <= seen | exempt_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths)))
+        require(affected <= seen | exempt_paths | support_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths - support_paths)))
         require(exempt_paths <= affected, 'non-science disposition outside affected note closure')
         for name, expected in bound.items():
             require(digest(repo_file(repo, name).read_bytes()) == expected, f'input changed during preflight: {name}')
@@ -329,9 +372,11 @@ def check(repo, record, require_cache=False):
         evidence(reviewer['report'])
         for item in exemptions:
             evidence(item['review_reference'])
+        for item in supporting_proofs:
+            evidence(item['review_reference'])
         for ref in reviewer['references']:
             evidence(ref)
-        return {'schema_version': 1, 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'discovery_cache': discovery_statistics}
+        return {'schema_version': 1, 'record_schema_version': record['schema_version'], 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'supporting_proofs': supporting_proofs, 'discovery_cache': discovery_statistics}
 
 
 def main():

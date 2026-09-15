@@ -301,6 +301,9 @@ Prefer one canonical unit record with immutable evidence references and
 generated handoff/status summaries over several manually repeated packets.
 For new units, use the versioned schema in `references/UNIT_RECEIPT.md` and
 `scripts/review_receipt.py` for shared preflight against actual repository APIs.
+Current proof fragments that belong to a canonical claim use the version-2
+`supporting_proofs` relationship, with full scientific review and owner input
+pins; they are never non-science exemptions.
 Run the cheap source/publication/input checks before final execution, then the
 cache check against the final frozen evidence. Keep reviewer reports immutable;
 adapt an older valid record once with its original hashes and explicit mappings,

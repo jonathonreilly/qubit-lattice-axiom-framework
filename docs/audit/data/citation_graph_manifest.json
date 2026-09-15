@@ -1,6 +1,6 @@
 {
- "edge_count": 13395,
- "node_count": 5829,
+ "edge_count": 13397,
+ "node_count": 5830,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -752,6 +752,10 @@
   },
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",
+   "out_degree": 2
+  },
+  "admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_carries_the_lattice_green_function_infrared_and_bogoliubov_bounds_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "d0249e15a42a",
    "out_degree": 2
   },
   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {

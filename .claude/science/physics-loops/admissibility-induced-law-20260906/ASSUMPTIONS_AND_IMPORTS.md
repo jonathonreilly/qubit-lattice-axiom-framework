@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 19 (2026-09-15) — the Green-function channel
+- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 01 (on `main`; the static reading). Proposed, unaudited. PRs #8147 and #8151 referenced for context.
+- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading; the exponential overlap `e^{βt}` with `β` supplied; the torus of even side.
+- Scaffolding: the `4³` and `6×4×4` tori for the identities; the wavevectors `(π/2,0,0)`, `(π/2,π/2,0)`, `(π/3,0,0)`; the generator about `e_2` (and `e_1` in the refuting pass).
+- Standard mathematical imports at definition level: the Legendre expansion of a smooth function and the addition theorem; the unitarity of the discrete torus transform; integration by parts for the divergence-free rotation field on the sphere (executed for polynomials).
+- References named, not used: Fröhlich–Simon–Spencer; Fröhlich–Israel–Lieb–Simon; Mermin; Biskup.
+- Counterfactual pass: an overlap without Legendre positivity (no bond-plane reflection positivity); the Born overlap (positive but not of Gaussian form; the twist argument does not apply as written); a discrete menu (no rotation generator; no Bogoliubov bound — block 17's case); the formation reading (parabolic; block 13).

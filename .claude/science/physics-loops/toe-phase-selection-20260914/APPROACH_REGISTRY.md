@@ -1,3 +1,22 @@
+# Block22 update — 2026-09-15 04:52UTC
+
+- Exact full-rank image/Fourier duality: already present in prior blocks; no
+  new result claimed for its re-derivation.
+- Multivariate integer component mass and physical bad-cluster estimates:
+  new private proposed use of the centered bound; finite checks passed.
+- Integer cubical contraction and infinite local sum: proposed physical
+  Bianchi repair preserving all integer Wilson characters and clock aliases.
+- Finite-energy environment codes: proposed almost-sure covariant frame with
+  quantitative probability locality; no full-domain or native-law claim.
+- Positive physical-residue polymer law and universal loss-network proposals:
+  new same-model control. Free-boundary validity mismatch was identified and
+  corrected; finite geometry and exact-law checks passed.
+- Long-distance repaired-flux response: exact closure plus summable covariance
+  yields zero integrated covariance in that specified control regime. Other
+  phases and nonlocal observables remain outside this conclusion.
+
+---
+
 # Active proof registry
 
 The initial seven-family portfolio and stop/reopen conditions are in

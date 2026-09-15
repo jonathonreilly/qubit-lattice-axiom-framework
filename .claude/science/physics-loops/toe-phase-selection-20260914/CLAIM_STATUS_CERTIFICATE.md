@@ -1,3 +1,24 @@
+# Block22 current author certificate — 2026-09-15 04:52UTC
+
+actual_current_surface_status: open
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Proposed constructive probability theorems for an explicit supplied finite-clock Villain law; cold proof checks and public conformance remain incomplete."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
+No independent review or audit verdict is stated. The approved structural
+kinetic primitive, units primitive and realized-state evaluation primitive
+retain their registered roles. The selected law, parameters, Gibbs state and
+physical observable/time matching remain additional model inputs or bridges.
+The positive large-beta control is not promoted to an all-parameter no-go.
+
+---
+
 # Current block22 author status
 
 actual_current_surface_status: open

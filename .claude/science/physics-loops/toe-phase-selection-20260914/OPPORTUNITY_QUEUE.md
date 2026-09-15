@@ -1,3 +1,38 @@
+# Current opportunity ranking — 2026-09-15 04:52 UTC
+
+Current main:5deabeb698a27c2c3f68c5df685af2521ef15307, freshly fetched.
+All current block22 results are personal proof proposals awaiting independent
+review. The extended campaign deadline remains13:30:44UTC.
+
+1. **Actual three-state penalty-Hamiltonian phase.** The new isotropic-clock
+   control has short-range correlations even with a covariant closed-flux
+   repair. The Hamiltonian's separate principal-defect penalty can alter that
+   phase. Its exact neutral-sector kinetic operator and finite-penalty normal
+   form are already available as proposals; the missing sector-energy and
+   infrared-response estimates remain high-value. Read the previous failed
+   sector comparisons before specifying a new mechanism. Do not repeat tiny
+   boxes as a substitute for a volume-uniform estimate.
+2. **Fixed-clock Coulomb-regime Gaussian response.** Direct full-rank duality
+   is already prior support, contrary to the earlier ranking below. The new
+   component/local-repair theorem does not supply stiffness. A useful new
+   route must control the quantized coupled source or a nonzero infrared
+   covariance in a genuine candidate Coulomb regime. Conditional-coset
+   Gaussianity alone still leaves its mean/covariance mixture uncontrolled.
+3. **Native formation/law.** The current axioms and approved primitives do
+   not choose the probability law used in these models. A full-domain local
+   construction or specific axiom-compatible countermodel could add evidence;
+   generic underdetermination and supplied DAG compilation are prior work.
+4. **Charged matter.** A finite-energy transported charged sector with
+   uniform long-distance control remains a separate physical bridge. Test
+   sources and Wilson identities alone do not establish this sector.
+
+Before pivoting, finish the cold probability/geometry check of block22 and
+preserve its construction and positive control. A coherent public milestone
+may follow if review readiness and value are established; private snapshots
+are already useful recovery artifacts and do not force an extra PR.
+
+---
+
 # Current opportunity ranking — 2026-09-15 03:43 UTC
 
 Current main is5deabeb698a27c2c3f68c5df685af2521ef15307. The latest planning

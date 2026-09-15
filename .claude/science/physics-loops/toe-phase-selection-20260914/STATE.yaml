@@ -14,22 +14,23 @@ research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
 block: 22
-active_route: fixed_clock_defect_localization_and_covariant_physical_flux_repair
+active_route: fixed_clock_flux_repair_and_large_beta_score_control
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Check the physical principal-flux repair and construct a state-dependent covariant choice of local integer
-  filling from finite-energy clock data. Continue the coupled fixed-N Gaussianity search or re-rank to another substantive
-  target through2026-09-15 13:30:44UTC.
+next_action: Finish cold checking block22 large-beta clock control and its probability construction; then personally
+  attack the actual N=3 penalty-Hamiltonian phase with a materially new comparison, preserving all scope differences.
+  Continue through2026-09-15 13:30:44UTC.
 strongest_unresolved_obligation: A fixed-beta, fixed-clock full physical-score Gaussian limit; the actual N=3 Hamiltonian
   phase and native law remain separate open obligations.
-working_result: PR8134 fixed-beta Haar full-score proposal remains pending independent review. Block22 privately derives
-  fixed-clock defect-component mass tails from exact Gaussian domination, a physical principal-flux cluster bound and
-  an explicit local integer repair preserving all clock Wilson characters. Finite sparse algebra and exact small clock
-  probability checks passed. This does not yet establish fixed-clock Gaussianity or a native physical law.
+working_result: PR8134 remains pending independent review. Block22 privately proposes fixed-clock component-mass
+  localization, integer physical flux repair, and an almost-sure covariant frame selected from the original Gibbs
+  environment. A separate positive polymer/loss-network derivation proposes a strictly positive white-noise physical-score
+  limit and zero repaired-flux limit for the same N=3 isotropic law at beta>=20. Finite geometry, exact finite laws,
+  controlled Villain sums and frame fixtures pass author checks; cold proof review and public conformance are incomplete.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

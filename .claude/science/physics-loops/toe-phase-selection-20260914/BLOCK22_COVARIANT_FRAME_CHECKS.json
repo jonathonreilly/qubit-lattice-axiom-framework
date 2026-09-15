@@ -1,0 +1,79 @@
+{
+  "status": "private finite author checks; independent review pending",
+  "actual_N3_fixture": {
+    "candidates": 15360,
+    "origin_vertices": 20,
+    "minimum_ties": 1,
+    "certifying_prefix_radius_upper": 3,
+    "origin": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "frame": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "conjugation_sign": 1
+  },
+  "covariance_cases": [
+    {
+      "case": 0,
+      "external_determinant": 1,
+      "external_charge_conjugation": 1,
+      "minimum_prefix_radius_upper": 3
+    },
+    {
+      "case": 1,
+      "external_determinant": 1,
+      "external_charge_conjugation": -1,
+      "minimum_prefix_radius_upper": 3
+    },
+    {
+      "case": 2,
+      "external_determinant": 1,
+      "external_charge_conjugation": 1,
+      "minimum_prefix_radius_upper": 3
+    },
+    {
+      "case": 3,
+      "external_determinant": -1,
+      "external_charge_conjugation": -1,
+      "minimum_prefix_radius_upper": 3
+    }
+  ],
+  "comparison_geometry": {
+    "signed_permutation_v_orbit": 384,
+    "pair_geometries": 1151,
+    "code_radius": 16384,
+    "component_mass_budget": 4,
+    "comparison_sites": 65,
+    "max_conflict_degree_seen": 0,
+    "minimum_independent_comparisons": 65,
+    "proof_degree_bound": 8,
+    "proof_independent_lower": 1.7777777777777777
+  }
+}

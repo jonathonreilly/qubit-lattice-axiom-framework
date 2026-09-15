@@ -1,3 +1,47 @@
+# Current checkpoint — 2026-09-15 04:52 UTC
+
+Continue personally without subagents through **2026-09-15 13:30:44UTC**.
+Current main is unchanged at5deabeb698a27c2c3f68c5df685af2521ef15307 after
+fresh fetch. The local physics-loop skill matches that revision byte-for-byte.
+Campaign commit1113b5f0e1 is pushed. The new work below is being checkpointed;
+there is no additional PR or independent review yet.
+
+Block22 now adds an environment-selected integer repair for oddN>=3. The
+finite-energy bound rules out exact affine/sign coding ties almost surely;
+the chosen frame transforms with the configuration. A quantitative comparison
+argument gives exponential finite-window approximation in every finite Lp.
+The code checks15360 candidate frames on an actual N3 fixture, four transformed
+fixture reruns and1151 comparison geometries. These remain finite author
+falsifiers, not proof of the infinite-state statement.
+
+BLOCK22_LARGE_BETA_CLOCK_CONTROL.md gives a proposed positive loss-network
+proof of exponential bulk correlations for a specified fixed-clock regime.
+AtN3,beta>=20 the physical score has a strictly positive white-noise scaling
+limit; the repaired closed flux has a zero scaling limit. Its local variance
+witness uses30 original links, changes11 plaquettes, and has106 incident
+interaction plaquettes. Their coordinate bounds prove disjoint interactions
+at spacing8. Exact finite-law enumeration and controlled image sums passed.
+A free4-cube witness exposed the need for separate finite/infinite closure
+filters on common universal proposals; the proof now includes that correction.
+
+This is a scoped coexistence construction, not a no-go for the actual
+principal-penalty Hamiltonian, other clock parameters, or the axioms. General
+negative claims are not ready for publication and no N-gate PASS is recorded.
+The no-go skill and PR conformance spec were read at current main. The latter's
+old Status-line tokens conflict with the owning physics-loop author-status
+contract; the owning contract remains controlling, as in earlier milestones.
+The new files are private research snapshots, not canonical audit caches.
+
+Next: complete the probability-proof cross-check using the primary
+Fernandez-Ferrari-Garcia paper, then re-enter the actual N3 Hamiltonian phase
+only through a new substantive mechanism. Public packaging remains selective.
+The latest100 open-PR metadata entries were saved as a limited snapshot; none
+has an update after03:43UTC. This is not a full open-PR intake or source-read
+claim. Targeted landed searches found no matching flux-repair/loss-network
+statement; unrelated lexical hits are recorded separately.
+
+---
+
 # Current checkpoint — 2026-09-15 04:17 UTC
 
 Continue personally, without subagents, through **2026-09-15 13:30:44UTC**.

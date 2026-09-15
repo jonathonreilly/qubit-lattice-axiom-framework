@@ -22,6 +22,19 @@
         "SectionsV-VI and portionVII; extracted lines770-1020,1070-1440"
       ],
       "scope": "Two-defect representation and explicit limits of the low-density argument are context. No rigorous Gaussian-limit theorem imported."
+    },
+    {
+      "title": "Fernandez-Ferrari-Garcia, Loss network representation of Peierls contours, Annals of Probability29(2001)902-937",
+      "source_url": "https://webspace.science.uu.nl/~ferna107/papers/ferfergar-aop.pdf",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/fernandez-ferrari-garcia-2001.pdf",
+      "sha256": "fb1a2a28d612b1543867d518422ee4bbfaaf28a74eee74db0d1765d902f578fd",
+      "reading_this_block": [
+        "Introduction via web extraction, lines0-156",
+        "pypdf text lines604-770: section3.4 and start proof3.1",
+        "pypdf text lines890-1124: stationary construction remarks and theorem4.1",
+        "pypdf text lines1725-1830: branching comparison, mean offspring and lemma5.1"
+      ],
+      "scope": "Targeted primary reading; not a full-paper read. Classical method attribution and cross-check. Own direct weighted-path proof and finite/infinite domain validity filters remain the proof here. No unverified Ising theorem imported. PDF screenshot request did not produce a usable check; no visual-formula verification claimed."
     }
   ]
 }

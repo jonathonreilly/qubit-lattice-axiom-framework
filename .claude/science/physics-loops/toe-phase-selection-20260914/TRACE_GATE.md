@@ -1,3 +1,21 @@
+# Block22 current trace — 2026-09-15 04:52UTC
+
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Determine whether the actual fixed-clock flux has a nonzero long-distance Maxwell response."
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Check the localized repair and same-model large-beta control; seek actual candidate-phase stiffness."
+
+The private construction supplies an integer, gauge-invariant physical flux
+representative and an almost-sure covariant version. The control identifies
+one explicit supplied-law regime in which the score limit is white and the
+repaired flux limit is zero. Neither result settles the penalty-Hamiltonian
+phase or selects a native law. Independent review remains pending.
+
+---
+
 # Current block22 trace
 
 ```yaml

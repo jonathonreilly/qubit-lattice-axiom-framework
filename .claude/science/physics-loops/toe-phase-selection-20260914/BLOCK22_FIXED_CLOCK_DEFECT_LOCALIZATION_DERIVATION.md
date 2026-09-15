@@ -10,10 +10,14 @@ The minimum framework premises are Lattice, Qubit, Admissibility and Record,
 as stated in docs/MINIMAL_AXIOMS_2026-06-29.md at main
 5deabeb698a27c2c3f68c5df685af2521ef15307. The approved primitive registry at
 that revision contains minimal_axioms, scale_reference_primitive,
-kinetic_isotropy_primitive and realized_state_primitive. None supplies the
-Villain law, a clock order, coupling, four-dimensional Euclidean carrier,
-Gibbs state, temporal metric or physical photon identification used below.
-Those are explicit downstream mathematical model inputs. No new axiom,
+kinetic_isotropy_primitive and realized_state_primitive. The approved kinetic
+primitive fixes structural space/time graining for the identified regulator;
+the scale primitive fixes units and the realized-state primitive permits
+pointwise evaluation. The Villain probability law, clock order, coupling,
+selected Gibbs measure and physical photon identification are additional
+downstream inputs or open bridges. The proof uses a four-dimensional Euclidean
+cubic model consistent with that structural graining, without deriving its
+identification with native formed records. No new axiom,
 primitive, selected parameter or empirical target value is introduced.
 
 The exact full-rank image/Fourier duality is already in blocks7,10–12 and18.
@@ -145,8 +149,14 @@ The Fourier electric current is
  a=D^T m/N in Z^edges, d0^T a=0.
 
 Equation(2) for X and its Fourier analogue for m give covariance proxies
-BB^T/(4pi²beta) and beta D^T D/N² respectively. The finite cubic Hodge
-bound is ||B||²,||D||²<=16. Consequently(4) holds with
+BB^T/(4pi²beta) and beta D^T D/N² respectively. The finite cubic Hodge bound
+is ||B||²,||D||²<=16. To see the uniformity at free boundaries, write the
+cubical complex as the graded tensor product of four finite interval
+complexes. Each one-dimensional incidence has norm at most two. The
+anticommutation of derivatives in different directions cancels the cross
+terms in dd*+d*d, leaving a sum of four nonnegative interval Hodge
+Laplacians, each bounded by four. Each d*d is bounded by the degree-specific
+Hodge Laplacian. Consequently(4) holds with
 
  v_m=4/(pi²beta),
  v_e=16beta/N²=4/(pi²beta_dual),
@@ -161,7 +171,7 @@ applies separately to both exact marginals when
  392 exp[-pi²beta_dual/16]<1.                           (9)
 
 These are sufficient conservative conditions, not critical couplings.
-The one-species threshold is16 log392/pi², about9.681. Fixed N and beta can
+The one-species threshold is16 log392/pi², about9.680. Fixed N and beta can
 satisfy both. This controls connected defect mass in each positive marginal;
 it does not remove either gas or their phase coupling in the partition
 function. It does not assert a joint positive gas of both species.

@@ -9,9 +9,9 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 1
+block: 2
 current_target: fixed-finite-clock full physical electromagnetic field scaling
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T14:37:00.232034+00:00'
-next_step: weighted source response or alternative exact generator; unweighted small-rate shortcut rejected
+last_checkpoint_utc: '2026-09-15T15:13:27.611297+00:00'
+next_step: signed orientation networks with physical-energy reserves; preserve actual compatibility and source

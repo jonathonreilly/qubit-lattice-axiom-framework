@@ -88,3 +88,37 @@ mean pair-weight bound. Its derivative-weighted residual remains open.
 Original clock source checks verify moments and the integrated jump identity
 to 5.13e-14 and 2.33e-16 relative error respectively. These are exploratory
 identities and method diagnostics, not a model/axiom wall or a full-field proof.
+
+## Block 2: phase periodicity and physical energy reserves
+
+The logistic alternative rates b_v=c_v^2/(1+c_v^2) preserve the same law and
+are bounded; every positive integer moment is bounded by their small mean.
+This removes the exponential-rate L2 anomaly but does not supply response
+or mixing. The note is preserved without promoting it as a field theorem.
+
+Completed a personal assumptions/literature/mathematics reframe. The new
+usable mechanism is to write the mixed phase as c<n,PS> at an electric root
+and as -c<Qn,S> at a magnetic root. Their difference is exactly 2pi times
+an integer. Each even mixed bond integral is therefore bounded by the
+root's physical Coulomb energy times the other species' filling frame norm.
+The all-shape infinite-lattice half-activity moments give explicit reserve
+inequalities, with 4*x*M_half(2)<0.006 for x>=2048. Fixed beta=64,N=512 is
+one example satisfying both sufficient inequalities. This controls even
+mixed bonds, not the actual full gas or its parameter window.
+
+The new checker constructs exact incidence and rational projections itself.
+It verifies both roots, integer gauge changes of fills, and a negative
+control with half-integral N. On a contractible chain of four four-cubes,
+two compatible components of each species give a mixed orientation average
+-0.4564196014534977; the product of pair cosines is only -0.3625533208193221.
+The surviving four-sine cycle contributes -0.09386628063417557. Same-species
+factors are deliberately excluded from this identity diagnostic and remain
+part of the full physical law. A redundant dense rational rank calculation
+was interrupted and replaced by trace of the already verified idempotent;
+source and execution record are preserved. No tolerance change.
+
+Next: signed cycle/network summation with actual compatibility and physical
+sources. Unrestricted linear cycles admit operator-trace control; check
+distinct-component and hard-core restrictions before using that control.
+They can remove cancellations, so trace positivity cannot simply be imposed
+on the restricted sum. The deadline is still 2026-09-16 01:45:03 UTC.

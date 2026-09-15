@@ -38,3 +38,34 @@ repulsive examples and the two-coordinate convex exception. General algebra
 applies to commuting jump moves; model-specific entropy/mixing examples do
 not match. Re-read Haar full-score sections1-4 and preconditioned Gaussian
 remainder sections1-4 against current pinned main. No new independent review.
+
+Freshness update: origin/main was observed at
+5aca149c42debb7b0adaa2e9d1a374af4c5d4b78 after a concurrent fetch race.
+The campaign base is unchanged. The relevant finite-clock, Haar, coupled,
+magnetic and preconditioned science notes have no changed bytes against
+the campaign base. Minimal axioms, premise registry, SCIENCE_WORKFLOW,
+exercise skill and physics-loop skill are unchanged. Review-loop source
+and references/tooling have changed; read current opening, premise-authority
+and claim-boundary sections. This does not start a review/landing operation.
+
+Exercise refresher: read framework-refresher command, skill freshness and
+primitive classification procedures, scale-reference note; re-read minimal
+axioms, kinetic-isotropy and realized-state notes completely. Read relevant
+controlled vocabulary for claim status, proof search, independence and prose.
+No editable prompt, primitive, axiom or audit-status file changed.
+
+Re-read prior block27 parity/quadratic, source probe, one-sided large-field,
+all-component coefficient and free-boundary limit notes at its final commit,
+and block22 fixed-clock localization. A fresh combined read of the physical
+source/mixed-pair note was truncated; no new full-read claim for that output.
+
+Read Lohmann arXiv1411.1107v1 introduction and Theorem 1 with Remarks 2-3.
+The actual theorem assumes positive real inverse covariance, an exponentially
+weighted covariance bound and small analytic interaction norms. It is a
+single-scale template, not a uniform massless coupled-clock theorem.
+Downloaded original arXiv HTML to the temporary literature directory.
+Read Borsten-Kim arXiv2507.10459v2 introduction, section III.2 tail and
+section IV. The key duality/phase discussion modifies the law by restricting
+monopoles; its finite-mass extension is qualitative. No import to the
+unmodified fixed-clock full-field target. Bibliographic search of spectral
+Ising/zero-free methods is new routing only; full hypotheses still unread.

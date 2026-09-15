@@ -10,3 +10,12 @@
 Earlier one-sided complex Gaussian absolute majorant and indiscriminate absolute
 Riesz-kernel bounds failed on explicit controls. They are not new attack routes
 unless their norm, representation or large-field decomposition changes.
+
+Block 2 update: F1 has a bounded logistic-rate variant with the same invariant
+law, but no response theorem. F2 has a new physical-energy bound at both roots
+of an even mixed bond, using different integral-equivalent phase representatives.
+All-shape half-activity reserves satisfy explicit smallness inequalities. This
+is a new local mechanism; the all-order target remains open because orientation
+cycles, same-species interactions, support compatibility and sources remain.
+F4's inspected complex cluster theorem requires exponential covariance decay;
+it can only be considered after a matching scale decomposition is supplied.

@@ -1,6 +1,6 @@
 {
  "edge_count": 13235,
- "node_count": 5665,
+ "node_count": 5667,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1161,6 +1161,14 @@
   "ai_methodology.skills.review-loop.preflight": {
    "deps_hash": "0cc007ced687",
    "out_degree": 1
+  },
+  "ai_methodology.skills.review-loop.references.operations": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "ai_methodology.skills.review-loop.references.unit_receipt": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "ai_methodology.skills.review-loop.skill": {
    "deps_hash": "17c1a6867e99",

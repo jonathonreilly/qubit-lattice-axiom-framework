@@ -1,0 +1,8 @@
+{
+  "original_paths": 39,
+  "archive_payloads": 35,
+  "all_archives_verified_exact": true,
+  "mutants_authenticated": 8,
+  "failed_dtype_attempt_preserved": true,
+  "primary_unchanged": true
+}

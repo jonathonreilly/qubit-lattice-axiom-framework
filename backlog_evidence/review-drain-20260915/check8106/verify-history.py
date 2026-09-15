@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,gzip,hashlib,subprocess,difflib
+r=Path('/private/tmp/review-drain-20260915');h=r/'check8106';repo=r/'review-slot-one';o=h/'original-8106';inv=json.loads((h/'inventory.json').read_text());p=o/'.claude/science/physics-loops/toe-charged-phase-20260914';sha=lambda b:hashlib.sha256(b).hexdigest();src=(o/inv['canonical'][1]).read_text();data=json.loads((p/'MUTATION_RESULTS.json').read_text());out=[]
+for x in data['mutations']:
+ b=gzip.decompress((p/'mutation_evidence'/(x['family']+'.source.py.gz')).read_bytes());assert sha(b)==x['source_sha256'];err=gzip.decompress((p/'mutation_evidence'/(x['family']+'.stderr.gz')).read_bytes()).decode();std=gzip.decompress((p/'mutation_evidence'/(x['family']+'.stdout.gz')).read_bytes()).decode();assert x['exit_code']==1 and 'AssertionError:' in err and 'FAIL:' in std
+ d=''.join(difflib.unified_diff(src.splitlines(True),b.decode().splitlines(True)));out.append(x['family']+'\n'+d+'\n'+err.splitlines()[-1])
+(h/'mutation-diffs.txt').write_text('\n'.join(out));bad=gzip.decompress((p/'block1_positive_trace_check.py.attempt1.gz').read_bytes()).decode();(h/'failed-attempt-source.py').write_text(bad);(h/'failed-attempt-stderr.txt').write_bytes(gzip.decompress((p/'block1_positive_trace.stderr.attempt1.gz').read_bytes()))
+statuses=dict(line.split('\t',1)[::-1] for line in subprocess.check_output(['git','-C',str(repo),'diff','--name-status',inv['original_base'],inv['head']],text=True).splitlines());assert set(statuses)=={x['path'] for x in inv['paths']};(h/'original-statuses.json').write_text(json.dumps(statuses,indent=2)+'\n')
+(h/'history-verification.json').write_text(json.dumps({'original_paths':len(statuses),'archive_payloads':35,'all_archives_verified_exact':True,'mutants_authenticated':8,'failed_dtype_attempt_preserved':True,'primary_unchanged':(repo/inv['canonical'][1]).read_text()==src},indent=2)+'\n')

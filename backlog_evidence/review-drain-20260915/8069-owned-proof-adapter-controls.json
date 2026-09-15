@@ -1,0 +1,44 @@
+[
+  {
+    "case": "actual",
+    "passed": true,
+    "owned": [
+      {
+        "canonical_note": "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+        "source_path": "docs/work_history/repo/review_feedback/pr8069-evidence/kept/pr8069-DERIVATION-f9d5127d8f8900b1.md",
+        "sha256": "9364f887a0ab254abcd1433d3ee621055d711d385d2c8f6e3c8621c21af82f79",
+        "unit_record": "8069-unit-final-v2.json",
+        "unit_record_sha256": "1a9625756fb7e0e9bb8d455537c4cbb7d418110896f203c4280106096182034d",
+        "review_reference": {
+          "path": "/private/tmp/review-drain-20260915/review-8069.json",
+          "sha256": "06350370943937d20681d68c981a8a159994eaf04cdab4877474841f1babddf3"
+        },
+        "role": "Current proof owned by this canonical claim; not an autonomous graph parent."
+      }
+    ]
+  },
+  {
+    "case": "wrong_owner",
+    "passed": false,
+    "exception": "AssertionError",
+    "message": "('proof owner mismatch', 'docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md')"
+  },
+  {
+    "case": "hash",
+    "passed": false,
+    "exception": "AssertionError",
+    "message": "('review evidence drift', '8069-unit-final-v2.json')"
+  },
+  {
+    "case": "unbound_report",
+    "passed": false,
+    "exception": "AssertionError",
+    "message": "('unbound proof review', 'docs/work_history/repo/review_feedback/pr8069-evidence/kept/pr8069-DERIVATION-f9d5127d8f8900b1.md')"
+  },
+  {
+    "case": "missing_ordinary",
+    "passed": false,
+    "exception": "AssertionError",
+    "message": "('declared dependency missing', 'native_certified_local_green_scalars_note_2026-09-09', ['native_infinite_star_node_reduction_note_2026-09-09', 'native_zero_penalty_optimal_flux_dispersion_note_2026-09-08', 'work_history.repo.review_feedback.pr8069-evidence.kept.pr8069-derivation-f9d5127d8f8900b1', 'ordinary_missing_claim'], ['native_zero_penalty_optimal_flux_dispersion_note_2026-09-08', 'native_infinite_star_node_reduction_note_2026-09-09'])"
+  }
+]

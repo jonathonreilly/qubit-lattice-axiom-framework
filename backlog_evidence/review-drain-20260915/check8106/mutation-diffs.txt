@@ -1,0 +1,184 @@
+positive_trace
+--- 
++++ 
+@@ -84,7 +84,7 @@
+                     weight = K[end, qs[-1]]
+                     for j in range(M - 1):
+                         weight *= K[qs[j + 1], qs[j]]
+-                    val = weight * abs(detplus) ** 2 / N ** 2
++                    val = weight * detplus ** 2 / N ** 2
+                     terms.append(val)
+                     bad = detplus * np.linalg.det(np.eye(2) + R @ B.conjugate())
+                     badcomplex = max(badcomplex, abs(bad.imag))
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_positive_trace]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: positive_trace assertion from exploratory source line 63
+charge_interaction
+--- 
++++ 
+@@ -136,7 +136,7 @@
+     out = []
+     for M in [1, 2, 3]:
+         dt = beta / M
+-        theta = np.arccos(np.exp(-dt * u / 2))
++        theta = np.arccos(np.exp(-dt * u))
+         A = [expm(-dt * h) for h in hs]
+         K = expm(-dt * tel * (2 * np.eye(N) - X - X.T))
+         for j in range(2):
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_charge_interaction]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: charge_interaction assertion from exploratory source line 20
+clock_rotor
+--- 
++++ 
+@@ -208,7 +208,7 @@
+                 cols.append(i)
+                 vals.append(z)
+         for i, (a, b, e) in enumerate(basis):
+-            lam = lambda n: g * g * N * N / (2 * math.pi ** 2) * math.sin(math.pi * n / N) ** 2 if cyclic else g * g * n * n / 2
++            lam = lambda n: g * g * N * N / (math.pi ** 2) * math.sin(math.pi * n / N) ** 2 if cyclic else g * g * n * n / 2
+             add(i, (a, b, e), sum((lam(v) for v in e)) + kappa)
+             for orient in [-1, 1]:
+                 add(i, (a, b, tuple((v + orient for v in e))), -kappa / 2)
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_clock_rotor]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: clock_rotor assertion from exploratory source line 61
+fourier_pairing
+--- 
++++ 
+@@ -269,7 +269,7 @@
+         h = np.zeros((4, 4), complex)
+         for i in range(4):
+             j = (i + 1) % 4
+-            z = np.exp(1j * phi) if i == 3 else 1
++            z = 1
+             h[i, j] = z
+             h[j, i] = z.conjugate() if hasattr(z, 'conjugate') else z
+         return h
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_fourier_pairing]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: fourier_pairing assertion from exploratory source line 23
+wilson_fock
+--- 
++++ 
+@@ -354,7 +354,7 @@
+         for q in range(N):
+             h = r * np.block([[onsite, hop * om ** q], [hop.conj().T * om ** (-q), onsite]])
+             hs.append(h)
+-            blocks.append(second_quantize(np.block([[h, np.zeros((4, 4))], [np.zeros((4, 4)), h.conjugate()]])))
++            blocks.append(second_quantize(np.block([[h, np.zeros((4, 4))], [np.zeros((4, 4)), h]])))
+         charges = []
+         valid = []
+         for f in range(256):
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_wilson_fock]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: wilson_fock assertion from exploratory source line 40
+generator_bound
+--- 
++++ 
+@@ -431,7 +431,7 @@
+             Hw = w[:, None] * H / w[None, :]
+             skew = (Hw - Hw.conj().T) / 2j
+             actual = np.max(abs(eigvalsh(skew)))
+-            bound = 2 * J * np.sinh(lam)
++            bound = 0.25 * J * np.sinh(lam)
+             require(actual <= bound + 1e-12, 'generator_bound assertion from exploratory source line 19')
+             t = 0.61
+             state = expm(-1j * t * H) @ psi
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_generator_bound]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: generator_bound assertion from exploratory source line 19
+plaquette_trace
+--- 
++++ 
+@@ -546,7 +546,7 @@
+                     if M == 2:
+                         scalar *= np.prod([K[q1[l], q0[l]] for l in range(V)]) * weights[i1]
+                         B = A[i1] @ B
+-                    total += scalar * abs(np.linalg.det(np.eye(V) + R @ B)) ** 2 / N
++                    total += scalar * abs(np.linalg.det(np.eye(V) + R @ B)) ** 2 / N ** V
+         require(abs(direct - total) < 2e-10 * abs(direct), 'plaquette_trace assertion from exploratory source line 62')
+         out.append({'M': M, 'flux_CAR_trace': direct.real, 'positive_history_trace': total, 'relative_difference': abs(direct - total) / abs(direct)})
+         if M == 1:
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_plaquette_trace]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: plaquette_trace assertion from exploratory source line 62
+antiunitary_pairing
+--- 
++++ 
+@@ -597,7 +597,7 @@
+     parity = np.diag([(-1) ** n.bit_count() for n in range(2 ** (2 * m))])
+     h = np.array([[0.31, 0.4 + 0.7j], [0.4 - 0.7j, -0.62]])
+     hn = sum((h[i, j] * cs[i].conj().T @ cs[j] + h[i, j].conjugate() * cs[i + m].conj().T @ cs[j + m] for i in range(m) for j in range(m)))
+-    create = sum((cs[i].conj().T @ cs[i + m].conj().T for i in range(m)))
++    create = cs[0].conj().T @ cs[1].conj().T
+     pair = 0.23 * (create + create.conj().T)
+     metrics = {'fock_antiunitary_square_parity_error': np.linalg.norm(f @ f.conjugate() - parity), 'normal_antiunitary_error': np.linalg.norm(f @ hn.conjugate() @ f.conj().T - hn), 'pair_antiunitary_error': np.linalg.norm(f @ pair.conjugate() @ f.conj().T - pair), 'pair_charge_commutator': np.linalg.norm(Q @ pair - pair @ Q), 'pair_number_commutator': np.linalg.norm(nt @ pair - pair @ nt)}
+     for phi in [0.3, 1.7]:
+@@ -610,7 +610,7 @@
+ 
+ 
+ def main():
+-    checks = [check_positive_trace, check_charge_interaction, check_clock_rotor, check_fourier_pairing, check_wilson_fock, check_generator_bound, check_plaquette_trace, check_antiunitary_pairing]
++    checks = [check_antiunitary_pairing]
+     for fn in checks:
+         fn()
+         print("PASS:", fn.__name__, flush=True)
+
+AssertionError: antiunitary_pairing assertion from exploratory source line 43

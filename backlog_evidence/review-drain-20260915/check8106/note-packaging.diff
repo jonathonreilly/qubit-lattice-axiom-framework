@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -24,7 +24,7 @@
+ 
+ **Runner:** [self-contained primary runner](../scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py).
+ **Receipt:** [canonical execution cache](../logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt).
+-**Recovery and review:** [campaign handoff](../.claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md).
++**Recovery and review:** [campaign handoff](work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md).
+ 
+ ## Premises, imports and proof obligations
+ 

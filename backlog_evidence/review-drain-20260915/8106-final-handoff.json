@@ -1,0 +1,34 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "tree": "9d6a6e52260f9ca3c3eb83c126b3056876b3d0eb",
+  "mechanical_status": "ok",
+  "reused_original_primary_cache": true,
+  "new_primary_executions": 0,
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8106-final.json",
+      "sha256": "3146774aaa77020f5af8764ffc61983692bf40ba801e6fc4bd5b2b5eec3efbba"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8106-unit-v1-final.json",
+      "sha256": "b7fdf3ab566884a3c697b6cada031836b39f53aa0ff711910d5586111d239c94"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8106.md",
+      "sha256": "7dd697b06ef3603327dceff180d4a643692207354cddf61199d620b29ff8cd7d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8106-final-preflight.json",
+      "sha256": "e1312fb0865dd2c86204adbd4f09355f360d65236abfec3405afb58f8cfff5e1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8106-final-preflight-execution.json",
+      "sha256": "f874508e8ae2dba93d573aa1efe6c323ee7eb915691bda9677268e4e697b0c50"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8106-methodology-identity.json",
+      "sha256": "b6fd4c4a722581c06489b621600fe404c9443e4f2c6c1447e9c9bf31c6383f23"
+    }
+  ],
+  "remaining": "Root combined integration gate."
+}

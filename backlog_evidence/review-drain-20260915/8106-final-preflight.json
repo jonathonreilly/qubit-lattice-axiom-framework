@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8106-final",
+  "tree": "9d6a6e52260f9ca3c3eb83c126b3056876b3d0eb",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "claim_id": "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14",
+      "primary_runner": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+        "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8752,
+      "misses": 4411
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4409
+    },
+    "declared_inputs": {
+      "hits": 8778,
+      "misses": 4542
+    }
+  },
+  "record_sha256": "b7fdf3ab566884a3c697b6cada031836b39f53aa0ff711910d5586111d239c94",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

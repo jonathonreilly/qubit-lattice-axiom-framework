@@ -1,0 +1,17 @@
+{
+  "status": "PASS: bounded local coordinator adapter review",
+  "classification": "The current transform DERIVATION is a load-bearing repository path owned by canonical 8069, not an autonomous claim or audit parent. Existing canonical schema2 receipt correctly retains it in repository_dependencies and supporting_proofs.",
+  "change": "Only explicitly schema2-owned, hash-bound proof graph IDs are excluded from autonomous-parent requirements. Ordinary dependencies remain required.",
+  "controls": "Exact new guard block executed read-only against actual train50 records/source/ledger; positive actual case passed; wrong owner, drifted record hash, unbound review report and missing ordinary dependency each failed closed. No publication/cleanup code executed.",
+  "hashes": {
+    "finish_candidate_proofs.py": "5b48ea48bd30fb7e0ce04533c34e3400ad801fbf0008e64cf6b20832fccec384",
+    "finish_candidate.py": "817bd1862f85b5ca85879a30ac20a42272cc997592aabd532db3c4a72dcb7779",
+    "8069-unit-final-v2.json": "1a9625756fb7e0e9bb8d455537c4cbb7d418110896f203c4280106096182034d",
+    "review-8069.json": "06350370943937d20681d68c981a8a159994eaf04cdab4877474841f1babddf3",
+    "8069-owned-proof-adapter-controls.json": "cbc6f8d512922c3ea3b61a2de20cb79dd700305531df53db0600f815579b4882",
+    "check8076/adapter_control.py": "284029e3d79e60a53e9c61e354a53411af846666d17073aa662f44daebb9be28"
+  },
+  "source_capture_change": false,
+  "scientific_verdict": "Prior 8069 bounded source verdict unchanged; no science re-execution.",
+  "limitations": "Local adapter classification only; existing full gate and final integration checks remain root responsibility."
+}

@@ -1,0 +1,1594 @@
+{
+  "unit": "8106",
+  "reviewer_session": "/root/review_8011",
+  "status": "FINAL_SOURCE_CONFIRMATION",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "source_base": "82c1310accbcfebcba95ff23c06049309c54cc0f",
+  "source_tree": "9d6a6e52260f9ca3c3eb83c126b3056876b3d0eb",
+  "constituents": [
+    {
+      "number": 8106,
+      "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+      "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "canonical": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py"
+      ],
+      "paths": [
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK1_CORRECTIONS.md",
+          "sha256": "28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md",
+          "sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/MUTATION_RESULTS.json",
+          "sha256": "4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/PRIMARY_EXECUTION_RESULT.json",
+          "sha256": "372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/READING_LEDGER.json",
+          "sha256": "43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/REVIEW_HISTORY.md",
+          "sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/STATE.yaml",
+          "sha256": "a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/TRACE_GATE.md",
+          "sha256": "d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stderr.attempt1.gz",
+          "sha256": "92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stdout.attempt1.gz",
+          "sha256": "3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace_check.py.attempt1.gz",
+          "sha256": "5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.source.py.gz",
+          "sha256": "431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stderr.gz",
+          "sha256": "2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stdout.gz",
+          "sha256": "1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.source.py.gz",
+          "sha256": "274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stderr.gz",
+          "sha256": "42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stdout.gz",
+          "sha256": "3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.source.py.gz",
+          "sha256": "ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stderr.gz",
+          "sha256": "24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stdout.gz",
+          "sha256": "807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.source.py.gz",
+          "sha256": "6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stderr.gz",
+          "sha256": "bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stdout.gz",
+          "sha256": "db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.source.py.gz",
+          "sha256": "beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stderr.gz",
+          "sha256": "e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stdout.gz",
+          "sha256": "8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.source.py.gz",
+          "sha256": "ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stderr.gz",
+          "sha256": "ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stdout.gz",
+          "sha256": "a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.source.py.gz",
+          "sha256": "83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stderr.gz",
+          "sha256": "d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stdout.gz",
+          "sha256": "c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.source.py.gz",
+          "sha256": "05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stderr.gz",
+          "sha256": "14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stdout.gz",
+          "sha256": "79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4"
+        },
+        {
+          "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "sha256": "04f1819261cf135b61371e604297f009ec84fa8ccde1432a9fc0297b2797844c"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "55b95b209099153d620ec14ec9ddae74e70494c7c960a1b85b3cf946842b9917"
+        },
+        {
+          "path": "logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt",
+          "sha256": "c30a5e49b11b263d31fc2264b4672c584cc41ed48cea328b038fcf2a542abe66"
+        },
+        {
+          "path": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+          "sha256": "06a754703fc8ddc8538ed4b03255ba626210469b669b25fed42438d5c5d9c6c9"
+        }
+      ]
+    }
+  ],
+  "original_dispositions": {
+    "8106": [
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK1_CORRECTIONS.md",
+        "original_sha256": "28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK1_CORRECTIONS.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce.gz",
+        "final_sha256": "ac1b33747c8cff73c6a1a489ee4d9903bbae177124e230f27056e7cb0e916fd6",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "fb10b5c3b85886378049f2571afa830ac52f4847",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK1_CORRECTIONS.md",
+          "raw_bytes": 1779,
+          "raw_sha256": "28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce",
+          "stored_path": "_objects/28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce.gz",
+          "stored_sha256": "ac1b33747c8cff73c6a1a489ee4d9903bbae177124e230f27056e7cb0e916fd6"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md",
+        "original_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md",
+        "final_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "0d0e231672c510b5fa2d437237de64d5b8c95ab2",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md",
+          "raw_bytes": 2228,
+          "raw_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999",
+          "stored_path": "kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md",
+          "stored_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/MUTATION_RESULTS.json",
+        "original_sha256": "4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/MUTATION_RESULTS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd.gz",
+        "final_sha256": "683ea0ebae26d329cea281d489241cf098617d207c3204307294598f25ca0cb7",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "d3f96e5b4c90d7423e8acb7d374e61490e061c37",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/MUTATION_RESULTS.json",
+          "raw_bytes": 8072,
+          "raw_sha256": "4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd",
+          "stored_path": "_objects/4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd.gz",
+          "stored_sha256": "683ea0ebae26d329cea281d489241cf098617d207c3204307294598f25ca0cb7"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/PRIMARY_EXECUTION_RESULT.json",
+        "original_sha256": "372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/PRIMARY_EXECUTION_RESULT.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1.gz",
+        "final_sha256": "202ee35b6817f4c0bcc3b50fd1627469b348ec048e3a68d49217b12950f03c48",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "31eeec9824685490e7ad06c066b9ab5b1a76badb",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/PRIMARY_EXECUTION_RESULT.json",
+          "raw_bytes": 10541,
+          "raw_sha256": "372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1",
+          "stored_path": "_objects/372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1.gz",
+          "stored_sha256": "202ee35b6817f4c0bcc3b50fd1627469b348ec048e3a68d49217b12950f03c48"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/READING_LEDGER.json",
+        "original_sha256": "43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/READING_LEDGER.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca.gz",
+        "final_sha256": "d13dae997e16218c568fae4b4345b775a129c24365ac3408ac579d9c4d258952",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "525028ff4537240e13e4122f19d5ec295240284a",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/READING_LEDGER.json",
+          "raw_bytes": 2477,
+          "raw_sha256": "43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca",
+          "stored_path": "_objects/43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca.gz",
+          "stored_sha256": "d13dae997e16218c568fae4b4345b775a129c24365ac3408ac579d9c4d258952"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/REVIEW_HISTORY.md",
+        "original_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/REVIEW_HISTORY.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "final_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "8c76e2d5ab35a7a678abcb787e9243aafedf3341",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/REVIEW_HISTORY.md",
+          "raw_bytes": 3593,
+          "raw_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95",
+          "stored_path": "kept/pr8106-REVIEW_HISTORY-3f4cb79c836849bf.md",
+          "stored_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/STATE.yaml",
+        "original_sha256": "a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/STATE.yaml"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995.gz",
+        "final_sha256": "098f729d68695d4f5f558eb48b4751b57fbc9a185396ce0083c2509b9392782d",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b8a730f73d7fe28ed570fb6bf5731bb2d5fc7b0a",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/STATE.yaml",
+          "raw_bytes": 464,
+          "raw_sha256": "a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995",
+          "stored_path": "_objects/a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995.gz",
+          "stored_sha256": "098f729d68695d4f5f558eb48b4751b57fbc9a185396ce0083c2509b9392782d"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/TRACE_GATE.md",
+        "original_sha256": "d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/TRACE_GATE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a.gz",
+        "final_sha256": "12d0bb9c33062b45505b4093ea62f12abb5ae64c9afbd77cb7b7b68fc72febf5",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c9a9d154fae2da55b72f359b8c1872c902fab959",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/TRACE_GATE.md",
+          "raw_bytes": 1003,
+          "raw_sha256": "d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a",
+          "stored_path": "_objects/d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a.gz",
+          "stored_sha256": "12d0bb9c33062b45505b4093ea62f12abb5ae64c9afbd77cb7b7b68fc72febf5"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stderr.attempt1.gz",
+        "original_sha256": "92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stderr.attempt1.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066.gz",
+        "final_sha256": "6fce321d481e7d69be83acdedcc5be451bbfdf392730b92fdde1e1929398af52",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7bb0d8a022a9931461dfa171257bf0f08b45b818",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stderr.attempt1.gz",
+          "raw_bytes": 375,
+          "raw_sha256": "92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066",
+          "stored_path": "_objects/92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066.gz",
+          "stored_sha256": "6fce321d481e7d69be83acdedcc5be451bbfdf392730b92fdde1e1929398af52"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stdout.attempt1.gz",
+        "original_sha256": "3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stdout.attempt1.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596.gz",
+        "final_sha256": "4ab8a471d9b92296057bff2572cad1144f586915e2b8e4a2033e42c14fff6deb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "de3bc41d8cb45400986f975b8b081dcf7379748c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stdout.attempt1.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596",
+          "stored_path": "_objects/3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596.gz",
+          "stored_sha256": "4ab8a471d9b92296057bff2572cad1144f586915e2b8e4a2033e42c14fff6deb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace_check.py.attempt1.gz",
+        "original_sha256": "5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace_check.py.attempt1.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca.gz",
+        "final_sha256": "8135146057b2b51fff333966bf6169c3a058518f61d7231273e00a7fb8c5fbd1",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "bb1d4eeed03a8059c7ed38ab9dbff34517a6aa88",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace_check.py.attempt1.gz",
+          "raw_bytes": 1633,
+          "raw_sha256": "5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca",
+          "stored_path": "_objects/5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca.gz",
+          "stored_sha256": "8135146057b2b51fff333966bf6169c3a058518f61d7231273e00a7fb8c5fbd1"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.source.py.gz",
+        "original_sha256": "431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4.gz",
+        "final_sha256": "c4dd77f5794e511417216d1b68c9abcaed7c680cbb6e9b265b756e19fd149a72",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4eb8369359e6e95b3a5517a731d9f076fa5ba356",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.source.py.gz",
+          "raw_bytes": 8241,
+          "raw_sha256": "431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4",
+          "stored_path": "_objects/431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4.gz",
+          "stored_sha256": "c4dd77f5794e511417216d1b68c9abcaed7c680cbb6e9b265b756e19fd149a72"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stderr.gz",
+        "original_sha256": "2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45.gz",
+        "final_sha256": "534c8c06abdfadfe81c543cf72d93d8d21fb33ad30ded247520d0cf8dcbfae0e",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4216fc6e65a8dd2a2803fc0ea6cc82a8a5dd1867",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stderr.gz",
+          "raw_bytes": 297,
+          "raw_sha256": "2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45",
+          "stored_path": "_objects/2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45.gz",
+          "stored_sha256": "534c8c06abdfadfe81c543cf72d93d8d21fb33ad30ded247520d0cf8dcbfae0e"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stdout.gz",
+        "original_sha256": "1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd.gz",
+        "final_sha256": "1297ab173221249f55485cf8850ae288e6416cb6d3499edc1289ffbb54e11ef2",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "55166daf52a57e958e7fb8e540e1751546a979fe",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stdout.gz",
+          "raw_bytes": 121,
+          "raw_sha256": "1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd",
+          "stored_path": "_objects/1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd.gz",
+          "stored_sha256": "1297ab173221249f55485cf8850ae288e6416cb6d3499edc1289ffbb54e11ef2"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.source.py.gz",
+        "original_sha256": "274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251.gz",
+        "final_sha256": "ce9f6a1de72a33931655f01f6ba877671263d503f549ba2919d3fe63f0dfb641",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "777e8ab16cf0a412c5e802d829d0c7dea54635eb",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.source.py.gz",
+          "raw_bytes": 8240,
+          "raw_sha256": "274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251",
+          "stored_path": "_objects/274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251.gz",
+          "stored_sha256": "ce9f6a1de72a33931655f01f6ba877671263d503f549ba2919d3fe63f0dfb641"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stderr.gz",
+        "original_sha256": "42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062.gz",
+        "final_sha256": "10d6afddda5f7c1d40beca0014c999fba74c05f2b6cbe1f2f3ea86a9c7014f8b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1289d02b8088c6e0b04b5db50712f672dd22859b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stderr.gz",
+          "raw_bytes": 339,
+          "raw_sha256": "42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062",
+          "stored_path": "_objects/42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062.gz",
+          "stored_sha256": "10d6afddda5f7c1d40beca0014c999fba74c05f2b6cbe1f2f3ea86a9c7014f8b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stdout.gz",
+        "original_sha256": "3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2.gz",
+        "final_sha256": "ab904122ca6f16b809f9af17b9391113ce1d7d5654e5c44b30f065fbfd6bac00",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b112bc6081852e9be206a5b80b28f06f024598c0",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stdout.gz",
+          "raw_bytes": 116,
+          "raw_sha256": "3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2",
+          "stored_path": "_objects/3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2.gz",
+          "stored_sha256": "ab904122ca6f16b809f9af17b9391113ce1d7d5654e5c44b30f065fbfd6bac00"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.source.py.gz",
+        "original_sha256": "ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f.gz",
+        "final_sha256": "773df74d939ac70e1c8306d5a2af5b7e6dadba3c1fc734d08977d963c128edc0",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ddf2156252100b357672b051f1123696cba0f030",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.source.py.gz",
+          "raw_bytes": 8235,
+          "raw_sha256": "ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f",
+          "stored_path": "_objects/ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f.gz",
+          "stored_sha256": "773df74d939ac70e1c8306d5a2af5b7e6dadba3c1fc734d08977d963c128edc0"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stderr.gz",
+        "original_sha256": "24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2.gz",
+        "final_sha256": "ac817d36f062a001e81e2836dcdd1dcc38e85b092da566d1ab34942b950d418b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c423c0e6d7a7f8a4fe6f36147c0c1c0f46d460b7",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stderr.gz",
+          "raw_bytes": 287,
+          "raw_sha256": "24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2",
+          "stored_path": "_objects/24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2.gz",
+          "stored_sha256": "ac817d36f062a001e81e2836dcdd1dcc38e85b092da566d1ab34942b950d418b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stdout.gz",
+        "original_sha256": "807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d.gz",
+        "final_sha256": "e643259714e0357f1ce2641cd2b751437c821beadedcd1f1f37589d7aa2eaa56",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ba1813c7938516774323cd4603223eb1a5181c14",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stdout.gz",
+          "raw_bytes": 104,
+          "raw_sha256": "807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d",
+          "stored_path": "_objects/807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d.gz",
+          "stored_sha256": "e643259714e0357f1ce2641cd2b751437c821beadedcd1f1f37589d7aa2eaa56"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.source.py.gz",
+        "original_sha256": "6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e.gz",
+        "final_sha256": "20fe932672ca27630d08b285107685acb80523a3e498e3838a69ab04ec5415f9",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f3a5537462e5c78254bc71140acde1670a3bba09",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.source.py.gz",
+          "raw_bytes": 8225,
+          "raw_sha256": "6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e",
+          "stored_path": "_objects/6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e.gz",
+          "stored_sha256": "20fe932672ca27630d08b285107685acb80523a3e498e3838a69ab04ec5415f9"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stderr.gz",
+        "original_sha256": "bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16.gz",
+        "final_sha256": "f94a14cab0ff13b299d829092031e3e1371fbe3369f0264fbccba7e4b044316d",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "103b9b5adc688309d63fb06fffed32d00d864059",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stderr.gz",
+          "raw_bytes": 297,
+          "raw_sha256": "bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16",
+          "stored_path": "_objects/bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16.gz",
+          "stored_sha256": "f94a14cab0ff13b299d829092031e3e1371fbe3369f0264fbccba7e4b044316d"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stdout.gz",
+        "original_sha256": "db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e.gz",
+        "final_sha256": "cacba6af45a0d0e340382b5023577851f0c98d9e7b20e577c7f8afec83774495",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "03f76e72dae3127fb758fe4875006e7b45d34358",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stdout.gz",
+          "raw_bytes": 112,
+          "raw_sha256": "db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e",
+          "stored_path": "_objects/db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e.gz",
+          "stored_sha256": "cacba6af45a0d0e340382b5023577851f0c98d9e7b20e577c7f8afec83774495"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.source.py.gz",
+        "original_sha256": "beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca.gz",
+        "final_sha256": "490fd4830313f2ada2712ef0acf6e4fd2a2166fe51a9fdddd3c03b565a435f5d",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1d44d8aef2ab9bf02053b8fddcfde5a9b71115e0",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.source.py.gz",
+          "raw_bytes": 8242,
+          "raw_sha256": "beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca",
+          "stored_path": "_objects/beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca.gz",
+          "stored_sha256": "490fd4830313f2ada2712ef0acf6e4fd2a2166fe51a9fdddd3c03b565a435f5d"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stderr.gz",
+        "original_sha256": "e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558.gz",
+        "final_sha256": "608da7966c03b6b742522c2d21b323b7380e753347b33621bd28e46b8f02fa0e",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "bfa89880e8d784d16ad123d10a24027ecfc94d1f",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stderr.gz",
+          "raw_bytes": 287,
+          "raw_sha256": "e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558",
+          "stored_path": "_objects/e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558.gz",
+          "stored_sha256": "608da7966c03b6b742522c2d21b323b7380e753347b33621bd28e46b8f02fa0e"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stdout.gz",
+        "original_sha256": "8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8.gz",
+        "final_sha256": "641015ef0a849cbfc5cbc0c52440c317505739ef2905ba6cf720c8e640e63ccd",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "a991a24da77db751da28e454b4383028214223c7",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stdout.gz",
+          "raw_bytes": 110,
+          "raw_sha256": "8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8",
+          "stored_path": "_objects/8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8.gz",
+          "stored_sha256": "641015ef0a849cbfc5cbc0c52440c317505739ef2905ba6cf720c8e640e63ccd"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.source.py.gz",
+        "original_sha256": "ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9.gz",
+        "final_sha256": "851b18328190c5922f1abc383fefb8d0d5f7be24b0037f3f1c515153ef757f6f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "0645ffe391f6513b1b98340d1af798caf5d5260b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.source.py.gz",
+          "raw_bytes": 8238,
+          "raw_sha256": "ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9",
+          "stored_path": "_objects/ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9.gz",
+          "stored_sha256": "851b18328190c5922f1abc383fefb8d0d5f7be24b0037f3f1c515153ef757f6f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stderr.gz",
+        "original_sha256": "ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8.gz",
+        "final_sha256": "aae46a2e2bae4015158ab9e5234308f75bdba2f2e15141065a5fa8b6ef602323",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "47bb7b408ca8b30151573e1ad88ebbb66a1e665e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stderr.gz",
+          "raw_bytes": 294,
+          "raw_sha256": "ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8",
+          "stored_path": "_objects/ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8.gz",
+          "stored_sha256": "aae46a2e2bae4015158ab9e5234308f75bdba2f2e15141065a5fa8b6ef602323"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stdout.gz",
+        "original_sha256": "a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12.gz",
+        "final_sha256": "e2221e901c6a6ed1a68157385a499821ec9d1125b7b80b8960b3208219aaf844",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f0cf90f368322ad11db6aa5282eacdb0af45bb1d",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stdout.gz",
+          "raw_bytes": 112,
+          "raw_sha256": "a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12",
+          "stored_path": "_objects/a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12.gz",
+          "stored_sha256": "e2221e901c6a6ed1a68157385a499821ec9d1125b7b80b8960b3208219aaf844"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.source.py.gz",
+        "original_sha256": "83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527.gz",
+        "final_sha256": "b23eaf85191b439950eacd61205b51f530749e4ff86b42d1a119d3ae69ef8ebd",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5e2b97e8a7be4e32ed716201a524a5dda383ce5b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.source.py.gz",
+          "raw_bytes": 8236,
+          "raw_sha256": "83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527",
+          "stored_path": "_objects/83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527.gz",
+          "stored_sha256": "b23eaf85191b439950eacd61205b51f530749e4ff86b42d1a119d3ae69ef8ebd"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stderr.gz",
+        "original_sha256": "d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196.gz",
+        "final_sha256": "7452fc02afbeb1310cc893adfda2802d1f9b42db8606dc86efac774b891a367c",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "df35b1989828052c9ced6672ccf7e279653cd21e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stderr.gz",
+          "raw_bytes": 334,
+          "raw_sha256": "d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196",
+          "stored_path": "_objects/d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196.gz",
+          "stored_sha256": "7452fc02afbeb1310cc893adfda2802d1f9b42db8606dc86efac774b891a367c"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stdout.gz",
+        "original_sha256": "c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2.gz",
+        "final_sha256": "7cb6f07b5e787bdbc8648f71616cba685f9757a1c215aa1b552479f23b23d864",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "78b02bcd7d489d7ef333b9e20fa411cda844690b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stdout.gz",
+          "raw_bytes": 110,
+          "raw_sha256": "c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2",
+          "stored_path": "_objects/c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2.gz",
+          "stored_sha256": "7cb6f07b5e787bdbc8648f71616cba685f9757a1c215aa1b552479f23b23d864"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.source.py.gz",
+        "original_sha256": "05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.source.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad.gz",
+        "final_sha256": "d8f6c9c5efa231bfebf82a32ff94963be43ae5282e0dd9541ed71d10cdd1b9c0",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c3c132d1efeaa962c2552be673be16baeb66e3a6",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.source.py.gz",
+          "raw_bytes": 8231,
+          "raw_sha256": "05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad",
+          "stored_path": "_objects/05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad.gz",
+          "stored_sha256": "d8f6c9c5efa231bfebf82a32ff94963be43ae5282e0dd9541ed71d10cdd1b9c0"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stderr.gz",
+        "original_sha256": "14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97.gz",
+        "final_sha256": "3b5cd11ae0c1ed1ed5af95fbca6a906d5f3c2db38cce1a4d262de8689fbcba8b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1d5473280b7fdfffd48378e9f1258266e02e0ee5",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stderr.gz",
+          "raw_bytes": 296,
+          "raw_sha256": "14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97",
+          "stored_path": "_objects/14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97.gz",
+          "stored_sha256": "3b5cd11ae0c1ed1ed5af95fbca6a906d5f3c2db38cce1a4d262de8689fbcba8b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stdout.gz",
+        "original_sha256": "79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4",
+        "original_status": "A",
+        "disposition": "Exact historical author evidence, failed dtype attempt and eight mutation receipts preserved as nonauthority.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4.gz",
+        "final_sha256": "d872c0097dde58e6a039e2ffd78c95e66c68d8f8ff592929137740d2ab24afe8",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "8fa18d38d19265393fbaa42df353ca34e58d01d1",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stdout.gz",
+          "raw_bytes": 105,
+          "raw_sha256": "79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4",
+          "stored_path": "_objects/79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4.gz",
+          "stored_sha256": "d872c0097dde58e6a039e2ffd78c95e66c68d8f8ff592929137740d2ab24afe8"
+        }
+      },
+      {
+        "original_path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "original_sha256": "04f1819261cf135b61371e604297f009ec84fa8ccde1432a9fc0297b2797844c",
+        "original_status": "A",
+        "disposition": "Canonical original bytes preserved; only note recovery URL remapped. Original successful input-free primary cache reused without regeneration.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+        },
+        "final_path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "final_sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "55b95b209099153d620ec14ec9ddae74e70494c7c960a1b85b3cf946842b9917",
+        "original_status": "M",
+        "disposition": "Generated graph excluded; integration regenerates it, no original audit authority promoted.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": "docs/audit/data/citation_graph_manifest.json"
+        },
+        "final_path": null,
+        "final_sha256": null,
+        "archive_mapping": null
+      },
+      {
+        "original_path": "logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt",
+        "original_sha256": "c30a5e49b11b263d31fc2264b4672c584cc41ed48cea328b038fcf2a542abe66",
+        "original_status": "A",
+        "disposition": "Canonical original bytes preserved; only note recovery URL remapped. Original successful input-free primary cache reused without regeneration.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": "logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt"
+        },
+        "final_path": "logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt",
+        "final_sha256": "c30a5e49b11b263d31fc2264b4672c584cc41ed48cea328b038fcf2a542abe66",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+        "original_sha256": "06a754703fc8ddc8538ed4b03255ba626210469b669b25fed42438d5c5d9c6c9",
+        "original_status": "A",
+        "disposition": "Canonical original bytes preserved; only note recovery URL remapped. Original successful input-free primary cache reused without regeneration.",
+        "recovery": {
+          "head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+          "path": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py"
+        },
+        "final_path": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+        "final_sha256": "06a754703fc8ddc8538ed4b03255ba626210469b669b25fed42438d5c5d9c6c9",
+        "archive_mapping": null
+      }
+    ]
+  },
+  "source_paths": [
+    {
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad.gz",
+      "sha256": "d8f6c9c5efa231bfebf82a32ff94963be43ae5282e0dd9541ed71d10cdd1b9c0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97.gz",
+      "sha256": "3b5cd11ae0c1ed1ed5af95fbca6a906d5f3c2db38cce1a4d262de8689fbcba8b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd.gz",
+      "sha256": "1297ab173221249f55485cf8850ae288e6416cb6d3499edc1289ffbb54e11ef2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2.gz",
+      "sha256": "ac817d36f062a001e81e2836dcdd1dcc38e85b092da566d1ab34942b950d418b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251.gz",
+      "sha256": "ce9f6a1de72a33931655f01f6ba877671263d503f549ba2919d3fe63f0dfb641"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce.gz",
+      "sha256": "ac1b33747c8cff73c6a1a489ee4d9903bbae177124e230f27056e7cb0e916fd6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45.gz",
+      "sha256": "534c8c06abdfadfe81c543cf72d93d8d21fb33ad30ded247520d0cf8dcbfae0e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1.gz",
+      "sha256": "202ee35b6817f4c0bcc3b50fd1627469b348ec048e3a68d49217b12950f03c48"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596.gz",
+      "sha256": "4ab8a471d9b92296057bff2572cad1144f586915e2b8e4a2033e42c14fff6deb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2.gz",
+      "sha256": "ab904122ca6f16b809f9af17b9391113ce1d7d5654e5c44b30f065fbfd6bac00"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062.gz",
+      "sha256": "10d6afddda5f7c1d40beca0014c999fba74c05f2b6cbe1f2f3ea86a9c7014f8b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4.gz",
+      "sha256": "c4dd77f5794e511417216d1b68c9abcaed7c680cbb6e9b265b756e19fd149a72"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca.gz",
+      "sha256": "d13dae997e16218c568fae4b4345b775a129c24365ac3408ac579d9c4d258952"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd.gz",
+      "sha256": "683ea0ebae26d329cea281d489241cf098617d207c3204307294598f25ca0cb7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca.gz",
+      "sha256": "8135146057b2b51fff333966bf6169c3a058518f61d7231273e00a7fb8c5fbd1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e.gz",
+      "sha256": "20fe932672ca27630d08b285107685acb80523a3e498e3838a69ab04ec5415f9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4.gz",
+      "sha256": "d872c0097dde58e6a039e2ffd78c95e66c68d8f8ff592929137740d2ab24afe8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d.gz",
+      "sha256": "e643259714e0357f1ce2641cd2b751437c821beadedcd1f1f37589d7aa2eaa56"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527.gz",
+      "sha256": "b23eaf85191b439950eacd61205b51f530749e4ff86b42d1a119d3ae69ef8ebd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8.gz",
+      "sha256": "641015ef0a849cbfc5cbc0c52440c317505739ef2905ba6cf720c8e640e63ccd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066.gz",
+      "sha256": "6fce321d481e7d69be83acdedcc5be451bbfdf392730b92fdde1e1929398af52"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995.gz",
+      "sha256": "098f729d68695d4f5f558eb48b4751b57fbc9a185396ce0083c2509b9392782d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12.gz",
+      "sha256": "e2221e901c6a6ed1a68157385a499821ec9d1125b7b80b8960b3208219aaf844"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca.gz",
+      "sha256": "490fd4830313f2ada2712ef0acf6e4fd2a2166fe51a9fdddd3c03b565a435f5d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16.gz",
+      "sha256": "f94a14cab0ff13b299d829092031e3e1371fbe3369f0264fbccba7e4b044316d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2.gz",
+      "sha256": "7cb6f07b5e787bdbc8648f71616cba685f9757a1c215aa1b552479f23b23d864"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8.gz",
+      "sha256": "aae46a2e2bae4015158ab9e5234308f75bdba2f2e15141065a5fa8b6ef602323"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196.gz",
+      "sha256": "7452fc02afbeb1310cc893adfda2802d1f9b42db8606dc86efac774b891a367c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a.gz",
+      "sha256": "12d0bb9c33062b45505b4093ea62f12abb5ae64c9afbd77cb7b7b68fc72febf5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e.gz",
+      "sha256": "cacba6af45a0d0e340382b5023577851f0c98d9e7b20e577c7f8afec83774495"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558.gz",
+      "sha256": "608da7966c03b6b742522c2d21b323b7380e753347b33621bd28e46b8f02fa0e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9.gz",
+      "sha256": "851b18328190c5922f1abc383fefb8d0d5f7be24b0037f3f1c515153ef757f6f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f.gz",
+      "sha256": "773df74d939ac70e1c8306d5a2af5b7e6dadba3c1fc734d08977d963c128edc0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/archive-manifest.json",
+      "sha256": "3e24e93aa3cd4c2ab6c1acf648a19a6e92465f3eb6a73cd46c7e8b8ea3189372"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md",
+      "sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95"
+    },
+    {
+      "path": "logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt",
+      "sha256": "c30a5e49b11b263d31fc2264b4672c584cc41ed48cea328b038fcf2a542abe66"
+    },
+    {
+      "path": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+      "sha256": "06a754703fc8ddc8538ed4b03255ba626210469b669b25fed42438d5c5d9c6c9"
+    }
+  ],
+  "runtime_scientific_inputs": [],
+  "input_bindings": {
+    "runtime": [],
+    "helpers": [],
+    "parents": [],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04"
+      },
+      {
+        "path": "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "87142f568071bfe09ca5ca8ad513b02fdc10f9d839ef2ef3c4fab0327be909ac"
+      },
+      {
+        "path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+        "sha256": "f7791b8f1d0be58566bb0b2781162a173c79edb9c6a72523945120921e4bc533"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md",
+        "sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "claim_id": "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14",
+      "declared_claim_id": null,
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+        "docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md"
+      ],
+      "repository_dependencies": [],
+      "dependency_rationale": "Self-contained supplied graph/CAR/cyclic Hamiltonian and direct proofs. Minimal axioms constrain placement only; finite-clock and constrained-fiber KP are prior-art scope comparisons, not theorem premises. No repository theorem imported. External exterior-algebra, Duhamel and commutator iteration methods separately identified."
+    }
+  ],
+  "claim_dispositions": [
+    [
+      "Finite projected trace",
+      "Commuting modular generators yield nonzero projector; X boundary shift sign and same-order conjugation give squared determinant. Nonsymmetric slice is similar to positive symmetric slice, limit by finite-dimensional Lie product. Quartic onsite Gaussian factors preserve conjugacy; two-point identity only |Q|\u22641."
+    ],
+    [
+      "Weighted electric and rotor bound",
+      "Each fixed \u00b11 shift gives norm\u22642J sinh(lambda) for weighted anti-Hermitian generator; diagonal electric/onsite charge terms commute with weight. Finite restrictions and strongly integrated bounded Dyson tail justify infinite-domain passage. Two endpoint comparisons each\u22642T sum J exp(-lambda S)C; dispersion error\u2264pi\u00b2g\u00b2n4/(6aN\u00b2); moment envelope exact. Initial-cap, fixedtime only."
+    ],
+    [
+      "Locality",
+      "Even CAR commuting disjoint supports permits interaction-picture commutator recursion. Overcounted intersection paths bounded by matrixM with weighted row normCmu; crossing Duhamel integration gives B_R. Polynomial boundary growth versus exponential decay, then cap bound on R, proves fixed-local-observable approximation uniformly over finite ambient boxes. No unbounded-time/groundstate inference."
+    ],
+    [
+      "Counterexamples and free comparator",
+      "Ring positive determinant violates positive type via F(pi)>F(0); free four distinct nodes share metric and cancel charge\u00b2Hall under conjugation/inversion. Neutral identity pairing gaps Nambu block and preserves mathematical antiunitary but breaks total number. No interacting stability/exclusion theorem."
+    ],
+    [
+      "Spectral moment",
+      "Direct monomial double commutator yields negative hopping and positive magnetic signs; Gauss restriction F=E(v), not cyclic wrap electric identity. No phase bound without spectral-weight/hopping controls."
+    ]
+  ],
+  "external_methods": [
+    {
+      "url": "https://arxiv.org/pdf/1410.8174v1",
+      "sha256": "501af040512f2bdb62344ecbd093664e79ad1861338eabbce2c9791fca4e2fba",
+      "read_scope": "Section3 pp7\u201311, complete commutator iteration eq67\u201376; section2 strong-integral premise verified in source opening.",
+      "role": "Method import checked: self-adjoint onsite terms, bounded even finite-range interactions; direct path-matrix majorant supplies its own constant."
+    },
+    {
+      "url": "https://arxiv.org/pdf/cond-mat/0407272v3",
+      "sha256": "e2ab84e4a344fab110e1c0485dfd82c80e583082d753f6a26e6d0e52ac94e7eb",
+      "read_scope": "SectionIII theorem/proof pp3\u20135.",
+      "role": "Conjugate-factor prior art; elementary exterior trace identity proved directly. Antiunitary is not physical time reversal."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2110.06942v2",
+      "sha256": "9d5adf738860c9aed9f390e6937d54eaf7a19addced3ced4428336d61533094b",
+      "read_scope": "Sections2\u20133 pp4\u20138 including both truncation statements.",
+      "role": "Prior art only; direct bound uses bounded shifts and adds cyclic wrap/electric dispersion error, not imported sharper rates."
+    },
+    {
+      "url": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
+      "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17",
+      "read_scope": "Intro pp10\u201311;2.11\u20132.12 text pp44\u201349;section3 opening pp53\u201356. Scanned formula omissions not claimed verified.",
+      "role": "Scope comparison only: pure-gauge Euclidean phase/loop method not a theorem for the charged determinant; no phase result imported."
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/inventory.json",
+      "sha256": "30524298c38b4a4864f0c0e3f6de71d6b3db7e2ab63f41677b008fe147d0a5a6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/history-verification.json",
+      "sha256": "681422c531f41ad41269ee9c64645f3a05e0355138a95af5aa160a26ebabe221"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/original-statuses.json",
+      "sha256": "1d1b728503eb1a3f740bba1f66f837237ba4e7e765a17d57193d3ddccca79b4e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/verify-history.py",
+      "sha256": "fecd7b1ef9007457ae9b324e1e42c4d1dc6a6e4a67ce8f49873ab243885bc54a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/mutation-diffs.txt",
+      "sha256": "8200d362eb727996cdb45dad9011409353e88153ab8783a78ca2d5c386b23950"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/independent-controls.py",
+      "sha256": "e5ddb03c71f23b3163c72df74692acc6e42e640aa167ba8ec251524c6d6dee66"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/independent-controls-result.json",
+      "sha256": "48899e96f7f65778ded0dd247566bb922fd7a9a300ae9bcd87fbce353079f49d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/external-source-bindings.json",
+      "sha256": "da1051a8bcd9559d872a9e114cc09847faa57a7872402b5b4a3347dfc0164d61"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8106/note-packaging.diff",
+      "sha256": "8a395f7aa408259694eecafb1458c74cf15317b452d49bad2e435544b6c71e90"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8106-head-fetch.json",
+      "sha256": "22806c9f44535ef1f2f763de9c50cfc1af96fc8eff895aa7271dfbe120fb7576"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8106-author-packaging.json",
+      "sha256": "9c9981807203da168c93978f4c6c549813231962f9f5d28a3a68d14a9504d24a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8104-final-confirmed.json",
+      "sha256": "09d3b94b533641f40dbd930497a3f94fd1f0468227aca59cee8cc98618df777d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8103-timeout-final.json",
+      "sha256": "cc6d06a937f6f68207759b8a981db91b8e8c410efa8cd306c5ea5a4882c2770f"
+    }
+  ],
+  "findings": [],
+  "independent_checks": {
+    "independent_controls": [
+      "sinc integral quadratic remainder coefficient",
+      "fourth moment envelope extremum",
+      "ordered exterior trace with temporal insertion",
+      "same-order conjugation pairs, adjoint order differs",
+      "all modular total-charge sectors",
+      "ring positive-type violation leading coefficient",
+      "neutral pairing spectral gap square",
+      "charged hopping double-commutator sign",
+      "magnetic double-commutator sign",
+      "weighted row path exponential majorant"
+    ],
+    "pass_count": 10,
+    "elapsed_seconds": 0.3012973750010133,
+    "scope": "Independent algebra and path bound controls; no primary imported/executed. General proof independently read; no thermodynamic inference."
+  },
+  "reused_exact_inputs": [
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ],
+  "history": "Complete39path original delta and35historical payloads read/authenticated. Eight mutant sources differ by stated mathematical change plus selecting one check family; each actual assertion failure preserved. Dtype failure preceded trace acceptance. No source deleted or unique proof lost.",
+  "execution": {
+    "reused_original": true,
+    "new_primary_executions": 0,
+    "check_families": 8,
+    "internal_assertions": 28918,
+    "elapsed_seconds": 1.9986119270324707,
+    "timeout_seconds": 90,
+    "cache_sha256": "c30a5e49b11b263d31fc2264b4672c584cc41ed48cea328b038fcf2a542abe66",
+    "reason": "Primary and cache exact original; input-free runtime and explicit90s declaration unchanged. Note edit is recovery URL only."
+  },
+  "current_context": {
+    "main": "1de0b3bcfbc785b12d4587aba3910b69e8af09cc",
+    "unchanged_inputs": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04"
+      },
+      {
+        "path": "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "87142f568071bfe09ca5ca8ad513b02fdc10f9d839ef2ef3c4fab0327be909ac"
+      },
+      {
+        "path": "docs/WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md",
+        "sha256": "f7791b8f1d0be58566bb0b2781162a173c79edb9c6a72523945120921e4bc533"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ],
+    "interaction": "New8103 fixed-volume hard-flux ground spectrum previously reviewed in same session; it does not supply or alter this cyclic finite-time theorem. Mandatory authority scopes unchanged."
+  },
+  "scope": "Supplied positive finite cyclic charged histories and local initial-cap fixed-time rotor approximation. No groundstate, infrared phase, native law, axiom/primitive adoption or audit grade.",
+  "remaining": "One final mechanical cache preflight; root combined integration gate. No primary rerun."
+}

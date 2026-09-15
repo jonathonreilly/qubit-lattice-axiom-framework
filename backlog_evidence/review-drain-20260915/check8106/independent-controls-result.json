@@ -1,0 +1,17 @@
+{
+  "independent_controls": [
+    "sinc integral quadratic remainder coefficient",
+    "fourth moment envelope extremum",
+    "ordered exterior trace with temporal insertion",
+    "same-order conjugation pairs, adjoint order differs",
+    "all modular total-charge sectors",
+    "ring positive-type violation leading coefficient",
+    "neutral pairing spectral gap square",
+    "charged hopping double-commutator sign",
+    "magnetic double-commutator sign",
+    "weighted row path exponential majorant"
+  ],
+  "pass_count": 10,
+  "elapsed_seconds": 0.3012973750010133,
+  "scope": "Independent algebra and path bound controls; no primary imported/executed. General proof independently read; no thermodynamic inference."
+}

@@ -1,0 +1,18 @@
+{
+  "source_or_base_changed": false,
+  "primary_reexecuted": false,
+  "full_gate_reexecuted": false,
+  "correction": "Explicit hash-bound canonical schema2 proof ownership maps a load-bearing path to its owning claim; true autonomous parent checks remain mandatory",
+  "references": {
+    "train50-record.json": "53ef6105b1fe12aa0a19abc954787bc9b32210a5bd26f7771e04f82ac538ea00",
+    "train50-landing.json": "111ea37c6f27fbd47cf646c3ed7428a44b6d2848a1491d122991fc50307a9bdf",
+    "train50-pipeline.log": "c2de3174a0fdb3f14b6eba394b36932599226878b0d9c14e664f5de60088df95",
+    "train50-strict.log": "342ec14bee1c51d4bfeb1ef913b00f086f8e5ced1d3bb2b1d55a71adb403ac7c",
+    "train50-evidence.txt": "eb0311193e0251f1d6c2a5b46fa8d1ed6889c59a32032273b4a3f6f1223e43ea",
+    "train50-finish.log": "88838209e38e02ab6ee277433344adef64c15bf53ea7566fd326f49093147bf6",
+    "train50-finish-proofs.log": "64de550505482722c32e109cf715208f4e85cab5e1ba7ec411e945b92bb9ca61",
+    "finish_candidate_proofs.py": "5b48ea48bd30fb7e0ce04533c34e3400ad801fbf0008e64cf6b20832fccec384",
+    "8069-owned-proof-classification-addendum.json": "83d7ae62f9bb053c5b71b4a49bc8781a0ee90de17cf654852191bc2fc0814413",
+    "8069-owned-proof-adapter-controls.json": "cbc6f8d512922c3ea3b61a2de20cb79dd700305531df53db0600f815579b4882"
+  }
+}

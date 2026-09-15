@@ -1,6 +1,6 @@
 {
- "edge_count": 12725,
- "node_count": 5198,
+ "edge_count": 12759,
+ "node_count": 5228,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3106,6 +3106,10 @@
    "deps_hash": "11bd292c9d93",
    "out_degree": 1
   },
+  "cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "ebc2136e3686",
+   "out_degree": 1
+  },
   "cubic_nn_condition_domain_separation_bounded_theorem_note_2026-08-13": {
    "deps_hash": "e37282b4e366",
    "out_degree": 3
@@ -4953,6 +4957,10 @@
   "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "61520f2a99a3",
+   "out_degree": 1
   },
   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",
@@ -12330,6 +12338,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "86fee23e1c7d",
+   "out_degree": 1
+  },
   "local_seam_signed_clifford_physical_m2_compiler_cycle709_bounded_theorem_note_2026-07-26": {
    "deps_hash": "4a5e2b7df738",
    "out_degree": 4
@@ -12981,6 +12993,10 @@
   "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12": {
    "deps_hash": "f292f1416726",
    "out_degree": 3
+  },
+  "native_halfline_clock_completion_finite_horizons_and_permanence_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "01e09f046b2f",
+   "out_degree": 5
   },
   "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23": {
    "deps_hash": "2a9d6130ac3c",
@@ -16694,6 +16710,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "d4a08cecc92b",
+   "out_degree": 1
+  },
   "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
    "deps_hash": "56ad30d695c6",
    "out_degree": 12
@@ -20124,6 +20144,106 @@
   },
   "work_history.repo.review_feedback.pr8113-spin10-mirror-evidence.readme": {
    "deps_hash": "b9427b1d574b",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8115-local-reference-evidence.pr8115-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8115-local-reference-evidence.pr8115-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8115-local-reference-evidence.pr8115-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8115-local-reference-evidence.pr8115-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8115-local-reference-evidence.readme": {
+   "deps_hash": "635257f9721b",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8116-soft-spin2-evidence.pr8116-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8116-soft-spin2-evidence.pr8116-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8116-soft-spin2-evidence.pr8116-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8116-soft-spin2-evidence.pr8116-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8116-soft-spin2-evidence.readme": {
+   "deps_hash": "b5645c757d0a",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8117-ice-winding-evidence.pr8117-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8117-ice-winding-evidence.pr8117-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8117-ice-winding-evidence.pr8117-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8117-ice-winding-evidence.pr8117-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8117-ice-winding-evidence.readme": {
+   "deps_hash": "ab10bc30b745",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8118-clock-phase-evidence.pr8118-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8118-clock-phase-evidence.pr8118-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8118-clock-phase-evidence.pr8118-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8118-clock-phase-evidence.pr8118-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8118-clock-phase-evidence.readme": {
+   "deps_hash": "96afd3c17d83",
+   "out_degree": 5
+  },
+  "work_history.repo.review_feedback.pr8119-halfline-evidence.pr8119-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8119-halfline-evidence.pr8119-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8119-halfline-evidence.pr8119-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8119-halfline-evidence.pr8119-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8119-halfline-evidence.readme": {
+   "deps_hash": "441caa075c52",
    "out_degree": 5
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {

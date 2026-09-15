@@ -1,6 +1,6 @@
 {
- "edge_count": 13318,
- "node_count": 5751,
+ "edge_count": 13321,
+ "node_count": 5754,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13098,6 +13098,10 @@
    "deps_hash": "5eda749e24eb",
    "out_degree": 4
   },
+  "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "a6224d3271b4",
+   "out_degree": 3
+  },
   "native_leading_ring_stoquastic_gauge_note_2026-09-08": {
    "deps_hash": "24394f690c47",
    "out_degree": 6
@@ -21975,6 +21979,14 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8089-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8090-evidence.kept.pr8090-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8090-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

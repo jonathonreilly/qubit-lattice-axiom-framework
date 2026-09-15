@@ -1,6 +1,6 @@
 {
- "edge_count": 13308,
- "node_count": 5740,
+ "edge_count": 13314,
+ "node_count": 5747,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15210,6 +15210,14 @@
    "deps_hash": "ec452f68be4a",
    "out_degree": 2
   },
+  "projective_history_fixed_first_target_local_program_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "824909abee80",
+   "out_degree": 4
+  },
+  "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "f18f4cefcd73",
+   "out_degree": 2
+  },
   "propagator_family_unification_note": {
    "deps_hash": "475143577275",
    "out_degree": 5
@@ -21931,6 +21939,26 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8087-growing-formation-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8088-copy-evidence.kept.pr8088-copy-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8088-copy-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8088-program-evidence.kept.pr8088-program-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8088-program-evidence.kept.pr8088-program-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8088-program-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1,0 +1,26 @@
+{
+  "pr": 8065,
+  "original_head": "b20fb72faf9fb793487a664fb927296c65f7d493",
+  "branch": "codex/native-charged-record-histories-20260909",
+  "landing": "febf06cda220991f129e529e1c4c552ffcad784c",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-charged-record-histories-20260909",
+    "headRefOid": "b20fb72faf9fb793487a664fb927296c65f7d493",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8065,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8065"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-charged-record-histories-20260909",
+    "headRefOid": "b20fb72faf9fb793487a664fb927296c65f7d493",
+    "number": 8065,
+    "state": "CLOSED"
+  }
+}

@@ -15,5 +15,12 @@
     "number": 8136,
     "state": "OPEN",
     "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8136"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/clock-smoothing-20260915",
+    "headRefOid": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
+    "number": 8136,
+    "state": "CLOSED"
   }
 }

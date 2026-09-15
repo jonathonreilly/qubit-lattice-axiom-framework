@@ -1,0 +1,480 @@
+{
+  "unit": "PR8084",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+  "original_base": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "confirmation_base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "complete_original_read": true,
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "parent_scientific_inputs": [
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "47beb5e26ece2e98b0dec58888ee7b959784c801bbd0c4369e7ad691d9cdfa5a"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "2b88c28ebbcc05a6b9363496ab8fe35c7dc75515a4ab907d6c1938b1d9a62380"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "57daee40fca42fafc592b5703c5421ede5141c96a2391e6e210c31477f9dcdcd"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "06c624b2bd77da00f404c7e31a125f5ce1db21a3483e7bc662cea0ae8afa3885"
+    }
+  ],
+  "runtime_scientific_inputs": [
+    {
+      "path": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+    },
+    {
+      "path": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+    }
+  ],
+  "coverage": [
+    "Full original cumulative33paths including27historical records",
+    "Full canonical note and3runners; four current parent notes and source-specific required domain",
+    "Two-premise4ell e dissipator inequality, capped exact-safe comparison and retained Fourier marginal",
+    "Cell projection/free replacement/aligned energy accounting; original free A preserved",
+    "General non-scalar star collision, actual dark subspace, reference-stable remainder and splitting bound",
+    "Cube exact124160levels/13015qubits and15/256 resource error; no apparatus simulation",
+    "Seven mutation source changes and raw assertion failures; historical campaign commits provenance only"
+  ],
+  "findings": [
+    {
+      "id": "historical-recovery",
+      "status": "resolved and independently confirmed",
+      "detail": "Preserve27file packet and update3note links plus2declared historical inputs before fresh cache; no scientific correction required."
+    }
+  ],
+  "independent_control": {
+    "path": "/private/tmp/review-drain-20260915/check8084/independent.json",
+    "sha256": "b1471c0a343b47a7327e9df5c7902866b2e50810f68cc4d49775f76f13ab6b07"
+  },
+  "primary_execution": {
+    "path": "/private/tmp/review-drain-20260915/8084-author-final-execution.json",
+    "sha256": "08252f3dcff1cd4d758212093dc5ddb1a99521046af4b779bd1b9ab9f40fd26b",
+    "checks": 152,
+    "failures": 0,
+    "elapsed_sec": 1.3449969291687012,
+    "timeout_sec": 180,
+    "cache_status": "fresh",
+    "attempts": 1,
+    "scope": "52 exact cap/algebra predicates and100 small native collision/state/resource predicates; no large apparatus simulation or numerical proof of general channel bound."
+  },
+  "reviewer_session": "/root/review_8011",
+  "confirmation_commit": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "confirmation_tree": "052e292294a314b65a59855c617c9222f4058196",
+  "source_hashes": {
+    "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "b5ee292289cd2c133fee8ceaf68452366ea0dc04e3570326cd643ed4b5674503",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/README.md": "9503ca4cfc05958dd89f2626804645ffb4233231d8959ea2e51bacc2bf992b53",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/RESULTS.json": "6f6f9eb7110f71f7e6edceddc9d198ba1b56e189ac05e51e21537e0e5becd938",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py": "a38e27dac57e225590353f6cfd1287de7134b54dfac4a4e6854537816ea9e719",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stderr.txt": "9b4d6a0f0738c699e655478b18bc4c427de0ac41e92b74d29c4a83ff9ff22708",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py": "89ace33b5409eb730109e99e3175c86fb8f73689290329ea7a9ffb1e9bf78040",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stderr.txt": "985986c2b8f9c102c193bc17985ef517cd8667e4f92f1492bc018328597d6cd2",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py": "5c1b4d3f1006634a43cd00290d3ce2a368654b7b97c944fc859c9f3dd8c018ff",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stderr.txt": "4a7c8002659a3a1e47a60897240b812e3788fb91fe242f6a2a00e3ba07ac8330",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/native_feedback_collision_check_2026_09_13.py": "d5dc0ed68650723b9d29f02d9e73ee32fad1ac289fffba721e898027d3dd5130",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stderr.txt": "f46d77c7eb8413add4e713cf488895b1e36ff8abf212e91742d4bebad25eae04",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py": "049f276e093a972017e91faeaf896f9cd87ebccce58c753ef92036e72cb190c5",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stderr.txt": "60c2a4efbcaf5223cd30a6e732e03df9e7642cf0a2db5f08377cd1e36789c1d6",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py": "e94de49e3d14285495cfd14da4d471d3ae490c62675c24cf7bb17076ef717632",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stderr.txt": "84d92a1cf3d607cefa6f3db9cddc173c4c8535cb378be76640a3bf1fbabae733",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py": "bad4ff75d2d036bb4581a94c26aa1c9f5bfbc3443198594763d150fcda94d0bf",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stderr.txt": "bbc423396b9d993778515827a8069ca3e7a473ac444a09cc741e986e6b2b58c4",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-CLAIM_STATUS_CERTIFICATE.md": "441ff33fba7500b23f0089af6b8e685aaf00e3f6590d25963c5017bf41df6efa",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md": "33a10a6dda850a9ad18123728feabfb3bfa65fd547c24e7728f8555f27d5ca7f",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md": "9b6464360f34c6620d185f0f01aa66f27ded8f3caed819364ec950965268c45d",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md": "334656ffc089267caa94cd8aaaff7ecaea09554c3549eb22c99d606f0010f42c",
+    "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-TRACE_GATE.md": "b0f47216051941e63c36f5135fdb7fe62dcc710f73708f3f59277ae57a34f254",
+    "logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt": "6cd352e24b58177697c95a66890ede766bb2b2f3c92cce6bcb731f94539ab589",
+    "scripts/native_feedback_cap_check_2026_09_13.py": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d",
+    "scripts/native_feedback_collision_check_2026_09_13.py": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19",
+    "scripts/native_feedback_finite_apparatus_2026_09_13.py": "60101c13c5fe8d15c881937eb1c5a853a4ddad9280f290e03a946a3972f6ba4b"
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "441ff33fba7500b23f0089af6b8e685aaf00e3f6590d25963c5017bf41df6efa",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "441ff33fba7500b23f0089af6b8e685aaf00e3f6590d25963c5017bf41df6efa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/HANDOFF.md",
+      "original_sha256": "33a10a6dda850a9ad18123728feabfb3bfa65fd547c24e7728f8555f27d5ca7f",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/HANDOFF.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md",
+      "final_sha256": "33a10a6dda850a9ad18123728feabfb3bfa65fd547c24e7728f8555f27d5ca7f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "9b6464360f34c6620d185f0f01aa66f27ded8f3caed819364ec950965268c45d",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+      "final_sha256": "9b6464360f34c6620d185f0f01aa66f27ded8f3caed819364ec950965268c45d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "334656ffc089267caa94cd8aaaff7ecaea09554c3549eb22c99d606f0010f42c",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/REVIEW_HISTORY.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md",
+      "final_sha256": "334656ffc089267caa94cd8aaaff7ecaea09554c3549eb22c99d606f0010f42c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/TRACE_GATE.md",
+      "original_sha256": "b0f47216051941e63c36f5135fdb7fe62dcc710f73708f3f59277ae57a34f254",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/TRACE_GATE.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-TRACE_GATE.md",
+      "final_sha256": "b0f47216051941e63c36f5135fdb7fe62dcc710f73708f3f59277ae57a34f254"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/RESULTS.json",
+      "original_sha256": "6f6f9eb7110f71f7e6edceddc9d198ba1b56e189ac05e51e21537e0e5becd938",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/RESULTS.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/RESULTS.json",
+      "final_sha256": "6f6f9eb7110f71f7e6edceddc9d198ba1b56e189ac05e51e21537e0e5becd938"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py",
+      "original_sha256": "a38e27dac57e225590353f6cfd1287de7134b54dfac4a4e6854537816ea9e719",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py",
+      "final_sha256": "a38e27dac57e225590353f6cfd1287de7134b54dfac4a4e6854537816ea9e719"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/stderr.txt",
+      "original_sha256": "9b4d6a0f0738c699e655478b18bc4c427de0ac41e92b74d29c4a83ff9ff22708",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stderr.txt",
+      "final_sha256": "9b4d6a0f0738c699e655478b18bc4c427de0ac41e92b74d29c4a83ff9ff22708"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py",
+      "original_sha256": "89ace33b5409eb730109e99e3175c86fb8f73689290329ea7a9ffb1e9bf78040",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py",
+      "final_sha256": "89ace33b5409eb730109e99e3175c86fb8f73689290329ea7a9ffb1e9bf78040"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/stderr.txt",
+      "original_sha256": "985986c2b8f9c102c193bc17985ef517cd8667e4f92f1492bc018328597d6cd2",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stderr.txt",
+      "final_sha256": "985986c2b8f9c102c193bc17985ef517cd8667e4f92f1492bc018328597d6cd2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/dissipator_factor_two/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py",
+      "original_sha256": "5c1b4d3f1006634a43cd00290d3ce2a368654b7b97c944fc859c9f3dd8c018ff",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py",
+      "final_sha256": "5c1b4d3f1006634a43cd00290d3ce2a368654b7b97c944fc859c9f3dd8c018ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/stderr.txt",
+      "original_sha256": "4a7c8002659a3a1e47a60897240b812e3788fb91fe242f6a2a00e3ba07ac8330",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stderr.txt",
+      "final_sha256": "4a7c8002659a3a1e47a60897240b812e3788fb91fe242f6a2a00e3ba07ac8330"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_filter_removed/native_feedback_collision_check_2026_09_13.py",
+      "original_sha256": "d5dc0ed68650723b9d29f02d9e73ee32fad1ac289fffba721e898027d3dd5130",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_filter_removed/native_feedback_collision_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/native_feedback_collision_check_2026_09_13.py",
+      "final_sha256": "d5dc0ed68650723b9d29f02d9e73ee32fad1ac289fffba721e898027d3dd5130"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_filter_removed/stderr.txt",
+      "original_sha256": "f46d77c7eb8413add4e713cf488895b1e36ff8abf212e91742d4bebad25eae04",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_filter_removed/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stderr.txt",
+      "final_sha256": "f46d77c7eb8413add4e713cf488895b1e36ff8abf212e91742d4bebad25eae04"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_filter_removed/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_filter_removed/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py",
+      "original_sha256": "049f276e093a972017e91faeaf896f9cd87ebccce58c753ef92036e72cb190c5",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py",
+      "final_sha256": "049f276e093a972017e91faeaf896f9cd87ebccce58c753ef92036e72cb190c5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/stderr.txt",
+      "original_sha256": "60c2a4efbcaf5223cd30a6e732e03df9e7642cf0a2db5f08377cd1e36789c1d6",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stderr.txt",
+      "final_sha256": "60c2a4efbcaf5223cd30a6e732e03df9e7642cf0a2db5f08377cd1e36789c1d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/feedback_loss_completed/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py",
+      "original_sha256": "e94de49e3d14285495cfd14da4d471d3ae490c62675c24cf7bb17076ef717632",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py",
+      "final_sha256": "e94de49e3d14285495cfd14da4d471d3ae490c62675c24cf7bb17076ef717632"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/stderr.txt",
+      "original_sha256": "84d92a1cf3d607cefa6f3db9cddc173c4c8535cb378be76640a3bf1fbabae733",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stderr.txt",
+      "final_sha256": "84d92a1cf3d607cefa6f3db9cddc173c4c8535cb378be76640a3bf1fbabae733"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py",
+      "original_sha256": "bad4ff75d2d036bb4581a94c26aa1c9f5bfbc3443198594763d150fcda94d0bf",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py",
+      "final_sha256": "bad4ff75d2d036bb4581a94c26aa1c9f5bfbc3443198594763d150fcda94d0bf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/stderr.txt",
+      "original_sha256": "bbc423396b9d993778515827a8069ca3e7a473ac444a09cc741e986e6b2b58c4",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/stderr.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stderr.txt",
+      "final_sha256": "bbc423396b9d993778515827a8069ca3e7a473ac444a09cc741e986e6b2b58c4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "exact historical preservation; author evidence, not independent authority",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/original_free_replaced/stdout.txt",
+      "final_path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "12cf9e6071c4fdb68cfc50825def0f95867a5769d060d78ce3eb04f87a9570f2",
+      "disposition": "canonical source retained with historical path-only correction",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "b5ee292289cd2c133fee8ceaf68452366ea0dc04e3570326cd643ed4b5674503"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "94ee4b482be6f8c4de00df73eb146a4343272b75c72273c73f3fde607d5a640f",
+      "disposition": "generated manifest excluded; coordinator regenerates current aggregate",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:docs/audit/data/citation_graph_manifest.json",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt",
+      "original_sha256": "5b31924ef0962ce28b5416a1ad58663233921bea456879c0967875c50ba94224",
+      "disposition": "fresh bounded execution supersedes historical cache",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt",
+      "final_path": "logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt",
+      "final_sha256": "6cd352e24b58177697c95a66890ede766bb2b2f3c92cce6bcb731f94539ab589"
+    },
+    {
+      "original_path": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "original_sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d",
+      "disposition": "canonical helper unchanged",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:scripts/native_feedback_cap_check_2026_09_13.py",
+      "final_path": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "final_sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+    },
+    {
+      "original_path": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "original_sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19",
+      "disposition": "canonical helper unchanged",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:scripts/native_feedback_collision_check_2026_09_13.py",
+      "final_path": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "final_sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+    },
+    {
+      "original_path": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+      "original_sha256": "ad97ebd1105547bf406286e2b8e0ac242707d9181bab19bfa50499118ad7fb7a",
+      "disposition": "canonical runner historical input paths repaired",
+      "recovery": "e56bca5c4edc48d279de8d13edb3884e7b8d8479:scripts/native_feedback_finite_apparatus_2026_09_13.py",
+      "final_path": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+      "final_sha256": "60101c13c5fe8d15c881937eb1c5a853a4ddad9280f290e03a946a3972f6ba4b"
+    }
+  ],
+  "declared_inputs": [
+    {
+      "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "b5ee292289cd2c133fee8ceaf68452366ea0dc04e3570326cd643ed4b5674503"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "47beb5e26ece2e98b0dec58888ee7b959784c801bbd0c4369e7ad691d9cdfa5a"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "2b88c28ebbcc05a6b9363496ab8fe35c7dc75515a4ab907d6c1938b1d9a62380"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "57daee40fca42fafc592b5703c5421ede5141c96a2391e6e210c31477f9dcdcd"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "06c624b2bd77da00f404c7e31a125f5ce1db21a3483e7bc662cea0ae8afa3885"
+    },
+    {
+      "path": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+    },
+    {
+      "path": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "9b6464360f34c6620d185f0f01aa66f27ded8f3caed819364ec950965268c45d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/RESULTS.json",
+      "sha256": "6f6f9eb7110f71f7e6edceddc9d198ba1b56e189ac05e51e21537e0e5becd938"
+    }
+  ],
+  "input_fingerprint": "147c4271fc9d1c7c7d96b7969b29df1d6c7986a9752fc65032135cf6e261f088",
+  "helper_discovery": [
+    "scripts/native_feedback_cap_check_2026_09_13.py",
+    "scripts/native_feedback_collision_check_2026_09_13.py"
+  ],
+  "claim_id": "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13",
+  "claim_type": "bounded_theorem",
+  "execution_freeze": {
+    "path": "/private/tmp/review-drain-20260915/8084-author-preexecution.json",
+    "sha256": "55411f84e52d4bfb9d5a0af30a8e7fd9a71735d64d971ff361d0a2bbe65cd7d7"
+  },
+  "archive_map": {
+    "path": "/private/tmp/review-drain-20260915/8084-archive-map.json",
+    "sha256": "475fec63e68676b3a05d8c9d43120d5110d3ac6a547033abe3f25898b082d137"
+  },
+  "repository_dependencies": [
+    "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "dependency_scope": "Four declared current native-model parents supply construction context and definitions, read in full; general finite-apparatus inequalities proved in this note. Native instrument algebra is current inherited support, not autonomous transport or formation selection.",
+  "external_mathematical_methods": [
+    "Finite-dimensional GKSL channels, trace and Hilbert-Schmidt norm inequalities, Stinespring dilation and Duhamel comparison",
+    "Fourier translation, sine packet second moment, interval Poincare inequality and finite star-unitary Taylor estimates"
+  ],
+  "tooling_inputs": [
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    }
+  ],
+  "transitive_scientific_inputs": [
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+      "scope": "Native edge Record/matter algebra and ledger; exact-byte full-read reuse from independent review8065",
+      "review_ref": "/private/tmp/review-drain-20260915/review-8065.json",
+      "review_sha256": "7d27dd13a7ddd09f1d23ca252b7b91ad1276fa7790ac77fc901a125738a87c3a"
+    }
+  ],
+  "payload_comparison": {
+    "path": "/private/tmp/review-drain-20260915/8084-author-payload-comparison.json",
+    "sha256": "0a97e987c9e63e6fde2604d4264ab3b5d0af4af8260f1d654c3d9c5030d43985",
+    "scope": "Historical and fresh floating results may differ in final bits; no claim of byte-identical historical stdout. Final stdout equals final cache."
+  }
+}

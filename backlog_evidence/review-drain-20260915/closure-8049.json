@@ -1,0 +1,103 @@
+{
+  "pr": 8049,
+  "original_head": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+  "branch": "codex/native-zero-penalty-endpoint-20260908",
+  "landing": "febf06cda220991f129e529e1c4c552ffcad784c",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-zero-penalty-endpoint-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-l4-delayed-splitting-20260908",
+        "headRefOid": "03696e613d72aa16741e3f533b5bd37a70f09512",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8052,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8052"
+      },
+      "original_merge_base": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+      "delta_sha256": "c59aa9356a243fb03a80107fea306ae749ea4c5a328c41e2fe6082de2025701e",
+      "delta_file": "closure-8049-child-8052-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-l4-delayed-splitting-20260908",
+        "headRefOid": "03696e613d72aa16741e3f533b5bd37a70f09512",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8052,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8052"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-l4-delayed-splitting-20260908",
+        "headRefOid": "03696e613d72aa16741e3f533b5bd37a70f09512",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8052,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8052"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-zero-penalty-endpoint-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+        "headRefOid": "116505696042571b2759a8dc5d73368eee727794",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8051,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8051"
+      },
+      "original_merge_base": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+      "delta_sha256": "bf9c29594657d73c50d8e469b8640a85acc3f8c0173bf34c4a56960c465aa65e",
+      "delta_file": "closure-8049-child-8051-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+        "headRefOid": "116505696042571b2759a8dc5d73368eee727794",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8051,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8051"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-zero-penalty-optimal-flux-dispersion-20260908",
+        "headRefOid": "116505696042571b2759a8dc5d73368eee727794",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8051,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8051"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-zero-penalty-endpoint-20260908",
+    "headRefOid": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8049,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8049"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-zero-penalty-endpoint-20260908",
+    "headRefOid": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+    "number": 8049,
+    "state": "CLOSED"
+  }
+}

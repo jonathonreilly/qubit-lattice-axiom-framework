@@ -1,0 +1,16 @@
+{
+  "corrupt_inventory": {
+    "mechanical_check": "passed",
+    "manifest_sha256": "890889d4bb902f105c34c6a595242c68f7ffbce399093ef9bb5233d1784ee090",
+    "original_paths": 2,
+    "stored_objects": 2
+  },
+  "symlink_slot_acquire": {
+    "common_git_dir": "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmp6vbhx5di/repo/.git",
+    "head": "050d692b93ae4e24f842a5871fbbf0d40a2da482",
+    "owner": "two",
+    "path": "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmp6vbhx5di/pool/slot",
+    "preserved_ref": "refs/review-loop/preserved/slot-fe1d208deea14f1d9dd7486b9f9543d8",
+    "schema_version": 1
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "pr": 8044,
+  "original_head": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+  "branch": "codex/native-virtual-pair-ring-mechanism-20260908",
+  "landing": "febf06cda220991f129e529e1c4c552ffcad784c",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-leading-ring-stoquastic-gauge-20260908",
+        "headRefOid": "526431a6f31e73af97b7b3d259945f0f566ed547",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8050,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8050"
+      },
+      "original_merge_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+      "delta_sha256": "155b28b80947552dfa7d6e23cf261cea0ec00c05e050f7e6e3b06749a989ec3e",
+      "delta_file": "closure-8044-child-8050-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-leading-ring-stoquastic-gauge-20260908",
+        "headRefOid": "526431a6f31e73af97b7b3d259945f0f566ed547",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8050,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8050"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-leading-ring-stoquastic-gauge-20260908",
+        "headRefOid": "526431a6f31e73af97b7b3d259945f0f566ed547",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8050,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8050"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-sixth-offdiagonal-sign-obstruction-20260908",
+        "headRefOid": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8048,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8048"
+      },
+      "original_merge_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+      "delta_sha256": "c14fd0e7231b9c57a31990d7de22b04c47c36072fc99a2a183af7264b2e1b087",
+      "delta_file": "closure-8044-child-8048-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-sixth-offdiagonal-sign-obstruction-20260908",
+        "headRefOid": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8048,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8048"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-sixth-offdiagonal-sign-obstruction-20260908",
+        "headRefOid": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8048,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8048"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-eighth-diagonal-cycle-potential-20260908",
+        "headRefOid": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8047,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8047"
+      },
+      "original_merge_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+      "delta_sha256": "fd1b9393e68ddc1c6fe0131c8c54b21a8b479235c9ddd4b02bc0312e9940b9e4",
+      "delta_file": "closure-8044-child-8047-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-eighth-diagonal-cycle-potential-20260908",
+        "headRefOid": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8047,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8047"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-eighth-diagonal-cycle-potential-20260908",
+        "headRefOid": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8047,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8047"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-local-ring-dynamics-20260908",
+        "headRefOid": "31abab83cbec35bac1ad69db1e3e82d1f8e92447",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8045,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8045"
+      },
+      "original_merge_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+      "delta_sha256": "811477eca1ac749d597f674c2d5709d23159f68d759248e3f87abb0652c349c1",
+      "delta_file": "closure-8044-child-8045-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-local-ring-dynamics-20260908",
+        "headRefOid": "31abab83cbec35bac1ad69db1e3e82d1f8e92447",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8045,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8045"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-local-ring-dynamics-20260908",
+        "headRefOid": "31abab83cbec35bac1ad69db1e3e82d1f8e92447",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8045,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8045"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T14:02:53Z",
+    "headRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+    "headRefOid": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8044,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8044"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-virtual-pair-ring-mechanism-20260908",
+    "headRefOid": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+    "number": 8044,
+    "state": "CLOSED"
+  }
+}

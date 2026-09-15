@@ -1,0 +1,84 @@
+{
+  "float_changes": [
+    {
+      "path": "/collision/fixtures/initial_cycle/rows/0/original_free_trace_norm_error",
+      "original": 0.00035115416428026453,
+      "final": 0.00035115416428026843,
+      "absolute_delta": 3.903127820947816e-18
+    },
+    {
+      "path": "/collision/fixtures/initial_cycle/rows/1/original_free_trace_norm_error",
+      "original": 8.833725726584368e-05,
+      "final": 8.833725726584404e-05,
+      "absolute_delta": 3.5236570605778894e-19
+    },
+    {
+      "path": "/collision/fixtures/initial_cycle/rows/1/wrong_free_trace_norm_error",
+      "original": 0.01326695076188531,
+      "final": 0.013266950761885311,
+      "absolute_delta": 1.734723475976807e-18
+    },
+    {
+      "path": "/collision/fixtures/initial_cycle/rows/2/original_free_trace_norm_error",
+      "original": 2.215317729686785e-05,
+      "final": 2.2153177296867847e-05,
+      "absolute_delta": 3.3881317890172014e-21
+    },
+    {
+      "path": "/collision/fixtures/initial_cycle/rows/2/dissipative_trace_norm_error",
+      "original": 1.5099077696680836e-05,
+      "final": 1.5099077696680838e-05,
+      "absolute_delta": 1.6940658945086007e-21
+    },
+    {
+      "path": "/collision/fixtures/initial_cycle/rows/2/wrong_free_trace_norm_error",
+      "original": 0.006650035579989333,
+      "final": 0.006650035579989331,
+      "absolute_delta": 1.734723475976807e-18
+    },
+    {
+      "path": "/collision/fixtures/old_Record_bridge/rows/0/original_free_trace_norm_error",
+      "original": 0.0003511541642802028,
+      "final": 0.0003511541642802122,
+      "absolute_delta": 9.432558900623889e-18
+    },
+    {
+      "path": "/collision/fixtures/old_Record_bridge/rows/0/wrong_free_trace_norm_error",
+      "original": 0.026402264060652277,
+      "final": 0.02640226406065227,
+      "absolute_delta": 6.938893903907228e-18
+    },
+    {
+      "path": "/collision/fixtures/old_Record_bridge/rows/1/original_free_trace_norm_error",
+      "original": 8.833725726589123e-05,
+      "final": 8.833725726589064e-05,
+      "absolute_delta": 5.827586677109586e-19
+    },
+    {
+      "path": "/collision/fixtures/old_Record_bridge/rows/1/wrong_free_trace_norm_error",
+      "original": 0.013266950761885325,
+      "final": 0.013266950761885322,
+      "absolute_delta": 3.469446951953614e-18
+    },
+    {
+      "path": "/collision/fixtures/old_Record_bridge/rows/2/original_free_trace_norm_error",
+      "original": 2.2153177296855968e-05,
+      "final": 2.215317729685597e-05,
+      "absolute_delta": 3.3881317890172014e-21
+    },
+    {
+      "path": "/collision/fixtures/old_Record_bridge/rows/2/wrong_free_trace_norm_error",
+      "original": 0.006650035579989281,
+      "final": 0.006650035579989282,
+      "absolute_delta": 8.673617379884035e-19
+    },
+    {
+      "path": "/collision/maximum_equality_residual",
+      "original": 1.776547415467855e-15,
+      "final": 1.776547413335493e-15,
+      "absolute_delta": 2.1323620242938648e-24
+    }
+  ],
+  "max_absolute_delta": 9.432558900623889e-18,
+  "all_other_fields_equal": true
+}

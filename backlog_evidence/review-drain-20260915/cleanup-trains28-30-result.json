@@ -1,0 +1,92 @@
+[
+  {
+    "name": "train28",
+    "head": "4898256906d03d0d70a519f0c4c32180decd4715",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery": {
+      "head": "4898256906d03d0d70a519f0c4c32180decd4715",
+      "archive": "train28-ignored-validation-recovery.tar.gz",
+      "archive_sha256": "4a33ca4e39ea6fa21d007c26e57b608db887fcd09c9439ad2bf20296f586b767",
+      "paths": {
+        "docs/audit/AUDIT_LEDGER.md": "606b8c7005047af014be21b164c5bee4deaf538212637ded63f5dd064f964017",
+        "docs/audit/data/audit_ledger.json": "5b4e2f60881bc94fa49fa601c194722e9e0659e61d0252ed886b054be716aa83",
+        "docs/audit/data/audit_publication_lane.json": "4aa2db28677f039982a0939a36f0913822ce0e07655777a4b5709c62a38822aa",
+        "docs/audit/data/audit_queue.json": "f2adb8edb95bfa88c1329361793aa4a90325d5bba3c88c3c797ecb317f501708",
+        "docs/audit/data/citation_graph.json": "2e9fd4288900295f25057d85ba8b85ab1b84d35c2f80f624a71f2340a1b86699",
+        "docs/audit/data/ledger_cache_manifest.json": "5ce98f6d6cca10eef0f52789e9b972178f15615a7cfc2b3bd6da4d278fae044a",
+        "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+        "docs/audit/data/runner_classification.json": "df2b6a227444cd74da103be210d8e23da805e6b9fbbdceda8a92f8f7a6239679",
+        "docs/audit/data/static_pipeline_checkpoint.json": "f286734d4ab6dc683d72ba8f05d6162ea31c258ae2bbf4c58600cc0f1c80ed37",
+        "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "docs/audit/scripts/__pycache__/apply_audit.cpython-312.pyc": "e0aa6dfaab7289056a791a3bf46ed81a5f5dc0d0d49ec9a1f3e6ca97f1be92ec",
+        "docs/audit/scripts/__pycache__/audit_contract.cpython-312.pyc": "068819d680fb6d912d5fc6c26ff256714c26e80aa6e162a7bfc0275abcf97851",
+        "docs/audit/scripts/__pycache__/audit_invocation.cpython-312.pyc": "12833fc4d4998e96483ab77336d2482097cc856d1a4f7983fd920938e5ed714e",
+        "docs/audit/scripts/__pycache__/audit_lint.cpython-312.pyc": "bf039eee9212c9b78958528d4fefc8868d646c499350f2ba53f50226e7125cc3",
+        "docs/audit/scripts/__pycache__/audit_science_fingerprint.cpython-312.pyc": "cd4fb77ec46a631690ffcb327032c2d0e623571ea8ea58aef734ae6df2cdd3f5",
+        "docs/audit/scripts/__pycache__/classify_runner_passes.cpython-312.pyc": "b0c9bc31d5eb5f292d3a28f9d5f6300eba4d94876981dab49ada953106ce02e7",
+        "docs/audit/scripts/__pycache__/compute_audit_dispatch_queue.cpython-312.pyc": "f9faeff6dc8c6c63e740074d3359d2c4ae7860c75999cd60adf4f0b578c1d782",
+        "docs/audit/scripts/__pycache__/compute_audit_queue.cpython-312.pyc": "1dbfe420538e70b55e2402225ae6d3815b14a0be3f23e8a75b9beb49484518e5",
+        "docs/audit/scripts/__pycache__/compute_reaudit_candidates.cpython-312.pyc": "aba7f77f8435e67a2b5b95363b4c4b22b845f66c80fbd03d92e5fd0d1a61a3b1",
+        "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-312.pyc": "a3fb299d61d315cd966e62bfdcf0dae5f1a67214b0039bd37d4df131b0bb7429",
+        "docs/audit/scripts/__pycache__/ledger_io.cpython-312.pyc": "b2007467f4b5c780113f4f90a57e357370ea1e53a6244b3449f26de05ef62770",
+        "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-312.pyc": "995b73b9375f2eea16c6aecbb2f1767ca64035834c8616c66e522da8b7111202",
+        "docs/audit/scripts/__pycache__/premise_nodes.cpython-312.pyc": "fe815bf0269fc27cc4119ec98b240e61ae37f848163d5fdbe46afcdd43df16ae",
+        "docs/audit/scripts/__pycache__/runner_pin_gate.cpython-312.pyc": "329b46344175a3aefa752157f9d1c79cd47e46660158918dd98681d7a99b1e3e",
+        "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-312.pyc": "f185bda9465910f361480ad9f2e0e84b51805cec5d408c345fb23d4e0c91be6b",
+        "docs/audit/scripts/__pycache__/write_citation_graph_manifest.cpython-312.pyc": "8d32df1e36003c5da853cb5d51348324359a33be6820cf5d7e13069194f5519e",
+        "scripts/__pycache__/codex_audit_runner.cpython-312.pyc": "280e8a5b2e4f5f81b8472a20584d9a676ddf4d0d8be085327e8432be1957fb24",
+        "scripts/__pycache__/runner_cache.cpython-312.pyc": "9092b4d7a241ebbb2afc82c1272b8bfb2fd6f07825966b3be64d98abcc9c7465"
+      },
+      "boundary": "Ignored generated validation artifacts, not audit authority; exact decoded recovery verified before cleanup"
+    }
+  },
+  {
+    "name": "train29",
+    "head": "7925eb36cae77ba2eda929e0065269dc2f1a45e8",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery": {
+      "head": "7925eb36cae77ba2eda929e0065269dc2f1a45e8",
+      "archive": "train29-ignored-validation-recovery.tar.gz",
+      "archive_sha256": "4b14d890c0130f52cd7d68469d13ceccefad3905c47b9f6ad53bea006b684f2a",
+      "paths": {
+        "docs/audit/AUDIT_LEDGER.md": "b3fed1b865826c9c4209c06c8327db325d53f83cfab0942eff385e4d98f1e56e",
+        "docs/audit/data/audit_ledger.json": "f0e077332404fa5ebedb7e47685ad99f2f101f778055c4223033483b45b3091c",
+        "docs/audit/data/audit_publication_lane.json": "4aa2db28677f039982a0939a36f0913822ce0e07655777a4b5709c62a38822aa",
+        "docs/audit/data/audit_queue.json": "367d44caeef0ae7b37c83f6c5c1bbe90239655e775ea0f8d4e3422c6913d2b87",
+        "docs/audit/data/citation_graph.json": "a7bf1ab1866e3ce8bb34eba48104cfa0e4a11cf65c19b660b048393ff5ca01a7",
+        "docs/audit/data/ledger_cache_manifest.json": "f08f65fff8fa93f9e8a7fb74bdd5edfe0d4dfeb04e5590058b3b14eb156b575a",
+        "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+        "docs/audit/data/runner_classification.json": "aa97aec325bacb77ca3bf34888f6d793d1295ef819d77c8b96cae7ab1163f417",
+        "docs/audit/data/static_pipeline_checkpoint.json": "92475d34350a475244b64a239ece299962569b4f3319186a9c64e6204f87adba",
+        "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "boundary": "Ignored generated validation artifacts, not audit authority; exact decoded recovery verified before cleanup"
+    }
+  },
+  {
+    "name": "train30",
+    "head": "3c71a35aee35ea0896f1c0de54c1cfad1c4a1c9e",
+    "removed": true,
+    "reason": "clean, preserved worktree removed",
+    "recovery": {
+      "head": "3c71a35aee35ea0896f1c0de54c1cfad1c4a1c9e",
+      "archive": "train30-ignored-validation-recovery.tar.gz",
+      "archive_sha256": "13cdb7d52fd9c95034ae17b6dce3bd7eee1320b076b7fbaa52e9e7c51f628ce9",
+      "paths": {
+        "docs/audit/AUDIT_LEDGER.md": "098da9aa027670f6713b7db4bceea25dde888fa28b1a7e4778fd89e86a66fc70",
+        "docs/audit/data/audit_ledger.json": "fa0dd569c9003cc4a156b069f2cf23bcf7f6d1b8e7b12f1a4ffdaffebde03039",
+        "docs/audit/data/audit_publication_lane.json": "4aa2db28677f039982a0939a36f0913822ce0e07655777a4b5709c62a38822aa",
+        "docs/audit/data/audit_queue.json": "87bfce119779246e5ed6b7403a261f7d34f3d8e9e9143602083d8c5a842fef0b",
+        "docs/audit/data/citation_graph.json": "6e117fe917e1374057af7ecdbd2fdef0f2ca998e537654fa6ab7c3bdedd0adbc",
+        "docs/audit/data/ledger_cache_manifest.json": "6be74303a4d5cdca179de8c90c270ab4ad6679f5db8086c038bd4c3c4fc9cfcb",
+        "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+        "docs/audit/data/runner_classification.json": "1c3a48239cfe7d5cbf5b134f7f392ffca000022f45146e16f5258f7b82f0e21c",
+        "docs/audit/data/static_pipeline_checkpoint.json": "ac52b24fac382136a8ece921e255039958dba64cff8a0fe465e8db63e418b695",
+        "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "boundary": "Ignored generated validation artifacts, not audit authority; exact decoded recovery verified before cleanup"
+    }
+  }
+]

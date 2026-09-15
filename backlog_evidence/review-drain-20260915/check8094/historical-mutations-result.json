@@ -1,0 +1,458 @@
+[
+  {
+    "number": 8091,
+    "count": 20,
+    "rows": [
+      {
+        "name": "Wilson_hopping_sign",
+        "source_sha256": "456e3c3b51fa21ba1321c17e2ca39ecaffbfbec98d919ce0f321f41e51e3da86",
+        "stderr_sha256": "084a0958f05015f1e747338631c23a83d8d513e0c3353fe785f4a3b9ffe3247e",
+        "failure": "AssertionError: ('all_Bloch_blocks_vs_stencil', {'max_residual': 1.7320508075688776, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "energy_vertex_factor",
+        "source_sha256": "2c177ffc7f86bd18f1110d3711a0567005bbc1d51780de9c194a267f93d61f0a",
+        "stderr_sha256": "64696bf2678229bd2b9e75ab93c7ea593da38ffe1ff342247975b13c0740ead0",
+        "failure": "AssertionError: ('exact_interband_energy_vertex', {})"
+      },
+      {
+        "name": "contact_second_derivative",
+        "source_sha256": "0f3048b9aba123054ff1ed60e4eae21ca36002b12929f231e2952b6aab524f52",
+        "stderr_sha256": "2820d2e88e43839c281bf6dbb177bac67ac080e2d21213d33392496b35973c02",
+        "failure": "AssertionError: ('geometric_contact_derivative', {})"
+      },
+      {
+        "name": "cone_coefficient",
+        "source_sha256": "e0d3e39d5a60babdec853e99140cc865153abc2a24594bf70161c9a348e613e7",
+        "stderr_sha256": "8fcd31c88701ac408674a5d97311b8d877d5158613cba6ec70b7918e7545ec0a",
+        "failure": "AssertionError: ('exact_cone_fourth_order', {})"
+      },
+      {
+        "name": "prolate_jacobian",
+        "source_sha256": "db4ccdc0111ab35baa2777620f736c28c73ddd4060d08bb5e49a1375c41db3c3",
+        "stderr_sha256": "98a1fdc3ee27a9d1583d3fab8f7c06a0f307360bd06ca9e4c3bc5390f9700db1",
+        "failure": "AssertionError: ('independent_prolate_integrand', {})"
+      },
+      {
+        "name": "arithmetic_Kato_factor",
+        "source_sha256": "3894bb0d68681631c12668ea4888504e6a60f424e62141d4cb579a471dc63c71",
+        "stderr_sha256": "505d5b543b6f71fd4c1701a15f191d5c2be676c6186ea2784b453167479e79ef",
+        "failure": "AssertionError: ('full_contact_identity', {'max_residual': 0.037568714761962496, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "congruence_spectral_sign",
+        "source_sha256": "b659bb33ac4d98298998fda56ea2aa63a62c329d2289786bf939734799d25c3e",
+        "stderr_sha256": "5e5dcb15f3db1c6c6c440090937d14ba46cbef6b91ff057b997c1d2bc1045452",
+        "failure": "AssertionError: ('full_contact_identity', {'max_residual': 0.4607624348904489, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "bond_contact_factor",
+        "source_sha256": "b30df8b122c194b29715d5ce965c7cb206992d4d1afa40dcc974511a4b0f6e11",
+        "stderr_sha256": "ac386c70c38f3f0dc4bc212b963539b0b19449a00fbde00a6cfc20c78993e1cf",
+        "failure": "AssertionError: ('full_contact_identity', {'max_residual': 0.30551864696914877, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "all_momentum_arithmetic_factor",
+        "source_sha256": "65bf694453c9e5ca4cf3c6dab7cfab806f1b73380e0681227dc03291021f469c",
+        "stderr_sha256": "8b46b2815476adcc9c70c8b6a6007fd606384a6b77ea1576ed98cdbf4fa21b00",
+        "failure": "AssertionError: ('all_momentum_arithmetic_vs_position_Hessian', {'max_residual': 0.06951971457343578, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "finite_global_bound",
+        "source_sha256": "5502650553137e832a844a6bf26b76c74b8acd6000da900baac0545981de0074",
+        "stderr_sha256": "a44272c8b4d04bdf784ccb5815715ec71d938449bc69fb5abcbf8211b1a9a01d",
+        "failure": "AssertionError: ('finite_global_bound_1', {})"
+      },
+      {
+        "name": "actual_geometric_Hamiltonian",
+        "source_sha256": "b879cf1f48f20f97db8628288f0a70d929447730d1abceb518dab1ffe767e497",
+        "stderr_sha256": "91d0f58ebf35363e8ff8e6d6e5981d43a499e1286264bf80889a9623c534e1c9",
+        "failure": "AssertionError: ('actual_energy_second_derivative_C', {'max_residual': 2.697020670961739, 'tolerance': 3e-07})"
+      },
+      {
+        "name": "inhomogeneous_source_lapse",
+        "source_sha256": "56851553e22fe318056d30e729a1edd12e61d21e8e54febbc92a7c32bf542ead",
+        "stderr_sha256": "329105bdfb9e1dc01bd5d59d1c0b6fb74d98594226c702f6336f9cded44dd5b2",
+        "failure": "AssertionError: ('inhomogeneous_source_derivative_C_0', {'max_residual': 0.42924167657092926, 'tolerance': 2e-08})"
+      },
+      {
+        "name": "native_imaginary_hop",
+        "source_sha256": "7276c7188b2c802c6f1bdd2ff3ef34a258e56c7332a8e920cd36dbdf82ad57d8",
+        "stderr_sha256": "293c206b74daa92e45b50b9da2007167cccc346784f2bba8bb4b2fe15f690147",
+        "failure": "AssertionError: ('exact_native_imaginary_hopping_dictionary', {})"
+      },
+      {
+        "name": "current_nonzero_guard",
+        "source_sha256": "aa3da2c98f875b7e87044b46368905fae9487fab13dd8545dacb3ba4e26043b1",
+        "stderr_sha256": "433e0065ab9e387b58d26f39d3c4f8e2d9da57bcdf84913530482779fba997e5",
+        "failure": "AssertionError: ('current_is_nonzero', {})"
+      },
+      {
+        "name": "Fock_CAR_sign",
+        "source_sha256": "a434436080a9584204b540f4c410784988f6a8a54d7c03e92a0d789fdf0d263c",
+        "stderr_sha256": "25f09efd6a9dc9dc7556a87592f06b5d73cc9caf33976e63da9f10b666293fa4",
+        "failure": "AssertionError: ('exact_native_imaginary_hopping_dictionary', {})"
+      },
+      {
+        "name": "candidate_protection",
+        "source_sha256": "2938e70a48c6fae4e1f1377ec2e7f9a4bb72c17d456d031add3ff522a720b897",
+        "stderr_sha256": "9a120366da9493861f0b7556e98e3fba5fda9c0cee8be85c17841b157db12058",
+        "failure": "AssertionError: ('native_generator_candidate_Z_3', {})"
+      },
+      {
+        "name": "exact_ground_lower_bound",
+        "source_sha256": "963f3968f23dec8086611210f629611d7c38d7fc0cfc7ba40a93402541212b33",
+        "stderr_sha256": "a4f4cf046bd4698385bd2144e1dd74a548187907ff889e58c0d037a5880c5963",
+        "failure": "AssertionError: strict_positive_rational_pivot_14"
+      },
+      {
+        "name": "direct_CAR_sign",
+        "source_sha256": "2bd27e09600f84388e00a90d13c46863837b03e7727ffa99ec4471e4d22f6e1a",
+        "stderr_sha256": "0b447ccfced6adcb5f0e96ca73540e7c56c81391f8c3edfde652513f7589da12",
+        "failure": "AssertionError: strict_midpoint_convexity_violation"
+      },
+      {
+        "name": "sqrt_bracket",
+        "source_sha256": "83edd18bd2b10489c768778d049739c9ec8ab4841c1b038ed81d790363a28a8f",
+        "stderr_sha256": "79b7a988d202a6f320fb325e92e7d00fddb054689f5cb4f5ad126d14ee6f0692",
+        "failure": "AssertionError: exact_sqrt_bracket_-1"
+      },
+      {
+        "name": "midpoint_trial_data",
+        "source_sha256": "9f0e0fececd0d6a0f8f8d6ca66df0fd1e56a3e6a306cc2f7c9f7912b337f53e4",
+        "stderr_sha256": "cfbea0e63d0e8474b1c2717861ae952075de1426f5d1de1d7be94ca024ad308a",
+        "failure": "AssertionError: both_opposite_trials"
+      }
+    ]
+  },
+  {
+    "number": 8092,
+    "count": 22,
+    "rows": [
+      {
+        "name": "common_frame_vertex_sign",
+        "source_sha256": "ddd6781ea1cc0a7cf51fdbc0800f5a5bebf1f5f333248ed8fd860082198f109e",
+        "stderr_sha256": "e95219106ddc1c64a713c301b3d6032e9313902a8cae309b35f0ad0d6a1f1b67",
+        "failure": "AssertionError: ('exact_common_frame_tangent_-1', {})"
+      },
+      {
+        "name": "naive_node_frame_order",
+        "source_sha256": "03763fc558855fea616278028de1dc72fc5d44e16c1b42406007192726d21085",
+        "stderr_sha256": "44126adda04b08e2b18d3f1288c526a214e81fce0f6b0b593ff04c8d913b43f6",
+        "failure": "AssertionError: ('exact_naive_frame_tangent_-1', {})"
+      },
+      {
+        "name": "Laurent_second_neighbor_sign",
+        "source_sha256": "f4afb7103e731049025401d714833842c168fc34369306a91922d4a3a099fc84",
+        "stderr_sha256": "365cbbc6ff17c34c18d9f13811b03641c42a32000ce1881b8483a44772c67db8",
+        "failure": "AssertionError: ('Laurent_node_(0, 2, -1)', {})"
+      },
+      {
+        "name": "Laurent_Taylor_constant",
+        "source_sha256": "b6d0fdbca2f9d969036cfc8d62cb6f0ac0c9c2423ac0b30e031fecdc08cac2da",
+        "stderr_sha256": "1d6245da3df48e83ec98ce929acb44e37d19f950f85310d4ba56478478aac515",
+        "failure": "AssertionError: ('Laurent_Taylor_constant_(1/2, 0, 2)', {})"
+      },
+      {
+        "name": "relative_bound_coefficient",
+        "source_sha256": "9213fe11b1d505d15f1fbdb1940c4cdffb625f53f7068383f7c7540582e58754",
+        "stderr_sha256": "2c84eb95b44ead74045141c8fc69d8e3fd5988b42d0fbd46d0c389c7970d35cc",
+        "failure": "AssertionError: ('global_relative_bound_challenge_0.5', {'max_ratio': 0.05247802301696665, 'proved_upper': 0.25})"
+      },
+      {
+        "name": "protected_y_edges",
+        "source_sha256": "e2e45f77c212389583cab33961dea00d2f017fd0e081a8e24623f7669e27a765",
+        "stderr_sha256": "1468bd5a13009ec56856fd07b304b4dd0a09a0299792c002e0c22ba123aea535",
+        "failure": "AssertionError: ('protected_path', (3, 3, 3), 0, 1, (0, 0, 0), (0, 1, 0), 0, 1)"
+      },
+      {
+        "name": "flat_spin_rotation_weight",
+        "source_sha256": "e5bc28145213981a7aeea6b66dec4c13e5eb1e8ffe4f1a95c2ae65557bed49b7",
+        "stderr_sha256": "c67c2654a39c67332de9841553e62a43e4f59bcd7663411e49b1205d1788844d",
+        "failure": "AssertionError: ('arbitrary_function_normal_normal_operator', {})"
+      },
+      {
+        "name": "compact_connection_weight",
+        "source_sha256": "c1696181c3d119b75dc2ec4961c01182047251047b6ffb61f914860ed1b5a30d",
+        "stderr_sha256": "69991ebfa5e4b3fe5da7af028c9e3f2a8d3e4caf9e532b9edc07be4e0fcfac51",
+        "failure": "AssertionError: ('rational_jet_0_full_half_density_connection_-1', {})"
+      },
+      {
+        "name": "metric_frame_order",
+        "source_sha256": "197e3d15b7bfbd1a879643b01f1ec76808c0bba32965f31e9784af393c505679",
+        "stderr_sha256": "0df063bd688d4662ee0a37bf5b7a3b7732b5a60817668bd6ff63bd1981dbeaf4",
+        "failure": "AssertionError: ('rational_jet_3_connection_antisymmetric_0', {})"
+      },
+      {
+        "name": "density_connection_weight",
+        "source_sha256": "bf6cd2745deba8004ad9dfedb9766e477491125bfa25492c65d8fa049989ee3a",
+        "stderr_sha256": "0a656c9d241c7c7d245637119086e96fee6fbf91d913ab870c15f74ae420610c",
+        "failure": "AssertionError: ('rational_jet_0_full_half_density_connection_-1', {})"
+      },
+      {
+        "name": "curved_spin_transport_weight",
+        "source_sha256": "5b082084f2134454958d51b5947485907b933219e33100dc03da356a45fe21b7",
+        "stderr_sha256": "f260ea3c750503d28c19af8d3f58502a22d55d56c5d88feb6c01802146bbbe21",
+        "failure": "AssertionError: ('rational_jet_0_curved_normal_commutator_spin_-1', {})"
+      },
+      {
+        "name": "curved_drift_metric",
+        "source_sha256": "423abce8b67639c2a5fe16d68f1244a36073961d61e342d6effc8dfd0b429055",
+        "stderr_sha256": "d7af69c068b2331657c89d5d30147f465ee3d51f961b4e5203fcb3f8b1a73288",
+        "failure": "AssertionError: ('rational_jet_0_curved_normal_commutator_drift_(-1, 0)', {})"
+      },
+      {
+        "name": "polar_metric_power",
+        "source_sha256": "7ac3b3701656148b10c65fcf012df42a5dd451830758a8716c580dd230a2117c",
+        "stderr_sha256": "31a168378613633c0eb994ba95a89616cd32769c40e4e12b13c602336c902920",
+        "failure": "AssertionError: ('finite_polar_frame_composition_0', {})"
+      },
+      {
+        "name": "polar_rotation_variation",
+        "source_sha256": "14526a4023357114bacba30b9d79cec3a7e20666f70327b5abd8238c76e84558",
+        "stderr_sha256": "2cdbc0b4be006c33144556b514532cefcd66a57ed5c2a98389034866914b355d",
+        "failure": "AssertionError: ('polar_rotation_metric_derivative', {})"
+      },
+      {
+        "name": "Neumann_series_sign",
+        "source_sha256": "bba4025ef6c526ecf9fbd13474a8740812c4ffa9b73f2339334ff8a905b9255c",
+        "stderr_sha256": "ca546dcda634d47427116dba6198756361d3fb6ec1091e3c738e621d9fa0631f",
+        "failure": "AssertionError: ('xy_shear_reference_connection', {'analytical_tail_bound': 5.464932357140647e-32})"
+      },
+      {
+        "name": "numerical_orientation",
+        "source_sha256": "c9adc1e4d18f2c4284b3b87a8534e16e4c3a018d1adba866d2cf61500367459d",
+        "stderr_sha256": "3a772c97d2a0be339ed5ece56b9634aa9fb6f569a9109c8321ed5472816a2283",
+        "failure": "AssertionError: ('exact_xy_connection_formula', {})"
+      },
+      {
+        "name": "central_frame_derivative",
+        "source_sha256": "ee4e57b5fb8e07c7814b96b5e7a742c25bfdf5bbbeb62ce5ba2658fe6f7378db",
+        "stderr_sha256": "f0d28151cd5993cfaf7ed5a4f357f98152ef536789b2f85172640d60547575b3",
+        "failure": "AssertionError: ('xy_shear_local_connection_bound_(-1, 0.06)', {})"
+      },
+      {
+        "name": "variable_xz_vertex",
+        "source_sha256": "3584863630828307aa932c663b0f2e4d98e3af63290ebda2a419e10e563aaecb",
+        "stderr_sha256": "fa88de5d734b03d3660258b0e59b192375a990d3f38078b36ccc284bb8c5759f",
+        "failure": "AssertionError: ('all_shears_operator_bound_(-1, 1e-06)', {'error': 0.01212435573360764, 'analytical_bound': np.float64(5.095253825710842e-05), 'reference_tail': 3.6191746487836835e-30})"
+      },
+      {
+        "name": "connection_chirality",
+        "source_sha256": "1e967e8246fc0bcd47cbaa0012b51384d4a4d93d86432073ab8600b88103bb6c",
+        "stderr_sha256": "fdd543da820cd19a63407607c1b4e99a36a8b227ba1096086c22f3cb7191f955",
+        "failure": "AssertionError: ('xy_shear_operator_bound_(-1, 1e-06)', {'error': 0.00013720725182496117, 'analytical_bound': np.float64(4.589472139422917e-05), 'reference_tail': 5.464932357140647e-32})"
+      },
+      {
+        "name": "operator_bound_coefficient",
+        "source_sha256": "151dc9ecbc0e1aaefb11c973f2c7a3d0c51f4693a908cf49cc05ae79970299c1",
+        "stderr_sha256": "ba6a1e71df008f645349a70a308488387ef993f2ea287db4f5f9de06c117ca4b",
+        "failure": "AssertionError: ('xy_shear_operator_bound_(-1, 0.12)', {'error': 0.07102703158554183, 'analytical_bound': np.float64(4.326684096176537), 'reference_tail': 5.464932357140647e-32})"
+      },
+      {
+        "name": "native_path_phase",
+        "source_sha256": "a942b5115444b182cbc1bca7df3eee63d4c8c3ff47ae1ce53d59546afe8bd010",
+        "stderr_sha256": "976ec82aa3400f1f944877833bb7a521815d5e6c9d2956a9948429259c1b33e3",
+        "failure": "AssertionError: native_path_endpoint_2"
+      },
+      {
+        "name": "native_imaginary_hopping_sign",
+        "source_sha256": "7487191aa2a9b0624c56340bc7aed21d5b1122989b3010124ae027aa198e03b4",
+        "stderr_sha256": "89c4a7bd9175488b33a97f195731508a9247e7b1f047cc5f30909c00a77f2ce7",
+        "failure": "AssertionError: native_imaginary_hopping_1"
+      }
+    ]
+  },
+  {
+    "number": 8094,
+    "count": 31,
+    "rows": [
+      {
+        "name": "pauli_overlap",
+        "source_sha256": "4881ce5f311d4cdaec569c7c7853d9f624b29cbdefabe64d788a4d79df14827f",
+        "stderr_sha256": "37363ad1ecb8120cd3775813295489cfda3e6ca53e2ca6618d29b42389bac483",
+        "failure": "AssertionError: ('Pauli_trace_real_arbitrary_components', {})"
+      },
+      {
+        "name": "pauli_imaginary",
+        "source_sha256": "cb73620691da15def4e6606987b05c8e7c5de54e09165c255acff1e104e6d1bc",
+        "stderr_sha256": "7026ee731cb95a11b739c697290ea096b1b7c63c89d37282e979f19d215e5bc7",
+        "failure": "AssertionError: ('Pauli_trace_imaginary_arbitrary_components', {})"
+      },
+      {
+        "name": "occupation_sign",
+        "source_sha256": "534031c2ac4996401455e9e510c6a5b1bdb4067927210e26b7ad1fcfc972d31e",
+        "stderr_sha256": "f591f2cfdaeab75cef0737ea974e240ac09324317ea90dd2d06dcee0cf6cf291",
+        "failure": "AssertionError: ('real_path_hopping_1', {'max_residual': 2.0, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "path_phase",
+        "source_sha256": "d1d4ea236b3107d03ceda988cb4801c7743e7e3fa525b64420b6a892c743f1df",
+        "stderr_sha256": "995be4a70c60cba5f6b61ca9b424383d6ad9ab276730490f0833c7f2229d7482",
+        "failure": "AssertionError: ('ordered_Majorana_path_2', {'max_residual': 2.0, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "imaginary_hopping",
+        "source_sha256": "af1cd2f124687ccd4e5ba830d0479f5f07ed8d5ddd0938e49b28a62f819a801d",
+        "stderr_sha256": "0eeca3140787c62f4b410c03cd57a85b66a5dd56f3c97fcfa9ba07a08b5186af",
+        "failure": "AssertionError: ('imaginary_path_hopping_1', {'max_residual': 2.0, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "path_range",
+        "source_sha256": "1669fbf772088b34cdf231f783b8942f30f146a7c8b96c9b2796a5e3d29c5c36",
+        "stderr_sha256": "2efa44ac674ff5e62eeb82cf3c19a32a5ef8ce54650b1bdf6260bab49bbe6d9e",
+        "failure": "AssertionError: ('protected_vertex_paths_(1, 3, 3)', {'hops_checked': 194, 'maximum_length': 99})"
+      },
+      {
+        "name": "connection_quadratic",
+        "source_sha256": "3fef7117b75796a886f1cb7bb957be8e91cd7d527c50030b64fc0b44e2dd65e2",
+        "stderr_sha256": "92a70c9a3a1867e1f3eea67e30ffab1e47121cb590a1496e1945e7e70937d8a3",
+        "failure": "AssertionError: ('connection_quadratic_term_generic', {})"
+      },
+      {
+        "name": "koszul_sign",
+        "source_sha256": "04f07a2ee85ff14306b149ba3c2f788bf946f15d8039c24e08a25076b5c0d477",
+        "stderr_sha256": "97f852da097da49bc992cc89149d719bbbf08699ee4e0a815e97238e1dcafa71",
+        "failure": "AssertionError: ('Koszul_axial_contraction', {})"
+      },
+      {
+        "name": "geometric_scalar",
+        "source_sha256": "817d1e99fa351b5d2035be40cf1b065a6d751e61af22d5ba0fa15e6d8b462352",
+        "stderr_sha256": "6d093474ad3c49864bf86d21849432c0a0766acc2b65c1420d93831c8714cabb",
+        "failure": "AssertionError: ('geometric_scalar_and_vector_parts', {})"
+      },
+      {
+        "name": "native_nodes",
+        "source_sha256": "fd1cd9d0e756cfca86ebe3f72335b36e998ed08ea0fccff8a7597999b3c29d04",
+        "stderr_sha256": "25e74c6e4926e2844d4654b9142b7ef6ae169d248af9ef79b8fcef8bac31dcdb",
+        "failure": "AssertionError: ('native_zero_-1', {})"
+      },
+      {
+        "name": "frame_jet",
+        "source_sha256": "05c1a47fa2217aac39c8b89e36d32bf2dc426d998e7333d87e78876c431741f6",
+        "stderr_sha256": "5dc9aaf55862470fb8a864aa78233383aeee58d07c5dc09ca432733afc82c3a2",
+        "failure": "AssertionError: ('frame_vertex_jet_(-1, 2)', {})"
+      },
+      {
+        "name": "annulus_frequency",
+        "source_sha256": "1cabb7463b3b6749eabfd3544c6b7ec94d20cca5253fb04cc43d3f546cb49456",
+        "stderr_sha256": "ddcf95032b525efd98bbbfd37d6e117d0015663c7b655e9d9c1ce67a5c65e8de",
+        "failure": "AssertionError: ('annulus_coefficient_0', {})"
+      },
+      {
+        "name": "sphere_moment",
+        "source_sha256": "7faf768270b826ac960f29ace934a4c7b86047fc18d7e7e9f42d9f49605e3082",
+        "stderr_sha256": "af01c342a100fcbf44cdcf8a8d60817d6b48754adef3df07585c6923826d975b",
+        "failure": "AssertionError: ('all_symmetric_polarizations_all_frequency_ratios', {})"
+      },
+      {
+        "name": "stress_trace",
+        "source_sha256": "66cadfeaf249c9e5040c97c23bdd53dd16993f1b7ab4f925c82e18d5aae654db",
+        "stderr_sha256": "5c44c0a8e7c2acbb78cb7d23282a24496ef6cc7ad739b9c18b4ca65a54f50db1",
+        "failure": "AssertionError: ('all_symmetric_polarizations_all_frequency_ratios', {})"
+      },
+      {
+        "name": "node_multiplicity",
+        "source_sha256": "4ec46e858a770ff1fbe873fed64301471d7e8c542905fe1e8f0b688832fa2ca1",
+        "stderr_sha256": "3dfcbb5697a2f1b1acdde8dbbc6cf5e6386884074722187cd566fbc61b78b2e0",
+        "failure": "AssertionError: ('two_node_measure_coefficient', {})"
+      },
+      {
+        "name": "dirac_normalization",
+        "source_sha256": "bed42b09af5ff93d8be62db0eea2f1329ed029bb565ae3954d1733d49858fe42",
+        "stderr_sha256": "7c456be3f4550f915d57500fdb3b55fd47c85b827f4f46294bf630cd4ab2cbaf",
+        "failure": "AssertionError: ('Dirac_primary_source_normalization', {})"
+      },
+      {
+        "name": "ellipsoid_fourth_moment",
+        "source_sha256": "f333b2ce625841b359f0afd7c7606541044bf597e2cfd62c6f3213d06283b56e",
+        "stderr_sha256": "e1a78fb4049b93b28358cd5341509f8c6bc8d939b3d701f8ebf231bd58d37cb9",
+        "failure": "AssertionError: ('ellipsoid_fourth_moment_contraction', {})"
+      },
+      {
+        "name": "ellipsoid_measure",
+        "source_sha256": "470dcf89d204ef8e947ccba602b40c7b2c9d5ad17f6a21a3b23105e3f6e0e1f4",
+        "stderr_sha256": "04d47c4feee8eba4dd2cbd3ee67e9814d63cb84e5ef35ac4415ba331775ac71c",
+        "failure": "AssertionError: ('ellipsoid_measure_two_nodes', {})"
+      },
+      {
+        "name": "dispersion_division",
+        "source_sha256": "8bcc000a4126a53a8abb3bd4c19176ea3bad00cc21961a3dc2fc49e10afd0c3b",
+        "stderr_sha256": "7a454d91fc2305e621fe2e73e5d76987e11a5c4bcf6ed61b37bfd66dae54ec69",
+        "failure": "AssertionError: ('dispersion_polynomial_division', {})"
+      },
+      {
+        "name": "fierz_pauli_divergence",
+        "source_sha256": "201afe7c2b227423b9c1cca32d78767f9da2ce868bce178f16beff2baf7263d9",
+        "stderr_sha256": "8314239f7edf7459f788c4076cc7bf251aa4dce47d90152b7bb8b9bf33037a03",
+        "failure": "AssertionError: ('spatial_Fierz_Pauli_tensor', {})"
+      },
+      {
+        "name": "finite_contact_scale",
+        "source_sha256": "8a5ed480160e855c4af994681b62323c316bd841f6c707e0d86b3bec581d3939",
+        "stderr_sha256": "94344d77be8dfc69e3bc16e4e1d46782a1cb1a23320d373cd83721105af86e2d",
+        "failure": "AssertionError: ('finite_physical_gradient_contact_limit', {})"
+      },
+      {
+        "name": "one_particle_scale",
+        "source_sha256": "ec630e5e121e165fd191ccf4969befb1a79b02f25bb6c291d60dab339f1023ca",
+        "stderr_sha256": "e87b8ce30779ff241cab5b7143c1e5ac5cd53a01eab5eb37db12ae17492d77e3",
+        "failure": "AssertionError: ('vanishing_one_particle_contact_bound', {})"
+      },
+      {
+        "name": "pair_shell",
+        "source_sha256": "5e402fcbae9edb06da3044924e1b6085a291be5a631d45039ea68dfbfe828da9",
+        "stderr_sha256": "a231a2f6c9cbd2a68dc2fb35bd7cda4cba2ce8aad43feeafae815c175ca22268",
+        "failure": "AssertionError: ('pair_shell_energy_([0.0, 0.0, 0.3], np.float64(0.37))', {'max_residual': 0.06530756946707916, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "spectral_density",
+        "source_sha256": "8a3822e034074f4d3d799be93d6dac48308051d383c291227788137ca3bb6f98",
+        "stderr_sha256": "ae2fc8baac5ea8d10de04a43bccea471fb273624fe4468634d31ec0fe8930f2b",
+        "failure": "AssertionError: ('full_shell_projector_density_([0.0, 0.0, 0.3], np.float64(0.37))', {'max_residual': 3.956087726173068e-06, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "twisted_boundary",
+        "source_sha256": "ed0b32e78545feed11aaa22305cfdc3dbcdb5ae4bbb2d42b7629d5f394fa0789",
+        "stderr_sha256": "d92ca131c70ff2abf4eee65772af3dd481c873a6b17461675783b690709329d5",
+        "failure": "AssertionError: ('shift_symbol_0', {'max_residual': 0.05513629102625654, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "native_finite_vertex",
+        "source_sha256": "1847dbbd75a735ea0966346816d7e1e85e837bfbc9d63607d7cb0f50a2474e91",
+        "stderr_sha256": "82baa920911ec67dd45b78e080c83544c42c705213ce36cefbd97dc4fd3857b6",
+        "failure": "AssertionError: ('full_seven_source_position_response_(0.5, (0, 0, 0), 0.0)', {'max_residual': 0.017715746941376186, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "finite_frequency",
+        "source_sha256": "4ef8237ab9c283cf03188343b2d82854d145438ba3b9bbfc2e114932d2fe9840",
+        "stderr_sha256": "ceda8f76caedf52cf07fec6bda91da57c0690da88ba597605c8968bce68a5867",
+        "failure": "AssertionError: ('full_seven_source_position_response_(0.5, (0, 0, 0), 0.47)', {'max_residual': 0.006825550826511734, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "mixed_lapse_contact",
+        "source_sha256": "8e9c6d86a1cb76c3cac679b8a1d990875a35e1035d9f54ba3ea8b81060b3c2fd",
+        "stderr_sha256": "9b4f9455d52ac458846d5d7fbded722b01cc2341c6065a3d2ff559128f44afed",
+        "failure": "AssertionError: ('joint_lapse_frame_mixed_contacts_(0.5, (0, 0, 0))', {'max_residual': 0.24893560104239376, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "joint_hamiltonian_contact",
+        "source_sha256": "bd15a29cd2b89428baccba392fd83e6105b620cb3e142af8cce0cb77e8eb13cb",
+        "stderr_sha256": "c22a3f5439a1d9de68c0323ef64c438762fa1917670d01e32a7d83a682b662da",
+        "failure": "AssertionError: ('joint_contact_from_mixed_hessian_0.5', {'max_residual': 0.0061440416558408185, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "native_density_contact",
+        "source_sha256": "c6a5cef221ca5c0b6fff5afa01882abe90556919bf131a7599e1cf5e4f7301d9",
+        "stderr_sha256": "8f8fbf44046c4d911bc82232023f4eb31769cbfa49da5a44935ca1e9f5abd6a8",
+        "failure": "AssertionError: ('on_site_contact_exact_0.5', {'max_residual': 0.6256637120812691, 'tolerance': 2e-11})"
+      },
+      {
+        "name": "geometric_mixed_contact",
+        "source_sha256": "fb4365229100a1ad554b350a52e420471cb54fc6389d834360e8dd0c0e1af0be",
+        "stderr_sha256": "13940ed0a6ea7c3ad4223be46672e42f5038f8c88cb19fb03e2e87f55ac03112",
+        "failure": "AssertionError: ('geometric_contact_quadratic_limit_(0.5, 0.03)', {'normalized_error': 0.5509962232336936})"
+      }
+    ]
+  }
+]

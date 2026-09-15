@@ -1,0 +1,6 @@
+{
+  "runner": "scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py",
+  "limit_sec": 60,
+  "preexecution_record_sha256": "bb8790fcde355524113e9473b7419040cb0202eddfa87bd53d9b215840035007",
+  "original_output_sha256": "c768b587e3ffbae272b9fb93a441a576411f85ed3f28b760148152aba582c088"
+}

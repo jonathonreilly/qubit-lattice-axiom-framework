@@ -1,0 +1,8 @@
+{
+  "url": "https://arxiv.org/pdf/hep-th/9307010v2",
+  "path": "/private/tmp/review-drain-20260915/check8094/osborn-petkou-v2.pdf",
+  "sha256": "14fb70395e6ad923a68521fc6a082ac8cd4ac9dfe79200f85eb60573d2566f50",
+  "read_scope": "Equation 5.6 and equations 8.7\u20138.11, definitions and differential normalization; not the full three-point proof.",
+  "role": "Independent normalization comparator; no imported native continuum theorem.",
+  "conclusion": "One Dirac field CT=2/pi^4 and differential denominator320 agree with the derived two-node stress coefficient."
+}

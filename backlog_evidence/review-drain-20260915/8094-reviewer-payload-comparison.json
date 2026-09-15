@@ -1,0 +1,411 @@
+{
+  "excluded_metadata": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "differences": [
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/9/gap",
+      "old": 0.49999999999999906,
+      "new": 0.5000000000000002,
+      "absolute_difference": 1.1657341758564144e-15
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/39/max_residual",
+      "old": 3.885780586188048e-16,
+      "new": 4.996003610813204e-16,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/40/max_residual",
+      "old": 1.5959455978986625e-16,
+      "new": 1.734723475976807e-16,
+      "absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/41/max_residual",
+      "old": 3.2612801348363973e-16,
+      "new": 3.931317077432439e-16,
+      "absolute_difference": 6.700369425960417e-17
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/44/max_residual",
+      "old": 4.996003610813204e-16,
+      "new": 3.3306690738754696e-16,
+      "absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/45/max_residual",
+      "old": 7.216449660063518e-16,
+      "new": 5.551115123125783e-16,
+      "absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/46/max_residual",
+      "old": 2.3592239273284576e-16,
+      "new": 2.636779683484747e-16,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/74/max_residual",
+      "old": 8.336956254519375e-17,
+      "new": 8.332100742031482e-17,
+      "absolute_difference": 4.8555124878921816e-20
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/75/max_residual",
+      "old": 1.66554981563918e-16,
+      "new": 3.3310626158778204e-16,
+      "absolute_difference": 1.6655128002386403e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/77/max_residual",
+      "old": 3.903224743417866e-09,
+      "new": 3.6400610303743974e-09,
+      "absolute_difference": 2.631637130434683e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/78/max_residual",
+      "old": 1.2142313821073003e-09,
+      "new": 2.99639513201555e-09,
+      "absolute_difference": 1.7821637499082499e-09
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/85/max_residual",
+      "old": 3.1086244689504383e-15,
+      "new": 4.440892098500626e-15,
+      "absolute_difference": 1.3322676295501878e-15
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/87/max_residual",
+      "old": 4.2530334809498527e-10,
+      "new": 2.852376113082755e-10,
+      "absolute_difference": 1.4006573678670975e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/88/max_residual",
+      "old": 1.7104317961980087e-10,
+      "new": 8.815845831122715e-10,
+      "absolute_difference": 7.105414034924706e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/89/max_residual",
+      "old": 7.21854576113401e-10,
+      "new": 1.1311840353300795e-11,
+      "absolute_difference": 7.105427357601002e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/90/max_residual",
+      "old": 2.741757931801203e-10,
+      "new": 2.741749050017006e-10,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/91/max_residual",
+      "old": 8.329821277186511e-10,
+      "new": 5.881037878907591e-10,
+      "absolute_difference": 2.44878339827892e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/92/max_residual",
+      "old": 6.708509303621213e-10,
+      "new": 3.9691805397978897e-11,
+      "absolute_difference": 6.311591249641424e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/details/94/gradient_max",
+      "old": 5.473105980957822e-11,
+      "new": 5.517155357181088e-11,
+      "absolute_difference": 4.4049376223265994e-13
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/curvature/A/finite_difference",
+      "old": -0.6819722624971679,
+      "new": -0.6819722622340039,
+      "absolute_difference": 2.631640461103757e-10
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/curvature/A/spectral",
+      "old": -0.6819722585939432,
+      "new": -0.6819722585939428,
+      "absolute_difference": 3.3306690738754696e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/curvature/C/finite_difference",
+      "old": 2.015048409678802,
+      "new": 2.0150484054681783,
+      "absolute_difference": 4.210623849587591e-09
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/curvature/C/spectral",
+      "old": 2.015048408464571,
+      "new": 2.0150484084645734,
+      "absolute_difference": 2.6645352591003757e-15
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/bond_means/0",
+      "old": -0.2501750459440926,
+      "new": -0.2501750459440928,
+      "absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/bond_means/1",
+      "old": -0.2501750459440926,
+      "new": -0.2501750459440928,
+      "absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/bond_means/2",
+      "old": -0.1106872020501117,
+      "new": -0.11068720205011176,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/static_solution/norm",
+      "old": 0.0024470669472923716,
+      "new": 0.0024470669466488647,
+      "absolute_difference": 6.435069491161904e-13
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/static_solution/min_lapse",
+      "old": 0.9998667985469489,
+      "new": 0.999866798546984,
+      "absolute_difference": 3.5083047578154947e-14
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/static_solution/objective",
+      "old": -8.99109857454854e-06,
+      "new": -8.99109859824076e-06,
+      "absolute_difference": 2.3692219654246685e-14
+    },
+    {
+      "path": "native_lapse_source_contact_response_2026_09_13/free/static_solution/gradient_max",
+      "old": 5.473105980957822e-11,
+      "new": 5.517155357181088e-11,
+      "absolute_difference": 4.4049376223265994e-13
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/69/gap",
+      "old": 0.4910256418353724,
+      "new": 0.49102564183537223,
+      "absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/71/max_residual",
+      "old": 9.084675407258436e-17,
+      "new": 9.084675407258412e-17,
+      "absolute_difference": 2.341930812374879e-31
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/73/max_residual",
+      "old": 9.058256945103601e-17,
+      "new": 9.058256945103578e-17,
+      "absolute_difference": 2.341930812374879e-31
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/75/max_residual",
+      "old": 8.8275176447927e-17,
+      "new": 8.827517644792679e-17,
+      "absolute_difference": 2.0954117794933126e-31
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/77/max_residual",
+      "old": 5.551115123125783e-17,
+      "new": 8.326672684688674e-17,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/78/max_residual",
+      "old": 2.5153490401663703e-17,
+      "new": 3.122502256758253e-17,
+      "absolute_difference": 6.071532165918825e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/80/max_residual",
+      "old": 2.6020852139652106e-17,
+      "new": 2.949029909160572e-17,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/82/max_residual",
+      "old": 2.3418766925686896e-17,
+      "new": 2.862293735361732e-17,
+      "absolute_difference": 5.204170427930421e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/84/max_residual",
+      "old": 2.7281237165166505e-17,
+      "new": 2.7755575615628914e-17,
+      "absolute_difference": 4.743384504624082e-19
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/85/errors/0",
+      "old": 2.1838544167485097e-09,
+      "new": 1.9470068387400508e-09,
+      "absolute_difference": 2.368475780084589e-10
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/87/max_residual",
+      "old": 1.176875180641801e-09,
+      "new": 2.1242654961450835e-09,
+      "absolute_difference": 9.473903155032826e-10
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/89/max_residual",
+      "old": 1.1826217116706061e-08,
+      "new": 1.2773607283023125e-08,
+      "absolute_difference": 9.473901663170636e-10
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/90/max_residual",
+      "old": 4.5102810375396984e-17,
+      "new": 3.8163916471489756e-17,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/92/max_residual",
+      "old": 4.85722573273506e-17,
+      "new": 3.122502256758253e-17,
+      "absolute_difference": 1.734723475976807e-17
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/94/max_residual",
+      "old": 4.163336342344337e-17,
+      "new": 2.7755575615628914e-17,
+      "absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/96/max_residual",
+      "old": 2.0816681711721685e-17,
+      "new": 2.7755575615628914e-17,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/98/max_residual",
+      "old": 1.4831898140452791e-16,
+      "new": 6.730745840587086e-16,
+      "absolute_difference": 5.247556026541807e-16
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/101/gap",
+      "old": 0.48144713710422893,
+      "new": 0.4814471371042291,
+      "absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/102/max_residual",
+      "old": 8.881784197001252e-16,
+      "new": 1.4432899320127035e-15,
+      "absolute_difference": 5.551115123125783e-16
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/103/max_residual",
+      "old": 2.0001313505576435e-16,
+      "new": 2.0001313505576393e-16,
+      "absolute_difference": 4.190823558986625e-31
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/105/max_residual",
+      "old": 1.9862212099522655e-16,
+      "new": 1.986221209952261e-16,
+      "absolute_difference": 4.437342591868191e-31
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/107/max_residual",
+      "old": 1.9102627420454723e-16,
+      "new": 1.9102627420454676e-16,
+      "absolute_difference": 4.683861624749758e-31
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/109/max_residual",
+      "old": 1.1102230246251565e-16,
+      "new": 2.220446049250313e-16,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/110/max_residual",
+      "old": 1.3877787807814457e-17,
+      "new": 1.9081958235744878e-17,
+      "absolute_difference": 5.204170427930421e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/112/max_residual",
+      "old": 1.3877787807814457e-17,
+      "new": 2.0816681711721685e-17,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/114/max_residual",
+      "old": 1.3877787807814457e-17,
+      "new": 1.8214596497756474e-17,
+      "absolute_difference": 4.336808689942018e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/116/max_residual",
+      "old": 1.1102230246251565e-16,
+      "new": 4.163336342344337e-17,
+      "absolute_difference": 6.938893903907228e-17
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/117/errors/0",
+      "old": 2.5345087313610737e-09,
+      "new": 3.2450514775295147e-09,
+      "absolute_difference": 7.10542746168441e-10
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/117/errors/1",
+      "old": 7.813573694309683e-10,
+      "new": 2.0608135840177733e-09,
+      "absolute_difference": 1.279456214586805e-09
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/118/max_residual",
+      "old": 6.938893903907228e-18,
+      "new": 0.0,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/119/max_residual",
+      "old": 1.086362451385714e-09,
+      "new": 8.084181865597451e-10,
+      "absolute_difference": 2.779442648259689e-10
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/120/max_residual",
+      "old": 4.440892098500626e-16,
+      "new": 0.0,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/121/max_residual",
+      "old": 7.548022207259919e-09,
+      "new": 8.495413039710797e-09,
+      "absolute_difference": 9.473908324508784e-10
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/122/max_residual",
+      "old": 2.0816681711721685e-17,
+      "new": 2.42861286636753e-17,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/124/max_residual",
+      "old": 1.5178830414797062e-17,
+      "new": 2.0816681711721685e-17,
+      "absolute_difference": 5.637851296924623e-18
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/128/max_residual",
+      "old": 5.551115123125783e-17,
+      "new": 2.3418766925686896e-17,
+      "absolute_difference": 3.209238430557093e-17
+    },
+    {
+      "path": "native_weyl_stress_logarithm_contact_response_2026_09_13/checks/130/max_residual",
+      "old": 2.866638867295409e-16,
+      "new": 5.48617735789434e-16,
+      "absolute_difference": 2.6195384905989306e-16
+    }
+  ],
+  "boundary": "Exact structural and nonfloat comparison;67 floating fields vary by at most4.210624e-9, dominated by finite-difference cancellation. Original primary assertions/tolerances remain unchanged and passed. Initial1e-10 cross-output comparison stopped before final reports; preserved separately, no science rerun."
+}

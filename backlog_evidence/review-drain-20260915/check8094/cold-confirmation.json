@@ -1,0 +1,52 @@
+{
+  "status": "PREEXECUTION_SOURCE_CORRECTIONS_CONFIRMED_NOT_FINAL_PASS",
+  "source_base": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+  "source_tree": "fbd2e58a6944b69a09d02ecdc65adf31ad0c9b15",
+  "reviewer_session": "/root/review_8011",
+  "scope": "Joint review of original PR8091 lapse, PR8092 common frame and PR8094 stress/contact arguments; three supplied-model bounded theorems, not a full gravitational dynamics result.",
+  "original_review": "All original canonical proofs/primaries and historical Markdown, mutation harnesses and recovery differences read; original 363 paths bound. No new science correction required.",
+  "correction_confirmation": "Exact three appended historical paragraphs and two actual-count TOTAL footers verified; all formulas, predicates, tolerances, declared inputs and original output/cache bytes unchanged.",
+  "independent_controls": "Seven controls passed without primary imports/execution; 73 archived mutation variants reconstructed exactly and scientific failure stderr checked.",
+  "dependency_scope": "Native edge/CAR theorem and current minimal memo are actual repository premises; their exact reviewed hashes unchanged. Each new note reconstructs its own additional proof, no sibling premise is silently imported. Current source additions do not change these conditional supplied-model hypotheses.",
+  "methodology_transition": "Read landed SKILL, UNIT_RECEIPT and receipt-helper delta introducing version2 supporting_proofs. Version1 remains supported and appropriate: all three current scientific notes have their own primaries; archive raw review histories are explicitly historical, not current proof fragments.",
+  "methodology_resources": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+      "installed_sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "installed_sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+      "installed_sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+      "installed_sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+      "installed_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "installed_sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+      "installed_sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+    }
+  ],
+  "capture_confirmation": "Read 8094-author-capture.py: shared-preflight tree/record gate, exact initial input hashes, exclusive original-output and attempt files, one60second execute_and_write_cache per primary, expected218/423/133 TOTAL counts, only designated outputs/caches permitted to change. No primary execution by reviewer.",
+  "external_methods": "Finite spectral perturbation, trace variational identity and spin geometry are reconstructed mathematical methods under stated hypotheses. Osborn\u2013Petkou v2 is a separately verified normalization comparator, not an imported native theorem. Full PDF remains local; published metadata only.",
+  "remaining": "Root shared mechanical preflight, three canonical captures, final independent source/cache/output binding."
+}

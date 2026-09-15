@@ -1,0 +1,6 @@
+{
+  "runner": "scripts/native_lapse_source_contact_response_2026_09_13.py",
+  "limit_sec": 60,
+  "preexecution_record_sha256": "bb8790fcde355524113e9473b7419040cb0202eddfa87bd53d9b215840035007",
+  "original_output_sha256": "cccdd64f26c57f261e8e44790ef60323e6cdf162347fefa87c93fd85d7e89372"
+}

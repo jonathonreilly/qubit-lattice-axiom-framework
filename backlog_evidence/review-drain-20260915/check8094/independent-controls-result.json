@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "checks": [
+    {
+      "name": "arithmetic_plus_contact_equals_congruence"
+    },
+    {
+      "name": "opposite_free_curvature_signs"
+    },
+    {
+      "name": "direct_congruence_energy_curvature"
+    },
+    {
+      "name": "rotating_frame_connection_sign"
+    },
+    {
+      "name": "spectral_shell_from_eigenvectors",
+      "residual": 1.0842021724855044e-19
+    },
+    {
+      "name": "isotropic_shell_frequency_cancels"
+    },
+    {
+      "name": "Dirac_two_node_normalization"
+    }
+  ],
+  "count": 7,
+  "elapsed_seconds": 0.01430945796892047
+}

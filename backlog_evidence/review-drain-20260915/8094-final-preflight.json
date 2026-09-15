@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8091-8092-8094-final",
+  "tree": "025c01c9dda284cf8a0936a00c23713ec1aad222",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_common_frame_spin_connection_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_common_frame_spin_connection_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8092-evidence/kept/pr8092-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_lapse_source_contact_response_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_lapse_source_contact_response_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8091-evidence/kept/pr8091-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_weyl_stress_logarithm_and_contact_response_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8094-evidence/kept/pr8094-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8751,
+      "misses": 4364
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4362
+    },
+    "declared_inputs": {
+      "hits": 8779,
+      "misses": 4495
+    }
+  },
+  "record_sha256": "65b4b1413ee841d77af1d0b87192e5e37dfb595ec4fc845751a6007b8a58262a",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

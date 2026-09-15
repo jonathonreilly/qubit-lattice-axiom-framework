@@ -1,0 +1,1633 @@
+{
+  "status": "PASS",
+  "checks": 423,
+  "families": {
+    "flat_spin": {
+      "status": "PASS",
+      "checks": 8,
+      "details": [
+        {
+          "name": "arbitrary_function_normal_normal_operator"
+        },
+        {
+          "name": "arbitrary_function_shift_free_Hamiltonian"
+        },
+        {
+          "name": "arbitrary_function_shift_lapse_residual"
+        },
+        {
+          "name": "arbitrary_function_shift_shift_strain"
+        },
+        {
+          "name": "exact_noncommuting_strain_witness"
+        },
+        {
+          "name": "rigid_rotation_has_spin_half"
+        },
+        {
+          "name": "rigid_rotation_has_no_strain"
+        },
+        {
+          "name": "dilation_residual"
+        }
+      ]
+    },
+    "common_frame": {
+      "status": "PASS",
+      "checks": 140,
+      "details": [
+        {
+          "name": "all_frame_values_preserve_node_-1"
+        },
+        {
+          "name": "exact_common_frame_tangent_-1"
+        },
+        {
+          "name": "exact_naive_frame_tangent_-1"
+        },
+        {
+          "name": "common_principal_metric_-1"
+        },
+        {
+          "name": "all_frame_values_preserve_node_1"
+        },
+        {
+          "name": "exact_common_frame_tangent_1"
+        },
+        {
+          "name": "exact_naive_frame_tangent_1"
+        },
+        {
+          "name": "common_principal_metric_1"
+        },
+        {
+          "name": "naive_metric_shear_difference"
+        },
+        {
+          "name": "shear_witness_is_nonzero"
+        },
+        {
+          "name": "Laurent_node_(0, 0, -1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 0, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(0, 0, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 0, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(0, 0, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 0, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(0, 0, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 0, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(0, 1, -1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 1, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(0, 1, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 1, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(0, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 1, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(0, 1, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 1, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(0, 2, -1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 2, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(0, 2, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 2, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(0, 2, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 2, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(0, 2, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(0, 2, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(1, 0, -1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 0, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(1, 0, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 0, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(1, 0, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 0, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(1, 0, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 0, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(1, 1, -1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 1, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(1, 1, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 1, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(1, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 1, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(1, 1, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 1, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(1, 2, -1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 2, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(1, 2, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 2, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(1, 2, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 2, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(1, 2, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(1, 2, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(2, 0, -1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 0, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(2, 0, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 0, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(2, 0, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 0, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(2, 0, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 0, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(2, 1, -1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 1, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(2, 1, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 1, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(2, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 1, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(2, 1, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 1, 1, 2)"
+        },
+        {
+          "name": "Laurent_node_(2, 2, -1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 2, -1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(2, 2, -1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 2, -1, 2)"
+        },
+        {
+          "name": "Laurent_node_(2, 2, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 2, 1, 0)"
+        },
+        {
+          "name": "Laurent_jet_(2, 2, 1, 1)"
+        },
+        {
+          "name": "Laurent_jet_(2, 2, 1, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 0, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 0, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 0, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 1, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 1, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 1, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 2, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 2, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(1/2, 2, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 0, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 0, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 0, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 1, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 1, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 1, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 2, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 2, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(3/4, 2, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 0, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 0, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 0, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 1, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 1, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 1, 2)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 2, 0)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 2, 1)"
+        },
+        {
+          "name": "Laurent_Taylor_constant_(99/100, 2, 2)"
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 0, 0)",
+          "routes": 72,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 0, 1)",
+          "routes": 72,
+          "max_length": 2
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 0, 2)",
+          "routes": 108,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 1, 0)",
+          "routes": 72,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 1, 1)",
+          "routes": 72,
+          "max_length": 2
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 1, 2)",
+          "routes": 108,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 2, 0)",
+          "routes": 96,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 2, 1)",
+          "routes": 96,
+          "max_length": 4
+        },
+        {
+          "name": "protected_frame_family_((3, 3, 3), 2, 2)",
+          "routes": 126,
+          "max_length": 1
+        },
+        {
+          "name": "protected_frame_family_((1, 3, 3), 0, 1)",
+          "routes": 24,
+          "max_length": 2
+        },
+        {
+          "name": "protected_frame_family_((1, 3, 3), 0, 2)",
+          "routes": 36,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((1, 3, 3), 1, 1)",
+          "routes": 24,
+          "max_length": 2
+        },
+        {
+          "name": "protected_frame_family_((1, 3, 3), 1, 2)",
+          "routes": 36,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((1, 3, 3), 2, 1)",
+          "routes": 32,
+          "max_length": 4
+        },
+        {
+          "name": "protected_frame_family_((1, 3, 3), 2, 2)",
+          "routes": 42,
+          "max_length": 1
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 0, 0)",
+          "routes": 24,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 0, 1)",
+          "routes": 24,
+          "max_length": 2
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 0, 2)",
+          "routes": 48,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 1, 0)",
+          "routes": 24,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 1, 1)",
+          "routes": 24,
+          "max_length": 2
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 1, 2)",
+          "routes": 48,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 2, 0)",
+          "routes": 32,
+          "max_length": 3
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 2, 1)",
+          "routes": 32,
+          "max_length": 4
+        },
+        {
+          "name": "protected_frame_family_((2, 2, 3), 2, 2)",
+          "routes": 56,
+          "max_length": 1
+        },
+        {
+          "name": "four_edge_route_is_exercised"
+        },
+        {
+          "name": "global_relative_bound_challenge_0.5",
+          "max_ratio": 0.05247802301696665,
+          "proved_upper": 0.25
+        },
+        {
+          "name": "two_node_preservation_lower_bound_challenge_0.5"
+        },
+        {
+          "name": "global_relative_bound_challenge_0.8",
+          "max_ratio": 0.025365090997356652,
+          "proved_upper": 0.25
+        },
+        {
+          "name": "two_node_preservation_lower_bound_challenge_0.8"
+        },
+        {
+          "name": "global_relative_bound_challenge_0.99",
+          "max_ratio": 0.01320113397256445,
+          "proved_upper": 0.25
+        },
+        {
+          "name": "two_node_preservation_lower_bound_challenge_0.99"
+        }
+      ],
+      "routed_hoppings": 1328,
+      "max_path_length": 4,
+      "numerical_challenges": [
+        {
+          "zeta": 0.5,
+          "samples": 668,
+          "max_relative": 0.05247802301696665
+        },
+        {
+          "zeta": 0.8,
+          "samples": 668,
+          "max_relative": 0.025365090997356652
+        },
+        {
+          "zeta": 0.99,
+          "samples": 668,
+          "max_relative": 0.01320113397256445
+        }
+      ],
+      "elapsed_seconds": 0.11810404196148738,
+      "source_sha256": "177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327",
+      "scope": "Exact symbolic node/metric identities and literal finite protected routes; global preservation is the analytical relative-bound theorem, not inferred from samples."
+    },
+    "spin_connection": {
+      "status": "PASS",
+      "checks": 160,
+      "details": [
+        {
+          "name": "rational_jet_0_connection_antisymmetric_0"
+        },
+        {
+          "name": "rational_jet_0_connection_antisymmetric_1"
+        },
+        {
+          "name": "rational_jet_0_connection_antisymmetric_2"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(-1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_0_full_half_density_connection_-1"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_drift_(-1, 0)"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_drift_(-1, 1)"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_drift_(-1, 2)"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_spin_-1"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_0_Clifford_compatibility_(1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_0_full_half_density_connection_1"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_drift_(1, 0)"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_drift_(1, 1)"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_drift_(1, 2)"
+        },
+        {
+          "name": "rational_jet_0_curved_normal_commutator_spin_1"
+        },
+        {
+          "name": "nonzero_scalar_on_positive_frame_0",
+          "value": "-17347/341280"
+        },
+        {
+          "name": "rational_jet_1_connection_antisymmetric_0"
+        },
+        {
+          "name": "rational_jet_1_connection_antisymmetric_1"
+        },
+        {
+          "name": "rational_jet_1_connection_antisymmetric_2"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(-1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_1_full_half_density_connection_-1"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_drift_(-1, 0)"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_drift_(-1, 1)"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_drift_(-1, 2)"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_spin_-1"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_1_Clifford_compatibility_(1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_1_full_half_density_connection_1"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_drift_(1, 0)"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_drift_(1, 1)"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_drift_(1, 2)"
+        },
+        {
+          "name": "rational_jet_1_curved_normal_commutator_spin_1"
+        },
+        {
+          "name": "nonzero_scalar_on_positive_frame_1",
+          "value": "143/3400"
+        },
+        {
+          "name": "rational_jet_2_connection_antisymmetric_0"
+        },
+        {
+          "name": "rational_jet_2_connection_antisymmetric_1"
+        },
+        {
+          "name": "rational_jet_2_connection_antisymmetric_2"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(-1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_2_full_half_density_connection_-1"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_drift_(-1, 0)"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_drift_(-1, 1)"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_drift_(-1, 2)"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_spin_-1"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_2_Clifford_compatibility_(1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_2_full_half_density_connection_1"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_drift_(1, 0)"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_drift_(1, 1)"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_drift_(1, 2)"
+        },
+        {
+          "name": "rational_jet_2_curved_normal_commutator_spin_1"
+        },
+        {
+          "name": "nonzero_scalar_on_positive_frame_2",
+          "value": "3527/66160"
+        },
+        {
+          "name": "rational_jet_3_connection_antisymmetric_0"
+        },
+        {
+          "name": "rational_jet_3_connection_antisymmetric_1"
+        },
+        {
+          "name": "rational_jet_3_connection_antisymmetric_2"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(-1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_3_full_half_density_connection_-1"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_drift_(-1, 0)"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_drift_(-1, 1)"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_drift_(-1, 2)"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_spin_-1"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 0, 0)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 0, 1)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 0, 2)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 1, 0)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 1, 1)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 1, 2)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 2, 0)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 2, 1)"
+        },
+        {
+          "name": "rational_jet_3_Clifford_compatibility_(1, 2, 2)"
+        },
+        {
+          "name": "rational_jet_3_full_half_density_connection_1"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_drift_(1, 0)"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_drift_(1, 1)"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_drift_(1, 2)"
+        },
+        {
+          "name": "rational_jet_3_curved_normal_commutator_spin_1"
+        },
+        {
+          "name": "rotating_frame_scalar_sign"
+        },
+        {
+          "name": "unitary_conjugation_scalar_sign"
+        },
+        {
+          "name": "nonuniform_positive_frame_formula"
+        },
+        {
+          "name": "positive_frame_scalar_witness"
+        },
+        {
+          "name": "flat_symmetric_first_variation_zero"
+        },
+        {
+          "name": "polar_rotation_metric_derivative"
+        },
+        {
+          "name": "polar_rotation_antisymmetrized_derivative"
+        },
+        {
+          "name": "field_rotation_cancels_frozen_spin_residual"
+        },
+        {
+          "name": "finite_polar_frame_composition_0"
+        },
+        {
+          "name": "finite_polar_rotation_cocycle_0"
+        },
+        {
+          "name": "finite_polar_SO3_0"
+        },
+        {
+          "name": "nonflat_polar_frame_derivative_0",
+          "error": 9.3660615994614e-11
+        },
+        {
+          "name": "nonflat_polar_rotation_derivative_0",
+          "error": 8.763357674153798e-11
+        },
+        {
+          "name": "finite_polar_frame_composition_1"
+        },
+        {
+          "name": "finite_polar_rotation_cocycle_1"
+        },
+        {
+          "name": "finite_polar_SO3_1"
+        },
+        {
+          "name": "nonflat_polar_frame_derivative_1",
+          "error": 7.975210862233795e-11
+        },
+        {
+          "name": "nonflat_polar_rotation_derivative_1",
+          "error": 4.1265992064694374e-11
+        },
+        {
+          "name": "finite_polar_frame_composition_2"
+        },
+        {
+          "name": "finite_polar_rotation_cocycle_2"
+        },
+        {
+          "name": "finite_polar_SO3_2"
+        },
+        {
+          "name": "nonflat_polar_frame_derivative_2",
+          "error": 1.0882535147832148e-10
+        },
+        {
+          "name": "nonflat_polar_rotation_derivative_2",
+          "error": 7.187001408672818e-11
+        },
+        {
+          "name": "finite_polar_frame_composition_3"
+        },
+        {
+          "name": "finite_polar_rotation_cocycle_3"
+        },
+        {
+          "name": "finite_polar_SO3_3"
+        },
+        {
+          "name": "nonflat_polar_frame_derivative_3",
+          "error": 1.5620698954957682e-10
+        },
+        {
+          "name": "nonflat_polar_rotation_derivative_3",
+          "error": 1.0725515772468912e-10
+        },
+        {
+          "name": "finite_polar_frame_composition_4"
+        },
+        {
+          "name": "finite_polar_rotation_cocycle_4"
+        },
+        {
+          "name": "finite_polar_SO3_4"
+        },
+        {
+          "name": "nonflat_polar_frame_derivative_4",
+          "error": 8.321764487253166e-11
+        },
+        {
+          "name": "nonflat_polar_rotation_derivative_4",
+          "error": 5.570654014198925e-11
+        }
+      ],
+      "elapsed_seconds": 1.859413250000216,
+      "source_sha256": "177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327",
+      "scope": "Exact connection comparisons on rational frame jets, generic symbolic strain cancellation, explicit nonuniform frames, and finite polar-map challenges. Author checks, not independent review or dynamical gravity."
+    },
+    "variable_frame": {
+      "status": "PASS",
+      "checks": 103,
+      "details": [
+        {
+          "name": "xy_shear_small_frame_preserves_constant_symbols"
+        },
+        {
+          "name": "xy_shear_Neumann_rho"
+        },
+        {
+          "name": "xy_shear_nonzero_connection",
+          "amplitude": 7.920964059004e-05
+        },
+        {
+          "name": "xy_shear_reference_connection",
+          "analytical_tail_bound": 5.464932357140647e-32
+        },
+        {
+          "name": "exact_xy_connection_formula"
+        },
+        {
+          "name": "xy_shear_inverse_remainder_0",
+          "error": 0.031031811070495116,
+          "bound": 0.045436453183252935
+        },
+        {
+          "name": "xy_shear_inverse_remainder_2",
+          "error": 3.182748547271905e-05,
+          "bound": 6.512558289599589e-05
+        },
+        {
+          "name": "xy_shear_inverse_remainder_4",
+          "error": 3.264356156332417e-08,
+          "bound": 9.334666881759411e-08
+        },
+        {
+          "name": "xy_shear_separated_bands_(-1, 0.12)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(-1, 0.12)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(-1, 0.12)",
+          "error": 0.07102703158554183,
+          "analytical_bound": 4.326684096176537,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(-1, 0.12)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(-1, 0.06)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(-1, 0.06)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(-1, 0.06)",
+          "error": 0.0350132876715102,
+          "analytical_bound": 1.9313537714659674,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(-1, 0.06)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(-1, 0.03)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(-1, 0.03)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(-1, 0.03)",
+          "error": 0.017379119295023726,
+          "analytical_bound": 0.9076842963399192,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(-1, 0.03)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(-1, 0.015)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(-1, 0.015)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(-1, 0.015)",
+          "error": 0.008657378308167677,
+          "analytical_bound": 0.43934456179858306,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(-1, 0.015)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(-1, 1e-06)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(-1, 1e-06)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(-1, 1e-06)",
+          "error": 5.751450499899124e-07,
+          "analytical_bound": 4.589472139422917e-05,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(-1, 1e-06)"
+        },
+        {
+          "name": "xy_shear_omitted_connection_has_nonzero_limit_-1",
+          "omitted_error": 6.86142794603766e-05,
+          "completed_error": 5.751450499899124e-07
+        },
+        {
+          "name": "xy_shear_resolved_convergence_-1"
+        },
+        {
+          "name": "xy_shear_separated_bands_(1, 0.12)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(1, 0.12)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(1, 0.12)",
+          "error": 0.07102703158554174,
+          "analytical_bound": 4.326684096176537,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(1, 0.12)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(1, 0.06)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(1, 0.06)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(1, 0.06)",
+          "error": 0.035013287671510164,
+          "analytical_bound": 1.9313537714659674,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(1, 0.06)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(1, 0.03)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(1, 0.03)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(1, 0.03)",
+          "error": 0.017379119295023702,
+          "analytical_bound": 0.9076842963399192,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(1, 0.03)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(1, 0.015)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(1, 0.015)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(1, 0.015)",
+          "error": 0.008657378308167662,
+          "analytical_bound": 0.43934456179858306,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(1, 0.015)"
+        },
+        {
+          "name": "xy_shear_separated_bands_(1, 1e-06)"
+        },
+        {
+          "name": "xy_shear_local_connection_bound_(1, 1e-06)"
+        },
+        {
+          "name": "xy_shear_operator_bound_(1, 1e-06)",
+          "error": 5.751450499949468e-07,
+          "analytical_bound": 4.589472139422917e-05,
+          "reference_tail": 5.464932357140647e-32
+        },
+        {
+          "name": "xy_shear_Parseval_degree_(1, 1e-06)"
+        },
+        {
+          "name": "xy_shear_omitted_connection_has_nonzero_limit_1",
+          "omitted_error": 6.861427946037853e-05,
+          "completed_error": 5.751450499949468e-07
+        },
+        {
+          "name": "xy_shear_resolved_convergence_1"
+        },
+        {
+          "name": "all_shears_small_frame_preserves_constant_symbols"
+        },
+        {
+          "name": "all_shears_Neumann_rho"
+        },
+        {
+          "name": "all_shears_nonzero_connection",
+          "amplitude": 0.00014189681339794549
+        },
+        {
+          "name": "all_shears_reference_connection",
+          "analytical_tail_bound": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_inverse_remainder_0",
+          "error": 0.030201133304440315,
+          "bound": 0.05516509698026518
+        },
+        {
+          "name": "all_shears_inverse_remainder_2",
+          "error": 2.88706853361798e-05,
+          "bound": 0.00011468823662197132
+        },
+        {
+          "name": "all_shears_inverse_remainder_4",
+          "error": 2.7605793011828573e-08,
+          "bound": 2.384368439370784e-07
+        },
+        {
+          "name": "all_shears_separated_bands_(-1, 0.12)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(-1, 0.12)"
+        },
+        {
+          "name": "all_shears_operator_bound_(-1, 0.12)",
+          "error": 0.07107608697158099,
+          "analytical_bound": 4.703229394546337,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(-1, 0.12)"
+        },
+        {
+          "name": "all_shears_separated_bands_(-1, 0.06)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(-1, 0.06)"
+        },
+        {
+          "name": "all_shears_operator_bound_(-1, 0.06)",
+          "error": 0.03503597108364901,
+          "analytical_bound": 2.1196065458857993,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(-1, 0.06)"
+        },
+        {
+          "name": "all_shears_separated_bands_(-1, 0.03)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(-1, 0.03)"
+        },
+        {
+          "name": "all_shears_operator_bound_(-1, 0.03)",
+          "error": 0.01738992513630662,
+          "analytical_bound": 1.0018072140365548,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(-1, 0.03)"
+        },
+        {
+          "name": "all_shears_separated_bands_(-1, 0.015)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(-1, 0.015)"
+        },
+        {
+          "name": "all_shears_operator_bound_(-1, 0.015)",
+          "error": 0.00866263903263388,
+          "analytical_bound": 0.4864053430618695,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(-1, 0.015)"
+        },
+        {
+          "name": "all_shears_separated_bands_(-1, 1e-06)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(-1, 1e-06)"
+        },
+        {
+          "name": "all_shears_operator_bound_(-1, 1e-06)",
+          "error": 5.754860698886342e-07,
+          "analytical_bound": 5.095253825710842e-05,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(-1, 1e-06)"
+        },
+        {
+          "name": "all_shears_omitted_connection_has_nonzero_limit_-1",
+          "omitted_error": 0.00011741588570191673,
+          "completed_error": 5.754860698886342e-07
+        },
+        {
+          "name": "all_shears_resolved_convergence_-1"
+        },
+        {
+          "name": "all_shears_separated_bands_(1, 0.12)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(1, 0.12)"
+        },
+        {
+          "name": "all_shears_operator_bound_(1, 0.12)",
+          "error": 0.0710756696667348,
+          "analytical_bound": 4.703229394546337,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(1, 0.12)"
+        },
+        {
+          "name": "all_shears_separated_bands_(1, 0.06)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(1, 0.06)"
+        },
+        {
+          "name": "all_shears_operator_bound_(1, 0.06)",
+          "error": 0.03503587559309974,
+          "analytical_bound": 2.1196065458857993,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(1, 0.06)"
+        },
+        {
+          "name": "all_shears_separated_bands_(1, 0.03)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(1, 0.03)"
+        },
+        {
+          "name": "all_shears_operator_bound_(1, 0.03)",
+          "error": 0.017389904537605836,
+          "analytical_bound": 1.0018072140365548,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(1, 0.03)"
+        },
+        {
+          "name": "all_shears_separated_bands_(1, 0.015)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(1, 0.015)"
+        },
+        {
+          "name": "all_shears_operator_bound_(1, 0.015)",
+          "error": 0.008662635329867847,
+          "analytical_bound": 0.4864053430618695,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(1, 0.015)"
+        },
+        {
+          "name": "all_shears_separated_bands_(1, 1e-06)"
+        },
+        {
+          "name": "all_shears_local_connection_bound_(1, 1e-06)"
+        },
+        {
+          "name": "all_shears_operator_bound_(1, 1e-06)",
+          "error": 5.754858836084549e-07,
+          "analytical_bound": 5.095253825710842e-05,
+          "reference_tail": 3.6191746487836835e-30
+        },
+        {
+          "name": "all_shears_Parseval_degree_(1, 1e-06)"
+        },
+        {
+          "name": "all_shears_omitted_connection_has_nonzero_limit_1",
+          "omitted_error": 0.00011741588568911134,
+          "completed_error": 5.754858836084549e-07
+        },
+        {
+          "name": "all_shears_resolved_convergence_1"
+        }
+      ],
+      "reports": [
+        {
+          "frame": "xy_shear",
+          "node": -1,
+          "values": [
+            {
+              "spacing": 0.12,
+              "m": 4,
+              "error": 0.07102703158554183,
+              "bound": 4.326684096176537
+            },
+            {
+              "spacing": 0.06,
+              "m": 4,
+              "error": 0.0350132876715102,
+              "bound": 1.9313537714659674
+            },
+            {
+              "spacing": 0.03,
+              "m": 4,
+              "error": 0.017379119295023726,
+              "bound": 0.9076842963399192
+            },
+            {
+              "spacing": 0.015,
+              "m": 4,
+              "error": 0.008657378308167677,
+              "bound": 0.43934456179858306
+            },
+            {
+              "spacing": 1e-06,
+              "m": 6,
+              "error": 5.751450499899124e-07,
+              "bound": 4.589472139422917e-05
+            }
+          ]
+        },
+        {
+          "frame": "xy_shear",
+          "node": 1,
+          "values": [
+            {
+              "spacing": 0.12,
+              "m": 4,
+              "error": 0.07102703158554174,
+              "bound": 4.326684096176537
+            },
+            {
+              "spacing": 0.06,
+              "m": 4,
+              "error": 0.035013287671510164,
+              "bound": 1.9313537714659674
+            },
+            {
+              "spacing": 0.03,
+              "m": 4,
+              "error": 0.017379119295023702,
+              "bound": 0.9076842963399192
+            },
+            {
+              "spacing": 0.015,
+              "m": 4,
+              "error": 0.008657378308167662,
+              "bound": 0.43934456179858306
+            },
+            {
+              "spacing": 1e-06,
+              "m": 6,
+              "error": 5.751450499949468e-07,
+              "bound": 4.589472139422917e-05
+            }
+          ]
+        },
+        {
+          "frame": "all_shears",
+          "node": -1,
+          "values": [
+            {
+              "spacing": 0.12,
+              "m": 4,
+              "error": 0.07107608697158099,
+              "bound": 4.703229394546337
+            },
+            {
+              "spacing": 0.06,
+              "m": 4,
+              "error": 0.03503597108364901,
+              "bound": 2.1196065458857993
+            },
+            {
+              "spacing": 0.03,
+              "m": 4,
+              "error": 0.01738992513630662,
+              "bound": 1.0018072140365548
+            },
+            {
+              "spacing": 0.015,
+              "m": 4,
+              "error": 0.00866263903263388,
+              "bound": 0.4864053430618695
+            },
+            {
+              "spacing": 1e-06,
+              "m": 6,
+              "error": 5.754860698886342e-07,
+              "bound": 5.095253825710842e-05
+            }
+          ]
+        },
+        {
+          "frame": "all_shears",
+          "node": 1,
+          "values": [
+            {
+              "spacing": 0.12,
+              "m": 4,
+              "error": 0.0710756696667348,
+              "bound": 4.703229394546337
+            },
+            {
+              "spacing": 0.06,
+              "m": 4,
+              "error": 0.03503587559309974,
+              "bound": 2.1196065458857993
+            },
+            {
+              "spacing": 0.03,
+              "m": 4,
+              "error": 0.017389904537605836,
+              "bound": 1.0018072140365548
+            },
+            {
+              "spacing": 0.015,
+              "m": 4,
+              "error": 0.008662635329867847,
+              "bound": 0.4864053430618695
+            },
+            {
+              "spacing": 1e-06,
+              "m": 6,
+              "error": 5.754858836084549e-07,
+              "bound": 5.095253825710842e-05
+            }
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03001283301273361,
+      "source_sha256": "177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327",
+      "scope": "Finite Fourier operator challenges on variable frames. Exact continuum connection is enclosed by an analytical Neumann tail; no sampled proof of the general theorem or long-time claim."
+    },
+    "native_paths": {
+      "status": "PASS",
+      "checks": 12,
+      "details": [
+        {
+          "name": "native_path_endpoint_1"
+        },
+        {
+          "name": "native_real_hopping_1"
+        },
+        {
+          "name": "native_imaginary_hopping_1"
+        },
+        {
+          "name": "native_path_endpoint_2"
+        },
+        {
+          "name": "native_real_hopping_2"
+        },
+        {
+          "name": "native_imaginary_hopping_2"
+        },
+        {
+          "name": "native_path_endpoint_3"
+        },
+        {
+          "name": "native_real_hopping_3"
+        },
+        {
+          "name": "native_imaginary_hopping_3"
+        },
+        {
+          "name": "native_path_endpoint_4"
+        },
+        {
+          "name": "native_real_hopping_4"
+        },
+        {
+          "name": "native_imaginary_hopping_4"
+        }
+      ]
+    }
+  },
+  "source_sha256": "177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327",
+  "elapsed_seconds": 3.157040541002061,
+  "scope": "Specified free native frame construction, exact local algebra and finite operator challenges. No metric selection, interacting frame theorem, long-time control or full gravitational constraint algebra."
+}

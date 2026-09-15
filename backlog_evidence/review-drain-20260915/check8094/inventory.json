@@ -1,0 +1,1868 @@
+[
+  {
+    "number": 8091,
+    "head": "28dd88687270388140ad45fbfac9b145f6f8972f",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 109,
+    "canonical": [
+      "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_lapse_source_contact_response_2026_09_13.txt",
+      "outputs/native_lapse_source_contact_response_2026_09_13.json",
+      "scripts/native_lapse_source_contact_response_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_lapse_source_contact_response_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For the specified native two-orbital Wilson model with supplied positive cell lapses, derive its actual variational energy source and finite arithmetic susceptibility; in the free filled-band model derive both arithmetic and geometric-mean responses at every momentum, their local contact difference, the thermodynamic quartic-log term, global congruence-energy convexity and the stated finite static existence bound. An exact strong-interaction midpoint witness is confined to the declared three-cell, three-particle sector. Physical lapse selection and interacting infrared stress response remain open.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_lapse_source_contact_response_2026_09_13.py\n"
+    },
+    "paths": [
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/APPROACH_REGISTRY.md",
+        "sha256": "562f6fda7a666da342ecc70fc55c444f340bcb3c46c31119790eced579399990"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/ARTIFACT_PLAN.md",
+        "sha256": "a30e89200b383b5ecb365debb40b15bcb0af9535c061a7c81477ba1c69af4415"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "fa985cd5c3571392c5074ae278f9cf83e8561ee8ed25a6c6d309589b5e64d92d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/CACHE_EXECUTION.json",
+        "sha256": "7248ca20f4d3e0a06ff8d17314a33c151ec1454316edc32e0471f26dd266ea72"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "d873d0165715384842f6631f8d0617d1bd8054b951135f05664d4f72196ff856"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/DIRECT_SOURCE_READINESS.json",
+        "sha256": "07edd31306a2becc441b427168232e2fc85a860d5fd1ffc2b83d21b7a235cbd8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/GOAL.md",
+        "sha256": "d1d18c4fd6dbbf6d1c0307a54e5c4d6df6aaa82dd2fedd1c9d8ece4202c1fb98"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/GRAPH_DELTA.json",
+        "sha256": "f3c1caeda6a3efc202f1594dbf403c9df828f1245b28788b70c3da34e3acf915"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/HANDOFF.md",
+        "sha256": "dc3261b019ab4ac6e4e988654c4cb2d4c1017e8c290aa6e24b01a235a0208fef"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/INITIAL_RUN.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/INITIAL_RUN.stdout",
+        "sha256": "1c0a26b2072012062aa0475434380f25ff0426e12ead2aee0109583c00a2b84d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/LITERATURE_BRIDGES.md",
+        "sha256": "75ae9372d10b7d81c2136e5aa03abd6a638050a8f19c1bf63ab5776146035184"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/MUTATIONS.json",
+        "sha256": "abc7d3089d5e3ada54a66d064fd3873debb628a52eb45697632859e74ac548f6"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/NO_GO_LEDGER.md",
+        "sha256": "38ea0a622aa126ce8ef42905077be489188b14066447847b8f214b7f88631586"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/OPPORTUNITY_QUEUE.md",
+        "sha256": "b559bf9cb80a66df19e829f94836fc005e5858f30ab31dbd28bcc4875b8691b4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/PR_BACKLOG.md",
+        "sha256": "57ce52b0b12f2f02c3639ba12bfed0d25011dec5a633ca0b0ecbda8b444577ae"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/PR_BODY.md",
+        "sha256": "20f4ab163f80a1f962508fd0a8f7bbbf41c9d047ceb598d687f8281144dcf9a9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/PR_VERIFICATION.json",
+        "sha256": "56c3d5e1ffba09e15b5af28a9cc5cfaa6c7b2389cd76170bd1546f6596b03c7f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/READINESS.json",
+        "sha256": "868fc4b1d71571e91e8dfd0760dfb92a1d7394e77909f90831ee613c3e198835"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/REVIEW_HISTORY.md",
+        "sha256": "23a01923f289518b49bb095fca7097c38794b0ac23d134fab48be9aa020858ac"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/ROUTE_PORTFOLIO.md",
+        "sha256": "68a7ad94cec742091a75501d9eae2b268dc5dab1c640789e5b2847f42737203a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/STAGED_FILES.json",
+        "sha256": "c739b44ba9567e10d2458735031fa082577b7fbb554a2288b4a0b61af99ad431"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/STATE.yaml",
+        "sha256": "36b0121806ee6605a02afd6ff10207ea16bbbba67a649717b1913ed37c6954d9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/TRACE_GATE.md",
+        "sha256": "8e84980ce21988e3154fd81247b843d93f581b67c7eb87e7cb84c1256d9a2c12"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/check_mutations.py",
+        "sha256": "fa381a29831388480bfb3cbb61992ed9edfc7a94aea8da5ec49b881785b0e3d2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/Fock_CAR_sign.source.py.gz",
+        "sha256": "9da9b156a9ef630c9c73ba22507749d80c76325159b334b75793974593806e84"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/Fock_CAR_sign.stderr.gz",
+        "sha256": "df81b381004ff26722b783f0398aab6b39d3b1cc802225d0dbf4772627914212"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/Fock_CAR_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/Wilson_hopping_sign.source.py.gz",
+        "sha256": "ca84f53b31710afca7b99845dd74da6a6bff0bfd845078041061fee7328f85b2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/Wilson_hopping_sign.stderr.gz",
+        "sha256": "a04bbcfb598ddd85231f9f3bac5058bdc73067edc6081ab1be3d32ef46b27a0f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/Wilson_hopping_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/actual_geometric_Hamiltonian.source.py.gz",
+        "sha256": "9a6905ead1f639af000fa65f0efa208b6e304449d1f51d45286393c2b20e1f19"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/actual_geometric_Hamiltonian.stderr.gz",
+        "sha256": "9dd8d89e6ea50a4138d0d6c81a7f980f27bd7c72b6f134a900ef6dc632fa850c"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/actual_geometric_Hamiltonian.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/all_momentum_arithmetic_factor.source.py.gz",
+        "sha256": "919d0fa7fe09b58a8cf9edc84a9b9a45c28de0b15b5b0224a67a51bea1dcfc6b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/all_momentum_arithmetic_factor.stderr.gz",
+        "sha256": "133a6a3e424d95e613c7fc9ab3e35460fb681edb837bd3d0488874ab819edfab"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/all_momentum_arithmetic_factor.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/arithmetic_Kato_factor.source.py.gz",
+        "sha256": "317e86bbc0a247f6db98907e64b725918eb7afe7371e3dbf0a85b9ab1809741d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/arithmetic_Kato_factor.stderr.gz",
+        "sha256": "3d9da209503424555124ee7222f86edd26dc62becc855aedc3f932808b27ed81"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/arithmetic_Kato_factor.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/bond_contact_factor.source.py.gz",
+        "sha256": "544dfa3bb7c9fc365ddc0c3faee066aaa110dc20fa1f0b9087473358707c304d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/bond_contact_factor.stderr.gz",
+        "sha256": "f81a476f9fcde87b6e678a210f25f3462c33929039ac80b82ba7771580238a61"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/bond_contact_factor.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/candidate_protection.source.py.gz",
+        "sha256": "f7cb07ae392b35d2e97c07bf87295470cc636304759fb3207d91780295d111b1"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/candidate_protection.stderr.gz",
+        "sha256": "a831969c43514638a4b15a0c9f610a56290a2d778b94226e1b67085535d0dc32"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/candidate_protection.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/cone_coefficient.source.py.gz",
+        "sha256": "0210beb0511c36c07a37700a5f7948344885357171137bf2535bf61c924d7684"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/cone_coefficient.stderr.gz",
+        "sha256": "53652ded2eb13c4c8e24088706fab889b820537d1956f15300a8fdd3867c15b3"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/cone_coefficient.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/congruence_spectral_sign.source.py.gz",
+        "sha256": "29b8e6297803c080ce2a5039e44e14b0c1205480dc9807a4c96e2fe3dc2e7684"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/congruence_spectral_sign.stderr.gz",
+        "sha256": "da2c241c37d967e3ebdd9b8ee393ea7fecd4a80e52b0694214a5cb468e189c38"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/congruence_spectral_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/contact_second_derivative.source.py.gz",
+        "sha256": "961abf19807e5848e978796d5712ba2b0c91cb3efe31db3759135387667305f9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/contact_second_derivative.stderr.gz",
+        "sha256": "6af3c75ff1511e670abb0ffdee486c90957c5f8a1297a15629589e9350e404f1"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/contact_second_derivative.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/current_nonzero_guard.source.py.gz",
+        "sha256": "7b33d15b48f9a2d512d305d42956f5ce561f6d09e4639ffcd5dff495abc8b5cc"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/current_nonzero_guard.stderr.gz",
+        "sha256": "b74432d75acd2149cef6b556bcac889618753ae3c189773f3c94eb790f2aee79"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/current_nonzero_guard.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/direct_CAR_sign.source.py.gz",
+        "sha256": "51edb8260dc5039d6c15721737437856aa29fe3782fd24e5ecafe12b1351aa56"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/direct_CAR_sign.stderr.gz",
+        "sha256": "d01bf7a9aab3f642d3c9e93c29fe7df720d6ece24eee9568466a0ee544b4d8f7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/direct_CAR_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/energy_vertex_factor.source.py.gz",
+        "sha256": "2dda4af03c498ab04277cf144596e2b24f0467bdb8806f6ae73c1de5e6874d7f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/energy_vertex_factor.stderr.gz",
+        "sha256": "f74d14046423df1bf86f404be58a72ee031ca6296a99c8a9db3d7f4c7bbf28b3"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/energy_vertex_factor.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/exact_ground_lower_bound.source.py.gz",
+        "sha256": "8c531e78817ae52c58d1ef4065998d08a8022bcdb84416c1e76ebb4449cce9f4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/exact_ground_lower_bound.stderr.gz",
+        "sha256": "da2263da2560114bd212372ae1129daf42b4f4ec98f6908676f0e2b60c7e2c6e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/exact_ground_lower_bound.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/finite_global_bound.source.py.gz",
+        "sha256": "f8160062006599586727ed98b224f0d76e23583647ba7d2d8907aa2f9f1bd04f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/finite_global_bound.stderr.gz",
+        "sha256": "32af413911f59f0de410dc2022b29837b5d7fa16b60c8ed62dbb14ef198a2494"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/finite_global_bound.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/inhomogeneous_source_lapse.source.py.gz",
+        "sha256": "31e48062f9a2e96c684792eb53728849237c94a81067790d588308fe0c67cae3"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/inhomogeneous_source_lapse.stderr.gz",
+        "sha256": "a76d2c88326d6d395c50506af062533ac134591c1c7d3c92c482fc31c031a51c"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/inhomogeneous_source_lapse.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/midpoint_trial_data.source.py.gz",
+        "sha256": "d07c9f3f8f349114093247753a4c76e2218c67ff42dae720062f26297e4a40f7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/midpoint_trial_data.stderr.gz",
+        "sha256": "1a2a18f1e6dcf52930b4ca0376d77ada3862d7001d85591eb92a6691dd287fb4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/midpoint_trial_data.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/native_imaginary_hop.source.py.gz",
+        "sha256": "736e0e277c70b268a89898f38cde7415aeacdb72e95671e9ff967f4837a32bc5"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/native_imaginary_hop.stderr.gz",
+        "sha256": "9ec8a4b1708c2c43ccbd2a5fa7077449a83c5d2eee4928937c5d90434830a0b6"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/native_imaginary_hop.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/prolate_jacobian.source.py.gz",
+        "sha256": "f0382e1d9985fec52aef4c19ee9a65ba58cd505e9a7c9ddfecb7d00a15438a95"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/prolate_jacobian.stderr.gz",
+        "sha256": "98bcec9dba666f943904fd953be3db40d87c3c3efb136a771219f9df20592609"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/prolate_jacobian.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/sqrt_bracket.source.py.gz",
+        "sha256": "4f0e6e205e6cb065e48e1ca98e692a5e50211d580e3be15cda9467278bdc6315"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/sqrt_bracket.stderr.gz",
+        "sha256": "195b35e6b5462c606233fe6549f525d9b95d341c3d8593411eeade6a949ab495"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/mutations/sqrt_bracket.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_current_guard/BLOCK05_FOCK_CHECKS.json.gz",
+        "sha256": "9b2be0172a7047701bc98d4460c7dde85bfe1fce0f88dde8768976c6fdfc8fc0"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_current_guard/BLOCK05_FOCK_RUN.stderr.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_current_guard/BLOCK05_FOCK_RUN.stdout.gz",
+        "sha256": "c1d167e82607c86ddcf5c9556df6d66d7cd0b9a6283a5e78fc037644fd037cf2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_current_guard/FILES.json",
+        "sha256": "815aaff991eebf04e0121f6756636d56bed36536e5b8aedd17a880dbd54b9101"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_current_guard/REASON.md",
+        "sha256": "103fb918d1496504772349eeb98c9b7a54d4ab857b80669ecdd179ca63e63701"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_current_guard/check_block05_fock.py.gz",
+        "sha256": "44c5e4513c3d30a765d0b3a63e1cfdc6b365b15176091338ff77bcfd7e677cdf"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/BLOCK05_FOCK_RUN.stderr.gz",
+        "sha256": "30ce644c3366103c59637c6b88e8970844728239d04bf72153895c110d217e62"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/BLOCK05_FOCK_RUN.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/CONVERGENCE.json",
+        "sha256": "0f8ddbb57c0b3aaa531d22a200fd85cc9e5a29f1f623a3966b93b497a09aa59a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/FILES.json",
+        "sha256": "9d516d0ef9a62c70bcc180d58de92e5641ff1acbbf30c563ce8e20432b0d1d11"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/REASON.md",
+        "sha256": "8d6cc6d1069ab100cc107aa2e0b389d6e125dc24f489d437cad6ba8414fa093f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/check_block05_fock.py.gz",
+        "sha256": "7a629db2d455e89427755c94d7a94cbdea08a014e349b6129b1c87fef3fa2a78"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_fd_first/diagnose.py",
+        "sha256": "79af085796b3793f96f19eb8a311895b2536cdf4d4237972bcfac1254ec2051a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_null_fixture/BLOCK05_FOCK_CHECKS.json.gz",
+        "sha256": "4ab38d18baca19fad2c6460b2979075270acfdd0ebaca7b2b9d8b3eac5101d61"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_null_fixture/BLOCK05_FOCK_RUN.stderr.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_null_fixture/BLOCK05_FOCK_RUN.stdout.gz",
+        "sha256": "4e370c4ef961f6d537d308dbc07a009b1567994e91dd7671266af0e81283b333"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_null_fixture/FILES.json",
+        "sha256": "8158dd834185cd526bf1fd5cde79b8bde2a5339111ab789d14cafc6d8f3c6d76"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_null_fixture/REASON.md",
+        "sha256": "db2041285c56b1bd53e5bf1cd6d617104d0717dd68103da95fd309302b6a5e1d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-lapse-response-20260913/recovery/block05_fock_null_fixture/check_block05_fock.py.gz",
+        "sha256": "2d99084f7ceebec16628ff804698d84b30ce5f40ec648b81eab726edbae186c5"
+      },
+      {
+        "status": "A",
+        "path": "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "1be74ba3daeb2693d0d3a2fa80dfa51f6c6e388a7b9b021d3719b60405f71054"
+      },
+      {
+        "status": "M",
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "4a21c646e83a6f6871981a3cbd8afa5bb68c230245162da15a7f419ab04013ff"
+      },
+      {
+        "status": "A",
+        "path": "logs/runner-cache/native_lapse_source_contact_response_2026_09_13.txt",
+        "sha256": "b2173b256341f9815ffb1ac873de76cffd964a836e4fee3cf45cf5e05f8d5414"
+      },
+      {
+        "status": "A",
+        "path": "outputs/native_lapse_source_contact_response_2026_09_13.json",
+        "sha256": "cccdd64f26c57f261e8e44790ef60323e6cdf162347fefa87c93fd85d7e89372"
+      },
+      {
+        "status": "A",
+        "path": "scripts/native_lapse_source_contact_response_2026_09_13.py",
+        "sha256": "c89300993862018419b915c41fa235844ba7139f3191ca833710f930a032d621"
+      }
+    ]
+  },
+  {
+    "number": 8092,
+    "head": "4ad50beb2237097578815a623d963f3427cdcd78",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 101,
+    "canonical": [
+      "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_common_frame_spin_connection_2026_09_13.txt",
+      "outputs/native_common_frame_spin_connection_2026_09_13.json",
+      "scripts/native_common_frame_spin_connection_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_common_frame_spin_connection_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For the specified free native two-orbital Wilson model, construct nine finite-range frame vertices with the same principal metric at both Weyl nodes; prove an explicit uniform neighborhood preserving exactly those two nodes, protected paths of length at most four, and a slowly varying operator estimate for a local polynomial spin-connection coupling. Standard metric-dependent spin identities are rederived to fix the continuum target. The frame, dynamics, scale and state interpretation are supplied; no interacting frame or dynamical gravity theorem is claimed.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_common_frame_spin_connection_2026_09_13.py\n"
+    },
+    "paths": [
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/APPROACH_REGISTRY.md",
+        "sha256": "5727a0d86c0f0e8a6b22c3eae6bdb1a06d6d4b9f7e2cfea3e51620f2c2f779c2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/ARTIFACT_PLAN.md",
+        "sha256": "de90b22df4f6b98e5517c8f8dd8d549043e9a49f650ad77e607d4b24688d70ee"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "7037fa8e788182cecae08ac93b293bfa48737cd0861b3c335338bf01886d3121"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/CACHE_EXECUTION.json",
+        "sha256": "4868c28af1419767728c7369c4e64da5afb6067c8d7798ee25c2e96e0ee4edf4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "aae34ed83595de6bced0717cb4f879522f8c8a362d5437daba3aa80077a983b4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/DIRECT_SOURCE_READINESS.json",
+        "sha256": "d4d267bc63d9364c1b04128e47e34c17f4db8708f8ffd0c1fdad2acf00170e63"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/GOAL.md",
+        "sha256": "ab362fab12062c17e1a4806a70aedaa028c9a167a14a7a5a867074605680f8dd"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/GRAPH_DELTA.json",
+        "sha256": "ca243280c2b0ddc4941ab05c47e743136441771beea56297f651fc109ab4901b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/HANDOFF.md",
+        "sha256": "5e9344e90f31fa1f1b9cb82400ccc31decbb64f5c1b23268daf4919b1c854fcf"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/INITIAL_RUN.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/INITIAL_RUN.stdout",
+        "sha256": "0299572d0a58bbbf6ad5f9cfe95e860771438dc070eef730a96c62a4130ed63b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/LITERATURE_BRIDGES.md",
+        "sha256": "d3513d75c1aff62b21f56f00c8ee476a25db33c49436089f8e85b7683d5af927"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/MUTATIONS.json",
+        "sha256": "c84b5a0d85651db2abc64840c7a76ab8e16d4249a82d9b48f4318b78dd2e45a9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/NO_GO_LEDGER.md",
+        "sha256": "22a0f08151d17abd55e51b12f1fb7403363ca84871ccee8a0f527f0c2a45000a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/OPPORTUNITY_QUEUE.md",
+        "sha256": "5fb1f9ca5bf9eeac54018587278663c2846f4dc69bae78c71b656ad9ab83b00a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/PR_BACKLOG.md",
+        "sha256": "014fc302a874f11f31224407802d2022710669192244eb26dc33d9f1ff0f638e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/PR_BODY.md",
+        "sha256": "db5f403c659f690a5e8c6ec3e4312e29ea36865793c6e49c84e749e2776b5dd4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/PR_VERIFICATION.json",
+        "sha256": "2bf4c7f76761a108a9a889f5fb2464fc6588980df93f166ddbbafdd7b820d7d7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/READINESS.json",
+        "sha256": "8f1250f4b06fa181ddc6d43de928532fe1f7fb865e0c59374133e8a0772b38f7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/REVIEW_HISTORY.md",
+        "sha256": "cba7d878afff690eeacbca554f02509592accc92d24d492e4b21687b4ff3ed6b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/ROUTE_PORTFOLIO.md",
+        "sha256": "c33defc59670b946c6d4cf45983bbcb8fcfd6ec827bc424f97dad92a6f1f16b5"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/STAGED_FILES.json",
+        "sha256": "64d0216ac23cf4c6838d0b41bafbedf95b0f186eedbb845c0c8467a4cd1da597"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/STATE.yaml",
+        "sha256": "7206a718275dcb5106753497c97884bb127d85d6307609475d03f53d3666a722"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/TRACE_GATE.md",
+        "sha256": "ba905ce22e7bb09eede9fc0184113a0fd4da0179fb8c1d958810f1718e084979"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/check_mutations.py",
+        "sha256": "0d0f5b7156557c196ba0d7d02d557e0ad7657e1d1418d061de516d5689b88417"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Laurent_Taylor_constant.source.py.gz",
+        "sha256": "9832f3be47368445fa2d0bba23749705c95ac30253b2776f7fa6bfb9c07c47ea"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Laurent_Taylor_constant.stderr.gz",
+        "sha256": "1bc49fc5dca3555fb2f4465d0a9aa0324fe1f7fa73b7112f60297c784427acca"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Laurent_Taylor_constant.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Laurent_second_neighbor_sign.source.py.gz",
+        "sha256": "4d54f54faa7bf92f9b954f345ca12b3b4d6847de18b9d816861ce120dd81e69d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Laurent_second_neighbor_sign.stderr.gz",
+        "sha256": "0e6b444b5cd057d55ad46471b01a76715c8f12fe9b32caeedae892ca8fbd8531"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Laurent_second_neighbor_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Neumann_series_sign.source.py.gz",
+        "sha256": "80553912143953d5dab10d14e2201ed10ee776a51ca1d51b33e4b19b7dac8b39"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Neumann_series_sign.stderr.gz",
+        "sha256": "9116b6a9dd47a1b2ab9c20e029c4bcba6d18f39b7fc6f4e88411b43ebccb8309"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/Neumann_series_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/central_frame_derivative.source.py.gz",
+        "sha256": "f191a231dd47c5f005d04eda04f08e9ae2922c5ee89d9777a2678bb81c8a76d6"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/central_frame_derivative.stderr.gz",
+        "sha256": "d6045b8932851164aac6b8a32eb46be40e6f13a2461a1417f376139899cd6127"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/central_frame_derivative.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/common_frame_vertex_sign.source.py.gz",
+        "sha256": "c40390d89bdc2e31a3aacc0bcb691d4f6d9c6bb7360981b01ec121c34905b238"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/common_frame_vertex_sign.stderr.gz",
+        "sha256": "7a99e3a891fa33c76e3d29cf5a5082376489e6046d1efc8f61b947964fb1c80b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/common_frame_vertex_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/compact_connection_weight.source.py.gz",
+        "sha256": "17ae2214fef3259f05185a25bf81a465ad1cc6fbc26b3e15e37dca3fc3ff16db"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/compact_connection_weight.stderr.gz",
+        "sha256": "d6291b682deecbd66282ef129f2a8021fa5048495e8b4dcfe2a9c63ca4888f11"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/compact_connection_weight.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/connection_chirality.source.py.gz",
+        "sha256": "d14cbdf6cc0fec19e57843c593bc59f4acddf1ae839e247302e66b42e4580470"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/connection_chirality.stderr.gz",
+        "sha256": "83612fa6acc4bf43f2d38ad8b83ed029831570623d458a90ec57cd7dca29090d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/connection_chirality.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/curved_drift_metric.source.py.gz",
+        "sha256": "b46f28aa3a007d3cc4924b406e0dfc703003105bbd2927cba56e4ec0677b1600"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/curved_drift_metric.stderr.gz",
+        "sha256": "bb53b0216fae64f8420d0923dcbeb351fc99f6ba3f3011522e5c9165ee56385e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/curved_drift_metric.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/curved_spin_transport_weight.source.py.gz",
+        "sha256": "781a7a92d4fabd25a89d3039e41ab76146e8e9fd8d87d615a0173a9a386b9efa"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/curved_spin_transport_weight.stderr.gz",
+        "sha256": "f36bb950bc39d6828c9f99ba71cb503b14466db4a1d296f17b636c0df16605a2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/curved_spin_transport_weight.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/density_connection_weight.source.py.gz",
+        "sha256": "0e1ce430e92fd7e16365cde89585f635be4dbb9cb1c763d5461e1bc0a60572f3"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/density_connection_weight.stderr.gz",
+        "sha256": "3562983c8d3e67abe89034885e68b16b1a0d0c62bf71bf2a2a92033933aee737"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/density_connection_weight.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/flat_spin_rotation_weight.source.py.gz",
+        "sha256": "7b1b4d22f5cdfefce77525605633cbd220d5154fed4d6ce335fd00d408bc80b0"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/flat_spin_rotation_weight.stderr.gz",
+        "sha256": "b304a89695cec4c1399f702011808aba45ad9d61ca77500ef0338b53e39bbd6a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/flat_spin_rotation_weight.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/metric_frame_order.source.py.gz",
+        "sha256": "c9bde7f4f948763ec48b5a7bb44b11a8bff9f22455c19abeda527e6f8b95ac96"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/metric_frame_order.stderr.gz",
+        "sha256": "07d7791465a6587e9959beb42f3e34b6e299ed2437afccec1a3590ffe932d0aa"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/metric_frame_order.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/naive_node_frame_order.source.py.gz",
+        "sha256": "54b6a3c172493929346fab99f09581efbdc7086e6ef0e6e4b867614a7da2b8fa"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/naive_node_frame_order.stderr.gz",
+        "sha256": "545b08be3df79bb8f0401ea0c2fb6d02b1dd695c0953dab41b3b58421c0b4b98"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/naive_node_frame_order.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/native_imaginary_hopping_sign.source.py.gz",
+        "sha256": "4ce59d214610eb1b70824e53001a320add8c6966567ae584c5bb49fefb1aa71f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/native_imaginary_hopping_sign.stderr.gz",
+        "sha256": "ef5e684fed6718347912c412c969802ae1f11e8fbbf90e227a8a62551b5f2ab8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/native_imaginary_hopping_sign.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/native_path_phase.source.py.gz",
+        "sha256": "a84743327e9cd095ae8698a7374ae99f40cab9b367ce6a2b18b47f03953604d3"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/native_path_phase.stderr.gz",
+        "sha256": "5abcbdd9312ea534f8c1eb57c9f7578c9f9d5d00b3f9eeb2fbd5d9e0bc1ea0ba"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/native_path_phase.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/numerical_orientation.source.py.gz",
+        "sha256": "85cf11f0591ca372f6244ddcc966e84421f11839f0e8baf81371db4293fdd40a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/numerical_orientation.stderr.gz",
+        "sha256": "60901160c85e4e297e6edf0235d151b99439d46b9df32200d7831a073c47d3d7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/numerical_orientation.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/operator_bound_coefficient.source.py.gz",
+        "sha256": "1ce287b80cdcc13c5ebb864ce2ba147c8f13fa0f855b84baac571bc44f2be30d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/operator_bound_coefficient.stderr.gz",
+        "sha256": "b5438b9a206491b9fe390d5f03814979d3d459d74d157a1f3bd8b86825640506"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/operator_bound_coefficient.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/polar_metric_power.source.py.gz",
+        "sha256": "5d4307efc5367e58dfb95cf12a99750faf9cdd817f2466179b39b78898cd2499"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/polar_metric_power.stderr.gz",
+        "sha256": "a8ffcccce115d0acb016345da767c8da4551aaf9e7cad4e0791b0829fbddc637"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/polar_metric_power.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/polar_rotation_variation.source.py.gz",
+        "sha256": "33143277842363cc2db5f4cfe3c3be14538f4c80a3791c477bb176189bc0dc96"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/polar_rotation_variation.stderr.gz",
+        "sha256": "d7e58245b796ae0a476a0bd0d77325839e05377e2bb70b70df020fd97971824b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/polar_rotation_variation.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/protected_y_edges.source.py.gz",
+        "sha256": "eba5c5d03ada43e14beb931dbee8fbe06868d0c8f8b8f410f906f795861ba85d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/protected_y_edges.stderr.gz",
+        "sha256": "d67d0c095b906b0fd836c4e968c45e6d93fc1057d2602207925a947ef13df335"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/protected_y_edges.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/relative_bound_coefficient.source.py.gz",
+        "sha256": "c879ac4c5c94aac0a4a84e42d956f45f358adff69d1ede045153892ac694f3c8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/relative_bound_coefficient.stderr.gz",
+        "sha256": "56b4a0540c7592268120bd245f84c16cdb694bdab11bc89b131cb470d9def40a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/relative_bound_coefficient.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/variable_xz_vertex.source.py.gz",
+        "sha256": "7e8791df328f0e2d09150d3c4047469cc5da41dbbf420ceeabd668f76579ea2a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/variable_xz_vertex.stderr.gz",
+        "sha256": "6aec1e5e081a40d3bc4449d4e3d7dd395cb0a30c372897946a3e3f57a9e33944"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/mutations/variable_xz_vertex.stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/recovery/duplicate_route_reporting/FILES.json",
+        "sha256": "8c405d14c850742967999d2bb6c81c271a683534fb3fc1ed864cdebcfde1c40c"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/recovery/duplicate_route_reporting/INITIAL_RUN.stderr.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/recovery/duplicate_route_reporting/INITIAL_RUN.stdout.gz",
+        "sha256": "672e057700785894dd16e23df3c5267d1151c203bb59cc2ed827bd9a9d5cfb7f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/recovery/duplicate_route_reporting/REASON.md",
+        "sha256": "af7c1e500e99990324142f217c78602d96a979e3f6505194f240305ac5f80789"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-common-frame-20260913/recovery/duplicate_route_reporting/native_common_frame_spin_connection_2026_09_13.py.gz",
+        "sha256": "5676e37e89837800c60d93c7546934e81a23c48f25d4f90c11addda2d88687d1"
+      },
+      {
+        "status": "A",
+        "path": "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "8f94e395ccfaafa8e1232ff1b6bca517e228302c7457564cf69d64048d3310b3"
+      },
+      {
+        "status": "M",
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "8d95316a8ab01c21c714af3e2d233f490837224d31e43f3a89e21087a0e1d603"
+      },
+      {
+        "status": "A",
+        "path": "logs/runner-cache/native_common_frame_spin_connection_2026_09_13.txt",
+        "sha256": "4590609247ce8ffaecbdf41dd077623fbe3dd1f085d7a676a6ecdf92d918b30a"
+      },
+      {
+        "status": "A",
+        "path": "outputs/native_common_frame_spin_connection_2026_09_13.json",
+        "sha256": "87001cbc5e31573a6787a99ea871a29660630ab81c68a4fa035869a77f212694"
+      },
+      {
+        "status": "A",
+        "path": "scripts/native_common_frame_spin_connection_2026_09_13.py",
+        "sha256": "177470b9d38d4a16757d7d77f891b81811486df8142d2abde296fce90526a327"
+      }
+    ]
+  },
+  {
+    "number": 8094,
+    "head": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 153,
+    "canonical": [
+      "docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_weyl_stress_logarithm_contact_response_2026_09_13.txt",
+      "outputs/native_weyl_stress_logarithm_contact_response_2026_09_13.json",
+      "scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_weyl_stress_logarithm_and_contact_response_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For the specified free native two-orbital Wilson carrier and joint arithmetic lapse/frame source: derive the seven-source real symmetric even-frequency Hessian including its mixed contact, prove its uniform thermodynamic infrared stress logarithm, and derive the exact continuum two-particle spectral density. Construct a native local density-contact family with the same flat and first-order matter data and different spatial gradient vacuum coefficients. The Hamiltonian, free state, frame, source coupling and time are supplied. The result concerns the seven-source restriction of the leading nonanalytic tensor, not a complete dynamical metric or Einstein action.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\n"
+    },
+    "paths": [
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/APPROACH_REGISTRY.md",
+        "sha256": "9584ccf1f1d16cd97c921355942a7e62597e902ef4337230e008aa3891c89ce4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/AUTHOR_DEVELOPMENT_REVIEW.md",
+        "sha256": "1fd2c9d6f1b3760f91c43dcf8563639d06da1529880e2d709b2b2accfdeb435f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/AUTHOR_RUN.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/AUTHOR_RUN.stdout",
+        "sha256": "ec9f2784f1e5f707777c8493a1bd2125c37b2e28f238f95fb52c5567cc4ef568"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/CANONICAL_EXECUTION.json",
+        "sha256": "4161b99d92f2478cec08fc8299464ed0959cad07f549f172f372b99ac0016613"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/CHANGED_EVIDENCE.json",
+        "sha256": "eca3a29cb354685669cdce005999e01b9faf925a338c43274aa6267d8d5ccf0e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "84dd373fd81f1e3522f786694354f317354eb8299400590b6b3c6756934cc771"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/DIRECT_SOURCE_READINESS.json",
+        "sha256": "73dcc87cf09eec1af6dc2fb8a9e7ba4ffba8f15c43b4f1ae5e4236742d298171"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/GOAL.md",
+        "sha256": "42737a3fe9cf47a4dc39ffdeef2d7af92166e7d74bc8700467b63c42732b767d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/GRAPH_DELTA.json",
+        "sha256": "e2a42fdb32fd303f05ba86ddaad52669435302a25660befc9594155aaeff6a7a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/HANDOFF.md",
+        "sha256": "aa66cc6e5bc3a06a94e711f150ca2b954ed37ed1fbd116c91c936177fe99db87"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/MECHANICAL_CHECKS.json",
+        "sha256": "5d97546dbce244c564d2a080630c44e12d65f80fb8e3a2e0b3ea68550828c2e6"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/MUTATIONS.json",
+        "sha256": "a532d74b2448e083701ee7018d75ab714eea351b37bd45c919f173f00de2db86"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/PR_BODY.md",
+        "sha256": "a142c7ca5c711f273d20049497bb0a84a999ab4aa8e815bbbe5730759d3551de"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/REVIEW_HISTORY.md",
+        "sha256": "3ff7ea6bd302cb08ffb2f345a375f6dacd1ac443adbdd820ca7b1d83de358443"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/STATE.yaml",
+        "sha256": "1613504e39d5d5ad6d550dfb86baa4ac9dae86ccea334741af12951be53e7fb8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/TRACE_GATE.md",
+        "sha256": "3abd4866b3492786700940ed097ec02ad05d4e5ae7a46f936b135323316ebd02"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/VOCAB_CHECK.txt",
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/check_mutations.py",
+        "sha256": "832d70ddb9a0e74a9a5532efb39f601f9186fab67d1e4c726a80ab149fe6786f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/manifest.json",
+        "sha256": "2178d029d6ba9300eed1ff282d12c4360eba964ef6c1f29fcfa8d58154693043"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/source.py.gz",
+        "sha256": "f3a3530cbc78e353da376e9e8fb97550cec0419e23700a293d35b14a78973aaa"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/stderr.gz",
+        "sha256": "9abd8237d7bda28d8d88adb071b095e4b54c327c624a80af6e081cf209a49d68"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/manifest.json",
+        "sha256": "35ab0bd9af0ef5c4951895d6faa480c93049838214a27d8eca110f42be5fd0da"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/source.py.gz",
+        "sha256": "bb35d074392ac6a2ba201bccc5cfa535bca090b508512b6d83680f8d7c8d01bf"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/stderr.gz",
+        "sha256": "c42a8a2bcc0c1066de4a5755aafbef6f64b02a58c2be19b1d48e14495ee4e492"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/manifest.json",
+        "sha256": "5b1cf60ee4fbd500005ad8e4f29c58a2e849d88a8b8d0878ad599c64a89bed55"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/source.py.gz",
+        "sha256": "0126f5383a9c723c9f7e3526fbe81c7b8fea99bf71422918d506b22ac148e6f4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/stderr.gz",
+        "sha256": "1e14a6f94ca0377c9b28f7857e2bc576f9aa2e3b3e7eb2db2ac809d04c1a841b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/manifest.json",
+        "sha256": "36ec026ab6caa929f1a7cd152177dbf6bbc7e449f62f676577d5924b023dd2bc"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/source.py.gz",
+        "sha256": "f83cfc51c48e5624d861cfa769307e0e4687733d8c244e471cd14dc2dbd1ab80"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/stderr.gz",
+        "sha256": "74d24922ea7591d85e96fa132d33392d90d5acb5f6c1837268d91344bbfa8540"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/manifest.json",
+        "sha256": "00e14464d8db19611aa4a610960a2a9f93aa16deb4fd6fbf17b464bba39e91e9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/source.py.gz",
+        "sha256": "178e7fcea08a95840d5fe07190d6d1051f4bc416c58d897734a5a4a0fe81f17f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/stderr.gz",
+        "sha256": "d2f3063e44393993f53e563e774b284cdc08e8ed2a2311648b94848b4f5eb2d6"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/manifest.json",
+        "sha256": "39784218a1cdc5096528a50dcb8d9f97eb862239d9025a0bf7d872c87cc5e792"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/source.py.gz",
+        "sha256": "a10539013e75cc9b37e56a9d49850980b29897f1d7a70a79c0fb5c1e5c9a34b1"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/stderr.gz",
+        "sha256": "ce552aeebf4b3c2472d8229789af2b2ed8bd593dae9705b966c526a163848a01"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/manifest.json",
+        "sha256": "858f87d63b2af00fa64521b4b0259cf5e0f28dd5cfd5c15f7345e72a36576b79"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/source.py.gz",
+        "sha256": "500692c3b95bb131b01d12abd155812a8f4990dc9bdad21b50653a02d1faef3c"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/stderr.gz",
+        "sha256": "722fdaf8ca848274ac2cb84156eed2487f18c4d759f86ef924842a73dad6f2ba"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/manifest.json",
+        "sha256": "78f3b2d0d4151e06407262689f89863be7925ae363e558a37bd29c5faffa0320"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/source.py.gz",
+        "sha256": "1643196f1a7d1f95c91d58a4a3381019830fb72935b231c08ce02a6ef71f8683"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/stderr.gz",
+        "sha256": "06a0ab15e176fdea421a3797381bb745db82123603f011858efab96f0b8cffbe"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/manifest.json",
+        "sha256": "7a16de298aa0017342af964586ab857caf0b6aeae48fd85da4a937c3fa9f8b59"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/source.py.gz",
+        "sha256": "bc37e49804aec193ca1b1527abaddeafb4d9a0bfd3435b647bd11768bd08105d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/stderr.gz",
+        "sha256": "a206c7060e8297056045ff23bd30bcf3f4e56665b0e28088468c88211d4e099f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/manifest.json",
+        "sha256": "6636ef5f09bbefa4686ea21a21593cfd6d388157b187e3a4bc9a2bab0fa83553"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/source.py.gz",
+        "sha256": "dfdbdaa0c13bb956a6a9464b8aa4dd2e2bf8668d17958f53471efdc756f94cb2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/stderr.gz",
+        "sha256": "decfc25d1de9be6731960d2783a72a17b705bdd577506aa24d75a046f1ae492b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/manifest.json",
+        "sha256": "555e8ba570bf12a9507d92abc4cb93507c66285262badb60f043ccba557dfc15"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/source.py.gz",
+        "sha256": "f93927d42bcb66438edcd97e121b73b028ad14a469997a64c70af42ffa06e176"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/stderr.gz",
+        "sha256": "0651d9b8ee08f9b3df11b1fbdd5a1aeb585a9da928a685b5f1dcf237e72d0226"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/manifest.json",
+        "sha256": "2fe8cc57418f688822c9603bb405ad0b59e0c566bff9453d4bcda8d7ba0ccccf"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/source.py.gz",
+        "sha256": "1a7bc901ee2365cead5523566f62c91fa8ba7efe274fa9ecdb5c51a425ffa050"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/stderr.gz",
+        "sha256": "cd1bf03d153ea4addf6835797ac58901c9633caa887f24375918811e00535605"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/manifest.json",
+        "sha256": "73818416acc21a339883b5a0708b39709b121ec0b23a5ca4b6cdc4f6d34ea7d8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/source.py.gz",
+        "sha256": "528d646c335e45dffcf531c64de316aa0194358823993ac259fd81c762b429a8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/stderr.gz",
+        "sha256": "c5e4ed0143fbfe8800db83809c197bc654f64a0cd507c3aee0fb9420d2bd478d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/manifest.json",
+        "sha256": "fe50c2c5ca6603d92de9e25339002b8e6645245e5050354e43bf95fab5df2d20"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/source.py.gz",
+        "sha256": "06e5f4c4782d1b8c8b7af7b033a47d8086428683b758bc56d55f051502efa47f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/stderr.gz",
+        "sha256": "c2050478d2c61133a6b4339452fce9301e6dcb122c28208f72983c6d091cc37c"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/manifest.json",
+        "sha256": "4771afe51b1629074fbb593c56183d8c783c896947326879b5e3912816dab76d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/source.py.gz",
+        "sha256": "165ff14e7fb44f4c990470e082f2ff2c3723cb4011e2eb46953b0689e042b1ec"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/stderr.gz",
+        "sha256": "9dd77f91ecf573bbededd615abdf33f54e27c29ca60e847ab7001c7f0827fe4d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/manifest.json",
+        "sha256": "f3b1593d818919993a86e5032a5c7213b0eebd96a8e84c1f7f5a26c2532ba19e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/source.py.gz",
+        "sha256": "2be307654529a10c447fa60327b8e93b646aabd6d58024f2be5a3ebbbc1c6cf9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/stderr.gz",
+        "sha256": "952a4b0ad0ddb4dc7d64d961308858c8d227d18d0724623c6626c7cd92e5f206"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/manifest.json",
+        "sha256": "6767f032d8fbe38904dd6fc4fc7de69c7cfd997ba4930b383a921bdc8fd01555"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/source.py.gz",
+        "sha256": "1b12b62b315da83fc0ea81ed3d6096d7296e8434c3160477e14f6c258562dec2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/stderr.gz",
+        "sha256": "ad5fa5335166be99a53aaf11a95dfc189fabe81f62be20bfbf6d09b03a02a2f7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/manifest.json",
+        "sha256": "d0b0d9414d7d8e4817a50a21819925b18f3def9ba3cf45f7ad09120bb7221a59"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/source.py.gz",
+        "sha256": "b515d8239553be54db98e5049753bfe8d432f4ecacaac80c38703871a6278bf8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/stderr.gz",
+        "sha256": "47f185fe2e2f73ab443746b6b06ec43eadeff6d4e82089ae4db2862dd07510e6"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/manifest.json",
+        "sha256": "53d8132b5ad9e0077a8f6fcf0bcd316d0a957deb7852909dd1d85b828a50090e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/source.py.gz",
+        "sha256": "f3c5e597076bd2f1e288b833a676a5023fa678bb6c577d6d97b7e501db3d3c51"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/stderr.gz",
+        "sha256": "207c8166e97e9ac827b0c2f353ea52af9f7c8f8de2017bafa25afb8d24cd4e8f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/manifest.json",
+        "sha256": "b70dfc9f797ae751c9bc96b8a428e2c951c2f422427deb70580873ea79030a27"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/source.py.gz",
+        "sha256": "f8cee5a961ce97f815eaa7579b6dfc206c0898158bddfdbadc60a356b2c7abf3"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/stderr.gz",
+        "sha256": "5986c7c6996b9a4d39908e381e35cf271f690c6f1ea22fde565705b5af94ab7f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/manifest.json",
+        "sha256": "5b1c23ebba520b27f7cd52dd6d58713286428253aef0474ba88540a6dae7a560"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/source.py.gz",
+        "sha256": "f5c28373242ba7521dec0412671e1ffbbcd10ab86dbed264d718d975b806e4e9"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/stderr.gz",
+        "sha256": "b30887683ede5be619547cde2d0ef8216cd06c90ae1d231c78c86e975cbe0a6e"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/manifest.json",
+        "sha256": "e70cae1c575e7350f0f2d6b41ed45af00598fceae58b77facd062747c70cd63d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/source.py.gz",
+        "sha256": "a700187aa27300407f2fd63439319b86d019b0a36543149c9b15ab72cd5e4013"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/stderr.gz",
+        "sha256": "7fe1b43d25b98afd7b0e5495415dddc2d85d3eae2d6045ee3b11189c64e7d962"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/manifest.json",
+        "sha256": "d6ee6fd565b522e2d5b94acc7a38ee79571cee8165a4800b605d607c8237bca8"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/source.py.gz",
+        "sha256": "9387887c22a9866ec693ef519a4f20d4a00d1904eedae1a1e73d3d498a326c63"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/stderr.gz",
+        "sha256": "013ffd1012aad08758acec321748e01ed0079647cbc62fe07823c577764c4daf"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/manifest.json",
+        "sha256": "c960079e831b6d0cbc993dd7a32a55cb25d9b8f0a4ad34cf3590befad78ec5b4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/source.py.gz",
+        "sha256": "9bd6e6c5764131a81a4e5ed403bc4a66cac25e0cacf239d4072ef30963321ddc"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/stderr.gz",
+        "sha256": "8cf32947d11d294e204fa62d7211f8f77d359d6a4d5275afa93457e600e38209"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/manifest.json",
+        "sha256": "8bcbf344709bbbc2f9ec7c1065c85d3ba2bf4ed8d9964690f44b3dac81471a2a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/source.py.gz",
+        "sha256": "f1fbe9758d487a1b2519885e854f349d2fe6c42191ecc41421f405a2b0a32743"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/stderr.gz",
+        "sha256": "7a4eb14e417ded72c0c3be5570778e1452d336ccec7bf020baaee2623a5f4601"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/manifest.json",
+        "sha256": "6ae0e64c3a3e3a17490e0a64c9da666c06ecc6c6fe366fb7f3545822bd171654"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/source.py.gz",
+        "sha256": "6f035f47f71c194aa86c23040efd9d9e3dfacfb21f3ec282ae7f1a9178c40df2"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/stderr.gz",
+        "sha256": "7a811fac02ca948cf878cb6c85a444d1e4b5687d8b0840df3306cd491a6c8635"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/manifest.json",
+        "sha256": "4e34ed4dd4102b72bbabd2f0c28a4af147213efeb40d8598f0f79a59643ed545"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/source.py.gz",
+        "sha256": "90e1887162d3c44001d0992cad990a9057d7b2a7212d91d2078b225c88f84260"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/stderr.gz",
+        "sha256": "d984e798b10762eccf43cf855b11d43cb6a11c10cc92906d97245aa469599ef1"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/manifest.json",
+        "sha256": "bd4f207dffdc017c1d15a09f024c6f86c442f169b4c914b231e251da8dd4646b"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/source.py.gz",
+        "sha256": "b34a9531238567d93991d90ad64df34cf7767cba09b29abaf8ad2db2d0e55386"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/stderr.gz",
+        "sha256": "17d379e311fe719f3c92c36f45ec9f5ba2ba4ff5079e6d7e77839e4748b2c0b7"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/manifest.json",
+        "sha256": "683013dd84555dec9cb68feddca4dbb3c482d84399c3154ff6e1bf47ab38f17f"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/source.py.gz",
+        "sha256": "058d06a20c9b002467d81748d2084d7c063f5cc3047c7992e3ca91b3cea21ff0"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/stderr.gz",
+        "sha256": "4e6e08a0342e28d995b5c694ceac63f284f2d34fdffff88f9cbb7a4a13feb727"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/manifest.json",
+        "sha256": "da43cf2c37da5bca46af825f4be1fd1a51b7fb27c88ee1d2e0bdf547b54793a5"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/source.py.gz",
+        "sha256": "767e696c6789f8f4edff45a464cf4555df537fcbbe2df26ee922293bd99bb360"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/stderr.gz",
+        "sha256": "aaa60e140bc8a84c637b186969c5a9f241a7ce949a64f530c21233d07e4e577a"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/manifest.json",
+        "sha256": "f4fde178f5ce2224b135350d1fffd276c03fdbadc1563ab8d8bce1397c1b72c4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/source.py.gz",
+        "sha256": "43e5e57156a51cee550737df5f10a6a2d896b520bf13d07320dc42b019b3cf86"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/stderr.gz",
+        "sha256": "082ffc805221a5d7ded249ebe994d4e1f60c801362c36cd86eb2aef856febebe"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/stdout.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/manifest.json",
+        "sha256": "1e1cdf2e662a0e8662698de0b4d67d4f07bae6aeee367b7f6add26cdffb403bb"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/receipt.json.gz",
+        "sha256": "85031cecd50f0feba171bf61cf3fb8c7e215623c9aa3bf6f6bac0592ffdb5ff4"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/source.py.gz",
+        "sha256": "9b97e068359bf7b2d9ff5044611556d91832245b921853d9bcc3a915a834792d"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/stderr.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+      },
+      {
+        "status": "A",
+        "path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/stdout.gz",
+        "sha256": "f7649147aa0cd28b14378da96e3a73394ad2f871a581b0e525a88a178f2aaf03"
+      },
+      {
+        "status": "A",
+        "path": "docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9d392f87e747a2da9f9c5aa74c053754f3649e9ad9fab22ac20f402c0f2cd162"
+      },
+      {
+        "status": "M",
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "ad7b2ac749d9d823eb89f9a015c16107ca8b4df3006006b492366fb7d74ba49d"
+      },
+      {
+        "status": "A",
+        "path": "logs/runner-cache/native_weyl_stress_logarithm_contact_response_2026_09_13.txt",
+        "sha256": "f651cc0a3ddda6bb9019ec7b718eb5f5c69f9f1f5de7d9ce537972cbe3f546d7"
+      },
+      {
+        "status": "A",
+        "path": "outputs/native_weyl_stress_logarithm_contact_response_2026_09_13.json",
+        "sha256": "c768b587e3ffbae272b9fb93a441a576411f85ed3f28b760148152aba582c088"
+      },
+      {
+        "status": "A",
+        "path": "scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py",
+        "sha256": "0667f326f287d1ca1cfa72e924939cf92dd79176ccd66bf3213c82955822e87a"
+      }
+    ]
+  }
+]

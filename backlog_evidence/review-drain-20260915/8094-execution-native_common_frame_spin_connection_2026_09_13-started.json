@@ -1,0 +1,6 @@
+{
+  "runner": "scripts/native_common_frame_spin_connection_2026_09_13.py",
+  "limit_sec": 60,
+  "preexecution_record_sha256": "bb8790fcde355524113e9473b7419040cb0202eddfa87bd53d9b215840035007",
+  "original_output_sha256": "87001cbc5e31573a6787a99ea871a29660630ab81c68a4fa035869a77f212694"
+}

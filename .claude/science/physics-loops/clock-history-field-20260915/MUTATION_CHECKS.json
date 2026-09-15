@@ -1,0 +1,105 @@
+{
+  "original_source_sha256": "32a085b12393438b77e47cd88879614b9937ba5c190110b6aac2ec5600b1cba4",
+  "independent_review": false,
+  "mutations": [
+    {
+      "name": "charge_phase",
+      "function": "check_history_reconstruction",
+      "old": "value += kernel * np.exp(-2j * np.pi * (rho @ eta) / N) / count",
+      "new": "value += kernel / count",
+      "source_sha256": "3fbc25b47309483e203fa00ed3af467a2aed1ee906e742bdea1cfff19def0e8c",
+      "exit_code": 1,
+      "elapsed_seconds": 0.15245483303442597,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/charge_phase.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_history_reconstruction()\n                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/charge_phase.py\", line 69, in check_history_reconstruction\n    assert discrepancy < 3e-12\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "inverse_scale",
+      "function": "check_history_reconstruction",
+      "old": "inverse = float(np.vdot(original, np.linalg.solve(tau, original)).real)",
+      "new": "inverse = 2 * float(np.vdot(original, np.linalg.solve(tau, original)).real)",
+      "source_sha256": "4d749c24af5ff5941488998f920c7327ff1d2575f54941834a76be033e85383f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.15971174999140203,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/inverse_scale.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_history_reconstruction()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/inverse_scale.py\", line 77, in check_history_reconstruction\n    assert norm <= 1 + 3e-12 and inverse <= K + 3e-10\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "prefix_unitary",
+      "function": "check_history_reconstruction",
+      "old": "prefixed = field[:, None] * W",
+      "new": "prefixed = 2 * field[:, None] * W",
+      "source_sha256": "f206bf6bfbff1a18ed2463852d9e5020145db4b6a36139a0a7d3b7d9380e1fe6",
+      "exit_code": 1,
+      "elapsed_seconds": 0.10725654207635671,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/prefix_unitary.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_history_reconstruction()\n                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/prefix_unitary.py\", line 84, in check_history_reconstruction\n    assert np.max(abs(prefixed.conj().T @ prefixed - gram)) < 3e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "strip_orientation",
+      "function": "check_endpoint_comparison",
+      "old": "strips.append(-(total - past))",
+      "new": "strips.append(total - past)",
+      "source_sha256": "d976aba172ec56228e09128a37bd71fd8e3127ac3a8884e06482461129d66dad",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07849929202347994,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/strip_orientation.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_endpoint_comparison()\n                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/strip_orientation.py\", line 161, in check_endpoint_comparison\n    assert np.array_equal(spatial, expected_spatial)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "reference_time",
+      "function": "check_endpoint_comparison",
+      "old": "np.linalg.matrix_power(tau, n + 2 * length)",
+      "new": "np.linalg.matrix_power(tau, n)",
+      "source_sha256": "64bfbbee927efed37d7d0cc879bb0db6ac95c30ec32100e11fbe1f0e75757a6b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.09899404202587903,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/reference_time.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_endpoint_comparison()\n                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/reference_time.py\", line 171, in check_endpoint_comparison\n    assert reference / R ** 2 - 5e-12 <= value <= reference * R ** 2 + 5e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "cube_fiber_normalization",
+      "function": "check_endpoint_comparison",
+      "old": "fourier = z / z[0]",
+      "new": "fourier = z / z[1]",
+      "source_sha256": "09709250e82513f94c6d3e76f4de8cc0245ddeb4e9a8d731ae9052801bf93399",
+      "exit_code": 1,
+      "elapsed_seconds": 0.12239554198458791,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/cube_fiber_normalization.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_endpoint_comparison()\n                                                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/cube_fiber_normalization.py\", line 208, in check_endpoint_comparison\n    assert np.max(abs(direct - fourier)) < 2e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "charge_block_projection",
+      "function": "check_local_charge_floor",
+      "old": "charge = rho % N",
+      "new": "charge = 0 * rho % N",
+      "source_sha256": "0a290e5e67760277e3537b4fd001c7f010bc2b564b76da7ae2ee127e6dee5be8",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07440925005357713,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/charge_block_projection.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_local_charge_floor()\n                                                                                                                                                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/charge_block_projection.py\", line 277, in check_local_charge_floor\n    assert abs(ratio - direct_ratio) < 3e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "charge_domination_constant",
+      "function": "check_local_charge_floor",
+      "old": "bound = r ** count",
+      "new": "bound = 0.1 * r ** count",
+      "source_sha256": "0be4c361d36d2b1ac2e66f57358c311e8623131c907ebf61af95b10fca318884",
+      "exit_code": 1,
+      "elapsed_seconds": 0.07429008302278817,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/charge_domination_constant.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_local_charge_floor()\n                                                                                                                                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/charge_domination_constant.py\", line 278, in check_local_charge_floor\n    assert np.max(abs(K) - bound * K0.real) < 3e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "conditional_trivial_harmonic",
+      "function": "check_local_charge_floor",
+      "old": "for q in range(1, N):",
+      "new": "for q in range(0, N):",
+      "source_sha256": "153f0f4a4309d8f54e4e0250dc6f73f084e54789b54a00ce5c2b32ab469140d4",
+      "exit_code": 1,
+      "elapsed_seconds": 0.0771758749615401,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/conditional_trivial_harmonic.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_local_charge_floor()\n                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-history-final-mutations-rpifys8k/conditional_trivial_harmonic.py\", line 294, in check_local_charge_floor\n    assert value <= r + 2e-13\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    }
+  ]
+}

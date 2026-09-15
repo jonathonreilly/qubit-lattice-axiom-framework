@@ -1,0 +1,103 @@
+{
+  "utc": "2026-09-15T13:27:13.868511+00:00",
+  "base": "691f96525772ec0e7d06a528d14ad17324400f22",
+  "inspected_main": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "source_hashes": {
+    "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md": "0a6b483d83575568a97f5983946f3bbce0e5a4d85a9b0b9885559b16eee1bc57",
+    "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py": "32a085b12393438b77e47cd88879614b9937ba5c190110b6aac2ec5600b1cba4",
+    "logs/runner-cache/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt": "73c10790a149e5a07505dad756ac9328fac36a3ce75ea6136b04c96af7f8c288",
+    "docs/audit/data/citation_graph_manifest.json": "2f8747b924983e9523d5e167edfc985e8fff52b70f002582768106c6819a8331"
+  },
+  "full_pipeline": {
+    "exit_code": 0,
+    "checkpoint": "a4309f88a6d8",
+    "tail": [
+      "  OK: no errors",
+      "==> 14/18 render_audit_ledger.py",
+      "Wrote docs/audit/AUDIT_LEDGER.md",
+      "==> 15/18 render_publication_effective_status.py",
+      "publication package deferred (archive/publication/ci3_z3); nothing to render",
+      "==> 16/18 compute_dispatch_shadow.py (shadow lane + churn state; no dispatch effect)",
+      "dispatch shadow: lane=25 gap_available=True manifest=ok prior_state=True",
+      "==> 17/18 render_front_door_status.py",
+      "Wrote docs/repo/FRONT_DOOR_STATUS.md",
+      "Wrote docs/repo/RETAINED_BACKBONE.md",
+      "==> 18/18 repo_invariants_check.py (authority-link guard)",
+      "INFO: attested 0 seed-pruned tracked ledger shards from the captured full-build checkpoint",
+      "PASS rows=4755 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)",
+      "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)",
+      "  OK   docs/ai_methodology/skills/physics-loop/SKILL.md: axiom-baseline block in sync",
+      "  OK   docs/ai_methodology/skills/review-loop/SKILL.md: axiom-baseline block in sync",
+      "  OK   docs/ai_methodology/skills/audit-loop/SKILL.md: axiom-baseline block in sync",
+      "  OK   docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md: axiom-baseline block in sync",
+      "  OK   docs/audit/data/skill_axiom_baseline_manifest.json: source acknowledgment current",
+      "==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)",
+      "check_review_loop_skill_contract: OK (29 families)",
+      "==> 18c/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)",
+      "finalized full checkpoint a4309f88a6d8",
+      "",
+      "Pipeline complete.",
+      "  Read docs/audit/AUDIT_LEDGER.md for the rendered ledger.",
+      "  Read docs/audit/AUDIT_QUEUE.md   for the next-up audit queue.",
+      "  Read docs/repo/FRONT_DOOR_STATUS.md for the front-door status snapshot.",
+      "  Read docs/audit/data/reaudit_candidates.json for unblocked re-audit candidates.",
+      "  Read docs/audit/AUDIT_DISPATCH_QUEUE.md for dispatcher-only targeted re-audits.",
+      "  Read docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md for the",
+      "    audit-vs-publication-tables gap report.",
+      "  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-",
+      "    derived view of each publication table."
+    ]
+  },
+  "strict_lint": {
+    "exit_code": 0,
+    "result": "OK: no errors; existing warnings and notices remain"
+  },
+  "changed_evidence": {
+    "base": "691f96525772ec0e7d06a528d14ad17324400f22",
+    "changed_path_count": 20,
+    "checked": [
+      {
+        "changed_surfaces": [
+          "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py"
+        ],
+        "claim_id": "finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15",
+        "forensic_evidence_ready": true,
+        "helper_runner_paths": [],
+        "issue": null,
+        "runner_path": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py"
+      }
+    ],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "private_provenance": {
+    "history_proofs_and_checks": "6a88f7785585a27a4c121537ab3b2d2b4ac52476",
+    "local_charge_floor_proof_and_checks": "f8fb30b810959b6ad42eed3ad0ad23fe21dfe230",
+    "explanation": "The source history citation at6a88 is supplemented here by the later local-charge-floor checkpoint; scientific fixtures are self-contained in the primary."
+  },
+  "validation_history": [
+    "Initial history-only pipeline ad756a7c0301 passed.",
+    "After adding the local charge floor, a pipeline stopped with source inputs changed during graph generation: the author CONFORMANCE.md had been created during that run. This was not counted as final coverage.",
+    "With all source and conformance files fixed, full pipeline a4309f88a6d8 passed. The final three-family cache, nine actual mutations, compilation, vocabulary, strict lint and one actual changed-row evidence check passed."
+  ],
+  "validation_scope": "Pipeline binds the frozen science, cache and author conformance before this receipt was written. This receipt is subsequent metadata; generated authority residue was then restored to own HEAD. Final current-main integration must regenerate and validate its complete tree.",
+  "discarded_generated_paths": [
+    "docs/audit/AUDIT_QUEUE.md",
+    "docs/audit/data/dispatch_shadow_state.json",
+    "docs/audit/data/effective_status_summary.json",
+    "docs/audit/data/ledger/ca/carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/fi/finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/fi/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/fi/finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/fi/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/fr/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/qu/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger_meta.json",
+    "docs/audit/data/load_bearing_summary.json",
+    "docs/repo/FRONT_DOOR_STATUS.md"
+  ],
+  "independent_scientific_review": "pending; author checks only"
+}

@@ -61,3 +61,5 @@ Block15: bounded mixed sixth multipliers cannot cancel the certified
 nonzero singleton1/omega term. This is a specific canonical coefficient
 statement. Local responses remain finite; joint fields, energy dependence
 and resummation survive. An all-phase or axiom wall FAILS N1–N8.
+
+Block16: provisional positive state/regulator theorem, N1-N8 recorded. No phase exclusion or axiom update; broad no-go FAIL/not claimed. Divergent weak-coupling constants are a limitation of this estimate only.

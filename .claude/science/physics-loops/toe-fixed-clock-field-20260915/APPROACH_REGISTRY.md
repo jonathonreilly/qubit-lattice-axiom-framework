@@ -239,3 +239,25 @@ node chain. Four full native history censuses, literal cocycle/CAR identities,
 a non-Hermitian odd-family bound and the singleton sign/factor all pass
 personal checks. No native mixed spectrum was computed; the finite Bloch
 example is explicitly diagnostic. Independent review remains necessary.
+
+
+## Block16 — cyclic equilibrium and exact integer Gauss limits
+
+For the supplied positive cyclic gauge/matter model, lambda_N(E)>=
+(4/pi²)kE² uniformly in N. A balanced onsite trial controls ground moments;
+relative entropy against a product Gaussian controls thermal moments without
+a log N loss. Exact modular support then bounds each integer Gauss alias
+probability by O(N^-2), uniformly in volume at fixed positive couplings.
+Local trace compactness and the parent's finite-time comparison yield
+stationary rotor limits. Cooling Gibbs states at arbitrary joint rates
+removes negative spectral weight and yields an interacting physical ground
+state. Fixed-beta detailed balance and fixed-volume ground-energy convergence
+are also established provisionally. None identifies the phase or proves a
+fixed finite-payload photon.
+
+A noncubic four-edge charged fixture retains all modular aliases. Direct
+full-field projection and reduced coordinates agree exactly; twelve Gibbs
+fixtures obey the bounds and detailed balance. The constants are loose and
+the hard-cutoff comparator remains finite. Generic complex Lanczos starts
+avoid an artificial symmetry restriction; separate three-level checks agree.
+No scientific check failed. All review remains personal.

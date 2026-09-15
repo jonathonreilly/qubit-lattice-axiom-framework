@@ -414,3 +414,7 @@ Primary Nachtergaele-Sims-Young https://arxiv.org/pdf/1705.08553 pp1–7
 through the opening proof of Lemma3.2 read, including all hypotheses and
 statement of Theorem3.1. Only even finite-range CAR propagation is used;
 no gapped-phase stability theorem is imported. The paper is not fully read.
+
+Main refreshed at 2026-09-15T22:46:23.270518+00:00 to e0ef7cf4633034a8c1e6d57f5812cc4275bf1349. Thirteen top-level science notes were added; no Block15 parent changed. The full684-line positive finite cyclic gauge-history/local charged-rotor source was read in three chunks. The full453-line exact Gauss reduction/fixed-volume spectral source was read in two chunks. The other new notes have not yet been fully reviewed.
+
+Block16: Kelbert-Suhov arXiv1206.1229v3 opening through section1.4/Theorem1.1 (pages1-9 opening) read; local rotator trace compactness is context only. No symmetry theorem or model is imported. The cyclic parent was read in full and supplies only the already stated history/dynamics inputs.

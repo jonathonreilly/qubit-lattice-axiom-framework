@@ -33,3 +33,5 @@ Further work there should target genuinely different physics (generic
 momentum or different backgrounds), not merely rephrase its selection
 rule. Newly landed native infrared/charged notes deserve comparison before
 choosing the next target. The fixed-clock all-order field limit remains open.
+
+Block16 closes the cyclic equilibrium bridge at fixed couplings. Next compare simultaneous weak coupling and regulator growth with the new exact-Gauss hard-cutoff oscillator result. Cyclic wrap may lead to a periodic, rather than Dirichlet, finite-payload scaling limit; derive before simulating.

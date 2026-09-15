@@ -1,0 +1,4 @@
+R1 second implementation of the criterion agrees with exact equality on every order of the domino, path, plaquette and the star classes k = 0,1,2: True
+R2 tree factorization equals the runner's joint law and the center-first sequential law on all 6^7 patterns: True True
+R3 order-by-order recursion equals the runner's center-first environment law on all patterns: True ; TV to the joint law: True
+R4 integer form of the lemma Z_1^k (K_k(b..b) - K_k(-b,b..b)) = (p-q)(p^(k-1) - q^(k-1)) for k = 2..8: True

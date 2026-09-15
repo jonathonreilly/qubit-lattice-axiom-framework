@@ -1,0 +1,25 @@
+isolated star, 0 leaves before the center: TV(seq, joint) = 0 (0.00000); violates criterion: False
+isolated star, 1 leaves before the center: TV(seq, joint) = 0 (0.00000); violates criterion: False
+isolated star, 2 leaves before the center: TV(seq, joint) = 1/72 (0.01389); violates criterion: True
+isolated star, 3 leaves before the center: TV(seq, joint) = 5/144 (0.03472); violates criterion: True
+isolated star, 4 leaves before the center: TV(seq, joint) = 505/10368 (0.04871); violates criterion: True
+isolated star, 5 leaves before the center: TV(seq, joint) = 575/10368 (0.05546); violates criterion: True
+isolated star, 6 leaves before the center: TV(seq, joint) = 103375/1492992 (0.06924); violates criterion: True
+  (35.3s)
+isolated plaquette: distinct TV(seq, joint) values over 24 orders: {'455/31176': 16, '37/1299': 8}
+star in environment (all +x), 0 leaves first: TV(seq, joint) = 0.40290; violates: True
+star in environment (all +x), 6 leaves first: TV(seq, joint) = 0.10368; violates: True
+star in environment (all +x), 1 leaves first: TV(seq, joint) = 0.34869; violates: True
+star in environment (mixed), 0 leaves first: TV(seq, joint) = 0.14627; violates: True
+star in environment (mixed), 6 leaves first: TV(seq, joint) = 0.07539; violates: True
+star in environment (mixed), 1 leaves first: TV(seq, joint) = 0.10719; violates: True
+domino in a mixed environment: (equal, violates) over orders: [(False, True), (False, True)]
+path3 in a mixed environment: (equal, violates) over orders: [(False, True), (False, True), (False, True), (False, True), (False, True), (False, True)]
+single in a mixed environment: (equal, violates) over orders: [(True, False)]
+domino isolated: (equal, violates) over orders: [(True, False), (True, False)]
+path3 isolated: (equal, violates) over orders: [(True, False), (False, True), (True, False), (True, False), (False, True), (True, False)]
+K_2(b,...,b) = 13/72 vs K_2(-b,b,...,b) = 11/72: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 1/36 == 1/36
+K_3(b,...,b) = 5/144 vs K_3(-b,b,...,b) = 11/432: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 1/108 == 1/108
+K_4(b,...,b) = 73/10368 vs K_4(-b,b,...,b) = 47/10368: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 13/5184 == 13/5184
+K_5(b,...,b) = 31/20736 vs K_5(-b,b,...,b) = 53/62208: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 5/7776 == 5/7776
+K_6(b,...,b) = 493/1492992 vs K_6(-b,b,...,b) = 251/1492992: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 121/746496 == 121/746496

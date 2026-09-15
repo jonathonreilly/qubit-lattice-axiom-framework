@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 15 (2026-09-15) — the formation-unit clause witness
+- Dependencies: `minimal_axioms`; block 01 (Theorem B; the cycle disagreement) and the census note (Lemma L; joint formation named as an owner decision), both on `main`. Proposed, unaudited. PR #8148 referenced for context only.
+- Named premises: the records-only reading; the six-axis menu; positivity; the product rule; the definition of joint formation as the rule-consistent law on the unit given its outside records.
+- Scaffolding: the units (star, plaquette, domino, path, single site); the environments (none; all `+x`; a seeded pseudo-random configuration printed by the runner); the star's classes by the number of leaves before the center.
+- External methods (re-proved at scope): the ratio argument for uniqueness of a positive law given its conditionals; the normalizer lemma.
+- References named, not used: the projector chain rule of the unitary-tick notes.
+- Counterfactual pass: the constant rule (all laws uniform); covariant random units (mixtures; not classified); other menus (the lemma's dependence on each argument would need re-proof).

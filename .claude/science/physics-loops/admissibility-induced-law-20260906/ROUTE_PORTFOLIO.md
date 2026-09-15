@@ -84,3 +84,10 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 15 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–14 are open PRs #8034, #8035, #8138–#8142, #8146–#8148)
+Searched commit: `origin/main` = `0cbc631227`.
+- `git grep -n -iE "joint(ly)? (formation|forms|record)|forms? (all )?at once|formation unit" origin/main -- 'docs/*.md'` → the census note (joint formation on covariant sets named as an owner decision); the unitary-tick notes of 2026-09-03/04 (commuting projectors; sequential and simultaneous recording agree there); no classical definition or criterion.
+- #8093's verdict table: row "Formation unit" — *to compute*; the expected witness (the star) and the clause candidates as recorded in the note.
+- Open PRs: none on the unit seam.
+Classification: **open after the matched-hit review.** Routes: J-A the rule-consistent law as the definition, with the uniqueness lemma (U1) — chosen; J-B the one-site-conditional comparison with the normalizer lemma (U2) — chosen; J-C exhaustive small units, isolated and in environments (U3, U4) — chosen; J-D covariant random units — not taken (mixtures; the plaquette hull and the environment theorem cover the executed cases); J-E other menus — not taken.

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 15, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "#8093's formation-unit block: single-site formation against joint formation on a covariant set, with the clause candidates 'for each site' against 'for each admissible set of sites'"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the witness is exhibited exactly with the criterion for agreement (sequential = joint iff no site records an inside neighbour with a second); the isolated star does not separate the readings, a recorded environment always does; the clause decision is the owner's. Next: the menus block, or the lane's harder residuals. Consumers: #8093's verdict table and assembly; PR #8148"
+```

@@ -1,6 +1,6 @@
 {
- "edge_count": 13377,
- "node_count": 5814,
+ "edge_count": 13380,
+ "node_count": 5815,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -733,6 +733,10 @@
   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
    "deps_hash": "e54933eecd76",
    "out_degree": 2
+  },
+  "admissibility_rule_formation_unit_clause_witness_sequential_formation_reproduces_the_joint_law_iff_no_site_records_an_inside_neighbour_with_a_second_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "a95e40c6cf02",
+   "out_degree": 3
   },
   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1badd550395b",

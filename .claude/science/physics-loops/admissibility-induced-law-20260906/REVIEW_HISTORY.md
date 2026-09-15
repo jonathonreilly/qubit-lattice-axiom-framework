@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 15 — V1-V5 (supervisor, 2026-09-15)
+- V1: #8093's formation-unit block ("Formation unit: to compute"), its expected star witness and its clause candidates ("for each site" against "for each admissible set of sites").
+- V2: the lens pass in `GOAL_block15.md` ("joint formation is undefined for a classical rule" — defined as the rule-consistent law, unique by U1; "the star was supposed to be the witness" — it is not in isolation, it is in an environment; "is U2 block 01 again" — block 01 is the isolated case; U2 adds the environment and the iff).
+- V3: U1, U2, U4 proved; U3 and the environment cases executed exactly (18 checks, 12 mutations); the refuting pass agreed on four routes.
+- V4: no order, unit, rule or coupling selected; no clause adopted; the owner's decision named.
+- V5: consumers named — #8093's verdict table and assembly; PR #8148 as the companion witness; the campaign's queue.
+
+## block 15 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block15.md`): as V2. Primary: the note and the runner (18 checks, 12 mutations). Refuting pass (`CHECKER_block15_findings.md`): a second implementation of the criterion against exact equality, the tree factorization of the star's joint law and its center-first sequential law, an order-by-order recursion for the environment star, and the lemma by integers to `k = 8` — all consistent. No defects found in the primary. Author checks only; independent review pending.
+
+## block 15 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01 and the census note, all on `main` at `0cbc631227`; nothing pinned from a branch or PR (PR #8148 is context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the definition of joint formation is named as the supplied object; random units and other menus marked open; the clause table adopts nothing. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

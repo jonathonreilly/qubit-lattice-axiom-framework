@@ -13,3 +13,8 @@ Policy: reference and converge, never borrow; every statement used is re-proved 
 - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
 - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
 - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
+
+## Block 15 (2026-09-15) — references named, none used as authority
+- The uniqueness of a positive law given its one-site conditionals (the Brook–Besag ratio argument): re-proved at scope as U1.
+- The projector chain rule for commuting projectors (main's unitary-tick notes of 2026-09-03/04): the setting in which sequential and joint recording agree; contrasted, not used.
+- Block 01's Theorem B and the census note's Lemma L (both on `main`): used as stated.

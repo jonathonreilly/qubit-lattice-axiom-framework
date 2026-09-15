@@ -1,6 +1,6 @@
 {
- "edge_count": 12877,
- "node_count": 5335,
+ "edge_count": 12878,
+ "node_count": 5340,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2634,6 +2634,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "clock_penalty_local_normal_form_and_simultaneous_ground_state_limit_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "closure_c_bb_canonical_mass_coupling_note_2026-05-10_cbb": {
    "deps_hash": "2d20f59c98da",
    "out_degree": 2
@@ -4958,9 +4962,25 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "finite_clock_local_ground_probabilities_and_charge_projected_plaquette_harmonics_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "a3a5a4918eae",
+   "out_degree": 1
   },
   "finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_bounded_theorem_note_2026-09-14": {
    "deps_hash": "61520f2a99a3",

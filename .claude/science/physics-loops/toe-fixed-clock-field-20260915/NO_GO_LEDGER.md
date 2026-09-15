@@ -11,3 +11,10 @@ a formal independent audit verdict.
 Earlier Block1 curvature and Block2 absolute-bound failures remain method
 diagnostics in their source notes. They do not show divergence of the
 physical model or that no axiom-compatible dynamics exists.
+
+Block4 count diagnostic: summing a common prescribed-loop upper bound over
+independently added same-species paths leaves (r!)^2/(8r) multiplicities.
+That series of upper estimates fails to converge for any positive fixed
+loop/edge constants. The true physical series has not been identified with
+those estimates or bounded below by them. Regrouping, parameter integrations
+and cancellation remain open; this is not an all-route no-go verdict.

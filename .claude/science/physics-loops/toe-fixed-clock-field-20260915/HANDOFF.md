@@ -342,3 +342,29 @@ update. Finite exact formula checks pass; independent review is absent.
 Next return to F2 with the Fourier energy bound and Gaussian feature
 registers, testing whether their degree cost is compatible with the actual
 connected graph multiplicities. Deadline unchanged; continue personally.
+
+
+## Block4: sharper Fourier energy and Gaussian derivative registers
+
+The infinite cubic Hodge symbol is lambda I. A low/high Fourier split with
+R^2=pi^2 ||j||2/||j||1 gives <j,Gj><=(1/4+pi^2/64)||j||1||j||2,
+with constant below0.405. The exact unit-plaquette energy is1/2. Edge feature
+registers preserve all prescribed Gaussian derivative inner products,
+combined with the existing contact registers. Separate linear-mass and
+quadratic-current activity reserves give degree cost product(d_i!)^(3/4).
+The full derivative of D times the Gaussian follows by the actual Leibniz
+partition, retaining the two/four-source loop bound. Residual mixed pairs
+and physical graph counting remain open.
+
+Prufer counting shows the three-quarter factorial cost is compatible with
+a normalized single-tree sum, with f(1)<11.398. It does not permit a second
+forest count after cycle normalization: even added paths leave (r!)^2/(8r)
+objects. The resulting common majorant series diverges for every positive
+fixed norm constant. This is not a lower bound on physical contributions,
+not a model divergence, and not an axiom obstruction. A valid block grouping
+or cancellations can still change the count.
+
+Finite symbol/tensor-register/source/count checks pass. One initial random
+fixture violated the declared energy cap and is preserved before its explicit
+normalization correction. No independent audit. Main remains2ed54cb on
+the latest remote check. Continue personally; deadline unchanged.

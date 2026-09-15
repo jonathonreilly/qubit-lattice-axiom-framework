@@ -1,0 +1,7 @@
+{
+  "status": "initial_fixture_hypothesis_failed",
+  "location": "source_checks energy premise assertion",
+  "cause": "unconstrained random features exceeded the declared H*x*m*r energy cap",
+  "scientific_consequence": "no source inequality was tested at this point; normalize the declared synthetic fixture explicitly, preserving this failed attempt",
+  "script_sha256": "538e1b1726e9ad6cc36f3e80a84527fc5ac3bf95fa98541cfdfe1a1d88077ceb"
+}

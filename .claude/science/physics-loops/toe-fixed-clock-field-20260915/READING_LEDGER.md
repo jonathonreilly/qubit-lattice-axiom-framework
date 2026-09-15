@@ -223,3 +223,21 @@ references. The current all-foundation claim is marked FAIL rather than
 using an unclosed physical realization as a claimed axiom obstruction.
 Fully personally reviewed both Block3 notes and both exact runners; no
 independent checker or new retained-grade audit was used.
+
+
+Block4 primary refresh: Garban-Sepulveda arXiv2107.04021v2 introduction
+through the opening of section2.1, and section10, were read on primary
+https://arxiv.org/html/2107.04021v2 . Their gauge group is continuousU(1),
+and the authors explicitly say their spin-wave decoupling does not extend
+to finite groups by this method. Their Driver comparison routes to a
+restricted current-sector result, not our full finite-clock target. No
+new full-field theorem is imported. Driver's existing local PDF/extracted
+text was located; pages1-4 were re-read in extracted form this block. The
+prior repo scope notes already record its closed-test restriction. No new
+claim of visually reading all23 pages is made in this campaign.
+
+The block4 cochain Laplacian identity and energy bound are derived directly
+from wedge/contraction and a Fourier split. The counting identity is derived
+from Prufer words and exact coefficient extraction, with rational tail bounds.
+The external HLS and further RG searches remain routing, not imported proofs.
+Latest remote main check is still2ed54cb83a4cb6b336e7053e19c8010d5d2930d8.

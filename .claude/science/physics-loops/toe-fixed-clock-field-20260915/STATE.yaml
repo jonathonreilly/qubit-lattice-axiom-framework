@@ -9,10 +9,10 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 3
-current_target: return to F2 after scoped global record model pair checkpoint
+block: 4
+current_target: Fourier energy and Gaussian derivative registers for prescribed decorated loops
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T18:34:58.970223+00:00'
-next_step: derive Fourier component energy control and Gaussian derivative feature registers;
-  preserve the remaining physical graph and full-foundation obligations
+last_checkpoint_utc: '2026-09-15T18:52:07.590259+00:00'
+next_step: investigate a valid grouping for mixed residuals and physical graph multiplicities;
+  avoid independently decorating already counted cycles with unrestricted forests

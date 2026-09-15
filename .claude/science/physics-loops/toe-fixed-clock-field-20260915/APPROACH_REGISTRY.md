@@ -62,3 +62,11 @@ escapes. Do not claim all-foundation underdetermination or select an update.
 Return to F2: sharpen component energy to O(||j||1 ||j||2), then preserve
 Gaussian derivative sums by feature registers. Test physical graph counting
 separately; an estimate for a prescribed decorated cycle is not its sum.
+
+
+Block4: F2 prescribed Gaussian/contact derivative source bounds now use a
+proved Fourier-energy estimate and degree factorial exponent3/4. A single
+normalized tree sum can absorb it; the naive independent cycle-plus-forest
+count cannot. The actual mixed residual and connected block representation
+remain the next relevant targets. Do not spend a factorial normalization
+twice or confuse divergence of this majorant with physical divergence.

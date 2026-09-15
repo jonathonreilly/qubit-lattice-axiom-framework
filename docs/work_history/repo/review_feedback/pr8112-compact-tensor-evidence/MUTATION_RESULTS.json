@@ -1,0 +1,131 @@
+{
+  "primary_sha256": "2ab59cb3bc9e0e456e5e87a6fbd1f7e34a52cc14843f2c03eada1160ebb9443f",
+  "results": [
+    {
+      "name": "curvature_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "TT.T @ R @ TT",
+      "elapsed_sec": 1.374923333991319,
+      "source_sha256": "bf3168603418d5e0c75c74012d242da9874c750cf300d2b17c513a74b8d16286",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/curvature_sign.py\", line 70, in mode_checks",
+        "    assert np.max(abs(TT.T @ R @ TT - q2 * np.eye(2))) < 1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "electric_trace_reversal",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(C @ S))",
+      "elapsed_sec": 1.0383620830252767,
+      "source_sha256": "45d16385820a6eb4cb7eae084683766adf74649cc541bc1061aaad3524f131ae",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/electric_trace_reversal.py\", line 67, in mode_checks",
+        "    assert np.max(abs(C @ S)) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "scalar_DeWitt_coefficient",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "sp.simplify(K.det() + J ** 2 / 2)",
+      "elapsed_sec": 1.1434666248969734,
+      "source_sha256": "e1afd1147b8b7ed811f68b72f3e44be65d06f90eb0b164d9825ed24cc57a9a83",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/scalar_DeWitt_coefficient.py\", line 93, in scalar_exact",
+        "    assert sp.simplify(K.det() + J ** 2 / 2) == 0",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "scalar_stencil_corner_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(G @ S.T))",
+      "elapsed_sec": 0.5322312079370022,
+      "source_sha256": "a0ab669046d8add56c11ed3db6cc59dac45819666646abd293a99a591bb65a46",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/scalar_stencil_corner_sign.py\", line 138, in incidence",
+        "    assert np.max(abs(G @ S.T)) == 0",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "canonical_offdiagonal_doubling",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(R - R.T))",
+      "elapsed_sec": 0.6853280840441585,
+      "source_sha256": "1bed337197f17415f9607b7b172b0efbe65aea7a4b9bb2f4f8a1fbd61fb1e729",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/canonical_offdiagonal_doubling.py\", line 305, in curvature_matrices",
+        "    assert np.max(abs(R - R.T)) == 0",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "clock_shift_orientation",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert error < 3e-15",
+      "elapsed_sec": 1.0630787089467049,
+      "source_sha256": "ecd50b24de59eae1cc8165bc712358084912d4f274894c369ab8e761c8e3fed6",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/clock_shift_orientation.py\", line 358, in clock_generator_checks",
+        "    assert error < 3e-15",
+        "           ^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "source_midpoint_phases",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(G @ R))",
+      "elapsed_sec": 1.033388749929145,
+      "source_sha256": "552a1b26fdbb92e66ae6f3a3f51d64b1885dc69f6550172e893dfa6fa31d501a",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/source_midpoint_phases.py\", line 321, in source_field_checks",
+        "    assert np.max(abs(G @ R)) < 1e-13 and np.max(abs(T @ R - rho)) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "gravitational_source_energy_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert abs(En + green / 4)",
+      "elapsed_sec": 1.0316419580485672,
+      "source_sha256": "f903f4e9a5cf5d158e78b9104fc8e533005a1910b47e22636b4c614071423539",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/gravitational_source_energy_sign.py\", line 332, in source_field_checks",
+        "    assert abs(En + green / 4) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "mixed_derivative_reality",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(Hn-H.conj()))",
+      "elapsed_sec": 1.0914333330001682,
+      "source_sha256": "b53a407cc2b2cf30614562cc54a7963d8c543580a1418a102e0d7910a91d8e7b",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block5-mutations-ak44zqkh/mixed_derivative_reality.py\", line 221, in mixed_modes",
+        "    assert np.max(abs(Hn-H.conj())) < 1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ]
+}

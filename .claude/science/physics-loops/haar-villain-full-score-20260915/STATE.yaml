@@ -1,0 +1,16 @@
+loop: haar-villain-full-score-20260915
+mode: milestone
+delivery: stacked_review_pr
+branch: physics-loop/haar-villain-full-score-20260915
+base_branch: physics-loop/coupled-defect-convexity-20260915
+base_head: f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8
+main_snapshot: 5deabeb698a27c2c3f68c5df685af2521ef15307
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+independent_review: pending
+formal_audit: pending
+main_landing: not_authorized_in_author_lane
+work_performed_personally: true
+subagents_used: false
+campaign_deadline_utc: 2026-09-15 13:30:44 UTC
+next_action: Publish the prepared stacked milestone, verify its exact remote head, remove this delivery worktree, and continue the personal campaign on the fixed-clock electric-defect residual.

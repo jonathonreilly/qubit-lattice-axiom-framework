@@ -1,0 +1,151 @@
+{
+  "source_path": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+  "source_sha256": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+  "method": "separate scratch source for each actual executed mutation; scientific source unchanged",
+  "cases": [
+    {
+      "family": "free reflection",
+      "mutation": "reverse required odd edge parity",
+      "function": "extensions",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.786,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_0.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_0.py\", line 451, in run\n    free_reflection=reflection(), nested_hodge_projection=nested_projection(),\n                    ~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_0.py\", line 72, in reflection\n    assert zero(dp[r]@E[r]-E[r+1]@df[r])\n           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "nested projection",
+      "mutation": "drop one zero-extension incidence",
+      "function": "nested_projection",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.559,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_1.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_1.py\", line 451, in run\n    free_reflection=reflection(), nested_hodge_projection=nested_projection(),\n                                                          ~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_1.py\", line 105, in nested_projection\n    assert nesting<2e-12 and minimum>-2e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "positive cumulants",
+      "mutation": "erase third-cumulant remainder constant",
+      "function": "positive_integrals",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.45,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_2.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_2.py\", line 447, in run\n    low, high = positive_integrals(40), positive_integrals(60)\n                ~~~~~~~~~~~~~~~~~~^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_2.py\", line 135, in positive_integrals\n    assert abs(third)<=bound+2e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "quadrature stability",
+      "mutation": "replace resolved low quadrature by order two",
+      "function": "run",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.449,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_3.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_3.py\", line 447, in run\n    low, high = positive_integrals(2), positive_integrals(60)\n                ~~~~~~~~~~~~~~~~~~^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_3.py\", line 135, in positive_integrals\n    assert abs(third)<=bound+2e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "collective coordinate",
+      "mutation": "remove the collective non-Gaussian perturbation",
+      "function": "collective_control",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.533,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_4.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_4.py\", line 453, in run\n    collective_non_gaussian_control=collective_control(),\n                                    ~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_4.py\", line 159, in collective_control\n    assert abs(fourth)>.01\n           ^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "theta upper control",
+      "mutation": "reverse the cosine perturbation sign",
+      "function": "theta_upper_hypothesis_control",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.567,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_5.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_5.py\", line 454, in run\n    theta_upper_hypothesis_control=theta_upper_hypothesis_control(),\n                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_5.py\", line 172, in theta_upper_hypothesis_control\n    assert variance>1.05\n           ^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "exact flux source",
+      "mutation": "reverse the magnetic source sign",
+      "function": "exact_hodge",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.621,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_6.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_6.py\", line 455, in run\n    exact_flux_hodge=exact_hodge(), actual_three_cube_flux=three_cube(),\n                     ~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_6.py\", line 193, in exact_hodge\n    assert sp.simplify(j+T*B*h/sp.sqrt(beta))==sp.zeros(B.rows,1)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "actual flux MGF",
+      "mutation": "replace inverse square-root beta tilt by square-root beta",
+      "function": "three_cube",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.798,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_7.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_7.py\", line 455, in run\n    exact_flux_hodge=exact_hodge(), actual_three_cube_flux=three_cube(),\n                                                           ~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_7.py\", line 233, in three_cube\n    assert max(abs(magnetic-comb),abs(magnetic-aux),abs(aux-aux14))<4e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "symmetric commutant",
+      "mutation": "omit axis reflections from the symmetry group",
+      "function": "wedge_symmetry",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.867,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_8.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_8.py\", line 456, in run\n    symmetric_form_commutant=wedge_symmetry(), layered_response=layered_checks(),\n                             ~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_8.py\", line 259, in wedge_symmetry\n    ker=sp.Matrix(eq).nullspace();assert len(ker)==1\n                                         ^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "layered response",
+      "mutation": "reverse Hessian sign in resolvent",
+      "function": "layered_checks",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.863,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_9.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_9.py\", line 456, in run\n    symmetric_form_commutant=wedge_symmetry(), layered_response=layered_checks(),\n                                                                ~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_9.py\", line 342, in layered_checks\n    assert perr < 2e-10\n           ^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "Bloch fiber",
+      "mutation": "reverse the spatial fiber phase",
+      "function": "layered_checks",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.846,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_10.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_10.py\", line 456, in run\n    symmetric_form_commutant=wedge_symmetry(), layered_response=layered_checks(),\n                                                                ~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_10.py\", line 337, in layered_checks\n    assert ferr < 2e-9\n           ^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "fluctuation Schur term",
+      "mutation": "drop environmental fluctuation correction",
+      "function": "layered_checks",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.861,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_11.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_11.py\", line 456, in run\n    symmetric_form_commutant=wedge_symmetry(), layered_response=layered_checks(),\n                                                                ~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_11.py\", line 320, in layered_checks\n    assert shortcut_defect > .005\n           ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "general commutant",
+      "mutation": "omit reflections for a general non-symmetric matrix",
+      "function": "symmetry_commutant",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.856,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_12.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_12.py\", line 457, in run\n    general_form_commutant=symmetry_commutant(), invariant_mixture_control=invariant_mixture_control(),\n                           ~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_12.py\", line 373, in symmetry_commutant\n    assert len(null) == 1\n           ^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "invariant mixture",
+      "mutation": "erase contrast between layer environments",
+      "function": "invariant_mixture_control",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.865,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_13.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_13.py\", line 457, in run\n    general_form_commutant=symmetry_commutant(), invariant_mixture_control=invariant_mixture_control(),\n                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_13.py\", line 400, in invariant_mixture_control\n    assert fourth > 1e-6\n           ^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "physical score",
+      "mutation": "change the actual image normalization",
+      "function": "image_score_and_reflection",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.857,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_14.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_14.py\", line 458, in run\n    physical_score_and_reflection=image_score_and_reflection())\n                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_14.py\", line 425, in image_score_and_reflection\n    assert abs(second-mp.sqrt(b)*(1-variance)) < mp.mpf('1e-17')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "reflection metric",
+      "mutation": "erase time-reflection sign before conservation",
+      "function": "image_score_and_reflection",
+      "returncode": 1,
+      "assertion_detected": true,
+      "elapsed_seconds": 0.897,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_15.py\", line 462, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_15.py\", line 458, in run\n    physical_score_and_reflection=image_score_and_reflection())\n                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/haar-score-mutation-5mlh78lx/fault_15.py\", line 438, in image_score_and_reflection\n    assert reflected == transverse\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

@@ -1,0 +1,780 @@
+===== runner cache v1 =====
+runner: /Users/jonreilly/Documents/Codex/toe-fixed-beta-full-score-20260915/scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py
+runner_sha256: 4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.62
+status: ok
+----- stdout -----
+{
+  "free_reflection": [
+    {
+      "d": 1,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        2,
+        1
+      ],
+      "periodic_dimensions": [
+        4,
+        4
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 2
+    },
+    {
+      "d": 1,
+      "L": 2,
+      "period": 6,
+      "free_dimensions": [
+        3,
+        2
+      ],
+      "periodic_dimensions": [
+        6,
+        6
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 4
+    },
+    {
+      "d": 1,
+      "L": 3,
+      "period": 8,
+      "free_dimensions": [
+        4,
+        3
+      ],
+      "periodic_dimensions": [
+        8,
+        8
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 6
+    },
+    {
+      "d": 1,
+      "L": 7,
+      "period": 16,
+      "free_dimensions": [
+        8,
+        7
+      ],
+      "periodic_dimensions": [
+        16,
+        16
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 2,
+      "wrong_edge_parity_defect_entries": 14
+    },
+    {
+      "d": 2,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        4,
+        4,
+        1
+      ],
+      "periodic_dimensions": [
+        16,
+        32,
+        16
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 4,
+      "wrong_edge_parity_defect_entries": 16
+    },
+    {
+      "d": 2,
+      "L": 3,
+      "period": 8,
+      "free_dimensions": [
+        16,
+        24,
+        9
+      ],
+      "periodic_dimensions": [
+        64,
+        128,
+        64
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 4,
+      "wrong_edge_parity_defect_entries": 96
+    },
+    {
+      "d": 3,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        8,
+        12,
+        6,
+        1
+      ],
+      "periodic_dimensions": [
+        64,
+        192,
+        192,
+        64
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 8,
+      "wrong_edge_parity_defect_entries": 96
+    },
+    {
+      "d": 3,
+      "L": 2,
+      "period": 6,
+      "free_dimensions": [
+        27,
+        54,
+        36,
+        8
+      ],
+      "periodic_dimensions": [
+        216,
+        648,
+        648,
+        216
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 8,
+      "wrong_edge_parity_defect_entries": 432
+    },
+    {
+      "d": 4,
+      "L": 1,
+      "period": 4,
+      "free_dimensions": [
+        16,
+        32,
+        24,
+        8,
+        1
+      ],
+      "periodic_dimensions": [
+        256,
+        1024,
+        1536,
+        1024,
+        256
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 16,
+      "wrong_edge_parity_defect_entries": 512
+    },
+    {
+      "d": 4,
+      "L": 2,
+      "period": 6,
+      "free_dimensions": [
+        81,
+        216,
+        216,
+        96,
+        16
+      ],
+      "periodic_dimensions": [
+        1296,
+        5184,
+        7776,
+        5184,
+        1296
+      ],
+      "both_derivatives_exact": true,
+      "norm_multiplicity": 16,
+      "wrong_edge_parity_defect_entries": 3456
+    }
+  ],
+  "nested_hodge_projection": {
+    "small_projection_rank": 8,
+    "large_projection_rank": 96,
+    "exact_codifferential_extension": true,
+    "nesting_error": 7.308889092718093e-16,
+    "minimum_projection_order_eigenvalue": -7.745396877352219e-16,
+    "wrong_closed_charge_extension_defect": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "positive_integral_cumulants": {
+    "order": 60,
+    "k_schur": 1.466666666666667,
+    "delta": 0.027999999999999997,
+    "M3": 0.055999999999999994,
+    "contraction": 0.041066666666666675,
+    "cramer_rao_lower_margin": 0.010824017085812652,
+    "convexity_upper_margin": 0.016596747217205304,
+    "cases": [
+      {
+        "tilt": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "third_cumulant": 2.032879073410321e-18,
+        "derived_bound": 0.007213060038194475
+      },
+      {
+        "tilt": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "third_cumulant": -1.0299920638612292e-18,
+        "derived_bound": 0.006670511978091857
+      },
+      {
+        "tilt": [
+          0.2,
+          -0.3,
+          0.1
+        ],
+        "third_cumulant": 4.215323535407419e-05,
+        "derived_bound": 0.007213060038194475
+      },
+      {
+        "tilt": [
+          0.2,
+          -0.3,
+          0.1
+        ],
+        "third_cumulant": 7.562829493611839e-07,
+        "derived_bound": 0.006670511978091857
+      },
+      {
+        "tilt": [
+          -0.4,
+          0.1,
+          0.3
+        ],
+        "third_cumulant": -4.151115817687754e-05,
+        "derived_bound": 0.007213060038194475
+      },
+      {
+        "tilt": [
+          -0.4,
+          0.1,
+          0.3
+        ],
+        "third_cumulant": 2.1890596133274684e-05,
+        "derived_bound": 0.006670511978091857
+      },
+      {
+        "source_scale": 0.1,
+        "log_mgf_remainder": 1.7888491306728566e-10,
+        "derived_bound": 1.2021766730324135e-06
+      },
+      {
+        "source_scale": 0.3,
+        "log_mgf_remainder": 1.4484938491710064e-08,
+        "derived_bound": 3.2458770171875155e-05
+      },
+      {
+        "source_scale": 1.0,
+        "log_mgf_remainder": 1.7816229797851246e-06,
+        "derived_bound": 0.0012021766730324125
+      },
+      {
+        "source_scale": 2.0,
+        "log_mgf_remainder": 2.8158369295011587e-05,
+        "derived_bound": 0.0096174133842593
+      }
+    ]
+  },
+  "quadrature_order_comparison": 2.2085198253529725e-16,
+  "collective_non_gaussian_control": {
+    "variance": 0.7914738442156867,
+    "fourth_cumulant": 0.1306480668960459,
+    "dimension_independent_non_gaussian": true,
+    "cases": [
+      {
+        "dimension": 1,
+        "source_ell3_cubed": 1.0,
+        "third_influence_bound": 0.4,
+        "product": 0.4
+      },
+      {
+        "dimension": 4,
+        "source_ell3_cubed": 0.5,
+        "third_influence_bound": 0.8,
+        "product": 0.4
+      },
+      {
+        "dimension": 16,
+        "source_ell3_cubed": 0.25,
+        "third_influence_bound": 1.6,
+        "product": 0.4
+      },
+      {
+        "dimension": 64,
+        "source_ell3_cubed": 0.125,
+        "third_influence_bound": 3.2,
+        "product": 0.4
+      },
+      {
+        "dimension": 256,
+        "source_ell3_cubed": 0.0625,
+        "third_influence_bound": 6.4,
+        "product": 0.4
+      },
+      {
+        "dimension": 1024,
+        "source_ell3_cubed": 0.03125,
+        "third_influence_bound": 12.8,
+        "product": 0.4
+      }
+    ]
+  },
+  "theta_upper_hypothesis_control": {
+    "variance": 1.13099502962677,
+    "reference_variance": 1.0,
+    "hessian_perturbation_bound": 0.2,
+    "qualification": "A uniformly convex small cosine perturbation need not have covariance below its Gaussian reference. The actual theta MGF domination is a separate structural input."
+  },
+  "exact_flux_hodge": [
+    {
+      "d": 3,
+      "plaquettes": 6,
+      "three_cells": 1,
+      "hodge_spectrum": {
+        "6": 1
+      },
+      "exact_identities": true
+    },
+    {
+      "d": 4,
+      "plaquettes": 24,
+      "three_cells": 8,
+      "hodge_spectrum": {
+        "8": 4,
+        "6": 4
+      },
+      "exact_identities": true
+    }
+  ],
+  "actual_three_cube_flux": [
+    {
+      "beta": 0.1,
+      "source": 0,
+      "magnetic": 0.8500160902256421,
+      "poisson_comb": 0.8500160902256422,
+      "positive_auxiliary_quad": 0.850016090225642,
+      "maximum_error": 1.1102230246251565e-16,
+      "cutoff_error": 3.3306690738754696e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.008134062895683858,
+      "aux_covariance_error": 2.168404344971009e-18
+    },
+    {
+      "beta": 0.1,
+      "source": 1,
+      "magnetic": 0.9643509448001089,
+      "poisson_comb": 0.9643509448001092,
+      "positive_auxiliary_quad": 0.9643509448001087,
+      "maximum_error": 3.3306690738754696e-16,
+      "cutoff_error": 3.3306690738754696e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.016021997559286794,
+      "aux_covariance_error": 2.168404344971009e-18
+    },
+    {
+      "beta": 0.1,
+      "source": 2,
+      "magnetic": 0.825582016636656,
+      "poisson_comb": 0.8255820166366563,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 3.3306690738754696e-16,
+      "cutoff_error": 0.0,
+      "wrong_characteristic_instead_of_mgf_error": 0.0,
+      "aux_covariance_error": 2.168404344971009e-18
+    },
+    {
+      "beta": 0.4,
+      "source": 0,
+      "magnetic": 0.850325206066856,
+      "poisson_comb": 0.8503252060668561,
+      "positive_auxiliary_quad": 0.8503252060668562,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 4.440892098500626e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.008719048439696175,
+      "aux_covariance_error": 5.204170427930421e-18
+    },
+    {
+      "beta": 0.4,
+      "source": 1,
+      "magnetic": 0.9649857417854243,
+      "poisson_comb": 0.9649857417854245,
+      "positive_auxiliary_quad": 0.9649857417854247,
+      "maximum_error": 4.440892098500626e-16,
+      "cutoff_error": 6.661338147750939e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.017177415846211908,
+      "aux_covariance_error": 5.204170427930421e-18
+    },
+    {
+      "beta": 0.4,
+      "source": 2,
+      "magnetic": 0.825582016636656,
+      "poisson_comb": 0.8255820166366562,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 1.1102230246251565e-16,
+      "wrong_characteristic_instead_of_mgf_error": 2.220446049250313e-16,
+      "aux_covariance_error": 5.204170427930421e-18
+    },
+    {
+      "beta": 1.0,
+      "source": 0,
+      "magnetic": 0.8598451363298931,
+      "poisson_comb": 0.859845136329893,
+      "positive_auxiliary_quad": 0.8598451363298931,
+      "maximum_error": 1.1102230246251565e-16,
+      "cutoff_error": 3.3306690738754696e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.027300228586376263,
+      "aux_covariance_error": 2.7755575615628914e-17
+    },
+    {
+      "beta": 1.0,
+      "source": 1,
+      "magnetic": 0.9840822924010819,
+      "poisson_comb": 0.984082292401082,
+      "positive_auxiliary_quad": 0.9840822924010819,
+      "maximum_error": 1.1102230246251565e-16,
+      "cutoff_error": 2.220446049250313e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.05379612206444828,
+      "aux_covariance_error": 2.7755575615628914e-17
+    },
+    {
+      "beta": 1.0,
+      "source": 2,
+      "magnetic": 0.8255820166366563,
+      "poisson_comb": 0.8255820166366562,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 1.1102230246251565e-16,
+      "wrong_characteristic_instead_of_mgf_error": 2.220446049250313e-16,
+      "aux_covariance_error": 2.7755575615628914e-17
+    },
+    {
+      "beta": 3.0,
+      "source": 0,
+      "magnetic": 0.8678760560840294,
+      "poisson_comb": 0.8678760560840292,
+      "positive_auxiliary_quad": 0.8678760560840296,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 4.440892098500626e-16,
+      "wrong_characteristic_instead_of_mgf_error": 0.04331425690742052,
+      "aux_covariance_error": 0.0
+    },
+    {
+      "beta": 3.0,
+      "source": 1,
+      "magnetic": 0.9999343237352987,
+      "poisson_comb": 0.9999343237352987,
+      "positive_auxiliary_quad": 0.9999343237352989,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 0.0,
+      "wrong_characteristic_instead_of_mgf_error": 0.08533613645833193,
+      "aux_covariance_error": 0.0
+    },
+    {
+      "beta": 3.0,
+      "source": 2,
+      "magnetic": 0.8255820166366561,
+      "poisson_comb": 0.8255820166366559,
+      "positive_auxiliary_quad": 0.8255820166366561,
+      "maximum_error": 2.220446049250313e-16,
+      "cutoff_error": 0.0,
+      "wrong_characteristic_instead_of_mgf_error": 2.220446049250313e-16,
+      "aux_covariance_error": 0.0
+    }
+  ],
+  "symmetric_form_commutant": {
+    "generators": 7,
+    "symmetric_parameters": 21,
+    "invariant_dimension": 1,
+    "scope": "Quadratic-form algebra only; no homogenized energy existence or identification follows."
+  },
+  "layered_response": {
+    "alpha": -0.12,
+    "eta": 0.09,
+    "effective_diagonal": [
+      -0.12,
+      -0.12,
+      -0.12,
+      -0.11358597285067873,
+      -0.11358597285067873,
+      -0.11358597285067873,
+      0.0
+    ],
+    "mean_hessian_shortcut_matrix_error": 0.011109420903750604,
+    "maximum_fiber_identity_error": 4.009883079796051e-11,
+    "maximum_precision_response_error": 7.218714150101263e-14,
+    "cases": [
+      {
+        "direction": [
+          1.0,
+          2.0,
+          -1.0,
+          0.5
+        ],
+        "mesh": [
+          0.125,
+          0.0625,
+          0.03125,
+          0.015625,
+          0.0078125,
+          0.00390625
+        ],
+        "limit_errors": [
+          0.12251460335212798,
+          0.06131329501517631,
+          0.030663646948661364,
+          0.015332698412323653,
+          0.007666458573650681,
+          0.0038332429577673153
+        ],
+        "mean_hessian_shortcut_limit_error": 0.005271449707023066
+      },
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": [
+          0.125,
+          0.0625,
+          0.03125,
+          0.015625,
+          0.0078125,
+          0.00390625
+        ],
+        "limit_errors": [
+          0.0008340425458723548,
+          0.00020870859921330676,
+          5.218952775689288e-05,
+          1.3048153592795642e-05,
+          3.2620830400727084e-06,
+          8.154904005568897e-07
+        ],
+        "mean_hessian_shortcut_limit_error": 0.008907373160895925
+      },
+      {
+        "direction": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "mesh": [
+          0.125,
+          0.0625,
+          0.03125,
+          0.015625,
+          0.0078125,
+          0.00390625
+        ],
+        "limit_errors": [
+          0.000816529105215318,
+          0.00020430904771734574,
+          5.108830895119727e-05,
+          1.277276660749991e-05,
+          3.19322899965217e-06,
+          7.983393617668797e-07
+        ],
+        "mean_hessian_shortcut_limit_error": 0.00514267429221571
+      }
+    ]
+  },
+  "general_form_commutant": {
+    "unknown_entries": 36,
+    "generators": 7,
+    "commutant_dimension": 1,
+    "antisymmetric_component_excluded": true
+  },
+  "invariant_mixture_control": {
+    "component_variances": [
+      0.8928571428571428,
+      0.8928571428571428,
+      0.8979998171493585,
+      0.8979998171493585
+    ],
+    "mixture_fourth_cumulant": 1.9835324156862264e-05,
+    "translation_invariant_global_label": true,
+    "qualification": "Comparison model only; not a counterexample to the actual small-carrier Villain law or its uniform third-influence hypotheses."
+  },
+  "physical_score_and_reflection": {
+    "image_cases": [
+      {
+        "beta": 2,
+        "angle": 0.0,
+        "score": 2.1633867407770527e-78,
+        "image_variance": 1.1302143268204568e-15,
+        "score_derivative_error": 2.1633867407770527e-78,
+        "score_curvature_error": 1.2310564762766448e-37,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 2,
+        "angle": 0.3,
+        "score": 0.42426406871192573,
+        "image_variance": 2.452523626565456e-14,
+        "score_derivative_error": 7.256465974526675e-38,
+        "score_curvature_error": 5.110020593088964e-37,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 2,
+        "angle": 3.041592653589793,
+        "score": 2.3327904153642267,
+        "image_variance": 13.617484911447104,
+        "score_derivative_error": 2.2461694311672485e-23,
+        "score_curvature_error": 8.820416936144259e-24,
+        "cutoff_relative_error": 9.334522916791713e-61
+      },
+      {
+        "beta": 2,
+        "angle": 3.141592653589793,
+        "score": -2.131675462169678e-62,
+        "image_variance": 19.739208802178716,
+        "score_derivative_error": 2.131675462169678e-62,
+        "score_curvature_error": 1.8367634351829572e-22,
+        "cutoff_relative_error": 1.2446030555722283e-60
+      },
+      {
+        "beta": 5,
+        "angle": 0.0,
+        "score": -9.910730525250808e-171,
+        "image_variance": 5.410189000659319e-41,
+        "score_derivative_error": 9.910730525250808e-171,
+        "score_curvature_error": 1.6103640269071883e-37,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 5,
+        "angle": 0.3,
+        "score": 0.6708203932499369,
+        "image_variance": 3.352057855351736e-37,
+        "score_derivative_error": 1.776784176092249e-51,
+        "score_curvature_error": 9.016705853471003e-38,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 5,
+        "angle": 3.041592653589793,
+        "score": 6.219218440453899,
+        "image_variance": 7.838024955409938,
+        "score_derivative_error": 8.416504166731162e-23,
+        "score_curvature_error": 1.0980550015367155e-21,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 5,
+        "angle": 3.141592653589793,
+        "score": -1.9789350230970381e-85,
+        "image_variance": 49.34802200544679,
+        "score_derivative_error": 1.9789350230970381e-85,
+        "score_curvature_error": 4.537778107885307e-21,
+        "cutoff_relative_error": 2.4892061111444567e-60
+      },
+      {
+        "beta": 20,
+        "angle": 0.0,
+        "score": -0.0,
+        "image_variance": 5.56968366313255e-169,
+        "score_derivative_error": 0.0,
+        "score_curvature_error": 1.1618305756203664e-38,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 20,
+        "angle": 0.3,
+        "score": 1.3416407864998738,
+        "image_variance": 6.566240417739238e-153,
+        "score_derivative_error": 1.6418157390856979e-50,
+        "score_curvature_error": 7.784115955819336e-39,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 20,
+        "angle": 3.041592653589793,
+        "score": 13.6023178751874,
+        "image_variance": 0.002753475952695531,
+        "score_derivative_error": 2.5790031367451147e-25,
+        "score_curvature_error": 1.6204128575836344e-23,
+        "cutoff_relative_error": 0.0
+      },
+      {
+        "beta": 20,
+        "angle": 3.141592653589793,
+        "score": -0.0,
+        "image_variance": 197.39208802178717,
+        "score_derivative_error": 0.0,
+        "score_curvature_error": 5.808355978093193e-19,
+        "cutoff_relative_error": 9.956824444577827e-60
+      }
+    ],
+    "reflection": [
+      {
+        "momentum": [
+          1,
+          0,
+          0
+        ],
+        "energy": "1",
+        "rank": 2,
+        "conserved_reflection_form_exact": true
+      },
+      {
+        "momentum": [
+          1,
+          2,
+          2
+        ],
+        "energy": "3",
+        "rank": 2,
+        "conserved_reflection_form_exact": true
+      },
+      {
+        "momentum": [
+          2,
+          -3,
+          6
+        ],
+        "energy": "7",
+        "rank": 2,
+        "conserved_reflection_form_exact": true
+      }
+    ]
+  }
+}
+per_element: executed exact integer cochain reflection and Hodge identities, plus scalar image-score and conditional-variance normalization challenges.
+per_site: executed a wrong closed-charge zero-extension control and fixed-site image kernels; uniform carrier tails are checked and not executed, using the written mass bounds.
+per_mode: executed Bloch-fiber versus real-space matrices, independent Gaussian precision inversion, exact signed-permutation commutants and rank-two conserved reflection forms.
+per_block: executed positive finite-measure cumulants, real auxiliary MGF versus original magnetic and Poisson sums, and collective/nonergodic comparison controls.
+lattice_wide: checked and not executed: the all-box Riesz bound, noise-factor state matching, two-replica concentration, spectral limit and fixed-beta full-score continuum theorem depend on the written analytic proofs, awaiting independent review.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,185 @@
+{
+  "at_utc": "2026-09-15T07:05:07.384331+00:00",
+  "source": "finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+  "source_sha256": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717",
+  "faults": [
+    {
+      "fault": "fold_image_sign",
+      "check": "check_chain_and_folding",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/fold_image_sign.py'); n['check_chain_and_folding']()\n                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/fold_image_sign.py\", line 129, in check_chain_and_folding\n    assert np.array_equal(after, before + D @ noise_numer)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "kprime = k - D @ ell",
+      "replacement": "kprime = k + D @ ell",
+      "mutated_sha256": "7eb68339d297b33aac046ef6bdcd2e25ec8672af072e7a5e4f64a2224d3fa10a",
+      "caught": true
+    },
+    {
+      "fault": "completion_drift_sign",
+      "check": "check_completion_and_bundle",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/completion_drift_sign.py'); n['check_completion_and_bundle']()\n                                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/completion_drift_sign.py\", line 156, in check_completion_and_bundle\n    assert D * r - image == K * Fs\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "r = theta - beta * M.inv() * D.T * Fs",
+      "replacement": "r = theta + beta * M.inv() * D.T * Fs",
+      "mutated_sha256": "bc6cdc2bbafd7ad208c5537d997ea9fa9d1e9e6f3a6ed58196e29d400068f6d5",
+      "caught": true
+    },
+    {
+      "fault": "haar_determinant_factor",
+      "check": "check_poisson_density",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/haar_determinant_factor.py'); n['check_poisson_density']()\n                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/haar_determinant_factor.py\", line 201, in check_poisson_density\n    assert error < 2e-12, (direct, transformed, error)\n           ^^^^^^^^^^^^^\nAssertionError: (np.float64(0.001971113986340736), np.complex128(0.004178761651042355-1.6652957370430165e-18j), np.float64(1.1199999999999972))\n",
+      "original": "* theta_fourier/np.sqrt(np.linalg.det(A))",
+      "replacement": "* theta_fourier*np.sqrt(np.linalg.det(A))",
+      "mutated_sha256": "34ee58efcea9c8e1b4112b76d248e769e64989b1f6d130deae80796fb2391d7d",
+      "caught": true
+    },
+    {
+      "fault": "filtered_noise_scale",
+      "check": "check_one_plaquette_law",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/filtered_noise_scale.py'); n['check_one_plaquette_law']()\n                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/filtered_noise_scale.py\", line 215, in check_one_plaquette_law\n    assert K == mp.mpf(16)/17\n           ^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "K = 1/(1+noise_var)",
+      "replacement": "K = 1/(1+2*noise_var)",
+      "mutated_sha256": "f4b39fcbb5b15eb0a52b01d135a2d4fdad2cd80d0cb7ad5d2efb668f3bfcf02c",
+      "caught": true
+    },
+    {
+      "fault": "electric_theta_exponent",
+      "check": "check_one_plaquette_law",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/electric_theta_exponent.py'); n['check_one_plaquette_law']()\n                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/electric_theta_exponent.py\", line 235, in check_one_plaquette_law\n    assert relative < mp.mpf('1e-45'), (gs, zs, relative)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('1.1', '-2', mpf('6.16843735753069385635954138167915413338514967880397711313640519441525989123423'))\n",
+      "original": "mp.exp(-g*g*j*j/34)*mp.cos(g*j*z)",
+      "replacement": "mp.exp(-g*g*j*j/32)*mp.cos(g*j*z)",
+      "mutated_sha256": "b82114527cbad833bce90b9bbabbf32fd66b1601ffa445fc4c10123a50fbdc54",
+      "caught": true
+    },
+    {
+      "fault": "density_partition_factor",
+      "check": "check_one_plaquette_law",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/density_partition_factor.py'); n['check_one_plaquette_law']()\n                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/density_partition_factor.py\", line 235, in check_one_plaquette_law\n    assert relative < mp.mpf('1e-45'), (gs, zs, relative)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('1.1', '-2', mpf('4.19271683848627283523507634807526847650903648915918024313948477491182979713398'))\n",
+      "original": "mp.sqrt(2*mp.pi*K)/denominator",
+      "replacement": "mp.sqrt(2*mp.pi*K)*denominator",
+      "mutated_sha256": "1bef1bf4b8eb77cb2f567d064e0cdf4a46a09a0599f10bd334dc8c6f485ec72f",
+      "caught": true
+    },
+    {
+      "fault": "integer_strip_orientation",
+      "check": "check_fillings_and_gauge",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/integer_strip_orientation.py'); n['check_fillings_and_gauge']()\n                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/integer_strip_orientation.py\", line 291, in check_fillings_and_gauge\n    assert np.array_equal(D.T @ other_fill, component), \"alternate sweep has wrong orientation\"\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: alternate sweep has wrong orientation\n",
+      "original": "sign = 1 if axis < direction else -1",
+      "replacement": "sign = 1",
+      "mutated_sha256": "4a736d38a78f65aa172aafe19f0ac34b969b209fb58a209a6d652821f8ecf486",
+      "caught": true
+    },
+    {
+      "fault": "gauge_projection_dropped",
+      "check": "check_fillings_and_gauge",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/gauge_projection_dropped.py'); n['check_fillings_and_gauge']()\n                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/gauge_projection_dropped.py\", line 318, in check_fillings_and_gauge\n    assert abs(average-expected) < 1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "divergence = N*(G.T @ candidate)",
+      "replacement": "divergence = np.zeros(G.shape[1], dtype=int)",
+      "mutated_sha256": "c22ffff3c4888621fd414c47ee90626efaf032663d2b4a5c7da88e36ec3cb8bd",
+      "caught": true
+    },
+    {
+      "fault": "carrier_filling_extension",
+      "check": "check_fillings_and_gauge",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/carrier_filling_extension.py'); n['check_fillings_and_gauge']()\n                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/carrier_filling_extension.py\", line 309, in check_fillings_and_gauge\n    assert abs(off_phase-1) > .1\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "off_carrier = flux_numer.astype(float)/7 + .013*(B.T @ cube)",
+      "replacement": "off_carrier = flux_numer.astype(float)/7",
+      "mutated_sha256": "a287bd6ed8483874fbf562b53b85f6487a6c24731c418a802739a67c2fefc89f",
+      "caught": true
+    },
+    {
+      "fault": "massive_covariance_subtraction",
+      "check": "check_massive_geometry",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/massive_covariance_subtraction.py'); n['check_massive_geometry']()\n                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/massive_covariance_subtraction.py\", line 351, in check_massive_geometry\n    assert eigC.min() >= 3/640-1e-14\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "Cscaled = invA/64-np.eye(len(cc[1]))/128",
+      "replacement": "Cscaled = invA/64-np.eye(len(cc[1]))/64",
+      "mutated_sha256": "d4235e87ddc06d3cb83923ace6d1db69ea48fa51b8476aeef1bd1e8a8a84cac8",
+      "caught": true
+    },
+    {
+      "fault": "cubic_orientation_parity",
+      "check": "check_cubic_filling_average",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/cubic_orientation_parity.py'); n['check_cubic_filling_average']()\n                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/cubic_orientation_parity.py\", line 406, in check_cubic_filling_average\n    fillings = averaged_fillings(j)\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/cubic_orientation_parity.py\", line 399, in averaged_fillings\n    assert np.array_equal(D.T @ pulled, j)\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "orientation *= (-1)**inversions",
+      "replacement": "orientation *= 1",
+      "mutated_sha256": "5cbb736ee9d2f8975e2745b6a1e7b2fb9931e5b1be1f77b712fd0c0dadb5cea8",
+      "caught": true
+    },
+    {
+      "fault": "overlapping_current_components",
+      "check": "check_polymer_positivity_and_response",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/overlapping_current_components.py'); n['check_polymer_positivity_and_response']()\n                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/overlapping_current_components.py\", line 434, in check_polymer_positivity_and_response\n    assert len(coefficients) == 11\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "if any(supports[i] & supports[j] for i, j in itertools.combinations(active, 2)):\n            continue",
+      "replacement": "if False:\n            continue",
+      "mutated_sha256": "e77dba039ebe9348dd05cbf96af491b3879a4176ff87e16bcc3a5313264bdf03",
+      "caught": true
+    },
+    {
+      "fault": "gaussian_response_covariance",
+      "check": "check_polymer_positivity_and_response",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/gaussian_response_covariance.py'); n['check_polymer_positivity_and_response']()\n                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/gaussian_response_covariance.py\", line 533, in check_polymer_positivity_and_response\n    assert max(errors) < 2e-11\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "hessian = mean2+np.einsum('a,ai,aj->ij', tilted, centered, centered)",
+      "replacement": "hessian = mean2",
+      "mutated_sha256": "b0f47e69ef2f1c1b5ca989a7a93e9739ac1ca7f2bae81bfe2e8e8d2ea6f1393e",
+      "caught": true
+    },
+    {
+      "fault": "third_response_cumulant",
+      "check": "check_polymer_positivity_and_response",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/third_response_cumulant.py'); n['check_polymer_positivity_and_response']()\n                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/third_response_cumulant.py\", line 533, in check_polymer_positivity_and_response\n    assert max(errors) < 2e-11\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "+np.einsum('a,ai,aj,ak->ijk', tilted, centered, centered, centered))",
+      "replacement": "+0*np.einsum('a,ai,aj,ak->ijk', tilted, centered, centered, centered))",
+      "mutated_sha256": "768934a217df57d2933814be7af07d76a319b1f5c7eb3521cf20fdada9e03150",
+      "caught": true
+    },
+    {
+      "fault": "source_filter_removed",
+      "check": "check_macroscopic_sources",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/source_filter_removed.py'); n['check_macroscopic_sources']()\n                                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/source_filter_removed.py\", line 572, in check_macroscopic_sources\n    assert abs(error-exact_bound) < 1e-14\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "K = np.linalg.inv(np.eye(6)+tau*D @ D.conj().T)",
+      "replacement": "K = np.eye(6, dtype=complex)",
+      "mutated_sha256": "8e747eb8501f9f2d596c9dca4fe723204975f01d8b2180315d0b81560919640b",
+      "caught": true
+    },
+    {
+      "fault": "magnetic_tilt_source",
+      "check": "check_magnetic_carrier_convexity_control",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; n=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/magnetic_tilt_source.py'); n['check_magnetic_carrier_convexity_control']()\n                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block24-faults-aajms49k/magnetic_tilt_source.py\", line 601, in check_magnetic_carrier_convexity_control\n    assert abs(mean-h/2) < mp.mpf('1e-65')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "original": "source = h/2",
+      "replacement": "source = mp.mpf(0)",
+      "mutated_sha256": "bf4787dccb5b35569ff5ca6a67899eee2ac40c6046dd91e20d5e1ac93a869872",
+      "caught": true
+    }
+  ],
+  "all_caught": true,
+  "interpretation": "Actual source mutations caught by finite author falsifiers; not independent review or a general proof."
+}

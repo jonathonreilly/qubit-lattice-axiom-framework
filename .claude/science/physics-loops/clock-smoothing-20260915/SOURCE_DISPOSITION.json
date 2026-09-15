@@ -1,0 +1,39 @@
+{
+  "frozen_main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "campaign_source_revision": "b0479ab615af12136588343956f73368cc6cf55d",
+  "campaign_followup": "The final private edits add the convex-action magnetic-carrier control and replace an observed Fourier threshold with its independently derived universal bound.",
+  "claim_id": "finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15",
+  "note": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "runner": "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+  "scientific_imports": "All required model and mathematical statements are derived in this delta, with standard hard-core tree-majorant machinery explicitly cited and its hypotheses verified. Prior campaign commits are provenance only.",
+  "independent_review": "pending",
+  "graph_delta": {
+    "before_nodes": 5041,
+    "after_nodes": 5042,
+    "before_edges": 12519,
+    "after_edges": 12519,
+    "added_nodes": [
+      "finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15"
+    ],
+    "removed_nodes": [],
+    "changed_nodes": []
+  },
+  "source_inventory": {
+    "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "77db957017232dd439d501c7c21e7d0ed14f3c5f4ea145edbbf6751420156df5",
+      "bytes": 35327
+    },
+    "scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py": {
+      "sha256": "d32dcef2dd8204fd8b1975d449f1240dc16d39530e90513a710f8de430889717",
+      "bytes": 29498
+    },
+    "logs/runner-cache/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.txt": {
+      "sha256": "b350a0f21a7a821fa7ca2f10f122be69c2c40083f8f65ef5344b1e2ba3f29374",
+      "bytes": 5766
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "ec8b3b888b522fc1f8fb59659a874ed81c3c9f0f961b5b5690a978e2ab4a2e35",
+      "bytes": 669990
+    }
+  }
+}

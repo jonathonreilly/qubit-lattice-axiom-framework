@@ -1,0 +1,33 @@
+mode: milestone
+status: ready_for_review_pr
+branch: physics-loop/clock-smoothing-20260915
+frozen_main: 5deabeb698a27c2c3f68c5df685af2521ef15307
+campaign_deadline_utc: '2026-09-15T13:30:44Z'
+execution: personally_no_subagents_or_delegated_workers
+claim_id: finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15
+note: docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md
+runner: scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py
+independent_review: pending
+formal_audit: deferred
+next_action: Complete focused evidence and source checks, open and verify the review
+  PR, then remove the delivery checkout after durability verification and continue
+  the campaign.
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: u1_finite_clock_gauge_matter_and_controlled_tame_maxwell_bridge_bounded_theorem_note_2026-09-03
+target_blocker_text: Retain fixed finite clock size and both defect sectors while
+  establishing a full physical-flux or score infrared limit.
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: Independently review the exact transformation and extension; prove
+  the separate magnetic/state infrared stability.
+conditional_surface_status: Supplied Villain law, free cubes, fixed beta and N; a_e>=256
+  for the uniform C3 and convex-action bounds.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: Exact mathematical transformation and uniform analytic bounds with
+  finite falsifiers.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

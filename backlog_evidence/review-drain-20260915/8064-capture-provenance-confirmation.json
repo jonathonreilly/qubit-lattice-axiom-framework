@@ -1,0 +1,12 @@
+{
+  "confirmation": "Same original reviewer confirms final unchanged sources,inputs and exact mathematical payload; root executed the previously reviewed wrapper once after author transport failure. No scientific or preflight rerun. Final--cache remains root-owned.",
+  "tree": "ad737d79500495735d8aea8b7c2af1b937c80339",
+  "bindings": {
+    "/private/tmp/review-drain-20260915/8064-root-capture-takeover-started.json": "d8c329bab9d705f80e18980633f11013ad7cc5fb04d0f711bbbe527858a50588",
+    "/private/tmp/review-drain-20260915/8064-ready-checkpoint.json": "0393eef5190e090f86c92d500c2e365635c597acc2fdf6eb1bfe88992de6d2e0",
+    "/private/tmp/review-drain-20260915/8064-author-capture.log": "3c3f3e0ac806fd876b6d68e49c90979899686692a45a873f40c2c0bc21203d94",
+    "/private/tmp/review-drain-20260915/8064-author-final-execution.json": "d4c73133583dafa16fee3e6eef9c28cc09258ff3d0d1aef0b191c6b8a7d993f9",
+    "/private/tmp/review-drain-20260915/review-8064.json": "a85c900f39e9606f39a9c3768960f90cc47ba436e36ab0274ec02145842711b1",
+    "/private/tmp/review-drain-20260915/8064-unit-final-v2.json": "788784e8a9e080274f54b0264d1c08796ca665ecf1d0ff12cc3f31290ef0978d"
+  }
+}

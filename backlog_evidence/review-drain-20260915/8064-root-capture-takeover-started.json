@@ -1,0 +1,6 @@
+{
+  "owner": "/root",
+  "reason": "Original author transport failure before capture; no capture process or execution receipt present; original reviewed wrapper unchanged",
+  "checkpoint_sha256": "0393eef5190e090f86c92d500c2e365635c597acc2fdf6eb1bfe88992de6d2e0",
+  "started_at": "2026-09-15T20:16:47.682436+00:00"
+}

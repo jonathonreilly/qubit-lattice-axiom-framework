@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.py",
+  "limit_sec": 60,
+  "record_sha256": "2be78d3fff011c178a609af0dc8080135c159af1eef278790b6b90d2a8e54239"
+}

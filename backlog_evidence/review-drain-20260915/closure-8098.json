@@ -1,0 +1,19 @@
+{
+  "pr": 8098,
+  "original_head": "616362e0a07ed5422d040d182ecbba24265941dd",
+  "branch": "physics-loop/native-weyl-gauge-response-20260913",
+  "landing": "07583e5fc2565ca06951278d929429982ec941dd",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-weyl-gauge-response-20260913",
+    "headRefOid": "616362e0a07ed5422d040d182ecbba24265941dd",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8098,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8098"
+  }
+}

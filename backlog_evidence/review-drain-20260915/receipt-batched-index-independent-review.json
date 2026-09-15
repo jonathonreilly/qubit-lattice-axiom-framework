@@ -1,0 +1,57 @@
+{
+  "status": "PASS \u2014 narrow procedural candidate only, not installed authority",
+  "reviewer": "/root/review_8012",
+  "candidate": {
+    "path": "/private/tmp/review-drain-20260915/receipt-batched-index-draft/review_receipt.py",
+    "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+  },
+  "compared_authority": {
+    "path": "/Users/jonBridger/.codex/skills/review-loop/scripts/review_receipt.py",
+    "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+  },
+  "author_freeze": {
+    "path": "/private/tmp/review-drain-20260915/receipt-batched-index-author-freeze.json",
+    "sha256": "9de0edd38af9d20c2e4572723747c4dd3650861e22381e98a9a941a41db7f407"
+  },
+  "reviewed_diff": "New verify_index_bytes only; replaces both per-path stage0 git-show byte loops. All source/hash/tree/HEAD/generation/constituent/authority/citation/supporting-proof/cache checks retain their prior scope. No science execution or live helper replacement.",
+  "reasoning": "Git cat-file --batch -z uses NUL-delimited :path requests, preserving unusual names and raw binary output. Complete40/64hex blob header, exact advertised body length, separator and end-of-batch framing are checked; missing/unmerged/nonblob entries and failed Git reject. Each returned blob is compared byte-for-byte to the corresponding current regular repository file. No cross-boundary cache; final source hashes and index/tree/HEAD checks remain.",
+  "independent_controls": {
+    "path": "/private/tmp/review-drain-20260915/receipt-batched-index-independent-controls.log",
+    "sha256": "04a80a36787aa7995993a9231ff0718b498eceb56238c0db1b83f3a7896f369e"
+  },
+  "independent_result": "10focused actual candidate controls passed in1.386s: binary/NUL payload,spaces/tabs/newlines/Unicode/empty paths,working/index drift,missingindex,malformed/truncated/trailing/nonblob output,Git failure,batch bounds,oversizefile,sha256Git andsymlink rejection.",
+  "existing_regressions": {
+    "receipt": {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-regression.log",
+      "sha256": "f3af8c6a7f3e9eb4125790254987d3162463fa8cad0ce238c295a77e549dcfd3"
+    },
+    "scope": "47author-run current receipt regressions passed; source and harness read, no redundant second full suite."
+  },
+  "tests": [
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-draft/test_batched_index.py",
+      "sha256": "3aebe2683f8adbd0ec5bf27b25b2f76c2fab987d6c3aaffb6a8c39aa92f08dab"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-draft/test_review_receipt_index.py",
+      "sha256": "5afc01a50f60077147edf946747b460afc52ed66274413ed91cb52916b09e79c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-draft/run_regression.py",
+      "sha256": "442ce15e78f39a2d667f133c38a7852635232ef4fd5171f0313c8aafecbef055"
+    }
+  ],
+  "performance": {
+    "receipt": {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-benchmark.json",
+      "sha256": "3743619b112a09603079a9b1e0a9f6000cbb6fa0d7212846e203e99351be6713"
+    },
+    "script": {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-draft/benchmark.py",
+      "sha256": "96dcda8d23b01b4dae2b8591124d23efd8e2a1559b7a0e47f1f662908ffa5910"
+    },
+    "scope": "1024identical synthetic archival gzip files; old11.251676s vsnew0.332517s,1024\u219216Gitprocesses. This33.84x is only staged-byte comparison on that fixture, not a whole-preflight or science speed claim."
+  },
+  "limits": "8MiB budget uses working-file sizes; one oversized file is processed alone and staged/working divergence may produce larger captured output before rejection. This is batching policy, not a hard RSS guarantee. At most64queries per batch. Portable test ROOT calculation assumes intended docs/audit/scripts/tests destination.",
+  "operational_boundary": "Current8072/73/74/76 preflight continues under old installed authority unchanged; candidate may land and sync only after independent coordinator lifecycle checks. No rerun of unchanged science required by this isolated procedural optimization."
+}

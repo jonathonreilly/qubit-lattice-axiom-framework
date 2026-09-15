@@ -1,0 +1,12 @@
+{
+  "scope": "Synthetic same-byte stage0 archival fixture only; not whole-preflight or production speed claim",
+  "objects": 1024,
+  "git_object_tree": "7e39688581eafb25978eb397308654a4f7bbe1d8",
+  "old_exact_git_show_seconds": 11.251676084008068,
+  "new_exact_batched_seconds": 0.3325166660360992,
+  "old_git_processes": 1024,
+  "new_git_processes": 16,
+  "speed_ratio_for_this_comparison": 33.8379312475921,
+  "candidate_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+  "git_version": "git version 2.50.1 (Apple Git-155)"
+}

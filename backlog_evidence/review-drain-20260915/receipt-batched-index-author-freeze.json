@@ -1,0 +1,15 @@
+{
+  "status": "Author proposal; production skill unchanged; independent review pending",
+  "scope": "Replace only repeated stage0 Git show byte comparisons with exact byte-preserving bounded cat-file batches. No science execution, no audit changes.",
+  "files": {
+    "review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+    "test_batched_index.py": "3aebe2683f8adbd0ec5bf27b25b2f76c2fab987d6c3aaffb6a8c39aa92f08dab",
+    "test_review_receipt_index.py": "5afc01a50f60077147edf946747b460afc52ed66274413ed91cb52916b09e79c",
+    "run_regression.py": "442ce15e78f39a2d667f133c38a7852635232ef4fd5171f0313c8aafecbef055",
+    "benchmark.py": "96dcda8d23b01b4dae2b8591124d23efd8e2a1559b7a0e47f1f662908ffa5910"
+  },
+  "tests": {
+    "existing_regressions": 47,
+    "focused_controls": 10
+  }
+}

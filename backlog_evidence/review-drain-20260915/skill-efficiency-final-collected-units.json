@@ -1,0 +1,73 @@
+{
+  "units": [
+    {
+      "unit": "skill-efficiency-final",
+      "prs": [],
+      "commits": [
+        "b0a688680577819e8910a6b1b7bbd6d4336bfa29",
+        "a9f8c67bee3c9b678222e09e8deb5d72226db2d4"
+      ],
+      "final_head": "a9f8c67bee3c9b678222e09e8deb5d72226db2d4",
+      "source_paths": {
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+        "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+        "docs/audit/scripts/tests/test_review_receipt_index.py": "5afc01a50f60077147edf946747b460afc52ed66274413ed91cb52916b09e79c"
+      },
+      "inputs": {
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+        "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+        "docs/audit/scripts/tests/test_review_receipt_index.py": "5afc01a50f60077147edf946747b460afc52ed66274413ed91cb52916b09e79c"
+      },
+      "reports": [
+        "skill-proof-ownership-independent-review.json",
+        "skill-proof-ownership-draft.json",
+        "check8076/procedural_api_control.py",
+        "8069-owned-proof-classification-addendum.json",
+        "8069-owned-proof-adapter-controls.json",
+        "receipt-batched-index-independent-review.json",
+        "receipt-batched-index-independent-review.md",
+        "receipt-batched-index-independent-controls.log",
+        "receipt-batched-index-author-freeze.json",
+        "receipt-batched-index-regression.log",
+        "receipt-batched-index-controls.log",
+        "receipt-batched-index-benchmark.json",
+        "skill-final-portable-tests.log",
+        "skill-final-author-proof-commit.json",
+        "receipt-batched-index-draft/patch.py",
+        "receipt-batched-index-draft/benchmark.py",
+        "receipt-batched-index-draft/test_review_receipt_index.py",
+        "receipt-batched-index-draft/run_regression.py",
+        "receipt-batched-index-draft/review_receipt.py",
+        "receipt-batched-index-draft/test_batched_index.py"
+      ],
+      "review_evidence_hashes": {
+        "skill-proof-ownership-independent-review.json": "aef7f75d0331111e17b8eeb999f233ccef01d481e7fe88133aa6e260eac4a015",
+        "skill-proof-ownership-draft.json": "45ba1a8035097aa3b2fb6cb7a852c718199b4cfcec05831ff20901641da04ca7",
+        "check8076/procedural_api_control.py": "781067cf93cfa461dd448b88ed59bda35de2476acd80a686f77fe8e144465523",
+        "8069-owned-proof-classification-addendum.json": "83d7ae62f9bb053c5b71b4a49bc8781a0ee90de17cf654852191bc2fc0814413",
+        "8069-owned-proof-adapter-controls.json": "cbc6f8d512922c3ea3b61a2de20cb79dd700305531df53db0600f815579b4882",
+        "receipt-batched-index-independent-review.json": "f20b3cabed89729e8a5f382618db9a1ef6c0c0fdc0f612a4fa22d40148232c0b",
+        "receipt-batched-index-independent-review.md": "b794af0f825c8d4a0f77fcee35eb2f5512ea4a21898211c8b4a8ab52e93feaa2",
+        "receipt-batched-index-independent-controls.log": "04a80a36787aa7995993a9231ff0718b498eceb56238c0db1b83f3a7896f369e",
+        "receipt-batched-index-author-freeze.json": "9de0edd38af9d20c2e4572723747c4dd3650861e22381e98a9a941a41db7f407",
+        "receipt-batched-index-regression.log": "f3af8c6a7f3e9eb4125790254987d3162463fa8cad0ce238c295a77e549dcfd3",
+        "receipt-batched-index-controls.log": "988a8a06af9f254adbcb72385668003616527c13ab968f3a9a7ac93a4553e1c5",
+        "receipt-batched-index-benchmark.json": "3743619b112a09603079a9b1e0a9f6000cbb6fa0d7212846e203e99351be6713",
+        "skill-final-portable-tests.log": "21778468693af5719b82ba59a4a9355ebf349bbc6794e809fedc6237e3a09ecf",
+        "skill-final-author-proof-commit.json": "8a1cc67887cf075cafb1b22af0ca70d9c6d32afa7d0e665b3b0f54cb1325c3f5",
+        "receipt-batched-index-draft/patch.py": "a982ca03e8d4980590d493d33636ca7b42b709962cddddaed8657466b9dcae1a",
+        "receipt-batched-index-draft/benchmark.py": "96dcda8d23b01b4dae2b8591124d23efd8e2a1559b7a0e47f1f662908ffa5910",
+        "receipt-batched-index-draft/test_review_receipt_index.py": "5afc01a50f60077147edf946747b460afc52ed66274413ed91cb52916b09e79c",
+        "receipt-batched-index-draft/run_regression.py": "442ce15e78f39a2d667f133c38a7852635232ef4fd5171f0313c8aafecbef055",
+        "receipt-batched-index-draft/review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+        "receipt-batched-index-draft/test_batched_index.py": "3aebe2683f8adbd0ec5bf27b25b2f76c2fab987d6c3aaffb6a8c39aa92f08dab"
+      },
+      "procedural_only": true,
+      "procedural_review": "receipt-batched-index-independent-review.json",
+      "procedural_scope": "Two independently confirmed disjoint source corrections: exact staged-byte batching/helper tests, and proof ownership/early timeout/API-boundary documentation. Complete combined source delta matches both reviewed hashes."
+    }
+  ],
+  "science_notes": 0,
+  "source_count": 3,
+  "collection_closed": "Source-only reviewed skill update queued after frozenold-tooling units; same hashes will sync installed after landing."
+}

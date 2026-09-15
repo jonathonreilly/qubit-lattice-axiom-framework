@@ -1,0 +1,5 @@
+{
+  "commit": "b0a688680577819e8910a6b1b7bbd6d4336bfa29",
+  "base": "df5316ee81d59d573b3837afb80d371d12d890d6",
+  "scope": "Reviewed proof ownership documentation replay, then reviewed exact byte batch helper and portable tests staged"
+}

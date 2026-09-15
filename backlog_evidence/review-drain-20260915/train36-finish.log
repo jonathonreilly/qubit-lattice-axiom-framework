@@ -1,0 +1,30 @@
+native_weyl_canonical_metric_constraints_bounded_theorem_note_2026-09-13 bounded_theorem unaudited []
+docs/audit/data/citation_graph_manifest.json | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+[detached HEAD b64cd9c759] Acknowledge reviewed source topology for train36
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   f1755b6e10..b64cd9c759  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED b64cd9c7599a8149666506c65c3fa9bfe55442ee

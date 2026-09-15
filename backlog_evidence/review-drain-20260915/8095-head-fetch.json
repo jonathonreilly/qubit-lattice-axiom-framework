@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+  "fetched_ref": "refs/review-loop/fetched/8095-b62f08b6da404f179cdbe2803aa7185c",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-canonical-metric-20260913",
+    "headRefOid": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+    "isDraft": false,
+    "number": 8095,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

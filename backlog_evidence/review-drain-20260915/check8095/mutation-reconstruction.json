@@ -1,0 +1,172 @@
+[
+  {
+    "name": "CAR_sign",
+    "failure": "AssertionError: ('real_path_hopping_1', {'max_residual': 2.0, 'tolerance': 3e-08})",
+    "source_sha256": "1f5ecbb54b012f2ede5082aa7a2adc3bd4e622f58d21070bea0dc1a6a89e5156"
+  },
+  {
+    "name": "path_phase",
+    "failure": "AssertionError: ('ordered_Majorana_path_2', {'max_residual': 2.0, 'tolerance': 3e-08})",
+    "source_sha256": "2179d81dfd4c4b835fd294020eb4822165845f2580c725ab09926fcabc9344b0"
+  },
+  {
+    "name": "path_imaginary",
+    "failure": "AssertionError: ('imaginary_path_hopping_1', {'max_residual': 2.0, 'tolerance': 3e-08})",
+    "source_sha256": "eb09b8585b3e5ee88bef5798003c20a12bd0c5505259a6e43ab58606985a628a"
+  },
+  {
+    "name": "path_range",
+    "failure": "AssertionError: ('protected_vertex_paths_(1, 3, 3)', {'hops_checked': 296, 'maximum_length': 99})",
+    "source_sha256": "f5f48500221e2ac5dd40efd3d0aa69beb88b02c38047b9d0052eec7538116dd7"
+  },
+  {
+    "name": "Koszul_variation",
+    "failure": "AssertionError: ('normal_coordinate_spin_connection_variation', {})",
+    "source_sha256": "c2c8a2fc82c194174f02b9bb3fb45372827bfebc0fb8381208514e2cda3e5fb7"
+  },
+  {
+    "name": "half_density_variation",
+    "failure": "AssertionError: ('half_density_trace_gradient_cancellation', {})",
+    "source_sha256": "b1467f81a3c8b90201215ae6de540b7c8687c36c6b8f46c69e6c0dde39d90547"
+  },
+  {
+    "name": "Darboux_spinor",
+    "failure": "AssertionError: ('Darboux_momentum_spinor_0', {})",
+    "source_sha256": "7c1a99d588b495e289fe1fe81b44e6442e3d72ec5e9306e2c7ece51bf98c435d"
+  },
+  {
+    "name": "configuration_curvature",
+    "failure": "AssertionError: ('connection_curvature_(0, 1)', {})",
+    "source_sha256": "c5d7ed5e0e4c6e75d09b9776a9a422c5b9478dfddc886bdd168b6c016f84ec6b"
+  },
+  {
+    "name": "Darboux_curvature",
+    "failure": "AssertionError: ('Darboux_momentum_curvature_(0, 1)', {})",
+    "source_sha256": "81465907c8032cee2dc8bdec0a9e89d9e891d79d20077396d46f37e3231dab8f"
+  },
+  {
+    "name": "metric_curvature_scale",
+    "failure": "AssertionError: ('identity_metric_curvature', {})",
+    "source_sha256": "e6e5595ef52ce69a5f3dc80256484e152624594dbf69c15ba85f8aa6047c21a9"
+  },
+  {
+    "name": "scalar_connection",
+    "failure": "AssertionError: ('scalar_connection_matches_coordinate_geometry_0', {'max_residual': 0.002488818380984713, 'tolerance': 3e-12})",
+    "source_sha256": "d63bcaab23baa33fafc0bda72aac924972fc851f7c4a598866ce6399c90137b2"
+  },
+  {
+    "name": "covariant_principal",
+    "failure": "AssertionError: ('covariant_Dirac_principal_variation_0', {'max_residual': 0.17606003989906915, 'tolerance': 3e-09})",
+    "source_sha256": "a2913b3f165c7d8c0600eb39de5048fb11c1f7e60ea52426b739b9782b2bbb19"
+  },
+  {
+    "name": "covariant_zero",
+    "failure": "AssertionError: ('covariant_Dirac_connection_variation_0', {'max_residual': 0.2639489790542001, 'tolerance': 3e-09})",
+    "source_sha256": "3dd789f9a563bcd904142fa1c2ec2581bd6fd8ca41e0d7e1932f94e149470e00"
+  },
+  {
+    "name": "polar_rotation",
+    "failure": "AssertionError: ('polar_frame_variation_symmetric_0', {'max_residual': 0.8837076498239271, 'tolerance': 3e-12})",
+    "source_sha256": "2fa5e383c4994c19c0339c782330decf5e22e8c29481e32c5c57f12d5c35f155"
+  },
+  {
+    "name": "polar_connection",
+    "failure": "AssertionError: ('connection_polar_moment_map_0', {'max_residual': 0.22593231876885211, 'tolerance': 3e-12})",
+    "source_sha256": "a6716b7fd322ce0bc559c01017618bbbf944e502ce362ecab8557a07f1144790"
+  },
+  {
+    "name": "Kosmann_rotation",
+    "failure": "AssertionError: ('Kosmann_matches_polar_moment_map_0', {'max_residual': 0.670085122352011, 'tolerance': 3e-12})",
+    "source_sha256": "47452ae84cc4794bd5aa3f92a08308f88195c91e7d5a25f89b05312c7c78a64c"
+  },
+  {
+    "name": "normal_bracket",
+    "failure": "AssertionError: ('curved_normal_bracket_principal_0', {'max_residual': 6.7427262782294815, 'tolerance': 3e-11})",
+    "source_sha256": "e632fcca521525ca8d9bf2e2c17ac6f53a0c51063028de6bd71b4d68ae039db5"
+  },
+  {
+    "name": "normal_bracket_connection",
+    "failure": "AssertionError: ('curved_normal_bracket_zero_order_0', {'max_residual': 1.6941418528914256, 'tolerance': 3e-11})",
+    "source_sha256": "9eef1a291b68f5815c8b8a1bb2a6a2ed0ca04a2ba8676edde09139956551dc08"
+  },
+  {
+    "name": "ADM_temporal",
+    "failure": "AssertionError: ('full_ADM_temporal_rotation_0', {'max_residual': 2.6803404894080445, 'tolerance': 3e-11})",
+    "source_sha256": "f473b9bc315c418939945896be553d0660611686366328daddbae90949b2c004"
+  },
+  {
+    "name": "metric_trace_contraction",
+    "failure": "AssertionError: ('metric_curvature_lapse_contraction', {})",
+    "source_sha256": "5529104be8e1ba2836a85b395e32065382ff60c31f382897046a84841db970cb"
+  },
+  {
+    "name": "torus_trace",
+    "failure": "AssertionError: ('trace_witness_nonzero', {})",
+    "source_sha256": "8f5c81003039ad1161e43abc203c6ba5d169f7f246a3de48ebef92da698d325d"
+  },
+  {
+    "name": "product_normal",
+    "failure": "AssertionError: ('normal_product_bracket_scalar_defect', {})",
+    "source_sha256": "2730b2803cd37661154b9775675914ff4b2be4b1becf0c61a384b8018ac7c3e3"
+  },
+  {
+    "name": "curvature_Euler",
+    "failure": "AssertionError: ('scalar_curvature_Euler_variation_0', {})",
+    "source_sha256": "79a383fa2143da94fdd471f411cacae1c72baeea36be8a8f88ee4505ff221387"
+  },
+  {
+    "name": "Legendre_trace",
+    "failure": "AssertionError: ('metric_Legendre_inverse', {})",
+    "source_sha256": "ac63eba9e74bcdf1593bbe1d163436d2c9bcb3b5e421b9ce28b09329cd0aba6d"
+  },
+  {
+    "name": "ADM_Lagrangian",
+    "failure": "AssertionError: ('metric_ADM_Lagrangian', {})",
+    "source_sha256": "ff254953601e0c51ef3e84f0d1ca89cf2eb2abb0d5398582937d6e701bea7f13"
+  },
+  {
+    "name": "periodic_product",
+    "failure": "AssertionError: ('periodic_spatial_joint_constraint_identity', {})",
+    "source_sha256": "26d8e4d4303c0b0c8954a9fa1931c02e5c606dc4866b5fc449ecda17f01026fb"
+  },
+  {
+    "name": "spatial_node_jet",
+    "failure": "AssertionError: ('native_spatial_vertex_jet_(-1, 2, 2, 2)', {})",
+    "source_sha256": "2ce24eb53a46eb179c6181d439ac5e681ac5d570e1541dc1fde0d422e129e8e5"
+  },
+  {
+    "name": "shift_node_jet",
+    "failure": "AssertionError: ('native_shift_second_moment_-1', {})",
+    "source_sha256": "4514511fb48ad71e18ec5eb146b92631c9f4cf8e4452d8e7347ce2473da92c49"
+  },
+  {
+    "name": "spin_node",
+    "failure": "AssertionError: ('native_temporal_spin_vertex_-1', {})",
+    "source_sha256": "18d029eceede71258bf78ff9fe096662a227fba8c5ab33f61b5a5acbd947068c"
+  },
+  {
+    "name": "shift_second_moment",
+    "failure": "AssertionError: ('native_shift_second_moment_-1', {})",
+    "source_sha256": "ef41dffdb09c4dd61be637754f5bb8c1e822356fd6a1d5cd185419f5b626c236"
+  },
+  {
+    "name": "spin_first_moment",
+    "failure": "AssertionError: ('native_spin_first_moment_-1', {})",
+    "source_sha256": "fa71cf9fca92a2bb86de36476efe3e1f525b2208d45a1e00d713f6a35e3ae186"
+  },
+  {
+    "name": "finite_shift",
+    "failure": "AssertionError: ('native_time_shift_leading_Taylor_(-1, 12)', {'error': 0.2226595827032165, 'spacing': 0.5235987755982988, 'normalized_error': 0.8121647688767604, 'leading_norm': 0.10263174493635352})",
+    "source_sha256": "ced70f18636301b80ef8baea0506c939f26cddd8b7c42b00d70309d0c5a16658"
+  },
+  {
+    "name": "finite_time_spin",
+    "failure": "AssertionError: ('native_rotation_matches_spacetime_0', {'max_residual': 0.03695345135636996, 'tolerance': 3e-11})",
+    "source_sha256": "764ff7bb7c742d99a9e3422e7442619f92b54bcf6bf5e75395083f7eae2152f6"
+  },
+  {
+    "name": "finite_leading_error",
+    "failure": "AssertionError: ('native_time_shift_leading_Taylor_(-1, 48)', {'error': 0.005139748365629897, 'spacing': 0.1308996938995747, 'normalized_error': 0.29996086350493, 'leading_norm': 0.06842076808053259})",
+    "source_sha256": "5041cf2f465b36516024d831bfb03ae12a3241a6f927e187009f69c140e1bef3"
+  }
+]

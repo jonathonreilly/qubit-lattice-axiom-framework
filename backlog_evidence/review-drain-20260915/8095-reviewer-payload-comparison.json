@@ -1,0 +1,8 @@
+{
+  "excluded_metadata": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "differences": [],
+  "boundary": "All structural and nonfloating fields unchanged; floating differences logged individually. Decisive scientific thresholds remain original unchanged assertions; no cross-run threshold replaces them."
+}

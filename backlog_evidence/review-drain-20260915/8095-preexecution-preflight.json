@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8095-preexecution",
+  "tree": "dce007a62611a22be4d429cb526087a940680584",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_weyl_canonical_metric_constraints_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_weyl_canonical_metric_constraints_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8095-evidence/kept/pr8095-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4365
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4363
+    },
+    "declared_inputs": {
+      "hits": 8774,
+      "misses": 4496
+    }
+  },
+  "record_sha256": "39639efb63b65abc4c1285b0f09f1a308f6c3e600060bc5d47422c797255feef",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

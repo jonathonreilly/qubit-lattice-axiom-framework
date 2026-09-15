@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "checks": [
+    "frame_curvature_direct_two_parameter_derivative",
+    "metric_curvature_scale",
+    "spatial_product_defect_nonzero",
+    "off_diagonal_Legendre_inverse",
+    "off_diagonal_ADM_kinetic_sign",
+    "trace_witness_nonzero",
+    "normalization_witness",
+    "shift_Laurent_zero_-1",
+    "shift_Laurent_first_-1",
+    "shift_Laurent_second_-1",
+    "spin_Laurent_first_-1",
+    "shift_Laurent_zero_1",
+    "shift_Laurent_first_1",
+    "shift_Laurent_second_1",
+    "spin_Laurent_first_1",
+    "normal_Dirac_operator_commutator_direct"
+  ],
+  "count": 16,
+  "elapsed_seconds": 0.4470306660514325
+}

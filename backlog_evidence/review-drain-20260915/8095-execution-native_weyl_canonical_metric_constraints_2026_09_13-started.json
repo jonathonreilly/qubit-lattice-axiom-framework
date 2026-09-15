@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/native_weyl_canonical_metric_constraints_2026_09_13.py",
+  "limit_sec": 60,
+  "record_sha256": "39639efb63b65abc4c1285b0f09f1a308f6c3e600060bc5d47422c797255feef"
+}

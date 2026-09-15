@@ -1,0 +1,30 @@
+{
+  "role": "Primary literature comparison; local proof reconstructed independently. Full PDFs/text remain local and are not publication references.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/pdf/math/0303095v1",
+      "pdf_sha256": "274dc9860b2e92ab81f259fd7c4ed5065bbd4d6b41b0bcab2192fc6fc88e06e7",
+      "read_scope": "Section 5 metric-path spinor identification, equation 23 and Theorem 5.1: smooth fixed-spin manifold metric variation; conventional Clifford multiplication -i gamma converts to P4, with separately derived half-density trace cancellation."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1504.01034v3",
+      "pdf_sha256": "51f825ac276729b775d73f3845b7327e14a20484b263d9246ae85aaf6d65c40b",
+      "read_scope": "Section 2.1 skew vertical/symmetric horizontal frame splitting through Definition 2.9 and vertical connection; matches P1 finite-dimensional connection, not global dynamics."
+    },
+    {
+      "url": "https://arxiv.org/pdf/gr-qc/9808005v1",
+      "pdf_sha256": "9b268898f5fe7babbaabb60621d8a649048586bee4bfc436ec17bafea59ba4a4",
+      "read_scope": "Equations 59-75 and surrounding complex half-density Poisson bracket/frame momentum contribution; supplied torsion-free classical action comparator, not a quantum theorem."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1611.08878v3",
+      "pdf_sha256": "934dcb64d7d7a4788921a0406bf07c69848b46c56d083bbc1d35b023f1ed1d9c",
+      "read_scope": "Abstract and metric example equations 103-106: metric family yields two undetermined constants; ultralocal matter-geometry hypotheses not imported into derivative-dependent spinor problem."
+    },
+    {
+      "url": "https://arxiv.org/pdf/gr-qc/9801019v1",
+      "pdf_sha256": "94f7e863c1922168b7e208bcafc0d7a2125d73974add58d5f98cfd077662802b",
+      "read_scope": "Abstract/introduction and section 2 geometric canonical assumptions: equal-time constraint algebra is separate from histories/extra structure; no uniqueness outside P10 imported."
+    }
+  ]
+}

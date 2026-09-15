@@ -1,6 +1,6 @@
 {
- "edge_count": 12586,
- "node_count": 5084,
+ "edge_count": 12590,
+ "node_count": 5085,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -697,6 +697,10 @@
   "admissibility_raw_graph_ward_compact_pullback_translation_generator_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "a0acd1cb69bf",
    "out_degree": 2
+  },
+  "admissibility_readability_continuum_alphabet_fisher_rank_and_formation_order_second_order_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "872b9196d9d8",
+   "out_degree": 4
   },
   "admissibility_record_continuation_refinement_conditional_bounded_theorem_note_2026-07-13": {
    "deps_hash": "c8eee4235fc9",

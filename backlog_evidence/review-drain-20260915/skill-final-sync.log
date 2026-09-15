@@ -1,0 +1,45 @@
+{
+  "backup": "/Users/jonBridger/.codex/skill-backups/20260915T104536Z-i2wlvqc_",
+  "destination": "/Users/jonBridger/.codex/skills",
+  "mode": "apply",
+  "skills": [
+    {
+      "changed_paths": [
+        "PREFLIGHT.md",
+        "SKILL.md"
+      ],
+      "recovery_directory": "/Users/jonBridger/.codex/.methodology-recovery-review-loop-0u2e7th9",
+      "recovery_state": "original_retained",
+      "skill": "review-loop",
+      "status": "applied"
+    }
+  ],
+  "source": {
+    "repository": "/private/tmp/review-drain-20260915/train02",
+    "revision": "7927f9e170566b351b2cf6f801cb7176f8b87226",
+    "skills_dirty": false,
+    "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+    "worktree_dirty": false
+  }
+}
+{
+  "backup": null,
+  "destination": "/Users/jonBridger/.codex/skills",
+  "mode": "check",
+  "skills": [
+    {
+      "changed_paths": [],
+      "recovery_directory": null,
+      "recovery_state": null,
+      "skill": "review-loop",
+      "status": "in_sync"
+    }
+  ],
+  "source": {
+    "repository": "/private/tmp/review-drain-20260915/train02",
+    "revision": "7927f9e170566b351b2cf6f801cb7176f8b87226",
+    "skills_dirty": false,
+    "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+    "worktree_dirty": false
+  }
+}

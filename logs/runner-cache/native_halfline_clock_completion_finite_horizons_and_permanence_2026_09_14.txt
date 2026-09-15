@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14.py
+runner_sha256: 754ceeea40217c78d3e44a3aaad75914713be173c5f7934a29ecc0d37480d42f
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 3.02
+status: ok
+----- stdout -----
+NATIVE exact Gaussian-dyadic columns=8 K_spectrum= [0.5, 0.5, 1.5, 2.5, 3.5, 4.5, 5.5]
+PASS native_exact_columns
+HALFLINE sine/Bessel/finite-spectrum max_vector_residual= 2.0797361757909208e-14 L9_parity_sums= [120, 165]
+PASS halfline_integrals_and_tail
+POSITIVE full_bond_dimension=1024 actual_gate_bonds=9 polynomial_residual= 0.0
+PASS positive_full_bonds
+JOINT direct_sparse_dimension= 10240 columns=8 max_entry_residual= 4.4214167185930334e-14
+PASS direct_native_joint
+HORIZON epsilon=.01 J=1 T0= 71.76593731461308 T=100 M= 243 certified_error= 0.009419871816199923 finite_rows= [[18, 4.0, 4.978678500687029e-06, 0.00024059645221277164], [30, 8.0, 6.378764090330693e-07, 3.935364569352147e-05], [48, 16.0, 2.5660896919641296e-06, 0.0001932083573636122], [70, 25.0, 6.461408835525255e-07, 5.714820946538506e-05]]
+PASS finite_horizon_and_recurrence
+ABSORBING Erlang/master_equation matched; coherent_vs_dephased_difference= 0.8092062869348053
+PASS absorbing_clock_and_instrument
+TOTAL: PASS=6 FAIL=0
+per_element: all native gate phases, capped battery branches and Gaussian-dyadic commutators are checked.
+per_site: full two-clock-qubit positive bonds include unused number sectors and the actual native carrier.
+per_mode: sine integrals, Bessel amplitudes, finite path spectra and asymptotic parity coefficients agree.
+per_block: direct 10240-dimensional joint evolution checks all eight ready columns and arbitrary-input gauge identities.
+lattice_wide: checked and not executed — half-line and interval-permanence theorems use the written proof; no native infinite-lattice formation law is established.
+
+----- stderr -----
+

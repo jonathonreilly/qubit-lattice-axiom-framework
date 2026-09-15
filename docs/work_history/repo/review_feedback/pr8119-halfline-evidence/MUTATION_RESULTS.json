@@ -1,0 +1,97 @@
+{
+  "primary_sha256": "bd26b618bb2821694477b48256d3f2658ca7403dcf1d1ed4b4f47525322ac940",
+  "results": [
+    {
+      "name": "native_final_relative_phase",
+      "source_sha256": "2b18f4a928485e761e24b177c9e56371dcdf8e650c7eae58b1f62360a4379e95",
+      "exit_code": 1,
+      "elapsed_sec": 0.5002507499884814,
+      "detected": true
+    },
+    {
+      "name": "native_battery_spacing",
+      "source_sha256": "17112d65534faa3043e6dea4fc1f7a149f22b0a5c51e2112fe9c6739ce1bc6d7",
+      "exit_code": 1,
+      "elapsed_sec": 0.29697683406993747,
+      "detected": true
+    },
+    {
+      "name": "native_refusal_amplitude",
+      "source_sha256": "cc00e1fe22ce452e1b1a0ba8e5d71e999411d1a585a5395d744b55b4c0bc73e0",
+      "exit_code": 1,
+      "elapsed_sec": 0.3248720410047099,
+      "detected": true
+    },
+    {
+      "name": "halfline_reflection_sign",
+      "source_sha256": "b51e0c01dc89c4a219eedb1bf169c7e5f1b2dfbd986d3e3fd926b5741904d30d",
+      "exit_code": 1,
+      "elapsed_sec": 0.5154116250341758,
+      "detected": true
+    },
+    {
+      "name": "halfline_propagation_orientation",
+      "source_sha256": "ae2eea645be168a365d3b601efcf33ee349422c78c36ac853aa3fd4186e972b3",
+      "exit_code": 1,
+      "elapsed_sec": 0.4301161660114303,
+      "detected": true
+    },
+    {
+      "name": "asymptotic_parity_phase",
+      "source_sha256": "c5d958843310f5ca4e3d80e997350156ffd9a70cb3104ed7086cc11460c78927",
+      "exit_code": 1,
+      "elapsed_sec": 0.4482463749591261,
+      "detected": true
+    },
+    {
+      "name": "full_bond_unused_double_sector",
+      "source_sha256": "4984a3327cff7a0d0097aa9eab6b631d9ccd37e62e298706b838afbbea355692",
+      "exit_code": 1,
+      "elapsed_sec": 0.5458780840272084,
+      "detected": true
+    },
+    {
+      "name": "joint_hopping_adjoint",
+      "source_sha256": "521d5e775adb46e7a9380ce5b2d3e9ed3dcd2f34663f7d65e52d35bac2d28236",
+      "exit_code": 1,
+      "elapsed_sec": 1.947214207961224,
+      "detected": true
+    },
+    {
+      "name": "omitted_free_rotation",
+      "source_sha256": "40b63d98a746a641737b1cb8a223e733e1315e193be9c54cf2e251e71bd31064",
+      "exit_code": 1,
+      "elapsed_sec": 1.8036971250548959,
+      "detected": true
+    },
+    {
+      "name": "early_completed_prefix",
+      "source_sha256": "2636fdd579a445cd9ffbfe0bddee32d8c1479e830250fef644eb0913f939cc6d",
+      "exit_code": 1,
+      "elapsed_sec": 1.90854054200463,
+      "detected": true
+    },
+    {
+      "name": "finite_contour_exponent",
+      "source_sha256": "a4e09e2fdac574218e5f8ad94be62efb86b73e4186a05a42e49faf50519e45a6",
+      "exit_code": 1,
+      "elapsed_sec": 2.5094638749724254,
+      "detected": true
+    },
+    {
+      "name": "absorbing_clock_rate",
+      "source_sha256": "1933670df93208a53ea5d0b87d55ef998a4f11ee04452abd1a42274f3ecaec9c",
+      "exit_code": 1,
+      "elapsed_sec": 2.5650810409570113,
+      "detected": true
+    },
+    {
+      "name": "coherent_instrument_confusion",
+      "source_sha256": "2d332068e7067eab7c2b8f3357942e13c4e17de07c361d9590fa7a7c074b96fa",
+      "exit_code": 1,
+      "elapsed_sec": 2.7175129170063883,
+      "detected": true
+    }
+  ],
+  "independence": "Author falsifiers, not independent scientific review."
+}

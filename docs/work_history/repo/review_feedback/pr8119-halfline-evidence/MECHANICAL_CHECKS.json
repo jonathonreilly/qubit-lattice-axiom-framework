@@ -1,0 +1,37 @@
+{
+  "syntax": "passed",
+  "cache": "fresh",
+  "source_sha256": "bd26b618bb2821694477b48256d3f2658ca7403dcf1d1ed4b4f47525322ac940",
+  "note_sha256": "57504d16bcd2569fe702ddddd0c7a4ec55b60ce74ac3f2c995940b6a8299eb2d",
+  "local_links": [
+    "scripts/native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14.py",
+    "logs/runner-cache/native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14.txt",
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block11/REVIEW_HISTORY.md",
+    "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+    "docs/NATIVE_EDGE_RECORD_REDUCED_CELL_FULL_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/NATIVE_EDGE_RECORD_REDUCED_CELL_AUTONOMOUS_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "five_resolution_lines_minimum_40_characters": "passed",
+  "vocabulary": {
+    "files": [],
+    "schema_version": 1,
+    "summary": {
+      "files_with_violations": 0,
+      "total_auto_correctable": 0,
+      "total_needs_human": 0
+    }
+  },
+  "mutations_detected": 13,
+  "independent_review": "pending",
+  "integration_gate": "Full mechanical pipeline, strict global lint and changed-evidence validation deferred under science workflow to exact integrated candidate; not claimed passed.",
+  "citation_graph": {
+    "nodes": 5042,
+    "edges": 12523,
+    "added": [
+      "native_halfline_clock_completion_finite_horizons_and_permanence_bounded_theorem_note_2026-09-14"
+    ],
+    "removed": [],
+    "rewired": []
+  }
+}

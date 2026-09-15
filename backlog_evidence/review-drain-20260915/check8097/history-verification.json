@@ -1,0 +1,10 @@
+{
+  "original_paths": 184,
+  "archive_entries": 181,
+  "canonical_source_exact_original": true,
+  "twenty_mutation_sources_and_assertion_receipts_verified": true,
+  "all_gzip_payloads_decode": true,
+  "cache_exact_decoded_original": true,
+  "source_loss": "Generated citation manifest excluded; complete original history preserved, canonical note and primary unchanged; no original deleted paths.",
+  "primary_executions_by_reviewer": 0
+}

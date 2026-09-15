@@ -1,0 +1,1 @@
+{"exit_code":1,"failure":"SymPy linsolve NotInvertible zero divisor on unexpanded complex rational coefficients; all preceding assertions passed; no primary execution","repair":"Expand exact coefficients before solver"}

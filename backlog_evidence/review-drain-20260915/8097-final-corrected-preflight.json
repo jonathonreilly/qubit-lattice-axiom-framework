@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8097-final-corrected-mapping",
+  "tree": "4895436b7b51f1cb09ef60bc035f26bad92c35f3",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_weyl_local_interaction_covariance_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4376
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4374
+    },
+    "declared_inputs": {
+      "hits": 8775,
+      "misses": 4507
+    }
+  },
+  "record_sha256": "e6200a9b090fc78f0e2c969a0a6498195bbad47aa55b5ba7cf4119a9d489348b",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

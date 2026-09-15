@@ -1,0 +1,709 @@
+diff --git a/docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md b/docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md
+new file mode 100644
+index 0000000000..60f669219e
+--- /dev/null
++++ b/docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md
+@@ -0,0 +1,446 @@
++---
++claim_id: native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13
++claim_type: bounded_theorem
++claim_scope: "Derive the formal Grassmann boost criterion for adding a derivative-free local potential to a supplied Weyl normal generator. Classify charge-preserving quartics for one Weyl pair and the leading vertex of real symmetric even orbital-density kernels. Construct an explicit finite-range native density interaction with nonzero invariant leading quartic, within the stated small-coupling Weyl model class. Bare vertex, formal classical bracket and imported dressed two-point statements have separate domains. No renormalized four-point, quantum gravity or nonzero interacting continuum limit is asserted."
++upstream_dependencies:
++  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
++runner: scripts/native_weyl_local_interaction_covariance_2026_09_13.py
++---
++
++# Native Weyl local interactions and their covariance condition
++
++**Date:** 2026-09-13
++**Type:** bounded_theorem
++**Status:** proposed_retained
++
++## Target and premises
++
++Find which local fermion interactions preserve a supplied classical Weyl
++normal bracket, and whether a nonzero such interaction can occur as the
++leading vertex of an explicit native density coupling. A positive construction
++is given below. Its coefficient vanishes under fixed weak-coupling engineering
++scaling; a finite interacting continuum theory remains a separate problem.
++
++~~~yaml
++actual_current_surface_status: conditional-support
++target_claim_type: bounded_theorem
++claim_type_reason: "Local polynomial classification, finite native construction and a smooth few-particle vertex estimate."
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "Consistent interactions for the same native Weyl matter and supplied geometry."
++source_of_blocker_text: user_goal
++reachability_to_target: partially_closes
++artifact_role: theorem
++next_trace_action: "Test radiative covariance and a mechanism for finite physical interactions or native dynamical geometry."
++conditional_surface_status: conditional-support
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++~~~
++
++The [minimal framework memo](MINIMAL_AXIOMS_2026-06-29.md) is the ontology
++reference. The quantum tensor/CAR interpretation, selected Hamiltonian,
++continuous time, Weyl identification, smooth geometry and its classical
++normal generator are supplied model inputs. Native number operators use the
++conditional representation in the
++[current-main edge/CAR source](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md).
++No result from an unmerged sibling proposal is required by this note.
++
++| Statement | Domain and evidence | Remaining boundary |
++|---|---|---|
++| Local potential changes the normal bracket by its boost variation | Formal Grassmann functionals, direct Euler calculation | No quantum operator constraint algebra |
++| Five real Hermitian charge-preserving quartics, three with separate valley number | One specified Weyl pair, representation and component proof | No flavor or gauge-content selection |
++| Density-kernel classification and explicit invariant stencil | Bare four-leg vertex of a specified two-orbital carrier | No radiatively preserved four-point identity |
++| Native finite support and smooth vertex limit | Even CAR operators and fixed smooth few-particle states | No interacting ground-state convergence from this estimate |
++| Weak-coupling dressed Weyl two-point function | Named imported theorem after matching its model hypotheses | Its metric and normalization cannot replace the bare ones silently |
++
++All results here are author proposals pending independent review. The primary
++challenges calculations by several methods, but is not independent audit.
++The invariant forms and standard Weyl machinery were known during development.
++No experimental data, fitted prefactor or empirically selected coupling is used.
++
++## Derivative-free potentials and the graded bracket
++
++Work on a smooth closed spin three-manifold, or with compact support. For the
++native comparison use a three-torus with fixed spin structure. The metric g
++is positive definite. Write ordinary odd spinors q=(det g)^(-1/4) psi, where psi is
++a half-density. At a normal frame the spinor part of the even graded Poisson
++bracket obeys {q_a(x),qbar_b(y)}=-i delta_ab delta(x-y); the bracket between
++the two odd coordinates is symmetric. Globally the ordinary-spinor delta
++has the corresponding invariant-volume normalization. For even F,G, local
++right and left derivatives give
++
++    {F,G}=-i sum_a [(F <-d/dq_a)(d/dqbar_a ->G)
++                         +(F <-d/dqbar_a)(d/dq_a ->G)].       (1)
++
++In particular {qbar A q,qbar B q}=-i qbar[A,B]q. This identity concerns
++Grassmann symbols. Normal-ordering an operator is a separate step.
++
++Let U(q,qbar) be a real even derivative-free local polynomial, without explicit
++coordinate dependence and invariant under spatial spin rotations. Add
++
++    V[N]=int N sqrt(det g) U(q,qbar)                           (2)
++
++to a supplied normal generator H[N]. The spinor kinetic part is the symmetric
++Weyl operator with arithmetic lapse smearing. The metric kinetic term, if
++included, is ultralocal in its momentum and lapse. Its brackets with spinors
++may include a configuration connection depending locally on the metric, but
++contain no derivatives of the lapse. These are explicit hypotheses; this
++note does not establish the original free constraint algebra.
++
++In one normal-coordinate direction its spinor density is
++
++    H_m[N]=-i/2 int N(qbar alpha q' - qbar' alpha q).          (3)
++
++Moving odd variations to the left and integrating by parts gives the left
++Euler derivatives -i(N alpha q'+N' alpha q/2) with respect to qbar, and
++-i(N qbar' alpha+N' qbar alpha/2) with respect to q. Equation (1) therefore
++gives the lapse-gradient parts of the flows
++
++    {q,H_m[N]}=...-(partial_i N) alpha_i q/2,
++    {qbar,H_m[N]}=...-(partial_i N) qbar alpha_i/2.           (4)
++
++Define the even derivation B_i by B_i q=alpha_i q/2 and
++B_i qbar=qbar alpha_i/2. It uses the ordinary Leibniz rule because this
++transformation is even. No commuting substitution for the fields is made.
++All flow terms proportional to N cancel against those proportional to M.
++The potential self-bracket has no derivative of delta and also cancels.
++Metric cross terms are proportional to NM by the stated ultralocality.
++Consequently the exact change in the normal bracket is
++
++    {H[N]+V[N],H[M]+V[M]}-{H[N],H[M]}
++      =-int sqrt(det g) (N partial_i M-M partial_i N) B^i U. (5)
++
++The frame raises the orthonormal index in this formula. Thus the old normal
++bracket is unchanged precisely when B_i U=0 for every i. Necessity is local
++and coefficientwise in the exterior algebra: if int(N dM-M dN).C=0 for all
++smearings, N=1 first gives div C=0; integrating the general identity then
++gives C.grad N=0 for every N, hence C=0. Local cutoff smearings give the same
++argument on a noncompact slice. Together with the assumed rotations this
++is the proper Lorentz Lie-algebra invariance condition on U. It neither
++proves that the free bracket closes nor gives quantum Ward identities.
++
++## The invariant quartic space and its fermionic signs
++
++Use R=q_+ and L=sigma3 q_- for the native cones specified below. Their Weyl
++matrices are alpha_i=diag(sigma_i,-sigma_i). Rotations act by the same SU(2)
++matrix on both species; boosts act by +sigma_i/2 on R and -sigma_i/2 on L,
++and on barred components by the Hermitian conjugates. Define
++
++    n_R=Rbar R, j_R=Rbar sigma R, n_L=Lbar L, j_L=Lbar sigma L,
++    r=r0 r1, l=l0 l1,
++    U_cross=n_R n_L+j_R.j_L.                                (6)
++
++The left current in (6) uses +sigma by definition; its physical spatial
++Weyl current has the opposite sign. Conjugating a pair reverses its order.
++The complex charge-preserving quartic invariant space has basis
++
++    r^dagger r, l^dagger l, r^dagger l, l^dagger r, U_cross.  (7)
++
++There are five real Hermitian couplings: the first two, the real and
++imaginary Hermitian combinations of the middle pair, and U_cross. Separate
++valley phase invariance removes the two pair-transfer combinations and
++leaves three real couplings.
++
++Here is a dimension proof. The annihilator-pair representation decomposes as
++wedge^2(R plus L)=two scalar copies plus the four-dimensional vector
++representation. Complexifying the Lorentz algebra gives two commuting sl(2)
++actions. On the mixed pair their associative envelopes generate M2 tensor I
++and I tensor M2, whose products span M4. That sector is irreducible and its
++commutant consists of scalars; it has no invariant vector. The two scalar
++copies admit four pairings with their conjugates and the vector sector one.
++Thus there are 4+1 complex invariants. The five independent polynomials (7)
++are invariant, so they exhaust the space. Conjugation gives the real count.
++The primary separately solves the 36-dimensional component kernel; it also
++finds ten rotation-only invariants. That finite calculation is a challenge
++of this argument, not its replacement.
++
++With monomial order Rbar0,Rbar1,Lbar0,Lbar1,r0,r1,l0,l1, explicit expansion is
++
++    U_cross=-2 [Rbar0 Lbar0 r0 l0 + Rbar1 Lbar1 r1 l1
++                     +Rbar0 Lbar1 r1 l0 + Rbar1 Lbar0 r0 l1]
++           =-2 (Rbar L)(Lbar R).                            (8)
++
++For a single Grassmann species the exact identities are
++
++    n_R j_R^i=0, n_R^2=2 r^dagger r, j_R.j_R=-3 n_R^2.      (9)
++
++In particular the single-species density square is invariant. The commonly
++used commuting-spinor current identity gives a different quartic reduction;
++it cannot establish an obstruction for these fermions. Equations (8)-(9)
++follow by expanding two components and using anticommutation, including
++r^dagger=r1^dagger r0^dagger. The primary checks both this exterior algebra
++and the bilinear bracket against ordinary finite CAR matrices.
++
++## Specified native carrier and its onsite interaction
++
++Choose two orbitals per cell n of Z^3 and the finite-range kinetic symbol
++
++    h0(k)=sin k1 sigma1+sin k2 sigma2
++                  +(2+zeta-cos k1-cos k2-cos k3) sigma3,
++    1/2<zeta<1, kappa=acos zeta, v=sqrt(1-zeta^2),
++    D=diag(1,1,v), y=D^(-1) a n.                            (10)
++
++Its only zeros are (0,0,+/-kappa). Indeed sin k1=sin k2=0 is necessary,
++and a pi coordinate makes the third coefficient at least 1+zeta>0. At zero
++transverse coordinates the third coefficient is zeta-cos k3. The jets are
++(sigma1,sigma2,+/-sigma3)D. The relative sigma3 change of basis in (6) gives
++the desired opposite Weyl blocks. The leading normalized envelope expansion is
++
++    c_n=a^(3/2)/sqrt(v)
++                 [e^(i kappa n3) R(y)+e^(-i kappa n3) sigma3 L(y)]. (11)
++
++The Jacobian of y makes sum c^dagger c converge to int dy(n_R+n_L) on
++fixed smooth envelopes after the oscillatory cross terms vanish.
++
++An actual onsite orbital interaction c_n0^dagger c_n1^dagger c_n1 c_n0 has
++phase-zero quartic
++
++    U_site=r^dagger r+l^dagger l+m^dagger m,
++    m=r1 l0+r0 l1.                                        (12)
++
++The omitted phases have frequencies +/-2 kappa or +/-4 kappa, which are
++nonresonant in (10). The mixed pair m is a triplet component. Directly,
++
++    B_3 U_site=-2 Rbar0 Lbar1 r0 l1+2 Rbar1 Lbar0 r1 l0.    (13)
++
++The first two boosts and third rotation vanish; the first two rotations do
++not. Thus this specified onsite leading quartic fails (5). Centering onsite
++densities also gives bilinear and constant terms, which are not part of this
++quartic classification. Independently rotating the two orbital species
++before expanding their native phases would change the operator being tested.
++Equation (13) does not rule out other interactions or an acceptable
++renormalized infrared theory of this onsite model.
++
++## Complete leading density-kernel classification
++
++Consider real symmetric even orbital kernels, with vacuum-normal-ordered
++quartic part
++
++    W=1/2 sum_(n,m,r,s) V_rs(n-m) :n_nr n_ms:,
++    Vhat(0)=[[a0,b0],[b0,c0]], Vhat(Q)=[[aQ,bQ],[bQ,cQ]],
++    Q=2 kappa e3, s_0=1, s_1=-1.                           (14)
++
++There are six real Fourier values in this restricted family. The density
++components from (11) are rho_r,0=Rbar_r R_r+Lbar_r L_r and
++rho_r,+Q=s_r Rbar_r L_r, with conjugate at -Q. The name +Q is a convention;
++the even kernel makes its reversal immaterial. Phase averaging gives
++
++    U_V=1/2 sum_rs Vhat_rs(0) rho_r,0 rho_s,0
++                           +sum_rs Vhat_rs(Q) rho_r,+Q rho_s,-Q. (15)
++
++In the order used for (8), the coefficients are aQ-a0 and cQ-c0 on the two
++same-spin mixed monomials, -bQ on each mixed exchange monomial, and -b0 on
++each same-valley pair monomial and each opposite-spin diagonal mixed
++monomial. Comparing with (7)-(8) proves the equivalence
++
++    U_V is Lorentz invariant
++       iff b0=0, a0=aQ+bQ, c0=cQ+bQ;
++    then U_V=(bQ/2) U_cross.                               (16)
++
++For clarity, the diagonal mixed monomials in this comparison are
++Rbar0 Lbar1 r0 l1 and Rbar1 Lbar0 r1 l0. They occur in no invariant of (7),
++so they first force b0=0. The remaining mixed coefficients must match (8),
++giving the other two equations. This also proves necessity without relying
++on a numerical rank. The three-dimensional allowed Fourier subspace has
++only a one-dimensional nonzero quartic image; two directions have zero
++local quartic. An orbital-blind kernel sets a0=b0=c0 and aQ=bQ=cQ, and (16)
++then requires both values zero. This classifies this leading vertex only.
++
++## A finite density stencil with a nonzero invariant vertex
++
++Let rho3_n=n_n0-n_n1, and choose
++
++    u(+/-e3)=t/2, u(+/-2e3)=-t/2, u(0)=0,
++    uhat(q)=t(cos q3-cos 2q3), V_rs=s_r s_s u.               (17)
++
++All other values are zero. Then Vhat(0)=0, while
++Vhat(Q)=uhat(Q)[[1,-1],[-1,1]]. By (16),
++
++    U_V=-uhat(Q) U_cross/2,
++    uhat(Q)=2t sin(3 kappa) sin(kappa).                     (18)
++
++For t nonzero and (10) this coefficient is nonzero. The endpoint zeta=1/2
++would make this particular stencil zero; it is excluded. No uniform
++nonzero bound is claimed near either endpoint.
++
++The microscopic interaction is simply
++
++    W=(t/2) sum_n [rho3_n rho3_(n+e3)-rho3_n rho3_(n+2e3)]. (19)
++
++It is Hermitian, translation invariant, even under all coordinate
++reflections, and invariant under exchange of the two orbital densities.
++Centering each density by 1/2 cancels in rho3 itself. The cells in each
++product are distinct, so no onsite CAR contraction adds a bilinear term.
++
++In the native edge/CAR representation, place orbital r at virtual vertex
++(2n1+r,n2,n3). Its number is n_nr=(1-B_v)/2. Thus rho3_n=(B_v1-B_v0)/2,
++and each term (19) is a finite sum of products of native vertex operators.
++The interaction needs no new species or valley projector. For an explicit
++kinetic placement, choose candidate y bonds at tails with odd x+y. All x/z
++bonds and the other y bonds are protected. A candidate diagonal y hop has
++the protected detour +x,+y,-x. An orbital-changing y hop can order its x and
++y steps so the y tail has even x+y. Model x hops have virtual x displacement
++at most three, and z hops are diagonal in the orbital. Thus all kinetic
++terms in (10) have protected paths of length at most three. This edge/CAR
++representation is conditional, not uniquely selected by the framework. Each interaction
++term in (19) spans at most two z cells and the two orbital vertices.
++
++For physical Hamiltonian (H0+lambda W-nu N_staggered)/a, (11) gives
++
++    g_cross=-lambda a^2 uhat(Q)/(2v).                       (20)
++
++The coefficient t, the density-difference channel and the stencil are
++chosen data. Equation (18) exhibits an available invariant interaction;
++it does not select these data dynamically.
++
++## Weak-coupling theorem: exactly what is imported
++
++The kinetic symbol (10) is the explicit two-band example in
++[Giuliani, Mastropietro and Porta, arXiv:1907.00682v3](https://arxiv.org/pdf/1907.00682v3).
++Their equation (2.19) matches (19) with w_rs=s_r s_s u/2: the source has no
++outer 1/2 in its interaction. This potential is real, even, finite range,
++volume independent after periodicization, and obeys its required reflections.
++The two-node kinetic hypotheses are also retained. In particular v1=v2=1,
++v3=v and the extracted longitudinal quadratic coefficient is zeta; it is
++bounded below by 1/2. Taylor remainders are controlled by sine/cosine
++derivatives. Node separation and v are comparable because kappa/sin kappa
++is bounded on (0,pi/3). Away from the nodes a compactness bound excludes
++zeros, including the endpoint with the merged-node neighborhood removed.
++
++For fixed potential and zeta, Theorem 2.1 supplies an existential small
++lambda interval and analytic staggered counterterm nu(lambda), keeping the
++nodes fixed. The ground-state two-point function has the dressed Weyl form
++of (2.27), with analytic velocities and Z and a vanishing relative remainder.
++Volume precedes zero temperature. No threshold, counterterm or dressed
++velocity is computed here; no anomaly coefficient is used.
++
++This import controls a different object from (15). It neither identifies
++the bare boost metric with the dressed one nor preserves the bare quartic
++ratios under renormalization. It supplies no gravitational Ward identity.
++At fixed small lambda, the engineering coefficient (20) vanishes as a^2.
++Choosing lambda proportional to a^-2 to keep it finite leaves the theorem's
++small-coupling domain. Neither engineering observation proves that all
++interacting limits fail or that a particular strong-coupling limit exists.
++
++## Smooth matrix elements and a direct even-sector challenge
++
++Fix zeta away from node merger, and smooth compactly supported envelopes
++(or compatible periodic ones) of finitely many particles. Expand the finite
++normal-ordered quartic using (11). For the nonzero phases, discrete
++summation by parts divides by e^(i m kappa)-1 for m=2 or 4; these denominators
++are nonzero. Repeated differences of a fixed smooth envelope gain powers
++of a. The zero-phase terms give (15). Taylor-expanding the finitely shifted
++envelopes and taking the Riemann sum gives the four-leg matrix element with
++an O(a) remainder if lambda a^2 stays bounded. Constants depend on fixed
++envelopes, potential and zeta. This is neither a many-body operator-norm
++estimate nor a ground-state or repeated-interaction convergence theorem.
++
++For a supplied curved metric, weight each bond by the endpoint average of
++f=N/sqrt(det g_cone). Since q=(det g)^(-1/4) psi,
++N sqrt(det g) U(q)=N U(psi)/sqrt(det g) for a quartic. The same finite-stencil
++estimate therefore matches (2). The metric source is prescribed and its
++microscopic transformation law is not derived.
++
++An independent calculation path within the author primary uses an even
++two-particle Slater state. Set kappa=pi/4, v=1/sqrt(2), L=16,32,64 and
++a=2pi/L. Its two waves have internal spinors u and sigma3 vspin, momenta
++kappa+a and -kappa+2a along z, and amplitudes L^(-3/2). Distinct allowed
++momenta make them orthonormal even when internal spinors overlap. Direct
++antisymmetrized position amplitudes yield
++
++    <rho3_n rho3_(n+ell e3)>=2/L^6 [
++       (u^dagger sigma3 u)(vspin^dagger sigma3 vspin)
++                       -|u^dagger vspin|^2 cos((2 kappa-a)ell)],
++    <W>=-|u^dagger vspin|^2
++                  [cos(2 kappa-a)-cos(4 kappa-2a)]/L^3       (21)
++
++for t=1. The first term cancels between the two separations. The diagnostic
++scaling lambda=v/a^2 gives
++
++    <lambda W/a> -> -v |u^dagger vspin|^2/(2pi)^3,           (22)
++
++equal to the matrix element of -U_cross/2 with normalization (11). The
++primary computes amplitudes without inserting (21), for four spinor pairs,
++and compares the resulting finite values and a stated O(a) bound. A first
++three-pair set was insensitive to removing the relative sigma3 because its
++chosen overlaps had equal magnitudes. That ineffective mutation is preserved;
++a fourth coherent spinor pair now distinguishes the two operators. Coarse
++errors are not required to decrease monotonically. These are states over
++the empty Fock vacuum, not the interacting ground state of the imported
++theorem. The scaling in (22) is a vertex diagnostic outside that theorem.
++
++## Optional finite filters and their limitation
++
++A second native route helps delimit the onsite finding (13). Finite Laurent
++filters f_+(k)=(1+sin k3/v)/2 and f_-(k)=(1-sin k3/v)/2 select the values
++1,0 at the respective nodes. Define R_n=f_+ c_n and L_n=sigma3 f_- c_n.
++Normal-ordered polynomials r^dagger r, l^dagger l and U_cross then have the
++specified leading vertices. Wrong-node leakage on smooth envelopes is O(a).
++They are not separate exact canonical species: at v=.8,
++
++    {R_n0,L_n0^dagger}=(1/4-1/(8v^2)) I != 0.              (23)
++
++Their actual six-mode CAR operators are Hermitian and parity preserving.
++The exact identity c_i^dagger c_j^dagger c_k c_l
++=delta_jk c_i^dagger c_l-(c_i^dagger c_k)(c_j^dagger c_l)
++expresses every term through even bilinears. Endpoints in the three adjacent
++z cells and two orbital vertices have x/z paths of length at most three.
++This alternate construction is not needed for (19) or for its density-class
++theorem match; a general filtered quartic is not automatically in that class.
++
++## Negative-claim discipline and open obligations
++
++N1, alternatives: the direct density stencil, finite filters, derivative
++interactions, dynamical gauge mediation and different strong-coupling limits
++are distinct routes. Only the first two are constructed here. Failure of
++the specific onsite symbol does not close the other routes.
++N2, independence of restrictions: equation (13) is an algebraic variation;
++the small-coupling boundary of (20) is a different analytical domain issue.
++Neither proves the other or an axiom-wide obstruction.
++N3, hidden hypotheses: fixed cone basis, Grassmann order, charge symmetry,
++even density kernels, nonresonant nodes and bare versus dressed objects are
++explicit. Dropping them changes the classified family.
++N4, residual matching: nonzero renormalized interactions, quantum constraints
++and autonomous native geometry are open, not disguised terminal lemmas of
++this bounded theorem.
++N5, rhetoric: the primary emits five scope resolutions. They are disclosures,
++not scientific PASS checks or a negative-packet certificate.
++N6, partial closure: (19) directly supplies a nonzero invariant bare vertex
++while keeping the finite native density model and its weak-coupling theorem.
++N7, steelman: even the onsite model can have useful infrared physics; bare
++anisotropy alone does not determine its renormalized observables.
++N8, cross-cycle echo: no prior lattice or local-algebra obstruction is promoted
++to physical impossibility. The result uses a specified Weyl identification.
++
++The strongest remaining physical target is not a one-step extension of (16):
++construct a native interacting continuum with finite physical coupling and
++compatible geometry, or prove a precisely quantified obstruction to that
++construction. This note does not force a change to any framework axiom.
++
++## Sources, reproduction and review status
++
++The author reread the interaction definitions in sections 2.2-2.3 and the
++statement and discussion of Theorem 2.1 of the primary Weyl paper above;
++its full multiscale proof was not reconstructed. Its theorem is an import.
++For spinor signs, selected section 2 passages around equations 2.52-2.75 of
++[Dreiner, Haber and Martin, arXiv:0812.1594v6](https://arxiv.org/pdf/0812.1594v6)
++were read. The 313-page review was not read in full. Equations (7)-(9) are
++proved here by representations and components rather than imported signs.
++
++Current-main comparisons, read in full, were
++`INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md`
++and `QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`.
++The former concerns a different supplied finite staggered/gauge construction
++and leaves its Lorentz continuum open. The latter distinguishes local algebra
++from physical boost identification. Neither supplies an audit status here.
++
++Run `python3 scripts/native_weyl_local_interaction_covariance_2026_09_13.py`.
++The primary declares this note as input and a 60-second budget. The packet
++under `.claude/science/physics-loops/native-local-quartic-20260913/` preserves
++source-bound canonical, author review and mutation records. Exact finite
++CAR checks challenge the exterior implementation; the direct two-particle
++amplitudes challenge the native vertex coefficient. Method diversity within
++one author's work does not replace independent mathematical review. No
++retained status, main landing or audit verdict is granted by these records.
+diff --git a/scripts/native_weyl_local_interaction_covariance_2026_09_13.py b/scripts/native_weyl_local_interaction_covariance_2026_09_13.py
+new file mode 100644
+index 0000000000..b1e5a42e7c
+--- /dev/null
++++ b/scripts/native_weyl_local_interaction_covariance_2026_09_13.py
+@@ -0,0 +1,251 @@
++"""Exact exterior-algebra challenges of a supplied local fermion interaction."""
++from pathlib import Path
++from itertools import combinations,product
++import hashlib,json,time
++import sympy as s
++import numpy as np
++AUDIT_TIMEOUT_SEC=60
++AUDIT_INPUT_PATHS=("docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",)
++SIG=[s.Matrix([[0,1],[1,0]]),s.Matrix([[0,-s.I],[s.I,0]]),s.diag(1,-1)]
++rows=[]
++def check(name,ok,**detail):
++ assert bool(ok),(name,detail)
++ rows.append(dict(name=name,**detail))
++def tidy(p):return {m:s.expand(c) for m,c in p.items() if s.expand(c)!=0}
++def add(*ps):
++ r={}
++ for p in ps:
++  for m,c in p.items():r[m]=r.get(m,0)+c
++ return tidy(r)
++def scale(c,p):return tidy({m:c*a for m,a in p.items()})
++def mul(a,b):
++ r={}
++ for m,c in a.items():
++  for n,d in b.items():
++   if set(m)&set(n):continue
++   parity=sum(i>j for i in m for j in n)%2;k=tuple(sorted(m+n));r[k]=r.get(k,0)+(-1)**parity*c*d
++ return tidy(r)
++def prod(*ps):
++ r={():s.S(1)}
++ for p in ps:r=mul(r,p)
++ return r
++def eq(name,a,b):check(name,not add(a,scale(-1,b)))
++def gen(i):return {(i,):s.S(1)}
++def left(p,i):
++ r={}
++ for m,c in p.items():
++  if i in m:
++   k=m.index(i);r[m[:k]+m[k+1:]]=r.get(m[:k]+m[k+1:],0)+(-1)**k*c
++ return tidy(r)
++def right(p,i):
++ r={}
++ for m,c in p.items():
++  if i in m:
++   k=m.index(i);r[m[:k]+m[k+1:]]=r.get(m[:k]+m[k+1:],0)+(-1)**(len(m)-1-k)*c
++ return tidy(r)
++def pb(a,b):return scale(-s.I,add(*(add(mul(right(a,i+4),left(b,i)),mul(right(a,i),left(b,i+4))) for i in range(4))))
++def dag(p):
++ r={}
++ for m,c in p.items():r=add(r,scale(s.conjugate(c),prod(*(gen((i+4)%8) for i in reversed(m)))))
++ return tidy(r)
++q=[gen(i+4) for i in range(4)];bar=[gen(i) for i in range(4)]
++def bil(A):return add(*(scale(A[i,j],mul(bar[i],q[j])) for i,j in product(range(4),repeat=2)))
++def action(p,G):
++ # Even linear transformation of all eight odd generators.
++ r={}
++ for m,c in p.items():
++  for k,i in enumerate(m):
++   for j in range(8):
++    if G[i,j]!=0:r=add(r,scale(c*G[i,j],prod(*(gen(x) for x in m[:k]),gen(j),*(gen(x) for x in m[k+1:]))))
++ return r
++def transform_matrix(A,barA):return s.diag(barA.T,A)
++def kernel(generators,basis):
++ mats=[]
++ for G in generators:
++  cols=[action({m:s.S(1)},G) for m in basis]
++  mats.append(s.Matrix([[c.get(m,0) for c in cols] for m in basis]))
++ mat=s.Matrix.vstack(*mats)
++ return mat,mat.nullspace()
++def vector(p,basis):return s.Matrix([p.get(m,0) for m in basis])
++def car(n):
++ ops=[]
++ for j in range(n):
++  a=np.zeros((2**n,2**n),complex)
++  for k in range(2**n):
++   if k>>j&1:a[k^(1<<j),k]=(-1)**((k&((1<<j)-1)).bit_count())
++  ops.append(a)
++ return ops
++def operator(p,ann):
++ ops=[a.conj().T for a in ann]+ann;r=np.zeros_like(ann[0])
++ for m,c in p.items():
++  v=np.eye(len(r),dtype=complex)
++  for i in m:v=v@ops[i]
++  r+=complex(c)*v
++ return r
++
++def run():
++ start=time.monotonic()
++ # Odd Euler derivatives of the kinetic density, with independent jet
++ # generators, determine both lapse-gradient signs before using a boost rule.
++ N,Nprime=s.symbols('N Nprime',real=True)
++ def total_x(p):
++  result={}
++  for m,c in p.items():
++   result=add(result,scale(s.diff(c,N)*Nprime,{m:s.S(1)}))
++   for pos,i in enumerate(m):
++    assert i<8,'no second jet is needed by this first-order density'
++    result=add(result,scale(c,prod(*(gen(j) for j in m[:pos]),gen(i+8),*(gen(j) for j in m[pos+1:]))))
++  return result
++ for axis,sig in enumerate(SIG):
++  alpha=s.diag(sig,-sig)
++  kinetic=scale(-s.I*N/2,add(*(scale(alpha[i,j],add(mul(gen(i),gen(j+12)),scale(-1,mul(gen(i+8),gen(j+4))))) for i,j in product(range(4),repeat=2))))
++  for component in range(4):
++   def flow(index):
++    euler=add(left(kinetic,index),scale(-1,total_x(left(kinetic,index+8))))
++    return tidy({m:s.expand(-s.I*c).subs({N:0,Nprime:1}) for m,c in euler.items() if all(i<8 for i in m)})
++   eq('Euler_lapse_q_'+str((axis,component)),flow(component),scale(-s.Rational(1,2),add(*(scale(alpha[component,j],q[j]) for j in range(4)))))
++   eq('Euler_lapse_bar_'+str((axis,component)),flow(component+4),scale(-s.Rational(1,2),add(*(scale(alpha[j,component],bar[j]) for j in range(4)))))
++ # The kinetic symbol itself is the specified two-node Wilson example.
++ k1,k2,k3,zeta=s.symbols('k1 k2 k3 zeta',real=True)
++ h0=s.sin(k1)*SIG[0]+s.sin(k2)*SIG[1]+(2+zeta-s.cos(k1)-s.cos(k2)-s.cos(k3))*SIG[2]
++ for name,other in [('inversion',SIG[2]*h0.subs({k1:-k1,k2:-k2,k3:-k3},simultaneous=True)*SIG[2]),('z_reflection',h0.subs(k3,-k3)),('orbital_x_reflection',-SIG[0]*h0.subs(k1,-k1)*SIG[0])]:
++  check('Wilson_'+name,all(s.simplify(x)==0 for x in h0-other))
++ for chir in [-1,1]:
++  node={k1:0,k2:0,k3:chir*s.acos(zeta)}
++  check('Wilson_node_'+str(chir),all(s.simplify(x)==0 for x in h0.subs(node)))
++  jets=[h0.diff(k).subs(node) for k in [k1,k2,k3]]
++  check('Wilson_node_jet_'+str(chir),all(s.simplify(x)==0 for j,target in zip(jets,[SIG[0],SIG[1],chir*s.sqrt(1-zeta*zeta)*SIG[2]]) for x in j-target))
++  check('Wilson_quadratic_'+str(chir),all(s.simplify(x)==0 for x in h0.diff(k3,2).subs(node)-zeta*SIG[2]))
++ # Independent finite CAR operators challenge the graded bilinear bracket.
++ rng=np.random.default_rng(2026091309);ann=car(4)
++ for trial in range(5):
++  A=s.Matrix(rng.integers(-2,3,size=(4,4)));B=s.Matrix(rng.integers(-2,3,size=(4,4)))
++  f,h=bil(A),bil(B);br=pb(f,h);eq('graded_bilinear_'+str(trial),br,scale(-s.I,bil(A*B-B*A)))
++  ma,mh=operator(f,ann),operator(h,ann)
++  check('CAR_bilinear_'+str(trial),np.max(np.abs(operator(br,ann)+1j*(ma@mh-mh@ma)))<1e-12)
++ nR=add(*(mul(bar[i],q[i]) for i in range(2)));nL=add(*(mul(bar[i],q[i]) for i in range(2,4)))
++ jR=[add(*(scale(sig[i,j],mul(bar[i],q[j])) for i,j in product(range(2),repeat=2))) for sig in SIG]
++ jL=[add(*(scale(sig[i,j],mul(bar[i+2],q[j+2])) for i,j in product(range(2),repeat=2))) for sig in SIG]
++ r=mul(q[0],q[1]);l=mul(q[2],q[3]);cross=add(mul(nR,nL),*(mul(a,b) for a,b in zip(jR,jL)))
++ for i in range(3):eq('single_Weyl_density_current_'+str(i),mul(nR,jR[i]),{})
++ eq('single_Weyl_density_pair',mul(nR,nR),scale(2,mul(dag(r),r)))
++ eq('single_Weyl_current_norm',add(*(mul(j,j) for j in jR)),scale(-3,mul(nR,nR)))
++ S=add(mul(bar[0],q[2]),mul(bar[1],q[3]))
++ eq('cross_scalar_Fierz',cross,scale(-2,mul(S,dag(S))))
++ boosts=[];rots=[]
++ for sig in SIG:
++  boost=s.diag(sig/2,-sig/2);rot=s.diag(-s.I*sig/2,-s.I*sig/2)
++  boosts.append(transform_matrix(boost,boost));rots.append(transform_matrix(rot,-rot))
++ invariants=[mul(dag(r),r),mul(dag(l),l),mul(dag(r),l),mul(dag(l),r),cross]
++ for idx,p in enumerate(invariants):
++  for i,G in enumerate(boosts+rots):eq('invariant_generator_'+str((idx,i)),action(p,G),{})
++ basis=[tuple(b+a) for b in combinations(range(4),2) for a in combinations(range(4,8),2)]
++ mat,null=kernel(boosts+rots,basis);check('full_invariant_dimension',len(null)==5,dimension=len(null),domain_dimension=len(basis),constraint_rank=mat.rank())
++ expected=s.Matrix.hstack(*(vector(p,basis) for p in invariants));check('explicit_invariant_span',expected.rank()==5 and mat*expected==s.zeros(mat.rows,5))
++ rmat,rnull=kernel(rots,basis);check('rotation_only_dimension',len(rnull)==10,dimension=len(rnull))
++ herm=[invariants[0],invariants[1],add(invariants[2],invariants[3]),scale(s.I,add(invariants[2],scale(-1,invariants[3]))),cross]
++ for i,p in enumerate(herm):eq('Hermitian_invariant_'+str(i),p,dag(p))
++ valley=s.diag(1,1,-1,-1);vg=transform_matrix(valley,-valley)
++ vm,vnull=kernel(boosts+rots+[vg],basis);check('valley_preserving_dimension',len(vnull)==3,dimension=len(vnull))
++ # Exact nonresonant phase expansion of the native on-site orbital interaction.
++ z=s.symbols('z',nonzero=True)
++ cc=[add(scale(z,q[0]),scale(1/z,q[2])),add(scale(z,q[1]),scale(-1/z,q[3]))]
++ cb=[add(scale(1/z,bar[0]),scale(z,bar[2])),add(scale(1/z,bar[1]),scale(-z,bar[3]))]
++ native=prod(cb[0],cb[1],cc[1],cc[0]);zero={m:s.expand(c).coeff(z,0) for m,c in native.items()};zero=tidy(zero)
++ mixed=add(mul(q[1],q[2]),mul(q[0],q[3]));predicted=add(invariants[0],invariants[1],mul(dag(mixed),mixed))
++ eq('native_phase_zero',zero,predicted)
++ variations={}
++ for name,gens in [('rotation',rots),('boost',boosts)]:
++  for i,G in enumerate(gens):
++   out=action(zero,G);variations[name+str(i)]={str(k):str(v) for k,v in out.items()}
++   check('native_'+name+'_variation_'+str(i),bool(out)==(i<2 if name=='rotation' else i==2),nonzero_monomials=len(out))
++ # General orbital-density kernels at zero and intervalley transfer.
++ a0,b0,c0,aq,bq,cq=s.symbols('a0 b0 c0 aq bq cq',real=True)
++ forward=s.Matrix([[a0,b0],[b0,c0]]);exchange=s.Matrix([[aq,bq],[bq,cq]])
++ dens=[add(mul(bar[i],q[i]),mul(bar[i+2],q[i+2])) for i in range(2)]
++ inter=[scale(1 if i==0 else -1,mul(bar[i],q[i+2])) for i in range(2)]
++ density=add(*(scale(forward[i,j]/2,mul(dens[i],dens[j])) for i,j in product(range(2),repeat=2)),*(scale(exchange[i,j],mul(inter[i],dag(inter[j]))) for i,j in product(range(2),repeat=2)))
++ equations=[]
++ for G in boosts+rots:equations.extend(action(density,G).values())
++ sol=s.linsolve(equations,[a0,b0,c0,aq,bq,cq])
++ check('density_kernel_classification',sol==s.FiniteSet((aq+bq,0,bq+cq,aq,bq,cq)))
++ imposed={a0:aq+bq,b0:0,c0:bq+cq}
++ eq('density_kernel_invariant_image',tidy({m:c.subs(imposed) for m,c in density.items()}),scale(bq/2,cross))
++ # Mean-zero interaction of the orbital density difference has only a scalar
++ # intervalley channel at leading order.
++ zero_mean={a0:0,b0:0,c0:0,aq:1,bq:-1,cq:1}
++ tuned=tidy({m:c.subs(zero_mean) for m,c in density.items()})
++ eq('mean_zero_orbital_density_scalar',tuned,scale(-s.Rational(1,2),cross))
++ for i,G in enumerate(boosts+rots):eq('mean_zero_density_generator_'+str(i),action(tuned,G),{})
++ # Orbital-blind density kernels form a separate restricted family.
++ f0,fq=s.symbols('f0 fq',real=True);blind={a0:f0,b0:f0,c0:f0,aq:fq,bq:fq,cq:fq}
++ blindpoly=tidy({m:c.subs(blind) for m,c in density.items()});be=[]
++ for G in boosts+rots:be.extend(action(blindpoly,G).values())
++ bsol=s.linsolve(be,[f0,fq])
++ check('orbital_blind_invariant_coefficient_family',bsol==s.FiniteSet((0,0)))
++ # Exact CAR evaluation of the same phase average, by direct operator products.
++ avg=np.zeros((16,16),complex)
++ for phase in np.exp(2j*np.pi*np.arange(9)/9):
++  c0=phase*ann[0]+ann[2]/phase;c1=phase*ann[1]-ann[3]/phase
++  avg+=c0.conj().T@c1.conj().T@c1@c0/9
++ check('native_phase_CAR',np.max(np.abs(avg-operator(zero,ann)))<2e-12)
++ # Filter values and noncanonical finite-cutoff CAR overlap are explicit.
++ k,zeta=s.symbols('k zeta',real=True);vel=s.sqrt(1-zeta*zeta);fp=(1+s.sin(k)/vel)/2;fm=(1-s.sin(k)/vel)/2
++ for w in [-1,1]:
++  check('filter_node_'+str(w),s.simplify(fp.subs(k,w*s.acos(zeta))-(1+w)/2)==0 and s.simplify(fm.subs(k,w*s.acos(zeta))-(1-w)/2)==0)
++ # Six microscopic modes at z=-1,0,+1 with two orbitals. Normal-ordered
++ # exterior polynomials are evaluated in their actual finite CAR algebra.
++ sites=car(6);v=.8;Fplus=[1j/(4*v),.5,-1j/(4*v)];Fminus=[-1j/(4*v),.5,1j/(4*v)]
++ filtered=[sum((Fplus[j]*sites[2*j+a] for j in range(3)),np.zeros((64,64),complex)) for a in range(2)]
++ filtered += [sum((Fminus[j]*sites[2*j+a]*(1 if a==0 else -1) for j in range(3)),np.zeros((64,64),complex)) for a in range(2)]
++ ov=filtered[0]@filtered[2].conj().T+filtered[2].conj().T@filtered[0]
++ check('filtered_CAR_overlap',np.max(np.abs(ov-(.25-1/(8*v*v))*np.eye(64)))<2e-12 and abs(.25-1/(8*v*v))>.01)
++ parity=np.diag([(-1)**k.bit_count() for k in range(64)])
++ for idx,p in enumerate([invariants[0],invariants[1],cross]):
++  op=operator(p,filtered)
++  check('filtered_quartic_Hermitian_'+str(idx),np.max(np.abs(op-op.conj().T))<2e-12)
++  check('filtered_quartic_parity_'+str(idx),np.max(np.abs(op@parity-parity@op))<2e-12)
++ # General normal-order identity used to encode a quartic by even bilinears.
++ for i,j,k,l0 in [(0,1,2,3),(0,2,2,4),(1,3,5,1),(0,1,1,0)]:
++  direct=sites[i].conj().T@sites[j].conj().T@sites[k]@sites[l0]
++  coded=(int(j==k)*sites[i].conj().T@sites[l0]-(sites[i].conj().T@sites[k])@(sites[j].conj().T@sites[l0]))
++  check('quartic_even_bilinear_dictionary_'+str((i,j,k,l0)),np.max(np.abs(direct-coded))<2e-12)
++ # A direct two-particle position-space matrix element of the simple
++ # mean-zero density stencil checks its sign, coefficient and scaling.
++ kap=s.symbols('kappa',real=True);qtransfer=s.symbols('Q',real=True)
++ check('mean_zero_stencil_transfer',s.trigsimp(s.cos(2*kap)-s.cos(4*kap)-2*s.sin(3*kap)*s.sin(kap))==0)
++ cellmodes=car(6);dens3=[cellmodes[2*j].conj().T@cellmodes[2*j]-cellmodes[2*j+1].conj().T@cellmodes[2*j+1] for j in range(3)]
++ W3=(dens3[0]@dens3[1]-dens3[0]@dens3[2])/2
++ check('density_stencil_Hermitian_parity',np.max(np.abs(W3-W3.conj().T))<1e-12 and np.max(np.abs(W3@parity-parity@W3))<1e-12)
++ pairs=[(np.array([1.,0]),np.array([1.,0])),(np.array([1.,0]),np.array([0.,1.])),(np.array([1.,1j])/np.sqrt(2),np.array([np.cos(.37),np.sin(.37)])),(np.array([1.,1.])/np.sqrt(2),np.array([np.cos(.37),np.sin(.37)]))]
++ errors={i:[] for i in range(len(pairs))};vel0=1/np.sqrt(2);kap0=np.pi/4
++ for count in [16,32,64]:
++  spacing=2*np.pi/count;volume=count**3;n=np.arange(count)
++  for idx,(ur,vl) in enumerate(pairs):
++   u=np.exp(1j*(kap0+spacing)*n)[:,None]*ur/np.sqrt(volume)
++   vv=np.exp(1j*(-kap0+2*spacing)*n)[:,None]*(np.array([1,-1])*vl)/np.sqrt(volume)
++   check('two_particle_normalization_'+str((count,idx)),abs(count**2*np.sum(abs(u)**2)-1)<2e-12 and abs(count**2*np.sum(abs(vv)**2)-1)<2e-12 and abs(count**2*np.sum(u.conj()*vv))<2e-12)
++   W=0.
++   for disp,coef in [(1,.5),(2,-.5)]:
++    ush=np.roll(u,-disp,axis=0);vsh=np.roll(vv,-disp,axis=0)
++    amplitude=u[:,:,None]*vsh[:,None,:]-vv[:,:,None]*ush[:,None,:]
++    W+=coef*count**2*np.sum(abs(amplitude)**2*np.array([[1,-1],[-1,1]])[None,:,:])
++   scaled=vel0*W/spacing**3
++   overlap=abs(np.vdot(ur,vl))**2;transfer=2*kap0-spacing
++   exact=-vel0*overlap*(np.cos(transfer)-np.cos(2*transfer))/(2*np.pi)**3
++   limit=-vel0*overlap/(2*np.pi)**3
++   check('two_particle_density_vertex_'+str((count,idx)),abs(scaled-exact)<2e-12,actual=float(scaled),exact=float(exact),continuum_limit=float(limit))
++   err=abs(scaled-limit);errors[idx].append(float(err))
++   check('two_particle_continuum_bound_'+str((count,idx)),err<.01*spacing,error=float(err),spacing=spacing)
++ # These finite matrix elements do not control repeated interactions or the
++ # interacting ground state at lambda proportional to a^-2.
++ result={'status':'ok','check_count':len(rows),'checks':rows,'native_variations':variations,'invariants':[{str(m):str(c) for m,c in p.items()} for p in invariants],'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'elapsed_seconds':time.monotonic()-start,'scope':'Exact component and finite-CAR challenges. No quantum interacting constraint or continuum existence theorem.'}
++ assert len({r['name'] for r in rows})==len(rows),'duplicate check names'
++ print(json.dumps(result,indent=2))
++ print('per_element: exact Grassmann signs and invariant coefficients checked; no axiom selection follows.')
++ print('per_site: actual CAR products, normal ordering and even parity checked; filtered fields are not exact species.')
++ print('per_mode: native node phases and leading density vertex checked; dressed four-point identities remain open.')
++ print('per_block: even two-particle amplitudes checked on three finite tori; these are not interacting ground states.')
++ print('lattice_wide: smooth few-particle vertex proof supplied; no finite-coupling quantum continuum is established.')
++ print('TOTAL: PASS='+str(len(rows))+' FAIL=0')
++if __name__=='__main__':run()

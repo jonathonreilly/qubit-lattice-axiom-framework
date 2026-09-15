@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/1907.00682v3",
+    "sha256": "f134741efd64544f1e5ba8a35abd8be6f993e3770b4dd64d799ec9d02b2ded55",
+    "read_scope": "Version page; pp4\u20139 \u00a7\u00a72.1\u20132.3 including 2.11\u20132.19 and 2.27; pp13\u201316 Theorem2.1 and proof roadmap. Reuses earlier exact-version review. Full RG proof not reconstructed.",
+    "role": "External theorem import for weak-coupling dressed two-point function; exact Wilson symbol, real even finite-range w=s_r s_s u/2, symmetries, uniform band bounds and chosen staggered counterterm matched. No four-point or gravity conclusion."
+  },
+  {
+    "url": "https://arxiv.org/pdf/0812.1594v6",
+    "sha256": "53713b5328d1a4220576c2e3b7a916445c9f9855b8a461ca0e5c962881ba2f8b",
+    "read_scope": "Version page and printed pp16\u201319, signs/conjugation, 2.44\u20132.75 and adjacent Fierz conventions.",
+    "role": "Sign/convention comparator only; independent pair-representation/component proof supplies present result."
+  }
+]

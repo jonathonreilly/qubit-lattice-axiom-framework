@@ -1,0 +1,11 @@
+{
+  "source_head": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+  "original_path": ".claude/science/physics-loops/native-local-quartic-20260913/canonical_cache.txt.gz",
+  "compressed_sha256": "46e4334dae7be2978a2b6b3a6e22b0f11c5f171c65a4796d5d158bfedec282fc",
+  "decoded_sha256": "b011bf731c4723de956fec1539e3ebdb215db6bcd6b60b7593619a3fae5c5284",
+  "restored_path": "logs/runner-cache/native_weyl_local_interaction_covariance_2026_09_13.txt",
+  "actual_cache_status": "fresh",
+  "new_execution": false,
+  "metadata_rewritten": false,
+  "requires_independent_scientific_review": true
+}

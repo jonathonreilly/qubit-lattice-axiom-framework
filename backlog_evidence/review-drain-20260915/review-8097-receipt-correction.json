@@ -1,0 +1,28 @@
+{
+  "status": "SCHEMA_MAPPING_CORRECTION_SOURCE_VERDICT_UNCHANGED",
+  "source_tree": "4895436b7b51f1cb09ef60bc035f26bad92c35f3",
+  "note_path": "docs/NATIVE_WEYL_LOCAL_INTERACTION_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+  "note_sha256": "15f33fc2ece19e60e3a577d01d2aea26091c0c88f6ac5c522ae71bc94f548ebf",
+  "old_declared_claim_id": null,
+  "correct_declared_claim_id": "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13",
+  "canonical_claim_id": "native_weyl_local_interaction_covariance_bounded_theorem_note_2026-09-13",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/8097-unit-v1-final.json",
+      "sha256": "60cdc27105571bf9bde1f5eae2968fdd9c40358487d4cc0afc14ad4b78afa12d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8097-final.json",
+      "sha256": "9a10cb9dde0ab2c7dbb9a3d1b12c2c5da31b7340656b3253cd69c24c99b6d52d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8097-final-preflight.json",
+      "sha256": "e8089a6395d78fcafb3bbc4f7372d4a460b0d7d09bc04c480ce7502455838a50"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8097-final-preflight-execution.json",
+      "sha256": "d377f628a9f673903812f4a9e550e07dda73f78e50e07e4c9105e36f586a45ad"
+    }
+  ],
+  "reason": "Assembler omitted actual frontmatter field; first mechanical check correctly rejected null mapping. All source, inputs, mathematical review and cache evidence unchanged."
+}

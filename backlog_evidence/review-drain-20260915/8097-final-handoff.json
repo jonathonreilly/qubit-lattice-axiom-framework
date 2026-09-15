@@ -1,0 +1,16 @@
+{
+  "source_verdict": "PASS WITH BOUNDED CLAIMS",
+  "tree": "4895436b7b51f1cb09ef60bc035f26bad92c35f3",
+  "mechanical_status": "ok",
+  "cache_checked": true,
+  "references": {
+    "review-8097-final.json": "9a10cb9dde0ab2c7dbb9a3d1b12c2c5da31b7340656b3253cd69c24c99b6d52d",
+    "8097-unit-v1-final-corrected.json": "e6200a9b090fc78f0e2c969a0a6498195bbad47aa55b5ba7cf4119a9d489348b",
+    "review-8097-receipt-correction.json": "6518dbaceda25c693ff9f38981e4321623d0f5b5867a5fa1ee313b044d8650ee",
+    "8097-final-corrected-preflight.json": "c945f0e13caade5a49d0a6b805cd834f8e0f1cb801bd0966a495533ef6aaffb4",
+    "8097-final-corrected-preflight-execution.json": "b55dc05807bd63b8607f4a2972ef0137c42267cfd9c67d3bfa3c9ae6ae0593e3"
+  },
+  "attempts": "First preflight rejected omitted declared-ID field; preserved. Mapping corrected in new immutable record, second preflight passed. No primary rerun.",
+  "current_main": "0cbc63122780a54e56f15f9b7e2a9220b9316140",
+  "current_main_input_check": "All23 non-unit runtime/parent/context/tooling bindings exact; formation-order and L6 additions are not used by this model."
+}

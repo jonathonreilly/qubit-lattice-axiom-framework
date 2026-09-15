@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+  "fetched_ref": "refs/review-loop/fetched/8097-0617c6de98f2499da601e1902c946f84",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-local-quartic-20260913",
+    "headRefOid": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+    "isDraft": false,
+    "number": 8097,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 13189,
- "node_count": 5629,
+ "edge_count": 13202,
+ "node_count": 5636,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12926,6 +12926,10 @@
    "deps_hash": "05fc281e1618",
    "out_degree": 2
   },
+  "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "543a03b87175",
+   "out_degree": 7
+  },
   "native_gauge_closure_note": {
    "deps_hash": "5420992392c0",
    "out_degree": 2
@@ -21489,6 +21493,30 @@
   "work_history.repo.review_feedback.pr8065-charged-history-evidence.readme": {
    "deps_hash": "d9d85988aa84",
    "out_degree": 39
+  },
+  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-no_go_discipline_checklist": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.readme": {
+   "deps_hash": "702ca2032b3f",
+   "out_degree": 6
   },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",

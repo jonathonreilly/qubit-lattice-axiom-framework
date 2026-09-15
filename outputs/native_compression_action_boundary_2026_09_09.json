@@ -1,0 +1,15 @@
+{
+  "checks": 539,
+  "fresh_first_pairs": [
+    7,
+    8,
+    8,
+    8,
+    9
+  ],
+  "native_calls": 0,
+  "original_snapshot_required_remote_retrieval": true,
+  "recovery_archive_bundled": true,
+  "saved_physics_replays": 0,
+  "status": "PASS_COMPACT_BOUNDARY_EVIDENCE"
+}

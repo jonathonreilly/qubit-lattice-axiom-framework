@@ -1,0 +1,25 @@
+{
+  "claim_status": "conditional-support",
+  "input_hashes": {
+    "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md": "d902b0588f1500a07e489934971f2905fe9c4bb31cb524192076fdc1c503ca07",
+    "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md": "b520a56074b9e1b80f050f225c8cc241f34c228dc05441b8f7ae4a536cf03b30",
+    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d",
+    "docs/NATIVE_GAPFREE_GENERATOR_PROPAGATION_NOTE_2026-09-09.md": "adb7cc53c248b3d5523474fcb39bf52bee71284f2d409f1d9b4f93ac43acd454",
+    "docs/work_history/repo/review_feedback/pr8072-evidence/pr8072-LOCAL_GREEN_PROOF.md": "8caa1093f130c31b6307749fda7791a2f64999a78056834a7679ef0072fdbb7b",
+    "docs/work_history/repo/review_feedback/pr8072-evidence/pr8072-WARD_INSERTION_PROOF.md": "222f2bdc9bb1a54900165288e32f49fdaa20935c17a9316bab9c1cf8fcf19584",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/GENERATOR_PROOF.md": "0e8ef4b396d8c2b99e106fbd639b77c2659016ae76b62925cacf27adb33e4f93",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/GENERATOR_REVIEW.md": "3aa6620432ec060a27a2b6751bd78ff88568d27b7b5b60389adbe09d79107c20",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/POISSON_CONTROLS.json": "7ec04b125be410ff3716e249495525e56518239458a7b90c1e720b2bcfeac6c4",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/POISSON_PATH_HISTORY.md": "f575c1fff6c3676fdbd908b36231314469eab7e2905d768668ee060878e1b3a2",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/POISSON_PROOF.md": "bd909a7c519b2016bd72425d2082a952e63c441bb2715f33410f712c0da608e7",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/POISSON_REVIEW.md": "4549b1273bd4124200db555936ecf6ad098abe9f098e5a44a909c40f944cbc32",
+    "outputs/native_gapfree_generator_propagation_2026_09_09_inputs/provenance/WARD_INSERTION_REVIEW.md": "6ade2b3727518921dfff1c9d6df3990deb16fab0cbf3f4d4339c82429def1974",
+    "scripts/native_gapfree_generator_propagation_2026_09_09.py": "3474a517fc798d25d0b52cd458da3d6c98dc519f885e1f5c2dd5855937d1d060",
+    "scripts/native_gapfree_generator_propagation_2026_09_09_controls.py": "ecd9da8924fe6f1ac4018f5d5214c8c4f64ee6fe0034b917bf0b9290315d1e5a"
+  },
+  "physical_calls": 0,
+  "predicates": 44,
+  "scope": "small rational identities and sufficient-condition arithmetic; not a native leakage or semigroup evaluation",
+  "status": "PASS_SUPPORTING_EXACT",
+  "wrong_sign_discriminations": 15
+}

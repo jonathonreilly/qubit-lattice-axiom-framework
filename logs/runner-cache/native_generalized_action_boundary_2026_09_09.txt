@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_generalized_action_boundary_2026_09_09.py
+runner_sha256: 52d893c37641f2a88bfefead4dfba64cce418cec339dd5758e9898f2bb97d263
+input_fingerprint_sha256: a1b6ab33ff5786390743e7c5279b092cb83a2d3b1b24908854b9396460096931
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+{"generalized_saved_post": "ACCEPTED_INDEPENDENT_SAVED_STAGE_RECONSTRUCTION", "native_matrix_replay": false, "predicates": 11381, "status": "PASS_COMPACT_EXACT_SUPPORT"}
+TOTAL: PASS=11381 FAIL=0
+per_element: saved rational lower-bound fields and a tiny Schur example checked; original matrix arithmetic not rerun
+per_site: no sitewise physical calculation performed in this compact evidence verifier
+per_mode: fixed paired trial-space rank and target fields checked; no full-band computation performed
+per_block: five selected spaces and ten impurity outcomes checked against immutable historical source identities
+lattice_wide: supplied fixed-family boundary only; arbitrary trial spaces and physical impossibility are not asserted
+
+----- stderr -----
+

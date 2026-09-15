@@ -1,0 +1,99 @@
+{
+  "at_utc": "2026-09-15T08:04:55.788948+00:00",
+  "scope": "eight finite families; conditional proof in text; upstream phase not independently validated",
+  "families": {
+    "check_positive_probe": {
+      "symbolic_identity": true,
+      "intervals": [
+        {
+          "alpha": "1/4",
+          "gamma": "4",
+          "m": "9/85",
+          "K": "935/27"
+        },
+        {
+          "alpha": "9/10",
+          "gamma": "11/10",
+          "m": "1/1071",
+          "K": "3927"
+        },
+        {
+          "alpha": "99/100",
+          "gamma": "101/100",
+          "m": "1/100701",
+          "K": "369237"
+        }
+      ]
+    },
+    "check_physical_score_contact": {
+      "model": "one-plaquette clock control, not a 4D phase test",
+      "rows": [
+        {
+          "N": 5,
+          "mean_error": "5.189327773057730015494126900315609584781757828073299924071899765e-63",
+          "vbar": "0.000010918011562986880521912887326604807523928587998662423867645983086",
+          "covariance_error": "2.6112811300839446555551416241295382174107656042454848657269394975e-65"
+        },
+        {
+          "N": 9,
+          "mean_error": "1.4708634438181928259836052275551471631888276076277294752767379206e-62",
+          "vbar": "0.000062726087885237810098831724761482349124283789111990239618892933741",
+          "covariance_error": "8.308621777539823904039086985866712509943345104417451845494807492e-66"
+        }
+      ]
+    },
+    "check_finite_markov_transfer": {
+      "states": 5,
+      "enumerated_separations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "moment_error": 4.85722573273506e-16,
+      "frequency_error": 2.6645352591003757e-15
+    },
+    "check_midpoint_magnetic_symbol": {
+      "momenta": 3,
+      "max_error": 4.441022090806658e-16,
+      "magnetic_ranks": [
+        2,
+        2,
+        2
+      ]
+    },
+    "check_matrix_band_projection": {
+      "frequency_error": 2.7755575615628914e-16,
+      "ordinary_band_eigenvalues": [
+        0.25877058003871867,
+        0.25877058003871867
+      ],
+      "ordinary_lower": 0.24622068179707335,
+      "ordinary_upper": 0.27049678597774035,
+      "physical_rank": 2
+    },
+    "check_contacts_and_invariant_atoms": {
+      "static_band_fraction": 0.9999999,
+      "ordinary_band_fraction": 0.0004997500749874938,
+      "contact_at_zero_transfer_kept": true,
+      "invariant_atom_nondecay": 0.5
+    },
+    "check_continuous_spectrum_and_nongaussianity": {
+      "continuous_uniform_relative_width": "0.001",
+      "global_covariance_error_bound": "0.000000049382765432148148197530913580296296345679061728444444493827209876",
+      "quadrature_error": "1.0918163289939096158964320426158584884422341320781699307241596514e-61",
+      "largest_sampled_error": "0.000000049382729218111176433609214503561294692533069505109229896510082029",
+      "no_spectral_atoms_by_definition": true,
+      "scale_mixture_variance": "1",
+      "fourth_moment": "15/4"
+    },
+    "check_parameter_certificate": {
+      "delta_rational_upper": "68478125/4503599627370496",
+      "epsilon_certificate": "1/10000000",
+      "susceptibility_fraction_lower": "3332024/3333333",
+      "energy_inversion_error": 1.1102230246251565e-16
+    }
+  }
+}

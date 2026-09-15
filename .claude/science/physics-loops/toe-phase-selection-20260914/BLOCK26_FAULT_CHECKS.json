@@ -1,0 +1,184 @@
+{
+  "at_utc": "2026-09-15T08:05:53.319947+00:00",
+  "source": "block26_spectral_check.py",
+  "source_sha256": "a7b99b6e4f16a956070eac9f4276da082a607f41e0a5b87fd0560bae2a7892c3",
+  "faults": [
+    {
+      "name": "positive_probe_coefficient",
+      "family": "check_positive_probe",
+      "original": "F(1,4)-F(4,3)*x/(x+1)+F(25,12)*x/(x+4)",
+      "replacement": "F(1,4)-F(1,3)*x/(x+1)+F(25,12)*x/(x+4)",
+      "source_sha256": "46d0d22b0b7d1656e3f88a30b26dbda310b853951e7cb26ef5d1785d68da6563",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/positive_probe_coefficient.py'); r['check_positive_probe']()\n                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/positive_probe_coefficient.py\", line 79, in check_positive_probe\n    assert sp.factor(phi(x)-direct)==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "physical_score_sign",
+      "family": "check_physical_score_contact",
+      "original": "score=-derivative/(mp.sqrt(beta)*weight)",
+      "replacement": "score=derivative/(mp.sqrt(beta)*weight)",
+      "source_sha256": "a4741cc4cfe09d0cd1e6b90e4f52b317d60d9ebd2cad3b63c7f3969f1d1813fd",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/physical_score_sign.py'); r['check_physical_score_contact']()\n                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/physical_score_sign.py\", line 62, in check_physical_score_contact\n    assert error<mp.mpf('1e-55')\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "physical_score_normalization",
+      "family": "check_physical_score_contact",
+      "original": "score=-derivative/(mp.sqrt(beta)*weight)",
+      "replacement": "score=-derivative/(beta*weight)",
+      "source_sha256": "b5ce5b3a6ad0c6c09a7fd311ccc8078f3241b1b3d5f0c0130829d50500414f71",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/physical_score_normalization.py'); r['check_physical_score_contact']()\n                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/physical_score_normalization.py\", line 62, in check_physical_score_contact\n    assert error<mp.mpf('1e-55')\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "physical_contact_removed",
+      "family": "check_physical_score_contact",
+      "original": "predicted=1-vbar-Cn/beta",
+      "replacement": "predicted=1-Cn/beta",
+      "source_sha256": "e8e71edf06f52669400d8bcc82e0c29b2b2e4a9d9911f5cd2fd5a1534caeeda8",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/physical_contact_removed.py'); r['check_physical_score_contact']()\n                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/physical_contact_removed.py\", line 69, in check_physical_score_contact\n    assert abs(actual_variance-predicted)<mp.mpf('1e-55')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "time_zero_displaced",
+      "family": "check_finite_markov_transfer",
+      "original": "np.linalg.matrix_power(T,t)@obs",
+      "replacement": "np.linalg.matrix_power(T,t+1)@obs",
+      "source_sha256": "817e07f6e6fb1ac060fecea6e6678705212b1bb8625d846469ff61711eac44f0",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/time_zero_displaced.py'); r['check_finite_markov_transfer']()\n                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/time_zero_displaced.py\", line 116, in check_finite_markov_transfer\n    assert max(errors)<2e-13\n           ^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "poisson_numerator",
+      "family": "check_finite_markov_transfer",
+      "original": "(1-lam*lam)/(1-2*lam*np.cos(omega)+lam*lam)",
+      "replacement": "(1-lam)/(1-2*lam*np.cos(omega)+lam*lam)",
+      "source_sha256": "b15adb8560caed25282282d250e3c7df6d41e0b670fd7c5a3c62b8df7d6e5944",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/poisson_numerator.py'); r['check_finite_markov_transfer']()\n                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/poisson_numerator.py\", line 129, in check_finite_markov_transfer\n    assert max(frequency_errors)<2e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "susceptibility_reciprocal",
+      "family": "check_finite_markov_transfer",
+      "original": "return (1+lam)/(1-lam)",
+      "replacement": "return (1-lam)/(1+lam)",
+      "source_sha256": "b0ac3203485674b85dfb72d16f670088af01b67ad6e072c0798eca905239b65d",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/susceptibility_reciprocal.py'); r['check_finite_markov_transfer']()\n                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/susceptibility_reciprocal.py\", line 129, in check_finite_markov_transfer\n    assert max(frequency_errors)<2e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "midpoint_phase",
+      "family": "check_midpoint_magnetic_symbol",
+      "original": "np.exp(-.5j*(k[i]+k[j]))",
+      "replacement": "np.exp(.5j*(k[i]+k[j]))",
+      "source_sha256": "308fd6d525b139cfbe05b9705656750f04a039ae6b55b59e821c1e11c0cfe5b3",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/midpoint_phase.py'); r['check_midpoint_magnetic_symbol']()\n                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/midpoint_phase.py\", line 150, in check_midpoint_magnetic_symbol\n    assert np.linalg.norm(magnetic@xi)<1e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "magnetic_orientation",
+      "family": "check_midpoint_magnetic_symbol",
+      "original": "BB[1,pairs.index((1,3))]=-1",
+      "replacement": "BB[1,pairs.index((1,3))]=1",
+      "source_sha256": "691f89bad6710e225e1235c4f6fedd3f2390e945e5a1cf901c81b192c20b6732",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/magnetic_orientation.py'); r['check_midpoint_magnetic_symbol']()\n                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/magnetic_orientation.py\", line 150, in check_midpoint_magnetic_symbol\n    assert np.linalg.norm(magnetic@xi)<1e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "matrix_probe_coefficient",
+      "family": "check_matrix_band_projection",
+      "original": "return total/4-(4/3)*Sa+(25/12)*S4a",
+      "replacement": "return total/4-(4/3)*Sa+(25/6)*S4a",
+      "source_sha256": "3fc950c602153622546866c0addb93b8b6c49d2043f6e549c934fe7b9f32f7a0",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/matrix_probe_coefficient.py'); r['check_matrix_band_projection']()\n                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/matrix_probe_coefficient.py\", line 185, in check_matrix_band_projection\n    assert np.max(abs(combined-independent))<1e-14\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "energy_half",
+      "family": "check_parameter_certificate",
+      "original": "return 2*np.arcsinh(np.sqrt(u)/2)",
+      "replacement": "return np.arcsinh(np.sqrt(u)/2)",
+      "source_sha256": "a4ee93537367d6f4f01c34b2b421b974f0723ab6b56d9e5cecc7ed1d204af1e9",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/energy_half.py'); r['check_parameter_certificate']()\n                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/energy_half.py\", line 280, in check_parameter_certificate\n    assert abs(np.arccosh(1+factor*r*r/2)-E)<2e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "ordinary_weight_reciprocal",
+      "family": "check_matrix_band_projection",
+      "original": "nu_atoms=[np.tanh(E/2)*W",
+      "replacement": "nu_atoms=[W/np.tanh(E/2)",
+      "source_sha256": "427ee82b6f8c0d3cb87aa008f40da7942e14e1c729df6692d4abaa8b574adf9c",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/ordinary_weight_reciprocal.py'); r['check_matrix_band_projection']()\n                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/ordinary_weight_reciprocal.py\", line 193, in check_matrix_band_projection\n    assert np.max(abs(projected-direct))<1e-14\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "band_complement",
+      "family": "check_matrix_band_projection",
+      "original": "np.diag((EE>=lower_E)&(EE<=upper_E))",
+      "replacement": "np.diag((EE<lower_E)|(EE>upper_E))",
+      "source_sha256": "ae4000ae443243220d09dd8c55885bf54dfe54c53d86f084ce5521bf099227e2",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/band_complement.py'); r['check_matrix_band_projection']()\n                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/band_complement.py\", line 193, in check_matrix_band_projection\n    assert np.max(abs(projected-direct))<1e-14\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "contact_atom_deleted",
+      "family": "check_contacts_and_invariant_atoms",
+      "original": "nu_contact=chi_contact",
+      "replacement": "nu_contact=0",
+      "source_sha256": "60daadd7cf9b6792699e24a3f82e627eed760662e41475ca2c8d6f5642316cc7",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/contact_atom_deleted.py'); r['check_contacts_and_invariant_atoms']()\n                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/contact_atom_deleted.py\", line 217, in check_contacts_and_invariant_atoms\n    assert nu_band/(nu_band+nu_contact)<.001\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "continuous_density_normalization",
+      "family": "check_continuous_spectrum_and_nongaussianity",
+      "original": "return 1-z/(2*a*width)*mp.log",
+      "replacement": "return 1-z/(a*width)*mp.log",
+      "source_sha256": "6f0672edc62f76ec2561ec7c05feea76041819669559bbf77247ad2d0bc3781b",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/continuous_density_normalization.py'); r['check_continuous_spectrum_and_nongaussianity']()\n                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/continuous_density_normalization.py\", line 247, in check_continuous_spectrum_and_nongaussianity\n    assert diff>=-mp.mpf('1e-58') and diff<=bound\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "loose_error_percentage",
+      "family": "check_parameter_certificate",
+      "original": "eps=F(1,10000000)",
+      "replacement": "eps=F(1,1000)",
+      "source_sha256": "8562fbc72d796d91e34035afa778691aa21c5c26a2528ba348a9c2faf85abeef",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/loose_error_percentage.py'); r['check_parameter_certificate']()\n                                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block26-fault-39zdma0u/loose_error_percentage.py\", line 271, in check_parameter_certificate\n    assert fraction>F(9996,10000)\n           ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    }
+  ],
+  "all_caught": true
+}

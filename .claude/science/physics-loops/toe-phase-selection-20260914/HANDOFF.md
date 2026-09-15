@@ -648,3 +648,28 @@ field. Dipole-gas renormalization methods are being checked for an actual
 coupled-defect representation; a scalar-gradient theorem cannot simply be
 relabeled as the finite-clock gauge model. No new block26 theorem is yet
 written. Continue personally to13:30:44UTC, without subagents.
+
+
+## Fixed-clock spectral checkpoint, 2026-09-15 08:12 UTC
+
+Block26 is a short conditional implication of the complete covariance source
+in PR8127 at d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee. Positive transfer
+spectral measures turn a two-frequency rational identity into a narrow
+linear energy band carrying over99.96 percent of each transverse static
+susceptibility under the supplied large fixed-parameter contract. Ordinary
+band weight scales as momentum and has two nonzero response directions.
+This proves no particle pole, Gaussian joint law, group velocity, unique
+phase, N=3 phase, or native physical identification. All conclusions remain
+conditional on the provisional covariance and reflection-positive state.
+
+Eight finite families and16actual faults are checked. The initial
+double-precision score cancellation failure is preserved; the same
+comparison at65digits agrees below1.5e-62 with a stricter1e-55 tolerance.
+The full new proof and runner were personally read cold. Spectral
+representation is standard machinery, and a narrow continuous spectrum
+is an explicit control against inferring a pole. No independent review.
+
+Prepare this addition inside existing PR8127 so the entire mathematical
+input is in the same review delta. Currentmain remains5deabeb698a27c2c3f68c5df685af2521ef15307; diskguard150GiBfree.
+After this milestone return to a new hard residual; do not deepen the
+unreviewed covariance chain. Deadline13:30:44UTC remains unchanged.

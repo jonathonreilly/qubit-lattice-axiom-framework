@@ -1,0 +1,25 @@
+{
+  "pr": 8018,
+  "original_head": "fa8cabc8b6f394a4acfcbc7c2be96c3e22ae6307",
+  "branch": "codex/spatial-wilson-correction-block24-20260907",
+  "landing": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "codex/spatial-wilson-cubic-block23-20260907",
+    "closedAt": null,
+    "headRefName": "codex/spatial-wilson-correction-block24-20260907",
+    "headRefOid": "fa8cabc8b6f394a4acfcbc7c2be96c3e22ae6307",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8018,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8018"
+  },
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:49:51Z",
+    "headRefOid": "fa8cabc8b6f394a4acfcbc7c2be96c3e22ae6307",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8018"
+  }
+}

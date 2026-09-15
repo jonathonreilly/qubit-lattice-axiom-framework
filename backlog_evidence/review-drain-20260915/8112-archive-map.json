@@ -1,0 +1,172 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "3709fa90b06a8e79253ffd6c4f27813583f47b1840b74dfb685afe751e3808dd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-HANDOFF.md",
+    "sha256": "6c2eeec50fd1c4bd32cd43c5d204f8bda0edb9362760ae7ec11d3e3159ef975f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/MUTATION_RESULTS.json",
+    "sha256": "f5782e6448c02746dd88fbf959e3ddd1685d302af999dec94751b77dedc587d8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/PRIMARY_RESULT.json",
+    "sha256": "d2cfd7e3653983833f13c8697549b37f4f8d7b35573279714c01d9e05dda1ad0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/READING_LEDGER.json",
+    "sha256": "c59826830b19c53e59680a66d9818e90e9048cfb3941c71cfafe0147081d7987"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-REVIEW_HISTORY.md",
+    "sha256": "3e3ab1652995d2905d3655b19162b86a5e3133b6e39b564113af3d5955704a76"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-TRACE_GATE.md",
+    "sha256": "bdaa1711d27020e2a12b6737a162e5ae65612f460eb8f40d178089bd975d5ad8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/canonical_offdiagonal_doubling.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.py.gz",
+    "sha256": "cd090154b583981ca8e768a76a26fc04dbdca2ed13585eebe5ed7c71581d2000"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/canonical_offdiagonal_doubling.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stderr.gz",
+    "sha256": "69b81d19ce9c548e10f86944ae8000634f8f0ed35951112183b1909c491c4608"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/canonical_offdiagonal_doubling.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stdout.gz",
+    "sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/clock_shift_orientation.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.py.gz",
+    "sha256": "4d7d8af6c959e509f0b6bd7242f3c37b90b8e314a86d30fa5d6af225a22ed9b2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/clock_shift_orientation.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stderr.gz",
+    "sha256": "4c15ba0033eba03cc829cefdd504cb7bedd836167ccd7e0f8aa8b82aaa2300a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/clock_shift_orientation.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stdout.gz",
+    "sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/curvature_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.py.gz",
+    "sha256": "8b3e50d6194ec35668e0a09f18568a85c0aa69af2887b28ab8e4652c396d765d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/curvature_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stderr.gz",
+    "sha256": "3490b87f31103a296aff790d3f2dbff100c769bffce0426745caf4d26a35a455"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/curvature_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stdout.gz",
+    "sha256": "691f2fd73447fb022d9122931e28b4de03e1ac5d3fb7ea6158e95a04f21bfb96"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/electric_trace_reversal.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.py.gz",
+    "sha256": "bd2974b496e7471bf13b305cc3a3c3a9a5766b3ffe1d10eda3b82d4b0dbec69c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/electric_trace_reversal.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stderr.gz",
+    "sha256": "432e0df4e74fde177d24c4e5c3b26fa2b179dea9111d32ed71ad7f65e463c668"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/electric_trace_reversal.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stdout.gz",
+    "sha256": "5f32d740f9827d11b15d86694116d27c7d8d5b379bd51f044e7c91687161543d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/gravitational_source_energy_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.py.gz",
+    "sha256": "015d587b0a24c844743cbf946fad780b93e4ebf01792f5aecbe8691d2f03fc7f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/gravitational_source_energy_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stderr.gz",
+    "sha256": "7de44a059c0a7d92d1ed9f76217b3678cc1a3f007310e125cc1533516379477b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/gravitational_source_energy_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stdout.gz",
+    "sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/mixed_derivative_reality.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.py.gz",
+    "sha256": "868a25eea80bdf1f56aef6982128373ef5d7d2f166cd8b57483e15162e63594d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/mixed_derivative_reality.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stderr.gz",
+    "sha256": "3a71979fe2d769596745f2121200da1258f0db70c176a1e96a61a64bd281f8e7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/mixed_derivative_reality.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stdout.gz",
+    "sha256": "af38c7b8d67f6422a4ca2a66d9e0dd0bddfd7d5b3b6c529c973bedbfacb34c59"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_DeWitt_coefficient.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.py.gz",
+    "sha256": "0eb4c80e592780d56d37d0ebe76218fd70da70293718237b8d356cdb53c73cce"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_DeWitt_coefficient.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stderr.gz",
+    "sha256": "255f0cfb69a944d4d2a8cf7c5296322973785b5baad4f873687664be4c34cad9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_DeWitt_coefficient.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stdout.gz",
+    "sha256": "1a769e6345b924f68a30bc6726a8d0806a987534f52f56444cdf89f2f45f6901"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_stencil_corner_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.py.gz",
+    "sha256": "53076253f6924a05301d27a58b92de4972b7a71c49420c397d596d13e8ca382c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_stencil_corner_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stderr.gz",
+    "sha256": "27d8120a8c248eb9b1e065f051041e82aea2febe20abe042acb2bbdda42f40a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_stencil_corner_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stdout.gz",
+    "sha256": "491dfb374c1887c2a2f946e1977be5e93e5ef8c757b32c25416f2d7e7eaeea45"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/source_midpoint_phases.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.py.gz",
+    "sha256": "cfd5be6c137d9949dfe9a85b036bc1bbb39d2598d56b2d37d97d2d6235562889"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/source_midpoint_phases.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stderr.gz",
+    "sha256": "29ea62d43931e269100a541f38e343fcf11638ba0f99d15e5c4a18ed8b81b65f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/source_midpoint_phases.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stdout.gz",
+    "sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194"
+  }
+]

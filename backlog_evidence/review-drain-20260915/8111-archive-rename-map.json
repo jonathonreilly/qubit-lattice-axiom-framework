@@ -1,0 +1,22 @@
+[
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/CLAIM_STATUS_CERTIFICATE.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "65f0197d1496490262392acbd9b9eb0bea6252a31ab330b5246693d2ab3d978f"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/TRACE_GATE.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-TRACE_GATE.md",
+    "sha256": "e0bc8ff5676849c865330b3ebb25d0fe2c43046481233c27134b8415cb42c392"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/REVIEW_HISTORY.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-REVIEW_HISTORY.md",
+    "sha256": "bf64a0086822b09055c1a6bbcd84535f3497bf34aa8b4db91338d60737feccb4"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/HANDOFF.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-HANDOFF.md",
+    "sha256": "10eeaf8824286d3142cb95cd6b7f877ce3d30ad31dd65a72a7215b2b6614cbcb"
+  }
+]

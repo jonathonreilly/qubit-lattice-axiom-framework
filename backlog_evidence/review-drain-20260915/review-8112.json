@@ -1,0 +1,788 @@
+{
+  "unit": "PR8112",
+  "source_final_verdict": "PASS",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "confirmation_base": "173381a6c85174f0b8d570958ac0588867fee67f",
+  "staged_tree": "c2c22c088518419c09693c053c5d8bef70014cff",
+  "findings": [
+    {
+      "id": "8112-packaging-1",
+      "status": "fixed and same-session confirmed",
+      "description": "Missing author record restored with complete historical packet and unique Markdown names."
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/CLAIM_STATUS_CERTIFICATE.md",
+      "original_status": "A",
+      "original_blob": "c3f6c04699306c5a581da099e49978fdd8f9cae3",
+      "original_sha256": "3709fa90b06a8e79253ffd6c4f27813583f47b1840b74dfb685afe751e3808dd",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "3709fa90b06a8e79253ffd6c4f27813583f47b1840b74dfb685afe751e3808dd",
+        "blob": "c3f6c04699306c5a581da099e49978fdd8f9cae3"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/HANDOFF.md",
+      "original_status": "A",
+      "original_blob": "82468b13893105ca5df84677b8ff0ab2a84af982",
+      "original_sha256": "6c2eeec50fd1c4bd32cd43c5d204f8bda0edb9362760ae7ec11d3e3159ef975f",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-HANDOFF.md",
+        "sha256": "6c2eeec50fd1c4bd32cd43c5d204f8bda0edb9362760ae7ec11d3e3159ef975f",
+        "blob": "82468b13893105ca5df84677b8ff0ab2a84af982"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/MUTATION_RESULTS.json",
+      "original_status": "A",
+      "original_blob": "2bd39392feb4a3a838b409f86d7b7fd03146091a",
+      "original_sha256": "f5782e6448c02746dd88fbf959e3ddd1685d302af999dec94751b77dedc587d8",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/MUTATION_RESULTS.json",
+        "sha256": "f5782e6448c02746dd88fbf959e3ddd1685d302af999dec94751b77dedc587d8",
+        "blob": "2bd39392feb4a3a838b409f86d7b7fd03146091a"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/PRIMARY_RESULT.json",
+      "original_status": "A",
+      "original_blob": "cceccbf8a2eca3d2a1bf01e9a7b3f78cc1bcea5b",
+      "original_sha256": "d2cfd7e3653983833f13c8697549b37f4f8d7b35573279714c01d9e05dda1ad0",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/PRIMARY_RESULT.json",
+        "sha256": "d2cfd7e3653983833f13c8697549b37f4f8d7b35573279714c01d9e05dda1ad0",
+        "blob": "cceccbf8a2eca3d2a1bf01e9a7b3f78cc1bcea5b"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/READING_LEDGER.json",
+      "original_status": "A",
+      "original_blob": "1618a5411fc9cff0fe379a797a7c5da48b936a5e",
+      "original_sha256": "c59826830b19c53e59680a66d9818e90e9048cfb3941c71cfafe0147081d7987",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/READING_LEDGER.json",
+        "sha256": "c59826830b19c53e59680a66d9818e90e9048cfb3941c71cfafe0147081d7987",
+        "blob": "1618a5411fc9cff0fe379a797a7c5da48b936a5e"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/REVIEW_HISTORY.md",
+      "original_status": "A",
+      "original_blob": "1f57350164b03a1b97e7d0f55e45a757bbacc09d",
+      "original_sha256": "3e3ab1652995d2905d3655b19162b86a5e3133b6e39b564113af3d5955704a76",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-REVIEW_HISTORY.md",
+        "sha256": "3e3ab1652995d2905d3655b19162b86a5e3133b6e39b564113af3d5955704a76",
+        "blob": "1f57350164b03a1b97e7d0f55e45a757bbacc09d"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/TRACE_GATE.md",
+      "original_status": "A",
+      "original_blob": "d6ae3a73d7ac05c00521cf4e386d7b8ece81529d",
+      "original_sha256": "bdaa1711d27020e2a12b6737a162e5ae65612f460eb8f40d178089bd975d5ad8",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-TRACE_GATE.md",
+        "sha256": "bdaa1711d27020e2a12b6737a162e5ae65612f460eb8f40d178089bd975d5ad8",
+        "blob": "d6ae3a73d7ac05c00521cf4e386d7b8ece81529d"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/canonical_offdiagonal_doubling.py.gz",
+      "original_status": "A",
+      "original_blob": "859e8aa82e295611720a107ecabec6b3ea95710b",
+      "original_sha256": "cd090154b583981ca8e768a76a26fc04dbdca2ed13585eebe5ed7c71581d2000",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.py.gz",
+        "sha256": "cd090154b583981ca8e768a76a26fc04dbdca2ed13585eebe5ed7c71581d2000",
+        "blob": "859e8aa82e295611720a107ecabec6b3ea95710b"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/canonical_offdiagonal_doubling.stderr.gz",
+      "original_status": "A",
+      "original_blob": "fd6f8e4def69c96eb94372ff5f27fb8a475a9c33",
+      "original_sha256": "69b81d19ce9c548e10f86944ae8000634f8f0ed35951112183b1909c491c4608",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stderr.gz",
+        "sha256": "69b81d19ce9c548e10f86944ae8000634f8f0ed35951112183b1909c491c4608",
+        "blob": "fd6f8e4def69c96eb94372ff5f27fb8a475a9c33"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/canonical_offdiagonal_doubling.stdout.gz",
+      "original_status": "A",
+      "original_blob": "7915bf4b4b3b1fab739264576978567963013e15",
+      "original_sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stdout.gz",
+        "sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07",
+        "blob": "7915bf4b4b3b1fab739264576978567963013e15"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/clock_shift_orientation.py.gz",
+      "original_status": "A",
+      "original_blob": "1b385e0ff5bf358500c5925a9b6c398da340c1c1",
+      "original_sha256": "4d7d8af6c959e509f0b6bd7242f3c37b90b8e314a86d30fa5d6af225a22ed9b2",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.py.gz",
+        "sha256": "4d7d8af6c959e509f0b6bd7242f3c37b90b8e314a86d30fa5d6af225a22ed9b2",
+        "blob": "1b385e0ff5bf358500c5925a9b6c398da340c1c1"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/clock_shift_orientation.stderr.gz",
+      "original_status": "A",
+      "original_blob": "7da39b2b67b9441c74c17e342a5ae47f5cc91a2b",
+      "original_sha256": "4c15ba0033eba03cc829cefdd504cb7bedd836167ccd7e0f8aa8b82aaa2300a5",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stderr.gz",
+        "sha256": "4c15ba0033eba03cc829cefdd504cb7bedd836167ccd7e0f8aa8b82aaa2300a5",
+        "blob": "7da39b2b67b9441c74c17e342a5ae47f5cc91a2b"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/clock_shift_orientation.stdout.gz",
+      "original_status": "A",
+      "original_blob": "7915bf4b4b3b1fab739264576978567963013e15",
+      "original_sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stdout.gz",
+        "sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07",
+        "blob": "7915bf4b4b3b1fab739264576978567963013e15"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/curvature_sign.py.gz",
+      "original_status": "A",
+      "original_blob": "f965e2a3911c6f5d91fdf6ee889f77cac5f4ce17",
+      "original_sha256": "8b3e50d6194ec35668e0a09f18568a85c0aa69af2887b28ab8e4652c396d765d",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.py.gz",
+        "sha256": "8b3e50d6194ec35668e0a09f18568a85c0aa69af2887b28ab8e4652c396d765d",
+        "blob": "f965e2a3911c6f5d91fdf6ee889f77cac5f4ce17"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/curvature_sign.stderr.gz",
+      "original_status": "A",
+      "original_blob": "0f55254743a1fddbb1387d7068da47858f5f461c",
+      "original_sha256": "3490b87f31103a296aff790d3f2dbff100c769bffce0426745caf4d26a35a455",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stderr.gz",
+        "sha256": "3490b87f31103a296aff790d3f2dbff100c769bffce0426745caf4d26a35a455",
+        "blob": "0f55254743a1fddbb1387d7068da47858f5f461c"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/curvature_sign.stdout.gz",
+      "original_status": "A",
+      "original_blob": "03e30ec217c9a3cbacdd058d9a4e5d620d49bef7",
+      "original_sha256": "691f2fd73447fb022d9122931e28b4de03e1ac5d3fb7ea6158e95a04f21bfb96",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stdout.gz",
+        "sha256": "691f2fd73447fb022d9122931e28b4de03e1ac5d3fb7ea6158e95a04f21bfb96",
+        "blob": "03e30ec217c9a3cbacdd058d9a4e5d620d49bef7"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/electric_trace_reversal.py.gz",
+      "original_status": "A",
+      "original_blob": "778f0770d909f4ce3a29758b6dbbab1065d937b6",
+      "original_sha256": "bd2974b496e7471bf13b305cc3a3c3a9a5766b3ffe1d10eda3b82d4b0dbec69c",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.py.gz",
+        "sha256": "bd2974b496e7471bf13b305cc3a3c3a9a5766b3ffe1d10eda3b82d4b0dbec69c",
+        "blob": "778f0770d909f4ce3a29758b6dbbab1065d937b6"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/electric_trace_reversal.stderr.gz",
+      "original_status": "A",
+      "original_blob": "0aa8482fac38a10fb61c2c189fdafc1ba32b24cf",
+      "original_sha256": "432e0df4e74fde177d24c4e5c3b26fa2b179dea9111d32ed71ad7f65e463c668",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stderr.gz",
+        "sha256": "432e0df4e74fde177d24c4e5c3b26fa2b179dea9111d32ed71ad7f65e463c668",
+        "blob": "0aa8482fac38a10fb61c2c189fdafc1ba32b24cf"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/electric_trace_reversal.stdout.gz",
+      "original_status": "A",
+      "original_blob": "2307e0c769eb385ddf03159796c02dc5aaa28d6b",
+      "original_sha256": "5f32d740f9827d11b15d86694116d27c7d8d5b379bd51f044e7c91687161543d",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stdout.gz",
+        "sha256": "5f32d740f9827d11b15d86694116d27c7d8d5b379bd51f044e7c91687161543d",
+        "blob": "2307e0c769eb385ddf03159796c02dc5aaa28d6b"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/gravitational_source_energy_sign.py.gz",
+      "original_status": "A",
+      "original_blob": "f0ca2fc0e78ec3b79574fdea95a6e48ab0384c0a",
+      "original_sha256": "015d587b0a24c844743cbf946fad780b93e4ebf01792f5aecbe8691d2f03fc7f",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.py.gz",
+        "sha256": "015d587b0a24c844743cbf946fad780b93e4ebf01792f5aecbe8691d2f03fc7f",
+        "blob": "f0ca2fc0e78ec3b79574fdea95a6e48ab0384c0a"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/gravitational_source_energy_sign.stderr.gz",
+      "original_status": "A",
+      "original_blob": "05c312e057387bd794a6d2d24359899bd4d65820",
+      "original_sha256": "7de44a059c0a7d92d1ed9f76217b3678cc1a3f007310e125cc1533516379477b",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stderr.gz",
+        "sha256": "7de44a059c0a7d92d1ed9f76217b3678cc1a3f007310e125cc1533516379477b",
+        "blob": "05c312e057387bd794a6d2d24359899bd4d65820"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/gravitational_source_energy_sign.stdout.gz",
+      "original_status": "A",
+      "original_blob": "b97582ffd14dc95f588926419d862a31b8b44a7e",
+      "original_sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stdout.gz",
+        "sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194",
+        "blob": "b97582ffd14dc95f588926419d862a31b8b44a7e"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/mixed_derivative_reality.py.gz",
+      "original_status": "A",
+      "original_blob": "1a1213363225ba88428f3f674cc3fa5d8b83abd5",
+      "original_sha256": "868a25eea80bdf1f56aef6982128373ef5d7d2f166cd8b57483e15162e63594d",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.py.gz",
+        "sha256": "868a25eea80bdf1f56aef6982128373ef5d7d2f166cd8b57483e15162e63594d",
+        "blob": "1a1213363225ba88428f3f674cc3fa5d8b83abd5"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/mixed_derivative_reality.stderr.gz",
+      "original_status": "A",
+      "original_blob": "be348f0661d4359b883f0abe23af1157367566a7",
+      "original_sha256": "3a71979fe2d769596745f2121200da1258f0db70c176a1e96a61a64bd281f8e7",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stderr.gz",
+        "sha256": "3a71979fe2d769596745f2121200da1258f0db70c176a1e96a61a64bd281f8e7",
+        "blob": "be348f0661d4359b883f0abe23af1157367566a7"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/mixed_derivative_reality.stdout.gz",
+      "original_status": "A",
+      "original_blob": "f3ef6b385c32801010b0837ab53e92b596a11597",
+      "original_sha256": "af38c7b8d67f6422a4ca2a66d9e0dd0bddfd7d5b3b6c529c973bedbfacb34c59",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stdout.gz",
+        "sha256": "af38c7b8d67f6422a4ca2a66d9e0dd0bddfd7d5b3b6c529c973bedbfacb34c59",
+        "blob": "f3ef6b385c32801010b0837ab53e92b596a11597"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_DeWitt_coefficient.py.gz",
+      "original_status": "A",
+      "original_blob": "c37059d9060a5f79ebfcf8fb30124aada7ab0ddd",
+      "original_sha256": "0eb4c80e592780d56d37d0ebe76218fd70da70293718237b8d356cdb53c73cce",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.py.gz",
+        "sha256": "0eb4c80e592780d56d37d0ebe76218fd70da70293718237b8d356cdb53c73cce",
+        "blob": "c37059d9060a5f79ebfcf8fb30124aada7ab0ddd"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_DeWitt_coefficient.stderr.gz",
+      "original_status": "A",
+      "original_blob": "1025187fc762547404ae72b3f1cd8eb942c3257e",
+      "original_sha256": "255f0cfb69a944d4d2a8cf7c5296322973785b5baad4f873687664be4c34cad9",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stderr.gz",
+        "sha256": "255f0cfb69a944d4d2a8cf7c5296322973785b5baad4f873687664be4c34cad9",
+        "blob": "1025187fc762547404ae72b3f1cd8eb942c3257e"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_DeWitt_coefficient.stdout.gz",
+      "original_status": "A",
+      "original_blob": "891fde69f8d92f7c403ed6b02f4b81db07fafe09",
+      "original_sha256": "1a769e6345b924f68a30bc6726a8d0806a987534f52f56444cdf89f2f45f6901",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stdout.gz",
+        "sha256": "1a769e6345b924f68a30bc6726a8d0806a987534f52f56444cdf89f2f45f6901",
+        "blob": "891fde69f8d92f7c403ed6b02f4b81db07fafe09"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_stencil_corner_sign.py.gz",
+      "original_status": "A",
+      "original_blob": "7f4b2de3896803f79c590ac856b76bcc73df9d69",
+      "original_sha256": "53076253f6924a05301d27a58b92de4972b7a71c49420c397d596d13e8ca382c",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.py.gz",
+        "sha256": "53076253f6924a05301d27a58b92de4972b7a71c49420c397d596d13e8ca382c",
+        "blob": "7f4b2de3896803f79c590ac856b76bcc73df9d69"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_stencil_corner_sign.stderr.gz",
+      "original_status": "A",
+      "original_blob": "a1340806d56c01216d0c9369395891dc6aef55d4",
+      "original_sha256": "27d8120a8c248eb9b1e065f051041e82aea2febe20abe042acb2bbdda42f40a5",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stderr.gz",
+        "sha256": "27d8120a8c248eb9b1e065f051041e82aea2febe20abe042acb2bbdda42f40a5",
+        "blob": "a1340806d56c01216d0c9369395891dc6aef55d4"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/scalar_stencil_corner_sign.stdout.gz",
+      "original_status": "A",
+      "original_blob": "7c26c1f51c01cef8d5f8801c8f4a308b779881d4",
+      "original_sha256": "491dfb374c1887c2a2f946e1977be5e93e5ef8c757b32c25416f2d7e7eaeea45",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stdout.gz",
+        "sha256": "491dfb374c1887c2a2f946e1977be5e93e5ef8c757b32c25416f2d7e7eaeea45",
+        "blob": "7c26c1f51c01cef8d5f8801c8f4a308b779881d4"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/source_midpoint_phases.py.gz",
+      "original_status": "A",
+      "original_blob": "c8882058b8e7fe388b2a7fd71474aece78da47e6",
+      "original_sha256": "cfd5be6c137d9949dfe9a85b036bc1bbb39d2598d56b2d37d97d2d6235562889",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.py.gz",
+        "sha256": "cfd5be6c137d9949dfe9a85b036bc1bbb39d2598d56b2d37d97d2d6235562889",
+        "blob": "c8882058b8e7fe388b2a7fd71474aece78da47e6"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/source_midpoint_phases.stderr.gz",
+      "original_status": "A",
+      "original_blob": "f2a9abb9c9f5347335bd6a59812c600b2071b4ed",
+      "original_sha256": "29ea62d43931e269100a541f38e343fcf11638ba0f99d15e5c4a18ed8b81b65f",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stderr.gz",
+        "sha256": "29ea62d43931e269100a541f38e343fcf11638ba0f99d15e5c4a18ed8b81b65f",
+        "blob": "f2a9abb9c9f5347335bd6a59812c600b2071b4ed"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block5/mutation_evidence/source_midpoint_phases.stdout.gz",
+      "original_status": "A",
+      "original_blob": "b97582ffd14dc95f588926419d862a31b8b44a7e",
+      "original_sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stdout.gz",
+        "sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194",
+        "blob": "b97582ffd14dc95f588926419d862a31b8b44a7e"
+      },
+      "disposition": "accepted unchanged as historical evidence",
+      "coverage": "Full original record or decompressed mutation source delta/outcome read; no live helper or missing proof."
+    },
+    {
+      "original_path": "docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_status": "A",
+      "original_blob": "5dd093da145c973acf7116de03b2571976ba4eff",
+      "original_sha256": "0e99db3f95caf8a0a1f4c55e7557d46f227fb409892afa6d6ff1d217275164e0",
+      "final": {
+        "path": "docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "089368d3b9c4fc9387ad3eb3d9320552f8a6e3836e4f81db7f45d8b32c10dcbd",
+        "blob": "b30316abc9304f4b2941a9ea8fcec0844e7b8ac9"
+      },
+      "disposition": "accepted with packaging clarification",
+      "coverage": "Complete note/proofs, runner and receipt read."
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_status": "M",
+      "original_blob": "d0e21804e736b1101b6ee41668cc5a7833e4be28",
+      "original_sha256": "f45e5f8b8e43cdf37d5b548e7cf0cffa62f37571713cade1bb74464e9f4382a2",
+      "disposition": "superseded generated manifest; current main retained, combined regeneration pending",
+      "recovery": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e:docs/audit/data/citation_graph_manifest.json",
+      "coverage": "Original full delta one node, no edge change or unique scientific proof."
+    },
+    {
+      "original_path": "logs/runner-cache/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.txt",
+      "original_status": "A",
+      "original_blob": "3d942d673914d14ea957e04a0ec0da364692e1bc",
+      "original_sha256": "3de469e07ec5269ea3b35189a6edaf2bf50b2cab5e9049d7aa2e1d22101661bb",
+      "final": {
+        "path": "logs/runner-cache/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.txt",
+        "sha256": "3de469e07ec5269ea3b35189a6edaf2bf50b2cab5e9049d7aa2e1d22101661bb",
+        "blob": "3d942d673914d14ea957e04a0ec0da364692e1bc"
+      },
+      "disposition": "accepted unchanged",
+      "coverage": "Complete note/proofs, runner and receipt read."
+    },
+    {
+      "original_path": "scripts/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.py",
+      "original_status": "A",
+      "original_blob": "79227e9ab76c14e67fed4d3f3688b40680e795e3",
+      "original_sha256": "2ab59cb3bc9e0e456e5e87a6fbd1f7e34a52cc14843f2c03eada1160ebb9443f",
+      "final": {
+        "path": "scripts/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.py",
+        "sha256": "2ab59cb3bc9e0e456e5e87a6fbd1f7e34a52cc14843f2c03eada1160ebb9443f",
+        "blob": "79227e9ab76c14e67fed4d3f3688b40680e795e3"
+      },
+      "disposition": "accepted unchanged",
+      "coverage": "Complete note/proofs, runner and receipt read."
+    }
+  ],
+  "final_paths": [
+    {
+      "path": "docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "089368d3b9c4fc9387ad3eb3d9320552f8a6e3836e4f81db7f45d8b32c10dcbd",
+      "blob": "b30316abc9304f4b2941a9ea8fcec0844e7b8ac9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/MUTATION_RESULTS.json",
+      "sha256": "f5782e6448c02746dd88fbf959e3ddd1685d302af999dec94751b77dedc587d8",
+      "blob": "2bd39392feb4a3a838b409f86d7b7fd03146091a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/PRIMARY_RESULT.json",
+      "sha256": "d2cfd7e3653983833f13c8697549b37f4f8d7b35573279714c01d9e05dda1ad0",
+      "blob": "cceccbf8a2eca3d2a1bf01e9a7b3f78cc1bcea5b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/READING_LEDGER.json",
+      "sha256": "c59826830b19c53e59680a66d9818e90e9048cfb3941c71cfafe0147081d7987",
+      "blob": "1618a5411fc9cff0fe379a797a7c5da48b936a5e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/README.md",
+      "sha256": "c83d54bf4f364d52301abce93562f61765bc3987ac863bb306b7502a6ba28d2b",
+      "blob": "03a5018a7eaf4eb1954b639b3be942a06a761f41"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.py.gz",
+      "sha256": "cd090154b583981ca8e768a76a26fc04dbdca2ed13585eebe5ed7c71581d2000",
+      "blob": "859e8aa82e295611720a107ecabec6b3ea95710b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stderr.gz",
+      "sha256": "69b81d19ce9c548e10f86944ae8000634f8f0ed35951112183b1909c491c4608",
+      "blob": "fd6f8e4def69c96eb94372ff5f27fb8a475a9c33"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stdout.gz",
+      "sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07",
+      "blob": "7915bf4b4b3b1fab739264576978567963013e15"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.py.gz",
+      "sha256": "4d7d8af6c959e509f0b6bd7242f3c37b90b8e314a86d30fa5d6af225a22ed9b2",
+      "blob": "1b385e0ff5bf358500c5925a9b6c398da340c1c1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stderr.gz",
+      "sha256": "4c15ba0033eba03cc829cefdd504cb7bedd836167ccd7e0f8aa8b82aaa2300a5",
+      "blob": "7da39b2b67b9441c74c17e342a5ae47f5cc91a2b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stdout.gz",
+      "sha256": "af7c60a37c2eefc441e3ae5e591a7cbc48611196602ce49413123201f5d65d07",
+      "blob": "7915bf4b4b3b1fab739264576978567963013e15"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.py.gz",
+      "sha256": "8b3e50d6194ec35668e0a09f18568a85c0aa69af2887b28ab8e4652c396d765d",
+      "blob": "f965e2a3911c6f5d91fdf6ee889f77cac5f4ce17"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stderr.gz",
+      "sha256": "3490b87f31103a296aff790d3f2dbff100c769bffce0426745caf4d26a35a455",
+      "blob": "0f55254743a1fddbb1387d7068da47858f5f461c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stdout.gz",
+      "sha256": "691f2fd73447fb022d9122931e28b4de03e1ac5d3fb7ea6158e95a04f21bfb96",
+      "blob": "03e30ec217c9a3cbacdd058d9a4e5d620d49bef7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.py.gz",
+      "sha256": "bd2974b496e7471bf13b305cc3a3c3a9a5766b3ffe1d10eda3b82d4b0dbec69c",
+      "blob": "778f0770d909f4ce3a29758b6dbbab1065d937b6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stderr.gz",
+      "sha256": "432e0df4e74fde177d24c4e5c3b26fa2b179dea9111d32ed71ad7f65e463c668",
+      "blob": "0aa8482fac38a10fb61c2c189fdafc1ba32b24cf"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stdout.gz",
+      "sha256": "5f32d740f9827d11b15d86694116d27c7d8d5b379bd51f044e7c91687161543d",
+      "blob": "2307e0c769eb385ddf03159796c02dc5aaa28d6b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.py.gz",
+      "sha256": "015d587b0a24c844743cbf946fad780b93e4ebf01792f5aecbe8691d2f03fc7f",
+      "blob": "f0ca2fc0e78ec3b79574fdea95a6e48ab0384c0a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stderr.gz",
+      "sha256": "7de44a059c0a7d92d1ed9f76217b3678cc1a3f007310e125cc1533516379477b",
+      "blob": "05c312e057387bd794a6d2d24359899bd4d65820"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stdout.gz",
+      "sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194",
+      "blob": "b97582ffd14dc95f588926419d862a31b8b44a7e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.py.gz",
+      "sha256": "868a25eea80bdf1f56aef6982128373ef5d7d2f166cd8b57483e15162e63594d",
+      "blob": "1a1213363225ba88428f3f674cc3fa5d8b83abd5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stderr.gz",
+      "sha256": "3a71979fe2d769596745f2121200da1258f0db70c176a1e96a61a64bd281f8e7",
+      "blob": "be348f0661d4359b883f0abe23af1157367566a7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stdout.gz",
+      "sha256": "af38c7b8d67f6422a4ca2a66d9e0dd0bddfd7d5b3b6c529c973bedbfacb34c59",
+      "blob": "f3ef6b385c32801010b0837ab53e92b596a11597"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.py.gz",
+      "sha256": "0eb4c80e592780d56d37d0ebe76218fd70da70293718237b8d356cdb53c73cce",
+      "blob": "c37059d9060a5f79ebfcf8fb30124aada7ab0ddd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stderr.gz",
+      "sha256": "255f0cfb69a944d4d2a8cf7c5296322973785b5baad4f873687664be4c34cad9",
+      "blob": "1025187fc762547404ae72b3f1cd8eb942c3257e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stdout.gz",
+      "sha256": "1a769e6345b924f68a30bc6726a8d0806a987534f52f56444cdf89f2f45f6901",
+      "blob": "891fde69f8d92f7c403ed6b02f4b81db07fafe09"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.py.gz",
+      "sha256": "53076253f6924a05301d27a58b92de4972b7a71c49420c397d596d13e8ca382c",
+      "blob": "7f4b2de3896803f79c590ac856b76bcc73df9d69"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stderr.gz",
+      "sha256": "27d8120a8c248eb9b1e065f051041e82aea2febe20abe042acb2bbdda42f40a5",
+      "blob": "a1340806d56c01216d0c9369395891dc6aef55d4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stdout.gz",
+      "sha256": "491dfb374c1887c2a2f946e1977be5e93e5ef8c757b32c25416f2d7e7eaeea45",
+      "blob": "7c26c1f51c01cef8d5f8801c8f4a308b779881d4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.py.gz",
+      "sha256": "cfd5be6c137d9949dfe9a85b036bc1bbb39d2598d56b2d37d97d2d6235562889",
+      "blob": "c8882058b8e7fe388b2a7fd71474aece78da47e6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stderr.gz",
+      "sha256": "29ea62d43931e269100a541f38e343fcf11638ba0f99d15e5c4a18ed8b81b65f",
+      "blob": "f2a9abb9c9f5347335bd6a59812c600b2071b4ed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stdout.gz",
+      "sha256": "786700c7fada649534b1d6d413304d1be592321f16bc0eb77bb643baa9b78194",
+      "blob": "b97582ffd14dc95f588926419d862a31b8b44a7e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "3709fa90b06a8e79253ffd6c4f27813583f47b1840b74dfb685afe751e3808dd",
+      "blob": "c3f6c04699306c5a581da099e49978fdd8f9cae3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-HANDOFF.md",
+      "sha256": "6c2eeec50fd1c4bd32cd43c5d204f8bda0edb9362760ae7ec11d3e3159ef975f",
+      "blob": "82468b13893105ca5df84677b8ff0ab2a84af982"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-REVIEW_HISTORY.md",
+      "sha256": "3e3ab1652995d2905d3655b19162b86a5e3133b6e39b564113af3d5955704a76",
+      "blob": "1f57350164b03a1b97e7d0f55e45a757bbacc09d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-TRACE_GATE.md",
+      "sha256": "bdaa1711d27020e2a12b6737a162e5ae65612f460eb8f40d178089bd975d5ad8",
+      "blob": "d6ae3a73d7ac05c00521cf4e386d7b8ece81529d"
+    },
+    {
+      "path": "logs/runner-cache/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.txt",
+      "sha256": "3de469e07ec5269ea3b35189a6edaf2bf50b2cab5e9049d7aa2e1d22101661bb",
+      "blob": "3d942d673914d14ea957e04a0ec0da364692e1bc"
+    },
+    {
+      "path": "scripts/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.py",
+      "sha256": "2ab59cb3bc9e0e456e5e87a6fbd1f7e34a52cc14843f2c03eada1160ebb9443f",
+      "blob": "79227e9ab76c14e67fed4d3f3688b40680e795e3"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/CUBIC_COXETER_REGGE_LINEARIZED_ACTION_SELECTION_EH_CLASS_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "sha256": "49450ca37fc5e95cadbeb9ca14dc624599489f2d3198c642e684a3e13bd0c3b5",
+      "blob": "c147568b8c60900230016fa46f28ad62f6019767",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_D4_COMMON_SPIN2_SOURCE_MODULE_SIX_BIT_CAPACITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md",
+      "sha256": "67d0c341356666478aab775a09fb9ab9a2fde6c8e85129ee79bb2002a754b178",
+      "blob": "da30608de61b3815799fd75ae6c7dc55c6d6aa46",
+      "role": "authority/context only; no scientific theorem import",
+      "coverage": "source boundary read; first three exact-hash authority reads reused from review8109"
+    }
+  ],
+  "scientific_runtime_file_inputs": [],
+  "current_main_loss_check": "All final paths additions; no existing source modified/deleted. Original generated manifest deferred to combined gate.",
+  "primary_execution": {
+    "exit_code": 0,
+    "elapsed_seconds": 1.5037077920278534,
+    "timeout_sec": 90
+  },
+  "independent_checks": {
+    "scalar_hessian": "Matrix([[0, -sqrt(2)*J/2], [-sqrt(2)*J/2, J/2 + U*k**2]])",
+    "determinant": "-J**2/2",
+    "Jordan_nilpotency": 4,
+    "exact_nonaxial_k": [
+      2,
+      -3,
+      4
+    ],
+    "contact_energy": "rho^2/4",
+    "linear_energy": "-rho^2/116",
+    "Laurent_G_S_adjoint_identity": "exact all z",
+    "status": "PASS"
+  },
+  "external_sources": [
+    "https://arxiv.org/html/0907.1203v3",
+    "https://arxiv.org/html/1105.0675",
+    "https://arxiv.org/abs/1003.0009v1",
+    "https://arxiv.org/abs/1604.05329v3"
+  ],
+  "pipeline_count": 0,
+  "report_sha256": "db251c82710ebbfddab4548862e43f09ff2337cf0e33c6296734c54e830c7af7",
+  "disposition_map_sha256": "bb8b3c9f42f3c696b76939d696c3e26a2f691c290f291a11d5ac24c2e486ae70"
+}

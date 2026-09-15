@@ -1,0 +1,64 @@
+{
+  "pr": 8017,
+  "original_head": "5680b56f4205536f746340d1f2070e243820981c",
+  "branch": "codex/spatial-wilson-cubic-block23-20260907",
+  "landing": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/spatial-wilson-cubic-block23-20260907",
+        "closedAt": null,
+        "headRefName": "codex/anisotropic-source-semigroup-block26-20260907",
+        "headRefOid": "d57943620edd5098df7b6410f952d569730276f5",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8019,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8019"
+      },
+      "original_merge_base": "5680b56f4205536f746340d1f2070e243820981c",
+      "delta_sha256": "256229bfd432f702b9190940b8d7906cc8ba4281cb4dec50634eddd90296c7d7",
+      "delta_file": "closure-8017-child-8019-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/anisotropic-source-semigroup-block26-20260907",
+        "headRefOid": "d57943620edd5098df7b6410f952d569730276f5",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8019,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8019"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/anisotropic-source-semigroup-block26-20260907",
+        "headRefOid": "d57943620edd5098df7b6410f952d569730276f5",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8019,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8019"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T11:50:00Z",
+    "headRefName": "codex/spatial-wilson-cubic-block23-20260907",
+    "headRefOid": "5680b56f4205536f746340d1f2070e243820981c",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8017,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8017"
+  },
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:50:00Z",
+    "headRefOid": "5680b56f4205536f746340d1f2070e243820981c",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8017"
+  }
+}

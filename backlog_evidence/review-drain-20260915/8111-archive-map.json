@@ -1,0 +1,172 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "65f0197d1496490262392acbd9b9eb0bea6252a31ab330b5246693d2ab3d978f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/HANDOFF.md",
+    "sha256": "10eeaf8824286d3142cb95cd6b7f877ce3d30ad31dd65a72a7215b2b6614cbcb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/MUTATION_RESULTS.json",
+    "sha256": "b1df5a9aa21be634e699908e6b65436d33885c0cc5b48c8f91f9444aee29f2f7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/PRIMARY_RESULT.json",
+    "sha256": "de6329a354f15867a4f71fe67aaa2aeb27695148d854f233f111779e8c179c29"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/READING_LEDGER.json",
+    "sha256": "6587eab4e33d7bebe1d220677ffff209856159e5d90c53ac887a4763e1c12b09"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/REVIEW_HISTORY.md",
+    "sha256": "bf64a0086822b09055c1a6bbcd84535f3497bf34aa8b4db91338d60737feccb4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/TRACE_GATE.md",
+    "sha256": "e0bc8ff5676849c865330b3ebb25d0fe2c43046481233c27134b8415cb42c392"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/Weyl_Dirac_multiplicity.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/Weyl_Dirac_multiplicity.py.gz",
+    "sha256": "190d4d428e7770547493621e03c08c28dca58710a1aafb5c40365f4178431cf2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/Weyl_Dirac_multiplicity.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/Weyl_Dirac_multiplicity.stderr.gz",
+    "sha256": "a66bb04a6541f8b33f44f453f2c3f21572e8916f7ac1f55402ed196a52969036"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/Weyl_Dirac_multiplicity.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/Weyl_Dirac_multiplicity.stdout.gz",
+    "sha256": "b0c9ac93573de14dd0fcf956633502c5b130c93b5146df446f6e5a4dac59a92f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/angular_numerator_derivative.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/angular_numerator_derivative.py.gz",
+    "sha256": "c25fd69698e0d51ddeb47256e7a5bdedac4954c07aefe836614836e20a2501c9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/angular_numerator_derivative.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/angular_numerator_derivative.stderr.gz",
+    "sha256": "c72d19769e683cfaad8a42eb6f9f5d0f6c4884dcdfd99b7f9db0923743564e74"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/angular_numerator_derivative.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/angular_numerator_derivative.stdout.gz",
+    "sha256": "364517ee0aa9968a069614f31bb5aa3fd3e4f08fa83a1b50d7ca2a8ae44ab44f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/bubble_midpoint_vertex.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/bubble_midpoint_vertex.py.gz",
+    "sha256": "a69971fa437bb8c13c422c9b973d32c201664ecd0d6f93f3d0cca8a0808254b5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/bubble_midpoint_vertex.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/bubble_midpoint_vertex.stderr.gz",
+    "sha256": "f87c3cc53cc70a31119ec8b7add06401d5f7c6d20db218cb9a6e0f73692d01cf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/bubble_midpoint_vertex.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/bubble_midpoint_vertex.stdout.gz",
+    "sha256": "5461632773b80ff5763df5b8c149848c8f0a3d2dbe87bcd463744491df7ea476"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/charge_running_omission.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/charge_running_omission.py.gz",
+    "sha256": "08db7f770efb359c4e04f3c6f2eb78b7c4bd72cd358784e81dcb4aa3899c7c80"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/charge_running_omission.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/charge_running_omission.stderr.gz",
+    "sha256": "271d71ee814f21258ff04679bceef7a1658db94046648ab6ec528ac4059aa1f1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/charge_running_omission.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/charge_running_omission.stdout.gz",
+    "sha256": "38ba91a04745c542984a0c5939942e7684758632950495ba539132313ce2b898"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/fermion_metric_response_factor.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_metric_response_factor.py.gz",
+    "sha256": "abbcfb4b2aa614e711370be45f4262e97eabdf31cfd52322cbe1a978668d373c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/fermion_metric_response_factor.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_metric_response_factor.stderr.gz",
+    "sha256": "6fe190db2a80b2c3fb74af83c5417400774e694c930045e932a0fd8e45e3e061"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/fermion_metric_response_factor.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_metric_response_factor.stdout.gz",
+    "sha256": "364517ee0aa9968a069614f31bb5aa3fd3e4f08fa83a1b50d7ca2a8ae44ab44f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/fermion_temporal_trace.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_temporal_trace.py.gz",
+    "sha256": "43be425ca60d8f7411cb020a9a4324bf8b2d8eb13c878f126a6a96ca81384451"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/fermion_temporal_trace.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_temporal_trace.stderr.gz",
+    "sha256": "32255a399d2876cf035fc158beeddd81626d421bdcf3e9beda0903a5e9bfe542"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/fermion_temporal_trace.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_temporal_trace.stdout.gz",
+    "sha256": "b0c9ac93573de14dd0fcf956633502c5b130c93b5146df446f6e5a4dac59a92f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/gauge_temporal_numerator.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/gauge_temporal_numerator.py.gz",
+    "sha256": "7d9a8a11bbac84167826f5dfa02611e7058761c4d26d49d0aa579b180d93fac1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/gauge_temporal_numerator.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/gauge_temporal_numerator.stderr.gz",
+    "sha256": "a4df96cc4d604b6d73041a044a56abfb1ffd51047884678fb728f2d376818712"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/gauge_temporal_numerator.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/gauge_temporal_numerator.stdout.gz",
+    "sha256": "5461632773b80ff5763df5b8c149848c8f0a3d2dbe87bcd463744491df7ea476"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/photon_contact_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/photon_contact_sign.py.gz",
+    "sha256": "682f15f2a427bb013f0e8a252cde7935213381a8ed5b37c0d6cd18a2b1c10ca5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/photon_contact_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/photon_contact_sign.stderr.gz",
+    "sha256": "ee35054cf21873d0c8b98a0a79be4d9fcec27943c4a1eab80f46aa9785cc5aab"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/photon_contact_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/photon_contact_sign.stdout.gz",
+    "sha256": "5461632773b80ff5763df5b8c149848c8f0a3d2dbe87bcd463744491df7ea476"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/threshold_normalization.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/threshold_normalization.py.gz",
+    "sha256": "760cf855e7ac79c496513715cefd939d78a401db90ee3146c0c2f39e8a314437"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/threshold_normalization.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/threshold_normalization.stderr.gz",
+    "sha256": "8d26328c9d27a6320e3087242365328ca7836015a6a2c7ab67ba16017cf7d4bc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block4/mutation_evidence/threshold_normalization.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/threshold_normalization.stdout.gz",
+    "sha256": "38ba91a04745c542984a0c5939942e7684758632950495ba539132313ce2b898"
+  }
+]

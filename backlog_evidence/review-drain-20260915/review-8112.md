@@ -1,0 +1,27 @@
+# PR8112 independent source review
+
+FINAL VERDICT: PASS WITH BOUNDED CLAIMS (source PASS).
+
+Original head b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e; original merge base b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf. Confirmation base 173381a6c85174f0b8d570958ac0588867fee67f; staged tree c2c22c088518419c09693c053c5d8bef70014cff. Exact 38 original path dispositions, 38 final source/archive paths and eight context/authority identities are bound in review-8112.json.
+
+## Finding and affected confirmation
+
+One packaging finding: the original source-only candidate dropped the target of its author-review link. Root restored all 34 original block5 evidence files byte-identically in a historical archive, using unique pr8112 Markdown names and an explicit README name map. The canonical link resolves. All original bytes and all new Markdown basenames/links were independently checked. The historical records assert pending author review and carry no audit authority. The only original note correction is the review link. No scientific source fix was required.
+
+## Complete scope and premise review
+
+Read the complete 436-line note and 401-line runner, all seven original records and nine complete compressed mutant deltas/outcomes. No omitted unique proof, data input, source module or inherited claim remains. Original manifest adds only one node; current-main manifest stays unchanged for combined regeneration. Every final unit path is an addition to current main, so no current-main source is overwritten or deleted. No sibling campaign theorem is needed. The axiom memo, primitive registry/procedure and all three primitive declarations supply no tensor phase, source or Hamiltonian. The actual current Regge and D4 source boundaries are context comparisons, not imported proofs.
+
+The double-curl/scalar constraint and trace-reversed electric curl are consistent with the canonical off-diagonal doubling. Integer stencil commutation ensures modular stabilizer commutation for every N; averaging scalar shifts of the zero-momentum basis state gives a nonempty sector even for composite N. Clock normalization gives the stated quadratic coefficients, positive bounded dynamic terms and volume-dependent norm bound. The penalty gap and sector-selection argument retain volume dependence and do not select a uniform finite-N phase.
+
+The derivative-order argument annihilates constant/linear symmetric strains and constant electric shifts. Weighted spatial moments control the 4/2/3 Hessian block orders, and the displayed singular-in-k similarity is invertible at each nonzero k and bounds every eigenvalue by O(k^3). The premise is a regular lifted character expansion with fixed nonsingular canonical form. Finite-N aliases, failed moment bounds, altered gauge action and singular effective symplectic structure remain outside it. No universal qubit no-go follows. Reduction removes four canonical pairs only at nonzero momentum, leaving two TT pairs with cubic or linear dispersion in the specified comparators.
+
+Independent symbolic controls derive the scalar Hessian from the full tensor energy (rather than entering its claimed matrix), obtaining det K=-J^2/2 and fourth-order nilpotency with nonzero generic cube. Exact nonaxial epsilon contractions at k=(2,-3,4) verify curvature-image surjectivity on the transverse subspace, contact energy rho^2/4 and linear-comparator energy -rho^2/116. A separate Laurent-symbol calculation verifies G S*=0 at arbitrary phases. These controls supplement the primary's full torus stencil, actual metric/source and least-squares checks. The scalar instability is an unconstrained noncompact Gaussian statement; the finite clock Hamiltonian itself remains bounded. Source neutrality, removal of zero modes, prescribed-source status and common oscillator zero-point subtraction are explicit.
+
+N1-N8 preserve the finite-clock aliases, nonlinear mechanisms, local noncompact linear route and physical-source gaps. Gu-Wen sectionVII.E directly confirms its uncontrolled N-type approximation; BDL section4 directly confirms its product low-energy-space assumption. Xu-Horava and Pretko references are prior-art/context rather than phase or source theorems imported here. No literature-priority claim or native gravitational identification is accepted.
+
+## Execution and final boundary
+
+Primary independently ran once under the original90-second cap: four families pass, exit0, 1.5037 seconds, empty stderr. check8112/primary.* preserves the output and metadata. Independent controls are check8112/independent.py/json. All nine historical mutations reject at their intended mathematical assertions; their source/output recovery is preserved, not treated as independent review. The canonical historical cache binds the unchanged input-free runner and its original execution. The note's residual below4e-15 records the historical result; this platform gives4.44e-15 in one least-squares residual, within the explicit2e-12 assertion. This insignificant numerical variation changes no theorem or source disposition.
+
+Actual parser gives bounded_theorem; no scientific runtime file inputs or helpers exist. No per-unit pipeline or audit ran. The combined mechanical gate remains the coordinator's obligation. This reviewer made no source edits, commits or external mutations. Source PASS does not establish an interacting gravitational phase, native model/source selection or retained/Nature grade.

@@ -1,0 +1,22 @@
+[
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/CLAIM_STATUS_CERTIFICATE.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/pr8109-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/TRACE_GATE.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/pr8109-TRACE_GATE.md",
+    "sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/REVIEW_HISTORY.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/pr8109-REVIEW_HISTORY.md",
+    "sha256": "e96e78c62da5345914ccb0122a36fe1ff0918fa7f885b73a168f347a61bdfd7a"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/HANDOFF.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/pr8109-HANDOFF.md",
+    "sha256": "d09a45e9c5b3be53df512946dbd31cf2b852fb27d573deb6f36521362e03aeb1"
+  }
+]

@@ -1,0 +1,503 @@
+{
+  "unit": [
+    8110
+  ],
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "4f75dd5d2e6e524b48c01c36853d50be7640e6f7",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "proposal_base": "64402f54b06356cb9acf3e5631046e593cc83978",
+  "original_path_dispositions": [
+    {
+      "original_path": "docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "ee88959088a0772f1222130cd4eb03ec10c3cbb5f3d5289a7518d1f576b5e45c",
+      "proposal_sha256": "ee88959088a0772f1222130cd4eb03ec10c3cbb5f3d5289a7518d1f576b5e45c",
+      "disposition": "narrowed with unsupported physical/universal claims explicitly withdrawn",
+      "final_path": "docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "db05d76300ade3f3da35ca9b502f03f695e3109bb3810af1154645eccad596fd"
+    },
+    {
+      "original_path": "logs/runner-cache/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.txt",
+      "original_sha256": "1475bf29d3e62bbe69449a4d891476f95695796e4dc5712754d89a0cc0adee8d",
+      "proposal_sha256": "1475bf29d3e62bbe69449a4d891476f95695796e4dc5712754d89a0cc0adee8d",
+      "disposition": "superseded by fresh identity-pinned63/0 output; original cache retained at frozen PR head",
+      "final_path": "logs/runner-cache/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.txt",
+      "final_sha256": "94c9712d0112ae004e261fe60ae653e066e3ba3df26ce857431587d35bc6e646"
+    },
+    {
+      "original_path": "scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py",
+      "original_sha256": "f1e6dcdb3117aad956fa7bfdcd9e88ea46213e89eeefcf750bf66bdc2e9fe158",
+      "proposal_sha256": "f1e6dcdb3117aad956fa7bfdcd9e88ea46213e89eeefcf750bf66bdc2e9fe158",
+      "disposition": "finite math accepted; source pins, truthful labels and five resolution lines added",
+      "final_path": "scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py",
+      "final_sha256": "461559764375cda8335da20f4a91b7a8dc0c271656db5ad76e11bd718c425915"
+    }
+  ],
+  "original_unique_claude_files": 0,
+  "complete_original_delta": true,
+  "source_read_coverage": "449-line note and 727-line runner complete; 79-line cache replay; no original deleted or inherited source delta",
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority",
+      "read_scope": "prior complete read reused after exact-byte freshness check",
+      "unchanged_from_prior_read_5deabeb698": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority",
+      "read_scope": "prior complete read reused after exact-byte freshness check",
+      "unchanged_from_prior_read_5deabeb698": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority",
+      "read_scope": "prior complete read reused after exact-byte freshness check",
+      "unchanged_from_prior_read_5deabeb698": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "role": "authority",
+      "read_scope": "prior complete read reused after exact-byte freshness check",
+      "unchanged_from_prior_read_5deabeb698": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "authority",
+      "read_scope": "prior complete read reused after exact-byte freshness check",
+      "unchanged_from_prior_read_5deabeb698": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "authority",
+      "read_scope": "prior complete read reused after exact-byte freshness check",
+      "unchanged_from_prior_read_5deabeb698": true
+    },
+    {
+      "path": "docs/COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "fd39a661c586a52610b6bce3907fd857c7ab94e6fdc0c9b7cc2e14dc179763a9",
+      "role": "actual upstream boundary source; finite runner has no file reads",
+      "read_scope": "declared inputs, operational meaning, proof boundaries and interface claims"
+    },
+    {
+      "path": "docs/FINITE_BKSF_SIGN_AND_SUPERLATTICE_MARKER_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "bdaccbb0c4a000d0ae339af2e71dc9f0989be3266488b61050e57ca902c172c9",
+      "role": "actual upstream boundary source; finite runner has no file reads",
+      "read_scope": "declared inputs, operational meaning, proof boundaries and interface claims"
+    },
+    {
+      "path": "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd",
+      "role": "actual upstream boundary source; finite runner has no file reads",
+      "read_scope": "declared inputs, operational meaning, proof boundaries and interface claims"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "finding": "Unsupported two full-axiom G/E models and hopping/record bridge",
+      "required_resolution": "Replace Theorem7 with explicit open interpretation boundary; supplied finite H/state/weight only.",
+      "status": "resolved and same-session final confirmed"
+    },
+    {
+      "id": "R2",
+      "finding": "Universal local-rule language exceeds count-summary family",
+      "required_resolution": "Restrict (v,k,m)/(v,u,m), fixed exteriors, homogeneous bonds and degree/occupied-count stars; no all directional NN quantifier.",
+      "status": "resolved and same-session final confirmed"
+    },
+    {
+      "id": "R3",
+      "finding": "Existential path support is not normalized formation law",
+      "required_resolution": "Arbitrary forbidden sets can disable both next values; no transition probabilities, general admissibility or record statistics established.",
+      "status": "resolved and same-session final confirmed"
+    },
+    {
+      "id": "R4",
+      "finding": "Forall impossibility inference invalid",
+      "required_resolution": "a masks{{x}}, b masks{{x},{y}}: exists cannot match {a}; forall F={y} does. Withdraw inference.",
+      "status": "resolved and same-session final confirmed"
+    },
+    {
+      "id": "R5",
+      "finding": "Landed execution certificate and historical-control attribution",
+      "required_resolution": "Add honest per_element/site/mode/block/lattice_wide stdout; original-author mutation table remains historical, not independently authenticated.",
+      "status": "resolved and same-session final confirmed"
+    }
+  ],
+  "claim_dispositions": {
+    "T1": "ground energies, uniqueness, gap>1/4 and exact zero patterns independently verified",
+    "T2": "signed automorphism character fixed-point criterion valid; runner checks eigencharacter; incomplete zero prediction honestly quantified",
+    "T3": "PF for supplied connected stoquastic matrix and elementary positive finite products valid; arbitrary kernels not covered",
+    "T4": "homogeneous bond class and degree/occupied-count star censuses valid; wider spatial rule classes not covered",
+    "T5": "finite exists-order support counts valid; not normalized record law",
+    "T6": "joint finite support counts valid; not forall-order or unrestricted NN no-go",
+    "T7": "withdrawn as theorem; Section7 explicitly open interpretation, encoding and physical bridge obligations"
+  },
+  "checks": {
+    "canonical_original": {
+      "exit": 0,
+      "seconds": 66.13054550008383
+    },
+    "independent_slater": [
+      {
+        "dimensions": [
+          2,
+          3
+        ],
+        "N": 2,
+        "energy": "-2 - sqrt(2)",
+        "gap": "2 - sqrt(2)",
+        "zeros": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "independent_slater_matches": true
+      },
+      {
+        "dimensions": [
+          2,
+          3
+        ],
+        "N": 3,
+        "energy": "-2*sqrt(2) - 1",
+        "gap": "-2 + 2*sqrt(2)",
+        "zeros": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "independent_slater_matches": true
+      },
+      {
+        "dimensions": [
+          2,
+          2,
+          2
+        ],
+        "N": 4,
+        "energy": "-6",
+        "gap": "2",
+        "zeros": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            6,
+            7
+          ],
+          [
+            0,
+            2,
+            4,
+            6
+          ],
+          [
+            0,
+            2,
+            5,
+            7
+          ],
+          [
+            0,
+            3,
+            4,
+            7
+          ],
+          [
+            1,
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            3,
+            4,
+            6
+          ],
+          [
+            1,
+            3,
+            5,
+            7
+          ],
+          [
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            2,
+            3,
+            6,
+            7
+          ],
+          [
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "independent_slater_matches": true
+      },
+      {
+        "dimensions": [
+          3,
+          3
+        ],
+        "N": 3,
+        "energy": "-4*sqrt(2)",
+        "gap": "sqrt(2)",
+        "zeros": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            4,
+            8
+          ],
+          [
+            1,
+            4,
+            7
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            5,
+            8
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ]
+        ],
+        "independent_slater_matches": true
+      }
+    ],
+    "independent_support": [
+      {
+        "convention": "unrec",
+        "single_counts": {
+          "2": 476,
+          "3": 201
+        },
+        "pair_count": 0,
+        "orders_per_pattern": 720,
+        "independent_masks": true
+      },
+      {
+        "convention": "empty",
+        "single_counts": {
+          "2": 782,
+          "3": 2607
+        },
+        "pair_count": 39,
+        "orders_per_pattern": 720,
+        "independent_masks": true
+      }
+    ],
+    "all_reachable_classes": [
+      {
+        "sector": [
+          "grid2x3",
+          2
+        ],
+        "conv": "unrec",
+        "all": 16,
+        "minimal": 16,
+        "missing": []
+      },
+      {
+        "sector": [
+          "grid2x3",
+          2
+        ],
+        "conv": "empty",
+        "all": 16,
+        "minimal": 16,
+        "missing": []
+      },
+      {
+        "sector": [
+          "grid2x3",
+          3
+        ],
+        "conv": "unrec",
+        "all": 18,
+        "minimal": 18,
+        "missing": []
+      },
+      {
+        "sector": [
+          "grid2x3",
+          3
+        ],
+        "conv": "empty",
+        "all": 19,
+        "minimal": 19,
+        "missing": []
+      },
+      {
+        "sector": [
+          "cube",
+          4
+        ],
+        "conv": "unrec",
+        "all": 20,
+        "minimal": 20,
+        "missing": []
+      },
+      {
+        "sector": [
+          "cube",
+          4
+        ],
+        "conv": "empty",
+        "all": 20,
+        "minimal": 20,
+        "missing": []
+      },
+      {
+        "sector": [
+          "grid3x3",
+          3
+        ],
+        "conv": "unrec",
+        "all": 26,
+        "minimal": 26,
+        "missing": []
+      },
+      {
+        "sector": [
+          "grid3x3",
+          3
+        ],
+        "conv": "empty",
+        "all": 26,
+        "minimal": 26,
+        "missing": []
+      }
+    ],
+    "type_extractor": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "scratch_initial_syntax_error": "independent_support.py missing space in else39; corrected before successful independent run",
+    "mathematical_AST_unchanged": true,
+    "math_AST_normalization": "Remove docstrings, print calls, AUDIT_INPUT_PATHS assignment and first check() argument labels only; all remaining AST identical"
+  },
+  "current_main_preservation": "Original and candidate only add the same three absent source/cache paths; no existing main source replaced",
+  "full_pipeline_runs": 0,
+  "audit_actions": 0,
+  "source_edits_by_reviewer": 0,
+  "evidence_hashes": {
+    "check8110/original.stdout": "761ca5fa9f0c788e35c9771ad6d996ad2539df22f857e98cc3dd7a6fac8b1194",
+    "check8110/independent_slater.py": "b40b5d55bec1b34dd271a1851b5cb50e6ab26563fdfbc5d53fed7bc6ad7bc3b0",
+    "check8110/original-run.json": "d08c7e031af429031286aad269eb54f46a0fb64f3984cb4541987061fcfe98b3",
+    "check8110/original-runner.py": "f1e6dcdb3117aad956fa7bfdcd9e88ea46213e89eeefcf750bf66bdc2e9fe158",
+    "check8110/original.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check8110/class-coverage.json": "3d13aba4e4293d1bd179a8528af8ff90c087a910358750551508a99809181103",
+    "check8110/independent-support.json": "b054b00554e1cf3d6c6e8d2f3b79f5671f911c784f865c15c53ba48fb02c4a28",
+    "check8110/original-note.md": "ee88959088a0772f1222130cd4eb03ec10c3cbb5f3d5289a7518d1f576b5e45c",
+    "check8110/independent_support.py": "538d2dce428a1d1beac579dccb0544d312b71ba5acccfb7cb12924e777801fdb",
+    "check8110/independent-slater.json": "780ec1e477dbe19a4ebce031efd4136434bf43161840200fdfb35aeea8d52687"
+  },
+  "correction_confirmation": {
+    "working_tree": "unit8110-author-copy",
+    "source_freeze": {
+      "scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py": "461559764375cda8335da20f4a91b7a8dc0c271656db5ad76e11bd718c425915",
+      "docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md": "db05d76300ade3f3da35ca9b502f03f695e3109bb3810af1154645eccad596fd",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md": "fd39a661c586a52610b6bce3907fd857c7ab94e6fdc0c9b7cc2e14dc179763a9",
+      "docs/FINITE_BKSF_SIGN_AND_SUPERLATTICE_MARKER_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-02.md": "bdaccbb0c4a000d0ae339af2e71dc9f0989be3266488b61050e57ca902c172c9",
+      "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd"
+    },
+    "source_freeze_matches": true,
+    "mathematics_unchanged": true,
+    "cache_status": "fresh",
+    "input_fingerprint": "d711843c49688a3afea1ed1ec1c6a403d34035a20d76b0de0aef22d640485d93",
+    "canonical_final": {
+      "pass": 63,
+      "fail": 0,
+      "seconds": 85.87774276733398,
+      "stdout_bytes": 5868
+    },
+    "stage_confirmation": "exact three paths index=working; final freeze unchanged"
+  },
+  "staged_tree": "9ac8fce61e335d90344058ac31caa17d83af331f",
+  "final_files": [
+    {
+      "path": "docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "db05d76300ade3f3da35ca9b502f03f695e3109bb3810af1154645eccad596fd",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.txt",
+      "sha256": "94c9712d0112ae004e261fe60ae653e066e3ba3df26ce857431587d35bc6e646",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py",
+      "sha256": "461559764375cda8335da20f4a91b7a8dc0c271656db5ad76e11bd718c425915",
+      "index_equals_worktree": true
+    }
+  ],
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8110-author-copy",
+  "limitations": "Finite supplied hopping spectra and declared existential count-summary supports only. No normalized formation law, physical record bridge, complete axiom model, unrestricted local-rule no-go or grading selection. Combined mechanical landing gate is coordinator responsibility; this verdict is source review, not audit.",
+  "disposition_map_sha256": "c51c9671fd345487e6dfa5a1fe76fdc514177cc6f6016d392a1963aaa34608bb"
+}

@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-09-15T11:12:12.886419+00:00",
+  "main_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "provisional_source_revision": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+  "sources": [
+    {
+      "url": "https://link.springer.com/article/10.1007/s10955-025-03420-1",
+      "title": "Chevyrev-Garban, Villain Action in Lattice Gauge Theory, 2025",
+      "read_scope": "Full scientific HTML body sections1-5 read across preceding and current web calls; Theorem1.5, Example2.2, Lemma3.3 and Corollary1.6 proof reread for the clock-pinning application. Linked transitive references not all read.",
+      "use": "Published coarse carpet total-variation convergence; extension to pinning and arbitrary characters proved in this block.",
+      "local_pdf": "Download attempts failed; no local PDF or hash claimed."
+    },
+    {
+      "url": "https://www.math.uchicago.edu/~lawler/srwbook.pdf",
+      "title": "Lawler-Limic, Random Walk: A Modern Introduction",
+      "read_scope": "Theorem4.3.1 and immediate asymptotic calculation, printed pages81-83; not the entire book.",
+      "use": "G3(R)=1/(4pi R)+O(R^-3) after division by6; the uniform bound also follows without this asymptotic."
+    },
+    {
+      "revision": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "paths": [
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "read_scope": "Original full author sources previously read; relevant finite-cochain, all-real-source curvature, current law and Wilson-coset proofs reread this block.",
+      "use": "Explicitly provisional large-beta free-cubic curvature and exact physical Wilson identity.",
+      "independent_review": false
+    }
+  ],
+  "novelty_scope": "Targeted literature search confirms prior rigorous nonconfinement work including Guth1980 and the2025 carpet result. No novelty claim for nonconfinement, Ginibre, spectral transfer, or Gaussian periodization. No finite-clock theorem imported from a search snippet."
+}

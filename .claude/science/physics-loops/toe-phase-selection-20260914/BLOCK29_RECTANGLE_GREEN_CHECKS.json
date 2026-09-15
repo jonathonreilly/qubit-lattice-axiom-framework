@@ -1,0 +1,572 @@
+{
+  "scope": "Finite Fourier and Poisson identities plus quadrature convergence; no numerical continuum proof.",
+  "independent_review": false,
+  "families": {
+    "time_green_geometric_sum": {
+      "cases": [
+        {
+          "lambda": 0.07,
+          "T": 1,
+          "direct": 1.8735003362699219,
+          "formula": 1.873500336269922,
+          "difference": 2.220446049250313e-16
+        },
+        {
+          "lambda": 0.07,
+          "T": 2,
+          "direct": 6.625146368618582,
+          "formula": 6.62514636861858,
+          "difference": 1.7763568394002505e-15
+        },
+        {
+          "lambda": 0.07,
+          "T": 5,
+          "direct": 32.21299298025954,
+          "formula": 32.21299298025953,
+          "difference": 1.4210854715202004e-14
+        },
+        {
+          "lambda": 0.07,
+          "T": 17,
+          "direct": 189.9323419206657,
+          "formula": 189.93234192066566,
+          "difference": 2.842170943040401e-14
+        },
+        {
+          "lambda": 0.4,
+          "T": 1,
+          "direct": 0.753778361444409,
+          "formula": 0.7537783614444094,
+          "difference": 3.3306690738754696e-16
+        },
+        {
+          "lambda": 0.4,
+          "T": 2,
+          "direct": 2.3166247903554,
+          "formula": 2.3166247903554003,
+          "difference": 4.440892098500626e-16
+        },
+        {
+          "lambda": 0.4,
+          "T": 5,
+          "direct": 8.898899966464496,
+          "formula": 8.898899966464498,
+          "difference": 1.7763568394002505e-15
+        },
+        {
+          "lambda": 0.4,
+          "T": 17,
+          "direct": 38.731203979972044,
+          "formula": 38.73120397997205,
+          "difference": 7.105427357601002e-15
+        },
+        {
+          "lambda": 2.0,
+          "T": 1,
+          "direct": 0.2886751345948129,
+          "formula": 0.28867513459481287,
+          "difference": 5.551115123125783e-17
+        },
+        {
+          "lambda": 2.0,
+          "T": 2,
+          "direct": 0.7320508075688774,
+          "formula": 0.7320508075688772,
+          "difference": 2.220446049250313e-16
+        },
+        {
+          "lambda": 2.0,
+          "T": 5,
+          "direct": 2.211723588727451,
+          "formula": 2.2117235887274505,
+          "difference": 4.440892098500626e-16
+        },
+        {
+          "lambda": 2.0,
+          "T": 17,
+          "direct": 8.211324865459801,
+          "formula": 8.211324865459801,
+          "difference": 0.0
+        },
+        {
+          "lambda": 9.0,
+          "T": 1,
+          "direct": 0.09245003270420485,
+          "formula": 0.09245003270420485,
+          "difference": 0.0
+        },
+        {
+          "lambda": 9.0,
+          "T": 2,
+          "direct": 0.2018504251546631,
+          "formula": 0.2018504251546631,
+          "difference": 0.0
+        },
+        {
+          "lambda": 9.0,
+          "T": 5,
+          "direct": 0.5350112368594938,
+          "formula": 0.5350112368594938,
+          "difference": 0.0
+        },
+        {
+          "lambda": 9.0,
+          "T": 17,
+          "direct": 1.8683444371768432,
+          "formula": 1.8683444371768434,
+          "difference": 2.220446049250313e-16
+        }
+      ]
+    },
+    "explicit_periodic_currents": {
+      "cases": [
+        {
+          "side": 8,
+          "unit_face_energy": 0.4998779296875,
+          "exact_hodge_value": 0.4998779296875,
+          "rectangle_2_4_energy": 2.227541639500039,
+          "exchanged_rectangle_energy": 2.2275416395000387,
+          "side_contributions": [
+            1.509138222675623,
+            0.718403416824416
+          ]
+        },
+        {
+          "side": 12,
+          "unit_face_energy": 0.49997588734567894,
+          "exact_hodge_value": 0.499975887345679,
+          "rectangle_2_4_energy": 2.2369029243183074,
+          "exchanged_rectangle_energy": 2.2369029243183074,
+          "side_contributions": [
+            1.5116447543244442,
+            0.7252581699938632
+          ]
+        },
+        {
+          "side": 16,
+          "unit_face_energy": 0.49999237060546875,
+          "exact_hodge_value": 0.49999237060546875,
+          "rectangle_2_4_energy": 2.238149067080903,
+          "exchanged_rectangle_energy": 2.238149067080903,
+          "side_contributions": [
+            1.5121359703910273,
+            0.7260130966898757
+          ]
+        },
+        {
+          "side": 24,
+          "unit_face_energy": 0.49999849295910487,
+          "exact_hodge_value": 0.4999984929591049,
+          "rectangle_2_4_energy": 2.238576029553906,
+          "exchanged_rectangle_energy": 2.238576029553906,
+          "side_contributions": [
+            1.512325575418254,
+            0.7262504541356519
+          ]
+        },
+        {
+          "side": 32,
+          "unit_face_energy": 0.4999995231628418,
+          "exact_hodge_value": 0.4999995231628418,
+          "rectangle_2_4_energy": 2.2386446287690083,
+          "exchanged_rectangle_energy": 2.2386446287690083,
+          "side_contributions": [
+            1.512358081393864,
+            0.7262865473751443
+          ]
+        }
+      ]
+    },
+    "independent_poisson_and_faults": {
+      "cg_energy": 1.8059340722959252,
+      "fft_energy": 1.805934072295925,
+      "poisson_residuals": [
+        1.761806761875511e-13,
+        1.1911309657077808e-13
+      ],
+      "missing_spatial_ends_energy": 1.0937043445198331,
+      "missing_spatial_ends_divergence": 1.0
+    },
+    "reduced_infinite_time_quadrature": {
+      "levels": [
+        {
+          "n": 24,
+          "G4_origin_quadrature": 0.15482216520681955,
+          "rectangles": {
+            "1,1": {
+              "energy": 0.4999996016695211,
+              "energy_per_time": 0.4999996016695211,
+              "static_limit": 0.3333333333333333,
+              "positive_endpoint_remainder": 0.1666662683361878,
+              "remainder_upper": 0.3096443304136391
+            },
+            "1,2": {
+              "energy": 0.8622489254591125,
+              "energy_per_time": 0.43112446272955623,
+              "static_limit": 0.3333333333333333,
+              "positive_endpoint_remainder": 0.19558225879244587,
+              "remainder_upper": 0.3096443304136391
+            },
+            "2,1": {
+              "energy": 0.8622489555788914,
+              "energy_per_time": 0.8622489555788914,
+              "static_limit": 0.41968426104864953,
+              "positive_endpoint_remainder": 0.44256469453024183,
+              "remainder_upper": 1.2385773216545564
+            },
+            "2,4": {
+              "energy": 2.2386516751639967,
+              "energy_per_time": 0.5596629187909992,
+              "static_limit": 0.41968426104864953,
+              "positive_endpoint_remainder": 0.5599146309693984,
+              "remainder_upper": 1.2385773216545564
+            },
+            "4,2": {
+              "energy": 2.2386536528610743,
+              "energy_per_time": 1.1193268264305372,
+              "static_limit": 0.4649017990218766,
+              "positive_endpoint_remainder": 1.308850054817321,
+              "remainder_upper": 4.9543092866182254
+            },
+            "4,16": {
+              "energy": 8.87026581764979,
+              "energy_per_time": 0.5543916136031118,
+              "static_limit": 0.4649017990218766,
+              "positive_endpoint_remainder": 1.4318370332997632,
+              "remainder_upper": 4.9543092866182254
+            },
+            "4,64": {
+              "energy": 31.18631111154882,
+              "energy_per_time": 0.48728611111795034,
+              "static_limit": 0.4649017990218766,
+              "positive_endpoint_remainder": 1.432595974148718,
+              "remainder_upper": 4.9543092866182254
+            },
+            "8,64": {
+              "energy": 34.39441339761237,
+              "energy_per_time": 0.5374127093376933,
+              "static_limit": 0.48578956856341904,
+              "positive_endpoint_remainder": 3.303881009553552,
+              "remainder_upper": 19.817237146472902
+            }
+          }
+        },
+        {
+          "n": 32,
+          "G4_origin_quadrature": 0.15487093317995446,
+          "rectangles": {
+            "1,1": {
+              "energy": 0.49999987467392787,
+              "energy_per_time": 0.49999987467392787,
+              "static_limit": 0.33333333333333337,
+              "positive_endpoint_remainder": 0.1666665413405945,
+              "remainder_upper": 0.3097418663599089
+            },
+            "1,2": {
+              "energy": 0.8622500088524313,
+              "energy_per_time": 0.43112500442621565,
+              "static_limit": 0.33333333333333337,
+              "positive_endpoint_remainder": 0.19558334218576456,
+              "remainder_upper": 0.3097418663599089
+            },
+            "2,1": {
+              "energy": 0.8622500141643972,
+              "energy_per_time": 0.8622500141643972,
+              "static_limit": 0.41968359591482973,
+              "positive_endpoint_remainder": 0.44256641824956744,
+              "remainder_upper": 1.2389674654396357
+            },
+            "2,4": {
+              "energy": 2.238667951565502,
+              "energy_per_time": 0.5596669878913755,
+              "static_limit": 0.41968359591482973,
+              "positive_endpoint_remainder": 0.5599335679061829,
+              "remainder_upper": 1.2389674654396357
+            },
+            "4,2": {
+              "energy": 2.2386682964130413,
+              "energy_per_time": 1.1193341482065207,
+              "static_limit": 0.4648884044969086,
+              "positive_endpoint_remainder": 1.3088914874192241,
+              "remainder_upper": 4.955869861758543
+            },
+            "4,16": {
+              "energy": 8.870776593182711,
+              "energy_per_time": 0.5544235370739194,
+              "static_limit": 0.4648884044969086,
+              "positive_endpoint_remainder": 1.432562121232174,
+              "remainder_upper": 4.955869861758543
+            },
+            "4,64": {
+              "energy": 31.186578471329945,
+              "energy_per_time": 0.4872902886145304,
+              "static_limit": 0.4648884044969086,
+              "positive_endpoint_remainder": 1.4337205835277957,
+              "remainder_upper": 4.955869861758543
+            },
+            "8,64": {
+              "energy": 34.38509024593529,
+              "energy_per_time": 0.5372670350927389,
+              "static_limit": 0.4855562141854345,
+              "positive_endpoint_remainder": 3.3094925380674804,
+              "remainder_upper": 19.82347944703417
+            }
+          }
+        },
+        {
+          "n": 48,
+          "G4_origin_quadrature": 0.1549056653502839,
+          "rectangles": {
+            "1,1": {
+              "energy": 0.49999997534302376,
+              "energy_per_time": 0.49999997534302376,
+              "static_limit": 0.3333333333333333,
+              "positive_endpoint_remainder": 0.16666664200969042,
+              "remainder_upper": 0.3098113307005678
+            },
+            "1,2": {
+              "energy": 0.8622504098509339,
+              "energy_per_time": 0.43112520492546696,
+              "static_limit": 0.3333333333333333,
+              "positive_endpoint_remainder": 0.19558374318426733,
+              "remainder_upper": 0.3098113307005678
+            },
+            "2,1": {
+              "energy": 0.8622504103142945,
+              "energy_per_time": 0.8622504103142945,
+              "static_limit": 0.4196834175482125,
+              "positive_endpoint_remainder": 0.4425669927660821,
+              "remainder_upper": 1.2392453228022713
+            },
+            "2,4": {
+              "energy": 2.238674158775181,
+              "energy_per_time": 0.5596685396937953,
+              "static_limit": 0.4196834175482125,
+              "positive_endpoint_remainder": 0.5599404885823309,
+              "remainder_upper": 1.2392453228022713
+            },
+            "4,2": {
+              "energy": 2.2386741886173316,
+              "energy_per_time": 1.1193370943086658,
+              "static_limit": 0.4648848242640548,
+              "positive_endpoint_remainder": 1.3089045400892219,
+              "remainder_upper": 4.956981291209085
+            },
+            "4,16": {
+              "energy": 8.871048247943335,
+              "energy_per_time": 0.5544405154964585,
+              "static_limit": 0.4648848242640548,
+              "positive_endpoint_remainder": 1.4328910597184592,
+              "remainder_upper": 4.956981291209085
+            },
+            "4,64": {
+              "energy": 31.18711695961409,
+              "energy_per_time": 0.48729870249397017,
+              "static_limit": 0.4648848242640548,
+              "positive_endpoint_remainder": 1.4344882067145823,
+              "remainder_upper": 4.956981291209085
+            },
+            "8,64": {
+              "energy": 34.384650325966454,
+              "energy_per_time": 0.5372601613432259,
+              "static_limit": 0.48549503866795096,
+              "positive_endpoint_remainder": 3.3129678512175955,
+              "remainder_upper": 19.82792516483634
+            }
+          }
+        },
+        {
+          "n": 64,
+          "G4_origin_quadrature": 0.1549178016234185,
+          "rectangles": {
+            "1,1": {
+              "energy": 0.4999999922092504,
+              "energy_per_time": 0.4999999922092504,
+              "static_limit": 0.33333333333333337,
+              "positive_endpoint_remainder": 0.166666658875917,
+              "remainder_upper": 0.309835603246837
+            },
+            "1,2": {
+              "energy": 0.8622504771843511,
+              "energy_per_time": 0.43112523859217555,
+              "static_limit": 0.33333333333333337,
+              "positive_endpoint_remainder": 0.1955838105176843,
+              "remainder_upper": 0.309835603246837
+            },
+            "2,1": {
+              "energy": 0.8622504772666356,
+              "energy_per_time": 0.8622504772666356,
+              "static_limit": 0.4196833970101417,
+              "positive_endpoint_remainder": 0.44256708025649394,
+              "remainder_upper": 1.239342412987348
+            },
+            "2,4": {
+              "energy": 2.238675219603297,
+              "energy_per_time": 0.5596688049008243,
+              "static_limit": 0.4196833970101417,
+              "positive_endpoint_remainder": 0.5599416315627304,
+              "remainder_upper": 1.239342412987348
+            },
+            "4,2": {
+              "energy": 2.238675224888125,
+              "energy_per_time": 1.1193376124440626,
+              "static_limit": 0.46488441282173215,
+              "positive_endpoint_remainder": 1.3089063992446608,
+              "remainder_upper": 4.957369651949392
+            },
+            "4,16": {
+              "energy": 8.871104839415274,
+              "energy_per_time": 0.5544440524634546,
+              "static_limit": 0.46488441282173215,
+              "positive_endpoint_remainder": 1.4329542342675605,
+              "remainder_upper": 4.957369651949392
+            },
+            "4,64": {
+              "energy": 31.187342824596872,
+              "energy_per_time": 0.4873022316343261,
+              "static_limit": 0.46488441282173215,
+              "positive_endpoint_remainder": 1.4347404040060157,
+              "remainder_upper": 4.957369651949392
+            },
+            "8,64": {
+              "energy": 34.38528119350866,
+              "energy_per_time": 0.5372700186485728,
+              "static_limit": 0.4854880768530293,
+              "positive_endpoint_remainder": 3.3140442749147887,
+              "remainder_upper": 19.82947860779757
+            }
+          }
+        },
+        {
+          "n": 96,
+          "G4_origin_quadrature": 0.15492646406567825,
+          "rectangles": {
+            "1,1": {
+              "energy": 0.49999999846261617,
+              "energy_per_time": 0.49999999846261617,
+              "static_limit": 0.3333333333333333,
+              "positive_endpoint_remainder": 0.16666666512928285,
+              "remainder_upper": 0.3098529281313565
+            },
+            "1,2": {
+              "energy": 0.8622505021719404,
+              "energy_per_time": 0.4311252510859702,
+              "static_limit": 0.3333333333333333,
+              "positive_endpoint_remainder": 0.19558383550527386,
+              "remainder_upper": 0.3098529281313565
+            },
+            "2,1": {
+              "energy": 0.8622505021791531,
+              "energy_per_time": 0.8622505021791531,
+              "static_limit": 0.419683391471532,
+              "positive_endpoint_remainder": 0.4425671107076211,
+              "remainder_upper": 1.239411712525426
+            },
+            "2,4": {
+              "energy": 2.238675616145356,
+              "energy_per_time": 0.559668904036339,
+              "static_limit": 0.419683391471532,
+              "positive_endpoint_remainder": 0.5599420502592279,
+              "remainder_upper": 1.239411712525426
+            },
+            "4,2": {
+              "energy": 2.2386756166076753,
+              "energy_per_time": 1.1193378083038377,
+              "static_limit": 0.46488430195154845,
+              "positive_endpoint_remainder": 1.3089070127045785,
+              "remainder_upper": 4.957646850101704
+            },
+            "4,16": {
+              "energy": 8.871127860388194,
+              "energy_per_time": 0.5544454912742621,
+              "static_limit": 0.46488430195154845,
+              "positive_endpoint_remainder": 1.4329790291634181,
+              "remainder_upper": 4.957646850101704
+            },
+            "4,64": {
+              "energy": 31.18749118639119,
+              "energy_per_time": 0.4873045497873623,
+              "static_limit": 0.46488430195154845,
+              "positive_endpoint_remainder": 1.4348958614920877,
+              "remainder_upper": 4.957646850101704
+            },
+            "8,64": {
+              "energy": 34.38580849548612,
+              "energy_per_time": 0.5372782577419706,
+              "static_limit": 0.4854862073503554,
+              "positive_endpoint_remainder": 3.3146912250633727,
+              "remainder_upper": 19.830587400406817
+            }
+          }
+        },
+        {
+          "n": 128,
+          "G4_origin_quadrature": 0.15492949467711004,
+          "rectangles": {
+            "1,1": {
+              "energy": 0.4999999995137313,
+              "energy_per_time": 0.4999999995137313,
+              "static_limit": 0.33333333333333337,
+              "positive_endpoint_remainder": 0.16666666618039794,
+              "remainder_upper": 0.30985898935422007
+            },
+            "1,2": {
+              "energy": 0.862250506374359,
+              "energy_per_time": 0.4311252531871795,
+              "static_limit": 0.33333333333333337,
+              "positive_endpoint_remainder": 0.1955838397076922,
+              "remainder_upper": 0.30985898935422007
+            },
+            "2,1": {
+              "energy": 0.8622505063756418,
+              "energy_per_time": 0.8622505063756418,
+              "static_limit": 0.41968339083160344,
+              "positive_endpoint_remainder": 0.44256711554403844,
+              "remainder_upper": 1.2394359574168803
+            },
+            "2,4": {
+              "energy": 2.2386756831262327,
+              "energy_per_time": 0.5596689207815582,
+              "static_limit": 0.41968339083160344,
+              "positive_endpoint_remainder": 0.5599421197998191,
+              "remainder_upper": 1.2394359574168803
+            },
+            "4,2": {
+              "energy": 2.238675683208414,
+              "energy_per_time": 1.119337841604207,
+              "static_limit": 0.4648842891477247,
+              "positive_endpoint_remainder": 1.3089071049129644,
+              "remainder_upper": 4.957743829667521
+            },
+            "4,16": {
+              "energy": 8.871131953823244,
+              "energy_per_time": 0.5544457471139528,
+              "static_limit": 0.4648842891477247,
+              "positive_endpoint_remainder": 1.4329833274596495,
+              "remainder_upper": 4.957743829667521
+            },
+            "4,64": {
+              "energy": 31.187530420562386,
+              "energy_per_time": 0.4873051628212873,
+              "static_limit": 0.4648842891477247,
+              "positive_endpoint_remainder": 1.4349359151080037,
+              "remainder_upper": 4.957743829667521
+            },
+            "8,64": {
+              "energy": 34.385959059487675,
+              "energy_per_time": 0.5372806103044949,
+              "static_limit": 0.4854859918858576,
+              "positive_endpoint_remainder": 3.3148555787927876,
+              "remainder_upper": 19.830975318670085
+            }
+          }
+        }
+      ],
+      "infinite_volume_exact_calibrations": {
+        "unit_face_energy": 0.5,
+        "unit_separation_static_rate": 0.3333333333333333
+      },
+      "quadrature_error_certified": false
+    }
+  }
+}

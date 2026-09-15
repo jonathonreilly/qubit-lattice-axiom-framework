@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-09-15T11:12:12.886419+00:00",
+  "author_read": "Personal full new analytic notes and runner source read; finite original-law, Fourier/current, temporal-link/transfer and Poisson/Green constructions compared. Not an independent reviewer.",
+  "findings_resolved": [
+    "Thin slabs are excluded upstream: matched by monotone free-state exhaustion instead of extending curvature.",
+    "Separate free-limit uniqueness from all-Gibbs uniqueness/ergodicity.",
+    "Retain a possible zero spectral atom; no unsupported injective infinite-volume transfer claim.",
+    "Bound the path-accessible static spectral threshold; do not exchange spectral infima and spatial limits.",
+    "Keep exact aliases and divisibility condition.",
+    "Rename spatial scalar Laplacian notation to avoid confusion with four-dimensional3-form Hodge Laplacian.",
+    "Preserve approximation and fixture failures."
+  ],
+  "remaining": [
+    "Provisional source curvature/cluster theorem independent review",
+    "Full fixed-clock Gaussian physical-field limit",
+    "Dynamical matter, native law selection and physical parameter identification"
+  ],
+  "evidence_sha256": {
+    "BLOCK29_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_TRANSFER.md": "08c99113a059d671c07683d4cbc2674ffc41ceb92900f96a8496c3faf5b414c9",
+    "BLOCK29_CLOCK_GINIBRE_TRANSFER_CHECKS.json": "cf7322b4dfdbd97179367e2b052ab70b6881a3a43a3a34d663c4c7cafbdd2684",
+    "BLOCK29_READING_LEDGER.json": "930a79880f101fe32f09bdc8a82bbf48ebfd7adfaf4f3833efe5ecc98614ce16",
+    "BLOCK29_RECTANGLE_GREEN_CHECKS.json": "660b2d9f6938d53724d5c60992722a14b498c8f2b7ac8d8ebb538f8147831cae",
+    "BLOCK29_WILSON_SHIFT_CHECKS.json": "4633a4e66788ee2849b9a59a31e0b3bb5a0e8661dab7b7c78dc86fce07ed4cb6",
+    "BLOCK29_WILSON_SOURCE_CURVATURE_AND_STATIC_RATE.md": "4bcfc84c442881e81fdc86038ffc07dc271626d537eedfc3eabef1e8e6133bc0",
+    "block29_clock_ginibre_transfer_probe.py": "06038aa463662240360918da804b792b02f5e372fcf3373a8f536e43891c6f75",
+    "block29_rectangle_green_probe.py": "9a7ccea504be192c52a2417ac3f0a71b85c491f4fabd786804eda8ef2fcc8474",
+    "block29_wilson_shift_probe.py": "a0e548275300f6baba8e8fa170f74d356d3303808bfd40949dab5a7ae318e75f"
+  }
+}

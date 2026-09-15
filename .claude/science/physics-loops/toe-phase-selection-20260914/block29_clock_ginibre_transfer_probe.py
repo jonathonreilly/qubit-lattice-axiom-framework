@@ -1,0 +1,250 @@
+#!/usr/bin/env python3
+"""Finite falsifiers for the author's analytic clock/transfer bridge.
+No finite grid or matrix calculation proves the infinite-volume theorem.
+"""
+from __future__ import annotations
+import hashlib
+import itertools
+import json
+from pathlib import Path
+import numpy as np
+from scipy.special import ive
+
+HERE = Path(__file__).resolve().parent
+
+def heat(theta, beta):
+    theta = np.asarray(theta)
+    if beta == 0:
+        return np.ones_like(theta, dtype=float)
+    # Positive Gaussian image sum; normalize out its irrelevant common factor.
+    principal = (theta + np.pi) % (2*np.pi) - np.pi
+    return sum(np.exp(-beta*(principal+2*np.pi*k)**2/2) for k in range(-8,9))
+
+def cube_character_table(N, couplings):
+    # Gauge quotient for the six oriented faces of one free three-cube.
+    # Independent b1,...,b5 and b6=-sum b ensure the single Bianchi constraint.
+    digits = np.indices((N,)*5).reshape(5,-1).T
+    faces = np.column_stack((digits, -digits.sum(axis=1) % N))
+    weights = np.ones(len(digits))
+    for p,beta in enumerate(couplings):
+        weights *= heat(2*np.pi*faces[:,p]/N, beta)
+    prob = (weights/weights.sum()).reshape((N,)*5)
+    # FFT sign is harmless by inversion symmetry; verify rather than assume.
+    chars = np.fft.fftn(prob)
+    assert np.max(np.abs(chars.imag)) < 2e-13
+    return chars.real, digits
+
+def ginibre_checks():
+    records=[]
+    rng=np.random.default_rng(2915)
+    for N in (2,3,4,5):
+        for beta in (.13,.45,1.2,2.7):
+            base=np.array([0., beta*.6,beta,beta*1.3,beta*.8,beta*1.1])
+            phi,digits=cube_character_table(N,base)
+            minimum_increment=1.
+            for p in range(6):
+                raised=base.copy();raised[p]+=.31
+                other,_=cube_character_table(N,raised)
+                increment=float(np.min(other-phi))
+                assert increment > -3e-12, (N,beta,p,increment)
+                minimum_increment=min(minimum_increment,increment)
+            assert phi.min() > -2e-13
+            # Random arbitrary character pairs, including non-simple loops.
+            pairs=rng.integers(0,len(digits),size=(4000,2))
+            A=digits[pairs[:,0]];B=digits[pairs[:,1]]
+            lookup=lambda x: phi[tuple((x%N).T)]
+            covariance=(lookup(A+B)+lookup(A-B))/2-lookup(A)*lookup(B)
+            assert covariance.min()>-3e-12,(N,beta,covariance.min())
+            records.append({'N':N,'base_scale':beta,'characters':N**5,
+              'single_plaquette_increases':6,'sampled_character_pairs':len(pairs),
+              'minimum_character':float(phi.min()),
+              'minimum_increment':minimum_increment,
+              'minimum_cosine_covariance':float(covariance.min())})
+    return records
+
+def haar_and_divisibility_checks():
+    records=[]
+    rng=np.random.default_rng(290321)
+    for N in (2,3,4,5):
+        for beta in (.35,1.1,2.7):
+            phi,digits=cube_character_table(N,[beta]*6)
+            # Independent U(1) integration: the cube's one Bianchi constraint
+            # leaves a one-dimensional plaquette Fourier sum.
+            k=np.arange(-40,41)[:,None]
+            denominator=np.exp(-6*k[:,0]**2/(2*beta)).sum()
+            sampled=digits[rng.integers(0,len(digits),size=500)]
+            gaps=[]
+            for r in sampled:
+                charges=np.append(r,0)
+                haar=float(np.exp(-np.sum((k-charges)**2,axis=1)/(2*beta)).sum()/denominator)
+                clock=float(phi[tuple(r)])
+                gaps.append(clock-haar)
+                assert clock-haar>-3e-12,(N,beta,r.tolist(),clock,haar)
+            records.append({'clock_order':N,'beta':beta,'sampled_characters':len(sampled),
+                'minimum_clock_minus_haar':min(gaps)})
+    for N,M in ((2,4),(3,6)):
+        beta=.85
+        small,_=cube_character_table(N,[beta]*6)
+        large,digits=cube_character_table(M,[beta]*6)
+        gaps=small[tuple((digits%N).T)]-large[tuple(digits.T)]
+        assert gaps.min()>-3e-12
+        records.append({'subgroup_order':N,'containing_order':M,'characters':len(digits),
+            'minimum_subgroup_minus_containing':float(gaps.min())})
+    # The two non-divisible orders cannot be ordered uniformly in J.
+    phi2,_=cube_character_table(2,[.15]*6)
+    phi3,_=cube_character_table(3,[.15]*6)
+    differences=[]
+    for q in (2,3):
+        v2=float(phi2[q%2,0,0,0,0]);v3=float(phi3[q%3,0,0,0,0])
+        differences.append(v2-v3)
+    assert differences[0]>.1 and differences[1]<-.1
+    records.append({'nondivisible_order_control':[2,3],
+       'q2_clock2_minus_clock3':differences[0],
+       'q3_clock2_minus_clock3':differences[1]})
+    return records
+
+def carpet_pinning_checks():
+    # A single coarse face: exact integrated carpet weights via Bessel
+    # convolution; compare its finite-clock distribution to Villain.
+    out=[]
+    for N in (2,3,4,7):
+        beta=.85
+        theta=2*np.pi*np.arange(N)/N
+        target=heat(theta,beta);target/=target.sum()
+        rows=[]
+        for m in (1,2,4,8,16,32,64,128):
+            orders=np.arange(1,80)
+            coupling=m*m*beta
+            coeff=(ive(orders,coupling)/ive(0,coupling))**(m*m)
+            approx=1+2*np.cos(np.outer(theta,orders))@coeff
+            approx/=approx.sum()
+            err=float(np.max(abs(approx-target)))
+            rows.append({'refinement':m,'maximum_probability_error':err})
+        assert rows[-1]['maximum_probability_error']<3e-5
+        assert rows[-1]['maximum_probability_error']<rows[0]['maximum_probability_error']/500
+        out.append({'N':N,'beta':beta,'convolution_checks':rows})
+    # Finite-h clock pinning on a two-link torus, with Villain interaction.
+    # Coupling is theta1-theta2; pin BOTH variables before h->infinity.
+    for N in (2,3,4):
+        beta=.8
+        roots=2*np.pi*np.arange(N)/N
+        weights=heat(roots[:,None]-roots[None,:],beta)
+        target=float(np.sum(weights*np.cos(roots[:,None]-roots[None,:]))/weights.sum())
+        grid=2*np.pi*np.arange(768)/768
+        difference=grid[:,None]-grid[None,:]
+        villain=heat(difference,beta)
+        vals=[]
+        for h in (0.,2.,8.,32.,128.,256.,512.):
+            pin=np.exp(h*(np.cos(N*grid)-1))
+            w=villain*pin[:,None]*pin[None,:]
+            value=float(np.sum(w*np.cos(difference))/w.sum())
+            vals.append({'h':h,'expectation':value,'clock_limit_error':abs(value-target)})
+        assert vals[-1]['clock_limit_error'] < vals[0]['clock_limit_error']/20
+        assert vals[-1]['clock_limit_error'] < .002
+        out.append({'N':N,'pinning_grid_side':len(grid),'clock_target':target,'finite_h_checks':vals})
+    return out
+
+def transfer_checks():
+    out=[]
+    # Four oriented edges around a spatial square, incidence head-tail.
+    D=np.zeros((4,4),dtype=int)
+    for e in range(4):
+        D[e,e]=-1;D[e,(e+1)%4]=1
+    gamma=np.array([1,0,0,0])
+    for N,beta in ((2,.24),(2,.85),(3,.35),(3,1.1),(4,.48)):
+        configurations=np.array(list(itertools.product(range(N),repeat=4)))
+        count=len(configurations)
+        weights=heat(2*np.pi*np.arange(N)/N,beta)
+        V=weights[configurations.sum(axis=1)%N]
+        rootV=np.sqrt(V)
+        delta=(configurations[:,None,:]-configurations[None,:,:])%N
+        C=np.prod(weights[delta],axis=2)/count
+        T=rootV[:,None]*C*rootV[None,:]
+        eig,vec=np.linalg.eigh(T)
+        lam=eig[-1];Omega=vec[:,-1]
+        if Omega.sum()<0: Omega=-Omega
+        assert Omega.min()>0 and eig[0]>0
+        Omega/=np.linalg.norm(Omega)
+        assert np.linalg.norm(T@Omega-lam*Omega)<2e-11
+        direct=[]
+        for charge in (0,1,N-1,N):
+            phase=np.exp(2j*np.pi*charge*(configurations@gamma)/N)
+            # Independently sum all temporal link variables eta. This keeps
+            # their Wilson phases and is not temporal gauge fixing.
+            K=np.zeros_like(C,dtype=complex)
+            K0=np.zeros_like(C)
+            for eta in configurations:
+                gauge_shift=D@eta
+                row=np.prod(weights[(delta+gauge_shift)%N],axis=2)/count
+                K0+=row/count
+                K+=row*np.exp(2j*np.pi*charge*(gamma@gauge_shift)/N)/count
+            gauged=rootV[:,None]*K*rootV[None,:]
+            neutral=rootV[:,None]*K0*rootV[None,:]
+            assert np.max(abs(gauged-gauged.conj().T))<2e-12
+            min_projected=float(np.linalg.eigvalsh(gauged)[0])
+            assert min_projected>-3e-12
+            # Direct free-time expectation uses boundary b=sqrt(V).
+            endpoint=np.conj(phase)*rootV
+            for time in (1,2,3):
+                explicit=(np.vdot(endpoint,np.linalg.matrix_power(gauged,time)@endpoint)
+                    /np.vdot(rootV,np.linalg.matrix_power(neutral,time)@rootV))
+                temporal_gauge=(np.vdot(endpoint,np.linalg.matrix_power(T,time)@endpoint)
+                    /np.vdot(rootV,np.linalg.matrix_power(T,time)@rootV))
+                assert abs(explicit-temporal_gauge)<2e-11,(N,beta,charge,time)
+                # Infinite-time interior limit and its direct positive spectrum.
+                psi=phase*Omega
+                spectral_weights=abs(vec.conj().T@psi)**2
+                moment=float(np.sum(spectral_weights*(eig/lam)**time))
+                ground=np.vdot(psi,np.linalg.matrix_power(T/lam,time)@psi)
+                assert abs(moment-ground)<2e-12
+                if charge%N==0: assert abs(moment-1)<3e-12
+                direct.append({'q':charge,'T':time,'explicit_temporal_links':float(explicit.real),
+                  'temporal_gauge_discrepancy':float(abs(explicit-temporal_gauge)),
+                  'interior_ground_state_moment':moment,
+                  'spectral_discrepancy':float(abs(moment-ground))})
+        # Fault controls: missing V boundary factors and omitting temporal
+        # charge phases each change the actual nonzero-charge expectation.
+        charge=1
+        phase=np.exp(2j*np.pi*(configurations@gamma)/N)
+        psi=np.conj(phase)*rootV
+        correct=np.vdot(psi,T@psi)/np.vdot(rootV,T@rootV)
+        no_end_V=np.vdot(np.conj(phase),T@np.conj(phase))/np.sum(T)
+        no_temporal_phase=np.vdot(psi,neutral@psi)/np.vdot(rootV,neutral@rootV)
+        assert abs(correct-no_temporal_phase)>1e-4
+        # Very small beta makes spatial V almost constant, so compare to a
+        # scale appropriate to the intentionally weak interaction.
+        assert abs(correct-no_end_V)>1e-10
+        # Gauge character of charged state, verified for every vertex shift.
+        charge_error=0.
+        for vertex in range(4):
+            eta=np.eye(4,dtype=int)[vertex]
+            shifted=(configurations+D@eta)%N
+            indexes=np.ravel_multi_index(shifted.T,(N,)*4)
+            expected=np.exp(2j*np.pi*(gamma@D@eta)/N)*phase*Omega
+            charge_error=max(charge_error,float(np.max(abs((phase*Omega)[indexes]-expected))))
+        assert charge_error<3e-12
+        out.append({'N':N,'beta':beta,'matrix_dimension':count,
+          'minimum_transfer_eigenvalue':float(eig[0]),'largest_eigenvalue':float(lam),
+          'maximum_gauge_character_error':charge_error,
+          'missing_endpoint_weight_effect':float(abs(correct-no_end_V)),
+          'missing_temporal_phase_effect':float(abs(correct-no_temporal_phase)),
+          'comparisons':direct})
+    return out
+
+def main():
+    result={'status':'author_finite_checks_not_independent_review',
+      'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+      'limitations':['floating arithmetic, no interval certificate',
+        'finite low-dimensional systems do not establish the 4D source-curvature theorem',
+        'carpet and pinning convergence tests are finite probes of separately written proofs']}
+    result['ginibre']=ginibre_checks()
+    result['carpet_pinning']=carpet_pinning_checks()
+    result['haar_and_divisibility']=haar_and_divisibility_checks()
+    result['transfer']=transfer_checks()
+    dest=HERE/'BLOCK29_CLOCK_GINIBRE_TRANSFER_CHECKS.json'
+    dest.write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps({'families':4,'ginibre_cases':len(result['ginibre']),
+      'carpet_and_pinning_cases':len(result['carpet_pinning']),
+      'comparison_cases':len(result['haar_and_divisibility']),
+      'transfer_cases':len(result['transfer']),'output':str(dest)}))
+if __name__=='__main__':main()

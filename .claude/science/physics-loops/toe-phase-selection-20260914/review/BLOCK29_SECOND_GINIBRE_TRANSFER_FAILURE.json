@@ -1,0 +1,70 @@
+{
+  "source_sha256": "71ecc5ab74c275ea1362b78122b172545ecaea045457b284799877e2a8fd6288",
+  "failure": "second execution: finite-h pinning error at h128 exceeds .002",
+  "diagnostic": [
+    {
+      "N": 2,
+      "h": 128,
+      "target": 0.9256828995273294,
+      "expectation": 0.9229902548303341,
+      "error": 0.002692644696995261
+    },
+    {
+      "N": 2,
+      "h": 256,
+      "target": 0.9256828995273294,
+      "expectation": 0.9243370530073246,
+      "error": 0.0013458465200048009
+    },
+    {
+      "N": 2,
+      "h": 512,
+      "target": 0.9256828995273294,
+      "expectation": 0.9250100939363416,
+      "error": 0.0006728055909878128
+    },
+    {
+      "N": 3,
+      "h": 128,
+      "target": 0.6129705565773679,
+      "expectation": 0.6123677596171212,
+      "error": 0.0006027969602466765
+    },
+    {
+      "N": 3,
+      "h": 256,
+      "target": 0.6129705565773679,
+      "expectation": 0.61266916827091,
+      "error": 0.0003013883064578726
+    },
+    {
+      "N": 3,
+      "h": 512,
+      "target": 0.6129705565773679,
+      "expectation": 0.6128198647458174,
+      "error": 0.00015069183155047572
+    },
+    {
+      "N": 4,
+      "h": 128,
+      "target": 0.5388192306823139,
+      "expectation": 0.5387914376413631,
+      "error": 2.7793040950796488e-05
+    },
+    {
+      "N": 4,
+      "h": 256,
+      "target": 0.5388192306823139,
+      "expectation": 0.5388053342477614,
+      "error": 1.38964345524073e-05
+    },
+    {
+      "N": 4,
+      "h": 512,
+      "target": 0.5388192306823139,
+      "expectation": 0.5388122824763006,
+      "error": 6.94820601321311e-06
+    }
+  ],
+  "disposition": "Final pinning parameter increased from128 to512; same .002 tolerance. The weak-limit argument is analytic and separate from this quadrature."
+}

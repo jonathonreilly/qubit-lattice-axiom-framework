@@ -1,0 +1,494 @@
+{
+  "scope": "Finite three-cube and one-dimensional challenges; not the four-dimensional thermodynamic theorem.",
+  "independent_review": false,
+  "families": {
+    "periodized_curvature": {
+      "cases": [
+        {
+          "alpha": 3.0,
+          "z": 0.03,
+          "shift": 0.025,
+          "log_ratio": -0.0004034381905106965,
+          "lower_bound": -0.001307610165040851,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 3.0,
+          "z": 0.03,
+          "shift": 0.15,
+          "log_ratio": -0.013508411143973775,
+          "lower_bound": -0.04707396594147063,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 3.0,
+          "z": 0.03,
+          "shift": 0.5,
+          "log_ratio": -0.0655528757251026,
+          "lower_bound": -0.5230440660163403,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 3.0,
+          "z": 0.03,
+          "shift": 1.15,
+          "log_ratio": -0.01350841114397383,
+          "lower_bound": -2.76690310922644,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 1.0,
+          "z": 0.2,
+          "shift": 0.025,
+          "log_ratio": -0.002462331946846863,
+          "lower_bound": -0.00277990110027234,
+          "potential_is_nonconvex": true
+        },
+        {
+          "alpha": 1.0,
+          "z": 0.2,
+          "shift": 0.15,
+          "log_ratio": -0.08244295174709171,
+          "lower_bound": -0.10007643960980421,
+          "potential_is_nonconvex": true
+        },
+        {
+          "alpha": 1.0,
+          "z": 0.2,
+          "shift": 0.5,
+          "log_ratio": -0.4000000107011521,
+          "lower_bound": -1.1119604401089358,
+          "potential_is_nonconvex": true
+        },
+        {
+          "alpha": 1.0,
+          "z": 0.2,
+          "shift": 1.15,
+          "log_ratio": -0.08244295174709171,
+          "lower_bound": -5.88227072817627,
+          "potential_is_nonconvex": true
+        },
+        {
+          "alpha": 20.0,
+          "z": 0.3,
+          "shift": 0.025,
+          "log_ratio": -0.0099319105210105,
+          "lower_bound": -0.00995110165040851,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 20.0,
+          "z": 0.3,
+          "shift": 0.15,
+          "log_ratio": -0.347841495328368,
+          "lower_bound": -0.3582396594147063,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 20.0,
+          "z": 0.3,
+          "shift": 0.5,
+          "log_ratio": -2.4069436131163684,
+          "lower_bound": -3.9804406601634037,
+          "potential_is_nonconvex": false
+        },
+        {
+          "alpha": 20.0,
+          "z": 0.3,
+          "shift": 1.15,
+          "log_ratio": -0.34784149532836767,
+          "lower_bound": -21.056531092264404,
+          "potential_is_nonconvex": false
+        }
+      ]
+    },
+    "assumption_faults": {
+      "wrong_curvature_margin": 0.00738301217141901,
+      "non_even_log_ratio": -4.799664593664856,
+      "invalid_even_bound": -1.6000000000000003
+    },
+    "clock_vs_current_coset": {
+      "cases": [
+        {
+          "N": 2,
+          "beta": 2.0,
+          "source": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 0.8333333333333335,
+          "direct_clock": 0.9999998929884953,
+          "lower_bound": 0.7754913500067854,
+          "cutoffs": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "coset_values": [
+            0.9993902731072035,
+            0.9999867924982707,
+            0.9999997970493575,
+            0.9999998927393648,
+            0.999999892988262
+          ],
+          "last_absolute_discrepancy": 2.333688797762079e-13,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 1.434158871365637e-11
+        },
+        {
+          "N": 2,
+          "beta": 2.0,
+          "source": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 1.3333333333333335,
+          "direct_clock": 0.9999998287815941,
+          "lower_bound": 0.6657683306580614,
+          "cutoffs": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "coset_values": [
+            0.9988104509053325,
+            0.9999738009321263,
+            0.9999996371508114,
+            0.9999998282834229,
+            0.9999998287811274
+          ],
+          "last_absolute_discrepancy": 4.667377595524158e-13,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 2.4350712976777415e-11
+        },
+        {
+          "N": 2,
+          "beta": 2.0,
+          "source": [
+            1,
+            2,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 5.333333333333333,
+          "direct_clock": 0.9999998287815942,
+          "lower_bound": 0.19646831975645254,
+          "cutoffs": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "coset_values": [
+            0.9946436389900096,
+            0.9998424170640062,
+            0.9999981582387931,
+            0.9999998222174873,
+            0.9999998287719979
+          ],
+          "last_absolute_discrepancy": 9.596323735650003e-12,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 4.157185010320628e-10
+        },
+        {
+          "N": 3,
+          "beta": 2.0,
+          "source": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 0.8333333333333335,
+          "direct_clock": 0.9976282850259363,
+          "lower_bound": 0.7754913500067854,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "coset_values": [
+            0.9974771678785916,
+            0.9976281414574663,
+            0.9976282850130472,
+            0.9976282850259366
+          ],
+          "last_absolute_discrepancy": 3.3306690738754696e-16,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 9.352991422961497e-16
+        },
+        {
+          "N": 3,
+          "beta": 2.0,
+          "source": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 1.3333333333333335,
+          "direct_clock": 0.9962065611674666,
+          "lower_bound": 0.6657683306580614,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "coset_values": [
+            0.995910711513125,
+            0.99620627489306,
+            0.9962065611417296,
+            0.9962065611674666
+          ],
+          "last_absolute_discrepancy": 0.0,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 1.6786874579282905e-15
+        },
+        {
+          "N": 3,
+          "beta": 2.0,
+          "source": [
+            1,
+            2,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 5.333333333333333,
+          "direct_clock": 0.9948366256349953,
+          "lower_bound": 0.19646831975645254,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "coset_values": [
+            0.9933058804881788,
+            0.994834147656275,
+            0.9948366252109203,
+            0.9948366256349875
+          ],
+          "last_absolute_discrepancy": 7.771561172376096e-15,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 4.8841708497838965e-14
+        },
+        {
+          "N": 5,
+          "beta": 2.0,
+          "source": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 0.8333333333333335,
+          "direct_clock": 0.8456213565449288,
+          "lower_bound": 0.7754913500067854,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "coset_values": [
+            0.8456213565371917,
+            0.8456213565449283,
+            0.8456213565449284,
+            0.8456213565449283
+          ],
+          "last_absolute_discrepancy": 4.440892098500626e-16,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 3.931345548222223e-46
+        },
+        {
+          "N": 5,
+          "beta": 2.0,
+          "source": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 1.3333333333333335,
+          "direct_clock": 0.7606697167289842,
+          "lower_bound": 0.6657683306580614,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "coset_values": [
+            0.7606697167162586,
+            0.7606697167289846,
+            0.7606697167289849,
+            0.7606697167289845
+          ],
+          "last_absolute_discrepancy": 3.3306690738754696e-16,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 7.815609700299427e-46
+        },
+        {
+          "N": 5,
+          "beta": 2.0,
+          "source": [
+            1,
+            2,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.11022028123152128,
+          "coulomb_energy": 5.333333333333333,
+          "direct_clock": 0.43749923695697623,
+          "lower_bound": 0.19646831975645254,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "coset_values": [
+            0.43749923668147733,
+            0.4374992369569762,
+            0.4374992369569762,
+            0.43749923695697607
+          ],
+          "last_absolute_discrepancy": 1.6653345369377348e-16,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 4.843210500586716e-43
+        },
+        {
+          "N": 3,
+          "beta": 3.0,
+          "source": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.004084744149783894,
+          "coulomb_energy": 0.8333333333333335,
+          "direct_clock": 0.9999710139570263,
+          "lower_bound": 0.8688447132340492,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "coset_values": [
+            0.9987150770493942,
+            0.9999564000386659,
+            0.9999709813536871,
+            0.9999710139418478,
+            0.9999710139570239
+          ],
+          "last_absolute_discrepancy": 2.3314683517128287e-15,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 4.0820529953736434e-14
+        },
+        {
+          "N": 3,
+          "beta": 3.0,
+          "source": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.004084744149783894,
+          "coulomb_energy": 1.3333333333333335,
+          "direct_clock": 0.9999536225320579,
+          "lower_bound": 0.7985598309225805,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "coset_values": [
+            0.9975313223108986,
+            0.9999246150821633,
+            0.9999535573938342,
+            0.9999536225017044,
+            0.9999536225320539
+          ],
+          "last_absolute_discrepancy": 3.9968028886505635e-15,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 6.480636529143604e-14
+        },
+        {
+          "N": 3,
+          "beta": 3.0,
+          "source": [
+            1,
+            2,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "curvature_epsilon_majorant": 0.004084744149783894,
+          "coulomb_energy": 5.333333333333333,
+          "direct_clock": 0.999936303335682,
+          "lower_bound": 0.4066584886692028,
+          "cutoffs": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "coset_values": [
+            0.9906505370076872,
+            0.9997966264311663,
+            0.9999358715405211,
+            0.9999363030417153,
+            0.9999363033356363
+          ],
+          "last_absolute_discrepancy": 4.5630166312093934e-14,
+          "analytic_gaussian_truncation_bound_evaluated_in_float": 7.245534860227699e-13
+        }
+      ]
+    },
+    "physical_alias_and_source_faults": {
+      "physical_character": 0.9976282850259363,
+      "wrong_shift": 0.9999999908096239,
+      "dropped_magnetic_factor": 0.9976856809477697,
+      "charge_N_alias": 0.9999999999999991,
+      "charge_two_equals_minus_one": 0.9976282850259363
+    }
+  }
+}

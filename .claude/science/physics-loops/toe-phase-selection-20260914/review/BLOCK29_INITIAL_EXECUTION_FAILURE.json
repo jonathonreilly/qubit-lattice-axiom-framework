@@ -1,0 +1,297 @@
+{
+  "initial_sha256": "e2edcc577414723e01d1e50a183e0ef18c247a8142528e15fdf9c6882d03da3d",
+  "command": "OPENBLAS_NUM_THREADS=1 /opt/homebrew/bin/python3 .claude/science/physics-loops/toe-phase-selection-20260914/block29_wilson_shift_probe.py",
+  "exit_code": 1,
+  "failure": "Line96 direct/current absolute discrepancy exceeded3e-8.",
+  "diagnostics": [
+    {
+      "N": 2,
+      "beta": 2.0,
+      "source": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.9999998929884953,
+      "cutoffs": [
+        4,
+        5,
+        6
+      ],
+      "cosets": [
+        0.9999867924982707,
+        0.9999997970493575,
+        0.9999998927393648
+      ],
+      "discrepancy": -2.4913049401220633e-10
+    },
+    {
+      "N": 2,
+      "beta": 2.0,
+      "source": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.9999998287815941,
+      "cutoffs": [
+        4,
+        5,
+        6
+      ],
+      "cosets": [
+        0.9999738009321263,
+        0.9999996371508114,
+        0.9999998282834229
+      ],
+      "discrepancy": -4.981711709817205e-10
+    },
+    {
+      "N": 2,
+      "beta": 2.0,
+      "source": [
+        1,
+        2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "direct": 0.9999998287815942,
+      "cutoffs": [
+        4,
+        5,
+        6
+      ],
+      "cosets": [
+        0.9998424170640062,
+        0.9999981582387931,
+        0.9999998222174873
+      ],
+      "discrepancy": -6.564106924678015e-09
+    },
+    {
+      "N": 3,
+      "beta": 2.0,
+      "source": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.9976282850259363,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.9976281414574663,
+        0.9976282850130472,
+        0.9976282850259366
+      ],
+      "discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "N": 3,
+      "beta": 2.0,
+      "source": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.9962065611674666,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.99620627489306,
+        0.9962065611417296,
+        0.9962065611674666
+      ],
+      "discrepancy": 0.0
+    },
+    {
+      "N": 3,
+      "beta": 2.0,
+      "source": [
+        1,
+        2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "direct": 0.9948366256349953,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.994834147656275,
+        0.9948366252109203,
+        0.9948366256349875
+      ],
+      "discrepancy": -7.771561172376096e-15
+    },
+    {
+      "N": 5,
+      "beta": 2.0,
+      "source": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.8456213565449288,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.8456213565449283,
+        0.8456213565449284,
+        0.8456213565449283
+      ],
+      "discrepancy": -4.440892098500626e-16
+    },
+    {
+      "N": 5,
+      "beta": 2.0,
+      "source": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.7606697167289842,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.7606697167289846,
+        0.7606697167289849,
+        0.7606697167289845
+      ],
+      "discrepancy": 3.3306690738754696e-16
+    },
+    {
+      "N": 5,
+      "beta": 2.0,
+      "source": [
+        1,
+        2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "direct": 0.43749923695697623,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.4374992369569762,
+        0.4374992369569762,
+        0.43749923695697607
+      ],
+      "discrepancy": -1.6653345369377348e-16
+    },
+    {
+      "N": 3,
+      "beta": 3.0,
+      "source": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.9999710139570263,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.9999564000386659,
+        0.9999709813536871,
+        0.9999710139418478
+      ],
+      "discrepancy": -1.5178414081162828e-11
+    },
+    {
+      "N": 3,
+      "beta": 3.0,
+      "source": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direct": 0.9999536225320579,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.9999246150821633,
+        0.9999535573938342,
+        0.9999536225017044
+      ],
+      "discrepancy": -3.035349749325178e-11
+    },
+    {
+      "N": 3,
+      "beta": 3.0,
+      "source": [
+        1,
+        2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "direct": 0.999936303335682,
+      "cutoffs": [
+        3,
+        4,
+        5
+      ],
+      "cosets": [
+        0.9997966264311663,
+        0.9999358715405211,
+        0.9999363030417153
+      ],
+      "discrepancy": -2.9396662881708835e-10
+    }
+  ],
+  "disposition": "Insufficient five-dimensional current cutoff at N=3,beta=3; no formula or tolerance was weakened. Added larger cutoffs and a Gaussian conditional-tail bound derived by Schur complement and four-dimensional Poisson summation. Final direct/coset agreement is within the evaluated bound plus floating allowance."
+}

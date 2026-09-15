@@ -1,0 +1,22 @@
+{
+  "source_sha256": "7abe9f0ac45930f80f6fe9c69e0b10d73a227bee582fee235573eea3f3210cde",
+  "failure": "new comparison family: arbitrary .1 separation requested for the nondivisibility fault control is too large at beta .6",
+  "diagnostic": [
+    {
+      "beta": 0.15,
+      "q2_difference": 0.9643243273507511,
+      "q3_difference": -0.9286504049767333
+    },
+    {
+      "beta": 0.3,
+      "q2_difference": 0.809574038246636,
+      "q3_difference": -0.6167093229469989
+    },
+    {
+      "beta": 0.6,
+      "q2_difference": 0.5072161331951749,
+      "q3_difference": -0.09420442820380204
+    }
+  ],
+  "disposition": "use beta .15 for a resolved fault control; theorem requires opposite signs, not .1 separation"
+}

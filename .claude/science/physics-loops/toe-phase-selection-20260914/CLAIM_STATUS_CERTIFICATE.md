@@ -162,3 +162,23 @@ The boundary-fill input and all-component proof remain independently unreviewed.
 The complete activity sum is open. The one-sided Gaussian absolute-norm
 calculation rules out that displayed majorant for large integer square fills;
 it is not a phase, broad method impossibility or axiom-wall claim.
+
+
+## Block29 static-charge bridge checkpoint, 2026-09-15
+
+A personal proof candidate extends the published U(1) carpet construction by
+positive clock pinning, obtaining character Ginibre inequalities, the
+Haar-to-clock comparison and a unique free-boundary exhaustion limit. This
+connects cubic Wilson bounds to a finite spatial transfer matrix followed by
+the spatial limit, without extending the upstream curvature theorem to thin
+slabs. The matched Wilson-visible static threshold exists and is bounded by
+(beta^-1+epsilon) q_eff^2 [G3(0)-G3(R)]. The exact rectangular Green formula
+and charge aliases are retained. No dynamical charged particles, exact force,
+full fixed-clock Gaussian law or axiom update follows.
+
+Three finite suites compare current/clock sums, direct Green/Poisson
+calculations, and explicit temporal-link/transfer/spectral calculations.
+All completed checks agree within stated numerical limits. Initial failures
+are preserved. The published machinery is credited, the PR8133 input remains
+provisional, and independent review is pending. Preparing one coherent
+public milestone; no science is merged. Continue personally to13:30:44UTC.

@@ -1,0 +1,1705 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "identity",
+      "git_blob": "1600a4dbb5a9ab70a3250cfcb2d64c0b6dedb0bc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/AUTHOR_REVIEW.md",
+      "raw_bytes": 2531,
+      "raw_sha256": "8f42c394a3931279a3a18c68a69f550bce0f7e7b9d2452fb1e09fcafb0da9467",
+      "stored_path": "kept/pr8103-AUTHOR_REVIEW-f47757c621d16573.md",
+      "stored_sha256": "8f42c394a3931279a3a18c68a69f550bce0f7e7b9d2452fb1e09fcafb0da9467"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4278fe64b60ef1cf5419b6c8d08662099e402faa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_DERIVATION.md",
+      "raw_bytes": 14484,
+      "raw_sha256": "501fc6f463418b51efe863ba08abb12d099abd3275a19d033c4259a8fddcae6f",
+      "stored_path": "_objects/501fc6f463418b51efe863ba08abb12d099abd3275a19d033c4259a8fddcae6f.gz",
+      "stored_sha256": "bfeee32adc6d51a8f4af7f74158d5beebfea7539e045790905eea9fbed886d76"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fc68809bef1904cccbaf465a105643fcdfd12431",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SEED.md",
+      "raw_bytes": 3902,
+      "raw_sha256": "8abdf739d0a174380963e4b850230881aa5f52a35e4b5ff90cc7bde7653b1e38",
+      "stored_path": "_objects/8abdf739d0a174380963e4b850230881aa5f52a35e4b5ff90cc7bde7653b1e38.gz",
+      "stored_sha256": "837eb4ff471e287440ea862cc2d72422e0fd8cb19626cbe710e3888773908335"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SPECTRAL.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_graph_build.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2bdc0297455ec314243f7844472bbe40e5f23f07",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SPECTRAL.stdout",
+      "raw_bytes": 5778,
+      "raw_sha256": "65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5",
+      "stored_path": "_objects/65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5.gz",
+      "stored_sha256": "13f75573682eb1437f981239598dc18860c0fdf779a9aaa58cc0e315829e9a07"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2bdc0297455ec314243f7844472bbe40e5f23f07",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SPECTRAL_EXPLORATION.json",
+      "raw_bytes": 5778,
+      "raw_sha256": "65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5",
+      "stored_path": "_objects/65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5.gz",
+      "stored_sha256": "13f75573682eb1437f981239598dc18860c0fdf779a9aaa58cc0e315829e9a07"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40007864088b3b89589608e5af678f4e3fec9af6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CANONICAL_CACHE.txt.gz",
+      "raw_bytes": 1436,
+      "raw_sha256": "c2e670e292a49a09b8ff6c8cc62693ec232456d4e6850baaf41d35b698451422",
+      "stored_path": "_objects/c2e670e292a49a09b8ff6c8cc62693ec232456d4e6850baaf41d35b698451422.gz",
+      "stored_sha256": "65a623198672c7a374ad7267f32836aec61df604158e0bed87c29b7abee5e2e7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eb181c4215517ec5777d800f3a153e3e4f946653",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CANONICAL_EXECUTION.json",
+      "raw_bytes": 3768,
+      "raw_sha256": "36d17ebee26047138fabcf3c76f47ce62a199c545ad7530395c4b619c7ccb1ee",
+      "stored_path": "_objects/36d17ebee26047138fabcf3c76f47ce62a199c545ad7530395c4b619c7ccb1ee.gz",
+      "stored_sha256": "8a24e911d887a7a778680a1b73342ad7427736fa2c35ebd5fb61e105fd9e0fcc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "17ccf758be6fe1fc268bdb9f0ad6c07896cad8f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CHANGED_EVIDENCE.json",
+      "raw_bytes": 211,
+      "raw_sha256": "862bbc31e355e1716c9e73ab3829222756b564f83ab1f15adaf22b71df366355",
+      "stored_path": "_objects/862bbc31e355e1716c9e73ab3829222756b564f83ab1f15adaf22b71df366355.gz",
+      "stored_sha256": "10d1e83c8af31143bc5f5d241be36877dc430bcb97934a01266e0b514002a090"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3fca6f52c1d00905d7d98a2811acde2a0349ca24",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CORRECTIONS.md",
+      "raw_bytes": 634,
+      "raw_sha256": "6da68208bbb43edc3fb802deb07074da87869e38b6b85a3e1b0582ee30d071c1",
+      "stored_path": "_objects/6da68208bbb43edc3fb802deb07074da87869e38b6b85a3e1b0582ee30d071c1.gz",
+      "stored_sha256": "085da80ee8f594d8640c1b446d54a7b73885522a5cd67ec66129008b1683cefa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5b507644b7cb6d1086422440532ef547c3b2f22a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/GRAPH_DELTA.json",
+      "raw_bytes": 1183,
+      "raw_sha256": "db8943664ab28d79cad5ef2540e9e932ddf5da01918262005d4baa996016a9c7",
+      "stored_path": "_objects/db8943664ab28d79cad5ef2540e9e932ddf5da01918262005d4baa996016a9c7.gz",
+      "stored_sha256": "372afb0d78266535623b846ddad1109495a1c8707d8df66a55d24b661c22d229"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8007a8b8935fe8f388eefee0d9d270d5ca0db09b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/LITERATURE_SCOPE.md",
+      "raw_bytes": 706,
+      "raw_sha256": "756a8f1bca64dd1db3b356377f22dc24c20aaa25fc90df912c25e59d5fa90a65",
+      "stored_path": "_objects/756a8f1bca64dd1db3b356377f22dc24c20aaa25fc90df912c25e59d5fa90a65.gz",
+      "stored_sha256": "7fd17d565017033e0ad40219493da8ad19fa8e09ce9d6d14b3825bd12510f600"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "642b57a63032b43445d8c5f82c346fafc772dd5a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/MUTATIONS.json",
+      "raw_bytes": 22977,
+      "raw_sha256": "29a452cada4c2650381ba1c9b4a4fb8f95e248567d60c8a2a93640017ec9ac7a",
+      "stored_path": "_objects/29a452cada4c2650381ba1c9b4a4fb8f95e248567d60c8a2a93640017ec9ac7a.gz",
+      "stored_sha256": "05c794b5c9ed58273c3bf4006c714964a8e9a359f1ea73e304fd56080a35fa16"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b9ffb2f4c963ae78640ef84e4ffeafd8ec6323d0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/SOURCE_READINESS.json",
+      "raw_bytes": 271,
+      "raw_sha256": "f7a51ef4156329bcd015d96e39f489577517e41070f782e1148cf9fc57da38c1",
+      "stored_path": "_objects/f7a51ef4156329bcd015d96e39f489577517e41070f782e1148cf9fc57da38c1.gz",
+      "stored_sha256": "646752001607b804239041b769eeb67cff6b9abdcb6ae4f7e6350b4529b551d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "64a28b21bfed58dcbb8fafc3cf928a04beb5201a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/CANONICAL_CACHE.txt.gz",
+      "raw_bytes": 1435,
+      "raw_sha256": "736e620e3fe1aaa6836dfab888d52fd00df4a4b406e0adbc22c96b7c891cb1ab",
+      "stored_path": "_objects/736e620e3fe1aaa6836dfab888d52fd00df4a4b406e0adbc22c96b7c891cb1ab.gz",
+      "stored_sha256": "1375b468b45412d8d32daebb6d104c9b758280963a3f31478a39abb163ad7662"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4b9538f79d4bdcddd39a579b4bbb349309a383ea",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/CANONICAL_EXECUTION.json",
+      "raw_bytes": 3766,
+      "raw_sha256": "825460d97dce197c7cfd1b4e2b8090eaab7d0ec2dab7b214987546e9e6246732",
+      "stored_path": "_objects/825460d97dce197c7cfd1b4e2b8090eaab7d0ec2dab7b214987546e9e6246732.gz",
+      "stored_sha256": "74a3687613c732a558f0957c6f68879f1cfe29dc1af9ea1ea8e00f0a24881501"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "237b76e34dbf631bdf095380a349fc1ebc3d1a70",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/MUTATIONS.json",
+      "raw_bytes": 22513,
+      "raw_sha256": "180b485053f7494f9c32e08bc015f6bcff2bbb6c5621e94cfebdcb91a87982b4",
+      "stored_path": "_objects/180b485053f7494f9c32e08bc015f6bcff2bbb6c5621e94cfebdcb91a87982b4.gz",
+      "stored_sha256": "3f2a454d58fcfafb6c53738f4b2e41618fd32b99af92a4207cab0ee44efb7189"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cf63667238ea2e53e4ec8374b535a377f0db3a5e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/SOURCE_READINESS.json",
+      "raw_bytes": 271,
+      "raw_sha256": "8c99dadc6edd335f85a6d31f8fcf47aa2d4fbe5469c1fd76c79c10db96777d62",
+      "stored_path": "_objects/8c99dadc6edd335f85a6d31f8fcf47aa2d4fbe5469c1fd76c79c10db96777d62.gz",
+      "stored_sha256": "fec664f4f90f828287cff095d1012a2781144e51795684c1449143a4b0313ed7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "205d51daa6d5b10d1049c4e59905a62e541b2577",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/boundary_form_factor.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "03b09f8c0158efa309df69ed7d8aa4841d4f7ebdb95c6238fd1404f9c933aed1",
+      "stored_path": "_objects/03b09f8c0158efa309df69ed7d8aa4841d4f7ebdb95c6238fd1404f9c933aed1.gz",
+      "stored_sha256": "41f8994b051f4fa42389b90ac699b489fbab291bb451886289732528cc29b5b7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c47965c1aa82e9eb5500ee1e827a0f339d0ff4b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/boundary_form_factor.stderr.gz",
+      "raw_bytes": 435,
+      "raw_sha256": "0c5c4e3024ab1c0da530931134bd374dcdcc102043842c4dca1878cd65bf6ea8",
+      "stored_path": "_objects/0c5c4e3024ab1c0da530931134bd374dcdcc102043842c4dca1878cd65bf6ea8.gz",
+      "stored_sha256": "d5beb6e0b13026fa9c03d3cd7ffd8b584d92451f90f2a5e4817b59273182049b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/boundary_form_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_hypergeom_parameter.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_ode_coefficient.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/car_annihilation_sign.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_chord_translation.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_domain_product.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_electric_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_magnetic_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/double_copy_erasure.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/pure_magnetic_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "089216aeb37cfb5f61fff68d3cafc967e00ee216",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.stdout.gz",
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99",
+      "stored_path": "_objects/0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99.gz",
+      "stored_sha256": "36e35cb6ad8a8859bf467e496d2c6101b63aeddb78f94f5f8996d85adae71a95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bd0c264fecb4b3622511e38c0801d0723bf04af1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_hypergeom_parameter.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "9c03fe42bdb34c59ca0ee5796598a2a3adc6d2839f268a53e82baa37a67fce55",
+      "stored_path": "_objects/9c03fe42bdb34c59ca0ee5796598a2a3adc6d2839f268a53e82baa37a67fce55.gz",
+      "stored_sha256": "2674030c1dc9c6c2ac518270b2a6016153757c713a8ed250a3ba0196ecc69f3d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4907c963fadd3175a4cdf5624a0c0248dee8453f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_hypergeom_parameter.stderr.gz",
+      "raw_bytes": 377,
+      "raw_sha256": "e605c9a0282c16e9a9884ffd3516fe609e9e6adf9bff6d648e419b4538965838",
+      "stored_path": "_objects/e605c9a0282c16e9a9884ffd3516fe609e9e6adf9bff6d648e419b4538965838.gz",
+      "stored_sha256": "c3edfc475d93d095418ea51ec73d3136a7f32bc0989b911fdd0fcd912125b089"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "449e5c5a6deda6d47ad983a6a8a9a8fcb4640209",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_ode_coefficient.py.gz",
+      "raw_bytes": 5240,
+      "raw_sha256": "cf78a991e704939fb82ddc47394181562ce5e86d794274a1479f034f7f95b143",
+      "stored_path": "_objects/cf78a991e704939fb82ddc47394181562ce5e86d794274a1479f034f7f95b143.gz",
+      "stored_sha256": "62d9dd2004d2371b4ce816b5cbe4bf297ee49b03ea08e5adfeac339e94d0b7bd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f4ab468ab8610be99ef82748706fc34afd7b03e3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_ode_coefficient.stderr.gz",
+      "raw_bytes": 340,
+      "raw_sha256": "bf25af8f885f5ea9a105472f3bcb913dcce39285aa6a8d0c5a3aa9e0b8b2e756",
+      "stored_path": "_objects/bf25af8f885f5ea9a105472f3bcb913dcce39285aa6a8d0c5a3aa9e0b8b2e756.gz",
+      "stored_sha256": "8ea662f87090dffe980bb94b7bc9bff351c0105a010e9c61cf5dba7229e07a83"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a9f945f200ccb8bede19a1340d6c74761abf34b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/car_annihilation_sign.py.gz",
+      "raw_bytes": 5231,
+      "raw_sha256": "4cac280324efb0b5fc75a16f28fb57369b80bb11296532991a0c2f13afa407a5",
+      "stored_path": "_objects/4cac280324efb0b5fc75a16f28fb57369b80bb11296532991a0c2f13afa407a5.gz",
+      "stored_sha256": "8b711cdfe48e67ddd12d69cd28749e68c6532439f64f7f607d33a92176b3199d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a3087a73359ef073de2885523a30749015f1ff18",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/car_annihilation_sign.stderr.gz",
+      "raw_bytes": 419,
+      "raw_sha256": "c5979a153e816b8919a16945f0d1752264ef25b3abbae344bda7cb28c9356109",
+      "stored_path": "_objects/c5979a153e816b8919a16945f0d1752264ef25b3abbae344bda7cb28c9356109.gz",
+      "stored_sha256": "46d01934581ae835bcf41cc7fb9b5c78a1dd15dc7fbe4cc8ca40b00d1a78f72b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "49a1b746ab12cfded8bd8964db306014868169f1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_chord_translation.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "dc5a75d572e4299b5c4c59b9de49af1a07fb67a4b19987d40cef8ba67aba13f5",
+      "stored_path": "_objects/dc5a75d572e4299b5c4c59b9de49af1a07fb67a4b19987d40cef8ba67aba13f5.gz",
+      "stored_sha256": "f020f14b344a458cae0baaa13184d308a6ff1a782ba336d35fd22df0fbbbf192"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f20ad23e2fee3c251a14d70cd82050f95c5e6b57",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_chord_translation.stderr.gz",
+      "raw_bytes": 418,
+      "raw_sha256": "9461c2b28b2c142c1d5d7b87b3e82f42c629071ba89999a860feb3afe1fa24c5",
+      "stored_path": "_objects/9461c2b28b2c142c1d5d7b87b3e82f42c629071ba89999a860feb3afe1fa24c5.gz",
+      "stored_sha256": "c7a8b2e7a3f84e85bd782510d007826de2e0162c607c286464cded0d14fef1b1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6dc3303e33546ff2f10324f864f7a48586e1e4e7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_domain_product.py.gz",
+      "raw_bytes": 5225,
+      "raw_sha256": "82fc0bef49f84bd50cb3b25cebb57647d38fc1bfbb0528c9ab2b5ff3bcde1768",
+      "stored_path": "_objects/82fc0bef49f84bd50cb3b25cebb57647d38fc1bfbb0528c9ab2b5ff3bcde1768.gz",
+      "stored_sha256": "52581987155c23761aa3e0d82de74763161da6b0f30163655aa873e2a445ad93"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a93a68cefbeabbff6ba205da94988ba72196fb03",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_domain_product.stderr.gz",
+      "raw_bytes": 312,
+      "raw_sha256": "e8c8a58e7c781d1e9c3fec827fcc5b8581f89c2064c9536f5fa7f141b61a94a1",
+      "stored_path": "_objects/e8c8a58e7c781d1e9c3fec827fcc5b8581f89c2064c9536f5fa7f141b61a94a1.gz",
+      "stored_sha256": "001155e10a27d1904ae1baa8113dde6d8e8812d7589e442e0e2e65d1b6dd60d1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5a89afd7b46a88611c97de1e64222ee6598d0f01",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_electric_factor.py.gz",
+      "raw_bytes": 5246,
+      "raw_sha256": "922f2db63fc694148f1c7acbbf28e5c98659835694be3bce32d7a70b13c2baa9",
+      "stored_path": "_objects/922f2db63fc694148f1c7acbbf28e5c98659835694be3bce32d7a70b13c2baa9.gz",
+      "stored_sha256": "01f0e1cc18cce174bbcef84c0dd420078b3196ab2f7f1d234da2b70ae35d70ec"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bd08919481be31768bde0ab37b723f5bcdeca006",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_electric_factor.stderr.gz",
+      "raw_bytes": 419,
+      "raw_sha256": "163edc9efa81efd10a0a81da6cfd3f309a9a057090486ee8045aed45b666a207",
+      "stored_path": "_objects/163edc9efa81efd10a0a81da6cfd3f309a9a057090486ee8045aed45b666a207.gz",
+      "stored_sha256": "bb616430380865fa4fe2799dda4f01c6673bdd85f472ed3f5045d6553a389ea4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cee25a4db4c5989731dbb96a3b9bc5b8684748f5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_magnetic_factor.py.gz",
+      "raw_bytes": 5249,
+      "raw_sha256": "f6f804fde09c8f1db928dce544b3aa45a9d0f9f230078b1406ff4747b57d2ace",
+      "stored_path": "_objects/f6f804fde09c8f1db928dce544b3aa45a9d0f9f230078b1406ff4747b57d2ace.gz",
+      "stored_sha256": "de76054ddfe615e84a1bbe7be5b67cf627f82bec70a30de362c2a782b4877604"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b034e25a94f776a77c863775e2d22b26bd26512",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_magnetic_factor.stderr.gz",
+      "raw_bytes": 420,
+      "raw_sha256": "bd92120809dc169958a03d2917f0d04b845bd2d3d10878df531b93c955b267c2",
+      "stored_path": "_objects/bd92120809dc169958a03d2917f0d04b845bd2d3d10878df531b93c955b267c2.gz",
+      "stored_sha256": "856eef337a884139c06675bc993c84e0e62fa07b3ea19acd8ed4124d512900ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8784ba077d83e7698f9cc2fa612362ab97863162",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cube_frequency.py.gz",
+      "raw_bytes": 5241,
+      "raw_sha256": "0d323c33ec2f90ba682db897a172f5d92b9140d8468eb4c80886e8f25b1045f0",
+      "stored_path": "_objects/0d323c33ec2f90ba682db897a172f5d92b9140d8468eb4c80886e8f25b1045f0.gz",
+      "stored_sha256": "af28ca9e8e186d530534d3f4ff0494048644f5eaa7b4b4827efff682af49c11e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "91a38880c816c146cb11e1f4d9613caf1d9953d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cube_frequency.stderr.gz",
+      "raw_bytes": 376,
+      "raw_sha256": "5541e91ceb38e036cb964e27a0480782c19e8437a5dc46451630cd5f2028e7a8",
+      "stored_path": "_objects/5541e91ceb38e036cb964e27a0480782c19e8437a5dc46451630cd5f2028e7a8.gz",
+      "stored_sha256": "80b6ce4b43123f63c9e53bd257044eeb747bffaef30e8d272321121d1cc64dcd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cube_frequency.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cycle_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/harmonic_rank.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/plaquette_orientation.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/root_flow_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/weighted_coulomb.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/prior_check/BLOCK14_CHECK.stderr.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "650712fe7c147da3f010d3f82d61f5b4d3c8412d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cycle_sign.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "8ff7e292f6b69f1cd07cd44378cc8168dd7c312cdb111bb882acdd87c420d274",
+      "stored_path": "_objects/8ff7e292f6b69f1cd07cd44378cc8168dd7c312cdb111bb882acdd87c420d274.gz",
+      "stored_sha256": "3546424d6213de51120f95f1abaa0157b3ed82b3bc30163b1b2a19d4f9f766ce"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e86b40466f14f8b60e40a692d0b8f5e929391ee3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cycle_sign.stderr.gz",
+      "raw_bytes": 362,
+      "raw_sha256": "b3f04bee0848814d60a7c91a1978dc05ce1c27c973d40502b4578569b584d50e",
+      "stored_path": "_objects/b3f04bee0848814d60a7c91a1978dc05ce1c27c973d40502b4578569b584d50e.gz",
+      "stored_sha256": "0bdbec1ba84dcd4bf5130304822434dbba5429f79c1ab1e0b16803f46e17d997"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dbc9adaf6b92782f8ae2a726cbb9c55881becfd3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/double_copy_erasure.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "820a96ecbb344c0d00cbb713da0c6469326d6f2c41144df06fbe44e814fdd48f",
+      "stored_path": "_objects/820a96ecbb344c0d00cbb713da0c6469326d6f2c41144df06fbe44e814fdd48f.gz",
+      "stored_sha256": "15a52362af5108024030896e3e09fb5626bf47a373a18f7261b2ee56fdf784ef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8af99f11578b6d0feae017c691609c5ebe15b302",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/double_copy_erasure.stderr.gz",
+      "raw_bytes": 387,
+      "raw_sha256": "2a2a7b2232774313ea919258f5bb04dbfae68448fdc0144f177a3caf7f508533",
+      "stored_path": "_objects/2a2a7b2232774313ea919258f5bb04dbfae68448fdc0144f177a3caf7f508533.gz",
+      "stored_sha256": "f520e011154f0f0901599a3df336482e6df60786203595370f084d98b22cb781"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "417e15f057cbab2381ffc5d12af297b38a1ac32a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/harmonic_rank.py.gz",
+      "raw_bytes": 5240,
+      "raw_sha256": "9976b25e989d64a2e84580e9d1f4070e7f15d2f4b27fd6c632533ee0b4463855",
+      "stored_path": "_objects/9976b25e989d64a2e84580e9d1f4070e7f15d2f4b27fd6c632533ee0b4463855.gz",
+      "stored_sha256": "c4fcc10865fed75b8907cfca2b72ee01c6fd8766b925d9a0a87c4c9b59a90450"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "513d895a083a4fc342c547e58e368d4a0755877f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/harmonic_rank.stderr.gz",
+      "raw_bytes": 360,
+      "raw_sha256": "c6d421e250b6905538cabddc04460f750ff93ded52ae14e0d80e223d12f084df",
+      "stored_path": "_objects/c6d421e250b6905538cabddc04460f750ff93ded52ae14e0d80e223d12f084df.gz",
+      "stored_sha256": "b7697e42c557ae991eb9106506434bac81a01836ece7fd57ea9bc8c95a7c8f27"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d08213473b2e962dca1ce81c877acab03662298",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/plaquette_orientation.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "9f8764a573098020302b09df578780444e6a532133ff42649df50560d4318bbe",
+      "stored_path": "_objects/9f8764a573098020302b09df578780444e6a532133ff42649df50560d4318bbe.gz",
+      "stored_sha256": "51b23c5fe3a609840fc028bf428702bff76de18ef853826688659ccee6acf420"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "39516fbbb144539bd804d7f551be598d768d89ae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/plaquette_orientation.stderr.gz",
+      "raw_bytes": 357,
+      "raw_sha256": "aa127f2e2bb87838756f889b5125f477793c2cc8f6ecb8ccd2507e3d37aeaa81",
+      "stored_path": "_objects/aa127f2e2bb87838756f889b5125f477793c2cc8f6ecb8ccd2507e3d37aeaa81.gz",
+      "stored_sha256": "73dfc090b33133cf36422af1863b561cfff9a773cd0b3276f80653ea76a4ff26"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c49811fb97b5159421d0b060677cf6101c4639fc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/pure_magnetic_factor.py.gz",
+      "raw_bytes": 5244,
+      "raw_sha256": "e81b77d1294779da38c245c7633d9c6b860c73670e60435708bc523053e106ab",
+      "stored_path": "_objects/e81b77d1294779da38c245c7633d9c6b860c73670e60435708bc523053e106ab.gz",
+      "stored_sha256": "80369694e3be5b636f8c438db15c125238ffcf29f4dd36f0be1d88476850103d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d57a2d5d0e07499cab424c79532da9bb9aa52c8c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/pure_magnetic_factor.stderr.gz",
+      "raw_bytes": 390,
+      "raw_sha256": "8ff0de119ff44c159d0047a83ed4ac1592c6fe30859ceb72e8850fcc83e49c93",
+      "stored_path": "_objects/8ff0de119ff44c159d0047a83ed4ac1592c6fe30859ceb72e8850fcc83e49c93.gz",
+      "stored_sha256": "f4bea85ab7aa14e90219b84ba04da37abe06497eaa567d63ce44393acfd356ec"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "776a58b7704377b7ae5814ea82cd2faef77ff1a5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/root_flow_sign.py.gz",
+      "raw_bytes": 5245,
+      "raw_sha256": "09b1e5e4bb1bb9d8b96d2c8c98afaebbaf725b0ec7cebd221a889457f0ac89fe",
+      "stored_path": "_objects/09b1e5e4bb1bb9d8b96d2c8c98afaebbaf725b0ec7cebd221a889457f0ac89fe.gz",
+      "stored_sha256": "cdba74410436bb437b4264bed4e93ccfb552230242b7d0d60c041f7530d0567c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9f7613761d2766ba306945a4fcd806eaafcf2d34",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/root_flow_sign.stderr.gz",
+      "raw_bytes": 366,
+      "raw_sha256": "7c8f65848b9658a7be842b949a90c6a08ab255c3024d12d664b1bf4ab0d6c6be",
+      "stored_path": "_objects/7c8f65848b9658a7be842b949a90c6a08ab255c3024d12d664b1bf4ab0d6c6be.gz",
+      "stored_sha256": "153e187901b703aff88de76f0731f5f2caa258fa9f1d59a89b3dcffafe210948"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5135584e0966c49f4c11d5db5494c2350aa4beef",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/weighted_coulomb.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "8adb770abb5eb5c9f1a9408f3db95385be14bcee63ae4dd0ac013649cca350b3",
+      "stored_path": "_objects/8adb770abb5eb5c9f1a9408f3db95385be14bcee63ae4dd0ac013649cca350b3.gz",
+      "stored_sha256": "3cdb8bafca0f1e861cdacea3852c48f596b652a4d6ea951aa3221c2ddc8e1de6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "383db898642ff2e65eda2a7eada1fa3161586f95",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/weighted_coulomb.stderr.gz",
+      "raw_bytes": 363,
+      "raw_sha256": "723e6db9ff88d2a0f0542c89d92007a198e97e7d7918a2a56c3edbb0badbfcb2",
+      "stored_path": "_objects/723e6db9ff88d2a0f0542c89d92007a198e97e7d7918a2a56c3edbb0badbfcb2.gz",
+      "stored_sha256": "b49c22f78c03ce24ef946cdcd8b503ce6d162992480e08125b9833bf8a0caf77"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a83b66b5eb6b7de1ac7d8f42e64218b983151169",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/primary.py.gz",
+      "raw_bytes": 5243,
+      "raw_sha256": "791f8947ccf88efabdea38aab3f4132d046c9a51816407d1e6208325ba2b099b",
+      "stored_path": "_objects/791f8947ccf88efabdea38aab3f4132d046c9a51816407d1e6208325ba2b099b.gz",
+      "stored_sha256": "21a23d405d512a12bb412b500b23f898cb4e3400be13240b3f6e6563e1c0b96a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f96c17e3f8d22f3784c0d02c84e097f6fa92a9b9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_graph_build.stdout",
+      "raw_bytes": 357,
+      "raw_sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d",
+      "stored_path": "_objects/6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d.gz",
+      "stored_sha256": "f27d6de0872dd71aab9d13beb66110ee291ec018863797de8af8e75ead157f16"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bb68b2d59f79e64b9e8b3f5eb4eb66d226ecdf8d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_spectral_explore.py",
+      "raw_bytes": 3331,
+      "raw_sha256": "3659a7c993920a0a393efb14f1336d201ae7ad966b809aea64374c2d8f9f70a8",
+      "stored_path": "_objects/3659a7c993920a0a393efb14f1336d201ae7ad966b809aea64374c2d8f9f70a8.gz",
+      "stored_sha256": "0e0441b3d7fd15613251e7ceb6d92153bca545d96101a86d0f5c2f90963cf9cf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_vocab.json",
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "stored_path": "_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+      "stored_sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4ef74f799f9a11995c7ff1bfc2ab98ad73356c0a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.py.gz",
+      "raw_bytes": 5284,
+      "raw_sha256": "22c109d04e5aa5f0b5708cdab4afa92c61900dfba93beb5fc0ece4fda55c1edd",
+      "stored_path": "_objects/22c109d04e5aa5f0b5708cdab4afa92c61900dfba93beb5fc0ece4fda55c1edd.gz",
+      "stored_sha256": "009a47eb8632f96fcd5498486ddc4164914f69c9c52e0abc681ce4d9e3b4489a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b87a36200d05516a783968828df511d3cb1cb677",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.stderr.gz",
+      "raw_bytes": 435,
+      "raw_sha256": "d40b52940c2f5409c4458a273126b11397013cfa876402c349cafb02f9f57308",
+      "stored_path": "_objects/d40b52940c2f5409c4458a273126b11397013cfa876402c349cafb02f9f57308.gz",
+      "stored_sha256": "e374841d6dc86b264c8d47c7c8d55806782c4a51394222f9026e503cc078ca7f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cd84c2674e8d18886fd69b061bdf6b2329ab2c94",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.py.gz",
+      "raw_bytes": 5284,
+      "raw_sha256": "f63f863d08bb835ef553f4b77d184eb8e37a5871ca284c92fea534c925a1f992",
+      "stored_path": "_objects/f63f863d08bb835ef553f4b77d184eb8e37a5871ca284c92fea534c925a1f992.gz",
+      "stored_sha256": "ffbb63b609e8e5837ebfb038f79cab95f4abd8dffe7e84b9ee09476de310c1f1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d100fe1c3c154b2bd072dcadb4631424c4c04978",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.stderr.gz",
+      "raw_bytes": 379,
+      "raw_sha256": "485f37cdb3872bf8c1772aee805acbd51a122d6f23ceff0d53194b807ce70257",
+      "stored_path": "_objects/485f37cdb3872bf8c1772aee805acbd51a122d6f23ceff0d53194b807ce70257.gz",
+      "stored_sha256": "8296937daa0e0697d45e2f93190ff242304306e046ba3613dfa39c5887ebb45b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dfac34e2a7acd79e5cb50fd5a046147f4e2905fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.py.gz",
+      "raw_bytes": 5281,
+      "raw_sha256": "aa016240e04ad894ff0dea6bece30a6c02edf83cbe62c9a35ac12b614b279d08",
+      "stored_path": "_objects/aa016240e04ad894ff0dea6bece30a6c02edf83cbe62c9a35ac12b614b279d08.gz",
+      "stored_sha256": "ac7984ec94701edf2af934a2c09706cebd9d96d4f71b5a035498a09f327bf213"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "acd07052a44bd7abf6445275a33e475529505fbf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.stderr.gz",
+      "raw_bytes": 340,
+      "raw_sha256": "3c1c92641dfa802a2e184ce52c03db98da399e6f2b239a6a4d854d34a78efb2e",
+      "stored_path": "_objects/3c1c92641dfa802a2e184ce52c03db98da399e6f2b239a6a4d854d34a78efb2e.gz",
+      "stored_sha256": "d1d59522fd6ad92cb9b22b1268931d48af3f2f6af1301b95b783fb1ed0a4ab78"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "81e9973671a3db43432fb026fce760b2df6c5f24",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.py.gz",
+      "raw_bytes": 5271,
+      "raw_sha256": "434c341a52303871d2fd5ceef62e6c6682c6cfac9d5674519624ac99f46d4dbc",
+      "stored_path": "_objects/434c341a52303871d2fd5ceef62e6c6682c6cfac9d5674519624ac99f46d4dbc.gz",
+      "stored_sha256": "8c9174b4a72aa59a75059ff2f111d3fc71af910e5cf73869184c95c3d0f06fa4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "53470209216df3efe6cbb2f72cb19fee5e14f8a9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.stderr.gz",
+      "raw_bytes": 420,
+      "raw_sha256": "ed486d32ebf3f64b52d09dcfc5158e91dea6eef9a6049819c182f7d3c371964c",
+      "stored_path": "_objects/ed486d32ebf3f64b52d09dcfc5158e91dea6eef9a6049819c182f7d3c371964c.gz",
+      "stored_sha256": "7ac8a0ee6232df0b0e79316b1e3b2809a21c52874695912f6ec2183e3ee28c5d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6c8b0b97cb714919ea116365cece1bf6085030f5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.py.gz",
+      "raw_bytes": 5284,
+      "raw_sha256": "d29a0d7a12a8a7595fbc43368044854defa6f6edb815cb75c55c86347c97d0c0",
+      "stored_path": "_objects/d29a0d7a12a8a7595fbc43368044854defa6f6edb815cb75c55c86347c97d0c0.gz",
+      "stored_sha256": "60959c77cb2792a656570544c89cc281a07ad9759783534e0853dffa337861bd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e8111c4a860eb7ef53232463a5657ad05a0c1f25",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.stderr.gz",
+      "raw_bytes": 419,
+      "raw_sha256": "e26af19995d941e0b353ed49f1b9d248e0cb37fc298a62117ccd748cc36079ae",
+      "stored_path": "_objects/e26af19995d941e0b353ed49f1b9d248e0cb37fc298a62117ccd748cc36079ae.gz",
+      "stored_sha256": "404652892d343f6c42ddc765fe62a18256b9fc889a00bf72aef8127ee7af4aef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0a860a810d7581e1b84ed0f015d558740bbbf363",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.py.gz",
+      "raw_bytes": 5265,
+      "raw_sha256": "2d968dbdf5cb9f8f6e7ff5b2bf2967e44771aa0c77b5f56a4a2b486e2524f1f7",
+      "stored_path": "_objects/2d968dbdf5cb9f8f6e7ff5b2bf2967e44771aa0c77b5f56a4a2b486e2524f1f7.gz",
+      "stored_sha256": "bcc14e6c96cd5b07be0f5ffbde909df9ecd7dc98af108f9be59c6ad11dc678ca"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "59cfe89551b7607b0c3b8c1a7689f778b11c7562",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.stderr.gz",
+      "raw_bytes": 374,
+      "raw_sha256": "a5b36f5b9893d1787c051f1d798116a7535cf5ad65311277f17a865d2c5ac8d8",
+      "stored_path": "_objects/a5b36f5b9893d1787c051f1d798116a7535cf5ad65311277f17a865d2c5ac8d8.gz",
+      "stored_sha256": "ac513d0f17475ca288a42c90efb0370cf69bc6973783f8ba8f14406af7f41303"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c5a1946a1a0b987d8e51441ea47356646ecb5596",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.py.gz",
+      "raw_bytes": 5286,
+      "raw_sha256": "4b04feaeed83a8955ea4c802abeb162ddac4aeee04d6c3c4af43de08299cbf61",
+      "stored_path": "_objects/4b04feaeed83a8955ea4c802abeb162ddac4aeee04d6c3c4af43de08299cbf61.gz",
+      "stored_sha256": "83dad8b818da989352e89cf75909eef2167a0e9961c8fcb4e99c78df9c1cc00d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d842944a1e5773cfd5f3e1f548cf64db574be6b2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.stderr.gz",
+      "raw_bytes": 420,
+      "raw_sha256": "edddc96e48428e65d7d9001c0510997502f0debcda367ebc522b774a50318c15",
+      "stored_path": "_objects/edddc96e48428e65d7d9001c0510997502f0debcda367ebc522b774a50318c15.gz",
+      "stored_sha256": "e690bc9cd81be6b9336f9290adaa14d05305db69421ffbf6eedb0a7518d737ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2a7578d021e0bfe3e9dbb9f88f41aa76e3129dd2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.py.gz",
+      "raw_bytes": 5289,
+      "raw_sha256": "75cbe3aa490c8612978f3df9f4c736d50e086959a580fc2db4ad40afa5824e9d",
+      "stored_path": "_objects/75cbe3aa490c8612978f3df9f4c736d50e086959a580fc2db4ad40afa5824e9d.gz",
+      "stored_sha256": "e384cf899e52f2491ba0a6efc214a026272aa43236648132b3365573e334e646"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7e5d92da8f4766df5b8fccb442ae27e51b3ee7e5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.stderr.gz",
+      "raw_bytes": 422,
+      "raw_sha256": "fff7b3aef508f229ade1caecc9285c3662bb094367f037cbb0b424c122c1250e",
+      "stored_path": "_objects/fff7b3aef508f229ade1caecc9285c3662bb094367f037cbb0b424c122c1250e.gz",
+      "stored_sha256": "d71253fd3202253095b09a7eb579f2ce1b660f94175306afe1fef8eb65bb25e7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ed860282ccaf42c5fa48a0765cef72831c33718",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.py.gz",
+      "raw_bytes": 5281,
+      "raw_sha256": "0cc637dd5ecb4275dff9396d485ed9d1ebd12ff699a2fa5532e9913f62fa77c3",
+      "stored_path": "_objects/0cc637dd5ecb4275dff9396d485ed9d1ebd12ff699a2fa5532e9913f62fa77c3.gz",
+      "stored_sha256": "3e1bd1904e44954e4cb09289db839dfec4f87a1a2deb7fa9dd13a9bcadb91584"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ebe3e5ee6eb259503cd053ac489b302d23b5405c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.stderr.gz",
+      "raw_bytes": 376,
+      "raw_sha256": "1031265910e86965a0231bacafa6abe81f432da4bd9eaa117d60320dce8aebaf",
+      "stored_path": "_objects/1031265910e86965a0231bacafa6abe81f432da4bd9eaa117d60320dce8aebaf.gz",
+      "stored_sha256": "ecc63e8356b4affc593a53de4e90f09e446447e0319ff5d1e322e9dfe255fe2b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f8ec4718dcf987bf3dd6d4d86cb361c17ce2fab9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.py.gz",
+      "raw_bytes": 5284,
+      "raw_sha256": "fa75f8976f98a2f68b41f7a36e69c071ec104163d8ade2c754e9c32a483a621b",
+      "stored_path": "_objects/fa75f8976f98a2f68b41f7a36e69c071ec104163d8ade2c754e9c32a483a621b.gz",
+      "stored_sha256": "78e28f644be9da5c413d93e3c459a0c64517651ddd04d8730c2d5cfdd3e1483f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ebad9ccb7d30768a14e70eb55a46419ff6cb1f76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.stderr.gz",
+      "raw_bytes": 362,
+      "raw_sha256": "089b70bcef76ae68575dce04b245ee0d9aa11d918be45914c3c88f2abcb2c0ba",
+      "stored_path": "_objects/089b70bcef76ae68575dce04b245ee0d9aa11d918be45914c3c88f2abcb2c0ba.gz",
+      "stored_sha256": "38ec1c1556979205fae8fa9a12d8078cb64c44be670f3ea7cb3079838c7577aa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bb571145830510d19593624f5d1eb8c22f60316e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.py.gz",
+      "raw_bytes": 5284,
+      "raw_sha256": "3080df4ae05fab3c17a39ee497f70e8f6efafaa585d20729ce8975b9917a30d6",
+      "stored_path": "_objects/3080df4ae05fab3c17a39ee497f70e8f6efafaa585d20729ce8975b9917a30d6.gz",
+      "stored_sha256": "6de6323e77264d3b7a6b6f7a14e03e96e8e68f15ed8fc97e86facd4d0677d84e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dac0d12b76ea112a6b8211aa8db846ed1fd5b5dc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.stderr.gz",
+      "raw_bytes": 389,
+      "raw_sha256": "ba29c3b80780ffa9f252ab7e822a5197433ebee8eab3ee60dfefe3067920d4fb",
+      "stored_path": "_objects/ba29c3b80780ffa9f252ab7e822a5197433ebee8eab3ee60dfefe3067920d4fb.gz",
+      "stored_sha256": "ffade8c549b4f54e2da7b6ca061bc2f32d78b555b183af057efcafe80a6ea024"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d98fde9b65b9970dc27f63f1716e9857c03385f3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.py.gz",
+      "raw_bytes": 5281,
+      "raw_sha256": "17825baec15335603ef8321f63d6b9160e67a40a52795fa40035d85ebc56eff4",
+      "stored_path": "_objects/17825baec15335603ef8321f63d6b9160e67a40a52795fa40035d85ebc56eff4.gz",
+      "stored_sha256": "0307556a21093b3358a8d1698a321ed4d5f7750772b26b4bb493025d06c7607f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0429c6643b6751beb19ce7a793b6d45262d7420d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.stderr.gz",
+      "raw_bytes": 360,
+      "raw_sha256": "8e2cbdadf2048613b0259c68b5a4e56261522c10ec540db1ee5c655e8c505975",
+      "stored_path": "_objects/8e2cbdadf2048613b0259c68b5a4e56261522c10ec540db1ee5c655e8c505975.gz",
+      "stored_sha256": "234de5b47b2dd1670c8d42ec2e9f40debe32527694a3f2fc048b9c02068388dc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6f793b4b0c357487d4b85dfbccf987f4160923db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.py.gz",
+      "raw_bytes": 5283,
+      "raw_sha256": "aa73275331903fdda39083cce43bff6d6d12f152c1dfb0a284bf2695d15a5747",
+      "stored_path": "_objects/aa73275331903fdda39083cce43bff6d6d12f152c1dfb0a284bf2695d15a5747.gz",
+      "stored_sha256": "95e23bd17f45065d25faa4d3d36b7fb4b15ef3d0187d419d2c7be423cde61c97"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "20d496c14a5145b0e0da652f464c7724e9f59e40",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.stderr.gz",
+      "raw_bytes": 356,
+      "raw_sha256": "eb5ce7c8c332d3f087128c7cfbe2a1fd09215c5d175aebcd0c804e80e23bba79",
+      "stored_path": "_objects/eb5ce7c8c332d3f087128c7cfbe2a1fd09215c5d175aebcd0c804e80e23bba79.gz",
+      "stored_sha256": "7b8ca29a9eff9f685ff17dfa38e1b80f4fb47b8cb0785ffd1f5321844ea41752"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "43359c52904659def5604eb85149e0ec66f2d051",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.py.gz",
+      "raw_bytes": 5285,
+      "raw_sha256": "d43230a063e4d4027b3748319a4ac16644702654f24516594c44aaaaafddc52e",
+      "stored_path": "_objects/d43230a063e4d4027b3748319a4ac16644702654f24516594c44aaaaafddc52e.gz",
+      "stored_sha256": "8a4af4fc92568207ad12fd47cde9e4d35caf8cddf5677f6d268a86ca1bfd88eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4d5ce7d496d88edafd59cab9171eb570623a686d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.stderr.gz",
+      "raw_bytes": 391,
+      "raw_sha256": "00603fc2d860378106bbb98d7b4b67565acd1c0fa2bae2f4082a95aa713a4925",
+      "stored_path": "_objects/00603fc2d860378106bbb98d7b4b67565acd1c0fa2bae2f4082a95aa713a4925.gz",
+      "stored_sha256": "296c92768c0a70afe238320243b0e733b1ff47b18180d35e131b22cb37b90ebb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "629c0bc0102b5a9f28290b7fe29cf95f173b1679",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.py.gz",
+      "raw_bytes": 5286,
+      "raw_sha256": "4d0e9db9a82895b5c87956acecebe57e399103a4c8db8879d1d5aba16765d672",
+      "stored_path": "_objects/4d0e9db9a82895b5c87956acecebe57e399103a4c8db8879d1d5aba16765d672.gz",
+      "stored_sha256": "f44476520e0d53d9033a1d0549ac4e107477ffca120ead657e26e60fe0734072"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6847e398f876fb7a89a5ede8d9c64f05905c1927",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.stderr.gz",
+      "raw_bytes": 366,
+      "raw_sha256": "623a9ad29d2ce9e585a4cb2ea5de98c7ea7b203c6063aeeecf76178e0fc6d567",
+      "stored_path": "_objects/623a9ad29d2ce9e585a4cb2ea5de98c7ea7b203c6063aeeecf76178e0fc6d567.gz",
+      "stored_sha256": "e631511fc93f079f25b12fc5f7a925abb15cfa87e5470bee5dc7c1afb9db3d32"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e629a17ff813cb401015a23d097ea7fcc4d4c44",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.py.gz",
+      "raw_bytes": 5284,
+      "raw_sha256": "99f71599659a9173f085942903490fa892fa6baf92a6c495efb12a6b50b1cb46",
+      "stored_path": "_objects/99f71599659a9173f085942903490fa892fa6baf92a6c495efb12a6b50b1cb46.gz",
+      "stored_sha256": "f3fb78b15aa8f065bff1ec254fe118da96c1ced0862f1bcec781ad1c5f90cb94"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d4600f528ef7d7bea6d28280a0246fdcbc802b00",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.stderr.gz",
+      "raw_bytes": 362,
+      "raw_sha256": "d4aeedee14999d4b12edf858eab239d8285094a170d24c76f19b4a1f096142ad",
+      "stored_path": "_objects/d4aeedee14999d4b12edf858eab239d8285094a170d24c76f19b4a1f096142ad.gz",
+      "stored_sha256": "6b4633af295550ba8d29c8178b1943f98af454db0fa0c6c763a54fbc68f064ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "050af49242a5ff969ff7496bc2f5d7581b92e9aa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/package_block14.py",
+      "raw_bytes": 12643,
+      "raw_sha256": "11071dcff43f4f71a5b8d79c747d2f1caafc8d27a7f0b15781039e23ff14191a",
+      "stored_path": "_objects/11071dcff43f4f71a5b8d79c747d2f1caafc8d27a7f0b15781039e23ff14191a.gz",
+      "stored_sha256": "a3edb7e8919ac61fa7a671b74b486fac4e56d534d20db015990ec8b09981d5eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "05a36c9f1b797e52007b1651a6c2952d4d8cbcfe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/prior_check/BLOCK14_CHECK.stdout.gz",
+      "raw_bytes": 1255,
+      "raw_sha256": "f6b9aa630f6dfd31588bcd4cdd206be668819e6ed77405c56dad6fedd6267c28",
+      "stored_path": "_objects/f6b9aa630f6dfd31588bcd4cdd206be668819e6ed77405c56dad6fedd6267c28.gz",
+      "stored_sha256": "43a51d55e687e8b485164bd19bfa8124bd4427135a33d2b9d97e07c6cbdce307"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7976f3e545d462e4d82b76f3e162364d2e5d3874",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/prior_check/check_block14.py.gz",
+      "raw_bytes": 5006,
+      "raw_sha256": "31158de67bf1ea507bf606da16b5e66b8700291ec1e495452ea9a9a06c351e90",
+      "stored_path": "_objects/31158de67bf1ea507bf606da16b5e66b8700291ec1e495452ea9a9a06c351e90.gz",
+      "stored_sha256": "22d1a8753ee2408be0a14fc0903ec646007bb61b8d39ad32bd070f58c6b3d879"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ca1aea5e37a66b88f4b700d12fec8b7db2452055",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/verify_block14.py",
+      "raw_bytes": 3849,
+      "raw_sha256": "a55a3d61ca3f92223e9d61d75e4891265683ac2596c44e7573150c6a3aec6de2",
+      "stored_path": "_objects/a55a3d61ca3f92223e9d61d75e4891265683ac2596c44e7573150c6a3aec6de2.gz",
+      "stored_sha256": "d482733c1e9c7be6285ee6de9dd899443added761832a3c2ac6fda21367fd912"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/",
+  "revision": "3201d7c5452e95c69399fbe7671f862e357623c5",
+  "schema_version": 1,
+  "unique_blobs": {
+    "0429c6643b6751beb19ce7a793b6d45262d7420d": {
+      "occurrences": 1,
+      "raw_bytes": 360,
+      "raw_sha256": "8e2cbdadf2048613b0259c68b5a4e56261522c10ec540db1ee5c655e8c505975"
+    },
+    "050af49242a5ff969ff7496bc2f5d7581b92e9aa": {
+      "occurrences": 1,
+      "raw_bytes": 12643,
+      "raw_sha256": "11071dcff43f4f71a5b8d79c747d2f1caafc8d27a7f0b15781039e23ff14191a"
+    },
+    "05a36c9f1b797e52007b1651a6c2952d4d8cbcfe": {
+      "occurrences": 1,
+      "raw_bytes": 1255,
+      "raw_sha256": "f6b9aa630f6dfd31588bcd4cdd206be668819e6ed77405c56dad6fedd6267c28"
+    },
+    "089216aeb37cfb5f61fff68d3cafc967e00ee216": {
+      "occurrences": 20,
+      "raw_bytes": 103,
+      "raw_sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    "0a860a810d7581e1b84ed0f015d558740bbbf363": {
+      "occurrences": 1,
+      "raw_bytes": 5265,
+      "raw_sha256": "2d968dbdf5cb9f8f6e7ff5b2bf2967e44771aa0c77b5f56a4a2b486e2524f1f7"
+    },
+    "1600a4dbb5a9ab70a3250cfcb2d64c0b6dedb0bc": {
+      "occurrences": 1,
+      "raw_bytes": 2531,
+      "raw_sha256": "8f42c394a3931279a3a18c68a69f550bce0f7e7b9d2452fb1e09fcafb0da9467"
+    },
+    "17ccf758be6fe1fc268bdb9f0ad6c07896cad8f7": {
+      "occurrences": 1,
+      "raw_bytes": 211,
+      "raw_sha256": "862bbc31e355e1716c9e73ab3829222756b564f83ab1f15adaf22b71df366355"
+    },
+    "205d51daa6d5b10d1049c4e59905a62e541b2577": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "03b09f8c0158efa309df69ed7d8aa4841d4f7ebdb95c6238fd1404f9c933aed1"
+    },
+    "20d496c14a5145b0e0da652f464c7724e9f59e40": {
+      "occurrences": 1,
+      "raw_bytes": 356,
+      "raw_sha256": "eb5ce7c8c332d3f087128c7cfbe2a1fd09215c5d175aebcd0c804e80e23bba79"
+    },
+    "237b76e34dbf631bdf095380a349fc1ebc3d1a70": {
+      "occurrences": 1,
+      "raw_bytes": 22513,
+      "raw_sha256": "180b485053f7494f9c32e08bc015f6bcff2bbb6c5621e94cfebdcb91a87982b4"
+    },
+    "2a7578d021e0bfe3e9dbb9f88f41aa76e3129dd2": {
+      "occurrences": 1,
+      "raw_bytes": 5289,
+      "raw_sha256": "75cbe3aa490c8612978f3df9f4c736d50e086959a580fc2db4ad40afa5824e9d"
+    },
+    "2bdc0297455ec314243f7844472bbe40e5f23f07": {
+      "occurrences": 2,
+      "raw_bytes": 5778,
+      "raw_sha256": "65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5"
+    },
+    "2ed860282ccaf42c5fa48a0765cef72831c33718": {
+      "occurrences": 1,
+      "raw_bytes": 5281,
+      "raw_sha256": "0cc637dd5ecb4275dff9396d485ed9d1ebd12ff699a2fa5532e9913f62fa77c3"
+    },
+    "383db898642ff2e65eda2a7eada1fa3161586f95": {
+      "occurrences": 1,
+      "raw_bytes": 363,
+      "raw_sha256": "723e6db9ff88d2a0f0542c89d92007a198e97e7d7918a2a56c3edbb0badbfcb2"
+    },
+    "39516fbbb144539bd804d7f551be598d768d89ae": {
+      "occurrences": 1,
+      "raw_bytes": 357,
+      "raw_sha256": "aa127f2e2bb87838756f889b5125f477793c2cc8f6ecb8ccd2507e3d37aeaa81"
+    },
+    "3fca6f52c1d00905d7d98a2811acde2a0349ca24": {
+      "occurrences": 1,
+      "raw_bytes": 634,
+      "raw_sha256": "6da68208bbb43edc3fb802deb07074da87869e38b6b85a3e1b0582ee30d071c1"
+    },
+    "40007864088b3b89589608e5af678f4e3fec9af6": {
+      "occurrences": 1,
+      "raw_bytes": 1436,
+      "raw_sha256": "c2e670e292a49a09b8ff6c8cc62693ec232456d4e6850baaf41d35b698451422"
+    },
+    "417e15f057cbab2381ffc5d12af297b38a1ac32a": {
+      "occurrences": 1,
+      "raw_bytes": 5240,
+      "raw_sha256": "9976b25e989d64a2e84580e9d1f4070e7f15d2f4b27fd6c632533ee0b4463855"
+    },
+    "4278fe64b60ef1cf5419b6c8d08662099e402faa": {
+      "occurrences": 1,
+      "raw_bytes": 14484,
+      "raw_sha256": "501fc6f463418b51efe863ba08abb12d099abd3275a19d033c4259a8fddcae6f"
+    },
+    "43359c52904659def5604eb85149e0ec66f2d051": {
+      "occurrences": 1,
+      "raw_bytes": 5285,
+      "raw_sha256": "d43230a063e4d4027b3748319a4ac16644702654f24516594c44aaaaafddc52e"
+    },
+    "449e5c5a6deda6d47ad983a6a8a9a8fcb4640209": {
+      "occurrences": 1,
+      "raw_bytes": 5240,
+      "raw_sha256": "cf78a991e704939fb82ddc47394181562ce5e86d794274a1479f034f7f95b143"
+    },
+    "4907c963fadd3175a4cdf5624a0c0248dee8453f": {
+      "occurrences": 1,
+      "raw_bytes": 377,
+      "raw_sha256": "e605c9a0282c16e9a9884ffd3516fe609e9e6adf9bff6d648e419b4538965838"
+    },
+    "49a1b746ab12cfded8bd8964db306014868169f1": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "dc5a75d572e4299b5c4c59b9de49af1a07fb67a4b19987d40cef8ba67aba13f5"
+    },
+    "4b9538f79d4bdcddd39a579b4bbb349309a383ea": {
+      "occurrences": 1,
+      "raw_bytes": 3766,
+      "raw_sha256": "825460d97dce197c7cfd1b4e2b8090eaab7d0ec2dab7b214987546e9e6246732"
+    },
+    "4d5ce7d496d88edafd59cab9171eb570623a686d": {
+      "occurrences": 1,
+      "raw_bytes": 391,
+      "raw_sha256": "00603fc2d860378106bbb98d7b4b67565acd1c0fa2bae2f4082a95aa713a4925"
+    },
+    "4e629a17ff813cb401015a23d097ea7fcc4d4c44": {
+      "occurrences": 1,
+      "raw_bytes": 5284,
+      "raw_sha256": "99f71599659a9173f085942903490fa892fa6baf92a6c495efb12a6b50b1cb46"
+    },
+    "4ef74f799f9a11995c7ff1bfc2ab98ad73356c0a": {
+      "occurrences": 1,
+      "raw_bytes": 5284,
+      "raw_sha256": "22c109d04e5aa5f0b5708cdab4afa92c61900dfba93beb5fc0ece4fda55c1edd"
+    },
+    "5135584e0966c49f4c11d5db5494c2350aa4beef": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "8adb770abb5eb5c9f1a9408f3db95385be14bcee63ae4dd0ac013649cca350b3"
+    },
+    "513d895a083a4fc342c547e58e368d4a0755877f": {
+      "occurrences": 1,
+      "raw_bytes": 360,
+      "raw_sha256": "c6d421e250b6905538cabddc04460f750ff93ded52ae14e0d80e223d12f084df"
+    },
+    "53470209216df3efe6cbb2f72cb19fee5e14f8a9": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "ed486d32ebf3f64b52d09dcfc5158e91dea6eef9a6049819c182f7d3c371964c"
+    },
+    "59cfe89551b7607b0c3b8c1a7689f778b11c7562": {
+      "occurrences": 1,
+      "raw_bytes": 374,
+      "raw_sha256": "a5b36f5b9893d1787c051f1d798116a7535cf5ad65311277f17a865d2c5ac8d8"
+    },
+    "5a89afd7b46a88611c97de1e64222ee6598d0f01": {
+      "occurrences": 1,
+      "raw_bytes": 5246,
+      "raw_sha256": "922f2db63fc694148f1c7acbbf28e5c98659835694be3bce32d7a70b13c2baa9"
+    },
+    "5b507644b7cb6d1086422440532ef547c3b2f22a": {
+      "occurrences": 1,
+      "raw_bytes": 1183,
+      "raw_sha256": "db8943664ab28d79cad5ef2540e9e932ddf5da01918262005d4baa996016a9c7"
+    },
+    "5d08213473b2e962dca1ce81c877acab03662298": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "9f8764a573098020302b09df578780444e6a532133ff42649df50560d4318bbe"
+    },
+    "629c0bc0102b5a9f28290b7fe29cf95f173b1679": {
+      "occurrences": 1,
+      "raw_bytes": 5286,
+      "raw_sha256": "4d0e9db9a82895b5c87956acecebe57e399103a4c8db8879d1d5aba16765d672"
+    },
+    "642b57a63032b43445d8c5f82c346fafc772dd5a": {
+      "occurrences": 1,
+      "raw_bytes": 22977,
+      "raw_sha256": "29a452cada4c2650381ba1c9b4a4fb8f95e248567d60c8a2a93640017ec9ac7a"
+    },
+    "64a28b21bfed58dcbb8fafc3cf928a04beb5201a": {
+      "occurrences": 1,
+      "raw_bytes": 1435,
+      "raw_sha256": "736e620e3fe1aaa6836dfab888d52fd00df4a4b406e0adbc22c96b7c891cb1ab"
+    },
+    "650712fe7c147da3f010d3f82d61f5b4d3c8412d": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "8ff7e292f6b69f1cd07cd44378cc8168dd7c312cdb111bb882acdd87c420d274"
+    },
+    "6847e398f876fb7a89a5ede8d9c64f05905c1927": {
+      "occurrences": 1,
+      "raw_bytes": 366,
+      "raw_sha256": "623a9ad29d2ce9e585a4cb2ea5de98c7ea7b203c6063aeeecf76178e0fc6d567"
+    },
+    "6c8b0b97cb714919ea116365cece1bf6085030f5": {
+      "occurrences": 1,
+      "raw_bytes": 5284,
+      "raw_sha256": "d29a0d7a12a8a7595fbc43368044854defa6f6edb815cb75c55c86347c97d0c0"
+    },
+    "6dc3303e33546ff2f10324f864f7a48586e1e4e7": {
+      "occurrences": 1,
+      "raw_bytes": 5225,
+      "raw_sha256": "82fc0bef49f84bd50cb3b25cebb57647d38fc1bfbb0528c9ab2b5ff3bcde1768"
+    },
+    "6f793b4b0c357487d4b85dfbccf987f4160923db": {
+      "occurrences": 1,
+      "raw_bytes": 5283,
+      "raw_sha256": "aa73275331903fdda39083cce43bff6d6d12f152c1dfb0a284bf2695d15a5747"
+    },
+    "776a58b7704377b7ae5814ea82cd2faef77ff1a5": {
+      "occurrences": 1,
+      "raw_bytes": 5245,
+      "raw_sha256": "09b1e5e4bb1bb9d8b96d2c8c98afaebbaf725b0ec7cebd221a889457f0ac89fe"
+    },
+    "7976f3e545d462e4d82b76f3e162364d2e5d3874": {
+      "occurrences": 1,
+      "raw_bytes": 5006,
+      "raw_sha256": "31158de67bf1ea507bf606da16b5e66b8700291ec1e495452ea9a9a06c351e90"
+    },
+    "7b034e25a94f776a77c863775e2d22b26bd26512": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "bd92120809dc169958a03d2917f0d04b845bd2d3d10878df531b93c955b267c2"
+    },
+    "7e5d92da8f4766df5b8fccb442ae27e51b3ee7e5": {
+      "occurrences": 1,
+      "raw_bytes": 422,
+      "raw_sha256": "fff7b3aef508f229ade1caecc9285c3662bb094367f037cbb0b424c122c1250e"
+    },
+    "8007a8b8935fe8f388eefee0d9d270d5ca0db09b": {
+      "occurrences": 1,
+      "raw_bytes": 706,
+      "raw_sha256": "756a8f1bca64dd1db3b356377f22dc24c20aaa25fc90df912c25e59d5fa90a65"
+    },
+    "81e9973671a3db43432fb026fce760b2df6c5f24": {
+      "occurrences": 1,
+      "raw_bytes": 5271,
+      "raw_sha256": "434c341a52303871d2fd5ceef62e6c6682c6cfac9d5674519624ac99f46d4dbc"
+    },
+    "86e43ea3218b5890302b754bbf8927f94e79f7ee": {
+      "occurrences": 13,
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "8784ba077d83e7698f9cc2fa612362ab97863162": {
+      "occurrences": 1,
+      "raw_bytes": 5241,
+      "raw_sha256": "0d323c33ec2f90ba682db897a172f5d92b9140d8468eb4c80886e8f25b1045f0"
+    },
+    "8af99f11578b6d0feae017c691609c5ebe15b302": {
+      "occurrences": 1,
+      "raw_bytes": 387,
+      "raw_sha256": "2a2a7b2232774313ea919258f5bb04dbfae68448fdc0144f177a3caf7f508533"
+    },
+    "91a38880c816c146cb11e1f4d9613caf1d9953d2": {
+      "occurrences": 1,
+      "raw_bytes": 376,
+      "raw_sha256": "5541e91ceb38e036cb964e27a0480782c19e8437a5dc46451630cd5f2028e7a8"
+    },
+    "9f7613761d2766ba306945a4fcd806eaafcf2d34": {
+      "occurrences": 1,
+      "raw_bytes": 366,
+      "raw_sha256": "7c8f65848b9658a7be842b949a90c6a08ab255c3024d12d664b1bf4ab0d6c6be"
+    },
+    "a3087a73359ef073de2885523a30749015f1ff18": {
+      "occurrences": 1,
+      "raw_bytes": 419,
+      "raw_sha256": "c5979a153e816b8919a16945f0d1752264ef25b3abbae344bda7cb28c9356109"
+    },
+    "a7a5ff59f978c9fd9dc659702f5317e2038479ff": {
+      "occurrences": 1,
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    "a83b66b5eb6b7de1ac7d8f42e64218b983151169": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "791f8947ccf88efabdea38aab3f4132d046c9a51816407d1e6208325ba2b099b"
+    },
+    "a93a68cefbeabbff6ba205da94988ba72196fb03": {
+      "occurrences": 1,
+      "raw_bytes": 312,
+      "raw_sha256": "e8c8a58e7c781d1e9c3fec827fcc5b8581f89c2064c9536f5fa7f141b61a94a1"
+    },
+    "a9f945f200ccb8bede19a1340d6c74761abf34b7": {
+      "occurrences": 1,
+      "raw_bytes": 5231,
+      "raw_sha256": "4cac280324efb0b5fc75a16f28fb57369b80bb11296532991a0c2f13afa407a5"
+    },
+    "acd07052a44bd7abf6445275a33e475529505fbf": {
+      "occurrences": 1,
+      "raw_bytes": 340,
+      "raw_sha256": "3c1c92641dfa802a2e184ce52c03db98da399e6f2b239a6a4d854d34a78efb2e"
+    },
+    "b87a36200d05516a783968828df511d3cb1cb677": {
+      "occurrences": 1,
+      "raw_bytes": 435,
+      "raw_sha256": "d40b52940c2f5409c4458a273126b11397013cfa876402c349cafb02f9f57308"
+    },
+    "b9ffb2f4c963ae78640ef84e4ffeafd8ec6323d0": {
+      "occurrences": 1,
+      "raw_bytes": 271,
+      "raw_sha256": "f7a51ef4156329bcd015d96e39f489577517e41070f782e1148cf9fc57da38c1"
+    },
+    "bb571145830510d19593624f5d1eb8c22f60316e": {
+      "occurrences": 1,
+      "raw_bytes": 5284,
+      "raw_sha256": "3080df4ae05fab3c17a39ee497f70e8f6efafaa585d20729ce8975b9917a30d6"
+    },
+    "bb68b2d59f79e64b9e8b3f5eb4eb66d226ecdf8d": {
+      "occurrences": 1,
+      "raw_bytes": 3331,
+      "raw_sha256": "3659a7c993920a0a393efb14f1336d201ae7ad966b809aea64374c2d8f9f70a8"
+    },
+    "bd08919481be31768bde0ab37b723f5bcdeca006": {
+      "occurrences": 1,
+      "raw_bytes": 419,
+      "raw_sha256": "163edc9efa81efd10a0a81da6cfd3f309a9a057090486ee8045aed45b666a207"
+    },
+    "bd0c264fecb4b3622511e38c0801d0723bf04af1": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "9c03fe42bdb34c59ca0ee5796598a2a3adc6d2839f268a53e82baa37a67fce55"
+    },
+    "c47965c1aa82e9eb5500ee1e827a0f339d0ff4b7": {
+      "occurrences": 1,
+      "raw_bytes": 435,
+      "raw_sha256": "0c5c4e3024ab1c0da530931134bd374dcdcc102043842c4dca1878cd65bf6ea8"
+    },
+    "c49811fb97b5159421d0b060677cf6101c4639fc": {
+      "occurrences": 1,
+      "raw_bytes": 5244,
+      "raw_sha256": "e81b77d1294779da38c245c7633d9c6b860c73670e60435708bc523053e106ab"
+    },
+    "c5a1946a1a0b987d8e51441ea47356646ecb5596": {
+      "occurrences": 1,
+      "raw_bytes": 5286,
+      "raw_sha256": "4b04feaeed83a8955ea4c802abeb162ddac4aeee04d6c3c4af43de08299cbf61"
+    },
+    "ca1aea5e37a66b88f4b700d12fec8b7db2452055": {
+      "occurrences": 1,
+      "raw_bytes": 3849,
+      "raw_sha256": "a55a3d61ca3f92223e9d61d75e4891265683ac2596c44e7573150c6a3aec6de2"
+    },
+    "cd84c2674e8d18886fd69b061bdf6b2329ab2c94": {
+      "occurrences": 1,
+      "raw_bytes": 5284,
+      "raw_sha256": "f63f863d08bb835ef553f4b77d184eb8e37a5871ca284c92fea534c925a1f992"
+    },
+    "cee25a4db4c5989731dbb96a3b9bc5b8684748f5": {
+      "occurrences": 1,
+      "raw_bytes": 5249,
+      "raw_sha256": "f6f804fde09c8f1db928dce544b3aa45a9d0f9f230078b1406ff4747b57d2ace"
+    },
+    "cf63667238ea2e53e4ec8374b535a377f0db3a5e": {
+      "occurrences": 1,
+      "raw_bytes": 271,
+      "raw_sha256": "8c99dadc6edd335f85a6d31f8fcf47aa2d4fbe5469c1fd76c79c10db96777d62"
+    },
+    "d100fe1c3c154b2bd072dcadb4631424c4c04978": {
+      "occurrences": 1,
+      "raw_bytes": 379,
+      "raw_sha256": "485f37cdb3872bf8c1772aee805acbd51a122d6f23ceff0d53194b807ce70257"
+    },
+    "d4600f528ef7d7bea6d28280a0246fdcbc802b00": {
+      "occurrences": 1,
+      "raw_bytes": 362,
+      "raw_sha256": "d4aeedee14999d4b12edf858eab239d8285094a170d24c76f19b4a1f096142ad"
+    },
+    "d57a2d5d0e07499cab424c79532da9bb9aa52c8c": {
+      "occurrences": 1,
+      "raw_bytes": 390,
+      "raw_sha256": "8ff0de119ff44c159d0047a83ed4ac1592c6fe30859ceb72e8850fcc83e49c93"
+    },
+    "d842944a1e5773cfd5f3e1f548cf64db574be6b2": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "edddc96e48428e65d7d9001c0510997502f0debcda367ebc522b774a50318c15"
+    },
+    "d98fde9b65b9970dc27f63f1716e9857c03385f3": {
+      "occurrences": 1,
+      "raw_bytes": 5281,
+      "raw_sha256": "17825baec15335603ef8321f63d6b9160e67a40a52795fa40035d85ebc56eff4"
+    },
+    "dac0d12b76ea112a6b8211aa8db846ed1fd5b5dc": {
+      "occurrences": 1,
+      "raw_bytes": 389,
+      "raw_sha256": "ba29c3b80780ffa9f252ab7e822a5197433ebee8eab3ee60dfefe3067920d4fb"
+    },
+    "dbc9adaf6b92782f8ae2a726cbb9c55881becfd3": {
+      "occurrences": 1,
+      "raw_bytes": 5243,
+      "raw_sha256": "820a96ecbb344c0d00cbb713da0c6469326d6f2c41144df06fbe44e814fdd48f"
+    },
+    "dfac34e2a7acd79e5cb50fd5a046147f4e2905fb": {
+      "occurrences": 1,
+      "raw_bytes": 5281,
+      "raw_sha256": "aa016240e04ad894ff0dea6bece30a6c02edf83cbe62c9a35ac12b614b279d08"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 2,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e8111c4a860eb7ef53232463a5657ad05a0c1f25": {
+      "occurrences": 1,
+      "raw_bytes": 419,
+      "raw_sha256": "e26af19995d941e0b353ed49f1b9d248e0cb37fc298a62117ccd748cc36079ae"
+    },
+    "e86b40466f14f8b60e40a692d0b8f5e929391ee3": {
+      "occurrences": 1,
+      "raw_bytes": 362,
+      "raw_sha256": "b3f04bee0848814d60a7c91a1978dc05ce1c27c973d40502b4578569b584d50e"
+    },
+    "eb181c4215517ec5777d800f3a153e3e4f946653": {
+      "occurrences": 1,
+      "raw_bytes": 3768,
+      "raw_sha256": "36d17ebee26047138fabcf3c76f47ce62a199c545ad7530395c4b619c7ccb1ee"
+    },
+    "ebad9ccb7d30768a14e70eb55a46419ff6cb1f76": {
+      "occurrences": 1,
+      "raw_bytes": 362,
+      "raw_sha256": "089b70bcef76ae68575dce04b245ee0d9aa11d918be45914c3c88f2abcb2c0ba"
+    },
+    "ebe3e5ee6eb259503cd053ac489b302d23b5405c": {
+      "occurrences": 1,
+      "raw_bytes": 376,
+      "raw_sha256": "1031265910e86965a0231bacafa6abe81f432da4bd9eaa117d60320dce8aebaf"
+    },
+    "f20ad23e2fee3c251a14d70cd82050f95c5e6b57": {
+      "occurrences": 1,
+      "raw_bytes": 418,
+      "raw_sha256": "9461c2b28b2c142c1d5d7b87b3e82f42c629071ba89999a860feb3afe1fa24c5"
+    },
+    "f4ab468ab8610be99ef82748706fc34afd7b03e3": {
+      "occurrences": 1,
+      "raw_bytes": 340,
+      "raw_sha256": "bf25af8f885f5ea9a105472f3bcb913dcce39285aa6a8d0c5a3aa9e0b8b2e756"
+    },
+    "f8ec4718dcf987bf3dd6d4d86cb361c17ce2fab9": {
+      "occurrences": 1,
+      "raw_bytes": 5284,
+      "raw_sha256": "fa75f8976f98a2f68b41f7a36e69c071ec104163d8ade2c754e9c32a483a621b"
+    },
+    "f96c17e3f8d22f3784c0d02c84e097f6fa92a9b9": {
+      "occurrences": 1,
+      "raw_bytes": 357,
+      "raw_sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d"
+    },
+    "fc68809bef1904cccbaf465a105643fcdfd12431": {
+      "occurrences": 1,
+      "raw_bytes": 3902,
+      "raw_sha256": "8abdf739d0a174380963e4b850230881aa5f52a35e4b5ff90cc7bde7653b1e38"
+    }
+  }
+}

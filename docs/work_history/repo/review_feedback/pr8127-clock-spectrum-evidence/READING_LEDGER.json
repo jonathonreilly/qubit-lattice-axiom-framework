@@ -1,0 +1,41 @@
+{
+  "at_utc": "2026-09-15T08:10:40.775701+00:00",
+  "repo_sources": [
+    {
+      "path": "docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "revision": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+      "sha256": "bfedf452ec4e5b4b19c7099cb4c5e7ebc69aca4198fbdfba1c8788647ddea237",
+      "reading_scope": "complete790-line source reread; all-affine covariance and same-state site/link positivity are the provisional mathematical input"
+    },
+    {
+      "path": "docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "revision": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+      "sha256": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48",
+      "reading_scope": "sections1-8 and targeted finite-check/review scope read; no full reread claimed; varying-law result not imported as fixed-law Gaussianity"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_REFLECTED_CURVATURE_ACTION_RECORD_SOURCE_TWO_STEP_TRANSFER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "ec2ee0ae9f5bc7380849538569983517658703b63e4f5e975a7a131558f86528",
+      "reading_scope": "lines1-115 and235-330 read; positive-transfer moment comparison for a different supplied gravity carrier, not a clock obstruction"
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/pdf/1311.2305",
+      "version": "v2",
+      "author": "Hao Shen",
+      "scope": "opening through Proposition1, extractedlines0-462; scalar-gradient model and initial polymer expansion",
+      "role": "RG route context only, no matching clock theorem imported"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1201.3415",
+      "version": "v3",
+      "author": "Kouta Usui",
+      "scope": "opening through Theorem2.1 and initialreconstruction, extractedlines0-436; complete section3.3 lines917-976",
+      "role": "standard positive-transfer spectral representation context; sourceodd-time limitation preserved; our time0 construction derived separately"
+    }
+  ],
+  "search_scope": "git grep spectral concentration|susceptibility measure|spectral cone|Stieltjes over docs at pinnedmain, with auditdata/rawcapture exclusions; no comprehensive literature novelty claim",
+  "novelty_scope": "Elementary positive Stieltjes algebra applied to the provisional fixed-clock covariance packet; neither spectral representation nor finite-group Coulomb phases are claimed new."
+}

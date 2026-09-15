@@ -1,0 +1,17 @@
+mode: milestone
+status: ready_for_existing_pr_update
+pr_number: 8127
+branch: physics-loop/periodic-clock-covariance-20260914
+original_head: d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee
+frozen_main: 5deabeb698a27c2c3f68c5df685af2521ef15307
+campaign_deadline_utc: '2026-09-15T13:30:44Z'
+execution: personally_no_subagents_or_delegated_workers
+claim_id: fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15
+note: docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md
+runner: scripts/fixed_clock_transverse_spectral_concentration_2026_09_15.py
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+independent_review: pending
+formal_audit: deferred
+next_action: Push and verify existing PR8127 at the exact new head; remove the delivery checkout only
+  after clean science and remote durability verification. Continue personal campaign to13:30:44UTC.

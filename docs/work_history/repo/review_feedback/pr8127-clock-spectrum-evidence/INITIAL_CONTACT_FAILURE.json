@@ -1,0 +1,36 @@
+{
+  "at_utc": "2026-09-15T08:04:16.413908+00:00",
+  "source_sha256": "8c9168f4c8f20f22cff922416ace156f292552ca27ff7b2455320b0260168119",
+  "failure": "double-precision Fourier/image conditional score comparison exceeds1e-13",
+  "diagnostic": [
+    {
+      "N": 5,
+      "max_error": 5.24469356832924e-13,
+      "min_fourier_weight": 0.002662414573539218,
+      "component_errors": [
+        2.5815631354608417e-78,
+        2.220446049250313e-16,
+        5.24469356832924e-13,
+        -2.0694557179012918e-13,
+        2.220446049250313e-16
+      ]
+    },
+    {
+      "N": 9,
+      "max_error": 3.1645797093915462e-12,
+      "min_fourier_weight": 0.0004875491204965332,
+      "component_errors": [
+        2.5815631354608417e-78,
+        -2.220446049250313e-16,
+        1.3322676295501878e-15,
+        1.9539925233402755e-14,
+        -6.634692795159935e-13,
+        3.1645797093915462e-12,
+        2.930988785010413e-14,
+        -8.881784197001252e-16,
+        -2.220446049250313e-16
+      ]
+    }
+  ],
+  "disposition": "pending precision diagnosis; not a failed phase claim"
+}

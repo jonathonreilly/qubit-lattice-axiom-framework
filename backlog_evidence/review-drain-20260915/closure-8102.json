@@ -1,0 +1,25 @@
+{
+  "pr": 8102,
+  "original_head": "fe094b01714c5abaa8038a0b136e6577dfaae034",
+  "branch": "claude/formation-order-menu-mixture-census",
+  "landing": "173381a6c85174f0b8d570958ac0588867fee67f",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "claude/formation-order-menu-mixture-census",
+    "headRefOid": "fe094b01714c5abaa8038a0b136e6577dfaae034",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8102,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8102"
+  },
+  "final_state_verification": {
+    "closedAt": "2026-09-15T11:34:26Z",
+    "headRefOid": "fe094b01714c5abaa8038a0b136e6577dfaae034",
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8102"
+  }
+}

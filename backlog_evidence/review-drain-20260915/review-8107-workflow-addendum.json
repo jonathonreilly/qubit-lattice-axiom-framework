@@ -1,0 +1,24 @@
+{
+  "pr": 8107,
+  "reviewer_session": "/root/skill_review",
+  "original_report_preserved": true,
+  "workflow_commit": "4994b354ed33e28c7b409be7ff0a492394f03a21",
+  "workflow_skill_sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+  "unit_commit": "a29a92ee2b9026fc6545dc7bcca7db4cb37aba38",
+  "source_hashes_verified": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "8cb6396fa59862bbae5204f317260f7c3b8dd9f38267197e1e1c1ff471bd32e4",
+    "logs/runner-cache/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.txt": "481f7a923c5c9157408b7d87480c295004954a717e3abc24cc94d1fc9d087431",
+    "scripts/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.py": "db4b75701aa4b3407f69bb54e42898dd3a39cbda7c570797fa17aa53afbccf25"
+  },
+  "input_hashes_verified": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "8cb6396fa59862bbae5204f317260f7c3b8dd9f38267197e1e1c1ff471bd32e4",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd",
+    "docs/A_READABLE_MATTER_LAW_EXISTS_ON_THE_5X5X5_WINDOW_THE_DESIGNED_LAWS_RECORD_TABLE_COMPLETED_BY_A_COVARIANT_PARITY_RULE_HAS_EVERY_MENU_NONEMPTY_IS_READ_FROM_PARTIAL_BLOCKS_AND_KEEPS_THE_FERMION_BOUNDED_NOTE_2026-09-04.md": "31bbe6cb6d105b8cd2bfb4480159a2b06c722de928d2e6085d1f33d1017c2426"
+  },
+  "verdict": "PASS WITH BOUNDED CLAIMS remains valid",
+  "scope": "Read complete workflow-only child-base preservation diff and accompanying command/checker/test changes. Requires preserving and retargeting dependent open PR bases before deleting landed parent branches; does not change scientific review criteria, source, mathematics, calculation, or premise requirements.",
+  "runner_repetition": false,
+  "scientific_review_impact": "none; all three reviewed source/evidence paths and all five actual inputs match original final review hashes"
+}

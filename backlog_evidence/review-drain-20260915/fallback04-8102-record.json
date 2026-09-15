@@ -1,0 +1,27 @@
+{
+  "base": "64402f54b06356cb9acf3e5631046e593cc83978",
+  "source_head": "fdd6ec419ebd493c760108e336b85aafbbe4aa02",
+  "source_tree": "1796a4b9554f2b8e07585d5743cc3241f74ae940",
+  "heads": {
+    "8102": "fe094b01714c5abaa8038a0b136e6577dfaae034"
+  },
+  "source_owners": {
+    "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "review-8102",
+    "logs/runner-cache/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt": "review-8102",
+    "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py": "review-8102"
+  },
+  "inputs": {
+    "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141",
+    "logs/runner-cache/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt": "965263155485bf37dea816c17c1214a37011eff7f7121bb2f3d3bfe831c33fcd",
+    "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py": "57316434b0d9d48b46f0803227af1ad10940e7931b9663cf599e603cc8a08e74",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+  },
+  "report": {
+    "md": "17cb7889424f3b0dfbe7b3d7b1afa80278b6fc5880f6d705d52d68abb0172d5a",
+    "json": "34bd99d0ecf7383e5ff43ee24e8a9b0aab30bc94b12a6d8d38498c5e603a35e9"
+  },
+  "departure": "Third required single-unit fallback after train04 failure",
+  "interaction_check": "All source/actual inputs unchanged; newly landed strip and Gaussian instances retain disjoint domains and do not alter finite-menu formation definitions."
+}

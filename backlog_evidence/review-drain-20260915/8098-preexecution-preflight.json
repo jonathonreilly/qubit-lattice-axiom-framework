@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8098-preexecution",
+  "tree": "559dd17a9b799ec402cf2fbba9ca6d746e2cb60e",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/COMPACT_U1_QUADRATIC_BASIN_SOURCE_FREE_MAXWELL_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+        "docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md",
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8098-evidence/kept/pr8098-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4376
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4374
+    },
+    "declared_inputs": {
+      "hits": 8774,
+      "misses": 4507
+    }
+  },
+  "record_sha256": "6ef2a23fb6f105a85a11493b26a2154d695c9cfde6bbe6766e302a99475cddef",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

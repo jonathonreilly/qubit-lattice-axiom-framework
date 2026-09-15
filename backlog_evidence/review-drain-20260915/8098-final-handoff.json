@@ -1,0 +1,39 @@
+{
+  "status": "PASS WITH BOUNDED CLAIMS",
+  "tree": "e0ca4a31411ec4a9a673e951ce5f2add1659693d",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8098-final.json",
+      "sha256": "a4107cf8cc3b5b808d4e0c37be830244da0a34e6dca048a171562b31180f1b66"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8098-unit-v1-final.json",
+      "sha256": "ee6b2cfbcb9002b3bf04db73d5f687163a02785d74c6c17e9c78239ada165692"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8098-final-preflight.json",
+      "sha256": "c3b9e513cc90e507d957aca3f7a07c49ba96b42c46788375ffb16a9e746471ff"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8098-final-preflight-execution.json",
+      "sha256": "b43ee16c15c3aeac1aa5f2e92551ddb5cb181810bcb0e6e7dba656b60bafc250"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8098-output-difference-inspection.json",
+      "sha256": "1d9b23e1a48fdfa477daa17cd01c46e8ef7f5a2b2a7c9a875ff1cc96fa2351c0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8098-reviewer-output-comparison.json",
+      "sha256": "aba807d1e5b42c09d93b9705688dfe1fabd6b07d3af03f3a09042efa1fbd7cbb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8098.md",
+      "sha256": "190cc5635d8f2ad332681324c50527d23acb14ddd3c42c775f38e0209a584c1c"
+    }
+  ],
+  "current_main": "fa0200b439231d7dff40066b75236f5d46cda999",
+  "current_context": "All 23 non-unit declared/context/tooling input bytes equal final reviewed bindings. Added PR8097 formal Grassmann interaction is distinct from this free filled-band Hall calculation and is not assumed to prove its conditional one-loop gauge phase. Formation-order and native weak-electric/L6 packets do not supply assumptions for this explicitly supplied Wilson band and Hall-canceled formal QED calculation. No new parent grant or phase-existence inference.",
+  "primary_attempts": 1,
+  "final_cache_preflights": 1,
+  "remaining": "Root combined integration gate; no further unit primary execution."
+}

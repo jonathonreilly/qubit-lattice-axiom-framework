@@ -1,0 +1,811 @@
+{
+  "schema_version": 1,
+  "unit_id": "pr8098-preexecution",
+  "constituents": [
+    {
+      "id": "8098",
+      "head": "616362e0a07ed5422d040d182ecbba24265941dd",
+      "delta_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/review-8098-preexecution.json",
+        "sha256": "a360cf2ee34a06c80f576b55b1911ebaabc26b1d93b0516e46984b3e68ae116d",
+        "json_pointer": "/original_dispositions/8098"
+      }
+    }
+  ],
+  "source": {
+    "base": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+    "commit": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+    "tree": "559dd17a9b799ec402cf2fbba9ca6d746e2cb60e",
+    "paths": [
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/README.md",
+        "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/036e514b99a4e3b8abba18fe2e4b8b71f4ed6a94c9aea321e73b0556da69f007.gz",
+        "sha256": "a23160a23d0be054660c15a15e010a9b474a64be10f80677be3fc1dbeae34f39"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/06b225187e857ee838abe20b74787fd6f7ddc9ecfd6b947748b9ae3d38cb21aa.gz",
+        "sha256": "bb205e1840f2688cf3cdd0d9bd3d1570b04f6abab1c1fdf1573d465f58e554fd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/094fa21ca69679f65f18ef5945d5aee3ecc114261eaa8ef0e0702992caa38ddf.gz",
+        "sha256": "fc7d0d775c67d6346a61d78d8bdf822d2f804b77b406043205eb98fa29d7369a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/0abb17330354cee0d90aceefa676d8670194bd154fbbde5af84fc5316f080daf.gz",
+        "sha256": "14effc9ef381f34fe2a0981eb4bba431bdd1291580c3c0a7989b8ec9dbe2030d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/0cc45370f5389d17545071fb1cf7d06ed86c3ad56a40252919acd54d40b6fe64.gz",
+        "sha256": "1b3ad7d8ed8b1e5606ef5677ab2a3e6e4d9b598f306c7f74ecf2f8fb4750ba3d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/103e1f7ab4d5dd3f79d2c5b60b37f61325ba359c9b9d23cf5c315327819d3076.gz",
+        "sha256": "10ec2ec09221e9d9aa15b3db5504e7dcc5f7167d3e4996904ca11d741b70d817"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/10c7ca6fa7b4d1520ee4817af56f0e005c8c6f2b23465df74793059c053a849e.gz",
+        "sha256": "76e122aff6b89d1d7afa06282850bc73927a838c14e028339edc3a738e44be13"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/169e3771051d8e694945d038107e046756df93eeee378a4fbfd4ae05cd46800e.gz",
+        "sha256": "f1f367aeff16d7fa15646fbe0a9edefaefcc403579ce4a2679ef6ccf61c862dc"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/187ba827c872f346e49388ff184d2f2d60aefb99009b9a64d03ae1e951d46f1d.gz",
+        "sha256": "315871953465cfa6c287a74536f3a65cdbbe911b413f1f06c9dcd87092499a85"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/191ac81701b6b2b50920571946cee4d57bb3f997136660bcce0dc2b2b149b7f9.gz",
+        "sha256": "5803d3ebfff81f7f28ee2c686a30d2ba1a18716af488766fbb4f21692cc36494"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/19229347fbdd7ed5abc4b61cee0df2dcd88e5c0e021878ef76ab2b6ef4d5e781.gz",
+        "sha256": "5ff73b60afe3859db8a697a1e2968f145715ee99f0e1515bdda2c35bdefe9f50"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/1abe40b165d145b0be28fb7d57294221e37c7aa4ed0af8c888026d08bfb08885.gz",
+        "sha256": "6bf59f98095e2fc64367cae834ddacd6e29e8aba66e11d46247d72f85356a40c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/1bcde4da49949d4d1d73c89231967c34c29ae0b38d9caef0bd189ed96e5a2b94.gz",
+        "sha256": "127a8b7513c0aa5df3d452da851a599f5d8206eef8c03654e8027514ee47e07c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/1c38ab9fcf8646e770a45d2124156d2d46906da6f0b503c8fa0937322d06ee8c.gz",
+        "sha256": "d0d3526d758f71a298e1c146438ed804eb71c29afea54792102468a17ad9402b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/1dc8cf089434b6ee623ead399d8395eb3f5d5d615abf8e749eacd32abdd5d84e.gz",
+        "sha256": "75938042a0141a918d215aa2ddfafa88da919780f0fcd825d660639ac1878ab2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/20ffe2419d526221bdbc8a2ffe54d9c4ef8602e081af7a2fc9b882464eba1646.gz",
+        "sha256": "149df6429bc0ea0ff6f3a4d9f21126845e527614abfe6fd07919953eef9167f2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/22a7426bb6adaa60603921f1153f3c3c7578b363c35e47f7831dff5422463045.gz",
+        "sha256": "f3910249d00cbfbd59091191257adf936ebbab2ebeb272e7d5127093e61fb43e"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/23c88f82dca08fd14b88db555eb0dbcec1d088b4500e7bf8afd590c21d7cbc2a.gz",
+        "sha256": "0ab20b4f0fb5d92a3b6e6043dda8e27ccdaf69bf0b8eb081a34b3f9b963bc3c6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/25bc66dd94d89395a72e6b11484530813086051ee52794070e4b66de80607be2.gz",
+        "sha256": "1a8b582fa0a04d26dadc9780a9fec2d0ceed292c4f932199396080002d2ab6a4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/289d53d015a4f7976326e1476773b73399d86a6b45893662ea3a127dcba4a199.gz",
+        "sha256": "b3d7ead4d8cfc92655023c3d050c8dd780dfdd53a295fbcdc48db4d5bc6bd90a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/2ab0e53544763bf178ccc23b8120711ef9d8c899d105d02351e0a99f2ba124be.gz",
+        "sha256": "010e73cc5e2fbb3ffeadf9bcad48df67fd31b9ca2ab80f614e00144b6215b3bc"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/2e9d795ce9c288b9876856c51edae5f43fa08ef7dfc2877782e7617ffd034c7f.gz",
+        "sha256": "7d98fe7c73f6fce668a99cb29bce1bd8539bde9160f216626074f4b161c19499"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/2f810c85249f58a08ae5eb87609ec0a5d74f7ef04e8bb27e9565ce389ea39800.gz",
+        "sha256": "5c41540418b7f1d8a4722c15fd52b6e5843840e70bf552bba00fad2f0a41a7fd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/3001eae128b9d9b2a2f3831699c2349e667b9fbd71bdc7b1075734e8351fa7a1.gz",
+        "sha256": "ee6bfb80b9a458c025578900d55c1166b45cc53cc2a50d0bb1813a4ba6a956c6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/317b2098c6af4646db0ff3cff80d423937523b9fdf4773b6499a4b1ae0c2bbf7.gz",
+        "sha256": "29a9b26eef3ca002b703a7ff645ed1e4371e0f0c1cda9fda1da36d1d7c9e120f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/33268c1fe9f0377c9cd4c12396cd190fe10d297be973c95684e423f919011ac9.gz",
+        "sha256": "1dad80fd246ea619fd494eed9cb95ba3b35adb8437f46d4e5ac605db0c9a1160"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/37bc56daad44eb470f76227f3316014ac15e2b7644bb2e4ebe25c0a4e84ec3b1.gz",
+        "sha256": "54caa2a3847cb1defe72f15fe5595a98bac01a3a692628d30679f6ae905b86f5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/3bcf15334143ed7d4000e4f6f5b7c001907e5a58384a3d1ba0a32e89a7a08885.gz",
+        "sha256": "aa7dc54434a691f567b6f2b5cb60cc42d59fe924abca4aec5c37f01c28019557"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/3d36030b0da4d22303d91dbd8d75b5d65a1fd72c2a38754ae6532213363df2f3.gz",
+        "sha256": "012b14528de65a4409b0b27f0e7bd6b4c331c5b7a272331d784c4761b3ed5efe"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/3f2455cfe636b99e1cbf4040d6f0beb576e2dcda777368dca3182368f0562297.gz",
+        "sha256": "a91363c7e52fc5750c323b32daf4657b5c7d78f9bd0e839b662f8e83f4f0abf8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/3f571170e90364a07ae9f6ed0768c9fcdd36b1c8aca189784d03741570581865.gz",
+        "sha256": "2a216d447ccb12f035c99ff64d94a2eb18507aeda7bfc251d1085a6261731396"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/40520797c2b71aef6682717b6ca3122817e3e151faf168b694112506e52480ea.gz",
+        "sha256": "352dff321b48eb8febc557728e75fd092f075a949a4a64808cba69a38a870896"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/40750c115dcc51d7a53ea9ffb6cd8c2a5ef38fa29396a5fb98c028c72d2208bd.gz",
+        "sha256": "145f2ddbc537f6b0055fa707c9a24e7ca40cdfc67dca7d7a016e3520f193ecf6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/439f062154bd6805fed413962f310c861ed800f5c3e1a3fde1390e59a67ee2e9.gz",
+        "sha256": "32900e7d1a5d1f1faaf98b1f75ea3de42346323fc80f82172d05932dbbbbba0d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/4567b38e20a69291c37bc615f4a636087ad1cec42be01373dcd4656c34435e5f.gz",
+        "sha256": "bc9c4752fbcd57fa97bbe6ec96eb3d3f562a45464087e9a09e03ada9e4112495"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/462f346ed0a7108da14af24f8746968cd76c455a63b3f4ad363c4b06786e6b41.gz",
+        "sha256": "8aa7cbf9a3920415c6d4e598b5f5ae92fa99b746fe2fcbad8c7298bdbe11a5ca"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/48792da38fb96666b385fc6e9efdf22a80aecc10e29959b10befe615beb5788d.gz",
+        "sha256": "41bad63d1277f78435eed8607c50ffbb3c31669cf461158f87456482292874dd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/4b3cce026757c3030d77ce89a9bb5fac2a1cfe0b0322c33cb998ce08a0b367ef.gz",
+        "sha256": "e552c537507bfbfdfffdf2989e8f67ddeeabe41040987ebf2474f6e2a0cf926f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/4b5064609224b6c9b80339030d74c5715204b73130aa86b4e34c08c01f00c05b.gz",
+        "sha256": "285b90e36a7adf4bac91dce4df505517bd5932b9a37e86954994564baf0ec361"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/4c6be6fd5dd398340d005fea112c42fa63a428664b9402e50875d380e8111f00.gz",
+        "sha256": "1fe2c4e6f18a1ebd21e9ab44308ab5dbac773c264936b73fa5e2ece1d3421457"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/4d4f353e0eec22be3ed7815ee5d4855f407d750893d0b917d711cbeb0cd4baf1.gz",
+        "sha256": "9b0bcc507a5dd3e9be5e9c9ba8657be91cea0ceb353a021e9658524618cfffd1"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/4d7469030c03fc79049810ac7d09b2abb82e328202333309b0180329e6744943.gz",
+        "sha256": "ef244c2d595020743c8697067a4db1fb260ede3875c1c2cffaf4d9cba3d0fa11"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/540faf71bdf164760a0632452e9a2e7489233f2b9aadc27fbffc892f4f6f7d83.gz",
+        "sha256": "a55de9856ce218031e5c414e5c4921caf4ef2451b8ff2f4595531ae4275b6d47"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/571930927e8d5fb5ea5cfe62917bfbcd1e3cec63bb8cdcdabad4fe5fcf409c32.gz",
+        "sha256": "bb2d6a457d45f16ab96954344af8a5cd31704c01ce1dbe679538895c9ab0e09f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/57fac9fedff0a4822812e3ad8929eefc741d7f5959dde315245d36716be577b2.gz",
+        "sha256": "dc99acfbd4ffceaf63baa334d83fa3220702d55697cfcf453630ea33d67e996f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/592b2ab4023a435436c263ecf6aa740d5bb66d59f6ca15b7952b1632fb1b332b.gz",
+        "sha256": "43d79ccdbd608fe9d18bd28413d7d58526331429ab902bcf82fff3c51f21feba"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/5945e02fe9951221abec0478cb9da0380a04af3649a40b0a40c95942e54fadcd.gz",
+        "sha256": "e225bb3765cef6e130d24065233d1c31c337956dc7ecfba3b0c274d1a8d64fb0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/59f217dd44fe64f8c0c98d051a478ba45010d976b9716ed206d0e9db178b9929.gz",
+        "sha256": "c21b9f30c36df44ab0eb6839e8e8a6b13b7f0a09dcde0cdcd29fae042ec19e58"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/5aa0973875d76380738cbd68c61ac23163fcaa9e27389459fdfa397911247160.gz",
+        "sha256": "5c48c86dc9248d12028818829fc5d2e2df101fbf31e9dacd9de00ef258bcf121"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/5daaa4881f84aced1d19b98ca0bd4cb0d88e89fec4be1d59963672f7b1b4dd98.gz",
+        "sha256": "1d0a39b7327fb1fd62222b21c58da7c917ea7cde9a50be94bac8d29249596a9b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/5e4b3cacac0ebdf2668a151f339a6636b8e4632d06ceef69894167443b4e1640.gz",
+        "sha256": "564f02701cdba93ab53a6819932db4d9bff08a1a7cf213dd2b8309c40d6d1a91"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/5f669542210fa1bacab1989e990df5eaff73cbf9637c1639adc6636232f5eb0d.gz",
+        "sha256": "9135a1d76b189159c51f4a3777b859d53cd39bb4ab915235d2c8a26a74fa68e3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/5f6edd53136471b4f81b5cadd998feced97080bcb26985d70827c446126a98df.gz",
+        "sha256": "a3b51ac5b616ab0da9a1f6cff2e3eda99f6cb167654dbbaef4d39e43946f1835"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/65a3eaced7f60e6d27b1c5a58ab6c338b3c38b2dbad648b52056720c254597d2.gz",
+        "sha256": "d666c5fdc9b0435711d1d987c7fdc33693921a19f712936fef870a7b8671adeb"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6748721901b74a66123abfd9023b9c83ea7410aa2c6c3798d53bd67478c79893.gz",
+        "sha256": "bdcfc6f27438d96fc00b2616a8e6dcd67d3ad641c04f8e6e44d7b56f0945e6df"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6789982b0ee14ca5d3c4aea2fbddf99f0c2e107e8761cee9ae825e6787612a1e.gz",
+        "sha256": "a74813e338a769ae64e95c358cc75686a1def6265d3937dd555c70d5a70fd83d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/67b70231a08fd239381cc5fbdd5f31362c5aacdbcb9a80c22e5cb438f63f3177.gz",
+        "sha256": "149896a895b07e342fccdb0349166b49f6b0080784c914d682dfd45cdefedc36"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/68f6d0ddb36e184bfd89424c7a9270d270e9f09e1c5444e2b20dc4bc3517a3c1.gz",
+        "sha256": "bcc68220d1037862a9fc5122a8f7a4ffe244e2e9038fc3da7bd00edf5185a0b3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6a8dc3b96d37a4ef6864e825f335c1faf43ae05153eb28b0b22e75a2f0431ae6.gz",
+        "sha256": "c879c4097bf92e4a6607c2d2f7d02d9f5a9dd9c40ec632cad88b7b439ae84d9f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6c3d041ec117c1e313f7048479d97a0922664551cb2ab658f3b3e92261565989.gz",
+        "sha256": "4e56fcbab59f29180d3e90271a14be580c672896672fd13b3fb5d1a034f1c692"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6c59c2fd13e86e5fa416790dba91c7d27b742d905052329992a08feba9e59ef3.gz",
+        "sha256": "b0270df6eb9a21fcae37b721e7a488ecaf6554c0c507605e08e3dee8f300d8d2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6d9d4a748c9b62375e8afed1a08dcab821c964b48c55b9e7a07c89acb97945d8.gz",
+        "sha256": "10a91dd69d105ea936c8851e1e646fe2ea423982c58c3393346eaf5a8c8e8d9a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/6e3b98a459c12cecdc2d2b09063734e5855077d915680263238cc23619f91fb4.gz",
+        "sha256": "9bff36cc95d40101230ce0b61aad9cc31e1413176ebabd5248a4e9bb8302691e"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/71a5d7e4fbbc3ecd4ec91aa45f1cd5d1656ac81efd432336b191986a1c57669e.gz",
+        "sha256": "0d4c9b9c20c71c65cc067e504705300a4912502d14c980378a28fc9c172d1ada"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/721cc879339bd088b07d5ab5cede0e3f2774223d900b71aeb2172f23bd22d166.gz",
+        "sha256": "9881e6d7994fbe521c2f2864b9274ffe69661bec059c850aac3e787db33e79d6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/749370b69ad47169bcba5e427783cd754267db0d121820703eefb1431d7f5d8e.gz",
+        "sha256": "0e0711f00bd1ae464fe0f80fcb66ff80fd58a85d37dba96b7cba616e12dbfad4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/81ae770928409a9fc4d71acf153f66a47120cab68a575d4633c7ae44f24c6427.gz",
+        "sha256": "e564b64c9e3882eac71e5d0c5a229d7433a38ab911b219efd1bf43c98ecf4976"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/81fa3903caf654b459a889d1bdb0b13808c1d1b8e32f14533fc73e4c8a07fe3b.gz",
+        "sha256": "410bd8747f0f79de6e47853dd0efab421e5a59a50088fd2b84206feab3540878"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/82f5d42ae9130c38aeff8b8d127c54290363468e8ebb464b160c4274f2c68147.gz",
+        "sha256": "ea56f4c75c2cf265c590d0d585facf2cfd9957067a33d98b9f143bfcb5b72d47"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/83b810c6bf64e4a9a7588c5af2ff17119fbc99eb1aa01b05b4e5da2477b6a7bb.gz",
+        "sha256": "c9286b3044e4c17d61a81d14d913564ffe17688481764228447ee12ae6137df3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/83eb7094d83c6645ff6b197d4e53f0f4a9f8ab8b396856523e28e8ad06411573.gz",
+        "sha256": "b30b3ba79ec62794967feff39fe7d17ef23508c991af7f17a89fb8c689bca0fe"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/8543dc330723d249028bfdf95b06d342457d5dc99dc7510f241616c19350d02f.gz",
+        "sha256": "19be2e913dde530722482b17a387a6eb17cfea7b93c6ba79a85a37c915111986"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/864b53ef45037a275315f7b036d1c1a9ca26deaa8af7630b686a622455633df8.gz",
+        "sha256": "2c964c38aa0967d9131b71681fd5c7390d63da5c02fcc071d2c5468e298742e0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/8695370e9b11dc48c91caf06deaeeae194b439405f586f59e4ff6b6b3066b163.gz",
+        "sha256": "9ca50cc18a8bac37ffc0ec97fca414667c4915231d29ae8f7bfb9ce5380b72a5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/876154b7199fa607604b851e5f58055d7ad1061f4e2fcdee345404f8cb443a70.gz",
+        "sha256": "c586c31daca2a7c6fc8aed2df65035b339cccfe2a82848e5ca6af374308fa6a3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/87cdf26b0461b55c72982630e7e5c0b456861680104ca530c09d290df18ea024.gz",
+        "sha256": "c2f5ace74b73a920f48e52cd97688e168edce44803b22c7722524880c9ac22bc"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/8b2a3c5f32bbde580ebba50c604b4b89b487258495ae88466ce7187f54d8ce6f.gz",
+        "sha256": "0e22c52d23ffb280701dbfbd566ed9e3762b4108150bdbecc7b7266fa4526fdb"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/8dffa9fec0e2366c487087a00db3dba7f5e02614cdf6e4785ccaa14f6c38522d.gz",
+        "sha256": "06f6aa7eeb026bd3ea57d92bcf6cda732c4ff025d3195939fda8d82a290e5774"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/9569a3e130511940736ae711acf2ee2946f0cbaed965947821db44ca4b2e87b1.gz",
+        "sha256": "4280cbb30819ab7c396b4234272fa5d7c5ffc13f5ef5ec229f9faead3343f777"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/97b7d22dab2e49d7aa671b78e23f04a3e1ea662e708c4af5f781e1fbe798619a.gz",
+        "sha256": "5fc87c8577178ae508ef621fcf0378669ae3cda9f292869caf12658254a90721"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/98d52be737413af37fc6be66e85ee0aa1d0597151331d5327512c82e4b877bb4.gz",
+        "sha256": "3bd94af921f4b738e0f046436038943604c97fb1efbbddb33d578125a7846ae4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/9b847cbeacbe89f9ce3ac248e6967fedaf3f0212c45420ad75031ffafd928575.gz",
+        "sha256": "a7516207f6e10683600addd4a015be2034f1d8b3b63a41c0beb1e832dac86d8a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/9beb5ecedd6dc909671c3e1366acb10e83ba3e69ae465d4e55f57028abdcf6cc.gz",
+        "sha256": "ce16bf3598c7e2220a002c42bf7ec118b88386152f5774a21e57768cdd11c9e3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/9ef0da4dd921e7942c3d90b1d023df69e3f82be7d9c931340765371ab60b8b2e.gz",
+        "sha256": "a73adbc212cd3cd095eeff8529e154b715397ae8dd721b670bf7c5f84fd575f6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/a28bfa446a26bc74844748b38cd8a9dd2fcac79b89d21cbbd7650816efd3df87.gz",
+        "sha256": "1e4db681974f281182f0cdf7cac544e58976f5dd352392bb1eb1a4466b28bd74"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/a4b84827bce2f96780353ee612c8d79adea0f5ec7cf1c77993a9cfd7ec66b6f9.gz",
+        "sha256": "3134949eaf7978a45682d45e5c74d9c05cf8bc6310a3ef4469dddfaad0e08587"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/a72893a934f7d1522f972a7c5b19180caca62956209753fb54cfa196f1b5dab1.gz",
+        "sha256": "e462893e42f5a591a5e90e6ba06a3ddc3ec5bc9dd9b2c6a53d654daea70cfb4f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/a76f83a2a69d0f84ab2766ac429b43f1c7c6bf1b0ddc5f37a32c9d58d17da03d.gz",
+        "sha256": "f4231942fcaa11eb74c0695a4834cfab35b39c904aa9ed79a92ac014c381e1de"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/a7ae6c6a064e9bd06f7115d82e97918f9e407ca56eb7ecd4932fb88b7fc668cd.gz",
+        "sha256": "e105ae48f5d1471166752a9851e4d3bf8167e54a0edb0475a636e42454c09fae"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/a95dc801e27f65c0f56d4b4ee5e017f570b6848902355d0ebf00bec0bfd09300.gz",
+        "sha256": "ee2ce634fe591a17c206174020f40eb755a74c0f8c237bb0f0ab499fa1ea6afd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/ad2c3aa83d7ca96c167a94ce5ee46dc5c47c48cf238f43b54271078bc1661c7d.gz",
+        "sha256": "21ce5a6c07d272271b0ddb00b86ff6207d0c8e1986c3ae930fbbe46de74bd529"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/adf0276f35f287991d929e39e6e9e35a6252b7d1d3a85e9e25a1447f5c5d977e.gz",
+        "sha256": "d49e1ad4765f14f5aae32386b6c2f03d13d146758ece2b363e3f30f84c89e702"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/b340c5cfed7233c2cee5a16feb7e6082c7a1d35736180c80423a63c6d15941f5.gz",
+        "sha256": "7f39b259e6e4470faf619913602557a2e84c055b6c3fee95617da464076580e2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/b684cfbcd490c9a4a1d7785a109e1f1285337b00dbe87738614ddaaac3599637.gz",
+        "sha256": "5a62056871abf3a3c0e8fa85fa6d8ef8ad764b80c617df6127df797c2e6785b3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/b8e630be0661f5a32b82ac071bfa43117b207d1fa8931b18d57de7bb9d8993d0.gz",
+        "sha256": "784a056533d6d869256a96b66d35e290e26d9f626d59a065e058ccd955c42654"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/bc69b4a3f5027813022650740b81113e962e9e6962cc491cbf8a5b04e68e3d48.gz",
+        "sha256": "a050e072465f4603f9d45768e9282c92a714f0c230e9c40c89a3814d10353eff"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/bc9494c98fa9e285b1f05a42cc1479e11d2f8fbeb302d60262eae300356eed08.gz",
+        "sha256": "f0a76c46eb1ee8c4bccffdfd34a945af9d9948b3b62c577523cadb3d101979a3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/bd3819deef47e6e9e36857a29971f2a0894c15a9d1b520a849d9410775ba48f1.gz",
+        "sha256": "b8131ad6ba5271457d4492832e1e865132a8f57a2ddd2e839cb47e44ad825f84"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/bff7aa8be34d17a17e1df889e2e180656207a470cd5ae2a8885eeb5e1f8205d4.gz",
+        "sha256": "ad87bc061b9591fe906b4851ee82c54f60fab9b069072c363abf78d059a8bf47"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/c01976b60c8a22dc14663db07367d16f0d8eaf1708c2badc35d948a70f96901a.gz",
+        "sha256": "9529dcfc7bf21c95cdffcd2babb1a3512b5c56b4f16b49001d5051e1c8672a99"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/c62e427f1720221356788c4fbdbe74b780d3ee06be6d8256a87eca1c9779defc.gz",
+        "sha256": "64c69d2b5ea6572e35736f49f46a9b0901293654c79d92d5d4766cc22c038259"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/c73857daf172df32a051c3ff1be30acdb000e0553e11c525b56c1e3dab24f23d.gz",
+        "sha256": "4702689a2d1cbd404ccc76ab6c5c6d9e785928b7258b2ff711079365733f7310"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/c876a7c63112e1bca2b23473c7aaba5f9dc04b369ed7eeaf326e3ee05a75749b.gz",
+        "sha256": "892a25f0358a3e6cdbb5ff6c0499bd8ff8fc3c073da3cdbfb018dc6f967ba8d6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/ca4fcc6108901a643527d5457bb1806f1be6ee43e5b66d0aeb3251cf1d2dfff7.gz",
+        "sha256": "909f44e240de9b869915a224270acbf2e483bea4d941430e480df231d0fdf44d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/cc18268ec92f80a136d77370b7f986e862952b2a94acaa8a24aca4187c982a5f.gz",
+        "sha256": "2acc6aad63255bcdec2eb03b50f9033bf7576ce334aca51a01d36a35e546d0fe"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/cd8a678ae338a6652bfc4f6fc8ba058e9f6ea1e6b321246e6663b7ff7ea70c91.gz",
+        "sha256": "a4c51af0e28813bdadd3782b22a604fc209ac13f36b91fc2e550688ace149342"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/cecaa337744ccfc623daf71d130dce56ecb25fc3ef8753225a7cffd178776ec9.gz",
+        "sha256": "ad4396b49e9fbc7b8a284af0efb9efafed2fd2987b51e574015b3124d4c3fd7a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/cf05f2f02b9d123c698c63be0cb2a3c749cf70b09a46f24a511cf582a593fb84.gz",
+        "sha256": "2245b3d687f618688759e8cdef70c53a23a22f610249f634b58c1a8a3a26f5ec"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/cfec1eb99efa6ddb6fe0395d0a5ae639a9b68aa866936550564654c3d96c976c.gz",
+        "sha256": "ccb1be8e8e65eec322b56a301abb9fc9d3482c832fc4b697a75db4ad223d21e0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d3291e36478138b4203978aaa79e993f0557a6d2d8508136fe631628b3db5217.gz",
+        "sha256": "2c80742a693692af708de53f2ea465a4d14402eb29f60f063877ced2b2661dd0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d32e27aa1a6970efe63e3e675ec249214e0c665c58b08e3b6c722cfbbd08b47a.gz",
+        "sha256": "86e3fb8ec8848cfedb750a7bec1b378b4759274b791076c1650c158d6d75855a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d4e69508aaf6e37145f99bdbcf2b835b2cbbe013f84022280987241f7bda9fbf.gz",
+        "sha256": "b860ff35667c7d3257ed688e3e5c1bd0a8aa092d21349f05af377d3cb22f8d42"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d87526befcaea18cc933c8b9c82f3fc82d280317c631d276d5b0f0899ff26b91.gz",
+        "sha256": "839f079fde1f20c0297feeb20d33b02b391c45582e391be28351e64332779d3f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d87de32ac38a5fa22f039bd31fa56d3f399928a3f17c7a38706b91c56b88fe6c.gz",
+        "sha256": "8a0a35c4247d6649ddb038241958da402ed15d5e3ead474768df5ae9859aa814"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d9985764cb5f742a2f91424661e491bd8ad3345b45ec0de9d6653b1e2de3286a.gz",
+        "sha256": "d87b749a6d2cbbf3920a57132f6862eb9b1b354149be6a871280393c9775a836"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/d9ea1f41620a00e57362de74db17f652e23273abf349dcd641c578e80281bdb5.gz",
+        "sha256": "136e17767c502cdf28a08cc9e0c40e9090382d593f31f5c5405fbfadaaffc703"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/da223ea87d71f1fded9cea128803cead17caa2c3e58fea4ce318519456cb170d.gz",
+        "sha256": "8b03755a675d537e8cb335aef86f4982bd9ae4541987c849a95ce86e57dc6893"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/dc3cf6bfd3a0b1c27caac7223ed1b21b3f4e37daf313d2d533befed4805bc71e.gz",
+        "sha256": "1de8a306ccc0ce938585a64c3a4c25b9227e104ee680847aabe59d9bcdf4da26"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/dc54f4f8a0c930b9b777bafb5d4df253025e1486f1efc56521f51c894bc750d7.gz",
+        "sha256": "761ce1171c9351945e7bacef546f009f4458fe678be33d5f39d939694d901359"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/dd42d9c12b158f9c6fdeea9f59c6414097d85be13e8fec9faa401633b50ce6e4.gz",
+        "sha256": "6e6944fc64e613c91d38c7c44bcd1b01d1ff79ba9f1c37a825a2dfe2855c0120"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/de0f3ab4777af02e5b11ef9f8f1291f58a03e6e5a58d76e33bedcfdae6f1976c.gz",
+        "sha256": "83cb928891f60044d6bf5a9efcc203d619990ef76a7b1127e98677aebb4a1b08"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/de12e9abb993e23516f0ba4caf2116ccb961dfda84dab0001816d085399a6450.gz",
+        "sha256": "1035391d76363b9e2de7aea7aa57b87c67d12ed8bfe0af8dd42bc7c66f33e5f9"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/df07d0e2161e8d4c3266807b41069801a0aa5b18d735639e1337280749f08b5f.gz",
+        "sha256": "158d8ac5b46550eb98b4509897067ca9f5b38af5145a5c072dabaea3ec5125d0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/e0b0cad9ce15308e1243db22f09de9cefd35e2084bca58dbc8104a0b4beebfe6.gz",
+        "sha256": "aaa48f31c77e5b60b6d5ac44c5c666e64d6f9b029b31ec9c8d5ea3b253422049"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/e5450e031db47953cfbb06392a8afbc4b400773c4784f3389b87aac1fc71b342.gz",
+        "sha256": "a51bd4fd0df2fbc8a69431cfc1212d8dd22752c402776939c7a0d34b7aa85277"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/e5771602818f7a4ff01fd30e39861b2661a6958744ed8a646510fea81400de50.gz",
+        "sha256": "61760da0145d61e5b52fbfd7478fe5db2ac8dfe0241fff1d54289a8161473b0c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/e79d0ca1365440157710528570a2ac2192b4e8a2389854e165cd3495a9f3e8d8.gz",
+        "sha256": "4db58f78e8b485c7e1ce23b38d8c002b4551512f86d84dfbce54c954493816e5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/ea5435060a0e21a29fe29c0c18dcf93d2b5a3db5f594151c9a6639ce925fb58e.gz",
+        "sha256": "679a14dfec473e7dc1f54c3ff90590595df4b3d0894674334f59cf05c6a28c98"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/ed9382b1772aef823762c6d2ffb0f68df843e5dc7b1bac4d509d82315aa38476.gz",
+        "sha256": "e2a4bbb6c011e169b471f18307949eeed5b1bc33985951dba0ba57821134ecb1"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/eefced9b0e5d54c71d3bf178ea28ffe9ab301700874e108369a2e5b0ac191cb6.gz",
+        "sha256": "eedcc816ab2711a4534bd7aefa2955be93d67ccbe09347a4d944e8efe3eeef86"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/efe828b7e59e15ebd3186f8dcb3504c5d041fbc3aa45982e6662071d8e3682e3.gz",
+        "sha256": "8104135709eb54bbf6dbd4b7b0691c6e049957a17e27f8a8fcd48da0e179bcb0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/f3de93e552d7fcb3b7b4aa3c132896690dd434aa6dbff136eb569356424cdcf8.gz",
+        "sha256": "27788b2b8e4d387a1ec79b2ba3066e9da59159c875b11007acdde1bca7eb322e"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/f63fe1c37672ccee7df3af98f41ee67aa0fafb617768bc1fc059f8116555c76a.gz",
+        "sha256": "43045913490dde2a902e54b976134c55d02dc43a4724ccc821a20d25c4fd33e3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/f6f3ac90d853440183f476d20933f2062d6866f75f0a0972b47a7b59bb23116e.gz",
+        "sha256": "d2ff4de792f46f8a8efcd6486ebc35f2db3bcd08fd5baec3f66bf5af0f133572"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/fa8d7659e16d29e5321e8c01397924dca6b4dfa584ea7ec283b47e62a89f9eee.gz",
+        "sha256": "1706b06b02039522cc7e18e2b457f6b7a0f98ccb4992ab3451f48d851dd103d5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/_objects/fd922d783d89a0bdb3561e2924b75947e5f994d5fb6ac3b4a755de002e347bc6.gz",
+        "sha256": "23549c49bc005398784d56dff700ebcc9890f1fdb0aa7e209dbf2224c2423113"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/archive-manifest.json",
+        "sha256": "38c720ede4b2ec798237ffbed168fa66676cc415f89dfa75b75d604528354799"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/kept/pr8098-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "sha256": "a9e92e05b42ae8764a81a39f6abccab16863a8763473a9e7556785edab7f8dcb"
+      },
+      {
+        "path": "scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+        "sha256": "708f1d8c9f9dbcafdd1edffd326838b7ed721d6da7a425b5f0d4bd17daa405ef"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/COMPACT_U1_QUADRATIC_BASIN_SOURCE_FREE_MAXWELL_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "ad5cb65531c9754ebc4d9a258e6e28051ef53d429b3e06407b6bdcd7569e539c"
+      },
+      {
+        "path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+        "sha256": "ac0acd0fc0ddf5b2dd5f0be45e2875cec8f594e44d484ae71fb0d9f1efb55eac"
+      },
+      {
+        "path": "docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md",
+        "sha256": "8e94c6912e464c98dc2972855860066303380964dc63b0328726b51706a548cf"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8098-evidence/kept/pr8098-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "sha256": "a9e92e05b42ae8764a81a39f6abccab16863a8763473a9e7556785edab7f8dcb"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8011",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/review-8098-preexecution.json",
+      "sha256": "a360cf2ee34a06c80f576b55b1911ebaabc26b1d93b0516e46984b3e68ae116d"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/check8098/inventory.json",
+        "sha256": "95a3998d88519d086e5e42e242695dbdd5a5a3ff90d23b0cd500944d913916e3"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8098/original-statuses.json",
+        "sha256": "4ff95b1a02119ba26c4051ad685793e2b38f0bd1bb8a7d3aab8cfb36f89d2860"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8098/history-verification.json",
+        "sha256": "cb3a6b8e0b695a26dcb5e1e51288a1b5a39d6e40d8322a4bbc22c86a21954e62"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8098/independent-controls.py",
+        "sha256": "348286e86f60459625cbb5ee3597808b8775937e25e4eec2ed7cc04f1e3d53d9"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8098/independent-controls-result.json",
+        "sha256": "720a10fbcdb85c9e37bd5746c9e3a9869ec9105f449034f68d0c4a80ebb088af"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8098/external-source-bindings.json",
+        "sha256": "753d59052f20bedc0154ef2cfc9e11a18b7e15012802a2aba85d784282c6302d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8098-head-fetch.json",
+        "sha256": "930a6fe7e997d2a0c1cf081e3515bed3de9f1b27a094c4b91be5a12808ae5e38"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8098-author-packaging.json",
+        "sha256": "ef20af1e2b2cf4d09932063bb207772cd601b8617534ce0c65c899dbbfa90a02"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8098-author-packaging-final-cold.json",
+        "sha256": "34411936bc5ef2a9400b83ee186dc1d69dcb4c9573365fb00164f725e9126257"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8098-author-archive.json",
+        "sha256": "027f1b3bea229ebff9c54ae630f6f713120b125c44a85ca36e22f636dea52d9c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/review-8097-final.json",
+        "sha256": "9a10cb9dde0ab2c7dbb9a3d1b12c2c5da31b7340656b3253cd69c24c99b6d52d"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_weyl_gauge_hall_and_cone_flow_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+      "helpers": [],
+      "citations": [
+        "docs/COMPACT_U1_QUADRATIC_BASIN_SOURCE_FREE_MAXWELL_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+        "docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md",
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8098-evidence/kept/pr8098-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md"
+      ],
+      "dependency_rationale": "Minimal memo and conditional native even-CAR parent provide ontology and representation placement only. Wilson Hamiltonian, filled band, continuous time, neutralizing background, Gaussian noncompact photon and weak-coupling prescription are supplied. Exchange-matrix, source-free basin, kinetic-isotropy and B4 notes are comparison/boundary context, not proofs of this charged model. New topology, loop, constitutive and matching arguments are reconstructed locally."
+    }
+  ],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8098-evidence/README.md",
+      "rationale": "Historical packet/navigation only; exact original recovery and nonauthority boundary reviewed.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8098-preexecution.json",
+        "sha256": "a360cf2ee34a06c80f576b55b1911ebaabc26b1d93b0516e46984b3e68ae116d"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8098-evidence/kept/pr8098-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "rationale": "Historical packet/navigation only; exact original recovery and nonauthority boundary reviewed.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8098-preexecution.json",
+        "sha256": "a360cf2ee34a06c80f576b55b1911ebaabc26b1d93b0516e46984b3e68ae116d"
+      }
+    }
+  ],
+  "boundary": "Provisional source handoff only; primary execution and final confirmation pending."
+}

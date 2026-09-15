@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "616362e0a07ed5422d040d182ecbba24265941dd",
+  "fetched_ref": "refs/review-loop/fetched/8098-499a52bc71f5443fac0232f694d8da39",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-weyl-gauge-response-20260913",
+    "headRefOid": "616362e0a07ed5422d040d182ecbba24265941dd",
+    "isDraft": false,
+    "number": 8098,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

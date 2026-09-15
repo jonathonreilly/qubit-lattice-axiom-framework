@@ -1,0 +1,193 @@
+{
+  "original_capture": "Frozen original CANONICAL_EXECUTION.json; no original rerun",
+  "current_receipt": "/private/tmp/review-drain-20260915/8098-execution-native_weyl_gauge_hall_and_cone_flow_2026_09_13.json",
+  "count": 462,
+  "structure_and_nonfloat_fields_equal": true,
+  "excluded_fields": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "floating_differences": [
+    {
+      "path": "/checks/286/gap",
+      "original": 0.29999999999999755,
+      "current": 0.29999999999999927,
+      "absolute_difference": 1.7208456881689926e-15
+    },
+    {
+      "path": "/checks/286/contact",
+      "original": 42.260678717277386,
+      "current": 42.26067871727738,
+      "absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "path": "/checks/286/bubble",
+      "original": -42.260678717277386,
+      "current": -42.260678717277365,
+      "absolute_difference": 2.1316282072803006e-14
+    },
+    {
+      "path": "/checks/286/sum",
+      "original": 0.0,
+      "current": 1.4210854715202004e-14,
+      "absolute_difference": 1.4210854715202004e-14
+    },
+    {
+      "path": "/checks/286/spectrum_error",
+      "original": 5.6066262743570405e-15,
+      "current": 5.329070518200751e-15,
+      "absolute_difference": 2.7755575615628914e-16
+    },
+    {
+      "path": "/checks/287/gap",
+      "original": 0.29999999999999755,
+      "current": 0.29999999999999927,
+      "absolute_difference": 1.7208456881689926e-15
+    },
+    {
+      "path": "/checks/287/contact",
+      "original": 42.260678717277386,
+      "current": 42.26067871727738,
+      "absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "path": "/checks/287/bubble",
+      "original": -42.260678717277386,
+      "current": -42.260678717277365,
+      "absolute_difference": 2.1316282072803006e-14
+    },
+    {
+      "path": "/checks/287/sum",
+      "original": 0.0,
+      "current": 1.4210854715202004e-14,
+      "absolute_difference": 1.4210854715202004e-14
+    },
+    {
+      "path": "/checks/287/spectrum_error",
+      "original": 5.6066262743570405e-15,
+      "current": 5.329070518200751e-15,
+      "absolute_difference": 2.7755575615628914e-16
+    },
+    {
+      "path": "/checks/288/gap",
+      "original": 0.29999999999999755,
+      "current": 0.29999999999999927,
+      "absolute_difference": 1.7208456881689926e-15
+    },
+    {
+      "path": "/checks/288/contact",
+      "original": 14.675221186558934,
+      "current": 14.675221186558932,
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "path": "/checks/288/bubble",
+      "original": -14.675221186558938,
+      "current": -14.675221186558925,
+      "absolute_difference": 1.2434497875801753e-14
+    },
+    {
+      "path": "/checks/288/sum",
+      "original": -3.552713678800501e-15,
+      "current": 7.105427357601002e-15,
+      "absolute_difference": 1.0658141036401503e-14
+    },
+    {
+      "path": "/checks/288/spectrum_error",
+      "original": 5.329070518200751e-15,
+      "current": 6.217248937900877e-15,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "path": "/checks/289/gap",
+      "original": 0.29999999999999755,
+      "current": 0.29999999999999927,
+      "absolute_difference": 1.7208456881689926e-15
+    },
+    {
+      "path": "/checks/289/contact",
+      "original": 14.675221186558934,
+      "current": 14.675221186558932,
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "path": "/checks/289/bubble",
+      "original": -14.675221186558938,
+      "current": -14.675221186558925,
+      "absolute_difference": 1.2434497875801753e-14
+    },
+    {
+      "path": "/checks/289/sum",
+      "original": -3.552713678800501e-15,
+      "current": 7.105427357601002e-15,
+      "absolute_difference": 1.0658141036401503e-14
+    },
+    {
+      "path": "/checks/289/spectrum_error",
+      "original": 5.329070518200751e-15,
+      "current": 6.217248937900877e-15,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "path": "/checks/290/gap",
+      "original": 0.29999999999999755,
+      "current": 0.29999999999999927,
+      "absolute_difference": 1.7208456881689926e-15
+    },
+    {
+      "path": "/checks/290/contact",
+      "original": 30.860581993108596,
+      "current": 30.860581993108575,
+      "absolute_difference": 2.1316282072803006e-14
+    },
+    {
+      "path": "/checks/290/bubble",
+      "original": -30.860581993108582,
+      "current": -30.860581993108564,
+      "absolute_difference": 1.7763568394002505e-14
+    },
+    {
+      "path": "/checks/290/sum",
+      "original": 1.4210854715202004e-14,
+      "current": 1.0658141036401503e-14,
+      "absolute_difference": 3.552713678800501e-15
+    },
+    {
+      "path": "/checks/290/spectrum_error",
+      "original": 6.050715484207103e-15,
+      "current": 1.1546319456101628e-14,
+      "absolute_difference": 5.495603971894525e-15
+    },
+    {
+      "path": "/checks/291/gap",
+      "original": 0.29999999999999755,
+      "current": 0.29999999999999927,
+      "absolute_difference": 1.7208456881689926e-15
+    },
+    {
+      "path": "/checks/291/contact",
+      "original": 30.860581993108596,
+      "current": 30.860581993108575,
+      "absolute_difference": 2.1316282072803006e-14
+    },
+    {
+      "path": "/checks/291/bubble",
+      "original": -30.860581993108582,
+      "current": -30.860581993108564,
+      "absolute_difference": 1.7763568394002505e-14
+    },
+    {
+      "path": "/checks/291/sum",
+      "original": 1.4210854715202004e-14,
+      "current": 1.0658141036401503e-14,
+      "absolute_difference": 3.552713678800501e-15
+    },
+    {
+      "path": "/checks/291/spectrum_error",
+      "original": 6.050715484207103e-15,
+      "current": 1.1546319456101628e-14,
+      "absolute_difference": 5.495603971894525e-15
+    }
+  ],
+  "policy": "Every final source assertion ran unchanged. Listed floating changes are observations, not new tolerances or substituted scientific criteria. Original and final source differ only by TOTAL footer; no numerical threshold changed."
+}

@@ -1,0 +1,10 @@
+{
+  "original_paths": 184,
+  "archive_entries": 181,
+  "all_decoded_original_bytes_match": true,
+  "mutations": 33,
+  "actual_assertion_failures_verified": true,
+  "earlier_sources": "243 and378 check earlier scripts survive as source subsets, aside from final output destination/scope. Exchange-only tadpole omission preserved with correction explained; no lost current proof.",
+  "source_loss": "No deleted original paths. Generated citation manifest excluded, all historical originals preserved. Only historical link and TOTAL footer changed canonically.",
+  "primary_executions_by_reviewer": 0
+}

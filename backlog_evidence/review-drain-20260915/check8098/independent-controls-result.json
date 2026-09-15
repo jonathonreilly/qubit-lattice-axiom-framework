@@ -1,0 +1,28 @@
+{
+  "status": "ok",
+  "count": 20,
+  "checks": [
+    "coframe_linear_0",
+    "coframe_linear_1",
+    "coframe_linear_2",
+    "coframe_linear_3",
+    "scalar_attraction",
+    "relative_eigenvalue",
+    "W_transversality",
+    "W_trace",
+    "W_no_linear_fermion_source",
+    "second_order_variance",
+    "mixture_exception_0",
+    "mixture_exception_1",
+    "shear_split",
+    "north_pole_degree_7/10",
+    "north_pole_degree_9/5",
+    "north_pole_degree_11/5",
+    "north_pole_degree_37/10",
+    "Hall_dispersion_polynomial",
+    "Hall_quadratic_axis",
+    "Hall_slice_jacobian"
+  ],
+  "elapsed_seconds": 0.3608208339428529,
+  "scope": "Independent exact algebra and degree count; no primary execution or native quadrature reused."
+}

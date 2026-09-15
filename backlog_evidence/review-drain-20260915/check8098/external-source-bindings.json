@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/1102.0789v2",
+    "sha256": "46b33eb09d810174b2e54c71e39970be96b9acfa7f1cf92bb345d4557d8ed67d",
+    "read_scope": "Section4 pp4\u20135, equations20\u201333; additional pp6\u20137 read. Scalar self-energy and beta-function comparator.",
+    "role": "Comparator only; present coefficients separately derived and independently challenged."
+  },
+  {
+    "url": "https://arxiv.org/pdf/1205.2427v2",
+    "sha256": "890ac2e7ff8dc7c55c96adaaf5234602e3b129148ddfab0cd2b2017e71dbd049",
+    "read_scope": "pp1\u20133, \u00a7\u00a7IIA\u2013C and equations1\u201315; coupling conventions kept distinct away from equality.",
+    "role": "Comparator only; present coefficients separately derived and independently challenged."
+  },
+  {
+    "url": "https://arxiv.org/pdf/hep-th/0111123v1",
+    "sha256": "aa989b9c6b5227248ffc9afe1e13d83dfb42996a415746d26634ec68cad948e9",
+    "read_scope": "pp8\u20139 one-loop applicability, equation28 and running; linear anisotropy comparator, no all-orders import.",
+    "role": "Comparator only; present coefficients separately derived and independently challenged."
+  },
+  {
+    "url": "https://link.aps.org/accepted/10.1103/PhysRevB.107.035131",
+    "read_scope": "Accepted manuscript \u00a7II pp2\u20133 via browser full text, lines91\u2013370. Local curl returned403, no local PDF hash claimed.",
+    "role": "Known Hall-modified photon mechanism comparator; native Hall coefficient and wave polynomial reconstructed here."
+  },
+  {
+    "url": "https://arxiv.org/pdf/1303.5784v2",
+    "read_scope": "Browser pp1\u20132 introductory model and Hall response versus regulator discussion.",
+    "role": "Context only, not imported result for this symbol."
+  },
+  {
+    "url": "https://arxiv.org/pdf/1210.6352",
+    "read_scope": "Bibliographic/abstract verification only; no theorem imported or full-paper reading claimed.",
+    "role": "Author-cited context; review acceptance relies on local degree/Kubo argument rather than this paper."
+  }
+]

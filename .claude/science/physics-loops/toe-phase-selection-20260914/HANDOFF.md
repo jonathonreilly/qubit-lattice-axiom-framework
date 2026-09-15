@@ -19,6 +19,24 @@ standard Gaussian innovation sampling and block19 history-resource bounds
 remain private support results. Eleven review-pendingPRs8123–8133 are
 durable and all completed delivery checkouts have been removed.
 
+Latest block21: BLOCK21_STATIONARY_SPECTRAL_RESPONSE_DERIVATION.md gives
+a conditional operator proof: separate the invariant environment mode,
+eliminate fluctuations by a convergent response series, and use the full
+two-form symmetry commutant to obtain kappa R_cont. Exact Bloch/cochain
+and direct Gaussian precision checks pass; the mean-Hessian shortcut and
+nonergodic orientation mixture controls fail as intended. The matching
+design now uses nested free co-closed projection spaces for strong bulk
+operator convergence, a stationary Gaussian-noise contraction, and two
+replicas to make root-dependent variances concentrate before passing the
+Gaussian remainder. These are personal proof candidates being tightened.
+The exact flux real-MGF map should transfer mixing to actual plaquette
+angles and scores. Direct Gaussian-limit reflection positivity can then
+give two photons; periodic microscopic state matching is additional.
+Conlon-Dabkowski2025 all39pages have now been read. The literal3.17 inverse
+omission and4.28 adapted-martingale equality have separate source cautions;
+neither display is used in the present proof. The main paper theorems are
+not claimed refuted. Main remains5deabeb6 after the latest fetch.
+
 # Personal twelve-hour phase-selection campaign
 
 Authorized by the user's request to repeat the exercise, find the leverage,

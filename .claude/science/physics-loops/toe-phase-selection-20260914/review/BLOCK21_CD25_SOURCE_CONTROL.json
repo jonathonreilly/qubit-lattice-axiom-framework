@@ -1,0 +1,9 @@
+{
+  "source": "Conlon-Dabkowski2025 published equation4.28,page18",
+  "lhs": 2.201706091043799,
+  "rhs": 2.0330058631503602,
+  "gap": 0.16870022789343864,
+  "reported_quadrature_error": 1.2443476595056136e-12,
+  "control": "M=G+tanh(G)Z; G,Z independent standard Gaussians; Q=1+tanh(G)^2. A bounded predictable two-step Brownian integrand realizes this pair. Strict gap follows analytically from positive covariance of cosh(G) and exp(tanh(G)^2/2).",
+  "qualification": "A counterexample to the displayed general equality, not to the paper main theorem; deterministic quadratic-variation bounds can instead use the exponential martingale."
+}

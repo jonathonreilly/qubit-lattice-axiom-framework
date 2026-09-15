@@ -24,3 +24,15 @@ carrier hypotheses still require independent review. The next design is
 BLOCK21_COVARIANCE_TWO_SCALE_DESIGN.md; it explicitly separates environment
 ergodicity, source-response identification, boundary matching, symmetry of
 the extended potential and the angle-state contact variance.
+
+The stationary spectral response derivation now has an explicit unitary
+spatial conjugation, operator-valued Schur bound, separation of the zero
+environment spectral mode, and a finite effective matrix. A direct
+Gaussian precision calculation challenges its Neumann response on actual
+four-dimensional Bloch cochains. The finite general36-entry commutant is
+one-dimensional. A layered comparison detects the missing fluctuation
+term, and a global orientation mixture detects the ergodicity shortcut.
+The nonlinear matching is being developed separately, with a new nested-
+projection proof of the bulk ell2 operator limit and a two-replica method
+for passing log-MGF estimates through root averages. No new public result
+or independent review has yet been claimed.

@@ -1,0 +1,113 @@
+{
+  "layered": {
+    "alpha": -0.12,
+    "eta": 0.09,
+    "effective_diagonal": [
+      -0.12,
+      -0.12,
+      -0.12,
+      -0.11358597285067873,
+      -0.11358597285067873,
+      -0.11358597285067873,
+      0.0
+    ],
+    "mean_hessian_shortcut_matrix_error": 0.011109420903750604,
+    "maximum_fiber_identity_error": 4.009883079796051e-11,
+    "maximum_precision_response_error": 7.218714150101263e-14,
+    "cases": [
+      {
+        "direction": [
+          1.0,
+          2.0,
+          -1.0,
+          0.5
+        ],
+        "mesh": [
+          0.125,
+          0.0625,
+          0.03125,
+          0.015625,
+          0.0078125,
+          0.00390625
+        ],
+        "limit_errors": [
+          0.12251460335212798,
+          0.06131329501517631,
+          0.030663646948661364,
+          0.015332698412323653,
+          0.007666458573650681,
+          0.0038332429577673153
+        ],
+        "mean_hessian_shortcut_limit_error": 0.005271449707023066
+      },
+      {
+        "direction": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": [
+          0.125,
+          0.0625,
+          0.03125,
+          0.015625,
+          0.0078125,
+          0.00390625
+        ],
+        "limit_errors": [
+          0.0008340425458723548,
+          0.00020870859921330676,
+          5.218952775689288e-05,
+          1.3048153592795642e-05,
+          3.2620830400727084e-06,
+          8.154904005568897e-07
+        ],
+        "mean_hessian_shortcut_limit_error": 0.008907373160895925
+      },
+      {
+        "direction": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "mesh": [
+          0.125,
+          0.0625,
+          0.03125,
+          0.015625,
+          0.0078125,
+          0.00390625
+        ],
+        "limit_errors": [
+          0.000816529105215318,
+          0.00020430904771734574,
+          5.108830895119727e-05,
+          1.277276660749991e-05,
+          3.19322899965217e-06,
+          7.983393617668797e-07
+        ],
+        "mean_hessian_shortcut_limit_error": 0.00514267429221571
+      }
+    ]
+  },
+  "symmetry": {
+    "unknown_entries": 36,
+    "generators": 7,
+    "commutant_dimension": 1,
+    "antisymmetric_component_excluded": true
+  },
+  "mixture_control": {
+    "component_variances": [
+      0.8928571428571428,
+      0.8928571428571428,
+      0.8979998171493585,
+      0.8979998171493585
+    ],
+    "mixture_fourth_cumulant": 1.9835324156862264e-05,
+    "translation_invariant_global_label": true,
+    "qualification": "Comparison model only; not a counterexample to the actual small-carrier Villain law or its uniform third-influence hypotheses."
+  },
+  "qualification": "Exact finite cochain construction, Gaussian precision inversion, and rational symmetry algebra challenge the stationary-response design. Numerical convergence checks do not prove infinite-volume homogenization or nonlinear state matching."
+}

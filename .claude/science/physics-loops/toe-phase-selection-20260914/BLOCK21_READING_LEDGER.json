@@ -5,8 +5,8 @@
     "url": "https://link.springer.com/content/pdf/10.1007/s10955-025-03478-x.pdf",
     "sha256": "ae24ac453a1e711ac5daa0a1b29025298ae1eb0facc52aba8c468f027dbb356e",
     "total_pages": 39,
-    "read_scope": "Pages1-3 via web/PDF extracted;4-9,14-17,31-34 fully extracted; page14 visually rendered. Other pages not yet read.",
-    "role": "Preconditioned dynamics and ell-p source derivatives; actual source is scalar nearest-neighbor. Abstract finite-dimensional extension derived separately. Published Theorem3.1 visibly omits inverse in Riesz operator; correctly specified operator requires a separate source/proof check."
+    "read_scope": "All39pages personally read across this campaign. Pages1-3 reread fully; newly read10-13,18-30,35-39. Pages14 and18 visually rendered and inspected.",
+    "role": "Preconditioned dynamics and ell-p source derivatives; scalar nearest-neighbor source. Abstract extended-carrier argument derived separately. Published3.17 omits inverse, and general equality4.28 has an explicit bounded adapted-integrand counterexample; neither is used in our proof. See review/BLOCK21_PRIMARY_SOURCE_CAUTIONS.md. Main paper theorems are not claimed refuted."
   },
   {
     "title": "Conlon-Spencer, A strong central limit theorem for a class of random surfaces",

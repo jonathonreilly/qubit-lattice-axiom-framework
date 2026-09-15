@@ -1,0 +1,45 @@
+{
+  "main": "382fe0d7394f07216908cc501b5e44cbf0c1855b",
+  "landed_original_count": 81,
+  "remaining_original_count": 35,
+  "skill_remote_installed_complete": true,
+  "skill_main": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+  "skill_verification": "receipt-support-remote-installed-verification.json",
+  "active_gate": {
+    "label": "train35",
+    "source_unit": "8093",
+    "scientific_rows": 0,
+    "typed_meta_expectation": true,
+    "session": 76138
+  },
+  "active_science": {
+    "8059+8061": {
+      "reviewer": "review_8012",
+      "author": "backlog_topology",
+      "state": "cold draft and original review; no new captures; parent main available"
+    },
+    "8095": {
+      "reviewer": "review_8011",
+      "author": "root",
+      "worktree": "/private/tmp/review-drain-20260915/author-slot-one",
+      "tree": "dce007a62611a22be4d429cb526087a940680584",
+      "state": "original full review ongoing; no capture"
+    }
+  },
+  "latest_closures_confirmed": [
+    8054,
+    8055,
+    8056,
+    8057,
+    8091,
+    8092,
+    8094
+  ],
+  "review_slot_one": "idle at preserved8093 sourceed4860f1cd90eb9bd78437fc93c9a78a39c60d68",
+  "removed_clean_worktrees": [
+    "train28",
+    "train29",
+    "train30"
+  ],
+  "external_publications": "Full third-party publications remain local. Publish versioned URLs/hashes/readscope only."
+}

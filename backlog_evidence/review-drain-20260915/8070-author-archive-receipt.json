@@ -1,0 +1,620 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "9e4691ef25f03831728cf296c19224e092e4b32a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 136,
+      "raw_sha256": "70a179b77e4631694613a28f631130268f8d52de8ad900a72784f85f1e581612",
+      "stored_path": "_objects/70a179b77e4631694613a28f631130268f8d52de8ad900a72784f85f1e581612.gz",
+      "stored_sha256": "2cc69c854e1fa439b7447a7cc9029d2e85b08f31387b7c6124a96dd0d31e45bf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8132fb256a2cc6a1203e7258c9ceeadf6a6e0b1b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 183,
+      "raw_sha256": "8dd3e8b991753a5143e25a623f5b27baade490c15141b3f19b6dde4780d002e7",
+      "stored_path": "_objects/8dd3e8b991753a5143e25a623f5b27baade490c15141b3f19b6dde4780d002e7.gz",
+      "stored_sha256": "8be666bdf1ede001868ca2807653f4c9374f3856340b1b264b75b7dc54fb1fae"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2c01c87a6fe214a82d8be1885877beed5e2ec0b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 1299,
+      "raw_sha256": "433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005",
+      "stored_path": "_objects/433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005.gz",
+      "stored_sha256": "ae2527b20ef8e939ea21444b4cc7527ca06f586ad986ec434a50903b0c47aef8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2c01c87a6fe214a82d8be1885877beed5e2ec0b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/STATE.yaml",
+      "raw_bytes": 1299,
+      "raw_sha256": "433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005",
+      "stored_path": "_objects/433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005.gz",
+      "stored_sha256": "ae2527b20ef8e939ea21444b4cc7527ca06f586ad986ec434a50903b0c47aef8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2c01c87a6fe214a82d8be1885877beed5e2ec0b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/TRACE_GATE.md",
+      "raw_bytes": 1299,
+      "raw_sha256": "433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005",
+      "stored_path": "_objects/433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005.gz",
+      "stored_sha256": "ae2527b20ef8e939ea21444b4cc7527ca06f586ad986ec434a50903b0c47aef8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "012fbbabae4466a6c0de479faf66f8b405ac9b2f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/DELIVERY_FREEZE.json",
+      "raw_bytes": 9419,
+      "raw_sha256": "3ecf8cea048bbcf9a0d27265cdc1c426491cc93abe7cc308b248459b7032c76b",
+      "stored_path": "_objects/3ecf8cea048bbcf9a0d27265cdc1c426491cc93abe7cc308b248459b7032c76b.gz",
+      "stored_sha256": "3294ba956c94f5aa3addf62449dbe6d6883d83a3262d45d346ebf120e459a85c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d1eb86cf2d538e192f9f9d19494b3ac244135e50",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/GOAL.md",
+      "raw_bytes": 88,
+      "raw_sha256": "ef019573e9d49fe36d45bc9c7fe9482694e5d692d98fb9b7210fa553a1c16798",
+      "stored_path": "_objects/ef019573e9d49fe36d45bc9c7fe9482694e5d692d98fb9b7210fa553a1c16798.gz",
+      "stored_sha256": "e691f600f18afa78ad554d1171cdbb08e0124ddf0132fe97a24ebaae49fec3e9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ad6603962488d38fa8dae270168b40deb1729fc5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/HANDOFF.md",
+      "raw_bytes": 1397,
+      "raw_sha256": "d443005ecc4409185b82a55bfae840ec21999aac8e3aa67513d1f5ab499588fe",
+      "stored_path": "kept/pr8070-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "d443005ecc4409185b82a55bfae840ec21999aac8e3aa67513d1f5ab499588fe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bcbbacae87c50642ee95a02559cddf6a88e9a738",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 120,
+      "raw_sha256": "8f072e0b3d90f711570752901a20963dd55544a62a05c6faa0d2650bc5986cf1",
+      "stored_path": "_objects/8f072e0b3d90f711570752901a20963dd55544a62a05c6faa0d2650bc5986cf1.gz",
+      "stored_sha256": "ba3446e6285aee7a25ee0294df2f99dddb6278b252bac60cb3b24d62d26e8971"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "072076847ecd1c632e73969b287fd18d5ecd57c5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 122,
+      "raw_sha256": "1fb80dc8ef9780d3650b0fa970ad0e36c778a6c85d3f651d00e73b8c76c4646f",
+      "stored_path": "_objects/1fb80dc8ef9780d3650b0fa970ad0e36c778a6c85d3f651d00e73b8c76c4646f.gz",
+      "stored_sha256": "00f161c176f4dcfa3b5196c6ce4aedfbea201d611314fd7e4f474e6821ebeda8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bc2c5d8e94041c5bae2384031a62995c26ae6d1d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 92,
+      "raw_sha256": "9f2664fabba1f8b5049c1c6253e3cd1041b8ed7f55ff479b9ff2889f7d2aef54",
+      "stored_path": "_objects/9f2664fabba1f8b5049c1c6253e3cd1041b8ed7f55ff479b9ff2889f7d2aef54.gz",
+      "stored_sha256": "a2c15eecb0bffa596708b4d659c583e21bb92b7edcd7ed82c9a940d97705996e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8da17dd0697242fa415fa73bc1336241db1bc7ec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/PR_BACKLOG.md",
+      "raw_bytes": 118,
+      "raw_sha256": "3de50e14e36a2c666ebcb6b39fac564c583ba20709ca615fb41eb47462bae32b",
+      "stored_path": "_objects/3de50e14e36a2c666ebcb6b39fac564c583ba20709ca615fb41eb47462bae32b.gz",
+      "stored_sha256": "99107c581480187c91e302832a4147a27ac05624f16e0a4dd0314cd2c07fa238"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "e2ab142b7d847c6dcd4d7266a112d40b8a4de0b9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 458,
+      "raw_sha256": "28d98500f6e5e48f7e600b5d29870ba26866a529261d6fcf27407f8b433bd12a",
+      "stored_path": "kept/pr8070-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "28d98500f6e5e48f7e600b5d29870ba26866a529261d6fcf27407f8b433bd12a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "37f7ff73dff40033d54292b9e1fe1ee86bcdeffe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 148,
+      "raw_sha256": "040266aee7668e1bf89da4bb5839c85c0de33cdc7ddce1cec924f3b47a93559e",
+      "stored_path": "_objects/040266aee7668e1bf89da4bb5839c85c0de33cdc7ddce1cec924f3b47a93559e.gz",
+      "stored_sha256": "ae5fbf9c41b8f253b17ce6c1e13000dbc0648163b35689428df095bd55114f8d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1e717a0454e60e7da4db365d9553d8e44ccf6887",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/SOURCE_FREEZE.json",
+      "raw_bytes": 1426,
+      "raw_sha256": "39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816",
+      "stored_path": "_objects/39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816.gz",
+      "stored_sha256": "9302ee1d79ceedca0c8247e38acecf9d794021238da60d39fb2e7efc06a8ce81"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1e717a0454e60e7da4db365d9553d8e44ccf6887",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/SOURCE_FREEZE.json",
+      "raw_bytes": 1426,
+      "raw_sha256": "39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816",
+      "stored_path": "_objects/39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816.gz",
+      "stored_sha256": "9302ee1d79ceedca0c8247e38acecf9d794021238da60d39fb2e7efc06a8ce81"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "91279869c3654ce1a412b58eddc1ad1ee7f65316",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/MANIFEST.json",
+      "raw_bytes": 1154,
+      "raw_sha256": "e41127380a0ca4908cdcf232c4d4705aca2694a5560887f0d2209348f69a6d23",
+      "stored_path": "_objects/e41127380a0ca4908cdcf232c4d4705aca2694a5560887f0d2209348f69a6d23.gz",
+      "stored_sha256": "7916b9d2c8cab77dc4013642a8ed720a305070cc0a82522948ca438cf6838716"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40439dcff9aa3173ebea22c328b3b9f5b4ed6e51",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "raw_bytes": 7749,
+      "raw_sha256": "96f448bf5def75b0873a35971cdde8342fc24819f44bfa9cd0b23eb69683ea67",
+      "stored_path": "_objects/96f448bf5def75b0873a35971cdde8342fc24819f44bfa9cd0b23eb69683ea67.gz",
+      "stored_sha256": "f358a30fb8834804817ee7342849ee45052e1fbef439ba707ec779b28ea53614"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "285f5aa8d5090e390ed5b885dd0741501f3f3ea4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/SOURCE_FREEZE.json",
+      "raw_bytes": 1426,
+      "raw_sha256": "eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d",
+      "stored_path": "_objects/eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d.gz",
+      "stored_sha256": "9dd8959288cbd271f877ce62c8e7bbe481067d4bdec6684c3afe823df659ee18"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "285f5aa8d5090e390ed5b885dd0741501f3f3ea4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_READ_HASHES.json",
+      "raw_bytes": 1426,
+      "raw_sha256": "eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d",
+      "stored_path": "_objects/eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d.gz",
+      "stored_sha256": "9dd8959288cbd271f877ce62c8e7bbe481067d4bdec6684c3afe823df659ee18"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "660b4dcb0d16856237dc8f15c2fc3969f793755b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/CLARIFICATION.diff",
+      "raw_bytes": 4622,
+      "raw_sha256": "f36614f779810c80cbe03746fc3fb108c7beaeeac6dcbe4d5dcc060d8b399a4e",
+      "stored_path": "_objects/f36614f779810c80cbe03746fc3fb108c7beaeeac6dcbe4d5dcc060d8b399a4e.gz",
+      "stored_sha256": "e9809f9d3e3b7f968807ec37766f21ce99857b250b3acf811b69fe70efc309ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "36a4d554186a485f5e8d19a33fbc09fafe8cca82",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_CONFIRMATION.md",
+      "raw_bytes": 1062,
+      "raw_sha256": "1ff4f5667bce84fd920b6a957432c9e965b71e07f2b814c76d0bb7393a9fa527",
+      "stored_path": "_objects/1ff4f5667bce84fd920b6a957432c9e965b71e07f2b814c76d0bb7393a9fa527.gz",
+      "stored_sha256": "fcdbddad987d81868563429e6ecda69a163adfe6ff3312627ad0e77b48cbf079"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b2892012532e996f367685311ccbb9bbfec7293",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_FREEZE.json",
+      "raw_bytes": 379,
+      "raw_sha256": "740f233e880167e57f00c313f2a96b691810d16ac90a0c8ba84035d3842b12dd",
+      "stored_path": "_objects/740f233e880167e57f00c313f2a96b691810d16ac90a0c8ba84035d3842b12dd.gz",
+      "stored_sha256": "369dcfb2a920d98ef04a87a4ecf418efeb0e7a26b9b667fb63a6f155d598c967"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b24daa80b6ab79677e80e9a5d43ece0de8d45198",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_REVIEW.md",
+      "raw_bytes": 1748,
+      "raw_sha256": "c5f60f3b1d5a07b0170f95c2a2ade8fcaaccf1e181f9cef811e5275b1a82eb4d",
+      "stored_path": "_objects/c5f60f3b1d5a07b0170f95c2a2ade8fcaaccf1e181f9cef811e5275b1a82eb4d.gz",
+      "stored_sha256": "8110334b3c4e85f97f8077fdc5360a73fc4c1c7d8975a337b0668ea8a6120f8d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_BUILD.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2dfd4377bf4a63ca9d5901ccdcecba74a0f7d07b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_BUILD.stdout",
+      "raw_bytes": 280,
+      "raw_sha256": "0b0338e03e642b6f884d3a5eb277ac7e0cb5b9ac7840f2dc6126d411a92dfc80",
+      "stored_path": "_objects/0b0338e03e642b6f884d3a5eb277ac7e0cb5b9ac7840f2dc6126d411a92dfc80.gz",
+      "stored_sha256": "ea2fe85f6cf8ee51da2c4222cc9d08e3da4f5fa30f17dcebc4be25e5a7bd164d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "31df365a060e8cd475375aa3d8fdecd8429a866b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_CHECK.json",
+      "raw_bytes": 455,
+      "raw_sha256": "2ec04147ffa92905baaf85ff6ed3007460e2c00f2b814f7763706b675530aca8",
+      "stored_path": "_objects/2ec04147ffa92905baaf85ff6ed3007460e2c00f2b814f7763706b675530aca8.gz",
+      "stored_sha256": "6e45776eef8f45757a3056d88e72db8e3520761981e5655b623d75ae9919bb16"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e6118774d7823e1fd5f4887450df94189efb1acf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/ROOT_SOURCE_REVIEW.md",
+      "raw_bytes": 648,
+      "raw_sha256": "4896aa59fffa34c3552c7b9fb5c34b6cdb8ac8e13043155adc0b6d92f1f8facf",
+      "stored_path": "_objects/4896aa59fffa34c3552c7b9fb5c34b6cdb8ac8e13043155adc0b6d92f1f8facf.gz",
+      "stored_sha256": "059778f78acd4b2e038e92bd8a0090c65f9db7b88eadddc3dc49300e3db801fd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7ddc294db5168ff55c3cd3ad42c493fe8246f427",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/PROTOCOL.md",
+      "raw_bytes": 301,
+      "raw_sha256": "f9705948525f3ecf086807c3ed78052c450d154ac394bd641efb4e6c6404e56a",
+      "stored_path": "_objects/f9705948525f3ecf086807c3ed78052c450d154ac394bd641efb4e6c6404e56a.gz",
+      "stored_sha256": "a25710fff02fac927b6b9e4fa4f8bba4bda0547ae4203a7f03df1ecff97b95a1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a328f32973c0b19b6f074487e17318d2809e4d7e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+      "raw_bytes": 290,
+      "raw_sha256": "8ae4b2625cbdbcc8ff0eeeea95b0a0bc054907027e6d7c7c81e626b8386f0075",
+      "stored_path": "_objects/8ae4b2625cbdbcc8ff0eeeea95b0a0bc054907027e6d7c7c81e626b8386f0075.gz",
+      "stored_sha256": "5b56245928015b96c8d2215511f0799831f6f0e02369fa8ee5b86c2951ce1ae4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6de72ac4a43747e1ee632364c328ea07a22d9ec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDERR.txt",
+      "raw_bytes": 753,
+      "raw_sha256": "13eb7e2d034fe93c4824a6bcc0d2c7d14914dddf475eb4a64bdcd4c07ccc9f3b",
+      "stored_path": "_objects/13eb7e2d034fe93c4824a6bcc0d2c7d14914dddf475eb4a64bdcd4c07ccc9f3b.gz",
+      "stored_sha256": "0b8bac1c9172565a24afe2e1f9c93f382f9aa808ec392660a16f48d9e013bebf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cc38425501622110b954e587dcd142bd77a4e4fd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDOUT.json",
+      "raw_bytes": 1608,
+      "raw_sha256": "2b5f60f3ae7cb056d842a72ffb6d60e4d45c0c215f79a4c534f2677fd9105dfe",
+      "stored_path": "_objects/2b5f60f3ae7cb056d842a72ffb6d60e4d45c0c215f79a4c534f2677fd9105dfe.gz",
+      "stored_sha256": "c65ae9a7eaa68ac4b1bbcd14dfb85a1c4efa613b0244e075d8e94bb18bfe327f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cdc35e7d98168b35cb6593e4f9dde5065bd9d752",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "raw_bytes": 8058,
+      "raw_sha256": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645",
+      "stored_path": "_objects/bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645.gz",
+      "stored_sha256": "25d05c522c1aeba19a975fd14005614243644b4963223a5584b0d9cc59bbf12a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b02ed3c03eb29c0d4dad4bdfddd59dce5f22cc7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "raw_bytes": 42433,
+      "raw_sha256": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
+      "stored_path": "_objects/dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7.gz",
+      "stored_sha256": "3beeaa8024d3a8886299d457bf9f32765afd6650e356cf1f0ccd8e3e87386df1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b8918fd23855832691c572b58b38fd05a822fad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "raw_bytes": 17571,
+      "raw_sha256": "e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5",
+      "stored_path": "_objects/e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5.gz",
+      "stored_sha256": "b0ede7c618ba7f62ad4a6de7d4c5160f018224cd9c9e8b8085ca4d747f435eee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "87a219e8ad902c4676b6e30f9998039d842d6013",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json",
+      "raw_bytes": 1154,
+      "raw_sha256": "dd458512fa4f81ca4f765238d7af425f45feb67af1f29f02450d315276a8a3cb",
+      "stored_path": "_objects/dd458512fa4f81ca4f765238d7af425f45feb67af1f29f02450d315276a8a3cb.gz",
+      "stored_sha256": "f0d1d6c539f0019e653445db74f188ddbd1d15f04e4fda88bad09c896050e281"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d0dbb331169cf2cc792c1caf7e6f21f27e90ab96",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "raw_bytes": 10394,
+      "raw_sha256": "f6e0043976c8184bf9fefc834c578879c133be0a9e923553f0957b275ce415a8",
+      "stored_path": "_objects/f6e0043976c8184bf9fefc834c578879c133be0a9e923553f0957b275ce415a8.gz",
+      "stored_sha256": "e369e2f79bdeb77fba1d85467ea68ba189a9682cf6c9b7ca848c71514d42e58d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb5aedabc77fcd9703117bd0c3da8ba3664a01b3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "raw_bytes": 4083,
+      "raw_sha256": "a5a04c99140c77c188dd1affec002e8ad3edd8fbff780ba839a90f7073793869",
+      "stored_path": "_objects/a5a04c99140c77c188dd1affec002e8ad3edd8fbff780ba839a90f7073793869.gz",
+      "stored_sha256": "6f5c3a7c9d9a9e3319356ac25d78377fa1e9cd8f5372437768972564e61aa4cd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3afdba48c481c12e11662cb476e23a4573fa8780",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "raw_bytes": 5693,
+      "raw_sha256": "74531a247599e2dd0bb11c09bd24d0764bd81933a2f025607fb9b2de0effb15e",
+      "stored_path": "_objects/74531a247599e2dd0bb11c09bd24d0764bd81933a2f025607fb9b2de0effb15e.gz",
+      "stored_sha256": "548c13d270de9dbecb8be09ee512bdd5bd9a0b6ace405eb51aa3668b5d277b68"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5677099d96045bfd3cd99c092a53f41904163e8e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "raw_bytes": 4523,
+      "raw_sha256": "8514fbb17d177e60bb19dfe133f9946bb13dc9d3f6baee11459b93779d2f8de3",
+      "stored_path": "_objects/8514fbb17d177e60bb19dfe133f9946bb13dc9d3f6baee11459b93779d2f8de3.gz",
+      "stored_sha256": "035c4b75430d63439b48040c5cee0e008dadf97afcbb6a5be32c00ae7d041356"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "07d7f6908023014e1c24f47527981c9989d8629f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/scripts/native_certified_imaginary_time_2026_09_09.py",
+      "raw_bytes": 1881,
+      "raw_sha256": "85a48af8e10fc3106624026e0f72f55b5119175585ef4c5c557871ee58231c60",
+      "stored_path": "_objects/85a48af8e10fc3106624026e0f72f55b5119175585ef4c5c557871ee58231c60.gz",
+      "stored_sha256": "d7ec7215473a2559683d883f9eb3c25959bd3986d5beb994171bcccd86ed2cf4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "beefdc0c903f2d6c348b3ffa18829947c297f08e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "raw_bytes": 1887,
+      "raw_sha256": "a5de9d2f123b0351bfb6fd62c8710d9c7b9009fc7ab3d339a6b9f2c68d00e114",
+      "stored_path": "_objects/a5de9d2f123b0351bfb6fd62c8710d9c7b9009fc7ab3d339a6b9f2c68d00e114.gz",
+      "stored_sha256": "e267377ac6813f5f9adef96a99dfbdcdf4979c2587dab5c29e758567d71c27a5"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-certified-imaginary-time-20260909/",
+  "revision": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+  "schema_version": 1,
+  "unique_blobs": {
+    "012fbbabae4466a6c0de479faf66f8b405ac9b2f": {
+      "occurrences": 1,
+      "raw_bytes": 9419,
+      "raw_sha256": "3ecf8cea048bbcf9a0d27265cdc1c426491cc93abe7cc308b248459b7032c76b"
+    },
+    "072076847ecd1c632e73969b287fd18d5ecd57c5": {
+      "occurrences": 1,
+      "raw_bytes": 122,
+      "raw_sha256": "1fb80dc8ef9780d3650b0fa970ad0e36c778a6c85d3f651d00e73b8c76c4646f"
+    },
+    "07d7f6908023014e1c24f47527981c9989d8629f": {
+      "occurrences": 1,
+      "raw_bytes": 1881,
+      "raw_sha256": "85a48af8e10fc3106624026e0f72f55b5119175585ef4c5c557871ee58231c60"
+    },
+    "1e717a0454e60e7da4db365d9553d8e44ccf6887": {
+      "occurrences": 2,
+      "raw_bytes": 1426,
+      "raw_sha256": "39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816"
+    },
+    "285f5aa8d5090e390ed5b885dd0741501f3f3ea4": {
+      "occurrences": 2,
+      "raw_bytes": 1426,
+      "raw_sha256": "eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d"
+    },
+    "2c01c87a6fe214a82d8be1885877beed5e2ec0b7": {
+      "occurrences": 3,
+      "raw_bytes": 1299,
+      "raw_sha256": "433dfd653a53878b0db4c7649305ef9ad8b67b846b83b40335788cb53bbf9005"
+    },
+    "2dfd4377bf4a63ca9d5901ccdcecba74a0f7d07b": {
+      "occurrences": 1,
+      "raw_bytes": 280,
+      "raw_sha256": "0b0338e03e642b6f884d3a5eb277ac7e0cb5b9ac7840f2dc6126d411a92dfc80"
+    },
+    "31df365a060e8cd475375aa3d8fdecd8429a866b": {
+      "occurrences": 1,
+      "raw_bytes": 455,
+      "raw_sha256": "2ec04147ffa92905baaf85ff6ed3007460e2c00f2b814f7763706b675530aca8"
+    },
+    "36a4d554186a485f5e8d19a33fbc09fafe8cca82": {
+      "occurrences": 1,
+      "raw_bytes": 1062,
+      "raw_sha256": "1ff4f5667bce84fd920b6a957432c9e965b71e07f2b814c76d0bb7393a9fa527"
+    },
+    "37f7ff73dff40033d54292b9e1fe1ee86bcdeffe": {
+      "occurrences": 1,
+      "raw_bytes": 148,
+      "raw_sha256": "040266aee7668e1bf89da4bb5839c85c0de33cdc7ddce1cec924f3b47a93559e"
+    },
+    "3afdba48c481c12e11662cb476e23a4573fa8780": {
+      "occurrences": 1,
+      "raw_bytes": 5693,
+      "raw_sha256": "74531a247599e2dd0bb11c09bd24d0764bd81933a2f025607fb9b2de0effb15e"
+    },
+    "40439dcff9aa3173ebea22c328b3b9f5b4ed6e51": {
+      "occurrences": 1,
+      "raw_bytes": 7749,
+      "raw_sha256": "96f448bf5def75b0873a35971cdde8342fc24819f44bfa9cd0b23eb69683ea67"
+    },
+    "5677099d96045bfd3cd99c092a53f41904163e8e": {
+      "occurrences": 1,
+      "raw_bytes": 4523,
+      "raw_sha256": "8514fbb17d177e60bb19dfe133f9946bb13dc9d3f6baee11459b93779d2f8de3"
+    },
+    "660b4dcb0d16856237dc8f15c2fc3969f793755b": {
+      "occurrences": 1,
+      "raw_bytes": 4622,
+      "raw_sha256": "f36614f779810c80cbe03746fc3fb108c7beaeeac6dcbe4d5dcc060d8b399a4e"
+    },
+    "7b2892012532e996f367685311ccbb9bbfec7293": {
+      "occurrences": 1,
+      "raw_bytes": 379,
+      "raw_sha256": "740f233e880167e57f00c313f2a96b691810d16ac90a0c8ba84035d3842b12dd"
+    },
+    "7b8918fd23855832691c572b58b38fd05a822fad": {
+      "occurrences": 1,
+      "raw_bytes": 17571,
+      "raw_sha256": "e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5"
+    },
+    "7ddc294db5168ff55c3cd3ad42c493fe8246f427": {
+      "occurrences": 1,
+      "raw_bytes": 301,
+      "raw_sha256": "f9705948525f3ecf086807c3ed78052c450d154ac394bd641efb4e6c6404e56a"
+    },
+    "8132fb256a2cc6a1203e7258c9ceeadf6a6e0b1b": {
+      "occurrences": 1,
+      "raw_bytes": 183,
+      "raw_sha256": "8dd3e8b991753a5143e25a623f5b27baade490c15141b3f19b6dde4780d002e7"
+    },
+    "87a219e8ad902c4676b6e30f9998039d842d6013": {
+      "occurrences": 1,
+      "raw_bytes": 1154,
+      "raw_sha256": "dd458512fa4f81ca4f765238d7af425f45feb67af1f29f02450d315276a8a3cb"
+    },
+    "8da17dd0697242fa415fa73bc1336241db1bc7ec": {
+      "occurrences": 1,
+      "raw_bytes": 118,
+      "raw_sha256": "3de50e14e36a2c666ebcb6b39fac564c583ba20709ca615fb41eb47462bae32b"
+    },
+    "91279869c3654ce1a412b58eddc1ad1ee7f65316": {
+      "occurrences": 1,
+      "raw_bytes": 1154,
+      "raw_sha256": "e41127380a0ca4908cdcf232c4d4705aca2694a5560887f0d2209348f69a6d23"
+    },
+    "9e4691ef25f03831728cf296c19224e092e4b32a": {
+      "occurrences": 1,
+      "raw_bytes": 136,
+      "raw_sha256": "70a179b77e4631694613a28f631130268f8d52de8ad900a72784f85f1e581612"
+    },
+    "a328f32973c0b19b6f074487e17318d2809e4d7e": {
+      "occurrences": 1,
+      "raw_bytes": 290,
+      "raw_sha256": "8ae4b2625cbdbcc8ff0eeeea95b0a0bc054907027e6d7c7c81e626b8386f0075"
+    },
+    "ad6603962488d38fa8dae270168b40deb1729fc5": {
+      "occurrences": 1,
+      "raw_bytes": 1397,
+      "raw_sha256": "d443005ecc4409185b82a55bfae840ec21999aac8e3aa67513d1f5ab499588fe"
+    },
+    "b02ed3c03eb29c0d4dad4bdfddd59dce5f22cc7f": {
+      "occurrences": 1,
+      "raw_bytes": 42433,
+      "raw_sha256": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7"
+    },
+    "b24daa80b6ab79677e80e9a5d43ece0de8d45198": {
+      "occurrences": 1,
+      "raw_bytes": 1748,
+      "raw_sha256": "c5f60f3b1d5a07b0170f95c2a2ade8fcaaccf1e181f9cef811e5275b1a82eb4d"
+    },
+    "bc2c5d8e94041c5bae2384031a62995c26ae6d1d": {
+      "occurrences": 1,
+      "raw_bytes": 92,
+      "raw_sha256": "9f2664fabba1f8b5049c1c6253e3cd1041b8ed7f55ff479b9ff2889f7d2aef54"
+    },
+    "bcbbacae87c50642ee95a02559cddf6a88e9a738": {
+      "occurrences": 1,
+      "raw_bytes": 120,
+      "raw_sha256": "8f072e0b3d90f711570752901a20963dd55544a62a05c6faa0d2650bc5986cf1"
+    },
+    "beefdc0c903f2d6c348b3ffa18829947c297f08e": {
+      "occurrences": 1,
+      "raw_bytes": 1887,
+      "raw_sha256": "a5de9d2f123b0351bfb6fd62c8710d9c7b9009fc7ab3d339a6b9f2c68d00e114"
+    },
+    "c6de72ac4a43747e1ee632364c328ea07a22d9ec": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "13eb7e2d034fe93c4824a6bcc0d2c7d14914dddf475eb4a64bdcd4c07ccc9f3b"
+    },
+    "cb5aedabc77fcd9703117bd0c3da8ba3664a01b3": {
+      "occurrences": 1,
+      "raw_bytes": 4083,
+      "raw_sha256": "a5a04c99140c77c188dd1affec002e8ad3edd8fbff780ba839a90f7073793869"
+    },
+    "cc38425501622110b954e587dcd142bd77a4e4fd": {
+      "occurrences": 1,
+      "raw_bytes": 1608,
+      "raw_sha256": "2b5f60f3ae7cb056d842a72ffb6d60e4d45c0c215f79a4c534f2677fd9105dfe"
+    },
+    "cdc35e7d98168b35cb6593e4f9dde5065bd9d752": {
+      "occurrences": 1,
+      "raw_bytes": 8058,
+      "raw_sha256": "bd91e25444a87fc6cd2e6caa7bf3bc0e33605c5f53efbadf0fad235bee88d645"
+    },
+    "d0dbb331169cf2cc792c1caf7e6f21f27e90ab96": {
+      "occurrences": 1,
+      "raw_bytes": 10394,
+      "raw_sha256": "f6e0043976c8184bf9fefc834c578879c133be0a9e923553f0957b275ce415a8"
+    },
+    "d1eb86cf2d538e192f9f9d19494b3ac244135e50": {
+      "occurrences": 1,
+      "raw_bytes": 88,
+      "raw_sha256": "ef019573e9d49fe36d45bc9c7fe9482694e5d692d98fb9b7210fa553a1c16798"
+    },
+    "e2ab142b7d847c6dcd4d7266a112d40b8a4de0b9": {
+      "occurrences": 1,
+      "raw_bytes": 458,
+      "raw_sha256": "28d98500f6e5e48f7e600b5d29870ba26866a529261d6fcf27407f8b433bd12a"
+    },
+    "e6118774d7823e1fd5f4887450df94189efb1acf": {
+      "occurrences": 1,
+      "raw_bytes": 648,
+      "raw_sha256": "4896aa59fffa34c3552c7b9fb5c34b6cdb8ac8e13043155adc0b6d92f1f8facf"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 1,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

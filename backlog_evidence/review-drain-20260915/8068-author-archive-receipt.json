@@ -1,0 +1,950 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "9b77f9ccab6f167d710d8e071f2f9f107b8d2ccf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 103,
+      "raw_sha256": "dd377d0268fe832adc881126974fee6f03ec5b5878ef13e5894442612970f3ee",
+      "stored_path": "_objects/dd377d0268fe832adc881126974fee6f03ec5b5878ef13e5894442612970f3ee.gz",
+      "stored_sha256": "202d88ac31e9e87d7a55fa712d621c8697dcbf26506703a364119cfed084dba8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9e4651b999daa279555e386f9a55d5b284591f05",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 132,
+      "raw_sha256": "b86f94a94649e0a4812e20696130f15a51f8c53dbddc5eddb18b9eb3b700e338",
+      "stored_path": "_objects/b86f94a94649e0a4812e20696130f15a51f8c53dbddc5eddb18b9eb3b700e338.gz",
+      "stored_sha256": "5814fbcf992ce24e30b578f183f6af74dc053762a75bb410a74ed3147ed80dab"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e6ea09e9506bce6e196eca8a2562578d8b6b8305",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 847,
+      "raw_sha256": "018b5fa5e23dc4ccf94821d17deb2270078362e0639e3250fd67faf19353c333",
+      "stored_path": "_objects/018b5fa5e23dc4ccf94821d17deb2270078362e0639e3250fd67faf19353c333.gz",
+      "stored_sha256": "4061cf7479bef81920d3e2a358ae7433c34f97f9ad489378f1486e54519024a3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c29c5c20b5e79e40f8267ec13f2332ef199f0af1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/DELIVERY_FREEZE.json",
+      "raw_bytes": 11822,
+      "raw_sha256": "7f5fe7d0f9780f99b41437ab8166caf4afc43fc7f3e0f9ae09b382980eba6e62",
+      "stored_path": "_objects/7f5fe7d0f9780f99b41437ab8166caf4afc43fc7f3e0f9ae09b382980eba6e62.gz",
+      "stored_sha256": "c1246e785001a01b26045bed08449346710aa1aa1c264390ac23c688756d6071"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e0883a927b4bb057a1f9c1652f8479e7a1880ce0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/GOAL.md",
+      "raw_bytes": 66,
+      "raw_sha256": "9631ce856a37631774d12e5d072f448d279c03a9a14ff72cdf3ac6604f5690a8",
+      "stored_path": "_objects/9631ce856a37631774d12e5d072f448d279c03a9a14ff72cdf3ac6604f5690a8.gz",
+      "stored_sha256": "c8e6f7eb329d1a47d78fc3de11797a3a163cfcc865ca92b428102bacf24e5364"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3345b138d76c6fd2eb7aa9eea631610c9ad6185e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/HANDOFF.md",
+      "raw_bytes": 1801,
+      "raw_sha256": "07fdf802e1116ba517a856d1ab313d11423338dc38859afee823fb60814ff688",
+      "stored_path": "kept/pr8068-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "07fdf802e1116ba517a856d1ab313d11423338dc38859afee823fb60814ff688"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ab1f76ff0dc12c92ec2fc72d450c0507e37559d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 103,
+      "raw_sha256": "6e56149e96ed93b449cac6b2b2d9b5805640e8c2712e82e0a871cbb09a9c0ffe",
+      "stored_path": "_objects/6e56149e96ed93b449cac6b2b2d9b5805640e8c2712e82e0a871cbb09a9c0ffe.gz",
+      "stored_sha256": "f6000870a3d71271cb1d6add704ac3db8b3848d987846abfed4d96c56e6e5cd0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "85cecee161c5c4256682732d053cb35df4fb1e99",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 129,
+      "raw_sha256": "8dfe8f7df220d42f7ebab1af636abb43ae02a7c94b119cbf147962c079ff07f0",
+      "stored_path": "_objects/8dfe8f7df220d42f7ebab1af636abb43ae02a7c94b119cbf147962c079ff07f0.gz",
+      "stored_sha256": "3e13e1c856f109469e9fdb43cae5c84c8fc9f9f011efc2033b34827d19f7d18c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7e2ff33fa4dff4503287d4ee73248d79d17de14f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 136,
+      "raw_sha256": "85087aed267a6486122ea06640575e39dfb56fd40af3c322d25fba3ddbb043f6",
+      "stored_path": "_objects/85087aed267a6486122ea06640575e39dfb56fd40af3c322d25fba3ddbb043f6.gz",
+      "stored_sha256": "83f383668f25208c0cf458b79995b414f01dd5630656af1d319b1d22fbb0de13"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2f5563630803a8d8adbfb4b6683b355c85d207ec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/PR_BACKLOG.md",
+      "raw_bytes": 68,
+      "raw_sha256": "68a69ba37706badf2b88f360730720dd6b675f032e202a4827050ca4d4f80e07",
+      "stored_path": "_objects/68a69ba37706badf2b88f360730720dd6b675f032e202a4827050ca4d4f80e07.gz",
+      "stored_sha256": "52519cf5f86609f0fad65a120218d7c3f88b1a01f0c4dc26c12390267ec50d83"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "f52b9585177ddc21e5c608fdfad46c518294caf6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 665,
+      "raw_sha256": "4384c0740c8e0aafe1333379ee7791a9e8ff1d538c87f470218b2bb4613efaac",
+      "stored_path": "kept/pr8068-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "4384c0740c8e0aafe1333379ee7791a9e8ff1d538c87f470218b2bb4613efaac"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c7b8515572496d8eb4dc775b7eb019eb6e7fe8e0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 110,
+      "raw_sha256": "519e9de7f9232e0cb6fd425daba29bad0510b69ea7b6fb43f1a39b15ee980355",
+      "stored_path": "_objects/519e9de7f9232e0cb6fd425daba29bad0510b69ea7b6fb43f1a39b15ee980355.gz",
+      "stored_sha256": "0520c8e4e4a97d83240db9a654a2e2c2f65cf7c279fc66cc3bbb2083027c79ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f32242601c9c039cb9922a5823a42ce177f95060",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/CONTROL_SCOPE.md",
+      "raw_bytes": 530,
+      "raw_sha256": "fd4311d60450297745a1d176efa8e688388227e5d2381ccd7a374a4fda4510e1",
+      "stored_path": "_objects/fd4311d60450297745a1d176efa8e688388227e5d2381ccd7a374a4fda4510e1.gz",
+      "stored_sha256": "e9bd09f2ac7576ea084310bb2fd874d2502a5f16a7baf82874515e4305c4caf2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "505afe2ab6fed14870a9537111b4d81e241ef3a6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/DERIVATION.md",
+      "raw_bytes": 8278,
+      "raw_sha256": "b6ce4a681067120c3e6c37a05d4ed2ab17bdcdc328c1d5609834335c5f5f02d9",
+      "stored_path": "_objects/b6ce4a681067120c3e6c37a05d4ed2ab17bdcdc328c1d5609834335c5f5f02d9.gz",
+      "stored_sha256": "ed07eac08650eb9ea023a3c1f258eb836e6c4d794e6ba9585d02ab605405d981"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "79a759c8b07b8d382a35fbe958a4d7e8acb329ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/FREEZE.json",
+      "raw_bytes": 618,
+      "raw_sha256": "4f64d81cd165bd618031b3a840503017b3a765d20436e1f0c78b96749bb3dfc1",
+      "stored_path": "_objects/4f64d81cd165bd618031b3a840503017b3a765d20436e1f0c78b96749bb3dfc1.gz",
+      "stored_sha256": "4d63e9454761680ed6cda321ce6fcb760a6075b7f3f22135076c01e2fd0dea68"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "81e0a426e24e711dde1cf6d4d224a5d167697462",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/GENERIC_RANK_ONE.md",
+      "raw_bytes": 3423,
+      "raw_sha256": "fa1d8934b23b74ef9cd59d3af8cb1a23597b3616adc725355b1209b2acf30966",
+      "stored_path": "_objects/fa1d8934b23b74ef9cd59d3af8cb1a23597b3616adc725355b1209b2acf30966.gz",
+      "stored_sha256": "f1aafecb3392d5d8a4fb301a4c70d8a56744a2d407518b1997e1c4cd42d8c785"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eb3111b0c3c5ebb298a1f48b584ca2fdfe60493c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMAGINARY_TIME_CHART.md",
+      "raw_bytes": 3203,
+      "raw_sha256": "acb4513536435bbe42a553d51f92614f98e60d36b0b24132b8e4ba0e0846c732",
+      "stored_path": "_objects/acb4513536435bbe42a553d51f92614f98e60d36b0b24132b8e4ba0e0846c732.gz",
+      "stored_sha256": "6dece6a6f835469b968d95e4d6d6a6435db66287f0dac9948d9f77490d1b48f6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0c2fa4d495d3bf7868235bb6b86e55efbfc9779c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMPORT_HASHES.json",
+      "raw_bytes": 353,
+      "raw_sha256": "cfc955b094ca1d3f26598711975db1281e879a39deda4deb3c40e1437481bf43",
+      "stored_path": "_objects/cfc955b094ca1d3f26598711975db1281e879a39deda4deb3c40e1437481bf43.gz",
+      "stored_sha256": "48df4745fcb1726b8f841c9a30756ed4ec4acea97653f5014d642148ab52c885"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "32b7f05befe2215405acd40ba7fa6a533ff1f299",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/PARTIAL.json",
+      "raw_bytes": 493,
+      "raw_sha256": "d78a4ccd30b9b3f08a3c23de0a2216a4887c95c4ff00f7073d7635c543a2453c",
+      "stored_path": "_objects/d78a4ccd30b9b3f08a3c23de0a2216a4887c95c4ff00f7073d7635c543a2453c.gz",
+      "stored_sha256": "995a8a06d2ea4ec123290d848914fc26c6dbd59d0294b8e60cdfa0b54ebaaaf3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f017b594a0f770cf7525e6ef252b269e62cac2ca",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/RESULT.json",
+      "raw_bytes": 1141,
+      "raw_sha256": "50b056f7e7b77e98d3003d42776970e0bf4b3c4f0606510a65a085e71aa19c4d",
+      "stored_path": "_objects/50b056f7e7b77e98d3003d42776970e0bf4b3c4f0606510a65a085e71aa19c4d.gz",
+      "stored_sha256": "269608c157c3efe46133d8e3c9a35a432644ff1639e2a3cb0575b4d7f120f455"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6f600d4d3c6773413b25928604c0f8f1cecd0c4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/TIME_CHART_FREEZE.json",
+      "raw_bytes": 172,
+      "raw_sha256": "1b4176ac9a457d9755b8f413c1d3ef664ebd25b0fe47fee5ca2915147375512e",
+      "stored_path": "_objects/1b4176ac9a457d9755b8f413c1d3ef664ebd25b0fe47fee5ca2915147375512e.gz",
+      "stored_sha256": "1dec924b71107f5803b63327424048831f17d47eea64b08a8e0fdc71c7566c9f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5b4ca680d9c8317cda616f16b835f78edb390329",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/check.py",
+      "raw_bytes": 1862,
+      "raw_sha256": "dbd484529ac6fd1e302b734e4af966b33c298272553012c8eed08df45be79b99",
+      "stored_path": "_objects/dbd484529ac6fd1e302b734e4af966b33c298272553012c8eed08df45be79b99.gz",
+      "stored_sha256": "6a92ac81338aba2f3570d8427badf4df9ba1c74ea68de6e27dcbfa0c0f6752ad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0bf5c86899e29c068f1bea93771759e7ac22aad4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/STATE.yaml",
+      "raw_bytes": 1016,
+      "raw_sha256": "64b3a6c47fe4684b3c77deaa8b22993a2a4ac05c5db0910cd8c515726e76e2d0",
+      "stored_path": "_objects/64b3a6c47fe4684b3c77deaa8b22993a2a4ac05c5db0910cd8c515726e76e2d0.gz",
+      "stored_sha256": "ffaeb94075e6121952714797a981c9dd142f371c8962f4a9c4d31fb579b5c766"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "720eae36ba9a8a7ff96e4afb02ad68b9773faea9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/TRACE_GATE.md",
+      "raw_bytes": 785,
+      "raw_sha256": "bad758168c12f3658bb42fd490d6104d115b268925737f31edf258c9c9d2edca",
+      "stored_path": "_objects/bad758168c12f3658bb42fd490d6104d115b268925737f31edf258c9c9d2edca.gz",
+      "stored_sha256": "51049563991a1940500d825d61cfcaaec3823e4705467f464384c6032f5eae43"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "00f975e06f4c33dd411a54c1760e0ad49f72e2a9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/ASSEMBLY_DIFF.json",
+      "raw_bytes": 500,
+      "raw_sha256": "908b22ff452ca151fef9af73c44d5dfc251d04a18d9f58a4eb6637c2478ed594",
+      "stored_path": "_objects/908b22ff452ca151fef9af73c44d5dfc251d04a18d9f58a4eb6637c2478ed594.gz",
+      "stored_sha256": "b8e86054052bbed732cfa9e7ecd8aa6d5eff026e687a8a9fbd994a6389ca4f01"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "595fda68c7b1f2474023119c9e755a6c5bd2b1e7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/FREEZE.json",
+      "raw_bytes": 646,
+      "raw_sha256": "5c7f925499f429f178a259b07f589819b02509ed98b5f5d4abbd77f3e95329fc",
+      "stored_path": "_objects/5c7f925499f429f178a259b07f589819b02509ed98b5f5d4abbd77f3e95329fc.gz",
+      "stored_sha256": "33c06fbce761b77192a4923f36b6f733a599d957045993ed87b060758f65d0d2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "46938a01ffc1d31387b7c67fb191ad9c9f56f2d6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES.json",
+      "raw_bytes": 1261,
+      "raw_sha256": "d4771caa61414e99c25f9cdf3a23e085fd5c65036e0a9267136111787287c878",
+      "stored_path": "_objects/d4771caa61414e99c25f9cdf3a23e085fd5c65036e0a9267136111787287c878.gz",
+      "stored_sha256": "3db6ce4727ffcdeecf139db8b6b19392c33d1b36f0de5f63a4400d90ef1f0073"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "42be8870f2e4c4d0ab551aa502be8a64d20617c4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES_FINAL.json",
+      "raw_bytes": 1434,
+      "raw_sha256": "0629c8778d112e4420709780f685b2b0e75a1bff4b2f4ab8f4d8388c6b4c5b87",
+      "stored_path": "_objects/0629c8778d112e4420709780f685b2b0e75a1bff4b2f4ab8f4d8388c6b4c5b87.gz",
+      "stored_sha256": "263c71b66044c2a40ce6fbbe532bc1c72a930833584b35a09243ebf81025b4e1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "85e457228901c649dd3b8f906308f24b702754de",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/REVIEW.md",
+      "raw_bytes": 3800,
+      "raw_sha256": "9135552250996a05d47277d4527a185c9dfdbef2470b38eaca18a6125c097538",
+      "stored_path": "_objects/9135552250996a05d47277d4527a185c9dfdbef2470b38eaca18a6125c097538.gz",
+      "stored_sha256": "f30bc8213684c5451c340191ee70889e3777ff373b70476837a2ebd67915be0f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a891ec488e5191a8fc54327aa0a7844ea8e708",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/REVIEW_BEFORE_STATUS.md",
+      "raw_bytes": 2979,
+      "raw_sha256": "caf54acf538c8b0e6d2cd841349464326a394b50e1ae9125efb3fa13b2c2e01b",
+      "stored_path": "_objects/caf54acf538c8b0e6d2cd841349464326a394b50e1ae9125efb3fa13b2c2e01b.gz",
+      "stored_sha256": "1a35a287771f5696393a7a57961ceab56e2ebd449fda5278ad6e67dc8ba8c8b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "393bf332030c6ac765a3fd88c44c80439bbc9230",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/STATUS_DIFF.txt",
+      "raw_bytes": 2017,
+      "raw_sha256": "01badf1994129de7bb47d1de18339687feaaa0c1fa496211483db0fd80182e59",
+      "stored_path": "_objects/01badf1994129de7bb47d1de18339687feaaa0c1fa496211483db0fd80182e59.gz",
+      "stored_sha256": "8139b1c0f846ef750e0b8cb3c287748067af1eb292267a42849b9138c11f85ce"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ec592868adde161efd40f723f38804eeae03035",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/STATUS_PIN_FAILURE.txt",
+      "raw_bytes": 289,
+      "raw_sha256": "7e4e4a390f689f86a4b05478151951bdab6e0ab6be66807c2943e40c7fa6a73b",
+      "stored_path": "_objects/7e4e4a390f689f86a4b05478151951bdab6e0ab6be66807c2943e40c7fa6a73b.gz",
+      "stored_sha256": "0d6554556ed910ccfa8ea0dc7d097507fdb6d5b56951252f954469abbd9f920b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "61409701feea392ff295552afc8aa11baf69804d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/FREEZE.json",
+      "raw_bytes": 440,
+      "raw_sha256": "7c7c23ac16b05f93c8c37e2e23ee9a9c69ae83a7f553dd5e6214fb0952acc4f8",
+      "stored_path": "_objects/7c7c23ac16b05f93c8c37e2e23ee9a9c69ae83a7f553dd5e6214fb0952acc4f8.gz",
+      "stored_sha256": "850a16de1b250c2b4cef42bc824890bba443dc9ae6104b850fc993f9aaeb8505"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bdc318d34a2c6848c55704dde9f72cb69fefd144",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/INDEPENDENT_ARGUMENT.md",
+      "raw_bytes": 2723,
+      "raw_sha256": "64520cdd7611945263d108b40c0e4c9bed79e50df154230957b9973400ce1c7a",
+      "stored_path": "_objects/64520cdd7611945263d108b40c0e4c9bed79e50df154230957b9973400ce1c7a.gz",
+      "stored_sha256": "c3aeea96315dff4ac21f36eff2c0d7d65d12e117fc5602cdf46bd3e8b8471cdd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fc26caee26d24c0e32950a5161e50d9bd8a320c5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/READ_HASHES.json",
+      "raw_bytes": 1521,
+      "raw_sha256": "38e00ffa607e76b50c0583c26de5f37dfaf36e7ca1dd0990e65da517861f88cc",
+      "stored_path": "_objects/38e00ffa607e76b50c0583c26de5f37dfaf36e7ca1dd0990e65da517861f88cc.gz",
+      "stored_sha256": "90c322003164c299ff9de4d7748a2e3150335d08d6ef531f4bc163bc0713980b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b5c437b8f15c1665eaaa8160804a186c8cfe6a46",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/RESULT.json",
+      "raw_bytes": 308,
+      "raw_sha256": "6d4f29ca2b3f40bcea596a418907a101a8cf4cc3a48cabe20fd69880e6443648",
+      "stored_path": "_objects/6d4f29ca2b3f40bcea596a418907a101a8cf4cc3a48cabe20fd69880e6443648.gz",
+      "stored_sha256": "f9b3ac866c20885285be799c3f0d5c2cf8e7144570da4d81678bbfa8f4341634"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8cf639c4cce13bc65f596bd98b245c691db97adf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/REVIEW.md",
+      "raw_bytes": 5368,
+      "raw_sha256": "b9a52d140162854182d884839334759dec6b0f7fb17097233f861c199c04cdb9",
+      "stored_path": "_objects/b9a52d140162854182d884839334759dec6b0f7fb17097233f861c199c04cdb9.gz",
+      "stored_sha256": "07d8fd64c0a2072ee693138a16b0ca4adbcbc6c0b22f0b05e615a5ecbb2590b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5ebe523ec14f1c504fb5951e22aeb0fd5f8762b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_FREEZE.json",
+      "raw_bytes": 191,
+      "raw_sha256": "81275ba7514c8383909842de7233095e4e9c88b2e3d307315cc2f83d2c5bce82",
+      "stored_path": "_objects/81275ba7514c8383909842de7233095e4e9c88b2e3d307315cc2f83d2c5bce82.gz",
+      "stored_sha256": "6ec704dad9d487e8342f58ad887db84d154dbda2d4d035146b23c35241660122"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "171f127b82a8cf6b0c4a25d157552bc0b4dff27c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_HASH.json",
+      "raw_bytes": 179,
+      "raw_sha256": "3856c3bfcb697918871f1aa13c7767b6e95fe82f7b34d6c649ea1f0754fac0f2",
+      "stored_path": "_objects/3856c3bfcb697918871f1aa13c7767b6e95fe82f7b34d6c649ea1f0754fac0f2.gz",
+      "stored_sha256": "ef5608dee4aa8d131442f9723c2c16f26d003b394eedf0c7a306d100cd41963a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e78d849a77150cefc564aa87f4798d76480def2e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_REVIEW.md",
+      "raw_bytes": 2410,
+      "raw_sha256": "00654907cf5e006d7ce65f73a8b4c5437a3d1f310309c46a43b8e8d09dd3a093",
+      "stored_path": "_objects/00654907cf5e006d7ce65f73a8b4c5437a3d1f310309c46a43b8e8d09dd3a093.gz",
+      "stored_sha256": "73d09ce51a7bc48d92f0b4b1ba2fddd04ca6e755b09db82684a1f1dc2cdd6c94"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "821979dc3ab0007a755bf38b88f0459d423416a3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/check.py",
+      "raw_bytes": 1442,
+      "raw_sha256": "cf0b96cf43e3f2f6db7b21f0dea2adb2a953c073e72c2121f7a2a77342cd1e4f",
+      "stored_path": "_objects/cf0b96cf43e3f2f6db7b21f0dea2adb2a953c073e72c2121f7a2a77342cd1e4f.gz",
+      "stored_sha256": "6d54a9aee9e784cb7d046fd40af1ba1c71de5d51cf92d3a629299bc1d55b45c4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c917dab9a654c54a04295cef115fc0195666cca4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stdout",
+      "raw_bytes": 280,
+      "raw_sha256": "df08fb44bac1443fa6cb72c2d7d0a813be18c2b0f86c5472c2691fbbf52de95d",
+      "stored_path": "_objects/df08fb44bac1443fa6cb72c2d7d0a813be18c2b0f86c5472c2691fbbf52de95d.gz",
+      "stored_sha256": "5ddbaf810e0ebd9048db0338d2eb13bab90ee736249a1b87ae67ac5504439fae"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "624cde5f32831b460d1ed1db344c9037e30976e5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_CHECK.json",
+      "raw_bytes": 452,
+      "raw_sha256": "33a4c6e4d43f6ba7b7d908392c7e169a7c77958a5564b2fab6048ff8813a727d",
+      "stored_path": "_objects/33a4c6e4d43f6ba7b7d908392c7e169a7c77958a5564b2fab6048ff8813a727d.gz",
+      "stored_sha256": "4237a4ec4b7f264fcb42186b13aa75cd0aa5a342a8604e91c8ec579c4648aabd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40c741a97c16f92ef76c857cec6fcd1cee734263",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATED.stdout",
+      "raw_bytes": 2051,
+      "raw_sha256": "1c1bd6ef8b37c921d52a2ccfaaa17907ffc119b5d3c76217c8a3992f4f9484c6",
+      "stored_path": "_objects/1c1bd6ef8b37c921d52a2ccfaaa17907ffc119b5d3c76217c8a3992f4f9484c6.gz",
+      "stored_sha256": "c3e7f0a2c7c6b67d603eca125a3d6b8879b3cf116d44b50f3599ba3e22798d4e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "df351c56ddbcd641cef2807db995a8b1b7d2b199",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATION.json",
+      "raw_bytes": 102,
+      "raw_sha256": "48f9f5e4ea57451d7e9130e00594c0480c81b24675a2d9d8eddd94a62800ecfc",
+      "stored_path": "_objects/48f9f5e4ea57451d7e9130e00594c0480c81b24675a2d9d8eddd94a62800ecfc.gz",
+      "stored_sha256": "c9debd896f393e83a160dc6e8d93798e7f13add180b363e821442f0eabe9826b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "29036dd546a0957c6e4c9a26d8263254ef302000",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/SOURCE_FREEZE.json",
+      "raw_bytes": 904,
+      "raw_sha256": "acd1375f592e5b290b8a1cb11a21159e35c633bacb2be61d6946afc398ba9e75",
+      "stored_path": "_objects/acd1375f592e5b290b8a1cb11a21159e35c633bacb2be61d6946afc398ba9e75.gz",
+      "stored_sha256": "8ee6f78f0c1f6d08982d774d55a779ccb1f918a58de204672637dcb724be4628"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5b6a5264381555edddc0d8ff4114fd29dcb38e09",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "raw_bytes": 17544,
+      "raw_sha256": "d91d9ed9f856c80edd1524b3364300bcd9f37523364bd81bd9ac45a9bbc31ae2",
+      "stored_path": "_objects/d91d9ed9f856c80edd1524b3364300bcd9f37523364bd81bd9ac45a9bbc31ae2.gz",
+      "stored_sha256": "a309ed8498e5d8fcda49cb2479361793bce385851ca7b68dba81bfec9a00a58a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c3618ec0154987a5f2402df9f08d3a81c63ce838",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/SOURCE_FREEZE.json",
+      "raw_bytes": 904,
+      "raw_sha256": "e889e868723391fadcba164f1e9454de12cfa87b61e273d8002fef6bc29b0602",
+      "stored_path": "_objects/e889e868723391fadcba164f1e9454de12cfa87b61e273d8002fef6bc29b0602.gz",
+      "stored_sha256": "5b0cbc7cd33c5ae0036612c547aadb43c72b8498b8956eb7ba606a02def85348"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ac6654c7780c7b38a7bcb28dd1424bd14dbb6712",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.json",
+      "raw_bytes": 2051,
+      "raw_sha256": "c4f787537791713d5e11ba8bcbe6de49247776e8a25457a9f7958db4117f206f",
+      "stored_path": "_objects/c4f787537791713d5e11ba8bcbe6de49247776e8a25457a9f7958db4117f206f.gz",
+      "stored_sha256": "1369486932e29d293334825dcf1b7677da102dd71508d0d90e735dc1d1f7e50d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b095af56dcfcdc0358b4f1589b891d61f9b68476",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.py",
+      "raw_bytes": 897,
+      "raw_sha256": "06c6490e151d20b8ef6204df4f83172f649b9614375052761264756d4beaffdc",
+      "stored_path": "_objects/06c6490e151d20b8ef6204df4f83172f649b9614375052761264756d4beaffdc.gz",
+      "stored_sha256": "f9c87be267954971a26c11dbf68264077da87db7f0a5ed61f3d6c432b845ca31"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5ebe06d04b8d4453dfce29b54c7e0a2ac93c027c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09_inputs.json",
+      "raw_bytes": 655,
+      "raw_sha256": "9c34ab58ced98b2c86402e1f198810f01ca7084e579d11f51f730d65ae64c8ca",
+      "stored_path": "_objects/9c34ab58ced98b2c86402e1f198810f01ca7084e579d11f51f730d65ae64c8ca.gz",
+      "stored_sha256": "f62fa7184fbf914ccab4ad527b64e27392d0f94afee158beba53875e2634ceaf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e787085f85a14715edb82a96fbf5338a5b5af074",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+      "raw_bytes": 259,
+      "raw_sha256": "39147870dc8c5fe5b731f92d06839cca3018acbd8111e9c9ba1d8bf6427e1507",
+      "stored_path": "_objects/39147870dc8c5fe5b731f92d06839cca3018acbd8111e9c9ba1d8bf6427e1507.gz",
+      "stored_sha256": "fe6b53beafffcfcabe6927f116d47ac2bd8aa6acb12d1757e3aed70659c5d63f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e13b9f867f8385598bf7018dc637cdd28d53ad7c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDERR.txt",
+      "raw_bytes": 777,
+      "raw_sha256": "fba66bb03f3b7a3de28f6c82be1c86bbdfa56a2d5abe8c15f7c811ccc4b5aabd",
+      "stored_path": "_objects/fba66bb03f3b7a3de28f6c82be1c86bbdfa56a2d5abe8c15f7c811ccc4b5aabd.gz",
+      "stored_sha256": "5cfd89147b668accb38251757424e130738c4b45bd6cd8f799c59bdf28741dfc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "32c8762601e1e0cad0b3412fef2fb9ab84853869",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDOUT.json",
+      "raw_bytes": 2096,
+      "raw_sha256": "e7774ad94c3853d591e6c0e836d63f4441fe96d549a20052e459d770a47ff9c8",
+      "stored_path": "_objects/e7774ad94c3853d591e6c0e836d63f4441fe96d549a20052e459d770a47ff9c8.gz",
+      "stored_sha256": "4a5cae95327f118bd1ec875e78d118bee44721fcdaa0b2b8039ca5aec3bbeb8f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b02ed3c03eb29c0d4dad4bdfddd59dce5f22cc7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "raw_bytes": 42433,
+      "raw_sha256": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
+      "stored_path": "_objects/dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7.gz",
+      "stored_sha256": "3beeaa8024d3a8886299d457bf9f32765afd6650e356cf1f0ccd8e3e87386df1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b231a3930f6ab8ef2c0a67a0289fb58149ef78df",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431",
+      "stored_path": "_objects/8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431.gz",
+      "stored_sha256": "dd5bc47eab10855a969306bd56821ed4226775770053686eaa3bbdb20081aeee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b8918fd23855832691c572b58b38fd05a822fad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "raw_bytes": 17571,
+      "raw_sha256": "e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5",
+      "stored_path": "_objects/e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5.gz",
+      "stored_sha256": "b0ede7c618ba7f62ad4a6de7d4c5160f018224cd9c9e8b8085ca4d747f435eee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3af455d1da79002238e09b184ccce2053262d78b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+      "raw_bytes": 655,
+      "raw_sha256": "6fe35da2fda8c5b2b3a3a5c036f2477c67b61567b230dd11fd3fb74d9c36e068",
+      "stored_path": "_objects/6fe35da2fda8c5b2b3a3a5c036f2477c67b61567b230dd11fd3fb74d9c36e068.gz",
+      "stored_sha256": "dead240d5554c3b19b7d5d58e23a655717b32c20dd22d85aee217e32fa84f0e8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a849d72bbce3f67fe7a96ad0f947225bbd3e5971",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "raw_bytes": 943,
+      "raw_sha256": "335aa61c1523ddeb15613ac1ab424b3e30ad60ca6e9c2bab8b0b1b4128623e9f",
+      "stored_path": "_objects/335aa61c1523ddeb15613ac1ab424b3e30ad60ca6e9c2bab8b0b1b4128623e9f.gz",
+      "stored_sha256": "ce979a6916e23ff45728c3201456e0c59e06ccde4834c8e6487198316d89333d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f41b8c7249c91527a31e3538b15b6a12e86a7b79",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "raw_bytes": 1708,
+      "raw_sha256": "ce73977efd00240b070174c332e5875d3cd738463ab99915fdef273abf9f7d57",
+      "stored_path": "_objects/ce73977efd00240b070174c332e5875d3cd738463ab99915fdef273abf9f7d57.gz",
+      "stored_sha256": "2c86c2fcad6cdcc8eb17116f2252d13fe7a88e71a2a82ea06ec55eebc071fd92"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/",
+  "revision": "35cebc55b6bb81c5d0e784cad4e08685ef0d149f",
+  "schema_version": 1,
+  "unique_blobs": {
+    "00f975e06f4c33dd411a54c1760e0ad49f72e2a9": {
+      "occurrences": 1,
+      "raw_bytes": 500,
+      "raw_sha256": "908b22ff452ca151fef9af73c44d5dfc251d04a18d9f58a4eb6637c2478ed594"
+    },
+    "0bf5c86899e29c068f1bea93771759e7ac22aad4": {
+      "occurrences": 1,
+      "raw_bytes": 1016,
+      "raw_sha256": "64b3a6c47fe4684b3c77deaa8b22993a2a4ac05c5db0910cd8c515726e76e2d0"
+    },
+    "0c2fa4d495d3bf7868235bb6b86e55efbfc9779c": {
+      "occurrences": 1,
+      "raw_bytes": 353,
+      "raw_sha256": "cfc955b094ca1d3f26598711975db1281e879a39deda4deb3c40e1437481bf43"
+    },
+    "141e1c895b6e2aa00f3fe57854842288c238105c": {
+      "occurrences": 1,
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042"
+    },
+    "171f127b82a8cf6b0c4a25d157552bc0b4dff27c": {
+      "occurrences": 1,
+      "raw_bytes": 179,
+      "raw_sha256": "3856c3bfcb697918871f1aa13c7767b6e95fe82f7b34d6c649ea1f0754fac0f2"
+    },
+    "29036dd546a0957c6e4c9a26d8263254ef302000": {
+      "occurrences": 1,
+      "raw_bytes": 904,
+      "raw_sha256": "acd1375f592e5b290b8a1cb11a21159e35c633bacb2be61d6946afc398ba9e75"
+    },
+    "2ab1f76ff0dc12c92ec2fc72d450c0507e37559d": {
+      "occurrences": 1,
+      "raw_bytes": 103,
+      "raw_sha256": "6e56149e96ed93b449cac6b2b2d9b5805640e8c2712e82e0a871cbb09a9c0ffe"
+    },
+    "2ec592868adde161efd40f723f38804eeae03035": {
+      "occurrences": 1,
+      "raw_bytes": 289,
+      "raw_sha256": "7e4e4a390f689f86a4b05478151951bdab6e0ab6be66807c2943e40c7fa6a73b"
+    },
+    "2f5563630803a8d8adbfb4b6683b355c85d207ec": {
+      "occurrences": 1,
+      "raw_bytes": 68,
+      "raw_sha256": "68a69ba37706badf2b88f360730720dd6b675f032e202a4827050ca4d4f80e07"
+    },
+    "32b7f05befe2215405acd40ba7fa6a533ff1f299": {
+      "occurrences": 1,
+      "raw_bytes": 493,
+      "raw_sha256": "d78a4ccd30b9b3f08a3c23de0a2216a4887c95c4ff00f7073d7635c543a2453c"
+    },
+    "32c8762601e1e0cad0b3412fef2fb9ab84853869": {
+      "occurrences": 1,
+      "raw_bytes": 2096,
+      "raw_sha256": "e7774ad94c3853d591e6c0e836d63f4441fe96d549a20052e459d770a47ff9c8"
+    },
+    "3345b138d76c6fd2eb7aa9eea631610c9ad6185e": {
+      "occurrences": 1,
+      "raw_bytes": 1801,
+      "raw_sha256": "07fdf802e1116ba517a856d1ab313d11423338dc38859afee823fb60814ff688"
+    },
+    "393bf332030c6ac765a3fd88c44c80439bbc9230": {
+      "occurrences": 1,
+      "raw_bytes": 2017,
+      "raw_sha256": "01badf1994129de7bb47d1de18339687feaaa0c1fa496211483db0fd80182e59"
+    },
+    "3af455d1da79002238e09b184ccce2053262d78b": {
+      "occurrences": 1,
+      "raw_bytes": 655,
+      "raw_sha256": "6fe35da2fda8c5b2b3a3a5c036f2477c67b61567b230dd11fd3fb74d9c36e068"
+    },
+    "40c741a97c16f92ef76c857cec6fcd1cee734263": {
+      "occurrences": 1,
+      "raw_bytes": 2051,
+      "raw_sha256": "1c1bd6ef8b37c921d52a2ccfaaa17907ffc119b5d3c76217c8a3992f4f9484c6"
+    },
+    "42be8870f2e4c4d0ab551aa502be8a64d20617c4": {
+      "occurrences": 1,
+      "raw_bytes": 1434,
+      "raw_sha256": "0629c8778d112e4420709780f685b2b0e75a1bff4b2f4ab8f4d8388c6b4c5b87"
+    },
+    "46938a01ffc1d31387b7c67fb191ad9c9f56f2d6": {
+      "occurrences": 1,
+      "raw_bytes": 1261,
+      "raw_sha256": "d4771caa61414e99c25f9cdf3a23e085fd5c65036e0a9267136111787287c878"
+    },
+    "505afe2ab6fed14870a9537111b4d81e241ef3a6": {
+      "occurrences": 1,
+      "raw_bytes": 8278,
+      "raw_sha256": "b6ce4a681067120c3e6c37a05d4ed2ab17bdcdc328c1d5609834335c5f5f02d9"
+    },
+    "595fda68c7b1f2474023119c9e755a6c5bd2b1e7": {
+      "occurrences": 1,
+      "raw_bytes": 646,
+      "raw_sha256": "5c7f925499f429f178a259b07f589819b02509ed98b5f5d4abbd77f3e95329fc"
+    },
+    "5b4ca680d9c8317cda616f16b835f78edb390329": {
+      "occurrences": 1,
+      "raw_bytes": 1862,
+      "raw_sha256": "dbd484529ac6fd1e302b734e4af966b33c298272553012c8eed08df45be79b99"
+    },
+    "5b6a5264381555edddc0d8ff4114fd29dcb38e09": {
+      "occurrences": 1,
+      "raw_bytes": 17544,
+      "raw_sha256": "d91d9ed9f856c80edd1524b3364300bcd9f37523364bd81bd9ac45a9bbc31ae2"
+    },
+    "5ebe06d04b8d4453dfce29b54c7e0a2ac93c027c": {
+      "occurrences": 1,
+      "raw_bytes": 655,
+      "raw_sha256": "9c34ab58ced98b2c86402e1f198810f01ca7084e579d11f51f730d65ae64c8ca"
+    },
+    "5ebe523ec14f1c504fb5951e22aeb0fd5f8762b7": {
+      "occurrences": 1,
+      "raw_bytes": 191,
+      "raw_sha256": "81275ba7514c8383909842de7233095e4e9c88b2e3d307315cc2f83d2c5bce82"
+    },
+    "61409701feea392ff295552afc8aa11baf69804d": {
+      "occurrences": 1,
+      "raw_bytes": 440,
+      "raw_sha256": "7c7c23ac16b05f93c8c37e2e23ee9a9c69ae83a7f553dd5e6214fb0952acc4f8"
+    },
+    "624cde5f32831b460d1ed1db344c9037e30976e5": {
+      "occurrences": 1,
+      "raw_bytes": 452,
+      "raw_sha256": "33a4c6e4d43f6ba7b7d908392c7e169a7c77958a5564b2fab6048ff8813a727d"
+    },
+    "63a891ec488e5191a8fc54327aa0a7844ea8e708": {
+      "occurrences": 1,
+      "raw_bytes": 2979,
+      "raw_sha256": "caf54acf538c8b0e6d2cd841349464326a394b50e1ae9125efb3fa13b2c2e01b"
+    },
+    "720eae36ba9a8a7ff96e4afb02ad68b9773faea9": {
+      "occurrences": 1,
+      "raw_bytes": 785,
+      "raw_sha256": "bad758168c12f3658bb42fd490d6104d115b268925737f31edf258c9c9d2edca"
+    },
+    "79a759c8b07b8d382a35fbe958a4d7e8acb329ce": {
+      "occurrences": 1,
+      "raw_bytes": 618,
+      "raw_sha256": "4f64d81cd165bd618031b3a840503017b3a765d20436e1f0c78b96749bb3dfc1"
+    },
+    "7b8918fd23855832691c572b58b38fd05a822fad": {
+      "occurrences": 1,
+      "raw_bytes": 17571,
+      "raw_sha256": "e4bacbbc039806a367e2f42792f2c0339f04a2311d6755cef2a155a0223829e5"
+    },
+    "7e2ff33fa4dff4503287d4ee73248d79d17de14f": {
+      "occurrences": 1,
+      "raw_bytes": 136,
+      "raw_sha256": "85087aed267a6486122ea06640575e39dfb56fd40af3c322d25fba3ddbb043f6"
+    },
+    "81e0a426e24e711dde1cf6d4d224a5d167697462": {
+      "occurrences": 1,
+      "raw_bytes": 3423,
+      "raw_sha256": "fa1d8934b23b74ef9cd59d3af8cb1a23597b3616adc725355b1209b2acf30966"
+    },
+    "821979dc3ab0007a755bf38b88f0459d423416a3": {
+      "occurrences": 1,
+      "raw_bytes": 1442,
+      "raw_sha256": "cf0b96cf43e3f2f6db7b21f0dea2adb2a953c073e72c2121f7a2a77342cd1e4f"
+    },
+    "85cecee161c5c4256682732d053cb35df4fb1e99": {
+      "occurrences": 1,
+      "raw_bytes": 129,
+      "raw_sha256": "8dfe8f7df220d42f7ebab1af636abb43ae02a7c94b119cbf147962c079ff07f0"
+    },
+    "85e457228901c649dd3b8f906308f24b702754de": {
+      "occurrences": 1,
+      "raw_bytes": 3800,
+      "raw_sha256": "9135552250996a05d47277d4527a185c9dfdbef2470b38eaca18a6125c097538"
+    },
+    "8cf639c4cce13bc65f596bd98b245c691db97adf": {
+      "occurrences": 1,
+      "raw_bytes": 5368,
+      "raw_sha256": "b9a52d140162854182d884839334759dec6b0f7fb17097233f861c199c04cdb9"
+    },
+    "9b77f9ccab6f167d710d8e071f2f9f107b8d2ccf": {
+      "occurrences": 1,
+      "raw_bytes": 103,
+      "raw_sha256": "dd377d0268fe832adc881126974fee6f03ec5b5878ef13e5894442612970f3ee"
+    },
+    "9e4651b999daa279555e386f9a55d5b284591f05": {
+      "occurrences": 1,
+      "raw_bytes": 132,
+      "raw_sha256": "b86f94a94649e0a4812e20696130f15a51f8c53dbddc5eddb18b9eb3b700e338"
+    },
+    "a849d72bbce3f67fe7a96ad0f947225bbd3e5971": {
+      "occurrences": 1,
+      "raw_bytes": 943,
+      "raw_sha256": "335aa61c1523ddeb15613ac1ab424b3e30ad60ca6e9c2bab8b0b1b4128623e9f"
+    },
+    "ac6654c7780c7b38a7bcb28dd1424bd14dbb6712": {
+      "occurrences": 1,
+      "raw_bytes": 2051,
+      "raw_sha256": "c4f787537791713d5e11ba8bcbe6de49247776e8a25457a9f7958db4117f206f"
+    },
+    "b02ed3c03eb29c0d4dad4bdfddd59dce5f22cc7f": {
+      "occurrences": 1,
+      "raw_bytes": 42433,
+      "raw_sha256": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7"
+    },
+    "b095af56dcfcdc0358b4f1589b891d61f9b68476": {
+      "occurrences": 1,
+      "raw_bytes": 897,
+      "raw_sha256": "06c6490e151d20b8ef6204df4f83172f649b9614375052761264756d4beaffdc"
+    },
+    "b231a3930f6ab8ef2c0a67a0289fb58149ef78df": {
+      "occurrences": 1,
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431"
+    },
+    "b5c437b8f15c1665eaaa8160804a186c8cfe6a46": {
+      "occurrences": 1,
+      "raw_bytes": 308,
+      "raw_sha256": "6d4f29ca2b3f40bcea596a418907a101a8cf4cc3a48cabe20fd69880e6443648"
+    },
+    "bdc318d34a2c6848c55704dde9f72cb69fefd144": {
+      "occurrences": 1,
+      "raw_bytes": 2723,
+      "raw_sha256": "64520cdd7611945263d108b40c0e4c9bed79e50df154230957b9973400ce1c7a"
+    },
+    "c29c5c20b5e79e40f8267ec13f2332ef199f0af1": {
+      "occurrences": 1,
+      "raw_bytes": 11822,
+      "raw_sha256": "7f5fe7d0f9780f99b41437ab8166caf4afc43fc7f3e0f9ae09b382980eba6e62"
+    },
+    "c3618ec0154987a5f2402df9f08d3a81c63ce838": {
+      "occurrences": 1,
+      "raw_bytes": 904,
+      "raw_sha256": "e889e868723391fadcba164f1e9454de12cfa87b61e273d8002fef6bc29b0602"
+    },
+    "c6f600d4d3c6773413b25928604c0f8f1cecd0c4": {
+      "occurrences": 1,
+      "raw_bytes": 172,
+      "raw_sha256": "1b4176ac9a457d9755b8f413c1d3ef664ebd25b0fe47fee5ca2915147375512e"
+    },
+    "c7b8515572496d8eb4dc775b7eb019eb6e7fe8e0": {
+      "occurrences": 1,
+      "raw_bytes": 110,
+      "raw_sha256": "519e9de7f9232e0cb6fd425daba29bad0510b69ea7b6fb43f1a39b15ee980355"
+    },
+    "c917dab9a654c54a04295cef115fc0195666cca4": {
+      "occurrences": 1,
+      "raw_bytes": 280,
+      "raw_sha256": "df08fb44bac1443fa6cb72c2d7d0a813be18c2b0f86c5472c2691fbbf52de95d"
+    },
+    "df351c56ddbcd641cef2807db995a8b1b7d2b199": {
+      "occurrences": 1,
+      "raw_bytes": 102,
+      "raw_sha256": "48f9f5e4ea57451d7e9130e00594c0480c81b24675a2d9d8eddd94a62800ecfc"
+    },
+    "e0883a927b4bb057a1f9c1652f8479e7a1880ce0": {
+      "occurrences": 1,
+      "raw_bytes": 66,
+      "raw_sha256": "9631ce856a37631774d12e5d072f448d279c03a9a14ff72cdf3ac6604f5690a8"
+    },
+    "e13b9f867f8385598bf7018dc637cdd28d53ad7c": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "fba66bb03f3b7a3de28f6c82be1c86bbdfa56a2d5abe8c15f7c811ccc4b5aabd"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 2,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e6ea09e9506bce6e196eca8a2562578d8b6b8305": {
+      "occurrences": 1,
+      "raw_bytes": 847,
+      "raw_sha256": "018b5fa5e23dc4ccf94821d17deb2270078362e0639e3250fd67faf19353c333"
+    },
+    "e787085f85a14715edb82a96fbf5338a5b5af074": {
+      "occurrences": 1,
+      "raw_bytes": 259,
+      "raw_sha256": "39147870dc8c5fe5b731f92d06839cca3018acbd8111e9c9ba1d8bf6427e1507"
+    },
+    "e78d849a77150cefc564aa87f4798d76480def2e": {
+      "occurrences": 1,
+      "raw_bytes": 2410,
+      "raw_sha256": "00654907cf5e006d7ce65f73a8b4c5437a3d1f310309c46a43b8e8d09dd3a093"
+    },
+    "eb3111b0c3c5ebb298a1f48b584ca2fdfe60493c": {
+      "occurrences": 1,
+      "raw_bytes": 3203,
+      "raw_sha256": "acb4513536435bbe42a553d51f92614f98e60d36b0b24132b8e4ba0e0846c732"
+    },
+    "f017b594a0f770cf7525e6ef252b269e62cac2ca": {
+      "occurrences": 1,
+      "raw_bytes": 1141,
+      "raw_sha256": "50b056f7e7b77e98d3003d42776970e0bf4b3c4f0606510a65a085e71aa19c4d"
+    },
+    "f32242601c9c039cb9922a5823a42ce177f95060": {
+      "occurrences": 1,
+      "raw_bytes": 530,
+      "raw_sha256": "fd4311d60450297745a1d176efa8e688388227e5d2381ccd7a374a4fda4510e1"
+    },
+    "f41b8c7249c91527a31e3538b15b6a12e86a7b79": {
+      "occurrences": 1,
+      "raw_bytes": 1708,
+      "raw_sha256": "ce73977efd00240b070174c332e5875d3cd738463ab99915fdef273abf9f7d57"
+    },
+    "f52b9585177ddc21e5c608fdfad46c518294caf6": {
+      "occurrences": 1,
+      "raw_bytes": 665,
+      "raw_sha256": "4384c0740c8e0aafe1333379ee7791a9e8ff1d538c87f470218b2bb4613efaac"
+    },
+    "fc26caee26d24c0e32950a5161e50d9bd8a320c5": {
+      "occurrences": 1,
+      "raw_bytes": 1521,
+      "raw_sha256": "38e00ffa607e76b50c0583c26de5f37dfaf36e7ca1dd0990e65da517861f88cc"
+    }
+  }
+}

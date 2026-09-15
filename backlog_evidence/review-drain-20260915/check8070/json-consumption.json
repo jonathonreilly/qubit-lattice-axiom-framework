@@ -1,0 +1,643 @@
+[
+  {
+    "path": "check8070/original-8068/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+    "sha256": "6fe35da2fda8c5b2b3a3a5c036f2477c67b61567b230dd11fd3fb74d9c36e068",
+    "keys": [
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/outputs/native_pair_vacuum_chart_2026_09_09.json",
+    "sha256": "e7774ad94c3853d591e6c0e836d63f4441fe96d549a20052e459d770a47ff9c8",
+    "keys": [
+      "N",
+      "partial",
+      "C0_h_upper",
+      "comparison_7_over_15",
+      "physical_matrix_calls",
+      "physical_integral_calls",
+      "status",
+      "predicates",
+      "nonnative_rank_one_examples",
+      "summands",
+      "scope",
+      "input_hashes",
+      "actual_current_surface_status",
+      "assembled_review",
+      "elapsed_seconds"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/DELIVERY_FREEZE.json",
+    "sha256": "7f5fe7d0f9780f99b41437ab8166caf4afc43fc7f3e0f9ae09b382980eba6e62",
+    "keys": [
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "outputs/native_pair_vacuum_chart_2026_09_09.json",
+      "outputs/native_pair_vacuum_chart_2026_09_09.md",
+      "outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+      "docs/audit/data/citation_graph_manifest.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/STATE.yaml",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/PR_BACKLOG.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/TRACE_GATE.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/GOAL.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/HANDOFF.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/TIME_CHART_FREEZE.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/check.py",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/RESULT.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/GENERIC_RANK_ONE.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMAGINARY_TIME_CHART.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/CONTROL_SCOPE.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/PARTIAL.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/FREEZE.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMPORT_HASHES.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/DERIVATION.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stderr",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stdout",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATED.stderr",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATION.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATED.stdout",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_CHECK.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09_inputs.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.py",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDERR.txt",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDOUT.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/scripts/native_pair_vacuum_chart_2026_09_09.py",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES_FINAL.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/STATUS_DIFF.txt",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/STATUS_PIN_FAILURE.txt",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/ASSEMBLY_DIFF.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/REVIEW_BEFORE_STATUS.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/REVIEW.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/FREEZE.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_FREEZE.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/check.py",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/RESULT.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/READ_HASHES.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_HASH.json",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/INDEPENDENT_ARGUMENT.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/REVIEW.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_REVIEW.md",
+      ".claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/FREEZE.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/TIME_CHART_FREEZE.json",
+    "sha256": "1b4176ac9a457d9755b8f413c1d3ef664ebd25b0fe47fee5ca2915147375512e",
+    "keys": [
+      "main_freeze",
+      "supplement"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/RESULT.json",
+    "sha256": "50b056f7e7b77e98d3003d42776970e0bf4b3c4f0606510a65a085e71aa19c4d",
+    "keys": [
+      "N",
+      "partial",
+      "C0_h_upper",
+      "comparison_7_over_15",
+      "physical_matrix_calls",
+      "physical_integral_calls",
+      "status",
+      "predicates",
+      "nonnative_rank_one_examples"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/PARTIAL.json",
+    "sha256": "d78a4ccd30b9b3f08a3c23de0a2216a4887c95c4ff00f7073d7635c543a2453c",
+    "keys": [
+      "N",
+      "partial",
+      "C0_h_upper",
+      "comparison_7_over_15",
+      "physical_matrix_calls",
+      "physical_integral_calls"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/FREEZE.json",
+    "sha256": "4f64d81cd165bd618031b3a840503017b3a765d20436e1f0c78b96749bb3dfc1",
+    "keys": [
+      "check.py",
+      "RESULT.json",
+      "GENERIC_RANK_ONE.md",
+      "CONTROL_SCOPE.md",
+      "PARTIAL.json",
+      "IMPORT_HASHES.json",
+      "DERIVATION.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMPORT_HASHES.json",
+    "sha256": "cfc955b094ca1d3f26598711975db1281e879a39deda4deb3c40e1437481bf43",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-node-stable-imaginary-time-stretch/TRACE_CLASS_IMPURITY_PROJECTOR.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/UNIFORM_PAIR_GAP.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/SOURCE_FREEZE.json",
+    "sha256": "acd1375f592e5b290b8a1cb11a21159e35c633bacb2be61d6946afc398ba9e75",
+    "keys": [
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "outputs/native_pair_vacuum_chart_2026_09_09_inputs.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATION.json",
+    "sha256": "48f9f5e4ea57451d7e9130e00594c0480c81b24675a2d9d8eddd94a62800ecfc",
+    "keys": [
+      "status",
+      "files",
+      "payload_matches_except_elapsed",
+      "physical_calls"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_CHECK.json",
+    "sha256": "33a4c6e4d43f6ba7b7d908392c7e169a7c77958a5564b2fab6048ff8813a727d",
+    "keys": [
+      "status",
+      "added",
+      "deps",
+      "nodes",
+      "edges",
+      "old_nodes_unchanged",
+      "graph_builds",
+      "scope"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/SOURCE_FREEZE.json",
+    "sha256": "e889e868723391fadcba164f1e9454de12cfa87b61e273d8002fef6bc29b0602",
+    "keys": [
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "outputs/native_pair_vacuum_chart_2026_09_09_inputs.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09_inputs.json",
+    "sha256": "9c34ab58ced98b2c86402e1f198810f01ca7084e579d11f51f730d65ae64c8ca",
+    "keys": [
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.json",
+    "sha256": "c4f787537791713d5e11ba8bcbe6de49247776e8a25457a9f7958db4117f206f",
+    "keys": [
+      "N",
+      "partial",
+      "C0_h_upper",
+      "comparison_7_over_15",
+      "physical_matrix_calls",
+      "physical_integral_calls",
+      "status",
+      "predicates",
+      "nonnative_rank_one_examples",
+      "summands",
+      "scope",
+      "input_hashes",
+      "actual_current_surface_status",
+      "assembled_review",
+      "elapsed_seconds"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+    "sha256": "39147870dc8c5fe5b731f92d06839cca3018acbd8111e9c9ba1d8bf6427e1507",
+    "keys": [
+      "status",
+      "files",
+      "science_payload_unchanged",
+      "external_seconds",
+      "external_max_rss",
+      "physical_evaluations",
+      "freeze"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDOUT.json",
+    "sha256": "e7774ad94c3853d591e6c0e836d63f4441fe96d549a20052e459d770a47ff9c8",
+    "keys": [
+      "N",
+      "partial",
+      "C0_h_upper",
+      "comparison_7_over_15",
+      "physical_matrix_calls",
+      "physical_integral_calls",
+      "status",
+      "predicates",
+      "nonnative_rank_one_examples",
+      "summands",
+      "scope",
+      "input_hashes",
+      "actual_current_surface_status",
+      "assembled_review",
+      "elapsed_seconds"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+    "sha256": "6fe35da2fda8c5b2b3a3a5c036f2477c67b61567b230dd11fd3fb74d9c36e068",
+    "keys": [
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES_FINAL.json",
+    "sha256": "0629c8778d112e4420709780f685b2b0e75a1bff4b2f4ab8f4d8388c6b4c5b87",
+    "keys": [
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/outputs/native_pair_vacuum_chart_2026_09_09.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES.json",
+    "sha256": "d4771caa61414e99c25f9cdf3a23e085fd5c65036e0a9267136111787287c878",
+    "keys": [
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "/private/tmp/toe-native-pair-vacuum-chart-20260909/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/ASSEMBLY_DIFF.json",
+    "sha256": "908b22ff452ca151fef9af73c44d5dfc251d04a18d9f58a4eb6637c2478ed594",
+    "keys": [
+      "GENERIC_RANK_ONE.md",
+      "DERIVATION.md",
+      "IMAGINARY_TIME_CHART.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/FREEZE.json",
+    "sha256": "5c7f925499f429f178a259b07f589819b02509ed98b5f5d4abbd77f3e95329fc",
+    "keys": [
+      "READ_HASHES_FINAL.json",
+      "READ_HASHES.json",
+      "STATUS_DIFF.txt",
+      "STATUS_PIN_FAILURE.txt",
+      "ASSEMBLY_DIFF.json",
+      "REVIEW_BEFORE_STATUS.md",
+      "REVIEW.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_FREEZE.json",
+    "sha256": "81275ba7514c8383909842de7233095e4e9c88b2e3d307315cc2f83d2c5bce82",
+    "keys": [
+      "TIME_CHART_REVIEW.md",
+      "TIME_CHART_HASH.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/RESULT.json",
+    "sha256": "6d4f29ca2b3f40bcea596a418907a101a8cf4cc3a48cabe20fd69880e6443648",
+    "keys": [
+      "status",
+      "predicates",
+      "C0_h_upper",
+      "terms_including_n0",
+      "physical_matrix_integral_calls"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/READ_HASHES.json",
+    "sha256": "38e00ffa607e76b50c0583c26de5f37dfaf36e7ca1dd0990e65da517861f88cc",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/check.py",
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/RESULT.json",
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/GENERIC_RANK_ONE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/CONTROL_SCOPE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/PARTIAL.json",
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/IMPORT_HASHES.json",
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/DERIVATION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-node-stable-imaginary-time-stretch/TRACE_CLASS_IMPURITY_PROJECTOR.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/UNIFORM_PAIR_GAP.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_HASH.json",
+    "sha256": "3856c3bfcb697918871f1aa13c7767b6e95fe82f7b34d6c649ea1f0754fac0f2",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-pair-vacuum-transversality-stretch/IMAGINARY_TIME_CHART.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/FREEZE.json",
+    "sha256": "7c7c23ac16b05f93c8c37e2e23ee9a9c69ae83a7f553dd5e6214fb0952acc4f8",
+    "keys": [
+      "check.py",
+      "RESULT.json",
+      "READ_HASHES.json",
+      "INDEPENDENT_ARGUMENT.md",
+      "REVIEW.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8068/docs/audit/data/citation_graph_manifest.json",
+    "sha256": "d5e4c717190fff32c39d5f29cfb61ed22eeb7dfe5305b3dd2bd8803fb1514b29",
+    "keys": [
+      "edge_count",
+      "node_count",
+      "nodes",
+      "schema_version"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/outputs/native_certified_imaginary_time_2026_09_09.json",
+    "sha256": "2b5f60f3ae7cb056d842a72ffb6d60e4d45c0c215f79a4c534f2677fd9105dfe",
+    "keys": [
+      "additional_rational_predicates",
+      "algebra_predicates",
+      "degree128_upper",
+      "disk_margin",
+      "inputs",
+      "scope",
+      "source_sha256",
+      "status"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/SOURCE_FREEZE.json",
+    "sha256": "39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816",
+    "keys": [
+      "scripts/native_certified_imaginary_time_2026_09_09.py",
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/DELIVERY_FREEZE.json",
+    "sha256": "3ecf8cea048bbcf9a0d27265cdc1c426491cc93abe7cc308b248459b7032c76b",
+    "keys": [
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/STATE.yaml",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/PR_BACKLOG.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/TRACE_GATE.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/GOAL.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/HANDOFF.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/MANIFEST.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_BUILD.stderr",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_BUILD.stdout",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_CHECK.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/ROOT_SOURCE_REVIEW.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDERR.txt",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDOUT.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/PROTOCOL.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/scripts/native_certified_imaginary_time_2026_09_09.py",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_FREEZE.json",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_REVIEW.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/CLARIFICATION.diff",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_CONFIRMATION.md",
+      ".claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_READ_HASHES.json",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "docs/audit/data/citation_graph_manifest.json",
+      "scripts/native_certified_imaginary_time_2026_09_09.py",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09.json",
+      "outputs/native_certified_imaginary_time_2026_09_09.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/SOURCE_FREEZE.json",
+    "sha256": "eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d",
+    "keys": [
+      "scripts/native_certified_imaginary_time_2026_09_09.py",
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/MANIFEST.json",
+    "sha256": "e41127380a0ca4908cdcf232c4d4705aca2694a5560887f0d2209348f69a6d23",
+    "keys": [
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_CHECK.json",
+    "sha256": "2ec04147ffa92905baaf85ff6ed3007460e2c00f2b814f7763706b675530aca8",
+    "keys": [
+      "status",
+      "added",
+      "nodes",
+      "edges",
+      "old_nodes_unchanged",
+      "builds",
+      "initial_root_assertion",
+      "scope"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+    "sha256": "8ae4b2625cbdbcc8ff0eeeea95b0a0bc054907027e6d7c7c81e626b8386f0075",
+    "keys": [
+      "status",
+      "files",
+      "seconds",
+      "external_max_rss",
+      "source_freeze",
+      "physical_calls",
+      "synthetic_algebra_predicates",
+      "additional_rational_predicates"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/SOURCE_FREEZE.json",
+    "sha256": "39edf5dbadf428d00e82d13af6030e3b951d009d358c1b3a3b3458ae2a63e816",
+    "keys": [
+      "scripts/native_certified_imaginary_time_2026_09_09.py",
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDOUT.json",
+    "sha256": "2b5f60f3ae7cb056d842a72ffb6d60e4d45c0c215f79a4c534f2677fd9105dfe",
+    "keys": [
+      "additional_rational_predicates",
+      "algebra_predicates",
+      "degree128_upper",
+      "disk_margin",
+      "inputs",
+      "scope",
+      "source_sha256",
+      "status"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json",
+    "sha256": "dd458512fa4f81ca4f765238d7af425f45feb67af1f29f02450d315276a8a3cb",
+    "keys": [
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_FREEZE.json",
+    "sha256": "740f233e880167e57f00c313f2a96b691810d16ac90a0c8ba84035d3842b12dd",
+    "keys": [
+      "INITIAL_REVIEW.md",
+      "CLARIFICATION.diff",
+      "FINAL_CONFIRMATION.md",
+      "INITIAL_READ_HASHES.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_READ_HASHES.json",
+    "sha256": "eb71d3d01bce6b02542f47d798fa8a23271e956133b4d7e6ed66a4ea264d285d",
+    "keys": [
+      "scripts/native_certified_imaginary_time_2026_09_09.py",
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/docs/audit/data/citation_graph_manifest.json",
+    "sha256": "85c5ad62701d3e11d462c050fdf4fc822029b69cda8454fadff05033573a3581",
+    "keys": [
+      "edge_count",
+      "node_count",
+      "nodes",
+      "schema_version"
+    ]
+  },
+  {
+    "path": "check8070/original-8070/outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json",
+    "sha256": "dd458512fa4f81ca4f765238d7af425f45feb67af1f29f02450d315276a8a3cb",
+    "keys": [
+      "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+      "outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+      "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+    ]
+  }
+]

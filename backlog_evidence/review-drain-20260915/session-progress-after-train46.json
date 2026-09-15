@@ -1,0 +1,38 @@
+{
+  "original_total": 116,
+  "landed_and_closed": 96,
+  "remaining_original": 20,
+  "main": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "train47": {
+    "prs": [
+      8101
+    ],
+    "session": 7862,
+    "state": "full integration gate running"
+  },
+  "8103": {
+    "reviewer": "review_8011",
+    "tree": "1c5a05a8a37e3fced530a8333347407832a984e7",
+    "unchanged_original_cache": "600/0;90seconds;no new execution"
+  },
+  "8104": {
+    "tree": "8caa7c2476d03f557bbe7aa3463d9491b50ca4d8",
+    "owner": "pr8104-author",
+    "worktree": "/private/tmp/review-drain-20260915/author-slot-one",
+    "unchanged_original_cache": "640/0;90seconds;no new execution",
+    "review": "assigned after8103"
+  },
+  "8068_8070": {
+    "tree_prefix": "c66d0ce8",
+    "base": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+    "preflight_reviewer_session": 65456,
+    "capture_limits": "30s/5s,384MiB",
+    "expected_checks": [
+      64,
+      15
+    ],
+    "new_execution": false
+  },
+  "8069": "separate future unit; not premise imported into8068/8070",
+  "remote_provenance": "aa143111ce"
+}

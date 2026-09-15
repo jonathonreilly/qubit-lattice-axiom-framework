@@ -1,0 +1,137 @@
+[
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+  },
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+    "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+  },
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+  },
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+  },
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+  },
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+    "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0"
+  },
+  {
+    "category": "runtime",
+    "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+  },
+  {
+    "category": "parents",
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+  },
+  {
+    "category": "parents",
+    "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+  },
+  {
+    "category": "parents",
+    "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+  },
+  {
+    "category": "parents",
+    "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+  },
+  {
+    "category": "parents",
+    "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+  },
+  {
+    "category": "context",
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  {
+    "category": "context",
+    "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+  },
+  {
+    "category": "context",
+    "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+  },
+  {
+    "category": "context",
+    "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+  },
+  {
+    "category": "context",
+    "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+    "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+  },
+  {
+    "category": "context",
+    "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+    "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+  },
+  {
+    "category": "context",
+    "path": "docs/audit/data/axiom_premise_nodes.json",
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  {
+    "category": "context",
+    "path": "docs/audit/data/doc_authority_registry.json",
+    "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+  },
+  {
+    "category": "tooling",
+    "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+  },
+  {
+    "category": "tooling",
+    "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+    "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+  },
+  {
+    "category": "tooling",
+    "path": "docs/audit/scripts/build_citation_graph.py",
+    "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+  },
+  {
+    "category": "tooling",
+    "path": "docs/audit/scripts/ledger_io.py",
+    "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+  },
+  {
+    "category": "tooling",
+    "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+    "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+  },
+  {
+    "category": "tooling",
+    "path": "scripts/audit_packet_script_deps.py",
+    "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+  },
+  {
+    "category": "tooling",
+    "path": "scripts/runner_cache.py",
+    "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  }
+]

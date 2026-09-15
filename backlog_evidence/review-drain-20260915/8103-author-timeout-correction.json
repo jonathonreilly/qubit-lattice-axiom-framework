@@ -1,0 +1,10 @@
+{
+  "reason": "Final mechanical receipt requires source-declared timeout; original archived execution cap90sec preserved",
+  "path": "scripts/exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_2026_09_13.py",
+  "old_sha256": "7b284b83243201d2d6630720c62f94d75ed37416903af79654875f7cc995b080",
+  "new_sha256": "e145136b90e8e5bcc897fccda1500a50bcc87c69d9376c4dcf07f5bc2b51a9e8",
+  "only_change": "AUDIT_TIMEOUT_SEC = 90 declaration",
+  "tree": "c8e3672a573406ced489d88c2900e9c4cf244a7f",
+  "execution": "No new execution; old cache preserved stale, no restamp",
+  "original_report_record_failure": "Preserved unchanged"
+}

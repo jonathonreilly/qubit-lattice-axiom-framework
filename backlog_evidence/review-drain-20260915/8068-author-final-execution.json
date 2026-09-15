@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/native_pair_vacuum_chart_2026_09_09.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"N\": 32,\n  \"partial\": \"8223152199588493141583117622665893590581959114158086540393219859417548249879118733903/7391489254844752334484309200990477845019994038770026442295562088329408803543067918336\",\n  \"C0_h_upper\": \"1039679023115954089616608500511118001063925856327669538094192737345369782641059746250899/2262719648139349808394009154153210030306745675118474344647728944289840269984621666500608\",\n  \"comparison_7_over_15\": true,\n  \"physical_matrix_calls\": 0,\n  \"physical_integral_calls\": 0,\n  \"status\": \"PASS\",\n  \"predicates\": 64,\n  \"nonnative_rank_one_examples\": [\n    {\n      \"n\": 1,\n      \"polar_cos_negative\": true,\n      \"cos_squared\": \"121/697\",\n      \"scaled_norm_F_squared\": \"661/324\"\n    },\n    {\n      \"n\": 2,\n      \"polar_cos_negative\": true,\n      \"cos_squared\": \"4225/6529\",\n      \"scaled_norm_F_squared\": \"6385/5184\"\n    },\n    {\n      \"n\": 4,\n      \"polar_cos_negative\": true,\n      \"cos_squared\": \"78961/88177\",\n      \"scaled_norm_F_squared\": \"87601/82944\"\n    },\n    {\n      \"n\": 16,\n      \"polar_cos_negative\": true,\n      \"cos_squared\": \"21169201/21316657\",\n      \"scaled_norm_F_squared\": \"21307441/21233664\"\n    }\n  ],\n  \"summands\": 33,\n  \"scope\": \"finite exact supporting controls; no physical evaluation\",\n  \"input_hashes\": {\n    \"docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md\": \"4849d98ce1cf17fad72f91082ebeed348505f2a98d0a5d78869c2364c7f2b6c3\",\n    \"scripts/native_pair_vacuum_chart_controls_2026_09_09.py\": \"81c08ba1893b77c334faff93c1ff5845178b4e7581eabbb35c4959b3953235b8\",\n    \"docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md\": \"4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d\",\n    \"docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md\": \"a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019\",\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\"\n  },\n  \"actual_current_surface_status\": \"conditional-support\",\n  \"assembled_review\": \"historical independent reviews preserved separately; this is execution evidence only\",\n  \"elapsed_seconds\": 0.0037325830198824406\n}\nTOTAL: PASS=64 FAIL=0\nper_element: exact recurrence and constant comparisons are executed; operator inequalities remain analytical.\nper_site: synthetic rank-one counterexamples execute; no native impurity overlap is evaluated.\nper_mode: the finite return cutoff uses33 summands; the infinite tail is bounded analytically.\nper_block: stationary and normalized-time chart bounds are analytical, not simulated Gaussian evolutions.\nlattice_wide: trace-class transversality and reference-overlap claims are analytical; mixed-impurity overlaps remain uncomputed.\n",
+  "stderr": "",
+  "elapsed_sec": 0.04596090316772461,
+  "timeout_sec": 30,
+  "live_log": "/private/tmp/review-drain-20260915/author-pool/author-backlog/logs/runner-cache/.in-progress/native_pair_vacuum_chart_2026_09_09.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 37839,
+    "samples": 2,
+    "peak_tree_rss_bytes": 28540928,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; original internal behavior retained; external caps enforce this capture."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/8070-author-capture.py",
+  "capture_script_sha256": "5f4401a6c86e2612274cae85d1616e0ecdab126cd73facf982ba58f105ed2fd4"
+}

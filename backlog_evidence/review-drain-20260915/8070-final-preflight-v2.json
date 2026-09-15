@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8068-PR8070",
+  "tree": "383f5ca8eed83f9f2052dff9d9fde8b5f2db11d5",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+      "claim_id": "native_certified_imaginary_time_note_2026-09-09",
+      "primary_runner": "scripts/native_certified_imaginary_time_2026_09_09.py",
+      "helpers": [
+        "scripts/native_certified_imaginary_time_2026_09_09_algebra.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_certified_imaginary_time_2026_09_09_algebra.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_certified_imaginary_time_2026_09_09_algebra.py"
+      ],
+      "citations": [
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8070-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+      "claim_id": "native_pair_vacuum_chart_note_2026-09-09",
+      "primary_runner": "scripts/native_pair_vacuum_chart_2026_09_09.py",
+      "helpers": [
+        "scripts/native_pair_vacuum_chart_controls_2026_09_09.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_pair_vacuum_chart_controls_2026_09_09.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_pair_vacuum_chart_controls_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8068-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8755,
+      "misses": 4409
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4407
+    },
+    "declared_inputs": {
+      "hits": 8782,
+      "misses": 4540
+    }
+  },
+  "record_sha256": "f5962a59aea3bd032a682c2bfbc36f9bb62321fc1fb9dd170ad7d670a7f57a90",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

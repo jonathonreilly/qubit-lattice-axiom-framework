@@ -1,0 +1,422 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/ARTIFACT_PLAN.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/GOAL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/HANDOFF.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/LITERATURE_BRIDGES.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/NO_GO_LEDGER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/PR_BACKLOG.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/REVIEW_HISTORY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/ROUTE_PORTFOLIO.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/CONTROL_SCOPE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/DERIVATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/GENERIC_RANK_ONE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMAGINARY_TIME_CHART.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/IMPORT_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/PARTIAL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/TIME_CHART_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/SOURCE_PROOFS/check.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/STATE.yaml",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/TRACE_GATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/ASSEMBLY_DIFF.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/READ_HASHES_FINAL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/REVIEW_BEFORE_STATUS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/STATUS_DIFF.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/canonical/STATUS_PIN_FAILURE.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/INDEPENDENT_ARGUMENT.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_HASH.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/TIME_CHART_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/reviews/constituent/check.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_CHECK.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATED.stderr",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stderr"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/ISOLATION.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/history-before-status-neutral/native_pair_vacuum_chart_2026_09_09_inputs.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDERR.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/STDOUT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/outputs/native_pair_vacuum_chart_2026_09_09_inputs.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/scripts/native_pair_vacuum_chart_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8068/scripts/native_pair_vacuum_chart_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/scripts/native_pair_vacuum_chart_controls_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8068/scripts/native_pair_vacuum_chart_controls_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/ARTIFACT_PLAN.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/GOAL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/HANDOFF.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/LITERATURE_BRIDGES.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/NO_GO_LEDGER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/PR_BACKLOG.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/REVIEW_HISTORY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/ROUTE_PORTFOLIO.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/STATE.yaml",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/CLAIM_STATUS_CERTIFICATE.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/TRACE_GATE.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/CLAIM_STATUS_CERTIFICATE.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/MANIFEST.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/CLARIFICATION.diff",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_CONFIRMATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/FINAL_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_READ_HASHES.json",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/history-before-scalar-and-support-clarification/SOURCE_FREEZE.json"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/reviews/canonical/INITIAL_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_BUILD.stderr",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/GRAPH_BUILD.stderr"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_BUILD.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/GRAPH_CHECK.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/ROOT_SOURCE_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/PROTOCOL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/ROOT_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/SOURCE_FREEZE.json",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/SOURCE_FREEZE.json"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDERR.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/STDOUT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8068/.claude/science/physics-loops/native-pair-vacuum-chart-20260909/verification/root-isolated/docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/MANIFEST.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/scripts/native_certified_imaginary_time_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8070/scripts/native_certified_imaginary_time_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8070/original-8070/.claude/science/physics-loops/native-certified-imaginary-time-20260909/verification/root-isolated/scripts/native_certified_imaginary_time_2026_09_09_algebra.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8070/original-8070/scripts/native_certified_imaginary_time_2026_09_09_algebra.py"
+  }
+]

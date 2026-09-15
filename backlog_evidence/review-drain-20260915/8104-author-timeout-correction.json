@@ -1,0 +1,10 @@
+{
+  "reason": "Apply missing source timeout correction before independent review; original historical90sec cap unchanged",
+  "path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+  "old_sha256": "2ab609e5f2d06c60e051763ba1eeb9c2d680578a002ec0b066456d78be71800a",
+  "new_sha256": "52822ffa6a58481ead58cf1d22b4e0d65b9f34ef8ec1d013778f9e23447233f6",
+  "only_change": "AUDIT_TIMEOUT_SEC = 90 declaration",
+  "tree": "8c9cffa4cdf18e5ae2917f8ea1f602aa741f7608",
+  "execution": "none; originalcache preserved stale; new capture required after review",
+  "prior_local_edit_precondition": "Expected spaced counter declaration; actual source has checks=0; first edit aborted before any write"
+}

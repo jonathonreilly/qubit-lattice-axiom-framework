@@ -1,3 +1,20 @@
+# Current continuation — 2026-09-15
+
+Continue personally without subagents until2026-09-15 13:30:44UTC.
+The extension is already applied; do not add another12hours automatically.
+
+Latest public milestone: PR8140, exact head8a71d7fa8a87a451e5c49df31d18986574d73610,
+static-charge bound and free-state matching, stacked on PR8133. Exact remote
+verified; its scratch checkout was removed. No independent review or merge.
+
+Current private Block31: total M2 projective kernel with smooth local rate;
+finite guard seed derives its event order and arbitrary finite one-qubit
+projective histories. All finite checks pass. Complete meaningful mutations,
+final cold read and a public positive-only proposal. The private C1 boundary
+has a scope record and is not a public negative submission. No axioms or
+editable prompts changed. Main last fetched06a7caddf3eac3154be18d9381d8f8bb26154e81;
+foundation/source reading was pinned to018902e8d7570c4ed2800cc4884f0157096da944.
+
 # Block28 native kernel checkpoint — 2026-09-15 10:25 UTC
 
 A direct proposed theorem now covers every generated M2 subalgebra for

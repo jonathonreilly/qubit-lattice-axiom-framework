@@ -3,8 +3,8 @@ mode: campaign
 status: active
 branch: physics-loop/toe-phase-selection-20260914
 worktree: /Users/jonreilly/Documents/Codex/toe-phase-selection-20260914
-main_revision: 5deabeb698a27c2c3f68c5df685af2521ef15307
-planning_revision: 9cff766069e8f66b4cc5c36888b1e71600b8888e
+main_revision: 018902e8d7570c4ed2800cc4884f0157096da944
+planning_revision: edb16e7f67657ae92c92a8272fc3c5c38eef8a45
 start_utc: '2026-09-14T13:30:44Z'
 initial_deadline_utc: '2026-09-15T01:30:44Z'
 deadline_utc: '2026-09-15T13:30:44Z'
@@ -13,16 +13,17 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 29
-active_route: wilson_source_curvature_and_static_charge_rate
+block: 31
+active_route: autonomous_full_domain_projective_corridor
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Package the clock-Ginibre/free-state/static-transfer milestone with its exact provisional source. Then
-  resume native-law selection research personally through13:30:44UTC.
+next_action: Package the personally derived autonomous full-domain projective corridor, with exact all-frontier
+  checks and supplied seed/trace law/rate/calibration explicit. Then return to the strongest open physical supplier.
+  Continue personally through13:30:44UTC.
 strongest_unresolved_obligation: Fixed-law finite-clock full-flux Gaussian/Maxwell scaling with both defect sectors;
   native law, preparation, clock and interacting matter selection remain open.
 working_result: Author proof candidate matches cubic and temporal free-boundary states by clock Ginibre monotonicity,
@@ -43,3 +44,4 @@ public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8136
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140

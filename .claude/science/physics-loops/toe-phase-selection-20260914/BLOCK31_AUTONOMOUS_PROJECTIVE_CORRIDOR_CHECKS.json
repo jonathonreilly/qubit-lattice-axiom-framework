@@ -1,0 +1,419 @@
+{
+  "status": "personal_exact_checks_not_independent_review",
+  "source_sha256": "70ee6b24d6547df5aefbe12d9f7734a46f2e07d27a889c7fc4c6e3acb833e946",
+  "five_measurements": {
+    "length": 5,
+    "seed_records": 98,
+    "guard_records": 87,
+    "new_records_per_branch": 15,
+    "positive_histories": 32,
+    "all_frontier_states_checked": 187,
+    "marked_branch_events": 186,
+    "histories": [
+      {
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "local_probability": "8/125",
+        "ordered_product_probability": "8/125"
+      },
+      {
+        "labels": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "local_probability": "9/250",
+        "ordered_product_probability": "9/250"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "local_probability": "2/125",
+        "ordered_product_probability": "2/125"
+      },
+      {
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "local_probability": "9/1000",
+        "ordered_product_probability": "9/1000"
+      }
+    ]
+  },
+  "zero_branch_control": {
+    "length": 3,
+    "seed_records": 62,
+    "guard_records": 55,
+    "new_records_per_branch": 9,
+    "positive_histories": 1,
+    "all_frontier_states_checked": 10,
+    "marked_branch_events": 9,
+    "histories": [
+      {
+        "labels": [
+          0,
+          0,
+          0
+        ],
+        "local_probability": "1",
+        "ordered_product_probability": "1"
+      }
+    ]
+  },
+  "nonunitary_similarities": 3,
+  "proper_rotations": 24,
+  "guard_omission_active_sites": [
+    [
+      [
+        -1,
+        -1,
+        0
+      ],
+      "1"
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      "1"
+    ]
+  ],
+  "program_tag_omission_active_sites": [
+    [
+      [
+        3,
+        0,
+        0
+      ],
+      "1"
+    ]
+  ],
+  "smooth_alternative_quarter": "1/(1 + exp(8/3))",
+  "holding_time_statement": "Erlang shape3L follows analytically from exactly one rate-one active site; no simulation used."
+}

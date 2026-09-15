@@ -1,0 +1,46 @@
+{
+  "utc": "2026-09-15T12:10:04.877152+00:00",
+  "read_personally": true,
+  "independent_review": false,
+  "read_scope": {
+    "minimal_axioms": "complete",
+    "projective_history_law": "complete 699-line source across two reading stretches",
+    "barycenter_menu": "science through line245; status section not used",
+    "active_cut": "through line250, geometry/generator/covariance/full-domain codec; remaining source not used",
+    "random_axis_repeat": "complete 399-line source",
+    "native_parity_entangler": "complete276-line source"
+  },
+  "sources": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "ref": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+      "ref": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "sha256": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+      "ref": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "sha256": "d94529e3c5bbba59b9ba7ab8a10b880f8925b585917fcbb518db11798f78bae8"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_BLOCK36_SPECIFIC_NN_ACTIVE_CUT_RECORD_FRONT_BOUNDED_THEOREM_NOTE_2026-09-01.md",
+      "ref": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "sha256": "22859693cb1a6e192a3cb50d3d0965c7ee8672520be6f59ec491857df153427f"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RANDOM_AXIS_M2_MATTER_REPEAT_SELECTOR_LOCAL_COMPILER_BOUNDED_THEOREM_NOTE_2026-09-01.md",
+      "ref": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "sha256": "c2ff01d9799b707ffd2209b10e5475087ce7996393583d36b313229d8fcf1f6c"
+    },
+    {
+      "path": "docs/NATIVE_PARITY_ENTANGLER_AND_CHSH_NOTE_2026-09-08.md",
+      "ref": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "sha256": "717244104b90bdbb15a6383f6cf966afc2ad5497045085594b7908237f0384b0"
+    }
+  ],
+  "prior_art_boundary": "Autonomous single-front local generators and projective repeat instruments already occur in the corrected sources. Current proposal supplies an explicit full-M2 kernel and smooth activation with simultaneous GL2 conjugation covariance; it does not select the law or physical attachment. No priority claim."
+}

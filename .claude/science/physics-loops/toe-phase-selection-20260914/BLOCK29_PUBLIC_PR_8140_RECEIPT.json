@@ -1,0 +1,59 @@
+{
+  "baseRefName": "physics-loop/coupled-defect-convexity-20260915",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/clock-static-charge-20260915/CONFORMANCE.md",
+      "additions": 50,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/clock-static-charge-20260915/HANDOFF.md",
+      "additions": 21,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/clock-static-charge-20260915/MUTATION_CHECKS.json",
+      "additions": 139,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/clock-static-charge-20260915/TRACE_GATE.md",
+      "additions": 10,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/clock-static-charge-20260915/VALIDATION.json",
+      "additions": 97,
+      "deletions": 0
+    },
+    {
+      "path": "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "additions": 631,
+      "deletions": 0
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "additions": 6,
+      "deletions": 2
+    },
+    {
+      "path": "logs/runner-cache/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.txt",
+      "additions": 18,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+      "additions": 519,
+      "deletions": 0
+    }
+  ],
+  "headRefName": "physics-loop/clock-static-charge-20260915",
+  "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+  "number": 8140,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140",
+  "utc": "2026-09-15T12:00:54.514045+00:00",
+  "exact_remote_verified": true,
+  "science_status": "author proposal, independent review pending",
+  "no_subagents": true
+}

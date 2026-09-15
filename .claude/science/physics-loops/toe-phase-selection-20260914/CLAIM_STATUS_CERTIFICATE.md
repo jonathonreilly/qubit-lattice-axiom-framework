@@ -1,3 +1,25 @@
+# Block31 author checkpoint
+
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+independent_review: pending
+formal_audit: deferred
+bare_retained_allowed: false
+
+A full-M2 probability kernel and smooth bounded local activation rate are
+personally derived. A finite zero-guard seed makes exactly one site active,
+so its projective transcript and event order follow from the selected local
+generator. The five-measurement fixture checks187 full frontiers and32
+positive histories, with98 initial Records including87 guards. Basis and
+lattice covariance are separately challenged. Born weights, seed, rates,
+physical calibration and a composite entangled coupling remain supplied or
+open. This is an author construction, not law selection or a TOE result.
+
+The private linear-carrier C1 endpoint observation is preserved with its
+scope review. It is not submitted as a public negative claim or N-gate PASS.
+
 # Block28 author certificate
 
 actual_current_surface_status: bounded-support

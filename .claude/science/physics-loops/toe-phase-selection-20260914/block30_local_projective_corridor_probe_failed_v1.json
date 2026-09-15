@@ -1,0 +1,40 @@
+{
+  "utc": "2026-09-15T11:53:28.016479+00:00",
+  "source_sha256": "cc7da822bf28331d6969b6709b957c3736eb4cb5b106be96a82365a393565c61",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914/.claude/science/physics-loops/toe-phase-selection-20260914/block30_local_projective_corridor_probe_failed_v1.py\", line 213, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914/.claude/science/physics-loops/toe-phase-selection-20260914/block30_local_projective_corridor_probe_failed_v1.py\", line 207, in main\n    'exact':exact_checks(),'off_code':float_checks()}\n            ~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914/.claude/science/physics-loops/toe-phase-selection-20260914/block30_local_projective_corridor_probe_failed_v1.py\", line 127, in exact_checks\n    base=corridor(programs,rho)\n  File \"/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914/.claude/science/physics-loops/toe-phase-selection-20260914/block30_local_projective_corridor_probe_failed_v1.py\", line 90, in corridor\n    assert sum(v is not None for v in actual_neighbors)==2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "actual_directions": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "diagnosis": "Deferred generator expressions close over the final a,s loop values; all six directions become +z. This is a Python late-binding implementation error, not evidence against the corridor geometry. Fix by materializing each direction inside the comprehension and assert the six-neighbor set."
+}

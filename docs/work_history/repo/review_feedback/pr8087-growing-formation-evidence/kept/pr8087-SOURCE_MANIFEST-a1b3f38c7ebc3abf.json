@@ -1,0 +1,16 @@
+{
+  "base_main": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "campaign_revision": "a08a91706568450bad4cf3e2ed9571b3dd34eae0",
+  "parent": {
+    "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+    "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "used": "Definitions (1)-(4), Theorems1-2 finite code and fair nonbridge dictionary; Theorem3 support/number context",
+    "reading": "definitions and Theorems1-3 fully reread for Block11; later energy apparatus sections read earlier in campaign"
+  },
+  "discovery_sources": {
+    ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK11_DERIVATION.md": "c258d141e0bbaf047b9b7e5be3c2f9b092c6b833155a509824b402f1241bb6a9",
+    ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK11_CAUSAL_PROGRAM_DERIVATION.md": "2b90ffdf276610111557117e22ca34360d87ddde5cc986e87d1275fa890d4a06",
+    ".claude/science/physics-loops/toe-local-formation-20260912/BLOCK11_AUTHOR_RECHECK.md": "a245827a664845f22ad412956b4f372b30c2946e57629fadadbd5c46ab3bbd81"
+  },
+  "scope": "parent theorem is mathematical input; historical campaign sources are recovery provenance, not runtime numerical oracles"
+}

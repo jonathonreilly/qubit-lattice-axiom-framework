@@ -1,0 +1,11 @@
+{
+  "head": "df8112d1642bec7aaaacd380036087b03cdb0173",
+  "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+  "actual_type": [
+    null,
+    null
+  ],
+  "actual_runner": null,
+  "scope": "read-only next-unit preflight metadata, no scientific review",
+  "runner_resolution_limit": "The future8062 runner is absent from this current checkout; None is not a confirmed runner metadata defect. Type extraction is body-only and confirms missing displayed Type."
+}

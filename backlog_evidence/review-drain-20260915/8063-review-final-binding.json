@@ -1,0 +1,45 @@
+{
+  "tree": "d06515adc027eb43a3018cbbc6eee1473a204016",
+  "review": {
+    "path": "/private/tmp/review-drain-20260915/review-8063.json",
+    "sha256": "c35b705299043319d15df0c97552ea5af28fee418269b09f8dc0782fb5ff8275"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/8063-unit-final-v2.json",
+    "sha256": "f0ca5eb6be82c8c89a48900feafada246876f4b0ed448fdd9a9b4cf53e65149e"
+  },
+  "executions": [
+    {
+      "pr": 8062,
+      "total": 11896,
+      "fail": 0,
+      "seconds": 0.13124585151672363,
+      "sampled_whole_tree_peak_bytes": 51855360,
+      "samples": 4,
+      "unchanged_math_fields": [
+        "status",
+        "checks",
+        "geometry",
+        "coefficient",
+        "matrix_scope",
+        "physical_runs",
+        "actual_current_surface_status"
+      ]
+    },
+    {
+      "pr": 8063,
+      "total": 267,
+      "fail": 0,
+      "seconds": 0.07732677459716797,
+      "sampled_whole_tree_peak_bytes": 52117504,
+      "samples": 3,
+      "unchanged_math_fields": [
+        "status",
+        "checks",
+        "physical_runs",
+        "scope",
+        "actual_current_surface_status"
+      ]
+    }
+  ]
+}

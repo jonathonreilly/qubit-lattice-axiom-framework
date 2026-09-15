@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/native_star_thermodynamic_limit_2026_09_09.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": 267,\n  \"physical_runs\": 0,\n  \"scope\": \"finite-hop locality, exact CAR and weighted coefficient tails\",\n  \"input_sha256\": {\n    \"docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md\": \"1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226\",\n    \"docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md\": \"0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\",\n    \"docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md\": \"787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada\",\n    \"scripts/native_star_thermodynamic_controls_2026_09_09.py\": \"7fb42c46bb14395cbce63ca0bfea97865c7a8605afcaf029981b18ab4ec5163d\"\n  },\n  \"source_sha256\": \"09648aa4f1627a86ad99f921dfb8ee3b235076716c41722c70de7a7e30c5bd2f\",\n  \"elapsed_seconds\": 0.00573154108133167,\n  \"peak_rss_bytes\": 23150592,\n  \"actual_current_surface_status\": \"conditional-support\"\n}\nTOTAL: PASS=267 FAIL=0\nper_element: exact finite CAR quadratic commutator predicates are executed on the declared three-mode matrices.\nper_site: finite hopping-path boundary independence is executed for L8, L12 and L16 at the declared orders.\nper_mode: finite exact weighted-tail arithmetic is executed; smooth coefficient-symbol convergence is analytical.\nper_block: local Gaussian state and cocycle limits are analytical; no infinite-volume resolvent is numerically evaluated.\nlattice_wide: the GNS core and wrong-pair gap argument is analytical; no interacting phase or nodal value is computed.\n",
+  "stderr": "",
+  "elapsed_sec": 0.07732677459716797,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-pool/author-backlog/logs/runner-cache/.in-progress/native_star_thermodynamic_limit_2026_09_09.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 4047,
+    "samples": 3,
+    "peak_tree_rss_bytes": 52117504,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; inner self guards also remain."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/8063-author-capture.py",
+  "capture_script_sha256": "894f31cdc4b427d6d8d15df36faeb5b4b9d4a706665deb049caf93c317afafb1"
+}

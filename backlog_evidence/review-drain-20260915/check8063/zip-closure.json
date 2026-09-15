@@ -1,0 +1,100 @@
+[
+  {
+    "pr": 8062,
+    "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+    "size": 47900,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8062,
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+    "size": 14579,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8062,
+    "path": "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+    "sha256": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
+    "size": 8149,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8062,
+    "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+    "size": 16667,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8062,
+    "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+    "sha256": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
+    "size": 11529,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8062,
+    "path": "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py",
+    "sha256": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26",
+    "size": 3044,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8062,
+    "path": "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py",
+    "sha256": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522",
+    "size": 1534,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
+    "size": 9335,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+    "sha256": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
+    "size": 11529,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+    "size": 14579,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+    "size": 16667,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+    "size": 47900,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "scripts/native_star_thermodynamic_controls_2026_09_09.py",
+    "sha256": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf",
+    "size": 1884,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  },
+  {
+    "pr": 8063,
+    "path": "scripts/native_star_thermodynamic_limit_2026_09_09.py",
+    "sha256": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c",
+    "size": 1480,
+    "disposition": "Exact frozen-source snapshot; canonical own sources read fully and parental proof scope reused only after current hash checks."
+  }
+]

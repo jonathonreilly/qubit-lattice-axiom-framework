@@ -1,0 +1,8 @@
+{
+  "base": "a01566115766b9de997034e961b8f67248abe39d",
+  "tree": "b4177ed96eff6249d53ccb70148887501f5c4dc8",
+  "all_draft_hashes_unchanged": true,
+  "paths": 88,
+  "checkpoint": "648cbb2214222d8644dd6ede66f1c3e2ff8b966a",
+  "note": "First release rejected short expected-head; exact full identity release succeeded; preserved failed empty receipt. No residue removal."
+}

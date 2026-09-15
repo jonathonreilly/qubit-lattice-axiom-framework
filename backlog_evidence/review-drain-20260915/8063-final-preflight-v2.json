@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8062-PR8063",
+  "tree": "d06515adc027eb43a3018cbbc6eee1473a204016",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "claim_id": "native_star_thermodynamic_limit_note_2026-09-09",
+      "primary_runner": "scripts/native_star_thermodynamic_limit_2026_09_09.py",
+      "helpers": [
+        "scripts/native_star_thermodynamic_controls_2026_09_09.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_star_thermodynamic_controls_2026_09_09.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_star_thermodynamic_controls_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8063-evidence/kept/pr8063-HANDOFF-9ef67db77ea9ef6f.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "claim_id": "native_uniform_quasilocal_star_vertex_note_2026-09-09",
+      "primary_runner": "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py",
+      "helpers": [
+        "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8062-evidence/kept/pr8062-HANDOFF-9ef67db77ea9ef6f.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8753,
+      "misses": 4392
+    },
+    "packet_imports": {
+      "hits": 8740,
+      "misses": 4390
+    },
+    "declared_inputs": {
+      "hits": 8780,
+      "misses": 4523
+    }
+  },
+  "record_sha256": "f0ca5eb6be82c8c89a48900feafada246876f4b0ed448fdd9a9b4cf53e65149e",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

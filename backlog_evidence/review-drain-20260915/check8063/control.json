@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "gaussian": "Non-number-preserving rational even Gaussian rotation, non-Hermitian odd monomials, exact matrices",
+  "gaussian_cases": 16,
+  "disjoint_pair_spectrum": {
+    "6": 1,
+    "-3": 5,
+    "1": 9
+  },
+  "diagnostic_quadratic_characteristic": "lambda^4+(omega^2+2m^2)lambda^2+m^4",
+  "weighted_tail_identity": true,
+  "scope": "Sensitive finite algebra supporting analytic locality/GNS proof, not infinite-volume or interacting simulation",
+  "seconds": 0.17523733398411423
+}

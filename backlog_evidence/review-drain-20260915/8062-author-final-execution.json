@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": 11896,\n  \"geometry\": {\n    \"4\": {\n      \"faces\": 192,\n      \"pairs\": 960\n    },\n    \"6\": {\n      \"faces\": 648,\n      \"pairs\": 3240\n    }\n  },\n  \"coefficient\": \"19/96\",\n  \"matrix_scope\": \"exact small Gaussian dyadics; no eigensolver\",\n  \"physical_runs\": 0,\n  \"input_sha256\": {\n    \"docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md\": \"0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\",\n    \"docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md\": \"787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada\",\n    \"docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md\": \"0db93bb1365a24debba2bf36d184c8b1895c482f998962187b89526216059a61\",\n    \"scripts/native_uniform_quasilocal_star_controls_2026_09_09.py\": \"93edcf203c5119db96a9f94c338eef525d2c9ac0d5757793c1cc9fbec982eff1\"\n  },\n  \"source_sha256\": \"44d15e9abc5c02a211b7b79d3f038fc03eff6323534417b6c059fd5203870a7c\",\n  \"elapsed_seconds\": 0.04179733293130994,\n  \"peak_rss_bytes\": 25804800,\n  \"actual_current_surface_status\": \"conditional-support\"\n}\nTOTAL: PASS=11896 FAIL=0\nper_element: exact finite Gaussian-dyadic matrix and CAR predicates are executed; general Wick extraction is analytical.\nper_site: periodic L4 and L6 face-pair incidence is executed; arbitrary-volume geometric claims use the proof.\nper_mode: shifted-shell arithmetic is executed on declared finite sizes; no node value or band amplitude is computed.\nper_block: the smooth-filter cocycle and spatial truncation bounds are analytical, not finite numerical locality measurements.\nlattice_wide: uniform quasi-locality and the ordered perturbative limit are analytical; no interacting ground state is solved.\n",
+  "stderr": "",
+  "elapsed_sec": 0.13124585151672363,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-pool/author-backlog/logs/runner-cache/.in-progress/native_uniform_quasilocal_star_vertex_2026_09_09.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 4047,
+    "samples": 4,
+    "peak_tree_rss_bytes": 51855360,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; inner self guards also remain."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/8063-author-capture.py",
+  "capture_script_sha256": "894f31cdc4b427d6d8d15df36faeb5b4b9d4a706665deb049caf93c317afafb1"
+}

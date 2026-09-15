@@ -1,0 +1,540 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "cb7c1f5d988c082fc2e7fa6755f964fd6b56010a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 335,
+      "raw_sha256": "db9a8f5229b32a25f962fad0077b1a0aa3e66519a81f1376026cee306375714b",
+      "stored_path": "_objects/db9a8f5229b32a25f962fad0077b1a0aa3e66519a81f1376026cee306375714b.gz",
+      "stored_sha256": "ec5c9d07f2cef269eb357674fe9485a3c31928716cbd1ea39c0e8fa5085c7e14"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d69686e7bad24009a693923a03991b0d4753ca90",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 160,
+      "raw_sha256": "3efa81fbe7d54d0abcdf1e9bc04dcbdd195fdcd20ce91f2a6ce85998343af7de",
+      "stored_path": "_objects/3efa81fbe7d54d0abcdf1e9bc04dcbdd195fdcd20ce91f2a6ce85998343af7de.gz",
+      "stored_sha256": "090763628bfc42e552e095d7f064c1e4fbf8aa2d1a857298c0b16fb47508c9df"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5656a6f6cb9de1b188104849daf802fe1ae12c08",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 637,
+      "raw_sha256": "a285d6a4ef1b6874675bac26f733b6c2321785c4d9c2ff03f8d60687eead6afe",
+      "stored_path": "_objects/a285d6a4ef1b6874675bac26f733b6c2321785c4d9c2ff03f8d60687eead6afe.gz",
+      "stored_sha256": "aa64e81c4c7e10bd8ed5b7f6da59144bd38ed7614391c7370dba9c8cef2ca8c4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bd24b543363a62daaa2a207273617cdbd2201e27",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_DELTA.md",
+      "raw_bytes": 1174,
+      "raw_sha256": "dca3cf29e435b00664726aa7909e845498a367357c97f386223ce9e9553f1d52",
+      "stored_path": "_objects/dca3cf29e435b00664726aa7909e845498a367357c97f386223ce9e9553f1d52.gz",
+      "stored_sha256": "1d99c0b47875c483ca11226300147dae7ff5bf17f0459c57843c039e30c4d921"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "389380a207354537c69e524a6438244eb9ef646c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_READ_HASHES.json",
+      "raw_bytes": 1353,
+      "raw_sha256": "484e8749914b7180636215cabf790e9deeee62e80d18ffbe9b7fbb2f4811d313",
+      "stored_path": "_objects/484e8749914b7180636215cabf790e9deeee62e80d18ffbe9b7fbb2f4811d313.gz",
+      "stored_sha256": "7b881de254a6e86aaaff579ea08f8ad6dbd81e477b29d115703d586e88428fb6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6135c7595ba00f89c726c9c53cbb5c5a0ca94780",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "0d65cf6773b9848de43f3c5c20268ef34b13dc9c4bb7d4b34788f66ca15aa9fa",
+      "stored_path": "_objects/0d65cf6773b9848de43f3c5c20268ef34b13dc9c4bb7d4b34788f66ca15aa9fa.gz",
+      "stored_sha256": "bead3bb376a984b0fce42e5fe4dafac6ff968738f5b6697a8967c36837deb1aa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fb93645caa903bc3231201bcbb7280b9107217ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout",
+      "raw_bytes": 1209,
+      "raw_sha256": "d84ff1d0f2c72085bad317690fbddbae16ef93ba0bfc10617ab63a03c891347f",
+      "stored_path": "_objects/d84ff1d0f2c72085bad317690fbddbae16ef93ba0bfc10617ab63a03c891347f.gz",
+      "stored_sha256": "0b6160fddcd898d068d152ef9649d5e8e2af30f46d31a8248d5f02af8d43c1c9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a77266826e7d33133e9860daad3f79703c33debe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json",
+      "raw_bytes": 167,
+      "raw_sha256": "8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656",
+      "stored_path": "_objects/8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656.gz",
+      "stored_sha256": "c199d46832efd5d5f59d555912af75ca5264122f5d0fd6df8252d53d2cb07de5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a77266826e7d33133e9860daad3f79703c33debe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json",
+      "raw_bytes": 167,
+      "raw_sha256": "8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656",
+      "stored_path": "_objects/8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656.gz",
+      "stored_sha256": "c199d46832efd5d5f59d555912af75ca5264122f5d0fd6df8252d53d2cb07de5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c788be3aafa220cc60b0b8619c4ba2312321c4ae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+      "raw_bytes": 2975,
+      "raw_sha256": "7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce",
+      "stored_path": "_objects/7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce.gz",
+      "stored_sha256": "02e7e4e31f1fe7268bc5415943dbcc91e0432ff6b5f7284d2deacfde77ecca5a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c788be3aafa220cc60b0b8619c4ba2312321c4ae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md",
+      "raw_bytes": 2975,
+      "raw_sha256": "7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce",
+      "stored_path": "_objects/7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce.gz",
+      "stored_sha256": "02e7e4e31f1fe7268bc5415943dbcc91e0432ff6b5f7284d2deacfde77ecca5a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3477381c2d644e3af46e46c1a09e97ec8e6c832f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+      "raw_bytes": 852,
+      "raw_sha256": "054a63096881a88eb1b5b5370ce78ab851f78f7ddbdb6f5b91fe6c8b3b1903d2",
+      "stored_path": "_objects/054a63096881a88eb1b5b5370ce78ab851f78f7ddbdb6f5b91fe6c8b3b1903d2.gz",
+      "stored_sha256": "02abf189d2cc467ae4a89ead83727f1a0312d13f6c6df897cf87476fdf48017d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "36fbd362852401f34943b3ac7f93233503326812",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md",
+      "raw_bytes": 87,
+      "raw_sha256": "780994a9ed968df6272250ace105dc4991fc9639cd5f8d9e216e6920a6b76b39",
+      "stored_path": "_objects/780994a9ed968df6272250ace105dc4991fc9639cd5f8d9e216e6920a6b76b39.gz",
+      "stored_sha256": "c320a8fa875e51a9649adbd12e9c11d6ba8fa05cc92114461eb2f8975dda8e04"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c088570d5cf292067d1d08190930f5754006d5bb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md",
+      "raw_bytes": 135,
+      "raw_sha256": "1e16a756bdb4ca9100cccd943d5583dc12302d059a860edbd114e2131e577ef2",
+      "stored_path": "kept/pr8063-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "1e16a756bdb4ca9100cccd943d5583dc12302d059a860edbd114e2131e577ef2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "293c62bd33808caa9b9736915c6cb128779d3de7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 340,
+      "raw_sha256": "6e4f87fba90d012bea52731e8743eec13cd4b898fa135f2a64c7838cd34fa22b",
+      "stored_path": "_objects/6e4f87fba90d012bea52731e8743eec13cd4b898fa135f2a64c7838cd34fa22b.gz",
+      "stored_sha256": "ac8e55cd070d59e56600bae37bffe11b6786c17c93484b79e3dcf83916dacb1b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "93bfcaa00835895a6094534c9d69fa78b7ac942b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 334,
+      "raw_sha256": "8bfdaee0bfd52fb6776de4e0a689fbc322f292f0d962802a1d31014f030ead6a",
+      "stored_path": "_objects/8bfdaee0bfd52fb6776de4e0a689fbc322f292f0d962802a1d31014f030ead6a.gz",
+      "stored_sha256": "ca0c397f1df90213a6b0f674543f58eeb36fb8d30d8a66bd30aa999ec33707b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e44da432d0fc3ce5c073b0983654fa314bcdc970",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 339,
+      "raw_sha256": "a36fa406127a2dddca5e5f8e302d6d255ddbae01c91650194fd84032f52ad87d",
+      "stored_path": "_objects/a36fa406127a2dddca5e5f8e302d6d255ddbae01c91650194fd84032f52ad87d.gz",
+      "stored_sha256": "dd8ab6211a4a993fcf3ffb87e75add1c3398d0a9a9039c1d3973c271302e9a44"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c4a29917336275856c9203bd7dd5a0f39bec40e4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+      "raw_bytes": 444,
+      "raw_sha256": "2c89322799a4b4440ce9934f07290ba756717f315ef149f343f175fc83d2ff69",
+      "stored_path": "_objects/2c89322799a4b4440ce9934f07290ba756717f315ef149f343f175fc83d2ff69.gz",
+      "stored_sha256": "ff78fe8805bd77a969efda34e191d46bb92bd70ee4ad4f6153a94a2cda102ff4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb47b844b2e520e76cbf599bc46956b1518f7102",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+      "raw_bytes": 5520,
+      "raw_sha256": "9eb352b4cc124dd7b43543da3a3ce0e28f988200d9d85a66037697b6e3f1bc44",
+      "stored_path": "_objects/9eb352b4cc124dd7b43543da3a3ce0e28f988200d9d85a66037697b6e3f1bc44.gz",
+      "stored_sha256": "2f16ca553ece6396dd4bd23b5382d097df35cdd2611d834b81534674d3e835d2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e42b884a0eff1d7745d00742d0ad7c1f3d7bd62d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json",
+      "raw_bytes": 952,
+      "raw_sha256": "892f512d582bdba0ca42f4e4519d6ba84d162b7bc1d282faf031f6db8f7b86fb",
+      "stored_path": "_objects/892f512d582bdba0ca42f4e4519d6ba84d162b7bc1d282faf031f6db8f7b86fb.gz",
+      "stored_sha256": "59fd4f533e117f4b48179c14b0b28d013a4bb12581ef1ce3ed6072c989f2f20a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cb4aaee487ee04c92e999412763d071b913ecf72",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout",
+      "raw_bytes": 1209,
+      "raw_sha256": "8619312d0db09c8d7a808208f0ca32fcea2ba5525f9df38a91b4e6d5c4bc510b",
+      "stored_path": "_objects/8619312d0db09c8d7a808208f0ca32fcea2ba5525f9df38a91b4e6d5c4bc510b.gz",
+      "stored_sha256": "50bbccda50813316f6e029edc006c6abe48f4e1075aab57d079bfc34c78afe4e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "65802c74879f30151e5012b3a5a7dcf47183c410",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip",
+      "raw_bytes": 43912,
+      "raw_sha256": "cb325650089033620368acbaa4b9d13bffb95a162b404767528cdcf3b017773f",
+      "stored_path": "_objects/cb325650089033620368acbaa4b9d13bffb95a162b404767528cdcf3b017773f.gz",
+      "stored_sha256": "8ce5c66c47f943cb8c0fa4f536679865bb09ef63203ae0a17f63dee5e078c7bc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f79b89388b05fa122c5515767a224c41c630f8c9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+      "raw_bytes": 947,
+      "raw_sha256": "13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db",
+      "stored_path": "_objects/13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db.gz",
+      "stored_sha256": "e793424afaafade7609477fc45f82537094883f371065b2b46bb3cc4958398c5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cadf6991462a90bde0ef3f8600b99ca965c162a9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr",
+      "raw_bytes": 908,
+      "raw_sha256": "768dfbac29f1205b8d74cb5a5f71f890c1716f24eb84a8bc130a3f450b83c22e",
+      "stored_path": "_objects/768dfbac29f1205b8d74cb5a5f71f890c1716f24eb84a8bc130a3f450b83c22e.gz",
+      "stored_sha256": "a9b5ede472e0fb97d62ae06678cc02a1c68f8a2eb322ad8b2dccba3c5553e315"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e748b51804298c077cada3228a3617e57dadd6e1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt",
+      "raw_bytes": 1883,
+      "raw_sha256": "1d3460ee9344dddd80484800941b4a99cedbb3dc06e0977ed50b46401b2bd3ba",
+      "stored_path": "_objects/1d3460ee9344dddd80484800941b4a99cedbb3dc06e0977ed50b46401b2bd3ba.gz",
+      "stored_sha256": "1d54812b87ae896223bb21b5a445a9ef6c1cabffc7c502f1b80f53750d15af00"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "823bac8a9e5af088622489861b15665d2f186104",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr",
+      "raw_bytes": 1091,
+      "raw_sha256": "9d406967ce68eb3d41630c69eaa484c121bd4b451cc08758550d96bb0b0a1030",
+      "stored_path": "_objects/9d406967ce68eb3d41630c69eaa484c121bd4b451cc08758550d96bb0b0a1030.gz",
+      "stored_sha256": "86f5bfa8763756ce4f562029cb1241dcd6499dde06abd34977b40f4ca677156d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "48ca01c89511c2bc0e4197ae2fe1f9fa7c38ca9b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt",
+      "raw_bytes": 1884,
+      "raw_sha256": "10fe9438a94e134773ef9f3d3653341e7db953db15f0ec2d99bdd17b5221e1b6",
+      "stored_path": "_objects/10fe9438a94e134773ef9f3d3653341e7db953db15f0ec2d99bdd17b5221e1b6.gz",
+      "stored_sha256": "0723d26c122320da1e081803675fd2c580ce8d0b348afc705b75f1b50262b86f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1fc79269c732ffafd35ac0c7614424eb0d97b200",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr",
+      "raw_bytes": 1008,
+      "raw_sha256": "49ddeec1f46d94300b838c1d8d4ce2f722d94361455779dfb0f6dd1d962605f5",
+      "stored_path": "_objects/49ddeec1f46d94300b838c1d8d4ce2f722d94361455779dfb0f6dd1d962605f5.gz",
+      "stored_sha256": "5525c3f5fcaa2724c1820abf2bbae9b8d4e13a6f9165def56c29d9d31c8bd441"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5564ad5bd0832fb2145752741486fb353d673577",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt",
+      "raw_bytes": 1912,
+      "raw_sha256": "5acb0d844775977815a48cda4e0aac0ae8d950a484e4288a34f08d049f2b0cbc",
+      "stored_path": "_objects/5acb0d844775977815a48cda4e0aac0ae8d950a484e4288a34f08d049f2b0cbc.gz",
+      "stored_sha256": "fa3810ce3799920b1c140e8ef52e018fc463ed91508296e7ec0fc05ef2699890"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "88af97df472ea63bc57fd1220fe7e026a750d5ed",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md",
+      "raw_bytes": 332,
+      "raw_sha256": "1630d8ad99fdb5d1b45c2a3bf27ca6cc3a1256b947bd1411ab0d6a9ce71c44ea",
+      "stored_path": "_objects/1630d8ad99fdb5d1b45c2a3bf27ca6cc3a1256b947bd1411ab0d6a9ce71c44ea.gz",
+      "stored_sha256": "d0981485eb74ce6b2ba8622c5abe1501ff485350c35f8335cca5a90be438ab80"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "09d0cca79242168222bce33845e9b30100b40532",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 111,
+      "raw_sha256": "88b05004c72992b8aecc4c3a065f79bd2766d508f19878c48ab46d418dcb33b9",
+      "stored_path": "kept/pr8063-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "88b05004c72992b8aecc4c3a065f79bd2766d508f19878c48ab46d418dcb33b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "27789a0f6940a3804be7aecf05379c1fd77b0464",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 337,
+      "raw_sha256": "0712ee0cfdb7ccc7df0ad75572e380e76933294b676245f36a548c6667817ff4",
+      "stored_path": "_objects/0712ee0cfdb7ccc7df0ad75572e380e76933294b676245f36a548c6667817ff4.gz",
+      "stored_sha256": "d2f2f99efa8be1a47bc53fbfde3966f7dfcf746d3a33ba580363345e19fd9286"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "94e2eb4a7413cc2dd74565860c8a22c69e8c46d6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml",
+      "raw_bytes": 153,
+      "raw_sha256": "1d3b5fed11b15c4a9e8648800e5f4b49309562384d0590cb277e78c63f260b1e",
+      "stored_path": "_objects/1d3b5fed11b15c4a9e8648800e5f4b49309562384d0590cb277e78c63f260b1e.gz",
+      "stored_sha256": "50dd5f5fbdef02634328f5c119ac2aa54027cef33dbe5aaf6f8cb67ce90a975f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ca6fcea0ca0ed1344cfa90f9c865a0f7f204d485",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md",
+      "raw_bytes": 149,
+      "raw_sha256": "e9d171a966636dbe82e73577fa415a259a793c22092754a554075025f4ed3329",
+      "stored_path": "_objects/e9d171a966636dbe82e73577fa415a259a793c22092754a554075025f4ed3329.gz",
+      "stored_sha256": "5df08c0684d533c1dfe8f9b34953c7dd73855f567985df2946ec06144d5568e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e3ef5e8d44dee93c3ed1fa3b922bc4a9aee90e9c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md",
+      "raw_bytes": 7566,
+      "raw_sha256": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087",
+      "stored_path": "_objects/89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087.gz",
+      "stored_sha256": "6a9314854b53b1f19ac8582e2d73899f8afdf92df5e341276261110dbcec216d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0d88dcba0dfd0ca89ed47712aba4ca559b1ad64f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json",
+      "raw_bytes": 112,
+      "raw_sha256": "b09b0d24c99f6828d55ab8fcf189b42b23d2f6bc05b1150c3b1c75b36e12f051",
+      "stored_path": "_objects/b09b0d24c99f6828d55ab8fcf189b42b23d2f6bc05b1150c3b1c75b36e12f051.gz",
+      "stored_sha256": "3c47b1bc9726267ce8c3f7cfac90d21ef534c0eaf57bffcfdc0b40f93b703164"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/",
+  "revision": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+  "schema_version": 1,
+  "unique_blobs": {
+    "09d0cca79242168222bce33845e9b30100b40532": {
+      "occurrences": 1,
+      "raw_bytes": 111,
+      "raw_sha256": "88b05004c72992b8aecc4c3a065f79bd2766d508f19878c48ab46d418dcb33b9"
+    },
+    "0d88dcba0dfd0ca89ed47712aba4ca559b1ad64f": {
+      "occurrences": 1,
+      "raw_bytes": 112,
+      "raw_sha256": "b09b0d24c99f6828d55ab8fcf189b42b23d2f6bc05b1150c3b1c75b36e12f051"
+    },
+    "1fc79269c732ffafd35ac0c7614424eb0d97b200": {
+      "occurrences": 1,
+      "raw_bytes": 1008,
+      "raw_sha256": "49ddeec1f46d94300b838c1d8d4ce2f722d94361455779dfb0f6dd1d962605f5"
+    },
+    "27789a0f6940a3804be7aecf05379c1fd77b0464": {
+      "occurrences": 1,
+      "raw_bytes": 337,
+      "raw_sha256": "0712ee0cfdb7ccc7df0ad75572e380e76933294b676245f36a548c6667817ff4"
+    },
+    "293c62bd33808caa9b9736915c6cb128779d3de7": {
+      "occurrences": 1,
+      "raw_bytes": 340,
+      "raw_sha256": "6e4f87fba90d012bea52731e8743eec13cd4b898fa135f2a64c7838cd34fa22b"
+    },
+    "3477381c2d644e3af46e46c1a09e97ec8e6c832f": {
+      "occurrences": 1,
+      "raw_bytes": 852,
+      "raw_sha256": "054a63096881a88eb1b5b5370ce78ab851f78f7ddbdb6f5b91fe6c8b3b1903d2"
+    },
+    "36fbd362852401f34943b3ac7f93233503326812": {
+      "occurrences": 1,
+      "raw_bytes": 87,
+      "raw_sha256": "780994a9ed968df6272250ace105dc4991fc9639cd5f8d9e216e6920a6b76b39"
+    },
+    "389380a207354537c69e524a6438244eb9ef646c": {
+      "occurrences": 1,
+      "raw_bytes": 1353,
+      "raw_sha256": "484e8749914b7180636215cabf790e9deeee62e80d18ffbe9b7fbb2f4811d313"
+    },
+    "48ca01c89511c2bc0e4197ae2fe1f9fa7c38ca9b": {
+      "occurrences": 1,
+      "raw_bytes": 1884,
+      "raw_sha256": "10fe9438a94e134773ef9f3d3653341e7db953db15f0ec2d99bdd17b5221e1b6"
+    },
+    "5564ad5bd0832fb2145752741486fb353d673577": {
+      "occurrences": 1,
+      "raw_bytes": 1912,
+      "raw_sha256": "5acb0d844775977815a48cda4e0aac0ae8d950a484e4288a34f08d049f2b0cbc"
+    },
+    "5656a6f6cb9de1b188104849daf802fe1ae12c08": {
+      "occurrences": 1,
+      "raw_bytes": 637,
+      "raw_sha256": "a285d6a4ef1b6874675bac26f733b6c2321785c4d9c2ff03f8d60687eead6afe"
+    },
+    "6135c7595ba00f89c726c9c53cbb5c5a0ca94780": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "0d65cf6773b9848de43f3c5c20268ef34b13dc9c4bb7d4b34788f66ca15aa9fa"
+    },
+    "65802c74879f30151e5012b3a5a7dcf47183c410": {
+      "occurrences": 1,
+      "raw_bytes": 43912,
+      "raw_sha256": "cb325650089033620368acbaa4b9d13bffb95a162b404767528cdcf3b017773f"
+    },
+    "823bac8a9e5af088622489861b15665d2f186104": {
+      "occurrences": 1,
+      "raw_bytes": 1091,
+      "raw_sha256": "9d406967ce68eb3d41630c69eaa484c121bd4b451cc08758550d96bb0b0a1030"
+    },
+    "88af97df472ea63bc57fd1220fe7e026a750d5ed": {
+      "occurrences": 1,
+      "raw_bytes": 332,
+      "raw_sha256": "1630d8ad99fdb5d1b45c2a3bf27ca6cc3a1256b947bd1411ab0d6a9ce71c44ea"
+    },
+    "93bfcaa00835895a6094534c9d69fa78b7ac942b": {
+      "occurrences": 1,
+      "raw_bytes": 334,
+      "raw_sha256": "8bfdaee0bfd52fb6776de4e0a689fbc322f292f0d962802a1d31014f030ead6a"
+    },
+    "94e2eb4a7413cc2dd74565860c8a22c69e8c46d6": {
+      "occurrences": 1,
+      "raw_bytes": 153,
+      "raw_sha256": "1d3b5fed11b15c4a9e8648800e5f4b49309562384d0590cb277e78c63f260b1e"
+    },
+    "a77266826e7d33133e9860daad3f79703c33debe": {
+      "occurrences": 2,
+      "raw_bytes": 167,
+      "raw_sha256": "8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656"
+    },
+    "bd24b543363a62daaa2a207273617cdbd2201e27": {
+      "occurrences": 1,
+      "raw_bytes": 1174,
+      "raw_sha256": "dca3cf29e435b00664726aa7909e845498a367357c97f386223ce9e9553f1d52"
+    },
+    "c088570d5cf292067d1d08190930f5754006d5bb": {
+      "occurrences": 1,
+      "raw_bytes": 135,
+      "raw_sha256": "1e16a756bdb4ca9100cccd943d5583dc12302d059a860edbd114e2131e577ef2"
+    },
+    "c4a29917336275856c9203bd7dd5a0f39bec40e4": {
+      "occurrences": 1,
+      "raw_bytes": 444,
+      "raw_sha256": "2c89322799a4b4440ce9934f07290ba756717f315ef149f343f175fc83d2ff69"
+    },
+    "c788be3aafa220cc60b0b8619c4ba2312321c4ae": {
+      "occurrences": 2,
+      "raw_bytes": 2975,
+      "raw_sha256": "7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce"
+    },
+    "ca6fcea0ca0ed1344cfa90f9c865a0f7f204d485": {
+      "occurrences": 1,
+      "raw_bytes": 149,
+      "raw_sha256": "e9d171a966636dbe82e73577fa415a259a793c22092754a554075025f4ed3329"
+    },
+    "cadf6991462a90bde0ef3f8600b99ca965c162a9": {
+      "occurrences": 1,
+      "raw_bytes": 908,
+      "raw_sha256": "768dfbac29f1205b8d74cb5a5f71f890c1716f24eb84a8bc130a3f450b83c22e"
+    },
+    "cb47b844b2e520e76cbf599bc46956b1518f7102": {
+      "occurrences": 1,
+      "raw_bytes": 5520,
+      "raw_sha256": "9eb352b4cc124dd7b43543da3a3ce0e28f988200d9d85a66037697b6e3f1bc44"
+    },
+    "cb4aaee487ee04c92e999412763d071b913ecf72": {
+      "occurrences": 1,
+      "raw_bytes": 1209,
+      "raw_sha256": "8619312d0db09c8d7a808208f0ca32fcea2ba5525f9df38a91b4e6d5c4bc510b"
+    },
+    "cb7c1f5d988c082fc2e7fa6755f964fd6b56010a": {
+      "occurrences": 1,
+      "raw_bytes": 335,
+      "raw_sha256": "db9a8f5229b32a25f962fad0077b1a0aa3e66519a81f1376026cee306375714b"
+    },
+    "d69686e7bad24009a693923a03991b0d4753ca90": {
+      "occurrences": 1,
+      "raw_bytes": 160,
+      "raw_sha256": "3efa81fbe7d54d0abcdf1e9bc04dcbdd195fdcd20ce91f2a6ce85998343af7de"
+    },
+    "e3ef5e8d44dee93c3ed1fa3b922bc4a9aee90e9c": {
+      "occurrences": 1,
+      "raw_bytes": 7566,
+      "raw_sha256": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087"
+    },
+    "e42b884a0eff1d7745d00742d0ad7c1f3d7bd62d": {
+      "occurrences": 1,
+      "raw_bytes": 952,
+      "raw_sha256": "892f512d582bdba0ca42f4e4519d6ba84d162b7bc1d282faf031f6db8f7b86fb"
+    },
+    "e44da432d0fc3ce5c073b0983654fa314bcdc970": {
+      "occurrences": 1,
+      "raw_bytes": 339,
+      "raw_sha256": "a36fa406127a2dddca5e5f8e302d6d255ddbae01c91650194fd84032f52ad87d"
+    },
+    "e748b51804298c077cada3228a3617e57dadd6e1": {
+      "occurrences": 1,
+      "raw_bytes": 1883,
+      "raw_sha256": "1d3460ee9344dddd80484800941b4a99cedbb3dc06e0977ed50b46401b2bd3ba"
+    },
+    "f79b89388b05fa122c5515767a224c41c630f8c9": {
+      "occurrences": 1,
+      "raw_bytes": 947,
+      "raw_sha256": "13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db"
+    },
+    "fb93645caa903bc3231201bcbb7280b9107217ee": {
+      "occurrences": 1,
+      "raw_bytes": 1209,
+      "raw_sha256": "d84ff1d0f2c72085bad317690fbddbae16ef93ba0bfc10617ab63a03c891347f"
+    }
+  }
+}

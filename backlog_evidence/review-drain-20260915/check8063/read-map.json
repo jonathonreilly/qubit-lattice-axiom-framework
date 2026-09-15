@@ -1,0 +1,310 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8062/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_DELTA.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8063/original-8063/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  }
+]

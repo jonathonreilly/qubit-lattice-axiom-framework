@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+  "fetched_ref": "refs/review-loop/fetched/8063-143f1f41cfe24b1b9f762da2123cb534",
+  "metadata": {
+    "baseRefName": "codex/native-uniform-quasilocal-star-vertex-20260909",
+    "headRefName": "codex/native-star-thermodynamic-limit-20260909",
+    "headRefOid": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+    "isDraft": false,
+    "number": 8063,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

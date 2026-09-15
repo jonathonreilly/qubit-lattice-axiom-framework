@@ -1,0 +1,818 @@
+[
+  {
+    "pr": 8062,
+    "manifest_sha256": "b678ef56df6a3db463624de76fe72a2b99519ea14896ad354be1d9d14a9c72f2",
+    "entries": 43,
+    "verify": {
+      "manifest_sha256": "b678ef56df6a3db463624de76fe72a2b99519ea14896ad354be1d9d14a9c72f2",
+      "mechanical_check": "passed",
+      "original_paths": 43,
+      "stored_objects": 42
+    },
+    "original_to_final": [
+      {
+        "encoding": "gzip",
+        "git_blob": "254ab1e5230dda69d1d7f4fe45248548fe9c9ad1",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md",
+        "raw_bytes": 302,
+        "raw_sha256": "47039ff362e4cef3ab01489301e8c05b058869ae3596e29c7d78999afdf5177b",
+        "stored_path": "_objects/47039ff362e4cef3ab01489301e8c05b058869ae3596e29c7d78999afdf5177b.gz",
+        "stored_sha256": "485898d0a10a39ebc21d0d19719ef5aad5c45b037e4173fcfc8625f7878b0217"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "72f985e9c6ba5af1478b1bd13aac2e9de061d395",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+        "raw_bytes": 391,
+        "raw_sha256": "138dbf400c75e233dd11a6c3a771140c13b90c366aef3dd01a300595f6284428",
+        "stored_path": "_objects/138dbf400c75e233dd11a6c3a771140c13b90c366aef3dd01a300595f6284428.gz",
+        "stored_sha256": "75300db61ac91ecb712d18bf5cfd37b04c4a3e0bca51b18275cf73eb418d1a79"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "c8f9b3d0e7c89a035454c60978dd5ff1aceffe76",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md",
+        "raw_bytes": 473,
+        "raw_sha256": "855bd725b2ce884157c1f9960dcfc50bb8c75d42bb99d2854ffd23af9c9df9c9",
+        "stored_path": "_objects/855bd725b2ce884157c1f9960dcfc50bb8c75d42bb99d2854ffd23af9c9df9c9.gz",
+        "stored_sha256": "ab8fbe1756dee2633a2c47071f408f96383f462f396165873501d947a9cb2107"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "61491dc50729484fab9b4612a5ab84a644becc9e",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr",
+        "raw_bytes": 753,
+        "raw_sha256": "028637148726a546e5db5f01a6db74f953fa48cd5c4dcfb4c4376ea2806011c9",
+        "stored_path": "_objects/028637148726a546e5db5f01a6db74f953fa48cd5c4dcfb4c4376ea2806011c9.gz",
+        "stored_sha256": "9a9c67e78242d5d3f0fc230cb2bc288d28455f9edce2fae85565a7cd5183397c"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "1896c446981484e3aabb446a23d1c6140902fecf",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout",
+        "raw_bytes": 1374,
+        "raw_sha256": "b859a9b870e0892968f0696a052c53bfc4494e18a94ae008e333a971ad280e8f",
+        "stored_path": "_objects/b859a9b870e0892968f0696a052c53bfc4494e18a94ae008e333a971ad280e8f.gz",
+        "stored_sha256": "ccdcd6ea6db6f02dcfe10c988bb8a7597e294a4ed4825432744e8dc409121efe"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "06b462cb0f4746624b6247e82de20d37da713e14",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+        "raw_bytes": 2494,
+        "raw_sha256": "bdc9d2a2fd0c3bf46524a6b049184f4c06aa6f69a6b391afc370454fb0ebfc76",
+        "stored_path": "_objects/bdc9d2a2fd0c3bf46524a6b049184f4c06aa6f69a6b391afc370454fb0ebfc76.gz",
+        "stored_sha256": "2eb3c0cf4a855fd178b82cca9adf4b744515ace9ad21dcb119de0abd3d5bd364"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "9ab00abdd7a7c85687781e9bbb3673a9aba3b747",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+        "raw_bytes": 732,
+        "raw_sha256": "7b0837305e11e0fb6a98b279688493f868913e2565660c135ed28d0870337974",
+        "stored_path": "_objects/7b0837305e11e0fb6a98b279688493f868913e2565660c135ed28d0870337974.gz",
+        "stored_sha256": "5b3825f5030ddbd4f58168a3f3d5f90b3c8bce7256007be58eca8a91be1678de"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e66ba1ad27e71d30ccd71eb1a93d1f2893e4ca99",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md",
+        "raw_bytes": 363,
+        "raw_sha256": "7b3c23ea69c5e1f96552784f4b5b9ccdfc2872d0989ce7e6eca8010fd5d3b851",
+        "stored_path": "_objects/7b3c23ea69c5e1f96552784f4b5b9ccdfc2872d0989ce7e6eca8010fd5d3b851.gz",
+        "stored_sha256": "ed0f97df9d81bb447c07894435c68754fb49cb5722559f9c936e9b569d92d142"
+      },
+      {
+        "encoding": "identity",
+        "git_blob": "db280ce9e68b7d6b9b11adf4880fda9816a3d3fd",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md",
+        "raw_bytes": 409,
+        "raw_sha256": "3e352df556a419c02c445477dbd822cd286ffa11534784f6c72f8143561b0655",
+        "stored_path": "kept/pr8062-HANDOFF-9ef67db77ea9ef6f.md",
+        "stored_sha256": "3e352df556a419c02c445477dbd822cd286ffa11534784f6c72f8143561b0655"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "9a5c0805251a186f058b092acb052cb3a96a76e4",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md",
+        "raw_bytes": 207,
+        "raw_sha256": "ee832b07ba8024482db7d47a3e84d743eab0809a7bda2864104e6bd342ca2e15",
+        "stored_path": "_objects/ee832b07ba8024482db7d47a3e84d743eab0809a7bda2864104e6bd342ca2e15.gz",
+        "stored_sha256": "d90660535c284c6fad4f5671def681d76d8c937f042390dd27ae3eb8dcb10717"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "842f536a18bc15d36261b2a2da65580f410cea0e",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md",
+        "raw_bytes": 247,
+        "raw_sha256": "811a4d3aa20b470b49a3d042de018aa01c2af2f563112589456413a8132809c4",
+        "stored_path": "_objects/811a4d3aa20b470b49a3d042de018aa01c2af2f563112589456413a8132809c4.gz",
+        "stored_sha256": "eadbef98e435daed0db9f00d5652a7ac65828c39c8c92eb55120684d3c143269"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "58c7451345b7b40f733a55063592b1b56dfad1d4",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md",
+        "raw_bytes": 189,
+        "raw_sha256": "7e64d207a09982478d680f89b8bd1d8f1a2a3bb0e6f48ec4dc14c9ff3e5b62a1",
+        "stored_path": "_objects/7e64d207a09982478d680f89b8bd1d8f1a2a3bb0e6f48ec4dc14c9ff3e5b62a1.gz",
+        "stored_sha256": "47b205bb08f2ab700cf72944254cebd98a28e108b6af1d4896588aedfeeb4143"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "d86993bc621ee7e6ddcc78bab6f23a4ab3a70e64",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+        "raw_bytes": 691,
+        "raw_sha256": "23b37d0cf2bf08ff1cde246afd207436cddcab4b6c1c21050cd94f8810031f86",
+        "stored_path": "_objects/23b37d0cf2bf08ff1cde246afd207436cddcab4b6c1c21050cd94f8810031f86.gz",
+        "stored_sha256": "94240deaa19c022f7883467235e119207f06e8373f8719ea48f4da0c76b0d835"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "05d3b4bb8a36d6d79a2aa3f410b9796ad4512440",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+        "raw_bytes": 8300,
+        "raw_sha256": "4da676065b4b6c5aa428bb1d553c093fe46a3cca3827f419474782d217a639b6",
+        "stored_path": "_objects/4da676065b4b6c5aa428bb1d553c093fe46a3cca3827f419474782d217a639b6.gz",
+        "stored_sha256": "875a4d5aea2c561c055cf95a829a11bd27748b9a195b9fbee7d2313b7ff330e6"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "bc573e787acf59c61a51d3ae2890a723d9a5eced",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json",
+        "raw_bytes": 993,
+        "raw_sha256": "6c1527d5f41f01dfc92cc5f3f779b6cd4814670961c445013efa3c49e9c28443",
+        "stored_path": "_objects/6c1527d5f41f01dfc92cc5f3f779b6cd4814670961c445013efa3c49e9c28443.gz",
+        "stored_sha256": "5e54820b847312c2ddee441386fce08111dc6165389fdf0d1a8b0f9444491071"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stderr",
+        "raw_bytes": 0,
+        "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "d7c82310e3ee13796f521789d6b1c2f151dac144",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout",
+        "raw_bytes": 1375,
+        "raw_sha256": "0ca84325c32f9d636162c0518786f342b676b62ac565695fea2b00582af820fa",
+        "stored_path": "_objects/0ca84325c32f9d636162c0518786f342b676b62ac565695fea2b00582af820fa.gz",
+        "stored_sha256": "b3af111da48d0b780e62933d8a74d4f84573fdb08e9fae71608e80c32f4b416d"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "eb6d45581fd4c1449b97ba60547d939c22fcabca",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip",
+        "raw_bytes": 44214,
+        "raw_sha256": "2c64b374a2848f6147e393d01b90a666084a84aa0bc6f803c7441db9d6033960",
+        "stored_path": "_objects/2c64b374a2848f6147e393d01b90a666084a84aa0bc6f803c7441db9d6033960.gz",
+        "stored_sha256": "dd4566b341284049b16884e537a1168afe39e8bc78f3144430fd6bae2ed6255a"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "49b98bc3823ac4c7ed30a21bab158a4ff28ed869",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+        "raw_bytes": 967,
+        "raw_sha256": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
+        "stored_path": "_objects/481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f.gz",
+        "stored_sha256": "0a1c4d0f30e74f0eb72b5edb16704ebe99d988ddbc2fa71aeab2e6a6c82279d5"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "49b98bc3823ac4c7ed30a21bab158a4ff28ed869",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json",
+        "raw_bytes": 967,
+        "raw_sha256": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
+        "stored_path": "_objects/481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f.gz",
+        "stored_sha256": "0a1c4d0f30e74f0eb72b5edb16704ebe99d988ddbc2fa71aeab2e6a6c82279d5"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "d8da558ebd2dd229e1b762237374beef5b78710c",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr",
+        "raw_bytes": 947,
+        "raw_sha256": "b2780a3cd710dd2b44e01db1a9b4bf966dcef26ea2dd6991df02ec04ba2b07e8",
+        "stored_path": "_objects/b2780a3cd710dd2b44e01db1a9b4bf966dcef26ea2dd6991df02ec04ba2b07e8.gz",
+        "stored_sha256": "845061f2347042c499029612891da6957158ae7ee032c32a5be59bb7730fc361"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "ec9045a11785764a9422fde9897c4a1286a0649a",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt",
+        "raw_bytes": 3049,
+        "raw_sha256": "e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7",
+        "stored_path": "_objects/e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7.gz",
+        "stored_sha256": "76bf9449c66a99eda9d784c5951c39db1a6157582829ddd99745f5785ee4585b"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "948232d7e256c5585df74e5a381c8fbf3036523b",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr",
+        "raw_bytes": 959,
+        "raw_sha256": "697ba0292b615b40693ad65d2f98b3b2c5faf4f235a4b4368ad43d86f2b32d0b",
+        "stored_path": "_objects/697ba0292b615b40693ad65d2f98b3b2c5faf4f235a4b4368ad43d86f2b32d0b.gz",
+        "stored_sha256": "09451be610f3cd97f3ac5c2d5d36ed9b08ce03333e850624d480593e3c43b8ac"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "87a55b975b3cb1b040b2ff25c391774a21a08978",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt",
+        "raw_bytes": 3042,
+        "raw_sha256": "f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3",
+        "stored_path": "_objects/f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3.gz",
+        "stored_sha256": "31f84f9a129e76a2ecacb5efc4cd9efbd34f3ecdb8e8ea2f565af4cb306e213a"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "71bd8043430c7bc7668c61bd73588f7696f06bb8",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr",
+        "raw_bytes": 1061,
+        "raw_sha256": "bdbecd6f2e51633b0ac4412e7ec09fe3ee82d3887c6c1feea18a1af8d05685e3",
+        "stored_path": "_objects/bdbecd6f2e51633b0ac4412e7ec09fe3ee82d3887c6c1feea18a1af8d05685e3.gz",
+        "stored_sha256": "d48627bbc139ccaae0826e325bdc115ec25d3dfed7f3711be1d30160daafd387"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "b6627eb13fd2dec3b00d0204d70f415c0e37ae5b",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt",
+        "raw_bytes": 3044,
+        "raw_sha256": "8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea",
+        "stored_path": "_objects/8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea.gz",
+        "stored_sha256": "d0bfee2607d1452d79709c73d8e20ef2aa7f5afb5ddbb54450b6c9473daadffa"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "0b4d3dc70e94a38c3d34fc31f53b6ff96683d055",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md",
+        "raw_bytes": 90,
+        "raw_sha256": "1043aeefd6cf484f8ba30f65a03e182696514ff2ccae0709ef91df28d9666816",
+        "stored_path": "_objects/1043aeefd6cf484f8ba30f65a03e182696514ff2ccae0709ef91df28d9666816.gz",
+        "stored_sha256": "a3168b069adb190ff9045219f3bddbb2f10db29361f04500aab4cadc97638c0b"
+      },
+      {
+        "encoding": "identity",
+        "git_blob": "c56520f56b688c3d4a9f59140dfb6f994500b98d",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md",
+        "raw_bytes": 249,
+        "raw_sha256": "d9f097fad4f42d4cba209ebe77748095c0518a4dcee1941e2b778651078c2157",
+        "stored_path": "kept/pr8062-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "stored_sha256": "d9f097fad4f42d4cba209ebe77748095c0518a4dcee1941e2b778651078c2157"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "9f0e5e8a3fe637070d34e44624dbc9b3500fa40b",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md",
+        "raw_bytes": 235,
+        "raw_sha256": "a6359c1e29ad0773205e7f1c5a3cff239bd32969653d4dcbfbcfe533ef03518d",
+        "stored_path": "_objects/a6359c1e29ad0773205e7f1c5a3cff239bd32969653d4dcbfbcfe533ef03518d.gz",
+        "stored_sha256": "091648964ec747fdf40b9d686194152981807b7372e3a77390de8a170fb6c5c3"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "aca17bbb6c50d244056371244f36ec21fb44e0e1",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml",
+        "raw_bytes": 235,
+        "raw_sha256": "23e1c9e98734fe7a77399456bead4f1c5a2f7dfadfc2318ef00b94e2d106f03f",
+        "stored_path": "_objects/23e1c9e98734fe7a77399456bead4f1c5a2f7dfadfc2318ef00b94e2d106f03f.gz",
+        "stored_sha256": "54bb15d8c6a35b2db0d04f959df7320e8245ad5b5b68f94c0fc0dc9bb986c4a8"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "0ed2d37517e4a6e7745aa29db2a8cc0419a9f6a4",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md",
+        "raw_bytes": 338,
+        "raw_sha256": "b746a3673329a0720e46d5242b26ced79d3557e98068495a361e08cfaedf2fea",
+        "stored_path": "_objects/b746a3673329a0720e46d5242b26ced79d3557e98068495a361e08cfaedf2fea.gz",
+        "stored_sha256": "0b5c0ffb63d75a69d3e0e992e2ae334e6dcd2f9a2af6ca42887d16a66a73a8eb"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "fcd97b8472af5e6a98b0eba6835be9e7009ac5c0",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md",
+        "raw_bytes": 7037,
+        "raw_sha256": "72a29a8ed8bffd7abca1b0f353580bfeb2504f0a5ea35c015e1448ec05dfcd6b",
+        "stored_path": "_objects/72a29a8ed8bffd7abca1b0f353580bfeb2504f0a5ea35c015e1448ec05dfcd6b.gz",
+        "stored_sha256": "c5db2618696c103502f0d322aad0dbd1c0a0e2fcb74b7b9e8600015f7d530b58"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e0663e681cb26d4f51b262dfe8be07bdfaad9eeb",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md",
+        "raw_bytes": 3168,
+        "raw_sha256": "cc6c7ef4d2244b7bcff15232ea829654cf507b64874d33fa2ad4e9591f972f0d",
+        "stored_path": "_objects/cc6c7ef4d2244b7bcff15232ea829654cf507b64874d33fa2ad4e9591f972f0d.gz",
+        "stored_sha256": "8a6cb3b02c05d104980a33ebeddb4d4a49572e0b3c24de98e96a15646bb664d4"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "315c3d5e22584db265427df678e62ec416bc1a06",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json",
+        "raw_bytes": 729,
+        "raw_sha256": "3cd4c6c76c2a477a7c4392c47993083f207fe4f5471e4849045fdae3286a26c7",
+        "stored_path": "_objects/3cd4c6c76c2a477a7c4392c47993083f207fe4f5471e4849045fdae3286a26c7.gz",
+        "stored_sha256": "3b4298b3ef0b4462ea3c753fba70d921d7c03fe2a21031cc58d5738535abcbca"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "3553db190e9f48bf01f86cf2c283a6922109a8cd",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json",
+        "raw_bytes": 409,
+        "raw_sha256": "6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30",
+        "stored_path": "_objects/6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30.gz",
+        "stored_sha256": "b2d5d45e4b1edb9b0b9f591b60489a41d93b69db691bd8e6334e662c074fd1ae"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e67110eced38aad3d6e537fdacd7f15d108f4b5c",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md",
+        "raw_bytes": 3674,
+        "raw_sha256": "3b8cf086d0cb51017a93b04b5d61780c4be29bcba3eb115ceca4a1af1c107dee",
+        "stored_path": "_objects/3b8cf086d0cb51017a93b04b5d61780c4be29bcba3eb115ceca4a1af1c107dee.gz",
+        "stored_sha256": "aa8256d545b66e5b64e6fbb26b21adabd77d7c845476d4f2f9d66663b19dcefa"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "4e5971c0147c5f021dcbb26f31dcfb8347a06294",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json",
+        "raw_bytes": 134,
+        "raw_sha256": "383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d",
+        "stored_path": "_objects/383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d.gz",
+        "stored_sha256": "808c45dec3700539b2c3d090a75895063a528bae7c1f588e9e5148c4216235a5"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "5456a5b16ebdbc3755136fc486052f98f77425e8",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md",
+        "raw_bytes": 11064,
+        "raw_sha256": "c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511",
+        "stored_path": "_objects/c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511.gz",
+        "stored_sha256": "eddee8725f363cca004a3800cbbb94f472f2fab9ccfbb1c1fa0d08aeb529a254"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "7b20138a5bd79ee008489f88cd244e0e9a25ab27",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md",
+        "raw_bytes": 7489,
+        "raw_sha256": "9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96",
+        "stored_path": "_objects/9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96.gz",
+        "stored_sha256": "b5373286fb8a2c6d8866301404b3c741eab368832a7168d6062d3c267b810763"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "7f97fb416816d30628601195582a13219dc4df28",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json",
+        "raw_bytes": 578,
+        "raw_sha256": "fd48b10a06b2ec8be6d1ecf61361b6d855da9be153c226d3bd98d43f3e697228",
+        "stored_path": "_objects/fd48b10a06b2ec8be6d1ecf61361b6d855da9be153c226d3bd98d43f3e697228.gz",
+        "stored_sha256": "04a78a404133b62129ed67e588345b240af89d40a613619088b4e47600574fa6"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "09b531b37fd08e82b81aba49da6c240bf361fb9e",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md",
+        "raw_bytes": 6174,
+        "raw_sha256": "c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6",
+        "stored_path": "_objects/c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6.gz",
+        "stored_sha256": "6be3da5204e82df704ace6a749c4519044015701d02ee7c5525eed97f615d3f0"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "2917afbfe3c204c5d9e4e30fdf2208bf1bab3465",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md",
+        "raw_bytes": 5238,
+        "raw_sha256": "64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768",
+        "stored_path": "_objects/64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768.gz",
+        "stored_sha256": "681e1735757d65f278985d63a5f351630824124a0147816bb4d3a4a4d1e36ea1"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "4dac587f77af5c56fa256af1385a25775d3b6d96",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json",
+        "raw_bytes": 157,
+        "raw_sha256": "74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8",
+        "stored_path": "_objects/74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8.gz",
+        "stored_sha256": "5d12b903d36eb19234fb79c3e035b18ff119e6f1338508ad199d124fa6f943e8"
+      }
+    ]
+  },
+  {
+    "pr": 8063,
+    "manifest_sha256": "61520841b8731500e07ef0621a83e97bf511d343e10eb0a2782d04095ca7b06f",
+    "entries": 36,
+    "verify": {
+      "manifest_sha256": "61520841b8731500e07ef0621a83e97bf511d343e10eb0a2782d04095ca7b06f",
+      "mechanical_check": "passed",
+      "original_paths": 36,
+      "stored_objects": 34
+    },
+    "original_to_final": [
+      {
+        "encoding": "gzip",
+        "git_blob": "cb7c1f5d988c082fc2e7fa6755f964fd6b56010a",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md",
+        "raw_bytes": 335,
+        "raw_sha256": "db9a8f5229b32a25f962fad0077b1a0aa3e66519a81f1376026cee306375714b",
+        "stored_path": "_objects/db9a8f5229b32a25f962fad0077b1a0aa3e66519a81f1376026cee306375714b.gz",
+        "stored_sha256": "ec5c9d07f2cef269eb357674fe9485a3c31928716cbd1ea39c0e8fa5085c7e14"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "d69686e7bad24009a693923a03991b0d4753ca90",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+        "raw_bytes": 160,
+        "raw_sha256": "3efa81fbe7d54d0abcdf1e9bc04dcbdd195fdcd20ce91f2a6ce85998343af7de",
+        "stored_path": "_objects/3efa81fbe7d54d0abcdf1e9bc04dcbdd195fdcd20ce91f2a6ce85998343af7de.gz",
+        "stored_sha256": "090763628bfc42e552e095d7f064c1e4fbf8aa2d1a857298c0b16fb47508c9df"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "5656a6f6cb9de1b188104849daf802fe1ae12c08",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md",
+        "raw_bytes": 637,
+        "raw_sha256": "a285d6a4ef1b6874675bac26f733b6c2321785c4d9c2ff03f8d60687eead6afe",
+        "stored_path": "_objects/a285d6a4ef1b6874675bac26f733b6c2321785c4d9c2ff03f8d60687eead6afe.gz",
+        "stored_sha256": "aa64e81c4c7e10bd8ed5b7f6da59144bd38ed7614391c7370dba9c8cef2ca8c4"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "bd24b543363a62daaa2a207273617cdbd2201e27",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_DELTA.md",
+        "raw_bytes": 1174,
+        "raw_sha256": "dca3cf29e435b00664726aa7909e845498a367357c97f386223ce9e9553f1d52",
+        "stored_path": "_objects/dca3cf29e435b00664726aa7909e845498a367357c97f386223ce9e9553f1d52.gz",
+        "stored_sha256": "1d99c0b47875c483ca11226300147dae7ff5bf17f0459c57843c039e30c4d921"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "389380a207354537c69e524a6438244eb9ef646c",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_READ_HASHES.json",
+        "raw_bytes": 1353,
+        "raw_sha256": "484e8749914b7180636215cabf790e9deeee62e80d18ffbe9b7fbb2f4811d313",
+        "stored_path": "_objects/484e8749914b7180636215cabf790e9deeee62e80d18ffbe9b7fbb2f4811d313.gz",
+        "stored_sha256": "7b881de254a6e86aaaff579ea08f8ad6dbd81e477b29d115703d586e88428fb6"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "6135c7595ba00f89c726c9c53cbb5c5a0ca94780",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr",
+        "raw_bytes": 753,
+        "raw_sha256": "0d65cf6773b9848de43f3c5c20268ef34b13dc9c4bb7d4b34788f66ca15aa9fa",
+        "stored_path": "_objects/0d65cf6773b9848de43f3c5c20268ef34b13dc9c4bb7d4b34788f66ca15aa9fa.gz",
+        "stored_sha256": "bead3bb376a984b0fce42e5fe4dafac6ff968738f5b6697a8967c36837deb1aa"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "fb93645caa903bc3231201bcbb7280b9107217ee",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout",
+        "raw_bytes": 1209,
+        "raw_sha256": "d84ff1d0f2c72085bad317690fbddbae16ef93ba0bfc10617ab63a03c891347f",
+        "stored_path": "_objects/d84ff1d0f2c72085bad317690fbddbae16ef93ba0bfc10617ab63a03c891347f.gz",
+        "stored_sha256": "0b6160fddcd898d068d152ef9649d5e8e2af30f46d31a8248d5f02af8d43c1c9"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "a77266826e7d33133e9860daad3f79703c33debe",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json",
+        "raw_bytes": 167,
+        "raw_sha256": "8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656",
+        "stored_path": "_objects/8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656.gz",
+        "stored_sha256": "c199d46832efd5d5f59d555912af75ca5264122f5d0fd6df8252d53d2cb07de5"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "a77266826e7d33133e9860daad3f79703c33debe",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json",
+        "raw_bytes": 167,
+        "raw_sha256": "8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656",
+        "stored_path": "_objects/8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656.gz",
+        "stored_sha256": "c199d46832efd5d5f59d555912af75ca5264122f5d0fd6df8252d53d2cb07de5"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "c788be3aafa220cc60b0b8619c4ba2312321c4ae",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md",
+        "raw_bytes": 2975,
+        "raw_sha256": "7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce",
+        "stored_path": "_objects/7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce.gz",
+        "stored_sha256": "02e7e4e31f1fe7268bc5415943dbcc91e0432ff6b5f7284d2deacfde77ecca5a"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "c788be3aafa220cc60b0b8619c4ba2312321c4ae",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md",
+        "raw_bytes": 2975,
+        "raw_sha256": "7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce",
+        "stored_path": "_objects/7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce.gz",
+        "stored_sha256": "02e7e4e31f1fe7268bc5415943dbcc91e0432ff6b5f7284d2deacfde77ecca5a"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "3477381c2d644e3af46e46c1a09e97ec8e6c832f",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ROOT.md",
+        "raw_bytes": 852,
+        "raw_sha256": "054a63096881a88eb1b5b5370ce78ab851f78f7ddbdb6f5b91fe6c8b3b1903d2",
+        "stored_path": "_objects/054a63096881a88eb1b5b5370ce78ab851f78f7ddbdb6f5b91fe6c8b3b1903d2.gz",
+        "stored_sha256": "02abf189d2cc467ae4a89ead83727f1a0312d13f6c6df897cf87476fdf48017d"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "36fbd362852401f34943b3ac7f93233503326812",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md",
+        "raw_bytes": 87,
+        "raw_sha256": "780994a9ed968df6272250ace105dc4991fc9639cd5f8d9e216e6920a6b76b39",
+        "stored_path": "_objects/780994a9ed968df6272250ace105dc4991fc9639cd5f8d9e216e6920a6b76b39.gz",
+        "stored_sha256": "c320a8fa875e51a9649adbd12e9c11d6ba8fa05cc92114461eb2f8975dda8e04"
+      },
+      {
+        "encoding": "identity",
+        "git_blob": "c088570d5cf292067d1d08190930f5754006d5bb",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md",
+        "raw_bytes": 135,
+        "raw_sha256": "1e16a756bdb4ca9100cccd943d5583dc12302d059a860edbd114e2131e577ef2",
+        "stored_path": "kept/pr8063-HANDOFF-9ef67db77ea9ef6f.md",
+        "stored_sha256": "1e16a756bdb4ca9100cccd943d5583dc12302d059a860edbd114e2131e577ef2"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "293c62bd33808caa9b9736915c6cb128779d3de7",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md",
+        "raw_bytes": 340,
+        "raw_sha256": "6e4f87fba90d012bea52731e8743eec13cd4b898fa135f2a64c7838cd34fa22b",
+        "stored_path": "_objects/6e4f87fba90d012bea52731e8743eec13cd4b898fa135f2a64c7838cd34fa22b.gz",
+        "stored_sha256": "ac8e55cd070d59e56600bae37bffe11b6786c17c93484b79e3dcf83916dacb1b"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "93bfcaa00835895a6094534c9d69fa78b7ac942b",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md",
+        "raw_bytes": 334,
+        "raw_sha256": "8bfdaee0bfd52fb6776de4e0a689fbc322f292f0d962802a1d31014f030ead6a",
+        "stored_path": "_objects/8bfdaee0bfd52fb6776de4e0a689fbc322f292f0d962802a1d31014f030ead6a.gz",
+        "stored_sha256": "ca0c397f1df90213a6b0f674543f58eeb36fb8d30d8a66bd30aa999ec33707b9"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e44da432d0fc3ce5c073b0983654fa314bcdc970",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md",
+        "raw_bytes": 339,
+        "raw_sha256": "a36fa406127a2dddca5e5f8e302d6d255ddbae01c91650194fd84032f52ad87d",
+        "stored_path": "_objects/a36fa406127a2dddca5e5f8e302d6d255ddbae01c91650194fd84032f52ad87d.gz",
+        "stored_sha256": "dd8ab6211a4a993fcf3ffb87e75add1c3398d0a9a9039c1d3973c271302e9a44"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "c4a29917336275856c9203bd7dd5a0f39bec40e4",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+        "raw_bytes": 444,
+        "raw_sha256": "2c89322799a4b4440ce9934f07290ba756717f315ef149f343f175fc83d2ff69",
+        "stored_path": "_objects/2c89322799a4b4440ce9934f07290ba756717f315ef149f343f175fc83d2ff69.gz",
+        "stored_sha256": "ff78fe8805bd77a969efda34e191d46bb92bd70ee4ad4f6153a94a2cda102ff4"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "cb47b844b2e520e76cbf599bc46956b1518f7102",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+        "raw_bytes": 5520,
+        "raw_sha256": "9eb352b4cc124dd7b43543da3a3ce0e28f988200d9d85a66037697b6e3f1bc44",
+        "stored_path": "_objects/9eb352b4cc124dd7b43543da3a3ce0e28f988200d9d85a66037697b6e3f1bc44.gz",
+        "stored_sha256": "2f16ca553ece6396dd4bd23b5382d097df35cdd2611d834b81534674d3e835d2"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e42b884a0eff1d7745d00742d0ad7c1f3d7bd62d",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json",
+        "raw_bytes": 952,
+        "raw_sha256": "892f512d582bdba0ca42f4e4519d6ba84d162b7bc1d282faf031f6db8f7b86fb",
+        "stored_path": "_objects/892f512d582bdba0ca42f4e4519d6ba84d162b7bc1d282faf031f6db8f7b86fb.gz",
+        "stored_sha256": "59fd4f533e117f4b48179c14b0b28d013a4bb12581ef1ce3ed6072c989f2f20a"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "cb4aaee487ee04c92e999412763d071b913ecf72",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout",
+        "raw_bytes": 1209,
+        "raw_sha256": "8619312d0db09c8d7a808208f0ca32fcea2ba5525f9df38a91b4e6d5c4bc510b",
+        "stored_path": "_objects/8619312d0db09c8d7a808208f0ca32fcea2ba5525f9df38a91b4e6d5c4bc510b.gz",
+        "stored_sha256": "50bbccda50813316f6e029edc006c6abe48f4e1075aab57d079bfc34c78afe4e"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "65802c74879f30151e5012b3a5a7dcf47183c410",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip",
+        "raw_bytes": 43912,
+        "raw_sha256": "cb325650089033620368acbaa4b9d13bffb95a162b404767528cdcf3b017773f",
+        "stored_path": "_objects/cb325650089033620368acbaa4b9d13bffb95a162b404767528cdcf3b017773f.gz",
+        "stored_sha256": "8ce5c66c47f943cb8c0fa4f536679865bb09ef63203ae0a17f63dee5e078c7bc"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "f79b89388b05fa122c5515767a224c41c630f8c9",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+        "raw_bytes": 947,
+        "raw_sha256": "13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db",
+        "stored_path": "_objects/13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db.gz",
+        "stored_sha256": "e793424afaafade7609477fc45f82537094883f371065b2b46bb3cc4958398c5"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "cadf6991462a90bde0ef3f8600b99ca965c162a9",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr",
+        "raw_bytes": 908,
+        "raw_sha256": "768dfbac29f1205b8d74cb5a5f71f890c1716f24eb84a8bc130a3f450b83c22e",
+        "stored_path": "_objects/768dfbac29f1205b8d74cb5a5f71f890c1716f24eb84a8bc130a3f450b83c22e.gz",
+        "stored_sha256": "a9b5ede472e0fb97d62ae06678cc02a1c68f8a2eb322ad8b2dccba3c5553e315"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e748b51804298c077cada3228a3617e57dadd6e1",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt",
+        "raw_bytes": 1883,
+        "raw_sha256": "1d3460ee9344dddd80484800941b4a99cedbb3dc06e0977ed50b46401b2bd3ba",
+        "stored_path": "_objects/1d3460ee9344dddd80484800941b4a99cedbb3dc06e0977ed50b46401b2bd3ba.gz",
+        "stored_sha256": "1d54812b87ae896223bb21b5a445a9ef6c1cabffc7c502f1b80f53750d15af00"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "823bac8a9e5af088622489861b15665d2f186104",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr",
+        "raw_bytes": 1091,
+        "raw_sha256": "9d406967ce68eb3d41630c69eaa484c121bd4b451cc08758550d96bb0b0a1030",
+        "stored_path": "_objects/9d406967ce68eb3d41630c69eaa484c121bd4b451cc08758550d96bb0b0a1030.gz",
+        "stored_sha256": "86f5bfa8763756ce4f562029cb1241dcd6499dde06abd34977b40f4ca677156d"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "48ca01c89511c2bc0e4197ae2fe1f9fa7c38ca9b",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt",
+        "raw_bytes": 1884,
+        "raw_sha256": "10fe9438a94e134773ef9f3d3653341e7db953db15f0ec2d99bdd17b5221e1b6",
+        "stored_path": "_objects/10fe9438a94e134773ef9f3d3653341e7db953db15f0ec2d99bdd17b5221e1b6.gz",
+        "stored_sha256": "0723d26c122320da1e081803675fd2c580ce8d0b348afc705b75f1b50262b86f"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "1fc79269c732ffafd35ac0c7614424eb0d97b200",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr",
+        "raw_bytes": 1008,
+        "raw_sha256": "49ddeec1f46d94300b838c1d8d4ce2f722d94361455779dfb0f6dd1d962605f5",
+        "stored_path": "_objects/49ddeec1f46d94300b838c1d8d4ce2f722d94361455779dfb0f6dd1d962605f5.gz",
+        "stored_sha256": "5525c3f5fcaa2724c1820abf2bbae9b8d4e13a6f9165def56c29d9d31c8bd441"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "5564ad5bd0832fb2145752741486fb353d673577",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt",
+        "raw_bytes": 1912,
+        "raw_sha256": "5acb0d844775977815a48cda4e0aac0ae8d950a484e4288a34f08d049f2b0cbc",
+        "stored_path": "_objects/5acb0d844775977815a48cda4e0aac0ae8d950a484e4288a34f08d049f2b0cbc.gz",
+        "stored_sha256": "fa3810ce3799920b1c140e8ef52e018fc463ed91508296e7ec0fc05ef2699890"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "88af97df472ea63bc57fd1220fe7e026a750d5ed",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md",
+        "raw_bytes": 332,
+        "raw_sha256": "1630d8ad99fdb5d1b45c2a3bf27ca6cc3a1256b947bd1411ab0d6a9ce71c44ea",
+        "stored_path": "_objects/1630d8ad99fdb5d1b45c2a3bf27ca6cc3a1256b947bd1411ab0d6a9ce71c44ea.gz",
+        "stored_sha256": "d0981485eb74ce6b2ba8622c5abe1501ff485350c35f8335cca5a90be438ab80"
+      },
+      {
+        "encoding": "identity",
+        "git_blob": "09d0cca79242168222bce33845e9b30100b40532",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md",
+        "raw_bytes": 111,
+        "raw_sha256": "88b05004c72992b8aecc4c3a065f79bd2766d508f19878c48ab46d418dcb33b9",
+        "stored_path": "kept/pr8063-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "stored_sha256": "88b05004c72992b8aecc4c3a065f79bd2766d508f19878c48ab46d418dcb33b9"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "27789a0f6940a3804be7aecf05379c1fd77b0464",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md",
+        "raw_bytes": 337,
+        "raw_sha256": "0712ee0cfdb7ccc7df0ad75572e380e76933294b676245f36a548c6667817ff4",
+        "stored_path": "_objects/0712ee0cfdb7ccc7df0ad75572e380e76933294b676245f36a548c6667817ff4.gz",
+        "stored_sha256": "d2f2f99efa8be1a47bc53fbfde3966f7dfcf746d3a33ba580363345e19fd9286"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "94e2eb4a7413cc2dd74565860c8a22c69e8c46d6",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml",
+        "raw_bytes": 153,
+        "raw_sha256": "1d3b5fed11b15c4a9e8648800e5f4b49309562384d0590cb277e78c63f260b1e",
+        "stored_path": "_objects/1d3b5fed11b15c4a9e8648800e5f4b49309562384d0590cb277e78c63f260b1e.gz",
+        "stored_sha256": "50dd5f5fbdef02634328f5c119ac2aa54027cef33dbe5aaf6f8cb67ce90a975f"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "ca6fcea0ca0ed1344cfa90f9c865a0f7f204d485",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md",
+        "raw_bytes": 149,
+        "raw_sha256": "e9d171a966636dbe82e73577fa415a259a793c22092754a554075025f4ed3329",
+        "stored_path": "_objects/e9d171a966636dbe82e73577fa415a259a793c22092754a554075025f4ed3329.gz",
+        "stored_sha256": "5df08c0684d533c1dfe8f9b34953c7dd73855f567985df2946ec06144d5568e2"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "e3ef5e8d44dee93c3ed1fa3b922bc4a9aee90e9c",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md",
+        "raw_bytes": 7566,
+        "raw_sha256": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087",
+        "stored_path": "_objects/89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087.gz",
+        "stored_sha256": "6a9314854b53b1f19ac8582e2d73899f8afdf92df5e341276261110dbcec216d"
+      },
+      {
+        "encoding": "gzip",
+        "git_blob": "0d88dcba0dfd0ca89ed47712aba4ca559b1ad64f",
+        "original_mode": "100644",
+        "original_path": ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json",
+        "raw_bytes": 112,
+        "raw_sha256": "b09b0d24c99f6828d55ab8fcf189b42b23d2f6bc05b1150c3b1c75b36e12f051",
+        "stored_path": "_objects/b09b0d24c99f6828d55ab8fcf189b42b23d2f6bc05b1150c3b1c75b36e12f051.gz",
+        "stored_sha256": "3c47b1bc9726267ce8c3f7cfac90d21ef534c0eaf57bffcfdc0b40f93b703164"
+      }
+    ]
+  }
+]

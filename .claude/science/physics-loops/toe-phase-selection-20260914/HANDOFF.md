@@ -673,3 +673,29 @@ Prepare this addition inside existing PR8127 so the entire mathematical
 input is in the same review delta. Currentmain remains5deabeb698a27c2c3f68c5df685af2521ef15307; diskguard150GiBfree.
 After this milestone return to a new hard residual; do not deepen the
 unreviewed covariance chain. Deadline13:30:44UTC remains unchanged.
+
+
+## Spectral milestone delivered, 2026-09-15 08:29 UTC
+
+Existing PR8127 is OPEN/MERGEABLE at exact head
+5112b9e6ff7e77b0140d4fbcbaa68c6560525978. The final new source has573lines;
+its303-line primary runner checks eight families, sixteen faults and all five
+resolution levels. Its fresh canonical cache ran0.48seconds/180. The original
+six science files remain byte-identical; the complete main-based PR has23paths.
+The manifest adds one new node/one edge to that prior PR, totaling three new
+nodes/two edges relative to frozen main. All public sources still await
+independent review and combined landing gates.
+
+The source's same-state positive Stieltjes measure yields over99.96 percent
+of transverse static susceptibility in a band with asymptotic energy slopes
+sqrt(0.9),sqrt(1.1). Ordinary band weight scales as momentum and has two
+response directions. This is not a pole, Gaussianity or transport theorem.
+The full upstream covariance derivation remains the load-bearing provisional
+input; no long downstream chain should be built before independent checking.
+
+Remote durability and absence of unpreserved science were verified before
+removing the delivery checkout. The safety sweep preserved all unlanded
+worktrees. See review/BLOCK26_PUBLIC_MILESTONE_RECEIPT.json and
+review/BLOCK26_COMPLETION_SWEEP.json. Next investigate the coupled-defect
+source mechanism; scalar RG and conditional-coset fluctuations do not yet
+supply a full physical fixed-clock law. Deadline13:30:44UTC remains.

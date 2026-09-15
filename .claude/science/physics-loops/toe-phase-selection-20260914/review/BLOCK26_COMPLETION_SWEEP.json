@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-09-15T08:31:35.763401+00:00",
+  "main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "worktrees": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_main": false,
+      "tracked_dirty": false,
+      "untracked_paths": [],
+      "action": "preserved"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "head": "24dd899464e2d353da36d2f5a5d72ccc77a5ca3e",
+      "contained_in_main": false,
+      "tracked_dirty": false,
+      "untracked_paths": [
+        ".claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK26_DELIVERY_PREFLIGHT.json",
+        ".claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK26_PUBLIC_MILESTONE_RECEIPT.json"
+      ],
+      "action": "preserved"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "tracked_dirty": false,
+      "untracked_paths": [],
+      "action": "preserved"
+    }
+  ],
+  "policy": "Only clean landed checkouts removed; unpreserved science and protected archives untouched; no git gc.",
+  "free_gib": 150.75030517578125
+}

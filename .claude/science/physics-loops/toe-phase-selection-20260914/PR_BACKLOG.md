@@ -52,3 +52,10 @@ Gaussian routing map. No public candidate yet.
   but no stronger physical sector or selector is identified. No PR is forced
   by the checkpoint. Independent review remains unavailable in this personal
   execution run; no existing public PR is merged or promoted.
+
+- PR8127 updated to5112b9e6ff7e77b0140d4fbcbaa68c6560525978 with the fixed-clock
+  transverse spectral concentration theorem. Existing covariance and varying-
+  parameter Gaussian sources are unchanged in the same main-based delta.
+  Eight new finite families,16actual faults, all caches fresh;23total paths.
+  Independent review/combined landing gates pending. Delivery checkout removed
+  after exact remote and clean science verification.

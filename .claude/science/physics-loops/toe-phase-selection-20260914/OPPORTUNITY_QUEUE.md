@@ -1,3 +1,26 @@
+# Current opportunity ranking — 2026-09-15 08:29 UTC
+
+1. **Coupled finite-clock defects and full physical sources.** The new PR8127
+   spectral band makes the fixed-clock massless sector more quantitative,
+   conditional on the same input. It does not need more corollaries. Return
+   to the exact coupled-defect representation and seek a source-compatible
+   multiscale control. A positive auxiliary phase integrand is not automatically
+   the MGF of a physical conditional law; coset fluctuations alone leave the
+   magnetic conditional mean unresolved.
+2. **Actual spin-one neutral phase.** The exact endpoint Hamiltonian and
+   all-sector comparison in PR8135 are available. Its ring dynamics have
+   unit truncated shifts and an h-weighted double ring move. Any RK or rotor
+   comparison must match those actual coefficients and the physical flux
+   constraints; an engineered different Hamiltonian is not its phase proof.
+3. **Native persistent sector or physical selector.** Block25 gives candidate
+   kernels and clock laws, but their physical identification remains open.
+   Generic existence or another uniformizer would repeat prior support.
+
+All added reviewable science remains proposed and independently unreviewed.
+Continue personally, no subagents, until2026-09-15 13:30:44UTC.
+
+---
+
 # Current opportunity ranking — 2026-09-15 07:45 UTC
 
 1. **Fixed-clock magnetic stability.** PR8136 provides a new exact physical

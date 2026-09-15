@@ -172,3 +172,14 @@ transitive closure, otherwise preflight fails. Both discovery results are emitte
 remain required; one resolver does not silently override the other. Affected-note
 coverage uses their union. The transitive API reads source files, not audit ledger
 or queue data; those generated surfaces are neither materialized nor used here.
+
+## Per-invocation discovery reuse
+
+The checker memoizes results of the actual graph and packet import parsers and
+literal input parser during one invocation. It returns fresh copies, restores the
+original APIs on success or failure, and never persists these results as authority.
+Every parsed source (including absent paths), the scripts directory, and scanned
+notes retain generation tokens checked before return. A new/removed note changes
+the actual discovered inventory and fails. Existing source/index/hash guards remain.
+Stdout includes parser hit/miss counts so whole-repository cost can be measured
+without rerunning scientific controls. This changes execution cost, not coverage.

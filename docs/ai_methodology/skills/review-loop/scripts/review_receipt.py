@@ -2,6 +2,8 @@
 """Read-only identity and source preflight. Never issues a science verdict."""
 from __future__ import annotations
 import argparse
+from contextlib import contextmanager
+from copy import copy
 import hashlib
 import importlib
 import json
@@ -77,6 +79,69 @@ def repository_apis(repo):
     return graph, cache, packet
 
 
+
+def generation(path):
+    """Detect replacement, content changes and absent-to-present transitions."""
+    try:
+        stat = path.stat()
+    except FileNotFoundError:
+        return None
+    return (stat.st_dev, stat.st_ino, stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns)
+
+
+@contextmanager
+def memoized_discovery(repo, graph, cache, packet):
+    """Cache actual parser results for this invocation, then restore every API.
+
+    These APIs read only their source path and test scripts-directory entries.
+    Track the directory as well as every parsed path, including missing paths.
+    This is an execution optimization, not a persistent discovery authority.
+    """
+    observed = {repo / 'scripts': generation(repo / 'scripts')}
+    originals = []
+    statistics = {}
+
+    def observe(path):
+        token = generation(path)
+        if path in observed:
+            require(observed[path] == token, f'discovery input changed during preflight: {path}')
+        else:
+            observed[path] = token
+
+    def install(module, name, label):
+        original = getattr(module, name)
+        originals.append((module, name, original))
+        values = {}
+        counters = statistics[label] = {'hits': 0, 'misses': 0}
+
+        def cached(argument):
+            path = Path(argument)
+            if not path.is_absolute():
+                path = repo / path
+            observe(path)
+            if path in values:
+                counters['hits'] += 1
+                return copy(values[path])
+            counters['misses'] += 1
+            value = original(argument)
+            observe(path)
+            values[path] = copy(value)
+            return copy(value)
+
+        setattr(module, name, cached)
+
+    try:
+        install(graph, '_parse_script_imports', 'graph_imports')
+        install(packet, 'parse_script_imports', 'packet_imports')
+        install(cache, 'declared_input_paths', 'declared_inputs')
+        yield statistics, observe
+        for path in observed:
+            observe(path)
+    finally:
+        for module, name, original in reversed(originals):
+            setattr(module, name, original)
+
+
 def check(repo, record, require_cache=False):
     require(type(record['schema_version']) is int and record['schema_version'] == 1, 'unknown receipt schema version')
     require(isinstance(record['unit_id'], str) and record['unit_id'].strip(), 'unit_id required')
@@ -148,96 +213,99 @@ def check(repo, record, require_cache=False):
         if (repo / name).exists():
             require(name in bound, f'unbound preflight registry input: {name}')
     graph, cache, packet = repository_apis(repo)
-    ids = {}
-    all_notes = graph.discover_notes()
-    for path in all_notes:
-        ids.setdefault(graph.claim_id_from_path(path), []).append(path)
-    require(isinstance(record['notes'], list), 'notes must be an explicit list')
-    seen = set()
-    discovered = []
-    for note in record['notes']:
-        path = repo_file(repo, note['path'])
-        require(note['path'] in bound and note['path'] not in seen, 'unbound/duplicate note')
-        seen.add(note['path'])
-        cid = graph.claim_id_from_path(path)
-        require(cid == note['claim_id'] and len(ids.get(cid, [])) == 1, f'ambiguous/noncanonical claim ID: {cid}')
-        body = path.read_text()
-        declared = re.findall(r'^claim_id:\s*(\S+)\s*$', body.split('---', 2)[1] if body.startswith('---\n') else '', re.M)
-        require(len(declared) <= 1 and note['declared_claim_id'] == (declared[0] if declared else None), f'declared-to-canonical claim ID mapping mismatch: {cid}')
-        require(graph.extract_claim_type_hint(body)[1] == note['claim_type'] and note['claim_type'], f'Type extractor mismatch: {cid}')
-        primary = graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix())
-        require(primary and primary == note['primary_runner'] and primary in bound, f'primary runner mismatch/unbound: {cid}')
-        helpers = set(graph.helper_runner_paths_for_claim(cid, primary))
-        packet_helpers = {'scripts/' + name + '.py' for name in packet.transitive_helpers(Path(primary).stem)}
-        graph_transitive = set(graph.resolve_helper_runner_paths(primary))
-        require(packet_helpers == graph_transitive, f'packet/graph helper discovery disagreement: {cid}')
-        require(helpers == set(note['helpers']) and helpers <= categories['helpers'], f'undeclared/unbound packet helper: {cid}')
-        for target in graph.LINK_RE.findall(body):
-            if not re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:|#', target) and target.split('#')[0].endswith('.md'):
-                require(graph.resolve_link_target(target.split('#')[0], path) is not None, f'unresolved source citation: {target}')
-        citations = {p.relative_to(repo).as_posix() for p in graph.extract_citations(body, path)}
-        require(citations == set(note['citations']) and citations <= bound.keys(), f'citation path/hash mapping mismatch: {cid}')
-        deps = set(note['repository_dependencies'])
-        require(deps <= citations and deps <= categories['parents'], f'unlinked/unbound repository dependency: {cid}')
-        for dependency in deps:
-            parent_id = graph.claim_id_from_path(repo / dependency)
-            require(len(ids.get(parent_id, [])) == 1, f'ambiguous parent claim ID: {parent_id}')
-        require(isinstance(note['dependency_rationale'], str) and note['dependency_rationale'].strip(), 'dependency rationale required, including empty dependency lists')
-        for runner in {primary} | helpers:
-            require(cache.declared_timeout_for(runner), f'runner timeout missing: {runner}')
-            declared_inputs = cache.declared_input_paths(runner)
-            require(declared_inputs != (), f'invalid input declaration: {runner}')
-            require(set(declared_inputs or ()) <= bound.keys(), f'undeclared receipt input: {runner}')
-            require(cache.declared_input_fingerprint(runner) != '', f'unreadable declared input: {runner}')
-        if require_cache:
-            require(cache.cache_status(primary) == 'fresh', f'cache not fresh: {primary}')
-            cache_path = cache.cache_path_for(primary).relative_to(repo).as_posix()
-            require(cache_path in bound, f'cache bytes not bound: {cache_path}')
-        discovered.append({'path': note['path'], 'claim_id': cid, 'primary_runner': primary, 'helpers': sorted(helpers), 'graph_transitive_helpers': sorted(graph_transitive), 'packet_transitive_helpers': sorted(packet_helpers), 'citations': sorted(citations)})
-    # Check inventory closure independently of the caller's selected notes.
-    # Historical/non-scientific discovered Markdown needs an explicit reviewer
-    # disposition, never an inferred exception based on its directory name.
-    exemptions = record['non_science_notes']
-    require(isinstance(exemptions, list), 'non_science_notes must be explicit')
-    exempt_paths = set()
-    for item in exemptions:
-        name = item['path']
-        require(name in bound and name not in seen and name not in exempt_paths, 'unbound/duplicate non-science disposition')
-        require(isinstance(item['rationale'], str) and item['rationale'].strip(), 'non-science rationale required')
-        evidence(item['review_reference'])
-        exempt_paths.add(name)
-    affected = set()
-    for path in all_notes:
-        name = path.relative_to(repo).as_posix()
-        if name in changed:
-            affected.add(name)
-            continue
-        body = path.read_text()
-        primary = graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix())
-        if primary:
-            runners = {primary} | set(graph.helper_runner_paths_for_claim(graph.claim_id_from_path(path), primary))
-            runners.update('scripts/' + name + '.py' for name in packet.transitive_helpers(Path(primary).stem))
-            runner_inputs = set()
-            for runner in runners:
-                runner_inputs.update(cache.declared_input_paths(runner) or ())
-            if (runners | runner_inputs) & changed:
+    with memoized_discovery(repo, graph, cache, packet) as (discovery_statistics, observe_discovery):
+        ids = {}
+        all_notes = graph.discover_notes()
+        for path in all_notes:
+            observe_discovery(path)
+            ids.setdefault(graph.claim_id_from_path(path), []).append(path)
+        require(isinstance(record['notes'], list), 'notes must be an explicit list')
+        seen = set()
+        discovered = []
+        for note in record['notes']:
+            path = repo_file(repo, note['path'])
+            require(note['path'] in bound and note['path'] not in seen, 'unbound/duplicate note')
+            seen.add(note['path'])
+            cid = graph.claim_id_from_path(path)
+            require(cid == note['claim_id'] and len(ids.get(cid, [])) == 1, f'ambiguous/noncanonical claim ID: {cid}')
+            body = path.read_text()
+            declared = re.findall(r'^claim_id:\s*(\S+)\s*$', body.split('---', 2)[1] if body.startswith('---\n') else '', re.M)
+            require(len(declared) <= 1 and note['declared_claim_id'] == (declared[0] if declared else None), f'declared-to-canonical claim ID mapping mismatch: {cid}')
+            require(graph.extract_claim_type_hint(body)[1] == note['claim_type'] and note['claim_type'], f'Type extractor mismatch: {cid}')
+            primary = graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix())
+            require(primary and primary == note['primary_runner'] and primary in bound, f'primary runner mismatch/unbound: {cid}')
+            helpers = set(graph.helper_runner_paths_for_claim(cid, primary))
+            packet_helpers = {'scripts/' + name + '.py' for name in packet.transitive_helpers(Path(primary).stem)}
+            graph_transitive = set(graph.resolve_helper_runner_paths(primary))
+            require(packet_helpers == graph_transitive, f'packet/graph helper discovery disagreement: {cid}')
+            require(helpers == set(note['helpers']) and helpers <= categories['helpers'], f'undeclared/unbound packet helper: {cid}')
+            for target in graph.LINK_RE.findall(body):
+                if not re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:|#', target) and target.split('#')[0].endswith('.md'):
+                    require(graph.resolve_link_target(target.split('#')[0], path) is not None, f'unresolved source citation: {target}')
+            citations = {p.relative_to(repo).as_posix() for p in graph.extract_citations(body, path)}
+            require(citations == set(note['citations']) and citations <= bound.keys(), f'citation path/hash mapping mismatch: {cid}')
+            deps = set(note['repository_dependencies'])
+            require(deps <= citations and deps <= categories['parents'], f'unlinked/unbound repository dependency: {cid}')
+            for dependency in deps:
+                parent_id = graph.claim_id_from_path(repo / dependency)
+                require(len(ids.get(parent_id, [])) == 1, f'ambiguous parent claim ID: {parent_id}')
+            require(isinstance(note['dependency_rationale'], str) and note['dependency_rationale'].strip(), 'dependency rationale required, including empty dependency lists')
+            for runner in {primary} | helpers:
+                require(cache.declared_timeout_for(runner), f'runner timeout missing: {runner}')
+                declared_inputs = cache.declared_input_paths(runner)
+                require(declared_inputs != (), f'invalid input declaration: {runner}')
+                require(set(declared_inputs or ()) <= bound.keys(), f'undeclared receipt input: {runner}')
+                require(cache.declared_input_fingerprint(runner) != '', f'unreadable declared input: {runner}')
+            if require_cache:
+                require(cache.cache_status(primary) == 'fresh', f'cache not fresh: {primary}')
+                cache_path = cache.cache_path_for(primary).relative_to(repo).as_posix()
+                require(cache_path in bound, f'cache bytes not bound: {cache_path}')
+            discovered.append({'path': note['path'], 'claim_id': cid, 'primary_runner': primary, 'helpers': sorted(helpers), 'graph_transitive_helpers': sorted(graph_transitive), 'packet_transitive_helpers': sorted(packet_helpers), 'citations': sorted(citations)})
+        # Check inventory closure independently of the caller's selected notes.
+        # Historical/non-scientific discovered Markdown needs an explicit reviewer
+        # disposition, never an inferred exception based on its directory name.
+        exemptions = record['non_science_notes']
+        require(isinstance(exemptions, list), 'non_science_notes must be explicit')
+        exempt_paths = set()
+        for item in exemptions:
+            name = item['path']
+            require(name in bound and name not in seen and name not in exempt_paths, 'unbound/duplicate non-science disposition')
+            require(isinstance(item['rationale'], str) and item['rationale'].strip(), 'non-science rationale required')
+            evidence(item['review_reference'])
+            exempt_paths.add(name)
+        affected = set()
+        for path in all_notes:
+            name = path.relative_to(repo).as_posix()
+            if name in changed:
                 affected.add(name)
-    require(affected <= seen | exempt_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths)))
-    require(exempt_paths <= affected, 'non-science disposition outside affected note closure')
-    for name, expected in bound.items():
-        require(digest(repo_file(repo, name).read_bytes()) == expected, f'input changed during preflight: {name}')
-        require(git(repo, 'show', ':' + name) == repo_file(repo, name).read_bytes(), f'index changed during preflight: {name}')
-    require(not git(repo, 'diff', '--name-only').strip(), 'unstaged tracked changes during preflight')
-    require(git(repo, 'write-tree').decode().strip() == source['tree'], 'tree changed during preflight')
-    require(git(repo, 'rev-parse', 'HEAD').decode().strip() == source['commit'], 'commit changed during preflight')
-    for item in record['constituents']:
-        evidence(item['dispositions'])
-    evidence(reviewer['report'])
-    for item in exemptions:
-        evidence(item['review_reference'])
-    for ref in reviewer['references']:
-        evidence(ref)
-    return {'schema_version': 1, 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered}
+                continue
+            body = path.read_text()
+            primary = graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix())
+            if primary:
+                runners = {primary} | set(graph.helper_runner_paths_for_claim(graph.claim_id_from_path(path), primary))
+                runners.update('scripts/' + name + '.py' for name in packet.transitive_helpers(Path(primary).stem))
+                runner_inputs = set()
+                for runner in runners:
+                    runner_inputs.update(cache.declared_input_paths(runner) or ())
+                if (runners | runner_inputs) & changed:
+                    affected.add(name)
+        require(affected <= seen | exempt_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths)))
+        require(exempt_paths <= affected, 'non-science disposition outside affected note closure')
+        for name, expected in bound.items():
+            require(digest(repo_file(repo, name).read_bytes()) == expected, f'input changed during preflight: {name}')
+            require(git(repo, 'show', ':' + name) == repo_file(repo, name).read_bytes(), f'index changed during preflight: {name}')
+        require(set(graph.discover_notes()) == set(all_notes), 'discovered note inventory changed during preflight')
+        require(not git(repo, 'diff', '--name-only').strip(), 'unstaged tracked changes during preflight')
+        require(git(repo, 'write-tree').decode().strip() == source['tree'], 'tree changed during preflight')
+        require(git(repo, 'rev-parse', 'HEAD').decode().strip() == source['commit'], 'commit changed during preflight')
+        for item in record['constituents']:
+            evidence(item['dispositions'])
+        evidence(reviewer['report'])
+        for item in exemptions:
+            evidence(item['review_reference'])
+        for ref in reviewer['references']:
+            evidence(ref)
+        return {'schema_version': 1, 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'discovery_cache': discovery_statistics}
 
 
 def main():

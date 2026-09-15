@@ -1,5 +1,7 @@
 """Behavior checks using real graph/cache APIs inside small git repositories."""
 import hashlib
+import importlib.util
+from types import SimpleNamespace
 import json
 from pathlib import Path
 import shutil
@@ -262,6 +264,97 @@ class ReceiptTests(unittest.TestCase):
         self.record['notes'][0]['declared_claim_id'] = 'legacy-short'
         status, result = self.check()
         self.assertEqual(status, 0, result)
+
+
+class MemoizationTests(unittest.TestCase):
+    def setUp(self):
+        spec = importlib.util.spec_from_file_location('receipt_under_test', TOOL)
+        self.module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.module)
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.repo = Path(self.tmp.name)
+        (self.repo / 'scripts').mkdir()
+        self.path = self.repo / 'scripts/input.py'
+        self.path.write_text('before')
+        self.calls = {'graph':0, 'packet':0, 'inputs':0}
+        def graph(path):
+            self.calls['graph'] += 1
+            return {'helper'}
+        def packet(path):
+            self.calls['packet'] += 1
+            return {'helper'}
+        def inputs(path):
+            self.calls['inputs'] += 1
+            return ('data.txt',)
+        self.graph = SimpleNamespace(_parse_script_imports=graph)
+        self.packet = SimpleNamespace(parse_script_imports=packet)
+        self.cache = SimpleNamespace(declared_input_paths=inputs)
+        self.originals = (graph,packet,inputs)
+
+    def context(self):
+        return self.module.memoized_discovery(self.repo,self.graph,self.cache,self.packet)
+
+    def assert_restored(self):
+        self.assertIs(self.graph._parse_script_imports,self.originals[0])
+        self.assertIs(self.packet.parse_script_imports,self.originals[1])
+        self.assertIs(self.cache.declared_input_paths,self.originals[2])
+
+    def test_counts_fresh_copies_and_per_invocation_lifetime(self):
+        with self.context() as (stats, observe):
+            value=self.graph._parse_script_imports(self.path)
+            value.add('caller mutation')
+            for _ in range(4):
+                self.assertEqual(self.graph._parse_script_imports(self.path),{'helper'})
+                self.packet.parse_script_imports(self.path)
+                self.cache.declared_input_paths('scripts/input.py')
+            self.assertEqual(self.calls,{'graph':1,'packet':1,'inputs':1})
+            self.assertEqual(stats['graph_imports']['hits'],4)
+        self.assert_restored()
+        with self.context():
+            self.graph._parse_script_imports(self.path)
+        self.assertEqual(self.calls['graph'],2)
+
+    def test_existing_discovery_drift_and_restore(self):
+        with self.assertRaisesRegex(ValueError,'discovery input changed'):
+            with self.context():
+                self.graph._parse_script_imports(self.path)
+                self.path.write_text('changed after discovery')
+        self.assert_restored()
+
+    def test_absent_discovery_input_appears(self):
+        absent=self.repo/'scripts/absent.py'
+        with self.assertRaisesRegex(ValueError,'discovery input changed'):
+            with self.context():
+                self.graph._parse_script_imports(absent)
+                absent.write_text('now present')
+        self.assert_restored()
+
+    def test_unreturned_missing_import_appears(self):
+        # Actual parsers filter missing import targets, so directory generation
+        # must also catch a target that never appeared in their result set.
+        with self.assertRaisesRegex(ValueError,'discovery input changed'):
+            with self.context():
+                self.graph._parse_script_imports(self.path)
+                (self.repo/'scripts/previously_missing.py').write_text('new')
+        self.assert_restored()
+
+    def test_restore_on_body_failure(self):
+        with self.assertRaisesRegex(RuntimeError,'caller failure'):
+            with self.context():
+                self.graph._parse_script_imports(self.path)
+                raise RuntimeError('caller failure')
+        self.assert_restored()
+
+    def test_change_inside_actual_api_rejected(self):
+        def changing(path):
+            path.write_text('changed during actual parser')
+            return set()
+        self.graph._parse_script_imports=changing
+        with self.assertRaisesRegex(ValueError,'discovery input changed'):
+            with self.context():
+                self.graph._parse_script_imports(self.path)
+        self.assertIs(self.graph._parse_script_imports,changing)
 
 
 if __name__ == '__main__':

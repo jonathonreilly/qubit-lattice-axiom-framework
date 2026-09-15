@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "unit_id": "pr8090-preexecution",
+  "constituents": [
+    {
+      "id": "8090",
+      "head": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+      "delta_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/review-8090-preexecution.json",
+        "sha256": "fcded2da31c52d3e0fedc2626e2b0ae1f38f84c9ac8858267a8af3552d2537c1",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "7925eb36cae77ba2eda929e0065269dc2f1a45e8",
+    "commit": "7925eb36cae77ba2eda929e0065269dc2f1a45e8",
+    "tree": "93adf5fb48625f4e86cd9d3d40be309b912b364d",
+    "paths": [
+      {
+        "path": "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "26981972a85d18d4fe56fe1f168a4f36e2f3a1c1ac0e5c4d690b20bbbf8e81ce"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/README.md",
+        "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/1e74ed658ed7d4fb59fa41bda1717015f9964b359205d5365e8b8ae2a944828f.gz",
+        "sha256": "0f55b70b79b9f8c7edb38c9db4c9411e878d64bf2fdfacbcafd7759ec4305b76"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/2a03375dae27c726b8c425a09d41618e8b51305697edadf6e6a2c7cedec5a78f.gz",
+        "sha256": "34bf093d65fe2f6b809d54d89e801fafa8fc9d2690f069af4d9d91c5beacf0bf"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/43843d9818848747f0ef7122c941fd041d80a02d849601eaa2fef55473a477de.gz",
+        "sha256": "41b3d646cead3be34cfdea5b1b04ba66ea72aa47f989bd3aad6399a54bbb6374"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/446e302b09c7407531e3aa9f5c3bf5fabc45fe42eab5db2ce0a84f7d202da8cf.gz",
+        "sha256": "aac8c769693ecba69d11f7f5eb516776b356fcef94892b2a1107f1dacbe74db6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/4b9cb554583b53038dc6f69ee3751c40480f4bea72f98dc74590a5302f8a8486.gz",
+        "sha256": "0951e07292a06c1ebfb1d833e79e21192d763bbbc0f2a815b61f88f21898687e"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/5bed01ec6457d87df0c781defffcf171bfc78bd826dae0b4f0aef2d7db4c7185.gz",
+        "sha256": "2037bb9e674010c1413dfb6e6f11190651b6576616b76067e9d11f97f5d2f7d0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/749ff4deb2613f690c53b7df4e969ed5ab5a9f366ef67fc8a4d40905d0a8aafe.gz",
+        "sha256": "c2fb803be0f12408fef8ac3e4bd2fcc76e641b9f88f333a2e65ad0ac4fbf53c5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/775327788d4619ef48e989025f8fcf6b9d772499ccdab24eca4aa2b64ba52600.gz",
+        "sha256": "54ebc121df08e83c6134c3cc0f0639884a8a8bd7eea6db2ee5f013281efa425c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/7c49fbb742f15e20615facb477af05c35bf4f99a148863beec452a87f32a7519.gz",
+        "sha256": "325a858bd896f537e56afba410cf611a7477b43cd231d13d73534df22329a774"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/961abcdc55d0291872c50e554128da28e17d8caf428dc41f5cfa1cbaf3e3c413.gz",
+        "sha256": "831344d6eee4db55ff1db3c4d514011ca387391c912a608dd44ce68121a68f75"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/c610d828c1e425287ede7f8f5103c4f68576232a5004c0064e5efb4ba962972d.gz",
+        "sha256": "cd2980bc901ca2a844adcb200c46e7ddb65e728c9f2778b32acd6e628e8f3da1"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/cb26edaa75e7e8ada5d4f2032e41e927971637e4d977e7a33d49fbe394f6de41.gz",
+        "sha256": "fafd231af320b234f6d08c02f95b0fdca4913f96a5558c08be3d08173b54b574"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/df51a6eb6770202744e4a87fc8ad7d449ef70d671840ef34d6c082b37103b259.gz",
+        "sha256": "c05004f186a433b688294aa75acb89c683ec7a17b3b027f060588dc7ca671e37"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/_objects/fa61cd94ab839ff19758ea18ebe99baa3389c6b83562835338806f20dedb1ee8.gz",
+        "sha256": "41033a5e4386f3b866213b8acca206cbe9093e76993fbc2152c81ba28aac9ca9"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/archive-manifest.json",
+        "sha256": "f5b67ae42ceed61d289d33e71c9066469d1594bd14531ed1c28a40f0ad267d88"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8090-evidence/kept/pr8090-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "sha256": "3b4d3cc6f134a4d448e43bd618347564ac512e9501a91f043242c8ce24d94ef3"
+      },
+      {
+        "path": "logs/runner-cache/native_interacting_weyl_2026_09_13.txt",
+        "sha256": "44b90c1402fcfaef0d821dae1080134a4cc102a03b17a978a0005af0ec644ae7"
+      },
+      {
+        "path": "outputs/native_interacting_weyl_2026_09_13.json",
+        "sha256": "83cd033a2a3cfd15c92e0df95aa86e5dd70f91ee003a1e297f0639ed8df0a80d"
+      },
+      {
+        "path": "scripts/native_interacting_weyl_2026_09_13.py",
+        "sha256": "d3bcace05eae5ea904d580a18a0e768246ebac7b2daa392515c20aedc7dd4228"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+      },
+      {
+        "path": "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "26981972a85d18d4fe56fe1f168a4f36e2f3a1c1ac0e5c4d690b20bbbf8e81ce"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "240eaa1659578744c8a4d2a1d84836c3120c03fd63df544226a79b5dc8e36174"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8011",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/review-8090-preexecution.json",
+      "sha256": "fcded2da31c52d3e0fedc2626e2b0ae1f38f84c9ac8858267a8af3552d2537c1"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/independent-result.json",
+        "sha256": "0722e4de236959955458fea1bd3c9c033c243fc244ff4945c5fa61558eea5987"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/independent.py",
+        "sha256": "f4b6c51cb433bd7a797dd5906aa31e9b2b9774c908e0d3b10fdf1bb7864045c8"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/mutation-binding.json",
+        "sha256": "9b6836a4bac6897cd7acd2b6a6494a9c66168ca94a1b6856089d7ec6a6193477"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/8090-reviewer-archive-map.json",
+        "sha256": "c85ed2a9ec9e009c3a0398929a8946108d156113273af30724da7a842db4eb0f"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/external-source-bindings.json",
+        "sha256": "dd3e33a70b5c0006dc9b23687a7e01c095c657a448d91eac1a93a6685bf1acb9"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/weyl-v3.pdf",
+        "sha256": "f134741efd64544f1e5ba8a35abd8be6f993e3770b4dd64d799ec9d02b2ded55"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/lr-v3.pdf",
+        "sha256": "5c02efa5c26454eb10099bb9e210024c2ed402fba3016b568f28ab052ce4e87b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/check8090/original/outputs/native_interacting_weyl_2026_09_13.json",
+        "sha256": "83cd033a2a3cfd15c92e0df95aa86e5dd70f91ee003a1e297f0639ed8df0a80d"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_interacting_weyl_2026_09_13.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8090-evidence/kept/pr8090-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md"
+      ],
+      "dependency_rationale": "Current axiom memo supplies ontology; native edge/CAR parent supplies conditional finite code and nonbridge isometry. External RG theorem and even-CAR LR method separately bound. Hamiltonian, counterterm, state, controls and clocks are supplied."
+    }
+  ],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8090-evidence/README.md",
+      "rationale": "Reviewed historical checklist or archive navigation only; preserved original author scope, no live scientific theorem or executable claim.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8090-preexecution.json",
+        "sha256": "fcded2da31c52d3e0fedc2626e2b0ae1f38f84c9ac8858267a8af3552d2537c1"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8090-evidence/kept/pr8090-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "rationale": "Reviewed historical checklist or archive navigation only; preserved original author scope, no live scientific theorem or executable claim.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8090-preexecution.json",
+        "sha256": "fcded2da31c52d3e0fedc2626e2b0ae1f38f84c9ac8858267a8af3552d2537c1"
+      }
+    }
+  ],
+  "boundary": "Preexecution mechanical receipt only. Independent source corrections confirmed; no final review PASS or fresh execution claimed."
+}

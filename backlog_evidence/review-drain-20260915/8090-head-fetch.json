@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+  "fetched_ref": "refs/review-loop/fetched/8090-d34a524440e440d7a25e54387af5b00a",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-interacting-weyl-20260913",
+    "headRefOid": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+    "isDraft": false,
+    "number": 8090,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

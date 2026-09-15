@@ -1,0 +1,5 @@
+{
+  "verified": 14,
+  "base_sha256": "d3bcace05eae5ea904d580a18a0e768246ebac7b2daa392515c20aedc7dd4228",
+  "scope": "Every recorded unique substitution reconstructed and altered SHA verified; all recorded final error lines match expected mathematical predicates. Recovery source SHA and failure diagnostics verified; no new mutant executions."
+}

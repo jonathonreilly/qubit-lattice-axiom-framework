@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "checks": [
+    "Majorana_path_phase_1",
+    "Majorana_path_phase_2",
+    "Majorana_path_phase_3",
+    "actual_many_body_bond_norm_0",
+    "actual_many_body_bond_norm_1",
+    "actual_many_body_bond_norm_2",
+    "straight_cancellation_bent_nonzero",
+    "boundary_chain_majorant",
+    "RG_node_separation_comparability",
+    "uniform_complement_remainder_coefficient",
+    "negative_spectral_detailed_balance",
+    "all_digital_neighbor_conditions"
+  ],
+  "total_pass": 12,
+  "seconds": 0.03235958400182426,
+  "scope": "Independent exact tensor-CAR paths/bond norms, RG comparison constants, spectral balance and local kernel controls. External RG theorem retained as import; no primary executed."
+}

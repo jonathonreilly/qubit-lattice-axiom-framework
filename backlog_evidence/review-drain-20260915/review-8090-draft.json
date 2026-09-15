@@ -1,0 +1,32 @@
+{
+  "status": "PREEXECUTION_PENDING",
+  "reviewer_session": "/root/review_8011",
+  "original_head": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+  "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "source_commit": "7925eb36cae77ba2eda929e0065269dc2f1a45e8",
+  "coverage": "Complete canonical note and490-line primary read; all16historical paths inspected including two failed fixture recovery sources and original mutation harness delta.14mutant source substitutions/hash/observed predicates verified. Current native parent code/isometry full-read identity reused; current axiom/three primitives reviewed at exact context identity.",
+  "mathematical_assessment": "No material defect. Independent12 exact controls pass; protected CAR phases, many-body bond norms, boundary chain majorant, RG comparison constants, spectral detailed balance and global content-kernel range. Manual proof checks include protected open-box routes, continuing supported formation/nonexplosion, parity spectator, even-CAR LR/Duhamel chains, ground-state limit and fixed-time Poisson approximation.",
+  "external_sources": [
+    {
+      "url": "https://arxiv.org/pdf/1907.00682v3",
+      "path": "/private/tmp/review-drain-20260915/check8090/weyl-v3.pdf",
+      "sha256": "f134741efd64544f1e5ba8a35abd8be6f993e3770b4dd64d799ec9d02b2ded55",
+      "read_scope": "Sections2.2\u20132.3,Eq2.27,Theorem2.1 hypotheses and conclusion; not full RG proof audit"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1705.08553v3",
+      "path": "/private/tmp/review-drain-20260915/check8090/lr-v3.pdf",
+      "sha256": "5c02efa5c26454eb10099bb9e210024c2ed402fba3016b568f28ab052ce4e87b",
+      "read_scope": "Lemma3.3 statement/proof and equations3.28\u20133.31"
+    }
+  ],
+  "external_scope": "RG theorem hypotheses and stated conclusion verified, not full64-page proof audit. LR recursion statement and proof read. Small coupling/counterterm/state remain imported model data, no anomaly coefficient or physical selection claim.",
+  "remaining": [
+    "One actual60-second-cap153-check capture and output/cache final binding"
+  ],
+  "designated_regenerated_evidence": [
+    "outputs/native_interacting_weyl_2026_09_13.json",
+    "logs/runner-cache/native_interacting_weyl_2026_09_13.txt"
+  ],
+  "original_output_recovery": "check8090/original/outputs/native_interacting_weyl_2026_09_13.json preserved exact; frozen original head also retains it."
+}

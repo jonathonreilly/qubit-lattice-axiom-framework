@@ -1,0 +1,19 @@
+{
+  "pr": 8089,
+  "original_head": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+  "branch": "physics-loop/native-informative-record-20260913",
+  "landing": "3c71a35aee35ea0896f1c0de54c1cfad1c4a1c9e",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-informative-record-20260913",
+    "headRefOid": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8089,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8089"
+  }
+}

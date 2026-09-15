@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8090-final",
+  "tree": "47114429b535660319341039cdd184feb6b5f3f6",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_interacting_weyl_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8090-evidence/kept/pr8090-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4360
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4358
+    },
+    "declared_inputs": {
+      "hits": 8775,
+      "misses": 4491
+    }
+  },
+  "record_sha256": "f1847c68f96f62f06d205df8ded0aece9cde5a94c74080fc797673cbe455dc7d",
+  "checker_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187"
+}

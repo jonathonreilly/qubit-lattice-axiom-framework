@@ -84,3 +84,11 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 13 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–12 are open PRs #8034, #8035, #8138–#8142, #8146)
+Searched commit: `origin/main` = `af0fc1206d` (launch), `5aca149c42` (branch base).
+- `git grep -n -iE "edwards.wilkinson|stochastic heat|log-correlated|directed (random )?walk|parabolic scaling|roughening|kpz" origin/main -- 'docs/*.md'` → no hits.
+- `git grep -n -iE "record.side two-point|two-point function of the formation law|formation law.{0,40}two-point" origin/main -- 'docs/*.md'` → no hits.
+- `git grep -n -iE "1/\(4 ?pi ?r\)|lattice green function"` → the gravity lane's supplied asymptotic (`ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md` and consumers); no formation-law comparison.
+- Open PRs: #8137/#8096 (order dependence), #8140–#8145 (finite-clock Villain), the Codex native stack — none on the record-dynamics seam; #8093's verdict table lists it "to be tested".
+Classification: **open after the matched-hit review.** Routes: K-A the directed-path inverse of `I − A` (T1) — chosen; K-B the coincidence-probability series with elementary bounds (T2, T4) — chosen; K-C the symbol and the walk identity `p_{2n} = C(2n,n)/4^n · P_n` (T3) — chosen; K-D what forces `g = 1` (value translations; second-order sphere expansion; block 07's instance) (T5) — chosen; K-E the half-filled staggered sea of the campaign's own test design — not taken (needs the U1 lane's supplied state; the Gaussian instance answers the seam's counterexample branch exactly).

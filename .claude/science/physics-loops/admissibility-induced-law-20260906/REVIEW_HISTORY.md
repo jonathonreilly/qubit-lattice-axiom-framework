@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 13 — V1-V5 (supervisor, 2026-09-15)
+- V1: the derivation campaign's record-dynamics seam (#8093; "to be tested" in its verdict table): does a Laplacian or transverse kernel appear in the finished record statistics of a formation law with no tick supplied; the gravity node's input (a record statistic with a Green-function two-point function); the campaign's counterexample branch.
+- V2: the lens pass in `GOAL_block13.md` ("textbook linear growth" — answered by what is new at framework level; "the sphere linearization is not exact" — T5(b) is a statement about second-order coefficients only; "the gravity lane needs a `1/r` statistic" — this block says a causal linear rule cannot supply it).
+- V3: T1–T5 proved with explicit constants; executed exactly (23 checks, 15 mutations); the refuting pass agreed on five disjoint routes; three drafting/structural defects fixed before the census.
+- V4: no order, rule, gain or coupling selected; no ordered phase claimed; the reference theorem and the gravity asymptotic named and not used.
+- V5: consumers named — #8093's record-dynamics and assembly blocks; the gravity node; the campaign's queue.
+
+## block 13 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block13.md`): as V2. Primary: the note and the runner (23 checks, 15 mutations). Refuting pass (`CHECKER_block13_findings.md`): explicit inversion on 150 sites, the multinomial formula, brute-force enumeration of `6^m` walks, the harmonic bounds by a second route, a second chart for the Born expansion — all equal. Structural finding: the block is an independent PR against `main` (block 07 is the only load-bearing parent and is on `main`); a forbidden token in a quotation and a decimal string in the runner fixed. Author checks only; independent review pending.
+
+## block 13 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 07's note, all on `main` at `5aca149c42`; nothing pinned from a branch or PR (blocks 09 and 12 are context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the negatives are proved statements about the Gaussian instance; the sphere rule beyond second order is marked open; the Green-function contrast names the static object as the gravity lane's supplied asymptotic. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

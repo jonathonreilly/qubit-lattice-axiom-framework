@@ -1,0 +1,5 @@
+R1 explicit inversion of I - A on 150 sites: last-level covariance equals the level recursion: True
+R2 P_n from the multinomial-square formula equals the walk-count route for n <= 60: True
+R3 direct enumeration of all 6^m step sequences (m <= 8): p_m = C(2n,n)/4^n P_n for even m, 0 for odd: True
+R4 H_t/36 <= Var_t <= 1 + 2 H_{t-1} for t <= 60 (multinomial route): True
+R5 stereographic chart, Born overlap: log f = -(1/4) e^2 |u - v|^2 + O(3): True

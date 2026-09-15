@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 13, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the derivation campaign's record-dynamics seam (#8093): whether a Laplacian or transverse kernel appears in the finished record statistics of a formation law with no tick supplied; the gravity node's input"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the seam is answered exactly on the Gaussian instance: a heat kernel in level time (parabolic), never the lattice Green function; massless iff value-covariant, then log-correlated with no stationary law; the static massless law's rule is a massive formation rule (g = 1/2). Next: the sphere rule beyond second order; the campaign's assembly. Consumers: #8093; the gravity node; the campaign's queue"
+```

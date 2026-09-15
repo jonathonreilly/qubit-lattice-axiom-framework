@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 13 opening (2026-09-15)
+
+Block 13 opened for review (independent PR against main): the record two-point function of the causal Gaussian formation law. Blocks 06–12 remain open as PRs #8034, #8035, #8138–#8142, #8146. Ranked next:
+
+1. **The sphere rule beyond second order at strong coupling** (the nonlinear counterpart of T2b; needs block 12's obligation first) — hard.
+2. **The stability theorem re-proved at scope** (block 12, S6) — hard; a full session at least.
+3. **The static law's phase structure at strong coupling** (block 03's other side) — hard.
+4. **A structural reason for block 11's sextic pair; the `k ≥ 4` loci; the region boundary** — small.
+5. **Width 6; the silent triples; the random-priority law** — unchanged.

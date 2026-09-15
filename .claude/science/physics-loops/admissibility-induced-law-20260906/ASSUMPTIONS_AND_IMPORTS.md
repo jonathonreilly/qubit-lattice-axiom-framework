@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 13 (2026-09-15) — the causal Gaussian two-point function
+- Dependencies: `minimal_axioms`; block 07 (on main; the Gaussian instance, its precision `L†DL`, the recorded-set class, the real instance). Proposed, unaudited. Blocks 09 and 12 (open PRs) referenced for context only.
+- Named premises: the records-only reading; the monotone class; the Gaussian instance (a real value per site; equal weights on the three predecessors by covariance; `w, σ² > 0`); the level-0 records as the conditioning plane.
+- Scaffolding: level time and the projection to the transverse plane; the `5×5` transverse torus; the gains `1` and `1/2`; the Born and exponential overlaps for T5(b).
+- External methods (re-proved at scope in the note): the second-moment inequality, the quadratic-mean inequality, the torus representation of a return probability, the central binomial bounds, the walk-count identity.
+- References named, not used: the classical linear growth equation and its logarithmic roughness; the gravity lane's `1/(4π r)` asymptotic.
+- Counterfactual pass: a non-monotone order (recorded sets of size one and two at the boundary; the bulk kernel unchanged); the sphere rule beyond second order (non-Gaussian; not computed); zero gain (independent sites); a rule with unequal predecessor weights (not covariant).

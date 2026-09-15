@@ -1,0 +1,40 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T19:13:12.975037+00:00",
+  "current_main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "broad_framework_no_go": "FAIL_action_contract_and_explicit_constructive_escapes",
+  "checked_hypotheses": [
+    "invariant measure proof uses no moment or density assumption",
+    "all inner automorphisms differ from compact-unitary invariance",
+    "scalar, semisimple and Jordan one-input cases exhaust M2",
+    "proper noncommutative generated algebra is triangular by an explicit two-by-two argument",
+    "weak continuity at degenerate fixed-slot profiles yields tightness",
+    "word Gaussian is continuous and has exactly the generated algebra as support",
+    "inverse-corner equations define a unique intrinsic Borel feature",
+    "all ordered spectral pairs remove eigenvalue-label choices from the law",
+    "Borel support maximum achieved with exact non-tightness rather than a variance-only inference",
+    "old features survive neighbor append",
+    "initial seed obeys every own-site support condition",
+    "noncentral support is reached with strictly positive clock-event probability",
+    "common fiber identification, classical record-label interpretation and physical kinetic gap explicit"
+  ],
+  "verification_limits": [
+    "same author only",
+    "exact finite matrices challenge analytic results but do not execute infinite probability theorems",
+    "shared word/covariance helper declared",
+    "initial structural-equality failures preserved",
+    "no axiom interpretation, primitive update, quantum instrument or kinetic carrier supplied"
+  ],
+  "inputs": {
+    "notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md": "33d3137c879536034245e39668001ea040b2531aed5849e0cddac5472956dbdf",
+    "notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md": "c953a423fc2fc5eb63e4a7583d6f4874840c705aef99f863f32efd95aa0f5698",
+    "notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md": "10b872adcd85e72cb4b81e5e046ae007a12b2f46e2aeefbd8bfd8ded34b5900e",
+    "notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md": "22faf1ff221176d1a0f0c97da731f26866223439e184a0fa16553d4c8ef04e2e",
+    "evidence/block5_inverse_corner_support_check.json": "c837fa817bc7d8912e723bbe82349191806ac983273bc394e768141a17e524d9",
+    "evidence/block5_inverse_corner_support_check.txt": "b66df0699ac94ea8ed1bf2c7a45b1f984e1d56407a3674df7b1a2fd70c68f46e",
+    "evidence/block5_inverse_corner_support_check.py": "dfcd91bb844b790e6cb8b3707b15dde13096ef2ef6e655fb31bf3ae3b39af4b6",
+    "evidence/block5_algebra_naturality_check.txt": "5269ea09a875008b1f01ef9349909c47c7028dfc5bc0d57e86020243b1db9d47",
+    "evidence/block5_algebra_naturality_check.py": "9e9317c9eb3784db36f66d7a8b769633e89d387e51a7a7a56a306c39462ca08c",
+    "evidence/block5_algebra_naturality_check.json": "3ea3ff9ecd8c48f7ab7358b8852927ca973c409c83cfde63567e7ac40f3b3755"
+  }
+}

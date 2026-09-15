@@ -241,3 +241,18 @@ from wedge/contraction and a Fourier split. The counting identity is derived
 from Prufer words and exact coefficient extraction, with rational tail bounds.
 The external HLS and further RG searches remain routing, not imported proofs.
 Latest remote main check is still2ed54cb83a4cb6b336e7053e19c8010d5d2930d8.
+
+
+Block5 re-read the full minimal axioms and kinetic primitive. Inspected
+ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY through
+line180, including the correction and declared CQ contract, and re-read
+the possibility-covariance note's frame and invariant-probability sections.
+No full reading of the former or the latter's truncated appendix is claimed.
+
+A primary search located Generic subgroups of Lie groups, DOI
+10.1016/S0040-9383(00)00029-X, section3's related unipotent fixed-measure
+argument. The subsequent DOI open failed and was not retried. Only the
+search excerpt was read; no general Lie-group theorem is imported. The
+M2 proof is written directly using two explicit unipotent matrices and
+dominated convergence. The continuous/Borel support distinction and both
+kernel constructions have complete local proofs and explicit current scope.

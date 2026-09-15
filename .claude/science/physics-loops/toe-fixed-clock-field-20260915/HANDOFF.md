@@ -368,3 +368,39 @@ Finite symbol/tensor-register/source/count checks pass. One initial random
 fixture violated the declared energy cap and is preserved before its explicit
 normalization correction. No independent audit. Main remains2ed54cb on
 the latest remote check. Continue personally; deadline unchanged.
+
+
+## Block5: full-algebra naturality, sharp support classes, and reachable escape
+
+A no-moment unipotent-orbit proof shows every full-inner invariant Borel
+probability on M2(C) has central support. A one-input equivariant kernel
+has support in C[A]. Independent output-fiber naturality forces central
+output at every profile. These are declared internal action contracts,
+not selected interpretations of the current lattice covariance axiom.
+
+With a supplied common identification of site algebras, a Gaussian law
+on all input words through length3 is intrinsic under simultaneous real
+algebra automorphisms, continuous, and supported exactly on the generated
+algebra. Its support grows when records append. The existing finite-ancestor
+construction therefore gives global permanent records with ongoing support.
+An explicit compatible four-record seed has a positive-probability two-step
+extension whose conditional output has full support on M2(C). Empty-start
+centrality is not a theorem about every possible initial state.
+
+The word algebra is the SHARP maximal support for continuous simultaneous
+equivariant kernels. In the proper noncommutative (triangular) case, a
+diagonal conjugation degenerates inputs to a commuting profile; continuity
+and tightness rule out the opposite output corner. A merely Borel kernel
+can escape: add intrinsic inverse maps between the two spectral ranges of
+one recorded input. It has full support at every noncommuting profile.
+The explicit tE12 degeneration has output21 variance1/t^2 and probability
+inside radiusR equal to1-exp(-R^2*t^2), proving non-tightness directly.
+
+Exact shears, support ranks, real automorphism covariances, seed compatibility
+and inverse equations pass author checks. Two initial structural symbolic
+comparison failures are preserved with exact-zero diagnoses; canonical
+expansion/coefficient comparisons fix them without tolerances. No independent
+review. The N1-N8 packet rejects a framework-wide no-go: the group/regularity
+contracts remain declared, compatible seeds and common-fiber constructions
+survive, and the approved kinetic primitive has no matched physical carrier
+in these candidate processes. No axiom update is forced or adopted.

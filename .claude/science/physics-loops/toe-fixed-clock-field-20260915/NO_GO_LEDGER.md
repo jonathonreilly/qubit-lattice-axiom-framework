@@ -18,3 +18,11 @@ That series of upper estimates fails to converge for any positive fixed
 loop/edge constants. The true physical series has not been identified with
 those estimates or bounded below by them. Regrouping, parameter integrations
 and cancellation remain open; this is not an all-route no-go verdict.
+
+Block5: full-inner invariant probabilities are central; continuous
+simultaneous-equivariant kernels stay in the input-generated algebra.
+These exact conditional support statements are sharp, but a Borel
+inverse-corner law escapes the latter at triangular profiles, and compatible
+noncentral state data escape empty-start centrality. The internal action
+contract is not selected by the axiom wording. Framework-wide impossibility
+or a forced update FAILS the accompanying N1-N8 review.

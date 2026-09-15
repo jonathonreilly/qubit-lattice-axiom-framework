@@ -70,3 +70,13 @@ normalized tree sum can absorb it; the naive independent cycle-plus-forest
 count cannot. The actual mixed residual and connected block representation
 remain the next relevant targets. Do not spend a factorial normalization
 twice or confuse divergence of this majorant with physical divergence.
+
+
+Block5 native route: full-inner naturality gives exact probability support
+constraints, with a sharp distinction between continuous and merely Borel
+kernels. Positive record-generated kernels and a compatible seed show a
+concrete escape under a supplied common-fiber identification. This replaces
+an overbroad support obstruction with a checked map of action, regularity
+and state hypotheses. No selected naturality/regularity axiom or physical
+kinetic completion is supplied. Further native work must match an actual
+physical carrier, not repeat prepared-menu nonselection or attach a spectator.

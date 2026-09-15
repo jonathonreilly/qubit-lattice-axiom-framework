@@ -1,0 +1,64 @@
+{
+  "frozen_main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "original_pr_head": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+  "campaign_checkpoint": "24dd899464e2d353da36d2f5a5d72ccc77a5ca3e",
+  "claim_id": "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15",
+  "note": "docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "runner": "scripts/fixed_clock_transverse_spectral_concentration_2026_09_15.py",
+  "independent_review": "pending",
+  "input_status": "Complete unchanged periodic covariance proof is in this same main-based PR delta; no bare sibling conclusion or private receipt is consumed.",
+  "original_science_sha256": {
+    "docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48",
+    "docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "bfedf452ec4e5b4b19c7099cb4c5e7ebc69aca4198fbdfba1c8788647ddea237",
+    "logs/runner-cache/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.txt": "ca62b1ab2de75daabd78e092b916442bfc0ff6f7af64c02a1b4bf7a148691c51",
+    "logs/runner-cache/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.txt": "611bbf1c3f68f32a8abde817a04cf0accda713781d4a25225d5825756410971e",
+    "scripts/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.py": "383149767aec7c7ad0f5463bf675ec2ad1221022f3e340e2da523a23cdfc76f6",
+    "scripts/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.py": "79c876ced051c573e6829dc40c3de8fd5fca9367e56b6cdb6890eb6c1abc2087"
+  },
+  "incremental_graph_delta": {
+    "before_nodes": 5043,
+    "after_nodes": 5044,
+    "before_edges": 12520,
+    "after_edges": 12521,
+    "added_nodes": [
+      "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15"
+    ],
+    "removed_nodes": [],
+    "changed_nodes": []
+  },
+  "total_graph_delta_from_main": {
+    "before_nodes": 5041,
+    "after_nodes": 5044,
+    "before_edges": 12519,
+    "after_edges": 12521,
+    "added_nodes": [
+      "finite_clock_score_gaussian_maxwell_scaling_limit_bounded_theorem_note_2026-09-14",
+      "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15",
+      "periodic_finite_clock_villain_covariance_and_observable_masslessness_bounded_theorem_note_2026-09-14"
+    ],
+    "removed_nodes": [],
+    "changed_nodes": []
+  },
+  "source_inventory": {
+    "docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "da73e0b6c8bed29aff4297129ca2c8b6fc6d7c096905857cbd071d5f67c743ca",
+      "bytes": 32044,
+      "lines": 573
+    },
+    "scripts/fixed_clock_transverse_spectral_concentration_2026_09_15.py": {
+      "sha256": "031096cc0c3bed9837ef63355bea912a4a1bf0bd7294893c94c017d8abbe9330",
+      "bytes": 13919,
+      "lines": 303
+    },
+    "logs/runner-cache/fixed_clock_transverse_spectral_concentration_2026_09_15.txt": {
+      "sha256": "fe8fe560f9aba260f17dd339c19fdfe0e74ed9aac44d9c7932911b2169544e37",
+      "bytes": 3482,
+      "lines": 25
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "6e18251a49854a790a5e40472264275eb081aca7f9fa5cd4fa2dc383232e5589",
+      "bytes": 670273,
+      "lines": 20183
+    }
+  }
+}

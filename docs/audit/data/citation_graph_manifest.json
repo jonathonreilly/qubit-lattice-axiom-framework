@@ -1,6 +1,6 @@
 {
- "edge_count": 12520,
- "node_count": 5043,
+ "edge_count": 12521,
+ "node_count": 5044,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4953,6 +4953,10 @@
   "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "3ff62434e691",
+   "out_degree": 1
   },
   "fixed_field_complex_grown_basin_v2_note": {
    "deps_hash": "9b334c2c3616",

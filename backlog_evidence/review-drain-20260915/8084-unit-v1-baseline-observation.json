@@ -1,0 +1,11 @@
+{
+  "status": "INVALID_EXPECTED_CHECKER_DRIFT",
+  "result_file": "8084-unit-v1-forward-check-result.json",
+  "result_sha256": "9642626652f4bf0e7538f90b8c837892248560d9028920229cb7cda9a7cee994",
+  "record_file": "8084-unit-v1-forward-check.json",
+  "record_sha256": "785c6dbdc34d919af33f0301ce92224dd77a5c9de570f98042577a9b22a2c875",
+  "source_commit": "01c41b220bb3d1437d5d6ea65a24c3afa1506e1c",
+  "observed_elapsed_lower_bound_seconds": 101,
+  "approximate_file_timestamp_interval_seconds": 176.80183053016663,
+  "boundary": "Performance observation, not successful validation. Helper source changed during this mechanical trial and final self-hash guard correctly rejected it. Original science evidence and review reports unchanged; no science runner executed."
+}

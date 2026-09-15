@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "unit_id": "8084-mechanical-forward-check",
+  "constituents": [
+    {
+      "id": "8084",
+      "head": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+      "delta_base": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+    "commit": "f73f2660c14a175133dcb155102f8a16b13c44c4",
+    "tree": "052e292294a314b65a59855c617c9222f4058196",
+    "paths": [
+      {
+        "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "b5ee292289cd2c133fee8ceaf68452366ea0dc04e3570326cd643ed4b5674503"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/README.md",
+        "sha256": "9503ca4cfc05958dd89f2626804645ffb4233231d8959ea2e51bacc2bf992b53"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/RESULTS.json",
+        "sha256": "6f6f9eb7110f71f7e6edceddc9d198ba1b56e189ac05e51e21537e0e5becd938"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "a38e27dac57e225590353f6cfd1287de7134b54dfac4a4e6854537816ea9e719"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stderr.txt",
+        "sha256": "9b4d6a0f0738c699e655478b18bc4c427de0ac41e92b74d29c4a83ff9ff22708"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/cap_removed/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "89ace33b5409eb730109e99e3175c86fb8f73689290329ea7a9ffb1e9bf78040"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stderr.txt",
+        "sha256": "985986c2b8f9c102c193bc17985ef517cd8667e4f92f1492bc018328597d6cd2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/dissipator_factor_two/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "5c1b4d3f1006634a43cd00290d3ce2a368654b7b97c944fc859c9f3dd8c018ff"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stderr.txt",
+        "sha256": "4a7c8002659a3a1e47a60897240b812e3788fb91fe242f6a2a00e3ba07ac8330"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/energy_shift_reversed/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/native_feedback_collision_check_2026_09_13.py",
+        "sha256": "d5dc0ed68650723b9d29f02d9e73ee32fad1ac289fffba721e898027d3dd5130"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stderr.txt",
+        "sha256": "f46d77c7eb8413add4e713cf488895b1e36ff8abf212e91742d4bebad25eae04"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_filter_removed/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/native_feedback_collision_check_2026_09_13.py",
+        "sha256": "049f276e093a972017e91faeaf896f9cd87ebccce58c753ef92036e72cb190c5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stderr.txt",
+        "sha256": "60c2a4efbcaf5223cd30a6e732e03df9e7642cf0a2db5f08377cd1e36789c1d6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/feedback_loss_completed/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "e94de49e3d14285495cfd14da4d471d3ae490c62675c24cf7bb17076ef717632"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stderr.txt",
+        "sha256": "84d92a1cf3d607cefa6f3db9cddc173c4c8535cb378be76640a3bf1fbabae733"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/loss_sign_reversed/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/native_feedback_collision_check_2026_09_13.py",
+        "sha256": "bad4ff75d2d036bb4581a94c26aa1c9f5bfbc3443198594763d150fcda94d0bf"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stderr.txt",
+        "sha256": "bbc423396b9d993778515827a8069ca3e7a473ac444a09cc741e986e6b2b58c4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/original_free_replaced/stdout.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "441ff33fba7500b23f0089af6b8e685aaf00e3f6590d25963c5017bf41df6efa"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md",
+        "sha256": "33a10a6dda850a9ad18123728feabfb3bfa65fd547c24e7728f8555f27d5ca7f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+        "sha256": "9b6464360f34c6620d185f0f01aa66f27ded8f3caed819364ec950965268c45d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md",
+        "sha256": "334656ffc089267caa94cd8aaaff7ecaea09554c3549eb22c99d606f0010f42c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-TRACE_GATE.md",
+        "sha256": "b0f47216051941e63c36f5135fdb7fe62dcc710f73708f3f59277ae57a34f254"
+      },
+      {
+        "path": "logs/runner-cache/native_feedback_finite_apparatus_2026_09_13.txt",
+        "sha256": "6cd352e24b58177697c95a66890ede766bb2b2f3c92cce6bcb731f94539ab589"
+      },
+      {
+        "path": "scripts/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+      },
+      {
+        "path": "scripts/native_feedback_collision_check_2026_09_13.py",
+        "sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+      },
+      {
+        "path": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+        "sha256": "60101c13c5fe8d15c881937eb1c5a853a4ddad9280f290e03a946a3972f6ba4b"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+      },
+      {
+        "path": "scripts/native_feedback_collision_check_2026_09_13.py",
+        "sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+      },
+      {
+        "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "b5ee292289cd2c133fee8ceaf68452366ea0dc04e3570326cd643ed4b5674503"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "47beb5e26ece2e98b0dec58888ee7b959784c801bbd0c4369e7ad691d9cdfa5a"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "2b88c28ebbcc05a6b9363496ab8fe35c7dc75515a4ab907d6c1938b1d9a62380"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "57daee40fca42fafc592b5703c5421ede5141c96a2391e6e210c31477f9dcdcd"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "06c624b2bd77da00f404c7e31a125f5ce1db21a3483e7bc662cea0ae8afa3885"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+        "sha256": "9b6464360f34c6620d185f0f01aa66f27ded8f3caed819364ec950965268c45d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/mutations/RESULTS.json",
+        "sha256": "6f6f9eb7110f71f7e6edceddc9d198ba1b56e189ac05e51e21537e0e5becd938"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/native_feedback_cap_check_2026_09_13.py",
+        "sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d"
+      },
+      {
+        "path": "scripts/native_feedback_collision_check_2026_09_13.py",
+        "sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "47beb5e26ece2e98b0dec58888ee7b959784c801bbd0c4369e7ad691d9cdfa5a"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "2b88c28ebbcc05a6b9363496ab8fe35c7dc75515a4ab907d6c1938b1d9a62380"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "57daee40fca42fafc592b5703c5421ede5141c96a2391e6e210c31477f9dcdcd"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "06c624b2bd77da00f404c7e31a125f5ce1db21a3483e7bc662cea0ae8afa3885"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8011",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/review-8084.json",
+      "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+    },
+    "references": []
+  },
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/README.md",
+      "rationale": "Exact archived historical evidence or archive mapping, explicitly source-reviewed; no current theorem acceptance.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-CLAIM_STATUS_CERTIFICATE.md",
+      "rationale": "Exact archived historical evidence or archive mapping, explicitly source-reviewed; no current theorem acceptance.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md",
+      "rationale": "Exact archived historical evidence or archive mapping, explicitly source-reviewed; no current theorem acceptance.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+      "rationale": "Exact archived historical evidence or archive mapping, explicitly source-reviewed; no current theorem acceptance.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md",
+      "rationale": "Exact archived historical evidence or archive mapping, explicitly source-reviewed; no current theorem acceptance.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-TRACE_GATE.md",
+      "rationale": "Exact archived historical evidence or archive mapping, explicitly source-reviewed; no current theorem acceptance.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8084.json",
+        "sha256": "ed54e2682800f879df570d062e24b45e767812b2ee97005313b6ba52036e76fb"
+      }
+    }
+  ],
+  "notes": [
+    {
+      "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+      "helpers": [
+        "scripts/native_feedback_cap_check_2026_09_13.py",
+        "scripts/native_feedback_collision_check_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md",
+        "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+        "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "dependency_rationale": "Four declared current native-model parents supply construction context and definitions, read in full; general finite-apparatus inequalities proved in this note. Native instrument algebra is current inherited support, not autonomous transport or formation selection."
+    }
+  ],
+  "boundary": "Forward mechanical check of a completed immutable science review; additional tool/input snapshots do not amend its independent verdict."
+}

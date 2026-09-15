@@ -1,0 +1,49 @@
+{
+  "role": "author performance addendum; not independent verdict",
+  "baseline_commit": "01c41b220bb3d1437d5d6ea65a24c3afa1506e1c",
+  "prior_reports": "unchanged immutable evidence",
+  "baseline_status": {
+    "commit": "01c41b220bb3d1437d5d6ea65a24c3afa1506e1c",
+    "result_sha256": "9642626652f4bf0e7538f90b8c837892248560d9028920229cb7cda9a7cee994",
+    "status": "Expected final checker-drift failure after implementation changed; all other checks reached finalguard",
+    "observed_elapsed_lower_bound_sec": 101,
+    "exact_duration_measured": false
+  },
+  "optimized_elapsed_sec": 56.648917124955915,
+  "optimized_status": "ok",
+  "source_freeze": {
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+    "docs/audit/scripts/tests/test_review_receipt.py": "7c6e99b31e870929ec4b6692846759f80904ac8c678dc5689c620f04ba99b59b"
+  },
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8719,
+      "misses": 4296
+    },
+    "packet_imports": {
+      "hits": 8707,
+      "misses": 4294
+    },
+    "declared_inputs": {
+      "hits": 8745,
+      "misses": 4427
+    }
+  },
+  "preserved_guards": [
+    "actual dual resolvers",
+    "complete changed/affected-note closure",
+    "missing/invalid declared inputs",
+    "bound hashes/index/tree/record/checker identity",
+    "existing and absent discovery generation",
+    "all scanned notes and inventory",
+    "API restoration in finally"
+  ],
+  "tests": {
+    "count": 24,
+    "status": "pass",
+    "elapsed_sec": 11.071
+  },
+  "scientific_runner_executions": 0,
+  "duration_receipt_sha256": "44c67d7313b044e56588d21277613d4ce2e7a4682b986074ab3fb014af22c357"
+}

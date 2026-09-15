@@ -1,0 +1,98 @@
+{
+  "source_verdict": "PASS",
+  "scope": "Three-file performance-only addendum to immutable prior skill review",
+  "base": "01c41b220bb3d1437d5d6ea65a24c3afa1506e1c",
+  "source_paths": {
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+    "docs/audit/scripts/tests/test_review_receipt.py": "7c6e99b31e870929ec4b6692846759f80904ac8c678dc5689c620f04ba99b59b"
+  },
+  "inputs": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+  },
+  "prior_report": {
+    "path": "/private/tmp/review-drain-20260915/skill-efficiency-review.json",
+    "sha256": "6f29a818eb881972f38fc168672efc25621043c7717d698e0749a4efe21313b4"
+  },
+  "tests": "24 focused tests independently pass10.568s, including per-invocation/lifetime/copy/restoration/existing+absent+directory/inside-parser drift controls",
+  "cold_review": "Caches only actual three parser APIs. Returns fresh copies. Per-invocation lifetime; finally restores APIs. Existing/absent source and scripts-directory generation, all scanned notes, final discovered inventory, byte/index/tree/record/checker guards retained. No source parser reimplementation or affected-note coverage reduction.",
+  "real_forward_result": {
+    "schema_version": 1,
+    "mechanical_status": "ok",
+    "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+    "unit_id": "8084-mechanical-forward-check",
+    "tree": "052e292294a314b65a59855c617c9222f4058196",
+    "cache_checked": true,
+    "notes": [
+      {
+        "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "claim_id": "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13",
+        "primary_runner": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+        "helpers": [
+          "scripts/native_feedback_cap_check_2026_09_13.py",
+          "scripts/native_feedback_collision_check_2026_09_13.py"
+        ],
+        "graph_transitive_helpers": [
+          "scripts/native_feedback_cap_check_2026_09_13.py",
+          "scripts/native_feedback_collision_check_2026_09_13.py"
+        ],
+        "packet_transitive_helpers": [
+          "scripts/native_feedback_cap_check_2026_09_13.py",
+          "scripts/native_feedback_collision_check_2026_09_13.py"
+        ],
+        "citations": [
+          "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md",
+          "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+          "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md"
+        ]
+      }
+    ],
+    "discovery_cache": {
+      "graph_imports": {
+        "hits": 8719,
+        "misses": 4296
+      },
+      "packet_imports": {
+        "hits": 8707,
+        "misses": 4294
+      },
+      "declared_inputs": {
+        "hits": 8745,
+        "misses": 4427
+      }
+    },
+    "record_sha256": "785c6dbdc34d919af33f0301ce92224dd77a5c9de570f98042577a9b22a2c875",
+    "checker_sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf"
+  },
+  "real_forward_receipt": {
+    "path": "/private/tmp/review-drain-20260915/8084-unit-v1-optimized-duration.json",
+    "sha256": "44c67d7313b044e56588d21277613d4ce2e7a4682b986074ab3fb014af22c357",
+    "elapsed_sec": 56.648917124955915,
+    "exit_code": 0,
+    "source_unchanged": true
+  },
+  "baseline": {
+    "commit": "01c41b220bb3d1437d5d6ea65a24c3afa1506e1c",
+    "result_sha256": "9642626652f4bf0e7538f90b8c837892248560d9028920229cb7cda9a7cee994",
+    "status": "Expected final checker-drift failure after implementation changed; all other checks reached finalguard",
+    "observed_elapsed_lower_bound_sec": 101,
+    "exact_duration_measured": false
+  },
+  "performance_claim": "Real unchanged8084 record succeeded56.648917s. Baseline exceeded101s but completed with checker-drift failure and no exact duration; no exact speedup claimed. Cache counters demonstrate avoided repeated parsing, not less science coverage.",
+  "authority_delta": "Execution cost and mechanical source-generation guards only; prior science/acceptance boundary unchanged. Prior review immutable; no automatic retagging, science rerun or landing-gate waiver.",
+  "remaining_findings": [],
+  "scientific_runner_executions": 0,
+  "full_pipeline_runs": 0,
+  "source_tree": "fd0b08a8a0af58d5358e9e0c78b917d53546fc59",
+  "candidate_state": "Three changed paths staged; all working/index bytes verified equal to reviewed hash freeze"
+}

@@ -1,0 +1,100 @@
+[detached HEAD e687bda254] Land independently reviewed bounded PR8046 ramp source and history
+ Date: Tue Sep 15 10:14:59 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 84 files changed, 2719 insertions(+)
+ create mode 100644 docs/NATIVE_SAME_HAMILTONIAN_RAMP_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/AUTHOR_VERIFICATION_DRIVER.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/GRAPH.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/GRAPH.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/LIVE.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/LIVE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/MANIFEST.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/ORIGINAL_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/WRAPPER_CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/independent-canonical-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/independent-canonical-review/pr8046-independent-canonical-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/omit_derivatives.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/omit_derivatives.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/omit_derivatives.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/static_generator_grading.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/static_generator_grading.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/static_generator_grading.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/wrong_moving_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/wrong_moving_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/mutations/wrong_moving_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-cold-review/pr8046-originals-native-ramp-initial-ice-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-control/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-control/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-control/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-control/pr8046-originals-native-ramp-initial-ice-control-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-initial-ice-control/pr8046-originals-native-ramp-initial-ice-control-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-cold-review/CONTROL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-cold-review/MUTANT_DIFFS.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-cold-review/pr8046-originals-native-ramp-port-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/freeze.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/mutant_omit_derivatives.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/mutant_static_generator_grading.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/mutant_wrong_moving_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/omit_derivatives.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/omit_derivatives.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/pr8046-originals-native-ramp-port-controls-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/pr8046-originals-native-ramp-port-controls-REPORT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/static_generator_grading.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/static_generator_grading.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/wrong_moving_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-ramp-port-controls/wrong_moving_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-cold-proof/pr8046-originals-native-same-hamiltonian-ramp-cold-proof-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-cold-proof/pr8046-originals-native-same-hamiltonian-ramp-cold-proof-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-cold-proof/pr8046-originals-native-same-hamiltonian-ramp-cold-proof-ROOT_COMPARISON.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-root/STDERR
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-root/pr8046-originals-native-same-hamiltonian-ramp-root-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/originals/native-same-hamiltonian-ramp-root/pr8046-originals-native-same-hamiltonian-ramp-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-GRAPH_CONFIRMATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-ROOT_CANONICAL_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8046-same-hamiltonian-ramp-evidence/pr8046-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_same_hamiltonian_ramp_2026_09_08.txt
+ create mode 100644 outputs/native_same_hamiltonian_ramp_2026_09_08.json
+ create mode 100644 scripts/native_same_hamiltonian_ramp_2026_09_08.py
+ create mode 100644 scripts/native_same_hamiltonian_ramp_jets_2026_09_08.py
+FROZEN e687bda25419ac6d2c77d0224767f66d9ded7616 sources 84 inputs 96 notes 1

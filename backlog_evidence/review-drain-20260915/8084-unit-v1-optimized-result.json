@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "8084-mechanical-forward-check",
+  "tree": "052e292294a314b65a59855c617c9222f4058196",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_FEEDBACK_FINITE_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_feedback_finite_apparatus_2026_09_13.py",
+      "helpers": [
+        "scripts/native_feedback_cap_check_2026_09_13.py",
+        "scripts/native_feedback_collision_check_2026_09_13.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_feedback_cap_check_2026_09_13.py",
+        "scripts/native_feedback_collision_check_2026_09_13.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_feedback_cap_check_2026_09_13.py",
+        "scripts/native_feedback_collision_check_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/NATIVE_EDGE_RECORD_AMBIENT_GENERATOR_ERASURE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/NATIVE_EDGE_RECORD_OCCUPATION_FEEDBACK_SHARED_BATTERY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-HANDOFF.md",
+        "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-NO_GO_DISCIPLINE_CHECKLIST.md",
+        "docs/work_history/repo/review_feedback/pr8084-native-feedback-evidence/pr8084-REVIEW_HISTORY.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8719,
+      "misses": 4296
+    },
+    "packet_imports": {
+      "hits": 8707,
+      "misses": 4294
+    },
+    "declared_inputs": {
+      "hits": 8745,
+      "misses": 4427
+    }
+  },
+  "record_sha256": "785c6dbdc34d919af33f0301ce92224dd77a5c9de570f98042577a9b22a2c875",
+  "checker_sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf"
+}

@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python3",
+    "/private/tmp/review-drain-20260915/skill-efficiency/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/review-drain-20260915/unit8084-author-copy",
+    "--record",
+    "/private/tmp/review-drain-20260915/8084-unit-v1-forward-check.json",
+    "--cache"
+  ],
+  "elapsed_sec": 56.648917124955915,
+  "exit_code": 0,
+  "record_sha256": "785c6dbdc34d919af33f0301ce92224dd77a5c9de570f98042577a9b22a2c875",
+  "source_freeze": {
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+    "docs/audit/scripts/tests/test_review_receipt.py": "7c6e99b31e870929ec4b6692846759f80904ac8c678dc5689c620f04ba99b59b"
+  },
+  "source_unchanged": true,
+  "result_sha256": "80de99db83807505a360aa5dffdf4902ce9cab64ee17aeaf14331d42a47214d4",
+  "stderr": "",
+  "scientific_runner_executions": 0,
+  "baseline": {
+    "commit": "01c41b220bb3d1437d5d6ea65a24c3afa1506e1c",
+    "result_sha256": "9642626652f4bf0e7538f90b8c837892248560d9028920229cb7cda9a7cee994",
+    "status": "Expected final checker-drift failure after implementation changed; all other checks reached finalguard",
+    "observed_elapsed_lower_bound_sec": 101,
+    "exact_duration_measured": false
+  }
+}

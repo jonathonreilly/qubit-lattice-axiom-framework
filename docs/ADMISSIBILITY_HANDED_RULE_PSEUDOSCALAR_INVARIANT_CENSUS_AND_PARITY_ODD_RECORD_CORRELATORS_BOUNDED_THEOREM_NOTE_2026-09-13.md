@@ -105,7 +105,7 @@ claim_type_reason: "every statement is scoped to finite computation or the state
 
 ## Premises and declared objects
 
-**Axiom sentences used (quoted from `docs/MINIMAL_AXIOMS_2026-06-29.md` on
+**Axiom sentences used (quoted from the [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) on
 `origin/main`).** Lattice: sites are `Z^3` with six nearest neighbours,
 standard translations and proper cubic rotations. Qubit: the one-site algebra
 is `M_2(C)`; a `Cl(3,0)`-compatible real presentation is equivalent.
@@ -114,13 +114,13 @@ lattice translations and proper cubic rotations. For each site, the
 probability distribution over the possibilities is determined by, and varies
 with, the nearest-neighbor conditions." Record: a record locks exactly one
 admissible local possibility, one per site, permanent; only records are
-readable. The `realized_state_primitive` concerns a supplied law-admissible realized
+readable. The [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) concerns a supplied law-admissible realized
 state; this note neither derives such a global state nor verifies a full
 primitive model.
 
 **Alphabet.** The six axis Bloch vectors `+x, -x, +y, -y, +z, -z` as the
 possibilities at every site (the six-projector menu inside `M_2(C)` used by
-the formation-order note and the 2026-09-05 mirror note). The centre's
+the formation-order note and the [2026-09-05 mirror note](A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md)). The centre's
 neighbour condition is the arm configuration `q = (q_{+x}, ..., q_{-z})`, one
 letter per arm of the nearest-neighbour cross; there are `6^6 = 46,656` such
 configurations and `279,936` pairs `(v, q)` with `v` the centre's letter.

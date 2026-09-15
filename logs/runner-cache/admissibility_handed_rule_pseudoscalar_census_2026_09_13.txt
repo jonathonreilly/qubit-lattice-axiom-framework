@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_handed_rule_pseudoscalar_census_2026_09_13.py
 runner_sha256: 40387117315fe1b2dad93b870747b4a491ce97a337845e1430b947704d022b61
-input_fingerprint_sha256: 9ee559344a08f66fe5a58acc0114540051b6847f8f6ed80364f8f79f6151aee2
+input_fingerprint_sha256: 3ae4868a72f0c5c67b894fc09309cc2fc24796aee567bacf6f4c4eb115684eb5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 14.54
+elapsed_sec: 14.71
 status: ok
 ----- stdout -----
 PASS S1 cubic group has 48 elements, 24 proper and 24 improper

@@ -1,6 +1,6 @@
 {
- "edge_count": 13448,
- "node_count": 5899,
+ "edge_count": 13452,
+ "node_count": 5903,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15094,6 +15094,10 @@
    "deps_hash": "4692e4ec0e97",
    "out_degree": 5
   },
+  "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "f0a2bcb0bbbf",
+   "out_degree": 4
+  },
   "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": {
    "deps_hash": "0c13e845db90",
    "out_degree": 3
@@ -22567,6 +22571,18 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8104-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8106-evidence.kept.pr8106-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8106-evidence.kept.pr8106-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8106-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

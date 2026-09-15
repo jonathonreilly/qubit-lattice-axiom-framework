@@ -1,0 +1,761 @@
+{
+  "unit": "PR8109",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "source_final_verdict": "PASS",
+  "original_head": "cceb1220b1d89bedc8d24628844afb4b55c61d10",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "confirmation_base": "64402f54b06356cb9acf3e5631046e593cc83978",
+  "staged_tree": "4260d3fff5913df5914b2c1461af3b10b10c213b",
+  "findings": [
+    {
+      "id": "8109-packaging-1",
+      "status": "fixed and same-session confirmed",
+      "description": "Restore historical evidence link/recovery; all34 files preserved byte-exact."
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/CLAIM_STATUS_CERTIFICATE.md",
+      "original_status": "A",
+      "original_blob": "e23d6ca51a6dea3a5eb7899ef1300b2136ef9d74",
+      "original_sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe",
+        "blob": "e23d6ca51a6dea3a5eb7899ef1300b2136ef9d74"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/HANDOFF.md",
+      "original_status": "A",
+      "original_blob": "58c8b1de9ee54e9b62df4f58569cb8247ae9790d",
+      "original_sha256": "d09a45e9c5b3be53df512946dbd31cf2b852fb27d573deb6f36521362e03aeb1",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/HANDOFF.md",
+        "sha256": "d09a45e9c5b3be53df512946dbd31cf2b852fb27d573deb6f36521362e03aeb1",
+        "blob": "58c8b1de9ee54e9b62df4f58569cb8247ae9790d"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/MUTATION_RESULTS.json",
+      "original_status": "A",
+      "original_blob": "811da7952d6742767322864641c0b517e06c36b0",
+      "original_sha256": "e9f5713abcfb6c753958ec64e4affaf303fe9aac9bec5a62291f9cbd7fc02ce0",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/MUTATION_RESULTS.json",
+        "sha256": "e9f5713abcfb6c753958ec64e4affaf303fe9aac9bec5a62291f9cbd7fc02ce0",
+        "blob": "811da7952d6742767322864641c0b517e06c36b0"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/PRIMARY_RESULT.json",
+      "original_status": "A",
+      "original_blob": "71f625100222ee80a97b54f8e0b6a511f25d7599",
+      "original_sha256": "d2f64d119babac4aa1580574f40e536a683e6c523dab97ac590912ff8ddac9fd",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/PRIMARY_RESULT.json",
+        "sha256": "d2f64d119babac4aa1580574f40e536a683e6c523dab97ac590912ff8ddac9fd",
+        "blob": "71f625100222ee80a97b54f8e0b6a511f25d7599"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/READING_LEDGER.json",
+      "original_status": "A",
+      "original_blob": "1a10e52d603e0ac06507658911d8b98b8f6631f2",
+      "original_sha256": "97d1d2e671e064116da312283764b25ba8bf76d5b63a2dc8277234441cdb0d6e",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/READING_LEDGER.json",
+        "sha256": "97d1d2e671e064116da312283764b25ba8bf76d5b63a2dc8277234441cdb0d6e",
+        "blob": "1a10e52d603e0ac06507658911d8b98b8f6631f2"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/REVIEW_HISTORY.md",
+      "original_status": "A",
+      "original_blob": "fe1d3994343ce7226ded8387ab962f285da55f6f",
+      "original_sha256": "e96e78c62da5345914ccb0122a36fe1ff0918fa7f885b73a168f347a61bdfd7a",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/REVIEW_HISTORY.md",
+        "sha256": "e96e78c62da5345914ccb0122a36fe1ff0918fa7f885b73a168f347a61bdfd7a",
+        "blob": "fe1d3994343ce7226ded8387ab962f285da55f6f"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/TRACE_GATE.md",
+      "original_status": "A",
+      "original_blob": "e23d6ca51a6dea3a5eb7899ef1300b2136ef9d74",
+      "original_sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/TRACE_GATE.md",
+        "sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe",
+        "blob": "e23d6ca51a6dea3a5eb7899ef1300b2136ef9d74"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/Clifford_anticommutation.py.gz",
+      "original_status": "A",
+      "original_blob": "711fb6014bee48c7b47f2d7e6dce3f76ceb6de12",
+      "original_sha256": "1afc6d0727152f57e8a3eaf628fc55540bb96b192c77b728f51806fc3858df0d",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.py.gz",
+        "sha256": "1afc6d0727152f57e8a3eaf628fc55540bb96b192c77b728f51806fc3858df0d",
+        "blob": "711fb6014bee48c7b47f2d7e6dce3f76ceb6de12"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/Clifford_anticommutation.stderr.gz",
+      "original_status": "A",
+      "original_blob": "ba625d96078308e12717e8a0668f1794350d026d",
+      "original_sha256": "55c688605b5f6575d5484a27914b91a7ea4e3b31d3742d9aca8691560c3c15c3",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.stderr.gz",
+        "sha256": "55c688605b5f6575d5484a27914b91a7ea4e3b31d3742d9aca8691560c3c15c3",
+        "blob": "ba625d96078308e12717e8a0668f1794350d026d"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/Clifford_anticommutation.stdout.gz",
+      "original_status": "A",
+      "original_blob": "8de8c3029f86162c91485343f5815d1d67c82e8b",
+      "original_sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.stdout.gz",
+        "sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+        "blob": "8de8c3029f86162c91485343f5815d1d67c82e8b"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/affine_real_minimum_norm.py.gz",
+      "original_status": "A",
+      "original_blob": "8681cd09de0b73603f70cddffea5eb9d7a6e9659",
+      "original_sha256": "38b717e1a4e46826148cadd669bffdfc6353932eb7d4eb7c9dd1ce3249439007",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.py.gz",
+        "sha256": "38b717e1a4e46826148cadd669bffdfc6353932eb7d4eb7c9dd1ce3249439007",
+        "blob": "8681cd09de0b73603f70cddffea5eb9d7a6e9659"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/affine_real_minimum_norm.stderr.gz",
+      "original_status": "A",
+      "original_blob": "b5f621129628d4360f2f3c31cbc992a56aef2d80",
+      "original_sha256": "a8431376656e32c1834594019d2de16eb4638e1a283350e62f3ac24f4c0981f7",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.stderr.gz",
+        "sha256": "a8431376656e32c1834594019d2de16eb4638e1a283350e62f3ac24f4c0981f7",
+        "blob": "b5f621129628d4360f2f3c31cbc992a56aef2d80"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/affine_real_minimum_norm.stdout.gz",
+      "original_status": "A",
+      "original_blob": "6935d12119d535937fffbae3758e1892893029dd",
+      "original_sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.stdout.gz",
+        "sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+        "blob": "6935d12119d535937fffbae3758e1892893029dd"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/character_Gaussian_denominator.py.gz",
+      "original_status": "A",
+      "original_blob": "82544108a16825468311a1f0453d5937238cd8d1",
+      "original_sha256": "8431b1edd8f452f0eb38536bfa67e547a8a798a5ff302f70ff817fa79b6940c4",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.py.gz",
+        "sha256": "8431b1edd8f452f0eb38536bfa67e547a8a798a5ff302f70ff817fa79b6940c4",
+        "blob": "82544108a16825468311a1f0453d5937238cd8d1"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/character_Gaussian_denominator.stderr.gz",
+      "original_status": "A",
+      "original_blob": "224cee533bb86ba4984705a025e46d3e4a4af2fa",
+      "original_sha256": "ea112e7fa56ad08212b63568d74c5189dfbb8b7c0e48bcb7bc9f6ac40ae16ba0",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.stderr.gz",
+        "sha256": "ea112e7fa56ad08212b63568d74c5189dfbb8b7c0e48bcb7bc9f6ac40ae16ba0",
+        "blob": "224cee533bb86ba4984705a025e46d3e4a4af2fa"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/character_Gaussian_denominator.stdout.gz",
+      "original_status": "A",
+      "original_blob": "6935d12119d535937fffbae3758e1892893029dd",
+      "original_sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.stdout.gz",
+        "sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+        "blob": "6935d12119d535937fffbae3758e1892893029dd"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/cycle_directed_hopping_sign.py.gz",
+      "original_status": "A",
+      "original_blob": "8a0c44dc664823183f0fd3c65705980224ea6429",
+      "original_sha256": "c6d62806e7c4defec3a7cc5d9a78f8269de11e888e6a865cc5f50bcbeb880a8c",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.py.gz",
+        "sha256": "c6d62806e7c4defec3a7cc5d9a78f8269de11e888e6a865cc5f50bcbeb880a8c",
+        "blob": "8a0c44dc664823183f0fd3c65705980224ea6429"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/cycle_directed_hopping_sign.stderr.gz",
+      "original_status": "A",
+      "original_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.stderr.gz",
+        "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/cycle_directed_hopping_sign.stdout.gz",
+      "original_status": "A",
+      "original_blob": "84a26aab781a6152eafb8e84ee6c8fd8fbec1ac8",
+      "original_sha256": "b4f66b53a70f09e60cfa55ede4a3f633f203510cdcb787d6deec0a8a6edc29f6",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.stdout.gz",
+        "sha256": "b4f66b53a70f09e60cfa55ede4a3f633f203510cdcb787d6deec0a8a6edc29f6",
+        "blob": "84a26aab781a6152eafb8e84ee6c8fd8fbec1ac8"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/full_box_remainder_mass.py.gz",
+      "original_status": "A",
+      "original_blob": "8a31f54faf2ff584662153ba4156196d2ab7d929",
+      "original_sha256": "e1f6a29fd57ada2afdb6655e4189f9e9b732bb25618b4a101f7374f68a61c68b",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.py.gz",
+        "sha256": "e1f6a29fd57ada2afdb6655e4189f9e9b732bb25618b4a101f7374f68a61c68b",
+        "blob": "8a31f54faf2ff584662153ba4156196d2ab7d929"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/full_box_remainder_mass.stderr.gz",
+      "original_status": "A",
+      "original_blob": "a03adf200288136415ff7dfb7877fc5ea277aee0",
+      "original_sha256": "4d5d29526f15743f56f0d99c2126e799db93ddb96df0728a8942a7766b6bc5b6",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.stderr.gz",
+        "sha256": "4d5d29526f15743f56f0d99c2126e799db93ddb96df0728a8942a7766b6bc5b6",
+        "blob": "a03adf200288136415ff7dfb7877fc5ea277aee0"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/full_box_remainder_mass.stdout.gz",
+      "original_status": "A",
+      "original_blob": "8de8c3029f86162c91485343f5815d1d67c82e8b",
+      "original_sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.stdout.gz",
+        "sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+        "blob": "8de8c3029f86162c91485343f5815d1d67c82e8b"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/physical_source_factor.py.gz",
+      "original_status": "A",
+      "original_blob": "8f57abe5a4d070c24e6f225aef66f5838ca81358",
+      "original_sha256": "1207d3a9e59b6f700387a7858c90e4ca2b61b45965d4be158341b6ffdac43d0e",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.py.gz",
+        "sha256": "1207d3a9e59b6f700387a7858c90e4ca2b61b45965d4be158341b6ffdac43d0e",
+        "blob": "8f57abe5a4d070c24e6f225aef66f5838ca81358"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/physical_source_factor.stderr.gz",
+      "original_status": "A",
+      "original_blob": "b09bd94d42d483494ac30a76149d9799ca6658f2",
+      "original_sha256": "f53a001a17ac9eab5bcb1021d3de8fcf695b614fe5bc34f4129757aa8ba61402",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.stderr.gz",
+        "sha256": "f53a001a17ac9eab5bcb1021d3de8fcf695b614fe5bc34f4129757aa8ba61402",
+        "blob": "b09bd94d42d483494ac30a76149d9799ca6658f2"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/physical_source_factor.stdout.gz",
+      "original_status": "A",
+      "original_blob": "6935d12119d535937fffbae3758e1892893029dd",
+      "original_sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.stdout.gz",
+        "sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+        "blob": "6935d12119d535937fffbae3758e1892893029dd"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/single_cycle_edge_sign.py.gz",
+      "original_status": "A",
+      "original_blob": "dda152e0893c03a499bb85eeb891aae0c4e3a50b",
+      "original_sha256": "181914e8673db7ff4e5c7f78c4ed2f6bc3c9b20bc3fb8d8916c6f19421bba362",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.py.gz",
+        "sha256": "181914e8673db7ff4e5c7f78c4ed2f6bc3c9b20bc3fb8d8916c6f19421bba362",
+        "blob": "dda152e0893c03a499bb85eeb891aae0c4e3a50b"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/single_cycle_edge_sign.stderr.gz",
+      "original_status": "A",
+      "original_blob": "b82e6c1ba668c9d4d77ef9e8d07d18915a569a01",
+      "original_sha256": "9697d7f08e5327c059dc3516cb46521b552e6119b632c54c04fd1a7c51af165b",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.stderr.gz",
+        "sha256": "9697d7f08e5327c059dc3516cb46521b552e6119b632c54c04fd1a7c51af165b",
+        "blob": "b82e6c1ba668c9d4d77ef9e8d07d18915a569a01"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/single_cycle_edge_sign.stdout.gz",
+      "original_status": "A",
+      "original_blob": "8de8c3029f86162c91485343f5815d1d67c82e8b",
+      "original_sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.stdout.gz",
+        "sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+        "blob": "8de8c3029f86162c91485343f5815d1d67c82e8b"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/spatial_Villain_scaling.py.gz",
+      "original_status": "A",
+      "original_blob": "98adb579d64040665e5eb8fcbaa2759a1881dc26",
+      "original_sha256": "207ace9a08ca0f8c5b2d1e525c07bd930ba9f22e59dc6bcff81392aaccf2651d",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.py.gz",
+        "sha256": "207ace9a08ca0f8c5b2d1e525c07bd930ba9f22e59dc6bcff81392aaccf2651d",
+        "blob": "98adb579d64040665e5eb8fcbaa2759a1881dc26"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/spatial_Villain_scaling.stderr.gz",
+      "original_status": "A",
+      "original_blob": "651ee91b5780210859b5b2b126311b202ad5ad0f",
+      "original_sha256": "b6cd76b177042d1384ceda65efc64400789e1e9a8bbc077e1ec984d6ea54d498",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.stderr.gz",
+        "sha256": "b6cd76b177042d1384ceda65efc64400789e1e9a8bbc077e1ec984d6ea54d498",
+        "blob": "651ee91b5780210859b5b2b126311b202ad5ad0f"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/spatial_Villain_scaling.stdout.gz",
+      "original_status": "A",
+      "original_blob": "2a51e08f0828e4de04f08f0bd468f7d3982bee42",
+      "original_sha256": "ca178a97d0240b71c0c3e32a108a32b40b6cdff08f50c10bcae3abe08df801e2",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.stdout.gz",
+        "sha256": "ca178a97d0240b71c0c3e32a108a32b40b6cdff08f50c10bcae3abe08df801e2",
+        "blob": "2a51e08f0828e4de04f08f0bd468f7d3982bee42"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/temporal_Villain_scaling.py.gz",
+      "original_status": "A",
+      "original_blob": "7436aa1a411583d174910c5e3045d0db92367f89",
+      "original_sha256": "83a37ae09d9d441f7007299376c6d761e277006374d53e91a777cc7436a7b772",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.py.gz",
+        "sha256": "83a37ae09d9d441f7007299376c6d761e277006374d53e91a777cc7436a7b772",
+        "blob": "7436aa1a411583d174910c5e3045d0db92367f89"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/temporal_Villain_scaling.stderr.gz",
+      "original_status": "A",
+      "original_blob": "59c370a2c9eaca3738638d8abbc7197e697010d0",
+      "original_sha256": "91d30239c365ee811565e9c92eab1abdcee3d4cc7cb835cf3833d312150cf0eb",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.stderr.gz",
+        "sha256": "91d30239c365ee811565e9c92eab1abdcee3d4cc7cb835cf3833d312150cf0eb",
+        "blob": "59c370a2c9eaca3738638d8abbc7197e697010d0"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block3/mutation_evidence/temporal_Villain_scaling.stdout.gz",
+      "original_status": "A",
+      "original_blob": "2a51e08f0828e4de04f08f0bd468f7d3982bee42",
+      "original_sha256": "ca178a97d0240b71c0c3e32a108a32b40b6cdff08f50c10bcae3abe08df801e2",
+      "disposition": "accepted unchanged as explicitly historical recovery evidence",
+      "final": {
+        "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.stdout.gz",
+        "sha256": "ca178a97d0240b71c0c3e32a108a32b40b6cdff08f50c10bcae3abe08df801e2",
+        "blob": "2a51e08f0828e4de04f08f0bd468f7d3982bee42"
+      },
+      "coverage": "Full record or full decompressed mutation delta/outcome inspected; no live helper or additional theorem premise."
+    },
+    {
+      "original_path": "docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_status": "A",
+      "original_blob": "b61069a1ec984115738bb4a89c3951337af6aa36",
+      "original_sha256": "bb985be0582919c1d35596d19de057c6490ea7846e1e01fad955e4990038e257",
+      "final": {
+        "path": "docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "e9c0bbb664755ecf869f11a5e3eb24b6b3d8fb63552fca351fcc4edb44f56183",
+        "blob": "47cde6e1802b22f0bf095f6ac69f91ce4daf7b14"
+      },
+      "disposition": "accepted with historical evidence relink only",
+      "coverage": "Complete source read; self-contained proofs/current constraints/negative witnesses/transfer boundaries or complete runner/cache."
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_status": "M",
+      "original_blob": "747bf0b75a4c1c452731fa2b6b803e54db96920f",
+      "original_sha256": "97b493e26883fa45c3dbb49107597850ec226fcca0002bc43bd62a7767547da1",
+      "disposition": "superseded generated manifest; preserve current main and regenerate combined gate",
+      "recovery": "cceb1220b1d89bedc8d24628844afb4b55c61d10:docs/audit/data/citation_graph_manifest.json",
+      "coverage": "Original complete delta is one added node, unchanged edge count; no scientific proof or source lost."
+    },
+    {
+      "original_path": "logs/runner-cache/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.txt",
+      "original_status": "A",
+      "original_blob": "cd10d38110a4bf5132028a7a03655ec5702790a9",
+      "original_sha256": "c60b692e6bd87ed59aa6cae53a928c39934f9d6017dace40ce49d3578285348f",
+      "final": {
+        "path": "logs/runner-cache/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.txt",
+        "sha256": "c60b692e6bd87ed59aa6cae53a928c39934f9d6017dace40ce49d3578285348f",
+        "blob": "cd10d38110a4bf5132028a7a03655ec5702790a9"
+      },
+      "disposition": "accepted unchanged",
+      "coverage": "Complete source read; self-contained proofs/current constraints/negative witnesses/transfer boundaries or complete runner/cache."
+    },
+    {
+      "original_path": "scripts/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.py",
+      "original_status": "A",
+      "original_blob": "725b8928ec66def57d128c20e7c172bd0f00115d",
+      "original_sha256": "1b6d1f65dc894be66590e15c9d7a82a3bd028fa19365f6a28424c70f0e77f6da",
+      "final": {
+        "path": "scripts/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.py",
+        "sha256": "1b6d1f65dc894be66590e15c9d7a82a3bd028fa19365f6a28424c70f0e77f6da",
+        "blob": "725b8928ec66def57d128c20e7c172bd0f00115d"
+      },
+      "disposition": "accepted unchanged",
+      "coverage": "Complete source read; self-contained proofs/current constraints/negative witnesses/transfer boundaries or complete runner/cache."
+    }
+  ],
+  "final_paths": [
+    {
+      "path": "docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "e9c0bbb664755ecf869f11a5e3eb24b6b3d8fb63552fca351fcc4edb44f56183",
+      "blob": "47cde6e1802b22f0bf095f6ac69f91ce4daf7b14"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe",
+      "blob": "e23d6ca51a6dea3a5eb7899ef1300b2136ef9d74"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/HANDOFF.md",
+      "sha256": "d09a45e9c5b3be53df512946dbd31cf2b852fb27d573deb6f36521362e03aeb1",
+      "blob": "58c8b1de9ee54e9b62df4f58569cb8247ae9790d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/MUTATION_RESULTS.json",
+      "sha256": "e9f5713abcfb6c753958ec64e4affaf303fe9aac9bec5a62291f9cbd7fc02ce0",
+      "blob": "811da7952d6742767322864641c0b517e06c36b0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/PRIMARY_RESULT.json",
+      "sha256": "d2f64d119babac4aa1580574f40e536a683e6c523dab97ac590912ff8ddac9fd",
+      "blob": "71f625100222ee80a97b54f8e0b6a511f25d7599"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/READING_LEDGER.json",
+      "sha256": "97d1d2e671e064116da312283764b25ba8bf76d5b63a2dc8277234441cdb0d6e",
+      "blob": "1a10e52d603e0ac06507658911d8b98b8f6631f2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/README.md",
+      "sha256": "61cc3525a9a43b5e0ab63999a830a06fe8fcfe11c8608cfd6b19dc0d5aecd3e8",
+      "blob": "07d16d63ad0222df21247cecb3672565bfe9c656"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/REVIEW_HISTORY.md",
+      "sha256": "e96e78c62da5345914ccb0122a36fe1ff0918fa7f885b73a168f347a61bdfd7a",
+      "blob": "fe1d3994343ce7226ded8387ab962f285da55f6f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/TRACE_GATE.md",
+      "sha256": "85320ed5584b4fd90f5461798ebfdf76e646fd34f99eaebfb086fa9e6cfd64fe",
+      "blob": "e23d6ca51a6dea3a5eb7899ef1300b2136ef9d74"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.py.gz",
+      "sha256": "1afc6d0727152f57e8a3eaf628fc55540bb96b192c77b728f51806fc3858df0d",
+      "blob": "711fb6014bee48c7b47f2d7e6dce3f76ceb6de12"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.stderr.gz",
+      "sha256": "55c688605b5f6575d5484a27914b91a7ea4e3b31d3742d9aca8691560c3c15c3",
+      "blob": "ba625d96078308e12717e8a0668f1794350d026d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.stdout.gz",
+      "sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+      "blob": "8de8c3029f86162c91485343f5815d1d67c82e8b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.py.gz",
+      "sha256": "38b717e1a4e46826148cadd669bffdfc6353932eb7d4eb7c9dd1ce3249439007",
+      "blob": "8681cd09de0b73603f70cddffea5eb9d7a6e9659"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.stderr.gz",
+      "sha256": "a8431376656e32c1834594019d2de16eb4638e1a283350e62f3ac24f4c0981f7",
+      "blob": "b5f621129628d4360f2f3c31cbc992a56aef2d80"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.stdout.gz",
+      "sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+      "blob": "6935d12119d535937fffbae3758e1892893029dd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.py.gz",
+      "sha256": "8431b1edd8f452f0eb38536bfa67e547a8a798a5ff302f70ff817fa79b6940c4",
+      "blob": "82544108a16825468311a1f0453d5937238cd8d1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.stderr.gz",
+      "sha256": "ea112e7fa56ad08212b63568d74c5189dfbb8b7c0e48bcb7bc9f6ac40ae16ba0",
+      "blob": "224cee533bb86ba4984705a025e46d3e4a4af2fa"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.stdout.gz",
+      "sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+      "blob": "6935d12119d535937fffbae3758e1892893029dd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.py.gz",
+      "sha256": "c6d62806e7c4defec3a7cc5d9a78f8269de11e888e6a865cc5f50bcbeb880a8c",
+      "blob": "8a0c44dc664823183f0fd3c65705980224ea6429"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.stdout.gz",
+      "sha256": "b4f66b53a70f09e60cfa55ede4a3f633f203510cdcb787d6deec0a8a6edc29f6",
+      "blob": "84a26aab781a6152eafb8e84ee6c8fd8fbec1ac8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.py.gz",
+      "sha256": "e1f6a29fd57ada2afdb6655e4189f9e9b732bb25618b4a101f7374f68a61c68b",
+      "blob": "8a31f54faf2ff584662153ba4156196d2ab7d929"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.stderr.gz",
+      "sha256": "4d5d29526f15743f56f0d99c2126e799db93ddb96df0728a8942a7766b6bc5b6",
+      "blob": "a03adf200288136415ff7dfb7877fc5ea277aee0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.stdout.gz",
+      "sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+      "blob": "8de8c3029f86162c91485343f5815d1d67c82e8b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.py.gz",
+      "sha256": "1207d3a9e59b6f700387a7858c90e4ca2b61b45965d4be158341b6ffdac43d0e",
+      "blob": "8f57abe5a4d070c24e6f225aef66f5838ca81358"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.stderr.gz",
+      "sha256": "f53a001a17ac9eab5bcb1021d3de8fcf695b614fe5bc34f4129757aa8ba61402",
+      "blob": "b09bd94d42d483494ac30a76149d9799ca6658f2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.stdout.gz",
+      "sha256": "c1e6ecea48c71988171b2c11a13c1766757b22072ddad3cba4a23c00866e626d",
+      "blob": "6935d12119d535937fffbae3758e1892893029dd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.py.gz",
+      "sha256": "181914e8673db7ff4e5c7f78c4ed2f6bc3c9b20bc3fb8d8916c6f19421bba362",
+      "blob": "dda152e0893c03a499bb85eeb891aae0c4e3a50b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.stderr.gz",
+      "sha256": "9697d7f08e5327c059dc3516cb46521b552e6119b632c54c04fd1a7c51af165b",
+      "blob": "b82e6c1ba668c9d4d77ef9e8d07d18915a569a01"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.stdout.gz",
+      "sha256": "c783084180ca27608f298e90ab57b54c87c9345f9c18e0a9b9289271d0ab1d9f",
+      "blob": "8de8c3029f86162c91485343f5815d1d67c82e8b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.py.gz",
+      "sha256": "207ace9a08ca0f8c5b2d1e525c07bd930ba9f22e59dc6bcff81392aaccf2651d",
+      "blob": "98adb579d64040665e5eb8fcbaa2759a1881dc26"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.stderr.gz",
+      "sha256": "b6cd76b177042d1384ceda65efc64400789e1e9a8bbc077e1ec984d6ea54d498",
+      "blob": "651ee91b5780210859b5b2b126311b202ad5ad0f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.stdout.gz",
+      "sha256": "ca178a97d0240b71c0c3e32a108a32b40b6cdff08f50c10bcae3abe08df801e2",
+      "blob": "2a51e08f0828e4de04f08f0bd468f7d3982bee42"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.py.gz",
+      "sha256": "83a37ae09d9d441f7007299376c6d761e277006374d53e91a777cc7436a7b772",
+      "blob": "7436aa1a411583d174910c5e3045d0db92367f89"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.stderr.gz",
+      "sha256": "91d30239c365ee811565e9c92eab1abdcee3d4cc7cb835cf3833d312150cf0eb",
+      "blob": "59c370a2c9eaca3738638d8abbc7197e697010d0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.stdout.gz",
+      "sha256": "ca178a97d0240b71c0c3e32a108a32b40b6cdff08f50c10bcae3abe08df801e2",
+      "blob": "2a51e08f0828e4de04f08f0bd468f7d3982bee42"
+    },
+    {
+      "path": "logs/runner-cache/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.txt",
+      "sha256": "c60b692e6bd87ed59aa6cae53a928c39934f9d6017dace40ce49d3578285348f",
+      "blob": "cd10d38110a4bf5132028a7a03655ec5702790a9"
+    },
+    {
+      "path": "scripts/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.py",
+      "sha256": "1b6d1f65dc894be66590e15c9d7a82a3bd028fa19365f6a28424c70f0e77f6da",
+      "blob": "725b8928ec66def57d128c20e7c172bd0f00115d"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "role": "authority/context comparison only; no theorem premise imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "role": "authority/context comparison only; no theorem premise imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "role": "authority/context comparison only; no theorem premise imported"
+    },
+    {
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md",
+      "sha256": "4f9661cbd486b814a2c4ac2d8b04c4171eb80dc9d87444f2d91d1dc2b041e1a5",
+      "blob": "bc70bf80c69d957804e54eabd4f8e54b0fb60748",
+      "role": "authority/context comparison only; no theorem premise imported"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "6ac606cf7120b90f2061c65aad6ba6cea0d17d0e13a116dfafc01f8f662df8c3",
+      "blob": "1e98f6b0fd8c213fd735dd3b6e3b7f809e94c757",
+      "role": "authority/context comparison only; no theorem premise imported"
+    }
+  ],
+  "scientific_runtime_file_inputs": [],
+  "current_main_loss_check": "All38 final paths additions; no modifications/deletions of current main; generated original manifest deferred to combined regeneration.",
+  "independent_checks": {
+    "different_Clifford_trace": "1/32",
+    "entire_finite_tail_over_leading": 1.2882527075448773e-07,
+    "scalar_group_q1": -5.9664553427165005e-06,
+    "temporal_N": [
+      2,
+      3,
+      6
+    ],
+    "spatial_symbolic_generator": "K*(1 - c)",
+    "status": "PASS"
+  },
+  "primary_execution": {
+    "exit_code": 0,
+    "elapsed_seconds": 1.0372912909369916,
+    "timeout": 90
+  },
+  "primary_stderr_sha256": "9cd4b18788f8b0af5554fd0c49631652e81d2f741a609dbb03cc7b91af8a43a2",
+  "report_sha256": "07ad1fb0015262464cbc47bbc4ac972cb31a3debeabe04284307b7c59b41a6b2",
+  "pipeline_count": 0,
+  "audit_status": "not applied; combined mechanical gate deferred",
+  "external_references": [
+    "https://dlmf.nist.gov/20.13",
+    "https://arxiv.org/html/2609.07886v2"
+  ],
+  "prior_reviews_reused": "No PR8108 PASS used as scientific authority; no sibling theorem input.",
+  "disposition_map_sha256": "7bac85e48b8d4b19fc5d2e44dbd39a944680e347a8e6722580837056258f81d8"
+}

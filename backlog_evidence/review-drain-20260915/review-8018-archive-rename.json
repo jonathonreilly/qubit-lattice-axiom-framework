@@ -1,0 +1,393 @@
+{
+  "verdict": "PASS",
+  "scope": "same-session affected packaging confirmation only; no science rerun",
+  "prior_report_sha256": "88a63739d1d0de1c5a0c3281e2377026c154f6e149bdb866a93bf860c8246c41",
+  "prior_markdown_sha256": "68f673b057b80b16febaf959c031c195c3c4a301a74592f08dddc940313261c8",
+  "prior_tree": "3c89da4eb1f5897eddee66ce304e214b0a48929d",
+  "final_tree": "c401e375da338fa848a3ae370b6d85584123ba6c",
+  "rename_count": 14,
+  "rename_map": [
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/PREREGISTRATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-PREREGISTRATION.md",
+      "sha256": "d43666bdca168a347bbc2580ca3dbb116dbf17814910c0bf2af9f5cfd0f06d39"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/DERIVATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-DERIVATION.md",
+      "sha256": "faf43e61b567dfd3da4b4e3c2af1a15652167a08dd983d4f11d2cd02c9aa4b6b"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/PREREGISTRATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-PREREGISTRATION.md",
+      "sha256": "2292d6cd28025e364460cbef6508ee3d0e0217ace141584c1a7ced0ab3284dc1"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/DERIVATION_PRECOMPUTATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION_PRECOMPUTATION.md",
+      "sha256": "dd192d12b42f33f2c5ac785c3773d88790adebdd826c0883a7f7ff0437ab7624"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/DERIVATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION.md",
+      "sha256": "3f4276722f671fa984081d93e2304451a07a438a435460bee8f29be6d6d2e656"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/PREREGISTRATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PREREGISTRATION.md",
+      "sha256": "a705c11aa4278d6909ae6be5e250158bf359d801b578892585b87d6d66359637"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+      "sha256": "12a23bc5f5ad18264b586c0c70165daaf0f5c745c65122b70c0e2e729048e65a"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/PRIMARY_PROOF_INTERFACE_REVIEW.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PRIMARY_PROOF_INTERFACE_REVIEW.md",
+      "sha256": "73537f963c0f1af1d1f011ed40e2e282af531f67460465a9532f32d4d5372bc9"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/INDEPENDENT_COMPARISON.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-INDEPENDENT_COMPARISON.md",
+      "sha256": "faab3e1408d56bacb2bbc0afaf4f3501b15afe39ea120a42c95f4bde2b674511"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/WORD_CONTROL_PREREGISTRATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_PREREGISTRATION.md",
+      "sha256": "931470e1fed252355a25b242d32ddf52f0e961c8ec48ad0798f14e3f513aa754"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/DERIVATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-DERIVATION.md",
+      "sha256": "d0b1f62abf2cff973330a1399109b9b662666e604b1920d20514645d13c9190d"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/PREREGISTRATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-PREREGISTRATION.md",
+      "sha256": "b8a0fdaaee71bc171935ee87271dcba30fb93941463f78af87ddfdbb4a8f50f3"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/DERIVATION.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-DERIVATION.md",
+      "sha256": "95b2f8dd73b6ba62a0d08ea96c45bd9cae53e6d5858329215d07c735bcaed921"
+    },
+    {
+      "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/REVIEW.md",
+      "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/pr8018-primary-ground-review-REVIEW.md",
+      "sha256": "969042bbd20ec542df28084e9b72aac7d77bb3808fc075af63cf4018fea359bc"
+    }
+  ],
+  "complete_36_original_archive_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/DERIVATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/DERIVATION.md",
+      "blob": "37f139b578a34e55c2c4a1618afa0f834446c72d",
+      "sha256": "d0b1f62abf2cff973330a1399109b9b662666e604b1920d20514645d13c9190d",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/HASHES.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/HASHES.json",
+      "blob": "ea05b388dbfb7cebd5abf7d35a385a1061a30fba",
+      "sha256": "474ec6f90099ea25bd0b67d1ec7538b5e4e0cb424ad889c6c10d5056c1e202c6",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/INDEPENDENT_COMPARISON.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/INDEPENDENT_COMPARISON.md",
+      "blob": "f65509395fbda0d3d05a88894ff1158acce83127",
+      "sha256": "faab3e1408d56bacb2bbc0afaf4f3501b15afe39ea120a42c95f4bde2b674511",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-INDEPENDENT_COMPARISON.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/PREREGISTRATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/PREREGISTRATION.md",
+      "blob": "16e93ebc42e5b39c63ca69a3e6b10da7c5d08525",
+      "sha256": "a705c11aa4278d6909ae6be5e250158bf359d801b578892585b87d6d66359637",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/PRIMARY_PROOF_INTERFACE_REVIEW.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/PRIMARY_PROOF_INTERFACE_REVIEW.md",
+      "blob": "874288a76688809c23f95c2a06cc63f649cb118d",
+      "sha256": "73537f963c0f1af1d1f011ed40e2e282af531f67460465a9532f32d4d5372bc9",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PRIMARY_PROOF_INTERFACE_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+      "blob": "8f85d42b8d28d8fa8653f8847690ca6b8d36c894",
+      "sha256": "12a23bc5f5ad18264b586c0c70165daaf0f5c745c65122b70c0e2e729048e65a",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/WORD_CONTROL_PREREGISTRATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/WORD_CONTROL_PREREGISTRATION.md",
+      "blob": "bbbf4127a1e78f9f9d981b6ed2b59e7e2e2d8bde",
+      "sha256": "931470e1fed252355a25b242d32ddf52f0e961c8ec48ad0798f14e3f513aa754",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/check.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/check.py",
+      "blob": "73bfe814049ee2c7e78d7564f3dc66b3c825eb66",
+      "sha256": "87f80d84ce39a6c2af35c38a6ccf294de8a09901854bf3bc58e7cc08ce8c354d",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/result.json",
+      "blob": "9ff07551b6da7d5558243c9a8bc3de778cf85328",
+      "sha256": "e3264fbed65edfd00667efcafb36eb2484d3e229bb6beff1955c03e0414c5436",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/tensor_checks.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/tensor_checks.py",
+      "blob": "c6ece46af98d907459c33a0ccd5c2d975d8e52f1",
+      "sha256": "d847e2b342081163f25c856d997994103c516854f78313778d2b4550dd953016",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/tensor_checks.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/tensor_result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/tensor_result.json",
+      "blob": "aa42f8340b472adccbec86c6710dbce4441d05f2",
+      "sha256": "3b8a6a28024c02c52e8ebaac5ff3c8d23737ce752d7b2e18607395055c517183",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/tensor_result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/word_control.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control.py",
+      "blob": "1938714201da9de671ba9f3876d5e0855d4c5798",
+      "sha256": "cb17d61c3dafd3fdc757b582c89cbe9cb3bfe88db3984a74da74179043ba139c",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/word_control_nonzero.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_nonzero.py",
+      "blob": "be79d1d900c2ff11fbcbd0d5297c557e2baa7659",
+      "sha256": "a999b7f767c7ab173a1d6b780e789883b559de336e8d0efd41a860013bbccfb6",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_nonzero.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/word_control_nonzero_result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_nonzero_result.json",
+      "blob": "5f9b858ffca8121b906cae91c43c720f6d5df46d",
+      "sha256": "56d67f0206012f41a2c2de9287c34314573e664d9d673d6ec362347f3e82dbb5",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_nonzero_result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/native-ground/word_control_result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_result.json",
+      "blob": "f0d164c175996ad45a19876c835731c7b2529132",
+      "sha256": "da7a8a5c9917e9ebf26fe79b6139780b93ff718aab3e7d36c21c15bdd9f05d8b",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/DERIVATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/DERIVATION.md",
+      "blob": "84770b9af9e36aec1dfb73f545ec1d18ea937ffa",
+      "sha256": "3f4276722f671fa984081d93e2304451a07a438a435460bee8f29be6d6d2e656",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/DERIVATION_PRECOMPUTATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/DERIVATION_PRECOMPUTATION.md",
+      "blob": "a1bff1158bded610693ced03bbdb3c7dd2446526",
+      "sha256": "dd192d12b42f33f2c5ac785c3773d88790adebdd826c0883a7f7ff0437ab7624",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION_PRECOMPUTATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/FREEZE_RECEIPT.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/FREEZE_RECEIPT.json",
+      "blob": "72dbd392b6bfca02afd6071e5a041d3c6413de48",
+      "sha256": "d283a53cf469da8213840ca59bc4e543945d438f2c28fc9f4126aa7cdea4769b",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/FREEZE_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/POST_FREEZE_COMPARISON.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/POST_FREEZE_COMPARISON.json",
+      "blob": "363f30250ddb4409360273b811fc9580727bb900",
+      "sha256": "be39985cbdec80035fb2d1d95554217e09d1ce2ee4479417354640494facd06d",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/POST_FREEZE_COMPARISON.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/PREREGISTRATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/PREREGISTRATION.md",
+      "blob": "259b667a2770d5b19cc2362a92ba610d52f2aff6",
+      "sha256": "2292d6cd28025e364460cbef6508ee3d0e0217ace141584c1a7ced0ab3284dc1",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/check.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/check.py",
+      "blob": "b6401d9540412f553a80107b7ff5aef98bde2264",
+      "sha256": "ce8bbd97d90da6ab5e49056e517b723dadbfc407bd93f089f6778a6610d58f22",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/orbital-excited/result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/result.json",
+      "blob": "a02914b6f1d1f1976f1de9cbb557dc9333894ff6",
+      "sha256": "3488966020de2897c24cbc0cd0b178c5644e0c93b07082dae11ec20288d65ea7",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-excited/COMPARISON.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/COMPARISON.json",
+      "blob": "86a0a703ff8923e7dea45a5355c0475ad4143488",
+      "sha256": "bc5ba05b2c7dc2bb50e3884ccdf001e183d2d4ecba42e0876d8e35849eae9237",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/COMPARISON.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-excited/DERIVATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/DERIVATION.md",
+      "blob": "31475838333c7f04d542181384b82d1c4dfaabf6",
+      "sha256": "faf43e61b567dfd3da4b4e3c2af1a15652167a08dd983d4f11d2cd02c9aa4b6b",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-excited/HASHES.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/HASHES.json",
+      "blob": "13240b8397acfd685cdee18961e0016859d9a850",
+      "sha256": "db042a193c2811b81018b2eeab8a2396953ce53c2d4f94e21015fc361115b60a",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-excited/PREREGISTRATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/PREREGISTRATION.md",
+      "blob": "d1534a358025dffda9629dc9dd98db7ddc50a872",
+      "sha256": "d43666bdca168a347bbc2580ca3dbb116dbf17814910c0bf2af9f5cfd0f06d39",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-excited/check.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/check.py",
+      "blob": "03f71da758292e641efd344aec5076285223a26e",
+      "sha256": "737938740b421c7f2e1e2ecee8f5b3d2d79d9b43a11835c679bf6bd909657612",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-excited/result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/result.json",
+      "blob": "a0b13c14b36198b8a2396a5461c230559a00aa12",
+      "sha256": "01cef80eed08d5767b9159136b1b975e23750c92104693c9f887fb694836d8c1",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground-review/HASHES.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/HASHES.json",
+      "blob": "4ee2edfb490c948f79354e5b6e2bebd19038cf71",
+      "sha256": "f53d588148f19c19fdd19cd4a0b4dcb033cf9f23a6711387c01f829224763eb5",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground-review/REVIEW.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/REVIEW.md",
+      "blob": "3c176c10958c692af2cb7460b53fb88df990c0b0",
+      "sha256": "969042bbd20ec542df28084e9b72aac7d77bb3808fc075af63cf4018fea359bc",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/pr8018-primary-ground-review-REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground/DERIVATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/DERIVATION.md",
+      "blob": "31cd142c04fa2ea0f13f1f4d47018a4e7fecf467",
+      "sha256": "95b2f8dd73b6ba62a0d08ea96c45bd9cae53e6d5858329215d07c735bcaed921",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground/HASHES.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/HASHES.json",
+      "blob": "bb83510cfda98379ca3fc58e28e9678a8b24e2d5",
+      "sha256": "a0161a50bdd0998639a42b8b5c22962ee798059e3bf1cb92fcc5d9bbbb40a314",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground/INDEPENDENT_COMPARISON.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/INDEPENDENT_COMPARISON.json",
+      "blob": "33d4803f51b041d016a9d41b2264ee7d8c8bd7eb",
+      "sha256": "4700bd55fbfda3c92941ad6a53f020f3b3e83fcd52b9702c3e903d422c7aea24",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/INDEPENDENT_COMPARISON.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground/PREREGISTRATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/PREREGISTRATION.md",
+      "blob": "8ba68086d912a7086c5b5b89263f725f40eab3ee",
+      "sha256": "b8a0fdaaee71bc171935ee87271dcba30fb93941463f78af87ddfdbb4a8f50f3",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground/check.py",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/check.py",
+      "blob": "2e84180102a99c756ff09dce583821f973a612b8",
+      "sha256": "d5e42d3ff46a672991d9d506c9004b7eb0b340492105f875e6756440e37173be",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/spatial-wilson-correction-20260907/frozen-staging/evidence/primary-ground/result.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/result.json",
+      "blob": "175959cb9ee9e566b8cf81fa20d63e930f41f910",
+      "sha256": "25cd3742569c3eabca2ff1032904212bdf786581f22f48f611982d759482fc10",
+      "new_final_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/result.json"
+    }
+  ],
+  "README_sha256": "0251d6f5a31721363ba57239b7d0e8bd3d8ffc3665dff0a0867e52a41e635364",
+  "unchanged_content_paths": [
+    "docs/GAUGE_WILSON_CUBE_SLAB_FIRST_SPECTRAL_CORRECTIONS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_CUBE_SLAB_TWO_SOURCE_CUBIC_CANCELLATION_RATE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/audit/scripts/build_citation_graph.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-DERIVATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/HASHES.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-INDEPENDENT_COMPARISON.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PREREGISTRATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PRIMARY_PROOF_INTERFACE_REVIEW.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_PREREGISTRATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/check.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/result.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/tensor_checks.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/tensor_result.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_nonzero.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_nonzero_result.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/word_control_result.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION_PRECOMPUTATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/FREEZE_RECEIPT.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/POST_FREEZE_COMPARISON.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-PREREGISTRATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/check.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/result.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/COMPARISON.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-DERIVATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/HASHES.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-PREREGISTRATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/check.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/result.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/HASHES.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/pr8018-primary-ground-review-REVIEW.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-DERIVATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/HASHES.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/INDEPENDENT_COMPARISON.json",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-PREREGISTRATION.md",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/check.py",
+    "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/result.json",
+    "logs/runner-cache/gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07.txt",
+    "logs/runner-cache/gauge_wilson_cube_slab_first_spectral_corrections_2026_09_07.txt",
+    "logs/runner-cache/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.txt",
+    "scripts/audit_packet_script_deps.py",
+    "scripts/gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07.py",
+    "scripts/gauge_wilson_cube_slab_first_spectral_corrections_2026_09_07.py",
+    "scripts/gauge_wilson_cube_slab_two_source_cubic_cancellation_check_2026_09_07.py"
+  ],
+  "checks": [
+    "all14 renamed bytes match prior independently reviewed hashes",
+    "all36 originals recovered exactly after composed mapping",
+    "all other prior47path source/cache bytes unchanged except README mapping",
+    "all staged files equal worktree",
+    "all14 README links resolve",
+    "original report and original archive-map not edited"
+  ],
+  "original_archive_map_sha256": "82c70c26296e6c0c4e58fb540da93dda0edd53ee7ec678d1ddd7fcfeb694020a"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/PREREGISTRATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-PREREGISTRATION.md",
+    "sha256": "d43666bdca168a347bbc2580ca3dbb116dbf17814910c0bf2af9f5cfd0f06d39"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/DERIVATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-excited/pr8018-primary-excited-DERIVATION.md",
+    "sha256": "faf43e61b567dfd3da4b4e3c2af1a15652167a08dd983d4f11d2cd02c9aa4b6b"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/PREREGISTRATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-PREREGISTRATION.md",
+    "sha256": "2292d6cd28025e364460cbef6508ee3d0e0217ace141584c1a7ced0ab3284dc1"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/DERIVATION_PRECOMPUTATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION_PRECOMPUTATION.md",
+    "sha256": "dd192d12b42f33f2c5ac785c3773d88790adebdd826c0883a7f7ff0437ab7624"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/DERIVATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/orbital-excited/pr8018-orbital-excited-DERIVATION.md",
+    "sha256": "3f4276722f671fa984081d93e2304451a07a438a435460bee8f29be6d6d2e656"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/PREREGISTRATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PREREGISTRATION.md",
+    "sha256": "a705c11aa4278d6909ae6be5e250158bf359d801b578892585b87d6d66359637"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md",
+    "sha256": "12a23bc5f5ad18264b586c0c70165daaf0f5c745c65122b70c0e2e729048e65a"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/PRIMARY_PROOF_INTERFACE_REVIEW.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-PRIMARY_PROOF_INTERFACE_REVIEW.md",
+    "sha256": "73537f963c0f1af1d1f011ed40e2e282af531f67460465a9532f32d4d5372bc9"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/INDEPENDENT_COMPARISON.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-INDEPENDENT_COMPARISON.md",
+    "sha256": "faab3e1408d56bacb2bbc0afaf4f3501b15afe39ea120a42c95f4bde2b674511"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/WORD_CONTROL_PREREGISTRATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-WORD_CONTROL_PREREGISTRATION.md",
+    "sha256": "931470e1fed252355a25b242d32ddf52f0e961c8ec48ad0798f14e3f513aa754"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/DERIVATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/native-ground/pr8018-native-ground-DERIVATION.md",
+    "sha256": "d0b1f62abf2cff973330a1399109b9b662666e604b1920d20514645d13c9190d"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/PREREGISTRATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-PREREGISTRATION.md",
+    "sha256": "b8a0fdaaee71bc171935ee87271dcba30fb93941463f78af87ddfdbb4a8f50f3"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/DERIVATION.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground/pr8018-primary-ground-DERIVATION.md",
+    "sha256": "95b2f8dd73b6ba62a0d08ea96c45bd9cae53e6d5858329215d07c735bcaed921"
+  },
+  {
+    "old_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/REVIEW.md",
+    "new_path": "docs/work_history/repo/review_feedback/pr8018-spectral-correction-evidence/primary-ground-review/pr8018-primary-ground-review-REVIEW.md",
+    "sha256": "969042bbd20ec542df28084e9b72aac7d77bb3808fc075af63cf4018fea359bc"
+  }
+]

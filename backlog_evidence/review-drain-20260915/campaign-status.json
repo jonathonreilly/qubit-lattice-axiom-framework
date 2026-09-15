@@ -1,9 +1,9 @@
 {
   "scope": "Original inventory116non-draft PRs;11drafts excluded; new arrivals not absorbed",
-  "landed_pr_count": 38,
-  "main": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "landed_pr_count": 42,
+  "main": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
   "workflow": "Prior efficiency changes verified remote; stage-manifest and dependent-base lifecycle fixes reviewed, landed, installed sync4994b354ed",
-  "current_validation": "train10 fourunits84sourcepaths4notes",
+  "current_validation": "train11 three units102sourcepaths5notes",
   "no_final_completion_claim": true,
   "prs": [
     {
@@ -104,7 +104,7 @@
     {
       "number": 8040,
       "original_head": "2699dd9a380178ca79f4626f5a978d169f1a07b9",
-      "state": "independently reviewed; train10 validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8041,
@@ -524,17 +524,17 @@
     {
       "number": 8124,
       "original_head": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
-      "state": "independently reviewed; train10 validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8125,
       "original_head": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
-      "state": "independently reviewed; train10 validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8126,
       "original_head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
-      "state": "independently reviewed; train10 validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8127,

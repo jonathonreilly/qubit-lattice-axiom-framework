@@ -1,0 +1,17 @@
+{
+  "source": "review-8126.json",
+  "note": "Runtime helper hashes independently bound by immutable report and cache; explicit coordinator receipt supplement, no source change.",
+  "landed": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+  "verified": [
+    {
+      "path": "scripts/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_released7333_fixture_2026_09_10.py",
+      "sha256": "8d2e071da05f0e540c8ec061b5dbea6cb996040a33b90efcd2f6e11b73d52cd2",
+      "role": "supplied finite matrix construction definition; fully read helper and used supplier definitions"
+    },
+    {
+      "path": "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+      "sha256": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445",
+      "role": "supplied finite matrix construction definition; fully read helper and used supplier definitions"
+    }
+  ]
+}

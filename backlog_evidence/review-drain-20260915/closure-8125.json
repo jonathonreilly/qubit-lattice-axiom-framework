@@ -1,0 +1,24 @@
+{
+  "pr": 8125,
+  "original_head": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+  "branch": "physics-loop/periodic-gaussian-matrix-codec-20260914",
+  "landing": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/periodic-gaussian-matrix-codec-20260914",
+    "headRefOid": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8125,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+    "state": "CLOSED"
+  }
+}

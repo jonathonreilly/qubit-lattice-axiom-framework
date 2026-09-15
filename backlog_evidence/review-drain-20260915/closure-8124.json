@@ -1,0 +1,24 @@
+{
+  "pr": 8124,
+  "original_head": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+  "branch": "physics-loop/gaussian-transfer-canonical-log-20260914",
+  "landing": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/gaussian-transfer-canonical-log-20260914",
+    "headRefOid": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8124,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+    "state": "CLOSED"
+  }
+}

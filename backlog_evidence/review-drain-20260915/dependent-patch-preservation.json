@@ -1,0 +1,51 @@
+[
+  {
+    "original": "closure-8038-child-8065-original.patch",
+    "gzip": "closure-8038-child-8065-original.patch.gz",
+    "original_sha256": "9bce5ecc649a8b7de96590fac0f2b84a994ece29a50989114904ce47e27a609e",
+    "gzip_sha256": "77e23e38da4c732db6a22da87de48f866070fc87aff6d494cd13517eb2fd569d",
+    "original_bytes": 297355
+  },
+  {
+    "original": "closure-8038-child-8044-original.patch",
+    "gzip": "closure-8038-child-8044-original.patch.gz",
+    "original_sha256": "f6a64709fd5cf4ddb42e73ac4b5a59f62e2aab11869d6998e3c1e44e01a091dc",
+    "gzip_sha256": "a05a32bdb8c0465fe547d8245776bac950603db3543ae0a1361907be01e47870",
+    "original_bytes": 68615951
+  },
+  {
+    "original": "closure-8038-child-8042-original.patch",
+    "gzip": "closure-8038-child-8042-original.patch.gz",
+    "original_sha256": "cf48c0b46de8de3f203c50588e1f380052594d17647ad496dd1c0a4d0fa9a70b",
+    "gzip_sha256": "99deab14055027236290db71d4071a66bfcdb99325584fc5fb9bebac07455664",
+    "original_bytes": 354718
+  },
+  {
+    "original": "closure-8040-child-8041-original.patch",
+    "gzip": "closure-8040-child-8041-original.patch.gz",
+    "original_sha256": "049fec55df26c75f41cb8ed2203e043c88c10c2a03a236107a1d62ad392ad30c",
+    "gzip_sha256": "b0764e9b0b30480ec98ca7df4a8e0bdd821f7c940bf2bcf3d48a4136978f6a3a",
+    "original_bytes": 520852
+  },
+  {
+    "original": "closure-8038-child-8040-original.patch",
+    "gzip": "closure-8038-child-8040-original.patch.gz",
+    "original_sha256": "eb21e9e4a2c70d87ee4cb041bad0f87ad52e6e4ab77ec3d4f7e6b8833a35b84c",
+    "gzip_sha256": "0dc8560d97526d969565e53f3554aa099c979ee508bb8b48fe327eb8cbc82f30",
+    "original_bytes": 376711
+  },
+  {
+    "original": "closure-8017-child-8019-original.patch",
+    "gzip": "closure-8017-child-8019-original.patch.gz",
+    "original_sha256": "256229bfd432f702b9190940b8d7906cc8ba4281cb4dec50634eddd90296c7d7",
+    "gzip_sha256": "8224ab993b93be4d5689d323d8ffc0353f316944afc05dc1a7556c54f63d7642",
+    "original_bytes": 269743
+  },
+  {
+    "original": "closure-8038-child-8049-original.patch",
+    "gzip": "closure-8038-child-8049-original.patch.gz",
+    "original_sha256": "cb6a36153072e78d8c2ec9d0a0fc46ce481543b38727b3b0a81e8bc60017a41c",
+    "gzip_sha256": "3b0e3aa760c45093ead0b9fa08e1cdd2d69326160baa2a0891079aa3c0adcdca",
+    "original_bytes": 122112
+  }
+]

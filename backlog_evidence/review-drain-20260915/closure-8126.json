@@ -1,0 +1,24 @@
+{
+  "pr": 8126,
+  "original_head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+  "branch": "physics-loop/causal-gaussian-likelihood-20260914",
+  "landing": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/causal-gaussian-likelihood-20260914",
+    "headRefOid": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8126,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+    "state": "CLOSED"
+  }
+}

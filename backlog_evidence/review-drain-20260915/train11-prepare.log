@@ -1,0 +1,148 @@
+[detached HEAD 06fa60d106] Integrate reviewed native global charge connectivity and bounded exchange obstruction
+ Date: Tue Sep 15 09:12:36 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 76 files changed, 26835 insertions(+)
+ create mode 100644 docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ALARM_CONTROL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/AUTHOR_VERIFICATION_DRIVER.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/CLI_CONTROL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_BUILD.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_BUILD.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/LIVE.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/LIVE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/PORT_INPUTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_native_Z_strings.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_native_Z_strings.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_native_Z_strings.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_parking_return.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_parking_return.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_parking_return.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/wrong_negative_cycle_direction.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/wrong_negative_cycle_direction.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/wrong_negative_cycle_direction.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-connectivity-cold-proof/CHORD_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-connectivity-cold-proof/chord_control.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-connectivity-cold-proof/pr8041-originals-native-d2-connectivity-cold-proof-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability-cold-proof/pr8041-originals-native-d2-reachability-cold-proof-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability-cold-proof/pr8041-originals-native-d2-reachability-cold-proof-NATIVE_COMPARISON.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/CONNECTIVITY_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/CONNECTIVITY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/connectivity_check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-FULL_CONNECTIVITY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-FULL_CONNECTIVITY_PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-ORBITAL_PROOF_COMPARISON.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange-cold-review/pr8041-originals-native-global-charge-exchange-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange-cold-review/replay.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTANT_STDERR.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTANT_STDOUT.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTANT_WITHOUT_NATIVE_Z_STRINGS.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTATION_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/pr8041-originals-native-global-charge-exchange-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/pr8041-originals-native-global-charge-exchange-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ROOT_PORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_global_charge_support_2026_09_08.txt
+ create mode 100644 outputs/native_global_charge_support_2026_09_08.json
+ create mode 100644 scripts/native_global_charge_connectivity_2026_09_08.py
+ create mode 100644 scripts/native_global_charge_exchange_2026_09_08.py
+ create mode 100644 scripts/native_global_charge_reachability_2026_09_08.py
+ create mode 100644 scripts/native_global_charge_support_2026_09_08.py
+[detached HEAD ac41c0f70b] Integrate independently reviewed bounded science from PR8127
+ Date: Tue Sep 15 09:11:47 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 23 files changed, 5123 insertions(+)
+ create mode 100644 docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/BLOCK26_FAULT_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/FOCUSED_EVIDENCE_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/INITIAL_CONTACT_FAILURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/SOURCE_DISPOSITION.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-CLUSTER_CAP_EVALUATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-NOVELTY_AND_SEARCH.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8127-clock-spectrum-evidence/pr8127-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.txt
+ create mode 100644 logs/runner-cache/fixed_clock_transverse_spectral_concentration_2026_09_15.txt
+ create mode 100644 logs/runner-cache/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.txt
+ create mode 100644 scripts/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.py
+ create mode 100644 scripts/fixed_clock_transverse_spectral_concentration_2026_09_15.py
+ create mode 100644 scripts/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.py
+[detached HEAD b650f60c36] Integrate independently reviewed bounded science from PR8128
+ Date: Tue Sep 15 09:11:48 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1049 insertions(+)
+ create mode 100644 docs/PRINCIPAL_FLUX_POSITIVE_GAUSSIAN_TRANSFER_AND_EXTENSIVE_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.txt
+ create mode 100644 scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py
+FROZEN b650f60c3667a867f7de23e57f34b68d9ac11b28 sources 102 inputs 121 notes 5

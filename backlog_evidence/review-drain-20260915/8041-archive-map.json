@@ -1,0 +1,342 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ALARM_CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ALARM_CONTROL.json",
+    "sha256": "ffe9c1fba273b367d8554f3f9835c6c163129bc13e971a0bc6c03f115ec3cdc7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ARTIFACT_PLAN.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ARTIFACT_PLAN.md",
+    "sha256": "7e7f976055f7758df8545451b7ca6543eef3047a60fb532b58f6d9325ccf5cd7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "f9c9164ccdb15e61bdd035ec618200f8dcf2928c9afa50deac5419acbb60aa06"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/AUTHOR_VERIFICATION_DRIVER.py",
+    "sha256": "d7790fd93cee1bf26f8a686fce845d586ec4c9e3ad9868af688868f042c5ae4e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "d07301c3e6924f5fbe078c0e2c2f2b41ebe9f59f2ca5c657820b61447c163906"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/CLI_CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/CLI_CONTROL.json",
+    "sha256": "b4c68ab99739f58609caaeb2bf41fc8f48e3d6614a22c672933775d6d58a7df6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-GOAL.md",
+    "sha256": "ba7d9edce74c508713a1db2803db3540a81c0d7861e5d7a9245378325aefb30d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/GRAPH_BUILD.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_BUILD.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/GRAPH_BUILD.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_BUILD.stdout",
+    "sha256": "5bbe98e40dbd324b309b154c491a7745b370002232dfb729ab4ee03b74897f7f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/GRAPH_DELTA.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_DELTA.json",
+    "sha256": "9a1eb11714ffe3898fd9c331b982cd7203b1208c9c2b912eefc76a196aaa78c8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/GRAPH_MANIFEST.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/GRAPH_MANIFEST.stdout",
+    "sha256": "bd764aab60ee2d15fae72675dfb5dc196a2e6a7b7c4494791669c7e37db931e1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-HANDOFF.md",
+    "sha256": "1ac25179720a11f814b636769dfbe7c2806a4db4d6ea56477e1a04076b3fd91a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ISOLATED.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ISOLATED.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ISOLATED.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ISOLATED.stdout",
+    "sha256": "2fa8bcf3da8d10984e1e73713bf7457842ace6e835d1665c15a54a3b49624a03"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ISOLATED_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/ISOLATED_CLOSURE.json",
+    "sha256": "f746893e3603eba39d3bc2937af58e88642240b406cfc82f3f5b7dd957c87033"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/LITERATURE_BRIDGES.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-LITERATURE_BRIDGES.md",
+    "sha256": "c7e20c5e2388df07160ccc2fbb22f38dc5c250516ef05f0426eed4cb45789e64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/LIVE.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/LIVE.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/LIVE.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/LIVE.stdout",
+    "sha256": "d5a565fda163bcb5925d57752c4261ce44d0116d1d3e3bc9d7600c53e747f6c1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/MUTATIONS.json",
+    "sha256": "e4670293f502bceb2dc0c1437aa5df9fc142d0e55ee9c8b93da3c916c740e251"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/NO_GO_LEDGER.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-NO_GO_LEDGER.md",
+    "sha256": "1b1db40004d118e63d2a5ef446313d79bc1648e1ad03e6614d3c2eca85e37621"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/OPPORTUNITY_QUEUE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-OPPORTUNITY_QUEUE.md",
+    "sha256": "414cffeeed0ae8969f81cb2fb8f14251390596bbb1e3c0143121b9248563de34"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/PORT_INPUTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/PORT_INPUTS.json",
+    "sha256": "7c2ce2bdf7b77abb1d7d4ddc7f53cffd067777b5811e531c342617a2472a8aca"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/PORT_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/PORT_RECEIPT.json",
+    "sha256": "c142299d1e9b4257626a2b9b75f867d20c57b8950fe0d256b056b366902aae90"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/PR_BACKLOG.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-PR_BACKLOG.md",
+    "sha256": "cc83c23b6b6f60e3a596cbefa4e3eb8f8a171619eae91ecb43031347a02d981a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/READ_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/READ_HASHES.json",
+    "sha256": "a7e689a293c97c3c736aa4d4ee77bfc4917985fd4f9e3eb6c4453f52e0b16238"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-REVIEW.md",
+    "sha256": "e91fcfa970a200c6689e658537eb9380e0eee0c33c50da939f5d591b783c119e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-REVIEW_HISTORY.md",
+    "sha256": "17274c18a451a0ccb152e58d3fe7faea0f932ff9a896edf10494aeca9e19361d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ROOT_PORT_REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ROOT_PORT_REVIEW.md",
+    "sha256": "edd988fcf2f011702b90aaaa2d4f33c11dcfa93a90e3d5b51647481605562bca"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/ROUTE_PORTFOLIO.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-ROUTE_PORTFOLIO.md",
+    "sha256": "265912222c829dccdb3a4247e9c55673b6ac39218d82053af9283386ed48e44a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/SOURCE_FREEZE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/SOURCE_FREEZE.json",
+    "sha256": "ae571ff8fd309d3e66f75f1d7c46741dd3256f5957f497dcef13c927b25451bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/STATE.yaml",
+    "sha256": "c140ff2f39be9173889fa86e4c9235d331cb68d8ac0a215ec085300bf1d1ec38"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/pr8041-TRACE_GATE.md",
+    "sha256": "2b7968e4e78023a1ef2cc88900087b35c8e93e14c81592d9c138cd7cbb05e97f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_native_Z_strings.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_native_Z_strings.py",
+    "sha256": "360acc08d6a2cd3748c005fcaa1b9d19c5ae392d9bff6c5d3addb64fc6f624d2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_native_Z_strings.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_native_Z_strings.stderr",
+    "sha256": "6472e4f02e2fae1ade0ce076a7a19e0919a154a7c9585773180ce41d93443fcc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_native_Z_strings.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_native_Z_strings.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_parking_return.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_parking_return.py",
+    "sha256": "b21d9875194415f4ade42b31568b321cf1d9917c9cf968c6785be7bffd07ae46"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_parking_return.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_parking_return.stderr",
+    "sha256": "296a9a958313906001a5869f400d267a8403b06661c3327171c0b01d9b4a0dc2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_parking_return.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/missing_parking_return.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/wrong_negative_cycle_direction.py",
+    "sha256": "86b6ee51215afbdeda3caf1e5afa37b4f95011de7b4dafd2953da48d288cc5f5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/wrong_negative_cycle_direction.stderr",
+    "sha256": "b8529d08932362efa48e677d770d86393cc11b434ff341f3d20d853ef435326e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/mutations/wrong_negative_cycle_direction.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-connectivity-cold-proof/CHORD_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-connectivity-cold-proof/CHORD_RESULT.json",
+    "sha256": "4753dcc720e25b9bec17930b03869b56fb0dd9897fbdd007f13364d95281d0a2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-connectivity-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-connectivity-cold-proof/pr8041-originals-native-d2-connectivity-cold-proof-DERIVATION.md",
+    "sha256": "cf54eb96d0d6d7b09b0d3353af2206c4afca477bfce621e2cd189400935e0443"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-connectivity-cold-proof/chord_control.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-connectivity-cold-proof/chord_control.py",
+    "sha256": "ab575415f98bcd590a9e55da753ab53ef159ca34a2b978c15cf1af1890254f0d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability-cold-proof/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability-cold-proof/pr8041-originals-native-d2-reachability-cold-proof-DERIVATION.md",
+    "sha256": "8148d95774669f68c19bc0ee000164c8abe89993daf472340f32b5e9b62317aa"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability-cold-proof/NATIVE_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability-cold-proof/pr8041-originals-native-d2-reachability-cold-proof-NATIVE_COMPARISON.md",
+    "sha256": "81b9447c2612cd08ee3fb7b81b8657f5483bdab7ad555358587d13814c98cbdf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/CONNECTIVITY_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/CONNECTIVITY_HASHES.json",
+    "sha256": "13567f0a95f8950d087967c58594ddfcc9f2cad268bfc7d68d9580284653d03e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/CONNECTIVITY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/CONNECTIVITY_RESULT.json",
+    "sha256": "e3ad21686417bff992b277eaca32a4b7f405321bcd897e2954ad0124648e512a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-DERIVATION.md",
+    "sha256": "92c7ce417339358995bf4c771560ce70382dba919a4324e0daa21c62e8fba08a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/FULL_CONNECTIVITY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-FULL_CONNECTIVITY.md",
+    "sha256": "65adcea1db8548450d2361ea10f671c30ed34abbc52c0573e84023d949cee158"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/FULL_CONNECTIVITY_PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-FULL_CONNECTIVITY_PREREGISTRATION.md",
+    "sha256": "36d6efbb48340cdc65a6af6f0f470df45c12f40af6ea0f4c662ce0a4f3857a43"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/ORBITAL_PROOF_COMPARISON.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-ORBITAL_PROOF_COMPARISON.md",
+    "sha256": "777521557cfdc274c0a935c386c5e573d1b645a1192910b37d4e67908790118c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/pr8041-originals-native-d2-reachability-PREREGISTRATION.md",
+    "sha256": "dc74bc18ed739eb1e13fe59fe74b20b8ef9f577441e7904f8841dc9a23c38e3f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/RESULT.json",
+    "sha256": "a58843b070a682a43d071a6a45436f23e689efc52166c15f387782474262f21c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/check.py",
+    "sha256": "71288f9e00f84506c2bcffa4ac05a0c00cc9276713ff98cee386dcda3cfd63e4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-d2-reachability/connectivity_check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-d2-reachability/connectivity_check.py",
+    "sha256": "e3921227854d06a7263bb43077f5cb0d30a816e7ad0c88c6ff2d6563a71a06b2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange-cold-review/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange-cold-review/RESULT.json",
+    "sha256": "3a3f4bf6bc2e2b9652851d5eee56659cad11d2155cf756aa540a7bac0da549b2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange-cold-review/pr8041-originals-native-global-charge-exchange-cold-review-REVIEW.md",
+    "sha256": "c2df2ba6eeb0b511668b4b0e431c853b390bf3d11f47c4f74c201e484899785f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange-cold-review/replay.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange-cold-review/replay.py",
+    "sha256": "d158541ae915ffbd45617a8e73e22aa546943d825c6766ab19f5576a10f64b58"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/pr8041-originals-native-global-charge-exchange-DERIVATION.md",
+    "sha256": "830105ab1cece1c098928cc15c9ea344bb8e432a0556ff493041ddf1ae8c099b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/HASHES.json",
+    "sha256": "e6edd4faa67fef8b074e3ae05d317aab519d701c186e7280182d197117bea61c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/MUTANT_STDERR.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTANT_STDERR.txt",
+    "sha256": "c27b1278f706cc7a72b92143377b1a69117afa1e129e4d4f8bb22808e1ee9bd4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/MUTANT_STDOUT.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTANT_STDOUT.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/MUTANT_WITHOUT_NATIVE_Z_STRINGS.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTANT_WITHOUT_NATIVE_Z_STRINGS.py",
+    "sha256": "b4342d666f8e74c840d07e1f3796a4c5ad6253ab524ce617e15a35508001cde2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/MUTATION_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/MUTATION_RESULT.json",
+    "sha256": "449253b96bb01ccdd5755b98c180c9fb464a8a3327ef1d8e35fd2e665e5d5f4a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/pr8041-originals-native-global-charge-exchange-PREREGISTRATION.md",
+    "sha256": "88efb5370184170eef9c0eed9a65bf07e831c4acf3874a413e7a80a5df54e6cf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/RESULT.json",
+    "sha256": "f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-global-charge-support-20260908/originals/native-global-charge-exchange/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8041-global-charge-evidence/originals/native-global-charge-exchange/check.py",
+    "sha256": "53040810bba340d5d1dc1528451cc339b8e68c8aeb0a1be7aa85128d3ed2aca7"
+  }
+]

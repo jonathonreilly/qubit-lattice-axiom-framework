@@ -1,0 +1,151 @@
+===== runner cache v1 =====
+runner: scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py
+runner_sha256: c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.29
+status: ok
+----- stdout -----
+{
+  "nonorthogonal_lattice": {
+    "covolume": 6.0,
+    "normalization_error": 2.220446049250313e-16,
+    "covariance_error": 2.7755575615628914e-16,
+    "cases": [
+      {
+        "h": [
+          0.2,
+          -0.6
+        ],
+        "s": [
+          0.11,
+          0.07
+        ],
+        "mgf": 1.0984918427966825,
+        "poisson_mgf": 1.0984918427966825,
+        "gaussian_bound": 1.2840254166877414,
+        "coset": 0.9819471291606756
+      },
+      {
+        "h": [
+          1.3,
+          0.4
+        ],
+        "s": [
+          2.0,
+          0.0
+        ],
+        "mgf": 1.0564206256341444,
+        "poisson_mgf": 1.0564206256341444,
+        "gaussian_bound": 1.6723605161236628,
+        "coset": 1.0
+      },
+      {
+        "h": [
+          -0.5,
+          0.7
+        ],
+        "s": [
+          0.24,
+          -0.33
+        ],
+        "mgf": 1.2070404921750877,
+        "poisson_mgf": 1.207040492175088,
+        "gaussian_bound": 1.5531385859814086,
+        "coset": 0.7593988881885185
+      }
+    ]
+  },
+  "actual_three_cube": {
+    "current_rank": 5,
+    "N": 2,
+    "beta": 0.5,
+    "normalization_error": 4.440892098500626e-16,
+    "covariance_error": 3.9968028886505635e-15,
+    "mgf": 1.0121497726973083,
+    "gaussian_bound": 1.0253151205244289,
+    "wilson_current": 0.7893086342739333,
+    "wilson_dual": 0.789308634273933,
+    "wilson_direct": 0.7893086342739326,
+    "charge_N_alias_direct": 0.9999999999999997,
+    "charge_N_alias_current": 1.0000000000000004,
+    "wilson_plaquette_fourier": 0.7893086342739334,
+    "plaquette_covariance_error": 8.090750291955828e-15,
+    "wrong_R_instead_of_k": 0.7654412963819941,
+    "representative_error": 2.6645352591003757e-15,
+    "integer_current_basis": true
+  },
+  "hypothesis_and_tilt_controls": {
+    "half_integer_zero_coset_max": 0.0,
+    "half_shift_cases": [
+      {
+        "alpha": 5.0,
+        "centered_variance": 0.14131988304706897,
+        "tilted_variance": 0.26338752091159046,
+        "continuous_bound": 0.2,
+        "alpha_times_centered_variance": 0.7065994152353449,
+        "mgf": 1.7294033349060716
+      },
+      {
+        "alpha": 8.0,
+        "centered_variance": 0.03533770482397546,
+        "tilted_variance": 0.25067070048733975,
+        "continuous_bound": 0.125,
+        "alpha_times_centered_variance": 0.2827016385918037,
+        "mgf": 1.929973109861214
+      },
+      {
+        "alpha": 16.0,
+        "centered_variance": 0.0006704754170156478,
+        "tilted_variance": 0.25000022507032416,
+        "continuous_bound": 0.0625,
+        "alpha_times_centered_variance": 0.010727606672250365,
+        "mgf": 1.9986592740855655
+      },
+      {
+        "alpha": 32.0,
+        "centered_variance": 2.2507029878186743e-07,
+        "tilted_variance": 0.25000000000002537,
+        "continuous_bound": 0.03125,
+        "alpha_times_centered_variance": 7.202249561019758e-06,
+        "mgf": 1.999999549859428
+      },
+      {
+        "alpha": 64.0,
+        "centered_variance": 2.532833109818771e-14,
+        "tilted_variance": 0.25,
+        "continuous_bound": 0.015625,
+        "alpha_times_centered_variance": 1.6210131902840135e-12,
+        "mgf": 1.9999999999999494
+      }
+    ],
+    "signed_mixture_variance": 0.8793673556079585,
+    "signed_mixture_gaussian_bound": 0.125,
+    "positive_mixture_negative_weight": -0.01831563888873418
+  },
+  "local_edge_bounds": [
+    {
+      "d": 3,
+      "edges": 12,
+      "max_H_diagonal": 4,
+      "max_conserved_diagonal": "2",
+      "tail_denominator": 8
+    },
+    {
+      "d": 4,
+      "edges": 32,
+      "max_H_diagonal": 5,
+      "max_conserved_diagonal": "3",
+      "tail_denominator": 12
+    }
+  ]
+}
+TOTAL: PASS=4 FAIL=0
+per_element: executed exact finite-cube incidence, integer current basis and Hodge projector identities with charge-N aliases.
+per_site: executed local edge diagonal bounds and half-shifted scalar controls; the arbitrary-volume density estimate is a written Chernoff proof.
+per_mode: executed nonorthogonal-lattice Gaussian Poisson transforms, moment generating functions, covariance identities and distinct Wilson variables.
+per_block: executed actual single-three-cube current, shifted dual, direct32-state clock and constrained plaquette-Fourier evaluations at identical parameters.
+lattice_wide: checked and not executed: general full-rank lattice identities and all-volume centered bounds rely on the written proof; nondegenerate fixed-law photon correlations remain open.
+
+----- stderr -----
+

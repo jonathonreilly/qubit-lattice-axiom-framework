@@ -1,0 +1,231 @@
+===== runner cache v1 =====
+runner: scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py
+runner_sha256: f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.00
+status: ok
+----- stdout -----
+{
+  "three_cube": {
+    "cases": [
+      {
+        "N": 2,
+        "beta": 0.2,
+        "j": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 32,
+        "direct": 0.5042146944284137,
+        "direct_imag": 0.0,
+        "dual": 0.5042146944284143,
+        "absolute_error": 5.551115123125783e-16,
+        "omitting_phase_error": 0.0011969928092149251,
+        "min_magnetic_character": 0.1027771053041937
+      },
+      {
+        "N": 2,
+        "beta": 0.2,
+        "j": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 32,
+        "direct": 0.08282789079076679,
+        "direct_imag": 2.5802500013888927e-17,
+        "dual": 0.08282789079076687,
+        "absolute_error": 8.717291326301299e-17,
+        "omitting_phase_error": 0.04354948195675927,
+        "min_magnetic_character": 0.1027771053041937
+      },
+      {
+        "N": 3,
+        "beta": 0.5,
+        "j": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 243,
+        "direct": 0.032513329616630025,
+        "direct_imag": 0.0,
+        "dual": 0.03251332961663003,
+        "absolute_error": 6.938893903907228e-18,
+        "omitting_phase_error": 0.00012008476581669425,
+        "min_magnetic_character": 0.6167251084818254
+      },
+      {
+        "N": 3,
+        "beta": 0.5,
+        "j": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 243,
+        "direct": 0.012854903548717688,
+        "direct_imag": 8.223874256482642e-18,
+        "dual": 0.012854903548717692,
+        "absolute_error": 8.925758787848692e-18,
+        "omitting_phase_error": 0.0025420303279024455,
+        "min_magnetic_character": 0.6167251084818254
+      },
+      {
+        "N": 3,
+        "beta": 1.0,
+        "j": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 243,
+        "direct": 0.005947443114833868,
+        "direct_imag": 0.0,
+        "dual": 0.005947443114833866,
+        "absolute_error": 2.6020852139652106e-18,
+        "omitting_phase_error": 0.00018813382583196016,
+        "min_magnetic_character": 0.9254863297884355
+      },
+      {
+        "N": 3,
+        "beta": 1.0,
+        "j": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 243,
+        "direct": 0.00494173342388309,
+        "direct_imag": 7.424330925991274e-19,
+        "dual": 0.004941733423883088,
+        "absolute_error": 2.705929481291536e-18,
+        "omitting_phase_error": 0.00030574386149802985,
+        "min_magnetic_character": 0.9254863297884355
+      },
+      {
+        "N": 2,
+        "beta": 2.0,
+        "j": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 32,
+        "direct": 0.031250005016165046,
+        "direct_imag": 0.0,
+        "dual": 0.031250005016165025,
+        "absolute_error": 2.0816681711721685e-17,
+        "omitting_phase_error": 8.676095937678457e-05,
+        "min_magnetic_character": 0.9972235692789903
+      },
+      {
+        "N": 2,
+        "beta": 2.0,
+        "j": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 32,
+        "direct": 0.031250001672054974,
+        "direct_imag": 2.0476768407415166e-25,
+        "dual": 0.03125000167205497,
+        "absolute_error": 6.938893903907231e-18,
+        "omitting_phase_error": 8.676262678947166e-05,
+        "min_magnetic_character": 0.9972235692789903
+      },
+      {
+        "N": 5,
+        "beta": 1.0,
+        "j": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 3125,
+        "direct": 0.00443446300234763,
+        "direct_imag": 0.0,
+        "dual": 0.00443446300234763,
+        "absolute_error": 0.0,
+        "omitting_phase_error": 5.610201144878174e-08,
+        "min_magnetic_character": 0.9254863297884355
+      },
+      {
+        "N": 5,
+        "beta": 1.0,
+        "j": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clock_states": 3125,
+        "direct": 0.0028272764422780225,
+        "direct_imag": -1.4210854715202005e-19,
+        "dual": 0.002827276442278023,
+        "absolute_error": 4.563703926694018e-19,
+        "omitting_phase_error": 0.0001019583955198162,
+        "min_magnetic_character": 0.9254863297884355
+      }
+    ],
+    "alias_error": 1.7521252633077577e-18,
+    "representative_integer_shift": 13,
+    "cutoff_comparison": 0.0,
+    "cube_r": 5,
+    "cube_P": 6,
+    "Q_det": 6,
+    "magnetic_Q": "1/6"
+  },
+  "four_cube": {
+    "r": 17,
+    "P": 24,
+    "Q_det": 82944,
+    "magnetic_rank": 7,
+    "phase_turns": "51/8",
+    "phase_real": "-sqrt(2)/2",
+    "electric_energy": "17/24",
+    "magnetic_energy": "21/8",
+    "magnetic_charge": [
+      -3,
+      0,
+      -3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "integer_completion_determinant": 1
+  }
+}
+TOTAL: PASS=2 FAIL=0
+per_element: executed integer boundary-of-boundary identities and exact rational curl projections on single three- and four-cubes.
+per_site: executed exact tree gauge counts and direct finite-clock sums up to3125states with the supplied Villain weight.
+per_mode: executed electric aliases, integer representative shifts and an exact negative mixed phase at N=3 on the four-cube.
+per_block: executed ten direct/dual three-cube comparisons, a shifted-cutoff comparison and positive complete magnetic phase-class sums.
+lattice_wide: checked and not executed: the general coupled-defect identity and positive marginal follow from the written proof; fixed-law phase control remains open.
+
+----- stderr -----
+

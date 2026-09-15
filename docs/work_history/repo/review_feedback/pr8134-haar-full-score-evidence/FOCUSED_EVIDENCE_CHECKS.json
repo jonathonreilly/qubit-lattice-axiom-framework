@@ -1,0 +1,30 @@
+{
+  "source_sha256": {
+    "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+    "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": "7d8895c896187363d9806e3ef6211157b146f3d43cb109e8c4fc965d174eea6c",
+    "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794"
+  },
+  "runner_source_sha256": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+  "rows": [
+    {
+      "claim_id": "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+      "runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "cache_status": "fresh",
+      "readiness_issue": null
+    },
+    {
+      "claim_id": "fixed_coupling_haar_villain_full_score_gaussian_maxwell_limit_bounded_theorem_note_2026-09-15",
+      "runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "cache_status": "fresh",
+      "readiness_issue": null
+    },
+    {
+      "claim_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+      "runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "cache_status": "fresh",
+      "readiness_issue": null
+    }
+  ],
+  "explicit_resolution_lines_checked": 5,
+  "scope": "Focused author source/cache/N5 readiness only; not the integrated current-main evidence gate or independent audit."
+}

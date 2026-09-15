@@ -1,0 +1,24 @@
+{
+  "pr": 8129,
+  "original_head": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+  "branch": "physics-loop/clock-penalty-normal-form-20260914",
+  "landing": "26bf37ccf50a45233e7354302a07ebe9c45eadc2",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/clock-penalty-normal-form-20260914",
+    "headRefOid": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8129,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+    "state": "CLOSED"
+  }
+}

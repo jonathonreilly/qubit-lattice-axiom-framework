@@ -1,9 +1,9 @@
 {
   "scope": "Original inventory116non-draft PRs;11drafts excluded; new arrivals not absorbed",
-  "landed_pr_count": 45,
-  "main": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "landed_pr_count": 49,
+  "main": "26bf37ccf50a45233e7354302a07ebe9c45eadc2",
   "workflow": "Prior efficiency changes verified remote; stage-manifest and dependent-base lifecycle fixes reviewed, landed, installed sync4994b354ed",
-  "current_validation": "train12 four units15sourcepaths5notes",
+  "current_validation": "train13 two units94sourcepaths2notes",
   "no_final_completion_claim": true,
   "prs": [
     {
@@ -114,12 +114,12 @@
     {
       "number": 8042,
       "original_head": "04d1bf113a0cff69e700a5e81a9be2978436667f",
-      "state": "independent source review running"
+      "state": "source review passed; exact combined validation running"
     },
     {
       "number": 8043,
       "original_head": "8b84cccb5b93db699a4cb7631d658fed916a0831",
-      "state": "pending source review"
+      "state": "independent source review running"
     },
     {
       "number": 8044,
@@ -549,22 +549,22 @@
     {
       "number": 8129,
       "original_head": "f032d39f0a3071a029c1491398231d219e8a6d1c",
-      "state": "source review passed; exact combined validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8130,
       "original_head": "7656dcdb01f32b3d47ecbcda04c89cb3b03996f0",
-      "state": "source review passed; exact combined validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8131,
       "original_head": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
-      "state": "source review passed; exact combined validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8132,
       "original_head": "20866d4606e9fd519cff663028f554d42b2b1013",
-      "state": "source review passed; exact combined validation running"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8133,
@@ -579,12 +579,12 @@
     {
       "number": 8135,
       "original_head": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
-      "state": "independent source review running"
+      "state": "source review passed; exact combined validation running"
     },
     {
       "number": 8136,
       "original_head": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
-      "state": "pending source review"
+      "state": "independent source review running"
     }
   ]
 }

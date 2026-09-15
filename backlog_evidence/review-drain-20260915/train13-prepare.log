@@ -1,0 +1,125 @@
+[detached HEAD 7ddadd5e36] Integrate reviewed native U1 dictionary and preserved phase-correction evidence
+ Date: Tue Sep 15 09:22:33 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 79 files changed, 14558 insertions(+)
+ create mode 100644 docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ABSOLUTE_PHASE_CORRECTION.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/AUTHOR_VERIFICATION_DRIVER.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_BUILD.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_BUILD.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/GRAPH_MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/LIVE.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/LIVE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/PORT_NOTES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/WRAPPER_CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/inputs/GLOBAL_D4_SEED.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/missing_hole_minus.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/missing_hole_minus.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_missing_hole_minus.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_removed_no_double.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_wrong_absolute_basis_phase.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/mutant_wrong_gauss_sign.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/removed_no_double.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/removed_no_double.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_absolute_basis_phase.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_absolute_basis_phase.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_gauss_sign.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/mutations/wrong_gauss_sign.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/global-D4-seed-provenance/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/global-D4-seed-provenance/pr8042-originals-global-D4-seed-provenance-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/global-D4-seed-provenance/pr8042-originals-global-D4-seed-provenance-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/ABSOLUTE_CONTROL_SOURCE_REVIEW.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/pr8042-originals-native-low-charge-u1-cold-review-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-cold-review/pr8042-originals-native-low-charge-u1-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/ABSOLUTE_PHASE_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/HASHES_BEFORE_ABSOLUTE_PHASE_CORRECTION.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/RESULT_BEFORE_ABSOLUTE_PHASE_CORRECTION.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/absolute_phase_control.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/pr8042-originals-native-low-charge-u1-dictionary-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/pr8042-originals-native-low-charge-u1-dictionary-DERIVATION_BEFORE_ABSOLUTE_PHASE_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-dictionary/pr8042-originals-native-low-charge-u1-dictionary-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/SOURCE_COVERAGE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/pr8042-originals-native-low-charge-u1-prior-art-COMPARISON.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/pr8042-originals-native-low-charge-u1-prior-art-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/originals/native-low-charge-u1-prior-art/pr8042-originals-native-low-charge-u1-prior-art-PR8038_SOURCE_READ.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-CANONICAL_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-DOMAIN_CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-GRAPH_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ROOT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/pr8042-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_low_charge_u1_dictionary_2026_09_08.txt
+ create mode 100644 outputs/native_low_charge_u1_dictionary_2026_09_08.json
+ create mode 100644 scripts/native_low_charge_u1_absolute_2026_09_08.py
+ create mode 100644 scripts/native_low_charge_u1_author_2026_09_08.py
+ create mode 100644 scripts/native_low_charge_u1_dictionary_2026_09_08.py
+ create mode 100644 scripts/native_low_charge_u1_domain_2026_09_08.py
+ create mode 100644 scripts/native_low_charge_u1_independent_2026_09_08.py
+[detached HEAD c52379bfbe] Integrate reviewed clock endpoint reflection and historical evidence
+ Date: Tue Sep 15 09:24:17 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 15 files changed, 1848 insertions(+)
+ create mode 100644 docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/FOCUSED_EVIDENCE_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/MUTATION_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/NOVELTY_SEARCH.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/SOURCE_DISPOSITION.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLUSTER_CAP_EVALUATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt
+ create mode 100644 scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py
+FROZEN c52379bfbe5308c82e1ed9d0462b3ed5653a1e0d sources 94 inputs 105 notes 2

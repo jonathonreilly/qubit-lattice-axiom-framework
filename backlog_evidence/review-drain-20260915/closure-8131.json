@@ -1,0 +1,24 @@
+{
+  "pr": 8131,
+  "original_head": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+  "branch": "physics-loop/clock-image-noise-os-20260914",
+  "landing": "26bf37ccf50a45233e7354302a07ebe9c45eadc2",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T13:26:20Z",
+    "headRefName": "physics-loop/clock-image-noise-os-20260914",
+    "headRefOid": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8131,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+    "state": "CLOSED"
+  }
+}

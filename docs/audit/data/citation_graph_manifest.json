@@ -1,6 +1,6 @@
 {
- "edge_count": 13277,
- "node_count": 5703,
+ "edge_count": 13281,
+ "node_count": 5706,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13118,6 +13118,10 @@
    "deps_hash": "856049afb739",
    "out_degree": 5
   },
+  "native_sixth_offdiagonal_sign_obstruction_note_2026-09-08": {
+   "deps_hash": "04cc700b0857",
+   "out_degree": 4
+  },
   "native_u1_pair_operator_and_all_low_support_note_2026-09-08": {
    "deps_hash": "79db32e637e8",
    "out_degree": 4
@@ -21401,6 +21405,14 @@
   "work_history.repo.review_feedback.pr8047-eighth-diagonal-evidence.readme": {
    "deps_hash": "69d4404d3c76",
    "out_degree": 28
+  },
+  "work_history.repo.review_feedback.pr8048-sixth-sign-evidence.kept.pr8048-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8048-sixth-sign-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.independent-canonical-review.pr8049-independent-canonical-review-review": {
    "deps_hash": "e3b0c44298fc",

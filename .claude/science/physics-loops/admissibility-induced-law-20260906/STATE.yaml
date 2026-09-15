@@ -142,7 +142,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 10 close (2026-09-15)
 # block: 10
 # branch: physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915 (stacked on block 09, PR #8139)
-# pr_status: opened for review — PR «PR10» (base = block 09's branch); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8141 (base = block 09's branch); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=18 FAIL=0; 10 mutations, census 10/10 in-family; refuting pass 3/3 equal; gates: see HANDOFF.md"
 # seats: "supervisor-run: control -> contract with a lens pass -> primary (T1-T6, runner) -> refuting pass (closed form; moved vacuum) -> fold"
 # review_findings: "every formation law = (1/6)^{n_0} prod_edges K / prod_{|A_x|>=2} K_{|A_x|}: Gibbs, Markov for the recorded-set graph; the vacuum-normalized potential's term on a maximal recorded set of size k is -m_A Delta_k log K_k, nonzero for k = 2..6 at (3,1,2),(5,2,4); NN-Markov iff every recorded set has <= 1 element; plaquette {b,c} term 12/13, star leaves 165/169"

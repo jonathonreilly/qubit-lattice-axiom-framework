@@ -76,6 +76,13 @@ model choice is whether a formation conditional combines its recorded
 neighbours as a product or a sum. The Admissibility sentence does not fix that
 choice; these models differ in their second-order record laws.
 
+## Upstream sources
+
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md)
+- [Realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
+- [Role support and record values](THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md)
+- [Readable matter-law context](A_READABLE_MATTER_LAW_EXISTS_ON_THE_5X5X5_WINDOW_THE_DESIGNED_LAWS_RECORD_TABLE_COMPLETED_BY_A_COVARIANT_PARITY_RULE_HAS_EVERY_MENU_NONEMPTY_IS_READ_FROM_PARTIAL_BLOCKS_AND_KEEPS_THE_FERMION_BOUNDED_NOTE_2026-09-04.md)
+
 ## Machine status and trace
 
 ```yaml

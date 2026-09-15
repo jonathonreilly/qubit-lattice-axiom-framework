@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.py
 runner_sha256: db4b75701aa4b3407f69bb54e42898dd3a39cbda7c570797fa17aa53afbccf25
-input_fingerprint_sha256: 14016481c5dfb4db4858497cb068e292895a85f79a362ec43d49f19d1cbf1a0d
+input_fingerprint_sha256: 468c94146e16f40ee350606b73d4cac83d9cac11eb7f631c24de2a703b3aa42f
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 8.84
+elapsed_sec: 7.40
 status: ok
 ----- stdout -----
 == S1 moments and Grams ==
@@ -97,7 +97,7 @@ status: ok
 [PASS] 2x2x2 monotone product: series = [1, T_1, closed-form c], normalised
 [PASS] 2x2x2 monotone additive: series = [1, T_1, closed-form c], normalised
 scope per_element=exact moments; per_site=6/8; per_mode=3 alphabets,2 models; per_block=all-order tangents,named series; lattice_wide=unrun
-elapsed 8.8s
+elapsed 7.3s
 TOTAL: PASS=63 FAIL=0
 
 ----- stderr -----

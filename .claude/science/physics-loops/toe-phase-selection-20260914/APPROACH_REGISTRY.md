@@ -1,3 +1,19 @@
+# Block24 active mechanism — exact smoothing and filtering
+
+The new probability-kernel construction retains finite N and every magnetic
+image sector. It proposes a positive real local electric extension with
+uniform C3 derivative bounds and an explicit coupling preserving all local
+H^-s scaling limits for s>2. This is stronger than a formal dual theta and
+weaker than a photon/physical-score theorem. Its explicit sufficient range
+uses large but fixed N; the three-state simultaneous phase is unresolved.
+
+Nine finite families and fifteen final source faults pass their stated
+expectations. The initial sweep-orientation coverage failure is preserved.
+Cold full-source review and independent review are pending. The subsequent
+magnetic stability obligation is not counted as discharged by smoothing.
+
+---
+
 # Block23 active mechanism — 2026-09-15 05:27UTC
 
 The new formulation is the exact endpoint-qutrit tensor factorization of the
@@ -91,3 +107,5 @@ Block 2 update:
   exponentially accurate finite-window representative preserve Wilson
   characters. Frame covariance and the probability passage are under
   personal scrutiny; a fixed-clock full-score limit is still unproved.
+
+| Gaussian link smoothing | Finite-clock link/image law with independent Gaussian link increments | Exact convolution, completion of the square and gauge-averaged current theta | Positive smooth local electric perturbation with infrared-equivalent flux tests; subsequent magnetic/physical-score stability separate | weaker | active | The exact candidate formulas are being derived in block24 | Reopen/advance only with checked carrier and image bookkeeping; a Haar comparison alone is insufficient |

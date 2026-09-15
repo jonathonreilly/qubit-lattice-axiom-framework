@@ -1,3 +1,43 @@
+# Current checkpoint — 2026-09-15 06:52 UTC
+
+Continue personally through **2026-09-15 13:30:44 UTC**; no subagents.
+The user extension is already applied. Do not extend it a second time.
+
+PR8135 remains the open, review-pending clock sector-bound milestone at
+cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24; its delivery checkout was removed
+only after exact remote verification. The removal and safe sweep receipts
+are now included in the campaign checkpoint. No new worktree is active.
+
+Block24 supplies a proposed exact Gaussian link-smoothing and filtering
+identity for the fixed finite-clock Villain link/image law on free four-
+dimensional cubes. Both image fold corrections are explicit. Magnetic
+charges are unchanged, and the filtered lifted flux couples to the original
+with error bounded by h.(I-K)h<=tau||D*h||². This proves equivalence of
+subsequential smooth and local H^-s scaling limits for s>2, not their
+Gaussianity. The new positive electric extension uses conserved-current
+components, integer fillings, a hard-core positivity induction and a
+proper massive Gaussian average. A causal Langevin parameter-response
+argument proposes uniform real derivative bounds through order three.
+
+The nine finite check families pass. They include independently evaluated
+real-space/Fourier densities, 79 current components in three sweep orders,
+384 signed cubic operations, gauge characters, positive Gaussian response
+and infrared source errors. All15 final source faults are caught. The
+initial orientation fault survived because the original increasing-order
+sweep never used the negative branch; that coverage failure is preserved
+and the added alternate sweeps now expose the fault. Finite smoothing also
+retains a nonzero fourth cumulant, and a MAP substitution disagrees with
+the positive Gaussian average. Neither shortcut is treated as a proof.
+
+The explicit sufficient electric bound requires a_e=g²/256>=256, with
+g=N/sqrt(beta). It allows large but fixed N and does not reach simultaneous
+weak magnetic/electric control for N=3. The magnetic/physical-score phase
+stability theorem, cold full-source review and independent review remain
+open. Next: personally challenge the complete proof, then decide whether
+this is a coherent public milestone before following the magnetic frontier.
+
+---
+
 # Current checkpoint — 2026-09-15 05:27 UTC
 
 Continue personally through **2026-09-15 13:30:44UTC**; no subagents.
@@ -528,3 +568,33 @@ Block18 extended PR8133 tof8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8 with399-line 
 Block21 begins in the extended window. BLOCK21_FIXED_LAW_FULL_FLUX_BRIDGE_DERIVATION.md proposes an exact full compact-U(1) flux/positive auxiliary real-tilt identity and an explicitly conditional full-score Gaussian/Maxwell-plus-contact transfer. The unproved hard step is a matched fixed-beta three-form auxiliary central limit theorem; finite-clock electric currents remain. Block20 is supporting standard Gaussian sampling mathematics and stays private. The controlling deadline remains2026-09-15 13:30:44UTC.
 
 Block21 update: full-flux finite checks pass with maximum observed error4.45e-16 across three independent finite representations, and the wrong auxiliary characteristic-function sign is detected. BLOCK21_PRECONDITIONED_GRADIENT_GAUSSIANITY.md now contains a new finite-dimensional preconditioned-flow proof candidate, an explicit free-cube reflection of both d and d*, and carrier Hessian/third-influence bounds. These new steps still need decisive checks and the correctly specified periodic Riesz input; the published Conlon-Dabkowski Theorem3.1 display visibly omits an inverse. No covariance homogenization, matched state limit or finite-clock phase is claimed. Continue personally to13:30:44UTC.
+
+## Endpoint-reflection milestone and next personal block
+
+PR8135 is OPEN and MERGEABLE against main at exact head
+cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24. It proposes the all-sector bound
+A_cons >= e_neutral I-c N, with c=max(0,3t rho(exp(-4mu))-9K/4),
+and its uniform quadratic defect-density and energy-density consequences.
+The full source and self-contained runner are independently reviewable.
+All14 final source faults were caught; the canonical cache, focused checks
+and one-node/no-edge graph delta passed author checks. Independent science
+review and integrated landing gates remain pending. Exact remote durability
+and a clean science state were verified before removing the delivery checkout.
+The completion sweep preserved all other unlanded worktrees. Receipts are in
+review/BLOCK23_PUBLIC_MILESTONE_RECEIPT.json and BLOCK23_COMPLETION_SWEEP.json.
+
+The next route is a fresh finite-clock reformulation: add independent Gaussian
+link noise, keep the image integer with its exact fold correction, then gauge
+average. The noise changes smooth macroscopic flux tests by a variance of
+order a². Completing the square yields a massive conserved-current theta
+factor multiplying a modified Haar Villain flux action. The physical carrier,
+gauge average, positivity and eventual small smooth electric perturbation
+need exact derivations before any infrared phase inference. This route does
+not depend on the unreviewed endpoint-reflection theorem. The neutral spin-one
+photon-phase question remains a separate open target.
+
+The current-main framework refresher covered the minimal axioms, complete
+four-node premise registry, all three primitive sources, registry-check
+procedure, current science workflow and review boundary sections. The local
+exercise skill matches current-main SHA0e543e9b2d24e587e7f99df31802a9ee89703c40528ab259178625e17c6ac7f3.
+No subagents are used. The extended deadline remains2026-09-15 13:30:44UTC.

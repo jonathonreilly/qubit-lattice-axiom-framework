@@ -32,3 +32,10 @@ Gaussian routing map. No public candidate yet.
   and integrated landing gates pending. Exact remote and clean-state
   verification preceded removal of the delivery checkout. The safety sweep
   preserved all three other unlanded worktrees. See BLOCK5_DELIVERY.json.
+
+- PR8135: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135
+  Exact headcb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24, base main5deabeb698a...;
+  one self-contained endpoint-reflection sector-energy theorem and runner,
+  canonical cache, manifest and handoff,15paths.14faults caught. Independent
+  review and combined landing gates pending. Delivery checkout removed after
+  exact remote verification and clean science check. Campaign continues.

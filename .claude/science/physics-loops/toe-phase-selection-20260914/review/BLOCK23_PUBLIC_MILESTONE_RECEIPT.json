@@ -1,0 +1,68 @@
+{
+  "verified_at_utc": "2026-09-15T06:01:01.863682+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "changedFiles": 15,
+    "headRefName": "physics-loop/clock-endpoint-reflection-20260915",
+    "headRefOid": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+    "mergeable": "MERGEABLE",
+    "number": 8135,
+    "state": "OPEN",
+    "title": "[physics-loop] clock-reflection bounded_theorem bounded-support: uniform defect bound",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135"
+  },
+  "remote_head_verified": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    "docs/audit/data/citation_graph.json",
+    "docs/audit/data/static_pipeline_checkpoint.lock",
+    "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+    "docs/audit/scripts/__pycache__/write_citation_graph_manifest.cpython-313.pyc",
+    "scripts/__pycache__/clock_endpoint_reflection_sector_bound_2026_09_15.cpython-313.pyc",
+    "scripts/__pycache__/runner_cache.cpython-313.pyc"
+  ],
+  "ignored_classification": "Regenerable citation graph, static-process lock, and Python bytecode only; no unpublished science.",
+  "source_disposition": {
+    "frozen_main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "campaign_source_revision": "18ff8d43faa1c4078b7af27bdb93038f2a9c4de1",
+    "claim_id": "three_state_clock_endpoint_reflection_sector_energy_and_ground_defect_bound_bounded_theorem_note_2026-09-15",
+    "note": "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "runner": "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py",
+    "scientific_imports": "All necessary model and mathematical proofs are reconstructed in this delta; earlier campaign and PR revisions are provenance only.",
+    "independent_review": "pending",
+    "source_inventory": {
+      "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+        "sha256": "3fae55ac5032fa3da5c8186cedce3997b3e145e90a483d898739c8059dd9db81",
+        "bytes": 27381
+      },
+      "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py": {
+        "sha256": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b",
+        "bytes": 22007
+      },
+      "logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt": {
+        "sha256": "95645a46154db9a85afc3e3644663ca7b4d233ac7f884affa5c253bb154dd6cf",
+        "bytes": 7661
+      },
+      "docs/audit/data/citation_graph_manifest.json": {
+        "sha256": "c4aec86324afb53b2e0c8b4f272f1388831d1d6279544df882c1a728a5dfb833",
+        "bytes": 669971
+      }
+    },
+    "graph_delta": {
+      "before_nodes": 5041,
+      "after_nodes": 5042,
+      "before_edges": 12519,
+      "after_edges": 12519,
+      "added_nodes": [
+        "three_state_clock_endpoint_reflection_sector_energy_and_ground_defect_bound_bounded_theorem_note_2026-09-15"
+      ],
+      "removed_nodes": [],
+      "changed_nodes": [],
+      "new_dependencies": []
+    }
+  },
+  "delivery_worktree": "/Users/jonreilly/Documents/Codex/toe-clock-endpoint-reflection-20260915",
+  "removal_authorized_after_durability_verification": true
+}

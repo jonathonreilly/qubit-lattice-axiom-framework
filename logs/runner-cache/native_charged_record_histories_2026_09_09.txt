@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/native_charged_record_histories_2026_09_09.py
+runner_sha256: 97dc1e86fe4bc2268f07de52a04d7d9f3b7af68c2b97cbb4fc687f207f475314
+input_fingerprint_sha256: 5229786f6ede9e0bde0d102a8de8ed8b974856e5cde2aa1448cbce1bf97e7aa5
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "actual_current_surface_status": "conditional-support",
+  "controls": [
+    {
+      "status": "PASS",
+      "predicates": 52609,
+      "history_columns": 736,
+      "omitted_phase_mutant_failures": 80,
+      "seconds": 0.02695866592694074,
+      "source_sha256": "202678acb13c718822b74825dd15199c810b0433cd794b767003c22171c10421",
+      "scope": "exact small full-carrier columns only"
+    },
+    {
+      "status": "PASS",
+      "checks": 146,
+      "scope": "three-mode exact CAR and two-qubit rational controls"
+    }
+  ],
+  "input_sha256": {
+    "docs/NATIVE_CHARGED_RECORD_HISTORIES_NOTE_2026-09-09.md": "b20e7fe55ef356ee93c0a97fa60882de4fce2e9cc29bbed45f65ff30d524e5d2",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "scripts/native_charged_record_history_controls_2026_09_09.py": "202678acb13c718822b74825dd15199c810b0433cd794b767003c22171c10421",
+    "scripts/native_charged_record_history_car_2026_09_09.py": "f15d72d97931bcf681582cfede7b9e3031f547c781e32697a870f0a18a113ee1"
+  },
+  "source_sha256": "97dc1e86fe4bc2268f07de52a04d7d9f3b7af68c2b97cbb4fc687f207f475314",
+  "seconds": 0.0316633329493925,
+  "peak_rss_bytes": 23838720
+}
+TOTAL: PASS=2 FAIL=0
+per_element: executed 416 exact one-edge native carrier columns and 146 CAR/refinement checks; repeated structural predicates remain separately counted in the payload.
+per_site: executed finite endpoint particle-hole conjugation, transported number, and dephasing-versus-discard controls.
+per_mode: executed finite exact CAR algebra only; no spectral-mode census or continuum dynamics computed.
+per_block: executed 736 two-edge history columns on the triangle, path and chorded square under both neighbor orders; the separate one-edge omitted-phase control rejects 80 columns.
+lattice_wide: checked and not executed; the arbitrary finite-graph statement follows from the written algebra. No physical stochastic run, large lattice dynamics or empirical experiment executed.
+
+----- stderr -----
+

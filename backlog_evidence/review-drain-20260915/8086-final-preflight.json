@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8086-final",
+  "tree": "ac0752d7dddaf48b0679df65eb8f47caae9f395b",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_positive_ward_scalar_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_positive_ward_scalar_2026_09_13.py",
+      "helpers": [
+        "scripts/native_ward_scalar_algebra_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+        "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_ward_scalar_algebra_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+        "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_ward_scalar_algebra_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+        "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+      ],
+      "citations": []
+    },
+    {
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_star_infrared_spectral_2026_09_13.py",
+      "helpers": [
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_star_low_energy_operator_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_star_low_energy_operator_2026_09_13.py",
+      "helpers": [
+        "scripts/native_star_infrared_spectral_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_star_infrared_spectral_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_star_infrared_spectral_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8755,
+      "misses": 4324
+    },
+    "packet_imports": {
+      "hits": 8737,
+      "misses": 4322
+    },
+    "declared_inputs": {
+      "hits": 8783,
+      "misses": 4455
+    }
+  },
+  "record_sha256": "f8688355cad30bbc6c679983915f163c5ae4ce3e01d7c01794566fa8f851e4be",
+  "checker_sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf"
+}

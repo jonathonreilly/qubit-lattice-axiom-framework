@@ -1,0 +1,74 @@
+[
+  {
+    "name": "train19",
+    "head": "bd2e2b6b0a3c75d61f111b783957229d783ac684",
+    "dirty": false,
+    "ignored_paths": [
+      "docs/audit/AUDIT_LEDGER.md",
+      "docs/audit/data/audit_ledger.json",
+      "docs/audit/data/audit_publication_lane.json",
+      "docs/audit/data/audit_queue.json",
+      "docs/audit/data/citation_graph.json",
+      "docs/audit/data/ledger_cache_manifest.json",
+      "docs/audit/data/publication_gap.json",
+      "docs/audit/data/runner_classification.json",
+      "docs/audit/data/static_pipeline_checkpoint.json",
+      "docs/audit/data/static_pipeline_checkpoint.lock"
+    ],
+    "ignored_bytes": 103095454
+  },
+  {
+    "name": "train20",
+    "head": "5d3a910feb102c627e8a5b63269ce0728606c59c",
+    "dirty": false,
+    "ignored_paths": [
+      "docs/audit/AUDIT_LEDGER.md",
+      "docs/audit/data/audit_ledger.json",
+      "docs/audit/data/audit_publication_lane.json",
+      "docs/audit/data/audit_queue.json",
+      "docs/audit/data/citation_graph.json",
+      "docs/audit/data/ledger_cache_manifest.json",
+      "docs/audit/data/publication_gap.json",
+      "docs/audit/data/runner_classification.json",
+      "docs/audit/data/static_pipeline_checkpoint.json",
+      "docs/audit/data/static_pipeline_checkpoint.lock"
+    ],
+    "ignored_bytes": 103096694
+  },
+  {
+    "name": "train21",
+    "head": "af0fc1206d0bc0090000d250266e48561e86123f",
+    "dirty": false,
+    "ignored_paths": [
+      "docs/audit/AUDIT_LEDGER.md",
+      "docs/audit/data/audit_ledger.json",
+      "docs/audit/data/audit_publication_lane.json",
+      "docs/audit/data/audit_queue.json",
+      "docs/audit/data/citation_graph.json",
+      "docs/audit/data/ledger_cache_manifest.json",
+      "docs/audit/data/publication_gap.json",
+      "docs/audit/data/runner_classification.json",
+      "docs/audit/data/static_pipeline_checkpoint.json",
+      "docs/audit/data/static_pipeline_checkpoint.lock"
+    ],
+    "ignored_bytes": 103138429
+  },
+  {
+    "name": "train22",
+    "head": "7a8447ddb7e43cf01e66ebe6c45781d43499c7a0",
+    "dirty": false,
+    "ignored_paths": [
+      "docs/audit/AUDIT_LEDGER.md",
+      "docs/audit/data/audit_ledger.json",
+      "docs/audit/data/audit_publication_lane.json",
+      "docs/audit/data/audit_queue.json",
+      "docs/audit/data/citation_graph.json",
+      "docs/audit/data/ledger_cache_manifest.json",
+      "docs/audit/data/publication_gap.json",
+      "docs/audit/data/runner_classification.json",
+      "docs/audit/data/static_pipeline_checkpoint.json",
+      "docs/audit/data/static_pipeline_checkpoint.lock"
+    ],
+    "ignored_bytes": 103152454
+  }
+]

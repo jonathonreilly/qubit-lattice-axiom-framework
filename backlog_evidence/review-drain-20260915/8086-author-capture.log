@@ -1,0 +1,4 @@
+scripts/native_positive_ward_scalar_2026_09_13.py 252 PASS; seconds 4.941202163696289
+scripts/native_star_infrared_spectral_2026_09_13.py 34 PASS; seconds 0.43096303939819336
+scripts/native_star_low_energy_operator_2026_09_13.py 69 PASS; seconds 0.9457390308380127
+Final staged tree ac0752d7dddaf48b0679df65eb8f47caae9f395b

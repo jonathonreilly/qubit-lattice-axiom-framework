@@ -1,0 +1,198 @@
+[
+  {
+    "name": "return_count_normalization",
+    "source": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/native_ward_scalar_arithmetic_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_positive_ward_scalar_2026_09_13.py\", line 26, in main\n    algebra=algebra_check();arithmetic=rational_check()\n                                       ~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_ward_scalar_arithmetic_2026_09_13.py\", line 179, in run\n    env,scalar_record=elementary_scalars()\n                      ~~~~~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-return_count_normalization-7mblz_oj/scripts/native_ward_scalar_arithmetic_2026_09_13.py\", line 124, in elementary_scalars\n    assert probabilities[0]==1 and probabilities[1]==F(1,6) and probabilities[2]==F(5,72)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "stdout": ""
+  },
+  {
+    "name": "radial_frequency_power",
+    "source": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/native_ward_scalar_arithmetic_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-radial_frequency_power-o485r9x7/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-radial_frequency_power-o485r9x7/scripts/native_positive_ward_scalar_2026_09_13.py\", line 26, in main\n    algebra=algebra_check();arithmetic=rational_check()\n                                       ~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-radial_frequency_power-o485r9x7/scripts/native_ward_scalar_arithmetic_2026_09_13.py\", line 206, in run\n    assert all(x<y for x,y in zip((a,b,E,FF),coarse))\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "stdout": ""
+  },
+  {
+    "name": "Ward_free_commutator",
+    "source": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/native_ward_scalar_algebra_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_free_commutator-a38xejhf/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_free_commutator-a38xejhf/scripts/native_positive_ward_scalar_2026_09_13.py\", line 26, in main\n    algebra=algebra_check();arithmetic=rational_check()\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_free_commutator-a38xejhf/scripts/native_ward_scalar_algebra_2026_09_13.py\", line 251, in run\n    assert s.expand(value-s.sympify(raw[kind][source][n],locals=local))==0,(kind,source,n)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('P', 'ward', 1)\n",
+    "stdout": ""
+  },
+  {
+    "name": "Ward_polynomial_difference",
+    "source": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/native_ward_scalar_algebra_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_polynomial_difference-l_qcw_sn/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_polynomial_difference-l_qcw_sn/scripts/native_positive_ward_scalar_2026_09_13.py\", line 26, in main\n    algebra=algebra_check();arithmetic=rational_check()\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-Ward_polynomial_difference-l_qcw_sn/scripts/native_ward_scalar_algebra_2026_09_13.py\", line 258, in run\n    assert s.expand(value-s.sympify(row['expression'],locals=local))==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "stdout": ""
+  },
+  {
+    "name": "gap_positive_tail",
+    "source": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/native_ward_scalar_arithmetic_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-gap_positive_tail-x2dc0sux/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-gap_positive_tail-x2dc0sux/scripts/native_positive_ward_scalar_2026_09_13.py\", line 26, in main\n    algebra=algebra_check();arithmetic=rational_check()\n                                       ~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-gap_positive_tail-x2dc0sux/scripts/native_ward_scalar_arithmetic_2026_09_13.py\", line 182, in run\n    gap_result=gap_bounds(env)\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-gap_positive_tail-x2dc0sux/scripts/native_ward_scalar_arithmetic_2026_09_13.py\", line 163, in gap_bounds\n    total=local;assert total>F(1,4)\n                       ^^^^^^^^^^^^\nAssertionError\n",
+    "stdout": ""
+  },
+  {
+    "name": "native_Fock_defect",
+    "source": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/native_ward_scalar_native_checks_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_Fock_defect-w_gdrtp5/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_Fock_defect-w_gdrtp5/scripts/native_positive_ward_scalar_2026_09_13.py\", line 27, in main\n    covariance=covariance_check();fock=fock_moment_check();gap=gap_fixture_check()\n                                       ~~~~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_Fock_defect-w_gdrtp5/scripts/native_ward_scalar_native_checks_2026_09_13.py\", line 178, in fock_moment_check\n    assert error<2e-8,(kind,source,n,error,actual,expected)\n           ^^^^^^^^^^\nAssertionError: ('P', 'vacuum', 1, np.float64(0.22158840972978938), np.complex128(0.39795112249947556-1.082818046337257e-16j), 0.7959022449989519)\n",
+    "stdout": ""
+  },
+  {
+    "name": "native_energy_factor",
+    "source": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/native_ward_scalar_native_checks_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_energy_factor-cd49bi4q/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_energy_factor-cd49bi4q/scripts/native_positive_ward_scalar_2026_09_13.py\", line 27, in main\n    covariance=covariance_check();fock=fock_moment_check();gap=gap_fixture_check()\n                                                               ~~~~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-native_energy_factor-cd49bi4q/scripts/native_ward_scalar_native_checks_2026_09_13.py\", line 206, in gap_fixture_check\n    assert abs(shift-(np.sqrt(6)-2))<1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "stdout": ""
+  },
+  {
+    "name": "interval_cross_products",
+    "source": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/native_ward_scalar_arithmetic_2026_09_13.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-interval_cross_products-ehtqevag/scripts/native_positive_ward_scalar_2026_09_13.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-interval_cross_products-ehtqevag/scripts/native_positive_ward_scalar_2026_09_13.py\", line 26, in main\n    algebra=algebra_check();arithmetic=rational_check()\n                                       ~~~~~~~~~~~~~~^^\n  File \"/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-ward-interval_cross_products-ehtqevag/scripts/native_ward_scalar_arithmetic_2026_09_13.py\", line 175, in run\n    assert mul((F(-2),F(3)),(F(-5),F(7)))==(F(-15),F(21))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "stdout": ""
+  },
+  {
+    "name": "frequency_shift",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_frequency_shift.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_frequency_shift.py\", line 123, in run\n    checked('full_matrix_shifted_pull_through',maximum<1e-12,absolute_error=maximum)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_frequency_shift.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: full_matrix_shifted_pull_through\n",
+    "stdout": ""
+  },
+  {
+    "name": "inverse_insertion",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inverse_insertion.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inverse_insertion.py\", line 123, in run\n    checked('full_matrix_shifted_pull_through',maximum<1e-12,absolute_error=maximum)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inverse_insertion.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: full_matrix_shifted_pull_through\n",
+    "stdout": ""
+  },
+  {
+    "name": "graded_field_sign",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_graded_field_sign.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_graded_field_sign.py\", line 155, in run\n    checked('three_annihilator_word_recursion',maximum<1e-12,absolute_error=maximum,word_counts=counts)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_graded_field_sign.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: three_annihilator_word_recursion\n",
+    "stdout": ""
+  },
+  {
+    "name": "word_shift",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_word_shift.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_word_shift.py\", line 155, in run\n    checked('three_annihilator_word_recursion',maximum<1e-12,absolute_error=maximum,word_counts=counts)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_word_shift.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: three_annihilator_word_recursion\n",
+    "stdout": ""
+  },
+  {
+    "name": "factorial_normalization",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_factorial_normalization.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_factorial_normalization.py\", line 182, in run\n    close('ordered_factorial_moment_'+str(cutoff),ordered,target,tol=1e-13)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_factorial_normalization.py\", line 33, in close\n    checked(name,error<tol,absolute_error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_factorial_normalization.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: ordered_factorial_moment_4\n",
+    "stdout": ""
+  },
+  {
+    "name": "half_Ward_corrections",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py\", line 169, in run\n    close('paired_half_Ward_terms_match_defined_scalar',soft,scalar)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py\", line 33, in close\n    checked(name,error<tol,absolute_error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_half_Ward_corrections.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: paired_half_Ward_terms_match_defined_scalar\n",
+    "stdout": ""
+  },
+  {
+    "name": "positive_band_count",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_band_count.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_band_count.py\", line 53, in run\n    checked('four_band_DOS_upper_coefficient',s.simplify(volume/(2*pi)**3-pi*E**3/(12*h**3))==0)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_band_count.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: four_band_DOS_upper_coefficient\n",
+    "stdout": ""
+  },
+  {
+    "name": "inner_ball_measure",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inner_ball_measure.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inner_ball_measure.py\", line 54, in run\n    checked('one_source_inner_ball_coefficient',s.simplify(s.Rational(1,4)*(s.Rational(4,3)*pi*(E/h)**3)/(pi)**3-E**3/(24*pi*pi*h**3))==0)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_inner_ball_measure.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: one_source_inner_ball_coefficient\n",
+    "stdout": ""
+  },
+  {
+    "name": "positive_projector_sign",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_projector_sign.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_projector_sign.py\", line 90, in run\n    checked('literal_native_positive_z_projector_sign',ray_derivative==Gz and 2*P-s.eye(8)==-ray_derivative)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_positive_projector_sign.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: literal_native_positive_z_projector_sign\n",
+    "stdout": ""
+  },
+  {
+    "name": "Wick_subtractions",
+    "source": "scripts/native_star_infrared_spectral_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_Wick_subtractions.py\", line 205, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_Wick_subtractions.py\", line 191, in run\n    close('Wick_order_removes_one_particle',state[number==1],0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_Wick_subtractions.py\", line 33, in close\n    checked(name,error<tol,absolute_error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_spectral_mutation_Wick_subtractions.py\", line 29, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: Wick_order_removes_one_particle\n",
+    "stdout": ""
+  },
+  {
+    "name": "mixed_field_placement",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_mixed_field_placement.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_mixed_field_placement.py\", line 115, in run\n    checked('exact_low_high_defect_split',error<1e-13,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_mixed_field_placement.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: exact_low_high_defect_split\n",
+    "stdout": ""
+  },
+  {
+    "name": "quadratic_low_field",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_quadratic_low_field.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_quadratic_low_field.py\", line 115, in run\n    checked('exact_low_high_defect_split',error<1e-13,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_quadratic_low_field.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: exact_low_high_defect_split\n",
+    "stdout": ""
+  },
+  {
+    "name": "low_vacuum_scalar",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py\", line 127, in run\n    close('low_vacuum_compression_keeps_quadratic_scalar',compression,high_only)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py\", line 48, in close\n    checked(name,error<tol,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_low_vacuum_scalar.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: low_vacuum_compression_keeps_quadratic_scalar\n",
+    "stdout": ""
+  },
+  {
+    "name": "analytic_low_degree",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py\", line 150, in run\n    for s in (1.,.5,.3j):close('operator_analytic_oddness_'+str(s),EH(family(s))+EH(family(-s)),np.zeros((ldim,ldim)))\n                         ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py\", line 48, in close\n    checked(name,error<tol,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_analytic_low_degree.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: operator_analytic_oddness_1.0\n",
+    "stdout": ""
+  },
+  {
+    "name": "inverse_derivative_sign",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py\", line 153, in run\n    close('analytic_first_coefficient_vs_direct_inverse',derivative,F1,tol=3e-9)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py\", line 48, in close\n    checked(name,error<tol,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_inverse_derivative_sign.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: analytic_first_coefficient_vs_direct_inverse\n",
+    "stdout": ""
+  },
+  {
+    "name": "last_inverse_derivative",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_last_inverse_derivative.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_last_inverse_derivative.py\", line 153, in run\n    close('analytic_first_coefficient_vs_direct_inverse',derivative,F1,tol=3e-9)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_last_inverse_derivative.py\", line 48, in close\n    checked(name,error<tol,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_last_inverse_derivative.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: analytic_first_coefficient_vs_direct_inverse\n",
+    "stdout": ""
+  },
+  {
+    "name": "real_spectral_shift",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py\", line 183, in run\n    close('real_spectral_parameter_matches_full_unsplit_operator',opz,EH(direct_op))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py\", line 48, in close\n    checked(name,error<tol,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_real_spectral_shift.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: real_spectral_parameter_matches_full_unsplit_operator\n",
+    "stdout": ""
+  },
+  {
+    "name": "creation_energy_margin",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_creation_energy_margin.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_creation_energy_margin.py\", line 200, in run\n    checked('one_field_intermediate_energy_support',maximum<1e-14,maximum=maximum)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_creation_energy_margin.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: one_field_intermediate_energy_support\n",
+    "stdout": ""
+  },
+  {
+    "name": "Hermitian_linear_reconstruction",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py\", line 167, in run\n    close('zero_low_energy_coefficient_is_linear',bar,reconstructed)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py\", line 48, in close\n    checked(name,error<tol,error=error)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_Hermitian_linear_reconstruction.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: zero_low_energy_coefficient_is_linear\n",
+    "stdout": ""
+  },
+  {
+    "name": "paired_inverse_majorant",
+    "source": "scripts/native_star_low_energy_operator_2026_09_13.py",
+    "mutant": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/mutant.py",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_paired_inverse_majorant.py\", line 223, in <module>\n    result=run()\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_paired_inverse_majorant.py\", line 68, in run\n    checked('Neumann_majorant_matches_two_inverse_word_series',sp.diff(scalar_majorant(x),x,3).subs(x,0)/6==cubic)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Projects/Physics-worktrees/native-positive-ward-scalar-20260913/scripts/_operator_mutation_paired_inverse_majorant.py\", line 44, in checked\n    assert condition,name\n           ^^^^^^^^^\nAssertionError: Neumann_majorant_matches_two_inverse_word_series\n",
+    "stdout": ""
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "reviewer_session": "/root/review_8011",
+  "review_ref": {
+    "path": "/private/tmp/review-drain-20260915/review-8086.json",
+    "sha256": "4dfbbee07901238880039e2a11c640b8076a3ba68a347f39fb3c2a902faf5895"
+  },
+  "latest_main": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+  "unchanged_existing_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ],
+  "new_main_scope_comparison": [
+    {
+      "path": "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md",
+      "sha256": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+      "scope_read": "Model, theorem, convention and limitation sections; Regge exact prior original-session full review reused."
+    },
+    {
+      "path": "docs/NATIVE_SIXTH_OFFDIAGONAL_SIGN_OBSTRUCTION_NOTE_2026-09-08.md",
+      "sha256": "a5315490b08b3059a4f4f1320f70a0c3690ee3590b6b9910c1355e50278d7084",
+      "scope_read": "Model, theorem, convention and limitation sections; Regge exact prior original-session full review reused."
+    },
+    {
+      "path": "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "6fc30b35c20fa4d4bf8884f311f80994e88d92cf4924ca63ac946af119e6dfcd",
+      "scope_read": "Model, theorem, convention and limitation sections; Regge exact prior original-session full review reused."
+    }
+  ],
+  "semantic_interaction": "8086 treats a supplied infinite free Majorana pi-flux model with a bounded two-bond impurity, a star vacuum vector and free-energy double compression. The sixth-order sign and eighth diagonal results concern a supplied finite edge-carrier UD+g sum lambda A ice-sector canonical direct rotation. Neither selects8086 reference, supplies its gap, nor equates its star with complete effective electric coefficients.8086 explicitly reserves complete-sixth coefficient decomposition and interacting control; these separate finite theorems do not contradict its positive scalar/spectral statement. Regge transfer concerns Gaussian length perturbations/reflection positivity and supplies no8086 input. No newly landed source is a load-bearing8086 parent.",
+  "execution_warning": "Ward captured stdout includes NumPy divide-by-zero slogdet warning, retained verbatim. The finite half-bond-reversal adverse comparator can have zero determinant; exp(-inf)=0 is a legitimate zero determinant ratio rejected against the nonzero native target. All mathematical predicates passed; no retry or tolerance change. Structured stderr is empty, not a claim of warning-free output.",
+  "finalization_receipt_note": "Final report generator initially tried JSON from stdout byte0 and rejected the warning prefix; corrected extraction to JSON start without executing science again. Original actual execution bytes remain immutable."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scope": "independent walk DP and exact tensor-Pauli CAR inverse identities, plus rational operator constants; no primary execution",
+  "walk_return_counts": [
+    6,
+    90,
+    1860,
+    44730,
+    1172556,
+    32496156
+  ],
+  "CAR_controls": [
+    "shifted pull-through",
+    "wrong unshifted control rejected",
+    "two-sided inverse derivative",
+    "omitted placement rejected"
+  ],
+  "operator_relative_upper": "14530459168373/46179488366592",
+  "seconds": 0.31469608400948346
+}

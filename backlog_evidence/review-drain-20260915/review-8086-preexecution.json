@@ -1,0 +1,1988 @@
+{
+  "status": "PREEXECUTION_SOURCE_CORRECTIONS_CONFIRMED_NOT_FINAL_PASS",
+  "reviewer_session": "/root/review_8011",
+  "original_head": "a3e5529b4d74f618df416747c39bf150b885e495",
+  "original_base": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "source_base": "5d3a910feb102c627e8a5b63269ce0728606c59c",
+  "original_proposal_tree": "5831ab167ea4caa5f36ddde4747e237d87856464",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "cbd711adeb515e90067538e760d313cea22599ea5400b2c522bc152b402c6c11",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/cbd711adeb515e90067538e760d313cea22599ea5400b2c522bc152b402c6c11.gz",
+      "final_sha256": "39aff45587410c25c0540e020aa857964cbc9ad61fbc02352845e75a36174ef9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/HANDOFF.md",
+      "original_sha256": "27a28577b73d15cf595b472906f5aa5d66ef72323a322e6ec0e6b523230d64bf",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/HANDOFF.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/27a28577b73d15cf595b472906f5aa5d66ef72323a322e6ec0e6b523230d64bf.gz",
+      "final_sha256": "379125f7e4e4425466293333f53323090f145636471686ad9471ed9cb83127ae"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/MOMENT_FORMULAS.json",
+      "original_sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/MOMENT_FORMULAS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-MOMENT_FORMULAS-e5533e9eb9859404.json",
+      "final_sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "final_sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "adf8cd1a02bc0915b079431de565294e4a488122bf52b8d92f45531ee94e5d56",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/REVIEW_HISTORY.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/adf8cd1a02bc0915b079431de565294e4a488122bf52b8d92f45531ee94e5d56.gz",
+      "final_sha256": "8d138333b9557943789f8eacb87e9643b36090b5afd68704181640aa058ee941"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/SOURCE_MANIFEST.json",
+      "original_sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/SOURCE_MANIFEST.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "final_sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRACE_GATE.md",
+      "original_sha256": "396f484cf579a96ceb43cdbb56857d098ea377556c8a18ba972f96e9f03d0591",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRACE_GATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/396f484cf579a96ceb43cdbb56857d098ea377556c8a18ba972f96e9f03d0591.gz",
+      "final_sha256": "6a409766a7cbda6ea0556f23faaaffb559c41832820eaba3f7780d424a67c5b9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRIAL_FORMULAS.json",
+      "original_sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/TRIAL_FORMULAS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-TRIAL_FORMULAS-1e477e0a5d21e13c.json",
+      "final_sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/WITNESS.json",
+      "original_sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/WITNESS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-WITNESS-dda1191fa385b3b9.json",
+      "final_sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/RESULTS.json",
+      "original_sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-RESULTS-1edd1aa7af49c3cd.json",
+      "final_sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/native_ward_scalar_algebra_2026_09_13.py",
+      "original_sha256": "940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/native_ward_scalar_algebra_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d.gz",
+      "final_sha256": "5b0ad2907c416c0911cd2c6d859f157d1acc717f42ff1097a84f8d517d9e37f9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stderr.txt",
+      "original_sha256": "15cb240ab2b99d15d80cd26bc0ae93a08ba770b672098ab606745ec999bc9a63",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/15cb240ab2b99d15d80cd26bc0ae93a08ba770b672098ab606745ec999bc9a63.gz",
+      "final_sha256": "ef2d59f3239db988bb9775f476f3155237add8f6c3afe302909d3f68d4f35c45"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_free_commutator/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/native_ward_scalar_algebra_2026_09_13.py",
+      "original_sha256": "7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/native_ward_scalar_algebra_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2.gz",
+      "final_sha256": "576a03a2cd8865ac54333b1e96cf36fba4777a3884bf87fb8f51a2db08b69e32"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stderr.txt",
+      "original_sha256": "9643c260516971a0728ab8f1605a08cf5d46064f4c12091d217e1ffc06e1ac61",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/9643c260516971a0728ab8f1605a08cf5d46064f4c12091d217e1ffc06e1ac61.gz",
+      "final_sha256": "90b28a17b7009cbddd784fd5a38bddec357dd8eded1fb45140b3eb1f4aad33de"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/Ward_polynomial_difference/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/native_ward_scalar_arithmetic_2026_09_13.py",
+      "original_sha256": "006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/native_ward_scalar_arithmetic_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf.gz",
+      "final_sha256": "9d64917bfc981ac50ee10af23c3e0356f325a3636f699cb93d6fca8697c41cac"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stderr.txt",
+      "original_sha256": "c890af7a0ffc2fc6b82feb95d9c11f32d3f9479af450fdffc4ca8ac74b92bb03",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/c890af7a0ffc2fc6b82feb95d9c11f32d3f9479af450fdffc4ca8ac74b92bb03.gz",
+      "final_sha256": "81ba9a42ae96acbd9008d14cf17ce1437f6f9d6a1822d5d501b20e2e463924a9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/gap_positive_tail/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/native_ward_scalar_arithmetic_2026_09_13.py",
+      "original_sha256": "5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/native_ward_scalar_arithmetic_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9.gz",
+      "final_sha256": "e0ec1e95e29c827a90b26016270b80e7ed6723a4ed5ee7ae5bd2480b02db8d60"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stderr.txt",
+      "original_sha256": "3437b82ff1df8597fe5f65d219ab396b3861494b9ecaee1d144a95c4371a688e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/3437b82ff1df8597fe5f65d219ab396b3861494b9ecaee1d144a95c4371a688e.gz",
+      "final_sha256": "25dc062041fe7ab368b052cd8a9d9aea294c37a008626905a5f7cb47c68e36f6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/interval_cross_products/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/native_ward_scalar_native_checks_2026_09_13.py",
+      "original_sha256": "3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/native_ward_scalar_native_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0.gz",
+      "final_sha256": "ce3029f9e416e153be8052407582aa2c1418cdca7bb723af4d84a80b984528da"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stderr.txt",
+      "original_sha256": "33a2f0a46a809edb27b4b501e226461f57701ce16489b12cee92d1fa9e4af937",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/33a2f0a46a809edb27b4b501e226461f57701ce16489b12cee92d1fa9e4af937.gz",
+      "final_sha256": "9f530b5dc72265d61a741c61976fb4f6f087483de332548081f870298e3354e2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_Fock_defect/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/native_ward_scalar_native_checks_2026_09_13.py",
+      "original_sha256": "60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/native_ward_scalar_native_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119.gz",
+      "final_sha256": "5d4825e15b21c26316e5ea059f814a1e3a582306030b09697ba279245e3a9737"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stderr.txt",
+      "original_sha256": "18d3d8bc192d211cc11ca568b761d9242338949e6b2ed928cfa3c8ee26d85806",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/18d3d8bc192d211cc11ca568b761d9242338949e6b2ed928cfa3c8ee26d85806.gz",
+      "final_sha256": "b71ac73ecce2acbed123e3121b87eeeb542738ec707e5fdb1f85c33f9d277095"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/native_energy_factor/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/native_ward_scalar_arithmetic_2026_09_13.py",
+      "original_sha256": "2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/native_ward_scalar_arithmetic_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f.gz",
+      "final_sha256": "9c6d590fffed34079970cd97f408193bde6ee87255260697f7cc471cd1f4cea2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stderr.txt",
+      "original_sha256": "4ab4a36f3259b56caf6d680e5cbf60abaf25dc594a131c5a017e64073133f86e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/4ab4a36f3259b56caf6d680e5cbf60abaf25dc594a131c5a017e64073133f86e.gz",
+      "final_sha256": "f33e3c7c92e8da53d5dd4e1326b280549e70f81c27c7e2890cdc047bbea035f0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/radial_frequency_power/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/native_ward_scalar_arithmetic_2026_09_13.py",
+      "original_sha256": "12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/native_ward_scalar_arithmetic_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b.gz",
+      "final_sha256": "30d6d7e39613d43b67d6ee6beee2daaa0390109ff433f431cf604a25fa592fc0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stderr.txt",
+      "original_sha256": "dea0ebca3d04a123eaacc098e0ed5248eccf7de5314abab851cb1d6489672c77",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/dea0ebca3d04a123eaacc098e0ed5248eccf7de5314abab851cb1d6489672c77.gz",
+      "final_sha256": "55af9101788f278ca7b552c648f608dc0da2901c6a837b73c03cf12daed54137"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-positive-ward-scalar-20260913/mutations/return_count_normalization/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "cb0205d00a4683fa93768fe8cef4eb11a4a0322ec43a94843f137d1ab8d84c70",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/cb0205d00a4683fa93768fe8cef4eb11a4a0322ec43a94843f137d1ab8d84c70.gz",
+      "final_sha256": "e59a1460d506195ac2a7f523aa1e59ef6bae1c7f0885b3aeaab3e024158816e1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/HANDOFF.md",
+      "original_sha256": "1c5949e75f319a999c6328a391c1b6910ac535226ae411a2a50d8cdd79ae8671",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/HANDOFF.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/1c5949e75f319a999c6328a391c1b6910ac535226ae411a2a50d8cdd79ae8671.gz",
+      "final_sha256": "3b635e9e69039af1367f94f11ad855d42f7e1433d2d0a9823a3ebdb9c7597147"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/MECHANICAL_CHECKS.json",
+      "original_sha256": "837239587a9fe37e2bb592ebbd3840a823654950d13679d305e0fef362f7666d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/MECHANICAL_CHECKS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/837239587a9fe37e2bb592ebbd3840a823654950d13679d305e0fef362f7666d.gz",
+      "final_sha256": "0dfbc2c6e99eb123aad4e0d3a8b6bd281977f4404cc0a3ded629ea8724622d11"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "final_sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "3bef775679cd3634dfa5c450aff0ce08742abc6ebb2d13cc12ef16c317d80f3d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/REVIEW_HISTORY.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/3bef775679cd3634dfa5c450aff0ce08742abc6ebb2d13cc12ef16c317d80f3d.gz",
+      "final_sha256": "0fddeab9325078b5f75441c97b037c7232824f9fb1df34db53a0aa80a3f621fa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/SOURCE_MANIFEST.json",
+      "original_sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/SOURCE_MANIFEST.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "final_sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/TRACE_GATE.md",
+      "original_sha256": "103b10e5d79dd62db26816e62360f33da478ef114fbeccf1c58129e5061bae0c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/TRACE_GATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/103b10e5d79dd62db26816e62360f33da478ef114fbeccf1c58129e5061bae0c.gz",
+      "final_sha256": "0e1a7b65c730a4d748130e4c59bc8ec29ba734e83cb8e4fcf82188dab4c062b6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/RESULTS.json",
+      "original_sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-RESULTS-1edd1aa7af49c3cd.json",
+      "final_sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/mutant.py",
+      "original_sha256": "7871b0fd8aebd599e62001332cb2f7cf6d582aa56a29e3259c3b7b4a9e486dcc",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/7871b0fd8aebd599e62001332cb2f7cf6d582aa56a29e3259c3b7b4a9e486dcc.gz",
+      "final_sha256": "4b91c8bf690102f588ce09e5e83f6f0792cd1ae0f2611244cb15f61959af8e38"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/stderr.txt",
+      "original_sha256": "04a3f04f3b99cc2a5107a244039588b54956feb130f5e9f05ea56840847804a6",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/04a3f04f3b99cc2a5107a244039588b54956feb130f5e9f05ea56840847804a6.gz",
+      "final_sha256": "583e0a9c3d18ea5caab0ae758be3d55233c75ae96623ac8d8e73fa77d38f9f6e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/Wick_subtractions/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/mutant.py",
+      "original_sha256": "4bf3751b8dfa042aeb19cc880ebf68cf4b7d4ead5ccbbdf548e95e572e79ae9e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/4bf3751b8dfa042aeb19cc880ebf68cf4b7d4ead5ccbbdf548e95e572e79ae9e.gz",
+      "final_sha256": "ad4f96b6e6ec8f656a1209a8e4f36d3b33d30b968b7d4e75f9b3a184995b0ad3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/stderr.txt",
+      "original_sha256": "598f356da9b7112c9dad0027e79504f3ba746603a1526e80448387425da58f4d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/598f356da9b7112c9dad0027e79504f3ba746603a1526e80448387425da58f4d.gz",
+      "final_sha256": "46ab7504681620f6bacb741b69faa9a4660f57b460b8518140c60931276a472c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/factorial_normalization/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/mutant.py",
+      "original_sha256": "016c9a4a4b395fca7887c42b882b6746e7c5aa6acc48202b0918b34a5f8d2a3e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/016c9a4a4b395fca7887c42b882b6746e7c5aa6acc48202b0918b34a5f8d2a3e.gz",
+      "final_sha256": "007f8cb03b71c7df2288b1095557dfc3cf295f34c74fb31722b665976ce51ec9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/stderr.txt",
+      "original_sha256": "40895778e842ad921bca4eba8433ced5fda4f2b7181f163978b0c5b14daf0801",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/40895778e842ad921bca4eba8433ced5fda4f2b7181f163978b0c5b14daf0801.gz",
+      "final_sha256": "a43136d3c6f7f5f1cf41ff12835733f097eafe3b62dbe1b9ed7ae01addc3cc47"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/frequency_shift/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/mutant.py",
+      "original_sha256": "cfec5bdef71b9bae7aa33c88043360ddd9725ae4185bd6916d7648a60e7fb45e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/cfec5bdef71b9bae7aa33c88043360ddd9725ae4185bd6916d7648a60e7fb45e.gz",
+      "final_sha256": "33f29a8b07603271621408716756420c50729eee73bbee411a799de86547de5b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/stderr.txt",
+      "original_sha256": "4c50dd5ef79ac1d6156cf33b2735ac4e6968edb3b961d0068cfebd54192a558f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/4c50dd5ef79ac1d6156cf33b2735ac4e6968edb3b961d0068cfebd54192a558f.gz",
+      "final_sha256": "75c974a2ebeb7c80770a7b63d2fd2399b8d6cadabe5dcf972c547eadb097f45a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/graded_field_sign/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/mutant.py",
+      "original_sha256": "cf6e7d896f4d03f3905bdf8574b5e31ff13b6f9206f790ae1426b81e033ebde0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/cf6e7d896f4d03f3905bdf8574b5e31ff13b6f9206f790ae1426b81e033ebde0.gz",
+      "final_sha256": "1470c1fedb14c2dbc15fff8feb8c3eaa23a1eb079a20123649c765a73f52614f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/stderr.txt",
+      "original_sha256": "f139730bd6dd9d59b73b868913bca7aa40c29faf3e4d2d138138dc561f9fcb90",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/f139730bd6dd9d59b73b868913bca7aa40c29faf3e4d2d138138dc561f9fcb90.gz",
+      "final_sha256": "802498d799b152e9c6dd078e1c162e426c19c269a599e228552605c2d0a92325"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/half_Ward_corrections/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/mutant.py",
+      "original_sha256": "75347a29bd95c0fdd07fbf26dfa25325f2126394b7b0fabe935eef13b9df99f3",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/75347a29bd95c0fdd07fbf26dfa25325f2126394b7b0fabe935eef13b9df99f3.gz",
+      "final_sha256": "823d51b4799a41cf4aac49d895bb872e717cf2002a74e23dd499063cbddd4a64"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/stderr.txt",
+      "original_sha256": "b7fc87658ba3c94aca145ff261a1623eaed4cd95da97610661d497bf1e61325d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/b7fc87658ba3c94aca145ff261a1623eaed4cd95da97610661d497bf1e61325d.gz",
+      "final_sha256": "4ab5af8c7ff3da8932b25b186e82c89451aeac583d4a87694cd03889186517e8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inner_ball_measure/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/mutant.py",
+      "original_sha256": "6a82d7698318338279f25922adb1039a3fc2a76ee2f3db91f27a606c8972a55b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/6a82d7698318338279f25922adb1039a3fc2a76ee2f3db91f27a606c8972a55b.gz",
+      "final_sha256": "46eab9e7acd30d733080a07b86660cc7622a85687c9cebe3d0c635b1885aaa58"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/stderr.txt",
+      "original_sha256": "9a33d2fb62b7729ca613f5544e8ea78d59b1a3c233d8d2f8bb0747e5c09d2833",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/9a33d2fb62b7729ca613f5544e8ea78d59b1a3c233d8d2f8bb0747e5c09d2833.gz",
+      "final_sha256": "eca9299ff256c420030b3ddd89e92e088700a937236d7489b9bb5d3bd6120586"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/inverse_insertion/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/mutant.py",
+      "original_sha256": "db527d558d488bb71e9620e60af760b6dc36116d0936d9eee8d225498bd9b859",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/db527d558d488bb71e9620e60af760b6dc36116d0936d9eee8d225498bd9b859.gz",
+      "final_sha256": "256c7b45b003f1b75a47a9fcf9e26d4fa77dd36ebeb5c4946815e27a67a6d1ad"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/stderr.txt",
+      "original_sha256": "3bf90cf3325c4ee00d57bd99346112c0dc33c8c251ee2c3a2d7fcad5d987483b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/3bf90cf3325c4ee00d57bd99346112c0dc33c8c251ee2c3a2d7fcad5d987483b.gz",
+      "final_sha256": "bf76f9bd62232248cacd4357834c95286c1eb0c93b23e69e536ad5c740552ad2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_band_count/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/mutant.py",
+      "original_sha256": "1b5191460163afc7458516dce4f2280d3df5d0f178a9db145007498cdc627a6d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/1b5191460163afc7458516dce4f2280d3df5d0f178a9db145007498cdc627a6d.gz",
+      "final_sha256": "5f838cd278b27f507f2333c9581506aca02c438d23c21ef0cc8f9e038aedd77b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/stderr.txt",
+      "original_sha256": "aa84d25bcfa72789f146de3de201f4bbc50c140b83796c31edee755201365b6c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/aa84d25bcfa72789f146de3de201f4bbc50c140b83796c31edee755201365b6c.gz",
+      "final_sha256": "ee003f6660a6cc7ff72cf4b6479b1ecb3ac888b18fa34ae2cea38f5f237fb54e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/positive_projector_sign/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/mutant.py",
+      "original_sha256": "522f7c57f64425bbcfaab847497e15383fe840655733ee63aef3473a70a50cd0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/522f7c57f64425bbcfaab847497e15383fe840655733ee63aef3473a70a50cd0.gz",
+      "final_sha256": "d2275ea353be778d28bc19129f9723ac733cc019b792065438242fef536cb80c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/stderr.txt",
+      "original_sha256": "af18336df613f4f3bc5978f21304988aff70e16377baa93f0194008f9eb383ff",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/af18336df613f4f3bc5978f21304988aff70e16377baa93f0194008f9eb383ff.gz",
+      "final_sha256": "f1260bf4fcbeb09a48f412697c7bb69973d1154c2ba4d59186d53362ee537cda"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/mutations/word_shift/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_packaged_runner.py",
+      "original_sha256": "ee21ab8e5d66ee60d4cdb23566c58e4368c37c881fe34b2bc91027af2c0553ef",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_packaged_runner.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/ee21ab8e5d66ee60d4cdb23566c58e4368c37c881fe34b2bc91027af2c0553ef.gz",
+      "final_sha256": "f6a7711d73f8e35e2916c2f36075d4c9608435f1a679453f62c4884f50d56200"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_stderr.txt",
+      "original_sha256": "23ccb37a4864788d4cbe8b96840a6460403373a1495b19661124d05203fa5953",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/23ccb37a4864788d4cbe8b96840a6460403373a1495b19661124d05203fa5953.gz",
+      "final_sha256": "5bb44012488ba958dee09f439f2795c9695ddd0329d5573b090bdfd825f3da95"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-infrared-spectral-20260913/recovery/first_stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "3588ae4dd3469f4fb463a060df512c5eb70e529ffb09516d8ba5e246f283dbcd",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/3588ae4dd3469f4fb463a060df512c5eb70e529ffb09516d8ba5e246f283dbcd.gz",
+      "final_sha256": "7ec219cc10f5879c199494c8ac70a31ed4a0102e74210b5245d96b2fc25fb1d2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/HANDOFF.md",
+      "original_sha256": "688fe499aac9f318831f04eb7266b955d195fbb26f4dfbc680dbeb677dd9092e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/HANDOFF.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/688fe499aac9f318831f04eb7266b955d195fbb26f4dfbc680dbeb677dd9092e.gz",
+      "final_sha256": "2dfa204002c4f69643ce07dfdc436abdb103e1e0c760d6459ac958fcbdd9e9f0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/MECHANICAL_CHECKS.json",
+      "original_sha256": "bd144b383214e8d8d9c47af115f27c7397970028de50d55d3af72e363088d549",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/MECHANICAL_CHECKS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/bd144b383214e8d8d9c47af115f27c7397970028de50d55d3af72e363088d549.gz",
+      "final_sha256": "3bd297ee997c2d27a7be7b05879860130824cdd70f5f9575158e1d8a02fc1526"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "final_sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "db0f0bd13e4fa7e591ff335b43df155ed3836f053b809d643066dd00e2cf3238",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/REVIEW_HISTORY.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/db0f0bd13e4fa7e591ff335b43df155ed3836f053b809d643066dd00e2cf3238.gz",
+      "final_sha256": "ceb3f98bf0010160f82b1657b73a5344687fdac9521834cabda21f82268cc84e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/SOURCE_MANIFEST.json",
+      "original_sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/SOURCE_MANIFEST.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "final_sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/TRACE_GATE.md",
+      "original_sha256": "a6926a531b15858acc9d99743ddf9fd7db2090b64508b8547472c91507781598",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/TRACE_GATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/a6926a531b15858acc9d99743ddf9fd7db2090b64508b8547472c91507781598.gz",
+      "final_sha256": "e6bbf0eddc8a00914a1919d0f467fdbbe5e20dfbff6e51f358f66c3fd2fc84e0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/mutant.py",
+      "original_sha256": "2599ae36234314075ac9efc69f012f8d19253ebe2abd0a8146c39c3a202b7891",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/2599ae36234314075ac9efc69f012f8d19253ebe2abd0a8146c39c3a202b7891.gz",
+      "final_sha256": "4dca7052faca803939b48415f5459883dfa9a8c4a7526e7edff5a0745199c25c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/stderr.txt",
+      "original_sha256": "2c217e88ff37abbb766675f18a5b3dfbfdb9336fb6d9451afa37b3ad684e3bf9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/2c217e88ff37abbb766675f18a5b3dfbfdb9336fb6d9451afa37b3ad684e3bf9.gz",
+      "final_sha256": "03f5f1d5c104e2dcfddb10b2fd2c6fd606176537bb7bf14184f7c2a0bb922f27"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/Hermitian_linear_reconstruction/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/RESULTS.json",
+      "original_sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-RESULTS-1edd1aa7af49c3cd.json",
+      "final_sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/mutant.py",
+      "original_sha256": "ea57a07dab9de9884c5cce041cc25ea285ce343f856a112c181f051a1b40faf9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/ea57a07dab9de9884c5cce041cc25ea285ce343f856a112c181f051a1b40faf9.gz",
+      "final_sha256": "e254d4181f4fdfb20b59c47ec4e89521df831cb2b615bd00007ce39df52ccc17"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/stderr.txt",
+      "original_sha256": "b9cb7db4abe0e3829df0cc63db5e6d73927070913bb2f33c4371a7083eaaaaf2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/b9cb7db4abe0e3829df0cc63db5e6d73927070913bb2f33c4371a7083eaaaaf2.gz",
+      "final_sha256": "8a8a2b6c94b5d7dd29f1c2959895103ec29d3fc5d45a9d7d46fe6426be515bdb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/analytic_low_degree/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/mutant.py",
+      "original_sha256": "5285b63551666e84846160eaedff1c092a3e93ecccb103520fd11928f188f6ce",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/5285b63551666e84846160eaedff1c092a3e93ecccb103520fd11928f188f6ce.gz",
+      "final_sha256": "615a71c77db00ea65a22088ed2aec9acef4637d8bb5348dd23f3a2044c267690"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/stderr.txt",
+      "original_sha256": "4305b499765cf9b30a24f4b3c2775360a94f8c8dc6f840ab3d139e380c7a1ac5",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/4305b499765cf9b30a24f4b3c2775360a94f8c8dc6f840ab3d139e380c7a1ac5.gz",
+      "final_sha256": "7a7ab07a97875a0431a6cc9ddd092147b69e9e1dfbbc2fed4147b6b6b0cf2335"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/creation_energy_margin/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/mutant.py",
+      "original_sha256": "29ec99d2d759196d34e182b9d91b072ab1df071f8d69651965830cc2d1ef3a76",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/29ec99d2d759196d34e182b9d91b072ab1df071f8d69651965830cc2d1ef3a76.gz",
+      "final_sha256": "7e4a0746f48d65e8614a6d4d5123bf3dbe91003bd69f535b702fbaa9a1e5eacc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/stderr.txt",
+      "original_sha256": "2cbfed4d5dbefb899ba4df525c6d20744e9fcb6646ab77289c8ed919890fdf3c",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/2cbfed4d5dbefb899ba4df525c6d20744e9fcb6646ab77289c8ed919890fdf3c.gz",
+      "final_sha256": "7a7a24be96de3f16473d2e5c5e42125b04e1c2b1be12af7bfae41192d85c6664"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/inverse_derivative_sign/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/mutant.py",
+      "original_sha256": "a1feee978572e42a4d426f9750491726cd35517126e293c3547c2dd0b6ecb500",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/a1feee978572e42a4d426f9750491726cd35517126e293c3547c2dd0b6ecb500.gz",
+      "final_sha256": "4748e49e15889693aa85c0cca3196b4a6ca4882e0593499940bd06fafed02088"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/stderr.txt",
+      "original_sha256": "15d574831837a95b9ba974b76a4a8bdb12322ae84f1c9b670760d1f83c28d588",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/15d574831837a95b9ba974b76a4a8bdb12322ae84f1c9b670760d1f83c28d588.gz",
+      "final_sha256": "ded012209efb138ce416b6f62fbf817cef0d7aceed107fa9774c8ce0a39405a4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/last_inverse_derivative/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/mutant.py",
+      "original_sha256": "5c52d00276ef62715f45c937bd936073f506391aba3f4ab6b02e05f1d7c7e4f3",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/5c52d00276ef62715f45c937bd936073f506391aba3f4ab6b02e05f1d7c7e4f3.gz",
+      "final_sha256": "55c88ce5e581f3302416f3edb87c4dab95fdb50d8923d9817b6e100bb9655edb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/stderr.txt",
+      "original_sha256": "89b6387f815696d1577e0bef19ac131b00a92d12b2fdaa607a6e5e944df3f551",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/89b6387f815696d1577e0bef19ac131b00a92d12b2fdaa607a6e5e944df3f551.gz",
+      "final_sha256": "e0684c3723009fb0e1892d59c69474276eb2f985f0fa2d1510dc6158ebc50eee"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/low_vacuum_scalar/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/mutant.py",
+      "original_sha256": "1507f29ec350e265df55cd3047418a15c2ff1f741486136e4c16a4625f5a9c1a",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/1507f29ec350e265df55cd3047418a15c2ff1f741486136e4c16a4625f5a9c1a.gz",
+      "final_sha256": "fa7a24146be1dad593d632dbd3033be1cf06480888926f8eaa7bf238d657ce11"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/stderr.txt",
+      "original_sha256": "dc7741d799faf33b7854a5a3229588fd24fe449a65e10f05b9b8c922b5eb97ea",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/dc7741d799faf33b7854a5a3229588fd24fe449a65e10f05b9b8c922b5eb97ea.gz",
+      "final_sha256": "5b29c0bcda59b175d576bd78fbfc4be01fab0948358fa639f8648862778e29a8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/mixed_field_placement/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/mutant.py",
+      "original_sha256": "6179c9bc83fbab3697a0ffd6d7edbd840c23ab65c031d602d41f921fb136cf1d",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/6179c9bc83fbab3697a0ffd6d7edbd840c23ab65c031d602d41f921fb136cf1d.gz",
+      "final_sha256": "d13ea2206aac9d3d3a7b1459d366049abaf79e43c60db8347699b5b57dc7b2b0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/stderr.txt",
+      "original_sha256": "a4d64ac5cb4bb8e639f49857b8a373e5d1f7ba7f439e6a9ffbcf6be6989ceac3",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/a4d64ac5cb4bb8e639f49857b8a373e5d1f7ba7f439e6a9ffbcf6be6989ceac3.gz",
+      "final_sha256": "cf1867ba401fda8619ff105a06f796557ddccc052e1210831526e189bd1dec3d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/paired_inverse_majorant/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/mutant.py",
+      "original_sha256": "3899827f0da65e58fe952e8a614b2da9115ddc7c6185ba64323b313786739ab9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/3899827f0da65e58fe952e8a614b2da9115ddc7c6185ba64323b313786739ab9.gz",
+      "final_sha256": "fa4328fe9ab944e2c1995ed2cad46473a1da7ae3ab20440aa711cfe11ad02f18"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/stderr.txt",
+      "original_sha256": "ec4f6d993ed7ca6285ac0c9ae3786c2764961c31f0d10ee90a5a44e08dba5431",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/ec4f6d993ed7ca6285ac0c9ae3786c2764961c31f0d10ee90a5a44e08dba5431.gz",
+      "final_sha256": "4c0e7ff2509f3452b7955eeeb054b74bd4f2193dca7476d930f317581307b6b1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/quadratic_low_field/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/mutant.py",
+      "original_sha256": "62374c380b94af05ebe37d3e81e50a82d4c4c26255d0d8a118456a562694b972",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/mutant.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/62374c380b94af05ebe37d3e81e50a82d4c4c26255d0d8a118456a562694b972.gz",
+      "final_sha256": "b26cf499e92b7158a51231e78cc7bde7864e7ed5dba4fdd87cd99af1daa43bf3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/stderr.txt",
+      "original_sha256": "b2bb292ef43f7393411998b8e58a34b9568cb656278f42c95cc9755a36a25c0f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/b2bb292ef43f7393411998b8e58a34b9568cb656278f42c95cc9755a36a25c0f.gz",
+      "final_sha256": "b60b75f36921f26fdb77aa5bf9ab56045847eba1505d9cad72f5e93a0de65216"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": ".claude/science/physics-loops/native-star-low-energy-operator-20260913/mutations/real_spectral_shift/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "0d256f075b0cee3e9c455877cce073fff34015c6f4ef32833cad24b1f76abdad",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      },
+      "final_path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+    },
+    {
+      "original_path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "6be9e2653f79129cf85f6793e02ebe9708c2e5b6c497066f6f631366f1d25f1b",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      },
+      "final_path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+    },
+    {
+      "original_path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "00dbd9479df330bacaf992d9add9f56c39214c4811f0be683a650c6de4a1ec58",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      },
+      "final_path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "0d692a15fc93f22441bededd1fca6c09a3089c5348d7464fa538b9d00be4fe01"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "ca500a1b024dec23e21ca3fffc288499ed6cd6afc23f90b7a5817494ea33e8b6",
+      "disposition": "Generated citation authority excluded; current-main version retained, combined gate regenerates independently.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "docs/audit/data/citation_graph_manifest.json"
+      },
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt",
+      "original_sha256": "78ef976153e49a639479e35385e35e25cd3816a5c61071084162222439c284db",
+      "disposition": "Canonical source and proof retained; path/input packaging corrections reviewed; cache is original historical cache pending fresh execution.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt"
+      },
+      "final_path": "logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt",
+      "final_sha256": "78ef976153e49a639479e35385e35e25cd3816a5c61071084162222439c284db"
+    },
+    {
+      "original_path": "logs/runner-cache/native_star_infrared_spectral_2026_09_13.txt",
+      "original_sha256": "01365348d21e56e88ad69c96ee1f70c9840f0685e2b585288b82dc0645fc970b",
+      "disposition": "Canonical source and proof retained; path/input packaging corrections reviewed; cache is original historical cache pending fresh execution.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "logs/runner-cache/native_star_infrared_spectral_2026_09_13.txt"
+      },
+      "final_path": "logs/runner-cache/native_star_infrared_spectral_2026_09_13.txt",
+      "final_sha256": "01365348d21e56e88ad69c96ee1f70c9840f0685e2b585288b82dc0645fc970b"
+    },
+    {
+      "original_path": "logs/runner-cache/native_star_low_energy_operator_2026_09_13.txt",
+      "original_sha256": "329cc95a9c46c690d416f694420d8438823b92ffba8571fb845628692db70ebf",
+      "disposition": "Canonical source and proof retained; path/input packaging corrections reviewed; cache is original historical cache pending fresh execution.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "logs/runner-cache/native_star_low_energy_operator_2026_09_13.txt"
+      },
+      "final_path": "logs/runner-cache/native_star_low_energy_operator_2026_09_13.txt",
+      "final_sha256": "329cc95a9c46c690d416f694420d8438823b92ffba8571fb845628692db70ebf"
+    },
+    {
+      "original_path": "scripts/native_positive_ward_scalar_2026_09_13.py",
+      "original_sha256": "5bc26663dc6710b5814a623bcd462b09901d3539bb3aa4051baffae0a52eef2d",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "scripts/native_positive_ward_scalar_2026_09_13.py"
+      },
+      "final_path": "scripts/native_positive_ward_scalar_2026_09_13.py",
+      "final_sha256": "0067ef68b279c57ead7d694a0aa0d84a4a2e70b8155927ba6c477bd4f8b3ee1a"
+    },
+    {
+      "original_path": "scripts/native_star_infrared_spectral_2026_09_13.py",
+      "original_sha256": "a059824718610e377736bd630202780317e8d2ac7d9514ea65e0a7927ee4eb33",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "scripts/native_star_infrared_spectral_2026_09_13.py"
+      },
+      "final_path": "scripts/native_star_infrared_spectral_2026_09_13.py",
+      "final_sha256": "be9eb1affe8838d4758834e2d09f3a098d7afdc58903cd0a515eec958ef5e392"
+    },
+    {
+      "original_path": "scripts/native_star_low_energy_operator_2026_09_13.py",
+      "original_sha256": "c93c6e788e55e21c104735b8a3897c0f161f7e6506167bbf2ad20ce680e43839",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "scripts/native_star_low_energy_operator_2026_09_13.py"
+      },
+      "final_path": "scripts/native_star_low_energy_operator_2026_09_13.py",
+      "final_sha256": "6cfe8ee31eb8ecac8b3dd4ac01f9690911e9c0c10323a734f21db4e8a0a10d33"
+    },
+    {
+      "original_path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "original_sha256": "60e00d75daa9389ffa3bc406e32daf040e6cb05f182776036dc6ea2d0cd42632",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "scripts/native_ward_scalar_algebra_2026_09_13.py"
+      },
+      "final_path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "final_sha256": "285c46589f8c77e9366f667bfd11cf5972bad4d5ece4a606cf21cfcc8d9160ec"
+    },
+    {
+      "original_path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "original_sha256": "f932113ee631ca82a3d64e80425e2a295ca7ac05e91ebd7d4ba4efcf06325579",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      },
+      "final_path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "final_sha256": "fb2f42a6c4d84a17c677676ff8a7c815eef2ac9f41fd7a431796cec78f44f101"
+    },
+    {
+      "original_path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+      "original_sha256": "79c7028e4bc3333a7d55d0faa96ccab276979d407cfa5319408cc5af724436f0",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "a3e5529b4d74f618df416747c39bf150b885e495",
+        "path": "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+      },
+      "final_path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+      "final_sha256": "62a4cabac0858920289a7b6328fe33d36c8224183020b04f541be07cae0b93d1"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "full-read reuse from prior original reviewer sessions, exact unchanged bytes checked"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_scope": "full-read reuse from prior original reviewer sessions, exact unchanged bytes checked"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_scope": "full-read reuse from prior original reviewer sessions, exact unchanged bytes checked"
+    }
+  ],
+  "runtime_scientific_inputs": [
+    {
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+    },
+    {
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+    },
+    {
+      "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "0d692a15fc93f22441bededd1fca6c09a3089c5348d7464fa538b9d00be4fe01"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-MOMENT_FORMULAS-e5533e9eb9859404.json",
+      "sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-TRIAL_FORMULAS-1e477e0a5d21e13c.json",
+      "sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-WITNESS-dda1191fa385b3b9.json",
+      "sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c"
+    },
+    {
+      "path": "scripts/native_star_infrared_spectral_2026_09_13.py",
+      "sha256": "be9eb1affe8838d4758834e2d09f3a098d7afdc58903cd0a515eec958ef5e392"
+    },
+    {
+      "path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "sha256": "285c46589f8c77e9366f667bfd11cf5972bad4d5ece4a606cf21cfcc8d9160ec"
+    },
+    {
+      "path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "sha256": "fb2f42a6c4d84a17c677676ff8a7c815eef2ac9f41fd7a431796cec78f44f101"
+    },
+    {
+      "path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+      "sha256": "62a4cabac0858920289a7b6328fe33d36c8224183020b04f541be07cae0b93d1"
+    }
+  ],
+  "independent_controls": {
+    "path": "/private/tmp/review-drain-20260915/check8086/independent-result.json",
+    "sha256": "ef43376faadc8e8b923fdcb2179af5f34f35715dec48ea58956aa189289fff44"
+  },
+  "historical_mutation_binding": {
+    "path": "/private/tmp/review-drain-20260915/check8086/mutation-binding.json",
+    "sha256": "d368573f0a349fa6de42dd8380c0303128670a708c7f138dd1f124257f7bc903"
+  },
+  "dependency_scope": {
+    "ward": [],
+    "spectral": [
+      "Ward theorem in same unit"
+    ],
+    "operator": [
+      "Ward theorem in same unit",
+      "spectral theorem in same unit"
+    ],
+    "external_methods": "CAR Gaussian Fock representation, spectral theorem and resolvent calculus, Gaussian Wick formula, Cauchy coefficient estimate; standard mathematical methods made explicit in the source proof, no imported numerical certificate or physical selection."
+  },
+  "source_tree": "54e8a7751b93d6038d0c120e3aa792a1f148a09b",
+  "source_paths": [
+    {
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+    },
+    {
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+    },
+    {
+      "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "0d692a15fc93f22441bededd1fca6c09a3089c5348d7464fa538b9d00be4fe01"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/1507f29ec350e265df55cd3047418a15c2ff1f741486136e4c16a4625f5a9c1a.gz",
+      "sha256": "fa7a24146be1dad593d632dbd3033be1cf06480888926f8eaa7bf238d657ce11"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/15d574831837a95b9ba974b76a4a8bdb12322ae84f1c9b670760d1f83c28d588.gz",
+      "sha256": "ded012209efb138ce416b6f62fbf817cef0d7aceed107fa9774c8ce0a39405a4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/2599ae36234314075ac9efc69f012f8d19253ebe2abd0a8146c39c3a202b7891.gz",
+      "sha256": "4dca7052faca803939b48415f5459883dfa9a8c4a7526e7edff5a0745199c25c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/29ec99d2d759196d34e182b9d91b072ab1df071f8d69651965830cc2d1ef3a76.gz",
+      "sha256": "7e4a0746f48d65e8614a6d4d5123bf3dbe91003bd69f535b702fbaa9a1e5eacc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/2c217e88ff37abbb766675f18a5b3dfbfdb9336fb6d9451afa37b3ad684e3bf9.gz",
+      "sha256": "03f5f1d5c104e2dcfddb10b2fd2c6fd606176537bb7bf14184f7c2a0bb922f27"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/2cbfed4d5dbefb899ba4df525c6d20744e9fcb6646ab77289c8ed919890fdf3c.gz",
+      "sha256": "7a7a24be96de3f16473d2e5c5e42125b04e1c2b1be12af7bfae41192d85c6664"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/3588ae4dd3469f4fb463a060df512c5eb70e529ffb09516d8ba5e246f283dbcd.gz",
+      "sha256": "7ec219cc10f5879c199494c8ac70a31ed4a0102e74210b5245d96b2fc25fb1d2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/3899827f0da65e58fe952e8a614b2da9115ddc7c6185ba64323b313786739ab9.gz",
+      "sha256": "fa4328fe9ab944e2c1995ed2cad46473a1da7ae3ab20440aa711cfe11ad02f18"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/4305b499765cf9b30a24f4b3c2775360a94f8c8dc6f840ab3d139e380c7a1ac5.gz",
+      "sha256": "7a7ab07a97875a0431a6cc9ddd092147b69e9e1dfbbc2fed4147b6b6b0cf2335"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/5285b63551666e84846160eaedff1c092a3e93ecccb103520fd11928f188f6ce.gz",
+      "sha256": "615a71c77db00ea65a22088ed2aec9acef4637d8bb5348dd23f3a2044c267690"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/5c52d00276ef62715f45c937bd936073f506391aba3f4ab6b02e05f1d7c7e4f3.gz",
+      "sha256": "55c88ce5e581f3302416f3edb87c4dab95fdb50d8923d9817b6e100bb9655edb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/6179c9bc83fbab3697a0ffd6d7edbd840c23ab65c031d602d41f921fb136cf1d.gz",
+      "sha256": "d13ea2206aac9d3d3a7b1459d366049abaf79e43c60db8347699b5b57dc7b2b0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/62374c380b94af05ebe37d3e81e50a82d4c4c26255d0d8a118456a562694b972.gz",
+      "sha256": "b26cf499e92b7158a51231e78cc7bde7864e7ed5dba4fdd87cd99af1daa43bf3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/688fe499aac9f318831f04eb7266b955d195fbb26f4dfbc680dbeb677dd9092e.gz",
+      "sha256": "2dfa204002c4f69643ce07dfdc436abdb103e1e0c760d6459ac958fcbdd9e9f0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/89b6387f815696d1577e0bef19ac131b00a92d12b2fdaa607a6e5e944df3f551.gz",
+      "sha256": "e0684c3723009fb0e1892d59c69474276eb2f985f0fa2d1510dc6158ebc50eee"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/a1feee978572e42a4d426f9750491726cd35517126e293c3547c2dd0b6ecb500.gz",
+      "sha256": "4748e49e15889693aa85c0cca3196b4a6ca4882e0593499940bd06fafed02088"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/a4d64ac5cb4bb8e639f49857b8a373e5d1f7ba7f439e6a9ffbcf6be6989ceac3.gz",
+      "sha256": "cf1867ba401fda8619ff105a06f796557ddccc052e1210831526e189bd1dec3d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/a6926a531b15858acc9d99743ddf9fd7db2090b64508b8547472c91507781598.gz",
+      "sha256": "e6bbf0eddc8a00914a1919d0f467fdbbe5e20dfbff6e51f358f66c3fd2fc84e0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/b2bb292ef43f7393411998b8e58a34b9568cb656278f42c95cc9755a36a25c0f.gz",
+      "sha256": "b60b75f36921f26fdb77aa5bf9ab56045847eba1505d9cad72f5e93a0de65216"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/b9cb7db4abe0e3829df0cc63db5e6d73927070913bb2f33c4371a7083eaaaaf2.gz",
+      "sha256": "8a8a2b6c94b5d7dd29f1c2959895103ec29d3fc5d45a9d7d46fe6426be515bdb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/bd144b383214e8d8d9c47af115f27c7397970028de50d55d3af72e363088d549.gz",
+      "sha256": "3bd297ee997c2d27a7be7b05879860130824cdd70f5f9575158e1d8a02fc1526"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/db0f0bd13e4fa7e591ff335b43df155ed3836f053b809d643066dd00e2cf3238.gz",
+      "sha256": "ceb3f98bf0010160f82b1657b73a5344687fdac9521834cabda21f82268cc84e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/dc7741d799faf33b7854a5a3229588fd24fe449a65e10f05b9b8c922b5eb97ea.gz",
+      "sha256": "5b29c0bcda59b175d576bd78fbfc4be01fab0948358fa639f8648862778e29a8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/ea57a07dab9de9884c5cce041cc25ea285ce343f856a112c181f051a1b40faf9.gz",
+      "sha256": "e254d4181f4fdfb20b59c47ec4e89521df831cb2b615bd00007ce39df52ccc17"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/_objects/ec4f6d993ed7ca6285ac0c9ae3786c2764961c31f0d10ee90a5a44e08dba5431.gz",
+      "sha256": "4c0e7ff2509f3452b7955eeeb054b74bd4f2193dca7476d930f317581307b6b1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/archive-manifest.json",
+      "sha256": "ab3605c53fa5314173f068d6cab770428a67c1ad34bef7237a3b492ead749d6e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "6a0ebef13f670a78ec8208d4ab00f598386eba1c4019323c81a2e7a51367eade"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "a97806b070171f431385437764970d6e1d1b2db138bb2138e372bff800f44481"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-operator-evidence/kept/pr8086-operator-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "bde0bb145f1c0fdcfee5c38b2da904234ac86b8ecacfde8a5b9bd3006230ec19"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/016c9a4a4b395fca7887c42b882b6746e7c5aa6acc48202b0918b34a5f8d2a3e.gz",
+      "sha256": "007f8cb03b71c7df2288b1095557dfc3cf295f34c74fb31722b665976ce51ec9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/04a3f04f3b99cc2a5107a244039588b54956feb130f5e9f05ea56840847804a6.gz",
+      "sha256": "583e0a9c3d18ea5caab0ae758be3d55233c75ae96623ac8d8e73fa77d38f9f6e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/103b10e5d79dd62db26816e62360f33da478ef114fbeccf1c58129e5061bae0c.gz",
+      "sha256": "0e1a7b65c730a4d748130e4c59bc8ec29ba734e83cb8e4fcf82188dab4c062b6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/1b5191460163afc7458516dce4f2280d3df5d0f178a9db145007498cdc627a6d.gz",
+      "sha256": "5f838cd278b27f507f2333c9581506aca02c438d23c21ef0cc8f9e038aedd77b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/1c5949e75f319a999c6328a391c1b6910ac535226ae411a2a50d8cdd79ae8671.gz",
+      "sha256": "3b635e9e69039af1367f94f11ad855d42f7e1433d2d0a9823a3ebdb9c7597147"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/23ccb37a4864788d4cbe8b96840a6460403373a1495b19661124d05203fa5953.gz",
+      "sha256": "5bb44012488ba958dee09f439f2795c9695ddd0329d5573b090bdfd825f3da95"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/3bef775679cd3634dfa5c450aff0ce08742abc6ebb2d13cc12ef16c317d80f3d.gz",
+      "sha256": "0fddeab9325078b5f75441c97b037c7232824f9fb1df34db53a0aa80a3f621fa"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/3bf90cf3325c4ee00d57bd99346112c0dc33c8c251ee2c3a2d7fcad5d987483b.gz",
+      "sha256": "bf76f9bd62232248cacd4357834c95286c1eb0c93b23e69e536ad5c740552ad2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/40895778e842ad921bca4eba8433ced5fda4f2b7181f163978b0c5b14daf0801.gz",
+      "sha256": "a43136d3c6f7f5f1cf41ff12835733f097eafe3b62dbe1b9ed7ae01addc3cc47"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/4bf3751b8dfa042aeb19cc880ebf68cf4b7d4ead5ccbbdf548e95e572e79ae9e.gz",
+      "sha256": "ad4f96b6e6ec8f656a1209a8e4f36d3b33d30b968b7d4e75f9b3a184995b0ad3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/4c50dd5ef79ac1d6156cf33b2735ac4e6968edb3b961d0068cfebd54192a558f.gz",
+      "sha256": "75c974a2ebeb7c80770a7b63d2fd2399b8d6cadabe5dcf972c547eadb097f45a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/522f7c57f64425bbcfaab847497e15383fe840655733ee63aef3473a70a50cd0.gz",
+      "sha256": "d2275ea353be778d28bc19129f9723ac733cc019b792065438242fef536cb80c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/598f356da9b7112c9dad0027e79504f3ba746603a1526e80448387425da58f4d.gz",
+      "sha256": "46ab7504681620f6bacb741b69faa9a4660f57b460b8518140c60931276a472c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/6a82d7698318338279f25922adb1039a3fc2a76ee2f3db91f27a606c8972a55b.gz",
+      "sha256": "46eab9e7acd30d733080a07b86660cc7622a85687c9cebe3d0c635b1885aaa58"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/75347a29bd95c0fdd07fbf26dfa25325f2126394b7b0fabe935eef13b9df99f3.gz",
+      "sha256": "823d51b4799a41cf4aac49d895bb872e717cf2002a74e23dd499063cbddd4a64"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/7871b0fd8aebd599e62001332cb2f7cf6d582aa56a29e3259c3b7b4a9e486dcc.gz",
+      "sha256": "4b91c8bf690102f588ce09e5e83f6f0792cd1ae0f2611244cb15f61959af8e38"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/837239587a9fe37e2bb592ebbd3840a823654950d13679d305e0fef362f7666d.gz",
+      "sha256": "0dfbc2c6e99eb123aad4e0d3a8b6bd281977f4404cc0a3ded629ea8724622d11"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/9a33d2fb62b7729ca613f5544e8ea78d59b1a3c233d8d2f8bb0747e5c09d2833.gz",
+      "sha256": "eca9299ff256c420030b3ddd89e92e088700a937236d7489b9bb5d3bd6120586"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/aa84d25bcfa72789f146de3de201f4bbc50c140b83796c31edee755201365b6c.gz",
+      "sha256": "ee003f6660a6cc7ff72cf4b6479b1ecb3ac888b18fa34ae2cea38f5f237fb54e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/af18336df613f4f3bc5978f21304988aff70e16377baa93f0194008f9eb383ff.gz",
+      "sha256": "f1260bf4fcbeb09a48f412697c7bb69973d1154c2ba4d59186d53362ee537cda"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/b7fc87658ba3c94aca145ff261a1623eaed4cd95da97610661d497bf1e61325d.gz",
+      "sha256": "4ab5af8c7ff3da8932b25b186e82c89451aeac583d4a87694cd03889186517e8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/cb0205d00a4683fa93768fe8cef4eb11a4a0322ec43a94843f137d1ab8d84c70.gz",
+      "sha256": "e59a1460d506195ac2a7f523aa1e59ef6bae1c7f0885b3aeaab3e024158816e1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/cf6e7d896f4d03f3905bdf8574b5e31ff13b6f9206f790ae1426b81e033ebde0.gz",
+      "sha256": "1470c1fedb14c2dbc15fff8feb8c3eaa23a1eb079a20123649c765a73f52614f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/cfec5bdef71b9bae7aa33c88043360ddd9725ae4185bd6916d7648a60e7fb45e.gz",
+      "sha256": "33f29a8b07603271621408716756420c50729eee73bbee411a799de86547de5b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/db527d558d488bb71e9620e60af760b6dc36116d0936d9eee8d225498bd9b859.gz",
+      "sha256": "256c7b45b003f1b75a47a9fcf9e26d4fa77dd36ebeb5c4946815e27a67a6d1ad"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/ee21ab8e5d66ee60d4cdb23566c58e4368c37c881fe34b2bc91027af2c0553ef.gz",
+      "sha256": "f6a7711d73f8e35e2916c2f36075d4c9608435f1a679453f62c4884f50d56200"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/_objects/f139730bd6dd9d59b73b868913bca7aa40c29faf3e4d2d138138dc561f9fcb90.gz",
+      "sha256": "802498d799b152e9c6dd078e1c162e426c19c269a599e228552605c2d0a92325"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/archive-manifest.json",
+      "sha256": "a7c4b89de0059417e4b7e6c96acd53e5fe545e1fa40614157b2e6ce2c63045e9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "40b633261f0ac024f85cac38e3aef8a12bc2abc6db7a7f8f2141f2100e0d1f49"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "519c303c344b57c5ea359b0a5e2829469cc6a6b7fa00191e36a780b9f7d980fb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-spectral-evidence/kept/pr8086-spectral-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "63a977905aa355226d06c75e1e845df0f2175d0e7172826decb8762f438134d9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/006ddfa53d5e5b22f90a0de8b56234676b3cd8dcedcf7b44c99a422b57eb59cf.gz",
+      "sha256": "9d64917bfc981ac50ee10af23c3e0356f325a3636f699cb93d6fca8697c41cac"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/12f5774bbf0ebb468f5e725c5d7d0917cf5a933f0b65a022f080567a9dba842b.gz",
+      "sha256": "30d6d7e39613d43b67d6ee6beee2daaa0390109ff433f431cf604a25fa592fc0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/15cb240ab2b99d15d80cd26bc0ae93a08ba770b672098ab606745ec999bc9a63.gz",
+      "sha256": "ef2d59f3239db988bb9775f476f3155237add8f6c3afe302909d3f68d4f35c45"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/18d3d8bc192d211cc11ca568b761d9242338949e6b2ed928cfa3c8ee26d85806.gz",
+      "sha256": "b71ac73ecce2acbed123e3121b87eeeb542738ec707e5fdb1f85c33f9d277095"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/27a28577b73d15cf595b472906f5aa5d66ef72323a322e6ec0e6b523230d64bf.gz",
+      "sha256": "379125f7e4e4425466293333f53323090f145636471686ad9471ed9cb83127ae"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/2b173af51e28502cb62639a2cbc03206b5b028a67a71b0e739a58240aa304b3f.gz",
+      "sha256": "9c6d590fffed34079970cd97f408193bde6ee87255260697f7cc471cd1f4cea2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/33a2f0a46a809edb27b4b501e226461f57701ce16489b12cee92d1fa9e4af937.gz",
+      "sha256": "9f530b5dc72265d61a741c61976fb4f6f087483de332548081f870298e3354e2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/3437b82ff1df8597fe5f65d219ab396b3861494b9ecaee1d144a95c4371a688e.gz",
+      "sha256": "25dc062041fe7ab368b052cd8a9d9aea294c37a008626905a5f7cb47c68e36f6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/396f484cf579a96ceb43cdbb56857d098ea377556c8a18ba972f96e9f03d0591.gz",
+      "sha256": "6a409766a7cbda6ea0556f23faaaffb559c41832820eaba3f7780d424a67c5b9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/3b032a94f154c2341619c9adcce6a10a71577affa2800eb368e4d00d4ce93eb0.gz",
+      "sha256": "ce3029f9e416e153be8052407582aa2c1418cdca7bb723af4d84a80b984528da"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/4ab4a36f3259b56caf6d680e5cbf60abaf25dc594a131c5a017e64073133f86e.gz",
+      "sha256": "f33e3c7c92e8da53d5dd4e1326b280549e70f81c27c7e2890cdc047bbea035f0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/5fc644e1bb7024f6fef420c60a0cbbed1cca362d6944868477f1adff82c9c2c9.gz",
+      "sha256": "e0ec1e95e29c827a90b26016270b80e7ed6723a4ed5ee7ae5bd2480b02db8d60"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/60477704959f975fc3853a2f4b7f8fbb8b736a31447dde6653c622aaeb89f119.gz",
+      "sha256": "5d4825e15b21c26316e5ea059f814a1e3a582306030b09697ba279245e3a9737"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/7d6430f3637003fdb98889e5df0edd20f40b95f7fc19e135b34871648d5464f2.gz",
+      "sha256": "576a03a2cd8865ac54333b1e96cf36fba4777a3884bf87fb8f51a2db08b69e32"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/940ad003bb5ee3d0a6dcfc024a6acb7eb41312e6915ec2293b84db2ff115fe3d.gz",
+      "sha256": "5b0ad2907c416c0911cd2c6d859f157d1acc717f42ff1097a84f8d517d9e37f9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/9643c260516971a0728ab8f1605a08cf5d46064f4c12091d217e1ffc06e1ac61.gz",
+      "sha256": "90b28a17b7009cbddd784fd5a38bddec357dd8eded1fb45140b3eb1f4aad33de"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/adf8cd1a02bc0915b079431de565294e4a488122bf52b8d92f45531ee94e5d56.gz",
+      "sha256": "8d138333b9557943789f8eacb87e9643b36090b5afd68704181640aa058ee941"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/c890af7a0ffc2fc6b82feb95d9c11f32d3f9479af450fdffc4ca8ac74b92bb03.gz",
+      "sha256": "81ba9a42ae96acbd9008d14cf17ce1437f6f9d6a1822d5d501b20e2e463924a9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/cbd711adeb515e90067538e760d313cea22599ea5400b2c522bc152b402c6c11.gz",
+      "sha256": "39aff45587410c25c0540e020aa857964cbc9ad61fbc02352845e75a36174ef9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/dea0ebca3d04a123eaacc098e0ed5248eccf7de5314abab851cb1d6489672c77.gz",
+      "sha256": "55af9101788f278ca7b552c648f608dc0da2901c6a837b73c03cf12daed54137"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/archive-manifest.json",
+      "sha256": "07fb79ea3d360b87a4075da65d4e9ddb189f05585738205d55f3c1ceff5e1a4c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-MOMENT_FORMULAS-e5533e9eb9859404.json",
+      "sha256": "e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "5c19c1e94269b527607c32ea4783ea88e64c17e07546f1f7b9ad7ac418cfb4db"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "0c2ded7e6b70dd6fef1f4f6296702b8fc6396a14480827dfa7fcf653ada2a8e2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "02b54a0d01e96018917aa1eb527e5ba0be8159bc2f57bae47608f1fb7daf5a20"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-TRIAL_FORMULAS-1e477e0a5d21e13c.json",
+      "sha256": "7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8086-ward-evidence/kept/pr8086-ward-WITNESS-dda1191fa385b3b9.json",
+      "sha256": "3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c"
+    },
+    {
+      "path": "logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt",
+      "sha256": "78ef976153e49a639479e35385e35e25cd3816a5c61071084162222439c284db"
+    },
+    {
+      "path": "logs/runner-cache/native_star_infrared_spectral_2026_09_13.txt",
+      "sha256": "01365348d21e56e88ad69c96ee1f70c9840f0685e2b585288b82dc0645fc970b"
+    },
+    {
+      "path": "logs/runner-cache/native_star_low_energy_operator_2026_09_13.txt",
+      "sha256": "329cc95a9c46c690d416f694420d8438823b92ffba8571fb845628692db70ebf"
+    },
+    {
+      "path": "scripts/native_positive_ward_scalar_2026_09_13.py",
+      "sha256": "0067ef68b279c57ead7d694a0aa0d84a4a2e70b8155927ba6c477bd4f8b3ee1a"
+    },
+    {
+      "path": "scripts/native_star_infrared_spectral_2026_09_13.py",
+      "sha256": "be9eb1affe8838d4758834e2d09f3a098d7afdc58903cd0a515eec958ef5e392"
+    },
+    {
+      "path": "scripts/native_star_low_energy_operator_2026_09_13.py",
+      "sha256": "6cfe8ee31eb8ecac8b3dd4ac01f9690911e9c0c10323a734f21db4e8a0a10d33"
+    },
+    {
+      "path": "scripts/native_ward_scalar_algebra_2026_09_13.py",
+      "sha256": "285c46589f8c77e9366f667bfd11cf5972bad4d5ece4a606cf21cfcc8d9160ec"
+    },
+    {
+      "path": "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+      "sha256": "fb2f42a6c4d84a17c677676ff8a7c815eef2ac9f41fd7a431796cec78f44f101"
+    },
+    {
+      "path": "scripts/native_ward_scalar_native_checks_2026_09_13.py",
+      "sha256": "62a4cabac0858920289a7b6328fe33d36c8224183020b04f541be07cae0b93d1"
+    }
+  ],
+  "notes": [
+    {
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_positive_ward_scalar_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_positive_ward_scalar_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_positive_ward_scalar_2026_09_13.py",
+      "helpers": [
+        "scripts/native_ward_scalar_algebra_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py",
+        "scripts/native_ward_scalar_native_checks_2026_09_13.py"
+      ],
+      "citations": [],
+      "repository_dependencies": [],
+      "dependency_rationale": "The supplied-model Ward proof is self-contained; spectral and operator notes depend exactly on the linked earlier notes in this same reviewed coherent unit. No separate physical model selection or historical campaign result is a premise."
+    },
+    {
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_star_infrared_spectral_2026_09_13.py",
+      "helpers": [
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "The supplied-model Ward proof is self-contained; spectral and operator notes depend exactly on the linked earlier notes in this same reviewed coherent unit. No separate physical model selection or historical campaign result is a premise."
+    },
+    {
+      "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_star_low_energy_operator_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_star_low_energy_operator_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_star_low_energy_operator_2026_09_13.py",
+      "helpers": [
+        "scripts/native_star_infrared_spectral_2026_09_13.py",
+        "scripts/native_ward_scalar_arithmetic_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "The supplied-model Ward proof is self-contained; spectral and operator notes depend exactly on the linked earlier notes in this same reviewed coherent unit. No separate physical model selection or historical campaign result is a premise."
+    }
+  ],
+  "correction_confirmation": "All source differences cold-read; unchanged mathematics, thresholds, execution count and caps. Archive113decoded payloads exact. Original-note attribution replaces unsupported external campaign preservation claim. Three fresh primary executions and final cache binding pending."
+}

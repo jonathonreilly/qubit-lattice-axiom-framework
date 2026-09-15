@@ -1,0 +1,13 @@
+{
+  "verdict": "PASS procedural addition only",
+  "candidate_path": "/private/tmp/review-drain-20260915/skill-batched-source-OPERATIONS.md",
+  "candidate_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+  "base_sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+  "actual_diff": "Only appends Bounded Git blob verification heading and previously reviewed paragraph.",
+  "basis": [
+    "receipt-batched-index-independent-review.json",
+    "close_landed_batched-independent-review.json"
+  ],
+  "scientific_effect": "No source, premise, execution or verdict restamp; future records bind actual identified methodology candidate.",
+  "state": "Candidate not automatically installed or remote authority"
+}

@@ -1,0 +1,40 @@
+{
+  "units": [
+    {
+      "unit": "skill-batched-source",
+      "prs": [],
+      "commits": [
+        "985d309e763c691b4ea4774ab518c60f819b7aa3"
+      ],
+      "final_head": "985d309e763c691b4ea4774ab518c60f819b7aa3",
+      "source_paths": {
+        "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+      },
+      "inputs": {
+        "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+      },
+      "reports": [
+        "skill-batched-source-operations-independent-addendum.json",
+        "skill-batched-source-OPERATIONS.md",
+        "close_landed_batched.py",
+        "close_landed_batched-independent-review.md",
+        "close_landed_batched-independent-review.json",
+        "close_landed_batched-independent-controls.json"
+      ],
+      "review_evidence_hashes": {
+        "skill-batched-source-operations-independent-addendum.json": "142d9881a0522843b4eead4a49e7ebcf0750dec18788f542c9bef71a836d64bb",
+        "skill-batched-source-OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+        "close_landed_batched.py": "61118e84f5244cd7216214434f2a4a6418887cd267a098d239f34b12e343b687",
+        "close_landed_batched-independent-review.md": "0c4b70d092a4b0a25312ba26a907f39a37ad2c374eee3cf92922c2f555c15923",
+        "close_landed_batched-independent-review.json": "6f80605993ed7f3f57e87a6124ae75115bd6ad0d56e706ba580f206d21e0ef17",
+        "close_landed_batched-independent-controls.json": "50209b640edd368e1fedf55131e7f111e2f24c951c080b87d99af5fa6914f3af"
+      },
+      "procedural_only": true,
+      "procedural_review": "skill-batched-source-operations-independent-addendum.json",
+      "validated_source_tree": "454cdd5f936f31423e3be9e90d6c0b8f3ea36666"
+    }
+  ],
+  "science_notes": 0,
+  "source_count": 1,
+  "collection_closed": "Reviewed exact source batching documentation; combine with next science unit using this identified method revision."
+}

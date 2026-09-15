@@ -1,0 +1,14 @@
+{
+  "base": "d0786a03770a8b8c0e9d1be56d507e0ac85cc951",
+  "prospective_train55_commits": [
+    "57071910952ed22d43d52d099d34ca95d7052b11",
+    "98a50fcae6da7a6109f8e47abf7e825810e33f93",
+    "d0786a03770a8b8c0e9d1be56d507e0ac85cc951"
+  ],
+  "candidate": "985d309e763c691b4ea4774ab518c60f819b7aa3",
+  "tree": "454cdd5f936f31423e3be9e90d6c0b8f3ea36666",
+  "sources": {
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+  },
+  "state": "Reviewed identified candidate, not production authority until main landing"
+}

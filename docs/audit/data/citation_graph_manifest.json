@@ -1,6 +1,6 @@
 {
- "edge_count": 12813,
- "node_count": 5270,
+ "edge_count": 12837,
+ "node_count": 5296,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4995,6 +4995,10 @@
    "out_degree": 0
   },
   "finite_rank_source_to_metric_theorem_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
@@ -13026,6 +13030,10 @@
    "deps_hash": "1badd550395b",
    "out_degree": 3
   },
+  "native_rk_charge_stability_note_2026-09-08": {
+   "deps_hash": "90007eb5200a",
+   "out_degree": 2
+  },
   "nature_discovery_directions_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -13857,6 +13865,14 @@
   "periodic_2d_wraparound_fix_note_2026-04-11": {
    "deps_hash": "9cdc850bbad7",
    "out_degree": 6
+  },
+  "periodic_gaussian_full_payload_matrix_codec_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "permanent_local_gaussian_likelihood_protocol_and_dk_postselection_cost_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "persistent_inertial_object_probe_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20173,6 +20189,94 @@
   "work_history.repo.review_feedback.pr8038-native-cycle-evidence.readme": {
    "deps_hash": "07eac9a6559a",
    "out_degree": 26
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.before-variational-expansion.pr8040-before-variational-expansion-native_rk_charge_stability_note_2026-09-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.before-variational-expansion.pr8040-before-variational-expansion-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.mutations.omit_signed_hole_order.pr8040-mutations-omit_signed_hole_order-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.mutations.one_common_neighbor.pr8040-mutations-one_common_neighbor-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.mutations.under_count_capacity.pr8040-mutations-under_count_capacity-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.mutations.wrong_path_charge.pr8040-mutations-wrong_path_charge-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.mutations.wrong_reverse_phase.pr8040-mutations-wrong_reverse_phase-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.mobile.pr8040-originals-mobile-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.mobile.pr8040-originals-mobile-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.static.pr8040-originals-static-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.static.pr8040-originals-static-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.variational.pr8040-originals-variational-counting_extension": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.variational.pr8040-originals-variational-counting_extension_preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.variational.pr8040-originals-variational-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.variational.pr8040-originals-variational-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.originals.variational.pr8040-originals-variational-source_binding": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.pr8040-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.pr8040-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.pr8040-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.pr8040-review_initial": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.pr8040-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8040-native-rk-charge-evidence.readme": {
+   "deps_hash": "54e4d386f0da",
+   "out_degree": 22
   },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",

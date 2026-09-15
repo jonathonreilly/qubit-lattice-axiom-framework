@@ -1,0 +1,1060 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "identity",
+      "git_blob": "fd600afdf5683be428c8c27401892ec0609d0f9e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/AUTHOR_REVIEW.md",
+      "raw_bytes": 4090,
+      "raw_sha256": "76ec2f5fac7d2ca466b38ee1da3c6fa47a4b59cffc7ae35c0c8cbcd589ab4117",
+      "stored_path": "kept/pr8101-AUTHOR_REVIEW-f47757c621d16573.md",
+      "stored_sha256": "76ec2f5fac7d2ca466b38ee1da3c6fa47a4b59cffc7ae35c0c8cbcd589ab4117"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f7b6cf0fda2b3ff9f76b8186abcbdeffde0009c4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/BLOCK13_CORRECTIONS.md",
+      "raw_bytes": 312,
+      "raw_sha256": "039aae1bdb8482581303b50ad9df57dbf48c7a55b131503b98cbe78bd1af5ee7",
+      "stored_path": "_objects/039aae1bdb8482581303b50ad9df57dbf48c7a55b131503b98cbe78bd1af5ee7.gz",
+      "stored_sha256": "7155e69bf25d82b0b2a034ae00328271ba9a35579dad631b4d7f0ad1bf955598"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4f19dcb2c9a9c67bb3a41b9c24ab629d04344d77",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/BLOCK13_DERIVATION.md",
+      "raw_bytes": 13786,
+      "raw_sha256": "7fe3a2942a3adc223d141d0364125fd0fcfabd1e8fea0b8c5df6a728be0fdc21",
+      "stored_path": "_objects/7fe3a2942a3adc223d141d0364125fd0fcfabd1e8fea0b8c5df6a728be0fdc21.gz",
+      "stored_sha256": "bea0a751d608509e0f9b9c6192752e17c5f2dbf9472f3f3494aa59526bcfa1c1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86d7d04dd204b3f902ab3035e3abc275476f7aef",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/BLOCK13_LITERATURE_SCOPE.md",
+      "raw_bytes": 928,
+      "raw_sha256": "ff5980142d0f99fd335618f8b19254285c034775f389989a5d279a753c454df1",
+      "stored_path": "_objects/ff5980142d0f99fd335618f8b19254285c034775f389989a5d279a753c454df1.gz",
+      "stored_sha256": "dc1b42c09d437ee615d5ce5bc0b79e7b90769685db44110340616b12f62a7c2f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5518c62e27c10c63531702aa685a0b0882ee5f86",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/BLOCK13_SEED.md",
+      "raw_bytes": 7814,
+      "raw_sha256": "6c06e05548ae8cad557479d3b073751f34716b94bd9f44d547e6d6ed6c4e10d8",
+      "stored_path": "_objects/6c06e05548ae8cad557479d3b073751f34716b94bd9f44d547e6d6ed6c4e10d8.gz",
+      "stored_sha256": "f0a197a8df06d79136f9d9312db4da3c2d537f1facb7322e45f94ef388032f47"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "559ac3f936abe8cb4a47b767ceb00aa7f8a187e5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/BLOCK13_TRIAL_EXPLORATION.json",
+      "raw_bytes": 2154,
+      "raw_sha256": "68d63c3d5f63b00753aca6e12d2e66d77a857ada10c8fda87722466d036672d1",
+      "stored_path": "_objects/68d63c3d5f63b00753aca6e12d2e66d77a857ada10c8fda87722466d036672d1.gz",
+      "stored_sha256": "9629a20c53c9b2661d301fe93a43fcb58f098a37c11c7518a466d10f877f4e29"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "505f3081adb24b08a64d1abac796d2f5cb5527da",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/BLOCK13_TRIAL_SOURCE_BEFORE_RECEIPT_FIX.py.gz",
+      "raw_bytes": 1070,
+      "raw_sha256": "749351f761b055e42503ddfc373bc49c426cb92808a305e3f3a2c7ad0ec35056",
+      "stored_path": "_objects/749351f761b055e42503ddfc373bc49c426cb92808a305e3f3a2c7ad0ec35056.gz",
+      "stored_sha256": "8fadd3457e1f3f5afa5f4923f3062fa5d4d8baca6d45717724d20c97361b2fd4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8a5012f3846ac3187b3f3d96b0fbea1cd45fe924",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/CANONICAL_EXECUTION.json",
+      "raw_bytes": 48619,
+      "raw_sha256": "4eb93796b445997db3c37d569323bddc0efc7aab8c0eb89efaa46d9822b1cd41",
+      "stored_path": "_objects/4eb93796b445997db3c37d569323bddc0efc7aab8c0eb89efaa46d9822b1cd41.gz",
+      "stored_sha256": "16007442f1e03c115eacf9458efe3b72fb19cd4f382595d2e90c24c9bd555098"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cd29e6a5ae90bc0f19357eb87431a0acdbcf4573",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/CHANGED_EVIDENCE.json",
+      "raw_bytes": 210,
+      "raw_sha256": "62bbe89b01ae0e3dcb5e8a66f399a6c5dfa60372d910b285af9ce2d4c7fb616d",
+      "stored_path": "_objects/62bbe89b01ae0e3dcb5e8a66f399a6c5dfa60372d910b285af9ce2d4c7fb616d.gz",
+      "stored_sha256": "b0d06a712accb5b88afbc005a2f3beb3152d9cf70768b1c7d466e046ef73fccb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fe65ad72e77920ae27a9c4bf06005b4a9a8773d7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/FOCUSED_VALIDATION.json",
+      "raw_bytes": 537,
+      "raw_sha256": "7d991b9b0d47d30e4cc7f0c937311b03c3a7ed5a7acc1fd56135b07811fe3f67",
+      "stored_path": "_objects/7d991b9b0d47d30e4cc7f0c937311b03c3a7ed5a7acc1fd56135b07811fe3f67.gz",
+      "stored_sha256": "8a19a087bc5882ac6505f89f466e8792bbdf2b9529b397f8433080cf3e696001"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/GRAPH_BUILD.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b2c493f24631b57bb7e74fba1c3b23b6bf491df6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/GRAPH_BUILD.stdout",
+      "raw_bytes": 280,
+      "raw_sha256": "505c17ae23419dc5e543f654ae08ce44b29bf2cc6ae9204c49611962bbfe4aac",
+      "stored_path": "_objects/505c17ae23419dc5e543f654ae08ce44b29bf2cc6ae9204c49611962bbfe4aac.gz",
+      "stored_sha256": "b338f50737cdb2663b7d3206a617f171f9bb28ee0d7ee1447886c744f755a474"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "db64b14315b511a5e304d42bcf0d81489fe41eb6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/GRAPH_DELTA.json",
+      "raw_bytes": 1954,
+      "raw_sha256": "cb0f0a362033b687df9671cc0e88650e3c7b388cd60ccd4e47356a97c17d939e",
+      "stored_path": "_objects/cb0f0a362033b687df9671cc0e88650e3c7b388cd60ccd4e47356a97c17d939e.gz",
+      "stored_sha256": "111d5266640ecaafa2844675892be757d97e5d07bb1f6daeaabfbcbe5115cb83"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f1d3fed81caf0d05f74f10dea018dcb3554b788f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/MUTATIONS.json",
+      "raw_bytes": 31842,
+      "raw_sha256": "8d80ec94fc06410a05043697ec578a8c86dcd4834a4ab50595d56d3a3ff5622b",
+      "stored_path": "_objects/8d80ec94fc06410a05043697ec578a8c86dcd4834a4ab50595d56d3a3ff5622b.gz",
+      "stored_sha256": "0809eb3d33914e230eea7fc2f43e9b0bff234f0f76039423566d08981f8a668f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "40196b4fb56c878f1b1c4615db8976580459ac76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/SOURCE_READINESS.json",
+      "raw_bytes": 271,
+      "raw_sha256": "bb4e1ee1f2642a0ab2d7d9911fc8bb6b37e46605e2be24fcacb54f59d21f7f92",
+      "stored_path": "_objects/bb4e1ee1f2642a0ab2d7d9911fc8bb6b37e46605e2be24fcacb54f59d21f7f92.gz",
+      "stored_sha256": "cf86f058da2d52fb4b8ab9b472258260ce693d61083c35686ee0ccd3e0c2e26b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/VOCAB_LINT.json",
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "stored_path": "_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+      "stored_sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e91777cd321a1c532e5dfca9495b7df5cffcd44",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/block13_trial_explore.py",
+      "raw_bytes": 2154,
+      "raw_sha256": "7bc25957ac094cb753ae423939a5f66c6684b03a3b23ff368e67106b670b32bc",
+      "stored_path": "_objects/7bc25957ac094cb753ae423939a5f66c6684b03a3b23ff368e67106b670b32bc.gz",
+      "stored_sha256": "28667b17d405283335d95a2f8df74d708de223e78f662688b13b241341026e13"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "845c1526a75c7dd9bf4011fd4de96106755228c2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/canonical_runner_cache.txt.gz",
+      "raw_bytes": 4538,
+      "raw_sha256": "0ea96a510851d9d9ead9cc230646b9877deda2afc9396be4f3ffc80ac415359c",
+      "stored_path": "_objects/0ea96a510851d9d9ead9cc230646b9877deda2afc9396be4f3ffc80ac415359c.gz",
+      "stored_sha256": "15b46588f125f28c8d802d2347182dfdafb6d1c006d6e5985148fb9dfdc9802d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5a85cf1df1e974a10b9c50ac6d4ae953afb3c547",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/CAR_hermitian_bond_factor.source.py.gz",
+      "raw_bytes": 6191,
+      "raw_sha256": "caa12b8d16fbc810db42e817b5f0e927cf6de1bdd0e2c2c1fcc82ed970b48050",
+      "stored_path": "_objects/caa12b8d16fbc810db42e817b5f0e927cf6de1bdd0e2c2c1fcc82ed970b48050.gz",
+      "stored_sha256": "2e3d392b15de4cdbb0a4f2b5d1f971a0abca70029e11a6701d0122c2a054e3b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "16644c8f2f9e51f5df684a9e7641bdac26652f1b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/CAR_hermitian_bond_factor.stderr.gz",
+      "raw_bytes": 567,
+      "raw_sha256": "9032d21df6886ba232f1beabbf0e9a36bf194b68f39d6645017c1c3dda213f82",
+      "stored_path": "_objects/9032d21df6886ba232f1beabbf0e9a36bf194b68f39d6645017c1c3dda213f82.gz",
+      "stored_sha256": "2a4b1c04224b16697c6df7656269acd68471ac4618ab2d9c04a70fa691d76a97"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/CAR_hermitian_bond_factor.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/chain_ceiling_removed.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/chain_endpoint_count.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/controlled_shift_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/cube_coercivity_factor.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/cube_face_incidence.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/exact_radical_overlap.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/monopole_POVM_normalization.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/monopole_angle_normalization.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/onsite_filling.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/phase_POVM_measure_normalization.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/plaquette_link_incidence.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/redundant_flow_normalization.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/signed_monopole_compression_sign.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/small_density_excludes_order.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/spectral_deficit_overestimate.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/squaring_compression_assumed_exact.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/trial_expectation_too_large.stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/prior_check/stderr.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "906bbb13580abc8ce40a279956c646cc864f8df1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/chain_ceiling_removed.source.py.gz",
+      "raw_bytes": 6193,
+      "raw_sha256": "31674f9a51dc28defc3d46dd35251821e0375c79640807d17a7528aef27c7890",
+      "stored_path": "_objects/31674f9a51dc28defc3d46dd35251821e0375c79640807d17a7528aef27c7890.gz",
+      "stored_sha256": "ad23b7f3ba24392393ccc192e5dd4ca791187d9f714a962165ed3620b2d678c0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8e7589a4825f86b0b9aa1fd68d07acbd676af73c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/chain_ceiling_removed.stderr.gz",
+      "raw_bytes": 525,
+      "raw_sha256": "3143cbbe4533fe6f860bf395ccee3eacebfa57153516359c4f2eb6a90f223542",
+      "stored_path": "_objects/3143cbbe4533fe6f860bf395ccee3eacebfa57153516359c4f2eb6a90f223542.gz",
+      "stored_sha256": "05dc6c74618304704282c9fa0e2a794abf80781bef33bc99207a061458a0063f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eafdfd17e62afeaf9b80f23dec0e99efb46f61b0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/chain_endpoint_count.source.py.gz",
+      "raw_bytes": 6193,
+      "raw_sha256": "27afcad8a8c4fde19dce1734e2186dddda4489f7cb84ec246d1531a85d231765",
+      "stored_path": "_objects/27afcad8a8c4fde19dce1734e2186dddda4489f7cb84ec246d1531a85d231765.gz",
+      "stored_sha256": "9e18bfc84bc0934de2f4d6874056c625b92ebdaa9e52a03f1babafb803277894"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7bd4e9ca15c58a6b2eee4bab234b3779ad22d364",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/chain_endpoint_count.stderr.gz",
+      "raw_bytes": 524,
+      "raw_sha256": "423e5b23d2380d2813f65a5e14ae4e2b9ffbd291aacaa140a94bbdc5a70fa237",
+      "stored_path": "_objects/423e5b23d2380d2813f65a5e14ae4e2b9ffbd291aacaa140a94bbdc5a70fa237.gz",
+      "stored_sha256": "b4506233882ea8d1a3821cb1596223209140687a925cf7e0d2c41ab934907684"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a13588306a0bfa1204ed481f53e6e067f653cbc9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/controlled_shift_sign.source.py.gz",
+      "raw_bytes": 6194,
+      "raw_sha256": "8a75df8f454a67988ca08cf62fc8a93727f8526af41f7fe5e531d4fe9d412699",
+      "stored_path": "_objects/8a75df8f454a67988ca08cf62fc8a93727f8526af41f7fe5e531d4fe9d412699.gz",
+      "stored_sha256": "69efd863aa88b3bab377ceef1965a813a350cf65d2dfc87bcb98af4c7291fb33"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "24a8e3b64076a34360dd2401c1a4f1a5811cfcd6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/controlled_shift_sign.stderr.gz",
+      "raw_bytes": 488,
+      "raw_sha256": "d79240ea442df9b222ac1b921bf31a2b0df5995063a128f1230e2c63e62d6933",
+      "stored_path": "_objects/d79240ea442df9b222ac1b921bf31a2b0df5995063a128f1230e2c63e62d6933.gz",
+      "stored_sha256": "758df798e5c4f9837b3c5e30cd59e0a4be17e05b31a636896e96f84168c4797e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "28b18beb6005516bad3d3d0005da4dc7e0b7c0b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/cube_coercivity_factor.source.py.gz",
+      "raw_bytes": 6189,
+      "raw_sha256": "147298e7f66dd742da2fce0ff78d7d7e13d6d66ce4614bd7d321a7f9d532011b",
+      "stored_path": "_objects/147298e7f66dd742da2fce0ff78d7d7e13d6d66ce4614bd7d321a7f9d532011b.gz",
+      "stored_sha256": "9a81cd9d9bb7c9d9e81142e6260490d3993c02ab16422118e3dcbac9c4e1f84f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8c9d15742e2ed828f603396e4153eeac3ab05894",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/cube_coercivity_factor.stderr.gz",
+      "raw_bytes": 528,
+      "raw_sha256": "0e3da72486c918762c45005c5595fec8344e42d01f433c2fed0a014a293fd6a3",
+      "stored_path": "_objects/0e3da72486c918762c45005c5595fec8344e42d01f433c2fed0a014a293fd6a3.gz",
+      "stored_sha256": "46969f16c4a9747319cbea35d1489c90966c9908203ccc9ddc6626cd5771610f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5a8581cea54c7c7e2dfda86e555938d16213f701",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/cube_face_incidence.source.py.gz",
+      "raw_bytes": 6188,
+      "raw_sha256": "82363143331ce2fa9cae7612ed15caf4d2a92623d33b3557c4a91bcbb5be7ae5",
+      "stored_path": "_objects/82363143331ce2fa9cae7612ed15caf4d2a92623d33b3557c4a91bcbb5be7ae5.gz",
+      "stored_sha256": "93925e5a6916fadd15ea527fc57bcfa7957f180e5b632124f71ce61371dafad4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2255939e0f14f30405c0a0fa7103fa0a2515708b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/cube_face_incidence.stderr.gz",
+      "raw_bytes": 518,
+      "raw_sha256": "a3dc4d9aa6dec27263c988aba691a3a825df042efbf0ed0901c32a48142e2dc0",
+      "stored_path": "_objects/a3dc4d9aa6dec27263c988aba691a3a825df042efbf0ed0901c32a48142e2dc0.gz",
+      "stored_sha256": "cf80e4d20b1d7692e0a87ab12349eeca5c0cf7b037b1fbaadea1adf67c01091f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2b8b25378698b1e6109e290f6538a39d4d6e3fa2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/exact_radical_overlap.source.py.gz",
+      "raw_bytes": 6193,
+      "raw_sha256": "cb9ec8a8d74bcd9957709d4a427de36e4dd605131466028a7d83ceadf73e74e0",
+      "stored_path": "_objects/cb9ec8a8d74bcd9957709d4a427de36e4dd605131466028a7d83ceadf73e74e0.gz",
+      "stored_sha256": "bc0b6e7378d3a6f3328d2ee0524006bf6014cdbf1298db29738605733c439f1b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "24e0b0a13992942e1f3a24e42ba3d8f47554c05a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/exact_radical_overlap.stderr.gz",
+      "raw_bytes": 471,
+      "raw_sha256": "cfff99481971d78c2312a57288cb75dccb559e70a1ec26e1962a10c54ec47ebe",
+      "stored_path": "_objects/cfff99481971d78c2312a57288cb75dccb559e70a1ec26e1962a10c54ec47ebe.gz",
+      "stored_sha256": "7bb539bd654305011232e11b1a00b3bd6142fb6ac8ba14f641d162f2f404dddf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "242b691845fe58c383dd8d2fe79e3a69676144b1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/monopole_POVM_normalization.source.py.gz",
+      "raw_bytes": 6190,
+      "raw_sha256": "06057d5497210d21c468e0d87a18cebe7d2dc6eb59637aea9f8871ff30099bf4",
+      "stored_path": "_objects/06057d5497210d21c468e0d87a18cebe7d2dc6eb59637aea9f8871ff30099bf4.gz",
+      "stored_sha256": "f13e41008297b61852518c52746080dafa41c124804b95f878b3d15bd195a375"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6b4e474167906ff4850b71c941d9e975bb4cab0e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/monopole_POVM_normalization.stderr.gz",
+      "raw_bytes": 559,
+      "raw_sha256": "61ce77eb758120d2475722b0cbdb3c3bd55ff3e6f1e1256fbcb1c48012c93095",
+      "stored_path": "_objects/61ce77eb758120d2475722b0cbdb3c3bd55ff3e6f1e1256fbcb1c48012c93095.gz",
+      "stored_sha256": "e2c89729f45414be33e16c4ff9e336fae51a0dc48310d110a597e736cbcec079"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "88728dc457d23d9b28e62d4c55d57f98456b5f6f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/monopole_angle_normalization.source.py.gz",
+      "raw_bytes": 6190,
+      "raw_sha256": "6bd9330dca50645f6d58cef91327c26027a7eed2a9c8f2ba5d9a2645cc25ec5d",
+      "stored_path": "_objects/6bd9330dca50645f6d58cef91327c26027a7eed2a9c8f2ba5d9a2645cc25ec5d.gz",
+      "stored_sha256": "d3ef18c2dfa8d57d3e9a9cc93385dfd51a31567d305d096847afa31ca1cc685f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6b8e0ba680f85a1628ad462fdb16e9301f34269c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/monopole_angle_normalization.stderr.gz",
+      "raw_bytes": 547,
+      "raw_sha256": "a0d95308f10df3b6b6385e0c2c74a12ce1c6fa7e2ad7eb4fb679027e7c78b49e",
+      "stored_path": "_objects/a0d95308f10df3b6b6385e0c2c74a12ce1c6fa7e2ad7eb4fb679027e7c78b49e.gz",
+      "stored_sha256": "a830df8a79827929c2c30723ae5f9d54ce78b6895efa891cf5b30ee2b92e213d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9384dd6a4a94b2efa48987b658cb1c1c53713580",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/onsite_filling.source.py.gz",
+      "raw_bytes": 6191,
+      "raw_sha256": "078fb3f6e4715e3140cbf94d689ce9fbb8d665490a24d7674d6dd49885865b82",
+      "stored_path": "_objects/078fb3f6e4715e3140cbf94d689ce9fbb8d665490a24d7674d6dd49885865b82.gz",
+      "stored_sha256": "8671857f13972f8fee0a167fb63fb88e42110e384a24334cc4ffa7e8e63ccbad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0fbe13cec65447a3407a9d36f5c67f4dddb76317",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/onsite_filling.stderr.gz",
+      "raw_bytes": 467,
+      "raw_sha256": "52149f764fc11150dfa05796027c7d95b0672724d36f1da176dce3eaf217e7e9",
+      "stored_path": "_objects/52149f764fc11150dfa05796027c7d95b0672724d36f1da176dce3eaf217e7e9.gz",
+      "stored_sha256": "64bdbe04e9f94da3bdf5d330e8f3b50fcbe0a23380cf69bc83132d2ad198de09"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d8fb9fd89c20d62b5d6a06e1afb8b1500ef4a67f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/phase_POVM_measure_normalization.source.py.gz",
+      "raw_bytes": 6189,
+      "raw_sha256": "ce22bd149f5c5b81f3c375c0ca014e8994794f4a6480ecb005ce591b5f9fe816",
+      "stored_path": "_objects/ce22bd149f5c5b81f3c375c0ca014e8994794f4a6480ecb005ce591b5f9fe816.gz",
+      "stored_sha256": "ac948f3c3a8c509506d45cb500f4cb7e45fcc0c0b5b4939fe795417106393ba6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f59694ef0f4008fee14814a80799423845d2d286",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/phase_POVM_measure_normalization.stderr.gz",
+      "raw_bytes": 547,
+      "raw_sha256": "4dd1bb8ca6f10abadcff44f7b71641bbff610a654af1cbfc7c1fa8e6a650ce15",
+      "stored_path": "_objects/4dd1bb8ca6f10abadcff44f7b71641bbff610a654af1cbfc7c1fa8e6a650ce15.gz",
+      "stored_sha256": "dcfd4cf014a0433629224391c25fb90aebfd66acbf22d5e55fecdc2fb7a03147"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bcb1d9d1cf01e78007ed54422a272239866d3154",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/plaquette_link_incidence.source.py.gz",
+      "raw_bytes": 6192,
+      "raw_sha256": "a96f16d82c772a08e5731b8db78be97cfa70ad9a5afc3e733b969540536a0c74",
+      "stored_path": "_objects/a96f16d82c772a08e5731b8db78be97cfa70ad9a5afc3e733b969540536a0c74.gz",
+      "stored_sha256": "3c288bc036fb525feb4c8e006ab755554982fbc8f2b3a2a828b0d453570855aa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2c355704ab7656030c56e2c2981492d5a8c74539",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/plaquette_link_incidence.stderr.gz",
+      "raw_bytes": 517,
+      "raw_sha256": "d2d8d64fc8b7324d2dd78a609770bd3f6d872b9503075be180c3dbc3bc89b396",
+      "stored_path": "_objects/d2d8d64fc8b7324d2dd78a609770bd3f6d872b9503075be180c3dbc3bc89b396.gz",
+      "stored_sha256": "1fa02b37535b55358daeaa831879c94bc120e533cc2d6c4bbf3c9bde77f064db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "639f1f0fad3e6bbdb3bf50332e28817ca3266d8e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/redundant_flow_normalization.source.py.gz",
+      "raw_bytes": 6187,
+      "raw_sha256": "5611687121629d592f5f34c1dbc00e37c80cff3260e08b5ec4834bdf162eadb2",
+      "stored_path": "_objects/5611687121629d592f5f34c1dbc00e37c80cff3260e08b5ec4834bdf162eadb2.gz",
+      "stored_sha256": "34477e496f3b37a93ec8828d04a782da2d2c30958eae502739d2795a53c050a0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "00264cce606c253093cbd05329e2691bc612b855",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/redundant_flow_normalization.stderr.gz",
+      "raw_bytes": 519,
+      "raw_sha256": "8850d29aa3ca2327a9f08ffebfe024ba10c2622688cba8daf737c6f4f099ee5f",
+      "stored_path": "_objects/8850d29aa3ca2327a9f08ffebfe024ba10c2622688cba8daf737c6f4f099ee5f.gz",
+      "stored_sha256": "5f62ddff7f41d75fa403aaf0389cc2290e31d0c6b9dd4325f152b16d5ff3774c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "470f796877756bdedab0ab7c18fdb379c92607db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/signed_monopole_compression_sign.source.py.gz",
+      "raw_bytes": 6191,
+      "raw_sha256": "0713d7f23ee08cd45ecd07eb9bc5dda24f80c9f65f5d8c685000c8609b11d17d",
+      "stored_path": "_objects/0713d7f23ee08cd45ecd07eb9bc5dda24f80c9f65f5d8c685000c8609b11d17d.gz",
+      "stored_sha256": "07590d07a23d5deb89c2f116424099bceb2c60852ad507a2e49f62fdd919a776"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b3d70323b32f47612d2a2656a5e8e08dcee0d65f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/signed_monopole_compression_sign.stderr.gz",
+      "raw_bytes": 566,
+      "raw_sha256": "dbcfafa321681ea35fc5fb877ac4a642306f15b9302deab1329b9df1f2690d11",
+      "stored_path": "_objects/dbcfafa321681ea35fc5fb877ac4a642306f15b9302deab1329b9df1f2690d11.gz",
+      "stored_sha256": "d004fd184c1a4603b181a25c7e45bec39c7f45e7a1a40a815af370dea8669698"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "27f605e4686e715f79062f34f9c1a386f39b9265",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/small_density_excludes_order.source.py.gz",
+      "raw_bytes": 6188,
+      "raw_sha256": "926269a172cd390dd028e2ea01b49fc2ab97f96d3bd747a0531abef3f989e018",
+      "stored_path": "_objects/926269a172cd390dd028e2ea01b49fc2ab97f96d3bd747a0531abef3f989e018.gz",
+      "stored_sha256": "1da6196d40a0fc9f2bc5ff231939bdea7f84e41da0db899d85280d11c3c7adb1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3b2e7a6419ce2290dec7611dd294d4ff425aadd5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/small_density_excludes_order.stderr.gz",
+      "raw_bytes": 542,
+      "raw_sha256": "515af99b668e02953c462cfe32b27829376ca2b759ae6e2bbbfcb697bc898864",
+      "stored_path": "_objects/515af99b668e02953c462cfe32b27829376ca2b759ae6e2bbbfcb697bc898864.gz",
+      "stored_sha256": "3426ee6c3bb23d724a01054eca76be93a8bb43c1a8c83e40dc02f44e263f74c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7eceddc7daf6c41b82dc7c2265da11af9dc31d21",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/spectral_deficit_overestimate.source.py.gz",
+      "raw_bytes": 6191,
+      "raw_sha256": "62286c883e1b06808ef485ebb63eb6e6c3cac66030088209a4005ac73c879e0f",
+      "stored_path": "_objects/62286c883e1b06808ef485ebb63eb6e6c3cac66030088209a4005ac73c879e0f.gz",
+      "stored_sha256": "bc67296882aaf6cd9bc960a963055918f5f7b972de2ac36062a2d31fb71527f3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dd9cc6d2c634def5474fefb0ecd57f912c4fe233",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/spectral_deficit_overestimate.stderr.gz",
+      "raw_bytes": 468,
+      "raw_sha256": "775aa16099e9d9c2284f9d2bb6c4e25c9e311440bac9f529a8a6bfedfa1293ed",
+      "stored_path": "_objects/775aa16099e9d9c2284f9d2bb6c4e25c9e311440bac9f529a8a6bfedfa1293ed.gz",
+      "stored_sha256": "c67008b09b5dea931d11b2ec38686bfb5f956f30c7a335c6cc807ab3824411a6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "84efd5ee205face8cce7f74baa4717b284e0608e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/squaring_compression_assumed_exact.source.py.gz",
+      "raw_bytes": 6192,
+      "raw_sha256": "c46bdae47a758678595354e42e71a54a184442bfc02a18fbc0f22ba5455a5553",
+      "stored_path": "_objects/c46bdae47a758678595354e42e71a54a184442bfc02a18fbc0f22ba5455a5553.gz",
+      "stored_sha256": "8a2c3ff76d0fa59cc46c304b56bfc6ecc4c8e34d7af03cebd127eb7c2630eb77"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "07bdd018b4b42ea332ea438aaee4e9e5eb7eb514",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/squaring_compression_assumed_exact.stderr.gz",
+      "raw_bytes": 509,
+      "raw_sha256": "1d5ddabe48b70716543b928f8ff9cd3a608118fc8e648a6589ee766fe2a12f7e",
+      "stored_path": "_objects/1d5ddabe48b70716543b928f8ff9cd3a608118fc8e648a6589ee766fe2a12f7e.gz",
+      "stored_sha256": "93c09e7c1cf263c560c387bcd09197625675c27a77220a68017171633f37455b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e6cff4d0b59299224836aa6d2185811da410b10",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/trial_expectation_too_large.source.py.gz",
+      "raw_bytes": 6192,
+      "raw_sha256": "8d7d657db8fcf46abdf51f775b7122279381616fb849dd70c9e2d95277e0eced",
+      "stored_path": "_objects/8d7d657db8fcf46abdf51f775b7122279381616fb849dd70c9e2d95277e0eced.gz",
+      "stored_sha256": "a24c785dc25f6f1c62179f4d6a5b2112b2c1a0d716353e44b82529e963b90eb4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2f0ef24b98866afbc2c9c28ac7fde60a0e664d8c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/mutations/trial_expectation_too_large.stderr.gz",
+      "raw_bytes": 532,
+      "raw_sha256": "ab88cb7252b2851656b9e45e6e7b90c105cc932e3888e466e436eda35dba06b3",
+      "stored_path": "_objects/ab88cb7252b2851656b9e45e6e7b90c105cc932e3888e466e436eda35dba06b3.gz",
+      "stored_sha256": "180ee2f6e61c18544f771c7ae632e6c17aee29d5cfb899c45fc346203ad94998"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "75d0dfd52035e712271945a5b0a4d7533bba6945",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/prior_check/source.py.gz",
+      "raw_bytes": 6070,
+      "raw_sha256": "70a112f717e3083dedb93286ea55300f7733709b0d250d3963e26d68964ee128",
+      "stored_path": "_objects/70a112f717e3083dedb93286ea55300f7733709b0d250d3963e26d68964ee128.gz",
+      "stored_sha256": "40c7b75d2ffc76b1d946ea9cf24cd21fa47b3624a8f50aa13b0616293d0516bb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d5310b7139a011e900aad0b56ec28c76f7acc580",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/prior_check/stdout.gz",
+      "raw_bytes": 4216,
+      "raw_sha256": "5727874224f7a965394d0f35c8b62ee9c75e50dd2783a63543b154497af67c6c",
+      "stored_path": "_objects/5727874224f7a965394d0f35c8b62ee9c75e50dd2783a63543b154497af67c6c.gz",
+      "stored_sha256": "09aa411b00dfae808783a76767922ff8e61bd8fd7910884782edeca2de0dac9a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "97d410ab102730cb953855b5a896eacdd5476333",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/run_mutations.py",
+      "raw_bytes": 2955,
+      "raw_sha256": "ab685ed02289ef4e424cb0aa00a83c752f31aa841fcc00d80f9f33944d59579a",
+      "stored_path": "_objects/ab685ed02289ef4e424cb0aa00a83c752f31aa841fcc00d80f9f33944d59579a.gz",
+      "stored_sha256": "60ada34bbbb95139c1508c753c6ac92f3bc1548337585646849e22ea6073bf56"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/finite-link-weak-coupling-payload-20260913/",
+  "revision": "da5b152430bd5a1159a05a586e51e61a7c2c2b7f",
+  "schema_version": 1,
+  "unique_blobs": {
+    "00264cce606c253093cbd05329e2691bc612b855": {
+      "occurrences": 1,
+      "raw_bytes": 519,
+      "raw_sha256": "8850d29aa3ca2327a9f08ffebfe024ba10c2622688cba8daf737c6f4f099ee5f"
+    },
+    "07bdd018b4b42ea332ea438aaee4e9e5eb7eb514": {
+      "occurrences": 1,
+      "raw_bytes": 509,
+      "raw_sha256": "1d5ddabe48b70716543b928f8ff9cd3a608118fc8e648a6589ee766fe2a12f7e"
+    },
+    "0fbe13cec65447a3407a9d36f5c67f4dddb76317": {
+      "occurrences": 1,
+      "raw_bytes": 467,
+      "raw_sha256": "52149f764fc11150dfa05796027c7d95b0672724d36f1da176dce3eaf217e7e9"
+    },
+    "16644c8f2f9e51f5df684a9e7641bdac26652f1b": {
+      "occurrences": 1,
+      "raw_bytes": 567,
+      "raw_sha256": "9032d21df6886ba232f1beabbf0e9a36bf194b68f39d6645017c1c3dda213f82"
+    },
+    "2255939e0f14f30405c0a0fa7103fa0a2515708b": {
+      "occurrences": 1,
+      "raw_bytes": 518,
+      "raw_sha256": "a3dc4d9aa6dec27263c988aba691a3a825df042efbf0ed0901c32a48142e2dc0"
+    },
+    "242b691845fe58c383dd8d2fe79e3a69676144b1": {
+      "occurrences": 1,
+      "raw_bytes": 6190,
+      "raw_sha256": "06057d5497210d21c468e0d87a18cebe7d2dc6eb59637aea9f8871ff30099bf4"
+    },
+    "24a8e3b64076a34360dd2401c1a4f1a5811cfcd6": {
+      "occurrences": 1,
+      "raw_bytes": 488,
+      "raw_sha256": "d79240ea442df9b222ac1b921bf31a2b0df5995063a128f1230e2c63e62d6933"
+    },
+    "24e0b0a13992942e1f3a24e42ba3d8f47554c05a": {
+      "occurrences": 1,
+      "raw_bytes": 471,
+      "raw_sha256": "cfff99481971d78c2312a57288cb75dccb559e70a1ec26e1962a10c54ec47ebe"
+    },
+    "27f605e4686e715f79062f34f9c1a386f39b9265": {
+      "occurrences": 1,
+      "raw_bytes": 6188,
+      "raw_sha256": "926269a172cd390dd028e2ea01b49fc2ab97f96d3bd747a0531abef3f989e018"
+    },
+    "28b18beb6005516bad3d3d0005da4dc7e0b7c0b4": {
+      "occurrences": 1,
+      "raw_bytes": 6189,
+      "raw_sha256": "147298e7f66dd742da2fce0ff78d7d7e13d6d66ce4614bd7d321a7f9d532011b"
+    },
+    "2b8b25378698b1e6109e290f6538a39d4d6e3fa2": {
+      "occurrences": 1,
+      "raw_bytes": 6193,
+      "raw_sha256": "cb9ec8a8d74bcd9957709d4a427de36e4dd605131466028a7d83ceadf73e74e0"
+    },
+    "2c355704ab7656030c56e2c2981492d5a8c74539": {
+      "occurrences": 1,
+      "raw_bytes": 517,
+      "raw_sha256": "d2d8d64fc8b7324d2dd78a609770bd3f6d872b9503075be180c3dbc3bc89b396"
+    },
+    "2f0ef24b98866afbc2c9c28ac7fde60a0e664d8c": {
+      "occurrences": 1,
+      "raw_bytes": 532,
+      "raw_sha256": "ab88cb7252b2851656b9e45e6e7b90c105cc932e3888e466e436eda35dba06b3"
+    },
+    "3b2e7a6419ce2290dec7611dd294d4ff425aadd5": {
+      "occurrences": 1,
+      "raw_bytes": 542,
+      "raw_sha256": "515af99b668e02953c462cfe32b27829376ca2b759ae6e2bbbfcb697bc898864"
+    },
+    "40196b4fb56c878f1b1c4615db8976580459ac76": {
+      "occurrences": 1,
+      "raw_bytes": 271,
+      "raw_sha256": "bb4e1ee1f2642a0ab2d7d9911fc8bb6b37e46605e2be24fcacb54f59d21f7f92"
+    },
+    "470f796877756bdedab0ab7c18fdb379c92607db": {
+      "occurrences": 1,
+      "raw_bytes": 6191,
+      "raw_sha256": "0713d7f23ee08cd45ecd07eb9bc5dda24f80c9f65f5d8c685000c8609b11d17d"
+    },
+    "4e6cff4d0b59299224836aa6d2185811da410b10": {
+      "occurrences": 1,
+      "raw_bytes": 6192,
+      "raw_sha256": "8d7d657db8fcf46abdf51f775b7122279381616fb849dd70c9e2d95277e0eced"
+    },
+    "4e91777cd321a1c532e5dfca9495b7df5cffcd44": {
+      "occurrences": 1,
+      "raw_bytes": 2154,
+      "raw_sha256": "7bc25957ac094cb753ae423939a5f66c6684b03a3b23ff368e67106b670b32bc"
+    },
+    "4f19dcb2c9a9c67bb3a41b9c24ab629d04344d77": {
+      "occurrences": 1,
+      "raw_bytes": 13786,
+      "raw_sha256": "7fe3a2942a3adc223d141d0364125fd0fcfabd1e8fea0b8c5df6a728be0fdc21"
+    },
+    "505f3081adb24b08a64d1abac796d2f5cb5527da": {
+      "occurrences": 1,
+      "raw_bytes": 1070,
+      "raw_sha256": "749351f761b055e42503ddfc373bc49c426cb92808a305e3f3a2c7ad0ec35056"
+    },
+    "5518c62e27c10c63531702aa685a0b0882ee5f86": {
+      "occurrences": 1,
+      "raw_bytes": 7814,
+      "raw_sha256": "6c06e05548ae8cad557479d3b073751f34716b94bd9f44d547e6d6ed6c4e10d8"
+    },
+    "559ac3f936abe8cb4a47b767ceb00aa7f8a187e5": {
+      "occurrences": 1,
+      "raw_bytes": 2154,
+      "raw_sha256": "68d63c3d5f63b00753aca6e12d2e66d77a857ada10c8fda87722466d036672d1"
+    },
+    "5a8581cea54c7c7e2dfda86e555938d16213f701": {
+      "occurrences": 1,
+      "raw_bytes": 6188,
+      "raw_sha256": "82363143331ce2fa9cae7612ed15caf4d2a92623d33b3557c4a91bcbb5be7ae5"
+    },
+    "5a85cf1df1e974a10b9c50ac6d4ae953afb3c547": {
+      "occurrences": 1,
+      "raw_bytes": 6191,
+      "raw_sha256": "caa12b8d16fbc810db42e817b5f0e927cf6de1bdd0e2c2c1fcc82ed970b48050"
+    },
+    "639f1f0fad3e6bbdb3bf50332e28817ca3266d8e": {
+      "occurrences": 1,
+      "raw_bytes": 6187,
+      "raw_sha256": "5611687121629d592f5f34c1dbc00e37c80cff3260e08b5ec4834bdf162eadb2"
+    },
+    "6b4e474167906ff4850b71c941d9e975bb4cab0e": {
+      "occurrences": 1,
+      "raw_bytes": 559,
+      "raw_sha256": "61ce77eb758120d2475722b0cbdb3c3bd55ff3e6f1e1256fbcb1c48012c93095"
+    },
+    "6b8e0ba680f85a1628ad462fdb16e9301f34269c": {
+      "occurrences": 1,
+      "raw_bytes": 547,
+      "raw_sha256": "a0d95308f10df3b6b6385e0c2c74a12ce1c6fa7e2ad7eb4fb679027e7c78b49e"
+    },
+    "75d0dfd52035e712271945a5b0a4d7533bba6945": {
+      "occurrences": 1,
+      "raw_bytes": 6070,
+      "raw_sha256": "70a112f717e3083dedb93286ea55300f7733709b0d250d3963e26d68964ee128"
+    },
+    "7bd4e9ca15c58a6b2eee4bab234b3779ad22d364": {
+      "occurrences": 1,
+      "raw_bytes": 524,
+      "raw_sha256": "423e5b23d2380d2813f65a5e14ae4e2b9ffbd291aacaa140a94bbdc5a70fa237"
+    },
+    "7eceddc7daf6c41b82dc7c2265da11af9dc31d21": {
+      "occurrences": 1,
+      "raw_bytes": 6191,
+      "raw_sha256": "62286c883e1b06808ef485ebb63eb6e6c3cac66030088209a4005ac73c879e0f"
+    },
+    "845c1526a75c7dd9bf4011fd4de96106755228c2": {
+      "occurrences": 1,
+      "raw_bytes": 4538,
+      "raw_sha256": "0ea96a510851d9d9ead9cc230646b9877deda2afc9396be4f3ffc80ac415359c"
+    },
+    "84efd5ee205face8cce7f74baa4717b284e0608e": {
+      "occurrences": 1,
+      "raw_bytes": 6192,
+      "raw_sha256": "c46bdae47a758678595354e42e71a54a184442bfc02a18fbc0f22ba5455a5553"
+    },
+    "86d7d04dd204b3f902ab3035e3abc275476f7aef": {
+      "occurrences": 1,
+      "raw_bytes": 928,
+      "raw_sha256": "ff5980142d0f99fd335618f8b19254285c034775f389989a5d279a753c454df1"
+    },
+    "86e43ea3218b5890302b754bbf8927f94e79f7ee": {
+      "occurrences": 19,
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "88728dc457d23d9b28e62d4c55d57f98456b5f6f": {
+      "occurrences": 1,
+      "raw_bytes": 6190,
+      "raw_sha256": "6bd9330dca50645f6d58cef91327c26027a7eed2a9c8f2ba5d9a2645cc25ec5d"
+    },
+    "8a5012f3846ac3187b3f3d96b0fbea1cd45fe924": {
+      "occurrences": 1,
+      "raw_bytes": 48619,
+      "raw_sha256": "4eb93796b445997db3c37d569323bddc0efc7aab8c0eb89efaa46d9822b1cd41"
+    },
+    "8c9d15742e2ed828f603396e4153eeac3ab05894": {
+      "occurrences": 1,
+      "raw_bytes": 528,
+      "raw_sha256": "0e3da72486c918762c45005c5595fec8344e42d01f433c2fed0a014a293fd6a3"
+    },
+    "8e7589a4825f86b0b9aa1fd68d07acbd676af73c": {
+      "occurrences": 1,
+      "raw_bytes": 525,
+      "raw_sha256": "3143cbbe4533fe6f860bf395ccee3eacebfa57153516359c4f2eb6a90f223542"
+    },
+    "906bbb13580abc8ce40a279956c646cc864f8df1": {
+      "occurrences": 1,
+      "raw_bytes": 6193,
+      "raw_sha256": "31674f9a51dc28defc3d46dd35251821e0375c79640807d17a7528aef27c7890"
+    },
+    "9384dd6a4a94b2efa48987b658cb1c1c53713580": {
+      "occurrences": 1,
+      "raw_bytes": 6191,
+      "raw_sha256": "078fb3f6e4715e3140cbf94d689ce9fbb8d665490a24d7674d6dd49885865b82"
+    },
+    "97d410ab102730cb953855b5a896eacdd5476333": {
+      "occurrences": 1,
+      "raw_bytes": 2955,
+      "raw_sha256": "ab685ed02289ef4e424cb0aa00a83c752f31aa841fcc00d80f9f33944d59579a"
+    },
+    "a13588306a0bfa1204ed481f53e6e067f653cbc9": {
+      "occurrences": 1,
+      "raw_bytes": 6194,
+      "raw_sha256": "8a75df8f454a67988ca08cf62fc8a93727f8526af41f7fe5e531d4fe9d412699"
+    },
+    "a7a5ff59f978c9fd9dc659702f5317e2038479ff": {
+      "occurrences": 1,
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    "b2c493f24631b57bb7e74fba1c3b23b6bf491df6": {
+      "occurrences": 1,
+      "raw_bytes": 280,
+      "raw_sha256": "505c17ae23419dc5e543f654ae08ce44b29bf2cc6ae9204c49611962bbfe4aac"
+    },
+    "b3d70323b32f47612d2a2656a5e8e08dcee0d65f": {
+      "occurrences": 1,
+      "raw_bytes": 566,
+      "raw_sha256": "dbcfafa321681ea35fc5fb877ac4a642306f15b9302deab1329b9df1f2690d11"
+    },
+    "bcb1d9d1cf01e78007ed54422a272239866d3154": {
+      "occurrences": 1,
+      "raw_bytes": 6192,
+      "raw_sha256": "a96f16d82c772a08e5731b8db78be97cfa70ad9a5afc3e733b969540536a0c74"
+    },
+    "cd29e6a5ae90bc0f19357eb87431a0acdbcf4573": {
+      "occurrences": 1,
+      "raw_bytes": 210,
+      "raw_sha256": "62bbe89b01ae0e3dcb5e8a66f399a6c5dfa60372d910b285af9ce2d4c7fb616d"
+    },
+    "d5310b7139a011e900aad0b56ec28c76f7acc580": {
+      "occurrences": 1,
+      "raw_bytes": 4216,
+      "raw_sha256": "5727874224f7a965394d0f35c8b62ee9c75e50dd2783a63543b154497af67c6c"
+    },
+    "d8fb9fd89c20d62b5d6a06e1afb8b1500ef4a67f": {
+      "occurrences": 1,
+      "raw_bytes": 6189,
+      "raw_sha256": "ce22bd149f5c5b81f3c375c0ca014e8994794f4a6480ecb005ce591b5f9fe816"
+    },
+    "db64b14315b511a5e304d42bcf0d81489fe41eb6": {
+      "occurrences": 1,
+      "raw_bytes": 1954,
+      "raw_sha256": "cb0f0a362033b687df9671cc0e88650e3c7b388cd60ccd4e47356a97c17d939e"
+    },
+    "dd9cc6d2c634def5474fefb0ecd57f912c4fe233": {
+      "occurrences": 1,
+      "raw_bytes": 468,
+      "raw_sha256": "775aa16099e9d9c2284f9d2bb6c4e25c9e311440bac9f529a8a6bfedfa1293ed"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 1,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "eafdfd17e62afeaf9b80f23dec0e99efb46f61b0": {
+      "occurrences": 1,
+      "raw_bytes": 6193,
+      "raw_sha256": "27afcad8a8c4fde19dce1734e2186dddda4489f7cb84ec246d1531a85d231765"
+    },
+    "f1d3fed81caf0d05f74f10dea018dcb3554b788f": {
+      "occurrences": 1,
+      "raw_bytes": 31842,
+      "raw_sha256": "8d80ec94fc06410a05043697ec578a8c86dcd4834a4ab50595d56d3a3ff5622b"
+    },
+    "f59694ef0f4008fee14814a80799423845d2d286": {
+      "occurrences": 1,
+      "raw_bytes": 547,
+      "raw_sha256": "4dd1bb8ca6f10abadcff44f7b71641bbff610a654af1cbfc7c1fa8e6a650ce15"
+    },
+    "f7b6cf0fda2b3ff9f76b8186abcbdeffde0009c4": {
+      "occurrences": 1,
+      "raw_bytes": 312,
+      "raw_sha256": "039aae1bdb8482581303b50ad9df57dbf48c7a55b131503b98cbe78bd1af5ee7"
+    },
+    "fd600afdf5683be428c8c27401892ec0609d0f9e": {
+      "occurrences": 1,
+      "raw_bytes": 4090,
+      "raw_sha256": "76ec2f5fac7d2ca466b38ee1da3c6fa47a4b59cffc7ae35c0c8cbcd589ab4117"
+    },
+    "fe65ad72e77920ae27a9c4bf06005b4a9a8773d7": {
+      "occurrences": 1,
+      "raw_bytes": 537,
+      "raw_sha256": "7d991b9b0d47d30e4cc7f0c937311b03c3a7ed5a7acc1fd56135b07811fe3f67"
+    }
+  }
+}

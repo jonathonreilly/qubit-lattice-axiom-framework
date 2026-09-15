@@ -1,0 +1,23 @@
+{
+  "pr": 8111,
+  "verdict": "PASS \u2014 narrow dependency-link confirmation",
+  "reviewer_session": "/root/skill_review",
+  "prior_report": "review-8111.json",
+  "final_tree": "effb0fa896e327c0edd1bf12e6683fc275751777",
+  "change": "Markdown link to already declared/pinned kinetic-isotropy premise",
+  "changed_sha256": {
+    "docs/SPATIAL_LATTICE_GAUGE_FERMION_LOGARITHMS_AND_METRIC_ATTRACTION_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "bb3bc0d82cc6ea9e87fb38b3a720a376ec2fca073198c06a57c9c42d4b151f8c",
+    "logs/runner-cache/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.txt": "91a445b89795a065e7d6fb836860cbb23323f65d3582f745f64ee50f503f67f0"
+  },
+  "inputs": {
+    "docs/SPATIAL_LATTICE_GAUGE_FERMION_LOGARITHMS_AND_METRIC_ATTRACTION_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "bb3bc0d82cc6ea9e87fb38b3a720a376ec2fca073198c06a57c9c42d4b151f8c",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  "runner_sha256": "fd97d14c0e83a66423cc8cf15d42cb7c1acafc2c8ca5df93052cd8756b29a68b",
+  "runner_unchanged": true,
+  "cache_status": "fresh",
+  "math_and_external_premises_unchanged": true,
+  "runner_repeated_by_reviewer": false,
+  "staged_worktree_equal": true,
+  "audit_verdict_applied": false
+}

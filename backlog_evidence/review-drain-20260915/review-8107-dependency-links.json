@@ -1,0 +1,26 @@
+{
+  "pr": 8107,
+  "verdict": "PASS \u2014 narrow dependency-link confirmation",
+  "reviewer_session": "/root/skill_review",
+  "prior_report": "review-8107.json",
+  "final_tree": "8cc206c3072410b50834bd7b93ba87a38b982ca1",
+  "change": "Four Markdown links to already declared/pinned upstream sources",
+  "changed_sha256": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "506aaa2c5511a44e048d253e3b2fdfe07dfb7623be8d2a22d41c58a2f5d19910",
+    "logs/runner-cache/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.txt": "2fd4bf016aa9ce5e394fb7d2fd64e06d2c58f6be815903122c97e8865da85605"
+  },
+  "inputs": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "506aaa2c5511a44e048d253e3b2fdfe07dfb7623be8d2a22d41c58a2f5d19910",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd",
+    "docs/A_READABLE_MATTER_LAW_EXISTS_ON_THE_5X5X5_WINDOW_THE_DESIGNED_LAWS_RECORD_TABLE_COMPLETED_BY_A_COVARIANT_PARITY_RULE_HAS_EVERY_MENU_NONEMPTY_IS_READ_FROM_PARTIAL_BLOCKS_AND_KEEPS_THE_FERMION_BOUNDED_NOTE_2026-09-04.md": "31bbe6cb6d105b8cd2bfb4480159a2b06c722de928d2e6085d1f33d1017c2426"
+  },
+  "runner_sha256": "db4b75701aa4b3407f69bb54e42898dd3a39cbda7c570797fa17aa53afbccf25",
+  "runner_unchanged": true,
+  "cache_status": "fresh",
+  "math_and_external_premises_unchanged": true,
+  "runner_repeated_by_reviewer": false,
+  "staged_worktree_equal": true,
+  "audit_verdict_applied": false
+}

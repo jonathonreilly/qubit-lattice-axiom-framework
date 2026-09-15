@@ -1,0 +1,54 @@
+{
+  "verdict": "PASS",
+  "prior_review_json_sha256": "2b52220ba60426bc70c98b82ea47acaf5068ffd017ed40e2121dc0df1056dfd3",
+  "prior_review_md_sha256": "5311f40599c8ee931e914f4ccd9951c4e8b9a7c4f0e25bcf98055d50342c2b2e",
+  "prior_scientific_tree": "9ac8fce61e335d90344058ac31caa17d83af331f",
+  "scope": "Add five Markdown source links corresponding to already declared and reviewed upstream IDs/input paths; no math or premise changes.",
+  "note_path": "docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+  "note_sha256": "cf99e0383ba672e87de0faf1d5b4052dd30b5737411b96f7a46eeb1dce2906d1",
+  "runner_path": "scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py",
+  "runner_sha256": "461559764375cda8335da20f4a91b7a8dc0c271656db5ad76e11bd718c425915",
+  "citations": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "fd39a661c586a52610b6bce3907fd857c7ab94e6fdc0c9b7cc2e14dc179763a9"
+    },
+    {
+      "path": "docs/FINITE_BKSF_SIGN_AND_SUPERLATTICE_MARKER_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "bdaccbb0c4a000d0ae339af2e71dc9f0989be3266488b61050e57ca902c172c9"
+    },
+    {
+      "path": "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd"
+    }
+  ],
+  "checks": [
+    "actual extract_citations returns exactly5expected sources",
+    "all5inputs and runner exact prior reviewed hashes",
+    "Type extractor remains bounded_theorem",
+    "cold diff only8line upstream-list insertion"
+  ],
+  "full_pipeline_count": 0,
+  "new_science_runs_by_reviewer": 0,
+  "final_staged_tree": "86b1fdfe8fdcdfc9776581bf397493d184271508",
+  "cache": {
+    "path": "logs/runner-cache/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.txt",
+    "sha256": "88993ef512e0227e44422f2c69454bcd5535402d69a5d2419891f328937160ad",
+    "fresh": true,
+    "input_fingerprint": "4e91e0db2bf27769399c244fdf4c9f98c9ef73a3358fc0f7aaa3e36d281af1a0",
+    "TOTAL_PASS": 63,
+    "TOTAL_FAIL": 0,
+    "elapsed_sec": 70.83,
+    "timeout_sec": 900
+  },
+  "staged_worktree_equal": true,
+  "prior_reports_unchanged": true
+}

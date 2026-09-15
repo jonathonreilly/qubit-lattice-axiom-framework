@@ -1,0 +1,42 @@
+{
+  "verdict": "PASS",
+  "scope": "original-reviewer dependency-link and note-bound cache confirmation; original review remains immutable",
+  "reviewer_session": "/root/review_8012",
+  "worktree": "/private/tmp/review-drain-20260915/unit8105",
+  "head_at_confirmation": "e6499ba545f5ae091fe07f86e9280a9d1d114077",
+  "source_identity_kind": "exact workingtree file hashes; index/commit placement remains coordinator-owned",
+  "hashes": {
+    "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md": "b13856ad88d4bd4c2773525bcd22dcd8ebb98c18c0e1f48279013c596833ac19",
+    "scripts/admissibility_handed_rule_pseudoscalar_census_2026_09_13.py": "40387117315fe1b2dad93b870747b4a491ce97a337845e1430b947704d022b61",
+    "logs/runner-cache/admissibility_handed_rule_pseudoscalar_census_2026_09_13.txt": "68d27038e4ce6c5c2a408e891a5ca72dec1f0c6aa965eae0ad2ce1b883b9382e"
+  },
+  "actual_dependency_extraction": {
+    "api": "build_citation_graph.extract_citations",
+    "paths": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md"
+    ],
+    "status": "exactly three expected existing paths"
+  },
+  "current_tool_hashes": {
+    "docs/audit/scripts/build_citation_graph.py": "a7f27d33e964dd046dd57b15adf3617714f62199bf10ffaeaf24379b4b9daf7f",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "correction": "Exactly three plain-text premise mentions became Markdown links to previously reviewed input paths. No mathematical assertion, scope, runtime source or premise content changed.",
+  "execution": {
+    "pass": 46,
+    "fail": 0,
+    "exit_code": 0,
+    "elapsed_sec": 14.71,
+    "timeout_sec": 900,
+    "cache_identity": "fresh confirmed by actual runner_cache.cache_identity_status",
+    "input_fingerprint_sha256": "3ae4868a72f0c5c67b894fc09309cc2fc24796aee567bacf6f4c4eb115684eb5"
+  },
+  "previous_review_sha256": "ae28c37724249378410003e251a69f8b4cb65b8f8fb76b5592fb82487b170f25",
+  "prior_failed_placement_receipt": "fallback05-8105-failure.json preserved by coordinator",
+  "combined_gate": "No reviewer pipeline run; coordinator must inspect final rebuilt row/dependencies on integrated candidate."
+}

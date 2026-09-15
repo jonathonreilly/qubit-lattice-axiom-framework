@@ -1,0 +1,22 @@
+{
+  "current_main": "4994b354ed33e28c7b409be7ff0a492394f03a21",
+  "all_final_hashes_match": true,
+  "all_actual_inputs_match_current_main": true,
+  "claim_hints": [
+    [
+      "docs/GAUGE_WILSON_CUBE_SLAB_FIRST_SPECTRAL_CORRECTIONS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    ],
+    [
+      "docs/GAUGE_WILSON_CUBE_SLAB_TWO_SOURCE_CUBIC_CANCELLATION_RATE_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    ]
+  ],
+  "interaction": "Workflow-only main change since review; same current-main helper map plus exactly reviewed helper entry."
+}

@@ -1,0 +1,1081 @@
+{
+  "unit": "PR8034+PR8035",
+  "reviewer_session": "/root/review_8011",
+  "skill_revision": "7927f9e170",
+  "confirmation_base": "87e358da4512e6c35ffd53afa4bf3d92ea1ca91d",
+  "reviewed_staged_tree": "884ebf2e421f0bf45ce14fa2dbb59df9906686fe",
+  "source_state": "staged candidate",
+  "source_paths": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "5ee19ddee11c96755eb71a068dd18ef3ec2a9f91",
+      "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+      "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt",
+      "blob": "4c764d83a017572ec926a816341929cb3341be72",
+      "sha256": "165de66a9b907d9f218b77a7849849f076f9a8ffeb8aad4853ce9a7464f29ce9"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+      "blob": "3b6881d8e57bfd92a127ee0a7a32e0e7753e0e6b",
+      "sha256": "a2b0da0d54768b2c280023e4e8f8e4e11bcffec4f373ebfce891b7d9d289c23d"
+    },
+    {
+      "path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+      "blob": "9f70c370ed15f892c19941543a6eb233c4d1b252",
+      "sha256": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5"
+    },
+    {
+      "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+      "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+      "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+    }
+  ],
+  "constituents": [
+    {
+      "pr": "8034",
+      "head": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+      "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "original_path_count": 23,
+      "deleted_original_paths": [],
+      "disposition_map": [
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block06_findings.md",
+          "original_status": "A",
+          "original_blob": "7325d3ecdcbaee539b921b3cdaf48ee6e35f20bb",
+          "original_sha256": "30351150f91ece02a42fb747ccb5e0010270f508e1b29947c21526a8f38ce448",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block06_findings.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Unique valid counterexamples, scope fixes and theorem/evidence obligations incorporated into canonical note/runner. Prior verdicts, mutation censuses, partial runs and scratch-only scripts remain historical, not current authority.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block06.md",
+          "original_status": "A",
+          "original_blob": "2b1bb3841591624d344935629014451cf9ada07a",
+          "original_sha256": "d9aeb7387e9c9bbd141f530f00b0d70e226aeeb3d8f836286f6f63e4dec115f6",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block06.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Valid proof/premises/controls recovered in canonical note and runner. Earlier unconditional support equivalence, degree111 wording and pre-build procedural instructions superseded by corrected source; resource cap400 respected.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+          "original_status": "M",
+          "original_blob": "7a394da088d52e9bae99f04225b30a6ec9e8de02",
+          "original_sha256": "697c0e87dceee30654cd217f74734907880767b87c6377de3e9ee2f488575e63",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+          "original_base_blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+          "original_status": "M",
+          "original_blob": "271e44032017ef39e956c62855fe9ff48bdcc492",
+          "original_sha256": "1828521ef12e96e3ef1b1281e3e193facdc98922c4edb6ae560773329c6e34b3",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+          "original_base_blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block06.md",
+          "original_status": "A",
+          "original_blob": "99eaf0f5c3d527099f28122335c71406d378c4b5",
+          "original_sha256": "fca6458782254010f25f06e3b8bc1b71a418456e1e829ad83b26dfa94e923616",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block06.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Unique valid counterexamples, scope fixes and theorem/evidence obligations incorporated into canonical note/runner. Prior verdicts, mutation censuses, partial runs and scratch-only scripts remain historical, not current authority.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+          "original_status": "M",
+          "original_blob": "b3794601571680daff3e03dc67dce2eb923bd6cb",
+          "original_sha256": "a5625d1770edc5baea50985a3f6d78f92957481a59916aacdc96db55fdcc5e2e",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+          "original_base_blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+          "original_status": "M",
+          "original_blob": "c4d813a6197fba48b80d719d3c74e5bf6ad40e66",
+          "original_sha256": "0123a4e23d48eaaa7976348b21fd9b523cfa4f395edce1d8a82a0876aa300314",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+          "original_base_blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+          "original_status": "M",
+          "original_blob": "2e45a326655bc3fc9754cae69d06d6f8dded3a63",
+          "original_sha256": "279b868d6fa187815114c0f8a87bb5f755618333027c99a17f22b6ffba9ccb24",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+          "original_base_blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block06.md",
+          "original_status": "A",
+          "original_blob": "d44f2d97adf4762ac8974b53c870cc423765d027",
+          "original_sha256": "fd5cdb5c19daa062062a221f32a408bfecdaaa78048aac162e83a2ad82f1491e",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block06.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Valid proof/premises/controls recovered in canonical note and runner. Earlier unconditional support equivalence, degree111 wording and pre-build procedural instructions superseded by corrected source; resource cap400 respected.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.out.txt",
+          "original_status": "A",
+          "original_blob": "3419234d4cc27bccfe480a496147fc202568dccf",
+          "original_sha256": "c1de11bcbae9cb00ec7ab1fdcef2527b9a298b7a99a5b529c9aee4af583ea751",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.py",
+          "original_status": "A",
+          "original_blob": "e555cf6d7173cea223154937caa06388cedcfc9b",
+          "original_sha256": "ea9af0c3bbc45f877188436e4d512a85a0e023abdb5caa2e03a26e43ff537218",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.out.txt",
+          "original_status": "A",
+          "original_blob": "b43f48df0fcd599b76e26338c6fef98ee8a0b9e6",
+          "original_sha256": "15f3ad1789a15b51f41d7195561d51fe56678167c5df029d2870b0116c85948b",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.py",
+          "original_status": "A",
+          "original_blob": "5d3d507963350c3a3209280c37dccc2e6a03889b",
+          "original_sha256": "0c564e304f06953e65d9b0e7461e8a861f570afb45bd5c55612c9d0668210fff",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.out.txt",
+          "original_status": "A",
+          "original_blob": "484514c99ad8a11e43ba0df94573e8b926a148c3",
+          "original_sha256": "9a66c4285d31f550951aba1f5eef600fdaf4c91af9324847b78a28404f185886",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.py",
+          "original_status": "A",
+          "original_blob": "55b1a75820deb67fb69e8075c5d966ed79133716",
+          "original_sha256": "d29349bc29e8148f259bb8e2a547ed07eb1f4bf17fdfac2d8019eee6671f86bb",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.out.txt",
+          "original_status": "A",
+          "original_blob": "4f3c75bac3d73967deb571934e38f9848bc192a0",
+          "original_sha256": "786dce4e41a434ee31616e33f708b817a1401b1e8b2ad66fb3e236abc134530a",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.py",
+          "original_status": "A",
+          "original_blob": "536b7a8199fada7a3af4f36c9ed30897d82da9fc",
+          "original_sha256": "cd60350bf0789bda82d4a50a41e05ec2ede8b1def9bd1da84af5cf0ceb0e1315",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.out.txt",
+          "original_status": "A",
+          "original_blob": "06d4f3abd3fb12cd3d2e18647220dc067a43541d",
+          "original_sha256": "93ba327ec6611624d33567c2e8ad5dc3cab0d97d10d0c92cdb935f1b8757b7a9",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.py",
+          "original_status": "A",
+          "original_blob": "b7856da974aa1bb97452ec926afbd5a75c7f633f",
+          "original_sha256": "3f2208894397bee2c03992abda10d29a1ca49794058c5bc76786132bc635aaa8",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "original_status": "A",
+          "original_blob": "cc20c68d0c714317dbf5b9b852f3d9a584bd691d",
+          "original_sha256": "4d650e98578da111166b08c4a032fcf4d155313e23679b6abbf695cfb811e120",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "disposition": "narrowed",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": "docs/audit/data/citation_graph_manifest.json",
+          "original_status": "M",
+          "original_blob": "ba5fd9341a7f8aef725e0f609c8da59f32b991aa",
+          "original_sha256": "f54563cce8e085adb6eb39eb94ceb8ea328628af0606417366561ffddac272cd",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:docs/audit/data/citation_graph_manifest.json",
+          "original_base_blob": "366a3c07b40fb81236e1237cad29cedd2931df7e",
+          "disposition": "superseded",
+          "reason": "Generated two-note node/edge acknowledgment regenerated on combined candidate under current stage-citation-manifest gate; no source proof inside manifest."
+        },
+        {
+          "original_path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+          "original_status": "A",
+          "original_blob": "32561fa1b384699cfc30bf83d2ebb49c44d776cb",
+          "original_sha256": "ee3306a52754694219da9ae0a33963c79f92961dd8a6197714807dbcbb548378",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+          "disposition": "narrowed",
+          "final_path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+            "blob": "3b6881d8e57bfd92a127ee0a7a32e0e7753e0e6b",
+            "sha256": "a2b0da0d54768b2c280023e4e8f8e4e11bcffec4f373ebfce891b7d9d289c23d"
+          }
+        },
+        {
+          "original_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "original_status": "A",
+          "original_blob": "726e2e70cd9b7cba91f777b7fd23fc153931c8fb",
+          "original_sha256": "9b05b6d8b81fdf529885ac1e0a31922557889e255260ac6e9f17e600c875d315",
+          "recovery": "f31df16fea66ddf10bd5a9fb173647a71489375e:scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "disposition": "narrowed",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        }
+      ]
+    },
+    {
+      "pr": "8035",
+      "head": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d",
+      "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "original_path_count": 31,
+      "deleted_original_paths": [],
+      "disposition_map": [
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block06_findings.md",
+          "original_status": "A",
+          "original_blob": "7325d3ecdcbaee539b921b3cdaf48ee6e35f20bb",
+          "original_sha256": "30351150f91ece02a42fb747ccb5e0010270f508e1b29947c21526a8f38ce448",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block06_findings.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Unique valid counterexamples, scope fixes and theorem/evidence obligations incorporated into canonical note/runner. Prior verdicts, mutation censuses, partial runs and scratch-only scripts remain historical, not current authority.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block07_findings.md",
+          "original_status": "A",
+          "original_blob": "52ef80072397ee73477c6db3c9040124d56d6120",
+          "original_sha256": "7e6d8b98a5d7bda61a4b7a03e4ab6d05e4b201e84785bb048d07dc54cde66421",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block07_findings.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Unique valid counterexamples, scope fixes and theorem/evidence obligations incorporated into canonical note/runner. Prior verdicts, mutation censuses, partial runs and scratch-only scripts remain historical, not current authority.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "5ee19ddee11c96755eb71a068dd18ef3ec2a9f91",
+            "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block06.md",
+          "original_status": "A",
+          "original_blob": "2b1bb3841591624d344935629014451cf9ada07a",
+          "original_sha256": "d9aeb7387e9c9bbd141f530f00b0d70e226aeeb3d8f836286f6f63e4dec115f6",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block06.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Valid proof/premises/controls recovered in canonical note and runner. Earlier unconditional support equivalence, degree111 wording and pre-build procedural instructions superseded by corrected source; resource cap400 respected.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block07.md",
+          "original_status": "A",
+          "original_blob": "d1114b42929da5b2cbbfad0c83c64e653161be07",
+          "original_sha256": "51a1d2ad982ee387fb5d8b7a095a7aecd2e6854bc532c989229f4856aa4ec4cc",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block07.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Valid proof/premises/controls recovered in canonical note and runner. Earlier unconditional support equivalence, degree111 wording and pre-build procedural instructions superseded by corrected source; resource cap400 respected.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "5ee19ddee11c96755eb71a068dd18ef3ec2a9f91",
+            "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+          "original_status": "M",
+          "original_blob": "c8bdd261bde18a691e06d6cc83366609895fdd1a",
+          "original_sha256": "49138fc62560e69d7f3c1bfed7bd9ce51582b11f8f4daddb6e2adcb9473184b3",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+          "original_base_blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+          "original_status": "M",
+          "original_blob": "bcf4498a1c49bc281610259f10600f05bf24934d",
+          "original_sha256": "9991e36dd2a9768f27c20b7a6f89a64f33f64c34d5cc0f3145792c0e06af7011",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+          "original_base_blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block06.md",
+          "original_status": "A",
+          "original_blob": "99eaf0f5c3d527099f28122335c71406d378c4b5",
+          "original_sha256": "fca6458782254010f25f06e3b8bc1b71a418456e1e829ad83b26dfa94e923616",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block06.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Unique valid counterexamples, scope fixes and theorem/evidence obligations incorporated into canonical note/runner. Prior verdicts, mutation censuses, partial runs and scratch-only scripts remain historical, not current authority.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block07.md",
+          "original_status": "A",
+          "original_blob": "0d0e0512d3a0250a2729cfbd77b04d06c9a1f5c9",
+          "original_sha256": "8ff9b4a13fdf4a5b02e475eecb834c7aea4430fe55ccd19a883becd00601b075",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block07.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Unique valid counterexamples, scope fixes and theorem/evidence obligations incorporated into canonical note/runner. Prior verdicts, mutation censuses, partial runs and scratch-only scripts remain historical, not current authority.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "5ee19ddee11c96755eb71a068dd18ef3ec2a9f91",
+            "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+          "original_status": "M",
+          "original_blob": "df515a6dc417e847a6807c431ffda5593090770e",
+          "original_sha256": "d1ece657e517fd09f54c5d12780ad6cc093a5502e334bb390abb74b4f9fc75c3",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+          "original_base_blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+          "original_status": "M",
+          "original_blob": "83122e8dd73118d47b63547c73064576db56deed",
+          "original_sha256": "0043f5081ec5c07aeccc5f73ac9fd9d0fada98a6a5a5bd04f5dcb9dcc8062f59",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+          "original_base_blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+          "original_status": "M",
+          "original_blob": "8a4c9653b392bcc04fa71b56b72ad4af24f56e25",
+          "original_sha256": "715ab5629ba6bad49765bf57f651454679593fde868d02538b246207c5dd4b59",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+          "original_base_blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+          "disposition": "rejected",
+          "reason": "Appended campaign process/status/queue/review-history/trace material; original useful theorem and limitations retained in canonical notes. Old inherited main content remains unchanged; no original audit/review claims are imported as authority. Future research queues outside this bounded unit remain immutable history, not suppressed source proof.",
+          "current_inherited_main_blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+          "current_inherited_preserved": true
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block06.md",
+          "original_status": "A",
+          "original_blob": "d44f2d97adf4762ac8974b53c870cc423765d027",
+          "original_sha256": "fd5cdb5c19daa062062a221f32a408bfecdaaa78048aac162e83a2ad82f1491e",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block06.md",
+          "disposition": "superseded",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Valid proof/premises/controls recovered in canonical note and runner. Earlier unconditional support equivalence, degree111 wording and pre-build procedural instructions superseded by corrected source; resource cap400 respected.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.out.txt",
+          "original_status": "A",
+          "original_blob": "3419234d4cc27bccfe480a496147fc202568dccf",
+          "original_sha256": "c1de11bcbae9cb00ec7ab1fdcef2527b9a298b7a99a5b529c9aee4af583ea751",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.py",
+          "original_status": "A",
+          "original_blob": "e555cf6d7173cea223154937caa06388cedcfc9b",
+          "original_sha256": "ea9af0c3bbc45f877188436e4d512a85a0e023abdb5caa2e03a26e43ff537218",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_davis_kahan.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.out.txt",
+          "original_status": "A",
+          "original_blob": "b43f48df0fcd599b76e26338c6fef98ee8a0b9e6",
+          "original_sha256": "15f3ad1789a15b51f41d7195561d51fe56678167c5df029d2870b0116c85948b",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.py",
+          "original_status": "A",
+          "original_blob": "5d3d507963350c3a3209280c37dccc2e6a03889b",
+          "original_sha256": "0c564e304f06953e65d9b0e7461e8a861f570afb45bd5c55612c9d0668210fff",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_feasibility.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.out.txt",
+          "original_status": "A",
+          "original_blob": "484514c99ad8a11e43ba0df94573e8b926a148c3",
+          "original_sha256": "9a66c4285d31f550951aba1f5eef600fdaf4c91af9324847b78a28404f185886",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.py",
+          "original_status": "A",
+          "original_blob": "55b1a75820deb67fb69e8075c5d966ed79133716",
+          "original_sha256": "d29349bc29e8148f259bb8e2a547ed07eb1f4bf17fdfac2d8019eee6671f86bb",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.out.txt",
+          "original_status": "A",
+          "original_blob": "4f3c75bac3d73967deb571934e38f9848bc192a0",
+          "original_sha256": "786dce4e41a434ee31616e33f708b817a1401b1e8b2ad66fb3e236abc134530a",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.py",
+          "original_status": "A",
+          "original_blob": "536b7a8199fada7a3af4f36c9ed30897d82da9fc",
+          "original_sha256": "cd60350bf0789bda82d4a50a41e05ec2ede8b1def9bd1da84af5cf0ceb0e1315",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.out.txt",
+          "original_status": "A",
+          "original_blob": "06d4f3abd3fb12cd3d2e18647220dc067a43541d",
+          "original_sha256": "93ba327ec6611624d33567c2e8ad5dc3cab0d97d10d0c92cdb935f1b8757b7a9",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.py",
+          "original_status": "A",
+          "original_blob": "b7856da974aa1bb97452ec926afbd5a75c7f633f",
+          "original_sha256": "3f2208894397bee2c03992abda10d29a1ca49794058c5bc76786132bc635aaa8",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block06_krylov_d111_exact.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block07_gaussian.out.txt",
+          "original_status": "A",
+          "original_blob": "0a4b887697703921ae69fef4ba9ce0559cc2dfa7",
+          "original_sha256": "3c1e69d0e8d01d6bd6994f1a9d1adfd65903cf294fe4e53f84ae737c2f12be08",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block07_gaussian.out.txt",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+            "blob": "9f70c370ed15f892c19941543a6eb233c4d1b252",
+            "sha256": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5"
+          }
+        },
+        {
+          "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block07_gaussian.py",
+          "original_status": "A",
+          "original_blob": "f40b535d015344cced75ad9ba606b786c87dfc83",
+          "original_sha256": "f1f1b0f0427f97ba88701df3cdd9ca09df143b3e546ba363ad8942a08cc4af39",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block07_gaussian.py",
+          "disposition": "superseded",
+          "final_path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+          "reason": "Quantitative source obligations reproduced by canonical exact computation; original alternate construction/timing and feasibility exploration preserved in history. Old exploratory Birkhoff samples and floating labels are not retained claims. Legacy d111 lens imports missing scratch core and is not used as current executable authority.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+            "blob": "9f70c370ed15f892c19941543a6eb233c4d1b252",
+            "sha256": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5"
+          }
+        },
+        {
+          "original_path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "original_status": "A",
+          "original_blob": "93212d1c544071e751f2702b26b70c0bc3230d49",
+          "original_sha256": "29d4918e347d99e4598d9475fcbe353cc1c49ba1e0428df0bdba03fbea869342",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "disposition": "narrowed",
+          "final_path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "5ee19ddee11c96755eb71a068dd18ef3ec2a9f91",
+            "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+          }
+        },
+        {
+          "original_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "original_status": "A",
+          "original_blob": "cc20c68d0c714317dbf5b9b852f3d9a584bd691d",
+          "original_sha256": "4d650e98578da111166b08c4a032fcf4d155313e23679b6abbf695cfb811e120",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "disposition": "narrowed",
+          "final_path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+            "blob": "378ade2f2aed7292dbd6abdbef2dbd5bb259b8c6",
+            "sha256": "e1db41531a0b8490b56c3e4afb9366dddc264fa719d0c7d2dadaaa35078ee6c7"
+          }
+        },
+        {
+          "original_path": "docs/audit/data/citation_graph_manifest.json",
+          "original_status": "M",
+          "original_blob": "e11255e26c8fe4b5e1ffc704eb4aec254819bca3",
+          "original_sha256": "9cabfec71f7ff4d8b21225f65348e3b7e9b7ef29c8ad4ff39b4ce63903819420",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:docs/audit/data/citation_graph_manifest.json",
+          "original_base_blob": "366a3c07b40fb81236e1237cad29cedd2931df7e",
+          "disposition": "superseded",
+          "reason": "Generated two-note node/edge acknowledgment regenerated on combined candidate under current stage-citation-manifest gate; no source proof inside manifest."
+        },
+        {
+          "original_path": "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt",
+          "original_status": "A",
+          "original_blob": "da50a35fb7a6f051bcfd65ff807e1bf57d5333aa",
+          "original_sha256": "8a829d1f941e134302f5885ce08acc15e8435e733a75473fd46a26a27d3a5759",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt",
+          "disposition": "narrowed",
+          "final_path": "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "logs/runner-cache/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.txt",
+            "blob": "4c764d83a017572ec926a816341929cb3341be72",
+            "sha256": "165de66a9b907d9f218b77a7849849f076f9a8ffeb8aad4853ce9a7464f29ce9"
+          }
+        },
+        {
+          "original_path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+          "original_status": "A",
+          "original_blob": "32561fa1b384699cfc30bf83d2ebb49c44d776cb",
+          "original_sha256": "ee3306a52754694219da9ae0a33963c79f92961dd8a6197714807dbcbb548378",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+          "disposition": "narrowed",
+          "final_path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+            "blob": "3b6881d8e57bfd92a127ee0a7a32e0e7753e0e6b",
+            "sha256": "a2b0da0d54768b2c280023e4e8f8e4e11bcffec4f373ebfce891b7d9d289c23d"
+          }
+        },
+        {
+          "original_path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+          "original_status": "A",
+          "original_blob": "6e2b34c95e4f6989469bb39eca0fce68100ec90b",
+          "original_sha256": "2c652a81d10fd795dc0486049b4830bd6b1ba8af29dd67c5a95a5106eb510591",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+          "disposition": "narrowed",
+          "final_path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+            "blob": "9f70c370ed15f892c19941543a6eb233c4d1b252",
+            "sha256": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5"
+          }
+        },
+        {
+          "original_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "original_status": "A",
+          "original_blob": "726e2e70cd9b7cba91f777b7fd23fc153931c8fb",
+          "original_sha256": "9b05b6d8b81fdf529885ac1e0a31922557889e255260ac6e9f17e600c875d315",
+          "recovery": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d:scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "disposition": "narrowed",
+          "final_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "reason": "Retained bounded science and exact computation with corrected claim/execution boundaries, historical provenance and fresh cache.",
+          "final_identity": {
+            "path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+            "blob": "e0338c72679d30070b3959c5a658d7ebc2dd8336",
+            "sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f"
+          }
+        }
+      ]
+    }
+  ],
+  "constituent_topology": "PR8035 directly inherits frozen PR8034; all three strip source blobs identical in both originals. Shared appended process records inspected at both original versions.",
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Entire current authority; all four axioms and formation-site/rate/readout limits.",
+      "prior_review_reused": "review-8011.json exact SHA256 and relevant scope only"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "Classification procedure; no approved primitive used by changed theorem.",
+      "prior_review_reused": "review-8011.json exact SHA256 and relevant scope only"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Entire registry; no supplied clock/start slice/menu selection grant.",
+      "prior_review_reused": "review-8011.json exact SHA256 and relevant scope only"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "coverage": "Current menu/product/records-only definitions reused; Theorem B1-B4 full proof read this pass for discrete comparison and normalizer contrast; corrected Gaussian paragraph read and one-edge covariance independently reproduced. Compatibility parent for static full-conditionals not needed: this unit directly defines normalized finite product law.",
+      "prior_review_reused": "review-8011.json exact SHA256 and relevant scope only"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "62e0f6f10eea8fb0bd922a725799af6114b7a594",
+      "sha256": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+      "coverage": "Current P1 full recorded-set proof and definitions reused by exact hashes; P7 correction read as context only, not transferred from discrete kernel to Gaussian.",
+      "prior_review_reused": "review-8011.json exact SHA256 and relevant scope only"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "blob": "5622577a4434e90690c1eb1e269a3c55d37a65f1",
+      "sha256": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0",
+      "coverage": "Current premises/menu/product/open strip/record reading; E1-E4 telescoping invariance and pair law; F1 symmetry, F2 full positive transfer proof, F3 center law and arbitrary-end independence; F4 comparison literals; corrigendum. C global static construction/other window witnesses not needed."
+    }
+  ],
+  "independent_evidence": {
+    "gaussian": {
+      "innovation_covariance_cases": 62,
+      "three_distinct_first_diagonals": [
+        "824928/2285299",
+        "139/402",
+        "149/432"
+      ],
+      "result": "PASS"
+    },
+    "strip": {
+      "cases": [
+        {
+          "width": 4,
+          "triple": [
+            3,
+            1,
+            2
+          ],
+          "independent_full_orthogonal_gram_orbits": 32,
+          "rational_intervals_edge_inner": [
+            [
+              "4714835864706510609109181183554395323525569600027821053548274414879250866806977961078508726994375511388654631233453239860721023516123535697018535044431535919337122226902856817654238799853990706770418472614291884815105002307022337643010406447283251189736982356568479534050037476936781476586743071782059005418127424659957506335232634161230541340338956421979999815875047501620064058469763492447300674123271300626288247437529837191725915143439971471830015095960944216807542455633361711084729566080917644851943944449371560847350759071414023079164210913707326389375981080276364063943438130072920833080385790453071829726982161860256148456376090169021552376732381412893098305901834461020209276975036818354847256058885913294869965032721169898378663990493492092642569/18408968205992048702610988135952038757697514056795361253043957166964827922789803157457045268273618382528313554303720086666811449246321340285310324881784741268588051062727193342836864857686460709241204108002491456385012954549369846247687246577750601918183178541586721209077540634255430765419435265000452971873436349070926016618714262507285756447427712806458329080138495358624156533337356065953587437602306775714754828134169981773623770583708930777003459318036010310332218870804004734149401801892742794505688797009931355190626316957175671198561959235481108031776306340131455888019884873437073079326599601914774849664813527477630819347115534252485576072482694706767576195794835716614375000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "4714835864706510609109181183554395323525569600027821053549295682455087318137446327698028409604375410683933449873931746543760077813195439185385754081749355580324223710232503782048150445342196701978476803010394678802162892264551177516805255016222897531524703224537963602648133480897810980683368011804412712935877666426679333891856349862851652488946213490930840617535054707229491381873393807491778305082494875142255446031535807711653910887920874323464274769031732154007501457448225532962553952787199776619972330544212135781179508473338153205184627746014431137404228654027581155068309433877707284821010476231956212089339060906062788854516587521686826671729881812017411127522234390513853223024963181645152743941114086705130034967278830101621336009506507907357431/18408968205992048702610988135952038757697514056795361253043957166964827922789803157457045268273618382528313554303720086666811449246321340285310324881784741268588051062727193342836864857686460709241204108002491456385012954549369846247687246577750601918183178541586721209077540634255430765419435265000452971873436349070926016618714262507285756447427712806458329080138495358624156533337356065953587437602306775714754828134169981773623770583708930777003459318036010310332218870804004734149401801892742794505688797009931355190626316957175671198561959235481108031776306340131455888019884873437073079326599601914774849664813527477630819347115534252485576072482694706767576195794835716614375000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ],
+            [
+              "4717927415933261913459024769731409676155670833531373594512692259216507114632942687348166865677211235060467422819547808270704420009413571733701961098881926862511427916010922471431528933804047197846192568254669860988951399741303355994056473655488779848504382743196332544982991938994841731075886950472969233665229219305680171914366476139206533493712879353100340957739083734590033466184097102915667628308901597265020141101620441994305295156019300229242627954222035425552103163759548246169060501076509849222110179912879179751088077715070460817645254292843052168641068775431133410550787156885900161846898913348918387629950687317287272049790192001623136053177647422423869618166526402169896776975036818354847256058885913294869965032721169898378663990493492092642569/18408968205992048702610988135952038757697514056795361253043957166964827922789803157457045268273618382528313554303720086666811449246321340285310324881784741268588051062727193342836864857686460709241204108002491456385012954549369846247687246577750601918183178541586721209077540634255430765419435265000452971873436349070926016618714262507285756447427712806458329080138495358624156533337356065953587437602306775714754828134169981773623770583708930777003459318036010310332218870804004734149401801892742794505688797009931355190626316957175671198561959235481108031776306340131455888019884873437073079326599601914774849664813527477630819347115534252485576072482694706767576195794835716614375000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "4717927415933261913459024769731409676155670833531373594513713526792343565963411053967686548287211134355746241460026314953743474306485475222069180136199746523498529399340569435825440579292253193054250898650772654976009289698832195867851322224428426190292103611165816613581087942955871235172511890495322941182979461072401999470990191840827644642320136422051181759399090940199460789587727417960145259268125171780987339695626412514233290900500203080876887627292823362752062165574412068046884887782791980990138566007719754684916827116994590943665671125150156916669316349182350501675658460690686613587523599127802769992307586363093912447930689354288410348175147821548182439786926331663540723024963181645152743941114086705130034967278830101621336009506507907357431/18408968205992048702610988135952038757697514056795361253043957166964827922789803157457045268273618382528313554303720086666811449246321340285310324881784741268588051062727193342836864857686460709241204108002491456385012954549369846247687246577750601918183178541586721209077540634255430765419435265000452971873436349070926016618714262507285756447427712806458329080138495358624156533337356065953587437602306775714754828134169981773623770583708930777003459318036010310332218870804004734149401801892742794505688797009931355190626316957175671198561959235481108031776306340131455888019884873437073079326599601914774849664813527477630819347115534252485576072482694706767576195794835716614375000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ]
+          ],
+          "outward22": [
+            [
+              2561162479042062541091,
+              2561162479042062541092
+            ],
+            [
+              2562841851395883553318,
+              2562841851395883553319
+            ]
+          ]
+        },
+        {
+          "width": 4,
+          "triple": [
+            5,
+            2,
+            4
+          ],
+          "independent_full_orthogonal_gram_orbits": 32,
+          "rational_intervals_edge_inner": [
+            [
+              "2387877431586814056984604692525356114447531262918498591449828976912871675902891627676519612486831364819126930465946024982346653216123815897660421140908476815382986324221938482858663928827824305396465187577770518534266989872750271094601901627392528873435111195744930843228496133029901779707256299890086829660402170991809749936242218657707932485755920484368288572982542557036960195346578760762343627449876627246949590664470447723967389839431078895770882897005809873142905566221486993461684568050818383303318585331156619218436974141641294960049159904203958939790639880105678696787813448545940572514034782603703554085349777597414148042570486913544567656446676563067437566139442708059290244757120526614972697416590063007487247036057550468928877525322312732080253887349764397517105776327337556102027900737181070044495705527472831088861287208602255608107267874510161891726255751240688287053464737173283481154175703459104708545565387451343950348942607076068909122674389301258012294365718457060662249388315169753255991548408733483592488929124722644152916867665329178968240862546373205583294117456983227072348299448624924547003501854381348305956342375439876556259826200508638447539797772089211576464780912880608299749533827618661595537737436639838617392077305716718016257955040884250784507703398193522459372256472527041401868762121323/10858140970858999205283737578470954629760153827384679104166973756016822361494177977587314859274744144813363331711023779316596913827955072016391810811101810392078343174569480009850190850836827861247911722578812392917718456168063161481328135758313956753693245933922462629740369669227417273548188012341700764299535261369743462002123580692605917245284581582062562195764008052483572964026701387270614562377743759780498485096917915423185397662673339385703062161195195007727553500474719096099216917636256931756498217141930681958189652199479733275231926705239171669258297190899048320676934997124055324902601194923581721950246632548395849162182473296686805054248355101540296214546708203611863858636995720699185610428619191636390783815050099033516306371544947209794499131974555549943825794042406934839641826768267363860062882787543533340643144371662791457787736345590599007018945625258986465896845698652941576354807402061286097651751289266222226903960574020245405967407235388337879914919814319267043561004689214871434792381337507191234830368739413595160745502457060921395100906408046452602998504876332768550269288080951657164688792095314233615953294057957678988514580675185336456353164320612345419523615377492292940600452565019435702120341431581481225354465625000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "2387877431586814056984604692525356114447531262918498591449828976912908996533595113479360083247521937872651598726191157251347186631911329774081503428755787287218307891177129881797219644653403372236835757857705583316030152944478521538120731693494935637059088659961360493829488710525610891480602734399224171521005625650737185219567165155950929569747581493634115335536837181811614579519952944814418691400660682770740232255769705884827813052183611480656549226005416640382324079076406778903384170472227684270992172552418046049440684817837532626528622921964107186533841616565783545907212614384050337134109406224887792138396533658266476880981193200587395244276390814309247437951915279135899848164092806092892839234726666393495369882783503566042127301624120585405541368697183248758906458748246120357816297358666564912657581326750242035369947092488560674242602613341910967418756367609446169623389734322193703031807199049844421048391517134837505790885478374447761237089947908741235546597701064389515481061505140462084683704076590684239471132046402560413437805618479525518523739898504695698356539116229400335934373226098971421920137410903562098254242335506580805981138675136153211324364215883922862134179092976981924763944306741424083733791984261618847182703944283281983742044959115749215492296601806477540627743527472958598131237878677/10858140970858999205283737578470954629760153827384679104166973756016822361494177977587314859274744144813363331711023779316596913827955072016391810811101810392078343174569480009850190850836827861247911722578812392917718456168063161481328135758313956753693245933922462629740369669227417273548188012341700764299535261369743462002123580692605917245284581582062562195764008052483572964026701387270614562377743759780498485096917915423185397662673339385703062161195195007727553500474719096099216917636256931756498217141930681958189652199479733275231926705239171669258297190899048320676934997124055324902601194923581721950246632548395849162182473296686805054248355101540296214546708203611863858636995720699185610428619191636390783815050099033516306371544947209794499131974555549943825794042406934839641826768267363860062882787543533340643144371662791457787736345590599007018945625258986465896845698652941576354807402061286097651751289266222226903960574020245405967407235388337879914919814319267043561004689214871434792381337507191234830368739413595160745502457060921395100906408046452602998504876332768550269288080951657164688792095314233615953294057957678988514580675185336456353164320612345419523615377492292940600452565019435702120341431581481225354465625000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ],
+            [
+              "2388321686924030327846671521414022054322550243061472963701608931094609860251783183175155493695544834653494666963889077276680536775883982983033377916049694526391907048878832659851616804933113651738346113205512419694266411868616276998194130542118463052701100938027741827286947522348947808999974590627412851458526919184295194165121003044964758783641776043659490143326617250241213642339365566176025411867720403795692054532899130699862328243801625653188352509037127078982815957851636903170917941870530702533101148343861264253515180275546162971196504617454206873939481795939668290822594319283161359452083164740986920546636380582047282198183875998686502697191862477980919163394614410016431371842130725522796266347816171749437548334825221554622899884461224632339117160741047372019873449282634130980967915609638041105362799712261811131067686551533518137557979344379964390614108595472254794753016499710386949337198438381142102833959680488720983944280529013709941862853748156058510362686693337598160720500863490193368172823140818738920436960945313548392453268314101990835983676323238408399502089880740785442724465231567695060517550714002125569238578065140575762046066813874162268633104399971021241034977571383945223844540948142740827053625948456781450917452305716718016257955040884250784507703398193522459372256472527041401868762121323/10858140970858999205283737578470954629760153827384679104166973756016822361494177977587314859274744144813363331711023779316596913827955072016391810811101810392078343174569480009850190850836827861247911722578812392917718456168063161481328135758313956753693245933922462629740369669227417273548188012341700764299535261369743462002123580692605917245284581582062562195764008052483572964026701387270614562377743759780498485096917915423185397662673339385703062161195195007727553500474719096099216917636256931756498217141930681958189652199479733275231926705239171669258297190899048320676934997124055324902601194923581721950246632548395849162182473296686805054248355101540296214546708203611863858636995720699185610428619191636390783815050099033516306371544947209794499131974555549943825794042406934839641826768267363860062882787543533340643144371662791457787736345590599007018945625258986465896845698652941576354807402061286097651751289266222226903960574020245405967407235388337879914919814319267043561004689214871434792381337507191234830368739413595160745502457060921395100906408046452602998504876332768550269288080951657164688792095314233615953294057957678988514580675185336456353164320612345419523615377492292940600452565019435702120341431581481225354465625000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "2388321686924030327846671521414022054322550243061472963701608931094647180882486668977995964456235407707019335224134209545681070191671496859454460203897004998227228615834024058790172520758692718578716683485447484476029574940344527441712960608220869816325078402244171477887940099844656920773321025136550193319130373843222629448445949543207755867633437052925316905880911875015868026512739750228100475818504459319482696124198388860722751456554158238074018838036733846222234470706556688612617544291940003500774735565122691084518890951742400637675967635214355120682683532399773139941993485121271124072157788362171158599683136642899611036594582285729330285021576729222729035207086981093040975249103005000716408165952775135445671181551174651736149660763032485664404642088466223261674131703542695236756312231123535973524675511539222077576346435419823203693314083211713466306609211841012677322941496859297171214829933971881815336785810172214539386223400312088793977269306763541733614918675944927013952174053460902196864978808675939567419163866993464652974206267252337386266553675369898514564511539986958706310539009041741935434186270524339361536478025207280011767379288501677032417670843765732526704375751480318848858951427265503315249680496078561680708078944283281983742044959115749215492296601806477540627743527472958598131237878677/10858140970858999205283737578470954629760153827384679104166973756016822361494177977587314859274744144813363331711023779316596913827955072016391810811101810392078343174569480009850190850836827861247911722578812392917718456168063161481328135758313956753693245933922462629740369669227417273548188012341700764299535261369743462002123580692605917245284581582062562195764008052483572964026701387270614562377743759780498485096917915423185397662673339385703062161195195007727553500474719096099216917636256931756498217141930681958189652199479733275231926705239171669258297190899048320676934997124055324902601194923581721950246632548395849162182473296686805054248355101540296214546708203611863858636995720699185610428619191636390783815050099033516306371544947209794499131974555549943825794042406934839641826768267363860062882787543533340643144371662791457787736345590599007018945625258986465896845698652941576354807402061286097651751289266222226903960574020245405967407235388337879914919814319267043561004689214871434792381337507191234830368739413595160745502457060921395100906408046452602998504876332768550269288080951657164688792095314233615953294057957678988514580675185336456353164320612345419523615377492292940600452565019435702120341431581481225354465625000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ]
+          ],
+          "outward22": [
+            [
+              2199158620242067557423,
+              2199158620242067557424
+            ],
+            [
+              2199567765176185248607,
+              2199567765176185248608
+            ]
+          ]
+        },
+        {
+          "width": 5,
+          "triple": [
+            3,
+            1,
+            2
+          ],
+          "independent_full_orthogonal_gram_orbits": 132,
+          "rational_intervals_edge_inner": [
+            [
+              "312578552645028502705908857082595806073061513424783052767775006554811458462267837877355285130022595411201307983569663669687540971336382545855049321160354106515673162668464183365040065271377802437184498399117478438457056397704399187846390860427537194225562139091240044977457198937481033471907254920091172362102595772407618031367528739739351245801058739250324131032665366881769389607737647151657976081234023039603610087928105277856203638241244889660855603931296603719820930682858124635528276755337274248105453487023584391385708170626842212820906813327254639744977537368466362926130404063494724164192584450780638614452687414243432341693466863591629755199199573514170091809586869452911504387099113071091371505961456210056111746493347160800098781587393619884100692615009940223634189407078035708397321233723802499661880948271506523853829501969167428322079451221833550557543927078956202704114834168871212739905522623849444929756529683500083/1220454904560224457356351157787861142031923290999184310777914029504092145232040284058789879617529830705946944744719333104225149922670594996556713352340875575698043316650859880356040220897126905979008709034959368699743293385559929404975021422778312591165875085797630950869046813493301536811496782763862258619347705888365516170788488152683246554764695112769429871531779864493141471823285073351316079248632466216741026749345132347076536102566244924341828519268503131458061290646368161427316978654821977597897530779573771505022972288432048703025727731608240943189523930207645873417811514716887190883526200352650369584226333541153507645662393614702070175752481917312213657116388145436679124050269791841060581592555029456389526991923189037435772581608413403057360574628044793658556094692744927850107616932012790744419926505079268204159415306501909987089748200378125000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "312578552645028502705908857082595806073061513424783052770547771910943082569140508308189269467570784692246935346858996427259723505738139655582452438280692334326999931152224431864983941079104436836368102432596608131520706221564825666853781964481326268836993903743653093764310951118671799134758593240841718111853736633365588363323278642155516418986459709852180702064964571830577009872347936241011223273428676667366148871953199835019329652383530127596662558785285978894577430410201560272303897151746804790390013227124671584397589900326499494352096081630939409720855905637022920308316925241712045544766260547727555356329164689121871461993600777914718127167411616754573842015322087825778326387345704491067523054500087060839475368339393505911007377385954216586811009143153243701433921683927718088799460968600270472081360957453787385143896936470984339332219081818791449442456072921043797295885165831128787260094477376150555070243470316499917/1220454904560224457356351157787861142031923290999184310777914029504092145232040284058789879617529830705946944744719333104225149922670594996556713352340875575698043316650859880356040220897126905979008709034959368699743293385559929404975021422778312591165875085797630950869046813493301536811496782763862258619347705888365516170788488152683246554764695112769429871531779864493141471823285073351316079248632466216741026749345132347076536102566244924341828519268503131458061290646368161427316978654821977597897530779573771505022972288432048703025727731608240943189523930207645873417811514716887190883526200352650369584226333541153507645662393614702070175752481917312213657116388145436679124050269791841060581592555029456389526991923189037435772581608413403057360574628044793658556094692744927850107616932012790744419926505079268204159415306501909987089748200378125000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ],
+            [
+              "312789934476506414355340324113857408071644044555361034244591611838220433149984424190356737704604763410041563518373674825090187017874544836798396411771600311533795382419418806723668458888381937537584545819191806674857697050248597139363592730945135397438031489528182508613962258137492908124635783711019796519786941254106659382721705540115359101300046147368258385499379366981890675070766258634593224013288521183825605760371660946770630749682245717084119224091535601090343548700638253842371194870945753920633478926601648428744683030236042690570538374508543648731721474388945646382533426282780715840907629995340939483839272874500839861002769863364553970951906614712615557306406408508134793709874636941618471585481564571454283685381692167956574178706778833950589843760230496153624458344423177773857779981176236779471754452640201972948522136259932926593574080531208550557543927078956202704114834168871212739905522623849444929756529683500083/1220454904560224457356351157787861142031923290999184310777914029504092145232040284058789879617529830705946944744719333104225149922670594996556713352340875575698043316650859880356040220897126905979008709034959368699743293385559929404975021422778312591165875085797630950869046813493301536811496782763862258619347705888365516170788488152683246554764695112769429871531779864493141471823285073351316079248632466216741026749345132347076536102566244924341828519268503131458061290646368161427316978654821977597897530779573771505022972288432048703025727731608240943189523930207645873417811514716887190883526200352650369584226333541153507645662393614702070175752481917312213657116388145436679124050269791841060581592555029456389526991923189037435772581608413403057360574628044793658556094692744927850107616932012790744419926505079268204159415306501909987089748200378125000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "312789934476506414355340324113857408071644044555361034247364377194352057256857094621190722042152952691087190881663007582662369552276301946525799528891938539345122150903179055223612334696108571936768149852670936367921346874109023618370983834998924472049463254180595557400816010318683673787487122031770342269538082115064629714677455442531524274485447117970114956531678571930698295335376547723946471205483174811588144544396755503933756763824530955019926178945524976265100048427981689479146815267355284462918038666702735621756564759935699972101727642812228418707599842657502203764719947460998037221481306092287856225715750149379278981302903777687642342920118657953019307512141626881001615710121228361594623134020195422237647307227738513067482774505339430653300160288373799631424190621272860154259919716052704751891234461822482834238589570761749837603713711128166449442456072921043797295885165831128787260094477376150555070243470316499917/1220454904560224457356351157787861142031923290999184310777914029504092145232040284058789879617529830705946944744719333104225149922670594996556713352340875575698043316650859880356040220897126905979008709034959368699743293385559929404975021422778312591165875085797630950869046813493301536811496782763862258619347705888365516170788488152683246554764695112769429871531779864493141471823285073351316079248632466216741026749345132347076536102566244924341828519268503131458061290646368161427316978654821977597897530779573771505022972288432048703025727731608240943189523930207645873417811514716887190883526200352650369584226333541153507645662393614702070175752481917312213657116388145436679124050269791841060581592555029456389526991923189037435772581608413403057360574628044793658556094692744927850107616932012790744419926505079268204159415306501909987089748200378125000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ]
+          ],
+          "outward22": [
+            [
+              2561164296010283514028,
+              2561164296010283514029
+            ],
+            [
+              2562896288160817584176,
+              2562896288160817584177
+            ]
+          ]
+        },
+        {
+          "width": 5,
+          "triple": [
+            5,
+            2,
+            4
+          ],
+          "independent_full_orthogonal_gram_orbits": 132,
+          "rational_intervals_edge_inner": [
+            [
+              "475264969397638745051413783726270060127196678012934424804766200108838608238445791021226003954227107350408280844080345102390503263747178724881620391584295215228808832743533942011218361119655990811301989053734080320099462197184029224804795698900425579270793817172921834027569996183025221888408451985144885303454757628918290514048238770581833696359417963083928276028617228607964767356966842351085541901219956485483009406200043925231707258845391266808239846528852012978624726429750045486280564942114737504118619995786573116345543280152675096883390540024288168876384581571125098598591109866009312767246956363657604567860743561542569112377227110297454183033816053872236474963015878363981756824542538193862526476933361686990365276804085548522422561490608536919743109499401746853733281519554497081681057292721050016667923376651705244205316086722550810188355832364166534886859288286587526290029041374081971808279414788538596779588060584960345739446482387139383249605285854122067869618580515603028618743432057787158647965048444179819847255317103353707795072067910241433354791854150473436348168132800741721570374076483576743092745204936894139418948928083153470937926387791735289690557628057462814633559306027473167828193669371561477250417720922455240237130823332002087817844750317291375383366244084814831589191622637586038155540716756338224817769989083639107276448011761687997977991016213847995117175564855089436485293381683546685292522932263746051975995124503921401514862782468231441525456249876679438157925030072751218242815518224436634966546008339087208852346954210939204192387666860175876153766040180882488682423491112928013195540942939931958806617/2161121700336351372170789513106300817780910014973615523222359886550393005749838729910691265651240006098778733491406395815332233548979776890885676815036758905493473721785127403383488675899203941836464497489860012160653350353263374685120059460565352867046420205723165301599694613930366417861608942294142445801707195684157538363088841483465864751662280051126136171269415275939224004128308042152127215309054183304432119496097586517446527915341241495209632549593849877318884321499469610914130575073819807430878674153819400144189878314657395125241974414913147262576429621169630630354952092607945005425364743339351322142549541427799787961246744349070242781974065891002537595191341367266245499312774840661119727199396100154719124044180035386422321207768145771165437336472704091714000179614748151420216404819187884625379771389809362605906759024086994306400216324171890932626042528781602711773738468020896686173418307642700545476073807975678189657029920756467292123748692733551696574890364650575693518689543446754037424989847051780111566820296093032697353930927284401963067518982771300838067108477845335202113451146583656983141062253646784041151866890811859162208185102898704059093822527090954440737427102353841148063244780853516012149514766157606990094222896932271716615069237654431779684844593115356177721065533527419901556271555572533701470050990298929493112541153123672275068572772623760473241810457853995907772212495018788794704069531747569620256575089013192842916858196219037324119354733574787239967687977512825895038747876346003772806703950961022266608738939709526356250000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "475264969397638745051413783726270060127196678012934424804766200108999423628177662549815645193689627933809770333270979391733351048129756171783161290469987818771164895567449612352526509717444319252296041517493320109405568833964953663321363926114134964499942030047260027871074604681873517777303645069533165362008512122347182669978273943349245573793278415637789936139239482075566677449334911027596526182019156666917783110715456239073805502075552294216477231375009914698480327170054627389356006110579388750201814617029559418189257112018083120079901836183931178404495657097097668329322445527009966217055014882838434953294993649148739348768383594582931549761958803224411453364283441549581255023423045873484748461141976743987175318305496236000564628389382627665480704777393223325314607125725675437431995600789191729095622752126237914150871959092745561496678005044166997266733364152296080561258662618697095044044389997306977964727768625924158634770826110437543663371953862047154023228273470212928569667015809134057825909025352699365725591276051459758393489213999949773944020772510100317481368606072563564315141973538978397713318939264402049704044425763939418815079164993651946745306952326746845245189599478976812263526346852160957267596049202461806633399844538727997442667120126046063764865366445141447164194454716909941572281853512724750966989314092417091156937906198490757921188075067775579749744671806166755006794597464116072251801466908784812337675770173676545658724610784238501873159395970006571660147828143399026240946619463612870969152764444473086964079164639641608307612333139824123846233959819117511317576508887071986804459057060068041193383/2161121700336351372170789513106300817780910014973615523222359886550393005749838729910691265651240006098778733491406395815332233548979776890885676815036758905493473721785127403383488675899203941836464497489860012160653350353263374685120059460565352867046420205723165301599694613930366417861608942294142445801707195684157538363088841483465864751662280051126136171269415275939224004128308042152127215309054183304432119496097586517446527915341241495209632549593849877318884321499469610914130575073819807430878674153819400144189878314657395125241974414913147262576429621169630630354952092607945005425364743339351322142549541427799787961246744349070242781974065891002537595191341367266245499312774840661119727199396100154719124044180035386422321207768145771165437336472704091714000179614748151420216404819187884625379771389809362605906759024086994306400216324171890932626042528781602711773738468020896686173418307642700545476073807975678189657029920756467292123748692733551696574890364650575693518689543446754037424989847051780111566820296093032697353930927284401963067518982771300838067108477845335202113451146583656983141062253646784041151866890811859162208185102898704059093822527090954440737427102353841148063244780853516012149514766157606990094222896932271716615069237654431779684844593115356177721065533527419901556271555572533701470050990298929493112541153123672275068572772623760473241810457853995907772212495018788794704069531747569620256575089013192842916858196219037324119354733574787239967687977512825895038747876346003772806703950961022266608738939709526356250000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ],
+            [
+              "475354901270557851621368937521051139897727530432676875457545178402585112739473284035711335155311568312407338517869571665793650885931684247436961458699893585375658712722834301602184979592011476400952386084569669516839831542612302370565874850723286860082401713589088302407037332227622138401953994745065231676656279904520669459422713895900343883280524939554338908767683491751798220613270839621315898891223592126236774523756589330989065978740454229681917176288563240414566966175075932915895823644844516328315742289904853248296728144607457497905552772289051433231400115336749426367838879294004259254316506362979620088576556450285465348680519613666207187627569322443603375900684891767560591909567840168594000350428909516739625924003666145669834279946403355448888097966611498088580688187187282669018322481401573299311158053290523591555061341506369290349615431060357121543671724348032940353167797562584979636763161840148566962105990278105968685738376571758025163836924076366751748136291975595550215347765124229959395627123035771097568326784393955713276321050438645269121660048060240786230319430245214894761035513825104743478291911005388086680761946289839328616890563635029472251354950682959849215056719400086231028701791473099350966421989435429992640906663014662802567168192805451723720447641217943862977284266918087959828253886651310530444751371283431831100033715262079482459335217815240921889076166627497618448722792760255037849342241056363136020717713779788184050610344627141080719720784079456202405556027669241892305178076999291777379551364518084210266901192653719954192387666860175876153766040180882488682423491112928013195540942939931958806617/2161121700336351372170789513106300817780910014973615523222359886550393005749838729910691265651240006098778733491406395815332233548979776890885676815036758905493473721785127403383488675899203941836464497489860012160653350353263374685120059460565352867046420205723165301599694613930366417861608942294142445801707195684157538363088841483465864751662280051126136171269415275939224004128308042152127215309054183304432119496097586517446527915341241495209632549593849877318884321499469610914130575073819807430878674153819400144189878314657395125241974414913147262576429621169630630354952092607945005425364743339351322142549541427799787961246744349070242781974065891002537595191341367266245499312774840661119727199396100154719124044180035386422321207768145771165437336472704091714000179614748151420216404819187884625379771389809362605906759024086994306400216324171890932626042528781602711773738468020896686173418307642700545476073807975678189657029920756467292123748692733551696574890364650575693518689543446754037424989847051780111566820296093032697353930927284401963067518982771300838067108477845335202113451146583656983141062253646784041151866890811859162208185102898704059093822527090954440737427102353841148063244780853516012149514766157606990094222896932271716615069237654431779684844593115356177721065533527419901556271555572533701470050990298929493112541153123672275068572772623760473241810457853995907772212495018788794704069531747569620256575089013192842916858196219037324119354733574787239967687977512825895038747876346003772806703950961022266608738939709526356250000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "475354901270557851621368937521051139897727530432676875457545178402745928129205155564300976394774088895808828007060205955136498670314261694338502357585586188918014775546749971943493128189799804841946438548328909306145938179393226809082443077936996245311549926463426496250541940726470434290849187829453511735210034397949561615352749068667755760714385392108200568878305745219400130705638908297826883172022792307671548228272001644831164221970615257090154561134721142134422566915380514818971264813309167574398936911147839550140441976472865521102064068448694442759511190862721996098570214955004912704124564882160450474010806537891635585071676097951684554355712071795778354301952454953160090108448347848216222334637524573736435965505076833147976346845177446194625693244602974560162013793358461024769260789469715011738857428765056261500617213876564041657937603740357583923545800213741494624397418807200102872528137048916948147245698319069781581062720295056185577603592084291837901745984930205450166271348875576858573571099944290643446662743342061763874738196528353609710888966419867667363519903517036737505803410880506398098865645332895996965857443970625276494043340836946129306104274952243879826687012851589875464034468953698830983600317715436559037175684221388712191990562614206412101946763578270478552287098997411863244995023407697056593970696292209814980523609698882242402532276669168506521645273578574936970224008540824424808620775701401896382398359449543328194472172943148141067423930172783335907778825739889700303309178238468013382158120623470088378633403082422358307612333139824123846233959819117511317576508887071986804459057060068041193383/2161121700336351372170789513106300817780910014973615523222359886550393005749838729910691265651240006098778733491406395815332233548979776890885676815036758905493473721785127403383488675899203941836464497489860012160653350353263374685120059460565352867046420205723165301599694613930366417861608942294142445801707195684157538363088841483465864751662280051126136171269415275939224004128308042152127215309054183304432119496097586517446527915341241495209632549593849877318884321499469610914130575073819807430878674153819400144189878314657395125241974414913147262576429621169630630354952092607945005425364743339351322142549541427799787961246744349070242781974065891002537595191341367266245499312774840661119727199396100154719124044180035386422321207768145771165437336472704091714000179614748151420216404819187884625379771389809362605906759024086994306400216324171890932626042528781602711773738468020896686173418307642700545476073807975678189657029920756467292123748692733551696574890364650575693518689543446754037424989847051780111566820296093032697353930927284401963067518982771300838067108477845335202113451146583656983141062253646784041151866890811859162208185102898704059093822527090954440737427102353841148063244780853516012149514766157606990094222896932271716615069237654431779684844593115356177721065533527419901556271555572533701470050990298929493112541153123672275068572772623760473241810457853995907772212495018788794704069531747569620256575089013192842916858196219037324119354733574787239967687977512825895038747876346003772806703950961022266608738939709526356250000000000000000000000000000000000000000000000000000000000000000000000000000"
+            ]
+          ],
+          "outward22": [
+            [
+              2199158748550207694373,
+              2199158748550207694374
+            ],
+            [
+              2199574883712355711334,
+              2199574883712355711335
+            ]
+          ]
+        }
+      ],
+      "seconds": 1.4017106670653448
+    }
+  },
+  "final_controls": {
+    "runner_receipts": [
+      {
+        "runner": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+        "checks": 26,
+        "elapsed_sec": 1.9383409023284912,
+        "timeout_sec": 900,
+        "cache_header": {
+          "runner_path": "scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+          "runner_sha256": "8804f50e2d10d8eeb5172faff5e700f3389c37983ab171731c2c82232033d9f5",
+          "input_fingerprint_sha256": "4b4e6d5eb560cb835238536cadc8de3f4485475c79a244eaf4b780ff0daed4b2",
+          "status": "ok",
+          "exit_code": "0"
+        },
+        "source_input_binding": "fresh, source-freeze SHA matched, exact captured stdout found in cache",
+        "execution_receipt": "/private/tmp/review-drain-20260915/unit8035-author/gaussian-execution.json",
+        "execution_receipt_sha256": "a3d480497b79a96e360356bd9e4dcbce892cc492a3786cae0f5bd429c9e81d43"
+      },
+      {
+        "runner": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+        "checks": 34,
+        "elapsed_sec": 60.80952787399292,
+        "timeout_sec": 400,
+        "cache_header": {
+          "runner_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+          "runner_sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f",
+          "input_fingerprint_sha256": "ea4cce759f0bc4e2e0a84069da53cffcfb9e2d3a8136ceb19e858275056d51a2",
+          "status": "ok",
+          "exit_code": "0"
+        },
+        "source_input_binding": "fresh, source-freeze SHA matched, exact captured stdout found in cache",
+        "execution_receipt": "/private/tmp/review-drain-20260915/unit8035-author/strip-execution.json",
+        "execution_receipt_sha256": "c8b909195aebbc499820b30d3590f3bbf0fd4c4549c6ce2851f3236360ce6953"
+      }
+    ],
+    "execution_policy": "One successful canonical no-argument run each by author under frozen source, independently inspected and reused; reviewer independent mathematical controls separate. No duplicate expensive baseline or mutation census.",
+    "aborted_prior_attempt": {
+      "path": "/private/tmp/review-drain-20260915/unit8035-author/strip-aborted-incomplete-source-execution.json",
+      "reason": "Author caught incomplete target-wording edit before final source freeze; terminated after43.235s with exit-15; no mathematical conclusion, output preserved, not reused."
+    },
+    "syntax": "AST PASS",
+    "diff_check": "PASS",
+    "unstaged_paths": [],
+    "independent_controls": [
+      "62 Gaussian innovation covariance cases",
+      "Alternative Gram quotient reconstructs all8 exact strip enclosures and separation"
+    ]
+  },
+  "findings": {
+    "total_groups": 4,
+    "fixed": 4,
+    "skipped": 0
+  },
+  "lenses": {
+    "code": "PASS",
+    "physics": "BOUNDED",
+    "proof": "CONDITIONAL with declared premises closed at scope",
+    "imports": "DISCLOSED",
+    "nature_retention": "BOUNDED source; not Nature readiness",
+    "no_go": "N1-N8 present, negative conclusions finite family only; alternative rules/orders/widths remain open",
+    "labeling": "PASS",
+    "governance": "source-only PASS; no audit or landing authority"
+  },
+  "claims": [
+    "Gaussian complex innovation product L\u2020DL, recorded-set invariance, explicit diagonal/fill correction, strict determinant separation under nonzero edge premise",
+    "Executed Gaussian read-row distinctions and support-converse boundary; no general no-cancellation theorem",
+    "Static strip sector self-adjointness and rigorous pair enclosures for widths4,5 at two positive fixtures, separation and inner-edge inequalities",
+    "Krylov dimensions8/30/16/111; algebraic root degrees8/30/16 only, statistic identification8/16 only"
+  ],
+  "current_main_loss_check": "Six source additions only; no overwritten/deleted current main science. Omitted manifest regenerated in combined gate. Appended historical process changes do not remove current inherited main material.",
+  "full_pipeline_count": 0,
+  "combined_gate": "coordinator pending",
+  "findings_sha256": "573629424deb02369642684ccead95a8601ffb074e0c47f913bf54e2bd208b37",
+  "verdict": "FINAL VERDICT: PASS",
+  "verdict_scope": "bounded source claims only"
+}

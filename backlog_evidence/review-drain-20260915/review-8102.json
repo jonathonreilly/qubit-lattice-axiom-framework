@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "original_head": "fe094b01714c5abaa8038a0b136e6577dfaae034",
+  "base": "7927f9e170566b351b2cf6f801cb7176f8b87226",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "original_dispositions": [
+    {
+      "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "c57f43766b9919e57d9506daf5cbbaf91da35b0c13d29a42fae465e4008b9f1b",
+      "disposition": "preserved; narrow review fixes or cache regeneration",
+      "main_path_absent": true
+    },
+    {
+      "path": "logs/runner-cache/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt",
+      "original_sha256": "274d313203fb45e01274181e92cdcfca8db2248e0ed8dec79c7b65c6f10c989c",
+      "disposition": "preserved; narrow review fixes or cache regeneration",
+      "main_path_absent": true
+    },
+    {
+      "path": "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py",
+      "original_sha256": "bc2343c90d9fbab1e99201ed35920401a63f2817ba3c75817970fd141ba3a596",
+      "disposition": "preserved; narrow review fixes or cache regeneration",
+      "main_path_absent": true
+    }
+  ],
+  "actual_inputs": [
+    {
+      "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+    }
+  ],
+  "helper_imports": [],
+  "independent_check": "check8102/independent.py",
+  "independent_results": {
+    "path3": {
+      "keys": 2,
+      "binary_laws": 2,
+      "orientations": 4,
+      "orders": 6
+    },
+    "P4": {
+      "keys": 3,
+      "binary_laws": 3,
+      "orientations": 8,
+      "orders": 24
+    },
+    "star4": {
+      "keys": 5,
+      "binary_laws": 5,
+      "orientations": 8,
+      "orders": 24
+    },
+    "cycle4": {
+      "keys": 4,
+      "binary_laws": 4,
+      "orientations": 14,
+      "orders": 24
+    },
+    "rect": {
+      "keys": 28,
+      "binary_laws": 28,
+      "orientations": 98,
+      "orders": 720
+    },
+    "cube": {
+      "keys": 542,
+      "binary_laws": 542,
+      "orientations": 1862,
+      "orders": 40320
+    },
+    "constant_row_sum_counterexample": {
+      "phi": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "v": [
+        0,
+        1
+      ],
+      "forward": "1/4",
+      "reverse": "1/6",
+      "K": []
+    },
+    "binary_rect_tv": "135/578"
+  },
+  "material_findings": [
+    "N3 missing common row sum",
+    "Binary cube assertion untested in original runner",
+    "N1 incorrectly rejects labeled indegree vector",
+    "C2 rectangle full-configuration coverage overstatement"
+  ],
+  "minor_findings": [
+    "N7 transitive reduction parenthetical"
+  ],
+  "authority_freshness": "All six required authority files identical to fully read5deab revision",
+  "full_pipeline_count": 0,
+  "staged_tree": "bd5156a8fde8631d9f3af9d724f50011122d8310",
+  "final_files": [
+    {
+      "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt",
+      "sha256": "965263155485bf37dea816c17c1214a37011eff7f7121bb2f3d3bfe831c33fcd",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.py",
+      "sha256": "57316434b0d9d48b46f0803227af1ad10940e7931b9663cf599e603cc8a08e74",
+      "index_equals_worktree": true
+    }
+  ],
+  "finding_disposition": "All four material findings and minor N7 precision fixed; independently confirmed in same reviewer session",
+  "canonical_checks": {
+    "result": "57 PASS,0 FAIL",
+    "cache": "fresh",
+    "input_fingerprint": "4bac015fe532245f3fda24d3cf7544ca3c0a70dba3923f4bbd550ee4312457c4",
+    "independent_replay": "exact stdout match to final committed cache, exit0",
+    "isolated_replay_root": "check8102/replay"
+  },
+  "scope": "Conditional finite-menu mathematical result, no physical selection or retained/audit authority",
+  "proof_coverage": [
+    "Complete note LemmaL and Theorems1\u20135; each edge charged once and constant singleton reduction",
+    "Complete primary runner; exact-integer grouped weights preserve all TV and normalization sums; finite separating family proves injectivity by unequal positive denominators",
+    "Actual parent B1 identity and common-normalizer premise read; monotone P1/P2 finite product-order premise read; no infinite-strip or concurrent theorem consumed",
+    "All original3paths retained; no.claude/history omissions; all three paths absent from current main, no inherited current-main source overwritten",
+    "N1 finite route examples only; labeled indegree rejection removed; N5 certificate and N1\u2013N8 remain in landed source/cache"
+  ],
+  "controls": [
+    "binary_coupling_forged",
+    "corners_first_forged",
+    "binary_law_count_forged"
+  ],
+  "reviewer_source_edits": false
+}

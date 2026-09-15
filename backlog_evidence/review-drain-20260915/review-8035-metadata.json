@@ -1,0 +1,38 @@
+{
+  "unit": "PR8034+PR8035",
+  "reviewer_session": "/root/review_8011",
+  "prior_reviewed_tree": "884ebf2e421f0bf45ce14fa2dbb59df9906686fe",
+  "prior_report_sha256": "573629424deb02369642684ccead95a8601ffb074e0c47f913bf54e2bd208b37",
+  "reviewed_staged_tree": "ce1a315df1fcd7c5af6f36165e427f7551cab6a7",
+  "base_commit": "c87390a9401aaeae41cffb3552fc04ba0e7bd6c8",
+  "affected_paths": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "ecd0971d2d3b2754dc317c1e1159413075ec2ed9",
+      "sha256": "41897e6e99b3d6170f85d82d0f832ce0f4fd8e55ba142201fcb5d0aae293fabb"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt",
+      "blob": "526ee2c35e1982099d9cfbd78d78609cddc6dc20",
+      "sha256": "5c52e95ead4f1be8eff49f18a6d74aac4b3f8a3897134886d78979e1107ee53e"
+    }
+  ],
+  "change": "Split Date/Type/Status/Audit header lines so citation parser recognizes bounded_theorem. Whitespace-normalized note identical.",
+  "parser_result": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "unaffected_science": "All other four prior source hashes and all six current input hashes unchanged; complete prior math and disposition map reused.",
+  "cache_header": {
+    "runner_path": "scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+    "runner_sha256": "4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f",
+    "input_fingerprint_sha256": "4b22309c46153ecd3fd3bd40066908ad8c167fed70f4c123c73af78113858eb0",
+    "status": "ok",
+    "exit_code": "0"
+  },
+  "cache_status": "fresh",
+  "checks": "34 PASS / 0 FAIL; diff-check clean; no unstaged residue",
+  "new_math_executions_by_reviewer": 0,
+  "verdict": "FINAL VERDICT: PASS",
+  "verdict_scope": "Affected metadata/input/cache confirmation only; prior source verdict remains applicable; combined gate coordinator-owned"
+}

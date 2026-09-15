@@ -109,3 +109,8 @@ The local-probability theorem is an additional upstream-support result for
 the finite-penalty phase program. It constrains the actual bare defect
 observable in ground-state limits. It leaves dressed low-energy observables
 and the phase open, and supplies no axiom-update conclusion.
+
+Block27 continuation: a physical-source match resolves the sign/argument
+ambiguity for the coupled finite sum. The first elementary mixed coefficient
+has a proposed quadratic scaling limit. This remains upstream support,
+not closure of the full fixed-clock Gaussian or native-law target.

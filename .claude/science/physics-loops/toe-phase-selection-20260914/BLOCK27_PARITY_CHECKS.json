@@ -1,0 +1,194 @@
+{
+  "status": "finite_checks_passed",
+  "scope": "Orientation/source algebra, signed quadratic inverse and finite Fourier checks only.",
+  "orientations": {
+    "orientation_controls": [
+      {
+        "theta": 0.17,
+        "residuals": [
+          4.441434166503682e-16,
+          2.7755575615628914e-17,
+          0.0,
+          3.3306690738754696e-16
+        ],
+        "vacuum_connected": -0.057660932361756956,
+        "mixed_source_derivative_imaginary": -0.6767293962679841
+      },
+      {
+        "theta": 0.8,
+        "residuals": [
+          5.551115123125783e-17,
+          8.899114524108741e-16,
+          0.0,
+          0.0
+        ],
+        "vacuum_connected": -1.2131731626113385,
+        "mixed_source_derivative_imaginary": -2.869424363598091
+      },
+      {
+        "theta": 2.2,
+        "residuals": [
+          3.3306690738754696e-16,
+          1.777711575522029e-15,
+          0.0,
+          0.0
+        ],
+        "vacuum_connected": -6.354004469021383,
+        "mixed_source_derivative_imaginary": -3.2339856152783604
+      }
+    ],
+    "opposite_sign_fault_residuals": [
+      0.09412833879191859,
+      0.6437676504687435,
+      1.9730020174968699
+    ],
+    "log_partition_cross_difference_error": 6.524523773618564e-08
+  },
+  "quadratic": [
+    {
+      "parameters": [
+        0.1,
+        0.3,
+        0.2
+      ],
+      "residual": 4.440892098500626e-16,
+      "inverse_norm": 1.0000000000000002,
+      "swapped_projection_fault": 0.15699376278474447
+    },
+    {
+      "parameters": [
+        2.0,
+        4.0,
+        7.0
+      ],
+      "residual": 1.1102230246251565e-16,
+      "inverse_norm": 1.0000000000000007,
+      "swapped_projection_fault": 0.7868635662331938
+    },
+    {
+      "parameters": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "residual": 3.400058012914542e-16,
+      "inverse_norm": 1.0000000000000004,
+      "swapped_projection_fault": 0.7957160975151487
+    },
+    {
+      "parameters": [
+        0.1,
+        0.3,
+        0.2
+      ],
+      "residual": 0.0,
+      "inverse_norm": 1.0,
+      "swapped_projection_fault": 0.19568151147098511
+    },
+    {
+      "parameters": [
+        2.0,
+        4.0,
+        7.0
+      ],
+      "residual": 0.0,
+      "inverse_norm": 1.0,
+      "swapped_projection_fault": 0.9807692307692307
+    },
+    {
+      "parameters": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "residual": 0.0,
+      "inverse_norm": 1.0,
+      "swapped_projection_fault": 0.9918032786885246
+    },
+    {
+      "parameters": [
+        0.1,
+        0.3,
+        0.2
+      ],
+      "residual": 2.220446049250313e-16,
+      "inverse_norm": 1.0000000000000002,
+      "swapped_projection_fault": 0.16474372309612573
+    },
+    {
+      "parameters": [
+        2.0,
+        4.0,
+        7.0
+      ],
+      "residual": 2.220446049250313e-16,
+      "inverse_norm": 1.0000000000000002,
+      "swapped_projection_fault": 0.8257069017938582
+    },
+    {
+      "parameters": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "residual": 1.0651202142497596e-15,
+      "inverse_norm": 1.0000000000000002,
+      "swapped_projection_fault": 0.8349964362081256
+    }
+  ],
+  "fft": {
+    "rows": [
+      {
+        "length": 8,
+        "absolute_row_sum": 2.6176523335801702,
+        "same_orientation_square_sum": 0.29355245031450194,
+        "periodic_diagonal": 0.4998779296875,
+        "parseval_error": 5.551115123125783e-17,
+        "vacuum_pair_absolute_sum": 8.855379738680432,
+        "square_majorant": 52.15043800034232,
+        "source_pair_absolute_sum": 37.150754355746
+      },
+      {
+        "length": 12,
+        "absolute_row_sum": 3.0015051126585615,
+        "same_orientation_square_sum": 0.2934439536353203,
+        "periodic_diagonal": 0.4999758873456789,
+        "parseval_error": 1.6653345369377348e-16,
+        "vacuum_pair_absolute_sum": 8.819526920228032,
+        "square_majorant": 52.13116325289993,
+        "source_pair_absolute_sum": 44.38503818479734
+      },
+      {
+        "length": 16,
+        "absolute_row_sum": 3.281355874457193,
+        "same_orientation_square_sum": 0.293428687694209,
+        "periodic_diagonal": 0.49999237060546875,
+        "parseval_error": 5.551115123125783e-17,
+        "vacuum_pair_absolute_sum": 8.813940411385413,
+        "square_majorant": 52.12845121450748,
+        "source_pair_absolute_sum": 49.65964630046955
+      },
+      {
+        "length": 24,
+        "absolute_row_sum": 3.681411047339692,
+        "same_orientation_square_sum": 0.2934233910276394,
+        "periodic_diagonal": 0.4999984929591048,
+        "parseval_error": 1.1102230246251565e-16,
+        "vacuum_pair_absolute_sum": 8.811921744842728,
+        "square_majorant": 52.12751024644114,
+        "source_pair_absolute_sum": 57.2003087881959
+      },
+      {
+        "length": 32,
+        "absolute_row_sum": 3.9671218772722154,
+        "same_orientation_square_sum": 0.2934225350911907,
+        "periodic_diagonal": 0.4999995231628418,
+        "parseval_error": 0.0,
+        "vacuum_pair_absolute_sum": 8.811587423094354,
+        "square_majorant": 52.12735818686663,
+        "source_pair_absolute_sum": 62.58579456774916
+      }
+    ],
+    "scope": "Finite Fourier controls; no fitted divergence rate or thermodynamic proof."
+  }
+}

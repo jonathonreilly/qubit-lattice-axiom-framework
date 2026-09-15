@@ -1,0 +1,176 @@
+{
+  "status": "finite_checks_passed",
+  "physical_sources": {
+    "rows": [
+      {
+        "N": 2,
+        "beta": 0.8,
+        "direct_characteristic": [
+          0.990353165451929,
+          2.5030133617790283e-175
+        ],
+        "coupled_error": 6.661338148892173e-16,
+        "both_source_reversal_error": 6.66133825633605e-16,
+        "single_source_sign_change_residual": 2.253230249593674e-05,
+        "sign_change_status": "rejected",
+        "omitted_electric_source_fault": 0.16152091337644614
+      },
+      {
+        "N": 2,
+        "beta": 0.8,
+        "direct_characteristic": [
+          0.9801452671369643,
+          -2.6344862944773287e-175
+        ],
+        "coupled_error": 1.110226780967121e-16,
+        "both_source_reversal_error": 1.110226549603142e-16,
+        "single_source_sign_change_residual": 0.0013568354551459771,
+        "sign_change_status": "rejected",
+        "omitted_electric_source_fault": 0.3201736273889676
+      },
+      {
+        "N": 3,
+        "beta": 1.1,
+        "direct_characteristic": [
+          0.9287568587149586,
+          4.078178089576805e-18
+        ],
+        "coupled_error": 1.1102304402563897e-15,
+        "both_source_reversal_error": 1.5543174447646237e-15,
+        "single_source_sign_change_residual": 1.5543176783929239e-15,
+        "sign_change_status": "arithmetic_symmetry_control",
+        "omitted_electric_source_fault": 0.10123262914843956
+      },
+      {
+        "N": 3,
+        "beta": 1.1,
+        "direct_characteristic": [
+          0.8606850096034194,
+          2.9906639323563234e-17
+        ],
+        "coupled_error": 1.1106286140525391e-15,
+        "both_source_reversal_error": 1.1106192529678344e-15,
+        "single_source_sign_change_residual": 1.1106324896533678e-15,
+        "sign_change_status": "arithmetic_symmetry_control",
+        "omitted_electric_source_fault": 0.21138582899166902
+      },
+      {
+        "N": 4,
+        "beta": 1.1,
+        "direct_characteristic": [
+          0.8373640682169126,
+          0.0
+        ],
+        "coupled_error": 7.771561172382324e-16,
+        "both_source_reversal_error": 7.771561174133527e-16,
+        "single_source_sign_change_residual": 1.123521943913186e-05,
+        "sign_change_status": "rejected",
+        "omitted_electric_source_fault": 0.012068259586665131
+      },
+      {
+        "N": 4,
+        "beta": 1.1,
+        "direct_characteristic": [
+          0.6597214402692132,
+          1.5396833549581587e-17
+        ],
+        "coupled_error": 7.773086132596881e-16,
+        "both_source_reversal_error": 7.773083070438679e-16,
+        "single_source_sign_change_residual": 0.0006337884284630668,
+        "sign_change_status": "rejected",
+        "omitted_electric_source_fault": 0.02923100158202996
+      }
+    ],
+    "lattice_reflection_generator_controls": [
+      3,
+      6
+    ],
+    "integer_current_cutoff": 5,
+    "magnetic_cutoff": 6,
+    "image_cutoff": 6,
+    "scope": "Finite three-cube identity; finite Gaussian sums are not interval-certified tails."
+  },
+  "physical_pair": [
+    {
+      "parameters": [
+        0.6,
+        0.2,
+        -0.3
+      ],
+      "error": 2.498001805406602e-16,
+      "wrong_physical_cross_sign": 0.2687646546035236
+    },
+    {
+      "parameters": [
+        1.2,
+        -0.4,
+        0.7
+      ],
+      "error": 2.220446049250313e-16,
+      "wrong_physical_cross_sign": 1.9730440795097308
+    },
+    {
+      "parameters": [
+        2.1,
+        0.6,
+        0.1
+      ],
+      "error": 4.440892098500626e-16,
+      "wrong_physical_cross_sign": 0.4389198808458441
+    }
+  ],
+  "full_projection_pairs": {
+    "N": 3,
+    "rows": [
+      {
+        "length": 8,
+        "all_orientation_square_sum": 0.4998779296875,
+        "periodic_projection_diagonal": 0.4998779296875,
+        "A_N_finite": -35.59101520807407,
+        "A_N_orientation_spread": 1.4210854715202004e-14,
+        "remainder_zero_scalar": -9.404418584324661,
+        "zero_scalar_error": 1.7763568394002505e-15,
+        "leading_cross_cancellation": 9.469747252991005e-17,
+        "remaining_cross_mode_norm": 0.3070412774612464,
+        "real_kernel_error": 1.8812888597812996e-17
+      },
+      {
+        "length": 12,
+        "all_orientation_square_sum": 0.4999758873456787,
+        "periodic_projection_diagonal": 0.499975887345679,
+        "A_N_finite": -35.590539644375355,
+        "A_N_orientation_spread": 7.105427357601002e-15,
+        "remainder_zero_scalar": -9.42077002138475,
+        "zero_scalar_error": 1.7763568394002505e-15,
+        "leading_cross_cancellation": 1.3688111468214525e-16,
+        "remaining_cross_mode_norm": 0.1562967046944347,
+        "real_kernel_error": 5.07386538905207e-17
+      },
+      {
+        "length": 16,
+        "all_orientation_square_sum": 0.4999923706054688,
+        "periodic_projection_diagonal": 0.49999237060546875,
+        "A_N_finite": -35.59050764182918,
+        "A_N_orientation_spread": 7.105427357601002e-15,
+        "remainder_zero_scalar": -9.423510486803236,
+        "zero_scalar_error": 3.552713678800501e-15,
+        "leading_cross_cancellation": 2.0481494477011313e-16,
+        "remaining_cross_mode_norm": 0.09194335114183724,
+        "real_kernel_error": 2.775906400723074e-17
+      },
+      {
+        "length": 24,
+        "all_orientation_square_sum": 0.4999984929591047,
+        "periodic_projection_diagonal": 0.4999984929591049,
+        "A_N_finite": -35.59050162827177,
+        "A_N_orientation_spread": 7.105427357601002e-15,
+        "remainder_zero_scalar": -9.42452764258851,
+        "zero_scalar_error": 3.552713678800501e-15,
+        "leading_cross_cancellation": 3.4766446867848596e-16,
+        "remaining_cross_mode_norm": 0.042160030658088855,
+        "real_kernel_error": 3.988266259368031e-17
+      }
+    ],
+    "scope": "All six orientations, finite torus harmonic correction retained; no continuum rate inferred."
+  }
+}

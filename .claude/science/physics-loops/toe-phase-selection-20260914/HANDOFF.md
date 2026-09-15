@@ -1,3 +1,36 @@
+# Current checkpoint — block27 physical mixed coefficient
+
+Continue personally through **2026-09-15 13:30:44UTC**; no subagents.
+The prior source-probe checkpoint7a33e343c6f1738643a6bc16e1baa7f63ea86daa
+was verified on the remote campaign branch. The work below is new private
+science, not a new PR or an independent review.
+
+The exact full physical characteristic source is now matched to the coupled
+electric/magnetic representation: electric sources are real exponentials,
+magnetic sources are phases, with the fixed relative sign. Direct clock/
+image sums on a three-cube at N=2,3,4 agree below1.2e-15. A failed initial
+fault assertion is preserved: N=3 has a real arithmetic Hodge-reflection
+symmetry that hides a single-source sign change. N=2,4 reject it; N=3,6
+have an exact integer-generator symmetry control.
+
+For the all-translate elementary-loop mixed component coefficient, opposite
+orientations give an absolutely summable vacuum pair but a signed Riesz
+source kernel. Matching the physical source kills its linear P-Q cross term.
+The remaining sine-minus-linear kernel is absolutely summable and has a
+scalar zero-frequency matrix by signed cubic symmetry. Its mixed projected
+term vanishes on macroscopic tests. The rest of this one coefficient has a
+quadratic limit; all higher source powers at this order vanish. All six
+orientations and finite harmonic corrections were checked.
+
+This does NOT sum the complete activity expansion or identify a thermodynamic
+pressure derivative. Next: extend the coefficient calculation to arbitrary
+closed component shapes using local filling-frame moment bounds, then test
+a concrete all-order resummation/large-field estimate. The full fixed-clock
+Gaussian/state theorem remains open. Preserve the distinction between a
+coefficient limit and convergence of the complete physical law.
+
+---
+
 # Current checkpoint — block27 source probe
 
 Continue personally through **2026-09-15 13:30:44UTC**. The added12hours

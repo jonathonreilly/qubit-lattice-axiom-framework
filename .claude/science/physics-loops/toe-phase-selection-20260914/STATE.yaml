@@ -14,22 +14,24 @@ research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
 block: 27
-active_route: coupled_defect_source_probe
+active_route: coupled_defect_physical_source_and_mixed_component_resummation
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Continue a concrete coupled-source estimate or pivot to an actual spin-one phase mechanism.
-  Preserve the physical measure, conditional means and integer carrier. Continue personally to13:30:44UTC.
+next_action: Extend mixed coefficient to arbitrary closed component shapes with uniform local filling-frame
+  moments. Then attempt a signed quadratic resummation and a genuine nonlinear/large-field estimate. Continue
+  personally to13:30:44UTC.
 strongest_unresolved_obligation: Fixed-law finite-clock full-flux Gaussian/Maxwell scaling with both defect
   sectors; a small real electric correction alone does not remove the quantized magnetic carrier. The
   native proposed law also does not select its own coefficients, initial conditions, clock or persistent
   interacting observable sector.
-working_result: Private block27 preserves a nonphysical positive moment-function control, an exact finite
-  contour/source identity, and four finite challenge families. The actual fixed-clock full-source estimate
-  remains open; no new PR or axiom claim.
+working_result: Exact full physical source matched and finitely checked; elementary mixed component coefficient
+  has a proposed quadratic macroscopic limit through Hodge cancellation and an absolutely summable sine
+  remainder. First N=3 fault blind spot explained and preserved. Full-component and all-order convergence
+  remain open; no new PR.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

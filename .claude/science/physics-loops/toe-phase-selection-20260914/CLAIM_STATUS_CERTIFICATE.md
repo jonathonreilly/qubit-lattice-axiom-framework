@@ -125,3 +125,8 @@ Coulomb phase or on unproved neutral-sector selection.
 Personal review status: in progress. Formal audit: deferred to the authorized
 independent path. Public PR: none yet. No axiom, primitive, editable prompt or
 audit-status file has been changed.
+
+Block27 continuation: the full physical source identity and elementary mixed
+component coefficient limit are personal proof proposals. Direct finite
+source and all-orientation tests pass. General component shapes, activity
+analyticity, all-order convergence and state matching remain open.

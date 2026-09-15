@@ -1,0 +1,46 @@
+{
+  "source_sha256": "092288bdeacf1074f6c2696075f44c7ebcc03c6140ae33acc443113a430dfdd6",
+  "failure": "initial combined fault residual assertion",
+  "exit_code": 1,
+  "N": [
+    3.0,
+    0.0
+  ],
+  "beta": [
+    1.1,
+    0.0
+  ],
+  "direct": [
+    0.9287568587149586,
+    4.078178089576805e-18
+  ],
+  "coupled": [
+    0.9287568587149597,
+    2.0338262016124615e-20
+  ],
+  "both_reversed": [
+    0.9287568587149602,
+    5.364578377474884e-20
+  ],
+  "wrong_relative": [
+    0.9287568587149602,
+    -3.559456092600002e-20
+  ],
+  "omitted_electric": [
+    0.827524229566519,
+    2.6717149709408966e-20
+  ],
+  "error": [
+    1.1102304402563897e-15,
+    0.0
+  ],
+  "fault": [
+    1.5543176783929239e-15,
+    0.0
+  ],
+  "omit": [
+    0.10123262914843956,
+    0.0
+  ],
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \".claude/science/physics-loops/toe-phase-selection-20260914/block27_physical_source_probe.py\", line 184, in <module>\n    print(json.dumps(dict(status='finite_checks_passed',physical_sources=physical_sources(),\n                                                                         ~~~~~~~~~~~~~~~~^^\n  File \".claude/science/physics-loops/toe-phase-selection-20260914/block27_physical_source_probe.py\", line 91, in physical_sources\n    assert fault > 1e-6 and omit > 1e-6\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

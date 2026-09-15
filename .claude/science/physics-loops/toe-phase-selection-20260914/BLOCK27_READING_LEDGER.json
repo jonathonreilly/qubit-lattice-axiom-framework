@@ -46,5 +46,55 @@
     "sha256": "c319ba8005c23af3b38940df9fa80312405386418b30efd270e2e292e1f2306d",
     "families": 4,
     "independent_review": false
-  }
+  },
+  "latest_checkpoint_utc": "2026-09-15T09:23:08.721578+00:00",
+  "new_primary_reading": [
+    {
+      "url": "https://www.math.uchicago.edu/~lawler/srwbook.pdf",
+      "local_pdf": "/tmp/toe-charged-reading-20260914/lawler-limic-srwbook10.pdf",
+      "sha256": "cb10ab9e665913f5041fd12511c2492c41d3e4bbebcf2d6ba7162c78acfbd9ea",
+      "pages_read": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        125,
+        126,
+        127,
+        128,
+        129
+      ],
+      "scope": "Green normalization, Theorem4.3.1/Corollary4.3.3 and difference estimates. Sharper angular second-derivative asymptotics not imported; projection discontinuity proof used instead."
+    }
+  ],
+  "search_only": [
+    {
+      "url": "https://doi.org/10.1016/0003-4916(83)90071-4",
+      "scope": "Gawedzki-Kupiainen1983 abstract; full text not obtained or read."
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01215283",
+      "scope": "Gawedzki-Kupiainen1984 bibliographic pointer only, no theorem import."
+    },
+    {
+      "url": "https://ms.mcmaster.ca/tom/mathphys.html",
+      "scope": "Dimock-Hurd source search result, not full theorem read."
+    }
+  ],
+  "additional_finite_evidence": [
+    {
+      "path": "BLOCK27_PARITY_CHECKS.json",
+      "sha256": "8f61348a7287dc641263eacf98eb97ecc7d7e45d511e1c60304dcde2ee740117"
+    },
+    {
+      "path": "BLOCK27_PHYSICAL_SOURCE_CHECKS.json",
+      "sha256": "ec9db5c0f85f626234100571ca6231059a29d277f4898b9ec2ac926b824ae4d1"
+    },
+    {
+      "path": "review/BLOCK27_INITIAL_PHYSICAL_SOURCE_FAILURE.json",
+      "sha256": "4726eaf98649da4be8f73339e898f34eb7283eec6a411a033a88b8840b7b6e7c"
+    }
+  ]
 }

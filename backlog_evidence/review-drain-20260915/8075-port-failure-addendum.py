@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,subprocess,hashlib,gzip
+r=Path('/private/tmp/review-drain-20260915');w=r/'review-slot-one';dest=w/'docs/work_history/repo/review_feedback/pr8075-evidence/scientific-recovery';mp=dest/'manifest.json';m=json.loads(mp.read_text());src=r/'check8075/required-failure-recovery-addendum.json';add=json.loads(src.read_text());sha=lambda b:hashlib.sha256(b).hexdigest()
+for x in add['rows']:
+ raw=Path(x['raw_path']).read_bytes();h=x['sha256'];assert sha(raw)==h;line=subprocess.check_output(['git','ls-tree',x['commit'],'--',x['path']],cwd=w,text=True).strip();meta,p=line.split('\t');mode,kind,blob=meta.split();assert p==x['path'] and kind=='blob';assert hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()==blob
+ if h not in m['objects']:
+  c=gzip.compress(raw,mtime=0);assert gzip.decompress(c)==raw;q=dest/'objects'/(h+'.gz');assert not q.exists();q.write_bytes(c);m['objects'][h]={'path':q.relative_to(dest).as_posix(),'raw_bytes':len(raw),'compressed_bytes':len(c),'compressed_sha256':sha(c)}
+ row={k:v for k,v in x.items() if k not in ['raw_path','gzip_bytes']};row.update(git_mode=mode,git_blob=blob,object=m['objects'][h]['path']);m['rows'].append(row)
+m['failure_recovery_addendum_sha256']=sha(src.read_bytes());mp.write_text(json.dumps(m,indent=2)+'\n');subprocess.run(['git','add',str(dest)],cwd=w,check=True)
+fpath=r/'8075-author-preexecution.json';(r/'8075-author-preexecution-before-failure-addendum.json').write_bytes(fpath.read_bytes());f=json.loads(fpath.read_text());g=lambda *a:subprocess.check_output(['git',*a],cwd=w,text=True).strip();f['source_paths']={p:sha((w/p).read_bytes()) for p in g('diff','--cached','--name-only').splitlines()};f['nonoutput_sources']=f['source_paths'];f['tree']=g('write-tree');f['forensic_recovery']={'rows':len(m['rows']),'objects':len(m['objects']),'compressed_bytes':sum(x['compressed_bytes'] for x in m['objects'].values()),'manifest_sha256':sha(mp.read_bytes())};fpath.write_text(json.dumps(f,indent=2)+'\n');print(f['tree'],len(f['source_paths']),f['forensic_recovery'])

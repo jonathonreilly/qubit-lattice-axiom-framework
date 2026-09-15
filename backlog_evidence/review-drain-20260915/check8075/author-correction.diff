@@ -1,0 +1,87 @@
+--- 
++++ 
+@@ -1,10 +1,15 @@
+ #!/usr/bin/env python3
+ """Compact exact identities and saved-certificate binding; no oracle/full-node replay."""
++import os,sys
++if __name__=='__main__' and not (sys.flags.isolated and sys.dont_write_bytecode and sys.flags.no_site):
++ os.execv(sys.executable,[sys.executable,'-I','-B','-S',__file__,*sys.argv[1:]])
+ import argparse,hashlib,json
+ from pathlib import Path
+ from fractions import Fraction as F
+ ROOT=Path(__file__).resolve().parents[1]
+-V=ROOT/'.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification'
++V=ROOT/'outputs/native_rho4_moment_certificates_2026_09_09_inputs'
++AUDIT_TIMEOUT_SEC=30
++AUDIT_INPUT_PATHS=('outputs/native_rho4_moment_certificates_2026_09_09_inputs/RECOVERY_MANIFEST.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/SCALARS.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/recovery/SIXTY_SIXTH_SHA256.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/recovery/SIXTY_NINTH_SHA256.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/recovery/SIXTY_EIGHTH_SHA256.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/recovery/SIXTY_SEVENTH_SHA256.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/recovery/SIXTY_FIFTH_SHA256.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-full-node-saved-run-4f93/WORKER_COMPLETE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-full-node-saved-run-4f93/RESULT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-saved-run-3b86/WORKER_COMPLETE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-saved-run-3b86/RESULT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-root-review/REMOTE_PREREGISTRATION.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-root-review/POST_ACCEPTANCE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-root-review/ROOT_ACCEPTANCE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-root-review/ROOT.stderr', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-root-review/RECEIPT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-saved-root-review/REMOTE_PREREGISTRATION.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-saved-root-review/ROOT.stderr', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-saved-root-review/RECEIPT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-run-442f/WORKER_COMPLETE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-run-442f/RESULT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-full-node-saved-root-review/REMOTE_PREREGISTRATION.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-full-node-saved-root-review/ROOT.stderr', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-full-node-saved-root-review/RECEIPT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-run-3ac6/WORKER_COMPLETE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-nu-catalog-run-3ac6/RESULT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-root-review/REMOTE_PREREGISTRATION.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-root-review/POST_ACCEPTANCE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-root-review/ROOT_ACCEPTANCE.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-root-review/ROOT.stderr', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/evidence/native-rho4-two-moment-root-review/RECEIPT.json', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-saved-postcheck/run.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-saved-postcheck/check.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-full-node-saved-postcheck/run.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-full-node-saved-postcheck/check.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-runtime-design/run.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-runtime-design/interval.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-runtime-design/ROUNDING_LEDGER.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-runtime-design/interval_base.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-runtime-design/loader.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-runtime-design/compute.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-nu-catalog-supplier-design/DERIVATION.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-design/run.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-design/interval.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-design/interval_base.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-design/loader.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-design/compute.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/native-rho4-two-moment-design/DERIVATION.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-nu-catalog-supplier-cold-review/REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-rho4-dual-saved-cold-review/ROOT_ADDENDUM.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-rho4-dual-saved-cold-review/REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-nu-runtime-cold-review/REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-rho4-two-moment-runtime-cold-review/ROOT_ADDENDUM.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-rho4-two-moment-runtime-cold-review/REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-rho4-two-moment-cold-review/REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-nu-root-cold-review/REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-nu-full-node-saved-cold-review/ROOT_ADDENDUM.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/native-nu-full-node-saved-cold-review/REVIEW.md', 'docs/NATIVE_RHO4_MOMENT_CERTIFICATES_NOTE_2026-09-09.md', 'scripts/native_rho4_moment_certificates_2026_09_09.py', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/CANONICAL_AFFECTED_REVIEW.md', 'outputs/native_rho4_moment_certificates_2026_09_09_inputs/SOURCE_MANIFEST.json')
+ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+ def read(folder,name):return json.loads((V/'evidence'/folder/name).read_text())
+ def residual(x,t,q,m):
+@@ -78,4 +83,9 @@
+  p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');a=p.parse_args();r=run()
+  if a.json:print(json.dumps(r,indent=2))
+  else:print('TOTAL: PASS=%d FAIL=0'%r['checks']);print(json.dumps(r,sort_keys=True))
++ print('per_element: exact rational identities and saved endpoint/receipt bindings; no catalog recomputation.')
++ print('per_site: supplied torus measure and local analytic assumptions; no spatial solver executed.')
++ print('per_mode: three synthetic spectral atoms and finite moment identities; no physical mode reconstruction.')
++ print('per_block: six altered identity or saved-row alternatives are rejected under unchanged predicates.')
++ print('lattice_wide: native scalar containment additionally requires the reviewed analytic proof and authenticated original catalog; no physical selection or alpha is inferred.')
+ if __name__=='__main__':main()
+--- 
++++ 
+@@ -15,11 +15,11 @@
+ 
+ # Three certified native moments from an unchanged Green catalog
+ 
+-Claim type: bounded_theorem
++**Type:** bounded_theorem
+ 
+ **Status:** conditional-support. Under the supplied [native dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md), normalized torus measure and authenticated interval-input premises below, the exact saved intervals contain cminus=E[X^(-1/2)], mu=E[sqrt(X)] and nu=E[X^(3/2)]. The completed new cminus and mu intervals each have full width below 2e-28. The nu interval has full width below 2e-19. Each is also independently reconciled against all 1742 saved quadrature-node contributions. These are supplied-model scalar bounds, not a physical selection of that model.
+ 
+-Original source reviews and the [canonical source review](../.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/CANONICAL_ROOT_REVIEW.md) passed within the stated conditional scope. Integration and formal audit are **NOT RUN**. This note does not rerun an integral or saved-node checker. Its [compact runner](../scripts/native_rho4_moment_certificates_2026_09_09.py) checks saved endpoints, acceptance bindings and supporting exact identities. Hash checks and finite controls alone do not prove containment: the analytic argument, input enclosures and authenticated completed implementations are load-bearing.
++Original source reviews and the canonical source review (`outputs/native_rho4_moment_certificates_2026_09_09_inputs/reviews/CANONICAL_ROOT_REVIEW.md`) passed within the stated conditional scope. Integration and formal audit are **NOT RUN**. This note does not rerun an integral or saved-node checker. Its [compact runner](../scripts/native_rho4_moment_certificates_2026_09_09.py) checks saved endpoints, acceptance bindings and supporting exact identities. Hash checks and finite controls alone do not prove containment: the analytic argument, input enclosures and authenticated completed implementations are load-bearing.
+ 
+ ## Model, inputs and exact result
+ 
+@@ -27,7 +27,7 @@
+ 
+ The fixed catalog has 67 panels [a,2a], a=2^j, j=-64,...,2, and 26 Gauss nodes per panel. Accepted interval root brackets and positive mapped weights enclose the exact Gauss rule. The successful repaired input contract uses mapped-weight width<=1e-38, total upper weight<=9, node width<=2^-140 and A endpoint width<=1e-30. Endpoint monotonicity yields an A-at-node interval; its width is checked, not inferred from a bit label. The older failed tighter mapped-weight assumption is not used. A0=E[1/X]<=17/60 is an explicit inherited analytic bound. All physical scalar inputs are the same authenticated catalog; no old cache midpoint is silently recentered.
+ 
+-Authoritative rational endpoints are the three rows in the [local scalar records](../.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/SCALARS.json), mapped to byte-identical original RESULT files by the recovery manifest. Readable comparisons, checked as exact rational inequalities by the runner, are:
++Authoritative rational endpoints are the three rows in the local scalar records (`outputs/native_rho4_moment_certificates_2026_09_09_inputs/SCALARS.json`), mapped to byte-identical original RESULT files by the recovery manifest. Readable comparisons, checked as exact rational inequalities by the runner, are:
+ 
+ * 0.4553440516444301 < cminus < 0.4553440516444302; full width < 8e-31.
+ * 2.387 <= mu <= 2.389; full width < 3e-30.
+@@ -91,6 +91,31 @@
+ 
+ ## Source closure, recovery and remaining scope
+ 
+-The [recovery manifest](../.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/RECOVERY_MANIFEST.json) pins exact producer/checker arithmetic sources, reviews, results and accepted receipts. Checkpoints65–69 at the pinned remote commit retain full runtime/input/catalog and failure histories. The compact local bundle omits large raw catalogs and installed runtimes deliberately; it is sufficient for the stated compact identity/binding verifier, not a standalone full scientific replay. Reconstructing that larger replay requires the exact recovery paths and a separate execution contract.
++The recovery manifest (`outputs/native_rho4_moment_certificates_2026_09_09_inputs/RECOVERY_MANIFEST.json`) pins exact producer/checker arithmetic sources, reviews, results and accepted receipts. Checkpoints65–69 at the pinned remote commit retain full runtime/input/catalog and failure histories. The original compact bundle omitted large raw catalogs and installed runtimes. The current [scientific recovery](work_history/repo/review_feedback/pr8075-evidence/scientific-recovery/README.md) now preserves the exact required scientific source, catalog, saved-stage and checker payloads with their commit, Git mode/blob and decoded hashes. Installed/system runtime hashes remain external historical environment provenance. The compact verifier still does not replay the contractions; a larger replay requires a separately specified environment and execution contract.
+ 
+ Source review PASS is not integration PASS or an audit verdict. The canonical source is conditional on the stated native model and authenticated imported A catalog. The new intervals may support later covariance calculations, but an old cache centered at older scalar midpoints cannot obtain their precision merely by shrinking its radius. Such reuse needs explicit midpoint correction or rebuilding. This note supplies no such downstream claim.
++
++
++## Current evidence boundary and recovery
++
++The current compact runner preserves the original 269 mathematical and binding predicates and six rejected alternatives. Its current review execution budget is 30 seconds and 384 MiB with an external sampled process-tree watchdog; this does not assert that the earlier compact run recorded that budget. The current cache describes only the execution that actually produced it. Historical original run records and input hashes remain unchanged in the [original packet](work_history/repo/review_feedback/pr8075-evidence/README.md).
++
++The producer derivations and rounding ledger in the portable `outputs/native_rho4_moment_certificates_2026_09_09_inputs/sources/` directory are current supporting proof inputs owned by this claim. Historical source reviews and acceptances remain evidence of their original scope, not a new independent review or formal audit. Source-manifest changes relocate exact local copies and bind the relocated recovery manifest; no saved mathematical result is restamped.
++
++## No-Go Discipline Gate
++
++**N1 — Alternatives tested.** Exact controls reject a wrong geometric remainder sign, omitted subtraction and four malformed saved rows. Original saved-node reconstruction and analytical contour/tail estimates carry the numerical containment obligations.
++
++**N2 — Shared scope.** All three certificates use the supplied native dispersion and unchanged authenticated Green catalog. They do not exclude alternative physical models or quadrature methods.
++
++**N3 — Premises.** The linked dispersion and Green scalar results, normalized torus measure, elliptic identity and original directed-arithmetic input enclosures are load-bearing. No new framework axiom is asserted.
++
++**N4 — Provenance.** Original producer, postcheck, failed-attempt and review histories remain recoverable. The compact current run verifies exact bindings and identities; it does not repeat the physical contractions.
++
++**N5 — Coverage.** The 269 original compact predicates and six rejected alternatives cover the stated finite identities and saved bindings. They alone do not establish every catalog enclosure or analytical infinite-domain conclusion.
++
++**N6 — Remaining routes.** Other rigorous input catalogs, scalar contraction methods and physical embeddings remain open. Narrower saved endpoints cannot be substituted into an old centered approximation without midpoint correction.
++
++**N7 — Next obligation.** Downstream covariance, leakage and propagation arguments must import exact scalar intervals with the correct normalization and their separate mathematical premises.
++
++**N8 — Boundary.** These are conditional supplied-model scalar certificates. They establish no physical model selection, Gram-frame validity, node-alpha sign/value or retained audit grade.

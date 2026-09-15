@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8075-count-corrected-preexecution",
+  "tree": "a3e0fdedb07f4142b4423dc899b0c6729d5b068c",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_RHO4_MOMENT_CERTIFICATES_NOTE_2026-09-09.md",
+      "claim_id": "native_rho4_moment_certificates_note_2026-09-09",
+      "primary_runner": "scripts/native_rho4_moment_certificates_2026_09_09.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8075-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8075-evidence/scientific-recovery/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8752,
+      "misses": 4414
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4412
+    },
+    "declared_inputs": {
+      "hits": 8777,
+      "misses": 4545
+    }
+  },
+  "record_sha256": "f2f11ae97c0c9706b33ff6f2c0f80e73c9c08d2ae1b7aff157f4a50fce14d543",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

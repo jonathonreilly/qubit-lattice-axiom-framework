@@ -1,0 +1,81 @@
+{
+  "rows": [
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-cold-review/CONTROLS.json",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-cold-review/CONTROLS.json",
+      "sha256": "17f331cf0fa086febc39ea21cbed61edc2e88cbd4a079814c4947c2bca564d1d",
+      "bytes": 387
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-cold-review/FREEZE.json",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-cold-review/FREEZE.json",
+      "sha256": "b92ae36b4c37ee994e4d6153209dbe07d4210cc06d6b4c650bac033bca43979a",
+      "bytes": 348
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-cold-review/READ_HASHES.json",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-cold-review/READ_HASHES.json",
+      "sha256": "258e373f86d97c604a632fc1cdb4a57261a24b3560178e86fa99c2c1a7c2bfdf",
+      "bytes": 1131
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-cold-review/REVIEW.md",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-cold-review/REVIEW.md",
+      "sha256": "efcd5851d7c90973d5b4d1af7af583ec5c5776a0ef096c6e14ea27f331640ed1",
+      "bytes": 3186
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-cold-review/controls.py",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-cold-review/controls.py",
+      "sha256": "74521540a31e0cf4aeb8c2ddddcb89abd0fd32eacb85a6b97e21c5d0541ec5f1",
+      "bytes": 1358
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-design/DERIVATION.md",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-design/DERIVATION.md",
+      "sha256": "776d56bbd514528cbfc87faecfcf12406a0460abe1c66433568881a2076f0f1b",
+      "bytes": 5167
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-design/EXTENSION_FREEZE.json",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-design/EXTENSION_FREEZE.json",
+      "sha256": "63b0cd88826a66af6170e29faf73d06dad27b7b7c75c56a2c854cf0663b6a540",
+      "bytes": 441
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-design/FREEZE.json",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-design/FREEZE.json",
+      "sha256": "b04e84c31119395f4edb307580b347858575a6ab8b9c1b3d4fb05e2098023ed8",
+      "bytes": 979
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-design/PREDATA_BUDGET.json",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-design/PREDATA_BUDGET.json",
+      "sha256": "c6bf94293312a4c31b30d48d40315954969bb8f2f4417ff4ab176db7841b22ea",
+      "bytes": 783
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-design/REUSE_EXTENSION.md",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-design/REUSE_EXTENSION.md",
+      "sha256": "d41d08a35f13d0892562b0f64fba9fb401d3f80fbb40c9a50d26c02aec15f643",
+      "bytes": 2862
+    },
+    {
+      "original": "/private/tmp/toe-24h-probes-20260908/native-nu-catalog-supplier-design/plan.py",
+      "commit": "b72b1b31876138f5a78c0356688cdbef02faed75",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-action-and-twentyfour-posts-fresh-width-preregistration/native-nu-catalog-supplier-design/plan.py",
+      "sha256": "0e6b1b462e053e87255fde361b7f5cdd1d294e3412a168b8b9a927dcc4268cb8",
+      "bytes": 907
+    }
+  ]
+}

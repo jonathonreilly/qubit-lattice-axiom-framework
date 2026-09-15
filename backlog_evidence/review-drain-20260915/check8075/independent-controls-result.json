@@ -1,0 +1,20 @@
+{
+  "pass_count": 13,
+  "controls": [
+    "Laurent constant-term normalization through degree4",
+    "whole ellipse strict right cone",
+    "three Gauss polynomial-approximation radii",
+    "positive mixed-measure remainder q0 t7",
+    "positive mixed-measure remainder q0 t13",
+    "positive mixed-measure remainder q1 t7",
+    "positive mixed-measure remainder q1 t13",
+    "positive mixed-measure remainder q2 t7",
+    "positive mixed-measure remainder q2 t13",
+    "derivative envelope using pi>3",
+    "outward two-endpoint roundoff allowance",
+    "directed rounding -31/17",
+    "directed rounding 7/23"
+  ],
+  "elapsed_seconds": 0.00048758299089968204,
+  "scope": "Tiny synthetic measure and degree<=4 Laurent controls; no catalog, M0..M41 production, primary or saved-node replay."
+}

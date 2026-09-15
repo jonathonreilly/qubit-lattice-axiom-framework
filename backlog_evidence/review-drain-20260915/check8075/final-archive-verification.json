@@ -1,0 +1,8 @@
+{
+  "original_entries": 86,
+  "forensic_rows": 5112,
+  "unique_forensic_objects": 4769,
+  "all_decoded_hashes_equal": true,
+  "current_math_function_AST_unchanged": true,
+  "source_tree": "b8af3e77a6bde4547714617bd8c504a5536997d5"
+}

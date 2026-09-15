@@ -1,0 +1,22 @@
+{
+  "tree": "0de220a0e9b5afb4f47f6dcb4784837817b62ba6",
+  "status": "source_pass_and_final_cache_preflight_ok",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8075-final.json",
+      "sha256": "2c6b9ce8fb7694f2f9b2b3e7ca2984e4a680a08afcad1770fe428f8c34bbe128"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8075-unit-v1-final.json",
+      "sha256": "0ea7d5d33e1f08987dedcba611b0a70ae9cb74ee0a7386535325ec7a0ad82dd1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8075-final-preflight.json",
+      "sha256": "f764f6e5bcd7e4f219b4591cd94b91568a7a2942aa7eaa52f5fa106225cf4dd1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8075.md",
+      "sha256": "1068620e1842b52940d221a900fceef63fc771f9d548f522bebe99c2686aad5c"
+    }
+  ]
+}

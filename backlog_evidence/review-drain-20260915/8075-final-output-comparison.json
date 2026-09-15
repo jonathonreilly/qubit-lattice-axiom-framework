@@ -1,0 +1,7 @@
+{
+  "original_payload_equal_except_historical_check_count": true,
+  "first_successful_capture_payload_exactly_equal": true,
+  "passed": 270,
+  "physical_oracle_calls": 0,
+  "full_node_replays": 0
+}

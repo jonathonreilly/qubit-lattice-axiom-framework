@@ -1,0 +1,32 @@
+{
+  "original_final_manifest_keys": 61,
+  "historical_executed_manifest_keys": 60,
+  "one_added_hash_predicate": ".claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/reviews/CANONICAL_AFFECTED_REVIEW.md",
+  "current_successful_primary_count": 270,
+  "current_primary_exit_code": 0,
+  "mathematical_payload_other_than_check_count_exactly_equal": true,
+  "reviewer_missed_count_boundary": "Prior independent report repeated historical269 count despite exact final original61-key manifest. Corrected here with actual successful270execution, not relabeled as science failure.",
+  "disposition": "Preserve successful270receipt and firstcache; author narrow currentcount prose+note pin correction, then new boundedcapture because ownnote isruntimebound. No mathematical target or predicate changes.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8075/original-8075/.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/SOURCE_MANIFEST.json",
+      "sha256": "d37f28baf3f1138bb877c3e025c7bcf7922a82b8b7c8f7866a094a5fbc5678b2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8075/original-8075/.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/history-before-delivery/SOURCE_MANIFEST.json",
+      "sha256": "c796bc6fe6cb7d853c3f72390e00477238566e8f22fe51d9f3b2749fbbdee441"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8075/original-8075/.claude/science/physics-loops/native-rho4-moment-certificates-20260909/verification/OUTPUT_CURRENT.json",
+      "sha256": "01bcb95de2ad0f6b9fcb4fdece39a57bec889c7dc2885ed5fea021aa73b18d97"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8075-author-final-execution.json",
+      "sha256": "4c343367f2ae5be9e3625a686cb79e14e7089ab19e8e38e78d7d24a3a944b907"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8075-author-capture.log",
+      "sha256": "f1f7a07ef856a648534480cfda05bad5eea278038c9b08684e53778a53f2fb38"
+    }
+  ]
+}

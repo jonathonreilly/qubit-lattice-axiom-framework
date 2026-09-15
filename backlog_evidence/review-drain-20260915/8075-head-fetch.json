@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "64e92035cfd405932bef30bda1ddf6a365430ffe",
+  "fetched_ref": "refs/review-loop/fetched/8075-d6b85411e2f942548fe5fb707f3223d3",
+  "metadata": {
+    "baseRefName": "codex/native-compression-action-boundary-20260909",
+    "headRefName": "codex/native-rho4-moment-certificates-20260909",
+    "headRefOid": "64e92035cfd405932bef30bda1ddf6a365430ffe",
+    "isDraft": false,
+    "number": 8075,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

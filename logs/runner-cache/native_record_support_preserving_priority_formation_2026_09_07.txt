@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_record_support_preserving_priority_formation_2026_09_07.py
+runner_sha256: 80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+PASS: 72 exact assertions
+per_element: enumerated all six adverse center outcomes and 55987 ordered neighbor menus; checked positive-odds exterior repair
+per_site: checked all four sites of the open square and every recorded site after both exterior-repair appends
+per_mode: checked and not executed — no spectral-mode claim belongs to this classical formation test
+per_block: normalized all 24 orders on 1296 configurations for each of two rules; verified exact TV and differing-count discriminator
+lattice_wide: checked and not executed — infinite-lattice existence follows from the written factorial ancestor proof, not finite enumeration
+source_sha256: 80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6
+TOTAL: PASS=72 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py
+runner_sha256: ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+TOTAL: PASS=25 FAIL=0; geometry7, positive LDL pivots17 and determinant1.
+per_element: Actual32edge22face slab, adapted15edge gauge tree and17SU3chords.
+per_site: Sourceholonomies are literal separate chordvariables after treegauge.
+per_mode: Exact17 rational positive Hessian pivots; eight trace-orthonormal Lie colors.
+per_block: Nonlinear localization and HS proof are analytical; no Gaussian proxy substitution.
+lattice_wide: Supplied finite cube only; no physicalbeta selection or thermodynamicgap claim. Source SHA ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5
+Resources: 0.016436s; 20.328 MiB; limits180s/180MiB.
+
+----- stderr -----
+

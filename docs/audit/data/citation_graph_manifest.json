@@ -1,6 +1,6 @@
 {
- "edge_count": 13372,
- "node_count": 5803,
+ "edge_count": 13377,
+ "node_count": 5814,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5385,6 +5385,10 @@
   "fm_transfer_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "formation_order_covariance_and_isotropic_binary_order_blind_classification_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "8a36f31932c1",
+   "out_degree": 5
   },
   "formation_weight_energy_dictionary_underdetermination_bounded_theorem_note_2026-08-13": {
    "deps_hash": "35b37fce2461",
@@ -22183,6 +22187,46 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8095-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-approach_registry-eca75a325166a0da": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-assumptions_and_imports-04947ad72d106df1": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-claim_status_certificate-4a3d4f79e164376b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-goal-525566f7a8b7cb8d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-opportunity_queue-ccb74c0b7866140d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-route_portfolio-026cc4e1e794b8fa": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.kept.pr8096-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8096-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

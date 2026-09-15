@@ -1,0 +1,159 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "live_register_derivative_cases": 800,
+  "maximum_identity_error": 4.440892098500626e-16,
+  "omitted_matching_sign_gap": 2.7639825131430777,
+  "block_schur_checks": [
+    {
+      "footprint_size": 1,
+      "starts": 2,
+      "ends": 1,
+      "norm": 0.7178508890704867,
+      "bound": 1.0
+    },
+    {
+      "footprint_size": 2,
+      "starts": 2,
+      "ends": 1,
+      "norm": 1.4819291684744786,
+      "bound": 2.8284271247461903
+    },
+    {
+      "footprint_size": 3,
+      "starts": 1,
+      "ends": 2,
+      "norm": 2.0975151403283805,
+      "bound": 5.196152422706632
+    },
+    {
+      "footprint_size": 4,
+      "starts": 0,
+      "ends": 2,
+      "norm": 2.3790141787381947,
+      "bound": 4.0
+    }
+  ],
+  "source_checks": [
+    {
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "degrees": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_distributions": 35,
+      "maximum_value": 2.629927196668624e-07,
+      "bound": 0.00044909890625264453,
+      "ratio": 0.0005856008910404994
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "degrees": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "source_distributions": 35,
+      "maximum_value": 1.3434664314300434e-07,
+      "bound": 0.00045814350969179625,
+      "ratio": 0.00029324139773011834
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "degrees": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "source_distributions": 35,
+      "maximum_value": 9.879777705775274e-09,
+      "bound": 0.0005724093368619632,
+      "ratio": 1.7259986987524955e-05
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "degrees": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "source_distributions": 35,
+      "maximum_value": 6.403607293326769e-08,
+      "bound": 0.0004673702664388999,
+      "ratio": 0.00013701357902201774
+    },
+    {
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "degrees": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_distributions": 35,
+      "maximum_value": 4.3987766696694044e-08,
+      "bound": 0.0003239563824596738,
+      "ratio": 0.00013578299140986873
+    }
+  ],
+  "limitations": [
+    "generic finite component labels and Gram matrix",
+    "shared parity and composition helpers",
+    "complete resource sum for a prescribed derivative graph only",
+    "no all-graph or physical activity-one convergence"
+  ]
+}

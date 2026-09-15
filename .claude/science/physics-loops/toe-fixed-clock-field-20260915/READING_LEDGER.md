@@ -191,3 +191,18 @@ by convex combinations of partition matrices. Our finite determinant weight
 is globally smooth, block-factorizing at partition values, and evaluated
 for stability only on those PSD forest matrices. The paper supplies no
 all-order convergence theorem for the present massless two-defect law.
+
+
+At about 18:00 UTC, fetched immutable main 2ed54cb83a4cb6b336e7053e19c8010d5d2930d8.
+A scoped path comparison finds no changed clock/Villain/Gaussian, foundation
+or SCIENCE_WORKFLOW source against b64cd9c. Seven older native notes and
+review-evidence archives were integrated. Read the full formation-order
+classification note and full NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION
+note; the latter's bounded-degree decreasing-ancestor proof is supplied-law
+existence, not a law selector. Read the possibility-soldering note through
+its main proofs and no-go section; the final evidence appendix was truncated
+and is not claimed read. A combined NN-formation two-model note read was
+also truncated: only visible passages, not its full text, were inspected.
+Re-read the complete current minimal axioms and realized-state primitive.
+Discrete HLS and loop-vertex literature queries were routing only; no new
+analytic result from those queries is imported.

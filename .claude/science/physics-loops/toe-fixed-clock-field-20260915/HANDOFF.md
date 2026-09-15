@@ -287,3 +287,31 @@ A non-PSD cube matrix with determinant -1 rejects an unrestricted positivity
 claim. The initial integer-array casting failure is frozen. Source bounds
 remain restricted to the defined loop family; no new physical pressure
 identity, all-order convergence, independent audit or axiom update.
+
+
+## Block2: complete prescribed-contact derivative source bound
+
+Cofactor permutation signs factor into local footprint signs once derivative
+resources are assigned. The resulting one-sided CAR maps do not commute,
+but every cyclic vertex order gives a different local-contraction realization
+of the SAME scalar coefficient. Scalar three-lines interpolation therefore
+retains the source bound. Local contact registers then sum every assigned
+resource: a register stores its resource only between its endpoints, where
+all cofactor inversion signs can be evaluated. Block row/column counts give
+vertex norm |A_i|^(d_i/2), with no lattice-volume factor. One exponential
+footprint reserve absorbs these degrees with product sqrt(d_i!).
+
+The full derivative for one prescribed graph E has four-source bound
+(2epsilon)^(-|E|) product sqrt(d_i!) rho^(l-2) Tr|L|^4 J^2. Epsilon=log2
+changes the boost to 4^|A|, still within the same x>=32768 moment range.
+This sums all contact locations, not all graphs. The finite local-sign and
+complete determinant-jet checks pass; false commutation and omitted inversion
+signs are rejected. There is no independent review.
+
+Main refresh at 2ed54cb83a4cb6b336e7053e19c8010d5d2930d8 changes no clock,
+Villain, Gaussian, axiom, premise or SCIENCE_WORKFLOW source. Seven older
+native notes were integrated, plus archived review evidence; the latter was
+not read or treated as scientific authority. The full formation-order
+classification and full existing priority-formation theorem were read. The
+new frontier assessment preserves a possible sharper Fourier energy route
+and motivates testing an actual full-domain global formation model pair.

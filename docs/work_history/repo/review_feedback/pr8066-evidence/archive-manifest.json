@@ -1,0 +1,1840 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "079b99a473ea26fb0729dd0878590c56cd1d9359",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 207,
+      "raw_sha256": "8b7d0ba72be2b42e1dc8214d12a196f0720545aa0bf25bcc41e629b7dd3f71f2",
+      "stored_path": "_objects/8b7d0ba72be2b42e1dc8214d12a196f0720545aa0bf25bcc41e629b7dd3f71f2.gz",
+      "stored_sha256": "db9850d7d231a0da96e56514fcbcd99003d9cc3a0e51d3f8d9a4c8d0cb9409c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4547870881787d1764ab7f46bacbba8ac0fce3ae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 448,
+      "raw_sha256": "d712c7f630d0789f6ad0c7002b5243e97dacdc9ee064c77d5a519c4dfb830396",
+      "stored_path": "_objects/d712c7f630d0789f6ad0c7002b5243e97dacdc9ee064c77d5a519c4dfb830396.gz",
+      "stored_sha256": "724f2b40330aa43b500cb347459809b50c3d802f3c79789fe12cae8b493ff92d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ed820bf0314fb7ee407abed185030e4e96fd4c2c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 521,
+      "raw_sha256": "86fe4b6946ff330c5fb5fef05907369535329b5bf46942e54bd2ff2fa9d0c02f",
+      "stored_path": "_objects/86fe4b6946ff330c5fb5fef05907369535329b5bf46942e54bd2ff2fa9d0c02f.gz",
+      "stored_sha256": "d85f54dc8b7af933be21f09f7b9a58a782f71d41cee633351bfbe51858b85589"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3178a0bc4c76269d7570ae23671c2e8f1e42a924",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/PORT_DIFFS.json",
+      "raw_bytes": 1217,
+      "raw_sha256": "62c91aa0b05c3809e07dfa32b8cb780ee423e97d1c8cc6971ada5ac2ee815887",
+      "stored_path": "_objects/62c91aa0b05c3809e07dfa32b8cb780ee423e97d1c8cc6971ada5ac2ee815887.gz",
+      "stored_sha256": "cedf4148888775453105f0363a57bc188515124555d9c2504e6ef365f1c20273"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "edf61f261eb2563f7b4ff35d197dc29861d13c6d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_COMPARISON_NOTE.json",
+      "raw_bytes": 246,
+      "raw_sha256": "93ca133f7f09b52a2f65345fed7788910540f571ad91d32a8913f50d03faf202",
+      "stored_path": "_objects/93ca133f7f09b52a2f65345fed7788910540f571ad91d32a8913f50d03faf202.gz",
+      "stored_sha256": "763a0d08bc5502c08f6a5a4c9d703aa13c14f853267b6dc8a749eeb617fd1d80"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ffc89bd96f951c0eeedfe4f1103fa1d2ba4ab0f6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_CONFIRMATION.md",
+      "raw_bytes": 2890,
+      "raw_sha256": "3c7721a6a08beb0df7017d6cbc49378b0c9f3329f08e8d0bbc6911c9e59a5005",
+      "stored_path": "_objects/3c7721a6a08beb0df7017d6cbc49378b0c9f3329f08e8d0bbc6911c9e59a5005.gz",
+      "stored_sha256": "fb9060b85cbd43787de7e2e075147664b821c5c0ba908d07f31f1a22954db962"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "43e020c5431966347e238b24441f42acab7375d5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_READ_HASHES.json",
+      "raw_bytes": 4159,
+      "raw_sha256": "0ed90f06c7b09b41f123f7f177b82ca8a781196cfbe341db6147ab1845a47fd9",
+      "stored_path": "_objects/0ed90f06c7b09b41f123f7f177b82ca8a781196cfbe341db6147ab1845a47fd9.gz",
+      "stored_sha256": "ceb0f7e8f65a3a924de0d490535864a1769d4d4262a065f584aa1fc1cd4303bc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5935746c75873f51fb68cbb6761381a68acca76d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/READ_HASHES.json",
+      "raw_bytes": 5814,
+      "raw_sha256": "a8a1940e2ce0c599c8540d6272ec936adffbe17aea3bc3420f0cccb282dada73",
+      "stored_path": "_objects/a8a1940e2ce0c599c8540d6272ec936adffbe17aea3bc3420f0cccb282dada73.gz",
+      "stored_sha256": "7d8c051cb365d46fef160d74a1691e7154e25250f8f476726d9e1585b54dd171"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "49713ffcad0c31549b24d443324c4df73026f73f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/REVIEW.md",
+      "raw_bytes": 4876,
+      "raw_sha256": "6cf94d32506ed843832487e0d26d98346a51cb7dce250f67ce37bbf2be988bc4",
+      "stored_path": "_objects/6cf94d32506ed843832487e0d26d98346a51cb7dce250f67ce37bbf2be988bc4.gz",
+      "stored_sha256": "e8a9c28b2a41c37e9c5dbb063f769403e86f5b8ef7c8bf3a48bc5fb53f20dfc5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6cc4d428600cac3cce909d2b5d1cee8d6a31786c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/ROOT.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "d28dc280fb9e2a63b3cf3664d775bd5fa9b60e92ed27e20aca65e77b90986ec5",
+      "stored_path": "_objects/d28dc280fb9e2a63b3cf3664d775bd5fa9b60e92ed27e20aca65e77b90986ec5.gz",
+      "stored_sha256": "214e2286b56e95ba12326337533c70cfefd8ab4bb21e62dac31fc19a9c3107e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6d4abd4e1beba53d90e05d718e2db3e61dc36b5c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/ROOT.stdout",
+      "raw_bytes": 3935,
+      "raw_sha256": "b5b38916ebe498f46c6b51693a104d11c3dfa9cc4156bff9851fb5593b2cdd1f",
+      "stored_path": "_objects/b5b38916ebe498f46c6b51693a104d11c3dfa9cc4156bff9851fb5593b2cdd1f.gz",
+      "stored_sha256": "b58c38a116889abe6c86cd634826f10609103b01091cd5704304942ccc8e8ee4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1aa54b8c04ccfd06cf9ac428147b64a1d6e17f12",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "raw_bytes": 13485,
+      "raw_sha256": "08647551c23035a8407c20ce4936592bf2430ae06136f2b9ab520b22f4ee0875",
+      "stored_path": "_objects/08647551c23035a8407c20ce4936592bf2430ae06136f2b9ab520b22f4ee0875.gz",
+      "stored_sha256": "df0b8276ab7036bf7d155951b1462a06f74c75625784cc14113a28135b2122d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1aa54b8c04ccfd06cf9ac428147b64a1d6e17f12",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "raw_bytes": 13485,
+      "raw_sha256": "08647551c23035a8407c20ce4936592bf2430ae06136f2b9ab520b22f4ee0875",
+      "stored_path": "_objects/08647551c23035a8407c20ce4936592bf2430ae06136f2b9ab520b22f4ee0875.gz",
+      "stored_sha256": "df0b8276ab7036bf7d155951b1462a06f74c75625784cc14113a28135b2122d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0db50d06092025c38a80421c890da054c1ef1bb7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "raw_bytes": 9335,
+      "raw_sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
+      "stored_path": "_objects/1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc.gz",
+      "stored_sha256": "fad8e9b4b5a5852c9017c66c7d2522013c319058fbb10d694ae6176f0418fa24"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0db50d06092025c38a80421c890da054c1ef1bb7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "raw_bytes": 9335,
+      "raw_sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
+      "stored_path": "_objects/1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc.gz",
+      "stored_sha256": "fad8e9b4b5a5852c9017c66c7d2522013c319058fbb10d694ae6176f0418fa24"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d5058e2b62c22b3aeca65ecd4ba6d831fe5b4d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "raw_bytes": 47900,
+      "raw_sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+      "stored_path": "_objects/bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163.gz",
+      "stored_sha256": "29f13fc73c65f1cbe3e8ca89779ddcfb01ebbf65a680327c79d420606e0737dc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d5058e2b62c22b3aeca65ecd4ba6d831fe5b4d9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "raw_bytes": 47900,
+      "raw_sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
+      "stored_path": "_objects/bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163.gz",
+      "stored_sha256": "29f13fc73c65f1cbe3e8ca89779ddcfb01ebbf65a680327c79d420606e0737dc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f18243b8e7a1ff01e34a77a42574f879ca88b794",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "raw_bytes": 11529,
+      "raw_sha256": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
+      "stored_path": "_objects/b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7.gz",
+      "stored_sha256": "20fc1955d429ab3a1c8809ec26c32cecd3a1a11663a8d2f0fdeaf683d5bb72ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f18243b8e7a1ff01e34a77a42574f879ca88b794",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "raw_bytes": 11529,
+      "raw_sha256": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
+      "stored_path": "_objects/b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7.gz",
+      "stored_sha256": "20fc1955d429ab3a1c8809ec26c32cecd3a1a11663a8d2f0fdeaf683d5bb72ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a153c644fd67f28f8f28542f2b026e4263286bdf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_algebra_2026_09_09.py",
+      "raw_bytes": 1431,
+      "raw_sha256": "9e9a9c9bca590caf5fa2ad464cd53969bcb2f2161ca3ab16545e57a120f02927",
+      "stored_path": "_objects/9e9a9c9bca590caf5fa2ad464cd53969bcb2f2161ca3ab16545e57a120f02927.gz",
+      "stored_sha256": "ea394e2fd35d9dd6b9ea7a36bf88a47ce3589ffb991f2ab30a3f7057ca7da0fc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a153c644fd67f28f8f28542f2b026e4263286bdf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_algebra_2026_09_09.py",
+      "raw_bytes": 1431,
+      "raw_sha256": "9e9a9c9bca590caf5fa2ad464cd53969bcb2f2161ca3ab16545e57a120f02927",
+      "stored_path": "_objects/9e9a9c9bca590caf5fa2ad464cd53969bcb2f2161ca3ab16545e57a120f02927.gz",
+      "stored_sha256": "ea394e2fd35d9dd6b9ea7a36bf88a47ce3589ffb991f2ab30a3f7057ca7da0fc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bfc8f0ecedbe5d079a0dd311d1c5331cd6d2d40c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "raw_bytes": 1186,
+      "raw_sha256": "576bb04e562f18aef5730520a69dcc86deb131b860c7755b14034a0495f50ac3",
+      "stored_path": "_objects/576bb04e562f18aef5730520a69dcc86deb131b860c7755b14034a0495f50ac3.gz",
+      "stored_sha256": "546e20959c6e265ced37851cfb06bd682ecb860b86521f0e389f6d6f862da207"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bfc8f0ecedbe5d079a0dd311d1c5331cd6d2d40c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "raw_bytes": 1186,
+      "raw_sha256": "576bb04e562f18aef5730520a69dcc86deb131b860c7755b14034a0495f50ac3",
+      "stored_path": "_objects/576bb04e562f18aef5730520a69dcc86deb131b860c7755b14034a0495f50ac3.gz",
+      "stored_sha256": "546e20959c6e265ced37851cfb06bd682ecb860b86521f0e389f6d6f862da207"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c726ca6bde2008f02d8280a529d57b91b778af99",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+      "raw_bytes": 1525,
+      "raw_sha256": "7626f4395f053eccc0bc5bdc39fd9f63d145e920a3f7bfa4db22cff3c4cbfd7d",
+      "stored_path": "_objects/7626f4395f053eccc0bc5bdc39fd9f63d145e920a3f7bfa4db22cff3c4cbfd7d.gz",
+      "stored_sha256": "0fed136be0973774a30bbbb053ca788fc1e4e0348dbf1938ed252bb382e10838"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c726ca6bde2008f02d8280a529d57b91b778af99",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+      "raw_bytes": 1525,
+      "raw_sha256": "7626f4395f053eccc0bc5bdc39fd9f63d145e920a3f7bfa4db22cff3c4cbfd7d",
+      "stored_path": "_objects/7626f4395f053eccc0bc5bdc39fd9f63d145e920a3f7bfa4db22cff3c4cbfd7d.gz",
+      "stored_sha256": "0fed136be0973774a30bbbb053ca788fc1e4e0348dbf1938ed252bb382e10838"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "043fbe5de88516fdac6fff57597862e94e99def2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "raw_bytes": 2309,
+      "raw_sha256": "e10c65efef73274e6c70ac67e2fbf0b6fb00b307dee1eb0694f3677c0fec644d",
+      "stored_path": "_objects/e10c65efef73274e6c70ac67e2fbf0b6fb00b307dee1eb0694f3677c0fec644d.gz",
+      "stored_sha256": "a67f7a7d9ac3ef1a99e5467960497139ee3a82f73d46530ed1a3467250599d83"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "043fbe5de88516fdac6fff57597862e94e99def2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "raw_bytes": 2309,
+      "raw_sha256": "e10c65efef73274e6c70ac67e2fbf0b6fb00b307dee1eb0694f3677c0fec644d",
+      "stored_path": "_objects/e10c65efef73274e6c70ac67e2fbf0b6fb00b307dee1eb0694f3677c0fec644d.gz",
+      "stored_sha256": "a67f7a7d9ac3ef1a99e5467960497139ee3a82f73d46530ed1a3467250599d83"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c83343839865c48da46288d6e617a9bdef3d63f2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_shift_2026_09_09.py",
+      "raw_bytes": 1813,
+      "raw_sha256": "e2daf53b9b861f7b693c98a99247b6ad7e90c70894619150bd82e96daf647c65",
+      "stored_path": "_objects/e2daf53b9b861f7b693c98a99247b6ad7e90c70894619150bd82e96daf647c65.gz",
+      "stored_sha256": "fc60f1cf08bb572ba7c01e7eff50714ee6555fc8d419db1ddb31f71ca7cad50e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c83343839865c48da46288d6e617a9bdef3d63f2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_shift_2026_09_09.py",
+      "raw_bytes": 1813,
+      "raw_sha256": "e2daf53b9b861f7b693c98a99247b6ad7e90c70894619150bd82e96daf647c65",
+      "stored_path": "_objects/e2daf53b9b861f7b693c98a99247b6ad7e90c70894619150bd82e96daf647c65.gz",
+      "stored_sha256": "fc60f1cf08bb572ba7c01e7eff50714ee6555fc8d419db1ddb31f71ca7cad50e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "50bfbce47971fcdc21152abfc11c6dcd6988a777",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_REVIEW.md",
+      "raw_bytes": 2645,
+      "raw_sha256": "d98d05c4f15458ce229549551a7d757a7745c7048a4090c98a310599c1fcb200",
+      "stored_path": "_objects/d98d05c4f15458ce229549551a7d757a7745c7048a4090c98a310599c1fcb200.gz",
+      "stored_sha256": "dff519455288d51bb6daf50cf2cea20d4a9d51ece207b125510d429dcaba572c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4a050b6f34d7b34122ed254605bca54d5126b63b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/GOAL.md",
+      "raw_bytes": 217,
+      "raw_sha256": "ea2b7016f42fe671e9a2d8df720a029daa0933c482c900d263353a8e42c283b5",
+      "stored_path": "_objects/ea2b7016f42fe671e9a2d8df720a029daa0933c482c900d263353a8e42c283b5.gz",
+      "stored_sha256": "1d5d93a060f30aa2e2551919cc13d17371e7baaa66508a2f31c4b6c66cf19acf"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "42a6721d6c0baad85437518aca8d0a2fa014091b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/HANDOFF.md",
+      "raw_bytes": 1110,
+      "raw_sha256": "a70932b90215014f2e4f8fda735e3469a949898772ca7acac299d4ebd6d46b50",
+      "stored_path": "kept/pr8066-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "a70932b90215014f2e4f8fda735e3469a949898772ca7acac299d4ebd6d46b50"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b2af1fe9da4dbfef0e6929e43f8d501ce1a8ac48",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 263,
+      "raw_sha256": "a43916c7b85710c7999cf9f8ba268162ce01bc158c4acf4cfda7fb766d40bfef",
+      "stored_path": "_objects/a43916c7b85710c7999cf9f8ba268162ce01bc158c4acf4cfda7fb766d40bfef.gz",
+      "stored_sha256": "a6a0309ee23a5da71bde468e8c03bf18f0ebb03238e2771b10320597eb43e6bf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9718bf53db7a330e054e85a2d407c867e7bf406e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 343,
+      "raw_sha256": "d12fb592fca13e559e9b42672d8e7caddfde1f1327c5eadf6af6e6575c9dc79c",
+      "stored_path": "_objects/d12fb592fca13e559e9b42672d8e7caddfde1f1327c5eadf6af6e6575c9dc79c.gz",
+      "stored_sha256": "8c872e34e04031254f56b5e79d3e14b474e85b3cd37c7f51a66e9c220bba8779"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5014f76ed0d365c07eea0f6f24fdfc8306443a09",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 205,
+      "raw_sha256": "150c2c4308372d79f8890002a713b54a3edb7199b7945c502349e249ba46b3ce",
+      "stored_path": "_objects/150c2c4308372d79f8890002a713b54a3edb7199b7945c502349e249ba46b3ce.gz",
+      "stored_sha256": "b44c3827512e7011e44ebfb0edfcc256a4338857faaa9408c828b136aafb181f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6e4072384b0081cf6d2cd3d61f24e1f7f87859fc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ORIGINAL_EVIDENCE_HASHES.json",
+      "raw_bytes": 5791,
+      "raw_sha256": "8d00e0cae82a1ae4e0517db1c33cbb45731240ff9920dd49aeb8b0caab270d08",
+      "stored_path": "_objects/8d00e0cae82a1ae4e0517db1c33cbb45731240ff9920dd49aeb8b0caab270d08.gz",
+      "stored_sha256": "b935fd22015c5c20a7787a5debf2c5aef445f161745a6a0282bc6862ff8805f5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "587c5a911ea4be787087742024217e81165a1c84",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/AUTHOR_PACKAGE_BUILD.py.txt",
+      "raw_bytes": 7673,
+      "raw_sha256": "c7665966769962469a878f2f57ee4edde3425d1034cf330702781aaf90091047",
+      "stored_path": "_objects/c7665966769962469a878f2f57ee4edde3425d1034cf330702781aaf90091047.gz",
+      "stored_sha256": "0aab7002b96c3d4baabd8f46394d8689814930eeab24637fd91ab22d8fd309d0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5193f7e1c079c2d77a5bc80f0ecdeed50b5675ea",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+      "raw_bytes": 1259,
+      "raw_sha256": "a2d9de6486b6e1e2b5ec52282d7580115fd67c440ad1565054a8555d0a583d41",
+      "stored_path": "_objects/a2d9de6486b6e1e2b5ec52282d7580115fd67c440ad1565054a8555d0a583d41.gz",
+      "stored_sha256": "d89a4cacbd9a013c308372f0e3552d70a3715b8e50405f89ac14db542b238016"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "154788a8f2e06a0f73cde3cfd50f2c94d9fe2009",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+      "raw_bytes": 28201,
+      "raw_sha256": "35378808581ff4f0685d64ca7fd939cb91c85b9c993ac5c7630565bc78854612",
+      "stored_path": "_objects/35378808581ff4f0685d64ca7fd939cb91c85b9c993ac5c7630565bc78854612.gz",
+      "stored_sha256": "a3ca6e2c27c1397cbdf35abeed14839132ea073adddb98e45272ae90fb71cf9d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b43b0e6e92dab8ee452d47c126dcef512ddf9edb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stdout",
+      "raw_bytes": 3935,
+      "raw_sha256": "9e10bd581c7d1a31c4224f1f9920d51da929f2d5c8e61cb33cb7b7e506632eec",
+      "stored_path": "_objects/9e10bd581c7d1a31c4224f1f9920d51da929f2d5c8e61cb33cb7b7e506632eec.gz",
+      "stored_sha256": "dc7469af5fb198e170b9073920eeb4ea8d70b5e52b61d9bb19021b393a00790f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b43b0e6e92dab8ee452d47c126dcef512ddf9edb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/outputs/native_infinite_star_node_reduction_2026_09_09.json",
+      "raw_bytes": 3935,
+      "raw_sha256": "9e10bd581c7d1a31c4224f1f9920d51da929f2d5c8e61cb33cb7b7e506632eec",
+      "stored_path": "_objects/9e10bd581c7d1a31c4224f1f9920d51da929f2d5c8e61cb33cb7b7e506632eec.gz",
+      "stored_sha256": "dc7469af5fb198e170b9073920eeb4ea8d70b5e52b61d9bb19021b393a00790f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d49733ab3e8d2a865f5de7ce23c3079cf87298ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip",
+      "raw_bytes": 53310,
+      "raw_sha256": "1d6071dbf7f6530b720f99f363a6fb6074ccdaeff0233f7209c6270f6514dc1e",
+      "stored_path": "_objects/1d6071dbf7f6530b720f99f363a6fb6074ccdaeff0233f7209c6270f6514dc1e.gz",
+      "stored_sha256": "48b2981c9596e24b8b20e9b4365aba9efd82dca1ba0fa10024d774d067e0e90a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7da14d066b80f206689788c99f5853806a015a4e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+      "raw_bytes": 1468,
+      "raw_sha256": "841a7f17987a517a7c76d0fd12d1cd96a73628e53a1f00065e7fea34549bfd7b",
+      "stored_path": "_objects/841a7f17987a517a7c76d0fd12d1cd96a73628e53a1f00065e7fea34549bfd7b.gz",
+      "stored_sha256": "7fe5d0e30279205a9dfd177330fdb9788489e8a98c0e004e2054f5466316298d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9f35d82c3bf08fb5207c25cd76e8e4fd443fba18",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/drop_reflection.stderr",
+      "raw_bytes": 1596,
+      "raw_sha256": "eda4e69a78185044ab1ec9041c9ab65706b141e219c3402c6e79212cd828cfa3",
+      "stored_path": "_objects/eda4e69a78185044ab1ec9041c9ab65706b141e219c3402c6e79212cd828cfa3.gz",
+      "stored_sha256": "bbe75cc4791c66454859a3aa701b94e86d7ad4b61d9724bd9806220fbdd81e03"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f71f146bbaeaf416ed8a573b1953f70bf3893fc7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/drop_reflection.txt",
+      "raw_bytes": 1422,
+      "raw_sha256": "201628141a211dd2149570441d143dbf6559e2cfecd82ab8525720b863ad439b",
+      "stored_path": "_objects/201628141a211dd2149570441d143dbf6559e2cfecd82ab8525720b863ad439b.gz",
+      "stored_sha256": "c7d683e55680ee4be2eb6ed20169aedf2ad00d1a793a27171d5c1dd1cb816719"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6c6a95d29096bbf1f904da9c607f36f098e77123",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_energy_factor.stderr",
+      "raw_bytes": 1181,
+      "raw_sha256": "7d6d71d8524f00646ebf55e5bcf273dab6b51172b2a1ae72d4e84ff4d262d4d6",
+      "stored_path": "_objects/7d6d71d8524f00646ebf55e5bcf273dab6b51172b2a1ae72d4e84ff4d262d4d6.gz",
+      "stored_sha256": "0475d4ad95041a38f1410a1f7d687f4885985f4662da5224d912938b588ce76e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0a97301c5cfe789caff96f996077654f9cc4f38d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_energy_factor.txt",
+      "raw_bytes": 1186,
+      "raw_sha256": "f4158b6e5d850db2257a8579e69ff779c2ed2c73b43b85957b8291238fa64e69",
+      "stored_path": "_objects/f4158b6e5d850db2257a8579e69ff779c2ed2c73b43b85957b8291238fa64e69.gz",
+      "stored_sha256": "fb32fbb481c70c4f7daff91e8fe45904a85a3b82ce37cf448fc8fb7644c88940"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f22c367832a84095220220854129d6186ccc4548",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_soft_shift.stderr",
+      "raw_bytes": 1203,
+      "raw_sha256": "d8873c443969a45562656977d07d8a67f4a4c179c48a86a69da2fa6de39b7d01",
+      "stored_path": "_objects/d8873c443969a45562656977d07d8a67f4a4c179c48a86a69da2fa6de39b7d01.gz",
+      "stored_sha256": "d19522e77d1087fa2e439cca595dc7f7d8407dba5f3692507081f8166655437c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f08d9feec91ba99803d9ed1ceccc9350fe0078d3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_soft_shift.txt",
+      "raw_bytes": 1800,
+      "raw_sha256": "0e77a245d517a8a423a65bb1fdaf1b6962c2d8760971a865e6cb3c16d88b66c1",
+      "stored_path": "_objects/0e77a245d517a8a423a65bb1fdaf1b6962c2d8760971a865e6cb3c16d88b66c1.gz",
+      "stored_sha256": "84788475a9b8627e49285ea62b678542d8b1212223247bff1f20c1cc83df440c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "075dc381d5e840ef99c6ef964b0f632541a6ecef",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PR_BACKLOG.md",
+      "raw_bytes": 170,
+      "raw_sha256": "81339e513ee6cfb3312c6120d9bda885ee905937f320044bed4ddb2700cc55ba",
+      "stored_path": "_objects/81339e513ee6cfb3312c6120d9bda885ee905937f320044bed4ddb2700cc55ba.gz",
+      "stored_sha256": "76e7cafa9c4b8c6e1abc6cb0e7cc8ce410f5e5b7a0e50a288774b0d0d2f6808f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a75e1685e32b4bcf13b343f2cd024b47ad3e889",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/CONTROLS.json",
+      "raw_bytes": 537,
+      "raw_sha256": "9c08a363c9d95d1ca317603abce8e4088a0cbca1ad2b154702ca43808136973b",
+      "stored_path": "_objects/9c08a363c9d95d1ca317603abce8e4088a0cbca1ad2b154702ca43808136973b.gz",
+      "stored_sha256": "6038392be032cdf854b8705d743938eedb4c5ee947c8ebc07c084129a94cd0b2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2900575549ac0e0c7f3d5e62ac98c381d0c529f8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/ROOT.stderr",
+      "raw_bytes": 753,
+      "raw_sha256": "90c81a4d6c17b825eb1d05aaf838e4171ace42fd1c0cce65eb0e7aacf8e96ba0",
+      "stored_path": "_objects/90c81a4d6c17b825eb1d05aaf838e4171ace42fd1c0cce65eb0e7aacf8e96ba0.gz",
+      "stored_sha256": "949b67cb771967172a639b7ec3f42451b164975f0c6c7dc0c925a5af7e56d918"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "13f4386ae43bd4a63e4ed421870f35aeb8b4f970",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/ROOT.stdout",
+      "raw_bytes": 10824,
+      "raw_sha256": "7e567bd9535dc4015d54730bda3d4170b733b0073f183ece09083ed1db8e2fd6",
+      "stored_path": "_objects/7e567bd9535dc4015d54730bda3d4170b733b0073f183ece09083ed1db8e2fd6.gz",
+      "stored_sha256": "e2dc470cbef23195f655964c6e754330b39e50771e84c367e08225cf5fa5ae40"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b231a3930f6ab8ef2c0a67a0289fb58149ef78df",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431",
+      "stored_path": "_objects/8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431.gz",
+      "stored_sha256": "dd5bc47eab10855a969306bd56821ed4226775770053686eaa3bbdb20081aeee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1b87199fe32184d02f4c096efa01a4838081da44",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "raw_bytes": 1711,
+      "raw_sha256": "c3469527ff7ca774b399d86034b4e3851200f6c38288e365619825a8229b282e",
+      "stored_path": "_objects/c3469527ff7ca774b399d86034b4e3851200f6c38288e365619825a8229b282e.gz",
+      "stored_sha256": "7d26883809e10fb5f5aef6424c1d74242e685f323c87588550af2663667df136"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6a6c9a69808dc3e54697b74d708b596a23bed59",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+      "raw_bytes": 1525,
+      "raw_sha256": "904fcf97b81a845a865f27b88ab7fd25efd1d2ac76de502df05ba0fe80f968ea",
+      "stored_path": "_objects/904fcf97b81a845a865f27b88ab7fd25efd1d2ac76de502df05ba0fe80f968ea.gz",
+      "stored_sha256": "f375cd756588d0e83e42624a99fa0dc801102bb8bf84aba25e2d77ca96c0ced3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e73d0dc5741b2c3b0e747e1796b393f5f7db5488",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "raw_bytes": 2313,
+      "raw_sha256": "82b5c887d74da6b4f5e52a1fb751d927308ede552f1f81757f13507d6a568fba",
+      "stored_path": "_objects/82b5c887d74da6b4f5e52a1fb751d927308ede552f1f81757f13507d6a568fba.gz",
+      "stored_sha256": "5f256058c2eb156a468f7ca6682a0ec7aa95cf9ad663eb39e84da9e6205590db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c9a434f3b0da8cd09d447dc8b1976883747764a0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_positive_tail.py.txt",
+      "raw_bytes": 1674,
+      "raw_sha256": "a0925fc80c703ae4f400d68fa02836171929cfd50193c8edba43af821aba2ab3",
+      "stored_path": "_objects/a0925fc80c703ae4f400d68fa02836171929cfd50193c8edba43af821aba2ab3.gz",
+      "stored_sha256": "9fc6f671c36e157268ebe0254a615c8cfc39b3fcb233aea27836857808592a5a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b3c4018b65b44cd11080f733053fb720562d11a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_positive_tail.stderr",
+      "raw_bytes": 420,
+      "raw_sha256": "03107542b9d3527c701bdc3802726550cabd318b3980fcb9bfffbf1aa2a15dd5",
+      "stored_path": "_objects/03107542b9d3527c701bdc3802726550cabd318b3980fcb9bfffbf1aa2a15dd5.gz",
+      "stored_sha256": "56be23d43018eadc32847c126675b0afdfc4ee6484891402dac11f679d1c5d4f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b619d57521efbe8baee53ca6159cdc84870d2e22",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_second_log.py.txt",
+      "raw_bytes": 1701,
+      "raw_sha256": "ae0f9924fb980903ab1b398b2825ff8a44a89a3afb6910cca5cb551adb29f461",
+      "stored_path": "_objects/ae0f9924fb980903ab1b398b2825ff8a44a89a3afb6910cca5cb551adb29f461.gz",
+      "stored_sha256": "91bf891f3230bc2b60a8d61177ddea473edf6c5e0f4fcab1f5ca55f268837621"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1a4f1eeba7b323b7ad8b61d6100238909506b21d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_second_log.stderr",
+      "raw_bytes": 414,
+      "raw_sha256": "1e5c46f64855b2c9faa31d73ac8bdffba2dde7f1a1c7f6c4f6d0622a87888692",
+      "stored_path": "_objects/1e5c46f64855b2c9faa31d73ac8bdffba2dde7f1a1c7f6c4f6d0622a87888692.gz",
+      "stored_sha256": "e78418248ad05380ae2bea0c7fa87803d96e28ca8ebb51835c3555475e3d7a81"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4e50f1fcb53e381022e62daeb5c66b0d06428477",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 758,
+      "raw_sha256": "fc8a4e6d8a06e35b38c4da13a416a49f8a27db7455af19ed2a28209d3be62ded",
+      "stored_path": "kept/pr8066-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "fc8a4e6d8a06e35b38c4da13a416a49f8a27db7455af19ed2a28209d3be62ded"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a0539d410f6213eb103f96cca7c5e60984d52680",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 273,
+      "raw_sha256": "387d96e08132ce446d68c326480956a680fcdc1e5c1b74acfb88d491038c8d2b",
+      "stored_path": "_objects/387d96e08132ce446d68c326480956a680fcdc1e5c1b74acfb88d491038c8d2b.gz",
+      "stored_sha256": "b4dfa4d31e29c9bc4216f847ee918591b3a0cb79dfdbcfae295310969d5d2841"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4022ea9c3d1d040b5435a6bb952d3d56abf22111",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/STATE.yaml",
+      "raw_bytes": 548,
+      "raw_sha256": "3ebb3e890e253568be8b9f6496cffa8d121fa8b305baea545eb4cfae4ccc930d",
+      "stored_path": "_objects/3ebb3e890e253568be8b9f6496cffa8d121fa8b305baea545eb4cfae4ccc930d.gz",
+      "stored_sha256": "e378f52e9892ffcf3fa52e437f6136d5d67767dee26179f0c9752e930e7c2a0d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "119d094e0994aaf36038912080c7487fb264b6ba",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/TRACE_GATE.md",
+      "raw_bytes": 181,
+      "raw_sha256": "4579ca68f1384b5e7557e3ddba10b6d12cde7b6a8719cbcff6a79648f0d93d0d",
+      "stored_path": "_objects/4579ca68f1384b5e7557e3ddba10b6d12cde7b6a8719cbcff6a79648f0d93d0d.gz",
+      "stored_sha256": "7a488e5eb7863dcbc3b634f1db99e194ad647cf6f78334a3466c2478d82a27fe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "335c7423d01bca5ee35f4a9081534db564561a57",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/EXACT_TAIL_CHECK.json",
+      "raw_bytes": 1574,
+      "raw_sha256": "dea61fa073ea83c933cef54b808348de7d89537a4e306c4f3e084f8537991c9d",
+      "stored_path": "_objects/dea61fa073ea83c933cef54b808348de7d89537a4e306c4f3e084f8537991c9d.gz",
+      "stored_sha256": "9b7d957356c7894e4a1a66a956c3b81d04e797b88bff44c8ff293f7e513725a6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "45814c7a5984e3b7baa6db73393b8e6c485577c9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/GAUSSIAN_COVARIANCE_RESPONSE.md",
+      "raw_bytes": 3270,
+      "raw_sha256": "eaaa57b2437d402355ac35550626086f19e17d759395ecfffe8e5605651abd63",
+      "stored_path": "_objects/eaaa57b2437d402355ac35550626086f19e17d759395ecfffe8e5605651abd63.gz",
+      "stored_sha256": "3305491b562dd038a2b06a9998b4267d4a2ba1667f64fd82569181b460dff4c7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "19272c76bfc711321a0f111fafad82f6393491fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/MONITOR_COLD.md",
+      "raw_bytes": 2971,
+      "raw_sha256": "57c5e75a7533b853d78064896ed55b0cb47fa17d1eea9f84ce9c0be5fc8f6707",
+      "stored_path": "_objects/57c5e75a7533b853d78064896ed55b0cb47fa17d1eea9f84ce9c0be5fc8f6707.gz",
+      "stored_sha256": "d026beb7e689ee095688aa825e22ab750d55c320cda2b6deee37c5d894e834e9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "29ae419e45cd710164d1d085ab57e5d7a082acdb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/MONITOR_READ_HASHES.json",
+      "raw_bytes": 955,
+      "raw_sha256": "3c90f5dfe50c522ff6ef1caaf8b45a3a1ae6707d0624b147c9967af911a8f5c8",
+      "stored_path": "_objects/3c90f5dfe50c522ff6ef1caaf8b45a3a1ae6707d0624b147c9967af911a8f5c8.gz",
+      "stored_sha256": "0be3d91eea1fdd9b9e76e7a12a63ec694703bcaba15e8abefd03614e0b4c4357"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2926a3a0492b52bcc1e45562767accd4bae81d36",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/QUANTITATIVE_FILTER.md",
+      "raw_bytes": 3865,
+      "raw_sha256": "0057bfe6fd7bf025bf79e6299c776ad7589d061d5a221c9a2488543d3c891d50",
+      "stored_path": "_objects/0057bfe6fd7bf025bf79e6299c776ad7589d061d5a221c9a2488543d3c891d50.gz",
+      "stored_sha256": "b8bc9cbcd43d58f075100cdc906a14623b162e79544c77b38bdd71c43f31af8e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fdb655cc767266f6e7e463b7f58ee21d2485b492",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/READ_HASHES.json",
+      "raw_bytes": 728,
+      "raw_sha256": "0e5ab98bf57dc7c9678f91ece36bb035c118e197213b42c319fd572c30220284",
+      "stored_path": "_objects/0e5ab98bf57dc7c9678f91ece36bb035c118e197213b42c319fd572c30220284.gz",
+      "stored_sha256": "67c25e03e0a8724f39486de41e4867ecd2164819f8589517d7d1f9d29665570b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4aab8984fb15769f15f19ac23cea2a818490c31d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/REVIEW.md",
+      "raw_bytes": 3180,
+      "raw_sha256": "ea85464bb340d695559dd905b269b50edbad13e354a6a2c12657b931ecd23be6",
+      "stored_path": "_objects/ea85464bb340d695559dd905b269b50edbad13e354a6a2c12657b931ecd23be6.gz",
+      "stored_sha256": "6d4d38c4842ef2df03700e9463c5dbab8110b57de455ee8cdad340eec9523142"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80684aa582b3fcecfa681a14fd8423c3f82b4fb3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/READ_HASHES.json",
+      "raw_bytes": 1203,
+      "raw_sha256": "8173ac02caf6100770a2d6887506097e517262afd35b9c06353d1d43ef6eba8e",
+      "stored_path": "_objects/8173ac02caf6100770a2d6887506097e517262afd35b9c06353d1d43ef6eba8e.gz",
+      "stored_sha256": "f29be4124b1702a0012ac66327c209f25652a6f2fa1b62d055be0d41f7dc3d73"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "50b6403acab949677f7215897fe90999ec4af16a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/RECEIPT.txt",
+      "raw_bytes": 777,
+      "raw_sha256": "b4237fae327d641db9df8d7e68517c42d2a56394607b8d32a26bdd41b673fd82",
+      "stored_path": "_objects/b4237fae327d641db9df8d7e68517c42d2a56394607b8d32a26bdd41b673fd82.gz",
+      "stored_sha256": "be7a1d8f5a78acec8014e2a18ebc6683eae8d020cfda08d110125c03265cd61a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e5dd485a5ecb484e0b71cbaa9400b37043c8fa03",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/RESULT.json",
+      "raw_bytes": 1158,
+      "raw_sha256": "89f9963633ef4e14d24861d575911f320d8d09bbfe8be4cc2520c3504cda9d2c",
+      "stored_path": "_objects/89f9963633ef4e14d24861d575911f320d8d09bbfe8be4cc2520c3504cda9d2c.gz",
+      "stored_sha256": "e3b435a9199cc872e5f53691d4e36ce2422785f22db6a03d273796715ef1fd2c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "03eba06e4a63a16124337478f4b27ba8b3495bc6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/REVIEW.md",
+      "raw_bytes": 5104,
+      "raw_sha256": "17d5639215bf18ce810123712216d4c2c033c518c8288a730c2cce4a9674224b",
+      "stored_path": "_objects/17d5639215bf18ce810123712216d4c2c033c518c8288a730c2cce4a9674224b.gz",
+      "stored_sha256": "2126984b18b249e95c126607c327fb96397731330ae85c30c795b5a815693b61"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "575add97cc2739cb25931fc5e5f3b8d57f5cd8e4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/check.py",
+      "raw_bytes": 2023,
+      "raw_sha256": "fbb338490c2c61ff195c669ae237244c18d5b1dd8b8ddabe332e1c12b01cb8f3",
+      "stored_path": "_objects/fbb338490c2c61ff195c669ae237244c18d5b1dd8b8ddabe332e1c12b01cb8f3.gz",
+      "stored_sha256": "2a9752f0b23594f5e02f58fd87a524a358b40b596f46ee062896244ae179509f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cff358775c88d4f0fab34f0476557d766bce0ba5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/READ_HASHES.json",
+      "raw_bytes": 491,
+      "raw_sha256": "a4b1cea99be0397bf7f6ba3e152ba0ae1805efee9f788cf925d852b982f0809f",
+      "stored_path": "_objects/a4b1cea99be0397bf7f6ba3e152ba0ae1805efee9f788cf925d852b982f0809f.gz",
+      "stored_sha256": "dabd17e975f6eddda992a5aad689a9f378d95b7d8b1c089bd7c1829d8ccf6e47"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d017ca967c2ce9255e36e00303cf00eee091a8d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RECEIPT.txt",
+      "raw_bytes": 777,
+      "raw_sha256": "f40debbe21d05acffc2711a915765c8ac2d91f12d64f21ab7216fffa89ba7fde",
+      "stored_path": "_objects/f40debbe21d05acffc2711a915765c8ac2d91f12d64f21ab7216fffa89ba7fde.gz",
+      "stored_sha256": "54f7557fee028b97954645a835e9721fd0f3e2801d8d9afc885bc8837e970fde"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "19dcb9ba0ed7cca27f2e599fa96ad2ca8b9a6a1d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RESULT.json",
+      "raw_bytes": 201,
+      "raw_sha256": "0c923ca509c51f6bb6c9a1d0eb7352c0a0111bab19b7b5fd3925cd0348e8bb7a",
+      "stored_path": "_objects/0c923ca509c51f6bb6c9a1d0eb7352c0a0111bab19b7b5fd3925cd0348e8bb7a.gz",
+      "stored_sha256": "060c8b91ae937e39bbfbd34ce156a82373b81cf3dfdfdb748b00ef6b096918b2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "72bac86f7c8c4e8888cd869a46286463cd0f8976",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RESULT_BEFORE_COUNT_LABEL.json",
+      "raw_bytes": 202,
+      "raw_sha256": "c81fc561fc01d8cf155c1e904c9d88f2b0fcdf2a6585d2437154dadc9d41b0f0",
+      "stored_path": "_objects/c81fc561fc01d8cf155c1e904c9d88f2b0fcdf2a6585d2437154dadc9d41b0f0.gz",
+      "stored_sha256": "c859ac089f85cef5aa4b4cc14d741ef1885229464296411f6222c7157c06fb2d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6836db62ffdcb45e1cf8e23cd3081104e168c2c5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/REVIEW.md",
+      "raw_bytes": 3374,
+      "raw_sha256": "6c6a5bccb17845511a9aa3741ca6a5cba6ce9c3ced95e0eb40ab5c35ac655fbd",
+      "stored_path": "_objects/6c6a5bccb17845511a9aa3741ca6a5cba6ce9c3ced95e0eb40ab5c35ac655fbd.gz",
+      "stored_sha256": "76a5503d09a3794d524eff331dd1937d110161f6cfa57472d0686514fd68deaf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "246c5b49aa6ec796c83ea84dd8eef59e79a321b0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/check.py",
+      "raw_bytes": 1392,
+      "raw_sha256": "eeeac186da847aab65f151f1bfa4faabdc5357a52fbc92b3934caa4a9cf5cb0e",
+      "stored_path": "_objects/eeeac186da847aab65f151f1bfa4faabdc5357a52fbc92b3934caa4a9cf5cb0e.gz",
+      "stored_sha256": "8d6c72e41f75a43d3d6067709585f7137c07f7e1d133d8cec3b793276c187738"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4be71d94d88badd00507c18cb474b466642e8775",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/check_BEFORE_COUNT_LABEL.py.txt",
+      "raw_bytes": 1393,
+      "raw_sha256": "3f0ae43b9baa8d21f1413d49eaa29d73ce7b28f5b0fb08c630fe3e09e93a8e26",
+      "stored_path": "_objects/3f0ae43b9baa8d21f1413d49eaa29d73ce7b28f5b0fb08c630fe3e09e93a8e26.gz",
+      "stored_sha256": "22e440cb5b24dda9622c9f74616d65d679955ecf5700258fd82f0f12602512cc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bf7be617b9031dfcb8b29dc4f7696f146b5bd571",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/DERIVATION.md",
+      "raw_bytes": 2174,
+      "raw_sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab",
+      "stored_path": "_objects/6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab.gz",
+      "stored_sha256": "1b2db8df4681dbb23eb32ca3e75aeb59a1dc180a72b519c155ec3f8fbad8a60c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e14366392d39cef25b4f7ba353feb5ccfc55cbb1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/RESULT.json",
+      "raw_bytes": 4236,
+      "raw_sha256": "35ef7f1c5124d023a487de78e087f488c4d4e88ff437427bcc97df4be5dd6ab8",
+      "stored_path": "_objects/35ef7f1c5124d023a487de78e087f488c4d4e88ff437427bcc97df4be5dd6ab8.gz",
+      "stored_sha256": "04e8ccec6340ad92cad703c57e9b5af5310ed11a4d049212f44f3b66cc1fd68f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "892073aa38a469f399d7274f374e0c56bc140c8c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/check.py",
+      "raw_bytes": 944,
+      "raw_sha256": "f023a3e10caa88d2cdec55a91ed2394fb6aa52d6370f0581b1ca54dbec87630f",
+      "stored_path": "_objects/f023a3e10caa88d2cdec55a91ed2394fb6aa52d6370f0581b1ca54dbec87630f.gz",
+      "stored_sha256": "880b0bb405ef8c807c848bf1dd7657062f722e3835096a9b29b8aa4bfb60ab36"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3dfbf3f657f071d692eb10031d74cbde8dc160a2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/READ_HASHES.json",
+      "raw_bytes": 859,
+      "raw_sha256": "211a412d0e93620325b0654d50fac7903d8c41e774e3513ddf087f681cc27dcb",
+      "stored_path": "_objects/211a412d0e93620325b0654d50fac7903d8c41e774e3513ddf087f681cc27dcb.gz",
+      "stored_sha256": "02134a5beb045d465d9e4be2461fbecdd2c4cabd8ad47ec633e9e8845bc5300c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2ac19a508cb11cb940d51f73a2f76e82d3919447",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/RESULT.json",
+      "raw_bytes": 241,
+      "raw_sha256": "10c68fd5768420886520c3833e794b7837eb720600b5b48d53a03b683b352b2b",
+      "stored_path": "_objects/10c68fd5768420886520c3833e794b7837eb720600b5b48d53a03b683b352b2b.gz",
+      "stored_sha256": "af005721e5a0f8d10d7bba33f80bdbc079d5206772b787953817e4efd346aed6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "632bc8dbe7854fa2c35500bdca648b566287bfbd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/REVIEW.md",
+      "raw_bytes": 6114,
+      "raw_sha256": "d1a4aa103bf5511f682cedcc061020732a91fa0c98894f2358e0622d22ca9d32",
+      "stored_path": "_objects/d1a4aa103bf5511f682cedcc061020732a91fa0c98894f2358e0622d22ca9d32.gz",
+      "stored_sha256": "f7a69fb337e16e4df1ceb8a8455782c780154f92337934c8d2d5eccac17c4bbd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0fb8702fccdd1617aa2932ccb1f0a57bee8cb035",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/check.py",
+      "raw_bytes": 2404,
+      "raw_sha256": "2773f655e26d77328547ded9ca75c021fbb3bfe44e49bc7b8c16520cbd76b0b8",
+      "stored_path": "_objects/2773f655e26d77328547ded9ca75c021fbb3bfe44e49bc7b8c16520cbd76b0b8.gz",
+      "stored_sha256": "df1e5ba30c39ef3f87c3725e2b5cc89daeb68298ea22b9e7ca136e9ccba125a6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6d31363c56656a73621e2d5e248b372469b626ab",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/CONTRACT.md",
+      "raw_bytes": 743,
+      "raw_sha256": "4d4f2d3339ce3191a019300e0060c3cf4795e5611eb55866541a04e4398f988a",
+      "stored_path": "_objects/4d4f2d3339ce3191a019300e0060c3cf4795e5611eb55866541a04e4398f988a.gz",
+      "stored_sha256": "d58795df1089f56881401807f12c7c2f99c35ca932d4e6cc3d4598cc07dfbf22"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "295e96a74e9596d8f8a8a13c1a0b7ac5b1e51f41",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/FREEZE.json",
+      "raw_bytes": 2481,
+      "raw_sha256": "529a60746799bd1c9948c8052ab6453d7a3a482fc059d19546cb9d60c5b3b59a",
+      "stored_path": "_objects/529a60746799bd1c9948c8052ab6453d7a3a482fc059d19546cb9d60c5b3b59a.gz",
+      "stored_sha256": "f925d303d98739c4c60f545a3a3bcb163573cb264ac0e1c8ed1d860f69af1b3a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1f42702d640422d9f87c39708eca28b696fdb6f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/FREEZE_before_adjacent_swap_correction.json",
+      "raw_bytes": 1909,
+      "raw_sha256": "d28be565225a4e25a1ba98af89354985def756a35faa135dece72a74fc34bd6d",
+      "stored_path": "_objects/d28be565225a4e25a1ba98af89354985def756a35faa135dece72a74fc34bd6d.gz",
+      "stored_sha256": "68c805db866b7f66ccb0dea95ab0a81dfeef4c5600c8a7fd2bd38c0a04ca20ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0f13bb4a8964c801dd6dfa99c06802fdf112747d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_FILTER_SPATIAL_ATTEMPT.md",
+      "raw_bytes": 2088,
+      "raw_sha256": "8022d6127bdce46b1ef33bb2a10e669c55ea8ec7050e8736bbb88d5afe87ed37",
+      "stored_path": "_objects/8022d6127bdce46b1ef33bb2a10e669c55ea8ec7050e8736bbb88d5afe87ed37.gz",
+      "stored_sha256": "566935e257bdcdd01565d4aacf4f16f2a84c037b793ea18d632d2665c4e1e6ba"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f24c47d8b090e64e8fc5753809e73ef342ae3542",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_NODE_CONTROL.json",
+      "raw_bytes": 124,
+      "raw_sha256": "f123615b115d15f5fdc793c25b4d1355e7525d6827d4c2aad874a041a699bf1f",
+      "stored_path": "_objects/f123615b115d15f5fdc793c25b4d1355e7525d6827d4c2aad874a041a699bf1f.gz",
+      "stored_sha256": "a6a17cbab4c9badf51714cad79e7ffa2fae7b5d42244eb9b652e9f5c4e4cf660"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5ad3ec34104ae99a87bf02089b6cb9417adc4fe3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND.md",
+      "raw_bytes": 3086,
+      "raw_sha256": "c773518eec27e0a532cb8419ac7534aa0485d54c63a1cee8f4f9abe13b88a5e6",
+      "stored_path": "_objects/c773518eec27e0a532cb8419ac7534aa0485d54c63a1cee8f4f9abe13b88a5e6.gz",
+      "stored_sha256": "2a0a457f8a51c10ab60aebb909a6c0851cf924a0bcf7d43af1524aa45c40aa2d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f538a0e47f6a2319d8e7d54e7d3464506343864e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND_before_shift_domain.md",
+      "raw_bytes": 2640,
+      "raw_sha256": "d1b1054475fc3ad410004a6aab3e1c3b9556a8556def23db2937236e2cbb9564",
+      "stored_path": "_objects/d1b1054475fc3ad410004a6aab3e1c3b9556a8556def23db2937236e2cbb9564.gz",
+      "stored_sha256": "25989840ffef30accb4fd574bb3619a543015a7a1059dbffa09bfec9c7c2431b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3ce8270bcfa61a3d8a2993e02092fb4d1be5807e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPROVED_TAIL_CONTROL.json",
+      "raw_bytes": 749,
+      "raw_sha256": "2de4681b22564c07588505f997124f48234d28d0922afd34839d09b450703087",
+      "stored_path": "_objects/2de4681b22564c07588505f997124f48234d28d0922afd34839d09b450703087.gz",
+      "stored_sha256": "31eecb1649cc60518f39d10219bbd58644af2b5c2d316019a5169e33b8bfb0c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e75c9eeca8f32bfe50d9c5a047434ab5bbf44aa6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_CONTRACT.md",
+      "raw_bytes": 726,
+      "raw_sha256": "49a808313956e51eca17e3955abece1b19574a13faf8003c6949c411de788435",
+      "stored_path": "_objects/49a808313956e51eca17e3955abece1b19574a13faf8003c6949c411de788435.gz",
+      "stored_sha256": "1802a61c276579dd8d73e4d0f2d099050aab9c8501595ea5d93463361e192785"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "51789baec3df8938b87074462f4b6574b57d84cc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_CONTROL.json",
+      "raw_bytes": 710,
+      "raw_sha256": "3e5dc9ca7112be3a9b79f403c4de5accd059bc4451b3a419c646deb6aca47e30",
+      "stored_path": "_objects/3e5dc9ca7112be3a9b79f403c4de5accd059bc4451b3a419c646deb6aca47e30.gz",
+      "stored_sha256": "bcd1d49d0394415fd0b13a6108045cc8faa73c8954e840b3fec319d49184815b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b14d46447ed4d7d00957edbdce58e70e5a1290f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_STANDALONE_CONTROL.json",
+      "raw_bytes": 709,
+      "raw_sha256": "02e0595cfae7c5767c783ca55c3edec793f0d982716c8cb945fce605d90495f7",
+      "stored_path": "_objects/02e0595cfae7c5767c783ca55c3edec793f0d982716c8cb945fce605d90495f7.gz",
+      "stored_sha256": "3088774af8189d6d61cb8a32c381e17cec76baad347e8fd0a1552b48b0a89ffd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "10f2f2a641922c9b2cc1291905a885bbb9202776",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_CONTROL.json",
+      "raw_bytes": 125,
+      "raw_sha256": "c2e1040badabec2d4a18f8a2cfe5f8d90a910a318bedaf95a5daba5c32ac0e6e",
+      "stored_path": "_objects/c2e1040badabec2d4a18f8a2cfe5f8d90a910a318bedaf95a5daba5c32ac0e6e.gz",
+      "stored_sha256": "fa203f00c58a14df6c32d32dc4357152fab07735d91987a81fdd80dad604c8db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6ccb060b208adb1d9c03e716f2d3f26a3dd298cd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_FREEZE.json",
+      "raw_bytes": 450,
+      "raw_sha256": "b7fafad007b8e1b4faa181ed0dc839f6db27cbae539f58934e7bf3070162d202",
+      "stored_path": "_objects/b7fafad007b8e1b4faa181ed0dc839f6db27cbae539f58934e7bf3070162d202.gz",
+      "stored_sha256": "1476971b84841e92e50dcbca30ca62762ffe3ecb9f3f95741c58b0e98085a24a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7827e922e0e1b73f708c237698c6ecdb8947102a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_GAUSSIAN_REPRESENTATION.md",
+      "raw_bytes": 5522,
+      "raw_sha256": "7208d4d6fc01ca67ae22369db957dc42dd35e4c4de8dba710e025661ed0ac9e2",
+      "stored_path": "_objects/7208d4d6fc01ca67ae22369db957dc42dd35e4c4de8dba710e025661ed0ac9e2.gz",
+      "stored_sha256": "6f43faf07650e99d0b2d044d3ffcd63b3e4afda68bfd5dd8b1b373089b468d50"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3acec1e37fdff4084b4445727da08bc28ed125aa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_REDUCTION.md",
+      "raw_bytes": 4662,
+      "raw_sha256": "bf76b2c5e66eacae67f643feb1241a0b79015d0e9b016233c5c134eeec6ee2c9",
+      "stored_path": "_objects/bf76b2c5e66eacae67f643feb1241a0b79015d0e9b016233c5c134eeec6ee2c9.gz",
+      "stored_sha256": "0cd21bdc3cc69af9ecbc7ae5d2193f626ce6cb01860d734568e45a1c5c304746"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3c3532fdb3750b921a28c9aeca8a8d2ffce2752b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBITS.md",
+      "raw_bytes": 1329,
+      "raw_sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82",
+      "stored_path": "_objects/f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82.gz",
+      "stored_sha256": "3e7850d27ececee397dbc3a0ee590a89162254af228f6fc7b84581104e849793"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d4ab6f0626a57cfed24387474566735c9ec08935",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBITS_before_adjacent_swap_correction.md",
+      "raw_bytes": 1065,
+      "raw_sha256": "f8a4c50c44aad4a5fb9f29dbcb66f11375bd97ad19181463abaa5b7e5a44cf0d",
+      "stored_path": "_objects/f8a4c50c44aad4a5fb9f29dbcb66f11375bd97ad19181463abaa5b7e5a44cf0d.gz",
+      "stored_sha256": "cbd3592f4f8fee0dd0dd128c6f53e3a592642ab66ecec93c9873431bf6fcc582"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "df567dc6e2fa633ebf2ea769a2fa96bf03ef250b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBIT_CONTROL.json",
+      "raw_bytes": 871,
+      "raw_sha256": "53b91a26d87d288eeb8bc392c288a9a7022b156c2f3e257b5e23a271e66a4935",
+      "stored_path": "_objects/53b91a26d87d288eeb8bc392c288a9a7022b156c2f3e257b5e23a271e66a4935.gz",
+      "stored_sha256": "b6a0dd01861350256793241b32beea1fb57cbf4b9e0bfa8fe4d104e70a5af985"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "660c1f5cb89fbfc001cb3f71abc7bae22c7fde4e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/READ_HASHES.json",
+      "raw_bytes": 699,
+      "raw_sha256": "a05fef0d2eb3ae38a3e86b74cf9773bb7949a629c27a016292259ccf1c78e35f",
+      "stored_path": "_objects/a05fef0d2eb3ae38a3e86b74cf9773bb7949a629c27a016292259ccf1c78e35f.gz",
+      "stored_sha256": "1a260ae3688748e8d52290c38a640bf76f9374b2fb6b515a3810a22ccb4d305d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4b492828b6b29674b6a2ffb125e431eca113cd62",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md",
+      "raw_bytes": 6177,
+      "raw_sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1",
+      "stored_path": "_objects/d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1.gz",
+      "stored_sha256": "d0eccbcdb0bc904ebe5cb8826fafe7fb87ace1496260d8db712f6395660d7b99"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "61086bfbf8f7df1c19a6f2b9cdf86c432f0399f5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/SOFT_SHIFT_CONTROL.json",
+      "raw_bytes": 134,
+      "raw_sha256": "a2243584ed03939d7f2a97dee28253db00d4398520b250937e5cc7038d83affe",
+      "stored_path": "_objects/a2243584ed03939d7f2a97dee28253db00d4398520b250937e5cc7038d83affe.gz",
+      "stored_sha256": "3b28f10d190462af861ddf1f622111512f811d4a521e2686e14dbb2e19583960"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5b0cdb105020f1d8763a9861e058059f334d7e0c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/TAIL_CONTROL.json",
+      "raw_bytes": 186,
+      "raw_sha256": "760d427782be560cf016409f937fcef6f316ef39649afc4083e0264ef4395211",
+      "stored_path": "_objects/760d427782be560cf016409f937fcef6f316ef39649afc4083e0264ef4395211.gz",
+      "stored_sha256": "fbf38bad3714344e3cfb1a7b21dd63d87c6e0d2786a88903229bf663404a27d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "92c5a012780f1a5875223147afa714b797465e0e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/TIME_SLICE_CERTIFICATE.md",
+      "raw_bytes": 4972,
+      "raw_sha256": "3fd75a0fce37ad04cb5a5976478a5b10ef16743527f0e3dceb09ed4c7fcf65c8",
+      "stored_path": "_objects/3fd75a0fce37ad04cb5a5976478a5b10ef16743527f0e3dceb09ed4c7fcf65c8.gz",
+      "stored_sha256": "f8eac2e49a9669aff8a898a0e5cfff104c05a2e04d9b89cf67c979a0084376d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cbef42eef7ede225e3789b553b52ec90c4aae430",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/UNIFORM_PAIR_GAP.md",
+      "raw_bytes": 6177,
+      "raw_sha256": "8797f6b4bc361eb270b4ee3b70d31ff2b5b04b122c495b7bcfedc24d41a38c0d",
+      "stored_path": "_objects/8797f6b4bc361eb270b4ee3b70d31ff2b5b04b122c495b7bcfedc24d41a38c0d.gz",
+      "stored_sha256": "b3c5b5b096a36477fdbbcbbe96fae1679674b2c0e10566fb123428ae39ebe0ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8754c945cf76bda90f3bbd7aa1c73352ce35cdc8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/gaussian_node_controls.py",
+      "raw_bytes": 1767,
+      "raw_sha256": "662ab0ab99bd48d033e9264227babd05aa5643f00982159f0e73051c20efc616",
+      "stored_path": "_objects/662ab0ab99bd48d033e9264227babd05aa5643f00982159f0e73051c20efc616.gz",
+      "stored_sha256": "2120eb7dc3a8e8305862dc1784f9e55bb4073e532ad7d17ff3b656924de574ca"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bcf31dc6389c5d13b049df2041bde2fbdb26f268",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/impurity_gap_controls.py",
+      "raw_bytes": 1161,
+      "raw_sha256": "7caf394eb720c778fec6aad485435c0d93e74c7b85f2c89873ee774a0d2a14c0",
+      "stored_path": "_objects/7caf394eb720c778fec6aad485435c0d93e74c7b85f2c89873ee774a0d2a14c0.gz",
+      "stored_sha256": "8a409c74465b804ab84784655649dd17570e780509041c2334b04834ce140458"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cd58e1d5352c0bef1973dabd74850b8dbdb501f7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/node_controls.py",
+      "raw_bytes": 1406,
+      "raw_sha256": "f3c2d183f36335d6763be47958f08d9f58bd5f4686cade9f4869cc6d065e9e6f",
+      "stored_path": "_objects/f3c2d183f36335d6763be47958f08d9f58bd5f4686cade9f4869cc6d065e9e6f.gz",
+      "stored_sha256": "f3f7a360d0758370e4c38377ae71b0a0d75d7758845be855621244aa33c0f67e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f2cf2c4fb39b6551e0dbb35fb20dfb9b1e7a99b2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/soft_shift_controls.py",
+      "raw_bytes": 1788,
+      "raw_sha256": "6dfa6139564eeeab6498e15586ac62f4af7072a454b3ab81da54e456d5f4dc24",
+      "stored_path": "_objects/6dfa6139564eeeab6498e15586ac62f4af7072a454b3ab81da54e456d5f4dc24.gz",
+      "stored_sha256": "4a13d11ca31f8a607c0352aef2ce6a5a9825b82bf2e2bb70dfb3941b00bc375c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "304cc75cd85307cb05616734e5bd7b596b9566ba",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/DELIVERY_FREEZE.json",
+      "raw_bytes": 15211,
+      "raw_sha256": "01824f300c949f1d2de933195c10cef90ca3f35dbb55bc502517f1aae39935f3",
+      "stored_path": "_objects/01824f300c949f1d2de933195c10cef90ca3f35dbb55bc502517f1aae39935f3.gz",
+      "stored_sha256": "a810f616f971367c29506555b824d617eedcc0228643ed7342024922ae5f47c0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "679216dc565981e46e93e0d05b0e9a27b178aa25",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/SOURCE_FREEZE.json",
+      "raw_bytes": 1468,
+      "raw_sha256": "2d2661455332faa56d62b2c7157a7c1bfb6ec5fbe8c0b67caad4aff7988ea218",
+      "stored_path": "_objects/2d2661455332faa56d62b2c7157a7c1bfb6ec5fbe8c0b67caad4aff7988ea218.gz",
+      "stored_sha256": "e1b13e3565ea6bd72f5faef15e756dd83b7dfb844b448f7b4a7de4ddc4ca5125"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-infinite-star-node-reduction-20260909/",
+  "revision": "64c1efc6984b16cf95c61e7ac148add85d741606",
+  "schema_version": 1,
+  "unique_blobs": {
+    "03eba06e4a63a16124337478f4b27ba8b3495bc6": {
+      "occurrences": 1,
+      "raw_bytes": 5104,
+      "raw_sha256": "17d5639215bf18ce810123712216d4c2c033c518c8288a730c2cce4a9674224b"
+    },
+    "043fbe5de88516fdac6fff57597862e94e99def2": {
+      "occurrences": 2,
+      "raw_bytes": 2309,
+      "raw_sha256": "e10c65efef73274e6c70ac67e2fbf0b6fb00b307dee1eb0694f3677c0fec644d"
+    },
+    "075dc381d5e840ef99c6ef964b0f632541a6ecef": {
+      "occurrences": 1,
+      "raw_bytes": 170,
+      "raw_sha256": "81339e513ee6cfb3312c6120d9bda885ee905937f320044bed4ddb2700cc55ba"
+    },
+    "079b99a473ea26fb0729dd0878590c56cd1d9359": {
+      "occurrences": 1,
+      "raw_bytes": 207,
+      "raw_sha256": "8b7d0ba72be2b42e1dc8214d12a196f0720545aa0bf25bcc41e629b7dd3f71f2"
+    },
+    "0a97301c5cfe789caff96f996077654f9cc4f38d": {
+      "occurrences": 1,
+      "raw_bytes": 1186,
+      "raw_sha256": "f4158b6e5d850db2257a8579e69ff779c2ed2c73b43b85957b8291238fa64e69"
+    },
+    "0db50d06092025c38a80421c890da054c1ef1bb7": {
+      "occurrences": 2,
+      "raw_bytes": 9335,
+      "raw_sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc"
+    },
+    "0f13bb4a8964c801dd6dfa99c06802fdf112747d": {
+      "occurrences": 1,
+      "raw_bytes": 2088,
+      "raw_sha256": "8022d6127bdce46b1ef33bb2a10e669c55ea8ec7050e8736bbb88d5afe87ed37"
+    },
+    "0fb8702fccdd1617aa2932ccb1f0a57bee8cb035": {
+      "occurrences": 1,
+      "raw_bytes": 2404,
+      "raw_sha256": "2773f655e26d77328547ded9ca75c021fbb3bfe44e49bc7b8c16520cbd76b0b8"
+    },
+    "10f2f2a641922c9b2cc1291905a885bbb9202776": {
+      "occurrences": 1,
+      "raw_bytes": 125,
+      "raw_sha256": "c2e1040badabec2d4a18f8a2cfe5f8d90a910a318bedaf95a5daba5c32ac0e6e"
+    },
+    "119d094e0994aaf36038912080c7487fb264b6ba": {
+      "occurrences": 1,
+      "raw_bytes": 181,
+      "raw_sha256": "4579ca68f1384b5e7557e3ddba10b6d12cde7b6a8719cbcff6a79648f0d93d0d"
+    },
+    "13f4386ae43bd4a63e4ed421870f35aeb8b4f970": {
+      "occurrences": 1,
+      "raw_bytes": 10824,
+      "raw_sha256": "7e567bd9535dc4015d54730bda3d4170b733b0073f183ece09083ed1db8e2fd6"
+    },
+    "141e1c895b6e2aa00f3fe57854842288c238105c": {
+      "occurrences": 2,
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042"
+    },
+    "154788a8f2e06a0f73cde3cfd50f2c94d9fe2009": {
+      "occurrences": 1,
+      "raw_bytes": 28201,
+      "raw_sha256": "35378808581ff4f0685d64ca7fd939cb91c85b9c993ac5c7630565bc78854612"
+    },
+    "19272c76bfc711321a0f111fafad82f6393491fb": {
+      "occurrences": 1,
+      "raw_bytes": 2971,
+      "raw_sha256": "57c5e75a7533b853d78064896ed55b0cb47fa17d1eea9f84ce9c0be5fc8f6707"
+    },
+    "19dcb9ba0ed7cca27f2e599fa96ad2ca8b9a6a1d": {
+      "occurrences": 1,
+      "raw_bytes": 201,
+      "raw_sha256": "0c923ca509c51f6bb6c9a1d0eb7352c0a0111bab19b7b5fd3925cd0348e8bb7a"
+    },
+    "1a4f1eeba7b323b7ad8b61d6100238909506b21d": {
+      "occurrences": 1,
+      "raw_bytes": 414,
+      "raw_sha256": "1e5c46f64855b2c9faa31d73ac8bdffba2dde7f1a1c7f6c4f6d0622a87888692"
+    },
+    "1a75e1685e32b4bcf13b343f2cd024b47ad3e889": {
+      "occurrences": 1,
+      "raw_bytes": 537,
+      "raw_sha256": "9c08a363c9d95d1ca317603abce8e4088a0cbca1ad2b154702ca43808136973b"
+    },
+    "1aa54b8c04ccfd06cf9ac428147b64a1d6e17f12": {
+      "occurrences": 2,
+      "raw_bytes": 13485,
+      "raw_sha256": "08647551c23035a8407c20ce4936592bf2430ae06136f2b9ab520b22f4ee0875"
+    },
+    "1b87199fe32184d02f4c096efa01a4838081da44": {
+      "occurrences": 1,
+      "raw_bytes": 1711,
+      "raw_sha256": "c3469527ff7ca774b399d86034b4e3851200f6c38288e365619825a8229b282e"
+    },
+    "1f42702d640422d9f87c39708eca28b696fdb6f7": {
+      "occurrences": 1,
+      "raw_bytes": 1909,
+      "raw_sha256": "d28be565225a4e25a1ba98af89354985def756a35faa135dece72a74fc34bd6d"
+    },
+    "246c5b49aa6ec796c83ea84dd8eef59e79a321b0": {
+      "occurrences": 1,
+      "raw_bytes": 1392,
+      "raw_sha256": "eeeac186da847aab65f151f1bfa4faabdc5357a52fbc92b3934caa4a9cf5cb0e"
+    },
+    "2900575549ac0e0c7f3d5e62ac98c381d0c529f8": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "90c81a4d6c17b825eb1d05aaf838e4171ace42fd1c0cce65eb0e7aacf8e96ba0"
+    },
+    "2926a3a0492b52bcc1e45562767accd4bae81d36": {
+      "occurrences": 1,
+      "raw_bytes": 3865,
+      "raw_sha256": "0057bfe6fd7bf025bf79e6299c776ad7589d061d5a221c9a2488543d3c891d50"
+    },
+    "295e96a74e9596d8f8a8a13c1a0b7ac5b1e51f41": {
+      "occurrences": 1,
+      "raw_bytes": 2481,
+      "raw_sha256": "529a60746799bd1c9948c8052ab6453d7a3a482fc059d19546cb9d60c5b3b59a"
+    },
+    "29ae419e45cd710164d1d085ab57e5d7a082acdb": {
+      "occurrences": 1,
+      "raw_bytes": 955,
+      "raw_sha256": "3c90f5dfe50c522ff6ef1caaf8b45a3a1ae6707d0624b147c9967af911a8f5c8"
+    },
+    "2ac19a508cb11cb940d51f73a2f76e82d3919447": {
+      "occurrences": 1,
+      "raw_bytes": 241,
+      "raw_sha256": "10c68fd5768420886520c3833e794b7837eb720600b5b48d53a03b683b352b2b"
+    },
+    "304cc75cd85307cb05616734e5bd7b596b9566ba": {
+      "occurrences": 1,
+      "raw_bytes": 15211,
+      "raw_sha256": "01824f300c949f1d2de933195c10cef90ca3f35dbb55bc502517f1aae39935f3"
+    },
+    "3178a0bc4c76269d7570ae23671c2e8f1e42a924": {
+      "occurrences": 1,
+      "raw_bytes": 1217,
+      "raw_sha256": "62c91aa0b05c3809e07dfa32b8cb780ee423e97d1c8cc6971ada5ac2ee815887"
+    },
+    "335c7423d01bca5ee35f4a9081534db564561a57": {
+      "occurrences": 1,
+      "raw_bytes": 1574,
+      "raw_sha256": "dea61fa073ea83c933cef54b808348de7d89537a4e306c4f3e084f8537991c9d"
+    },
+    "3acec1e37fdff4084b4445727da08bc28ed125aa": {
+      "occurrences": 1,
+      "raw_bytes": 4662,
+      "raw_sha256": "bf76b2c5e66eacae67f643feb1241a0b79015d0e9b016233c5c134eeec6ee2c9"
+    },
+    "3c3532fdb3750b921a28c9aeca8a8d2ffce2752b": {
+      "occurrences": 1,
+      "raw_bytes": 1329,
+      "raw_sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82"
+    },
+    "3ce8270bcfa61a3d8a2993e02092fb4d1be5807e": {
+      "occurrences": 1,
+      "raw_bytes": 749,
+      "raw_sha256": "2de4681b22564c07588505f997124f48234d28d0922afd34839d09b450703087"
+    },
+    "3dfbf3f657f071d692eb10031d74cbde8dc160a2": {
+      "occurrences": 1,
+      "raw_bytes": 859,
+      "raw_sha256": "211a412d0e93620325b0654d50fac7903d8c41e774e3513ddf087f681cc27dcb"
+    },
+    "4022ea9c3d1d040b5435a6bb952d3d56abf22111": {
+      "occurrences": 1,
+      "raw_bytes": 548,
+      "raw_sha256": "3ebb3e890e253568be8b9f6496cffa8d121fa8b305baea545eb4cfae4ccc930d"
+    },
+    "42a6721d6c0baad85437518aca8d0a2fa014091b": {
+      "occurrences": 1,
+      "raw_bytes": 1110,
+      "raw_sha256": "a70932b90215014f2e4f8fda735e3469a949898772ca7acac299d4ebd6d46b50"
+    },
+    "43e020c5431966347e238b24441f42acab7375d5": {
+      "occurrences": 1,
+      "raw_bytes": 4159,
+      "raw_sha256": "0ed90f06c7b09b41f123f7f177b82ca8a781196cfbe341db6147ab1845a47fd9"
+    },
+    "4547870881787d1764ab7f46bacbba8ac0fce3ae": {
+      "occurrences": 1,
+      "raw_bytes": 448,
+      "raw_sha256": "d712c7f630d0789f6ad0c7002b5243e97dacdc9ee064c77d5a519c4dfb830396"
+    },
+    "45814c7a5984e3b7baa6db73393b8e6c485577c9": {
+      "occurrences": 1,
+      "raw_bytes": 3270,
+      "raw_sha256": "eaaa57b2437d402355ac35550626086f19e17d759395ecfffe8e5605651abd63"
+    },
+    "49713ffcad0c31549b24d443324c4df73026f73f": {
+      "occurrences": 1,
+      "raw_bytes": 4876,
+      "raw_sha256": "6cf94d32506ed843832487e0d26d98346a51cb7dce250f67ce37bbf2be988bc4"
+    },
+    "4a050b6f34d7b34122ed254605bca54d5126b63b": {
+      "occurrences": 1,
+      "raw_bytes": 217,
+      "raw_sha256": "ea2b7016f42fe671e9a2d8df720a029daa0933c482c900d263353a8e42c283b5"
+    },
+    "4aab8984fb15769f15f19ac23cea2a818490c31d": {
+      "occurrences": 1,
+      "raw_bytes": 3180,
+      "raw_sha256": "ea85464bb340d695559dd905b269b50edbad13e354a6a2c12657b931ecd23be6"
+    },
+    "4b492828b6b29674b6a2ffb125e431eca113cd62": {
+      "occurrences": 1,
+      "raw_bytes": 6177,
+      "raw_sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1"
+    },
+    "4be71d94d88badd00507c18cb474b466642e8775": {
+      "occurrences": 1,
+      "raw_bytes": 1393,
+      "raw_sha256": "3f0ae43b9baa8d21f1413d49eaa29d73ce7b28f5b0fb08c630fe3e09e93a8e26"
+    },
+    "4e50f1fcb53e381022e62daeb5c66b0d06428477": {
+      "occurrences": 1,
+      "raw_bytes": 758,
+      "raw_sha256": "fc8a4e6d8a06e35b38c4da13a416a49f8a27db7455af19ed2a28209d3be62ded"
+    },
+    "5014f76ed0d365c07eea0f6f24fdfc8306443a09": {
+      "occurrences": 1,
+      "raw_bytes": 205,
+      "raw_sha256": "150c2c4308372d79f8890002a713b54a3edb7199b7945c502349e249ba46b3ce"
+    },
+    "50b6403acab949677f7215897fe90999ec4af16a": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "b4237fae327d641db9df8d7e68517c42d2a56394607b8d32a26bdd41b673fd82"
+    },
+    "50bfbce47971fcdc21152abfc11c6dcd6988a777": {
+      "occurrences": 1,
+      "raw_bytes": 2645,
+      "raw_sha256": "d98d05c4f15458ce229549551a7d757a7745c7048a4090c98a310599c1fcb200"
+    },
+    "51789baec3df8938b87074462f4b6574b57d84cc": {
+      "occurrences": 1,
+      "raw_bytes": 710,
+      "raw_sha256": "3e5dc9ca7112be3a9b79f403c4de5accd059bc4451b3a419c646deb6aca47e30"
+    },
+    "5193f7e1c079c2d77a5bc80f0ecdeed50b5675ea": {
+      "occurrences": 1,
+      "raw_bytes": 1259,
+      "raw_sha256": "a2d9de6486b6e1e2b5ec52282d7580115fd67c440ad1565054a8555d0a583d41"
+    },
+    "575add97cc2739cb25931fc5e5f3b8d57f5cd8e4": {
+      "occurrences": 1,
+      "raw_bytes": 2023,
+      "raw_sha256": "fbb338490c2c61ff195c669ae237244c18d5b1dd8b8ddabe332e1c12b01cb8f3"
+    },
+    "587c5a911ea4be787087742024217e81165a1c84": {
+      "occurrences": 1,
+      "raw_bytes": 7673,
+      "raw_sha256": "c7665966769962469a878f2f57ee4edde3425d1034cf330702781aaf90091047"
+    },
+    "5935746c75873f51fb68cbb6761381a68acca76d": {
+      "occurrences": 1,
+      "raw_bytes": 5814,
+      "raw_sha256": "a8a1940e2ce0c599c8540d6272ec936adffbe17aea3bc3420f0cccb282dada73"
+    },
+    "5ad3ec34104ae99a87bf02089b6cb9417adc4fe3": {
+      "occurrences": 1,
+      "raw_bytes": 3086,
+      "raw_sha256": "c773518eec27e0a532cb8419ac7534aa0485d54c63a1cee8f4f9abe13b88a5e6"
+    },
+    "5b0cdb105020f1d8763a9861e058059f334d7e0c": {
+      "occurrences": 1,
+      "raw_bytes": 186,
+      "raw_sha256": "760d427782be560cf016409f937fcef6f316ef39649afc4083e0264ef4395211"
+    },
+    "5d5058e2b62c22b3aeca65ecd4ba6d831fe5b4d9": {
+      "occurrences": 2,
+      "raw_bytes": 47900,
+      "raw_sha256": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163"
+    },
+    "61086bfbf8f7df1c19a6f2b9cdf86c432f0399f5": {
+      "occurrences": 1,
+      "raw_bytes": 134,
+      "raw_sha256": "a2243584ed03939d7f2a97dee28253db00d4398520b250937e5cc7038d83affe"
+    },
+    "632bc8dbe7854fa2c35500bdca648b566287bfbd": {
+      "occurrences": 1,
+      "raw_bytes": 6114,
+      "raw_sha256": "d1a4aa103bf5511f682cedcc061020732a91fa0c98894f2358e0622d22ca9d32"
+    },
+    "63a424e8880974ec1cd5aa1773817a9527c6e86c": {
+      "occurrences": 2,
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715"
+    },
+    "660c1f5cb89fbfc001cb3f71abc7bae22c7fde4e": {
+      "occurrences": 1,
+      "raw_bytes": 699,
+      "raw_sha256": "a05fef0d2eb3ae38a3e86b74cf9773bb7949a629c27a016292259ccf1c78e35f"
+    },
+    "679216dc565981e46e93e0d05b0e9a27b178aa25": {
+      "occurrences": 1,
+      "raw_bytes": 1468,
+      "raw_sha256": "2d2661455332faa56d62b2c7157a7c1bfb6ec5fbe8c0b67caad4aff7988ea218"
+    },
+    "6836db62ffdcb45e1cf8e23cd3081104e168c2c5": {
+      "occurrences": 1,
+      "raw_bytes": 3374,
+      "raw_sha256": "6c6a5bccb17845511a9aa3741ca6a5cba6ce9c3ced95e0eb40ab5c35ac655fbd"
+    },
+    "6c6a95d29096bbf1f904da9c607f36f098e77123": {
+      "occurrences": 1,
+      "raw_bytes": 1181,
+      "raw_sha256": "7d6d71d8524f00646ebf55e5bcf273dab6b51172b2a1ae72d4e84ff4d262d4d6"
+    },
+    "6cc4d428600cac3cce909d2b5d1cee8d6a31786c": {
+      "occurrences": 1,
+      "raw_bytes": 753,
+      "raw_sha256": "d28dc280fb9e2a63b3cf3664d775bd5fa9b60e92ed27e20aca65e77b90986ec5"
+    },
+    "6ccb060b208adb1d9c03e716f2d3f26a3dd298cd": {
+      "occurrences": 1,
+      "raw_bytes": 450,
+      "raw_sha256": "b7fafad007b8e1b4faa181ed0dc839f6db27cbae539f58934e7bf3070162d202"
+    },
+    "6d31363c56656a73621e2d5e248b372469b626ab": {
+      "occurrences": 1,
+      "raw_bytes": 743,
+      "raw_sha256": "4d4f2d3339ce3191a019300e0060c3cf4795e5611eb55866541a04e4398f988a"
+    },
+    "6d4abd4e1beba53d90e05d718e2db3e61dc36b5c": {
+      "occurrences": 1,
+      "raw_bytes": 3935,
+      "raw_sha256": "b5b38916ebe498f46c6b51693a104d11c3dfa9cc4156bff9851fb5593b2cdd1f"
+    },
+    "6e4072384b0081cf6d2cd3d61f24e1f7f87859fc": {
+      "occurrences": 1,
+      "raw_bytes": 5791,
+      "raw_sha256": "8d00e0cae82a1ae4e0517db1c33cbb45731240ff9920dd49aeb8b0caab270d08"
+    },
+    "72bac86f7c8c4e8888cd869a46286463cd0f8976": {
+      "occurrences": 1,
+      "raw_bytes": 202,
+      "raw_sha256": "c81fc561fc01d8cf155c1e904c9d88f2b0fcdf2a6585d2437154dadc9d41b0f0"
+    },
+    "7827e922e0e1b73f708c237698c6ecdb8947102a": {
+      "occurrences": 1,
+      "raw_bytes": 5522,
+      "raw_sha256": "7208d4d6fc01ca67ae22369db957dc42dd35e4c4de8dba710e025661ed0ac9e2"
+    },
+    "7b14d46447ed4d7d00957edbdce58e70e5a1290f": {
+      "occurrences": 1,
+      "raw_bytes": 709,
+      "raw_sha256": "02e0595cfae7c5767c783ca55c3edec793f0d982716c8cb945fce605d90495f7"
+    },
+    "7b3c4018b65b44cd11080f733053fb720562d11a": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "03107542b9d3527c701bdc3802726550cabd318b3980fcb9bfffbf1aa2a15dd5"
+    },
+    "7da14d066b80f206689788c99f5853806a015a4e": {
+      "occurrences": 1,
+      "raw_bytes": 1468,
+      "raw_sha256": "841a7f17987a517a7c76d0fd12d1cd96a73628e53a1f00065e7fea34549bfd7b"
+    },
+    "80684aa582b3fcecfa681a14fd8423c3f82b4fb3": {
+      "occurrences": 1,
+      "raw_bytes": 1203,
+      "raw_sha256": "8173ac02caf6100770a2d6887506097e517262afd35b9c06353d1d43ef6eba8e"
+    },
+    "8754c945cf76bda90f3bbd7aa1c73352ce35cdc8": {
+      "occurrences": 1,
+      "raw_bytes": 1767,
+      "raw_sha256": "662ab0ab99bd48d033e9264227babd05aa5643f00982159f0e73051c20efc616"
+    },
+    "892073aa38a469f399d7274f374e0c56bc140c8c": {
+      "occurrences": 1,
+      "raw_bytes": 944,
+      "raw_sha256": "f023a3e10caa88d2cdec55a91ed2394fb6aa52d6370f0581b1ca54dbec87630f"
+    },
+    "92c5a012780f1a5875223147afa714b797465e0e": {
+      "occurrences": 1,
+      "raw_bytes": 4972,
+      "raw_sha256": "3fd75a0fce37ad04cb5a5976478a5b10ef16743527f0e3dceb09ed4c7fcf65c8"
+    },
+    "9718bf53db7a330e054e85a2d407c867e7bf406e": {
+      "occurrences": 1,
+      "raw_bytes": 343,
+      "raw_sha256": "d12fb592fca13e559e9b42672d8e7caddfde1f1327c5eadf6af6e6575c9dc79c"
+    },
+    "9f35d82c3bf08fb5207c25cd76e8e4fd443fba18": {
+      "occurrences": 1,
+      "raw_bytes": 1596,
+      "raw_sha256": "eda4e69a78185044ab1ec9041c9ab65706b141e219c3402c6e79212cd828cfa3"
+    },
+    "a0539d410f6213eb103f96cca7c5e60984d52680": {
+      "occurrences": 1,
+      "raw_bytes": 273,
+      "raw_sha256": "387d96e08132ce446d68c326480956a680fcdc1e5c1b74acfb88d491038c8d2b"
+    },
+    "a153c644fd67f28f8f28542f2b026e4263286bdf": {
+      "occurrences": 2,
+      "raw_bytes": 1431,
+      "raw_sha256": "9e9a9c9bca590caf5fa2ad464cd53969bcb2f2161ca3ab16545e57a120f02927"
+    },
+    "b231a3930f6ab8ef2c0a67a0289fb58149ef78df": {
+      "occurrences": 1,
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431"
+    },
+    "b2af1fe9da4dbfef0e6929e43f8d501ce1a8ac48": {
+      "occurrences": 1,
+      "raw_bytes": 263,
+      "raw_sha256": "a43916c7b85710c7999cf9f8ba268162ce01bc158c4acf4cfda7fb766d40bfef"
+    },
+    "b43b0e6e92dab8ee452d47c126dcef512ddf9edb": {
+      "occurrences": 2,
+      "raw_bytes": 3935,
+      "raw_sha256": "9e10bd581c7d1a31c4224f1f9920d51da929f2d5c8e61cb33cb7b7e506632eec"
+    },
+    "b619d57521efbe8baee53ca6159cdc84870d2e22": {
+      "occurrences": 1,
+      "raw_bytes": 1701,
+      "raw_sha256": "ae0f9924fb980903ab1b398b2825ff8a44a89a3afb6910cca5cb551adb29f461"
+    },
+    "bcf31dc6389c5d13b049df2041bde2fbdb26f268": {
+      "occurrences": 1,
+      "raw_bytes": 1161,
+      "raw_sha256": "7caf394eb720c778fec6aad485435c0d93e74c7b85f2c89873ee774a0d2a14c0"
+    },
+    "bf7be617b9031dfcb8b29dc4f7696f146b5bd571": {
+      "occurrences": 1,
+      "raw_bytes": 2174,
+      "raw_sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab"
+    },
+    "bfc8f0ecedbe5d079a0dd311d1c5331cd6d2d40c": {
+      "occurrences": 2,
+      "raw_bytes": 1186,
+      "raw_sha256": "576bb04e562f18aef5730520a69dcc86deb131b860c7755b14034a0495f50ac3"
+    },
+    "c6a6c9a69808dc3e54697b74d708b596a23bed59": {
+      "occurrences": 1,
+      "raw_bytes": 1525,
+      "raw_sha256": "904fcf97b81a845a865f27b88ab7fd25efd1d2ac76de502df05ba0fe80f968ea"
+    },
+    "c726ca6bde2008f02d8280a529d57b91b778af99": {
+      "occurrences": 2,
+      "raw_bytes": 1525,
+      "raw_sha256": "7626f4395f053eccc0bc5bdc39fd9f63d145e920a3f7bfa4db22cff3c4cbfd7d"
+    },
+    "c83343839865c48da46288d6e617a9bdef3d63f2": {
+      "occurrences": 2,
+      "raw_bytes": 1813,
+      "raw_sha256": "e2daf53b9b861f7b693c98a99247b6ad7e90c70894619150bd82e96daf647c65"
+    },
+    "c9a434f3b0da8cd09d447dc8b1976883747764a0": {
+      "occurrences": 1,
+      "raw_bytes": 1674,
+      "raw_sha256": "a0925fc80c703ae4f400d68fa02836171929cfd50193c8edba43af821aba2ab3"
+    },
+    "cbef42eef7ede225e3789b553b52ec90c4aae430": {
+      "occurrences": 1,
+      "raw_bytes": 6177,
+      "raw_sha256": "8797f6b4bc361eb270b4ee3b70d31ff2b5b04b122c495b7bcfedc24d41a38c0d"
+    },
+    "cd58e1d5352c0bef1973dabd74850b8dbdb501f7": {
+      "occurrences": 1,
+      "raw_bytes": 1406,
+      "raw_sha256": "f3c2d183f36335d6763be47958f08d9f58bd5f4686cade9f4869cc6d065e9e6f"
+    },
+    "cff358775c88d4f0fab34f0476557d766bce0ba5": {
+      "occurrences": 1,
+      "raw_bytes": 491,
+      "raw_sha256": "a4b1cea99be0397bf7f6ba3e152ba0ae1805efee9f788cf925d852b982f0809f"
+    },
+    "d017ca967c2ce9255e36e00303cf00eee091a8d2": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "f40debbe21d05acffc2711a915765c8ac2d91f12d64f21ab7216fffa89ba7fde"
+    },
+    "d49733ab3e8d2a865f5de7ce23c3079cf87298ee": {
+      "occurrences": 1,
+      "raw_bytes": 53310,
+      "raw_sha256": "1d6071dbf7f6530b720f99f363a6fb6074ccdaeff0233f7209c6270f6514dc1e"
+    },
+    "d4ab6f0626a57cfed24387474566735c9ec08935": {
+      "occurrences": 1,
+      "raw_bytes": 1065,
+      "raw_sha256": "f8a4c50c44aad4a5fb9f29dbcb66f11375bd97ad19181463abaa5b7e5a44cf0d"
+    },
+    "df567dc6e2fa633ebf2ea769a2fa96bf03ef250b": {
+      "occurrences": 1,
+      "raw_bytes": 871,
+      "raw_sha256": "53b91a26d87d288eeb8bc392c288a9a7022b156c2f3e257b5e23a271e66a4935"
+    },
+    "e14366392d39cef25b4f7ba353feb5ccfc55cbb1": {
+      "occurrences": 1,
+      "raw_bytes": 4236,
+      "raw_sha256": "35ef7f1c5124d023a487de78e087f488c4d4e88ff437427bcc97df4be5dd6ab8"
+    },
+    "e5dd485a5ecb484e0b71cbaa9400b37043c8fa03": {
+      "occurrences": 1,
+      "raw_bytes": 1158,
+      "raw_sha256": "89f9963633ef4e14d24861d575911f320d8d09bbfe8be4cc2520c3504cda9d2c"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 1,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e73d0dc5741b2c3b0e747e1796b393f5f7db5488": {
+      "occurrences": 1,
+      "raw_bytes": 2313,
+      "raw_sha256": "82b5c887d74da6b4f5e52a1fb751d927308ede552f1f81757f13507d6a568fba"
+    },
+    "e75c9eeca8f32bfe50d9c5a047434ab5bbf44aa6": {
+      "occurrences": 1,
+      "raw_bytes": 726,
+      "raw_sha256": "49a808313956e51eca17e3955abece1b19574a13faf8003c6949c411de788435"
+    },
+    "ed820bf0314fb7ee407abed185030e4e96fd4c2c": {
+      "occurrences": 1,
+      "raw_bytes": 521,
+      "raw_sha256": "86fe4b6946ff330c5fb5fef05907369535329b5bf46942e54bd2ff2fa9d0c02f"
+    },
+    "edf61f261eb2563f7b4ff35d197dc29861d13c6d": {
+      "occurrences": 1,
+      "raw_bytes": 246,
+      "raw_sha256": "93ca133f7f09b52a2f65345fed7788910540f571ad91d32a8913f50d03faf202"
+    },
+    "f08d9feec91ba99803d9ed1ceccc9350fe0078d3": {
+      "occurrences": 1,
+      "raw_bytes": 1800,
+      "raw_sha256": "0e77a245d517a8a423a65bb1fdaf1b6962c2d8760971a865e6cb3c16d88b66c1"
+    },
+    "f18243b8e7a1ff01e34a77a42574f879ca88b794": {
+      "occurrences": 2,
+      "raw_bytes": 11529,
+      "raw_sha256": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7"
+    },
+    "f22c367832a84095220220854129d6186ccc4548": {
+      "occurrences": 1,
+      "raw_bytes": 1203,
+      "raw_sha256": "d8873c443969a45562656977d07d8a67f4a4c179c48a86a69da2fa6de39b7d01"
+    },
+    "f24c47d8b090e64e8fc5753809e73ef342ae3542": {
+      "occurrences": 1,
+      "raw_bytes": 124,
+      "raw_sha256": "f123615b115d15f5fdc793c25b4d1355e7525d6827d4c2aad874a041a699bf1f"
+    },
+    "f2cf2c4fb39b6551e0dbb35fb20dfb9b1e7a99b2": {
+      "occurrences": 1,
+      "raw_bytes": 1788,
+      "raw_sha256": "6dfa6139564eeeab6498e15586ac62f4af7072a454b3ab81da54e456d5f4dc24"
+    },
+    "f538a0e47f6a2319d8e7d54e7d3464506343864e": {
+      "occurrences": 1,
+      "raw_bytes": 2640,
+      "raw_sha256": "d1b1054475fc3ad410004a6aab3e1c3b9556a8556def23db2937236e2cbb9564"
+    },
+    "f71f146bbaeaf416ed8a573b1953f70bf3893fc7": {
+      "occurrences": 1,
+      "raw_bytes": 1422,
+      "raw_sha256": "201628141a211dd2149570441d143dbf6559e2cfecd82ab8525720b863ad439b"
+    },
+    "fdb655cc767266f6e7e463b7f58ee21d2485b492": {
+      "occurrences": 1,
+      "raw_bytes": 728,
+      "raw_sha256": "0e5ab98bf57dc7c9678f91ece36bb035c118e197213b42c319fd572c30220284"
+    },
+    "ffc89bd96f951c0eeedfe4f1103fa1d2ba4ab0f6": {
+      "occurrences": 1,
+      "raw_bytes": 2890,
+      "raw_sha256": "3c7721a6a08beb0df7017d6cbc49378b0c9f3329f08e8d0bbc6911c9e59a5005"
+    }
+  }
+}

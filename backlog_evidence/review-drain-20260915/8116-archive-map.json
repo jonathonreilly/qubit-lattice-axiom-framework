@@ -1,0 +1,192 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "154cca8c3ec742910c14230fc3b36a19909bb62ae235a0ec21e955ed74bc4fa1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-HANDOFF.md",
+    "sha256": "692322d8f26d1e37c365402e6f7eb7a21b74a975e3d312920be4af613d35ee9b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/MECHANICAL_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MECHANICAL_CHECKS.json",
+    "sha256": "d55e491a4ba4f0b57415fcffe48d6f27708381ef11550340479aef136640c2e6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MUTATION_RESULTS.json",
+    "sha256": "0edfbc633717dc1a73f538e18b7cb8e8409f7aad352acb39fdc0304c23f872b2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/PRIMARY_RESULT.json",
+    "sha256": "8dfee6b2bff2f30a24f938908d1931bd6a98a6f30a64c50a182d37744e01072e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/READING_LEDGER.json",
+    "sha256": "6fef07f9bf9b6f02f8c0519a64c35672852acf13e17537c4089b3c516f0c940a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-REVIEW_HISTORY.md",
+    "sha256": "437abb3eccdadd97f70eb4098fc3f3eba2c339d18f03142a96a33e4362c92756"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-TRACE_GATE.md",
+    "sha256": "082258b726ce4ffd78a2ce96df84bd7b9e2b08ea2fba07ff4f700aff149c7d6e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/actual_Wilson_mass_term.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.py.gz",
+    "sha256": "0a5361a702a98bbadb266a06430cb16906e85dde92b6a26192cb137838ef9f81"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/actual_Wilson_mass_term.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stderr.gz",
+    "sha256": "72dd027cefd88119013a01c7f3d8c65d1c47b3c74f86973e65f009e5c7f9c76a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/actual_Wilson_mass_term.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stdout.gz",
+    "sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/aether_kinetic_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.py.gz",
+    "sha256": "580a21382a214bc76f05e632bf632c6cb4eefe2c398a29433f7e4acaa5ab4129"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/aether_kinetic_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stderr.gz",
+    "sha256": "e0ee5c199be11573925cea3da613c8a102526e5bd383fbf677c2dc2ce5f08dc9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/aether_kinetic_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stdout.gz",
+    "sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/collision_gradient_difference.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.py.gz",
+    "sha256": "eb8dc4f3cf30416b2fce4e79f7ba33d5d1ecf11d65fc02b0e4557f6030e35533"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/collision_gradient_difference.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stderr.gz",
+    "sha256": "9474d5f329d010e1f265244608ed6cf6266a078254831baf7a238fd27aac986e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/collision_gradient_difference.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stdout.gz",
+    "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/improved_stencil_normalization.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.py.gz",
+    "sha256": "5c57e20a0a7586f64ba06d12c150c895532a11ce2571e82ba31b4caa462be795"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/improved_stencil_normalization.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stderr.gz",
+    "sha256": "15936ca59bfed379fc19a4720bd211976470a7d0b7312ee683dfcd588084c099"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/improved_stencil_normalization.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stdout.gz",
+    "sha256": "5ff30786ce36d1ddb14d9bff5eae3a35dd826103c3ff3b94083af9b0bee34ef5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/positive_band_projector.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.py.gz",
+    "sha256": "7f2b3c74432901890e94052fd393683c239f3c7237dc71b8b413a30247bff2f2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/positive_band_projector.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stderr.gz",
+    "sha256": "8f3daba05d0a45ac033c5f11dd514d5a2d55946ad7549f4c2cf8c30461b67c64"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/positive_band_projector.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stdout.gz",
+    "sha256": "6f0d3ccf20e0f32f1bbe2a37f815c4a3eb0e27577210540cda4aa067e9712feb"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/reaction_reciprocal_transfer.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.py.gz",
+    "sha256": "b83f081f67c3aaacb638a37666b81668fd5b4e6b2477fc9858e2730ff0982451"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/reaction_reciprocal_transfer.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stderr.gz",
+    "sha256": "84c24229b7b1a3df158760a48c19f6b2fb23f968e6f25d190d5dab0b612298c3"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/reaction_reciprocal_transfer.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stdout.gz",
+    "sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/source_transformation_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.py.gz",
+    "sha256": "cf2a650eefe01b28b5a0a3b82492de0242853c9064550d3cf64dd1e7a8282bbe"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/source_transformation_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stderr.gz",
+    "sha256": "932edbcb3bc42ffcb2a044e88507c0c7b5702de7901c469cb4e56aa5236a6505"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/source_transformation_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stdout.gz",
+    "sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/spin_chain_hopping_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.py.gz",
+    "sha256": "59f1146bf6b9d7af9aaeb9f795c9528674f401464f79e810945c4b0b9d951300"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/spin_chain_hopping_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stderr.gz",
+    "sha256": "9a858ac965f02d42158c47a3967a6389ab1a44d97d236e21f928d8c1a07c7ab8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/spin_chain_hopping_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stdout.gz",
+    "sha256": "3d96fb088b3fd2ac51ad68be5860f233f8bf18fffa6d230280cb0c6864f19a08"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/symmetric_soft_residue.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.py.gz",
+    "sha256": "4b3a97e90495c8444d0595499265136b63ab90f5162747b87a7bbfe175a0c4bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/symmetric_soft_residue.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stderr.gz",
+    "sha256": "e81b0337ab5a58dec06b9f935357cf5775682659bcedc71e2298bbd9a42ef5e7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/symmetric_soft_residue.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stdout.gz",
+    "sha256": "d43bfce7c3fc0fe06f96a5d243657f2a54b8bd8d21b6320a993336318809ff21"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/tilted_shell_cross_term.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.py.gz",
+    "sha256": "7cf2dba5983166903dfd25c73e891b8c974c102cd78a1f461a30696d7c7a570d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/tilted_shell_cross_term.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stderr.gz",
+    "sha256": "87d56b6373bac5dea783a351f36693f5ede7057fb1f97338a31524c976bc74f7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/tilted_shell_cross_term.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stdout.gz",
+    "sha256": "40147d27d9dcfbcd3c792d650eb071cbc9b97437467a34fa8a46343574183117"
+  }
+]

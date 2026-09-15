@@ -1,0 +1,590 @@
+{
+  "scope": "Original inventory116non-draft PRs;11drafts excluded; new arrivals not absorbed",
+  "landed_pr_count": 18,
+  "main": "89ee425f870997fb9796ccc4f4bfe598a98f3b1c",
+  "workflow": "Prior efficiency changes verified remote; stage-manifest and dependent-base lifecycle fixes reviewed, landed, installed sync4994b354ed",
+  "current_validation": "train06: eight coherent units, ten PRs,300sourcepaths,13science notes",
+  "no_final_completion_claim": true,
+  "prs": [
+    {
+      "number": 8010,
+      "original_head": "f29251ea68ba2bcd96c807881eae7bc8c6cfd48e",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8011,
+      "original_head": "11395e60ff268110e8d105ebb61ef4102cbf4b4a",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8012,
+      "original_head": "910fb7caa43ffc5df3d5f16d1c618cba4135fa69",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8013,
+      "original_head": "fc49894fc09b33042752f69bf33d637955bee208",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8014,
+      "original_head": "4aacc14450f2fa7877c25323b1ae25235bae91d5",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8015,
+      "original_head": "99bf0f1984aff1a9cd1fde5cc1ef4f667a046544",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8016,
+      "original_head": "2343266be6c4faf3ba9112ec1cab56b00c471c52",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8017,
+      "original_head": "5680b56f4205536f746340d1f2070e243820981c",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8018,
+      "original_head": "fa8cabc8b6f394a4acfcbc7c2be96c3e22ae6307",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8019,
+      "original_head": "d57943620edd5098df7b6410f952d569730276f5",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8020,
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8021,
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8022,
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8034,
+      "original_head": "f31df16fea66ddf10bd5a9fb173647a71489375e",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8035,
+      "original_head": "9aaa853dcf05c8b99ee2f4997ce0ec2f980cac1d",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8036,
+      "original_head": "6067254e3bca867aa6e737f7aa2bb6078e5d622d",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8037,
+      "original_head": "9ae85474d22ed4a987508293b60bed48f9108a43",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8038,
+      "original_head": "86e03ef9a8eaafb9106304bf54cc0a991c758001",
+      "state": "pending source review"
+    },
+    {
+      "number": 8039,
+      "original_head": "96827c8023a008b5616464fe5d66369b8fa4424f",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8040,
+      "original_head": "2699dd9a380178ca79f4626f5a978d169f1a07b9",
+      "state": "pending source review"
+    },
+    {
+      "number": 8041,
+      "original_head": "73965627fe841159f9c9a6cb43989156572970c9",
+      "state": "pending source review"
+    },
+    {
+      "number": 8042,
+      "original_head": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8043,
+      "original_head": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+      "state": "pending source review"
+    },
+    {
+      "number": 8044,
+      "original_head": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+      "state": "pending source review"
+    },
+    {
+      "number": 8045,
+      "original_head": "31abab83cbec35bac1ad69db1e3e82d1f8e92447",
+      "state": "pending source review"
+    },
+    {
+      "number": 8046,
+      "original_head": "a463f276238e3b276c9927df01e2c201577af78a",
+      "state": "pending source review"
+    },
+    {
+      "number": 8047,
+      "original_head": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+      "state": "pending source review"
+    },
+    {
+      "number": 8048,
+      "original_head": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+      "state": "pending source review"
+    },
+    {
+      "number": 8049,
+      "original_head": "8decd37d32aefcdec680d5bb1bfae79b3f16fb8c",
+      "state": "pending source review"
+    },
+    {
+      "number": 8050,
+      "original_head": "526431a6f31e73af97b7b3d259945f0f566ed547",
+      "state": "pending source review"
+    },
+    {
+      "number": 8051,
+      "original_head": "116505696042571b2759a8dc5d73368eee727794",
+      "state": "pending source review"
+    },
+    {
+      "number": 8052,
+      "original_head": "03696e613d72aa16741e3f533b5bd37a70f09512",
+      "state": "pending source review"
+    },
+    {
+      "number": 8053,
+      "original_head": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+      "state": "pending source review"
+    },
+    {
+      "number": 8054,
+      "original_head": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+      "state": "pending source review"
+    },
+    {
+      "number": 8055,
+      "original_head": "00304d711b630d50d17520d8db83519a492fc28b",
+      "state": "pending source review"
+    },
+    {
+      "number": 8056,
+      "original_head": "38f9a320fad026016303d79987d790c4b5bb7a51",
+      "state": "pending source review"
+    },
+    {
+      "number": 8057,
+      "original_head": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+      "state": "pending source review"
+    },
+    {
+      "number": 8058,
+      "original_head": "a814da6cc1178ac015914c9088fc04b2e635963e",
+      "state": "pending source review"
+    },
+    {
+      "number": 8059,
+      "original_head": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+      "state": "pending source review"
+    },
+    {
+      "number": 8060,
+      "original_head": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+      "state": "pending source review"
+    },
+    {
+      "number": 8061,
+      "original_head": "da572021da3cd5469af0b5bae4f028faf4af3d98",
+      "state": "pending source review"
+    },
+    {
+      "number": 8062,
+      "original_head": "df8112d1642bec7aaaacd380036087b03cdb0173",
+      "state": "pending source review"
+    },
+    {
+      "number": 8063,
+      "original_head": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+      "state": "pending source review"
+    },
+    {
+      "number": 8064,
+      "original_head": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+      "state": "pending source review"
+    },
+    {
+      "number": 8065,
+      "original_head": "b20fb72faf9fb793487a664fb927296c65f7d493",
+      "state": "pending source review"
+    },
+    {
+      "number": 8066,
+      "original_head": "64c1efc6984b16cf95c61e7ac148add85d741606",
+      "state": "pending source review"
+    },
+    {
+      "number": 8067,
+      "original_head": "109b0a1ba906894a12c9139badfdcc26b0e32a31",
+      "state": "pending source review"
+    },
+    {
+      "number": 8068,
+      "original_head": "35cebc55b6bb81c5d0e784cad4e08685ef0d149f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8069,
+      "original_head": "281dbe3fde49512baa2c4005e15985c4fbfb4cde",
+      "state": "pending source review"
+    },
+    {
+      "number": 8070,
+      "original_head": "55c4b53cc2c676ca38f72b0ebe23ecd6bd6f7a60",
+      "state": "pending source review"
+    },
+    {
+      "number": 8071,
+      "original_head": "4f0964492f54b5160b79ff39b60c4b8a4a77f09b",
+      "state": "pending source review"
+    },
+    {
+      "number": 8072,
+      "original_head": "7a399a00394fd6997262a6d11e39adee6be51918",
+      "state": "pending source review"
+    },
+    {
+      "number": 8073,
+      "original_head": "0b80a97dd72b52662f835fa44b2fe803c2ca555e",
+      "state": "pending source review"
+    },
+    {
+      "number": 8074,
+      "original_head": "77411cfb9d526622ea259c50ab0d66996fededb7",
+      "state": "pending source review"
+    },
+    {
+      "number": 8075,
+      "original_head": "64e92035cfd405932bef30bda1ddf6a365430ffe",
+      "state": "pending source review"
+    },
+    {
+      "number": 8076,
+      "original_head": "aa163dfd79252f607b6065435c728c98d67783ea",
+      "state": "pending source review"
+    },
+    {
+      "number": 8077,
+      "original_head": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+      "state": "pending source review"
+    },
+    {
+      "number": 8078,
+      "original_head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+      "state": "pending source review"
+    },
+    {
+      "number": 8079,
+      "original_head": "181e182a14d358c8bca434a1eac398b27237ec8f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8080,
+      "original_head": "ac7bc8d614a67cec5a86d59253be17bf04b98f34",
+      "state": "pending source review"
+    },
+    {
+      "number": 8081,
+      "original_head": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+      "state": "pending source review"
+    },
+    {
+      "number": 8082,
+      "original_head": "dee7f1f07698bc36cfffc4e6495168a9107ff956",
+      "state": "pending source review"
+    },
+    {
+      "number": 8083,
+      "original_head": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+      "state": "pending source review"
+    },
+    {
+      "number": 8084,
+      "original_head": "e56bca5c4edc48d279de8d13edb3884e7b8d8479",
+      "state": "pending source review"
+    },
+    {
+      "number": 8085,
+      "original_head": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+      "state": "pending source review"
+    },
+    {
+      "number": 8086,
+      "original_head": "a3e5529b4d74f618df416747c39bf150b885e495",
+      "state": "pending source review"
+    },
+    {
+      "number": 8087,
+      "original_head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+      "state": "pending source review"
+    },
+    {
+      "number": 8088,
+      "original_head": "af8fc05509d69c46c0113c7eaa240caaff3439db",
+      "state": "pending source review"
+    },
+    {
+      "number": 8089,
+      "original_head": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+      "state": "pending source review"
+    },
+    {
+      "number": 8090,
+      "original_head": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+      "state": "pending source review"
+    },
+    {
+      "number": 8091,
+      "original_head": "28dd88687270388140ad45fbfac9b145f6f8972f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8092,
+      "original_head": "4ad50beb2237097578815a623d963f3427cdcd78",
+      "state": "pending source review"
+    },
+    {
+      "number": 8093,
+      "original_head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "state": "pending source review"
+    },
+    {
+      "number": 8094,
+      "original_head": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+      "state": "pending source review"
+    },
+    {
+      "number": 8095,
+      "original_head": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+      "state": "pending source review"
+    },
+    {
+      "number": 8096,
+      "original_head": "d57291602d909246756f30975f0d862a08e8f836",
+      "state": "pending source review"
+    },
+    {
+      "number": 8097,
+      "original_head": "066bdf07bb4d8780c89c540fa4f06ad8215c7d8f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8098,
+      "original_head": "616362e0a07ed5422d040d182ecbba24265941dd",
+      "state": "pending source review"
+    },
+    {
+      "number": 8099,
+      "original_head": "387cffa600b3dfb319b2975a2b1ec8f6b87ddf22",
+      "state": "pending source review"
+    },
+    {
+      "number": 8100,
+      "original_head": "da3f41192f4d4cbe94b741e1decbbfeae4cf9545",
+      "state": "pending source review"
+    },
+    {
+      "number": 8101,
+      "original_head": "da5b152430bd5a1159a05a586e51e61a7c2c2b7f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8102,
+      "original_head": "fe094b01714c5abaa8038a0b136e6577dfaae034",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8103,
+      "original_head": "3201d7c5452e95c69399fbe7671f862e357623c5",
+      "state": "pending source review"
+    },
+    {
+      "number": 8104,
+      "original_head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+      "state": "pending source review"
+    },
+    {
+      "number": 8105,
+      "original_head": "d2be589c75282455e012ce112caa29521d0efe14",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8106,
+      "original_head": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+      "state": "pending source review"
+    },
+    {
+      "number": 8107,
+      "original_head": "843703422a5bfb0da7a03f5c40ff4ed911ce1e0d",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8108,
+      "original_head": "de223212ed85f6f71f4a8e932eff4d37289dd580",
+      "state": "landed; branch deleted; closure verified"
+    },
+    {
+      "number": 8109,
+      "original_head": "cceb1220b1d89bedc8d24628844afb4b55c61d10",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8110,
+      "original_head": "4f75dd5d2e6e524b48c01c36853d50be7640e6f7",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8111,
+      "original_head": "714c94d0a93977b3ecd7e4b88812c15771541b17",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8112,
+      "original_head": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8113,
+      "original_head": "e5cd8016d0b5afc46cad42322f49c05846e5c8d1",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8114,
+      "original_head": "2c2aba9a86a57c19e007c390e5db2ab6272c7850",
+      "state": "independently reviewed; reserved in closed train06"
+    },
+    {
+      "number": 8115,
+      "original_head": "36607532327386ca6e1ced470d5aa93a026989d5",
+      "state": "independently reviewed; reserved for next train"
+    },
+    {
+      "number": 8116,
+      "original_head": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
+      "state": "independently reviewed; reserved for next train"
+    },
+    {
+      "number": 8117,
+      "original_head": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
+      "state": "independent source review running"
+    },
+    {
+      "number": 8118,
+      "original_head": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
+      "state": "independent source review running"
+    },
+    {
+      "number": 8119,
+      "original_head": "51818db1f29e143921340a94dd035609c3f2c6aa",
+      "state": "pending source review"
+    },
+    {
+      "number": 8120,
+      "original_head": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
+      "state": "pending source review"
+    },
+    {
+      "number": 8121,
+      "original_head": "6f9f79c030fe880cc1aea7c9aaf5fb4f9cc5e14f",
+      "state": "pending source review"
+    },
+    {
+      "number": 8122,
+      "original_head": "a293aa3b67d64eda29ba959d43c209056c9ef7e4",
+      "state": "pending source review"
+    },
+    {
+      "number": 8123,
+      "original_head": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+      "state": "pending source review"
+    },
+    {
+      "number": 8124,
+      "original_head": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+      "state": "pending source review"
+    },
+    {
+      "number": 8125,
+      "original_head": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+      "state": "pending source review"
+    },
+    {
+      "number": 8126,
+      "original_head": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+      "state": "pending source review"
+    },
+    {
+      "number": 8127,
+      "original_head": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+      "state": "pending source review"
+    },
+    {
+      "number": 8128,
+      "original_head": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+      "state": "pending source review"
+    },
+    {
+      "number": 8129,
+      "original_head": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+      "state": "pending source review"
+    },
+    {
+      "number": 8130,
+      "original_head": "7656dcdb01f32b3d47ecbcda04c89cb3b03996f0",
+      "state": "pending source review"
+    },
+    {
+      "number": 8131,
+      "original_head": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+      "state": "pending source review"
+    },
+    {
+      "number": 8132,
+      "original_head": "20866d4606e9fd519cff663028f554d42b2b1013",
+      "state": "pending source review"
+    },
+    {
+      "number": 8133,
+      "original_head": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "state": "pending source review"
+    },
+    {
+      "number": 8134,
+      "original_head": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8",
+      "state": "pending source review"
+    },
+    {
+      "number": 8135,
+      "original_head": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+      "state": "pending source review"
+    },
+    {
+      "number": 8136,
+      "original_head": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
+      "state": "pending source review"
+    }
+  ]
+}

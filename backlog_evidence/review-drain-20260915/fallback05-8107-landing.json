@@ -1,0 +1,55 @@
+{
+  "base": "20fcfa39f9af6c5b6966956253ba8a2aaa6430b3",
+  "source_head": "157ab6fc2a25c347551fbe94fd85bc64f09240e8",
+  "source_tree": "8d24c8b5615573af690cb31cc7a0a49b2012a9dd",
+  "heads": {
+    "8107": "843703422a5bfb0da7a03f5c40ff4ed911ce1e0d"
+  },
+  "source_owners": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "review-8107",
+    "logs/runner-cache/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.txt": "review-8107",
+    "scripts/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.py": "review-8107"
+  },
+  "inputs": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "506aaa2c5511a44e048d253e3b2fdfe07dfb7623be8d2a22d41c58a2f5d19910",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd",
+    "docs/A_READABLE_MATTER_LAW_EXISTS_ON_THE_5X5X5_WINDOW_THE_DESIGNED_LAWS_RECORD_TABLE_COMPLETED_BY_A_COVARIANT_PARITY_RULE_HAS_EVERY_MENU_NONEMPTY_IS_READ_FROM_PARTIAL_BLOCKS_AND_KEEPS_THE_FERMION_BOUNDED_NOTE_2026-09-04.md": "31bbe6cb6d105b8cd2bfb4480159a2b06c722de928d2e6085d1f33d1017c2426",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "logs/runner-cache/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.txt": "2fd4bf016aa9ce5e394fb7d2fd64e06d2c58f6be815903122c97e8865da85605",
+    "scripts/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.py": "db4b75701aa4b3407f69bb54e42898dd3a39cbda7c570797fa17aa53afbccf25"
+  },
+  "review_evidence_hashes": {
+    "review-8107.json": "65da2c8acc41c7b02c9404a3f2279522c84669f336cfcc19f569f1132e2aef6e",
+    "review-8107.md": "86da768779054200aac793b0c3e04342b65c61434aedb2b8f161a7568d577500",
+    "review-8107-workflow-addendum.json": "5750daa0c9788475d9793cb13b2687c46053c91f9f617e1ffb8a548506613ec6",
+    "review-8107-dependency-links.json": "97b877f32cc3d4f9854074b78eca8305074488579a78e9ca9c2696d4054f0f9d",
+    "review-8107-dependency-links.md": "dbbe044f6f0d7405e9ab20eb9a9b63b47efec7e6a2a2e3e5db195989e46937e5"
+  },
+  "departure": "Mandatory single-unit fallback after train05 combined failure; final independently confirmed source and inputs unchanged.",
+  "dependency_expectations": {
+    "docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md": {
+      "required_claim_ids": [
+        "minimal_axioms",
+        "realized_state_primitive",
+        "the_superlattice_role_pattern_is_a_next_nearest_neighbour_support_rule_over_roles_and_roles_are_not_record_values_bounded_theorem_note_2026-09-04",
+        "a_readable_matter_law_exists_on_the_5x5x5_window_the_designed_laws_record_table_completed_by_a_covariant_parity_rule_has_every_menu_nonempty_is_read_from_partial_blocks_and_keeps_the_fermion_bounded_note_2026-09-04"
+      ]
+    }
+  },
+  "candidate_commit": "89ee425f870997fb9796ccc4f4bfe598a98f3b1c",
+  "candidate_tree": "77e8686e66c71a8917510fbd62e6971cba7381c2",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 1,
+  "validation_logs": {
+    "fallback05-8107-pipeline.log": "c27af5924ac7b8f0b8b4cdda27fb8daea6a4c7e9027d7d8171b1b1cf7ef12ff8",
+    "fallback05-8107-strict.log": "ba102d94aafebbcff993d4d2472596f9902adc0758a447be055d7eecf30b8774",
+    "fallback05-8107-evidence.txt": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+    "fallback05-8107-validated-rows.json": "a71bbc09df017668600d9a606b77bd7904779a1dcb75b9dbd34c8ba3053e8e14"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
+}

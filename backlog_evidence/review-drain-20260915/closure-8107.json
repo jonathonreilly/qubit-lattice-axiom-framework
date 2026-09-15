@@ -1,0 +1,24 @@
+{
+  "pr": 8107,
+  "original_head": "843703422a5bfb0da7a03f5c40ff4ed911ce1e0d",
+  "branch": "claude/readability-continuum-alphabet-witness",
+  "landing": "89ee425f870997fb9796ccc4f4bfe598a98f3b1c",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "claude/readability-continuum-alphabet-witness",
+    "headRefOid": "843703422a5bfb0da7a03f5c40ff4ed911ce1e0d",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8107,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8107"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "843703422a5bfb0da7a03f5c40ff4ed911ce1e0d",
+    "state": "CLOSED"
+  }
+}

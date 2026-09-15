@@ -1,0 +1,470 @@
+[detached HEAD 5e2d6c5ef5] Preserve anisotropic source limits and complete bounded evidence packet
+ Date: Tue Sep 15 08:07:08 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 41 files changed, 3080 insertions(+)
+ create mode 100644 docs/GAUGE_WILSON_CUBE_SLAB_ANISOTROPIC_CENTRAL_OSCILLATOR_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/GAUGE_WILSON_CUBE_SLAB_SIMULTANEOUS_ANISOTROPIC_SOURCE_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/CANONICAL_RAW.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/ROOT_REPORTING_REPAIR.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-COMPOSITION_SCOPE_CLARIFICATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/pr8019-original-staging-evidence-native-fixed-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-fixed/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/EXPONENT_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/check_before_structural_zero_fix.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_CONTROL_FAILURE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/native-uniform/pr8019-original-staging-evidence-native-uniform-SCALAR_SUPPLEMENT_PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/SCALAR_CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-CONTROL_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-fixed-review/pr8019-original-staging-evidence-primary-fixed-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-NATIVE_SHARPER_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/pr8019-original-staging-evidence-primary-uniform-reviews-ROOT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/primary-uniform-reviews/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-PROVENANCE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/evidence/root-independent98/pr8019-original-staging-evidence-root-independent98-ROOT_NATIVE_SHARPER_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/pr8019-original-staging-PACK_INDEX.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/original-staging/scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_DISCIPLINE_CHECKLIST.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-ROOT_FINAL_PORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8019-anisotropic-evidence/pr8019-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.txt
+ create mode 100644 scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py
+[detached HEAD 375a0b6a84] Preserve full compact cube transfer and spectral bounds with complete evidence
+ Date: Tue Sep 15 07:54:09 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 98 files changed, 210835 insertions(+)
+ create mode 100644 docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/CANONICAL_LIVE_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/LIVE_SCIENTIFIC_COMPARISON.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_helper.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/ORBITAL_PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/native_HAAR_METRIC_CHECK.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/FREEZE_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check_before_symbolic_order_fix.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-FAILURES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-NATIVE_ROOT_DERIVATION_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_NATIVE_COLD_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_ROOT_METRIC_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_SUPPLEMENT_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_CODE_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_IMPORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_HAAR_METRIC_DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-PROVENANCE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-ROOT_INDEPENDENT_REVIEWS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_DISCIPLINE_CHECKLIST.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-PROOF_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ROOT_FINAL_PORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-SCRATCH_PACK_INDEX.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_FREEZE_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-CERTIFICATE_PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION_FIRST_FREEZE_095c3f80.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-LITERATURE_PROVENANCE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-NATIVE_COLD_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_COLD_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_INDEPENDENT_DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-PROOF_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_CANONICAL_PORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_FINAL_PORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-SCRATCH_PACK_INDEX.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_RAW.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_STDOUT.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/EXECUTION_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_RAW.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_STDOUT.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-N1_N8.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ORBITAL_GAP_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-PACK_INDEX.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REPORTING_REPAIR.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_ALL_COUPLING_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_CANONICAL_PORT_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_LOW_GAP_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/README.md
+ create mode 100644 logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt
+ create mode 100644 logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt
+ create mode 100644 logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt
+ create mode 100644 logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt
+ create mode 100644 scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py
+ create mode 100644 scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py
+ create mode 100644 scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py
+ create mode 100644 scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py
+[detached HEAD f8bbac7b0b] Preserve compact current and finite transfer proofs with historical evidence
+ Date: Tue Sep 15 07:37:47 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 38 files changed, 1557 insertions(+)
+ create mode 100644 docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/TRACE_GATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/Clifford_anticommutation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/affine_real_minimum_norm.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/character_Gaussian_denominator.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/cycle_directed_hopping_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/full_box_remainder_mass.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/physical_source_factor.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/single_cycle_edge_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/spatial_Villain_scaling.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/mutation_evidence/temporal_Villain_scaling.stdout.gz
+ create mode 100644 logs/runner-cache/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.txt
+ create mode 100644 scripts/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.py
+[detached HEAD 1bc50d8890] Give historical compact-current records unique names
+ Date: Tue Sep 15 07:45:41 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 10 insertions(+), 1 deletion(-)
+ rename docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/{CLAIM_STATUS_CERTIFICATE.md => pr8109-CLAIM_STATUS_CERTIFICATE.md} (100%)
+ rename docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/{HANDOFF.md => pr8109-HANDOFF.md} (100%)
+ rename docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/{REVIEW_HISTORY.md => pr8109-REVIEW_HISTORY.md} (100%)
+ rename docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/{TRACE_GATE.md => pr8109-TRACE_GATE.md} (100%)
+[detached HEAD 1c5015144f] Scope graded-zero obstructions to the tested finite support families
+ Date: Tue Sep 15 07:45:41 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1284 insertions(+)
+ create mode 100644 docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md
+ create mode 100644 logs/runner-cache/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.txt
+ create mode 100644 scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py
+[detached HEAD cb386e9908] Link declared upstream sources for reviewed PR8110
+ Date: Tue Sep 15 08:04:06 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+[detached HEAD d28098a98c] Preserve lattice metric proofs with declared premise identities
+ Date: Tue Sep 15 07:45:41 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 38 files changed, 1528 insertions(+)
+ create mode 100644 docs/SPATIAL_LATTICE_GAUGE_FERMION_LOGARITHMS_AND_METRIC_ATTRACTION_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/Weyl_Dirac_multiplicity.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/Weyl_Dirac_multiplicity.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/Weyl_Dirac_multiplicity.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/angular_numerator_derivative.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/angular_numerator_derivative.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/angular_numerator_derivative.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/bubble_midpoint_vertex.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/bubble_midpoint_vertex.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/bubble_midpoint_vertex.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/charge_running_omission.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/charge_running_omission.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/charge_running_omission.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_metric_response_factor.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_metric_response_factor.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_metric_response_factor.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_temporal_trace.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_temporal_trace.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/fermion_temporal_trace.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/gauge_temporal_numerator.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/gauge_temporal_numerator.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/gauge_temporal_numerator.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/photon_contact_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/photon_contact_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/photon_contact_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/threshold_normalization.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/threshold_normalization.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/mutation_evidence/threshold_normalization.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/pr8111-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.txt
+ create mode 100644 scripts/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.py
+[detached HEAD da37f5483a] Link declared upstream sources for reviewed PR8111
+ Date: Tue Sep 15 08:04:06 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+[detached HEAD eaa7dc8a9f] Preserve compact tensor geometry results and historical proof evidence
+ Date: Tue Sep 15 07:51:38 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 38 files changed, 1225 insertions(+)
+ create mode 100644 docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/canonical_offdiagonal_doubling.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/clock_shift_orientation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/curvature_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/electric_trace_reversal.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/gravitational_source_energy_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/mixed_derivative_reality.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_DeWitt_coefficient.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/scalar_stencil_corner_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/mutation_evidence/source_midpoint_phases.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8112-compact-tensor-evidence/pr8112-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.txt
+ create mode 100644 scripts/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.py
+[detached HEAD 4d0cd77bd6] Preserve Spin10 mirror-boundary results with proof identity and evidence
+ Date: Tue Sep 15 07:53:26 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 41 files changed, 1363 insertions(+)
+ create mode 100644 docs/SPIN10_SYMMETRIC_ATOMIC_GAPS_MIRROR_BOUNDARY_PROJECTION_AND_CURRENT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Feshbach_correction_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Feshbach_correction_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Feshbach_correction_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Spin10_Casimir_normalization.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Spin10_Casimir_normalization.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Spin10_Casimir_normalization.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/atomic_composite_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/atomic_composite_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/atomic_composite_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fermionic_CAR_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fermionic_CAR_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fermionic_CAR_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fourth_order_counterterm.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fourth_order_counterterm.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fourth_order_counterterm.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_kernel_recurrence.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_kernel_recurrence.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_kernel_recurrence.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_velocity_orientation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_velocity_orientation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_velocity_orientation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/optical_phase_space_factor.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/optical_phase_space_factor.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/optical_phase_space_factor.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quadratic_auxiliary_weight.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quadratic_auxiliary_weight.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quadratic_auxiliary_weight.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quartic_Grassmann_antisymmetry.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quartic_Grassmann_antisymmetry.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quartic_Grassmann_antisymmetry.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/spin10_symmetric_atomic_gaps_mirror_boundary_projection_and_current_response_2026_09_14.txt
+ create mode 100644 scripts/spin10_symmetric_atomic_gaps_mirror_boundary_projection_and_current_response_2026_09_14.py
+[detached HEAD 8f12f8542f] Scope Gauss support and sequential code laws with complete matching controls
+ Date: Tue Sep 15 08:11:10 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1638 insertions(+)
+ create mode 100644 docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.txt
+ create mode 100644 scripts/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.py
+FROZEN 8f12f8542f2e4341c1b8d3da858a374d4273942b sources 300 inputs 331 notes 13

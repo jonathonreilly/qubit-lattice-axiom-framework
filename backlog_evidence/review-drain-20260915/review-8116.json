@@ -1,0 +1,664 @@
+{
+  "unit": "PR8116",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
+  "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "confirmation_base": "20fcfa39f9af6c5b6966956253ba8a2aaa6430b3",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "154cca8c3ec742910c14230fc3b36a19909bb62ae235a0ec21e955ed74bc4fa1",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "154cca8c3ec742910c14230fc3b36a19909bb62ae235a0ec21e955ed74bc4fa1",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "154cca8c3ec742910c14230fc3b36a19909bb62ae235a0ec21e955ed74bc4fa1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/HANDOFF.md",
+      "original_sha256": "692322d8f26d1e37c365402e6f7eb7a21b74a975e3d312920be4af613d35ee9b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-HANDOFF.md",
+      "sha256": "692322d8f26d1e37c365402e6f7eb7a21b74a975e3d312920be4af613d35ee9b",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "692322d8f26d1e37c365402e6f7eb7a21b74a975e3d312920be4af613d35ee9b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/MECHANICAL_CHECKS.json",
+      "original_sha256": "d55e491a4ba4f0b57415fcffe48d6f27708381ef11550340479aef136640c2e6",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MECHANICAL_CHECKS.json",
+      "sha256": "d55e491a4ba4f0b57415fcffe48d6f27708381ef11550340479aef136640c2e6",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "d55e491a4ba4f0b57415fcffe48d6f27708381ef11550340479aef136640c2e6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/MUTATION_RESULTS.json",
+      "original_sha256": "0edfbc633717dc1a73f538e18b7cb8e8409f7aad352acb39fdc0304c23f872b2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MUTATION_RESULTS.json",
+      "sha256": "0edfbc633717dc1a73f538e18b7cb8e8409f7aad352acb39fdc0304c23f872b2",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "0edfbc633717dc1a73f538e18b7cb8e8409f7aad352acb39fdc0304c23f872b2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/PRIMARY_RESULT.json",
+      "original_sha256": "8dfee6b2bff2f30a24f938908d1931bd6a98a6f30a64c50a182d37744e01072e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/PRIMARY_RESULT.json",
+      "sha256": "8dfee6b2bff2f30a24f938908d1931bd6a98a6f30a64c50a182d37744e01072e",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "8dfee6b2bff2f30a24f938908d1931bd6a98a6f30a64c50a182d37744e01072e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/READING_LEDGER.json",
+      "original_sha256": "6fef07f9bf9b6f02f8c0519a64c35672852acf13e17537c4089b3c516f0c940a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/READING_LEDGER.json",
+      "sha256": "6fef07f9bf9b6f02f8c0519a64c35672852acf13e17537c4089b3c516f0c940a",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "6fef07f9bf9b6f02f8c0519a64c35672852acf13e17537c4089b3c516f0c940a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/REVIEW_HISTORY.md",
+      "original_sha256": "437abb3eccdadd97f70eb4098fc3f3eba2c339d18f03142a96a33e4362c92756",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-REVIEW_HISTORY.md",
+      "sha256": "437abb3eccdadd97f70eb4098fc3f3eba2c339d18f03142a96a33e4362c92756",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "437abb3eccdadd97f70eb4098fc3f3eba2c339d18f03142a96a33e4362c92756"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/TRACE_GATE.md",
+      "original_sha256": "082258b726ce4ffd78a2ce96df84bd7b9e2b08ea2fba07ff4f700aff149c7d6e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-TRACE_GATE.md",
+      "sha256": "082258b726ce4ffd78a2ce96df84bd7b9e2b08ea2fba07ff4f700aff149c7d6e",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "082258b726ce4ffd78a2ce96df84bd7b9e2b08ea2fba07ff4f700aff149c7d6e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/actual_Wilson_mass_term.py.gz",
+      "original_sha256": "0a5361a702a98bbadb266a06430cb16906e85dde92b6a26192cb137838ef9f81",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.py.gz",
+      "sha256": "0a5361a702a98bbadb266a06430cb16906e85dde92b6a26192cb137838ef9f81",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "0a5361a702a98bbadb266a06430cb16906e85dde92b6a26192cb137838ef9f81"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/actual_Wilson_mass_term.stderr.gz",
+      "original_sha256": "72dd027cefd88119013a01c7f3d8c65d1c47b3c74f86973e65f009e5c7f9c76a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stderr.gz",
+      "sha256": "72dd027cefd88119013a01c7f3d8c65d1c47b3c74f86973e65f009e5c7f9c76a",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "72dd027cefd88119013a01c7f3d8c65d1c47b3c74f86973e65f009e5c7f9c76a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/actual_Wilson_mass_term.stdout.gz",
+      "original_sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stdout.gz",
+      "sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/aether_kinetic_sign.py.gz",
+      "original_sha256": "580a21382a214bc76f05e632bf632c6cb4eefe2c398a29433f7e4acaa5ab4129",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.py.gz",
+      "sha256": "580a21382a214bc76f05e632bf632c6cb4eefe2c398a29433f7e4acaa5ab4129",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "580a21382a214bc76f05e632bf632c6cb4eefe2c398a29433f7e4acaa5ab4129"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/aether_kinetic_sign.stderr.gz",
+      "original_sha256": "e0ee5c199be11573925cea3da613c8a102526e5bd383fbf677c2dc2ce5f08dc9",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stderr.gz",
+      "sha256": "e0ee5c199be11573925cea3da613c8a102526e5bd383fbf677c2dc2ce5f08dc9",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "e0ee5c199be11573925cea3da613c8a102526e5bd383fbf677c2dc2ce5f08dc9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/aether_kinetic_sign.stdout.gz",
+      "original_sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stdout.gz",
+      "sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/collision_gradient_difference.py.gz",
+      "original_sha256": "eb8dc4f3cf30416b2fce4e79f7ba33d5d1ecf11d65fc02b0e4557f6030e35533",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.py.gz",
+      "sha256": "eb8dc4f3cf30416b2fce4e79f7ba33d5d1ecf11d65fc02b0e4557f6030e35533",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "eb8dc4f3cf30416b2fce4e79f7ba33d5d1ecf11d65fc02b0e4557f6030e35533"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/collision_gradient_difference.stderr.gz",
+      "original_sha256": "9474d5f329d010e1f265244608ed6cf6266a078254831baf7a238fd27aac986e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stderr.gz",
+      "sha256": "9474d5f329d010e1f265244608ed6cf6266a078254831baf7a238fd27aac986e",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "9474d5f329d010e1f265244608ed6cf6266a078254831baf7a238fd27aac986e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/collision_gradient_difference.stdout.gz",
+      "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/improved_stencil_normalization.py.gz",
+      "original_sha256": "5c57e20a0a7586f64ba06d12c150c895532a11ce2571e82ba31b4caa462be795",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.py.gz",
+      "sha256": "5c57e20a0a7586f64ba06d12c150c895532a11ce2571e82ba31b4caa462be795",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "5c57e20a0a7586f64ba06d12c150c895532a11ce2571e82ba31b4caa462be795"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/improved_stencil_normalization.stderr.gz",
+      "original_sha256": "15936ca59bfed379fc19a4720bd211976470a7d0b7312ee683dfcd588084c099",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stderr.gz",
+      "sha256": "15936ca59bfed379fc19a4720bd211976470a7d0b7312ee683dfcd588084c099",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "15936ca59bfed379fc19a4720bd211976470a7d0b7312ee683dfcd588084c099"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/improved_stencil_normalization.stdout.gz",
+      "original_sha256": "5ff30786ce36d1ddb14d9bff5eae3a35dd826103c3ff3b94083af9b0bee34ef5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stdout.gz",
+      "sha256": "5ff30786ce36d1ddb14d9bff5eae3a35dd826103c3ff3b94083af9b0bee34ef5",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "5ff30786ce36d1ddb14d9bff5eae3a35dd826103c3ff3b94083af9b0bee34ef5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/positive_band_projector.py.gz",
+      "original_sha256": "7f2b3c74432901890e94052fd393683c239f3c7237dc71b8b413a30247bff2f2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.py.gz",
+      "sha256": "7f2b3c74432901890e94052fd393683c239f3c7237dc71b8b413a30247bff2f2",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "7f2b3c74432901890e94052fd393683c239f3c7237dc71b8b413a30247bff2f2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/positive_band_projector.stderr.gz",
+      "original_sha256": "8f3daba05d0a45ac033c5f11dd514d5a2d55946ad7549f4c2cf8c30461b67c64",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stderr.gz",
+      "sha256": "8f3daba05d0a45ac033c5f11dd514d5a2d55946ad7549f4c2cf8c30461b67c64",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "8f3daba05d0a45ac033c5f11dd514d5a2d55946ad7549f4c2cf8c30461b67c64"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/positive_band_projector.stdout.gz",
+      "original_sha256": "6f0d3ccf20e0f32f1bbe2a37f815c4a3eb0e27577210540cda4aa067e9712feb",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stdout.gz",
+      "sha256": "6f0d3ccf20e0f32f1bbe2a37f815c4a3eb0e27577210540cda4aa067e9712feb",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "6f0d3ccf20e0f32f1bbe2a37f815c4a3eb0e27577210540cda4aa067e9712feb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/reaction_reciprocal_transfer.py.gz",
+      "original_sha256": "b83f081f67c3aaacb638a37666b81668fd5b4e6b2477fc9858e2730ff0982451",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.py.gz",
+      "sha256": "b83f081f67c3aaacb638a37666b81668fd5b4e6b2477fc9858e2730ff0982451",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "b83f081f67c3aaacb638a37666b81668fd5b4e6b2477fc9858e2730ff0982451"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/reaction_reciprocal_transfer.stderr.gz",
+      "original_sha256": "84c24229b7b1a3df158760a48c19f6b2fb23f968e6f25d190d5dab0b612298c3",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stderr.gz",
+      "sha256": "84c24229b7b1a3df158760a48c19f6b2fb23f968e6f25d190d5dab0b612298c3",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "84c24229b7b1a3df158760a48c19f6b2fb23f968e6f25d190d5dab0b612298c3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/reaction_reciprocal_transfer.stdout.gz",
+      "original_sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stdout.gz",
+      "sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/source_transformation_sign.py.gz",
+      "original_sha256": "cf2a650eefe01b28b5a0a3b82492de0242853c9064550d3cf64dd1e7a8282bbe",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.py.gz",
+      "sha256": "cf2a650eefe01b28b5a0a3b82492de0242853c9064550d3cf64dd1e7a8282bbe",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "cf2a650eefe01b28b5a0a3b82492de0242853c9064550d3cf64dd1e7a8282bbe"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/source_transformation_sign.stderr.gz",
+      "original_sha256": "932edbcb3bc42ffcb2a044e88507c0c7b5702de7901c469cb4e56aa5236a6505",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stderr.gz",
+      "sha256": "932edbcb3bc42ffcb2a044e88507c0c7b5702de7901c469cb4e56aa5236a6505",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "932edbcb3bc42ffcb2a044e88507c0c7b5702de7901c469cb4e56aa5236a6505"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/source_transformation_sign.stdout.gz",
+      "original_sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stdout.gz",
+      "sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/spin_chain_hopping_sign.py.gz",
+      "original_sha256": "59f1146bf6b9d7af9aaeb9f795c9528674f401464f79e810945c4b0b9d951300",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.py.gz",
+      "sha256": "59f1146bf6b9d7af9aaeb9f795c9528674f401464f79e810945c4b0b9d951300",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "59f1146bf6b9d7af9aaeb9f795c9528674f401464f79e810945c4b0b9d951300"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/spin_chain_hopping_sign.stderr.gz",
+      "original_sha256": "9a858ac965f02d42158c47a3967a6389ab1a44d97d236e21f928d8c1a07c7ab8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stderr.gz",
+      "sha256": "9a858ac965f02d42158c47a3967a6389ab1a44d97d236e21f928d8c1a07c7ab8",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "9a858ac965f02d42158c47a3967a6389ab1a44d97d236e21f928d8c1a07c7ab8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/spin_chain_hopping_sign.stdout.gz",
+      "original_sha256": "3d96fb088b3fd2ac51ad68be5860f233f8bf18fffa6d230280cb0c6864f19a08",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stdout.gz",
+      "sha256": "3d96fb088b3fd2ac51ad68be5860f233f8bf18fffa6d230280cb0c6864f19a08",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "3d96fb088b3fd2ac51ad68be5860f233f8bf18fffa6d230280cb0c6864f19a08"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/symmetric_soft_residue.py.gz",
+      "original_sha256": "4b3a97e90495c8444d0595499265136b63ab90f5162747b87a7bbfe175a0c4bd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.py.gz",
+      "sha256": "4b3a97e90495c8444d0595499265136b63ab90f5162747b87a7bbfe175a0c4bd",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "4b3a97e90495c8444d0595499265136b63ab90f5162747b87a7bbfe175a0c4bd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/symmetric_soft_residue.stderr.gz",
+      "original_sha256": "e81b0337ab5a58dec06b9f935357cf5775682659bcedc71e2298bbd9a42ef5e7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stderr.gz",
+      "sha256": "e81b0337ab5a58dec06b9f935357cf5775682659bcedc71e2298bbd9a42ef5e7",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "e81b0337ab5a58dec06b9f935357cf5775682659bcedc71e2298bbd9a42ef5e7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/symmetric_soft_residue.stdout.gz",
+      "original_sha256": "d43bfce7c3fc0fe06f96a5d243657f2a54b8bd8d21b6320a993336318809ff21",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stdout.gz",
+      "sha256": "d43bfce7c3fc0fe06f96a5d243657f2a54b8bd8d21b6320a993336318809ff21",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "d43bfce7c3fc0fe06f96a5d243657f2a54b8bd8d21b6320a993336318809ff21"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/tilted_shell_cross_term.py.gz",
+      "original_sha256": "7cf2dba5983166903dfd25c73e891b8c974c102cd78a1f461a30696d7c7a570d",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.py.gz",
+      "sha256": "7cf2dba5983166903dfd25c73e891b8c974c102cd78a1f461a30696d7c7a570d",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "7cf2dba5983166903dfd25c73e891b8c974c102cd78a1f461a30696d7c7a570d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/tilted_shell_cross_term.stderr.gz",
+      "original_sha256": "87d56b6373bac5dea783a351f36693f5ede7057fb1f97338a31524c976bc74f7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stderr.gz",
+      "sha256": "87d56b6373bac5dea783a351f36693f5ede7057fb1f97338a31524c976bc74f7",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "87d56b6373bac5dea783a351f36693f5ede7057fb1f97338a31524c976bc74f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block8/mutation_evidence/tilted_shell_cross_term.stdout.gz",
+      "original_sha256": "40147d27d9dcfbcd3c792d650eb071cbc9b97437467a34fa8a46343574183117",
+      "final_path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stdout.gz",
+      "sha256": "40147d27d9dcfbcd3c792d650eb071cbc9b97437467a34fa8a46343574183117",
+      "disposition": "Exact-byte historical evidence preserved; not current review or audit authority",
+      "final_sha256": "40147d27d9dcfbcd3c792d650eb071cbc9b97437467a34fa8a46343574183117"
+    },
+    {
+      "original_path": "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_sha256": "85f2ab6769d93147efb4d692b17417f9d7e03383d23ce91d2317695eaefed5de",
+      "final_path": "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "disposition": "Canonical source retained; narrow author packaging/reporting corrections independently confirmed",
+      "final_sha256": "3e382d53df7221a144f5f71bda33bc6d9f45a6d01bcaedc515eadc54236bc893"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "203944793a8076d376232c821ce1b5f887523d4ad742518bef65b8f4c32db5a3",
+      "disposition": "Generated topology acknowledgment omitted; coordinator regenerates for combined topology"
+    },
+    {
+      "original_path": "logs/runner-cache/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt",
+      "original_sha256": "73b2f9e3356eabbe99bc8e5b77c307f173b284bbf78fe939d7f142d331eb4bd5",
+      "final_path": "logs/runner-cache/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt",
+      "disposition": "Canonical source retained; narrow author packaging/reporting corrections independently confirmed",
+      "final_sha256": "213590d976c614151f374a30dc5595ebc06762c37e55c38eb8143c61d0fda8a8"
+    },
+    {
+      "original_path": "scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py",
+      "original_sha256": "93009e775551058256922f967814600e748ea7d39cf7c6184b1a3effb474f423",
+      "final_path": "scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py",
+      "disposition": "Canonical source retained; narrow author packaging/reporting corrections independently confirmed",
+      "final_sha256": "c22fce40fbfd9859b07534a3e020d146086baed74d2a583eb5b70070bea5fdee"
+    }
+  ],
+  "repository_claim_dependencies": [],
+  "external_mathematical_imports": [
+    "Implicit-function theorem, polynomial/real-analytic identity principles, finite linear algebra and Taylor estimates",
+    "Supplied Einstein-aether action and Einstein quadratic comparator; action/signs verified against https://arxiv.org/html/0801.1547v2",
+    "Hertzberg-Sandora soft-graviton argument credited as prior art; collision and divisor proof given here"
+  ],
+  "primary_receipt": {
+    "exit_code": 0,
+    "elapsed_sec": 1.7683577919378877,
+    "cap_seconds": 90,
+    "runner_sha256": "93009e775551058256922f967814600e748ea7d39cf7c6184b1a3effb474f423"
+  },
+  "independent_checks": [
+    "Manual noncollinear anchor argument and mixed-species propagation",
+    "Complex-null divisor rank/spanning including real null hard poles",
+    "Hard-graviton isotropic shell coefficients and conserved reaction shifts",
+    "Finite analytic matrix determinant continuation versus bounded spectrum",
+    "XY shortest-path and contour-bound derivation",
+    "Independent aether Hessian Schur complements",
+    "Independent moment-system solve R1 through6",
+    "Independent high precision two-collision cancellation controls"
+  ],
+  "findings": [
+    "Historical review link missing in initial proposal; corrected with complete38file exact-byte archive",
+    "Noncanonical TOTAL summary; author correction pending",
+    "Historical current/unmerged labels and failure-receipt wording; narrow author correction pending"
+  ],
+  "full_pipeline_runs": 0,
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_REFLECTED_CURVATURE_CANONICAL_REDUCTION_SCHUR_POLE_TT_SPECTRAL_WEIGHT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-23.md",
+      "sha256": "e0bebf22b61e304a83233d00e72b963ea7df12beaa2200129a5e9910d73ae077",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "scientific_file_inputs": [],
+  "claim_dispositions": {
+    "sections1to4": "Conditional collision invariants, pole factorization, affine shells, common cone under explicit hard-graviton premise",
+    "sections5to8": "Explicit Dirac/Wilson obstructions; bounded analytic finite-band theorem; approximate stencil and conserved valley offsets survive",
+    "section9": "Supplied XY model lacks exact finite-spacing causal support; continuum outside-front tail bound survives",
+    "section10": "Supplied Einstein-aether action has stable linear five-mode example and mixed-source Ward identity; no native/nonlinear/UV claim",
+    "N1toN8": "PASS; universal lattice/axiom no-go explicitly rejected"
+  },
+  "source_loss_check": "Proposal adds canonical source and historical archive only; no existing current-main path changed or removed. Original42 paths fully mapped; topology manifest deferred to combined regeneration.",
+  "receipts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/source.patch",
+      "sha256": "34a01ff1251d1c45123f61c34fdfdb8d64d36a716ca2208291eaba8607d8075b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/primary.json",
+      "sha256": "e72efc40bfa2eda08f22dd56bc4697892fcc78da6ea6db3a0cb0759300b62223"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/independent.py",
+      "sha256": "b254efe90565068eb276301ecc131c87b1dc2664707de5df5cfd264072f1a295"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/required-archive.json",
+      "sha256": "71ff926d88de39b2e68208edead8db595d7605d0f1aa80a8c9a083efacacf589"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/primary.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/inventory.json",
+      "sha256": "d5aec96340c43f741ddac55aa584eee539885778e78f20a0fadd6ef06f12f070"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/mutation-inspection.txt",
+      "sha256": "9c93e9dd510e1493bd1f9ec1ac2a886a2f935f48897bfd3a921b80e920c6dad8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/primary.stdout",
+      "sha256": "5bb992ce867f0cc881d060d55a7d7c624cfc2f71c2279d5d8b2ceaf63c60ba20"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8116/independent.json",
+      "sha256": "f54011c1a3e03ecec6e2515b2f7d39f222a48d7be249ad139871b7dd71c8fd84"
+    }
+  ],
+  "final_files": [
+    {
+      "path": "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "3e382d53df7221a144f5f71bda33bc6d9f45a6d01bcaedc515eadc54236bc893",
+      "git_blob": "56c70be623a793efa08f7ce5618a435d6d63d91f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MECHANICAL_CHECKS.json",
+      "sha256": "d55e491a4ba4f0b57415fcffe48d6f27708381ef11550340479aef136640c2e6",
+      "git_blob": "9d84dc195ff12d0a7125accba3c2097e6c9e1356"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MUTATION_RESULTS.json",
+      "sha256": "0edfbc633717dc1a73f538e18b7cb8e8409f7aad352acb39fdc0304c23f872b2",
+      "git_blob": "ea443c273dd1f575c5e6d1e4423df8eaf7c59ac8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/PRIMARY_RESULT.json",
+      "sha256": "8dfee6b2bff2f30a24f938908d1931bd6a98a6f30a64c50a182d37744e01072e",
+      "git_blob": "a4c39f17855c13f93d7de37dc80166cf597d0b46"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/READING_LEDGER.json",
+      "sha256": "6fef07f9bf9b6f02f8c0519a64c35672852acf13e17537c4089b3c516f0c940a",
+      "git_blob": "eb50f433b367acfd3f613c46f5ed1d641bdcfd1b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/README.md",
+      "sha256": "411d207b9310bd398372031056fc81de68f8c72c978be2839b8331393ac540a8",
+      "git_blob": "4081c38d1c70f98e3ead9dfcb7d8dcb6867a7d16"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.py.gz",
+      "sha256": "0a5361a702a98bbadb266a06430cb16906e85dde92b6a26192cb137838ef9f81",
+      "git_blob": "43e3e4af038ae0019fbe53ebc28950b2b61bcf92"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stderr.gz",
+      "sha256": "72dd027cefd88119013a01c7f3d8c65d1c47b3c74f86973e65f009e5c7f9c76a",
+      "git_blob": "8886387172bffde457bc7e3c97de158749aa32cd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stdout.gz",
+      "sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd",
+      "git_blob": "fb4c3bf2b9f13f9e9b893f5215218195833a32c2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.py.gz",
+      "sha256": "580a21382a214bc76f05e632bf632c6cb4eefe2c398a29433f7e4acaa5ab4129",
+      "git_blob": "2643c9930c098f1ce4c8b2ec0cc039e4a7f23e7c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stderr.gz",
+      "sha256": "e0ee5c199be11573925cea3da613c8a102526e5bd383fbf677c2dc2ce5f08dc9",
+      "git_blob": "bbfd94076e464d3a6929aa270b9393c5402fb3f6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stdout.gz",
+      "sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5",
+      "git_blob": "17a9120867cc95245eb48fb8a1e931aa74f5bff5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.py.gz",
+      "sha256": "eb8dc4f3cf30416b2fce4e79f7ba33d5d1ecf11d65fc02b0e4557f6030e35533",
+      "git_blob": "d763efb7ff4e29956eb6c2e4ca0b7e20653ce182"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stderr.gz",
+      "sha256": "9474d5f329d010e1f265244608ed6cf6266a078254831baf7a238fd27aac986e",
+      "git_blob": "d810272318163786808f7f9ed7c76e8011413c85"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.py.gz",
+      "sha256": "5c57e20a0a7586f64ba06d12c150c895532a11ce2571e82ba31b4caa462be795",
+      "git_blob": "5dad80717703fa7b1d3098bd8a414d1164dcdff4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stderr.gz",
+      "sha256": "15936ca59bfed379fc19a4720bd211976470a7d0b7312ee683dfcd588084c099",
+      "git_blob": "8a9502f9db765f1727e55bf8ff1546d51d948d00"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stdout.gz",
+      "sha256": "5ff30786ce36d1ddb14d9bff5eae3a35dd826103c3ff3b94083af9b0bee34ef5",
+      "git_blob": "2ca67a0e2430cc7711a84022a5c56f57a42070b7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.py.gz",
+      "sha256": "7f2b3c74432901890e94052fd393683c239f3c7237dc71b8b413a30247bff2f2",
+      "git_blob": "10e05e1abaacc467e8ba79ace111c5bebefb635d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stderr.gz",
+      "sha256": "8f3daba05d0a45ac033c5f11dd514d5a2d55946ad7549f4c2cf8c30461b67c64",
+      "git_blob": "0845c2b76ab8fe9875ef53bb0ddb86ded6df8156"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stdout.gz",
+      "sha256": "6f0d3ccf20e0f32f1bbe2a37f815c4a3eb0e27577210540cda4aa067e9712feb",
+      "git_blob": "9d76d20ddc730a3af72c0aae274fa8165fff44a8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.py.gz",
+      "sha256": "b83f081f67c3aaacb638a37666b81668fd5b4e6b2477fc9858e2730ff0982451",
+      "git_blob": "be4ec8afdca488f629de591ab2579778fbaa373e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stderr.gz",
+      "sha256": "84c24229b7b1a3df158760a48c19f6b2fb23f968e6f25d190d5dab0b612298c3",
+      "git_blob": "2bed5ad75e738c8f4256fd67eea79117cdd3b868"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stdout.gz",
+      "sha256": "947267f84391fb0ace0db00059eaa036b8c1c982bdcc1675ef168de4400ba5bd",
+      "git_blob": "fb4c3bf2b9f13f9e9b893f5215218195833a32c2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.py.gz",
+      "sha256": "cf2a650eefe01b28b5a0a3b82492de0242853c9064550d3cf64dd1e7a8282bbe",
+      "git_blob": "9d5c05f0829e9ca976cb9e63f5bd0d83db46df1c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stderr.gz",
+      "sha256": "932edbcb3bc42ffcb2a044e88507c0c7b5702de7901c469cb4e56aa5236a6505",
+      "git_blob": "fc998cec5fab6fc236cb39a5e6cb06d752b5dea5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stdout.gz",
+      "sha256": "6d2fb4ec3f3f7115032769b84b0268a3c257de9e747adc1e965071fd357bb6b5",
+      "git_blob": "17a9120867cc95245eb48fb8a1e931aa74f5bff5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.py.gz",
+      "sha256": "59f1146bf6b9d7af9aaeb9f795c9528674f401464f79e810945c4b0b9d951300",
+      "git_blob": "e42e2fc39acadfe993a6780ad1ad187a021c45aa"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stderr.gz",
+      "sha256": "9a858ac965f02d42158c47a3967a6389ab1a44d97d236e21f928d8c1a07c7ab8",
+      "git_blob": "52b6fe504f11ac3b3f231cda6967cdb659631a3f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stdout.gz",
+      "sha256": "3d96fb088b3fd2ac51ad68be5860f233f8bf18fffa6d230280cb0c6864f19a08",
+      "git_blob": "3b3ee501785ad734a3d1ebdffbc2ea2cacb2ec79"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.py.gz",
+      "sha256": "4b3a97e90495c8444d0595499265136b63ab90f5162747b87a7bbfe175a0c4bd",
+      "git_blob": "f4c992ce402691da2a2f70533fbc7ec6b00fa704"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stderr.gz",
+      "sha256": "e81b0337ab5a58dec06b9f935357cf5775682659bcedc71e2298bbd9a42ef5e7",
+      "git_blob": "a102d3e25e9b152c72965df9b1f74c1b61632e27"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stdout.gz",
+      "sha256": "d43bfce7c3fc0fe06f96a5d243657f2a54b8bd8d21b6320a993336318809ff21",
+      "git_blob": "93a87bd94b93e71d9991a500751919a492cec668"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.py.gz",
+      "sha256": "7cf2dba5983166903dfd25c73e891b8c974c102cd78a1f461a30696d7c7a570d",
+      "git_blob": "f4b40586bbf6eb660171ad84fa03e8369929e44f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stderr.gz",
+      "sha256": "87d56b6373bac5dea783a351f36693f5ede7057fb1f97338a31524c976bc74f7",
+      "git_blob": "06552ed9fa31be9d17756a555d1082a4b531348e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stdout.gz",
+      "sha256": "40147d27d9dcfbcd3c792d650eb071cbc9b97437467a34fa8a46343574183117",
+      "git_blob": "05ffdfed09e2cd6bf08c9edcf6d323518a012e3c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "154cca8c3ec742910c14230fc3b36a19909bb62ae235a0ec21e955ed74bc4fa1",
+      "git_blob": "d17324bbf31921b026d81fae49dd32c2563027af"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-HANDOFF.md",
+      "sha256": "692322d8f26d1e37c365402e6f7eb7a21b74a975e3d312920be4af613d35ee9b",
+      "git_blob": "29094042321a59ffdd2052bb89fe7856deea8313"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-REVIEW_HISTORY.md",
+      "sha256": "437abb3eccdadd97f70eb4098fc3f3eba2c339d18f03142a96a33e4362c92756",
+      "git_blob": "120988590ef9276bf5d1e499c4dce163c364924b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-TRACE_GATE.md",
+      "sha256": "082258b726ce4ffd78a2ce96df84bd7b9e2b08ea2fba07ff4f700aff149c7d6e",
+      "git_blob": "c874c3da07803215cffdd534547a298e21275935"
+    },
+    {
+      "path": "logs/runner-cache/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt",
+      "sha256": "213590d976c614151f374a30dc5595ebc06762c37e55c38eb8143c61d0fda8a8",
+      "git_blob": "bfd0e7d47d5af22de6f31e3e1c4f7b7af669cf9a"
+    },
+    {
+      "path": "scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py",
+      "sha256": "c22fce40fbfd9859b07534a3e020d146086baed74d2a583eb5b70070bea5fdee",
+      "git_blob": "3fe2e8455fda1d8275ae78b60f85f3baabd9339a"
+    }
+  ],
+  "final_tree": "c947cf711a9a0c2e5b3689ef405d88351202ef93",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8116-author-copy",
+  "final_execution": {
+    "runner": "scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "PASS collision_geometry [{\"d\": 2, \"gradient_nullity\": 3, \"velocity_image\": \"quadratic\"}, {\"d\": 2, \"gradient_nullity\": 3, \"velocity_image\": \"massive\"}, {\"d\": 2, \"gradient_nullity\": 3, \"velocity_image\": \"massless\"}, {\"d\": 3, \"gradient_nullity\": 4, \"velocity_image\": \"quadratic\"}, {\"d\": 3, \"gradient_nullity\": 4, \"velocity_image\": \"massive\"}, {\"d\": 3, \"gradient_nullity\": 4, \"velocity_image\": \"massless\"}, {\"d\": 4, \"gradient_nullity\": 5, \"velocity_image\": \"quadratic\"}, {\"d\": 4, \"gradient_nullity\": 5, \"velocity_image\": \"massive\"}, {\"d\": 4, \"gradient_nullity\": 5, \"velocity_image\": \"massless\"}]\nPASS cubic_and_integrability {\"fixed_vectors\": 0, \"general_affine_shell_gradient\": \"exact\", \"matrix_commutant_dimension\": 1, \"proper_cubic_rotations\": 24, \"shifted_common_shell\": \"exact\"}\nPASS soft_pole_check {\"exact_nullity\": 1, \"exact_rank\": 39, \"hard_legs\": 4, \"null_divisor_span\": 3, \"null_hard_leg_exact_rank\": 39, \"null_hard_leg_soft_directions\": 45, \"real_soft_directions\": 49, \"smallest_nonzero_numeric_singular_value\": 0.0631606107816665, \"symmetric_unknowns\": 40}\nPASS dirac_band_collision [{\"bound\": 0.0001420327159853951, \"k\": 0.05, \"m\": 0.4, \"ward_defect\": 6.24609472642465e-05, \"y\": 0.02493590277737288}, {\"bound\": 0.001130989491606569, \"k\": 0.1, \"m\": 0.4, \"ward_defect\": 0.0004987512492975327, \"y\": 0.04949544047553165}, {\"bound\": 0.00889532336321932, \"k\": 0.2, \"m\": 0.4, \"ward_defect\": 0.003960159640735983, \"y\": 0.09619349028600421}, {\"bound\": 0.12818480773258417, \"k\": 0.5, \"m\": 0.4, \"ward_defect\": 0.0586900462002547, \"y\": 0.20422003795665475}, {\"bound\": 0.00014217612268830872, \"k\": 0.05, \"m\": 1, \"ward_defect\": 6.24609472642465e-05, \"y\": 0.024976571020841828}, {\"bound\": 0.001135430789262477, \"k\": 0.1, \"m\": 1, \"ward_defect\": 0.0004987512492975327, \"y\": 0.04981277037592021}, {\"bound\": 0.0090211301355776, \"k\": 0.2, \"m\": 1, \"ward_defect\": 0.003960159640735955, \"y\": 0.09850836832232013}, {\"bound\": 0.1347413436369047, \"k\": 0.5, \"m\": 1, \"ward_defect\": 0.0586900462002547, \"y\": 0.22721940219803377}, {\"bound\": 0.00014219677209367733, \"k\": 0.05, \"m\": 2, \"ward_defect\": 6.246094726425344e-05, \"y\": 0.024982418746689983}, {\"bound\": 0.0011360852312118745, \"k\": 0.1, \"m\": 2, \"ward_defect\": 0.0004987512492975327, \"y\": 0.0498592748658824}, {\"bound\": 0.009041286774771859, \"k\": 0.2, \"m\": 2, \"ward_defect\": 0.003960159640735983, \"y\": 0.09887179240165318}, {\"bound\": 0.13626563494307545, \"k\": 0.5, \"m\": 2, \"ward_defect\": 0.0586900462002547, \"y\": 0.23210700193046885}]\nPASS improved_derivatives [{\"coefficients\": [\"1\"], \"current_error_order\": 3, \"leading_derivative_error\": \"-1/6\", \"range\": 1, \"uniform_Taylor_bound_constant\": 0.6666666666666666}, {\"coefficients\": [\"4/3\", \"-1/6\"], \"current_error_order\": 5, \"leading_derivative_error\": \"-1/30\", \"range\": 2, \"uniform_Taylor_bound_constant\": 0.3703703703703703}, {\"coefficients\": [\"3/2\", \"-3/10\", \"1/30\"], \"current_error_order\": 7, \"leading_derivative_error\": \"-1/140\", \"range\": 3, \"uniform_Taylor_bound_constant\": 0.20590476190476192}, {\"coefficients\": [\"8/5\", \"-2/5\", \"8/105\", \"-1/140\"], \"current_error_order\": 9, \"leading_derivative_error\": \"-1/630\", \"range\": 4, \"uniform_Taylor_bound_constant\": 0.1149560522621747}, {\"coefficients\": [\"5/3\", \"-10/21\", \"5/42\", \"-5/252\", \"1/630\"], \"current_error_order\": 11, \"leading_derivative_error\": \"-1/2772\", \"range\": 5, \"uniform_Taylor_bound_constant\": 0.06440098756383295}]\nPASS reaction_offsets_and_native_band {\"Dirac_trial_shell_determinant_leading\": \"x^8/9\", \"closed_menu_bad_residual_pi\": -2, \"consistent_valley_offsets_pi\": [\"1/2\", \"-1/2\", \"3/2\"], \"native_tangent_band\": [{\"cone_squared_defect\": -8.330556051538984e-06, \"tangent_momentum\": 0.1, \"zeta\": 0.3}, {\"cone_squared_defect\": -0.0006729782512121113, \"tangent_momentum\": 0.3, \"zeta\": 0.3}, {\"cone_squared_defect\": -0.010671229819356753, \"tangent_momentum\": 0.6, \"zeta\": 0.3}, {\"cone_squared_defect\": -8.330556051535515e-06, \"tangent_momentum\": 0.1, \"zeta\": 0.7}, {\"cone_squared_defect\": -0.0006729782512120419, \"tangent_momentum\": 0.3, \"zeta\": 0.7}, {\"cone_squared_defect\": -0.010671229819356254, \"tangent_momentum\": 0.6, \"zeta\": 0.7}, {\"cone_squared_defect\": -8.330556051535515e-06, \"tangent_momentum\": 0.1, \"zeta\": 0.95}, {\"cone_squared_defect\": -0.0006729782512120419, \"tangent_momentum\": 0.3, \"zeta\": 0.95}, {\"cone_squared_defect\": -0.010671229819356254, \"tangent_momentum\": 0.6, \"zeta\": 0.95}]}\nPASS lattice_causal_tails {\"continuum_outside_axis_front\": [{\"amplitude\": 0.004028667820819004, \"bound\": 0.027120647383467953, \"distance_sites\": 8, \"inverse_spacing\": 4}, {\"amplitude\": 7.800639546730827e-05, \"bound\": 0.0007355295144984073, \"distance_sites\": 16, \"inverse_spacing\": 8}, {\"amplitude\": 4.0779131952200746e-08, \"bound\": 5.410036666982627e-07, \"distance_sites\": 32, \"inverse_spacing\": 16}, {\"amplitude\": 1.564134754608586e-14, \"bound\": 2.9268496738096485e-13, \"distance_sites\": 64, \"inverse_spacing\": 32}], \"nonzero_remote_occupation_probabilities\": [0.9929647105221466, 0.007022876801392058, 1.2402941394383572e-05, 9.730772490069837e-09, 4.293290333719706e-12, 1.2121455218726911e-15, 2.3770031731977733e-19], \"qubit_chain_sites\": 7}\nPASS preferred_frame_quadratic {\"exact_full_equation_pole_weights\": [\"9/10\", \"1/5\", \"54/5\"], \"gauge_section_determinant\": \"-(9*w**2 - 10)**2*(18*w**2 - 19)**2*(54*w**2 - 95)/1000000000\", \"metric_only_Ward_assumed\": false, \"mode_counts\": [{\"additional_mode_nullity\": 2, \"gauge_nullity\": 4, \"speed_squared\": \"10/9\"}, {\"additional_mode_nullity\": 2, \"gauge_nullity\": 4, \"speed_squared\": \"19/18\"}, {\"additional_mode_nullity\": 1, \"gauge_nullity\": 4, \"speed_squared\": \"95/54\"}], \"positive_reduced_kinetic_and_gradient_coefficients\": [\"9/20\", \"1/2\", \"1/10\", \"19/180\", \"27/5\", \"19/2\"], \"quadratic_gauge_directions\": 4, \"unfixed_fields\": 13}\nTOTAL: PASS=8 FAIL=0\nper_element: exact residue, action, characteristic and stencil identities are checked in their declared conventions.\nper_site: the full seven-qubit nearest-neighbor XY Hamiltonian and occupation response are constructed and compared.\nper_mode: actual Dirac/Wilson eigenmodes and the complete thirteen-field aether quadratic symbol are checked.\nper_block: exact four-leg collision kernels, reaction menus and a gauge-section determinant provide finite falsifiers.\nlattice_wide: checked and not executed \u2014 quantified family claims use the written proofs; no interacting gravity phase is established.\n",
+    "stderr": "",
+    "elapsed_sec": 1.7862420082092285,
+    "timeout_sec": 90,
+    "live_log": "/private/tmp/review-drain-20260915/unit8116-author-copy/logs/runner-cache/.in-progress/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt"
+  },
+  "findings_resolved": 3,
+  "remaining_findings": [],
+  "fix_confirmation": "Original-session cold read: only canonical TOTAL, precise historical comparison/failure account and archive relink; science unchanged. Final cache actual fresh invocation and source hash verified.",
+  "audit_boundary": "No audit verdict granted; combined gate remains coordinator responsibility; native interacting spin-2 phase remains open."
+}

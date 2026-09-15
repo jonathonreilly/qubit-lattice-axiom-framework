@@ -59,3 +59,8 @@ Gaussian routing map. No public candidate yet.
   Eight new finite families,16actual faults, all caches fresh;23total paths.
   Independent review/combined landing gates pending. Delivery checkout removed
   after exact remote and clean science verification.
+
+- Block27: private incomplete coupled-source probe; no public PR. The finite
+  diagnostic and exact contour identity are useful, but the full fixed-clock
+  source/mean/covariance obligation remains. Packaging another support-only
+  PR would not add a resolved phase premise.

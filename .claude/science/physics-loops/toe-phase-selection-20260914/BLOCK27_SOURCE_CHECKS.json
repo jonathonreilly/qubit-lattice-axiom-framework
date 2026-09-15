@@ -1,0 +1,55 @@
+{
+  "status": "finite_checks_passed",
+  "scope": "Four finite families; no fixed-clock phase or Gaussianity claim.",
+  "mgf_control": {
+    "laplace_quadrature_errors": [
+      4.440892098500626e-16,
+      1.7763568394002505e-15,
+      3.9968028886505635e-15,
+      1.7763568394002505e-15,
+      7.105427357601002e-15
+    ],
+    "putative_characteristic_at_four": 22.93077635583183,
+    "signed_multiplier_at_pi_over_four": -44.876276723718895,
+    "exact_log_curvature_lower_bound": "47/63",
+    "conclusion": "The proposed moment function is not a probability MGF."
+  },
+  "contour_control": {
+    "exact_fourier_versus_real_gaussian_quadrature_errors": [
+      2.2250356386775352e-18,
+      1.111866347946985e-16,
+      3.333444319088801e-16
+    ],
+    "omitted_ratio_and_wrong_shift_fault_residuals": [
+      0.003089394260143541,
+      0.002705779972755007,
+      0.029818060621844333,
+      0.032242247030020765,
+      0.011183552952532927,
+      0.01222013174382075
+    ]
+  },
+  "cochain_control": {
+    "cells": {
+      "edges": 32,
+      "plaquettes": 24
+    },
+    "source_identity_errors": [
+      4.440892098500626e-16,
+      3.9968028886505635e-15,
+      0.0,
+      4.440892098500626e-16
+    ],
+    "missing_sqrt_beta_fault_residuals": [
+      1.3440967923866138,
+      0.9861280910097021,
+      4.178081748440427,
+      1.449453289065643
+    ],
+    "scope": "Finite free-cube source algebra only, not periodic ensemble damping."
+  },
+  "linear_shift_control": {
+    "first_source_derivative": "i z sin(theta)/(1+z cos(theta))",
+    "opposite_sign_fault_rejected": true
+  }
+}

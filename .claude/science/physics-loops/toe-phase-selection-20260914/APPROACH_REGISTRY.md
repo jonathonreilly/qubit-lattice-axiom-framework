@@ -1,3 +1,21 @@
+# Block27 source-mechanism checkpoint
+
+- Positive auxiliary integrand -> physical conditional moment law: invalid
+  without an additional proof. An explicit positive, strongly log-convex,
+  normalized candidate has a putative characteristic value greater than1.
+- Finite Gaussian contour/source matching: exact formula now retains the
+  original/damped frequency difference. In the integer-curl geometry its
+  residual is sqrt(beta) u.d*h. Uniform coupled control remains open.
+- Positive magnetic-auxiliary/integer-electric joint law: its mixed real
+  convex extension follows from existing source geometry. Current
+  quantization remains; this restatement is not counted as new closure.
+- Double Hodge smoothing and scalar-dipole import: no curvature/source match
+  established. These are uncompleted mechanisms, not eliminated routes.
+
+No new phase claim or PR follows from this checkpoint.
+
+---
+
 # Block24 active mechanism — exact smoothing and filtering
 
 The new probability-kernel construction retains finite N and every magnetic

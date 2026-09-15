@@ -1,0 +1,50 @@
+{
+  "checkpoint_utc": "2026-09-15T08:58:06.231675+00:00",
+  "personal_no_subagents": true,
+  "deadline_utc": "2026-09-15T13:30:44Z",
+  "local_sources": [
+    {
+      "revision": "5112b9e6ff7e77b0140d4fbcbaa68c6560525978",
+      "path": "docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "bfedf452ec4e5b4b19c7099cb4c5e7ebc69aca4198fbdfba1c8788647ddea237",
+      "scope": "Sections3-6 reread for original/damped source matching; full note read in block26."
+    },
+    {
+      "revision": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+      "scope": "Reread entire note across block26/27; sections2-4 checked again for joint measure."
+    },
+    {
+      "revision": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+      "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+      "scope": "Sections1-2 read this block; combined output truncated later sections, so no new full-read claim."
+    },
+    {
+      "revision": "8a5ace1afc3b41999e2296d0067a325294fb2c6e",
+      "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "77db957017232dd439d501c7c21e7d0ed14f3c5f4ea145edbbf6751420156df5",
+      "scope": "Sections2-6.2 reread; physical filtering/electric carrier only."
+    }
+  ],
+  "primary_web_reading": [
+    {
+      "url": "https://www.math.ens.psl.eu/~dario/Villain3D__short_version_.pdf",
+      "date_on_pdf": "2023-03-27",
+      "pages": 136,
+      "scope": "Opening through extracted lines430: Theorem1 and initial section1.2 strategy. Not a full-paper read or gauge theorem import."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1311.2305",
+      "version": "v2",
+      "scope": "Carried forward: opening through Proposition1, Theorem7, selected norms/Taylor lemmas. Not a full-paper read or matched two-species gauge theorem."
+    }
+  ],
+  "finite_evidence": {
+    "path": "BLOCK27_SOURCE_CHECKS.json",
+    "sha256": "c319ba8005c23af3b38940df9fa80312405386418b30efd270e2e292e1f2306d",
+    "families": 4,
+    "independent_review": false
+  }
+}

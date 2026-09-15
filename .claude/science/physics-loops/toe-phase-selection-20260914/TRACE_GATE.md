@@ -1,3 +1,18 @@
+# Block27 trace — coupled physical source
+
+trace_class: upstream_support
+target_blocker_text: "Control both quantized defect sectors and the full fixed-clock physical source."
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: frontier_probe
+next_trace_action: "Prove a source-compatible coupled estimate; do not replace a physical conditional law by a positive auxiliary integrand."
+
+The finite source identity identifies a derivative correction but does not
+bound it uniformly for the full coupled measure. This is an incomplete
+stretch attempt, not direct blocker closure or a no-go for the target.
+
+---
+
 # Block23 current proposed trace — 2026-09-15 05:27UTC
 
 trace_class: direct_blocker_closure

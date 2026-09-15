@@ -1,3 +1,20 @@
+# Block27 author certificate — private incomplete stretch
+
+actual_current_surface_status: open
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: frontier_probe
+independent_review: pending
+formal_audit: deferred
+bare_retained_allowed: false
+
+The elementary moment-positivity control and finite contour identity are
+personally derived and finitely challenged. They do not prove fixed-clock
+Gaussianity, exhaustion of phase routes, or an axiom update. The coupled
+source/state estimates are open and no theorem PR is requested for this block.
+
+---
+
 # Block23 current author certificate — 2026-09-15 05:27UTC
 
 actual_current_surface_status: open

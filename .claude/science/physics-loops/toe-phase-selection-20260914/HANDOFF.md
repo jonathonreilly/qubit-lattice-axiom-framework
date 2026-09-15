@@ -1,3 +1,31 @@
+# Current checkpoint — block27 source probe
+
+Continue personally through **2026-09-15 13:30:44UTC**. The added12hours
+are already applied; no subagents. PR8127 remains at5112b9e6ff7e77b0140d4fbcbaa68c6560525978
+and its delivery checkout is removed. All public milestones await independent
+review; none is promoted here.
+
+Block27 now preserves a concrete counterexample to an auxiliary-moment
+shortcut and an exact finite Gaussian contour/source identity. Four finite
+families passed: inverse Laplace versus quadrature, contour/Fourier versus
+real Gaussian quadrature, actual free-cube source algebra, and the linear
+complex-shift sign. Deliberately omitted source factors, opposite shifts,
+and missing normalization scales disagree. The abstract putative
+characteristic function has value22.9308>1; it cannot be a probability law.
+This does not contradict the full clock law or any retained theorem.
+
+The source correction contains d*h, offering a possible macroscopic
+suppression mechanism. Its all-volume estimate and the coupled conditional
+mean/covariance law remain unproved. The positive joint magnetic-auxiliary/
+integer-electric representation still has an integer carrier. It cannot be
+run through continuous Langevin dynamics as though that carrier disappeared.
+No new public PR is warranted for this incomplete stretch checkpoint.
+
+Next: pursue a concrete source estimate or a distinct actual spin-one phase
+mechanism. Do not mine more corollaries from the unreviewed covariance input.
+
+---
+
 # Current checkpoint — 2026-09-15 06:52 UTC
 
 Continue personally through **2026-09-15 13:30:44 UTC**; no subagents.

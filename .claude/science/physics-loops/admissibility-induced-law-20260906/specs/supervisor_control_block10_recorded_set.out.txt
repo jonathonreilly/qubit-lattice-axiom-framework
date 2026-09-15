@@ -1,0 +1,17 @@
+=== (1) k-body irreducibility of log Z_k: a witness assignment per k (search over small alphabets), ratio != 1 means nonzero mixed difference
+(3, 1, 2): k=2: ratio 169/121 at ['-x', '-x']; k=3: ratio 169/165 at ['-x', '-x', '+y']; k=4: ratio 25313305500289/23811286661761 at ['-x', '-x', '-x', '-x']; k=5: ratio 2241861381895613/2214449659543773 at ['-x', '-x', '-x', '-x', '+y']; k=6: ratio 3365711854724985238184059815315833869748032435373906868590465031852960001/4006070807282364556080074902906919146027842392940052297554111480712890625 at ['-x', '-x', '-x', '-x', '-x', '-x']
+(5, 2, 4): k=2: ratio 961/784 at ['-x', '-x']; k=3: ratio 1291123/1244800 at ['-x', '-x', '+y']; k=4: ratio 845934898201600/806460091894081 at ['-x', '-x', '-x', '-x']; k=5: ratio 15587985512720310077553426944/15537321646511554718017578125 at ['-x', '-x', '-x', '-x', '+y']; k=6: ratio 173186071925406491867486514134596809426561842922907648626065538109909288395403157427978121972129897191769/179046923579584905228990036011059747422614581214589777445271104973695396918979789807126643778892433719296 at ['-x', '-x', '-x', '-x', '-x', '-x']
+(2, 2, 2): k=2: none (all searched ratios = 1); k=3: none (all searched ratios = 1); k=4: none (all searched ratios = 1); k=5: none (all searched ratios = 1); k=6: none (all searched ratios = 1)
+
+=== (2) plaquette a-b, a-c, b-d, c-d; order (a, b, c, d): d records b and c; canonical potential by Möbius inversion at (3,1,2)
+  exp(Phi_{b,c} non-adjacent (recorded together by d)) at v = 12/13  (1 means zero term)
+  exp(Phi_{a,d} non-adjacent (never recorded together)) at v = 1  (1 means zero term)
+  exp(Phi_{a,b} edge) at v = 3  (1 means zero term)
+  exp(Phi_{b,d} edge) at v = 3/4  (1 means zero term)
+  exp(Phi_{a,b,c,d}) at v = 1  (1 means zero term)
+  exp(Phi_{b,c,d}) at v = 1  (1 means zero term)
+  {a,d} term is zero on all 1296 configurations: True
+  {b,c} term nonzero for some configuration: True
+
+=== (3) star: center x formed last, recording its three leaves (l1, l2, l3): three-body term on the leaves at (3,1,2)
+  three-body term on the leaves nonzero: True; witness ((1, 1, 2), Fraction(165, 169))

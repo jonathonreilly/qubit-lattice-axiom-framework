@@ -110,3 +110,12 @@ Block 09 opened for review (stacked on #8138): the `Z^3` monotone law's Markov g
 3. **Strong coupling `c ≥ 1/3`** (proof target; open).
 4. **The random-priority law's Markov structure** (needs the owner's note as an input; unlanded; deferred).
 5. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small).
+
+## Refresh at block 10 opening (2026-09-15)
+
+Block 10 opened for review (stacked on #8139): the recorded-set Gibbs theorem for every order on finite windows. Ranked next:
+
+1. **The region's boundary in `(p, q, r)`** (exact algebra, small): `3c = 1` along block 03's three lines by exact bracketing; the comparison with `6c_1 = 1`.
+2. **Strong coupling `c ≥ 1/3`** (proof target): uniqueness of the stationary plane law on the full cross-section by a block coupling or weighted sensitivities; open.
+3. **Nonzero mixed differences at every nonconstant triple** (proof target; small algebra for `k = 2`, harder for `k ≥ 3`): would make T4's converse and blocks 08–09's dependence statements unconditional.
+4. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small); **the random-priority law's Markov structure** (needs the owner's unlanded note).

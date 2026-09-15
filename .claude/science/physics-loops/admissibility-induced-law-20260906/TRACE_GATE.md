@@ -96,3 +96,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "on Z^3 the monotone-class formation law is separated from every static law by its Markov graph; the covariant object of the class is the mixture of eight distinct laws; the sweep and the corner are readable in the records. Next: the general recorded-set Gibbs theorem for arbitrary orders on finite windows (Markov graph = recorded-set graph; k-body irreducibility for k = 2..6); then the region boundary. Consumers: the campaign's queue; #8093's assembly (formation-law node: 'clause-needed' for a covariant single law); the parked statistical-bridge material (read-only)"
 ```
+
+# Trace gate — block 10, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the campaign's standing question (block 01): the structure of a formation law when it is not the static law, for every order; #8102's multiset key; the owner's sequencing gate (2026-08-26)"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "every formation law on a finite window is the recorded-set Gibbs law with the recorded-set graph as its Markov graph; nearest-neighbor Markov iff no site records two neighbors. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly (the formation-law node: any single order induces couplings beyond the rule's range); the parked statistical-bridge material (read-only)"
+```

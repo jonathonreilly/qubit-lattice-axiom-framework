@@ -55,3 +55,10 @@
 - Scaffolding: the dependency offsets κ_i e_i − κ_j e_j; the 24 proper rotations as signed permutations of determinant +1; the reversed transfer P*(v,w) = π(w)P(w,v)/π(v).
 - External references (re-proved or cited definition-level): DLR equations for finite-range specifications; uniqueness of conditional probabilities; the ergodic decomposition (used only in R3(c)'s last sentence).
 - Counterfactual pass: a triple with vanishing third difference would silence R1's dependence and hence R2–R3 (not known to exist among nonconstant triples); outside the region the Z^3 object is not constructed; on a larger cross-section the irreversibility is expected but not computed; the random-priority law (covariant by construction) has no corner and no sweep imprint — its Markov graph is not analyzed here.
+
+## Block 10 (2026-09-15) — the recorded-set Gibbs theorem
+- Dependencies: `minimal_axioms`; block 01 (on main; Theorem B and the formation-law definition); blocks 08 and 09 (stacked; the monotone-class instances and the `Z^3` corollary by citation). All proposed, unaudited.
+- Named premises: the records-only reading; positivity (the canonical potential of a positive law); the six-axis menu; the product form of the rule (T1's regrouping); the nonzero mixed differences `Δ_k log K_k` for the sizes that occur (executed `k ≤ 6` at two triples).
+- Scaffolding: the vacuum value `+x`; the mixed-difference ratios; the plaquette (cycle4) and the star (star4) with their 24 orders each.
+- External references (re-proved at scope): the uniqueness of the vacuum-normalized potential of a positive law on a finite set and its clique property (the Grimmett argument for Hammersley–Clifford).
+- Counterfactual pass: a non-product covariant rule (the sum rule) has no regrouping of T1's form — outside; a menu on which co-recorded neighbors could be adjacent (a non-bipartite carrier) would break T4's obstruction; a nonconstant triple with a vanishing mixed difference would make the corresponding `k`-body term vanish (not known to exist).

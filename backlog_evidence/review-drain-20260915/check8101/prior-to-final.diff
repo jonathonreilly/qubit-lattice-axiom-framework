@@ -1,0 +1,38 @@
+--- 
++++ 
+@@ -13,6 +13,7 @@
+ from scipy.integrate import quad
+ AUDIT_TIMEOUT_SEC=90
+ AUDIT_INPUT_PATHS=("docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",)
++MONOPOLE_CUBE_FACTOR=4/3
+ rows=[]
+ def check(name,ok,**detail):
+  assert bool(ok),(name,detail)
+@@ -66,7 +67,7 @@
+    close('integer cube charge from principal wrapping',charge,q,L=L,trial=trial)
+    close('total monopole neutrality on torus',q.sum(),0,L=L,trial=trial)
+    deficit=1-np.cos(principal);cube_energy=abs(C)@deficit
+-   check('pointwise cube monopole-energy inequality',np.all(cube_energy>=(4/3)*q*q-1e-11),L=L,trial=trial,min_slack=float(np.min(cube_energy-(4/3)*q*q)))
++   check('pointwise cube monopole-energy inequality',np.all(cube_energy>=MONOPOLE_CUBE_FACTOR*q*q-1e-11),L=L,trial=trial,min_slack=float(np.min(cube_energy-MONOPOLE_CUBE_FACTOR*q*q)))
+    check('each plaquette counted twice in global bound',float(np.sum(q*q))<=1.5*np.sum(deficit)+1e-10,L=L,trial=trial)
+    check('monopole indicator below square charge',np.all((q!=0)<=q*q),L=L,trial=trial)
+  D,B=cube();check('cube curl rank five',sy.Matrix(B).rank()==5);close('closed oriented cube relation',B.sum(axis=1),0)
+@@ -74,6 +75,9 @@
+  wrapped=(np.array(target,float).ravel()*np.pi+np.pi)%(2*np.pi)-np.pi
+  close('charge-one witness has all outward principal faces pi/3',wrapped,np.pi/3)
+  close('charge-one open region exists',wrapped.sum()/(2*np.pi),1)
++ q2faces=np.array([np.pi-.01]*3+[np.pi/3+.01]*3);q2=q2faces.sum()/(2*np.pi);energy=np.sum(1-np.cos(q2faces))
++ close('interior charge-two face fixture',q2,2)
++ check('charge-two fixture challenges cube energy factor',energy>=MONOPOLE_CUBE_FACTOR*q2*q2 and energy<8,energy=float(energy),q=float(q2))
+ 
+ 
+ def chain_spectrum():
+@@ -176,7 +180,7 @@
+     m,n=b[0]-a[0],b[1]-a[1];M[i,j]=q2_fourier(m,n);Q[i,j]=q_fourier(m,n)
+     H[i,j]=3*(m==0 and n==0)-.5*((m,n) in [(1,0),(-1,0),(0,1),(0,-1),(1,1),(-1,-1)])
+   mineig=float(np.linalg.eigvalsh(M).min());check('finite angle monopole effect positive definite in section',mineig>0,cutoff=cutoff,minimum_eigenvalue=mineig)
+-  check('compression preserves monopole-energy inequality',np.linalg.eigvalsh(H-(4/3)*M).min()>-1e-12,cutoff=cutoff)
++  check('compression preserves monopole-energy inequality',np.linalg.eigvalsh(H-MONOPOLE_CUBE_FACTOR*M).min()>-1e-12,cutoff=cutoff)
+   gap=M-Q@Q;check('compressing square exceeds square of compression',np.linalg.eigvalsh(gap).min()>-1e-12 and np.trace(gap).real>1e-4,cutoff=cutoff)
+   close('mean-square POVM trace normalization',np.trace(M),d/4,cutoff=cutoff)
+  for cutoff in [0,1,3]:

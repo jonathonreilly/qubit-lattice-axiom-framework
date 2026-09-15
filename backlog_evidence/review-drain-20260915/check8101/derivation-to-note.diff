@@ -1,0 +1,207 @@
+--- 
++++ 
+@@ -1,9 +1,69 @@
+-# Fixed finite-link ground-state control at weak coupling
+-
+-Working theorem. The construction is supplied mathematical physics, not a
+-selection of matter, geometry or couplings from the framework axioms. It
+-controls a bounded plaquette observable and a specified monopole POVM; it
+-does not establish the photon or the charged Weyl phase.
++---
++claim_id: finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13
++claim_type: bounded_theorem
++claim_scope: "For the specified charged hard integer-flux Hamiltonian, derive matching necessary and sufficient cutoff order S=1/g for an O(g squared) weighted plaquette deficit in physical ground states, uniformly in spatial volume. A positive redundant closed-flow trial controls the ground energy, and a compressed principal-angle monopole POVM has an explicit density bound and a qualitative finite-bandwidth floor. The result does not establish a photon, a monopole particle gap, survival of Weyl matter, a common renormalized cone, universal encoding optimality or an axiom update."
++upstream_dependencies:
++  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
++runner: scripts/finite_integer_link_weak_coupling_payload_and_monopole_density_2026_09_13.py
++---
++
++# A fixed finite-link ground-state bound and its weak-coupling payload
++
++**Date:** 2026-09-13
++**Type:** bounded_theorem
++**Status:** proposed_retained
++
++## Result and supplied domain
++
++A finite integer-link Hamiltonian with charged four-orbital matter admits a
++physical ground-state bound uniform in spatial volume. The local flux cutoff
++must grow as 1/g to reach the stated O(g^2) weak-coupling plaquette deficit;
++a positive closed-flow trial state proves that the same order is sufficient.
++The necessary direction is an exact finite-chain spectral bound. The sufficient
++direction handles redundant plaquettes without assuming a product physical
++Hilbert space or a free-fermion sea satisfying Gauss law.
++
++The same estimate bounds a specified local magnetic-angle charge statistic.
++This is a gauge-invariant POVM quantity obtained by compressing the conventional
++principal-plaquette definition. Its interpretation as emergent monopole
++particles, and the existence of the charged photon phase, remain unproved.
++
++~~~yaml
++actual_current_surface_status: conditional-support
++target_claim_type: bounded_theorem
++claim_type_reason: "Exact finite-chain necessity, positive-flow physical trial sufficiency and ground-state plaquette/monopole-POVM bounds."
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "Control an actual physical ground-state quantity of a charged finite-link candidate at weak coupling."
++source_of_blocker_text: user_goal
++reachability_to_target: partially_closes
++artifact_role: theorem
++next_trace_action: "Control long-distance correlations or excitation/disorder response in the actual charged model; a small deficit or one-point density does not determine the photon phase."
++conditional_surface_status: conditional-support
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++~~~
++
++The [minimal framework memo](MINIMAL_AXIOMS_2026-06-29.md) is the ontology
++reference. The [edge matter construction](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md)
++and [current finite integer-link source](THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md)
++identify conditional comparison domains. The CAR algebra and its physical
++encoding, graph, Hamiltonian time, coefficients and cutoff family are supplied.
++The complete finite Hamiltonian and trial construction are redeclared here;
++no unmerged proposal is used as a theorem premise. No axiom, approved primitive,
++state formation law or audit verdict is added.
++
++Gauge-invariant variational states and integer-flow formulations are established
++methods; see [Horn and Weinstein](https://www.slac.stanford.edu/pubs/slacpubs/2750/slac-pub-2864.pdf),
++sections 2 and 3.2-3.4. The general mechanism is not claimed as a new discovery.
++The explicit finite-support positive push-forward and the two-sided cutoff
++order are the construction proved below. The compact-cube charge convention
++is also established; [Akerlund and de Forcrand](https://arxiv.org/pdf/1505.02666),
++section III, state it and distinguish a dilute-monopole phase from an exactly
++monopole-free angle-restricted model. Their classical action is not the finite
++Fourier cutoff used here.
+ 
+ ## Declared family and target
+ 
+@@ -236,7 +296,8 @@
+ |theta;S>=sum_(n=-S)^S exp(-in theta)|n>; its integral is identity. The cube
+ charge event is a gauge-invariant coarse graining of the product POVM.
+ Thus M_c,S is its mean square charge statistic, and 0<=I_c,S<=M_c,S.
+-It is generally false that M_c,S=(P_S Q_c P_S)^2. No sharp conserved
++The exact identity P Q_c^2 P-(P Q_c P)^2=P Q_c(1-P)Q_c P>=0
++explains why it is generally false that M_c,S=(P_S Q_c P_S)^2. No sharp conserved
+ finite-dimensional magnetic charge is silently introduced.
+ 
+ Since 1-cos theta>=2theta^2/pi^2, Cauchy-Schwarz on six faces gives
+@@ -316,3 +377,118 @@
+ density to absence of order, not a proposed model of the monopoles here.
+ The next phase task must control the relevant correlations or excitations,
+ not relabel (10) as a photon theorem.
++
++## No-Go Discipline Gate
++
++This is a positive bounded construction with narrow regulator and measurement
++statements. The charged Coulomb phase remains an unfinished route. No universal
++no-go or axiom deficit is inferred from any count of tested approaches.
++
++**N1 — Actual distinct formulations.**
++
++| Route | Work and actual disposition | Marker |
++|---|---|---|
++| Finite shift-chain spectral analysis | Gives the exact plaquette ceiling and a necessary S=Omega(1/g) for the specified deficit target. It says nothing about all other encodings. | ATTEMPTED |
++| Positive redundant plaquette-flow amplitudes | Gives a physical finite-support trial and sufficient S=O(1/g). This constructive escape defeats a blanket finite-link obstruction. | ATTEMPTED |
++| Charged many-body norm/variational comparison | The controlled-shift and CAR singular-value argument extends the deficit bound to actual charged ground states. It does not determine their fermion spectrum. | ATTEMPTED |
++| Compact angle geometry and positive compression | The cube inequality bounds the stated monopole POVM. It does not prove a monopole particle gap or a phase. | ATTEMPTED |
++| Finite Fourier uniqueness and exact-zero event exclusion | Proves a qualitative floor for this unsharp event statistic. The classical hard-angle restriction in the cited literature is an explicit different-domain escape. | ATTEMPTED |
++| Correlation/ordering discriminator | An explicit number-symmetric low-density state retains separated-site order, so a density-only argument cannot close the phase task. A correlation estimate remains live. | ATTEMPTED |
++
++These routes differ in object and terminal obligation. They are not claimed
++to exhaust the space of finite-spin or constructive field-theory approaches.
++No row labels an untested full-phase route as ruled out by prior authority.
++
++**N2 — Implication audit.** The small weighted deficit D implies a small
++mean-square/event statistic M through (9); M is a downstream corollary, not
++an independent wall. A small M alone has no stated converse deficit theorem.
++The phase task P includes long-distance correlations and charged-spectrum
++control, which are not supplied by D or M. No implication P=>this particular
++quantitative regulator bound is assumed. A common renormalized cone C is a
++stronger target formulated inside the desired phase; it is not added to P
++as an independently counted axiom deficit. Relations beyond these stated
++implications remain unresolved.
++
++**N3 — Hidden-premise scan.** The graph, a,g,r,w_i, hard unit-amplitude shift,
++CAR representation, two negative onsite orbitals, finite nuclear norms and
++chosen weak-coupling target are declared. The trial is a finite positive sum,
++not an assumed efficient preparation. Its non-isometric normalization is
++explicit and challenged. The fixed cutoff is uniform in V at fixed g; it is
++not held fixed while demanding vanishing deficit as g tends to zero. The
++angle POVM, its coarse graining, and the distinction between compressing a
++square and squaring a compression are explicit. No free Bloch sea, gapped
++charged state, photon mode or selected metric is hidden in the variational
++comparison. The thermal extension supplies its beta and entropy bound.
++
++**N4 — Residual matching.** The current integer-link source identifies exact
++finite gauge algebra and the remaining quantum phase distinction. Its
++staggered background and code-parity results are not imported into this N-2
++carrier. Horn/Weinstein supplies historical variational/flow context, not the
++present finite-support estimate or a theorem for this charged quartet.
++Akerlund/de Forcrand supplies the principal-angle convention and a classical
++hard-angle comparator; its monopole-free action is not a counterexample to
++the finite Fourier-POVM statement. No prior no-go is cited as a proof against
++the full target.
++
++**N5 — Resolution audit.** Per element: hard-link chain spectra and POVM
++normalization are checked. Per site: onsite filling and CAR bond norms are
++checked. Per mode: finite chain modes and a declared two-angle Fourier
++compression section are checked; no photon spectrum is computed. Per block:
++redundant cube-flow amplitudes, exact radical coefficients and charge-one/two
++face fixtures are checked. Lattice wide: finite periodic incidence/counting
++is checked and the volume-uniform inequalities are proved analytically; a
++thermodynamic phase calculation is not executed. The two-angle compression
++fixture is not mislabeled as a full twelve-link spectral computation. The
++exact-zero exclusion is a statement about the specified measurement effect,
++not all notions of magnetic particles or every finite-spin phase.
++
++**N6 — Partial closure and conventions.** The finite physical trial and its
++deficit bound close a concrete supplied-model realization task. The scaling
++criterion concerns a bounded plaquette observable and cannot be removed by
++shifting the zero of energy. It can be changed by changing the regulator or
++the requested observable/accuracy target; that is outside this narrow theorem,
++not an automatic new axiom. No binary payload bound is asserted for every
++encoding. The CAR and state-formation imports are not silently retired.
++No proposed primitive is given premise weight, and no approved primitive is
++renamed as an independent missing axiom.
++
++**N7 — Strongest counter-route to a universal negative.** A fixed finite-spin
++Coulomb phase can tolerate a nonzero local magnetic-angle statistic and still
++have a massless transverse sector. The finite-spin route described by
++[Hermele, Fisher and Balents](https://arxiv.org/pdf/cond-mat/0305401) makes it
++unreasonable to turn the Fourier measurement floor into a photon no-go.
++Alternatively, a weak-coupling Hamiltonian argument can use the actual
++Gauss-constrained low-energy spectrum and control monopole/disorder
++correlations without demanding exact event exclusion. Its terminal task is
++an excitation/correlation theorem that persists with the charged matter.
++Neither the cutoff lower bound nor the one-point density result closes that
++route. The phase campaign remains partial.
++
++**N8 — Cross-cycle echo.** Current-main finite integer-link and cubic-ice
++sources were read for the earlier jump from finite algebra, trial curvature
++or component data to a quantum photon phase. This note gives an operator
++lower bound and a variational upper bound with their exact objects, and keeps
++the phase separate. The previous campaign's finite-time cutoff estimate is
++context, not an unmerged premise. Its finite-time/ground-state distinction
++motivates the present state bound, while the density/correlation distinction
++prevents the same overclaim at a new level. No historical convention retirement
++is treated as a theorem about the spectrum.
++
++No universal no-go packet PASS is claimed. The narrow necessary regulator
++scaling and finite-POVM statements stand on their explicit proofs; the phase
++route remains unclosed.
++
++## Reproduction and limits
++
++Run `python3 scripts/finite_integer_link_weak_coupling_payload_and_monopole_density_2026_09_13.py`.
++The primary builds periodic incidence matrices, finite shift chains, redundant
++cube flows and occupation-basis CAR bonds. Exact rational-radical overlap
++coefficients independently challenge floating-point accumulation; analytic
++Fourier coefficients are challenged by separate quadrature. Prior versions,
++mutation evidence and author corrections are preserved in the branch packet.
++Author checks are not independent scientific acceptance.
++
++The result is uniform in spatial volume for its declared deficit and
++measurement statistics. It does not exchange weak-coupling, regulator,
++thermodynamic and long-time limits to claim a continuum photon. Independent
++source review, integrated landing checks and formal audit remain pending.

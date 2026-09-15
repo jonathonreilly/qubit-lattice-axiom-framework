@@ -1,0 +1,37 @@
+{
+  "unit": 8101,
+  "status": "PASS WITH BOUNDED CLAIMS",
+  "tree": "3756b23c227c361ad1e75986bd60055d7d997bcf",
+  "primary": "331/0 sole capture,1.4204349517822266s under90s",
+  "final_cache_preflight": "ok; sole attempt",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8101-final.json",
+      "sha256": "644c19b6ace62a67566746d3f98b734d1cded47a873ffe89bf6a2257d990a142"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8101-unit-v1-final.json",
+      "sha256": "9cd5a3066d5f45c3c135590274553a0d33cb27928cab737a33fec87093923de6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8101.md",
+      "sha256": "b0d4d834c57de164d0f467d6fb74cc57d01f847b2bbc423a4c6eeb26b2316f88"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8101-final-preflight.json",
+      "sha256": "f9519c2dd41dc5c1f8e57ac7a2bc09d4a48ec1fe4d54fa2facbbd441d88630e7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8101-final-preflight-execution.json",
+      "sha256": "c78e3b9ff43f0ab3adea97cd78c0411b728a6c486a268ea8898704f42c05989f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8101-output-difference-inspection.json",
+      "sha256": "37839a0323b5e0bf7da085cdfba94dabc7254242b71d0eccba386838893df0ca"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8101/cold-source-diff-confirmation.json",
+      "sha256": "786dbf877f3b6d59294a89e6fc502fc75576073c6650d53c5ffe73e4fd148f07"
+    }
+  ]
+}

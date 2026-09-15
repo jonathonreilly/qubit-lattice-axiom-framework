@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8101-final",
+  "tree": "3756b23c227c361ad1e75986bd60055d7d997bcf",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/finite_integer_link_weak_coupling_payload_and_monopole_density_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8750,
+      "misses": 4395
+    },
+    "packet_imports": {
+      "hits": 8740,
+      "misses": 4393
+    },
+    "declared_inputs": {
+      "hits": 8776,
+      "misses": 4526
+    }
+  },
+  "record_sha256": "9cd5a3066d5f45c3c135590274553a0d33cb27928cab737a33fec87093923de6",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

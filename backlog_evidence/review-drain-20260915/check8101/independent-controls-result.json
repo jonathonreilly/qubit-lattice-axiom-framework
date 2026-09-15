@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": 13,
+  "controls": [
+    "cube kernel contraction norm",
+    "cube kernel contraction overlap",
+    "redundancy gives strict lower bound",
+    "chain characteristic recurrence 1",
+    "chain characteristic recurrence 2",
+    "chain characteristic recurrence 3",
+    "chain characteristic recurrence 5",
+    "arbitrary CAR bond norm is nuclear norm",
+    "cube coercivity constant",
+    "global cube counting factor",
+    "S0 square compression differs from compressed square",
+    "variational deficit scaling",
+    "coarse electric constant"
+  ],
+  "elapsed_seconds": 0.08103599993046373,
+  "scope": "Independent symbolic kernel contraction, chain determinant recurrence, arbitrary CAR singular-value occupancy and coefficient checks; no primary invocation."
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.slac.stanford.edu/pubs/slacpubs/2750/slac-pub-2864.pdf",
+    "sha256": "e95ee687f4af35aef23550fc8f0a0f28f2f7f508d1e462b01760423d7cf057c2",
+    "read_scope": "Section2 gauge projection; sections3.2\u20133.4 compact rotor, integer electric representation, Gaussian trial projection and integer plaquette variables. Local extracted text lines1128\u20131740,2154\u20133210.",
+    "role": "Historical variational/flow precedent only, not present finite-support positive construction or charged phase theorem."
+  },
+  {
+    "url": "https://arxiv.org/pdf/1505.02666v1",
+    "sha256": "08e92a13cf313ac8c3077c60e059915a00840084db984da980f367ee7d2f469d",
+    "read_scope": "SectionsI\u2013II and openingIII through principal-angle monopole definition, hard-angle exclusion and dilute-versus-zero distinction, pp1\u20132.",
+    "role": "Definition and classical hard-angle comparator, not finite Fourier truncation."
+  },
+  {
+    "url": "https://arxiv.org/pdf/cond-mat/0305401v3",
+    "sha256": "afa65aed4d78ec09923e6df0da96ee355205b8df36b7f4307ea9f94c433d84d6",
+    "read_scope": "Reused exact previously read sectionsIIIA\u2013C,IVA pp9\u201312.",
+    "role": "Finite-spin phase counter-route context; no charged quartet phase import."
+  }
+]

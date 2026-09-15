@@ -598,3 +598,29 @@ four-node premise registry, all three primitive sources, registry-check
 procedure, current science workflow and review boundary sections. The local
 exercise skill matches current-main SHA0e543e9b2d24e587e7f99df31802a9ee89703c40528ab259178625e17c6ac7f3.
 No subagents are used. The extended deadline remains2026-09-15 13:30:44UTC.
+
+
+## Finite-clock smoothing milestone, 2026-09-15 07:28 UTC
+
+PR8136 is OPEN and MERGEABLE against main at exact head
+8a5ace1afc3b41999e2296d0067a325294fb2c6e. It supplies the exact finite-clock
+smoothing and magnetic-charge-preserving filter, a positive local electric
+extension with real C3 bounds, and local H^-s equivalence of macroscopic flux
+laws. Ten finite check families and sixteen actual source faults are checked;
+the initial orientation-coverage failure and its exact source bytes remain
+preserved. The final public source is the review target. Independent review,
+combined landing checks and formal audit remain pending.
+
+Remote durability and a clean science state were verified before the delivery
+checkout was removed. The completion sweep preserved three unlanded worktrees;
+protected archives and git gc were untouched. See review/BLOCK24_PUBLIC_MILESTONE_RECEIPT.json
+and review/BLOCK24_COMPLETION_SWEEP.json. The private checker now includes the
+tenth magnetic-carrier control and its sixteenth fault, matching public scope.
+
+The next decision compares actual magnetic-phase stability after smoothing
+against native Record-law foundations. No new phase theorem or axiom wall is
+claimed. Current-main minimal axioms and the random-axis/repeatability compiler
+show that selection and attachment premises must remain explicit. Internal
+PGL2 covariance, a star structure and empty/well-founded initial formation must
+not be silently inferred from the axioms. This reassessment is still exploratory.
+The controlling deadline remains 2026-09-15 13:30:44 UTC. No subagents are used.

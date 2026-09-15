@@ -39,3 +39,10 @@ Gaussian routing map. No public candidate yet.
   canonical cache, manifest and handoff,15paths.14faults caught. Independent
   review and combined landing gates pending. Delivery checkout removed after
   exact remote verification and clean science check. Campaign continues.
+
+- PR8136: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8136
+  Exact head8a5ace1afc3b41999e2296d0067a325294fb2c6e, main base5deabeb698a...;
+  self-contained smoothing/filtering/positive-extension/scaling-equivalence
+  note, runner, canonical cache, manifest and pack,16paths. Ten finite families,
+  sixteen actual faults. Independent review and combined gates pending.
+  Exact remote and clean science state verified before delivery checkout removal.

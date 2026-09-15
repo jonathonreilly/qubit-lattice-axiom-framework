@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-09-15T07:17:07.286643+00:00",
+  "main": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "completed_delivery_worktree_removed": "/Users/jonreilly/Documents/Codex/toe-clock-smoothing-20260915",
+  "sweep": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "head": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_main": false,
+      "status": [],
+      "action": "preserved unlanded commit or unpreserved edits"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914",
+      "head": "b0479ab615af12136588343956f73368cc6cf55d",
+      "contained_in_main": false,
+      "status": [
+        " M .claude/science/physics-loops/toe-phase-selection-20260914/BLOCK24_FINITE_CLOCK_SMOOTHING_DERIVATION.md",
+        " M .claude/science/physics-loops/toe-phase-selection-20260914/block24_smoothing_check.py",
+        "?? .claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK24_INITIAL_CHECKER_SOURCE.py.txt",
+        "?? .claude/science/physics-loops/toe-phase-selection-20260914/review/BLOCK24_PUBLIC_MILESTONE_RECEIPT.json"
+      ],
+      "action": "preserved unlanded commit or unpreserved edits"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "head": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "status": [],
+      "action": "preserved unlanded commit or unpreserved edits"
+    }
+  ],
+  "protected_archives": "untouched",
+  "git_gc": "not run"
+}

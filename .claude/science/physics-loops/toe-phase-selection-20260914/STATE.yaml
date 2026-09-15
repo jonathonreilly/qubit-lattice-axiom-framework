@@ -14,23 +14,21 @@ research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
 block: 24
-active_route: gaussian_link_smoothing_and_positive_finite_clock_flux_perturbation
+active_route: reassess_magnetic_stability_and_native_record_law_foundations
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Cold-read and challenge the complete block24 smoothing/filtering, positive extension, C3 response and
-  H^-s coupling proof; choose a coherent milestone only after source review. Continue personally through 2026-09-15
-  13:30:44 UTC.
-strongest_unresolved_obligation: The actual neutral spin-one photon phase remains open. A new independent route
-  asks whether smoothing the finite-clock Euclidean law gives a positive smooth local perturbation whose full physical-score
-  limit can be proved, with both defect sectors retained.
-working_result: Block24 proposes an exact fixed-clock magnetic-charge-preserving transformation and a positive smooth
-  local electric correction with uniform real C3 bounds for a_e>=256. Nine finite check families and fifteen final
-  source faults pass. An initial orientation-check coverage failure is preserved and corrected by alternate sweeps.
-  Full photon/score stability, N3 simultaneous control and independent review remain open.
+next_action: Reassess the magnetic stability step and native Record-law premises for a new load-bearing derivation.
+  Continue personally through 2026-09-15 13:30:44 UTC; do not extend the deadline again.
+strongest_unresolved_obligation: A fixed-law finite-clock full-flux Gaussian/Maxwell limit with both defect sectors
+  retained remains open. The separate actual neutral spin-one photon phase and native-law selection remain open.
+working_result: Block24 is delivered as PR8136 at 8a5ace1afc3b41999e2296d0067a325294fb2c6e.
+  Exact flux-law smoothing/filtering, positive local electric extension and H^-s scaling equivalence are author
+  proposals. Ten finite families and sixteen actual faults are checked. Initial orientation coverage failure is
+  preserved. Convexity of an extension does not remove the discrete magnetic carrier. Independent review is pending.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
@@ -45,3 +43,4 @@ public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8136

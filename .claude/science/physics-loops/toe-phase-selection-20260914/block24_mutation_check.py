@@ -26,6 +26,7 @@ FAULTS = [
  ('gaussian_response_covariance', "hessian = mean2+np.einsum('a,ai,aj->ij', tilted, centered, centered)", 'hessian = mean2', 'check_polymer_positivity_and_response'),
  ('third_response_cumulant', "+np.einsum('a,ai,aj,ak->ijk', tilted, centered, centered, centered))", "+0*np.einsum('a,ai,aj,ak->ijk', tilted, centered, centered, centered))", 'check_polymer_positivity_and_response'),
  ('source_filter_removed', 'K = np.linalg.inv(np.eye(6)+tau*D @ D.conj().T)', 'K = np.eye(6, dtype=complex)', 'check_macroscopic_sources'),
+ ('magnetic_tilt_source', 'source = h/2', 'source = mp.mpf(0)', 'check_magnetic_carrier_convexity_control'),
 ]
 
 

@@ -71,7 +71,7 @@ def integer_components(j, edge_cells):
     return answer
 
 
-def fill_current(j, edge_cells, face_cells, sweep_order=None):
+def fill_current(j, edge_cells, face_cells):
     """Coordinate strip homotopy; verification uses the incidence matrix."""
     d = len(edge_cells[0][0])
     face_ix = {c: i for i, c in enumerate(face_cells)}
@@ -84,7 +84,7 @@ def fill_current(j, edge_cells, face_cells, sweep_order=None):
     lower = tuple(min(p[i] for p in points) for i in range(d))
     upper = tuple(max(p[i] for p in points) for i in range(d))
     filling = np.zeros(len(face_cells), dtype=np.int64)
-    for axis in (range(d) if sweep_order is None else sweep_order):
+    for axis in range(d):
         projected = defaultdict(int)
         for (x, (direction,)), coefficient in current.items():
             if direction == axis:
@@ -285,11 +285,6 @@ def check_fillings_and_gauge():
                     assert lo[i] <= x[i] <= hi[i]-(i in axes)
             negfill, _, _ = fill_current(-component, cc[1], cc[2])
             assert np.array_equal(negfill, -filling)
-            for order in [(3, 2, 1, 0), (1, 3, 0, 2)]:
-                other_fill, other_lo, other_hi = fill_current(component, cc[1], cc[2], order)
-                assert np.array_equal(D.T @ other_fill, component), "alternate sweep has wrong orientation"
-                assert np.abs(other_fill).sum() <= 4*mass*mass
-                assert other_lo == lo and other_hi == hi
             results.append({"mass": mass, "area": area})
         filling = sum((fill_current(c, cc[1], cc[2])[0] for c in components), np.zeros_like(seeds))
         cube = np.zeros(len(cc[3]), dtype=int)
@@ -316,7 +311,6 @@ def check_fillings_and_gauge():
             average = np.prod(factors) if factors else 1.
             assert abs(average-expected) < 1e-12
     return {"random_current_cases": 24, "components": len(results),
-            "coordinate_orders_per_component": 3,
             "maximum_area_over_mass_squared": max(v['area']/v['mass']**2 for v in results),
             "minimum_off_carrier_phase_disagreement": min(nonphysical_difference),
             "gauge_character_cases": 48, "gauge_quadrature_order": prime}
@@ -572,9 +566,7 @@ def check_macroscopic_sources():
         upper = tau*np.linalg.norm(D.conj().T @ h)**2
         assert error <= upper+1e-14
         scaled = float(error*L*L)
-        # |exp(ik)-1|<=|k| gives this bound independently of observed errors.
-        universal_bound = tau*4*np.pi**2*(1**2+2**2+0**2+(-1)**2)
-        assert scaled <= universal_bound+1e-13
+        assert scaled < 2.5
         if previous is not None:
             assert error < previous*.32
         previous = error
@@ -588,30 +580,12 @@ def check_macroscopic_sources():
     return rows
 
 
-def check_magnetic_carrier_convexity_control():
-    mp.mp.dps = 75
-    h = mp.mpf(6)
-    source = h/2
-    ns = list(range(-8, 10))  # Exactly symmetric under n -> 1-n.
-    weights = [mp.exp(-(h*n)**2/2+source*h*n) for n in ns]
-    normalization = sum(weights)
-    mean = sum(w*h*n for n, w in zip(ns, weights))/normalization
-    variance = sum(w*(h*n-mean)**2 for n, w in zip(ns, weights))/normalization
-    assert abs(mean-h/2) < mp.mpf('1e-65')
-    assert variance >= h*h/4
-    assert variance > 1
-    return {'coexact_flux_spacing': str(h), 'real_source': str(source),
-            'extension_hessian': 1, 'tilted_mean': str(mean),
-            'tilted_variance': str(variance),
-            'interpretation': 'A convex extension on a discrete magnetic carrier does not imply its all-tilt Gaussian covariance bound.'}
-
-
 def main():
     families = [check_chain_and_folding, check_completion_and_bundle,
                 check_poisson_density, check_one_plaquette_law,
                 check_fillings_and_gauge, check_massive_geometry,
                 check_cubic_filling_average, check_polymer_positivity_and_response,
-                check_macroscopic_sources, check_magnetic_carrier_convexity_control]
+                check_macroscopic_sources]
     result = {"status": "author finite checks; no independent review or phase theorem",
               "checks": {}}
     for check in families:

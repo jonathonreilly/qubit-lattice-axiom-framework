@@ -103,6 +103,14 @@
         "error_variance_bound": 3.2087217227155974e-05
       }
     ],
+    "check_magnetic_carrier_convexity_control": {
+      "coexact_flux_spacing": "6.0",
+      "extension_hessian": 1,
+      "interpretation": "A convex extension on a discrete magnetic carrier does not imply its all-tilt Gaussian covariance bound.",
+      "real_source": "3.0",
+      "tilted_mean": "3.0",
+      "tilted_variance": "9.00000000000001670056437775369572211426277489811243290127032897269962261546"
+    },
     "check_massive_geometry": {
       "K_weighted": 1.4130235536714477,
       "beta_C_eigenvalue_interval": [

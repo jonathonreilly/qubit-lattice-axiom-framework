@@ -390,6 +390,29 @@ derivative norm. A full physical infinite-volume state or scaling theorem
 is not obtained merely by the existence of the auxiliary stationary
 Gaussian-perturbed process.
 
+### 6.5 Convex action and the remaining magnetic support
+
+For a_e>=256, delta_e=3g^2 C0 exp(-g^2/1024)<2e-12. The extension
+
+    S_e(Z)=Z.K^(-1)Z/2-V_e(Z)
+
+therefore satisfies (1-delta_e)I<=D^2 S_e<=(5/4+delta_e)I on all real
+plaquette fields. The transformed physical law is the restriction of this
+positive weight to the Haar link/image flux carrier, with its induced
+continuous measure on each magnetic component. That carrier still obeys
+BZ=-2pi sqrt(beta) q for integer magnetic q. It is not full plaquette
+Lebesgue measure. Thus uniform convexity of the extension does not by
+itself permit applying a theorem for an unconstrained continuous field.
+
+A direct finite control illustrates the distinction. On a single free
+three-cube, a pure Haar Villain Gaussian action has coexact flux
+x=h n, n integer, h=2pi sqrt(beta)/sqrt(6). Its extension has Hessian one.
+At the real source t=h/2, the weights exp[-x^2/2+t x] are invariant under
+n -> 1-n. Their mean is h/2 and their variance is at least h^2/4. Taking
+h=6 gives variance at least 9 despite the unit Hessian of the extension.
+This is a finite positive constrained-measure witness against that particular
+all-tilt covariance inference. It leaves the fixed-law infrared question open.
+
 ## 7. Smooth infrared source equivalence
 
 The original X has a centered lattice Gaussian distribution on
@@ -458,11 +481,14 @@ Gaussianity of those limits is supplied by the smoothing identity.
 ## 8. Status and next discriminator
 
 Sections 1-7 are proposed derivations with uniform finite-volume bounds.
-The first runner version checks seven families, including rational folding
-and bundle identities, independent real/Fourier density sums, local integer
-fillings, gauge projection, massive geometry and smooth-source scaling.
-The positivity induction and stochastic-response bounds still need their
-dedicated finite falsifiers and a cold proof review. The full physical
+The runner checks rational folding and bundle identities, independent
+real/Fourier density sums, local integer fillings in different sweep orders,
+all signed cubic filling operations, gauge projection, massive geometry,
+positive polymer recursion, Gaussian response and smooth-source scaling.
+The author read the full proof and runner after the derivation and corrected
+one initially unexercised orientation branch in the finite checks. The
+initial surviving fault is preserved. These are author checks, not independent
+mathematical review. The full physical
 score and magnetic-sector stability theorem remains necessary. No finite-
 clock photon phase, quantum spin-one phase, axiom failure, matter sector
 or TOE completion is claimed here.

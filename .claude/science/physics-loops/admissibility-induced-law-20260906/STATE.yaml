@@ -120,7 +120,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 08 close (2026-09-15)
 # block: 8
 # branch: physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915 (cut from main 5deabeb698; independent PR against main)
-# pr_status: opened for review — see HANDOFF.md for the PR number; hand-off to the owner review-loop; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8138 (base main); hand-off to the owner review-loop; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=33 FAIL=0; 26 mutations, census 26/26 in-family; stdout 5887 chars; note 780 lines; refuting pass 5/5 equal; gates: see HANDOFF.md"
 # seats: "supervisor-run (owner directive: no subagents): controls -> contract with a four-lens pass -> primary (proofs, runner) -> refuting pass with disjoint machinery -> fold; author checks only; independent review pending"
 # review_findings: "the 3D monotone law: one law per box with an irreducible three-body term; no translate consistency (exact 2x2 witness; mechanism lemma); plane chain with a unique stationary law per cross-section, 2D boundary planes; causal coupling: |Cov| <= 4|g||h|(3c)^(ceil(d/2)-1), sweep rate c/(1-2c), Z^3 law unique and translation-invariant for c < 1/3; c = 27/110, 10650/63407, 5782/30885 at the silent triples; record-dynamics reframing negative at scope"

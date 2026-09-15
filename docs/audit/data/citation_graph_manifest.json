@@ -1,6 +1,6 @@
 {
- "edge_count": 13281,
- "node_count": 5706,
+ "edge_count": 13284,
+ "node_count": 5715,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13102,6 +13102,10 @@
    "deps_hash": "d36e1491ac74",
    "out_degree": 2
   },
+  "native_positive_ward_scalar_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "native_product_gibbs_preparation_note_2026-09-08": {
    "deps_hash": "17833c2062d3",
    "out_degree": 2
@@ -13121,6 +13125,14 @@
   "native_sixth_offdiagonal_sign_obstruction_note_2026-09-08": {
    "deps_hash": "04cc700b0857",
    "out_degree": 4
+  },
+  "native_star_infrared_spectral_dominance_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "ba1290897089",
+   "out_degree": 1
+  },
+  "native_star_low_energy_operator_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "b78f2672dca6",
+   "out_degree": 2
   },
   "native_u1_pair_operator_and_all_low_support_note_2026-09-08": {
    "deps_hash": "79db32e637e8",
@@ -21797,6 +21809,30 @@
   "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.readme": {
    "deps_hash": "a811438131a8",
    "out_degree": 6
+  },
+  "work_history.repo.review_feedback.pr8086-operator-evidence.kept.pr8086-operator-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8086-operator-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8086-spectral-evidence.kept.pr8086-spectral-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8086-spectral-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8086-ward-evidence.kept.pr8086-ward-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8086-ward-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",

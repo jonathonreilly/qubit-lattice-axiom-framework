@@ -126,7 +126,10 @@ replace every placeholder and include complete file/input lists.
 - The helper list matches actual graph/packet closure. Each runner declares a
   timeout; all literal declared inputs are readable and bound. An absent input
   declaration differs from an invalid empty/dynamic declaration. This validates
-  declared closure, not arbitrary Python I/O.
+  declared closure, not arbitrary Python I/O. Check the actual cache API's
+  `declared_timeout_for` for every primary and discovered helper before freezing
+  or executing the unit; a fresh existing cache does not establish this required
+  metadata. Apply any justified metadata correction before capturing evidence.
 - `reviewer.references` binds execution receipts, independent controls, external
   method evidence and other relied-on files. The report's scientific verdict is
   deliberately neither parsed nor promoted.
@@ -147,6 +150,16 @@ source identities. An adapter must not fill an absent judgment with PASS or infe
 reading coverage from a successful runner.
 
 ## Current supporting proofs
+
+`repository_dependencies` records load-bearing paths, not a promise that every
+path is an autonomous ledger claim. If a path is also an explicit version-2
+supporting proof owned by that same canonical note, the integration gate must
+verify its exact owner, source/input hash, immutable unit record and reviewer
+reference before treating it as owned proof instead of a separate graph parent.
+Retain that proof binding in the landing receipt. Require ordinary graph parents
+for all other dependencies; never exempt a directory or suppress a genuinely
+missing premise.
+
 
 A proof fragment can belong to a canonical claim without being an autonomous
 claim note. Keep it as current scientific source: do not label it historical or
@@ -228,3 +241,14 @@ notes retain generation tokens checked before return. A new/removed note changes
 the actual discovered inventory and fails. Existing source/index/hash guards remain.
 Stdout includes parser hit/miss counts so whole-repository cost can be measured
 without rerunning scientific controls. This changes execution cost, not coverage.
+
+### Proof inputs outside graph discovery
+
+When the actual graph API excludes a proof input's location (for example,
+Markdown under `outputs/`), preserve and fully review it as a hash-bound runtime
+input. Describe its ownership and scope in the canonical argument and reviewer
+report, using portable inline paths where the citation resolver cannot accept a
+link. Do not invent a graph claim or a non-science exemption. Version 2's
+`supporting_proofs` relationship applies only to discovered Markdown; ordinary
+runtime proof inputs can use version 1. Both require complete proof, premise and
+input review under the owner's claim.

@@ -1,0 +1,21 @@
+{
+  "backup": null,
+  "destination": "/Users/jonBridger/.codex/skills",
+  "mode": "check",
+  "skills": [
+    {
+      "changed_paths": [],
+      "recovery_directory": null,
+      "recovery_state": null,
+      "skill": "review-loop",
+      "status": "in_sync"
+    }
+  ],
+  "source": {
+    "repository": "/private/tmp/review-drain-20260915/train26",
+    "revision": "0641ef197a36124872e898265b0d7fc16422b051",
+    "skills_dirty": false,
+    "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+    "worktree_dirty": false
+  }
+}

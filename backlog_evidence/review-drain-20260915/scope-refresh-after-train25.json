@@ -1,0 +1,142 @@
+{
+  "original_nondraft": 116,
+  "landed_original": 67,
+  "remaining_original_open": 49,
+  "unexpected_closed": [],
+  "moved_original_heads": [],
+  "outside_cohort_open": [
+    {
+      "baseRefName": "main",
+      "headRefOid": "bddf38c6396bb5f7de91cceee291c97d5843f773",
+      "isDraft": false,
+      "number": 8147
+    },
+    {
+      "baseRefName": "physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915",
+      "headRefOid": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+      "isDraft": false,
+      "number": 8146
+    },
+    {
+      "baseRefName": "physics-loop/static-charge-transfer-sector-20260915",
+      "headRefOid": "c5580db2ebe78e4dca71f210539cea1471148483",
+      "isDraft": false,
+      "number": 8145
+    },
+    {
+      "baseRefName": "physics-loop/clock-static-charge-20260915",
+      "headRefOid": "691f96525772ec0e7d06a528d14ad17324400f22",
+      "isDraft": false,
+      "number": 8144
+    },
+    {
+      "baseRefName": "main",
+      "headRefOid": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+      "isDraft": false,
+      "number": 8143
+    },
+    {
+      "baseRefName": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+      "headRefOid": "e5b9ca893f95c1bd37e0a920928ed1567420e0ef",
+      "isDraft": false,
+      "number": 8142
+    },
+    {
+      "baseRefName": "physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915",
+      "headRefOid": "a76f95da766eea86e1ff357130b725563311285c",
+      "isDraft": false,
+      "number": 8141
+    },
+    {
+      "baseRefName": "main",
+      "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+      "isDraft": false,
+      "number": 8140
+    },
+    {
+      "baseRefName": "physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915",
+      "headRefOid": "8345c241c10560da9086afbd400b765417fd1c11",
+      "isDraft": false,
+      "number": 8139
+    },
+    {
+      "baseRefName": "main",
+      "headRefOid": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+      "isDraft": false,
+      "number": 8138
+    },
+    {
+      "baseRefName": "main",
+      "headRefOid": "d15d5d9074e343563700691afcfddb5afc761a21",
+      "isDraft": false,
+      "number": 8137
+    },
+    {
+      "baseRefName": "codex/finite-pw-energy-block42-20260907",
+      "headRefOid": "d041b83a507226feae9713662767dd34d2ffb4a8",
+      "isDraft": true,
+      "number": 8033
+    },
+    {
+      "baseRefName": "codex/finite-transporter-block41-20260907",
+      "headRefOid": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+      "isDraft": true,
+      "number": 8032
+    },
+    {
+      "baseRefName": "codex/continuum-boundary-block40-20260907",
+      "headRefOid": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+      "isDraft": true,
+      "number": 8031
+    },
+    {
+      "baseRefName": "codex/infinite-static-block39-20260907",
+      "headRefOid": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+      "isDraft": true,
+      "number": 8030
+    },
+    {
+      "baseRefName": "codex/static-uniform-block38-20260907",
+      "headRefOid": "c5f58f84246c7ee938152dcc317264f8b1384a3f",
+      "isDraft": true,
+      "number": 8029
+    },
+    {
+      "baseRefName": "codex/static-geodesic-block37-20260907",
+      "headRefOid": "36843ba7b46901269911496f8dfdef6fd5f63cae",
+      "isDraft": true,
+      "number": 8028
+    },
+    {
+      "baseRefName": "codex/spatial-area-block36-20260907",
+      "headRefOid": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+      "isDraft": true,
+      "number": 8027
+    },
+    {
+      "baseRefName": "codex/local-observable-block35-20260907",
+      "headRefOid": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+      "isDraft": true,
+      "number": 8026
+    },
+    {
+      "baseRefName": "codex/volume-uniform-gap-block34-20260907",
+      "headRefOid": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+      "isDraft": true,
+      "number": 8025
+    },
+    {
+      "baseRefName": "codex/compact-cutoff-block32-20260907",
+      "headRefOid": "1c814b95243c5f788f57bab57c67fdc542f1aab4",
+      "isDraft": true,
+      "number": 8024
+    },
+    {
+      "baseRefName": "main",
+      "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+      "isDraft": true,
+      "number": 8023
+    }
+  ],
+  "boundary": "Frozen116non-draft cohort only; outside-cohort drafts/new arrivals not enrolled"
+}

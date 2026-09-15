@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "3201d7c5452e95c69399fbe7671f862e357623c5",
+  "fetched_ref": "refs/review-loop/fetched/8103-90312c04352a404eac335e64c23197c9",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/gauss-reduced-weak-coupling-spectrum-20260913",
+    "headRefOid": "3201d7c5452e95c69399fbe7671f862e357623c5",
+    "isDraft": false,
+    "number": 8103,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

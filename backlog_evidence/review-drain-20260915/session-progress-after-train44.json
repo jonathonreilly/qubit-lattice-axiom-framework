@@ -1,0 +1,26 @@
+{
+  "original_total": 116,
+  "landed_and_closed": 93,
+  "remaining_original": 23,
+  "main": "c57451d65cca05ec54099c3b552b44e493a66c7b",
+  "active_train45": [
+    8100
+  ],
+  "integration_session": 70198,
+  "author8066_8067": "coldsciencePASS, correctedrecordpreflight running, no capture yet",
+  "review8101": "inprogress, no capture",
+  "ready_packet8103": {
+    "tree": "1c5a05a8a37e3fced530a8333347407832a984e7",
+    "source_count": 96,
+    "unchanged_original_note_primary": true,
+    "exact_historical_cache_restored": true,
+    "new_execution": false
+  },
+  "pool_owners": {
+    "integration-one": "train45",
+    "review-slot-one": "pr8103-author",
+    "author-slot-one": "pr8101-author"
+  },
+  "remote_provenance_latest": "ae7e84d5a1",
+  "current_remote_skill_parity": "7/7 identical at main5e89e529"
+}

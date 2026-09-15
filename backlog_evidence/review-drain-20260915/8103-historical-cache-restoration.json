@@ -1,0 +1,11 @@
+{
+  "source_head": "3201d7c5452e95c69399fbe7671f862e357623c5",
+  "original_path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CANONICAL_CACHE.txt.gz",
+  "compressed_sha256": "c2e670e292a49a09b8ff6c8cc62693ec232456d4e6850baaf41d35b698451422",
+  "decoded_sha256": "bff43baa6b599d5194315e0bbdd483b1d5974b1bdc73a095527738d1c9460cf9",
+  "restored_path": "logs/runner-cache/exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_2026_09_13.txt",
+  "actual_cache_status": "fresh",
+  "new_execution": false,
+  "metadata_rewritten": false,
+  "requires_independent_scientific_review": true
+}

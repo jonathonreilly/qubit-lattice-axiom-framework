@@ -1,0 +1,27 @@
+[
+  {
+    "pr": 8104,
+    "primary": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+    "runtime_metadata": [
+      "    print(f'TOTAL: PASS={checks} FAIL=0')"
+    ],
+    "caches": [
+      {
+        "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz",
+        "header": "===== runner cache v1 =====\nrunner: scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py\nrunner_sha256: 2ab609e5f2d06c60e051763ba1eeb9c2d680578a002ec0b066456d78be71800a\ntimeout_sec: 90\nexit_code: 0\nelapsed_sec: 1.05\nstatus: ok\n",
+        "total": [
+          "TOTAL: PASS=640 FAIL=0"
+        ]
+      }
+    ]
+  },
+  {
+    "pr": 8106,
+    "primary": "scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+    "runtime_metadata": [
+      "AUDIT_TIMEOUT_SEC = 90",
+      "    print(f\"TOTAL: PASS={len(checks)} FAIL=0\")"
+    ],
+    "caches": []
+  }
+]

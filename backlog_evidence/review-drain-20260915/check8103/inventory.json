@@ -1,0 +1,519 @@
+{
+  "number": 8103,
+  "head": "3201d7c5452e95c69399fbe7671f862e357623c5",
+  "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "canonical": [
+    "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "scripts/exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_2026_09_13.py"
+  ],
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/AUTHOR_REVIEW.md",
+      "sha256": "8f42c394a3931279a3a18c68a69f550bce0f7e7b9d2452fb1e09fcafb0da9467"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_DERIVATION.md",
+      "sha256": "501fc6f463418b51efe863ba08abb12d099abd3275a19d033c4259a8fddcae6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SEED.md",
+      "sha256": "8abdf739d0a174380963e4b850230881aa5f52a35e4b5ff90cc7bde7653b1e38"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SPECTRAL.stdout",
+      "sha256": "65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/BLOCK14_SPECTRAL_EXPLORATION.json",
+      "sha256": "65becb7afb6c250c90ae8a8bb8bf0223b99a87100026f260a8dfcf5de18655b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CANONICAL_CACHE.txt.gz",
+      "sha256": "c2e670e292a49a09b8ff6c8cc62693ec232456d4e6850baaf41d35b698451422"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CANONICAL_EXECUTION.json",
+      "sha256": "36d17ebee26047138fabcf3c76f47ce62a199c545ad7530395c4b619c7ccb1ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CHANGED_EVIDENCE.json",
+      "sha256": "862bbc31e355e1716c9e73ab3829222756b564f83ab1f15adaf22b71df366355"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/CORRECTIONS.md",
+      "sha256": "6da68208bbb43edc3fb802deb07074da87869e38b6b85a3e1b0582ee30d071c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/GRAPH_DELTA.json",
+      "sha256": "db8943664ab28d79cad5ef2540e9e932ddf5da01918262005d4baa996016a9c7"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/LITERATURE_SCOPE.md",
+      "sha256": "756a8f1bca64dd1db3b356377f22dc24c20aaa25fc90df912c25e59d5fa90a65"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/MUTATIONS.json",
+      "sha256": "29a452cada4c2650381ba1c9b4a4fb8f95e248567d60c8a2a93640017ec9ac7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/SOURCE_READINESS.json",
+      "sha256": "f7a51ef4156329bcd015d96e39f489577517e41070f782e1148cf9fc57da38c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/CANONICAL_CACHE.txt.gz",
+      "sha256": "736e620e3fe1aaa6836dfab888d52fd00df4a4b406e0adbc22c96b7c891cb1ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/CANONICAL_EXECUTION.json",
+      "sha256": "825460d97dce197c7cfd1b4e2b8090eaab7d0ec2dab7b214987546e9e6246732"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/MUTATIONS.json",
+      "sha256": "180b485053f7494f9c32e08bc015f6bcff2bbb6c5621e94cfebdcb91a87982b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/SOURCE_READINESS.json",
+      "sha256": "8c99dadc6edd335f85a6d31f8fcf47aa2d4fbe5469c1fd76c79c10db96777d62"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/boundary_form_factor.py.gz",
+      "sha256": "03b09f8c0158efa309df69ed7d8aa4841d4f7ebdb95c6238fd1404f9c933aed1"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/boundary_form_factor.stderr.gz",
+      "sha256": "0c5c4e3024ab1c0da530931134bd374dcdcc102043842c4dca1878cd65bf6ea8"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/boundary_form_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_hypergeom_parameter.py.gz",
+      "sha256": "9c03fe42bdb34c59ca0ee5796598a2a3adc6d2839f268a53e82baa37a67fce55"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_hypergeom_parameter.stderr.gz",
+      "sha256": "e605c9a0282c16e9a9884ffd3516fe609e9e6adf9bff6d648e419b4538965838"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_hypergeom_parameter.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_ode_coefficient.py.gz",
+      "sha256": "cf78a991e704939fb82ddc47394181562ce5e86d794274a1479f034f7f95b143"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_ode_coefficient.stderr.gz",
+      "sha256": "bf25af8f885f5ea9a105472f3bcb913dcce39285aa6a8d0c5a3aa9e0b8b2e756"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/box_ode_coefficient.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/car_annihilation_sign.py.gz",
+      "sha256": "4cac280324efb0b5fc75a16f28fb57369b80bb11296532991a0c2f13afa407a5"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/car_annihilation_sign.stderr.gz",
+      "sha256": "c5979a153e816b8919a16945f0d1752264ef25b3abbae344bda7cb28c9356109"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/car_annihilation_sign.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_chord_translation.py.gz",
+      "sha256": "dc5a75d572e4299b5c4c59b9de49af1a07fb67a4b19987d40cef8ba67aba13f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_chord_translation.stderr.gz",
+      "sha256": "9461c2b28b2c142c1d5d7b87b3e82f42c629071ba89999a860feb3afe1fa24c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_chord_translation.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_domain_product.py.gz",
+      "sha256": "82fc0bef49f84bd50cb3b25cebb57647d38fc1bfbb0528c9ab2b5ff3bcde1768"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_domain_product.stderr.gz",
+      "sha256": "e8c8a58e7c781d1e9c3fec827fcc5b8581f89c2064c9536f5fa7f141b61a94a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_domain_product.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_electric_factor.py.gz",
+      "sha256": "922f2db63fc694148f1c7acbbf28e5c98659835694be3bce32d7a70b13c2baa9"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_electric_factor.stderr.gz",
+      "sha256": "163edc9efa81efd10a0a81da6cfd3f309a9a057090486ee8045aed45b666a207"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_electric_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_magnetic_factor.py.gz",
+      "sha256": "f6f804fde09c8f1db928dce544b3aa45a9d0f9f230078b1406ff4747b57d2ace"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_magnetic_factor.stderr.gz",
+      "sha256": "bd92120809dc169958a03d2917f0d04b845bd2d3d10878df531b93c955b267c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/charged_magnetic_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cube_frequency.py.gz",
+      "sha256": "0d323c33ec2f90ba682db897a172f5d92b9140d8468eb4c80886e8f25b1045f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cube_frequency.stderr.gz",
+      "sha256": "5541e91ceb38e036cb964e27a0480782c19e8437a5dc46451630cd5f2028e7a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cube_frequency.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cycle_sign.py.gz",
+      "sha256": "8ff7e292f6b69f1cd07cd44378cc8168dd7c312cdb111bb882acdd87c420d274"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cycle_sign.stderr.gz",
+      "sha256": "b3f04bee0848814d60a7c91a1978dc05ce1c27c973d40502b4578569b584d50e"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/cycle_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/double_copy_erasure.py.gz",
+      "sha256": "820a96ecbb344c0d00cbb713da0c6469326d6f2c41144df06fbe44e814fdd48f"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/double_copy_erasure.stderr.gz",
+      "sha256": "2a2a7b2232774313ea919258f5bb04dbfae68448fdc0144f177a3caf7f508533"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/double_copy_erasure.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/harmonic_rank.py.gz",
+      "sha256": "9976b25e989d64a2e84580e9d1f4070e7f15d2f4b27fd6c632533ee0b4463855"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/harmonic_rank.stderr.gz",
+      "sha256": "c6d421e250b6905538cabddc04460f750ff93ded52ae14e0d80e223d12f084df"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/harmonic_rank.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/plaquette_orientation.py.gz",
+      "sha256": "9f8764a573098020302b09df578780444e6a532133ff42649df50560d4318bbe"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/plaquette_orientation.stderr.gz",
+      "sha256": "aa127f2e2bb87838756f889b5125f477793c2cc8f6ecb8ccd2507e3d37aeaa81"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/plaquette_orientation.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/pure_magnetic_factor.py.gz",
+      "sha256": "e81b77d1294779da38c245c7633d9c6b860c73670e60435708bc523053e106ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/pure_magnetic_factor.stderr.gz",
+      "sha256": "8ff0de119ff44c159d0047a83ed4ac1592c6fe30859ceb72e8850fcc83e49c93"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/pure_magnetic_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/root_flow_sign.py.gz",
+      "sha256": "09b1e5e4bb1bb9d8b96d2c8c98afaebbaf725b0ec7cebd221a889457f0ac89fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/root_flow_sign.stderr.gz",
+      "sha256": "7c8f65848b9658a7be842b949a90c6a08ab255c3024d12d664b1bf4ab0d6c6be"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/root_flow_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/weighted_coulomb.py.gz",
+      "sha256": "8adb770abb5eb5c9f1a9408f3db95385be14bcee63ae4dd0ac013649cca350b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/weighted_coulomb.stderr.gz",
+      "sha256": "723e6db9ff88d2a0f0542c89d92007a198e97e7d7918a2a56c3edbb0badbfcb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/mutations/weighted_coulomb.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/before_domain_assertion/primary.py.gz",
+      "sha256": "791f8947ccf88efabdea38aab3f4132d046c9a51816407d1e6208325ba2b099b"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_graph_build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_graph_build.stdout",
+      "sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_spectral_explore.py",
+      "sha256": "3659a7c993920a0a393efb14f1336d201ae7ad966b809aea64374c2d8f9f70a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/block14_vocab.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.py.gz",
+      "sha256": "22c109d04e5aa5f0b5708cdab4afa92c61900dfba93beb5fc0ece4fda55c1edd"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.stderr.gz",
+      "sha256": "d40b52940c2f5409c4458a273126b11397013cfa876402c349cafb02f9f57308"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/boundary_form_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.py.gz",
+      "sha256": "f63f863d08bb835ef553f4b77d184eb8e37a5871ca284c92fea534c925a1f992"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.stderr.gz",
+      "sha256": "485f37cdb3872bf8c1772aee805acbd51a122d6f23ceff0d53194b807ce70257"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_hypergeom_parameter.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.py.gz",
+      "sha256": "aa016240e04ad894ff0dea6bece30a6c02edf83cbe62c9a35ac12b614b279d08"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.stderr.gz",
+      "sha256": "3c1c92641dfa802a2e184ce52c03db98da399e6f2b239a6a4d854d34a78efb2e"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/box_ode_coefficient.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.py.gz",
+      "sha256": "434c341a52303871d2fd5ceef62e6c6682c6cfac9d5674519624ac99f46d4dbc"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.stderr.gz",
+      "sha256": "ed486d32ebf3f64b52d09dcfc5158e91dea6eef9a6049819c182f7d3c371964c"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/car_annihilation_sign.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.py.gz",
+      "sha256": "d29a0d7a12a8a7595fbc43368044854defa6f6edb815cb75c55c86347c97d0c0"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.stderr.gz",
+      "sha256": "e26af19995d941e0b353ed49f1b9d248e0cb37fc298a62117ccd748cc36079ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_chord_translation.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.py.gz",
+      "sha256": "2d968dbdf5cb9f8f6e7ff5b2bf2967e44771aa0c77b5f56a4a2b486e2524f1f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.stderr.gz",
+      "sha256": "a5b36f5b9893d1787c051f1d798116a7535cf5ad65311277f17a865d2c5ac8d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_domain_product.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.py.gz",
+      "sha256": "4b04feaeed83a8955ea4c802abeb162ddac4aeee04d6c3c4af43de08299cbf61"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.stderr.gz",
+      "sha256": "edddc96e48428e65d7d9001c0510997502f0debcda367ebc522b774a50318c15"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_electric_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.py.gz",
+      "sha256": "75cbe3aa490c8612978f3df9f4c736d50e086959a580fc2db4ad40afa5824e9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.stderr.gz",
+      "sha256": "fff7b3aef508f229ade1caecc9285c3662bb094367f037cbb0b424c122c1250e"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/charged_magnetic_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.py.gz",
+      "sha256": "0cc637dd5ecb4275dff9396d485ed9d1ebd12ff699a2fa5532e9913f62fa77c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.stderr.gz",
+      "sha256": "1031265910e86965a0231bacafa6abe81f432da4bd9eaa117d60320dce8aebaf"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cube_frequency.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.py.gz",
+      "sha256": "fa75f8976f98a2f68b41f7a36e69c071ec104163d8ade2c754e9c32a483a621b"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.stderr.gz",
+      "sha256": "089b70bcef76ae68575dce04b245ee0d9aa11d918be45914c3c88f2abcb2c0ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/cycle_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.py.gz",
+      "sha256": "3080df4ae05fab3c17a39ee497f70e8f6efafaa585d20729ce8975b9917a30d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.stderr.gz",
+      "sha256": "ba29c3b80780ffa9f252ab7e822a5197433ebee8eab3ee60dfefe3067920d4fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/double_copy_erasure.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.py.gz",
+      "sha256": "17825baec15335603ef8321f63d6b9160e67a40a52795fa40035d85ebc56eff4"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.stderr.gz",
+      "sha256": "8e2cbdadf2048613b0259c68b5a4e56261522c10ec540db1ee5c655e8c505975"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/harmonic_rank.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.py.gz",
+      "sha256": "aa73275331903fdda39083cce43bff6d6d12f152c1dfb0a284bf2695d15a5747"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.stderr.gz",
+      "sha256": "eb5ce7c8c332d3f087128c7cfbe2a1fd09215c5d175aebcd0c804e80e23bba79"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/plaquette_orientation.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.py.gz",
+      "sha256": "d43230a063e4d4027b3748319a4ac16644702654f24516594c44aaaaafddc52e"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.stderr.gz",
+      "sha256": "00603fc2d860378106bbb98d7b4b67565acd1c0fa2bae2f4082a95aa713a4925"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/pure_magnetic_factor.stdout.gz",
+      "sha256": "0f2e4913d078d14cf6dbc643bf837818a60dd5df4686f79dd24c8a96173f8a99"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.py.gz",
+      "sha256": "4d0e9db9a82895b5c87956acecebe57e399103a4c8db8879d1d5aba16765d672"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.stderr.gz",
+      "sha256": "623a9ad29d2ce9e585a4cb2ea5de98c7ea7b203c6063aeeecf76178e0fc6d567"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/root_flow_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.py.gz",
+      "sha256": "99f71599659a9173f085942903490fa892fa6baf92a6c495efb12a6b50b1cb46"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.stderr.gz",
+      "sha256": "d4aeedee14999d4b12edf858eab239d8285094a170d24c76f19b4a1f096142ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/mutations/weighted_coulomb.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/package_block14.py",
+      "sha256": "11071dcff43f4f71a5b8d79c747d2f1caafc8d27a7f0b15781039e23ff14191a"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/prior_check/BLOCK14_CHECK.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/prior_check/BLOCK14_CHECK.stdout.gz",
+      "sha256": "f6b9aa630f6dfd31588bcd4cdd206be668819e6ed77405c56dad6fedd6267c28"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/prior_check/check_block14.py.gz",
+      "sha256": "31158de67bf1ea507bf606da16b5e66b8700291ec1e495452ea9a9a06c351e90"
+    },
+    {
+      "path": ".claude/science/physics-loops/gauss-reduced-weak-coupling-spectrum-20260913/verify_block14.py",
+      "sha256": "a55a3d61ca3f92223e9d61d75e4891265683ac2596c44e7573150c6a3aec6de2"
+    },
+    {
+      "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "fa02c2587d23cc27f83ed5ba898597f2567ae8fa0afe2475d6481bcf4faf8c59"
+    },
+    {
+      "path": "scripts/exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_2026_09_13.py",
+      "sha256": "7b284b83243201d2d6630720c62f94d75ed37416903af79654875f7cc995b080"
+    }
+  ]
+}

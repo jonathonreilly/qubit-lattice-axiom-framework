@@ -10,7 +10,11 @@ runner: scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_se
 
 # The static strip at widths four and five, rigorously enclosed: the separation from the formation law at every executed width
 
-**Date:** 2026-09-07 **Type:** bounded_theorem **Status:** proposed_retained **Audit:** unset; the
+**Date:** 2026-09-07
+
+**Type:** bounded_theorem
+
+**Status:** proposed_retained **Audit:** unset; the
 independent audit lane owns any verdict.
 **Primary runner:**
 [`scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py`](../scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py)

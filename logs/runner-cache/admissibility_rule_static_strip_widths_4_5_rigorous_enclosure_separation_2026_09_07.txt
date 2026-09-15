@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py
 runner_sha256: 4298c5b569509f1e05a05d8694c8ca1b7cdbc5b33a9b390512e329191a70af2f
-input_fingerprint_sha256: ea4cce759f0bc4e2e0a84069da53cffcfb9e2d3a8136ceb19e858275056d51a2
+input_fingerprint_sha256: 4b22309c46153ecd3fd3bd40066908ad8c167fed70f4c123c73af78113858eb0
 timeout_sec: 400
 exit_code: 0
-elapsed_sec: 60.81
+elapsed_sec: 60.88
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

@@ -1,0 +1,17 @@
+goal: "possibility-symmetric sequential variation forces order dependence"
+delivery_mode: milestone
+target_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+active_route: "ends-first independence is K^2 = mu_0"
+cycle: 1
+hard_residual: "joint covariant formation, or a covariant law on orders"
+open_imports: []
+provisional_dependencies: []
+next_milestone: "derive or witness a covariant joint-formation construction"
+stop_condition: "review-ready derivation of order-dependence"
+actual_current_surface_status: bounded-support
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+branch: physics-loop/possibility-symmetric-order-dependence-20260915
+baseline: origin/main 5deabeb698

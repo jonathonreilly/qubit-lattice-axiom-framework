@@ -1,0 +1,64 @@
+{
+  "kind": "Original-reviewer methodology landing confirmation",
+  "unit": "PR8047",
+  "reviewer_session": "/root/review_8012",
+  "prior_candidate_addendum": {
+    "path": "/private/tmp/review-drain-20260915/8047-methodology-context-addendum.json",
+    "sha256": "88c4219d7a33b475ad147e0814c7136d4a7d3365271680865b458fc5f0c5e1e3"
+  },
+  "remote_main_verified_by": "git ls-remote origin refs/heads/main",
+  "remote_main": "5d3a910feb102c627e8a5b63269ce0728606c59c",
+  "exact_candidate_resource_hashes_match_main": {
+    ".claude/commands/review-loop.md": {
+      "sha256": "ace9e7a0bfc9904e27225c06a6a0bfffbebc10d1fc6eefb38b10b2ff11065d8b",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/audit/scripts/check_review_loop_skill_contract.py": {
+      "sha256": "a822feb915d832e1455c66c6ec88a9e2c2b4fef7db0f912c49ea983912093310",
+      "read_scope": "Actual changed instructions/reference/source read for context effect"
+    },
+    "docs/audit/scripts/tests/test_review_loop_skill_contract.py": {
+      "sha256": "824ec73f4ccada29ff3611447cadea569f9af7c65e6db38d87bdbdecaf040b3b",
+      "read_scope": "Identity bound; validation coverage from separately identified independent methodology review, not a new test review here"
+    },
+    "docs/audit/scripts/tests/test_review_receipt.py": {
+      "sha256": "7c6e99b31e870929ec4b6692846759f80904ac8c678dc5689c620f04ba99b59b",
+      "read_scope": "Identity bound; validation coverage from separately identified independent methodology review, not a new test review here"
+    },
+    "docs/audit/scripts/tests/test_review_workspace.py": {
+      "sha256": "62a003fb1b61c571ff70988941c9b6f1ae93dee5cf77a6919a50704f1c984b2d",
+      "read_scope": "Identity bound; validation coverage from separately identified independent methodology review, not a new test review here"
+    }
+  },
+  "current_core_sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+  "science_source_tree_unchanged": "395ea9e4b853a5676b3a918d91ab077671781136",
+  "confirmation": "The exact-landing condition in the immutable candidate addendum is fulfilled. PR8047 original science/source PASS remains valid under current-main operational methodology. Root may update methodology context input bindings with this explicit same-session confirmation. No scientific source/premise/helper/cache change, new execution stamp or science rerun.",
+  "old_reports_unchanged": {
+    "/private/tmp/review-drain-20260915/review-8047.md": "13a5b504556449a5addd3cd938e6aa6272864c81fff93727096aaaddd3f027cf",
+    "/private/tmp/review-drain-20260915/review-8047.json": "435a91d921eb9252e88902ba8e84ef1143ca02ed89292c1f92cdfbb2731f50a9"
+  }
+}

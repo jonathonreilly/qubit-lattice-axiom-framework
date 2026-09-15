@@ -1,0 +1,55 @@
+{
+  "remote_main": "5d3a910feb102c627e8a5b63269ce0728606c59c",
+  "resources": {
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "remote_and_installed_identical": true
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+      "remote_and_installed_identical": true
+    },
+    "docs/ai_methodology/skills/review-loop/agents/openai.yaml": {
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+      "remote_and_installed_identical": true
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+      "remote_and_installed_identical": true
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+      "remote_and_installed_identical": true
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+      "remote_and_installed_identical": true
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "remote_and_installed_identical": true
+    }
+  },
+  "full_folder_check": {
+    "backup": null,
+    "destination": "/Users/jonBridger/.codex/skills",
+    "mode": "check",
+    "skills": [
+      {
+        "changed_paths": [],
+        "recovery_directory": null,
+        "recovery_state": null,
+        "skill": "review-loop",
+        "status": "in_sync"
+      }
+    ],
+    "source": {
+      "repository": "/private/tmp/review-drain-20260915/train20",
+      "revision": "5d3a910feb102c627e8a5b63269ce0728606c59c",
+      "skills_dirty": false,
+      "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+      "worktree_dirty": false
+    }
+  },
+  "previous_efficiency_source_commits_preserved": true
+}

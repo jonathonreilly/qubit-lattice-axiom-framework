@@ -1,0 +1,16 @@
+.....Preparing worktree (detached HEAD 7b5be2f)
+Previous HEAD position was 7b5be2f first
+HEAD is now at e5a7e99 second
+.Preparing worktree (detached HEAD 79bccdb)
+.Preparing worktree (detached HEAD 79bccdb)
+.Preparing worktree (detached HEAD 543c4d2)
+.From /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpy11o99zs/remote
+ * [new ref]         refs/pull/7/head -> refs/review-loop/fetched/7-6aa47c660b314346a147a9a7e86c509b
+.From /private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpouxvnriy/remote
+ * [new ref]         refs/pull/7/head -> refs/review-loop/fetched/7-1377500cd0fd42d9a25372612187b341
+..Preparing worktree (detached HEAD c2b430b)
+....................................................................................................
+----------------------------------------------------------------------
+Ran 112 tests in 19.864s
+
+OK

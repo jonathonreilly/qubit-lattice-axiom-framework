@@ -1,0 +1,12 @@
+(1) N=250: S_N = 1.486921064 (denominator digits 385) in 0.1s
+(1) N=500: S_N = 1.495535556 (denominator digits 774) in 0.8s
+(1) N=1000: S_N = 1.501637002 (denominator digits 1553) in 10.8s
+(1) N=2000: S_N = 1.505954946 (denominator digits 3107) in 149.1s
+(1) Watson constant W = 1.516386059151978...; S_N approaches it from below
+(2) tail constant (1/(2 pi^3))(36 pi/11)^{3/2} = 0.531631; crude constant (1/2)(3 pi/4)^{3/2} = 1.808368
+(2) P_{2n} <= the bound for n <= 60 (exact P as float): True
+(2) 1 - cos u >= u^2/2 - u^4/24 on [-pi, pi] (sampled): True ; 11/24 = 0.4583333333333333
+(3) N=1000: tail T(N) = 0.016812; 3G(0) <= (S_N + T)/2 = 0.759224  (true 3G(0) = 0.758193); crude threshold 3 sqrt(3) pi/8 = 2.0405
+(3) N=2000: tail T(N) = 0.011888; 3G(0) <= (S_N + T)/2 = 0.758921  (true 3G(0) = 0.758193); crude threshold 3 sqrt(3) pi/8 = 2.0405
+(3) exact: T1(N)^2 <= (36/11)^3/(108 N) = 1.623e-04 -> T1 <= 0.012739 (pi >= 3 used); exponential term at N = 2000 is below 1e-100
+(3) exact comparison (S_N + T1)/2 < 77/100 with the exponential term absorbed in 1e-40: True; 2*77/100 - S_N = 0.034045 vs T1 <= 0.012739

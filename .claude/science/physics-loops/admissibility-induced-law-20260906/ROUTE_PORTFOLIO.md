@@ -84,3 +84,8 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 22 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–21 are open PRs #8034, #8035, #8138–#8142, #8146–#8155)
+Searched commit: `origin/main` = `be5e5e07f6`.
+- `git grep -l -iE "watson|return probabilit|green function at the origin|lattice green" origin/main -- 'docs/ADMISSIBILITY*.md' 'docs/GRAVITY*.md'` → block 13's heat-kernel use of the same walk's return probabilities; the gravity lane's Green-function asymptotics; nothing pinning `G(0)`.
+Classification: **open after the matched-hit review.** Routes: Y-A the closed form in Gamma values — not used (would import elliptic-integral theory as authority); Y-B exact partial sums with block 19's crude tail constant — superseded (needs `N` about ten times larger); Y-C exact partial sums with the quartic tail bound at `N = 1000` — chosen; Y-D a rigorous numerical integration of the lattice integral — not attempted (not exact).

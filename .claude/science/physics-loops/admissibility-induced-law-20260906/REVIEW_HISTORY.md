@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 22 — V1-V5 (supervisor, 2026-09-15)
+- V1: the width of the kernel's coupling window on `Z³` after blocks 19 and 21 (PRs #8153, #8155): a factor seven, set by block 19's crude bound on `G(0)`.
+- V2: the lens pass in `GOAL_block22.md` ("the closed form is classical" — not used; "why not the true `β_c`" — the route's constant is pinned, not the transition; "is the exact sum feasible" — ten seconds at `N = 1000`; "the exponential term" — an exact geometric majorant).
+- V3: V1–V3 proved and executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes with no findings; three runner fixes before the census (a decimal from the wrong `N`, a decimal in a string, a forbidden substring in the note).
+- V4: no reading, rule or coupling selected; the true threshold and the band not claimed; blocks 19 and 21 not re-proved.
+- V5: consumers named — #8093's assembly (the gravity node's coupling window); the campaign's queue.
+
+## block 22 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block22.md`): as V2. Control: the exact partial sums to `N = 2000` with timings; the crude and quartic tail constants; the bound against exact terms to `n = 60`; the comparison at `N = 2000` against `77/100` (the contract then fixed `N = 1000` and `76/100`). Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block22_findings.md`): direct enumeration to `n = 300`; the tail fit against the classical value (reference only); the bound against exact terms to `n = 1000`; a `41³` grid; the exponential majorant — no findings. Author checks only; independent review pending.
+
+## block 22 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `be5e5e07f6`; nothing pinned from a branch or PR (PRs #8153/#8155 are evidence addresses for V4 only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — V1–V3 are about a number; the placement conditional; the true threshold, the band and the Born overlap marked open; the classical value not cited in the certificate. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

@@ -1,0 +1,5 @@
+R1 direct multinomial enumeration equals the Vandermonde form for n <= 300: True; T_300 has 284 digits
+R2 fit P_2n ~ c n^-3/2 with c = 0.23319 (spread 2.2e-05); S_1000 = 1.5016370; S_1000 + 2c/sqrt(1000) = 1.5163854 vs the classical value 1.5163861 (reference only)
+R3 the tail bound dominates the exact P_2n for n = 1..1000: True; slack at n = 1000: bound/P = 1.140
+R4 1 - phi(k) >= g(k) on the 41^3 grid of the cube: True
+R5 log((197/225)^(N+1)) = -133.03 >= -2(N+1)/15 = -133.47 >= -4(N+1)/(3 pi^2) = -135.23: True; 2/(1 - 197/225) = 16.071429 = 225/14 = 16.071429

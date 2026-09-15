@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 22 (2026-09-15) — the threshold constant pinned
+- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; through the placement only). Proposed, unaudited. PRs #8153 and #8155 referenced as evidence addresses for V4 only; PR #8147 for context.
+- Named premises: none beyond the placement (V1–V3 are statements about the number `3G(0)`).
+- Scaffolding: enumeration of `6^{2n}` walks for `n ≤ 3`; the Vandermonde form to `n = 12`; exact cosine moments to `n = 6`; `N = 1000` terms for the certificate; nine sample wavevectors for the two-region step.
+- Standard mathematical imports at definition level: the monotone limit theorem for integrals of series of nonnegative functions; the elementary bounds `3 < π < 22/7`.
+- References named, not used: Watson (1939); Glasser–Zucker (1977); the classical value appears in the refuting pass as a reference only.
+- Counterfactual pass: block 19's single inequality (`G(0) ≤ √3π/8`, the crude constant `1.81/√N` in the tail); a smaller `N` (at `N = 250` the certificate would give about `0.79`); a different route to order (not attempted).

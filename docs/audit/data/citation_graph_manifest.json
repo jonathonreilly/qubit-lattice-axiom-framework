@@ -1,6 +1,6 @@
 {
- "edge_count": 13267,
- "node_count": 5696,
+ "edge_count": 13277,
+ "node_count": 5703,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16010,6 +16010,10 @@
    "deps_hash": "7e5bfd516c31",
    "out_degree": 4
   },
+  "regge_exact_reduction_positive_tensor_transfer_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "1732e22ea397",
+   "out_degree": 4
+  },
   "regge_ok4_frame_section_narrow_theorem_note_2026-06-17": {
    "deps_hash": "aa05cfece5d8",
    "out_degree": 4
@@ -21756,6 +21760,30 @@
   },
   "work_history.repo.review_feedback.pr8084-native-feedback-evidence.readme": {
    "deps_hash": "702ca2032b3f",
+   "out_degree": 6
+  },
+  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-no_go_discipline_checklist": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.readme": {
+   "deps_hash": "a811438131a8",
    "out_degree": 6
   },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {

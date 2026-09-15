@@ -1,0 +1,675 @@
+{
+  "excluded_fields": [
+    "seconds",
+    "source_sha256",
+    "note_sha256"
+  ],
+  "differences": [
+    {
+      "path": "/checks/transport/checks/13/max_residual",
+      "old": 4.163336342344337e-17,
+      "new": 3.469446951953614e-17,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "path": "/checks/transport/checks/15/max_residual",
+      "old": 7.165058972546719e-17,
+      "new": 7.114481453410855e-17,
+      "absolute_difference": 5.057751913586404e-19
+    },
+    {
+      "path": "/checks/transport/checks/18/max_residual",
+      "old": 1.5218182408308984e-16,
+      "new": 1.77857806510033e-16,
+      "absolute_difference": 2.567598242694316e-17
+    },
+    {
+      "path": "/checks/transport/checks/20/max_residual",
+      "old": 5.390439619135067e-17,
+      "new": 5.90208684455784e-17,
+      "absolute_difference": 5.116472254227733e-18
+    },
+    {
+      "path": "/checks/transport/checks/24/max_residual",
+      "old": 1.2118257228641695e-16,
+      "new": 1.2412670766236366e-16,
+      "absolute_difference": 2.9441353759467015e-18
+    },
+    {
+      "path": "/checks/transport/checks/26/max_residual",
+      "old": 5.594315114139762e-17,
+      "new": 2.7755575615628914e-17,
+      "absolute_difference": 2.8187575525768707e-17
+    },
+    {
+      "path": "/checks/transport/checks/27/max_residual",
+      "old": 1.2203628619423782e-16,
+      "new": 1.2634933193193909e-16,
+      "absolute_difference": 4.313045737701263e-18
+    },
+    {
+      "path": "/checks/transport/checks/32/max_residual",
+      "old": 3.009894408363891e-16,
+      "new": 2.9809613641416694e-16,
+      "absolute_difference": 2.8933044222221804e-18
+    },
+    {
+      "path": "/checks/transport/checks/35/max_residual",
+      "old": 1.9634012289776712e-16,
+      "new": 1.9945548479234367e-16,
+      "absolute_difference": 3.115361894576556e-18
+    },
+    {
+      "path": "/checks/transport/checks/36/max_residual",
+      "old": 2.5589376332604516e-16,
+      "new": 2.7344877050525285e-16,
+      "absolute_difference": 1.7555007179207686e-17
+    },
+    {
+      "path": "/checks/transport/checks/40/max_residual",
+      "old": 1.1857187100668868e-16,
+      "new": 1.2412670766236366e-16,
+      "absolute_difference": 5.554836655674978e-18
+    },
+    {
+      "path": "/checks/transport/checks/54/max_residual",
+      "old": 2.6945789820192466e-16,
+      "new": 2.618455766672135e-16,
+      "absolute_difference": 7.612321534711157e-18
+    },
+    {
+      "path": "/checks/transport/checks/56/max_residual",
+      "old": 4.3382870954300763e-16,
+      "new": 4.3560084157317813e-16,
+      "absolute_difference": 1.772132030170506e-18
+    },
+    {
+      "path": "/checks/transport/checks/58/max_residual",
+      "old": 4.631939073484647e-16,
+      "new": 4.613190423717512e-16,
+      "absolute_difference": 1.874864976713497e-18
+    },
+    {
+      "path": "/checks/transport/checks/59/max_residual",
+      "old": 4.588105842142954e-16,
+      "new": 4.527362406489563e-16,
+      "absolute_difference": 6.0743435653390265e-18
+    },
+    {
+      "path": "/checks/transport/checks/63/max_residual",
+      "old": 1.2149258193159488e-16,
+      "new": 1.2394474806149032e-16,
+      "absolute_difference": 2.452166129895434e-18
+    },
+    {
+      "path": "/checks/transport/checks/70/max_residual",
+      "old": 3.342213888644167e-16,
+      "new": 3.480531475248531e-16,
+      "absolute_difference": 1.383175866043638e-17
+    },
+    {
+      "path": "/checks/transport/checks/71/max_residual",
+      "old": 2.3389836998737276e-16,
+      "new": 2.364575092865353e-16,
+      "absolute_difference": 2.5591392991625545e-18
+    },
+    {
+      "path": "/checks/transport/checks/72/max_residual",
+      "old": 3.203936111033422e-16,
+      "new": 3.131516051725385e-16,
+      "absolute_difference": 7.242005930803684e-18
+    },
+    {
+      "path": "/checks/transport/checks/74/max_residual",
+      "old": 1.2412670766236366e-16,
+      "new": 1.1443916996305594e-16,
+      "absolute_difference": 9.68753769930772e-18
+    },
+    {
+      "path": "/checks/transport/checks/76/max_residual",
+      "old": 3.11864493316497e-16,
+      "new": 3.002224531865041e-16,
+      "absolute_difference": 1.1642040129992893e-17
+    },
+    {
+      "path": "/checks/transport/checks/81/max_residual",
+      "old": 3.469446951953614e-16,
+      "new": 3.5252039609302943e-16,
+      "absolute_difference": 5.575700897668016e-18
+    },
+    {
+      "path": "/checks/transport/checks/85/max_residual",
+      "old": 6.093992464111427e-16,
+      "new": 6.025261774537219e-16,
+      "absolute_difference": 6.8730689574208095e-18
+    },
+    {
+      "path": "/checks/transport/checks/86/max_residual",
+      "old": 2.659960676773342e-16,
+      "new": 2.606514369681e-16,
+      "absolute_difference": 5.344630709234231e-18
+    },
+    {
+      "path": "/checks/transport/checks/88/max_residual",
+      "old": 4.602340039745779e-16,
+      "new": 4.711929192164544e-16,
+      "absolute_difference": 1.0958915241876471e-17
+    },
+    {
+      "path": "/checks/transport/checks/98/max_residual",
+      "old": 6.195464776079161e-16,
+      "new": 6.262327721589241e-16,
+      "absolute_difference": 6.686294551007976e-18
+    },
+    {
+      "path": "/checks/transport/checks/103/max_residual",
+      "old": 2.5018537765542007e-16,
+      "new": 2.4365301257266767e-16,
+      "absolute_difference": 6.532365082752394e-18
+    },
+    {
+      "path": "/checks/transport/checks/110/max_residual",
+      "old": 5.622724227595713e-16,
+      "new": 5.560566917292979e-16,
+      "absolute_difference": 6.215731030273454e-18
+    },
+    {
+      "path": "/checks/transport/checks/111/max_residual",
+      "old": 7.689659557974535e-16,
+      "new": 7.772800161809615e-16,
+      "absolute_difference": 8.314060383508072e-18
+    },
+    {
+      "path": "/checks/transport/checks/112/max_residual",
+      "old": 6.220283963191678e-16,
+      "new": 6.263865243763547e-16,
+      "absolute_difference": 4.358128057186931e-18
+    },
+    {
+      "path": "/checks/transport/checks/114/max_residual",
+      "old": 1.1921980955184335e-15,
+      "new": 1.2048125991558438e-15,
+      "absolute_difference": 1.2614503637410221e-17
+    },
+    {
+      "path": "/checks/transport/checks/115/max_residual",
+      "old": 1.4898437035160061e-16,
+      "new": 1.4033044459902308e-16,
+      "absolute_difference": 8.65392575257753e-18
+    },
+    {
+      "path": "/checks/transport/checks/119/max_residual",
+      "old": 2.8609792490763985e-16,
+      "new": 3.1646225226420963e-16,
+      "absolute_difference": 3.036432735656978e-17
+    },
+    {
+      "path": "/checks/transport/checks/122/max_residual",
+      "old": 4.74519013200431e-16,
+      "new": 4.781075397230189e-16,
+      "absolute_difference": 3.588526522587922e-18
+    },
+    {
+      "path": "/checks/transport/checks/125/max_residual",
+      "old": 3.331605951866314e-16,
+      "new": 3.6088919696935627e-16,
+      "absolute_difference": 2.7728601782724883e-17
+    },
+    {
+      "path": "/checks/transport/checks/127/max_residual",
+      "old": 1.5026519671295096e-16,
+      "new": 1.5103455248843898e-16,
+      "absolute_difference": 7.693557754880153e-19
+    },
+    {
+      "path": "/checks/transport/checks/129/max_residual",
+      "old": 3.356589068483857e-16,
+      "new": 3.3321143631922978e-16,
+      "absolute_difference": 2.4474705291559463e-18
+    },
+    {
+      "path": "/checks/transport/checks/135/max_residual",
+      "old": 6.274010947468885e-16,
+      "new": 6.291187510831672e-16,
+      "absolute_difference": 1.7176563362787864e-18
+    },
+    {
+      "path": "/checks/transport/checks/139/max_residual",
+      "old": 8.459761032879693e-16,
+      "new": 8.280284175086359e-16,
+      "absolute_difference": 1.7947685779333387e-17
+    },
+    {
+      "path": "/checks/transport/checks/140/max_residual",
+      "old": 3.608224830031759e-16,
+      "new": 3.6954089099747465e-16,
+      "absolute_difference": 8.718407994298776e-18
+    },
+    {
+      "path": "/checks/transport/checks/141/max_residual",
+      "old": 8.93798490114984e-16,
+      "new": 8.813214774254467e-16,
+      "absolute_difference": 1.2477012689537345e-17
+    },
+    {
+      "path": "/checks/transport/checks/142/max_residual",
+      "old": 5.440855976001004e-16,
+      "new": 5.374184706614531e-16,
+      "absolute_difference": 6.6671269386472626e-18
+    },
+    {
+      "path": "/checks/transport/checks/143/max_residual",
+      "old": 6.713178136967714e-16,
+      "new": 6.558264288897478e-16,
+      "absolute_difference": 1.5491384807023647e-17
+    },
+    {
+      "path": "/checks/transport/checks/147/max_residual",
+      "old": 4.2499345902880405e-16,
+      "new": 4.2939469277211166e-16,
+      "absolute_difference": 4.401233743307607e-18
+    },
+    {
+      "path": "/checks/transport/checks/157/max_residual",
+      "old": 3.579440240851112e-16,
+      "new": 3.525283087443455e-16,
+      "absolute_difference": 5.415715340765704e-18
+    },
+    {
+      "path": "/checks/transport/checks/161/max_residual",
+      "old": 9.192452540260068e-16,
+      "new": 9.16879719878801e-16,
+      "absolute_difference": 2.3655341472057565e-18
+    },
+    {
+      "path": "/checks/transport/checks/163/max_residual",
+      "old": 1.247457973265988e-15,
+      "new": 1.2566871346510766e-15,
+      "absolute_difference": 9.229161385088591e-18
+    },
+    {
+      "path": "/checks/transport/checks/164/max_residual",
+      "old": 5.312333970709034e-16,
+      "new": 5.275385075650456e-16,
+      "absolute_difference": 3.694889505857799e-18
+    },
+    {
+      "path": "/checks/transport/checks/165/max_residual",
+      "old": 1.1278637897670841e-15,
+      "new": 1.1551122306821434e-15,
+      "absolute_difference": 2.7248440915059208e-17
+    },
+    {
+      "path": "/checks/transport/checks/166/max_residual",
+      "old": 5.957464140271439e-16,
+      "new": 5.950771424249657e-16,
+      "absolute_difference": 6.692716021781771e-19
+    },
+    {
+      "path": "/checks/transport/checks/171/max_residual",
+      "old": 3.030954607830199e-16,
+      "new": 3.0436364816617974e-16,
+      "absolute_difference": 1.268187383159839e-18
+    },
+    {
+      "path": "/checks/transport/checks/173/max_residual",
+      "old": 6.894341957538586e-16,
+      "new": 6.550551057807855e-16,
+      "absolute_difference": 3.4379089973073165e-17
+    },
+    {
+      "path": "/checks/transport/checks/174/max_residual",
+      "old": 4.1385517960171997e-16,
+      "new": 4.0823631279221185e-16,
+      "absolute_difference": 5.618866809508114e-18
+    },
+    {
+      "path": "/checks/transport/checks/178/max_residual",
+      "old": 6.134939766467765e-16,
+      "new": 6.18535353437881e-16,
+      "absolute_difference": 5.041376791104473e-18
+    },
+    {
+      "path": "/checks/transport/checks/179/max_residual",
+      "old": 5.319014089382401e-16,
+      "new": 5.253434695803221e-16,
+      "absolute_difference": 6.557939357918034e-18
+    },
+    {
+      "path": "/checks/transport/checks/181/max_residual",
+      "old": 5.00717329682987e-16,
+      "new": 4.989834739697424e-16,
+      "absolute_difference": 1.7338557132446694e-18
+    },
+    {
+      "path": "/checks/transport/checks/183/max_residual",
+      "old": 5.772225570600925e-16,
+      "new": 5.710165843342547e-16,
+      "absolute_difference": 6.205972725837754e-18
+    },
+    {
+      "path": "/checks/transport/checks/185/max_residual",
+      "old": 8.93798490114984e-16,
+      "new": 9.062099802400752e-16,
+      "absolute_difference": 1.241149012509112e-17
+    },
+    {
+      "path": "/checks/transport/checks/186/max_residual",
+      "old": 4.414283309767472e-16,
+      "new": 4.391592183611941e-16,
+      "absolute_difference": 2.2691126155531317e-18
+    },
+    {
+      "path": "/checks/transport/checks/189/max_residual",
+      "old": 1.217454592664719e-15,
+      "new": 1.1986424564952127e-15,
+      "absolute_difference": 1.8812136169506225e-17
+    },
+    {
+      "path": "/checks/transport/checks/191/max_residual",
+      "old": 7.852915179681957e-16,
+      "new": 8.049116928532385e-16,
+      "absolute_difference": 1.962017488504283e-17
+    },
+    {
+      "path": "/checks/transport/checks/203/max_residual",
+      "old": 6.752153479335822e-16,
+      "new": 6.645779747302816e-16,
+      "absolute_difference": 1.0637373203300648e-17
+    },
+    {
+      "path": "/checks/transport/checks/207/max_residual",
+      "old": 7.911556306605241e-16,
+      "new": 7.835728851042837e-16,
+      "absolute_difference": 7.582745556240434e-18
+    },
+    {
+      "path": "/checks/transport/checks/210/max_residual",
+      "old": 6.374843249785811e-16,
+      "new": 6.443954859692754e-16,
+      "absolute_difference": 6.9111609906942574e-18
+    },
+    {
+      "path": "/checks/transport/checks/213/max_residual",
+      "old": 1.7628614688236971e-15,
+      "new": 1.7783073324607987e-15,
+      "absolute_difference": 1.544586363710162e-17
+    },
+    {
+      "path": "/checks/transport/checks/215/max_residual",
+      "old": 1.4724849511594846e-15,
+      "new": 1.4682935604800124e-15,
+      "absolute_difference": 4.191390679472247e-18
+    },
+    {
+      "path": "/checks/transport/checks/217/max_residual",
+      "old": 2.392661020640212e-16,
+      "new": 2.2729511820139823e-16,
+      "absolute_difference": 1.1970983862622955e-17
+    },
+    {
+      "path": "/checks/transport/checks/218/max_residual",
+      "old": 2.1420849872268348e-16,
+      "new": 1.8939494505982007e-16,
+      "absolute_difference": 2.4813553662863414e-17
+    },
+    {
+      "path": "/checks/transport/checks/219/max_residual",
+      "old": 3.3306690738754696e-16,
+      "new": 3.3335590258932494e-16,
+      "absolute_difference": 2.8899520177798228e-19
+    },
+    {
+      "path": "/checks/transport/checks/221/max_residual",
+      "old": 4.520411121784011e-16,
+      "new": 4.4169752474564197e-16,
+      "absolute_difference": 1.0343587432759105e-17
+    },
+    {
+      "path": "/checks/transport/checks/222/max_residual",
+      "old": 3.4779367097414353e-16,
+      "new": 3.5661121917337323e-16,
+      "absolute_difference": 8.817548199229702e-18
+    },
+    {
+      "path": "/checks/transport/checks/225/max_residual",
+      "old": 5.33167196845001e-16,
+      "new": 5.224024053540252e-16,
+      "absolute_difference": 1.0764791490975733e-17
+    },
+    {
+      "path": "/checks/transport/checks/226/max_residual",
+      "old": 4.1181326917117243e-16,
+      "new": 4.135778683463265e-16,
+      "absolute_difference": 1.7645991751540835e-18
+    },
+    {
+      "path": "/checks/transport/checks/227/max_residual",
+      "old": 5.344750312233835e-16,
+      "new": 5.414560792754543e-16,
+      "absolute_difference": 6.981048052070771e-18
+    },
+    {
+      "path": "/checks/transport/checks/229/max_residual",
+      "old": 4.669156023538214e-16,
+      "new": 4.612036535721646e-16,
+      "absolute_difference": 5.711948781656783e-18
+    },
+    {
+      "path": "/checks/transport/checks/231/max_residual",
+      "old": 5.368569792575578e-16,
+      "new": 5.348352503249147e-16,
+      "absolute_difference": 2.021728932643058e-18
+    },
+    {
+      "path": "/checks/transport/checks/234/max_residual",
+      "old": 5.464571446693442e-16,
+      "new": 5.420235256791499e-16,
+      "absolute_difference": 4.433618990194335e-18
+    },
+    {
+      "path": "/checks/transport/checks/236/max_residual",
+      "old": 5.852771868758543e-16,
+      "new": 5.968446096618978e-16,
+      "absolute_difference": 1.1567422786043508e-17
+    },
+    {
+      "path": "/checks/transport/checks/237/max_residual",
+      "old": 1.0235750533041808e-15,
+      "new": 1.010032223021582e-15,
+      "absolute_difference": 1.354283028259887e-17
+    },
+    {
+      "path": "/checks/transport/checks/239/max_residual",
+      "old": 1.0162341189061925e-15,
+      "new": 1.0260416443062498e-15,
+      "absolute_difference": 9.807525400057306e-18
+    },
+    {
+      "path": "/checks/transport/checks/243/max_residual",
+      "old": 4.779784928769662e-16,
+      "new": 4.841339424497385e-16,
+      "absolute_difference": 6.1554495727723755e-18
+    },
+    {
+      "path": "/checks/transport/checks/249/max_residual",
+      "old": 1.2496945994536461e-15,
+      "new": 1.2566871346510766e-15,
+      "absolute_difference": 6.992535197430465e-18
+    },
+    {
+      "path": "/checks/transport/checks/252/max_residual",
+      "old": 8.918512268109017e-16,
+      "new": 8.918512268109019e-16,
+      "absolute_difference": 1.9721522630525295e-31
+    },
+    {
+      "path": "/checks/transport/checks/258/max_residual",
+      "old": 7.825165134196698e-16,
+      "new": 7.823739076990966e-16,
+      "absolute_difference": 1.4260572057322276e-19
+    },
+    {
+      "path": "/checks/transport/checks/261/max_residual",
+      "old": 1.233562827366468e-15,
+      "new": 1.238372846491245e-15,
+      "absolute_difference": 4.8100191247769395e-18
+    },
+    {
+      "path": "/checks/transport/checks/262/max_residual",
+      "old": 9.985070492053649e-16,
+      "new": 9.927146402527606e-16,
+      "absolute_difference": 5.792408952604331e-18
+    },
+    {
+      "path": "/checks/transport/checks/263/max_residual",
+      "old": 1.1464252722681708e-15,
+      "new": 1.1537098835544915e-15,
+      "absolute_difference": 7.284611286320685e-18
+    },
+    {
+      "path": "/checks/transport/checks/266/max_residual",
+      "old": 1.1857187100668868e-16,
+      "new": 6.938893903907228e-17,
+      "absolute_difference": 4.9182931967616394e-17
+    },
+    {
+      "path": "/checks/transport/checks/267/max_residual",
+      "old": 2.300586061945776e-16,
+      "new": 2.364575092865353e-16,
+      "absolute_difference": 6.398903091957738e-18
+    },
+    {
+      "path": "/checks/transport/checks/268/max_residual",
+      "old": 3.203936111033422e-16,
+      "new": 3.131516051725385e-16,
+      "absolute_difference": 7.242005930803684e-18
+    },
+    {
+      "path": "/checks/transport/checks/270/max_residual",
+      "old": 3.6087198921135867e-16,
+      "new": 3.47014077196894e-16,
+      "absolute_difference": 1.3857912014464666e-17
+    },
+    {
+      "path": "/checks/transport/checks/271/max_residual",
+      "old": 5.095246377785861e-16,
+      "new": 4.888843483876897e-16,
+      "absolute_difference": 2.0640289390896458e-17
+    },
+    {
+      "path": "/checks/transport/checks/272/max_residual",
+      "old": 4.599602204440487e-16,
+      "new": 4.561234287365988e-16,
+      "absolute_difference": 3.8367917074498536e-18
+    },
+    {
+      "path": "/checks/transport/checks/273/max_residual",
+      "old": 4.996197234993978e-16,
+      "new": 4.996403554141332e-16,
+      "absolute_difference": 2.0631914735449335e-20
+    },
+    {
+      "path": "/checks/transport/checks/275/max_residual",
+      "old": 2.5687968919236815e-16,
+      "new": 2.5329338971319364e-16,
+      "absolute_difference": 3.586299479174507e-18
+    },
+    {
+      "path": "/checks/transport/checks/276/max_residual",
+      "old": 3.1646225226420963e-16,
+      "new": 3.2398021848425308e-16,
+      "absolute_difference": 7.517966220043444e-18
+    },
+    {
+      "path": "/checks/transport/checks/277/max_residual",
+      "old": 1.9689203659959242e-16,
+      "new": 1.8479487364755596e-16,
+      "absolute_difference": 1.209716295203646e-17
+    },
+    {
+      "path": "/checks/transport/checks/278/max_residual",
+      "old": 2.9504581591051765e-16,
+      "new": 2.7476618026966064e-16,
+      "absolute_difference": 2.0279635640857014e-17
+    },
+    {
+      "path": "/checks/transport/checks/279/max_residual",
+      "old": 6.878722495899594e-16,
+      "new": 6.812399268350386e-16,
+      "absolute_difference": 6.6323227549208425e-18
+    },
+    {
+      "path": "/checks/transport/checks/282/max_residual",
+      "old": 6.582812753581314e-16,
+      "new": 6.525881235148457e-16,
+      "absolute_difference": 5.693151843285745e-18
+    },
+    {
+      "path": "/checks/transport/checks/284/max_residual",
+      "old": 7.043507825246415e-16,
+      "new": 7.099496289329058e-16,
+      "absolute_difference": 5.598846408264275e-18
+    },
+    {
+      "path": "/checks/transport/checks/286/max_residual",
+      "old": 6.973502068242161e-16,
+      "new": 7.009656746673075e-16,
+      "absolute_difference": 3.6154678430913605e-18
+    },
+    {
+      "path": "/checks/transport/checks/288/max_residual",
+      "old": 9.828068956733855e-16,
+      "new": 1.0018271413238649e-15,
+      "absolute_difference": 1.9020245650479336e-17
+    },
+    {
+      "path": "/checks/transport/checks/297/max_residual",
+      "old": 8.4735685972854685e-16,
+      "new": 8.473568597285469e-16,
+      "absolute_difference": 9.860761315262648e-32
+    },
+    {
+      "path": "/checks/transport/checks/298/max_residual",
+      "old": 8.918512268109019e-16,
+      "new": 8.918512268109017e-16,
+      "absolute_difference": 1.9721522630525295e-31
+    },
+    {
+      "path": "/checks/transport/checks/301/max_residual",
+      "old": 4.1130351017808437e-16,
+      "new": 4.0594222108735206e-16,
+      "absolute_difference": 5.361289090732313e-18
+    },
+    {
+      "path": "/checks/transport/checks/303/max_residual",
+      "old": 1.0186419644963073e-15,
+      "new": 1.017073005820078e-15,
+      "absolute_difference": 1.5689586762294101e-18
+    },
+    {
+      "path": "/checks/transport/checks/307/max_residual",
+      "old": 1.053707081184919e-15,
+      "new": 1.062716010695555e-15,
+      "absolute_difference": 9.008929510635973e-18
+    },
+    {
+      "path": "/checks/transport/checks/310/max_residual",
+      "old": 7.632839597081257e-16,
+      "new": 7.764178434089351e-16,
+      "absolute_difference": 1.3133883700809365e-17
+    },
+    {
+      "path": "/checks/transport/checks/313/max_residual",
+      "old": 1.2878587085651816e-14,
+      "new": 1.4210854715202004e-14,
+      "absolute_difference": 1.3322676295501878e-15
+    }
+  ],
+  "nonfloating_math_fields": "identical",
+  "counts": {
+    "native": 83,
+    "transport": 327,
+    "growth": 62
+  }
+}

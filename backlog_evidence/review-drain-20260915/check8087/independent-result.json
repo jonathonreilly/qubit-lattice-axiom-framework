@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "exact syndrome pulse scalar effects",
+    "five-mode rational even-parity marginals",
+    "current normalization and old-margin rejection",
+    "optimized exponential waiting-time bound"
+  ],
+  "seconds": 0.0662670829333365
+}

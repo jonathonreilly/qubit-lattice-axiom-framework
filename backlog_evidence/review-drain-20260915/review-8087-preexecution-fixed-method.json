@@ -1,0 +1,777 @@
+{
+  "status": "PREEXECUTION_SOURCE_CORRECTIONS_CONFIRMED_NOT_FINAL_PASS",
+  "reviewer_session": "/root/review_8011",
+  "original_head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+  "original_base": "cda8b1445e21b3908a0a520710e0dae57b7bc3a3",
+  "source_base": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+  "original_proposal_tree": "2c52bb785e0e0d72c2353cce9e28f9a6243e359e",
+  "review_scope": "Complete625-line proof,4Python sources,40historical payloads including10exact-reconstructed mutants and original470baseline/current-margin recovery. Native instrument parent full-read reuse at SHAa37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47 from review8065/8084, exactunchanged and affected definitions reread.",
+  "mathematical_assessment": "No mathematical defect identified. Pulse scalar effect and protected even-CAR functional, finite collision partial isometry, physical-position Bloch current normalization, non-Gaussian parity conditioning, factorial finite boundary window, enabled independent clocks/nonexplosion and lower/upper front Chernoff bounds checked. Supplies state/control/Born/occurrence/rates/clock, not physical selection or matter-dependent readout.",
+  "independent_controls": {
+    "path": "/private/tmp/review-drain-20260915/check8087/independent-result.json",
+    "sha256": "dbb5683f5359cdf3acddde180aa9e1b9b397167185e3826233e27765381f3f0f"
+  },
+  "external_methods": "Finite CAR/code dictionary is linked repository parent. Spectral Fourier/quasifree covariance, elementary parity conditioning, Taylor series and exponential Markov/Chernoff/pure-birth comparison are explicit mathematical methods; no imported numerical result.",
+  "source_tree": "fc6fec82fd4c7f3792951f78e0013a55ee2b79da",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "2819211d4072ceb219c5743ccba0a88d54c2e3690e1f2678cd07f87e6c7ae266",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/2819211d4072ceb219c5743ccba0a88d54c2e3690e1f2678cd07f87e6c7ae266.gz",
+      "final_sha256": "0b1c90767fe798aa12b8ecc33f2ed7fcb853cd9849f5908d006cb25477d20bb2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/HANDOFF.md",
+      "original_sha256": "2f38d797c91558fe6fc3be75cc682ac21f35ae0f30630937c2894db72a6c3786",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/HANDOFF.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/2f38d797c91558fe6fc3be75cc682ac21f35ae0f30630937c2894db72a6c3786.gz",
+      "final_sha256": "893ed1124384689ea3784d4c8a9e1e14c6260f137c9200ef58faf51e742ce946"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "0076c7fc3fcd6d80c60e509c91cadf0d26f8eaa5837d90dc00c2427d5ae65f6f",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "final_sha256": "0076c7fc3fcd6d80c60e509c91cadf0d26f8eaa5837d90dc00c2427d5ae65f6f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/REVIEW_HISTORY.md",
+      "original_sha256": "d991ce186420621259c9ef67f686d1595602b2332a2f0cf4aad825334bd2bb71",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/REVIEW_HISTORY.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "final_sha256": "d991ce186420621259c9ef67f686d1595602b2332a2f0cf4aad825334bd2bb71"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/SOURCE_MANIFEST.json",
+      "original_sha256": "894830e184c1511d9710446f92696fbda636e6345b679f01c3e4f2c9e32262de",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/SOURCE_MANIFEST.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "final_sha256": "894830e184c1511d9710446f92696fbda636e6345b679f01c3e4f2c9e32262de"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/RESULTS.json",
+      "original_sha256": "51a1ad054fe0d83935f44eda31c883f150c9d155a45c0181da8538f8bcffac05",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/RESULTS.json"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-RESULTS-1edd1aa7af49c3cd.json",
+      "final_sha256": "51a1ad054fe0d83935f44eda31c883f150c9d155a45c0181da8538f8bcffac05"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/collision_half_amplitude/native_formation_native_checks_2026_09_13.py",
+      "original_sha256": "4a093da502b119defcddf830cb4fc357c5877b49aa25060d6a28cc1b0c97fd21",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/collision_half_amplitude/native_formation_native_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/4a093da502b119defcddf830cb4fc357c5877b49aa25060d6a28cc1b0c97fd21.gz",
+      "final_sha256": "fbd7e6ac720a24437b79b4f4a33ab4873c6f84388b09efb0319b759b2ab1a8ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/collision_half_amplitude/stderr.txt",
+      "original_sha256": "9a748df83ef08f1551084371c3a2efd4305f0a9a2501d64f2ca03d393806fec4",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/collision_half_amplitude/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/9a748df83ef08f1551084371c3a2efd4305f0a9a2501d64f2ca03d393806fec4.gz",
+      "final_sha256": "6f2fd69b9c2cfd45d38ae9f5b04b4cd87519776dc12c841ba02fc43c4a23ad3b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/collision_half_amplitude/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/collision_half_amplitude/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/content_mixture_weight/native_formation_growth_checks_2026_09_13.py",
+      "original_sha256": "201e18904d905d8f770bca0145016435057adc9af7b4a643bc3d1e98a90ebedf",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/content_mixture_weight/native_formation_growth_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/201e18904d905d8f770bca0145016435057adc9af7b4a643bc3d1e98a90ebedf.gz",
+      "final_sha256": "eb9543811f47ff5fcbcb0546ef8e3331904315c2b8c176d2bbc0f36f77a70545"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/content_mixture_weight/stderr.txt",
+      "original_sha256": "4035ed14eb7ef824eb87d644c86e4838415c8041d284978b785d9636ad963fa1",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/content_mixture_weight/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/4035ed14eb7ef824eb87d644c86e4838415c8041d284978b785d9636ad963fa1.gz",
+      "final_sha256": "ca9dd06197a944afc9eb59a7b86dad48a39fd3fb566c6027c2d667d2ef64468d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/content_mixture_weight/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/content_mixture_weight/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_internal_position/native_formation_transport_checks_2026_09_13.py",
+      "original_sha256": "eea6a2f2fd8a46d5a43398d9ffdbb7f183aa22db86b26ad3172452e79bc057c0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_internal_position/native_formation_transport_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/eea6a2f2fd8a46d5a43398d9ffdbb7f183aa22db86b26ad3172452e79bc057c0.gz",
+      "final_sha256": "d76163257e20aac939f3c337749d10f63cb5dc7f11b1af4a301eb6ca5b231e68"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_internal_position/stderr.txt",
+      "original_sha256": "0070a40c29ec64284f8f2c7d39f472d1a4612b49d20dbfafb37231fb6e4a9c79",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_internal_position/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/0070a40c29ec64284f8f2c7d39f472d1a4612b49d20dbfafb37231fb6e4a9c79.gz",
+      "final_sha256": "d17fca2943b93461c049d18dee9a751aee37d7328b58e3a8e18db25e3f184390"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_internal_position/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_internal_position/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_parity_denominator/native_formation_transport_checks_2026_09_13.py",
+      "original_sha256": "761d68174956abf7dafb76ff833c86a61a69de390a28798791c9651901e7a64b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_parity_denominator/native_formation_transport_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/761d68174956abf7dafb76ff833c86a61a69de390a28798791c9651901e7a64b.gz",
+      "final_sha256": "7a5747550d00f1ac390d48dc9b5d60b1e7979078ab97462069210bd9d6eaa300"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_parity_denominator/stderr.txt",
+      "original_sha256": "f2cad9701721946b5e5ea9a1848b7e30d8b33c8d406b7fe46d95ce4cbf90c65b",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_parity_denominator/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/f2cad9701721946b5e5ea9a1848b7e30d8b33c8d406b7fe46d95ce4cbf90c65b.gz",
+      "final_sha256": "fe923a833d2f37baf534523d774b24e3a9957fb773c2d34a71adce5b9f6b4a83"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_parity_denominator/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/missing_parity_denominator/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/native_pulse_sign/native_formation_native_checks_2026_09_13.py",
+      "original_sha256": "5d422c6b0f8111f62c8adeb7a5ddcc57888717cd8626988d5422ff4be2ada437",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/native_pulse_sign/native_formation_native_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/5d422c6b0f8111f62c8adeb7a5ddcc57888717cd8626988d5422ff4be2ada437.gz",
+      "final_sha256": "e6f6fb5060bf2700c16464426b33fad6e8238d035ab788a2a0d5559d5f8c16ac"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/native_pulse_sign/stderr.txt",
+      "original_sha256": "e0de8ced7bbb3c1b280d875dbd02de098f55ea33a58b4e6e28e1beef3fb4aa92",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/native_pulse_sign/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e0de8ced7bbb3c1b280d875dbd02de098f55ea33a58b4e6e28e1beef3fb4aa92.gz",
+      "final_sha256": "8ee0c3e85f32d9758744928e229c99af19738f276155f8eacd9e79f62ec89366"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/native_pulse_sign/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/native_pulse_sign/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/old_current_margin/native_formation_transport_checks_2026_09_13.py",
+      "original_sha256": "a21d731899b99d0405e21669dc43bfe7b965c2b831bb07e1cb17817d5003dbf0",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/old_current_margin/native_formation_transport_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/a21d731899b99d0405e21669dc43bfe7b965c2b831bb07e1cb17817d5003dbf0.gz",
+      "final_sha256": "93e2442670169eb68620b8f681947f8b208b82b7dfe76086f216d05033673873"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/old_current_margin/stderr.txt",
+      "original_sha256": "880e8fc33bc743b9ca8e4e7adf325376d019201f9743d0965cccd11d4a550e86",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/old_current_margin/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/880e8fc33bc743b9ca8e4e7adf325376d019201f9743d0965cccd11d4a550e86.gz",
+      "final_sha256": "961e9991090260cc01ec42c6f3090c63391b92f41a69ff8b1d9ee85f5cdd000d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/old_current_margin/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/old_current_margin/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/overfast_lower_front/native_formation_growth_checks_2026_09_13.py",
+      "original_sha256": "0fae23f652277869c2958c99027b96ee4c4a55419f1e9de98c383b8b5d62641e",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/overfast_lower_front/native_formation_growth_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/0fae23f652277869c2958c99027b96ee4c4a55419f1e9de98c383b8b5d62641e.gz",
+      "final_sha256": "43043afe19d3f44960ebc0fda7dbde1c8fd42432c3c022a4b06bba821defa269"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/overfast_lower_front/stderr.txt",
+      "original_sha256": "674b232e078d485dddc2622fa40eeb3f6cf5ecc9784a57a44ae4ef6c6da6b291",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/overfast_lower_front/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/674b232e078d485dddc2622fa40eeb3f6cf5ecc9784a57a44ae4ef6c6da6b291.gz",
+      "final_sha256": "6423534660c74f0e84d8d8bf8301785a9a96acb865fc712216a4ecf58223bf45"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/overfast_lower_front/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/overfast_lower_front/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_role_overlap/native_formation_growth_checks_2026_09_13.py",
+      "original_sha256": "74425d4b0287b405aba22587b42c89005cb2c6b744916b10d0b34d71a3787af5",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_role_overlap/native_formation_growth_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/74425d4b0287b405aba22587b42c89005cb2c6b744916b10d0b34d71a3787af5.gz",
+      "final_sha256": "0011006d5ad8a7d2f63e3fe0bcceb127f009e9df0ea729d9fcc2dca4a67e4b99"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_role_overlap/stderr.txt",
+      "original_sha256": "5ebbf6d7966f35d7a1014f82352dbddb75467795c8ed0a54a897e0573587e746",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_role_overlap/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/5ebbf6d7966f35d7a1014f82352dbddb75467795c8ed0a54a897e0573587e746.gz",
+      "final_sha256": "03782a31d5b35fa6de1e03793269baf598e64022446feb760031b4c70fa96255"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_role_overlap/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_role_overlap/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_rotation_sign/native_formation_growth_checks_2026_09_13.py",
+      "original_sha256": "a3c1beb4d39dd18a0531f1c9cd63c9501e7c6e1ae2c30a483f6c77f12521e9d9",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_rotation_sign/native_formation_growth_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/a3c1beb4d39dd18a0531f1c9cd63c9501e7c6e1ae2c30a483f6c77f12521e9d9.gz",
+      "final_sha256": "67eba1e1e0b3e89bba9dac872aa1cc29c70cb57eb43420b537cce633f38b6d96"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_rotation_sign/stderr.txt",
+      "original_sha256": "ed373f5de86cabc3881026b7697094a5fe7dbd49c45bed791d5f8fc094d5eda1",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_rotation_sign/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/ed373f5de86cabc3881026b7697094a5fe7dbd49c45bed791d5f8fc094d5eda1.gz",
+      "final_sha256": "c76c15c728b1e6811c37f2a86f10e1e6e359462050630e5e83b98601e1c7f842"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_rotation_sign/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/program_rotation_sign/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/retired_hopping/native_formation_native_checks_2026_09_13.py",
+      "original_sha256": "9f4030dbb44e5cc3de370d0059b46472339f024429188dbbcdbfc33731229df2",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/retired_hopping/native_formation_native_checks_2026_09_13.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/9f4030dbb44e5cc3de370d0059b46472339f024429188dbbcdbfc33731229df2.gz",
+      "final_sha256": "62c9b745f41cba4f28ba10b19c5cec900a36260a619d1f1ec585c4a52ecd0b98"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/retired_hopping/stderr.txt",
+      "original_sha256": "235415ac458897bf705f55f07749c83c8b8a75910e983d7d034b72e6bbe67b90",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/retired_hopping/stderr.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/235415ac458897bf705f55f07749c83c8b8a75910e983d7d034b72e6bbe67b90.gz",
+      "final_sha256": "7b7ec76661edfe80a3c9123e6f68c1d4f2869685f4187d5f95374da7eae1a87d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/retired_hopping/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/mutations/retired_hopping/stdout.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/CURRENT_MARGIN_CORRECTION.md",
+      "original_sha256": "3ae257dbc3768790cd09995b890f4554819238392387a97e1c064a73c9790c62",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/CURRENT_MARGIN_CORRECTION.md"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-CURRENT_MARGIN_CORRECTION-1983b339b2a0ae96.md",
+      "final_sha256": "3ae257dbc3768790cd09995b890f4554819238392387a97e1c064a73c9790c62"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/FIRST_BASELINE.txt",
+      "original_sha256": "e68b8f266dfbcee4b1dd51bc9eec167e718c64c903a12505a174bc7487c83806",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/FIRST_BASELINE.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e68b8f266dfbcee4b1dd51bc9eec167e718c64c903a12505a174bc7487c83806.gz",
+      "final_sha256": "04b61f84d2aac1a5fe82f89a6aa7138dc9bf74f7b628f8aff43c1a8b7ce61be4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/NOTE_BEFORE_CURRENT_MARGIN_FIX.txt",
+      "original_sha256": "701a55572188574f87fd8154c8b615f0ab0e035dd36eadf812080fd0969029c6",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/NOTE_BEFORE_CURRENT_MARGIN_FIX.txt"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/701a55572188574f87fd8154c8b615f0ab0e035dd36eadf812080fd0969029c6.gz",
+      "final_sha256": "3148ea668b411a675650249b2e66ad922198d0125b5e9e23b26e534e7e3d5133"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/transport_before_current_margin_fix.py",
+      "original_sha256": "741ff2e58ff5e38da4624649ed65890188a3ece89697c26631068419d536e210",
+      "disposition": "Preserved byte-exact historical evidence, decoded through archive manifest; author procedural claims are not current review authority.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": ".claude/science/physics-loops/native-growing-formation-current-20260913/recovery/transport_before_current_margin_fix.py"
+      },
+      "final_path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/741ff2e58ff5e38da4624649ed65890188a3ece89697c26631068419d536e210.gz",
+      "final_sha256": "4972c402fbc1850a2d205bb3b4f273326da6635cddb5839048ea0c1cc919fb58"
+    },
+    {
+      "original_path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "original_sha256": "190f0f61d21da3ed46bf8063f4084047b36909e28f12378223e88e52696134cc",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      },
+      "final_path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "final_sha256": "01d0ffb651b44c06785d11bc73b7abb77eb57cc69bee741ea885a4ae3f557145"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "3c9883b540bf9384e69012838105f3302f0c709c219777229b30ad6b734bf309",
+      "disposition": "Generated citation authority excluded; current-main version retained, combined gate regenerates independently.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "docs/audit/data/citation_graph_manifest.json"
+      },
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/native_growing_formation_current_2026_09_13.txt",
+      "original_sha256": "58877c0f1158d98c1a1e1ba1878e1c446a229720c9893f57317ba0e389baad75",
+      "disposition": "Canonical source and proof retained; path/input packaging corrections reviewed; cache is original historical cache pending fresh execution.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "logs/runner-cache/native_growing_formation_current_2026_09_13.txt"
+      },
+      "final_path": "logs/runner-cache/native_growing_formation_current_2026_09_13.txt",
+      "final_sha256": "58877c0f1158d98c1a1e1ba1878e1c446a229720c9893f57317ba0e389baad75"
+    },
+    {
+      "original_path": "scripts/native_formation_growth_checks_2026_09_13.py",
+      "original_sha256": "9cfddfa27bb296cbed8a745893b9ee25b50ff95ca4c275b9948a8f8884175891",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "scripts/native_formation_growth_checks_2026_09_13.py"
+      },
+      "final_path": "scripts/native_formation_growth_checks_2026_09_13.py",
+      "final_sha256": "9d2ee775d9699341436e49b34cbd653f05d197afd81a5042906f371b2eff7143"
+    },
+    {
+      "original_path": "scripts/native_formation_native_checks_2026_09_13.py",
+      "original_sha256": "7eaa03e39b66140ecdcfc37c37556acfbe8d5dad0229da1dcb099d3805c6c96b",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "scripts/native_formation_native_checks_2026_09_13.py"
+      },
+      "final_path": "scripts/native_formation_native_checks_2026_09_13.py",
+      "final_sha256": "e8cf12ae8e5d1a3342de7c4e1ad876bcef94bd0bb52abc8cd622c22829249d1a"
+    },
+    {
+      "original_path": "scripts/native_formation_transport_checks_2026_09_13.py",
+      "original_sha256": "5a321d1cc5d6ce6db8978b780158673c344e1ce666787cb56ec81ce6c2eecfd6",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "scripts/native_formation_transport_checks_2026_09_13.py"
+      },
+      "final_path": "scripts/native_formation_transport_checks_2026_09_13.py",
+      "final_sha256": "210eb151da8c973007d25ae15cc5159d52aa0241629804ceae273512074289ba"
+    },
+    {
+      "original_path": "scripts/native_growing_formation_current_2026_09_13.py",
+      "original_sha256": "d027c46dffab5d52200f6da6dfb988b23a4f5d9b30b53241ca7280777c08433f",
+      "disposition": "Canonical mathematical source retained with independently confirmed path/input packaging and explicit historical scope correction only.",
+      "recovery": {
+        "head": "d568433b0fb323b8d72cc76f362ed3ead6b0b8d8",
+        "path": "scripts/native_growing_formation_current_2026_09_13.py"
+      },
+      "final_path": "scripts/native_growing_formation_current_2026_09_13.py",
+      "final_sha256": "3007add378e8d1044f7a03f9a4e9e3b0de580212d2b664d3e2282859233b4441"
+    }
+  ],
+  "source_paths": [
+    {
+      "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "01d0ffb651b44c06785d11bc73b7abb77eb57cc69bee741ea885a4ae3f557145"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/0070a40c29ec64284f8f2c7d39f472d1a4612b49d20dbfafb37231fb6e4a9c79.gz",
+      "sha256": "d17fca2943b93461c049d18dee9a751aee37d7328b58e3a8e18db25e3f184390"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/0fae23f652277869c2958c99027b96ee4c4a55419f1e9de98c383b8b5d62641e.gz",
+      "sha256": "43043afe19d3f44960ebc0fda7dbde1c8fd42432c3c022a4b06bba821defa269"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/201e18904d905d8f770bca0145016435057adc9af7b4a643bc3d1e98a90ebedf.gz",
+      "sha256": "eb9543811f47ff5fcbcb0546ef8e3331904315c2b8c176d2bbc0f36f77a70545"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/235415ac458897bf705f55f07749c83c8b8a75910e983d7d034b72e6bbe67b90.gz",
+      "sha256": "7b7ec76661edfe80a3c9123e6f68c1d4f2869685f4187d5f95374da7eae1a87d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/2819211d4072ceb219c5743ccba0a88d54c2e3690e1f2678cd07f87e6c7ae266.gz",
+      "sha256": "0b1c90767fe798aa12b8ecc33f2ed7fcb853cd9849f5908d006cb25477d20bb2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/2f38d797c91558fe6fc3be75cc682ac21f35ae0f30630937c2894db72a6c3786.gz",
+      "sha256": "893ed1124384689ea3784d4c8a9e1e14c6260f137c9200ef58faf51e742ce946"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/4035ed14eb7ef824eb87d644c86e4838415c8041d284978b785d9636ad963fa1.gz",
+      "sha256": "ca9dd06197a944afc9eb59a7b86dad48a39fd3fb566c6027c2d667d2ef64468d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/4a093da502b119defcddf830cb4fc357c5877b49aa25060d6a28cc1b0c97fd21.gz",
+      "sha256": "fbd7e6ac720a24437b79b4f4a33ab4873c6f84388b09efb0319b759b2ab1a8ff"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/5d422c6b0f8111f62c8adeb7a5ddcc57888717cd8626988d5422ff4be2ada437.gz",
+      "sha256": "e6f6fb5060bf2700c16464426b33fad6e8238d035ab788a2a0d5559d5f8c16ac"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/5ebbf6d7966f35d7a1014f82352dbddb75467795c8ed0a54a897e0573587e746.gz",
+      "sha256": "03782a31d5b35fa6de1e03793269baf598e64022446feb760031b4c70fa96255"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/674b232e078d485dddc2622fa40eeb3f6cf5ecc9784a57a44ae4ef6c6da6b291.gz",
+      "sha256": "6423534660c74f0e84d8d8bf8301785a9a96acb865fc712216a4ecf58223bf45"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/701a55572188574f87fd8154c8b615f0ab0e035dd36eadf812080fd0969029c6.gz",
+      "sha256": "3148ea668b411a675650249b2e66ad922198d0125b5e9e23b26e534e7e3d5133"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/741ff2e58ff5e38da4624649ed65890188a3ece89697c26631068419d536e210.gz",
+      "sha256": "4972c402fbc1850a2d205bb3b4f273326da6635cddb5839048ea0c1cc919fb58"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/74425d4b0287b405aba22587b42c89005cb2c6b744916b10d0b34d71a3787af5.gz",
+      "sha256": "0011006d5ad8a7d2f63e3fe0bcceb127f009e9df0ea729d9fcc2dca4a67e4b99"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/761d68174956abf7dafb76ff833c86a61a69de390a28798791c9651901e7a64b.gz",
+      "sha256": "7a5747550d00f1ac390d48dc9b5d60b1e7979078ab97462069210bd9d6eaa300"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/880e8fc33bc743b9ca8e4e7adf325376d019201f9743d0965cccd11d4a550e86.gz",
+      "sha256": "961e9991090260cc01ec42c6f3090c63391b92f41a69ff8b1d9ee85f5cdd000d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/9a748df83ef08f1551084371c3a2efd4305f0a9a2501d64f2ca03d393806fec4.gz",
+      "sha256": "6f2fd69b9c2cfd45d38ae9f5b04b4cd87519776dc12c841ba02fc43c4a23ad3b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/9f4030dbb44e5cc3de370d0059b46472339f024429188dbbcdbfc33731229df2.gz",
+      "sha256": "62c9b745f41cba4f28ba10b19c5cec900a36260a619d1f1ec585c4a52ecd0b98"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/a21d731899b99d0405e21669dc43bfe7b965c2b831bb07e1cb17817d5003dbf0.gz",
+      "sha256": "93e2442670169eb68620b8f681947f8b208b82b7dfe76086f216d05033673873"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/a3c1beb4d39dd18a0531f1c9cd63c9501e7c6e1ae2c30a483f6c77f12521e9d9.gz",
+      "sha256": "67eba1e1e0b3e89bba9dac872aa1cc29c70cb57eb43420b537cce633f38b6d96"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e0de8ced7bbb3c1b280d875dbd02de098f55ea33a58b4e6e28e1beef3fb4aa92.gz",
+      "sha256": "8ee0c3e85f32d9758744928e229c99af19738f276155f8eacd9e79f62ec89366"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/e68b8f266dfbcee4b1dd51bc9eec167e718c64c903a12505a174bc7487c83806.gz",
+      "sha256": "04b61f84d2aac1a5fe82f89a6aa7138dc9bf74f7b628f8aff43c1a8b7ce61be4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/ed373f5de86cabc3881026b7697094a5fe7dbd49c45bed791d5f8fc094d5eda1.gz",
+      "sha256": "c76c15c728b1e6811c37f2a86f10e1e6e359462050630e5e83b98601e1c7f842"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/eea6a2f2fd8a46d5a43398d9ffdbb7f183aa22db86b26ad3172452e79bc057c0.gz",
+      "sha256": "d76163257e20aac939f3c337749d10f63cb5dc7f11b1af4a301eb6ca5b231e68"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/_objects/f2cad9701721946b5e5ea9a1848b7e30d8b33c8d406b7fe46d95ce4cbf90c65b.gz",
+      "sha256": "fe923a833d2f37baf534523d774b24e3a9957fb773c2d34a71adce5b9f6b4a83"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/archive-manifest.json",
+      "sha256": "34e6733ef1bdb9a18d31c778db62d7cb074a4d00acbd1537eb730c28739f3ffc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-CURRENT_MARGIN_CORRECTION-1983b339b2a0ae96.md",
+      "sha256": "3ae257dbc3768790cd09995b890f4554819238392387a97e1c064a73c9790c62"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "0076c7fc3fcd6d80c60e509c91cadf0d26f8eaa5837d90dc00c2427d5ae65f6f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "51a1ad054fe0d83935f44eda31c883f150c9d155a45c0181da8538f8bcffac05"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "sha256": "d991ce186420621259c9ef67f686d1595602b2332a2f0cf4aad825334bd2bb71"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "894830e184c1511d9710446f92696fbda636e6345b679f01c3e4f2c9e32262de"
+    },
+    {
+      "path": "logs/runner-cache/native_growing_formation_current_2026_09_13.txt",
+      "sha256": "58877c0f1158d98c1a1e1ba1878e1c446a229720c9893f57317ba0e389baad75"
+    },
+    {
+      "path": "scripts/native_formation_growth_checks_2026_09_13.py",
+      "sha256": "9d2ee775d9699341436e49b34cbd653f05d197afd81a5042906f371b2eff7143"
+    },
+    {
+      "path": "scripts/native_formation_native_checks_2026_09_13.py",
+      "sha256": "e8cf12ae8e5d1a3342de7c4e1ad876bcef94bd0bb52abc8cd622c22829249d1a"
+    },
+    {
+      "path": "scripts/native_formation_transport_checks_2026_09_13.py",
+      "sha256": "210eb151da8c973007d25ae15cc5159d52aa0241629804ceae273512074289ba"
+    },
+    {
+      "path": "scripts/native_growing_formation_current_2026_09_13.py",
+      "sha256": "3007add378e8d1044f7a03f9a4e9e3b0de580212d2b664d3e2282859233b4441"
+    }
+  ],
+  "runtime_scientific_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+    },
+    {
+      "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "01d0ffb651b44c06785d11bc73b7abb77eb57cc69bee741ea885a4ae3f557145"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+      "sha256": "0076c7fc3fcd6d80c60e509c91cadf0d26f8eaa5837d90dc00c2427d5ae65f6f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-RESULTS-1edd1aa7af49c3cd.json",
+      "sha256": "51a1ad054fe0d83935f44eda31c883f150c9d155a45c0181da8538f8bcffac05"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-SOURCE_MANIFEST-a1b3f38c7ebc3abf.json",
+      "sha256": "894830e184c1511d9710446f92696fbda636e6345b679f01c3e4f2c9e32262de"
+    },
+    {
+      "path": "scripts/native_formation_growth_checks_2026_09_13.py",
+      "sha256": "9d2ee775d9699341436e49b34cbd653f05d197afd81a5042906f371b2eff7143"
+    },
+    {
+      "path": "scripts/native_formation_native_checks_2026_09_13.py",
+      "sha256": "e8cf12ae8e5d1a3342de7c4e1ad876bcef94bd0bb52abc8cd622c22829249d1a"
+    },
+    {
+      "path": "scripts/native_formation_transport_checks_2026_09_13.py",
+      "sha256": "210eb151da8c973007d25ae15cc5159d52aa0241629804ceae273512074289ba"
+    }
+  ],
+  "notes": [
+    {
+      "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_growing_formation_current_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "native_growing_formation_current_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_growing_formation_current_2026_09_13.py",
+      "helpers": [
+        "scripts/native_formation_growth_checks_2026_09_13.py",
+        "scripts/native_formation_native_checks_2026_09_13.py",
+        "scripts/native_formation_transport_checks_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-CURRENT_MARGIN_CORRECTION-1983b339b2a0ae96.md",
+        "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+        "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md"
+      ],
+      "dependency_rationale": "Current axiom memo supplies Record/lattice ontology; linked finite native instrument supplies code and even-CAR dictionary at its conditional scope. Preparation, controls and occurrence remain explicit supplied conditions."
+    }
+  ],
+  "correction_confirmation": "All source differences cold-read; unchanged mathematics, thresholds, execution count and caps. Archive40decoded payloads exact, including original current-margin correction. One fresh primary execution and final cache binding pending.",
+  "confirmation_base": "0641ef197a36124872e898265b0d7fc16422b051",
+  "methodology_context_transition": {
+    "previous_base": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+    "new_base": "0641ef197a36124872e898265b0d7fc16422b051",
+    "changes": [
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "old_sha256": "9184afe4209e7226197bec7318f9522a7d0603e8abd2609de5403318a2b8304f",
+        "new_sha256": "240eaa1659578744c8a4d2a1d84836c3120c03fd63df544226a79b5dc8e36174"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "old_sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf",
+        "new_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187"
+      }
+    ],
+    "scope": "Read exact landed diff. Registered current premise authority resolution only; no scientific source, runtime, parent, threshold, cap, or acceptance criterion changed. Original preexecution report and failed mechanical preflight remain immutable. No science execution yet.",
+    "prior_report_sha256": "ef03117f80aabff2e20d84d0b5982cc4a689d7d1f68d4d6580d94a5546f2f1c3"
+  }
+}

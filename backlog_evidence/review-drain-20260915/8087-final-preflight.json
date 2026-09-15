@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8087-final",
+  "tree": "1233fde43c326de9e6f4ccaa63b1fd272eea4d6e",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "native_growing_formation_current_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/native_growing_formation_current_2026_09_13.py",
+      "helpers": [
+        "scripts/native_formation_growth_checks_2026_09_13.py",
+        "scripts/native_formation_native_checks_2026_09_13.py",
+        "scripts/native_formation_transport_checks_2026_09_13.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_formation_growth_checks_2026_09_13.py",
+        "scripts/native_formation_native_checks_2026_09_13.py",
+        "scripts/native_formation_transport_checks_2026_09_13.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_formation_growth_checks_2026_09_13.py",
+        "scripts/native_formation_native_checks_2026_09_13.py",
+        "scripts/native_formation_transport_checks_2026_09_13.py"
+      ],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-CURRENT_MARGIN_CORRECTION-1983b339b2a0ae96.md",
+        "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-NO_GO_DISCIPLINE_CHECKLIST-af3647a217d8dd77.md",
+        "docs/work_history/repo/review_feedback/pr8087-growing-formation-evidence/kept/pr8087-REVIEW_HISTORY-3f4cb79c836849bf.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8752,
+      "misses": 4345
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4343
+    },
+    "declared_inputs": {
+      "hits": 8778,
+      "misses": 4476
+    }
+  },
+  "record_sha256": "68d9e27ec2c620357ae1e38ab884e90b7fb6536bb1a740ec3dcc4e63a37cd681",
+  "checker_sha256": "ac69adbc9c5ff79eb35ded0901b736aa871358a8a2d8e1e330b6f7e47d5d6187"
+}

@@ -1,0 +1,21 @@
+{
+  "main_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "command": [
+    "git",
+    "grep",
+    "-ilE",
+    "(charge.sector.{0,35}(energy|bound)|sector.energy.{0,35}(uniform|reflection)|endpoint.{0,25}reflection|checkerboard.{0,30}sector|sector.{0,30}checkerboard)",
+    "origin/main",
+    "--",
+    "docs/*.md"
+  ],
+  "matching_paths": [
+    "origin/main:docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "origin/main:docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "origin/main:docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "origin/main:docs/SIGNED_GRAVITY_SOURCE_ACTION_ESCAPE_HATCH_NOTE.md",
+    "origin/main:docs/U1_MAXWELL_LIGHT_LANE_LANDING_CORE_META_NOTE_2026-09-05.md"
+  ],
+  "review_scope": "Matching passages with five context lines inspected; no claim to have reread every matching full note.",
+  "comparison": "Token-row, recurrent-controller and signed-gravity passages concern different objects. The staggered-sector note concerns finite fermion occupations. The Maxwell landing core warns about flux-twist curvature versus sector energies; it supplies no endpoint-reflection sector bound. The older exact clock note at9a84632e8b9e4f82969d7b4e22827d0037c51df5 was separately reread in full and explicitly leaves uniform sector comparison open."
+}

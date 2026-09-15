@@ -1,0 +1,346 @@
+===== runner cache v1 =====
+runner: scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py
+runner_sha256: 9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.08
+status: ok
+----- stdout -----
+{
+  "status": "finite author checks; reflection/sector proof and independent review separate",
+  "endpoint_rings": {
+    "crossing_ring_cases": [
+      {
+        "normal": 0,
+        "tangent": 1,
+        "physical_endpoint_transition_checks": 324
+      },
+      {
+        "normal": 0,
+        "tangent": 2,
+        "physical_endpoint_transition_checks": 324
+      },
+      {
+        "normal": 1,
+        "tangent": 0,
+        "physical_endpoint_transition_checks": 324
+      },
+      {
+        "normal": 1,
+        "tangent": 2,
+        "physical_endpoint_transition_checks": 324
+      },
+      {
+        "normal": 2,
+        "tangent": 0,
+        "physical_endpoint_transition_checks": 324
+      },
+      {
+        "normal": 2,
+        "tangent": 1,
+        "physical_endpoint_transition_checks": 324
+      }
+    ],
+    "one_link_isometry": "exact symbolic equality",
+    "correct_link_projector_reflection_form": 3,
+    "wrong_link_sum_one_reflection_form": -2
+  },
+  "physical_projection": {
+    "L": 4,
+    "actual_clock_fields": 24,
+    "nonzero_winding_controls": 72,
+    "broken_endpoint_controls": 24,
+    "reflection_normals": 3,
+    "nonzero_tangential_half_flux_instances": 62,
+    "isolated_cross_link_matching_controls": 3,
+    "scope": "exact diagonal projection equivalence on the listed finite fixtures",
+    "field_rows": [
+      {
+        "trial": 0,
+        "charge_mass": 24
+      },
+      {
+        "trial": 1,
+        "charge_mass": 24
+      },
+      {
+        "trial": 2,
+        "charge_mass": 24
+      },
+      {
+        "trial": 3,
+        "charge_mass": 20
+      },
+      {
+        "trial": 4,
+        "charge_mass": 30
+      },
+      {
+        "trial": 5,
+        "charge_mass": 24
+      },
+      {
+        "trial": 6,
+        "charge_mass": 26
+      },
+      {
+        "trial": 7,
+        "charge_mass": 24
+      },
+      {
+        "trial": 8,
+        "charge_mass": 24
+      },
+      {
+        "trial": 9,
+        "charge_mass": 28
+      },
+      {
+        "trial": 10,
+        "charge_mass": 28
+      },
+      {
+        "trial": 11,
+        "charge_mass": 32
+      },
+      {
+        "trial": 12,
+        "charge_mass": 30
+      },
+      {
+        "trial": 13,
+        "charge_mass": 26
+      },
+      {
+        "trial": 14,
+        "charge_mass": 26
+      },
+      {
+        "trial": 15,
+        "charge_mass": 30
+      },
+      {
+        "trial": 16,
+        "charge_mass": 30
+      },
+      {
+        "trial": 17,
+        "charge_mass": 34
+      },
+      {
+        "trial": 18,
+        "charge_mass": 24
+      },
+      {
+        "trial": 19,
+        "charge_mass": 22
+      },
+      {
+        "trial": 20,
+        "charge_mass": 26
+      },
+      {
+        "trial": 21,
+        "charge_mass": 32
+      },
+      {
+        "trial": 22,
+        "charge_mass": 32
+      },
+      {
+        "trial": 23,
+        "charge_mass": 24
+      }
+    ]
+  },
+  "dissemination": {
+    "doubling_cases": [
+      {
+        "L": 4,
+        "trial": 0,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 1,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 2,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 3,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 4,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 5,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 6,
+        "doublings": 6
+      },
+      {
+        "L": 4,
+        "trial": 7,
+        "doublings": 6
+      },
+      {
+        "L": 8,
+        "trial": 0,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 1,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 2,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 3,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 4,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 5,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 6,
+        "doublings": 9
+      },
+      {
+        "L": 8,
+        "trial": 7,
+        "doublings": 9
+      }
+    ],
+    "physical_checkerboard_fixtures": 10,
+    "scope": "geometry and feasibility; no many-body partition sum executed"
+  },
+  "local_norm": {
+    "symbolic_characteristic_polynomial": "(z+h)(z^2-hz-2)",
+    "full_four_link_matrices": [
+      {
+        "h": 0,
+        "rho": 1.4142135623730954
+      },
+      {
+        "h": 0.14285714285714285,
+        "rho": 1.487444828685643
+      },
+      {
+        "h": 0.5,
+        "rho": 1.6861406616345074
+      },
+      {
+        "h": 1,
+        "rho": 1.9999999999999998
+      }
+    ]
+  },
+  "cohomology_and_original_clock": {
+    "L": 4,
+    "rank_curl_mod3": 126,
+    "rank_divergence_mod3": 63,
+    "rank_closure_plus_three_periods_mod3": 66,
+    "physical_field_dimension_mod3": 126,
+    "local_vertex_charge_multiplicities": {
+      "-2": 1,
+      "-1": 50,
+      "0": 141,
+      "1": 50,
+      "2": 1
+    },
+    "original_clock_mismatch_histogram": {
+      "0": 55,
+      "1": 127,
+      "2": 76,
+      "3": 29,
+      "4": 1
+    },
+    "forced_neutral_full_wraps": 3,
+    "scope": "finite cohomology equality and original-clock transition identities"
+  },
+  "finite_reflection_functional": {
+    "projected_two_factor_models": [
+      {
+        "beta": 0.1,
+        "h": 0,
+        "minimum_sampled_reflection_form": 1.4627407890347341
+      },
+      {
+        "beta": 0.1,
+        "h": 0.3,
+        "minimum_sampled_reflection_form": 2.3341797871092353
+      },
+      {
+        "beta": 0.1,
+        "h": 1,
+        "minimum_sampled_reflection_form": 1.8303120956820969
+      },
+      {
+        "beta": 0.7,
+        "h": 0,
+        "minimum_sampled_reflection_form": 5.3987694409438625
+      },
+      {
+        "beta": 0.7,
+        "h": 0.3,
+        "minimum_sampled_reflection_form": 8.612512929640356
+      },
+      {
+        "beta": 0.7,
+        "h": 1,
+        "minimum_sampled_reflection_form": 9.73755635101722
+      },
+      {
+        "beta": 2,
+        "h": 0,
+        "minimum_sampled_reflection_form": 26.231648855958717
+      },
+      {
+        "beta": 2,
+        "h": 0.3,
+        "minimum_sampled_reflection_form": 28.291353519755194
+      },
+      {
+        "beta": 2,
+        "h": 1,
+        "minimum_sampled_reflection_form": 97.78362776231793
+      }
+    ],
+    "wrong_hopping_sign_reflection_form": -1.36829887200859,
+    "scope": "nine-dimensional finite matrix probes of the reflection functional and Cauchy-Schwarz"
+  }
+}
+per_element: executed original clock moves, independent curl/divergence identities, endpoint isometry and exact unit-shift transitions.
+per_site: executed local charge multiplicities and physical endpoint constraints; the variational local defect bound is checked and not executed, using the written operator proof.
+per_mode: executed the complete 81-dimensional single-plaquette spectrum at four harmonic weights; many-body photon spectra are not computed.
+per_block: executed projected reflection functionals, wrong-sign controls, winding constraints and dyadic dissemination geometry on the specified finite fixtures.
+lattice_wide: checked and not executed: the all-volume physical reflection cone, sector chessboard inequality and thermodynamic ground-energy limits are written analytic proofs awaiting independent review.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

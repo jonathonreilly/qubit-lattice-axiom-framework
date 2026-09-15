@@ -1,0 +1,148 @@
+{
+  "source": "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py",
+  "source_sha256": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b",
+  "checked_at_utc": "2026-09-15T05:50:41.397582+00:00",
+  "scope": "Actual scratch copies of the final public runner; independent scientific review remains pending.",
+  "mutations": [
+    {
+      "mutation": "dual_base_shift",
+      "replace": "E[shift(v, k, -1, L), k] = eps * value",
+      "with": "E[shift(v, k, 0, L), k] = eps * value",
+      "source_sha256": "db7d6e8110f80d8ad16d837b826538bbb4c0b78646c654896146976c5bb1d0ef",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4375262079993263,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/dual_base_shift.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/dual_base_shift.py\", line 528, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/dual_base_shift.py\", line 139, in field_projection_checks\n    assert divergence(E, L) == d2(b, L)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "particle_hole",
+      "replace": "return {(v, i, s): 2 - n[reflect_vertex",
+      "with": "return {(v, i, s): n[reflect_vertex",
+      "source_sha256": "f25dac8e26252aa79fa4a54205b5d7797050ca541917205f9dbe6ca90dc190da",
+      "exit_code": 1,
+      "elapsed_seconds": 0.23633404192514718,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/particle_hole.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/particle_hole.py\", line 528, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/particle_hole.py\", line 144, in field_projection_checks\n    assert cone_projection_predicate(n, normal, L)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "corner_reflection_sign",
+      "replace": "-s if i == normal else s): -power",
+      "with": "-s if i == normal else s): power",
+      "source_sha256": "a99018d8255da2902dfaeb123c5d9173fd3646bdcb3b69dd080d68cfa1d2f41f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2060252499068156,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/corner_reflection_sign.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/corner_reflection_sign.py\", line 527, in run\n    'endpoint_rings':ring_and_reflection_checks(),\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/corner_reflection_sign.py\", line 254, in ring_and_reflection_checks\n    assert theta_word(left, normal, L) == right\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "normal_winding",
+      "replace": "if normal_flux:\n",
+      "with": "if False:\n",
+      "source_sha256": "61720a40451a21366452af944afa6661edc29e79b2d54f46ddd51f329c7f4256",
+      "exit_code": 1,
+      "elapsed_seconds": 0.24815920798573643,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/normal_winding.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/normal_winding.py\", line 528, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/normal_winding.py\", line 158, in field_projection_checks\n    assert not cone_projection_predicate(nn, normal, L)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "tangential_winding",
+      "replace": "return tuple(n[key] for key in cross), tangential",
+      "with": "return tuple(n[key] for key in cross), (0, 0)",
+      "source_sha256": "cf32c0bb59199e2201162a32b0c3be31dce1990d01324624a77051f74aeedefb",
+      "exit_code": 1,
+      "elapsed_seconds": 0.264024208066985,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/tangential_winding.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/tangential_winding.py\", line 528, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/tangential_winding.py\", line 158, in field_projection_checks\n    assert not cone_projection_predicate(nn, normal, L)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "crossing_link_constraint",
+      "replace": "return tuple(n[key] for key in cross), tangential",
+      "with": "return (), tangential",
+      "source_sha256": "c603251513a6101ed938f0352ed35d2937158cabb723c1d4b56aea19e51cfd55",
+      "exit_code": 1,
+      "elapsed_seconds": 0.3786803340772167,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/crossing_link_constraint.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/crossing_link_constraint.py\", line 528, in run\n    'physical_projection':field_projection_checks(),\n                          ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/crossing_link_constraint.py\", line 192, in field_projection_checks\n    assert a[0] != b[0]\n           ^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "cyclic_endpoint_shift",
+      "replace": "ans[key] += power",
+      "with": "ans[key] = (ans[key] + power) % 3",
+      "source_sha256": "e169d41aef597a4aba078c1d244916820af380def9a95bf6a1faeaa3b1b7381d",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22106104204431176,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/cyclic_endpoint_shift.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/cyclic_endpoint_shift.py\", line 527, in run\n    'endpoint_rings':ring_and_reflection_checks(),\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/cyclic_endpoint_shift.py\", line 273, in ring_and_reflection_checks\n    assert (got is not None) == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "endpoint_amplitude",
+      "replace": "R = sp.Matrix([[0, 0, 0], [1, 0, 0], [0, 1, 0]])",
+      "with": "R = sp.Matrix([[0, 0, 0], [sp.sqrt(2), 0, 0], [0, 1, 0]])",
+      "source_sha256": "6929c2bcda7c6554dd9aa90818e05868f147efddffbc22e82e0bc362475385c7",
+      "exit_code": 1,
+      "elapsed_seconds": 0.23569674999453127,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/endpoint_amplitude.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/endpoint_amplitude.py\", line 527, in run\n    'endpoint_rings':ring_and_reflection_checks(),\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/endpoint_amplitude.py\", line 286, in ring_and_reflection_checks\n    assert embedding.T * sp.kronecker_product(R, R.T) * embedding == R\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "dissemination_plane",
+      "replace": "(2*ell-1-v[axis]) % L",
+      "with": "(2*ell-v[axis]) % L",
+      "source_sha256": "1d162b0dfe7e45b89ef1798535de53d4b3f48dadf9f2a428f562d1b88266d98a",
+      "exit_code": 1,
+      "elapsed_seconds": 0.3814220828935504,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/dissemination_plane.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/dissemination_plane.py\", line 529, in run\n    'dissemination':dissemination_and_checkerboards(),\n                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/dissemination_plane.py\", line 331, in dissemination_and_checkerboards\n    assert all(labels[v] == initial for v in it.product(*(range(x) for x in lengths)))\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "checkerboard_sign",
+      "replace": "val = -k * parity * (selected - 1)",
+      "with": "val = k * parity * (selected - 1)",
+      "source_sha256": "1737dead92351f8a4f7a9dfb1c2d8bd45a1e7f709d6202ff6afc9a9ce74fa962",
+      "exit_code": 1,
+      "elapsed_seconds": 0.38317362510133535,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/checkerboard_sign.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/checkerboard_sign.py\", line 529, in run\n    'dissemination':dissemination_and_checkerboards(),\n                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/checkerboard_sign.py\", line 349, in dissemination_and_checkerboards\n    assert q == {v: 3*k*((-1)**sum(v)) for v in vs}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "spectral_radius",
+      "replace": "math.sqrt(h0*h0+8)",
+      "with": "math.sqrt(h0*h0+4)",
+      "source_sha256": "2fcbbb22a864751426ee5517da08a73cf24bd60c7885a768096779fa6be4a42d",
+      "exit_code": 1,
+      "elapsed_seconds": 0.47761420893948525,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/spectral_radius.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/spectral_radius.py\", line 530, in run\n    'local_norm':local_spectral_constant(),\n                 ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/spectral_radius.py\", line 374, in local_spectral_constant\n    assert abs(actual-exact) < 1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "missing_cohomology_period",
+      "replace": "C = np.vstack((D,periods))",
+      "with": "C = np.vstack((D,periods[:2]))",
+      "source_sha256": "632e2994e2800a46f6978dd12c92a912bf5dfe683c8169b9896ef5231891d8a0",
+      "exit_code": 1,
+      "elapsed_seconds": 0.5346815000521019,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/missing_cohomology_period.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/missing_cohomology_period.py\", line 531, in run\n    'cohomology_and_original_clock':cohomology_and_wrap_checks(),\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/missing_cohomology_period.py\", line 423, in cohomology_and_wrap_checks\n    assert ranks == [126,63,66]\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "clock_wrap_normalization",
+      "replace": "mismatch=numerator//3",
+      "with": "mismatch=numerator//2",
+      "source_sha256": "c51cefae9828508d3e396d00f510022987fdd5d695250cec280faaa846ed4356",
+      "exit_code": 1,
+      "elapsed_seconds": 0.5413113749818876,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/clock_wrap_normalization.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/clock_wrap_normalization.py\", line 531, in run\n    'cohomology_and_original_clock':cohomology_and_wrap_checks(),\n                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/clock_wrap_normalization.py\", line 460, in cohomology_and_wrap_checks\n    assert same == (norm in (0,4))\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "mutation": "crossing_hopping_sign",
+      "replace": "np.kron(I,d)-np.kron(R,R)-np.kron(R.T,R.T)",
+      "with": "np.kron(I,d)+np.kron(R,R)+np.kron(R.T,R.T)",
+      "source_sha256": "2f21f88cdb81adf02fd751f517f6d8999c3a37b07871a0ccdc27f5fc219f9148",
+      "exit_code": 1,
+      "elapsed_seconds": 0.6616202919976786,
+      "stdout_tail": "",
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/crossing_hopping_sign.py\", line 536, in <module>\n    results = run()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/crossing_hopping_sign.py\", line 532, in run\n    'finite_reflection_functional':finite_reflection_functional()}\n                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-clock-reflection-fault-a9y5lkgd/crossing_hopping_sign.py\", line 510, in finite_reflection_functional\n    assert abs(fg)**2<=ff.real*gg.real+1e-9\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

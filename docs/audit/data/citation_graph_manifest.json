@@ -1,6 +1,6 @@
 {
- "edge_count": 13330,
- "node_count": 5763,
+ "edge_count": 13348,
+ "node_count": 5780,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12942,9 +12942,17 @@
    "deps_hash": "211135b0c4c7",
    "out_degree": 4
   },
+  "native_even_torus_flux_isolation_note_2026-09-08": {
+   "deps_hash": "68c50b449e4e",
+   "out_degree": 4
+  },
   "native_feedback_finite_apparatus_bounded_theorem_note_2026-09-13": {
    "deps_hash": "543a03b87175",
    "out_degree": 7
+  },
+  "native_flux_defect_comparison_and_winding_gap_note_2026-09-08": {
+   "deps_hash": "07c7d22c3d12",
+   "out_degree": 4
   },
   "native_gauge_closure_note": {
    "deps_hash": "5420992392c0",
@@ -13166,8 +13174,16 @@
    "deps_hash": "79db32e637e8",
    "out_degree": 4
   },
+  "native_uniform_cubic_flux_defect_stiffness_note_2026-09-08": {
+   "deps_hash": "f80083cc05df",
+   "out_degree": 7
+  },
   "native_virtual_pair_ring_mechanism_note_2026-09-08": {
    "deps_hash": "5c958ba514c0",
+   "out_degree": 3
+  },
+  "native_weak_electric_defect_density_note_2026-09-08": {
+   "deps_hash": "dd92dd1a5f46",
    "out_degree": 3
   },
   "native_weak_electric_spectator_gap_note_2026-09-08": {
@@ -21703,6 +21719,58 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8053-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8054-evidence.kept.pr8054-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8054-evidence.kept.pr8054-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8054-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8055-evidence.kept.pr8055-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8055-evidence.kept.pr8055-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8055-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8056-evidence.kept.pr8056-derivation-56a9efd9c26e932a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8056-evidence.kept.pr8056-derivation-d6dd768171696f18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8056-evidence.kept.pr8056-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8056-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8057-evidence.kept.pr8057-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8057-evidence.kept.pr8057-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8057-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

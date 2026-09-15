@@ -1,6 +1,6 @@
 {
- "edge_count": 12557,
- "node_count": 5060,
+ "edge_count": 12560,
+ "node_count": 5061,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -637,6 +637,10 @@
   "admissibility_finite_state_markov_completion_bounded_theorem_note_2026-08-14": {
    "deps_hash": "00eede88f5ef",
    "out_degree": 2
+  },
+  "admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_bounded_theorem_note_2026-09-13": {
+   "deps_hash": "87cb5cc95d36",
+   "out_degree": 3
   },
   "admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "4f530a1a5a47",

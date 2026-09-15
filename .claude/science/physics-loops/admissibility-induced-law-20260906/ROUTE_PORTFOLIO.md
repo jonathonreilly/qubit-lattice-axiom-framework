@@ -84,3 +84,10 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 14 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–13 are open PRs #8034, #8035, #8138–#8142, #8146, #8147)
+Searched commit: `origin/main` = `f1755b6e10`.
+- `git grep -l -iE "random.priority|exponential clock|rate law|formation rate" origin/main -- 'docs/*.md'` → the census note (the uniform mixture; Lemma L), and notes using "rate" in other senses (native, gravity, action-transfer); no rate-law witness and no reachability statement.
+- #8093's verdict table: row "Formation rate" — *to compute*; clause candidates (a), (b), (c) as recorded in the note.
+- Open PRs: none on the rate seam (#8137 order dependence; #8140–#8145 finite-clock lanes; #8146/#8147 this lane).
+Classification: **open after the matched-hit review.** Routes: C-A competing exponential clocks → jump chain → mixtures by multiset classes (R1) — chosen; C-B the witness by exact enumeration on `2×3`, the cube and the plaquette (R2) — chosen; C-C the tree theorem via Theorem B (R3) — chosen; C-D the plaquette symmetry-type argument for every covariant rate law (R4) with its corollaries (R5, R6) — chosen; C-E classifying larger windows — not taken (the plaquette suffices for the clause table); C-F clocks with memory — outside the campaign's clause.

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 14, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "#8093's clock-and-rate block: whether any finished-window statistic depends on the formation-rate law, with the separating clause candidates; and whether a rate clause can reproduce the static law"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the witness is exhibited exactly; a rate clause reproduces the static law on trees and on no window containing a plaquette (for every covariant rate law); the clause decision is the owner's. Next: the formation-unit witness (joint formation on a covariant set against sequential formation). Consumers: #8093's verdict table and assembly; the gravity node"
+```

@@ -1,0 +1,13 @@
+plaquette uniform: TV to static = 0.016593; mu/prodK at P1, P3, P4 = 152/169, 136/121, 1
+plaquette seeded: TV to static = 0.012525; mu/prodK at P1, P3, P4 = 12/13, 12/11, 1
+plaquette attract: TV to static = 0.014966; mu/prodK at P1, P3, P4 = 768/845, 672/605, 1
+plaquette parallel: TV to static = 0.016265; mu/prodK at P1, P3, P4 = 305/338, 271/242, 1
+static/prodK constant: 1
+2x3 classes: 28 (census note: 28); time 0.0s
+2x3 class laws computed in 13.7s
+2x3 uniform: TV to static = 372254646387017/12790481418000000 = 0.029104; nonzero classes 28
+2x3 seeded: TV to static = 5951761987229/292725576000000 = 0.020332; nonzero classes 6
+2x3 attract: TV to static = 32318135184155791/1253467178964000000 = 0.025783; nonzero classes 28
+census note's uniform TV: 372254646387017/12790481418000000 = 0.029104037152436212
+path3 seeded growth == static: True; uniform TV = 0.004630
+star4 seeded growth == static: True; uniform TV = 0.016637

@@ -1,0 +1,5 @@
+R1 plaquette laws from per-order closed forms equal the history DP for all four laws on 1296 patterns: True
+R2 the census runner's own pinned cache carries the uniform-mixture distance (fraction or decimal 0.0291...): True | PASS: D8 rect TV(mix,static) (3, 1, 2) 0.029104037152
+R3 independent type routine agrees with the runner's on P1, P3, P4 and all 6^4 patterns: True
+R4 every seeded-charged order on the path and the star records exactly one neighbour per site after the first: True
+R5 the E2 identities and their signs hold at 200 random rational points: True

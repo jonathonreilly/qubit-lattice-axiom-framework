@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 14 (2026-09-15) — the formation-rate clause witness
+- Dependencies: `minimal_axioms` (including reading note (2): no formation site, probability or rate is supplied); the census note (Lemma L, Theorem 3) and block 01 (Theorem B), both on `main`. Proposed, unaudited. Block 13 (PR #8147) referenced for motivation only.
+- Named premises: the records-only reading; the six-axis menu; positivity; the product rule; the clock model (independent memoryless clocks with covariant rates) as the supplied object of the witness.
+- Scaffolding: the windows (`2×3`, the open cube, the plaquette, the path, the star); the four executed rate laws; the plaquette types (toward/away/perpendicular) and the diagonal normalizers `d_same, d_anti, d_orth`.
+- External methods (re-proved at scope): competing exponentials; the plaquette symmetry argument; the class-ratio monotonicity; Gaussian elimination for the rank.
+- References named, not used: the competing-exponentials construction of a continuous-time chain; seeded growth as the classical boundary-growth model.
+- Counterfactual pass: the constant rule (all laws uniform); clocks with memory (outside the model); joint formation (next block); larger windows (not classified).

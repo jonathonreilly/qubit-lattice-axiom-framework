@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 14 — V1-V5 (supervisor, 2026-09-15)
+- V1: #8093's clock-and-rate block ("Formation rate: to compute") and its three clause candidates; the reconciliation question behind it (can a rate clause deliver the static reading the repository's static reconstruction and the gravity Green function need).
+- V2: the lens pass in `GOAL_block14.md` ("a corollary of order dependence" — the witness yes, the no-go no; "value-dependent rates could compensate" — handled by the type argument; "one window" — conceded and stated).
+- V3: R1, R3, R4, R5 proved; R2, R6 executed exactly (22 checks, 13 mutations); the refuting pass agreed on five routes; one drafting defect in the runner's symbolic positivity test fixed before the census.
+- V4: no order, rate, rule or coupling selected; no clause adopted; the owner's decision named.
+- V5: consumers named — #8093's verdict table and assembly; the gravity node; the formation-unit block.
+
+## block 14 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block14.md`): as V2. Primary: the note and the runner (22 checks, 13 mutations). Refuting pass (`CHECKER_block14_findings.md`): the plaquette laws from per-order closed forms against the history DP (all four laws, 1296 patterns), the census runner's own cache for the uniform distance, an independent type routine on all patterns, the structural one-recorded-neighbour check on every seeded-charged tree order, and the E2 identities at 200 random rational points — all consistent. Fold: the runner's first symbolic positivity test expanded the cofactor in the wrong variable; replaced by the proof's convex-combination form. Author checks only; independent review pending.
+
+## block 14 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, the census note and block 01, all on `main` at `f1755b6e10`; nothing pinned from a branch or PR (block 13 is motivation only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the no-go is stated for the plaquette; larger windows marked open; the clause table adopts nothing. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

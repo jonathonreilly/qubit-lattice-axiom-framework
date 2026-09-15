@@ -100,3 +100,13 @@ Block 08 opened for review (independent PR against main; not a main landing): th
 4. **Width 6 by block 06's route** (compute-heavy; deferred under the proofs-over-compute directive).
 5. **The silent triples by a non-criterion route** (heavy; unchanged).
 6. **The Gaussian instance in three dimensions** (small; low priority).
+
+## Refresh at block 09 opening (2026-09-15)
+
+Block 09 opened for review (stacked on #8138): the `Z^3` monotone law's Markov graph, its separation from every static Gibbs law, the eight corner laws and the covariant mixture, the sweep's imprint. Ranked next (derivations; nobody else on them):
+
+1. **The recorded-set Gibbs theorem for arbitrary orders on finite windows**: a formation law is Gibbs for the potential with `−log K` on the edges recorded and `+log Z_k` on each recorded set; its Markov graph is the recorded-set graph (edges within recorded sets added to the nearest-neighbor edges); it is nearest-neighbor Markov iff every recorded set has at most one element (block 01's condition, now for the Markov property rather than equality with the static law); the `k`-body terms are irreducible for `k = 2, …, 6` at the declared triples (executed). One short block.
+2. **The region's boundary in `(p, q, r)`** (exact algebra; small).
+3. **Strong coupling `c ≥ 1/3`** (proof target; open).
+4. **The random-priority law's Markov structure** (needs the owner's note as an input; unlanded; deferred).
+5. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small).

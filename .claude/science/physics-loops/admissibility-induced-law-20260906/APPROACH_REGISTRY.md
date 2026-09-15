@@ -18,3 +18,12 @@
 | F8.3 causal coupling | discrepancy propagation along monotone paths | per-neighbor sensitivity `c`; path counting `N(z,x) c^d` | none in the region `3c < 1` | stronger than needed (gives decay and uniqueness) | candidate-complete in the region | exact `c` at eight triples; cube influence check | a bound for `c ≥ 1/3` needs a different mechanism |
 | F8.4 Gibbs form | product of kernels regrouped | normalizers as `K`-sums | irreducibility of `K_3` | exact | candidate-complete | third difference `2160/2197` at (3,1,2) | — |
 | F8.5 down-set consistency | marginals on down-sets | leaf removal in reverse order | none | exact, any dimension | candidate-complete | cube marginal on `x_3 = 0` equals the 2D law | — |
+
+## Block 09 — Markov graph, eight corner laws, the sweep's imprint (2026-09-15)
+
+| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| F9.1 DLR limit | finite-box conditional identity on a window | factors not meeting the window cancel; the identity is finite and passes to the limit | none in the region | exact | candidate-complete | L1 | — |
+| F9.2 specification uniqueness under full support | two continuous finite-range kernels a.s. equal | every cylinder charged ⇒ equal everywhere | full support (proved from box positivity) | exact | candidate-complete | L2 | — |
+| F9.3 dependency-set combinatorics | offsets κ_i e_i − κ_j e_j and their grouping | point reflection preserves the set, not the grouping | within-pair witness | exact | candidate-complete | C1–C3 | — |
+| F9.4 column reversibility | J = πP versus J^T | the reversed class is the reversed chain | none | exact at 2x2 | candidate-complete | D1–D5 | larger cross-sections not computed |

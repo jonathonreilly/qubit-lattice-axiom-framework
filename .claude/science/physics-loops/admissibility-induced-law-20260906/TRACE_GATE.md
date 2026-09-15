@@ -85,3 +85,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "declared and constructed: the monotone class on Z^3 with its corner and sweep; unique translation-invariant law with exponential decay for c < 1/3 (the silent triples inside); the record-dynamics reframing answered negatively at scope (N-gated). Next per the queue: the eight corner classes as one covariant family and their relation to the random-priority law; the region's boundary in (p, q, r). Consumers: the campaign's queue; the derivation campaign's assembly (edge label 'clause-needed' for long-range record fields under positive product rules in the region); the parked statistical-bridge material (read-only)"
 ```
+
+# Trace gate — block 09, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the owner's sequencing gate (2026-08-26): what the Admissibility rule induces on the infinite lattice is unidentified; #8093's formation-law node (a covariant single formation law?); #8096's lemma (no covariant sequential order)"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "on Z^3 the monotone-class formation law is separated from every static law by its Markov graph; the covariant object of the class is the mixture of eight distinct laws; the sweep and the corner are readable in the records. Next: the general recorded-set Gibbs theorem for arbitrary orders on finite windows (Markov graph = recorded-set graph; k-body irreducibility for k = 2..6); then the region boundary. Consumers: the campaign's queue; #8093's assembly (formation-law node: 'clause-needed' for a covariant single law); the parked statistical-bridge material (read-only)"
+```

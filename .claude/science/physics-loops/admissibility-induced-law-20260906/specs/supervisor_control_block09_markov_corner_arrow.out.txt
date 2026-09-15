@@ -1,0 +1,30 @@
+=== (1) dependence of the full conditional on the face-diagonal site x+e1-e2 (class +++; triples {x, x+e1-e2, x+e1-e3}, {x, x+e2-e1, x+e2-e3}, {x, x+e3-e1, x+e3-e2})
+max TV of gamma_x over changes of v(x+e1-e2) with all else +x: 793975879125/24719290847393 = 0.03211968 (at value -x)
+
+=== (2) the eight corner classes: dependency sets and point-reflection pairs
+class (1, 1, 1): same dependency set: [(1, 1, 1), (-1, -1, -1)]; same triple grouping: [(1, 1, 1)]
+class (1, 1, -1): same dependency set: [(1, 1, -1), (-1, -1, 1)]; same triple grouping: [(1, 1, -1)]
+class (1, -1, 1): same dependency set: [(1, -1, 1), (-1, 1, -1)]; same triple grouping: [(1, -1, 1)]
+class (1, -1, -1): same dependency set: [(1, -1, -1), (-1, 1, 1)]; same triple grouping: [(1, -1, -1)]
+class (-1, 1, 1): same dependency set: [(1, -1, -1), (-1, 1, 1)]; same triple grouping: [(-1, 1, 1)]
+class (-1, 1, -1): same dependency set: [(1, -1, 1), (-1, 1, -1)]; same triple grouping: [(-1, 1, -1)]
+class (-1, -1, 1): same dependency set: [(1, 1, -1), (-1, -1, 1)]; same triple grouping: [(-1, -1, 1)]
+class (-1, -1, -1): same dependency set: [(1, 1, 1), (-1, -1, -1)]; same triple grouping: [(-1, -1, -1)]
+max TV between the (+++) and (---) full conditionals over the 6^6 diagonal configurations (axials +x): 1646222697/263752139417 = 0.00624155 at ['+x', '+x', '+y', '-x', '+y', '-x']
+
+=== (3) the 2x2 column: irreversibility of the plane chain
+(3, 1, 2): irreversibility TV(J, J^T) = 20050159445052753287345872554551877965270917971807795389873/406357621088602935950245331407424044758618443589923499955200 (0.04934116); TV(pi, pi∘R2) = 11555202353859801661076434687858214316334786981223/530762821621220762616238380264013135814921940979920 (0.02177093); 7.2s
+(5, 2, 4): irreversibility TV(J, J^T) = 8103241040645719590363383034157940361926120298234345092618227520176141370246660089769123828156572439598907898756376286255943176860469696470420613231635008659001064487793815277/255792175533565074254447595839844034050289913832984417393901665777850946821289238795023614978178223141745478806169161031102498652448412706619735166428532814150732488338667290701 (0.03167900); TV(pi, pi∘R2) = 25245892292705775820510395866785592853503094535235756090649886393483341073386382315851914532510767278446070456593682911968401527017978939386886260104053896842/1830060996181798203869479726873591360656021840508290555715304600217778339768051828897650530360034292463175580477815449483815012712519752990967908696689231477209 (0.01379510); 10.6s
+(2, 2, 2): irreversibility TV(J, J^T) = 0 (0); TV(pi, pi∘R2) = 0 (0); 5.9s
+
+=== (4) the eight predecessor structures on the 2x2 column: stationary laws and distinctness (3,1,2)
+one-plane stationary laws: 8 classes -> 4 distinct one-plane laws: [(1, 1, 1), (1, 1, -1), (1, -1, 1), (1, -1, -1)]
+(note: s1 = -1 classes share the one-plane law of s1 = +1; the sweep direction is visible only in the two-plane joint law, item 3)
+  (1, 1, 1): equal one-plane law with [(1, 1, 1), (-1, 1, 1)]
+  (1, 1, -1): equal one-plane law with [(1, 1, -1), (-1, 1, -1)]
+  (1, -1, 1): equal one-plane law with [(1, -1, 1), (-1, -1, 1)]
+  (1, -1, -1): equal one-plane law with [(1, -1, -1), (-1, -1, -1)]
+  (-1, 1, 1): equal one-plane law with [(1, 1, 1), (-1, 1, 1)]
+  (-1, 1, -1): equal one-plane law with [(1, 1, -1), (-1, 1, -1)]
+  (-1, -1, 1): equal one-plane law with [(1, -1, 1), (-1, -1, 1)]
+  (-1, -1, -1): equal one-plane law with [(1, -1, -1), (-1, -1, -1)]

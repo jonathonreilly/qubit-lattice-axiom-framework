@@ -1,0 +1,131 @@
+{
+  "primary_sha256": "9acde2b549df4ba875740d2dff81a701984fea6bdbd2f87a6d17641dfaf010ce",
+  "results": [
+    {
+      "name": "gauge_temporal_numerator",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert err<2e-13",
+      "elapsed_sec": 2.4481858749641106,
+      "source_sha256": "e664f9d7bdee27629090a08467c1dc96bc3ebec95fcd667377794748a8fa8dbd",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/gauge_temporal_numerator.py\", line 54, in check_tensor_and_Ward",
+        "    err=float(np.max(abs(M@D-np.eye(4))));gm=max(gm,err);assert err<2e-13",
+        "                                                                ^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "bubble_midpoint_vertex",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert error<2e-12*scale",
+      "elapsed_sec": 2.1241633750032634,
+      "source_sha256": "924c0df239390b244f1aa795cdcedbef662c1368e53a3b4414f945f92be45e9f",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/bubble_midpoint_vertex.py\", line 158, in check_full_lattice_Ward",
+        "    scale=max(1.,float(np.linalg.norm(total)));assert error<2e-12*scale",
+        "                                                      ^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "photon_contact_sign",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert error<2e-12*scale",
+      "elapsed_sec": 2.006996708107181,
+      "source_sha256": "ee1fdf858dc448182df07e69db5a5dc69d00bb5586582f60cba20071b8318ba2",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/photon_contact_sign.py\", line 158, in check_full_lattice_Ward",
+        "    scale=max(1.,float(np.linalg.norm(total)));assert error<2e-12*scale",
+        "                                                      ^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "fermion_temporal_trace",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert abs(at-(3*v*v-c*c)*ft",
+      "elapsed_sec": 2.0474718750920147,
+      "source_sha256": "a7917c20c65cccd8e84461cf203f6f00a58298b70b4664fb41e5cae6e8d50385",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/fermion_temporal_trace.py\", line 74, in check_residues",
+        "    assert abs(at-(3*v*v-c*c)*ft/(4*np.pi**3))<1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "Weyl_Dirac_multiplicity",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "maximum_residue_error",
+      "elapsed_sec": 0.8915521670132875,
+      "source_sha256": "c586b55e8f9404921b699b9d89705f594eb0f6cf88766579c7b676d2cb86de4d",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/Weyl_Dirac_multiplicity.py\", line 383, in check_lattice_residue_matching",
+        "    assert pr[-1]['maximum_residue_error']<pr[0]['maximum_residue_error']/20",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "angular_numerator_derivative",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert err<1e-12",
+      "elapsed_sec": 2.0957756250863895,
+      "source_sha256": "0567a348625c941a464029f73323b29577c0ea4b57efc22cf63fb531375294ce",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/angular_numerator_derivative.py\", line 236, in check_angular_tensor",
+        "    err=float(np.max(abs(averaged-target)));assert err<1e-12",
+        "                                                   ^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "fermion_metric_response_factor",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert np.max(abs(A-A.T))",
+      "elapsed_sec": 2.3923199160490185,
+      "source_sha256": "248475c13bd7d8c8dd3b88e990e3c628000d5c9ebdfd34c600fc60ef2c1d7354",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/fermion_metric_response_factor.py\", line 255, in check_flow",
+        "    assert np.max(abs(A-A.T))<1e-14",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "threshold_normalization",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert 0<f<1 and f<=z/5",
+      "elapsed_sec": 2.193481749971397,
+      "source_sha256": "6f3f7d2ebeec097ee0d7d07c3de6bdc845cd5ae9bcce5b36a6fc77a66b9be73c",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/threshold_normalization.py\", line 284, in check_threshold",
+        "    f=threshold(z);assert 0<f<1 and f<=z/5*(1+1e-12)",
+        "                          ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "charge_running_omission",
+      "exit_code": 1,
+      "intended_assertion_detected": true,
+      "expected_statement": "assert err<2e-9",
+      "elapsed_sec": 2.141261750017293,
+      "source_sha256": "45e56030299a5b85dfc372350dce4a54c20f9deab76d7a893345f4e979dd60e3",
+      "stderr_tail": [
+        "  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block4-mutations-oq5o_2a3/charge_running_omission.py\", line 314, in check_nonlinear",
+        "    err=float(np.max(abs(converted-a.y)));assert err<2e-9",
+        "                                                 ^^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "original_source_sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb",
+  "independent_review": false,
+  "mutations": [
+    {
+      "name": "inverse_scale",
+      "function": "check_inverse_moments",
+      "old": "inverse=largest*float",
+      "new": "inverse=2*largest*float",
+      "source_sha256": "1ca784b32e07c32c5af03a13caf8d51208bbce6031f9f8b94574068365cc3e4b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.41021204192657024,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/inverse_scale.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_inverse_moments()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/inverse_scale.py\", line 44, in check_inverse_moments\n    assert abs(inverse-spectral)<3e-9*max(1,inverse)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "fourier_ratio",
+      "function": "check_inverse_moments",
+      "old": "K=float(np.prod([max(coeff/coeff[(np.arange(N)+int(q))%N]) for q in j]))",
+      "new": "K=1.0",
+      "source_sha256": "2d5b96f7bf9682a35f1577760e10579178629291985cbde6ef686720040538e3",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22963037504814565,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/fourier_ratio.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_inverse_moments()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/fourier_ratio.py\", line 41, in check_inverse_moments\n    assert K>=1-1e-13 and abs(K-ratios.prod(axis=1).max())<2e-11*max(1,K)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "transfer_power",
+      "function": "check_positive_paths",
+      "old": "np.linalg.matrix_power(tilde/lam,time-1)",
+      "new": "np.linalg.matrix_power(tilde/lam,time)",
+      "source_sha256": "f4f365e950b37861d03ac0a587c31cf746ee55f78ca5ae7b1a0ee026823debc7",
+      "exit_code": 1,
+      "elapsed_seconds": 0.1947772919666022,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/transfer_power.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_positive_paths()\n                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/transfer_power.py\", line 122, in check_positive_paths\n    assert abs(original-transformed)<5e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "surface_ratio",
+      "function": "check_positive_paths",
+      "old": "R=float(max(coeff/coeff[(np.arange(N)+shift)%N]))",
+      "new": "R=1.0",
+      "source_sha256": "5696876dd8889f8971d69cf9b8a6e70c901ed58cc7e51dde948a9d23f86dbb05",
+      "exit_code": 1,
+      "elapsed_seconds": 0.1862560419831425,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/surface_ratio.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_positive_paths()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/surface_ratio.py\", line 129, in check_positive_paths\n    assert np.max(v1-R*v0)<4e-13 and np.max(v0/R-v1)<4e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "temporal_phase",
+      "function": "check_mixed_moments",
+      "old": "K+=term*np.exp(-2j*np.pi*(j@shift)/N)/count",
+      "new": "K+=term/count",
+      "source_sha256": "b59491e35eed6c24a255518006d2f49d34ba020f08677ef43a1014e9e83f4f92",
+      "exit_code": 1,
+      "elapsed_seconds": 0.19372195797041059,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/temporal_phase.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_mixed_moments()\n                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/temporal_phase.py\", line 187, in check_mixed_moments\n    assert discrepancy<4e-12\n           ^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "moment_gram",
+      "function": "check_mixed_moments",
+      "old": "gram[a,b]=mixed[m+n][i,k]",
+      "new": "gram[a,b]=mixed[m+n+1][i,k]",
+      "source_sha256": "d092f7573de7b59b8f3306fb2c2a0f0b490d1dfb4fc14f68931b5b655e8ef678",
+      "exit_code": 1,
+      "elapsed_seconds": 0.18374474998563528,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/moment_gram.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_mixed_moments()\n                                                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/moment_gram.py\", line 203, in check_mixed_moments\n    assert np.max(abs(vectors.conj().T@vectors-gram))<4e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "green_longitudinal",
+      "function": "general_path_green",
+      "old": "(norm-longitudinal)))",
+      "new": "(norm+longitudinal)))",
+      "source_sha256": "5490ce69c51e5243f502d1697d152434ab7ac0e99dd24ab9848d5ff8a6907b9f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.18479762494098395,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/green_longitudinal.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.general_path_green()\n                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/green_longitudinal.py\", line 250, in general_path_green\n    assert abs(direct-reduced)<3e-12*max(1,direct)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    },
+    {
+      "name": "path_divergence",
+      "function": "general_path_green",
+      "old": "rho=np.sum(d*eta,axis=-1)",
+      "new": "rho=-np.sum(d*eta,axis=-1)",
+      "source_sha256": "2ddbadbd1126d8f530f06c01e25ea2d226ce9f2229a4f66a360207e4e712d035",
+      "exit_code": 1,
+      "elapsed_seconds": 0.1773316249018535,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/path_divergence.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.general_path_green()\n                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/path_divergence.py\", line 241, in general_path_green\n    assert np.max(abs(rho-rho_expected))<4e-15\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout_tail": ""
+    }
+  ]
+}

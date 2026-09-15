@@ -1,0 +1,639 @@
+{
+  "status": "Final source and actual evidence confirmed",
+  "reviewer_session": "/root/review_8012",
+  "original_head": "526431a6f31e73af97b7b3d259945f0f566ed547",
+  "original_base": "3e08a48f4a2f6e2c209dbda365c393f2f46f7145",
+  "review_base": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+  "staged_tree": "ad83060211b91e0a4431f1cd61c887fa1f5123af",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ARTIFACT_PLAN.md",
+      "original_sha256": "716d9291a5d197bed82b34173cbc6ad63f3a58247f68cc13565113ba3432bfd0",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ARTIFACT_PLAN.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/716d9291a5d197bed82b34173cbc6ad63f3a58247f68cc13565113ba3432bfd0.gz",
+      "final_sha256": "59a16b5ec229b3200a625245aeb293f09187da151890de95bc4ccf4609fd43dc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "9bbdaa315078b0d72b5441babdac4c09e963a5a0a62195b0a9714df7f854c7f3",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ASSUMPTIONS_AND_IMPORTS.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9bbdaa315078b0d72b5441babdac4c09e963a5a0a62195b0a9714df7f854c7f3.gz",
+      "final_sha256": "1452bd30cfd5c45f597bcc74d157fcc3a54ccb266f1acf636c592d0417ffc210"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+      "original_sha256": "5533acd71031897b777452fd52ac29a42a6f41de9fc747113032ce4cd270eb71",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/AUTHOR_VERIFICATION_DRIVER.py; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5533acd71031897b777452fd52ac29a42a6f41de9fc747113032ce4cd270eb71.gz",
+      "final_sha256": "5c050b8146ebee29a27d41a45c35b404822bb711a974b7ab859274361eedb61a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "197a9a86c8d31e34bf50a3edb947a5072e4e9c2b494e1a7b9d931c6f10d2815b",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/CLAIM_STATUS_CERTIFICATE.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/197a9a86c8d31e34bf50a3edb947a5072e4e9c2b494e1a7b9d931c6f10d2815b.gz",
+      "final_sha256": "491bc25767d26c9223b2b3ea773aad59de5942d4f91a7dd84f2f5c44a1de2c55"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/CONTROL_CONTRACT.md",
+      "original_sha256": "0bb8e81ea017bcb2fa90697014b54deb3332f61f9524376a5c6a7c9cd7f55ce7",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/CONTROL_CONTRACT.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/0bb8e81ea017bcb2fa90697014b54deb3332f61f9524376a5c6a7c9cd7f55ce7.gz",
+      "final_sha256": "f9bf049ba5ea174e995e06d5316e5203b97675409bbbb655e47340a6ef1c0809"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GOAL.md",
+      "original_sha256": "fd8df13da95b41b478b25c18b281c9b4602970ea0343c51d1682b86b65d69318",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GOAL.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/fd8df13da95b41b478b25c18b281c9b4602970ea0343c51d1682b86b65d69318.gz",
+      "final_sha256": "4cb47917483a0c09efff75c8ffba813b5b2972e8bf40756d6ae7071a5a89ff45"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH.stderr; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH.stdout",
+      "original_sha256": "5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH.stdout; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88.gz",
+      "final_sha256": "fd48ea722d042bbab34554af8ea33db1431875d53e09a25f09d182938dcbaa58"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH_DELTA.json",
+      "original_sha256": "575b48218cb39c492a3dfabf59fa2b313be5999989363ee52d0e4cb007314dfe",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH_DELTA.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/575b48218cb39c492a3dfabf59fa2b313be5999989363ee52d0e4cb007314dfe.gz",
+      "final_sha256": "678a83939d4fd667adde38ccc87917832e5bd43ff1cf5683c99a6d3f9960ad5d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/HANDOFF.md",
+      "original_sha256": "20f5df1c849d0c8692c1e51984c1207edd25d1e58f25a752e8ca3b45926c573e",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/HANDOFF.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-HANDOFF-9ef67db77ea9ef6f.md",
+      "final_sha256": "20f5df1c849d0c8692c1e51984c1207edd25d1e58f25a752e8ca3b45926c573e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED.stderr; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED.stdout",
+      "original_sha256": "8285b4894cc15fda36ea6f7f3a60fec252425ec3280d07ad1944fc29c56b1162",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED.stdout; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/8285b4894cc15fda36ea6f7f3a60fec252425ec3280d07ad1944fc29c56b1162.gz",
+      "final_sha256": "d59561fb07cd18335996ba749f60fec490ec9019cdaa06e0c82367469c85d242"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED_CLOSURE.json",
+      "original_sha256": "9380d38b4c82c375b55a0e659cc0f5e109884628a3a00803a4efbdcc0e918647",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED_CLOSURE.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9380d38b4c82c375b55a0e659cc0f5e109884628a3a00803a4efbdcc0e918647.gz",
+      "final_sha256": "14d5a6eb71ebec6e0a02cd02effcdfdd9a8057c7dab4ff825452b13a2844faef"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/LITERATURE_BRIDGES.md",
+      "original_sha256": "629a81b2cd694cb89df60022497329409914a2e0847c9a9511c9fb1a06a32199",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/LITERATURE_BRIDGES.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/629a81b2cd694cb89df60022497329409914a2e0847c9a9511c9fb1a06a32199.gz",
+      "final_sha256": "9bf7c1e2074ba9901b1465968a1052491b446ea75ffac50d075e31f3b9f9e37b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/LIVE.stdout",
+      "original_sha256": "f43e9caca490a87c2fcaf1ade862f853cb33d0688720c695840250ff69f18987",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/LIVE.stdout; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/f43e9caca490a87c2fcaf1ade862f853cb33d0688720c695840250ff69f18987.gz",
+      "final_sha256": "24b56c03e5de7f1fc532295b57bd95c0f39182291fe72e4d641e55c3c69399ed"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MANIFEST.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MANIFEST.stderr; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MANIFEST.stdout",
+      "original_sha256": "18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MANIFEST.stdout; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92.gz",
+      "final_sha256": "f7334f8926cca2a932de8afd7ff52615c9264dcdd8efc8d314d73b8ab71b37f8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTANT.stderr",
+      "original_sha256": "a5c3468cc75030ca9aa673c20bc8bede480b9edcf4dc23f81ae7a4eb1c89de72",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTANT.stderr; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/a5c3468cc75030ca9aa673c20bc8bede480b9edcf4dc23f81ae7a4eb1c89de72.gz",
+      "final_sha256": "2d07fc663483957d57dfa719a52d9534f44a3660d72040dba66c728b0335ab7e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTANT.stdout",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTANT.stdout; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTATIONS.json",
+      "original_sha256": "b6b8592848017b18ee1e1e9417e76cf6843a29ae037ab414cf2e0dec629153cf",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTATIONS.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/b6b8592848017b18ee1e1e9417e76cf6843a29ae037ab414cf2e0dec629153cf.gz",
+      "final_sha256": "b7ee6e8af7db1d345f0f5877830ac42549b49a0aa820b1385e14874482a55dfb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/NO_GO_LEDGER.md",
+      "original_sha256": "a0401f3739adda7f10d7d30610d323163183c9a9f44e116e0ad4da12c98fb928",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/NO_GO_LEDGER.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/a0401f3739adda7f10d7d30610d323163183c9a9f44e116e0ad4da12c98fb928.gz",
+      "final_sha256": "b1eb98dfa2330e267d74c7ede33ed7072a39bb54d32a9f7039256b308b958c5b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "5c65f4d8f482ba15d10a0622661863018b5301af945b25b80038a1dfdf8f0ad1",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/OPPORTUNITY_QUEUE.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5c65f4d8f482ba15d10a0622661863018b5301af945b25b80038a1dfdf8f0ad1.gz",
+      "final_sha256": "feb6e9a5721eb40128a9693380734f987fea83030a27420a1ad6f2f46f50c66f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ORIGINAL_HASHES.json",
+      "original_sha256": "6d167189011f89f39f91f00471269792e95cb1ccef14fb53208abbc530d455d8",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ORIGINAL_HASHES.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/6d167189011f89f39f91f00471269792e95cb1ccef14fb53208abbc530d455d8.gz",
+      "final_sha256": "f1b03a93964f62eef6c9d4969307279d7b9309994652a5e19bc279069495d8f1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/PORT_RECEIPT.json",
+      "original_sha256": "ee81a81a971744a4b5b94df74be65d4cb8b9332f80fce72fd2b943f2dbb184e3",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/PORT_RECEIPT.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ee81a81a971744a4b5b94df74be65d4cb8b9332f80fce72fd2b943f2dbb184e3.gz",
+      "final_sha256": "5ed1d16f04462f8e4ab7fec0ae4db2e4931311c0a126ef99d4916bd5783a8b10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/PR_BACKLOG.md",
+      "original_sha256": "5f3e57c81d88cea35b69c69149fddff40476b8152d1805d9bc54ac3c09fc433b",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/PR_BACKLOG.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5f3e57c81d88cea35b69c69149fddff40476b8152d1805d9bc54ac3c09fc433b.gz",
+      "final_sha256": "965543a1694543b248ac0aef36761694adbb57ffe8f3e5864a6372ae1a838cf4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/REVIEW_HISTORY.md",
+      "original_sha256": "ecc86a8403175131ccf13d5e70145a40c6b3405cbf0e18b07bb26baf5a711def",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/REVIEW_HISTORY.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ecc86a8403175131ccf13d5e70145a40c6b3405cbf0e18b07bb26baf5a711def.gz",
+      "final_sha256": "3b67eba7f2b3465c6437dbfca7e42985a6c8149f6894d760cfb842fd28280b72"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ROOT_CANONICAL_REVIEW.md",
+      "original_sha256": "a8baffaaaa716a7535ef9334ca8ada6637e9f52da3199f873bdedb8c262b0776",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ROOT_CANONICAL_REVIEW.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-ROOT_CANONICAL_REVIEW-857933c7e06ad6ff.md",
+      "final_sha256": "a8baffaaaa716a7535ef9334ca8ada6637e9f52da3199f873bdedb8c262b0776"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ROUTE_PORTFOLIO.md",
+      "original_sha256": "edc418b4fbd8a066aa42f7b7d6af96bfbd06a8ceae356e9bdaeca6cfd7152da9",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ROUTE_PORTFOLIO.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/edc418b4fbd8a066aa42f7b7d6af96bfbd06a8ceae356e9bdaeca6cfd7152da9.gz",
+      "final_sha256": "90b3a39e133cb07e81b7f6b84d7a69ae2fc0e88aab4a9e132063e830ca9c77c2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/SOURCE_FREEZE.json",
+      "original_sha256": "ca76e48a2f625d8177547119648f6c4cb52fa3273b935ba214dc03df60b4c473",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/SOURCE_FREEZE.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ca76e48a2f625d8177547119648f6c4cb52fa3273b935ba214dc03df60b4c473.gz",
+      "final_sha256": "9b2aff151935c7db77a66cc496f5a3ac810ef5082e19ad8a111753ddc291d478"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/STATE.md",
+      "original_sha256": "fa42c665453791d13a35901c40e32d9b64ba2dcb6274067e8fdb3a3bf17cef79",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/STATE.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/fa42c665453791d13a35901c40e32d9b64ba2dcb6274067e8fdb3a3bf17cef79.gz",
+      "final_sha256": "9543307f80131dd9ed1d6a5dd438896a3f0d7237f2d78201966449af660c0a84"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/STATE.yaml",
+      "original_sha256": "2f4398febec32a5e4732688f4ffa2601ef03bbd6d607c080b144b8b4d876f6ae",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/STATE.yaml; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/2f4398febec32a5e4732688f4ffa2601ef03bbd6d607c080b144b8b4d876f6ae.gz",
+      "final_sha256": "b26ed5dfae6110dc2a23e41466daddd90e935bd083e38327e5703925bfa8dd6e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/TRACE_GATE.md",
+      "original_sha256": "cf3216b118c22632b26d36e8caa230e69a7d2ad50ad5762d7c43af12c29e0dd8",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/TRACE_GATE.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-TRACE_GATE-f67515f6cce5b41d.md",
+      "final_sha256": "cf3216b118c22632b26d36e8caa230e69a7d2ad50ad5762d7c43af12c29e0dd8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/WRAPPER_CONTROLS.json",
+      "original_sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/WRAPPER_CONTROLS.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc.gz",
+      "final_sha256": "0e737acc79892f1a42e0aaef0c2cc3e77e2d2db602688f3ac961499873e5cc07"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/CONTROL.json",
+      "original_sha256": "353af6353b980f614675a0dea044ebfbb86e7464e90f03aee6cac3142e479b12",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/CONTROL.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/353af6353b980f614675a0dea044ebfbb86e7464e90f03aee6cac3142e479b12.gz",
+      "final_sha256": "ebeb2752d59f5de8cf7cd3a3f76b312c372249b705c147a14600a59a62e1ba00"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/HELPER_DIFF.txt",
+      "original_sha256": "0c606953899e790e8567f65b1ceac0590a95b59059f0dee1ee6e00d1f060b638",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/HELPER_DIFF.txt; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/0c606953899e790e8567f65b1ceac0590a95b59059f0dee1ee6e00d1f060b638.gz",
+      "final_sha256": "9708b92a3a813967cd2144272dc6856edec79ea7671f59b9e49e1d318693356f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/REVIEW.md",
+      "original_sha256": "a027caed8cc513908e15efe5bdef493a7f9d423ef059fb4ec0b644adf5b27eb2",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/REVIEW.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-REVIEW-e9c265c34aa8f6b7.md",
+      "final_sha256": "a027caed8cc513908e15efe5bdef493a7f9d423ef059fb4ec0b644adf5b27eb2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/READ_HASHES.json",
+      "original_sha256": "1fca417e665ba5421c36f6bdf4fba60f58aa48147c4a9581e1de9d36c9d01c0a",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/READ_HASHES.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/1fca417e665ba5421c36f6bdf4fba60f58aa48147c4a9581e1de9d36c9d01c0a.gz",
+      "final_sha256": "2b2660591eb87bb343bc93639e33cc69d185310ca59d82050afc246b01a6d343"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/RESULT.json",
+      "original_sha256": "d793683562efce83e5a6c9766a640caa19cef2abae316bc8047e4d2597cffa3a",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/RESULT.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/d793683562efce83e5a6c9766a640caa19cef2abae316bc8047e4d2597cffa3a.gz",
+      "final_sha256": "4c164c0014273cb0b95111a303c1ff3885e3c602633f8108680c94c30ffc330e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/REVIEW.md",
+      "original_sha256": "f0cd274e7f94a20096fc66f19b20350bf1c6ea27ec031d259cbfc9b100193d5d",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/REVIEW.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/f0cd274e7f94a20096fc66f19b20350bf1c6ea27ec031d259cbfc9b100193d5d.gz",
+      "final_sha256": "b1dddce0e7ea1d3fa5b52e61e069cef30104e497dbd93e775d8971631ac93d15"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/check.py",
+      "original_sha256": "ee3d9d248a2bfa3faabb260e6f9e41e6ddc8de4af424bd953d9a788043f1c097",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/check.py; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ee3d9d248a2bfa3faabb260e6f9e41e6ddc8de4af424bd953d9a788043f1c097.gz",
+      "final_sha256": "220089ac67092e10347238bc7414c5e0158777a3e72629d9a1a031a103e865b5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/DERIVATION.md",
+      "original_sha256": "cf250309a8a6ea6f760fab2a9704b9ae0bf6a674fcdd52c55e1b1fbbee5467cf",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/DERIVATION.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/cf250309a8a6ea6f760fab2a9704b9ae0bf6a674fcdd52c55e1b1fbbee5467cf.gz",
+      "final_sha256": "786cab5d9df2ead7c939ae6d895d19e790577949fb80e672508d674f799ed253"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/HASHES.json",
+      "original_sha256": "09e0de326899eb22aa6a5345e92cf2210ad186a43f5af78accdb1bfc18533757",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/HASHES.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/09e0de326899eb22aa6a5345e92cf2210ad186a43f5af78accdb1bfc18533757.gz",
+      "final_sha256": "7d924ac5b0e94424a8bd9168b553b28ef5dbc6e86c3fb706da926ff1ec72bc26"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/PREREGISTRATION.md",
+      "original_sha256": "ec51a31275855e2c1a6da4d3c0c6369d4895b2ac736ac4ca7f2986b3d9f5d602",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/PREREGISTRATION.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ec51a31275855e2c1a6da4d3c0c6369d4895b2ac736ac4ca7f2986b3d9f5d602.gz",
+      "final_sha256": "c25ebf659c80f6e3876d45d786c93b0e482f188619ac77be1f794de9e9fb51ad"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/READ_HASHES.json",
+      "original_sha256": "706dff9124c1c4ca0a0e9332f15a07a08e9dc1bf79a5caaca0326cffef8a37d5",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/READ_HASHES.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/706dff9124c1c4ca0a0e9332f15a07a08e9dc1bf79a5caaca0326cffef8a37d5.gz",
+      "final_sha256": "97763f8aaaf7300da15214b024e5357a3a8d557b13b45ff139c3490e51616301"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/REPORT.md",
+      "original_sha256": "f01eaa8753b6f620120562d8b702a713e61185f1201b015fbb3f7ee9b47807e9",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/REPORT.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/f01eaa8753b6f620120562d8b702a713e61185f1201b015fbb3f7ee9b47807e9.gz",
+      "final_sha256": "c837f486202e24892042c76853247ef457aace3741571c2aa0a945d2ab03fc39"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/RESULT.json",
+      "original_sha256": "1d28c629e3c4d548046956144789ffadadb743dac667f943e86f313578d823c4",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/RESULT.json; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/1d28c629e3c4d548046956144789ffadadb743dac667f943e86f313578d823c4.gz",
+      "final_sha256": "3164502d16ac7cf4fd4e19dbe67a0e32f53b5a3ae6fbdc41cc09ffe02b91e7e2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/STATE_READOUT_SUPPLEMENT.md",
+      "original_sha256": "71153bbaea75f2403d3817d0f89a4232b64a453035a8c4298970a91919ec3944",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/STATE_READOUT_SUPPLEMENT.md; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/71153bbaea75f2403d3817d0f89a4232b64a453035a8c4298970a91919ec3944.gz",
+      "final_sha256": "b64ddb8c6832e367ddf07c0629be4dec7aa5a58d54838e48a7426457a376eed2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/STDOUT",
+      "original_sha256": "b644708d4d6f1e772b003864ead68a14143d7c58eccadeb76fc54b3d36c8c0cb",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/STDOUT; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/b644708d4d6f1e772b003864ead68a14143d7c58eccadeb76fc54b3d36c8c0cb.gz",
+      "final_sha256": "c035403256080ec61aa16c80bea6778e658fa606f67ad761c390edaf6420f2eb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check.py",
+      "original_sha256": "93155de1d1b83f37795aaa30d17f15a7f4ca7e9d585547b3ad7cfddd141b3ec8",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check.py; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/93155de1d1b83f37795aaa30d17f15a7f4ca7e9d585547b3ad7cfddd141b3ec8.gz",
+      "final_sha256": "c85d69b9991aeb64d557396c205c60e0e192c9ee4df15cb8a3a0beb46259a791"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_L4_FIXTURE_REPAIR.py",
+      "original_sha256": "9099cf00b8ddcd46c208a5d5493457e9cb2693f86dd65bccb09e67fe76cdcf3e",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_L4_FIXTURE_REPAIR.py; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9099cf00b8ddcd46c208a5d5493457e9cb2693f86dd65bccb09e67fe76cdcf3e.gz",
+      "final_sha256": "1fb963f5c0dda10c19b80b92d444f70d03199eeba9cd9c4fddfe81bae07c60c3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_SECOND_L4_FIXTURE_REPAIR.py",
+      "original_sha256": "8bbfeaf3621212f09ee5cc7190a933f6c3fd1d2fec6ea44ff4a663bd7bd75262",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_SECOND_L4_FIXTURE_REPAIR.py; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/8bbfeaf3621212f09ee5cc7190a933f6c3fd1d2fec6ea44ff4a663bd7bd75262.gz",
+      "final_sha256": "ca5c26bd359453f73273c04de1a60f85ab8930e4ae7af58531ff7431e1569a17"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_THIRD_L4_FIXTURE_REPAIR.py",
+      "original_sha256": "cb8131b4254c49d3d15ac402a2c38bffa5f230c73e66e44f700df5df24b7b398",
+      "disposition": "Historical original proof/control/provenance fully read; exact decoded bytes preserved with each caller/path/mode distinct. No historical assessment adopted as authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:.claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_THIRD_L4_FIXTURE_REPAIR.py; exact archive manifest SHA256 81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+      "final_path": "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/cb8131b4254c49d3d15ac402a2c38bffa5f230c73e66e44f700df5df24b7b398.gz",
+      "final_sha256": "b2cc21dcbc814667a925901f49a1cc49a3d7e669afe027ddf919e800e0416c21"
+    },
+    {
+      "original_path": "docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md",
+      "original_sha256": "1472bb4c2c180e34d5cc8a9e06c21cd1c5c9c96d7b25e0e3a3f2eaf3e67c5fe9",
+      "disposition": "Canonical source/proof retained with cold-confirmed bounded packaging; mathematics unchanged. Preexecution output is original payload, to be replaced only by actual final run.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md; external original snapshot /private/tmp/review-drain-20260915/check8050/original/docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md",
+      "final_path": "docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md",
+      "final_sha256": "12d530fe984a0decf90538a49fd0992d3522ca14bcd5ffe98c0a3003b41b5d9d"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "9cecf76acd2d40bcbcbad37e94f8a917104ee47ebc8ec359a496625f9c2f6213",
+      "disposition": "Original generated citation manifest excluded for current-base integrated regeneration; not scientific authority.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:docs/audit/data/citation_graph_manifest.json; external original snapshot /private/tmp/review-drain-20260915/check8050/original/docs/audit/data/citation_graph_manifest.json",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "outputs/native_leading_ring_stoquastic_gauge_2026_09_08.json",
+      "original_sha256": "8ab5fb0a6c6f0b84d0e7639ff784503d36e998c9f8d06a66ca56a983c5caf12e",
+      "disposition": "Actual regenerated canonical output; all scientific results exactly equal frozen original, only runtime/source identities updated.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:outputs/native_leading_ring_stoquastic_gauge_2026_09_08.json; external original snapshot /private/tmp/review-drain-20260915/check8050/original/outputs/native_leading_ring_stoquastic_gauge_2026_09_08.json",
+      "final_path": "outputs/native_leading_ring_stoquastic_gauge_2026_09_08.json",
+      "final_sha256": "6ad7b125bd3334b8f30ac8c84ed8c844c72e2168f19324a11126e0e6aa706b18"
+    },
+    {
+      "original_path": "scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py",
+      "original_sha256": "525d9a0d8d34ebdadfa3afbbffaaea93cb8188428e18ee8d78183f4d12c99f29",
+      "disposition": "Canonical source/proof retained with cold-confirmed bounded packaging; mathematics unchanged. Preexecution output is original payload, to be replaced only by actual final run.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py; external original snapshot /private/tmp/review-drain-20260915/check8050/original/scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py",
+      "final_path": "scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py",
+      "final_sha256": "f8c8453028cebabbc9364473ed9e15e73b395835c1cdfcd1a68bd4f1310e7cd4"
+    },
+    {
+      "original_path": "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py",
+      "original_sha256": "6bdc6058a499554ad724e6edc71c7b93782c68569a1e53d306a8f4399c302a0d",
+      "disposition": "Canonical source/proof retained with cold-confirmed bounded packaging; mathematics unchanged. Preexecution output is original payload, to be replaced only by actual final run.",
+      "recovery": "526431a6f31e73af97b7b3d259945f0f566ed547:scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py; external original snapshot /private/tmp/review-drain-20260915/check8050/original/scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py",
+      "final_path": "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py",
+      "final_sha256": "5fd6b2b5886349d146727e1004c9ef5c5bd705107d5353e632dff76e23e65844"
+    }
+  ],
+  "final_path_sha256": {
+    "docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md": "12d530fe984a0decf90538a49fd0992d3522ca14bcd5ffe98c0a3003b41b5d9d",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/README.md": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/09e0de326899eb22aa6a5345e92cf2210ad186a43f5af78accdb1bfc18533757.gz": "7d924ac5b0e94424a8bd9168b553b28ef5dbc6e86c3fb706da926ff1ec72bc26",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/0bb8e81ea017bcb2fa90697014b54deb3332f61f9524376a5c6a7c9cd7f55ce7.gz": "f9bf049ba5ea174e995e06d5316e5203b97675409bbbb655e47340a6ef1c0809",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/0c606953899e790e8567f65b1ceac0590a95b59059f0dee1ee6e00d1f060b638.gz": "9708b92a3a813967cd2144272dc6856edec79ea7671f59b9e49e1d318693356f",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92.gz": "f7334f8926cca2a932de8afd7ff52615c9264dcdd8efc8d314d73b8ab71b37f8",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/197a9a86c8d31e34bf50a3edb947a5072e4e9c2b494e1a7b9d931c6f10d2815b.gz": "491bc25767d26c9223b2b3ea773aad59de5942d4f91a7dd84f2f5c44a1de2c55",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/1d28c629e3c4d548046956144789ffadadb743dac667f943e86f313578d823c4.gz": "3164502d16ac7cf4fd4e19dbe67a0e32f53b5a3ae6fbdc41cc09ffe02b91e7e2",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/1fca417e665ba5421c36f6bdf4fba60f58aa48147c4a9581e1de9d36c9d01c0a.gz": "2b2660591eb87bb343bc93639e33cc69d185310ca59d82050afc246b01a6d343",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/2f4398febec32a5e4732688f4ffa2601ef03bbd6d607c080b144b8b4d876f6ae.gz": "b26ed5dfae6110dc2a23e41466daddd90e935bd083e38327e5703925bfa8dd6e",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/353af6353b980f614675a0dea044ebfbb86e7464e90f03aee6cac3142e479b12.gz": "ebeb2752d59f5de8cf7cd3a3f76b312c372249b705c147a14600a59a62e1ba00",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5533acd71031897b777452fd52ac29a42a6f41de9fc747113032ce4cd270eb71.gz": "5c050b8146ebee29a27d41a45c35b404822bb711a974b7ab859274361eedb61a",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/575b48218cb39c492a3dfabf59fa2b313be5999989363ee52d0e4cb007314dfe.gz": "678a83939d4fd667adde38ccc87917832e5bd43ff1cf5683c99a6d3f9960ad5d",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88.gz": "fd48ea722d042bbab34554af8ea33db1431875d53e09a25f09d182938dcbaa58",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5c65f4d8f482ba15d10a0622661863018b5301af945b25b80038a1dfdf8f0ad1.gz": "feb6e9a5721eb40128a9693380734f987fea83030a27420a1ad6f2f46f50c66f",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/5f3e57c81d88cea35b69c69149fddff40476b8152d1805d9bc54ac3c09fc433b.gz": "965543a1694543b248ac0aef36761694adbb57ffe8f3e5864a6372ae1a838cf4",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/629a81b2cd694cb89df60022497329409914a2e0847c9a9511c9fb1a06a32199.gz": "9bf7c1e2074ba9901b1465968a1052491b446ea75ffac50d075e31f3b9f9e37b",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/6d167189011f89f39f91f00471269792e95cb1ccef14fb53208abbc530d455d8.gz": "f1b03a93964f62eef6c9d4969307279d7b9309994652a5e19bc279069495d8f1",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/706dff9124c1c4ca0a0e9332f15a07a08e9dc1bf79a5caaca0326cffef8a37d5.gz": "97763f8aaaf7300da15214b024e5357a3a8d557b13b45ff139c3490e51616301",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/71153bbaea75f2403d3817d0f89a4232b64a453035a8c4298970a91919ec3944.gz": "b64ddb8c6832e367ddf07c0629be4dec7aa5a58d54838e48a7426457a376eed2",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/716d9291a5d197bed82b34173cbc6ad63f3a58247f68cc13565113ba3432bfd0.gz": "59a16b5ec229b3200a625245aeb293f09187da151890de95bc4ccf4609fd43dc",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/8285b4894cc15fda36ea6f7f3a60fec252425ec3280d07ad1944fc29c56b1162.gz": "d59561fb07cd18335996ba749f60fec490ec9019cdaa06e0c82367469c85d242",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/8bbfeaf3621212f09ee5cc7190a933f6c3fd1d2fec6ea44ff4a663bd7bd75262.gz": "ca5c26bd359453f73273c04de1a60f85ab8930e4ae7af58531ff7431e1569a17",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9099cf00b8ddcd46c208a5d5493457e9cb2693f86dd65bccb09e67fe76cdcf3e.gz": "1fb963f5c0dda10c19b80b92d444f70d03199eeba9cd9c4fddfe81bae07c60c3",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/93155de1d1b83f37795aaa30d17f15a7f4ca7e9d585547b3ad7cfddd141b3ec8.gz": "c85d69b9991aeb64d557396c205c60e0e192c9ee4df15cb8a3a0beb46259a791",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9380d38b4c82c375b55a0e659cc0f5e109884628a3a00803a4efbdcc0e918647.gz": "14d5a6eb71ebec6e0a02cd02effcdfdd9a8057c7dab4ff825452b13a2844faef",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc.gz": "0e737acc79892f1a42e0aaef0c2cc3e77e2d2db602688f3ac961499873e5cc07",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/9bbdaa315078b0d72b5441babdac4c09e963a5a0a62195b0a9714df7f854c7f3.gz": "1452bd30cfd5c45f597bcc74d157fcc3a54ccb266f1acf636c592d0417ffc210",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/a0401f3739adda7f10d7d30610d323163183c9a9f44e116e0ad4da12c98fb928.gz": "b1eb98dfa2330e267d74c7ede33ed7072a39bb54d32a9f7039256b308b958c5b",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/a5c3468cc75030ca9aa673c20bc8bede480b9edcf4dc23f81ae7a4eb1c89de72.gz": "2d07fc663483957d57dfa719a52d9534f44a3660d72040dba66c728b0335ab7e",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/b644708d4d6f1e772b003864ead68a14143d7c58eccadeb76fc54b3d36c8c0cb.gz": "c035403256080ec61aa16c80bea6778e658fa606f67ad761c390edaf6420f2eb",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/b6b8592848017b18ee1e1e9417e76cf6843a29ae037ab414cf2e0dec629153cf.gz": "b7ee6e8af7db1d345f0f5877830ac42549b49a0aa820b1385e14874482a55dfb",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ca76e48a2f625d8177547119648f6c4cb52fa3273b935ba214dc03df60b4c473.gz": "9b2aff151935c7db77a66cc496f5a3ac810ef5082e19ad8a111753ddc291d478",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/cb8131b4254c49d3d15ac402a2c38bffa5f230c73e66e44f700df5df24b7b398.gz": "b2cc21dcbc814667a925901f49a1cc49a3d7e669afe027ddf919e800e0416c21",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/cf250309a8a6ea6f760fab2a9704b9ae0bf6a674fcdd52c55e1b1fbbee5467cf.gz": "786cab5d9df2ead7c939ae6d895d19e790577949fb80e672508d674f799ed253",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/d793683562efce83e5a6c9766a640caa19cef2abae316bc8047e4d2597cffa3a.gz": "4c164c0014273cb0b95111a303c1ff3885e3c602633f8108680c94c30ffc330e",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ec51a31275855e2c1a6da4d3c0c6369d4895b2ac736ac4ca7f2986b3d9f5d602.gz": "c25ebf659c80f6e3876d45d786c93b0e482f188619ac77be1f794de9e9fb51ad",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ecc86a8403175131ccf13d5e70145a40c6b3405cbf0e18b07bb26baf5a711def.gz": "3b67eba7f2b3465c6437dbfca7e42985a6c8149f6894d760cfb842fd28280b72",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/edc418b4fbd8a066aa42f7b7d6af96bfbd06a8ceae356e9bdaeca6cfd7152da9.gz": "90b3a39e133cb07e81b7f6b84d7a69ae2fc0e88aab4a9e132063e830ca9c77c2",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ee3d9d248a2bfa3faabb260e6f9e41e6ddc8de4af424bd953d9a788043f1c097.gz": "220089ac67092e10347238bc7414c5e0158777a3e72629d9a1a031a103e865b5",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/ee81a81a971744a4b5b94df74be65d4cb8b9332f80fce72fd2b943f2dbb184e3.gz": "5ed1d16f04462f8e4ab7fec0ae4db2e4931311c0a126ef99d4916bd5783a8b10",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/f01eaa8753b6f620120562d8b702a713e61185f1201b015fbb3f7ee9b47807e9.gz": "c837f486202e24892042c76853247ef457aace3741571c2aa0a945d2ab03fc39",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/f0cd274e7f94a20096fc66f19b20350bf1c6ea27ec031d259cbfc9b100193d5d.gz": "b1dddce0e7ea1d3fa5b52e61e069cef30104e497dbd93e775d8971631ac93d15",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/f43e9caca490a87c2fcaf1ade862f853cb33d0688720c695840250ff69f18987.gz": "24b56c03e5de7f1fc532295b57bd95c0f39182291fe72e4d641e55c3c69399ed",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/fa42c665453791d13a35901c40e32d9b64ba2dcb6274067e8fdb3a3bf17cef79.gz": "9543307f80131dd9ed1d6a5dd438896a3f0d7237f2d78201966449af660c0a84",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/_objects/fd8df13da95b41b478b25c18b281c9b4602970ea0343c51d1682b86b65d69318.gz": "4cb47917483a0c09efff75c8ffba813b5b2972e8bf40756d6ae7071a5a89ff45",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/archive-manifest.json": "81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-HANDOFF-9ef67db77ea9ef6f.md": "20f5df1c849d0c8692c1e51984c1207edd25d1e58f25a752e8ca3b45926c573e",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-REVIEW-e9c265c34aa8f6b7.md": "a027caed8cc513908e15efe5bdef493a7f9d423ef059fb4ec0b644adf5b27eb2",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-ROOT_CANONICAL_REVIEW-857933c7e06ad6ff.md": "a8baffaaaa716a7535ef9334ca8ada6637e9f52da3199f873bdedb8c262b0776",
+    "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-TRACE_GATE-f67515f6cce5b41d.md": "cf3216b118c22632b26d36e8caa230e69a7d2ad50ad5762d7c43af12c29e0dd8",
+    "logs/runner-cache/native_leading_ring_stoquastic_gauge_2026_09_08.txt": "c64330ea18ed14ff33ec3d5aec9e99277d93b02a30d26e9be02dc604c45258d6",
+    "outputs/native_leading_ring_stoquastic_gauge_2026_09_08.json": "6ad7b125bd3334b8f30ac8c84ed8c844c72e2168f19324a11126e0e6aa706b18",
+    "scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py": "f8c8453028cebabbc9364473ed9e15e73b395835c1cdfcd1a68bd4f1310e7cd4",
+    "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py": "5fd6b2b5886349d146727e1004c9ef5c5bd705107d5353e632dff76e23e65844"
+  },
+  "archive_manifest_sha256": "81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+  "independent_controls": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8050/control.json",
+      "sha256": "b2e54de0cae0e67410fdae4218a0c074c2b99d41adba86c249fa03b20aa52eec"
+    }
+  ],
+  "working_science_report": {
+    "path": "/private/tmp/review-drain-20260915/review-8050-working.md",
+    "sha256": "b3160a9dd1bf2784aca9a202e367a91df7ce4478bd5bcc19918d75d6a5ba3bcb"
+  },
+  "scope": "Full leading-H4 diagonal phase proof and L4 support boundary; no full-H or physical implementation claim. All52 archive paths historical; HANDOFF and three review references raw for provenance, plus README non-science. Current proof complete in canonical note.",
+  "source_corrections": "Cold read of entire8050-author-correction.diff confirms only metadata/static ordered wrappers/N1\u2013N8/count/history/N5/cache link; no math change.",
+  "full_pipeline_runs": 0,
+  "audit_verdict": null,
+  "source_verdict": "FINAL VERDICT: PASS",
+  "candidate": "/private/tmp/review-drain-20260915/author-pool/author-backlog",
+  "candidate_HEAD": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+  "source_inputs": {
+    "docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md": "12d530fe984a0decf90538a49fd0992d3522ca14bcd5ffe98c0a3003b41b5d9d",
+    "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e",
+    "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py": "5fd6b2b5886349d146727e1004c9ef5c5bd705107d5353e632dff76e23e65844",
+    "docs/NATIVE_SIXTH_OFFDIAGONAL_SIGN_OBSTRUCTION_NOTE_2026-09-08.md": "a5315490b08b3059a4f4f1320f70a0c3690ee3590b6b9910c1355e50278d7084"
+  },
+  "authority_inputs": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "8bb4159c34ac5ceb6cacb3e5cb7c7b7450db08a05059025cad35c7d6df107310",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_from_previously_read8121": true
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_from_previously_read8121": true
+    }
+  },
+  "parent_transitive_source_inputs": {
+    "review-8038.json": {
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+      "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e",
+      "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd",
+      "scripts/native_dynamical_cycle_dictionary_author_2026_09_08.py": "b2cafec0aee2aadee305ec2224a9abc1f247c25fea4a633a4576800ef5881914",
+      "scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py": "46d3e6a623c3609925a87b287fe2ce44165374178023e93469da5400e200cade",
+      "scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py": "7a1120377e5b45152ee8d025d517ada0bb2bc86db3ac14f5fc6c966406f23456"
+    },
+    "review-8044.json": {
+      "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+      "scripts/native_virtual_pair_fourth_2026_09_08.py": "1495920838ff7e6f60ca11bbe55d13603a0af51ccf08f98a185c173e054a4160",
+      "scripts/native_virtual_pair_sixth_local_2026_09_08.py": "0e0d84dd7579ee584e3c6704aca815f3b444525bedb87416edb4d0f334a88c0e",
+      "scripts/native_virtual_pair_sixth_global_2026_09_08.py": "5e06dfb1e6f4080da88c1ca978ad0731c4d61f1a7cbbf86ddc348fc07423f35b",
+      "scripts/native_virtual_pair_full_fourth_2026_09_08.py": "51c686e1a62122f045b3edd7367a8f9bf5c5b55838107e47baa5a5a5f9bbf2e1",
+      "scripts/native_virtual_pair_full_sixth_local_2026_09_08.py": "5f37aba466dc7d71638d49cc99fae5ebe2f0bd68672d17b553bcfc2cd5396408",
+      "scripts/native_virtual_pair_full_sixth_global_2026_09_08.py": "b7115372c415fd48b3b308c9e7e881b7f51503d0757e19cf0ac7b1cc15b94aab",
+      "scripts/native_virtual_pair_remainder_2026_09_08.py": "002f4990a82e2e94d148b4c69cc79dbd3ffbe80d671b89c1611abdccb444bee7",
+      "docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/inputs/FOUR_ICE_BACKGROUNDS.json": "893b968c6ff25569f751c767ecd2a38bce3f7a79d1bf670902b6fccf0e4af47b"
+    },
+    "review-8048.json": {
+      "docs/NATIVE_SIXTH_OFFDIAGONAL_SIGN_OBSTRUCTION_NOTE_2026-09-08.md": "a5315490b08b3059a4f4f1320f70a0c3690ee3590b6b9910c1355e50278d7084",
+      "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+      "scripts/native_sixth_coefficients_2026_09_08.py": "17b1c7386b01e3699d481100218d47ba3d72b5768d683170eddadf9558f5cea0",
+      "scripts/native_sixth_normalization_2026_09_08.py": "a0010f1e5362855693951ee60fd7f14e16825ad500edea763590ccb55b3fa697",
+      "scripts/native_sixth_l4_2026_09_08.py": "1bf5e4fbfd2b673998a8782ef8fabe408935188544d118f3efa1102017577d5f",
+      "scripts/native_sixth_l6_2026_09_08.py": "7e36b6d4d1aefc9f805caa6d1cba22e6bf3a2c6240e15b72439e06f077a989d6",
+      "scripts/native_sixth_seed_component_2026_09_08.py": "747d8367f23db2be682ca212bb668fb94a60dd529f3f758fefd2b00b68f4a93a"
+    }
+  },
+  "tool_input_sha256": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "input_fingerprint_sha256": "474d179bdc87b51da694d12c276430b82dfbda8d0e635bde569d96483d510384",
+  "execution": {
+    "receipt": "/private/tmp/review-drain-20260915/8050-author-final-execution.json",
+    "sha256": "81eae259e776ce133b3584783abaae017fc453d13abff535509dde168439eb83",
+    "elapsed_sec": 0.37166905403137207,
+    "peak_rss_mib": 22.078125,
+    "TOTAL": "PASS=6253 FAIL=0",
+    "mathematical_predicates": 6252,
+    "resource_predicates": 1,
+    "cap_sec": 180,
+    "stdout_json_equals_output": true,
+    "scientific_payload_unchanged": true
+  },
+  "claim_dispositions": {
+    "gauge": "PASS supplied W restriction, eta orientation and periodic xi holonomy give explicit all-even-torus leading coefficient identity",
+    "L4": "PASS nonzero winding support cannot be removed by diagonal gauge, shift or nonzero scale; not arbitrary-basis no-go",
+    "V0": "PASS only supplied H(0)=-A definition and same component at extents>=6; no stochastic results imported",
+    "coherence": "PASS analytical density/readout conjugation; no physical preparation or local implementation supplied",
+    "H6": "Exact reviewed8048 note identity reused only for independent negative-cycle invariant; no extension of H4 equivalence"
+  },
+  "dependency_scope": "Five actual repository parent links; own-note/helper pins are proof and source identities, not numerical payload inputs. No historical runtime input. Ice note used only for degree-three domain and H(V) definition, not numerical phase/stiffness inference.",
+  "external_math_scope": "Finite linear algebra, graph cycle classification and parity proved in note and checked independently; no external quantitative theorem or literature data imported.",
+  "current_main_preservation": "All 56 staged paths additions, corrected parents and transitive science inputs byte-identical; no generated audit authority imported.",
+  "remaining_findings": []
+}

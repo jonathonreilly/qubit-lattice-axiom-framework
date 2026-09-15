@@ -1,0 +1,14 @@
+{
+  "revision": "526431a6f31e73af97b7b3d259945f0f566ed547",
+  "prefix": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/",
+  "manifest_sha256": "81e802101ec24a2e8318d17f7aa7a3aa90fee47763e5cc481b38ee9cb82f4485",
+  "original_inventory_verified": true,
+  "count": 52,
+  "keep_raw": [
+    "HANDOFF.md",
+    "ROOT_CANONICAL_REVIEW.md",
+    "independent-canonical-review/REVIEW.md",
+    "TRACE_GATE.md"
+  ],
+  "consumer_scope": "Canonical historical HANDOFF link and its plaintext provenance references kept raw; no canonical runtime archive read."
+}

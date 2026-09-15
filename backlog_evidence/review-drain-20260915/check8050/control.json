@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "extents": [
+        4,
+        6,
+        4
+      ],
+      "edge_order": "reverse lexicographic positive-coordinate",
+      "cycles": 336,
+      "identity": "affine phase equals 1 modulo all odd-degree and cycle-alternation equations"
+    },
+    {
+      "extents": [
+        6,
+        4,
+        6
+      ],
+      "edge_order": "reverse lexicographic positive-coordinate",
+      "cycles": 468,
+      "identity": "affine phase equals 1 modulo all odd-degree and cycle-alternation equations"
+    }
+  ],
+  "scope": "Exact GF(2) affine reduction, all configurations satisfying parity and alternating-cycle constraints on two mixed tori; stronger than selected fixture controls, not a substitute for all-torus analytic proof.",
+  "seconds": 0.0469246250577271
+}

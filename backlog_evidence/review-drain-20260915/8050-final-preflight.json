@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8050",
+  "tree": "ad83060211b91e0a4431f1cd61c887fa1f5123af",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_LEADING_RING_STOQUASTIC_GAUGE_NOTE_2026-09-08.md",
+      "claim_id": "native_leading_ring_stoquastic_gauge_note_2026-09-08",
+      "primary_runner": "scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py",
+      "helpers": [
+        "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/NATIVE_SIXTH_OFFDIAGONAL_SIGN_OBSTRUCTION_NOTE_2026-09-08.md",
+        "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+        "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/work_history/repo/review_feedback/pr8050-leading-ring-evidence/kept/pr8050-HANDOFF-9ef67db77ea9ef6f.md"
+      ]
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8745,
+      "misses": 4335
+    },
+    "packet_imports": {
+      "hits": 8734,
+      "misses": 4333
+    },
+    "declared_inputs": {
+      "hits": 8771,
+      "misses": 4466
+    }
+  },
+  "record_sha256": "603fcca5c944a92baa44972f26d0991365fa6e14d4bfdbd9c17cce06594e4049",
+  "checker_sha256": "63f102930726d7aa826d76b33e4d0cc4cc0e8edaa519ce83a10470b0aa605ddf"
+}

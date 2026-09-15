@@ -1,0 +1,2075 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "31d0f3d6b8e6ea2d38f676fedbebab4564d3bb43",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/APPROACH_REGISTRY.md",
+      "raw_bytes": 1100,
+      "raw_sha256": "9584ccf1f1d16cd97c921355942a7e62597e902ef4337230e008aa3891c89ce4",
+      "stored_path": "_objects/9584ccf1f1d16cd97c921355942a7e62597e902ef4337230e008aa3891c89ce4.gz",
+      "stored_sha256": "5e116f983b2ef1e85ed222afc615a6f7542be96454a8c47499a512627149492b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1044fdba3be5b7326f0742086bc37684c128fbb3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/AUTHOR_DEVELOPMENT_REVIEW.md",
+      "raw_bytes": 6537,
+      "raw_sha256": "1fd2c9d6f1b3760f91c43dcf8563639d06da1529880e2d709b2b2accfdeb435f",
+      "stored_path": "_objects/1fd2c9d6f1b3760f91c43dcf8563639d06da1529880e2d709b2b2accfdeb435f.gz",
+      "stored_sha256": "4caa674bc6b5165bc33367ce523db1e26494876084eef4f4de329820807d41f1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/AUTHOR_RUN.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "91b5b7bd0fc4c52641178371697575b59c4fb87c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/AUTHOR_RUN.stdout",
+      "raw_bytes": 16271,
+      "raw_sha256": "ec9f2784f1e5f707777c8493a1bd2125c37b2e28f238f95fb52c5567cc4ef568",
+      "stored_path": "_objects/ec9f2784f1e5f707777c8493a1bd2125c37b2e28f238f95fb52c5567cc4ef568.gz",
+      "stored_sha256": "730a7df229073efba07fafac0ff07fec0f662bd8f133f9d629716330b7e27d47"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9287ee0c6ca8f33123e7929751179c327a60aa34",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/CANONICAL_EXECUTION.json",
+      "raw_bytes": 18616,
+      "raw_sha256": "4161b99d92f2478cec08fc8299464ed0959cad07f549f172f372b99ac0016613",
+      "stored_path": "_objects/4161b99d92f2478cec08fc8299464ed0959cad07f549f172f372b99ac0016613.gz",
+      "stored_sha256": "7e8af2fd8e6d1f072d075eafd650203539b549c52d3fb3a799c0b0c57b79a5f5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c7e05fadaa18d2027f7a3f891e3dc103812023ad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/CHANGED_EVIDENCE.json",
+      "raw_bytes": 211,
+      "raw_sha256": "eca3a29cb354685669cdce005999e01b9faf925a338c43274aa6267d8d5ccf0e",
+      "stored_path": "_objects/eca3a29cb354685669cdce005999e01b9faf925a338c43274aa6267d8d5ccf0e.gz",
+      "stored_sha256": "23ce0e95cb1b3d8a16cecc13c1b597d701a6a2f2c68425fa576090035284c753"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "656b2aa5885434917a65b8c3a04b5b616545361f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 747,
+      "raw_sha256": "84dd373fd81f1e3522f786694354f317354eb8299400590b6b3c6756934cc771",
+      "stored_path": "_objects/84dd373fd81f1e3522f786694354f317354eb8299400590b6b3c6756934cc771.gz",
+      "stored_sha256": "d38c7b3448e36609c00208fa10aeb5f4caf9ef272c0286dbc27ac211965b6208"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fccce650797b50c6d2c984774f60ffbe06584012",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/DIRECT_SOURCE_READINESS.json",
+      "raw_bytes": 254,
+      "raw_sha256": "73dcc87cf09eec1af6dc2fb8a9e7ba4ffba8f15c43b4f1ae5e4236742d298171",
+      "stored_path": "_objects/73dcc87cf09eec1af6dc2fb8a9e7ba4ffba8f15c43b4f1ae5e4236742d298171.gz",
+      "stored_sha256": "bae74640e08fef0b27e647217c8b0181d160c009f82c2e77d9fc10f1a1a2faf1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "57695874812d1a3e275a9c1c479beeaf59a94c17",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/GOAL.md",
+      "raw_bytes": 1499,
+      "raw_sha256": "42737a3fe9cf47a4dc39ffdeef2d7af92166e7d74bc8700467b63c42732b767d",
+      "stored_path": "_objects/42737a3fe9cf47a4dc39ffdeef2d7af92166e7d74bc8700467b63c42732b767d.gz",
+      "stored_sha256": "c416b8dde3e2df22a9beabfe197f11a1cbff66f9f0e1d0bc5efa2ae5772e82f0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a5edcc88d286cec69d54799341cf9d03853a9533",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/GRAPH_DELTA.json",
+      "raw_bytes": 1234,
+      "raw_sha256": "e2a42fdb32fd303f05ba86ddaad52669435302a25660befc9594155aaeff6a7a",
+      "stored_path": "_objects/e2a42fdb32fd303f05ba86ddaad52669435302a25660befc9594155aaeff6a7a.gz",
+      "stored_sha256": "9a671e10b1a5e6e9300e18a69df6209ba63abee0291cc77d890d34b3d0abed2b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "26b734a63f5d607e7d39d33338914670834da39d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/HANDOFF.md",
+      "raw_bytes": 1618,
+      "raw_sha256": "aa66cc6e5bc3a06a94e711f150ca2b954ed37ed1fbd116c91c936177fe99db87",
+      "stored_path": "_objects/aa66cc6e5bc3a06a94e711f150ca2b954ed37ed1fbd116c91c936177fe99db87.gz",
+      "stored_sha256": "44a02281dd7790b268023f3895efed77a5063a673d5e82de5c21b0d8963f7f6b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9353488a60f4ceab9e0ddbd7952e17806c9c4643",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/MECHANICAL_CHECKS.json",
+      "raw_bytes": 1016,
+      "raw_sha256": "5d97546dbce244c564d2a080630c44e12d65f80fb8e3a2e0b3ea68550828c2e6",
+      "stored_path": "_objects/5d97546dbce244c564d2a080630c44e12d65f80fb8e3a2e0b3ea68550828c2e6.gz",
+      "stored_sha256": "24f504336b27d3411e4f81ed69e4142fe374c921a1c5b8c0093edb3730eab658"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5d094cfeab502a1d7799857e4d18b5e319773032",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/MUTATIONS.json",
+      "raw_bytes": 51234,
+      "raw_sha256": "a532d74b2448e083701ee7018d75ab714eea351b37bd45c919f173f00de2db86",
+      "stored_path": "_objects/a532d74b2448e083701ee7018d75ab714eea351b37bd45c919f173f00de2db86.gz",
+      "stored_sha256": "5dbd0f72d527330fdc8412c9bd9230cec13c886345e8d723493a6d2c0a74cc77"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1f950523493c4cde2267458c085b6f0b2df5c38b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/PR_BODY.md",
+      "raw_bytes": 1930,
+      "raw_sha256": "a142c7ca5c711f273d20049497bb0a84a999ab4aa8e815bbbe5730759d3551de",
+      "stored_path": "_objects/a142c7ca5c711f273d20049497bb0a84a999ab4aa8e815bbbe5730759d3551de.gz",
+      "stored_sha256": "c333679bceddcff6af23174c2b794b0a6321534f22f4c8cb9e528d18d12f4ebe"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "604cd4b49b447b9a3ab27210d69915627fe3322d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/REVIEW_HISTORY.md",
+      "raw_bytes": 8587,
+      "raw_sha256": "3ff7ea6bd302cb08ffb2f345a375f6dacd1ac443adbdd820ca7b1d83de358443",
+      "stored_path": "kept/pr8094-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "3ff7ea6bd302cb08ffb2f345a375f6dacd1ac443adbdd820ca7b1d83de358443"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a65532ba60e60f3abe49b75f679ea1b5804068d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/STATE.yaml",
+      "raw_bytes": 795,
+      "raw_sha256": "1613504e39d5d5ad6d550dfb86baa4ac9dae86ccea334741af12951be53e7fb8",
+      "stored_path": "_objects/1613504e39d5d5ad6d550dfb86baa4ac9dae86ccea334741af12951be53e7fb8.gz",
+      "stored_sha256": "786c78e683205a048eaeeab17e67fb538bcf720a8cfe018062f83e95faf785a2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "895cc9d28c0d047d84637a66702efcbaf4364f3c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/TRACE_GATE.md",
+      "raw_bytes": 798,
+      "raw_sha256": "3abd4866b3492786700940ed097ec02ad05d4e5ae7a46f936b135323316ebd02",
+      "stored_path": "_objects/3abd4866b3492786700940ed097ec02ad05d4e5ae7a46f936b135323316ebd02.gz",
+      "stored_sha256": "2046ef23b25c7aef1864ac81dff79aa5154355b70392d1174b02135e428a0be1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/VOCAB_CHECK.txt",
+      "raw_bytes": 81,
+      "raw_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "stored_path": "_objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+      "stored_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d533ba1bfe0abfef5b5424dcdaf1bf2f4b5b6f1e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/check_mutations.py",
+      "raw_bytes": 5462,
+      "raw_sha256": "832d70ddb9a0e74a9a5532efb39f601f9186fab67d1e4c726a80ab149fe6786f",
+      "stored_path": "_objects/832d70ddb9a0e74a9a5532efb39f601f9186fab67d1e4c726a80ab149fe6786f.gz",
+      "stored_sha256": "402151875a1f1f5a061df1343939799b663be8c6b233f37ac14e2e1bd6dd1054"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "849c64ee8cc083698954c95e1f77d98834133244",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/manifest.json",
+      "raw_bytes": 1541,
+      "raw_sha256": "2178d029d6ba9300eed1ff282d12c4360eba964ef6c1f29fcfa8d58154693043",
+      "stored_path": "_objects/2178d029d6ba9300eed1ff282d12c4360eba964ef6c1f29fcfa8d58154693043.gz",
+      "stored_sha256": "fecfc249e62b9b80d06e5b54d22198cb50dbacc9b6a388d4db526d77b2d264b2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6bbb7bd4c36c9656c6f4a3e918ee72923c681eac",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "f3a3530cbc78e353da376e9e8fb97550cec0419e23700a293d35b14a78973aaa",
+      "stored_path": "_objects/f3a3530cbc78e353da376e9e8fb97550cec0419e23700a293d35b14a78973aaa.gz",
+      "stored_sha256": "116804768d132fb9ddc8d999f83e3689f54af1b7aa33d8b3185fd6092741a7b4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3bcb7868b8286dbdbb39e23414dcd448b748b91a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/stderr.gz",
+      "raw_bytes": 416,
+      "raw_sha256": "9abd8237d7bda28d8d88adb071b095e4b54c327c624a80af6e081cf209a49d68",
+      "stored_path": "_objects/9abd8237d7bda28d8d88adb071b095e4b54c327c624a80af6e081cf209a49d68.gz",
+      "stored_sha256": "8caa1de684b2efb48d4b9bd10d93fb888db7a50e483f8ba9ada47d553b2e58f8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/annulus_frequency/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/stdout.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/stderr.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d2614d730d051963a0b90493b39606dd1329b906",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/manifest.json",
+      "raw_bytes": 1604,
+      "raw_sha256": "35ab0bd9af0ef5c4951895d6faa480c93049838214a27d8eca110f42be5fd0da",
+      "stored_path": "_objects/35ab0bd9af0ef5c4951895d6faa480c93049838214a27d8eca110f42be5fd0da.gz",
+      "stored_sha256": "d07c58ccae8d7adb2090b266aa3cec4ac3dd80bb6685ddc8a9024f1c2af0484c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "20256f510e3a8fc70adbbfa9cf94e51a725cf42e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/source.py.gz",
+      "raw_bytes": 8112,
+      "raw_sha256": "bb35d074392ac6a2ba201bccc5cfa535bca090b508512b6d83680f8d7c8d01bf",
+      "stored_path": "_objects/bb35d074392ac6a2ba201bccc5cfa535bca090b508512b6d83680f8d7c8d01bf.gz",
+      "stored_sha256": "87746ec7ed4f33c738a01cfb2bcb6161ad6b98ddc633acc44f12d232cb5c09f2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "27cf8c411fd85efbd3cf3686114c995930c89674",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/connection_quadratic/stderr.gz",
+      "raw_bytes": 404,
+      "raw_sha256": "c42a8a2bcc0c1066de4a5755aafbef6f64b02a58c2be19b1d48e14495ee4e492",
+      "stored_path": "_objects/c42a8a2bcc0c1066de4a5755aafbef6f64b02a58c2be19b1d48e14495ee4e492.gz",
+      "stored_sha256": "499279068d6eae9297b6701cfcbbdb202224b44478284e6c3c9cc0448495f2ce"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80ee1c540fb1f0b04a2d8db00788dc75c3176aad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/manifest.json",
+      "raw_bytes": 1588,
+      "raw_sha256": "5b1cf60ee4fbd500005ad8e4f29c58a2e849d88a8b8d0878ad599c64a89bed55",
+      "stored_path": "_objects/5b1cf60ee4fbd500005ad8e4f29c58a2e849d88a8b8d0878ad599c64a89bed55.gz",
+      "stored_sha256": "f44fd8bee6d22dfd58a86e745bfb80f6e40b2398b649493f166c5c411db43737"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "025af07ed85fd3a785266e96d7f307522d279bcd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "0126f5383a9c723c9f7e3526fbe81c7b8fea99bf71422918d506b22ac148e6f4",
+      "stored_path": "_objects/0126f5383a9c723c9f7e3526fbe81c7b8fea99bf71422918d506b22ac148e6f4.gz",
+      "stored_sha256": "1a23e7d88b66a7c945157021066ca1f35307b42c41a29c279b89404a6bc737d7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2c39e18ac2882473728b9162565b1cd6033bdc2c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dirac_normalization/stderr.gz",
+      "raw_bytes": 414,
+      "raw_sha256": "1e14a6f94ca0377c9b28f7857e2bc576f9aa2e3b3e7eb2db2ac809d04c1a841b",
+      "stored_path": "_objects/1e14a6f94ca0377c9b28f7857e2bc576f9aa2e3b3e7eb2db2ac809d04c1a841b.gz",
+      "stored_sha256": "cbc0e202d5823836ac71b5e4bb5bf98643a92d3570f5d0f07d9f98d0347cc02a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c620a71ff349196f9458a580ac1f1a6574442b30",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/manifest.json",
+      "raw_bytes": 1588,
+      "raw_sha256": "36ec026ab6caa929f1a7cd152177dbf6bbc7e449f62f676577d5924b023dd2bc",
+      "stored_path": "_objects/36ec026ab6caa929f1a7cd152177dbf6bbc7e449f62f676577d5924b023dd2bc.gz",
+      "stored_sha256": "19b11d197141c303c81041fbe1e774860358610f1311c7899963ebb7d0936142"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f95c0b8b10523355301d2730e95d3d1e9c8426ec",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "f83cfc51c48e5624d861cfa769307e0e4687733d8c244e471cd14dc2dbd1ab80",
+      "stored_path": "_objects/f83cfc51c48e5624d861cfa769307e0e4687733d8c244e471cd14dc2dbd1ab80.gz",
+      "stored_sha256": "65a95d5138b7f6e8d9854be9ae0b51c6942f263988a056e92daf029c9bb7f592"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "54783ce19f25c39071ca72cd3e4b90ff3bc77971",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/dispersion_division/stderr.gz",
+      "raw_bytes": 420,
+      "raw_sha256": "74d24922ea7591d85e96fa132d33392d90d5acb5f6c1837268d91344bbfa8540",
+      "stored_path": "_objects/74d24922ea7591d85e96fa132d33392d90d5acb5f6c1837268d91344bbfa8540.gz",
+      "stored_sha256": "c70d5dfae6106e993dc2a913144e3ae93d061d63ab4b53d964e64c04d65dfeee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b4dc71eb85700e00520ce2f4ce0816c153264c5e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/manifest.json",
+      "raw_bytes": 1644,
+      "raw_sha256": "00e14464d8db19611aa4a610960a2a9f93aa16deb4fd6fbf17b464bba39e91e9",
+      "stored_path": "_objects/00e14464d8db19611aa4a610960a2a9f93aa16deb4fd6fbf17b464bba39e91e9.gz",
+      "stored_sha256": "43bcc8f818377fc088c13bc27f237c4cf3839b6282c4d47c1882e90c02f838ef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "94ed0720fc004ba3ae14893d16a91c494aedd2f6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "178e7fcea08a95840d5fe07190d6d1051f4bc416c58d897734a5a4a0fe81f17f",
+      "stored_path": "_objects/178e7fcea08a95840d5fe07190d6d1051f4bc416c58d897734a5a4a0fe81f17f.gz",
+      "stored_sha256": "cc18f61491f6bcf922005f433c3957b62b745091900e9650c78819c98d3d517c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "83db7167b767d366974f333cc7439220b9e8485e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_fourth_moment/stderr.gz",
+      "raw_bytes": 407,
+      "raw_sha256": "d2f3063e44393993f53e563e774b284cdc08e8ed2a2311648b94848b4f5eb2d6",
+      "stored_path": "_objects/d2f3063e44393993f53e563e774b284cdc08e8ed2a2311648b94848b4f5eb2d6.gz",
+      "stored_sha256": "19ab510d8216fcf817ee44e1668bef21b7f22d36bcc598c24fab83271e16a328"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1946413fb161422179f8e85de4dff15e3eb402a4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/manifest.json",
+      "raw_bytes": 1583,
+      "raw_sha256": "39784218a1cdc5096528a50dcb8d9f97eb862239d9025a0bf7d872c87cc5e792",
+      "stored_path": "_objects/39784218a1cdc5096528a50dcb8d9f97eb862239d9025a0bf7d872c87cc5e792.gz",
+      "stored_sha256": "c8812d81b11c92d82058e0678e0027c7b5b6944acdcddbf7edc188d88fa5dbb1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "125addbaa6915ae9d206410e626fcbcb5cf2a567",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "a10539013e75cc9b37e56a9d49850980b29897f1d7a70a79c0fb5c1e5c9a34b1",
+      "stored_path": "_objects/a10539013e75cc9b37e56a9d49850980b29897f1d7a70a79c0fb5c1e5c9a34b1.gz",
+      "stored_sha256": "63bf01951ec8b5127137c3a272273e24deea0de7986eea80c5d9658dc942b83b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "24bcf05ad101fffd3a79b9c86fce043615e78a6f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/ellipsoid_measure/stderr.gz",
+      "raw_bytes": 417,
+      "raw_sha256": "ce552aeebf4b3c2472d8229789af2b2ed8bd593dae9705b966c526a163848a01",
+      "stored_path": "_objects/ce552aeebf4b3c2472d8229789af2b2ed8bd593dae9705b966c526a163848a01.gz",
+      "stored_sha256": "bb793838b31598d1009e9bd094bec7cf0a05edf1caa4f027ce606c3a6e2f8466"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0c14607425c49d9178d9fb573d3e653e3541ad7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/manifest.json",
+      "raw_bytes": 1627,
+      "raw_sha256": "858f87d63b2af00fa64521b4b0259cf5e0f28dd5cfd5c15f7345e72a36576b79",
+      "stored_path": "_objects/858f87d63b2af00fa64521b4b0259cf5e0f28dd5cfd5c15f7345e72a36576b79.gz",
+      "stored_sha256": "0cb2ceb02af1f93f076f211bb026782b8d34e9ec4e6fee9eb9bb06a23253358f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "896269c053b9a14fd7d3abc6b6a3c172b3522d83",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/source.py.gz",
+      "raw_bytes": 8108,
+      "raw_sha256": "500692c3b95bb131b01d12abd155812a8f4990dc9bdad21b50653a02d1faef3c",
+      "stored_path": "_objects/500692c3b95bb131b01d12abd155812a8f4990dc9bdad21b50653a02d1faef3c.gz",
+      "stored_sha256": "aa71ad6c88f0dc701dead4602d9b87bb19319a9c530b902da458845cec4a2c09"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7b869c31bf5360818c91b39f1c391095d464eb55",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/fierz_pauli_divergence/stderr.gz",
+      "raw_bytes": 417,
+      "raw_sha256": "722fdaf8ca848274ac2cb84156eed2487f18c4d759f86ef924842a73dad6f2ba",
+      "stored_path": "_objects/722fdaf8ca848274ac2cb84156eed2487f18c4d759f86ef924842a73dad6f2ba.gz",
+      "stored_sha256": "bd8e8307d3f5c68d11da4c822934b0861e684a1779267467f32e504c971f4799"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a5f68bee61f17ec950cb42c57b81c1f70019d23a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/manifest.json",
+      "raw_bytes": 1671,
+      "raw_sha256": "78f3b2d0d4151e06407262689f89863be7925ae363e558a37bd29c5faffa0320",
+      "stored_path": "_objects/78f3b2d0d4151e06407262689f89863be7925ae363e558a37bd29c5faffa0320.gz",
+      "stored_sha256": "69e365832fe3740daaa83aa47b61f57f514515b3b34bdd8cb7c47fe315d0c96d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d2e091466393699fb5470b5fe460032082bbb1a0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/source.py.gz",
+      "raw_bytes": 8108,
+      "raw_sha256": "1643196f1a7d1f95c91d58a4a3381019830fb72935b231c08ce02a6ef71f8683",
+      "stored_path": "_objects/1643196f1a7d1f95c91d58a4a3381019830fb72935b231c08ce02a6ef71f8683.gz",
+      "stored_sha256": "c0f05c928d1eb3bfe6231373e047217aab655be2a716e9d7364d1752d11cf41a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "62fcdf85a9b7b9090203137a64949a5e4ea35f9f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_contact_scale/stderr.gz",
+      "raw_bytes": 431,
+      "raw_sha256": "06a0ab15e176fdea421a3797381bb745db82123603f011858efab96f0b8cffbe",
+      "stored_path": "_objects/06a0ab15e176fdea421a3797381bb745db82123603f011858efab96f0b8cffbe.gz",
+      "stored_sha256": "2bc59a1fde0e3770caa79d1d7dcb87f8dea6a7f83009ac660b3ee694ce5d71b5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cd891a1e05cacb9c14e5954df8dd2a72d638a3f9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/manifest.json",
+      "raw_bytes": 1707,
+      "raw_sha256": "7a16de298aa0017342af964586ab857caf0b6aeae48fd85da4a937c3fa9f8b59",
+      "stored_path": "_objects/7a16de298aa0017342af964586ab857caf0b6aeae48fd85da4a937c3fa9f8b59.gz",
+      "stored_sha256": "9d77264f7bedb84f9705591138097eee1528cc1804f7e04ff84e134e15308ac4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "682e7802e4b146785c18bb91e203a56515e4a8d1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/source.py.gz",
+      "raw_bytes": 8112,
+      "raw_sha256": "bc37e49804aec193ca1b1527abaddeafb4d9a0bfd3435b647bd11768bd08105d",
+      "stored_path": "_objects/bc37e49804aec193ca1b1527abaddeafb4d9a0bfd3435b647bd11768bd08105d.gz",
+      "stored_sha256": "0de1d04579631e948266ba3b203944874600775bf1c9dc442235e15678fadfe5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6af60fed8e5ab92a956e5fd159d340ca090446e3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/finite_frequency/stderr.gz",
+      "raw_bytes": 455,
+      "raw_sha256": "a206c7060e8297056045ff23bd30bcf3f4e56665b0e28088468c88211d4e099f",
+      "stored_path": "_objects/a206c7060e8297056045ff23bd30bcf3f4e56665b0e28088468c88211d4e099f.gz",
+      "stored_sha256": "19b3b3a48c5ca000f71bd30b24958021b24339671376510f7ffadba1d4e0712d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8eb0d5f76f277857241c62918b94f145dcf6b0ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/manifest.json",
+      "raw_bytes": 1568,
+      "raw_sha256": "6636ef5f09bbefa4686ea21a21593cfd6d388157b187e3a4bc9a2bab0fa83553",
+      "stored_path": "_objects/6636ef5f09bbefa4686ea21a21593cfd6d388157b187e3a4bc9a2bab0fa83553.gz",
+      "stored_sha256": "d696c19c232684c391b8b4ab8fffd925c8bdc52abd7365941e7e331668aaa136"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "42f8bdabcdabc017368ffe039f2e380ab30a0e29",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "dfdbdaa0c13bb956a6a9464b8aa4dd2e2bf8668d17958f53471efdc756f94cb2",
+      "stored_path": "_objects/dfdbdaa0c13bb956a6a9464b8aa4dd2e2bf8668d17958f53471efdc756f94cb2.gz",
+      "stored_sha256": "46d30fac64ca2d81d3767b6fc5790abfa38784ec465312cb331417f0ee96ffaf"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9d7684580f64df23172d5fbdf57b7db73dc2dafe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/frame_jet/stderr.gz",
+      "raw_bytes": 418,
+      "raw_sha256": "decfc25d1de9be6731960d2783a72a17b705bdd577506aa24d75a046f1ae492b",
+      "stored_path": "_objects/decfc25d1de9be6731960d2783a72a17b705bdd577506aa24d75a046f1ae492b.gz",
+      "stored_sha256": "bebf81fda0954481bc6f412fbb7d2fd66d65fee9016b2a7ab95c4990ece1dd93"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fd0a34976a3b5f8480f4a0161d1caf7e95373c9b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/manifest.json",
+      "raw_bytes": 1398,
+      "raw_sha256": "555e8ba570bf12a9507d92abc4cb93507c66285262badb60f043ccba557dfc15",
+      "stored_path": "_objects/555e8ba570bf12a9507d92abc4cb93507c66285262badb60f043ccba557dfc15.gz",
+      "stored_sha256": "a0627ace0a28028dfe99973251e44aa364ebfcb3bc03f46e20dd63590e8b97db"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1994f5d672d1df9dca511629bb3a98aff10a54fe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/source.py.gz",
+      "raw_bytes": 8108,
+      "raw_sha256": "f93927d42bcb66438edcd97e121b73b028ad14a469997a64c70af42ffa06e176",
+      "stored_path": "_objects/f93927d42bcb66438edcd97e121b73b028ad14a469997a64c70af42ffa06e176.gz",
+      "stored_sha256": "e09c65eb249773f7fd995f622fdaf80bef0c450d9a1e0a2b4753b472b7439e11"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "547f3d7874c4db2a9f9cf4ac6070ba0121fe844d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_mixed_contact/stderr.gz",
+      "raw_bytes": 416,
+      "raw_sha256": "0651d9b8ee08f9b3df11b1fbdd5a1aeb585a9da928a685b5f1dcf237e72d0226",
+      "stored_path": "_objects/0651d9b8ee08f9b3df11b1fbdd5a1aeb585a9da928a685b5f1dcf237e72d0226.gz",
+      "stored_sha256": "08365e90f8a179ee2682b1baebe019c5fec000baa1cce3f2550652a1725fdfbd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2182b70c265df981d431c979747e5b58ebfacdf9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/manifest.json",
+      "raw_bytes": 1572,
+      "raw_sha256": "2fe8cc57418f688822c9603bb405ad0b59e0c566bff9453d4bcda8d7ba0ccccf",
+      "stored_path": "_objects/2fe8cc57418f688822c9603bb405ad0b59e0c566bff9453d4bcda8d7ba0ccccf.gz",
+      "stored_sha256": "dd09edff1efd6d44827ef381e240f19637303d05f25fe7fea32d706e39e5369a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8c42636901c372b935fdec1b6ae5d4474464eaad",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "1a7bc901ee2365cead5523566f62c91fa8ba7efe274fa9ecdb5c51a425ffa050",
+      "stored_path": "_objects/1a7bc901ee2365cead5523566f62c91fa8ba7efe274fa9ecdb5c51a425ffa050.gz",
+      "stored_sha256": "bee85b0c9b0b48096f89d3355c0a0440f86e75d681711761f9af25ab30a2d650"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d8b56ab140130d0d2041c2c640207a00297f05f5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/geometric_scalar/stderr.gz",
+      "raw_bytes": 406,
+      "raw_sha256": "cd1bf03d153ea4addf6835797ac58901c9633caa887f24375918811e00535605",
+      "stored_path": "_objects/cd1bf03d153ea4addf6835797ac58901c9633caa887f24375918811e00535605.gz",
+      "stored_sha256": "fdc607243da1f86498797445b9c2e80681c06b91f87887c40b1cf28a197d2aef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9fd655852d2cd72e48ea894f149295f8f199d210",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/manifest.json",
+      "raw_bytes": 1663,
+      "raw_sha256": "73818416acc21a339883b5a0708b39709b121ec0b23a5ca4b6cdc4f6d34ea7d8",
+      "stored_path": "_objects/73818416acc21a339883b5a0708b39709b121ec0b23a5ca4b6cdc4f6d34ea7d8.gz",
+      "stored_sha256": "9f74a09d50c469b659c8ada4fe2b9bd350f6da0519aeb22c5eb48df83a78ccdb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0d9b50d4373e6217366e2a3cb82d37957bd213e7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/source.py.gz",
+      "raw_bytes": 8108,
+      "raw_sha256": "528d646c335e45dffcf531c64de316aa0194358823993ac259fd81c762b429a8",
+      "stored_path": "_objects/528d646c335e45dffcf531c64de316aa0194358823993ac259fd81c762b429a8.gz",
+      "stored_sha256": "3fa54d83cf678fd5d0cb4f6718564c4312a4a3d9d0dac2db42d103129489ba50"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "147f479c1510b38921b2c81209e367e16c63cab7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/imaginary_hopping/stderr.gz",
+      "raw_bytes": 432,
+      "raw_sha256": "c5e4ed0143fbfe8800db83809c197bc654f64a0cd507c3aee0fb9420d2bd478d",
+      "stored_path": "_objects/c5e4ed0143fbfe8800db83809c197bc654f64a0cd507c3aee0fb9420d2bd478d.gz",
+      "stored_sha256": "68bc91aa57e5e54e739da3bb8cef5ff7c8dd4f9607a7322a1c524ac0dbdaa4ee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d2cfd56be019a3f1804067d312abc39b54ad4fdb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/manifest.json",
+      "raw_bytes": 1771,
+      "raw_sha256": "fe50c2c5ca6603d92de9e25339002b8e6645245e5050354e43bf95fab5df2d20",
+      "stored_path": "_objects/fe50c2c5ca6603d92de9e25339002b8e6645245e5050354e43bf95fab5df2d20.gz",
+      "stored_sha256": "ffceac8f9ba8505d327eee7d4cffc048c8a6e797cb3fc24bc327992ef5d78ffd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ed5c3dcbbf102037b9a91cc5db800c9599c48584",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/source.py.gz",
+      "raw_bytes": 8111,
+      "raw_sha256": "06e5f4c4782d1b8c8b7af7b033a47d8086428683b758bc56d55f051502efa47f",
+      "stored_path": "_objects/06e5f4c4782d1b8c8b7af7b033a47d8086428683b758bc56d55f051502efa47f.gz",
+      "stored_sha256": "b375371ee22f3f185933c715a999445c63deed8e5b132525489581ac9d322efc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "051975f3ba8ed3f6897735726fba50362311536f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/joint_hamiltonian_contact/stderr.gz",
+      "raw_bytes": 481,
+      "raw_sha256": "c2050478d2c61133a6b4339452fce9301e6dcb122c28208f72983c6d091cc37c",
+      "stored_path": "_objects/c2050478d2c61133a6b4339452fce9301e6dcb122c28208f72983c6d091cc37c.gz",
+      "stored_sha256": "ff9bf5cadbc306f13928dcfa50cb674d6759251ab4394907abd148c79a12255b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "430b3b5b5f0e8ecff513bfd11470eb0ab466b811",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/manifest.json",
+      "raw_bytes": 1774,
+      "raw_sha256": "4771afe51b1629074fbb593c56183d8c783c896947326879b5e3912816dab76d",
+      "stored_path": "_objects/4771afe51b1629074fbb593c56183d8c783c896947326879b5e3912816dab76d.gz",
+      "stored_sha256": "354890f68f631c0e2f2c0f366370976f728e9e1fe88f0650a2e78e75c9767da9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "002cc1dd35a0aba2c20948c9b60ca6dd15299534",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "165ff14e7fb44f4c990470e082f2ff2c3723cb4011e2eb46953b0689e042b1ec",
+      "stored_path": "_objects/165ff14e7fb44f4c990470e082f2ff2c3723cb4011e2eb46953b0689e042b1ec.gz",
+      "stored_sha256": "91ee2c38ad5035f2069bc23907dd0a745ea15b22189b77389b9220fe3bbb3972"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1c3ff4cb7e4993c3d3f203906b3796257ab5fa15",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/koszul_sign/stderr.gz",
+      "raw_bytes": 450,
+      "raw_sha256": "9dd77f91ecf573bbededd615abdf33f54e27c29ca60e847ab7001c7f0827fe4d",
+      "stored_path": "_objects/9dd77f91ecf573bbededd615abdf33f54e27c29ca60e847ab7001c7f0827fe4d.gz",
+      "stored_sha256": "ba71fb15257001247d13671515c1e9ff9c0eb09d794dbfb698a35089786118ce"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "89571e2718e1bbdb6b3479afba8884943bfd36d4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/manifest.json",
+      "raw_bytes": 1726,
+      "raw_sha256": "f3b1593d818919993a86e5032a5c7213b0eebd96a8e84c1f7f5a26c2532ba19e",
+      "stored_path": "_objects/f3b1593d818919993a86e5032a5c7213b0eebd96a8e84c1f7f5a26c2532ba19e.gz",
+      "stored_sha256": "8642b4de8bffd33a47699c36486708106b14593d5e45b7c90c4fcf54b9873756"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f9b0d4ed85b7237ee7befef9608c692ff65736a3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "2be307654529a10c447fa60327b8e93b646aabd6d58024f2be5a3ebbbc1c6cf9",
+      "stored_path": "_objects/2be307654529a10c447fa60327b8e93b646aabd6d58024f2be5a3ebbbc1c6cf9.gz",
+      "stored_sha256": "b662c7f7b0103d68501472f0b6f449389a5b6785d2b6ac61357ae0008af5ef03"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "03e6f590a8a26fd18d4a217feddba2aa0b876d92",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/mixed_lapse_contact/stderr.gz",
+      "raw_bytes": 454,
+      "raw_sha256": "952a4b0ad0ddb4dc7d64d961308858c8d227d18d0724623c6626c7cd92e5f206",
+      "stored_path": "_objects/952a4b0ad0ddb4dc7d64d961308858c8d227d18d0724623c6626c7cd92e5f206.gz",
+      "stored_sha256": "5fce8532872b91745a95a00715b0c77f2be8adf68071ec66de610b8b9109fc7f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fab0b4f88c0aee1b9c22c7c9eb4ab64f40d618b1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/manifest.json",
+      "raw_bytes": 1606,
+      "raw_sha256": "6767f032d8fbe38904dd6fc4fc7de69c7cfd997ba4930b383a921bdc8fd01555",
+      "stored_path": "_objects/6767f032d8fbe38904dd6fc4fc7de69c7cfd997ba4930b383a921bdc8fd01555.gz",
+      "stored_sha256": "4599c563ba295a5ee7ca7b957a738ea9748c699bb026f9f95a7dec060db56cad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9439ebcfbd0dbf5b94df87de4db8038a26db0f2a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/source.py.gz",
+      "raw_bytes": 8111,
+      "raw_sha256": "1b12b62b315da83fc0ea81ed3d6096d7296e8434c3160477e14f6c258562dec2",
+      "stored_path": "_objects/1b12b62b315da83fc0ea81ed3d6096d7296e8434c3160477e14f6c258562dec2.gz",
+      "stored_sha256": "14494ffd0cfdc928721b1aa01103c5ae7687d59acceaf8b9826bfcfd547670a9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "00fca6b663705581feec358d68f28cf90a6f0332",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_density_contact/stderr.gz",
+      "raw_bytes": 422,
+      "raw_sha256": "ad5fa5335166be99a53aaf11a95dfc189fabe81f62be20bfbf6d09b03a02a2f7",
+      "stored_path": "_objects/ad5fa5335166be99a53aaf11a95dfc189fabe81f62be20bfbf6d09b03a02a2f7.gz",
+      "stored_sha256": "ad4aef1a4726622c6b4f1e773122317b8ac37ed356dfd230f920d2a767e991b3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a3c3bbc9e01e4ed8e9a9ed445ab39a393bccede",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/manifest.json",
+      "raw_bytes": 1652,
+      "raw_sha256": "d0b0d9414d7d8e4817a50a21819925b18f3def9ba3cf45f7ad09120bb7221a59",
+      "stored_path": "_objects/d0b0d9414d7d8e4817a50a21819925b18f3def9ba3cf45f7ad09120bb7221a59.gz",
+      "stored_sha256": "aff3db38ababa198f73130bfad6ab2b65f21560ea1eeabb2888d2d9966de99b1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5a4bb211ba2543448d69307740713e6e77633a35",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "b515d8239553be54db98e5049753bfe8d432f4ecacaac80c38703871a6278bf8",
+      "stored_path": "_objects/b515d8239553be54db98e5049753bfe8d432f4ecacaac80c38703871a6278bf8.gz",
+      "stored_sha256": "104d9d5dfa34a6582128948b654a3d4487f80b11f08e66fb606e3aab68c04adc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "435f082bdb91cbedf4b754e95c12c2e191ae3894",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_finite_vertex/stderr.gz",
+      "raw_bytes": 453,
+      "raw_sha256": "47f185fe2e2f73ab443746b6b06ec43eadeff6d4e82089ae4db2862dd07510e6",
+      "stored_path": "_objects/47f185fe2e2f73ab443746b6b06ec43eadeff6d4e82089ae4db2862dd07510e6.gz",
+      "stored_sha256": "7fad60b7c685a1e9bfb83959b34ff26ee4d0825b5b967276bc51f633b29815c4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "60c338a17ebc1a1e6ef7d6e455f41a06c603a5c0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/manifest.json",
+      "raw_bytes": 1509,
+      "raw_sha256": "53d8132b5ad9e0077a8f6fcf0bcd316d0a957deb7852909dd1d85b828a50090e",
+      "stored_path": "_objects/53d8132b5ad9e0077a8f6fcf0bcd316d0a957deb7852909dd1d85b828a50090e.gz",
+      "stored_sha256": "87fb39e0e4113e33ecee45e12a442754150eaab76a7a1f902ed7b837ebf3739c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "78cdf36d6ab3963ebe0b2fa1b80f78cc85568a92",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "f3c5e597076bd2f1e288b833a676a5023fa678bb6c577d6d97b7e501db3d3c51",
+      "stored_path": "_objects/f3c5e597076bd2f1e288b833a676a5023fa678bb6c577d6d97b7e501db3d3c51.gz",
+      "stored_sha256": "94c88107d69870bc056cc3662bc0d46f0efef2d9cf90522a5ac99b4ee8162dc2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f5736f430266ccf1cafd17185bb37c5434d4186f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/native_nodes/stderr.gz",
+      "raw_bytes": 400,
+      "raw_sha256": "207c8166e97e9ac827b0c2f353ea52af9f7c8f8de2017bafa25afb8d24cd4e8f",
+      "stored_path": "_objects/207c8166e97e9ac827b0c2f353ea52af9f7c8f8de2017bafa25afb8d24cd4e8f.gz",
+      "stored_sha256": "3cf04b888d930e67ed13b86ed89d8b7668d622415e7450bb803874b7ba91163d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4537de97c5d6d64fd2ffd2eac0e2fb398e2281ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/manifest.json",
+      "raw_bytes": 1598,
+      "raw_sha256": "b70dfc9f797ae751c9bc96b8a428e2c951c2f422427deb70580873ea79030a27",
+      "stored_path": "_objects/b70dfc9f797ae751c9bc96b8a428e2c951c2f422427deb70580873ea79030a27.gz",
+      "stored_sha256": "cb0acc162580c74725dd1e33f3bdf05be5bcf5cd967e72908b33ed50454d9507"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "cc5f031c57d2ea6d589aa2293587c81a37e5facb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "f8cee5a961ce97f815eaa7579b6dfc206c0898158bddfdbadc60a356b2c7abf3",
+      "stored_path": "_objects/f8cee5a961ce97f815eaa7579b6dfc206c0898158bddfdbadc60a356b2c7abf3.gz",
+      "stored_sha256": "c333b016427f10d151dd2455e7d1be6820bdaecd23b68f6b60100914774baceb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "28f7eac9dacc07233ce7a6c7c3b5e355651ae45f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/node_multiplicity/stderr.gz",
+      "raw_bytes": 418,
+      "raw_sha256": "5986c7c6996b9a4d39908e381e35cf271f690c6f1ea22fde565705b5af94ab7f",
+      "stored_path": "_objects/5986c7c6996b9a4d39908e381e35cf271f690c6f1ea22fde565705b5af94ab7f.gz",
+      "stored_sha256": "e9505a3f6977ba600c06295bccbdb5085fb3142288c1f5695222dfe3116603d4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "da7f16439c465f01af50e1b3ee1332adfb86921c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/manifest.json",
+      "raw_bytes": 1572,
+      "raw_sha256": "5b1c23ebba520b27f7cd52dd6d58713286428253aef0474ba88540a6dae7a560",
+      "stored_path": "_objects/5b1c23ebba520b27f7cd52dd6d58713286428253aef0474ba88540a6dae7a560.gz",
+      "stored_sha256": "6bb00f4560f4e06680ee428e2a0359220166bf059f65436b24152416b1511a4a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3b5cdf28519930194fa108839bb16b3d3d02bd01",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/source.py.gz",
+      "raw_bytes": 8090,
+      "raw_sha256": "f5c28373242ba7521dec0412671e1ffbbcd10ab86dbed264d718d975b806e4e9",
+      "stored_path": "_objects/f5c28373242ba7521dec0412671e1ffbbcd10ab86dbed264d718d975b806e4e9.gz",
+      "stored_sha256": "445723a3cc6aee3bee3b75c94f4b00714252874e148b1a779a8f20e291bf394a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "158ecf13145e9b2109c5c1ec11fbc14bab89503d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/occupation_sign/stderr.gz",
+      "raw_bytes": 422,
+      "raw_sha256": "b30887683ede5be619547cde2d0ef8216cd06c90ae1d231c78c86e975cbe0a6e",
+      "stored_path": "_objects/b30887683ede5be619547cde2d0ef8216cd06c90ae1d231c78c86e975cbe0a6e.gz",
+      "stored_sha256": "68b67e0ac60496ec39fc899bdd7576848cd1fce98a580d7487b75f6f82746ae6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "595e3023f22ad47561a289fedc69665b3f94a8e9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/manifest.json",
+      "raw_bytes": 1584,
+      "raw_sha256": "e70cae1c575e7350f0f2d6b41ed45af00598fceae58b77facd062747c70cd63d",
+      "stored_path": "_objects/e70cae1c575e7350f0f2d6b41ed45af00598fceae58b77facd062747c70cd63d.gz",
+      "stored_sha256": "71b13106cbb1680f0ae4265aee9d4290c3e8d58a0f05d8ce57d20c264c146022"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bba53e3767a23a354db9a22337b3bdd3268927c2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/source.py.gz",
+      "raw_bytes": 8106,
+      "raw_sha256": "a700187aa27300407f2fd63439319b86d019b0a36543149c9b15ab72cd5e4013",
+      "stored_path": "_objects/a700187aa27300407f2fd63439319b86d019b0a36543149c9b15ab72cd5e4013.gz",
+      "stored_sha256": "b3ed6dd74a36004fb0d3345baf46d704a722252d455e2211531bb846023f714e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7655026c5f1579d8d68edfd887dda7ba6a90fc6b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/one_particle_scale/stderr.gz",
+      "raw_bytes": 409,
+      "raw_sha256": "7fe1b43d25b98afd7b0e5495415dddc2d85d3eae2d6045ee3b11189c64e7d962",
+      "stored_path": "_objects/7fe1b43d25b98afd7b0e5495415dddc2d85d3eae2d6045ee3b11189c64e7d962.gz",
+      "stored_sha256": "bb3afc7ec61d3766e3801e62061e0d7d788cb7f1d03bb93d367d09b5bfd798e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e89a5ea11ecf4441b33854f8988c75e24d9c6b7e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/manifest.json",
+      "raw_bytes": 1597,
+      "raw_sha256": "d6ee6fd565b522e2d5b94acc7a38ee79571cee8165a4800b605d607c8237bca8",
+      "stored_path": "_objects/d6ee6fd565b522e2d5b94acc7a38ee79571cee8165a4800b605d607c8237bca8.gz",
+      "stored_sha256": "7dece5264b43a989718396528407ed2713f8cc18a4dee72a46aea05763dcf23a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ec1e9e8048bdbe7ae98429c6936263c5bcb47eac",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/source.py.gz",
+      "raw_bytes": 8111,
+      "raw_sha256": "9387887c22a9866ec693ef519a4f20d4a00d1904eedae1a1e73d3d498a326c63",
+      "stored_path": "_objects/9387887c22a9866ec693ef519a4f20d4a00d1904eedae1a1e73d3d498a326c63.gz",
+      "stored_sha256": "9b4370d0b1b3ae1aa170c1b1f5aedf864c5834afcd5f8684aa4c143d4d2d8458"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f23a00b61e77385a29a14cc0ab97c570748fca76",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pair_shell/stderr.gz",
+      "raw_bytes": 453,
+      "raw_sha256": "013ffd1012aad08758acec321748e01ed0079647cbc62fe07823c577764c4daf",
+      "stored_path": "_objects/013ffd1012aad08758acec321748e01ed0079647cbc62fe07823c577764c4daf.gz",
+      "stored_sha256": "68a0244aac20623b2351ac97230bb3e38250fda2c26ac6a39344f55ba377968a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e360608525d11374bb72c79e33bebda441ce108f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/manifest.json",
+      "raw_bytes": 1575,
+      "raw_sha256": "c960079e831b6d0cbc993dd7a32a55cb25d9b8f0a4ad34cf3590befad78ec5b4",
+      "stored_path": "_objects/c960079e831b6d0cbc993dd7a32a55cb25d9b8f0a4ad34cf3590befad78ec5b4.gz",
+      "stored_sha256": "9f7a3b81cc097d1d6a176352ad6f4167eae205c3ba78f730ef1117669deade22"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "44f9777333022f9eaea2cbf3be2744350c96391f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "9bd6e6c5764131a81a4e5ed403bc4a66cac25e0cacf239d4072ef30963321ddc",
+      "stored_path": "_objects/9bd6e6c5764131a81a4e5ed403bc4a66cac25e0cacf239d4072ef30963321ddc.gz",
+      "stored_sha256": "7d006e5b7dcd2d17597ea94d6d76fde9720e17e242395d13195dded512e52f6c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4d24014e0c72726f338b4691cdc9a78b9d3fd245",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_phase/stderr.gz",
+      "raw_bytes": 420,
+      "raw_sha256": "8cf32947d11d294e204fa62d7211f8f77d359d6a4d5275afa93457e600e38209",
+      "stored_path": "_objects/8cf32947d11d294e204fa62d7211f8f77d359d6a4d5275afa93457e600e38209.gz",
+      "stored_sha256": "071979de81d82e59180599565a77a18f9a92ee0aa7603df3623a6652b8808fa6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5e8f117c4d629f35e8b5f5e0be8399cd768d95e4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/manifest.json",
+      "raw_bytes": 1352,
+      "raw_sha256": "8bcbf344709bbbc2f9ec7c1065c85d3ba2bf4ed8d9964690f44b3dac81471a2a",
+      "stored_path": "_objects/8bcbf344709bbbc2f9ec7c1065c85d3ba2bf4ed8d9964690f44b3dac81471a2a.gz",
+      "stored_sha256": "c0c0b40531415758c88ac2c22a5bd12990ab2c007ced07f9a2d12560e1c8b987"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6f71ed212fb280939f68ffee547899548a812ebd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "f1fbe9758d487a1b2519885e854f349d2fe6c42191ecc41421f405a2b0a32743",
+      "stored_path": "_objects/f1fbe9758d487a1b2519885e854f349d2fe6c42191ecc41421f405a2b0a32743.gz",
+      "stored_sha256": "de8bf646bc4df7f612aa2223a910fda305c40666a7baa80d635c662e9dfe8705"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "992f58f0dcdd359a3d9d018c6703d717fa81f6e8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/path_range/stderr.gz",
+      "raw_bytes": 393,
+      "raw_sha256": "7a4eb14e417ded72c0c3be5570778e1452d336ccec7bf020baaee2623a5f4601",
+      "stored_path": "_objects/7a4eb14e417ded72c0c3be5570778e1452d336ccec7bf020baaee2623a5f4601.gz",
+      "stored_sha256": "2833926c97cb96ab416835597517088a41822241c9ecf76171bef04a87c8c4a0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "25deaf6fdf6ed18946792a6580fcf6be332637ab",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/manifest.json",
+      "raw_bytes": 1623,
+      "raw_sha256": "6ae0e64c3a3e3a17490e0a64c9da666c06ecc6c6fe366fb7f3545822bd171654",
+      "stored_path": "_objects/6ae0e64c3a3e3a17490e0a64c9da666c06ecc6c6fe366fb7f3545822bd171654.gz",
+      "stored_sha256": "8fd61e36ef4e8269d7448ba1f6897ca9e4885a68e4889bc12490b289da4d2f6f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9cf9208002fbd1feca49b99ba749e90ad756e8d7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/source.py.gz",
+      "raw_bytes": 8109,
+      "raw_sha256": "6f035f47f71c194aa86c23040efd9d9e3dfacfb21f3ec282ae7f1a9178c40df2",
+      "stored_path": "_objects/6f035f47f71c194aa86c23040efd9d9e3dfacfb21f3ec282ae7f1a9178c40df2.gz",
+      "stored_sha256": "a2a406f5553be266c27672cbcca8de076db957fbafeb594f41d5657fd7917341"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "36ff3bc21c0ce38fd4dc5341f6b1457e1d8c96a3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_imaginary/stderr.gz",
+      "raw_bytes": 424,
+      "raw_sha256": "7a811fac02ca948cf878cb6c85a444d1e4b5687d8b0840df3306cd491a6c8635",
+      "stored_path": "_objects/7a811fac02ca948cf878cb6c85a444d1e4b5687d8b0840df3306cd491a6c8635.gz",
+      "stored_sha256": "08c10c482231a9fa26b05c4240fe33d5952adc2b4e5649fd5336a5ce2706ea3d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "207ccb7aaafb07ab1da58d2b19dba823f4922e73",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/manifest.json",
+      "raw_bytes": 1562,
+      "raw_sha256": "4e34ed4dd4102b72bbabd2f0c28a4af147213efeb40d8598f0f79a59643ed545",
+      "stored_path": "_objects/4e34ed4dd4102b72bbabd2f0c28a4af147213efeb40d8598f0f79a59643ed545.gz",
+      "stored_sha256": "0353b4dff31d1878e68766f992311116548b23a96adb0aaba6ed05ab1afab79a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7f8151e1ff17f7495438c9e80f7de174b056d179",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "90e1887162d3c44001d0992cad990a9057d7b2a7212d91d2078b225c88f84260",
+      "stored_path": "_objects/90e1887162d3c44001d0992cad990a9057d7b2a7212d91d2078b225c88f84260.gz",
+      "stored_sha256": "4f440489ac756b03c028af36533acbd20039181aeec74aaf242e970c34a9b16b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dd68eddda07bb6245f04236cd015ca6d94849b70",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/pauli_overlap/stderr.gz",
+      "raw_bytes": 405,
+      "raw_sha256": "d984e798b10762eccf43cf855b11d43cb6a11c10cc92906d97245aa469599ef1",
+      "stored_path": "_objects/d984e798b10762eccf43cf855b11d43cb6a11c10cc92906d97245aa469599ef1.gz",
+      "stored_sha256": "c838cf1e812e2a373549d3d50cf917aad11f6f7d71a0f1769d7ce4cb0dc9581e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7d02bb2d3a87823bd3605ab0be8cb090a9855618",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/manifest.json",
+      "raw_bytes": 1662,
+      "raw_sha256": "bd4f207dffdc017c1d15a09f024c6f86c442f169b4c914b231e251da8dd4646b",
+      "stored_path": "_objects/bd4f207dffdc017c1d15a09f024c6f86c442f169b4c914b231e251da8dd4646b.gz",
+      "stored_sha256": "ddc4de4e948889429876423ac207f8a2391962f3056e18f634782d608b73f8e0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a889dd63550d3111a459f9c64a901198bb1d6348",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/source.py.gz",
+      "raw_bytes": 8108,
+      "raw_sha256": "b34a9531238567d93991d90ad64df34cf7767cba09b29abaf8ad2db2d0e55386",
+      "stored_path": "_objects/b34a9531238567d93991d90ad64df34cf7767cba09b29abaf8ad2db2d0e55386.gz",
+      "stored_sha256": "90f7014ba61ad2f79b7d7b724eac78962fa9be2c1dc0e3757234fedc5785cdc4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "59f84bfdb9a10fd0936a2e96ad7f762382600157",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/spectral_density/stderr.gz",
+      "raw_bytes": 464,
+      "raw_sha256": "17d379e311fe719f3c92c36f45ec9f5ba2ba4ff5079e6d7e77839e4748b2c0b7",
+      "stored_path": "_objects/17d379e311fe719f3c92c36f45ec9f5ba2ba4ff5079e6d7e77839e4748b2c0b7.gz",
+      "stored_sha256": "4d67792ed0e5ed3131be592a1a1d9b1ded2378f1132d675f390e9f24221bd54d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4ad2042d35a337ad5ff621ba5e6629f1c604a475",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/manifest.json",
+      "raw_bytes": 1584,
+      "raw_sha256": "683013dd84555dec9cb68feddca4dbb3c482d84399c3154ff6e1bf47ab38f17f",
+      "stored_path": "_objects/683013dd84555dec9cb68feddca4dbb3c482d84399c3154ff6e1bf47ab38f17f.gz",
+      "stored_sha256": "820e59aaff5bf6d84fc1db838ef2048cfc07de49d99f89994b240030c318431d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "544ce87eee5a9e61fcf0208dd599c23027235e71",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/source.py.gz",
+      "raw_bytes": 8110,
+      "raw_sha256": "058d06a20c9b002467d81748d2084d7c063f5cc3047c7992e3ca91b3cea21ff0",
+      "stored_path": "_objects/058d06a20c9b002467d81748d2084d7c063f5cc3047c7992e3ca91b3cea21ff0.gz",
+      "stored_sha256": "c89394db2393f30d7032f2cf0fca00a569dc9e1dc818154ea2397c5065cc0f07"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "dab2d604975644ee505d01ed7e06ce26d9f4bf63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/sphere_moment/stderr.gz",
+      "raw_bytes": 406,
+      "raw_sha256": "4e6e08a0342e28d995b5c694ceac63f284f2d34fdffff88f9cbb7a4a13feb727",
+      "stored_path": "_objects/4e6e08a0342e28d995b5c694ceac63f284f2d34fdffff88f9cbb7a4a13feb727.gz",
+      "stored_sha256": "0a3029866ab8bd188fa8e970a3e1374b623b7a1d002af9cc5efbfdf4b184b7e8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b4f489cd4348868ea148a350e71b10fbacafcca7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/manifest.json",
+      "raw_bytes": 1639,
+      "raw_sha256": "da43cf2c37da5bca46af825f4be1fd1a51b7fb27c88ee1d2e0bdf547b54793a5",
+      "stored_path": "_objects/da43cf2c37da5bca46af825f4be1fd1a51b7fb27c88ee1d2e0bdf547b54793a5.gz",
+      "stored_sha256": "bab7474e2f0092d76411ba8780040ec85887c9ba00fe0d9031b9d6717c255c9b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "62fe07beb14cb5c93de43c2be38ad268d262e798",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/source.py.gz",
+      "raw_bytes": 8111,
+      "raw_sha256": "767e696c6789f8f4edff45a464cf4555df537fcbbe2df26ee922293bd99bb360",
+      "stored_path": "_objects/767e696c6789f8f4edff45a464cf4555df537fcbbe2df26ee922293bd99bb360.gz",
+      "stored_sha256": "f4960a17c7c910c572df0468d5c506d939e10d1580afba390824270cf32ecf58"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a3b30dddf439a07454d2757c163d962c3a470cf2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/stress_trace/stderr.gz",
+      "raw_bytes": 405,
+      "raw_sha256": "aaa60e140bc8a84c637b186969c5a9f241a7ce949a64f530c21233d07e4e577a",
+      "stored_path": "_objects/aaa60e140bc8a84c637b186969c5a9f241a7ce949a64f530c21233d07e4e577a.gz",
+      "stored_sha256": "ed3c9028e9d95c78ec04159bffc93315521d66714636b4438434e2f2729728ab"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "80d5e69efec76c5d26de1d26888eb2b38aba3a63",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/manifest.json",
+      "raw_bytes": 1622,
+      "raw_sha256": "f4fde178f5ce2224b135350d1fffd276c03fdbadc1563ab8d8bce1397c1b72c4",
+      "stored_path": "_objects/f4fde178f5ce2224b135350d1fffd276c03fdbadc1563ab8d8bce1397c1b72c4.gz",
+      "stored_sha256": "ee5072a516e2adfaf36a658c7450478c844ee39dce9b04db1253e644d0cc3d8a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "35d35de2cfed2a98dd39a01cd73a44fd13eaf321",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/source.py.gz",
+      "raw_bytes": 8107,
+      "raw_sha256": "43e5e57156a51cee550737df5f10a6a2d896b520bf13d07320dc42b019b3cf86",
+      "stored_path": "_objects/43e5e57156a51cee550737df5f10a6a2d896b520bf13d07320dc42b019b3cf86.gz",
+      "stored_sha256": "109994a38351ff816f956fa720f1562f1ed96ab15086c6c8dc426006a5d97491"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9cc4ff0a889ba3b9eeaca27869bea5b52be9ab0b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/mutation_evidence/twisted_boundary/stderr.gz",
+      "raw_bytes": 451,
+      "raw_sha256": "082ffc805221a5d7ded249ebe994d4e1f60c801362c36cd86eb2aef856febebe",
+      "stored_path": "_objects/082ffc805221a5d7ded249ebe994d4e1f60c801362c36cd86eb2aef856febebe.gz",
+      "stored_sha256": "4b8ad96c95c46d67c10bbe063589f1b93bfd5968ed66805e61194c2178046aaa"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f4f873ee09d3fe905451096dcebbf9a539c2fdc4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/manifest.json",
+      "raw_bytes": 197,
+      "raw_sha256": "1e1cdf2e662a0e8662698de0b4d67d4f07bae6aeee367b7f6add26cdffb403bb",
+      "stored_path": "_objects/1e1cdf2e662a0e8662698de0b4d67d4f07bae6aeee367b7f6add26cdffb403bb.gz",
+      "stored_sha256": "c43bb05589fb5ae7de24f2a0af779cfef00145177a5ff0ee12f846e0a42ca09e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a132e6f974737819dff67e068adc9397e1d5ea5f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/receipt.json.gz",
+      "raw_bytes": 2480,
+      "raw_sha256": "85031cecd50f0feba171bf61cf3fb8c7e215623c9aa3bf6f6bac0592ffdb5ff4",
+      "stored_path": "_objects/85031cecd50f0feba171bf61cf3fb8c7e215623c9aa3bf6f6bac0592ffdb5ff4.gz",
+      "stored_sha256": "10403dde0b1857326744e3b2a63c569e35951ffa2c53cc20ae2b892388afa4d8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3343312a9382039cce4826915b7bac99c343b61f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/source.py.gz",
+      "raw_bytes": 8073,
+      "raw_sha256": "9b97e068359bf7b2d9ff5044611556d91832245b921853d9bcc3a915a834792d",
+      "stored_path": "_objects/9b97e068359bf7b2d9ff5044611556d91832245b921853d9bcc3a915a834792d.gz",
+      "stored_sha256": "65d9434923db8035de000f6f724d06f3b628875dffecbb9d294108be223f9d57"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b376ccba8e95d26ad520362f7e5d1d082684fe19",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-stress-logarithm-20260913/recovery/initial_public_run/stdout.gz",
+      "raw_bytes": 2797,
+      "raw_sha256": "f7649147aa0cd28b14378da96e3a73394ad2f871a581b0e525a88a178f2aaf03",
+      "stored_path": "_objects/f7649147aa0cd28b14378da96e3a73394ad2f871a581b0e525a88a178f2aaf03.gz",
+      "stored_sha256": "972966a587efb5201409c0eff374dd3c6db8176081250bcaa00ad0b32a223c84"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-stress-logarithm-20260913/",
+  "revision": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+  "schema_version": 1,
+  "unique_blobs": {
+    "002cc1dd35a0aba2c20948c9b60ca6dd15299534": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "165ff14e7fb44f4c990470e082f2ff2c3723cb4011e2eb46953b0689e042b1ec"
+    },
+    "00fca6b663705581feec358d68f28cf90a6f0332": {
+      "occurrences": 1,
+      "raw_bytes": 422,
+      "raw_sha256": "ad5fa5335166be99a53aaf11a95dfc189fabe81f62be20bfbf6d09b03a02a2f7"
+    },
+    "025af07ed85fd3a785266e96d7f307522d279bcd": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "0126f5383a9c723c9f7e3526fbe81c7b8fea99bf71422918d506b22ac148e6f4"
+    },
+    "03e6f590a8a26fd18d4a217feddba2aa0b876d92": {
+      "occurrences": 1,
+      "raw_bytes": 454,
+      "raw_sha256": "952a4b0ad0ddb4dc7d64d961308858c8d227d18d0724623c6626c7cd92e5f206"
+    },
+    "051975f3ba8ed3f6897735726fba50362311536f": {
+      "occurrences": 1,
+      "raw_bytes": 481,
+      "raw_sha256": "c2050478d2c61133a6b4339452fce9301e6dcb122c28208f72983c6d091cc37c"
+    },
+    "0c14607425c49d9178d9fb573d3e653e3541ad7f": {
+      "occurrences": 1,
+      "raw_bytes": 1627,
+      "raw_sha256": "858f87d63b2af00fa64521b4b0259cf5e0f28dd5cfd5c15f7345e72a36576b79"
+    },
+    "0d9b50d4373e6217366e2a3cb82d37957bd213e7": {
+      "occurrences": 1,
+      "raw_bytes": 8108,
+      "raw_sha256": "528d646c335e45dffcf531c64de316aa0194358823993ac259fd81c762b429a8"
+    },
+    "1044fdba3be5b7326f0742086bc37684c128fbb3": {
+      "occurrences": 1,
+      "raw_bytes": 6537,
+      "raw_sha256": "1fd2c9d6f1b3760f91c43dcf8563639d06da1529880e2d709b2b2accfdeb435f"
+    },
+    "125addbaa6915ae9d206410e626fcbcb5cf2a567": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "a10539013e75cc9b37e56a9d49850980b29897f1d7a70a79c0fb5c1e5c9a34b1"
+    },
+    "147f479c1510b38921b2c81209e367e16c63cab7": {
+      "occurrences": 1,
+      "raw_bytes": 432,
+      "raw_sha256": "c5e4ed0143fbfe8800db83809c197bc654f64a0cd507c3aee0fb9420d2bd478d"
+    },
+    "158ecf13145e9b2109c5c1ec11fbc14bab89503d": {
+      "occurrences": 1,
+      "raw_bytes": 422,
+      "raw_sha256": "b30887683ede5be619547cde2d0ef8216cd06c90ae1d231c78c86e975cbe0a6e"
+    },
+    "1946413fb161422179f8e85de4dff15e3eb402a4": {
+      "occurrences": 1,
+      "raw_bytes": 1583,
+      "raw_sha256": "39784218a1cdc5096528a50dcb8d9f97eb862239d9025a0bf7d872c87cc5e792"
+    },
+    "1994f5d672d1df9dca511629bb3a98aff10a54fe": {
+      "occurrences": 1,
+      "raw_bytes": 8108,
+      "raw_sha256": "f93927d42bcb66438edcd97e121b73b028ad14a469997a64c70af42ffa06e176"
+    },
+    "1c3ff4cb7e4993c3d3f203906b3796257ab5fa15": {
+      "occurrences": 1,
+      "raw_bytes": 450,
+      "raw_sha256": "9dd77f91ecf573bbededd615abdf33f54e27c29ca60e847ab7001c7f0827fe4d"
+    },
+    "1f950523493c4cde2267458c085b6f0b2df5c38b": {
+      "occurrences": 1,
+      "raw_bytes": 1930,
+      "raw_sha256": "a142c7ca5c711f273d20049497bb0a84a999ab4aa8e815bbbe5730759d3551de"
+    },
+    "20256f510e3a8fc70adbbfa9cf94e51a725cf42e": {
+      "occurrences": 1,
+      "raw_bytes": 8112,
+      "raw_sha256": "bb35d074392ac6a2ba201bccc5cfa535bca090b508512b6d83680f8d7c8d01bf"
+    },
+    "207ccb7aaafb07ab1da58d2b19dba823f4922e73": {
+      "occurrences": 1,
+      "raw_bytes": 1562,
+      "raw_sha256": "4e34ed4dd4102b72bbabd2f0c28a4af147213efeb40d8598f0f79a59643ed545"
+    },
+    "2182b70c265df981d431c979747e5b58ebfacdf9": {
+      "occurrences": 1,
+      "raw_bytes": 1572,
+      "raw_sha256": "2fe8cc57418f688822c9603bb405ad0b59e0c566bff9453d4bcda8d7ba0ccccf"
+    },
+    "24bcf05ad101fffd3a79b9c86fce043615e78a6f": {
+      "occurrences": 1,
+      "raw_bytes": 417,
+      "raw_sha256": "ce552aeebf4b3c2472d8229789af2b2ed8bd593dae9705b966c526a163848a01"
+    },
+    "25deaf6fdf6ed18946792a6580fcf6be332637ab": {
+      "occurrences": 1,
+      "raw_bytes": 1623,
+      "raw_sha256": "6ae0e64c3a3e3a17490e0a64c9da666c06ecc6c6fe366fb7f3545822bd171654"
+    },
+    "26b734a63f5d607e7d39d33338914670834da39d": {
+      "occurrences": 1,
+      "raw_bytes": 1618,
+      "raw_sha256": "aa66cc6e5bc3a06a94e711f150ca2b954ed37ed1fbd116c91c936177fe99db87"
+    },
+    "27cf8c411fd85efbd3cf3686114c995930c89674": {
+      "occurrences": 1,
+      "raw_bytes": 404,
+      "raw_sha256": "c42a8a2bcc0c1066de4a5755aafbef6f64b02a58c2be19b1d48e14495ee4e492"
+    },
+    "28f7eac9dacc07233ce7a6c7c3b5e355651ae45f": {
+      "occurrences": 1,
+      "raw_bytes": 418,
+      "raw_sha256": "5986c7c6996b9a4d39908e381e35cf271f690c6f1ea22fde565705b5af94ab7f"
+    },
+    "2c39e18ac2882473728b9162565b1cd6033bdc2c": {
+      "occurrences": 1,
+      "raw_bytes": 414,
+      "raw_sha256": "1e14a6f94ca0377c9b28f7857e2bc576f9aa2e3b3e7eb2db2ac809d04c1a841b"
+    },
+    "31d0f3d6b8e6ea2d38f676fedbebab4564d3bb43": {
+      "occurrences": 1,
+      "raw_bytes": 1100,
+      "raw_sha256": "9584ccf1f1d16cd97c921355942a7e62597e902ef4337230e008aa3891c89ce4"
+    },
+    "3343312a9382039cce4826915b7bac99c343b61f": {
+      "occurrences": 1,
+      "raw_bytes": 8073,
+      "raw_sha256": "9b97e068359bf7b2d9ff5044611556d91832245b921853d9bcc3a915a834792d"
+    },
+    "35d35de2cfed2a98dd39a01cd73a44fd13eaf321": {
+      "occurrences": 1,
+      "raw_bytes": 8107,
+      "raw_sha256": "43e5e57156a51cee550737df5f10a6a2d896b520bf13d07320dc42b019b3cf86"
+    },
+    "36ff3bc21c0ce38fd4dc5341f6b1457e1d8c96a3": {
+      "occurrences": 1,
+      "raw_bytes": 424,
+      "raw_sha256": "7a811fac02ca948cf878cb6c85a444d1e4b5687d8b0840df3306cd491a6c8635"
+    },
+    "3b5cdf28519930194fa108839bb16b3d3d02bd01": {
+      "occurrences": 1,
+      "raw_bytes": 8090,
+      "raw_sha256": "f5c28373242ba7521dec0412671e1ffbbcd10ab86dbed264d718d975b806e4e9"
+    },
+    "3bcb7868b8286dbdbb39e23414dcd448b748b91a": {
+      "occurrences": 1,
+      "raw_bytes": 416,
+      "raw_sha256": "9abd8237d7bda28d8d88adb071b095e4b54c327c624a80af6e081cf209a49d68"
+    },
+    "42f8bdabcdabc017368ffe039f2e380ab30a0e29": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "dfdbdaa0c13bb956a6a9464b8aa4dd2e2bf8668d17958f53471efdc756f94cb2"
+    },
+    "430b3b5b5f0e8ecff513bfd11470eb0ab466b811": {
+      "occurrences": 1,
+      "raw_bytes": 1774,
+      "raw_sha256": "4771afe51b1629074fbb593c56183d8c783c896947326879b5e3912816dab76d"
+    },
+    "435f082bdb91cbedf4b754e95c12c2e191ae3894": {
+      "occurrences": 1,
+      "raw_bytes": 453,
+      "raw_sha256": "47f185fe2e2f73ab443746b6b06ec43eadeff6d4e82089ae4db2862dd07510e6"
+    },
+    "44f9777333022f9eaea2cbf3be2744350c96391f": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "9bd6e6c5764131a81a4e5ed403bc4a66cac25e0cacf239d4072ef30963321ddc"
+    },
+    "4537de97c5d6d64fd2ffd2eac0e2fb398e2281ce": {
+      "occurrences": 1,
+      "raw_bytes": 1598,
+      "raw_sha256": "b70dfc9f797ae751c9bc96b8a428e2c951c2f422427deb70580873ea79030a27"
+    },
+    "4ad2042d35a337ad5ff621ba5e6629f1c604a475": {
+      "occurrences": 1,
+      "raw_bytes": 1584,
+      "raw_sha256": "683013dd84555dec9cb68feddca4dbb3c482d84399c3154ff6e1bf47ab38f17f"
+    },
+    "4d24014e0c72726f338b4691cdc9a78b9d3fd245": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "8cf32947d11d294e204fa62d7211f8f77d359d6a4d5275afa93457e600e38209"
+    },
+    "544ce87eee5a9e61fcf0208dd599c23027235e71": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "058d06a20c9b002467d81748d2084d7c063f5cc3047c7992e3ca91b3cea21ff0"
+    },
+    "54783ce19f25c39071ca72cd3e4b90ff3bc77971": {
+      "occurrences": 1,
+      "raw_bytes": 420,
+      "raw_sha256": "74d24922ea7591d85e96fa132d33392d90d5acb5f6c1837268d91344bbfa8540"
+    },
+    "547f3d7874c4db2a9f9cf4ac6070ba0121fe844d": {
+      "occurrences": 1,
+      "raw_bytes": 416,
+      "raw_sha256": "0651d9b8ee08f9b3df11b1fbdd5a1aeb585a9da928a685b5f1dcf237e72d0226"
+    },
+    "57695874812d1a3e275a9c1c479beeaf59a94c17": {
+      "occurrences": 1,
+      "raw_bytes": 1499,
+      "raw_sha256": "42737a3fe9cf47a4dc39ffdeef2d7af92166e7d74bc8700467b63c42732b767d"
+    },
+    "595e3023f22ad47561a289fedc69665b3f94a8e9": {
+      "occurrences": 1,
+      "raw_bytes": 1584,
+      "raw_sha256": "e70cae1c575e7350f0f2d6b41ed45af00598fceae58b77facd062747c70cd63d"
+    },
+    "59f84bfdb9a10fd0936a2e96ad7f762382600157": {
+      "occurrences": 1,
+      "raw_bytes": 464,
+      "raw_sha256": "17d379e311fe719f3c92c36f45ec9f5ba2ba4ff5079e6d7e77839e4748b2c0b7"
+    },
+    "5a4bb211ba2543448d69307740713e6e77633a35": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "b515d8239553be54db98e5049753bfe8d432f4ecacaac80c38703871a6278bf8"
+    },
+    "5d094cfeab502a1d7799857e4d18b5e319773032": {
+      "occurrences": 1,
+      "raw_bytes": 51234,
+      "raw_sha256": "a532d74b2448e083701ee7018d75ab714eea351b37bd45c919f173f00de2db86"
+    },
+    "5e8f117c4d629f35e8b5f5e0be8399cd768d95e4": {
+      "occurrences": 1,
+      "raw_bytes": 1352,
+      "raw_sha256": "8bcbf344709bbbc2f9ec7c1065c85d3ba2bf4ed8d9964690f44b3dac81471a2a"
+    },
+    "604cd4b49b447b9a3ab27210d69915627fe3322d": {
+      "occurrences": 1,
+      "raw_bytes": 8587,
+      "raw_sha256": "3ff7ea6bd302cb08ffb2f345a375f6dacd1ac443adbdd820ca7b1d83de358443"
+    },
+    "60c338a17ebc1a1e6ef7d6e455f41a06c603a5c0": {
+      "occurrences": 1,
+      "raw_bytes": 1509,
+      "raw_sha256": "53d8132b5ad9e0077a8f6fcf0bcd316d0a957deb7852909dd1d85b828a50090e"
+    },
+    "62fcdf85a9b7b9090203137a64949a5e4ea35f9f": {
+      "occurrences": 1,
+      "raw_bytes": 431,
+      "raw_sha256": "06a0ab15e176fdea421a3797381bb745db82123603f011858efab96f0b8cffbe"
+    },
+    "62fe07beb14cb5c93de43c2be38ad268d262e798": {
+      "occurrences": 1,
+      "raw_bytes": 8111,
+      "raw_sha256": "767e696c6789f8f4edff45a464cf4555df537fcbbe2df26ee922293bd99bb360"
+    },
+    "656b2aa5885434917a65b8c3a04b5b616545361f": {
+      "occurrences": 1,
+      "raw_bytes": 747,
+      "raw_sha256": "84dd373fd81f1e3522f786694354f317354eb8299400590b6b3c6756934cc771"
+    },
+    "682e7802e4b146785c18bb91e203a56515e4a8d1": {
+      "occurrences": 1,
+      "raw_bytes": 8112,
+      "raw_sha256": "bc37e49804aec193ca1b1527abaddeafb4d9a0bfd3435b647bd11768bd08105d"
+    },
+    "6af60fed8e5ab92a956e5fd159d340ca090446e3": {
+      "occurrences": 1,
+      "raw_bytes": 455,
+      "raw_sha256": "a206c7060e8297056045ff23bd30bcf3f4e56665b0e28088468c88211d4e099f"
+    },
+    "6bbb7bd4c36c9656c6f4a3e918ee72923c681eac": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "f3a3530cbc78e353da376e9e8fb97550cec0419e23700a293d35b14a78973aaa"
+    },
+    "6f71ed212fb280939f68ffee547899548a812ebd": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "f1fbe9758d487a1b2519885e854f349d2fe6c42191ecc41421f405a2b0a32743"
+    },
+    "7655026c5f1579d8d68edfd887dda7ba6a90fc6b": {
+      "occurrences": 1,
+      "raw_bytes": 409,
+      "raw_sha256": "7fe1b43d25b98afd7b0e5495415dddc2d85d3eae2d6045ee3b11189c64e7d962"
+    },
+    "78cdf36d6ab3963ebe0b2fa1b80f78cc85568a92": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "f3c5e597076bd2f1e288b833a676a5023fa678bb6c577d6d97b7e501db3d3c51"
+    },
+    "7b869c31bf5360818c91b39f1c391095d464eb55": {
+      "occurrences": 1,
+      "raw_bytes": 417,
+      "raw_sha256": "722fdaf8ca848274ac2cb84156eed2487f18c4d759f86ef924842a73dad6f2ba"
+    },
+    "7d02bb2d3a87823bd3605ab0be8cb090a9855618": {
+      "occurrences": 1,
+      "raw_bytes": 1662,
+      "raw_sha256": "bd4f207dffdc017c1d15a09f024c6f86c442f169b4c914b231e251da8dd4646b"
+    },
+    "7f8151e1ff17f7495438c9e80f7de174b056d179": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "90e1887162d3c44001d0992cad990a9057d7b2a7212d91d2078b225c88f84260"
+    },
+    "80d5e69efec76c5d26de1d26888eb2b38aba3a63": {
+      "occurrences": 1,
+      "raw_bytes": 1622,
+      "raw_sha256": "f4fde178f5ce2224b135350d1fffd276c03fdbadc1563ab8d8bce1397c1b72c4"
+    },
+    "80ee1c540fb1f0b04a2d8db00788dc75c3176aad": {
+      "occurrences": 1,
+      "raw_bytes": 1588,
+      "raw_sha256": "5b1cf60ee4fbd500005ad8e4f29c58a2e849d88a8b8d0878ad599c64a89bed55"
+    },
+    "83db7167b767d366974f333cc7439220b9e8485e": {
+      "occurrences": 1,
+      "raw_bytes": 407,
+      "raw_sha256": "d2f3063e44393993f53e563e774b284cdc08e8ed2a2311648b94848b4f5eb2d6"
+    },
+    "849c64ee8cc083698954c95e1f77d98834133244": {
+      "occurrences": 1,
+      "raw_bytes": 1541,
+      "raw_sha256": "2178d029d6ba9300eed1ff282d12c4360eba964ef6c1f29fcfa8d58154693043"
+    },
+    "86e43ea3218b5890302b754bbf8927f94e79f7ee": {
+      "occurrences": 32,
+      "raw_bytes": 20,
+      "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "89571e2718e1bbdb6b3479afba8884943bfd36d4": {
+      "occurrences": 1,
+      "raw_bytes": 1726,
+      "raw_sha256": "f3b1593d818919993a86e5032a5c7213b0eebd96a8e84c1f7f5a26c2532ba19e"
+    },
+    "895cc9d28c0d047d84637a66702efcbaf4364f3c": {
+      "occurrences": 1,
+      "raw_bytes": 798,
+      "raw_sha256": "3abd4866b3492786700940ed097ec02ad05d4e5ae7a46f936b135323316ebd02"
+    },
+    "896269c053b9a14fd7d3abc6b6a3c172b3522d83": {
+      "occurrences": 1,
+      "raw_bytes": 8108,
+      "raw_sha256": "500692c3b95bb131b01d12abd155812a8f4990dc9bdad21b50653a02d1faef3c"
+    },
+    "8c42636901c372b935fdec1b6ae5d4474464eaad": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "1a7bc901ee2365cead5523566f62c91fa8ba7efe274fa9ecdb5c51a425ffa050"
+    },
+    "8eb0d5f76f277857241c62918b94f145dcf6b0ee": {
+      "occurrences": 1,
+      "raw_bytes": 1568,
+      "raw_sha256": "6636ef5f09bbefa4686ea21a21593cfd6d388157b187e3a4bc9a2bab0fa83553"
+    },
+    "91b5b7bd0fc4c52641178371697575b59c4fb87c": {
+      "occurrences": 1,
+      "raw_bytes": 16271,
+      "raw_sha256": "ec9f2784f1e5f707777c8493a1bd2125c37b2e28f238f95fb52c5567cc4ef568"
+    },
+    "9287ee0c6ca8f33123e7929751179c327a60aa34": {
+      "occurrences": 1,
+      "raw_bytes": 18616,
+      "raw_sha256": "4161b99d92f2478cec08fc8299464ed0959cad07f549f172f372b99ac0016613"
+    },
+    "9353488a60f4ceab9e0ddbd7952e17806c9c4643": {
+      "occurrences": 1,
+      "raw_bytes": 1016,
+      "raw_sha256": "5d97546dbce244c564d2a080630c44e12d65f80fb8e3a2e0b3ea68550828c2e6"
+    },
+    "9439ebcfbd0dbf5b94df87de4db8038a26db0f2a": {
+      "occurrences": 1,
+      "raw_bytes": 8111,
+      "raw_sha256": "1b12b62b315da83fc0ea81ed3d6096d7296e8434c3160477e14f6c258562dec2"
+    },
+    "94ed0720fc004ba3ae14893d16a91c494aedd2f6": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "178e7fcea08a95840d5fe07190d6d1051f4bc416c58d897734a5a4a0fe81f17f"
+    },
+    "992f58f0dcdd359a3d9d018c6703d717fa81f6e8": {
+      "occurrences": 1,
+      "raw_bytes": 393,
+      "raw_sha256": "7a4eb14e417ded72c0c3be5570778e1452d336ccec7bf020baaee2623a5f4601"
+    },
+    "9a3c3bbc9e01e4ed8e9a9ed445ab39a393bccede": {
+      "occurrences": 1,
+      "raw_bytes": 1652,
+      "raw_sha256": "d0b0d9414d7d8e4817a50a21819925b18f3def9ba3cf45f7ad09120bb7221a59"
+    },
+    "9cc4ff0a889ba3b9eeaca27869bea5b52be9ab0b": {
+      "occurrences": 1,
+      "raw_bytes": 451,
+      "raw_sha256": "082ffc805221a5d7ded249ebe994d4e1f60c801362c36cd86eb2aef856febebe"
+    },
+    "9cf9208002fbd1feca49b99ba749e90ad756e8d7": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "6f035f47f71c194aa86c23040efd9d9e3dfacfb21f3ec282ae7f1a9178c40df2"
+    },
+    "9d7684580f64df23172d5fbdf57b7db73dc2dafe": {
+      "occurrences": 1,
+      "raw_bytes": 418,
+      "raw_sha256": "decfc25d1de9be6731960d2783a72a17b705bdd577506aa24d75a046f1ae492b"
+    },
+    "9fd655852d2cd72e48ea894f149295f8f199d210": {
+      "occurrences": 1,
+      "raw_bytes": 1663,
+      "raw_sha256": "73818416acc21a339883b5a0708b39709b121ec0b23a5ca4b6cdc4f6d34ea7d8"
+    },
+    "a132e6f974737819dff67e068adc9397e1d5ea5f": {
+      "occurrences": 1,
+      "raw_bytes": 2480,
+      "raw_sha256": "85031cecd50f0feba171bf61cf3fb8c7e215623c9aa3bf6f6bac0592ffdb5ff4"
+    },
+    "a3b30dddf439a07454d2757c163d962c3a470cf2": {
+      "occurrences": 1,
+      "raw_bytes": 405,
+      "raw_sha256": "aaa60e140bc8a84c637b186969c5a9f241a7ce949a64f530c21233d07e4e577a"
+    },
+    "a5edcc88d286cec69d54799341cf9d03853a9533": {
+      "occurrences": 1,
+      "raw_bytes": 1234,
+      "raw_sha256": "e2a42fdb32fd303f05ba86ddaad52669435302a25660befc9594155aaeff6a7a"
+    },
+    "a5f68bee61f17ec950cb42c57b81c1f70019d23a": {
+      "occurrences": 1,
+      "raw_bytes": 1671,
+      "raw_sha256": "78f3b2d0d4151e06407262689f89863be7925ae363e558a37bd29c5faffa0320"
+    },
+    "a65532ba60e60f3abe49b75f679ea1b5804068d2": {
+      "occurrences": 1,
+      "raw_bytes": 795,
+      "raw_sha256": "1613504e39d5d5ad6d550dfb86baa4ac9dae86ccea334741af12951be53e7fb8"
+    },
+    "a889dd63550d3111a459f9c64a901198bb1d6348": {
+      "occurrences": 1,
+      "raw_bytes": 8108,
+      "raw_sha256": "b34a9531238567d93991d90ad64df34cf7767cba09b29abaf8ad2db2d0e55386"
+    },
+    "b376ccba8e95d26ad520362f7e5d1d082684fe19": {
+      "occurrences": 1,
+      "raw_bytes": 2797,
+      "raw_sha256": "f7649147aa0cd28b14378da96e3a73394ad2f871a581b0e525a88a178f2aaf03"
+    },
+    "b4dc71eb85700e00520ce2f4ce0816c153264c5e": {
+      "occurrences": 1,
+      "raw_bytes": 1644,
+      "raw_sha256": "00e14464d8db19611aa4a610960a2a9f93aa16deb4fd6fbf17b464bba39e91e9"
+    },
+    "b4f489cd4348868ea148a350e71b10fbacafcca7": {
+      "occurrences": 1,
+      "raw_bytes": 1639,
+      "raw_sha256": "da43cf2c37da5bca46af825f4be1fd1a51b7fb27c88ee1d2e0bdf547b54793a5"
+    },
+    "bba53e3767a23a354db9a22337b3bdd3268927c2": {
+      "occurrences": 1,
+      "raw_bytes": 8106,
+      "raw_sha256": "a700187aa27300407f2fd63439319b86d019b0a36543149c9b15ab72cd5e4013"
+    },
+    "c620a71ff349196f9458a580ac1f1a6574442b30": {
+      "occurrences": 1,
+      "raw_bytes": 1588,
+      "raw_sha256": "36ec026ab6caa929f1a7cd152177dbf6bbc7e449f62f676577d5924b023dd2bc"
+    },
+    "c6b06e4b14504b301c7d8fc39082e996eeedf704": {
+      "occurrences": 1,
+      "raw_bytes": 81,
+      "raw_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+    },
+    "c7e05fadaa18d2027f7a3f891e3dc103812023ad": {
+      "occurrences": 1,
+      "raw_bytes": 211,
+      "raw_sha256": "eca3a29cb354685669cdce005999e01b9faf925a338c43274aa6267d8d5ccf0e"
+    },
+    "cc5f031c57d2ea6d589aa2293587c81a37e5facb": {
+      "occurrences": 1,
+      "raw_bytes": 8110,
+      "raw_sha256": "f8cee5a961ce97f815eaa7579b6dfc206c0898158bddfdbadc60a356b2c7abf3"
+    },
+    "cd891a1e05cacb9c14e5954df8dd2a72d638a3f9": {
+      "occurrences": 1,
+      "raw_bytes": 1707,
+      "raw_sha256": "7a16de298aa0017342af964586ab857caf0b6aeae48fd85da4a937c3fa9f8b59"
+    },
+    "d2614d730d051963a0b90493b39606dd1329b906": {
+      "occurrences": 1,
+      "raw_bytes": 1604,
+      "raw_sha256": "35ab0bd9af0ef5c4951895d6faa480c93049838214a27d8eca110f42be5fd0da"
+    },
+    "d2cfd56be019a3f1804067d312abc39b54ad4fdb": {
+      "occurrences": 1,
+      "raw_bytes": 1771,
+      "raw_sha256": "fe50c2c5ca6603d92de9e25339002b8e6645245e5050354e43bf95fab5df2d20"
+    },
+    "d2e091466393699fb5470b5fe460032082bbb1a0": {
+      "occurrences": 1,
+      "raw_bytes": 8108,
+      "raw_sha256": "1643196f1a7d1f95c91d58a4a3381019830fb72935b231c08ce02a6ef71f8683"
+    },
+    "d533ba1bfe0abfef5b5424dcdaf1bf2f4b5b6f1e": {
+      "occurrences": 1,
+      "raw_bytes": 5462,
+      "raw_sha256": "832d70ddb9a0e74a9a5532efb39f601f9186fab67d1e4c726a80ab149fe6786f"
+    },
+    "d8b56ab140130d0d2041c2c640207a00297f05f5": {
+      "occurrences": 1,
+      "raw_bytes": 406,
+      "raw_sha256": "cd1bf03d153ea4addf6835797ac58901c9633caa887f24375918811e00535605"
+    },
+    "da7f16439c465f01af50e1b3ee1332adfb86921c": {
+      "occurrences": 1,
+      "raw_bytes": 1572,
+      "raw_sha256": "5b1c23ebba520b27f7cd52dd6d58713286428253aef0474ba88540a6dae7a560"
+    },
+    "dab2d604975644ee505d01ed7e06ce26d9f4bf63": {
+      "occurrences": 1,
+      "raw_bytes": 406,
+      "raw_sha256": "4e6e08a0342e28d995b5c694ceac63f284f2d34fdffff88f9cbb7a4a13feb727"
+    },
+    "dd68eddda07bb6245f04236cd015ca6d94849b70": {
+      "occurrences": 1,
+      "raw_bytes": 405,
+      "raw_sha256": "d984e798b10762eccf43cf855b11d43cb6a11c10cc92906d97245aa469599ef1"
+    },
+    "e360608525d11374bb72c79e33bebda441ce108f": {
+      "occurrences": 1,
+      "raw_bytes": 1575,
+      "raw_sha256": "c960079e831b6d0cbc993dd7a32a55cb25d9b8f0a4ad34cf3590befad78ec5b4"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 1,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e89a5ea11ecf4441b33854f8988c75e24d9c6b7e": {
+      "occurrences": 1,
+      "raw_bytes": 1597,
+      "raw_sha256": "d6ee6fd565b522e2d5b94acc7a38ee79571cee8165a4800b605d607c8237bca8"
+    },
+    "ec1e9e8048bdbe7ae98429c6936263c5bcb47eac": {
+      "occurrences": 1,
+      "raw_bytes": 8111,
+      "raw_sha256": "9387887c22a9866ec693ef519a4f20d4a00d1904eedae1a1e73d3d498a326c63"
+    },
+    "ed5c3dcbbf102037b9a91cc5db800c9599c48584": {
+      "occurrences": 1,
+      "raw_bytes": 8111,
+      "raw_sha256": "06e5f4c4782d1b8c8b7af7b033a47d8086428683b758bc56d55f051502efa47f"
+    },
+    "f23a00b61e77385a29a14cc0ab97c570748fca76": {
+      "occurrences": 1,
+      "raw_bytes": 453,
+      "raw_sha256": "013ffd1012aad08758acec321748e01ed0079647cbc62fe07823c577764c4daf"
+    },
+    "f4f873ee09d3fe905451096dcebbf9a539c2fdc4": {
+      "occurrences": 1,
+      "raw_bytes": 197,
+      "raw_sha256": "1e1cdf2e662a0e8662698de0b4d67d4f07bae6aeee367b7f6add26cdffb403bb"
+    },
+    "f5736f430266ccf1cafd17185bb37c5434d4186f": {
+      "occurrences": 1,
+      "raw_bytes": 400,
+      "raw_sha256": "207c8166e97e9ac827b0c2f353ea52af9f7c8f8de2017bafa25afb8d24cd4e8f"
+    },
+    "f95c0b8b10523355301d2730e95d3d1e9c8426ec": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "f83cfc51c48e5624d861cfa769307e0e4687733d8c244e471cd14dc2dbd1ab80"
+    },
+    "f9b0d4ed85b7237ee7befef9608c692ff65736a3": {
+      "occurrences": 1,
+      "raw_bytes": 8109,
+      "raw_sha256": "2be307654529a10c447fa60327b8e93b646aabd6d58024f2be5a3ebbbc1c6cf9"
+    },
+    "fab0b4f88c0aee1b9c22c7c9eb4ab64f40d618b1": {
+      "occurrences": 1,
+      "raw_bytes": 1606,
+      "raw_sha256": "6767f032d8fbe38904dd6fc4fc7de69c7cfd997ba4930b383a921bdc8fd01555"
+    },
+    "fccce650797b50c6d2c984774f60ffbe06584012": {
+      "occurrences": 1,
+      "raw_bytes": 254,
+      "raw_sha256": "73dcc87cf09eec1af6dc2fb8a9e7ba4ffba8f15c43b4f1ae5e4236742d298171"
+    },
+    "fd0a34976a3b5f8480f4a0161d1caf7e95373c9b": {
+      "occurrences": 1,
+      "raw_bytes": 1398,
+      "raw_sha256": "555e8ba570bf12a9507d92abc4cb93507c66285262badb60f043ccba557dfc15"
+    }
+  }
+}

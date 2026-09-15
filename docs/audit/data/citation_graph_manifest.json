@@ -1,6 +1,6 @@
 {
- "edge_count": 13414,
- "node_count": 5842,
+ "edge_count": 13426,
+ "node_count": 5851,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12962,6 +12962,10 @@
    "deps_hash": "543a03b87175",
    "out_degree": 7
   },
+  "native_finite_excitation_ward_note_2026-09-09": {
+   "deps_hash": "bd0f06d38bc7",
+   "out_degree": 5
+  },
   "native_flux_defect_comparison_and_winding_gap_note_2026-09-08": {
    "deps_hash": "07c7d22c3d12",
    "out_degree": 4
@@ -13121,6 +13125,10 @@
   "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23": {
    "deps_hash": "2a9d6130ac3c",
    "out_degree": 2
+  },
+  "native_infinite_star_node_reduction_note_2026-09-09": {
+   "deps_hash": "986d0250b122",
+   "out_degree": 5
   },
   "native_informative_edge_record_and_disturbance_bounded_theorem_note_2026-09-13": {
    "deps_hash": "5eda749e24eb",
@@ -22101,6 +22109,34 @@
   "work_history.repo.review_feedback.pr8065-charged-history-evidence.readme": {
    "deps_hash": "d9d85988aa84",
    "out_degree": 39
+  },
+  "work_history.repo.review_feedback.pr8066-evidence.kept.pr8066-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8066-evidence.kept.pr8066-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8066-evidence.readme": {
+   "deps_hash": "56d38e4fce00",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.pr8067-evidence.kept.pr8067-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8067-evidence.kept.pr8067-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8067-evidence.pr8067-original-output-summary": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8067-evidence.readme": {
+   "deps_hash": "80a46602f944",
+   "out_degree": 1
   },
   "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-claim_status_certificate": {
    "deps_hash": "e3b0c44298fc",

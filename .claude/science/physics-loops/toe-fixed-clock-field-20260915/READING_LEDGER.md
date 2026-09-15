@@ -24,3 +24,17 @@ Primary search: Froehlich-Spencer1982 abstract; Dario-Wu136-page source opening
 (paper itself dated March27,2023); Shen1311.2305v2 opening through polymer setup;
 Conlon-Dabkowski2025 page found, theorem hypotheses not yet read. No full-paper or
 literature-exhaustion claim, and no scalar-to-gauge import.
+
+Current reading additions: periodic fixed-clock covariance note sections3-8
+(the separated-current mixture, original source phase, affine-coset bound);
+Haar full-score note sections5-9. New primary search located the integrated
+Bochner-Bakry-Emery papers; only abstracts inspected so far. The new generator
+and negative pointwise-curvature witness are personal derivations, not imported
+paper conclusions. Main source and open PR statuses remain as last pinned.
+
+Read Dai Pra-Posta arXiv1205.4599v3 sections2.1-2.3 and3.1-3.2, including
+admissible-move identities, the off-diagonal pointwise criterion, low-density
+repulsive examples and the two-coordinate convex exception. General algebra
+applies to commuting jump moves; model-specific entropy/mixing examples do
+not match. Re-read Haar full-score sections1-4 and preconditioned Gaussian
+remainder sections1-4 against current pinned main. No new independent review.

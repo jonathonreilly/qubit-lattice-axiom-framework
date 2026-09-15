@@ -55,3 +55,36 @@ Next: examine whether the exact hybrid generator has a useful uniform
 Dirichlet/curvature response estimate. Convexity of the extension alone is
 insufficient; test the actual diffusion/jump mixed terms. Do not infer a
 physical field limit from the vanishing jump Taylor remainder alone.
+
+## Block 1 curvature result, 14:26 UTC
+
+The pointwise positive Bakry-Emery criterion fails for the actual hybrid
+clock generator on one free four-cube. A compact smooth test with explicit
+finite jets gives negative Gamma2. The Gaussian-reference value is calculated
+both from full generator tensors and a closed scalar expression; the actual
+finite-clock electric Hessian correction is bounded and cannot repair the sign.
+The analytic range beta>=1, N^2/beta>=65536 includes the intended large-beta
+window. This is a failure of a sufficient proof criterion, not a spectral-gap,
+phase, model, axiom or TOE obstruction. The generator remains valid.
+
+A first numerical version lost the small jump part while subtracting two
+large Gamma values and failed at beta=2. The source/log is frozen. Separate
+subtraction of continuous and jump contributions repairs cancellation without
+changing tolerance or analytical expressions. Beta=1,2,4 direct/scalar values
+now agree within 4.04e-16 relative error. See the complete witness note.
+
+Next useful work: weighted/integrated Dirichlet or Bochner estimates, or a
+materially different dynamics; do not repeat the pointwise-curvature attempt.
+Primary Dai Pra-Posta/Caputo papers located; matching integrated hypotheses
+still need actual reading. The user deadline remains September16 01:45:03UTC.
+
+## Integrated identities and rate fluctuations
+
+Derived the exact actual-law recurrence m_(k+2)=exp(k q/2)m_k for jump-rate
+moments: E c^2=1 and E c^4=exp(q), despite the small mean E c<=exp(-q/8).
+This rules out an L2-small-rate premise for this dynamics. Derived the mixed
+diffusion/jump identity and an admissible positive jump-pair measure, with a
+mean pair-weight bound. Its derivative-weighted residual remains open.
+Original clock source checks verify moments and the integrated jump identity
+to 5.13e-14 and 2.33e-16 relative error respectively. These are exploratory
+identities and method diagnostics, not a model/axiom wall or a full-field proof.

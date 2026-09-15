@@ -1,6 +1,6 @@
 {
- "edge_count": 12837,
- "node_count": 5296,
+ "edge_count": 12877,
+ "node_count": 5335,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4966,6 +4966,10 @@
    "deps_hash": "61520f2a99a3",
    "out_degree": 1
   },
+  "finite_clock_score_gaussian_maxwell_scaling_limit_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "3ff62434e691",
+   "out_degree": 1
+  },
   "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14": {
    "deps_hash": "cbfdfa9b6409",
    "out_degree": 2
@@ -5005,6 +5009,10 @@
   "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "57fff9abdf25",
+   "out_degree": 2
   },
   "fixed_field_complex_grown_basin_v2_note": {
    "deps_hash": "9b334c2c3616",
@@ -13010,6 +13018,10 @@
    "deps_hash": "f292f1416726",
    "out_degree": 3
   },
+  "native_global_charge_connectivity_and_exchange_note_2026-09-08": {
+   "deps_hash": "eaf9417d1828",
+   "out_degree": 3
+  },
   "native_halfline_clock_completion_finite_horizons_and_permanence_bounded_theorem_note_2026-09-14": {
    "deps_hash": "01e09f046b2f",
    "out_degree": 5
@@ -13865,6 +13877,10 @@
   "periodic_2d_wraparound_fix_note_2026-04-11": {
    "deps_hash": "9cdc850bbad7",
    "out_degree": 6
+  },
+  "periodic_finite_clock_villain_covariance_and_observable_masslessness_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "periodic_gaussian_full_payload_matrix_codec_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
@@ -15049,6 +15065,10 @@
   "primordial_spectrum_note": {
    "deps_hash": "8d76f496f6c9",
    "out_degree": 3
+  },
+  "principal_flux_positive_gaussian_transfer_and_extensive_hamiltonian_limit_bounded_theorem_note_2026-09-14": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "probability_readout_underdetermination_cycle912_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7b707271a9a8",
@@ -20278,6 +20298,110 @@
    "deps_hash": "54e4d386f0da",
    "out_degree": 22
   },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-connectivity-cold-proof.pr8041-originals-native-d2-connectivity-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability-cold-proof.pr8041-originals-native-d2-reachability-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability-cold-proof.pr8041-originals-native-d2-reachability-cold-proof-native_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability.pr8041-originals-native-d2-reachability-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability.pr8041-originals-native-d2-reachability-full_connectivity": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability.pr8041-originals-native-d2-reachability-full_connectivity_preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability.pr8041-originals-native-d2-reachability-orbital_proof_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-d2-reachability.pr8041-originals-native-d2-reachability-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-global-charge-exchange-cold-review.pr8041-originals-native-global-charge-exchange-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-global-charge-exchange.pr8041-originals-native-global-charge-exchange-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.originals.native-global-charge-exchange.pr8041-originals-native-global-charge-exchange-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-root_port_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.pr8041-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8041-global-charge-evidence.readme": {
+   "deps_hash": "bca14111bc70",
+   "out_degree": 26
+  },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -20517,6 +20641,38 @@
   "work_history.repo.review_feedback.pr8121-optimized-loop-evidence.readme": {
    "deps_hash": "e18b68c678ec",
    "out_degree": 6
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-cluster_cap_evaluation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-novelty_and_search": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.pr8127-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8127-clock-spectrum-evidence.readme": {
+   "deps_hash": "5b1956446b14",
+   "out_degree": 8
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

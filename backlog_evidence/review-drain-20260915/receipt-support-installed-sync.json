@@ -1,0 +1,25 @@
+{
+  "backup": "/Users/jonBridger/.codex/skill-backups/20260915T161810Z-u95m2767",
+  "destination": "/Users/jonBridger/.codex/skills",
+  "mode": "apply",
+  "skills": [
+    {
+      "changed_paths": [
+        "SKILL.md",
+        "references/UNIT_RECEIPT.md",
+        "scripts/review_receipt.py"
+      ],
+      "recovery_directory": "/Users/jonBridger/.codex/.methodology-recovery-review-loop-q7vyk2az",
+      "recovery_state": "original_retained",
+      "skill": "review-loop",
+      "status": "applied"
+    }
+  ],
+  "source": {
+    "repository": "/private/tmp/review-drain-20260915/train32",
+    "revision": "af08577ac4be73c110d82ecebd189e15bc7ed4a6",
+    "skills_dirty": false,
+    "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+    "worktree_dirty": false
+  }
+}

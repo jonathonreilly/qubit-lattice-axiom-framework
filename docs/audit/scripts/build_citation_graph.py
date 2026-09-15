@@ -151,6 +151,7 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'native_gauge_transfer_dimension_divided_wilson_second_order_bounded_theorem_note_2026-09-07': ['scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py'],
     'admissibility_d4_frozen_h2_common_action_source_image_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_frozen_h2_common_action_source_image_2026_08_29.py'],
     'admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_common_spin2_source_module_2026_08_29.py'],
     'admissibility_d4_quantum_direction_corner_common_source_owner_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_quantum_quadrupole_common_source_owner_2026_08_29.py'],

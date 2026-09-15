@@ -3,7 +3,7 @@
 Personal derivation, 2026-09-15, subject to independent review. This is a
 conditional analytic lemma with a complete proposed operator argument.
 It does not assume that its response is the covariance of the gauge model;
-that identification belongs to BLOCK21_THERMODYNAMIC_MATCHING_DESIGN.md.
+that identification belongs to BLOCK21_THERMODYNAMIC_MATCHING_DERIVATION.md.
 Standard spectral decomposition and a convergent resolvent expansion are
 used without a novelty claim for those mathematical tools.
 
@@ -181,6 +181,10 @@ entries equal. This applies to a general matrix, without assuming it
 symmetric. Therefore B_eff=b I on the first block. Equation(11) gives
 
  T0,first(p)=kappa R_cont(p), kappa=1/(1-b).           (12)
+
+In this application all underlying lattice and time-shift operators
+preserve real fields, so B_eff and b are real. The complex Fourier fibers
+do not introduce a complex physical covariance coefficient.
 
 The environment can be symmetrized only in a way that preserves its
 spatial ergodicity and the physical extension. Randomly selecting a global

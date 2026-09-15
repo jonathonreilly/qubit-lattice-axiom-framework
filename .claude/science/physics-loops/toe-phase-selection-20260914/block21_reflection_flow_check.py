@@ -3,7 +3,8 @@
 from pathlib import Path
 import itertools,json,math
 import numpy as np
-from scipy.sparse import coo_matrix,eye
+from scipy.sparse import coo_matrix,eye,block_diag,vstack
+from scipy.sparse.linalg import splu
 from numpy.polynomial.hermite import hermgauss
 
 
@@ -66,6 +67,40 @@ def reflection():
  return rows
 
 
+def nested_projection():
+ # Hodge inverse and zero-extension identities are distinct constructions.
+ import sympy as s
+ small,ds=complex_box(4,1);large,dl=complex_box(4,2)
+ ext=[]
+ for r in range(5):
+  ids={cell:i for i,cell in enumerate(large[r])}
+  rows=[ids[cell] for cell in small[r]]
+  ext.append(coo_matrix((np.ones(len(rows),dtype=np.int64),(rows,np.arange(len(rows)))),shape=(len(large[r]),len(small[r]))).tocsr())
+ assert zero(dl[2].T@ext[3]-ext[2]@ds[2].T)
+ assert zero(dl[1].T@ext[2]@ds[2].T)
+ Dsmall=s.Matrix(np.vstack([ds[2].T.toarray(),ds[3].toarray()]))
+ Hsmall=Dsmall.T*Dsmall;Psmall=Dsmall*Hsmall.inv()*Dsmall.T
+ assert Psmall*Psmall==Psmall
+ assert Psmall[24:25,24:25]==s.eye(1)
+ assert Psmall[:24,24:25]==s.zeros(24,1)
+ assert s.Matrix(ds[1].T.toarray())*Psmall[:24,:24]==s.zeros(len(small[1]),24)
+ Dlarge=vstack([dl[2].T,dl[3]]).astype(float).tocsr()
+ Hlarge=(Dlarge.T@Dlarge).tocsc()
+ Plarge=Dlarge@splu(Hlarge).solve(Dlarge.T.toarray())
+ E=block_diag([ext[2],ext[4]]).toarray()
+ embedded=E@np.array(Psmall,dtype=float)@E.T
+ nesting=np.linalg.norm(Plarge@embedded-embedded)
+ minimum=float(np.linalg.eigvalsh(Plarge-embedded).min())
+ assert nesting<2e-12 and minimum>-2e-12
+ # Closed free-box three-charges do NOT obey the analogous zero-extension
+ # rule. The two opposite 012 faces form a closed relative charge here.
+ q=np.zeros(len(small[3]),dtype=np.int64);q[:2]=1
+ assert np.max(abs(ds[3]@q))==0
+ wrong=dl[3]@ext[3]@q
+ assert np.max(abs(wrong))>0
+ return dict(small_projection_rank=int(s.trace(Psmall)),large_projection_rank=int(round(np.trace(Plarge))),exact_codifferential_extension=True,nesting_error=float(nesting),minimum_projection_order_eigenvalue=minimum,wrong_closed_charge_extension_defect=wrong.tolist())
+
+
 def positive_integrals(order=60):
  # A non-coordinate two-dimensional subspace inside R3, non-diagonal K,
  # and several overlapping rank-one interactions.
@@ -90,13 +125,19 @@ def positive_integrals(order=60):
    rows.append(dict(tilt=tilt.tolist(),third_cumulant=third,derived_bound=bound))
  # Taylor remainder for the exact positive finite measure at zero tilt.
  w0=wg*np.exp(interaction);z0=w0.sum();w0/=z0;a=directions[0]
+ covariance=points.T@(w0[:,None]*points)
+ lower=K@np.linalg.inv(np.eye(3)+delta*K)
+ upper=K@np.linalg.inv(np.eye(3)-delta*K)
+ lower_margin=float(np.linalg.eigvalsh(Q.T@(covariance-lower)@Q).min())
+ upper_margin=float(np.linalg.eigvalsh(Q.T@(upper-covariance)@Q).min())
+ assert lower_margin>=-3e-12 and upper_margin>=-3e-12
  mean=float(w0@(points@a));var=float(w0@((points@a-mean)**2))
  for t in [.1,.3,1.,2.]:
   exact=math.log(float(np.sum(wg*np.exp(interaction+t*(points@a))))/z0)
   rem=abs(exact-t*mean-t*t*var/2);bound=M3*C**3*float(np.linalg.norm(t*a,ord=3))**3/6
   assert rem<=bound+3e-13
   rows.append(dict(source_scale=t,log_mgf_remainder=rem,derived_bound=bound))
- return dict(order=order,k_schur=k,delta=delta,M3=M3,contraction=k*delta,cases=rows)
+ return dict(order=order,k_schur=k,delta=delta,M3=M3,contraction=k*delta,cramer_rao_lower_margin=lower_margin,convexity_upper_margin=upper_margin,cases=rows)
 
 
 def collective_control():
@@ -112,10 +153,18 @@ def collective_control():
   cases.append(dict(dimension=n,source_ell3_cubed=norm3cubed,third_influence_bound=M3,product=M3*norm3cubed))
  return dict(variance=var,fourth_cumulant=fourth,dimension_independent_non_gaussian=True,cases=cases)
 
+
+def theta_upper_hypothesis_control():
+ x,w=hermgauss(100);z=np.sqrt(2)*x
+ weights=w*np.exp(-.2*np.cos(z));weights/=weights.sum()
+ variance=float(weights@(z*z))
+ assert variance>1.05
+ return dict(variance=variance,reference_variance=1.,hessian_perturbation_bound=.2,qualification='A uniformly convex small cosine perturbation need not have covariance below its Gaussian reference. The actual theta MGF domination is a separate structural input.')
+
 if __name__=='__main__':
  low=positive_integrals(40);high=positive_integrals(60)
  comparison=max(abs(a.get('third_cumulant',a.get('log_mgf_remainder'))-b.get('third_cumulant',b.get('log_mgf_remainder'))) for a,b in zip(low['cases'],high['cases']))
  assert comparison<3e-12
- result=dict(reflection=reflection(),positive_integrals=high,quadrature_order_comparison=comparison,collective_control=collective_control(),qualification='Exact finite incidence identities and deterministic positive integrals challenge the proof. No Riesz lp theorem, stationary-flow differentiability theorem, covariance homogenization, or physical state matching is established by finite checks.')
+ result=dict(reflection=reflection(),nested_projection=nested_projection(),positive_integrals=high,quadrature_order_comparison=comparison,collective_control=collective_control(),theta_upper_hypothesis_control=theta_upper_hypothesis_control(),qualification='Exact finite incidence identities and deterministic positive integrals challenge the proof. No Riesz lp theorem, stationary-flow differentiability theorem, covariance homogenization, or physical state matching is established by finite checks.')
  Path(__file__).with_name('BLOCK21_REFLECTION_FLOW_CHECKS.json').write_text(json.dumps(result,indent=2)+'\n')
  print(json.dumps(result,indent=2))

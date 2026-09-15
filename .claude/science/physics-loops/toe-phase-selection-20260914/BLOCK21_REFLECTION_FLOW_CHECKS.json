@@ -185,12 +185,39 @@
       "wrong_edge_parity_defect_entries": 3456
     }
   ],
+  "nested_projection": {
+    "small_projection_rank": 8,
+    "large_projection_rank": 96,
+    "exact_codifferential_extension": true,
+    "nesting_error": 7.308889092718093e-16,
+    "minimum_projection_order_eigenvalue": -7.745396877352219e-16,
+    "wrong_closed_charge_extension_defect": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
   "positive_integrals": {
     "order": 60,
     "k_schur": 1.466666666666667,
     "delta": 0.027999999999999997,
     "M3": 0.055999999999999994,
     "contraction": 0.041066666666666675,
+    "cramer_rao_lower_margin": 0.010824017085812652,
+    "convexity_upper_margin": 0.016596747217205304,
     "cases": [
       {
         "tilt": [
@@ -311,6 +338,12 @@
         "product": 0.4
       }
     ]
+  },
+  "theta_upper_hypothesis_control": {
+    "variance": 1.13099502962677,
+    "reference_variance": 1.0,
+    "hessian_perturbation_bound": 0.2,
+    "qualification": "A uniformly convex small cosine perturbation need not have covariance below its Gaussian reference. The actual theta MGF domination is a separate structural input."
   },
   "qualification": "Exact finite incidence identities and deterministic positive integrals challenge the proof. No Riesz lp theorem, stationary-flow differentiability theorem, covariance homogenization, or physical state matching is established by finite checks."
 }

@@ -1,4 +1,25 @@
-# Block 1 trace
+# Current block21 trace
+
+```yaml
+trace_class: upstream_support
+target_claim_id: u1_finite_clock_gauge_matter_and_controlled_tame_maxwell_bridge_bounded_theorem_note_2026-09-03
+target_blocker_text: "Identify a controlled effective field and the exact coupled-defect law needed for a fixed-clock physical-score theorem."
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Review the fixed-beta Haar full-score chain as one stacked milestone, then pursue the retained finite-clock electric-defect and native-law obligations."
+```
+
+The quoted blocker is from the free-cubic magnetic/electric source in
+PR8133 at f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8. Block21 proposes a
+full physical-score continuum theorem at fixed coupling for the Haar
+comparison law. It supplies new Gaussianity, state-matching and covariance
+mechanisms; it does not remove finite-clock aliases or solve the N=3
+Hamiltonian phase. Its direct Gaussian OS reconstruction is explicitly
+separate from a microscopic periodic-state claim. All analytic inputs
+and the proposed chain still require independent review.
+
+# Historical block1 trace
 
 ```yaml
 trace_class: direct_blocker_closure

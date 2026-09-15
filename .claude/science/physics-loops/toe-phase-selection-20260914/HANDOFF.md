@@ -6,6 +6,20 @@ for24hours total from2026-09-14 13:30:44UTC. Historical01:30:44deadlines below
 are superseded. Do not stop at the old deadline, pause the heartbeat, or remove
 the active campaign checkout then. Finish a milestone, reassess and continue.
 
+Newest result: BLOCK21_FIXED_BETA_FULL_SCORE_CONTINUUM_DERIVATION.md now
+assembles a proposed fixed-beta Haar-Villain full-score Gaussian limit,
+with covariance a_contact I+kappa P, kappa>=1/(1+delta)>0, an actual
+selected mixing Gibbs state, nonsummable score correlations and a direct
+two-photon Gaussian OS reconstruction. The matching design has become
+BLOCK21_THERMODYNAMIC_MATCHING_DERIVATION.md, including nested projections,
+two replicas, and a second generator-based covariance derivation. All
+inputs and conclusions remain author proposals awaiting independent
+review. New finite checks pass, including the distinction between
+co-closed zero extension and closed boundary charges. The next action is
+one coherent stacked milestone above PR8133's unchanged f8e7219b head;
+then continue the finite-clock/native-law frontier personally. No new
+delivery checkout has yet been created at this checkpoint.
+
 Current work: block21 fixed-coupling full compact-U(1) flux Gaussianity and
 covariance. A finite-time preconditioned-flow proof, explicit cochain
 reflection, direct periodic Riesz argument and carrier derivative bounds

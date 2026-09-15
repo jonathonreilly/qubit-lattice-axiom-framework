@@ -155,6 +155,25 @@ def gaussian_precision():
   rows.append(dict(L=L,split_error=float(abs(split-exact)),series_error=float(np.max(abs(residual-series))),minimum_precision_increment=float(np.linalg.eigvalsh(residual-H).min())))
  return rows
 
-def run():return dict(cancellation=cancellation(),trees=trees_and_logarithm(),constants=constants(),finite_theta_hessian=finite_theta_hessian(),gaussian_precision=gaussian_precision())
+def source_curvature():
+ rows=[];n=np.arange(-20,21);nodes,weights=np.polynomial.hermite.hermgauss(160);weights=weights/math.sqrt(math.pi)
+ G=.75;c=.125
+ for beta in [.4,1.,2.]:
+  t=2*math.pi**2*beta*c;variance=beta*(G-c);phi=math.sqrt(2*variance)*nodes
+  w=np.exp(-t*n*n);original=np.exp(-2*math.pi**2*beta*G*n*n)
+  for sigma in [0.,.13,.37]:
+   phase=np.exp(2j*math.pi*(phi[:,None]+sigma)*n);Z=(phase@w).real;Zp=(phase@(2j*math.pi*n*w)).real;Zpp=(phase@(-(2*math.pi*n)**2*w)).real
+   assert min(Z)>0
+   normalization=weights@Z;mu=weights*Z/normalization;vprime=Zp/Z;vsecond=Zpp/Z-vprime*vprime
+   first=float(mu@vprime);variance_term=float(mu@(vprime*vprime)-first*first);mean_curvature=float(mu@vsecond)
+   assert variance_term>=-1e-12
+   phase0=np.exp(2j*math.pi*sigma*n);z=(phase0@original).real;zp=(phase0@(2j*math.pi*n*original)).real;zpp=(phase0@(-(2*math.pi*n)**2*original)).real
+   direct=zpp/z-(zp/z)**2;combined=mean_curvature+variance_term
+   assert abs(normalization-z)<1e-12 and abs(combined-direct)<2e-10
+   rows.append(dict(beta=beta,sigma=sigma,mean_curvature=mean_curvature,positive_variance_term=variance_term,combined=combined,direct_charge_curvature=float(direct),error=float(abs(combined-direct))))
+ assert max(r['positive_variance_term'] for r in rows)>1
+ return rows
+
+def run():return dict(cancellation=cancellation(),trees=trees_and_logarithm(),constants=constants(),finite_theta_hessian=finite_theta_hessian(),gaussian_precision=gaussian_precision(),source_curvature=source_curvature())
 if __name__=='__main__':
  rows=run();Path(__file__).with_name('BLOCK15_CHECKS.json').write_text(json.dumps(rows,indent=2)+'\n');print(json.dumps(rows,indent=2))

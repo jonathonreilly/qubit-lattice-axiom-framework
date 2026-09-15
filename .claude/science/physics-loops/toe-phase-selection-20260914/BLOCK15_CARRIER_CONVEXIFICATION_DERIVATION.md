@@ -235,6 +235,15 @@ by a linear Gaussian observable without controlling the difference would
 lose the main physical task.
 
 
+For d=4 and1<=p<=3, beta=100 is one deliberately conservative sufficient
+choice. Indeed Delta<=20, t>61.625, r<4.16e-14, R_t<2.267e-13,
+4pi^2 C0C1<3.12e12 and10!r/(1-r)^11<1.511e-7. Hence
+(Delta+1)R_t<5e-12 and beta epsilon_t<1.1e-5<1/2. The bounds use
+pi^2>9.86, pi^2<10, e<2.719 and geometric inequalities; the floating
+checks are not the proof. Larger beta also work: the logarithmic
+derivative of the displayed upper bound on beta epsilon_t is at most
+1/beta-pi^2/16<0 for beta>=100.
+
 ## 6. Source lower bound and a charge-covariance consequence
 
 Let F(a)=log Z_beta(a sigma), with sigma real. By(2),(6), the a-dependent
@@ -262,6 +271,38 @@ This is a covariance upper bound for the supplied charge gas. It does not
 determine all higher cumulants or identify the original gauge score.
 A positive mixture of source ensembles has the extra nonnegative variance
 term shown explicitly; dropping it would reverse the reasoning.
+
+### All-source curvature after convexification
+
+The source-shifted effective action has the same Hessian lower bound(10),
+since(9) is uniform in its argument. Write L(sigma)=log Z_beta(sigma).
+For beta epsilon_t<1, a finite-dimensional variance estimate gives
+
+ -epsilon_t<h,Hh> <=D^2 L(sigma)[h,h]
+ <=epsilon_t/(1-beta epsilon_t)<h,Hh>,                 (14)
+
+uniformly in real sigma and finite boxes.
+
+Here is the needed estimate with its hypotheses explicit. If a smooth
+probability density e^-A on finite-dimensional Euclidean space obeys
+Hess A>=mH for a positive definite constant matrix H, then
+Var(F)<=m^-1 E<grad F,H^-1 grad F>. To see it, solve
+(-Delta+grad A dot grad)g=F-EF, first using a positive resolvent if needed.
+Integration by parts gives Var(F)=E<grad F,grad g>. The Bochner identity
+E(Lg)^2=E||Hess g||^2+E<grad g,Hess A grad g> bounds
+E<grad g,H grad g><=Var(F)/m. Cauchy-Schwarz in the H metric then yields
+the variance estimate. Smooth bounded F and the strongly convex finite-box
+density used here justify the resolvent limit and boundary cutoff; all
+first and second derivatives of V_t are bounded in each finite box.
+
+Apply this with F=DV_t(phi+sigma)[h] and m=beta^-1-epsilon_t.
+The quadratic-form bound(9), and ||d*h||^2<=<h,Hh>, imply the operator
+norm bound ||H^-1/2 Hess V_t H^-1/2||<=epsilon_t. Thus
+E<grad F,H^-1 grad F><=epsilon_t^2<h,Hh>. In the exact second derivative
+E D^2V_t+Var(DV_t), the first term lies between plus/minus epsilon_t<h,Hh>,
+and the second is nonnegative and at most epsilon_t^2<h,Hh>/m. This proves
+(14). It controls all real source tilts of the supplied gas, but it does not
+make a nonlocal source map from another model local.
 
 ## 7. Exact cancellation witness
 

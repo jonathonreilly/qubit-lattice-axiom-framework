@@ -1,0 +1,102 @@
+{
+  "runner_sha256": "47143792e3482a820b11f911758392c266d697544ee9b7bfaa4c1e4457232da5",
+  "faults": [
+    {
+      "name": "relative_path_endpoint",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0009890829678624868
+    },
+    {
+      "name": "relative_homology_projection",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 5.962501745671034e-05
+    },
+    {
+      "name": "absolute_projection_sign",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.005351374973542988
+    },
+    {
+      "name": "boundary_tensor_sign",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0018463749438524246
+    },
+    {
+      "name": "homotopy_tensor_sign",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0023685829946771264
+    },
+    {
+      "name": "top_homology_discarded",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0020513749914243817
+    },
+    {
+      "name": "unit_top_charge_local_fill",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.009292625007219613
+    },
+    {
+      "name": "thin_rectangle_locality",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.008611875004135072
+    },
+    {
+      "name": "Hodge_curl_coefficient",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.03584087500348687
+    },
+    {
+      "name": "source_missing_Green",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.015497042099013925
+    },
+    {
+      "name": "magnetic_Hodge_coefficient",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.016491958987899125
+    },
+    {
+      "name": "real_current_rep_invariance",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.016445999965071678
+    },
+    {
+      "name": "electric_chain_rule_N",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.042992834001779556
+    },
+    {
+      "name": "electric_inverse_beta",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.12540770799387246
+    },
+    {
+      "name": "electric_source_metric",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.04808162502013147
+    },
+    {
+      "name": "electric_source_phase",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.044065625057555735
+    }
+  ],
+  "qualification": "Personal deliberate-fault challenges; not independent proof review or an audit verdict."
+}

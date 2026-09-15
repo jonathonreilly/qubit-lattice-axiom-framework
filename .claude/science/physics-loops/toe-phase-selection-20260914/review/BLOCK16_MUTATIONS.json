@@ -1,0 +1,97 @@
+{
+  "runner_sha256": "8b15e588272be799f34ccce648c237ccd9a3b8b993ec18d7ae7359eb78f02972",
+  "faults": [
+    {
+      "name": "discard_mutual_phase",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.3323292910354212
+    },
+    {
+      "name": "electric_beta_inverse",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.3283226250205189
+    },
+    {
+      "name": "electric_alias_spacing",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.33318875008262694
+    },
+    {
+      "name": "omit_source_character",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.8306656249333173
+    },
+    {
+      "name": "magnetic_beta_inverse",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.33761691697873175
+    },
+    {
+      "name": "magnetic_energy_half",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.3178204579744488
+    },
+    {
+      "name": "Gaussian_prefactor",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.31426954094786197
+    },
+    {
+      "name": "Gaussian_determinant",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.31387787498533726
+    },
+    {
+      "name": "phase_character_frequency",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.32617729099001735
+    },
+    {
+      "name": "magnetic_representative_shift",
+      "function": "comparisons",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 3.5407542499015108
+    },
+    {
+      "name": "four_cube_clock_order",
+      "function": "four_cube_witness",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.03959975007455796
+    },
+    {
+      "name": "four_cube_magnetic_charge",
+      "function": "four_cube_witness",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.039574791910126805
+    },
+    {
+      "name": "four_cube_current",
+      "function": "four_cube_witness",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.03895304200705141
+    }
+  ],
+  "qualification": "Personal deliberate-fault challenges only; not independent proof review or an audit verdict."
+}

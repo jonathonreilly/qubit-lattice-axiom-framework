@@ -1,0 +1,118 @@
+{
+  "runner_sha256": "e6b01e428ca5ec5bf5b70bbcc073212be2a33c2c5e920f42978a883a0da8cc18",
+  "faults": [
+    {
+      "name": "parallel_instead_of_transverse_carrier",
+      "function": "cancellation",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.00012737500946968794
+    },
+    {
+      "name": "exterior_incidence_sign",
+      "function": "cancellation",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0001561670796945691
+    },
+    {
+      "name": "charge_cancellation_sign",
+      "function": "cancellation",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.00024349999148398638
+    },
+    {
+      "name": "net_mass_for_total_mass",
+      "function": "cancellation",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.00013737508561462164
+    },
+    {
+      "name": "Ursell_sign",
+      "function": "trees_and_logarithm",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 1.9749975763261318e-05
+    },
+    {
+      "name": "complete_graph_factorial",
+      "function": "trees_and_logarithm",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 1.7583020962774754e-05
+    },
+    {
+      "name": "Eulerian_recurrence",
+      "function": "constants",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 2.4958979338407516e-05
+    },
+    {
+      "name": "Gaussian_split_factor",
+      "function": "constants",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0007302910089492798
+    },
+    {
+      "name": "theta_energy_factor",
+      "function": "finite_theta_hessian",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.003756082965992391
+    },
+    {
+      "name": "Poisson_Hessian_sign",
+      "function": "finite_theta_hessian",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0008738340111449361
+    },
+    {
+      "name": "effective_action_sign",
+      "function": "finite_theta_hessian",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0017354169394820929
+    },
+    {
+      "name": "residual_covariance_sign",
+      "function": "gaussian_precision",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0027855830267071724
+    },
+    {
+      "name": "precision_geometric_sign",
+      "function": "gaussian_precision",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.00029258301947265863
+    },
+    {
+      "name": "source_variance_sign",
+      "function": "source_curvature",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.006358458078466356
+    },
+    {
+      "name": "source_residual_covariance",
+      "function": "source_curvature",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0018573330016806722
+    },
+    {
+      "name": "source_normalization",
+      "function": "source_curvature",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0017845840193331242
+    }
+  ],
+  "qualification": "Personal deliberate-fault challenges only; not independent proof review or an audit verdict."
+}

@@ -45,6 +45,9 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "gauge_wilson_cube_slab_first_spectral_corrections_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_cube_slab_first_ground_correction_independent_check_2026_09_07.py",
+    ],
     'native_gauge_transfer_dimension_divided_wilson_second_order_bounded_theorem_note_2026-09-07': ['scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py'],
     'native_edge_record_z4_flux_bridge_capacity_bounded_theorem_note_2026-09-07': ['scripts/native_edge_record_z4_flux_five_event_check_2026_09_07.py'],
     'admissibility_d4_frozen_h2_common_action_source_image_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_frozen_h2_common_action_source_image_2026_08_29.py'],

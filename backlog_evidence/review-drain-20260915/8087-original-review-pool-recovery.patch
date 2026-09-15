@@ -1,0 +1,3015 @@
+diff --git a/docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md b/docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md
+new file mode 100644
+index 0000000000..a186f9ad21
+--- /dev/null
++++ b/docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md
+@@ -0,0 +1,625 @@
++---
++claim_id: native_growing_formation_current_bounded_theorem_note_2026-09-13
++claim_type: bounded_theorem
++claim_scope: "Prepared native edge-qubit carrier: an explicit varying nearest-neighbor Record content law, protected three-direction matter current, and a single-seed growing formation process with finite carrier windows. All state, control, Born-event and occurrence assumptions remain supplied."
++upstream_dependencies:
++  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
++  - minimal_axioms
++runner: scripts/native_growing_formation_current_2026_09_13.py
++---
++
++# Growing native formation with protected matter current
++
++**Date:** 2026-09-13
++**Type:** bounded_theorem
++**Status:** proposed_retained
++
++An explicit prepared native carrier supports a varying nearest-neighbor Record
++content law and nonzero protected matter current through arbitrarily large
++finite formation histories. A single supplied seed and a specified occurrence
++process give analytical growing-front bounds. The construction does not derive
++its state, controls, Born events, rates or clock from the framework axioms.
++Its actual current-surface status is conditional-support; independent source
++review and formal audit remain pending.
++
++~~~yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++target_claim_type: bounded_theorem
++claim_type_reason: "Analytical operator, spectral and probability construction with explicit finite carrier resources and targeted finite comparators."
++trace_class: upstream_support
++target_claim_id: native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
++target_blocker_text: "Continuing local formation with a varying nearest-neighbor content law on a carrier sustaining matter transport."
++source_of_blocker_text: frontier_question
++reachability_to_target: partially_closes
++artifact_role: theorem
++next_trace_action: "Derive a matter-dependent readable Record interface and retire the supplied preparation, occurrence/control and clock assumptions."
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++~~~
++
++## Theorem and proof obligations
++
++For every finite observation horizon T>=0 and a finite observation box, the
++specified finite native construction has the following properties. Every
++supported event history follows the same explicit content kernel F on its
++prepared digital nearest-neighbor domain, leaves every older Record fixed,
++and preserves the protected matter state functional under its event-free
++Hamiltonian evolution. There is a finite initial even-parity state with
++nonzero cell-averaged current in all three directions throughout the horizon.
++The single-seed version has the formation probability bounds in section 10
++and a carrier window of order (R+(gamma+t)T+log(1/epsilon))³, with collision
++storage accounted separately. Here R encloses both the seed and observation
++box, with R>=1. Take gamma,t>0 and 0<epsilon<=1; rates and hopping
++use the supplied time convention.
++
++The Record-history distribution is the one explicitly constructed from the
++program conditions and independent clocks. A readable matter-current
++interface is an additional task; the current observable here belongs to the
++supplied CAR representation. This theorem supplies neither an interacting
++phase nor an empirical prediction or completed TOE.
++
++| Premise or obligation | Role and disposition |
++|---|---|
++| Finite native ordered-star algebra, cycle code and even-CAR dictionary | Mathematical parent on pinned main; its physical carrier and event assumptions remain conditional |
++| Protected/candidate roles, Pauli context, code and ready-state preparation | Supplied conditions, stated explicitly below |
++| Biased cycle pulse and complete conditional instrument | Derived in sections 1–3 |
++| Absorbing finite collision channel | Derived in section 4, with fresh environment and supplied control |
++| Protected spectral current and finite parity/boundary window | Derived in sections 5–6 |
++| Program roles, seed, Born pulse and hybrid occurrence rule | Explicit conditions in sections 7–9 |
++| Nonexplosion and front bounds | Analytical probability proof in sections 9–10 |
++| Common finite physical realization over the requested window | Derived in section 11; no infinite physical cycle-code state presumed |
++| Native matter readout, preparation selection, autonomous controller and physical clock | Open physical interface obligations, with no asserted independence count |
++
++The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the named
++Lattice, Qubit, Admissibility and Record premises. The unrecorded ready/fuel
++states below are supplied quantum preparations, not readout values assigned
++to absent Records. The full model and the digital domain are additional
++conditions. No axiom, primitive or editable prompt is changed.
++
++## 1. Exact target and imported dictionary
++
++Use the finite native edge-qubit algebra and code of main's
++[native edge instrument](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md),
++equations (1)–(4) and Theorems 1–2. These supply an ordinary tensor carrier,
++ordered-star Pauli operators A_ij,B_i, central cycle involutions S_C, and
++the faithful even-CAR dictionary on each connected surviving graph. This
++unit does not reclassify that dictionary or its already proved fair
++nonbridge event as new. Born projectors, Hamiltonian dwell, initial code,
++Pauli context, and physical roles remain supplied.
++
++Split edges into a protected connected graph B and candidates R. Every
++candidate e has a chosen cycle C_e consisting of e and protected edges.
++Only candidates can become Records. Their hopping coefficients are zero
++from the beginning. The constant Hamiltonian is
++
++    H_B = sum_(f in B) a_f T_f.
++
++The protected algebra A_B is generated by all vertex parities B_v and all
++A_f for f in B. Connectivity implies that it represents the full even
++matter matrix algebra in the current code, before and after every event.
++For every finite candidate history h, write P_h for the remaining-cycle
++and old-Record code projector. Each unused S_e obeys S_e P_h=P_h.
++
++## 2. A biased gauge pulse and its complete conditional instrument
++
++Let Z=Z_e, S=S_e. The cycle algebra gives S*=S, S²=Z²=I,
++SZ=-ZS. Thus Y=iZS is a Hermitian involution. For real theta put
++
++    U(theta)=exp(-i theta Y/2)=c I+s ZS,
++    c=cos(theta/2), s=sin(theta/2), Q_z=(I+zZ)/2.
++
++This is a physical bounded-support unitary: its generator is the cycle
++Pauli operator times the local Z. No global code projector is used as a
++control. For the plaquette witnesses below, its support lies in the four
++vertex stars, with at most twenty native factors and physical radius four
++from the target. Up to four nearest-neighbor program controls make at most
++twenty-four factors. A spatial synthesis into two-site gates is not supplied.
++On the incoming code,
++
++    K_z P_h := Q_z U P_h = (c+z s) Q_z P_h.                 (11.1)
++
++Because P_h Z P_h=0,
++
++    P_h K_z* K_z P_h = p_z P_h,
++    p_z=(1+z sin(theta))/2.                               (11.2)
++
++For |theta|<=pi/2 the branch is sqrt(p_z) times the original fair
++isometry sqrt(2)Q_z P_h. If p_z=0 that branch is absent. For every state
++on P_h, including states entangled with an arbitrary reference, the
++normalized surviving matter state therefore equals its pre-event state.
++This is equality of the corresponding state functional/dictionary, not
++equality of the orthogonal physical Record branches.
++
++Every O in A_B commutes with S and with Z: its generators have X support
++only on protected edges. Consequently [O,U]=[O,Q_z]=0. Combining this
++commutation with the scalar effect (11.2) gives the stronger operator identity
++
++    P_h K_z* O K_z P_h = p_z P_h O P_h.                  (11.3)
++
++The entire protected energy distribution and its correlations with a
++reference survive each branch. Also [U,H_B]=[Q_z,H_B]=0 as full-carrier
++operator identities. A nonzero hopping coefficient on the candidate
++generally violates these identities; zero candidate hopping is essential.
++
++For distinct unused e,f, Z_e commutes with S_f, because f's cycle contains
++only f and protected edges. All S_e commute. Therefore all Y_e commute,
++all cross-edge K_e,z commute, and their coefficients may be any functions
++of already fixed commuting program Records. The surviving S_f and all old
++Z Records commute with the next instrument. Induction proves (11.1)–(11.3)
++for every supported history. Arbitrary interleaved H_B dwell adds only the
++same matter evolution that would occur without the events. There is no
++error accumulating with the number of formations.
++
++Equation (11.2) gives the same conditional Record probabilities for every
++protected matter input with the same program history. The present construction
++therefore specifies no matter-dependent Record readout.
++
++## 3. Literal nearest neighbors and a varying content law
++
++Use virtual vertices v in Z³, physical vertex sites 2v, and native qubits
++at edge centers 2v+e_a. Let R be x-oriented edges whose tail has odd y.
++Protect all other edges. Each candidate has a plaquette detour through
++the adjacent even-y row. No detour uses another candidate. The protected
++graph is connected: all y,z edges remain and every even-y row retains x
++edges. R has density 1/2 per virtual vertex, or 1/6 of virtual edges and
++1/16 of physical sites. In a finite open box include only candidates whose
++selected detour is present; protect the other boundary edges.
++
++For the first, static-program construction, all physical vertex sites carry
++supplied permanent digital program Records Z=z_v. The two endpoints of a
++native edge are its literal nearest neighbors; none of its four transverse
++neighbors carries a Record. Old native edge Records are never nearest
++neighbors of another native edge center. Fuel below remains unrecorded.
++Choose
++
++    theta = pi(z_L+z_R)/12,
++    p_+ = 1/2+(z_L+z_R)/8 in {1/4,1/2,3/4}.             (11.4)
++
++The controlled unitary is exp[-i pi(Z_L+Z_R)Y_e/24]. It preserves its
++digital program registers. Only the angle depends on the nearest-neighbor
++conditions; the physical pulse support includes the bounded cycle stars.
++
++A single content kernel on a specified nonempty finite family eta of
++rank-one neighbor Records is
++
++    F(eta) = (1/|eta|) sum_(rho in eta)
++             [(3/4) delta_rho + (1/4) delta_(I-rho)].    (11.5)
++
++Here the site matrix algebras have the supplied common identification.
++F is invariant under neighbor permutations and equivariant under simultaneous
++unitary conjugation. On the prepared commuting two-symbol domain (11.4)
++is exactly F, including all conditional histories and arbitrary matter
++states in the code. It varies between actually realized program conditions.
++There is no claim of universal quantum programming for nonorthogonal
++unknown states, or a physical implementation of (11.5) outside this digital
++domain. An empty conditioning domain is outside this construction.
++
++The periodic role pattern and its common basis are state/control conditions.
++Translations and rotations of the prepared construction obey the same F;
++selection of a covariant preparation or an autonomous controller is open.
++The program Records are initial data here; their own formation is not yet
++provided by this static-program version.
++
++## 4. A supplied absorbing event process and finite collision dilation
++
++Put one distinct fuel qubit at the spectator site x_e+e_z for each candidate
++center x_e, initially |1>. These sites have two odd coordinates and are
++disjoint from native qubits and endpoint programs. For a supplied rate
++gamma>0 define trajectory jump operators
++
++    J_z = sqrt(gamma) K_z tensor |0><1|_fuel.
++
++Since sum_z K_z* K_z=I on the full carrier, sum_z J_z*J_z=gamma P_1.
++The first jump has an exponential waiting time, gives law (11.2), empties
++the fuel, and makes the edge a permanent Z Record in this forward process.
++All other operations preserve this Z. Ready-site clocks are independent;
++the content law is conditioned on the actual local program Records.
++The GKSL generator, jump unraveling, clock, and the identification of a
++jump with formation are conditions, not deductions from the axioms.
++
++Its exact duration-h channel has Kraus operators
++
++    A_0 = I tensor(P_0+exp(-gamma h/2)P_1),
++    A_z = sqrt(1-exp(-gamma h)) K_z tensor |0><1|.
++
++For a three-state environment with labels idle,+,- initially idle, define
++
++    B = sum_z K_z tensor |0><1| tensor |z><idle|,
++    V=B+B*, beta=arccos(exp(-gamma h/2)).
++
++B*B=I tensor P_1 tensor |idle><idle|, B²=0, BB* is a projector
++orthogonal to B*B. Thus V³=V, and exp(-i beta V) supplies the displayed
++Kraus operators up to the harmless common jump phase -i. Fuel-zero with
++an idle environment is dark. Each time bin requires a fresh environment
++which is never recoupled. Two qubits embed its three labels; for n bins
++and m candidates the storage cost is at most 2nm environment qubits plus
++m fuel qubits, in addition to the physical native and program carriers.
++Environment placement and routing are additional implementation tasks.
++With zero assigned fuel/environment energy the collision commutes exactly
++with H_B. This conditional energy statement does not price controller
++preparation, timing, or spatial synthesis.
++
++At supplied elapsed time tau, the ideal process has candidate formed
++fraction 1-exp(-gamma tau), hence bulk formed density
++(1-exp(-gamma tau))/16 per physical site. A fixed finite
++region saturates. The late-time formation rate there tends to zero.
++The stated collision implementation uses fresh environments for its
++intermediate permanent histories. The runner exhibits a nonzero reverse
++amplitude if its used environment is recoupled. This finite comparator does
++not assert an obstruction to every alternative autonomous apparatus.
++
++## 5. A nonzero three-direction current in the protected graph
++
++Now take all protected hopping coefficients equal to t>0. Write a virtual
++site as (x,2m+s,z), s=0,1. Both sublattices have z hopping, only s=0 has
++x hopping, and each s=0 site has y neighbors at offsets +1 and -1.
++For a Bloch vector exp[i(k_x x+2k_y m+k_z z)] in the cell convention, the
++off-diagonal matrix element is t(1+exp(-2ik_y)). Moving the internal s=1
++phase into the basis makes it 2t cos(k_y). Thus the physical-position
++Bloch symbol and its two eigenvalues are
++
++    h(k)=2t cos(k_z) I + [[2t cos(k_x),2t cos(k_y)],
++                          [2t cos(k_y),0]],
++    E_±=2t cos(k_z)+t cos(k_x)±t D,
++    D=sqrt(cos²(k_x)+4cos²(k_y)).                         (11.6)
++
++Use k_x,k_z in [-pi,pi) and k_y in [-pi/2,pi/2). The upper-band patch
++
++    W=[pi/3,2pi/3] × [pi/6,pi/3] × [pi/3,2pi/3]
++
++is away from degeneracies. On W, 1<=D<2, |cos(k_x)|<=1/2,
++sin(k_x),sin(k_z)>=sqrt(3)/2, and cos(k_y),sin(k_y)>=1/2. Differentiating
++(11.6) gives the uniform velocity bounds
++
++    v_x=-t sin(k_x)(1+cos(k_x)/D) <= -sqrt(3)t/4,
++    v_y=-4t cos(k_y)sin(k_y)/D    <= -t/2,
++    v_z=-2t sin(k_z)              <= -sqrt(3)t.            (11.7)
++
++These are group velocities in supplied virtual-lattice/time units, not
++an emergent relativistic cone or a clock match. The patch volume is
++pi³/54, while the two-site Brillouin zone has volume 4pi³. There is one
++upper-band mode per cell, hence W contains 1/432 modes per virtual vertex.
++
++Define the infinite number-conserving quasifree CAR state by
++
++    C = I/4 + (1/2) 1_W(k) P_+(k).                       (11.8)
++
++Its covariance lies between I/4 and 3I/4 and commutes with h. The uniform
++I/4 part has zero bond current. For the oriented protected bond v→v+e_a,
++use j_v,a=i t(c_v* c_(v+e_a)-c_(v+e_a)* c_v), with zero on a missing bond.
++Its spatial average is the one-particle velocity i[h,X_a]. The Bloch
++Hellmann–Feynman identity then gives current per virtual vertex
++
++    J_a = (1/(16pi³)) integral_W v_a(k) d³k.             (11.9)
++
++The factor is (two vertices per cell)^(-1), covariance weight 1/2, and
++Brillouin-zone measure (4pi³)^(-1). Equations (11.7)–(11.9) imply
++
++    J_x <= -sqrt(3)t/3456,
++    J_y <= -t/1728,
++    J_z <= -sqrt(3)t/864.                               (11.10)
++
++Cell averaging means averaging the oriented bonds rooted at the two y
++sublattices. The off-diagonal phase change above does not remove the
++physical internal-position term from the current: (11.9) follows either
++in the physical-position basis or from i[h,X] before the phase change.
++This is a supplied CAR current observable; the theorem constructs no
++Record-content estimator for it.
++
++## 6. Finite native preparation and an arbitrarily long current window
++
++No restriction of an infinite physical cycle-code state is assumed. Let
++Omega be a finite open virtual box with its y interval starting at an even
++integer. Every odd-y x candidate has its detour in the adjacent lower
++even-y row. Then the protected finite graph is connected and its hopping
++matrix h_Omega is the compression of the infinite protected h. Let
++C_Omega be the compression of (11.8). Its spectrum nu_j stays in [1/4,3/4].
++Construct the finite quasifree density with these occupations and condition
++on even total fermion parity. Its preparation succeeds with probability
++
++    (1+product_j(1-2nu_j))/2 >= (1-2^(-M))/2,
++
++where M=|Omega|. In the occupation eigenbasis the conditioned covariance
++remains diagonal. Direct summation over the other independent occupations
++gives
++
++    nu_j^(even)-nu_j =
++      -2nu_j(1-nu_j) product_(l!=j)(1-2nu_l)
++       / [1+product_l(1-2nu_l)].
++
++Consequently
++
++    ||C_Omega^(even)-C_Omega|| <= delta_M,
++    delta_M=2^(-M)/(1-2^(-M)).                           (11.11)
++
++Parity conditioning need not preserve Gaussianity. Only the covariance
++bound is used. Map this even finite density into the original connected
++native cycle code by the imported faithful finite dictionary. This gives
++an actual finite physical initial state and avoids a boundary/parity
++compatibility shortcut. Its protected two-point function evolves by h_Omega
++even though its higher correlations need not be Gaussian.
++
++For each observed bond endpoint at graph distance at least d from the
++outside of Omega, the vectors h_Omega^n delta_v and h^n delta_v agree for
++n<d, with the finite vector extended by zero. Both Hamiltonian norms are
++at most 6t. For 0<=s<=T define a=6tT and R_d(a)=sum_(n>=d) a^n/n!.
++The exponential series gives
++
++    ||exp(i s h_Omega)delta_v-exp(i s h)delta_v|| <= 2R_d(a).
++
++The norm of C is at most one. Applying this bound to the two vectors in
++each covariance entry and adding (11.11) yields the uniform entry error
++
++    |C_finite(s)_(v,w)-C_infinite_(v,w)| <= 4R_d(a)+delta_M.
++                                                               (11.12)
++
++This comparison includes arbitrary times up to T, not just a selected
++momentum eigenstate in a periodic finite box. An oriented bond-current
++error is at most 2t times the right side of (11.12). The same bound holds
++for the two-site cell average in each direction.
++
++For d>=2a, ratios of successive tail terms are at most 1/2 and d!>=(d/e)^d,
++so R_d(a)<=2(ea/d)^d. For 0<epsilon<=1, it suffices to choose
++
++    d >= ceil(max(12 e tT, log_2(16/epsilon),1)),
++    M >= ceil(log_2(4/epsilon))                         (11.13)
++
++to make (11.12) at most epsilon. In particular epsilon<=1/8192 preserves
++at least half every nonzero current bound in (11.10), throughout
++the observation region and 0<=s<=T. Indeed the current error is at most
++2t/8192, whereas half the weakest bound is sqrt(3)t/6912; the comparison
++follows by squaring 13824/8192<sqrt(3). A finite physical carrier enclosing
++a virtual observation box of side R therefore has size
++O((R+tT+log(1/epsilon))³); the constants include the midpoint placement,
++native edges, static programs and fuel. Collision storage is additional
++and was priced separately in section 4.
++
++Every supported formation history preserves all protected matter
++observables by (11.3). Thus the current/window bound holds on every such
++history, with no event-count error. Increasing R permits an unbounded
++number of distinct formations during the same protected evolution. This
++is a finite growing-region construction with explicit preparation and
++resources; it does not assert a completed infinite physical code model.
++
++
++## 7. Disjoint physical roles and one conditional content law
++
++Keep native qubits at one-odd-coordinate edge centers, and the same candidate
++x edges with odd virtual y. Define the program graph P to consist of physical
++sites having at least two odd coordinates, with literal nearest-neighbor
++edges. Its three-odd sites are the vertices of a cubic graph of spacing two;
++its two-odd sites subdivide each edge once. P is connected, with degree six
++at a coarse vertex and degree two at an edge interior. It is disjoint from
++all native edge qubits and all all-even physical vertex sites.
++
++Place an optional native fuel qubit at the all-even tail 2v of each candidate
++edge (v,v+e_x), initially unrecorded in |1>. Candidate tails are distinct.
++This replaces the static version's transverse fuel location; it does not
++add a second qubit at a program site. The four transverse nearest neighbors
++of a candidate native qubit belong to P. Its two endpoint neighbors are
++unrecorded fuel/spectator sites.
++
++Initially one three-odd program site o is a supplied digital Record. Every
++other program qubit is prepared in |+x>. Program sites are not rotated or
++otherwise used as controls until they themselves are already Records, except
++for their own single formation pulse. No static endpoint program Records
++are present. Existing Records serve only as digital Z controls.
++
++The content law at every new program or native event is exactly
++
++    F(eta)=(1/n) sum_(rho in eta)
++            [(3/4)delta_rho+(1/4)delta_(I-rho)], n=|eta|>0.       (C.1)
++
++Eta lists all actual nearest-neighbor Record contents. In the common
++digital context let their signs sum to b. Then p_+=1/2+b/(4n). The common
++law is covariant under neighbor permutations and simultaneous conjugation,
++and varies with the supplied conditions. All digital event probabilities
++lie in [1/4,3/4]. From the same fixed seed, finite birth orders and all-plus
++or all-minus signs at a candidate's four neighbors therefore have positive
++probability. The different candidate probabilities 3/4 and 1/4 occur within
++one prepared history family, not only after changing the preparation.
++The role pattern and initial
++Pauli/preparation context are additional conditions, as before.
++
++An unrecorded program site becomes enabled when at least one of its program
++neighbors has formed. It uses (C.1), including any already formed native
++neighbors in eta. In fact a native candidate adjacent to an unrecorded
++program target cannot yet have formed, because its four-neighbor enabling
++condition includes that target. Thus those native contributions are absent
++at the program site's actual first event. Its ready |+x> factor is rotated by
++
++    U_program=exp(+i theta sigma_y/2), theta=arcsin(b/(2n)),
++
++then measured in Z. The sign of this rotation matters: its final Z mean is
++sin(theta)=b/(2n). All its controls are fixed Records. A native candidate
++becomes enabled after its four program neighbors have formed. It then uses
++the cycle pulse of the preceding construction with theta=arcsin(b/8). Its n is
++exactly four, so its probabilities are again (C.1).
++
++This is a forward process whose supplied occurrence rule uses the Record
++configuration to select enabled unrecorded targets. It does not define a
++readout value for an absent Record. It also does not implement the presence
++guard as a reversible quantum operation on an otherwise unspecified ready
++space. Program occurrence, initial readiness, and the single seed remain
++conditions. The optional native fuel realizes a native absorbing channel;
++no extra per-program fuel factor has been silently allocated.
++
++## 8. Full finite-history closure
++
++Take an initial product of the program ready/seed factors, native fuel,
++and any native matter code state (possibly with a matter reference).
++The program instruments commute with the protected matter algebra: their
++targets are disjoint, and every native control is a candidate Z which
++commutes with that algebra. Their scalar effect on the still untouched
++|+x> target gives (C.1), independently of the matter state.
++
++Every native event is the scalar-effect isometry in the preceding construction.
++It leaves all program Records unchanged. Any unused candidate's cycle
++check survives all earlier events because its witness contains no other
++candidate edge. Program events preserve those checks as well, including
++when a native Z is used as a control: that control is already a fixed
++Record and its cycle check was removed earlier. Therefore induction over
++every supported finite history proves:
++
++* every new content law equals F of the actual nearest-neighbor Records;
++* every old Record is unchanged;
++* every still-unrecorded program target is ready for its stated pulse;
++* the protected matter state functional equals its event-free H_B dwell.
++
++Shared controls need not make all abstract program event operators commute.
++Events use their actual causal histories; the induction does not reorder
++events whose condition sets change. This distinction avoids extending the
++static commuting-instrument statement beyond its hypotheses.
++
++All Record histories, including occurrence times below, have the explicit
++program-dependent law just derived for every initial protected matter state
++on the same code and program preparation.
++
++## 9. A supplied nonexplosive clock process
++
++Each program site receives an independent Exp(gamma) waiting time when it
++first becomes enabled; each candidate native site likewise receives one
++when all four program neighbors have formed. Enabling is permanent. Content
++draws use independent uniform random variables with the probabilities (C.1).
++The waiting times do not depend on those draws or on matter.
++
++If N_P program sites have formed, at most 6N_P unformed program sites are
++enabled. At most 6N_P native candidates could yet have been activated, since
++activation requires adjacency to a formed program site. Thus the total
++event rate is at most 12 gamma N_P, and hence at most 12 gamma N_total.
++Comparison with the linear pure-birth process proves nonexplosion. More
++explicitly, its successive mean holding times are (12 gamma n)^(-1);
++the centered independent holding-time series has summable variances while
++the sum of the means diverges. The comparison process has no finite-time
++accumulation, so neither does this one.
++
++Assign each program site v≠o an independent Exp(gamma) variable E_v at the
++start; unused clocks may be sampled in advance. Its formation time satisfies
++
++    T_P(o)=0,
++    T_P(v)=E_v+min_(u adjacent to v in P) T_P(u).                (C.2)
++
++It is the minimum sum of site waiting times along a path from o to v.
++Positive weights allow minimizing paths to be simple. Native events do not
++alter program enabling, so their content dependence does not change (C.2).
++Every fixed program vertex is reached almost surely by bounding (C.2) with
++the finite waiting-time sum along one fixed path. Countability makes this
++true simultaneously for all sites. Every candidate is subsequently enabled
++and forms almost surely. The infinite program process thus produces
++unboundedly many Records without explosion.
++
++This infinite statement concerns the supplied classical Record/time law and
++its local instruments. The preceding construction supplies finite physical native
++states for arbitrarily large regions, not an unproved global infinite
++native cycle-code state. The finite-window conclusion below uses only
++finite carriers and finite portions of this process.
++
++## 10. Explicit growing front bounds without simulated growth
++
++Distance in P from a three-odd o equals the physical Manhattan distance:
++one may change coordinates that end odd by even steps through subdivided
++coarse edges, then, if necessary, make the final step to the one even
++coordinate. Thus B_P(n) lies in a physical cube with at most (2n+1)^3 sites.
++For each v in B_P(n), fix one path of length at most n. The exponential
++moment at gamma/2 gives
++
++    Pr[T_P(v)>s] <= 2^n exp(-gamma s/2).
++
++A union bound, requiring no independence between these path sums, yields
++
++    Pr[B_P(n) not all formed by s]
++      <= (2n+1)^3 exp(n log(2)-gamma s/2).                     (C.3)
++
++Set n=floor(gamma T/(8 log(2))). All candidates at physical Manhattan
++distance at most n-1 from o have their four program neighbors in B_P(n).
++Applying (C.3) at s=T/2 and the remaining native exponential waits gives
++
++    Pr[one such candidate is unformed at T]
++      <= (2n+1)^3 [exp(-gamma T/8)+exp(-gamma T/2)].            (C.4)
++
++For small T the right side may exceed one; (C.4) is then a valid but
++uninformative bound. It is not a probability estimate fitted from growth
++simulations. For n>=7, let m=floor((n-1)/3). The contained cube of coordinate
++radius m has at least m² floor(m/2) candidates: odd x and even z each occur
++at least m times, and physical y congruent to 2 modulo 4 occurs at least
++floor(m/2) times. Thus (C.4) gives a positive constant times T³ native
++formations with probability tending to one. No constant continuing rate
++inside an already saturated fixed region follows.
++
++For an upper front, reaching program distance at least n before time T
++requires a simple ancestry path whose first n waiting times sum to at
++most T. There are at most 6^n such path prefixes. When n>gamma T, the
++optimized exponential lower-tail bound for a sum of n independent waits is
++
++    Pr[sum_(j=1)^n E_j<=T] <= (e gamma T/n)^n.
++
++Therefore
++
++    Pr[program distance >= n reached by T]
++       <= (6 e gamma T/n)^n <= 2^(-n),
++       if n>=12 e gamma T.                                  (C.5)
++
++A formed native candidate is adjacent to a formed program site, so its
++physical radius exceeds the program radius by at most one. The constants
++are deliberately loose analytical bounds, not a claimed limiting shape
++or a relativistic propagation speed.
++
++## 11. Joining the front to finite native transport
++
++For any prescribed finite T and observation region, choose the finite
++native box and even-parity preparation by equations (11.11)–
++(11.13). Include the candidate ball used in (C.4), every corresponding
++protected witness cycle, its program paths, and the current observation
++region. Program paths chosen for (C.3) stay inside that ball. A finite
++program domain containing it satisfies the same lower bound even if the
++domain boundary blocks external paths. Take the native boundary farther
++out by the current margin d=O(tT+log(1/epsilon)).
++
++This supplies arbitrarily large finite histories, a growing number of
++genuine native one-site Z Records with a varying nearest-neighbor content
++law, and nonzero protected current throughout the requested finite window.
++The required physical region scales as
++O((R+(gamma+t)T+log(1/epsilon))³), up to the explicit role and boundary
++constants. This counts carrier sites, programs, and optional native fuel;
++it does not include a full coherent controller for the hybrid occurrence
++rule or its fresh collision storage. It does not derive gamma/t, a physical
++clock, role preparation, or matter readout from the axioms.
++
++The advance over a finite list of scheduled fair edge deletions is the
++explicit varying local content law, complete supported-history closure,
++and a finite growing-window construction. A matter-dependent readable
++interface remains to be constructed.
++
++## 12. Verification and source review
++
++The three helpers are directly imported by the primary runner and included
++in its declared input closure. Native ordered-star matrices are built by
++computational-basis bit actions. A separate collision matrix exponential
++checks the partial-isometry dilation. Literal periodic graph edges check the
++Bloch spectrum and physical current, an explicit finite occupation sum checks
++parity conditioning, and open-boundary evolution challenges the Taylor bound.
++Finite role and Born-probability checks challenge the program construction.
++The [current-margin correction](../.claude/science/physics-loops/native-growing-formation-current-20260913/recovery/CURRENT_MARGIN_CORRECTION.md)
++records a real author-found constant error: the first tolerance preserved
++nonzero current but did not guarantee the stated half-margin. The final
++source uses1/8192 and an exact regression check rejects the old1/6912.
++Ten actual source mutations and their raw outputs are preserved in the
++[mutation record](../.claude/science/physics-loops/native-growing-formation-current-20260913/mutations/RESULTS.json).
++No simulated growth or numerical momentum integral supplies the front or
++current theorem. The infinite probability statement concerns the supplied
++classical law; the physical native construction used in the theorem is finite.
++
++These are different checks by the same executing author, not independent
++source-review or audit verdicts. Parent definitions and Theorems 1–3 were
++reread at the pinned main revision. The [source manifest](../.claude/science/physics-loops/native-growing-formation-current-20260913/SOURCE_MANIFEST.json)
++records recovery paths; the [review record](../.claude/science/physics-loops/native-growing-formation-current-20260913/REVIEW_HISTORY.md)
++records final findings, checks and their limits. The [scope record](../.claude/science/physics-loops/native-growing-formation-current-20260913/NO_GO_DISCIPLINE_CHECKLIST.md)
++distinguishes this explicit positive construction from a negative theorem.
++
++Independent source review and the exact combined current-main integration
++pipeline, strict lint and changed-evidence gates remain required before
++landing. Formal audit is deferred under the campaign cadence. The author
++proposes the bounded theorem and does not land it or write audit-owned fields.
+diff --git a/logs/runner-cache/native_growing_formation_current_2026_09_13.txt b/logs/runner-cache/native_growing_formation_current_2026_09_13.txt
+new file mode 100644
+index 0000000000..03409f491a
+--- /dev/null
++++ b/logs/runner-cache/native_growing_formation_current_2026_09_13.txt
+@@ -0,0 +1,1933 @@
++===== runner cache v1 =====
++runner: scripts/native_growing_formation_current_2026_09_13.py
++runner_sha256: d027c46dffab5d52200f6da6dfb988b23a4f5d9b30b53241ca7280777c08433f
++input_fingerprint_sha256: eec07a2bf0e05ce0c066125dbf19110b4bd8c5df5fbaa547b50ef0d3b31b4fe5
++timeout_sec: 180
++exit_code: 0
++elapsed_sec: 0.94
++status: ok
++----- stdout -----
++{
++  "checks": {
++    "native": {
++      "status": "passed",
++      "checks": [
++        {
++          "name": "code_projector",
++          "max_residual": 0.0
++        },
++        {
++          "name": "code_dimension_32",
++          "max_residual": 0.0
++        },
++        {
++          "name": "protected_number_conservation",
++          "max_residual": 0.0
++        },
++        {
++          "name": "cycle_0_involution",
++          "max_residual": 0.0
++        },
++        {
++          "name": "cycle_0_code",
++          "max_residual": 0.0
++        },
++        {
++          "name": "pulse_0_Hermitian",
++          "max_residual": 0.0
++        },
++        {
++          "name": "pulse_0_involution",
++          "max_residual": 0.0
++        },
++        {
++          "name": "unitarity_0_-0.5235987755982988",
++          "max_residual": 1.2253002782949126e-17
++        },
++        {
++          "name": "branch_amplitude_0_-0.5235987755982988_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_0_-0.5235987755982988_-1",
++          "max_residual": 2.7755575615628914e-17
++        },
++        {
++          "name": "protected_algebra_0_-0.5235987755982988_-1",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "branch_amplitude_0_-0.5235987755982988_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_0_-0.5235987755982988_1",
++          "max_residual": 1.3877787807814457e-17
++        },
++        {
++          "name": "protected_algebra_0_-0.5235987755982988_1",
++          "max_residual": 5.551115123125783e-17
++        },
++        {
++          "name": "unitarity_0_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "branch_amplitude_0_0_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_0_0_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "protected_algebra_0_0_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "branch_amplitude_0_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_0_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "protected_algebra_0_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "unitarity_0_0.5235987755982988",
++          "max_residual": 1.2253002782949126e-17
++        },
++        {
++          "name": "branch_amplitude_0_0.5235987755982988_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_0_0.5235987755982988_-1",
++          "max_residual": 1.3877787807814457e-17
++        },
++        {
++          "name": "protected_algebra_0_0.5235987755982988_-1",
++          "max_residual": 5.551115123125783e-17
++        },
++        {
++          "name": "branch_amplitude_0_0.5235987755982988_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_0_0.5235987755982988_1",
++          "max_residual": 2.7755575615628914e-17
++        },
++        {
++          "name": "protected_algebra_0_0.5235987755982988_1",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "wrong_sign_0",
++          "negative_control_residual": 0.12499999999999999
++        },
++        {
++          "name": "missing_cycle_agrees_on_code_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "missing_cycle_not_unitary_0",
++          "negative_control_residual": 0.4999999999999999
++        },
++        {
++          "name": "retired_hop_breaks_energy_0",
++          "negative_control_residual": 2.0
++        },
++        {
++          "name": "cycle_1_involution",
++          "max_residual": 0.0
++        },
++        {
++          "name": "cycle_1_code",
++          "max_residual": 0.0
++        },
++        {
++          "name": "pulse_1_Hermitian",
++          "max_residual": 0.0
++        },
++        {
++          "name": "pulse_1_involution",
++          "max_residual": 0.0
++        },
++        {
++          "name": "unitarity_1_-0.5235987755982988",
++          "max_residual": 1.2253002782949126e-17
++        },
++        {
++          "name": "branch_amplitude_1_-0.5235987755982988_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_1_-0.5235987755982988_-1",
++          "max_residual": 2.7755575615628914e-17
++        },
++        {
++          "name": "protected_algebra_1_-0.5235987755982988_-1",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "branch_amplitude_1_-0.5235987755982988_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_1_-0.5235987755982988_1",
++          "max_residual": 1.3877787807814457e-17
++        },
++        {
++          "name": "protected_algebra_1_-0.5235987755982988_1",
++          "max_residual": 5.551115123125783e-17
++        },
++        {
++          "name": "unitarity_1_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "branch_amplitude_1_0_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_1_0_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "protected_algebra_1_0_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "branch_amplitude_1_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_1_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "protected_algebra_1_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "unitarity_1_0.5235987755982988",
++          "max_residual": 1.2253002782949126e-17
++        },
++        {
++          "name": "branch_amplitude_1_0.5235987755982988_-1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_1_0.5235987755982988_-1",
++          "max_residual": 1.3877787807814457e-17
++        },
++        {
++          "name": "protected_algebra_1_0.5235987755982988_-1",
++          "max_residual": 5.551115123125783e-17
++        },
++        {
++          "name": "branch_amplitude_1_0.5235987755982988_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "scalar_effect_1_0.5235987755982988_1",
++          "max_residual": 2.7755575615628914e-17
++        },
++        {
++          "name": "protected_algebra_1_0.5235987755982988_1",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "wrong_sign_1",
++          "negative_control_residual": 0.125
++        },
++        {
++          "name": "missing_cycle_agrees_on_code_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "missing_cycle_not_unitary_1",
++          "negative_control_residual": 0.4999999999999999
++        },
++        {
++          "name": "retired_hop_breaks_energy_1",
++          "negative_control_residual": 2.0
++        },
++        {
++          "name": "physical_history_commutation_0_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_0_0_2",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_0_0_5",
++          "max_residual": 0.0
++        },
++        {
++          "name": "physical_history_commutation_0_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_0_1_2",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_0_1_5",
++          "max_residual": 0.0
++        },
++        {
++          "name": "physical_history_commutation_1_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_1_0_2",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_1_0_5",
++          "max_residual": 0.0
++        },
++        {
++          "name": "physical_history_commutation_1_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_1_1_2",
++          "max_residual": 0.0
++        },
++        {
++          "name": "history_Record_1_1_5",
++          "max_residual": 0.0
++        },
++        {
++          "name": "complete_history_protected_algebra",
++          "max_residual": 5.551115123125783e-17
++        },
++        {
++          "name": "star_partial_isometry",
++          "max_residual": 1.2253002782949126e-17
++        },
++        {
++          "name": "star_nilpotent",
++          "max_residual": 0.0
++        },
++        {
++          "name": "star_cubic",
++          "max_residual": 0.0
++        },
++        {
++          "name": "star_unitarity",
++          "max_residual": 2.220446049250313e-16
++        },
++        {
++          "name": "channel_idle",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "channel_jump_0",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "channel_jump_1",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "collision_protected_energy",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "same_collision_can_reverse_a_used_environment",
++          "negative_control_residual": 0.5561165969134938
++        }
++      ],
++      "count": 83,
++      "seconds": 0.11767174996202812,
++      "source_sha256": "7eaa03e39b66140ecdcfc37c37556acfbe8d5dad0229da1dcb099d3805c6c96b",
++      "note_sha256": "190f0f61d21da3ed46bf8063f4084047b36909e28f12378223e88e52696134cc",
++      "scope": "same-author finite sign, history and dilation checks; no independent audit"
++    },
++    "transport": {
++      "status": "passed",
++      "count": 327,
++      "checks": [
++        {
++          "name": "physical_Bloch_phase_00",
++          "exact": true
++        },
++        {
++          "name": "physical_y_current_00",
++          "exact": true
++        },
++        {
++          "name": "physical_Bloch_phase_01",
++          "exact": true
++        },
++        {
++          "name": "physical_y_current_01",
++          "exact": true
++        },
++        {
++          "name": "physical_Bloch_phase_10",
++          "exact": true
++        },
++        {
++          "name": "physical_y_current_10",
++          "exact": true
++        },
++        {
++          "name": "physical_Bloch_phase_11",
++          "exact": true
++        },
++        {
++          "name": "physical_y_current_11",
++          "exact": true
++        },
++        {
++          "name": "omitted_internal_position_changes_current_operator",
++          "rejected": true
++        },
++        {
++          "name": "characteristic_polynomial",
++          "exact": true
++        },
++        {
++          "name": "patch_modes_per_vertex",
++          "exact": true
++        },
++        {
++          "name": "exact_all_direction_half_current_margin",
++          "epsilon": "1/8192"
++        },
++        {
++          "name": "old_tolerance_fails_claimed_half_x_margin",
++          "rejected": true
++        },
++        {
++          "name": "literal_mode_2_0",
++          "max_residual": 4.163336342344337e-17
++        },
++        {
++          "name": "literal_mode_2_1",
++          "max_residual": 5.551115123125783e-17
++        },
++        {
++          "name": "literal_mode_4_0",
++          "max_residual": 7.165058972546719e-17
++        },
++        {
++          "name": "literal_mode_4_1",
++          "max_residual": 1.1631705747361534e-16
++        },
++        {
++          "name": "literal_mode_6_0",
++          "max_residual": 1.2738115944464653e-16
++        },
++        {
++          "name": "literal_mode_6_1",
++          "max_residual": 1.5218182408308984e-16
++        },
++        {
++          "name": "literal_mode_8_0",
++          "max_residual": 5.902086844557842e-17
++        },
++        {
++          "name": "literal_mode_8_1",
++          "max_residual": 5.390439619135067e-17
++        },
++        {
++          "name": "literal_mode_10_0",
++          "max_residual": 3.1031676915590914e-16
++        },
++        {
++          "name": "literal_mode_10_1",
++          "max_residual": 2.387624894196368e-16
++        },
++        {
++          "name": "literal_mode_12_0",
++          "max_residual": 1.1934342793740772e-16
++        },
++        {
++          "name": "literal_mode_12_1",
++          "max_residual": 1.2118257228641695e-16
++        },
++        {
++          "name": "literal_mode_14_0",
++          "max_residual": 1.5515838457795457e-17
++        },
++        {
++          "name": "literal_mode_14_1",
++          "max_residual": 5.594315114139762e-17
++        },
++        {
++          "name": "literal_mode_16_0",
++          "max_residual": 1.2203628619423782e-16
++        },
++        {
++          "name": "literal_mode_16_1",
++          "max_residual": 1.5515838457795457e-16
++        },
++        {
++          "name": "literal_mode_18_0",
++          "max_residual": 2.2887833992611187e-16
++        },
++        {
++          "name": "literal_mode_18_1",
++          "max_residual": 1.6883057536160646e-16
++        },
++        {
++          "name": "literal_mode_20_0",
++          "max_residual": 4.0978826348654606e-16
++        },
++        {
++          "name": "literal_mode_20_1",
++          "max_residual": 3.009894408363891e-16
++        },
++        {
++          "name": "literal_mode_22_0",
++          "max_residual": 3.882061541865368e-16
++        },
++        {
++          "name": "literal_mode_22_1",
++          "max_residual": 4.213387094136756e-16
++        },
++        {
++          "name": "literal_mode_24_0",
++          "max_residual": 1.9634012289776712e-16
++        },
++        {
++          "name": "literal_mode_24_1",
++          "max_residual": 2.5589376332604516e-16
++        },
++        {
++          "name": "literal_mode_26_0",
++          "max_residual": 3.061616997868383e-17
++        },
++        {
++          "name": "literal_mode_26_1",
++          "max_residual": 3.0616169978683824e-17
++        },
++        {
++          "name": "literal_mode_28_0",
++          "max_residual": 1.12772719393135e-16
++        },
++        {
++          "name": "literal_mode_28_1",
++          "max_residual": 1.1857187100668868e-16
++        },
++        {
++          "name": "literal_mode_30_0",
++          "max_residual": 2.959651895582885e-16
++        },
++        {
++          "name": "literal_mode_30_1",
++          "max_residual": 1.9451597974997743e-16
++        },
++        {
++          "name": "literal_mode_32_0",
++          "max_residual": 5.9211894646675e-16
++        },
++        {
++          "name": "literal_mode_32_1",
++          "max_residual": 6.123233995736767e-17
++        },
++        {
++          "name": "literal_mode_34_0",
++          "max_residual": 4.969187675080721e-16
++        },
++        {
++          "name": "literal_mode_34_1",
++          "max_residual": 3.11864493316497e-16
++        },
++        {
++          "name": "literal_mode_36_0",
++          "max_residual": 3.2083017756578025e-16
++        },
++        {
++          "name": "literal_mode_36_1",
++          "max_residual": 3.0467987022359185e-16
++        },
++        {
++          "name": "literal_mode_38_0",
++          "max_residual": 7.686611497583147e-17
++        },
++        {
++          "name": "literal_mode_38_1",
++          "max_residual": 1.1103074221624714e-16
++        },
++        {
++          "name": "literal_mode_40_0",
++          "max_residual": 2.6736838850931897e-16
++        },
++        {
++          "name": "literal_mode_40_1",
++          "max_residual": 3.5497037427302993e-16
++        },
++        {
++          "name": "literal_mode_42_0",
++          "max_residual": 3.3594567230594303e-16
++        },
++        {
++          "name": "literal_mode_42_1",
++          "max_residual": 2.6945789820192466e-16
++        },
++        {
++          "name": "literal_mode_44_0",
++          "max_residual": 7.550332863779066e-16
++        },
++        {
++          "name": "literal_mode_44_1",
++          "max_residual": 4.3382870954300763e-16
++        },
++        {
++          "name": "literal_mode_46_0",
++          "max_residual": 7.264329320467944e-16
++        },
++        {
++          "name": "literal_mode_46_1",
++          "max_residual": 4.631939073484647e-16
++        },
++        {
++          "name": "literal_mode_48_0",
++          "max_residual": 4.588105842142954e-16
++        },
++        {
++          "name": "literal_mode_48_1",
++          "max_residual": 6.396215040447424e-16
++        },
++        {
++          "name": "literal_mode_50_0",
++          "max_residual": 4.1777673608052095e-17
++        },
++        {
++          "name": "literal_mode_50_1",
++          "max_residual": 6.206335383118183e-17
++        },
++        {
++          "name": "literal_mode_52_0",
++          "max_residual": 1.2149258193159488e-16
++        },
++        {
++          "name": "literal_mode_52_1",
++          "max_residual": 1.716587549445839e-16
++        },
++        {
++          "name": "literal_mode_54_0",
++          "max_residual": 1.8875832159447664e-16
++        },
++        {
++          "name": "literal_mode_54_1",
++          "max_residual": 1.7010907505015192e-16
++        },
++        {
++          "name": "literal_mode_56_0",
++          "max_residual": 4.163336342344337e-16
++        },
++        {
++          "name": "literal_mode_56_1",
++          "max_residual": 3.1358215827540143e-16
++        },
++        {
++          "name": "literal_mode_58_0",
++          "max_residual": 3.3306690738754696e-16
++        },
++        {
++          "name": "literal_mode_58_1",
++          "max_residual": 3.342213888644167e-16
++        },
++        {
++          "name": "literal_mode_60_0",
++          "max_residual": 2.3389836998737276e-16
++        },
++        {
++          "name": "literal_mode_60_1",
++          "max_residual": 3.203936111033422e-16
++        },
++        {
++          "name": "literal_mode_62_0",
++          "max_residual": 1.1258341994493904e-16
++        },
++        {
++          "name": "literal_mode_62_1",
++          "max_residual": 1.2412670766236366e-16
++        },
++        {
++          "name": "literal_mode_64_0",
++          "max_residual": 2.6124954373719865e-16
++        },
++        {
++          "name": "literal_mode_64_1",
++          "max_residual": 3.11864493316497e-16
++        },
++        {
++          "name": "literal_current_1.0471975511965976_0.7853981633974483_1.0471975511965976_0",
++          "max_residual": 2.2204834277217706e-16
++        },
++        {
++          "name": "literal_current_1.0471975511965976_0.7853981633974483_1.0471975511965976_1",
++          "max_residual": 8.88178453953299e-16
++        },
++        {
++          "name": "literal_current_1.0471975511965976_0.7853981633974483_1.0471975511965976_2",
++          "max_residual": 8.881784807495684e-16
++        },
++        {
++          "name": "literal_mode_66_0",
++          "max_residual": 3.8659043403122315e-16
++        },
++        {
++          "name": "literal_mode_66_1",
++          "max_residual": 3.469446951953614e-16
++        },
++        {
++          "name": "literal_current_1.0471975511965976_0.7853981633974483_2.0943951023931953_0",
++          "max_residual": 2.220454218961126e-16
++        },
++        {
++          "name": "literal_current_1.0471975511965976_0.7853981633974483_2.0943951023931953_1",
++          "max_residual": 4.441115714830274e-16
++        },
++        {
++          "name": "literal_current_1.0471975511965976_0.7853981633974483_2.0943951023931953_2",
++          "max_residual": 2.220478908262604e-16
++        },
++        {
++          "name": "literal_mode_68_0",
++          "max_residual": 6.093992464111427e-16
++        },
++        {
++          "name": "literal_mode_68_1",
++          "max_residual": 2.659960676773342e-16
++        },
++        {
++          "name": "literal_mode_70_0",
++          "max_residual": 4.922214816562908e-16
++        },
++        {
++          "name": "literal_mode_70_1",
++          "max_residual": 4.602340039745779e-16
++        },
++        {
++          "name": "literal_mode_72_0",
++          "max_residual": 4.2610119076017304e-16
++        },
++        {
++          "name": "literal_mode_72_1",
++          "max_residual": 8.715724226945101e-16
++        },
++        {
++          "name": "literal_mode_74_0",
++          "max_residual": 6.938893903907228e-17
++        },
++        {
++          "name": "literal_mode_74_1",
++          "max_residual": 1.2412670766236366e-16
++        },
++        {
++          "name": "literal_mode_76_0",
++          "max_residual": 2.858540832404804e-16
++        },
++        {
++          "name": "literal_mode_76_1",
++          "max_residual": 3.7238012298709097e-16
++        },
++        {
++          "name": "literal_mode_78_0",
++          "max_residual": 3.2368285245694683e-16
++        },
++        {
++          "name": "literal_mode_78_1",
++          "max_residual": 5.627261618861785e-16
++        },
++        {
++          "name": "literal_mode_80_0",
++          "max_residual": 5.9211894646675e-16
++        },
++        {
++          "name": "literal_mode_80_1",
++          "max_residual": 6.195464776079161e-16
++        },
++        {
++          "name": "literal_mode_82_0",
++          "max_residual": 5.71395899374721e-16
++        },
++        {
++          "name": "literal_mode_82_1",
++          "max_residual": 4.992471030961519e-16
++        },
++        {
++          "name": "literal_mode_84_0",
++          "max_residual": 4.2099133379706923e-16
++        },
++        {
++          "name": "literal_mode_84_1",
++          "max_residual": 9.074842391027969e-16
++        },
++        {
++          "name": "literal_mode_86_0",
++          "max_residual": 2.5018537765542007e-16
++        },
++        {
++          "name": "literal_mode_86_1",
++          "max_residual": 2.558937633260452e-16
++        },
++        {
++          "name": "literal_mode_88_0",
++          "max_residual": 4.699860481963431e-16
++        },
++        {
++          "name": "literal_mode_88_1",
++          "max_residual": 5.440730028703117e-16
++        },
++        {
++          "name": "literal_mode_90_0",
++          "max_residual": 6.579886408580703e-16
++        },
++        {
++          "name": "literal_mode_90_1",
++          "max_residual": 5.655092105929845e-16
++        },
++        {
++          "name": "literal_mode_92_0",
++          "max_residual": 1.0168025090427727e-15
++        },
++        {
++          "name": "literal_mode_92_1",
++          "max_residual": 5.622724227595713e-16
++        },
++        {
++          "name": "literal_mode_94_0",
++          "max_residual": 7.689659557974535e-16
++        },
++        {
++          "name": "literal_mode_94_1",
++          "max_residual": 6.220283963191678e-16
++        },
++        {
++          "name": "literal_mode_96_0",
++          "max_residual": 6.197372488554928e-16
++        },
++        {
++          "name": "literal_mode_96_1",
++          "max_residual": 1.1921980955184335e-15
++        },
++        {
++          "name": "literal_mode_98_0",
++          "max_residual": 1.4898437035160061e-16
++        },
++        {
++          "name": "literal_mode_98_1",
++          "max_residual": 1.2118257228641695e-16
++        },
++        {
++          "name": "literal_mode_100_0",
++          "max_residual": 1.8041124150158794e-16
++        },
++        {
++          "name": "literal_mode_100_1",
++          "max_residual": 1.5515838457795457e-16
++        },
++        {
++          "name": "literal_mode_102_0",
++          "max_residual": 2.8609792490763985e-16
++        },
++        {
++          "name": "literal_mode_102_1",
++          "max_residual": 2.2618026913899003e-16
++        },
++        {
++          "name": "literal_mode_104_0",
++          "max_residual": 5.900916318210353e-16
++        },
++        {
++          "name": "literal_mode_104_1",
++          "max_residual": 4.74519013200431e-16
++        },
++        {
++          "name": "literal_mode_106_0",
++          "max_residual": 4.621532547029658e-16
++        },
++        {
++          "name": "literal_mode_106_1",
++          "max_residual": 4.0531694296714425e-16
++        },
++        {
++          "name": "literal_mode_108_0",
++          "max_residual": 3.331605951866314e-16
++        },
++        {
++          "name": "literal_mode_108_1",
++          "max_residual": 3.130971641029511e-16
++        },
++        {
++          "name": "literal_mode_110_0",
++          "max_residual": 1.5026519671295096e-16
++        },
++        {
++          "name": "literal_mode_110_1",
++          "max_residual": 1.6883057536160646e-16
++        },
++        {
++          "name": "literal_mode_112_0",
++          "max_residual": 3.356589068483857e-16
++        },
++        {
++          "name": "literal_mode_112_1",
++          "max_residual": 4.475544956049091e-16
++        },
++        {
++          "name": "literal_current_2.0943951023931953_0.7853981633974483_1.0471975511965976_0",
++          "max_residual": 1.4486902833048534e-19
++        },
++        {
++          "name": "literal_current_2.0943951023931953_0.7853981633974483_1.0471975511965976_1",
++          "max_residual": 4.964163623302594e-18
++        },
++        {
++          "name": "literal_current_2.0943951023931953_0.7853981633974483_1.0471975511965976_2",
++          "max_residual": 4.441735292381276e-16
++        },
++        {
++          "name": "literal_mode_114_0",
++          "max_residual": 5.747232187430761e-16
++        },
++        {
++          "name": "literal_mode_114_1",
++          "max_residual": 6.274010947468885e-16
++        },
++        {
++          "name": "literal_current_2.0943951023931953_0.7853981633974483_2.0943951023931953_0",
++          "max_residual": 8.076367414566443e-19
++        },
++        {
++          "name": "literal_current_2.0943951023931953_0.7853981633974483_2.0943951023931953_1",
++          "max_residual": 2.2222264725092817e-16
++        },
++        {
++          "name": "literal_current_2.0943951023931953_0.7853981633974483_2.0943951023931953_2",
++          "max_residual": 6.661426416941529e-16
++        },
++        {
++          "name": "literal_mode_116_0",
++          "max_residual": 8.459761032879693e-16
++        },
++        {
++          "name": "literal_mode_116_1",
++          "max_residual": 3.608224830031759e-16
++        },
++        {
++          "name": "literal_mode_118_0",
++          "max_residual": 8.93798490114984e-16
++        },
++        {
++          "name": "literal_mode_118_1",
++          "max_residual": 5.440855976001004e-16
++        },
++        {
++          "name": "literal_mode_120_0",
++          "max_residual": 6.713178136967714e-16
++        },
++        {
++          "name": "literal_mode_120_1",
++          "max_residual": 5.750497121565129e-16
++        },
++        {
++          "name": "literal_mode_122_0",
++          "max_residual": 1.9451597974997743e-16
++        },
++        {
++          "name": "literal_mode_122_1",
++          "max_residual": 2.8576114088871287e-16
++        },
++        {
++          "name": "literal_mode_124_0",
++          "max_residual": 4.2499345902880405e-16
++        },
++        {
++          "name": "literal_mode_124_1",
++          "max_residual": 3.4586419865953925e-16
++        },
++        {
++          "name": "literal_mode_126_0",
++          "max_residual": 6.403362282114314e-16
++        },
++        {
++          "name": "literal_mode_126_1",
++          "max_residual": 3.296522366252803e-16
++        },
++        {
++          "name": "literal_mode_128_0",
++          "max_residual": 8.252325904466731e-16
++        },
++        {
++          "name": "literal_mode_128_1",
++          "max_residual": 6.473657049138937e-16
++        },
++        {
++          "name": "literal_mode_130_0",
++          "max_residual": 7.71185559270127e-16
++        },
++        {
++          "name": "literal_mode_130_1",
++          "max_residual": 5.71395899374721e-16
++        },
++        {
++          "name": "literal_mode_132_0",
++          "max_residual": 7.493747221907888e-16
++        },
++        {
++          "name": "literal_mode_132_1",
++          "max_residual": 4.847302891456678e-16
++        },
++        {
++          "name": "literal_mode_134_0",
++          "max_residual": 3.579440240851112e-16
++        },
++        {
++          "name": "literal_mode_134_1",
++          "max_residual": 1.8556562896439023e-16
++        },
++        {
++          "name": "literal_mode_136_0",
++          "max_residual": 5.68354290845375e-16
++        },
++        {
++          "name": "literal_mode_136_1",
++          "max_residual": 3.9160205798978334e-16
++        },
++        {
++          "name": "literal_mode_138_0",
++          "max_residual": 9.192452540260068e-16
++        },
++        {
++          "name": "literal_mode_138_1",
++          "max_residual": 4.824012219386366e-16
++        },
++        {
++          "name": "literal_mode_140_0",
++          "max_residual": 1.247457973265988e-15
++        },
++        {
++          "name": "literal_mode_140_1",
++          "max_residual": 5.312333970709034e-16
++        },
++        {
++          "name": "literal_mode_142_0",
++          "max_residual": 1.1278637897670841e-15
++        },
++        {
++          "name": "literal_mode_142_1",
++          "max_residual": 5.957464140271439e-16
++        },
++        {
++          "name": "literal_mode_144_0",
++          "max_residual": 7.318091523463332e-16
++        },
++        {
++          "name": "literal_mode_144_1",
++          "max_residual": 8.455206652451151e-16
++        },
++        {
++          "name": "literal_mode_146_0",
++          "max_residual": 5.902086844557842e-17
++        },
++        {
++          "name": "literal_mode_146_1",
++          "max_residual": 4.25050644052466e-17
++        },
++        {
++          "name": "literal_mode_148_0",
++          "max_residual": 3.030954607830199e-16
++        },
++        {
++          "name": "literal_mode_148_1",
++          "max_residual": 1.9329521701561158e-16
++        },
++        {
++          "name": "literal_mode_150_0",
++          "max_residual": 6.894341957538586e-16
++        },
++        {
++          "name": "literal_mode_150_1",
++          "max_residual": 4.1385517960171997e-16
++        },
++        {
++          "name": "literal_mode_152_0",
++          "max_residual": 1.180417368911568e-16
++        },
++        {
++          "name": "literal_mode_152_1",
++          "max_residual": 7.313644990426517e-17
++        },
++        {
++          "name": "literal_mode_154_0",
++          "max_residual": 1.0026641665932502e-15
++        },
++        {
++          "name": "literal_mode_154_1",
++          "max_residual": 6.134939766467765e-16
++        },
++        {
++          "name": "literal_mode_156_0",
++          "max_residual": 5.319014089382401e-16
++        },
++        {
++          "name": "literal_mode_156_1",
++          "max_residual": 3.4021815010030383e-16
++        },
++        {
++          "name": "literal_mode_158_0",
++          "max_residual": 5.00717329682987e-16
++        },
++        {
++          "name": "literal_mode_158_1",
++          "max_residual": 1.3136284816341379e-16
++        },
++        {
++          "name": "literal_mode_160_0",
++          "max_residual": 5.772225570600925e-16
++        },
++        {
++          "name": "literal_mode_160_1",
++          "max_residual": 3.787898901196402e-16
++        },
++        {
++          "name": "literal_mode_162_0",
++          "max_residual": 8.93798490114984e-16
++        },
++        {
++          "name": "literal_mode_162_1",
++          "max_residual": 4.414283309767472e-16
++        },
++        {
++          "name": "literal_mode_164_0",
++          "max_residual": 1.3530441987843078e-15
++        },
++        {
++          "name": "literal_mode_164_1",
++          "max_residual": 5.625734393037708e-16
++        },
++        {
++          "name": "literal_mode_166_0",
++          "max_residual": 1.217454592664719e-15
++        },
++        {
++          "name": "literal_mode_166_1",
++          "max_residual": 5.452774268452087e-16
++        },
++        {
++          "name": "literal_mode_168_0",
++          "max_residual": 7.852915179681957e-16
++        },
++        {
++          "name": "literal_mode_168_1",
++          "max_residual": 5.525468708028185e-16
++        },
++        {
++          "name": "literal_mode_170_0",
++          "max_residual": 6.123233995736767e-17
++        },
++        {
++          "name": "literal_mode_170_1",
++          "max_residual": 2.96059473233375e-16
++        },
++        {
++          "name": "literal_mode_172_0",
++          "max_residual": 4.859703277263795e-16
++        },
++        {
++          "name": "literal_mode_172_1",
++          "max_residual": 3.4586419865953925e-16
++        },
++        {
++          "name": "literal_mode_174_0",
++          "max_residual": 9.786546690961896e-16
++        },
++        {
++          "name": "literal_mode_174_1",
++          "max_residual": 5.973900055198069e-16
++        },
++        {
++          "name": "literal_mode_176_0",
++          "max_residual": 1.3067025728482356e-15
++        },
++        {
++          "name": "literal_mode_176_1",
++          "max_residual": 8.983838096930198e-16
++        },
++        {
++          "name": "literal_mode_178_0",
++          "max_residual": 1.1620938331323894e-15
++        },
++        {
++          "name": "literal_mode_178_1",
++          "max_residual": 8.521006918398717e-16
++        },
++        {
++          "name": "literal_mode_180_0",
++          "max_residual": 6.752153479335822e-16
++        },
++        {
++          "name": "literal_mode_180_1",
++          "max_residual": 8.918512268109019e-16
++        },
++        {
++          "name": "literal_mode_182_0",
++          "max_residual": 6.624184772142403e-16
++        },
++        {
++          "name": "literal_mode_182_1",
++          "max_residual": 3.254103647560402e-16
++        },
++        {
++          "name": "literal_mode_184_0",
++          "max_residual": 7.911556306605241e-16
++        },
++        {
++          "name": "literal_mode_184_1",
++          "max_residual": 7.021666937153402e-16
++        },
++        {
++          "name": "literal_mode_186_0",
++          "max_residual": 1.415262216750919e-15
++        },
++        {
++          "name": "literal_mode_186_1",
++          "max_residual": 6.374843249785811e-16
++        },
++        {
++          "name": "literal_mode_188_0",
++          "max_residual": 2.0174352718600007e-15
++        },
++        {
++          "name": "literal_mode_188_1",
++          "max_residual": 7.980552038002546e-16
++        },
++        {
++          "name": "literal_mode_190_0",
++          "max_residual": 1.7628614688236971e-15
++        },
++        {
++          "name": "literal_mode_190_1",
++          "max_residual": 6.052395267065679e-16
++        },
++        {
++          "name": "literal_mode_192_0",
++          "max_residual": 1.4724849511594846e-15
++        },
++        {
++          "name": "literal_mode_192_1",
++          "max_residual": 7.57325516167598e-16
++        },
++        {
++          "name": "literal_mode_194_0",
++          "max_residual": 2.392661020640212e-16
++        },
++        {
++          "name": "literal_mode_194_1",
++          "max_residual": 2.1420849872268348e-16
++        },
++        {
++          "name": "literal_mode_196_0",
++          "max_residual": 3.3306690738754696e-16
++        },
++        {
++          "name": "literal_mode_196_1",
++          "max_residual": 2.7755575615628914e-16
++        },
++        {
++          "name": "literal_mode_198_0",
++          "max_residual": 4.520411121784011e-16
++        },
++        {
++          "name": "literal_mode_198_1",
++          "max_residual": 3.4779367097414353e-16
++        },
++        {
++          "name": "literal_mode_200_0",
++          "max_residual": 8.886119947416683e-16
++        },
++        {
++          "name": "literal_mode_200_1",
++          "max_residual": 6.898269189236012e-16
++        },
++        {
++          "name": "literal_mode_202_0",
++          "max_residual": 5.33167196845001e-16
++        },
++        {
++          "name": "literal_mode_202_1",
++          "max_residual": 4.1181326917117243e-16
++        },
++        {
++          "name": "literal_mode_204_0",
++          "max_residual": 5.344750312233835e-16
++        },
++        {
++          "name": "literal_mode_204_1",
++          "max_residual": 4.1656486648454873e-16
++        },
++        {
++          "name": "literal_mode_206_0",
++          "max_residual": 4.669156023538214e-16
++        },
++        {
++          "name": "literal_mode_206_1",
++          "max_residual": 3.0531133177191805e-16
++        },
++        {
++          "name": "literal_mode_208_0",
++          "max_residual": 5.368569792575578e-16
++        },
++        {
++          "name": "literal_mode_208_1",
++          "max_residual": 4.282483846487626e-16
++        },
++        {
++          "name": "literal_mode_210_0",
++          "max_residual": 1.0698137626234984e-15
++        },
++        {
++          "name": "literal_mode_210_1",
++          "max_residual": 5.464571446693442e-16
++        },
++        {
++          "name": "literal_mode_212_0",
++          "max_residual": 1.3611556143588143e-15
++        },
++        {
++          "name": "literal_mode_212_1",
++          "max_residual": 5.852771868758543e-16
++        },
++        {
++          "name": "literal_mode_214_0",
++          "max_residual": 1.0235750533041808e-15
++        },
++        {
++          "name": "literal_mode_214_1",
++          "max_residual": 7.43692760169701e-16
++        },
++        {
++          "name": "literal_mode_216_0",
++          "max_residual": 1.0162341189061925e-15
++        },
++        {
++          "name": "literal_mode_216_1",
++          "max_residual": 6.407872222066845e-16
++        },
++        {
++          "name": "literal_mode_218_0",
++          "max_residual": 3.11864493316497e-16
++        },
++        {
++          "name": "literal_mode_218_1",
++          "max_residual": 3.296522366252803e-16
++        },
++        {
++          "name": "literal_mode_220_0",
++          "max_residual": 4.779784928769662e-16
++        },
++        {
++          "name": "literal_mode_220_1",
++          "max_residual": 6.325808965040145e-16
++        },
++        {
++          "name": "literal_mode_222_0",
++          "max_residual": 7.71185559270127e-16
++        },
++        {
++          "name": "literal_mode_222_1",
++          "max_residual": 8.983838096930198e-16
++        },
++        {
++          "name": "literal_mode_224_0",
++          "max_residual": 1.1620938331323894e-15
++        },
++        {
++          "name": "literal_mode_224_1",
++          "max_residual": 8.983838096930198e-16
++        },
++        {
++          "name": "literal_mode_226_0",
++          "max_residual": 1.2496945994536461e-15
++        },
++        {
++          "name": "literal_mode_226_1",
++          "max_residual": 8.983838096930198e-16
++        },
++        {
++          "name": "literal_mode_228_0",
++          "max_residual": 7.996839384123562e-16
++        },
++        {
++          "name": "literal_mode_228_1",
++          "max_residual": 8.918512268109017e-16
++        },
++        {
++          "name": "literal_mode_230_0",
++          "max_residual": 5.178818254839186e-16
++        },
++        {
++          "name": "literal_mode_230_1",
++          "max_residual": 5.613217783960923e-16
++        },
++        {
++          "name": "literal_mode_232_0",
++          "max_residual": 7.669910700347697e-16
++        },
++        {
++          "name": "literal_mode_232_1",
++          "max_residual": 7.836036080310378e-16
++        },
++        {
++          "name": "literal_mode_234_0",
++          "max_residual": 1.3051496454824036e-15
++        },
++        {
++          "name": "literal_mode_234_1",
++          "max_residual": 7.825165134196698e-16
++        },
++        {
++          "name": "literal_mode_236_0",
++          "max_residual": 1.5700924586837751e-15
++        },
++        {
++          "name": "literal_mode_236_1",
++          "max_residual": 7.774426035788603e-16
++        },
++        {
++          "name": "literal_mode_238_0",
++          "max_residual": 1.233562827366468e-15
++        },
++        {
++          "name": "literal_mode_238_1",
++          "max_residual": 9.985070492053649e-16
++        },
++        {
++          "name": "literal_mode_240_0",
++          "max_residual": 1.1464252722681708e-15
++        },
++        {
++          "name": "literal_mode_240_1",
++          "max_residual": 8.194066919802401e-16
++        },
++        {
++          "name": "literal_mode_242_0",
++          "max_residual": 9.526775353142767e-17
++        },
++        {
++          "name": "literal_mode_242_1",
++          "max_residual": 1.1857187100668868e-16
++        },
++        {
++          "name": "literal_mode_244_0",
++          "max_residual": 2.300586061945776e-16
++        },
++        {
++          "name": "literal_mode_244_1",
++          "max_residual": 3.203936111033422e-16
++        },
++        {
++          "name": "literal_mode_246_0",
++          "max_residual": 2.7928509224031823e-16
++        },
++        {
++          "name": "literal_mode_246_1",
++          "max_residual": 3.6087198921135867e-16
++        },
++        {
++          "name": "literal_mode_248_0",
++          "max_residual": 5.095246377785861e-16
++        },
++        {
++          "name": "literal_mode_248_1",
++          "max_residual": 4.599602204440487e-16
++        },
++        {
++          "name": "literal_mode_250_0",
++          "max_residual": 4.996197234993978e-16
++        },
++        {
++          "name": "literal_mode_250_1",
++          "max_residual": 5.465893180652819e-16
++        },
++        {
++          "name": "literal_mode_252_0",
++          "max_residual": 2.5687968919236815e-16
++        },
++        {
++          "name": "literal_mode_252_1",
++          "max_residual": 3.1646225226420963e-16
++        },
++        {
++          "name": "literal_mode_254_0",
++          "max_residual": 1.9689203659959242e-16
++        },
++        {
++          "name": "literal_mode_254_1",
++          "max_residual": 2.9504581591051765e-16
++        },
++        {
++          "name": "literal_mode_256_0",
++          "max_residual": 6.878722495899594e-16
++        },
++        {
++          "name": "literal_mode_256_1",
++          "max_residual": 9.94951250773142e-16
++        },
++        {
++          "name": "literal_mode_258_0",
++          "max_residual": 5.725311396414648e-16
++        },
++        {
++          "name": "literal_mode_258_1",
++          "max_residual": 6.582812753581314e-16
++        },
++        {
++          "name": "literal_mode_260_0",
++          "max_residual": 7.473417450352271e-16
++        },
++        {
++          "name": "literal_mode_260_1",
++          "max_residual": 7.043507825246415e-16
++        },
++        {
++          "name": "literal_mode_262_0",
++          "max_residual": 7.473417450352271e-16
++        },
++        {
++          "name": "literal_mode_262_1",
++          "max_residual": 6.973502068242161e-16
++        },
++        {
++          "name": "literal_mode_264_0",
++          "max_residual": 6.6743012593733415e-16
++        },
++        {
++          "name": "literal_mode_264_1",
++          "max_residual": 9.828068956733855e-16
++        },
++        {
++          "name": "literal_mode_266_0",
++          "max_residual": 3.1070442298494913e-16
++        },
++        {
++          "name": "literal_mode_266_1",
++          "max_residual": 3.0467987022359185e-16
++        },
++        {
++          "name": "literal_mode_268_0",
++          "max_residual": 8.890724365456008e-16
++        },
++        {
++          "name": "literal_mode_268_1",
++          "max_residual": 8.759399035402024e-16
++        },
++        {
++          "name": "literal_mode_270_0",
++          "max_residual": 8.918512268109019e-16
++        },
++        {
++          "name": "literal_mode_270_1",
++          "max_residual": 6.144283326091185e-16
++        },
++        {
++          "name": "literal_mode_272_0",
++          "max_residual": 9.020562075079397e-16
++        },
++        {
++          "name": "literal_mode_272_1",
++          "max_residual": 9.011216415125475e-16
++        },
++        {
++          "name": "literal_mode_274_0",
++          "max_residual": 8.4735685972854685e-16
++        },
++        {
++          "name": "literal_mode_274_1",
++          "max_residual": 8.918512268109019e-16
++        },
++        {
++          "name": "literal_mode_276_0",
++          "max_residual": 9.020562075079397e-16
++        },
++        {
++          "name": "literal_mode_276_1",
++          "max_residual": 9.78525611683957e-16
++        },
++        {
++          "name": "literal_mode_278_0",
++          "max_residual": 4.1130351017808437e-16
++        },
++        {
++          "name": "literal_mode_278_1",
++          "max_residual": 5.003707553108401e-16
++        },
++        {
++          "name": "literal_mode_280_0",
++          "max_residual": 1.0186419644963073e-15
++        },
++        {
++          "name": "literal_mode_280_1",
++          "max_residual": 1.187990514796716e-15
++        },
++        {
++          "name": "literal_mode_282_0",
++          "max_residual": 8.882868333007367e-16
++        },
++        {
++          "name": "literal_mode_282_1",
++          "max_residual": 7.833577908787165e-16
++        },
++        {
++          "name": "literal_mode_284_0",
++          "max_residual": 1.053707081184919e-15
++        },
++        {
++          "name": "literal_mode_284_1",
++          "max_residual": 7.898459902976962e-16
++        },
++        {
++          "name": "literal_mode_286_0",
++          "max_residual": 9.798347193670152e-16
++        },
++        {
++          "name": "literal_mode_286_1",
++          "max_residual": 7.632839597081257e-16
++        },
++        {
++          "name": "literal_mode_288_0",
++          "max_residual": 9.84601671448706e-16
++        },
++        {
++          "name": "literal_mode_288_1",
++          "max_residual": 1.0412040941600139e-15
++        },
++        {
++          "name": "entire_literal_spectrum",
++          "max_residual": 1.2878587085651816e-14
++        },
++        {
++          "name": "stationary_finite_comparator",
++          "max_residual": 5.815852873680767e-17
++        },
++        {
++          "name": "comparator_covariance_between_quarter_and_three_quarters",
++          "passed": true
++        },
++        {
++          "name": "even_parity_probability",
++          "max_residual": 0.0
++        },
++        {
++          "name": "explicit_even_covariance",
++          "max_residual": 1.1102230246251565e-16
++        },
++        {
++          "name": "even_parity_operator_bound",
++          "actual_error": 0.0026696329254727313
++        },
++        {
++          "name": "missing_parity_normalization_rejected",
++          "rejected": true
++        },
++        {
++          "name": "boundary_path_powers_116_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "boundary_path_powers_116_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "boundary_path_powers_117_0",
++          "max_residual": 0.0
++        },
++        {
++          "name": "boundary_path_powers_117_1",
++          "max_residual": 0.0
++        },
++        {
++          "name": "boundary_first_omitted_power_is_nonzero",
++          "rejected_shortcut": true
++        },
++        {
++          "name": "finite_boundary_evolution_bound",
++          "results": [
++            {
++              "duration": 0.01,
++              "actual_covariance_error": 7.306425991136789e-09,
++              "derived_bound": 0.007346186181438491
++            },
++            {
++              "duration": 0.02,
++              "actual_covariance_error": 5.809166970204005e-08,
++              "derived_bound": 0.02998740631750268
++            },
++            {
++              "duration": 0.04,
++              "actual_covariance_error": 4.588143955571236e-07,
++              "derived_bound": 0.12499660128561878
++            }
++          ]
++        },
++        {
++          "name": "factorial_tail_bound",
++          "passed": true
++        }
++      ],
++      "seconds": 0.17741104203741997,
++      "source_sha256": "5a321d1cc5d6ce6db8978b780158673c344e1ce666787cb56ec81ce6c2eecfd6",
++      "note_sha256": "190f0f61d21da3ed46bf8063f4084047b36909e28f12378223e88e52696134cc",
++      "scope": "same-author finite comparators; no numerical integral defines the transport theorem"
++    },
++    "growth": {
++      "status": "passed",
++      "count": 62,
++      "checks": [
++        {
++          "name": "periodic_role_counts"
++        },
++        {
++          "name": "program_native_fuel_disjoint"
++        },
++        {
++          "name": "all_four_native_transverse_neighbors_programs"
++        },
++        {
++          "name": "program_degrees_two_or_six"
++        },
++        {
++          "name": "old_transverse_fuel_would_collide_with_program"
++        },
++        {
++          "name": "program_geodesics_equal_Manhattan",
++          "vertices": 2673
++        },
++        {
++          "name": "candidate_cube_lower_count_7",
++          "actual": 6,
++          "lower_bound": 4
++        },
++        {
++          "name": "candidate_cube_lower_count_8",
++          "actual": 6,
++          "lower_bound": 4
++        },
++        {
++          "name": "candidate_cube_lower_count_9",
++          "actual": 6,
++          "lower_bound": 4
++        },
++        {
++          "name": "candidate_cube_lower_count_10",
++          "actual": 24,
++          "lower_bound": 9
++        },
++        {
++          "name": "candidate_cube_lower_count_11",
++          "actual": 24,
++          "lower_bound": 9
++        },
++        {
++          "name": "candidate_cube_lower_count_12",
++          "actual": 24,
++          "lower_bound": 9
++        },
++        {
++          "name": "candidate_cube_lower_count_13",
++          "actual": 40,
++          "lower_bound": 32
++        },
++        {
++          "name": "candidate_cube_lower_count_14",
++          "actual": 40,
++          "lower_bound": 32
++        },
++        {
++          "name": "candidate_cube_lower_count_15",
++          "actual": 40,
++          "lower_bound": 32
++        },
++        {
++          "name": "candidate_cube_lower_count_16",
++          "actual": 90,
++          "lower_bound": 50
++        },
++        {
++          "name": "candidate_cube_lower_count_17",
++          "actual": 90,
++          "lower_bound": 50
++        },
++        {
++          "name": "candidate_cube_lower_count_18",
++          "actual": 90,
++          "lower_bound": 50
++        },
++        {
++          "name": "candidate_cube_lower_count_19",
++          "actual": 126,
++          "lower_bound": 108
++        },
++        {
++          "name": "candidate_cube_lower_count_20",
++          "actual": 126,
++          "lower_bound": 108
++        },
++        {
++          "name": "candidate_cube_lower_count_21",
++          "actual": 126,
++          "lower_bound": 108
++        },
++        {
++          "name": "candidate_cube_lower_count_22",
++          "actual": 224,
++          "lower_bound": 147
++        },
++        {
++          "name": "candidate_cube_lower_count_23",
++          "actual": 224,
++          "lower_bound": 147
++        },
++        {
++          "name": "candidate_cube_lower_count_24",
++          "actual": 224,
++          "lower_bound": 147
++        },
++        {
++          "name": "program_rotation_Born_identity"
++        },
++        {
++          "name": "wrong_program_rotation_sign_rejected"
++        },
++        {
++          "name": "common_kernel_n1_positive0"
++        },
++        {
++          "name": "common_kernel_n1_positive1"
++        },
++        {
++          "name": "common_kernel_n2_positive0"
++        },
++        {
++          "name": "common_kernel_n2_positive1"
++        },
++        {
++          "name": "common_kernel_n2_positive2"
++        },
++        {
++          "name": "common_kernel_n3_positive0"
++        },
++        {
++          "name": "common_kernel_n3_positive1"
++        },
++        {
++          "name": "common_kernel_n3_positive2"
++        },
++        {
++          "name": "common_kernel_n3_positive3"
++        },
++        {
++          "name": "common_kernel_n4_positive0"
++        },
++        {
++          "name": "common_kernel_n4_positive1"
++        },
++        {
++          "name": "common_kernel_n4_positive2"
++        },
++        {
++          "name": "common_kernel_n4_positive3"
++        },
++        {
++          "name": "common_kernel_n4_positive4"
++        },
++        {
++          "name": "common_kernel_n5_positive0"
++        },
++        {
++          "name": "common_kernel_n5_positive1"
++        },
++        {
++          "name": "common_kernel_n5_positive2"
++        },
++        {
++          "name": "common_kernel_n5_positive3"
++        },
++        {
++          "name": "common_kernel_n5_positive4"
++        },
++        {
++          "name": "common_kernel_n5_positive5"
++        },
++        {
++          "name": "common_kernel_n6_positive0"
++        },
++        {
++          "name": "common_kernel_n6_positive1"
++        },
++        {
++          "name": "common_kernel_n6_positive2"
++        },
++        {
++          "name": "common_kernel_n6_positive3"
++        },
++        {
++          "name": "common_kernel_n6_positive4"
++        },
++        {
++          "name": "common_kernel_n6_positive5"
++        },
++        {
++          "name": "common_kernel_n6_positive6"
++        },
++        {
++          "name": "premature_native_activation_rejected",
++          "gap": "1/16"
++        },
++        {
++          "name": "lower_front_exponent_1.0"
++        },
++        {
++          "name": "upper_front_base_1.0"
++        },
++        {
++          "name": "lower_front_exponent_10.0"
++        },
++        {
++          "name": "upper_front_base_10.0"
++        },
++        {
++          "name": "lower_front_exponent_100.0"
++        },
++        {
++          "name": "upper_front_base_100.0"
++        },
++        {
++          "name": "lower_front_exponent_1000.0"
++        },
++        {
++          "name": "upper_front_base_1000.0"
++        }
++      ],
++      "seconds": 0.040975957992486656,
++      "source_sha256": "9cfddfa27bb296cbed8a745893b9ee25b50ff95ca4c275b9948a8f8884175891",
++      "note_sha256": "190f0f61d21da3ed46bf8063f4084047b36909e28f12378223e88e52696134cc",
++      "scope": "same-author exact finite role/probability checks; front bounds are analytical"
++    }
++  },
++  "seconds": 0.3366160420118831
++}
++per_element: Native Pauli bit actions and the actual Born projectors check the local instrument.
++per_site: Literal lattice roles and nearest-neighbor program conditions are checked on the prepared domain.
++per_mode: All finite periodic comparator modes and their physical-position current operators are checked.
++per_block: Finite histories, parity preparation, boundary evolution and fresh collision storage are checked.
++lattice_wide: checked and not executed — nonexplosion and front/current windows use the analytical proofs; no infinite physical cycle code is assumed.
++TOTAL: PASS=472 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/native_formation_growth_checks_2026_09_13.py b/scripts/native_formation_growth_checks_2026_09_13.py
+new file mode 100644
+index 0000000000..dfdad4889a
+--- /dev/null
++++ b/scripts/native_formation_growth_checks_2026_09_13.py
+@@ -0,0 +1,83 @@
++#!/usr/bin/env python3
++"""Finite geometry, exact probability, and bound checks; no growth simulation."""
++from __future__ import annotations
++AUDIT_TIMEOUT_SEC = 180
++from collections import deque
++import hashlib
++import itertools
++import json
++import math
++from pathlib import Path
++import time
++
++import sympy as s
++
++HERE=Path(__file__).resolve().parents[1]
++STEPS=tuple(tuple(sign if axis==j else 0 for j in range(3)) for axis in range(3) for sign in (-1,1))
++
++
++def adjacent(v):
++    return [tuple(x+y for x,y in zip(v,d)) for d in STEPS]
++
++
++def program(v):
++    return sum(x%2 for x in v)>=2
++
++
++def candidate(v):
++    return v[0]%2==1 and v[1]%4==2 and v[2]%2==0
++
++
++def run():
++    start=time.monotonic();checks=[]
++    def checked(name,condition,**evidence):
++        assert condition,name
++        checks.append({"name":name,**evidence})
++    cell=list(itertools.product(range(4),repeat=3))
++    ps={v for v in cell if program(v)};rs={v for v in cell if candidate(v)}
++    native={v for v in cell if sum(x%2 for x in v)==1}
++    fuels={(v[0]-1,v[1],v[2]) for v in rs}
++    checked("periodic_role_counts",len(ps)==32 and len(rs)==4 and len(native)==24 and len(fuels)==4)
++    checked("program_native_fuel_disjoint",not(ps&native or ps&fuels or native&fuels))
++    checked("all_four_native_transverse_neighbors_programs",all(sum(program(w) for w in adjacent(v))==4 for v in rs))
++    checked("program_degrees_two_or_six",all(sum(program(w) for w in adjacent(v))==(6 if sum(x%2 for x in v)==3 else 2) for v in ps))
++    checked("old_transverse_fuel_would_collide_with_program",all(program((v[0],v[1],v[2]+1)) for v in rs))
++    root=(1,1,1);box=set(itertools.product(range(-7,10),repeat=3))
++    distance={root:0};queue=deque([root])
++    while queue:
++        v=queue.popleft()
++        for w in adjacent(v):
++            if w in box and program(w) and w not in distance:
++                distance[w]=distance[v]+1;queue.append(w)
++    checked("program_geodesics_equal_Manhattan",all(d==sum(abs(x-y) for x,y in zip(v,root)) for v,d in distance.items()),vertices=len(distance))
++    for n in range(7,25):
++        m=(n-1)//3
++        points=itertools.product(*(range(x-m,x+m+1) for x in root))
++        number=sum(candidate(v) for v in points)
++        checked(f"candidate_cube_lower_count_{n}",number>=m*m*(m//2),actual=number,lower_bound=m*m*(m//2))
++    # Actual one-qubit program Born rule, not a copied probability table.
++    plus=s.Matrix([1,1])/s.sqrt(2);Y=s.Matrix([[0,-s.I],[s.I,0]])
++    theta=s.symbols('theta',real=True)
++    U=s.cos(theta/2)*s.eye(2)+s.I*s.sin(theta/2)*Y
++    out=U*plus
++    checked("program_rotation_Born_identity",s.trigsimp(out[0]**2-(1+s.sin(theta))/2)==0)
++    wrong=s.cos(theta/2)*s.eye(2)-s.I*s.sin(theta/2)*Y
++    checked("wrong_program_rotation_sign_rejected",s.simplify(((wrong*plus)[0]**2).subs(theta,s.pi/6))!=s.Rational(3,4))
++    for count in range(1,7):
++        for positives in range(count+1):
++            b=2*positives-count
++            mixture=(3*s.Rational(positives,count)+s.Rational(count-positives,count))/4
++            checked(f"common_kernel_n{count}_positive{positives}",mixture==s.Rational(1,2)+s.Rational(b,4*count))
++    # Three present + Records and an unrecorded fourth |+x> program.
++    early=(s.Rational(1,2)+s.Rational(2,16)+s.Rational(1,2)+s.Rational(4,16))/2
++    checked("premature_native_activation_rejected",early==s.Rational(11,16) and early!=s.Rational(3,4),gap=str(s.Rational(3,4)-early))
++    # Verify the analytical parameter substitutions, retaining loose/vacuous cases.
++    for duration in (1.,10.,100.,1000.):
++        n=math.floor(duration/(8*math.log(2)))
++        checked(f"lower_front_exponent_{duration}",n*math.log(2)-duration/4<=-duration/8+1e-12)
++        upper=math.ceil(12*math.e*duration)
++        checked(f"upper_front_base_{duration}",6*math.e*duration/upper<=.5)
++    return {"status":"passed","count":len(checks),"checks":checks,"seconds":time.monotonic()-start,
++            "source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++            "note_sha256":hashlib.sha256((HERE/'docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md').read_bytes()).hexdigest(),
++            "scope":"same-author exact finite role/probability checks; front bounds are analytical"}
+diff --git a/scripts/native_formation_native_checks_2026_09_13.py b/scripts/native_formation_native_checks_2026_09_13.py
+new file mode 100644
+index 0000000000..791feb41e5
+--- /dev/null
++++ b/scripts/native_formation_native_checks_2026_09_13.py
+@@ -0,0 +1,171 @@
++#!/usr/bin/env python3
++"""Small same-author refutation checks of the preceding analytical construction.
++
++Native operators are built from computational-basis bit actions, without
++importing a parent science runner. Numerical trig/dilation checks support,
++but do not replace, the algebraic proof in the canonical source note.
++"""
++from __future__ import annotations
++AUDIT_TIMEOUT_SEC = 180
++
++import os
++for key in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
++    os.environ[key] = "1"
++import hashlib
++import itertools
++import json
++from pathlib import Path
++import time
++
++import numpy as np
++from scipy.linalg import expm
++
++HERE = Path(__file__).resolve().parents[1]
++TOL = 2e-12
++
++
++class Native:
++    def __init__(self, vertices, edges):
++        self.vertices = vertices
++        self.edges = tuple(edges)
++        assert all(i < j for i, j in edges)
++        self.dim = 1 << len(edges)
++        self.I = np.eye(self.dim, dtype=complex)
++        self.Z = [self.word(0, 1 << e) for e in range(len(edges))]
++        self.B = []
++        for v in range(vertices):
++            mask = sum(1 << e for e, pair in enumerate(edges) if v in pair)
++            self.B.append(self.word(0, mask))
++        self.T = []
++        for i, j in edges:
++            self.T.append(.5j * self.A(i, j) @ (self.B[i] - self.B[j]))
++
++    def word(self, xmask, zmask):
++        out = np.zeros((self.dim, self.dim), dtype=complex)
++        for state in range(self.dim):
++            out[state ^ xmask, state] = (-1) ** ((state & zmask).bit_count())
++        return out
++
++    def A(self, i, j):
++        e = self.edges.index(tuple(sorted((i, j))))
++        zmask = 0
++        for v, other in ((i, j), (j, i)):
++            for f, pair in enumerate(self.edges):
++                if v in pair and f != e:
++                    neighbor = pair[1] if pair[0] == v else pair[0]
++                    if neighbor < other:
++                        zmask ^= 1 << f
++        return (1 if i < j else -1) * self.word(1 << e, zmask)
++
++    def cycle(self, vertices):
++        out = (1j ** (len(vertices) - 1)) * self.I
++        for i, j in zip(vertices[:-1], vertices[1:]):
++            out = out @ self.A(i, j)
++        return out
++
++
++def error(a, b):
++    return float(np.max(np.abs(a-b)))
++
++
++def run():
++    started = time.monotonic()
++    checks = []
++
++    def close(name, a, b):
++        residual = error(a, b)
++        assert residual < TOL, (name, residual)
++        checks.append({"name": name, "max_residual": residual})
++
++    def reject(name, a, b):
++        residual = error(a, b)
++        assert residual > .01, (name, residual)
++        checks.append({"name": name, "negative_control_residual": residual})
++
++    # Two adjacent squares; removing both upper horizontal edges leaves a tree.
++    g = Native(6, ((0,1),(0,2),(1,3),(2,3),(2,4),(3,5),(4,5)))
++    candidates = (2,5)
++    protected = tuple(e for e in range(7) if e not in candidates)
++    cycles = (g.cycle((1,3,2,0,1)), g.cycle((3,5,4,2,3)))
++    P = (g.I+cycles[0]) @ (g.I+cycles[1]) / 4
++    close("code_projector", P@P, P)
++    close("code_dimension_32", np.trace(P), 32)
++    H = sum(g.T[e] for e in protected)
++    N = sum((g.I-b)/2 for b in g.B)
++    close("protected_number_conservation", H@N, N@H)
++    observables = g.B + [g.A(*g.edges[e]) for e in protected] + [H, H@H]
++    instruments = []
++    for cidx, (edge, S) in enumerate(zip(candidates, cycles)):
++        Z = g.Z[edge]
++        Y = 1j*Z@S
++        close(f"cycle_{cidx}_involution", S@S, g.I)
++        close(f"cycle_{cidx}_code", S@P, P)
++        close(f"pulse_{cidx}_Hermitian", Y.conj().T, Y)
++        close(f"pulse_{cidx}_involution", Y@Y, g.I)
++        for theta in (-np.pi/6,0,np.pi/6):
++            c,s = np.cos(theta/2), np.sin(theta/2)
++            U = c*g.I+s*Z@S
++            close(f"unitarity_{cidx}_{theta}", U.conj().T@U, g.I)
++            for z in (-1,1):
++                Q=(g.I+z*Z)/2
++                K=Q@U
++                p=(1+z*np.sin(theta))/2
++                close(f"branch_amplitude_{cidx}_{theta}_{z}", K@P, (c+z*s)*Q@P)
++                close(f"scalar_effect_{cidx}_{theta}_{z}", P@K.conj().T@K@P, p*P)
++                residual=max(error(P@K.conj().T@O@K@P,p*P@O@P) for O in observables)
++                assert residual<TOL
++                checks.append({"name":f"protected_algebra_{cidx}_{theta}_{z}","max_residual":residual})
++            if theta == np.pi/6:
++                instruments.append(tuple(((g.I+z*Z)/2)@U for z in (-1,1)))
++        U=np.cos(np.pi/12)*g.I+np.sin(np.pi/12)*Z@S
++        wrong=np.cos(np.pi/12)*g.I-np.sin(np.pi/12)*Z@S
++        Q=(g.I+Z)/2
++        reject(f"wrong_sign_{cidx}", P@wrong.conj().T@Q@wrong@P, .75*P)
++        missing=np.cos(np.pi/12)*g.I+np.sin(np.pi/12)*Z
++        # This mutant acts correctly on the code; global unitarity rejects it.
++        close(f"missing_cycle_agrees_on_code_{cidx}", missing@P,U@P)
++        reject(f"missing_cycle_not_unitary_{cidx}",missing.conj().T@missing,g.I)
++        reject(f"retired_hop_breaks_energy_{cidx}",(H+g.T[edge])@Z,Z@(H+g.T[edge]))
++    history_error=0.
++    for zi,zj in itertools.product(range(2), repeat=2):
++        K,L=instruments[0][zi],instruments[1][zj]
++        close(f"physical_history_commutation_{zi}_{zj}", K@L,L@K)
++        p=(.25,.75)[zi]*(.25,.75)[zj]
++        for O in observables+[g.I]:
++            history_error=max(history_error,error(P@K.conj().T@L.conj().T@O@L@K@P,p*P@O@P))
++        # Both old Record values have the proper sign on the outgoing branch.
++        for edge,z in zip(candidates,((-1,1)[zi],(-1,1)[zj])):
++            close(f"history_Record_{zi}_{zj}_{edge}",g.Z[edge]@L@K@P,z*L@K@P)
++    close("complete_history_protected_algebra",history_error,0.)
++
++    # A four-edge native square, one fuel qubit, a three-level fresh environment.
++    q=Native(4,((0,1),(0,2),(1,3),(2,3)))
++    S=q.cycle((0,1,3,2,0)); Z=q.Z[2]
++    U=np.cos(np.pi/12)*q.I+np.sin(np.pi/12)*Z@S
++    Ks=[(q.I+z*Z)@U/2 for z in (-1,1)]
++    lower=np.array([[0,1],[0,0]],complex)
++    P0=np.diag([1,0]);P1=np.diag([0,1])
++    env=np.eye(3,dtype=complex)
++    source=np.kron(np.kron(q.I,P1),np.outer(env[:,0],env[:,0]))
++    B=sum(np.kron(np.kron(K,lower),np.outer(env[:,j+1],env[:,0])) for j,K in enumerate(Ks))
++    V=B+B.conj().T
++    close("star_partial_isometry",B.conj().T@B,source)
++    close("star_nilpotent",B@B,0*B)
++    close("star_cubic",V@V@V,V)
++    survival=np.exp(-.37/2); beta=np.arccos(survival)
++    dilation=expm(-1j*beta*V)
++    close("star_unitarity",dilation.conj().T@dilation,np.eye(len(V)))
++    embedded=dilation.reshape(q.dim*2,3,q.dim*2,3)
++    close("channel_idle",embedded[:,0,:,0],np.kron(q.I,P0+survival*P1))
++    for j,K in enumerate(Ks):
++        close(f"channel_jump_{j}",embedded[:,j+1,:,0],-1j*np.sqrt(1-survival**2)*np.kron(K,lower))
++    protectedH=sum(q.T[e] for e in (0,1,3))
++    totalH=np.kron(protectedH,np.eye(6))
++    close("collision_protected_energy",dilation@totalH,totalH@dilation)
++    # The used environment permits reversal: permanence requires fresh storage.
++    reject("same_collision_can_reverse_a_used_environment",source@dilation@B,0*B)
++    return {"status":"passed","checks":checks,"count":len(checks),
++            "seconds":time.monotonic()-started,
++            "source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++            "note_sha256":hashlib.sha256((HERE/'docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md').read_bytes()).hexdigest(),
++            "scope":"same-author finite sign, history and dilation checks; no independent audit"}
+diff --git a/scripts/native_formation_transport_checks_2026_09_13.py b/scripts/native_formation_transport_checks_2026_09_13.py
+new file mode 100644
+index 0000000000..87d1565a67
+--- /dev/null
++++ b/scripts/native_formation_transport_checks_2026_09_13.py
+@@ -0,0 +1,141 @@
++#!/usr/bin/env python3
++"""Literal-edge and finite-Fock checks of the analytical transport argument."""
++from __future__ import annotations
++AUDIT_TIMEOUT_SEC = 180
++import os
++for key in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
++    os.environ[key]="1"
++import hashlib
++import itertools
++import json
++from pathlib import Path
++import time
++import numpy as np
++from scipy.linalg import expm
++from scipy.special import gammainc
++import sympy as s
++
++HERE=Path(__file__).resolve().parents[1]
++
++
++def run():
++    start=time.monotonic();checks=[]
++    def close(name,a,b,tol=3e-12):
++        err=float(np.max(np.abs(np.asarray(a)-np.asarray(b))))
++        assert err<tol,(name,err)
++        checks.append({"name":name,"max_residual":err})
++    def exact(name,expr):
++        assert s.simplify(expr)==0,(name,expr)
++        checks.append({"name":name,"exact":True})
++
++    kx,ky,kz=s.symbols('kx ky kz',real=True)
++    h0=s.Matrix([[2*s.cos(kx)+2*s.cos(kz),1+s.exp(-2*s.I*ky)],
++                 [1+s.exp(2*s.I*ky),2*s.cos(kz)]])
++    phase=s.diag(1,s.exp(s.I*ky));internal=s.diag(0,1)
++    h=s.Matrix([[2*s.cos(kx)+2*s.cos(kz),2*s.cos(ky)],
++                [2*s.cos(ky),2*s.cos(kz)]])
++    for i,j in itertools.product(range(2),repeat=2):
++        exact(f"physical_Bloch_phase_{i}{j}",(phase.conjugate().T*h0*phase-h)[i,j].rewrite(s.exp))
++        physical_y=h0.diff(ky)+s.I*(h0*internal-internal*h0)
++        exact(f"physical_y_current_{i}{j}",(phase.conjugate().T*physical_y*phase-h.diff(ky))[i,j].rewrite(s.exp))
++    wrong=phase.conjugate().T*h0.diff(ky)*phase-h.diff(ky)
++    assert s.simplify(wrong[0,1].subs(ky,s.pi/4))!=0
++    checks.append({"name":"omitted_internal_position_changes_current_operator","rejected":True})
++    lam=s.symbols('lam')
++    center=s.cos(kx)+2*s.cos(kz)
++    exact("characteristic_polynomial",(h-lam*s.eye(2)).det()-((lam-center)**2-s.cos(kx)**2-4*s.cos(ky)**2))
++    exact("patch_modes_per_vertex",(s.pi**3/54)/(4*s.pi**3)/2-s.Rational(1,432))
++
++    # The current-window tolerance must preserve half the weakest x current.
++    epsilon=s.Rational(1,8192);error_bound=2*epsilon
++    half_bounds=(s.sqrt(3)/6912,s.Rational(1,3456),s.sqrt(3)/1728)
++    assert all(s.simplify(bound**2-error_bound**2)>0 for bound in half_bounds)
++    checks.append({"name":"exact_all_direction_half_current_margin","epsilon":str(epsilon)})
++    old_error=2*s.Rational(1,6912)
++    assert s.simplify(half_bounds[0]**2-old_error**2)<0
++    checks.append({"name":"old_tolerance_fails_claimed_half_x_margin","rejected":True})
++
++    # Full periodic hopping matrix from literal graph edges, no Bloch construction.
++    shape=(6,8,6)
++    points=list(itertools.product(*(range(n) for n in shape)))
++    index={v:i for i,v in enumerate(points)};M=len(points)
++    matrix=np.zeros((M,M),complex)
++    currents=[np.zeros_like(matrix) for _ in range(3)]
++    for v,i in index.items():
++        for axis in range(3):
++            if axis==0 and v[1]%2:continue
++            w=list(v);w[axis]=(w[axis]+1)%shape[axis];j=index[tuple(w)]
++            matrix[i,j]+=1;matrix[j,i]+=1
++            currents[axis][i,j]+=1j;currents[axis][j,i]-=1j
++    momenta=itertools.product(2*np.pi*np.arange(shape[0])/shape[0],
++                             2*np.pi*np.arange(shape[1]//2)/shape[1],
++                             2*np.pi*np.arange(shape[2])/shape[2])
++    expected=[];C=np.eye(M,dtype=complex)/4
++    for x,y,z in momenta:
++        hh=np.array([[2*np.cos(x)+2*np.cos(z),2*np.cos(y)],
++                     [2*np.cos(y),2*np.cos(z)]])
++        values,vectors=np.linalg.eigh(hh);expected.extend(values)
++        for band in range(2):
++            vector=np.array([np.exp(1j*(x*v[0]+y*v[1]+z*v[2]))*vectors[v[1]%2,band]
++                             for v in points])/np.sqrt(M/2)
++            close(f"literal_mode_{len(expected)}_{band}",matrix@vector,values[band]*vector)
++            if band==1 and np.pi/3-1e-12<=x<=2*np.pi/3+1e-12 and np.pi/6-1e-12<=y<=np.pi/3+1e-12 and np.pi/3-1e-12<=z<=2*np.pi/3+1e-12:
++                C+=.5*np.outer(vector,vector.conj())
++                D=np.sqrt(np.cos(x)**2+4*np.cos(y)**2)
++                velocity=(-np.sin(x)*(1+np.cos(x)/D),-4*np.cos(y)*np.sin(y)/D,-2*np.sin(z))
++                for axis in range(3):
++                    close(f"literal_current_{x}_{y}_{z}_{axis}",np.vdot(vector,currents[axis]@vector),velocity[axis])
++    close("entire_literal_spectrum",np.linalg.eigvalsh(matrix),np.sort(expected))
++    close("stationary_finite_comparator",matrix@C,C@matrix)
++    assert np.linalg.eigvalsh(C).min()>.25-1e-12
++    assert np.linalg.eigvalsh(C).max()<.75+1e-12
++    checks.append({"name":"comparator_covariance_between_quarter_and_three_quarters","passed":True})
++
++    # Full 64-state occupation sum gives even-parity covariance, not a Gaussian assumption.
++    nu=np.array([.25,1/3,.4,.6,2/3,.75]);weights=[];masks=[]
++    for mask in range(64):
++        bits=np.array([(mask>>j)&1 for j in range(6)])
++        weights.append(np.prod(np.where(bits,nu,1-nu)));masks.append(bits)
++    weights=np.array(weights);masks=np.array(masks)
++    allowed=masks.sum(axis=1)%2==0
++    probability=weights[allowed].sum()
++    actual=(weights[allowed,None]*masks[allowed]).sum(axis=0)/probability
++    r=np.prod(1-2*nu)
++    expected_even=nu-2*nu*(1-nu)*np.array([np.prod(np.delete(1-2*nu,j)) for j in range(6)])/(1+r)
++    close("even_parity_probability",probability,(1+r)/2)
++    close("explicit_even_covariance",actual,expected_even)
++    assert np.max(np.abs(actual-nu))<=2**(-6)/(1-2**(-6))
++    checks.append({"name":"even_parity_operator_bound","actual_error":float(np.max(np.abs(actual-nu)))})
++    assert abs(np.dot(weights[allowed],masks[allowed,0])-actual[0])>.05
++    checks.append({"name":"missing_parity_normalization_rejected","rejected":True})
++
++    # An open 4x4x4 compression inside the literal periodic comparator.
++    inside=[index[(x,y,z)] for x in range(1,5) for y in range(2,6) for z in range(1,5)]
++    hf=matrix[np.ix_(inside,inside)];Cf=C[np.ix_(inside,inside)]
++    v=index[(2,3,2)];w=index[(2,3,3)];iv=inside.index(v);iw=inside.index(w)
++    for endpoint in (v,w):
++        full=np.eye(M,dtype=complex)[:,endpoint]
++        finite=np.eye(len(inside),dtype=complex)[:,inside.index(endpoint)]
++        for n in range(2):
++            embedded=np.zeros(M,complex);embedded[inside]=finite
++            close(f"boundary_path_powers_{endpoint}_{n}",full,embedded)
++            full=matrix@full;finite=hf@finite
++        embedded=np.zeros(M,complex);embedded[inside]=finite
++        assert np.max(np.abs(full-embedded))>=1
++    checks.append({"name":"boundary_first_omitted_power_is_nonzero","rejected_shortcut":True})
++    boundary_results=[]
++    for duration in (.01,.02,.04):
++        Uf=expm(-1j*duration*hf);evolved=Uf@Cf@Uf.conj().T
++        a=6*duration;tail=np.exp(a)*gammainc(2,a)
++        actual_error=abs(evolved[iv,iw]-C[v,w])
++        assert actual_error<=4*tail
++        boundary_results.append({"duration":duration,"actual_covariance_error":float(actual_error),"derived_bound":float(4*tail)})
++    checks.append({"name":"finite_boundary_evolution_bound","results":boundary_results})
++    for a,d in ((.24,2),(1.,6),(10.,55)):
++        tail=np.exp(a)*gammainc(d,a)
++        assert tail<=2*(np.e*a/d)**d
++    checks.append({"name":"factorial_tail_bound","passed":True})
++    return {"status":"passed","count":len(checks),"checks":checks,"seconds":time.monotonic()-start,
++            "source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++            "note_sha256":hashlib.sha256((HERE/'docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md').read_bytes()).hexdigest(),
++            "scope":"same-author finite comparators; no numerical integral defines the transport theorem"}
+diff --git a/scripts/native_growing_formation_current_2026_09_13.py b/scripts/native_growing_formation_current_2026_09_13.py
+new file mode 100644
+index 0000000000..7a941be805
+--- /dev/null
++++ b/scripts/native_growing_formation_current_2026_09_13.py
+@@ -0,0 +1,26 @@
++"""Checks for the supplied growing formation and protected-current construction."""
++AUDIT_TIMEOUT_SEC = 180
++AUDIT_INPUT_PATHS = ('docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md', 'scripts/native_formation_native_checks_2026_09_13.py', 'scripts/native_formation_transport_checks_2026_09_13.py', 'scripts/native_formation_growth_checks_2026_09_13.py', '.claude/science/physics-loops/native-growing-formation-current-20260913/SOURCE_MANIFEST.json', '.claude/science/physics-loops/native-growing-formation-current-20260913/NO_GO_DISCIPLINE_CHECKLIST.md', '.claude/science/physics-loops/native-growing-formation-current-20260913/mutations/RESULTS.json')
++import os
++for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','VECLIB_MAXIMUM_THREADS'):os.environ[key]='1'
++import json,signal,time
++from native_formation_native_checks_2026_09_13 import run as native_check
++from native_formation_transport_checks_2026_09_13 import run as transport_check
++from native_formation_growth_checks_2026_09_13 import run as growth_check
++
++
++def main():
++    signal.alarm(AUDIT_TIMEOUT_SEC);start=time.monotonic()
++    rows={name:check() for name,check in (('native',native_check),('transport',transport_check),('growth',growth_check))}
++    count=sum(row['count'] for row in rows.values())
++    print(json.dumps({'checks':rows,'seconds':time.monotonic()-start},indent=2))
++    print('per_element: Native Pauli bit actions and the actual Born projectors check the local instrument.')
++    print('per_site: Literal lattice roles and nearest-neighbor program conditions are checked on the prepared domain.')
++    print('per_mode: All finite periodic comparator modes and their physical-position current operators are checked.')
++    print('per_block: Finite histories, parity preparation, boundary evolution and fresh collision storage are checked.')
++    print('lattice_wide: checked and not executed — nonexplosion and front/current windows use the analytical proofs; no infinite physical cycle code is assumed.')
++    print(f'TOTAL: PASS={count} FAIL=0')
++    signal.alarm(0)
++
++
++if __name__=='__main__':main()

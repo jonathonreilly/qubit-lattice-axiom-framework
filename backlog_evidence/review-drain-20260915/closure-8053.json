@@ -1,0 +1,58 @@
+{
+  "pr": 8053,
+  "original_head": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+  "branch": "codex/native-weak-electric-spectator-gap-20260908",
+  "landing": "4898256906d03d0d70a519f0c4c32180decd4715",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-weak-electric-spectator-gap-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-third-order-star-vertex-20260908",
+        "headRefOid": "a814da6cc1178ac015914c9088fc04b2e635963e",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8058,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8058"
+      },
+      "original_merge_base": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+      "delta_sha256": "b238d18ca25a0d90de39689b6d3661488a9aa71f9a069a6a6582db81c0fdeeb7",
+      "delta_file": "closure-8053-child-8058-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-third-order-star-vertex-20260908",
+        "headRefOid": "a814da6cc1178ac015914c9088fc04b2e635963e",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8058,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8058"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-third-order-star-vertex-20260908",
+        "headRefOid": "a814da6cc1178ac015914c9088fc04b2e635963e",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8058,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8058"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T15:40:51Z",
+    "headRefName": "codex/native-weak-electric-spectator-gap-20260908",
+    "headRefOid": "e14737cf0270e845c0b0b61dfc58469790df4eba",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8053,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8053"
+  }
+}

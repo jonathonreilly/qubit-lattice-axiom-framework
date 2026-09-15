@@ -1,0 +1,7 @@
+{
+  "head": "1b07bae44c8d98412445e251be405ca418dad2a2",
+  "tree": "2c52bb785e0e0d72c2353cce9e28f9a6243e359e",
+  "patch": "8087-original-review-pool-recovery.patch",
+  "patch_sha256": "af5cef9dd0194ac8bbf5aad9aa5f505812b8c844476e87ae8e1efd3a103e13b6",
+  "boundary": "Original review snapshot only; independently corrected source landed separately on main."
+}

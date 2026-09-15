@@ -1,0 +1,109 @@
+[detached HEAD ecd065c83d] Land independently reviewed bounded PR8047 eighth-order source and history
+ Date: Tue Sep 15 10:28:51 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 93 files changed, 30976 insertions(+)
+ create mode 100644 docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/AUTHOR_VERIFICATION_DRIVER.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/GRAPH_DELTA.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/LIVE.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/LIVE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MANIFEST.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MANIFEST.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/ORIGINAL_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/SOURCE_FREEZE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/WRAPPER_CONTROLS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/bare_X.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/bare_X.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/check_port.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/combined.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/global.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/local.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/pr8047-independent-canonical-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/independent-canonical-review/witness.diff.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/omit_folds.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/omit_folds.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined-cold-review/pr8047-originals-native-eighth-combined-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-combined/pr8047-originals-native-eighth-combined-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-cold-review/pr8047-originals-native-eighth-global-reduction-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/pr8047-originals-native-eighth-global-reduction-root-CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-reduction-root/pr8047-originals-native-eighth-global-reduction-root-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness-cold-review/pr8047-originals-native-eighth-global-witness-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-eighth-global-witness/pr8047-originals-native-eighth-global-witness-REVIEW_AND_WITNESS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/check_BEFORE_EXPLICIT_GUARDS.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-cold-review/pr8047-originals-native-full-eighth-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/pr8047-originals-native-full-eighth-diagonal-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-full-eighth-diagonal/pr8047-originals-native-full-eighth-diagonal-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/originals/native-virtual-pair-eighth-plan/pr8047-originals-native-virtual-pair-eighth-plan-PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-CONTROL_CONTRACT.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-GRAPH_CONFIRMATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ROOT_CANONICAL_REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/pr8047-TRACE_GATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_path_multiplicity.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_path_multiplicity.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_rank.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8047-eighth-diagonal-evidence/wrong_rank.stdout
+ create mode 100644 logs/runner-cache/native_eighth_diagonal_cycle_potential_2026_09_08.txt
+ create mode 100644 outputs/native_eighth_combined_2026_09_08.json
+ create mode 100644 outputs/native_eighth_diagonal_cycle_potential_2026_09_08.json
+ create mode 100644 outputs/native_eighth_global_2026_09_08.json
+ create mode 100644 outputs/native_eighth_local_2026_09_08.json
+ create mode 100644 outputs/native_eighth_witness_2026_09_08.json
+ create mode 100644 scripts/native_eighth_combined_2026_09_08.py
+ create mode 100644 scripts/native_eighth_diagonal_cycle_potential_2026_09_08.py
+ create mode 100644 scripts/native_eighth_global_2026_09_08.py
+ create mode 100644 scripts/native_eighth_local_2026_09_08.py
+ create mode 100644 scripts/native_eighth_witness_2026_09_08.py
+FROZEN ecd065c83d2ee07510a2fb882510a80750a22288 sources 93 inputs 110 notes 1

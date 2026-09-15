@@ -1,0 +1,6 @@
+{
+  "rationale": "Self-contained supplied Regge geometry, source lift and reduced Gaussian proof. Two current repository notes are comparison/history targets, read in full, not load-bearing theorem premises; kinetic-form primitive read for boundary only. No old sampled/global physical conclusions imported.",
+  "review_report": "review-8085.json",
+  "review_sha256": "14d44d2dda878bd062ed96c7dee668495196a66802b238fc6d989173003dc4f3",
+  "claim_dependencies": []
+}

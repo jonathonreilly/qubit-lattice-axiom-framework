@@ -1,0 +1,11 @@
+{
+  "review_sha256": "435a91d921eb9252e88902ba8e84ef1143ca02ed89292c1f92cdfbb2731f50a9",
+  "source_head": "ecd065c83d2ee07510a2fb882510a80750a22288",
+  "source_tree": "b118b4940c65145070c71dc8a8245c9a7991d292",
+  "added_mechanical_bindings": {
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  "boundary": "These identities were already bound by the immutable original reviewer report. Coordinator adapter now copies its additional_methodology_inputs field explicitly. Git source-head bytes and working bytes both match; no source/input/code bytes or gate scope changed, and no prior report/execution is restamped."
+}

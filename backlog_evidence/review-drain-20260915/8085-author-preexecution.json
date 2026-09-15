@@ -1,0 +1,61 @@
+{
+  "staged_tree": "e933c77866848a9b94a3c2d20062810e08f10b99",
+  "primary": "scripts/regge_exact_reduction_positive_transfer_2026_09_13.py",
+  "helpers": [
+    "scripts/regge_local_hessian_check_2026_09_13.py",
+    "scripts/regge_source_rank_check_2026_09_13.py",
+    "scripts/regge_tensor_transfer_check_2026_09_13.py"
+  ],
+  "packet_helpers": [
+    "scripts/regge_local_hessian_check_2026_09_13.py",
+    "scripts/regge_source_rank_check_2026_09_13.py",
+    "scripts/regge_tensor_transfer_check_2026_09_13.py"
+  ],
+  "declared_inputs": [
+    "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "scripts/regge_local_hessian_check_2026_09_13.py",
+    "scripts/regge_source_rank_check_2026_09_13.py",
+    "scripts/regge_tensor_transfer_check_2026_09_13.py",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/pr8085-NO_GO_DISCIPLINE_CHECKLIST.md",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/RESULTS.json"
+  ],
+  "frozen": {
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/source_offdiagonal_halved/regge_source_rank_check_2026_09_13.py": "cace626c75e550361131d49b6c287c4ad737506d4d161fa0896a9bc5bd7f8e43",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/area_normalization/stderr.txt": "36fd5e710da14a3afab8fc0dc06685007fbc39fb6ebb699da99d07b2927cfd30",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/scalar_cross_removed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/regge_local_hessian_check_2026_09_13.py": "1e172437fca41640f4dc0e90ef4cbee8ce3ca57219327fdedecbe4f588f91188",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/area_normalization/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/source_offdiagonal_halved/stderr.txt": "72cb0798a26eeaa7cd781d58df33b08208e09f44557b74270a55ea159028585f",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/RESULTS.json": "d900381a3cffc710f29d92137415bc12e2e1481d34e9ca6293f7b614de885fe3",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/metric_phase_removed/regge_local_hessian_check_2026_09_13.py": "87d7e91214185a9bb00b82e2da4c60a81572a8ebf5563204a42e98800344c21b",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/metric_phase_removed/stderr.txt": "407f089be84390173742b5996995a33a9742eab3623cc27c8e43301cf0b0b4ed",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/pr8085-NO_GO_DISCIPLINE_CHECKLIST.md": "813382a6eefc3e989bd07ce8004777547567c1fdb78ac361b95444dd25992f3a",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/body_sign/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/pr8085-REVIEW_HISTORY.md": "fa095674cb0c6878abb66d3f8f5361d89f6c5dd99522b6b55ff62355ea9da39f",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/SOURCE_MANIFEST.json": "b68caa8a725264386360d729aa8c615ee60eb031a492e82592aae5569e64d8b1",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/pr8085-CLAIM_STATUS_CERTIFICATE.md": "a897ec821f9bbab601c7fc0db67c9ea7bd901d04f6ea59a80c609a1195bd67c1",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/pr8085-HANDOFF.md": "25d06b3f79ba6c98e0535f4d9da6b7598ca4ea51abd3b66ec236360a730fe5dd",
+    "scripts/regge_exact_reduction_positive_transfer_2026_09_13.py": "b6a84c4a0c005cd782f37f5df7e3b5555eee54868f4deef3d8aa1e18c4236f3e",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/pr8085-TRACE_GATE.md": "b58107a6de2d4faf49cfe0bc2562749473ee0ddafe98d567a7cd7fbcd30dbe9c",
+    "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "6fc30b35c20fa4d4bf8884f311f80994e88d92cf4924ca63ac946af119e6dfcd",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/metric_phase_removed/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/transfer_width_halved/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/metric_phase_removed_first/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/area_normalization/regge_local_hessian_check_2026_09_13.py": "03453454a9fb776c4ede43d154ce2563f3310116fe987f02ee376d5f158cc546",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/scalar_cross_removed/regge_tensor_transfer_check_2026_09_13.py": "38f1125ca4ef0b844b2ab29925417ba7283d0ba82227c0cc65bf9971f7058043",
+    "scripts/regge_source_rank_check_2026_09_13.py": "ab08cd53644936b9d5169e3db4da170d02b03a1f7df222c7ec3776129071d51f",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/transfer_width_halved/regge_tensor_transfer_check_2026_09_13.py": "a7c6a2573051624522ef1c6c3166e8abbd2d9191c1fffe0d7185ebab279952ff",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/scalar_cross_removed/stderr.txt": "bc0ff5a08de7f28a140a82dba5fb9034d9f82731590f4dc9eb90aabdd17746b7",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/source_offdiagonal_halved/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/regge_tensor_transfer_check_2026_09_13.py": "7a94cd98ea09453a5f9fe3b43cd05e8b935284e33b353391f83529f30e9ff278",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/body_sign/stderr.txt": "e39c0132495d260e982673b8c0c6e605aef0096f11766500e53faae41188829a",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/transfer_width_halved/stderr.txt": "a4a5ede70ce58dfefd91b5d43e4e57ffa94903e175347e3007292439031e286a",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/metric_phase_removed_first/stderr.txt": "4d3e1b2a242bd98bbd70a3f8109b27090103e421eb953abfba0b0d643cc4b942",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/body_sign/regge_local_hessian_check_2026_09_13.py": "59f47c9485d18d8bdd2463413c516e997c03a25a16bbefc86360ae97dbbf020e",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/README.md": "9b461e3f3bf5290ec132975789882bedbfcb28e17553a4b4dc424f086e7b798b",
+    "docs/work_history/repo/review_feedback/pr8085-regge-positive-transfer-evidence/mutations/metric_phase_removed_first/regge_local_hessian_check_2026_09_13.py": "4d804da460f0ec964d0392b0f48444919abe242def2e040783d09532d5f4217b"
+  },
+  "expected_TOTAL": 92,
+  "archive_map": "8085-archive-map.json",
+  "boundary": "Author preexecution; no scientific verdict; all mathematics unchanged and historical-source attribution corrected."
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/train10",
+    "head": "a938d65675eb8a7b4ed334be9b9fc5acf88460b6",
+    "preserved_ref": "refs/review-drain-preserved/train10",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train11",
+    "head": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+    "preserved_ref": "refs/review-drain-preserved/train11",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train12",
+    "head": "26bf37ccf50a45233e7354302a07ebe9c45eadc2",
+    "preserved_ref": "refs/review-drain-preserved/train12",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train13",
+    "head": "16a8634ef8e2ec942ae3d6d1974a3a80ed6f55bb",
+    "preserved_ref": "refs/review-drain-preserved/train13",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train14",
+    "head": "f8ac15d64b204a850747b391c1981d454c0f06d3",
+    "preserved_ref": "refs/review-drain-preserved/train14",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train15",
+    "head": "6ad6a2184b7c2067e597528e0964753874493b4a",
+    "preserved_ref": "refs/review-drain-preserved/train15",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train16",
+    "head": "febf06cda220991f129e529e1c4c552ffcad784c",
+    "preserved_ref": "refs/review-drain-preserved/train16",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train17",
+    "head": "21c50d093e6e6888da4535eaeb5671bb0d52f302",
+    "preserved_ref": "refs/review-drain-preserved/train17",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/train18",
+    "head": "0ded9940cb9fccaf5909d348ea2f03717879e666",
+    "preserved_ref": "refs/review-drain-preserved/train18",
+    "removed": false,
+    "reason": "ignored artifacts require recovery: ['docs/audit/AUDIT_LEDGER.md', 'docs/audit/data/audit_ledger.json', 'docs/audit/data/audit_publication_lane.json']"
+  }
+]

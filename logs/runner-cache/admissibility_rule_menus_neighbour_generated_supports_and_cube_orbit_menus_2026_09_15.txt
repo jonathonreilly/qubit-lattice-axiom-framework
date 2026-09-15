@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py
+runner_sha256: 2b862d7c2604df88cac50dace86012e99d9bb0e3a070a5df75291c52afef3282
+input_fingerprint_sha256: b2c37270bd6a70d4f9f261a2e82add81eb3e3f0aed7a7b7ea83ea5d54844fedf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_MENUS_NEIGHBOUR_GENERATED_SUPPORTS_UNSOLDERED_AND_CUBE_ORBIT_MENUS_SOLDERED_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
+AUDIT_TIMEOUT_SEC: 900
+scope: menus — unsoldered supports are neighbour-generated (antipodal for one neighbour; frame-attached beyond), soldered menus are unions of the cube's orbits (6, 8, 12, 24); the seed-generated alphabet; Born on the antipodal pair; exact
+mutation: none
+PASS: A1 the three declared inputs exist (this note, the axiom memo, the possibility-covariance note on main)
+PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parent's claim id and its empty-neighbourhood sphere-law section are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 M1: a rational rotation about the pole (cosine 3/5) fixes the pole and moves the unit point (3/5, 0, 4/5) through 12 distinct positions in 12 steps: a finite invariant set lies in the poles
+PASS: B2 M2: the frame F(q_1, q_2) is a rotation matrix and F(g q_1, g q_2) = g F(q_1, q_2) for a rational rotation about y
+PASS: C1 M3: the 24 proper rotations of the cube; orbit sizes and stabilizer orders (6,4), (8,3), (12,2), (24,1), (24,1) for the axis, diagonal, edge, generic and mirror-plane sample directions; size times stabilizer = 24
+PASS: C2 M3: the six axes, the eight diagonals, the twelve edge directions and their unions are invariant; three axes plus one diagonal are not
+PASS: D1 M4: on a path of five with the antipodal support every record is +/- the symbolic seed (32 patterns), i.e. on the seed's axis
+PASS: D2 M5: the Born overlap (1 + s.q)/2 equals 1 at s = q and 0 at s = -q: deterministic copying on the antipodal pair
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art, Imports and the Premises' file citation (0 offenders)
+per_element: executed — a rational rotation's twelve-point orbit; the frame's equivariance; the 24 rotations; the Born values
+per_site: executed — the five sample directions' orbits and stabilizers
+per_mode: executed — the invariance of the axis, diagonal and edge sets and of a union; the non-invariance of a mixed set
+per_block: executed — the path of five with the antipodal support and a symbolic seed
+lattice_wide: M1–M5 proved for the sphere under the two named readings; mixed-state domains and the Born form on frame-attached supports not claimed
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

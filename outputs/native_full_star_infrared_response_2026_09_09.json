@@ -1,0 +1,73 @@
+{
+  "scope": "Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem",
+  "PASS": 1217,
+  "FAIL": 0,
+  "groups": {
+    "CAR": 64,
+    "nonlinear_fixture": 3,
+    "graded_support": 5,
+    "mode_CAR": 16,
+    "annihilation_identity": 4,
+    "local_annihilation_bound": 4,
+    "mode_fock_basis": 256,
+    "parseval": 1,
+    "odd_no_vacuum": 1,
+    "occupation_low_energy": 272,
+    "full_vector_low_energy": 17,
+    "inverse_moment": 2,
+    "geometric_inverse_moment": 40,
+    "uniform_low_energy_tail": 40,
+    "graded_Bessel": 16,
+    "missing_Bessel_counterexample": 3,
+    "counterexample_ordinary_commutator_outside_support": 1,
+    "counterexample_replace_full_low_energy_by_one_particle": 1,
+    "counterexample_claim_endpoint_s3_integrable": 1,
+    "counterexample_individual_inverse_norm_implies_uniform_row": 1,
+    "exact_linear_subtraction": 2,
+    "triple_graded_identity": 24,
+    "triple_local_bound": 24,
+    "factorial_occupation_bound": 272,
+    "factorial_annihilation_identity": 17,
+    "higher_odd_low_energy": 17,
+    "shell_cancellation": 1,
+    "nine_power_inverse_moment": 45,
+    "nine_power_low_energy_tail": 45,
+    "counterexample_one_particle_free_shells_required": 1,
+    "counterexample_endpoint_s9_integrability": 1,
+    "positive_filter_adjoint_vacuum": 1,
+    "positive_filter_nonzero_creator": 1,
+    "counterexample_one_sided_filter": 1,
+    "filtered_inverse_vacuum": 15,
+    "summable_power_balance": 1,
+    "three_dimensional_summability": 1
+  },
+  "counterexamples_exhibited": {
+    "ordinary_commutator_outside_support": true,
+    "replace_full_low_energy_by_one_particle": true,
+    "claim_endpoint_s3_integrable": true,
+    "individual_inverse_norm_implies_uniform_row": true,
+    "one_particle_free_shells_required": true,
+    "endpoint_s9_integrability": true,
+    "arbitrary_inverse_filter_adjoint_kills_vacuum": true
+  },
+  "fixture_particle_weights": {
+    "one": "4",
+    "three": "2"
+  },
+  "full_inverse_moments": {
+    "1": "16545/2002",
+    "2": "86442765/4008004"
+  },
+  "status": "PASS",
+  "input_sha256": {
+    "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "scripts/native_full_star_infrared_controls_2026_09_09.py": "0b942d42160768ce61fac504f3e65fe5d301cd5407b3b3388e8563deb5f1c436"
+  },
+  "source_sha256": "67dec92c934027435ac8a040a11ac4c09d1dea16d21fa97814c743f451a35a8f",
+  "elapsed_seconds": 0.12329662498086691,
+  "peak_rss_bytes": 24887296,
+  "actual_current_surface_status": "conditional-support"
+}

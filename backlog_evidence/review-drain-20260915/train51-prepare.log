@@ -1,0 +1,56 @@
+[detached HEAD c0013b4e75] Preserve independently reviewed source unit PR8106
+ Date: Tue Sep 15 17:19:25 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 40 files changed, 2010 insertions(+)
+ create mode 100644 docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/_objects/ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8106-evidence/kept/pr8106-REVIEW_HISTORY-3f4cb79c836849bf.md
+ create mode 100644 logs/runner-cache/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.txt
+ create mode 100644 scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py
+FROZEN c0013b4e752bdb25ecb20728f1b7267b25a1d990 sources 40 inputs 62 notes 1

@@ -1,0 +1,75 @@
+{
+  "base": "382fe0d7394f07216908cc501b5e44cbf0c1855b",
+  "source_head": "ed6c77aea6c204319c2caf72139887af420588be",
+  "source_tree": "6e0015cf0ddd6ea5ed65bd309ecfa93020e73c67",
+  "heads": {
+    "8093": "f8c83049fead8db6f9594df243168cd5edeb19e2"
+  },
+  "source_owners": {
+    "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md": "review-8093",
+    "docs/work_history/repo/review_feedback/pr8093-evidence/README.md": "review-8093",
+    "docs/work_history/repo/review_feedback/pr8093-evidence/pr8093-original-proposal.md": "review-8093"
+  },
+  "inputs": {
+    "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md": "d62d986e0d9bb755a17affb64ecfa259fb69b269d66a31d552fb8b9106916c9a",
+    "docs/work_history/repo/review_feedback/pr8093-evidence/README.md": "8f50d7843410b8da46d4d15c223dfeec97251a87278e3064c64cf816812cbb3e",
+    "docs/work_history/repo/review_feedback/pr8093-evidence/pr8093-original-proposal.md": "ca17e270ef14c6b44ac0143d074da4d90b4ac38df2b76d05edbbe9f67c6b6e64",
+    "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+    "docs/ai_methodology/skills/review-loop/agents/openai.yaml": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "review_evidence_hashes": {
+    "review-8093-final.json": "1dcf0ed9642cf0e0a78a1f15fbefdeef6edbce0aa63326b6e50e5ea83bb3e3ae",
+    "check8093/original-review-findings.json": "b7d5c36a123dcdee2296aeaa72e8f780cee01438494223705bc604017cbf7c17",
+    "check8093/original-section-map.json": "20330ef25ddc78484ba26cdbbb062c28b5d5d0658ba92fdc667c2c38a776a370",
+    "check8093/authority-reuse.json": "558e753fb8cefc8e65ece7fbbf176a5238b889983cc3541494124becc18687dd",
+    "8093-author-original-freeze.json": "19afd4c254d0ab0325f08c95cb5bcb4a77fb27135b9ed30dbc422ef22770e21f",
+    "8093-author-after-findings-freeze.json": "b385d51fb2503c17f8c4312078fb9203ca2313e5430e5263beacd60af599ec8f",
+    "8093-head-fetch.json": "91f4cf1e8c1b6f257c719db738c78c30aa2763311663d734f52b8440c59b9ff4",
+    "8093-unit-v1-final.json": "78d519c8d4e674e4c861508d356bb1a9eb540423ed6db448d5c0ca395ce572b2",
+    "8093-disposition-schema-addendum.json": "e869922f1371b2a02a0e8e538025e79bc9128d3405173ec5c489c18ac31982b1",
+    "8093-final-preflight.json": "f3dc13bbb1415540b0b7b516272782ed15e0abae2a0dfad8cb543344a06aee19",
+    "8093-local-adapter-review.json": "1724fbde8f5d29f7cdade4d8776bf8b3965909b2c1e7e47373e66d5a49b97a8f",
+    "8093-unit-v1-final-schema-corrected.json": "7ed4bed91c3d1a9676ba533fa84a3adb3d2017662f957b082df157cb86ab5384",
+    "8093-final-preflight-corrected.json": "6559b2a8ac6b0f295357b9147e778c5b6e59d5a046f1c7029e6999bf41c23a79",
+    "review-8093.md": "f566d8b144a23a0155a83bb3d380160b8e52627df3f4ab4e34f2b0fc16eeda14",
+    "prepare_candidate_typed.py": "b81c3bfaf984d83913c35299442d5561e00d213a1fd46dc9e9ecceea654b3d40",
+    "finish_candidate_typed.py": "e05f570ddd382cc64345affb28422a7eaf552c3fedfeebf5b8223186574be5de",
+    "8093-prepare-adapter.diff": "09d5419f7a6df9ab05f27bd230214ce764cfb42254d70be3bc3a9639b256ef5b",
+    "8093-finish-adapter.diff": "e384d7c0d32d10c8a76ac61ec84968259210554cecd7413a6ca60ffbc8866df1",
+    "check8093/check-adapters.py": "704059b93f17ecf10f6da4381785a8ea2706beb528d72962b3f6bec86f9f62ab",
+    "check8093/adapter-controls.txt": "ab53c98fb864524815385af70a17b16bff549d925215ebb87a30c1b4f616d768"
+  },
+  "non_science_expectations": {
+    "docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md": {
+      "claim_type": "meta",
+      "review": "review-8093-final.json",
+      "sha256": "d62d986e0d9bb755a17affb64ecfa259fb69b269d66a31d552fb8b9106916c9a"
+    }
+  },
+  "dependency_expectations": {},
+  "cheap_preflight": {},
+  "units": [
+    "8093"
+  ],
+  "departure": "Reviewed meta proposal is ready and departs after train34; no scientific evidence exemption is applied to theorem sources.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match."
+}

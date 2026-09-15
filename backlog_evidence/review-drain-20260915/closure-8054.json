@@ -1,0 +1,58 @@
+{
+  "pr": 8054,
+  "original_head": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+  "branch": "codex/native-even-torus-flux-isolation-20260908",
+  "landing": "382fe0d7394f07216908cc501b5e44cbf0c1855b",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-even-torus-flux-isolation-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+        "headRefOid": "00304d711b630d50d17520d8db83519a492fc28b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8055,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8055"
+      },
+      "original_merge_base": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+      "delta_sha256": "cb65c56b2ebbd29d41b43e4a99c4fa9fb2886244e043502df4e6932958401533",
+      "delta_file": "closure-8054-child-8055-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+        "headRefOid": "00304d711b630d50d17520d8db83519a492fc28b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8055,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8055"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+        "headRefOid": "00304d711b630d50d17520d8db83519a492fc28b",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8055,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8055"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T16:41:15Z",
+    "headRefName": "codex/native-even-torus-flux-isolation-20260908",
+    "headRefOid": "396ac64f4f9155892cbf581b58c296346e8ba2c3",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8054,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8054"
+  }
+}

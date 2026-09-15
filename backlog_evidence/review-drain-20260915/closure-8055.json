@@ -1,0 +1,58 @@
+{
+  "pr": 8055,
+  "original_head": "00304d711b630d50d17520d8db83519a492fc28b",
+  "branch": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+  "landing": "382fe0d7394f07216908cc501b5e44cbf0c1855b",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-uniform-cubic-flux-defect-stiffness-20260908",
+        "headRefOid": "38f9a320fad026016303d79987d790c4b5bb7a51",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8056,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8056"
+      },
+      "original_merge_base": "00304d711b630d50d17520d8db83519a492fc28b",
+      "delta_sha256": "b3dc0f6636fa9c59c09fc0db14d4972f97f6192d643a2105d0a3ee95dd5329cb",
+      "delta_file": "closure-8055-child-8056-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-uniform-cubic-flux-defect-stiffness-20260908",
+        "headRefOid": "38f9a320fad026016303d79987d790c4b5bb7a51",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8056,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8056"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-uniform-cubic-flux-defect-stiffness-20260908",
+        "headRefOid": "38f9a320fad026016303d79987d790c4b5bb7a51",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8056,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8056"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T16:41:33Z",
+    "headRefName": "codex/native-flux-defect-comparison-and-winding-gap-20260908",
+    "headRefOid": "00304d711b630d50d17520d8db83519a492fc28b",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8055,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8055"
+  }
+}

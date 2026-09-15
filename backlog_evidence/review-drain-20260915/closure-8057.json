@@ -1,0 +1,96 @@
+{
+  "pr": 8057,
+  "original_head": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+  "branch": "codex/native-weak-electric-defect-density-20260908",
+  "landing": "382fe0d7394f07216908cc501b5e44cbf0c1855b",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-weak-electric-defect-density-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-weak-electric-joint-defect-bounds-20260909",
+        "headRefOid": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8060,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8060"
+      },
+      "original_merge_base": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+      "delta_sha256": "f5f6b1a63152a28c7886fff4f15a2d5e0e3afed33b43033367f58256be73d8ca",
+      "delta_file": "closure-8057-child-8060-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-weak-electric-joint-defect-bounds-20260909",
+        "headRefOid": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8060,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8060"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-weak-electric-joint-defect-bounds-20260909",
+        "headRefOid": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8060,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8060"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-weak-electric-defect-density-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-l6-sixth-prefix-gap-certificate-20260908",
+        "headRefOid": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8059,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8059"
+      },
+      "original_merge_base": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+      "delta_sha256": "01c760c281b18220b7664a32b94a67709636f278e320de19c11ca37da4dc4669",
+      "delta_file": "closure-8057-child-8059-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-l6-sixth-prefix-gap-certificate-20260908",
+        "headRefOid": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8059,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8059"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-l6-sixth-prefix-gap-certificate-20260908",
+        "headRefOid": "fa9764acc0b90ce35a9b09cd918737ed933aff76",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8059,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8059"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T16:42:08Z",
+    "headRefName": "codex/native-weak-electric-defect-density-20260908",
+    "headRefOid": "063f73e73724d53e2b84c75f4b634d7f6373cdf3",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8057,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8057"
+  }
+}

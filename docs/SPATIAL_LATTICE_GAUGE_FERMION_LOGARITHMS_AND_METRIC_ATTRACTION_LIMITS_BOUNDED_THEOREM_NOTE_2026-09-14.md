@@ -591,7 +591,7 @@ are checked with exact rational arithmetic, while tensor examples and loop
 quadratures have explicit numerical tolerances. The analytic remainder proof
 and exact identities carry the general claims.
 
-The runner reads no scientific data files or helper runners at runtime. Its cache pins this proof note and the kinetic-isotropy primitive as proof and premise identities. Mutation receipts
+The runner reads no scientific data files or helper runners at runtime. Its cache pins this proof note and the [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) as proof and premise identities. Mutation receipts
 in the review packet record which consequential errors the checks reject.
 No count of passing examples or mutation failures constitutes independent
 scientific review, a nonperturbative phase proof or empirical validation.

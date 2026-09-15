@@ -168,3 +168,14 @@ source_review_correction:
 # highest_blast_radius_residual: "strong coupling c >= 1/3: the plane chain is a noisy majority rule on three predecessors; non-uniqueness of the stationary plane law at large p needs a Toom-type stability theorem re-proved at scope; exact noise parameters in HANDOFF_campaign_20260915_next_work.md"
 # next_exact_action: "owner review of #8138-#8142 (and #8034, #8035); next campaign: the strong-coupling phase (panel first)"
 # lock: released
+
+# ---------------------------------------------------------------- block 12 close (2026-09-15)
+# block: 12
+# branch: physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915 (stacked on block 11, PR #8142)
+# pr_status: opened for review — PR #8146 (base = block 11's branch); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass equal on all three routes; gates: see HANDOFF.md"
+# seats: "supervisor-run: control -> contract with a lens pass -> primary (S0-S6, runner) -> refuting pass (Fraction route on the full chain; closed-form patterns; exhaustive islands) -> fold"
+# review_findings: "level-time automaton (north-east-center); exact noise map with 1/p deviations and majority iff p > max(q,r); eroder bound M1+M2+M3-t0+1; domination with exact eps(p) = max(q,r)/p + O(1/p^2); finite-W unique but lambda_2 -> 1 (2x2 memory 0.549 after 8 steps at p=100); 2D never orders; the 3D ordered phase = the stability obligation, not claimed"
+# strongest_unresolved_proof_obligation: "the stability of the noisy majority eroder below a threshold (S6): the sparse-contour lemma"
+# next_exact_action: "queue refresh 2026-09-15 (block 12 opening): the stability theorem at scope; the sextic pair; k >= 4 loci; the region boundary"
+# lock: held (refreshed 8h at close-out; per the owner: pull up after this block and find the next high-leverage science)

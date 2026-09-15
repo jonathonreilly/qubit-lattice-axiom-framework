@@ -1,0 +1,9 @@
+R1 full chain at p=10: TV(all +x, all -x) after 1 step = 0.798539 ; after 2 steps = 0.509619
+R1 the orbit quotient's 1-step max is 0.393104 < the full chain's 0.798539 : the quotient identifies +x with -x planes and cannot see the slow mode
+R1 agrees with the runner's integer-denominator computation: True True
+R2 exhaustive islands (all 575 subsets of size <= 3 of level 4): bound holds: True; longest life: 3
+R3 p=3: max over the three patterns = 35/44 (antipodal) == runner literal 35/44: True
+R3 p=10: max over the three patterns = 21/71 (antipodal) == runner literal 21/71: True
+R3 p=30: max over the three patterns = 71/971 (orthogonal) == runner literal 71/971: True
+R3 p=100: max over the three patterns = 211/10211 (orthogonal) == runner literal 211/10211: True
+R3 p=1000: max over the three patterns = 2011/1002011 (orthogonal) == runner literal 2011/1002011: True

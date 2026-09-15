@@ -1,0 +1,18 @@
+# Refuting pass — block 12 (supervisor-run, disjoint machinery; 2026-09-15)
+
+Routes compared (control `specs/supervisor_control_block12_strong_coupling.py`, refuting pass `specs/supervisor_control_block12_refuter.py`, outputs in `.out.txt`):
+
+| item | runner's route | refuting route | result |
+|---|---|---|---|
+| `ε(p)` (S3) | exact maximum of `1 − r(+x | triple)` over all 216 triples with at least two entries `+x` | the maximum over the three closed-form patterns (unanimous, orthogonal `2:1`, antipodal `2:1`) at `p = 3, 10, 30, 100, 1000` | equal at all five; **F1 found here** |
+| the `2×2` memory (S4) | the full `1296`-state chain with integer numerators over a common denominator `D` (each row sums to `D`), the difference vector iterated | the same chain by `Fraction` arithmetic, rows of the all-`+x` and the all-`−x` planes multiplied out separately, `n = 1, 2` at `p = 10` | equal (`0.798539`, `0.509619`); **F2 found here** |
+| the eroder bound (S2) | 300 random islands on levels 3–12; a line; a filled triangle | every subset of size `≤ 3` of level 4 (575 islands), exhaustively | bound holds; longest life 3 |
+| the closed forms (S1) | symbolic identity against the definition | the control's independent symbolic check before the contract | equal |
+
+Findings (all fixed before the census):
+- **F1 (fixed).** The runner's first `ε` literals at `p = 30, 100, 1000` were the antipodal deviations (`31/481`, `101/7754`, `1001/971004`); the maximum there is the orthogonal one (`71/971`, `211/10211`, `2011/1002011`), since `r > q` makes `r/p` the leading deviation. The note's `ε` values and its sentence on the attaining pattern were corrected; the crossover between the antipodal and the orthogonal pattern lies between `p = 10` and `p = 30` at `(p, 1, 2)`.
+- **F2 (fixed; scientifically the important one).** The note's executed witness for S4 was the `48`-fold orbit quotient's contraction. The quotient identifies the six constant planes (they form one orbit), so its total variation is a *lower* bound for the full chain's (data processing) and it cannot see the slow mode, which is the memory of *which* constant plane the chain started from. At `p = 10` the quotient's one-step maximum is `0.393` while the full chain's distance between the all-`+x` and the all-`−x` rows is `0.799`. The full-chain memory table (`n = 1, 2, 4, 8`; `p = 3, 10, 30, 100`) was added as D1; the quotient table was kept as D1b with the corrected reading (approach to the *set* of constant planes, contracting at every coupling, below the memory at every `(p, n)`).
+- **F3 (fixed).** Decimal strings as comparison literals tripped the runner's own floating-point scan; replaced by integer decimals (`floor(10^6 x)`) compared exactly.
+- **F4 (fixed).** A method name appeared in S6 outside the allowed sections; reworded ("contour route"). The name scan now covers the front matter as well.
+
+Attempts to refute (nothing refuted): S0 is a projection identity (executed on 50 random sites); S2's proof was re-read for the case of an island touching a coordinate maximum from below (the two other predecessors exceed the maximum, so the site cannot be a majority — the argument is complete); S3's coupling was checked for the case where exactly one of `η`'s predecessors is `1` (then at most one of `ξ`'s is, so at least two of `v`'s predecessors equal `a`, and the deviation is at most `ε` by definition — complete); S4's eigenvalue continuity uses only the continuity of polynomial roots; S5's eigenvalues of `K` are the six-menu's standard three (`1`, `(p−q)/Z_1` thrice, `(p+q−2r)/Z_1` twice), rechecked by hand. Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.

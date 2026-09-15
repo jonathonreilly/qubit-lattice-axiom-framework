@@ -1,6 +1,6 @@
 {
- "edge_count": 12557,
- "node_count": 5062,
+ "edge_count": 12558,
+ "node_count": 5063,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -731,6 +731,10 @@
    "out_degree": 3
   },
   "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },

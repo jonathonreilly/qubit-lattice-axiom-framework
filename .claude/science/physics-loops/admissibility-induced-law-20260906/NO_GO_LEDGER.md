@@ -24,3 +24,8 @@ Routes read at their proofs, not their headlines.
 
 ## Block 11 (2026-09-15) — the open lemma of blocks 09–10 settled
 - **"The third difference of `log K_3` is nonzero at every nonconstant triple" is false**: it vanishes at exactly five nonconstant points (three on the collapse lines, one mirror pair off them) and nowhere else (proved by exact elimination). The pair terms survive there (X4), so the Markov-graph conclusions of blocks 09–10 hold everywhere nonconstant; the genuine three-body statements hold off the five points.
+
+## Block 12 (2026-09-15) — negatives at scope; an obligation, not a negative
+- **The two-dimensional monotone formation law has no ordered phase at any coupling along rows and columns** (S5): rows and columns are `K`-chains with eigenvalues strictly below one for every positive triple; the two-predecessor limit has no majority. Escapes named for the N-gate: another order class; order along diagonals (not claimed either way); zero weights; a non-product rule.
+- **Every finite cross-section's plane chain is uniquely stationary at every coupling** (S4, from block 08's Q3a) — with the second eigenvalue tending to one as `p → ∞`; not a negative about `Z^3`.
+- The ordered phase in three dimensions is **not** a negative and **not** a claim: an obligation (S6) with its exact inputs. The block's own contour attempt is recorded as an obstruction, not as a no-go.

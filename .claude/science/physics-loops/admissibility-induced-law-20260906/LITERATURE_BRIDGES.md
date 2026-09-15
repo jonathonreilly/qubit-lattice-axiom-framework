@@ -19,3 +19,8 @@ Policy: reference and converge, never borrow; every statement used is re-proved 
 - Probabilistic cellular automata and their high-noise uniqueness by coupling (Dobrushin–Vasershtein-type conditions; Lebowitz–Maes–Speer 1990; Toom et al. 1990): Q4's causal coupling is the one-sided (monotone-path) version with the explicit path count; the region `3c < 1` is the analogue of "the sum of dependence coefficients below one", re-proved here.
 - The contraction of a strictly positive finite stochastic matrix (Doeblin): Q3a, proved in four lines.
 - Kolmogorov extension; Krylov–Bogolyubov invariant laws for Feller kernels on compact spaces: cited definition-level steps under Imports.
+
+## Block 12 (2026-09-15) — references named, none used, none re-proved
+- Toom (1980), "Stable and attractive trajectories in multicomponent systems": the stability of noisy monotone eroders; the north-east-center majority automaton as the classical example with at least two invariant laws at small noise. Named in the note under Prior art and Imports as the theorem S6 would rest on; not used, not re-proved (the block's own contour attempt is recorded with its obstruction).
+- Modern contour (Peierls-bound) presentations of that theorem (e.g. Bramson–Gray 1991; Gács's expositions): reference only.
+- The eroder property and its coordinate-maxima proof (S2), the domination coupling (S3) and the level-time identification (S0) are the note's own, re-proved at scope.

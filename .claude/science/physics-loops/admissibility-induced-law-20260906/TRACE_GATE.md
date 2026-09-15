@@ -118,3 +118,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the lemma is settled: false at exactly five nonconstant points (three on the collapse lines, one mirror pair off them), true elsewhere; blocks 08–10's three-body statements are unconditional off that set and their Markov-graph conclusions hold everywhere nonconstant. Next: the region's boundary; strong coupling; a campaign handoff. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
 ```
+
+# Trace gate — block 12, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 08's region c < 1/3 leaves the strong-coupling side of the Z^3 formation law open; the campaign handoff §3's residual (the noisy-majority structure and its ordered phase)"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the strong-coupling side is structured exactly (level automaton; noise map; eroder; domination; finite-W metastability; 2D contrast) and reduced to one classical obligation (stability of the noisy majority eroder) with its exact inputs; the ordered phase is not claimed. Next: a contour proof re-proved at scope if the owner wants the phase as a theorem; otherwise the lane's remaining items (sextic pair; k ≥ 4 loci; region boundary). Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
+```

@@ -136,3 +136,13 @@ Block 11 opened for review (stacked on #8141): the exceptional locus of the thre
 3. The k = 4, 5, 6 loci — exact elimination on larger systems.
 4. The region's boundary in (p, q, r) — small.
 5. Width 6; the silent triples; the 3D Gaussian instance; the random-priority law's Markov structure (needs the owner's unlanded note).
+
+## Refresh at block 12 opening (2026-09-15)
+
+Block 12 opened for review (stacked on #8142): the strong-coupling side structured; the ordered phase reduced to the stability obligation with exact inputs. Ranked next:
+
+1. **The stability theorem re-proved at scope** (S6; a sparse-contour construction with explicit constants; hard; a full session at least): would turn the ordered phase into a theorem with a threshold in `p`.
+2. **A structural reason for the sextic pair** `(σ_1, σ_2)` of block 11 — small if it exists.
+3. **The loci for `k = 4, 5, 6`** — exact elimination on larger systems.
+4. **The region's boundary in `(p, q, r)`** — small.
+5. **Width 6; the silent triples; the 3D Gaussian instance; the random-priority law's Markov structure** — unchanged.

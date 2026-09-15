@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 18 (2026-09-15) — menus
+- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the two readings and the uniform seed law). Proposed, unaudited. PR #8137 referenced for context.
+- Named premises: the pure-state sphere as the possibility domain; the unsoldered and soldered readings as supplied conditions; the records-only reading; the support as the set of positive-probability values (the axiom's reading note (3)).
+- Scaffolding: rational rotations (cosine `3/5`); the 24 signed permutations of determinant one; the equivariant frame; a symbolic seed on a path of five.
+- External methods (re-proved at scope): orbit–stabilizer for the cube's rotation group; the injectivity of the orbit map of a rotation about an axis off its poles.
+- References named, not used: the classification of finite rotation groups.
+- Counterfactual pass: reflections included in the value symmetry (then the mirror-plane orbits shrink to `24/2`; the axiom names proper rotations only); mixed-state domains (supports inside the ball; not treated); a supplied `S_0` for pairs (a rule choice, not a menu).

@@ -1,0 +1,10 @@
+proper rotations: 24
+axis (1, 0, 0): orbit size 6, stabilizer order 4
+diagonal (1, 1, 1): orbit size 8, stabilizer order 3
+edge (1, 1, 0): orbit size 12, stabilizer order 2
+generic (1, 2, 3): orbit size 24, stabilizer order 1
+mirror-plane generic (1, 1, 2): orbit size 24, stabilizer order 1
+orbit of a non-polar unit vector under a rational rotation about z: distinct points after 12 steps: 12 (the pole is fixed: (0, 0, 1) )
+frame equivariance F(g q1, g q2) == g F(q1, q2): True
+Born overlap at t = 1 and t = -1: 1 0
+path of 5 under the antipodal support: every record is ±seed; patterns: 32 ; all in the seed's axis: True

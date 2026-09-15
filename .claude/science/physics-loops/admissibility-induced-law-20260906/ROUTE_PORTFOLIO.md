@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 18 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–17 are open PRs #8034, #8035, #8138–#8142, #8146–#8151)
+Searched commit: `origin/main` = `2ed54cb83a`.
+- `git grep -n -iE "covariant support|SO\(2\)_q|antipodal menu|\{q, ?-q\}|neighbour-generated" origin/main -- 'docs/*.md'` → the barycenter-selector note (orbit sizes `6, 12, 8` in passing), Born notes (supplied antipodal menus), the possibility-covariance note (invariants; the uniform seed law; a normalized-menu comparison with supplied probabilities); no support classification.
+- #8093's verdict table: row "Menus" — *to compute*; PR #8137 closes the Born half.
+Classification: **open after the matched-hit review.** Routes: U-A stabilizer/orbit classification under each reading (M1–M3) — chosen; U-B the seed-generated alphabet by induction along the order (M4) — chosen; U-C the Born evaluation on the antipodal pair (M5) — chosen; U-D mixed-state domains — not taken; U-E the Born form on frame-attached supports — not taken (the owner's Born seam).

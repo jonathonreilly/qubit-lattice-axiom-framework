@@ -105,3 +105,14 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- block 18 opening (2026-09-15)
+# block: 18
+# branch: physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915 (independent; base origin/main 2ed54cb83a; blocks 06-17 are open PRs #8034, #8035, #8138-#8142, #8146-#8151)
+# pr_status: opening — PR number recorded at close-out; hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=15 FAIL=0; 8 mutations, census 8/8 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
+# seats: "supervisor-run: control -> contract with a lens pass -> primary (M1-M5, runner) -> refuting pass (two-generator group; axis-based stabilizers; second frame check; symbolic-angle orbit) -> fold"
+# review_findings: "unsoldered: one recorded neighbour -> finite supports in {q, -q}; two non-collinear values -> frame-attached supports, no site-independent finite menu; soldered: covariant menus = unions of cube orbits 6/8/12/24 (stabilizers 4/3/2/1), the six axes minimal; seed-generated alphabet (two-valued on a random axis where each record sees one neighbour); Born overlap deterministic on the antipodal pair"
+# strongest_unresolved_proof_obligation: "mixed-state domains; the Born form on frame-attached supports"
+# next_exact_action: "queue refresh 2026-09-15 (block 18 opening): sharpen block 17's constants; X4; S6"
+# lock: held (owner: don't stop; assess the next lane at each conclusion)

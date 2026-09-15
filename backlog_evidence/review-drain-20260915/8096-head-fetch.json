@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "d57291602d909246756f30975f0d862a08e8f836",
+  "fetched_ref": "refs/review-loop/fetched/8096-5106a3e792bb40cfaca1bf60cc2e0459",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/formation-order-covariance-20260913",
+    "headRefOid": "d57291602d909246756f30975f0d862a08e8f836",
+    "isDraft": false,
+    "number": 8096,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

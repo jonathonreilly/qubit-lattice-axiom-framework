@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "revision": "d57291602d909246756f30975f0d862a08e8f836",
+  "prefix": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/",
+  "entries": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/APPROACH_REGISTRY.md",
+      "original_mode": "100644",
+      "git_blob": "929cf440b6f7e69d885284510be542fa4bfec472",
+      "raw_sha256": "c2346c61958bdc2c1909addddf05a8525c00ba69ce870bc3a9776794682b843e",
+      "raw_bytes": 656,
+      "stored_path": "kept/pr8096-APPROACH_REGISTRY-eca75a325166a0da.md",
+      "encoding": "identity",
+      "stored_sha256": "c2346c61958bdc2c1909addddf05a8525c00ba69ce870bc3a9776794682b843e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_mode": "100644",
+      "git_blob": "53603fcf7be0022777a2581a4b43f0e573323fce",
+      "raw_sha256": "70fe4ddc8422c0b86e9f28413fe8b865bd4fc711cf00da302acd0a8188275430",
+      "raw_bytes": 1572,
+      "stored_path": "kept/pr8096-ASSUMPTIONS_AND_IMPORTS-04947ad72d106df1.md",
+      "encoding": "identity",
+      "stored_sha256": "70fe4ddc8422c0b86e9f28413fe8b865bd4fc711cf00da302acd0a8188275430"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/CLAIM_STATUS_CERTIFICATE.md",
+      "original_mode": "100644",
+      "git_blob": "a555874c90d5d8ab428e43d2a4cacd4a00137468",
+      "raw_sha256": "01ed36ef84462e7c2d743246ec32026f68297d373de136509321a09c566d883f",
+      "raw_bytes": 515,
+      "stored_path": "kept/pr8096-CLAIM_STATUS_CERTIFICATE-4a3d4f79e164376b.md",
+      "encoding": "identity",
+      "stored_sha256": "01ed36ef84462e7c2d743246ec32026f68297d373de136509321a09c566d883f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/GOAL.md",
+      "original_mode": "100644",
+      "git_blob": "bb570e81eb069239935d4533759e31ddfabf1a97",
+      "raw_sha256": "9c1b31fef03499c87573a1bc861fcb3fd9a0bcd3e13180c90320bb0404478082",
+      "raw_bytes": 852,
+      "stored_path": "kept/pr8096-GOAL-525566f7a8b7cb8d.md",
+      "encoding": "identity",
+      "stored_sha256": "9c1b31fef03499c87573a1bc861fcb3fd9a0bcd3e13180c90320bb0404478082"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/HANDOFF.md",
+      "original_mode": "100644",
+      "git_blob": "712436e80ac3007066cd201817de7b145b4ead37",
+      "raw_sha256": "87dc50b9745d00a0b3b1bf4c9ce6a17b7e0ce0006a906ce913bd08bfd29ec3a4",
+      "raw_bytes": 881,
+      "stored_path": "kept/pr8096-HANDOFF-9ef67db77ea9ef6f.md",
+      "encoding": "identity",
+      "stored_sha256": "87dc50b9745d00a0b3b1bf4c9ce6a17b7e0ce0006a906ce913bd08bfd29ec3a4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "git_blob": "d6457c08411ada96b6dce7ad32b6d8976daf6e28",
+      "raw_sha256": "98db917f6a4b2b75808ecf335f69161266c0f7dbc5007ecd59aa141863ad5305",
+      "raw_bytes": 1725,
+      "stored_path": "kept/pr8096-OPPORTUNITY_QUEUE-ccb74c0b7866140d.md",
+      "encoding": "identity",
+      "stored_sha256": "98db917f6a4b2b75808ecf335f69161266c0f7dbc5007ecd59aa141863ad5305"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/REVIEW_HISTORY.md",
+      "original_mode": "100644",
+      "git_blob": "00cbe7026c65a26339cdb0d949a9f8f4cefeb020",
+      "raw_sha256": "c5ec1c49337cfbd98191ae31857844d30ba0f7000422087de3376a61d7f957d1",
+      "raw_bytes": 1382,
+      "stored_path": "kept/pr8096-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "encoding": "identity",
+      "stored_sha256": "c5ec1c49337cfbd98191ae31857844d30ba0f7000422087de3376a61d7f957d1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/ROUTE_PORTFOLIO.md",
+      "original_mode": "100644",
+      "git_blob": "ee889beb37c9e7fb796e368fbb6572ca41b85a6e",
+      "raw_sha256": "fd5a5cb8f52473cd2443a837e5cfa1077ab1f7df2b0fb16a70048c15f7fcc48e",
+      "raw_bytes": 1021,
+      "stored_path": "kept/pr8096-ROUTE_PORTFOLIO-026cc4e1e794b8fa.md",
+      "encoding": "identity",
+      "stored_sha256": "fd5a5cb8f52473cd2443a837e5cfa1077ab1f7df2b0fb16a70048c15f7fcc48e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/STATE.yaml",
+      "original_mode": "100644",
+      "git_blob": "e0fcb979f82a8b412deae3e6cad37e894f85a529",
+      "raw_sha256": "f85017c4f34139e6a008914ea9d2f9e2f276cd40414fb686a558807d6e7bdeb1",
+      "raw_bytes": 791,
+      "stored_path": "kept/pr8096-STATE-3b9688acc891237e.yaml",
+      "encoding": "identity",
+      "stored_sha256": "f85017c4f34139e6a008914ea9d2f9e2f276cd40414fb686a558807d6e7bdeb1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-formation-order-derivation-20260913/TRACE_GATE.md",
+      "original_mode": "100644",
+      "git_blob": "0c9e3c38467c57d963ca1ec382f19f15c2935137",
+      "raw_sha256": "a2deb5b3e10eceb81cd70efc039f937823e9886d431c81ab13e26b78467fc39e",
+      "raw_bytes": 720,
+      "stored_path": "kept/pr8096-TRACE_GATE-f67515f6cce5b41d.md",
+      "encoding": "identity",
+      "stored_sha256": "a2deb5b3e10eceb81cd70efc039f937823e9886d431c81ab13e26b78467fc39e"
+    }
+  ],
+  "unique_blobs": {
+    "929cf440b6f7e69d885284510be542fa4bfec472": {
+      "raw_sha256": "c2346c61958bdc2c1909addddf05a8525c00ba69ce870bc3a9776794682b843e",
+      "occurrences": 1,
+      "raw_bytes": 656
+    },
+    "53603fcf7be0022777a2581a4b43f0e573323fce": {
+      "raw_sha256": "70fe4ddc8422c0b86e9f28413fe8b865bd4fc711cf00da302acd0a8188275430",
+      "occurrences": 1,
+      "raw_bytes": 1572
+    },
+    "a555874c90d5d8ab428e43d2a4cacd4a00137468": {
+      "raw_sha256": "01ed36ef84462e7c2d743246ec32026f68297d373de136509321a09c566d883f",
+      "occurrences": 1,
+      "raw_bytes": 515
+    },
+    "bb570e81eb069239935d4533759e31ddfabf1a97": {
+      "raw_sha256": "9c1b31fef03499c87573a1bc861fcb3fd9a0bcd3e13180c90320bb0404478082",
+      "occurrences": 1,
+      "raw_bytes": 852
+    },
+    "712436e80ac3007066cd201817de7b145b4ead37": {
+      "raw_sha256": "87dc50b9745d00a0b3b1bf4c9ce6a17b7e0ce0006a906ce913bd08bfd29ec3a4",
+      "occurrences": 1,
+      "raw_bytes": 881
+    },
+    "d6457c08411ada96b6dce7ad32b6d8976daf6e28": {
+      "raw_sha256": "98db917f6a4b2b75808ecf335f69161266c0f7dbc5007ecd59aa141863ad5305",
+      "occurrences": 1,
+      "raw_bytes": 1725
+    },
+    "00cbe7026c65a26339cdb0d949a9f8f4cefeb020": {
+      "raw_sha256": "c5ec1c49337cfbd98191ae31857844d30ba0f7000422087de3376a61d7f957d1",
+      "occurrences": 1,
+      "raw_bytes": 1382
+    },
+    "ee889beb37c9e7fb796e368fbb6572ca41b85a6e": {
+      "raw_sha256": "fd5a5cb8f52473cd2443a837e5cfa1077ab1f7df2b0fb16a70048c15f7fcc48e",
+      "occurrences": 1,
+      "raw_bytes": 1021
+    },
+    "e0fcb979f82a8b412deae3e6cad37e894f85a529": {
+      "raw_sha256": "f85017c4f34139e6a008914ea9d2f9e2f276cd40414fb686a558807d6e7bdeb1",
+      "occurrences": 1,
+      "raw_bytes": 791
+    },
+    "0c9e3c38467c57d963ca1ec382f19f15c2935137": {
+      "raw_sha256": "a2deb5b3e10eceb81cd70efc039f937823e9886d431c81ab13e26b78467fc39e",
+      "occurrences": 1,
+      "raw_bytes": 720
+    }
+  },
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict."
+}

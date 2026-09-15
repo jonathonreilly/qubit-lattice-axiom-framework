@@ -1,0 +1,130 @@
+{
+  "status": "ok",
+  "checks": [
+    {
+      "name": "lexicographic_translation_counterexample"
+    },
+    {
+      "name": "classification_polynomial_expansion"
+    },
+    {
+      "name": "edge_empty_probability_identity"
+    },
+    {
+      "name": "star_extension_(1, 0)"
+    },
+    {
+      "name": "star_extension_(1, 1)"
+    },
+    {
+      "name": "star_extension_(2, 0)"
+    },
+    {
+      "name": "star_extension_(2, 1)"
+    },
+    {
+      "name": "star_extension_(2, 2)"
+    },
+    {
+      "name": "star_extension_(3, 0)"
+    },
+    {
+      "name": "star_extension_(3, 1)"
+    },
+    {
+      "name": "star_extension_(3, 2)"
+    },
+    {
+      "name": "star_extension_(3, 3)"
+    },
+    {
+      "name": "star_extension_(4, 0)"
+    },
+    {
+      "name": "star_extension_(4, 1)"
+    },
+    {
+      "name": "star_extension_(4, 2)"
+    },
+    {
+      "name": "star_extension_(4, 3)"
+    },
+    {
+      "name": "star_extension_(4, 4)"
+    },
+    {
+      "name": "star_extension_(5, 0)"
+    },
+    {
+      "name": "star_extension_(5, 1)"
+    },
+    {
+      "name": "star_extension_(5, 2)"
+    },
+    {
+      "name": "star_extension_(5, 3)"
+    },
+    {
+      "name": "star_extension_(5, 4)"
+    },
+    {
+      "name": "star_extension_(5, 5)"
+    },
+    {
+      "name": "star_extension_(6, 0)"
+    },
+    {
+      "name": "star_extension_(6, 1)"
+    },
+    {
+      "name": "star_extension_(6, 2)"
+    },
+    {
+      "name": "star_extension_(6, 3)"
+    },
+    {
+      "name": "star_extension_(6, 4)"
+    },
+    {
+      "name": "star_extension_(6, 5)"
+    },
+    {
+      "name": "star_extension_(6, 6)"
+    },
+    {
+      "name": "unreachable_prefix_exchange_counterexample"
+    },
+    {
+      "name": "path_orientation_census",
+      "laws": 2
+    },
+    {
+      "name": "path_pair_witness",
+      "variation": "9/50",
+      "differing_cells": 8
+    },
+    {
+      "name": "path_allminus"
+    },
+    {
+      "name": "square_orientation_census",
+      "laws": 4
+    },
+    {
+      "name": "square_pair_witness",
+      "variation": "9/50",
+      "differing_cells": 16
+    },
+    {
+      "name": "rectangle_orientation_census",
+      "laws": 28
+    },
+    {
+      "name": "rectangle_pair_witness",
+      "variation": "135/578",
+      "differing_cells": 44
+    }
+  ],
+  "count": 38,
+  "elapsed_seconds": 0.3463517500786111
+}

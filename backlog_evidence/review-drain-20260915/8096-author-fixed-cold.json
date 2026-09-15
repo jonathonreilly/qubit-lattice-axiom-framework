@@ -1,0 +1,9 @@
+{
+  "tree": "ac3578b7acccbd3d2128097efb6c35e78942b527",
+  "changed": {
+    "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008",
+    "scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py": "8f8bdeb2953eabaefa4d187e0561dd6b6479cafaebe05dab89d467e60bab7a52"
+  },
+  "primary_executed": false,
+  "old_cache_retained_pending_new_capture": true
+}

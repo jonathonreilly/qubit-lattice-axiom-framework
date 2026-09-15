@@ -1,0 +1,24 @@
+{
+  "base": "f1755b6e103693ad23cbd657a0e447280304dc7f",
+  "tree": "c2252f903d4a229b0e4c710111c0552d6bac28c5",
+  "source_paths": {
+    "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md": "e360f0bd9b0df82cc2d79d3dad8ff0d0de6367672c783a486a9c73d56877e07c",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/README.md": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/archive-manifest.json": "55e2af696eb0d323c737cf1ab52f0fce48ba450a6359fa126aa3511d7b6bb940",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-APPROACH_REGISTRY-eca75a325166a0da.md": "c2346c61958bdc2c1909addddf05a8525c00ba69ce870bc3a9776794682b843e",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-ASSUMPTIONS_AND_IMPORTS-04947ad72d106df1.md": "70fe4ddc8422c0b86e9f28413fe8b865bd4fc711cf00da302acd0a8188275430",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-CLAIM_STATUS_CERTIFICATE-4a3d4f79e164376b.md": "01ed36ef84462e7c2d743246ec32026f68297d373de136509321a09c566d883f",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-GOAL-525566f7a8b7cb8d.md": "9c1b31fef03499c87573a1bc861fcb3fd9a0bcd3e13180c90320bb0404478082",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-HANDOFF-9ef67db77ea9ef6f.md": "87dc50b9745d00a0b3b1bf4c9ce6a17b7e0ce0006a906ce913bd08bfd29ec3a4",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-OPPORTUNITY_QUEUE-ccb74c0b7866140d.md": "98db917f6a4b2b75808ecf335f69161266c0f7dbc5007ecd59aa141863ad5305",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-REVIEW_HISTORY-3f4cb79c836849bf.md": "c5ec1c49337cfbd98191ae31857844d30ba0f7000422087de3376a61d7f957d1",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-ROUTE_PORTFOLIO-026cc4e1e794b8fa.md": "fd5a5cb8f52473cd2443a837e5cfa1077ab1f7df2b0fb16a70048c15f7fcc48e",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-STATE-3b9688acc891237e.yaml": "f85017c4f34139e6a008914ea9d2f9e2f276cd40414fb686a558807d6e7bdeb1",
+    "docs/work_history/repo/review_feedback/pr8096-evidence/kept/pr8096-TRACE_GATE-f67515f6cce5b41d.md": "a2deb5b3e10eceb81cd70efc039f937823e9886d431c81ab13e26b78467fc39e",
+    "logs/runner-cache/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.txt": "c5b5033a07e983a8f3ed943288747baeb3d5c8651823c61886dca971c7688777",
+    "scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py": "f29d7caf00e609812393c08798d127550172274831d1cf27094fb7067c802d97"
+  },
+  "archive_manifest_sha256": "55e2af696eb0d323c737cf1ab52f0fce48ba450a6359fa126aa3511d7b6bb940",
+  "original_cache_status": "fresh",
+  "change": "Original scientific note, primary and canonical cache retained byte-identical; all10 historical files preserved as raw identity payloads. No new execution. Independent review still required for any evidence reuse."
+}

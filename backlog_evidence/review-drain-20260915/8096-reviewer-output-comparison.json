@@ -1,0 +1,11 @@
+{
+  "original_completed_checks": 38,
+  "original_check_lines_exactly_retained": true,
+  "added_regression_lines": [
+    "PASS: translation-lexicographic-counterexample lexicographic order is translation-invariant; finite samples control the written general proof",
+    "PASS: null-prefix-unweighted-exchange-counterexample all-zero path laws agree although unreachable plus-prefix local products are 1/4 and 1/3",
+    "PASS: star-positive-leaf-cancellation-through-six center-first and leaves-first joint factorizations checked for every binary leaf assignment through six neighbours"
+  ],
+  "new_total": 41,
+  "boundary": "Original cache was historical after proof correction. One new capture binds corrected source and all three declared inputs; retained old check outcomes do not imply acceptance of the old proof."
+}

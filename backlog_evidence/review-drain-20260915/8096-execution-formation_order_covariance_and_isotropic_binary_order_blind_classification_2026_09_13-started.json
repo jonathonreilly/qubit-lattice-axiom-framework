@@ -1,0 +1,5 @@
+{
+  "runner": "scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py",
+  "limit_sec": 120,
+  "record_sha256": "9bad38d465e9e393710b2ba8b3e6adfe643463d2a4da7bf9b6bf6f4e570eb817"
+}

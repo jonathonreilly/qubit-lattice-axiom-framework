@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8096-preexecution",
+  "tree": "ac3578b7acccbd3d2128097efb6c35e78942b527",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "formation_order_covariance_and_isotropic_binary_order_blind_classification_bounded_theorem_note_2026-09-13",
+      "primary_runner": "scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8749,
+      "misses": 4375
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4373
+    },
+    "declared_inputs": {
+      "hits": 8774,
+      "misses": 4506
+    }
+  },
+  "record_sha256": "9bad38d465e9e393710b2ba8b3e6adfe643463d2a4da7bf9b6bf6f4e570eb817",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

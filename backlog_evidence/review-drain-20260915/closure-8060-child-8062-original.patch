@@ -1,0 +1,2234 @@
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md
+new file mode 100644
+index 0000000000..254ab1e523
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md
+@@ -0,0 +1,3 @@
++# Artifact Plan
++
++One mathematical note, portable primary and exact tiny helper, paired output, original proofs/reviews, isolated closure and actual semantic mutation receipts. No physical arrays, eigensolvers or production. Finite controls support sensitive algebra, not the all-volume analytic proof.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md
+new file mode 100644
+index 0000000000..72f985e9c6
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md
+@@ -0,0 +1,3 @@
++# Assumptions And Imports
++
++Supplied H_U, full native CAR/Gauss dictionary, canonical minimizing reference, uniform stiffness relative to its E0, pure active Gaussian vacuum, antiperiodic no-zero grids. Standard smooth functional calculus, Wick and finite-range propagation are derived in the note. No uniform active gap. Four explicit upstream notes plus own helper are the declared inputs.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md
+new file mode 100644
+index 0000000000..c8f9b3d0e7
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md
+@@ -0,0 +1,8 @@
++# Claim Status Certificate
++
++Conditional-support for the supplied full native model on L=4M, M>=32, uniform stiffness and pure canonical Gaussian AP reference. No node value, interacting phase, all-order joint bound or full effective-operator locality.
++trace_class: frontier_discovery
++proposal_allowed: false
++bare_retained_allowed: false
++audit_required_before_effective_retained: true
++Independent source reviews preserved; canonical review pending. No audit status applied.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr
+new file mode 100644
+index 0000000000..61491dc507
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr
+@@ -0,0 +1,20 @@
++real 0.06
++user 0.05
++sys 0.00
++            22872064  maximum resident set size
++                   0  average shared memory size
++                   0  average unshared data size
++                   0  average unshared stack size
++                2509  page reclaims
++                   2  page faults
++                   0  swaps
++                   0  block input operations
++                   0  block output operations
++                   0  messages sent
++                   0  messages received
++                   0  signals received
++                   0  voluntary context switches
++                  28  involuntary context switches
++          1214598972  instructions retired
++           249441399  cycles elapsed
++            12927480  peak memory footprint
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout
+new file mode 100644
+index 0000000000..1896c44698
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout
+@@ -0,0 +1,29 @@
++{
++  "status": "PASS",
++  "checks": 11896,
++  "geometry": {
++    "4": {
++      "faces": 192,
++      "pairs": 960
++    },
++    "6": {
++      "faces": 648,
++      "pairs": 3240
++    }
++  },
++  "coefficient": "19/96",
++  "matrix_scope": "exact small Gaussian dyadics; no eigensolver",
++  "physical_runs": 0,
++  "input_sha256": {
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++    "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
++    "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26"
++  },
++  "source_sha256": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522",
++  "elapsed_seconds": 0.0391667090007104,
++  "peak_rss_bytes": 22855680,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md
+new file mode 100644
+index 0000000000..06b462cb0f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/REVIEW.md
+@@ -0,0 +1,11 @@
++# Canonical quasi-local star vertex: narrow final review
++
++PASS. Source freeze481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f; note b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7. Read the complete canonical note, primary and helper, the control receipt and retained failed-mutant stderr. Verified all seven live source hashes and all seven isolated-copy hashes without executing the controls or a physical calculation.
++
++This reuses my complete original analytic review72a29a8e of the c892 lemma. The canonical argument retains the exact smooth-filter/cocycle identity, unitary Duhamel locality estimate, dyadic-shell Gaussian extraction and three-dimensional inverse-square integrability. The added domain is appropriately narrower and explicit: L=4M, M≥32, nonzero hopping, canonical antiperiodic no-zero-mode grids, pure Gaussian vacuum, and the full active pair bound in both parities relative to the same minimizing E0. The spectator parity explanation correctly connects that active bound to the physical stiffness theorem. The complex CAR norm correction is explicitly √2; no erroneous equality for complex coefficients remains.
++
++The native90-term normalization and star-complement identity are stated, and the note distinguishes a vacuum-creating representative from the full effective operator. The additional local coefficient19/96 retains the fixed-volume-first order of limits; no uniform remainder is inferred. The note makes no node-value, interacting-gap or full-sixth claim.
++
++The helper genuinely tests non-Hermitian complex Gaussian extraction with exact small dyadic complex arithmetic, actual periodic face-pair sets on L4/L6, and rational shell bounds. Its11896 count matches the saved isolated output. The three retained semantic mutants change extraction normalization, erase the complex component, or alter the flux-set operation; their saved failures occur at the corresponding mathematical predicates. The two malformed CLI cases return2. These controls support the finite identities, while the text correctly attributes the uniform analytic conclusion to the proof rather than to a finite census.
++
++The primary has explicit -OO-safe predicates and compiles helper source bytes, reports all six input hashes plus its own source hash, and owns the alarm. The seven-file isolated payload is identical. No source correction is requested. Formal audit status remains unset and the supplied-model conditional-support scope is preserved.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md
+new file mode 100644
+index 0000000000..9ab00abdd7
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/FINAL_ROOT_REVIEW/ROOT.md
+@@ -0,0 +1 @@
++Root PASS. Complete canonical note and both runner sources read; exact native singleton normalization, smooth inverse filter, ordered cocycles, Gaussian extraction, dyadic locality and AP-grid square-integrability checked against prior cold72a29/cc6c. Complex CAR sqrt2 and full-active same-reference gap restrictions are explicit. A fresh seven-file -I-B-S-OO isolated run reproduces all11896 predicates and the full paired scientific payload in0.06s/22872064B. These are supporting controls; the uniform theorem is analytic, not inferred from the tested lattice sizes. No full interacting phase, node value, whole-sixth locality or uniform perturbative remainder claimed. Formal audit and combined landing checks remain deferred.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md
+new file mode 100644
+index 0000000000..e66ba1ad27
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md
+@@ -0,0 +1,3 @@
++# Goal
++
++Prove and package a uniform quasi-local exact star vacuum creator and its bounded one-particle form factor and inverse-kernel row. Conditional-support for the supplied full native model on L=4M, M>=32, uniform stiffness and pure canonical Gaussian AP reference. No node value, interacting phase, all-order joint bound or full effective-operator locality.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md
+new file mode 100644
+index 0000000000..db280ce9e6
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md
+@@ -0,0 +1,3 @@
++# Handoff
++
++Author packet for root and independent final review. Root owns graph, commit, push and PR. Live controls executed with -I -B -OO and explicit guards; no physical production. Conditional-support for the supplied full native model on L=4M, M>=32, uniform stiffness and pure canonical Gaussian AP reference. No node value, interacting phase, all-order joint bound or full effective-operator locality.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md
+new file mode 100644
+index 0000000000..9a5c080525
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md
+@@ -0,0 +1,3 @@
++# Literature Bridges
++
++No new literature import. Smooth filters, CAR/Wick and local propagation are standard methods; no historical novelty claim. Upstream flux-selection imports retain their existing scope.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md
+new file mode 100644
+index 0000000000..842f536a18
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md
+@@ -0,0 +1,3 @@
++# No Go Ledger
++
++No general no-go. The coefficient uses sup_L limsup_U, not the reverse. Mean density does not give joint suppression. The complex CAR equality was corrected to sqrt(2) inequality; original proof and review clarification preserved.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md
+new file mode 100644
+index 0000000000..58c7451345
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md
+@@ -0,0 +1,3 @@
++# Opportunity Queue
++
++Next: analytic node value/vanishing; then connected higher-sector and mixed-history control. These are research tasks, not claimed consequences of the present theorem.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json
+new file mode 100644
+index 0000000000..d86993bc62
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json
+@@ -0,0 +1,30 @@
++{
++  "isolated_files": 7,
++  "payload_equal": true,
++  "mutants_and_CLI": [
++    {
++      "name": "extraction_factor",
++      "returncode": 1,
++      "source_sha256": "f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3"
++    },
++    {
++      "name": "erase_complex",
++      "returncode": 1,
++      "source_sha256": "e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7"
++    },
++    {
++      "name": "wrong_flux",
++      "returncode": 1,
++      "source_sha256": "8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea"
++    },
++    {
++      "CLI": "--bad",
++      "returncode": 2
++    },
++    {
++      "CLI": "positional",
++      "returncode": 2
++    }
++  ],
++  "physical_runs": 0
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/DELIVERY_FREEZE.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/DELIVERY_FREEZE.json
+new file mode 100644
+index 0000000000..05d3b4bb8a
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/DELIVERY_FREEZE.json
+@@ -0,0 +1,52 @@
++{
++  "base": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
++  "files": {
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ARTIFACT_PLAN.md": "47039ff362e4cef3ab01489301e8c05b058869ae3596e29c7d78999afdf5177b",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ASSUMPTIONS_AND_IMPORTS.md": "138dbf400c75e233dd11a6c3a771140c13b90c366aef3dd01a300595f6284428",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/CLAIM_STATUS_CERTIFICATE.md": "855bd725b2ce884157c1f9960dcfc50bb8c75d42bb99d2854ffd23af9c9df9c9",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/GOAL.md": "7b3c23ea69c5e1f96552784f4b5b9ccdfc2872d0989ce7e6eca8010fd5d3b851",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/HANDOFF.md": "3e352df556a419c02c445477dbd822cd286ffa11534784f6c72f8143561b0655",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/LITERATURE_BRIDGES.md": "ee832b07ba8024482db7d47a3e84d743eab0809a7bda2864104e6bd342ca2e15",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/NO_GO_LEDGER.md": "811a4d3aa20b470b49a3d042de018aa01c2af2f563112589456413a8132809c4",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/OPPORTUNITY_QUEUE.md": "7e64d207a09982478d680f89b8bd1d8f1a2a3bb0e6f48ec4dc14c9ff3e5b62a1",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/CONTROL_RECEIPT.json": "23b37d0cf2bf08ff1cde246afd207436cddcab4b6c1c21050cd94f8810031f86",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json": "6c1527d5f41f01dfc92cc5f3f779b6cd4814670961c445013efa3c49e9c28443",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout": "0ca84325c32f9d636162c0518786f342b676b62ac565695fea2b00582af820fa",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip": "2c64b374a2848f6147e393d01b90a666084a84aa0bc6f803c7441db9d6033960",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr": "b2780a3cd710dd2b44e01db1a9b4bf966dcef26ea2dd6991df02ec04ba2b07e8",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt": "e19c0624f04b2e434b68ae96f61de859e20ca2684520317964b3783228e676b7",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr": "697ba0292b615b40693ad65d2f98b3b2c5faf4f235a4b4368ad43d86f2b32d0b",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt": "f6d4a3197c48bec318e3be5c27d936477d9f2d3f4312d9e13bca84d08a97d3f3",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr": "bdbecd6f2e51633b0ac4412e7ec09fe3ee82d3887c6c1feea18a1af8d05685e3",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt": "8657493ed384e0005a0b85241bb432a50b1268da61e280ef96ab7713ae94bcea",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md": "1043aeefd6cf484f8ba30f65a03e182696514ff2ccae0709ef91df28d9666816",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md": "d9f097fad4f42d4cba209ebe77748095c0518a4dcee1941e2b778651078c2157",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md": "a6359c1e29ad0773205e7f1c5a3cff239bd32969653d4dcbfbcfe533ef03518d",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml": "23e1c9e98734fe7a77399456bead4f1c5a2f7dfadfc2318ef00b94e2d106f03f",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md": "b746a3673329a0720e46d5242b26ced79d3557e98068495a361e08cfaedf2fea",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md": "72a29a8ed8bffd7abca1b0f353580bfeb2504f0a5ea35c015e1448ec05dfcd6b",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md": "cc6c7ef4d2244b7bcff15232ea829654cf507b64874d33fa2ad4e9591f972f0d",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json": "3cd4c6c76c2a477a7c4392c47993083f207fe4f5471e4849045fdae3286a26c7",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json": "6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md": "3b8cf086d0cb51017a93b04b5d61780c4be29bcba3eb115ceca4a1af1c107dee",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json": "383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md": "c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md": "9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json": "fd48b10a06b2ec8be6d1ecf61361b6d855da9be153c226d3bd98d43f3e697228",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md": "c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md": "64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768",
++    ".claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json": "74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/audit/data/citation_graph_manifest.json": "be5d44537088f4eb9c46aca260a7bf8a5c4dd2c1da897de9d8d01af1d4b54b7f",
++    "outputs/native_uniform_quasilocal_star_vertex_2026_09_09.json": "af845d26f5a808dec513637cb4d05d7f2d85331f6c663aa49eb8dd2a7feacbfe",
++    "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26",
++    "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522"
++  },
++  "source_freeze": "481e49aa4dd1e19f124d698f113baa8b90a5a116d5535de6d8867bd5fbf5087f",
++  "graph_added_nodes": 1,
++  "graph_added_edges": 4,
++  "prior_nodes_changed": 0
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json
+new file mode 100644
+index 0000000000..bc573e787a
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/GRAPH_DELTA.json
+@@ -0,0 +1,25 @@
++{
++  "added": [
++    "native_uniform_quasilocal_star_vertex_note_2026-09-09"
++  ],
++  "removed": [],
++  "changed_prior_nodes": [],
++  "node": {
++    "claim_id": "native_uniform_quasilocal_star_vertex_note_2026-09-09",
++    "claim_type_author_hint": null,
++    "claim_type_author_hint_raw": null,
++    "claim_type_seed_hint": "positive_theorem",
++    "deps": [
++      "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08",
++      "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08",
++      "native_uniform_cubic_flux_defect_stiffness_note_2026-09-08",
++      "native_weak_electric_joint_defect_bounds_note_2026-09-09"
++    ],
++    "helper_runner_paths": [],
++    "note_hash": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
++    "runner_path": "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py",
++    "title": "A uniformly quasi-local native star vacuum vertex"
++  },
++  "edge_delta": 4
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stderr b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stderr
+new file mode 100644
+index 0000000000..e69de29bb2
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout
+new file mode 100644
+index 0000000000..d7c82310e3
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED.stdout
+@@ -0,0 +1,29 @@
++{
++  "status": "PASS",
++  "checks": 11896,
++  "geometry": {
++    "4": {
++      "faces": 192,
++      "pairs": 960
++    },
++    "6": {
++      "faces": 648,
++      "pairs": 3240
++    }
++  },
++  "coefficient": "19/96",
++  "matrix_scope": "exact small Gaussian dyadics; no eigensolver",
++  "physical_runs": 0,
++  "input_sha256": {
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++    "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
++    "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26"
++  },
++  "source_sha256": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522",
++  "elapsed_seconds": 0.03960629098583013,
++  "peak_rss_bytes": 22986752,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip
+new file mode 100644
+index 0000000000000000000000000000000000000000..eb6d45581fd4c1449b97ba60547d939c22fcabca
+GIT binary patch
+literal 44214
+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
+V6d3qF{tV)42Yf}X?2><6{Xf_7lav4e
+
+literal 0
+HcmV?d00001
+
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..49b98bc382
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/SOURCE_FREEZE.json
+@@ -0,0 +1,9 @@
++{
++  "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++  "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++  "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++  "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++  "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
++  "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26",
++  "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr
+new file mode 100644
+index 0000000000..d8da558ebd
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.stderr
+@@ -0,0 +1,11 @@
++Traceback (most recent call last):
++  File "<string>", line 1, in <module>
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt", line 68, in <module>
++    signal.alarm(180);print(json.dumps(check(),indent=2))
++                                       ^^^^^^^
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt", line 29, in check
++    req(actual==expected,'complex Gaussian extraction')
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt", line 9, in req
++    if not ok:raise ValueError(msg)
++              ^^^^^^^^^^^^^^^^^^^^^
++ValueError: complex Gaussian extraction
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt
+new file mode 100644
+index 0000000000..ec9045a117
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/erase_complex.txt
+@@ -0,0 +1,68 @@
++"""Small exact Gaussian-dyadic controls; all matrix entries stay exact dyadics <2**20."""
++from fractions import Fraction as F
++from itertools import combinations,product
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ n=3;d=1<<n
++ def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(d)) for j in range(d)] for i in range(d)]
++ I=[[complex(i==j) for j in range(d)] for i in range(d)];gam=[]
++ for mode in range(n):
++  for kind in range(2):
++   a=[[0j]*d for _ in range(d)]
++   for x in range(d):a[x^(1<<mode)][x]=(-1)**((x&((1<<mode)-1)).bit_count())*(1 if kind==0 else 1j*(1-2*((x>>mode)&1)))
++   gam.append(a)
++ for length in (1,3,5):
++  for inds in combinations(range(6),length):
++   a=I
++   for j in inds:a=mm(a,gam[j])
++   for scalar in (1,complex(1,2)/2):
++    y=[[scalar*z for z in row] for row in a]
++    coefficients=[(mm(g,y)[0][0]+mm(y,g)[0][0])/2 for g in gam]
++    for x in range(d):
++     expected=y[x][0] if x.bit_count()==1 else 0
++     actual=sum(c.real*g[x][0] for c,g in zip(coefficients,gam))
++     req(actual==expected,'complex Gaussian extraction')
++ # beta0+i beta1 has norm2, while coefficient l2 squared is2.
++ a=[[gam[0][i][j]+1j*gam[1][i][j] for j in range(d)] for i in range(d)]
++ norm2=max(sum(abs(a[i][j])**2 for i in range(d)) for j in range(d))
++ req(norm2==4 and norm2==2*2,'complex CAR factor')
++ geometry={}
++ for L in (4,6):
++  vs=list(product(range(L),repeat=3));ix={v:i for i,v in enumerate(vs)};edges=[]
++  for v in vs:
++   for axis in range(3):
++    w=list(v);w[axis]=(w[axis]+1)%L;edges.append(tuple(sorted((ix[v],ix[tuple(w)]))))
++  ei={e:i for i,e in enumerate(edges)};faces=[]
++  for v in vs:
++   for a,b in combinations(range(3),2):
++    u=list(v);u[a]=(u[a]+1)%L;w=list(v);w[b]=(w[b]+1)%L;z=u.copy();z[b]=(z[b]+1)%L
++    cycle=[ix[v],ix[tuple(u)],ix[tuple(z)],ix[tuple(w)]]
++    faces.append({ei[tuple(sorted((cycle[j],cycle[(j+1)%4])))] for j in range(4)})
++  ef=[set() for _ in edges];stars=[[] for _ in vs]
++  for j,face in enumerate(faces):
++   for e in face:ef[e].add(j)
++  for e,(v,w) in enumerate(edges):stars[v].append(e);stars[w].append(e)
++  seen=set();through=[[0,0] for _ in faces]
++  for star in stars:
++   for a,b in combinations(star,2):
++    fs=frozenset(ef[a]^ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
++    for face in fs:through[face][len(fs)==8]+=1
++  for row in through:req(row==[24,8],'face incidence')
++  geometry[str(L)]={'faces':len(faces),'pairs':len(seen)}
++ req((F(24,36)+F(8,64))/4==F(19,96),'local coefficient')
++ for L in range(4,130,2):
++  total=F(0)
++  for j in range(L//2):
++   shell=(2*j+2)**3-(2*j)**3
++   req(shell<=24*(j+1)**2,'shifted shell count')
++   total+=F(shell,L)*F(1,1)/F(2*j+1,2)**2
++  req(total<=48,'inverse square shell bound')
++ return {'status':'PASS','checks':count,'geometry':geometry,'coefficient':'19/96','matrix_scope':'exact small Gaussian dyadics; no eigensolver','physical_runs':0}
++if __name__=='__main__':
++ import json,signal
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr
+new file mode 100644
+index 0000000000..948232d7e2
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.stderr
+@@ -0,0 +1,11 @@
++Traceback (most recent call last):
++  File "<string>", line 1, in <module>
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt", line 68, in <module>
++    signal.alarm(180);print(json.dumps(check(),indent=2))
++                                       ^^^^^^^
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt", line 29, in check
++    req(actual==expected,'complex Gaussian extraction')
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt", line 9, in req
++    if not ok:raise ValueError(msg)
++              ^^^^^^^^^^^^^^^^^^^^^
++ValueError: complex Gaussian extraction
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt
+new file mode 100644
+index 0000000000..87a55b975b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/extraction_factor.txt
+@@ -0,0 +1,68 @@
++"""Small exact Gaussian-dyadic controls; all matrix entries stay exact dyadics <2**20."""
++from fractions import Fraction as F
++from itertools import combinations,product
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ n=3;d=1<<n
++ def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(d)) for j in range(d)] for i in range(d)]
++ I=[[complex(i==j) for j in range(d)] for i in range(d)];gam=[]
++ for mode in range(n):
++  for kind in range(2):
++   a=[[0j]*d for _ in range(d)]
++   for x in range(d):a[x^(1<<mode)][x]=(-1)**((x&((1<<mode)-1)).bit_count())*(1 if kind==0 else 1j*(1-2*((x>>mode)&1)))
++   gam.append(a)
++ for length in (1,3,5):
++  for inds in combinations(range(6),length):
++   a=I
++   for j in inds:a=mm(a,gam[j])
++   for scalar in (1,complex(1,2)/2):
++    y=[[scalar*z for z in row] for row in a]
++    coefficients=[(mm(g,y)[0][0]+mm(y,g)[0][0]) for g in gam]
++    for x in range(d):
++     expected=y[x][0] if x.bit_count()==1 else 0
++     actual=sum(c*g[x][0] for c,g in zip(coefficients,gam))
++     req(actual==expected,'complex Gaussian extraction')
++ # beta0+i beta1 has norm2, while coefficient l2 squared is2.
++ a=[[gam[0][i][j]+1j*gam[1][i][j] for j in range(d)] for i in range(d)]
++ norm2=max(sum(abs(a[i][j])**2 for i in range(d)) for j in range(d))
++ req(norm2==4 and norm2==2*2,'complex CAR factor')
++ geometry={}
++ for L in (4,6):
++  vs=list(product(range(L),repeat=3));ix={v:i for i,v in enumerate(vs)};edges=[]
++  for v in vs:
++   for axis in range(3):
++    w=list(v);w[axis]=(w[axis]+1)%L;edges.append(tuple(sorted((ix[v],ix[tuple(w)]))))
++  ei={e:i for i,e in enumerate(edges)};faces=[]
++  for v in vs:
++   for a,b in combinations(range(3),2):
++    u=list(v);u[a]=(u[a]+1)%L;w=list(v);w[b]=(w[b]+1)%L;z=u.copy();z[b]=(z[b]+1)%L
++    cycle=[ix[v],ix[tuple(u)],ix[tuple(z)],ix[tuple(w)]]
++    faces.append({ei[tuple(sorted((cycle[j],cycle[(j+1)%4])))] for j in range(4)})
++  ef=[set() for _ in edges];stars=[[] for _ in vs]
++  for j,face in enumerate(faces):
++   for e in face:ef[e].add(j)
++  for e,(v,w) in enumerate(edges):stars[v].append(e);stars[w].append(e)
++  seen=set();through=[[0,0] for _ in faces]
++  for star in stars:
++   for a,b in combinations(star,2):
++    fs=frozenset(ef[a]^ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
++    for face in fs:through[face][len(fs)==8]+=1
++  for row in through:req(row==[24,8],'face incidence')
++  geometry[str(L)]={'faces':len(faces),'pairs':len(seen)}
++ req((F(24,36)+F(8,64))/4==F(19,96),'local coefficient')
++ for L in range(4,130,2):
++  total=F(0)
++  for j in range(L//2):
++   shell=(2*j+2)**3-(2*j)**3
++   req(shell<=24*(j+1)**2,'shifted shell count')
++   total+=F(shell,L)*F(1,1)/F(2*j+1,2)**2
++  req(total<=48,'inverse square shell bound')
++ return {'status':'PASS','checks':count,'geometry':geometry,'coefficient':'19/96','matrix_scope':'exact small Gaussian dyadics; no eigensolver','physical_runs':0}
++if __name__=='__main__':
++ import json,signal
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr
+new file mode 100644
+index 0000000000..71bd804343
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.stderr
+@@ -0,0 +1,12 @@
++Traceback (most recent call last):
++  File "<string>", line 1, in <module>
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt", line 68, in <module>
++    signal.alarm(180);print(json.dumps(check(),indent=2))
++                                       ^^^^^^^
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt", line 53, in check
++    fs=frozenset(ef[a]|ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
++                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt", line 9, in req
++    if not ok:raise ValueError(msg)
++              ^^^^^^^^^^^^^^^^^^^^^
++ValueError: pair face size
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt
+new file mode 100644
+index 0000000000..b6627eb13f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt
+@@ -0,0 +1,68 @@
++"""Small exact Gaussian-dyadic controls; all matrix entries stay exact dyadics <2**20."""
++from fractions import Fraction as F
++from itertools import combinations,product
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ n=3;d=1<<n
++ def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(d)) for j in range(d)] for i in range(d)]
++ I=[[complex(i==j) for j in range(d)] for i in range(d)];gam=[]
++ for mode in range(n):
++  for kind in range(2):
++   a=[[0j]*d for _ in range(d)]
++   for x in range(d):a[x^(1<<mode)][x]=(-1)**((x&((1<<mode)-1)).bit_count())*(1 if kind==0 else 1j*(1-2*((x>>mode)&1)))
++   gam.append(a)
++ for length in (1,3,5):
++  for inds in combinations(range(6),length):
++   a=I
++   for j in inds:a=mm(a,gam[j])
++   for scalar in (1,complex(1,2)/2):
++    y=[[scalar*z for z in row] for row in a]
++    coefficients=[(mm(g,y)[0][0]+mm(y,g)[0][0])/2 for g in gam]
++    for x in range(d):
++     expected=y[x][0] if x.bit_count()==1 else 0
++     actual=sum(c*g[x][0] for c,g in zip(coefficients,gam))
++     req(actual==expected,'complex Gaussian extraction')
++ # beta0+i beta1 has norm2, while coefficient l2 squared is2.
++ a=[[gam[0][i][j]+1j*gam[1][i][j] for j in range(d)] for i in range(d)]
++ norm2=max(sum(abs(a[i][j])**2 for i in range(d)) for j in range(d))
++ req(norm2==4 and norm2==2*2,'complex CAR factor')
++ geometry={}
++ for L in (4,6):
++  vs=list(product(range(L),repeat=3));ix={v:i for i,v in enumerate(vs)};edges=[]
++  for v in vs:
++   for axis in range(3):
++    w=list(v);w[axis]=(w[axis]+1)%L;edges.append(tuple(sorted((ix[v],ix[tuple(w)]))))
++  ei={e:i for i,e in enumerate(edges)};faces=[]
++  for v in vs:
++   for a,b in combinations(range(3),2):
++    u=list(v);u[a]=(u[a]+1)%L;w=list(v);w[b]=(w[b]+1)%L;z=u.copy();z[b]=(z[b]+1)%L
++    cycle=[ix[v],ix[tuple(u)],ix[tuple(z)],ix[tuple(w)]]
++    faces.append({ei[tuple(sorted((cycle[j],cycle[(j+1)%4])))] for j in range(4)})
++  ef=[set() for _ in edges];stars=[[] for _ in vs]
++  for j,face in enumerate(faces):
++   for e in face:ef[e].add(j)
++  for e,(v,w) in enumerate(edges):stars[v].append(e);stars[w].append(e)
++  seen=set();through=[[0,0] for _ in faces]
++  for star in stars:
++   for a,b in combinations(star,2):
++    fs=frozenset(ef[a]|ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
++    for face in fs:through[face][len(fs)==8]+=1
++  for row in through:req(row==[24,8],'face incidence')
++  geometry[str(L)]={'faces':len(faces),'pairs':len(seen)}
++ req((F(24,36)+F(8,64))/4==F(19,96),'local coefficient')
++ for L in range(4,130,2):
++  total=F(0)
++  for j in range(L//2):
++   shell=(2*j+2)**3-(2*j)**3
++   req(shell<=24*(j+1)**2,'shifted shell count')
++   total+=F(shell,L)*F(1,1)/F(2*j+1,2)**2
++  req(total<=48,'inverse square shell bound')
++ return {'status':'PASS','checks':count,'geometry':geometry,'coefficient':'19/96','matrix_scope':'exact small Gaussian dyadics; no eigensolver','physical_runs':0}
++if __name__=='__main__':
++ import json,signal
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md
+new file mode 100644
+index 0000000000..0b4d3dc70e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PR_BACKLOG.md
+@@ -0,0 +1,3 @@
++# Pr Backlog
++
++Root delivery pending final canonical review; no author commit, push or PR.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md
+new file mode 100644
+index 0000000000..c56520f56b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/REVIEW_HISTORY.md
+@@ -0,0 +1,3 @@
++# Review History
++
++Original c892 proof reviewed independently by primary and orbital; complex-CAR factor clarified by orbital. Original bytes/reviews preserved under evidence. This new canonical source and controls require final source-bound review.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md
+new file mode 100644
+index 0000000000..9f0e5e8a3f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/ROUTE_PORTFOLIO.md
+@@ -0,0 +1,3 @@
++# Route Portfolio
++
++Selected: inverse filter, local perturbation cocycle, Gaussian extraction, dyadic shells, Parseval and CAR. Absolute spatial-history route remains insufficient; node behavior and interacting resummation remain open.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..49b98bc382
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/SOURCE_FREEZE.json
+@@ -0,0 +1,9 @@
++{
++  "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++  "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++  "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++  "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++  "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
++  "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26",
++  "scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml
+new file mode 100644
+index 0000000000..aca17bbb6c
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/STATE.yaml
+@@ -0,0 +1,7 @@
++{
++  "phase": "canonical_author_review",
++  "base": "eac678592b36a276baaa01b6f811641c0d0ff5e0",
++  "actual_current_surface_status": "conditional-support",
++  "next_action": "root and independent canonical review",
++  "production": "none"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md
+new file mode 100644
+index 0000000000..0ed2d37517
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/TRACE_GATE.md
+@@ -0,0 +1,6 @@
++# Trace Gate
++
++trace_class: frontier_discovery
++actual_current_surface_status: conditional-support
++reachability_to_target: unknown_frontier
++Moves: bounded form factor and singleton row needed for gapless local-stability analysis. Does not discharge interacting joint-defect stability. proposal_allowed: false; bare_retained_allowed: false.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md
+new file mode 100644
+index 0000000000..fcd97b8472
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-quasilocal-vertex-cold-review/REVIEW.md
+@@ -0,0 +1,42 @@
++# Independent review of the quasi-local star vacuum representative
++
++Disposition: PASS within the explicitly imported uniform wrong-flux stiffness domain and the canonical antiperiodic cubic grids for the final inverse-frequency conclusion. No physical numerical run was performed. This is not an all-twist theorem and gives no node value or interacting phase conclusion.
++
++Source read completely: `native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md`, SHA c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6. Also read its complete STAR_RETURN_AND_RESUMMATION.md and DERIVATION.md to identify the operator and the stated antiperiodic/zero-mode exclusions. Reviewer participated in the separate finite-L6 vertex implementation and canonical packaging; this analytic review does not reuse a numerical form-factor assumption.
++
++## Filter and exact vector identities
++
++The proposed odd smooth inverse filter is valid. Its tail is -1/x; subtracting -x/(1+x²), with a fixed scale if needed, leaves an L1 function because the difference is O(x^-3). The rational summand has a bounded, exponentially decreasing Fourier transform on either half-line (a jump at t=0 is harmless). For every n≥1, f^(n) is L1, and f tends to zero at both ends. Distributional integration by parts therefore yields |w(t)|≤C_n |t|^-n away from zero. The subtraction supplies boundedness near zero. Choosing n>p+1 proves every required weighted L1 moment. No finite-volume high-energy cutoff or exchange with an unbounded spectral interval is needed.
++
++Given H_A-E0≥δ>0 on the active space actually used, functional calculus makes f(H_A-E0)=(E0-H_A)^-1. The phase calculation is exact:
++
++    U_C(t) τ_t(X) Ω = e^(-it H_C) X e^(it H) Ω
++                     = e^(-it(H_C-E0)) X Ω.
++
++Thus the two-filter formula is the ordered second resolvent, not a replacement by a stationary free inverse. The90 ordered disjoint-pair terms and electric factor1/8 are retained. Even cocycles times γ_v give an odd bounded Y_v. The norm bound (90/8)M0² follows directly from unitarity. Y_vΩ=χ_v does not imply equality of the two operators on excited inputs; the source correctly distinguishes these statements.
++
++## Uniform spatial tail
++
++A concrete implementation of the locality argument uses a ball-truncated Hermitian generator for each cocycle. The Duhamel difference of two unitary evolutions is at most the integral of the generator difference; it does not acquire an exponential in ||B|| times the volume. Finite-range one-particle hopping bounds yield the usual exponentially small spatial tail at times below a fixed multiple of the radius. Even local quadratic B and the odd center Majorana have fixed support and fixed coefficient count. Applying τ_t to the first cocycle requires a light-cone budget proportional to |s|+|t|, which is exactly the split used in the proof.
++
++On |s|+|t|≤cr, choose c below the propagation constant divided into μ; polynomial time factors then multiply an exponentially decreasing r bound. On the complement, integrate against |w(s)w(t)| and use arbitrarily high moments. This gives C_p(1+r)^-p for every fixed p. Constants depend on the hopping scale, stiffness/filter scale, local coordination and p, not torus volume. CAR locality must be graded for the odd factor; the proof uses precisely that convention. Twisted boundary signs do not increase local hopping norms. They cannot, however, manufacture a missing spectral separation relative to a chosen reference energy.
++
++## Gaussian extraction checked directly
++
++For a product of an odd number of distinct Majoranas, {γ_j,Y}/2 is zero when j is absent, and is the signed product with γ_j removed when j is present. Its Gaussian expectation is the sum of all Wick pairings of the remaining legs. The one-particle term of YΩ is obtained by choosing the surviving leg and pairing every other leg, with exactly the same sign. Therefore
++
++    P1 YΩ = P1 (Σ_j (1/2)⟨{γ_j,Y}⟩ γ_j)Ω.
++
++The right side already lies in the one-particle space. This derivation handles complex coefficients and non-Hermitian Y; it does not require c_j to be unique. Repeated Majoranas reduce by CAR first. Local operator algebras are spanned by these monomials, so linearity proves the finite-support statement. Also |c_j|≤||Y||, and graded locality sets every exterior coefficient to zero.
++
++For dyadic approximants, use Y_0 plus differences Y_n-Y_(n-1). Each difference is supported on a ball of radius2^n and has norm O(2^-np); its coefficient l1 norm is O(2^n(3-p)). This is summable for p>3. The telescoping operators converge in norm, and their one-particle images converge by the bounded projection P1. Hence the resulting l1 coefficient series really represents P1χ, with a uniform bound. It is not merely a sequence of unrelated finite-volume estimates.
++
++Magnetic covariance may be preserved by choosing the same ball construction at every vertex and transporting it with the exact magnetic symmetry. Equivalently one transports the obtained coefficient family. A fixed finite magnetic cell changes constants only. The resulting symbol is uniformly bounded without assuming continuity at a node, nonzero limits or a particular sign.
++
++## Infrared conclusion and exact scope limits
++
++On the fixed antiperiodic cubic grids, the distance from any conical zero is at least c/L. A shell with index j has O((j+1)²) points, while inverse squared frequency is O(L²/(j+1)²). After the L^-3 normalization, O(L) shells give a uniform bound. The finite complement contributes another uniform constant. Thus the bounded form factor supplies an l2 row bound for the one-particle singleton kernel. If coefficients are complex, one may use ||Σ t_j β_j||≤√2||t||2 instead of the equality available for real coefficients; either suffices for the asserted boundedness. No l1 kernel estimate follows.
++
++The first portions of the lemma require a pure Gaussian vacuum and the imported full active wrong-pair bound relative to that vacuum's E0. They are not licensed for an arbitrary correlated mixture of zero-mode vacua, or an arbitrary nonminimizing winding reference whose energy exceeds the E0 in the stiffness theorem. For zero-mode-free canonical antiperiodic grids these concerns are absent. The final inverse-frequency assertion excludes grids containing exact zero modes unless a separately stated projection and denominator treatment is supplied. The current surrounding text makes this exclusion explicit; any canonical port should repeat it in the theorem domain rather than abbreviating it to “all twists.”
++
++Finally, the proof constructs a quasi-local vacuum-creating representative, not a quasi-local full effective vertex or a controlled interacting reference. The one-particle kernel bound leaves higher odd sectors, mixed returns, operator-valued connected cancellations and all-order expansion control unresolved. The source's final paragraph correctly retains all these obligations. No correction to its mathematical argument is requested.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md
+new file mode 100644
+index 0000000000..e0663e681c
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/QUASILOCAL_EXTRACTION_REVIEW.md
+@@ -0,0 +1,11 @@
++# Focused quasilocal extraction review
++
++Source: QUASILOCAL_VERTEX_LEMMA.md c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6. **PASS for the extraction/summability consequence, with complex-CAR constant clarified below.** Root assigned the smooth filter/cocycle proof to a separate reviewer; this addendum assumes its uniformly quasi-local odd Y_v with chi_v=Y_v Omega. No physical execution.
++
++For a distinct-index odd Majorana monomial M=gamma_i1...gamma_i(2q+1), its anticommutator with gamma_j vanishes unless j is one of those indices, and equals twice (-1)^(r-1) times the monomial with the rth leg omitted. The Gaussian vacuum expectation of that even monomial is its complete Wick contraction. These are exactly the coefficients of the uncontracted single leg in the vacuum one-particle projection of M. Consequently P1 Y Omega=P1(sum_j c_j gamma_j)Omega with c_j=< {gamma_j,Y} >/2. Clifford reduction handles repeated indices; complex linearity covers non-Hermitian odd Y. Hermiticity is not needed. The resulting Majorana coefficients are not unique on the vacuum, which does not invalidate existence or their norm bound.
++
++Odd ball-supported approximants can be chosen by parity-preserving local truncation; taking their odd parts cannot increase approximation error. Differences of approximants at dyadic radii have norm O(2^(-np)) and support cardinality O(2^(3n)). Each extracted coefficient has modulus <=shell norm, so p>3 gives an absolutely summable coefficient family, uniformly in torus size. The final whole-torus shell obeys the same bound, rather than multiplying an unbounded residual by volume. Absolute convergence permits summing the represented one-particle vectors. Magnetic-covariant truncations about a fixed reference vertex and their signed translates give a consistently translated coefficient family; the fixed cell Fourier symbol is bounded by its l1 norm. No vacuum-gap regularity or continuity of a particular eigenvector gauge is required.
++
++With bounded form factor and a fixed cell rank, the positive-frequency inverse kernel has multiplier norm O(1/omega). On shifted conical grids, shell j has O((j+1)^2) points, inverseomega²=O(L²/(j+1)²), and normalized measure L^-3. Summing O(L) shells is O(1). This requires exclusion of exact zero grids as stated. Parseval thus gives a uniform row-l2 estimate, not l1 summability.
++
++For a real Majorana coefficient row a, (sum a_j beta_j)^2=||a||2² I exactly. For a complex row c=a+ib, use ||sum c_j beta_j||<=||a||2+||b||2<=sqrt(2)||c||2. Therefore the uniform operator bound survives complex extraction with that harmless fixed factor; equality with l2 should only be claimed for real rows. A self-adjoint quadratic Majorana Hamiltonian has real antisymmetric coefficients, and its commutator with a local beta is a fixed-convention factor times precisely such a linear row. If one first writes a complex cell kernel, realification or the preceding inequality must be included. This proves only the stated row/local-commutator control, not an extensive operator norm bound, Lieb-Robinson theorem, interacting reference construction or full sixth-order identification.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json
+new file mode 100644
+index 0000000000..315c3d5e22
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/READ_HASHES.json
+@@ -0,0 +1,6 @@
++{
++  "/private/tmp/toe-24h-probes-20260908/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md": "c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511",
++  "/private/tmp/toe-24h-probes-20260908/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md": "64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768",
++  "/private/tmp/toe-24h-probes-20260908/native-weak-electric-uniform-local-stability-cold-review/check.py": "544b2da4361ad37abf14ca150201246f12020b69521f1b62664c1087e1ac7fe9",
++  "/private/tmp/toe-24h-probes-20260908/native-weak-electric-uniform-local-stability-cold-review/RESULT.json": "6aa47dd9b6ac3cfcf173b6cc2f5c1480f56a985ce8bfdf7c8cdf3aeebf7f9e30"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json
+new file mode 100644
+index 0000000000..3553db190e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/RESULT.json
+@@ -0,0 +1,25 @@
++{
++  "status": "PASS",
++  "geometry": [
++    {
++      "L": 4,
++      "distinct_pair_flux_labels": 960,
++      "faces": 192,
++      "every_face_incidence": [
++        24,
++        8
++      ]
++    },
++    {
++      "L": 6,
++      "distinct_pair_flux_labels": 3240,
++      "faces": 648,
++      "every_face_incidence": [
++        24,
++        8
++      ]
++    }
++  ],
++  "coefficient": "19/96",
++  "scope": "exact finite geometry only"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md
+new file mode 100644
+index 0000000000..e67110eced
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-cold-review/REVIEW.md
+@@ -0,0 +1,13 @@
++# Uniform local coefficient and return-channel cold review
++
++**PASS** for DERIVATION c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511 and STAR_RETURN_AND_RESUMMATION64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768. Both complete sources read. Independent exact geometry controls on L4 and L6 confirm distinct incident-pair flux labels and24 perpendicular/8 opposite contributions at every elementary face, including seams. These fixtures support the analytical argument; they do not replace it. No physical vector computation.
++
++For any two pair insertions with equal face labels, their symmetric difference has at most four edges and intersects each face evenly. An edge lies on four distinct plaquettes, and any other edge shares at most one of those plaquettes on even periodic cubic extents>=4. Four distinct compensating edges would be necessary, contradicting support<=4. Thus exact face eigensectors make different pair contributions orthogonal, including for coherent initial winding/spectator vectors. This argument needs only face labels, not flux-orbit uniqueness.
++
++Because H0 commutes with face projectors and H0-E0>=kappa K, each nonempty pair-label sector has inverse norm <=1/(kappa m), m6 or8. Differentiate the finite-volume ground eigen-equation, project onto Q_C, and the energy derivative and arbitrary ground-space tangent disappear. The 1/2 insertion amplitude then gives coefficient sum_j 1/(4 kappa² m_j²). A single face yields (24/36+8/64)/4=19/96. There is no quadratic leakage for |C|>8. Analytic finite-dimensional branches and their mixtures are covered at each fixed volume; the maximum over finitely many branches preserves that coefficient bound even with U-dependent mixture weights. The assertion is sup_L limsup_U, not the reversed order and not a uniform perturbative radius. This is a valid strengthening of the coefficient statement only.
++
++The square-integrated active covariance follows from Parseval and integral exp(-2omega tau)=1/(2omega). Shifted three-dimensional conical grids make the normalized inverse-frequency sum uniform; zero-mode grids are excluded. Active bilinear connected Wick correlations can consequently be bounded, but this does not address the actual leading zero-flux return. The three-electric-pair star return is odd-active times odd-spectator. Its one-particle vacuum component propagates with one active resolvent, not two. Even total parity does not create a second active propagator, and arbitrary spectator states do not permit a Gaussian factorization.
++
++Under the explicitly additional near-node nonvanishing form-factor premise, the positive inverse-frequency Fourier multiplier is unbounded; its supremum is bounded by the absolute spatial kernel sum, so that particular volume-uniform absolute majorant fails. This conditional inference is sound and is not a native nonvanishing proof or instability theorem. Positive finite-L6 one-particle weight alone does not establish the infrared premise. Linear node vanishing removes that multiplier divergence without establishing l1 summability.
++
++The supplemental90-term expression, indefinite disjoint-pair incidence and symmetry-compatible gamma versus double-commutator alternatives correctly prevent shortcut positivity/covariance claims. The diagnostic quadratic block gives nu±=(sqrt(omega²+4m²)±omega)/2, ultraviolet minimum scale m²/W, and retains its separate-approximation status. The proposed CAR row-l2 route uses real Majorana coefficients and an additional uniform form-factor bound; it does not furnish a ground-state, locality, or all-order polymer theorem. No broad bulk no-go is established or needed.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json
+new file mode 100644
+index 0000000000..4e5971c014
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/ARITHMETIC.json
+@@ -0,0 +1,5 @@
++{
++  "exact_coefficient": "19/96",
++  "physical_runs": 0,
++  "scope": "one rational arithmetic identity; not general proof validation"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md
+new file mode 100644
+index 0000000000..5456a5b16e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION.md
+@@ -0,0 +1,73 @@
++# Uniform local perturbative coefficient and the connected-return obstacle
++
++This is a first-principles partial result for the supplied full carrier H(U)=H0+U(3N/2+V), V=(1/2)sum_j W_j. It does not remove the finite-volume window in PR8060. No physical computation, additional uniform fermion gap, Gaussian spectator preparation, or interacting phase assumption is used.
++
++Sources read in full or relevant proof sections: canonical NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md; its density parent, including exact 24/8 incidence counts; native-weak-electric-local-control-next/DERIVATION_BEFORE_FINITE_VOLUME_5260.md (the unproved compression premise); native-weak-electric-local-stability-design/DERIVATION.md; native-zero-penalty-pi-dispersion/DERIVATION.md (canonical seams, active frequencies and spectator multiplicity). The earlier conditional compression is not adopted as a theorem.
++
++## 1. A uniform coefficient for a prescribed local defect
++
++Assume H0 >= E0 + kappa K, with K the number of bad elementary faces and kappa>0 as supplied upstream. Let psi(U) be any normalized finite-volume analytic eigenvector branch issuing from the ground eigenspace and which is a ground branch for sufficiently small positive U. Finite-dimensional analytic perturbation supplies such branches after resolving degeneracy; no uniform radius is asserted. Write psi0=psi(0). Since K psi0=0, every W_j psi0 has exactly the defect set F_j, of size 6 or 8. On that sector H0-E0 is invertible with inverse norm at most 1/(kappa |F_j|). Projecting the derivative eigen-equation into any nonempty flux pattern therefore gives
++
++ Q_C psi'(0) = -(1/2) sum_{j:C subset F_j} (H0-E0)^(-1) W_j psi0.
++
++The derivative of the scalar energy and any ground-space basis rotation disappear under Q_C. Other zero-face winding sectors cause no problem with this sectorwise inverse.
++
++Crucial orthogonality: distinct incident-edge pairs have distinct F_j. Otherwise their symmetric difference T, containing at most four edges, meets every elementary plaquette evenly. Pick e in T. The edge belongs to four different elementary plaquettes. Every other distinct edge shares at most one elementary plaquette with e on a simple periodic cubic torus of even extent >=4. Each of those four faces requires another edge of T, forcing at least five edges, contradiction. This argument uses actual elementary faces, including extent-four seams, and does not identify zero face flux with a connected component.
++
++Thus the vectors in the sum are orthogonal by their exact bad-face eigenvalues, even if psi0 has coherent winding or spectator components. Consequently
++
++ lim_{U->0+} p_C(U)/U^2 = ||Q_C psi'(0)||^2
++ <= (1/(4 kappa^2)) sum_{j:C subset F_j} 1/|F_j|^2.
++
++For a single prescribed face f, the 24 perpendicular and 8 opposite incident pairs yield
++
++ lim p_f(U)/U^2 <= [24/36+8/64]/(4 kappa^2) = 19/(96 kappa^2).
++
++For |C|>8 this quadratic coefficient vanishes. The bound holds uniformly over normalized initial ground vectors and finite-volume analytic branches. It is a coefficient statement only: the o(U^2) is not shown uniform in volume. It must not be promoted to p_f <= constant U^2 at a fixed volume-independent interval, or to a joint contour bound. The local selection already shows that the first leakage coefficient is not itself obstructed by the active gap closing as 1/L.
++
++## 2. A genuine gapless bath integrability lemma
++
++In the canonical minimizing pi background the active positive frequencies are omega(k)=4|t| sqrt(sum_a sin^2 k_a), with the seam/twist conventions of the dispersion source. Use a fixed finite magnetic unit cell, and let C_L(x,tau) be the positive-frequency Euclidean vacuum propagator for tau>=0. Parseval and spectral calculus give, up to the fixed choice of unit-cell normalization,
++
++ integral_0^infinity d tau sum_x ||C_L(x,tau)||_F^2
++ = (1/number_of_cells) sum_k Tr[P_+(k)/(2 omega(k))].
++
++There is a volume-independent O(1/|t|) upper bound on this expression for the canonical antiperiodic cubic grids. To see this without a uniform gap, partition momentum space into fixed neighborhoods of the finitely many conical zeros and their complement. In a neighborhood, sin-distance is bounded below by a positive constant times distance to that zero. Shells of grid radius j contain at most constant*(j+1)^2 points; the closest shifted-grid distance is at least constant/L. The normalized sum of inverse distances is bounded by constant L^(-3) sum_{j=0}^{O(L)} (j+1)^2 L/(j+1), which is bounded. The complement is uniformly bounded away from zero. Constants depend on the fixed unit cell and dimension, not L. Zero-mode winding sectors are not included in this assertion.
++
++Wick's rule for centered fixed-support ACTIVE bilinears expresses their connected vacuum two-point function as a finite sum of products of propagator entries. Cauchy-Schwarz and the preceding identity therefore bound the absolute spacetime sum/integral of these connected bilinear correlations uniformly in L. No exponential spatial clustering or fermion mass has been inserted. This proves an infrared-integrable two-point bath input, not convergence of a perturbation expansion. It does not apply directly to a single active fermion channel or arbitrary spectator correlations.
++
++## 3. Why this does not close the interacting joint bound
++
++Actual W_j changes the flux background. A time history contains evolutions exp[-tau(H_F-E0)] with different F between electric insertions, rather than only the stationary pi propagator appearing in section 2. Histories with nonempty F have the useful exponential penalty exp(-tau kappa |F|). Histories returning to F=empty have arbitrarily soft active excitations and an exponentially large spectator ground space. The two-point lemma is not a bound on their connected multipoint kernels.
++
++Three distinct missing steps must not be conflated:
++
++1. A linked expansion must subtract disconnected exterior energy contributions. A bound on the unnormalized resolvent series still produces volume factors and does not establish the PR8060 compression relative to the true E_U.
++2. One needs an operator-valued bound uniform in the spectator ground state, rather than Wick factorization of a chosen spectator state. The native reference ground space permits correlated spectators. Active Wick integrability by itself imposes no spectator clustering.
++3. A summable connected-polymer majorant must hold to every order with controlled combinatorial growth and changing-flux Gaussian kernels. Pairwise integrability alone provides no such majorant and does not justify exchanging infinite-volume and small-U limits.
++
++A precise next lemma would bound connected, vacuum-normalized, time-integrated electric histories touching a fixed face by A (B U/kappa)^n, with A,B independent of volume, retaining their spectator operator norm and subtracting disconnected vacuum pieces. Its flux intervals should use stiffness; its zero-flux returns should use the gapless active covariance. Establishing this lemma, or a local constrained-energy analogue, would be new load-bearing work. It is not supplied by the known dispersion, stiffness, or density inequalities.
++
++The positive result obtained here is the exact uniform local quadratic coefficient and the square-integrable Euclidean active propagator. The fixed-U local ground-state joint-defect theorem remains open. In particular no mean-density inference, assumed positivity of diagram weights, or hidden active-gap replacement is made.
++
++
++## 4. The actual dangerous return is odd-active, not an active bilinear
++
++The preceding two-point lemma is insufficient even at the level of selecting the appropriate correlator. Three incident electric pairs can toggle the six edges of a full star. The native Gauss identification returns this flux to the reference orbit with an odd active insertion accompanied by an odd spectator insertion. Their product is physical and even. This is the same three-insertion vertex studied in the native third-star analysis; it is not an added interaction. At separated stars the zero-flux propagation therefore contains an odd-active transition correlator, with spectator factors retained as operators.
++
++Let chi_v be the vacuum transition vector of that return and P1 its active one-particle projection. The exact one-particle contribution to the propagation between two such vertices is
++
++ G_vw(tau)=<P1 chi_v, exp[-tau(Hactive-Eactive)] P1 chi_w>,
++ integral_0^infinity G_vw(tau) d tau=<P1 chi_v,(Hactive-Eactive)^(-1)P1 chi_w>.
++
++This is a single propagator. It cannot be replaced by a product of two propagators merely because the complete active-spectator operator is even. Arbitrary spectator states cannot be Wick-factorized to manufacture a second active decay factor. Multiparticle pieces add separate spectral contributions; their existence does not remove the one-particle channel by definition.
++
++Here is a precise conditional obstruction to the simplest absolute connected-history bound. In a translation/magnetic-cell covariant one-particle description, suppose the vertex has form factor a(k). Its positive zero-frequency one-particle kernel has multiplier a(k)^* P_+(k) a(k)/omega(k) (or the corresponding matrix in the cell indices). If its positive numerator stays bounded below along momenta approaching a conical node, then the multiplier is unbounded as the grid approaches that node, of order L on the nearest antiperiodic momenta. For the finite convolution kernel T_L, the triangle inequality gives
++
++ sup_k ||T_L(k)|| <= sum_x ||T_L(x)||.
++
++Consequently no volume-independent absolute spatial summability bound is possible for this channel under that nonvanishing premise. This proof does not require a claimed pointwise Fourier asymptotic. It is a conditional algebraic obstruction to this particular majorant, not an assertion that the native form factor has a nonzero limit or that the interacting ground state is unstable.
++
++The decisive native quantity is thus the one-particle star form factor near the Dirac nodes, not just the integrated active-bilinear susceptibility. A zero of a(k) at least linear removes the displayed inverse-frequency divergence, but boundedness of the multiplier alone still does not prove absolute summability; regularity estimates must be supplied. Alternatively one could retain and resum the induced spectator dynamics instead of expanding it in absolute histories. Such a resummation requires control of its gapless coupled reference and of the remaining defect insertions. The exact L4 vacuum identity, where all active frequencies coincide, cannot decide a node-vanishing condition on general tori.
++
++The fixed-volume coefficient statement in section 1 has the order of limits sup_L limsup_(U->0+) kappa^2 p_f(U)/U^2 <=19/96. It is not limsup_(U->0+) sup_L. At each finite volume there are finitely many analytic Rellich branches. Taking the maximum of their uniform coefficient bounds also covers arbitrary ground-state mixtures, even with U-dependent mixing weights, for that fixed-volume limit. No uniform remainder follows.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md
+new file mode 100644
+index 0000000000..7b20138a5b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/DERIVATION_FIRST_9e512.md
+@@ -0,0 +1,51 @@
++# Uniform local perturbative coefficient and the connected-return obstacle
++
++This is a first-principles partial result for the supplied full carrier H(U)=H0+U(3N/2+V), V=(1/2)sum_j W_j. It does not remove the finite-volume window in PR8060. No physical computation, additional uniform fermion gap, Gaussian spectator preparation, or interacting phase assumption is used.
++
++Sources read in full or relevant proof sections: canonical NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md; its density parent, including exact 24/8 incidence counts; native-weak-electric-local-control-next/DERIVATION_BEFORE_FINITE_VOLUME_5260.md (the unproved compression premise); native-weak-electric-local-stability-design/DERIVATION.md; native-zero-penalty-pi-dispersion/DERIVATION.md (canonical seams, active frequencies and spectator multiplicity). The earlier conditional compression is not adopted as a theorem.
++
++## 1. A uniform coefficient for a prescribed local defect
++
++Assume H0 >= E0 + kappa K, with K the number of bad elementary faces and kappa>0 as supplied upstream. Let psi(U) be any normalized finite-volume analytic eigenvector branch issuing from the ground eigenspace and which is a ground branch for sufficiently small positive U. Finite-dimensional analytic perturbation supplies such branches after resolving degeneracy; no uniform radius is asserted. Write psi0=psi(0). Since K psi0=0, every W_j psi0 has exactly the defect set F_j, of size 6 or 8. On that sector H0-E0 is invertible with inverse norm at most 1/(kappa |F_j|). Projecting the derivative eigen-equation into any nonempty flux pattern therefore gives
++
++ Q_C psi'(0) = -(1/2) sum_{j:C subset F_j} (H0-E0)^(-1) W_j psi0.
++
++The derivative of the scalar energy and any ground-space basis rotation disappear under Q_C. Other zero-face winding sectors cause no problem with this sectorwise inverse.
++
++Crucial orthogonality: distinct incident-edge pairs have distinct F_j. Otherwise their symmetric difference T, containing at most four edges, meets every elementary plaquette evenly. Pick e in T. The edge belongs to four different elementary plaquettes. Every other distinct edge shares at most one elementary plaquette with e on a simple periodic cubic torus of even extent >=4. Each of those four faces requires another edge of T, forcing at least five edges, contradiction. This argument uses actual elementary faces, including extent-four seams, and does not identify zero face flux with a connected component.
++
++Thus the vectors in the sum are orthogonal by their exact bad-face eigenvalues, even if psi0 has coherent winding or spectator components. Consequently
++
++ lim_{U->0+} p_C(U)/U^2 = ||Q_C psi'(0)||^2
++ <= (1/(4 kappa^2)) sum_{j:C subset F_j} 1/|F_j|^2.
++
++For a single prescribed face f, the 24 perpendicular and 8 opposite incident pairs yield
++
++ lim p_f(U)/U^2 <= [24/36+8/64]/(4 kappa^2) = 19/(96 kappa^2).
++
++For |C|>8 this quadratic coefficient vanishes. The bound holds uniformly over normalized initial ground vectors and finite-volume analytic branches. It is a coefficient statement only: the o(U^2) is not shown uniform in volume. It must not be promoted to p_f <= constant U^2 at a fixed volume-independent interval, or to a joint contour bound. The local selection already shows that the first leakage coefficient is not itself obstructed by the active gap closing as 1/L.
++
++## 2. A genuine gapless bath integrability lemma
++
++In the canonical minimizing pi background the active positive frequencies are omega(k)=4|t| sqrt(sum_a sin^2 k_a), with the seam/twist conventions of the dispersion source. Use a fixed finite magnetic unit cell, and let C_L(x,tau) be the positive-frequency Euclidean vacuum propagator for tau>=0. Parseval and spectral calculus give, up to the fixed choice of unit-cell normalization,
++
++ integral_0^infinity d tau sum_x ||C_L(x,tau)||_F^2
++ = (1/number_of_cells) sum_k Tr[P_+(k)/(2 omega(k))].
++
++There is a volume-independent O(1/|t|) upper bound on this expression for the canonical antiperiodic cubic grids. To see this without a uniform gap, partition momentum space into fixed neighborhoods of the finitely many conical zeros and their complement. In a neighborhood, sin-distance is bounded below by a positive constant times distance to that zero. Shells of grid radius j contain at most constant*(j+1)^2 points; the closest shifted-grid distance is at least constant/L. The normalized sum of inverse distances is bounded by constant L^(-3) sum_{j=0}^{O(L)} (j+1)^2 L/(j+1), which is bounded. The complement is uniformly bounded away from zero. Constants depend on the fixed unit cell and dimension, not L. Zero-mode winding sectors are not included in this assertion.
++
++Wick's rule for centered fixed-support ACTIVE bilinears expresses their connected vacuum two-point function as a finite sum of products of propagator entries. Cauchy-Schwarz and the preceding identity therefore bound the absolute spacetime sum/integral of these connected bilinear correlations uniformly in L. No exponential spatial clustering or fermion mass has been inserted. This proves an infrared-integrable two-point bath input, not convergence of a perturbation expansion. It does not apply directly to a single active fermion channel or arbitrary spectator correlations.
++
++## 3. Why this does not close the interacting joint bound
++
++Actual W_j changes the flux background. A time history contains evolutions exp[-tau(H_F-E0)] with different F between electric insertions, rather than only the stationary pi propagator appearing in section 2. Histories with nonempty F have the useful exponential penalty exp(-tau kappa |F|). Histories returning to F=empty have arbitrarily soft active excitations and an exponentially large spectator ground space. The two-point lemma is not a bound on their connected multipoint kernels.
++
++Three distinct missing steps must not be conflated:
++
++1. A linked expansion must subtract disconnected exterior energy contributions. A bound on the unnormalized resolvent series still produces volume factors and does not establish the PR8060 compression relative to the true E_U.
++2. One needs an operator-valued bound uniform in the spectator ground state, rather than Wick factorization of a chosen spectator state. The native reference ground space permits correlated spectators. Active Wick integrability by itself imposes no spectator clustering.
++3. A summable connected-polymer majorant must hold to every order with controlled combinatorial growth and changing-flux Gaussian kernels. Pairwise integrability alone provides no such majorant and does not justify exchanging infinite-volume and small-U limits.
++
++A precise next lemma would bound connected, vacuum-normalized, time-integrated electric histories touching a fixed face by A (B U/kappa)^n, with A,B independent of volume, retaining their spectator operator norm and subtracting disconnected vacuum pieces. Its flux intervals should use stiffness; its zero-flux returns should use the gapless active covariance. Establishing this lemma, or a local constrained-energy analogue, would be new load-bearing work. It is not supplied by the known dispersion, stiffness, or density inequalities.
++
++The positive result obtained here is the exact uniform local quadratic coefficient and the square-integrable Euclidean active propagator. The fixed-U local ground-state joint-defect theorem remains open. In particular no mean-density inference, assumed positivity of diagram weights, or hidden active-gap replacement is made.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json
+new file mode 100644
+index 0000000000..7f97fb4168
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/FREEZE.json
+@@ -0,0 +1,8 @@
++{
++  "DERIVATION.md": "c8984ca370808e8113694f827128d4481dfdd2a1f522a5378f5b1ea2e16ed511",
++  "DERIVATION_FIRST_9e512.md": "9e51221986f26576303e26bd9023240132f180ea650f85b49ba4d2256484db96",
++  "ARITHMETIC.json": "383ae685e49aea8cc4394d4cc4bb55ddc1741b42f93517b9a0413785b2820d3d",
++  "STAR_RETURN_AND_RESUMMATION.md": "64c7bd89ca4eecb2a487c4c44b8a88497f3eb17d23b75cb826e465621dbfa768",
++  "STAR_TINY_CONTROL.json": "74794f329377c98f6d3487c0e93086790138ab14a423221ae4524b460701c4b8",
++  "QUASILOCAL_VERTEX_LEMMA.md": "c892cdcd2a9c83c26afa19b3305a622188cc1cba082c17cc8b332ac72d7069c6"
++}
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md
+new file mode 100644
+index 0000000000..09b531b37f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/QUASILOCAL_VERTEX_LEMMA.md
+@@ -0,0 +1,51 @@
++# A uniformly bounded one-particle star form factor
++
++This lemma addresses an upper bound, not whether the form factor vanishes at a Dirac node. It uses the supplied local free active Hamiltonians in a fixed canonical pi representative, the actual 90-term star expression, and the uniform wrong-face stiffness. No active gap is assumed. Constants below depend on the fixed ratio of hopping strength to kappa and may be large; they do not depend on volume.
++
++## Smooth inverse filter
++
++Write H=Hpi, H Omega=E0 Omega. For each reversed pair A, H_A=H+B_A with B_A an even quadratic perturbation supported on the center and its neighbors, of bounded norm. The full wrong-flux lower bound gives H_A-E0 >= delta I, with delta=6 kappa valid for every pair (opposite pairs have the stronger 8 kappa bound).
++
++Choose an odd smooth real f on the real line, zero near zero, with f(x)=-1/x for |x|>=delta. It has an inverse Fourier representation f(x)=integral w(t) exp(-itx) dt with integral (1+|t|)^p |w(t)| dt finite for every fixed p. One construction multiplies -1/x by an even smooth cutoff which is zero for |x|<=delta/2 and one for |x|>=delta. To justify the Fourier assertion despite the 1/x tail, subtract the smooth rational function -x/(1+x^2), with the appropriate fixed units: the difference is integrable and smooth, while all positive derivatives of f are integrable. The rational function has a bounded exponentially decaying Fourier transform; repeated integration by parts controls the large-time tail to arbitrary power. Near time zero the transforms are bounded. Denote M_p=integral(1+|t|)^p |w(t)|dt.
++
++Consequently R_A=(E0-H_A)^(-1)=f(H_A-E0) exactly on its entire active spectrum. This does not require any finite-volume upper energy cutoff and does not approximate its eigenvalues.
++
++## An operator local near the star that creates the exact vector
++
++Let U_A(t)=exp(-itH_A)exp(itH). This is a unitary perturbation cocycle. Then
++
++ R_A Omega=Y_A Omega,  Y_A=integral w(t) U_A(t)dt.
++
++For the second inverse and an arbitrary operator X,
++
++ R_C X Omega=integral w(t) U_C(t) tau_t(X)dt Omega,
++ tau_t(X)=exp(-itH)X exp(itH).
++
++It follows exactly that chi_v=Y_v Omega, where
++
++ Y_v=(1/8) sum_{A,C disjoint} integral ds dt w(s)w(t)
++             U_C(t) tau_t(gamma_v U_A(s)).
++
++The sum has 90 terms. Y_v is odd and need not be Hermitian; this is a vacuum-creating representative, not equality Y_v=O_v on the whole active space. Its norm is at most (90/8) M_0^2, uniformly in volume.
++
++Moreover Y_v admits approximants supported in radius r about v with error at most C_p(1+r)^(-p), for every fixed p, uniformly in volume. Here is the locality argument. Finite-range bounded quadratic CAR evolution has the usual propagation estimate obtained by summing hopping paths: the tail of exp(-itK) beyond graph distance r is bounded by a constant times exp(v|t|-mu r), for fixed positive mu and a volume-independent v. This gives the corresponding bound for evolved local even perturbations and local odd operators. Duhamel's equation for U_A(t), generated by the evolved B_A, bounds its error upon restriction to a ball by a polynomial in |t| times exp(v|t|-mu r). For the product above, use balls with fixed fractional radii and split the integrals into |s|+|t|<=c r and its complement. On the first part the propagation tail is exponentially small, after choosing c sufficiently small; on the second part arbitrarily high moments M_p give arbitrary inverse powers of r. Operator norms of the exact unitary factors are one. The finitely many factors and the 90-term sum do not create a volume factor. The argument works on finite tori using their graph metric, with the ball eventually equal to the whole torus. No long-time exponential-decay claim for the gapless vacuum is used.
++
++## Gaussian extraction and a uniform Fourier bound
++
++For any finite-support odd active operator Y in a Gaussian vacuum, its one-particle vacuum component equals that of sum_j c_j gamma_j, where
++
++ c_j=(1/2)<Omega|{gamma_j,Y}|Omega>.
++
++This is Wick's rule: in an odd Majorana monomial the one surviving leg can be extracted by the anticommutator, leaving the fully contracted even monomial. It extends linearly to every local operator, and then continuously to the quasi-local approximants. Hermiticity of Y is unnecessary; the coefficients may be complex and need not be unique after acting on the vacuum. Outside the support the anticommutator vanishes by graded locality, while |c_j|<=||Y||.
++
++Decompose Y_v into dyadic support shells using approximants at radii 2^n. A shell has norm at most constant*2^(-np) and contains at most constant*2^(3n) sites. With p>3, its coefficient l1 norm is summable. Thus there is a representation of P1 chi_v as (sum_j c_vj gamma_j)Omega with
++
++ sum_j |c_vj| <= C(kappa,h),
++
++uniformly in volume. Magnetic translations give the corresponding translated/gauged coefficient family, so its cell Fourier symbol is uniformly bounded. This proves the bounded-form-factor premise needed in the preceding supplement. It neither supplies a positive lower bound nor proves a zero at the nodes.
++
++## Consequence and exact remaining gap
++
++For the canonical antiperiodic cubic grids, the one-particle singleton resolvent kernel has a uniformly bounded row l2 norm, because its Fourier symbol is bounded by constant/omega(k) and the normalized sum of omega(k)^(-2) is bounded in three dimensions. The shell counting is sum_{j<=O(L)} L^(-3)(j+1)^2 L^2/(j+1)^2=O(1). Together with CAR this bounds the norm of each corresponding linear spectator field and hence the local commutator of the quadratic singleton contribution, without replacing l2 by a divergent l1 bound.
++
++This is not the full sixth effective operator or a proof of interacting local joint-defect stability. It controls a particular vacuum transition and its one-particle singleton channel. Higher odd transition sectors, mixed histories, operator-valued connected cancellations and uniform control of the interacting reference still require proof. The construction is useful precisely because it does not assume the uniform active gap that would trivially, but incorrectly for this problem, solve the infrared denominator issue.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md
+new file mode 100644
+index 0000000000..2917afbfe3
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_RETURN_AND_RESUMMATION.md
+@@ -0,0 +1,37 @@
++# Native star form factor: exact target and conditional resummation
++
++Source read completely: native-third-order-hybridization/DERIVATION.md (410b proof), plus native-third-vertex-interpretation/DERIVATION.md. The first proof supplies the actual energy-dependent operator, not a quadratic approximation:
++
++ O_v(E0)=(1/8) sum_{A,C disjoint two-edge subsets of star(v)} R_C gamma_v R_A,
++ R_A=(E0-H_A)^(-1).
++
++There are 90 ordered terms. Every A is a wrong-flux pair, so both parity resolvents are bounded by the defect stiffness. This is an actual operator definition on the finite full carrier in the declared window. Its vacuum vector has odd active particle number and the physical vertex is -i O_v beta_v. The finite L4 identity and finite L6 multiparticle evidence do not determine its large-volume infrared form factor.
++
++## What symmetry and positivity do, and do not, determine
++
++Magnetic covariance makes O_v transform in the same vertex representation as gamma_v. It therefore permits a constant nonzero one-particle form factor: the family gamma_v itself has that covariance. It also permits a vanishing form factor: the family [Hactive,[Hactive,gamma_v]] transforms identically and multiplies one-particle amplitudes by omega(k)^2. Both are odd Hermitian families. Hence covariance alone cannot choose between node nonvanishing and vanishing. This is a concrete pair of symmetry-compatible alternatives, not a claim that either equals the native O_v.
++
++Nor is a simple resolvent-positivity argument sufficient. Each -R_A is positive, but R_C gamma_v R_A is an odd transition operator, not a positive quadratic form. Even the incidence matrix selecting disjoint pairs is indefinite: on the 15 two-element subsets of six objects its eigenvalues are 6, -3 and 1. A direct -3 eigenvector is x_A=1_{1 in A}-1_{2 in A}; for A containing 1 but not 2, exactly three disjoint C contain 2, and conversely. Thus replacing the signed transition expression by a sum of positive Gram terms is not licensed by the six-positive-neighbor count. This does not refute a more subtle native positivity identity.
++
++The exact unresolved datum is a_v(k)=<k|O_v(E0)|Omega>. A useful analytic result must either derive its leading value/vanishing at a node or control the full operator-valued connected return without that reduction. A finite set of momenta, the total one-particle norm, and an upper bound on inverse gaps cannot decide this limit. The definition contains flux-defect resolvents; replacing them by stationary free resolvents would change the question.
++
++## Conditional quadratic model, with exact normalization
++
++Only if an independently controlled reduction gave -i alpha u^3 sum_v gamma_v beta_v as the relevant quadratic vertex, the Majorana matrix would be
++
++ K_eff = [[K, -2 alpha u^3 I], [2 alpha u^3 I, 0]].
++
++Put m=2 alpha u^3. For an active frequency omega>=0, the two positive frequencies of this diagnostic are
++
++ nu_+ = (sqrt(omega^2+4m^2)+omega)/2,
++ nu_- = (sqrt(omega^2+4m^2)-omega)/2.
++
++They satisfy nu_+ nu_-=m^2 and nu_+-nu_-=omega. At a Dirac point both equal |m|; for fixed positive omega, nu_-=m^2/omega+O(m^4/omega^3). If the active bandwidth is bounded by W and m is nonzero and momentum independent, the one-particle gap is at least (sqrt(W^2+4m^2)-W)/2, uniformly in volume. Its small-m scale is m^2/W, not the larger Dirac-point scale |m|. This statement is exactly about this quadratic matrix. Physical even-parity many-body level counting requires the separate vacuum-parity check.
++
++This is not an approximation theorem for H_U. The actual O_v has higher odd pieces; other zero-return terms, the 648 mixed-middle orders, energy dependence and canonical normalization remain. Contributions of the same order as the tiny ultraviolet minimum can change the conclusion. A formal gap in this matrix therefore supplies neither a native bulk gap nor a phase claim.
++
++## A possible CAR improvement over an absolute spatial majorant
++
++An inverse-frequency one-particle kernel behaves as 1/|k| near a three-dimensional node if its numerator is bounded and nonzero. Its spatial l1 norm cannot be uniform (the Fourier multiplier is unbounded), as shown in the main derivation. However its row l2 norm CAN be uniform: Parseval reduces its squared row norm to a normalized sum bounded by constant times sum_k 1/omega(k)^2, and the same shell proof bounds this in three dimensions. This assertion requires a uniformly bounded form factor; that native property has not yet been proved here.
++
++For real coefficients t_w and distinct Hermitian Majoranas beta_w, CAR gives the exact identity (sum_w t_w beta_w)^2=(sum_w t_w^2)I. Hence its operator norm is the row l2 norm. In particular a local commutator of a quadratic spectator Hamiltonian with beta_v can be controlled by l2, even when an l1 interaction estimate diverges. This removes one overly strong absolute-value obstruction, but does not by itself construct a local interacting ground state, a Lieb-Robinson estimate, or the joint-defect recursion. It suggests that preserving CAR cancellations in a resummed reference is more plausible than a scalar absolute-history expansion. The necessary native form-factor bound and higher connected operator bounds remain explicit obligations.
+diff --git a/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json
+new file mode 100644
+index 0000000000..4dac587f77
+--- /dev/null
++++ b/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/evidence/native-weak-electric-uniform-local-stability-stretch/STAR_TINY_CONTROL.json
+@@ -0,0 +1,6 @@
++{
++  "disjoint_pair_checks": 15,
++  "rational_frequency_check": 1,
++  "physical_runs": 0,
++  "scope": "incidence negativity and diagnostic normalization only"
++}
+diff --git a/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md b/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md
+new file mode 100644
+index 0000000000..f18243b8e7
+--- /dev/null
++++ b/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md
+@@ -0,0 +1,140 @@
++---
++claim_id: native_uniform_quasilocal_star_vertex_note_2026-09-09
++claim_type: bounded_theorem
++claim_scope: "Supplied full native cubic model with uniform flux stiffness: a rapidly quasi-local exact star vacuum creator, uniformly bounded one-particle form factor and singleton inverse-kernel rows. No interacting phase or full effective-operator locality."
++upstream_dependencies:
++  - native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08
++  - native_zero_penalty_optimal_flux_dispersion_note_2026-09-08
++  - native_uniform_cubic_flux_defect_stiffness_note_2026-09-08
++  - native_weak_electric_joint_defect_bounds_note_2026-09-09
++runner: scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py
++---
++
++# A uniformly quasi-local native star vacuum vertex
++
++**Status:** conditional-support on the supplied Hamiltonian, canonical Gaussian reference and uniform flux stiffness. Trace class: frontier_discovery. No audit verdict or axiom closure is asserted.
++
++The [full native dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), [canonical endpoint dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md) and [uniform flux stiffness](NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md) give the following uniform bound without a uniform active-fermion gap. It addresses a missing input to the [local joint-defect problem](NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md), but does not resolve that interacting problem.
++
++## Domain and theorem
++
++Take the supplied uniform full native model on cubic tori of side \(L=4M\), \(M\ge32\), with nonzero hopping scale \(h=2|t|\). Use the canonical minimizing pi-flux orbit, its pure active Gaussian vacuum \(\Omega\), and the canonical antiperiodic grids. The active frequencies are
++\[
++\omega(k)=4|t|\sqrt{\sin^2 k_1+\sin^2 k_2+\sin^2 k_3},
++\qquad k_a=2\pi(n_a+1/2)/L.
++\]
++These grids contain no active zero modes. The physical Gauss quotient and spectators are those of the full dictionary, not a separately supplied low-charge model. The reference energy \(E_0\) is the canonical global minimum in the stiffness theorem. Its bound is
++\[
++H_0\ge E_0+\kappa K_{\rm def},\qquad
++\kappa=1161h/204800>0.
++\]
++The proof also works with any uniform positive stiffness satisfying these same hypotheses.
++
++Let \(A\) be a two-edge subset of the six-edge star at \(v\), let \(H_A\) reverse those two links in the active Hamiltonian, and put \(R_A=(E_0-H_A)^{-1}\). On the **full active space, in both parities, relative to this same \(E_0\)**,
++\[
++H_A-E_0\ge6\kappa I.
++\]
++The physical spectator freedom realizes either active parity, so a physical sector lower bound applies to the whole active spectrum. Opposite pairs have eight bad faces; perpendicular pairs have six. A reference with a different higher energy would not license this inequality.
++
++Define the actual third-order singleton-star vacuum transition
++\[
++\chi_v=O_v\Omega,\qquad
++O_v=\frac18\sum_{A\cap C=\varnothing}R_C\gamma_vR_A,
++\tag{1}
++\]
++where \(A,C\) range over two-edge subsets of that star. There are \(15\cdot6=90\) ordered terms. There exist odd operators \(Y_v\), not necessarily Hermitian, with
++\[
++Y_v\Omega=\chi_v,\quad \|Y_v\|\le C_0,\quad
++\|Y_v-Y_{v,r}\|\le C_p(1+r)^{-p}\quad(p>0),
++\tag{2}
++\]
++where \(Y_{v,r}\) is supported in the radius-\(r\) ball. Constants depend on \(p,h,\kappa\), not \(L\). This is an exact vacuum-creating representative; it is not equality \(Y_v=O_v\) on excited states.
++
++The one-particle vector has a representation
++\[
++P_1\chi_v=\sum_j c_{vj}\gamma_j\Omega,
++\qquad \sum_j|c_{vj}|\le C_1,
++\tag{3}
++\]
++uniformly in volume. Magnetic translates give a uniformly bounded fixed-cell Fourier form factor. The one-particle singleton inverse kernel
++\[
++T_{vw}=\langle P_1\chi_v,(H_0-E_0)^{-1}P_1\chi_w\rangle
++\tag{4}
++\]
++has uniformly bounded row \(\ell^2\) norm. It follows that its corresponding linear spectator fields, and local CAR commutators of its self-adjoint quadratic part, are uniformly bounded. No row \(\ell^1\) estimate, node value, full sixth coefficient, extensive operator norm or interacting phase follows.
++
++## Why (1) is the native star transition
++
++The nonconstant electric penalty is \(V=\frac12\sum Z_eZ_{e'}\), over distinct incident edge pairs. Three insertions toggling a singleton star must partition its six edges into three pairs, all centered at the same vertex: the outer neighbors are mutually nonadjacent. There are fifteen partitions and six orders. Nonempty one- and two-pair prefixes are not gauge cuts. If \(C\) is the last pair, complementing its star is vertex gauge, so
++\[
++H_{{\rm star}\setminus C}=\gamma_vH_C\gamma_v.
++\]
++The full Gauss closure is \(-i\gamma_v\beta_v\), with the dictionary convention \(\beta=i(c^\dagger-c)\). The chronological two resolvents and closure therefore produce the actual term \(-iO_v\beta_v\), including the electric factor \(1/8\). Exchanging \(A,C\) proves \(O_v\) Hermitian; it is odd in active CAR. Zero-toggle histories and mixed sixth-order histories are separate terms and are not discarded by this definition. This energy-dependent vacuum transition does not posit a gapped all-active Schrieffer-Wolff block.
++
++## Smooth inverse and local cocycles
++
++Set \(\delta=6\kappa\). Choose real odd smooth \(f\), zero for \(|x|\le\delta/2\), equal to \(-1/x\) for \(|x|\ge\delta\). It has a Fourier representation
++\[
++f(x)=\int_{\mathbb R}w(s)e^{-isx}\,ds,
++\qquad M_p=\int(1+|s|)^p|w(s)|\,ds<\infty
++\]
++for every fixed \(p\). For completeness, subtract a scaled \(-x/(1+x^2)\): the difference is integrable, and the rational summand has bounded exponentially decreasing Fourier transform on either half-line. Every positive derivative of \(f\) is integrable. Distributional integration by parts gives arbitrary inverse powers at large \(|s|\), while the subtraction bounds the transform near zero. There is no ultraviolet spectral cutoff.
++
++Functional calculus gives \(R_A=f(H_A-E_0)\) exactly. Write \(H_A=H+B_A\), \(H=H_\pi\). The even quadratic \(B_A\) is supported on the star and has bounded norm. Define
++\[
++U_A(s)=e^{-isH_A}e^{isH},\qquad
++\tau_s(X)=e^{-isH}Xe^{isH}.
++\]
++Since \(H\Omega=E_0\Omega\),
++\[
++R_AX\Omega=\int w(s)U_A(s)\tau_s(X)\Omega\,ds.
++\]
++In particular an exact choice in (2) is
++\[
++Y_v=\frac18\sum_{A\cap C=\varnothing}\int ds\,dt\,
++ w(s)w(t)U_C(t)\tau_t\!\left(\gamma_vU_A(s)\right).
++\tag{5}
++\]
++Unitarity gives \(\|Y_v\|\le(90/8)M_0^2\).
++
++Finite-range bounded quadratic CAR propagation follows directly by summing hopping paths in the one-particle exponential. For fixed \(\mu>0\), tails beyond distance \(r\) have bounds proportional to \(e^{v|s|-\mu r}\), with \(v\) independent of volume. This bounds evolved local quadratic perturbations and the odd center Majorana using graded locality. Construct ball-truncated cocycles with Hermitian truncated generators. Duhamel comparison of their unitary evolutions bounds the error by the integral of the generator error, with polynomial time factors and no volume exponential.
++
++For (5), allocate fixed fractions of the radius to its finitely many factors. On \(|s|+|t|\le cr\), choose \(c\) sufficiently small that the propagation errors are exponentially small in \(r\). On the complement use arbitrary moments \(M_p\), retaining norm one for the unitary factors. This proves (2) for every \(p\). Parity-preserving truncation supplies odd approximants. Finite-torus balls eventually equal the whole torus. Twisted seam signs change no local norm bound, but the spectral and no-zero assumptions remain essential.
++
++## Gaussian extraction and infrared estimate
++
++For any finite-support odd operator \(Y\), complex or non-Hermitian, Gaussian Wick contraction gives
++\[
++P_1Y\Omega=\sum_j\frac12\langle\Omega,\{\gamma_j,Y\}\Omega\rangle\gamma_j\Omega.
++\tag{6}
++\]
++For a distinct-index odd monomial, the anticommutator removes exactly one leg with its CAR sign; vacuum expectation contracts all remaining legs. These are precisely the one-particle Wick terms. Clifford reduction handles repetitions and linearity handles all local operators. Coefficients vanish outside the support and have modulus at most \(\|Y\|\).
++
++Use dyadic approximants to \(Y_v\). Their successive differences have norm \(O(2^{-np})\) and at most \(O(2^{3n})\) supported sites. For \(p>3\) their extracted coefficient \(\ell^1\) norms are summable. The last whole-torus shell obeys the same estimate. This proves (3), with absolute convergence of the represented vectors. Translated ball constructions preserve magnetic covariance; no continuous choice of band eigenvector at a node is needed.
++
++In a fixed magnetic cell the symbol of (4) is bounded by a fixed constant times \(1/\omega(k)\). Parseval reduces its squared row norm to a constant times the normalized sum of \(\omega(k)^{-2}\). Near each of the finitely many conical zeros, a shifted shell of index \(j\) has \(O((j+1)^2)\) points and inverse frequency squared \(O(L^2/(j+1)^2)\). After multiplication by \(L^{-3}\), summing \(O(L)\) shells is uniformly bounded. The complement is separated from zero. This argument would not apply to a grid with an exact zero mode.
++
++For a real row \(a\), CAR gives \(\|\sum a_j\beta_j\|=\|a\|_2\). For complex \(c=a+ib\), the valid bound is
++\[
++\left\|\sum c_j\beta_j\right\|\le\|a\|_2+\|b\|_2\le\sqrt2\|c\|_2.
++\]
++For \(H_b=(i/4)\sum b_{jk}\beta_j\beta_k\) with real antisymmetric \(b\), \([H_b,\beta_v]=-i\sum_k b_{vk}\beta_k\). Realification, or the displayed complex bound, therefore gives the stated local commutator control. This is not a propagation theorem for the interacting system.
++
++## Related local perturbative coefficient
++
++Let \(\psi(U)\) be any finite-volume analytic ground branch from the \(U=0\) ground space, and let \(p_f(U)\) be its bad-face probability. Distinct incident pairs have distinct flipped-face sets \(F_j\): their symmetric difference has at most four edges, whereas any included edge has four incident plaquettes, each requiring a different other edge to give even plaquette intersection. Distinct edges share at most one elementary face for \(L\ge4\), including seams. Thus that nonempty difference would need at least five edges.
++
++The nonempty-sector derivative equation is
++\[
++P_f\psi'(0)=-\frac12\sum_{j:f\in F_j}(H_0-E_0)^{-1}W_j\psi(0).
++\]
++Its summands lie in orthogonal exact defect sectors. There are 24 size-six and 8 size-eight pairs through a face, so
++\[
++\sup_L\limsup_{U\to0^+}\frac{\kappa^2p_f(U)}{U^2}
++\le\frac14\left(\frac{24}{6^2}+\frac8{8^2}\right)=\frac{19}{96}.
++\]
++Ground-subspace derivatives are killed by \(P_f\). The finite set of Rellich branches at each volume also bounds arbitrary ground-state mixtures, including coupling-dependent weights. The order of limits is essential: no uniform remainder, fixed-coupling local joint bound or interchanged limit is claimed.
++
++## Evidence and remaining scope
++
++The portable controls exercise complex odd Gaussian extraction, CAR norm factors, actual periodic face-pair counts and exact shifted-shell arithmetic. They do not numerically prove the infinite family of locality estimates or manufacture numerical values for \(C_p\). The proof uses standard functional calculus, CAR, Wick contraction and finite-range propagation, with their needed steps given above. Original proofs and independent reviews, including the complex-CAR clarification, are preserved in the packet. Node values, higher odd sectors, mixed histories and all-order interacting control remain open. Preparation of the supplied Hamiltonian and Gaussian reference is not derived here.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index bfc7480af9..846e910994 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12162,
+- "node_count": 4881,
++ "edge_count": 12166,
++ "node_count": 4882,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -12414,6 +12414,10 @@
+    "deps_hash": "084227f18172",
+    "out_degree": 5
+   },
++  "native_uniform_quasilocal_star_vertex_note_2026-09-09": {
++   "deps_hash": "9630d5c0dd03",
++   "out_degree": 4
++  },
+   "native_weak_electric_defect_density_note_2026-09-08": {
+    "deps_hash": "dd92dd1a5f46",
+    "out_degree": 3
+diff --git a/outputs/native_uniform_quasilocal_star_vertex_2026_09_09.json b/outputs/native_uniform_quasilocal_star_vertex_2026_09_09.json
+new file mode 100644
+index 0000000000..2514d09649
+--- /dev/null
++++ b/outputs/native_uniform_quasilocal_star_vertex_2026_09_09.json
+@@ -0,0 +1,29 @@
++{
++  "status": "PASS",
++  "checks": 11896,
++  "geometry": {
++    "4": {
++      "faces": 192,
++      "pairs": 960
++    },
++    "6": {
++      "faces": 648,
++      "pairs": 3240
++    }
++  },
++  "coefficient": "19/96",
++  "matrix_scope": "exact small Gaussian dyadics; no eigensolver",
++  "physical_runs": 0,
++  "input_sha256": {
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++    "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "883c62e72a9471d063a5acf723a7810c640b92228f09332267260b199f512392",
++    "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "ab77220ca9d70d50abac22376ccaa3849cf2550a2fb9252772b09041c2722a26"
++  },
++  "source_sha256": "a7b89c21e82ddc6d4ad60e4f85380543240b1cdaa7e829a12c0b3bc7965b0522",
++  "elapsed_seconds": 0.040432624984532595,
++  "peak_rss_bytes": 23150592,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/scripts/native_uniform_quasilocal_star_controls_2026_09_09.py b/scripts/native_uniform_quasilocal_star_controls_2026_09_09.py
+new file mode 100644
+index 0000000000..c8b5934eba
+--- /dev/null
++++ b/scripts/native_uniform_quasilocal_star_controls_2026_09_09.py
+@@ -0,0 +1,68 @@
++"""Small exact Gaussian-dyadic controls; all matrix entries stay exact dyadics <2**20."""
++from fractions import Fraction as F
++from itertools import combinations,product
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ n=3;d=1<<n
++ def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(d)) for j in range(d)] for i in range(d)]
++ I=[[complex(i==j) for j in range(d)] for i in range(d)];gam=[]
++ for mode in range(n):
++  for kind in range(2):
++   a=[[0j]*d for _ in range(d)]
++   for x in range(d):a[x^(1<<mode)][x]=(-1)**((x&((1<<mode)-1)).bit_count())*(1 if kind==0 else 1j*(1-2*((x>>mode)&1)))
++   gam.append(a)
++ for length in (1,3,5):
++  for inds in combinations(range(6),length):
++   a=I
++   for j in inds:a=mm(a,gam[j])
++   for scalar in (1,complex(1,2)/2):
++    y=[[scalar*z for z in row] for row in a]
++    coefficients=[(mm(g,y)[0][0]+mm(y,g)[0][0])/2 for g in gam]
++    for x in range(d):
++     expected=y[x][0] if x.bit_count()==1 else 0
++     actual=sum(c*g[x][0] for c,g in zip(coefficients,gam))
++     req(actual==expected,'complex Gaussian extraction')
++ # beta0+i beta1 has norm2, while coefficient l2 squared is2.
++ a=[[gam[0][i][j]+1j*gam[1][i][j] for j in range(d)] for i in range(d)]
++ norm2=max(sum(abs(a[i][j])**2 for i in range(d)) for j in range(d))
++ req(norm2==4 and norm2==2*2,'complex CAR factor')
++ geometry={}
++ for L in (4,6):
++  vs=list(product(range(L),repeat=3));ix={v:i for i,v in enumerate(vs)};edges=[]
++  for v in vs:
++   for axis in range(3):
++    w=list(v);w[axis]=(w[axis]+1)%L;edges.append(tuple(sorted((ix[v],ix[tuple(w)]))))
++  ei={e:i for i,e in enumerate(edges)};faces=[]
++  for v in vs:
++   for a,b in combinations(range(3),2):
++    u=list(v);u[a]=(u[a]+1)%L;w=list(v);w[b]=(w[b]+1)%L;z=u.copy();z[b]=(z[b]+1)%L
++    cycle=[ix[v],ix[tuple(u)],ix[tuple(z)],ix[tuple(w)]]
++    faces.append({ei[tuple(sorted((cycle[j],cycle[(j+1)%4])))] for j in range(4)})
++  ef=[set() for _ in edges];stars=[[] for _ in vs]
++  for j,face in enumerate(faces):
++   for e in face:ef[e].add(j)
++  for e,(v,w) in enumerate(edges):stars[v].append(e);stars[w].append(e)
++  seen=set();through=[[0,0] for _ in faces]
++  for star in stars:
++   for a,b in combinations(star,2):
++    fs=frozenset(ef[a]^ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
++    for face in fs:through[face][len(fs)==8]+=1
++  for row in through:req(row==[24,8],'face incidence')
++  geometry[str(L)]={'faces':len(faces),'pairs':len(seen)}
++ req((F(24,36)+F(8,64))/4==F(19,96),'local coefficient')
++ for L in range(4,130,2):
++  total=F(0)
++  for j in range(L//2):
++   shell=(2*j+2)**3-(2*j)**3
++   req(shell<=24*(j+1)**2,'shifted shell count')
++   total+=F(shell,L)*F(1,1)/F(2*j+1,2)**2
++  req(total<=48,'inverse square shell bound')
++ return {'status':'PASS','checks':count,'geometry':geometry,'coefficient':'19/96','matrix_scope':'exact small Gaussian dyadics; no eigensolver','physical_runs':0}
++if __name__=='__main__':
++ import json,signal
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py b/scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py
+new file mode 100644
+index 0000000000..ed2a39757d
+--- /dev/null
++++ b/scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py
+@@ -0,0 +1,21 @@
++"""Portable supporting controls for the uniform quasi-local star theorem."""
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=(
++ 'docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md',
++ 'docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md',
++ 'docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md',
++ 'docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md',
++ 'docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md',
++ 'scripts/native_uniform_quasilocal_star_controls_2026_09_09.py',
++)
++def main():
++ import argparse,json,hashlib,signal,time,resource
++ from pathlib import Path
++ ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.parse_args();signal.alarm(180);start=time.monotonic();root=Path(__file__).resolve().parents[1]
++ hashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
++ helper=root/AUDIT_INPUT_PATHS[-1];data=helper.read_bytes();ns={'__name__':'controls','__file__':str(helper)};exec(compile(data,str(helper),'exec'),ns);out=ns['check']()
++ if out['status']!='PASS' or out['coefficient']!='19/96':raise ValueError('claim binding')
++ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++ if rss>384*1048576:raise ValueError('memory cap')
++ out.update(input_sha256=hashes,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),elapsed_seconds=time.monotonic()-start,peak_rss_bytes=rss,actual_current_surface_status='conditional-support');print(json.dumps(out,indent=2))
++if __name__=='__main__':main()

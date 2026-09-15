@@ -1,0 +1,32 @@
+{
+  "main_revision": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "sources": [
+    {
+      "source": "NIST DLMF 20.13.4",
+      "url": "https://dlmf.nist.gov/20.13",
+      "read": "Periodized Gaussian identity",
+      "role": "Normalization reference; derivation reproduced"
+    },
+    {
+      "source": "Frohlich-Spencer IHES/P/81/40",
+      "url": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
+      "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17",
+      "read": "Intro and selected sections 2-3 in text; visual pages 26-32,35-38,45,47-51,53-56 across campaign",
+      "role": "Examined pure-gauge separation and positive-type machinery; no charged theorem or uncertain normalization constant imported",
+      "limit": "Published 1982 article full text not recovered"
+    },
+    {
+      "source": "Pasztor-Pesznyak arXiv:2609.07886v2",
+      "url": "https://arxiv.org/abs/2609.07886v2",
+      "sha256": "5a64a9eec53ae6b24b0677ac6cc857e0d09023c9914c7fea02974840891ca835",
+      "read": "HTML sections I-IV, II equations 15-17, V.1-V.2 normalization; PDF numerical discussion, conclusion and supplement text",
+      "role": "Prior finite-group Wilson logarithmic temporal scaling; Villain calculation rederived here",
+      "limit": "Figure glyphs not used; 2+1 numerical results not imported as 3+1 charged phase evidence"
+    },
+    {
+      "source": "Current main gauge transfer and minimal axioms notes",
+      "read": "NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION note in full; MINIMAL_AXIOMS admissibility lines 104-124; GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE lines 685-733",
+      "role": "Scope comparison and native-model-selection firewall"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "7236977f0c1a3b1a312ea6f2cef2c1dad51210773ac73addfb4b11ce83032028"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-HANDOFF.md",
+    "sha256": "c2af8ae7cf25d58b14e5f8c8cf346f2825a7af969aaf47aa15d679a6bf42de89"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/MUTATION_RESULTS.json",
+    "sha256": "21825486c9fcc59f8a4be2d149e82cd9233f0b8aee76ff03c934b8031a463c49"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/PRIMARY_RESULT.json",
+    "sha256": "8960662ae0c0489fb3c8c6e3d13ef4495f2e35386661e3223616caf4d1188bf8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/READING_LEDGER.json",
+    "sha256": "1a3da55ff1309f249df7e393ba67c64394bfc2b54b9e120923c16ae2ffb371af"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-REVIEW_HISTORY.md",
+    "sha256": "54fd780eefc98fea2b5303bdee662cb544d42b8931f24068145faf40006ff4ba"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/pr8113-TRACE_GATE.md",
+    "sha256": "0f4a8353815d7f770c55cff3ec25cfafcabf412770fa684049fb5c1eaad2fe13"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/Feshbach_correction_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Feshbach_correction_sign.py.gz",
+    "sha256": "b11ca786d5779235376de137500e1cef709b1f9441cbbed459b5cd11d96c0e8b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/Feshbach_correction_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Feshbach_correction_sign.stderr.gz",
+    "sha256": "08ed93fa2eed856573a2db649b11ebf9c522d2b71142f81a664cca94cf34642d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/Feshbach_correction_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Feshbach_correction_sign.stdout.gz",
+    "sha256": "a4fddfc1ed61558044a67177ac2dbe92ebb05b4650355fe7c7f5d3ee2c18ec59"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/Spin10_Casimir_normalization.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Spin10_Casimir_normalization.py.gz",
+    "sha256": "9513bd8ec50081ba114aaac799c36ca5cb4c3da29a642dd921a1937590481930"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/Spin10_Casimir_normalization.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Spin10_Casimir_normalization.stderr.gz",
+    "sha256": "f0abab84f85ac4bb908ad2b92c7bdd7645c918777c27e1fb919adbe0bb4178e5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/Spin10_Casimir_normalization.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/Spin10_Casimir_normalization.stdout.gz",
+    "sha256": "ac8e1a9af53bafd1e438919b04fef6035bd0db0f38bcf75b8f062b404cea639b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/atomic_composite_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/atomic_composite_sign.py.gz",
+    "sha256": "0d064be4ba8a88baacd7fda16209ce9f5ba59b173b7088462f6abf0cd8611e56"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/atomic_composite_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/atomic_composite_sign.stderr.gz",
+    "sha256": "a1d079e226b3fec6c0bd0409b997bb9f1e12d8c911645935dc2f183876fec413"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/atomic_composite_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/atomic_composite_sign.stdout.gz",
+    "sha256": "ac8e1a9af53bafd1e438919b04fef6035bd0db0f38bcf75b8f062b404cea639b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/fermionic_CAR_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fermionic_CAR_sign.py.gz",
+    "sha256": "7d21bbf6aeed3ec2dae6dc8be36a73607854b72e2e073d6e7b56e8b084966431"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/fermionic_CAR_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fermionic_CAR_sign.stderr.gz",
+    "sha256": "e5c3d65936e55f8bba78cb4ce2f298ab30b09e5e23c48c57eec9917641698bcd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/fermionic_CAR_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fermionic_CAR_sign.stdout.gz",
+    "sha256": "a4fddfc1ed61558044a67177ac2dbe92ebb05b4650355fe7c7f5d3ee2c18ec59"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/fourth_order_counterterm.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fourth_order_counterterm.py.gz",
+    "sha256": "c962b5b163e12facdd8d04d8b58ad8191e36d94ccf68a07a04879991d69ee8a4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/fourth_order_counterterm.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fourth_order_counterterm.stderr.gz",
+    "sha256": "4faa9935143d9072d343a21821883bf646ade797c0e35d4fd25e5e5a8eef3b4f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/fourth_order_counterterm.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/fourth_order_counterterm.stdout.gz",
+    "sha256": "a4fddfc1ed61558044a67177ac2dbe92ebb05b4650355fe7c7f5d3ee2c18ec59"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/mirror_kernel_recurrence.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_kernel_recurrence.py.gz",
+    "sha256": "c4c99dee907a63216fda4a026dc967a80af7ac92697444451a5566750b7b9092"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/mirror_kernel_recurrence.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_kernel_recurrence.stderr.gz",
+    "sha256": "07fa09758a8b1c3ead879a52166ef1c92975d6bf19c08a85c1e6382d751cd5fe"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/mirror_kernel_recurrence.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_kernel_recurrence.stdout.gz",
+    "sha256": "8bf14c88c3c2cbbd065874fd7ad0fadeaf0d4fa10828d40ab1d79f5653317734"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/mirror_velocity_orientation.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_velocity_orientation.py.gz",
+    "sha256": "39c3ffb75f08cb82b8b277e75eef4fe0bf7580e36b16f1f8bce5286a93995fd8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/mirror_velocity_orientation.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_velocity_orientation.stderr.gz",
+    "sha256": "98cd9433a6dc289a3f46cfe7bfe5724b550d151d9c21d7549909ab023156291b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/mirror_velocity_orientation.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/mirror_velocity_orientation.stdout.gz",
+    "sha256": "8bf14c88c3c2cbbd065874fd7ad0fadeaf0d4fa10828d40ab1d79f5653317734"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/optical_phase_space_factor.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/optical_phase_space_factor.py.gz",
+    "sha256": "0cea9223c59b623f8a65797f33a836c298fbd8300ffef485b757302fd498bf8e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/optical_phase_space_factor.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/optical_phase_space_factor.stderr.gz",
+    "sha256": "654bf9b184a0f180e214ffe2a71fa39a7e186264050f97b9315cecabdfbf9509"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/optical_phase_space_factor.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/optical_phase_space_factor.stdout.gz",
+    "sha256": "fe7384b6f132ed18ff5c82ec190a9bbc60b0847520561394f66ce1aeb4d2cef7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/quadratic_auxiliary_weight.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quadratic_auxiliary_weight.py.gz",
+    "sha256": "b6e938e71608715beea82b5f206b197ed1cce6bf32ec136a5db7d45ea7cc0959"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/quadratic_auxiliary_weight.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quadratic_auxiliary_weight.stderr.gz",
+    "sha256": "72f73e80b5e11c4d4ffca597b17959458c61edc283a32ca6a6cf7a6737fb65af"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/quadratic_auxiliary_weight.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quadratic_auxiliary_weight.stdout.gz",
+    "sha256": "8bf14c88c3c2cbbd065874fd7ad0fadeaf0d4fa10828d40ab1d79f5653317734"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/quartic_Grassmann_antisymmetry.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quartic_Grassmann_antisymmetry.py.gz",
+    "sha256": "b5d0e4d5996045b604af2f8315dab5005a9d476e45ca6c593ef925a91ccfa697"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/quartic_Grassmann_antisymmetry.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quartic_Grassmann_antisymmetry.stderr.gz",
+    "sha256": "235402a70c9067ed97d6dff299dad6c199187ef89fbc886f1e3b08b653252b45"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block6/mutation_evidence/quartic_Grassmann_antisymmetry.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8113-spin10-mirror-evidence/mutation_evidence/quartic_Grassmann_antisymmetry.stdout.gz",
+    "sha256": "ac8e1a9af53bafd1e438919b04fef6035bd0db0f38bcf75b8f062b404cea639b"
+  }
+]

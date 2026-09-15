@@ -1,0 +1,2677 @@
+{
+  "unit": [
+    8020,
+    8021,
+    8022
+  ],
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "base": "173381a6c85174f0b8d570958ac0588867fee67f",
+  "constituents": [
+    {
+      "pr": "8020",
+      "base": "2343266be6c4faf3ba9112ec1cab56b00c471c52",
+      "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "paths": [
+        ".claude/science/physics-loops/full-cube-transfer-20260907/ARTIFACT_PLAN.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/CANONICAL_LIVE_RESULT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_ROWS_BEFORE_CLEANUP.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_STATUS_CERTIFICATE.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_READINESS.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_STRICT.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_VALIDATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_VALIDATION_SUMMARY.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FROZEN_PORT_RECEIPT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE_FAILED_SOURCE_STABILITY.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/GENERATED_INVENTORY_BEFORE_CLEANUP.txt",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/GOAL.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/HANDOFF.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/LITERATURE_BRIDGES.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/LIVE_SCIENTIFIC_COMPARISON.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/LOCK.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/PROOF_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/PR_BACKLOG.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/PR_BODY.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/PUBLICATION_RECEIPT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/READINESS_BEFORE_CLEANUP.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/ROOT_FINAL_PORT_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/ROUTE_PORTFOLIO.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/SCOPED_VALIDATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_HASHES.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PACK_INDEX.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PORT_RECEIPT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_helper.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/STATE.yaml",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/STRICT_LINT.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/TRACE_GATE.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_PIPELINE.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_READINESS.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_STRICT.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_VALIDATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_ATTEMPTS.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_RESULT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_LINT.log",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_REPORT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/NATIVE_ROOT_DERIVATION_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_NATIVE_COLD_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_PORT_RECEIPT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_ROOT_METRIC_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_SUPPLEMENT_CONTRACT.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_DERIVATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_CODE_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_IMPORT_REVIEW.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_CHECK.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_DERIVATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_PREREGISTRATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/DERIVATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FAILURES.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FREEZE_RECEIPT.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/PREREGISTRATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check.py",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check_before_symbolic_order_fix.py",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/result.json",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/DERIVATION.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/PROVENANCE.md",
+        ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/ROOT_INDEPENDENT_REVIEWS.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/audit/data/citation_graph_manifest.json",
+        "logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt",
+        "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py"
+      ],
+      "actual_merge_base": "2343266be6c4faf3ba9112ec1cab56b00c471c52"
+    },
+    {
+      "pr": "8021",
+      "base": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "paths": [
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/ARTIFACT_PLAN.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/CLAIM_STATUS_CERTIFICATE.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_READINESS.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_STRICT.log",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_VALIDATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VALIDATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VOCAB_LINT.txt",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FROZEN_PORT_RECEIPT.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/FULL_PIPELINE.log",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/GOAL.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/HANDOFF.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/LITERATURE_BRIDGES.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/LOCK_RELEASE.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/PROOF_REVIEW.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/PR_BACKLOG.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/PR_BODY.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/PUBLICATION_RECEIPT.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_FINAL_PORT_REVIEW.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/ROUTE_PORTFOLIO.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_FREEZE_RECEIPT.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_PACK_INDEX.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_result.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/STATE.yaml",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/STRICT_LINT.log",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/TRACE_GATE.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_PIPELINE.log",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_READINESS.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_STRICT.log",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_VALIDATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/CERTIFICATE_PREREGISTRATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION_FIRST_FREEZE_095c3f80.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/LITERATURE_PROVENANCE.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/NATIVE_COLD_REVIEW.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/PREREGISTRATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_COLD_REVIEW.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_INDEPENDENT_DERIVATION.md",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/validated_claims_before_generated_cleanup.json",
+        ".claude/science/physics-loops/compact-hamiltonian-20260907/validated_readiness_before_generated_cleanup.json",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/audit/data/citation_graph_manifest.json",
+        "logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt",
+        "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py"
+      ],
+      "actual_merge_base": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551"
+    },
+    {
+      "pr": "8022",
+      "base": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "paths": [
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_RAW.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_STDOUT.txt",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ARTIFACT_PLAN.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/CLAIM_STATUS_CERTIFICATE.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/EXECUTION_RECEIPT.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_READINESS.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_STRICT.log",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_VALIDATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VALIDATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VOCAB_LINT.txt",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FROZEN_PORT_RECEIPT.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/FULL_PIPELINE.log",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/GOAL.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/HANDOFF.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/HASHES.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/LITERATURE_BRIDGES.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/LOCK_RELEASE.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_RAW.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_STDOUT.txt",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/N1_N8.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/OPPORTUNITY_QUEUE.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ORBITAL_GAP_REVIEW.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/PACK_INDEX.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/PORT_RECEIPT.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/PR_BACKLOG.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/PR_BODY.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/PUBLICATION_RECEIPT.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/QUEUE.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/REPORTING_REPAIR.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEW_HISTORY.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_ALL_COUPLING_REVIEW.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_LOW_GAP_REVIEW.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/ROUTE_PORTFOLIO.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/STATE.yaml",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/STATUS.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/STRICT_LINT.log",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/TRACE_GATE.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_PIPELINE.log",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_READINESS.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_STRICT.log",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_VALIDATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/DERIVATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/HASHES.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/PREREGISTRATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/check.py",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/result.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/DERIVATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/HASHES.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/PREREGISTRATION.md",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/check.py",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/result.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/PORT_RECEIPT.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/validated_claims_before_generated_cleanup.json",
+        ".claude/science/physics-loops/compact-physical-gap-20260907/validated_readiness_before_generated_cleanup.json",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/audit/data/citation_graph_manifest.json",
+        "logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt",
+        "logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt",
+        "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+        "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py"
+      ],
+      "actual_merge_base": "44964a9b72bccb9ae95d5d9b277007910ee86430"
+    }
+  ],
+  "complete_original_dispositions": [
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/ARTIFACT_PLAN.md",
+      "original_sha256": "5337887de4602f2b552a0b35ec0c2f4c3e5af6509edd3db4f81f454a4701f946",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "d150b30104aa22b8cc138eea429d5998a1660a074323ce2e2c4858ec346b9769",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "d150b30104aa22b8cc138eea429d5998a1660a074323ce2e2c4858ec346b9769"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/CANONICAL_LIVE_RESULT.json",
+      "original_sha256": "9396fd241ded9880375b7052d6a7358d9573103c996b976856e60a1230499712",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/CANONICAL_LIVE_RESULT.json",
+      "final_sha256": "9396fd241ded9880375b7052d6a7358d9573103c996b976856e60a1230499712"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_ROWS_BEFORE_CLEANUP.json",
+      "original_sha256": "b546476cf7e89f1d5e63b0f4167fbb146243a55d5753d99ae2f890d4e0b82ce7",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_ROWS_BEFORE_CLEANUP.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "6a711c4e57bcf62d593cede358a3724b1cc9236b5528eacbf17383923072d510",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "original_sha256": "78c042552d7ca8dfd83aaf05a629ee6e99cdcaf41fdab9d3bc9942f2dbb2a5a3",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_READINESS.json",
+      "original_sha256": "c8957b0e0abdd179cabc045c56ec32b11effcfa7e55245dc9a5017004be325db",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_STRICT.log",
+      "original_sha256": "62a75bfe54bfde90efa9483628ae081bdc347ca102d0112cf30ecdcba510a922",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "original_sha256": "057b146bd50738cb43bf4836349166fe442443c46aac6086d3c1c5c9a91dbe3b",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_VALIDATION.md",
+      "original_sha256": "400e9254df8d3f539638e930dd0102b56825420d87d31905fb7f378548990f60",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_VALIDATION_SUMMARY.json",
+      "original_sha256": "520c83ea8f0e53d5610b48617eba394689c60815c7ef21ef4eabedfaa8340cb6",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FINAL_VALIDATION_SUMMARY.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FROZEN_PORT_RECEIPT.json",
+      "original_sha256": "e3fa5ca6c5a24bd934f0f816c0bdb545fa83a82a37d3dae7608cf6fda40ae822",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE.log",
+      "original_sha256": "5e98d5a0e254604c6818a0f3422684fbdd9c64a18395afc748a7fe52cc026411",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE_FAILED_SOURCE_STABILITY.log",
+      "original_sha256": "1c75b295aeaeae6ec8bc566ad55a6d2319c018b80a9daef3ba80b380644d2a86",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE_FAILED_SOURCE_STABILITY.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/GENERATED_INVENTORY_BEFORE_CLEANUP.txt",
+      "original_sha256": "efd6dacd24cfefac9ffa64adc4d832371d6a62002f5502b073e5553b5aa6ad6f",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/GENERATED_INVENTORY_BEFORE_CLEANUP.txt"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/GOAL.md",
+      "original_sha256": "d0c804afe587fedae7e036915b4a95352ab5dade164e21501990b1e03c918aec",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/GOAL.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/HANDOFF.md",
+      "original_sha256": "e7705dc8f91fca52495e640dc47fc5876b70678f29bac93db80ec8d5e5b3e337",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/HANDOFF.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/LITERATURE_BRIDGES.md",
+      "original_sha256": "0b45e7de9fe21dbedc9d509fe5066e5659ab99351b1a67a16c7cb95cff7c21ad",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-LITERATURE_BRIDGES.md",
+      "final_sha256": "0b45e7de9fe21dbedc9d509fe5066e5659ab99351b1a67a16c7cb95cff7c21ad"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/LIVE_SCIENTIFIC_COMPARISON.json",
+      "original_sha256": "be90cb67407dd6d95d10af0056b02b36213215e41ce86bd92c868f045946393b",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/LIVE_SCIENTIFIC_COMPARISON.json",
+      "final_sha256": "be90cb67407dd6d95d10af0056b02b36213215e41ce86bd92c868f045946393b"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/LOCK.json",
+      "original_sha256": "c7782d7cc46728a413ebb2729a85411bd8b1566714251c742ce7e9a9ddfc9cae",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/LOCK.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "837d43c86963fcd64c9cfd6c78dc7a4a6004330661aa411285ef81dc487f5e75",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_DISCIPLINE_CHECKLIST.md",
+      "final_sha256": "837d43c86963fcd64c9cfd6c78dc7a4a6004330661aa411285ef81dc487f5e75"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_LEDGER.md",
+      "original_sha256": "7cc416cb28431351fcb9dfc2ca72d708b5b6315e2df76a38b43fb777226acbfa",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_LEDGER.md",
+      "final_sha256": "7cc416cb28431351fcb9dfc2ca72d708b5b6315e2df76a38b43fb777226acbfa"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "1dc6ca2b37b71e4bafcfef05fa120fc7e957ebf94e322f986ecf4019d70e9942",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/PROOF_REVIEW.md",
+      "original_sha256": "cb3546a694baba794642eb87d695a27eb7c53af5e1885763757a81a81985b8b4",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-PROOF_REVIEW.md",
+      "final_sha256": "cb3546a694baba794642eb87d695a27eb7c53af5e1885763757a81a81985b8b4"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/PR_BACKLOG.md",
+      "original_sha256": "61d8afd47400acb0e3f8eb513e72cee065f17bb54db7159177a482746625b3c7",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/PR_BACKLOG.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/PR_BODY.md",
+      "original_sha256": "39192010404f59390888b44de8de1d0a4544849df348a3406ee65600b89fae60",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/PR_BODY.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/PUBLICATION_RECEIPT.json",
+      "original_sha256": "ee9d859c20e571fc5e1b805b93bf74e5ba2449183f821ae05142155e659414dd",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/READINESS_BEFORE_CLEANUP.json",
+      "original_sha256": "9a032fe453f58076478ed782076c3dcc7425b9b4385da84db0fae9289d03e587",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/READINESS_BEFORE_CLEANUP.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_sha256": "8eef3a1c1f4c478c37efbd4e279720427a353fd8b7f57ba16c3e3088a9ee7150",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEW_HISTORY.md",
+      "original_sha256": "8fe4e53c15b7141649ce184427542b7b9f39fb63f61261d6bcbd5db7e5e9753e",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-REVIEW_HISTORY.md",
+      "final_sha256": "8fe4e53c15b7141649ce184427542b7b9f39fb63f61261d6bcbd5db7e5e9753e"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "original_sha256": "858f1332d073799a2585c0d5dc473c50aa34b3fb17d9c889cde1f2ac8c45c3c6",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ROOT_FINAL_PORT_REVIEW.md",
+      "final_sha256": "858f1332d073799a2585c0d5dc473c50aa34b3fb17d9c889cde1f2ac8c45c3c6"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/ROUTE_PORTFOLIO.md",
+      "original_sha256": "0156b10ea9a750ee3256a8b0abfe0d1bcaa60edee450b919926d53b48223f056",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCOPED_VALIDATION.md",
+      "original_sha256": "259aa55d1b21ad9f9237ddb55f5874dfd09babd960b9620da5c7c3dd4e37dd6b",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/SCOPED_VALIDATION.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_HASHES.json",
+      "original_sha256": "4300d1db743c326c5275bd163724df4f9d01378c558bb1e577694a1ededfc87f",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_HASHES.json",
+      "final_sha256": "4300d1db743c326c5275bd163724df4f9d01378c558bb1e577694a1ededfc87f"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PACK_INDEX.md",
+      "original_sha256": "215363d8cb2068f441d0b902b7b3cf2c747ba6ce4d7c7f55103940b2c6301455",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-SCRATCH_PACK_INDEX.md",
+      "final_sha256": "215363d8cb2068f441d0b902b7b3cf2c747ba6ce4d7c7f55103940b2c6301455"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PORT_RECEIPT.json",
+      "original_sha256": "76a1850dd92b6dd8b4221e7d1b574122f6631db9b9b03708503c5173f6ba6895",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_PORT_RECEIPT.json",
+      "final_sha256": "76a1850dd92b6dd8b4221e7d1b574122f6631db9b9b03708503c5173f6ba6895"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_helper.json",
+      "original_sha256": "845e3f0489cc4fdc819cecd30ac6fefe4b32127478a30b38b92bb84b1f898ad0",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_helper.json",
+      "final_sha256": "845e3f0489cc4fdc819cecd30ac6fefe4b32127478a30b38b92bb84b1f898ad0"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/STATE.yaml",
+      "original_sha256": "ed1634196e53335b28593bb910d8b8ece3ac2ea2a3f62ebf8c914156a759cdcc",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/STATE.yaml"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/STRICT_LINT.log",
+      "original_sha256": "85d94c731663018f533b8ad125b253002cf1d178fe726e749eb98a7496b54f59",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/STRICT_LINT.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/TRACE_GATE.md",
+      "original_sha256": "8a18a355372ef48ab129cafec3c05f3128780cb56159bc19bf91d4d113c8d2fa",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/TRACE_GATE.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_sha256": "386f298d7e546c0c421bd46d379cf5001b6020fe0e672a0ad1f324acf5cf64db",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_sha256": "183cdf528d47e6da13ae6c63199791a3a451b92f2689449f72af9eadc809875b",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_sha256": "836fb03ab1d458cdf9bdd1181f93343ff440d707074bd71cb94bce41b651e394",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_sha256": "d0e7fff66426470845ade0355bb4915753b7f508069a22c84af3b892242dfadc",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_ATTEMPTS.md",
+      "original_sha256": "041fd9a93d254b8672c29af81bd8c2a239f7c5bd0a710cff153ebf45d9b96e64",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_ATTEMPTS.md"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_RESULT.json",
+      "original_sha256": "ffc738bff418ce98419050757fd577afa19fda496adce9d67220c514a64a8189",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_RESULT.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_LINT.log",
+      "original_sha256": "c609838636bd282f46add07ec41774f762259afab2d5a14a9fd464a21634a738",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_LINT.log"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_REPORT.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:.claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_REPORT.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/NATIVE_ROOT_DERIVATION_REVIEW.md",
+      "original_sha256": "0712451d4aa51e3b1c6426a544cc6ad8e5f53af1b6360db2c5238a17815e3f06",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-NATIVE_ROOT_DERIVATION_REVIEW.md",
+      "final_sha256": "0712451d4aa51e3b1c6426a544cc6ad8e5f53af1b6360db2c5238a17815e3f06"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_NATIVE_COLD_REVIEW.md",
+      "original_sha256": "44eab4c84f7ef00f78d729aaf26337b9043a69178322b2fc8350d080fb680f2f",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_NATIVE_COLD_REVIEW.md",
+      "final_sha256": "44eab4c84f7ef00f78d729aaf26337b9043a69178322b2fc8350d080fb680f2f"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_PORT_RECEIPT.json",
+      "original_sha256": "000864e0d0b9dfa41f2910125dba0035814e6087f2638789c98c8351c7b74bb9",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/ORBITAL_PORT_RECEIPT.json",
+      "final_sha256": "000864e0d0b9dfa41f2910125dba0035814e6087f2638789c98c8351c7b74bb9"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_ROOT_METRIC_REVIEW.md",
+      "original_sha256": "4f2cc1fb408beac40f9cfba36ef5f35bfb713797ad5c9f52fa3865e61172de7a",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_ROOT_METRIC_REVIEW.md",
+      "final_sha256": "4f2cc1fb408beac40f9cfba36ef5f35bfb713797ad5c9f52fa3865e61172de7a"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_SUPPLEMENT_CONTRACT.md",
+      "original_sha256": "25b27f7da1d55710bd4b320e76688ccd34de476d30f0f7784b6d5f16428cfdf7",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_SUPPLEMENT_CONTRACT.md",
+      "final_sha256": "25b27f7da1d55710bd4b320e76688ccd34de476d30f0f7784b6d5f16428cfdf7"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_DERIVATION.md",
+      "original_sha256": "6058464c1123745735e462fbc3b61dd7f786fde8aad4464d922aaf0e60cc1b68",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_DERIVATION.md",
+      "final_sha256": "6058464c1123745735e462fbc3b61dd7f786fde8aad4464d922aaf0e60cc1b68"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_CODE_REVIEW.md",
+      "original_sha256": "a250ed434dbef614624df03b24dc04f7f94f8997db5bccb9341efd27bc332663",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_CODE_REVIEW.md",
+      "final_sha256": "a250ed434dbef614624df03b24dc04f7f94f8997db5bccb9341efd27bc332663"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_IMPORT_REVIEW.md",
+      "original_sha256": "c374e33c2e6875e817915af6db5f0ee9bd19c417ac46228f21cc702da81612a2",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_IMPORT_REVIEW.md",
+      "final_sha256": "c374e33c2e6875e817915af6db5f0ee9bd19c417ac46228f21cc702da81612a2"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_CHECK.json",
+      "original_sha256": "72954b00c9d8fec4219821e703cb13b52e03b8f073cb7843112445230d4858cb",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/native_HAAR_METRIC_CHECK.json",
+      "final_sha256": "72954b00c9d8fec4219821e703cb13b52e03b8f073cb7843112445230d4858cb"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_DERIVATION.md",
+      "original_sha256": "897ce76c72ac66afb73349509baaa4e58a08e92de8d202109fbcefabf25f6708",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_HAAR_METRIC_DERIVATION.md",
+      "final_sha256": "897ce76c72ac66afb73349509baaa4e58a08e92de8d202109fbcefabf25f6708"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_PREREGISTRATION.md",
+      "original_sha256": "0bb57e30c145e0b80edf76fae8e1495ef2edea0224934b62ad7769455b1c3d46",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_PREREGISTRATION.md",
+      "final_sha256": "0bb57e30c145e0b80edf76fae8e1495ef2edea0224934b62ad7769455b1c3d46"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/DERIVATION.md",
+      "original_sha256": "541ec391d4a51b2a6996a5f9b9db2677eb40332f5db9df47b29574a2cc78df58",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-DERIVATION.md",
+      "final_sha256": "541ec391d4a51b2a6996a5f9b9db2677eb40332f5db9df47b29574a2cc78df58"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FAILURES.md",
+      "original_sha256": "c71a0581892bea5accac33806ccfd05634938cf5ee6f69c730eb80cf0effbefc",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-FAILURES.md",
+      "final_sha256": "c71a0581892bea5accac33806ccfd05634938cf5ee6f69c730eb80cf0effbefc"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FREEZE_RECEIPT.json",
+      "original_sha256": "2f5ed8d9fdb357780b5988764d4fd138b0102db1af742f2d9e83287b7bc0298b",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/FREEZE_RECEIPT.json",
+      "final_sha256": "2f5ed8d9fdb357780b5988764d4fd138b0102db1af742f2d9e83287b7bc0298b"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/PREREGISTRATION.md",
+      "original_sha256": "fb1982df5c64bf74cf14df133f2712504ad4f7dad6a4405ccd33c07ad1697ff9",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-PREREGISTRATION.md",
+      "final_sha256": "fb1982df5c64bf74cf14df133f2712504ad4f7dad6a4405ccd33c07ad1697ff9"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check.py",
+      "original_sha256": "39ebf5b54b209ec086123c54105857110739c8c939bdf234e65dc4efe1af399f",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check.py",
+      "final_sha256": "39ebf5b54b209ec086123c54105857110739c8c939bdf234e65dc4efe1af399f"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check_before_symbolic_order_fix.py",
+      "original_sha256": "5c11966784bbf76848c02a41faa666b61b475e8e9bbadd48a6d4cd2e5d86af60",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check_before_symbolic_order_fix.py",
+      "final_sha256": "5c11966784bbf76848c02a41faa666b61b475e8e9bbadd48a6d4cd2e5d86af60"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/result.json",
+      "original_sha256": "e1ea8f549b26e6ae22789457f6188225d1f52e996080f9bea9e4fe322c9e88c8",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/result.json",
+      "final_sha256": "e1ea8f549b26e6ae22789457f6188225d1f52e996080f9bea9e4fe322c9e88c8"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/DERIVATION.md",
+      "original_sha256": "83f22a03157b1b12bfa88dd031f1360df08e344352f2ab87cf1454454b5a2b43",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-DERIVATION.md",
+      "final_sha256": "83f22a03157b1b12bfa88dd031f1360df08e344352f2ab87cf1454454b5a2b43"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/PROVENANCE.md",
+      "original_sha256": "d71357579abb21bbc012eb50fb6850b692f0bf508ce46aa4b927a5d417c28783",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-PROVENANCE.md",
+      "final_sha256": "d71357579abb21bbc012eb50fb6850b692f0bf508ce46aa4b927a5d417c28783"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/ROOT_INDEPENDENT_REVIEWS.md",
+      "original_sha256": "70f5b62b6e6a4426b941bec5c7189d2731357e791d567c6ba63b68b19a065b85",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-ROOT_INDEPENDENT_REVIEWS.md",
+      "final_sha256": "70f5b62b6e6a4426b941bec5c7189d2731357e791d567c6ba63b68b19a065b85"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_sha256": "5b651e81fcb6b6e129c554c26303841745b0bdec27db8e3e45342dfb06d39644",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_sha256": "4f8972c99f4b3b86cf47a430abc242de1219297f9abf49932338560dc0a37bbf"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_sha256": "3e6dc75ff20eb2afb0b0e5017feb9801e2f1f24055c9bd15070c1fea040496cd",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_sha256": "41f0183d5bcab6704c5addbbde117e91ab036511ba05d436b4378cb146470db4"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "a6e2b83d114df9ec2004e6718dfc983aa0aa693d9e345515c0d0d57cd9f3d7ac",
+      "disposition": "superseded topology acknowledgment; coordinator regenerates from final source; no imported audit authority",
+      "recovery": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": "logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt",
+      "original_sha256": "cec9fd80d668383b5a0d1aa05eb18ef4b8311b9b09eae1d4f311a9e287b18a4c",
+      "disposition": "superseded by fresh final cache; original execution preserved at frozen constituent head",
+      "final_path": "logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt",
+      "final_sha256": "5f1c2af43e0fc0ec0e52c323d7f74a53f39fe284358cb1dd1f6cedb79af2fef0"
+    },
+    {
+      "pr": "8020",
+      "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+      "original_path": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+      "original_sha256": "3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+      "final_sha256": "3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ARTIFACT_PLAN.md",
+      "original_sha256": "1b30848e94a459df7396b19189d78b1136cb8df5e7c539b3c285c1818b630122",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "522c34d7eabe30994a2aec83ce6b002d0079897d15e6392d0549e3c736ff8bdf",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "522c34d7eabe30994a2aec83ce6b002d0079897d15e6392d0549e3c736ff8bdf"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "0996f13438ec678294a2831dc6bf1460640300f755fb4fc32596e54c7ddc68a2",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "original_sha256": "77e93850b0b6d5929f15ce4c600a3577126231aa4da37e62b2cd04f8405d2b52",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_READINESS.json",
+      "original_sha256": "7adb30c2d0a34abe53824f3b00d3fbfe6922625397f1a21868af868811ad3f1b",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_STRICT.log",
+      "original_sha256": "db1073c7718af41515f3c982604a546cc336da29f68254bbc3b78c9f986852da",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "original_sha256": "c3c74ce05f9f72a23a91fb8472a3397843bfccabc4b15abd735631dd49bd1ec2",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_VALIDATION.md",
+      "original_sha256": "56e2b761ec86940b73e540db924332ae22336b2db467fbf699de781eaabedb25",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VALIDATION.md",
+      "original_sha256": "0ee4e15cd4bc39c24b2626b3028c049f354bfc344f857c1e5088b719be4a4c2c",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VOCAB_LINT.txt",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FROZEN_PORT_RECEIPT.json",
+      "original_sha256": "f6dfdb6f8988f6656508383faca368577625a806b8489b3baca81572710f9c34",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FULL_PIPELINE.log",
+      "original_sha256": "42477e34a4de72ae7b83054dea1e27fb50801303d112402a3455c9367077f788",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/GOAL.md",
+      "original_sha256": "0d6adc28f01b43df5fde8dd1a549dff493793bd18d92f702633d5ffcc7527ea4",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/GOAL.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/HANDOFF.md",
+      "original_sha256": "d6069e30e72679bcb8e0c5186b594bc626c4c937b26ebcb9735b2975a5a1bed2",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/HANDOFF.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/LITERATURE_BRIDGES.md",
+      "original_sha256": "5fb4cb757b276dcb99b2c76f7f9ff754ef3dd2a97d25b98adffdaf79eae9d9a9",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-LITERATURE_BRIDGES.md",
+      "final_sha256": "5fb4cb757b276dcb99b2c76f7f9ff754ef3dd2a97d25b98adffdaf79eae9d9a9"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/NO_GO_LEDGER.md",
+      "original_sha256": "2fb1eac5c85bdc4770cc1f4fdbedfe9f0b48ff46cc2f2adcbce650fc0c903128",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-NO_GO_LEDGER.md",
+      "final_sha256": "2fb1eac5c85bdc4770cc1f4fdbedfe9f0b48ff46cc2f2adcbce650fc0c903128"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "6686a66b905786c5d9b0ef57a805791e97e6f09632dbd386e6a9e0af736c1fe6",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PROOF_REVIEW.md",
+      "original_sha256": "9798af076de374d1c2dc962467748f07e215f3eb4dfe120305101cf46cecc097",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-PROOF_REVIEW.md",
+      "final_sha256": "9798af076de374d1c2dc962467748f07e215f3eb4dfe120305101cf46cecc097"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PR_BACKLOG.md",
+      "original_sha256": "1ecbbd4ba53413824025fe77544d0f062e38fd2b3626c873fffda6419b15b022",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/PR_BACKLOG.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PR_BODY.md",
+      "original_sha256": "5f097a6fceecb5fd87d0b5095fc412815b6d3a1cff18abb2f639f86819990f9e",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/PR_BODY.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PUBLICATION_RECEIPT.json",
+      "original_sha256": "37cf7689e5d0a8c3eae1caa5e69df7fb28bf349f6acd4dff589e09913528b40d",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_sha256": "c8549bb246bb2096763a5536f4ee68c77543727f2e61f607b211a5eb8700e953",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEW_HISTORY.md",
+      "original_sha256": "bf56c8b3a37b2483eb4535a0888f85c5ab766175caf887bc001e20b5598de382",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-REVIEW_HISTORY.md",
+      "final_sha256": "bf56c8b3a37b2483eb4535a0888f85c5ab766175caf887bc001e20b5598de382"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "original_sha256": "f92afe3dad74b70b0b2406595a98208913a14d564ed4e481b5d2faaac077f835",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_CANONICAL_PORT_REVIEW.md",
+      "final_sha256": "f92afe3dad74b70b0b2406595a98208913a14d564ed4e481b5d2faaac077f835"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "original_sha256": "f3653f75fc97ab7495145ab47d47f5905ca54a94771243d4a46229905d89325f",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_FINAL_PORT_REVIEW.md",
+      "final_sha256": "f3653f75fc97ab7495145ab47d47f5905ca54a94771243d4a46229905d89325f"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROUTE_PORTFOLIO.md",
+      "original_sha256": "50e8d6f9f0d5fa6396b4c54f6bee79ba3407abad610b266a5cf19ac9b71916db",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_FREEZE_RECEIPT.json",
+      "original_sha256": "f6dfdb6f8988f6656508383faca368577625a806b8489b3baca81572710f9c34",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_FREEZE_RECEIPT.json",
+      "final_sha256": "f6dfdb6f8988f6656508383faca368577625a806b8489b3baca81572710f9c34"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_PACK_INDEX.md",
+      "original_sha256": "7ca9225bcc150adc2738579d4f4117a75e9b0671fb5022d9563689ebe55e98a0",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-SCRATCH_PACK_INDEX.md",
+      "final_sha256": "7ca9225bcc150adc2738579d4f4117a75e9b0671fb5022d9563689ebe55e98a0"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_result.json",
+      "original_sha256": "c8a17404ec99d1dcfb3a4b70df928fba6f18402b8e89186778fce94b8f815bb7",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_result.json",
+      "final_sha256": "c8a17404ec99d1dcfb3a4b70df928fba6f18402b8e89186778fce94b8f815bb7"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/STATE.yaml",
+      "original_sha256": "5aa666e5e594aef7bc8e843f57a4d6a8a06dc917b43f531f56147bcfe50510e8",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/STATE.yaml"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/STRICT_LINT.log",
+      "original_sha256": "4aaf71739d347f04d348943c86e05c33ade0930094659797004c1026f2db6dc2",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/STRICT_LINT.log"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/TRACE_GATE.md",
+      "original_sha256": "0d17cc6973e2b01098356231e0ac66503803fcbac01b1c9bb3807e5f41c36ef3",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/TRACE_GATE.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_sha256": "ee49d6a458d80ea4c6c4615b053d89e2cf0f9cce8f1c45cda0d928584bd2a8bd",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_sha256": "035b9eb20a5a817b1f6a055fd3aeb7abde6009e579dd24cdce99ea316f7a4be3",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_sha256": "244a6beae0be897e3ab89ee85d476b63866feea90e15ced4c088bf1e52f226ed",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_sha256": "8c75f0896a2221cc21b6cfb3d2aed0412467199f96b8bd77983266863a1ab06b",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/CERTIFICATE_PREREGISTRATION.md",
+      "original_sha256": "b58dbe53287c11b1557c55e561e09a6ab6bc6caf46be6353b96fd5c4a598cc57",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-CERTIFICATE_PREREGISTRATION.md",
+      "final_sha256": "b58dbe53287c11b1557c55e561e09a6ab6bc6caf46be6353b96fd5c4a598cc57"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION.md",
+      "original_sha256": "ea14e01aa46f135f41b7b796c1df81fe3a18b9458e8cf068a00b8345be259cb0",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION.md",
+      "final_sha256": "ea14e01aa46f135f41b7b796c1df81fe3a18b9458e8cf068a00b8345be259cb0"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION_FIRST_FREEZE_095c3f80.md",
+      "original_sha256": "095c3f80c6a78e304972f3e1dfb1f56469d83fd7edc3054b70f00bb7ae979ced",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION_FIRST_FREEZE_095c3f80.md",
+      "final_sha256": "095c3f80c6a78e304972f3e1dfb1f56469d83fd7edc3054b70f00bb7ae979ced"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/LITERATURE_PROVENANCE.md",
+      "original_sha256": "2b1c7e75eb2bb61a6d892a477a5dd960a2bca751a04684b45e17c1cc65589919",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-LITERATURE_PROVENANCE.md",
+      "final_sha256": "2b1c7e75eb2bb61a6d892a477a5dd960a2bca751a04684b45e17c1cc65589919"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/NATIVE_COLD_REVIEW.md",
+      "original_sha256": "4188cf3f4c85ca72c2ec96c16ab3d8bfcf6496ddeb182d13d517d063b73d3b8d",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-NATIVE_COLD_REVIEW.md",
+      "final_sha256": "4188cf3f4c85ca72c2ec96c16ab3d8bfcf6496ddeb182d13d517d063b73d3b8d"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/PREREGISTRATION.md",
+      "original_sha256": "002cfcef29b3a496b98041d1b97128328c6ddcb009145ecf12e6f31a823ef065",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-PREREGISTRATION.md",
+      "final_sha256": "002cfcef29b3a496b98041d1b97128328c6ddcb009145ecf12e6f31a823ef065"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_COLD_REVIEW.md",
+      "original_sha256": "8b35869b62af0800231e6ffd48069365d7889164237de898e804c1bb523edd98",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_COLD_REVIEW.md",
+      "final_sha256": "8b35869b62af0800231e6ffd48069365d7889164237de898e804c1bb523edd98"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_INDEPENDENT_DERIVATION.md",
+      "original_sha256": "2984f2e9a4beff97083b47c55c2265eb6b67918103c830b32baefacb600de5a2",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_INDEPENDENT_DERIVATION.md",
+      "final_sha256": "2984f2e9a4beff97083b47c55c2265eb6b67918103c830b32baefacb600de5a2"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/validated_claims_before_generated_cleanup.json",
+      "original_sha256": "491716138722c1e7298192cf36dff58359a61b8c2f074c1f10e9d988655f78dd",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_sha256": "fd32257bb223c0868d7baf5398e141040215f2f9965233aa4b8bc08bae128bc6",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:.claude/science/physics-loops/compact-hamiltonian-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "afa89dc6ce20f6ccfef0587572e18ef22b2af32585e8fbfbd4f18c9545513226",
+      "disposition": "superseded topology acknowledgment; coordinator regenerates from final source; no imported audit authority",
+      "recovery": "44964a9b72bccb9ae95d5d9b277007910ee86430:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": "logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt",
+      "original_sha256": "34f0560b2e7572f6fbab2835959ab41e4d65f7a5886ef2d9002e0b95a4c7e729",
+      "disposition": "superseded by fresh final cache; original execution preserved at frozen constituent head",
+      "final_path": "logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt",
+      "final_sha256": "2538ba61810ce822205305a4bb353b236a4c699e87a7556a685a5377b85ff5a2"
+    },
+    {
+      "pr": "8021",
+      "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+      "original_path": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+      "original_sha256": "c4ba66af265f24ea4090186e278f2588a378d16fca3469f0cc2a24f96f076b00",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+      "final_sha256": "f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_RAW.json",
+      "original_sha256": "4ef3cdddf6334718496dc5c56e28a99e4396aae7d3b1c1929c11d6e6508bcb4f",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_RAW.json",
+      "final_sha256": "4ef3cdddf6334718496dc5c56e28a99e4396aae7d3b1c1929c11d6e6508bcb4f"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_STDOUT.txt",
+      "original_sha256": "4de32374a665002154823c80c58a4998592b524c3fe342b751bc80c6877674c8",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_STDOUT.txt",
+      "final_sha256": "4de32374a665002154823c80c58a4998592b524c3fe342b751bc80c6877674c8"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ARTIFACT_PLAN.md",
+      "original_sha256": "98f3e7cc75c45388fe4c448286422200913ff076b056a869ec4d169552bc0923",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "0ec557a92833b7382fdda2983a98d24eff3d739e2f7d2d9a2e1cb4b2b6abb2bf",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "0ec557a92833b7382fdda2983a98d24eff3d739e2f7d2d9a2e1cb4b2b6abb2bf"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "dacbbaf305bcac45e2a6e8de22f1cfc14568de4d130ddc127528ca285406d221",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/EXECUTION_RECEIPT.json",
+      "original_sha256": "f40e213cc74cbc467812ba818c6f01e755b9d39a3be5692b6d162e780465fd28",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/EXECUTION_RECEIPT.json",
+      "final_sha256": "f40e213cc74cbc467812ba818c6f01e755b9d39a3be5692b6d162e780465fd28"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "original_sha256": "30ad1f040ed555bee5af4a45ad4c2c70f8b145b3bca300946b44817c6a7c5528",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_READINESS.json",
+      "original_sha256": "67e5f34e690ae8ea5be9c652ff786791a96e555e1653a50d66faa689e6703385",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_STRICT.log",
+      "original_sha256": "8f9f9b9d8115486c1d94e9b53a0f31133941cae83fabab50500d54c064db12a4",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "original_sha256": "25d7fb8924106efc383b60291048339e9ea0ad9e46dbe36022d5195160ea1979",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_VALIDATION.md",
+      "original_sha256": "09dafdfec4a9690825d4bc655be5facbd1401b273e5f1979404812f2ef0a837e",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VALIDATION.md",
+      "original_sha256": "2921b93205e8ddde0cfaadd07c7e9ebd2a3b46e2879a9a3582327f5f6de38b92",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VOCAB_LINT.txt",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FROZEN_PORT_RECEIPT.json",
+      "original_sha256": "c3906d264c1770adfd3ba32750ade57ac21478348d430523eaadab5792668a46",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/FULL_PIPELINE.log",
+      "original_sha256": "e7c36441ea283d48e15ae2cafc65aed1d902f9cfef5e26dd6a75d99ddbb91145",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/GOAL.md",
+      "original_sha256": "a6871c2cc4c6e25abc3d345318816a3188bedac40d4407314dbce8b7eec666cf",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/GOAL.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/HANDOFF.md",
+      "original_sha256": "d48d9003551a03126de9f54c8af2326a5d9e0cddaea21d695f28922472341741",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/HANDOFF.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/HASHES.json",
+      "original_sha256": "bdba907bdf830ac321a1aea21dd167e3ac97b3eeced6d4ba1d405cc670abad6e",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/HASHES.json",
+      "final_sha256": "bdba907bdf830ac321a1aea21dd167e3ac97b3eeced6d4ba1d405cc670abad6e"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LITERATURE_BRIDGES.md",
+      "original_sha256": "54997d5073ec37d2536bee211cbe6b5285ac93740c0596681074c02cd97f88d6",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-LITERATURE_BRIDGES.md",
+      "final_sha256": "54997d5073ec37d2536bee211cbe6b5285ac93740c0596681074c02cd97f88d6"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_RAW.json",
+      "original_sha256": "b414ff4b8c07fe07706f8b39b0d00269da676cd7a3382b9640d5f22619744a3a",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_RAW.json",
+      "final_sha256": "b414ff4b8c07fe07706f8b39b0d00269da676cd7a3382b9640d5f22619744a3a"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_STDOUT.txt",
+      "original_sha256": "fd63ace822b58ee12a8ab22dffcb987e96864736d6cdba021c43866f37e3a5d7",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_STDOUT.txt",
+      "final_sha256": "fd63ace822b58ee12a8ab22dffcb987e96864736d6cdba021c43866f37e3a5d7"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/N1_N8.md",
+      "original_sha256": "35319ed6dafdfb411e9796857ade4f5033f26de31beee719339cdd289bc4a406",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-N1_N8.md",
+      "final_sha256": "35319ed6dafdfb411e9796857ade4f5033f26de31beee719339cdd289bc4a406"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/NO_GO_LEDGER.md",
+      "original_sha256": "e9d5718810480d8cc3319865b3602e96f695cf5930fb2197c62f08a7f70aeeb7",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-NO_GO_LEDGER.md",
+      "final_sha256": "e9d5718810480d8cc3319865b3602e96f695cf5930fb2197c62f08a7f70aeeb7"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "ddd7b6fe13ff40eb6f475e6c82c838f08785005b139947fb4976da4ddf284aac",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ORBITAL_GAP_REVIEW.md",
+      "original_sha256": "0172353ae7c52fbd736f7343606484aa06392e736c679f7e4120e9575ac24aa9",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ORBITAL_GAP_REVIEW.md",
+      "final_sha256": "0172353ae7c52fbd736f7343606484aa06392e736c679f7e4120e9575ac24aa9"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PACK_INDEX.md",
+      "original_sha256": "d97784142a1cffb43c7c05e7b646968bf0c002a46e8ad8f6a7df84ebcaefa0cf",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-PACK_INDEX.md",
+      "final_sha256": "d97784142a1cffb43c7c05e7b646968bf0c002a46e8ad8f6a7df84ebcaefa0cf"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PORT_RECEIPT.json",
+      "original_sha256": "812a2c1cf0ff28adc98ae82bbf70f2872713c848465978d66d82f208f06e3512",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/PORT_RECEIPT.json",
+      "final_sha256": "812a2c1cf0ff28adc98ae82bbf70f2872713c848465978d66d82f208f06e3512"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PR_BACKLOG.md",
+      "original_sha256": "2f7cd2b934115957fe203687ae73976ffac70e50235376dca962054199807ef0",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/PR_BACKLOG.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PR_BODY.md",
+      "original_sha256": "f4061e233cfbf262f79093c97098e99e872242b143ddf56c797aca57cba74f1c",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/PR_BODY.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PUBLICATION_RECEIPT.json",
+      "original_sha256": "62c4b51b86172c5ac910ad40404744a658a365946ccde80727c94018aab9f666",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/QUEUE.md",
+      "original_sha256": "15b90006219b72543dc110f08d75bfa279a6a431744407637bbe524c6c8155ef",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/QUEUE.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/REPORTING_REPAIR.md",
+      "original_sha256": "ee16b470c83e66ad0326fd7969f25019c1e5a3c82fec6df66150389f9ecb70b3",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REPORTING_REPAIR.md",
+      "final_sha256": "ee16b470c83e66ad0326fd7969f25019c1e5a3c82fec6df66150389f9ecb70b3"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_sha256": "c1173bc225c2cc55555aad00408b7f48ba1b9c4bf3a77e10f7d11373ca4557cf",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEW_HISTORY.md",
+      "original_sha256": "9dfacbc4e927cbd801cc1de4e138602995265412f46ab230e3f84a5254de1472",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REVIEW_HISTORY.md",
+      "final_sha256": "9dfacbc4e927cbd801cc1de4e138602995265412f46ab230e3f84a5254de1472"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_ALL_COUPLING_REVIEW.md",
+      "original_sha256": "f034e5bde228a1bc270299a0705ff00949906bfd22ea2f07ba4e74c4654abdb8",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_ALL_COUPLING_REVIEW.md",
+      "final_sha256": "f034e5bde228a1bc270299a0705ff00949906bfd22ea2f07ba4e74c4654abdb8"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "original_sha256": "c51dc1bcefdc6a70b284bd33c38fdafb5870d84e5db00a732ead8c7fbf0cbed7",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_CANONICAL_PORT_REVIEW.md",
+      "final_sha256": "c51dc1bcefdc6a70b284bd33c38fdafb5870d84e5db00a732ead8c7fbf0cbed7"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_LOW_GAP_REVIEW.md",
+      "original_sha256": "55096a752b9f5aea416f0df9021c3a5cc33a1067e74705539b84a81cb4043a33",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_LOW_GAP_REVIEW.md",
+      "final_sha256": "55096a752b9f5aea416f0df9021c3a5cc33a1067e74705539b84a81cb4043a33"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROUTE_PORTFOLIO.md",
+      "original_sha256": "1c7acd1f055a161c6db05280c56c1a87647682bc7b176f9e632844845f419a1f",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/STATE.yaml",
+      "original_sha256": "913330a05156cbf8961c32493e6c5185f6dfdf8fc2390d38b7cb8327cc186ae9",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/STATE.yaml"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/STATUS.md",
+      "original_sha256": "3e4dab1154f6f2cad38b14f3fdc8b03ee9e243dbf24f718c1d3d2dafddaecdce",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/STATUS.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/STRICT_LINT.log",
+      "original_sha256": "bd31011a3018b93c6f77481c3dd99149788442ac00e8f9e1de411a40b27fae25",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/STRICT_LINT.log"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/TRACE_GATE.md",
+      "original_sha256": "bbd7067e16b3ad7fe6ad595acdac981be831d4f0f4ace65516338eb3141a39a8",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/TRACE_GATE.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_sha256": "a4663fe0c06d66023e5b4cae1d5cf3486deb06c456504cadef003043d7bb09e2",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_sha256": "d3a06481a930b1f7d24fe13a55f2d382039fab1ff8d9c35b5741497fcac38a42",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_sha256": "e1de1ffd4ecd53edea67dd8e72e3856758259a6012f75c975481a85f9081a2aa",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_sha256": "a7d12dac252a25ad140cc61d48652848dbdd0ceac650d4d244138bde2f9feee7",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/DERIVATION.md",
+      "original_sha256": "dc8bbdbf39a8fab146aaaa2bc312195f1e85491c1c21cfe2c734726149459414",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-DERIVATION.md",
+      "final_sha256": "dc8bbdbf39a8fab146aaaa2bc312195f1e85491c1c21cfe2c734726149459414"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/HASHES.json",
+      "original_sha256": "a1503382a0c5524282512e6ab063993864aa4cef23d353f55b444c504bf4e9de",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/HASHES.json",
+      "final_sha256": "a1503382a0c5524282512e6ab063993864aa4cef23d353f55b444c504bf4e9de"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/PREREGISTRATION.md",
+      "original_sha256": "6b1e392ead8d7ddd846de55c4c62b50b7b39f8070d0dff6d6f2de67fdbd857cd",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-PREREGISTRATION.md",
+      "final_sha256": "6b1e392ead8d7ddd846de55c4c62b50b7b39f8070d0dff6d6f2de67fdbd857cd"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/check.py",
+      "original_sha256": "159a7fce75ee4df506cd209f37910056df7a3f0c4e82b548df0504d491bdc971",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/check.py",
+      "final_sha256": "159a7fce75ee4df506cd209f37910056df7a3f0c4e82b548df0504d491bdc971"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/result.json",
+      "original_sha256": "db93522587969775a594c86f6a70ed4530b19c716ca675b43b3ba99e1ca6cef8",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/result.json",
+      "final_sha256": "db93522587969775a594c86f6a70ed4530b19c716ca675b43b3ba99e1ca6cef8"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/DERIVATION.md",
+      "original_sha256": "fa74bb78510e060b54bb114a82d539a34339ee6d2281179d246cb5c3850de594",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-DERIVATION.md",
+      "final_sha256": "fa74bb78510e060b54bb114a82d539a34339ee6d2281179d246cb5c3850de594"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/HASHES.json",
+      "original_sha256": "f8b1e9210d8e87e3db4924add6dba561600a77aa604fb6c6c3af54c5b4c38b56",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/HASHES.json",
+      "final_sha256": "f8b1e9210d8e87e3db4924add6dba561600a77aa604fb6c6c3af54c5b4c38b56"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/PREREGISTRATION.md",
+      "original_sha256": "76201ebe6fa298c690284fd75ebbe4dee92c43f5a77840a170b4b35a5a90cee8",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-PREREGISTRATION.md",
+      "final_sha256": "76201ebe6fa298c690284fd75ebbe4dee92c43f5a77840a170b4b35a5a90cee8"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/check.py",
+      "original_sha256": "2b0a00d1242c51e4e6d963a04c701c2e938ec277cc65ea4f869eddc4c6e911a9",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/check.py",
+      "final_sha256": "2b0a00d1242c51e4e6d963a04c701c2e938ec277cc65ea4f869eddc4c6e911a9"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/result.json",
+      "original_sha256": "116a95673e37bcf01db98a7bf4759fb7a1cabf1acd7554a1b8b1f10a54f4172d",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/result.json",
+      "final_sha256": "116a95673e37bcf01db98a7bf4759fb7a1cabf1acd7554a1b8b1f10a54f4172d"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py",
+      "original_sha256": "c6f581ed360fc42871ff976558d389e7e422f1e6762e99840bf8d4e6b5aeb48d",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py",
+      "final_sha256": "c6f581ed360fc42871ff976558d389e7e422f1e6762e99840bf8d4e6b5aeb48d"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/PORT_RECEIPT.json",
+      "original_sha256": "d525323c8165c738c3895ad950bc5500897ab2d097ee479bb0e487288e37862b",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/PORT_RECEIPT.json",
+      "final_sha256": "d525323c8165c738c3895ad950bc5500897ab2d097ee479bb0e487288e37862b"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "original_sha256": "2e0ab6d9eeb24835ef52021fed16d96932920f8ec83529d9ed8d7772795895d8",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "final_sha256": "2e0ab6d9eeb24835ef52021fed16d96932920f8ec83529d9ed8d7772795895d8"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "original_sha256": "3a4796a116d7b5c6c4a6a1f4be75a45d54b21e88e40ad3182af98ce1822a23ed",
+      "disposition": "preserved exact historical evidence; not current audit authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "final_sha256": "3a4796a116d7b5c6c4a6a1f4be75a45d54b21e88e40ad3182af98ce1822a23ed"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/validated_claims_before_generated_cleanup.json",
+      "original_sha256": "d1b396e1544a1874040724b574a71d6091d94e1aa04a895110cf10c865a410dc",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_sha256": "4cc771e35764067c20c6523008bb86e110f67672f90c4cb9e780f77f68cede4e",
+      "disposition": "superseded historical operational planning, publication or generated validation receipt; no unique mathematical claim omitted",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:.claude/science/physics-loops/compact-physical-gap-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_sha256": "e42e8bd38e71c86ae485dbe50585b8c6a2940e349c848a4ed30bcfd47a114c70",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_sha256": "e42e8bd38e71c86ae485dbe50585b8c6a2940e349c848a4ed30bcfd47a114c70"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "final_sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "4b59a554639be3bc9465a95c816f515c685bbea1000b8993b836c6f746d553b7",
+      "disposition": "superseded topology acknowledgment; coordinator regenerates from final source; no imported audit authority",
+      "recovery": "cf4eeb62cde4f3a812ae85ab1660232bc468a050:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt",
+      "original_sha256": "7ca2854119dcd6504fff175d296aec3b1012abf123d483371948b3c14f2b2f0b",
+      "disposition": "superseded by fresh final cache; original execution preserved at frozen constituent head",
+      "final_path": "logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt",
+      "final_sha256": "6a048bd4cb6cb34a4b45ba2312cd18bab93e4adcdb55e85679476c1dd64693e9"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt",
+      "original_sha256": "cf8c89037bfa15b660101f787af6173ac27ec1c9335b3714ae674c512d8b1b1e",
+      "disposition": "superseded by fresh final cache; original execution preserved at frozen constituent head",
+      "final_path": "logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt",
+      "final_sha256": "18a58ac25fac069e371a3a2b962f1afa9aa45a54e2fefccc98a857c6a67e888e"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "original_sha256": "0a3fd8b67e52d5e4402757394cc6f0962177c4423318fdcc0f7989a449c35f91",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "final_sha256": "9fd599c5040f137ede2ffcf5d219534b8673c9deda086d784b90753b587178ca"
+    },
+    {
+      "pr": "8022",
+      "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "original_path": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "original_sha256": "a044cc86420444dded3da0d9a1757f0218a70f44bc158c3b735953337ff891e4",
+      "disposition": "accepted exact bounded mathematics; only archive-link or canonical stdout formatting changes",
+      "final_path": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "final_sha256": "0cd413d2737d0cc9ee7f4000d682588138b5ff3d2c1de693c854455b8e6129eb"
+    }
+  ],
+  "original_delta_entries": 198,
+  "archive_files": 84,
+  "coherence": "one full finite cube carrier: exact geometry/actual simultaneous Gaussian transfer, separate compact interacting scaling, physical low spectrum and all-coupling finite-gap certificates. Distinct scalings explicit.",
+  "inherited_parent": [
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "ff1ab34b3c09bc74dcb3d145532590efd383d67f",
+      "sha256": "c92586ae507a05f6cf0a38a304951f56c0f9af796ee5b3f64d18e6dd914c11cb",
+      "same_current_bytes": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "51c5d2f9f352ad8c867036bf604198cee5c7bcf3",
+      "sha256": "21eafab0abb8168e245869b8ffcb0f41823039e67a8843a60877d77f9ce98f32",
+      "same_current_bytes": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "blob": "455aa6bbed441b4ee408204486228312418ff00d",
+      "sha256": "6323745b5142cae7d054dc5be6eed6a8706abedfcaf616d9a108b3888121ccaf",
+      "same_current_bytes": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.txt",
+      "blob": "9218e7c019602f993a3973230b8e3da7d9d56e14",
+      "sha256": "8aea72a12cd0aa943c5a1df33162a50baa0aee05f20078f506447822ed2fe985",
+      "same_current_bytes": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.txt",
+      "blob": "51dcdd637eadb1245540b46a8de25124e5725ffc",
+      "sha256": "8283c86ae3eab5f8d768d17a2304dcd9f64c34dd1312d42f8eec3f56672b6661",
+      "same_current_bytes": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.txt",
+      "blob": "2a190f06b8499827abe396836d8bdf22716aebb0",
+      "sha256": "933e412368512f1e5f60b7af67454e5eccaced29c5aba6bedfccc83311a8496c",
+      "same_current_bytes": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+      "blob": "f1f73eb82e53f28a82df40888ba32cbe04081a2e",
+      "sha256": "ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5",
+      "same_current_bytes": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py",
+      "blob": "5d2458f3292e25f0526257b43c39b0b3cc492faf",
+      "sha256": "6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4",
+      "same_current_bytes": true
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+      "blob": "21c99d55795a514a042941ad650635ea0ea4ad98",
+      "sha256": "d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a",
+      "same_current_bytes": true
+    }
+  ],
+  "source_coverage": {
+    "notes": "all five complete canonical proof bodies read (687 original lines); all mathematical steps and supplied-parameter boundaries checked",
+    "runners": "all four complete originals read (306 lines); four JSON executions11/18/31/31",
+    "historical_unique_proofs": "native uniform and orbital geometry proofs compared completely against canonical; root-independent geometry read; independent Sobolev/Dyson proof read; first-freeze proof diff read; original gap proofs byteincluded in canonical. Preregistration, failed symbolic ordering and reporting repair retained explicitly.",
+    "historical_author_reviews": "source-bound historical evidence preserved, not acceptance authority"
+  },
+  "claims": {
+    "physical_geometry": "exact onto SU3^5/globalAd identification and full-T gluing; cycle metric det1/384, spatial4\u00d73+6\u00d72, singlet energy4/multiplicity6 and absolute Haar factor",
+    "simultaneous_limit": "uniform k^49/beta^1/2 HS/operator estimate, actual norm stabilization beta>=Ck^98, n204/n2 sequence with n^-3 telescoping and n^-2 clock; unspecified constants/onset",
+    "compact_hamiltonian": "strong full L2 product limit for supplied K+V; graph-domain/right-input-cutoff rate only, no allL2 norm rate",
+    "low_gap": "all-label Gauss freegap16/a (multiplicity12), next24/a multiplicity32; Haar moments; Ritz bound positiveav<35/13; local slopes with no persistent interacting multiplicity",
+    "all_gap": "all-finite-v fixed-cube bound16/a*3^-24*exp(-24av), heat minorization/positive ground/weightedphysicalPoincare; no volume uniformity"
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "finding": "84 unique proof/evidence/history records omitted including canonical brokenlinks",
+      "resolution": "exact historical archive and unique Markdown names plus scoped README links",
+      "status": "resolved and independently confirmed in final staged tree"
+    },
+    {
+      "id": "R2",
+      "finding": "three primary stdout total summaries violate canonical PASS/FAIL contract",
+      "resolution": "printing-only corrections preserving31/18/11 named checks and five scope lines",
+      "status": "resolved and independently confirmed in final staged tree"
+    },
+    {
+      "id": "R3",
+      "finding": "retained original geometry cache input hash stale against current parent",
+      "resolution": "fresh unchanged geometry execution/cache against actual current parent",
+      "status": "resolved and independently confirmed in final staged tree"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "scope": "framework authority only; no physical Wilson/time/clock derivation claimed",
+      "prior_complete_read_unchanged": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "scope": "framework authority only; no physical Wilson/time/clock derivation claimed",
+      "prior_complete_read_unchanged": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "scope": "framework authority only; no physical Wilson/time/clock derivation claimed",
+      "prior_complete_read_unchanged": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "scope": "framework authority only; no physical Wilson/time/clock derivation claimed",
+      "prior_complete_read_unchanged": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "scope": "framework authority only; no physical Wilson/time/clock derivation claimed",
+      "prior_complete_read_unchanged": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "scope": "framework authority only; no physical Wilson/time/clock derivation claimed",
+      "prior_complete_read_unchanged": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_CHARACTER_MIXING_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a712309322ca21a95d9ec78ccde73cb09953604037c76e3e5fffa68a546985e2",
+      "scope": "actual full-T definition/Wilson positivity and Haar normalization; earlier compressed-source geometry not imported"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "c92586ae507a05f6cf0a38a304951f56c0f9af796ee5b3f64d18e6dd914c11cb",
+      "scope": "actual full-T definition/Wilson positivity and Haar normalization; earlier compressed-source geometry not imported"
+    }
+  ],
+  "runtime_input_closure": "geometry reads exactly character-mixing source and self; AUDIT_INPUT_PATHS correctly lists source. Other3 runners selfcontained. SymPy stdlib only; no undiscovered runpy/helpers.",
+  "checks": {
+    "original_executions": [
+      {
+        "path": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+        "exit": 0,
+        "seconds": 0.33261512499302626,
+        "TOTAL": 11,
+        "source_sha256": "0a3fd8b67e52d5e4402757394cc6f0962177c4423318fdcc0f7989a449c35f91"
+      },
+      {
+        "path": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+        "exit": 0,
+        "seconds": 0.2660584159893915,
+        "TOTAL": 18,
+        "source_sha256": "a044cc86420444dded3da0d9a1757f0218a70f44bc158c3b735953337ff891e4"
+      },
+      {
+        "path": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+        "exit": 0,
+        "seconds": 0.19655987503938377,
+        "TOTAL": 31,
+        "source_sha256": "c4ba66af265f24ea4090186e278f2588a378d16fca3469f0cc2a24f96f076b00"
+      },
+      {
+        "path": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+        "exit": 0,
+        "seconds": 0.7172864999156445,
+        "TOTAL": 31,
+        "source_sha256": "3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5"
+      }
+    ],
+    "independent_math": {
+      "spanning_tree_cofactor": 384,
+      "dual_spectrum": {
+        "0": 1,
+        "4": 3,
+        "6": 2
+      },
+      "support_histogram": {
+        "4": 6,
+        "6": 16,
+        "7": 12,
+        "8": 33,
+        "9": 52,
+        "10": 42,
+        "11": 12,
+        "12": 1
+      },
+      "SU3_Weyl_constant_term_moments": [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "Ritz_crossing": "8*v*(13*a*v - 35)/(3*a)",
+      "heat_majorant": "889/2187",
+      "gaussian_absolute_factor_verified": true,
+      "uniform_power_budget": {
+        "partition_beta_threshold_k": 50,
+        "normalization_beta_threshold_k": 98,
+        "k_n_power": 2,
+        "beta_n_power": 204,
+        "telescope_power": -3,
+        "clock_error_power": -2
+      },
+      "scope": "Independent algebra plus manual analytic proof/domain read; no numerical proof of uniform constants"
+    },
+    "independent_check_repair": "SymPy radical simplification initially did not prove zero; exact square identity and positivity resolved, original failure retained in session. No science failure or target modification.",
+    "type_extraction": "all five bounded_theorem",
+    "external_provenance": "primary abstracts for Kogut\u2013Susskind1975,Creutz1977 and arXiv0909.2394 read; historical context only, no external theorem supplies proof gap",
+    "all84archive_hashes_match": true,
+    "math_AST_identical_except_prints": true,
+    "archive_unique_MD_basenames": true,
+    "archive_README_links_resolve": true,
+    "evidence_hashes": {
+      "check8022/inherited-parent-confirmation.json": "58a8b24adcb0a55648d279db285da0ffccd1b22ee5ffad91d03588316f4c705e",
+      "check8022/write_review.py": "6830694059d85a2b328fecf7c0c3be370916ac9dd0a914f9d940fdfca4363a7d",
+      "check8022/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.json": "020b69a0f4f6e483839d3b46b73f0ca59b8a9d8cd9d4e08cd086e828cfb1cd25",
+      "check8022/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.json": "b7451e34a70c79168cd1ea6a4311df0bad23d2a68574ae3101a759c1eb9cdaf7",
+      "check8022/original-execution.json": "c99193a01fb450cd349d11ede1261b3431543eec5dfd2d51c3a1483c67209e21",
+      "check8022/required-archive.json": "af7ecb328960a7a60675028d9467bb088ce620c6327e4c490489d61e48e7958d",
+      "check8022/finalize_review.py": "037a335afe22e6c0d2526a7ddec821fd276117aec0a59b8210c2b15a7fbe38b5",
+      "check8022/constituents.json": "a47fedfbe0f72dd3da371844749ab8e7a18da778b7ca9f6ec5fc7c8e9295683d",
+      "check8022/independent_math.py": "be10bf5c94d04e375250500f643da3b5628dd29f50d1b674a7dc88062c01fe32",
+      "check8022/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.json": "fa5ef1cc128d1720e7138e1309097c7a931e4d71e6fc5c3969a3f5c2de12df25",
+      "check8022/independent-math.json": "4dc6e47a2e38e3b2a5cbf3b981b21e5a3ee55772ebbbc13370fc2b840baf858a",
+      "check8022/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.json": "713007239882a6b35d375718bacb5f499d0d16018db04ed7ada4d9f058e732e6"
+    }
+  },
+  "current_main_preservation": "all13 original source additions absent in main; inherited9 reviewed8016 files exact unchanged; no main source deletion",
+  "full_pipeline_count": 0,
+  "audit_actions": 0,
+  "reviewer_source_edits": 0,
+  "staged_tree": "d0c64c4c50b2669e0aaaa6a4b4226a9c0fb2886f",
+  "final_files": [
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "e42e8bd38e71c86ae485dbe50585b8c6a2940e349c848a4ed30bcfd47a114c70",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "4f8972c99f4b3b86cf47a430abc242de1219297f9abf49932338560dc0a37bbf",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "41f0183d5bcab6704c5addbbde117e91ab036511ba05d436b4378cb146470db4",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/CANONICAL_LIVE_RESULT.json",
+      "sha256": "9396fd241ded9880375b7052d6a7358d9573103c996b976856e60a1230499712",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/LIVE_SCIENTIFIC_COMPARISON.json",
+      "sha256": "be90cb67407dd6d95d10af0056b02b36213215e41ce86bd92c868f045946393b",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_HASHES.json",
+      "sha256": "4300d1db743c326c5275bd163724df4f9d01378c558bb1e577694a1ededfc87f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_PORT_RECEIPT.json",
+      "sha256": "76a1850dd92b6dd8b4221e7d1b574122f6631db9b9b03708503c5173f6ba6895",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_helper.json",
+      "sha256": "845e3f0489cc4fdc819cecd30ac6fefe4b32127478a30b38b92bb84b1f898ad0",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/ORBITAL_PORT_RECEIPT.json",
+      "sha256": "000864e0d0b9dfa41f2910125dba0035814e6087f2638789c98c8351c7b74bb9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/native_HAAR_METRIC_CHECK.json",
+      "sha256": "72954b00c9d8fec4219821e703cb13b52e03b8f073cb7843112445230d4858cb",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/FREEZE_RECEIPT.json",
+      "sha256": "2f5ed8d9fdb357780b5988764d4fd138b0102db1af742f2d9e83287b7bc0298b",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check.py",
+      "sha256": "39ebf5b54b209ec086123c54105857110739c8c939bdf234e65dc4efe1af399f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check_before_symbolic_order_fix.py",
+      "sha256": "5c11966784bbf76848c02a41faa666b61b475e8e9bbadd48a6d4cd2e5d86af60",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-DERIVATION.md",
+      "sha256": "541ec391d4a51b2a6996a5f9b9db2677eb40332f5db9df47b29574a2cc78df58",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-FAILURES.md",
+      "sha256": "c71a0581892bea5accac33806ccfd05634938cf5ee6f69c730eb80cf0effbefc",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-PREREGISTRATION.md",
+      "sha256": "fb1982df5c64bf74cf14df133f2712504ad4f7dad6a4405ccd33c07ad1697ff9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/result.json",
+      "sha256": "e1ea8f549b26e6ae22789457f6188225d1f52e996080f9bea9e4fe322c9e88c8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-NATIVE_ROOT_DERIVATION_REVIEW.md",
+      "sha256": "0712451d4aa51e3b1c6426a544cc6ad8e5f53af1b6360db2c5238a17815e3f06",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_NATIVE_COLD_REVIEW.md",
+      "sha256": "44eab4c84f7ef00f78d729aaf26337b9043a69178322b2fc8350d080fb680f2f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_ROOT_METRIC_REVIEW.md",
+      "sha256": "4f2cc1fb408beac40f9cfba36ef5f35bfb713797ad5c9f52fa3865e61172de7a",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_SUPPLEMENT_CONTRACT.md",
+      "sha256": "25b27f7da1d55710bd4b320e76688ccd34de476d30f0f7784b6d5f16428cfdf7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_DERIVATION.md",
+      "sha256": "6058464c1123745735e462fbc3b61dd7f786fde8aad4464d922aaf0e60cc1b68",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_CODE_REVIEW.md",
+      "sha256": "a250ed434dbef614624df03b24dc04f7f94f8997db5bccb9341efd27bc332663",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_IMPORT_REVIEW.md",
+      "sha256": "c374e33c2e6875e817915af6db5f0ee9bd19c417ac46228f21cc702da81612a2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_HAAR_METRIC_DERIVATION.md",
+      "sha256": "897ce76c72ac66afb73349509baaa4e58a08e92de8d202109fbcefabf25f6708",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_PREREGISTRATION.md",
+      "sha256": "0bb57e30c145e0b80edf76fae8e1495ef2edea0224934b62ad7769455b1c3d46",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-DERIVATION.md",
+      "sha256": "83f22a03157b1b12bfa88dd031f1360df08e344352f2ab87cf1454454b5a2b43",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-PROVENANCE.md",
+      "sha256": "d71357579abb21bbc012eb50fb6850b692f0bf508ce46aa4b927a5d417c28783",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-ROOT_INDEPENDENT_REVIEWS.md",
+      "sha256": "70f5b62b6e6a4426b941bec5c7189d2731357e791d567c6ba63b68b19a065b85",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "d150b30104aa22b8cc138eea429d5998a1660a074323ce2e2c4858ec346b9769",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-LITERATURE_BRIDGES.md",
+      "sha256": "0b45e7de9fe21dbedc9d509fe5066e5659ab99351b1a67a16c7cb95cff7c21ad",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "837d43c86963fcd64c9cfd6c78dc7a4a6004330661aa411285ef81dc487f5e75",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_LEDGER.md",
+      "sha256": "7cc416cb28431351fcb9dfc2ca72d708b5b6315e2df76a38b43fb777226acbfa",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-PROOF_REVIEW.md",
+      "sha256": "cb3546a694baba794642eb87d695a27eb7c53af5e1885763757a81a81985b8b4",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-REVIEW_HISTORY.md",
+      "sha256": "8fe4e53c15b7141649ce184427542b7b9f39fb63f61261d6bcbd5db7e5e9753e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ROOT_FINAL_PORT_REVIEW.md",
+      "sha256": "858f1332d073799a2585c0d5dc473c50aa34b3fb17d9c889cde1f2ac8c45c3c6",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-SCRATCH_PACK_INDEX.md",
+      "sha256": "215363d8cb2068f441d0b902b7b3cf2c747ba6ce4d7c7f55103940b2c6301455",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_FREEZE_RECEIPT.json",
+      "sha256": "f6dfdb6f8988f6656508383faca368577625a806b8489b3baca81572710f9c34",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_result.json",
+      "sha256": "c8a17404ec99d1dcfb3a4b70df928fba6f18402b8e89186778fce94b8f815bb7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-CERTIFICATE_PREREGISTRATION.md",
+      "sha256": "b58dbe53287c11b1557c55e561e09a6ab6bc6caf46be6353b96fd5c4a598cc57",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION.md",
+      "sha256": "ea14e01aa46f135f41b7b796c1df81fe3a18b9458e8cf068a00b8345be259cb0",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION_FIRST_FREEZE_095c3f80.md",
+      "sha256": "095c3f80c6a78e304972f3e1dfb1f56469d83fd7edc3054b70f00bb7ae979ced",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-LITERATURE_PROVENANCE.md",
+      "sha256": "2b1c7e75eb2bb61a6d892a477a5dd960a2bca751a04684b45e17c1cc65589919",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-NATIVE_COLD_REVIEW.md",
+      "sha256": "4188cf3f4c85ca72c2ec96c16ab3d8bfcf6496ddeb182d13d517d063b73d3b8d",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-PREREGISTRATION.md",
+      "sha256": "002cfcef29b3a496b98041d1b97128328c6ddcb009145ecf12e6f31a823ef065",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_COLD_REVIEW.md",
+      "sha256": "8b35869b62af0800231e6ffd48069365d7889164237de898e804c1bb523edd98",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_INDEPENDENT_DERIVATION.md",
+      "sha256": "2984f2e9a4beff97083b47c55c2265eb6b67918103c830b32baefacb600de5a2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "522c34d7eabe30994a2aec83ce6b002d0079897d15e6392d0549e3c736ff8bdf",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-LITERATURE_BRIDGES.md",
+      "sha256": "5fb4cb757b276dcb99b2c76f7f9ff754ef3dd2a97d25b98adffdaf79eae9d9a9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-NO_GO_LEDGER.md",
+      "sha256": "2fb1eac5c85bdc4770cc1f4fdbedfe9f0b48ff46cc2f2adcbce650fc0c903128",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-PROOF_REVIEW.md",
+      "sha256": "9798af076de374d1c2dc962467748f07e215f3eb4dfe120305101cf46cecc097",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-REVIEW_HISTORY.md",
+      "sha256": "bf56c8b3a37b2483eb4535a0888f85c5ab766175caf887bc001e20b5598de382",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_CANONICAL_PORT_REVIEW.md",
+      "sha256": "f92afe3dad74b70b0b2406595a98208913a14d564ed4e481b5d2faaac077f835",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_FINAL_PORT_REVIEW.md",
+      "sha256": "f3653f75fc97ab7495145ab47d47f5905ca54a94771243d4a46229905d89325f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-SCRATCH_PACK_INDEX.md",
+      "sha256": "7ca9225bcc150adc2738579d4f4117a75e9b0671fb5022d9563689ebe55e98a0",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_RAW.json",
+      "sha256": "4ef3cdddf6334718496dc5c56e28a99e4396aae7d3b1c1929c11d6e6508bcb4f",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_STDOUT.txt",
+      "sha256": "4de32374a665002154823c80c58a4998592b524c3fe342b751bc80c6877674c8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/EXECUTION_RECEIPT.json",
+      "sha256": "f40e213cc74cbc467812ba818c6f01e755b9d39a3be5692b6d162e780465fd28",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/HASHES.json",
+      "sha256": "bdba907bdf830ac321a1aea21dd167e3ac97b3eeced6d4ba1d405cc670abad6e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_RAW.json",
+      "sha256": "b414ff4b8c07fe07706f8b39b0d00269da676cd7a3382b9640d5f22619744a3a",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_STDOUT.txt",
+      "sha256": "fd63ace822b58ee12a8ab22dffcb987e96864736d6cdba021c43866f37e3a5d7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/PORT_RECEIPT.json",
+      "sha256": "812a2c1cf0ff28adc98ae82bbf70f2872713c848465978d66d82f208f06e3512",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/HASHES.json",
+      "sha256": "a1503382a0c5524282512e6ab063993864aa4cef23d353f55b444c504bf4e9de",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/check.py",
+      "sha256": "159a7fce75ee4df506cd209f37910056df7a3f0c4e82b548df0504d491bdc971",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-DERIVATION.md",
+      "sha256": "dc8bbdbf39a8fab146aaaa2bc312195f1e85491c1c21cfe2c734726149459414",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-PREREGISTRATION.md",
+      "sha256": "6b1e392ead8d7ddd846de55c4c62b50b7b39f8070d0dff6d6f2de67fdbd857cd",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/result.json",
+      "sha256": "db93522587969775a594c86f6a70ed4530b19c716ca675b43b3ba99e1ca6cef8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/HASHES.json",
+      "sha256": "f8b1e9210d8e87e3db4924add6dba561600a77aa604fb6c6c3af54c5b4c38b56",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/check.py",
+      "sha256": "2b0a00d1242c51e4e6d963a04c701c2e938ec277cc65ea4f869eddc4c6e911a9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-DERIVATION.md",
+      "sha256": "fa74bb78510e060b54bb114a82d539a34339ee6d2281179d246cb5c3850de594",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-PREREGISTRATION.md",
+      "sha256": "76201ebe6fa298c690284fd75ebbe4dee92c43f5a77840a170b4b35a5a90cee8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/result.json",
+      "sha256": "116a95673e37bcf01db98a7bf4759fb7a1cabf1acd7554a1b8b1f10a54f4172d",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "0ec557a92833b7382fdda2983a98d24eff3d739e2f7d2d9a2e1cb4b2b6abb2bf",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-LITERATURE_BRIDGES.md",
+      "sha256": "54997d5073ec37d2536bee211cbe6b5285ac93740c0596681074c02cd97f88d6",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-N1_N8.md",
+      "sha256": "35319ed6dafdfb411e9796857ade4f5033f26de31beee719339cdd289bc4a406",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-NO_GO_LEDGER.md",
+      "sha256": "e9d5718810480d8cc3319865b3602e96f695cf5930fb2197c62f08a7f70aeeb7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ORBITAL_GAP_REVIEW.md",
+      "sha256": "0172353ae7c52fbd736f7343606484aa06392e736c679f7e4120e9575ac24aa9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-PACK_INDEX.md",
+      "sha256": "d97784142a1cffb43c7c05e7b646968bf0c002a46e8ad8f6a7df84ebcaefa0cf",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REPORTING_REPAIR.md",
+      "sha256": "ee16b470c83e66ad0326fd7969f25019c1e5a3c82fec6df66150389f9ecb70b3",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REVIEW_HISTORY.md",
+      "sha256": "9dfacbc4e927cbd801cc1de4e138602995265412f46ab230e3f84a5254de1472",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_ALL_COUPLING_REVIEW.md",
+      "sha256": "f034e5bde228a1bc270299a0705ff00949906bfd22ea2f07ba4e74c4654abdb8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_CANONICAL_PORT_REVIEW.md",
+      "sha256": "c51dc1bcefdc6a70b284bd33c38fdafb5870d84e5db00a732ead8c7fbf0cbed7",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_LOW_GAP_REVIEW.md",
+      "sha256": "55096a752b9f5aea416f0df9021c3a5cc33a1067e74705539b84a81cb4043a33",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py",
+      "sha256": "c6f581ed360fc42871ff976558d389e7e422f1e6762e99840bf8d4e6b5aeb48d",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/PORT_RECEIPT.json",
+      "sha256": "d525323c8165c738c3895ad950bc5500897ab2d097ee479bb0e487288e37862b",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "sha256": "2e0ab6d9eeb24835ef52021fed16d96932920f8ec83529d9ed8d7772795895d8",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "sha256": "3a4796a116d7b5c6c4a6a1f4be75a45d54b21e88e40ad3182af98ce1822a23ed",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/README.md",
+      "sha256": "ce1357d1cf1816f0b0875ff318a8800d720a287fcea93fc308bab66d121b1047",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt",
+      "sha256": "6a048bd4cb6cb34a4b45ba2312cd18bab93e4adcdb55e85679476c1dd64693e9",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt",
+      "sha256": "18a58ac25fac069e371a3a2b962f1afa9aa45a54e2fefccc98a857c6a67e888e",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt",
+      "sha256": "2538ba61810ce822205305a4bb353b236a4c699e87a7556a685a5377b85ff5a2",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt",
+      "sha256": "5f1c2af43e0fc0ec0e52c323d7f74a53f39fe284358cb1dd1f6cedb79af2fef0",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "sha256": "9fd599c5040f137ede2ffcf5d219534b8673c9deda086d784b90753b587178ca",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "sha256": "0cd413d2737d0cc9ee7f4000d682588138b5ff3d2c1de693c854455b8e6129eb",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+      "sha256": "f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836",
+      "index_equals_worktree": true
+    },
+    {
+      "path": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+      "sha256": "3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5",
+      "index_equals_worktree": true
+    }
+  ],
+  "final_caches": [
+    {
+      "runner": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "cache_sha256": "6a048bd4cb6cb34a4b45ba2312cd18bab93e4adcdb55e85679476c1dd64693e9",
+      "input_fingerprint": null,
+      "TOTAL_PASS": 11,
+      "fresh": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "cache_sha256": "18a58ac25fac069e371a3a2b962f1afa9aa45a54e2fefccc98a857c6a67e888e",
+      "input_fingerprint": null,
+      "TOTAL_PASS": 18,
+      "fresh": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+      "cache_sha256": "2538ba61810ce822205305a4bb353b236a4c699e87a7556a685a5377b85ff5a2",
+      "input_fingerprint": null,
+      "TOTAL_PASS": 31,
+      "fresh": true
+    },
+    {
+      "runner": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+      "cache_sha256": "5f1c2af43e0fc0ec0e52c323d7f74a53f39fe284358cb1dd1f6cedb79af2fef0",
+      "input_fingerprint": "2736e5b57125a51b6a76046b591aa7bc7acb95271d89106ee656dd5d7b0069b0",
+      "TOTAL_PASS": 31,
+      "fresh": true
+    }
+  ],
+  "final_confirmation": "Same reviewer session confirms all three finding groups,98 staged paths and exact input freshness. No remaining source question.",
+  "limitations": "Fixed finite supplied SU3 cube only; no physical action/time selection, no thermodynamic or continuum mass gap, no explicit numerical analytic constants/onset. Coordinator combined mechanical gate remains separate. No audit grade granted.",
+  "disposition_map_sha256": "ab3e27bbaea69cd71833c93dddba08e1191505e589c04dcc4aad9c75620bc653"
+}

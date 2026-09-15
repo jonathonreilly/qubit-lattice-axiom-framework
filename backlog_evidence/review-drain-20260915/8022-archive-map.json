@@ -1,0 +1,674 @@
+[
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "d150b30104aa22b8cc138eea429d5998a1660a074323ce2e2c4858ec346b9769",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ASSUMPTIONS_AND_IMPORTS.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/CANONICAL_LIVE_RESULT.json",
+    "sha256": "9396fd241ded9880375b7052d6a7358d9573103c996b976856e60a1230499712",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/CANONICAL_LIVE_RESULT.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/LITERATURE_BRIDGES.md",
+    "sha256": "0b45e7de9fe21dbedc9d509fe5066e5659ab99351b1a67a16c7cb95cff7c21ad",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-LITERATURE_BRIDGES.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/LIVE_SCIENTIFIC_COMPARISON.json",
+    "sha256": "be90cb67407dd6d95d10af0056b02b36213215e41ce86bd92c868f045946393b",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/LIVE_SCIENTIFIC_COMPARISON.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "sha256": "837d43c86963fcd64c9cfd6c78dc7a4a6004330661aa411285ef81dc487f5e75",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_DISCIPLINE_CHECKLIST.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_LEDGER.md",
+    "sha256": "7cc416cb28431351fcb9dfc2ca72d708b5b6315e2df76a38b43fb777226acbfa",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-NO_GO_LEDGER.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/PROOF_REVIEW.md",
+    "sha256": "cb3546a694baba794642eb87d695a27eb7c53af5e1885763757a81a81985b8b4",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-PROOF_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEW_HISTORY.md",
+    "sha256": "8fe4e53c15b7141649ce184427542b7b9f39fb63f61261d6bcbd5db7e5e9753e",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-REVIEW_HISTORY.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/ROOT_FINAL_PORT_REVIEW.md",
+    "sha256": "858f1332d073799a2585c0d5dc473c50aa34b3fb17d9c889cde1f2ac8c45c3c6",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-ROOT_FINAL_PORT_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_HASHES.json",
+    "sha256": "4300d1db743c326c5275bd163724df4f9d01378c558bb1e577694a1ededfc87f",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_HASHES.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PACK_INDEX.md",
+    "sha256": "215363d8cb2068f441d0b902b7b3cf2c747ba6ce4d7c7f55103940b2c6301455",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/pr8020-SCRATCH_PACK_INDEX.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PORT_RECEIPT.json",
+    "sha256": "76a1850dd92b6dd8b4221e7d1b574122f6631db9b9b03708503c5173f6ba6895",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_PORT_RECEIPT.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_helper.json",
+    "sha256": "845e3f0489cc4fdc819cecd30ac6fefe4b32127478a30b38b92bb84b1f898ad0",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/SCRATCH_helper.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/NATIVE_ROOT_DERIVATION_REVIEW.md",
+    "sha256": "0712451d4aa51e3b1c6426a544cc6ad8e5f53af1b6360db2c5238a17815e3f06",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-NATIVE_ROOT_DERIVATION_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_NATIVE_COLD_REVIEW.md",
+    "sha256": "44eab4c84f7ef00f78d729aaf26337b9043a69178322b2fc8350d080fb680f2f",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_NATIVE_COLD_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_PORT_RECEIPT.json",
+    "sha256": "000864e0d0b9dfa41f2910125dba0035814e6087f2638789c98c8351c7b74bb9",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/ORBITAL_PORT_RECEIPT.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_ROOT_METRIC_REVIEW.md",
+    "sha256": "4f2cc1fb408beac40f9cfba36ef5f35bfb713797ad5c9f52fa3865e61172de7a",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_ROOT_METRIC_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_SUPPLEMENT_CONTRACT.md",
+    "sha256": "25b27f7da1d55710bd4b320e76688ccd34de476d30f0f7784b6d5f16428cfdf7",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-ORBITAL_SUPPLEMENT_CONTRACT.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_DERIVATION.md",
+    "sha256": "6058464c1123745735e462fbc3b61dd7f786fde8aad4464d922aaf0e60cc1b68",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_DERIVATION.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_CODE_REVIEW.md",
+    "sha256": "a250ed434dbef614624df03b24dc04f7f94f8997db5bccb9341efd27bc332663",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_CODE_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_IMPORT_REVIEW.md",
+    "sha256": "c374e33c2e6875e817915af6db5f0ee9bd19c417ac46228f21cc702da81612a2",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_GEOMETRY_IMPORT_REVIEW.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_CHECK.json",
+    "sha256": "72954b00c9d8fec4219821e703cb13b52e03b8f073cb7843112445230d4858cb",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/native_HAAR_METRIC_CHECK.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_DERIVATION.md",
+    "sha256": "897ce76c72ac66afb73349509baaa4e58a08e92de8d202109fbcefabf25f6708",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_HAAR_METRIC_DERIVATION.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_PREREGISTRATION.md",
+    "sha256": "0bb57e30c145e0b80edf76fae8e1495ef2edea0224934b62ad7769455b1c3d46",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/pr8020-evidence-native_PREREGISTRATION.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/DERIVATION.md",
+    "sha256": "541ec391d4a51b2a6996a5f9b9db2677eb40332f5db9df47b29574a2cc78df58",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-DERIVATION.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FAILURES.md",
+    "sha256": "c71a0581892bea5accac33806ccfd05634938cf5ee6f69c730eb80cf0effbefc",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-FAILURES.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FREEZE_RECEIPT.json",
+    "sha256": "2f5ed8d9fdb357780b5988764d4fd138b0102db1af742f2d9e83287b7bc0298b",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/FREEZE_RECEIPT.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/PREREGISTRATION.md",
+    "sha256": "fb1982df5c64bf74cf14df133f2712504ad4f7dad6a4405ccd33c07ad1697ff9",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/pr8020-evidence-orbital-original-PREREGISTRATION.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check.py",
+    "sha256": "39ebf5b54b209ec086123c54105857110739c8c939bdf234e65dc4efe1af399f",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check.py"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check_before_symbolic_order_fix.py",
+    "sha256": "5c11966784bbf76848c02a41faa666b61b475e8e9bbadd48a6d4cd2e5d86af60",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/check_before_symbolic_order_fix.py"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/result.json",
+    "sha256": "e1ea8f549b26e6ae22789457f6188225d1f52e996080f9bea9e4fe322c9e88c8",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/orbital-original/result.json"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/DERIVATION.md",
+    "sha256": "83f22a03157b1b12bfa88dd031f1360df08e344352f2ab87cf1454454b5a2b43",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-DERIVATION.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/PROVENANCE.md",
+    "sha256": "d71357579abb21bbc012eb50fb6850b692f0bf508ce46aa4b927a5d417c28783",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-PROVENANCE.md"
+  },
+  {
+    "pr": "8020",
+    "head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
+    "original_path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/ROOT_INDEPENDENT_REVIEWS.md",
+    "sha256": "70f5b62b6e6a4426b941bec5c7189d2731357e791d567c6ba63b68b19a065b85",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8020/evidence/root-independent/pr8020-evidence-root-independent-ROOT_INDEPENDENT_REVIEWS.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "522c34d7eabe30994a2aec83ce6b002d0079897d15e6392d0549e3c736ff8bdf",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ASSUMPTIONS_AND_IMPORTS.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/LITERATURE_BRIDGES.md",
+    "sha256": "5fb4cb757b276dcb99b2c76f7f9ff754ef3dd2a97d25b98adffdaf79eae9d9a9",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-LITERATURE_BRIDGES.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/NO_GO_LEDGER.md",
+    "sha256": "2fb1eac5c85bdc4770cc1f4fdbedfe9f0b48ff46cc2f2adcbce650fc0c903128",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-NO_GO_LEDGER.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PROOF_REVIEW.md",
+    "sha256": "9798af076de374d1c2dc962467748f07e215f3eb4dfe120305101cf46cecc097",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-PROOF_REVIEW.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEW_HISTORY.md",
+    "sha256": "bf56c8b3a37b2483eb4535a0888f85c5ab766175caf887bc001e20b5598de382",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-REVIEW_HISTORY.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+    "sha256": "f92afe3dad74b70b0b2406595a98208913a14d564ed4e481b5d2faaac077f835",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_CANONICAL_PORT_REVIEW.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_FINAL_PORT_REVIEW.md",
+    "sha256": "f3653f75fc97ab7495145ab47d47f5905ca54a94771243d4a46229905d89325f",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-ROOT_FINAL_PORT_REVIEW.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_FREEZE_RECEIPT.json",
+    "sha256": "f6dfdb6f8988f6656508383faca368577625a806b8489b3baca81572710f9c34",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_FREEZE_RECEIPT.json"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_PACK_INDEX.md",
+    "sha256": "7ca9225bcc150adc2738579d4f4117a75e9b0671fb5022d9563689ebe55e98a0",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/pr8021-SCRATCH_PACK_INDEX.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_result.json",
+    "sha256": "c8a17404ec99d1dcfb3a4b70df928fba6f18402b8e89186778fce94b8f815bb7",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/SCRATCH_result.json"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/CERTIFICATE_PREREGISTRATION.md",
+    "sha256": "b58dbe53287c11b1557c55e561e09a6ab6bc6caf46be6353b96fd5c4a598cc57",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-CERTIFICATE_PREREGISTRATION.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION.md",
+    "sha256": "ea14e01aa46f135f41b7b796c1df81fe3a18b9458e8cf068a00b8345be259cb0",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION_FIRST_FREEZE_095c3f80.md",
+    "sha256": "095c3f80c6a78e304972f3e1dfb1f56469d83fd7edc3054b70f00bb7ae979ced",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-DERIVATION_FIRST_FREEZE_095c3f80.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/LITERATURE_PROVENANCE.md",
+    "sha256": "2b1c7e75eb2bb61a6d892a477a5dd960a2bca751a04684b45e17c1cc65589919",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-LITERATURE_PROVENANCE.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/NATIVE_COLD_REVIEW.md",
+    "sha256": "4188cf3f4c85ca72c2ec96c16ab3d8bfcf6496ddeb182d13d517d063b73d3b8d",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-NATIVE_COLD_REVIEW.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/PREREGISTRATION.md",
+    "sha256": "002cfcef29b3a496b98041d1b97128328c6ddcb009145ecf12e6f31a823ef065",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-PREREGISTRATION.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_COLD_REVIEW.md",
+    "sha256": "8b35869b62af0800231e6ffd48069365d7889164237de898e804c1bb523edd98",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_COLD_REVIEW.md"
+  },
+  {
+    "pr": "8021",
+    "head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "original_path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_INDEPENDENT_DERIVATION.md",
+    "sha256": "2984f2e9a4beff97083b47c55c2265eb6b67918103c830b32baefacb600de5a2",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8021/evidence/pr8021-evidence-ROOT_INDEPENDENT_DERIVATION.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_RAW.json",
+    "sha256": "4ef3cdddf6334718496dc5c56e28a99e4396aae7d3b1c1929c11d6e6508bcb4f",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_RAW.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_STDOUT.txt",
+    "sha256": "4de32374a665002154823c80c58a4998592b524c3fe342b751bc80c6877674c8",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/ALL_STDOUT.txt"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "0ec557a92833b7382fdda2983a98d24eff3d739e2f7d2d9a2e1cb4b2b6abb2bf",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ASSUMPTIONS_AND_IMPORTS.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/EXECUTION_RECEIPT.json",
+    "sha256": "f40e213cc74cbc467812ba818c6f01e755b9d39a3be5692b6d162e780465fd28",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/EXECUTION_RECEIPT.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/HASHES.json",
+    "sha256": "bdba907bdf830ac321a1aea21dd167e3ac97b3eeced6d4ba1d405cc670abad6e",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/HASHES.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LITERATURE_BRIDGES.md",
+    "sha256": "54997d5073ec37d2536bee211cbe6b5285ac93740c0596681074c02cd97f88d6",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-LITERATURE_BRIDGES.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_RAW.json",
+    "sha256": "b414ff4b8c07fe07706f8b39b0d00269da676cd7a3382b9640d5f22619744a3a",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_RAW.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_STDOUT.txt",
+    "sha256": "fd63ace822b58ee12a8ab22dffcb987e96864736d6cdba021c43866f37e3a5d7",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/LOW_STDOUT.txt"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/N1_N8.md",
+    "sha256": "35319ed6dafdfb411e9796857ade4f5033f26de31beee719339cdd289bc4a406",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-N1_N8.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/NO_GO_LEDGER.md",
+    "sha256": "e9d5718810480d8cc3319865b3602e96f695cf5930fb2197c62f08a7f70aeeb7",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-NO_GO_LEDGER.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ORBITAL_GAP_REVIEW.md",
+    "sha256": "0172353ae7c52fbd736f7343606484aa06392e736c679f7e4120e9575ac24aa9",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ORBITAL_GAP_REVIEW.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PACK_INDEX.md",
+    "sha256": "d97784142a1cffb43c7c05e7b646968bf0c002a46e8ad8f6a7df84ebcaefa0cf",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-PACK_INDEX.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/PORT_RECEIPT.json",
+    "sha256": "812a2c1cf0ff28adc98ae82bbf70f2872713c848465978d66d82f208f06e3512",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/PORT_RECEIPT.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/REPORTING_REPAIR.md",
+    "sha256": "ee16b470c83e66ad0326fd7969f25019c1e5a3c82fec6df66150389f9ecb70b3",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REPORTING_REPAIR.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEW_HISTORY.md",
+    "sha256": "9dfacbc4e927cbd801cc1de4e138602995265412f46ab230e3f84a5254de1472",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-REVIEW_HISTORY.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_ALL_COUPLING_REVIEW.md",
+    "sha256": "f034e5bde228a1bc270299a0705ff00949906bfd22ea2f07ba4e74c4654abdb8",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_ALL_COUPLING_REVIEW.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+    "sha256": "c51dc1bcefdc6a70b284bd33c38fdafb5870d84e5db00a732ead8c7fbf0cbed7",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_CANONICAL_PORT_REVIEW.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_LOW_GAP_REVIEW.md",
+    "sha256": "55096a752b9f5aea416f0df9021c3a5cc33a1067e74705539b84a81cb4043a33",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/pr8022-ROOT_LOW_GAP_REVIEW.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/DERIVATION.md",
+    "sha256": "dc8bbdbf39a8fab146aaaa2bc312195f1e85491c1c21cfe2c734726149459414",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-DERIVATION.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/HASHES.json",
+    "sha256": "a1503382a0c5524282512e6ab063993864aa4cef23d353f55b444c504bf4e9de",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/HASHES.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/PREREGISTRATION.md",
+    "sha256": "6b1e392ead8d7ddd846de55c4c62b50b7b39f8070d0dff6d6f2de67fdbd857cd",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/pr8022-evidence-compact-all-coupling-gap-PREREGISTRATION.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/check.py",
+    "sha256": "159a7fce75ee4df506cd209f37910056df7a3f0c4e82b548df0504d491bdc971",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/check.py"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/result.json",
+    "sha256": "db93522587969775a594c86f6a70ed4530b19c716ca675b43b3ba99e1ca6cef8",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-all-coupling-gap/result.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/DERIVATION.md",
+    "sha256": "fa74bb78510e060b54bb114a82d539a34339ee6d2281179d246cb5c3850de594",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-DERIVATION.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/HASHES.json",
+    "sha256": "f8b1e9210d8e87e3db4924add6dba561600a77aa604fb6c6c3af54c5b4c38b56",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/HASHES.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/PREREGISTRATION.md",
+    "sha256": "76201ebe6fa298c690284fd75ebbe4dee92c43f5a77840a170b4b35a5a90cee8",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/pr8022-evidence-compact-electric-gap-PREREGISTRATION.md"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/check.py",
+    "sha256": "2b0a00d1242c51e4e6d963a04c701c2e938ec277cc65ea4f869eddc4c6e911a9",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/check.py"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/result.json",
+    "sha256": "116a95673e37bcf01db98a7bf4759fb7a1cabf1acd7554a1b8b1f10a54f4172d",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/evidence/compact-electric-gap/result.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py",
+    "sha256": "c6f581ed360fc42871ff976558d389e7e422f1e6762e99840bf8d4e6b5aeb48d",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/PORT_RECEIPT.json",
+    "sha256": "d525323c8165c738c3895ad950bc5500897ab2d097ee479bb0e487288e37862b",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/PORT_RECEIPT.json"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+    "sha256": "2e0ab6d9eeb24835ef52021fed16d96932920f8ec83529d9ed8d7772795895d8",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py"
+  },
+  {
+    "pr": "8022",
+    "head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "original_path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+    "sha256": "3a4796a116d7b5c6c4a6a1f4be75a45d54b21e88e40ad3182af98ce1822a23ed",
+    "reason": "unique proof, evidence, source-bound provenance, scope or failure history",
+    "final_path": "docs/work_history/repo/review_feedback/pr8020-8022-compact-cube-evidence/8022/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py"
+  }
+]

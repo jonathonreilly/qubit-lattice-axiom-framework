@@ -1,0 +1,12 @@
+{
+  "packet": [
+    "scripts/native_dynamical_cycle_dictionary_author_2026_09_08.py",
+    "scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py",
+    "scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py"
+  ],
+  "graph": [
+    "scripts/native_dynamical_cycle_dictionary_author_2026_09_08.py",
+    "scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py",
+    "scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py"
+  ]
+}

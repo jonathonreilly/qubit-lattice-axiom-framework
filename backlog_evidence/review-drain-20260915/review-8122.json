@@ -1,0 +1,622 @@
+{
+  "unit": [
+    8122
+  ],
+  "original_head": "a293aa3b67d64eda29ba959d43c209056c9ef7e4",
+  "declared_base": "main",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "confirmation_base": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+  "final_tree": "eaa314175be76801c9439ea46cf2336815a0f53c",
+  "reviewer": "/root/backlog_topology; same independent source reviewer before and after authored fixes",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "findings": [
+    {
+      "id": "8122-1",
+      "category": "scalar_scope",
+      "original_finding": "No unsoldered linear covariant rule is false: p is a vector covariant",
+      "resolution": "Narrowed to scalar invariants throughout; vector counterexample explicit",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-2",
+      "category": "frame_columns",
+      "original_finding": "Last table columns were veclat frame outputs, mislabeled lattice vectors; prose equality contradicted table",
+      "resolution": "Columns relabeled frame maps; distinct lat calculation and soldered equality correctly separated",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-3",
+      "category": "witness_example",
+      "original_finding": "Original+xslot/+xvector/xmenu makes both models2/3",
+      "resolution": "Correct+zslot/+xvector/zmenu retained:2/3vs1/2; false example explicitly identified",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-4",
+      "category": "menu_mean",
+      "original_finding": "Original d meant occupancy sum while executable models average by recorded count",
+      "resolution": "d_occ sum separated from normalized d_A/d_B; norm<=1 proof supplies all-menu positivity",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-5",
+      "category": "axiom_import_scope",
+      "original_finding": "All-axiom/primitives witness and ImportsNone unsupported; automorphism group overstated",
+      "resolution": "Supplied representations/Bloch/menu choices disclosed; complex-linear star automorphisms; no representation selection or full framework model",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-6",
+      "category": "translation_current_parent",
+      "original_finding": "Eight-label toy called four-role; scalar invariance conflated equivariance; false NNN necessity contradicted current support parent",
+      "resolution": "Exact Z2^3 scalar/displacement counts retained; eight labels explicit, equivariant codomains survive, NN skeleton/longer corner-pin distinction restored",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-7",
+      "category": "coverage_120",
+      "original_finding": "All table dimensions allegedly recomputed twice",
+      "resolution": "120 means10strata*2readings(U,S)*2outputs(scalar,internalvector)*3degrees(1\u20133); frame/U3/d0 excluded from that crosscheck",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-8",
+      "category": "frame_construction",
+      "original_finding": "Matrix incorrectly described as selected-record columns, invertibility overbroad",
+      "resolution": "M=sum_i r_i q_i^T, transformation and inverse proved on detM!=0 locus; no formed-frame probability",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-9",
+      "category": "handed_parent",
+      "original_finding": "Degree5 attributed to letter-indicator grading",
+      "resolution": "Current parent uses rawT degree3 versus normalized centre-dependent T(q)(v.s) degree5; finite versus continuous internal groups distinguished",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-10",
+      "category": "degree_quantifier",
+      "original_finding": "Every positive degree asserted from degree1\u20136 test",
+      "resolution": "Strict enlargement limited to computed full-window scalar degrees1\u20136",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-11",
+      "category": "source_evidence_packaging",
+      "original_finding": "No Markdown links for9declared sources, no pins/N5 or failing-process exit",
+      "resolution": "9actual source links and checked hashes,900s cap,5honest N5lines, nonzero exit on FAIL; stale input fails before math",
+      "status": "fixed and same-session confirmed"
+    },
+    {
+      "id": "8122-12",
+      "category": "historical_claims",
+      "original_finding": "72-value out-of-band and mutation narrative lacked recoverable raw evidence",
+      "resolution": "Narrative remains explicitly historical/unverified with frozen original recovery link; no invented receipts",
+      "status": "fixed and same-session confirmed"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "scope": "group/strata",
+      "claim": "24proper rotations,64subsets,10strata and occupancy sums",
+      "disposition": "accepted unchanged numerically"
+    },
+    {
+      "scope": "polynomial census",
+      "claim": "Scalar, internal-vector, frame character tables with centre included; U3parity and Frobenius row",
+      "disposition": "accepted with corrected representation labels and120crosscheck scope"
+    },
+    {
+      "scope": "linear/occupancy no-go",
+      "claim": "Internal occupancy output vanishes under independentSO3 atanyoccupancywindow; scalar-linear invariants vanish, vector-linear outputs survive",
+      "disposition": "narrowed; original universal vector prohibition rejected"
+    },
+    {
+      "scope": "explicit polynomials",
+      "claim": "S1sixmonomials,T48monomials uniqueUfullcubic,fivequadratic basis",
+      "disposition": "accepted; incorrect fourth-invariant falsifier corrected tosecond"
+    },
+    {
+      "scope": "frame",
+      "claim": "M=sumr_iq_i^T equivariant; inverse conditional detMnonzero",
+      "disposition": "accepted with corrected formula and nonsingular scope"
+    },
+    {
+      "scope": "sphere",
+      "claim": "Pure sphere quotient through10; invariant measure moments; six-axis/Haar quartic3/5vs1 and mixed1/15vs0",
+      "disposition": "accepted conditional on supplied sphere/measure/menu interpretation"
+    },
+    {
+      "scope": "menu pair",
+      "claim": "Normalized mean formulas and positivity; orthogonal witness, independent/soldered covariance",
+      "disposition": "narrowed supplied test functions; all-axiom model claim rejected"
+    },
+    {
+      "scope": "translations",
+      "claim": "Parity-cell invariant scalar dimension1, ordered-pair dimension8, stabilizers4/1",
+      "disposition": "accepted finite toy; role-range necessity and four-role identity rejected"
+    },
+    {
+      "scope": "framework interpretation",
+      "claim": "Soldering/inversion/internalnaturality choices",
+      "disposition": "conditional supplied choices, not selected/adopted axioms or primitives"
+    },
+    {
+      "scope": "historical review",
+      "claim": "94originalchecks,72out-of-band values,ninemutationsplusnondefect",
+      "disposition": "original run reproduced; unbound external checks historical narrative only"
+    }
+  ],
+  "original_path_dispositions": [
+    {
+      "original": {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "403ea5d1af0dcf069cc8d1681f7e7f7147c48c6336a8008d462427d1170dee9e",
+        "git_blob": "368d8c1f3e4d1d4cadb23b7f98668b1f593bf2c2",
+        "lines": 642
+      },
+      "disposition": "narrowed source and corrected evidence labels",
+      "final": {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+        "blob": "eb9f897127d2db9b2f3226abd1e93311188fdcee"
+      },
+      "original_recovery": "a293aa3b67d64eda29ba959d43c209056c9ef7e4:docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "original": {
+        "path": "logs/runner-cache/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt",
+        "sha256": "7f8d6ae27d627cbe7fb154d9568dc579b560cf9214485c711097fa6c9aee66a0",
+        "git_blob": "3ba64dc373585041f8b5d689fb63f49ef3a8c74e",
+        "lines": 114
+      },
+      "disposition": "superseded by fresh final source-and-input-bound receipt",
+      "final": {
+        "path": "logs/runner-cache/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt",
+        "sha256": "5d7294f1f2539d5773825726a9ba1a88eef60bd26cba6bbf55960e9849a39faa",
+        "blob": "09e77d28d264b9bf14dd13595523b1e74d538703"
+      },
+      "original_recovery": "a293aa3b67d64eda29ba959d43c209056c9ef7e4:logs/runner-cache/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt"
+    },
+    {
+      "original": {
+        "path": "scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py",
+        "sha256": "ebce549c26e970e9870c118e5163c4d9658ca07495f8146a5b19eaf35394fa33",
+        "git_blob": "c187b59f04244816d9e64bc93b6ba042886d5752",
+        "lines": 893
+      },
+      "disposition": "accepted mathematics with source/evidence packaging repair",
+      "final": {
+        "path": "scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py",
+        "sha256": "fbbc2d045a9596640a2e535873ede93284fb7c1f9ddbbdf9d44b494b51a87e35",
+        "blob": "3bc11db25498ddba6abe61d83168ffdd95b5af22"
+      },
+      "original_recovery": "a293aa3b67d64eda29ba959d43c209056c9ef7e4:scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py"
+    }
+  ],
+  "historical_packet": "No .claude files in complete original3-path delta; no missing packet recoverable there",
+  "source_reading": {
+    "complete_original_note_lines": 642,
+    "complete_original_runner_lines": 893,
+    "complete_final_note": true,
+    "complete_runner_diff": true,
+    "authority": "6governing authority sources exact hash reuse; current minimal memo reread",
+    "actual_source_scopes": "Current solder classifier sections4\u20135; selector formula/domain/calibration and conditional support; Q8 law and scope; sharp-writer orientation boundary; Born fair-coin conditional evaluation; handed raw/normalized-degree and internalgroup distinction; support-role/current NN skeleton correction. Unused downstream campaigns not claimed reviewed."
+  },
+  "input_identities": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/ADMISSIBILITY_AXIS_SEPARABLE_BARYCENTER_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "5aa5e8549b928d49025e52ff705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "5aa5e8549b928d49025e52ff705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2610f30a0c0a6821e0d086f3b56785442b97c25c573a485ad290afc8e1772082",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "2610f30a0c0a6821e0d086f3b56785442b97c25c573a485ad290afc8e1772082",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_missing": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_SHARP_QUBIT_RECORD_WRITER_ORIENTATION_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md",
+      "sha256": "f07c5330951cc181a710e77d3273c2641a0a2292ca01ac61889211fdb4a1c733",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "f07c5330951cc181a710e77d3273c2641a0a2292ca01ac61889211fdb4a1c733",
+      "changed_from_original_context": false
+    },
+    {
+      "path": "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_missing": true
+    },
+    {
+      "path": "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md",
+      "sha256": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c",
+      "role": "actual declared source/context or governing authority; scientific acceptance scoped in report",
+      "original_premise_sha256": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c",
+      "changed_from_original_context": false
+    }
+  ],
+  "final_bindings": {
+    "tree": "eaa314175be76801c9439ea46cf2336815a0f53c",
+    "base": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+    "final_sources": [
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+        "blob": "eb9f897127d2db9b2f3226abd1e93311188fdcee"
+      },
+      {
+        "path": "logs/runner-cache/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt",
+        "sha256": "5d7294f1f2539d5773825726a9ba1a88eef60bd26cba6bbf55960e9849a39faa",
+        "blob": "09e77d28d264b9bf14dd13595523b1e74d538703"
+      },
+      {
+        "path": "scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py",
+        "sha256": "fbbc2d045a9596640a2e535873ede93284fb7c1f9ddbbdf9d44b494b51a87e35",
+        "blob": "3bc11db25498ddba6abe61d83168ffdd95b5af22"
+      }
+    ],
+    "all_staged_working_equal": true,
+    "preexecution_sources_stable": true,
+    "actual_type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "citations": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "docs/ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "docs/ADMISSIBILITY_AXIS_SEPARABLE_BARYCENTER_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "docs/ADMISSIBILITY_SHARP_QUBIT_RECORD_WRITER_ORIENTATION_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md",
+      "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md",
+      "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    ],
+    "input_hashes": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md": "2610f30a0c0a6821e0d086f3b56785442b97c25c573a485ad290afc8e1772082",
+      "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967",
+      "docs/ADMISSIBILITY_AXIS_SEPARABLE_BARYCENTER_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-14.md": "5aa5e8549b928d49025e52ff705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b",
+      "docs/ADMISSIBILITY_SHARP_QUBIT_RECORD_WRITER_ORIENTATION_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md": "f07c5330951cc181a710e77d3273c2641a0a2292ca01ac61889211fdb4a1c733",
+      "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c",
+      "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d",
+      "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md": "52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63"
+    },
+    "cache_status": "fresh",
+    "math_ast_unchanged_ignoring_docstrings_prints_and_check_labels": true,
+    "execution": {
+      "runner": "scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py",
+      "status": "ok",
+      "exit_code": 0,
+      "elapsed_sec": 11.029927253723145,
+      "timeout_sec": 900,
+      "live_log": "/private/tmp/review-drain-20260915/unit8122-author-copy/logs/runner-cache/.in-progress/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt"
+    },
+    "stdout_bytes": 8228,
+    "runner_input_fingerprint": "cd5fa2e05118ff1e0dee86ea297a8fbbb8cc712c427c934f471dcb62183c58d3",
+    "source_binding": "preexecution source hashes plus actual cache runner hash, invocation stdout exact cache",
+    "complete_current_main_preservation": "All3 final paths additions, no main source removed or modified"
+  },
+  "original_execution": {
+    "exit_code": 0,
+    "elapsed_sec": 10.957813832908869,
+    "timeout_sec": 900,
+    "runner_sha256": "ebce549c26e970e9870c118e5163c4d9658ca07495f8146a5b19eaf35394fa33"
+  },
+  "independent_math": {
+    "status": "PASS",
+    "method": "SO3 invariant tensor contractions then finite slot orbit counts, not Molien or derivation kernels",
+    "rows": [
+      {
+        "slots": [],
+        "scalar_U": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "vector_U": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "soldered_vector_degree0": 0,
+        "soldered_frame_degree0": 1
+      },
+      {
+        "slots": [
+          0
+        ],
+        "scalar_U": [
+          1,
+          0,
+          3,
+          0
+        ],
+        "vector_U": [
+          0,
+          2,
+          1,
+          6
+        ],
+        "soldered_vector_degree0": 1,
+        "soldered_frame_degree0": 3
+      },
+      {
+        "slots": [
+          0,
+          1
+        ],
+        "scalar_U": [
+          1,
+          0,
+          4,
+          0
+        ],
+        "vector_U": [
+          0,
+          2,
+          1,
+          10
+        ],
+        "soldered_vector_degree0": 0,
+        "soldered_frame_degree0": 2
+      },
+      {
+        "slots": [
+          0,
+          2
+        ],
+        "scalar_U": [
+          1,
+          0,
+          4,
+          0
+        ],
+        "vector_U": [
+          0,
+          2,
+          1,
+          10
+        ],
+        "soldered_vector_degree0": 1,
+        "soldered_frame_degree0": 5
+      },
+      {
+        "slots": [
+          0,
+          2,
+          4
+        ],
+        "scalar_U": [
+          1,
+          0,
+          4,
+          2
+        ],
+        "vector_U": [
+          0,
+          2,
+          2,
+          14
+        ],
+        "soldered_vector_degree0": 1,
+        "soldered_frame_degree0": 3
+      },
+      {
+        "slots": [
+          0,
+          1,
+          2
+        ],
+        "scalar_U": [
+          1,
+          0,
+          7,
+          1
+        ],
+        "vector_U": [
+          0,
+          3,
+          3,
+          24
+        ],
+        "soldered_vector_degree0": 1,
+        "soldered_frame_degree0": 5
+      },
+      {
+        "slots": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "scalar_U": [
+          1,
+          0,
+          5,
+          0
+        ],
+        "vector_U": [
+          0,
+          2,
+          1,
+          16
+        ],
+        "soldered_vector_degree0": 0,
+        "soldered_frame_degree0": 2
+      },
+      {
+        "slots": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "scalar_U": [
+          1,
+          0,
+          9,
+          4
+        ],
+        "vector_U": [
+          0,
+          3,
+          4,
+          39
+        ],
+        "soldered_vector_degree0": 1,
+        "soldered_frame_degree0": 5
+      },
+      {
+        "slots": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "scalar_U": [
+          1,
+          0,
+          8,
+          4
+        ],
+        "vector_U": [
+          0,
+          3,
+          4,
+          37
+        ],
+        "soldered_vector_degree0": 1,
+        "soldered_frame_degree0": 3
+      },
+      {
+        "slots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scalar_U": [
+          1,
+          0,
+          5,
+          1
+        ],
+        "vector_U": [
+          0,
+          2,
+          1,
+          17
+        ],
+        "soldered_vector_degree0": 0,
+        "soldered_frame_degree0": 1
+      }
+    ],
+    "haar_axial_even": [
+      "1/3",
+      "1/5",
+      "1/7"
+    ],
+    "quartic_sum_haar": "3/5",
+    "quartic_sum_sixaxis": 1,
+    "mixed_fourth_haar": "1/15",
+    "witness_original_text_both": "2/3",
+    "witness_code_orthogonal": "2/3 versus1/2"
+  },
+  "new_packaging_controls": {
+    "actual9input_prefix_pass": true,
+    "wrong_input_hash_fail_closed": "declared source input changed: docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "footer_exit_zero_for_clean": true,
+    "footer_exit_one_for_failure": true,
+    "full_science_rerun": false
+  },
+  "repository_dependencies": "Nine exact linked/hashed current source and comparison inputs; none imported as retained-grade approval. Unlike8117 this note declares and uses repository source scopes. Scientific arithmetic itself is self-contained; pins are real runtime reads and invalidate cache on source drift.",
+  "external_mathematical_methods": "Explicit supplied Bloch-state/representation/measure conventions plus ordinary symmetric-power character recurrence, SO3Haar coefficient subtraction, Reynolds projection, Lie-derivation kernels and finite invariant tensor contractions. No external empirical number, phase theorem or physical law imported.",
+  "current_main_preservation": "All3 final paths additions, no main source removed or modified",
+  "remaining_limits": [
+    "No all-axiom model, selected internal/spatial representation, global law, formation/readout bridge or adopted primitive",
+    "No universal role-range obstruction; finite scalar invariance does not exclude equivariant codomains",
+    "No retention/audit verdict; exact integrated candidate still requires root combined mechanical gate"
+  ],
+  "reviewer_source_edits": 0,
+  "full_pipeline_count": 0,
+  "commits_or_external_mutations_by_reviewer": 0,
+  "disposition_map_sha256": "6b3533dbd114bb98cc80febec4f8880b7d6afdcb1919424f798cff17f8513d61",
+  "evidence_hashes": {
+    "check8122/final_confirm.py": "8a1e852d47e81a3f0e6358ccd2e441b739213bbd9a4330738759fc23204e26dd",
+    "check8122/new_packaging_controls.json": "fa11c379ec64ce395528e90f4c79ca2af89ef4d048d77efb4b9df41a80489a84",
+    "check8122/original-inventory.json": "b6b071b8904a43bbdda3e90ec248c76e305935e575d9504f947e8459d5ec695f",
+    "check8122/original-source.patch": "69177f3973c0d3b9201a047acb959aaf8ac8083958924bba8978606767afc5ab",
+    "check8122/final_confirmation.json": "b3b921350e20889db92e0ffb80c280dc4937fa2f26ff457eb63cc101fbfc66c9",
+    "check8122/primary-receipt.json": "32f790ae88c94547f8c776b4c5867b2bd5abac2d29d3e0b897fcbc6e6e6e64ca",
+    "check8122/primary.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check8122/independent_math.py": "3a0cb82b94017cf45edf958144993787537539f417fea17ece54cfbd08403c34",
+    "check8122/primary.stdout": "f371ec4be14c266528491dbd6ecd90d9d96ec21b7e6385b1e2d4169eed138ae0",
+    "check8122/independent_math.json": "96e425be4b3f6d31b72262629babb48b1d57e6f2de4c3c22b1e7025e6dc00e55"
+  }
+}

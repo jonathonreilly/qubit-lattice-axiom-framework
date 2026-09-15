@@ -1,0 +1,24 @@
+{
+  "pr": 8115,
+  "original_head": "36607532327386ca6e1ced470d5aa93a026989d5",
+  "branch": "physics-loop/toe-local-reference-encoding-20260914",
+  "landing": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-local-reference-encoding-20260914",
+    "headRefOid": "36607532327386ca6e1ced470d5aa93a026989d5",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8115,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8115"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "36607532327386ca6e1ced470d5aa93a026989d5",
+    "state": "CLOSED"
+  }
+}

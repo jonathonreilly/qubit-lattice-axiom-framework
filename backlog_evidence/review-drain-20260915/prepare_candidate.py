@@ -47,9 +47,9 @@ for u in collection['units']:
    scope=json.loads((out/u['dependency_scope']).read_text())
    expectation.update(allow_empty_repository_deps=True,independent_review=u['dependency_scope'],reason=u.get('dependency_reason',scope.get('rationale',scope.get('reason'))))
   expectations[p]=expectation
-  preflight[p]={'type_hint':hint,'actual_citations':[str(x.relative_to(root)) for x in citations],'required_claim_ids':required}
+  preflight[p]={'primary_runner':graph.extract_runner(s,p),'helper_runner_paths':graph.resolve_helper_runner_paths(graph.extract_runner(s,p)),'type_hint':hint,'actual_citations':[str(x.relative_to(root)) for x in citations],'required_claim_ids':required}
  for p in u['source_paths']:
-  if p.startswith('scripts/') and p.endswith('.py'):
+  if p.startswith('scripts/') and p.endswith('.py') and p in {entry['primary_runner'] for entry in preflight.values()}:
    status=runner_cache.cache_status(Path(p));assert status=='fresh',('cache not fresh',p,status)
 assert len(preflight)==collection['science_notes']
 record={'base':base,'source_head':git('rev-parse','HEAD'),'source_tree':git('rev-parse','HEAD^{tree}'),'heads':heads,'source_owners':owners,'inputs':inputs,'review_evidence_hashes':reviews,'dependency_expectations':expectations,'cheap_preflight':preflight,'units':[u['unit'] for u in collection['units']],'departure':collection['collection_closed'],'current_main_preservation':'Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match.'}

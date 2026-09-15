@@ -1,0 +1,24 @@
+{
+  "pr": 8118,
+  "original_head": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
+  "branch": "physics-loop/toe-clock-phase-diagnostics-20260914",
+  "landing": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-clock-phase-diagnostics-20260914",
+    "headRefOid": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8118,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8118"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
+    "state": "CLOSED"
+  }
+}

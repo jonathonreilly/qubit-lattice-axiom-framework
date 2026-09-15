@@ -1,0 +1,212 @@
+{
+  "unit": "PR8123",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "head": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+  "original_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "confirmation_base": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "paths": [
+    "A\tdocs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+    "M\tdocs/audit/data/citation_graph_manifest.json",
+    "A\tlogs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt",
+    "A\tscripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py"
+  ],
+  "final_tree": "cd21789aa95cb375aecdddc062bffb1d8eea89fc",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8123",
+  "original_dispositions": [
+    {
+      "original_path": "docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_sha256": "80e201021e7c78e1ac0fd53ae1db6cb7a452bbc8bc99a9ca65f710b93e7effe2",
+      "final_path": "docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "80e201021e7c78e1ac0fd53ae1db6cb7a452bbc8bc99a9ca65f710b93e7effe2",
+      "disposition": "Canonical original source retained byte-exact"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "b9c9fea3e8c9c63e4b963b2b9a22c404964611c0d1760e04affabb9b7c7009b6",
+      "disposition": "Generated topology acknowledgment omitted; combined coordinator regenerates manifest"
+    },
+    {
+      "original_path": "logs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt",
+      "original_sha256": "284a457e53e0c341f47801480edd2cfd1375f958a3c624d7252b51120bf8a68b",
+      "final_path": "logs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt",
+      "final_sha256": "284a457e53e0c341f47801480edd2cfd1375f958a3c624d7252b51120bf8a68b",
+      "disposition": "Canonical original source retained byte-exact"
+    },
+    {
+      "original_path": "scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py",
+      "original_sha256": "84dbae9ac1081dc61774a423545d45cde307fd8dfe214180727809d027054fca",
+      "final_path": "scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py",
+      "final_sha256": "84dbae9ac1081dc61774a423545d45cde307fd8dfe214180727809d027054fca",
+      "disposition": "Canonical original source retained byte-exact"
+    }
+  ],
+  "final_files": [
+    {
+      "path": "docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "80e201021e7c78e1ac0fd53ae1db6cb7a452bbc8bc99a9ca65f710b93e7effe2",
+      "blob": "a5697b358916e78e8cf57ddc4f578953880b5c6e"
+    },
+    {
+      "path": "logs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt",
+      "sha256": "284a457e53e0c341f47801480edd2cfd1375f958a3c624d7252b51120bf8a68b",
+      "blob": "147aebbb25c85159f771b3eafe123f9435ab006d"
+    },
+    {
+      "path": "scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py",
+      "sha256": "84dbae9ac1081dc61774a423545d45cde307fd8dfe214180727809d027054fca",
+      "blob": "bb918a58a4447dc1e915c912b7ed7202199df560"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "context_read_scope": "Exact-byte reuse of prior mandatory axiom/registry reads; no primitive is used to supply this Hamiltonian or state.",
+  "repository_claim_dependencies": [],
+  "runtime_scientific_file_inputs": [],
+  "dependency_scope": "Self-contained supplied qutrit Hamiltonian and finite-matrix proof. Earlier kinetic commit652ea36706f7df14f153f2d40ee900662fe73706 is blocker provenance only; all limiting objects re-established. Empty repository dependencies honest.",
+  "external_mathematical_methods": [
+    "Perron-Frobenius for connected finite stoquastic matrices",
+    "Elementary contractible cellular cohomology over Z3",
+    "Entrywise positive semigroup comparison and spectral Jensen inequality",
+    "Schur complement, Duhamel contraction estimates and finite-dimensional product limits"
+  ],
+  "primary_receipt": {
+    "exit_code": 0,
+    "elapsed_sec": 0.7685624579899013,
+    "timeout_sec": 120,
+    "stdout_bytes": 9790,
+    "stderr_bytes": 0,
+    "source_sha256": "84dbae9ac1081dc61774a423545d45cde307fd8dfe214180727809d027054fca"
+  },
+  "independent_receipt": {
+    "status": "PASS",
+    "independent_tree_gauge_flux_count": 243,
+    "charge_counts": [
+      1,
+      50,
+      141,
+      50,
+      1
+    ],
+    "charged_coordinate_patterns": 223074,
+    "local_probability_controls": [
+      [
+        0.03,
+        0.00013162030475088587,
+        0.19413383820185204
+      ],
+      [
+        0.2,
+        0.0035292863680064335,
+        0.19413383820185204
+      ],
+      [
+        0.8,
+        0.010025234560892812,
+        0.19413383820185204
+      ]
+    ],
+    "semigroup_controls": [
+      [
+        4.0,
+        0.1,
+        0.6122008136788771,
+        1.0325700460356393
+      ],
+      [
+        4.0,
+        0.9,
+        0.055389754481197956,
+        0.48757372244729247
+      ],
+      [
+        13.0,
+        0.1,
+        0.25198926517226733,
+        0.38399333149555104
+      ],
+      [
+        13.0,
+        0.9,
+        0.013330132901346357,
+        0.14162367843454537
+      ],
+      [
+        50.0,
+        0.1,
+        0.015404025747846226,
+        0.03571794699908547
+      ],
+      [
+        50.0,
+        0.9,
+        0.003233273801465126,
+        0.03682
+      ]
+    ]
+  },
+  "manual_proof": "check8123/manual-proof-check.md",
+  "claim_dispositions": {
+    "local_probability": "Uniform positive fixed-pattern bound at finite fixed couplings under explicitly split-specific hypotheses; proved",
+    "cube_charge": "223074disjoint charged patterns and stated local constant, inherited by local weak limits; proved",
+    "projection": "First and second harmonics on integer-neutral physical flux sector of contractible full rectangular3Dboxes; proved",
+    "penalty_limits": "Fixed-box Schur and continuous/discrete contraction limits; no uniform-volume phase claim",
+    "native_physics": "Hamiltonian,state,couplings supplied; native phase and realization open"
+  },
+  "findings": [],
+  "historical_evidence": "Seven mutation claims remain author narrative in original note; no executable records in original4pathdelta and no current reproduction authority inferred. No absent-receipt promise requiring source edit.",
+  "current_main_loss": "Three additions only; existing main source untouched; originalnote/runner/cache retained byte-exact, manifest regeneration owned by combined gate.",
+  "metadata": "Actual extractor bounded_theorem; N5five honest lines present; canonicalTOTAL7/0 parsed; source hash matches unchanged cache.",
+  "vocabulary_violations": 0,
+  "three_diffchecks": "pass",
+  "full_pipeline_runs": 0,
+  "audit_boundary": "Source review only; no audit/retention verdict; combined gate deferred to coordinator",
+  "receipts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/source.patch",
+      "sha256": "dffbf0bea20d1bbc65e04090a74821c203d1df07bb19c8055fc27f9420542574"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/primary.json",
+      "sha256": "19a5a13d427f4f40616f81d5c611002278500dd45cbcb75a0cd1b3715d3ecbff"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/independent.py",
+      "sha256": "89100bea86a7e0ec2449862ccb7c2cd98392daac8a6e8b1c85be025bcf18f622"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/primary.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/manual-proof-check.md",
+      "sha256": "3e5f4c3311dcc7a0e3e8fe0d52422491fa4c33d870399eac629be653f0f6323d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/inventory.json",
+      "sha256": "007e46b4a37c2c4c9831d42c1154baf2b0d0fff808998623e655dd81027605eb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/primary.stdout",
+      "sha256": "b74c64bba6245a6f3123e5e1997c5e210a0281068f823e2f609f240493c2ad47"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8123/independent.json",
+      "sha256": "e68d43d6cb0cb39deb98dc25193c08ac8a46118582acae2fb7e4f91e410ca5f4"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "pr": 8119,
+  "original_head": "51818db1f29e143921340a94dd035609c3f2c6aa",
+  "branch": "physics-loop/toe-native-halfline-persistence-20260914",
+  "landing": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-native-halfline-persistence-20260914",
+    "headRefOid": "51818db1f29e143921340a94dd035609c3f2c6aa",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8119,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8119"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "51818db1f29e143921340a94dd035609c3f2c6aa",
+    "state": "CLOSED"
+  }
+}

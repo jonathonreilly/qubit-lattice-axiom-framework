@@ -1,0 +1,134 @@
+[detached HEAD af7d7c8b42] Preserve reviewed full native cycle dictionary and discoverable helper evidence
+ Date: Tue Sep 15 08:48:34 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 82 files changed, 5501 insertions(+)
+ create mode 100644 docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/ALARM_CONTROL.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/FORMAT_ARCHIVE_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/INTERFACE_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/ISOLATED_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/ISOLATED_CLOSURE.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/MUTATIONS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/PORT_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/PORT_RECEIPT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/SOURCE_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/STATE.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/CACHE_BEFORE_INLINE_FORMAT_REPAIR.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/CANONICAL_BEFORE_INLINE_FORMAT_REPAIR.md.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_basis_phase.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_basis_phase.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_basis_phase.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_cycle_factor.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_cycle_factor.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_cycle_factor.stdout
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/PORT_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/SOURCE_CLOSURE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/cache.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_author_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_exchange_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_independent_2026_09_08.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/result.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/ALARM_DELTA_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/LIVE.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/PAYLOAD_COMPARISON.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/pr8038-evidence-canonical-cold-review-FINAL_DELTA_CONFIRMATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/pr8038-evidence-canonical-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-pure-json.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/first-canonical-run.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/pr8038-evidence-native-charged-cycle-bridge-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/pr8038-evidence-native-charged-cycle-bridge-EXCHANGE_ALGEBRA.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/pr8038-evidence-native-charged-cycle-bridge-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/DICTIONARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/READ_HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/dictionary_check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/pr8038-evidence-native-common-carrier-cold-review-REVIEW.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/pr8038-evidence-native-cycle-projected-ice-review-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/pr8038-evidence-native-cycle-projected-ice-review-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/HASHES.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/RESULT_BEFORE_QUADRATIC_SUPPLEMENT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/SOURCE_BINDING.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/check.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/check_before_quadratic_supplement.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/pr8038-evidence-native-dynamical-cycle-dictionary-DERIVATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/pr8038-evidence-native-dynamical-cycle-dictionary-PREREGISTRATION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/strict-cli.stderr
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ABSOLUTE_ALARM_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ARTIFACT_PLAN.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ASSUMPTIONS_AND_IMPORTS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-CHECKS.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-FORMAT_CORRECTION.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-GOAL.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-LITERATURE_BRIDGES.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-NO_GO_LEDGER.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-OPPORTUNITY_QUEUE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-PR_BACKLOG.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ROUTE_PORTFOLIO.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_dynamical_cycle_dictionary_2026_09_08.txt
+ create mode 100644 outputs/native_dynamical_cycle_dictionary_2026_09_08.json
+ create mode 100644 scripts/native_dynamical_cycle_dictionary_2026_09_08.py
+ create mode 100644 scripts/native_dynamical_cycle_dictionary_author_2026_09_08.py
+ create mode 100644 scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py
+ create mode 100644 scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py
+[detached HEAD fdc5ab3e1a] Scope possibility covariance to supplied scalar and finite census results
+ Date: Tue Sep 15 08:48:09 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1357 insertions(+)
+ create mode 100644 docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt
+ create mode 100644 scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py
+[detached HEAD e7383b70d6] Preserve independently reviewed local clock probabilities and projected harmonics
+ Date: Tue Sep 15 08:48:09 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1303 insertions(+)
+ create mode 100644 docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 logs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt
+ create mode 100644 scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py
+FROZEN e7383b70d6f72d1cbae6463ec3f58bf4babf3488 sources 88 inputs 108 notes 3

@@ -1,0 +1,24 @@
+{
+  "pr": 8116,
+  "original_head": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
+  "branch": "physics-loop/toe-soft-spin2-consistency-20260914",
+  "landing": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-soft-spin2-consistency-20260914",
+    "headRefOid": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8116,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8116"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
+    "state": "CLOSED"
+  }
+}

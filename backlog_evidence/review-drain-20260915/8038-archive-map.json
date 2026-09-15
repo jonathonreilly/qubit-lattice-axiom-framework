@@ -1,0 +1,372 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ABSOLUTE_ALARM_CORRECTION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ABSOLUTE_ALARM_CORRECTION.md",
+    "sha256": "67d5b4a85dbf6faf16846d475bb1858e047c7f056995b4b7fa8aac0ff9d90d16"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ALARM_CONTROL.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/ALARM_CONTROL.json",
+    "sha256": "b960f0023f5c771a041a8cd32fe3c35c8b0c46ec82e4d5c20b8b8792618d984e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ARTIFACT_PLAN.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ARTIFACT_PLAN.md",
+    "sha256": "a3e2e29ad2a399beb04d54b6b1950edf804df0f2dea72a90dafb721bc18bfd51"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "d0da3d9681017f3acfd3e49acdb145db61de2e04a28d89f55e169d94c20fab3e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/CHECKS.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-CHECKS.md",
+    "sha256": "67dc7174fc64b6773511a954280249748e70dea1cf5f1a519cf927f592b8e33b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "ba434093b1cd1eb66f69188d8717aab21a541a36ae2799a45a1b31ff0ea41666"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/FORMAT_ARCHIVE_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/FORMAT_ARCHIVE_RECEIPT.json",
+    "sha256": "7f3ab6f1645c6994244308da81abfb25266d28c4c00a1504ac314903489a2980"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/FORMAT_CORRECTION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-FORMAT_CORRECTION.md",
+    "sha256": "b373a7abbe8402c467da96f1989a105a5adea70eec6f03ec60ab34f12ef8a401"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-GOAL.md",
+    "sha256": "2c016da04ec41522276ed1aea6243b7e75032276ae9235b3784dc3df6c14f79a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-HANDOFF.md",
+    "sha256": "b3f4396f80492ee9f39c83f96ea560cade45bdaa2c84784541f6a70c9ff3a194"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/INTERFACE_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/INTERFACE_CHECKS.json",
+    "sha256": "b3912f70b7808130f88a3f07fa7876425dcfad8302564ef79a5d11424bf9dec2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ISOLATED_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/ISOLATED_CLOSURE.json",
+    "sha256": "4fb3abfa14515b6f454c0a3cd30ed83022299715d99144bfff69218ef3aeef54"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ISOLATED_CLOSURE.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/ISOLATED_CLOSURE.stdout",
+    "sha256": "f39213677968851913c75b8069ba929b785f40df3b7363613aade140bc9d2af6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/LITERATURE_BRIDGES.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-LITERATURE_BRIDGES.md",
+    "sha256": "ca41138bb9c13f35dd9788d225f9af4958fd5147f841607a131852eb37136458"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/MUTATIONS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/MUTATIONS.json",
+    "sha256": "1492e6b0518d724f53110a248babd10cff273cb7b1a8fc9a518c2db4bc885f7a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/NO_GO_LEDGER.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-NO_GO_LEDGER.md",
+    "sha256": "3538dcd3a8005f2073f97c4ee34d0ef8a571801d141dbd48008d0ebb17f110c0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/OPPORTUNITY_QUEUE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-OPPORTUNITY_QUEUE.md",
+    "sha256": "dcf93508b87c98f2dc6e4b06c5d1a99a1f9a5856b484a43a505c9d599e0daa26"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/PORT_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/PORT_HASHES.json",
+    "sha256": "f57d649e627b0b699daf01a6f6f1da5ff75db3509b91c06ff66f9e2d22d62b42"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/PORT_RECEIPT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/PORT_RECEIPT.json",
+    "sha256": "81cfb478aafc74d62e8affbb30dda8de97f3fa19d79a2c9b666dc424c2030c6f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/PR_BACKLOG.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-PR_BACKLOG.md",
+    "sha256": "2f7a4f05c5be6dd0838f79b52412b2bd88ef671903f71bc7b87f1138a1fa2196"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-REVIEW_HISTORY.md",
+    "sha256": "fe8f0d8a8a01eda84b0a8e697f1465bfecf9d7a00d95cd3ab82549d88f475f7e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/ROUTE_PORTFOLIO.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-ROUTE_PORTFOLIO.md",
+    "sha256": "064dcfdabbad5ad7f609d6820a6721667fead616c13de0bf40ca20c20e44dd49"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/SOURCE_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/SOURCE_CLOSURE.json",
+    "sha256": "0206e4603afb444d9361ff36457240d6252bb60a1e55ecc974cbd053bf51452c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/STATE.yaml",
+    "sha256": "4b6128fad90f4a4c21c219c03fcacbf12ad7d883d7b53d6c34cf7ca272ce65ba"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/pr8038-TRACE_GATE.md",
+    "sha256": "dfe8502a34fec2b0b8a74b99e74a9745395b4b6b8852c800410579a7987272d2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/CACHE_BEFORE_INLINE_FORMAT_REPAIR.txt.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/CACHE_BEFORE_INLINE_FORMAT_REPAIR.txt.gz",
+    "sha256": "100841c2cbe635661400409fd9e14ff96a22d902c3b760e3f9d07fe9f17fd2ea"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/CANONICAL_BEFORE_INLINE_FORMAT_REPAIR.md.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/CANONICAL_BEFORE_INLINE_FORMAT_REPAIR.md.gz",
+    "sha256": "ca68c09c8a32aaa5586e6b17f34c532691994617a0066f8590e62387725b4e32"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_basis_phase.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_basis_phase.py",
+    "sha256": "f2d10133cdea3d4432960b0f9eb6e321f828c3a6ce6c03799451b2606091a567"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_basis_phase.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_basis_phase.stderr",
+    "sha256": "6a6f000702eac1793c5544b2188ba09bf36e5c8b501867c1ac9e328de53e3961"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_basis_phase.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_basis_phase.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_cycle_factor.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_cycle_factor.py",
+    "sha256": "236f66bb8217ca6a589b39a3ce1f31a2a5eb828280c8a7f3271179fff064f5b4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_cycle_factor.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_cycle_factor.stderr",
+    "sha256": "3ef988a7e327d7f53cd987b68c7b4475b181bd0601613c0bf2cb19011ad658a9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_cycle_factor.stdout",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/actual-mutations/omit_cycle_factor.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/PORT_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/PORT_HASHES.json",
+    "sha256": "bf2fb6cdb9fd4a9782d04759e68294989d9ca62b920833ad7cd61cf4e00d18c4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/SOURCE_CLOSURE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/SOURCE_CLOSURE.json",
+    "sha256": "f5336448a3a4087370fdfa73594ce362a96a1790efe5070e9528ae5c4085fe77"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/cache.txt.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/cache.txt.gz",
+    "sha256": "90fab2d82b3f0a749ab16a417f89bdcf7d0afb475958e915b065ad699eb076f5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_author_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_author_2026_09_08.py",
+    "sha256": "27e0476ee48f65be0928f1df9fe0c4bd305091255a02b88179e8cfed363a78db"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_exchange_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_exchange_2026_09_08.py",
+    "sha256": "d77707765659359d9baf3ea2b5e7793d12cb843d83269118002bcff04c2ef732"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_independent_2026_09_08.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/native_dynamical_cycle_dictionary_independent_2026_09_08.py",
+    "sha256": "be3edef4324b23e49c81aa113f061408633c96dd74c1dd2e3696d83dd17f240d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/before-absolute-alarm-fix/result.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/before-absolute-alarm-fix/result.json",
+    "sha256": "180a685bd4d9b572ed92455f8494218adb0e333dc9eaad931edaf0eb3c6418cd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-cold-review/ALARM_DELTA_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/ALARM_DELTA_RESULT.json",
+    "sha256": "62320b7265bb4f398545e9b107eefcaeb22c5fce15c380d255786853c8008f5d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-cold-review/FINAL_DELTA_CONFIRMATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/pr8038-evidence-canonical-cold-review-FINAL_DELTA_CONFIRMATION.md",
+    "sha256": "2931952a0fbcfcccaf17645c73dfbe5396bdcd7de1141c8e331fc3aeaeb0640c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-cold-review/LIVE.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/LIVE.json",
+    "sha256": "81f2106ffcee72558c5267face5f6d4efc26d0e9987cb12e56e7d9e8cf2ea325"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-cold-review/PAYLOAD_COMPARISON.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/PAYLOAD_COMPARISON.json",
+    "sha256": "aa5d6a17cef7dcec684150787857f8d7d0e75f85e8aee9acc236c92934d3c01c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-cold-review/READ_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/READ_HASHES.json",
+    "sha256": "e1704a39042b78c63d6afdb76324773eadf876d2cfd56200dadd9b0b3d9627a7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-cold-review/pr8038-evidence-canonical-cold-review-REVIEW.md",
+    "sha256": "715a23a9d5a4a4ac24e5d5b4264913e221af3c16defeff4d4d4cb7c6446b4886"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/canonical-pure-json.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/canonical-pure-json.txt",
+    "sha256": "c357bd744288cc648071f0963472f3d52abe96176e6cabe528489bd9e734caf4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/first-canonical-run.txt",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/first-canonical-run.txt",
+    "sha256": "377d1a42e1ac9e418e77103efc6c56a4950c0387b7890a93b549bacec466bcfc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-charged-cycle-bridge/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/pr8038-evidence-native-charged-cycle-bridge-DERIVATION.md",
+    "sha256": "2b07b4037c46e4f242559a59e2a2831e5287a531314ee130421ff7fc2d1566c9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-charged-cycle-bridge/EXCHANGE_ALGEBRA.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/pr8038-evidence-native-charged-cycle-bridge-EXCHANGE_ALGEBRA.md",
+    "sha256": "54c8018e4f357ba80397dd6c2267a3ef89b8ef1efb7f2c48cff35a38b0622cb8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-charged-cycle-bridge/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/HASHES.json",
+    "sha256": "727f2a021780cc7b735d7d5cfe430009dfbe5587d71fc7d7b93c6e326e065424"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-charged-cycle-bridge/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/pr8038-evidence-native-charged-cycle-bridge-PREREGISTRATION.md",
+    "sha256": "42adcb8b0becb8e89e7cc433ab0e2b06a6cf36e98650e7831c9661f7a25f6d90"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-charged-cycle-bridge/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/RESULT.json",
+    "sha256": "f5be872b76203b982446a6ddf39f81912cdc8eb88cc61d5a01368761f98f5c6c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-charged-cycle-bridge/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-charged-cycle-bridge/check.py",
+    "sha256": "ce4d43ec2ce6c653546f267c9a2c918ea43d9b805a59cbc442a9a0b1f22efd4b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-common-carrier-cold-review/DICTIONARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/DICTIONARY_RESULT.json",
+    "sha256": "217b9110f130e595462ca85adb7823003e8f05cac79e924b232e96c849c6f0fc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-common-carrier-cold-review/READ_HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/READ_HASHES.json",
+    "sha256": "ac82ac5f76276297ee4014b893ff4a9143be5faca0ebd11604af7a1afc9380cd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-common-carrier-cold-review/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/RESULT.json",
+    "sha256": "d0e213f0fe6369edf20a7c59b005e095eee4c4c1ce0a7962055da487140a63a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-common-carrier-cold-review/REVIEW.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/pr8038-evidence-native-common-carrier-cold-review-REVIEW.md",
+    "sha256": "442e3b3e6d1d90246a467bbf7a361e3585b1eae0736c76b436bcc8b76faf862e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-common-carrier-cold-review/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/check.py",
+    "sha256": "e04029f39521043c3e7519da04ebc524fabce57f5d8032b7319beafa68d94751"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-common-carrier-cold-review/dictionary_check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-common-carrier-cold-review/dictionary_check.py",
+    "sha256": "d5076f0f1d9178fa518c1017b364864f994acb8f73013c88b76819a37cfcde9c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-cycle-projected-ice-review/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/pr8038-evidence-native-cycle-projected-ice-review-DERIVATION.md",
+    "sha256": "76a86019b5ca7caaefe6b237ef34e7d7b8cc5608795f7654ad3a7e9cfcd408c7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-cycle-projected-ice-review/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/HASHES.json",
+    "sha256": "9e13a1b4d46aca8259faf57f7515230267631482386a892568a6810464a4a7ba"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-cycle-projected-ice-review/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/pr8038-evidence-native-cycle-projected-ice-review-PREREGISTRATION.md",
+    "sha256": "ea7f3a9f84f84fae5ab52043ba931ba47f1bb6ad2afda9a18c0e4478a89ccf75"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-cycle-projected-ice-review/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/RESULT.json",
+    "sha256": "d35277bb4201b189704be11d24cf1fb67d866cef2b665c5bee6bb070c87cc351"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-cycle-projected-ice-review/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-cycle-projected-ice-review/check.py",
+    "sha256": "fa110c04740ba12c7a7cedc12b4aef26aefdef49be16af29f579b4c1cef1c2c9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/DERIVATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/pr8038-evidence-native-dynamical-cycle-dictionary-DERIVATION.md",
+    "sha256": "f7598a669f9a263f21288dc7fbdf8bc76069fd72008865c010089f2fdf41945a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/HASHES.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/HASHES.json",
+    "sha256": "8b7922b4ce5b93379fcd3bed1358ae16e0677a769e60e9362e0029acc985ede0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/PREREGISTRATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/pr8038-evidence-native-dynamical-cycle-dictionary-PREREGISTRATION.md",
+    "sha256": "ec19ca3c6172d2bda35fad0c7af4a6b9e56d8223d60d87183993f455cf8103c9"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/RESULT.json",
+    "sha256": "843afa780fe1c83ec8514b4b9898e0f81472b0c789fd45fd72b9cbe06abf380c"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/RESULT_BEFORE_QUADRATIC_SUPPLEMENT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/RESULT_BEFORE_QUADRATIC_SUPPLEMENT.json",
+    "sha256": "08f8471f529f495035785b0292320459de50df66838516029da84a5259a5b530"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/SOURCE_BINDING.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/SOURCE_BINDING.json",
+    "sha256": "3c301556976f8a355655e82e2f1e51c19e4eb4f4bf90173088678f61ac9f1c34"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/check.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/check.py",
+    "sha256": "bba0ce8393553bdb5aa8b7504090727a0b39cffeb146c16f27afb94b1c20bb09"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/native-dynamical-cycle-dictionary/check_before_quadratic_supplement.py",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/native-dynamical-cycle-dictionary/check_before_quadratic_supplement.py",
+    "sha256": "76f1e617c0f3b2673fd64e995d38992f938c4c6057d402dfa385be3ab64ea06a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/strict-cli.stderr",
+    "final_path": "docs/work_history/repo/review_feedback/pr8038-native-cycle-evidence/evidence/strict-cli.stderr",
+    "sha256": "c7323cea148ec91c801d8cc4701d6eb9750bd290440754731195bf19bd87130e"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "pr": 8117,
+  "original_head": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
+  "branch": "physics-loop/toe-ice-winding-response-20260914",
+  "landing": "48e73ffda637f59c1e784956ce9cdb2da7b3d180",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-ice-winding-response-20260914",
+    "headRefOid": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8117,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8117"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
+    "state": "CLOSED"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "excluded_metadata": [
+    "seconds",
+    "elapsed_seconds",
+    "source_sha256",
+    "runner_sha256",
+    "note_sha256",
+    "derivation_sha256"
+  ],
+  "differences": [],
+  "mathematical_fields": "Compared recursively against frozen original outputs"
+}

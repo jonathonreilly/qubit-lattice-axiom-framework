@@ -1,0 +1,158 @@
+[
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "general_pulse_sign",
+    "reason": "Reverse the physical effect-dependent pulse sign.",
+    "error": "AssertionError: general_native_Lueders_map_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "full_carrier_normalization",
+    "reason": "Remove the required square-root-of-two normalization from both physical pulse terms.",
+    "error": "AssertionError: general_effect_unitary_full_carrier"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "matter_control_omitted",
+    "reason": "Replace the informative physical pulse by the matter-independent program pulse.",
+    "error": "AssertionError: parity_native_map_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "parity_effect_orientation",
+    "reason": "Assign the opposite calibrated parity effect to the fixed native Record sign.",
+    "error": "AssertionError: parity_effect_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "physical_current_sign",
+    "reason": "Reverse the physical current dictionary while retaining the independently assembled hopping continuity equation.",
+    "error": "AssertionError: physical_current_continuity_0_3"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "selective_current_attenuation",
+    "reason": "Omit the selective incident-current attenuation.",
+    "error": "AssertionError: selective_incident_current_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "incident_energy_support",
+    "reason": "Use the full protected Hamiltonian in place of its incident odd part.",
+    "error": "AssertionError: native_incident_energy_split"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "noncommuting_history_order",
+    "reason": "Reverse the noncommuting sequential history effect.",
+    "error": "AssertionError: ordered_history_effect_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "old_record_preservation",
+    "reason": "Use the first candidate edge as the next control, violating the old Record commutant.",
+    "error": "AssertionError: old_Record_commutes_next_pulse"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "Slater_normalizing_Gram",
+    "reason": "Discard the rank-one Gram denominator in the conditional occupied-space projector.",
+    "error": "AssertionError: Slater_filter_CAR_vs_Gram_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "complex_Slater_adjoint",
+    "reason": "Replace the occupied-orbital adjoint by a transpose for a complex state.",
+    "error": "AssertionError: initial_even_Slater_covariance"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "Slater_right_filter",
+    "reason": "Drop the right filter in the conditional covariance.",
+    "error": "AssertionError: Slater_filter_CAR_vs_Gram_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json",
+    "name": "zero_branch_orientation",
+    "reason": "Label the certain branch as the impossible branch for a constant effect.",
+    "error": "AssertionError: constant_effect_zero_branch_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "general_pulse_sign",
+    "reason": "Reverse the physical effect-dependent pulse sign.",
+    "error": "AssertionError: general_native_Lueders_map_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "full_carrier_normalization",
+    "reason": "Remove the required square-root-of-two normalization from both physical pulse terms.",
+    "error": "AssertionError: general_effect_unitary_full_carrier"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "matter_control_omitted",
+    "reason": "Replace the informative physical pulse by the matter-independent program pulse.",
+    "error": "AssertionError: parity_native_map_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "parity_effect_orientation",
+    "reason": "Assign the opposite calibrated parity effect to the fixed native Record sign.",
+    "error": "AssertionError: parity_effect_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "physical_current_sign",
+    "reason": "Reverse the physical current dictionary while retaining the independently assembled hopping continuity equation.",
+    "error": "AssertionError: physical_current_continuity_0_3"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "selective_current_attenuation",
+    "reason": "Omit the selective incident-current attenuation.",
+    "error": "AssertionError: selective_incident_current_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "incident_energy_support",
+    "reason": "Use the full protected Hamiltonian in place of its incident odd part.",
+    "error": "TypeError: cannot determine truth value of Relational: 1/8 - sqrt(3)*sqrt(8354 + 5603143/(594169793 + 120*sqrt(11098945904115)*I)**(1/3) + 7*(594169793 + 120*sqrt(11098945904115)*I)**(1/3))/3360 >= 0"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "noncommuting_history_order",
+    "reason": "Reverse the noncommuting sequential history effect.",
+    "error": "AssertionError: ordered_history_effect_1_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "old_record_preservation",
+    "reason": "Use the first candidate edge as the next control, violating the old Record commutant.",
+    "error": "AssertionError: old_Record_commutes_next_pulse"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "Slater_normalizing_Gram",
+    "reason": "Discard the rank-one Gram denominator in the conditional occupied-space projector.",
+    "error": "AssertionError: Slater_filter_CAR_vs_Gram_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "complex_Slater_adjoint",
+    "reason": "Replace the occupied-orbital adjoint by a transpose for a complex state.",
+    "error": "AssertionError: initial_even_Slater_covariance"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "Slater_right_filter",
+    "reason": "Drop the right filter in the conditional covariance.",
+    "error": "AssertionError: Slater_filter_CAR_vs_Gram_1"
+  },
+  {
+    "stage": ".claude/science/physics-loops/native-informative-record-20260913/recovery/first_mutation_attempt/RESULTS.json",
+    "name": "zero_branch_orientation",
+    "reason": "Label the certain branch as the impossible branch for a constant effect.",
+    "error": "AssertionError: constant_effect_zero_branch_1"
+  }
+]

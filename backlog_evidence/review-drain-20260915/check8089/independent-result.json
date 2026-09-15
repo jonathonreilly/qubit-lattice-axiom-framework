@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "checks": [
+    "general_full_carrier_unitary",
+    "general_effect_branch_-1",
+    "general_effect_branch_1",
+    "pulse_sign_mutant_rejected",
+    "selective_X_-1",
+    "selective_X_1",
+    "dephasing_channel",
+    "contrast_disturbance_saturation",
+    "orthonormal_complex_orbitals",
+    "wedge_norm_by_minors",
+    "normalized_occupied_space",
+    "idempotent_update",
+    "fixed_particle_number"
+  ],
+  "total_pass": 13,
+  "seconds": 0.30422916705720127,
+  "scope": "Independent exact syndrome dilation, parity channel and exterior-algebra Slater controls; no primary import or execution."
+}

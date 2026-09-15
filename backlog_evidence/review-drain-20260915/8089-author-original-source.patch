@@ -1,0 +1,1373 @@
+diff --git a/docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md b/docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md
+new file mode 100644
+index 0000000000..9b8a70f4a0
+--- /dev/null
++++ b/docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md
+@@ -0,0 +1,425 @@
++---
++claim_id: native_informative_edge_record_and_disturbance_bounded_theorem_note_2026-09-13
++claim_type: bounded_theorem
++claim_scope: "On the supplied finite native edge/CAR carrier with a connected protected graph, any full-carrier protected binary effect has an explicit cycle-pulse realization as a single-site edge Record with the corresponding decoded Lueders instrument. Native parity pulses have bounded plaquette-star support, exact selective and averaged current/energy formulas, a sharp contrast/disturbance relation and even-Slater finite-history updates. Born weights, code, preparation, controls and scheduling remain supplied; a complete physical nearest-neighbor Record law is not derived."
++upstream_dependencies:
++  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
++runner: scripts/native_informative_edge_record_2026_09_13.py
++---
++
++# Native informative edge Records and their matter disturbance
++
++**Date:** 2026-09-13
++**Type:** bounded_theorem
++**Status:** proposed_retained
++
++An explicit pulse turns a native nonbridge edge Record into a binary
++measurement of protected matter while the protected graph stays connected.
++The parity specialization gives its exact information, disturbance, current
++and matter-energy account. This is a conditional quantum-carrier theorem;
++Born probabilities, preparation, pulse selection and occurrence remain inputs.
++Actual current-surface status is conditional-support. Independent source
++review and formal audit remain pending.
++
++~~~yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++target_claim_type: bounded_theorem
++claim_type_reason: "Full-carrier operator identities and a general finite-history proof, with exact physical Pauli and separately constructed CAR/Slater checks."
++trace_class: upstream_support
++target_claim_id: native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
++target_blocker_text: "Obtain matter information through a native edge Record without requiring that event to disconnect the protected matter graph."
++source_of_blocker_text: frontier_question
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "Supply a complete neighboring-Record carrier for the event statistic and a physical law selecting preparation, controls and occurrence."
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++~~~
++
++| Input or obligation | Treatment |
++|---|---|
++| [Native edge/CAR source](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md), equations1–4 and Theorems1–3 | Conditional carrier, code, nonbridge isometry, number and hopping dictionary; the required hypotheses are restated below |
++| Ordinary composition, finite graph, protected spanning graph, input quantum state and Pauli frame | Supplied physical/model conditions |
++| Full-carrier positive effect, cycle pulse, Born/Lueders readout and event schedule | Supplied program and event conditions; the resulting native instrument is derived |
++| Connected matter instrument, parity response, instantaneous current/energy and pure even-Slater update | Proved below on the declared domain |
++| Physical local Record law, preparation, calibration, autonomous control and total apparatus energy | Separate open obligations |
++
++The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) does not by itself
++select this quantum carrier or program. The approved scale, kinetic-isotropy
++and realized-state primitives are not treated as missing premises. This
++calculation does not add an axiom, primitive, fitted observation, editable
++prompt or audit verdict.
++
++## 1. Physical algebra and supplied inputs
++
++Use the finite connected simple graph and actual edge qubits of the native
++edge-Record note of2026-09-05. Vertices are at2v and the qubit for(v,v+e_a)
++at2v+e_a. With fixed vertex labels and neighbor orders, define
++
++\[
++B_i=\prod_{e\ni i}Z_e,\quad
++A_{ij}=\epsilon_{ij}X_{ij}
++ \prod_{k<_i j}Z_{ik}\prod_{l<_j i}Z_{jl},\quad
++T_{ij}=\frac i2 A_{ij}(B_i-B_j).
++\tag{1}
++\]
++
++For an oriented cycle C of length l, S_C=i^l product_C A is a central
++Hermitian involution; its X support is the cycle. The remaining code P
++fixes every remaining cycle to+1 and every old Record Z to its recorded
++sign. On a connected remaining graph it faithfully carries the global
++even-CAR algebra, with
++
++\[
++B_v=1-2n_v,\quad A_{ij}=-i\gamma_{2i}\gamma_{2j},\quad
++T_{ij}=c_i^\dagger c_j+c_j^\dagger c_i.
++\tag{2}
++\]
++
++Odd global parity is absent on the unaugmented carrier. A fixed total-N
++sector is allowed only when it is compatible with that even parity.
++
++Protect a connected spanning subgraph \(\mathcal B\). Candidate edges
++outside it never hop: the supplied matter Hamiltonian is
++\(H_{\mathcal B}=\sum_{f\in\mathcal B}a_fT_f\), real|a_f|<=t.
++Every unused candidate e has a cycle C_e made of e and a protected path.
++Let S=S_Ce, Z=Z_e, Q_z=(I+zZ)/2. Then SP=P and{S,Z}=0.
++The protected physical algebra \(\mathcal A_{\mathcal B}\), generated
++by all B_v and protected A_f, commutes with S,Z and all old Record Z's.
++The maps J_z=sqrt2 Q_zP are isometries from the incoming code onto the
++new code after e records. They intertwine every protected observable.
++
++Ordinary composition, this placement/code, the input state, Hamiltonian,
++chosen pulse/effect and its Born/Lueders event/schedule are supplied.
++They are not selected by the four current framework axioms. The result
++does not identify a quantum density matrix as extra framework ontology.
++
++## 2. Any protected binary Lueders effect at the native edge
++
++Let E be a physical full-carrier operator in \(\mathcal A_{\mathcal B}\)
++with0<=E<=I on that full carrier. Positivity merely on P is insufficient
++for the following physical functional calculus. Define
++
++\[
++E_+=E,\quad E_-=I-E,\quad
++a=\frac{\sqrt E+\sqrt{I-E}}{\sqrt2},\quad
++b=\frac{\sqrt E-\sqrt{I-E}}{\sqrt2},\quad U_E=a+bZS.
++\tag{3}
++\]
++
++These commuting Hermitian functions of E commute with Z,S, and a²+b²=I.
++Since(ZS)†=-ZS and(ZS)²=-I, U_E†U_E=I on the full physical carrier.
++Using SP=P and Q_z Z=zQ_z gives the exact code identity
++
++\[
++K_zP:=Q_zU_EP
++=(a+zb)Q_zP=J_z\sqrt{E_z}P.
++\tag{4}
++\]
++
++Thus, for every protected O and arbitrary code state, including an
++entangled external reference,
++
++\[
++PK_z^\dagger K_zP=PE_zP,\qquad
++PK_z^\dagger O K_zP=P\sqrt{E_z}O\sqrt{E_z}P.
++\tag{5}
++\]
++
++This is the binary Lueders instrument after decoding through J_z. Its
++single-site physical Record is the actual Z_e outcome. No new clean pointer
++qubit was appended; the incoming cycle code is an essential supplied
++resource. Generic E can have extensive support. Functional calculus stays
++inside its tensor-factor support, so support(U_E) is contained in the union
++of support(E) and support(ZS), without a general locality bound for E.
++
++Every unused cycle of the form f plus a protected path excludes e and
++commutes with U_E and Q_z. Old Records also commute. The next code is
++therefore valid: these cycles together with the protected cycles generate
++all remaining cycle relations, by choosing a spanning tree inside the
++protected graph. The construction repeats, even for noncommuting
++successive protected effects. Induction of(4) gives the ordinary ordered
++Lueders history, with any supplied protected Hamiltonian dwell interleaved.
++Generic effects need not conserve N. This is the standard binary dilation
++algebra realized in this existing native cycle carrier, not a Born derivation.
++
++## 3. Native parity pulse, selective update and bounded support
++
++Choose a vertex v incident to e and put B=B_v. Let0<=theta<=pi/2,
++c=cos(theta/2),s=sin(theta/2), kappa=sin(theta), eta=cos(theta).
++The physical Hermitian involution Y=iZS commutes with B. Set
++
++\[
++U_v=\exp[-i\theta BY/2]=cI+sBZS,\qquad
++F_z=(cI+zsB)/\sqrt2,\qquad E_z=\tfrac12(I+z\kappa B).
++\tag{6}
++\]
++
++Both F_z are positive on this theta range, and K_zP=J_zF_zP.
++For m=Tr(rho B),
++
++\[
++p_z=\tfrac12(1+z\kappa m),\quad
++\rho_z=F_z\rho F_z/p_z,\quad
++m_z=\frac{m+z\kappa}{1+z\kappa m}.
++\tag{7}
++\]
++
++Only p_z>0 branches are normalized. The decoded nonselective channel is
++
++\[
++\Lambda_v(\rho)=c^2\rho+s^2B\rho B
++=\tfrac{1+\eta}{2}\rho+\tfrac{1-\eta}{2}B\rho B.
++\tag{8}
++\]
++
++Write O=O_++O_- with O_±=(O±BOB)/2. Direct expansion of F_z O F_z gives
++
++\[
++\langle O\rangle_z=
++\frac{\langle O_+\rangle+z\kappa\langle BO_+\rangle
++ +\eta\langle O_-\rangle}{1+z\kappa m},\qquad
++\Lambda_v^*(O)=O_++\eta O_-.
++\tag{9}
++\]
++
++All coefficients, including the selective denominator, are derived from
++the same instrument. For a plaquette C_e, the generator BY lies within
++the four vertex stars. Those stars have at most4*6-4=20 distinct edge
++factors in the cubic graph, each at physical Manhattan distance at most4
++from the candidate midpoint. B_v adds none outside these stars. This is
++a bounded support pulse, not a nearest-neighbor gate synthesis or an
++autonomously selected Hamiltonian.
++
++At kappa=0 the pulse is the fair state-preserving event. At kappa=1 it
++projectively measures vertex parity while the protected graph stays
++connected. Later hopping can change that parity: the permanent edge Z
++records its value at this event, not an eternally frozen occupation.
++For all strengths, [B,N]=0, so every branch preserves a sharp N and the
++nonselective channel preserves the full initial N distribution. A selective
++branch can update the classical probabilities of different N sectors
++when B is correlated with N; it does not generally preserve that distribution.
++
++## 4. Current and a common matter-energy ledger
++
++For oriented protected i<j define
++
++\[
++I_{ij}=ia_{ij}(c_i^\dagger c_j-c_j^\dagger c_i)
++=-\tfrac{a_{ij}}2 A_{ij}(I-B_iB_j).
++\tag{10}
++\]
++
++The second equality follows by expanding the Majoranas in(2) and projecting
++onto opposite occupations. This observable anticommutes with B_v exactly
++when v is one endpoint, and otherwise commutes. The instantaneous mean
++incident current is multiplied by eta nonselectively and by
++eta/(1+z kappa m) conditionally. A nonzero incident mean keeps its sign on
++supported branches when theta<pi/2. A disjoint current is unchanged
++nonselectively, but can update conditionally through its correlation with B.
++These statements do not assert persistent transport for arbitrary later
++interleaved histories; information acquisition changes the matter state.
++
++The odd part of H_B under B_v is exactly
++
++\[
++H_-:=\tfrac12(H_{\mathcal B}-B_vH_{\mathcal B}B_v)
++=\sum_{f\in\mathcal B:f\ni v}a_fT_f.
++\tag{11}
++\]
++
++Consequently, using one fixed Hamiltonian and energy zero,
++
++\[
++\Delta\overline E_{\rm matter}
++=-(1-\eta)\langle H_-\rangle,\qquad
++|\Delta\overline E_{\rm matter}|
++\le(1-\eta)\|H_-\|
++\le6t(1-\eta).
++\tag{12}
++\]
++
++The last bound uses degree at most6 and||T_f||<=1. No candidate hopping
++is deleted at this event because it was zero from the outset. Equation(12)
++accounts for the matter change under the complete pulse and readout; the
++pulse usually does not commute with H_B. An energy-conserving controller,
++battery and its preparation remain an additional physical obligation.
++
++## 5. Sharp contrast versus disturbance: elementary proof
++
++For any finite instrument with Kraus operators A_zr on a finite code, let
++Lambda be its decoded nonselective channel. A fixed desired output unitary
++may first be undone in this definition. Let epsilon=||Lambda-Id||_diamond
++using the full trace norm convention, without a factor1/2. For two
++orthonormal inputs|0>,|1>, let p_z,q_z be its outcome distributions and
++D=(1/2)sum_z|p_z-q_z| their total variation distance. Then
++
++\[
++\epsilon\ \ge\ 1-\sqrt{1-D^2}.
++\tag{13}
++\]
++
++To prove this, the preserved coherence coefficient is
++
++\[
++u=\langle0|\Lambda(|0\rangle\langle1|)|1\rangle
++=\sum_{z,r}\langle0|A_{zr}|0\rangle
++ \overline{\langle1|A_{zr}|1\rangle}.
++\]
++
++Cauchy-Schwarz within each outcome gives
++|u|<=sum_z sqrt(p_z q_z)=b, because each diagonal Kraus amplitude is at
++most the corresponding output-vector norm. The diamond norm bounds the
++induced trace norm on the unit-trace-norm operator|0><1|, hence|u-1|<=epsilon.
++Thus b>=1-epsilon if epsilon<=1. A second Cauchy-Schwarz inequality gives
++
++\[
++D^2=\tfrac14\left(\sum_z|\sqrt{p_z}-\sqrt{q_z}|
++ (\sqrt{p_z}+\sqrt{q_z})\right)^2
++\le1-b^2\le2\epsilon-\epsilon^2.
++\]
++
++Rearrange for(13); for epsilon>1 the bound is immediate since its right
++side is at most1. No restriction to two-dimensional codes, pure output
++states, minimal dilations or ancilla-free implementations was made.
++
++If the native code contains both B eigenvalues, take its two eigenstates.
++Equation(6) gives D=kappa. Equation(8) gives
++epsilon=(1-eta)||Ad_B-Id||_diamond/2=1-eta: the upper bound is2 for the
++channel difference, and the balanced superposition of opposite B states
++has orthogonal images under B, attaining2. Thus(13) is saturated exactly.
++If a further restriction makes B scalar, both contrast and disturbance
++vanish and the saturation statement with D=kappa does not apply there.
++
++This is an elementary information-disturbance optimization and its native
++realization. Information-disturbance tradeoffs are established mathematics;
++see Kretschmann, Schlingemann and Werner,
++[quant-ph/0605009](https://arxiv.org/abs/quant-ph/0605009), for the general
++channel context. The proof above does not import a theorem from that paper.
++Preservation of one observable is much weaker than closeness of the full
++channel: B itself is exactly preserved nonselectively while D can be positive.
++
++## 6. Exact even-Slater history update
++
++For theta<pi/2, each F_z is a positive multiple of an exponential of n_v:
++
++\[
++F_z=a_z r_z^{n_v},\quad
++a_z=(c+zs)/\sqrt2,\quad r_z=(c-zs)/(c+zs)>0.
++\tag{14}
++\]
++
++Consider a pure Slater determinant of even particle number on the connected
++code. Define C_ij=<c_j†c_i>, its occupied-space orthogonal projector,
++nu=C_vv, R=I+(r_z-1)|v><v| and d=r_z²-1. Its conditional one-particle
++projector is
++
++\[
++C'=R\left[C-\frac{d\,C|v\rangle\langle v|C}{1+d\nu}\right]R,
++\quad p_z=a_z^2(1+d\nu)
++=\tfrac12[1+z\kappa(1-2\nu)].
++\tag{15}
++\]
++
++Proof: write the orthonormal occupied orbitals as the columns of V.
++The many-particle filter maps their wedge to the wedge of RV, with squared
++norm det(V†R²V)=1+d nu. The normalized occupied projector is
++RV(V†R²V)^(-1)V†R. The rank-one inverse formula yields(15).
++The denominator is positive since r_z>0 and0<=nu<=1. Hence C'²=C',
++Tr C'=Tr C, and the state remains a pure even Slater determinant.
++Any number-conserving quadratic dwell applies its one-particle unitary to
++the occupied subspace. Induction gives a closed exact finite history within
++this supplied state class. Projective endpoint branches are obtained directly
++from F_z, or their nonzero-branch limits; formula(14) is not used at a zero
++denominator. In this convention <I_ij>=2a_ij Im C_ij.
++
++No closure is claimed for an even-parity-conditioned mixed Gaussian:
++conditioning on global parity generally destroys Gaussianity. The input
++Slater state, orbital phases and preparation are still conditions, and the
++full matrix C is not a demonstrated local Record statistic.
++
++## 7. The precise remaining local-law question
++
++Fix nonzero kappa and a finite or countable specified ready-history family.
++The local matrix conditions have their usual Borel sigma algebra. Let eta_h denote
++the COMPLETE physical nearest-neighbor Record condition at the forming edge
++(distinct from the cosine eta in earlier sections). The candidate's native
++binary probabilities are p_z(h)=[1+z kappa m_v(h)]/2. There exists one
++binary content law on this family depending only on eta_h if and only if
++
++\[
++\eta_{h_1}=\eta_{h_2}\quad\Longrightarrow\quad
++m_v(h_1)=m_v(h_2).
++\tag{16}
++\]
++
++This follows by inversion of p_+(h); sufficiency defines the law on each
++fiber. Its realized condition set is countable, so this map is Borel there
++and extends measurably by a fixed binary law elsewhere. For an uncountable
++ready family, fiber constancy is only the set-theoretic factorization
++criterion; the induced mean on conditions must additionally be measurable
++to define a stochastic kernel. No such measurability is inferred solely
++from fiber constancy. At kappa=0 the fair kernel works automatically.
++If two same-condition histories
++have means m_1,m_2, their native outcome total variation is
++|kappa||m_1-m_2|/2. Any one proposed law for that condition has maximal
++error at least|kappa||m_1-m_2|/4 on the pair; the midpoint law attains it.
++This is a two-distribution optimization, not an exhaustion of physical
++carrier constructions or a general framework impossibility theorem.
++
++The current proposal has not encoded m_v(h), or a sufficient alternative,
++into complete neighboring permanent Records for every supported native
++history. Merely supplying two distinct quantum preparations at the same
++Record condition would test this chosen ready family; it would not prove
++that they are two admissible full framework states. Equation(7) updates m
++at the measurement, but Hamiltonian dwell also requires correlations.
++Equation(15) closes a quantum calculator, not the physical local carrier.
++
++This construction therefore supplies a matter-informative native event, its exact
++disturbance and energy price, and an explicit remaining factorization test.
++It neither derives physical Born probabilities from the axioms nor forces
++an axiom update. Occurrence, control, preparation, covariance of role choice,
++physical calibration and a complete nearest-neighbor Record law remain open.
++
++## 8. Checks, prior work and authority
++
++The [primary runner](../scripts/native_informative_edge_record_2026_09_13.py) performs188 exact grouped assertions.
++It independently assembles physical ordered Pauli operators on a four-edge
++square and two adjacent squares with seven edge qubits. The latter tests
++two noncommuting effects, preservation of the first Record and the unused
++cycle, and the full ordered history effect. Constant effects0/I test zero
++branches without normalization. Five parity strengths include both endpoints.
++A positive input has nonzero matter parity, bond current and bond energy.
++The physical continuity commutator independently checks each current sign.
++
++A separate occupation-bit four-mode CAR construction verifies the current
++dictionary and the Gram update of a complex two-particle Slater state through
++two informative events and an intervening quadratic dwell. An explicit
++even-state mixture changes its conditional mean particle number from1 to2/5;
++this supports the selective-sector-weight qualification in section3.
++There is no numerical tolerance, Monte Carlo estimate or SDP in these checks.
++Finite examples support the written general proof; they do not replace it.
++
++Generic binary dilation and information-disturbance tradeoffs are established
++mathematics. The contribution here is their explicit realization and resource
++account on this supplied physical cycle carrier. Existing native bridge
++parity measurements and fair nonbridge isometries are in the linked parent.
++Programmed leaf filtering and bridge entangling are related prior proposals;
++neither their unlanded conclusions nor their source bytes are proof inputs.
++
++The [source manifest](../.claude/science/physics-loops/native-informative-record-20260913/SOURCE_MANIFEST.json) preserves discovery
++provenance. The [cold review and recovery record](../.claude/science/physics-loops/native-informative-record-20260913/REVIEW_HISTORY.md)
++records the measurable-factor qualification found by the author; the original
++proof is retained in the packet. The [mutation results](../.claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json)
++record actual altered sources and rejected predicates. The
++[scope record](../.claude/science/physics-loops/native-informative-record-20260913/NO_GO_DISCIPLINE_CHECKLIST.md) distinguishes the
++positive construction/optimization from a carrier-exhaustion claim.
++
++All current mathematical inputs are on main or in this delta. Independent
++source review is pending. The full mechanical pipeline, strict lint and
++ledger-based changed-evidence validation on the exact combined current-main
++candidate remain integration gates before landing. The author does not
++land science, invoke formal audit or assign an audit verdict.
+diff --git a/logs/runner-cache/native_informative_edge_record_2026_09_13.txt b/logs/runner-cache/native_informative_edge_record_2026_09_13.txt
+new file mode 100644
+index 0000000000..4217096673
+--- /dev/null
++++ b/logs/runner-cache/native_informative_edge_record_2026_09_13.txt
+@@ -0,0 +1,596 @@
++===== runner cache v1 =====
++runner: scripts/native_informative_edge_record_2026_09_13.py
++runner_sha256: 166ed0fdd970ba981756f4e5163d1f29a28e72b7e17a7c7720d3744f9f50780e
++input_fingerprint_sha256: f27310f32d274b3c381b02846c126e693ffe1f78d10120f88bb0343992ba4e23
++timeout_sec: 180
++exit_code: 0
++elapsed_sec: 1.54
++status: ok
++----- stdout -----
++{
++  "status": "pass",
++  "checks": [
++    {
++      "name": "physical_current_continuity_0_3"
++    },
++    {
++      "name": "physical_current_continuity_1_2"
++    },
++    {
++      "name": "physical_current_continuity_2_3"
++    },
++    {
++      "name": "native_incident_energy_split"
++    },
++    {
++      "name": "native_cycle_hermitian_involution"
++    },
++    {
++      "name": "native_cycle_is_hermitian"
++    },
++    {
++      "name": "native_cycle_anticommutes_record_Z"
++    },
++    {
++      "name": "native_incoming_even_code_rank"
++    },
++    {
++      "name": "full_native_vertex_product_even"
++    },
++    {
++      "name": "protected_generators_commute_cycle_and_Record"
++    },
++    {
++      "name": "noncommuting_effect_involution"
++    },
++    {
++      "name": "effect_physical_square_root"
++    },
++    {
++      "name": "complement_physical_square_root"
++    },
++    {
++      "name": "general_effect_unitary_full_carrier"
++    },
++    {
++      "name": "general_native_Lueders_map_1"
++    },
++    {
++      "name": "general_native_effect_1"
++    },
++    {
++      "name": "general_protected_noncommuting_observable_1"
++    },
++    {
++      "name": "general_next_code_surjectivity_1"
++    },
++    {
++      "name": "general_native_Lueders_map_-1"
++    },
++    {
++      "name": "general_native_effect_-1"
++    },
++    {
++      "name": "general_protected_noncommuting_observable_-1"
++    },
++    {
++      "name": "general_next_code_surjectivity_-1"
++    },
++    {
++      "name": "general_effect_is_matter_informative"
++    },
++    {
++      "name": "constant_effect_endpoint_unitary_1"
++    },
++    {
++      "name": "constant_effect_zero_branch_1"
++    },
++    {
++      "name": "constant_effect_endpoint_unitary_-1"
++    },
++    {
++      "name": "constant_effect_zero_branch_-1"
++    },
++    {
++      "name": "native_fixture_positive_normalized",
++      "sufficient_perturbation_bound": "1/4+1/5+1/7<1"
++    },
++    {
++      "name": "native_fixture_has_current_and_energy"
++    },
++    {
++      "name": "parity_physical_unitary_0"
++    },
++    {
++      "name": "parity_native_map_0_1"
++    },
++    {
++      "name": "parity_effect_0_1"
++    },
++    {
++      "name": "parity_probability_0_1"
++    },
++    {
++      "name": "selective_parity_mean_0_1"
++    },
++    {
++      "name": "selective_incident_current_0_1"
++    },
++    {
++      "name": "normalized_selective_parity_0_1"
++    },
++    {
++      "name": "normalized_selective_current_0_1"
++    },
++    {
++      "name": "selective_number_commutation_0_1"
++    },
++    {
++      "name": "parity_native_map_0_-1"
++    },
++    {
++      "name": "parity_effect_0_-1"
++    },
++    {
++      "name": "parity_probability_0_-1"
++    },
++    {
++      "name": "selective_parity_mean_0_-1"
++    },
++    {
++      "name": "selective_incident_current_0_-1"
++    },
++    {
++      "name": "normalized_selective_parity_0_-1"
++    },
++    {
++      "name": "normalized_selective_current_0_-1"
++    },
++    {
++      "name": "selective_number_commutation_0_-1"
++    },
++    {
++      "name": "nonselective_channel_0"
++    },
++    {
++      "name": "nonselective_energy_change_0"
++    },
++    {
++      "name": "nonselective_current_0_(0, 3)"
++    },
++    {
++      "name": "nonselective_current_0_(1, 2)"
++    },
++    {
++      "name": "nonselective_current_0_(2, 3)"
++    },
++    {
++      "name": "diamond_lower_witness_0"
++    },
++    {
++      "name": "contrast_disturbance_saturation_0"
++    },
++    {
++      "name": "parity_physical_unitary_1"
++    },
++    {
++      "name": "parity_native_map_1_1"
++    },
++    {
++      "name": "parity_effect_1_1"
++    },
++    {
++      "name": "parity_probability_1_1"
++    },
++    {
++      "name": "selective_parity_mean_1_1"
++    },
++    {
++      "name": "selective_incident_current_1_1"
++    },
++    {
++      "name": "normalized_selective_parity_1_1"
++    },
++    {
++      "name": "normalized_selective_current_1_1"
++    },
++    {
++      "name": "selective_number_commutation_1_1"
++    },
++    {
++      "name": "parity_native_map_1_-1"
++    },
++    {
++      "name": "parity_effect_1_-1"
++    },
++    {
++      "name": "parity_probability_1_-1"
++    },
++    {
++      "name": "selective_parity_mean_1_-1"
++    },
++    {
++      "name": "selective_incident_current_1_-1"
++    },
++    {
++      "name": "normalized_selective_parity_1_-1"
++    },
++    {
++      "name": "normalized_selective_current_1_-1"
++    },
++    {
++      "name": "selective_number_commutation_1_-1"
++    },
++    {
++      "name": "nonselective_channel_1"
++    },
++    {
++      "name": "nonselective_energy_change_1"
++    },
++    {
++      "name": "nonselective_current_1_(0, 3)"
++    },
++    {
++      "name": "nonselective_current_1_(1, 2)"
++    },
++    {
++      "name": "nonselective_current_1_(2, 3)"
++    },
++    {
++      "name": "diamond_lower_witness_1"
++    },
++    {
++      "name": "contrast_disturbance_saturation_1"
++    },
++    {
++      "name": "parity_physical_unitary_2"
++    },
++    {
++      "name": "parity_native_map_2_1"
++    },
++    {
++      "name": "parity_effect_2_1"
++    },
++    {
++      "name": "parity_probability_2_1"
++    },
++    {
++      "name": "selective_parity_mean_2_1"
++    },
++    {
++      "name": "selective_incident_current_2_1"
++    },
++    {
++      "name": "normalized_selective_parity_2_1"
++    },
++    {
++      "name": "normalized_selective_current_2_1"
++    },
++    {
++      "name": "selective_number_commutation_2_1"
++    },
++    {
++      "name": "parity_native_map_2_-1"
++    },
++    {
++      "name": "parity_effect_2_-1"
++    },
++    {
++      "name": "parity_probability_2_-1"
++    },
++    {
++      "name": "selective_parity_mean_2_-1"
++    },
++    {
++      "name": "selective_incident_current_2_-1"
++    },
++    {
++      "name": "normalized_selective_parity_2_-1"
++    },
++    {
++      "name": "normalized_selective_current_2_-1"
++    },
++    {
++      "name": "selective_number_commutation_2_-1"
++    },
++    {
++      "name": "nonselective_channel_2"
++    },
++    {
++      "name": "nonselective_energy_change_2"
++    },
++    {
++      "name": "nonselective_current_2_(0, 3)"
++    },
++    {
++      "name": "nonselective_current_2_(1, 2)"
++    },
++    {
++      "name": "nonselective_current_2_(2, 3)"
++    },
++    {
++      "name": "diamond_lower_witness_2"
++    },
++    {
++      "name": "contrast_disturbance_saturation_2"
++    },
++    {
++      "name": "parity_physical_unitary_3"
++    },
++    {
++      "name": "parity_native_map_3_1"
++    },
++    {
++      "name": "parity_effect_3_1"
++    },
++    {
++      "name": "parity_probability_3_1"
++    },
++    {
++      "name": "selective_parity_mean_3_1"
++    },
++    {
++      "name": "selective_incident_current_3_1"
++    },
++    {
++      "name": "normalized_selective_parity_3_1"
++    },
++    {
++      "name": "normalized_selective_current_3_1"
++    },
++    {
++      "name": "selective_number_commutation_3_1"
++    },
++    {
++      "name": "parity_native_map_3_-1"
++    },
++    {
++      "name": "parity_effect_3_-1"
++    },
++    {
++      "name": "parity_probability_3_-1"
++    },
++    {
++      "name": "selective_parity_mean_3_-1"
++    },
++    {
++      "name": "selective_incident_current_3_-1"
++    },
++    {
++      "name": "normalized_selective_parity_3_-1"
++    },
++    {
++      "name": "normalized_selective_current_3_-1"
++    },
++    {
++      "name": "selective_number_commutation_3_-1"
++    },
++    {
++      "name": "nonselective_channel_3"
++    },
++    {
++      "name": "nonselective_energy_change_3"
++    },
++    {
++      "name": "nonselective_current_3_(0, 3)"
++    },
++    {
++      "name": "nonselective_current_3_(1, 2)"
++    },
++    {
++      "name": "nonselective_current_3_(2, 3)"
++    },
++    {
++      "name": "diamond_lower_witness_3"
++    },
++    {
++      "name": "contrast_disturbance_saturation_3"
++    },
++    {
++      "name": "parity_physical_unitary_4"
++    },
++    {
++      "name": "parity_native_map_4_1"
++    },
++    {
++      "name": "parity_effect_4_1"
++    },
++    {
++      "name": "parity_probability_4_1"
++    },
++    {
++      "name": "selective_parity_mean_4_1"
++    },
++    {
++      "name": "selective_incident_current_4_1"
++    },
++    {
++      "name": "normalized_selective_parity_4_1"
++    },
++    {
++      "name": "normalized_selective_current_4_1"
++    },
++    {
++      "name": "selective_number_commutation_4_1"
++    },
++    {
++      "name": "parity_native_map_4_-1"
++    },
++    {
++      "name": "parity_effect_4_-1"
++    },
++    {
++      "name": "parity_probability_4_-1"
++    },
++    {
++      "name": "selective_parity_mean_4_-1"
++    },
++    {
++      "name": "selective_incident_current_4_-1"
++    },
++    {
++      "name": "normalized_selective_parity_4_-1"
++    },
++    {
++      "name": "normalized_selective_current_4_-1"
++    },
++    {
++      "name": "selective_number_commutation_4_-1"
++    },
++    {
++      "name": "nonselective_channel_4"
++    },
++    {
++      "name": "nonselective_energy_change_4"
++    },
++    {
++      "name": "nonselective_current_4_(0, 3)"
++    },
++    {
++      "name": "nonselective_current_4_(1, 2)"
++    },
++    {
++      "name": "nonselective_current_4_(2, 3)"
++    },
++    {
++      "name": "diamond_lower_witness_4"
++    },
++    {
++      "name": "contrast_disturbance_saturation_4"
++    },
++    {
++      "name": "literal_plaquette_star_support",
++      "factors": 20,
++      "radius": 4
++    },
++    {
++      "name": "two_event_effects_really_noncommute"
++    },
++    {
++      "name": "two_event_native_code_dimension"
++    },
++    {
++      "name": "unused_cycle_survives_first_pulse"
++    },
++    {
++      "name": "old_Record_commutes_next_pulse"
++    },
++    {
++      "name": "two_native_noncommuting_events_1_1"
++    },
++    {
++      "name": "permanent_Record_final_code_1_1"
++    },
++    {
++      "name": "ordered_history_effect_1_1"
++    },
++    {
++      "name": "two_native_noncommuting_events_1_-1"
++    },
++    {
++      "name": "permanent_Record_final_code_1_-1"
++    },
++    {
++      "name": "ordered_history_effect_1_-1"
++    },
++    {
++      "name": "two_native_noncommuting_events_-1_1"
++    },
++    {
++      "name": "permanent_Record_final_code_-1_1"
++    },
++    {
++      "name": "ordered_history_effect_-1_1"
++    },
++    {
++      "name": "two_native_noncommuting_events_-1_-1"
++    },
++    {
++      "name": "permanent_Record_final_code_-1_-1"
++    },
++    {
++      "name": "ordered_history_effect_-1_-1"
++    },
++    {
++      "name": "independent_CAR_relations"
++    },
++    {
++      "name": "CAR_native_current_dictionary_0_1"
++    },
++    {
++      "name": "CAR_native_current_dictionary_0_3"
++    },
++    {
++      "name": "CAR_native_current_dictionary_2_3"
++    },
++    {
++      "name": "initial_even_Slater_covariance"
++    },
++    {
++      "name": "initial_even_Slater_two_particles"
++    },
++    {
++      "name": "Slater_filter_probability_1"
++    },
++    {
++      "name": "Slater_filter_CAR_vs_Gram_1"
++    },
++    {
++      "name": "Slater_filtered_projector_1"
++    },
++    {
++      "name": "Slater_filtered_particle_number_1"
++    },
++    {
++      "name": "free_dwell_CAR_vs_orbitals_1"
++    },
++    {
++      "name": "interleaved_two_event_Slater_history_1_1"
++    },
++    {
++      "name": "interleaved_two_event_Slater_history_1_-1"
++    },
++    {
++      "name": "Slater_filter_probability_-1"
++    },
++    {
++      "name": "Slater_filter_CAR_vs_Gram_-1"
++    },
++    {
++      "name": "Slater_filtered_projector_-1"
++    },
++    {
++      "name": "Slater_filtered_particle_number_-1"
++    },
++    {
++      "name": "free_dwell_CAR_vs_orbitals_-1"
++    },
++    {
++      "name": "interleaved_two_event_Slater_history_-1_1"
++    },
++    {
++      "name": "interleaved_two_event_Slater_history_-1_-1"
++    },
++    {
++      "name": "selective_number_distribution_is_not_preserved",
++      "before": "1",
++      "after": "2/5"
++    },
++    {
++      "name": "same_condition_pair_minimax"
++    }
++  ],
++  "total_pass": 188,
++  "total_fail": 0,
++  "elapsed_seconds": 1.22159270796692,
++  "runner_sha256": "166ed0fdd970ba981756f4e5163d1f29a28e72b7e17a7c7720d3744f9f50780e"
++}
++per_element: Full physical effect, square-root and Kraus identities are checked exactly, including zero branches.
++per_site: Native edge Record, twenty-factor plaquette support and physical radius four are checked.
++per_mode: Four independently constructed CAR modes verify current signs and complex Slater updates.
++per_block: Two noncommuting native events and interleaved Slater histories preserve their declared code conditions.
++lattice_wide: checked and not executed — the finite-graph theorem follows from the written algebra; no thermodynamic or complete local-law result is claimed.
++TOTAL: PASS=188 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/native_informative_edge_record_2026_09_13.py b/scripts/native_informative_edge_record_2026_09_13.py
+new file mode 100644
+index 0000000000..54d657c249
+--- /dev/null
++++ b/scripts/native_informative_edge_record_2026_09_13.py
+@@ -0,0 +1,334 @@
++"""Exact native edge Pauli instrument and independent CAR/Slater checks.
++
++The physical Pauli construction does not use a decoded fermion matrix to
++build its pulse. A separate occupation-bit CAR construction tests the current
++dictionary and the conditional one-particle formula. No random sampling,
++numerical SDP or fitted probability enters these checks.
++"""
++from __future__ import annotations
++
++from itertools import product
++from pathlib import Path
++import hashlib
++import json
++import time
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 180
++AUDIT_INPUT_PATHS = (
++    'docs/NATIVE_INFORMATIVE_EDGE_RECORD_AND_DISTURBANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md',
++    'docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md',
++    'docs/MINIMAL_AXIOMS_2026-06-29.md',
++    '.claude/science/physics-loops/native-informative-record-20260913/SOURCE_MANIFEST.json',
++    '.claude/science/physics-loops/native-informative-record-20260913/NO_GO_DISCIPLINE_CHECKLIST.md',
++    '.claude/science/physics-loops/native-informative-record-20260913/mutations/RESULTS.json',
++)
++X = sp.Matrix([[0, 1], [1, 0]])
++Z2 = sp.diag(1, -1)
++I2 = sp.eye(2)
++
++
++def clean(x):
++    return x.applyfunc(sp.expand) if isinstance(x, sp.MatrixBase) else sp.expand(x)
++
++
++def tensor_factor(op, j, n):
++    return sp.kronecker_product(*(op if k == j else I2 for k in range(n)))
++
++
++def native_graph(edges):
++    edges = sorted(tuple(sorted(e)) for e in edges)
++    vertices = sorted(set(sum((list(e) for e in edges), [])))
++    n = len(edges)
++    eye = sp.eye(2**n)
++    xs = [tensor_factor(X, j, n) for j in range(n)]
++    zs = [tensor_factor(Z2, j, n) for j in range(n)]
++    neighbors = {v: sorted(j if i == v else i for i, j in edges if v in (i, j)) for v in vertices}
++    b = {v: sp.prod([1]) * eye for v in vertices}
++    for v in vertices:
++        for eidx, e in enumerate(edges):
++            if v in e:
++                b[v] = b[v] * zs[eidx]
++    a = {}
++    for i, j in edges:
++        value = xs[edges.index((i, j))]
++        for v, other in ((i, j), (j, i)):
++            for k in neighbors[v]:
++                if k < other:
++                    value = value * zs[edges.index(tuple(sorted((v, k))))]
++        a[i, j] = value
++        a[j, i] = -value
++    return edges, eye, zs, b, a
++
++
++def annihilators(n):
++    out = []
++    for j in range(n):
++        a = sp.zeros(2**n)
++        for mask in range(2**n):
++            if mask & (1 << j):
++                a[mask ^ (1 << j), mask] = (-1) ** ((mask & ((1 << j) - 1)).bit_count())
++        out.append(a)
++    return out
++
++
++def covariance(rho, ann):
++    return clean(sp.Matrix(len(ann), len(ann), lambda i, j: sp.trace(rho * ann[j].H * ann[i])))
++
++
++def run():
++    start = time.monotonic()
++    checks = []
++
++    def checked(name, condition, **data):
++        assert bool(condition), name
++        checks.append({'name': name, **data})
++
++    def equal(name, actual, expected):
++        difference = clean(actual - expected)
++        if isinstance(difference, sp.MatrixBase):
++            condition = all(sp.simplify(x) == 0 for x in difference)
++        else:
++            condition = sp.simplify(difference) == 0
++        checked(name, condition)
++
++    edges, eye, zs, b, a = native_graph([(0, 1), (1, 2), (2, 3), (0, 3)])
++    z = zs[edges.index((0, 1))]
++    S = a[0, 1] * a[1, 2] * a[2, 3] * a[3, 0]
++    P = (eye + S) / 2
++    protected = [(0, 3), (1, 2), (2, 3)]
++    B = b[0]
++    hops = {f: clean(sp.I * a[f] * (b[f[0]] - b[f[1]]) / 2) for f in protected}
++    currents = {f: clean(-a[f] * (eye - b[f[0]] * b[f[1]]) / 2) for f in protected}
++    for i, j in protected:
++        occupation = (eye - b[i]) / 2
++        equal(f'physical_current_continuity_{i}_{j}', currents[i, j],
++              -sp.I * (hops[i, j] * occupation - occupation * hops[i, j]))
++    H = sum(hops.values(), sp.zeros(16))
++    Hinc = hops[0, 3]
++    equal('native_incident_energy_split', (H - B * H * B) / 2, Hinc)
++    N = sum(((eye - x) / 2 for x in b.values()), sp.zeros(16))
++    equal('native_cycle_hermitian_involution', S.H * S, eye)
++    equal('native_cycle_is_hermitian', S.H, S)
++    equal('native_cycle_anticommutes_record_Z', S * z + z * S, sp.zeros(16))
++    checked('native_incoming_even_code_rank', P.rank() == 8 and P * P == P)
++    equal('full_native_vertex_product_even', sp.prod([1]) * b[0] * b[1] * b[2] * b[3], eye)
++    generators = list(b.values()) + [a[f] for f in protected]
++    checked('protected_generators_commute_cycle_and_Record',
++            all(g * S == S * g and g * z == z * g for g in generators))
++
++    # A nonscalar, asymmetric positive full-carrier effect. Its two spectral
++    # subspaces involve anticommuting parity and protected edge operators.
++    M = (3 * B + 4 * a[0, 3]) / 5
++    equal('noncommuting_effect_involution', M * M, eye)
++    plus, minus = (eye + M) / 2, (eye - M) / 2
++    E = (3 * eye + M) / 8
++    root = plus / sp.sqrt(2) + minus / 2
++    other = plus / sp.sqrt(2) + sp.sqrt(3) * minus / 2
++    equal('effect_physical_square_root', root * root, E)
++    equal('complement_physical_square_root', other * other, eye - E)
++    aa, bb = (root + other) / sp.sqrt(2), (root - other) / sp.sqrt(2)
++    U = clean(aa + bb * z * S)
++    equal('general_effect_unitary_full_carrier', U.H * U, eye)
++    for sign in (1, -1):
++        Q = (eye + sign * z) / 2
++        J = sp.sqrt(2) * Q * P
++        F = root if sign == 1 else other
++        K = clean(Q * U * P)
++        equal(f'general_native_Lueders_map_{sign}', K, J * F * P)
++        equal(f'general_native_effect_{sign}', K.H * K, P * F * F * P)
++        equal(f'general_protected_noncommuting_observable_{sign}', K.H * B * K, P * F * B * F * P)
++        equal(f'general_next_code_surjectivity_{sign}', J * J.H, Q)
++    checked('general_effect_is_matter_informative', E != sp.trace(E) * eye / 16)
++    for certain in (1, -1):
++        endpoint_U = (eye + certain * z * S) / sp.sqrt(2)
++        equal(f'constant_effect_endpoint_unitary_{certain}', endpoint_U.H * endpoint_U, eye)
++        impossible = (eye - certain * z) / 2
++        equal(f'constant_effect_zero_branch_{certain}', impossible * endpoint_U * P, sp.zeros(16))
++
++    # One fixture carries both nonzero incident current and bond energy.
++    rho = clean(P * (eye + currents[0, 3] / 4 + Hinc / 5 + B / 7) / 8)
++    checked('native_fixture_positive_normalized',
++            sp.trace(rho) == 1 and all(x >= 0 for x in rho.eigenvals()),
++            sufficient_perturbation_bound='1/4+1/5+1/7<1')
++    mean = lambda op: clean(sp.trace(rho * op))
++    checked('native_fixture_has_current_and_energy', mean(currents[0, 3]) != 0 and mean(Hinc) != 0)
++    strengths = [(0, 1, 1, 0),
++                 (sp.Rational(3, 5), sp.Rational(4, 5), 3 / sp.sqrt(10), 1 / sp.sqrt(10)),
++                 (sp.Rational(5, 13), sp.Rational(12, 13), 5 / sp.sqrt(26), 1 / sp.sqrt(26)),
++                 (sp.Rational(12, 13), sp.Rational(5, 13), 3 / sp.sqrt(13), 2 / sp.sqrt(13)),
++                 (1, 0, 1 / sp.sqrt(2), 1 / sp.sqrt(2))]
++    for idx, (kappa, eta, c, s) in enumerate(strengths):
++        U = clean(c * eye + s * B * z * S)
++        equal(f'parity_physical_unitary_{idx}', U.H * U, eye)
++        channel = sp.zeros(16)
++        for sign in (1, -1):
++            Q = (eye + sign * z) / 2
++            J = sp.sqrt(2) * Q * P
++            F = clean((c * eye + sign * s * B) / sp.sqrt(2))
++            K = clean(Q * U * P)
++            equal(f'parity_native_map_{idx}_{sign}', K, J * F * P)
++            equal(f'parity_effect_{idx}_{sign}', K.H * K, P * (eye + sign * kappa * B) * P / 2)
++            unnorm = clean(F * rho * F)
++            prob = clean(sp.trace(unnorm))
++            equal(f'parity_probability_{idx}_{sign}', prob, (1 + sign * kappa * mean(B)) / 2)
++            equal(f'selective_parity_mean_{idx}_{sign}', sp.trace(unnorm * B), (mean(B) + sign * kappa) / 2)
++            equal(f'selective_incident_current_{idx}_{sign}', sp.trace(unnorm * currents[0, 3]), eta * mean(currents[0, 3]) / 2)
++            equal(f'normalized_selective_parity_{idx}_{sign}', sp.trace(unnorm * B) / prob,
++                  (mean(B) + sign * kappa) / (1 + sign * kappa * mean(B)))
++            equal(f'normalized_selective_current_{idx}_{sign}', sp.trace(unnorm * currents[0, 3]) / prob,
++                  eta * mean(currents[0, 3]) / (1 + sign * kappa * mean(B)))
++            equal(f'selective_number_commutation_{idx}_{sign}', F * N, N * F)
++            channel += unnorm
++        channel = clean(channel)
++        equal(f'nonselective_channel_{idx}', channel, (1 + eta) * rho / 2 + (1 - eta) * B * rho * B / 2)
++        equal(f'nonselective_energy_change_{idx}', sp.trace((channel - rho) * H), -(1 - eta) * mean(Hinc))
++        for f in protected:
++            target = eta * mean(currents[f]) if 0 in f else mean(currents[f])
++            equal(f'nonselective_current_{idx}_{f}', sp.trace(channel * currents[f]), target)
++        # Disturbance is witnessed on an actual pair of physical code states.
++        basis_plus = (P * (eye + B) / 2).columnspace()[0]
++        basis_minus = (P * (eye - B) / 2).columnspace()[0]
++        ep = basis_plus / sp.sqrt((basis_plus.H * basis_plus)[0])
++        em = basis_minus / sp.sqrt((basis_minus.H * basis_minus)[0])
++        psi = (ep + em) / sp.sqrt(2)
++        delta = clean((1 - eta) * (B * psi * psi.H * B - psi * psi.H) / 2)
++        trace_norm = sum(abs(value) * mult for value, mult in delta.eigenvals().items())
++        equal(f'diamond_lower_witness_{idx}', trace_norm, 1 - eta)
++        equal(f'contrast_disturbance_saturation_{idx}', kappa**2, 2 * (1 - eta) - (1 - eta)**2)
++
++    # Literal physical plaquette stars in the three-dimensional placement.
++    vertices = ((0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0))
++    factors = set()
++    for v in vertices:
++        for axis, sign in product(range(3), (1, -1)):
++            site = [2*x for x in v]
++            site[axis] += sign
++            factors.add(tuple(site))
++    checked('literal_plaquette_star_support', len(factors) == 20 and
++            max(sum(abs(x - y) for x, y in zip(p, (1, 0, 0))) for p in factors) == 4,
++            factors=20, radius=4)
++
++    # Two adjacent literal squares, with both bottom edges candidates and
++    # all five other edges forming one connected protected tree. The second
++    # effect anticommutes with the first; its cycle must survive event one.
++    ge, ge_eye, ge_z, ge_b, ge_a = native_graph(
++        [(0, 1), (1, 2), (0, 3), (1, 4), (2, 5), (3, 4), (4, 5)])
++    se = ge_a[0, 1] * ge_a[1, 4] * ge_a[4, 3] * ge_a[3, 0]
++    sf = ge_a[1, 2] * ge_a[2, 5] * ge_a[5, 4] * ge_a[4, 1]
++    ze, zf = ge_z[ge.index((0, 1))], ge_z[ge.index((1, 2))]
++    pe = clean((ge_eye + se) * (ge_eye + sf) / 4)
++    first, second = ge_b[0], ge_a[0, 3]
++    equal('two_event_effects_really_noncommute', first * second + second * first, sp.zeros(128))
++    checked('two_event_native_code_dimension', pe.rank() == 32)
++    ue = clean((3 * ge_eye + first * ze * se) / sp.sqrt(10))
++    uf = clean((5 * ge_eye + second * zf * sf) / sp.sqrt(26))
++    equal('unused_cycle_survives_first_pulse', sf * ue, ue * sf)
++    equal('old_Record_commutes_next_pulse', ze * uf, uf * ze)
++    for z1, z2 in product((1, -1), repeat=2):
++        q1, q2 = (ge_eye + z1 * ze) / 2, (ge_eye + z2 * zf) / 2
++        p1 = clean(q1 * (ge_eye + sf) / 2)
++        j1, j2 = sp.sqrt(2) * q1 * pe, sp.sqrt(2) * q2 * p1
++        f1 = (3 * ge_eye + z1 * first) / sp.sqrt(20)
++        f2 = (5 * ge_eye + z2 * second) / sp.sqrt(52)
++        actual = clean(q2 * uf * q1 * ue * pe)
++        equal(f'two_native_noncommuting_events_{z1}_{z2}', actual, j2 * j1 * f2 * f1 * pe)
++        equal(f'permanent_Record_final_code_{z1}_{z2}', q1 * q2 * actual, actual)
++        equal(f'ordered_history_effect_{z1}_{z2}', actual.H * actual,
++              pe * f1 * f2 * f2 * f1 * pe)
++
++    # Independent CAR representation verifies the native current sign and the
++    # complete rank-one Slater filtering formula, including complex phases.
++    ann = annihilators(4)
++    feye = sp.eye(16)
++    numbers = [a.H * a for a in ann]
++    parities = [feye - 2 * n for n in numbers]
++    checked('independent_CAR_relations', all(ann[i] * ann[j].H + ann[j].H * ann[i] == (feye if i == j else sp.zeros(16))
++                                              and ann[i] * ann[j] + ann[j] * ann[i] == sp.zeros(16)
++                                              for i, j in product(range(4), repeat=2)))
++    for i, j in [(0, 1), (0, 3), (2, 3)]:
++        ai = -sp.I * (ann[i] + ann[i].H) * (ann[j] + ann[j].H)
++        current = sp.I * (ann[i].H * ann[j] - ann[j].H * ann[i])
++        equal(f'CAR_native_current_dictionary_{i}_{j}', -ai * (feye - parities[i] * parities[j]) / 2, current)
++    V = sp.Matrix([[1, 0], [sp.I, 0], [0, 1], [0, 1]]) / sp.sqrt(2)
++    vac = feye[:, 0]
++    create = lambda column: sum((V[j, column] * ann[j].H for j in range(4)), sp.zeros(16))
++    psi = clean(create(0) * create(1) * vac)
++    frho = clean(psi * psi.H)
++    C = clean(V * V.H)
++    equal('initial_even_Slater_covariance', covariance(frho, ann), C)
++    equal('initial_even_Slater_two_particles', sum(sp.trace(frho * n) for n in numbers), 2)
++    c, s, kappa = 3 / sp.sqrt(10), 1 / sp.sqrt(10), sp.Rational(3, 5)
++    for sign in (1, -1):
++        v = 0
++        FF = (c * feye + sign * s * parities[v]) / sp.sqrt(2)
++        rr = sp.simplify((c - sign * s) / (c + sign * s))
++        az = (c + sign * s) / sp.sqrt(2)
++        R = sp.eye(4)
++        R[v, v] = rr
++        d = rr**2 - 1
++        e = sp.eye(4)[:, v]
++        formula = clean(R * (C - d * C * e * e.H * C / (1 + d * C[v, v])) * R)
++        unnorm = clean(FF * frho * FF)
++        prob = clean(sp.trace(unnorm))
++        updated = clean(unnorm / prob)
++        equal(f'Slater_filter_probability_{sign}', prob, az**2 * (1 + d * C[v, v]))
++        equal(f'Slater_filter_CAR_vs_Gram_{sign}', covariance(updated, ann), formula)
++        equal(f'Slater_filtered_projector_{sign}', formula * formula, formula)
++        equal(f'Slater_filtered_particle_number_{sign}', sp.trace(formula), 2)
++        # A number-conserving free mixing on modes1,2, constructed in Fock
++        # space from the actual hopping involution on its active subspace.
++        hop = ann[1].H * ann[2] + ann[2].H * ann[1]
++        active = hop * hop
++        dwell = feye + (1 / sp.sqrt(2) - 1) * active - sp.I * hop / sp.sqrt(2)
++        onehop = sp.zeros(4)
++        onehop[1, 2] = onehop[2, 1] = 1
++        oneU = sp.eye(4) + (1 / sp.sqrt(2) - 1) * onehop**2 - sp.I * onehop / sp.sqrt(2)
++        after = clean(dwell * updated * dwell.H)
++        Cafter = clean(oneU * formula * oneU.H)
++        equal(f'free_dwell_CAR_vs_orbitals_{sign}', covariance(after, ann), Cafter)
++        for second in (1, -1):
++            FF2 = (c * feye + second * s * parities[2]) / sp.sqrt(2)
++            final = clean(FF2 * after * FF2)
++            final /= sp.trace(final)
++            r2 = sp.simplify((c - second * s) / (c + second * s))
++            R2 = sp.diag(1, 1, r2, 1)
++            e2 = sp.eye(4)[:, 2]
++            d2 = r2**2 - 1
++            prediction = clean(R2 * (Cafter - d2 * Cafter * e2 * e2.H * Cafter / (1 + d2 * Cafter[2, 2])) * R2)
++            equal(f'interleaved_two_event_Slater_history_{sign}_{second}', covariance(final, ann), prediction)
++    # An explicit selective sector-weight change prevents a stronger false
++    # particle-number statement from slipping into the theorem.
++    pair = feye[:, 3]
++    mixture = (vac * vac.H + pair * pair.H) / 2
++    FF = (c * feye + s * parities[0]) / sp.sqrt(2)
++    chosen = clean(FF * mixture * FF)
++    chosen /= sp.trace(chosen)
++    beforeN = sum(sp.trace(mixture * n) for n in numbers)
++    afterN = sum(sp.trace(chosen * n) for n in numbers)
++    checked('selective_number_distribution_is_not_preserved', beforeN == 1 and afterN == sp.Rational(2, 5),
++            before=str(beforeN), after=str(afterN))
++    # The two-law minimax bound is evaluated independently from the native
++    # code probabilities, not by treating a quantum input as framework state.
++    distributions = [(sp.Rational(4, 5), sp.Rational(1, 5)), (sp.Rational(1, 5), sp.Rational(4, 5))]
++    variation = sum(abs(a - b) for a, b in zip(*distributions)) / 2
++    midpoint = [sum(pair) / 2 for pair in zip(*distributions)]
++    radius = max(sum(abs(x - y) for x, y in zip(p, midpoint)) / 2 for p in distributions)
++    checked('same_condition_pair_minimax', variation == sp.Rational(3, 5) and radius == sp.Rational(3, 10))
++    elapsed = time.monotonic() - start
++    return {'status': 'pass', 'checks': checks, 'total_pass': len(checks), 'total_fail': 0,
++            'elapsed_seconds': elapsed, 'runner_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
++
++
++if __name__ == '__main__':
++    import signal
++    signal.alarm(AUDIT_TIMEOUT_SEC)
++    result = run()
++    print(json.dumps(result, indent=2))
++    print('per_element: Full physical effect, square-root and Kraus identities are checked exactly, including zero branches.')
++    print('per_site: Native edge Record, twenty-factor plaquette support and physical radius four are checked.')
++    print('per_mode: Four independently constructed CAR modes verify current signs and complex Slater updates.')
++    print('per_block: Two noncommuting native events and interleaved Slater histories preserve their declared code conditions.')
++    print('lattice_wide: checked and not executed — the finite-graph theorem follows from the written algebra; no thermodynamic or complete local-law result is claimed.')
++    print(f"TOTAL: PASS={result['total_pass']} FAIL={result['total_fail']}")
++    signal.alarm(0)

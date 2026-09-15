@@ -1,0 +1,75 @@
+[
+  {
+    "number": 8090,
+    "head": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 21,
+    "canonical": [
+      "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_interacting_weyl_2026_09_13.txt",
+      "outputs/native_interacting_weyl_2026_09_13.json",
+      "scripts/native_interacting_weyl_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_interacting_weyl_protected_paths_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"Given ordinary quantum composition, the supplied native even-CAR code, the specified small-coupling Wilson density-interaction model with its theorem-selected counterterm and state, and the stated controls, two supported seed Records and Born readout, protected native paths of at most three edges implement the interacting model while a single nearest-neighbor content kernel supports continuing nonexplosive Record formation. Finite open native regions approximate fixed local real-time and Euclidean two-point correlations with the stated errors. This is a conditional common-carrier construction; Hamiltonian, state, control and clock selection are additional questions.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_interacting_weyl_2026_09_13.py\n"
+    }
+  },
+  {
+    "number": 8091,
+    "head": "28dd88687270388140ad45fbfac9b145f6f8972f",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 109,
+    "canonical": [
+      "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_lapse_source_contact_response_2026_09_13.txt",
+      "outputs/native_lapse_source_contact_response_2026_09_13.json",
+      "scripts/native_lapse_source_contact_response_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_LAPSE_SOURCE_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_lapse_source_contact_response_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For the specified native two-orbital Wilson model with supplied positive cell lapses, derive its actual variational energy source and finite arithmetic susceptibility; in the free filled-band model derive both arithmetic and geometric-mean responses at every momentum, their local contact difference, the thermodynamic quartic-log term, global congruence-energy convexity and the stated finite static existence bound. An exact strong-interaction midpoint witness is confined to the declared three-cell, three-particle sector. Physical lapse selection and interacting infrared stress response remain open.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_lapse_source_contact_response_2026_09_13.py\n"
+    }
+  },
+  {
+    "number": 8092,
+    "head": "4ad50beb2237097578815a623d963f3427cdcd78",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 101,
+    "canonical": [
+      "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_common_frame_spin_connection_2026_09_13.txt",
+      "outputs/native_common_frame_spin_connection_2026_09_13.json",
+      "scripts/native_common_frame_spin_connection_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_COMMON_FRAME_SPIN_CONNECTION_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_common_frame_spin_connection_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For the specified free native two-orbital Wilson model, construct nine finite-range frame vertices with the same principal metric at both Weyl nodes; prove an explicit uniform neighborhood preserving exactly those two nodes, protected paths of length at most four, and a slowly varying operator estimate for a local polynomial spin-connection coupling. Standard metric-dependent spin identities are rederived to fix the continuum target. The frame, dynamics, scale and state interpretation are supplied; no interacting frame or dynamical gravity theorem is claimed.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_common_frame_spin_connection_2026_09_13.py\n"
+    }
+  },
+  {
+    "number": 8094,
+    "head": "42dfd4afa0f0cc2f0b46039ff0b1681e5004a62c",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 153,
+    "canonical": [
+      "docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "logs/runner-cache/native_weyl_stress_logarithm_contact_response_2026_09_13.txt",
+      "outputs/native_weyl_stress_logarithm_contact_response_2026_09_13.json",
+      "scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_WEYL_STRESS_LOGARITHM_AND_CONTACT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_weyl_stress_logarithm_and_contact_response_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For the specified free native two-orbital Wilson carrier and joint arithmetic lapse/frame source: derive the seven-source real symmetric even-frequency Hessian including its mixed contact, prove its uniform thermodynamic infrared stress logarithm, and derive the exact continuum two-particle spectral density. Construct a native local density-contact family with the same flat and first-order matter data and different spatial gradient vacuum coefficients. The Hamiltonian, free state, frame, source coupling and time are supplied. The result concerns the seven-source restriction of the leading nonanalytic tensor, not a complete dynamical metric or Einstein action.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_weyl_stress_logarithm_contact_response_2026_09_13.py\n"
+    }
+  },
+  {
+    "number": 8095,
+    "head": "3e9c9122788665c41e2071187bc5e503e9ef4b91",
+    "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+    "original_paths": 176,
+    "canonical": [
+      "docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "scripts/native_weyl_canonical_metric_constraints_2026_09_13.py"
+    ],
+    "notes": {
+      "docs/NATIVE_WEYL_CANONICAL_METRIC_CONSTRAINTS_BOUNDED_THEOREM_NOTE_2026-09-13.md": "\nclaim_id: native_weyl_canonical_metric_constraints_bounded_theorem_note_2026-09-13\nclaim_type: bounded_theorem\nclaim_scope: \"For smooth supplied classical metrics and complex spinor half-densities on a three-torus, derive a configuration-space spin connection and joint constraint algebra in the stated quadratic-momentum, linear-curvature metric ansatz. Reconstruct its torsion-free ADM action and construct finite-range native shift and time-rotation sources with the corresponding smooth-test-spinor limit at the two specified Wilson nodes. Geometry, time, canonical interpretation and the metric ansatz are supplied. No quantum constraint algebra, interacting continuum theorem or axiom selection is asserted.\"\nupstream_dependencies:\n  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05\nrunner: scripts/native_weyl_canonical_metric_constraints_2026_09_13.py\n"
+    }
+  }
+]

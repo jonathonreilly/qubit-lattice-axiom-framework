@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+  "fetched_ref": "refs/review-loop/fetched/8089-ec3b9badbf3943ae863580a75a6edf11",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-informative-record-20260913",
+    "headRefOid": "0b00d351b4c6d4ef6fd737925f5ae403e086cc95",
+    "isDraft": false,
+    "number": 8089,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,4 @@
+R1 orthogonality route (Taylor to order 40) agrees with the Rodrigues integrals for l <= 3 at beta = 1, 3, all positive: True
+R2 6x4x4 torus at k = (pi/3,0,0): E = 1 ; sum_b (dpsi)^2 = 48 ; E sum psi^2 = 48 ; equal: True ; N/2 = 48.0
+R3 second-derivative identity with the generator about e_1 (transverse pair (s^2, s^3)): True
+R4 cosine inequalities at the sample points: True ; the ball integral in spherical coordinates = 4*sqrt(3)*pi**2 = 4 pi sqrt(3) pi: True

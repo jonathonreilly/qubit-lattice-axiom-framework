@@ -1,0 +1,14 @@
+(1) Legendre coefficients of e^{beta t}:
+  l=0: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
+  l=1: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
+  l=2: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
+  l=3: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
+  l=4: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
+(2) k=(pi/2, 0, 0): (-Delta psi) = E psi on the 4^3 torus: True; sum_b (dpsi)^2 = E sum psi^2: True; E = 2, sum psi^2 = 32
+(2) k=(pi/2, pi/2, 0): (-Delta psi) = E psi on the 4^3 torus: True; sum_b (dpsi)^2 = E sum psi^2: True; E = 4, sum psi^2 = 32
+(4) L_x(s_x.s_y) == e2.(s_x x s_y): True ; L_y(s_x.s_y) == -e2.(s_x x s_y): True
+    L s^3 = s^1: False ; L s^1 = -s^3: False
+    -L Lbar (s_x.s_y) == |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3): True
+    integration by parts on the sphere for three polynomials: True
+(5) 1 - cos u >= 2u^2/pi^2 at 21 sample points: True ; G(0) bound sqrt(3) pi/8 = 0.680174761587832 ; threshold 3 sqrt(3) pi/8 = 2.04052428476350 < 21/10: True
+(6) the positive root of u^2/N + sqrt(bE) u - M^2/3 = 0 equals the displayed form: True ; limit N->oo: M**2/(3*sqrt(bE))

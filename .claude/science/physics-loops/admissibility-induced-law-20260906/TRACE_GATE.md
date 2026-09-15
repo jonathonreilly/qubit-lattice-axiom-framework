@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 19, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "#8093's gravity node: a record statistic whose two-point function is the lattice Green function; blocks 13 and 17 excluded the formation law and the soldered six-axis static law"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the channel is located: the transverse structure factor of the ordered unsoldered static law (exponential overlap, beta > 3 sqrt(3) pi/8) is sandwiched between multiples of 1/E(k). Next: the normalization; the band below the threshold; the Born overlap. Consumers: #8093's assembly; the campaign's queue"
+```

@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 19 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–18 are open PRs #8034, #8035, #8138–#8142, #8146–#8152)
+Searched commit: `origin/main` = `2ed54cb83a`.
+- `git grep -l -iE "infrared bound|gaussian domination|bogoliubov|goldstone|heisenberg model|mermin" origin/main -- 'docs/*.md'` → the axiom-first Coleman–Mermin–Wagner and Ward-normalized Bogoliubov notes (quantum Hamiltonians; 2D no-SSB), Gaussian domination in the gauge/clock lanes (link variables), Goldstone in the Higgs lanes; nothing on the sphere-valued static record law.
+- The gravity lane's Green function (`GRAVITY_CLEAN_DERIVATION_NOTE.md`; the Maradudin asymptotic bridge): the kernel this block locates in record statistics.
+Classification: **open after the matched-hit review.** Routes: V-A reflection positivity through bond planes via Legendre positivity (G1) — chosen; V-B Gaussian domination with gradient twists (G2) — chosen; V-C the sum rule with an elementary Green-function bound (G3) — chosen; V-D the classical Bogoliubov inequality at zero field against `M_N²` (G4) — chosen (avoids the spontaneous-magnetization limit); V-E the exact normalization of the kernel — not attempted; V-F the Born overlap — not attempted (not of Gaussian form).

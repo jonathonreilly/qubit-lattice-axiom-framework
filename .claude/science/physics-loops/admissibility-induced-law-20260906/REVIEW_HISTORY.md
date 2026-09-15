@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 19 — V1-V5 (supervisor, 2026-09-15)
+- V1: #8093's gravity node ("a covariant scalar record statistic whose two-point function is the lattice Green function") after blocks 13 and 17 (PRs #8147, #8151) excluded the formation law and the soldered six-axis static law; the campaign's soldering fork.
+- V2: the lens pass in `GOAL_block19.md` ("the 1976 theorem" — re-proved at scope with a zero-field Bogoliubov economy; "sphere integrals are not exact" — the algebraic skeleton is; "is the exponential overlap the framework's rule" — a supplied overlap under the unsoldered product rule; "what the gravity node gets" — a sandwich, not the normalization).
+- V3: G1–G5 proved; the skeleton executed exactly (17 checks, 13 mutations); the refuting pass agreed on four routes; the control caught the generator's sign convention before the primary.
+- V4: no reading, rule or coupling selected; the negatives of blocks 13 and 17 not re-proved; the normalization not claimed.
+- V5: consumers named — #8093's assembly (the gravity node's input exists under the unsoldered static reading; the soldering fork's physical stake); the campaign's queue.
+
+## block 19 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block19.md`): as V2. Primary: the note and the runner (17 checks, 13 mutations). Refuting pass (`CHECKER_block19_findings.md`): the Legendre coefficients by the orthogonality route with a truncated Taylor series; the gradient sum on a `6×4×4` torus at a third wavevector; the second-derivative identity with the generator about `e_1`; the cosine inequality by a Taylor lower bound and the ball integral in spherical coordinates — all consistent. Fold: the generator's sign (`L s^3 = −s^1`, `L s^1 = s^3`) fixed in the contract before the primary. Author checks only; independent review pending.
+
+## block 19 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `2ed54cb83a`; nothing pinned from a branch or PR (PRs #8147/#8151 are context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the normalization, the band below the threshold and the Born overlap marked open; the standard theorems named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

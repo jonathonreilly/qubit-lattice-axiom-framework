@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
+runner_sha256: 7584957994ad0e6b6ae753b99e9ca1fd85c989a0e2f60337b6607c9b3272dca3
+input_fingerprint_sha256: 331eb7362cc65fa2d65533c691756707b3e8c20b3fe71cc6378beaf095dbc85b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the unsoldered sphere static law with overlap e^{beta t} — Legendre positivity, the twist and plane-wave identities behind the infrared bound, the Green-function bound and threshold, the generator identities and the quadratic behind the zero-field Bogoliubov bound; exact symbolic
+mutation: none
+PASS: A1 the three declared inputs exist (this note, the axiom memo, the possibility-covariance note on main)
+PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parent's claim id and its empty-neighbourhood sphere-law section are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 G1: int e^{beta t} P_l = (beta^l/(2^l l!)) int (1 - t^2)^l e^{beta t} dt for l <= 4, symbolically in beta (a positive integrand)
+PASS: B2 G2: on the 4^3 torus the plane wave cos(k.x) is a Laplacian eigenfunction with eigenvalue E(k) = sum 2(1 - cos k_i), and sum over bonds (dpsi)^2 = E(k) sum psi^2 = E(k) N/2, at k = (pi/2,0,0) [E = 2] and (pi/2,pi/2,0) [E = 4]
+PASS: B3 G2: the gradient twist is a site shift; the second lambda-derivative of exp(beta lambda X - beta lambda^2 S2/2) at 0 is beta^2 X^2 - beta S2, so Z(lambda psi) <= Z(0) forces beta^2 <X^2> <= beta S2
+PASS: C1 G3: 1 - cos u >= 2 u^2/pi^2 at 21 sample points of [-pi, pi]
+PASS: C2 G3: (pi^2/4) (2 pi)^{-3} int_{|k| <= sqrt(3) pi} d^3k/|k|^2 = sqrt(3) pi/8; the threshold 3 sqrt(3) pi/8 is below 21/10
+PASS: D1 G4: L_x(s_x.s_y) = e2.(s_x x s_y), L_y(s_x.s_y) = -e2.(s_x x s_y), L s^3 = -s^1, L s^1 = s^3, L s^2 = 0
+PASS: D2 G4: the sphere integral of L F vanishes for four polynomials; -(c_x L_x + c_y L_y)(cbar_x L_x + cbar_y L_y)(s_x.s_y) = |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3)
+PASS: D3 G4/G5: (2M^2/3)/[sqrt(bE) + sqrt(bE + 4M^2/(3N))] is the positive root of u^2/N + sqrt(bE) u - M^2/3 = 0 and tends to M^2/(3 sqrt(bE)): the lower bound (M^2/3)^2/(beta E)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports and the Premises' file citation; Legendre, Rodrigues and Bogoliubov name standard objects (0 offenders)
+per_element: executed — the Legendre coefficients of e^{beta t} in Rodrigues form for l <= 4; the generator identities; the single-bond second derivative; the quadratic's root and limit
+per_site: executed — the plane wave as a Laplacian eigenfunction at every site of the 4^3 torus at two wavevectors
+per_mode: executed — the gradient sums E(k) N/2 at two wavevectors; the second-order coefficient of the twisted weight
+per_block: executed — integration by parts on the sphere for four polynomials; the Green-function bound and the threshold
+lattice_wide: G1-G5 proved for every beta > 0 (G3-G5 for beta > 3 sqrt(3) pi/8) on tori of even side and their limits; the band below the threshold, the normalization and the Born overlap not claimed
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

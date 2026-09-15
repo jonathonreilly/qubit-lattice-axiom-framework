@@ -1,6 +1,6 @@
 {
- "edge_count": 12519,
- "node_count": 5041,
+ "edge_count": 12521,
+ "node_count": 5044,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1993,6 +1993,10 @@
   "carrier_orbit_invariance_note_2026-05-03": {
    "deps_hash": "b9c72baebefe",
    "out_degree": 4
+  },
+  "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "causal_cone_speed_map_note": {
    "deps_hash": "fb9b6d37aa43",
@@ -4918,6 +4922,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",
    "out_degree": 1
@@ -5333,6 +5341,10 @@
   "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": {
    "deps_hash": "ff73545a1b2e",
    "out_degree": 3
+  },
+  "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "dc54916a9ab0",
+   "out_degree": 2
   },
   "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30": {
    "deps_hash": "e8681c65cc8f",

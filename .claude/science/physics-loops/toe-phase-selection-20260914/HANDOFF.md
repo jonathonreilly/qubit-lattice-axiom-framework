@@ -1,3 +1,44 @@
+# Current checkpoint — 2026-09-15 03:43 UTC
+
+The controlling deadline remains **2026-09-15 13:30:44 UTC**. All work
+continues personally, without subagents. Earlier deadline passages below
+are historical and superseded by the explicit extension.
+
+PR8134 at2d45fc36a80fd8ee887d133bc653d6a658d30ae8 now contains the three
+public fixed-beta Haar proof proposals and one self-contained runner.
+It is stacked on PR8133 atf8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8.
+The public proofs include explicit finite source variation, free-cube
+Riesz control, actual averaged-Gibbs/noise-factor matching, two-replica
+variance concentration, environmental spectral response, exact real
+flux tilt, physical score/image noise, link-state mixing and direct
+Gaussian two-polarization reconstruction. These tighten the historical
+private drafts; use the public source for the complete final argument.
+
+All13 reported finite result groups and16 deliberate-fault checks passed
+their respective expectations. Canonical cache1.62sec/180; source/cache/N5,
+compilation, vocabulary, link and full-delta whitespace checks completed.
+Independent mathematical review, audit and integration remain pending.
+The source unit has16 child paths and28 cumulative paths with its13-path
+parent, including the manifest overlap. No audit-derived surface other
+than the owning-tool-generated citation manifest was shipped.
+
+The PR is OPEN/MERGEABLE and its exact head matches origin. Tracked and
+untracked state were clean; seven ignored graph/lock/bytecode files were
+classified. The delivery checkout was removed. The completion sweep
+preserved both other unlanded worktrees; archives were untouched and no
+git gc was run. See review/BLOCK21_PUBLIC_MILESTONE_RECEIPT.json and
+review/BLOCK21_COMPLETION_SWEEP.json. Approximately151GiB remained free.
+
+Next science: block22's exact finite-clock image lattice may give a useful
+positive representation that retains both electric and magnetic defects.
+First derive its support, multiplicity, dual lattice and full source
+normalization and challenge them by finite enumeration. Do not claim an
+infrared theorem from the representation alone. Reassess the actual N=3
+Hamiltonian or native-law route if the new representation leaves an
+equivalent unresolved obligation.
+
+---
+
 # User-authorized extension — controlling current deadline
 
 The user added another12hours while this same campaign was active. Continue

@@ -1,4 +1,17 @@
-# Current block21 author status
+# Current block22 author status
+
+actual_current_surface_status: open
+target_claim_type: open_gate
+independent_review: pending
+formal_audit: deferred
+
+The target is a fixed-clock full physical-score limit. The current
+private probe asks whether an exact full-flux image lattice and its dual
+give a positive source formulation retaining both defect species. An
+exact finite representation alone is not an infrared theorem. No new
+axiom, primitive, native probability law or phase conclusion is asserted.
+
+# Delivered block21 author proposal
 
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
@@ -26,8 +39,9 @@ electric defects, the N=3 penalty Hamiltonian phase, native law selection,
 matter and gravity remain open. Periodic microscopic state matching is
 additional, not silently used for the direct Gaussian-limit reconstruction.
 No axiom, approved primitive, editable prompt or authoritative audit state
-is changed. Prepare one coherent stacked milestone after final conformance,
-then continue personally until2026-09-15 13:30:44UTC.
+is changed. The proposal is delivered in PR8134 at
+2d45fc36a80fd8ee887d133bc653d6a658d30ae8, stacked on PR8133. The delivery
+checkout is removed. Continue personally until2026-09-15 13:30:44UTC.
 
 # Historical block1 author status
 

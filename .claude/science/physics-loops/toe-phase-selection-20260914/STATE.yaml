@@ -13,26 +13,33 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 21
-active_route: fixed_beta_full_flux_auxiliary_homogenization_bridge
+block: 22
+active_route: fixed_clock_full_flux_image_lattice_and_coupled_defects
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Prepare and personally review one coherent stacked milestone for the fixed-beta Haar full-score theorem, analytic Gaussianity and state/covariance proofs. Preserve all provisional inputs and the finite-clock boundary. Continue the next high-leverage route personally after delivery, through13:30:44UTC.
-strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Eleven public PRs8123-8133 contain sixteen proposed theorem sources. PR8133 atf8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8 derives exact coupled defects, a matched free-cubic convex current extension and exact quantized-current/Wilson identities. PR8131 derives fixed-law image-noise/contact and positive-time OS equivalence under its stated hypotheses. PR8130 at7656dcdb01f32b3d47ecbcda04c89cb3b03996f0 gives the direct Maxwell/Wilson construction and its logarithmic resource improvement, with an explicit global-removal method boundary. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
+next_action: Derive and challenge the exact finite-clock full-flux image-lattice/dual-lattice representation, then
+  test whether it enables fixed-law source and Gaussianity control while preserving both defect species. Continue
+  personally through2026-09-15 13:30:44UTC.
+strongest_unresolved_obligation: A fixed-beta, fixed-clock full physical-score Gaussian limit; the actual N=3 Hamiltonian
+  phase and native law remain separate open obligations.
+working_result: PR8134 at2d45fc36a80fd8ee887d133bc653d6a658d30ae8 proposes a fixed-beta Haar full-score Gaussian
+  Maxwell limit with an actual mixing Gibbs-state match, uniform cubic source control and environmental spectral
+  response. It is stacked on the provisional carrier/filling source PR8133 atf8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8.
+  All author proposals await independent review; no finite-clock or native-law closure is asserted.
 public_prs:
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132
-  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8134

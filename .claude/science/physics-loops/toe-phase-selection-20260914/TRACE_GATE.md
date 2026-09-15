@@ -1,4 +1,21 @@
-# Current block21 trace
+# Current block22 trace
+
+```yaml
+trace_class: upstream_support
+target_claim_id: u1_finite_clock_gauge_matter_and_controlled_tame_maxwell_bridge_bounded_theorem_note_2026-09-03
+target_blocker_text: "The finite-clock physical score retains electric defects absent from the Haar unfolding."
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: frontier_probe
+next_trace_action: "Derive and challenge the complete finite-clock image-lattice source identity, then attempt a new infrared control mechanism."
+```
+
+The probe preserves the finite alphabet and both defect sectors. Its
+success criterion is a new source/cumulant or state estimate for the
+fixed-clock law, not another re-expression of an already known bound.
+The prior Haar theorem remains an independently unreviewed comparison.
+
+# Delivered block21 trace
 
 ```yaml
 trace_class: upstream_support
@@ -7,7 +24,7 @@ target_blocker_text: "Identify a controlled effective field and the exact couple
 source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Review the fixed-beta Haar full-score chain as one stacked milestone, then pursue the retained finite-clock electric-defect and native-law obligations."
+next_trace_action: "Review the fixed-beta Haar full-score chain as one stacked milestone, then pursue the remaining finite-clock electric-defect and native-law obligations."
 ```
 
 The quoted blocker is from the free-cubic magnetic/electric source in

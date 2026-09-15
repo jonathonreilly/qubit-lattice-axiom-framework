@@ -1,0 +1,87 @@
+{
+  "source_sha256": "1d3f2984d6fda561bf02c575c1aa0233d4155213709012341d1a5e7d9d4e6233",
+  "status": "eight_actual_mutations_rejected_by_assertions",
+  "independent_review": false,
+  "mutations": [
+    {
+      "family": "transcript_weights",
+      "old": "else:f=x",
+      "new": "else:f=x*x",
+      "invocation": "rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PV,m.PX],rho)",
+      "source_sha256": "5ff562f80d9f4e9dae37e06304949eae3be35207990d0772a991bdc82dc0c03b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4807184999808669,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/transcript_weights.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PV,m.PX],rho)\n                                                                                                                                                                                                                                                                                                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/transcript_weights.py\", line 141, in run\n    assert sp.simplify(direct-mass)==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "zero_branch_repeat",
+      "old": "elif x>=1:f=sp.Integer(1)",
+      "new": "elif x>=1:f=sp.Rational(99,100)",
+      "invocation": "m.run([m.PZ,m.PZ],m.PZ)",
+      "source_sha256": "54d795faf4754dcf162f76af7bf4894f67046ee1d261a1365507205ddb95f6dc",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22486162499990314,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/zero_branch_repeat.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.run([m.PZ,m.PZ],m.PZ)\n                                                                                                                                                                                                                                                         ~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/zero_branch_repeat.py\", line 141, in run\n    assert sp.simplify(direct-mass)==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "nonunitary_covariance",
+      "old": "P=present[j]-8*I;x=",
+      "new": "P=(present[j]-8*I).T;x=",
+      "invocation": "rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PX],rho,m.sp.Matrix([[1,2],[0,1]]))",
+      "source_sha256": "ce1b3699ace857609e37020598e0d2ef15b139976e47e07cc6c89b66bc4922cd",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2020560420351103,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/nonunitary_covariance.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PX],rho,m.sp.Matrix([[1,2],[0,1]]))\n                                                                                                                                                                                                                                                                                                                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/nonunitary_covariance.py\", line 127, in run\n    else:raise AssertionError(('invalid outcome',step,A))\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('invalid outcome', 0, Matrix([\n[ 1, 0],\n[-2, 0]]))\n"
+    },
+    {
+      "family": "proper_cubic_covariance",
+      "old": "    for A in neighbors:\n        if A is not None:",
+      "new": "    for A in list(neighbors)[:5]:\n        if A is not None:",
+      "invocation": "rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;[m.run([m.PZ,m.PX],rho,R=R) for R in m.rotations()]",
+      "source_sha256": "072abecf6ad6cc448fef290caff63ca19e9c3daf021e90e569339be9764d455b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.33943087502848357,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/proper_cubic_covariance.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;[m.run([m.PZ,m.PX],rho,R=R) for R in m.rotations()]\n                                                                                                                                                                                                                                                                                                                   ~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/proper_cubic_covariance.py\", line 114, in run\n    assert active==[(wanted,1)],(step,active,wanted)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: (0, [], (11, -7, 4))\n"
+    },
+    {
+      "family": "guard_frontier",
+      "old": "if guards:state.update({z:ZERO for z in guard})",
+      "new": "if False:state.update({z:ZERO for z in guard})",
+      "invocation": "rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PX],rho)",
+      "source_sha256": "7ec9ade00bad517ef62fe40f2969f2bb18e58590c1b9a5f3cb1c70493628da49",
+      "exit_code": 1,
+      "elapsed_seconds": 0.22140912502072752,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/guard_frontier.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PX],rho)\n                                                                                                                                                                                                                                                                                                         ~~~~~^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/guard_frontier.py\", line 114, in run\n    assert active==[(wanted,1)],(step,active,wanted)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: (0, [((-1, -1, 0), 1), ((0, 0, 0), 1)], (0, 0, 0))\n"
+    },
+    {
+      "family": "program_tag_frontier",
+      "old": "encode(8*I+P if tag_program else P)",
+      "new": "encode(P if tag_program else P)",
+      "invocation": "rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PX],rho)",
+      "source_sha256": "a88fc63e91feb9af3d30adbe6c512fc613d9fa200dcc72181b091c1cc250299b",
+      "exit_code": 1,
+      "elapsed_seconds": 0.20752612501382828,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/program_tag_frontier.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);rho=m.sp.Rational(3,5)*m.PZ+m.sp.Rational(2,5)*m.PX;m.run([m.PZ,m.PX],rho)\n                                                                                                                                                                                                                                                                                                               ~~~~~^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/program_tag_frontier.py\", line 114, in run\n    assert active==[(wanted,1)],(step,active,wanted)\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: (0, [((3, 0, 0), 1)], (0, 0, 0))\n"
+    },
+    {
+      "family": "smooth_probability",
+      "old": "elif smooth:f=sp.exp(-1/x)/(sp.exp(-1/x)+sp.exp(-1/(1-x)))",
+      "new": "elif smooth:f=sp.Rational(1,2)",
+      "invocation": "q=[2*m.I+m.sp.diag(m.sp.Rational(1,4),m.sp.Rational(3,4)),8*m.I+m.PZ];p=next(p for p,A in m.kernel(q,smooth=True) if A==m.PZ);assert m.sp.simplify(p-1/(1+m.sp.exp(m.sp.Rational(8,3))))==0",
+      "source_sha256": "2fa9411c3d2a2894b8f381a60dfa82d7138b7e40edfa0c3591e9b001a0b3203e",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2766967909410596,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/smooth_probability.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);q=[2*m.I+m.sp.diag(m.sp.Rational(1,4),m.sp.Rational(3,4)),8*m.I+m.PZ];p=next(p for p,A in m.kernel(q,smooth=True) if A==m.PZ);assert m.sp.simplify(p-1/(1+m.sp.exp(m.sp.Rational(8,3))))==0\n                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "family": "off_code_normalization",
+      "old": "S=sum(w for _,_,w in pairs);b=(S-1)**2;Z=S+b\n    law=",
+      "new": "S=sum(w for _,_,w in pairs);b=(S-1)**2;Z=S+2*b\n    law=",
+      "invocation": "m.off_code_checks()",
+      "source_sha256": "2810479221bde2830effec4bcb6d4cad030ea29698bf6ce454423ad1f53ab40f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2200933750718832,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;spec=importlib.util.spec_from_file_location('m','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/off_code_normalization.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);m.off_code_checks()\n                                                                                                                                                                                                                                                             ~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-projective-mutations-d0vyssx8/off_code_normalization.py\", line 183, in off_code_checks\n    assert 0<=lam<=1 and min(p for p,_ in law)>=0 and abs(sum(p for p,_ in law)-1)<3e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

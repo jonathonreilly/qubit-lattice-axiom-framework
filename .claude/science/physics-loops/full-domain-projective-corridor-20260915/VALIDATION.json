@@ -1,0 +1,124 @@
+{
+  "utc": "2026-09-15T12:39:57.626427+00:00",
+  "base": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+  "source_sha256": {
+    "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md": "115b92ad094f26c1cdb3fa51978b66831091729f0a5ac49d88ebbf51093a4afe",
+    "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py": "1d3f2984d6fda561bf02c575c1aa0233d4155213709012341d1a5e7d9d4e6233",
+    "logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt": "442134138a4739d18763527e48f0fdec384d634aae4495215a2c379a586a9377",
+    "docs/audit/data/citation_graph_manifest.json": "16410de6e063e3f07ff50b3a17576e384481807aec7cf56e20199f1b5d433841"
+  },
+  "pipeline": {
+    "exit_code": 0,
+    "final_checkpoint": "0d02fe7eb090",
+    "tail": [
+      "dispatch shadow: lane=25 gap_available=True manifest=ok prior_state=True",
+      "==> 17/18 render_front_door_status.py",
+      "Wrote docs/repo/FRONT_DOOR_STATUS.md",
+      "Wrote docs/repo/RETAINED_BACKBONE.md",
+      "==> 18/18 repo_invariants_check.py (authority-link guard)",
+      "INFO: attested 0 seed-pruned tracked ledger shards from the captured full-build checkpoint",
+      "PASS rows=4763 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)",
+      "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)",
+      "  OK   docs/ai_methodology/skills/physics-loop/SKILL.md: axiom-baseline block in sync",
+      "  OK   docs/ai_methodology/skills/review-loop/SKILL.md: axiom-baseline block in sync",
+      "  OK   docs/ai_methodology/skills/audit-loop/SKILL.md: axiom-baseline block in sync",
+      "  OK   docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md: axiom-baseline block in sync",
+      "  OK   docs/audit/data/skill_axiom_baseline_manifest.json: source acknowledgment current",
+      "==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)",
+      "check_review_loop_skill_contract: OK (31 families)",
+      "==> 18c/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)",
+      "finalized full checkpoint 0d02fe7eb090",
+      "",
+      "Pipeline complete.",
+      "  Read docs/audit/AUDIT_LEDGER.md for the rendered ledger.",
+      "  Read docs/audit/AUDIT_QUEUE.md   for the next-up audit queue.",
+      "  Read docs/repo/FRONT_DOOR_STATUS.md for the front-door status snapshot.",
+      "  Read docs/audit/data/reaudit_candidates.json for unblocked re-audit candidates.",
+      "  Read docs/audit/AUDIT_DISPATCH_QUEUE.md for dispatcher-only targeted re-audits.",
+      "  Read docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md for the",
+      "    audit-vs-publication-tables gap report.",
+      "  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-",
+      "    derived view of each publication table."
+    ]
+  },
+  "strict_lint": "OK: no errors; existing warnings/notices remain",
+  "changed_evidence": {
+    "base": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
+    "changed_path_count": 42,
+    "checked": [
+      {
+        "changed_surfaces": [
+          "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py"
+        ],
+        "claim_id": "full_domain_matrix_kernel_and_autonomous_projective_record_corridor_bounded_theorem_note_2026-09-15",
+        "forensic_evidence_ready": true,
+        "helper_runner_paths": [],
+        "issue": null,
+        "runner_path": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py"
+      }
+    ],
+    "control_failures": [],
+    "diff_scope": "committed_and_worktree",
+    "failures": [],
+    "schema": "changed_audit_evidence_readiness_v1"
+  },
+  "cache": {
+    "status": "ok",
+    "exit_code": 0,
+    "timeout_sec": 300,
+    "elapsed_sec": 8.841941118240356
+  },
+  "graph_delta": {
+    "added_nodes": 1,
+    "added_edges": 2,
+    "dependencies": [
+      "minimal_axioms",
+      "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21"
+    ]
+  },
+  "discarded_generated_paths": [
+    "docs/audit/AUDIT_QUEUE.md",
+    "docs/audit/data/effective_status_summary.json",
+    "docs/audit/data/ledger/ad/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_bounded_theorem_note_2026-08-10.json",
+    "docs/audit/data/ledger/ad/admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_bounded_theorem_note_2026-09-13.json",
+    "docs/audit/data/ledger/ad/admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06.json",
+    "docs/audit/data/ledger/ad/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ad/admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06.json",
+    "docs/audit/data/ledger/ad/admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ad/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/fu/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_bounded_theorem_note_2026-09-15.json",
+    "docs/audit/data/ledger/ga/gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10.json",
+    "docs/audit/data/ledger/ga/gauge_vacuum_plaquette_distinct_shell_exact_core_narrow_theorem_note_2026-05-29.json",
+    "docs/audit/data/ledger/ga/gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10.json",
+    "docs/audit/data/ledger/ga/gauge_vacuum_plaquette_reduction_existence_theorem_note.json",
+    "docs/audit/data/ledger/ga/gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17.json",
+    "docs/audit/data/ledger/ga/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_cube_slab_character_mixing_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_cube_slab_first_spectral_corrections_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_cube_slab_nonlinear_saddle_dilated_kernel_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_cube_slab_two_source_cubic_cancellation_rate_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/ga/gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07.json",
+    "docs/audit/data/ledger/mi/minimal_axioms.json",
+    "docs/audit/data/ledger/na/native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05.json",
+    "docs/audit/data/ledger/na/native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05.json",
+    "docs/audit/data/ledger/na/native_edge_record_z4_flux_bridge_capacity_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/na/native_edge_record_z4_flux_one_shot_error_bound_bounded_theorem_note_2026-09-07.json",
+    "docs/audit/data/ledger/na/native_parity_entangler_and_chsh_note_2026-09-08.json",
+    "docs/audit/data/ledger/na/native_product_gibbs_preparation_note_2026-09-08.json",
+    "docs/audit/data/ledger/re/realized_state_primitive.json",
+    "docs/audit/data/ledger/re/record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21.json",
+    "docs/audit/data/ledger/su/su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10.json",
+    "docs/audit/data/ledger_meta.json",
+    "docs/audit/data/load_bearing_summary.json",
+    "docs/repo/FRONT_DOOR_STATUS.md"
+  ],
+  "history": [
+    "Initial full pass succeeded.",
+    "Cold read corrected the front-matter axiom identifier to minimal_axioms; graph edge already had the correct identity.",
+    "Full pipeline and changed-evidence readiness repeated on final note; both succeeded."
+  ],
+  "independent_review": "pending; author checks only"
+}

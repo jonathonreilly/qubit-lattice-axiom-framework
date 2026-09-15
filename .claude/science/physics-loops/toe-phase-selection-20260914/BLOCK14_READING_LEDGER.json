@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Dario-Wu, Massless Phases for the Villain Model in d>=3",
+    "date": "2023-03-27",
+    "url": "https://pauldario.pages.math.cnrs.fr/webpage-of-paul-dario/Villain3D__short_version_.pdf",
+    "sha256": "1adcdb53880054f22c1e5705b631671f302e665fe8d50ecf2ca79396a51f63ab",
+    "total_pages": 136,
+    "read_pages": "1-5 introduction through web;14-15 charge definitions;16-36 full section3 extracted text; not the full136page manuscript",
+    "role": "Method and hypothesis comparison only; no finite-clock gauge theorem imported"
+  },
+  {
+    "title": "Bauerschmidt, Ferromagnetic spin systems",
+    "date": "2016-04-14",
+    "url": "https://cims.nyu.edu/~bauerschmidt/teaching/math253x/spin.pdf",
+    "sha256": "9cfb8e49f812c215e42f6a18cc78ff43f907ba87fa9e77dbe1a5f5c9d348c1c0",
+    "total_pages": 77,
+    "read_pages": "PDF35-40 and47-52, printed33-38 and45-50; not the full77page notes",
+    "role": "Polymer expansion, Gaussian split and filling machinery; fresh carrier-preserving derivation is being written"
+  },
+  {
+    "title": "Driver1987",
+    "role": "Full23page reading and primary hash recorded in BLOCK12_READING_LEDGER.json; exact continuous Haar Ward context only"
+  }
+]

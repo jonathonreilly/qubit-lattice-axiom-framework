@@ -1,0 +1,102 @@
+{
+  "runner_sha256": "3699a21aafe0187e0a8019128842a4d7e69f76a96bda83bcfed21393a51ad36d",
+  "faults": [
+    {
+      "name": "gaussian_half",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.008180666947737336
+    },
+    {
+      "name": "image_period",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.002603875007480383
+    },
+    {
+      "name": "image_derivative_sign",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.087433792068623
+    },
+    {
+      "name": "incident_precision",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.003100041067227721
+    },
+    {
+      "name": "weighted_center",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.003370000049471855
+    },
+    {
+      "name": "relative_image_weight",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 8.362508378922939e-05
+    },
+    {
+      "name": "fourier_phase",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.002690250054001808
+    },
+    {
+      "name": "fourier_precision",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0025362090673297644
+    },
+    {
+      "name": "quadrature_no_pair",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.0699507079552859
+    },
+    {
+      "name": "conditional_force_sign",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.055622125044465065
+    },
+    {
+      "name": "ward_normalization",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.16565633297432214
+    },
+    {
+      "name": "alias_zero_mode",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.07180045905988663
+    },
+    {
+      "name": "continuous_partition",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.11742333299480379
+    },
+    {
+      "name": "charge_N_not_constant",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.1139585409546271
+    },
+    {
+      "name": "wilson_Haar_energy",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.13922562508378178
+    },
+    {
+      "name": "growing_order_sqrt_log",
+      "detected": true,
+      "failure": "",
+      "elapsed_sec": 0.9078259579837322
+    }
+  ],
+  "qualification": "Personal deliberate-fault challenges; not independent proof review or an audit verdict."
+}

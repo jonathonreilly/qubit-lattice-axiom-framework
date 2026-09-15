@@ -1,0 +1,9 @@
+# Personal review of finite-clock quadrature
+
+The final332line source and118line self-contained runner have been read in full. Five finite families and16 deliberately introduced faults were checked personally. Fresh canonical cache1.082502841949463seconds/180; source37adda2107d7a6c0661720aecdd2b07e9e7c78d96e5a5389c432d704ae5209f8 and runner3699a21aafe0187e0a8019128842a4d7e69f76a96bda83bcfed21393a51ad36d.
+
+The exact mixture retains relative Gaussian images and positive normalized weights; it does not collapse frustrated neighbors to one center. The residual quadratic form is positive definite after fixing one image coordinate. Fourier signs agree with an independent image-product integration. The Ward derivative uses f'-Jf=(Pf)'/P, with J=-P'/P. Generic finite-clock force means are nonzero. The final source explicitly removes uncoupled links before using positive incident precision.
+
+The full-lattice bound normalizes at each hybrid step, avoiding an unnecessary exponential-in-volume loss. It remains an absolute comparison. A charge-N control shows why unrestricted Fourier frequencies fail. In the absolutely convergent Fourier-series extension, modes beyond the allowed band use the trivial bound2; this qualification was added during review. The local Ward residual cannot be used on an exponential of a nonlinear score without its full Fourier tail. No fixed-order phase follows from a growing-order family.
+
+Mechanical N5 and source/cache checks pass after the runner adopted canonical underscore resolution labels. This reporting-label repair did not change its science. Vocabulary lint is clean. Independent proof review, formal audit and main landing remain pending. Primary readings have precise page ranges and hashes in BLOCK14_READING_LEDGER.json; neither long rotator/lecture source is claimed fully read.

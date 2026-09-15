@@ -12,17 +12,17 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 14
-active_route: finite_clock_ward_alias_and_convex_defect_representation
+block: 15
+active_route: carrier_preserving_closed_charge_convexification_and_actual_clock_matching
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Derive uniform conditional finite-clock Ward residuals, and check the connected-defect convexification hypotheses for a gauge field.
+next_action: Review the carrier-preserving closed-charge convexification, then derive the full finite-clock source/defect representation with both defect species retained.
 strongest_unresolved_obligation: Uniform sector-energy comparison or an actual-state Coulomb-phase estimate for the specified Hamiltonian.
-working_result: Nine public PRs8123-8131 contain proposed theorem milestones. PR8131 derives fixed-law image-noise/contact and positive-time OS equivalence under its stated hypotheses. PR8130 at7656dcdb01f32b3d47ecbcda04c89cb3b03996f0 gives the direct Maxwell/Wilson construction and its logarithmic resource improvement, with an explicit global-removal method boundary. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
+working_result: Ten public PRs8123-8132 contain proposed theorem milestones. PR8131 derives fixed-law image-noise/contact and positive-time OS equivalence under its stated hypotheses. PR8130 at7656dcdb01f32b3d47ecbcda04c89cb3b03996f0 gives the direct Maxwell/Wilson construction and its logarithmic resource improvement, with an explicit global-removal method boundary. All milestones await independent review. Fixed-law phase, native law and charged matter remain open.
 public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124
@@ -33,3 +33,4 @@ public_prs:
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130
   - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131
+  - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132

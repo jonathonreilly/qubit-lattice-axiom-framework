@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    from regge_local_hessian_check_2026_09_13 import run as geo; from regge_source_rank_check_2026_09_13 import run; run(geo()[1])
+                                                                                                                     ~~~^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/source_offdiagonal_halved/regge_source_rank_check_2026_09_13.py", line 33, in run
+    check('geometric_all_phase_exponent_source',zero(Qs*qnu-J))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/source_offdiagonal_halved/regge_source_rank_check_2026_09_13.py", line 18, in check
+    if not condition:raise AssertionError(name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: geometric_all_phase_exponent_source

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    from regge_local_hessian_check_2026_09_13 import run; run()
+                                                          ~~~^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/body_sign/regge_local_hessian_check_2026_09_13.py", line 87, in run
+    assert not fail,fail[:3]
+           ^^^^^^^^
+AssertionError: [(0, 2, 'w0**2/(4*w2**2) + w1**2/(4*w2**2) + 1/2 + 1/(2*w2**2) + 1/(4*w1**2) + 1/(4*w0**2)'), (0, 4, 'w0**2/(4*w1**2) + 1/2 + 1/(4*w2**2) + w2**2/(4*w1**2) + 1/(2*w1**2) + 1/(4*w0**2)'), (0, 5, 'w3**2/(4*w2**2) + 1/(4*w2**2) + w3**2/(4*w1**2) + 1/(4*w1**2)')]

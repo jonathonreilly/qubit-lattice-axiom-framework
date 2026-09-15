@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    from regge_tensor_transfer_check_2026_09_13 import run; run()
+                                                            ~~~^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/transfer_width_halved/regge_tensor_transfer_check_2026_09_13.py", line 47, in run
+    check('transfer_width_equation',s.simplify(alpha**2-(A*A-1))==0)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/transfer_width_halved/regge_tensor_transfer_check_2026_09_13.py", line 15, in check
+    if not condition:raise AssertionError(name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: transfer_width_equation

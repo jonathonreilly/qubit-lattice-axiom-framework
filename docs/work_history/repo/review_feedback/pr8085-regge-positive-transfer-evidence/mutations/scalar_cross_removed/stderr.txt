@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    from regge_tensor_transfer_check_2026_09_13 import run; run()
+                                                            ~~~^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/scalar_cross_removed/regge_tensor_transfer_check_2026_09_13.py", line 23, in run
+    check('full_mixed_decomposition',s.expand(F-Ft-Fv-Fs)==0)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/regge-exact-reduction-positive-transfer-20260913/.claude/science/physics-loops/regge-exact-reduction-positive-transfer-20260913/mutations/scalar_cross_removed/regge_tensor_transfer_check_2026_09_13.py", line 15, in check
+    if not condition:raise AssertionError(name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: full_mixed_decomposition

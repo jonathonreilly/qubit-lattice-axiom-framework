@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8078-final",
+  "tree": "53d0a6b4767dd06f0a3e4e4cd254c0fa403ae879",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+      "claim_id": "native_ward_direct_overlap_note_2026-09-10",
+      "primary_runner": "scripts/native_ward_direct_overlap_2026_09_10.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8078-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8755,
+      "misses": 4419
+    },
+    "packet_imports": {
+      "hits": 8745,
+      "misses": 4417
+    },
+    "declared_inputs": {
+      "hits": 8781,
+      "misses": 4550
+    }
+  },
+  "record_sha256": "ff5295d30162d55f8d9c3b7a44b50b757814c85bc7bc2d61912afc576d554114",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": [
+    "independent JW CAR covariance sign 2",
+    "opposite covariance sign rejected 2",
+    "independent JW CAR covariance sign 5",
+    "opposite covariance sign rejected 5",
+    "common-neighbour identity",
+    "moment matrix inverse",
+    "moment majorant PSD throughout",
+    "monotone inverse bound",
+    "quantitative direct overlap",
+    "complex ninety-word real Ward identity"
+  ],
+  "count": 10,
+  "elapsed_seconds": 0.0021901249419897795,
+  "scope": "Independent synthetic JW CAR matrices, combinatorial Kneser identity and rational majorant; no primary or native calculation"
+}

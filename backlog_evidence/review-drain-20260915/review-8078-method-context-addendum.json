@@ -1,0 +1,78 @@
+{
+  "status": "EXACT_SCIENCE_REPLAY_WITH_IDENTIFIED_REVIEWED_METHOD_CANDIDATE",
+  "old_base": "fa1e33749cf51db1284b553773aeceb8d35e9595",
+  "old_tree": "77cce68a9253f5f593c49af9f5fee9dea9e27ba9",
+  "base": "8f94936b3be95e08fe2f24f114c0f7ac697ec254",
+  "tree": "53d0a6b4767dd06f0a3e4e4cd254c0fa403ae879",
+  "science_and_cache_bytes_identical": true,
+  "method_changes": [
+    {
+      "category": "context",
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "old_sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+      "new_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+    },
+    {
+      "category": "context",
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "old_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+      "new_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+    }
+  ],
+  "candidate_scope": "UNIT_RECEIPT clarifies existing proof ownership/runtime metadata; checker batches exact index-byte comparisons without reducing source/input/coverage or drift checks. Independent procedural reports reused with exact hashes; complete narrow diff read in original science reviewer session.",
+  "semantic_interaction": "All scientific parent/premise/runtime identities unchanged. Newly landed scalar certificates remain optional independent results; the direct bound uses elementary analytic moments, not acquired scalar values.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8078-preexecution.json",
+      "sha256": "b0cc58e862133cb67a30ab2132160e7f4bc233136c8cc9d6135fcfe9970554de"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-unit-v1-preexecution.json",
+      "sha256": "ade21a1ac4b8c4fba04ffacdd7d35d8332f46b77ab17ee1a82092821e5ea7fb0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-preexecution-preflight.json",
+      "sha256": "c1a7aa4a22ca738ec73b0d02d6349d39d4965b77a6e134a7d713d0376d38fd68"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8078-capture-confirmation.json",
+      "sha256": "aa1d5d30bd37370bfe84e7430f5aa3cdd794df734b671cf620c3bf1d5536905e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-final-freeze.json",
+      "sha256": "4ef027ffdcba1891bed60d599ca544fb6190cd21e0352f838ebb945579fea713"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-final-execution.json",
+      "sha256": "d43e0c2df4630707e69ee832e27966158487130c96b461e99131c26f80a22c65"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture.py",
+      "sha256": "d8eda0f08e822ee408947c0dfff568f452c2b98552e539f4b4a558c973864ab2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture-started.json",
+      "sha256": "e4cbe4101c0d4cdf1b6f96fdbe06b7f7ce5793855897b64298b2a7d9193b8752"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture.log",
+      "sha256": "9e8ebf34b8b2a7d80121831729d01f51b1c5a17cf9bc8bb0fe0ef2859a92bd9f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-tooling-replay.json",
+      "sha256": "c7ff4d338f545364dfaa81060bfe17a1e5a9c0e4352d7bb41c8a2c6f38455dd2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/skill-8078-candidate-base.json",
+      "sha256": "f5cb99842e839c684296aad3d5ab1067fac26fd468420eaeb8676cf950f3ce61"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/skill-proof-ownership-independent-review.json",
+      "sha256": "aef7f75d0331111e17b8eeb999f233ccef01d481e7fe88133aa6e260eac4a015"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/receipt-batched-index-independent-review.json",
+      "sha256": "f20b3cabed89729e8a5f382618db9a1ef6c0c0fdc0f612a4fa22d40148232c0b"
+    }
+  ]
+}

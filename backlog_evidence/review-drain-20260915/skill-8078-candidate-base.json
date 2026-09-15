@@ -1,0 +1,19 @@
+{
+  "role": "Prospective independently reviewed tooling base for exact8078 source/cache replay; not installed/main yet",
+  "base": "e7b7e6cca9c48957191234a24a8f52f8f2d459b0",
+  "head": "8f94936b3be95e08fe2f24f114c0f7ac697ec254",
+  "commits": [
+    "d66f923571007b5c708059f30010427a8c3ff3e4",
+    "8f94936b3be95e08fe2f24f114c0f7ac697ec254"
+  ],
+  "source_hashes": {
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+    "docs/audit/scripts/tests/test_review_receipt_index.py": "5afc01a50f60077147edf946747b460afc52ed66274413ed91cb52916b09e79c"
+  },
+  "original_review_collection": "skill-efficiency-final-collected-units.json",
+  "independent_reviews": [
+    "skill-proof-ownership-independent-review.json",
+    "receipt-batched-index-independent-review.json"
+  ]
+}

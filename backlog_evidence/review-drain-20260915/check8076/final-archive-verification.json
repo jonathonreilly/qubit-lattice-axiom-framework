@@ -1,0 +1,8 @@
+{
+  "manifest_path": "docs/work_history/repo/review_feedback/pr8074-8076-forensic-evidence/recovery-manifest.json",
+  "manifest_sha256": "3c4a78714ba983be8734f5f0b559f2b522a20d378978183e1797b0609c2ca6fa",
+  "rows": 22102,
+  "unique_decoded_objects": 19986,
+  "status": "all stored and decoded hashes independently verified; original Git identities previously independently recovered",
+  "scope": "Exact preservation only; current mathematical review uses scoped proof/evidence chains, not every superseded historical branch."
+}

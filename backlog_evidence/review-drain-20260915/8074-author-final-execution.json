@@ -1,0 +1,23 @@
+{
+  "runner": "scripts/native_compression_action_boundary_2026_09_09.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "per_element: compact saved scalar witnesses and ten diagonal lower bounds checked; original numerical arithmetic not re-executed\nper_site: checked and not executed \u2014 no sitewise physical assertion in this block\nper_mode: checked and not executed \u2014 no full-band mode or propagation computation\nper_block: five fixed compression orbits and ten four-pair action outcomes checked against immutable receipts\nlattice_wide: checked and not executed \u2014 supplied-model implementation boundary, no physical no-go\n{\"checks\": 539, \"fresh_first_pairs\": [7, 8, 8, 8, 9], \"native_calls\": 0, \"original_snapshot_required_remote_retrieval\": true, \"recovery_archive_bundled\": true, \"saved_physics_replays\": 0, \"status\": \"PASS_COMPACT_BOUNDARY_EVIDENCE\"}\nTOTAL: PASS=539 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.08247494697570801,
+  "timeout_sec": 30,
+  "live_log": "/private/tmp/review-drain-20260915/author-pool/author-backlog/logs/runner-cache/.in-progress/native_compression_action_boundary_2026_09_09.txt",
+  "preflight_sha256": "396d7d65a0925d5c4483a8c66327931b43414f943026cf7319a75c4345aae97b",
+  "record_sha256": "11ff64c1fa24f6b5a96b0d5c2f5d9466a865e0a2b33690c6859133d0121c8a8f",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 51493,
+    "samples": 6,
+    "peak_tree_rss_bytes": 116129792,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; original internal behavior retained; external caps enforce this capture. PR8072 retains its original 30-second budget; PR8073/74/76 use the current review 30-second budget, not a historical worker contract."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/8076-author-timeout-capture.py",
+  "capture_script_sha256": "2c2e6896eaa8ca763f323d9aa54164dd85b6dfa5f6540cca1a24277419277f95"
+}

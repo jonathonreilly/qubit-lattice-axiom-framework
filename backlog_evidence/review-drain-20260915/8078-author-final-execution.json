@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/native_ward_direct_overlap_2026_09_10.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"status\": \"PASS_EXACT_ALGEBRA_SUPPORT\",\n  \"predicates\": 39,\n  \"m1\": \"1269649/653040\",\n  \"direct_lower\": \"506499805921/3158972160\",\n  \"ordered_words\": 90,\n  \"synthetic_ward_value\": \"3054159/8500\",\n  \"semantic_mutants_rejected\": [\n    {\n      \"boundary_sign\": 1\n    },\n    {\n      \"negative_eigenvalue\": 3\n    }\n  ],\n  \"import_hashes_checked\": 15,\n  \"native_evaluations\": 0,\n  \"full_alpha_established\": false\n}\nTOTAL: PASS=39 FAIL=0\nper_element: exact rational moment inequalities, Kneser projectors and ordered synthetic Ward algebra.\nper_site: supplied original Gaussian reference and disjoint local defects; no native state evaluation.\nper_mode: finite synthetic matrices verify signs; no physical spectrum or Gaussian mode computation.\nper_block: boundary-sign and negative-eigenvalue alternatives rejected; import hashes checked separately.\nlattice_wide: direct overlap bound only, full Ward correction retained and full alpha sign undetermined.\n",
+  "stderr": "",
+  "elapsed_sec": 0.14207005500793457,
+  "timeout_sec": 30,
+  "live_log": "/private/tmp/review-drain-20260915/author-slot-one/logs/runner-cache/.in-progress/native_ward_direct_overlap_2026_09_10.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 82884,
+    "samples": 5,
+    "peak_tree_rss_bytes": 50151424,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; runner-cache enforces 30 seconds externally. Compact primary has no inner alarm."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/8078-author-capture.py",
+  "capture_script_sha256": "d8eda0f08e822ee408947c0dfff568f452c2b98552e539f4b4a558c973864ab2"
+}

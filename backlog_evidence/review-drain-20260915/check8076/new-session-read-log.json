@@ -1,0 +1,178 @@
+{
+  "fully_read_source_blobs": {
+    "73b7d59e37e98264d6056ae691740a5c53669ccd57434f58c395a24ecda66592": [
+      "/private/tmp/toe-24h-probes-20260908/native-coordinate-free-native-runtime-design/worker.py"
+    ],
+    "5413ea6f50e1c1574afeb6cdde2ee9688744aadb78aacbe5b2dc1921ae7a5a45": [
+      "/private/tmp/toe-24h-probes-20260908/native-coordinate-free-native-runtime-design/leakage.py"
+    ],
+    "8c445e14f10e941f319bdc4a1371ba8623f7839b77f438f56688e4db625ef010": [
+      "/private/tmp/toe-24h-probes-20260908/native-common-five-orbit-cache-runtime/core.py"
+    ],
+    "144983353308ad6eb1307a331763dc1e59137f884def3334b9cc0e1983529693": [
+      "/private/tmp/toe-24h-probes-20260908/native-common-five-orbit-cache-runtime/worker.py"
+    ],
+    "124a82fbacb52e449573d013b02932d4d612df1c01a1bc59ff5c1ba86c4abb93": [
+      "/private/tmp/toe-24h-probes-20260908/native-ward-insertion-append-design/append_core.py",
+      "/private/tmp/toe-24h-probes-20260908/native-ward-insertion-append-runtime/append_core.py"
+    ],
+    "8f072b7866b4f6ab32b75668e1b81cbc2b4ba1dbef99359105814a5e32ffad97": [
+      "/private/tmp/toe-24h-probes-20260908/native-minimal-first-action-append-design/core.py"
+    ],
+    "16a9cdd550a3e726b3110a93306c0547b3391f93d1a685c36dd1ea72d095bec2": [
+      "/private/tmp/toe-24h-probes-20260908/native-sparse-pivot-action-adapter-design/core.py"
+    ],
+    "72b9b3ce68aa1ea91943f154557c05ea947719cdd2263398165614d6d866de66": [
+      "/private/tmp/toe-24h-probes-20260908/native-selected-principal-runtime-design/principal.py"
+    ],
+    "681902bc609b049ee008b1dc5ab52c2ff8a6444a0b05d61ebcb5bd34e4fdc717": [
+      "/private/tmp/toe-24h-probes-20260908/native-selected-principal-runtime-design/seed.py"
+    ],
+    "e44ac9ca7a4366f7b8469bf3e8daad24bc85089a3558790453d2f441805c3a52": [
+      "/private/tmp/toe-24h-probes-20260908/native-common-five-orbit-cache-runtime/cache.py"
+    ],
+    "7d973e9a894db54d50c1b636d4b1ebf6c81b985b14095fcb55a2b072bd3e591e": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-contraction-design/compute.py"
+    ],
+    "c2b9a7e95844f9c4cd2feef7cb586bbb7b1a4e9f10205cb8332a802b872272df": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-contraction-design/core.py"
+    ],
+    "418d5f76c75944ece7214e690519988cbeeb8d620cfc7aba2ed2e048a8f1ba52": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-catalog-design/compute.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-weight-repair-design/compute.py"
+    ],
+    "8460b43dc4586fd04a53b6b5b79013c4b1d8855fa9b17f9cb99e1d804a6e3fe2": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-weight-repair-design/loader.py"
+    ],
+    "d9ed1405cf66b589d390ee55f727989a04485f41c0c7a72f56cd952488b8e6e9": [
+      "/private/tmp/toe-24h-probes-20260908/native-compression-twelve-to24-design/pivot.py"
+    ],
+    "97c9882643fe655245d38755715f3aab15a9ef7e8ff68f398a53d21a57a58b92": [
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-continuation-design/pivot.py"
+    ],
+    "532e827fda08288f9f26104f9dceed32da48aeb8836982328801440c7c3cdcb6": [
+      "/private/tmp/toe-24h-probes-20260908/native-coordinate-free-native-runtime-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-common-five-orbit-cache-runtime/binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-pilot-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-ward-insertion-append-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-ward-insertion-append-runtime/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-minimal-first-action-append-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-compression-twelve-to24-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-continuation-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-sparse-pivot-action-adapter-design/cache_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-selected-principal-runtime-design/cache_binder.py"
+    ],
+    "357d110f4293e26a9f9fce4f722385654b9c3d206681c8bee2938e0f49d7aa88": [
+      "/private/tmp/toe-24h-probes-20260908/native-coordinate-free-native-runtime-design/action_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-minimal-first-action-append-design/binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-sparse-pivot-action-adapter-design/action_binder.py"
+    ],
+    "0bafcc16c4d094e38852a9201417bcf8255d5adc7791584790b5c6007173c091": [
+      "/private/tmp/toe-24h-probes-20260908/native-coordinate-free-native-runtime-design/pilot_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-pilot-design/binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-compression-twelve-to24-design/pilot_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-continuation-design/pilot_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-sparse-pivot-action-adapter-design/pilot_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-selected-principal-runtime-design/pilot_binder.py"
+    ],
+    "c8dc5c2163e33810b5ff2328906d31988b4dec72328438feb837c609276e7a13": [
+      "/private/tmp/toe-24h-probes-20260908/native-coordinate-free-native-runtime-design/append_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-pilot-design/append_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-ward-insertion-append-runtime/binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-minimal-first-action-append-design/append_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-compression-twelve-to24-design/append_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-fixed192-compression-continuation-design/append_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-sparse-pivot-action-adapter-design/append_binder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-selected-principal-runtime-design/append_binder.py"
+    ],
+    "982996e176989f0b68effdc5d31f8ff20437cad831c9cfd76a892d1eb1f9ed45": [
+      "/private/tmp/toe-24h-probes-20260908/native-selected-principal-runtime-design/binder.py"
+    ],
+    "294f8cbdcb30ca4cf603a175cbc50049028d62af81885a568279fc1828f08f53": [
+      "native-fresh-pivot-width-diagnostic/check.py"
+    ],
+    "21ac41a4eee2159f856f7120ab519209e35a373748f5b9a83ed881d7a59a97a8": [
+      "/private/tmp/toe-24h-probes-20260908/native-cminus-catalog-design/compute.py"
+    ],
+    "ad85a7c99ec42ac483f23645886852438077a8467190392d641bc3e67f067ab9": [
+      "/private/tmp/toe-24h-probes-20260908/native-cminus-catalog-design/interval.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-contraction-design/interval.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-catalog-design/interval.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-weight-repair-design/interval.py"
+    ],
+    "e013d945d1860ec000fcb5ab745992ed45aba97888b224818201c10610dbd763": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-catalog-design/geometry.py"
+    ],
+    "f8ec63931770772dd997978a7ea6c54fccd794528c466e310f835b299a162538": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-catalog-design/highorder.py",
+      "/private/tmp/toe-24h-probes-20260908/native-stationary-pole-scalar-batch-design/highorder.py"
+    ],
+    "9678d4316d26f2ffe10d1eaed5b16f176614b19fd3d2370a8bf77c99fd6139cb": [
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-catalog-design/pilot.py"
+    ],
+    "6aec125aa98683453676c29be0c6e61a8b9e1f5f29475f4ac1c5736ee49d2c60": [
+      "/private/tmp/toe-24h-probes-20260908/native-stationary-pole-scalar-batch-design/geometry.py"
+    ],
+    "fe799deb73915e52458f87802b99833497287c483edc208ceeb6994d9bb4f058": [
+      "/private/tmp/toe-24h-probes-20260908/native-stationary-pole-scalar-batch-design/pilot.py"
+    ]
+  },
+  "control": "schur-control.json",
+  "scope": "Continuation read log, not complete closure or verdict",
+  "fully_read_proof_blobs": {
+    "220090ef5eb9bc31c247416fe5e4301c520561b144e96d50f15049b85ccc6915": "/private/tmp/toe-24h-probes-20260908/native-cminus-catalog-design/DERIVATION.md",
+    "0cfc38c9ecc194fae9a1da2f4d321e7c64003d03079574e54809d0bf2785072c": "/private/tmp/toe-24h-probes-20260908/native-ward-augmented-gram-ledger/DERIVATION.md",
+    "09ed97135035c8a0a4c50510d668ddc0490fa03c74b7e0bb9dbfaff450af41ee": "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-catalog-design/DERIVATION.md",
+    "9f7c9672b4dea2cbab6599e93da1b6ca3570feaf4d793d0bc1d36a535821867c": "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-weight-repair-design/DERIVATION.md",
+    "a9b2b237b3abc3857d2538d34e63e7e5b8b088579bd71cc81222857d180f1439": "/private/tmp/toe-24h-probes-20260908/native-b66-saved-a-sensitivity/DERIVATION.md",
+    "13baed1e5f6fed47f6c63d2e13a333c2901db3ee8dea2e19d53ed74d1bf03d73": "/private/tmp/toe-24h-probes-20260908/native-small-s-green-acceleration-stretch/DERIVATION.md",
+    "935006e065ec0beeb7ad1b6c28aed50974f0749cd92feaad7ca9a28dadd6f9da": "/private/tmp/toe-24h-probes-20260908/native-stationary-pole-precision-ledger/DERIVATION.md",
+    "a9b7ab511389a233caec0fe34cdcbccf81b759cb8cacadc5260fdfa892944bf6": "/private/tmp/toe-24h-probes-20260908/native-uniform-batch-green-stretch/DERIVATION.md",
+    "4bed5e618135d4c805936cdb86697848de80240c2eb9efeec91650291b2f25e1": "/private/tmp/toe-24h-probes-20260908/native-weighted-impurity-projector-stretch/DERIVATION.md",
+    "fda1d5bf1e279775c837659327c2a10efdb9086d1a3d3174757de6e612b8592d": "/private/tmp/toe-24h-probes-20260908/native-weighted-impurity-projector-stretch/UNIFORM_TRANSFORM.md",
+    "ed0d8414f51937a39ce386bf7cf6ba39255e0fa9fb185a5f3b1179a4f660b4c3": "/private/tmp/toe-24h-probes-20260908/native-weighted-projector-complete-ledger/DERIVATION.md",
+    "bae8c8c10825516fc494f842842c05fa03f42565488ce891d57dcd5c80a28507": "native-fresh-pivot-width-diagnostic/DERIVATION.md"
+  },
+  "controls": [
+    "schur-control.json",
+    "analytic_control.json",
+    "fresh-width-control.json",
+    "four-action-control.json"
+  ],
+  "original_historical_MD_consumed": {
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/ASSUMPTIONS_AND_IMPORTS.md": "40ef4d2cafd1239d1b7176b66c15c8f3648fc89924a37d50474eadcf2bd472a7",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/PR_BACKLOG.md": "0c24444649c67877987656c363973b2bf1c5d4a7d234d26a7f1558f5a5acba14",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/CLAIM_STATUS_CERTIFICATE.md": "13d0bda4d4268f09716eb319a85c0648446fc55ee4458ca28383b0a7539d277d",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/NO_GO_LEDGER.md": "824bcfe09b43b9368aa570b343114d952864630d8ab17614ed41518fdc03fa00",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/ROOT_REVIEW.md": "ec03570334bcae91ca09f0bdbb86caac296b0c36f7ccaf40c0b058621e102cd8",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/TRACE_GATE.md": "0dfeebae82003ad563b36bbe3f24beeb0f424f98f32797845852f5baea1231b2",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/GOAL.md": "e1155861aadc329ab5f48accfe2dad1ba1bef35dcb5e8b2ad55ec0693d0d5dd6",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/REVIEW_HISTORY.md": "84551eaae9eb61e75a48a94cdd40d9ec46e3dccb942f4ca90f468cde07244337",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/OPPORTUNITY_QUEUE.md": "23fe42de60c8587420707420bc48e3508142d99ed08f007a116198479cf0fb46",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/LITERATURE_BRIDGES.md": "333657a683e986cf949e626716db4dbbce2a35718d750422d201e9f81a889318",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/ARTIFACT_PLAN.md": "e41b09915648d023f080f2f99725d13c80b290527013c4871423f50a4c3e6279",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/HANDOFF.md": "2ba241b63c54de7223f7716b194bc48f7c76f0d6032e38a8ed75c26c56734191",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/ROUTE_PORTFOLIO.md": "b7c6b62da5366a23f2b869a9cb1a43c17133aeab19822975d86d701a2bc83b00",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/canonical-review/INITIAL_REVIEW.md": "24a071dc2627cee54818f7e567731cad49f3807ed8254f58d17a1ec7d04b1af2",
+    "check8076/original-8072/.claude/science/physics-loops/native-gapfree-generator-propagation-20260909/canonical-review/FINAL_DELTA.md": "ee04804689ae9f4f066badadbde26d5a1314590e23cdc6f2cea062c15f6aecfe",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/ASSUMPTIONS_AND_IMPORTS.md": "2e090f5df6ea356ef42c12b8aa6e6b757a062ecbf3b00e8fd4181c05be716fac",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/PR_BACKLOG.md": "8e61f1bdde4e45ce2f0ebd514f29a04cd8b5d245f56912d34396a30aa4fdc312",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/CLAIM_STATUS_CERTIFICATE.md": "4fbbde36a50ab11e329789ea69ca70a81d737bc34eb681079f8f1a17a69b2b77",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/NO_GO_LEDGER.md": "fca15f9e20e28a916876c6c17174942aca7bd7d6733182a307d219449a2f9501",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/STATUS.md": "75ee14fe6aa132d103d83e1300ad31337452e938418fbe67c1e227a62f4395de",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/TRACE_GATE.md": "bdd4f860cb26ab5b7f0ff5a5621b7abb0cc76d8fe43f941e62b38119b81e52cf",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/GOAL.md": "af02ea85dab273818cf086a15c60c4189b90acbe9c2608b49f1178c77b616a45",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/REVIEW_HISTORY.md": "7a3bff180273d352d34b3b60777ea6600b8a1d3b087d8637235741ba90fcc9fa",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/OPPORTUNITY_QUEUE.md": "33ef8566180d6ff7336d70b11c52864c8f8947dd069b59531150b40c7a144a42",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/LITERATURE_BRIDGES.md": "c35590f0da08a0d1d904faf51dcb41680876fdb6287fa8ee469fdf8b24dc5410",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/ARTIFACT_PLAN.md": "5b03e65c1d1180ce41eea914fe443bcbc0e31c8bc99d8f4e9010db117a040379",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/HANDOFF.md": "f3d738c88fb8d1037dadfea0e78e5c955b569bc8e7ec489f54b26972e703f8d2",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/ROUTE_PORTFOLIO.md": "8f6d983a53133714177adad81d22ea8183adffbecd6fe153f7d6ad53005a6e8b",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/imports/GENERALIZED_SAVED_SOURCE_REVIEW.md": "015e8b42b1eec9021e15238d4019c04319b8e4ff3ed936d1df89ce4408d0fc9a",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/imports/GENERALIZED_ACTIVATION_REVIEW.md": "28ae4318c5a37a0e2aafb6072c196dc4831bc060755f363ad244b5b768743cd0",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/imports/GENERALIZED_SOURCE_REVIEW.md": "ed35131ebaedbc1dfdd1de84164587b207a3d73c29c80ba0c87987f79acbc3b7",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/reviews/DELIVERY_REVIEW.md": "def454fa3fac8fc63055d5bdf7cbfd5d366809b70482a0abb0d78967fca2e47f",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/reviews/AFFECTED_CANONICAL_REVIEW.md": "5aedf66cad4bc37bef8dae2f2f8c26b39b175753efc2189d2ef96c73d9a2bbe6",
+    "check8076/original-8076/.claude/science/physics-loops/native-generalized-action-boundary-20260909/reviews/ROOT_CANONICAL_REVIEW.md": "f9d2e0ba74e01da2a801dbd98412e93387f9089b5d7b931dc7fc9433d5454cff"
+  }
+}

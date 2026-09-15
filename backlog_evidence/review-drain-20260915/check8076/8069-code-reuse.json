@@ -1,0 +1,52 @@
+{
+  "cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/interval_base.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-cminus-catalog-design/interval_base.py",
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/interval_base.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-catalog-design/interval_base.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-contraction-design/interval_base.py",
+      "/private/tmp/toe-24h-probes-20260908/native-stationary-pole-scalar-batch-design/interval_base.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-catalog-design/interval_base.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-weight-repair-design/interval_base.py"
+    ]
+  },
+  "ae0ccf2cf3074c127dcb01c18bca4ef0f6245b2f4106b3bbaf1009126f0e21b4": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/core.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/core.py"
+    ]
+  },
+  "34ead09bbd749a10de87b6a972e3772b63fdcb57bc613b08f59119c748cf72cb": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/elliptic.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/elliptic.py",
+      "/private/tmp/toe-24h-probes-20260908/native-highprecision-b-catalog-design/elliptic.py",
+      "/private/tmp/toe-24h-probes-20260908/native-stationary-pole-scalar-batch-design/elliptic.py"
+    ]
+  },
+  "34c0a839f753f7fa71b6320e083f4745bac3b4ae7d7aeb6cad2d85b7e5dfdcc3": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/highorder.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/highorder.py"
+    ]
+  },
+  "8f925d664bd0d2fddae70d99f29ede17d57857c4cb2efac42e93b2a2964a1fd2": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/pilot.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/pilot.py"
+    ]
+  },
+  "38a40f18ef97a56404792e925e8423f30797b0810206c1b4fccba659ff06049a": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/run.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/run.py"
+    ]
+  },
+  "d4f98ccebb6de1ee388f1feb3fa973d4744d1920fb380fc107154bb0f65fd742": {
+    "prior": "check8069/original/.claude/science/physics-loops/native-certified-local-green-scalars-20260909/SOURCE_METHODS/native-elliptic-b-transform-stretch/toy.py",
+    "current": [
+      "/private/tmp/toe-24h-probes-20260908/native-elliptic-b-transform-stretch/toy.py"
+    ]
+  }
+}

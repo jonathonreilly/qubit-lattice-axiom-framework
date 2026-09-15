@@ -1,0 +1,23 @@
+{
+  "runner": "scripts/native_sparse_first_action_frame_2026_09_09.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\"alpha_computed\": false, \"checks\": 95, \"native_arrays_replayed\": false, \"native_leakage_computed\": false, \"propagation_computed\": false, \"scope\": \"conditional analytical closure; finite supporting controls only\", \"status\": \"PASS_SMALL_EXACT_SUPPORT\"}\nTOTAL: PASS=95 FAIL=0\nper_element: exact small paired-projection, Gram and signed-source predicates executed; no native arrays replayed\nper_site: seven-site synthetic source identities executed; full physical source assembly not executed\nper_mode: formal rank-two action and Gamma identities checked; native propagation remains uncomputed\nper_block: five declared source patterns and sparse census checked; original domain remains distinct from DATA\nlattice_wide: analytical closure only; no uniform physical leakage or thermodynamic computation performed\n",
+  "stderr": "",
+  "elapsed_sec": 0.0820777416229248,
+  "timeout_sec": 30,
+  "live_log": "/private/tmp/review-drain-20260915/author-pool/author-backlog/logs/runner-cache/.in-progress/native_sparse_first_action_frame_2026_09_09.txt",
+  "preflight_sha256": "396d7d65a0925d5c4483a8c66327931b43414f943026cf7319a75c4345aae97b",
+  "record_sha256": "11ff64c1fa24f6b5a96b0d5c2f5d9466a865e0a2b33690c6859133d0121c8a8f",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 51493,
+    "samples": 5,
+    "peak_tree_rss_bytes": 135856128,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; original internal behavior retained; external caps enforce this capture. PR8072 retains its original 30-second budget; PR8073/74/76 use the current review 30-second budget, not a historical worker contract."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/8076-author-timeout-capture.py",
+  "capture_script_sha256": "2c2e6896eaa8ca763f323d9aa54164dd85b6dfa5f6540cca1a24277419277f95"
+}

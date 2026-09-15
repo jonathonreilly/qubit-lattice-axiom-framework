@@ -1,0 +1,1989 @@
+{
+  "unit": "8078",
+  "reviewer_session": "/root/review_8011",
+  "status": "PREEXECUTION_SOURCE_CONFIRMATION",
+  "verdict": "SOURCE REVIEW CLEAN; COMPACT EXECUTION PENDING",
+  "source_base": "fa1e33749cf51db1284b553773aeceb8d35e9595",
+  "source_tree": "afa432fb80de6cabb2dfb8ab9b9cf23201e7cc3a",
+  "source_paths": [
+    {
+      "path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+      "sha256": "ca03f609967e07c571f6b60e58ed53d43d04059be2f3fa62fa92de07beb72aac"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0.gz",
+      "sha256": "fcf22c67a8f9958f0a2f30ca507443151abb2d23340c0c84a729e34407b0f073"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882.gz",
+      "sha256": "ea99e328f24abf2d1521c42f9dd7551289e242452fe7ea2146623270516309ee"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a.gz",
+      "sha256": "408a31e9f207fd2a15e17d7645a2db98b3f764aa035da56f86cec7cb09ea4fa6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8.gz",
+      "sha256": "41b292f0f2511454198165dc39e8efe533059e7f01c8509c14b5159d658c9117"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330.gz",
+      "sha256": "1bfe6a2305e589b31b794aeb269b3994ee6aa29cb02379fe679299d5474ec55f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf.gz",
+      "sha256": "dd62ac730bb8de0c9b5c6051e00819cd214ec9e476ba12a8455489261e4dc7b8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0.gz",
+      "sha256": "6425fea047f06e2a86d3bda154d49f99b3f08bd18d713ead5c6412c04255f83a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556.gz",
+      "sha256": "86f151e0ce7fc5afd3a8a246c65f9ac277256700865e577f9f23d02b87d75463"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8.gz",
+      "sha256": "33b754e1d30061141e2da54d85a7336d3612f876ae95b9eddf8b1be10e582aed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3.gz",
+      "sha256": "a7a4fd09f6584dab4121559278481f8ec78ff148fe6bce8bb4a2839dcbfee801"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef.gz",
+      "sha256": "dc2d335d14fc244cd0b4ba86691db95d3de4233b07dfa39c3471b0ca71de1544"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a.gz",
+      "sha256": "4e7de61828f1886329ced58968aa2cb4c8d357671a76849b0b1e1a6c2d8ed631"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621.gz",
+      "sha256": "05a30d9081bef1592390a04bbc0e59a319c370c5fcfc3c86bcff1f09db2ece6a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03.gz",
+      "sha256": "28b21f215a31193ecba40fcf41dd6d09462bf267d32900e461a37c2da1e30c6c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03.gz",
+      "sha256": "21197c161bcd0be242f1f7cd7fb84d4f6a8b03bd0308c3cc2819b8003c144853"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f.gz",
+      "sha256": "1e209be7daed6a28d3d22e3c7668619d43f7e23346f5fa4deb5425eb995aec17"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d.gz",
+      "sha256": "5d5d30df110b659450a21b0eb046b96230c41035406cad46a410fefbdbe4eb79"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab.gz",
+      "sha256": "1b2db8df4681dbb23eb32ca3e75aeb59a1dc180a72b519c155ec3f8fbad8a60c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847.gz",
+      "sha256": "a30beee65b6e871453a242fe25531e578606d784da39cd932f481253c750f5b2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638.gz",
+      "sha256": "c5505f440d6302ec67d2bf33eea941460e9837707404c95f76ce3d0795c3db6c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc.gz",
+      "sha256": "0c7e9681aa0c737db42b4c10e63b0b88750cd6b14c40aac8dd30e10fe1576718"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea.gz",
+      "sha256": "cde11ed819dc9da082964ad8055339955247cbe4364125d4903422659106b2e5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0.gz",
+      "sha256": "38c6847d47b2d9a5c939c60114311bd1bfcb1d409e71ff1808e7ee7e94636bc2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c.gz",
+      "sha256": "5dba86e76439f88497168aa20c4b6a5b0cef422bdd1c2fad76076a5a751a5340"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60.gz",
+      "sha256": "0f6422a62d873801715fe38ca7121a495c1803279ddb780efd9d9c4591aebd85"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/9d69b1af278bb6a4950564b3605f1d058fc8e8e8a0036e80efac783b983a389f.gz",
+      "sha256": "bd87297cfe9b1bb2b330bb35fbb5f493238426ef5752f2c0f339c71145182c68"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9.gz",
+      "sha256": "72526eb48546f711b2d8eeb045066573569573add8765cd4e6dbe0304398bb6b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127.gz",
+      "sha256": "b6d6e8a317604bfefccba10028eba43d318f2103a3f3f019df4a7c65dfd189bd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d.gz",
+      "sha256": "1d4856d0d149eaf8856bf35b275f7469b62398c5b98da38ee9b39363066776e5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289.gz",
+      "sha256": "715cfd2185a0179afddfea61e09263101e21c766d4a2ecd30a8a1b550b69c922"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8.gz",
+      "sha256": "91b2a507ca74386d659de1a349aebee8fe02d2014c37cd808dd4a5587bbf27c1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e.gz",
+      "sha256": "752e26c96ce019213716fd82bbd54b9497d4b4bcedc6d89978a2c484ad1858b9"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235.gz",
+      "sha256": "3b11cda70f91cab00ab954453ae43095475923b4f0f4720155108519b96ab22f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1.gz",
+      "sha256": "d0eccbcdb0bc904ebe5cb8826fafe7fb87ace1496260d8db712f6395660d7b99"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85.gz",
+      "sha256": "c426bc505388b0034823d9839230b8c3066b3223c71f14f2d083dde527248c64"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc.gz",
+      "sha256": "952d22345f3a2714d7dd43fa4954b1b66d05c1b429a4127fca0e5de34960afbe"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82.gz",
+      "sha256": "3e7850d27ececee397dbc3a0ee590a89162254af228f6fc7b84581104e849793"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6.gz",
+      "sha256": "d4ed61e941394ff398cff91478e63e9569031ef5b7393851adebbf9635bf8ff4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/archive-manifest.json",
+      "sha256": "02336f32eb11ced792cab4ade05ecdc7579f14c1d61451930f0710a31ccbfdd8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/kept/pr8078-HANDOFF-9ef67db77ea9ef6f.md",
+      "sha256": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8078-evidence/kept/pr8078-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "sha256": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/CANONICAL_IMPORTS.json",
+      "sha256": "36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/IMPORT_PROVENANCE.json",
+      "sha256": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/EXACT_THIRD_MOMENT.md",
+      "sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_REVIEW.md",
+      "sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_WARD_CONTROLS.json",
+      "sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+      "sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+      "sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+      "sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_3_PAIR_ORBITS.md",
+      "sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_4_DERIVATION.md",
+      "sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_5_DERIVATION.md",
+      "sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_6_SCALING_BRIDGE.md",
+      "sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.json",
+      "sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.py",
+      "sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_DERIVATION.md",
+      "sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_FREEZE.json",
+      "sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md",
+      "sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847"
+    },
+    {
+      "path": "scripts/native_ward_direct_overlap_2026_09_10.py",
+      "sha256": "e7e056b54f33bb0190d033cea3fc47bb862676d98c606ad4ef63b82ad0ae9178"
+    }
+  ],
+  "constituents": [
+    {
+      "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+      "base": "aa163dfd79252f607b6065435c728c98d67783ea",
+      "paths": [
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md",
+          "sha256": "26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+          "sha256": "834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json",
+          "sha256": "36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md",
+          "sha256": "7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md",
+          "sha256": "18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md",
+          "sha256": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json",
+          "sha256": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md",
+          "sha256": "aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md",
+          "sha256": "5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md",
+          "sha256": "cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md",
+          "sha256": "09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md",
+          "sha256": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md",
+          "sha256": "49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json",
+          "sha256": "9d69b1af278bb6a4950564b3605f1d058fc8e8e8a0036e80efac783b983a389f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml",
+          "sha256": "95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md",
+          "sha256": "c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md",
+          "sha256": "db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md",
+          "sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md",
+          "sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json",
+          "sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+          "sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+          "sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+          "sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md",
+          "sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md",
+          "sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md",
+          "sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md",
+          "sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json",
+          "sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py",
+          "sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md",
+          "sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json",
+          "sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md",
+          "sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md",
+          "sha256": "3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md",
+          "sha256": "4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json",
+          "sha256": "bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json",
+          "sha256": "34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json",
+          "sha256": "c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json",
+          "sha256": "65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout",
+          "sha256": "5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout",
+          "sha256": "ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc"
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout",
+          "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+        },
+        {
+          "status": "A",
+          "path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+          "sha256": "e4f725931799090f4d4c5866e4af33dbdfdcc70819e595d401ca5eec94a03be7"
+        },
+        {
+          "status": "M",
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "0b2c57cf9edcb5e54b66225999fe17ee5ec046e6c856a659a26967e2b79ff866"
+        },
+        {
+          "status": "A",
+          "path": "scripts/native_ward_direct_overlap_2026_09_10.py",
+          "sha256": "424e58bcac1d395afe63f2078ae572e9617de4e1511c87b281e253a6a4634eb2"
+        }
+      ]
+    }
+  ],
+  "original_dispositions": {
+    "8078": [
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md",
+        "original_sha256": "26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf.gz",
+        "final_sha256": "dd62ac730bb8de0c9b5c6051e00819cd214ec9e476ba12a8455489261e4dc7b8",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "390976e169c9badd7d83ec3433a7f64a678308d7",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md",
+          "raw_bytes": 425,
+          "raw_sha256": "26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf",
+          "stored_path": "_objects/26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf.gz",
+          "stored_sha256": "dd62ac730bb8de0c9b5c6051e00819cd214ec9e476ba12a8455489261e4dc7b8"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+        "original_sha256": "834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea.gz",
+        "final_sha256": "cde11ed819dc9da082964ad8055339955247cbe4364125d4903422659106b2e5",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "d476bbf51f008b5ee41e9140c94f450a1b5ac9aa",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+          "raw_bytes": 899,
+          "raw_sha256": "834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea",
+          "stored_path": "_objects/834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea.gz",
+          "stored_sha256": "cde11ed819dc9da082964ad8055339955247cbe4364125d4903422659106b2e5"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json",
+        "original_sha256": "36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556.gz",
+        "final_sha256": "86f151e0ce7fc5afd3a8a246c65f9ac277256700865e577f9f23d02b87d75463",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "2501433982b7ce88fc59cb2de85968729e78df35",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json",
+          "raw_bytes": 546,
+          "raw_sha256": "36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556",
+          "stored_path": "_objects/36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556.gz",
+          "stored_sha256": "86f151e0ce7fc5afd3a8a246c65f9ac277256700865e577f9f23d02b87d75463"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md",
+        "original_sha256": "7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638.gz",
+        "final_sha256": "c5505f440d6302ec67d2bf33eea941460e9837707404c95f76ce3d0795c3db6c",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "23dd313e826750c3bb772eb13337932b01f55e7f",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md",
+          "raw_bytes": 818,
+          "raw_sha256": "7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638",
+          "stored_path": "_objects/7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638.gz",
+          "stored_sha256": "c5505f440d6302ec67d2bf33eea941460e9837707404c95f76ce3d0795c3db6c"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md",
+        "original_sha256": "18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a.gz",
+        "final_sha256": "408a31e9f207fd2a15e17d7645a2db98b3f764aa035da56f86cec7cb09ea4fa6",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "d71c3bfffaf12ee6e324e8f6cd094b50f39f84f9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md",
+          "raw_bytes": 279,
+          "raw_sha256": "18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a",
+          "stored_path": "_objects/18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a.gz",
+          "stored_sha256": "408a31e9f207fd2a15e17d7645a2db98b3f764aa035da56f86cec7cb09ea4fa6"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md",
+        "original_sha256": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/kept/pr8078-HANDOFF-9ef67db77ea9ef6f.md",
+        "final_sha256": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "09b5bd5aa5c6bf40af4af6df4baa15b4e691e225",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md",
+          "raw_bytes": 552,
+          "raw_sha256": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae",
+          "stored_path": "kept/pr8078-HANDOFF-9ef67db77ea9ef6f.md",
+          "stored_sha256": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json",
+        "original_sha256": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03.gz",
+        "final_sha256": "28b21f215a31193ecba40fcf41dd6d09462bf267d32900e461a37c2da1e30c6c",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f9d569041f38b6b2d172881ef8c6ba179eae731c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json",
+          "raw_bytes": 3416,
+          "raw_sha256": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03",
+          "stored_path": "_objects/564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03.gz",
+          "stored_sha256": "28b21f215a31193ecba40fcf41dd6d09462bf267d32900e461a37c2da1e30c6c"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md",
+        "original_sha256": "aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127.gz",
+        "final_sha256": "b6d6e8a317604bfefccba10028eba43d318f2103a3f3f019df4a7c65dfd189bd",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "9941fc9d71d37bbe85f7bcb8911746707b06a63b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md",
+          "raw_bytes": 372,
+          "raw_sha256": "aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127",
+          "stored_path": "_objects/aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127.gz",
+          "stored_sha256": "b6d6e8a317604bfefccba10028eba43d318f2103a3f3f019df4a7c65dfd189bd"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md",
+        "original_sha256": "5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03.gz",
+        "final_sha256": "21197c161bcd0be242f1f7cd7fb84d4f6a8b03bd0308c3cc2819b8003c144853",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c381a8144069e69825c192c42b1ec25c03ac456b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md",
+          "raw_bytes": 499,
+          "raw_sha256": "5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03",
+          "stored_path": "_objects/5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03.gz",
+          "stored_sha256": "21197c161bcd0be242f1f7cd7fb84d4f6a8b03bd0308c3cc2819b8003c144853"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md",
+        "original_sha256": "cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235.gz",
+        "final_sha256": "3b11cda70f91cab00ab954453ae43095475923b4f0f4720155108519b96ab22f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "83120e3e17e51cb91acb70f793fd294cd23b5360",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md",
+          "raw_bytes": 332,
+          "raw_sha256": "cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235",
+          "stored_path": "_objects/cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235.gz",
+          "stored_sha256": "3b11cda70f91cab00ab954453ae43095475923b4f0f4720155108519b96ab22f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md",
+        "original_sha256": "09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0.gz",
+        "final_sha256": "fcf22c67a8f9958f0a2f30ca507443151abb2d23340c0c84a729e34407b0f073",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "634990bb6493cc2046437e568296d90a5416e4ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md",
+          "raw_bytes": 305,
+          "raw_sha256": "09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0",
+          "stored_path": "_objects/09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0.gz",
+          "stored_sha256": "fcf22c67a8f9958f0a2f30ca507443151abb2d23340c0c84a729e34407b0f073"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md",
+        "original_sha256": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/kept/pr8078-REVIEW_HISTORY-3f4cb79c836849bf.md",
+        "final_sha256": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "1430279a189aa740fc68143c984d14f4a08d985b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md",
+          "raw_bytes": 963,
+          "raw_sha256": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf",
+          "stored_path": "kept/pr8078-REVIEW_HISTORY-3f4cb79c836849bf.md",
+          "stored_sha256": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md",
+        "original_sha256": "49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3.gz",
+        "final_sha256": "a7a4fd09f6584dab4121559278481f8ec78ff148fe6bce8bb4a2839dcbfee801",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "15bc9a49ff8090ff37e627d6f8d206418c485202",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md",
+          "raw_bytes": 376,
+          "raw_sha256": "49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3",
+          "stored_path": "_objects/49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3.gz",
+          "stored_sha256": "a7a4fd09f6584dab4121559278481f8ec78ff148fe6bce8bb4a2839dcbfee801"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json",
+        "original_sha256": "9d69b1af278bb6a4950564b3605f1d058fc8e8e8a0036e80efac783b983a389f",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/9d69b1af278bb6a4950564b3605f1d058fc8e8e8a0036e80efac783b983a389f.gz",
+        "final_sha256": "bd87297cfe9b1bb2b330bb35fbb5f493238426ef5752f2c0f339c71145182c68",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5b1abc3a70588e1da81447d4b5af2deda795319e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json",
+          "raw_bytes": 7406,
+          "raw_sha256": "9d69b1af278bb6a4950564b3605f1d058fc8e8e8a0036e80efac783b983a389f",
+          "stored_path": "_objects/9d69b1af278bb6a4950564b3605f1d058fc8e8e8a0036e80efac783b983a389f.gz",
+          "stored_sha256": "bd87297cfe9b1bb2b330bb35fbb5f493238426ef5752f2c0f339c71145182c68"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml",
+        "original_sha256": "95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60.gz",
+        "final_sha256": "0f6422a62d873801715fe38ca7121a495c1803279ddb780efd9d9c4591aebd85",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ef74e421f6f8b51e67be464a7ff8bc6a17157f57",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml",
+          "raw_bytes": 654,
+          "raw_sha256": "95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60",
+          "stored_path": "_objects/95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60.gz",
+          "stored_sha256": "0f6422a62d873801715fe38ca7121a495c1803279ddb780efd9d9c4591aebd85"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md",
+        "original_sha256": "c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289.gz",
+        "final_sha256": "715cfd2185a0179afddfea61e09263101e21c766d4a2ecd30a8a1b550b69c922",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "0df632d8f41b1702e0c10f4567134dd2d1747ff4",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md",
+          "raw_bytes": 337,
+          "raw_sha256": "c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289",
+          "stored_path": "_objects/c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289.gz",
+          "stored_sha256": "715cfd2185a0179afddfea61e09263101e21c766d4a2ecd30a8a1b550b69c922"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md",
+        "original_sha256": "db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85.gz",
+        "final_sha256": "c426bc505388b0034823d9839230b8c3066b3223c71f14f2d083dde527248c64",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1e6dbb1a089094a53a47d121f51075757f7f128e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md",
+          "raw_bytes": 390,
+          "raw_sha256": "db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85",
+          "stored_path": "_objects/db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85.gz",
+          "stored_sha256": "c426bc505388b0034823d9839230b8c3066b3223c71f14f2d083dde527248c64"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md",
+        "original_sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c.gz",
+        "final_sha256": "5dba86e76439f88497168aa20c4b6a5b0cef422bdd1c2fad76076a5a751a5340",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4a987083e973d7bd1b2062570a918e51cf7b98e5",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md",
+          "raw_bytes": 2661,
+          "raw_sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c",
+          "stored_path": "_objects/86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c.gz",
+          "stored_sha256": "5dba86e76439f88497168aa20c4b6a5b0cef422bdd1c2fad76076a5a751a5340"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md",
+        "original_sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9.gz",
+        "final_sha256": "72526eb48546f711b2d8eeb045066573569573add8765cd4e6dbe0304398bb6b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4b34b6cf29e7eb1ae5e69635b896d39884e8c37c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md",
+          "raw_bytes": 3052,
+          "raw_sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9",
+          "stored_path": "_objects/a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9.gz",
+          "stored_sha256": "72526eb48546f711b2d8eeb045066573569573add8765cd4e6dbe0304398bb6b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json",
+        "original_sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e.gz",
+        "final_sha256": "752e26c96ce019213716fd82bbd54b9497d4b4bcedc6d89978a2c484ad1858b9",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "36e072f63310b2a260e73c889d86bbfe1127aa74",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json",
+          "raw_bytes": 244,
+          "raw_sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e",
+          "stored_path": "_objects/c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e.gz",
+          "stored_sha256": "752e26c96ce019213716fd82bbd54b9497d4b4bcedc6d89978a2c484ad1858b9"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+        "original_sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621.gz",
+        "final_sha256": "05a30d9081bef1592390a04bbc0e59a319c370c5fcfc3c86bcff1f09db2ece6a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6bb21ea703972b3f90b1ad8e84e96c485ee6696e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+          "raw_bytes": 3863,
+          "raw_sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621",
+          "stored_path": "_objects/4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621.gz",
+          "stored_sha256": "05a30d9081bef1592390a04bbc0e59a319c370c5fcfc3c86bcff1f09db2ece6a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+        "original_sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0.gz",
+        "final_sha256": "38c6847d47b2d9a5c939c60114311bd1bfcb1d409e71ff1808e7ee7e94636bc2",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "11272fd6738ce2720beeba86d7c1c1ef180c92c8",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+          "raw_bytes": 4253,
+          "raw_sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0",
+          "stored_path": "_objects/840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0.gz",
+          "stored_sha256": "38c6847d47b2d9a5c939c60114311bd1bfcb1d409e71ff1808e7ee7e94636bc2"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+        "original_sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1.gz",
+        "final_sha256": "d0eccbcdb0bc904ebe5cb8826fafe7fb87ace1496260d8db712f6395660d7b99",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4b492828b6b29674b6a2ffb125e431eca113cd62",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+          "raw_bytes": 6177,
+          "raw_sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1",
+          "stored_path": "_objects/d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1.gz",
+          "stored_sha256": "d0eccbcdb0bc904ebe5cb8826fafe7fb87ace1496260d8db712f6395660d7b99"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md",
+        "original_sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82.gz",
+        "final_sha256": "3e7850d27ececee397dbc3a0ee590a89162254af228f6fc7b84581104e849793",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "3c3532fdb3750b921a28c9aeca8a8d2ffce2752b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md",
+          "raw_bytes": 1329,
+          "raw_sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82",
+          "stored_path": "_objects/f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82.gz",
+          "stored_sha256": "3e7850d27ececee397dbc3a0ee590a89162254af228f6fc7b84581104e849793"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md",
+        "original_sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab.gz",
+        "final_sha256": "1b2db8df4681dbb23eb32ca3e75aeb59a1dc180a72b519c155ec3f8fbad8a60c",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "bf7be617b9031dfcb8b29dc4f7696f146b5bd571",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md",
+          "raw_bytes": 2174,
+          "raw_sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab",
+          "stored_path": "_objects/6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab.gz",
+          "stored_sha256": "1b2db8df4681dbb23eb32ca3e75aeb59a1dc180a72b519c155ec3f8fbad8a60c"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md",
+        "original_sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8.gz",
+        "final_sha256": "41b292f0f2511454198165dc39e8efe533059e7f01c8509c14b5159d658c9117",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "13637034b0ac856ebd1802e38694e943c5f2e69b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md",
+          "raw_bytes": 3957,
+          "raw_sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8",
+          "stored_path": "_objects/1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8.gz",
+          "stored_sha256": "41b292f0f2511454198165dc39e8efe533059e7f01c8509c14b5159d658c9117"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md",
+        "original_sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882.gz",
+        "final_sha256": "ea99e328f24abf2d1521c42f9dd7551289e242452fe7ea2146623270516309ee",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f90e31c00b7af046295d934970b3418a4902df4c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md",
+          "raw_bytes": 3169,
+          "raw_sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882",
+          "stored_path": "_objects/0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882.gz",
+          "stored_sha256": "ea99e328f24abf2d1521c42f9dd7551289e242452fe7ea2146623270516309ee"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json",
+        "original_sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef.gz",
+        "final_sha256": "dc2d335d14fc244cd0b4ba86691db95d3de4233b07dfa39c3471b0ca71de1544",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "907a53a0e24ff16e9064010e68095c0952ae8b24",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json",
+          "raw_bytes": 161,
+          "raw_sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef",
+          "stored_path": "_objects/4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef.gz",
+          "stored_sha256": "dc2d335d14fc244cd0b4ba86691db95d3de4233b07dfa39c3471b0ca71de1544"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py",
+        "original_sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6.gz",
+        "final_sha256": "d4ed61e941394ff398cff91478e63e9569031ef5b7393851adebbf9635bf8ff4",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f380afc97b01d3df316809f25abeaffea0dca6ed",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py",
+          "raw_bytes": 1938,
+          "raw_sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6",
+          "stored_path": "_objects/fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6.gz",
+          "stored_sha256": "d4ed61e941394ff398cff91478e63e9569031ef5b7393851adebbf9635bf8ff4"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md",
+        "original_sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330.gz",
+        "final_sha256": "1bfe6a2305e589b31b794aeb269b3994ee6aa29cb02379fe679299d5474ec55f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "2821ed412405536a5f7a632aff3c22142e339c47",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md",
+          "raw_bytes": 5484,
+          "raw_sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330",
+          "stored_path": "_objects/257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330.gz",
+          "stored_sha256": "1bfe6a2305e589b31b794aeb269b3994ee6aa29cb02379fe679299d5474ec55f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json",
+        "original_sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc.gz",
+        "final_sha256": "0c7e9681aa0c737db42b4c10e63b0b88750cd6b14c40aac8dd30e10fe1576718",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "cf9176e4f80321702ebd7a9e0554e060ae0d9aa8",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json",
+          "raw_bytes": 1543,
+          "raw_sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc",
+          "stored_path": "_objects/7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc.gz",
+          "stored_sha256": "0c7e9681aa0c737db42b4c10e63b0b88750cd6b14c40aac8dd30e10fe1576718"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md",
+        "original_sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847.gz",
+        "final_sha256": "a30beee65b6e871453a242fe25531e578606d784da39cd932f481253c750f5b2",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "2811a16514e078cd7fb13a53d56797b5186c9a8e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md",
+          "raw_bytes": 1331,
+          "raw_sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847",
+          "stored_path": "_objects/7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847.gz",
+          "stored_sha256": "a30beee65b6e871453a242fe25531e578606d784da39cd932f481253c750f5b2"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md",
+        "original_sha256": "3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8.gz",
+        "final_sha256": "33b754e1d30061141e2da54d85a7336d3612f876ae95b9eddf8b1be10e582aed",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "93793f25ad30a7f5a4af58d15101072a103d7c33",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md",
+          "raw_bytes": 462,
+          "raw_sha256": "3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8",
+          "stored_path": "_objects/3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8.gz",
+          "stored_sha256": "33b754e1d30061141e2da54d85a7336d3612f876ae95b9eddf8b1be10e582aed"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md",
+        "original_sha256": "4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a.gz",
+        "final_sha256": "4e7de61828f1886329ced58968aa2cb4c8d357671a76849b0b1e1a6c2d8ed631",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6a42a44f371b0715f69a4908beb55f82ef40ce9d",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md",
+          "raw_bytes": 2233,
+          "raw_sha256": "4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a",
+          "stored_path": "_objects/4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a.gz",
+          "stored_sha256": "4e7de61828f1886329ced58968aa2cb4c8d357671a76849b0b1e1a6c2d8ed631"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json",
+        "original_sha256": "bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d.gz",
+        "final_sha256": "1d4856d0d149eaf8856bf35b275f7469b62398c5b98da38ee9b39363066776e5",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "fb1459bd4fefd832948bf7d944cd0fd4d08b071c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json",
+          "raw_bytes": 400,
+          "raw_sha256": "bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d",
+          "stored_path": "_objects/bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d.gz",
+          "stored_sha256": "1d4856d0d149eaf8856bf35b275f7469b62398c5b98da38ee9b39363066776e5"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json",
+        "original_sha256": "34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0.gz",
+        "final_sha256": "6425fea047f06e2a86d3bda154d49f99b3f08bd18d713ead5c6412c04255f83a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "df0475e4dd54856f39393d2776c5c2bf80a4128b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json",
+          "raw_bytes": 791,
+          "raw_sha256": "34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0",
+          "stored_path": "_objects/34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0.gz",
+          "stored_sha256": "6425fea047f06e2a86d3bda154d49f99b3f08bd18d713ead5c6412c04255f83a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json",
+        "original_sha256": "c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8.gz",
+        "final_sha256": "91b2a507ca74386d659de1a349aebee8fe02d2014c37cd808dd4a5587bbf27c1",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "452bdfd962ea8491b47f0c0ffb1ddaf1237bd468",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json",
+          "raw_bytes": 697,
+          "raw_sha256": "c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8",
+          "stored_path": "_objects/c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8.gz",
+          "stored_sha256": "91b2a507ca74386d659de1a349aebee8fe02d2014c37cd808dd4a5587bbf27c1"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json",
+        "original_sha256": "65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d.gz",
+        "final_sha256": "5d5d30df110b659450a21b0eb046b96230c41035406cad46a410fefbdbe4eb79",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "785d8877842baeb612180f3d6b1d6b3b7d776ce2",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json",
+          "raw_bytes": 294,
+          "raw_sha256": "65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d",
+          "stored_path": "_objects/65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d.gz",
+          "stored_sha256": "5d5d30df110b659450a21b0eb046b96230c41035406cad46a410fefbdbe4eb79"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout",
+        "original_sha256": "5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f.gz",
+        "final_sha256": "1e209be7daed6a28d3d22e3c7668619d43f7e23346f5fa4deb5425eb995aec17",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7ef9018fe7ea3115f773a396ab10df4e52d83b04",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout",
+          "raw_bytes": 280,
+          "raw_sha256": "5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f",
+          "stored_path": "_objects/5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f.gz",
+          "stored_sha256": "1e209be7daed6a28d3d22e3c7668619d43f7e23346f5fa4deb5425eb995aec17"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout",
+        "original_sha256": "ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc.gz",
+        "final_sha256": "952d22345f3a2714d7dd43fa4954b1b66d05c1b429a4127fca0e5de34960afbe",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "13791c7954a386db0eb935745d10899ad8f16064",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout",
+          "raw_bytes": 77,
+          "raw_sha256": "ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc",
+          "stored_path": "_objects/ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc.gz",
+          "stored_sha256": "952d22345f3a2714d7dd43fa4954b1b66d05c1b429a4127fca0e5de34960afbe"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout",
+        "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "original_status": "A",
+        "disposition": "Exact historical source/evidence preserved; actual imported proofs also raw runtime-bound under outputs. Historical reviews/generated statuses are not authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8078-evidence/_objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+        "final_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout",
+          "raw_bytes": 81,
+          "raw_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+          "stored_path": "_objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+          "stored_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+        }
+      },
+      {
+        "original_path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+        "original_sha256": "e4f725931799090f4d4c5866e4af33dbdfdcc70819e595d401ca5eec94a03be7",
+        "original_status": "A",
+        "disposition": "Canonical mathematical argument/controls unchanged; portable inputs, metadata/isolation and execution boundaries supplied.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md"
+        },
+        "final_path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+        "final_sha256": "ca03f609967e07c571f6b60e58ed53d43d04059be2f3fa62fa92de07beb72aac",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_sha256": "0b2c57cf9edcb5e54b66225999fe17ee5ec046e6c856a659a26967e2b79ff866",
+        "original_status": "M",
+        "disposition": "Generated graph manifest excluded; combined integration regenerates authority.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": "docs/audit/data/citation_graph_manifest.json"
+        },
+        "final_path": null,
+        "final_sha256": null,
+        "archive_mapping": null
+      },
+      {
+        "original_path": "scripts/native_ward_direct_overlap_2026_09_10.py",
+        "original_sha256": "424e58bcac1d395afe63f2078ae572e9617de4e1511c87b281e253a6a4634eb2",
+        "original_status": "A",
+        "disposition": "Canonical mathematical argument/controls unchanged; portable inputs, metadata/isolation and execution boundaries supplied.",
+        "recovery": {
+          "head": "4600d22d47052040aabe090148ec82cb9a1828f5",
+          "path": "scripts/native_ward_direct_overlap_2026_09_10.py"
+        },
+        "final_path": "scripts/native_ward_direct_overlap_2026_09_10.py",
+        "final_sha256": "e7e056b54f33bb0190d033cea3fc47bb862676d98c606ad4ef63b82ad0ae9178",
+        "archive_mapping": null
+      }
+    ]
+  },
+  "input_bindings": {
+    "runtime": [
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/IMPORT_PROVENANCE.json",
+        "sha256": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/EXACT_THIRD_MOMENT.md",
+        "sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_REVIEW.md",
+        "sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_WARD_CONTROLS.json",
+        "sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+        "sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+        "sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+        "sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_3_PAIR_ORBITS.md",
+        "sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_4_DERIVATION.md",
+        "sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_5_DERIVATION.md",
+        "sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_6_SCALING_BRIDGE.md",
+        "sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.json",
+        "sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.py",
+        "sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_DERIVATION.md",
+        "sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_FREEZE.json",
+        "sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md",
+        "sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+      },
+      {
+        "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8078-evidence/README.md",
+        "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+      },
+      {
+        "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/CANONICAL_IMPORTS.json",
+        "sha256": "36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "runtime_scientific_inputs": [
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/IMPORT_PROVENANCE.json",
+      "sha256": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/EXACT_THIRD_MOMENT.md",
+      "sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_REVIEW.md",
+      "sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_WARD_CONTROLS.json",
+      "sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+      "sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+      "sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+      "sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_3_PAIR_ORBITS.md",
+      "sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_4_DERIVATION.md",
+      "sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_5_DERIVATION.md",
+      "sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_6_SCALING_BRIDGE.md",
+      "sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.json",
+      "sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.py",
+      "sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_DERIVATION.md",
+      "sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_FREEZE.json",
+      "sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc"
+    },
+    {
+      "path": "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md",
+      "sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847"
+    }
+  ],
+  "notes": [
+    {
+      "path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+      "claim_id": "native_ward_direct_overlap_note_2026-09-10",
+      "declared_claim_id": "native_ward_direct_overlap_note_2026-09-10",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_ward_direct_overlap_2026_09_10.py",
+      "helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8078-evidence/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+      ],
+      "dependency_rationale": "Supplied CAR/native normalization, Gaussian reference/dispersion, common-energy infinite impurity gap h/4 and bounded Ward identity. No finite-size h/4 threshold, physical selection, full alpha positivity or full compression algorithm imported."
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "claim": "Third moment and inverse expectation",
+      "disposition": "Accepted conditional analytic proof: CAR covariance sign, normalized source measure, Holder/Cauchy moments and positive 2x2 majorant yield m1. No acquired scalar value."
+    },
+    {
+      "claim": "Ninety ordered direct overlaps",
+      "disposition": "Accepted: negative Kneser channel bounded using actual h/4 gap; PSD T+3I handles nonuniform m_A, gives >160/h\u00b2. Cross overlaps individually need not be positive."
+    },
+    {
+      "claim": "Complete Ward channels and matching identity",
+      "disposition": "Accepted exact identities only. Both boundary signs retained, only scalar vacuum components lose negative channel; no full alpha sign or nonzero conclusion."
+    },
+    {
+      "claim": "Evidence",
+      "disposition": "Current source statically39 positive controls,15hashes and2adverse alternatives separately; old35/m0 output is historical, not current-source receipt. Root new compact capture pending."
+    }
+  ],
+  "independent_checks": {
+    "status": "PASS",
+    "checks": [
+      "independent JW CAR covariance sign 2",
+      "opposite covariance sign rejected 2",
+      "independent JW CAR covariance sign 5",
+      "opposite covariance sign rejected 5",
+      "common-neighbour identity",
+      "moment matrix inverse",
+      "moment majorant PSD throughout",
+      "monotone inverse bound",
+      "quantitative direct overlap",
+      "complex ninety-word real Ward identity"
+    ],
+    "count": 10,
+    "elapsed_seconds": 0.0021901249419897795,
+    "scope": "Independent synthetic JW CAR matrices, combinatorial Kneser identity and rational majorant; no primary or native calculation"
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-head-fetch.json",
+      "sha256": "70be8c73638e4e22d4e7e07c1ea46e7e6baa3e5e4ab501a57c47704180d841e8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-preexecution.json",
+      "sha256": "862d45b7b8b8741d1604cec802a0e0852503c24be1f8ae473b61d37cfb1864e5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture.py",
+      "sha256": "d8eda0f08e822ee408947c0dfff568f452c2b98552e539f4b4a558c973864ab2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-draft-v2.json",
+      "sha256": "8d23df21afcc5314c27814cebf832b079c9b9b6673c11b5892890cdd5fb50b17"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-discovery-corrected.json",
+      "sha256": "e8aa60b7fdbef61242be5bf54e8c349774a6684635552b9a4ecb7678dcf4a769"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8078/inventory.json",
+      "sha256": "f2ddf1bb783d375095b3d566a4f33ccdc5970f4ecad7766e05da5f515638616c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8078/archive-confirmation.json",
+      "sha256": "b85a6514a46552d080a82c084332cbd32ebff361dc167bd2aa0f6dd55d76d0aa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8078/exact-context-reuse.json",
+      "sha256": "3cf7341ba1b92d673e00ea77ae93b4f8b5b54d2a0d205d16c602ba2ebcccd855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8078/independent-controls.py",
+      "sha256": "43b7827ba1d9df5447d7164de29d7da43d6e89366c89f66a39389f3630e95c70"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8078/independent-controls-result.json",
+      "sha256": "a7d8ebd8e2180ba9e24b76bd60ebc225f4e6330c108fd845f5a8c54756c153a2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8071-final.json",
+      "sha256": "4e99fda6118732f74b4e9a12b6a16c789c0d3da63abd8a242f90e1fd59b9c006"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8075-final.json",
+      "sha256": "2c6b9ce8fb7694f2f9b2b3e7ca2984e4a680a08afcad1770fe428f8c34bbe128"
+    }
+  ],
+  "external_methods": [
+    {
+      "method": "Cauchy-Schwarz, Holder interpolation, bounded spectral calculus, elementary CAR and finite combinatorics",
+      "role": "Explicit elementary mathematical arguments, no external empirical constants or unverified specialist theorem import."
+    }
+  ],
+  "current_context": {
+    "main": "df5316ee81d59d573b3837afb80d371d12d890d6",
+    "unchanged_inputs": [
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+      },
+      {
+        "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "sha256": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d"
+      },
+      {
+        "path": "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "sha256": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "sha256": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ],
+    "semantic_scope": "Current main parent proofs preserve the same supplied Gaussian/CAR/gap/Ward boundaries; other landed scalar certificates do not replace elementary moment bounds."
+  },
+  "findings_resolved": [
+    "Original compact35 receipt predates stronger39-control source; preserve chronology and obtain one current capture. Packaging fixes do not alter mathematics."
+  ],
+  "scope": "Supplied infinite Gaussian native model direct-overlap bound only; full Ward correction/alpha and physical realization remain open.",
+  "remaining": "Reviewer mechanical preflight, root sole39-control capture, same-session final/cache confirmation; no native evaluation."
+}

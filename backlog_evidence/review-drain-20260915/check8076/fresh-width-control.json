@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rows": 78,
+  "blockers": 53,
+  "first_fresh_obstruction": [
+    7,
+    8,
+    8,
+    8,
+    9
+  ],
+  "bindings": {
+    "native-fresh-pivot-width-run/RESULT.json": "cf0c64889fce62f4d7ad67e5858598d85d72201df0c405bea90a4d8e8d2bc9ea",
+    "native-compression-twelve-to24-run-111c/ORBIT_0/HISTORY.json": "6bdfd79912f52791b6358fdbd1ae6694982aec9b1f465a6b041c4c91706d1360",
+    "native-compression-twelve-to24-run-111c/ORBIT_1/HISTORY.json": "970aab827f33bd4add2cf3f5008988b99ef2276a15cf2107cfe85f0d62b25e41",
+    "native-compression-twelve-to24-run-111c/ORBIT_2/HISTORY.json": "7e7d6c5444a40daf95d42ed34f753aa3405f7c977b7594d10077e89887dac475",
+    "native-compression-twelve-to24-run-111c/ORBIT_3/HISTORY.json": "111cc6e50abbc9339e19cb29817b35afad824d42c9aa481fad84c1f158da3252",
+    "native-compression-twelve-to24-run-111c/ORBIT_4/HISTORY.json": "0835ebd150b3150666b3f191232632ecc649f16ad2f34cb994f14e88fbb49dec"
+  },
+  "scope": "Exact independent support/endpoint replay from saved pivot intervals; no primary or numerical worker executed."
+}

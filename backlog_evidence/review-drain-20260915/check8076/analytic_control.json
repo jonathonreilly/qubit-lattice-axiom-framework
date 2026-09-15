@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "poisson_bounds": [
+    "19559/25600000",
+    "2405671399/4915200000000"
+  ],
+  "new_gram": [
+    [
+      "1/2",
+      "0",
+      "1/2"
+    ],
+    [
+      "0",
+      "1/2",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "1/2",
+      "3/2"
+    ]
+  ],
+  "mu_predata_width": "828541839363892675949747755979404729266476366733758957/4321553862225030146949120000000000000000000000000000000000000000000000000",
+  "scope": "Independent rational arithmetic controls of displayed analytic constants; not primary/runtime replay."
+}

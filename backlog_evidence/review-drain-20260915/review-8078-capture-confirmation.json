@@ -1,0 +1,105 @@
+{
+  "status": "OLD_BASE_CAPTURE_INDEPENDENTLY_CONFIRMED_FINAL_TOOL_CONTEXT_PENDING",
+  "tree": "77cce68a9253f5f593c49af9f5fee9dea9e27ba9",
+  "source_base": "fa1e33749cf51db1284b553773aeceb8d35e9595",
+  "all_preexecution_sources_and_inputs_unchanged": true,
+  "only_added_source": "logs/runner-cache/native_ward_direct_overlap_2026_09_10.txt",
+  "cache_sha256": "09c0a9179498d20bc15e7f340a9d8119045547a5244b31577620a5f184406b98",
+  "primary_executions": 1,
+  "execution": {
+    "runner": "scripts/native_ward_direct_overlap_2026_09_10.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"PASS_EXACT_ALGEBRA_SUPPORT\",\n  \"predicates\": 39,\n  \"m1\": \"1269649/653040\",\n  \"direct_lower\": \"506499805921/3158972160\",\n  \"ordered_words\": 90,\n  \"synthetic_ward_value\": \"3054159/8500\",\n  \"semantic_mutants_rejected\": [\n    {\n      \"boundary_sign\": 1\n    },\n    {\n      \"negative_eigenvalue\": 3\n    }\n  ],\n  \"import_hashes_checked\": 15,\n  \"native_evaluations\": 0,\n  \"full_alpha_established\": false\n}\nTOTAL: PASS=39 FAIL=0\nper_element: exact rational moment inequalities, Kneser projectors and ordered synthetic Ward algebra.\nper_site: supplied original Gaussian reference and disjoint local defects; no native state evaluation.\nper_mode: finite synthetic matrices verify signs; no physical spectrum or Gaussian mode computation.\nper_block: boundary-sign and negative-eigenvalue alternatives rejected; import hashes checked separately.\nlattice_wide: direct overlap bound only, full Ward correction retained and full alpha sign undetermined.\n",
+    "stderr": "",
+    "elapsed_sec": 0.14207005500793457,
+    "timeout_sec": 30,
+    "live_log": "/private/tmp/review-drain-20260915/author-slot-one/logs/runner-cache/.in-progress/native_ward_direct_overlap_2026_09_10.txt",
+    "whole_tree_watchdog": {
+      "limit_bytes": 402653184,
+      "interval_sec": 0.02,
+      "root_pid": 82884,
+      "samples": 5,
+      "peak_tree_rss_bytes": 50151424,
+      "violations": [],
+      "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; runner-cache enforces 30 seconds externally. Compact primary has no inner alarm."
+    },
+    "capture_script": "/private/tmp/review-drain-20260915/8078-author-capture.py",
+    "capture_script_sha256": "d8eda0f08e822ee408947c0dfff568f452c2b98552e539f4b4a558c973864ab2"
+  },
+  "payload_comparison": {
+    "unchanged_fields": {
+      "status": "PASS_EXACT_ALGEBRA_SUPPORT",
+      "semantic_mutants_rejected": [
+        {
+          "boundary_sign": 1
+        },
+        {
+          "negative_eigenvalue": 3
+        }
+      ],
+      "synthetic_ward_value": "3054159/8500",
+      "native_evaluations": 0,
+      "full_alpha_established": false,
+      "ordered_words": 90
+    },
+    "differing_fields": {
+      "direct_lower": {
+        "historical": "326063949601/102638976000",
+        "current": "506499805921/3158972160"
+      },
+      "predicates": {
+        "historical": 35,
+        "current": 39
+      },
+      "m1": {
+        "historical": null,
+        "current": "1269649/653040"
+      },
+      "m0": {
+        "historical": "5028049/3722400",
+        "current": null
+      },
+      "import_hashes_checked": {
+        "historical": 13,
+        "current": 15
+      }
+    },
+    "boundary": "Historical35/m0 output predates finaloriginal third-moment source; current39/m1 capture is source-bound. No thresholds were retuned."
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8078-preexecution.json",
+      "sha256": "b0cc58e862133cb67a30ab2132160e7f4bc233136c8cc9d6135fcfe9970554de"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-unit-v1-preexecution.json",
+      "sha256": "ade21a1ac4b8c4fba04ffacdd7d35d8332f46b77ab17ee1a82092821e5ea7fb0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-preexecution-preflight.json",
+      "sha256": "c1a7aa4a22ca738ec73b0d02d6349d39d4965b77a6e134a7d713d0376d38fd68"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-final-freeze.json",
+      "sha256": "4ef027ffdcba1891bed60d599ca544fb6190cd21e0352f838ebb945579fea713"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-final-execution.json",
+      "sha256": "d43e0c2df4630707e69ee832e27966158487130c96b461e99131c26f80a22c65"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture.py",
+      "sha256": "d8eda0f08e822ee408947c0dfff568f452c2b98552e539f4b4a558c973864ab2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture-started.json",
+      "sha256": "e4cbe4101c0d4cdf1b6f96fdbe06b7f7ce5793855897b64298b2a7d9193b8752"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8078-author-capture.log",
+      "sha256": "9e8ebf34b8b2a7d80121831729d01f51b1c5a17cf9bc8bb0fe0ef2859a92bd9f"
+    }
+  ],
+  "remaining": "Exact replay/context review, then new final record and sole final cache preflight. No primary rerun."
+}

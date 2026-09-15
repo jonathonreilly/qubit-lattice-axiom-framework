@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "4600d22d47052040aabe090148ec82cb9a1828f5",
+  "fetched_ref": "refs/review-loop/fetched/8078-93dd605cf9aa4d20b45022a7561fff42",
+  "metadata": {
+    "baseRefName": "codex/native-generalized-action-boundary-20260909",
+    "headRefName": "codex/native-ward-direct-overlap-20260910",
+    "headRefOid": "4600d22d47052040aabe090148ec82cb9a1828f5",
+    "isDraft": false,
+    "number": 8078,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

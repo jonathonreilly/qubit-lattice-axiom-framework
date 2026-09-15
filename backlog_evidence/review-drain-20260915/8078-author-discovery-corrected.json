@@ -1,0 +1,21 @@
+{
+  "timeout": 30,
+  "declared_inputs": [
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/IMPORT_PROVENANCE.json",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_DERIVATION.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_FREEZE.json",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.py",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/RESEARCH_CONTROLS.json",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_REVIEW.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/INDEPENDENT_WARD_CONTROLS.json",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_1_NATIVE_WARD_ROUTE.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_3_PAIR_ORBITS.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_4_DERIVATION.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_5_DERIVATION.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/PREMISE_6_SCALING_BRIDGE.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/EXACT_THIRD_MOMENT.md",
+    "outputs/native_ward_direct_overlap_2026_09_10_inputs/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md"
+  ]
+}

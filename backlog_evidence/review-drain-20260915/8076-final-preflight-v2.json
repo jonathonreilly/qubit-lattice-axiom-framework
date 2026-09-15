@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8072-8073-8074-8076",
+  "tree": "5d15c080d16456bb9df21a186cdda161e24508f7",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_GAPFREE_GENERATOR_PROPAGATION_NOTE_2026-09-09.md",
+      "claim_id": "native_gapfree_generator_propagation_note_2026-09-09",
+      "primary_runner": "scripts/native_gapfree_generator_propagation_2026_09_09.py",
+      "helpers": [
+        "scripts/native_gapfree_generator_propagation_2026_09_09_controls.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_gapfree_generator_propagation_2026_09_09_controls.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_gapfree_generator_propagation_2026_09_09_controls.py"
+      ],
+      "citations": [
+        "docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md",
+        "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8072-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8072-evidence/pr8072-LOCAL_GREEN_PROOF.md",
+        "docs/work_history/repo/review_feedback/pr8072-evidence/pr8072-WARD_INSERTION_PROOF.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_SPARSE_FIRST_ACTION_FRAME_NOTE_2026-09-09.md",
+      "claim_id": "native_sparse_first_action_frame_note_2026-09-09",
+      "primary_runner": "scripts/native_sparse_first_action_frame_2026_09_09.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_GAPFREE_GENERATOR_PROPAGATION_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8073-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_COMPRESSION_ACTION_BOUNDARY_NOTE_2026-09-09.md",
+      "claim_id": "native_compression_action_boundary_note_2026-09-09",
+      "primary_runner": "scripts/native_compression_action_boundary_2026_09_09.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_SPARSE_FIRST_ACTION_FRAME_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8074-8076-forensic-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8074-evidence/README.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_GENERALIZED_ACTION_BOUNDARY_NOTE_2026-09-09.md",
+      "claim_id": "native_generalized_action_boundary_note_2026-09-09",
+      "primary_runner": "scripts/native_generalized_action_boundary_2026_09_09.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_COMPRESSION_ACTION_BOUNDARY_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8074-8076-forensic-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8076-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8076-evidence/kept/pr8076-GENERALIZED_PROOF-f9142216104fbcb0.md",
+        "docs/work_history/repo/review_feedback/pr8076-evidence/kept/pr8076-SELECTED_PROOF-2fa263725d4e7345.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8072-evidence/pr8072-LOCAL_GREEN_PROOF.md",
+      "canonical_note": "docs/NATIVE_GAPFREE_GENERATOR_PROPAGATION_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "Current supporting derivation fully reviewed under named canonical owner, direct-linked and literal runtime-pinned; not autonomous claim. Historical execution plans do not become current evidence.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8076.json",
+        "sha256": "7038a3e19277fbeca5098e8b6a4cafddaef5d6d3f9467fb801c3bf250e5d59d0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8072-evidence/pr8072-WARD_INSERTION_PROOF.md",
+      "canonical_note": "docs/NATIVE_GAPFREE_GENERATOR_PROPAGATION_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "Current supporting derivation fully reviewed under named canonical owner, direct-linked and literal runtime-pinned; not autonomous claim. Historical execution plans do not become current evidence.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8076.json",
+        "sha256": "7038a3e19277fbeca5098e8b6a4cafddaef5d6d3f9467fb801c3bf250e5d59d0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8076-evidence/kept/pr8076-GENERALIZED_PROOF-f9142216104fbcb0.md",
+      "canonical_note": "docs/NATIVE_GENERALIZED_ACTION_BOUNDARY_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "Current supporting derivation fully reviewed under named canonical owner, direct-linked and literal runtime-pinned; not autonomous claim. Historical execution plans do not become current evidence.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8076.json",
+        "sha256": "7038a3e19277fbeca5098e8b6a4cafddaef5d6d3f9467fb801c3bf250e5d59d0"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8076-evidence/kept/pr8076-SELECTED_PROOF-2fa263725d4e7345.md",
+      "canonical_note": "docs/NATIVE_GENERALIZED_ACTION_BOUNDARY_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "Current supporting derivation fully reviewed under named canonical owner, direct-linked and literal runtime-pinned; not autonomous claim. Historical execution plans do not become current evidence.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8076.json",
+        "sha256": "7038a3e19277fbeca5098e8b6a4cafddaef5d6d3f9467fb801c3bf250e5d59d0"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8756,
+      "misses": 4418
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4416
+    },
+    "declared_inputs": {
+      "hits": 8791,
+      "misses": 4549
+    }
+  },
+  "record_sha256": "465667a98aa8e5d252292079161789253342e0476a0db8a9bb732090caa0c426",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "7a399a00394fd6997262a6d11e39adee6be51918",
+  "fetched_ref": "refs/review-loop/fetched/8072-9c62ae871f2e4b4d9c58386b8881ce03",
+  "metadata": {
+    "baseRefName": "codex/native-mixed-gaussian-transition-20260909",
+    "headRefName": "codex/native-gapfree-generator-propagation-20260909",
+    "headRefOid": "7a399a00394fd6997262a6d11e39adee6be51918",
+    "isDraft": false,
+    "number": 8072,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

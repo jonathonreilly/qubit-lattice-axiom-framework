@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "77411cfb9d526622ea259c50ab0d66996fededb7",
+  "fetched_ref": "refs/review-loop/fetched/8074-68884e1bf91a498397db0607419e651f",
+  "metadata": {
+    "baseRefName": "codex/native-sparse-first-action-frame-20260909",
+    "headRefName": "codex/native-compression-action-boundary-20260909",
+    "headRefOid": "77411cfb9d526622ea259c50ab0d66996fededb7",
+    "isDraft": false,
+    "number": 8074,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,1185 @@
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md
+new file mode 100644
+index 0000000000..390976e169
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md
+@@ -0,0 +1,3 @@
++# Artifact and evidence
++
++Canonical note gives the complete moment/Kneser argument and full correction identity. Paired standard-library runner supplies exact rational and90word synthetic sign controls. The packet bundles original257712 research source, a6246 independent review and all seven directly used research premises. Parent owns canonical cold review, graph/manifest and later review PR. No physical job is required.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md
+new file mode 100644
+index 0000000000..d476bbf51f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md
+@@ -0,0 +1,5 @@
++# Premises and tools
++
++Supplied native inputs: infinite cubic pi-flux Hamiltonian, pure canonical Gaussian reference, CAR{gamma_i,gamma_j}=2delta_ij, h=2|t_hop|, exact local two-link perturbations and common reference vacuum energy. Mathematical native imports: infiniteD_A>=h/4; bounded Ward identity with both boundary terms; square-summable zero-energy inverse source; magnetic cubic symmetry; EX6 and free one-particle norm<=6h. See four canonical upstream links and the thirteen-file IMPORT_PROVENANCE map.
++
++New derivation uses Cauchy–Schwarz, spectral calculus, the vacuum/two-particle energy support, finite15pair incidence linear algebra and exact rational inequalities. No empirical or observed scalar value, finite-volume gap, new axiom, impurity-vacuum annihilation or full negative-channel cancellation is assumed. Framework origin remains supplied; no overall TOE closure is asserted.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json
+new file mode 100644
+index 0000000000..2501433982
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json
+@@ -0,0 +1,6 @@
++{
++  "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431",
++  "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
++  "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++  "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042"
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md
+new file mode 100644
+index 0000000000..23dd313e82
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md
+@@ -0,0 +1,16 @@
++# Claim status certificate
++
++```yaml
++actual_current_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: supplied infinite native model, canonical Gaussian vacuum, common-reference impurity gap and CAR normalization
++hypothetical_axiom_status: null
++admitted_observation_status: null
++proposal_allowed: false
++proposal_allowed_reason: Direct overlap only; full Ward correction and native model imports remain open.
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++```
++
++Bounded theorem:Q>160/h², plus exact channel identities. Independent research source review passed; canonical assembly review is pending. No audit/effective-retention status is changed. Supporting code checks do not prove the infinite native premises.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md
+new file mode 100644
+index 0000000000..d71c3bfffa
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md
+@@ -0,0 +1,3 @@
++# Target
++
++Prove a positive native direct90-pair resolvent overlap using exact analytic moments, without evaluating Gaussian kernels or dropping the full Ward correction. Achieved source theoremQ>160/h² under the explicitly imported infinite native premises; alpha remains open.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md
+new file mode 100644
+index 0000000000..09b5bd5aa5
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md
+@@ -0,0 +1,5 @@
++# Handoff
++
++Dedicated branch codex/native-ward-direct-overlap-20260910 is stacked on8076 aa163dfd79252f607b6065435c728c98d67783ea. Parent should independently review the complete canonical source and imports, then run a single graph/manifest build and publish a review PR. Do not merge or claim formal audit. All previous physical protocols remain immutable.
++
++The substantive next target is the full signed Ward correction in equation4, potentially exploiting matching-centered sources. The direct positive lower bound is not an alpha sign certificate.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json
+new file mode 100644
+index 0000000000..f9d569041f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json
+@@ -0,0 +1,62 @@
++{
++  "RESEARCH_DERIVATION.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-node-ward-channel-stretch/DERIVATION.md",
++    "sha256": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330"
++  },
++  "RESEARCH_FREEZE.json": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-node-ward-channel-stretch/FREEZE.json",
++    "sha256": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc"
++  },
++  "RESEARCH_CONTROLS.py": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-node-ward-channel-stretch/controls.py",
++    "sha256": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6"
++  },
++  "RESEARCH_CONTROLS.json": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-node-ward-channel-stretch/CONTROLS.json",
++    "sha256": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef"
++  },
++  "INDEPENDENT_REVIEW.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-analytic-alpha-channel-cold-review/REVIEW.md",
++    "sha256": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9"
++  },
++  "INDEPENDENT_WARD_CONTROLS.json": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-analytic-alpha-channel-cold-review/WARD_CONTROLS.json",
++    "sha256": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e"
++  },
++  "PREMISE_0_CORRECTED_WARD_IDENTITY.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-node-analytic-sign-stretch/CORRECTED_WARD_IDENTITY.md",
++    "sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621"
++  },
++  "PREMISE_1_NATIVE_WARD_ROUTE.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-node-analytic-sign-stretch/NATIVE_WARD_ROUTE.md",
++    "sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0"
++  },
++  "PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md",
++    "sha256": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1"
++  },
++  "PREMISE_3_PAIR_ORBITS.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/PAIR_ORBITS.md",
++    "sha256": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82"
++  },
++  "PREMISE_4_DERIVATION.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-infinite-pair-gap-quarter-stretch/DERIVATION.md",
++    "sha256": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab"
++  },
++  "PREMISE_5_DERIVATION.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-reference-vacuum-scalar-design/DERIVATION.md",
++    "sha256": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8"
++  },
++  "PREMISE_6_SCALING_BRIDGE.md": {
++    "source": "/private/tmp/toe-24h-probes-20260908/native-global-projector-certificate-plan/SCALING_BRIDGE.md",
++    "sha256": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882"
++  },
++  "EXACT_THIRD_MOMENT.md": {
++    "original_path": "/private/tmp/toe-24h-probes-20260908/native-node-ward-channel-stretch/EXACT_THIRD_MOMENT.md",
++    "sha256": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c"
++  },
++  "THIRD_MOMENT_INDEPENDENT_REVIEW.md": {
++    "original_path": "/private/tmp/toe-24h-probes-20260908/native-exact-third-moment-cold-review/REVIEW.md",
++    "sha256": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md
+new file mode 100644
+index 0000000000..9941fc9d71
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md
+@@ -0,0 +1,3 @@
++# Literature and provenance
++
++No new literature search or external theorem with unverified hypotheses is used. Kneser spectrum is derived from the explicit15pair incidence matrix. Cauchy and Gaussian finite-particle support are proved/applied in the note with their assumptions stated. Canonical native imports, not generic literature analogies, define the physical model.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md
+new file mode 100644
+index 0000000000..c381a81440
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md
+@@ -0,0 +1,3 @@
++# Limits and corrected routes
++
++Disjoint-pair adjacency is indefinite; positivity of individual inverse operators alone did not prove a positive sum. The new moment bound overcomes that obstacle for the direct sum. Cubic symmetry removes only scalar vacuum projections from the negative incidence channel, not vector-valued excitations. Ward boundary sources cannot be dropped. Matching source sums do not make distinct impurity resolvents commute. The full alpha problem is not declared impossible.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md
+new file mode 100644
+index 0000000000..83120e3e17
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md
+@@ -0,0 +1,3 @@
++# Next scientific opportunity
++
++Bound the actual six channel norms or the signed mixed term Re<x,Tp> tightly enough to combine with the new direct lower bound. Investigate exact matching-centered commutators without replacing resolvents by commuting scalars. This is source exploration, not authorization for any native calculation.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md
+new file mode 100644
+index 0000000000..634990bb64
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md
+@@ -0,0 +1,3 @@
++# Review PR
++
++Parent delivery after cold review: codex/native-ward-direct-overlap-20260910 stacked on codex/native-generalized-action-boundary-20260909. Scope the title/body to positive direct overlap and full-correction boundary. No graph, commit, push or PR by this worker; parent owns those operations.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md
+new file mode 100644
+index 0000000000..1430279a18
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md
+@@ -0,0 +1,7 @@
++# Review history
++
++Primary authored research257712; ladder independently reviewed a6246 including nativeB², moment domains, fullWard signs, negative-channel scope and matching commutators. Earlier preliminary calculations are supporting history, not a separate independent final review. Ladder authored this canonical assembly and runner; parent canonical cold review remains necessary. All original proof/review bytes are copied unchanged. No physical outcomes were selected or retuned.
++
++The exact third-moment successor86c870 and independent review7b2da1a6 strengthen only the direct bound to160/h². Original >3 proof and packet7011 are preserved externally. No native evaluation was repeated.
++
++Root canonical cold PASS on356023bc; full final note/critical premise and review closure read,36sourcepins verified. Stale current STATUS35 corrected to39; historical receipt retained. No science change or rerun. Citation delivery pending; integration/audit unrun.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md
+new file mode 100644
+index 0000000000..15bc9a49ff
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md
+@@ -0,0 +1,3 @@
++# Route disposition
++
++Direct90pair positivity: source theorem established by moment/Cauchy and Kneser bound. Complete alpha sign: open because mixed Ward term remains uncontrolled. Numerical Gaussian consumer: separate campaign work, neither imported as evidence nor invalidated here. Matching commutator route: exact identities established, their efficacy for alpha unproved.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..5b1abc3a70
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/SOURCE_FREEZE.json
+@@ -0,0 +1,49 @@
++{
++  "status": "SOURCE_PASS_DELIVERY_PREPARED",
++  "files": {
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ARTIFACT_PLAN.md": "26d6acee9925919feda0259b9bfe0742ec5260ab8f8e68e11dd179d1402197bf",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ASSUMPTIONS_AND_IMPORTS.md": "834766ee64a2c8965acf9c489cbc2c68c3dd212d4a3e19921087bea35e7cd9ea",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CANONICAL_IMPORTS.json": "36eaddcfd26dd856e3a7208dc05f61fccf8e521d7501bf8c9339c7faec592556",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/CLAIM_STATUS_CERTIFICATE.md": "7ba8a13f8355d7a3b5ca3f6226c13cf406d5f8d30a2e4b119f584a66f9384638",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/GOAL.md": "18e067cc41ddab09f72de37316972525cdcc12d6a864cd5a406b9c3b0b43f33a",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/HANDOFF.md": "8690e6159ea376d64871289e5b5cbc69a3ecaed46b29c6fb07ef2d25957506ae",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/IMPORT_PROVENANCE.json": "564e62366bd2d8c392c3340ea33fabf9e417a3288b0e3f108fd2078f6ae87e03",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/LITERATURE_BRIDGES.md": "aa5bcf9013c39ec61f53be0c348fcf031fa886fc20072c4b13f878b82671d127",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/NO_GO_LEDGER.md": "5a0e7c22fb3420f7122576df181e54835cc18b6b27fe0a5b25c1495cf51a9b03",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/OPPORTUNITY_QUEUE.md": "cd1abf9764d221ff6e69846f44a3d548ada92e3a617289298290a6a8abfc5235",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/PR_BACKLOG.md": "09417e6f55adf2071c8a4836c1c1fec0e05a1edcf2b3c76c3ca25345bfdd19a0",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/REVIEW_HISTORY.md": "5bfbd896a3915962f0f6d72d32560616be4b5e5724b45a75f590cb69489568cf",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/ROUTE_PORTFOLIO.md": "49096623ff8ca90a9e2c78618a0119353b5b80307462c238e292d517112c88b3",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml": "95b400eebac4e6a19019cbb438c10896c646b6ce5caee3490e98ee4c26010b60",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md": "c47a7c16040b4eab69b35d6183dd7e3bf84f960f0faf65aefbdcbd85865da289",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md": "db03b35921f5e87e18acb7982339e569c773ad4e5903cc5375eeda491dfd3d85",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md": "86c870931b55d530a030f91e9fe07610b11260f1dc4d3304e0404954d45b264c",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md": "a6246fe30a3f1b3e881cccfbbc6b580ce2fd58fd646bc8db84fcc91025c380d9",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json": "c9463c9ccdd6f4adb29b0b28d4bc62df3685876789e2d9dbafe3a27c1e4e487e",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json": "7fe93b6d189ae4746f861c8d0fa2bfbe3d2a9afe7398a111b6c4b86bddc736dc",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md": "7b2da1a6ee01716db3d23db24fbcdcec709540285605eb1951f8700945013847",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md": "3b6551d1a66d9855c527c69f27dc5b70b09eb5b378066b9ccd8dc5f56add11e8",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md": "4b19e4a5d64984f095200c451d286ff585b3d3c0b01a5169f9dad630a664e35a",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json": "bd9130c8770042ef7cf17a966411f87f0ed64d10096ee32529c79080d86eae5d",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json": "34d1773f562bcfb2267cd8d9d014726ddea67bffdf1454b4836e3df8eb6131c0",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json": "c6effbfeadc7fb7d05565335619e7b8c2ffcb2e40784cfc836f4aa2c320a60f8",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json": "65f9812c86a429576078834d4c71079e1667501a02c1db86ed82ce1f36b5bd7d",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout": "5f4fd38c62cd8f48a5cc566c7564e3b34ea6191a50d96d93ac0b916832ad362f",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout": "ee1465fa80e31fb534facb552bbfc16dd8d1c2f4a0fd0c006592148dd8f5fedc",
++    ".claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
++    "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md": "e4f725931799090f4d4c5866e4af33dbdfdcc70819e595d401ca5eec94a03be7",
++    "scripts/native_ward_direct_overlap_2026_09_10.py": "424e58bcac1d395afe63f2078ae572e9617de4e1511c87b281e253a6a4634eb2"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml
+new file mode 100644
+index 0000000000..ef74e421f6
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/STATE.yaml
+@@ -0,0 +1,13 @@
++status: canonical_source_review_pending
++actual_current_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: supplied infinite native model, canonical Gaussian vacuum, common-reference impurity gap and CAR normalization
++hypothetical_axiom_status: null
++admitted_observation_status: null
++proposal_allowed: false
++proposal_allowed_reason: Direct overlap only; full Ward correction and native model imports remain open.
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++audit_status: unset
++next_action: Parent canonical cold review before graph and review PR.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md
+new file mode 100644
+index 0000000000..0df632d8f4
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/STATUS.md
+@@ -0,0 +1 @@
++Independent canonical source review PASS on356023bc. Exact39-predicate supporting result,90 synthetic Ward words and two semantic mutants passed; old35 receipt remains historical. DirectQ>160/h² only; fullalpha remains open. No native rerun. Graph/delivery pending; integration pipeline, changed-audit readiness and formal audit unrun.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md
+new file mode 100644
+index 0000000000..1e6dbb1a08
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/TRACE_GATE.md
+@@ -0,0 +1,3 @@
++# Trace gate
++
++Targeted open obstacle: obtain a sign-controlled native star node scalar. This block reaches that obstacle by making the direct term quantitatively positive, but does not control the remaining correction. Trace class is upstream_support and reachability supports; proposal_allowed is false. No full sixth-order coefficient, bulk phase or observed physical prediction follows.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md
+new file mode 100644
+index 0000000000..4a987083e9
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/EXACT_THIRD_MOMENT.md
+@@ -0,0 +1,43 @@
++# Optional stronger direct-term theorem from an exact third moment
++
++Source-only successor; the earlier frozen direct bound>3/h² is unchanged. No native moment values evaluated. The full Ward correction is still retained and alpha remains open.
++
++For real orthogonal Majorana vectors a,d with ||a||=1, write B=i gamma(a)gamma(d), c=<B>, mu_a=<gamma(a)Omega,H0 gamma(a)Omega>. With H0=(i/4)gamma^T K0 gamma and one-particle h0=iK0, direct CAR gives
++
++ <B Omega,H0 B Omega>=||d||² mu_a+<d,|h0|d>+2(a^T K0 d)c.       (1)
++
++Indeed [H0,gamma(a)]=i gamma(K0 a), and conjugating the two linear commutator terms by gamma(d)gamma(a) gives the two individual energy expectations plus the displayed covariance term. The sign can be checked on a single occupied quadratic bond: gamma(a)gamma(d) then acts as a scalar on its ground vacuum, and the two energy terms cancel against2K_ad c. This check prevents a spurious positive sign on that correction.
++
++For the actual pair perturbation B_A=i gamma0 gamma(d_A), d_A is the negative signed free center-row contribution on the selected two edges. Therefore ||d_A||²=2h² and e0^T K0 d_A=-2h². The same local spectral measures used in the pair resolvent give
++
++ <d_P,|h0|d_P>=2h² mu,
++ <d_O,|h0|d_O>=nu/3,
++
++where mu=<e0,|h0|e0>, nu=<e0,|h0|³e0>. For O the normalized neighbor spectral measure is X/6 times the center measure; for P it is the center measure. Here X=|h0|²/h² and EX=6. Thus, using c=mu/3 and B_A²=2h²I,
++
++ <D_P³>=10h²c,
++ <D_O³>=4h²c+nu/3.                                           (2)
++
++These follow from <D³>=<B Omega,H0 B Omega>+2h²c; no impurity-vacuum expectation is substituted.
++
++In h=1 units the exact elementary dispersion moments are EX=6 and EX²=42. Holder/Cauchy imply
++
++ mu>= (EX)^(3/2)/(EX²)^(1/2)=6/sqrt7,
++ nu<=sqrt(EX*EX²)=6sqrt7<16.
++
++The first follows from EX<= (E sqrtX)^(2/3)(EX²)^(1/3), not a reversed concavity inequality. Consequently3/4<c<49/60, and (2) gives the uniform bound <D³><43/5. No attained scalar enclosure was read to obtain it.
++
++Repeat the inverse-moment proof with M=43/5 replacing26. Its2x2 moment majorant is positive definite throughout c in[3/4,49/60]. The function
++
++ f_M(c)=(M-4c+c³)/(Mc-4)
++
++has derivative numerator2M c³-12c²+16-M²<0 on that interval. Hence m_A=<D_A^-1> is bounded below by
++
++ m1=1269649/653040.
++
++The unchanged variance/Kneser argument yields
++
++ sum_disjoint<R_C R_A> >=135m1²-180m1
++ =506499805921/3158972160 >160                                (3)
++
++in h=1 units, and >160/h² after scaling. This is a stronger direct-term theorem pending independent review. It still does not control the full signed Ward boundary sum or determine alpha.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md
+new file mode 100644
+index 0000000000..4b34b6cf29
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_REVIEW.md
+@@ -0,0 +1,15 @@
++# Native Ward channels and direct positivity: PASS
++
++Reviewed DERIVATION257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330, FREEZE7fe93b6d and actual Ward/scaling/reference-scalar/gap imports. No native state, scalar acquisition or Gaussian calculation. Earlier moment/pair controls and a new exact90word nonphysical2x2 Ward comparison are retained.
++
++Using [W,R]=−RJR, v=(RW−WR)Omega=RJR Omega. Anti-Hermitian J makes RJR anti-Hermitian; with gamma self-adjoint, the two reversed ordered boundary corrections combine with the MINUS real cross term in equation1. Independent synthetic2x2 R/W fields satisfying {W,gamma}=4 reproduce the complete corrected Ward expression exactly. No impurity-vacuum annihilation was used. Completing the square x−p/2 gives all six norm terms and their stated signs. The15pair incidence projector formulas and eigenvalues6,−3,1 pass exact independent matrix checks;90ordered pairs and15matchings each sixwords are correct.
++
++The source convention DeltaK=2(e0 d^T−d e0^T) gives the many-body perturbation i gamma0 gamma(d), so B²=||d||²=2. The separately imported reference expectation c=mu/3 and EX6 imply c<49/60 without observed scalar values. Infinite gapD>=1/4 gives c>=1/4. A quadratic bounded local field applied to a pure Gaussian vacuum has vacuum/two-particle support; bounded free one-particle norm6 therefore gives energy cutoff12. This establishes the third-moment domain and <D³>=<BOmega,H0BOmega>+2c<=24+2c<26. No extensive or active free-fermion gap is introduced.
++
++The inverse moment Cauchy inequality is valid on these domains. Replacing thirdmoment by26 adds a nonnegative b² term. Matrix[[c,2],[2,26]] is strictly positive on c>=1/4, and its inverse against(1,c) gives exactly(26−4c+c³)/(26c−4). Its derivative numerator is strictly negative on the declared interval. Exact m0=5028049/3722400 and direct lower326063949601/102638976000>3 agree with independent rational arithmetic.
++
++For nonuniform m_A>=m0, negative excited channels are bounded by−3 times their squared norms; D^-2<=4D^-1 is valid by the supplied gap. K+3I PSD with row sum9 proves the remaining nonnegative correction. Thus direct positivity does not assume full negative-channel annihilation. Cubic O/P invariance kills only scalar vacuum projection in that channel, as correctly stated.
++
++For a perfect matching, sum b_A=B0^T e0 and the actual square-summable inverse implies sum w_A=e0, giving sumW=6gamma0. V_A=W_A−2gamma0 has zero center coefficient and white-sublattice support. It anticommutes with center and every black-neighbor Majorana, hence commutes with their quadratic product B_C; [V_A,D_C]=[V_A,H0] follows on the common finite-particle core and bounded commutator extension. It does not commute with R_C. No cancellation of noncommuting resolvent products is inferred.
++
++The result is strictly positive direct overlap Q>3/h², not alpha positivity/nonzero. The full signed Ward correction and its six norm quantities remain uncomputed and uncontrolled. No mathematical blocker found.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json
+new file mode 100644
+index 0000000000..36e072f633
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/INDEPENDENT_WARD_CONTROLS.json
+@@ -0,0 +1,7 @@
++{
++  "scope": "15synthetic2x2nonphysical resolvents/W sources; exact90wordWard boundary identity and pairprojectors",
++  "ward_identity": "3054159/8500",
++  "projector_idempotence_checks": 3,
++  "Kneser_decomposition": true,
++  "native_states": 0
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md
+new file mode 100644
+index 0000000000..6bb21ea703
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_0_CORRECTED_WARD_IDENTITY.md
+@@ -0,0 +1,42 @@
++# Corrected zero-mode Ward identity with all tails retained
++
++Use the actual native definitions and normalization in SOFT_LIMIT_AND_LAPLACE.md. Let w_A=(B^T)^-1 b_A for a two-link pair and set W_A=6 gamma(w_A). This is a bounded Hermitian CAR operator, unlike the generalized original node mode. The rank-one identity gives (w_A)_0=1/3, hence {W_A,gamma_0}=4.
++
++The generalized corrected mode q+6w_A solves K_A(q+6w_A)=0. Its rigorous bounded consequence is
++
++ [W_A,D_A]=-J_A,
++ [W_A,R_A]=-R_A J_A R_A.                         (1)
++
++One may establish the first equation directly on the finite-particle core using the linear CAR commutator: K_A w_A is finitely supported by the defining inverse equation. The result extends as a bounded commutator. It does not require forming gamma(q), an impurity vacuum, or a unitary implementing a change of vacuum. The second identity follows from the bounded inverse commutator, with R_A=-D_A^-1.
++
++Substituting (1) into the already reviewed soft identity, and using {W_C,gamma_0}=4, gives the exact bounded formula
++
++ 8 alpha = sum_(A,C disjoint) [
++  3 <R_C R_A>
++ + (1/2)<R_C gamma_0 (W_A-W_C) R_A>
++ - (1/2)<W_C R_C gamma_0 R_A>
++ - (1/2)<R_C gamma_0 R_A W_A> ].                (2)
++
++All brackets remain in the ORIGINAL canonical Gaussian vacuum. In particular the last two terms must not be removed by an impurity-annihilation assertion. The derivation is simple operator algebra: the two middle terms of the expanded commutators combine as W_C gamma_0+gamma_0 W_A=4+gamma_0(W_A-W_C). This is where the native factor3 appears, with its exact normalization.
++
++This removes one inverse from each correction, replacing its local numerator by a bounded spatial tail. It is a sharper structural target than a bound using beta/delta cubed. It does not make the direct overlap positive: <R_C R_A> is an off-diagonal Gram entry, and the disjoint-pair sum is indefinite. Pair reversal makes the full sum real but does not cancel the (W_A-W_C) term; its adjoint is exactly the reversed-pair term.
++
++## Actual tail norms from the native scalar Green function
++
++The pair-gap derivation defines A(0)=<e_0,(-K^2)^-1 e_0> and D(0)=1/(6h^2). Its normalized signed two-neighbor vector u has <u,(-K^2)^-1u>=A(0) for perpendicular pairs and D(0) for opposite pairs. Since ||b_A||=sqrt(2)h,
++
++ ||w_P||^2=2h^2 A(0) <=17/30,
++ ||w_O||^2=2h^2 D(0)=1/3.
++
++Thus ||W_P||<=sqrt(102/5), and ||W_O||=sqrt12. These are real CAR vectors, so the operator norm equals their Euclidean norm. They use the actual Green-function bound, not a flat-spectrum L4 approximation. The difference vector has zero center component; its trivial norm bound is still at most the sum of the two norms.
++
++For one ordered pair, the absolute value of the three correction terms in (2) is bounded by
++
++ [ ||W_A-W_C|| + ||W_C|| + ||W_A|| ] /(2 delta^2)
++ <= (||W_A||+||W_C||)/delta^2.
++
++Even the opposite-pair norm is larger than the onsite coefficient3. Moreover no strictly positive lower bound for the direct disjoint Gram sum follows from the available gap. Consequently this rigorous estimate does not close a positivity proof, including with the improved h/6 gap. It does avoid the former extra inverse power, so it can improve an eventual certified approximation of the scalar target.
++
++## Precise remaining opportunity
++
++A sign proof must control correlations between W_A Omega and R_C gamma_0 R_A Omega, not merely the tail norms. The actual reference Gaussian relation fixes W_A Omega as a one-particle vector; it does not annihilate it. A usable next identity would evaluate or bound these cross contractions jointly with the disjoint-pair Gram channels through the actual quadratic scattering data. Formula (2) narrows that task to two inverses and explicit l2 sources. No impurity-vacuum implementer or determinant square-root sign has been supplied or used. Alpha remains unevaluated.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md
+new file mode 100644
+index 0000000000..11272fd673
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_1_NATIVE_WARD_ROUTE.md
+@@ -0,0 +1,33 @@
++# Native shared-center zero-energy scattering identity
++
++This is an analytical route, not a computation of alpha. Use the actual bipartite one-particle matrix K=[0,B;-B^T,0], with the center in the first sublattice. Write b for its row, and b_A for that row restricted to a subset A of its six incident bonds. Reversing exactly those bonds gives B_A=B-2 e_0 b_A^T. Here b_A is a column when it occurs without transpose.
++
++On a cubic fully antiperiodic even torus the reference B is invertible. Centered magnetic cubic symmetries permute all six incident bonds and preserve the AP holonomies. Their gauge factors cancel in the products b_j(B^-1)_(j,0). Consequently those six products are equal. Their sum is (BB^-1)_(0,0)=1, so each is exactly 1/6. This argument requires the centered magnetic symmetry, not a bare coordinate permutation of the signed matrix.
++
++For k=|A|, the determinant lemma gives
++
++ det(B_A)/det(B)=1-k/3.
++
++For k !=3, Sherman–Morrison gives
++
++ B_A^-1=B^-1+[2/(1-k/3)] B^-1 e_0 b_A^T B^-1.
++
++In particular a two-bond defect has determinant ratio 1/3 and inverse coefficient 6. Its four-bond complement has ratio -1/3; the full six-bond star has ratio -1. The skew determinant ratio for a pair is therefore 1/9 at zero spectral parameter, agreeing with the independent scalar Green-function pair-gap formula. This does not give the many-body resolvent matrix element: the latter depends on the complete excitation spectrum and its vacuum contractions.
++
++The same identity has a useful infinite-volume interpretation. The inverse reference operator applied to a finitely supported source is square summable in three dimensions: its Dirac singularity is O(1/|k|), whose square is locally integrable. Let w_A=(B^T)^-1 b_A, using this Fourier inverse. Its center value is k/6 by the AP limit of the identity above. Let q be a generalized zero-energy white-sublattice Bloch solution, B^T q=0, with q_0=1. Then
++
++ q_A=q+[2/(1-k/3)] w_A
++
++satisfies B_A^T q_A=0 and (q_A)_0=1/(1-k/3). For the actual pair, the center amplitude is exactly 3. All these statements concern generalized one-particle solutions; q is not an l2 CAR vector, and no bounded gamma(q) operator is asserted. The correction w_A is l2. The k=3 denominator is singular and this route must not be applied to it.
++
++## Why this has not yet proved the node sign
++
++A Ward manipulation using q_A must retain its bounded correction 6w_A. The defect-adapted zero-mode functional is not the original vacuum annihilator. Dropping that correction would discard precisely additional local-source contractions of the kind present in the reviewed three-resolvent formula. The positivity of the on-center factor 3 therefore does not establish positivity of alpha.
++
++There is also an exact many-body complement identity. Conjugation by gamma_0 flips every center-incident quadratic term and leaves all other terms unchanged, hence gamma_0 H_A gamma_0=H_(A^c), and likewise gamma_0 R_A gamma_0=R_(A^c), using the same reference energy. Thus R_C gamma_0 R_A=gamma_0 R_(C^c) R_A. In the 90-word sum C and A are disjoint pairs, so A is contained in the four-leg set C^c. The expression is an ordered product of two distinct inverses. It is not a positive quadratic form just because both negative resolvents have positive negatives.
++
++The next genuinely discriminating identity would express the fully summed soft Ward correction together with the direct term as a squared norm or a positive scalar multiple of an impurity overlap. Neither the one-particle determinant identity nor the complement relation supplies that factorization. The negative disjoint-pair channel established separately makes discarding the correction unjustified.
++
++## Source and scope
++
++Read actual NODE_REDUCTION.md, SOFT_LIMIT_AND_LAPLACE.md and UNIFORM_PAIR_GAP.md in native-infinite-star-node-stretch, together with the canonical bipartite convention carried by the 8063 thermodynamic-limit note. This derivation is independent algebra using that convention. It uses no finite-L4 extrapolation, no branch choice for a Gaussian determinant, no assumed positivity of a Laplace kernel, and no physical numerical evaluation. The newly reviewed h/6 gap can bound all inverse factors, but a norm bound cannot settle their signed sum.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md
+new file mode 100644
+index 0000000000..4b492828b6
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_2_SOFT_LIMIT_AND_LAPLACE.md
+@@ -0,0 +1,66 @@
++# Soft annihilator limit and an exponential imaginary-time node tail
++
++This derivation avoids spatial cutoff commutators with the free Hamiltonian. For a cutoff q_R, ||Kq_R|| need not vanish; that route is not used. The generalized zero-mode notation at the end is shorthand for a bounded expression obtained from finite normalized annihilators.
++
++## Finite exact identity with its normalization
++
++On a finite antiperiodic canonical torus, take a normalized active annihilator a_L at positive frequency omega_L, with a_L Omega_L=0 and [a_L,H_L]=omega_L a_L. If there are n_cell magnetic cells, rescale it to tilde a_L=sqrt(n_cell/2) a_L. With the convention {gamma_i,gamma_j}=2delta_ij, its local anticommutator coefficients are phi_L(R,s)={tilde a_L,gamma_(R,s)}=exp(ik_L dot R)u_L(s), for a unit cell spinor u_L (complex conjugation may be absorbed into its definition). The rescaled operator norm grows; no norm bound on that operator is used.
++
++Let R_A(E)=(E-H_A)^(-1), L_A(phi)=[tilde a_L,B_A]. Exact multiplication gives
++
++ tilde a_L R_A(E)
++ =R_A(E-omega_L) tilde a_L
++   +R_A(E-omega_L)L_A(phi_L)R_A(E).            (1)
++
++The shift is E MINUS omega_L. L_A(phi_L) is a linear Majorana operator supported on the fixed pair and center; its coefficients are bounded independently of volume. Applying(1) twice and using tilde a_L Omega_L=0 yields
++
++ <tilde a_L R_C(E0) gamma_v R_A(E0)>
++ =phi_L(v)<R_C(E0-omega_L)R_A(E0)>
++ +<R_C(E0-omega_L)L_C(phi_L)R_C(E0)gamma_v R_A(E0)>
++ -<R_C(E0-omega_L)gamma_v R_A(E0-omega_L)L_A(phi_L)R_A(E0)>. (2)
++
++All brackets have the original vacuum on both sides. No vacuum commutation of a defect inverse is assumed.
++
++## Taking the limit without an unbounded Q
++
++Take momenta approaching the folded Dirac node along a direction, with omega_L->0 and u_L->u in the appropriate annihilation-band directional subspace. Each shifted inverse differs from its unshifted inverse by at most omega_L/delta^2. The three right-hand terms consist only of uniformly bounded inverses and fixed-local linear operators. Their finite-to-infinite vacuum matrix elements converge: use the same inverse filter/cocycle argument as the parent, now for at most three inverses and finitely many local insertions. The scalar Fourier kernel acquires only exp(-i omega_L t), so dominated convergence applies. Thus the limit of(2) is a direction-independent LINEAR functional of u obtained by setting the shift to zero and replacing local phi by its periodic zero-momentum cell values.
++
++The thermodynamic smooth coefficient matrix independently identifies the left side with the limiting one-particle form factor evaluated against u. Opposite rays have complementary directional band subspaces. Hence the limiting linear identity holds on their combined full cell space, not just one chosen band. It can therefore be evaluated at u=e_0, although that real cell vector itself is not an annihilation-band vector. This is a linear extension of identities on complementary subspaces, not an assertion that a generalized Hermitian zero mode annihilates the vacuum.
++
++By the signed little-group theorem the node matrix is alpha I. Put q_j=1 on2Z^3 and zero otherwise, merely to label u=e_0. Then q_v=1 and q is zero on the pair's two neighboring sites. Define the bounded local odd operator J_A by substituting these coefficients into twice L_A(phi). Equivalently J_A is the formal algebraic [gamma(q),B_A], but no gamma(q) operator is formed. If B_A=(i/2)gamma_v gamma(d_A), then J_A=i gamma(d_A), ||J_A||=beta=4sqrt(2)|t_hop|. The exact scalar identity is
++
++ alpha=(1/8)sum_{A,C disjoint} < R_C R_A
++       +(1/2)R_C J_C R_C gamma_v R_A
++       -(1/2)R_C gamma_v R_A J_A R_A >.           (3)
++
++Every term in(3) is an ordinary bounded operator in the infinite Gaussian GNS representation. The factors1/2 come from extending the annihilator local anticommutators phi=q rather than {gamma(q),gamma_j}=2q_j. This is the rigorously defined version of the formal half-anticommutator expression.
++
++## Imaginary-time representation and tail
++
++Write D_A=H_A-E0>=delta and E_A(s)=exp(-sD_A). Define bounded odd insertion integrals
++
++ Z_A(s)=-integral_0^s E_A(s-r) J_A E_A(r) dr.
++
++Then ||E_A(s)||<=exp(-delta s) and ||Z_A(s)||<=beta s exp(-delta s). Expanding the three negative inverses in(3), or directly using their Laplace transforms, gives
++
++ alpha=(1/8)sum_{A,C disjoint} integral_0^infinity dt ds
++ < E_C(t) E_A(s)
++       +(1/2)Z_C(t) gamma_v E_A(s)
++       -(1/2)E_C(t) gamma_v Z_A(s) >.             (4)
++
++The sign of Z is negative, and two integrations of E produce the two positive inverse signs. In particular the correction terms in(4) match the three-resolvent signs in(3). The integrand obeys
++
++ |F_CA(t,s)| <= exp[-delta(t+s)] [1+(beta/2)(t+s)].
++
++This gives the explicit complete90-word error when either time exceeds T:
++
++ error_tail <= (90/8) exp(-delta T)
++ [2/delta^2 + beta T/delta^2 + 2beta/delta^3].     (5)
++
++The bound contains no generalized-Q norm, finite volume, oscillatory inverse-filter moment or active gap. It does retain the supplied wrong-flux gap. The internal insertion integral in Z is a derivative of a Gaussian product and can be evaluated through Gaussian insertion formulas, or retained as a third integration variable. A numerical implementation must preserve its sign and error; (5) is not a claim that those point evaluations are free.
++
++## Concrete conservative scale
++
++In units h=2|t_hop|=1, delta=3483/102400 and beta=2sqrt2<3. Taking T=1024 makes(5) smaller than10^-6 in the units of alpha. This statement is certified by the accompanying exact rational lower Taylor bound for exp(delta T); it is a tail budget only. Such a large time can make imaginary-time Gaussian conditioning expensive, so it does not establish practical feasibility. A first pilot should measure a fixed short-time overlap/derivative kernel before any full square integral; replacing the true gap by an observed larger one would require its own certificate.
++
++Alpha remains unevaluated. Equations(3)-(5) provide a native, explicitly bounded scalar target and a route to exponential tails. They do not establish alpha nonzero, discard multiparticle transitions, or identify a bulk interacting phase.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md
+new file mode 100644
+index 0000000000..3c3532fdb3
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_3_PAIR_ORBITS.md
+@@ -0,0 +1,11 @@
++# Five centered cubic pair classes
++
++The90 ordered disjoint two-edge pairs can be grouped into five orbits of the octahedral stabilizer of the center. With neighbors named +x,-x,+y,-y,+z,-z, representatives and sizes are:
++
++1. A={+x,-x}, C={+y,-y}:6.
++2. A={+x,-x}, C={+y,+z}:12.
++3. A={+x,+y}, C={+z,-z}:12.
++4. A={+x,+y}, C={-x,-y}:12.
++5. A={+x,+y}, C={-x,+z}:48.
++
++Signed coordinate permutations are restored to the pi gauge by vertex gauges generated by (-1)^r_a for reflections and (-1)^(r_a r_b) for adjacent-coordinate transpositions (a,b). General coordinate permutations use compositions of these generators, with each gauge evaluated in the successively permuted coordinates; the same monomial must not be assigned to an arbitrary transposition. For example, x↔z uses (-1)^(xy+xz+yz). These are +1 at the origin and on2Z^3, so they fix gamma_v and the generalized node vector q, and map the actual defect family and reference state covariantly. The node scalar of each word is therefore constant on these orbits. Formula(B)'s90 summands may be replaced by five representatives with exactly the displayed multiplicities and overall1/8. No A,C-exchange equality or positivity is needed; all five signed integrals are retained. This reduces redundant point evaluations without changing the model or selecting favorable terms.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md
+new file mode 100644
+index 0000000000..bf7be617b9
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_4_DERIVATION.md
+@@ -0,0 +1,23 @@
++# Retaining the positive logarithmic contributions improves the infinite gap to h/4
++
++Provisional extension of the reviewed native infinite pair-gap proof, with exactly the same determinant formulas and A(0)<=17/(60h²). No improved return-probability estimate or physical spectrum is needed. Put h=1 below and restore linear h scaling at the end. The earlier h/6 theorem is preserved; this strengthens only its infinite lower bound.
++
++For opposite pairs, d_O=1-g with g=(8/9)(1-z)^2 and 1-z>=6/(s²+7). Therefore g>=32/(s²+7)^2, and -log(1-g)>=g+g²/2. Standard elementary rational integrals give
++
++ DeltaE_O >= [4/7+40/343]/sqrt7 > (3/8)[4/7+40/343] >1/4.
++
++The integrals used are int_0^infty ds/(s²+a²)^2=pi/(4a³) and int_0^infty ds/(s²+a²)^4=5pi/(32a^7). The prefactor is1/(2pi), with no extra parity factor. sqrt7<8/3 justifies the rational replacement. These integral identities follow by s=a tan(theta) and the elementary cosine-power recursion.
++
++For perpendicular pairs the old exact lower contribution from0<=s<=1 is c0>0.1869996. On s>=1, the previously proved upper determinant bound yields
++
++ -log d_P(s) >=1-d_P(s) >= (24-8/s²)/(s²+7)^2 =g_P(s)>=0.
++
++For j=16,...,319 let a=j/16,b=(j+1)/16. On[a,b], the numerator is at least24-8/a² and the denominator at most(b²+7)^2. Thus
++
++ c_tail=(7/44) sum_j (1/16)(24-8/a²)/(b²+7)^2
++
++is an exact rational lower bound for the contribution over1<=s<=20. Direct rational arithmetic gives c0+c_tail>1/4. All omitted contributions beyond20 are nonnegative by the parent proof. Monotonicity of g_P itself is not assumed.
++
++The unchanged finite-to-GNS passage therefore proves the stronger INFINITE operator inequality D_A>=h/4 for both pair classes. No explicit finite-L threshold or impurity ground vector is inferred. In the previously reviewed90word Laplace tail expression, choosing delta=h/4, beta<3h and T=100/h gives a tail below10^-6/h² by a fixed exact Taylor lower bound for exp25.
++
++This refinement improves a calculation budget. It does not evaluate alpha, remove spatial/covariance/quadrature errors or prove a bulk interacting phase. Supporting controls are rational bounds only, not physical numerical data.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md
+new file mode 100644
+index 0000000000..13637034b0
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_5_DERIVATION.md
+@@ -0,0 +1,40 @@
++# Reference scalar and log-anchor for an actual two-link defect
++
++Prospective, unexecuted physical integration design. Supplied infinite canonical pi-flux reference, h=2|t_hop|. This is not an alpha calculation.
++
++## Relative vacuum scalar
++
++Use parent8067's relative Hamiltonian D_A=H_A-E0, with K0=[[0,B0],[-B0^T,0]], B0=U0 S and B_A=B0-2e0 b_A^T. Align the black Majoranas with U0 and set f=(a+ib)/2. Then the normally ordered reference operator is
++
++ D_A=c_A+f† H f+(f† K f†+f K^T f)/2,
++ H=(D+D^T)/2, K=-(D-D^T)/2, D=S-2u b_A^T, u=U0^T e0.
++
++The finite relative constant is c_A=-Tr(D-S)/2=u^T b_A. No divergent extensive trace is subtracted numerically. Each of the six signed incident edge contributions to e0^T B0 U0^T e0=mu has the same expectation by the physical signed cubic symmetries. Hence two selected links give c_A=mu/3 for both perpendicular and opposite classes, where mu=<e0,|iK0|e0>=h E sqrt(X), X=6-2sum cos(theta), 0<=X<=12. This scalar is the REFERENCE expectation, not the impurity ground energy shift c from the diagonalized parent theorem.
++
++## Log-anchor sign
++
++Write exp(-t D_A)Omega0=exp(ell(t)) exp(f† Z(t) f†/2)Omega0, Z real skew, ell(0)=0. The bounded-chart construction supplies implementability; finite-rank K makes all traces below defined. Since <0|fi fj|Z>=-Zij, the scalar coefficient of the annihilation term is (1/2)Tr(K^T Z). Therefore
++
++ ell'=-c_A-(1/2)Tr(K^T Z)=-c_A+(1/2)Tr(K Z).
++
++Together with Z'=-K-HZ-ZH-ZKZ this is the actual unnormalized anchor equation. For K=kJ,Z=zJ, the even two-mode block has offdiagonal k and ell'=-c_A-kz. Initially ell'=-c_A and ell''=(1/2)Tr(K^T K)>=0, matching the vacuum variance. Normalized-state anchor instead subtracts log||psi||, equivalently one half log||psi||²; do not confuse the two.
++
++## New integral using only accepted catalogue entries
++
++In h1 units mu=(2/pi)int_0^infty Q(s)ds, Q(s)=E[X/(X+s²)]=1-s² A(s), by positive Tonelli. This is a NEW physical integral even though it uses no new scalar oracle.
++
++Reuse exactly the accepted76350 Gauss12 rule, 31 dyadic panels j=-28..2, and its744 A endpoint records (exclude the two fixed-pole entries except for catalogue validation). At a node bracket [l,u], monotonicity gives A bracket [A(u).lo,A(l).hi]. Ordinary interval evaluation of 1-[l,u]^2 A contains the node value, including lost dependence.
++
++Low tail [0,epsilon], epsilon=2^-28, because 0<=Q<=1. On |z-c|<=c/2, |X+z²|>=X and >=c²/4, so |Q(z)|<=min(1,24/c²), using EX=6. For the actual panels c=3a/2: sum a M(c)<=sum_{j=-28}^1 2^j+8/3<20/3. The previously proved Gauss/Chebyshev bound is (20/3) sum aM (4/25)^12, hence absolute middle radius R=(400/9)(4/25)^12. Add R on both sides before multiplying by 2/pi.
++
++For T=8, expand16 terms:
++ int_T^infinity Q=sum_{n=0}^{15} (-1)^n M_(n+1)/[(2n+1)T^(2n+1)]+r,
++ 0<=r<=12^17/(33 T^33).
++
++Here M_n=EX^n=sum_{a+b+c=n} n!/(a!b!c!) comb(2a,a)comb(2b,b)comb(2c,c), since X=4sum sin²k. The even16 remainder is positive. The analytic final WIDTH is bounded by (2/3)[epsilon+2R+12^17/(33*8^33)]<1e-6. Actual success must include all input/weight/interval/pi widths and require final width<=1e-6; no assumed success.
++
++Pi is enclosed independently by Machin pi=16atan(1/5)-4atan(1/239), using48 alternating terms and the next-term remainder. Fixed192-bit outward Fraction arithmetic prevents uncontrolled rational denominator growth. All saved input and partial output hashes must be retained.
++
++## Contract still required before launch
++
++Proposed one catalogue-only attempt: external30s/384MiB, internal29s, no retry, no oracle or physical matrix. Root must independently review source/proof, provide a source-bound authorization and external whole-tree monitor, and archive the final runtime contract before execution. Current worker source is a design candidate, not runtime-ready authorization. All31 panel partials and any final interval must be preserved before gate checks. No precision/node/target changes after data.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md
+new file mode 100644
+index 0000000000..f90e31c00b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/PREMISE_6_SCALING_BRIDGE.md
+@@ -0,0 +1,27 @@
++# Exact source convention bridge: projector versus CAR action
++
++Source-only matching of the actual displayed identities. Imported source: native-weighted-impurity-projector-stretch/DERIVATION.md and native-minimal-first-action-gram-stretch/DERIVATION.md. No numerical values are evaluated.
++
++Let h=2|t_hop|, K_phys=h Kbar with real skew Kbar, and H_phys=iK_phys=h Hbar. The action proof explicitly uses h=1. Its selected signed neighbor vector d has normsqrt2. Define unnormalized U=[e0,d]. Then
++
++ Delta K_phys=2h(e0 d^T-d e0^T),
++ Delta H_phys=U (2ih [[0,1],[-1,0]]) U*.
++
++This is exactly the projector source's V matrix in its unnormalized U convention. Replacing d by d/sqrt2 changes the coefficient matrix to2sqrt2 ih J2. Its operator norm is2sqrt2h and its trace norm is4sqrt2h, as used in the low/high proofs. There is no factor8 physical hopping: the action proof defines x0=e0/2 and q=d/2, so
++
++ 8[x0<q,f>-q<x0,f>]=2[e0<d,f>-d<e0,f>].
++
++The literal8 is entirely the two half-column factors. Restoring h multiplies this action byh. The six absolute physical hoppings remainh after the link-sign flips, hence the common Schur bound6h.
++
++For physical frequency z=i sigma h sbar and real source v,
++
++ ybar_sigma(v)=-i (Hbar-i sigma sbar)^-1 v,
++ Kbar ybar_sigma=sigma sbar ybar_sigma-v.
++
++This matches the freepole action exactly. Physical -i(H_phys-z)^-1v equals ybar/h. A physical quadrature weight is h times its dimensionless weight and the Woodbury T matrix is h times its dimensionless value; the product w X T X* is dimensionless. Thus projector quadrature and its tails are scale-invariant after all factors are restored. If balanced columns are used, the balancing coefficient scales likeh² and cancels the h^-1 resolvent column. Do not transfer individual unbalanced coefficients without this accounting.
++
++The reference covariance in the action source is Gamma0=i sign(Hbar). Therefore the projector represented there as(I+i Gamma0)/2 is the NEGATIVE projector. Our occupation proof uses positive P0,PA, for which P+=(I-i Gamma0)/2. Accordingly the actual negative-projector source candidate must be NEGATED before using it as Dhat for PA,+-P0,+. The range, singular values, S1 error and occupation trace bounds are unchanged; the finite coefficient matrix and low/high correction signs are not. A future binder must record this sign explicitly rather than infer it from a label.
++
++For the low correction, physical F0=h^-1 Fbar0 and epsilon_phys=h*2^-Jlo, so epsilon_phys F0/pi=2^-Jlo Fbar0/pi. The positive-projector correction is +epsilon F0/pi; the low proof's displayed negative correction has the opposite sign. For the high correction each H^(2n+1)/S^(2n+1) is dimensionless, and the sign is again the chosen polarization sign.
++
++Finally physical compressedH=h times the dimensionless compressedH, and physical leakage-square=h² times the action proof's L. A dimensionless target1e-12 corresponds to physical squared leakageh²*1e-12. Occupation-weighted propagation uses dimensionless time h*t_phys; an unlabelled time or squared residual cannot be mixed across these conventions. This source bridge supplies no new physical certificate or span containment.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json
+new file mode 100644
+index 0000000000..907a53a0e2
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.json
+@@ -0,0 +1 @@
++{"status": "PASS", "checks": 22, "scope": "finite pair-space identities, arbitrary synthetic vectors and rational moment bounds only", "native_kernel_calls": 0}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py
+new file mode 100644
+index 0000000000..f380afc97b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_CONTROLS.py
+@@ -0,0 +1,33 @@
++from fractions import Fraction as F
++from itertools import combinations
++import json
++pairs=list(combinations(range(6),2));n=15
++T=[[F(not(set(a)&set(b))) for b in pairs] for a in pairs]
++B=[[F(i in a)-F(1,3) for i in range(6)] for a in pairs]
++E0=[[F(1,15) for _ in pairs] for _ in pairs]
++E1=[[sum(B[i][k]*B[j][k] for k in range(6))/4 for j in range(n)]for i in range(n)]
++E2=[[F(i==j)-E0[i][j]-E1[i][j] for j in range(n)]for i in range(n)]
++def mul(A,B):return [[sum(A[i][k]*B[k][j] for k in range(len(B)))for j in range(len(B[0]))]for i in range(len(A))]
++checks=0
++def ok(x):
++ global checks
++ if not x:raise AssertionError('exact control')
++ checks+=1
++for E,rank,lam in zip((E0,E1,E2),(1,5,9),(6,-3,1)):
++ ok(mul(E,E)==E);ok(sum(E[i][i] for i in range(n))==rank);ok(mul(T,E)==[[lam*v for v in r]for r in E])
++for E,Fm in ((E0,E1),(E0,E2),(E1,E2)):ok(all(v==0 for row in mul(E,Fm)for v in row))
++ok(sum(sum(row) for row in T)==90)
++# Opposite labels=(0,1),(2,3),(4,5); all other labels perpendicular.
++z=[[F(2 if a in ((0,1),(2,3),(4,5)) else 7)] for a in pairs]
++ok(all(row==[0] for row in mul(E1,z)))
++# Generic rational Hilbert-valued x,p: exact square completion, no native vectors.
++x=[[F((i+2)*(j+1)%7-3) for j in range(3)]for i in range(n)]
++p=[[F((i+3)*(j+4)%11-5,3) for j in range(3)]for i in range(n)]
++y=[[x[i][j]-p[i][j]/2 for j in range(3)]for i in range(n)]
++def dot(x,y):return sum(a*b for r,s in zip(x,y) for a,b in zip(r,s))
++lhs=dot(x,mul(T,x))-dot(x,mul(T,p));rhs=sum(lam*(dot(mul(E,y),mul(E,y))-dot(mul(E,p),mul(E,p))/4)for E,lam in zip((E0,E1,E2),(6,-3,1)))
++ok(lhs==rhs)
++c=F(49,60);m=(26-4*c+c**3)/(26*c-4)
++ok(m==F(5028049,3722400));ok(m>F(4,3));ok(135*m*m-180*m==F(326063949601,102638976000));ok(135*m*m-180*m>3)
++ok(c*c>F(2,3));ok(26*F(1,4)-4>0);ok(24+2*c<26)
++print(json.dumps({'status':'PASS','checks':checks,'scope':'finite pair-space identities, arbitrary synthetic vectors and rational moment bounds only','native_kernel_calls':0}))
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md
+new file mode 100644
+index 0000000000..2821ed4124
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_DERIVATION.md
+@@ -0,0 +1,68 @@
++# Full Ward channel identity and a positive native direct term
++
++Source-only analytical result. No actual Gaussian kernels, moments, spectra, accepted scalar values or orbit data evaluated. Keep the original vacuum and every Ward boundary source. The full alpha remains undetermined.
++
++## Three exact channels for the complete scalar
++
++Index the15 pairs by two-subsets A of six star legs. Let T_CA=1 when A,C are disjoint. In the Hilbert direct sum of15 copies of the original GNS space define
++
++ x_A=R_A Omega,
++ v_A=R_A J_A R_A Omega=(R_A W_A-W_A R_A)Omega,
++ p_A=gamma0 v_A.
++
++Here R_A=-D_A^-1 is Hermitian, J_A is anti-Hermitian, W_A is Hermitian, [W_A,D_A]=-J_A and {W_A,gamma0}=4. These are the bounded identities already proved from the actual native inverse source. In particular (R_A J_A R_A)*=-R_A J_A R_A. Substituting into the complete reviewed soft formula gives
++
++ 8 alpha=<x,T x>-Re<x,T p>.                                      (1)
++
++The first correction in that formula is minus the conjugate of the second after A,C reversal. This sign is essential. No claim that W_A Omega vanishes occurs.
++
++Let B_Ai=1_(i in A)-1/3. Then B*B=4I-(2/3)11*, and the orthogonal pair-space projections are E0=11*/15, E1=BB*/4, E2=I-E0-E1. Direct counting gives T=6E0-3E1+E2, with ranks1,5,9. Put y=x-p/2. Equation(1) becomes
++
++ 8 alpha=sum_l lambda_l (||E_l y||²-||E_l p||²/4), lambda=(6,-3,1). (2)
++
++Thus six nonnegative norm quantities give an exact real scalar certificate. For example a rigorous lower bound is6L_y0+L_y2+(3/4)L_p1-3U_y1-(3/2)U_p0-(1/4)U_p2. This is a sufficient sign criterion only; none of its six actual quantities has been computed here. Squared-norm positivity alone does not settle their signed combination.
++
++Cubic covariance implies that scalar vacuum components <Omega,x_A> and <Omega,p_A> depend only on whether A is opposite or perpendicular. Each leg belongs to one opposite and four perpendicular pairs. Consequently E1 annihilates these scalar components. It does NOT annihilate E1x or E1p as Hilbert-valued vectors: their negative channel may contain reference excitations.
++
++## A strictly positive direct90-pair overlap, without scalar acquisition
++
++Use h=1 and the independently proved infinite pair gap D_A>=1/4. Write D_A=H0+B_A with H0 Omega=0. The actual rank-two pair perturbation is B_A=i gamma0 gamma(d_A), where ||d_A||²=2 and d_A is orthogonal to the center. Hence B_A²=2I. Its reference expectation is c=<B_A>=mu/3 for both classes. The scalar law mu=E sqrt(X), EX=6 gives c<=sqrt(6)/3<49/60. Positivity also gives c>=1/4.
++
++The bounded one-particle free generator has norm<=6. A quadratic local B_A applied to its Gaussian vacuum has only vacuum and two-particle components, whose free energies lie in[0,12]. Therefore B_A Omega is in Dom(H0^n) for every fixed n and
++
++ <D_A>=c, <D_A²>=2,
++ <D_A³>=<B_A Omega,H0 B_A Omega>+2c<=24+2c<26.                  (3)
++
++The stronger vacuum-subtracted bound12(2-c²)+2c is available but unnecessary. These are spectral-support arguments, not evaluated native moments. B_A bounded and the finite-particle energy support justify all displayed domains; no finite-volume gap is assumed.
++
++Let m_A=<D_A^-1>. Cauchy applied to D_A^-1/2 Omega and D_A^1/2(a+bD_A)Omega gives, for every real a,b,
++
++ m_A >= (a+bc)²/(c a²+4ab+<D_A³>b²).
++
++Replacing the third moment by26 enlarges the positive denominator. The2x2 matrix [[c,2],[2,26]] is positive definite for c>=1/4. Optimizing this two-dimensional quadratic form yields
++
++ m_A >= f(c)=(26-4c+c³)/(26c-4).
++
++The derivative numerator is52c³-12c²-660<0 on[1/4,49/60], so
++
++ m_A>=m0=5028049/3722400>4/3.                                 (4)
++
++This bound is for the actual reference inverse expectation, not the impurity ground energy. It imports no observed scalar values.
++
++For completeness the direct overlap positivity does not require the stronger cubic annihilation fact above. Put u_A=D_A^-1 Omega and split u_A=m_A Omega+u_A^perp. Since T>=-3I and D_A^-2<=4D_A^-1,
++
++ Q=sum_disjoint<R_C R_A>
++   >=m* T m-3 sum_A(||u_A||²-m_A²)
++   >=m*(T+3I)m-12 sum_A m_A.
++
++Write m=m0 1+t, t_A>=0. T+3I is positive semidefinite with row sum9. The remaining terms are (18m0-12)sum t+t*(T+3I)t>=0. Thus
++
++ Q>=135m0²-180m0=326063949601/102638976000>3.                   (5)
++
++Restoring units gives Q>3/h². This is a native quantitative positivity theorem for the direct term only. The full Ward correction in(1) is not removed, and the available tail norm bounds are too coarse to place its negative part below3/h². In particular (5) does not prove alpha nonzero or positive.
++
++## Matching identity for the next attempt
++
++The90 ordered disjoint pairs partition into15 perfect matchings, each containing three disjoint two-sets and six ordered words. For one matching A,C,D, the exact inverse-source relation gives w_A+w_C+w_D=e0, hence W_A+W_C+W_D=6gamma0. Let V_A=W_A-2gamma0. Then V_A+V_C+V_D=0 and {V_A,gamma0}=0. Each V_A is supported on the white sublattice with zero center coefficient, so it commutes with every quadratic pair perturbation B_C (the CAR signs cancel). Accordingly [V_A,D_C]=[V_A,H0] is independent of C.
++
++These identities permit centering the boundary sources before norm bounds, but they do not by themselves cancel their products with noncommuting R_A. The matching-summed correction is still retained. A next proof must exploit these actual cross commutators or bound their correlations; replacing the ordered products by commuting scalar inverses is not allowed.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json
+new file mode 100644
+index 0000000000..cf9176e4f8
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/RESEARCH_FREEZE.json
+@@ -0,0 +1,17 @@
++{
++  "status": "SOURCE_ONLY_DIRECT_TERM_POSITIVE_FULL_ALPHA_OPEN",
++  "files": {
++    "controls.py": "fa3f5fd128685917513c3acc647c8bb1d0116af59fca32faf598f157a6048dc6",
++    "CONTROLS.json": "4a5dc24caa48f59a9dcd64da489d1c6858d3cc0a930adc6b0453e7ebc40510ef",
++    "DERIVATION.md": "257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330"
++  },
++  "imports": {
++    "/private/tmp/toe-24h-probes-20260908/native-node-analytic-sign-stretch/CORRECTED_WARD_IDENTITY.md": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621",
++    "/private/tmp/toe-24h-probes-20260908/native-node-analytic-sign-stretch/NATIVE_WARD_ROUTE.md": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0",
++    "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md": "d9145e85d147b2b13bae236b892cc548d0de769f378939ee91993e5e5b8471d1",
++    "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/PAIR_ORBITS.md": "f0036658c448b3feaafae282f8448ec64ac3b7227bc589fb24bee6d9986acc82",
++    "/private/tmp/toe-24h-probes-20260908/native-infinite-pair-gap-quarter-stretch/DERIVATION.md": "6d661ed665bca2dee06dab7f977d7fc6b6ec39deaf265e74c9bb48c37387ecab",
++    "/private/tmp/toe-24h-probes-20260908/native-reference-vacuum-scalar-design/DERIVATION.md": "1c09412a24f7ee337d394617ea51ae4f326439a248e5b943fbe55526aaa1d7b8",
++    "/private/tmp/toe-24h-probes-20260908/native-global-projector-certificate-plan/SCALING_BRIDGE.md": "0ceee15e8277756344effca114390c000cedb3b110fb15aa4ed0d1a2f4f27882"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md
+new file mode 100644
+index 0000000000..2811a16514
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/imports/THIRD_MOMENT_INDEPENDENT_REVIEW.md
+@@ -0,0 +1,9 @@
++# Independent exact-third-moment review
++
++PASS for source86c870 and its stronger direct bound, conditional on the same native imports as the existing direct theorem. No native values or acquired moments read. Nine exact rational predicates include two independent uncoupled two-bond CAR fixtures (with nonzero scalar and two-particle parts); these test the negative covariance correction, rather than only the scalar single-bond case.
++
++The CAR commutator convention [H,gamma(a)]=i gamma(Ka) gives the stated energy identity. In the native source d=-restricted free row, K0d at the center is -2h². The two-site spectral measure is 2 times the center measure for a perpendicular pair; for the opposite pair it is X/3 (unnormalized), yielding nu/3. Thus adding B²c gives 10h²c and 4h²c+nu/3.
++
++Holder gives mu >=6/sqrt7; Cauchy gives nu<=6sqrt7<16 in h=1 units. Therefore c>3/4, and both third moments are strictly below43/5. The moment majorant has Mc-4>0. Its derivative numerator is negative even under the loose bound c<1: 2M+16-M²<0 after dropping -12c². Exact substitution yields m1=1269649/653040 and Q>=506499805921/3158972160>160. Scaling is h^-2.
++
++Only the direct overlap is strengthened. The full signed Ward correction, alpha and native phase remain unresolved. This is source review, not integration or formal audit.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md
+new file mode 100644
+index 0000000000..93793f25ad
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/DELIVERY_REVIEW.md
+@@ -0,0 +1,3 @@
++# Final delivery affected review
++
++PASS source-only for10c72be5f38b11aa3adeb16f29a00f1155907731e37c5aad45af832c2496768c. All43 pins match. Note and runner retain the independently reviewed >160 direct bound and open full Ward correction; delivery adds parent review, corrected39 predicate status and serialized graph/manifest receipts4895nodes/12201edges. No new scientific change, native or compact rerun. Integration and formal audit remain separate and unrun.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md
+new file mode 100644
+index 0000000000..6a42a44f37
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/reviews/ROOT_CANONICAL_REVIEW.md
+@@ -0,0 +1,11 @@
++# Independent canonical direct-overlap review — PASS
++
++Root read complete final note, changed exact runner, canonical premise/import map and source-bound independent reviews. The exact third-moment proof86c870 and cold7b2da fix the native perturbation convention, covariance sign and P/O neighbor measures. The h=1 formulas give M3P=10c and M3O=4c+nu/3. EX=6/EX²=42 give mu>=6/sqrt7 and nu<=6sqrt7, hence3/4<c<49/60 and both third moments<43/5. The moment-majorant inverse formula is the exact2x2 Cauchy optimization. Its denominator is positive on this interval and derivative negative. The cited rational m1 and Kneser lower bound>160 follow with no acquired scalar values.
++
++The variance step uses the actual common-vacuum gapD>=1/4, not a free-bath gap. T+3I is positive semidefinite with row sum9; substituting nonuniformm>=m1 leaves nonnegative correction, so no false equal-geometry inverse assumption enters. Dimensions restoreQ>160/h². Finite-particle support justifies the moment domains. The earlier >3 proof is preserved and superseded only in its quantitative direct bound.
++
++The complete Ward term retains the boundary signs, the negative channel and all six squared norms. Scalar cubic symmetry does not eliminate vector-valued excitation channels. No alpha positivity, nonvanishing, occupied-tail or physical-law selection follows. Parent inspected the revised inline markup after the original escaped-command corruption was repaired. Displayed arguments now read correctly.
++
++All36 frozen source hashes agree. The final author's exact39-predicate supporting result includes90 synthetic Ward words and two semantic mutants; these are not native evaluations or independent proofs of imported physics. Root did not repeat the completed supporting run or native calculations. Only a stale current-status count35 was found in STATUS.md; corrected to39 while retaining historical35 receipt. No mathematical change was needed.
++
++This is conditional-support/upstream-support, proposal_allowed:false. Full integration pipeline, changed-audit-evidence readiness and formal audit remain unrun. Citation graph/manifest and exact remote delivery follow separately. No main or authority status change is authorized by this review.
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json
+new file mode 100644
+index 0000000000..fb1459bd4f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/DELIVERY_CHECKS.json
+@@ -0,0 +1,13 @@
++{
++  "graph_builds": 1,
++  "manifest_builds": 1,
++  "nodes": 4895,
++  "edges": 12201,
++  "manifest_sha256": "0b2c57cf9edcb5e54b66225999fe17ee5ec046e6c856a659a26967e2b79ff866",
++  "note_sha256": "e4f725931799090f4d4c5866e4af33dbdfdcc70819e595d401ca5eec94a03be7",
++  "whitespace": "PASS",
++  "native_reruns": 0,
++  "pipeline": "UNRUN",
++  "changed_audit_evidence_readiness": "UNRUN",
++  "formal_audit": "UNRUN"
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json
+new file mode 100644
+index 0000000000..df0475e4dd
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/GRAPH_NODE.json
+@@ -0,0 +1,17 @@
++{
++  "claim_id": "native_ward_direct_overlap_note_2026-09-10",
++  "claim_type_author_hint": "bounded_theorem",
++  "claim_type_author_hint_raw": "bounded_theorem",
++  "claim_type_seed_hint": "bounded_theorem",
++  "deps": [
++    "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08",
++    "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08",
++    "native_infinite_star_node_reduction_note_2026-09-09",
++    "native_finite_excitation_ward_note_2026-09-09"
++  ],
++  "helper_runner_paths": [],
++  "note_hash": "e4f725931799090f4d4c5866e4af33dbdfdcc70819e595d401ca5eec94a03be7",
++  "path": "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
++  "runner_path": "scripts/native_ward_direct_overlap_2026_09_10.py",
++  "title": "Positive direct overlap with the full Ward correction retained"
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json
+new file mode 100644
+index 0000000000..452bdfd962
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/ISOLATED_SUPPORT.json
+@@ -0,0 +1,26 @@
++{
++  "scope": "same-byte compact exact synthetic/import-hash support only",
++  "command": "python3 -I -B -S scripts/native_ward_direct_overlap_2026_09_10.py --json",
++  "exit_code": 0,
++  "stdout": {
++    "status": "PASS_EXACT_ALGEBRA_SUPPORT",
++    "predicates": 35,
++    "m0": "5028049/3722400",
++    "direct_lower": "326063949601/102638976000",
++    "ordered_words": 90,
++    "synthetic_ward_value": "3054159/8500",
++    "semantic_mutants_rejected": [
++      {
++        "boundary_sign": 1
++      },
++      {
++        "negative_eigenvalue": 3
++      }
++    ],
++    "import_hashes_checked": 13,
++    "native_evaluations": 0,
++    "full_alpha_established": false
++  },
++  "unknown_cli_rejected": 2,
++  "native_runs": 0
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json
+new file mode 100644
+index 0000000000..785d887784
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/PROCESS_CONTEXT.json
+@@ -0,0 +1,12 @@
++{
++  "base": "aa163dfd79252f607b6065435c728c98d67783ea",
++  "origin_main": "e95797cc80b69815fadd300f431b3461f2449161",
++  "ai_execution": "38e835569f4af7adcb0aad493dcf89c4bf01b93f",
++  "skills": [
++    "physics-loop",
++    "review-loop"
++  ],
++  "native_runs": 0,
++  "graph_builds": 0,
++  "commits": 0
++}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stderr
+new file mode 100644
+index 0000000000..e69de29bb2
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout
+new file mode 100644
+index 0000000000..7ef9018fe7
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-build.stdout
+@@ -0,0 +1,5 @@
++Wrote docs/audit/data/citation_graph.json
++  nodes: 4895  edges: 12201
++  roots: 1993  leaves: 2155
++  runners attached: 3761
++  claim_type_seed_hint_counts: {'meta': 379, 'bounded_theorem': 2952, 'open_gate': 240, 'no_go': 356, 'positive_theorem': 684, 'none': 281, 'decoration': 3}
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stderr
+new file mode 100644
+index 0000000000..e69de29bb2
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout
+new file mode 100644
+index 0000000000..13791c7954
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/citation-manifest.stdout
+@@ -0,0 +1 @@
++Wrote docs/audit/data/citation_graph_manifest.json (4895 nodes, 12201 edges)
+diff --git a/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout
+new file mode 100644
+index 0000000000..c6b06e4b14
+--- /dev/null
++++ b/.claude/science/physics-loops/native-ward-direct-overlap-20260910/verification/vocab.stdout
+@@ -0,0 +1 @@
++vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)
+diff --git a/docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md b/docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md
+new file mode 100644
+index 0000000000..52a31a9643
+--- /dev/null
++++ b/docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md
+@@ -0,0 +1,128 @@
++---
++claim_id: native_ward_direct_overlap_note_2026-09-10
++claim_type: bounded_theorem
++claim_scope: "Supplied infinite native Gaussian reference: the ninety-term direct two-link resolvent overlap exceeds 160/h^2; the full Ward node scalar remains undetermined."
++upstream_dependencies:
++  - native_infinite_star_node_reduction_note_2026-09-09
++  - native_finite_excitation_ward_note_2026-09-09
++  - native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08
++  - native_zero_penalty_optimal_flux_dispersion_note_2026-09-08
++runner: scripts/native_ward_direct_overlap_2026_09_10.py
++actual_current_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++proposal_allowed: false
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++---
++
++# Positive direct overlap with the full Ward correction retained
++
++Claim type: bounded_theorem
++
++**Status: conditional-support.** In the supplied infinite native model, the sum of the ninety ordered disjoint-pair resolvent overlaps is strictly greater than \(160/h^2\). This is a bound on the direct term. It establishes neither the sign nor the nonvanishing of the full node scalar \(\alpha\).
++
++Use the same original pure Gaussian reference \(\Omega\), normalization \(h=2|t_{\mathrm{hop}}|>0\), and local two-link defects as the [native dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), [free dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md), [infinite node theorem](NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md), and [bounded Ward identity](NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md). In particular the imported impurity bound is \(D_A\ge h/4\), with the **same reference vacuum energy** for every \(A\). No uniform gap in the free active bath or finite-volume threshold is assumed.
++
++## The direct term
++
++Work first at \(h=1\). Let \(A\) range over the fifteen two-subsets of the six star legs, \(R_A=-D_A^{-1}\), and
++
++\[
++ Q=\sum_{A\cap C=\varnothing}\langle\Omega,R_C R_A\Omega\rangle .
++\]
++
++The sum is ordered and has ninety terms. Each individual cross overlap need not be positive.
++
++Write \(D_A=H_0+B_A\), with \(H_0\Omega=0\). In the action convention \(B_A=i\gamma_0\gamma(d_A)\), where \(d_A\) is orthogonal to the center and \(|d_A|^2=2\). The CAR therefore give \(B_A^2=2I\). Signed cubic symmetry and the canonical dispersion give
++
++\[
++ c=\langle B_A\rangle=\mu/3,\qquad
++ \mu=\mathbb E\sqrt X,\quad \mathbb EX=6,
++ \qquad \frac14\le c\le\frac{\sqrt6}{3}<\frac{49}{60}.
++\]
++
++This is the reference expectation, not the impurity ground-energy shift. No acquired scalar value is used. The free one-particle generator has norm at most \(6\). The quadratic perturbation creates only vacuum and two-particle components, so all displayed third moments are well-defined.
++
++For real orthogonal Majorana vectors \(a,d\), with \(\|a\|=1\), the CAR and \([H_0,\gamma(a)]=i\gamma(K_0a)\) give
++
++\[
++ \langle B\Omega,H_0B\Omega\rangle
++ =\|d\|^2\langle a,|h_0|a\rangle+
++ \langle d,|h_0|d\rangle+2(a^TK_0d)\langle B\rangle.
++\]
++
++Here \(B=i\gamma(a)\gamma(d)\). The native signed source obeys \(e_0^TK_0d_A=-2\). The perpendicular neighbor measure is twice the center measure; the opposite neighbor measure is \(X/3\) times that measure. Thus, writing \(\nu=\mathbb E X^{3/2}\),
++
++\[
++ \langle D_A^2\rangle=2,\qquad
++ \langle D_P^3\rangle=10c,\qquad
++ \langle D_O^3\rangle=4c+\nu/3. \tag{1}
++\]
++
++The dispersion gives \(\mathbb EX=6\), \(\mathbb EX^2=42\). Hölder and Cauchy imply \(\mu\ge6/\sqrt7\) and \(\nu\le6\sqrt7<16\). Hence \(3/4<c<49/60\) and both third moments are strictly below \(M=43/5\). These identities use the original Gaussian vacuum and bounded perturbation, not an impurity vacuum or a gap in the free bath.
++
++Put \(m_A=\langle D_A^{-1}\rangle\). Cauchy–Schwarz applied to \(D_A^{-1/2}\Omega\) and \(D_A^{1/2}(a+bD_A)\Omega\) gives
++
++\[
++ m_A\ge\frac{(a+bc)^2}{ca^2+4ab+Mb^2}
++ \geq 0.
++\]
++
++The denominator majorant is positive definite since \(Mc-4>0\). Optimizing over \((a,b)\) yields
++
++\[
++ m_A\ge f_M(c)=\frac{M-4c+c^3}{Mc-4}
++ \ge m_1=\frac{1269649}{653040}>\frac43. \tag{2}
++\]
++
++Its derivative numerator \(2Mc^3-12c^2+16-M^2\) is negative on the stated interval, even upon bounding it above by \(2M+16-M^2<0\).
++
++Let \(T_{CA}=1\) for disjoint pairs and \(0\) otherwise. This Kneser adjacency matrix has spectrum \(6,-3,1\), with multiplicities \(1,5,9\). Decompose \(D_A^{-1}\Omega=m_A\Omega+u_A^\perp\). Since \(T\ge-3I\) and \(D_A^{-2}\le4D_A^{-1}\),
++
++\[
++ Q\ge m^*(T+3I)m-12\sum_A m_A.
++\]
++
++Writing \(m=m_1\mathbf1+t\), with each \(t_A\ge0\), and using the positive semidefiniteness and row sum \(9\) of \(T+3I\), the remaining correction is
++\((18m_1-12)\sum_A t_A+t^*(T+3I)t\ge0\). Consequently
++
++\[
++ Q\ge135m_1^2-180m_1
++ =\frac{506499805921}{3158972160}>160. \tag{3}
++\]
++
++Restoring units proves \(Q>160/h^2\). This argument does not assume equal \(m_A\) or eliminate any vector-valued negative channel.
++
++## Where the full node problem remains
++
++The bounded native identities are \([W_A,D_A]=-J_A\), \(\{W_A,\gamma_0\}=4\), with \(W_A\) Hermitian and \(J_A\) anti-Hermitian. Define vectors in the direct sum of fifteen copies of the original Hilbert space:
++
++\[
++ x_A=R_A\Omega,\qquad
++ v_A=R_AJ_AR_A\Omega=(R_AW_A-W_AR_A)\Omega,\qquad
++ p_A=\gamma_0v_A.
++\]
++
++Retaining both Ward boundary terms gives the exact identity
++
++\[
++ 8\alpha=\langle x,Tx\rangle-\operatorname{Re}\langle x,Tp\rangle. \tag{4}
++\]
++
++For the incidence matrix \(L_{Ai}=1_{i\in A}-1/3\), set
++\(E_0=\mathbf1\mathbf1^*/15\), \(E_1=LL^*/4\), and \(E_2=I-E_0-E_1\). These are orthogonal projections and \(T=6E_0-3E_1+E_2\). With \(y=x-p/2\), equation (4) becomes
++
++\[
++ 8\alpha=\sum_{j=0}^2\lambda_j
++ \left(\|E_jy\|^2-\frac14\|E_jp\|^2\right),
++ \qquad (\lambda_0,\lambda_1,\lambda_2)=(6,-3,1). \tag{5}
++\]
++
++Thus six nonnegative squared norms give a possible certificate, but their signed combination is not determined by positivity alone. Cubic symmetry annihilates the negative channel of the **scalar vacuum components**, which depend only on opposite versus perpendicular pairs. It does not annihilate \(E_1x\) or \(E_1p\) as Hilbert-space vectors. The direct lower bound (3) supplies no upper bound on the correction in (4).
++
++For a perfect matching \(A,C,D\), the inverse-source identity gives \(W_A+W_C+W_D=6\gamma_0\). Hence \(V_A=W_A-2\gamma_0\) sums to zero and has zero center coefficient. Its white-sublattice CAR field commutes with every quadratic pair perturbation \(B_C\), so \([V_A,D_C]=[V_A,H_0]\). These useful identities do not make the different resolvents commute and do not cancel the correction in (4).
++
++## Evidence boundary
++
++The paired standard-library runner checks exact rational constants, the fifteen-pair projections, and all ninety terms of a nonphysical two-dimensional Ward boundary fixture. Semantic controls reject a wrong boundary sign and a wrong Kneser eigenvalue. These checks support the algebra; the infinite native assumptions and domain proof are supplied above and through the named imports. No physical Gaussian kernels, scalar acquisition, spectra, or native operator calculations are run. The packet preserves the original research source and independent source review. Canonical review, integration and formal audit are separate statuses; no audit verdict is supplied here.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index fd846a0b9f..d4df9f91b2 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12197,
+- "node_count": 4894,
++ "edge_count": 12201,
++ "node_count": 4895,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -12466,6 +12466,10 @@
+    "deps_hash": "9630d5c0dd03",
+    "out_degree": 4
+   },
++  "native_ward_direct_overlap_note_2026-09-10": {
++   "deps_hash": "9eff81f493ef",
++   "out_degree": 4
++  },
+   "native_weak_electric_defect_density_note_2026-09-08": {
+    "deps_hash": "dd92dd1a5f46",
+    "out_degree": 3
+diff --git a/scripts/native_ward_direct_overlap_2026_09_10.py b/scripts/native_ward_direct_overlap_2026_09_10.py
+new file mode 100644
+index 0000000000..ca747bb466
+--- /dev/null
++++ b/scripts/native_ward_direct_overlap_2026_09_10.py
+@@ -0,0 +1,57 @@
++#!/usr/bin/env python3
++"""Exact supporting algebra only: no native state, spectrum, or Gaussian evaluation."""
++from pathlib import Path
++from fractions import Fraction as F
++from itertools import combinations
++import argparse,json,hashlib
++P=Path(__file__).resolve().parents[1]/'.claude/science/physics-loops/native-ward-direct-overlap-20260910'
++def mm(a,b):return [[sum((a[i][k]*b[k][j]for k in range(len(b))),F(0))for j in range(len(b[0]))]for i in range(len(a))]
++def add(a,b):return [[x+y for x,y in zip(r,s)]for r,s in zip(a,b)]
++def scale(a,c):return [[c*x for x in r]for r in a]
++def controls(boundary_sign=-1,negative_eigenvalue=-3):
++ n=0
++ def check(v):
++  nonlocal n
++  if not v:raise ValueError('support predicate '+str(n))
++  n+=1
++ pairs=list(combinations(range(6),2));T=[[F(not(set(a)&set(b)))for b in pairs]for a in pairs];check(sum(map(sum,T))==90)
++ L=[[F(int(i in a))-F(1,3)for i in range(6)]for a in pairs];Lt=list(map(list,zip(*L)));E0=[[F(1,15)]*15 for _ in range(15)];E1=scale(mm(L,Lt),F(1,4));I=[[F(i==j)for j in range(15)]for i in range(15)];E2=add(add(I,scale(E0,-1)),scale(E1,-1));check(add(add(scale(E0,6),scale(E1,negative_eigenvalue)),E2)==T)
++ for E in(E0,E1,E2):check(mm(E,E)==E)
++ for E,G in((E0,E1),(E0,E2),(E1,E2)):check(mm(E,G)==[[0]*15 for _ in range(15)])
++ check([sum(E[i][i]for i in range(15))for E in(E0,E1,E2)]==[1,5,9])
++ c=F(49,60);M=F(43,5);m=(M-4*c+c**3)/(M*c-4);lower=135*m*m-180*m
++ check(c*c>F(2,3));check(m==F(1269649,653040));check(m>F(4,3));check(lower==F(506499805921,3158972160));check(lower>160)
++ # Strict derivative sign uses the improved third-moment majorant.
++ check(c<1 and 2*M+16-M*M<0);check(M*F(3,4)-4>0)
++ check(F(36,7)>F(81,16));check(252<256)
++ for k,l,t,u in [(F(1),F(2),F(3,5),F(4,5)),(F(3,2),F(5,4),F(-2),F(1,3))]:
++  check(u*u*(k+l)==(t*t+u*u)*k+t*t*k+u*u*l+2*k*t*(-t))
++ for support in([F(1,4),F(2)],[F(1),F(4)],[F(1,2),F(3),F(5)]):
++  k=len(support);a=sum(support)/k;b=sum(x*x for x in support)/k;d=sum(x**3 for x in support)/k
++  check(sum(1/x for x in support)/k >= (d-2*a*b+a**3)/(a*d-b*b))
++ gamma=[[F(1),F(0)],[F(0),F(-1)]];R=[];W=[]
++ for k in range(15):
++  R.append([[F(-2),F(k,100)],[F(k,100),F(-3)]]);W.append([[F(2),F(k+1,17)],[F(k+1,17),F(-2)]]);check(add(mm(W[-1],gamma),mm(gamma,W[-1]))==[[4,0],[0,4]])
++ original=channel=F(0)
++ for c in range(15):
++  for a in range(15):
++   if not T[c][a]:continue
++   direct=mm(R[c],R[a])[0][0]
++   middle=mm(mm(mm(R[c],gamma),add(W[a],scale(W[c],-1))),R[a])[0][0]
++   left=mm(mm(mm(W[c],R[c]),gamma),R[a])[0][0];right=mm(mm(mm(R[c],gamma),R[a]),W[a])[0][0]
++   original+=3*direct+(middle-left-right)/2
++   v=add(mm(R[a],W[a]),scale(mm(W[a],R[a]),-1));channel+=direct+boundary_sign*mm(mm(R[c],gamma),v)[0][0]
++ check(original==channel)
++ return {'predicates':n,'m1':str(m),'direct_lower':str(lower),'ordered_words':90,'synthetic_ward_value':str(original)}
++def main():
++ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--json',action='store_true');ap.parse_args()
++ manifest=json.loads((P/'IMPORT_PROVENANCE.json').read_text())
++ for name,x in manifest.items():
++  if hashlib.sha256((P/'imports'/name).read_bytes()).hexdigest()!=x['sha256']:raise ValueError('import hash '+name)
++ result=controls();mutants=[]
++ for kwargs in({'boundary_sign':1},{'negative_eigenvalue':3}):
++  try:controls(**kwargs)
++  except ValueError:mutants.append(kwargs)
++  else:raise AssertionError('semantic mutant survived')
++ print(json.dumps({'status':'PASS_EXACT_ALGEBRA_SUPPORT',**result,'semantic_mutants_rejected':mutants,'import_hashes_checked':len(manifest),'native_evaluations':0,'full_alpha_established':False},indent=2))
++if __name__=='__main__':main()

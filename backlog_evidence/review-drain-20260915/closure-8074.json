@@ -1,0 +1,19 @@
+{
+  "pr": 8074,
+  "original_head": "77411cfb9d526622ea259c50ab0d66996fededb7",
+  "branch": "codex/native-compression-action-boundary-20260909",
+  "landing": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-compression-action-boundary-20260909",
+    "headRefOid": "77411cfb9d526622ea259c50ab0d66996fededb7",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8074,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8074"
+  }
+}

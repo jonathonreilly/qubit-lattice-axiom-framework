@@ -1,0 +1,96 @@
+{
+  "pr": 8076,
+  "original_head": "aa163dfd79252f607b6065435c728c98d67783ea",
+  "branch": "codex/native-generalized-action-boundary-20260909",
+  "landing": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-generalized-action-boundary-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-ward-direct-overlap-20260910",
+        "headRefOid": "4600d22d47052040aabe090148ec82cb9a1828f5",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8078,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8078"
+      },
+      "original_merge_base": "aa163dfd79252f607b6065435c728c98d67783ea",
+      "delta_sha256": "e2739c1fab853c283dc16c3ff0c6d0668f7df304c7d27a755c1d6a1a9a768e62",
+      "delta_file": "closure-8076-child-8078-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-ward-direct-overlap-20260910",
+        "headRefOid": "4600d22d47052040aabe090148ec82cb9a1828f5",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8078,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8078"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-ward-direct-overlap-20260910",
+        "headRefOid": "4600d22d47052040aabe090148ec82cb9a1828f5",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8078,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8078"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-generalized-action-boundary-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-global-projector-certificate-20260910",
+        "headRefOid": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8077,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8077"
+      },
+      "original_merge_base": "aa163dfd79252f607b6065435c728c98d67783ea",
+      "delta_sha256": "b089ec2576424d330175b94aa8064588256564309f35c877d77840000b057a10",
+      "delta_file": "closure-8076-child-8077-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-global-projector-certificate-20260910",
+        "headRefOid": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8077,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8077"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-global-projector-certificate-20260910",
+        "headRefOid": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8077,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8077"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T22:37:08Z",
+    "headRefName": "codex/native-generalized-action-boundary-20260909",
+    "headRefOid": "aa163dfd79252f607b6065435c728c98d67783ea",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8076,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8076"
+  }
+}

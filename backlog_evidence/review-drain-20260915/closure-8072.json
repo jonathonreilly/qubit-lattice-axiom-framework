@@ -1,0 +1,58 @@
+{
+  "pr": 8072,
+  "original_head": "7a399a00394fd6997262a6d11e39adee6be51918",
+  "branch": "codex/native-gapfree-generator-propagation-20260909",
+  "landing": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-gapfree-generator-propagation-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-sparse-first-action-frame-20260909",
+        "headRefOid": "0b80a97dd72b52662f835fa44b2fe803c2ca555e",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8073,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8073"
+      },
+      "original_merge_base": "7a399a00394fd6997262a6d11e39adee6be51918",
+      "delta_sha256": "b6df1525da94965035f7bb4e00db3decb2053d4b6bf297dd44f8b32fa27bba4d",
+      "delta_file": "closure-8072-child-8073-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-sparse-first-action-frame-20260909",
+        "headRefOid": "0b80a97dd72b52662f835fa44b2fe803c2ca555e",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8073,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8073"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-sparse-first-action-frame-20260909",
+        "headRefOid": "0b80a97dd72b52662f835fa44b2fe803c2ca555e",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8073,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8073"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T22:32:56Z",
+    "headRefName": "codex/native-gapfree-generator-propagation-20260909",
+    "headRefOid": "7a399a00394fd6997262a6d11e39adee6be51918",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8072,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8072"
+  }
+}

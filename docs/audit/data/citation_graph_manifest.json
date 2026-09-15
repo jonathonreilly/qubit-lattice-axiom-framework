@@ -1,6 +1,6 @@
 {
- "edge_count": 13295,
- "node_count": 5726,
+ "edge_count": 13308,
+ "node_count": 5740,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13142,6 +13142,10 @@
    "deps_hash": "b78f2672dca6",
    "out_degree": 2
   },
+  "native_third_order_star_vertex_note_2026-09-08": {
+   "deps_hash": "9b33929562fe",
+   "out_degree": 5
+  },
   "native_u1_pair_operator_and_all_low_support_note_2026-09-08": {
    "deps_hash": "79db32e637e8",
    "out_degree": 4
@@ -13150,9 +13154,17 @@
    "deps_hash": "5c958ba514c0",
    "out_degree": 3
   },
+  "native_weak_electric_spectator_gap_note_2026-09-08": {
+   "deps_hash": "ef447a349253",
+   "out_degree": 4
+  },
   "native_zero_penalty_endpoint_note_2026-09-08": {
    "deps_hash": "087864283a7d",
    "out_degree": 3
+  },
+  "native_zero_penalty_l4_delayed_splitting_note_2026-09-08": {
+   "deps_hash": "9ed4a2c57cbc",
+   "out_degree": 4
   },
   "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08": {
    "deps_hash": "3249f6ddff35",
@@ -21633,6 +21645,50 @@
   "work_history.repo.review_feedback.pr8051-native-optimal-flux-evidence.readme": {
    "deps_hash": "b8210cacff0f",
    "out_degree": 24
+  },
+  "work_history.repo.review_feedback.pr8052-evidence.kept.pr8052-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8052-evidence.kept.pr8052-root_canonical_review-857933c7e06ad6ff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8052-evidence.kept.pr8052-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8052-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8053-evidence.kept.pr8053-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8053-evidence.kept.pr8053-root_canonical_review-857933c7e06ad6ff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8053-evidence.kept.pr8053-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8053-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8058-evidence.kept.pr8058-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8058-evidence.kept.pr8058-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8058-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8065-charged-history-evidence.final_root_review.pr8065-final_root_review-packaging_note": {
    "deps_hash": "e3b0c44298fc",

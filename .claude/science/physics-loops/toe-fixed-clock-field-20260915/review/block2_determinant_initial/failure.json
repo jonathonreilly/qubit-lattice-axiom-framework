@@ -1,0 +1,7 @@
+{
+  "status": "implementation_failure_preserved",
+  "input_sha256": "1c16e3e5ef9e17a4ad38f8a44f19b7315ad5a9fbb3a155ee9249178ffa3f9893",
+  "failure": "numpy int64 scalar derivative broadcast rejected in-place float multiplication in BKAR weight",
+  "scope": "Gram, cross-minor, commutation, symbolic derivative and endpoint checks had passed; BKAR not completed",
+  "fix": "cast analytic derivative output to float before multiplying Gaussian derivative factors"
+}

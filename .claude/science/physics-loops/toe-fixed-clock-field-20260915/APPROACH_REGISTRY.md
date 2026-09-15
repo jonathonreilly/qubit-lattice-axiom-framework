@@ -44,3 +44,11 @@ F2 work is the graph family omitted by these loops, especially residual
 mixed pair factors, branching and the softened exclusions in the stable
 forest representation. Do not identify the restricted loop sum with the
 physical log characteristic functional.
+
+
+Block2, 17:43 UTC: determinant exclusion now supplies the previously missing
+softened-forest loop representation while keeping every exclusion derivative
+local to actual footprint intersection. Random-partition interpolation is
+retained as an alternative with nonlocal derivative cancellations. Next
+resolve cofactor ordering signs and test whether their locality and operator
+source bounds can coexist before attacking general branching.

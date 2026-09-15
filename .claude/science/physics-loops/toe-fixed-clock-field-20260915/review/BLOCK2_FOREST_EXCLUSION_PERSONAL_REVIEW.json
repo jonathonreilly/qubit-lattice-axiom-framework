@@ -1,0 +1,34 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T17:42:28.510469+00:00",
+  "current_main": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+  "checked_hypotheses": [
+    "finite polynomial exclusion endpoints and partition factorization",
+    "Gram PSD required only on forest locus; arbitrary cube positivity explicitly rejected",
+    "all entry derivatives expanded as cofactors without division at singular endpoints",
+    "CAR normalized trace has unit identity vector and linear footprint activity cost",
+    "undifferentiated maps commute across every replica and component entry",
+    "existing loop source bounds retain their actual defined combinatorics and omit residual mixed factors",
+    "random-partition indirect derivative routing preserved as a method diagnostic"
+  ],
+  "remaining_obligations": [
+    "source operator bounds for local cofactor derivatives",
+    "resource-assignment and branching summations",
+    "residual mixed pair factors",
+    "physical connected coefficients and selected-state boundary matching"
+  ],
+  "verification_limits": [
+    "personal proof and finite author checks only",
+    "cochain helper and floating inputs shared",
+    "initial implementation failure preserved",
+    "no independent audit or new axiom conclusion"
+  ],
+  "inputs": {
+    "notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md": "93044ba5cc3c7421c72627c3f27ea9790283616d17a82f75aad51e1493025dbc",
+    "notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md": "5f325c4e7248d324890c437496536592b9531b56638fe7844275482f36f5f99c",
+    "evidence/block2_partition_exclusion_check.py": "353113fcb8100aebbaf0bd4ed249ed8fcaae26b7afcf4a0c5d627db445566c18",
+    "evidence/block2_partition_exclusion_check.json": "b6ea26649e9e210d166851a394df1d06630807dd273553cfa43f28bc0cddc8e3",
+    "evidence/block2_determinant_exclusion_check.py": "91c0b79837240858034bed4b254b65685e659b93c72314920280b776bbd94cdf",
+    "evidence/block2_determinant_exclusion_check.json": "8e7f384d76a88658b3792f2b017570015a89be45cfdea9ffc90e58b292b512a8"
+  }
+}

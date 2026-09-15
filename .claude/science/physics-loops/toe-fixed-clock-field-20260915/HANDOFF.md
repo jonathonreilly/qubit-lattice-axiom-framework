@@ -261,3 +261,29 @@ Main freshness: b64cd9c7599a8149666506c65c3fa9bfe55442ee changes no relevant
 clock/Villain/Gaussian or premise source. The new axiom-sufficiency document
 was read fully and is a planning note, not an axiom verdict. Campaign
 deadline remains September16 01:45:03UTC; continue personally with no agents.
+
+
+## Block 2: forest exclusion with both signed loops and local contact derivatives
+
+The random-partition interpolation preserves loop contraction bounds, but
+its differentiated trees route exclusion through indirect paths: three pure
+hard-core trees give -2/3,1/3,1/3 when their total connected coefficient is
+zero. Absolute bounds on the individual trees lose spatial anchoring. This
+diagnostic is preserved, not called a model or axiom obstruction.
+
+A second construction D(S)=product_u det S[I_u,I_u] retains both endpoints
+and block factorization, stays between zero and one at every forest Gram
+matrix, and has local derivatives bounded by
+2^k product_(ij in A) |footprint_i intersect footprint_j|. Each determinant
+is a normalized CAR creation-word trace. Its two-sided creation maps are
+commuting contractions with unit identity boundary vectors, and the same
+2^|footprint| activity boost as full hard core. Thus the earlier all-length
+loop source and quadratic bounds apply to this softened forest exclusion.
+The derivative cofactor source representation remains an explicit next step.
+
+Finite author checks cover Gram/cross-minor traces, contact derivatives, and
+an actual cochain BKAR identity (error 3.31e-24 against magnitude 2.42e-8).
+A non-PSD cube matrix with determinant -1 rejects an unrestricted positivity
+claim. The initial integer-array casting failure is frozen. Source bounds
+remain restricted to the defined loop family; no new physical pressure
+identity, all-order convergence, independent audit or axiom update.

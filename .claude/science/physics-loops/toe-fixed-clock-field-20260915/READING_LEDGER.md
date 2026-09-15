@@ -181,3 +181,13 @@ as another possible route. Only routed theorem excerpts/abstracts were read;
 no tensor-field or contact-term theorem has been imported. Exact continuum
 covariance, OS hypotheses, rotational invariance and physical contact control
 would still have to be supplied for such a route.
+
+
+Read Abdesselam-Rivasseau hep-th/9409094v1, section III fully (Taylor forest
+statements and polynomial-density proof), plus Theorem IV.5 and its full
+positivity proof. Primary https://arxiv.org/html/hep-th/9409094v1 .
+The imported scope is the finite smooth forest identity and PSD preservation
+by convex combinations of partition matrices. Our finite determinant weight
+is globally smooth, block-factorizing at partition values, and evaluated
+for stability only on those PSD forest matrices. The paper supplies no
+all-order convergence theorem for the present massless two-defect law.

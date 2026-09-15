@@ -109,7 +109,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 22 close (2026-09-15)
 # block: 22
 # branch: physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915 (independent; base origin/main be5e5e07f6; blocks 06-21 are open PRs #8034, #8035, #8138-#8142, #8146-#8155)
-# pr_status: opened for review (number recorded at close-out); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8156 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8156); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes, no findings; gates: see HANDOFF.md"
 # seats: "supervisor-run: control (partial sums to N = 2000; tail constants) -> contract with a lens pass -> primary (V1-V4, runner) -> refuting pass (direct enumeration; tail fit; bound vs exact terms; grid; majorant) -> fold (three runner fixes before the census)"
 # review_findings: "3G(0) = (1/2) sum_n P_2n(0,0), P_2n = 6^-2n C(2n,n) sum_a C(n,a)^2 C(2(n-a),n-a); tail P_2n <= (36/11)^{3/2}/(4 pi^{3/2} n^{3/2}) + 2 e^{-4n/(3 pi^2)}; with N = 1000: 75/100 < 3G(0) < 76/100 exactly; block 19's threshold beta > 76/100 (was 3 sqrt(3) pi/8 = 2.04); the kernel's window [sqrt(3)/6, 76/100]"

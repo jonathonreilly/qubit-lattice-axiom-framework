@@ -149,3 +149,22 @@ source_review_correction:
 # strongest_unresolved_proof_obligation: "nonzero mixed differences at every nonconstant triple; infinite-volume laws for non-monotone classes"
 # next_exact_action: "queue refresh 2026-09-15 (block 10 opening): the region's boundary; strong coupling; a campaign handoff at the budget's end"
 # lock: held (campaign continues)
+
+# ---------------------------------------------------------------- block 11 close (2026-09-15)
+# block: 11
+# branch: physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915 (stacked on block 10, PR #8141)
+# pr_status: opened for review — PR #8142 (base = block 10's branch); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=20 FAIL=0; 11 mutations, census 11/11 in-family; refuting pass consistent; gates: see HANDOFF.md"
+# seats: "supervisor-run: controls A, C-F -> contract with a lens pass -> primary (X1-X5, runner) -> refuting pass (other elimination order; exact enclosures) -> fold"
+# review_findings: "the three-body term vanishes at exactly six points up to scale: the constant rule; p=q=t* r (t^3-3t^2-6t-1); (1,rho) r and (rho,1) r (x^3-3x^2-15x-19); (sigma1,sigma2) r and its mirror (x^6-6x^5-3x^4+4x^3-3x^2-6x+31, p = psi(q)); the two-body term never vanishes at a nonconstant triple; the pair part survives at the five points; the declared triples are off the locus"
+# strongest_unresolved_proof_obligation: "a structural reason for the off-line pair; the loci for k >= 4"
+# next_exact_action: "queue refresh 2026-09-15 (block 11 opening): the region's boundary; strong coupling; the campaign handoff"
+# lock: held (campaign continues)
+
+# ---------------------------------------------------------------- campaign close (2026-09-15T12:35Z)
+# blocks_opened: "08 (#8138, base main), 09 (#8139), 10 (#8141), 11 (#8142) — a stack of hand-offs"
+# stop_condition: "value-gate exhaustion (skill Stop Conditions): remaining queue items are one-step variants, corollary-shaped, compute-heavy, or a Toom-type theorem beyond a session"
+# runtime_used: "about 3.5 h of 24 h (09:00Z-12:35Z)"
+# highest_blast_radius_residual: "strong coupling c >= 1/3: the plane chain is a noisy majority rule on three predecessors; non-uniqueness of the stationary plane law at large p needs a Toom-type stability theorem re-proved at scope; exact noise parameters in HANDOFF_campaign_20260915_next_work.md"
+# next_exact_action: "owner review of #8138-#8142 (and #8034, #8035); next campaign: the strong-coupling phase (panel first)"
+# lock: released

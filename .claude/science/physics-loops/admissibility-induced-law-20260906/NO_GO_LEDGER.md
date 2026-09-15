@@ -21,3 +21,6 @@ Routes read at their proofs, not their headlines.
 
 ## Block 10 (2026-09-15) — negative at scope
 - **A formation law with a two-element recorded set is not a nearest-neighbor Markov field** (T4's converse), proved on every finite window at triples with nonzero mixed differences; escapes: a vanishing mixed difference at a nonconstant triple (none known); the constant rule; a non-product rule; a non-bipartite carrier (none on `Z^3`).
+
+## Block 11 (2026-09-15) — the open lemma of blocks 09–10 settled
+- **"The third difference of `log K_3` is nonzero at every nonconstant triple" is false**: it vanishes at exactly five nonconstant points (three on the collapse lines, one mirror pair off them) and nowhere else (proved by exact elimination). The pair terms survive there (X4), so the Markov-graph conclusions of blocks 09–10 hold everywhere nonconstant; the genuine three-body statements hold off the five points.

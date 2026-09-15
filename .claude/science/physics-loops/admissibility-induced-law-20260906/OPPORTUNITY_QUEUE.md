@@ -119,3 +119,20 @@ Block 10 opened for review (stacked on #8139): the recorded-set Gibbs theorem fo
 2. **Strong coupling `c ≥ 1/3`** (proof target): uniqueness of the stationary plane law on the full cross-section by a block coupling or weighted sensitivities; open.
 3. **Nonzero mixed differences at every nonconstant triple** (proof target; small algebra for `k = 2`, harder for `k ≥ 3`): would make T4's converse and blocks 08–09's dependence statements unconditional.
 4. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small); **the random-priority law's Markov structure** (needs the owner's unlanded note).
+
+## Refresh at block 11 opening (2026-09-15)
+
+Block 11 opened for review (stacked on #8141): the exceptional locus of the three-body term, complete. Ranked next:
+
+1. **The region's boundary in `(p, q, r)`** (exact algebra, small): `3c = 1` along block 03's three lines by exact bracketing; the comparison with `6c_1 = 1`.
+2. **Strong coupling `c ≥ 1/3`** (proof target; open): uniqueness of the stationary plane law on the full cross-section by a block coupling or weighted sensitivities.
+3. **The loci for `k = 4, 5, 6`** (exact algebra; larger systems): whether the four- to six-body terms also have finite exceptional sets, and whether any point is common to two of them.
+4. **A structural reason for the off-line pair `(σ_1, σ_2)`** (open; a hidden symmetry of the six-menu's normalizer?).
+5. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small).
+
+## Campaign close 2026-09-15 — final ranking for the next session
+1. The strong-coupling phase of the formation law (Toom-type non-uniqueness; exact noise parameters in the campaign handoff §3) — derivation; hard; panel first.
+2. A structural reason for block 11's sextic pair — small if it exists.
+3. The k = 4, 5, 6 loci — exact elimination on larger systems.
+4. The region's boundary in (p, q, r) — small.
+5. Width 6; the silent triples; the 3D Gaussian instance; the random-priority law's Markov structure (needs the owner's unlanded note).

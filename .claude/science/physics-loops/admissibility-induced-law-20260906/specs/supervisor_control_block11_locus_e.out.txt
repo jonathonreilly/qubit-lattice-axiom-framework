@@ -1,0 +1,11 @@
+h(q) factored: (q - 1)**6*(q**3 - 3*q**2 - 15*q - 19)*(q**6 - 6*q**5 - 3*q**4 + 4*q**3 - 3*q**2 - 6*q + 31)*(q**6 + 3*q**5 + 6*q**4 + 13*q**3 + 15*q**2 + 12*q + 22)**2
+linear element: A(q) = 1425121558683044797808640*(q - 1)
+psi(q) = p mod sextic: -8*q**5/85 + 116*q**4/255 + 196*q**3/255 + 82*q**2/85 + 121*q/255 + 356/255
+sextic(psi) mod sextic = 0 ? True
+root of the sextic in (1.310646491181, 1.310646491181): p = psi(q) in (6.383997712546, 6.383997712546)  [floats are labels only]
+root of the sextic in (6.383997712546, 6.383997712546): p = psi(q) in (1.310646491181, 1.310646491181)  [floats are labels only]
+E1(psi(q), q) mod sextic = 0 ? True ; G(psi(q), q) mod sextic = 0 ? True
+factor q - 1 : A not invertible mod factor -> zero divisor
+factor q**3 - 3*q**2 - 15*q - 19 positive roots (labels): [6.017463509085493] ; p =  1
+factor q**6 - 6*q**5 - 3*q**4 + 4*q**3 - 3*q**2 - 6*q + 31 positive roots (labels): [1.3106464876213804, 6.383997705764267] ; p =  (degree 6 expression)
+factor q**6 + 3*q**5 + 6*q**4 + 13*q**3 + 15*q**2 + 12*q + 22 positive roots (labels): [] ; p =  (degree 6 expression)

@@ -107,3 +107,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "every formation law on a finite window is the recorded-set Gibbs law with the recorded-set graph as its Markov graph; nearest-neighbor Markov iff no site records two neighbors. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly (the formation-law node: any single order induces couplings beyond the rule's range); the parked statistical-bridge material (read-only)"
 ```
+
+# Trace gate — block 11, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "blocks 08–10's open lemma: the third difference of log K_3 nonzero at every nonconstant triple"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the lemma is settled: false at exactly five nonconstant points (three on the collapse lines, one mirror pair off them), true elsewhere; blocks 08–10's three-body statements are unconditional off that set and their Markov-graph conclusions hold everywhere nonconstant. Next: the region's boundary; strong coupling; a campaign handoff. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
+```

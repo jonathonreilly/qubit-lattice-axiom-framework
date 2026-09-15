@@ -1,0 +1,19 @@
+pattern values verified: True
+=== (1) k=2: eigenvalues of K (Z_1 K): 1, (p-q)/Z1 x3, (p+q-2r)/Z1 x2 -> K^2 rank one iff p=q=r; the ratio K2(a,b)K2(0,0)/(K2(a,0)K2(0,b)) at (a,b)=(-x,-x):
+   ratio = (p**2 + q**2 + 4*r**2)**2/(4*(p*q + 2*r**2)**2)  (= 1 iff p = q; the (x,y|x,y) witness for p=q: (p**2 + q**2 + 4*r**2)**2/(4*r**2*(p + q + r)**2) )
+=== (2) the line p = q = t r
+   E1 on the line: -8*(t - 1)**3*(t**3 - 3*t**2 - 6*t - 1)
+   E2 on the line: 0
+   real roots of t^3-3t^2-6t-1 (isolating intervals): [((-2, -1), 1), ((-1, 0), 1), ((4, 5), 1)]
+   positive root t* in (4, 5) ~ 4.41147412781 (numeric label only)
+=== (3) common zeros of E1, E2 off the line p = q (r = 1)
+   factor E1: -p**6 + 6*p**5 - 3*p**4*q**2 + 15*p**4*q - 9*p**4 + 3*p**3*q**2 - 6*p**3*q - 13*p**3 - 3*p**2*q**4 + 3*p**2*q**3 - 18*p**2*q**2 - 15*p**2*q + 18*p**2 + 15*p*q**4 - 6*p*q**3 - 15*p*q**2 + 60*p*q - 12*p - q**6 + 6*q**5 - 9*q**4 - 13*q**3 + 18*q**2 - 12*q - 8
+   factor E2: -(p - q)**2*(p**4*q - p**3*q**2 - 2*p**3*q - p**3 - p**2*q**3 - 4*p**2*q**2 - 7*p**2*q + p*q**4 - 2*p*q**3 - 7*p*q**2 + 4*p - q**3 + 4*q + 16)
+   resultant in p (factored): 32768*(p - 1)**15*(p**3 - 3*p**2 - 15*p - 19)*(p**3 - 3*p**2 - 6*p - 1)**2*(p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31)*(p**6 + 3*p**5 + 6*p**4 + 13*p**3 + 15*p**2 + 12*p + 22)**2
+      factor p - 1 degree 1 positive real root intervals: [(1, 1)]
+      factor p**3 - 3*p**2 - 15*p - 19 degree 3 positive real root intervals: [(6, 7)]
+      factor p**3 - 3*p**2 - 6*p - 1 degree 3 positive real root intervals: [(4, 5)]
+      factor p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31 degree 6 positive real root intervals: [(1, 2), (6, 7)]
+      factor p**6 + 3*p**5 + 6*p**4 + 13*p**3 + 15*p**2 + 12*p + 22 degree 6 positive real root intervals: []
+=== (4) at p = q: all third differences vanish iff W2^3 = W1 W3^2 (structural): W1 = 2*(t**3 + 2) W2 = 2*(t**2 + t + 1) W3 = 6*t
+   W2^3 - W1 W3^2 = 8*(t - 1)**3*(t**3 - 3*t**2 - 6*t - 1)

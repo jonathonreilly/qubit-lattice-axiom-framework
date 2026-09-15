@@ -1,0 +1,7 @@
+{
+  "source_sha256": "f53d21ced49ce2357c799b0bc46297c763ea6a17f7f4cceb2332407c35449f46",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914/.claude/science/physics-loops/toe-phase-selection-20260914/block35_positive_fourier_path_probe_failed_v1.py\", line 71, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-phase-selection-20260914/.claude/science/physics-loops/toe-phase-selection-20260914/block35_positive_fourier_path_probe_failed_v1.py\", line 25, in main\n    assert np.max(abs(Psi.imag))<3e-13 and Psi.real.min()>-3e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "diagnosis": "At N2,beta1.2 a full nearly degenerate Perron eigensolve produced a spurious negative neutral-transform component -9.36880839385742e-13 (imaginary maximum1.6239620955431654e-14). Replaced that solve by the exact ker(d0*) mod N Fourier-sector restriction, reconstructed the configuration Perron vector, and independently checked its full-matrix residual and largest eigenvalue. No tolerance was relaxed and no negative coordinates were clipped."
+}

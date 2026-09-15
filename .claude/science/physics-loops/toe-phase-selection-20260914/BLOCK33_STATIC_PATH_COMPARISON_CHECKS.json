@@ -1,0 +1,343 @@
+{
+  "status": "personal_finite_checks_not_independent_review",
+  "source_sha256": "98cffe5c56d07808c2a35a18d86448e3c94813981996a95b2b07940bc24586bd",
+  "general_path_green": [
+    {
+      "grid_side": 24,
+      "path_index": 0,
+      "T": 1,
+      "direct_time_sum": 1.11782487526517,
+      "reduced_energy": 1.11782487526517,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.6842260656720235
+    },
+    {
+      "grid_side": 24,
+      "path_index": 0,
+      "T": 2,
+      "direct_time_sum": 1.6789328688782763,
+      "reduced_energy": 1.6789328688782765,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.8117352496919834
+    },
+    {
+      "grid_side": 24,
+      "path_index": 0,
+      "T": 5,
+      "direct_time_sum": 3.025116145742302,
+      "reduced_energy": 3.0251161457423015,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.8571220977765692
+    },
+    {
+      "grid_side": 24,
+      "path_index": 0,
+      "T": 12,
+      "direct_time_sum": 6.066037759235948,
+      "reduced_energy": 6.0660377592359485,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.8628520441181904
+    },
+    {
+      "grid_side": 24,
+      "path_index": 1,
+      "T": 1,
+      "direct_time_sum": 1.11782487526517,
+      "reduced_energy": 1.11782487526517,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.6842260656720235
+    },
+    {
+      "grid_side": 24,
+      "path_index": 1,
+      "T": 2,
+      "direct_time_sum": 1.6789328688782763,
+      "reduced_energy": 1.6789328688782765,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.8117352496919835
+    },
+    {
+      "grid_side": 24,
+      "path_index": 1,
+      "T": 5,
+      "direct_time_sum": 3.025116145742302,
+      "reduced_energy": 3.0251161457423015,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.8571220977765692
+    },
+    {
+      "grid_side": 24,
+      "path_index": 1,
+      "T": 12,
+      "direct_time_sum": 6.066037759235948,
+      "reduced_energy": 6.0660377592359485,
+      "static_limit": 0.4335988095931465,
+      "positive_remainder": 0.8628520441181904
+    },
+    {
+      "grid_side": 40,
+      "path_index": 0,
+      "T": 1,
+      "direct_time_sum": 1.1178266111423545,
+      "reduced_energy": 1.1178266111423543,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.6842277984593702
+    },
+    {
+      "grid_side": 40,
+      "path_index": 0,
+      "T": 2,
+      "direct_time_sum": 1.6789397624640665,
+      "reduced_energy": 1.6789397624640665,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.8117421370980983
+    },
+    {
+      "grid_side": 40,
+      "path_index": 0,
+      "T": 5,
+      "direct_time_sum": 3.02515715103831,
+      "reduced_energy": 3.0251571510383104,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.8571630876233897
+    },
+    {
+      "grid_side": 40,
+      "path_index": 0,
+      "T": 12,
+      "direct_time_sum": 6.066221542805824,
+      "reduced_energy": 6.066221542805823,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.8630357906100141
+    },
+    {
+      "grid_side": 40,
+      "path_index": 1,
+      "T": 1,
+      "direct_time_sum": 1.1178266111423545,
+      "reduced_energy": 1.1178266111423545,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.6842277984593704
+    },
+    {
+      "grid_side": 40,
+      "path_index": 1,
+      "T": 2,
+      "direct_time_sum": 1.6789397624640665,
+      "reduced_energy": 1.6789397624640665,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.8117421370980983
+    },
+    {
+      "grid_side": 40,
+      "path_index": 1,
+      "T": 5,
+      "direct_time_sum": 3.02515715103831,
+      "reduced_energy": 3.0251571510383104,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.8571630876233897
+    },
+    {
+      "grid_side": 40,
+      "path_index": 1,
+      "T": 12,
+      "direct_time_sum": 6.066221542805822,
+      "reduced_energy": 6.066221542805823,
+      "static_limit": 0.4335988126829841,
+      "positive_remainder": 0.8630357906100141
+    },
+    {
+      "grid_side": 64,
+      "path_index": 0,
+      "T": 1,
+      "direct_time_sum": 1.117826828195275,
+      "reduced_energy": 1.1178268281952752,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.6842280154281644
+    },
+    {
+      "grid_side": 64,
+      "path_index": 0,
+      "T": 2,
+      "direct_time_sum": 1.6789406284232107,
+      "reduced_energy": 1.6789406284232107,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.8117430028889889
+    },
+    {
+      "grid_side": 64,
+      "path_index": 0,
+      "T": 5,
+      "direct_time_sum": 3.0251624664468473,
+      "reduced_energy": 3.0251624664468477,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.8571684026112933
+    },
+    {
+      "grid_side": 64,
+      "path_index": 0,
+      "T": 12,
+      "direct_time_sum": 6.066249295598816,
+      "reduced_energy": 6.0662492955988165,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.863063542393486
+    },
+    {
+      "grid_side": 64,
+      "path_index": 1,
+      "T": 1,
+      "direct_time_sum": 1.117826828195275,
+      "reduced_energy": 1.1178268281952752,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.6842280154281644
+    },
+    {
+      "grid_side": 64,
+      "path_index": 1,
+      "T": 2,
+      "direct_time_sum": 1.6789406284232107,
+      "reduced_energy": 1.6789406284232107,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.8117430028889889
+    },
+    {
+      "grid_side": 64,
+      "path_index": 1,
+      "T": 5,
+      "direct_time_sum": 3.0251624664468477,
+      "reduced_energy": 3.0251624664468477,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.8571684026112933
+    },
+    {
+      "grid_side": 64,
+      "path_index": 1,
+      "T": 12,
+      "direct_time_sum": 6.066249295598816,
+      "reduced_energy": 6.0662492955988165,
+      "static_limit": 0.4335988127671109,
+      "positive_remainder": 0.863063542393486
+    }
+  ],
+  "theta_cases": [
+    {
+      "alpha": 1.0,
+      "z": 0.2,
+      "beta_frequency": 0.7,
+      "M": 1.153125,
+      "points": 165,
+      "max_real_fourier_discrepancy": 8.881784197001252e-16,
+      "min_log_cost": -0.0,
+      "max_curvature": 1.34513267220101e-06,
+      "max_gradient_self_bound_residual": 2.1119374743872262e-33,
+      "max_square_root_comparison_residual": 0.0,
+      "min_fourier_weight": 0.0
+    },
+    {
+      "alpha": 3.0,
+      "z": 0.4,
+      "beta_frequency": 2.3,
+      "M": 8.877777777777776,
+      "points": 165,
+      "max_real_fourier_discrepancy": 4.440892098500626e-16,
+      "min_log_cost": -0.0,
+      "max_curvature": 1.0291684790301763,
+      "max_gradient_self_bound_residual": 7.86407559718739e-36,
+      "max_square_root_comparison_residual": 0.0,
+      "min_fourier_weight": 0.0
+    },
+    {
+      "alpha": 12.0,
+      "z": 0.7,
+      "beta_frequency": 4.2,
+      "M": 149.19999999999996,
+      "points": 165,
+      "max_real_fourier_discrepancy": 5.551115123125783e-16,
+      "min_log_cost": -0.0,
+      "max_curvature": 19.18958179283495,
+      "max_gradient_self_bound_residual": 5.36193666232819e-38,
+      "max_square_root_comparison_residual": 0.0,
+      "min_fourier_weight": 0.0
+    },
+    {
+      "alpha": 30.0,
+      "z": 0.15,
+      "beta_frequency": 9.0,
+      "M": 46.81660899653979,
+      "points": 165,
+      "max_real_fourier_discrepancy": 7.771561172376096e-16,
+      "min_log_cost": -0.0,
+      "max_curvature": 40.56477552463949,
+      "max_gradient_self_bound_residual": 2.4442394853967107e-49,
+      "max_square_root_comparison_residual": 0.0,
+      "min_fourier_weight": 1.8556059258916607e-235
+    }
+  ],
+  "shifted_origin_countercontrol": -1.3475249266290654,
+  "fixed_loop_time_difference": [
+    {
+      "side": 8,
+      "time_separation": 1,
+      "single_loop_energy": 0.4998779296875,
+      "difference_energy": 0.8622186555782214,
+      "bound": 1.99951171875
+    },
+    {
+      "side": 8,
+      "time_separation": 2,
+      "single_loop_energy": 0.4998779296875,
+      "difference_energy": 0.9775572972729788,
+      "bound": 1.99951171875
+    },
+    {
+      "side": 8,
+      "time_separation": 3,
+      "single_loop_energy": 0.4998779296875,
+      "difference_energy": 0.9950813143508784,
+      "bound": 1.99951171875
+    },
+    {
+      "side": 12,
+      "time_separation": 1,
+      "single_loop_energy": 0.49997588734567894,
+      "difference_energy": 0.8622481633806147,
+      "bound": 1.9999035493827158
+    },
+    {
+      "side": 12,
+      "time_separation": 2,
+      "single_loop_energy": 0.49997588734567894,
+      "difference_energy": 0.9776849392836797,
+      "bound": 1.9999035493827158
+    },
+    {
+      "side": 12,
+      "time_separation": 3,
+      "single_loop_energy": 0.49997588734567894,
+      "difference_energy": 0.9954525217910487,
+      "bound": 1.9999035493827158
+    },
+    {
+      "side": 16,
+      "time_separation": 1,
+      "single_loop_energy": 0.49999237060546875,
+      "difference_energy": 0.8622501121281936,
+      "bound": 1.999969482421875
+    },
+    {
+      "side": 16,
+      "time_separation": 2,
+      "single_loop_energy": 0.49999237060546875,
+      "difference_energy": 0.9776929582391202,
+      "bound": 1.999969482421875
+    },
+    {
+      "side": 16,
+      "time_separation": 3,
+      "single_loop_energy": 0.49999237060546875,
+      "difference_energy": 0.9954718096415904,
+      "bound": 1.999969482421875
+    }
+  ],
+  "limitations": "Floating finite sums; neither interval bounds nor the infinite path-threshold theorem are computed."
+}

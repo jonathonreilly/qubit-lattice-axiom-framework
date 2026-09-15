@@ -1,3 +1,20 @@
+# Current checkpoint — static transfer extension
+
+Campaign deadline remains2026-09-15 13:30:44UTC. Continue personally; no agents.
+New PR8143 preserves the autonomous full-domain projective corridor at
+6327004eaaecd83fffca5e2362db6a042a0707a5. Its scratch checkout is being removed.
+
+Private Blocks32-35 now derive inverse spectral moments (removing zero-transfer
+mass), positive-Fourier surface comparison at every beta>0, path-independent
+static thresholds, a general spatial-path Green identity, and a common
+matrix-moment transfer Hilbert space with an injective positive contraction.
+All finite author checks pass, with the first nearly-degenerate Perron failure
+preserved and resolved by the exact neutral-sector solve. No independent
+review, full gauge-field algebra, moving matter or axiom selection is claimed.
+Package one coherent static-transfer extension, stacked on PR8140 at8a71d7fa.
+The private square-root-log source comparison is an optional extra estimate;
+the all-coupling positive-Fourier route is the stronger path comparison.
+
 # Current continuation — 2026-09-15
 
 Continue personally without subagents until2026-09-15 13:30:44UTC.

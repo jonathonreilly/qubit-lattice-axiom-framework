@@ -1,0 +1,54 @@
+{
+  "baseRefName": "main",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/CONFORMANCE.md",
+      "additions": 34,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/HANDOFF.md",
+      "additions": 12,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/MUTATION_CHECKS.json",
+      "additions": 87,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/VALIDATION.json",
+      "additions": 124,
+      "deletions": 0
+    },
+    {
+      "path": "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "additions": 370,
+      "deletions": 0
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "additions": 6,
+      "deletions": 2
+    },
+    {
+      "path": "logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt",
+      "additions": 18,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py",
+      "additions": 250,
+      "deletions": 0
+    }
+  ],
+  "headRefName": "physics-loop/full-domain-projective-corridor-20260915",
+  "headRefOid": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+  "number": 8143,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8143",
+  "utc": "2026-09-15T12:45:16.065096+00:00",
+  "exact_remote_verified": true,
+  "author_status": "independent review pending",
+  "personal_execution": true
+}

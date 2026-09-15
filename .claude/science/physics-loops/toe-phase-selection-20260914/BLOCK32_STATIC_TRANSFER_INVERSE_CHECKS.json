@@ -1,0 +1,637 @@
+{
+  "status": "personal_floating_checks_not_independent_review",
+  "source_sha256": "a19f59090036d3ac899af020ed4ff209eef169aa0f55ada0ef1ee9fb7aa587d2",
+  "cases": [
+    {
+      "N": 2,
+      "beta": 0.3,
+      "j": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.0,
+      "inverse_moment": 0.9999999999999986,
+      "spectral_inverse_moment": 0.999999999999998,
+      "direct_spectral_relative_error": 5.551115123125783e-16,
+      "whitened_comparison_norm": 1.000000000000001,
+      "energy_moments_1_2_3": [
+        1.2787499577378776e-30,
+        3.565310600883624e-30,
+        1.0284042585129661e-29
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.3,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 2.653978673872641,
+      "inverse_moment": 2.647251417406884,
+      "spectral_inverse_moment": 2.647251417406884,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 2.6539786738726447,
+      "energy_moments_1_2_3": [
+        0.9612538071776919,
+        0.9345429538918548,
+        0.9411347436348929
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.3,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 2.653978673872641,
+      "inverse_moment": 2.647251417406884,
+      "spectral_inverse_moment": 2.647251417406884,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 2.6539786738726447,
+      "energy_moments_1_2_3": [
+        0.9612538071776919,
+        0.9345429538918548,
+        0.9411347436348929
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.3,
+      "j": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.0,
+      "inverse_moment": 0.9999999999999986,
+      "spectral_inverse_moment": 0.999999999999998,
+      "direct_spectral_relative_error": 5.551115123125783e-16,
+      "whitened_comparison_norm": 1.0000000000000007,
+      "energy_moments_1_2_3": [
+        1.2931664557472347e-30,
+        3.579326500257795e-30,
+        1.0298157345515356e-29
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.3,
+      "j": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 7.043602801370783,
+      "inverse_moment": 7.02321402451805,
+      "spectral_inverse_moment": 7.023214024518042,
+      "direct_spectral_relative_error": 1.1381691842787986e-15,
+      "whitened_comparison_norm": 7.043602801370788,
+      "energy_moments_1_2_3": [
+        1.877032905011765,
+        3.6564322435160324,
+        7.404376043198011
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.3,
+      "j": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dimension": 16,
+      "K": 49.612340423478344,
+      "inverse_moment": 49.46583532601749,
+      "spectral_inverse_moment": 49.46583532601716,
+      "direct_spectral_relative_error": 6.7512270561333695e-15,
+      "whitened_comparison_norm": 49.61234042347833,
+      "energy_moments_1_2_3": [
+        3.4452387635084247,
+        13.998605696942212,
+        56.8787752924584
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.85,
+      "j": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.0,
+      "inverse_moment": 1.0000000000000002,
+      "spectral_inverse_moment": 1.0,
+      "direct_spectral_relative_error": 2.2204460492503126e-16,
+      "whitened_comparison_norm": 1.000000000000002,
+      "energy_moments_1_2_3": [
+        3.223148218259633e-31,
+        1.1312321436256938e-30,
+        3.9722594437592254e-30
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.85,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.062183254265878,
+      "inverse_moment": 1.0095116260232646,
+      "spectral_inverse_moment": 1.0095116260232646,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.062183254265879,
+      "energy_moments_1_2_3": [
+        0.006178724123569557,
+        0.001444361282893787,
+        0.004954268487712849
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.85,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.062183254265878,
+      "inverse_moment": 1.0095116260232646,
+      "spectral_inverse_moment": 1.0095116260232646,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.062183254265879,
+      "energy_moments_1_2_3": [
+        0.006178724123569557,
+        0.001444361282893787,
+        0.004954268487712849
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.85,
+      "j": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.0,
+      "inverse_moment": 1.0000000000000002,
+      "spectral_inverse_moment": 1.0,
+      "direct_spectral_relative_error": 2.2204460492503126e-16,
+      "whitened_comparison_norm": 1.0000000000000013,
+      "energy_moments_1_2_3": [
+        3.2240748784545026e-31,
+        1.131253805575331e-30,
+        3.97233374588553e-30
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.85,
+      "j": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "dimension": 16,
+      "K": 1.1282332656428509,
+      "inverse_moment": 1.0226982640964564,
+      "spectral_inverse_moment": 1.022698264096457,
+      "direct_spectral_relative_error": 6.513493159818908e-16,
+      "whitened_comparison_norm": 1.1282332656428515,
+      "energy_moments_1_2_3": [
+        0.009324985276875026,
+        0.005742909828326526,
+        0.01994471088748312
+      ]
+    },
+    {
+      "N": 2,
+      "beta": 0.85,
+      "j": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dimension": 16,
+      "K": 1.2729103017031316,
+      "inverse_moment": 1.0603021474236343,
+      "spectral_inverse_moment": 1.0603021474236336,
+      "direct_spectral_relative_error": 6.282490480602093e-16,
+      "whitened_comparison_norm": 1.2729103017031327,
+      "energy_moments_1_2_3": [
+        0.0064897501912812485,
+        0.0228234949790036,
+        0.08026686816950664
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.4,
+      "j": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.0,
+      "inverse_moment": 0.9999999999999991,
+      "spectral_inverse_moment": 0.9999999999999984,
+      "direct_spectral_relative_error": 6.661338147750939e-16,
+      "whitened_comparison_norm": 1.0000000000000393,
+      "energy_moments_1_2_3": [
+        1.906021027168531e-30,
+        5.984937719222006e-30,
+        2.2293106931437264e-29
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.4,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 3.410232745762692,
+      "inverse_moment": 3.4066644247288966,
+      "spectral_inverse_moment": 3.4066644247288953,
+      "direct_spectral_relative_error": 3.910768609550411e-16,
+      "whitened_comparison_norm": 3.4102327457627064,
+      "energy_moments_1_2_3": [
+        1.2194705959280179,
+        1.4914150073144565,
+        1.8403417083595954
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.4,
+      "j": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 3.410232745762692,
+      "inverse_moment": 3.4066644247288953,
+      "spectral_inverse_moment": 3.4066644247288957,
+      "direct_spectral_relative_error": 1.3035895365168042e-16,
+      "whitened_comparison_norm": 3.4102327457627033,
+      "energy_moments_1_2_3": [
+        1.2194705959280179,
+        1.4914150073144565,
+        1.8403417083595952
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.4,
+      "j": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.0,
+      "inverse_moment": 0.9999999999999991,
+      "spectral_inverse_moment": 0.9999999999999984,
+      "direct_spectral_relative_error": 6.661338147750939e-16,
+      "whitened_comparison_norm": 1.0000000000000393,
+      "energy_moments_1_2_3": [
+        1.954792039326172e-30,
+        6.044584765814768e-30,
+        2.2366708810918676e-29
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.4,
+      "j": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 11.62968738027215,
+      "inverse_moment": 11.615372477296427,
+      "spectral_inverse_moment": 11.61537247729643,
+      "direct_spectral_relative_error": 3.05863086676272e-16,
+      "whitened_comparison_norm": 11.629687380272175,
+      "energy_moments_1_2_3": [
+        2.4045108068527736,
+        5.869458280812996,
+        14.556273292951342
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.4,
+      "j": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dimension": 81,
+      "K": 135.24962856286132,
+      "inverse_moment": 135.07564748744025,
+      "spectral_inverse_moment": 135.0756474874425,
+      "direct_spectral_relative_error": 1.6622648765838365e-14,
+      "whitened_comparison_norm": 135.24962856286123,
+      "energy_moments_1_2_3": [
+        4.53053264132057,
+        22.5737617966253,
+        112.70729707699364
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "j": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.0,
+      "inverse_moment": 1.0000000000000018,
+      "spectral_inverse_moment": 1.0000000000000018,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.0000000000000109,
+      "energy_moments_1_2_3": [
+        1.0505587962622544e-30,
+        2.577363424467657e-30,
+        6.493434821016608e-30
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.2954328394650978,
+      "inverse_moment": 1.1468150075155916,
+      "spectral_inverse_moment": 1.1468150075155916,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.2954328394651087,
+      "energy_moments_1_2_3": [
+        0.10336539911920747,
+        0.03790949717058519,
+        0.07172754089060512
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "j": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.2954328394650978,
+      "inverse_moment": 1.1468150075155916,
+      "spectral_inverse_moment": 1.1468150075155916,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.2954328394651085,
+      "energy_moments_1_2_3": [
+        0.10336539911920747,
+        0.0379094971705852,
+        0.07172754089060512
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "j": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.0,
+      "inverse_moment": 1.0000000000000018,
+      "spectral_inverse_moment": 1.0000000000000018,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.000000000000011,
+      "energy_moments_1_2_3": [
+        1.0546927500893951e-30,
+        2.5788795615139874e-30,
+        6.496303463180261e-30
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "j": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "dimension": 81,
+      "K": 1.6781462415646058,
+      "inverse_moment": 1.3586700633839182,
+      "spectral_inverse_moment": 1.358670063383919,
+      "direct_spectral_relative_error": 6.537116284788218e-16,
+      "whitened_comparison_norm": 1.678146241564613,
+      "energy_moments_1_2_3": [
+        0.17572066888952573,
+        0.1471098725428259,
+        0.3193661488737578
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 1.1,
+      "j": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dimension": 81,
+      "K": 2.8161748080774123,
+      "inverse_moment": 2.0399395868655983,
+      "spectral_inverse_moment": 2.0399395868655983,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 2.816174808077416,
+      "energy_moments_1_2_3": [
+        0.2227994143228057,
+        0.5652510612090997,
+        1.447320526779758
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "j": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimension": 256,
+      "K": 1.0,
+      "inverse_moment": 0.9999999999999997,
+      "spectral_inverse_moment": 0.9999999999999997,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.0000000000000673,
+      "energy_moments_1_2_3": [
+        4.272013955681344e-30,
+        1.8657732028489301e-29,
+        9.190666967681893e-29
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "j": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "dimension": 256,
+      "K": 3.2823790175784278,
+      "inverse_moment": 1.8586608164062934,
+      "spectral_inverse_moment": 1.8586608164062934,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 3.2823790175784393,
+      "energy_moments_1_2_3": [
+        0.5797351623536304,
+        0.3750835940503385,
+        0.3336338822086853
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "j": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "dimension": 256,
+      "K": 3.2823790175784278,
+      "inverse_moment": 1.8586608164062934,
+      "spectral_inverse_moment": 1.8586608164062934,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 3.2823790175784437,
+      "energy_moments_1_2_3": [
+        0.5797351623536304,
+        0.37508359405033853,
+        0.33363388220868534
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "j": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "dimension": 256,
+      "K": 1.0,
+      "inverse_moment": 0.9999999999999997,
+      "spectral_inverse_moment": 0.9999999999999997,
+      "direct_spectral_relative_error": 0.0,
+      "whitened_comparison_norm": 1.000000000000067,
+      "energy_moments_1_2_3": [
+        4.331123890674395e-30,
+        1.8722024973722838e-29,
+        9.200578363756774e-29
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "j": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "dimension": 256,
+      "K": 10.774012015039125,
+      "inverse_moment": 3.5510342359497313,
+      "spectral_inverse_moment": 3.5510342359497287,
+      "direct_spectral_relative_error": 7.503547085312007e-16,
+      "whitened_comparison_norm": 10.774012015039133,
+      "energy_moments_1_2_3": [
+        1.096808571132456,
+        1.4444641551591857,
+        2.314724711514957
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "j": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dimension": 256,
+      "K": 116.07933490020741,
+      "inverse_moment": 14.226282374553639,
+      "spectral_inverse_moment": 14.226282374553215,
+      "direct_spectral_relative_error": 2.98426021246454e-14,
+      "whitened_comparison_norm": 116.07933490020727,
+      "energy_moments_1_2_3": [
+        1.8703334911950606,
+        5.4142264261553645,
+        15.86075074114951
+      ]
+    }
+  ],
+  "limits": "Finite floating comparisons, no interval proof of matrix positivity or infinite-volume passage."
+}

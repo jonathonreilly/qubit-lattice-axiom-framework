@@ -1,0 +1,24 @@
+{
+  "pr": 8114,
+  "original_head": "2c2aba9a86a57c19e007c390e5db2ab6272c7850",
+  "branch": "claude/support-rule-gauss-glued-witness",
+  "landing": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "claude/support-rule-gauss-glued-witness",
+    "headRefOid": "2c2aba9a86a57c19e007c390e5db2ab6272c7850",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8114,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8114"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "2c2aba9a86a57c19e007c390e5db2ab6272c7850",
+    "state": "CLOSED"
+  }
+}

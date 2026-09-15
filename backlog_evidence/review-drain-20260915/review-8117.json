@@ -1,0 +1,810 @@
+{
+  "unit": [
+    8117
+  ],
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "reviewer": "/root/backlog_topology, same independent reviewer session",
+  "original_head": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
+  "declared_base": "main",
+  "original_merge_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "head_branch": "physics-loop/toe-ice-winding-response-20260914",
+  "confirmation_base": "20fcfa39f9af6c5b6966956253ba8a2aaa6430b3",
+  "staged_tree": "c9f8399d5182145278017b3ff7be2c26891972cd",
+  "full_pipeline_count": 0,
+  "source_edits_by_reviewer": 0,
+  "current_main_preservation": "All45 final paths are additions; no existing main source changed or deleted",
+  "reading": {
+    "canonical_note_lines": 628,
+    "runner_lines": 420,
+    "original_paths": 45,
+    "historical_records": 8,
+    "mutation_sources": 11,
+    "mutation_outputs": 22,
+    "scope": "Complete note, runner,8records; all11decompressed sources exact one-replacement verified against original plus assertion outputs. Six authority sources reused only after exact freshness; source-convention and historical context actual passages read."
+  },
+  "findings": [
+    {
+      "id": "8117-1",
+      "severity": "material packaging",
+      "finding": "Initial source-only proposal omitted41unique historical evidence files and left a broken Review link",
+      "status": "fixed and same-session confirmed",
+      "fix": "All41original files preserved byte-exact with4unique Markdown names, README provenance/name map, canonical historical link repaired"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "scope": "Sections1\u20132",
+      "claim": "Simple finite Perron branch and complete phase tangent yield C=2min sum w(a+Bphi)^2; singleton and parallel-edge cases explicit. Exact gradient iff zero curvature.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section3",
+      "claim": "Divergence-free dual bound and quadratic dual; zero-flow excluded only from ratio; finite weights, no uniform claim.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section4",
+      "claim": "Matched reversible Doob rates, stationary current variance, negative Duhamel covariance sign, positive decreasing bias and gap bound.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Sections5\u20136",
+      "claim": "Positive finite Dyson trace, integer spatial sheet period L^2, chi=(L/beta)<W^2>; component and thermal ensemble explicit.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section7",
+      "claim": "Exact864-state rational corrector chi28261/99144; variance5241841/91014192;6 current-channel roots in(3,15); completeL2 census9600/937/760/77.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section8",
+      "claim": "All-even-L zero-flux frozen construction yields global zero energy V>=J; actual864+16RK thermal curvature chi/17 differs globalzero; L2V<J selectsmobile.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section9",
+      "claim": "Height-ordered full-sheet cycle on every evenL, disjointplane flows give finite lower bound2J/|Omega|; no thermodynamic inference.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section10",
+      "claim": "Integer sheet period forces all trace moments n<L^2 independenttheta; minimal positive cycle gives beta^(L^2-1), actualL2 coefficient19/81.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "Section11",
+      "claim": "Source-integrated auxiliary paths and explicit congestion give C_actual>=C_aux/rho; no uniform congestion supplied; restrictedcube zero is scoped.",
+      "disposition": "accepted"
+    },
+    {
+      "scope": "N1\u2013N8/status",
+      "claim": "Six attempted routes, dependent obstruction labels collapsed, no broad no-go/native photon/physical Maxwell/axiom forcing; source context credited without importing a phase.",
+      "disposition": "accepted with bounded claims"
+    }
+  ],
+  "original_path_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "dfae25d9054dbef3a12cd6226968a336ea099f84f8863ac3af207b4283b44e98",
+      "original_git_blob": "0baf5e3bc086d1cca829cc476e380deba725a36a",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "dfae25d9054dbef3a12cd6226968a336ea099f84f8863ac3af207b4283b44e98"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/HANDOFF.md",
+      "original_sha256": "ac56fda99c7a9cf3c468baf015884509deb29565f87b9aa48c25e2ac65993a82",
+      "original_git_blob": "be6da9d0ac44ee6e89927533117197fd18d09c9e",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-HANDOFF.md",
+      "final_sha256": "ac56fda99c7a9cf3c468baf015884509deb29565f87b9aa48c25e2ac65993a82"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/MECHANICAL_CHECKS.json",
+      "original_sha256": "97dbee3728603a4f8d596da57a2d01a082a92568997a33bbbc3a21c0cf440824",
+      "original_git_blob": "53ace444130d270d49cb3e8cc55f9f138626a01a",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MECHANICAL_CHECKS.json",
+      "final_sha256": "97dbee3728603a4f8d596da57a2d01a082a92568997a33bbbc3a21c0cf440824"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/MUTATION_RESULTS.json",
+      "original_sha256": "19a5e7c085c6682ab138a1c45cc3eb9973df22f660e8aa90453a1045beee2506",
+      "original_git_blob": "5f45171fcbd9c2105c1ded3d015abbbe0d43997e",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MUTATION_RESULTS.json",
+      "final_sha256": "19a5e7c085c6682ab138a1c45cc3eb9973df22f660e8aa90453a1045beee2506"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/PRIMARY_RESULT.json",
+      "original_sha256": "7850102212d2932cc6f823c9ce6c5ba2a51ea6afcdfbb6a1d84970cf0c60cfe5",
+      "original_git_blob": "73dcc82d72775b19ad480091d52bc48afc9a2173",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/PRIMARY_RESULT.json",
+      "final_sha256": "7850102212d2932cc6f823c9ce6c5ba2a51ea6afcdfbb6a1d84970cf0c60cfe5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/READING_LEDGER.json",
+      "original_sha256": "0cb16da812aa75b77a639ad8d983d703ab8a5b8f0e38c40ba1b7139f2112ca19",
+      "original_git_blob": "14e746db808ac57a823057efb95e45258d534c47",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/READING_LEDGER.json",
+      "final_sha256": "0cb16da812aa75b77a639ad8d983d703ab8a5b8f0e38c40ba1b7139f2112ca19"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/REVIEW_HISTORY.md",
+      "original_sha256": "bd4a2e695f695b2123d5675debbd13e6890b9bc735e71f77167e3b40a3deb131",
+      "original_git_blob": "5c646d0de0299d4cb202d22066dca6a473e5c236",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-REVIEW_HISTORY.md",
+      "final_sha256": "bd4a2e695f695b2123d5675debbd13e6890b9bc735e71f77167e3b40a3deb131"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/TRACE_GATE.md",
+      "original_sha256": "638b254558f6f901a62a96c15c725bddbae9751c08a9e09b723f63b6b6ffd82f",
+      "original_git_blob": "078819794818194af586e15381b20c18d73bc4ef",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-TRACE_GATE.md",
+      "final_sha256": "638b254558f6f901a62a96c15c725bddbae9751c08a9e09b723f63b6b6ffd82f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Doob_jump_rate.py.gz",
+      "original_sha256": "612d89350132892bfea28cd94cbac8d659a5b1a46dbf9b949e3177f052430f20",
+      "original_git_blob": "e2b981cce6a0ea7bfacc8a677168ea3d2de6015f",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.py.gz",
+      "final_sha256": "612d89350132892bfea28cd94cbac8d659a5b1a46dbf9b949e3177f052430f20"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Doob_jump_rate.stderr.gz",
+      "original_sha256": "8a2a3f1217a1058a881d6b29a4e07d7db32d747e03de2723fec95b1537903266",
+      "original_git_blob": "288e97fd7d11b60634ae999631948f49bccdce5a",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stderr.gz",
+      "final_sha256": "8a2a3f1217a1058a881d6b29a4e07d7db32d747e03de2723fec95b1537903266"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Doob_jump_rate.stdout.gz",
+      "original_sha256": "446e178eeb3f6db6e4e60be2c72ff18dc6d2a14118e55eaf5d0888f7e7354c15",
+      "original_git_blob": "18d21424505f3336c65e354111adfb02063ecd86",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stdout.gz",
+      "final_sha256": "446e178eeb3f6db6e4e60be2c72ff18dc6d2a14118e55eaf5d0888f7e7354c15"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Perron_edge_weight.py.gz",
+      "original_sha256": "d8569d13cf9be24d89e3230365740b645648093b76c9a0892c39b1ad3cd4e4a6",
+      "original_git_blob": "73961753672d9c8ace0d431015b9be44e4914588",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.py.gz",
+      "final_sha256": "d8569d13cf9be24d89e3230365740b645648093b76c9a0892c39b1ad3cd4e4a6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Perron_edge_weight.stderr.gz",
+      "original_sha256": "dcf483fa24d1c7ef7f7adf54f0e0671a421ee4fd271a6177ab801f9fb1132fef",
+      "original_git_blob": "b22595517b4783bd147970f488edf7ba52b89af3",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stderr.gz",
+      "final_sha256": "dcf483fa24d1c7ef7f7adf54f0e0671a421ee4fd271a6177ab801f9fb1132fef"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Perron_edge_weight.stdout.gz",
+      "original_sha256": "25c1845d05b47af8f63140cc42a3cfc06de0c4fffc375d273e5d6352b8cc44cd",
+      "original_git_blob": "ebb2d705b631436fe75ebc843e705b40038c064e",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stdout.gz",
+      "final_sha256": "25c1845d05b47af8f63140cc42a3cfc06de0c4fffc375d273e5d6352b8cc44cd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/cartesian_epsilon.py.gz",
+      "original_sha256": "c0927bd51dbb0e5ff3c42b1f1bf40ce1312115437a1616895ca5376b6201ef35",
+      "original_git_blob": "9667c6d9ade4e5abde56796a6a908bdcf0014f1e",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.py.gz",
+      "final_sha256": "c0927bd51dbb0e5ff3c42b1f1bf40ce1312115437a1616895ca5376b6201ef35"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/cartesian_epsilon.stderr.gz",
+      "original_sha256": "988e4bd84c28591a79ad10bd3cbed5d50e35eb197c99066311b9ee03283d22aa",
+      "original_git_blob": "f5862389bc0c38c300850bc87d50563d4132c68c",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stderr.gz",
+      "final_sha256": "988e4bd84c28591a79ad10bd3cbed5d50e35eb197c99066311b9ee03283d22aa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/cartesian_epsilon.stdout.gz",
+      "original_sha256": "edd179403f146a61c4c36c2f09cf4d930152df12d3e5ef41c34ffd5854be3825",
+      "original_git_blob": "fd2cb2ebf35170192f709d705fe9fabeca14f776",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stdout.gz",
+      "final_sha256": "edd179403f146a61c4c36c2f09cf4d930152df12d3e5ef41c34ffd5854be3825"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/comparison_congestion.py.gz",
+      "original_sha256": "1a9d38951c34643848cc5541700fbc1158169664e3ea2220cf093a8983231339",
+      "original_git_blob": "2fa6ed54badd2e6cb62ebb123a3471cacc0df4cc",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.py.gz",
+      "final_sha256": "1a9d38951c34643848cc5541700fbc1158169664e3ea2220cf093a8983231339"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/comparison_congestion.stderr.gz",
+      "original_sha256": "ece8cacfa3bca1f23f028bfd2d1c64c8799cf3030f8e8fb8c15ff02716a48bc6",
+      "original_git_blob": "48c5f7cdd1be423a440ac175332e88485a0b7b1c",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stderr.gz",
+      "final_sha256": "ece8cacfa3bca1f23f028bfd2d1c64c8799cf3030f8e8fb8c15ff02716a48bc6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/comparison_congestion.stdout.gz",
+      "original_sha256": "0ae125fccb9f5f9c65a9be5f816ee722e39235558a8240b96f6fe34a5e20469d",
+      "original_git_blob": "eb66256d016104965412bd32b2f162241e1a38fa",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stdout.gz",
+      "final_sha256": "0ae125fccb9f5f9c65a9be5f816ee722e39235558a8240b96f6fe34a5e20469d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/current_bias_sign.py.gz",
+      "original_sha256": "027fd5aba48bd7daec7cf048843570555453434ab7d7df1d46335d7b8373fe84",
+      "original_git_blob": "7a0e1ebb4e784e7fe2553ebc15123ff6e7933a98",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.py.gz",
+      "final_sha256": "027fd5aba48bd7daec7cf048843570555453434ab7d7df1d46335d7b8373fe84"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/current_bias_sign.stderr.gz",
+      "original_sha256": "260d914078b4e0facc5651765db7ff4744b9a57fe4d00214eca1ba54f3fc6bb1",
+      "original_git_blob": "d7075d5ca63e06f779dcbbd23481b1284edf640d",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stderr.gz",
+      "final_sha256": "260d914078b4e0facc5651765db7ff4744b9a57fe4d00214eca1ba54f3fc6bb1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/current_bias_sign.stdout.gz",
+      "original_sha256": "23e834004f30ebd4afd07eecd137ff39863a26cbe24c87c69f7cda229abdd220",
+      "original_git_blob": "1f3c08745225c34af83c6c4a9488f70c3436f073",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stdout.gz",
+      "final_sha256": "23e834004f30ebd4afd07eecd137ff39863a26cbe24c87c69f7cda229abdd220"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/exact_Krylov_relation.py.gz",
+      "original_sha256": "42467d9bcb6d459744ba3cd22e433e012655b0025d37ba04fed2d33b3dbab619",
+      "original_git_blob": "37573257f228a7c561f9ede02ea41379baa06c4d",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.py.gz",
+      "final_sha256": "42467d9bcb6d459744ba3cd22e433e012655b0025d37ba04fed2d33b3dbab619"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/exact_Krylov_relation.stderr.gz",
+      "original_sha256": "1014791030cde39bb17275d593fe105bede6fc0149aa2489f5fa35d99df24800",
+      "original_git_blob": "4debc9915a93e33f0349d570095479e0fdc41d1b",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stderr.gz",
+      "final_sha256": "1014791030cde39bb17275d593fe105bede6fc0149aa2489f5fa35d99df24800"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/exact_Krylov_relation.stdout.gz",
+      "original_sha256": "211efb0a7cf73e0b42ba3f0a6a9c70f81b833e2c2f0c5775b88e2700721f5a92",
+      "original_git_blob": "bbefd0c50b90aa98d4578df0569eb96a5da44600",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stdout.gz",
+      "final_sha256": "211efb0a7cf73e0b42ba3f0a6a9c70f81b833e2c2f0c5775b88e2700721f5a92"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_field_dependence.py.gz",
+      "original_sha256": "87643a30970efbc2e609e707aa45298904aa3dada175343dfce0b5e402bebbab",
+      "original_git_blob": "57e6631928748f14ee965a0c8917e8cd862d40ee",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.py.gz",
+      "final_sha256": "87643a30970efbc2e609e707aa45298904aa3dada175343dfce0b5e402bebbab"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_field_dependence.stderr.gz",
+      "original_sha256": "46220dd6acd7a7551631affb241fb9e7736051387c45eb6c075c585acb193b10",
+      "original_git_blob": "509d5348efcc71820cc68d26be870c2d3e29f241",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stderr.gz",
+      "final_sha256": "46220dd6acd7a7551631affb241fb9e7736051387c45eb6c075c585acb193b10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_field_dependence.stdout.gz",
+      "original_sha256": "20390634a9b027d71fad9d8f1077623ca19d786cfa063dd7f664b4b7d7282157",
+      "original_git_blob": "c354f7f981ff23acd3081c223f4cbb5cb12e3d3a",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stdout.gz",
+      "final_sha256": "20390634a9b027d71fad9d8f1077623ca19d786cfa063dd7f664b4b7d7282157"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_sector_multiplicity.py.gz",
+      "original_sha256": "f9be085c5973afe4317c9ca09bc89fae2fe60a99e3ba47d549c0bf3576930b1a",
+      "original_git_blob": "4448e20306235dccd3307ae28d0251bf294ce7ab",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.py.gz",
+      "final_sha256": "f9be085c5973afe4317c9ca09bc89fae2fe60a99e3ba47d549c0bf3576930b1a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_sector_multiplicity.stderr.gz",
+      "original_sha256": "5ad32daafc8c72f05d3ecd14872a6038c75c428097e31328d1835238d636527e",
+      "original_git_blob": "0bdc750740e10336b15ae07cc87138db084a2bdd",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stderr.gz",
+      "final_sha256": "5ad32daafc8c72f05d3ecd14872a6038c75c428097e31328d1835238d636527e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_sector_multiplicity.stdout.gz",
+      "original_sha256": "623226f5ab94bb65ec7ede391b01cf30a243b73261d52f1950e54d653811365a",
+      "original_git_blob": "3a0b9f1e4d9f0db459083453f24eb0bc0ec9834b",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stdout.gz",
+      "final_sha256": "623226f5ab94bb65ec7ede391b01cf30a243b73261d52f1950e54d653811365a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/membrane_height_order.py.gz",
+      "original_sha256": "6c30e19cd0d6793552148edb0384d5d79aea41e6b6918ae975aa7835730e5d9f",
+      "original_git_blob": "54f5d72bd77b7cb2b1029bc4cc4043afdca73999",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.py.gz",
+      "final_sha256": "6c30e19cd0d6793552148edb0384d5d79aea41e6b6918ae975aa7835730e5d9f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/membrane_height_order.stderr.gz",
+      "original_sha256": "a4ee3f79dda0d1fa73c699bc2c665571196404f767a8ced384cb0c607e1be3f8",
+      "original_git_blob": "dfa3d3b1a4c1ceeeb765cab6e4f1f350ff86709a",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stderr.gz",
+      "final_sha256": "a4ee3f79dda0d1fa73c699bc2c665571196404f767a8ced384cb0c607e1be3f8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/membrane_height_order.stdout.gz",
+      "original_sha256": "8c0fbe871689778e7cbc8d608794233b28daf8291e3081fa481a9da443a32291",
+      "original_git_blob": "2dff51cc2c6a2237e1fcb19f23fdb6142f713a3b",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stdout.gz",
+      "final_sha256": "8c0fbe871689778e7cbc8d608794233b28daf8291e3081fa481a9da443a32291"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/relaxation_factor.py.gz",
+      "original_sha256": "011e84287ef9323a51c9cfc6bf5777a6f3ba1d1cdb5b93d9d9f9d3e3cf2c7796",
+      "original_git_blob": "6c34f4fc6cdce776d12fe7bb1d86c16485a8da0a",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.py.gz",
+      "final_sha256": "011e84287ef9323a51c9cfc6bf5777a6f3ba1d1cdb5b93d9d9f9d3e3cf2c7796"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/relaxation_factor.stderr.gz",
+      "original_sha256": "4c32528c05228f49f6c52efe8b27b0cae62e533a766388b08f2739d2a22e2c8d",
+      "original_git_blob": "4940c37808ff72265d48ab7cb2e79ccc72ae923f",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stderr.gz",
+      "final_sha256": "4c32528c05228f49f6c52efe8b27b0cae62e533a766388b08f2739d2a22e2c8d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/relaxation_factor.stdout.gz",
+      "original_sha256": "e6fad6b3dd23b33e648973a91e5438c3f965af22dcd4e47456d948d77888ac5b",
+      "original_git_blob": "5a1580ab7864aa5ea58a2155823d27a4bf83d23c",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stdout.gz",
+      "final_sha256": "e6fad6b3dd23b33e648973a91e5438c3f965af22dcd4e47456d948d77888ac5b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/thermal_beta_normalization.py.gz",
+      "original_sha256": "dab0f074634f4d2dc46a3d87504d3c1b007c78e849eb432b8dc07f47ee4697d5",
+      "original_git_blob": "b4ebcfd1e558030057702d202370690042f91ac2",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.py.gz",
+      "final_sha256": "dab0f074634f4d2dc46a3d87504d3c1b007c78e849eb432b8dc07f47ee4697d5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/thermal_beta_normalization.stderr.gz",
+      "original_sha256": "de2fa7c714adfca0633828b20557353519d1628b1752814bc2cfc7d193d61fa0",
+      "original_git_blob": "9ca12c91594c33970c79c86bf5075d2dfa7286e0",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stderr.gz",
+      "final_sha256": "de2fa7c714adfca0633828b20557353519d1628b1752814bc2cfc7d193d61fa0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/thermal_beta_normalization.stdout.gz",
+      "original_sha256": "ed37dafe35d44b2305a51084dd7e0edc540f70df17b06b6364ee56b375de3a1b",
+      "original_git_blob": "f708a0b1c8eba62cfaf8c8814da8dcb0e30fe620",
+      "disposition": "accepted unchanged as historical evidence",
+      "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stdout.gz",
+      "final_sha256": "ed37dafe35d44b2305a51084dd7e0edc540f70df17b06b6364ee56b375de3a1b"
+    },
+    {
+      "original_path": "docs/CUBIC_ICE_RELAXED_MAGNETIC_RESPONSE_GRAPH_FLOWS_AND_SHEET_WINDING_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_sha256": "5c203b28aed466060e002e0aea14bc0873955ae8b7f1072be79d99f663a6c5d6",
+      "original_git_blob": "f6b245beb2cf16b70a59d16f57200674eecf0baf",
+      "disposition": "accepted with historical Review link repair only",
+      "final_path": "docs/CUBIC_ICE_RELAXED_MAGNETIC_RESPONSE_GRAPH_FLOWS_AND_SHEET_WINDING_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "af38cc20f5fe345e4555d55fda4c9b78be73236c1766f6f0273148fd07f9aa93"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "6ceaaa6807596acb7c0c94a3f02d0fe988f6717bca4b0fc0b856aa68c7c14719",
+      "original_git_blob": "0eabbe3636f75a1f4c0e893db46af1e610b70051",
+      "disposition": "rejected generated original topology snapshot",
+      "reason": "Regenerate only for final integrated topology; no scientific source lost",
+      "recovery": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt",
+      "original_sha256": "6b8788084873c6312a27d7bd6a7ab9b17daf5878e698dee0c851e245d44ae55d",
+      "original_git_blob": "747dc518a210a69045e48daa1679f19ef101379b",
+      "disposition": "accepted unchanged",
+      "final_path": "logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt",
+      "final_sha256": "6b8788084873c6312a27d7bd6a7ab9b17daf5878e698dee0c851e245d44ae55d"
+    },
+    {
+      "original_path": "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+      "original_sha256": "5fd4bec4cfd417bc847e1d424ef7aa34c8b2419bbfdea15aea5cc0890aef7155",
+      "original_git_blob": "1b4410fe14a8b80f5028de2944d57e46e513127c",
+      "disposition": "accepted unchanged",
+      "final_path": "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+      "final_sha256": "5fd4bec4cfd417bc847e1d424ef7aa34c8b2419bbfdea15aea5cc0890aef7155"
+    }
+  ],
+  "final_sources": [
+    {
+      "path": "docs/CUBIC_ICE_RELAXED_MAGNETIC_RESPONSE_GRAPH_FLOWS_AND_SHEET_WINDING_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "af38cc20f5fe345e4555d55fda4c9b78be73236c1766f6f0273148fd07f9aa93",
+      "git_blob": "1595f213ec2af0112faab7c41dfc89ebef8bf90c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MECHANICAL_CHECKS.json",
+      "sha256": "97dbee3728603a4f8d596da57a2d01a082a92568997a33bbbc3a21c0cf440824",
+      "git_blob": "53ace444130d270d49cb3e8cc55f9f138626a01a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MUTATION_RESULTS.json",
+      "sha256": "19a5e7c085c6682ab138a1c45cc3eb9973df22f660e8aa90453a1045beee2506",
+      "git_blob": "5f45171fcbd9c2105c1ded3d015abbbe0d43997e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/PRIMARY_RESULT.json",
+      "sha256": "7850102212d2932cc6f823c9ce6c5ba2a51ea6afcdfbb6a1d84970cf0c60cfe5",
+      "git_blob": "73dcc82d72775b19ad480091d52bc48afc9a2173"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/READING_LEDGER.json",
+      "sha256": "0cb16da812aa75b77a639ad8d983d703ab8a5b8f0e38c40ba1b7139f2112ca19",
+      "git_blob": "14e746db808ac57a823057efb95e45258d534c47"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/README.md",
+      "sha256": "e7b5d446c1d842c8c75c287c48905f16d55423a306dbb52121ff31836162b183",
+      "git_blob": "67a43d2f6b57f3b1e5bef326fed1002ecda72b22"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.py.gz",
+      "sha256": "612d89350132892bfea28cd94cbac8d659a5b1a46dbf9b949e3177f052430f20",
+      "git_blob": "e2b981cce6a0ea7bfacc8a677168ea3d2de6015f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stderr.gz",
+      "sha256": "8a2a3f1217a1058a881d6b29a4e07d7db32d747e03de2723fec95b1537903266",
+      "git_blob": "288e97fd7d11b60634ae999631948f49bccdce5a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stdout.gz",
+      "sha256": "446e178eeb3f6db6e4e60be2c72ff18dc6d2a14118e55eaf5d0888f7e7354c15",
+      "git_blob": "18d21424505f3336c65e354111adfb02063ecd86"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.py.gz",
+      "sha256": "d8569d13cf9be24d89e3230365740b645648093b76c9a0892c39b1ad3cd4e4a6",
+      "git_blob": "73961753672d9c8ace0d431015b9be44e4914588"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stderr.gz",
+      "sha256": "dcf483fa24d1c7ef7f7adf54f0e0671a421ee4fd271a6177ab801f9fb1132fef",
+      "git_blob": "b22595517b4783bd147970f488edf7ba52b89af3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stdout.gz",
+      "sha256": "25c1845d05b47af8f63140cc42a3cfc06de0c4fffc375d273e5d6352b8cc44cd",
+      "git_blob": "ebb2d705b631436fe75ebc843e705b40038c064e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.py.gz",
+      "sha256": "c0927bd51dbb0e5ff3c42b1f1bf40ce1312115437a1616895ca5376b6201ef35",
+      "git_blob": "9667c6d9ade4e5abde56796a6a908bdcf0014f1e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stderr.gz",
+      "sha256": "988e4bd84c28591a79ad10bd3cbed5d50e35eb197c99066311b9ee03283d22aa",
+      "git_blob": "f5862389bc0c38c300850bc87d50563d4132c68c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stdout.gz",
+      "sha256": "edd179403f146a61c4c36c2f09cf4d930152df12d3e5ef41c34ffd5854be3825",
+      "git_blob": "fd2cb2ebf35170192f709d705fe9fabeca14f776"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.py.gz",
+      "sha256": "1a9d38951c34643848cc5541700fbc1158169664e3ea2220cf093a8983231339",
+      "git_blob": "2fa6ed54badd2e6cb62ebb123a3471cacc0df4cc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stderr.gz",
+      "sha256": "ece8cacfa3bca1f23f028bfd2d1c64c8799cf3030f8e8fb8c15ff02716a48bc6",
+      "git_blob": "48c5f7cdd1be423a440ac175332e88485a0b7b1c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stdout.gz",
+      "sha256": "0ae125fccb9f5f9c65a9be5f816ee722e39235558a8240b96f6fe34a5e20469d",
+      "git_blob": "eb66256d016104965412bd32b2f162241e1a38fa"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.py.gz",
+      "sha256": "027fd5aba48bd7daec7cf048843570555453434ab7d7df1d46335d7b8373fe84",
+      "git_blob": "7a0e1ebb4e784e7fe2553ebc15123ff6e7933a98"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stderr.gz",
+      "sha256": "260d914078b4e0facc5651765db7ff4744b9a57fe4d00214eca1ba54f3fc6bb1",
+      "git_blob": "d7075d5ca63e06f779dcbbd23481b1284edf640d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stdout.gz",
+      "sha256": "23e834004f30ebd4afd07eecd137ff39863a26cbe24c87c69f7cda229abdd220",
+      "git_blob": "1f3c08745225c34af83c6c4a9488f70c3436f073"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.py.gz",
+      "sha256": "42467d9bcb6d459744ba3cd22e433e012655b0025d37ba04fed2d33b3dbab619",
+      "git_blob": "37573257f228a7c561f9ede02ea41379baa06c4d"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stderr.gz",
+      "sha256": "1014791030cde39bb17275d593fe105bede6fc0149aa2489f5fa35d99df24800",
+      "git_blob": "4debc9915a93e33f0349d570095479e0fdc41d1b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stdout.gz",
+      "sha256": "211efb0a7cf73e0b42ba3f0a6a9c70f81b833e2c2f0c5775b88e2700721f5a92",
+      "git_blob": "bbefd0c50b90aa98d4578df0569eb96a5da44600"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.py.gz",
+      "sha256": "87643a30970efbc2e609e707aa45298904aa3dada175343dfce0b5e402bebbab",
+      "git_blob": "57e6631928748f14ee965a0c8917e8cd862d40ee"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stderr.gz",
+      "sha256": "46220dd6acd7a7551631affb241fb9e7736051387c45eb6c075c585acb193b10",
+      "git_blob": "509d5348efcc71820cc68d26be870c2d3e29f241"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stdout.gz",
+      "sha256": "20390634a9b027d71fad9d8f1077623ca19d786cfa063dd7f664b4b7d7282157",
+      "git_blob": "c354f7f981ff23acd3081c223f4cbb5cb12e3d3a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.py.gz",
+      "sha256": "f9be085c5973afe4317c9ca09bc89fae2fe60a99e3ba47d549c0bf3576930b1a",
+      "git_blob": "4448e20306235dccd3307ae28d0251bf294ce7ab"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stderr.gz",
+      "sha256": "5ad32daafc8c72f05d3ecd14872a6038c75c428097e31328d1835238d636527e",
+      "git_blob": "0bdc750740e10336b15ae07cc87138db084a2bdd"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stdout.gz",
+      "sha256": "623226f5ab94bb65ec7ede391b01cf30a243b73261d52f1950e54d653811365a",
+      "git_blob": "3a0b9f1e4d9f0db459083453f24eb0bc0ec9834b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.py.gz",
+      "sha256": "6c30e19cd0d6793552148edb0384d5d79aea41e6b6918ae975aa7835730e5d9f",
+      "git_blob": "54f5d72bd77b7cb2b1029bc4cc4043afdca73999"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stderr.gz",
+      "sha256": "a4ee3f79dda0d1fa73c699bc2c665571196404f767a8ced384cb0c607e1be3f8",
+      "git_blob": "dfa3d3b1a4c1ceeeb765cab6e4f1f350ff86709a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stdout.gz",
+      "sha256": "8c0fbe871689778e7cbc8d608794233b28daf8291e3081fa481a9da443a32291",
+      "git_blob": "2dff51cc2c6a2237e1fcb19f23fdb6142f713a3b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.py.gz",
+      "sha256": "011e84287ef9323a51c9cfc6bf5777a6f3ba1d1cdb5b93d9d9f9d3e3cf2c7796",
+      "git_blob": "6c34f4fc6cdce776d12fe7bb1d86c16485a8da0a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stderr.gz",
+      "sha256": "4c32528c05228f49f6c52efe8b27b0cae62e533a766388b08f2739d2a22e2c8d",
+      "git_blob": "4940c37808ff72265d48ab7cb2e79ccc72ae923f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stdout.gz",
+      "sha256": "e6fad6b3dd23b33e648973a91e5438c3f965af22dcd4e47456d948d77888ac5b",
+      "git_blob": "5a1580ab7864aa5ea58a2155823d27a4bf83d23c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.py.gz",
+      "sha256": "dab0f074634f4d2dc46a3d87504d3c1b007c78e849eb432b8dc07f47ee4697d5",
+      "git_blob": "b4ebcfd1e558030057702d202370690042f91ac2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stderr.gz",
+      "sha256": "de2fa7c714adfca0633828b20557353519d1628b1752814bc2cfc7d193d61fa0",
+      "git_blob": "9ca12c91594c33970c79c86bf5075d2dfa7286e0"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stdout.gz",
+      "sha256": "ed37dafe35d44b2305a51084dd7e0edc540f70df17b06b6364ee56b375de3a1b",
+      "git_blob": "f708a0b1c8eba62cfaf8c8814da8dcb0e30fe620"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "dfae25d9054dbef3a12cd6226968a336ea099f84f8863ac3af207b4283b44e98",
+      "git_blob": "0baf5e3bc086d1cca829cc476e380deba725a36a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-HANDOFF.md",
+      "sha256": "ac56fda99c7a9cf3c468baf015884509deb29565f87b9aa48c25e2ac65993a82",
+      "git_blob": "be6da9d0ac44ee6e89927533117197fd18d09c9e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-REVIEW_HISTORY.md",
+      "sha256": "bd4a2e695f695b2123d5675debbd13e6890b9bc735e71f77167e3b40a3deb131",
+      "git_blob": "5c646d0de0299d4cb202d22066dca6a473e5c236"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-TRACE_GATE.md",
+      "sha256": "638b254558f6f901a62a96c15c725bddbae9751c08a9e09b723f63b6b6ffd82f",
+      "git_blob": "078819794818194af586e15381b20c18d73bc4ef"
+    },
+    {
+      "path": "logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt",
+      "sha256": "6b8788084873c6312a27d7bd6a7ab9b17daf5878e698dee0c851e245d44ae55d",
+      "git_blob": "747dc518a210a69045e48daa1679f19ef101379b"
+    },
+    {
+      "path": "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+      "sha256": "5fd4bec4cfd417bc847e1d424ef7aa34c8b2419bbfdea15aea5cc0890aef7155",
+      "git_blob": "1b4410fe14a8b80f5028de2944d57e46e513127c"
+    }
+  ],
+  "input_identities": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "scope": "Previously fully read unchanged authority; exact bytes match5deabeb698"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "scope": "Previously fully read unchanged authority; exact bytes match5deabeb698"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "scope": "Previously fully read unchanged authority; exact bytes match5deabeb698"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "scope": "Previously fully read unchanged authority; exact bytes match5deabeb698"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "scope": "Previously fully read unchanged authority; exact bytes match5deabeb698"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "scope": "Previously fully read unchanged authority; exact bytes match5deabeb698"
+    },
+    {
+      "path": "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md",
+      "sha256": "80ab2512f0f7706be19b87a2db8da34aa287be103715fdce9130072d6c4ce360",
+      "matches_original_context": true
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_RELAXED_MAGNETIC_TWIST_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "abcbed4c6bec81e7adef327f2443fec88540f0bf9069e1ce6383a46a4f22600b",
+      "matches_original_context": true
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_CHARGE_COULOMB_FLUX_STIFFNESS_JOIN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "9e38d875025c714d466b7914c16c783107df68a87960d74318d8fe0990aced46",
+      "matches_original_context": true
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_TRANSVERSE_LINEAR_SPECTRAL_CROSSOVER_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "16433c4b9b823cfbf453687be3bcfffc880542c72bb17180a8bd4c66f64352f8",
+      "matches_original_context": true
+    },
+    {
+      "path": "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04",
+      "matches_original_context": true
+    },
+    {
+      "path": "scripts/spin_half_cartesian_plaquette_source_2026_09_07.py",
+      "sha256": "180945dc3994d84c9051f700e0634212e4856a5bec0be8b5192e93463686b4cd",
+      "scope": "Context primary geometry/source and full finite source-response construction inspected; no execution import"
+    }
+  ],
+  "runner_inputs": [],
+  "scientific_repository_dependencies": [],
+  "repository_dependency_scope": "All model definitions, source law, finite identities and proof premises are restated and independently checked. Current Cartesian note/primary and historical detuning/RK notes are source comparison/context only; no unreconstructed result is consumed. Sole extracted repo citation is historical review archive.",
+  "external_methods": "Finite Perron-Frobenius, analytic simple-eigenvalue perturbation, Duhamel expansion, Cauchy-Schwarz and integer cellular homology are explicit ordinary mathematical methods; not axiom grants. Henley/Castelnovo/Pollock-Ceperley prior principles are reconstructed; HFB adjacent phase and1408.5477 large-deviation results are not imported. Primary bibliographic abstracts verified; no full literature review claimed.",
+  "metadata": {
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "citations": [
+      "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-REVIEW_HISTORY.md"
+    ],
+    "cache_status": "fresh"
+  },
+  "execution": {
+    "exit_code": 0,
+    "elapsed_sec": 4.4616223339689896,
+    "timeout_sec": 90,
+    "command": [
+      "python3",
+      "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py"
+    ],
+    "original_stdout_comparison": {
+      "nonfloat_text_exact": true,
+      "max_float_difference": 8.201772594418344e-15
+    }
+  },
+  "independent_math": {
+    "parallel_edge_curvature": "j*k*(a - b)**2/(j + k)",
+    "triangle_curvature": "2*h**2*j/9",
+    "two_state_gradient_variance": "a**2*(1/2 - exp(-2*j*t)/2)",
+    "sheet_subset_checks": [
+      {
+        "L": 2,
+        "subsets": 16,
+        "zero_boundary_subset_sizes": [
+          0,
+          4
+        ]
+      },
+      {
+        "L": 4,
+        "subsets": 65536,
+        "zero_boundary_subset_sizes": [
+          0,
+          16
+        ]
+      }
+    ],
+    "height_sweep_all_parity_cases": true,
+    "status": "PASS"
+  },
+  "reviewer_control_failure": "First SymPy comparison failed to normalize sqrt((j+k)^2); factored positive-symbol expression, preserved first-attempt source/explanation. No candidate failure.",
+  "historical_mutations": "All11exact altered sources and stderr AssertionError verified; historical executions not rerun or restamped.",
+  "archive_map_sha256": "d881a32b157ff989798dcf117d18b818ce5a04eab12cadd6951be2511e696d73",
+  "remaining_limits": [
+    "Finite and supplied model only; uniform phase/transport, physical Maxwell response and native-law join remain open.",
+    "No per-unit combined pipeline or audit; root must gate exact integrated candidate."
+  ],
+  "mechanical_checks": "Staged=working all45; original41archive exactbytes; onlynoteReviewlink changed; runner/cache originalbytes; primary output same exact identities/counts; dense spectral decimals differ only below1e-13; source Type actual extractor; independent scratch checks pass.; all changed Markdown basenames globally unique except README",
+  "disposition_map_sha256": "5414944289aba81b368d4cfd0d82bdb2d8da1f18ef5167fea947b5ac6338d657",
+  "evidence_hashes": {
+    "check8117/independent_math-first-attempt.txt": "44555eff2eb3a39dfb5c3fe902f35c45ecc4bcea2a3d91e887c650c1b7f63bf9",
+    "check8117/independent_math-first-attempt.py": "60315df269e988dcd47f832e4791376286e0c9e33f4d4ea9b8378507cfe5c47f",
+    "check8117/original-source.patch": "5e04754686ecc652213e8393b7349558d439a0410cf40f141cb900fdf859d3df",
+    "check8117/mutation-inspection.json": "578a4e50548e68b095a2dcfd32384eadea87f5f6fba394e7c47642eacda374ac",
+    "check8117/primary-receipt.json": "862f14b7cac441bc52baa06932281f8c99046e7252ba96cabb772e844e929b11",
+    "check8117/primary.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check8117/independent_math.py": "36969180cc0925349704f1a5d4bccd0aa48d02419950db2492fbe77a9788d23a",
+    "check8117/input-identities.json": "358b35ed5b78a4b76e3213419c5d30a2ed1123c406041b614369aef43b7eab47",
+    "check8117/primary.stdout": "975647815361844947397887c7884033383b12684c7de73bf58adbe269a786e9",
+    "check8117/independent_math.json": "70152c893bca78ad25b36648cabf9dda45cd4c5e0dd9bdf8397d9448ddb7f295"
+  }
+}

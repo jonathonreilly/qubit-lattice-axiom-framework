@@ -1,0 +1,317 @@
+[detached HEAD 4539fdfa50] Preserve independently reviewed local-reference encoding theorem and evidence
+ Date: Tue Sep 15 08:20:46 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 42 files changed, 1939 insertions(+)
+ create mode 100644 docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/MECHANICAL_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/CAR_occupation_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/Jordan_Wigner_intervening_parity.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/controlled_Pauli_cross_phase.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/edge_addition_endpoint_parities.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/graph_orientation_signs.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/incidence_CZ_cross_phase.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/local_loader_suffix.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/ordinary_BKSF_hopping_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/physical_complete_cell_string.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/mutation_evidence/target_cell_spectator.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8115-local-reference-evidence/pr8115-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.txt
+ create mode 100644 scripts/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.py
+[detached HEAD eaed1f1aff] Preserve reviewed conditional soft-spin2 results and honest evidence
+ Date: Tue Sep 15 08:28:45 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 42 files changed, 1574 insertions(+)
+ create mode 100644 docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MECHANICAL_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/actual_Wilson_mass_term.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/aether_kinetic_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/collision_gradient_difference.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/improved_stencil_normalization.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/positive_band_projector.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/reaction_reciprocal_transfer.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/source_transformation_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/spin_chain_hopping_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/symmetric_soft_residue.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/mutation_evidence/tilted_shell_cross_term.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8116-soft-spin2-evidence/pr8116-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt
+ create mode 100644 scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py
+[detached HEAD ee92f194cb] Preserve reviewed cubic-ice response and canonical evidence footer
+ Date: Tue Sep 15 08:33:37 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 45 files changed, 1429 insertions(+)
+ create mode 100644 docs/CUBIC_ICE_RELAXED_MAGNETIC_RESPONSE_GRAPH_FLOWS_AND_SHEET_WINDING_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MECHANICAL_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt
+ create mode 100644 scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py
+[detached HEAD fa1d7ce15c] Preserve reviewed finite-clock phase bounds and explicit proof identity
+ Date: Tue Sep 15 08:31:47 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 58 files changed, 1261 insertions(+)
+ create mode 100644 docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/MECHANICAL_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/VOCABULARY.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/alias_corrected.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/alias_initial_failure.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/clock_source_expanded.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/clock_source_initial.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/initial_primary_cache.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/open_pr_snapshot.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.txt
+ create mode 100644 scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py
+[detached HEAD 54e1aec70d] Preserve reviewed native halfline clock limits and complete evidence
+ Date: Tue Sep 15 08:36:29 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 54 files changed, 974 insertions(+)
+ create mode 100644 docs/NATIVE_HALFLINE_CLOCK_COMPLETION_FINITE_HORIZONS_AND_PERMANENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/MECHANICAL_CHECKS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/MUTATION_RESULTS.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/PRIMARY_RESULT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/READING_LEDGER.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/VOCABULARY_REPORT.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/citation_build.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/initial_science_run.txt
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/absorbing_clock_rate.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/absorbing_clock_rate.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/absorbing_clock_rate.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/asymptotic_parity_phase.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/asymptotic_parity_phase.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/asymptotic_parity_phase.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/coherent_instrument_confusion.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/coherent_instrument_confusion.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/coherent_instrument_confusion.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/early_completed_prefix.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/early_completed_prefix.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/early_completed_prefix.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/finite_contour_exponent.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/finite_contour_exponent.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/finite_contour_exponent.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/full_bond_unused_double_sector.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/full_bond_unused_double_sector.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/full_bond_unused_double_sector.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/halfline_propagation_orientation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/halfline_propagation_orientation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/halfline_propagation_orientation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/halfline_reflection_sign.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/halfline_reflection_sign.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/halfline_reflection_sign.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/joint_hopping_adjoint.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/joint_hopping_adjoint.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/joint_hopping_adjoint.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_battery_spacing.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_battery_spacing.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_battery_spacing.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_final_relative_phase.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_final_relative_phase.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_final_relative_phase.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_refusal_amplitude.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_refusal_amplitude.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/native_refusal_amplitude.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/omitted_free_rotation.py.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/omitted_free_rotation.stderr.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/mutation_evidence/omitted_free_rotation.stdout.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/pr8119-CLAIM_STATUS_CERTIFICATE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/pr8119-HANDOFF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/pr8119-REVIEW_HISTORY.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8119-halfline-evidence/pr8119-TRACE_GATE.md
+ create mode 100644 logs/runner-cache/native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14.txt
+ create mode 100644 scripts/native_halfline_clock_completion_finite_horizons_and_permanence_2026_09_14.py
+FROZEN 54e1aec70dfcf6a5165e4ab0e39fc23bacbf7f2e sources 241 inputs 273 notes 5

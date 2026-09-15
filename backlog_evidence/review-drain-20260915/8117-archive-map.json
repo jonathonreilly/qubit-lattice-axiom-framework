@@ -1,0 +1,207 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "dfae25d9054dbef3a12cd6226968a336ea099f84f8863ac3af207b4283b44e98"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-HANDOFF.md",
+    "sha256": "ac56fda99c7a9cf3c468baf015884509deb29565f87b9aa48c25e2ac65993a82"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/MECHANICAL_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MECHANICAL_CHECKS.json",
+    "sha256": "97dbee3728603a4f8d596da57a2d01a082a92568997a33bbbc3a21c0cf440824"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/MUTATION_RESULTS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/MUTATION_RESULTS.json",
+    "sha256": "19a5e7c085c6682ab138a1c45cc3eb9973df22f660e8aa90453a1045beee2506"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/PRIMARY_RESULT.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/PRIMARY_RESULT.json",
+    "sha256": "7850102212d2932cc6f823c9ce6c5ba2a51ea6afcdfbb6a1d84970cf0c60cfe5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/READING_LEDGER.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/READING_LEDGER.json",
+    "sha256": "0cb16da812aa75b77a639ad8d983d703ab8a5b8f0e38c40ba1b7139f2112ca19"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-REVIEW_HISTORY.md",
+    "sha256": "bd4a2e695f695b2123d5675debbd13e6890b9bc735e71f77167e3b40a3deb131"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/pr8117-TRACE_GATE.md",
+    "sha256": "638b254558f6f901a62a96c15c725bddbae9751c08a9e09b723f63b6b6ffd82f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Doob_jump_rate.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.py.gz",
+    "sha256": "612d89350132892bfea28cd94cbac8d659a5b1a46dbf9b949e3177f052430f20"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Doob_jump_rate.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stderr.gz",
+    "sha256": "8a2a3f1217a1058a881d6b29a4e07d7db32d747e03de2723fec95b1537903266"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Doob_jump_rate.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Doob_jump_rate.stdout.gz",
+    "sha256": "446e178eeb3f6db6e4e60be2c72ff18dc6d2a14118e55eaf5d0888f7e7354c15"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Perron_edge_weight.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.py.gz",
+    "sha256": "d8569d13cf9be24d89e3230365740b645648093b76c9a0892c39b1ad3cd4e4a6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Perron_edge_weight.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stderr.gz",
+    "sha256": "dcf483fa24d1c7ef7f7adf54f0e0671a421ee4fd271a6177ab801f9fb1132fef"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/Perron_edge_weight.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/Perron_edge_weight.stdout.gz",
+    "sha256": "25c1845d05b47af8f63140cc42a3cfc06de0c4fffc375d273e5d6352b8cc44cd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/cartesian_epsilon.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.py.gz",
+    "sha256": "c0927bd51dbb0e5ff3c42b1f1bf40ce1312115437a1616895ca5376b6201ef35"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/cartesian_epsilon.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stderr.gz",
+    "sha256": "988e4bd84c28591a79ad10bd3cbed5d50e35eb197c99066311b9ee03283d22aa"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/cartesian_epsilon.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/cartesian_epsilon.stdout.gz",
+    "sha256": "edd179403f146a61c4c36c2f09cf4d930152df12d3e5ef41c34ffd5854be3825"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/comparison_congestion.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.py.gz",
+    "sha256": "1a9d38951c34643848cc5541700fbc1158169664e3ea2220cf093a8983231339"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/comparison_congestion.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stderr.gz",
+    "sha256": "ece8cacfa3bca1f23f028bfd2d1c64c8799cf3030f8e8fb8c15ff02716a48bc6"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/comparison_congestion.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/comparison_congestion.stdout.gz",
+    "sha256": "0ae125fccb9f5f9c65a9be5f816ee722e39235558a8240b96f6fe34a5e20469d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/current_bias_sign.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.py.gz",
+    "sha256": "027fd5aba48bd7daec7cf048843570555453434ab7d7df1d46335d7b8373fe84"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/current_bias_sign.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stderr.gz",
+    "sha256": "260d914078b4e0facc5651765db7ff4744b9a57fe4d00214eca1ba54f3fc6bb1"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/current_bias_sign.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/current_bias_sign.stdout.gz",
+    "sha256": "23e834004f30ebd4afd07eecd137ff39863a26cbe24c87c69f7cda229abdd220"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/exact_Krylov_relation.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.py.gz",
+    "sha256": "42467d9bcb6d459744ba3cd22e433e012655b0025d37ba04fed2d33b3dbab619"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/exact_Krylov_relation.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stderr.gz",
+    "sha256": "1014791030cde39bb17275d593fe105bede6fc0149aa2489f5fa35d99df24800"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/exact_Krylov_relation.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/exact_Krylov_relation.stdout.gz",
+    "sha256": "211efb0a7cf73e0b42ba3f0a6a9c70f81b833e2c2f0c5775b88e2700721f5a92"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_field_dependence.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.py.gz",
+    "sha256": "87643a30970efbc2e609e707aa45298904aa3dada175343dfce0b5e402bebbab"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_field_dependence.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stderr.gz",
+    "sha256": "46220dd6acd7a7551631affb241fb9e7736051387c45eb6c075c585acb193b10"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_field_dependence.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_field_dependence.stdout.gz",
+    "sha256": "20390634a9b027d71fad9d8f1077623ca19d786cfa063dd7f664b4b7d7282157"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_sector_multiplicity.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.py.gz",
+    "sha256": "f9be085c5973afe4317c9ca09bc89fae2fe60a99e3ba47d549c0bf3576930b1a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_sector_multiplicity.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stderr.gz",
+    "sha256": "5ad32daafc8c72f05d3ecd14872a6038c75c428097e31328d1835238d636527e"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/frozen_sector_multiplicity.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/frozen_sector_multiplicity.stdout.gz",
+    "sha256": "623226f5ab94bb65ec7ede391b01cf30a243b73261d52f1950e54d653811365a"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/membrane_height_order.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.py.gz",
+    "sha256": "6c30e19cd0d6793552148edb0384d5d79aea41e6b6918ae975aa7835730e5d9f"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/membrane_height_order.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stderr.gz",
+    "sha256": "a4ee3f79dda0d1fa73c699bc2c665571196404f767a8ced384cb0c607e1be3f8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/membrane_height_order.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/membrane_height_order.stdout.gz",
+    "sha256": "8c0fbe871689778e7cbc8d608794233b28daf8291e3081fa481a9da443a32291"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/relaxation_factor.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.py.gz",
+    "sha256": "011e84287ef9323a51c9cfc6bf5777a6f3ba1d1cdb5b93d9d9f9d3e3cf2c7796"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/relaxation_factor.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stderr.gz",
+    "sha256": "4c32528c05228f49f6c52efe8b27b0cae62e533a766388b08f2739d2a22e2c8d"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/relaxation_factor.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/relaxation_factor.stdout.gz",
+    "sha256": "e6fad6b3dd23b33e648973a91e5438c3f965af22dcd4e47456d948d77888ac5b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/thermal_beta_normalization.py.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.py.gz",
+    "sha256": "dab0f074634f4d2dc46a3d87504d3c1b007c78e849eb432b8dc07f47ee4697d5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/thermal_beta_normalization.stderr.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stderr.gz",
+    "sha256": "de2fa7c714adfca0633828b20557353519d1628b1752814bc2cfc7d193d61fa0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block9/mutation_evidence/thermal_beta_normalization.stdout.gz",
+    "final_path": "docs/work_history/repo/review_feedback/pr8117-ice-winding-evidence/mutation_evidence/thermal_beta_normalization.stdout.gz",
+    "sha256": "ed37dafe35d44b2305a51084dd7e0edc540f70df17b06b6364ee56b375de3a1b"
+  }
+]

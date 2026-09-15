@@ -1,0 +1,24 @@
+{
+  "pr": 8112,
+  "original_head": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
+  "branch": "physics-loop/toe-compact-tensor-geometry-20260914",
+  "landing": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T12:33:52Z",
+    "headRefName": "physics-loop/toe-compact-tensor-geometry-20260914",
+    "headRefOid": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8112,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8112"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
+    "state": "CLOSED"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pr": 8021,
+  "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+  "branch": "codex/compact-hamiltonian-block29-20260907",
+  "landing": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "codex/full-cube-transfer-block28-20260907",
+    "closedAt": "2026-09-15T12:32:55Z",
+    "headRefName": "codex/compact-hamiltonian-block29-20260907",
+    "headRefOid": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8021,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8021"
+  },
+  "final_state_verification": {
+    "baseRefName": "codex/full-cube-transfer-block28-20260907",
+    "headRefOid": "44964a9b72bccb9ae95d5d9b277007910ee86430",
+    "state": "CLOSED"
+  }
+}

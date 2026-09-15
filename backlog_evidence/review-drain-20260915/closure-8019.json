@@ -1,0 +1,24 @@
+{
+  "pr": 8019,
+  "original_head": "d57943620edd5098df7b6410f952d569730276f5",
+  "branch": "codex/anisotropic-source-semigroup-block26-20260907",
+  "landing": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/anisotropic-source-semigroup-block26-20260907",
+    "headRefOid": "d57943620edd5098df7b6410f952d569730276f5",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8019,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8019"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "d57943620edd5098df7b6410f952d569730276f5",
+    "state": "CLOSED"
+  }
+}

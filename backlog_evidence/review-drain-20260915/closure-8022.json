@@ -1,0 +1,63 @@
+{
+  "pr": 8022,
+  "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+  "branch": "codex/compact-gap-block30-20260907",
+  "landing": "ebb89a16a3fb846ada2389c7960343d4194a8042",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/compact-gap-block30-20260907",
+        "closedAt": null,
+        "headRefName": "codex/compact-cutoff-block32-20260907",
+        "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+        "isCrossRepository": false,
+        "isDraft": true,
+        "number": 8023,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023"
+      },
+      "original_merge_base": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+      "delta_sha256": "88144ebcdfca07514e40b603be76d1b343790f7d60ebab1d7b0e2d88bc561b82",
+      "delta_file": "closure-8022-child-8023-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/compact-cutoff-block32-20260907",
+        "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+        "isCrossRepository": false,
+        "isDraft": true,
+        "number": 8023,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/compact-cutoff-block32-20260907",
+        "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+        "isCrossRepository": false,
+        "isDraft": true,
+        "number": 8023,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "codex/compact-hamiltonian-block29-20260907",
+    "closedAt": "2026-09-15T12:32:44Z",
+    "headRefName": "codex/compact-gap-block30-20260907",
+    "headRefOid": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8022,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8022"
+  },
+  "final_state_verification": {
+    "baseRefName": "codex/compact-hamiltonian-block29-20260907",
+    "headRefOid": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
+    "state": "CLOSED"
+  }
+}

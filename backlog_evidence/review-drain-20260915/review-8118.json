@@ -1,0 +1,514 @@
+{
+  "pr": 8118,
+  "final_verdict": "PASS",
+  "verdict_scope": "source review only; conditional mathematical result, no audit status or full integrated gate",
+  "original_head": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
+  "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+  "review_base": "20fcfa39f9af6c5b6966956253ba8a2aaa6430b3",
+  "final_base": "20fcfa39f9af6c5b6966956253ba8a2aaa6430b3",
+  "staged_tree": "f90daf99a12a2d6a0bdf179c29639d283bdb292f",
+  "candidate": "/private/tmp/review-drain-20260915/unit8118-author-copy",
+  "original_path_dispositions": {
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/CLAIM_STATUS_CERTIFICATE.md": {
+      "original_sha256": "1c2f0e436ddfc9b0b9c68a0faa83ce82414e047b52a2ba49d22a8a658bafe49f",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "1c2f0e436ddfc9b0b9c68a0faa83ce82414e047b52a2ba49d22a8a658bafe49f"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/HANDOFF.md": {
+      "original_sha256": "c1eea1cb74cfef90c67abbdbf06279f1a89d9bd34386255e02fc1e7377adb204",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-HANDOFF.md",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "c1eea1cb74cfef90c67abbdbf06279f1a89d9bd34386255e02fc1e7377adb204"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/MECHANICAL_CHECKS.json": {
+      "original_sha256": "f2d681adcb41a7682d17d307afb857a05de8b906314ae864d9a23e4bf7dd84f3",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/MECHANICAL_CHECKS.json",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "f2d681adcb41a7682d17d307afb857a05de8b906314ae864d9a23e4bf7dd84f3"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/MUTATION_RESULTS.json": {
+      "original_sha256": "8c76944421219a0f7d3ccfdd8bff53c70dadec6f8866db900e0f0aace72c6571",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/MUTATION_RESULTS.json",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "8c76944421219a0f7d3ccfdd8bff53c70dadec6f8866db900e0f0aace72c6571"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/PRIMARY_RESULT.json": {
+      "original_sha256": "47b34d98d636cbe488164a23c7cb3e68164770098829a2b62ed33a90aa8fecf1",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/PRIMARY_RESULT.json",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "47b34d98d636cbe488164a23c7cb3e68164770098829a2b62ed33a90aa8fecf1"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/READING_LEDGER.json": {
+      "original_sha256": "6dcc13e3a6f1a29ea6b701a172e91aa91f005d5fe7fcb277e8015e73de19549a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/READING_LEDGER.json",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "6dcc13e3a6f1a29ea6b701a172e91aa91f005d5fe7fcb277e8015e73de19549a"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/REVIEW_HISTORY.md": {
+      "original_sha256": "3b6a04642911a1e1567ab3d412fba59785284b0ef3eb927aa664d38f91b6e861",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-REVIEW_HISTORY.md",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "3b6a04642911a1e1567ab3d412fba59785284b0ef3eb927aa664d38f91b6e861"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/TRACE_GATE.md": {
+      "original_sha256": "7e6d5d2493afb29e664de2734dca128e8c69aec13d989a8eef27e64cde364e01",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-TRACE_GATE.md",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "7e6d5d2493afb29e664de2734dca128e8c69aec13d989a8eef27e64cde364e01"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/VOCABULARY.json": {
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/VOCABULARY.json",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/alias_corrected.txt": {
+      "original_sha256": "e9e0616d29338525f64d9487da919fcbcf4cf3e99f72692c72fdf45ae77c992e",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/alias_corrected.txt",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "e9e0616d29338525f64d9487da919fcbcf4cf3e99f72692c72fdf45ae77c992e"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/alias_initial_failure.txt": {
+      "original_sha256": "3f9e9b4beae87a39314b2660ff38722cc75580c64e8877992f590634c76703df",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/alias_initial_failure.txt",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "3f9e9b4beae87a39314b2660ff38722cc75580c64e8877992f590634c76703df"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/clock_source_expanded.txt": {
+      "original_sha256": "7055f85f6a86d466e5324545514201226eab46bb4d9775a560801060c84453d5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/clock_source_expanded.txt",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "7055f85f6a86d466e5324545514201226eab46bb4d9775a560801060c84453d5"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/clock_source_initial.txt": {
+      "original_sha256": "35ba27b1f179cfb9ec3d9d6b6be8a9272fee0d3bd375ac3fcecb649c4dd5bccc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/clock_source_initial.txt",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "35ba27b1f179cfb9ec3d9d6b6be8a9272fee0d3bd375ac3fcecb649c4dd5bccc"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/initial_primary_cache.txt.gz": {
+      "original_sha256": "4bde49881ad4b328decc4b1ed3dd8e567e64b9616fc2e9312e5d4185e01328c5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/initial_primary_cache.txt.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "4bde49881ad4b328decc4b1ed3dd8e567e64b9616fc2e9312e5d4185e01328c5"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Gauss_flux_orientation.py.gz": {
+      "original_sha256": "f9b70790037f796e4e2a690b32a1e278db00796d1bf4c756b2a1d8daaf592d75",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "f9b70790037f796e4e2a690b32a1e278db00796d1bf4c756b2a1d8daaf592d75"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Gauss_flux_orientation.stderr.gz": {
+      "original_sha256": "8f72b9941048e59cd9abdaaa352c28544fc977ddc69e9615ddee1bc67588ade7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "8f72b9941048e59cd9abdaaa352c28544fc977ddc69e9615ddee1bc67588ade7"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Gauss_flux_orientation.stdout.gz": {
+      "original_sha256": "1ea30b1f487c029c5bb5bf9c0f0f30d3454e2e8aaee4142979e554667c113b1d",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "1ea30b1f487c029c5bb5bf9c0f0f30d3454e2e8aaee4142979e554667c113b1d"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Villain_jump_normalization.py.gz": {
+      "original_sha256": "c3b010199174e3438e0cf6df1d205fa96e1772230dfc6e3c3d8e35dcba168251",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "c3b010199174e3438e0cf6df1d205fa96e1772230dfc6e3c3d8e35dcba168251"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Villain_jump_normalization.stderr.gz": {
+      "original_sha256": "480267c1776fb3421dcad90fe7d042102d8ecb4ce42c16135ce7a74b1b9a2dd2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "480267c1776fb3421dcad90fe7d042102d8ecb4ce42c16135ce7a74b1b9a2dd2"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Villain_jump_normalization.stdout.gz": {
+      "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Wilson_N2_multiplicity.py.gz": {
+      "original_sha256": "2e50999515e304c388fe5237be524840e178e1aa633680bac4ce34ea7a58d0be",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "2e50999515e304c388fe5237be524840e178e1aa633680bac4ce34ea7a58d0be"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Wilson_N2_multiplicity.stderr.gz": {
+      "original_sha256": "51ae2ee38e91934e1d62fd8097d8fe32957c10d0b07dadab21616a8c73424110",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "51ae2ee38e91934e1d62fd8097d8fe32957c10d0b07dadab21616a8c73424110"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/Wilson_N2_multiplicity.stdout.gz": {
+      "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/coboundary_sign.py.gz": {
+      "original_sha256": "e51bf0feba66a5fcf24961f7a2b2481c4891340f9b3eea7ad68f991c54a11055",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "e51bf0feba66a5fcf24961f7a2b2481c4891340f9b3eea7ad68f991c54a11055"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/coboundary_sign.stderr.gz": {
+      "original_sha256": "9b4071b7fd8437740c37be6410230c9b0ea2ba15b3d5ed0d318ad29db67e3bd5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "9b4071b7fd8437740c37be6410230c9b0ea2ba15b3d5ed0d318ad29db67e3bd5"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/coboundary_sign.stdout.gz": {
+      "original_sha256": "d3544bd611c49edc3b5adad2afbbd104994675cd94b6a271abe0d8632a525691",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "d3544bd611c49edc3b5adad2afbbd104994675cd94b6a271abe0d8632a525691"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/independent_sheet_denominator.py.gz": {
+      "original_sha256": "d3bea88aad903f905d4704448a99ef67f1b7c96c994ae7b0d335b7f783b621f5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "d3bea88aad903f905d4704448a99ef67f1b7c96c994ae7b0d335b7f783b621f5"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/independent_sheet_denominator.stderr.gz": {
+      "original_sha256": "a33d1c2cf02a18550e7694e57524dcc184e1279175aede040d076fe5e4c8b442",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "a33d1c2cf02a18550e7694e57524dcc184e1279175aede040d076fe5e4c8b442"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/independent_sheet_denominator.stdout.gz": {
+      "original_sha256": "60c9f0a5dfb8fef8f7f02d9087b9fa64f1ffa74b42f7c56c41c9390ee6788342",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "60c9f0a5dfb8fef8f7f02d9087b9fa64f1ffa74b42f7c56c41c9390ee6788342"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/insufficient_alias_cutoff.py.gz": {
+      "original_sha256": "9a2cce1de48385dd572c9644093da71ab851961b5cfc7e3bcd884912cf223434",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "9a2cce1de48385dd572c9644093da71ab851961b5cfc7e3bcd884912cf223434"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/insufficient_alias_cutoff.stderr.gz": {
+      "original_sha256": "3ced3ed219e45bdf112280131dbfdddf09271ca8cfa8f3d8256bb3df7c307899",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "3ced3ed219e45bdf112280131dbfdddf09271ca8cfa8f3d8256bb3df7c307899"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/insufficient_alias_cutoff.stdout.gz": {
+      "original_sha256": "8648168ceacd8e55e60402728610fb736cea73a60fc1389c3416e69d7070f0dc",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "8648168ceacd8e55e60402728610fb736cea73a60fc1389c3416e69d7070f0dc"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/one_clock_orientation.py.gz": {
+      "original_sha256": "5014614f4163b0307b9567e14e8cbbd3ab7c65c6aa5def108db4295310ee1b0d",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "5014614f4163b0307b9567e14e8cbbd3ab7c65c6aa5def108db4295310ee1b0d"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/one_clock_orientation.stderr.gz": {
+      "original_sha256": "e3d4221c308ca3309fd0648d8e8c1bc2e72bd778070ae5c61ccd4c3f1861cde7",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "e3d4221c308ca3309fd0648d8e8c1bc2e72bd778070ae5c61ccd4c3f1861cde7"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/one_clock_orientation.stdout.gz": {
+      "original_sha256": "ce431228dd37aadbee724502dd150a2ac2e5ef9c6340ad5eee3ae3bdb91d4be4",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "ce431228dd37aadbee724502dd150a2ac2e5ef9c6340ad5eee3ae3bdb91d4be4"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/patch_excitation_energy.py.gz": {
+      "original_sha256": "6105bf8df1270173bd5840cdecac67187790ac8e0ff3ee006f7b25cc9462e5ba",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "6105bf8df1270173bd5840cdecac67187790ac8e0ff3ee006f7b25cc9462e5ba"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/patch_excitation_energy.stderr.gz": {
+      "original_sha256": "12eb96a6749835947dab9f28ce34d924db60dc3d71668f976676754fdabd3c19",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "12eb96a6749835947dab9f28ce34d924db60dc3d71668f976676754fdabd3c19"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/patch_excitation_energy.stdout.gz": {
+      "original_sha256": "ce431228dd37aadbee724502dd150a2ac2e5ef9c6340ad5eee3ae3bdb91d4be4",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "ce431228dd37aadbee724502dd150a2ac2e5ef9c6340ad5eee3ae3bdb91d4be4"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/periodic_last_face_move.py.gz": {
+      "original_sha256": "24eb0b8a00b4533b9933e686a95d1fb1acffbcca728cfd51a07b2a3cb377467a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "24eb0b8a00b4533b9933e686a95d1fb1acffbcca728cfd51a07b2a3cb377467a"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/periodic_last_face_move.stderr.gz": {
+      "original_sha256": "e7beb9c2f0dc10249591e4c593d15821582224216847e1afb2e348b0c71588f8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "e7beb9c2f0dc10249591e4c593d15821582224216847e1afb2e348b0c71588f8"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/periodic_last_face_move.stdout.gz": {
+      "original_sha256": "60c9f0a5dfb8fef8f7f02d9087b9fa64f1ffa74b42f7c56c41c9390ee6788342",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "60c9f0a5dfb8fef8f7f02d9087b9fa64f1ffa74b42f7c56c41c9390ee6788342"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/phase_independent_counterterms.py.gz": {
+      "original_sha256": "40a06545c7cf348bdd7dbde89fcb7ea581c14c43cf2ca1e3038ea56fdcddd4b6",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "40a06545c7cf348bdd7dbde89fcb7ea581c14c43cf2ca1e3038ea56fdcddd4b6"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/phase_independent_counterterms.stderr.gz": {
+      "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/phase_independent_counterterms.stdout.gz": {
+      "original_sha256": "dd835a4d61181f951b7606cb1f96dc76459519013e42bc69c4b30419d1d92cfd",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "dd835a4d61181f951b7606cb1f96dc76459519013e42bc69c4b30419d1d92cfd"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/single_spatial_Gaussian.py.gz": {
+      "original_sha256": "a4fbfec7bb6a61a0a2ae83ff76106fdd3a822c695e0edffdce06bb4dee823007",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "a4fbfec7bb6a61a0a2ae83ff76106fdd3a822c695e0edffdce06bb4dee823007"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/single_spatial_Gaussian.stderr.gz": {
+      "original_sha256": "36a38f2e055e647f51650c653f403cbcfa6aa1dfb337ffe847d993b99cb9e525",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "36a38f2e055e647f51650c653f403cbcfa6aa1dfb337ffe847d993b99cb9e525"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/single_spatial_Gaussian.stdout.gz": {
+      "original_sha256": "edf69831386c2e973dc38ab71c8e752609a3227236a8dda40ecb5ef714d78446",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "edf69831386c2e973dc38ab71c8e752609a3227236a8dda40ecb5ef714d78446"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/wrong_conditional_harmonic.py.gz": {
+      "original_sha256": "4fa403263af15678e063b1f55bc5da7efc658d1561752f9202910d14f3f734aa",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "4fa403263af15678e063b1f55bc5da7efc658d1561752f9202910d14f3f734aa"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/wrong_conditional_harmonic.stderr.gz": {
+      "original_sha256": "b11767cf040d743dad7e446aa6f3279ffa78f92f3a06c76aef4074b9d7d377ce",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "b11767cf040d743dad7e446aa6f3279ffa78f92f3a06c76aef4074b9d7d377ce"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/wrong_conditional_harmonic.stdout.gz": {
+      "original_sha256": "edf69831386c2e973dc38ab71c8e752609a3227236a8dda40ecb5ef714d78446",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "edf69831386c2e973dc38ab71c8e752609a3227236a8dda40ecb5ef714d78446"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/wrong_source_period_group.py.gz": {
+      "original_sha256": "5b30db41a9dc3d71fb8c4e3a1b933347c9c5787eac2d6253902baa9cd0e51583",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.py.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "5b30db41a9dc3d71fb8c4e3a1b933347c9c5787eac2d6253902baa9cd0e51583"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/wrong_source_period_group.stderr.gz": {
+      "original_sha256": "7729378d33d1adf2e060798f5a9eae61dfad3b16c2ece18c25788a85214901e5",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.stderr.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "7729378d33d1adf2e060798f5a9eae61dfad3b16c2ece18c25788a85214901e5"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/mutation_evidence/wrong_source_period_group.stdout.gz": {
+      "original_sha256": "d3544bd611c49edc3b5adad2afbbd104994675cd94b6a271abe0d8632a525691",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.stdout.gz",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "d3544bd611c49edc3b5adad2afbbd104994675cd94b6a271abe0d8632a525691"
+    },
+    ".claude/science/physics-loops/toe-charged-phase-20260914/deliveries/block10/open_pr_snapshot.json": {
+      "original_sha256": "b1368bade0b4f16811440aefee1755a917bd637448253c62c650e6c9975d901a",
+      "final_path": "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/open_pr_snapshot.json",
+      "disposition": "Preserved byte-for-byte as historical author proof/control/reading/execution provenance; decoded/read according to role, no current audit or independent verdict authority.",
+      "final_sha256": "b1368bade0b4f16811440aefee1755a917bd637448253c62c650e6c9975d901a"
+    },
+    "docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
+      "original_sha256": "f1741a861fd7b588162b432b4387d4bd3e0eec0d425aa621e8e9cbf7b3e14f7b",
+      "final_path": "docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "disposition": "Retained canonical statement/computations; historical link, own-note proof identity, analytical N5 scope and canonical TOTAL packaging confirmed in same reviewer session; fresh final cache.",
+      "final_sha256": "964c35634c9a60cc166317aa2ce1dee786ba0ff0e59335e35e9bafa44d6a4370"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "original_sha256": "49cc73765ec6b033769d47b674f781b96b1623956f6b3e196588b57173bcada9",
+      "final_path": null,
+      "disposition": "Generated manifest adds only this claim node and count; excluded to regenerate on integrated current main, no unique scientific proof or data."
+    },
+    "logs/runner-cache/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.txt": {
+      "original_sha256": "5a4800fe215cf1c3e73f009e999e47efc5147d2f0bb8276bb4d0f078329b1007",
+      "final_path": "logs/runner-cache/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.txt",
+      "disposition": "Retained canonical statement/computations; historical link, own-note proof identity, analytical N5 scope and canonical TOTAL packaging confirmed in same reviewer session; fresh final cache.",
+      "final_sha256": "7df89ffa2fac41ddcb4d20dd34c8d66f62c023160f6d9fcb91042839a495aa0e"
+    },
+    "scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py": {
+      "original_sha256": "95c01d3d1965a153614b80e3cff7f56449bcef10a3d22e097766f7e39d23cd21",
+      "final_path": "scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py",
+      "disposition": "Retained canonical statement/computations; historical link, own-note proof identity, analytical N5 scope and canonical TOTAL packaging confirmed in same reviewer session; fresh final cache.",
+      "final_sha256": "4e925cc485c24c9ea106cba1636a924351cfa847adf21265cb11c485286abcec"
+    }
+  },
+  "original_map_sha256": "3ee51e3eebf701617494b0c0a30206bb62a6ef6b01202924880e2904e8b74542",
+  "final_paths_sha256": {
+    "docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md": "964c35634c9a60cc166317aa2ce1dee786ba0ff0e59335e35e9bafa44d6a4370",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/MECHANICAL_CHECKS.json": "f2d681adcb41a7682d17d307afb857a05de8b906314ae864d9a23e4bf7dd84f3",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/MUTATION_RESULTS.json": "8c76944421219a0f7d3ccfdd8bff53c70dadec6f8866db900e0f0aace72c6571",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/PRIMARY_RESULT.json": "47b34d98d636cbe488164a23c7cb3e68164770098829a2b62ed33a90aa8fecf1",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/READING_LEDGER.json": "6dcc13e3a6f1a29ea6b701a172e91aa91f005d5fe7fcb277e8015e73de19549a",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/README.md": "e15cfb2c3bcc820fab8b71e2fa326f56ec80cfc93749dbc9a0f35b7b4cbcc8e4",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/VOCABULARY.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/alias_corrected.txt": "e9e0616d29338525f64d9487da919fcbcf4cf3e99f72692c72fdf45ae77c992e",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/alias_initial_failure.txt": "3f9e9b4beae87a39314b2660ff38722cc75580c64e8877992f590634c76703df",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/clock_source_expanded.txt": "7055f85f6a86d466e5324545514201226eab46bb4d9775a560801060c84453d5",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/clock_source_initial.txt": "35ba27b1f179cfb9ec3d9d6b6be8a9272fee0d3bd375ac3fcecb649c4dd5bccc",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/initial_primary_cache.txt.gz": "4bde49881ad4b328decc4b1ed3dd8e567e64b9616fc2e9312e5d4185e01328c5",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.py.gz": "f9b70790037f796e4e2a690b32a1e278db00796d1bf4c756b2a1d8daaf592d75",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.stderr.gz": "8f72b9941048e59cd9abdaaa352c28544fc977ddc69e9615ddee1bc67588ade7",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Gauss_flux_orientation.stdout.gz": "1ea30b1f487c029c5bb5bf9c0f0f30d3454e2e8aaee4142979e554667c113b1d",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.py.gz": "c3b010199174e3438e0cf6df1d205fa96e1772230dfc6e3c3d8e35dcba168251",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.stderr.gz": "480267c1776fb3421dcad90fe7d042102d8ecb4ce42c16135ce7a74b1b9a2dd2",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Villain_jump_normalization.stdout.gz": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.py.gz": "2e50999515e304c388fe5237be524840e178e1aa633680bac4ce34ea7a58d0be",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.stderr.gz": "51ae2ee38e91934e1d62fd8097d8fe32957c10d0b07dadab21616a8c73424110",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/Wilson_N2_multiplicity.stdout.gz": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.py.gz": "e51bf0feba66a5fcf24961f7a2b2481c4891340f9b3eea7ad68f991c54a11055",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.stderr.gz": "9b4071b7fd8437740c37be6410230c9b0ea2ba15b3d5ed0d318ad29db67e3bd5",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/coboundary_sign.stdout.gz": "d3544bd611c49edc3b5adad2afbbd104994675cd94b6a271abe0d8632a525691",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.py.gz": "d3bea88aad903f905d4704448a99ef67f1b7c96c994ae7b0d335b7f783b621f5",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.stderr.gz": "a33d1c2cf02a18550e7694e57524dcc184e1279175aede040d076fe5e4c8b442",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/independent_sheet_denominator.stdout.gz": "60c9f0a5dfb8fef8f7f02d9087b9fa64f1ffa74b42f7c56c41c9390ee6788342",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.py.gz": "9a2cce1de48385dd572c9644093da71ab851961b5cfc7e3bcd884912cf223434",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.stderr.gz": "3ced3ed219e45bdf112280131dbfdddf09271ca8cfa8f3d8256bb3df7c307899",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/insufficient_alias_cutoff.stdout.gz": "8648168ceacd8e55e60402728610fb736cea73a60fc1389c3416e69d7070f0dc",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.py.gz": "5014614f4163b0307b9567e14e8cbbd3ab7c65c6aa5def108db4295310ee1b0d",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.stderr.gz": "e3d4221c308ca3309fd0648d8e8c1bc2e72bd778070ae5c61ccd4c3f1861cde7",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/one_clock_orientation.stdout.gz": "ce431228dd37aadbee724502dd150a2ac2e5ef9c6340ad5eee3ae3bdb91d4be4",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.py.gz": "6105bf8df1270173bd5840cdecac67187790ac8e0ff3ee006f7b25cc9462e5ba",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.stderr.gz": "12eb96a6749835947dab9f28ce34d924db60dc3d71668f976676754fdabd3c19",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/patch_excitation_energy.stdout.gz": "ce431228dd37aadbee724502dd150a2ac2e5ef9c6340ad5eee3ae3bdb91d4be4",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.py.gz": "24eb0b8a00b4533b9933e686a95d1fb1acffbcca728cfd51a07b2a3cb377467a",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.stderr.gz": "e7beb9c2f0dc10249591e4c593d15821582224216847e1afb2e348b0c71588f8",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/periodic_last_face_move.stdout.gz": "60c9f0a5dfb8fef8f7f02d9087b9fa64f1ffa74b42f7c56c41c9390ee6788342",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.py.gz": "40a06545c7cf348bdd7dbde89fcb7ea581c14c43cf2ca1e3038ea56fdcddd4b6",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.stderr.gz": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/phase_independent_counterterms.stdout.gz": "dd835a4d61181f951b7606cb1f96dc76459519013e42bc69c4b30419d1d92cfd",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.py.gz": "a4fbfec7bb6a61a0a2ae83ff76106fdd3a822c695e0edffdce06bb4dee823007",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.stderr.gz": "36a38f2e055e647f51650c653f403cbcfa6aa1dfb337ffe847d993b99cb9e525",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/single_spatial_Gaussian.stdout.gz": "edf69831386c2e973dc38ab71c8e752609a3227236a8dda40ecb5ef714d78446",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.py.gz": "4fa403263af15678e063b1f55bc5da7efc658d1561752f9202910d14f3f734aa",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.stderr.gz": "b11767cf040d743dad7e446aa6f3279ffa78f92f3a06c76aef4074b9d7d377ce",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_conditional_harmonic.stdout.gz": "edf69831386c2e973dc38ab71c8e752609a3227236a8dda40ecb5ef714d78446",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.py.gz": "5b30db41a9dc3d71fb8c4e3a1b933347c9c5787eac2d6253902baa9cd0e51583",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.stderr.gz": "7729378d33d1adf2e060798f5a9eae61dfad3b16c2ece18c25788a85214901e5",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/mutation_evidence/wrong_source_period_group.stdout.gz": "d3544bd611c49edc3b5adad2afbbd104994675cd94b6a271abe0d8632a525691",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/open_pr_snapshot.json": "b1368bade0b4f16811440aefee1755a917bd637448253c62c650e6c9975d901a",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-CLAIM_STATUS_CERTIFICATE.md": "1c2f0e436ddfc9b0b9c68a0faa83ce82414e047b52a2ba49d22a8a658bafe49f",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-HANDOFF.md": "c1eea1cb74cfef90c67abbdbf06279f1a89d9bd34386255e02fc1e7377adb204",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-REVIEW_HISTORY.md": "3b6a04642911a1e1567ab3d412fba59785284b0ef3eb927aa664d38f91b6e861",
+    "docs/work_history/repo/review_feedback/pr8118-clock-phase-evidence/pr8118-TRACE_GATE.md": "7e6d5d2493afb29e664de2734dca128e8c69aec13d989a8eef27e64cde364e01",
+    "logs/runner-cache/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.txt": "7df89ffa2fac41ddcb4d20dd34c8d66f62c023160f6d9fcb91042839a495aa0e",
+    "scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py": "4e925cc485c24c9ea106cba1636a924351cfa847adf21265cb11c485286abcec"
+  },
+  "source_input_fingerprint": "5533dbc57ee64c74ce71ad3c648366d8cf4bfc9b37fe855566ac5bfea815814a",
+  "declared_proof_identity_inputs": {
+    "docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md": "964c35634c9a60cc166317aa2ce1dee786ba0ff0e59335e35e9bafa44d6a4370"
+  },
+  "runtime_scientific_file_reads": [],
+  "repository_scientific_dependencies": [],
+  "repository_dependency_scope": "All mathematics redeclared; actual local citation is historical author review only. Current tame-Maxwell is prior-art/boundary context, not proof premise. Empty repo scientific dependencies does not remove external mathematical imports.",
+  "authority_inputs": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+      "same_as_read8114": true
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "same_as_read8114": true
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "same_as_read8114": true
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "same_as_read8114": true
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "same_as_read8114": true
+    }
+  },
+  "other_review_inputs": {
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": "87142f568071bfe09ca5ca8ad513b02fdc10f9d839ef2ef3c4fab0327be909ac"
+  },
+  "external_math_inputs": [
+    {
+      "source": "https://arxiv.org/pdf/math-ph/0412040v1",
+      "sha256": "f0423f368b45e5583911b860c932ba2c2e5564c777b6d5cf6dcf12ac1edcbe39"
+    },
+    {
+      "source": "https://arxiv.org/pdf/1301.6166v2",
+      "sha256": "71a9c63aac4142c73601bc45c88940ca73fe9739774c5d764a1e9186483c3666"
+    },
+    {
+      "source": "https://omeka.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf",
+      "sha256": "e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17"
+    }
+  ],
+  "claim_dispositions": {
+    "transfer_and_aliases": "Sections1\u20134 retained fixed-N finite-generator asymptotics and rigorous constructive truncation bounds; no phase inference.",
+    "local_complex_shift": "Section5 retained pointwise conditional nonuniformity only; no collective defect or phase no-go.",
+    "modular_source_periods": "Section7 retained exact gcd(N,L\u00b2) source period group and order-N private-edge classification.",
+    "gapped_curvature": "Section8 retained supplied fixedN weakK model using mapped Yarotsky gap/analyticity theorem; no uniformN endpoint or framework realization.",
+    "quantized_area_tail": "Sections9\u201310 retained cohomology/source match and existential uniform analytic bound on coprime volumes; no unstated arbitrary-inhomogeneous theorem.",
+    "GNS_and_spectral_response": "Section11 retained gap inequality/local-dynamics limit and contact-inclusive source kernel; no low-frequency weight in stated regime only.",
+    "finite_evidence": "Eight finite check families retained as falsifiers, not numerical theorem proof.",
+    "history_and_N1_N8": "Complete history/corrected failures/mutations preserved; canonical eight discipline sections honest within scope; historical material supplies no audit authority."
+  },
+  "findings": {
+    "F1": "Own-note proof identity pin added; no runtime read invented.",
+    "F2": "Entire54file historical packet exact; live review link and README provenance.",
+    "F3": "N5 explicitly no lattice-wide numeric execution; external analytic dependency remains explicit.",
+    "F4_coordinator": "Noncanonical TOTAL corrected after preserving successful preliminary receipt/cache, then necessary fresh execution."
+  },
+  "execution": {
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 0.5804879665374756,
+    "timeout_sec": 90,
+    "stderr": ""
+  },
+  "execution_receipt_sha256": "8b68887e86369b25548dfc2e9715525471d3677116fcb6a2a4f452925796b679",
+  "prior_attempt_receipts": {
+    "8118-author-final-execution.json": "bda35b5f47a487d285c1842cfdddcfc60a146525324e173be09435a2ca768836",
+    "8118-author-before-total-fix-cache.txt": "2113cde606a67ad3aacda794cf76146f844cffee11dd7528d4901709829ee113"
+  },
+  "actual_independent_controls": {
+    "path": "check8118/control.py",
+    "sha256": "80fccfb85b7023fb84a4e5a635f2d7bfb33e5621931031556a3e597973c287e4",
+    "output_sha256": "b3012f39f81ce0213d27ed297c69a3d0d3364ab488a63b55ca95b47c0f1519c4",
+    "result": "PASS: closed-form binary spectrum sixpairs,24ordered sheet histories coefficient5/512,sineproductN2..20"
+  },
+  "coverage": "Complete note/316line primary and original58path delta.13gzip mutant sources compared to full primary;stdout/stderr targets and recordedhashes inspected,12failures and1benign. Full external loadbearing Theorem1 hypotheses and proofpp6\u201311; applicable algebra,symmetry,normalization,limits,spectral,scope,dependency,reproducibility lenses.",
+  "main_preservation": "All final paths additions against currentbase; no existing science/tooling overwritten; original generated manifest omitted for integration regeneration.",
+  "verification": {
+    "actual_type": "bounded_theorem",
+    "all_scientific_function_AST_bodies_unchanged": true,
+    "cache": "fresh",
+    "three_diff_checks": "clean",
+    "full_pipeline": "not run per assignment"
+  }
+}

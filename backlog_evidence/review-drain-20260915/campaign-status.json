@@ -1,9 +1,9 @@
 {
   "scope": "Original inventory116non-draft PRs;11drafts excluded; new arrivals not absorbed",
-  "landed_pr_count": 18,
-  "main": "89ee425f870997fb9796ccc4f4bfe598a98f3b1c",
+  "landed_pr_count": 28,
+  "main": "ebb89a16a3fb846ada2389c7960343d4194a8042",
   "workflow": "Prior efficiency changes verified remote; stage-manifest and dependent-base lifecycle fixes reviewed, landed, installed sync4994b354ed",
-  "current_validation": "train06: eight coherent units, ten PRs,300sourcepaths,13science notes",
+  "current_validation": "train06 landed; collecting next reviewed units",
   "no_final_completion_claim": true,
   "prs": [
     {
@@ -54,22 +54,22 @@
     {
       "number": 8019,
       "original_head": "d57943620edd5098df7b6410f952d569730276f5",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8020,
       "original_head": "3b9c0ce91ca0cce5ed32689f95aa469e3fdc4551",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8021,
       "original_head": "44964a9b72bccb9ae95d5d9b277007910ee86430",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8022,
       "original_head": "cf4eeb62cde4f3a812ae85ab1660232bc468a050",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8034,
@@ -449,72 +449,72 @@
     {
       "number": 8109,
       "original_head": "cceb1220b1d89bedc8d24628844afb4b55c61d10",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8110,
       "original_head": "4f75dd5d2e6e524b48c01c36853d50be7640e6f7",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8111,
       "original_head": "714c94d0a93977b3ecd7e4b88812c15771541b17",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8112,
       "original_head": "b5e42b4f9a3a5106b015f7a22aeaa3e94281c48e",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8113,
       "original_head": "e5cd8016d0b5afc46cad42322f49c05846e5c8d1",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8114,
       "original_head": "2c2aba9a86a57c19e007c390e5db2ab6272c7850",
-      "state": "independently reviewed; reserved in closed train06"
+      "state": "landed; branch deleted; closure verified"
     },
     {
       "number": 8115,
       "original_head": "36607532327386ca6e1ced470d5aa93a026989d5",
-      "state": "independently reviewed; reserved for next train"
+      "state": "independently reviewed; collecting next train"
     },
     {
       "number": 8116,
       "original_head": "25d3e2aa02ceeeedcce14ec2a57dbff42d3b1d6c",
-      "state": "independently reviewed; reserved for next train"
+      "state": "independently reviewed; collecting next train"
     },
     {
       "number": 8117,
       "original_head": "d8d5e3b26b77e5e950f5aa4b29c534f2337277fb",
-      "state": "independent source review running"
+      "state": "independently reviewed; collecting next train"
     },
     {
       "number": 8118,
       "original_head": "9b46a856eea515a2e6127a1de0c38f9eb3472e4e",
-      "state": "independent source review running"
+      "state": "independently reviewed; collecting next train"
     },
     {
       "number": 8119,
       "original_head": "51818db1f29e143921340a94dd035609c3f2c6aa",
-      "state": "pending source review"
+      "state": "independent source review or final fix confirmation running"
     },
     {
       "number": 8120,
       "original_head": "b9f5a6e279d6b5528e3488c8a9f02bbcc622b554",
-      "state": "pending source review"
+      "state": "independent source review or final fix confirmation running"
     },
     {
       "number": 8121,
       "original_head": "6f9f79c030fe880cc1aea7c9aaf5fb4f9cc5e14f",
-      "state": "pending source review"
+      "state": "independent source review or final fix confirmation running"
     },
     {
       "number": 8122,
       "original_head": "a293aa3b67d64eda29ba959d43c209056c9ef7e4",
-      "state": "pending source review"
+      "state": "independent source review or final fix confirmation running"
     },
     {
       "number": 8123,

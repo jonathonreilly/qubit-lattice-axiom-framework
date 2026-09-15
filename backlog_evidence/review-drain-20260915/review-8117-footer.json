@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "scope": "Same-session affected packaging confirmation; prior mathematics unchanged",
+  "initial_tree": "c9f8399d5182145278017b3ff7be2c26891972cd",
+  "final_tree": "645b435601d2d2e651d3025b2a4c9ef300e25f5b",
+  "initial_report_hashes": {
+    "review-8117.md": "7f2cc679a1f404310750687e8785ee8b6472e03ff10e043fef825c34230a914f",
+    "review-8117.json": "a7d25307afe6ffd90418c513e3448ef8964f26bc10b696afde22134124090c10"
+  },
+  "finding": "Root preflight found original TOTAL footer noncanonical; corrected before enrollment",
+  "resolution": "One print string to TOTAL: PASS=8 FAIL=0 and fresh cache; eight actual completed scientific families",
+  "final_hashes": {
+    "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py": "5053886fd400f962a363cbfae7e84ee8df9447b9d582d5a2d36916227374714b",
+    "logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt": "8a166656dbe2b670ff24199bce882aa5698accc9ad5097213ae2da4eb2b87fe9"
+  },
+  "unchanged_paths": 43,
+  "preexecution_noncache_hashes_verified": true,
+  "all_staged_working_equal": true,
+  "cache_status": "fresh",
+  "execution": {
+    "runner": "scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+    "status": "ok",
+    "exit_code": 0,
+    "elapsed_sec": 3.7231838703155518,
+    "timeout_sec": 90,
+    "live_log": "/private/tmp/review-drain-20260915/unit8117-author-copy/logs/runner-cache/.in-progress/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt"
+  },
+  "source_binding": "Final runner matches preexecution freeze and cache runner_sha256; invocation stdout exactly matches cache. Execution JSON does not itself contain a source hash.",
+  "execution_receipt_sha256": "3ca414baf12ad0b2c92610a2e2de9cb6004687b9568483ca3d1501d42e0769a1",
+  "new_reviewer_runs": 0,
+  "mathematics_changed": false,
+  "scope_limits": [
+    "Finite and supplied model only; uniform phase/transport, physical Maxwell response and native-law join remain open.",
+    "No per-unit combined pipeline or audit; root must gate exact integrated candidate."
+  ]
+}

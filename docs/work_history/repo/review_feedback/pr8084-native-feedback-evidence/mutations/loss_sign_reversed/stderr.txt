@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py", line 189, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py", line 114, in run
+    check(law+'_loss_expansion', equal(loss_delta, expanded))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/loss_sign_reversed/native_feedback_cap_check_2026_09_13.py", line 31, in check
+    raise AssertionError(name)
+AssertionError: complete_loss_expansion

@@ -1,0 +1,75 @@
+{
+  "scope": "actual scratch mutations; raw negative logs are not runner caches",
+  "results": [
+    {
+      "mutation": "cap_removed",
+      "source": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "source_sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d",
+      "old": "P = s.SparseMatrix.diag(*[int(k % ladder_size <= 16) for k in range(dimension)])",
+      "new": "P = s.SparseMatrix.eye(dimension)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.7074617080506869,
+      "failure": "AssertionError: complete_refusal_effect_is_projector"
+    },
+    {
+      "mutation": "energy_shift_reversed",
+      "source": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "source_sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d",
+      "old": "shifted = energy+a-b",
+      "new": "shifted = energy+b-a",
+      "exit_code": 1,
+      "elapsed_seconds": 0.5683167090173811,
+      "failure": "AssertionError: complete_refusal_predicted_9_over_25"
+    },
+    {
+      "mutation": "loss_sign_reversed",
+      "source": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "source_sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d",
+      "old": "k.H*k-l.H*l for k, l in zip(local, exact)",
+      "new": "k.H*k+l.H*l for k, l in zip(local, exact)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.44381720904493704,
+      "failure": "AssertionError: complete_loss_expansion"
+    },
+    {
+      "mutation": "dissipator_factor_two",
+      "source": "scripts/native_feedback_cap_check_2026_09_13.py",
+      "source_sha256": "02be8dab77a60a7748e546e2f5b72c3295efb639636d3e7bd282a423e366655d",
+      "old": "comparison_multiplier = 4",
+      "new": "comparison_multiplier = 2",
+      "exit_code": 1,
+      "elapsed_seconds": 0.7000159999588504,
+      "failure": "AssertionError: four_factor_dissipator_bound"
+    },
+    {
+      "mutation": "feedback_filter_removed",
+      "source": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "source_sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19",
+      "old": "J = T[2]@number[2]@(ident-number[3])",
+      "new": "J = T[2]",
+      "exit_code": 1,
+      "elapsed_seconds": 0.33294420898891985,
+      "failure": "AssertionError: feedback_effect"
+    },
+    {
+      "mutation": "original_free_replaced",
+      "source": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "source_sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19",
+      "old": "F = np.kron(A, np.eye(3))+",
+      "new": "F = np.kron(A_rounded, np.eye(3))+",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2084162079845555,
+      "failure": "AssertionError: initial_cycle_original_free_does_not_commute"
+    },
+    {
+      "mutation": "feedback_loss_completed",
+      "source": "scripts/native_feedback_collision_check_2026_09_13.py",
+      "source_sha256": "b1ecc0da7f9a7d37676c8c8d17b01545b5069cbb5794f78efde62236a7b81c19",
+      "old": "return result, loss",
+      "new": "return result, np.eye(n, dtype=complex)",
+      "exit_code": 1,
+      "elapsed_seconds": 0.23784204199910164,
+      "failure": "AssertionError: initial_cycle_actual_loss_not_identity"
+    }
+  ]
+}

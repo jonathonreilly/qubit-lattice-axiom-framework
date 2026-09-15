@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py", line 189, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py", line 143, in run
+    check('complete_refusal_effect_is_projector', equal(effect*effect, effect))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/cap_removed/native_feedback_cap_check_2026_09_13.py", line 31, in check
+    raise AssertionError(name)
+AssertionError: complete_refusal_effect_is_projector

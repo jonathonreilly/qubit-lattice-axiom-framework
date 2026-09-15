@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py", line 189, in <module>
+    result = run()
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py", line 147, in run
+    check('complete_refusal_predicted_9_over_25', equal(refusal_mass, s.Rational(9, 25)))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Projects/Physics-worktrees/native-feedback-finite-apparatus-20260913/.claude/science/physics-loops/native-feedback-finite-apparatus-20260913/mutations/energy_shift_reversed/native_feedback_cap_check_2026_09_13.py", line 31, in check
+    raise AssertionError(name)
+AssertionError: complete_refusal_predicted_9_over_25

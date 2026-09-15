@@ -1,0 +1,786 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ARTIFACT_PLAN.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/PORT_DIFFS.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_COMPARISON_NOTE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_CONFIRMATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/ROOT.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/ROOT.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_algebra_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_algebra_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_gap_2026_09_09.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_shift_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_shift_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/GOAL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/HANDOFF.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/LITERATURE_BRIDGES.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/NO_GO_LEDGER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ORIGINAL_EVIDENCE_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/AUTHOR_PACKAGE_BUILD.py.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/drop_reflection.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/drop_reflection.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_energy_factor.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_energy_factor.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_soft_shift.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_soft_shift.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PR_BACKLOG.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/CONTROLS.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/ROOT.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/ROOT.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_algebra_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_algebra_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_gap_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_gap_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_reduction_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/scripts/native_infinite_star_node_shift_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/scripts/native_infinite_star_node_shift_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_positive_tail.py.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_positive_tail.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_second_log.py.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_second_log.stderr",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/REVIEW_HISTORY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ROUTE_PORTFOLIO.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/STATE.yaml",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/TRACE_GATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/EXACT_TAIL_CHECK.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/GAUSSIAN_COVARIANCE_RESPONSE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/MONITOR_COLD.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/MONITOR_READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/QUANTITATIVE_FILTER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/RECEIPT.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/check.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RECEIPT.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RESULT_BEFORE_COUNT_LABEL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/check.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/check_BEFORE_COUNT_LABEL.py.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/DERIVATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/check.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/RESULT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/check.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/CONTRACT.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/FREEZE_before_adjacent_swap_correction.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_FILTER_SPATIAL_ATTEMPT.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_NODE_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND_before_shift_domain.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPROVED_TAIL_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_CONTRACT.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_STANDALONE_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_GAUSSIAN_REPRESENTATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_REDUCTION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBITS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBITS_before_adjacent_swap_correction.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBIT_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/SOFT_SHIFT_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/TAIL_CONTROL.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/TIME_SLICE_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/UNIFORM_PAIR_GAP.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/gaussian_node_controls.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/impurity_gap_controls.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/node_controls.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/soft_shift_controls.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/outputs/native_infinite_star_node_reduction_2026_09_09.json",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stdout"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/scripts/native_infinite_star_node_gap_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_gap_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_ROOT_ISOLATED/scripts/native_infinite_star_node_reduction_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/ARTIFACT_PLAN.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/CLAIM_STATUS_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/DELIVERY_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/ENERGY_DERIVATIVE_CORRECTION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/GOAL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/HANDOFF.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/LITERATURE_BRIDGES.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/NOTE_BEFORE_DIRECT_DERIVATIVE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/NO_GO_LEDGER.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/OPPORTUNITY_QUEUE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/PR_BACKLOG.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/REVIEW_HISTORY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/ROUTE_PORTFOLIO.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/CORRECTED_WARD_IDENTITY.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/FOCK_AND_QUENCH_EXTENSION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/LOW_RANK_PROJECTOR_CERTIFICATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/LOW_RANK_WARD_COMBINATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/NATIVE_WARD_ROUTE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/SCALAR_ENERGY_IDENTIFICATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/TRACE_CLASS_IMPURITY_PROJECTOR.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/UNNORMALIZED_FINITE_EXCITATION_ROUTE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROVENANCE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/STATE.yaml",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/TRACE_GATE.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/ASSEMBLY_DIFFS.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/STATUS_CONFIRMATION.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/INITIAL_READ_HASHES.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/REVIEW.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/REVIEW_PENDING_SCALAR.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/SCALAR_CORRECTION_HASH.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/WARD_BUDGET.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/CLI_CONTROLS.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_BUILD.stderr",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_BUILD.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_CHECK.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATED.stderr",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stderr"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATED.stdout",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATION.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/VERIFICATION_PROTOCOL.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/SOURCE_FREEZE.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.py",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/ROOT_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDERR.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDOUT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09_inputs.json"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/scripts/native_finite_excitation_ward_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/scripts/native_finite_excitation_ward_controls_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/ROOT_RECEIPT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDERR.txt",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDOUT.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8063/zip-8063/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "read": "complete unique content/paragraphs"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/scripts/native_finite_excitation_ward_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/scripts/native_finite_excitation_ward_2026_09_09.py"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+    "identity_reuse": "/private/tmp/review-drain-20260915/check8067/original-8067/scripts/native_finite_excitation_ward_controls_2026_09_09.py"
+  }
+]

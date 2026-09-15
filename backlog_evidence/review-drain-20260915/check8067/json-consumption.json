@@ -1,0 +1,1005 @@
+[
+  {
+    "path": "check8067/original-8067/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "sha256": "759e1588f0587355a6273d3f7ad23377a491c6a15bc397373402c3cca0471e87",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/outputs/native_finite_excitation_ward_2026_09_09.json",
+    "sha256": "79b807f745b8601a46ed5b7a526a2e69e21407f410387d29ccf9fac873ede0fd",
+    "type": "dict",
+    "keys": [
+      "actual_current_surface_status",
+      "adverse_cases",
+      "claim_id",
+      "elapsed_seconds",
+      "fermion_mode_bound",
+      "input_hashes",
+      "physical_runs",
+      "rank_bound",
+      "raw_eta",
+      "review_status",
+      "scope",
+      "state_error_coefficient_upper",
+      "status",
+      "supporting_predicates"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROVENANCE.json",
+    "sha256": "3a3bb99c17d202f347b946aafe1024e0c5a87ebb3d3169b2d428d92009eae697",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-node-analytic-sign-stretch/NATIVE_WARD_ROUTE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-node-analytic-sign-stretch/CORRECTED_WARD_IDENTITY.md",
+      "/private/tmp/toe-24h-probes-20260908/native-node-stable-imaginary-time-stretch/TRACE_CLASS_IMPURITY_PROJECTOR.md",
+      "/private/tmp/toe-24h-probes-20260908/native-node-stable-imaginary-time-stretch/LOW_RANK_PROJECTOR_CERTIFICATE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/FOCK_AND_QUENCH_EXTENSION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/SCALAR_ENERGY_IDENTIFICATION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/UNNORMALIZED_FINITE_EXCITATION_ROUTE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/LOW_RANK_WARD_COMBINATION.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/DELIVERY_FREEZE.json",
+    "sha256": "b05cac06a88f155b72c1f8f2cbe4e0f106a2ba6ffe43d2483bb4aedeb59ccc83",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_2026_09_09.py",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "outputs/native_finite_excitation_ward_2026_09_09.json",
+      "outputs/native_finite_excitation_ward_2026_09_09.md",
+      "outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+      "docs/audit/data/citation_graph_manifest.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/STATE.yaml",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/PR_BACKLOG.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROVENANCE.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/TRACE_GATE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/GOAL.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ENERGY_DERIVATIVE_CORRECTION.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/HANDOFF.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/NOTE_BEFORE_DIRECT_DERIVATIVE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/LOW_RANK_PROJECTOR_CERTIFICATE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/LOW_RANK_WARD_COMBINATION.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/FOCK_AND_QUENCH_EXTENSION.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/NATIVE_WARD_ROUTE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/SCALAR_ENERGY_IDENTIFICATION.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/UNNORMALIZED_FINITE_EXCITATION_ROUTE.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/TRACE_CLASS_IMPURITY_PROJECTOR.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/CORRECTED_WARD_IDENTITY.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_BUILD.stderr",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_BUILD.stdout",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/CLI_CONTROLS.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATED.stderr",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATION.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATED.stdout",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_CHECK.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/VERIFICATION_PROTOCOL.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/ROOT_RECEIPT.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDERR.txt",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDOUT.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/ROOT_RECEIPT.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDERR.txt",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDOUT.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09_inputs.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/SOURCE_FREEZE.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.py",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/scripts/native_finite_excitation_ward_2026_09_09.py",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/scripts/native_finite_excitation_ward_2026_09_09.py",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/REVIEW_PENDING_SCALAR.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/REVIEW.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/INITIAL_READ_HASHES.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/WARD_BUDGET.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/SCALAR_CORRECTION_HASH.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/STATUS_CONFIRMATION.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/READ_HASHES.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/ASSEMBLY_DIFFS.json",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/REVIEW.md",
+      ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/FREEZE.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/SOURCE_FREEZE.json",
+    "sha256": "3d19cc5f3c08998b4f4f77f9568dfe6184bf25c3f12dc7cdbce9bd835dc4632a",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "scripts/native_finite_excitation_ward_2026_09_09.py",
+      "outputs/native_finite_excitation_ward_2026_09_09_inputs.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/CLI_CONTROLS.json",
+    "sha256": "241d4defb404f11d408632f02b41ea8971a6dc9a0353ed142d807782ce43e241",
+    "type": "list",
+    "keys": 2
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATION.json",
+    "sha256": "e727efaeb1eba64a50fff4322ac90ea1bedfbc9562f6d730bf62811b15eead38",
+    "type": "dict",
+    "keys": [
+      "status",
+      "command",
+      "files",
+      "payload_identical_excluding_elapsed",
+      "physical_runs",
+      "scope"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_CHECK.json",
+    "sha256": "a0acdbdb0a4d18b90185c3901f44e57af25b96a6ccb448c2d7fe34acc4deb4ce",
+    "type": "dict",
+    "keys": [
+      "status",
+      "nodes",
+      "edges",
+      "added_node",
+      "deps",
+      "removed",
+      "old_changed",
+      "graph_builds",
+      "scope"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/ROOT_RECEIPT.json",
+    "sha256": "da607e1e5a21a53c739146d0e4bb5527dc7b9566ad10f2d07451d1ef036115c2",
+    "type": "dict",
+    "keys": [
+      "status",
+      "files",
+      "seconds_external",
+      "external_max_rss",
+      "payload_identical_excluding_elapsed",
+      "physical_evaluations",
+      "source_freeze"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDOUT.json",
+    "sha256": "8e9ad134cfc923144de9a9d47beb06e0fcb6bf74c20b2cf762c8724328c738ad",
+    "type": "dict",
+    "keys": [
+      "actual_current_surface_status",
+      "adverse_cases",
+      "claim_id",
+      "elapsed_seconds",
+      "fermion_mode_bound",
+      "input_hashes",
+      "physical_runs",
+      "rank_bound",
+      "raw_eta",
+      "review_status",
+      "scope",
+      "state_error_coefficient_upper",
+      "status",
+      "supporting_predicates"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/ROOT_RECEIPT.json",
+    "sha256": "2b553aa9b6652370af6367d70221fd86c21a5d94625d759eab2ce3c31a84664d",
+    "type": "dict",
+    "keys": [
+      "status",
+      "source_freeze",
+      "reason",
+      "science_payload_unchanged",
+      "seconds",
+      "external_max_rss",
+      "files",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDOUT.json",
+    "sha256": "79b807f745b8601a46ed5b7a526a2e69e21407f410387d29ccf9fac873ede0fd",
+    "type": "dict",
+    "keys": [
+      "actual_current_surface_status",
+      "adverse_cases",
+      "claim_id",
+      "elapsed_seconds",
+      "fermion_mode_bound",
+      "input_hashes",
+      "physical_runs",
+      "rank_bound",
+      "raw_eta",
+      "review_status",
+      "scope",
+      "state_error_coefficient_upper",
+      "status",
+      "supporting_predicates"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "sha256": "4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.json",
+    "sha256": "0f5c39a7ed002698f7e9c85b6cd5294427b6865d6b66adc805ddecc64bc8f264",
+    "type": "dict",
+    "keys": [
+      "actual_current_surface_status",
+      "adverse_cases",
+      "claim_id",
+      "elapsed_seconds",
+      "fermion_mode_bound",
+      "input_hashes",
+      "physical_runs",
+      "rank_bound",
+      "raw_eta",
+      "review_status",
+      "scope",
+      "state_error_coefficient_upper",
+      "status",
+      "supporting_predicates"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/SOURCE_FREEZE.json",
+    "sha256": "61cdb4dc16246b6eaa4776db17592e401fb64753fe1065acb22d5fa4ccc837fe",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "scripts/native_finite_excitation_ward_2026_09_09.py",
+      "outputs/native_finite_excitation_ward_2026_09_09_inputs.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "sha256": "4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+    "sha256": "759e1588f0587355a6273d3f7ad23377a491c6a15bc397373402c3cca0471e87",
+    "type": "dict",
+    "keys": [
+      "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/INITIAL_READ_HASHES.json",
+    "sha256": "80953ab998783773dcccb4e7a1a5b13437d9bd73157343b8d3241891c901e494",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/FOCK_AND_QUENCH_EXTENSION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/UNNORMALIZED_FINITE_EXCITATION_ROUTE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/LOW_RANK_WARD_COMBINATION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-impurity-traceclass-cold-review/SCALAR_ENERGY_IDENTIFICATION.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/WARD_BUDGET.json",
+    "sha256": "851002265dc1ae362874a1a74aa2a2648465c2c76f1d5dcca267298b07c039e4",
+    "type": "dict",
+    "keys": [
+      "safe_alpha_error_per_raw_eta",
+      "target_alpha_error",
+      "sufficient_raw_eta",
+      "Jlo",
+      "Jhi",
+      "p",
+      "rank_Q_bound",
+      "actual_raw_bound",
+      "actual_alpha_state_error_upper",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/SCALAR_CORRECTION_HASH.json",
+    "sha256": "24790c0617cdf83709c2f696a4111b5c84795694618481ea19826276a9ebd06e",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "scope"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/READ_HASHES.json",
+    "sha256": "600915a285faa90dfaf704c3f324a7cc503daed0ecbb3d9ba73871df5af4eb2c",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/.claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/SOURCE_FREEZE.json",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/outputs/native_finite_excitation_ward_2026_09_09.json",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/scripts/native_finite_excitation_ward_2026_09_09.py",
+      "/private/tmp/toe-native-finite-excitation-ward-20260909/scripts/native_finite_excitation_ward_controls_2026_09_09.py"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/ASSEMBLY_DIFFS.json",
+    "sha256": "885457bd5703e5ccd67995a538bf851e27813058a65408ffd66ad1392f8aa3e2",
+    "type": "dict",
+    "keys": [
+      "6"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/.claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/FREEZE.json",
+    "sha256": "2194d3f7350ef40d94319967e62fb53ae51de1bd930bf596388e9649d335abb9",
+    "type": "dict",
+    "keys": [
+      "ASSEMBLY_DIFFS.json",
+      "READ_HASHES.json",
+      "REVIEW.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8067/docs/audit/data/citation_graph_manifest.json",
+    "sha256": "3f200c75fe975490197f7851101265ed02def45cd5ffee98d74a39c46549a36f",
+    "type": "dict",
+    "keys": [
+      "edge_count",
+      "node_count",
+      "nodes",
+      "schema_version"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/outputs/native_infinite_star_node_reduction_2026_09_09.json",
+    "sha256": "26c12f72f15d7b888c8208ec1a60e078684c33dd685175697c68c348e0d931b1",
+    "type": "dict",
+    "keys": [
+      "status",
+      "checks",
+      "predicate_groups",
+      "groups",
+      "input_sha256",
+      "source_sha256",
+      "elapsed_seconds",
+      "peak_rss_bytes",
+      "physical_runs",
+      "actual_current_surface_status",
+      "alpha_evaluated"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/ORIGINAL_EVIDENCE_HASHES.json",
+    "sha256": "8d00e0cae82a1ae4e0517db1c33cbb45731240ff9920dd49aeb8b0caab270d08",
+    "type": "dict",
+    "keys": [
+      "native-infinite-pair-gap-cold-review/check.py",
+      "native-infinite-pair-gap-cold-review/RESULT.json",
+      "native-infinite-pair-gap-cold-review/RECEIPT.txt",
+      "native-infinite-pair-gap-cold-review/READ_HASHES.json",
+      "native-infinite-pair-gap-cold-review/REVIEW.md",
+      "native-gaussian-soft-commutator-cold-review/READ_HASHES.json",
+      "native-gaussian-soft-commutator-cold-review/EXACT_TAIL_CHECK.json",
+      "native-gaussian-soft-commutator-cold-review/QUANTITATIVE_FILTER.md",
+      "native-gaussian-soft-commutator-cold-review/REVIEW.md",
+      "native-gaussian-soft-commutator-cold-review/MONITOR_READ_HASHES.json",
+      "native-gaussian-soft-commutator-cold-review/GAUSSIAN_COVARIANCE_RESPONSE.md",
+      "native-gaussian-soft-commutator-cold-review/MONITOR_COLD.md",
+      "native-infinite-star-node-cold-review/check.py",
+      "native-infinite-star-node-cold-review/RESULT.json",
+      "native-infinite-star-node-cold-review/READ_HASHES.json",
+      "native-infinite-star-node-cold-review/REVIEW.md",
+      "native-infinite-star-node-stretch/GAUSSIAN_NODE_CONTROL.json",
+      "native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md",
+      "native-infinite-star-node-stretch/SOFT_SHIFT_CONTROL.json",
+      "native-infinite-star-node-stretch/TIME_SLICE_CERTIFICATE.md",
+      "native-infinite-star-node-stretch/NODE_REDUCTION.md",
+      "native-infinite-star-node-stretch/READ_HASHES.json",
+      "native-infinite-star-node-stretch/IMPURITY_GAP_CONTRACT.md",
+      "native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND_before_shift_domain.md",
+      "native-infinite-star-node-stretch/impurity_gap_controls.py",
+      "native-infinite-star-node-stretch/FREEZE_before_adjacent_swap_correction.json",
+      "native-infinite-star-node-stretch/PAIR_ORBITS_before_adjacent_swap_correction.md",
+      "native-infinite-star-node-stretch/NODE_CONTROL.json",
+      "native-infinite-star-node-stretch/IMPROVED_TAIL_CONTROL.json",
+      "native-infinite-star-node-stretch/IMPURITY_GAP_STANDALONE_CONTROL.json",
+      "native-infinite-star-node-stretch/CONTRACT.md",
+      "native-infinite-star-node-stretch/NODE_FREEZE.json",
+      "native-infinite-star-node-stretch/gaussian_node_controls.py",
+      "native-infinite-star-node-stretch/node_controls.py",
+      "native-infinite-star-node-stretch/IMPURITY_GAP_CONTROL.json",
+      "native-infinite-star-node-stretch/PAIR_ORBITS.md",
+      "native-infinite-star-node-stretch/TAIL_CONTROL.json",
+      "native-infinite-star-node-stretch/GAUSSIAN_FILTER_SPATIAL_ATTEMPT.md",
+      "native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND.md",
+      "native-infinite-star-node-stretch/soft_shift_controls.py",
+      "native-infinite-star-node-stretch/UNIFORM_PAIR_GAP.md",
+      "native-infinite-star-node-stretch/FREEZE.json",
+      "native-infinite-star-node-stretch/NODE_GAUSSIAN_REPRESENTATION.md",
+      "native-infinite-star-node-stretch/PAIR_ORBIT_CONTROL.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/CONTROLS.json",
+    "sha256": "9c08a363c9d95d1ca317603abce8e4088a0cbca1ad2b154702ca43808136973b",
+    "type": "dict",
+    "keys": [
+      "checks",
+      "root_isolated_stdout_sha256",
+      "mutations",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+    "sha256": "841a7f17987a517a7c76d0fd12d1cd96a73628e53a1f00065e7fea34549bfd7b",
+    "type": "dict",
+    "keys": [
+      "scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "scripts/native_infinite_star_node_algebra_2026_09_09.py",
+      "scripts/native_infinite_star_node_shift_2026_09_09.py",
+      "scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "scripts/native_infinite_star_node_orbits_tail_2026_09_09.py"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+    "sha256": "35378808581ff4f0685d64ca7fd939cb91c85b9c993ac5c7630565bc78854612",
+    "type": "dict",
+    "keys": [
+      "base",
+      "status",
+      "graph_topology",
+      "files"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+    "sha256": "a2d9de6486b6e1e2b5ec52282d7580115fd67c440ad1565054a8555d0a583d41",
+    "type": "dict",
+    "keys": [
+      "status",
+      "isolated_files",
+      "live_checks",
+      "counts",
+      "controls",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/READ_HASHES.json",
+    "sha256": "a8a1940e2ce0c599c8540d6272ec936adffbe17aea3bc3420f0cccb282dada73",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_algebra_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_shift_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/DELIVERY_FREEZE.json",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/CONTROL_RECEIPT.json",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/AUTHOR_PACKAGE_BUILD.py.txt",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stdout",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/ISOLATED.stderr",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_soft_shift.txt",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_soft_shift.stderr",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_energy_factor.txt",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/wrong_energy_factor.stderr",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/drop_reflection.txt",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/drop_reflection.stderr",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/REVIEW.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/REVIEW.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/outputs/native_infinite_star_node_reduction_2026_09_09.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_READ_HASHES.json",
+    "sha256": "0ed90f06c7b09b41f123f7f177b82ca8a781196cfbe341db6147ab1845a47fd9",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_algebra_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_shift_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/scripts/native_infinite_star_node_orbits_tail_2026_09_09.py",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/PORT_RECORDS/SOURCE_FREEZE.json",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/CONTROLS.json",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_second_log.py.txt",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_second_log.stderr",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_positive_tail.py.txt",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/drop_positive_tail.stderr",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/ROOT.stdout",
+      "/private/tmp/toe-native-infinite-star-node-reduction-20260909/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/QUARTER_REFINEMENT/ROOT_ISOLATED/ROOT.stderr"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/QUARTER_COMPARISON_NOTE.json",
+    "sha256": "93ca133f7f09b52a2f65345fed7788910540f571ad91d32a8913f50d03faf202",
+    "type": "dict",
+    "keys": [
+      "initial_whole_group_equality_failed",
+      "only_difference",
+      "mathematical_fields_equal"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/FINAL_CANONICAL_REVIEW/PORT_DIFFS.json",
+    "sha256": "62c91aa0b05c3809e07dfa32b8cb780ee423e97d1c8cc6971ada5ac2ee815887",
+    "type": "dict",
+    "keys": [
+      "algebra",
+      "shift",
+      "gap"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-stretch/RESULT.json",
+    "sha256": "35ef7f1c5124d023a487de78e087f488c4d4e88ff437427bcc97df4be5dd6ab8",
+    "type": "dict",
+    "keys": [
+      "opposite_lower",
+      "perpendicular_low",
+      "perpendicular_tail",
+      "tail_intervals",
+      "both_exceed_quarter",
+      "laplace_tail_upper",
+      "laplace_tail_less_1e_minus_6",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/RESULT.json",
+    "sha256": "89f9963633ef4e14d24861d575911f320d8d09bbfe8be4cc2520c3504cda9d2c",
+    "type": "dict",
+    "keys": [
+      "checks",
+      "partial",
+      "gap_lower",
+      "tail_upper",
+      "seconds",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-cold-review/READ_HASHES.json",
+    "sha256": "8173ac02caf6100770a2d6887506097e517262afd35b9c06353d1d43ef6eba8e",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/UNIFORM_PAIR_GAP.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/impurity_gap_controls.py",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/IMPURITY_GAP_CONTRACT.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/IMPURITY_GAP_CONTROL.json",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/IMPROVED_TAIL_CONTROL.json",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md",
+      "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RESULT.json",
+    "sha256": "0c923ca509c51f6bb6c9a1d0eb7352c0a0111bab19b7b5fd3925cd0348e8bb7a",
+    "type": "dict",
+    "keys": [
+      "status",
+      "perpendicular_lower_decimal",
+      "opposite_lower",
+      "tail_upper_decimal",
+      "physical_runs",
+      "predicate_groups"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/READ_HASHES.json",
+    "sha256": "a4b1cea99be0397bf7f6ba3e152ba0ae1805efee9f788cf925d852b982f0809f",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-pair-gap-quarter-stretch/DERIVATION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-pair-gap-quarter-stretch/check.py",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-pair-gap-quarter-stretch/RESULT.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-pair-gap-quarter-cold-review/RESULT_BEFORE_COUNT_LABEL.json",
+    "sha256": "c81fc561fc01d8cf155c1e904c9d88f2b0fcdf2a6585d2437154dadc9d41b0f0",
+    "type": "dict",
+    "keys": [
+      "status",
+      "perpendicular_lower_decimal",
+      "opposite_lower",
+      "tail_upper_decimal",
+      "exact_comparisons",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/READ_HASHES.json",
+    "sha256": "0e5ab98bf57dc7c9678f91ece36bb035c118e197213b42c319fd572c30220284",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND_before_shift_domain.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/GAUSSIAN_SOFT_COMMUTATOR_BOUND.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/SOFT_LIMIT_AND_LAPLACE.md",
+      "/private/tmp/toe-24h-probes-20260908/native-infinite-star-node-stretch/GAUSSIAN_FILTER_SPATIAL_ATTEMPT.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/EXACT_TAIL_CHECK.json",
+    "sha256": "dea61fa073ea83c933cef54b808348de7d89537a4e306c4f3e084f8537991c9d",
+    "type": "dict",
+    "keys": [
+      "inverse_error_upper",
+      "time_tail_upper",
+      "both_less_than",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-gaussian-soft-commutator-cold-review/MONITOR_READ_HASHES.json",
+    "sha256": "3c90f5dfe50c522ff6ef1caaf8b45a3a1ae6707d0624b147c9967af911a8f5c8",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-root-review/ROOT_FREEZE.json",
+      "/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-root-review/run_once.py",
+      "/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-root-review/REVIEW.md",
+      "/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/FREEZE.json",
+      "/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/run.py",
+      "/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/PROTOCOL.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/RESULT.json",
+    "sha256": "10c68fd5768420886520c3833e794b7837eb720600b5b48d53a03b683b352b2b",
+    "type": "dict",
+    "keys": [
+      "status",
+      "predicates",
+      "nonadjacent_single_product_gauge_mismatches",
+      "ordered_pair_orbit_sizes",
+      "original_gap_tail_below_1e_minus6",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-cold-review/READ_HASHES.json",
+    "sha256": "211a412d0e93620325b0654d50fac7903d8c41e774e3513ddf087f681cc27dcb",
+    "type": "dict",
+    "keys": [
+      "NODE_REDUCTION.md",
+      "PAIR_ORBITS.md",
+      "SOFT_LIMIT_AND_LAPLACE.md",
+      "NODE_GAUSSIAN_REPRESENTATION.md",
+      "node_controls.py",
+      "soft_shift_controls.py",
+      "gaussian_node_controls.py",
+      "TAIL_CONTROL.json",
+      "PAIR_ORBIT_CONTROL.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/GAUSSIAN_NODE_CONTROL.json",
+    "sha256": "f123615b115d15f5fdc793c25b4d1355e7525d6827d4c2aad874a041a699bf1f",
+    "type": "dict",
+    "keys": [
+      "status",
+      "exact_scaled_integer_checks",
+      "omitted_rotation_term_mismatches",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/SOFT_SHIFT_CONTROL.json",
+    "sha256": "a2243584ed03939d7f2a97dee28253db00d4398520b250937e5cc7038d83affe",
+    "type": "dict",
+    "keys": [
+      "status",
+      "entry_checks",
+      "two_inverse_vacuum_check",
+      "omitted_shift_mismatches",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/READ_HASHES.json",
+    "sha256": "a05fef0d2eb3ae38a3e86b74cf9773bb7949a629c27a016292259ccf1c78e35f",
+    "type": "dict",
+    "keys": [
+      "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "/private/tmp/toe-24h-probes-20260908/native-third-order-hybridization/DERIVATION.md",
+      "/private/tmp/toe-24h-probes-20260908/native-third-vertex-exact-identity/DERIVATION.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/FREEZE_before_adjacent_swap_correction.json",
+    "sha256": "d28be565225a4e25a1ba98af89354985def756a35faa135dece72a74fc34bd6d",
+    "type": "dict",
+    "keys": [
+      "NODE_REDUCTION.md",
+      "NODE_GAUSSIAN_REPRESENTATION.md",
+      "node_controls.py",
+      "NODE_CONTROL.json",
+      "gaussian_node_controls.py",
+      "GAUSSIAN_NODE_CONTROL.json",
+      "CONTRACT.md",
+      "READ_HASHES.json",
+      "TIME_SLICE_CERTIFICATE.md",
+      "PAIR_ORBITS.md",
+      "PAIR_ORBIT_CONTROL.json",
+      "SOFT_LIMIT_AND_LAPLACE.md",
+      "TAIL_CONTROL.json",
+      "soft_shift_controls.py",
+      "SOFT_SHIFT_CONTROL.json",
+      "IMPURITY_GAP_CONTRACT.md",
+      "IMPURITY_GAP_CONTROL.json",
+      "UNIFORM_PAIR_GAP.md",
+      "IMPROVED_TAIL_CONTROL.json",
+      "impurity_gap_controls.py"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_CONTROL.json",
+    "sha256": "c2e1040badabec2d4a18f8a2cfe5f8d90a910a318bedaf95a5daba5c32ac0e6e",
+    "type": "dict",
+    "keys": [
+      "status",
+      "checks",
+      "physical_runs",
+      "scope"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPROVED_TAIL_CONTROL.json",
+    "sha256": "2de4681b22564c07588505f997124f48234d28d0922afd34839d09b450703087",
+    "type": "dict",
+    "keys": [
+      "delta",
+      "T",
+      "beta_upper",
+      "exp_lower_degree",
+      "tail_exact_upper",
+      "tail_less_than",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_STANDALONE_CONTROL.json",
+    "sha256": "02e0595cfae7c5767c783ca55c3edec793f0d982716c8cb945fce605d90495f7",
+    "type": "dict",
+    "keys": [
+      "return_cutoff",
+      "return_partial_exact",
+      "return_partial_less_than",
+      "tail_upper",
+      "A0_upper",
+      "log_terms",
+      "gap_lower_exact",
+      "gap_lower_exceeds_1_6",
+      "seconds",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/NODE_FREEZE.json",
+    "sha256": "b7fafad007b8e1b4faa181ed0dc839f6db27cbae539f58934e7bf3070162d202",
+    "type": "dict",
+    "keys": [
+      "CONTRACT.md",
+      "READ_HASHES.json",
+      "NODE_REDUCTION.md",
+      "node_controls.py",
+      "NODE_CONTROL.json"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/IMPURITY_GAP_CONTROL.json",
+    "sha256": "3e5dc9ca7112be3a9b79f403c4de5accd059bc4451b3a419c646deb6aca47e30",
+    "type": "dict",
+    "keys": [
+      "return_cutoff",
+      "return_partial_exact",
+      "return_partial_less_than",
+      "tail_upper",
+      "A0_upper",
+      "log_terms",
+      "gap_lower_exact",
+      "gap_lower_exceeds_1_6",
+      "seconds",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/TAIL_CONTROL.json",
+    "sha256": "760d427782be560cf016409f937fcef6f316ef39649afc4083e0264ef4395211",
+    "type": "dict",
+    "keys": [
+      "delta",
+      "beta_upper",
+      "T",
+      "exp_lower_taylor_degree",
+      "tail_upper_less_than",
+      "exact_comparison",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/FREEZE.json",
+    "sha256": "529a60746799bd1c9948c8052ab6453d7a3a482fc059d19546cb9d60c5b3b59a",
+    "type": "dict",
+    "keys": [
+      "NODE_REDUCTION.md",
+      "NODE_GAUSSIAN_REPRESENTATION.md",
+      "node_controls.py",
+      "NODE_CONTROL.json",
+      "gaussian_node_controls.py",
+      "GAUSSIAN_NODE_CONTROL.json",
+      "CONTRACT.md",
+      "READ_HASHES.json",
+      "TIME_SLICE_CERTIFICATE.md",
+      "PAIR_ORBITS.md",
+      "PAIR_ORBIT_CONTROL.json",
+      "SOFT_LIMIT_AND_LAPLACE.md",
+      "TAIL_CONTROL.json",
+      "soft_shift_controls.py",
+      "SOFT_SHIFT_CONTROL.json",
+      "IMPURITY_GAP_CONTRACT.md",
+      "IMPURITY_GAP_CONTROL.json",
+      "UNIFORM_PAIR_GAP.md",
+      "IMPROVED_TAIL_CONTROL.json",
+      "impurity_gap_controls.py",
+      "PAIR_ORBITS_before_adjacent_swap_correction.md",
+      "IMPURITY_GAP_STANDALONE_CONTROL.json",
+      "GAUSSIAN_FILTER_SPATIAL_ATTEMPT.md",
+      "GAUSSIAN_SOFT_COMMUTATOR_BOUND.md",
+      "GAUSSIAN_SOFT_COMMUTATOR_BOUND_before_shift_domain.md"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/evidence/native-infinite-star-node-stretch/PAIR_ORBIT_CONTROL.json",
+    "sha256": "53b91a26d87d288eeb8bc392c288a9a7022b156c2f3e257b5e23a271e66a4935",
+    "type": "dict",
+    "keys": [
+      "status",
+      "orbits",
+      "maps",
+      "words",
+      "physical_runs"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/SOURCE_FREEZE.json",
+    "sha256": "2d2661455332faa56d62b2c7157a7c1bfb6ec5fbe8c0b67caad4aff7988ea218",
+    "type": "dict",
+    "keys": [
+      "scripts/native_infinite_star_node_reduction_2026_09_09.py",
+      "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "scripts/native_infinite_star_node_algebra_2026_09_09.py",
+      "scripts/native_infinite_star_node_shift_2026_09_09.py",
+      "scripts/native_infinite_star_node_gap_2026_09_09.py",
+      "scripts/native_infinite_star_node_orbits_tail_2026_09_09.py"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/DELIVERY_FREEZE.json",
+    "sha256": "01824f300c949f1d2de933195c10cef90ca3f35dbb55bc502517f1aae39935f3",
+    "type": "dict",
+    "keys": [
+      "base",
+      "status",
+      "graph_built",
+      "files"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/.claude/science/physics-loops/native-infinite-star-node-reduction-20260909/history/h6_before_positive_tail_refinement/outputs/native_infinite_star_node_reduction_2026_09_09.json",
+    "sha256": "9e10bd581c7d1a31c4224f1f9920d51da929f2d5c8e61cb33cb7b7e506632eec",
+    "type": "dict",
+    "keys": [
+      "status",
+      "checks",
+      "predicate_groups",
+      "groups",
+      "input_sha256",
+      "source_sha256",
+      "elapsed_seconds",
+      "peak_rss_bytes",
+      "physical_runs",
+      "actual_current_surface_status",
+      "alpha_evaluated"
+    ]
+  },
+  {
+    "path": "check8067/original-8066/docs/audit/data/citation_graph_manifest.json",
+    "sha256": "6f83ce30743510309e7a3c8f9671fcf4d7af5d84e1cd7167f2b456974f68e9b8",
+    "type": "dict",
+    "keys": [
+      "edge_count",
+      "node_count",
+      "nodes",
+      "schema_version"
+    ]
+  }
+]

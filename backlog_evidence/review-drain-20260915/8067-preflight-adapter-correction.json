@@ -1,0 +1,9 @@
+{
+  "source_unchanged": true,
+  "removed_only_non_science_category": [
+    "outputs/native_finite_excitation_ward_2026_09_09.md"
+  ],
+  "reason": "Generated output summary is not in discoverable docs note closure; remains source/output and original disposition mapped.",
+  "prior_record": "8067-unit-preexecution-v2.json",
+  "failed_result": "8067-preexecution-preflight.json"
+}

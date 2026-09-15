@@ -1,0 +1,1030 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "746612939df9c012927fc109db1bfa06fb2b28c3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ARTIFACT_PLAN.md",
+      "raw_bytes": 156,
+      "raw_sha256": "14ca044e40b5f2b93d358f14335eed104f532f245b2218229ea3f4086fd5cc51",
+      "stored_path": "_objects/14ca044e40b5f2b93d358f14335eed104f532f245b2218229ea3f4086fd5cc51.gz",
+      "stored_sha256": "59c3a7b2b25f6c57428373d78c0b3af8550aebf0e47144db7fc6b3f1ad1dcf62"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e95ff780a7e51906a19049a7e85fb49150cc80db",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 186,
+      "raw_sha256": "054f03d3a23a6b272348607d3949992886624b24374af00879266db22641cf83",
+      "stored_path": "_objects/054f03d3a23a6b272348607d3949992886624b24374af00879266db22641cf83.gz",
+      "stored_sha256": "9dc49132ca72493fbbeac54510bb348bcf4a7bbb5674718f75ae603c24f48730"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d3bf1f1af758b11f95a032f27077da0dec04a553",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 887,
+      "raw_sha256": "59722e917c87b85764f651a53b93a3492e4cb66c6740035f24012756447d510a",
+      "stored_path": "_objects/59722e917c87b85764f651a53b93a3492e4cb66c6740035f24012756447d510a.gz",
+      "stored_sha256": "e648dcce3035929dc9962c18c0f5287f84ec010afd8986089ccc891460954c80"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "db70f628ac664807b2529c87c5e504d2cbfacf5d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/DELIVERY_FREEZE.json",
+      "raw_bytes": 15319,
+      "raw_sha256": "b05cac06a88f155b72c1f8f2cbe4e0f106a2ba6ffe43d2483bb4aedeb59ccc83",
+      "stored_path": "_objects/b05cac06a88f155b72c1f8f2cbe4e0f106a2ba6ffe43d2483bb4aedeb59ccc83.gz",
+      "stored_sha256": "3e6705737d47218008ca7620ff1dbadc1136d6345d1d81e6c83767ce8b58744b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4156e770d69bb681c3e0b984d5f4b3f69b9ea3d0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ENERGY_DERIVATIVE_CORRECTION.md",
+      "raw_bytes": 316,
+      "raw_sha256": "ad0978eb65cb699544bbc3d59e52d073b083c15810b4e652b1d134c802e9490a",
+      "stored_path": "_objects/ad0978eb65cb699544bbc3d59e52d073b083c15810b4e652b1d134c802e9490a.gz",
+      "stored_sha256": "f322bb47e43e2fe0eb79780610851a239682827c02a332e7b1289794636f6b3d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "649e2c65393167524829903ae8bdb803fab15eb3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/GOAL.md",
+      "raw_bytes": 104,
+      "raw_sha256": "cbfb625e99f5f557f1c43c7803d2211425a0e46fc9eb2dbe54ac9fbc6047796a",
+      "stored_path": "_objects/cbfb625e99f5f557f1c43c7803d2211425a0e46fc9eb2dbe54ac9fbc6047796a.gz",
+      "stored_sha256": "a77d90ee567efadb1e237354f2290663a0d48b495c322ba614d2801553ea40f0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "dca5b19c210d75a7dd76a6a85c0bffab6bde2d52",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/HANDOFF.md",
+      "raw_bytes": 1753,
+      "raw_sha256": "adf7e345e1edd7046d9380252d92794f3ee638cac5d908ad6d5358a51fb020af",
+      "stored_path": "kept/pr8067-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "adf7e345e1edd7046d9380252d92794f3ee638cac5d908ad6d5358a51fb020af"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "737807665c0ade4c6feda64ec6039aaf064e2ccd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/LITERATURE_BRIDGES.md",
+      "raw_bytes": 204,
+      "raw_sha256": "6b82b3c90f8f999a8cc4a371788dd22fd84cc982755a86ae471aab2de3b6a13c",
+      "stored_path": "_objects/6b82b3c90f8f999a8cc4a371788dd22fd84cc982755a86ae471aab2de3b6a13c.gz",
+      "stored_sha256": "8317c7f928994010759810411637099c3e2687dd51557bbc19bc83429911da19"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "00d590c006152afaec78f2dd454cbf66c3d861c2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/NOTE_BEFORE_DIRECT_DERIVATIVE.md",
+      "raw_bytes": 42202,
+      "raw_sha256": "6aa11088ffe4ec7a84df522588968af1af76f9aba140ae21c475e5903797fbc4",
+      "stored_path": "_objects/6aa11088ffe4ec7a84df522588968af1af76f9aba140ae21c475e5903797fbc4.gz",
+      "stored_sha256": "04927e05ba644b0bed261763e017baf4a507dcb2bb0ca5f0bf13a642a055aa06"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fe297b386e9049f58e4ebf1b1dc7a16a133ac8f6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/NO_GO_LEDGER.md",
+      "raw_bytes": 174,
+      "raw_sha256": "7fd5eff7365604e7e58fdf5a928f6499a64b4c04b65fbe49cdc0a736cc35080b",
+      "stored_path": "_objects/7fd5eff7365604e7e58fdf5a928f6499a64b4c04b65fbe49cdc0a736cc35080b.gz",
+      "stored_sha256": "abb38fc500b2cc3d6e817fdf6d406392025bdd1850a83baf576ffba732f9c04d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4e69a0255c53b3f852b2e07dc604d09dd8358190",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 190,
+      "raw_sha256": "77038975e426b175030f40e4bc23dc2f1bd27a0660ed664ab14e5525e7f2a212",
+      "stored_path": "_objects/77038975e426b175030f40e4bc23dc2f1bd27a0660ed664ab14e5525e7f2a212.gz",
+      "stored_sha256": "c6fbac7689a73ca220af15f5daa7d2344a3278d4a72749c08267ddf397d642b7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "981134d69784d0e05485ca1251bce084224de6e4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/PR_BACKLOG.md",
+      "raw_bytes": 138,
+      "raw_sha256": "582f4e2c93dea5eb967b6cca93b56f2837399bb9707e05818fc4b6b634c1d428",
+      "stored_path": "_objects/582f4e2c93dea5eb967b6cca93b56f2837399bb9707e05818fc4b6b634c1d428.gz",
+      "stored_sha256": "831787b2d4ae661d3e65e64ddedac07d1ab8ce6dac7a94b0d1d0a6a662b34db8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4fdfc13817be23b124061177073381bba68acf33",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/REVIEW_HISTORY.md",
+      "raw_bytes": 955,
+      "raw_sha256": "fc079346cac54da6ddb2038ab31d7b48a99a226be5ce05c8dcb386d7f22900c3",
+      "stored_path": "kept/pr8067-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "fc079346cac54da6ddb2038ab31d7b48a99a226be5ce05c8dcb386d7f22900c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "364af8eb23ff786b35ffcba2b50ec0dbcf20670b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 191,
+      "raw_sha256": "3bff4d12755b34cbf9b407f696699d4cbe2f89d9d711cdb4d232794d7a134375",
+      "stored_path": "_objects/3bff4d12755b34cbf9b407f696699d4cbe2f89d9d711cdb4d232794d7a134375.gz",
+      "stored_sha256": "03e2abf63a001aa51eb5d863c65827563184d53775aa839adcc62ea056b38402"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6bb21ea703972b3f90b1ad8e84e96c485ee6696e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/CORRECTED_WARD_IDENTITY.md",
+      "raw_bytes": 3863,
+      "raw_sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621",
+      "stored_path": "_objects/4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621.gz",
+      "stored_sha256": "05a30d9081bef1592390a04bbc0e59a319c370c5fcfc3c86bcff1f09db2ece6a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "548556fd6e44aca9bbae3d13c7a8c90b95538362",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/FOCK_AND_QUENCH_EXTENSION.md",
+      "raw_bytes": 7229,
+      "raw_sha256": "21400ab0bdbbf4b34c42400c49af76dfb5bced0c7ba84ae2ba818774270441e4",
+      "stored_path": "_objects/21400ab0bdbbf4b34c42400c49af76dfb5bced0c7ba84ae2ba818774270441e4.gz",
+      "stored_sha256": "312fdba64e773ae8744f026ce4cc370cbe87a591e5598e4b1c85228af5a60375"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ca3e9988bbf55a2a42008d2ffa549d7b97a3d8ba",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/LOW_RANK_PROJECTOR_CERTIFICATE.md",
+      "raw_bytes": 3482,
+      "raw_sha256": "943237a3cabc4346fd8c7d9191833e77ea14a4dda249195b632eb92f86aa062a",
+      "stored_path": "_objects/943237a3cabc4346fd8c7d9191833e77ea14a4dda249195b632eb92f86aa062a.gz",
+      "stored_sha256": "54d265ce05001c0bcd431b516ac124767f8f998b0d6d3062689774b820ba30df"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2778d21efbe7ee679d9fe6cdd5f0caa0ed81e524",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/LOW_RANK_WARD_COMBINATION.md",
+      "raw_bytes": 4572,
+      "raw_sha256": "d117cf861e7115ccb78c77cbe118eb805f2d1c8f1e1ed8e1cb738576d9416436",
+      "stored_path": "_objects/d117cf861e7115ccb78c77cbe118eb805f2d1c8f1e1ed8e1cb738576d9416436.gz",
+      "stored_sha256": "3d4eb6f7960a69c2312b2ba87341e5e58221f8df2dd8647fdbd6409541dde7e4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "11272fd6738ce2720beeba86d7c1c1ef180c92c8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/NATIVE_WARD_ROUTE.md",
+      "raw_bytes": 4253,
+      "raw_sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0",
+      "stored_path": "_objects/840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0.gz",
+      "stored_sha256": "38c6847d47b2d9a5c939c60114311bd1bfcb1d409e71ff1808e7ee7e94636bc2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "91ab147e0da16cd8c24cc9670733714961ec3a94",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/SCALAR_ENERGY_IDENTIFICATION.md",
+      "raw_bytes": 6021,
+      "raw_sha256": "e6779882c8c9de2f734e8fe4c346c9a65643c526b3dbedd4f612e358e382827b",
+      "stored_path": "_objects/e6779882c8c9de2f734e8fe4c346c9a65643c526b3dbedd4f612e358e382827b.gz",
+      "stored_sha256": "c9d94ad13adfe7203216c3570f28192709446d38039866cfcd3ff51ca44c9bc8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bd73d95e3b2958af76bb53a0bfb1cdccdba65bd5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/TRACE_CLASS_IMPURITY_PROJECTOR.md",
+      "raw_bytes": 3496,
+      "raw_sha256": "5654417a40c26abf8e634d79cdbe5d7cd63dfa2643677488813111678d4ef0c1",
+      "stored_path": "_objects/5654417a40c26abf8e634d79cdbe5d7cd63dfa2643677488813111678d4ef0c1.gz",
+      "stored_sha256": "ea80e0b9b2491674c36418a3f88c900f83b14ef5094a8543648f0a19060dddac"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bcd403d7c097726c6f31a6bef45d909ebda231e7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROOFS/UNNORMALIZED_FINITE_EXCITATION_ROUTE.md",
+      "raw_bytes": 5206,
+      "raw_sha256": "6a00291cb8d22ccba773dbe8eee64560d3e7149ce48310ee63b18df1a0b1063e",
+      "stored_path": "_objects/6a00291cb8d22ccba773dbe8eee64560d3e7149ce48310ee63b18df1a0b1063e.gz",
+      "stored_sha256": "2fd10299521485b3824a253e80ac98f34612b349f6c4e9edc1920cc9e8401aea"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d7818e8a9f0783c92a619a99b94c3d81c9e1a1b1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/SOURCE_PROVENANCE.json",
+      "raw_bytes": 1437,
+      "raw_sha256": "3a3bb99c17d202f347b946aafe1024e0c5a87ebb3d3169b2d428d92009eae697",
+      "stored_path": "_objects/3a3bb99c17d202f347b946aafe1024e0c5a87ebb3d3169b2d428d92009eae697.gz",
+      "stored_sha256": "eb1a961429bbb3f89496d350886818b8b9a97e3049d69f7875ac0745838f95bb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7450b2b81271df7b6ecac2bd0548263f2ad069fb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/STATE.yaml",
+      "raw_bytes": 1172,
+      "raw_sha256": "72cf4e0c586264c88586fc60b7771ab6df502d69f807ba3924497a599a3de8b6",
+      "stored_path": "_objects/72cf4e0c586264c88586fc60b7771ab6df502d69f807ba3924497a599a3de8b6.gz",
+      "stored_sha256": "ea2d84d861a206bacab93a10036127c7b6731e798d9ee4c38a189f3d2eb51624"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "138e3b87e7559bca1c96b8d04fe5106f497b3349",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/TRACE_GATE.md",
+      "raw_bytes": 830,
+      "raw_sha256": "5c593c075c7a617296eeb31074bc9227220e25c9bade0f81b66aa0e001ba4c20",
+      "stored_path": "_objects/5c593c075c7a617296eeb31074bc9227220e25c9bade0f81b66aa0e001ba4c20.gz",
+      "stored_sha256": "f7a9ab583b5479687e40fbdc61eb14082864430dbad7292784a28ad3e8c602cc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a01fd7c8fed6558e9672910274bdd18ab89eaa28",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/ASSEMBLY_DIFFS.json",
+      "raw_bytes": 1956,
+      "raw_sha256": "885457bd5703e5ccd67995a538bf851e27813058a65408ffd66ad1392f8aa3e2",
+      "stored_path": "_objects/885457bd5703e5ccd67995a538bf851e27813058a65408ffd66ad1392f8aa3e2.gz",
+      "stored_sha256": "751fe94672e5e861d75cd7656684b5eed98d664f66bc96577864a8999a45bee3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c5354be995a197413c934c723b84cf6d85ea9fbe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/FREEZE.json",
+      "raw_bytes": 269,
+      "raw_sha256": "2194d3f7350ef40d94319967e62fb53ae51de1bd930bf596388e9649d335abb9",
+      "stored_path": "_objects/2194d3f7350ef40d94319967e62fb53ae51de1bd930bf596388e9649d335abb9.gz",
+      "stored_sha256": "218aab694fdb62c184bca7f6bb8ff3e28394413b6b875af8f36697e6b723b9b6"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "eaff6fbb963f9c3adec8659bd016b8168f61aaae",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/READ_HASHES.json",
+      "raw_bytes": 1929,
+      "raw_sha256": "600915a285faa90dfaf704c3f324a7cc503daed0ecbb3d9ba73871df5af4eb2c",
+      "stored_path": "_objects/600915a285faa90dfaf704c3f324a7cc503daed0ecbb3d9ba73871df5af4eb2c.gz",
+      "stored_sha256": "bcfbcabb97e3d3123e1291d25619071302a4647784c29aee380e2fced1915396"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "14e70006726fc60bdb4128df02d7cb553ecca135",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/REVIEW.md",
+      "raw_bytes": 3336,
+      "raw_sha256": "e2a3d61703dc520fbc951f2d7024b63384fef3ac78244b916d1b5b03b2ac441e",
+      "stored_path": "_objects/e2a3d61703dc520fbc951f2d7024b63384fef3ac78244b916d1b5b03b2ac441e.gz",
+      "stored_sha256": "a892e37bbea6565f53021d421c94466a63b394bd67d2c6dab4e66d2783cf94a4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0d4728897f3013fe72ea83b63a2f84118c74b43f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-canonical-cold-review/STATUS_CONFIRMATION.md",
+      "raw_bytes": 806,
+      "raw_sha256": "138d1aa3337a07cd412178ea827619962c3a66c693ae5db82577e6085e038d64",
+      "stored_path": "_objects/138d1aa3337a07cd412178ea827619962c3a66c693ae5db82577e6085e038d64.gz",
+      "stored_sha256": "aec0e884eceba2a078121de4cb796c1b8f0e07235158bb6f861c63ae497493da"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "61b7e9d8a08576ec474a2e57e1a5bd363cf82a8f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/INITIAL_READ_HASHES.json",
+      "raw_bytes": 729,
+      "raw_sha256": "80953ab998783773dcccb4e7a1a5b13437d9bd73157343b8d3241891c901e494",
+      "stored_path": "_objects/80953ab998783773dcccb4e7a1a5b13437d9bd73157343b8d3241891c901e494.gz",
+      "stored_sha256": "c8e5a7dae4fd8d686b13215cb5922e949820b01fcbae82b4cbc89b5fa71f879b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3b28a814857394d3492c1b54df9df4d07995b17e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/REVIEW.md",
+      "raw_bytes": 6908,
+      "raw_sha256": "e4b6dca1b86d431732064c8095c812bc9847fa21e100bd0d2276b120997067e8",
+      "stored_path": "_objects/e4b6dca1b86d431732064c8095c812bc9847fa21e100bd0d2276b120997067e8.gz",
+      "stored_sha256": "c659a4d27bde911b133f1907ed54458c4d1fd347334fc1bd75da9858cfa3d53d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "25849315004bc7ee7275da89b49d049083badf81",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/REVIEW_PENDING_SCALAR.md",
+      "raw_bytes": 5381,
+      "raw_sha256": "b38a302599b0c906f7f3e13782ac6aa01bb1fd087ee39331f4eff7bed821a2c0",
+      "stored_path": "_objects/b38a302599b0c906f7f3e13782ac6aa01bb1fd087ee39331f4eff7bed821a2c0.gz",
+      "stored_sha256": "ec34c50013d17b92da35aa4c7001541142bba96410767346f3d6964f80ab123c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c78389dfbbdec948931bfbd8f6fb6baaf11310b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/SCALAR_CORRECTION_HASH.json",
+      "raw_bytes": 250,
+      "raw_sha256": "24790c0617cdf83709c2f696a4111b5c84795694618481ea19826276a9ebd06e",
+      "stored_path": "_objects/24790c0617cdf83709c2f696a4111b5c84795694618481ea19826276a9ebd06e.gz",
+      "stored_sha256": "175b3cff0d1d83607bc92b5e59bd595ffefc2f37a3ba7a6e8fa245a1ac4a1407"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "18b4aa51e2305cef1a0b1fc43ed812dc6054e788",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/reviews/native-finite-excitation-ward-cold-review/WARD_BUDGET.json",
+      "raw_bytes": 399,
+      "raw_sha256": "851002265dc1ae362874a1a74aa2a2648465c2c76f1d5dcca267298b07c039e4",
+      "stored_path": "_objects/851002265dc1ae362874a1a74aa2a2648465c2c76f1d5dcca267298b07c039e4.gz",
+      "stored_sha256": "3ec7f15127d90083bace9c58a4e9a7e8d371d03edb0748baabfc8f4141594c88"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7f003c025e72971520f90feb8cfbc933f245c379",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/CLI_CONTROLS.json",
+      "raw_bytes": 477,
+      "raw_sha256": "241d4defb404f11d408632f02b41ea8971a6dc9a0353ed142d807782ce43e241",
+      "stored_path": "_objects/241d4defb404f11d408632f02b41ea8971a6dc9a0353ed142d807782ce43e241.gz",
+      "stored_sha256": "d2bbc7499f10203f46aacf227604225a5e1f63b938e904be01a6a22325ca8490"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_BUILD.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2d80b967562ddc000fc7117d0e579ec3e9d2a1b8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_BUILD.stdout",
+      "raw_bytes": 280,
+      "raw_sha256": "cbbfa80a0c60c82974ee5ea3f3cbb3031b9879500f5aad7809d0b3e79be6e397",
+      "stored_path": "_objects/cbbfa80a0c60c82974ee5ea3f3cbb3031b9879500f5aad7809d0b3e79be6e397.gz",
+      "stored_sha256": "29df3b602c153b8e18d6f634bd34882b26dc0ffd6eef338e6247a1053b17b7e4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "607156043a2cc6c09742fc7a0f2f11fb213803e9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/GRAPH_CHECK.json",
+      "raw_bytes": 527,
+      "raw_sha256": "a0acdbdb0a4d18b90185c3901f44e57af25b96a6ccb448c2d7fe34acc4deb4ce",
+      "stored_path": "_objects/a0acdbdb0a4d18b90185c3901f44e57af25b96a6ccb448c2d7fe34acc4deb4ce.gz",
+      "stored_sha256": "613babe90da3655c593d8d997d45ff9a807471286b1017698fe2f9780e3c2330"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "49ca2b26167cd4fdea1ac10e647b511872666ca9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATED.stdout",
+      "raw_bytes": 1446,
+      "raw_sha256": "9605d2eb2f0e4595b4781b04c3d65bc96c2ef7d6e73321daaf455478224ac6c4",
+      "stored_path": "_objects/9605d2eb2f0e4595b4781b04c3d65bc96c2ef7d6e73321daaf455478224ac6c4.gz",
+      "stored_sha256": "4f324b695780738ebbd4b123aa059db5adf9f4a754d7e4e153e9d085a76f5bca"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bc056649c8dc0210722102a892ba709ed9255790",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/ISOLATION.json",
+      "raw_bytes": 383,
+      "raw_sha256": "e727efaeb1eba64a50fff4322ac90ea1bedfbc9562f6d730bf62811b15eead38",
+      "stored_path": "_objects/e727efaeb1eba64a50fff4322ac90ea1bedfbc9562f6d730bf62811b15eead38.gz",
+      "stored_sha256": "15291049c7e95e41e8e69644a7c97b0759c18ac0d20f32c94781e1001cc91b3b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "47e1f94b775a11a29061cdc7418b531a9b94f7a2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/SOURCE_FREEZE.json",
+      "raw_bytes": 1068,
+      "raw_sha256": "3d19cc5f3c08998b4f4f77f9568dfe6184bf25c3f12dc7cdbce9bd835dc4632a",
+      "stored_path": "_objects/3d19cc5f3c08998b4f4f77f9568dfe6184bf25c3f12dc7cdbce9bd835dc4632a.gz",
+      "stored_sha256": "2c551bb5f8e3d63eca51c9b0625e595203d600c3146bbfbf1f23c669d1fa956b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d257fc34e8c55e48321ff32f0462bb9caff3b95e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/VERIFICATION_PROTOCOL.md",
+      "raw_bytes": 407,
+      "raw_sha256": "ae4b05ec48f14bc1fe03da00cf0bd9eca2d0cbc06ec59c3ae503eb0fd6bdc3f7",
+      "stored_path": "_objects/ae4b05ec48f14bc1fe03da00cf0bd9eca2d0cbc06ec59c3ae503eb0fd6bdc3f7.gz",
+      "stored_sha256": "9564e251d370f373e0067dc16814ffcb3607af806dc0303c91ee6f36c1af7589"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ecbe639fa8bbc1a8338198407aa155af5b6354ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "raw_bytes": 42398,
+      "raw_sha256": "e589e7fcc3af9717d84be682b9c2edcf7b4ef1141da5751d3cea0593cb5f727c",
+      "stored_path": "_objects/e589e7fcc3af9717d84be682b9c2edcf7b4ef1141da5751d3cea0593cb5f727c.gz",
+      "stored_sha256": "fb1b44b7bf091dc27651e45e335708280e41ce667808b53d387579121d6f9db5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ecbe639fa8bbc1a8338198407aa155af5b6354ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "raw_bytes": 42398,
+      "raw_sha256": "e589e7fcc3af9717d84be682b9c2edcf7b4ef1141da5751d3cea0593cb5f727c",
+      "stored_path": "_objects/e589e7fcc3af9717d84be682b9c2edcf7b4ef1141da5751d3cea0593cb5f727c.gz",
+      "stored_sha256": "fb1b44b7bf091dc27651e45e335708280e41ce667808b53d387579121d6f9db5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "faf6e86c87408c7675d8f8d9e1d93bafe89f7ee8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/SOURCE_FREEZE.json",
+      "raw_bytes": 1068,
+      "raw_sha256": "61cdb4dc16246b6eaa4776db17592e401fb64753fe1065acb22d5fa4ccc837fe",
+      "stored_path": "_objects/61cdb4dc16246b6eaa4776db17592e401fb64753fe1065acb22d5fa4ccc837fe.gz",
+      "stored_sha256": "d053af2f0f7540825ac2d31e591e6b15c45067ef7bc94ef3e4f665547c67b5b9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d8f0421b783615f6be31e88e20944e9dfd189083",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.json",
+      "raw_bytes": 1446,
+      "raw_sha256": "0f5c39a7ed002698f7e9c85b6cd5294427b6865d6b66adc805ddecc64bc8f264",
+      "stored_path": "_objects/0f5c39a7ed002698f7e9c85b6cd5294427b6865d6b66adc805ddecc64bc8f264.gz",
+      "stored_sha256": "afb432eb513ac21689d37990334db614eb6d0111b38a980f43767328a2af10a1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a2ed831ddd4ab93213ccb8f2baec9f8ddf65a827",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09.py",
+      "raw_bytes": 1348,
+      "raw_sha256": "fd6e15e573b4a17ad92713c28351766b2f5a25dcf298b418b865e9bd9fa026e6",
+      "stored_path": "_objects/fd6e15e573b4a17ad92713c28351766b2f5a25dcf298b418b865e9bd9fa026e6.gz",
+      "stored_sha256": "81d6027a3fcfd54596c1988389d1b14887b976054af3c7daa6b5b00aa1d5a49f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a2ed831ddd4ab93213ccb8f2baec9f8ddf65a827",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/scripts/native_finite_excitation_ward_2026_09_09.py",
+      "raw_bytes": 1348,
+      "raw_sha256": "fd6e15e573b4a17ad92713c28351766b2f5a25dcf298b418b865e9bd9fa026e6",
+      "stored_path": "_objects/fd6e15e573b4a17ad92713c28351766b2f5a25dcf298b418b865e9bd9fa026e6.gz",
+      "stored_sha256": "81d6027a3fcfd54596c1988389d1b14887b976054af3c7daa6b5b00aa1d5a49f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2289d42643f46768e5b4d7fabbd7d6d3d720dc66",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/history-before-review-status/native_finite_excitation_ward_2026_09_09_inputs.json",
+      "raw_bytes": 809,
+      "raw_sha256": "4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854",
+      "stored_path": "_objects/4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854.gz",
+      "stored_sha256": "76ba08b74500e7a880e1bad6718ba6dd5254efbfe28f9c74a6e805b7a772a219"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2289d42643f46768e5b4d7fabbd7d6d3d720dc66",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+      "raw_bytes": 809,
+      "raw_sha256": "4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854",
+      "stored_path": "_objects/4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854.gz",
+      "stored_sha256": "76ba08b74500e7a880e1bad6718ba6dd5254efbfe28f9c74a6e805b7a772a219"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "156688dbc03af6b3f0fdc490fdb09fcab60a6a65",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/ROOT_RECEIPT.json",
+      "raw_bytes": 321,
+      "raw_sha256": "2b553aa9b6652370af6367d70221fd86c21a5d94625d759eab2ce3c31a84664d",
+      "stored_path": "_objects/2b553aa9b6652370af6367d70221fd86c21a5d94625d759eab2ce3c31a84664d.gz",
+      "stored_sha256": "0d45da273600b1c314a4c6d795dd72c9f2089c93fd58a0389efbc96e91db64c7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8385b09b6e91a6318ab09eddcdbb2950cf0990fa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDERR.txt",
+      "raw_bytes": 777,
+      "raw_sha256": "f12c258af0a5046d959c7b3ff63eebc592da82ee63beb622ed204a9e9421089a",
+      "stored_path": "_objects/f12c258af0a5046d959c7b3ff63eebc592da82ee63beb622ed204a9e9421089a.gz",
+      "stored_sha256": "baa9c35ce63f7d6876d77ef0ac01e36282ddf965998bca0d5c2a3c6afcb99935"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "298d1c4a79c27ff0471f795744061a5edd0594ff",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/STDOUT.json",
+      "raw_bytes": 1453,
+      "raw_sha256": "79b807f745b8601a46ed5b7a526a2e69e21407f410387d29ccf9fac873ede0fd",
+      "stored_path": "_objects/79b807f745b8601a46ed5b7a526a2e69e21407f410387d29ccf9fac873ede0fd.gz",
+      "stored_sha256": "3c51f64fb63fb983a3b5b41c68fe370ec322bc26d21d87e13bcff690dd2d6426"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "63a424e8880974ec1cd5aa1773817a9527c6e86c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
+      "stored_path": "_objects/3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715.gz",
+      "stored_sha256": "1ed8c0db82277768be0b5b2b9d116cdf620ea988d743a3f32cfa40a2310f589d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b02ed3c03eb29c0d4dad4bdfddd59dce5f22cc7f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+      "raw_bytes": 42433,
+      "raw_sha256": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7",
+      "stored_path": "_objects/dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7.gz",
+      "stored_sha256": "3beeaa8024d3a8886299d457bf9f32765afd6650e356cf1f0ccd8e3e87386df1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b231a3930f6ab8ef2c0a67a0289fb58149ef78df",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431",
+      "stored_path": "_objects/8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431.gz",
+      "stored_sha256": "dd5bc47eab10855a969306bd56821ed4226775770053686eaa3bbdb20081aeee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b231a3930f6ab8ef2c0a67a0289fb58149ef78df",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431",
+      "stored_path": "_objects/8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431.gz",
+      "stored_sha256": "dd5bc47eab10855a969306bd56821ed4226775770053686eaa3bbdb20081aeee"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0db50d06092025c38a80421c890da054c1ef1bb7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "raw_bytes": 9335,
+      "raw_sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
+      "stored_path": "_objects/1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc.gz",
+      "stored_sha256": "fad8e9b4b5a5852c9017c66c7d2522013c319058fbb10d694ae6176f0418fa24"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0db50d06092025c38a80421c890da054c1ef1bb7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "raw_bytes": 9335,
+      "raw_sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
+      "stored_path": "_objects/1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc.gz",
+      "stored_sha256": "fad8e9b4b5a5852c9017c66c7d2522013c319058fbb10d694ae6176f0418fa24"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "141e1c895b6e2aa00f3fe57854842288c238105c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
+      "stored_path": "_objects/1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042.gz",
+      "stored_sha256": "f1d6898b0d8df7e8839365f120e829ef71d4e46847656de1011597ca93a12422"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e23947923c691b1f1b0082deeb517d7979056777",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/outputs/native_finite_excitation_ward_2026_09_09_inputs.json",
+      "raw_bytes": 809,
+      "raw_sha256": "759e1588f0587355a6273d3f7ad23377a491c6a15bc397373402c3cca0471e87",
+      "stored_path": "_objects/759e1588f0587355a6273d3f7ad23377a491c6a15bc397373402c3cca0471e87.gz",
+      "stored_sha256": "043465ffbe40d551f6452315116fe24fe8efe0a3e0dca019959b21fd92426ea7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ecaec62afb141b7ca280299bd3040f1d56c2c271",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/scripts/native_finite_excitation_ward_2026_09_09.py",
+      "raw_bytes": 1355,
+      "raw_sha256": "cfee2468bc1a9bd53ccd68272db6917ca9b405daf50eb7e96e8c5d7858da892f",
+      "stored_path": "_objects/cfee2468bc1a9bd53ccd68272db6917ca9b405daf50eb7e96e8c5d7858da892f.gz",
+      "stored_sha256": "32aa3560278b69c1d018603828e49a8ca40c3ef92a19580c5b05457b4af61f55"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "204f9c77fb60393124cf8d9db76efe8ccd74ac05",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated-status/scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "raw_bytes": 2753,
+      "raw_sha256": "8dfff19d4ada28edd80ca565cddf93e2703fe3c0cbeb2919018ecb4eb141b218",
+      "stored_path": "_objects/8dfff19d4ada28edd80ca565cddf93e2703fe3c0cbeb2919018ecb4eb141b218.gz",
+      "stored_sha256": "fc1366bd749e80f0d767d9b0c88a00ef84dea15d3a20fd1bbfd1c8db03a4fcbb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "204f9c77fb60393124cf8d9db76efe8ccd74ac05",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/scripts/native_finite_excitation_ward_controls_2026_09_09.py",
+      "raw_bytes": 2753,
+      "raw_sha256": "8dfff19d4ada28edd80ca565cddf93e2703fe3c0cbeb2919018ecb4eb141b218",
+      "stored_path": "_objects/8dfff19d4ada28edd80ca565cddf93e2703fe3c0cbeb2919018ecb4eb141b218.gz",
+      "stored_sha256": "fc1366bd749e80f0d767d9b0c88a00ef84dea15d3a20fd1bbfd1c8db03a4fcbb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "32245eff2fb013f8781ccfb8592f8aed4082bf7d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/ROOT_RECEIPT.json",
+      "raw_bytes": 276,
+      "raw_sha256": "da607e1e5a21a53c739146d0e4bb5527dc7b9566ad10f2d07451d1ef036115c2",
+      "stored_path": "_objects/da607e1e5a21a53c739146d0e4bb5527dc7b9566ad10f2d07451d1ef036115c2.gz",
+      "stored_sha256": "49ae43d639efea04de3baab3cf5c5c3fca92297096575bcfebb6658cbf18eafe"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f5dd0ed18e0bea5ac7e90e7f3bda1abcde7df363",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDERR.txt",
+      "raw_bytes": 777,
+      "raw_sha256": "84f8f05f55aeea179baa251e357b39d3610657bfc6e372064e46b5e5e3a34bde",
+      "stored_path": "_objects/84f8f05f55aeea179baa251e357b39d3610657bfc6e372064e46b5e5e3a34bde.gz",
+      "stored_sha256": "db1cd879b1cf141d72da8f0cef46e1d4dbd64aa0ba3c4d0189a0e538880a6814"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fe3fd60a49673d28869bdda7a512919fdb739ed6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/verification/native-finite-excitation-ward-root-isolated/STDOUT.json",
+      "raw_bytes": 1446,
+      "raw_sha256": "8e9ad134cfc923144de9a9d47beb06e0fcb6bf74c20b2cf762c8724328c738ad",
+      "stored_path": "_objects/8e9ad134cfc923144de9a9d47beb06e0fcb6bf74c20b2cf762c8724328c738ad.gz",
+      "stored_sha256": "52cb178f71948d44a4d4a62c252c405ae118adcf78cda648fd210e03d316e9bb"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-finite-excitation-ward-20260909/",
+  "revision": "109b0a1ba906894a12c9139badfdcc26b0e32a31",
+  "schema_version": 1,
+  "unique_blobs": {
+    "00d590c006152afaec78f2dd454cbf66c3d861c2": {
+      "occurrences": 1,
+      "raw_bytes": 42202,
+      "raw_sha256": "6aa11088ffe4ec7a84df522588968af1af76f9aba140ae21c475e5903797fbc4"
+    },
+    "0d4728897f3013fe72ea83b63a2f84118c74b43f": {
+      "occurrences": 1,
+      "raw_bytes": 806,
+      "raw_sha256": "138d1aa3337a07cd412178ea827619962c3a66c693ae5db82577e6085e038d64"
+    },
+    "0db50d06092025c38a80421c890da054c1ef1bb7": {
+      "occurrences": 2,
+      "raw_bytes": 9335,
+      "raw_sha256": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc"
+    },
+    "11272fd6738ce2720beeba86d7c1c1ef180c92c8": {
+      "occurrences": 1,
+      "raw_bytes": 4253,
+      "raw_sha256": "840c95232f9c17b4b187a7d2b0047f345e1cef5f6aafb985121fcf7b6c4da9b0"
+    },
+    "138e3b87e7559bca1c96b8d04fe5106f497b3349": {
+      "occurrences": 1,
+      "raw_bytes": 830,
+      "raw_sha256": "5c593c075c7a617296eeb31074bc9227220e25c9bade0f81b66aa0e001ba4c20"
+    },
+    "141e1c895b6e2aa00f3fe57854842288c238105c": {
+      "occurrences": 2,
+      "raw_bytes": 16667,
+      "raw_sha256": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042"
+    },
+    "14e70006726fc60bdb4128df02d7cb553ecca135": {
+      "occurrences": 1,
+      "raw_bytes": 3336,
+      "raw_sha256": "e2a3d61703dc520fbc951f2d7024b63384fef3ac78244b916d1b5b03b2ac441e"
+    },
+    "156688dbc03af6b3f0fdc490fdb09fcab60a6a65": {
+      "occurrences": 1,
+      "raw_bytes": 321,
+      "raw_sha256": "2b553aa9b6652370af6367d70221fd86c21a5d94625d759eab2ce3c31a84664d"
+    },
+    "18b4aa51e2305cef1a0b1fc43ed812dc6054e788": {
+      "occurrences": 1,
+      "raw_bytes": 399,
+      "raw_sha256": "851002265dc1ae362874a1a74aa2a2648465c2c76f1d5dcca267298b07c039e4"
+    },
+    "204f9c77fb60393124cf8d9db76efe8ccd74ac05": {
+      "occurrences": 2,
+      "raw_bytes": 2753,
+      "raw_sha256": "8dfff19d4ada28edd80ca565cddf93e2703fe3c0cbeb2919018ecb4eb141b218"
+    },
+    "2289d42643f46768e5b4d7fabbd7d6d3d720dc66": {
+      "occurrences": 2,
+      "raw_bytes": 809,
+      "raw_sha256": "4d60db160298bf12f129cec4d6866b27526cb2acad9f5db4a516161190c1c854"
+    },
+    "25849315004bc7ee7275da89b49d049083badf81": {
+      "occurrences": 1,
+      "raw_bytes": 5381,
+      "raw_sha256": "b38a302599b0c906f7f3e13782ac6aa01bb1fd087ee39331f4eff7bed821a2c0"
+    },
+    "2778d21efbe7ee679d9fe6cdd5f0caa0ed81e524": {
+      "occurrences": 1,
+      "raw_bytes": 4572,
+      "raw_sha256": "d117cf861e7115ccb78c77cbe118eb805f2d1c8f1e1ed8e1cb738576d9416436"
+    },
+    "298d1c4a79c27ff0471f795744061a5edd0594ff": {
+      "occurrences": 1,
+      "raw_bytes": 1453,
+      "raw_sha256": "79b807f745b8601a46ed5b7a526a2e69e21407f410387d29ccf9fac873ede0fd"
+    },
+    "2d80b967562ddc000fc7117d0e579ec3e9d2a1b8": {
+      "occurrences": 1,
+      "raw_bytes": 280,
+      "raw_sha256": "cbbfa80a0c60c82974ee5ea3f3cbb3031b9879500f5aad7809d0b3e79be6e397"
+    },
+    "32245eff2fb013f8781ccfb8592f8aed4082bf7d": {
+      "occurrences": 1,
+      "raw_bytes": 276,
+      "raw_sha256": "da607e1e5a21a53c739146d0e4bb5527dc7b9566ad10f2d07451d1ef036115c2"
+    },
+    "364af8eb23ff786b35ffcba2b50ec0dbcf20670b": {
+      "occurrences": 1,
+      "raw_bytes": 191,
+      "raw_sha256": "3bff4d12755b34cbf9b407f696699d4cbe2f89d9d711cdb4d232794d7a134375"
+    },
+    "3b28a814857394d3492c1b54df9df4d07995b17e": {
+      "occurrences": 1,
+      "raw_bytes": 6908,
+      "raw_sha256": "e4b6dca1b86d431732064c8095c812bc9847fa21e100bd0d2276b120997067e8"
+    },
+    "4156e770d69bb681c3e0b984d5f4b3f69b9ea3d0": {
+      "occurrences": 1,
+      "raw_bytes": 316,
+      "raw_sha256": "ad0978eb65cb699544bbc3d59e52d073b083c15810b4e652b1d134c802e9490a"
+    },
+    "47e1f94b775a11a29061cdc7418b531a9b94f7a2": {
+      "occurrences": 1,
+      "raw_bytes": 1068,
+      "raw_sha256": "3d19cc5f3c08998b4f4f77f9568dfe6184bf25c3f12dc7cdbce9bd835dc4632a"
+    },
+    "49ca2b26167cd4fdea1ac10e647b511872666ca9": {
+      "occurrences": 1,
+      "raw_bytes": 1446,
+      "raw_sha256": "9605d2eb2f0e4595b4781b04c3d65bc96c2ef7d6e73321daaf455478224ac6c4"
+    },
+    "4e69a0255c53b3f852b2e07dc604d09dd8358190": {
+      "occurrences": 1,
+      "raw_bytes": 190,
+      "raw_sha256": "77038975e426b175030f40e4bc23dc2f1bd27a0660ed664ab14e5525e7f2a212"
+    },
+    "4fdfc13817be23b124061177073381bba68acf33": {
+      "occurrences": 1,
+      "raw_bytes": 955,
+      "raw_sha256": "fc079346cac54da6ddb2038ab31d7b48a99a226be5ce05c8dcb386d7f22900c3"
+    },
+    "548556fd6e44aca9bbae3d13c7a8c90b95538362": {
+      "occurrences": 1,
+      "raw_bytes": 7229,
+      "raw_sha256": "21400ab0bdbbf4b34c42400c49af76dfb5bced0c7ba84ae2ba818774270441e4"
+    },
+    "607156043a2cc6c09742fc7a0f2f11fb213803e9": {
+      "occurrences": 1,
+      "raw_bytes": 527,
+      "raw_sha256": "a0acdbdb0a4d18b90185c3901f44e57af25b96a6ccb448c2d7fe34acc4deb4ce"
+    },
+    "61b7e9d8a08576ec474a2e57e1a5bd363cf82a8f": {
+      "occurrences": 1,
+      "raw_bytes": 729,
+      "raw_sha256": "80953ab998783773dcccb4e7a1a5b13437d9bd73157343b8d3241891c901e494"
+    },
+    "63a424e8880974ec1cd5aa1773817a9527c6e86c": {
+      "occurrences": 2,
+      "raw_bytes": 14579,
+      "raw_sha256": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715"
+    },
+    "649e2c65393167524829903ae8bdb803fab15eb3": {
+      "occurrences": 1,
+      "raw_bytes": 104,
+      "raw_sha256": "cbfb625e99f5f557f1c43c7803d2211425a0e46fc9eb2dbe54ac9fbc6047796a"
+    },
+    "6bb21ea703972b3f90b1ad8e84e96c485ee6696e": {
+      "occurrences": 1,
+      "raw_bytes": 3863,
+      "raw_sha256": "4f64d5831ad1d6a6bb7c5b87b590ce6b6989e534c2e2e3167a4a24e2cbe54621"
+    },
+    "737807665c0ade4c6feda64ec6039aaf064e2ccd": {
+      "occurrences": 1,
+      "raw_bytes": 204,
+      "raw_sha256": "6b82b3c90f8f999a8cc4a371788dd22fd84cc982755a86ae471aab2de3b6a13c"
+    },
+    "7450b2b81271df7b6ecac2bd0548263f2ad069fb": {
+      "occurrences": 1,
+      "raw_bytes": 1172,
+      "raw_sha256": "72cf4e0c586264c88586fc60b7771ab6df502d69f807ba3924497a599a3de8b6"
+    },
+    "746612939df9c012927fc109db1bfa06fb2b28c3": {
+      "occurrences": 1,
+      "raw_bytes": 156,
+      "raw_sha256": "14ca044e40b5f2b93d358f14335eed104f532f245b2218229ea3f4086fd5cc51"
+    },
+    "7f003c025e72971520f90feb8cfbc933f245c379": {
+      "occurrences": 1,
+      "raw_bytes": 477,
+      "raw_sha256": "241d4defb404f11d408632f02b41ea8971a6dc9a0353ed142d807782ce43e241"
+    },
+    "8385b09b6e91a6318ab09eddcdbb2950cf0990fa": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "f12c258af0a5046d959c7b3ff63eebc592da82ee63beb622ed204a9e9421089a"
+    },
+    "91ab147e0da16cd8c24cc9670733714961ec3a94": {
+      "occurrences": 1,
+      "raw_bytes": 6021,
+      "raw_sha256": "e6779882c8c9de2f734e8fe4c346c9a65643c526b3dbedd4f612e358e382827b"
+    },
+    "981134d69784d0e05485ca1251bce084224de6e4": {
+      "occurrences": 1,
+      "raw_bytes": 138,
+      "raw_sha256": "582f4e2c93dea5eb967b6cca93b56f2837399bb9707e05818fc4b6b634c1d428"
+    },
+    "a01fd7c8fed6558e9672910274bdd18ab89eaa28": {
+      "occurrences": 1,
+      "raw_bytes": 1956,
+      "raw_sha256": "885457bd5703e5ccd67995a538bf851e27813058a65408ffd66ad1392f8aa3e2"
+    },
+    "a2ed831ddd4ab93213ccb8f2baec9f8ddf65a827": {
+      "occurrences": 2,
+      "raw_bytes": 1348,
+      "raw_sha256": "fd6e15e573b4a17ad92713c28351766b2f5a25dcf298b418b865e9bd9fa026e6"
+    },
+    "b02ed3c03eb29c0d4dad4bdfddd59dce5f22cc7f": {
+      "occurrences": 1,
+      "raw_bytes": 42433,
+      "raw_sha256": "dd3dd45e2ba08edffd0e347d0f72490bc49aacd989410e96cdf40c884f0213f7"
+    },
+    "b231a3930f6ab8ef2c0a67a0289fb58149ef78df": {
+      "occurrences": 2,
+      "raw_bytes": 14775,
+      "raw_sha256": "8f0c18cba642072596b8c2caa12d8e030511f951920f5470d1e572cd53155431"
+    },
+    "bc056649c8dc0210722102a892ba709ed9255790": {
+      "occurrences": 1,
+      "raw_bytes": 383,
+      "raw_sha256": "e727efaeb1eba64a50fff4322ac90ea1bedfbc9562f6d730bf62811b15eead38"
+    },
+    "bcd403d7c097726c6f31a6bef45d909ebda231e7": {
+      "occurrences": 1,
+      "raw_bytes": 5206,
+      "raw_sha256": "6a00291cb8d22ccba773dbe8eee64560d3e7149ce48310ee63b18df1a0b1063e"
+    },
+    "bd73d95e3b2958af76bb53a0bfb1cdccdba65bd5": {
+      "occurrences": 1,
+      "raw_bytes": 3496,
+      "raw_sha256": "5654417a40c26abf8e634d79cdbe5d7cd63dfa2643677488813111678d4ef0c1"
+    },
+    "c5354be995a197413c934c723b84cf6d85ea9fbe": {
+      "occurrences": 1,
+      "raw_bytes": 269,
+      "raw_sha256": "2194d3f7350ef40d94319967e62fb53ae51de1bd930bf596388e9649d335abb9"
+    },
+    "c78389dfbbdec948931bfbd8f6fb6baaf11310b5": {
+      "occurrences": 1,
+      "raw_bytes": 250,
+      "raw_sha256": "24790c0617cdf83709c2f696a4111b5c84795694618481ea19826276a9ebd06e"
+    },
+    "ca3e9988bbf55a2a42008d2ffa549d7b97a3d8ba": {
+      "occurrences": 1,
+      "raw_bytes": 3482,
+      "raw_sha256": "943237a3cabc4346fd8c7d9191833e77ea14a4dda249195b632eb92f86aa062a"
+    },
+    "d257fc34e8c55e48321ff32f0462bb9caff3b95e": {
+      "occurrences": 1,
+      "raw_bytes": 407,
+      "raw_sha256": "ae4b05ec48f14bc1fe03da00cf0bd9eca2d0cbc06ec59c3ae503eb0fd6bdc3f7"
+    },
+    "d3bf1f1af758b11f95a032f27077da0dec04a553": {
+      "occurrences": 1,
+      "raw_bytes": 887,
+      "raw_sha256": "59722e917c87b85764f651a53b93a3492e4cb66c6740035f24012756447d510a"
+    },
+    "d7818e8a9f0783c92a619a99b94c3d81c9e1a1b1": {
+      "occurrences": 1,
+      "raw_bytes": 1437,
+      "raw_sha256": "3a3bb99c17d202f347b946aafe1024e0c5a87ebb3d3169b2d428d92009eae697"
+    },
+    "d8f0421b783615f6be31e88e20944e9dfd189083": {
+      "occurrences": 1,
+      "raw_bytes": 1446,
+      "raw_sha256": "0f5c39a7ed002698f7e9c85b6cd5294427b6865d6b66adc805ddecc64bc8f264"
+    },
+    "db70f628ac664807b2529c87c5e504d2cbfacf5d": {
+      "occurrences": 1,
+      "raw_bytes": 15319,
+      "raw_sha256": "b05cac06a88f155b72c1f8f2cbe4e0f106a2ba6ffe43d2483bb4aedeb59ccc83"
+    },
+    "dca5b19c210d75a7dd76a6a85c0bffab6bde2d52": {
+      "occurrences": 1,
+      "raw_bytes": 1753,
+      "raw_sha256": "adf7e345e1edd7046d9380252d92794f3ee638cac5d908ad6d5358a51fb020af"
+    },
+    "e23947923c691b1f1b0082deeb517d7979056777": {
+      "occurrences": 1,
+      "raw_bytes": 809,
+      "raw_sha256": "759e1588f0587355a6273d3f7ad23377a491c6a15bc397373402c3cca0471e87"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 2,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e95ff780a7e51906a19049a7e85fb49150cc80db": {
+      "occurrences": 1,
+      "raw_bytes": 186,
+      "raw_sha256": "054f03d3a23a6b272348607d3949992886624b24374af00879266db22641cf83"
+    },
+    "eaff6fbb963f9c3adec8659bd016b8168f61aaae": {
+      "occurrences": 1,
+      "raw_bytes": 1929,
+      "raw_sha256": "600915a285faa90dfaf704c3f324a7cc503daed0ecbb3d9ba73871df5af4eb2c"
+    },
+    "ecaec62afb141b7ca280299bd3040f1d56c2c271": {
+      "occurrences": 1,
+      "raw_bytes": 1355,
+      "raw_sha256": "cfee2468bc1a9bd53ccd68272db6917ca9b405daf50eb7e96e8c5d7858da892f"
+    },
+    "ecbe639fa8bbc1a8338198407aa155af5b6354ce": {
+      "occurrences": 2,
+      "raw_bytes": 42398,
+      "raw_sha256": "e589e7fcc3af9717d84be682b9c2edcf7b4ef1141da5751d3cea0593cb5f727c"
+    },
+    "f5dd0ed18e0bea5ac7e90e7f3bda1abcde7df363": {
+      "occurrences": 1,
+      "raw_bytes": 777,
+      "raw_sha256": "84f8f05f55aeea179baa251e357b39d3610657bfc6e372064e46b5e5e3a34bde"
+    },
+    "faf6e86c87408c7675d8f8d9e1d93bafe89f7ee8": {
+      "occurrences": 1,
+      "raw_bytes": 1068,
+      "raw_sha256": "61cdb4dc16246b6eaa4776db17592e401fb64753fe1065acb22d5fa4ccc837fe"
+    },
+    "fe297b386e9049f58e4ebf1b1dc7a16a133ac8f6": {
+      "occurrences": 1,
+      "raw_bytes": 174,
+      "raw_sha256": "7fd5eff7365604e7e58fdf5a928f6499a64b4c04b65fbe49cdc0a736cc35080b"
+    },
+    "fe3fd60a49673d28869bdda7a512919fdb739ed6": {
+      "occurrences": 1,
+      "raw_bytes": 1446,
+      "raw_sha256": "8e9ad134cfc923144de9a9d47beb06e0fcb6bf74c20b2cf762c8724328c738ad"
+    }
+  }
+}

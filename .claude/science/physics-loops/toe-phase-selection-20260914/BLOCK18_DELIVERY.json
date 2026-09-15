@@ -1,0 +1,80 @@
+{
+  "pr": {
+    "baseRefOid": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "headRefOid": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133"
+  },
+  "branch": "physics-loop/coupled-defect-convexity-20260915",
+  "head": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+  "remote_head": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+  "base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "prior_head": "ff1484458137c384c98bd07ed978789b3aa2eb4e",
+  "worktree": "/Users/jonreilly/Documents/Codex/toe-coupled-defect-convexity-20260915",
+  "tracked_and_untracked_clean": true,
+  "ignored_files": [
+    {
+      "path": "docs/audit/data/audit_ledger.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 85348652
+    },
+    {
+      "path": "docs/audit/data/citation_graph.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 7434574
+    },
+    {
+      "path": "docs/audit/data/ledger_cache_manifest.json",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 129
+    },
+    {
+      "path": "docs/audit/data/static_pipeline_checkpoint.lock",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 0
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/forensic_evidence_readiness.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 6338
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/ledger_io.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 18092
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/no_go_discipline_gate.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 217085
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 34049
+    },
+    {
+      "path": "scripts/__pycache__/runner_cache.cpython-313.pyc",
+      "role": "generated_audit_cache_or_python_bytecode",
+      "size": 30050
+    }
+  ],
+  "preserved_before_removal": true,
+  "removed": true,
+  "new_source": {
+    "note": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "note_sha256": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+    "runner": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+    "runner_sha256": "3c0cfcb90bd4d427280b33464141f514a9a4459497bea0c58049f6e19eb35d75",
+    "cache_status": "fresh",
+    "elapsed_sec": 2.58,
+    "declared_timeout_sec": 180,
+    "runner_source_issue": null,
+    "n5_live_readiness_issue": null,
+    "detected_mutations": 18,
+    "qualification": "Personal fault challenges and mechanical source/cache/N5 readiness; independent review and formal audit pending."
+  },
+  "qualification": "Author delivery receipt; all four sources pending independent review and formal audit; no main landing.",
+  "removed_utc": "2026-09-15T01:09:48.676116+00:00"
+}

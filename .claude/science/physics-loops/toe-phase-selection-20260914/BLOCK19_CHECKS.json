@@ -1,0 +1,134 @@
+{
+  "exact_balls": [
+    {
+      "radius": 0,
+      "three": 1,
+      "four": 1,
+      "future": 1
+    },
+    {
+      "radius": 1,
+      "three": 7,
+      "four": 9,
+      "future": 8
+    },
+    {
+      "radius": 2,
+      "three": 25,
+      "four": 41,
+      "future": 33
+    },
+    {
+      "radius": 3,
+      "three": 63,
+      "four": 129,
+      "future": 96
+    },
+    {
+      "radius": 4,
+      "three": 129,
+      "four": 321,
+      "future": 225
+    },
+    {
+      "radius": 5,
+      "three": 231,
+      "four": 681,
+      "future": 456
+    },
+    {
+      "radius": 6,
+      "three": 377,
+      "four": 1289,
+      "future": 833
+    },
+    {
+      "radius": 7,
+      "three": 575,
+      "four": 2241,
+      "future": 1408
+    }
+  ],
+  "resource_thresholds": [
+    {
+      "edge_dilation": 1,
+      "congestion": 1,
+      "first_full_ball_failure": 1,
+      "required_sites": 9,
+      "capacity": 7
+    },
+    {
+      "edge_dilation": 2,
+      "congestion": 8,
+      "first_full_ball_failure": 127,
+      "required_sites": 176215041,
+      "capacity": 175833032
+    },
+    {
+      "edge_dilation": 3,
+      "congestion": 4,
+      "first_full_ball_failure": 215,
+      "required_sites": 1437906241,
+      "capacity": 1434461084
+    },
+    {
+      "edge_dilation": 4,
+      "congestion": 8,
+      "first_full_ball_failure": 1023,
+      "required_sites": 731579588609,
+      "capacity": 731130363400
+    }
+  ],
+  "finite_layouts": [
+    {
+      "L": 2,
+      "events": 16,
+      "sites": 16,
+      "largest_neighbor_distance": 2
+    },
+    {
+      "L": 3,
+      "events": 81,
+      "sites": 81,
+      "largest_neighbor_distance": 3
+    },
+    {
+      "L": 4,
+      "events": 256,
+      "sites": 256,
+      "largest_neighbor_distance": 4
+    },
+    {
+      "L": 8,
+      "events": 4096,
+      "sites": 4096,
+      "largest_neighbor_distance": 8
+    }
+  ],
+  "digit_interleaver": {
+    "seed_bits": 8,
+    "output_bits_each": 4,
+    "bijective_outputs": 256
+  },
+  "Lipschitz_covering_exponents": [
+    {
+      "native_sites": 1,
+      "real_input_dimension": 8,
+      "output_dimension": 9,
+      "covering_exponent": 1
+    },
+    {
+      "native_sites": 8,
+      "real_input_dimension": 64,
+      "output_dimension": 65,
+      "covering_exponent": 1
+    },
+    {
+      "native_sites": 10,
+      "real_input_dimension": 80,
+      "output_dimension": 100,
+      "covering_exponent": 20
+    }
+  ],
+  "qualification": "Finite arithmetic and layout/codec checks only. General graph and measure-dimension statements rely on the written proof; no native axiom obstruction or full formation law is established."
+}

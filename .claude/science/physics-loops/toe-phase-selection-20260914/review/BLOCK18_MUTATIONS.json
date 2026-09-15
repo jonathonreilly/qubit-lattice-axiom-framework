@@ -1,0 +1,132 @@
+{
+  "runner_sha256": "3c0cfcb90bd4d427280b33464141f514a9a4459497bea0c58049f6e19eb35d75",
+  "faults": [
+    {
+      "name": "lattice_covolume",
+      "detected": true,
+      "target": "nonsquare_lattice",
+      "failure": "",
+      "elapsed_sec": 0.0036882919957861304
+    },
+    {
+      "name": "dual_lattice_transpose",
+      "detected": true,
+      "target": "nonsquare_lattice",
+      "failure": "",
+      "elapsed_sec": 0.0022409160155802965
+    },
+    {
+      "name": "generic_dual_damping",
+      "detected": true,
+      "target": "nonsquare_lattice",
+      "failure": "",
+      "elapsed_sec": 0.0013666249578818679
+    },
+    {
+      "name": "generic_covariance_normalization",
+      "detected": true,
+      "target": "nonsquare_lattice",
+      "failure": "",
+      "elapsed_sec": 0.0016161249950528145
+    },
+    {
+      "name": "generic_mgf_frequency",
+      "detected": true,
+      "target": "nonsquare_lattice",
+      "failure": "",
+      "elapsed_sec": 0.0014603750314563513
+    },
+    {
+      "name": "generic_coset_shift",
+      "detected": true,
+      "target": "nonsquare_lattice",
+      "failure": "",
+      "elapsed_sec": 0.0016380839515477419
+    },
+    {
+      "name": "electric_precision_beta",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.265326666063629
+    },
+    {
+      "name": "magnetic_shift_N",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.0775717919459566
+    },
+    {
+      "name": "physical_Wilson_variable",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.0952999589499086
+    },
+    {
+      "name": "external_source_N",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.4456233329838142
+    },
+    {
+      "name": "clock_alias",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.1617320000659674
+    },
+    {
+      "name": "Fourier_current_rescale",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.7084268330363557
+    },
+    {
+      "name": "Fourier_source_modulus",
+      "detected": true,
+      "target": "actual_current_cube",
+      "failure": "",
+      "elapsed_sec": 1.6748073749477044
+    },
+    {
+      "name": "continuous_all_tilt_bound",
+      "detected": true,
+      "target": "discrete_controls",
+      "failure": "",
+      "elapsed_sec": 4.125002305954695e-05
+    },
+    {
+      "name": "signed_mixing_measure",
+      "detected": true,
+      "target": "discrete_controls",
+      "failure": "",
+      "elapsed_sec": 0.00011249992530792952
+    },
+    {
+      "name": "positive_mixing_signed_lattice",
+      "detected": true,
+      "target": "discrete_controls",
+      "failure": "",
+      "elapsed_sec": 9.479210712015629e-05
+    },
+    {
+      "name": "zero_coset_strict_positivity",
+      "detected": true,
+      "target": "discrete_controls",
+      "failure": "",
+      "elapsed_sec": 0.00013545795809477568
+    },
+    {
+      "name": "Hodge_projected_metric",
+      "detected": true,
+      "target": "hodge_edge_bounds",
+      "failure": "",
+      "elapsed_sec": 0.004777249996550381
+    }
+  ],
+  "qualification": "Personal targeted fault challenges, not independent review or an audit verdict."
+}

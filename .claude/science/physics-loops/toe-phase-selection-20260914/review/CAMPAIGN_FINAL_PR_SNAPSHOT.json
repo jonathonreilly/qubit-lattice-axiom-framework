@@ -1,0 +1,90 @@
+[
+  {
+    "headRefOid": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+    "mergedAt": null,
+    "number": 8133,
+    "state": "OPEN",
+    "title": "Derive coupled clock defects, convex current extension and exact quantized bounds",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8133"
+  },
+  {
+    "headRefOid": "20866d4606e9fd519cff663028f554d42b2b1013",
+    "mergedAt": null,
+    "number": 8132,
+    "state": "OPEN",
+    "title": "Uniform finite-clock Ward residuals and Haar observable comparison",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8132"
+  },
+  {
+    "headRefOid": "3ba9ab6daa2438858e3b202a0c8b1076d93f53e9",
+    "mergedAt": null,
+    "number": 8131,
+    "state": "OPEN",
+    "title": "Fixed-clock image noise and positive-time physical equivalence",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8131"
+  },
+  {
+    "headRefOid": "7656dcdb01f32b3d47ecbcda04c89cb3b03996f0",
+    "mergedAt": null,
+    "number": 8130,
+    "state": "OPEN",
+    "title": "Logarithmic finite-clock Maxwell scaling and Coulomb Wilson interactions",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8130"
+  },
+  {
+    "headRefOid": "f032d39f0a3071a029c1491398231d219e8a6d1c",
+    "mergedAt": null,
+    "number": 8129,
+    "state": "OPEN",
+    "title": "Control the clock penalty locally and derive its ground-state limit",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8129"
+  },
+  {
+    "headRefOid": "a103e6f867d1ea3e0a98d7af929fc478ef691ebd",
+    "mergedAt": null,
+    "number": 8128,
+    "state": "OPEN",
+    "title": "Construct positive principal-flux transfer and bound its Hamiltonian limit",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8128"
+  },
+  {
+    "headRefOid": "d46526dc07fc1f4f6530c7b4d98c1d5feb8f6eee",
+    "mergedAt": null,
+    "number": 8127,
+    "state": "OPEN",
+    "title": "Derive finite-clock masslessness and conditional Maxwell scaling",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8127"
+  },
+  {
+    "headRefOid": "17484511b5afc6396d4709795b9e14951d3ec3b3",
+    "mergedAt": null,
+    "number": 8126,
+    "state": "OPEN",
+    "title": "[physics-loop] causal-gaussian-likelihood bounded_theorem bounded-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8126"
+  },
+  {
+    "headRefOid": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+    "mergedAt": null,
+    "number": 8125,
+    "state": "OPEN",
+    "title": "[physics-loop] periodic Gaussian matrix codec: bounded_theorem, bounded-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8125"
+  },
+  {
+    "headRefOid": "833a47c0b4f5bef43a4935fd22de2ed5d7b8c9c7",
+    "mergedAt": null,
+    "number": 8124,
+    "state": "OPEN",
+    "title": "[physics-loop] toe-phase-selection: bounded_theorem finite-step Gaussian canonical locality (bounded-support)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124"
+  },
+  {
+    "headRefOid": "9a84632e8b9e4f82969d7b4e22827d0037c51df5",
+    "mergedAt": null,
+    "number": 8123,
+    "state": "OPEN",
+    "title": "[physics-loop] toe-phase-selection: bounded_theorem local clock probabilities and projected harmonics (bounded-support)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123"
+  }
+]

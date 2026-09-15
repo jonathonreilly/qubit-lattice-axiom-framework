@@ -1,0 +1,25 @@
+{
+  "original_cohort": 116,
+  "landed_closed": 105,
+  "remaining": [
+    8072,
+    8073,
+    8074,
+    8076,
+    8077,
+    8078,
+    8079,
+    8080,
+    8081,
+    8082,
+    8083
+  ],
+  "current_remote_main": "e7b7e6cca9c48957191234a24a8f52f8f2d459b0",
+  "train54": "running sole full gate, four-PR final receipt checked and source enrolled6e8fd5b",
+  "train55": "ready collection skill efficiency plus8078; new candidate helper explicit for8078 sole finalcache",
+  "author8077": "backlog_topology; original reviewer8012; scoped recovery and independentmath complete, wait currentbase forpackaging",
+  "unit8079_8083": "coherent review assigned8011; author8012 assigned, findings underway; no primary execution",
+  "pending_procedural": "close_landed_batched.py candidate raw remoteSHAblob batch efficiency in independentreview; not used until approved",
+  "remote_provenance": "f2ee8c9e6c7d995902cf41a9956b4fa8bb7b72c9",
+  "boundary": "Source review only; no audit verdicts; original dirty checkout untouched"
+}

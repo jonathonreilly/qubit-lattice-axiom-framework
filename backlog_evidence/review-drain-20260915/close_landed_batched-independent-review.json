@@ -1,0 +1,13 @@
+{
+  "verdict": "PASS bounded local adapter change",
+  "source_sha256": "61118e84f5244cd7216214434f2a4a6418887cd267a098d239f34b12e343b687",
+  "controls": "close_landed_batched-independent-controls.json",
+  "scope": "Exact diff and extracted local block; no GitHub calls or closure executed",
+  "findings": [],
+  "limits": [
+    "8MiB is a working-file-size batching target, not a hard capture-memory limit; individual oversized or different remote blobs can exceed it.",
+    "Local file stat is required for batching, so absent local files fail closed."
+  ],
+  "preserved_guards": "All metadata/head/child/lease/report guards unchanged; every source hash checked per PR against resolved fetched main commit.",
+  "companion_OPERATIONS_recommendation": "Proposed NUL-delimited batch transport paragraph is accurate: distinguishes explicit stage0 index from resolved commit authority, retains freshness and PR lifecycle checks, and discloses oversized blobs."
+}

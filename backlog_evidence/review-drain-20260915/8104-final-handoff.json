@@ -1,0 +1,32 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "tree": "56b9f2d919b385422172acfa67029e6c67ff87f2",
+  "mechanical_status": "ok",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8104-final-confirmed.json",
+      "sha256": "09d3b94b533641f40dbd930497a3f94fd1f0468227aca59cee8cc98618df777d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-unit-v1-final-confirmed.json",
+      "sha256": "e7580aa35b61c4db74af60e454d31a02841eabeb6ff97757b5b9c53d5ba64961"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8104.md",
+      "sha256": "96b9602c78514b409246ca4ff63f1f676a6b1be498d9321c1448996d6ff0a826"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-final-preflight.json",
+      "sha256": "b8d6f3bff897a2bc49d6536aa8221002c0f36ae9b354782334a359bacc34a10c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-final-preflight-execution.json",
+      "sha256": "1c279914807d1104dcf80e1a423610dd1c361808abb4eb8179f71c50964ce06c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-output-comparison.json",
+      "sha256": "853af0819eb18b4b73707adb8b200f27a24bf8555754a705d2648107259bb7f3"
+    }
+  ],
+  "remaining": "Root combined integration gate; no further primary execution."
+}

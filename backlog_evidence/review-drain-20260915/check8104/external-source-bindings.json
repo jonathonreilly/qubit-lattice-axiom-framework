@@ -1,0 +1,8 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/math-ph/0006022v2",
+    "sha256": "c3fd3b63f9911388b9c06ce8fdc56d0e165d5f5999a86278f45674ba3adf857c",
+    "read_scope": "Sections1\u20132 including theorem, spinful particle-count and occupation-graph proof/remarks, pp1\u20136.",
+    "role": "Flux-minimization method context only. Spinful Hubbard theorem is not transferred to the independently diagonalized spinless two-particle ring; no phase result imported."
+  }
+]

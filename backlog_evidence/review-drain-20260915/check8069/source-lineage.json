@@ -1,0 +1,25 @@
+{
+  "35_scientific_copy_bindings": true,
+  "all_duplicate_method_bytes_equal": true,
+  "bindings": [
+    {
+      "kind": "return",
+      "freeze_sha256": "4ec2098e333aed49e74f99d7fe247c116774ecad6c66360dd0bed13f1102dcac",
+      "result_sha256": "cac8a314f4abd746b2c6be0617d545fb451ba639758ded03db6addf1ab6f7103",
+      "runtime_pins": 1883
+    },
+    {
+      "kind": "elliptic",
+      "freeze_sha256": "6d85facf780f73e1dbaea0f98d2ef02e670eee0344ead6a5e9219e8234da4770",
+      "result_sha256": "732c85331ed70fea9ad8c9f504de85c435e718b3d57f7b3a6ec4ba378a8bdf66",
+      "runtime_pins": 1884
+    },
+    {
+      "kind": "B",
+      "freeze_sha256": "76350a2216507351cfbcbced2751b706de62025e723a006abfafd4b096b3d6ed",
+      "result_sha256": "0f47ccc4881ff68eba2a78fdb156164dd8dfe39a2afa9000e0e0395bdcea53e2",
+      "runtime_pins": 1893
+    }
+  ],
+  "boundary": "Historical interpreter/stdlib pins preserved; portable primary does not execute those methods. No historical review status treated as authority."
+}

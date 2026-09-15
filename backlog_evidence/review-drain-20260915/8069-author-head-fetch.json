@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "281dbe3fde49512baa2c4005e15985c4fbfb4cde",
+  "fetched_ref": "refs/review-loop/fetched/8069-b8dea4627e5f48d587927bf096e55ce4",
+  "metadata": {
+    "baseRefName": "codex/native-pair-vacuum-chart-20260909",
+    "headRefName": "codex/native-certified-local-green-scalars-20260909",
+    "headRefOid": "281dbe3fde49512baa2c4005e15985c4fbfb4cde",
+    "isDraft": false,
+    "number": 8069,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

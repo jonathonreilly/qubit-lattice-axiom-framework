@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": 9,
+  "controls": [
+    "ring minimum",
+    "ring curvature",
+    "formal oscillator ground coefficient",
+    "formal oscillator gap coefficient",
+    "contravariant coordinate metric",
+    "normal frequency distinct from Schur",
+    "direct identity eigenvalue sum inside exact rational certificate",
+    "direct twisted eigenvalue sum inside exact rational certificate",
+    "strict witness independent diagonalization"
+  ],
+  "difference": "-1.4424053496453475205770645487500727170103936677194156161858020625",
+  "elapsed_seconds": 0.0714411250082776,
+  "scope": "Independent70digit direct4x4 eigenvalues versus original integer certificate; symbolic ring/metric controls. No primary invocation."
+}

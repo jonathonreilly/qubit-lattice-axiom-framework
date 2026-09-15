@@ -1,0 +1,1 @@
+{"pass": true, "checks": 83040, "seconds": 0.07928599999286234, "rows": 6, "max_coefficients": 408, "scope": "All six saved exact return intervals reconstructed with distinct coefficient recurrence and reverse Horner; no author evaluator or new parameter."}

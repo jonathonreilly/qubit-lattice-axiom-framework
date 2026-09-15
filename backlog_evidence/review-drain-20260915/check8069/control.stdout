@@ -1,0 +1,2 @@
+return row keys dict_keys(['s', 'target', 'terms', 'A', 'Aprime', 'widths', 'status', 'seconds'])
+{"pass": true, "predicates": 5904, "seconds": 0.2765194170642644, "scope": "All saved B panels/cumulatives/final bounds exactly reconstructed;746 source-bound oracle rows reused, no oracle/integral invoked;Gauss root/moment controls independent."}

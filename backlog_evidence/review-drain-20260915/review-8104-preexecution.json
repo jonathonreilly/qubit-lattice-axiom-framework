@@ -1,0 +1,2540 @@
+{
+  "unit": "8104",
+  "reviewer_session": "/root/review_8011",
+  "status": "PREEXECUTION_SOURCE_CONFIRMED_NOT_FINAL_PASS",
+  "source_base": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "source_tree": "8c9cffa4cdf18e5ae2917f8ea1f602aa741f7608",
+  "constituents": [
+    {
+      "number": 8104,
+      "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+      "original_base": "b8c9d9d819911c5f3fec98b23d53355e7ff8c8bf",
+      "canonical": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py"
+      ],
+      "paths": [
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/AUTHOR_REVIEW.md",
+          "sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stdout",
+          "sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER_TWISTS.json",
+          "sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_DERIVATION.md",
+          "sha256": "30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stdout",
+          "sha256": "d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST_CERTIFICATE.json",
+          "sha256": "234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stdout",
+          "sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY_EXPLORATION.json",
+          "sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz",
+          "sha256": "319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_EXECUTION.json",
+          "sha256": "654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CHANGED_EVIDENCE.json",
+          "sha256": "9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CORRECTIONS.md",
+          "sha256": "7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stdout",
+          "sha256": "2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_BEFORE_DEFINITION_REFRESH.json",
+          "sha256": "830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_DELTA.json",
+          "sha256": "b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/LITERATURE_SCOPE.md",
+          "sha256": "acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/MUTATIONS.json",
+          "sha256": "2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/SOURCE_READINESS.json",
+          "sha256": "3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_carrier_twists.py",
+          "sha256": "19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stdout",
+          "sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_holonomy_explore.py",
+          "sha256": "06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_vocab.json",
+          "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/check_block15_exact_twist.py",
+          "sha256": "99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/make_primary.py",
+          "sha256": "fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py.gz",
+          "sha256": "d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stderr.gz",
+          "sha256": "a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py.gz",
+          "sha256": "7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stderr.gz",
+          "sha256": "47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py.gz",
+          "sha256": "8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stderr.gz",
+          "sha256": "9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py.gz",
+          "sha256": "0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stderr.gz",
+          "sha256": "4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py.gz",
+          "sha256": "dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stderr.gz",
+          "sha256": "bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py.gz",
+          "sha256": "ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stderr.gz",
+          "sha256": "19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py.gz",
+          "sha256": "c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stderr.gz",
+          "sha256": "4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py.gz",
+          "sha256": "5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stderr.gz",
+          "sha256": "21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py.gz",
+          "sha256": "d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stderr.gz",
+          "sha256": "0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py.gz",
+          "sha256": "55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stderr.gz",
+          "sha256": "a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py.gz",
+          "sha256": "c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stderr.gz",
+          "sha256": "d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py.gz",
+          "sha256": "cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stderr.gz",
+          "sha256": "d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py.gz",
+          "sha256": "3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stderr.gz",
+          "sha256": "2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py.gz",
+          "sha256": "deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stderr.gz",
+          "sha256": "eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stdout.gz",
+          "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/package_source.py",
+          "sha256": "3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357"
+        },
+        {
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/verify_block15.py",
+          "sha256": "9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf"
+        },
+        {
+          "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+        },
+        {
+          "path": "docs/audit/data/citation_graph_manifest.json",
+          "sha256": "3fa83579629666e3789b6b1fd9babeadff2faaad322f276e22a132a400a4492b"
+        },
+        {
+          "path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+          "sha256": "2ab609e5f2d06c60e051763ba1eeb9c2d680578a002ec0b066456d78be71800a"
+        }
+      ]
+    }
+  ],
+  "original_dispositions": {
+    "8104": [
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/AUTHOR_REVIEW.md",
+        "original_status": "A",
+        "original_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/AUTHOR_REVIEW.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/kept/pr8104-AUTHOR_REVIEW-f47757c621d16573.md",
+        "final_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893",
+        "archive_mapping": {
+          "encoding": "identity",
+          "git_blob": "8adc08d78ee326d0c6d410ab01dce45ad22e9524",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/AUTHOR_REVIEW.md",
+          "raw_bytes": 2871,
+          "raw_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893",
+          "stored_path": "kept/pr8104-AUTHOR_REVIEW-f47757c621d16573.md",
+          "stored_sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stderr",
+        "original_status": "A",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stdout",
+        "original_status": "A",
+        "original_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+        "final_sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7386536ff49734aafb7807e69629582866fbc377",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER.stdout",
+          "raw_bytes": 8830,
+          "raw_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441",
+          "stored_path": "_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+          "stored_sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER_TWISTS.json",
+        "original_status": "A",
+        "original_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER_TWISTS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+        "final_sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7386536ff49734aafb7807e69629582866fbc377",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_CARRIER_TWISTS.json",
+          "raw_bytes": 8830,
+          "raw_sha256": "7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441",
+          "stored_path": "_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+          "stored_sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_DERIVATION.md",
+        "original_status": "A",
+        "original_sha256": "30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_DERIVATION.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9.gz",
+        "final_sha256": "be3e6927b1d463ca996b2c7070203cc2a9e6eb95b9813cec5640a0023a727426",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6068a1f20e573d94fad471ba45b5691e482edd89",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_DERIVATION.md",
+          "raw_bytes": 13128,
+          "raw_sha256": "30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9",
+          "stored_path": "_objects/30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9.gz",
+          "stored_sha256": "be3e6927b1d463ca996b2c7070203cc2a9e6eb95b9813cec5640a0023a727426"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stderr",
+        "original_status": "A",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stdout",
+        "original_status": "A",
+        "original_sha256": "d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef.gz",
+        "final_sha256": "ce35ed6072af5156fa45313b636485cd543d792f991f6454001d06bb82d05749",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7fc6cd96134f17bfad8a07604ea2ef89d94e77d8",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST.stdout",
+          "raw_bytes": 818,
+          "raw_sha256": "d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef",
+          "stored_path": "_objects/d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef.gz",
+          "stored_sha256": "ce35ed6072af5156fa45313b636485cd543d792f991f6454001d06bb82d05749"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST_CERTIFICATE.json",
+        "original_status": "A",
+        "original_sha256": "234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST_CERTIFICATE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7.gz",
+        "final_sha256": "b03c127af6f673c9a0b9a0ff1be0427204ecbad946c42a0d2410e78d274533f3",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c484e599c2f74fe95f57a9933572eec83f6bd715",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_EXACT_TWIST_CERTIFICATE.json",
+          "raw_bytes": 7954,
+          "raw_sha256": "234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7",
+          "stored_path": "_objects/234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7.gz",
+          "stored_sha256": "b03c127af6f673c9a0b9a0ff1be0427204ecbad946c42a0d2410e78d274533f3"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stderr",
+        "original_status": "A",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stdout",
+        "original_status": "A",
+        "original_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+        "final_sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1b62bd6daa2cd6f21a640dcd6975b603b4ba0b94",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY.stdout",
+          "raw_bytes": 2092,
+          "raw_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c",
+          "stored_path": "_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+          "stored_sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY_EXPLORATION.json",
+        "original_status": "A",
+        "original_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY_EXPLORATION.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+        "final_sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1b62bd6daa2cd6f21a640dcd6975b603b4ba0b94",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/BLOCK15_HOLONOMY_EXPLORATION.json",
+          "raw_bytes": 2092,
+          "raw_sha256": "61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c",
+          "stored_path": "_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+          "stored_sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz",
+        "original_status": "A",
+        "original_sha256": "319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700.gz",
+        "final_sha256": "545a76dc26024c9a71875d033f08c1a6910e14a4214d2ce424ad5a5447655977",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "c14edd232f8da4601fd6e2f4c5f026b5c60ce46b",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_CACHE.txt.gz",
+          "raw_bytes": 1062,
+          "raw_sha256": "319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700",
+          "stored_path": "_objects/319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700.gz",
+          "stored_sha256": "545a76dc26024c9a71875d033f08c1a6910e14a4214d2ce424ad5a5447655977"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_EXECUTION.json",
+        "original_status": "A",
+        "original_sha256": "654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_EXECUTION.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9.gz",
+        "final_sha256": "795b1ce595026ca8aa0086d7b8da39f98d8dcbb44b1dd38613a55d6bfea72a16",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "71f20e6165ae6c161d5239a143d563769e3a32e4",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CANONICAL_EXECUTION.json",
+          "raw_bytes": 2199,
+          "raw_sha256": "654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9",
+          "stored_path": "_objects/654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9.gz",
+          "stored_sha256": "795b1ce595026ca8aa0086d7b8da39f98d8dcbb44b1dd38613a55d6bfea72a16"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CHANGED_EVIDENCE.json",
+        "original_status": "A",
+        "original_sha256": "9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CHANGED_EVIDENCE.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963.gz",
+        "final_sha256": "7479b5e20daabc0677ad644b8c2a93bc0fd7677ac99d54a544552881ed0f6f95",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "3ef8651140d68f9e23e4978c51c573c1da724acd",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CHANGED_EVIDENCE.json",
+          "raw_bytes": 210,
+          "raw_sha256": "9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963",
+          "stored_path": "_objects/9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963.gz",
+          "stored_sha256": "7479b5e20daabc0677ad644b8c2a93bc0fd7677ac99d54a544552881ed0f6f95"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CORRECTIONS.md",
+        "original_status": "A",
+        "original_sha256": "7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CORRECTIONS.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437.gz",
+        "final_sha256": "064636e2a3e4a07ca6027d87f854938f524f4c4f94ae991af05f8884b8c3cebb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "0608cdb2031f965a5bd1be35b19579714045e76e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/CORRECTIONS.md",
+          "raw_bytes": 740,
+          "raw_sha256": "7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437",
+          "stored_path": "_objects/7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437.gz",
+          "stored_sha256": "064636e2a3e4a07ca6027d87f854938f524f4c4f94ae991af05f8884b8c3cebb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stderr",
+        "original_status": "A",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stdout",
+        "original_status": "A",
+        "original_sha256": "2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430.gz",
+        "final_sha256": "5e5a859f771cd019b2a437ce2f0e221874bec0967f1fdd33de0c3d48181bda35",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ec3a22131f243388451dda31814734107c43dbc6",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/FIRST_PRIMARY.stdout",
+          "raw_bytes": 1722,
+          "raw_sha256": "2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430",
+          "stored_path": "_objects/2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430.gz",
+          "stored_sha256": "5e5a859f771cd019b2a437ce2f0e221874bec0967f1fdd33de0c3d48181bda35"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_BEFORE_DEFINITION_REFRESH.json",
+        "original_status": "A",
+        "original_sha256": "830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_BEFORE_DEFINITION_REFRESH.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb.gz",
+        "final_sha256": "bd84b2d840d5f1f76ddf960edf6b1c550553052aaa19e9c4b246c76de9b79be7",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ab32de5a23f291013057bdc82eb4969b0459e23f",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_BEFORE_DEFINITION_REFRESH.json",
+          "raw_bytes": 1144,
+          "raw_sha256": "830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb",
+          "stored_path": "_objects/830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb.gz",
+          "stored_sha256": "bd84b2d840d5f1f76ddf960edf6b1c550553052aaa19e9c4b246c76de9b79be7"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_DELTA.json",
+        "original_status": "A",
+        "original_sha256": "b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_DELTA.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b.gz",
+        "final_sha256": "da9dc279355d57c8a839da944866d8c3aa8d39a4407c29e2852757fadd305c4a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4b1f4f91801c9e3e3f25e30be37f911d318000f7",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/GRAPH_DELTA.json",
+          "raw_bytes": 1144,
+          "raw_sha256": "b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b",
+          "stored_path": "_objects/b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b.gz",
+          "stored_sha256": "da9dc279355d57c8a839da944866d8c3aa8d39a4407c29e2852757fadd305c4a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/LITERATURE_SCOPE.md",
+        "original_status": "A",
+        "original_sha256": "acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/LITERATURE_SCOPE.md"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4.gz",
+        "final_sha256": "748ab2aab8b72eead211f32fe61ebb67181f58b5b4ac02db449960bf73136f14",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e707f2fde80a9dc5bc7ce36e292ff0f24b05c529",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/LITERATURE_SCOPE.md",
+          "raw_bytes": 472,
+          "raw_sha256": "acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4",
+          "stored_path": "_objects/acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4.gz",
+          "stored_sha256": "748ab2aab8b72eead211f32fe61ebb67181f58b5b4ac02db449960bf73136f14"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/MUTATIONS.json",
+        "original_status": "A",
+        "original_sha256": "2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/MUTATIONS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503.gz",
+        "final_sha256": "b99400a9b53eba1397c0fd42a8e52b9f4ba11751f1bf44a77249dc6db55d31c7",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1dd0b25664cd81202b584b829d2d9e2fe6fd4d70",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/MUTATIONS.json",
+          "raw_bytes": 18724,
+          "raw_sha256": "2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503",
+          "stored_path": "_objects/2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503.gz",
+          "stored_sha256": "b99400a9b53eba1397c0fd42a8e52b9f4ba11751f1bf44a77249dc6db55d31c7"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/SOURCE_READINESS.json",
+        "original_status": "A",
+        "original_sha256": "3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/SOURCE_READINESS.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202.gz",
+        "final_sha256": "32dadfb1d457492bdf1ec1b747950a21859286e87d7ce88fd0009c18d2b66190",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "3d819f5e8dd37abc3a2f7076b6ac8b3b641b78ec",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/SOURCE_READINESS.json",
+          "raw_bytes": 271,
+          "raw_sha256": "3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202",
+          "stored_path": "_objects/3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202.gz",
+          "stored_sha256": "32dadfb1d457492bdf1ec1b747950a21859286e87d7ce88fd0009c18d2b66190"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_carrier_twists.py",
+        "original_status": "A",
+        "original_sha256": "19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_carrier_twists.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126.gz",
+        "final_sha256": "734567a182668bde9961cbc1dc801e43ee591bbcad22fe31e6a131c4156317a1",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b5fe2b0500927a92b2b97558cca56d64310087ba",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_carrier_twists.py",
+          "raw_bytes": 2450,
+          "raw_sha256": "19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126",
+          "stored_path": "_objects/19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126.gz",
+          "stored_sha256": "734567a182668bde9961cbc1dc801e43ee591bbcad22fe31e6a131c4156317a1"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stderr",
+        "original_status": "A",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stderr"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+        "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stderr",
+          "raw_bytes": 0,
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+          "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stdout",
+        "original_status": "A",
+        "original_sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stdout"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d.gz",
+        "final_sha256": "f27d6de0872dd71aab9d13beb66110ee291ec018863797de8af8e75ead157f16",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "f96c17e3f8d22f3784c0d02c84e097f6fa92a9b9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_graph_final.stdout",
+          "raw_bytes": 357,
+          "raw_sha256": "6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d",
+          "stored_path": "_objects/6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d.gz",
+          "stored_sha256": "f27d6de0872dd71aab9d13beb66110ee291ec018863797de8af8e75ead157f16"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_holonomy_explore.py",
+        "original_status": "A",
+        "original_sha256": "06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_holonomy_explore.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad.gz",
+        "final_sha256": "2bf67f2870a0a2f36bfb8eaabc738d2a37296b2387f054506a6afc06d8ab3d9f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "820770b90bd6dea4bcdb1990c10c517356f34298",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_holonomy_explore.py",
+          "raw_bytes": 2303,
+          "raw_sha256": "06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad",
+          "stored_path": "_objects/06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad.gz",
+          "stored_sha256": "2bf67f2870a0a2f36bfb8eaabc738d2a37296b2387f054506a6afc06d8ab3d9f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_vocab.json",
+        "original_status": "A",
+        "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_vocab.json"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+        "final_sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/block15_vocab.json",
+          "raw_bytes": 153,
+          "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+          "stored_path": "_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+          "stored_sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/check_block15_exact_twist.py",
+        "original_status": "A",
+        "original_sha256": "99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/check_block15_exact_twist.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9.gz",
+        "final_sha256": "a7140a3576b7a0c69747f773edf9da98ea64acaaa4309869f6b2f539773e7b2c",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "91f3a12cf1cc253899c41685e441ea3d9a17ab9d",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/check_block15_exact_twist.py",
+          "raw_bytes": 2769,
+          "raw_sha256": "99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9",
+          "stored_path": "_objects/99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9.gz",
+          "stored_sha256": "a7140a3576b7a0c69747f773edf9da98ea64acaaa4309869f6b2f539773e7b2c"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/make_primary.py",
+        "original_status": "A",
+        "original_sha256": "fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/make_primary.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a.gz",
+        "final_sha256": "6b272ae169e4b05e984141a083c6263c2314a446f05b3e02b55e372aa336115a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "ffd54e7e371d484a058920a20b4f566a44e904de",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/make_primary.py",
+          "raw_bytes": 5389,
+          "raw_sha256": "fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a",
+          "stored_path": "_objects/fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a.gz",
+          "stored_sha256": "6b272ae169e4b05e984141a083c6263c2314a446f05b3e02b55e372aa336115a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py.gz",
+        "original_status": "A",
+        "original_sha256": "d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c.gz",
+        "final_sha256": "3a8e3d3384ca2a27d7cc2e58315663ba30978a9260a8c2c6fe2c4ad501e22b22",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "adf64c91cff0b43697ad5818e643397d967cb76c",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.py.gz",
+          "raw_bytes": 3938,
+          "raw_sha256": "d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c",
+          "stored_path": "_objects/d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c.gz",
+          "stored_sha256": "3a8e3d3384ca2a27d7cc2e58315663ba30978a9260a8c2c6fe2c4ad501e22b22"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e.gz",
+        "final_sha256": "0a6944bd8d9d171e3d75296a821086d1cbd20b253eccfa3467e830a542b1d0cc",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "60f9a92543e86a44b15c67067a1ebba3f7a50827",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stderr.gz",
+          "raw_bytes": 344,
+          "raw_sha256": "a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e",
+          "stored_path": "_objects/a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e.gz",
+          "stored_sha256": "0a6944bd8d9d171e3d75296a821086d1cbd20b253eccfa3467e830a542b1d0cc"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/bloch_twist_factor.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py.gz",
+        "original_status": "A",
+        "original_sha256": "7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23.gz",
+        "final_sha256": "3c910fb8a2d67d54e6258919a87095a9804a39cd507266a8eb87fab932cd9d5b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "54c5f69b8c08f4b4e1237e3ece6071e2519f4124",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.py.gz",
+          "raw_bytes": 3940,
+          "raw_sha256": "7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23",
+          "stored_path": "_objects/7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23.gz",
+          "stored_sha256": "3c910fb8a2d67d54e6258919a87095a9804a39cd507266a8eb87fab932cd9d5b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869.gz",
+        "final_sha256": "6954f0e5f1a73f78147bbaf743df71d73bca9cc5976f29eabc7b0024be4d620a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6a6798f89dbb170c8274aea9b19861f8db2009c9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stderr.gz",
+          "raw_bytes": 382,
+          "raw_sha256": "47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869",
+          "stored_path": "_objects/47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869.gz",
+          "stored_sha256": "6954f0e5f1a73f78147bbaf743df71d73bca9cc5976f29eabc7b0024be4d620a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/clifford_cross_sign.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py.gz",
+        "original_status": "A",
+        "original_sha256": "8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd.gz",
+        "final_sha256": "97dabf4361483da8ef3b76cc42d041b538636ccf825d487106a625998fbd4c1b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "be85825523f6f25f20287920c452570df6eff166",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.py.gz",
+          "raw_bytes": 3940,
+          "raw_sha256": "8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd",
+          "stored_path": "_objects/8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd.gz",
+          "stored_sha256": "97dabf4361483da8ef3b76cc42d041b538636ccf825d487106a625998fbd4c1b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a.gz",
+        "final_sha256": "e60e62cd8dc436ceec3416306bd691c710a695bd9817b136572c344fa2c3db68",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "d5a0d166a574398f8394fb7d1a447ac442cbb031",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stderr.gz",
+          "raw_bytes": 383,
+          "raw_sha256": "9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a",
+          "stored_path": "_objects/9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a.gz",
+          "stored_sha256": "e60e62cd8dc436ceec3416306bd691c710a695bd9817b136572c344fa2c3db68"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/filled_ring_formula.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py.gz",
+        "original_status": "A",
+        "original_sha256": "0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b.gz",
+        "final_sha256": "462e00e513dadc3f884ec05a8486c4b3937938ec81f9fbc0b1e0fdc364db6d07",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "dac5178f680cde13037da15ae3022a461eec07eb",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.py.gz",
+          "raw_bytes": 3941,
+          "raw_sha256": "0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b",
+          "stored_path": "_objects/0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b.gz",
+          "stored_sha256": "462e00e513dadc3f884ec05a8486c4b3937938ec81f9fbc0b1e0fdc364db6d07"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e.gz",
+        "final_sha256": "833f0de291047a9edb6d2e51f6696a993df1c93a912053af3ede85d5c9968447",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "92c153ab23daaccc49e3df00ccc06c034e48c3c8",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stderr.gz",
+          "raw_bytes": 359,
+          "raw_sha256": "4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e",
+          "stored_path": "_objects/4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e.gz",
+          "stored_sha256": "833f0de291047a9edb6d2e51f6696a993df1c93a912053af3ede85d5c9968447"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/normal_metric.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py.gz",
+        "original_status": "A",
+        "original_sha256": "dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4.gz",
+        "final_sha256": "6d9a91b2bc304de196ee22d0206b5088b69803e28bfbe62e6ac99a65e80ffb64",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "489217be3de7e5bca870d6ee6371fc8dbba69a14",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.py.gz",
+          "raw_bytes": 3941,
+          "raw_sha256": "dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4",
+          "stored_path": "_objects/dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4.gz",
+          "stored_sha256": "6d9a91b2bc304de196ee22d0206b5088b69803e28bfbe62e6ac99a65e80ffb64"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe.gz",
+        "final_sha256": "f7d1807a0e3ad681dfcc154825dc62aab15ce23ce67eb126bd95f557a61ffcce",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "9928b332f2547da248929fc2e4f60e49f85cfbd9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stderr.gz",
+          "raw_bytes": 349,
+          "raw_sha256": "bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe",
+          "stored_path": "_objects/bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe.gz",
+          "stored_sha256": "f7d1807a0e3ad681dfcc154825dc62aab15ce23ce67eb126bd95f557a61ffcce"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_inner_coefficient.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py.gz",
+        "original_status": "A",
+        "original_sha256": "ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d.gz",
+        "final_sha256": "f2945d45a9182fd26a4bda5173439fccd949bd1490b5b5aec9c451f2c5d20203",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "28073ffda50a18067bf989e1cab5c24b18aacc35",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.py.gz",
+          "raw_bytes": 3940,
+          "raw_sha256": "ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d",
+          "stored_path": "_objects/ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d.gz",
+          "stored_sha256": "f2945d45a9182fd26a4bda5173439fccd949bd1490b5b5aec9c451f2c5d20203"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620.gz",
+        "final_sha256": "a12a8ed4e972504a058b9a30e02148f9caec5c583e195fcc58e1c4da45373120",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "4264fc13c1e972f7541599db8dde36787c9fb2f5",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stderr.gz",
+          "raw_bytes": 346,
+          "raw_sha256": "19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620",
+          "stored_path": "_objects/19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620.gz",
+          "stored_sha256": "a12a8ed4e972504a058b9a30e02148f9caec5c583e195fcc58e1c4da45373120"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/radical_sine_square.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py.gz",
+        "original_status": "A",
+        "original_sha256": "c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b.gz",
+        "final_sha256": "afb88631d8f95591b3276e502c566186ee79b861ddb8b7c96c856eaec919d530",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "245b74eaff6f69300520b4ab924d23298f5a7257",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.py.gz",
+          "raw_bytes": 3936,
+          "raw_sha256": "c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b",
+          "stored_path": "_objects/c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b.gz",
+          "stored_sha256": "afb88631d8f95591b3276e502c566186ee79b861ddb8b7c96c856eaec919d530"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d.gz",
+        "final_sha256": "16c8b64820e063a4cfa06dcb34f307acb1b0fc295781fe1fe69e882b0a8d304f",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6826360f882c766c65dcb422e5e391c931483872",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stderr.gz",
+          "raw_bytes": 347,
+          "raw_sha256": "4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d",
+          "stored_path": "_objects/4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d.gz",
+          "stored_sha256": "16c8b64820e063a4cfa06dcb34f307acb1b0fc295781fe1fe69e882b0a8d304f"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_car_sign.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py.gz",
+        "original_status": "A",
+        "original_sha256": "5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60.gz",
+        "final_sha256": "50cd9b79510b11ba35ffc62f30ca7eb2c2840a80e43a7a939513981c23c1fb20",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5f7712be8119358ae343cc2deedbf3e7329a4103",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.py.gz",
+          "raw_bytes": 3941,
+          "raw_sha256": "5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60",
+          "stored_path": "_objects/5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60.gz",
+          "stored_sha256": "50cd9b79510b11ba35ffc62f30ca7eb2c2840a80e43a7a939513981c23c1fb20"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177.gz",
+        "final_sha256": "4593d32fbec8d578d6b24db5a6672b80ca4d7c37d4903f9984c5d124ee81adde",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "17b85636d5ced3f974885c6117c58a3adbc5f79e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stderr.gz",
+          "raw_bytes": 371,
+          "raw_sha256": "21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177",
+          "stored_path": "_objects/21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177.gz",
+          "stored_sha256": "4593d32fbec8d578d6b24db5a6672b80ca4d7c37d4903f9984c5d124ee81adde"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_chord_shift.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py.gz",
+        "original_status": "A",
+        "original_sha256": "d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6.gz",
+        "final_sha256": "1d1d5c8d7db7122f5f86965222ed712073db4d8cab99fdd2ac64cb8c3362d50a",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "6503ef9da545ce31508fec716e483c56cead8049",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.py.gz",
+          "raw_bytes": 3938,
+          "raw_sha256": "d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6",
+          "stored_path": "_objects/d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6.gz",
+          "stored_sha256": "1d1d5c8d7db7122f5f86965222ed712073db4d8cab99fdd2ac64cb8c3362d50a"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1.gz",
+        "final_sha256": "55236539318278164edfcbf1559d50b9553aeeae24427576bf4dea96865093df",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "277b4ced33e8e77bedf54f1bea4de142c1803088",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stderr.gz",
+          "raw_bytes": 351,
+          "raw_sha256": "0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1",
+          "stored_path": "_objects/0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1.gz",
+          "stored_sha256": "55236539318278164edfcbf1559d50b9553aeeae24427576bf4dea96865093df"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/ring_electric_factor.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py.gz",
+        "original_status": "A",
+        "original_sha256": "55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658.gz",
+        "final_sha256": "da6edb7f1278c1c30cef741085164888ca9aae15b1b58517369ae2e008e37f3b",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "14661521675b95542806617999d4c625a9b61992",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.py.gz",
+          "raw_bytes": 3942,
+          "raw_sha256": "55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658",
+          "stored_path": "_objects/55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658.gz",
+          "stored_sha256": "da6edb7f1278c1c30cef741085164888ca9aae15b1b58517369ae2e008e37f3b"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146.gz",
+        "final_sha256": "3376367a7e1b5b10983e83b6a95f1b7c5a701d88f29870e6c38a960c978efb38",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "7452f585bf2d9819b8d19e97e3f4b3eda88d3762",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stderr.gz",
+          "raw_bytes": 401,
+          "raw_sha256": "a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146",
+          "stored_path": "_objects/a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146.gz",
+          "stored_sha256": "3376367a7e1b5b10983e83b6a95f1b7c5a701d88f29870e6c38a960c978efb38"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_lower_shift.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py.gz",
+        "original_status": "A",
+        "original_sha256": "c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0.gz",
+        "final_sha256": "a3290a2e2ef6e2c84e42af893e8a4911a0467f95059020e5473ae71c2e74ea46",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "5fb4a5f5f12a6c5377ae05e9dd14e512dd75fb3f",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.py.gz",
+          "raw_bytes": 3940,
+          "raw_sha256": "c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0",
+          "stored_path": "_objects/c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0.gz",
+          "stored_sha256": "a3290a2e2ef6e2c84e42af893e8a4911a0467f95059020e5473ae71c2e74ea46"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0.gz",
+        "final_sha256": "030a5176cdf8efe5a8552000390fcbbf1421871bed7184b3c5c624eae0cf8ed8",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "2110f4310dad463d3d8638d2c51ae7642a040d89",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stderr.gz",
+          "raw_bytes": 420,
+          "raw_sha256": "d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0",
+          "stored_path": "_objects/d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0.gz",
+          "stored_sha256": "030a5176cdf8efe5a8552000390fcbbf1421871bed7184b3c5c624eae0cf8ed8"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/root_upper_shift.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py.gz",
+        "original_status": "A",
+        "original_sha256": "cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26.gz",
+        "final_sha256": "c68ef2b4549a0afca5332c590d6eb718cbe4daab0d522a0bf985bcca3b1d84ad",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "b0618f04d654fc4721a04b2ab199ddc65da6d30f",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.py.gz",
+          "raw_bytes": 3944,
+          "raw_sha256": "cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26",
+          "stored_path": "_objects/cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26.gz",
+          "stored_sha256": "c68ef2b4549a0afca5332c590d6eb718cbe4daab0d522a0bf985bcca3b1d84ad"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354.gz",
+        "final_sha256": "2bc1fc3ef3d0e20393780c678774fab0df9fbcda108df96d91fce82de3574423",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "50a992508c74010ae8eb15baa2454bf4fd76b7b9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stderr.gz",
+          "raw_bytes": 346,
+          "raw_sha256": "d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354",
+          "stored_path": "_objects/d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354.gz",
+          "stored_sha256": "2bc1fc3ef3d0e20393780c678774fab0df9fbcda108df96d91fce82de3574423"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/site_twist_factor.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py.gz",
+        "original_status": "A",
+        "original_sha256": "3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b.gz",
+        "final_sha256": "33eeb944900155a15a4a6aaea1b0f717f4000436467acb89c5e22d6bafd868ed",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "9aaf4da00d276220cefa7d3e485b6e2d5d007df9",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.py.gz",
+          "raw_bytes": 3941,
+          "raw_sha256": "3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b",
+          "stored_path": "_objects/3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b.gz",
+          "stored_sha256": "33eeb944900155a15a4a6aaea1b0f717f4000436467acb89c5e22d6bafd868ed"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8.gz",
+        "final_sha256": "6b03b1b380c61fdf74ec2f216a4709933b8eccbec7a14de4adee87892a633fd2",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "1df93348fe2d6d30c5284b29a39af40082baf114",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stderr.gz",
+          "raw_bytes": 369,
+          "raw_sha256": "2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8",
+          "stored_path": "_objects/2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8.gz",
+          "stored_sha256": "6b03b1b380c61fdf74ec2f216a4709933b8eccbec7a14de4adee87892a633fd2"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/slow_gap_normalization.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py.gz",
+        "original_status": "A",
+        "original_sha256": "deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1.gz",
+        "final_sha256": "1dfce2ae07b22a37b051cd1ebb44d0df7ad5b0626323b31ffbf18df55b0a5926",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "12bf5975db65d20e8593ea71f08305c91ca2ba0e",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.py.gz",
+          "raw_bytes": 3927,
+          "raw_sha256": "deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1",
+          "stored_path": "_objects/deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1.gz",
+          "stored_sha256": "1dfce2ae07b22a37b051cd1ebb44d0df7ad5b0626323b31ffbf18df55b0a5926"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stderr.gz",
+        "original_status": "A",
+        "original_sha256": "eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stderr.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383.gz",
+        "final_sha256": "f127a608a9ecacd9ad515b85befdd95aa71c13a7bcdcce3ed4602177430335d3",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "94b0edb9c0abbfa4ebd131246c5a75ee6e950ce0",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stderr.gz",
+          "raw_bytes": 339,
+          "raw_sha256": "eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383",
+          "stored_path": "_objects/eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383.gz",
+          "stored_sha256": "f127a608a9ecacd9ad515b85befdd95aa71c13a7bcdcce3ed4602177430335d3"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stdout.gz",
+        "original_status": "A",
+        "original_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stdout.gz"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+        "final_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "86e43ea3218b5890302b754bbf8927f94e79f7ee",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/mutations/twist_removed.stdout.gz",
+          "raw_bytes": 20,
+          "raw_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+          "stored_path": "_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+          "stored_sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/package_source.py",
+        "original_status": "A",
+        "original_sha256": "3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/package_source.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357.gz",
+        "final_sha256": "3a4479d2f2d5e273b5adb900ca32a1d9a828a9828e3e6c77d0250fbc21b6f95e",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "8fe36d40872ab0288807b9a93035d7fedfcf005d",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/package_source.py",
+          "raw_bytes": 11824,
+          "raw_sha256": "3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357",
+          "stored_path": "_objects/3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357.gz",
+          "stored_sha256": "3a4479d2f2d5e273b5adb900ca32a1d9a828a9828e3e6c77d0250fbc21b6f95e"
+        }
+      },
+      {
+        "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/verify_block15.py",
+        "original_status": "A",
+        "original_sha256": "9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf",
+        "disposition": "Exact historical author proof/evidence preserved; setup failure and final self-contained definition/source-graph refresh are retained as historical provenance, not independent authority.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/verify_block15.py"
+        },
+        "final_path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf.gz",
+        "final_sha256": "b5e4dfac4c72162147c5a3c0a6d21177763f006ef44301e0655dc4df7b08d309",
+        "archive_mapping": {
+          "encoding": "gzip",
+          "git_blob": "fabbdfd3996085570922164770e6cb4befd727a7",
+          "original_mode": "100644",
+          "original_path": ".claude/science/physics-loops/flat-holonomy-spectral-floor-20260913/verify_block15.py",
+          "raw_bytes": 3675,
+          "raw_sha256": "9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf",
+          "stored_path": "_objects/9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf.gz",
+          "stored_sha256": "b5e4dfac4c72162147c5a3c0a6d21177763f006ef44301e0655dc4df7b08d309"
+        }
+      },
+      {
+        "original_path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "original_status": "A",
+        "original_sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268",
+        "disposition": "Canonical source preserved with source90s timeout declaration only on primary; note exact original and math unchanged.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+        },
+        "final_path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "final_sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268",
+        "archive_mapping": null
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "original_status": "M",
+        "original_sha256": "3fa83579629666e3789b6b1fd9babeadff2faaad322f276e22a132a400a4492b",
+        "disposition": "Generated original graph manifest excluded; current-main authority unchanged, integration regenerates graph.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": "docs/audit/data/citation_graph_manifest.json"
+        },
+        "final_path": null,
+        "final_sha256": null,
+        "archive_mapping": null
+      },
+      {
+        "original_path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+        "original_status": "A",
+        "original_sha256": "2ab609e5f2d06c60e051763ba1eeb9c2d680578a002ec0b066456d78be71800a",
+        "disposition": "Canonical source preserved with source90s timeout declaration only on primary; note exact original and math unchanged.",
+        "recovery": {
+          "head": "4405cc405409b30e6a40eb5cfb71d766ba9a1dbe",
+          "path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py"
+        },
+        "final_path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+        "final_sha256": "52822ffa6a58481ead58cf1d22b4e0d65b9f34ef8ec1d013778f9e23447233f6",
+        "archive_mapping": null
+      }
+    ]
+  },
+  "source_paths": [
+    {
+      "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/README.md",
+      "sha256": "149ab7ca809afa405c46c939ba6e634ae73c887a098b7d79be188e3b3d7999e4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/06b5726747ef39744338a7f6b62f0672cabbe9561cfc6d9d7c075b96c296d5ad.gz",
+      "sha256": "2bf67f2870a0a2f36bfb8eaabc738d2a37296b2387f054506a6afc06d8ab3d9f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/0acc8352fb129c3577bd5b202b52b32530b17bbd83d394d986e4104f5a3a867b.gz",
+      "sha256": "462e00e513dadc3f884ec05a8486c4b3937938ec81f9fbc0b1e0fdc364db6d07"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/0c45c7384c2d578edad59e5dbaa6d697d84928729ccaf1134bc341ebb01826a1.gz",
+      "sha256": "55236539318278164edfcbf1559d50b9553aeeae24427576bf4dea96865093df"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/19c17065836c608e4406ee13d3e5e3be3672ab190f02fb7cad851507c06b1126.gz",
+      "sha256": "734567a182668bde9961cbc1dc801e43ee591bbcad22fe31e6a131c4156317a1"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/19cbccf21e99e90046ac1e336ed49d5e926ee571207ba123e325173d37264620.gz",
+      "sha256": "a12a8ed4e972504a058b9a30e02148f9caec5c583e195fcc58e1c4da45373120"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/2068a658e9c1773e5796a5fef167895cbd7007aca5690c46f592ed8cfffe46e8.gz",
+      "sha256": "6b03b1b380c61fdf74ec2f216a4709933b8eccbec7a14de4adee87892a633fd2"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/21df8f6ebce163392a1b0534e48f2ce3fdba86e8806ef89596ef6cfb6d3b1177.gz",
+      "sha256": "4593d32fbec8d578d6b24db5a6672b80ca4d7c37d4903f9984c5d124ee81adde"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/234367d9bc068763e116f58c42c9fa95fc6b0815370cb0dc984861d248dab7f7.gz",
+      "sha256": "b03c127af6f673c9a0b9a0ff1be0427204ecbad946c42a0d2410e78d274533f3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/2441ea14c4c175e2bdde47e0944e43d3d6ec3564cae5cb5ef723d3321fd60503.gz",
+      "sha256": "b99400a9b53eba1397c0fd42a8e52b9f4ba11751f1bf44a77249dc6db55d31c7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/2d8636e064e2a2681d14086f073c440c3bea2de33e9c7525795fbedb04d50430.gz",
+      "sha256": "5e5a859f771cd019b2a437ce2f0e221874bec0967f1fdd33de0c3d48181bda35"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/30cb02dc558d41257f146ad146ddfcc8b6470d28536fcf57a2d8ea231e3847a9.gz",
+      "sha256": "be3e6927b1d463ca996b2c7070203cc2a9e6eb95b9813cec5640a0023a727426"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/319c9e83537d1c807f967afcfd26c953f7c2d56ae889184587303c9812f2d700.gz",
+      "sha256": "545a76dc26024c9a71875d033f08c1a6910e14a4214d2ce424ad5a5447655977"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/3623f78c7f6bb4e6fb4c4b40869c922965fcd90a6acc4a823c61781ce783229b.gz",
+      "sha256": "33eeb944900155a15a4a6aaea1b0f717f4000436467acb89c5e22d6bafd868ed"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/3a3d50aaca8ec607283d3ebedf9c42c4ff167069dbd997ec667f67accd8b4202.gz",
+      "sha256": "32dadfb1d457492bdf1ec1b747950a21859286e87d7ce88fd0009c18d2b66190"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/3fd00249bcf9370423a2222c9139610e805322792ce5743959cb3dcb4c3e7357.gz",
+      "sha256": "3a4479d2f2d5e273b5adb900ca32a1d9a828a9828e3e6c77d0250fbc21b6f95e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/4680f89f9c9e40a3a6fad08d97176bc860426a2c7574a13e14f9976192f4b57e.gz",
+      "sha256": "833f0de291047a9edb6d2e51f6696a993df1c93a912053af3ede85d5c9968447"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/47dc4860b25efa2559c359b24b69d645d1f498f27005052ee935004f0a750869.gz",
+      "sha256": "6954f0e5f1a73f78147bbaf743df71d73bca9cc5976f29eabc7b0024be4d620a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/4a6e692d9039fb1bc10fbe35870eaaafe38d6f5e9c9e09dc1ead1d085af3256d.gz",
+      "sha256": "16c8b64820e063a4cfa06dcb34f307acb1b0fc295781fe1fe69e882b0a8d304f"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/55ef1e1e319bc5a463c7f8d0e904927f63f0497f0a5700df836340d639b6a658.gz",
+      "sha256": "da6edb7f1278c1c30cef741085164888ca9aae15b1b58517369ae2e008e37f3b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/5ab549ee5ada0951cbe26177f6d3f6cd31a36452dbe7b19b207ea2dc27d84b60.gz",
+      "sha256": "50cd9b79510b11ba35ffc62f30ca7eb2c2840a80e43a7a939513981c23c1fb20"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/61439daceb7801aabba79986a828c812b242d4f7bc4ee9f4ecacb0d5cbea560c.gz",
+      "sha256": "46daddc46f26a15702a124fc4036f94130547226d45d6d681dfc92840250d361"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/654b0568d6f7ee2c0023edaf7d67f2ac703f97914105c0d7f7446d29504857b9.gz",
+      "sha256": "795b1ce595026ca8aa0086d7b8da39f98d8dcbb44b1dd38613a55d6bfea72a16"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/6eabe606f2118a23716ddf58c4c2fe71b90faea0e22262c927df04d69c35118d.gz",
+      "sha256": "f27d6de0872dd71aab9d13beb66110ee291ec018863797de8af8e75ead157f16"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7b6e690ae12af837a069531d55cef30f59ac152ed1c2294fc33305c0ad229437.gz",
+      "sha256": "064636e2a3e4a07ca6027d87f854938f524f4c4f94ae991af05f8884b8c3cebb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7d2edc9fe13d0349d230b1381416cca6f026e102bf2045a7763d1d7a0ff60a23.gz",
+      "sha256": "3c910fb8a2d67d54e6258919a87095a9804a39cd507266a8eb87fab932cd9d5b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/7feecf3602b547b4fdf462a4ae654c202d94a8afd10b4aac1656811b1e3a7441.gz",
+      "sha256": "4daed2fb1982971246558f1bfc65dacfd4b0e04dce84ff35024ab0bd99106822"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/830fc56ac58124ff4e3cba5785833f14795a2f306ae21261bb46498966eacebb.gz",
+      "sha256": "bd84b2d840d5f1f76ddf960edf6b1c550553052aaa19e9c4b246c76de9b79be7"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/8ed4b8505ae3f3ef5ce8e127a0484667f1d87cc70efd11a528373b39472a12dd.gz",
+      "sha256": "97dabf4361483da8ef3b76cc42d041b538636ccf825d487106a625998fbd4c1b"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/99791f6b7312b43dc133fab3c0fd8bd23a011bb08cdbfa978232de96cb5686c9.gz",
+      "sha256": "a7140a3576b7a0c69747f773edf9da98ea64acaaa4309869f6b2f539773e7b2c"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9a66bc8c10846b6a04b37530d2b036bc3d3857cfd06d87639327d6e9c885ea7a.gz",
+      "sha256": "e60e62cd8dc436ceec3416306bd691c710a695bd9817b136572c344fa2c3db68"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ab492587b0cfefa939bbbc78637cf19851768122fcd450a7ba5e83a782dc963.gz",
+      "sha256": "7479b5e20daabc0677ad644b8c2a93bc0fd7677ac99d54a544552881ed0f6f95"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9b168537e1ef55f5c1307c3d3d1914fb2099e6658d47c8f67a446e16ed488ecf.gz",
+      "sha256": "b5e4dfac4c72162147c5a3c0a6d21177763f006ef44301e0655dc4df7b08d309"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64.gz",
+      "sha256": "d3b174dc756363b72027fd5ab4bd15f228a4ec6c341c36805fded2a8bd2928eb"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/a3cf5b1fd4cab877c7779f849974d4375c695da03cf53f8dee106acf7ee8d146.gz",
+      "sha256": "3376367a7e1b5b10983e83b6a95f1b7c5a701d88f29870e6c38a960c978efb38"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/a73db4057400d600f44412e2e0b14f9abd7fc82f32c06a9ca691dd4aa502252e.gz",
+      "sha256": "0a6944bd8d9d171e3d75296a821086d1cbd20b253eccfa3467e830a542b1d0cc"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/acfbbe1cc454e8f096233b6432046e8458222552c0e12c822b244a8543319bc4.gz",
+      "sha256": "748ab2aab8b72eead211f32fe61ebb67181f58b5b4ac02db449960bf73136f14"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/b7d46640355fd3f5018c12270938d7874d5be771d97df84042a24e1380767b1b.gz",
+      "sha256": "da9dc279355d57c8a839da944866d8c3aa8d39a4407c29e2852757fadd305c4a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/bc475be21aefa338056ace040a415d751b8945f06e60fd81a0e5e33f68c7bcfe.gz",
+      "sha256": "f7d1807a0e3ad681dfcc154825dc62aab15ce23ce67eb126bd95f557a61ffcce"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/c1f30f58bfeb7acb124cee5431091d2817da8e77418c77913774a8de48c60be0.gz",
+      "sha256": "a3290a2e2ef6e2c84e42af893e8a4911a0467f95059020e5473ae71c2e74ea46"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/c6dfbe6df468a9bec809e62141c6d69fa36abe86d615fee23d93fc085c405e5b.gz",
+      "sha256": "afb88631d8f95591b3276e502c566186ee79b861ddb8b7c96c856eaec919d530"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/cb935e3afd129d4e015feaa5431b32cd6f3a2540e92b145832d77d72689dac26.gz",
+      "sha256": "c68ef2b4549a0afca5332c590d6eb718cbe4daab0d522a0bf985bcca3b1d84ad"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d00307a51815286b124d75f5423a7320767ef63f4611ba97a5a2b9013848a9ef.gz",
+      "sha256": "ce35ed6072af5156fa45313b636485cd543d792f991f6454001d06bb82d05749"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d032a80a262956cc6bd10c9247061346771e85e25780a002d9f7f638e118545c.gz",
+      "sha256": "3a8e3d3384ca2a27d7cc2e58315663ba30978a9260a8c2c6fe2c4ad501e22b22"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d08edcadf70f6377bcb80b102a7d5af6a21706da75d2659857c7a758901a0354.gz",
+      "sha256": "2bc1fc3ef3d0e20393780c678774fab0df9fbcda108df96d91fce82de3574423"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d179deb7e4771def76d3a6c0841ec7c36eac8d48492b62abf8a0b678c6325ce0.gz",
+      "sha256": "030a5176cdf8efe5a8552000390fcbbf1421871bed7184b3c5c624eae0cf8ed8"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/d56390828c6e325cd55f134b82f165a19dac8e55b41407a6621dfee0d000d1b6.gz",
+      "sha256": "1d1d5c8d7db7122f5f86965222ed712073db4d8cab99fdd2ac64cb8c3362d50a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/dd9518a9b7ae0087711f485060c98decdc6e3a133698923373bc4246562f9ba4.gz",
+      "sha256": "6d9a91b2bc304de196ee22d0206b5088b69803e28bfbe62e6ac99a65e80ffb64"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/deb306077c170d4b4b81b07eccacdbc50e11ad8d1706bda3ae84edd8c76acfb1.gz",
+      "sha256": "1dfce2ae07b22a37b051cd1ebb44d0df7ad5b0626323b31ffbf18df55b0a5926"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/eab8551254e3e4b578154e5ac8a74af64c687107fc6aba659972485165e6e383.gz",
+      "sha256": "f127a608a9ecacd9ad515b85befdd95aa71c13a7bcdcce3ed4602177430335d3"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/ed91d0081deb8c1c71a193718ca271c08d3e189cf4009163b23415b18227d94d.gz",
+      "sha256": "f2945d45a9182fd26a4bda5173439fccd949bd1490b5b5aec9c451f2c5d20203"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/_objects/fee0e9b7d92c3e5f9b57b66f5eac0b5a4514cbe32d975574022e835152641f8a.gz",
+      "sha256": "6b272ae169e4b05e984141a083c6263c2314a446f05b3e02b55e372aa336115a"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/archive-manifest.json",
+      "sha256": "844b71bca508f62e3ec8ec0a3662b7cca60298ab529a4aeef764d26d367937e6"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8104-evidence/kept/pr8104-AUTHOR_REVIEW-f47757c621d16573.md",
+      "sha256": "7d936841634c804c154e58278b1dbb32bd3160aca2d6125a31ea5c78affa4893"
+    },
+    {
+      "path": "logs/runner-cache/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.txt",
+      "sha256": "9d244a81b24b235a89a08e3060ec824df72208dc9a48b5be534fc49bd0841e2f"
+    },
+    {
+      "path": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+      "sha256": "52822ffa6a58481ead58cf1d22b4e0d65b9f34ef8ec1d013778f9e23447233f6"
+    }
+  ],
+  "runtime_scientific_inputs": [],
+  "input_bindings": {
+    "runtime": [],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04"
+      },
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "sha256": "2ebd9c75868c890a42b71a4a6f9c5c1b374cc7007ae59482f7a9f7b3e757126d"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+        "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "claim_id": "flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13",
+      "declared_claim_id": "flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md"
+      ],
+      "dependency_rationale": "Current memo and CAR parent constrain framework placement. Graph, charges, Hamiltonian time, finite matter matrices and rotor family supplied. Integer-link comparator is not a periodic floor theorem. Ring min-max and periodic localization are redeclared; Nakano spinful Hubbard result is context only, not a theorem imported into spinless ring."
+    }
+  ],
+  "claim_dispositions": [
+    [
+      "Ring floor and concentration",
+      "Positive electric form and continuous six-state potential give lower floor. Fixed finite localized smooth spans then Fourier truncation prove all fixed indices along any g\u21920,S\u2192infinity. Unique minimum gives concentration and loop real\u2192\u22121, no rate."
+    ],
+    [
+      "Periodic localization",
+      "Integral cycle quotient Z\u00b3 gives connected flat3torus; constant positive metric and normal Hessian. Completing/removing charge connection locally preserves pointwise matter lower bound. IMS fixed-width errors vanish; normal/tangent metric diagonalization leaves V unchanged and yields normal zero point. Gaussian widthg, tangent localized spans and bounded charge terms supply matching upper bounds. Fixedgraph and iterated cutoff only; no slow Berry dynamics or volume-uniform claim."
+    ],
+    [
+      "Mixed metric discriminator",
+      "Contravariant coordinate change preserves normal coefficient4; Schur value2 is not that coefficient. Independent symbolic check rejects wrong frequency."
+    ],
+    [
+      "Actual-carrier witness",
+      "Clifford square and spectral anti-symmetry give nested radicals. Monotone rational enclosures certify strict two-twist comparison; independent70digit direct matrix eigenvalues lie inside each stored interval. No global minimizing twist or interacting spectrum inferred."
+    ],
+    [
+      "Scope",
+      "Formal ring O(g) coefficients remain unproved asymptotics despite finite numerical checks. N1\u2013N8 preserve distinct boundary/topology/phase obligations; no new axiom, primitive or retained audit grade."
+    ]
+  ],
+  "external_methods": [
+    {
+      "url": "https://arxiv.org/pdf/math-ph/0006022v2",
+      "sha256": "c3fd3b63f9911388b9c06ce8fdc56d0e165d5f5999a86278f45674ba3adf857c",
+      "read_scope": "Sections1\u20132 including theorem, spinful particle-count and occupation-graph proof/remarks, pp1\u20136.",
+      "role": "Flux-minimization method context only. Spinful Hubbard theorem is not transferred to the independently diagonalized spinless two-particle ring; no phase result imported."
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/inventory.json",
+      "sha256": "8a3fed0d126af8086f74753e5315960560077bd106dbadc11037f2eb33a22399"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/original-statuses.json",
+      "sha256": "9d8259caaecc52a3452b564034236642eb9b39fde9f2fbced3e3f565fc5c9628"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/history-verification.json",
+      "sha256": "a78f6946a6c55aa494c22c6917f6abff1624b57f1ba4bb8c24ddcee285870ea4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/independent-controls.py",
+      "sha256": "52c3c3f0e444db24063c92a745f7606956fa67715b257eb265b803da12814a66"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/independent-controls-result.json",
+      "sha256": "d4a7de3da2d85c9f991a6511aa8d45c70ae79fe0f534a5181f8a2523e88967f0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/external-source-bindings.json",
+      "sha256": "616fee0289aa55e0787ef581423acce8fece3d62c84f5164e91d6e555c8a279c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-head-fetch.json",
+      "sha256": "2e5d6e8ffbc4bddbc4059f9284bdb2c85abcfc645560b67a5e62d3f8876b3789"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-author-packaging.json",
+      "sha256": "117577aa813ad003529c6bc5dc1b9a5d4d6765ea0dcb5cc9a8d3b64246cee540"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-author-archive.json",
+      "sha256": "542436af472c48c5e802b9e67d9b9d80e12750413139c471b26b61127e71b442"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-author-timeout-correction.json",
+      "sha256": "49aa4c10f4070e73a7cc8c364780e0d9ba78835513dc1d3ce6575345263972b9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/8104-historical-cache-restoration.json",
+      "sha256": "92963c88f1f6f30d4f3c8fc2f52e351de8a86c5eb8a3f7296c5215fa2b50032a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8103-timeout-final.json",
+      "sha256": "cc6d06a937f6f68207759b8a981db91b8e8c410efa8cd306c5ea5a4882c2770f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-8101-final.json",
+      "sha256": "644c19b6ace62a67566746d3f98b734d1cded47a873ffe89bf6a2257d990a142"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/verify-history.py",
+      "sha256": "0414e818811cbffab53f022905510d54de074d0867a144bae655462e8222aa5b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8104/derivation-to-note.diff",
+      "sha256": "3c19484e80c330e5813455d0859bddcef00f1c77a7ecfd80e26affbaad17cc5b"
+    }
+  ],
+  "findings": [
+    {
+      "finding": "Source timeout absent in original, caught by actual contract on prior unit before this unit execution",
+      "resolution": "Author added original90s cap only; stale original cache preserved and one fresh capture required."
+    }
+  ],
+  "independent_checks": {
+    "status": "PASS",
+    "checks": 9,
+    "controls": [
+      "ring minimum",
+      "ring curvature",
+      "formal oscillator ground coefficient",
+      "formal oscillator gap coefficient",
+      "contravariant coordinate metric",
+      "normal frequency distinct from Schur",
+      "direct identity eigenvalue sum inside exact rational certificate",
+      "direct twisted eigenvalue sum inside exact rational certificate",
+      "strict witness independent diagonalization"
+    ],
+    "difference": "-1.4424053496453475205770645487500727170103936677194156161858020625",
+    "elapsed_seconds": 0.0714411250082776,
+    "scope": "Independent70digit direct4x4 eigenvalues versus original integer certificate; symbolic ring/metric controls. No primary invocation."
+  },
+  "reused_exact_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+      "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ],
+  "history": "All76 original paths mapped;73 historical payloads exact.14 mutant source/assertion receipts authenticated. Definition refresh makes periodic reduction self-contained; earlier graph hash and setup failure preserved. Original derivation, exploration, certificate and source-builder templates read; no unique proof discarded.",
+  "context": "Mandatory current authorities, CAR premise and integer-link comparator reused by exact same-session hashes. Open-box theorem is conceptual contrast, not an undeclared dependency; complete periodic coordinates supplied.",
+  "scope": "Supplied finite charged ring holonomy minimum and concentration; fixed-volume periodic normal-oscillator plus minimum-matter spectral floor, with iterated cutoff recovery. Strict L3 free-matter twist comparison only; no thermodynamic charged phase.",
+  "remaining": "One shared preexecution preflight; root sole primary capture under90seconds; final same-session output/cache/source confirmation and final cache preflight. No final PASS before those bindings."
+}

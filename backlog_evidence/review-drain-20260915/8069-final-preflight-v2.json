@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8069",
+  "tree": "7fd9f0b41efba16f6b92226cec9d6b7899afefad",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+      "claim_id": "native_certified_local_green_scalars_note_2026-09-09",
+      "primary_runner": "scripts/native_certified_local_green_scalars_2026_09_09.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8069-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8069-evidence/kept/pr8069-DERIVATION-f9d5127d8f8900b1.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8069-evidence/kept/pr8069-DERIVATION-f9d5127d8f8900b1.md",
+      "canonical_note": "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+      "citations": [],
+      "rationale": "Current supporting proof of positive transform and analytic Gauss error; fully reviewed under canonical8069 and directly linked/literal-pinned. No autonomous claim.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8069.json",
+        "sha256": "06350370943937d20681d68c981a8a159994eaf04cdab4877474841f1babddf3"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8752,
+      "misses": 4407
+    },
+    "packet_imports": {
+      "hits": 8742,
+      "misses": 4405
+    },
+    "declared_inputs": {
+      "hits": 8779,
+      "misses": 4538
+    }
+  },
+  "record_sha256": "1a9625756fb7e0e9bb8d455537c4cbb7d418110896f203c4280106096182034d",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

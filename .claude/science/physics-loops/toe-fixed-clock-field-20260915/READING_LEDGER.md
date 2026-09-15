@@ -337,3 +337,29 @@ for the supplied word/source operators. The source mechanism's2012
 precedent remains credited. New main infinite-star node note was completed
 (lines120-228 after the earlier1-120). The combined read of Ward and full-star
 infrared notes truncated, so those full reads are still pending.
+
+Block11 preflight: completed all six source notes newly present at main
+083a58b4e7faca5839a7b31fab553f6fa1f2c254. Ward418lines and full-star
+infrared281lines were reread in smaller chunks to recover truncations;
+node228lines, charged finite-link520lines, mixed quartet515lines and
+Weyl Hall/cone686lines are now fully read. Their supplied Hamiltonian,
+Gaussian reference or formal weak-coupling scope is retained. No new
+axiom/workflow changes in this delta.
+The complete native U1 pair/support note was read, followed by the virtual
+pair ring note opening90lines: the candidate fourth-order virtual-pair
+derivation is ALREADY present, including cancellation of adjacent-first
+paths and the opposite-first coefficient. It will not be recounted as new.
+The June18 two-speed exchange-matrix support note was read fully: it
+assumes positive coefficients and has no actual quartet tensor/contrast
+calculation. New target is the latter and its induced photon response.
+Primary Anber-Donoghue1102.0789 search confirms established interacting
+limiting-speed context; no general emergence novelty is claimed.
+
+Block11 external reading: Anber-Donoghue https://arxiv.org/pdf/1102.0789
+introduction/setup through section3, section4 in full, section6.2 in full,
+section7 lines1801-1892 and section8 opening through equation59 read.
+This is not a whole-paper read. The established common-speed mechanism and
+slow logarithmic running are credited. Native coefficients are taken from
+the fully read current source and checked algebraically here. No current
+phenomenological bound is imported. Full charged finite-link source was
+reread before selecting a state-level truncation target.

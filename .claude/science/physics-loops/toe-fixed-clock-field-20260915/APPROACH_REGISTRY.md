@@ -126,3 +126,28 @@ local source has an exact semicircle and a special-momentum atom. This
 is a source selection rule in the polarized representation, not a
 particle impossibility theorem. Next inspect newly landed native source
 notes for a different bottleneck or a route to the selected background.
+
+
+## Block11 — actual quartet metric flow and photon variance
+
+The full mixed Hall-free quartet has four Weyl nodes, hence two Dirac
+bubbles but no multiplicity factor in an individual external self-energy.
+The resulting formal one-loop weighted star flow has a common-metric zero
+mode and decaying contrasts. With z=1+2 kappa e0² L, its mean matter/photon
+mismatch decays as z^-2 and inter-node contrast as z^-1. These equations
+presume the stated massless phase, regulator and small-anisotropy sector.
+
+A separate positive-constitutive-tensor derivation gives the quadratic
+photon response as metric variance. The actual allowed angle perturbation
+has alternating xz shear d=-mu² eta/[2(1-mu²)sin²b]. Its zero average does
+not cancel the variance: W=2d²(z^-1-z^-2)diag(1/3,-2/3,1/3). Polarization
+splitting is transient and decays slowly. Isotropic contrast variance is
+an explicit escape from a universal splitting claim. No physical speed,
+phase or axiom update is inferred.
+
+Exact Clifford/parameter algebra, weighted generator, symbolic variance
+integrals and full native velocity projections pass personal checks.
+The maximum central derivative error is2.18e-8 at step.001 and decreases
+quadratically. Full positive constitutive tensors challenge the quadratic
+response and polarization roots. Personal N1-N8 and vocabulary review
+complete; no independent audit. Next target is the state-level cutoff gap.

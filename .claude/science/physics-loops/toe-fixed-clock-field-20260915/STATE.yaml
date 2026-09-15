@@ -9,11 +9,10 @@ branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 10
-current_target: local native pair spectroscopy and finite-source threshold selection
-  rule
+block: 12
+current_target: state-level finite-link cutoff control beyond prescribed low-flux
+  dynamics
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-15T21:10:33.687485+00:00'
-next_step: review newly landed native charged and infrared sources; choose next substantive
-  physical target
+last_checkpoint_utc: '2026-09-15T21:35:14.898573+00:00'
+next_step: check novelty and derive gauge-compatible ground-state cutoff bounds

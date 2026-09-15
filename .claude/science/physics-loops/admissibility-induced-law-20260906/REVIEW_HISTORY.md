@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 17 — V1-V5 (supervisor, 2026-09-15)
+- V1: the campaign's "one law or several" for the static reading — block 03 gave the uniqueness region; the ordered side was open on `main`; blocks 13–16 make the static reading the carrier of the repository's Green functions.
+- V2: the lens pass in `GOAL_block17.md` ("reflection positivity needs a definite coupling" — not for site reflections; "the threshold is absurd" — conceded, existence only; "torus order is not a Gibbs statement" — bridged by T6; "is this the formation law" — no).
+- V3: T1–T7 proved with every step re-proved except three named standard theorems; executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes; three drafting defects fixed before the census (a contour count that forgot the domino's two orientations, a threshold checked in the wrong units, forbidden tokens); after opening, the conditional three-dimensional statement was replaced by the in-plane count (same threshold, no lemma).
+- V4: no coupling selected; thresholds not claimed optimal; the formation law untouched.
+- V5: consumers named — #8093's assembly (the static reading's phase structure); PR #8146 (the formation law's counterpart); the campaign's queue.
+
+## block 17 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block17.md`): as V2. Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block17_findings.md`): the sum-of-squares decomposition against the direct expectation; the two-step chessboard form with the other reflection; polyomino placements for the enclosing-cycle counts; partial sums of both series; a second adjacency implementation for the three-dimensional counts — all consistent. Fold: the note's contour-count sentence and the runner's expected values corrected; forbidden tokens removed. Author checks only; independent review pending.
+
+## block 17 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 03's note, all on `main` at `2ed54cb83a`; nothing pinned from a branch or PR (PR #8146 is context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — both dimensions unconditional; thresholds marked not optimal; the standard theorems named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

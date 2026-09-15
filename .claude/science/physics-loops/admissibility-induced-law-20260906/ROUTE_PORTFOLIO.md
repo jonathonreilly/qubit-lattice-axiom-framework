@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 17 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–16 are open PRs #8034, #8035, #8138–#8142, #8146–#8150)
+Searched commit: `origin/main` = `2ed54cb83a`.
+- `git grep -l -iE "chessboard|reflection positiv|peierls|long-range order|symmetry break" origin/main -- 'docs/ADMISSIBILITY*.md'` → Dirac–Kähler carrier notes (positivity of a Gaussian carrier, a different object) and the two-site criterion note (route 5 "an ordering argument" named open); nothing on the six-axis static law's ordered side.
+- Open PRs: #8146 (the formation law's strong-coupling side, this lane); none on the static law's ordered side.
+Classification: **open after the matched-hit review.** Routes: O-A the Ising-style flip bijection — not available (six values; the flip inside a contour is not a bijection); O-B the cluster (random-cluster) expansion — not available (weights `q − r` or `r − q` negative for one ordering); O-C reflection positivity through site planes + chessboard + contour counting — chosen (no definiteness needed; planar duality in 2D and, by the in-plane count, in 3D without any surface lemma); O-D the Pirogov–Sinai contour model — not attempted (beyond a session at scope); O-E sharpening the constants — not attempted.

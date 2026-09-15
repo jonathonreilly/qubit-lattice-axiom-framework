@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 17, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "'one law or several' for the static reading of the six-axis rule: block 03's uniqueness region on one side; the ordered side open on main"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the ordered side is settled on Z^2 and Z^3 (at least two Gibbs states for p >= 216 max(q, r); the in-plane count); next: sharpen the constants, close the band. Consumers: #8093's assembly; PR #8146; the campaign's queue"
+```

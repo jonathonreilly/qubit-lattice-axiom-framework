@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py
+runner_sha256: f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+PASS: exact compact Wilson Hamiltonian algebra support
+per_element: eight trace-normalized generators; fundamental kinetic coefficient4/a
+per_site: cube incidence verifies twelve physical links and six closed faces
+per_mode: covariance3 and radial Gaussian moments are finite algebra checks
+per_block: exact nonlinear compact potential and transfer scalar retained
+lattice_wide: fixed cube only; no numerical certification of strong convergence or continuum limit
+TOTAL: PASS=31 FAIL=0
+resources: seconds=0.233704 RSS_MiB=61.796875 limits180/180
+source_sha256: f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836
+
+----- stderr -----
+

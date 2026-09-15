@@ -105,3 +105,14 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- block 21 close (2026-09-15)
+# block: 21
+# branch: physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915 (independent; base origin/main 07583e5fc2; blocks 06-20 are open PRs #8034, #8035, #8138-#8142, #8146-#8154)
+# pr_status: opened for review (number recorded at close-out); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes, no findings; gates: see HANDOFF.md"
+# seats: "supervisor-run: controls (two passes; the crude tanh(osc/4) route replaced by the variance route) -> contract with a lens pass -> primary (W1-W6, runner) -> refuting pass (quadrature; grid; solvable open chain; 3^3 box; torus sums) -> fold (none needed)"
+# review_findings: "unsoldered sphere static law with e^{beta s.s'} on Z^3 at weak coupling: TV(P_h, P_h') <= beta|h - h'|/(2 sqrt 3) (covariance eigenvalues L'(x), L(x)/x <= 1/3 by series); coefficients beta/sqrt 3, alpha = 2 sqrt(3) beta, alpha < 1 iff beta < sqrt(3)/6; block 03's coupling re-proved for the sphere; one rotation-invariant law; |<s_0.s_x>| <= alpha^{|x|_1}/(1-alpha); M_N^2 <= ((1+alpha)/(1-alpha))^3/((1-alpha) N); sup_k <|s^(k)|^2> bounded uniformly; the kernel's window [sqrt(3)/6, 3 sqrt(3) pi/8] open"
+# strongest_unresolved_proof_obligation: "the band [sqrt(3)/6, 3 sqrt(3) pi/8]; the sharper coefficient (the zero-field maximum of the mean absolute deviation); the normalization"
+# next_exact_action: "queue refresh 2026-09-15 (block 21 opening): narrow the band; normalization; the plane's decay rate; X4/S6"
+# lock: held (owner: don't stop; assess the next lane at each conclusion)

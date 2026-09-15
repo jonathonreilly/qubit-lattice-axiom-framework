@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 21 (2026-09-15) — the weak-coupling side on `Z³`
+- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 03 (on `main`; the static reading, the specification, the coupling route). Proposed, unaudited. PR #8153 referenced as the evidence address for W6's strong-coupling half; PR #8154 for context.
+- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading of finite windows with exterior records; the exponential overlap with `β` supplied; tori of even side.
+- Scaffolding: the three-point weighted space for the derivative identity and the maximal coupling; the `2³` window for the fixed point; the `7³` box for the walk bounds; the `6³` torus for the torus sum; the three-site path for the frozen-site conditional; quadrature, a grid, the open chain and the `3³` box in the refuting pass.
+- Standard mathematical imports at definition level: the extension theorem for consistent finite-dimensional laws on a countable product of compact spaces; the uniqueness of a probability measure on a generating π-system; the exponential series of `sinh` and `cosh`.
+- References named, not used: Dobrushin; Dobrushin–Shlosman; Föllmer; Künsch.
+- Counterfactual pass: a discrete menu (block 03's finite-menu criterion); the formation reading (block 08's causal coupling region); the Born overlap (the derivative route applies to any smooth positive one-site weight, but its coefficient is not computed here); the band (nothing claimed).

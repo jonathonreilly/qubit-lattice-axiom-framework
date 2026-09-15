@@ -84,3 +84,8 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 21 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–20 are open PRs #8034, #8035, #8138–#8142, #8146–#8154)
+Searched commit: `origin/main` = `07583e5fc2`.
+- `git grep -l -iE "dobrushin|uniqueness region|contraction" origin/main -- 'docs/ADMISSIBILITY*.md'` → block 03 (the six-axis rule's one-site contraction region by coupling; finite menu) and block 04 (the two-site criterion); nothing for the sphere-valued rule; the classical no-order notes are two-dimensional and quantum.
+Classification: **open after the matched-hit review.** Routes: X-A the crude `tanh(osc/4)` coefficient (threshold `artanh(1/6)`) — superseded by X-B; X-B the derivative bound with the exact covariance eigenvalues (`√3/6`) — chosen; X-C the mean-absolute-deviation coefficient (`β/2` per unit change; `β < 1/3`) — not proved (the zero-field maximum is a numerical finding); X-D block 03's coupling route with the maximal coupling of densities and a time-`t` bound — chosen; X-E existence by an abstract compactness theorem — avoided (the finite-window limits exist by the comparison bound); X-F exponential decay by freezing one site — chosen.

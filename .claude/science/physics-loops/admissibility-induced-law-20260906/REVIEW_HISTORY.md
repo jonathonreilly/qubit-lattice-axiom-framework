@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 21 — V1-V5 (supervisor, 2026-09-15)
+- V1: blocks 19 and 20 (PRs #8153, #8154) place the gravity node's kernel in the ordered unsoldered static law on `Z³`; its coupling window on `Z³`.
+- V2: the lens pass in `GOAL_block21.md` ("textbook criterion" — the explicit constant at scope and the placement are the content; "why not the sharper `tanh(β/2)`" — the supremum over fields is unproved; "the torus has no boundary" — freeze a site; "existence" — from the comparison bound and consistency, not imported).
+- V3: W1–W5 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes with no findings; the controls replaced the crude route by the variance route before the primary.
+- V4: no reading, rule or coupling selected; the true threshold and the band not claimed; the strong-coupling half not re-proved.
+- V5: consumers named — #8093's assembly (the gravity node's coupling dependence); the campaign's queue.
+
+## block 21 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
+Lens (`GOAL_block21.md`): as V2. Controls: pass a (the crude `tanh(osc/4)` route; the sphere sweep showing the response about half of it; the Langevin constants), pass b (the exact antipodal value; the covariance eigenvalues; the series ratios; the mean-absolute-deviation sweep; the walk bound) — the contract written on the variance route. Primary: the note and the runner (20 checks, 13 mutations; two first-run failures fixed: a symbolic-sum form in D4 and an author's name in the N7 steelman). Refuting pass (`CHECKER_block21_findings.md`): quadrature, a grid, the solvable open chain, floating-point linear algebra, torus sums — no findings. Author checks only; independent review pending.
+
+## block 21 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, block 03's note, all on `main` at `07583e5fc2`; nothing pinned from a branch or PR (PR #8153 is the evidence address for W6's strong half only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the true threshold, the band, the Born overlap and the sharper coefficient marked open; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

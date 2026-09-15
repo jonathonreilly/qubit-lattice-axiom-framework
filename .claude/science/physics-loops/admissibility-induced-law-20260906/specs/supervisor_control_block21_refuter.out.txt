@@ -1,0 +1,7 @@
+R1 W1 by quadrature at 600 random (beta, h, Delta): TV <= beta|Delta|/(2 sqrt 3) always: True; worst ratio 0.8660
+R2 sup L'(x) = 0.333333, sup L(x)/x = 0.333333 on (0, 60] (both <= 1/3; the value 1/3 is the limit at 0): True
+R3 open chain beta=0.28: <s_0.s_2> = 0.008620960 vs L(beta)^2 = 0.008620960
+R3 open chain beta=1.0: <s_0.s_2> = 0.097991090 vs L(beta)^2 = 0.097991090
+R3 <s_0.s_2> = L(beta)^2 at four couplings: True; on the line L(beta) <= 2 beta/sqrt 3 (the decay bound's direction) for beta < sqrt(3)/4: True
+R4 3x3x3 box at alpha = 9/10: D >= 0: True; u*_centre = 0.618901 <= alpha^2/(2(1-alpha)) = 4.050000: True; max b = 0.4500 = 3c
+R5 torus sums for L = 1..10 at alpha = 9/10 are at most ((1+alpha)/(1-alpha))^3 = 6859.00: True

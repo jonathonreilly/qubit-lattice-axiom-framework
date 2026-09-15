@@ -1,0 +1,775 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "28524b7f84c8df6a0e4de066983affcb6044d8ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ARTIFACT_PLAN.md",
+      "raw_bytes": 113,
+      "raw_sha256": "716d9291a5d197bed82b34173cbc6ad63f3a58247f68cc13565113ba3432bfd0",
+      "stored_path": "_objects/716d9291a5d197bed82b34173cbc6ad63f3a58247f68cc13565113ba3432bfd0.gz",
+      "stored_sha256": "59a16b5ec229b3200a625245aeb293f09187da151890de95bc4ccf4609fd43dc"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f2d029345d048729534bcf40cd6cd805e7e8666f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 189,
+      "raw_sha256": "9bbdaa315078b0d72b5441babdac4c09e963a5a0a62195b0a9714df7f854c7f3",
+      "stored_path": "_objects/9bbdaa315078b0d72b5441babdac4c09e963a5a0a62195b0a9714df7f854c7f3.gz",
+      "stored_sha256": "1452bd30cfd5c45f597bcc74d157fcc3a54ccb266f1acf636c592d0417ffc210"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8ea255cfc4475e3880d4d2d8ee77035bc2095239",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/AUTHOR_VERIFICATION_DRIVER.py",
+      "raw_bytes": 3716,
+      "raw_sha256": "5533acd71031897b777452fd52ac29a42a6f41de9fc747113032ce4cd270eb71",
+      "stored_path": "_objects/5533acd71031897b777452fd52ac29a42a6f41de9fc747113032ce4cd270eb71.gz",
+      "stored_sha256": "5c050b8146ebee29a27d41a45c35b404822bb711a974b7ab859274361eedb61a"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bda626f41ab4b5ff6ab4a0e8e468b5586bf6770d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 115,
+      "raw_sha256": "197a9a86c8d31e34bf50a3edb947a5072e4e9c2b494e1a7b9d931c6f10d2815b",
+      "stored_path": "_objects/197a9a86c8d31e34bf50a3edb947a5072e4e9c2b494e1a7b9d931c6f10d2815b.gz",
+      "stored_sha256": "491bc25767d26c9223b2b3ea773aad59de5942d4f91a7dd84f2f5c44a1de2c55"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e10b787e3eb7c15433114cc54322c72c7c65d0f3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/CONTROL_CONTRACT.md",
+      "raw_bytes": 232,
+      "raw_sha256": "0bb8e81ea017bcb2fa90697014b54deb3332f61f9524376a5c6a7c9cd7f55ce7",
+      "stored_path": "_objects/0bb8e81ea017bcb2fa90697014b54deb3332f61f9524376a5c6a7c9cd7f55ce7.gz",
+      "stored_sha256": "f9bf049ba5ea174e995e06d5316e5203b97675409bbbb655e47340a6ef1c0809"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "66a0267275ff8b1080e4fe6f416c178be5e7d9b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GOAL.md",
+      "raw_bytes": 113,
+      "raw_sha256": "fd8df13da95b41b478b25c18b281c9b4602970ea0343c51d1682b86b65d69318",
+      "stored_path": "_objects/fd8df13da95b41b478b25c18b281c9b4602970ea0343c51d1682b86b65d69318.gz",
+      "stored_sha256": "4cb47917483a0c09efff75c8ffba813b5b2972e8bf40756d6ae7071a5a89ff45"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MANIFEST.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTANT.stdout",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "_objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "6173015253feeddc60f34f70fb087fb47307b4a7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH.stdout",
+      "raw_bytes": 280,
+      "raw_sha256": "5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88",
+      "stored_path": "_objects/5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88.gz",
+      "stored_sha256": "fd48ea722d042bbab34554af8ea33db1431875d53e09a25f09d182938dcbaa58"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3efb2019c649b9dc51c69e394ea895b6f72a58e1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/GRAPH_DELTA.json",
+      "raw_bytes": 224,
+      "raw_sha256": "575b48218cb39c492a3dfabf59fa2b313be5999989363ee52d0e4cb007314dfe",
+      "stored_path": "_objects/575b48218cb39c492a3dfabf59fa2b313be5999989363ee52d0e4cb007314dfe.gz",
+      "stored_sha256": "678a83939d4fd667adde38ccc87917832e5bd43ff1cf5683c99a6d3f9960ad5d"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ef2d1966d49c63a4e9a0c6770d118365446660c2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/HANDOFF.md",
+      "raw_bytes": 990,
+      "raw_sha256": "20f5df1c849d0c8692c1e51984c1207edd25d1e58f25a752e8ca3b45926c573e",
+      "stored_path": "kept/pr8050-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "20f5df1c849d0c8692c1e51984c1207edd25d1e58f25a752e8ca3b45926c573e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "39533011a3326fb8dfd52b13b19f57a279d3858a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED.stdout",
+      "raw_bytes": 45576,
+      "raw_sha256": "8285b4894cc15fda36ea6f7f3a60fec252425ec3280d07ad1944fc29c56b1162",
+      "stored_path": "_objects/8285b4894cc15fda36ea6f7f3a60fec252425ec3280d07ad1944fc29c56b1162.gz",
+      "stored_sha256": "d59561fb07cd18335996ba749f60fec490ec9019cdaa06e0c82367469c85d242"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a5b652d91877f456f5d43fa77cba0ef61e5cb6be",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ISOLATED_CLOSURE.json",
+      "raw_bytes": 1691,
+      "raw_sha256": "9380d38b4c82c375b55a0e659cc0f5e109884628a3a00803a4efbdcc0e918647",
+      "stored_path": "_objects/9380d38b4c82c375b55a0e659cc0f5e109884628a3a00803a4efbdcc0e918647.gz",
+      "stored_sha256": "14d5a6eb71ebec6e0a02cd02effcdfdd9a8057c7dab4ff825452b13a2844faef"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "42fd7f80a54d0553c31dea2c2f8820499b140b2f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/LITERATURE_BRIDGES.md",
+      "raw_bytes": 131,
+      "raw_sha256": "629a81b2cd694cb89df60022497329409914a2e0847c9a9511c9fb1a06a32199",
+      "stored_path": "_objects/629a81b2cd694cb89df60022497329409914a2e0847c9a9511c9fb1a06a32199.gz",
+      "stored_sha256": "9bf7c1e2074ba9901b1465968a1052491b446ea75ffac50d075e31f3b9f9e37b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8524617de69d7a0d2a317a87768bb7501e898747",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/LIVE.stdout",
+      "raw_bytes": 45921,
+      "raw_sha256": "f43e9caca490a87c2fcaf1ade862f853cb33d0688720c695840250ff69f18987",
+      "stored_path": "_objects/f43e9caca490a87c2fcaf1ade862f853cb33d0688720c695840250ff69f18987.gz",
+      "stored_sha256": "24b56c03e5de7f1fc532295b57bd95c0f39182291fe72e4d641e55c3c69399ed"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "2b97390228763f3222725e1c07d9a6a263a997c3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MANIFEST.stdout",
+      "raw_bytes": 77,
+      "raw_sha256": "18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92",
+      "stored_path": "_objects/18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92.gz",
+      "stored_sha256": "f7334f8926cca2a932de8afd7ff52615c9264dcdd8efc8d314d73b8ab71b37f8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9a2f112398181e21fb318739790e2f8ec85e1316",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTANT.stderr",
+      "raw_bytes": 1224,
+      "raw_sha256": "a5c3468cc75030ca9aa673c20bc8bede480b9edcf4dc23f81ae7a4eb1c89de72",
+      "stored_path": "_objects/a5c3468cc75030ca9aa673c20bc8bede480b9edcf4dc23f81ae7a4eb1c89de72.gz",
+      "stored_sha256": "2d07fc663483957d57dfa719a52d9534f44a3660d72040dba66c728b0335ab7e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bbc8e4a6547ecdb6cf8f5ef52d1955aa67c3aee9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/MUTATIONS.json",
+      "raw_bytes": 231,
+      "raw_sha256": "b6b8592848017b18ee1e1e9417e76cf6843a29ae037ab414cf2e0dec629153cf",
+      "stored_path": "_objects/b6b8592848017b18ee1e1e9417e76cf6843a29ae037ab414cf2e0dec629153cf.gz",
+      "stored_sha256": "b7ee6e8af7db1d345f0f5877830ac42549b49a0aa820b1385e14874482a55dfb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3c654335bab8cf185f3b83b41c423f093f6cb0a0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/NO_GO_LEDGER.md",
+      "raw_bytes": 179,
+      "raw_sha256": "a0401f3739adda7f10d7d30610d323163183c9a9f44e116e0ad4da12c98fb928",
+      "stored_path": "_objects/a0401f3739adda7f10d7d30610d323163183c9a9f44e116e0ad4da12c98fb928.gz",
+      "stored_sha256": "b1eb98dfa2330e267d74c7ede33ed7072a39bb54d32a9f7039256b308b958c5b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "44fb4c23e8b29f5e9a143de3b1a05766472bb230",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 99,
+      "raw_sha256": "5c65f4d8f482ba15d10a0622661863018b5301af945b25b80038a1dfdf8f0ad1",
+      "stored_path": "_objects/5c65f4d8f482ba15d10a0622661863018b5301af945b25b80038a1dfdf8f0ad1.gz",
+      "stored_sha256": "feb6e9a5721eb40128a9693380734f987fea83030a27420a1ad6f2f46f50c66f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c85d1a0ba5111f9111ec352140e6bc2b63583dbd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ORIGINAL_HASHES.json",
+      "raw_bytes": 2218,
+      "raw_sha256": "6d167189011f89f39f91f00471269792e95cb1ccef14fb53208abbc530d455d8",
+      "stored_path": "_objects/6d167189011f89f39f91f00471269792e95cb1ccef14fb53208abbc530d455d8.gz",
+      "stored_sha256": "f1b03a93964f62eef6c9d4969307279d7b9309994652a5e19bc279069495d8f1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e0d2fe5dd83f5d56e9566379942e16a925a2a032",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/PORT_RECEIPT.json",
+      "raw_bytes": 228,
+      "raw_sha256": "ee81a81a971744a4b5b94df74be65d4cb8b9332f80fce72fd2b943f2dbb184e3",
+      "stored_path": "_objects/ee81a81a971744a4b5b94df74be65d4cb8b9332f80fce72fd2b943f2dbb184e3.gz",
+      "stored_sha256": "5ed1d16f04462f8e4ab7fec0ae4db2e4931311c0a126ef99d4916bd5783a8b10"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f5905663448207135aaf4f0acecfcaf47a61ea0a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/PR_BACKLOG.md",
+      "raw_bytes": 67,
+      "raw_sha256": "5f3e57c81d88cea35b69c69149fddff40476b8152d1805d9bc54ac3c09fc433b",
+      "stored_path": "_objects/5f3e57c81d88cea35b69c69149fddff40476b8152d1805d9bc54ac3c09fc433b.gz",
+      "stored_sha256": "965543a1694543b248ac0aef36761694adbb57ffe8f3e5864a6372ae1a838cf4"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "635eb44aa0fd6ea3e7e8284854e212e479b2bd74",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/REVIEW_HISTORY.md",
+      "raw_bytes": 231,
+      "raw_sha256": "ecc86a8403175131ccf13d5e70145a40c6b3405cbf0e18b07bb26baf5a711def",
+      "stored_path": "_objects/ecc86a8403175131ccf13d5e70145a40c6b3405cbf0e18b07bb26baf5a711def.gz",
+      "stored_sha256": "3b67eba7f2b3465c6437dbfca7e42985a6c8149f6894d760cfb842fd28280b72"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ad410132b2da73b3b5721d53a76bd6b9299d0a6f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ROOT_CANONICAL_REVIEW.md",
+      "raw_bytes": 1553,
+      "raw_sha256": "a8baffaaaa716a7535ef9334ca8ada6637e9f52da3199f873bdedb8c262b0776",
+      "stored_path": "kept/pr8050-ROOT_CANONICAL_REVIEW-857933c7e06ad6ff.md",
+      "stored_sha256": "a8baffaaaa716a7535ef9334ca8ada6637e9f52da3199f873bdedb8c262b0776"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "adcd7c149b4967e7b7a16535cfdec39bb74d1470",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 108,
+      "raw_sha256": "edc418b4fbd8a066aa42f7b7d6af96bfbd06a8ceae356e9bdaeca6cfd7152da9",
+      "stored_path": "_objects/edc418b4fbd8a066aa42f7b7d6af96bfbd06a8ceae356e9bdaeca6cfd7152da9.gz",
+      "stored_sha256": "90b3a39e133cb07e81b7f6b84d7a69ae2fc0e88aab4a9e132063e830ca9c77c2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ec8446c5bf8a567989d7da57294e98d9b00a406a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/SOURCE_FREEZE.json",
+      "raw_bytes": 1160,
+      "raw_sha256": "ca76e48a2f625d8177547119648f6c4cb52fa3273b935ba214dc03df60b4c473",
+      "stored_path": "_objects/ca76e48a2f625d8177547119648f6c4cb52fa3273b935ba214dc03df60b4c473.gz",
+      "stored_sha256": "9b2aff151935c7db77a66cc496f5a3ac810ef5082e19ad8a111753ddc291d478"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "458831e2edac0074bd1cee73bf04145d3a5f20e6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/STATE.md",
+      "raw_bytes": 62,
+      "raw_sha256": "fa42c665453791d13a35901c40e32d9b64ba2dcb6274067e8fdb3a3bf17cef79",
+      "stored_path": "_objects/fa42c665453791d13a35901c40e32d9b64ba2dcb6274067e8fdb3a3bf17cef79.gz",
+      "stored_sha256": "9543307f80131dd9ed1d6a5dd438896a3f0d7237f2d78201966449af660c0a84"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "369ab4535b1dbb4cbd00c96b7c32d9cdb6559e2b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/STATE.yaml",
+      "raw_bytes": 342,
+      "raw_sha256": "2f4398febec32a5e4732688f4ffa2601ef03bbd6d607c080b144b8b4d876f6ae",
+      "stored_path": "_objects/2f4398febec32a5e4732688f4ffa2601ef03bbd6d607c080b144b8b4d876f6ae.gz",
+      "stored_sha256": "b26ed5dfae6110dc2a23e41466daddd90e935bd083e38327e5703925bfa8dd6e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c20e5769a5babd1330a94c19662391588a47d9b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/TRACE_GATE.md",
+      "raw_bytes": 89,
+      "raw_sha256": "cf3216b118c22632b26d36e8caa230e69a7d2ad50ad5762d7c43af12c29e0dd8",
+      "stored_path": "kept/pr8050-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "cf3216b118c22632b26d36e8caa230e69a7d2ad50ad5762d7c43af12c29e0dd8"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "180b09f436b5bec46acce4f86d683593f145f984",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/WRAPPER_CONTROLS.json",
+      "raw_bytes": 89,
+      "raw_sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc",
+      "stored_path": "_objects/9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc.gz",
+      "stored_sha256": "0e737acc79892f1a42e0aaef0c2cc3e77e2d2db602688f3ac961499873e5cc07"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "279a8860f62e964c651a7c951b78e8cc3b9af6fa",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/CONTROL.json",
+      "raw_bytes": 1387,
+      "raw_sha256": "353af6353b980f614675a0dea044ebfbb86e7464e90f03aee6cac3142e479b12",
+      "stored_path": "_objects/353af6353b980f614675a0dea044ebfbb86e7464e90f03aee6cac3142e479b12.gz",
+      "stored_sha256": "ebeb2752d59f5de8cf7cd3a3f76b312c372249b705c147a14600a59a62e1ba00"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4f72e8b7b934c15b684673bbee07e90e946a04f8",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/HELPER_DIFF.txt",
+      "raw_bytes": 1460,
+      "raw_sha256": "0c606953899e790e8567f65b1ceac0590a95b59059f0dee1ee6e00d1f060b638",
+      "stored_path": "_objects/0c606953899e790e8567f65b1ceac0590a95b59059f0dee1ee6e00d1f060b638.gz",
+      "stored_sha256": "9708b92a3a813967cd2144272dc6856edec79ea7671f59b9e49e1d318693356f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "e1d2b34a21ede5549df7552883c387e75bdcec83",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/independent-canonical-review/REVIEW.md",
+      "raw_bytes": 2218,
+      "raw_sha256": "a027caed8cc513908e15efe5bdef493a7f9d423ef059fb4ec0b644adf5b27eb2",
+      "stored_path": "kept/pr8050-REVIEW-e9c265c34aa8f6b7.md",
+      "stored_sha256": "a027caed8cc513908e15efe5bdef493a7f9d423ef059fb4ec0b644adf5b27eb2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "3a7d8f1226246c025dfcc6d2d79610763b9f4a65",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/READ_HASHES.json",
+      "raw_bytes": 2010,
+      "raw_sha256": "1fca417e665ba5421c36f6bdf4fba60f58aa48147c4a9581e1de9d36c9d01c0a",
+      "stored_path": "_objects/1fca417e665ba5421c36f6bdf4fba60f58aa48147c4a9581e1de9d36c9d01c0a.gz",
+      "stored_sha256": "2b2660591eb87bb343bc93639e33cc69d185310ca59d82050afc246b01a6d343"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "42f012cd5143e14f4eacb958533a7ec8e2dbf77b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/RESULT.json",
+      "raw_bytes": 246,
+      "raw_sha256": "d793683562efce83e5a6c9766a640caa19cef2abae316bc8047e4d2597cffa3a",
+      "stored_path": "_objects/d793683562efce83e5a6c9766a640caa19cef2abae316bc8047e4d2597cffa3a.gz",
+      "stored_sha256": "4c164c0014273cb0b95111a303c1ff3885e3c602633f8108680c94c30ffc330e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "47ca63eee04cc630f83f4427ffea77ec4d2cd52e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/REVIEW.md",
+      "raw_bytes": 2836,
+      "raw_sha256": "f0cd274e7f94a20096fc66f19b20350bf1c6ea27ec031d259cbfc9b100193d5d",
+      "stored_path": "_objects/f0cd274e7f94a20096fc66f19b20350bf1c6ea27ec031d259cbfc9b100193d5d.gz",
+      "stored_sha256": "b1dddce0e7ea1d3fa5b52e61e069cef30104e497dbd93e775d8971631ac93d15"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7e4fafd8cf11a20a042ed2f7590d52e1febdefa9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-gauge-cold-review/check.py",
+      "raw_bytes": 1525,
+      "raw_sha256": "ee3d9d248a2bfa3faabb260e6f9e41e6ddc8de4af424bd953d9a788043f1c097",
+      "stored_path": "_objects/ee3d9d248a2bfa3faabb260e6f9e41e6ddc8de4af424bd953d9a788043f1c097.gz",
+      "stored_sha256": "220089ac67092e10347238bc7414c5e0158777a3e72629d9a1a031a103e865b5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "fea28282202a5b43f7f3d03d6361170eaa96a3e2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/DERIVATION.md",
+      "raw_bytes": 4400,
+      "raw_sha256": "cf250309a8a6ea6f760fab2a9704b9ae0bf6a674fcdd52c55e1b1fbbee5467cf",
+      "stored_path": "_objects/cf250309a8a6ea6f760fab2a9704b9ae0bf6a674fcdd52c55e1b1fbbee5467cf.gz",
+      "stored_sha256": "786cab5d9df2ead7c939ae6d895d19e790577949fb80e672508d674f799ed253"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ebdab7d7031946dea26a73dce18f804ebda5ad49",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/HASHES.json",
+      "raw_bytes": 936,
+      "raw_sha256": "09e0de326899eb22aa6a5345e92cf2210ad186a43f5af78accdb1bfc18533757",
+      "stored_path": "_objects/09e0de326899eb22aa6a5345e92cf2210ad186a43f5af78accdb1bfc18533757.gz",
+      "stored_sha256": "7d924ac5b0e94424a8bd9168b553b28ef5dbc6e86c3fb706da926ff1ec72bc26"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "307deba03e0cbbc75e431610c1657e0212665d08",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/PREREGISTRATION.md",
+      "raw_bytes": 974,
+      "raw_sha256": "ec51a31275855e2c1a6da4d3c0c6369d4895b2ac736ac4ca7f2986b3d9f5d602",
+      "stored_path": "_objects/ec51a31275855e2c1a6da4d3c0c6369d4895b2ac736ac4ca7f2986b3d9f5d602.gz",
+      "stored_sha256": "c25ebf659c80f6e3876d45d786c93b0e482f188619ac77be1f794de9e9fb51ad"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d73983cfa10349a370f932aec94c527d366f471e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/READ_HASHES.json",
+      "raw_bytes": 398,
+      "raw_sha256": "706dff9124c1c4ca0a0e9332f15a07a08e9dc1bf79a5caaca0326cffef8a37d5",
+      "stored_path": "_objects/706dff9124c1c4ca0a0e9332f15a07a08e9dc1bf79a5caaca0326cffef8a37d5.gz",
+      "stored_sha256": "97763f8aaaf7300da15214b024e5357a3a8d557b13b45ff139c3490e51616301"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b4027833ea0db7317b2b7840d435e94c3726a141",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/REPORT.md",
+      "raw_bytes": 2191,
+      "raw_sha256": "f01eaa8753b6f620120562d8b702a713e61185f1201b015fbb3f7ee9b47807e9",
+      "stored_path": "_objects/f01eaa8753b6f620120562d8b702a713e61185f1201b015fbb3f7ee9b47807e9.gz",
+      "stored_sha256": "c837f486202e24892042c76853247ef457aace3741571c2aa0a945d2ab03fc39"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c91b2016f4f78a854ece6c4b31da2b2c3a3d2b22",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/RESULT.json",
+      "raw_bytes": 34040,
+      "raw_sha256": "1d28c629e3c4d548046956144789ffadadb743dac667f943e86f313578d823c4",
+      "stored_path": "_objects/1d28c629e3c4d548046956144789ffadadb743dac667f943e86f313578d823c4.gz",
+      "stored_sha256": "3164502d16ac7cf4fd4e19dbe67a0e32f53b5a3ae6fbdc41cc09ffe02b91e7e2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "9d22f69bbafe15763fa2e39cae50cc2e24de1062",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/STATE_READOUT_SUPPLEMENT.md",
+      "raw_bytes": 807,
+      "raw_sha256": "71153bbaea75f2403d3817d0f89a4232b64a453035a8c4298970a91919ec3944",
+      "stored_path": "_objects/71153bbaea75f2403d3817d0f89a4232b64a453035a8c4298970a91919ec3944.gz",
+      "stored_sha256": "b64ddb8c6832e367ddf07c0629be4dec7aa5a58d54838e48a7426457a376eed2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "85068835a1a6bf720649c01b8e9e75e8e4fc0141",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/STDOUT",
+      "raw_bytes": 8484,
+      "raw_sha256": "b644708d4d6f1e772b003864ead68a14143d7c58eccadeb76fc54b3d36c8c0cb",
+      "stored_path": "_objects/b644708d4d6f1e772b003864ead68a14143d7c58eccadeb76fc54b3d36c8c0cb.gz",
+      "stored_sha256": "c035403256080ec61aa16c80bea6778e658fa606f67ad761c390edaf6420f2eb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0e026b93e6499fc4bf43028c763845e452c6ee7a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check.py",
+      "raw_bytes": 3153,
+      "raw_sha256": "93155de1d1b83f37795aaa30d17f15a7f4ca7e9d585547b3ad7cfddd141b3ec8",
+      "stored_path": "_objects/93155de1d1b83f37795aaa30d17f15a7f4ca7e9d585547b3ad7cfddd141b3ec8.gz",
+      "stored_sha256": "c85d69b9991aeb64d557396c205c60e0e192c9ee4df15cb8a3a0beb46259a791"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8a3b683e0a7f0c73777b8cbf38b79d4ed6dee98f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_L4_FIXTURE_REPAIR.py",
+      "raw_bytes": 2926,
+      "raw_sha256": "9099cf00b8ddcd46c208a5d5493457e9cb2693f86dd65bccb09e67fe76cdcf3e",
+      "stored_path": "_objects/9099cf00b8ddcd46c208a5d5493457e9cb2693f86dd65bccb09e67fe76cdcf3e.gz",
+      "stored_sha256": "1fb963f5c0dda10c19b80b92d444f70d03199eeba9cd9c4fddfe81bae07c60c3"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "e8f1199eabbcd305d4e5adfd4bd0b985fdbfed78",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_SECOND_L4_FIXTURE_REPAIR.py",
+      "raw_bytes": 2925,
+      "raw_sha256": "8bbfeaf3621212f09ee5cc7190a933f6c3fd1d2fec6ea44ff4a663bd7bd75262",
+      "stored_path": "_objects/8bbfeaf3621212f09ee5cc7190a933f6c3fd1d2fec6ea44ff4a663bd7bd75262.gz",
+      "stored_sha256": "ca5c26bd359453f73273c04de1a60f85ab8930e4ae7af58531ff7431e1569a17"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7c69f4bf01e49bd831aae1131ab9d01b1b484ac1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/originals/native-leading-ring-stoquastic-gauge/check_BEFORE_THIRD_L4_FIXTURE_REPAIR.py",
+      "raw_bytes": 3006,
+      "raw_sha256": "cb8131b4254c49d3d15ac402a2c38bffa5f230c73e66e44f700df5df24b7b398",
+      "stored_path": "_objects/cb8131b4254c49d3d15ac402a2c38bffa5f230c73e66e44f700df5df24b7b398.gz",
+      "stored_sha256": "b2cc21dcbc814667a925901f49a1cc49a3d7e669afe027ddf919e800e0416c21"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-leading-ring-stoquastic-gauge-20260908/",
+  "revision": "526431a6f31e73af97b7b3d259945f0f566ed547",
+  "schema_version": 1,
+  "unique_blobs": {
+    "0e026b93e6499fc4bf43028c763845e452c6ee7a": {
+      "occurrences": 1,
+      "raw_bytes": 3153,
+      "raw_sha256": "93155de1d1b83f37795aaa30d17f15a7f4ca7e9d585547b3ad7cfddd141b3ec8"
+    },
+    "180b09f436b5bec46acce4f86d683593f145f984": {
+      "occurrences": 1,
+      "raw_bytes": 89,
+      "raw_sha256": "9638dc5993761b946cf0976563aef5d4b4635fe291db89651b1ceded6f4d31fc"
+    },
+    "279a8860f62e964c651a7c951b78e8cc3b9af6fa": {
+      "occurrences": 1,
+      "raw_bytes": 1387,
+      "raw_sha256": "353af6353b980f614675a0dea044ebfbb86e7464e90f03aee6cac3142e479b12"
+    },
+    "28524b7f84c8df6a0e4de066983affcb6044d8ee": {
+      "occurrences": 1,
+      "raw_bytes": 113,
+      "raw_sha256": "716d9291a5d197bed82b34173cbc6ad63f3a58247f68cc13565113ba3432bfd0"
+    },
+    "2b97390228763f3222725e1c07d9a6a263a997c3": {
+      "occurrences": 1,
+      "raw_bytes": 77,
+      "raw_sha256": "18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92"
+    },
+    "307deba03e0cbbc75e431610c1657e0212665d08": {
+      "occurrences": 1,
+      "raw_bytes": 974,
+      "raw_sha256": "ec51a31275855e2c1a6da4d3c0c6369d4895b2ac736ac4ca7f2986b3d9f5d602"
+    },
+    "369ab4535b1dbb4cbd00c96b7c32d9cdb6559e2b": {
+      "occurrences": 1,
+      "raw_bytes": 342,
+      "raw_sha256": "2f4398febec32a5e4732688f4ffa2601ef03bbd6d607c080b144b8b4d876f6ae"
+    },
+    "39533011a3326fb8dfd52b13b19f57a279d3858a": {
+      "occurrences": 1,
+      "raw_bytes": 45576,
+      "raw_sha256": "8285b4894cc15fda36ea6f7f3a60fec252425ec3280d07ad1944fc29c56b1162"
+    },
+    "3a7d8f1226246c025dfcc6d2d79610763b9f4a65": {
+      "occurrences": 1,
+      "raw_bytes": 2010,
+      "raw_sha256": "1fca417e665ba5421c36f6bdf4fba60f58aa48147c4a9581e1de9d36c9d01c0a"
+    },
+    "3c654335bab8cf185f3b83b41c423f093f6cb0a0": {
+      "occurrences": 1,
+      "raw_bytes": 179,
+      "raw_sha256": "a0401f3739adda7f10d7d30610d323163183c9a9f44e116e0ad4da12c98fb928"
+    },
+    "3efb2019c649b9dc51c69e394ea895b6f72a58e1": {
+      "occurrences": 1,
+      "raw_bytes": 224,
+      "raw_sha256": "575b48218cb39c492a3dfabf59fa2b313be5999989363ee52d0e4cb007314dfe"
+    },
+    "42f012cd5143e14f4eacb958533a7ec8e2dbf77b": {
+      "occurrences": 1,
+      "raw_bytes": 246,
+      "raw_sha256": "d793683562efce83e5a6c9766a640caa19cef2abae316bc8047e4d2597cffa3a"
+    },
+    "42fd7f80a54d0553c31dea2c2f8820499b140b2f": {
+      "occurrences": 1,
+      "raw_bytes": 131,
+      "raw_sha256": "629a81b2cd694cb89df60022497329409914a2e0847c9a9511c9fb1a06a32199"
+    },
+    "44fb4c23e8b29f5e9a143de3b1a05766472bb230": {
+      "occurrences": 1,
+      "raw_bytes": 99,
+      "raw_sha256": "5c65f4d8f482ba15d10a0622661863018b5301af945b25b80038a1dfdf8f0ad1"
+    },
+    "458831e2edac0074bd1cee73bf04145d3a5f20e6": {
+      "occurrences": 1,
+      "raw_bytes": 62,
+      "raw_sha256": "fa42c665453791d13a35901c40e32d9b64ba2dcb6274067e8fdb3a3bf17cef79"
+    },
+    "47ca63eee04cc630f83f4427ffea77ec4d2cd52e": {
+      "occurrences": 1,
+      "raw_bytes": 2836,
+      "raw_sha256": "f0cd274e7f94a20096fc66f19b20350bf1c6ea27ec031d259cbfc9b100193d5d"
+    },
+    "4f72e8b7b934c15b684673bbee07e90e946a04f8": {
+      "occurrences": 1,
+      "raw_bytes": 1460,
+      "raw_sha256": "0c606953899e790e8567f65b1ceac0590a95b59059f0dee1ee6e00d1f060b638"
+    },
+    "6173015253feeddc60f34f70fb087fb47307b4a7": {
+      "occurrences": 1,
+      "raw_bytes": 280,
+      "raw_sha256": "5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88"
+    },
+    "635eb44aa0fd6ea3e7e8284854e212e479b2bd74": {
+      "occurrences": 1,
+      "raw_bytes": 231,
+      "raw_sha256": "ecc86a8403175131ccf13d5e70145a40c6b3405cbf0e18b07bb26baf5a711def"
+    },
+    "66a0267275ff8b1080e4fe6f416c178be5e7d9b4": {
+      "occurrences": 1,
+      "raw_bytes": 113,
+      "raw_sha256": "fd8df13da95b41b478b25c18b281c9b4602970ea0343c51d1682b86b65d69318"
+    },
+    "7c69f4bf01e49bd831aae1131ab9d01b1b484ac1": {
+      "occurrences": 1,
+      "raw_bytes": 3006,
+      "raw_sha256": "cb8131b4254c49d3d15ac402a2c38bffa5f230c73e66e44f700df5df24b7b398"
+    },
+    "7e4fafd8cf11a20a042ed2f7590d52e1febdefa9": {
+      "occurrences": 1,
+      "raw_bytes": 1525,
+      "raw_sha256": "ee3d9d248a2bfa3faabb260e6f9e41e6ddc8de4af424bd953d9a788043f1c097"
+    },
+    "85068835a1a6bf720649c01b8e9e75e8e4fc0141": {
+      "occurrences": 1,
+      "raw_bytes": 8484,
+      "raw_sha256": "b644708d4d6f1e772b003864ead68a14143d7c58eccadeb76fc54b3d36c8c0cb"
+    },
+    "8524617de69d7a0d2a317a87768bb7501e898747": {
+      "occurrences": 1,
+      "raw_bytes": 45921,
+      "raw_sha256": "f43e9caca490a87c2fcaf1ade862f853cb33d0688720c695840250ff69f18987"
+    },
+    "8a3b683e0a7f0c73777b8cbf38b79d4ed6dee98f": {
+      "occurrences": 1,
+      "raw_bytes": 2926,
+      "raw_sha256": "9099cf00b8ddcd46c208a5d5493457e9cb2693f86dd65bccb09e67fe76cdcf3e"
+    },
+    "8ea255cfc4475e3880d4d2d8ee77035bc2095239": {
+      "occurrences": 1,
+      "raw_bytes": 3716,
+      "raw_sha256": "5533acd71031897b777452fd52ac29a42a6f41de9fc747113032ce4cd270eb71"
+    },
+    "9a2f112398181e21fb318739790e2f8ec85e1316": {
+      "occurrences": 1,
+      "raw_bytes": 1224,
+      "raw_sha256": "a5c3468cc75030ca9aa673c20bc8bede480b9edcf4dc23f81ae7a4eb1c89de72"
+    },
+    "9d22f69bbafe15763fa2e39cae50cc2e24de1062": {
+      "occurrences": 1,
+      "raw_bytes": 807,
+      "raw_sha256": "71153bbaea75f2403d3817d0f89a4232b64a453035a8c4298970a91919ec3944"
+    },
+    "a5b652d91877f456f5d43fa77cba0ef61e5cb6be": {
+      "occurrences": 1,
+      "raw_bytes": 1691,
+      "raw_sha256": "9380d38b4c82c375b55a0e659cc0f5e109884628a3a00803a4efbdcc0e918647"
+    },
+    "ad410132b2da73b3b5721d53a76bd6b9299d0a6f": {
+      "occurrences": 1,
+      "raw_bytes": 1553,
+      "raw_sha256": "a8baffaaaa716a7535ef9334ca8ada6637e9f52da3199f873bdedb8c262b0776"
+    },
+    "adcd7c149b4967e7b7a16535cfdec39bb74d1470": {
+      "occurrences": 1,
+      "raw_bytes": 108,
+      "raw_sha256": "edc418b4fbd8a066aa42f7b7d6af96bfbd06a8ceae356e9bdaeca6cfd7152da9"
+    },
+    "b4027833ea0db7317b2b7840d435e94c3726a141": {
+      "occurrences": 1,
+      "raw_bytes": 2191,
+      "raw_sha256": "f01eaa8753b6f620120562d8b702a713e61185f1201b015fbb3f7ee9b47807e9"
+    },
+    "bbc8e4a6547ecdb6cf8f5ef52d1955aa67c3aee9": {
+      "occurrences": 1,
+      "raw_bytes": 231,
+      "raw_sha256": "b6b8592848017b18ee1e1e9417e76cf6843a29ae037ab414cf2e0dec629153cf"
+    },
+    "bda626f41ab4b5ff6ab4a0e8e468b5586bf6770d": {
+      "occurrences": 1,
+      "raw_bytes": 115,
+      "raw_sha256": "197a9a86c8d31e34bf50a3edb947a5072e4e9c2b494e1a7b9d931c6f10d2815b"
+    },
+    "c20e5769a5babd1330a94c19662391588a47d9b5": {
+      "occurrences": 1,
+      "raw_bytes": 89,
+      "raw_sha256": "cf3216b118c22632b26d36e8caa230e69a7d2ad50ad5762d7c43af12c29e0dd8"
+    },
+    "c85d1a0ba5111f9111ec352140e6bc2b63583dbd": {
+      "occurrences": 1,
+      "raw_bytes": 2218,
+      "raw_sha256": "6d167189011f89f39f91f00471269792e95cb1ccef14fb53208abbc530d455d8"
+    },
+    "c91b2016f4f78a854ece6c4b31da2b2c3a3d2b22": {
+      "occurrences": 1,
+      "raw_bytes": 34040,
+      "raw_sha256": "1d28c629e3c4d548046956144789ffadadb743dac667f943e86f313578d823c4"
+    },
+    "d73983cfa10349a370f932aec94c527d366f471e": {
+      "occurrences": 1,
+      "raw_bytes": 398,
+      "raw_sha256": "706dff9124c1c4ca0a0e9332f15a07a08e9dc1bf79a5caaca0326cffef8a37d5"
+    },
+    "e0d2fe5dd83f5d56e9566379942e16a925a2a032": {
+      "occurrences": 1,
+      "raw_bytes": 228,
+      "raw_sha256": "ee81a81a971744a4b5b94df74be65d4cb8b9332f80fce72fd2b943f2dbb184e3"
+    },
+    "e10b787e3eb7c15433114cc54322c72c7c65d0f3": {
+      "occurrences": 1,
+      "raw_bytes": 232,
+      "raw_sha256": "0bb8e81ea017bcb2fa90697014b54deb3332f61f9524376a5c6a7c9cd7f55ce7"
+    },
+    "e1d2b34a21ede5549df7552883c387e75bdcec83": {
+      "occurrences": 1,
+      "raw_bytes": 2218,
+      "raw_sha256": "a027caed8cc513908e15efe5bdef493a7f9d423ef059fb4ec0b644adf5b27eb2"
+    },
+    "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391": {
+      "occurrences": 4,
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "e8f1199eabbcd305d4e5adfd4bd0b985fdbfed78": {
+      "occurrences": 1,
+      "raw_bytes": 2925,
+      "raw_sha256": "8bbfeaf3621212f09ee5cc7190a933f6c3fd1d2fec6ea44ff4a663bd7bd75262"
+    },
+    "ebdab7d7031946dea26a73dce18f804ebda5ad49": {
+      "occurrences": 1,
+      "raw_bytes": 936,
+      "raw_sha256": "09e0de326899eb22aa6a5345e92cf2210ad186a43f5af78accdb1bfc18533757"
+    },
+    "ec8446c5bf8a567989d7da57294e98d9b00a406a": {
+      "occurrences": 1,
+      "raw_bytes": 1160,
+      "raw_sha256": "ca76e48a2f625d8177547119648f6c4cb52fa3273b935ba214dc03df60b4c473"
+    },
+    "ef2d1966d49c63a4e9a0c6770d118365446660c2": {
+      "occurrences": 1,
+      "raw_bytes": 990,
+      "raw_sha256": "20f5df1c849d0c8692c1e51984c1207edd25d1e58f25a752e8ca3b45926c573e"
+    },
+    "f2d029345d048729534bcf40cd6cd805e7e8666f": {
+      "occurrences": 1,
+      "raw_bytes": 189,
+      "raw_sha256": "9bbdaa315078b0d72b5441babdac4c09e963a5a0a62195b0a9714df7f854c7f3"
+    },
+    "f5905663448207135aaf4f0acecfcaf47a61ea0a": {
+      "occurrences": 1,
+      "raw_bytes": 67,
+      "raw_sha256": "5f3e57c81d88cea35b69c69149fddff40476b8152d1805d9bc54ac3c09fc433b"
+    },
+    "fea28282202a5b43f7f3d03d6361170eaa96a3e2": {
+      "occurrences": 1,
+      "raw_bytes": 4400,
+      "raw_sha256": "cf250309a8a6ea6f760fab2a9704b9ae0bf6a674fcdd52c55e1b1fbbee5467cf"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 12982,
- "node_count": 5434,
+ "edge_count": 13120,
+ "node_count": 5566,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12866,6 +12866,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "native_charged_record_histories_note_2026-09-09": {
+   "deps_hash": "5bd92167bfd1",
+   "out_degree": 3
+  },
   "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08": {
    "deps_hash": "6d8ee4864489",
    "out_degree": 4
@@ -13093,6 +13097,14 @@
   "native_u1_pair_operator_and_all_low_support_note_2026-09-08": {
    "deps_hash": "79db32e637e8",
    "out_degree": 4
+  },
+  "native_virtual_pair_ring_mechanism_note_2026-09-08": {
+   "deps_hash": "5c958ba514c0",
+   "out_degree": 3
+  },
+  "native_zero_penalty_endpoint_note_2026-09-08": {
+   "deps_hash": "087864283a7d",
+   "out_degree": 3
   },
   "nature_discovery_directions_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
@@ -20709,6 +20721,522 @@
   "work_history.repo.review_feedback.pr8043-native-u1-pair-evidence.readme": {
    "deps_hash": "89a9b5a8aecc",
    "out_degree": 34
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.independent-canonical-review.pr8044-independent-canonical-review-graph_confirmation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.independent-canonical-review.pr8044-independent-canonical-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-soft-charge-penalty-cold-proof.pr8044-originals-native-soft-charge-penalty-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-soft-charge-penalty-cold-proof.pr8044-originals-native-soft-charge-penalty-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-soft-charge-penalty-cold-proof.pr8044-originals-native-soft-charge-penalty-cold-proof-root_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-soft-charge-penalty-root.pr8044-originals-native-soft-charge-penalty-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-soft-charge-penalty-root.pr8044-originals-native-soft-charge-penalty-root-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-soft-charge-penalty-root.pr8044-originals-native-soft-charge-penalty-root-provenance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-induced-ring-cold-proof.pr8044-originals-native-virtual-pair-induced-ring-cold-proof-author_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-induced-ring-cold-proof.pr8044-originals-native-virtual-pair-induced-ring-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-induced-ring-cold-proof.pr8044-originals-native-virtual-pair-induced-ring-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-induced-ring.pr8044-originals-native-virtual-pair-induced-ring-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-induced-ring.pr8044-originals-native-virtual-pair-induced-ring-independent_proof_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-induced-ring.pr8044-originals-native-virtual-pair-induced-ring-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-sixth-cold-proof.pr8044-originals-native-virtual-pair-sixth-cold-proof-author_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-sixth-cold-proof.pr8044-originals-native-virtual-pair-sixth-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-sixth-cold-proof.pr8044-originals-native-virtual-pair-sixth-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-sixth-diagonal.pr8044-originals-native-virtual-pair-sixth-diagonal-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-pair-sixth-diagonal.pr8044-originals-native-virtual-pair-sixth-diagonal-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-ring-primary-literature.pr8044-originals-native-virtual-ring-primary-literature-comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-ring-remainder-cold-review.pr8044-originals-native-virtual-ring-remainder-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-ring-remainder-root.pr8044-originals-native-virtual-ring-remainder-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-ring-remainder-root.pr8044-originals-native-virtual-ring-remainder-root-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.originals.native-virtual-ring-remainder-root.pr8044-originals-native-virtual-ring-remainder-root-spectral_control_repair": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-full_global_prospective_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-root_canonical_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-scalar_control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pr8044-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-induced-ring-cold-proof.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-cold-proof-author_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-induced-ring-cold-proof.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-induced-ring-cold-proof.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-induced-ring.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-induced-ring.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-independent_proof_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-induced-ring.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-induced-ring-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-sixth-cold-proof.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-cold-proof-author_comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-sixth-cold-proof.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-cold-proof-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-sixth-cold-proof.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-cold-proof-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-sixth-diagonal.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-diagonal-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-pair-sixth-diagonal.pr8044-pre-soft-extension-packet-originals-native-virtual-pair-sixth-diagonal-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-ring-primary-literature.pr8044-pre-soft-extension-packet-originals-native-virtual-ring-primary-literature-comparison": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-ring-remainder-cold-review.pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-ring-remainder-root.pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-root-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-ring-remainder-root.pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-root-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.originals.native-virtual-ring-remainder-root.pr8044-pre-soft-extension-packet-originals-native-virtual-ring-remainder-root-spectral_control_repair": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-scalar_control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.pre-soft-extension.packet.pr8044-pre-soft-extension-packet-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8044-native-ring-evidence.readme": {
+   "deps_hash": "f5e2a2f64b13",
+   "out_degree": 69
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.independent-canonical-review.pr8049-independent-canonical-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.originals.native-zero-penalty-endpoint-cold-review.pr8049-originals-native-zero-penalty-endpoint-cold-review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.originals.native-zero-penalty-endpoint.pr8049-originals-native-zero-penalty-endpoint-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.originals.native-zero-penalty-endpoint.pr8049-originals-native-zero-penalty-endpoint-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.originals.native-zero-penalty-stdlib-controls.pr8049-originals-native-zero-penalty-stdlib-controls-preregistration": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.originals.native-zero-penalty-stdlib-controls.pr8049-originals-native-zero-penalty-stdlib-controls-report": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-control_contract": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-root_canonical_review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.pr8049-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8049-native-zero-penalty-evidence.readme": {
+   "deps_hash": "55c1b568b96b",
+   "out_degree": 21
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.final_root_review.pr8065-final_root_review-packaging_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.final_root_review.pr8065-final_root_review-review": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.port_records.isolated.docs.pr8065-history-before_clarification_6b7ddd-port_records-isolated-docs-native_charged_record_histories_note_2026-09-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.port_records.isolated.docs.pr8065-history-before_clarification_6b7ddd-port_records-isolated-docs-native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.port_records.isolated.docs.pr8065-history-before_clarification_6b7ddd-port_records-isolated-docs-native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-native_charged_record_histories_note_2026-09-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.history.before_clarification_6b7ddd.pr8065-history-before_clarification_6b7ddd-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.original.pr8065-original-derivation": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.original.pr8065-original-derivation_before_refinement_qualifier": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.original.pr8065-original-first_target": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.original.pr8065-original-refinement_correction": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.original.pr8065-original-status": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.port_records.isolated.docs.pr8065-port_records-isolated-docs-native_charged_record_histories_note_2026-09-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.port_records.isolated.docs.pr8065-port_records-isolated-docs-native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.port_records.isolated.docs.pr8065-port_records-isolated-docs-native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-artifact_plan": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-literature_bridges": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-no_go_ledger": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-pr_backlog": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.pr8065-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8065-charged-history-evidence.readme": {
+   "deps_hash": "d9d85988aa84",
+   "out_degree": 39
   },
   "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.handoff": {
    "deps_hash": "e3b0c44298fc",

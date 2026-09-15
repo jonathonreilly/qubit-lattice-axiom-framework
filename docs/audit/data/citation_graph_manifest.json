@@ -1,6 +1,6 @@
 {
- "edge_count": 13377,
- "node_count": 5814,
+ "edge_count": 13381,
+ "node_count": 5818,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13198,6 +13198,10 @@
    "deps_hash": "dd92dd1a5f46",
    "out_degree": 3
   },
+  "native_weak_electric_joint_defect_bounds_note_2026-09-09": {
+   "deps_hash": "9679eda15736",
+   "out_degree": 4
+  },
   "native_weak_electric_spectator_gap_note_2026-09-08": {
    "deps_hash": "ef447a349253",
    "out_degree": 4
@@ -21823,6 +21827,18 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8059-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8060-evidence.kept.pr8060-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8060-evidence.kept.pr8060-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8060-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

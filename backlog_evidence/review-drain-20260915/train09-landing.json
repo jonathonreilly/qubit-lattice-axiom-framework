@@ -385,5 +385,18 @@
     "8123"
   ],
   "departure": "Three independently confirmed compatible units ready after train08 landed; depart without fixed timer, leave pending8124/8125 corrections out.",
-  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match."
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match.",
+  "candidate_commit": "46073d34d92ae1fe47f7f9e2b126f18188a0c01a",
+  "candidate_tree": "b30800c6dcfe6ddfb3753aa745f3f5bf8709d616",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 3,
+  "validation_logs": {
+    "train09-pipeline.log": "545a5f272f9585985b8bf2558b996543a099f3f5d91cee47bdf6e426bd4b8fb1",
+    "train09-strict.log": "ee88cfff4a12af9cb647ee9bf6fef2e323dee9b955ab459a2b8d50ad25aef764",
+    "train09-evidence.txt": "ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c",
+    "train09-validated-rows.json": "eef94bde57dfe404069835b9ac76cbda01deb9bb56dd1dc062e26301affa15c0"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
 }

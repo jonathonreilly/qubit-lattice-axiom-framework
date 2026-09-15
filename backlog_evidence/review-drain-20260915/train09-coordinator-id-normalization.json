@@ -1,0 +1,24 @@
+{
+  "initial_check": "Coordinator literal ID assertion failed; actual linked authority and all9edges were present",
+  "classification": "Coordinator identifier normalization false positive, independently confirmed; no combined source/pipeline gate failure",
+  "mapping": [
+    {
+      "declared_id": "born_price_wordings_homogeneity_collinear_menus_four_outcome_fair_coin_2026_09_05",
+      "graph_id": "the_born_price_wordings_homogeneity_is_payable_on_the_continuum_law_as_it_stands_the_collinear_menus_need_a_scale_reading_rule_the_four_outcome_menu_pays_with_no_clause_and_none_removes_the_fair_coin_bounded_note_2026-09-05",
+      "source_path": "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md",
+      "sha256": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c"
+    }
+  ],
+  "independent_confirmation": "review-8122-dependency-id.json",
+  "original_record_sha256": "9c75588f451e573dac98fc3bce64a17d5f2fe99abc19324887558d892386589e",
+  "source_head": "e7383b70d6f72d1cbae6463ec3f58bf4babf3488",
+  "source_tree": "7bfc4eaddddcd1cd1908b3758c4a26612884668a",
+  "base": "87bdeedb1c55e90f6b14bd95fe19f28dea7d6061",
+  "source_and_inputs_unchanged": true,
+  "existing_exact_candidate_validation_reused": true,
+  "validation_log_hashes": {
+    "train09-pipeline.log": "545a5f272f9585985b8bf2558b996543a099f3f5d91cee47bdf6e426bd4b8fb1",
+    "train09-strict.log": "ee88cfff4a12af9cb647ee9bf6fef2e323dee9b955ab459a2b8d50ad25aef764",
+    "train09-evidence.txt": "ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c"
+  }
+}

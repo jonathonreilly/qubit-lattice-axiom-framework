@@ -1,0 +1,30 @@
+{
+  "verdict": "PASS: exact dependency identifier normalization",
+  "scope": "No science or source change, no audit verdict, no gate bypass. Normalize only through the exact linked and pinned source path.",
+  "declared_id": "born_price_wordings_homogeneity_collinear_menus_four_outcome_fair_coin_2026_09_05",
+  "graph_id": "the_born_price_wordings_homogeneity_is_payable_on_the_continuum_law_as_it_stands_the_collinear_menus_need_a_scale_reading_rule_the_four_outcome_menu_pays_with_no_clause_and_none_removes_the_fair_coin_bounded_note_2026-09-05",
+  "parent_path": "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md",
+  "parent_sha256": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c",
+  "consumer_path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+  "consumer_sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+  "consumer_ledger_deps": [
+    "minimal_axioms",
+    "realized_state_primitive",
+    "admissibility_six_neighbor_affine_cq_channel_solder_support_boundary_bounded_theorem_note_2026-08-14",
+    "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13",
+    "admissibility_axis_separable_barycenter_selector_bounded_theorem_note_2026-08-14",
+    "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01",
+    "the_born_price_wordings_homogeneity_is_payable_on_the_continuum_law_as_it_stands_the_collinear_menus_need_a_scale_reading_rule_the_four_outcome_menu_pays_with_no_clause_and_none_removes_the_fair_coin_bounded_note_2026-09-05",
+    "admissibility_handed_rule_pseudoscalar_invariant_census_and_parity_odd_record_correlators_bounded_theorem_note_2026-09-13",
+    "covariant_nn_support_rules_gauss_law_as_glued_support_and_hole_statistics_bounded_theorem_note_2026-09-14"
+  ],
+  "ledger_hashes": {
+    "docs/audit/data/ledger/th/the_born_price_wordings_homogeneity_is_payable_on_the_continuum_law_as_it_stands_the_collinear_menus_need_a_scale_reading_rule_the_four_outcome_menu_pays_with_no_clause_and_none_removes_the_fair_coin_bounded_note_2026-09-05.json": "01a8615b2e0c4f58444bb1a2a6f6ac6f1895473ebb77c22037c3bffd8a34c987",
+    "docs/audit/data/ledger/po/possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14.json": "49c766f009dee14b6b515ca52e09fc9b4d1b4d674b2ca1cca0057aaf4f13a39b"
+  },
+  "prior_report_hashes": {
+    "review-8122.md": "ad659316a7b8ce42b7b0bce3b34999b04359bdf57817cfb83b2837be96c535c1",
+    "review-8122.json": "6e2fc2384994f2cdafe78b7a94c26ce3f9859c3cf284593261fb0f22e0ef0ecc"
+  },
+  "conclusion": "Declared short ID equals linked parent frontmatter; graph filename-derived long ID is present in actual consumer deps and resolves to exactly that same parent file. This is identifier normalization, not a missing authority."
+}

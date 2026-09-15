@@ -213,29 +213,13 @@
     "review-8122.json": "6e2fc2384994f2cdafe78b7a94c26ce3f9859c3cf284593261fb0f22e0ef0ecc",
     "review-8122.md": "ad659316a7b8ce42b7b0bce3b34999b04359bdf57817cfb83b2837be96c535c1",
     "review-8123.json": "3127c1ce383a70d16a55601e8793d9eee5a354bf5953d4516b6b12aa2c4bc5d5",
-    "review-8123.md": "cf053375a832722e9ae5a6cbc66c38783feec568533426d77a6f7df6c148725a",
-    "review-8122-dependency-id.json": "815b2c82b69426f877172fc6bf4c615ac078e857da441e8e5275864e803bdd14",
-    "review-8122-dependency-id.md": "e9ce4f1326b0b3f33d19367394b72d598502f684c083ab8a559442313baf1832"
+    "review-8123.md": "cf053375a832722e9ae5a6cbc66c38783feec568533426d77a6f7df6c148725a"
   },
   "dependency_expectations": {
     "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": {
       "required_claim_ids": [
         "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
         "spin_half_cubic_ice_finite_detuning_projector_maxwell_stiffness_bounded_theorem_note_2026-09-03"
-      ],
-      "declared_authority_bindings": [
-        {
-          "declared_id": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
-          "graph_id": "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
-          "source_path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
-          "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
-        },
-        {
-          "declared_id": "spin_half_cubic_ice_finite_detuning_projector_maxwell_stiffness_bounded_theorem_note_2026-09-03",
-          "graph_id": "spin_half_cubic_ice_finite_detuning_projector_maxwell_stiffness_bounded_theorem_note_2026-09-03",
-          "source_path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
-          "sha256": "c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e"
-        }
       ]
     },
     "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
@@ -246,73 +230,16 @@
         "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13",
         "admissibility_axis_separable_barycenter_selector_bounded_theorem_note_2026-08-14",
         "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01",
-        "the_born_price_wordings_homogeneity_is_payable_on_the_continuum_law_as_it_stands_the_collinear_menus_need_a_scale_reading_rule_the_four_outcome_menu_pays_with_no_clause_and_none_removes_the_fair_coin_bounded_note_2026-09-05",
+        "born_price_wordings_homogeneity_collinear_menus_four_outcome_fair_coin_2026_09_05",
         "admissibility_handed_rule_pseudoscalar_invariant_census_and_parity_odd_record_correlators_bounded_theorem_note_2026-09-13",
         "covariant_nn_support_rules_gauss_law_as_glued_support_and_hole_statistics_bounded_theorem_note_2026-09-14"
-      ],
-      "declared_authority_bindings": [
-        {
-          "declared_id": "minimal_axioms",
-          "graph_id": "minimal_axioms",
-          "source_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
-          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
-        },
-        {
-          "declared_id": "realized_state_primitive",
-          "graph_id": "realized_state_primitive",
-          "source_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
-          "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
-        },
-        {
-          "declared_id": "admissibility_six_neighbor_affine_cq_channel_solder_support_boundary_bounded_theorem_note_2026-08-14",
-          "graph_id": "admissibility_six_neighbor_affine_cq_channel_solder_support_boundary_bounded_theorem_note_2026-08-14",
-          "source_path": "docs/ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
-          "sha256": "2610f30a0c0a6821e0d086f3b56785442b97c25c573a485ad290afc8e1772082"
-        },
-        {
-          "declared_id": "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13",
-          "graph_id": "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13",
-          "source_path": "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md",
-          "sha256": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967"
-        },
-        {
-          "declared_id": "admissibility_axis_separable_barycenter_selector_bounded_theorem_note_2026-08-14",
-          "graph_id": "admissibility_axis_separable_barycenter_selector_bounded_theorem_note_2026-08-14",
-          "source_path": "docs/ADMISSIBILITY_AXIS_SEPARABLE_BARYCENTER_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
-          "sha256": "5aa5e8549b928d49025e52ff705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b"
-        },
-        {
-          "declared_id": "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01",
-          "graph_id": "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01",
-          "source_path": "docs/ADMISSIBILITY_SHARP_QUBIT_RECORD_WRITER_ORIENTATION_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md",
-          "sha256": "f07c5330951cc181a710e77d3273c2641a0a2292ca01ac61889211fdb4a1c733"
-        },
-        {
-          "declared_id": "born_price_wordings_homogeneity_collinear_menus_four_outcome_fair_coin_2026_09_05",
-          "graph_id": "the_born_price_wordings_homogeneity_is_payable_on_the_continuum_law_as_it_stands_the_collinear_menus_need_a_scale_reading_rule_the_four_outcome_menu_pays_with_no_clause_and_none_removes_the_fair_coin_bounded_note_2026-09-05",
-          "source_path": "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md",
-          "sha256": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c"
-        },
-        {
-          "declared_id": "admissibility_handed_rule_pseudoscalar_invariant_census_and_parity_odd_record_correlators_bounded_theorem_note_2026-09-13",
-          "graph_id": "admissibility_handed_rule_pseudoscalar_invariant_census_and_parity_odd_record_correlators_bounded_theorem_note_2026-09-13",
-          "source_path": "docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
-          "sha256": "98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d"
-        },
-        {
-          "declared_id": "covariant_nn_support_rules_gauss_law_as_glued_support_and_hole_statistics_bounded_theorem_note_2026-09-14",
-          "graph_id": "covariant_nn_support_rules_gauss_law_as_glued_support_and_hole_statistics_bounded_theorem_note_2026-09-14",
-          "source_path": "docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
-          "sha256": "52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63"
-        }
       ]
     },
     "docs/FINITE_CLOCK_LOCAL_GROUND_PROBABILITIES_AND_CHARGE_PROJECTED_PLAQUETTE_HARMONICS_BOUNDED_THEOREM_NOTE_2026-09-14.md": {
       "required_claim_ids": [],
       "allow_empty_repository_deps": true,
       "independent_review": "review-8123.json",
-      "reason": "Self-contained supplied qutrit Hamiltonian and finite-matrix proof. Earlier kinetic commit652ea36706f7df14f153f2d40ee900662fe73706 is blocker provenance only; all limiting objects re-established. Empty repository dependencies honest.",
-      "declared_authority_bindings": []
+      "reason": "Self-contained supplied qutrit Hamiltonian and finite-matrix proof. Earlier kinetic commit652ea36706f7df14f153f2d40ee900662fe73706 is blocker provenance only; all limiting objects re-established. Empty repository dependencies honest."
     }
   },
   "cheap_preflight": {

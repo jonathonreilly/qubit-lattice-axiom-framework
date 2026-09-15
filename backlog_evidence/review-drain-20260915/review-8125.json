@@ -1,0 +1,119 @@
+{
+  "unit": "PR8125",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "ffb008d928ee1d5a569c895a583a71a91388e8f9",
+  "original_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "confirmation_base": "87bdeedb1c55e90f6b14bd95fe19f28dea7d6061",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8125-author-copy",
+  "final_tree": "cc78cb31cbfd2a5fa635f9ef1f18f790eca8a84a",
+  "source_sha256": {
+    "docs/PERIODIC_GAUSSIAN_FULL_PAYLOAD_MATRIX_CODEC_BOUNDED_THEOREM_NOTE_2026-09-14.md": "2872c6bebcea3e9dece632fbe717f2c7663773d36816a7fb08a747a1f128147e",
+    "logs/runner-cache/periodic_gaussian_full_payload_matrix_codec_2026_09_14.txt": "b26552699b81b8c557956c3bd02bc4c6b1cb736d19f93e37afa1d82e51b7d3fc",
+    "scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py": "f6ed5fef8678370aa87aeefc595c69525c124b20007395a81eff0c840b9d71a3"
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/PERIODIC_GAUSSIAN_FULL_PAYLOAD_MATRIX_CODEC_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "original_sha256": "2872c6bebcea3e9dece632fbe717f2c7663773d36816a7fb08a747a1f128147e",
+      "status": "A",
+      "disposition": "accepted unchanged",
+      "final_path": "docs/PERIODIC_GAUSSIAN_FULL_PAYLOAD_MATRIX_CODEC_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "final_sha256": "2872c6bebcea3e9dece632fbe717f2c7663773d36816a7fb08a747a1f128147e",
+      "recovery": "ffb008d928ee1d5a569c895a583a71a91388e8f9:docs/PERIODIC_GAUSSIAN_FULL_PAYLOAD_MATRIX_CODEC_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "9dbcb4deef526fd929782af21a15e10baf42d4e0fe992e7bdd25cf5ff260143c",
+      "status": "M",
+      "disposition": "superseded generated topology acknowledgment; one new zero-dependency node; coordinator regenerates combined current topology",
+      "final_path": null,
+      "final_sha256": null,
+      "recovery": "ffb008d928ee1d5a569c895a583a71a91388e8f9:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/periodic_gaussian_full_payload_matrix_codec_2026_09_14.txt",
+      "original_sha256": "7257bd835d9b7badb22448e0e3ac7afcc1dbefa567dd1730246d7fddaaa21ac1",
+      "status": "A",
+      "disposition": "superseded original cache by actual final receipt",
+      "final_path": "logs/runner-cache/periodic_gaussian_full_payload_matrix_codec_2026_09_14.txt",
+      "final_sha256": "b26552699b81b8c557956c3bd02bc4c6b1cb736d19f93e37afa1d82e51b7d3fc",
+      "recovery": "ffb008d928ee1d5a569c895a583a71a91388e8f9:logs/runner-cache/periodic_gaussian_full_payload_matrix_codec_2026_09_14.txt"
+    },
+    {
+      "original_path": "scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py",
+      "original_sha256": "6f1c835da1722f7892790e056b14113968e1cf15099bdd6836ed10f8df7a2d57",
+      "status": "A",
+      "disposition": "accepted mathematics unchanged; six output certificate/footer lines added",
+      "final_path": "scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py",
+      "final_sha256": "f6ed5fef8678370aa87aeefc595c69525c124b20007395a81eff0c840b9d71a3",
+      "recovery": "ffb008d928ee1d5a569c895a583a71a91388e8f9:scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "repository_claim_dependencies": [],
+  "runtime_scientific_inputs": [],
+  "dependency_scope": "Self-contained supplied periodic Hermitian Gaussian precision, roles/frame, codec, local routing and massive operator. Repository DK comparison is context, not a premise. No repository theorem imported.",
+  "external_methods": [
+    "Complex Gaussian integration and Schur complement (derived by residual completion)",
+    "Finite-dimensional Hermitian spectral bounds and Neumann-series inverse decay",
+    "Borel radial bijection and null-set change of variables; Gamma moments"
+  ],
+  "coverage": [
+    "Full original note, 770-line runner, original cache and manifest delta read; no .claude paths",
+    "Exact relay marginal/determinant/locality",
+    "8-real-coordinate smooth codec, proper cubic star action, disjoint charts and Borel closed completion",
+    "Finite periodic graph routing, seam and slot occupancy proof, protected supplied Record geometry",
+    "Uniform massive congruence bounds, infinite-volume inverse limit and conditional Gaussian kernel",
+    "Native-source/frame/measure/formation and physical-species boundaries remain open"
+  ],
+  "findings": [
+    {
+      "id": "reporting",
+      "status": "fixed confirmed",
+      "detail": "Canonical TOTAL8/0 and five honest resolution statements; no mathematical statements changed"
+    },
+    {
+      "id": "no-go-packet",
+      "status": "withdrawn as inapplicable",
+      "detail": "Actual no-go classifier false; positive bounded development does not require new N1\u2013N8 section"
+    },
+    {
+      "id": "historical-mutations",
+      "status": "review boundary only",
+      "detail": "Eleven historical mutations are author narrative; no surviving executable receipts claimed or fabricated"
+    }
+  ],
+  "independent_control": {
+    "path": "/private/tmp/review-drain-20260915/check8125/independent.json",
+    "sha256": "3318ac5af77153f1152fa44c6b66179cb5372710d13151a32675491c41fed40e"
+  },
+  "final_execution": {
+    "path": "/private/tmp/review-drain-20260915/8125-author-final-execution.json",
+    "sha256": "7e20550473d0d09d67545c6acdc99da3122da32e975c71bb47e80081652f4456",
+    "elapsed_sec": 11.35367202758789,
+    "timeout_sec": 180,
+    "exit_code": 0,
+    "families": 8,
+    "failures": 0,
+    "extra_primary_reruns": 0
+  },
+  "source_loss_check": "Exactly three added canonical source/evidence paths relative to current base; no current-main deletion or inherited replacement. Original manifest regenerated by coordinator; complete original recovered by frozen commit.",
+  "combined_gate": "Coordinator responsibility; no per-unit full pipeline or audit verdict applied",
+  "claim_strength": "Supplied-model bounded mathematical compiler/codec theorem; not native physical law, periodic DK source closure, massless physics, autonomous formation, or retained-grade certification."
+}

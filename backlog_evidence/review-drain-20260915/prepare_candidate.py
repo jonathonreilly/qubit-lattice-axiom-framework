@@ -42,7 +42,19 @@ for u in collection['units']:
   required=u.get('required_repository_claim_ids',{}).get(p,required)
   if required:assert citations,('declared but unlinked',p)
   if u['unit']=='8111':required=list(set(required+['kinetic_isotropy_primitive']))
-  expectation={'required_claim_ids':required}
+  declared_required=list(required); required=[]; bindings=[]
+  for declared_id in declared_required:
+   matches=[]
+   for cited in citations:
+    body=cited.read_text(); front=yaml.safe_load(body.split('---',2)[1]) if body.startswith('---') else {}
+    canonical=graph.claim_id_from_path(cited)
+    if canonical==declared_id or isinstance(front,dict) and front.get('claim_id')==declared_id:
+     matches.append((canonical,str(cited.relative_to(root))))
+   assert len(matches)==1,('declared authority missing or ambiguous',p,declared_id,matches)
+   canonical,cited_path=matches[0]
+   assert cited_path in inputs and sha(root/cited_path)==inputs[cited_path],('declared authority not review-bound',p,cited_path)
+   required.append(canonical);bindings.append({'declared_id':declared_id,'graph_id':canonical,'source_path':cited_path,'sha256':inputs[cited_path]})
+  expectation={'required_claim_ids':required,'declared_authority_bindings':bindings}
   if u.get('dependency_scope'):
    scope=json.loads((out/u['dependency_scope']).read_text())
    expectation.update(allow_empty_repository_deps=True,independent_review=u['dependency_scope'],reason=u.get('dependency_reason',scope.get('rationale',scope.get('reason'))))

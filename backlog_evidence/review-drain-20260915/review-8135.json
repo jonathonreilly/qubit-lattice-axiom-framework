@@ -1,0 +1,228 @@
+{
+  "unit": "PR8135",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "original_head": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+  "original_merge_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "confirmation_base": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "final_tree": "2d5eb4af8f630a4e2e77e18d93e97fe941d887c3",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8135",
+  "source_sha256": {
+    "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": "65a5e156f4c5dbf015d057c67bcc42c691b38340eb7628285477938e8e443996",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/FOCUSED_EVIDENCE_CHECKS.json": "505fc648d11e3e09471fc4fd81efa74c148bd8daae7d011be4805431a77586f5",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/MUTATION_CHECKS.json": "f8572d7be981b9d41c07add6887c50e60cde83ec499bb9020bd8d30f25b2bebf",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/NOVELTY_SEARCH.json": "29f64901997f4c3f834565d49c03ff7b41d65a3598eee9ec3acb86fc92cb2ec0",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/README.md": "dab66afd34f197888710c2db91455550956c21eb6bc9c79cec81d0bc6373312e",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/SOURCE_DISPOSITION.json": "dae0b4f7679c02a10f882d77dfe10655a3aede29281d59075dd58c37ca6eb8da",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/STATE.yaml": "abbfaeb8a139b00bcda9bc5789854d5e78961fe8967741973c66237442483f47",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLAIM_STATUS_CERTIFICATE.md": "f5077fabbf4f83bdf1cf5981eaf001dac908b61086a64dad2d820b62aa3b84c4",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLUSTER_CAP_EVALUATION.md": "caf32e824eba72eae1030d4da6bd1a1b082d4da2d1f6c43b61dd728a60d71345",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-GOAL.md": "f941cb520ccb624eb2bd674b19be324c88eca6e110f928103824b43c98c093a2",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-HANDOFF.md": "0f8fa51b8a00c856e335d6bdbd668660efadc1924accf6bcaa76a775cc3013bd",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-REVIEW_HISTORY.md": "dd2fcf13cae39dc45f10b3811f256e2a3c7b71fb9d1633731c94857bf5b333c8",
+    "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-TRACE_GATE.md": "e55d4a617beda8759c42e239c586a12cefdf56a921d3f29edf5795f3c7aea125",
+    "logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt": "501fc848e261775a7e1350da0c77e8750d8ecf5aebcd5b4b67f0ebc90bfb17f9",
+    "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b"
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/CLAIM_STATUS_CERTIFICATE.md",
+      "original_status": "A",
+      "original_sha256": "f5077fabbf4f83bdf1cf5981eaf001dac908b61086a64dad2d820b62aa3b84c4",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "f5077fabbf4f83bdf1cf5981eaf001dac908b61086a64dad2d820b62aa3b84c4",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/CLUSTER_CAP_EVALUATION.md",
+      "original_status": "A",
+      "original_sha256": "caf32e824eba72eae1030d4da6bd1a1b082d4da2d1f6c43b61dd728a60d71345",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLUSTER_CAP_EVALUATION.md",
+      "final_sha256": "caf32e824eba72eae1030d4da6bd1a1b082d4da2d1f6c43b61dd728a60d71345",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/CLUSTER_CAP_EVALUATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+      "original_status": "A",
+      "original_sha256": "505fc648d11e3e09471fc4fd81efa74c148bd8daae7d011be4805431a77586f5",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+      "final_sha256": "505fc648d11e3e09471fc4fd81efa74c148bd8daae7d011be4805431a77586f5",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/FOCUSED_EVIDENCE_CHECKS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/GOAL.md",
+      "original_status": "A",
+      "original_sha256": "f941cb520ccb624eb2bd674b19be324c88eca6e110f928103824b43c98c093a2",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-GOAL.md",
+      "final_sha256": "f941cb520ccb624eb2bd674b19be324c88eca6e110f928103824b43c98c093a2",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/GOAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/HANDOFF.md",
+      "original_status": "A",
+      "original_sha256": "0f8fa51b8a00c856e335d6bdbd668660efadc1924accf6bcaa76a775cc3013bd",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-HANDOFF.md",
+      "final_sha256": "0f8fa51b8a00c856e335d6bdbd668660efadc1924accf6bcaa76a775cc3013bd",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/MUTATION_CHECKS.json",
+      "original_status": "A",
+      "original_sha256": "f8572d7be981b9d41c07add6887c50e60cde83ec499bb9020bd8d30f25b2bebf",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/MUTATION_CHECKS.json",
+      "final_sha256": "f8572d7be981b9d41c07add6887c50e60cde83ec499bb9020bd8d30f25b2bebf",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/MUTATION_CHECKS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/NOVELTY_SEARCH.json",
+      "original_status": "A",
+      "original_sha256": "29f64901997f4c3f834565d49c03ff7b41d65a3598eee9ec3acb86fc92cb2ec0",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/NOVELTY_SEARCH.json",
+      "final_sha256": "29f64901997f4c3f834565d49c03ff7b41d65a3598eee9ec3acb86fc92cb2ec0",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/NOVELTY_SEARCH.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/REVIEW_HISTORY.md",
+      "original_status": "A",
+      "original_sha256": "dd2fcf13cae39dc45f10b3811f256e2a3c7b71fb9d1633731c94857bf5b333c8",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-REVIEW_HISTORY.md",
+      "final_sha256": "dd2fcf13cae39dc45f10b3811f256e2a3c7b71fb9d1633731c94857bf5b333c8",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/SOURCE_DISPOSITION.json",
+      "original_status": "A",
+      "original_sha256": "dae0b4f7679c02a10f882d77dfe10655a3aede29281d59075dd58c37ca6eb8da",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/SOURCE_DISPOSITION.json",
+      "final_sha256": "dae0b4f7679c02a10f882d77dfe10655a3aede29281d59075dd58c37ca6eb8da",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/SOURCE_DISPOSITION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/STATE.yaml",
+      "original_status": "A",
+      "original_sha256": "abbfaeb8a139b00bcda9bc5789854d5e78961fe8967741973c66237442483f47",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/STATE.yaml",
+      "final_sha256": "abbfaeb8a139b00bcda9bc5789854d5e78961fe8967741973c66237442483f47",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/TRACE_GATE.md",
+      "original_status": "A",
+      "original_sha256": "e55d4a617beda8759c42e239c586a12cefdf56a921d3f29edf5795f3c7aea125",
+      "disposition": "preserved byte-exact historical evidence; author claims/receipts not current review authority",
+      "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-TRACE_GATE.md",
+      "final_sha256": "e55d4a617beda8759c42e239c586a12cefdf56a921d3f29edf5795f3c7aea125",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:.claude/science/physics-loops/clock-endpoint-reflection-20260915/TRACE_GATE.md"
+    },
+    {
+      "original_path": "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_status": "A",
+      "original_sha256": "3fae55ac5032fa3da5c8186cedce3997b3e145e90a483d898739c8059dd9db81",
+      "disposition": "accepted original proof unchanged; historical packet link appended",
+      "final_path": "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "final_sha256": "65a5e156f4c5dbf015d057c67bcc42c691b38340eb7628285477938e8e443996",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_status": "M",
+      "original_sha256": "c4aec86324afb53b2e0c8b4f272f1388831d1d6279544df882c1a728a5dfb833",
+      "disposition": "superseded generated topology acknowledgment; coordinator regenerates combined current graph",
+      "final_path": null,
+      "final_sha256": null,
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt",
+      "original_status": "A",
+      "original_sha256": "95645a46154db9a85afc3e3644663ca7b4d233ac7f884affa5c253bb154dd6cf",
+      "disposition": "superseded original by actual fresh canonical execution receipt",
+      "final_path": "logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt",
+      "final_sha256": "501fc848e261775a7e1350da0c77e8750d8ecf5aebcd5b4b67f0ebc90bfb17f9",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt"
+    },
+    {
+      "original_path": "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py",
+      "original_status": "A",
+      "original_sha256": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b",
+      "disposition": "accepted unchanged",
+      "final_path": "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py",
+      "final_sha256": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b",
+      "recovery": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24:scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "authority/scope context only; no theorem imported"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "authority/scope context only; no theorem imported"
+    }
+  ],
+  "runtime_scientific_inputs": [],
+  "repository_claim_dependencies": [],
+  "dependency_scope": "Complete supplied-model construction and proof restated; prior campaign/local probability/normal-form/transfer results contextual only. Historical packet not runtime input or theorem authority.",
+  "external_methods": [
+    "Finite tensor and mod3 cubical cohomology",
+    "Finite reflection-positive cone, Trotter expansion and Cauchy-Schwarz",
+    "Nonnegative sector ground-vector averaging, dyadic chessboard maximization and variational bounds",
+    "Finite-range thermodynamic ground-energy tiling"
+  ],
+  "coverage": [
+    "Full original canonical note/543-line runner/cache and all11 historical files, including complete14-fault receipts",
+    "Original-link sector minimum versus exact zero-winding flux quotient",
+    "Endpoint unit-shift isometry, local mod3 register and corner charge preservation",
+    "Physical hard projection in reflection cone: internal/crossing links plus all three winding constraints",
+    "Parity-correct checkerboard feasibility and explicit dyadic maximizer dissemination",
+    "Single-plaquette rho and charge checkerboard estimates give uniform c",
+    "Actual ground defect48v\u00b2/Delta\u00b2 per link and energy12v\u00b2/Delta bounds; selected infinite-volume ground limits",
+    "Reference energy finite-range tiling and physical limitations"
+  ],
+  "findings": [
+    {
+      "id": "historical-recovery",
+      "status": "fixed and independently confirmed",
+      "detail": "All11 historical files preserved exact with unique Markdown names/README map; canonical historical link resolves, no audit authority transplanted"
+    }
+  ],
+  "independent_controls": {
+    "path": "/private/tmp/review-drain-20260915/check8135/independent.json",
+    "sha256": "31760eb2396da9e03d99126a2ce7229193e518b9572670350171e3e9820e72a3",
+    "first_attempt": "/private/tmp/review-drain-20260915/check8135/independent-first-attempt.txt",
+    "first_attempt_status": "Scratch structural symbolic equality needed simplification; original scratch preserved, corrected exact identity passes; no candidate math defect",
+    "historical_mutations": "All14 source substitutions reconstruct recorded mutated hashes and have recorded exit1/AssertionError; not rerun or treated as reviewer execution"
+  },
+  "execution": {
+    "path": "/private/tmp/review-drain-20260915/check8135/primary-execution.json",
+    "sha256": "d50b7f7073d48177ec3306cec6308135b71fc5b98a652efbad7e141e79ad836b",
+    "elapsed_sec": 0.7027478218078613,
+    "timeout_sec": 180,
+    "families": 6,
+    "failures": 0,
+    "exit_code": 0,
+    "stderr": "",
+    "primary_attempts": 1,
+    "preexecution_source_freeze": "/private/tmp/review-drain-20260915/check8135/preexecution.json"
+  },
+  "source_loss_check": "Complete15 original paths mapped. Note proof and runner unchanged; all historical evidence preserved. Current-base additions only, no deleted or inherited main source lost. Generated manifest superseded by coordinator combined topology.",
+  "claim_strength": "Uniform sector and quadratic defect/energy inequalities for specified dyadic periodic three-state model. No neutral stiffness, photon phase, many-body spectral theorem, arbitrary topology or native law derived.",
+  "combined_gate": "Coordinator responsibility; no per-unit pipeline or audit applied"
+}

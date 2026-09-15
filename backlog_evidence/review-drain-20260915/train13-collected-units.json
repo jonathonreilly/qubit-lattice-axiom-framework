@@ -190,10 +190,67 @@
         "review-8042.md": "3c33446a875cf4a21533bd4067cbde5fcdc2c1bfe9e521bd2c0f9de8f4ec61da",
         "review-8042.json": "5cb5989496dfdac9f49064f9c8e8a4020bde82aae8c9dcd291e1cd64ffb3fdff"
       }
+    },
+    {
+      "unit": "8135",
+      "prs": [
+        8135
+      ],
+      "commits": [
+        "7a72cf0ff7b240d99516e445ab093eba57c95156"
+      ],
+      "final_head": "7a72cf0ff7b240d99516e445ab093eba57c95156",
+      "source_paths": {
+        "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": "65a5e156f4c5dbf015d057c67bcc42c691b38340eb7628285477938e8e443996",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/FOCUSED_EVIDENCE_CHECKS.json": "505fc648d11e3e09471fc4fd81efa74c148bd8daae7d011be4805431a77586f5",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/MUTATION_CHECKS.json": "f8572d7be981b9d41c07add6887c50e60cde83ec499bb9020bd8d30f25b2bebf",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/NOVELTY_SEARCH.json": "29f64901997f4c3f834565d49c03ff7b41d65a3598eee9ec3acb86fc92cb2ec0",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/README.md": "dab66afd34f197888710c2db91455550956c21eb6bc9c79cec81d0bc6373312e",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/SOURCE_DISPOSITION.json": "dae0b4f7679c02a10f882d77dfe10655a3aede29281d59075dd58c37ca6eb8da",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/STATE.yaml": "abbfaeb8a139b00bcda9bc5789854d5e78961fe8967741973c66237442483f47",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLAIM_STATUS_CERTIFICATE.md": "f5077fabbf4f83bdf1cf5981eaf001dac908b61086a64dad2d820b62aa3b84c4",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLUSTER_CAP_EVALUATION.md": "caf32e824eba72eae1030d4da6bd1a1b082d4da2d1f6c43b61dd728a60d71345",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-GOAL.md": "f941cb520ccb624eb2bd674b19be324c88eca6e110f928103824b43c98c093a2",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-HANDOFF.md": "0f8fa51b8a00c856e335d6bdbd668660efadc1924accf6bcaa76a775cc3013bd",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-REVIEW_HISTORY.md": "dd2fcf13cae39dc45f10b3811f256e2a3c7b71fb9d1633731c94857bf5b333c8",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-TRACE_GATE.md": "e55d4a617beda8759c42e239c586a12cefdf56a921d3f29edf5795f3c7aea125",
+        "logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt": "501fc848e261775a7e1350da0c77e8750d8ecf5aebcd5b4b67f0ebc90bfb17f9",
+        "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b"
+      },
+      "inputs": {
+        "docs/THREE_STATE_CLOCK_ENDPOINT_REFLECTION_SECTOR_ENERGY_AND_GROUND_DEFECT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": "65a5e156f4c5dbf015d057c67bcc42c691b38340eb7628285477938e8e443996",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/FOCUSED_EVIDENCE_CHECKS.json": "505fc648d11e3e09471fc4fd81efa74c148bd8daae7d011be4805431a77586f5",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/MUTATION_CHECKS.json": "f8572d7be981b9d41c07add6887c50e60cde83ec499bb9020bd8d30f25b2bebf",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/NOVELTY_SEARCH.json": "29f64901997f4c3f834565d49c03ff7b41d65a3598eee9ec3acb86fc92cb2ec0",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/README.md": "dab66afd34f197888710c2db91455550956c21eb6bc9c79cec81d0bc6373312e",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/SOURCE_DISPOSITION.json": "dae0b4f7679c02a10f882d77dfe10655a3aede29281d59075dd58c37ca6eb8da",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/STATE.yaml": "abbfaeb8a139b00bcda9bc5789854d5e78961fe8967741973c66237442483f47",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLAIM_STATUS_CERTIFICATE.md": "f5077fabbf4f83bdf1cf5981eaf001dac908b61086a64dad2d820b62aa3b84c4",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLUSTER_CAP_EVALUATION.md": "caf32e824eba72eae1030d4da6bd1a1b082d4da2d1f6c43b61dd728a60d71345",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-GOAL.md": "f941cb520ccb624eb2bd674b19be324c88eca6e110f928103824b43c98c093a2",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-HANDOFF.md": "0f8fa51b8a00c856e335d6bdbd668660efadc1924accf6bcaa76a775cc3013bd",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-REVIEW_HISTORY.md": "dd2fcf13cae39dc45f10b3811f256e2a3c7b71fb9d1633731c94857bf5b333c8",
+        "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-TRACE_GATE.md": "e55d4a617beda8759c42e239c586a12cefdf56a921d3f29edf5795f3c7aea125",
+        "logs/runner-cache/clock_endpoint_reflection_sector_bound_2026_09_15.txt": "501fc848e261775a7e1350da0c77e8750d8ecf5aebcd5b4b67f0ebc90bfb17f9",
+        "scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py": "9da22f2193c6bd8d4e3d334ec37c42b5463e41181dc70e1b4555b5838d97413b",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+        "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      "reports": [
+        "review-8135.md",
+        "review-8135.json"
+      ],
+      "review_evidence_hashes": {
+        "review-8135.md": "ad0ebb8295c30c36dd44dde604fd5ce285d9eb5c63e4f8013bcf8a55fc874781",
+        "review-8135.json": "f25072be63e4772a9d74b71fb7944070a99fa484409b353104b671c800cfb1de"
+      },
+      "dependency_scope": "review-8135.json",
+      "dependency_reason": "Complete supplied-model construction and proof restated; prior campaign/local probability/normal-form/transfer results contextual only. Historical packet not runtime input or theorem authority."
     }
   ],
-  "science_notes": 1,
-  "source_path_count": 79,
-  "collection_closed": null,
-  "collection_state": "open behind train12 validation"
+  "science_notes": 2,
+  "source_path_count": 94,
+  "collection_closed": "Two ready coherent units depart immediately after train12 landing; ongoing larger source reviews remain in collection.",
+  "collection_state": "closed"
 }

@@ -1,0 +1,57 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "f5077fabbf4f83bdf1cf5981eaf001dac908b61086a64dad2d820b62aa3b84c4"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/CLUSTER_CAP_EVALUATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-CLUSTER_CAP_EVALUATION.md",
+    "sha256": "caf32e824eba72eae1030d4da6bd1a1b082d4da2d1f6c43b61dd728a60d71345"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+    "sha256": "505fc648d11e3e09471fc4fd81efa74c148bd8daae7d011be4805431a77586f5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-GOAL.md",
+    "sha256": "f941cb520ccb624eb2bd674b19be324c88eca6e110f928103824b43c98c093a2"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-HANDOFF.md",
+    "sha256": "0f8fa51b8a00c856e335d6bdbd668660efadc1924accf6bcaa76a775cc3013bd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/MUTATION_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/MUTATION_CHECKS.json",
+    "sha256": "f8572d7be981b9d41c07add6887c50e60cde83ec499bb9020bd8d30f25b2bebf"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/NOVELTY_SEARCH.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/NOVELTY_SEARCH.json",
+    "sha256": "29f64901997f4c3f834565d49c03ff7b41d65a3598eee9ec3acb86fc92cb2ec0"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-REVIEW_HISTORY.md",
+    "sha256": "dd2fcf13cae39dc45f10b3811f256e2a3c7b71fb9d1633731c94857bf5b333c8"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/SOURCE_DISPOSITION.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/SOURCE_DISPOSITION.json",
+    "sha256": "dae0b4f7679c02a10f882d77dfe10655a3aede29281d59075dd58c37ca6eb8da"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/STATE.yaml",
+    "sha256": "abbfaeb8a139b00bcda9bc5789854d5e78961fe8967741973c66237442483f47"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/clock-endpoint-reflection-20260915/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8135-clock-endpoint-evidence/pr8135-TRACE_GATE.md",
+    "sha256": "e55d4a617beda8759c42e239c586a12cefdf56a921d3f29edf5795f3c7aea125"
+  }
+]

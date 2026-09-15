@@ -1,0 +1,569 @@
+{
+  "base": "16a8634ef8e2ec942ae3d6d1974a3a80ed6f55bb",
+  "source_head": "d15aa2d3d61d29769f69d625d60d48ee2896ce4a",
+  "source_tree": "b67835b3a15f721680822861422260a8869e3c51",
+  "heads": {
+    "8043": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+    "8133": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+    "8134": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8"
+  },
+  "source_owners": {
+    "docs/NATIVE_U1_PAIR_OPERATOR_AND_ALL_LOW_SUPPORT_NOTE_2026-09-08.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_BUILD.stderr": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_BUILD.stdout": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_DELTA.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_MANIFEST.stdout": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/ISOLATION_RECEIPT.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/PORT_TRANSFORM.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/README.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/READ_HASHES.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SCOPE_REPAIR.diff.gz": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SOURCE_FREEZE.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SOURCE_FREEZE_BEFORE_SCOPE_REPAIR.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/STATE.yaml": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/CANONICAL.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/CANONICAL_BEFORE_SCOPE_REPAIR.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/MUTANTS.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/PAYLOAD_COMPARISON.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/assemble.py.gz": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/finish.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/HASHES.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/RESULT.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/check.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/pr8043-evidence-native-u1-all-sector-connectivity-cold-review-PREREGISTRATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/pr8043-evidence-native-u1-all-sector-connectivity-cold-review-REVIEW.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/HASHES.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/HASHES_BEFORE_BASIS_BIJECTION_CORRECTION.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/MUTATIONS.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/RESULT.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/SUMMARY.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/check.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.stderr": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.stdout": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.stderr": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.stdout": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-BASIS_BIJECTION_CORRECTION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_BEFORE_BASIS_BIJECTION_QUALIFIER.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_BEFORE_NONZERO_QUALIFIER.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_REVIEWED_4c75.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-PREREGISTRATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/RESULT.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/SOURCE_COVERAGE.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/check.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/pr8043-evidence-native-u1-pair-creation-cold-review-PREREGISTRATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/pr8043-evidence-native-u1-pair-creation-cold-review-REVIEW.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/HASHES.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/RESULT.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/check.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/pr8043-evidence-native-u1-pair-creation-DERIVATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/pr8043-evidence-native-u1-pair-creation-PREREGISTRATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.diff.gz": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.stderr": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.stdout": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/parent-phase-history/pr8043-evidence-parent-phase-history-DERIVATION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/parent-phase-history/pr8043-evidence-parent-phase-history-DERIVATION_BEFORE_ABSOLUTE_PHASE_CORRECTION.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/port.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pr8043-evidence-CANONICAL_BEFORE_SCOPE_REPAIR.md.gz": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.diff.gz": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.py": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.stderr": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.stdout": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/inputs/GLOBAL_D4_SEED.json": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ARTIFACT_PLAN.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSEMBLY_SCOPE.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSUMPTIONS.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSUMPTIONS_AND_IMPORTS.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-CLAIM_STATUS_CERTIFICATE.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-HANDOFF.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-LITERATURE_BRIDGES.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-N1_N8.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-NO_GO_LEDGER.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-PACK_INDEX.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-PR_BACKLOG.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-QUEUE.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-REVIEW.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-REVIEW_HISTORY.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ROOT_REVIEW.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ROUTE_PORTFOLIO.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-SCOPE_REPAIR.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-STATUS.md": "review-8043",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-TRACE.md": "review-8043",
+    "logs/runner-cache/native_u1_pair_and_all_low_support_2026_09_08.txt": "review-8043",
+    "outputs/native_u1_pair_and_all_low_support_2026_09_08.json": "review-8043",
+    "outputs/native_u1_pair_and_all_low_support_2026_09_08.txt": "review-8043",
+    "scripts/native_u1_pair_and_all_low_support_2026_09_08.py": "review-8043",
+    "scripts/native_u1_pair_support_pair_author_2026_09_08.py": "review-8043",
+    "scripts/native_u1_pair_support_pair_independent_2026_09_08.py": "review-8043",
+    "scripts/native_u1_pair_support_support_author_2026_09_08.py": "review-8043",
+    "scripts/native_u1_pair_support_support_independent_2026_09_08.py": "review-8043",
+    "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/README.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md": "review-8134",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md": "review-8134",
+    "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt": "review-8134",
+    "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt": "review-8134",
+    "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt": "review-8134",
+    "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt": "review-8134",
+    "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt": "review-8134",
+    "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py": "review-8134",
+    "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py": "review-8134",
+    "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py": "review-8134",
+    "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py": "review-8134",
+    "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py": "review-8134"
+  },
+  "inputs": {
+    "docs/NATIVE_U1_PAIR_OPERATOR_AND_ALL_LOW_SUPPORT_NOTE_2026-09-08.md": "51762c24f6bc0781f4c01d7ef6c1d09ff4482537e2f29283898e4bde1eb9ad9c",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_BUILD.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_BUILD.stdout": "5ae99d3e26bbfd18343fe950c59bc1726bb627bb40434fa90f441e796b11fb88",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_DELTA.json": "dabaf0df4b9180c138de87673d055e44e60c0388dcefd546aa203ece347b7eab",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/GRAPH_MANIFEST.stdout": "18e77a6f7c3886ccb159805bdc52bf6ce9dcfa0d4f4223de9817bed5607a0a92",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/ISOLATION_RECEIPT.json": "3778a729a5a6dca8086b3fe8f7c28f68c916cd7817523b24754873a0aed7d28a",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/PORT_TRANSFORM.json": "302ae85c928fce217c45ae8f974c9592fe9f649c889ff04c27888e97790d1bf5",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/README.md": "cb944f53e4c4292ce7f0a2e2b586bb66149bf42c72c2ba60c6dc3d6521d531f4",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/READ_HASHES.json": "bc3636394e78034853f77caa0a22774225aa2c9d38e4482bbdac2393f1cf1756",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SCOPE_REPAIR.diff.gz": "3af29956d77b70c83717ed357b145293e263af1e5d19ab5dcc7714a45da1e4d0",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SOURCE_FREEZE.json": "81b321e77452770f2d77de7fa3f5f54fda8131a23fafc9293d448818ee5a3660",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/SOURCE_FREEZE_BEFORE_SCOPE_REPAIR.json": "0ecbf6c170e5bfc4f770146d1a829bdb28bd2b26725b42f36e7fe3027f053d93",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/STATE.yaml": "d2a25f75b24c904590549e7640c5348bd694067456e65f8e4977c3367e41f3aa",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/CANONICAL.json": "44e724b4277e35bdf4ccc530c4608982998a22b30b77f04dcdc28cc55b168acb",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/CANONICAL_BEFORE_SCOPE_REPAIR.json": "5fa69f114328446e8698baeb87151b2adec78940dd34ac45ec755bbf21fb2822",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/MUTANTS.json": "362a159ac08387736737a8ff3b46b6e80c2563ef4e18f3f60fa86d24e85718b7",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/PAYLOAD_COMPARISON.json": "3b90d6bb0eb171d9d1eb999cf73db1c163d76e47c0254ca41321928f21615291",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/assemble.py.gz": "1fc1e68d50bc60804a2fff91bb6984f6f88c36f841fa41a59c8b7be758c8cdb8",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/finish.py": "24b7e06dfae82afeef1ca8c263512b03113db2f0689d52c00096dbe3aea5a197",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/HASHES.json": "55c2510ac41a6556bd9e8e8c8491c7620898bd26c6695e14264a02fcebf6fcd5",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/RESULT.json": "be571bec17dc92c464c3fbbeecac60b94b26725c1cd75edaba197c15a17351f0",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/check.py": "0a20c2abcf12fc366ae3281e2a3f6a409b6c6926124fa2dd49c8d6a9fb8ad0d0",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/pr8043-evidence-native-u1-all-sector-connectivity-cold-review-PREREGISTRATION.md": "6140833876075a335def9f1577ea409ad1e8d9efe8d92bd15dc4ecb42f07beb4",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-cold-review/pr8043-evidence-native-u1-all-sector-connectivity-cold-review-REVIEW.md": "c5df4b6d574451029c7452f533afbef0aae3209c3e5905f17fd82997725cff77",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/HASHES.json": "2b42207deecf444a1164df52acbe370cb64ff8623ee1cb24749b7d3a332b3c13",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/HASHES_BEFORE_BASIS_BIJECTION_CORRECTION.json": "bdb04d3cb3089add434bd77c67d37d9be10709a226aa668a11f59550819f4b64",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/MUTATIONS.json": "aa7296b5d6ebe4331d64483de823802e096fcd84ae70b4deb2550e283201cbdb",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/RESULT.json": "f5a1cd76ab16a32b8a80027c203bc48070ed04eef7bda2ea977de50573c7f309",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/SUMMARY.json": "e22d1c7540a7428cf10fec37e89e5e87277bebae71cd1b57c71ba7fb66b89534",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/check.py": "fa8512881bc739c53101796e3666e00e121c40b39339fa74ace82853b8f6b615",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.py": "357cdacf6ecb95aad4a30aba5c81d9294e53e542f701f5c2ad977dfdb88eb402",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.stderr": "93816b6935e84a4509779ad1ca95c1d1169c4bf1d32643e9cdaa46994b680838",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_annihilation.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.py": "4298ee7f83ea8c8e0e368685a84e2d019a1622b9a18d902715d346cea42a88e1",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.stderr": "2c1ecf1ad6db682eb99408b1004c2867eddc0c19cd2afaa8ac9488136d30b82d",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/omit_cycle_closure.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-BASIS_BIJECTION_CORRECTION.md": "000178218ad830707e60363442be54c7aaf974ce76ad0171b66ff99b29698687",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION.md": "f483b7e455e909dc8028ae52f4f4c47d2546108ec0e9b4d16bb0479c2ff8ee04",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_BEFORE_BASIS_BIJECTION_QUALIFIER.md": "4c75aa744eebf8f086a183aecc8ff14459f12827bdc0571fca2e29a35cbc7aa8",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_BEFORE_NONZERO_QUALIFIER.md": "750a6671fa383f08a240d0dd631ee6272f4521a229fe234fa515dcdcd0ddd4ac",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-DERIVATION_REVIEWED_4c75.md": "4c75aa744eebf8f086a183aecc8ff14459f12827bdc0571fca2e29a35cbc7aa8",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-all-sector-connectivity-root/pr8043-evidence-native-u1-all-sector-connectivity-root-PREREGISTRATION.md": "7eb78975de41e5e561c47962a5a278b1a7fc026ada4575be7f99779ceec0ed8b",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/RESULT.json": "362bc75bc6daa70ceaabfe4e969055156865c4c144bf7d5462936e252ba51359",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/SOURCE_COVERAGE.json": "0cc2d25de81541fe55c5d4f6f81442ab5eb33351478345f0070ea6e565cf4827",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/check.py": "2f214ea4981f091fdc1093e748a6fd8366885e4be7ffa06afafc8afb2e2dbafa",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/pr8043-evidence-native-u1-pair-creation-cold-review-PREREGISTRATION.md": "113304a92539574cbe6140054d7928f5fdae3cfb00752d48e572f83ddd2bbb31",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation-cold-review/pr8043-evidence-native-u1-pair-creation-cold-review-REVIEW.md": "13ea78b9f00c75c9c33ea042492744fff38479eefddde2c691dbcb7f6ed5a868",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/HASHES.json": "62a026f917c0a0b15d2fb8f1816fcb1fd59bf84f00d1dddf22898ed5cc6de6d6",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/RESULT.json": "ee45689af948176d025f295a4e3ae1c068c36c5686cc53b3fb7746f664e08989",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/check.py": "605754f12261f6117e77714d3ec2147140462274cbb1e77560a570b45ef4d87d",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/pr8043-evidence-native-u1-pair-creation-DERIVATION.md": "a20d5be86fdc3e87dbf5955acce86a05e59775500767d3f6d76ee3e3afe4d108",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/native-u1-pair-creation/pr8043-evidence-native-u1-pair-creation-PREREGISTRATION.md": "97653bcc33cb072ae6d89c190cbef7de92c12f652edb45a5f7cac9ff7a4daddc",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.diff.gz": "a1fbd4ff77f732a30fe15d5c88eb44cf6e64ffc373758f42c6d669e03dd96a87",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.py": "6c902865ce45162a583b683c836ae698af14544cbe6ccc86f0a0be7deb27bbf2",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.stderr": "90ba0e2553961c1b4dd63a8fd1e930d325ff358181d0295d018fbb4eccc5983a",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pair_author_MUTANT.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/parent-phase-history/pr8043-evidence-parent-phase-history-DERIVATION.md": "a70724ba0ae48a66a7e416bbd5c6ee5d1eb5b56024a46c7989a633cd30dc4d51",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/parent-phase-history/pr8043-evidence-parent-phase-history-DERIVATION_BEFORE_ABSOLUTE_PHASE_CORRECTION.md": "41f673ce3090b45ac11cf6b250dd8650efa4a211d48e0529fc66ee7cc753d835",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/port.py": "6d98c9a351c728b1ffdd661a8b3b451142bccd4ffe89a52a27695f1541e1cf77",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/pr8043-evidence-CANONICAL_BEFORE_SCOPE_REPAIR.md.gz": "cc4678263b8b7e92380098b48d9065225d894befdb97f69e9e82fd6257bc5773",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.diff.gz": "e09120c49ce5f1497077f3398f9d216608500fa1b8d863543c9d706e576043f3",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.py": "804217e493dbb27fbd6c3a65c4d23c1b8028fc8f14b5a8574b936a8d12476e08",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.stderr": "6efc40769e09c5dc223a062e0e42a0862fc69b71aa425d33c62d78a504eab0c2",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/evidence/support_author_MUTANT.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/inputs/GLOBAL_D4_SEED.json": "f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ARTIFACT_PLAN.md": "6f25aa039a56aeb6bb3d06db0c5195a2c2e4257a413ffe4c1ac8e5b684d96f3c",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSEMBLY_SCOPE.md": "e969eab6b7012d0ae1373cc3a0b20516dd371774d3cbcd5a90a160a32c80efa6",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSUMPTIONS.md": "494690f5361d1eda3879a6d5e676fd1f5b99a481e4c83fed103ff16d1d323f5f",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ASSUMPTIONS_AND_IMPORTS.md": "607848d23a93a896e5b52751a0a361adb13222113229f1c4dbc7edb36266c371",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-CLAIM_STATUS_CERTIFICATE.md": "aaf92a05d39a9ba067dd5abccfd471362a1db420b1a84d6b9885c0e15607cbf5",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-HANDOFF.md": "21c21e56656cdb75ece432ff94961035eeead3d8fb1a228dba7f9152a0f605d9",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-LITERATURE_BRIDGES.md": "e16e350e06743d9f16ba47bae148d5e6c2599dde639e446dbe94b21bc4f10ab5",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-N1_N8.md": "7530de1bf26a405b0b3d68931f9d7520ca5e1e4955ffa26d355124d3815a5d5f",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-NO_GO_LEDGER.md": "d4e2ec05497980124485a4e9fdfdee623b6ab37edc3491c50895665fb834ce41",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-PACK_INDEX.md": "7f9c4d6f6e3649f85906ae7b58398acf3f13b444322d24ea0960e2d2578b7a7d",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-PR_BACKLOG.md": "92440515145ca7cfaa1236a8f38e2c559af0daf6f2ddc127e6d1d2d4ddb6acb6",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-QUEUE.md": "4df857362a7dc451bef178df5c7f817db0ce82adee74df76a50da8d76531d8af",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-REVIEW.md": "b5492427b57ecc1cede3359e579b9a604e04933fd0a05d81a1093ef1fd00dcbe",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-REVIEW_HISTORY.md": "b7de3912895088af34f37b5160b544998922f183f25059dcd630e2345062ac37",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ROOT_REVIEW.md": "c3c0f1aad745ccca8f1a95281af8484273c5c9dd312a39032fac551940b79265",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-ROUTE_PORTFOLIO.md": "57e3601bfb5391f6c9fb79b9868de2c4239cd3f938ec752224bf72fb612b4bd8",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-SCOPE_REPAIR.md": "c80618a96ea209364eabd50f45b76b5acfd6b0691366a9c6b37a8e4149197d8a",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-STATUS.md": "23d0b9499f303753c6097c8b0ee64286dbe74a966ef6440e21a6ed60353a0c3b",
+    "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-TRACE.md": "90844cb65e8b9995c5be974fceef091a402fc8ec86a0b57b7aba1e0068986959",
+    "logs/runner-cache/native_u1_pair_and_all_low_support_2026_09_08.txt": "e733fceadd18dbf26a595786612dfad928fbccc55f8d2426fc2195a52b844c47",
+    "outputs/native_u1_pair_and_all_low_support_2026_09_08.json": "88b24c95a10cac146dc0d8ebb960eda4800c829a0f0cc594bbb22b17fc5c2717",
+    "outputs/native_u1_pair_and_all_low_support_2026_09_08.txt": "203895a00d454997caffceffc7fb269a2cd06943443c376bd9af4d60de1858af",
+    "scripts/native_u1_pair_and_all_low_support_2026_09_08.py": "34b9f4e46486838063a58a3b0af30ff43e03f5608cf91158398c6f6dc20f2894",
+    "scripts/native_u1_pair_support_pair_author_2026_09_08.py": "48a7ffb91f2599c0026d405cf2f001082923b0677eb1e65b2688d013dc81a5ff",
+    "scripts/native_u1_pair_support_pair_independent_2026_09_08.py": "3f884fe0bcbf5995baf4f65246da66ece11ca360b4651a5c51d6dd0b29218b45",
+    "scripts/native_u1_pair_support_support_author_2026_09_08.py": "840890644a0bd30732683a3d31f80cb864929d2a346ff49dc230161a8f89178e",
+    "scripts/native_u1_pair_support_support_independent_2026_09_08.py": "0adfbc7f3af3d0a6f14ec42abf53f88c67015ae4554a8ff121f2841e3c8092a9",
+    "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "ddeeff24069ec649914f37c4442857b499898dd13ae44649fb13707f7f866cab",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+    "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+    "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+    "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+    "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+    "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+    "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/README.md": "00ae74959c971e6b380c617024dd558dcee4ce10353079e640a0b228653ae247",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7",
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702",
+    "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409",
+    "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28",
+    "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab",
+    "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt": "dfd27ee2435d02849dd6d635a5a543fbff2522a4caa878d520e56562a9666a82",
+    "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4",
+    "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620",
+    "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6",
+    "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92",
+    "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+    "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  "review_evidence_hashes": {
+    "review-8043.md": "97620cc9eec778a211e54818aaba38a7cba7779c9b89f6f404d1bdfbcafcdf38",
+    "review-8043.json": "bcd3aa917c5050f4538c21b662186e3e8739c8b023979c99f67a3259962af9a6",
+    "review-8134.md": "19dba02f74a37bd631cfa5b4158387aaa632f909b4fe3238b441c63b8d2f4bca",
+    "review-8134.json": "a6b1d85d2952b710988e182e9eaaf456aba28a79efaa268c7782c7b64244ba0a"
+  },
+  "dependency_expectations": {
+    "docs/NATIVE_U1_PAIR_OPERATOR_AND_ALL_LOW_SUPPORT_NOTE_2026-09-08.md": {
+      "required_claim_ids": [
+        "native_low_charge_u1_dictionary_note_2026-09-08",
+        "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "native_low_charge_u1_dictionary_note_2026-09-08",
+          "graph_id": "native_low_charge_u1_dictionary_note_2026-09-08",
+          "source_path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+          "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+        },
+        {
+          "declared_id": "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08",
+          "graph_id": "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08",
+          "source_path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+          "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+        }
+      ]
+    },
+    "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    },
+    "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [],
+      "declared_authority_bindings": [],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    },
+    "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+        "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+        "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "graph_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794"
+        },
+        {
+          "declared_id": "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+          "graph_id": "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3"
+        },
+        {
+          "declared_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "graph_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    },
+    "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+        "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "graph_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc"
+        },
+        {
+          "declared_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "graph_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    },
+    "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+        "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "graph_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc"
+        },
+        {
+          "declared_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "graph_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    },
+    "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+        "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "graph_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c"
+        },
+        {
+          "declared_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "graph_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    },
+    "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "graph_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "review-8134.json",
+      "reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
+    }
+  },
+  "cheap_preflight": {
+    "docs/NATIVE_U1_PAIR_OPERATOR_AND_ALL_LOW_SUPPORT_NOTE_2026-09-08.md": {
+      "primary_runner": "scripts/native_u1_pair_and_all_low_support_2026_09_08.py",
+      "helper_runner_paths": [
+        "scripts/native_u1_pair_support_pair_author_2026_09_08.py",
+        "scripts/native_u1_pair_support_pair_independent_2026_09_08.py",
+        "scripts/native_u1_pair_support_support_author_2026_09_08.py",
+        "scripts/native_u1_pair_support_support_independent_2026_09_08.py"
+      ],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+        "docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/pr8043-HANDOFF.md"
+      ],
+      "required_claim_ids": [
+        "native_low_charge_u1_dictionary_note_2026-09-08",
+        "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08"
+      ]
+    },
+    "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [],
+      "required_claim_ids": []
+    },
+    "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [],
+      "required_claim_ids": []
+    },
+    "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md"
+      ],
+      "required_claim_ids": [
+        "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+        "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+        "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+      ]
+    },
+    "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "required_claim_ids": [
+        "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+        "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15"
+      ]
+    },
+    "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "required_claim_ids": [
+        "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+        "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+      ]
+    },
+    "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "required_claim_ids": [
+        "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+        "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+      ]
+    },
+    "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "required_claim_ids": [
+        "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15"
+      ]
+    }
+  },
+  "units": [
+    "8043",
+    "8134"
+  ],
+  "departure": "Two ready coherent units, three PRs, depart immediately after train13 landing; no collection timer.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match.",
+  "candidate_commit": "f8ac15d64b204a850747b391c1981d454c0f06d3",
+  "candidate_tree": "99346ae1b8bd1c3ae76db9123df5f36ea550ebba",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 8,
+  "validation_logs": {
+    "train14-pipeline.log": "3274127b43fb1c30df218125c5370d7232b97b2755571c4ac60225186d7b1f39",
+    "train14-strict.log": "2350cf8cee09d04dcd086c2350b918f7ddc479b248c93c1ee64a0d75da8dd679",
+    "train14-evidence.txt": "024e609313cccf50bd017ad70befbc626aea4603965722d7eabd3e78de5b8a1e",
+    "train14-validated-rows.json": "9e0adce804c2178d4c3d4705dc128076b20e28cca2a96ba4a7e342d7d6421d88"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
+}

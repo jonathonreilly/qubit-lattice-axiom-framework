@@ -1,0 +1,63 @@
+{
+  "pr": 8042,
+  "original_head": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+  "branch": "codex/native-low-charge-u1-dictionary-20260908",
+  "landing": "16a8634ef8e2ec942ae3d6d1974a3a80ed6f55bb",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-low-charge-u1-dictionary-20260908",
+        "closedAt": null,
+        "headRefName": "codex/native-u1-pair-and-all-sector-support-20260908",
+        "headRefOid": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8043,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8043"
+      },
+      "original_merge_base": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+      "delta_sha256": "690dedc41258180160c2756535aa1e1d60f97f31d89d86c98513faae0e817b10",
+      "delta_file": "closure-8042-child-8043-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-u1-pair-and-all-sector-support-20260908",
+        "headRefOid": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8043,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8043"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-u1-pair-and-all-sector-support-20260908",
+        "headRefOid": "8b84cccb5b93db699a4cb7631d658fed916a0831",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8043,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8043"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T13:32:14Z",
+    "headRefName": "codex/native-low-charge-u1-dictionary-20260908",
+    "headRefOid": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8042,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8042"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "04d1bf113a0cff69e700a5e81a9be2978436667f",
+    "state": "CLOSED"
+  }
+}

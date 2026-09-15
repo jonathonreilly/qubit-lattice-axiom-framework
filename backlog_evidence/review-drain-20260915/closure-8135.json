@@ -1,0 +1,24 @@
+{
+  "pr": 8135,
+  "original_head": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+  "branch": "physics-loop/clock-endpoint-reflection-20260915",
+  "landing": "16a8634ef8e2ec942ae3d6d1974a3a80ed6f55bb",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/clock-endpoint-reflection-20260915",
+    "headRefOid": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8135,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8135"
+  },
+  "final_state_verification": {
+    "baseRefName": "main",
+    "headRefOid": "cb9eb22f2aedfd15ce958b9fd5d6fce3ed4c6e24",
+    "state": "CLOSED"
+  }
+}

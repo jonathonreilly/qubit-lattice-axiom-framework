@@ -1,6 +1,6 @@
 {
- "edge_count": 13348,
- "node_count": 5780,
+ "edge_count": 13355,
+ "node_count": 5783,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18410,6 +18410,10 @@
    "deps_hash": "1f65fcda86e7",
    "out_degree": 2
   },
+  "toe_derivation_campaign_axiom_sufficiency_by_underdetermination_witnesses_note_2026-09-13": {
+   "deps_hash": "b9664c163946",
+   "out_degree": 6
+  },
   "token_count_certificate_cycle731_bounded_theorem_note_2026-07-28": {
    "deps_hash": "0b4d5c289bc4",
    "out_degree": 4
@@ -22085,6 +22089,14 @@
   "work_history.repo.review_feedback.pr8092-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8093-evidence.pr8093-original-proposal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8093-evidence.readme": {
+   "deps_hash": "cc486bcc6b3c",
+   "out_degree": 1
   },
   "work_history.repo.review_feedback.pr8094-evidence.kept.pr8094-review_history-3f4cb79c836849bf": {
    "deps_hash": "e3b0c44298fc",

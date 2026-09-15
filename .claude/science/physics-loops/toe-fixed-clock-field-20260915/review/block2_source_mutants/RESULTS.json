@@ -1,0 +1,34 @@
+{
+  "utc": "2026-09-15T16:18:03.688842+00:00",
+  "cases": [
+    {
+      "name": "cut_missing_same",
+      "original_sha256": "ecfb69a5d083eb21cd1fa233ba20e922fe8775fc0f93c6278c497bfb18e10ffc",
+      "mutant_sha256": "2a7308987bcbd051216b37f6ad86398cbbc46ce6d4e8cb06eb3adfc0dc6fb322",
+      "exit_code": 1,
+      "result": "rejected_by_assertion"
+    },
+    {
+      "name": "cut_missing_source",
+      "original_sha256": "ecfb69a5d083eb21cd1fa233ba20e922fe8775fc0f93c6278c497bfb18e10ffc",
+      "mutant_sha256": "59e05f1c9d08ce0c8dc355c31de3876695491c9ca029b91900741f7d25ea6b4d",
+      "exit_code": 1,
+      "result": "rejected_by_assertion"
+    },
+    {
+      "name": "cut_missing_mixed",
+      "original_sha256": "ecfb69a5d083eb21cd1fa233ba20e922fe8775fc0f93c6278c497bfb18e10ffc",
+      "mutant_sha256": "691724a855c42e8f8acfed7f6a83f10a69a6c7a4b87d837960e3e5ce118464b5",
+      "exit_code": 1,
+      "result": "rejected_by_assertion"
+    },
+    {
+      "name": "source_missing_phase_i",
+      "original_sha256": "0380279420099a6f3577ff79a072d42bc54b304bd0a88c5d54befab8d8bb0809",
+      "mutant_sha256": "cf76c60101b9cd61540f0090bce79f149cbe4e339cbe30ea29262d593406e00c",
+      "exit_code": 1,
+      "result": "rejected_by_assertion"
+    }
+  ],
+  "scope": "Author fault-injection checks; no independent scientific review."
+}

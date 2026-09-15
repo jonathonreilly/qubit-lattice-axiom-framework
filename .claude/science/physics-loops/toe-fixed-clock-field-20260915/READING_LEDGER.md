@@ -102,3 +102,24 @@ hypotheses directly. The massive convergence theorem remains unmatched.
 Brydges-Yau 1990 is still metadata/abstract only: the publisher full text was
 not available and the Project Euclid page returned an access challenge.
 No full-text reading or exhaustive literature claim is made.
+
+Additional routing: Barvinok-Barvinok arXiv2005.11232v2 introduction and
+Theorem 1.1 assumptions require absolute row sums of the real and imaginary
+Ising couplings, not their signed l2 operator norm. Read the tree-bound
+passage (3.45)-(3.53) of Albeverio et al. cond-mat/9412001 via its primary
+author upload; it likewise assumes an absolute interaction norm. Neither
+result supplies the missing massless signed estimate. Nash-Williams tree
+packing and cactus decompositions were searched as possible tools; the
+new graph Holder proof instead constructs elementary spanning-tree
+mixtures and does not import those unread theorem proofs.
+
+At 16:16 UTC remote main is afef2639523b881ae550dbaea6937fb15b02461c;
+fetched this immutable object without moving the shared tracking ref.
+Relevant clock/Villain/Gaussian science, SCIENCE_WORKFLOW, premise registry,
+physics-loop/review-loop and physics-claim-reviewer sources are unchanged
+against 0641. Read the complete physics-claim-reviewer skill, byte-identical
+between installed and this main revision, SHA256
+9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.
+Applied its semantic/artifact and discriminating-gate review personally;
+the user's explicit no-subagent instruction controls execution. No independent
+review, audit verdict, axiom change or editable prompt change is implied.

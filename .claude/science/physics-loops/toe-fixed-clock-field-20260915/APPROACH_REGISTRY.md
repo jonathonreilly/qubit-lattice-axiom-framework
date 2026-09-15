@@ -19,3 +19,11 @@ is a new local mechanism; the all-order target remains open because orientation
 cycles, same-species interactions, support compatibility and sources remain.
 F4's inspected complex cluster theorem requires exponential covariance decay;
 it can only be considered after a matching scale decomposition is supplied.
+
+Block 2, 16:19 UTC: F2 now has a stable phase-preserving forest family and
+a finite cut-completion identity. Combined with a source graph Holder
+inequality, it gives a proposed Gaussian remainder at every fixed formal
+activity order with all finite component shapes. The remaining summation
+is not supplied by this fixed-order result. Next quantify constant growth
+and retain signed spatial operators through the residual interactions;
+do not infer physical activity-one convergence from coefficientwise decay.

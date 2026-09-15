@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/source_missing_phase_i.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/source_missing_phase_i.py", line 220, in main
+    physical_bond_source_identities=source_identity(),
+                                    ~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/source_missing_phase_i.py", line 180, in source_identity
+    assert abs(original-(1+C[e]+sigma[i]*sigma[j]*O[e])) < mp.mpf('1e-48')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

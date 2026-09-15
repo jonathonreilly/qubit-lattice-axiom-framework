@@ -1,0 +1,33 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "reviewer_skill_revision": "afef2639523b881ae550dbaea6937fb15b02461c",
+  "skill_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+  "utc": "2026-09-15T16:20:03.787222+00:00",
+  "findings": [
+    {
+      "severity": "material_validation_limit",
+      "finding": "Original graph source checker used the same C/O pair expansion on both sides, so a wrong physical phase convention could pass.",
+      "resolution": "Direct partition comparator now constructs original exponential pair factors. Missing phase-i mutant fails."
+    },
+    {
+      "severity": "clarification",
+      "finding": "Self-weights occur in nu and in stable residual notation.",
+      "resolution": "Explicitly move each self-weight out of nu into the residual once; no double weighting."
+    },
+    {
+      "severity": "open_science",
+      "finding": "Fixed-order constants are not shown summable in particle number; quadratic limit, state and free-boundary matching remain open.",
+      "resolution": "All remain explicit proof obligations. No full Gaussian field or axiom obstruction claimed."
+    }
+  ],
+  "discriminators": "Three missing cut derivative terms and one missing phase-i mutation rejected by assertion. See block2_source_mutants/RESULTS.json.",
+  "author_review_limits": "Same author and context. Different algebraic paths and mutations do not constitute independent scientific review. No public retained status or audit verdict.",
+  "inputs": {
+    "notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md": "41c82b14a0f157dd022b48935a86e8f81d81b5e5cb9dfa6bdfa4748df68a80a7",
+    "notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md": "2923d79bd6147cc7fcbb91136658c35b93003ff85356211145df6f25a2538afd",
+    "evidence/block2_graph_source_check.py": "0380279420099a6f3577ff79a072d42bc54b304bd0a88c5d54befab8d8bb0809",
+    "evidence/block2_graph_source_check.json": "e1b750ea396dd9c1f420fc405fe059f342361e76a870a5883619b7e96cc893b4",
+    "evidence/block2_cut_completion_check.py": "ecfb69a5d083eb21cd1fa233ba20e922fe8775fc0f93c6278c497bfb18e10ffc",
+    "evidence/block2_cut_completion_check.json": "618a191e39f6e15c2e9d71df438e90a26b2537dac852599600d6c2cef8490216"
+  }
+}

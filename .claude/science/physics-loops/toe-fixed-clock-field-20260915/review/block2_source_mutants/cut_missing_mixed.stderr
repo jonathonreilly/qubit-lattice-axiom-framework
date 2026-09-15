@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_mixed.py", line 189, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_mixed.py", line 181, in main
+    combinatorics=combinatorics(), cut_identity=numerical_cut_identities(),
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_source_mutants/cut_missing_mixed.py", line 166, in numerical_cut_identities
+    assert max(derivative_errors) < mp.mpf('1e-35')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

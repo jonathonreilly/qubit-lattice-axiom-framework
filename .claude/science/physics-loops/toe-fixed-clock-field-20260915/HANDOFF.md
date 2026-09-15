@@ -155,3 +155,42 @@ Raw phase interpolation changes by 2 under a valid filling gauge change;
 the affine interpolation changes by only 8.55e-15 numerically. An initial
 graph-search infinite loop was interrupted, frozen, and repaired with a
 visited set; it occurred before science assertions. No tolerance change.
+
+## Block 2: source graph Holder and stable cut completion, 16:19 UTC
+
+A tree-mixture Holder inequality controls a connected spatial graph with
+source legs when the augmented graph has no bridges. Each spatial kernel
+then uses an l^p exponent strictly above one, while source exponents stay
+above two. For K>=4 source legs, the spatial sum is O(a^(2K-5)). This
+first gave an O(a^3) subtracted source remainder for the complete two-electric,
+two-magnetic connected coefficient, including all shapes and hard core.
+
+A new exact cut-flip operation extends the mechanism to every FIXED formal
+activity order. Start with the stable BKAR tree and four Taylor source legs.
+Across an augmented-graph bridge, the explicit sign monomial changes sign.
+Its orientation average equals an integral of a residual cut derivative.
+The derivative adds a crossing same-species/mixed edge or a source leg,
+so that bridge disappears. At most n operations finish. Cut matrices with
+parameters in [-1,1] are positive semidefinite correlation matrices; their
+Schur products preserve the real Gram energy reserve. Remaining mixed
+factors retain modulus <=1 and full phase periodicity, including at zeros.
+
+After completion, graph Holder and the source mass reserve give, for each
+fixed n_e,n_m, a proposed O(a^3) bound on its connected coefficient after
+constant/quadratic source subtraction, uniform in component restrictions.
+All-shape sums converge when both x/128>log393; x>=1024 is sufficient,
+e.g. fixed beta=32,N=256. This is NOT a full phase range, summation at
+activities one, separate quadratic limit, or finite-free-boundary theorem.
+Constants may grow badly with n. Their growth and a signed resummation
+are the next tasks; do not promote fixed-order disappearance to full Gaussianity.
+
+The graph checker covers 624 bond patterns and 23,556 source remainder
+patterns. Original-exponential connected partition inversion agrees with
+the source parity expansion within 6.18e-61 at its supplied float projection
+entries. The cut checker covers 840 initial graphs and 4,100 possible next
+edge additions, plus a complex-source cut derivative with a prior negative
+parameter and a zero mixed factor. Direct differentiation and integrated
+sign subtraction agree to 1.06e-52 and 1.38e-54 respectively. Four actual
+mutations are rejected by assertion. A zero-string parsing failure is
+frozen; fixed with an integer zero. Personal claim review only, no agents
+or independent review. Main afef263 is fresh for relevant unchanged sources.

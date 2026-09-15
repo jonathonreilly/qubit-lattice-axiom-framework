@@ -1,0 +1,6 @@
+{
+  "sha256": "8bb788dc80eedfd18d58ce68bf6ce380efabf0eba2dae52ff61a840b93fb4a61",
+  "utc": "2026-09-15T16:13:49.640091+00:00",
+  "exit": 1,
+  "failure": "mp.mpf('.0') raised ValueError: invalid literal for int() with base 10: ''. Combinatorial check completed; analytic cut identities had not completed. Replace this input with exact integer zero; no formulas or tolerances change."
+}

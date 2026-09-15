@@ -1,0 +1,58 @@
+{
+  "pr": 8062,
+  "original_head": "df8112d1642bec7aaaacd380036087b03cdb0173",
+  "branch": "codex/native-uniform-quasilocal-star-vertex-20260909",
+  "landing": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-uniform-quasilocal-star-vertex-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-star-thermodynamic-limit-20260909",
+        "headRefOid": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8063,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8063"
+      },
+      "original_merge_base": "df8112d1642bec7aaaacd380036087b03cdb0173",
+      "delta_sha256": "4ee1bcb304f27fc41124686596667acd4afcb863cb013738e7acf0f141da9f43",
+      "delta_file": "closure-8062-child-8063-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-star-thermodynamic-limit-20260909",
+        "headRefOid": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8063,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8063"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-star-thermodynamic-limit-20260909",
+        "headRefOid": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8063,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8063"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T17:47:59Z",
+    "headRefName": "codex/native-uniform-quasilocal-star-vertex-20260909",
+    "headRefOid": "df8112d1642bec7aaaacd380036087b03cdb0173",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8062,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8062"
+  }
+}

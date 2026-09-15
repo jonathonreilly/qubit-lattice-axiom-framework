@@ -1,0 +1,1760 @@
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md
+new file mode 100644
+index 0000000000..cb7c1f5d98
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md
+@@ -0,0 +1,3 @@
++# Artifact Plan
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md
+new file mode 100644
+index 0000000000..d69686e7ba
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md
+@@ -0,0 +1,3 @@
++# Assumptions And Imports
++
++Four linked parents, pure canonical AP Gaussian reference and uniform wrong-pair gap relative to the same E0. No uniform active gap.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md
+new file mode 100644
+index 0000000000..5656a6f6cb
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md
+@@ -0,0 +1,12 @@
++# Claim Status Certificate
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
++
++actual_current_surface_status: conditional-support
++trace_class: frontier_discovery
++reachability_to_target: unknown_frontier
++proposal_allowed: false
++bare_retained_allowed: false
++audit_required_before_effective_retained: true
++hypothetical_axiom_status: null
++admitted_observation_status: null
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_DELTA.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_DELTA.md
+new file mode 100644
+index 0000000000..bd24b54336
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_DELTA.md
+@@ -0,0 +1,5 @@
++# Canonical source delta
++
++PASS at SOURCE_FREEZE13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db, note1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc. Complete canonical note and both runner sources read, seven input hashes verified. The full89fc proof and prior7bdc cold review apply without mathematical change; the explicit canonical domain preserves pure Gaussian AP reference, same-E0 full-active gap, local rather than whole-torus embedding, and unprojected-symbol smoothness.
++
++The267 supporting predicates decompose as15 finite-hop boundary checks,144 exact Clifford commutator entries and108 dyadic tail identities. Gaussian integer arithmetic here is exact for these tiny values despite using complex literals. These controls support specific lemmas and are correctly not presented as a proof of the infinite theorem. Seven-file isolation receipt and three actual semantic/two CLI rejection receipts are retained. Short portable runner emits source/input hashes and preserves conditional-support; no new physical computation by reviewer. Root owns independent isolated replay, graph and final delivery. No source/math blocker found.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_READ_HASHES.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_READ_HASHES.json
+new file mode 100644
+index 0000000000..389380a207
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/CANONICAL_READ_HASHES.json
+@@ -0,0 +1,9 @@
++{
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/scripts/native_star_thermodynamic_controls_2026_09_09.py": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf",
++  "/private/tmp/toe-native-star-thermodynamic-limit-20260909/scripts/native_star_thermodynamic_limit_2026_09_09.py": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr
+new file mode 100644
+index 0000000000..6135c7595b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stderr
+@@ -0,0 +1,20 @@
++real 0.02
++user 0.02
++sys 0.00
++            19513344  maximum resident set size
++                   0  average shared memory size
++                   0  average unshared data size
++                   0  average unshared stack size
++                2303  page reclaims
++                   0  page faults
++                   0  swaps
++                   0  block input operations
++                   0  block output operations
++                   0  messages sent
++                   0  messages received
++                   0  signals received
++                   0  voluntary context switches
++                  10  involuntary context switches
++           358909061  instructions retired
++           111665554  cycles elapsed
++             9535920  peak memory footprint
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout
+new file mode 100644
+index 0000000000..fb93645caa
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ISOLATED.stdout
+@@ -0,0 +1,18 @@
++{
++  "status": "PASS",
++  "checks": 267,
++  "physical_runs": 0,
++  "scope": "finite-hop locality, exact CAR and weighted coefficient tails",
++  "input_sha256": {
++    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++    "scripts/native_star_thermodynamic_controls_2026_09_09.py": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf"
++  },
++  "source_sha256": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c",
++  "elapsed_seconds": 0.005515583965461701,
++  "peak_rss_bytes": 19447808,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json
+new file mode 100644
+index 0000000000..a77266826e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/READ_HASHES.json
+@@ -0,0 +1,3 @@
++{
++  "/private/tmp/toe-24h-probes-20260908/native-star-thermodynamic-limit-stretch/DERIVATION.md": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md
+new file mode 100644
+index 0000000000..c788be3aaf
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/REVIEW.md
+@@ -0,0 +1,13 @@
++# Thermodynamic star creator cold review
++
++**PASS under the declared uniform full-active impurity inequality**, source89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087. Complete proof read, no numerical execution. Reuses the independently reviewed quasi-local creator/filter and Gaussian extraction lemmas explicitly.
++
++The common-algebra construction correctly identifies fixed centered boxes only. Wrap bonds need not embed into the infinite interaction; their contribution to fixed-time local evolution vanishes by the hopping-path tail. Compact-time convergence plus integrable filter tails establishes the local-approximant limit without an invalid global finite-torus norm embedding. The same uniformly quasi-local tail controls subsequent limits.
++
++Bounded covariance projectors are Riemann integrable away from finitely many nodes. Removing fixed node neighborhoods before taking the grid limit controls their density uniformly, so local covariance and Wick expectations converge. The almost-everywhere projector property yields the pure quasifree state; purity is not inferred from convergence of arbitrary pure finite states or a uniform gap.
++
++The intrinsic coefficient c_j=omega({gamma_j,Y})/2 has the uniform rapid tail because odd ball approximants anticommute with remote Majoranas. Fixed-j convergence and a common summable weighted tail justify every fixed weighted-l1 limit. Centered torus graph distance and coordinate distance are uniformly comparable, so zero-extension does not spoil the bound. Fourier derivatives follow from weighted-l1 convergence. The smooth object is the unprojected cell/Majorana coefficient symbol: neither individual band eigenvectors nor the direction-dependent positive-frequency projector becomes smooth at nodes. This distinction is essential and correctly retained.
++
++The GNS step is valid on the full active representation provided the assumed finite inequality holds in both active parities relative to the SAME E0. Local polynomials create finitely many quasiparticles. Bounded one-particle excitation dispersion makes those vectors analytic for H; density of local projected one-particle functions supplies a dense core. B_A is bounded self-adjoint, preserving the core property. Since [H_L,X] is a fixed local polynomial for local X, state convergence passes the finite quadratic-form lower bound to that core and then to the self-adjoint form domain. Thus H+B_A>=delta survives although H itself is gapless. This proves existence and boundedness of the impurity inverses in this GNS representation, and the filter/cocycle identity gives the exact double inverse on Omega.
++
++No interchange of small-U and volume limits occurs. The result does not transfer finite-L6 positive higher-particle weight, determine node vanishing, or construct an interacting ground state. Constants remain conditional on fixed hopping/kappa and the same uniform full-active stiffness premise. No blocker found in the stated scope.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ROOT.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ROOT.md
+new file mode 100644
+index 0000000000..3477381c2d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/FINAL_ROOT_REVIEW/ROOT.md
+@@ -0,0 +1 @@
++Root PASS. Original thermodynamic proof and complete canonical note/two scripts read. Local centered-box identifications avoid wrap-bond embedding; bounded projector Riemann limits, Gaussian purity, filtered local dynamics and weighted tails are explicit. The local-polynomial finite-particle core supports passing the full-active same-E0 impurity inequality to the GNS generator and exact double inverse. Smoothness applies only to the unprojected coefficient symbol. Fresh seven-file -I-B-S-OO isolation reproduces all267 supporting controls and exact paired payload; these finite tests do not prove the infinite family. Allsource/deliverypins and exactHEAD graph delta1node4links verified. Originalcold7bdc andcanonicaldca3 pass. No empirical input, fullphase or L6-to-infinite nonlinearity inference. Combined landing checks/formal audit deferred.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md
+new file mode 100644
+index 0000000000..36fbd36285
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md
+@@ -0,0 +1,3 @@
++# Goal
++
++Thermodynamic local-CAR limit of the supplied quasi-local star vacuum creator.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md
+new file mode 100644
+index 0000000000..c088570d5c
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md
+@@ -0,0 +1,3 @@
++# Handoff
++
++Root owns review/integration/commit/PR. Exact controls and7-file isolation support the mathematical proof. No physical run.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md
+new file mode 100644
+index 0000000000..293c62bd33
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md
+@@ -0,0 +1,3 @@
++# Literature Bridges
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md
+new file mode 100644
+index 0000000000..93bfcaa008
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md
+@@ -0,0 +1,3 @@
++# No Go Ledger
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md
+new file mode 100644
+index 0000000000..e44da432d0
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md
+@@ -0,0 +1,3 @@
++# Opportunity Queue
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json
+new file mode 100644
+index 0000000000..c4a2991733
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json
+@@ -0,0 +1,28 @@
++{
++  "checks": 267,
++  "isolated_files": 7,
++  "payload_equal": true,
++  "actual_negative_controls": [
++    {
++      "name": "bad_commutator",
++      "returncode": 1
++    },
++    {
++      "name": "drop_volume_weight",
++      "returncode": 1
++    },
++    {
++      "name": "wrong_local_hop",
++      "returncode": 1
++    },
++    {
++      "CLI": "--bad",
++      "returncode": 2
++    },
++    {
++      "CLI": "bad",
++      "returncode": 2
++    }
++  ],
++  "physical_runs": 0
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/DELIVERY_FREEZE.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/DELIVERY_FREEZE.json
+new file mode 100644
+index 0000000000..cb47b844b2
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/DELIVERY_FREEZE.json
+@@ -0,0 +1,35 @@
++{
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ARTIFACT_PLAN.md": "db9a8f5229b32a25f962fad0077b1a0aa3e66519a81f1376026cee306375714b",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ASSUMPTIONS_AND_IMPORTS.md": "3efa81fbe7d54d0abcdf1e9bc04dcbdd195fdcd20ce91f2a6ce85998343af7de",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/CLAIM_STATUS_CERTIFICATE.md": "a285d6a4ef1b6874675bac26f733b6c2321785c4d9c2ff03f8d60687eead6afe",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/GOAL.md": "780994a9ed968df6272250ace105dc4991fc9639cd5f8d9e216e6920a6b76b39",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/HANDOFF.md": "1e16a756bdb4ca9100cccd943d5583dc12302d059a860edbd114e2131e577ef2",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/LITERATURE_BRIDGES.md": "6e4f87fba90d012bea52731e8743eec13cd4b898fa135f2a64c7838cd34fa22b",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/NO_GO_LEDGER.md": "8bfdaee0bfd52fb6776de4e0a689fbc322f292f0d962802a1d31014f030ead6a",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/OPPORTUNITY_QUEUE.md": "a36fa406127a2dddca5e5f8e302d6d255ddbae01c91650194fd84032f52ad87d",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/CONTROL_RECEIPT.json": "2c89322799a4b4440ce9934f07290ba756717f315ef149f343f175fc83d2ff69",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json": "892f512d582bdba0ca42f4e4519d6ba84d162b7bc1d282faf031f6db8f7b86fb",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout": "8619312d0db09c8d7a808208f0ca32fcea2ba5525f9df38a91b4e6d5c4bc510b",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip": "cb325650089033620368acbaa4b9d13bffb95a162b404767528cdcf3b017773f",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json": "13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr": "768dfbac29f1205b8d74cb5a5f71f890c1716f24eb84a8bc130a3f450b83c22e",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt": "1d3460ee9344dddd80484800941b4a99cedbb3dc06e0977ed50b46401b2bd3ba",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr": "9d406967ce68eb3d41630c69eaa484c121bd4b451cc08758550d96bb0b0a1030",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt": "10fe9438a94e134773ef9f3d3653341e7db953db15f0ec2d99bdd17b5221e1b6",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr": "49ddeec1f46d94300b838c1d8d4ce2f722d94361455779dfb0f6dd1d962605f5",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt": "5acb0d844775977815a48cda4e0aac0ae8d950a484e4288a34f08d049f2b0cbc",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md": "1630d8ad99fdb5d1b45c2a3bf27ca6cc3a1256b947bd1411ab0d6a9ce71c44ea",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md": "88b05004c72992b8aecc4c3a065f79bd2766d508f19878c48ab46d418dcb33b9",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md": "0712ee0cfdb7ccc7df0ad75572e380e76933294b676245f36a548c6667817ff4",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml": "1d3b5fed11b15c4a9e8648800e5f4b49309562384d0590cb277e78c63f260b1e",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md": "e9d171a966636dbe82e73577fa415a259a793c22092754a554075025f4ed3329",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json": "8954ecc1ea2cc9c160f3c470ea9de41bdc60969d53f35d3dc9eb271c08114656",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md": "7bdc223557d145b856d02389a7da8f43a560f1ad0e3e3eee1b14e5bd8e36bbce",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087",
++  ".claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json": "b09b0d24c99f6828d55ab8fcf189b42b23d2f6bc05b1150c3b1c75b36e12f051",
++  "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++  "docs/audit/data/citation_graph_manifest.json": "228582101f9aa4291a39a288dc5ad7df67751886c37a6a0dc7dea1ae5fdb9e9a",
++  "outputs/native_star_thermodynamic_limit_2026_09_09.json": "8fc2f4a17d658480376da8f42d9f309e3135ba780075a43ff2c582366c7124af",
++  "scripts/native_star_thermodynamic_controls_2026_09_09.py": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf",
++  "scripts/native_star_thermodynamic_limit_2026_09_09.py": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json
+new file mode 100644
+index 0000000000..e42b884a0e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/GRAPH_DELTA.json
+@@ -0,0 +1,24 @@
++{
++  "added": [
++    "native_star_thermodynamic_limit_note_2026-09-09"
++  ],
++  "prior_changed": [],
++  "edge_delta": 4,
++  "node": {
++    "claim_id": "native_star_thermodynamic_limit_note_2026-09-09",
++    "claim_type_author_hint": null,
++    "claim_type_author_hint_raw": null,
++    "claim_type_seed_hint": "positive_theorem",
++    "deps": [
++      "native_uniform_quasilocal_star_vertex_note_2026-09-09",
++      "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08",
++      "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08",
++      "native_uniform_cubic_flux_defect_stiffness_note_2026-09-08"
++    ],
++    "helper_runner_paths": [],
++    "note_hash": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
++    "runner_path": "scripts/native_star_thermodynamic_limit_2026_09_09.py",
++    "title": "Thermodynamic limit of the quasi-local native star creator"
++  }
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout
+new file mode 100644
+index 0000000000..cb4aaee487
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED.stdout
+@@ -0,0 +1,18 @@
++{
++  "status": "PASS",
++  "checks": 267,
++  "physical_runs": 0,
++  "scope": "finite-hop locality, exact CAR and weighted coefficient tails",
++  "input_sha256": {
++    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++    "scripts/native_star_thermodynamic_controls_2026_09_09.py": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf"
++  },
++  "source_sha256": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c",
++  "elapsed_seconds": 0.004937707970384508,
++  "peak_rss_bytes": 20119552,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/ISOLATED_INPUTS.zip
+new file mode 100644
+index 0000000000000000000000000000000000000000..65802c74879f30151e5012b3a5a7dcf47183c410
+GIT binary patch
+literal 43912
+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
+L0uomKkG=l`6hjU=
+
+literal 0
+HcmV?d00001
+
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..f79b89388b
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/SOURCE_FREEZE.json
+@@ -0,0 +1,9 @@
++{
++  "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++  "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++  "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++  "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++  "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++  "scripts/native_star_thermodynamic_controls_2026_09_09.py": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf",
++  "scripts/native_star_thermodynamic_limit_2026_09_09.py": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr
+new file mode 100644
+index 0000000000..cadf699146
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.stderr
+@@ -0,0 +1,11 @@
++Traceback (most recent call last):
++  File "<string>", line 1, in <module>
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt", line 51, in <module>
++    signal.alarm(180);print(json.dumps(check(),indent=2))
++                                       ^^^^^^^
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt", line 42, in check
++    req(actual==expected,'CAR quadratic commutator')
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt", line 8, in req
++    if not ok:raise ValueError(msg)
++              ^^^^^^^^^^^^^^^^^^^^^
++ValueError: CAR quadratic commutator
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt
+new file mode 100644
+index 0000000000..e748b51804
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/bad_commutator.txt
+@@ -0,0 +1,51 @@
++"""Exact finite support and summability controls, not a proof by enumeration."""
++from fractions import Fraction as F
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ def step(state,L=None):
++  out={}
++  for r,value in state.items():
++   for axis in range(3):
++    eta=(-1)**sum(r[:axis])
++    for sign in (-1,1):
++     s=list(r);s[axis]+=sign;phase=sign*eta
++     if L:
++      if s[axis]>=L//2:s[axis]-=L;phase=-phase
++      if s[axis]<-L//2:s[axis]+=L;phase=-phase
++     s=tuple(s);out[s]=out.get(s,0)+phase*value
++  return {r:v for r,v in out.items() if v}
++ for L in (8,12,16):
++  a={(0,0,0):1};b=a.copy()
++  for order in range(1,L//2):
++   a=step(a);b=step(b,L);req(a==b,'finite-hop boundary independence')
++ # Exact CAR monomial action verifies local quadratic commutator.
++ def gamma(j,x):return x^(1<<(j//2)),(-1)**((x&((1<<(j//2))-1)).bit_count())*(1 if j%2==0 else 1j*(1-2*((x>>(j//2))&1)))
++ def word(indices,x):
++  c=1
++  for j in reversed(indices):x,a=gamma(j,x);c*=a
++  return x,c
++ for a,b in ((0,1),(0,3),(2,5)):
++  for j in range(6):
++   for x in range(8):
++    u,c=word((a,b,j),x);v,d=word((j,a,b),x);actual={}
++    actual[u]=actual.get(u,0)+c;actual[v]=actual.get(v,0)-d;actual={k:z for k,z in actual.items() if z}
++    expected={}
++    if j==b:
++     k,z=gamma(a,x);expected[k]=2*z
++    elif j==a:
++     k,z=gamma(b,x);expected[k]=2*z
++    req(actual==expected,'CAR quadratic commutator')
++ for q in range(9):
++  p=q+4;r=F(2)**(q+3-p)
++  for start in range(12):
++   finite=sum(r**n for n in range(start,start+20));tail=r**start/(1-r)
++   req(finite<tail and tail-finite==r**(start+20)/(1-r),'weighted dyadic tail')
++ return {'status':'PASS','checks':count,'physical_runs':0,'scope':'finite-hop locality, exact CAR and weighted coefficient tails'}
++if __name__=='__main__':
++ import signal,json
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr
+new file mode 100644
+index 0000000000..823bac8a9e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.stderr
+@@ -0,0 +1,14 @@
++Traceback (most recent call last):
++  File "<string>", line 1, in <module>
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt", line 51, in <module>
++    signal.alarm(180);print(json.dumps(check(),indent=2))
++                                       ^^^^^^^
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt", line 46, in check
++    finite=sum(r**n for n in range(start,start+20));tail=r**start/(1-r)
++                                                         ~~~~~~~~^^~~~~
++  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/fractions.py", line 615, in forward
++    return monomorphic_operator(a, b)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/fractions.py", line 763, in _div
++    raise ZeroDivisionError('Fraction(%s, 0)' % db)
++ZeroDivisionError: Fraction(1, 0)
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt
+new file mode 100644
+index 0000000000..48ca01c895
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt
+@@ -0,0 +1,51 @@
++"""Exact finite support and summability controls, not a proof by enumeration."""
++from fractions import Fraction as F
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ def step(state,L=None):
++  out={}
++  for r,value in state.items():
++   for axis in range(3):
++    eta=(-1)**sum(r[:axis])
++    for sign in (-1,1):
++     s=list(r);s[axis]+=sign;phase=sign*eta
++     if L:
++      if s[axis]>=L//2:s[axis]-=L;phase=-phase
++      if s[axis]<-L//2:s[axis]+=L;phase=-phase
++     s=tuple(s);out[s]=out.get(s,0)+phase*value
++  return {r:v for r,v in out.items() if v}
++ for L in (8,12,16):
++  a={(0,0,0):1};b=a.copy()
++  for order in range(1,L//2):
++   a=step(a);b=step(b,L);req(a==b,'finite-hop boundary independence')
++ # Exact CAR monomial action verifies local quadratic commutator.
++ def gamma(j,x):return x^(1<<(j//2)),(-1)**((x&((1<<(j//2))-1)).bit_count())*(1 if j%2==0 else 1j*(1-2*((x>>(j//2))&1)))
++ def word(indices,x):
++  c=1
++  for j in reversed(indices):x,a=gamma(j,x);c*=a
++  return x,c
++ for a,b in ((0,1),(0,3),(2,5)):
++  for j in range(6):
++   for x in range(8):
++    u,c=word((a,b,j),x);v,d=word((j,a,b),x);actual={}
++    actual[u]=actual.get(u,0)+c;actual[v]=actual.get(v,0)-d;actual={k:z for k,z in actual.items() if z}
++    expected={}
++    if j==b:
++     k,z=gamma(a,x);expected[k]=2*z
++    elif j==a:
++     k,z=gamma(b,x);expected[k]=-2*z
++    req(actual==expected,'CAR quadratic commutator')
++ for q in range(9):
++  p=q+4;r=F(2)**(q+4-p)
++  for start in range(12):
++   finite=sum(r**n for n in range(start,start+20));tail=r**start/(1-r)
++   req(finite<tail and tail-finite==r**(start+20)/(1-r),'weighted dyadic tail')
++ return {'status':'PASS','checks':count,'physical_runs':0,'scope':'finite-hop locality, exact CAR and weighted coefficient tails'}
++if __name__=='__main__':
++ import signal,json
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr
+new file mode 100644
+index 0000000000..1fc79269c7
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.stderr
+@@ -0,0 +1,12 @@
++Traceback (most recent call last):
++  File "<string>", line 1, in <module>
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt", line 51, in <module>
++    signal.alarm(180);print(json.dumps(check(),indent=2))
++                                       ^^^^^^^
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt", line 25, in check
++    a=step(a);b=step(b,L);req(a==b,'finite-hop boundary independence')
++                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt", line 8, in req
++    if not ok:raise ValueError(msg)
++              ^^^^^^^^^^^^^^^^^^^^^
++ValueError: finite-hop boundary independence
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt
+new file mode 100644
+index 0000000000..5564ad5bd0
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/wrong_local_hop.txt
+@@ -0,0 +1,51 @@
++"""Exact finite support and summability controls, not a proof by enumeration."""
++from fractions import Fraction as F
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ def step(state,L=None):
++  out={}
++  for r,value in state.items():
++   for axis in range(3):
++    eta=(-1)**sum(r[:axis])
++    for sign in (-1,1):
++     s=list(r);s[axis]+=sign;phase=sign*eta if L is None else -sign*eta
++     if L:
++      if s[axis]>=L//2:s[axis]-=L;phase=-phase
++      if s[axis]<-L//2:s[axis]+=L;phase=-phase
++     s=tuple(s);out[s]=out.get(s,0)+phase*value
++  return {r:v for r,v in out.items() if v}
++ for L in (8,12,16):
++  a={(0,0,0):1};b=a.copy()
++  for order in range(1,L//2):
++   a=step(a);b=step(b,L);req(a==b,'finite-hop boundary independence')
++ # Exact CAR monomial action verifies local quadratic commutator.
++ def gamma(j,x):return x^(1<<(j//2)),(-1)**((x&((1<<(j//2))-1)).bit_count())*(1 if j%2==0 else 1j*(1-2*((x>>(j//2))&1)))
++ def word(indices,x):
++  c=1
++  for j in reversed(indices):x,a=gamma(j,x);c*=a
++  return x,c
++ for a,b in ((0,1),(0,3),(2,5)):
++  for j in range(6):
++   for x in range(8):
++    u,c=word((a,b,j),x);v,d=word((j,a,b),x);actual={}
++    actual[u]=actual.get(u,0)+c;actual[v]=actual.get(v,0)-d;actual={k:z for k,z in actual.items() if z}
++    expected={}
++    if j==b:
++     k,z=gamma(a,x);expected[k]=2*z
++    elif j==a:
++     k,z=gamma(b,x);expected[k]=-2*z
++    req(actual==expected,'CAR quadratic commutator')
++ for q in range(9):
++  p=q+4;r=F(2)**(q+3-p)
++  for start in range(12):
++   finite=sum(r**n for n in range(start,start+20));tail=r**start/(1-r)
++   req(finite<tail and tail-finite==r**(start+20)/(1-r),'weighted dyadic tail')
++ return {'status':'PASS','checks':count,'physical_runs':0,'scope':'finite-hop locality, exact CAR and weighted coefficient tails'}
++if __name__=='__main__':
++ import signal,json
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md
+new file mode 100644
+index 0000000000..88af97df47
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PR_BACKLOG.md
+@@ -0,0 +1,3 @@
++# Pr Backlog
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md
+new file mode 100644
+index 0000000000..09d0cca792
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/REVIEW_HISTORY.md
+@@ -0,0 +1,3 @@
++# Review History
++
++Original89fc proof independently reviewed7bdc and root. New canonical source review pending.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md
+new file mode 100644
+index 0000000000..27789a0f69
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/ROUTE_PORTFOLIO.md
+@@ -0,0 +1,3 @@
++# Route Portfolio
++
++Scope: local-box CAR limit, weighted l1 coefficient convergence, unprojected smooth symbol, GNS wrong-pair quadratic form and double inverse. No band smoothness, L6 extrapolation, node value or phase. Next research: node behavior and interacting connected terms. No audit verdict. Original evidence remains immutable.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml
+new file mode 100644
+index 0000000000..94e2eb4a74
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/STATE.yaml
+@@ -0,0 +1,6 @@
++{
++  "phase": "canonical_review",
++  "base": "df8112d1642bec7aaaacd380036087b03cdb0173",
++  "status": "conditional-support",
++  "next": "root/cold review"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md
+new file mode 100644
+index 0000000000..ca6fcea0ca
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/TRACE_GATE.md
+@@ -0,0 +1,3 @@
++# Trace Gate
++
++trace_class: frontier_discovery; conditional-support. Supplies thermodynamic creator and coefficient limit, not interacting stability.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json
+new file mode 100644
+index 0000000000..a77266826e
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/READ_HASHES.json
+@@ -0,0 +1,3 @@
++{
++  "/private/tmp/toe-24h-probes-20260908/native-star-thermodynamic-limit-stretch/DERIVATION.md": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087"
++}
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md
+new file mode 100644
+index 0000000000..c788be3aaf
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-cold-review/REVIEW.md
+@@ -0,0 +1,13 @@
++# Thermodynamic star creator cold review
++
++**PASS under the declared uniform full-active impurity inequality**, source89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087. Complete proof read, no numerical execution. Reuses the independently reviewed quasi-local creator/filter and Gaussian extraction lemmas explicitly.
++
++The common-algebra construction correctly identifies fixed centered boxes only. Wrap bonds need not embed into the infinite interaction; their contribution to fixed-time local evolution vanishes by the hopping-path tail. Compact-time convergence plus integrable filter tails establishes the local-approximant limit without an invalid global finite-torus norm embedding. The same uniformly quasi-local tail controls subsequent limits.
++
++Bounded covariance projectors are Riemann integrable away from finitely many nodes. Removing fixed node neighborhoods before taking the grid limit controls their density uniformly, so local covariance and Wick expectations converge. The almost-everywhere projector property yields the pure quasifree state; purity is not inferred from convergence of arbitrary pure finite states or a uniform gap.
++
++The intrinsic coefficient c_j=omega({gamma_j,Y})/2 has the uniform rapid tail because odd ball approximants anticommute with remote Majoranas. Fixed-j convergence and a common summable weighted tail justify every fixed weighted-l1 limit. Centered torus graph distance and coordinate distance are uniformly comparable, so zero-extension does not spoil the bound. Fourier derivatives follow from weighted-l1 convergence. The smooth object is the unprojected cell/Majorana coefficient symbol: neither individual band eigenvectors nor the direction-dependent positive-frequency projector becomes smooth at nodes. This distinction is essential and correctly retained.
++
++The GNS step is valid on the full active representation provided the assumed finite inequality holds in both active parities relative to the SAME E0. Local polynomials create finitely many quasiparticles. Bounded one-particle excitation dispersion makes those vectors analytic for H; density of local projected one-particle functions supplies a dense core. B_A is bounded self-adjoint, preserving the core property. Since [H_L,X] is a fixed local polynomial for local X, state convergence passes the finite quadratic-form lower bound to that core and then to the self-adjoint form domain. Thus H+B_A>=delta survives although H itself is gapless. This proves existence and boundedness of the impurity inverses in this GNS representation, and the filter/cocycle identity gives the exact double inverse on Omega.
++
++No interchange of small-U and volume limits occurs. The result does not transfer finite-L6 positive higher-particle weight, determine node vanishing, or construct an interacting ground state. Constants remain conditional on fixed hopping/kappa and the same uniform full-active stiffness premise. No blocker found in the stated scope.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md
+new file mode 100644
+index 0000000000..e3ef5e8d44
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/DERIVATION.md
+@@ -0,0 +1,55 @@
++# Thermodynamic limit of the quasi-local star vacuum creator
++
++Domain: the supplied cubic model, canonical pi background, pure active Gaussian vacuum and antiperiodic tori L=4M, M>=32, with uniform full-active wrong-pair inequality H_{L,A}-E_{0,L}>=delta=6kappa>0. The quasi-local construction is the reviewed canonical note NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md, source b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7. No new computation or phase assumption is used.
++
++## 1. Common local algebra and Gaussian state
++
++Fix the star at the origin and embed increasing centered coordinate boxes in the infinite cubic CAR algebra. Choose the canonical pi gauge on each fixed box identically; finite-torus seam signs occur outside that box for sufficiently large L. This is a local identification, not an embedding of the entire periodic bond algebra preserving its wrap bonds. A fixed magnetic cell accounts for the staggering.
++
++The finite pure active Gaussian covariance is a discrete Fourier sum of the bounded spectral projector of the canonical one-particle symbol. Away from its finitely many conical zeros that projector is continuous. The nodal set has measure zero, and each matrix entry is bounded. The antiperiodic Riemann sums therefore converge to the Brillouin-zone integral for every fixed pair of sites. One direct proof removes small fixed neighborhoods of the nodes, uses ordinary uniform Riemann convergence on the complement, and bounds the removed sums by their bounded integrand times their asymptotic grid density. Sending the neighborhood volume to zero finishes the limit. No point value at a node is required.
++
++Wick's rule gives convergence of every fixed local polynomial expectation, hence of the local states to the infinite pure quasifree vacuum state omega. Purity follows from the limiting covariance being a projection almost everywhere, not from a finite-volume many-body gap. Write its GNS vacuum as Omega.
++
++## 2. Local dynamics and the exact creator
++
++Finite-range uniformly bounded quadratic interactions define infinite CAR dynamics tau_t. The one-particle hopping-path expansion, or its graded local commutator version, shows that finite-volume evolutions of each fixed local observable converge in norm uniformly on compact time intervals. Wrap-dependent paths must travel to the distant seam, and their exponential-series tail vanishes. The same Duhamel estimate applies to the local perturbation cocycles U_{L,A}(t) and gives their norm limit U_A(t). Local generators and time directions are those in the parent: U_A(t)=exp[-it(H+B_A)]exp(itH) in the GNS implementation.
++
++Use exactly the same smooth inverse filter f and Fourier kernel w at every L, with all weighted L1 moments finite and f(x)=-1/x on x>=delta. Define the infinite quasi-local element
++
++ Y_v=(1/8) sum_{A,C disjoint} integral ds dt w(s)w(t)
++                 U_C(t) tau_t(gamma_v U_A(s)).
++
++The Bochner integrals converge in norm, since the factors are unitary apart from the norm-one Majorana and w is integrable. For a fixed time box, compact-time local convergence proves convergence of its integral. The complement is uniformly bounded by the L1 tails of w. Combined with the parent's uniform spatial tails, this proves convergence of the finite creators in the following precise local-algebra sense: embed their ball-truncated versions on each fixed ball, take L to infinity there, and then let the ball grow; the omitted operator norms vanish uniformly in L. It does not claim an isometric global embedding of every finite periodic algebra.
++
++The same construction yields odd ball approximants with error C_p(1+r)^(-p) for every p, independent of L and valid for the infinite limit. Norms remain bounded by (90/8)M_0^2. This is an operator-norm statement about the vacuum creator, not about the original global resolvent operator on arbitrary excited states.
++
++## 3. Weighted coefficient convergence and the Fourier distinction
++
++Set c_{L,vj}=omega_L({gamma_j,Y_{L,v}})/2 and c_{vj}=omega({gamma_j,Y_v})/2. For each fixed j these converge: first replace Y by a fixed-ball approximant using uniform norm control, then use finite-local state and operator convergence. Gaussian extraction gives P1 Y_v Omega=sum_j c_{vj} gamma_j Omega, by norm convergence from finite local polynomials.
++
++If j is outside a ball of radius r, graded locality makes its anticommutator with the odd ball approximant vanish. Therefore |c_{L,vj}| and |c_{vj}| are bounded by C_p(1+distance(v,j))^(-p), for every p, uniformly. Represent finite sites in the centered fundamental box and extend coefficients by zero outside. For any fixed integer q>=0, choosing p>q+3 and using local pointwise convergence plus the summable common tail yields
++
++ sum_j (1+|j-v|)^q |c_{L,vj}-c_{vj}| -> 0.
++
++The finite-cell coefficient Fourier polynomials thus converge uniformly with every fixed number of derivatives to a smooth periodic coefficient symbol c_v(k). This does NOT prove smoothness of individual band amplitudes or of P_+(k)c_v(k) at a Dirac node. The spectral projector is direction-dependent there and an eigenvector gauge may be singular. The smooth object proved here is the Majorana coefficient symbol, before band projection. No nonzero node value or nodal zero is established.
++
++## 4. Optional GNS resolvent identification is justified here
++
++In the Gaussian Fock representation the positive active generator H is the second quantization of the bounded positive excitation dispersion, with H Omega=0. Local CAR polynomials applied to Omega form a dense core: each such vector has finite quasiparticle number and hence is an entire analytic vector for H, and local one-particle wavefunctions span a dense one-particle subspace. Local even quadratic B_A is bounded and self-adjoint, so the same set is a core for H+B_A.
++
++For a fixed local polynomial X, the finite quadratic form identity is
++
++ <X Omega_L,(H_{L,A}-E_{0,L})X Omega_L>
++ = omega_L(X^*[H_L,X])+omega_L(X^* B_A X).
++
++The commutator is a fixed finite-local polynomial, because only interactions meeting X contribute. The finite wrong-pair inequality bounds this expression below by delta omega_L(X^*X). Local state convergence passes it to the infinite limit. The core and bounded-perturbation facts then imply H+B_A>=delta I as a self-adjoint quadratic-form inequality on the full GNS active Fock space. This is a wrong-flux impurity gap relative to the original vacuum energy zero; H itself remains gapless.
++
++Consequently R_A=-(H+B_A)^(-1)=f(H+B_A) exists with norm at most1/delta. Functional calculus and the cocycle identity reproduce both filtered inverses exactly, and
++
++ Y_v Omega=(1/8)sum_{A,C disjoint} R_C gamma_v R_A Omega.
++
++Thus the infinite vacuum transition has an exact double-resolvent meaning, not merely a formal local limit. This construction stays in the canonical Gaussian GNS representation. It does not assert a global tensor identification of inequivalent flux representations, or an all-active gap between unbounded excited spectra.
++
++## Boundary
++
++The result supplies a thermodynamic quasi-local creator and smooth coefficient-symbol limit under the same supplied uniform stiffness. It does not transfer finite-L6 nonlinearity to infinite volume, determine a Dirac-node value, identify the full sixth-order effective Hamiltonian, or prove an interacting phase/local joint-defect theorem. No numerical calculation was performed. Uniform inverse-kernel row l2 bounds remain available from the parent; convergence of more singular interacting quantities requires its own argument.
+diff --git a/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json
+new file mode 100644
+index 0000000000..0d88dcba0d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/evidence/native-star-thermodynamic-limit-stretch/FREEZE.json
+@@ -0,0 +1,4 @@
++{
++  "DERIVATION.md": "89fc2322090be9808f6ccc57bf6ceafcf6b7027387aa154332824fabe612f087",
++  "physical_runs": 0
++}
+diff --git a/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md b/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md
+new file mode 100644
+index 0000000000..0db50d0609
+--- /dev/null
++++ b/docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md
+@@ -0,0 +1,76 @@
++---
++claim_id: native_star_thermodynamic_limit_note_2026-09-09
++claim_type: bounded_theorem
++claim_scope: "Supplied canonical Gaussian reference and uniform stiffness: thermodynamic local-CAR limit of the quasi-local star creator, weighted coefficient convergence and infinite double-resolvent identity."
++upstream_dependencies:
++  - native_uniform_quasilocal_star_vertex_note_2026-09-09
++  - native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08
++  - native_zero_penalty_optimal_flux_dispersion_note_2026-09-08
++  - native_uniform_cubic_flux_defect_stiffness_note_2026-09-08
++runner: scripts/native_star_thermodynamic_limit_2026_09_09.py
++---
++
++# Thermodynamic limit of the quasi-local native star creator
++
++**Status:** conditional-support; trace class frontier_discovery. No audit verdict or axiom closure.
++
++Use the [uniform quasi-local star theorem](NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md), [full native dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), [canonical dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md) and [uniform stiffness](NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md). The supplied domain is cubic antiperiodic tori \(L=4M\), \(M\ge32\), a pure canonical active Gaussian reference, nonzero hopping, and the same reference energy in the full-active wrong-pair inequality \(H_{L,A}-E_{0,L}\ge\delta I\), \(\delta=6\kappa>0\). Spectator and Gauss conventions remain those of the full dictionary. No uniform active-fermion gap is inserted.
++
++The exact filtered star creators converge in the local-CAR sense specified below. Their Majorana coefficient symbols converge with every fixed number of derivatives, before projection to bands. The infinite Gaussian GNS representation admits the exact wrong-pair double-resolvent vacuum transition. Constants remain those of the parent existence proof; no numerical values are invented.
++
++## 1. Common local algebra and Gaussian state
++
++Fix the star at the origin and embed increasing centered coordinate boxes in the infinite cubic CAR algebra. Choose the canonical pi gauge on each fixed box identically; finite-torus seam signs occur outside that box for sufficiently large L. This is a local identification, not an embedding of the entire periodic bond algebra preserving its wrap bonds. A fixed magnetic cell accounts for the staggering.
++
++The finite pure active Gaussian covariance is a discrete Fourier sum of the bounded spectral projector of the canonical one-particle symbol. Away from its finitely many conical zeros that projector is continuous. The nodal set has measure zero, and each matrix entry is bounded. The antiperiodic Riemann sums therefore converge to the Brillouin-zone integral for every fixed pair of sites. One direct proof removes small fixed neighborhoods of the nodes, uses ordinary uniform Riemann convergence on the complement, and bounds the removed sums by their bounded integrand times their asymptotic grid density. Sending the neighborhood volume to zero finishes the limit. No point value at a node is required.
++
++Wick's rule gives convergence of every fixed local polynomial expectation, hence of the local states to the infinite pure quasifree vacuum state omega. Purity follows from the limiting covariance being a projection almost everywhere, not from a finite-volume many-body gap. Write its GNS vacuum as Omega.
++
++## 2. Local dynamics and the exact creator
++
++Finite-range uniformly bounded quadratic interactions define infinite CAR dynamics tau_t. The one-particle hopping-path expansion, or its graded local commutator version, shows that finite-volume evolutions of each fixed local observable converge in norm uniformly on compact time intervals. Wrap-dependent paths must travel to the distant seam, and their exponential-series tail vanishes. The same Duhamel estimate applies to the local perturbation cocycles U_{L,A}(t) and gives their norm limit U_A(t). Local generators and time directions are those in the parent: U_A(t)=exp[-it(H+B_A)]exp(itH) in the GNS implementation.
++
++Use exactly the same smooth inverse filter f and Fourier kernel w at every L, with all weighted L1 moments finite and f(x)=-1/x on x>=delta. Define the infinite quasi-local element
++
++ Y_v=(1/8) sum_{A,C disjoint} integral ds dt w(s)w(t)
++                 U_C(t) tau_t(gamma_v U_A(s)).
++
++The Bochner integrals converge in norm, since the factors are unitary apart from the norm-one Majorana and w is integrable. For a fixed time box, compact-time local convergence proves convergence of its integral. The complement is uniformly bounded by the L1 tails of w. Combined with the parent's uniform spatial tails, this proves convergence of the finite creators in the following precise local-algebra sense: embed their ball-truncated versions on each fixed ball, take L to infinity there, and then let the ball grow; the omitted operator norms vanish uniformly in L. It does not claim an isometric global embedding of every finite periodic algebra.
++
++The same construction yields odd ball approximants with error C_p(1+r)^(-p) for every p, independent of L and valid for the infinite limit. Norms remain bounded by (90/8)M_0^2. This is an operator-norm statement about the vacuum creator, not about the original global resolvent operator on arbitrary excited states.
++
++## 3. Weighted coefficient convergence and the Fourier distinction
++
++Set c_{L,vj}=omega_L({gamma_j,Y_{L,v}})/2 and c_{vj}=omega({gamma_j,Y_v})/2. For each fixed j these converge: first replace Y by a fixed-ball approximant using uniform norm control, then use finite-local state and operator convergence. Gaussian extraction gives P1 Y_v Omega=sum_j c_{vj} gamma_j Omega, by norm convergence from finite local polynomials.
++
++If j is outside a ball of radius r, graded locality makes its anticommutator with the odd ball approximant vanish. Therefore |c_{L,vj}| and |c_{vj}| are bounded by C_p(1+distance(v,j))^(-p), for every p, uniformly. Represent finite sites in the centered fundamental box and extend coefficients by zero outside. For any fixed integer q>=0, choosing p>q+3 and using local pointwise convergence plus the summable common tail yields
++
++ sum_j (1+|j-v|)^q |c_{L,vj}-c_{vj}| -> 0.
++
++The finite-cell coefficient Fourier polynomials thus converge uniformly with every fixed number of derivatives to a smooth periodic coefficient symbol c_v(k). This does NOT prove smoothness of individual band amplitudes or of P_+(k)c_v(k) at a Dirac node. The spectral projector is direction-dependent there and an eigenvector gauge may be singular. The smooth object proved here is the Majorana coefficient symbol, before band projection. No nonzero node value or nodal zero is established.
++
++## 4. Optional GNS resolvent identification is justified here
++
++In the Gaussian Fock representation the positive active generator H is the second quantization of the bounded positive excitation dispersion, with H Omega=0. Local CAR polynomials applied to Omega form a dense core: each such vector has finite quasiparticle number and hence is an entire analytic vector for H, and local one-particle wavefunctions span a dense one-particle subspace. Local even quadratic B_A is bounded and self-adjoint, so the same set is a core for H+B_A.
++
++For a fixed local polynomial X, the finite quadratic form identity is
++
++ <X Omega_L,(H_{L,A}-E_{0,L})X Omega_L>
++ = omega_L(X^*[H_L,X])+omega_L(X^* B_A X).
++
++The commutator is a fixed finite-local polynomial, because only interactions meeting X contribute. The finite wrong-pair inequality bounds this expression below by delta omega_L(X^*X). Local state convergence passes it to the infinite limit. The core and bounded-perturbation facts then imply H+B_A>=delta I as a self-adjoint quadratic-form inequality on the full GNS active Fock space. This is a wrong-flux impurity gap relative to the original vacuum energy zero; H itself remains gapless.
++
++Consequently R_A=-(H+B_A)^(-1)=f(H+B_A) exists with norm at most1/delta. Functional calculus and the cocycle identity reproduce both filtered inverses exactly, and
++
++ Y_v Omega=(1/8)sum_{A,C disjoint} R_C gamma_v R_A Omega.
++
++Thus the infinite vacuum transition has an exact double-resolvent meaning, not merely a formal local limit. This construction stays in the canonical Gaussian GNS representation. It does not assert a global tensor identification of inequivalent flux representations, or an all-active gap between unbounded excited spectra.
++
++## Boundary
++
++The result supplies a thermodynamic quasi-local creator and smooth coefficient-symbol limit under the same supplied uniform stiffness. It does not transfer finite-L6 nonlinearity to infinite volume, determine a Dirac-node value, identify the full sixth-order effective Hamiltonian, or prove an interacting phase/local joint-defect theorem. No numerical calculation was performed. Uniform inverse-kernel row l2 bounds remain available from the parent; convergence of more singular interacting quantities requires its own argument.
++
++
++## Evidence
++
++The portable runner checks actual finite hopping-path boundary independence, CAR local commutators and exact dyadic tail bookkeeping. It does not establish the general theorem by finite examples. Original proof and independent cold review are preserved in the packet. No physical calculation or imported empirical value is used.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 846e910994..872695cefa 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12166,
+- "node_count": 4882,
++ "edge_count": 12170,
++ "node_count": 4883,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -12410,6 +12410,10 @@
+    "deps_hash": "2a9d6130ac3c",
+    "out_degree": 2
+   },
++  "native_star_thermodynamic_limit_note_2026-09-09": {
++   "deps_hash": "bf812d1406e2",
++   "out_degree": 4
++  },
+   "native_uniform_cubic_flux_defect_stiffness_note_2026-09-08": {
+    "deps_hash": "084227f18172",
+    "out_degree": 5
+diff --git a/outputs/native_star_thermodynamic_limit_2026_09_09.json b/outputs/native_star_thermodynamic_limit_2026_09_09.json
+new file mode 100644
+index 0000000000..4d86c39f1d
+--- /dev/null
++++ b/outputs/native_star_thermodynamic_limit_2026_09_09.json
+@@ -0,0 +1,18 @@
++{
++  "status": "PASS",
++  "checks": 267,
++  "physical_runs": 0,
++  "scope": "finite-hop locality, exact CAR and weighted coefficient tails",
++  "input_sha256": {
++    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "3d61dfac1a844364b98c731efca34b27b3c8dac1a3049d519f26d97b1db12715",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "bed02a2a089591081fbd72c855eb7b4dfc3ffc5b60e709e621e148e7ead00163",
++    "scripts/native_star_thermodynamic_controls_2026_09_09.py": "3133b5ab723d9e26430c5537831428c39e44622d068fff6eb31d8592752d79cf"
++  },
++  "source_sha256": "9940297bd3f362a594992bbbc5d09482ccbf9a336318a094b003ef5611549b5c",
++  "elapsed_seconds": 0.0056486669927835464,
++  "peak_rss_bytes": 20201472,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/scripts/native_star_thermodynamic_controls_2026_09_09.py b/scripts/native_star_thermodynamic_controls_2026_09_09.py
+new file mode 100644
+index 0000000000..e708b875f0
+--- /dev/null
++++ b/scripts/native_star_thermodynamic_controls_2026_09_09.py
+@@ -0,0 +1,51 @@
++"""Exact finite support and summability controls, not a proof by enumeration."""
++from fractions import Fraction as F
++
++def check():
++ count=0
++ def req(ok,msg):
++  nonlocal count
++  if not ok:raise ValueError(msg)
++  count+=1
++ def step(state,L=None):
++  out={}
++  for r,value in state.items():
++   for axis in range(3):
++    eta=(-1)**sum(r[:axis])
++    for sign in (-1,1):
++     s=list(r);s[axis]+=sign;phase=sign*eta
++     if L:
++      if s[axis]>=L//2:s[axis]-=L;phase=-phase
++      if s[axis]<-L//2:s[axis]+=L;phase=-phase
++     s=tuple(s);out[s]=out.get(s,0)+phase*value
++  return {r:v for r,v in out.items() if v}
++ for L in (8,12,16):
++  a={(0,0,0):1};b=a.copy()
++  for order in range(1,L//2):
++   a=step(a);b=step(b,L);req(a==b,'finite-hop boundary independence')
++ # Exact CAR monomial action verifies local quadratic commutator.
++ def gamma(j,x):return x^(1<<(j//2)),(-1)**((x&((1<<(j//2))-1)).bit_count())*(1 if j%2==0 else 1j*(1-2*((x>>(j//2))&1)))
++ def word(indices,x):
++  c=1
++  for j in reversed(indices):x,a=gamma(j,x);c*=a
++  return x,c
++ for a,b in ((0,1),(0,3),(2,5)):
++  for j in range(6):
++   for x in range(8):
++    u,c=word((a,b,j),x);v,d=word((j,a,b),x);actual={}
++    actual[u]=actual.get(u,0)+c;actual[v]=actual.get(v,0)-d;actual={k:z for k,z in actual.items() if z}
++    expected={}
++    if j==b:
++     k,z=gamma(a,x);expected[k]=2*z
++    elif j==a:
++     k,z=gamma(b,x);expected[k]=-2*z
++    req(actual==expected,'CAR quadratic commutator')
++ for q in range(9):
++  p=q+4;r=F(2)**(q+3-p)
++  for start in range(12):
++   finite=sum(r**n for n in range(start,start+20));tail=r**start/(1-r)
++   req(finite<tail and tail-finite==r**(start+20)/(1-r),'weighted dyadic tail')
++ return {'status':'PASS','checks':count,'physical_runs':0,'scope':'finite-hop locality, exact CAR and weighted coefficient tails'}
++if __name__=='__main__':
++ import signal,json
++ signal.alarm(180);print(json.dumps(check(),indent=2))
+diff --git a/scripts/native_star_thermodynamic_limit_2026_09_09.py b/scripts/native_star_thermodynamic_limit_2026_09_09.py
+new file mode 100644
+index 0000000000..0e84b0319c
+--- /dev/null
++++ b/scripts/native_star_thermodynamic_limit_2026_09_09.py
+@@ -0,0 +1,14 @@
++"""Portable supporting controls for the uniform quasi-local star theorem."""
++AUDIT_TIMEOUT_SEC=180
++AUDIT_INPUT_PATHS=('docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md', 'docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md', 'docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md', 'docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md', 'scripts/native_star_thermodynamic_controls_2026_09_09.py')
++def main():
++ import argparse,json,hashlib,signal,time,resource
++ from pathlib import Path
++ ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.parse_args();signal.alarm(180);start=time.monotonic();root=Path(__file__).resolve().parents[1]
++ hashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
++ helper=root/AUDIT_INPUT_PATHS[-1];data=helper.read_bytes();ns={'__name__':'controls','__file__':str(helper)};exec(compile(data,str(helper),'exec'),ns);out=ns['check']()
++ if out['status']!='PASS':raise ValueError('claim binding')
++ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++ if rss>384*1048576:raise ValueError('memory cap')
++ out.update(input_sha256=hashes,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),elapsed_seconds=time.monotonic()-start,peak_rss_bytes=rss,actual_current_surface_status='conditional-support');print(json.dumps(out,indent=2))
++if __name__=='__main__':main()

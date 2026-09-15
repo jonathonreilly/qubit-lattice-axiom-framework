@@ -1,0 +1,8 @@
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+ * branch                  ai/execution -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+ - [deleted]               codex/native-star-thermodynamic-limit-20260909
+{"pr": 8063, "lease_deleted": true, "immediate_state": "CLOSED"}

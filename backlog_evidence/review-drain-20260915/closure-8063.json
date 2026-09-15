@@ -1,0 +1,96 @@
+{
+  "pr": 8063,
+  "original_head": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+  "branch": "codex/native-star-thermodynamic-limit-20260909",
+  "landing": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "codex/native-star-thermodynamic-limit-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-infinite-star-node-reduction-20260909",
+        "headRefOid": "64c1efc6984b16cf95c61e7ac148add85d741606",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8066,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8066"
+      },
+      "original_merge_base": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+      "delta_sha256": "f6ae0542ea80ea3fa1223efd62b73bde26a2e99564660923615877db25d42533",
+      "delta_file": "closure-8063-child-8066-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-infinite-star-node-reduction-20260909",
+        "headRefOid": "64c1efc6984b16cf95c61e7ac148add85d741606",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8066,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8066"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-infinite-star-node-reduction-20260909",
+        "headRefOid": "64c1efc6984b16cf95c61e7ac148add85d741606",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8066,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8066"
+      }
+    },
+    {
+      "original": {
+        "baseRefName": "codex/native-star-thermodynamic-limit-20260909",
+        "closedAt": null,
+        "headRefName": "codex/native-full-star-infrared-response-20260909",
+        "headRefOid": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8064,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8064"
+      },
+      "original_merge_base": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+      "delta_sha256": "d599d845ff403652381fa5b5677baca98b1b3148dc86e072627fc0e52c76c6d6",
+      "delta_file": "closure-8063-child-8064-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-full-star-infrared-response-20260909",
+        "headRefOid": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8064,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8064"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "codex/native-full-star-infrared-response-20260909",
+        "headRefOid": "70d0f3c793ff8eb835b1661c710cb42ea2b46879",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8064,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8064"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-15T17:48:17Z",
+    "headRefName": "codex/native-star-thermodynamic-limit-20260909",
+    "headRefOid": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8063,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8063"
+  }
+}

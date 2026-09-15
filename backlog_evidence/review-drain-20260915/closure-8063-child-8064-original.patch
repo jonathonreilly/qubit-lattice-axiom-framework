@@ -1,0 +1,1603 @@
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md
+new file mode 100644
+index 0000000000..df0ec9b3c1
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md
+@@ -0,0 +1,3 @@
++# Artifact Plan
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md
+new file mode 100644
+index 0000000000..32ea61ff77
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md
+@@ -0,0 +1,3 @@
++# Assumptions And Imports
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md
+new file mode 100644
+index 0000000000..4128c1808f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md
+@@ -0,0 +1,12 @@
++# Claim status certificate
++
++actual_current_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++proposal_allowed: false
++proposal_allowed_reason: supplied Hamiltonian, Gaussian reference and inherited conditional theorems; no physical selection or phase closure
++bare_retained_allowed: false
++audit_required_before_effective_retained: true
++conditional_surface_status: exact theorem under the stated premises
++hypothetical_axiom_status: null
++admitted_observation_status: null
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md
+new file mode 100644
+index 0000000000..a8be548ac3
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md
+@@ -0,0 +1,5 @@
++# Goal
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
++
++The coherent extension proves a nine-power low-energy tail after exact one-particle subtraction, inverse-energy moments s<9, and a higher-odd spatial kernel decaying as (1+distance)^(-49/16). Its centered rows converge in l1; the full kernel retains the generic row-l2 result. James derived the extension, Huygens independently challenged both proofs and the complete canonical assembly, and root checked the full new argument. Final assembly PASS6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc. Six-file isolated -I -B -S -OO supporting replay1217/0 matches scientific payload; no physical calculation. Graph remains one new node/three dependencies, all parent nodes unchanged.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md
+new file mode 100644
+index 0000000000..80c77a11be
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md
+@@ -0,0 +1,7 @@
++# Handoff
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
++
++Ready for review PR stacked on codex/native-star-thermodynamic-limit-20260909. Reproduce with python3 -I -B -S scripts/native_full_star_infrared_response_2026_09_09.py --json. Supporting controls748/0; isolated payload exact. Canonical proof independently confirmed. Next research is the actual infinite node value and connected mixed-history or relative impurity estimate, not a rerun of this finite supporting check.
++
++The coherent extension proves a nine-power low-energy tail after exact one-particle subtraction, inverse-energy moments s<9, and a higher-odd spatial kernel decaying as (1+distance)^(-49/16). Its centered rows converge in l1; the full kernel retains the generic row-l2 result. James derived the extension, Huygens independently challenged both proofs and the complete canonical assembly, and root checked the full new argument. Final assembly PASS6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc. Six-file isolated -I -B -S -OO supporting replay1217/0 matches scientific payload; no physical calculation. Graph remains one new node/three dependencies, all parent nodes unchanged.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md
+new file mode 100644
+index 0000000000..9938f219ab
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md
+@@ -0,0 +1,3 @@
++# Literature Bridges
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md
+new file mode 100644
+index 0000000000..d7693c9cc7
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md
+@@ -0,0 +1,3 @@
++# No Go Ledger
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md
+new file mode 100644
+index 0000000000..cc0d3a5cee
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md
+@@ -0,0 +1,3 @@
++# Opportunity Queue
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md
+new file mode 100644
+index 0000000000..f184af10f1
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md
+@@ -0,0 +1,3 @@
++# Pr Backlog
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md
+new file mode 100644
+index 0000000000..b5fdc30ee5
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md
+@@ -0,0 +1,7 @@
++# Review history
++
++Original complete proof58b7617 independently reviewed PASS d175d582. Review file is preserved in evidence/native-full-star-infrared-cold-review/REVIEW.md. Canonical source and supporting controls awaiting affected-source confirmation. No audit verdict.
++
++Canonical complete source confirmation PASS: 1d4eaedc0634368ffba815d965b90c7e4828a0390d94b26faaf7ccfe56f612c6. Root inspected full proof and controls, verified six-source isolated -I -B -S -OO payload against original supporting run, and regenerated graph: one node/three dependencies, all old nodes unchanged. No physical job or audit verdict.
++
++The coherent extension proves a nine-power low-energy tail after exact one-particle subtraction, inverse-energy moments s<9, and a higher-odd spatial kernel decaying as (1+distance)^(-49/16). Its centered rows converge in l1; the full kernel retains the generic row-l2 result. James derived the extension, Huygens independently challenged both proofs and the complete canonical assembly, and root checked the full new argument. Final assembly PASS6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc. Six-file isolated -I -B -S -OO supporting replay1217/0 matches scientific payload; no physical calculation. Graph remains one new node/three dependencies, all parent nodes unchanged.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md
+new file mode 100644
+index 0000000000..35f313aee4
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md
+@@ -0,0 +1,3 @@
++# Route Portfolio
++
++Target: full odd singleton-star infrared response, including higher odd sectors. Domain and supplied premises are exactly those of PR8063/8062: canonical AP pure Gaussian reference, uniform stiffness and rapid quasi-local vacuum creators. New proof uses local annihilation, conical mode counting, graded locality and functional calculus; no physical gap or empirical input. Full sixth-order histories, physical selection, node nonzero values, positive infinite nonlinear weight, and fixed-coupling phase remain open.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml
+new file mode 100644
+index 0000000000..1a58f1ee98
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml
+@@ -0,0 +1,10 @@
++{
++  "actual_current_surface_status": "conditional-support",
++  "stage": "independently reviewed complete milestone, ready for review PR",
++  "base": "aea1602ec35a045e5b06be563acef0c28dadcbd4",
++  "review": "Original proof James, higherodd/spatial and complete final assembly Huygens PASS6cc71e85",
++  "no_physical_run": true,
++  "controls": 1217,
++  "graph": "1 new node, 3 dependencies, all old nodes unchanged",
++  "scope": "Cubic full response, higherodd ninthpower tail and summable spatial channel"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md
+new file mode 100644
+index 0000000000..f4e1406308
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md
+@@ -0,0 +1,11 @@
++# Trace gate
++
++trace_class: upstream_support
++target_claim_id: native_weak_electric_joint_defect_bounds_note_2026-09-09
++target_blocker_text: "Node values, higher odd sectors, mixed histories and all-order interacting control remain open."
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: Control connected mixed histories and the fixed-coupling relative impurity susceptibility.
++
++The quoted boundary is the final paragraph of PR8062's source note. This result supplies full higher-odd singleton inverse-response control. It does not resolve the other listed obligations or close interacting stability.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SOFT_TAIL.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SOFT_TAIL.md
+new file mode 100644
+index 0000000000..d8aa0a82b0
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SOFT_TAIL.md
+@@ -0,0 +1,32 @@
++# A possible stronger infrared input: nine-power tail after one-particle subtraction
++
++New analytical derivation for independent review; no physical computation. Uses8062/8063 and the full-odd infrared theorem. Let Z=Y-L be the uniformly rapidly quasi-local odd creator whose vacuum image has quasiparticle number at least3. The subtraction L is the ACTUAL extracted linear creator, not an unsupported number projection of an operator.
++
++Write N_epsilon=sum_{omega_l<=epsilon} a_l* a_l. On occupation vectors with particle number>=3 and total energy in(0,epsilon], every occupied mode is soft. Thus
++
++ 1_(0,epsilon](H) P_(>=3) <= N_epsilon(N_epsilon-1)(N_epsilon-2)/6.
++
++This remains a diagonal positive operator inequality on the entire Fock basis, with the left side understood to include P_(>=3). Consequently, using CAR,
++
++ ||1_(0,epsilon](H) Z Omega||²
++ <= (1/6) sum_{i,j,k soft, distinct} ||a_k a_j a_i Z Omega||².
++
++For a local parity-homogeneous D supported on m real Majoranas, move each annihilator through D using the GRADED commutator. Since annihilators kill Omega, the triple action equals a triple nested graded commutator applied to Omega. Each commutator flips parity, remains supported on D's sites, and has norm at most (2 C_B m/sqrt(Ncell)) times the preceding operator norm. The commutator types alternate anticommutator/ordinary commutator/anticommutator for initially odd D. Therefore
++
++ ||a_k a_j a_i D Omega|| <= (2 C_B m)^3 ||D|| / Ncell^(3/2).
++
++Decompose the uniformly quasi-local Z into odd dyadic shells D_n of support m_n=O(2^(3n)). The constant
++
++ K_3=sum_n (2 C_B m_n)^3 ||D_n||
++
++is uniform using any tail exponent p>9. Triangle inequality bounds every triple action of Z by K_3/Ncell^(3/2). The conical mode count #soft/Ncell<=C_D epsilon³ then gives
++
++ mu_Z((0,epsilon]) <= K_3² C_D³ epsilon^9 /6.
++
++No independence assumption on the three created particles enters. Shells individually need not have zero one-particle vacuum component: the number>=3 condition is used only for the FULL Z vector before shellwise bounds on triple annihilation. This avoids an invalid per-shell number assumption.
++
++Stieltjes integration yields inverse moments for0<s<9 and inverse-vector powers q<9/2, with uniform low-energy remainder9C/(9-s) epsilon^(9-s). Existing local spectral convergence then gives the corresponding thermodynamic inverse moments. This is strictly stronger than merely reapplying the generic cubic tail to Z.
++
++The argument generalizes to any uniformly quasi-local parity-homogeneous creator whose vacuum image has particle number at least r: factorial soft-number moment of order r, nested graded commutators, and p>3r give epsilon^(3r). It does NOT claim the required subtraction creator exists for every r without a separate construction. For r=3, existence is already supplied by linear subtraction.
++
++Consequence for the fixed-U program: the higher-odd vacuum transition has much stronger infrared integrability, leaving the linear return as the lowest soft channel. This still does not control the interacting reference, mixed-flux histories, operator action on excited states, or all-u relative susceptibility. It is an exact candidate improvement to an input, not an interacting resummation proof.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SPATIAL_SUMMABILITY.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SPATIAL_SUMMABILITY.md
+new file mode 100644
+index 0000000000..66e2bf1767
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SPATIAL_SUMMABILITY.md
+@@ -0,0 +1,59 @@
++# Higher-odd singleton kernel: a candidate summable spatial bound
++
++New analytical consequence for independent review. Assumes the nine-power spectral tail of HIGHER_ODD_SOFT_TAIL.md, the8062/8063 uniformly rapidly quasi-local odd Z_v with Z_v Omega=P>=3 chi_v, uniform finite-range CAR propagation, and the prescribed Gaussian AP domain. No interacting-state conclusion or physical computation.
++
++Claim: the higher-odd kernel T^Z_vw=<Z_v Omega,H^-1 Z_w Omega> has a volume-uniform absolutely summable row, and its zero-extended finite rows converge in l1 to the thermodynamic row. This upgrades the generic full-star row-l2 theorem only for the higher-odd part.
++
++## 1. A one-sided inverse filter whose adjoint kills the vacuum
++
++Choose real smooth theta with0<=theta<=1, theta(x)=0 for x<=1/2 and theta(x)=1 for x>=1. Let f(x)=theta(x)/x, defining it as0 near zero and on negative x. Then f and every derivative belong to L2(R). Plancherel plus Cauchy-Schwarz, with sufficiently many polynomial time weights, gives an inverse Fourier kernel w with every weighted L1 moment finite. This argument does NOT require w bounded at t=0; the one-sided1/x tail can give a logarithmic singularity there, which is integrable.
++
++For0<epsilon<=1 set f_epsilon(x)=epsilon^-1 f(x/epsilon)=theta(x/epsilon)/x and w_epsilon(t)=w(epsilon t), in the same Fourier convention f(x)=integral w(t)e^-itx dt. Hence
++
++ integral |t|^p |w_epsilon(t)|dt = epsilon^(-p-1) M_p.
++
++Define the bounded odd quasi-local operator X_epsilon,w=integral w_epsilon(t) tau_t(Z_w)dt. Since H Omega=0,
++
++ X_epsilon,w Omega=f_epsilon(H) Z_w Omega,
++ X_epsilon,w* Omega=f_epsilon(-H) Z_w* Omega=0.
++
++The second identity is crucial and uses the positive generator, real filter and negative-frequency support exclusion, not Hermiticity of Z. Therefore for every v,
++
++ <Z_v Omega,X_epsilon,w Omega>=omega({Z_v*,X_epsilon,w}).
++
++The reversed product has zero vacuum expectation because X_epsilon,w* Omega=0. An ordinary arbitrary inverse approximation would not permit this replacement by a graded anticommutator.
++
++## 2. Two errors: infrared vector tail and spatial operator tail
++
++The higher-odd spectral bound mu_Z(0,e]<=C e^9 gives
++
++ ||(H^-1-f_epsilon(H))Z_w Omega||
++ <= [integral_(0,epsilon] E^-2 dmu_Z]^(1/2)
++ <= sqrt(9C/7) epsilon^(7/2).
++
++Thus replacing T^Z_vw by the filtered correlation costs at most a uniform constant times epsilon^(7/2).
++
++For R=distance(v,w) large, approximate Z_v by an odd operator in its R/4 ball. For |t|<=cR, with c a fixed inverse propagation velocity, tau_t(Z_w) has an odd R/4-ball approximant with error <=C_q R^-q for every fixed q. This follows by first truncating Z_w to a smaller fixed fraction of R, then applying the finite-range propagation bound; the exponential short-time leakage and original rapid tails are uniform in volume. Constants may depend on q, not epsilon,R,L.
++
++Integrate those local approximants only for |t|<=cR. Their support is disjoint from the v approximant, so the graded anticommutator vanishes. The short-time error is at most C_q epsilon^-1 R^-q. The long-time part is bounded by norms and the filter moment:
++
++ integral_(|t|>cR)|w_epsilon(t)|dt <= C_p epsilon^(-p-1) R^-p.
++
++The v truncation error times ||X_epsilon,w||<=M0 epsilon^-1 has the same first form. Consequently
++
++ |T^Z_vw| <= C epsilon^(7/2)+C_q epsilon^-1 R^-q
++                         +C_p epsilon^(-p-1)R^-p.
++
++Finite torus balls use their graph distance; at sufficiently large ball size they equal the whole algebra. The same constants and argument apply to the infinite limit.
++
++## 3. Explicit summable exponent and thermodynamic rows
++
++Choose epsilon=R^(-7/8), p=q=32. The three powers are respectively
++
++ R^(-49/16), R^(-249/8), R^(-25/8).
++
++Thus |T^Z_vw|<=C'(1+R)^(-49/16), uniformly in volume. Since49/16>3, the row is l1 summable on the three-dimensional lattice. More generally any exponent below7/2 can be achieved by choosing epsilon=R^-a with a<1 sufficiently close to1 and sufficiently high filter moments.
++
++The earlier thermodynamic inverse-moment theorem gives convergence of every fixed entry. The new common summable spatial majorant gives l1 convergence of centered zero-extended rows by dominated convergence. In a fixed magnetic cell, the corresponding Fourier coefficient symbols therefore converge uniformly. This does not claim an isometric embedding of finite periodic many-body spaces.
++
++The higher-odd quadratic singleton channel now has an absolutely summable kernel, hence a bounded convolution operator by Schur's estimate. This is a statement about the defined response kernel (or its self-adjoint realification), not identification of the full native sixth-order Hamiltonian. The one-particle component has only the weaker generic cubic spectral tail: this argument would give at best powers below1/2 there, so it does not remove its infrared problem. Nonlinear higher-odd singleton returns can therefore be separated as a summable channel while the linear return still requires controlled resummation. Other mixed histories and the all-u relative-impurity susceptibility remain outside the result.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md
+new file mode 100644
+index 0000000000..6667993f39
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md
+@@ -0,0 +1,9 @@
++# Canonical full-star infrared confirmation
++
++PASS at SOURCE_FREEZE78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c, note2dd3be9a3eeb1f95c5379043e2be88396e4ddaf019ec3013a50e4733d15a97ca. Read complete canonical note and both supporting source files; all six frozen input hashes match. The complete58b analytical proof is unchanged apart from canonical framing and execution tense, so prior independent review d175d582 applies. Pure Gaussian/AP, uniform quasi-locality and same-reference wrong-flux premises remain explicit; no finite-L6 positivity or interacting conclusion is imported.
++
++The four-mode helper performs actual complex odd-CAR, unitary Walsh-mode, full occupation, inverse-moment, rational tail and graded-Gram checks. All complex arithmetic uses small integers/dyadic values, hence is exact in these fixtures; Fraction handles spectral sums. The748 count is guarded explicitly under -OO. These are finite supporting controls, not an enumeration proof of the thermodynamic theorem.
++
++The four adverse statements are honestly labelled EXHIBITED COUNTEREXAMPLES: nonzero ordinary commutator outside odd support; a three-particle state omitted by a one-particle projector; a dyadic endpoint series with nondecaying increments; and identical unit vectors whose row norms grow with family size. They are not actual mutated native solver executions. The last two finite comparisons illustrate the displayed scalable mathematical families; they do not by themselves numerically prove divergence.
++
++The six-file isolated -I-B-S-OO receipt records matched scientific payload. The initial output-redirection failure occurred before worker execution and is preserved, so the subsequent run is not a hidden numerical retry. This reviewer performed no execution or physical computation. Source-bound canonical scope is coherent and no blocker found; graph/delivery remain with root.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json
+new file mode 100644
+index 0000000000..f4a2c88671
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json
+@@ -0,0 +1,3 @@
++{
++  "/private/tmp/toe-24h-probes-20260908/native-full-star-infrared-stretch/DERIVATION.md": "58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md
+new file mode 100644
+index 0000000000..d7e081818c
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md
+@@ -0,0 +1,17 @@
++# Full odd-star infrared cold review
++
++**PASS under the explicit8062/8063 hypotheses**, for DERIVATION58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c. Complete proof read independently. Reuses previously reviewed uniform odd quasi-local creators, pure Gaussian AP references, thermodynamic local convergence and wrong-flux construction; no physical calculation or positivity assumption. This reviewer authored the Gaussian-extraction and thermodynamic predecessor reviews.
++
++1. For a normalized Bloch annihilator, its Majorana coefficients are bounded by a cell-dependent constant/sqrt(Ncell), independent of an eigenvector gauge. Graded locality restricts its anticommutator with a local odd D to D's support. Since annihilators kill the vacuum, the resulting norm estimate controls ALL particle sectors. On every occupation vector, positive total energy<=epsilon implies an occupied mode of frequency<=epsilon; thus the low-total-energy projection is bounded by the low-mode number operator. It is not being replaced by a one-particle projector. The same diagonal reasoning proves the inverse-power occupation inequality.
++
++2. The AP minimum-frequency bound absorbs the +1 in finite-grid ball counting; finite bands/nodes and cell volume only change constants. Exact-zero grids would fail this step and are excluded. Dyadic odd shells have support O(r³) and arbitrarily rapid norm decay, so sum m||D|| converges. Triangle inequality is used on projected VECTOR norms before squaring, giving the asserted cubic spectral tail with a uniform constant. The final whole-torus tail is harmless because its support is O(L³) and its norm can use p>3.
++
++3. Stieltjes integration gives C epsilon^(3-s)+s C epsilon^(3-s)/(3-s)=3C epsilon^(3-s)/(3-s). Hence q<3/2 for inverse-vector domains is correct; the endpoint is not proved. Oddness removes the vacuum atom. The estimates do not use a many-body active gap or separate independence among excited particles.
++
++4. The time-correlation identity uses the same dynamics sign as the predecessor. Fixed-ball/operator/state convergence establishes characteristic-function convergence; commutator bounds supply uniform positive-energy second moments if desired. Local polynomials are in the derivation domain and summable commutator shells extend that domain by closedness. Low-energy continuous cutoffs pass the cubic estimate to the limit and exclude a new zero atom, so weak convergence plus the uniform E^-s tail justifies the inverse moments. Polarization handles complex cross entries. No global identification of periodic Fock spaces is invoked.
++
++5. Subtracting the actual extracted linear creator is legitimate: a linear Majorana operator acting on the vacuum creates only one quasiparticle, and its coefficients have the parent's weighted-l1 convergence and rapid tails. Thus Z=Y-L is another uniformly quasi-local odd family with vacuum image exactly the higher-odd part. This avoids assuming convergence of number projectors themselves. It yields existence and nonnegativity of the limiting higher-sector susceptibility, not positivity from L6.
++
++6. The new graded Bessel step is essential and valid. Disjoint odd approximants anticommute, giving a summable norm bound g(v,w) on {Y_v*,Y_w}. For complex coefficients, A*A<=A*A+AA*, so ||A||²<=||{A*,A}||; Schur's estimate then bounds the translate map from l2 into Fock space. Composing its adjoint with H^-1 chi_v yields the full row-l2 bound. This is stronger than individual-vector inverse bounds alone, and does not imply bounded global convolution norm or row-l1. The infinite version follows from the same local estimate, not an unproved strong-row limit. Complex spectator coefficients need the stated sqrt2 factor, while real rows have exact CAR l2 norm.
++
++No blocker found. The conclusion is full odd singleton response control and its thermodynamic inverse moments in the supplied Gaussian reference. It does not identify the full physical sixth-order Hamiltonian, establish an interacting phase, determine a Dirac-node value, or solve fixed-U local defect stability. Constants remain existence bounds dependent on the inherited local/filter parameters. Planned tiny controls are not yet execution evidence in this review.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json
+new file mode 100644
+index 0000000000..62f0066d7f
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json
+@@ -0,0 +1,42 @@
++{
++  "scope": "Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem",
++  "PASS": 748,
++  "FAIL": 0,
++  "groups": {
++    "CAR": 64,
++    "nonlinear_fixture": 3,
++    "graded_support": 5,
++    "mode_CAR": 16,
++    "annihilation_identity": 4,
++    "local_annihilation_bound": 4,
++    "mode_fock_basis": 256,
++    "parseval": 1,
++    "odd_no_vacuum": 1,
++    "occupation_low_energy": 272,
++    "full_vector_low_energy": 17,
++    "inverse_moment": 2,
++    "geometric_inverse_moment": 40,
++    "uniform_low_energy_tail": 40,
++    "graded_Bessel": 16,
++    "missing_Bessel_counterexample": 3,
++    "counterexample_ordinary_commutator_outside_support": 1,
++    "counterexample_replace_full_low_energy_by_one_particle": 1,
++    "counterexample_claim_endpoint_s3_integrable": 1,
++    "counterexample_individual_inverse_norm_implies_uniform_row": 1
++  },
++  "counterexamples_exhibited": {
++    "ordinary_commutator_outside_support": true,
++    "replace_full_low_energy_by_one_particle": true,
++    "claim_endpoint_s3_integrable": true,
++    "individual_inverse_norm_implies_uniform_row": true
++  },
++  "fixture_particle_weights": {
++    "one": "4",
++    "three": "2"
++  },
++  "full_inverse_moments": {
++    "1": "16545/2002",
++    "2": "86442765/4008004"
++  },
++  "source_sha256": "2c31a8cd2a3769b1b80405841eb1a45b498f3cda93181d3fd91ebc39323117ef"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md
+new file mode 100644
+index 0000000000..35083673e4
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md
+@@ -0,0 +1,151 @@
++# Full odd-star infrared response — candidate derivation
++
++Status: provisional conditional-support, not independently reviewed. Started 2026-09-09 after PR8063. This is an analytic stretch on the full singleton star response, not a new numerical run or the full sixth-order effective Hamiltonian.
++
++## Contract and source
++
++Use the exact supplied domain of PR8063, head aea1602ec35a045e5b06be563acef0c28dadcbd4, and its parent PR8062, head df8112d1642bec7aaaacd380036087b03cdb0173: canonical pure Gaussian active vacuum, pi gauge, cubic antiperiodic L=4M, M>=32, nonzero hopping t, positive uniform wrong-pair stiffness relative to the same vacuum reference energy. H_L means H_pi,L-E0,L >=0, not the wrong-flux Hamiltonian. H is its gapless infinite Gaussian GNS generator. Magnetic cell size is fixed. No empirical or fitted input, extra axiom, active spectral gap, finite-L6-to-infinite-volume positivity, or full effective-operator locality is allowed.
++
++The previous theorem supplies odd Y_L,v with chi_L,v=Y_L,v Omega_L equal to the actual third-order double-resolvent star transition, uniform norm bounds and odd ball approximants with errors C_p(1+r)^(-p) for every p. The family converges locally in operator norm followed by uniform tails, and the vacuum states converge locally. The extracted Majorana coefficient family c_L,vj has uniformly rapid tails and converges in every weighted l1 norm. These premises are conditional source theorems, not formal audit grades.
++
++Target: prove infrared control and a thermodynamic limit of the FULL chi response, including its higher odd quasiparticle component. Existing PR8062 proves an inverse-kernel row l2 estimate only for P1 chi. A proof here would remove the one-particle restriction for the singleton-star response. It would not identify other sixth-order histories, prove an interacting phase, or establish a nonzero infinite-volume nonlinear weight.
++
++## 1. A local odd operator cannot concentrate arbitrary mass at zero energy
++
++Diagonalize the finite canonical positive quadratic excitation Hamiltonian:
++
++ H_L = sum_lambda omega_lambda a_lambda^* a_lambda,
++ {a_lambda,a_mu^*}=delta_lambda, a_lambda Omega_L=0.
++
++The Bloch label lambda=(k,b) uses a fixed number of bands b per magnetic cell. Frequencies are the stated 4|t| sqrt(sum_i sin^2 k_i), with the appropriate fixed-cell multiplicity/folding. Fourier normalization and the normalized internal eigenvectors give
++
++ a_lambda = sum_j u_lambda,j gamma_j,
++ |u_lambda,j| <= C_B / sqrt(Ncell),
++
++with C_B independent of L,k,b. One may take a conservative fixed cell-dependent C_B; no smooth eigenvector gauge or node value is required. This follows by composing the unitary cell Fourier transform with a normalized finite-dimensional Bloch eigenvector and the fixed Majorana-to-annihilation normalization.
++
++Let D be any odd operator supported on m real Majorana sites, not assumed Hermitian. Graded CAR locality gives {gamma_j,D}=0 outside its support. Since a_lambda kills the vacuum,
++
++ a_lambda D Omega_L = {a_lambda,D} Omega_L,
++ ||a_lambda D Omega_L|| <= 2 C_B m ||D|| / sqrt(Ncell).             (1)
++
++There is no assumption that D creates only one particle. The local CAR algebra contains operators of all degrees up to its support size.
++
++On the full excitation Fock basis define P_epsilon=1_(0,epsilon](H_L) and Q_epsilon=sum_(omega_lambda<=epsilon) a_lambda^* a_lambda. Then
++
++ P_epsilon <= Q_epsilon.                                          (2)
++
++Indeed, a nonvacuum occupied configuration of total energy at most epsilon contains at least one mode, every occupied mode has frequency at most epsilon, and Q_epsilon is a nonnegative integer on all configurations. Both sides are diagonal in that same occupation basis. Odd D Omega_L has no vacuum component. Therefore (1)-(2) imply
++
++ ||P_epsilon D Omega_L||^2 <= 4 C_B^2 m^2 ||D||^2 S_L(epsilon),
++ S_L(epsilon) = Ncell^(-1) # {lambda: omega_lambda<=epsilon}.        (3)
++
++The conical canonical dispersion and half-shifted grids give a constant C_D such that
++
++ S_L(epsilon) <= C_D epsilon^3                                    (4)
++
++for all epsilon>0 and all allowed L. To see the finite-grid uniformity, near each of finitely many nodes sin distance >=(2/pi) distance on its nearest-node cube. The mode count in radius O(epsilon/|t|) is at most a constant times (L epsilon/|t|+1)^3. The AP grid has omega_min >= c |t|/L: below that the count is zero; otherwise the +1 is absorbed in L epsilon/|t|. Dividing by Ncell proportional to L^3 proves (4). Outside fixed node cubes the frequencies are bounded below; enlarge the same constant to cover all epsilon. The fixed band multiplicity only changes C_D. An exact-zero grid or a flat zero band would invalidate this step.
++
++## 2. Rapid quasi-locality extends the bound to the full star vector
++
++For any uniformly rapidly quasi-local odd family Y_L,v, take odd approximants at dyadic radii r_n=2^n and telescope:
++
++ D_L,0=Y_L,v,1; D_L,n=Y_L,v,2^n-Y_L,v,2^(n-1).
++
++On each finite torus the sequence eventually becomes the exact whole-torus operator; equivalently append its final tail as a whole-torus shell. Volume growth gives m_L,n<=C_V(1+2^n)^3, while ||D_L,n||<=C_p' 2^(-np) for every fixed p. Hence
++
++ K_Y = sup_L 2 C_B sum_n m_L,n ||D_L,n|| < infinity,               (5)
++
++using any p>3. These are actual bounds on local operators, not a potentially ill-conditioned expansion in Wick monomials. Triangle inequality applied to (3) gives
++
++ mu_L,Y((0,epsilon]) := ||P_epsilon Y_L,v Omega_L||^2
++                      <= K_Y^2 C_D epsilon^3.                    (6)
++
++Also ||Y_L,v Omega_L||<=C0. Every odd sector is included. No independent-particle approximation to chi has entered.
++
++As a second occupation-basis check, for s>0 and every nonempty occupied configuration,
++
++ (sum_occupied omega)^(-s) <= sum_occupied omega^(-s).
++
++Thus inverse-energy moments can also be bounded by sum_lambda omega_lambda^(-s)||a_lambda D Omega||^2 for each local D. The spectral-count proof above provides the more useful uniform small-energy tail and avoids a separate singular lattice sum for each s.
++
++## 3. Inverse-energy domains and uniform integrability
++
++For any 0<s<3, Stieltjes integration using F(epsilon)<=C_Y epsilon^3, C_Y=K_Y^2 C_D, gives
++
++ integral_(0,epsilon] E^(-s) dmu_L,Y(E)
++ <= [3 C_Y/(3-s)] epsilon^(3-s).                                 (7)
++
++The E=0 boundary term vanishes by the same cubic bound. Above any fixed E_*>0 the inverse moment is bounded by E_*^(-s) C0^2. In particular
++
++ sup_L ||H_L^(-1) chi_L,v||^2 < infinity,
++ sup_L <chi_L,v,H_L^(-1)chi_L,v> < infinity.                        (8)
++
++More generally chi lies in Dom H_L^(-q) with uniform norm for every 0<q<3/2. Fractional inverses refer to the nonvacuum sector; oddness removes the zero vacuum. The endpoint q=3/2 is not supplied. No nonzero node value or sharp threshold claim is made.
++
++## 4. Thermodynamic spectral and inverse-response limits
++
++Let mu_L,Y be the positive spectral measure of chi_L,v. For each fixed real time t,
++
++ integral exp(-itE) dmu_L,Y(E)
++ = omega_L(Y_L,v^* tau_L,t(Y_L,v))
++ -> omega(Y_v^* tau_t(Y_v)).                                     (9)
++
++The reference energy cancels since H_L Omega_L=0. Replace Y by fixed-ball approximants, use compact-time local dynamics and local-state convergence, and then send their uniform tails to zero. The right side is the characteristic function of the GNS spectral measure mu_Y of Y_v Omega, continuous at zero.
++
++For an elementary tightness argument, the quadratic finite-range generator obeys ||[H_L,D]||<=C_H m ||D|| for a local operator D on m sites. Equation (5) therefore gives a uniform bound on ||H_L Y_L,v Omega_L||. The dyadic commutator series is norm convergent and its closed derivation limit is [H_L,Y_L,v]; the same construction works in infinite volume. Thus the spectral measures have uniformly bounded second energy moments. Smooth compactly supported functional calculus follows from (9) by Fourier inversion and dominated convergence; the moment bound supplies tightness and approximation by continuous compactly supported functions. This proves weak convergence of the finite positive measures, with their total masses also convergent.
++
++The cubic bound passes to the limiting measure (use open low-energy intervals and then monotone endpoints). There is no zero-energy atom on the odd Fock subspace: the one-particle multiplier is positive almost everywhere, and each positive-particle-number sum has no zero kernel. Alternatively the continuous cutoff version of (6) directly excludes such an atom. Therefore (7) holds in the limit, and uniform low-energy integrability plus weak convergence implies
++
++ integral E^(-s) dmu_L,Y -> integral E^(-s) dmu_Y,  0<s<3.           (10)
++
++At high energy E^(-s) is bounded and vanishes; near zero (7) controls the omitted part uniformly. In particular the full singleton susceptibility and squared inverse-vector norm have finite thermodynamic limits. These are scalar/matrix-element limits across the prescribed local identifications, not a global isometric embedding of finite periodic Fock spaces.
++
++Polarization with Y_v+zY_w, z in {1,-1,i,-i}, yields convergence of fixed-position cross matrix elements <chi_L,v,H_L^(-1)chi_L,w>. The same local proof applies to a fixed union of two centers.
++
++## 5. Isolating the higher odd contribution without nonlocal number-projector assumptions
++
++Define L_L,v=sum_j c_L,vj gamma_j using the actual Gaussian extraction coefficients in PR8063, and Z_L,v=Y_L,v-L_L,v. Weighted l1 bounds supply uniformly rapid odd ball approximants to L, and its weighted coefficient convergence supplies the same local thermodynamic limit. On the vacuum,
++
++ L_L,v Omega_L=P1 chi_L,v,
++ Z_L,v Omega_L=P_(>=3) chi_L,v.
++
++The infinite identity holds by the parent's Gaussian extraction theorem. Thus Z satisfies all hypotheses in sections 1-4. Consequently the higher odd weight ||Z_L,v Omega_L||^2 and its inverse-energy moments for 0<s<3 converge to finite nonnegative limits. H commutes with quasiparticle number, so the full scalar susceptibility is the sum of its one-particle and higher odd parts, without cross terms. This argument does not require independently asserting convergence of nonlocal finite-volume number projections.
++
++A positive value at L6 does not bound the limit from below, especially since L6 is outside the uniform L=4M,M>=32 domain. This theorem establishes existence/control, not positivity, of the infinite higher odd response.
++
++## 6. Full singleton inverse-kernel row bound from graded locality
++
++Let v range over all translates and finitely many internal sites of the magnetic cell. Uniform rapid odd quasi-locality implies
++
++ ||{Y_L,v^*,Y_L,w}|| <= g_L(v,w),
++ sup_(L,v) sum_w g_L(v,w) <= G < infinity.                         (11)
++
++For large d(v,w), choose disjoint ball approximants of radii less than d/3; their graded anticommutator is zero. Expanding the error bounds the left side by a constant times C_p(1+d)^(-p), with p>3. At small distances use 2C0^2. Periodic volume growth and finitely many internal types give the uniform summable bound, including seam/twist signs.
++
++For any finitely supported coefficients a, A=sum_v a_v Y_L,v obeys
++
++ ||A Omega_L||^2 <= ||A||^2 <= ||{A^*,A}||
++ <= sum_vw |a_v||a_w|g_L(v,w) <= G sum_v|a_v|^2.                   (12)
++
++Hence V_L:e_v -> chi_L,v extends to a bounded map from site l2 to active Fock space, norm <=sqrt(G); the same holds in infinite volume. This does not assume exponential vacuum clustering or an active gap. Graded locality controls the anticommutator even when ordinary vacuum correlations are long ranged.
++
++Define the FULL singleton kernel
++
++ T_L,vw=<chi_L,v,H_L^(-1)chi_L,w>.
++
++It is Hermitian and positive as a form on finite site sequences. By (8) and (12), the conjugated row is V_L^* H_L^(-1)chi_L,v, so
++
++ sum_w |T_L,vw|^2 <= G ||H_L^(-1)chi_L,v||^2 <= C_T.              (13)
++
++The infinite kernel has the same bound, and each fixed entry converges by (10). The argument also applies to the higher odd Z family. It proves a full response row l2 bound, not row l1, bounded global convolution-operator norm, strong l2 convergence of finite rows, or locality of every sixth-order term.
++
++For real spectator coefficients CAR gives ||sum a_w beta_w||=||a||2; for complex coefficients it gives the safe bound sqrt(2)||a||2. Thus (13) bounds the corresponding singleton spectator linear fields and local commutators of their self-adjoint quadratic realification, exactly as in the one-particle parent but now including all active odd intermediate sectors. The full physical sixth-order effective Hamiltonian may contain other histories and cancellations; it is not identified here.
++
++## Decisive checks planned, not yet run
++
++1. Exact finite Fock occupation inequalities including all odd sectors, and an explicit non-Hermitian local CAR creator, with a mutation that incorrectly replaces total-energy projection by one-particle projection.
++2. Exact spectral-tail summation and endpoint distinction on a discrete conical toy spectrum; no toy result advertised as the native infinite theorem.
++3. Overlapping odd CAR creators: compare their Gram matrix with the operator anticommutator bound; demonstrate that individual-vector inverse bounds alone do not give a row bound absent the bounded translate map.
++
++Review should challenge (1)-(2), finite-grid uniformity, dyadic support counting, spectral-measure passage, use of oddness and the graded Bessel estimate. The desired conclusion is not a review premise.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py
+new file mode 100644
+index 0000000000..e87c876962
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py
+@@ -0,0 +1,118 @@
++"""Small exact-dyadic CAR and rational spectral controls; no native physical run."""
++from fractions import Fraction as F
++import itertools,json,hashlib
++from pathlib import Path
++N=4;D=1<<N
++count=0;groups={};counterexamples={}
++def check(ok,group):
++ global count
++ if not ok: raise AssertionError(group)
++ count+=1;groups[group]=groups.get(group,0)+1
++def zero():return [[0j]*D for _ in range(D)]
++def plus(a,b,sign=1):return [[a[i][j]+sign*b[i][j] for j in range(D)] for i in range(D)]
++def scale(a,c):return [[x*c for x in row] for row in a]
++def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(D)) for j in range(D)] for i in range(D)]
++def adj(a):return [[a[j][i].conjugate() for j in range(D)] for i in range(D)]
++def mv(a,v):return [sum(x*y for x,y in zip(row,v)) for row in a]
++def inner(a,b):return sum(x.conjugate()*y for x,y in zip(a,b))
++def norm2(a):return sum(x.real*x.real+x.imag*x.imag for x in a)
++def iszero(a):return all(x==0 for row in a for x in row)
++def eye():return [[complex(i==j) for j in range(D)] for i in range(D)]
++def prod(seq):
++ a=eye()
++ for b in seq:a=mm(a,b)
++ return a
++ann=[]
++for j in range(N):
++ a=zero()
++ for s in range(D):
++  if s>>j&1:a[s^(1<<j)][s]=(-1)**((s&((1<<j)-1)).bit_count())
++ ann.append(a)
++gamma=[]
++for a in ann:gamma.extend([plus(a,adj(a)),scale(plus(adj(a),a,-1),1j)])
++for i,j in itertools.product(range(2*N),repeat=2):
++ check(plus(mm(gamma[i],gamma[j]),mm(gamma[j],gamma[i]))==scale(eye(),2*(i==j)),'CAR')
++# A deliberately complex non-Hermitian local odd operator, with actual 1/3-particle content.
++Y=plus(scale(gamma[0],2),scale(prod([gamma[0],gamma[2],gamma[4]]),1+1j))
++support={0,2,4};vac=[complex(i==0) for i in range(D)];chi=mv(Y,vac)
++check(norm2([chi[s] if s.bit_count()==1 else 0 for s in range(D)])>0,'nonlinear_fixture')
++check(norm2([chi[s] if s.bit_count()==3 else 0 for s in range(D)])>0,'nonlinear_fixture')
++check(Y!=adj(Y),'nonlinear_fixture')
++for j in range(2*N):
++ if j not in support:
++  ac=plus(mm(gamma[j],Y),mm(Y,gamma[j]))
++  check(iszero(ac),'graded_support')
++counterexamples['ordinary_commutator_outside_support']=not iszero(plus(mm(gamma[1],Y),mm(Y,gamma[1]),-1))
++# Exact Walsh Bloch toy: each annihilator has four physical complex-mode coefficients +/-1/2.
++walsh=[[(-1)**((i&j).bit_count())/2 for j in range(N)] for i in range(N)]
++a_modes=[]
++for row in walsh:
++ a=zero()
++ for c,x in zip(row,ann):a=plus(a,scale(x,c))
++ a_modes.append(a)
++for i,j in itertools.product(range(N),repeat=2):
++ check(plus(mm(a_modes[i],adj(a_modes[j])),mm(adj(a_modes[j]),a_modes[i]))==scale(eye(),i==j),'mode_CAR')
++# Expansion coefficient on every real Majorana has modulus1/4. Bound ||Y||<=4
++# uses ||gamma products||=1 and |1+i|<=2, independently of matrix outcome.
++for a in a_modes:
++ lhs=mv(a,chi);rhs=mv(plus(mm(a,Y),mm(Y,a)),vac)
++ check(lhs==rhs,'annihilation_identity')
++ check(norm2(lhs)<=F(1,4)*len(support)**2*4**2,'local_annihilation_bound')
++omega=[F(1,4),F(1,2),F(1),F(2)]
++states=[];energies=[];numbers=[]
++for occupied in range(D):
++ v=vac[:]
++ for j in reversed(range(N)):
++  if occupied>>j&1:v=mv(adj(a_modes[j]),v)
++ states.append(v);energies.append(sum((omega[j] for j in range(N) if occupied>>j&1),F(0)));numbers.append(occupied.bit_count())
++for i,j in itertools.product(range(D),repeat=2):check(inner(states[i],states[j])==complex(i==j),'mode_fock_basis')
++amplitudes=[inner(v,chi) for v in states]
++weights=[F(z.real)**2+F(z.imag)**2 for z in amplitudes]
++check(sum(weights)==F(norm2(chi)),'parseval')
++check(weights[0]==0,'odd_no_vacuum')
++for eps in sorted(set(energies+[F(1,8),F(4)])):
++ if eps<=0:continue
++ low=F(0);count_expect=F(0)
++ for mask,E,w in zip(range(D),energies,weights):
++  projection=int(0<E<=eps)
++  q=sum(omega[j]<=eps for j in range(N) if mask>>j&1)
++  check(projection<=q,'occupation_low_energy')
++  low+=projection*w;count_expect+=q*w
++ check(low<=count_expect,'full_vector_low_energy')
++for s in [1,2]:
++ actual=sum((w/E**s for E,w in zip(energies,weights) if E),F(0))
++ bound=sum((F(norm2(mv(a,chi)))/e**s for a,e in zip(a_modes,omega)),F(0))
++ check(actual<=bound,'inverse_moment')
++# Replacing full projection by P1 fails on the actual three-particle occupied vector.
++mask=7;eps=energies[mask]
++counterexamples['replace_full_low_energy_by_one_particle']=int(0<energies[mask]<=eps)>int(numbers[mask]==1)
++# Exact conical toy: atom at2^-j has weight(7/8)2^-3j; cumulative low tail equals2^-3J.
++for s in [1,2]:
++ exact=F(7,8)/(1-F(2)**(s-3))
++ for J in range(1,21):
++  head=sum((F(7,8)*F(2)**((s-3)*j) for j in range(J)),F(0))
++  remainder=F(7,8)*F(2)**((s-3)*J)/(1-F(2)**(s-3))
++  check(head+remainder==exact,'geometric_inverse_moment')
++  check(remainder<=F(3,3-s)*F(2)**(-(3-s)*J),'uniform_low_energy_tail')
++counterexamples['claim_endpoint_s3_integrable']=sum((F(7,8) for _ in range(20)),F(0))>sum((F(7,8) for _ in range(10)),F(0))
++# Operator anticommutator Gram domination for overlapping, complex odd fields.
++Ys=[plus(gamma[j],scale(prod([gamma[j],gamma[(j+1)%8],gamma[(j+2)%8]]),1j)) for j in range(8)]
++def opbound(a):
++ # Max row/column absolute Gaussian-rational l1 sum bounds spectral norm.
++ mag=lambda z:abs(z.real)+abs(z.imag)
++ return max(max(sum(mag(x) for x in row) for row in a),max(sum(mag(a[i][j]) for i in range(D)) for j in range(D)))
++g=[[opbound(plus(mm(adj(a),b),mm(b,adj(a)))) for b in Ys] for a in Ys]
++G=max(map(sum,g))
++for shift in range(16):
++ c=[complex((-1)**((shift+j)%3),((shift+2*j)%3)-1) for j in range(8)]
++ A=zero()
++ for a,y in zip(c,Ys):A=plus(A,scale(y,a))
++ check(norm2(mv(A,vac))<=G*sum(abs(x.real)**2+abs(x.imag)**2 for x in c),'graded_Bessel')
++for size in [2,4,8]:
++ # Identical chi_v all equal one unit vector: each inverse norm=1, row norm squared=size.
++ check(size>1,'missing_Bessel_counterexample')
++counterexamples['individual_inverse_norm_implies_uniform_row']=8>1
++for name,rejected in counterexamples.items():check(rejected,'counterexample_'+name)
++record={'scope':'Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem','PASS':count,'FAIL':0,'groups':groups,'counterexamples_exhibited':counterexamples,'fixture_particle_weights':{'one':str(sum((w for w,n in zip(weights,numbers) if n==1),F(0))),'three':str(sum((w for w,n in zip(weights,numbers) if n==3),F(0)))},'full_inverse_moments':{str(s):str(sum((w/E**s for E,w in zip(energies,weights) if E),F(0))) for s in [1,2]},'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
++Path(__file__).with_name('CONTROLS.json').write_text(json.dumps(record,indent=2)+'\n')
++print(json.dumps(record))
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/CANONICAL_REVIEW.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/CANONICAL_REVIEW.md
+new file mode 100644
+index 0000000000..bcedd6a467
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/CANONICAL_REVIEW.md
+@@ -0,0 +1,13 @@
++# Assembled infrared canonical cold review
++
++Disposition: PASS. Reviewed complete canonical note SHA4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c, complete primary and control helper, and all six live input hashes against SOURCE_FREEZE a35a7527021fd19960e6fe79c2e23bfff78b85d66a4275c20acb708b3a513005. No physical computation or control rerun was performed by this reviewer.
++
++I independently reviewed the higher-odd nine-power and spatial extensions in REVIEW.md and SPATIAL_REVIEW.md before this port. I reuse those analytical findings; I did not author the extensions or canonical source. The original full-response proof has the separately disclosed review by the other reviewer. I read its assembled statement and interactions here, without representing that earlier independent review as my own.
++
++Sections 5–6 correctly construct Z by the actual Gaussian linear extraction, apply particle-number >=3 only to its whole vacuum vector, and use local shells solely to estimate triple annihilations. The ordered triple sum carries the correct factor 1/6. The p>9 shell requirement is retained, as are s<9 and q<9/2. Infinite-volume zero-atom exclusion is explicitly supplied in section 4 by the Gaussian Fock/domain argument. Neither an open-interval tail alone nor positive finite-L6 data is used to replace that input.
++
++Section 8 preserves the real one-sided filter, correct adjoint spectral sign, all weighted L1 Fourier moments, and epsilon-dependent locality errors. The chosen exponents 49/16,249/8,25/8 give a common summable three-dimensional majorant. Its fixed-entry convergence input follows from the inverse-moment theorem applied to Z and polarization. Centered zero extension then gives strong l1 and uniform fixed-cell Fourier convergence. Section 7 separately proves only full-kernel row l2; it explicitly avoids claiming full-kernel row l1, strong l2 convergence or bounded convolution norm. There is no incompatible transfer of the higher-odd conclusion to the full kernel.
++
++The new helper genuinely checks nested graded CAR in a non-Hermitian four-mode fixture, factorial counting, cancellation of one-particle shell components, a rational one-sided energy filter and exact rational exponent balance. Its finite energy filter is a supporting sign/vacuum fixture, not a numerical proof of smooth-filter locality. Complex operations in its CAR part involve only bounded exact dyadics; later non-dyadic energy ratios use Fraction pairs. The seven advertised counterexamples are correctly labeled exhibited mathematical examples, not mutated physical solvers. The primary binds the note and three declared parent notes plus helper, requires 1217 controls, and retains conditional-support. The provided isolated execution is evidence from the author/root, not a rerun by me.
++
++No correction requested. Supplied canonical Gaussian/AP reference, uniform quasi-locality, fixed hopping scale and parent thermodynamic identifications remain load-bearing. No interacting phase, full sixth-order Hamiltonian identification or positive infinite nonlinear weight follows.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/REVIEW.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/REVIEW.md
+new file mode 100644
+index 0000000000..a9cf6b742a
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/REVIEW.md
+@@ -0,0 +1,41 @@
++# Independent challenge of the higher-odd soft tail
++
++PASS. Reviewed complete HIGHER_ODD_SOFT_TAIL.md SHA5adfb8e39dde484cdc1ddde64dc4cc464eb29e5c6bf2859b91240da89b0d5483, complete full-star infrared DERIVATION.md SHA58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c, and the thermodynamic parent's weighted coefficient-tail/convergence and GNS-generator sections. I reuse my independent72a29 review of the quasi-local creator/filter. I did not author the new factorial-soft-number argument. No numerical or physical run was performed.
++
++## Decisive occupation inequality
++
++Let Q_e count occupied modes with omega≤e. On an occupation basis vector of total energy in(0,e] and at least three particles, all occupied modes are soft, so Q_e≥3 and binomial(Q_e,3)≥1. On every other vector the desired left side is zero. Thus P_(0,e](H)P_>=3≤Q_e(Q_e−1)(Q_e−2)/6 is a positive diagonal inequality on the whole Fock basis. Hard occupied modes outside the energy window do not invalidate it; the right side may then be positive while the left is zero. Distinct ordered triples give exactly the factorial moment, not its square or an independence approximation:
++
++    <xi,Q_e(Q_e−1)(Q_e−2)xi>
++      = Σ_(i,j,k distinct soft) ||a_k a_j a_i xi||².
++
++The factor1/6 is therefore correct. Exact-zero grids remain excluded by the imported antiperiodic domain and finite-grid counting bound.
++
++## Local triple extraction
++
++Define the graded commutator of an odd a with parity-homogeneous D by [a,D]_g=aD−(−1)^parity(D)Da. Since aΩ=0, applying three annihilators gives [a_k,[a_j,[a_i,D]_g]_g]_g Ω. The parities alternate odd→even→odd→even, hence the bracket types are anticommutator, commutator, anticommutator. Each resulting operator remains in the original local CAR algebra. In particular its exterior graded bracket with a Majorana vanishes; no support is added by using a delocalized annihilator.
++
++The coefficient estimate |u_lj|≤C_B/sqrt(Ncell) and triangle inequality give operator norm≤2C_B m/sqrt(Ncell) times the prior norm at each step. Iteration gives the claimed m³/Ncell^(3/2) estimate. This does not require D to be Hermitian, a Wick-monomial expansion, orthogonality of different triple amplitudes, or smooth choices of Bloch eigenvectors. Repeated indices vanish by CAR; bounding their omitted count by the cube of the total soft-mode count is safe.
++
++## Shell summation and actual subtraction
++
++For the actual Z=Y−L, the thermodynamic parent supplies rapid weighted-l1 tails for L, so Z has uniform odd local approximants of arbitrarily high inverse-power accuracy. A shell of radius2^n has m_n=O(2^(3n)) and norm O(2^(-np)). The triple extraction constant sums m_n³||D_n||, so p>9 suffices. No fixed-volume support factor survives. The final whole-torus shell has volume O(L³) but norm O(L^-p), so it satisfies the same estimate when p>9.
++
++The cancellation of the one-particle component is required only for the full vector ZΩ. It need not hold shell by shell, and the proof does not incorrectly assume it there. The factorial inequality is applied before the shellwise bound. Individual shells with one-particle components contribute zero to their triple annihilation, which is consistent with the estimate. Thus the argument genuinely improves the cubic generic-odd bound rather than merely relabeling it.
++
++Combining S_e/Ncell≤C_D e³ with the triple bound gives mu_Z((0,e])≤K3² C_D³ e^9/6. Constants remain dependent on hopping/stiffness/locality data, with no explicit small numerical value claimed.
++
++## Inverse moments and limit
++
++With F(e)≤C e^9 and no zero atom, integration by parts yields
++
++    integral_(0,e] E^-s dmu ≤ C e^(9-s)+sC integral_0^e x^(8-s)dx
++                           =9C e^(9-s)/(9-s), 0<s<9.
++
++For vector powers the squared norm uses s=2q, giving q<9/2, not q<9. The endpoints are not established or asserted divergent. Local spectral convergence from the full-odd parent, finite total mass, this uniform small-energy bound, and the bounded vanishing high-energy integrand give convergence of inverse moments. The limiting odd Fock space has no zero-energy kernel because its positive excitation multiplier is positive almost everywhere; this is an imported domain fact, not a consequence of a bound on the open interval(0,e] alone. The proof retains the required parent rather than forgetting that atom issue.
++
++The r-particle generalization has the same conditional logic: one must first construct a uniformly quasi-local creator with the full vacuum image in N≥r. It does not prove that an arbitrary nonlocal number projection preserves quasi-locality. For r=3 the actual linear subtraction supplies the needed creator.
++
++## Scope
++
++This is an actual higher-odd singleton vacuum-response improvement under the same canonical Gaussian, antiperiodic, uniform-stiffness premises. It gives no infinite-volume nonzero higher-odd weight from L6, no control of mixed histories or excited-state operator action, and no interacting fixed-U resummation. No mathematical repair is requested before canonical integration.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/SPATIAL_REVIEW.md b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/SPATIAL_REVIEW.md
+new file mode 100644
+index 0000000000..045c76d4d3
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/SPATIAL_REVIEW.md
+@@ -0,0 +1,23 @@
++# Independent higher-odd spatial review
++
++Disposition: PASS within the stated supplied free Gaussian/AP and uniform quasi-locality premises. This is an analytical review, with no numerical or physical execution.
++
++Reviewed source: `native-uniform-fixed-coupling-stretch/HIGHER_ODD_SPATIAL_SUMMABILITY.md`, SHA256 `545ea28ea75d5bf10b7576fb0a772cd5cafbcbd3ce65fce1532f6032899a32fb`, together with my preceding `REVIEW.md` of the nine-power tail and its parent inverse-moment/domain argument. I did not author this extension.
++
++## Filter and vacuum cancellation
++
++For every integer n, f^(n) is square integrable: smooth cutoff removes the origin and its positive-infinity tail is O(x^(-n-1)). Plancherel supplies every polynomially weighted L2 norm of w. Applying Cauchy–Schwarz with an additional integrable weight (1+t²)^(-1) supplies every stated weighted L1 norm. A possible logarithmic singularity at zero therefore does not invalidate the Bochner integral or the long-time estimate. Scaling w_epsilon(t)=w(epsilon t) gives precisely epsilon^(-p-1).
++
++With the declared negative-time Heisenberg convention, taking the adjoint conjugates w, so its vacuum spectral multiplier is conjugate f_epsilon(-H)=f_epsilon(-H). Positivity of H and f_epsilon(0)=0 make X*Omega zero, including possible zero modes. Consequently omega(X Z_v*) is zero; the anticommutator replacement is valid for non-Hermitian Z. It would not follow for a two-sided inverse filter.
++
++## Infrared and locality estimates
++
++The inverse approximation error is supported below epsilon and bounded by E^-1. Integration by parts of the reviewed tail gives integral E^-2 dmu <= (9C/7) epsilon^7. This uses the inherited absence of a zero-energy atom in Z Omega; the open-interval tail alone would not supply that fact.
++
++For times at most cR, first truncate Z_w to a smaller fraction of R, then propagate into the R/4 ball. Choose c below a fixed Lieb–Robinson velocity margin. Polynomial support-volume prefactors are absorbed by the exponential leakage; rapid initial tails give any fixed inverse power. Constants are independent of epsilon and volume, though not of the requested power. Odd conditional expectations/truncations preserve grading. Disjoint-support anticommutators then vanish exactly. The resulting two operator errors are epsilon^-1 R^-q and epsilon^(-p-1) R^-p, as claimed. No unproved uniform-in-epsilon localization constant is being assumed.
++
++## Summability and limit
++
++For a=7/8 and p=q=32 the exponents are 49/16, 249/8 and 25/8; their minimum exceeds three. Centered representatives of torus sites have the same shortest graph distance from the origin as their centered lattice coordinates, so the bound gives a common summable majorant after zero extension. Fixed-entry convergence from the prior thermodynamic theorem therefore yields strong l1 convergence. Uniform Fourier convergence follows by the l1 bound in the fixed magnetic-cell convention; no Hilbert-space embedding is needed.
++
++The argument establishes this conclusion only for the higher-odd response kernel. It neither proves summability of the full kernel nor identifies the full sixth-order effective Hamiltonian. No correction requested.
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json
+new file mode 100644
+index 0000000000..2907b97a1a
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json
+@@ -0,0 +1,8 @@
++{
++  "exact_scientific_payload_match": true,
++  "files": 6,
++  "controls": 1217,
++  "scope": "Supporting finite controls only; full analytic source and extensions independently reviewed.",
++  "elapsed_seconds": 0.12279804097488523,
++  "peak_rss_bytes": 21331968
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/DELIVERY_FREEZE.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/DELIVERY_FREEZE.json
+new file mode 100644
+index 0000000000..5667298820
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/DELIVERY_FREEZE.json
+@@ -0,0 +1,41 @@
++{
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md": "7e1c6cf5c393b7b3d59b642bdbbdbc814894ae0a6c2e553dfa683677a7bda879",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md": "912fb42336190ad7551d6ac15879005620ffebddc0cf8061fc9bdcca61981d32",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md": "1d169551b1d6ac908ee2ebb08ea56237412b9481bdc03ec53c33435d847b4e23",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md": "ced0edfe5fb281c3cd6ab40772b763d46e3bee3fb771df2a5508339424277ea2",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md": "986a75805434df9ba36ceac2e9eddf94d011f304ed02c53abee0f3bef834adb6",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md": "e680bd95d6aabeeb4b7c08333ec2e46cf0a116f7490826bfaf0186bc4d60acd1",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md": "0d55ecae82b64b010648da639da973fb63a0e469760871b574fd90d8868429d3",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md": "1a52fb81b8cf9fa07b2643d3a5b88236d3878e60265781f1c6176198e0496c7f",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md": "423d009f74f97ce5106f46eeb8d30418b4aff51d2ef99a6dba326c738d476083",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md": "1ca31cf9b736ec074147aa8327611c5d4aba23061b5cb362d4704970d47c4669",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md": "e3b3f2353b25c7051948cbe80f09a4ffe907cff8009ab2086b0a2aa83de143fc",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml": "ae6cb946c722ae63f2843cf26c08166f39a090d5ea67dcd0e3358099426144c5",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md": "2385d6c20e09204699d8fff6851c1587fbbb44eeff760a04d387618946189763",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SOFT_TAIL.md": "5adfb8e39dde484cdc1ddde64dc4cc464eb29e5c6bf2859b91240da89b0d5483",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/HIGHER_ODD_SPATIAL_SUMMABILITY.md": "545ea28ea75d5bf10b7576fb0a772cd5cafbcbd3ce65fce1532f6032899a32fb",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md": "1d4eaedc0634368ffba815d965b90c7e4828a0390d94b26faaf7ccfe56f612c6",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json": "88650aabf99953eae87a34a2c238e2913c70b627f0da1758433196cc1c5c3f0b",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md": "d175d58295d2b1125fa00db3f0e6608420151ae2a0ab9104323e46966cb98e07",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json": "132919440d7b92f3324cca6d3994441cd4007ccc4463c3b22c4ce0e15b6c9ebc",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md": "58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py": "2c31a8cd2a3769b1b80405841eb1a45b498f3cda93181d3fd91ebc39323117ef",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/CANONICAL_REVIEW.md": "6cc71e85c8e2245ad717b01b74d4b4abefd00181a319866b726c6c3a401fc5fc",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/REVIEW.md": "44c98fbad566640a4d9f9d203010469e289e452986d8ee2313d6aad966f7cd6a",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-higher-odd-infrared-cold-review/SPATIAL_REVIEW.md": "3cf0545078515a30f1be34fd2effbd305a30ea23e9a20e185d44cb602fde16c3",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json": "547ac247535dce1da47a99bc9eb773077901443c14e812bc58d1dbb67cc622b8",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json": "41a4cacb7dff50eed2b6a8cf43cd302581f4b519a4a36090afdf4db59067c953",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json": "769390f0fa173d4462cc04ba97e76996639fd4b1398e91fb4081c619623a5a38",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json": "a35a7527021fd19960e6fe79c2e23bfff78b85d66a4275c20acb708b3a513005",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ACCEPTANCE.json": "f026f212de33de5d198636f990a451b9b4fada2893886965882b74d84f73ad60",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_DELIVERY_FREEZE.json": "9611394c5cc04ecfd01af7c58f50b5b71a7ceb32d36ba1a2f3808ab6e36d9c8c",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.json": "4b0fe13d44bb172afcd863e9df50d65dcfd0bbc5454fefa74b8d170ea5733bab",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_SOURCE_FREEZE.json": "78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c",
++  "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c",
++  "docs/audit/data/citation_graph_manifest.json": "812fa1eddebc2ccb0a4b007277ba74086833e460861f9e8c665a512d07f040ad",
++  "outputs/native_full_star_infrared_response_2026_09_09.json": "dff861b3c9c7cf754ba8e8fd64381de34e28ae5f5c7d633071eb0fa90df7b67a",
++  "scripts/native_full_star_infrared_controls_2026_09_09.py": "144a40e270c8f0419bbf033e347436540f3df0079d59a4bc2c6206c9736f1264",
++  "scripts/native_full_star_infrared_response_2026_09_09.py": "0ae55cd857751eb3c49446e04134e7cb468d349177945c25d52dc0aef1b5e7a9"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json
+new file mode 100644
+index 0000000000..0831a5df98
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json
+@@ -0,0 +1,7 @@
++{
++  "new_nodes": [
++    "native_full_star_infrared_response_note_2026-09-09"
++  ],
++  "new_edges": 3,
++  "old_nodes_unchanged": true
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json
+new file mode 100644
+index 0000000000..0ddd222553
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json
+@@ -0,0 +1,73 @@
++{
++  "scope": "Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem",
++  "PASS": 1217,
++  "FAIL": 0,
++  "groups": {
++    "CAR": 64,
++    "nonlinear_fixture": 3,
++    "graded_support": 5,
++    "mode_CAR": 16,
++    "annihilation_identity": 4,
++    "local_annihilation_bound": 4,
++    "mode_fock_basis": 256,
++    "parseval": 1,
++    "odd_no_vacuum": 1,
++    "occupation_low_energy": 272,
++    "full_vector_low_energy": 17,
++    "inverse_moment": 2,
++    "geometric_inverse_moment": 40,
++    "uniform_low_energy_tail": 40,
++    "graded_Bessel": 16,
++    "missing_Bessel_counterexample": 3,
++    "counterexample_ordinary_commutator_outside_support": 1,
++    "counterexample_replace_full_low_energy_by_one_particle": 1,
++    "counterexample_claim_endpoint_s3_integrable": 1,
++    "counterexample_individual_inverse_norm_implies_uniform_row": 1,
++    "exact_linear_subtraction": 2,
++    "triple_graded_identity": 24,
++    "triple_local_bound": 24,
++    "factorial_occupation_bound": 272,
++    "factorial_annihilation_identity": 17,
++    "higher_odd_low_energy": 17,
++    "shell_cancellation": 1,
++    "nine_power_inverse_moment": 45,
++    "nine_power_low_energy_tail": 45,
++    "counterexample_one_particle_free_shells_required": 1,
++    "counterexample_endpoint_s9_integrability": 1,
++    "positive_filter_adjoint_vacuum": 1,
++    "positive_filter_nonzero_creator": 1,
++    "counterexample_one_sided_filter": 1,
++    "filtered_inverse_vacuum": 15,
++    "summable_power_balance": 1,
++    "three_dimensional_summability": 1
++  },
++  "counterexamples_exhibited": {
++    "ordinary_commutator_outside_support": true,
++    "replace_full_low_energy_by_one_particle": true,
++    "claim_endpoint_s3_integrable": true,
++    "individual_inverse_norm_implies_uniform_row": true,
++    "one_particle_free_shells_required": true,
++    "endpoint_s9_integrability": true,
++    "arbitrary_inverse_filter_adjoint_kills_vacuum": true
++  },
++  "fixture_particle_weights": {
++    "one": "4",
++    "three": "2"
++  },
++  "full_inverse_moments": {
++    "1": "16545/2002",
++    "2": "86442765/4008004"
++  },
++  "status": "PASS",
++  "input_sha256": {
++    "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c",
++    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "scripts/native_full_star_infrared_controls_2026_09_09.py": "144a40e270c8f0419bbf033e347436540f3df0079d59a4bc2c6206c9736f1264"
++  },
++  "source_sha256": "0ae55cd857751eb3c49446e04134e7cb468d349177945c25d52dc0aef1b5e7a9",
++  "elapsed_seconds": 0.12279804097488523,
++  "peak_rss_bytes": 21331968,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.stderr b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.stderr
+new file mode 100644
+index 0000000000..e69de29bb2
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..072603d62d
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json
+@@ -0,0 +1,8 @@
++{
++  "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c",
++  "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++  "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++  "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++  "scripts/native_full_star_infrared_controls_2026_09_09.py": "144a40e270c8f0419bbf033e347436540f3df0079d59a4bc2c6206c9736f1264",
++  "scripts/native_full_star_infrared_response_2026_09_09.py": "0ae55cd857751eb3c49446e04134e7cb468d349177945c25d52dc0aef1b5e7a9"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ACCEPTANCE.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ACCEPTANCE.json
+new file mode 100644
+index 0000000000..d435774835
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ACCEPTANCE.json
+@@ -0,0 +1,13 @@
++{
++  "exact_scientific_payload_match": true,
++  "files": 6,
++  "controls": 748,
++  "failure_before_first_canonical_run": "Output redirection used nonexistent scripts/outputs directory; no worker executed. Corrected path to existing outputs. No numerical protocol retried.",
++  "flags": [
++    "-I",
++    "-B",
++    "-S",
++    "-OO"
++  ],
++  "note_sha256": "2dd3be9a3eeb1f95c5379043e2be88396e4ddaf019ec3013a50e4733d15a97ca"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_DELIVERY_FREEZE.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_DELIVERY_FREEZE.json
+new file mode 100644
+index 0000000000..7d362afb96
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_DELIVERY_FREEZE.json
+@@ -0,0 +1,31 @@
++{
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ARTIFACT_PLAN.md": "7e1c6cf5c393b7b3d59b642bdbbdbc814894ae0a6c2e553dfa683677a7bda879",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ASSUMPTIONS_AND_IMPORTS.md": "912fb42336190ad7551d6ac15879005620ffebddc0cf8061fc9bdcca61981d32",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/CLAIM_STATUS_CERTIFICATE.md": "1d169551b1d6ac908ee2ebb08ea56237412b9481bdc03ec53c33435d847b4e23",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/GOAL.md": "a6b271d5412f9bdd8bf0aeaac7dab551e1a0d092f4034afb327df70fd8275689",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/HANDOFF.md": "5de2f3d4c5767191a1249d3965c278f52fdfd3c167d9308fa0e40b034c3d8d19",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/LITERATURE_BRIDGES.md": "e680bd95d6aabeeb4b7c08333ec2e46cf0a116f7490826bfaf0186bc4d60acd1",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/NO_GO_LEDGER.md": "0d55ecae82b64b010648da639da973fb63a0e469760871b574fd90d8868429d3",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/OPPORTUNITY_QUEUE.md": "1a52fb81b8cf9fa07b2643d3a5b88236d3878e60265781f1c6176198e0496c7f",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/PR_BACKLOG.md": "423d009f74f97ce5106f46eeb8d30418b4aff51d2ef99a6dba326c738d476083",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/REVIEW_HISTORY.md": "7756385eb81f254e91d0ab3b6558867c17e72ee603e63a6392f7739161a19bd9",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/ROUTE_PORTFOLIO.md": "e3b3f2353b25c7051948cbe80f09a4ffe907cff8009ab2086b0a2aa83de143fc",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/STATE.yaml": "53f82915f2399797b5b5f231c32810b31e6f7d69f22e69ca80fad058fc0b1356",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/TRACE_GATE.md": "2385d6c20e09204699d8fff6851c1587fbbb44eeff760a04d387618946189763",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/CANONICAL_REVIEW.md": "1d4eaedc0634368ffba815d965b90c7e4828a0390d94b26faaf7ccfe56f612c6",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/READ_HASHES.json": "88650aabf99953eae87a34a2c238e2913c70b627f0da1758433196cc1c5c3f0b",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-cold-review/REVIEW.md": "d175d58295d2b1125fa00db3f0e6608420151ae2a0ab9104323e46966cb98e07",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/CONTROLS.json": "132919440d7b92f3324cca6d3994441cd4007ccc4463c3b22c4ce0e15b6c9ebc",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/DERIVATION.md": "58b7617ddd948491a69493c8aee09174d72ab2c85060dc04d844d6a2b022694c",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/evidence/native-full-star-infrared-stretch/controls.py": "2c31a8cd2a3769b1b80405841eb1a45b498f3cda93181d3fd91ebc39323117ef",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ACCEPTANCE.json": "f026f212de33de5d198636f990a451b9b4fada2893886965882b74d84f73ad60",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/GRAPH.json": "41a4cacb7dff50eed2b6a8cf43cd302581f4b519a4a36090afdf4db59067c953",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.json": "4b0fe13d44bb172afcd863e9df50d65dcfd0bbc5454fefa74b8d170ea5733bab",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/ISOLATED.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++  ".claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/SOURCE_FREEZE.json": "78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c",
++  "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "2dd3be9a3eeb1f95c5379043e2be88396e4ddaf019ec3013a50e4733d15a97ca",
++  "docs/audit/data/citation_graph_manifest.json": "812fa1eddebc2ccb0a4b007277ba74086833e460861f9e8c665a512d07f040ad",
++  "outputs/native_full_star_infrared_response_2026_09_09.json": "e1824c18d29ba3d46598ce4de2322eb9ba9aaf7c13b8777d4711370eeb456aac",
++  "scripts/native_full_star_infrared_controls_2026_09_09.py": "d9f5c3dd455e82b784145cc38dc1385c5131ea61e356661ea1b77ee91160dd00",
++  "scripts/native_full_star_infrared_response_2026_09_09.py": "c98ba48062135ecd1ab1752d5481e9bf45d4f91eb954cefaa3815c35a7df7b79"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.json
+new file mode 100644
+index 0000000000..bafdc6ca79
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.json
+@@ -0,0 +1,53 @@
++{
++  "scope": "Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem",
++  "PASS": 748,
++  "FAIL": 0,
++  "groups": {
++    "CAR": 64,
++    "nonlinear_fixture": 3,
++    "graded_support": 5,
++    "mode_CAR": 16,
++    "annihilation_identity": 4,
++    "local_annihilation_bound": 4,
++    "mode_fock_basis": 256,
++    "parseval": 1,
++    "odd_no_vacuum": 1,
++    "occupation_low_energy": 272,
++    "full_vector_low_energy": 17,
++    "inverse_moment": 2,
++    "geometric_inverse_moment": 40,
++    "uniform_low_energy_tail": 40,
++    "graded_Bessel": 16,
++    "missing_Bessel_counterexample": 3,
++    "counterexample_ordinary_commutator_outside_support": 1,
++    "counterexample_replace_full_low_energy_by_one_particle": 1,
++    "counterexample_claim_endpoint_s3_integrable": 1,
++    "counterexample_individual_inverse_norm_implies_uniform_row": 1
++  },
++  "counterexamples_exhibited": {
++    "ordinary_commutator_outside_support": true,
++    "replace_full_low_energy_by_one_particle": true,
++    "claim_endpoint_s3_integrable": true,
++    "individual_inverse_norm_implies_uniform_row": true
++  },
++  "fixture_particle_weights": {
++    "one": "4",
++    "three": "2"
++  },
++  "full_inverse_moments": {
++    "1": "16545/2002",
++    "2": "86442765/4008004"
++  },
++  "status": "PASS",
++  "input_sha256": {
++    "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "2dd3be9a3eeb1f95c5379043e2be88396e4ddaf019ec3013a50e4733d15a97ca",
++    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "scripts/native_full_star_infrared_controls_2026_09_09.py": "d9f5c3dd455e82b784145cc38dc1385c5131ea61e356661ea1b77ee91160dd00"
++  },
++  "source_sha256": "c98ba48062135ecd1ab1752d5481e9bf45d4f91eb954cefaa3815c35a7df7b79",
++  "elapsed_seconds": 0.08670649997657165,
++  "peak_rss_bytes": 20824064,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.stderr b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_ISOLATED.stderr
+new file mode 100644
+index 0000000000..e69de29bb2
+diff --git a/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_SOURCE_FREEZE.json b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_SOURCE_FREEZE.json
+new file mode 100644
+index 0000000000..ae91363a70
+--- /dev/null
++++ b/.claude/science/physics-loops/native-full-star-infrared-response-20260909/verification/V1_SOURCE_FREEZE.json
+@@ -0,0 +1,8 @@
++{
++  "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "2dd3be9a3eeb1f95c5379043e2be88396e4ddaf019ec3013a50e4733d15a97ca",
++  "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++  "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++  "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++  "scripts/native_full_star_infrared_controls_2026_09_09.py": "d9f5c3dd455e82b784145cc38dc1385c5131ea61e356661ea1b77ee91160dd00",
++  "scripts/native_full_star_infrared_response_2026_09_09.py": "c98ba48062135ecd1ab1752d5481e9bf45d4f91eb954cefaa3815c35a7df7b79"
++}
+diff --git a/docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md b/docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md
+new file mode 100644
+index 0000000000..18bf35f687
+--- /dev/null
++++ b/docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md
+@@ -0,0 +1,254 @@
++---
++claim_id: native_full_star_infrared_response_note_2026-09-09
++claim_type: bounded_theorem
++claim_scope: "Supplied canonical Gaussian reference and uniformly quasi-local native star creator: full odd cubic and higher-odd nine-power spectral bounds, inverse moments and thermodynamic susceptibility, including higher odd sectors, full singleton-kernel row l2 control and an absolutely summable higher-odd channel."
++upstream_dependencies:
++  - native_star_thermodynamic_limit_note_2026-09-09
++  - native_uniform_quasilocal_star_vertex_note_2026-09-09
++  - native_zero_penalty_optimal_flux_dispersion_note_2026-09-08
++runner: scripts/native_full_star_infrared_response_2026_09_09.py
++---
++
++# Full odd-star infrared response and thermodynamic susceptibility
++
++**Status:** conditional-support; trace class upstream_support. This theorem controls the full singleton-star response in the supplied Gaussian reference. It does not identify the full sixth-order effective Hamiltonian or prove an interacting phase.
++
++Use the [thermodynamic star construction](NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md), [uniform quasi-local creator](NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md), and [canonical dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md).
++
++The full response has a uniform cubic low-energy spectral bound. After the actual one-particle part is removed, the bound improves to ninth power and the higher-odd singleton kernel has absolutely summable spatial rows, converging in l1 as the volume grows. The one-particle channel and other mixed histories retain their separate obligations.
++
++## Contract and source
++
++Use the exact supplied domain of PR8063, head aea1602ec35a045e5b06be563acef0c28dadcbd4, and its parent PR8062, head df8112d1642bec7aaaacd380036087b03cdb0173: canonical pure Gaussian active vacuum, pi gauge, cubic antiperiodic L=4M, M>=32, nonzero hopping t, positive uniform wrong-pair stiffness relative to the same vacuum reference energy. H_L means H_pi,L-E0,L >=0, not the wrong-flux Hamiltonian. H is its gapless infinite Gaussian GNS generator. Magnetic cell size is fixed. No empirical or fitted input, extra axiom, active spectral gap, finite-L6-to-infinite-volume positivity, or full effective-operator locality is allowed.
++
++The previous theorem supplies odd Y_L,v with chi_L,v=Y_L,v Omega_L equal to the actual third-order double-resolvent star transition, uniform norm bounds and odd ball approximants with errors C_p(1+r)^(-p) for every p. The family converges locally in operator norm followed by uniform tails, and the vacuum states converge locally. The extracted Majorana coefficient family c_L,vj has uniformly rapid tails and converges in every weighted l1 norm. These premises are conditional source theorems, not formal audit grades.
++
++The result proves infrared control and a thermodynamic limit of the full chi response, including its higher odd quasiparticle component. The parent proves an inverse-kernel row l2 estimate only for P1 chi. Here that restriction is removed for the singleton-star response. Other sixth-order histories, an interacting phase, and positivity of the infinite-volume nonlinear weight remain open.
++
++## 1. A local odd operator cannot concentrate arbitrary mass at zero energy
++
++Diagonalize the finite canonical positive quadratic excitation Hamiltonian:
++
++ H_L = sum_lambda omega_lambda a_lambda^* a_lambda,
++ {a_lambda,a_mu^*}=delta_lambda, a_lambda Omega_L=0.
++
++The Bloch label lambda=(k,b) uses a fixed number of bands b per magnetic cell. Frequencies are the stated 4|t| sqrt(sum_i sin^2 k_i), with the appropriate fixed-cell multiplicity/folding. Fourier normalization and the normalized internal eigenvectors give
++
++ a_lambda = sum_j u_lambda,j gamma_j,
++ |u_lambda,j| <= C_B / sqrt(Ncell),
++
++with C_B independent of L,k,b. One may take a conservative fixed cell-dependent C_B; no smooth eigenvector gauge or node value is required. This follows by composing the unitary cell Fourier transform with a normalized finite-dimensional Bloch eigenvector and the fixed Majorana-to-annihilation normalization.
++
++Let D be any odd operator supported on m real Majorana sites, not assumed Hermitian. Graded CAR locality gives {gamma_j,D}=0 outside its support. Since a_lambda kills the vacuum,
++
++ a_lambda D Omega_L = {a_lambda,D} Omega_L,
++ ||a_lambda D Omega_L|| <= 2 C_B m ||D|| / sqrt(Ncell).             (1)
++
++There is no assumption that D creates only one particle. The local CAR algebra contains operators of all degrees up to its support size.
++
++On the full excitation Fock basis define P_epsilon=1_(0,epsilon](H_L) and Q_epsilon=sum_(omega_lambda<=epsilon) a_lambda^* a_lambda. Then
++
++ P_epsilon <= Q_epsilon.                                          (2)
++
++Indeed, a nonvacuum occupied configuration of total energy at most epsilon contains at least one mode, every occupied mode has frequency at most epsilon, and Q_epsilon is a nonnegative integer on all configurations. Both sides are diagonal in that same occupation basis. Odd D Omega_L has no vacuum component. Therefore (1)-(2) imply
++
++ ||P_epsilon D Omega_L||^2 <= 4 C_B^2 m^2 ||D||^2 S_L(epsilon),
++ S_L(epsilon) = Ncell^(-1) # {lambda: omega_lambda<=epsilon}.        (3)
++
++The conical canonical dispersion and half-shifted grids give a constant C_D such that
++
++ S_L(epsilon) <= C_D epsilon^3                                    (4)
++
++for all epsilon>0 and all allowed L. To see the finite-grid uniformity, near each of finitely many nodes sin distance >=(2/pi) distance on its nearest-node cube. The mode count in radius O(epsilon/|t|) is at most a constant times (L epsilon/|t|+1)^3. The AP grid has omega_min >= c |t|/L: below that the count is zero; otherwise the +1 is absorbed in L epsilon/|t|. Dividing by Ncell proportional to L^3 proves (4). Outside fixed node cubes the frequencies are bounded below; enlarge the same constant to cover all epsilon. The fixed band multiplicity only changes C_D. An exact-zero grid or a flat zero band would invalidate this step.
++
++## 2. Rapid quasi-locality extends the bound to the full star vector
++
++For any uniformly rapidly quasi-local odd family Y_L,v, take odd approximants at dyadic radii r_n=2^n and telescope:
++
++ D_L,0=Y_L,v,1; D_L,n=Y_L,v,2^n-Y_L,v,2^(n-1).
++
++On each finite torus the sequence eventually becomes the exact whole-torus operator; equivalently append its final tail as a whole-torus shell. Volume growth gives m_L,n<=C_V(1+2^n)^3, while ||D_L,n||<=C_p' 2^(-np) for every fixed p. Hence
++
++ K_Y = sup_L 2 C_B sum_n m_L,n ||D_L,n|| < infinity,               (5)
++
++using any p>3. These are actual bounds on local operators, not a potentially ill-conditioned expansion in Wick monomials. Triangle inequality applied to (3) gives
++
++ mu_L,Y((0,epsilon]) := ||P_epsilon Y_L,v Omega_L||^2
++                      <= K_Y^2 C_D epsilon^3.                    (6)
++
++Also ||Y_L,v Omega_L||<=C0. Every odd sector is included. No independent-particle approximation to chi has entered.
++
++As a second occupation-basis check, for s>0 and every nonempty occupied configuration,
++
++ (sum_occupied omega)^(-s) <= sum_occupied omega^(-s).
++
++Thus inverse-energy moments can also be bounded by sum_lambda omega_lambda^(-s)||a_lambda D Omega||^2 for each local D. The spectral-count proof above provides the more useful uniform small-energy tail and avoids a separate singular lattice sum for each s.
++
++## 3. Inverse-energy domains and uniform integrability
++
++For any 0<s<3, Stieltjes integration using F(epsilon)<=C_Y epsilon^3, C_Y=K_Y^2 C_D, gives
++
++ integral_(0,epsilon] E^(-s) dmu_L,Y(E)
++ <= [3 C_Y/(3-s)] epsilon^(3-s).                                 (7)
++
++The E=0 boundary term vanishes by the same cubic bound. Above any fixed E_*>0 the inverse moment is bounded by E_*^(-s) C0^2. In particular
++
++ sup_L ||H_L^(-1) chi_L,v||^2 < infinity,
++ sup_L <chi_L,v,H_L^(-1)chi_L,v> < infinity.                        (8)
++
++More generally chi lies in Dom H_L^(-q) with uniform norm for every 0<q<3/2. Fractional inverses refer to the nonvacuum sector; oddness removes the zero vacuum. The endpoint q=3/2 is not supplied. No nonzero node value or sharp threshold claim is made.
++
++## 4. Thermodynamic spectral and inverse-response limits
++
++Let mu_L,Y be the positive spectral measure of chi_L,v. For each fixed real time t,
++
++ integral exp(-itE) dmu_L,Y(E)
++ = omega_L(Y_L,v^* tau_L,t(Y_L,v))
++ -> omega(Y_v^* tau_t(Y_v)).                                     (9)
++
++The reference energy cancels since H_L Omega_L=0. Replace Y by fixed-ball approximants, use compact-time local dynamics and local-state convergence, and then send their uniform tails to zero. The right side is the characteristic function of the GNS spectral measure mu_Y of Y_v Omega, continuous at zero.
++
++For an elementary tightness argument, the quadratic finite-range generator obeys ||[H_L,D]||<=C_H m ||D|| for a local operator D on m sites. Equation (5) therefore gives a uniform bound on ||H_L Y_L,v Omega_L||. The dyadic commutator series is norm convergent and its closed derivation limit is [H_L,Y_L,v]; the same construction works in infinite volume. Thus the spectral measures have uniformly bounded second energy moments. Smooth compactly supported functional calculus follows from (9) by Fourier inversion and dominated convergence; the moment bound supplies tightness and approximation by continuous compactly supported functions. This proves weak convergence of the finite positive measures, with their total masses also convergent.
++
++The cubic bound passes to the limiting measure (use open low-energy intervals and then monotone endpoints). There is no zero-energy atom on the odd Fock subspace: the one-particle multiplier is positive almost everywhere, and each positive-particle-number sum has no zero kernel. Alternatively the continuous cutoff version of (6) directly excludes such an atom. Therefore (7) holds in the limit, and uniform low-energy integrability plus weak convergence implies
++
++ integral E^(-s) dmu_L,Y -> integral E^(-s) dmu_Y,  0<s<3.           (10)
++
++At high energy E^(-s) is bounded and vanishes; near zero (7) controls the omitted part uniformly. In particular the full singleton susceptibility and squared inverse-vector norm have finite thermodynamic limits. These are scalar/matrix-element limits across the prescribed local identifications, not a global isometric embedding of finite periodic Fock spaces.
++
++Polarization with Y_v+zY_w, z in {1,-1,i,-i}, yields convergence of fixed-position cross matrix elements <chi_L,v,H_L^(-1)chi_L,w>. The same local proof applies to a fixed union of two centers.
++
++## 5. Isolating the higher odd contribution without nonlocal number-projector assumptions
++
++Define L_L,v=sum_j c_L,vj gamma_j using the actual Gaussian extraction coefficients in PR8063, and Z_L,v=Y_L,v-L_L,v. Weighted l1 bounds supply uniformly rapid odd ball approximants to L, and its weighted coefficient convergence supplies the same local thermodynamic limit. On the vacuum,
++
++ L_L,v Omega_L=P1 chi_L,v,
++ Z_L,v Omega_L=P_(>=3) chi_L,v.
++
++The infinite identity holds by the parent's Gaussian extraction theorem. Thus Z satisfies all hypotheses in sections 1-4. Consequently the higher odd weight ||Z_L,v Omega_L||^2 and its inverse-energy moments for 0<s<3 converge to finite nonnegative limits. H commutes with quasiparticle number, so the full scalar susceptibility is the sum of its one-particle and higher odd parts, without cross terms. This argument does not require independently asserting convergence of nonlocal finite-volume number projections.
++
++A positive value at L6 does not bound the limit from below, especially since L6 is outside the uniform L=4M,M>=32 domain. This theorem establishes existence/control, not positivity, of the infinite higher odd response.
++
++## 6. Stronger nine-power tail for the higher odd component
++
++For the actual Z family constructed in section 5, the cubic bound strengthens to a nine-power bound.
++
++Write N_epsilon=sum_{omega_l<=epsilon} a_l* a_l. On occupation vectors with particle number>=3 and total energy in(0,epsilon], every occupied mode is soft. Thus
++
++ 1_(0,epsilon](H) P_(>=3) <= N_epsilon(N_epsilon-1)(N_epsilon-2)/6.
++
++This remains a diagonal positive operator inequality on the entire Fock basis, with the left side understood to include P_(>=3). Consequently, using CAR,
++
++ ||1_(0,epsilon](H) Z Omega||²
++ <= (1/6) sum_{i,j,k soft, distinct} ||a_k a_j a_i Z Omega||².
++
++For a local parity-homogeneous D supported on m real Majoranas, move each annihilator through D using the GRADED commutator. Since annihilators kill Omega, the triple action equals a triple nested graded commutator applied to Omega. Each commutator flips parity, remains supported on D's sites, and has norm at most (2 C_B m/sqrt(Ncell)) times the preceding operator norm. The commutator types alternate anticommutator/ordinary commutator/anticommutator for initially odd D. Therefore
++
++ ||a_k a_j a_i D Omega|| <= (2 C_B m)^3 ||D|| / Ncell^(3/2).
++
++Decompose the uniformly quasi-local Z into odd dyadic shells D_n of support m_n=O(2^(3n)). The constant
++
++ K_3=sum_n (2 C_B m_n)^3 ||D_n||
++
++is uniform using any tail exponent p>9. Triangle inequality bounds every triple action of Z by K_3/Ncell^(3/2). The conical mode count #soft/Ncell<=C_D epsilon³ then gives
++
++ mu_Z((0,epsilon]) <= K_3² C_D³ epsilon^9 /6.
++
++No independence assumption on the three created particles enters. Shells individually need not have zero one-particle vacuum component: the number>=3 condition is used only for the FULL Z vector before shellwise bounds on triple annihilation. This avoids an invalid per-shell number assumption.
++
++Stieltjes integration yields inverse moments for0<s<9 and inverse-vector powers q<9/2, with uniform low-energy remainder9C/(9-s) epsilon^(9-s). Section 4 local spectral convergence then gives the corresponding thermodynamic inverse moments. This is strictly stronger than merely reapplying the generic cubic tail to Z.
++
++The argument generalizes to any uniformly quasi-local parity-homogeneous creator whose vacuum image has particle number at least r: factorial soft-number moment of order r, nested graded commutators, and p>3r give epsilon^(3r). It does NOT claim the required subtraction creator exists for every r without a separate construction. For r=3, existence is already supplied by linear subtraction.
++
++
++The stronger bound controls the higher odd vacuum transition; mixed-flux histories, the interacting reference and the all-coupling relative susceptibility remain open.
++
++## 7. Full singleton inverse-kernel row bound from graded locality
++
++Let v range over all translates and finitely many internal sites of the magnetic cell. Uniform rapid odd quasi-locality implies
++
++ ||{Y_L,v^*,Y_L,w}|| <= g_L(v,w),
++ sup_(L,v) sum_w g_L(v,w) <= G < infinity.                         (11)
++
++For large d(v,w), choose disjoint ball approximants of radii less than d/3; their graded anticommutator is zero. Expanding the error bounds the left side by a constant times C_p(1+d)^(-p), with p>3. At small distances use 2C0^2. Periodic volume growth and finitely many internal types give the uniform summable bound, including seam/twist signs.
++
++For any finitely supported coefficients a, A=sum_v a_v Y_L,v obeys
++
++ ||A Omega_L||^2 <= ||A||^2 <= ||{A^*,A}||
++ <= sum_vw |a_v||a_w|g_L(v,w) <= G sum_v|a_v|^2.                   (12)
++
++Hence V_L:e_v -> chi_L,v extends to a bounded map from site l2 to active Fock space, norm <=sqrt(G); the same holds in infinite volume. This does not assume exponential vacuum clustering or an active gap. Graded locality controls the anticommutator even when ordinary vacuum correlations are long ranged.
++
++Define the FULL singleton kernel
++
++ T_L,vw=<chi_L,v,H_L^(-1)chi_L,w>.
++
++It is Hermitian and positive as a form on finite site sequences. By (8) and (12), the conjugated row is V_L^* H_L^(-1)chi_L,v, so
++
++ sum_w |T_L,vw|^2 <= G ||H_L^(-1)chi_L,v||^2 <= C_T.              (13)
++
++The infinite kernel has the same bound, and each fixed entry converges by (10). The argument also applies to the higher odd Z family. It proves a full response row l2 bound, not row l1, bounded global convolution-operator norm, strong l2 convergence of finite rows, or locality of every sixth-order term.
++
++For real spectator coefficients CAR gives ||sum a_w beta_w||=||a||2; for complex coefficients it gives the safe bound sqrt(2)||a||2. Thus (13) bounds the corresponding singleton spectator linear fields and local commutators of their self-adjoint quadratic realification, exactly as in the one-particle parent but now including all active odd intermediate sectors. The full physical sixth-order effective Hamiltonian may contain other histories and cancellations; it is not identified here.
++
++## 8. Absolutely summable higher-odd singleton channel
++
++### A one-sided inverse filter whose adjoint kills the vacuum
++
++Choose real smooth theta with0<=theta<=1, theta(x)=0 for x<=1/2 and theta(x)=1 for x>=1. Let f(x)=theta(x)/x, defining it as0 near zero and on negative x. Then f and every derivative belong to L2(R). Plancherel plus Cauchy-Schwarz, with sufficiently many polynomial time weights, gives an inverse Fourier kernel w with every weighted L1 moment finite. This argument does NOT require w bounded at t=0; the one-sided1/x tail can give a logarithmic singularity there, which is integrable.
++
++With energy measured in the fixed hopping unit, for 0<epsilon<=1 set f_epsilon(x)=epsilon^-1 f(x/epsilon)=theta(x/epsilon)/x and w_epsilon(t)=w(epsilon t), in the same Fourier convention f(x)=integral w(t)e^-itx dt. Hence
++
++ integral |t|^p |w_epsilon(t)|dt = epsilon^(-p-1) M_p.
++
++Define the bounded odd quasi-local operator X_epsilon,w=integral w_epsilon(t) tau_t(Z_w)dt. Since H Omega=0,
++
++ X_epsilon,w Omega=f_epsilon(H) Z_w Omega,
++ X_epsilon,w* Omega=f_epsilon(-H) Z_w* Omega=0.
++
++The second identity is crucial and uses the positive generator, real filter and negative-frequency support exclusion, not Hermiticity of Z. Therefore for every v,
++
++ <Z_v Omega,X_epsilon,w Omega>=omega({Z_v*,X_epsilon,w}).
++
++The reversed product has zero vacuum expectation because X_epsilon,w* Omega=0. An ordinary arbitrary inverse approximation would not permit this replacement by a graded anticommutator.
++
++### Two errors: infrared vector tail and spatial operator tail
++
++The higher-odd spectral bound mu_Z(0,e]<=C e^9 gives
++
++ ||(H^-1-f_epsilon(H))Z_w Omega||
++ <= [integral_(0,epsilon] E^-2 dmu_Z]^(1/2)
++ <= sqrt(9C/7) epsilon^(7/2).
++
++Thus replacing T^Z_vw by the filtered correlation costs at most a uniform constant times epsilon^(7/2).
++
++For R=distance(v,w) large, approximate Z_v by an odd operator in its R/4 ball. For |t|<=cR, with c a fixed inverse propagation velocity, tau_t(Z_w) has an odd R/4-ball approximant with error <=C_q R^-q for every fixed q. This follows by first truncating Z_w to a smaller fixed fraction of R, then applying the finite-range propagation bound; the exponential short-time leakage and original rapid tails are uniform in volume. Constants may depend on q, not epsilon,R,L.
++
++Integrate those local approximants only for |t|<=cR. Their support is disjoint from the v approximant, so the graded anticommutator vanishes. The short-time error is at most C_q epsilon^-1 R^-q. The long-time part is bounded by norms and the filter moment:
++
++ integral_(|t|>cR)|w_epsilon(t)|dt <= C_p epsilon^(-p-1) R^-p.
++
++The v truncation error times ||X_epsilon,w||<=M0 epsilon^-1 has the same first form. Consequently
++
++ |T^Z_vw| <= C epsilon^(7/2)+C_q epsilon^-1 R^-q
++                         +C_p epsilon^(-p-1)R^-p.
++
++Finite torus balls use their graph distance; at sufficiently large ball size they equal the whole algebra. The same constants and argument apply to the infinite limit.
++
++### Explicit summable exponent and thermodynamic rows
++
++Choose epsilon=R^(-7/8), p=q=32. The three powers are respectively
++
++ R^(-49/16), R^(-249/8), R^(-25/8).
++
++Thus |T^Z_vw|<=C'(1+R)^(-49/16), uniformly in volume. Since49/16>3, the row is l1 summable on the three-dimensional lattice. More generally any exponent below7/2 can be achieved by choosing epsilon=R^-a with a<1 sufficiently close to1 and sufficiently high filter moments.
++
++Section 4 gives convergence of every fixed entry. The new common summable spatial majorant gives l1 convergence of centered zero-extended rows by dominated convergence. In a fixed magnetic cell, the corresponding Fourier coefficient symbols therefore converge uniformly. This does not claim an isometric embedding of finite periodic many-body spaces.
++
++The higher-odd quadratic singleton channel now has an absolutely summable kernel, hence a bounded convolution operator by Schur's estimate. This is a statement about the defined response kernel (or its self-adjoint realification), not identification of the full native sixth-order Hamiltonian. For the one-particle component the generic cubic spectral tail supplies only powers below 1/2 through this filtering argument; it gives no summable bound for that component. Nonlinear higher-odd singleton returns can therefore be separated as a summable channel while the linear return still requires controlled resummation. Other mixed histories and the all-u relative-impurity susceptibility remain outside the result.
++
++## Evidence and scope
++
++The supporting runner executes 1217 exact-dyadic CAR, occupation and rational spectral controls on a four-mode toy. It includes a complex non-Hermitian creator with both one- and three-particle content, an explicit unitary mode basis, the full low-energy occupation inequality, inverse-moment bounds, dyadic tail sums, a graded Gram bound, the triple graded-commutator identity, factorial soft-number counting, the nine-power tail after exact one-particle subtraction, a one-sided spectral-filter fixture and the spatial exponent balance. Seven explicit counterexamples reject common invalid replacements: ordinary instead of graded locality, one-particle instead of full low-energy projection, endpoint integrability from cubic counting alone, a uniform row bound from individual inverse-vector norms alone, requiring each dyadic shell to have no one-particle part, endpoint integrability at inverse power nine, and annihilation of the vacuum by an arbitrary two-sided inverse filter. These are exhibited mathematical counterexamples, not claimed executions of mutated physical solvers. No native physical calculation was performed. The finite controls support inspection; the preceding proof establishes the infinite-volume assertions.
++
++Original source and independent proof review are preserved in the branch packet. The finite L6 nonlinear calculation is not a premise and is not extrapolated. Constants are existence bounds from the stated conical dispersion and uniform quasi-locality, not numerical estimates. Preparation, the physical choice of Hamiltonian and Gaussian state, mixed histories, node values, and fixed-coupling interacting stability remain separate obligations.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 872695cefa..0c1b147053 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12170,
+- "node_count": 4883,
++ "edge_count": 12173,
++ "node_count": 4884,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -12278,6 +12278,10 @@
+    "deps_hash": "c5e1a7c2d9cb",
+    "out_degree": 3
+   },
++  "native_full_star_infrared_response_note_2026-09-09": {
++   "deps_hash": "3acd98253807",
++   "out_degree": 3
++  },
+   "native_gauge_closure_note": {
+    "deps_hash": "5420992392c0",
+    "out_degree": 2
+diff --git a/outputs/native_full_star_infrared_response_2026_09_09.json b/outputs/native_full_star_infrared_response_2026_09_09.json
+new file mode 100644
+index 0000000000..e7d7ab7a4b
+--- /dev/null
++++ b/outputs/native_full_star_infrared_response_2026_09_09.json
+@@ -0,0 +1,73 @@
++{
++  "scope": "Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem",
++  "PASS": 1217,
++  "FAIL": 0,
++  "groups": {
++    "CAR": 64,
++    "nonlinear_fixture": 3,
++    "graded_support": 5,
++    "mode_CAR": 16,
++    "annihilation_identity": 4,
++    "local_annihilation_bound": 4,
++    "mode_fock_basis": 256,
++    "parseval": 1,
++    "odd_no_vacuum": 1,
++    "occupation_low_energy": 272,
++    "full_vector_low_energy": 17,
++    "inverse_moment": 2,
++    "geometric_inverse_moment": 40,
++    "uniform_low_energy_tail": 40,
++    "graded_Bessel": 16,
++    "missing_Bessel_counterexample": 3,
++    "counterexample_ordinary_commutator_outside_support": 1,
++    "counterexample_replace_full_low_energy_by_one_particle": 1,
++    "counterexample_claim_endpoint_s3_integrable": 1,
++    "counterexample_individual_inverse_norm_implies_uniform_row": 1,
++    "exact_linear_subtraction": 2,
++    "triple_graded_identity": 24,
++    "triple_local_bound": 24,
++    "factorial_occupation_bound": 272,
++    "factorial_annihilation_identity": 17,
++    "higher_odd_low_energy": 17,
++    "shell_cancellation": 1,
++    "nine_power_inverse_moment": 45,
++    "nine_power_low_energy_tail": 45,
++    "counterexample_one_particle_free_shells_required": 1,
++    "counterexample_endpoint_s9_integrability": 1,
++    "positive_filter_adjoint_vacuum": 1,
++    "positive_filter_nonzero_creator": 1,
++    "counterexample_one_sided_filter": 1,
++    "filtered_inverse_vacuum": 15,
++    "summable_power_balance": 1,
++    "three_dimensional_summability": 1
++  },
++  "counterexamples_exhibited": {
++    "ordinary_commutator_outside_support": true,
++    "replace_full_low_energy_by_one_particle": true,
++    "claim_endpoint_s3_integrable": true,
++    "individual_inverse_norm_implies_uniform_row": true,
++    "one_particle_free_shells_required": true,
++    "endpoint_s9_integrability": true,
++    "arbitrary_inverse_filter_adjoint_kills_vacuum": true
++  },
++  "fixture_particle_weights": {
++    "one": "4",
++    "three": "2"
++  },
++  "full_inverse_moments": {
++    "1": "16545/2002",
++    "2": "86442765/4008004"
++  },
++  "status": "PASS",
++  "input_sha256": {
++    "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md": "4365a7cb5621e3cc7f678263255f443cf997acdabb9490c7997c95cfefdd2e0c",
++    "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md": "1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc",
++    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "b91828c58b110e984c6c033b3ba5b464f1bcb7dcb569262f054d5e5384df0eb7",
++    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "1a61b1c79b351343c88b619a454d2f2c03565e64d1c738f198fa90586831e042",
++    "scripts/native_full_star_infrared_controls_2026_09_09.py": "144a40e270c8f0419bbf033e347436540f3df0079d59a4bc2c6206c9736f1264"
++  },
++  "source_sha256": "0ae55cd857751eb3c49446e04134e7cb468d349177945c25d52dc0aef1b5e7a9",
++  "elapsed_seconds": 0.120903333008755,
++  "peak_rss_bytes": 21757952,
++  "actual_current_surface_status": "conditional-support"
++}
+diff --git a/scripts/native_full_star_infrared_controls_2026_09_09.py b/scripts/native_full_star_infrared_controls_2026_09_09.py
+new file mode 100644
+index 0000000000..61535d228b
+--- /dev/null
++++ b/scripts/native_full_star_infrared_controls_2026_09_09.py
+@@ -0,0 +1,186 @@
++"""Small exact-dyadic CAR and rational spectral controls; no native physical run."""
++from fractions import Fraction as F
++import itertools,json,hashlib
++from pathlib import Path
++N=4;D=1<<N
++count=0;groups={};counterexamples={}
++def check(ok,group):
++ global count
++ if not ok: raise AssertionError(group)
++ count+=1;groups[group]=groups.get(group,0)+1
++def zero():return [[0j]*D for _ in range(D)]
++def plus(a,b,sign=1):return [[a[i][j]+sign*b[i][j] for j in range(D)] for i in range(D)]
++def scale(a,c):return [[x*c for x in row] for row in a]
++def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(D)) for j in range(D)] for i in range(D)]
++def adj(a):return [[a[j][i].conjugate() for j in range(D)] for i in range(D)]
++def mv(a,v):return [sum(x*y for x,y in zip(row,v)) for row in a]
++def inner(a,b):return sum(x.conjugate()*y for x,y in zip(a,b))
++def norm2(a):return sum(x.real*x.real+x.imag*x.imag for x in a)
++def iszero(a):return all(x==0 for row in a for x in row)
++def eye():return [[complex(i==j) for j in range(D)] for i in range(D)]
++def prod(seq):
++ a=eye()
++ for b in seq:a=mm(a,b)
++ return a
++ann=[]
++for j in range(N):
++ a=zero()
++ for s in range(D):
++  if s>>j&1:a[s^(1<<j)][s]=(-1)**((s&((1<<j)-1)).bit_count())
++ ann.append(a)
++gamma=[]
++for a in ann:gamma.extend([plus(a,adj(a)),scale(plus(adj(a),a,-1),1j)])
++for i,j in itertools.product(range(2*N),repeat=2):
++ check(plus(mm(gamma[i],gamma[j]),mm(gamma[j],gamma[i]))==scale(eye(),2*(i==j)),'CAR')
++# A deliberately complex non-Hermitian local odd operator, with actual 1/3-particle content.
++Y=plus(scale(gamma[0],2),scale(prod([gamma[0],gamma[2],gamma[4]]),1+1j))
++support={0,2,4};vac=[complex(i==0) for i in range(D)];chi=mv(Y,vac)
++check(norm2([chi[s] if s.bit_count()==1 else 0 for s in range(D)])>0,'nonlinear_fixture')
++check(norm2([chi[s] if s.bit_count()==3 else 0 for s in range(D)])>0,'nonlinear_fixture')
++check(Y!=adj(Y),'nonlinear_fixture')
++for j in range(2*N):
++ if j not in support:
++  ac=plus(mm(gamma[j],Y),mm(Y,gamma[j]))
++  check(iszero(ac),'graded_support')
++counterexamples['ordinary_commutator_outside_support']=not iszero(plus(mm(gamma[1],Y),mm(Y,gamma[1]),-1))
++# Exact Walsh Bloch toy: each annihilator has four physical complex-mode coefficients +/-1/2.
++walsh=[[(-1)**((i&j).bit_count())/2 for j in range(N)] for i in range(N)]
++a_modes=[]
++for row in walsh:
++ a=zero()
++ for c,x in zip(row,ann):a=plus(a,scale(x,c))
++ a_modes.append(a)
++for i,j in itertools.product(range(N),repeat=2):
++ check(plus(mm(a_modes[i],adj(a_modes[j])),mm(adj(a_modes[j]),a_modes[i]))==scale(eye(),i==j),'mode_CAR')
++# Expansion coefficient on every real Majorana has modulus1/4. Bound ||Y||<=4
++# uses ||gamma products||=1 and |1+i|<=2, independently of matrix outcome.
++for a in a_modes:
++ lhs=mv(a,chi);rhs=mv(plus(mm(a,Y),mm(Y,a)),vac)
++ check(lhs==rhs,'annihilation_identity')
++ check(norm2(lhs)<=F(1,4)*len(support)**2*4**2,'local_annihilation_bound')
++omega=[F(1,4),F(1,2),F(1),F(2)]
++states=[];energies=[];numbers=[]
++for occupied in range(D):
++ v=vac[:]
++ for j in reversed(range(N)):
++  if occupied>>j&1:v=mv(adj(a_modes[j]),v)
++ states.append(v);energies.append(sum((omega[j] for j in range(N) if occupied>>j&1),F(0)));numbers.append(occupied.bit_count())
++for i,j in itertools.product(range(D),repeat=2):check(inner(states[i],states[j])==complex(i==j),'mode_fock_basis')
++amplitudes=[inner(v,chi) for v in states]
++weights=[F(z.real)**2+F(z.imag)**2 for z in amplitudes]
++check(sum(weights)==F(norm2(chi)),'parseval')
++check(weights[0]==0,'odd_no_vacuum')
++for eps in sorted(set(energies+[F(1,8),F(4)])):
++ if eps<=0:continue
++ low=F(0);count_expect=F(0)
++ for mask,E,w in zip(range(D),energies,weights):
++  projection=int(0<E<=eps)
++  q=sum(omega[j]<=eps for j in range(N) if mask>>j&1)
++  check(projection<=q,'occupation_low_energy')
++  low+=projection*w;count_expect+=q*w
++ check(low<=count_expect,'full_vector_low_energy')
++for s in [1,2]:
++ actual=sum((w/E**s for E,w in zip(energies,weights) if E),F(0))
++ bound=sum((F(norm2(mv(a,chi)))/e**s for a,e in zip(a_modes,omega)),F(0))
++ check(actual<=bound,'inverse_moment')
++# Replacing full projection by P1 fails on the actual three-particle occupied vector.
++mask=7;eps=energies[mask]
++counterexamples['replace_full_low_energy_by_one_particle']=int(0<energies[mask]<=eps)>int(numbers[mask]==1)
++# Exact conical toy: atom at2^-j has weight(7/8)2^-3j; cumulative low tail equals2^-3J.
++for s in [1,2]:
++ exact=F(7,8)/(1-F(2)**(s-3))
++ for J in range(1,21):
++  head=sum((F(7,8)*F(2)**((s-3)*j) for j in range(J)),F(0))
++  remainder=F(7,8)*F(2)**((s-3)*J)/(1-F(2)**(s-3))
++  check(head+remainder==exact,'geometric_inverse_moment')
++  check(remainder<=F(3,3-s)*F(2)**(-(3-s)*J),'uniform_low_energy_tail')
++counterexamples['claim_endpoint_s3_integrable']=sum((F(7,8) for _ in range(20)),F(0))>sum((F(7,8) for _ in range(10)),F(0))
++# Operator anticommutator Gram domination for overlapping, complex odd fields.
++Ys=[plus(gamma[j],scale(prod([gamma[j],gamma[(j+1)%8],gamma[(j+2)%8]]),1j)) for j in range(8)]
++def opbound(a):
++ # Max row/column absolute Gaussian-rational l1 sum bounds spectral norm.
++ mag=lambda z:abs(z.real)+abs(z.imag)
++ return max(max(sum(mag(x) for x in row) for row in a),max(sum(mag(a[i][j]) for i in range(D)) for j in range(D)))
++g=[[opbound(plus(mm(adj(a),b),mm(b,adj(a)))) for b in Ys] for a in Ys]
++G=max(map(sum,g))
++for shift in range(16):
++ c=[complex((-1)**((shift+j)%3),((shift+2*j)%3)-1) for j in range(8)]
++ A=zero()
++ for a,y in zip(c,Ys):A=plus(A,scale(y,a))
++ check(norm2(mv(A,vac))<=G*sum(abs(x.real)**2+abs(x.imag)**2 for x in c),'graded_Bessel')
++for size in [2,4,8]:
++ # Identical chi_v all equal one unit vector: each inverse norm=1, row norm squared=size.
++ check(size>1,'missing_Bessel_counterexample')
++counterexamples['individual_inverse_norm_implies_uniform_row']=8>1
++for name,rejected in counterexamples.items():check(rejected,'counterexample_'+name)
++# The actual one-particle-subtracted creator has only three-particle vacuum content.
++Z=plus(Y,scale(gamma[0],2),-1);zchi=mv(Z,vac)
++zweights=[F(inner(v,zchi).real)**2+F(inner(v,zchi).imag)**2 for v in states]
++check(all(w==0 for w,n in zip(zweights,numbers) if n<3),'exact_linear_subtraction')
++check(sum(zweights)==2,'exact_linear_subtraction')
++triple_vectors={}
++for i,j,k in itertools.permutations(range(N),3):
++ direct=mv(a_modes[k],mv(a_modes[j],mv(a_modes[i],zchi)))
++ c1=plus(mm(a_modes[i],Z),mm(Z,a_modes[i]))
++ c2=plus(mm(a_modes[j],c1),mm(c1,a_modes[j]),-1)
++ c3=plus(mm(a_modes[k],c2),mm(c2,a_modes[k]))
++ check(direct==mv(c3,vac),'triple_graded_identity')
++ # ||Z||<=2 and each physical Majorana coefficient has modulus1/4.
++ check(norm2(direct)<=F(1,2)**6*len(support)**6*2**2,'triple_local_bound')
++ triple_vectors[i,j,k]=direct
++for eps in sorted(set(energies+[F(1,8),F(4)])):
++ if eps<=0:continue
++ low=sum((w for E,w in zip(energies,zweights) if 0<E<=eps),F(0))
++ ordered=sum((F(norm2(v)) for inds,v in triple_vectors.items() if all(omega[j]<=eps for j in inds)),F(0))
++ factorial=F(0)
++ for mask,E,w,n in zip(range(D),energies,zweights,numbers):
++  q=sum(omega[j]<=eps for j in range(N) if mask>>j&1)
++  choose=F(q*(q-1)*(q-2),6)
++  check(int(n>=3 and 0<E<=eps)<=choose,'factorial_occupation_bound')
++  factorial+=choose*w
++ check(ordered/6==factorial,'factorial_annihilation_identity')
++ check(low<=factorial,'higher_odd_low_energy')
++# Each summand below has one-particle content although their sum is the actual Z.
++Dfirst=plus(Z,gamma[0]);Dsecond=scale(gamma[0],-1)
++check(plus(Dfirst,Dsecond)==Z,'shell_cancellation')
++counterexamples['one_particle_free_shells_required']=all(norm2([mv(x,vac)[m] if m.bit_count()==1 else 0 for m in range(D)])>0 for x in [Dfirst,Dsecond])
++# Nine-power toy tail; the endpoint inverse moment s9 remains unsupported.
++for power in [2,4,8]:
++ exact=F(511,512)/(1-F(2)**(power-9))
++ for J in range(1,16):
++  head=sum((F(511,512)*F(2)**((power-9)*j) for j in range(J)),F(0))
++  tail=F(511,512)*F(2)**((power-9)*J)/(1-F(2)**(power-9))
++  check(head+tail==exact,'nine_power_inverse_moment')
++  check(tail<=F(9,9-power)*F(2)**(-(9-power)*J),'nine_power_low_energy_tail')
++counterexamples['endpoint_s9_integrability']=20*F(511,512)>10*F(511,512)
++for name in ['one_particle_free_shells_required','endpoint_s9_integrability']:
++ check(counterexamples[name],'counterexample_'+name)
++# Finite spectral filter in the exact Fock energy basis. Gaussian rational pairs
++# preserve the non-dyadic inverse-frequency coefficients exactly.
++def rat(z):return F(z.real),F(z.imag)
++def rscale(z,a):return z[0]*a,z[1]*a
++Zbasis=[[rat(inner(v,mv(Z,u))) for u in states] for v in states]
++eps=F(1,2)
++def filter_matrix(onesided):
++ out=[]
++ for i in range(D):
++  row=[]
++  for j in range(D):
++   gap=energies[i]-energies[j]
++   f=1/gap if (gap>=eps if onesided else abs(gap)>=eps) else F(0)
++   row.append(rscale(Zbasis[i][j],f))
++  out.append(row)
++ return out
++Xp=filter_matrix(True);Xboth=filter_matrix(False)
++check(all(x==(0,0) for x in Xp[0]),'positive_filter_adjoint_vacuum')
++check(any(x!=(0,0) for x in [row[0] for row in Xp]),'positive_filter_nonzero_creator')
++counterexamples['arbitrary_inverse_filter_adjoint_kills_vacuum']=any(x!=(0,0) for x in Xboth[0])
++check(counterexamples['arbitrary_inverse_filter_adjoint_kills_vacuum'],'counterexample_one_sided_filter')
++# All Z-vacuum excitations in this fixture lie above the filter cutoff.
++for i in range(1,D):
++ check(Xp[i][0]==rscale(Zbasis[i][0],1/energies[i]),'filtered_inverse_vacuum')
++a=F(7,8);pwr=32
++exponents=[F(7,2)*a,F(pwr)-a,F(pwr)-(pwr+1)*a]
++check(exponents==[F(49,16),F(249,8),F(25,8)],'summable_power_balance')
++check(min(exponents)>3,'three_dimensional_summability')
++record={'scope':'Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem','PASS':count,'FAIL':0,'groups':groups,'counterexamples_exhibited':counterexamples,'fixture_particle_weights':{'one':str(sum((w for w,n in zip(weights,numbers) if n==1),F(0))),'three':str(sum((w for w,n in zip(weights,numbers) if n==3),F(0)))},'full_inverse_moments':{str(s):str(sum((w/E**s for E,w in zip(energies,weights) if E),F(0))) for s in [1,2]}}
+diff --git a/scripts/native_full_star_infrared_response_2026_09_09.py b/scripts/native_full_star_infrared_response_2026_09_09.py
+new file mode 100644
+index 0000000000..6b09b7d3e5
+--- /dev/null
++++ b/scripts/native_full_star_infrared_response_2026_09_09.py
+@@ -0,0 +1,15 @@
++"""Supporting finite controls for the analytic full odd-star infrared theorem."""
++AUDIT_TIMEOUT_SEC=30
++AUDIT_INPUT_PATHS=('docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md', 'docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md', 'docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md', 'docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md', 'scripts/native_full_star_infrared_controls_2026_09_09.py')
++def main():
++ import argparse,json,hashlib,signal,time,resource
++ from pathlib import Path
++ ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.parse_args();signal.alarm(30);start=time.monotonic();root=Path(__file__).resolve().parents[1]
++ hashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
++ helper=root/AUDIT_INPUT_PATHS[-1];data=helper.read_bytes();ns={'__name__':'controls','__file__':str(helper)};exec(compile(data,str(helper),'exec'),ns);out=ns['record']
++ if out['FAIL'] or out['PASS']!=1217:raise ValueError('supporting control count')
++ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++ if rss>384*1048576:raise ValueError('memory cap')
++ out.update(status='PASS',input_sha256=hashes,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),elapsed_seconds=time.monotonic()-start,peak_rss_bytes=rss,actual_current_surface_status='conditional-support')
++ print(json.dumps(out,indent=2))
++if __name__=='__main__':main()

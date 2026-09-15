@@ -216,10 +216,121 @@
         "review-8043.md": "97620cc9eec778a211e54818aaba38a7cba7779c9b89f6f404d1bdfbcafcdf38",
         "review-8043.json": "bcd3aa917c5050f4538c21b662186e3e8739c8b023979c99f67a3259962af9a6"
       }
+    },
+    {
+      "unit": "8134",
+      "prs": [
+        8133,
+        8134
+      ],
+      "commits": [
+        "f58220c99a5eb1f9483d34f337debbf359a42308"
+      ],
+      "final_head": "f58220c99a5eb1f9483d34f337debbf359a42308",
+      "source_paths": {
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+        "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+        "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/README.md": "00ae74959c971e6b380c617024dd558dcee4ce10353079e640a0b228653ae247",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702",
+        "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409",
+        "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28",
+        "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab",
+        "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt": "dfd27ee2435d02849dd6d635a5a543fbff2522a4caa878d520e56562a9666a82",
+        "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4",
+        "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620",
+        "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6",
+        "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92",
+        "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+        "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369"
+      },
+      "inputs": {
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+        "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+        "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/README.md": "00ae74959c971e6b380c617024dd558dcee4ce10353079e640a0b228653ae247",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7",
+        "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702",
+        "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409",
+        "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28",
+        "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab",
+        "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt": "dfd27ee2435d02849dd6d635a5a543fbff2522a4caa878d520e56562a9666a82",
+        "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4",
+        "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620",
+        "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6",
+        "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92",
+        "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+        "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+        "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      "reports": [
+        "review-8134.md",
+        "review-8134.json"
+      ],
+      "review_evidence_hashes": {
+        "review-8134.md": "19dba02f74a37bd631cfa5b4158387aaa632f909b4fe3238b441c63b8d2f4bca",
+        "review-8134.json": "a6b1d85d2952b710988e182e9eaaf456aba28a79efaa268c7782c7b64244ba0a"
+      },
+      "required_repository_claim_ids": {
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": [],
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": [],
+        "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": [
+          "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+          "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+        ],
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": [
+          "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15"
+        ],
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": [
+          "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+        ],
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": [
+          "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15"
+        ],
+        "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": [
+          "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15"
+        ]
+      },
+      "dependency_scope": "review-8134.json",
+      "dependency_reason": "Base supplied carrier and coupled representation have no repository proof parents; remaining five notes have exact linked same-unit proof dependencies bound by full independent review."
     }
   ],
-  "science_notes": 1,
-  "source_path_count": 92,
-  "collection_closed": null,
-  "collection_state": "open behind train13"
+  "science_notes": 8,
+  "source_path_count": 120,
+  "collection_closed": "Two ready coherent units, three PRs, depart immediately after train13 landing; no collection timer.",
+  "collection_state": "closed"
 }

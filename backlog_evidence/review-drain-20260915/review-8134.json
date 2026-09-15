@@ -1,0 +1,908 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "unit": [
+    8133,
+    8134
+  ],
+  "reviewer": "original independent backlog_topology session; focused Astra low",
+  "heads": {
+    "8133": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8",
+    "8134": "2d45fc36a80fd8ee887d133bc653d6a658d30ae8"
+  },
+  "declared_bases": {
+    "8133": "main",
+    "8134": "physics-loop/coupled-defect-convexity-20260915"
+  },
+  "actual_merge_bases": {
+    "8133": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+    "8134": "f8e7219b5e79bcb271bb3c1df635ecdeeb57dbe8"
+  },
+  "confirmation_base": "9c59d327433d52f5189d91c38517bbd90e5b3bf6",
+  "final_tree": "03eb4024255262e66162bd9de35440dde68edc2a",
+  "final_worktree": "/private/tmp/review-drain-20260915/unit8134-author-copy",
+  "coherence": "child uses actual parent carrier/filling chain; all4 parent claims additionally reviewed, including quantized sibling",
+  "current_main_loss": "all28 final paths are additions; no existing current-main source replaced",
+  "findings": [
+    {
+      "id": "F1",
+      "status": "fixed and independently confirmed",
+      "scope": "four footer-only prints, fresh caches, no computation change"
+    },
+    {
+      "id": "F2",
+      "status": "fixed and independently confirmed",
+      "scope": "all10 original packet files exact-byte archive with historical link/README"
+    }
+  ],
+  "material_unresolved": [],
+  "constituent_dispositions": {
+    "8133": [
+      {
+        "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+        "blob": "73fb676ab352a272f0d8582efe43a22b647c0886",
+        "disposition": "accepted unchanged",
+        "final_path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+          "blob": "73fb676ab352a272f0d8582efe43a22b647c0886",
+          "bytes": 24685
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+        "blob": "50bd240a27c2420596e944feead99e4721493944",
+        "disposition": "accepted unchanged",
+        "final_path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+          "blob": "50bd240a27c2420596e944feead99e4721493944",
+          "bytes": 15871
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+        "blob": "ac2e95c38f95eacb135480348c3f568fd89a6567",
+        "disposition": "accepted unchanged",
+        "final_path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+          "blob": "ac2e95c38f95eacb135480348c3f568fd89a6567",
+          "bytes": 20657
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+        "blob": "1ddfe787a57e78bac49fade3966efe5723113048",
+        "disposition": "accepted unchanged",
+        "final_path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+          "blob": "1ddfe787a57e78bac49fade3966efe5723113048",
+          "bytes": 22180
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "8a6c6bf5b6913f1917c24c304e470f458f49b00be75e6cf33d8a34013e1e14aa",
+        "blob": "23bcaf0f9823106a2c063c113419264c63275d23",
+        "disposition": "excluded generated topology acknowledgment; immutable original patch retained, fresh integrated manifest is coordinator responsibility",
+        "final_path": null,
+        "final_identity": null,
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/docs/audit/data/citation_graph_manifest.json"
+      },
+      {
+        "path": "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt",
+        "sha256": "902c4d5f1a69bb003b2943d66030ae7dbcfd1d57425f220d07a0d36cfd3df689",
+        "blob": "91bcbdf4c6cea1d58034f57093861eebe1779982",
+        "disposition": "superseded by fresh exact-source canonical execution; original cache preserved",
+        "final_path": "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt",
+        "final_identity": {
+          "sha256": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409",
+          "blob": "bf025e02847f45ddb796b62108dd41e702e30c68",
+          "bytes": 50234
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt",
+        "sha256": "2fa094103908228b5b93e2160cc6619455fcd6989880d8644bdbb80eb9b93d51",
+        "blob": "248e07ee8af7171f0ab9f91ad7903a36edf30497",
+        "disposition": "superseded by fresh exact-source canonical execution; original cache preserved",
+        "final_path": "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt",
+        "final_identity": {
+          "sha256": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28",
+          "blob": "4157303070aae4888af58771f4c4b49e21bf91ce",
+          "bytes": 6028
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt"
+      },
+      {
+        "path": "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt",
+        "sha256": "e5df4237bfd00aa330773fa8c7bf9692a90d1da6545fe19d24e28344c75f9938",
+        "blob": "5baa9e1f6d4b278e2ab9fe10bfa0813438fe60e4",
+        "disposition": "superseded by fresh exact-source canonical execution; original cache preserved",
+        "final_path": "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt",
+        "final_identity": {
+          "sha256": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab",
+          "blob": "8e113597e5e5dbd9ca4906a8e2ab8bdde8f6f1c0",
+          "bytes": 11884
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt"
+      },
+      {
+        "path": "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt",
+        "sha256": "2e04936e5602ca54cd92268b58b7501542f7ab47da935caf68458725b0ad0061",
+        "blob": "909506efa470f6b665acc600f1027b6044103862",
+        "disposition": "superseded by fresh exact-source canonical execution; original cache preserved",
+        "final_path": "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt",
+        "final_identity": {
+          "sha256": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4",
+          "blob": "b485ef25d44ab8fa5368394884be591d20940be5",
+          "bytes": 4784
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt"
+      },
+      {
+        "path": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+        "sha256": "e6b01e428ca5ec5bf5b70bbcc073212be2a33c2c5e920f42978a883a0da8cc18",
+        "blob": "534011f2ff681da1b0f811c6b533f7592e9d6913",
+        "disposition": "accepted scientific computation unchanged; canonical TOTAL reporting added",
+        "final_path": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+        "final_identity": {
+          "sha256": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620",
+          "blob": "2f85d9ba003f509e819e05910fecfd48908e59b1",
+          "bytes": 9361
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py"
+      },
+      {
+        "path": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+        "sha256": "8b15e588272be799f34ccce648c237ccd9a3b8b993ec18d7ae7359eb78f02972",
+        "blob": "e738d12365ab2da8e9ba45c9de849397157d05a6",
+        "disposition": "accepted scientific computation unchanged; canonical TOTAL reporting added",
+        "final_path": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+        "final_identity": {
+          "sha256": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6",
+          "blob": "66ed4ed62631daba8b5eec8163b070d488b29f26",
+          "bytes": 6737
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py"
+      },
+      {
+        "path": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+        "sha256": "47143792e3482a820b11f911758392c266d697544ee9b7bfaa4c1e4457232da5",
+        "blob": "3e1ce0c9b4e2c79c9655de22b19e23bcb5bd4ca2",
+        "disposition": "accepted scientific computation unchanged; canonical TOTAL reporting added",
+        "final_path": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+        "final_identity": {
+          "sha256": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92",
+          "blob": "2e6356b083dac71f4163c5c30bd47d9cdf137521",
+          "bytes": 9269
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py"
+      },
+      {
+        "path": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+        "sha256": "3c0cfcb90bd4d427280b33464141f514a9a4459497bea0c58049f6e19eb35d75",
+        "blob": "5096dfacbfcba1c23b43896fc9e7e0d0746ba824",
+        "disposition": "accepted scientific computation unchanged; canonical TOTAL reporting added",
+        "final_path": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+        "final_identity": {
+          "sha256": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369",
+          "blob": "aec34c926e891297002e0bde21170d142f643a19",
+          "bytes": 10412
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8133/scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py"
+      }
+    ],
+    "8134": [
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd",
+        "blob": "83b516a40a3a7bb81dffd38c50721ca06fda0c64",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md",
+        "final_identity": {
+          "sha256": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd",
+          "blob": "83b516a40a3a7bb81dffd38c50721ca06fda0c64",
+          "bytes": 963
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/CLUSTER_CAP_EVALUATION.md",
+        "sha256": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b",
+        "blob": "97a29cbfe0ef61482c95ef023c4b27e037a232b6",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md",
+        "final_identity": {
+          "sha256": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b",
+          "blob": "97a29cbfe0ef61482c95ef023c4b27e037a232b6",
+          "bytes": 1890
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/CLUSTER_CAP_EVALUATION.md"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+        "sha256": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7",
+        "blob": "b2883599cfc31e20bdf163fb40f3f5a78e1eb789",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+        "final_identity": {
+          "sha256": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7",
+          "blob": "b2883599cfc31e20bdf163fb40f3f5a78e1eb789",
+          "bytes": 1689
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/FOCUSED_EVIDENCE_CHECKS.json"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/GOAL.md",
+        "sha256": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293",
+        "blob": "a07231b84f0952b02eef1ea7040f5cba2ba3d895",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md",
+        "final_identity": {
+          "sha256": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293",
+          "blob": "a07231b84f0952b02eef1ea7040f5cba2ba3d895",
+          "bytes": 1041
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/GOAL.md"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/HANDOFF.md",
+        "sha256": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+        "blob": "26645cce696fc4d844972c6a07ca9f336e48ca01",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md",
+        "final_identity": {
+          "sha256": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+          "blob": "26645cce696fc4d844972c6a07ca9f336e48ca01",
+          "bytes": 2609
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/HANDOFF.md"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/MUTATION_CHECKS.json",
+        "sha256": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717",
+        "blob": "9606a585ea34a996192f679f66cc4a5bc3ab31ff",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json",
+        "final_identity": {
+          "sha256": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717",
+          "blob": "9606a585ea34a996192f679f66cc4a5bc3ab31ff",
+          "bytes": 15263
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/MUTATION_CHECKS.json"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/REVIEW_HISTORY.md",
+        "sha256": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7",
+        "blob": "0419d9d5d64374c563cedf29c08dae4720094735",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md",
+        "final_identity": {
+          "sha256": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7",
+          "blob": "0419d9d5d64374c563cedf29c08dae4720094735",
+          "bytes": 4299
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/REVIEW_HISTORY.md"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/SOURCE_DISPOSITION.json",
+        "sha256": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18",
+        "blob": "de1e62fa263db4cb89aa1c53a6c2e58fe241a9dd",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json",
+        "final_identity": {
+          "sha256": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18",
+          "blob": "de1e62fa263db4cb89aa1c53a6c2e58fe241a9dd",
+          "bytes": 19230
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/SOURCE_DISPOSITION.json"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/STATE.yaml",
+        "sha256": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14",
+        "blob": "202140a3f1972b1ff367e7713ce45a4df1493381",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml",
+        "final_identity": {
+          "sha256": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14",
+          "blob": "202140a3f1972b1ff367e7713ce45a4df1493381",
+          "bytes": 776
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/STATE.yaml"
+      },
+      {
+        "path": ".claude/science/physics-loops/haar-villain-full-score-20260915/TRACE_GATE.md",
+        "sha256": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702",
+        "blob": "a6be6596fa5820dd1d246c5c854ae9501a6d177a",
+        "disposition": "accepted unchanged historical bytes, relocated; author evidence only",
+        "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md",
+        "final_identity": {
+          "sha256": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702",
+          "blob": "a6be6596fa5820dd1d246c5c854ae9501a6d177a",
+          "bytes": 959
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/.claude/science/physics-loops/haar-villain-full-score-20260915/TRACE_GATE.md"
+      },
+      {
+        "path": "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d8895c896187363d9806e3ef6211157b146f3d43cb109e8c4fc965d174eea6c",
+        "blob": "2fe1f69a3e2392eafc52a2d4892313419f9cc0ad",
+        "disposition": "accepted proof unchanged; historical provenance link appended",
+        "final_path": "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+          "blob": "61bdaf8dd87c4332a0f0df4f75ece822f128ae0f",
+          "bytes": 33073
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+        "blob": "c450f4c9e402d7c4284bdee100b6e11e8bd0459f",
+        "disposition": "accepted unchanged",
+        "final_path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+          "blob": "c450f4c9e402d7c4284bdee100b6e11e8bd0459f",
+          "bytes": 31023
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+        "blob": "8a9c3a6e42150d7e3a287ad364067275ee09879f",
+        "disposition": "accepted unchanged",
+        "final_path": "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "final_identity": {
+          "sha256": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+          "blob": "8a9c3a6e42150d7e3a287ad364067275ee09879f",
+          "bytes": 42542
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "21b8ae8b21548879e9a95f259839bf3c65019fa7c6c1f6608dbf498eef8718dc",
+        "blob": "bfd74c7dd04798399506ff6d93f90fc53884870a",
+        "disposition": "excluded generated topology acknowledgment; immutable original patch retained, fresh integrated manifest is coordinator responsibility",
+        "final_path": null,
+        "final_identity": null,
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/docs/audit/data/citation_graph_manifest.json"
+      },
+      {
+        "path": "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt",
+        "sha256": "dfd27ee2435d02849dd6d635a5a543fbff2522a4caa878d520e56562a9666a82",
+        "blob": "c4c59c16bd9f4bf13ee23f6102930485fb02d090",
+        "disposition": "accepted unchanged",
+        "final_path": "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt",
+        "final_identity": {
+          "sha256": "dfd27ee2435d02849dd6d635a5a543fbff2522a4caa878d520e56562a9666a82",
+          "blob": "c4c59c16bd9f4bf13ee23f6102930485fb02d090",
+          "bytes": 20701
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt"
+      },
+      {
+        "path": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+        "sha256": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+        "blob": "bffd78b0e331579c877e1a0dc89a6b55c2c4f6e4",
+        "disposition": "accepted unchanged",
+        "final_path": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+        "final_identity": {
+          "sha256": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+          "blob": "bffd78b0e331579c877e1a0dc89a6b55c2c4f6e4",
+          "bytes": 23674
+        },
+        "recovery": "/private/tmp/review-drain-20260915/check8134/originals/8134/scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "For the explicitly supplied compactly supported closed integer p-form gas with componentwise Dirichlet Green kernel, a Gaussian split and carrier-preserving cluster bound give a positive effective field, uniform gradient Hessian bounds, explicit sufficient convexity constants and all-real-source curvature control. Exact cochain examples distinguish cluster carriers from cancelled net-charge support. The gas is not identified with the full finite-clock gauge law.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": []
+    },
+    {
+      "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "On a finite connected complex with vanishing integer H1 and H2, the supplied clock Villain law and integer characters have an exact coupled electric-current and magnetic-coset Gaussian representation with phase and normalization. A four-cube N=3 term has negative real weight. Summing magnetic cosets first gives a strictly positive electric marginal; its spatial interactions remain to be controlled. No fixed-law phase or axiom obstruction follows.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": []
+    },
+    {
+      "path": "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "fixed_coupling_haar_villain_full_score_gaussian_maxwell_limit_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "For sufficiently large fixed beta, the supplied continuous-Haar U(1) Villain law on free four-dimensional cubes has a selected mixing Gibbs state whose full flux and bounded local score converge under macroscopic rescaling to Gaussian two-form distributions; the score covariance is a nonnegative white contact term plus a strictly positive Maxwell term with a two-polarization continuum reconstruction.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": [
+        {
+          "path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+          "role": "load-bearing same-unit proof premise"
+        },
+        {
+          "path": "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+          "sha256": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+          "role": "load-bearing same-unit proof premise"
+        },
+        {
+          "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+          "role": "load-bearing same-unit proof premise"
+        },
+        {
+          "path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md",
+          "graph_id": "work_history.repo.review_feedback.pr8134-haar-full-score-evidence.pr8134-handoff",
+          "sha256": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+          "role": "historical context, not a mathematical premise"
+        }
+      ]
+    },
+    {
+      "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "For the supplied finite-clock Villain law on free four-dimensional cubic boxes, a boundary-compatible local integer filling extends the provisional carrier theorem to the actual magnetic Hodge kernel. Its locally marked source has uniform curvature bounds. At the stated sufficient smallness, summing magnetic defects gives an exact positive electric-current marginal with a uniformly convex real extension in the Coulomb current metric. The integer marginal retains both defects; no fixed-clock photon limit follows.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": [
+        {
+          "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+          "role": "load-bearing same-unit proof premise"
+        },
+        {
+          "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+          "role": "load-bearing same-unit proof premise"
+        }
+      ]
+    },
+    {
+      "path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "For an even finite-dimensional Gaussian measure perturbed by a C3 interaction with the stated uniform Schur Hessian and third-influence bounds, preconditioned source variation gives a volume-uniform cubic log-MGF remainder; a free-cube reflection and discrete Riesz argument supply the required cochain ell3 bound, and the declared carrier hypotheses satisfy the derivative conditions at sufficiently large fixed beta.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": [
+        {
+          "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+          "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+          "role": "load-bearing same-unit proof premise"
+        },
+        {
+          "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+          "role": "load-bearing same-unit proof premise"
+        }
+      ]
+    },
+    {
+      "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "A lattice Gaussian times the characteristic function of a symmetric probability measure, with nonnegative lattice weights, satisfies an exact positive dual moment identity and centered Gaussian domination. Applied to the supplied clock current law, it gives all-coupling current moment and density bounds and exact Wilson cosets with charge-N aliases. A separate plaquette-Fourier proof checks the same bound. An explicit half-shifted discrete Gaussian prevents an all-tilt continuous variance inference; no nondegenerate infrared limit follows.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": [
+        {
+          "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+          "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+          "role": "load-bearing same-unit proof premise"
+        },
+        {
+          "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+          "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+          "role": "load-bearing same-unit proof premise"
+        }
+      ]
+    },
+    {
+      "path": "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "small_contrast_cochain_gibbs_state_matching_and_spectral_homogenization_bounded_theorem_note_2026-09-15",
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "claim_scope": "For the specified small, summably local cochain interactions and free-cube preconditioners, uniform-root finite Gibbs averages converge to a spatially mixing Gaussian-noise factor, inherit the cubic Gaussian remainder through a two-replica argument, and have a covariance whose low-frequency first block is kappa times the continuum coexact projection under full signed-permutation symmetry.",
+      "disposition": "accepted at stated supplied-model and quantified boundary; no science narrowing",
+      "citations": [
+        {
+          "path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "graph_id": "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15",
+          "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+          "role": "load-bearing same-unit proof premise"
+        }
+      ]
+    }
+  ],
+  "final_paths": {
+    "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc",
+      "blob": "73fb676ab352a272f0d8582efe43a22b647c0886",
+      "bytes": 24685
+    },
+    "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c",
+      "blob": "50bd240a27c2420596e944feead99e4721493944",
+      "bytes": 15871
+    },
+    "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+      "blob": "61bdaf8dd87c4332a0f0df4f75ece822f128ae0f",
+      "bytes": 33073
+    },
+    "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "74fe5ed28abdc1648541ded72b1bc636617cd2e7e29c842fb7b0221eb45f6063",
+      "blob": "ac2e95c38f95eacb135480348c3f568fd89a6567",
+      "bytes": 20657
+    },
+    "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794",
+      "blob": "c450f4c9e402d7c4284bdee100b6e11e8bd0459f",
+      "bytes": 31023
+    },
+    "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "8f300d4c722b67a6bd3989c1bdc2b446c3ab17ea79c9b1239e6ea2e2902ce310",
+      "blob": "1ddfe787a57e78bac49fade3966efe5723113048",
+      "bytes": 22180
+    },
+    "docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "7425ce170ad938dc40afce9496246e84853b314f8479591a85cc27e777de46a3",
+      "blob": "8a9c3a6e42150d7e3a287ad364067275ee09879f",
+      "bytes": 42542
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json": {
+      "sha256": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7",
+      "blob": "b2883599cfc31e20bdf163fb40f3f5a78e1eb789",
+      "bytes": 1689
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json": {
+      "sha256": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717",
+      "blob": "9606a585ea34a996192f679f66cc4a5bc3ab31ff",
+      "bytes": 15263
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/README.md": {
+      "sha256": "00ae74959c971e6b380c617024dd558dcee4ce10353079e640a0b228653ae247",
+      "blob": "c7cccbd078843dc4f1cb95a124a1bc091e4c8640",
+      "bytes": 1178
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json": {
+      "sha256": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18",
+      "blob": "de1e62fa263db4cb89aa1c53a6c2e58fe241a9dd",
+      "bytes": 19230
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml": {
+      "sha256": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14",
+      "blob": "202140a3f1972b1ff367e7713ce45a4df1493381",
+      "bytes": 776
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd",
+      "blob": "83b516a40a3a7bb81dffd38c50721ca06fda0c64",
+      "bytes": 963
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md": {
+      "sha256": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b",
+      "blob": "97a29cbfe0ef61482c95ef023c4b27e037a232b6",
+      "bytes": 1890
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md": {
+      "sha256": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293",
+      "blob": "a07231b84f0952b02eef1ea7040f5cba2ba3d895",
+      "bytes": 1041
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md": {
+      "sha256": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc",
+      "blob": "26645cce696fc4d844972c6a07ca9f336e48ca01",
+      "bytes": 2609
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md": {
+      "sha256": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7",
+      "blob": "0419d9d5d64374c563cedf29c08dae4720094735",
+      "bytes": 4299
+    },
+    "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md": {
+      "sha256": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702",
+      "blob": "a6be6596fa5820dd1d246c5c854ae9501a6d177a",
+      "bytes": 959
+    },
+    "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt": {
+      "sha256": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409",
+      "blob": "bf025e02847f45ddb796b62108dd41e702e30c68",
+      "bytes": 50234
+    },
+    "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt": {
+      "sha256": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28",
+      "blob": "4157303070aae4888af58771f4c4b49e21bf91ce",
+      "bytes": 6028
+    },
+    "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt": {
+      "sha256": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab",
+      "blob": "8e113597e5e5dbd9ca4906a8e2ab8bdde8f6f1c0",
+      "bytes": 11884
+    },
+    "logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt": {
+      "sha256": "dfd27ee2435d02849dd6d635a5a543fbff2522a4caa878d520e56562a9666a82",
+      "blob": "c4c59c16bd9f4bf13ee23f6102930485fb02d090",
+      "bytes": 20701
+    },
+    "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt": {
+      "sha256": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4",
+      "blob": "b485ef25d44ab8fa5368394884be591d20940be5",
+      "bytes": 4784
+    },
+    "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py": {
+      "sha256": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620",
+      "blob": "2f85d9ba003f509e819e05910fecfd48908e59b1",
+      "bytes": 9361
+    },
+    "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py": {
+      "sha256": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6",
+      "blob": "66ed4ed62631daba8b5eec8163b070d488b29f26",
+      "bytes": 6737
+    },
+    "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py": {
+      "sha256": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92",
+      "blob": "2e6356b083dac71f4163c5c30bd47d9cdf137521",
+      "bytes": 9269
+    },
+    "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py": {
+      "sha256": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+      "blob": "bffd78b0e331579c877e1a0dc89a6b55c2c4f6e4",
+      "bytes": 23674
+    },
+    "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py": {
+      "sha256": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369",
+      "blob": "aec34c926e891297002e0bde21170d142f643a19",
+      "bytes": 10412
+    }
+  },
+  "archive": [
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/CLUSTER_CAP_EVALUATION.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md",
+      "sha256": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+      "sha256": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/GOAL.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md",
+      "sha256": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/HANDOFF.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md",
+      "sha256": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/MUTATION_CHECKS.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json",
+      "sha256": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/REVIEW_HISTORY.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md",
+      "sha256": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/SOURCE_DISPOSITION.json",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json",
+      "sha256": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/STATE.yaml",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml",
+      "sha256": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/TRACE_GATE.md",
+      "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md",
+      "sha256": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702"
+    }
+  ],
+  "authority_context": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "unchanged authority scope reused from prior full read"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "unchanged authority scope reused from prior full read"
+    }
+  ],
+  "runtime_input_scope": "All5 runners self-contained, no repository input files or helpers; third-party NumPy/SymPy/mpmath/SciPy math implementations only. Actual proof inputs are linked same-unit notes, bound above.",
+  "original_actual_runs": [
+    {
+      "runner": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+      "source_sha256": "e6b01e428ca5ec5bf5b70bbcc073212be2a33c2c5e920f42978a883a0da8cc18",
+      "exit_code": 0,
+      "elapsed_sec": 0.12822870793752372,
+      "timeout_sec": 180,
+      "stdout_sha256": "12ff5db83469908afa1ef4dbc7d7314068812c006930fa42279e4f7cb1ddc9d4",
+      "stderr_bytes": 0
+    },
+    {
+      "runner": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+      "source_sha256": "8b15e588272be799f34ccce648c237ccd9a3b8b993ec18d7ae7359eb78f02972",
+      "exit_code": 0,
+      "elapsed_sec": 4.705877291969955,
+      "timeout_sec": 180,
+      "stdout_sha256": "f9851482fb20b462e49e200e26b93f541fad388237853cb90bfe895dcade0573",
+      "stderr_bytes": 0
+    },
+    {
+      "runner": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+      "source_sha256": "47143792e3482a820b11f911758392c266d697544ee9b7bfaa4c1e4457232da5",
+      "exit_code": 0,
+      "elapsed_sec": 0.25400654098484665,
+      "timeout_sec": 180,
+      "stdout_sha256": "5eb2752433cf5430c40b5f1750367eeac53d2e2f95022d36724540c02ec876e6",
+      "stderr_bytes": 0
+    },
+    {
+      "runner": "scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+      "source_sha256": "4ec9776ae1d220301a1408666f886f9912daf3f98ffabc095bdd46f0cb1616aa",
+      "exit_code": 0,
+      "elapsed_sec": 1.3431890000356361,
+      "timeout_sec": 180,
+      "stdout_sha256": "f2a6a3597b468d9ad9c026831ec0dd026e1db47703d3dac1ee4a48ca6eb0ea75",
+      "stderr_bytes": 0
+    },
+    {
+      "runner": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+      "source_sha256": "3c0cfcb90bd4d427280b33464141f514a9a4459497bea0c58049f6e19eb35d75",
+      "exit_code": 0,
+      "elapsed_sec": 2.007890583947301,
+      "timeout_sec": 180,
+      "stdout_sha256": "39c31b266eccddb7f5ae087745a53633df65eb1586d6e81fa034a0cac9ceb364",
+      "stderr_bytes": 0
+    }
+  ],
+  "author_final_runs_confirmed": [
+    {
+      "runner": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+      "status": "ok",
+      "exit_code": 0,
+      "elapsed_sec": 0.19610905647277832,
+      "timeout_sec": 180,
+      "stdout_sha256": "143c0a6010d9ca50c79b3593383a0449026cb2414f642f183c539b558cdfd1dd",
+      "cache_sha256": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409"
+    },
+    {
+      "runner": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+      "status": "ok",
+      "exit_code": 0,
+      "elapsed_sec": 5.0037522315979,
+      "timeout_sec": 180,
+      "stdout_sha256": "743d43edd0f7c359952b59fc626a7a12f20f320fc5c67aa823d02efd816f5756",
+      "cache_sha256": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28"
+    },
+    {
+      "runner": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+      "status": "ok",
+      "exit_code": 0,
+      "elapsed_sec": 0.30606579780578613,
+      "timeout_sec": 180,
+      "stdout_sha256": "dc6bbbe3efa71d53f7e0348a76cef172c5b20c5c94033122efa67b19f4771339",
+      "cache_sha256": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab"
+    },
+    {
+      "runner": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+      "status": "ok",
+      "exit_code": 0,
+      "elapsed_sec": 2.2941362857818604,
+      "timeout_sec": 180,
+      "stdout_sha256": "c707be318148578032323a737a14b6b6e3f95b12b914ab41d4af3c31c489a123",
+      "cache_sha256": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4"
+    }
+  ],
+  "independent_checks": {
+    "third_source_Bessel_independent": [
+      {
+        "h": "0.0",
+        "third": "3.03858167864313559919143752625982628935070907e-64",
+        "bound": "0.0149401623412849494390060511229182822078364575"
+      },
+      {
+        "h": "0.4",
+        "third": "0.00253001670241945449515181760650015824266936003",
+        "bound": "0.0149401623412849494390060511229182822078364575"
+      },
+      {
+        "h": "1.2",
+        "third": "0.0069295649984909983874599233101113459392116404",
+        "bound": "0.0149401623412849494390060511229182822078364575"
+      }
+    ],
+    "complex_Gaussian_source_square": "exact",
+    "noncommuting_fluctuation_elimination": {
+      "exact": "1950/1753",
+      "shortcut": "10/9"
+    },
+    "flux_score_projection_and_noise_subtraction": "exact rank3 Euclidean two-form projections; positive-time conservation separately leaves rank2",
+    "negative_mixed_phase_by_rank_symmetry": "51/8",
+    "half_shift_counterexample": "every integer lies at distance >=1/2 from half-integer center; variance>=1/4>1/8",
+    "status": "PASS"
+  },
+  "independent_check_source_sha256": "88e7fc0e3571a5c86deda0fd88ddf8dac47d6bcf4e23f2cf79b0ec218ea39714",
+  "historical_evidence": "16 actual author mutation outcome/stderr summaries and source-disposition/focused source receipts preserved; no independent mutation replay or audit ratification claimed",
+  "external_methods": "Conlon-Dabkowski scalar source-flow context and Bauerschmidt Gaussian-split/cluster context checked via primary sources; Dario-Wu context reused from prior actual opening. No full-paper read or external model-specific phase theorem imported by reviewer. Written cochain arguments reviewed independently.",
+  "integration": "No per-unit pipeline/audit, no source edits/commits/push by reviewer. Combined pipeline/strict/evidence gates and fresh heads before landing remain coordinator responsibility.",
+  "disposition_map_sha256": "6dd624541f0f66bbdb20e569f49863cf1bdcf23989ea38b92d31fccd444f77e7"
+}

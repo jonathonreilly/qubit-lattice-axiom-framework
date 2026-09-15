@@ -1,0 +1,52 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/CLAIM_STATUS_CERTIFICATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "cffea4303b2c489e24840b323ccdca0c715f7906da6201de371c2629745736fd"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/CLUSTER_CAP_EVALUATION.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-CLUSTER_CAP_EVALUATION.md",
+    "sha256": "999c0f1030ad263cf9a50d75543939300ce9e25784059aa4497555aaf7e4ab4b"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/FOCUSED_EVIDENCE_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/FOCUSED_EVIDENCE_CHECKS.json",
+    "sha256": "54bd1cbc6433830b5acd2e0f32a97672f69fa5f99e2f94f262be6646e9cf58d7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/GOAL.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-GOAL.md",
+    "sha256": "02aefc54c83d2d50990ccb6ab6ed1f7ae30eaf597e6ec5de96a12ce8a5b84293"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/HANDOFF.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-HANDOFF.md",
+    "sha256": "e5460949762680af02092302060617120d4cc700f33d7a1b54a525343efd9ddc"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/MUTATION_CHECKS.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/MUTATION_CHECKS.json",
+    "sha256": "f03c5c3735e76da7937e200cd84034dbdb8e4bb3657e6a2cc2013d196216e717"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/REVIEW_HISTORY.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-REVIEW_HISTORY.md",
+    "sha256": "82504b2fcb8e1aadc692acbc9092277a5e72c07f1b176ab9f619fc8402f385b7"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/SOURCE_DISPOSITION.json",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/SOURCE_DISPOSITION.json",
+    "sha256": "61e94aa59dc9a6c13e504c23380fcf591fecef109c381d604ca609fb32a68a18"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/STATE.yaml",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/STATE.yaml",
+    "sha256": "b3c977099a302914467335a5d0966dda770b6ab7deaf16b1afac4778620aed14"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/haar-villain-full-score-20260915/TRACE_GATE.md",
+    "final_path": "docs/work_history/repo/review_feedback/pr8134-haar-full-score-evidence/pr8134-TRACE_GATE.md",
+    "sha256": "ade3674d0c080ef34cbfe090a5c2192073d92ea6114a0f72e0b8299da9e05702"
+  }
+]

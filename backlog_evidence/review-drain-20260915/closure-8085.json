@@ -1,0 +1,19 @@
+{
+  "pr": 8085,
+  "original_head": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+  "branch": "physics-loop/regge-exact-reduction-positive-transfer-20260913",
+  "landing": "7a8447ddb7e43cf01e66ebe6c45781d43499c7a0",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/regge-exact-reduction-positive-transfer-20260913",
+    "headRefOid": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8085,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8085"
+  }
+}

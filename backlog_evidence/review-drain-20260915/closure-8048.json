@@ -1,0 +1,19 @@
+{
+  "pr": 8048,
+  "original_head": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+  "branch": "codex/native-sixth-offdiagonal-sign-obstruction-20260908",
+  "landing": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-sixth-offdiagonal-sign-obstruction-20260908",
+    "headRefOid": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8048,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8048"
+  }
+}

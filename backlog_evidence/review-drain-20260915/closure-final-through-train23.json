@@ -1,0 +1,20 @@
+[
+  {
+    "closedAt": "2026-09-15T14:34:42Z",
+    "headRefOid": "84d38a34314c758f2f94333d52c02492fb1f4d8b",
+    "number": 8047,
+    "state": "CLOSED"
+  },
+  {
+    "closedAt": "2026-09-15T14:50:15Z",
+    "headRefOid": "cdb5b89190f51b7a84b554a2a873fe420f8b86d0",
+    "number": 8048,
+    "state": "CLOSED"
+  },
+  {
+    "closedAt": "2026-09-15T14:50:08Z",
+    "headRefOid": "c63f5b991044328ad9b13223c8a25849aa0ef574",
+    "number": 8085,
+    "state": "CLOSED"
+  }
+]

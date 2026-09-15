@@ -8,3 +8,13 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+## Block 08 — the three-dimensional monotone formation law (2026-09-15)
+
+| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| F8.1 projective consistency in 3D | box laws under translation | the 2D 180° identity (P7(a)) | first-plane removal identity | target-equivalent for a translation-invariant limit | blocked-local (refuted at scope) | the `2×2` plane-transfer witness: 1296/1296 states differ at (3,1,2); the successor/predecessor-triple lemma | an identity other than telescoping |
+| F8.2 plane-transfer chain | planes as states of a Markov chain | positivity → unique stationary law; down-set consistency across cross-sections | the infinite-cross-section limit | weaker (finite W) / comparable with F8.3 for W → ∞ | candidate-complete (finite W); provisional (W → ∞ via F8.3) | exact `π_2` by orbit reduction; boundary planes 2D | — |
+| F8.3 causal coupling | discrepancy propagation along monotone paths | per-neighbor sensitivity `c`; path counting `N(z,x) c^d` | none in the region `3c < 1` | stronger than needed (gives decay and uniqueness) | candidate-complete in the region | exact `c` at eight triples; cube influence check | a bound for `c ≥ 1/3` needs a different mechanism |
+| F8.4 Gibbs form | product of kernels regrouped | normalizers as `K`-sums | irreducibility of `K_3` | exact | candidate-complete | third difference `2160/2197` at (3,1,2) | — |
+| F8.5 down-set consistency | marginals on down-sets | leaf removal in reverse order | none | exact, any dimension | candidate-complete | cube marginal on `x_3 = 0` equals the 2D law | — |

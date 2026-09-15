@@ -13,3 +13,9 @@ Policy: reference and converge, never borrow; every statement used is re-proved 
 - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
 - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
 - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
+
+## Block 08 (2026-09-15) — references, re-proved at scope; none imported as authority
+- Unilateral Markov fields / Markov meshes (Pickard 1980; Abend–Harley–Kanal 1965): the two-dimensional consistency structure that Q2 shows has no three-dimensional analogue for the monotone class.
+- Probabilistic cellular automata and their high-noise uniqueness by coupling (Dobrushin–Vasershtein-type conditions; Lebowitz–Maes–Speer 1990; Toom et al. 1990): Q4's causal coupling is the one-sided (monotone-path) version with the explicit path count; the region `3c < 1` is the analogue of "the sum of dependence coefficients below one", re-proved here.
+- The contraction of a strictly positive finite stochastic matrix (Doeblin): Q3a, proved in four lines.
+- Kolmogorov extension; Krylov–Bogolyubov invariant laws for Feller kernels on compact spaces: cited definition-level steps under Imports.

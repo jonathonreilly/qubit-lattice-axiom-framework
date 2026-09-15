@@ -84,3 +84,19 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 08 (2026-09-15) — prior-art search and routes
+
+Searched commit: `origin/main` = `5deabeb698a27c2c3f68c5df685af2521ef15307` (fetched 2026-09-15 immediately before the search).
+
+Commands and hits:
+- `git grep -n -iE "three-body|three body|K_3\(|K₃|plane transfer|transfer of planes|unilateral|half-space|Kolmogorov extension|projective limit" origin/main -- 'docs/*.md'` → context-only hits (helium three-body, OS half-space algebras, safe-front half-space decoder) and the campaign's own blocks 02/05 (projective limit on the strip and quadrant; "unilateral Markov field" as a reference). No hit states a three-dimensional monotone formation law, a plane transfer, or a three-body normalizer term.
+- `git grep -n -iE "(monotone|sweep|linear extension).*(Z\^3|three.dimension|cube)|…reverse…" origin/main -- 'docs/*.md'` → block 02's N1 route 3 ("a three-recorded-neighbor sweep … ATTEMPTED (witness only; no theorem)") and N7; a cutting-path note's staircase in the n-cube (unrelated); no theorem.
+- `git grep -n -iE "(disagreement|discrepanc|branching).*(formation|order|sweep)|…" origin/main -- 'docs/*.md'` → no formation-law coupling result.
+- `git ls-tree -r --name-only origin/main -- docs/ | grep -iE "FORMATION|MONOTONE|SWEEP|HALF_SPACE|PLANE_"` → blocks 01/02/05; joint-formation and formation-weight notes on other objects; nothing on the 3D monotone law.
+- Ledger rows: only block 05's row names the monotone order.
+- Open PRs read: #8039 (2D plane law; explicitly stops at the plane), #8102 (finite cube census, reversal witness), #8096 (no covariant sequential order); the random-priority note on `physics-loop/toe-campaign-20260907` (random order on `Z^3`, factorial ancestry, covariance bound) — a different construction and mechanism.
+
+Classification: **open after the matched-hit review.**
+
+Routes (mathematical approach families; see `APPROACH_REGISTRY.md`): R1 projective consistency in 3D (closed by the exact `2×2` witness; the no-cancellation lemma explains the failure of the 2D telescoping); R2 the plane-transfer Markov chain (finite cross-sections by positivity; the column law); R3 the causal coupling (monotone paths, three predecessors; the region `3c < 1`; uniform-in-W; the full-plane and half-space law); R4 the Gibbs form with the three-body normalizer (algebraic; irreducibility by a third difference); R5 down-set consistency (any dimension) for the quadrant column. Executed on the supervisor's controls before the contract (`specs/supervisor_control_block08_z3.py`, `_b.py`).

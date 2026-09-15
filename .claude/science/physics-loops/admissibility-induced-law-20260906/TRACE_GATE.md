@@ -63,3 +63,25 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 08, at launch (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the owner's corrected queue (block-04 refresh, item 4): 'a three-dimensional formation process [is a] different object. Declare the order and initial or boundary law and the exact uniqueness quantifier'; block 02 N1 route 3: 'a three-recorded-neighbor sweep … ATTEMPTED (witness only; no theorem)'; #8093's record-dynamics block: whether long-range record correlations arise from the formation law without a supplied tick"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "declare the monotone class on Z^3 with its corner and sweep; prove existence/uniqueness/decay in the exact region 3c < 1 (which contains the silent triples); answer the record-dynamics reframing at scope (negative, N-gated); consumers: the campaign's queue, #8093's assembly (an edge labelled 'clause-needed' for long-range fields under product rules), the parked statistical-bridge material (read-only)"
+```
+
+# Trace gate — block 08, at PR opening (2026-09-15)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the owner's corrected queue (block-04 refresh, item 4): the three-dimensional formation process as a distinct object with a declared order, initial law and uniqueness quantifier; block 02 N1 route 3; #8093's record-dynamics block"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "declared and constructed: the monotone class on Z^3 with its corner and sweep; unique translation-invariant law with exponential decay for c < 1/3 (the silent triples inside); the record-dynamics reframing answered negatively at scope (N-gated). Next per the queue: the eight corner classes as one covariant family and their relation to the random-priority law; the region's boundary in (p, q, r). Consumers: the campaign's queue; the derivation campaign's assembly (edge label 'clause-needed' for long-range record fields under positive product rules in the region); the parked statistical-bridge material (read-only)"
+```

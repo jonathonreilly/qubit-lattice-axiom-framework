@@ -78,3 +78,25 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh 2026-09-15 (campaign launch: 24-hour derivation campaign)
+
+Lane map (open PRs #8010–#8136 and branches since 2026-09-13 read): native-fermion/U1/flux/Ward (Codex, ~50 PRs), clock/Maxwell/Gaussian-transfer (physics-loop dispatch, #8106–#8136), the derivation campaign #8093 (six blocks open; menus-and-Born, clock-and-rate, formation-unit, record-dynamics, assembly not yet opened by that session), #8039 (2D plane law). Ranked for this campaign (derivations; nobody else on them):
+
+1. **Block 08 — the three-dimensional monotone formation law** (running): existence, uniqueness and exponential decay in the exact region `3c < 1`, which contains the silent triples; translate inconsistency; the three-body term; the record-dynamics corollary at scope.
+2. **The corner family on `Z^3` and the covariant mixture** (derivation): the eight corner classes give up to eight column laws; the equal mixture is proper-cubic covariant; whether any statistic distinguishes the mixture from the random-priority law (the owner's covariant construction) — proofs about the family, not a physical order.
+3. **The formation law's own coupling region as a function of `(p, q, r)`** (exact algebra): the thresholds `3c = 1` along the three lines of block 03 and the comparison with the static region `6c_1 = 1`; small.
+4. **Width 6 by block 06's route** (compute-heavy; deferred under the proofs-over-compute directive).
+5. **The silent triples by a non-criterion route** (heavy; unchanged).
+6. **The Gaussian instance in three dimensions** (small; low priority).
+
+## Refresh at block 08 opening (2026-09-15)
+
+Block 08 opened for review (independent PR against main; not a main landing): the three-dimensional monotone formation law — one law per box with an irreducible three-body normalizer; no translate consistency (the first plane cannot be summed out; exact 2x2 witness; the successor/predecessor-triple lemma); the plane chain with a unique stationary law per cross-section and two-dimensional boundary planes; the causal coupling theorem with the region `3c < 1`, containing the silent triples; the `Z^3` law exists, is unique and translation-invariant there with exponential decay; the record-dynamics reframing answered negatively at scope. Ranked next (derivations first; nobody else on them):
+
+1. **The eight corner classes on `Z^3` as one covariant family** (derivation): the point reflection maps the monotone class to its opposite-corner class; whether the eight `Z^3` laws (region `c < 1/3`) are pairwise distinct (a two-site statistic on the cube already separates reversal, #8102); the equal mixture of the eight is proper-cubic covariant; which local statistic distinguishes the mixture from the random-priority law; one block.
+2. **The region's boundary in `(p, q, r)`** (exact algebra): `3c = 1` along the three lines of block 03 by exact bracketing (the line `(1,1,t)` leaves the region; whether `(t,1,1)` and `(t,t,1)` stay inside), and the comparison with the static region `6c_1 < 1`; small.
+3. **Strong coupling `c ≥ 1/3`** (proof target): whether the plane chain still has a unique stationary law on the full cross-section, e.g. by a block coupling or a weighted sensitivity; open.
+4. **Width 6 by block 06's route** (compute-heavy; deferred under the proofs-over-compute directive).
+5. **The silent triples by a non-criterion route** (heavy; unchanged).
+6. **The Gaussian instance in three dimensions** (small; low priority).

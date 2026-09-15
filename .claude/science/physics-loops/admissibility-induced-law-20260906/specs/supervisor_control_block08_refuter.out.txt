@@ -1,0 +1,5 @@
+R1 TV(cube marginal on plane 1, mu_2D) = 356696849/806187919680 == note literal: True
+R2 c_3 by positive parts / integer phi = 27/110 == 27/110: True
+R3 power iteration (40 steps) vs exact solve: max |diff| < 10^-12: True (gap numerator digits 364 denominator digits 427 )
+R4 N(000,111) = 6 (expected 6)
+R5 alternating sum of a pair-additive F = 0 (expected 0)

@@ -1,3 +1,28 @@
+# Current opportunity ranking — 2026-09-15 07:45 UTC
+
+1. **Fixed-clock magnetic stability.** PR8136 provides a new exact physical
+   smoothing bridge and small positive local electric correction. The magnetic
+   carrier remains quantized. Seek a concrete multiscale coupled-defect
+   representation with source control; importing scalar dipole-gas Gaussianity
+   without a matching measure is invalid. This is a new hard residual beyond
+   the smoothing milestone, not a corollary of its convex extension.
+2. **Actual spin-one neutral phase.** PR8135 now gives a proposed all-sector
+   energy comparison and defect-density bound. A volume-uniform neutral
+   photon estimate remains open. A new phase mechanism is required; further
+   finite cubes or applications of the density bound do not establish it.
+3. **Native persistent interacting sector.** Private block25 removes a fixed
+   matrix metric from one continuous full-domain candidate kernel and compares
+   two permanent formation laws. It supplies no physical selector or quantum
+   instrument. Generic marked-process existence and uniformizers are prior
+   support. Return only with a concrete persistent observable or selection
+   mechanism, not another generic existence construction.
+4. **Charged matter.** Existing external-source identities still do not provide
+   a transported dynamical charged sector with controlled infrared energy.
+
+The controlling deadline remains2026-09-15 13:30:44UTC. No subagents are used.
+
+---
+
 # Current opportunity ranking — 2026-09-15 04:52 UTC
 
 Current main:5deabeb698a27c2c3f68c5df685af2521ef15307, freshly fetched.

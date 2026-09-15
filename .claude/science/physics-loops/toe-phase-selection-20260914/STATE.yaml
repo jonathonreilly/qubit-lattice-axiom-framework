@@ -13,22 +13,24 @@ execution: personally_no_subagents_or_delegated_workers
 research_emphasis: derivations_first_decisive_finite_falsifiers
 delivery: milestone
 checkpoint_interval_minutes: 30
-block: 24
-active_route: reassess_magnetic_stability_and_native_record_law_foundations
+block: 25
+active_route: fixed_clock_magnetic_stability_after_native_law_checkpoint
 actual_current_surface_status: open
 independent_review: pending
 formal_audit: deferred
 continuation_automation: toe-derivation-campaign-continuation
 lock_owner: physics-loop-toe-phase-selection-20260914
 lock_holder: 01a097f1-c7c7-7b51-8f2e-399bbbf0c311
-next_action: Reassess the magnetic stability step and native Record-law premises for a new load-bearing derivation.
-  Continue personally through 2026-09-15 13:30:44 UTC; do not extend the deadline again.
-strongest_unresolved_obligation: A fixed-law finite-clock full-flux Gaussian/Maxwell limit with both defect sectors
-  retained remains open. The separate actual neutral spin-one photon phase and native-law selection remain open.
-working_result: Block24 is delivered as PR8136 at 8a5ace1afc3b41999e2296d0067a325294fb2c6e.
-  Exact flux-law smoothing/filtering, positive local electric extension and H^-s scaling equivalence are author
-  proposals. Ten finite families and sixteen actual faults are checked. Initial orientation coverage failure is
-  preserved. Convexity of an extension does not remove the discrete magnetic carrier. Independent review is pending.
+next_action: Preserve block25 and investigate a concrete multiscale or coupled-defect mechanism for the fixed-clock
+  physical flux limit. Continue personally through 2026-09-15 13:30:44 UTC. Do not repeat the 12-hour extension.
+strongest_unresolved_obligation: Fixed-law finite-clock full-flux Gaussian/Maxwell scaling with both defect sectors;
+  a small real electric correction alone does not remove the quantized magnetic carrier. The native proposed law
+  also does not select its own coefficients, initial conditions, clock or persistent interacting observable sector.
+working_result: PR8136 remains pending independent review at 8a5ace1afc3b41999e2296d0067a325294fb2c6e.
+  Private block25 supplies a continuous algebra-covariant random-word Gaussian kernel on all neighbor conditions,
+  exact generated-algebra support, a relational balancing metric on irreducible conditions and two specified
+  permanent formation laws. Iid clock influence is finite; neighbor-triggered growth is unbounded. Seven finite
+  families and nine actual faults checked, with initial coverage failure preserved. No axiom wall is claimed.
 public_prs:
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8123
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8124

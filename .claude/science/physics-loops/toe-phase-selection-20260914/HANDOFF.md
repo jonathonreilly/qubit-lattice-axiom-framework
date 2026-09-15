@@ -624,3 +624,27 @@ show that selection and attachment premises must remain explicit. Internal
 PGL2 covariance, a star structure and empty/well-founded initial formation must
 not be silently inferred from the axioms. This reassessment is still exploratory.
 The controlling deadline remains 2026-09-15 13:30:44 UTC. No subagents are used.
+
+
+## Native-law checkpoint, 2026-09-15 07:45 UTC
+
+Block25 remains private in BLOCK25_RELATIONAL_METRIC_DERIVATION.md. It gives
+one full-domain continuous algebra-covariant Gaussian random-word kernel with
+support exactly the neighbor-generated algebra. It also gives a unique
+balancing metric on irreducible conditions for its specified functional, an
+explicit metric degeneration, and two supplied formation laws with finite
+versus unbounded causal influence. General marked-process existence and
+Richardson growth are prior machinery; no fixed content-only uniformizer
+novelty is claimed. The common-fiber and classical Record-conditioning
+interfaces, coefficients, Gaussian profile, clocks and initial condition are
+supplied. Seven finite families/nine final actual faults are checked; an
+initial implementation-coverage gap and symbolic comparison failure remain
+preserved. The author cold read corrected concentration/support wording.
+No independent review, physical law selection or axiom update is claimed.
+
+Next, return to finite-clock magnetic stability. The exact smoothing bridge
+in PR8136 does not supply a probability law on an unconstrained convex real
+field. Dipole-gas renormalization methods are being checked for an actual
+coupled-defect representation; a scalar-gradient theorem cannot simply be
+relabeled as the finite-clock gauge model. No new block26 theorem is yet
+written. Continue personally to13:30:44UTC, without subagents.

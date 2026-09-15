@@ -1,0 +1,86 @@
+{
+  "at_utc": "2026-09-15T07:43:36.797165+00:00",
+  "repo_sources": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "reading_scope": "full current memo read; internal GL2 covariance, star, initial state and rate not inferred"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "reading_scope": "complete four-node current registry read; no new primitive adopted"
+    },
+    {
+      "path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "bfb783302ed737914e5d5a4ddbf78c765b3daf3a75467dbcf8958f0960eccc21",
+      "reading_scope": "lines1-125 read; historical selected Hilbert/Clifford presentation comparison"
+    },
+    {
+      "path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "419da83414e8e5e3b44e9867c587454c5c9d4775eed4bcb7ddf7f5a64becf22e",
+      "reading_scope": "complete note read; selected Pauli generator identification, not current metric selection"
+    },
+    {
+      "path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "4bf3e8fa9fa2f4f35ed51c489524493047f8231418d87ee043033ff61bf47514",
+      "reading_scope": "complete note read; finite post-record alphabet and supplied rates boundary"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RANDOM_AXIS_M2_MATTER_REPEAT_SELECTOR_LOCAL_COMPILER_BOUNDED_THEOREM_NOTE_2026-09-01.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "c2ff01d9799b707ffd2209b10e5475087ce7996393583d36b313229d8fcf1f6c",
+      "reading_scope": "complete note read; attachment/repeatability supplied and no selected response law"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "5b6a9dea27d214acf10c425a9051a7544d35f7f98572e2c55cdbbc272442f142",
+      "reading_scope": "lines65-165 read; prior supplied fixed-Hermitian Gaussian and effect extractor"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_GAUSSIAN_CONTENT_ONLY_UNIFORMIZER_WEIERSTRASS_DECODER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "372b855150d3b35c44be2c57bbd989467137b66de5cbecd8cfd3ab827a5ecebe",
+      "reading_scope": "targeted grep of scope and common-uniformizer result; no full reread claimed; prevents duplicate trace-uniformizer work"
+    },
+    {
+      "path": "docs/RECORD_NATIVE_MARKED_PURE_BIRTH_RESOURCE_GENERATOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "git_revision": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "sha256": "b0f0fc7559899fbdd69404c6466854e8bc6ba8d5f76b3f9846ca9854a215b022",
+      "reading_scope": "lines35-280 read this block; earlier campaign also read first280; general marked-process existence already prior, occupancy and physical quantum interface supplied"
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://ir.cwi.nl/pub/33761/33761D1.pdf",
+      "author": "Harold Nieuwboer",
+      "title": "Classical and quantum algorithms for scaling problems",
+      "scope": "title, section2.4 statement/proof displayed lines2462-2663 and example2.5.6 lines2782-2813 read; PDF overlines on orbit closures must be interpreted from mathematics, not lost extraction marks",
+      "role": "standard Kempf-Ness comparison; direct two-dimensional proof in draft"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1511.03262",
+      "authors": "Auffinger, Damron, Hanson",
+      "version": "v2",
+      "scope": "section1.1 model definition and section6.2 growth/competition explanation read; not a full-paper read",
+      "role": "standard first-passage/Richardson comparison; no shape theorem imported"
+    },
+    {
+      "url": "https://arxiv.org/abs/1311.0410",
+      "scope": "abstract and bibliographic page; PDF opened but not read in full",
+      "role": "search context only"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s11590-026-02311-y",
+      "scope": "opening definitions and section2.1.1 inspected",
+      "role": "search context only; no theorem imported"
+    }
+  ],
+  "novelty_scope": "No new invariant theory, first-passage theory, trace uniformizer, or generic marked-process theorem claimed. Exact native candidate word law and scoped influence comparison are the new explored construction."
+}

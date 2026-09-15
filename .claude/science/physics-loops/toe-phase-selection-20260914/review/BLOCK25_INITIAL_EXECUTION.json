@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-09-15T07:36:53.954123+00:00",
+  "source_sha256": "f274967e769a257fffa948acc408962b69f0bed9280865c269bb15d9704c3404",
+  "state": "First run completed with an exact symbolic structural-equality assertion failure in unipotent-orbit control; an interruption attempt arrived after completion. First three families passed. Second run, with expanded word arithmetic, reached the same assertion.",
+  "initial_source": "BLOCK25_INITIAL_CHECKER.py.txt",
+  "failure": "orbit==expected compared expanded and factored SymPy expressions structurally; their simplified difference is zero.",
+  "second_source_sha256": "ea4d419580c07d7530fb4575bbda84e1c4c32eb387fbbd0ad9afa10634e9dcbf"
+}

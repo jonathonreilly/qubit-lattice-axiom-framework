@@ -1,0 +1,107 @@
+{
+  "at_utc": "2026-09-15T07:44:07.535031+00:00",
+  "source": "block25_relational_check.py",
+  "source_sha256": "d3145993d2da5e181825075b4128e7ad370585cc9cec3a8f2e0dd7a47a394cc7",
+  "faults": [
+    {
+      "name": "adjoint_metric_order",
+      "family": "check_balancing",
+      "original": "return h.inv()*a.conjugate().T*h",
+      "replacement": "return h*a.conjugate().T*h.inv()",
+      "source_sha256": "1dbab9918c778b9678324a863ac46a298126ae39a59a562297915384279d1825",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/adjoint_metric_order.py'); r['check_balancing']()\n                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/adjoint_metric_order.py\", line 51, in check_balancing\n    assert balanced_sum(aa, h) == ZERO\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "determinant_normalization",
+      "family": "check_balancing",
+      "original": "ht = abs(T.det())*T.inv().T*h*T.inv()",
+      "replacement": "ht = T.inv().T*h*T.inv()",
+      "source_sha256": "dca88713c656f7a6b06aa78c246f79eb64fff2b86d0c93790c0c967c8b8cbde4",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/determinant_normalization.py'); r['check_balancing']()\n                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/determinant_normalization.py\", line 66, in check_balancing\n    assert ht.det() == 1\n           ^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "empty_word_removed",
+      "family": "check_word_support",
+      "original": "out = {(): I}",
+      "replacement": "out = {(): ZERO}",
+      "source_sha256": "7fa4dd455f37680ee8b95c17d5159eb32a3c4773e4dc2d9eda02eee3b6e19aa7",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/empty_word_removed.py'); r['check_word_support']()\n                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/empty_word_removed.py\", line 88, in check_word_support\n    assert actual==expected, (name,actual)\n           ^^^^^^^^^^^^^^^^\nAssertionError: ('blank', 0)\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "quadratic_words_removed",
+      "family": "check_word_support",
+      "original": "for n in range(1, max_length+1):",
+      "replacement": "for n in range(1, min(max_length,1)+1):",
+      "source_sha256": "21b5660f8c333836dc41e2edfcd0a5eb3086c603aecb51dcf5e5d5091b37b537",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/quadratic_words_removed.py'); r['check_word_support']()\n                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/quadratic_words_removed.py\", line 88, in check_word_support\n    assert actual==expected, (name,actual)\n           ^^^^^^^^^^^^^^^^\nAssertionError: ('irreducible_nilpotent_pair', 3)\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "word_covariance_conjugation",
+      "family": "check_word_covariance",
+      "original": "vec(w)*vec(w).conjugate().T",
+      "replacement": "vec(w)*vec(w).T",
+      "source_sha256": "cede94d1c2d499ae25dec63fe8241f2e7c09f62891e963925738bfe00437b497",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/word_covariance_conjugation.py'); r['check_word_covariance']()\n                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/word_covariance_conjugation.py\", line 113, in check_word_covariance\n    assert sp.simplify(word_covariance([S*a*S.inv() for a in aa])-L*q*L.conjugate().T)==sp.zeros(4)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "neighbor_mean_normalization",
+      "family": "check_actual_gaussian_law",
+      "original": "mean=sum(aa,ZERO)/6",
+      "replacement": "mean=sum(aa,ZERO)/5",
+      "source_sha256": "4c4ba000a4ecfc51764cf3314bbced126bb5b2423f83b77f61e4921f1141966d",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/neighbor_mean_normalization.py'); r['check_actual_gaussian_law']()\n                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/neighbor_mean_normalization.py\", line 150, in check_actual_gaussian_law\n    assert sample_word_kernel(aa,zeros)==mean\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "word_mark_sum_removed",
+      "family": "check_actual_gaussian_law",
+      "original": "return mean+sum((marks[w]*a for w,a in ww.items()),ZERO)",
+      "replacement": "return mean+sum((marks[w]*a for w,a in ww.items() if len(w)<2),ZERO)",
+      "source_sha256": "6607ea0bd4ee9aa20287bf47ce8d208f6853586a89f08afe5160ab151dc67e55",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/word_mark_sum_removed.py'); r['check_actual_gaussian_law']()\n                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/word_mark_sum_removed.py\", line 156, in check_actual_gaussian_law\n    assert actual_cov==expected\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "future_clock_dependency",
+      "family": "check_clock_orders",
+      "original": "if rank[u]<rank[v]",
+      "replacement": "if rank[u]>rank[v]",
+      "source_sha256": "de101be067861f704e66097016929ddcb2c0f5f5ca8d8723c29545d3e6acfed6",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/future_clock_dependency.py'); r['check_clock_orders']()\n                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/future_clock_dependency.py\", line 226, in check_clock_orders\n    assert reached=={v for v in range(5) if ancestor(v)}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    },
+    {
+      "name": "path_infimum_reversed",
+      "family": "check_transmission_growth",
+      "original": "brute[x]=min(brute.get(x,sp.oo),cost)",
+      "replacement": "brute[x]=max(brute.get(x,0),cost)",
+      "source_sha256": "9d30fd6ae83d3a599dd2d8f2f8cb997ef9774d43ac538141f62b15e6f3d980da",
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import runpy; r=runpy.run_path('/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/path_infimum_reversed.py'); r['check_transmission_growth']()\n                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-block25-fault-3wc7m8ty/path_infimum_reversed.py\", line 249, in check_transmission_growth\n    assert distance==brute\n           ^^^^^^^^^^^^^^^\nAssertionError\n",
+      "stdout": "",
+      "caught": true
+    }
+  ],
+  "all_caught": true
+}

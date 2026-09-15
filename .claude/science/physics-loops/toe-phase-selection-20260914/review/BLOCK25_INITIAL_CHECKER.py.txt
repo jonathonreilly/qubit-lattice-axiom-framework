@@ -1,0 +1,231 @@
+#!/usr/bin/env python3
+"""Finite falsifiers for the relational-law derivation; not a proof of a phase."""
+import itertools
+import json
+import math
+from pathlib import Path
+
+import mpmath as mp
+import numpy as np
+import sympy as sp
+
+I = sp.eye(2)
+ZERO = sp.zeros(2)
+E12 = sp.Matrix([[0, 1], [0, 0]])
+E21 = E12.T
+Z = sp.diag(1, -1)
+
+
+def star(a, h):
+    return h.inv()*a.conjugate().T*h
+
+
+def balanced_sum(aa, h):
+    return sp.simplify(sum((a*star(a, h)-star(a, h)*a for a in aa), sp.zeros(2)))
+
+
+def words(aa, max_length=3):
+    out = {(): I}
+    for n in range(1, max_length+1):
+        for w in itertools.product(range(len(aa)), repeat=n):
+            out[w] = out[w[:-1]]*aa[w[-1]]
+    return out
+
+
+def vec(a):
+    return sp.Matrix(list(a))
+
+
+def word_covariance(aa):
+    ww = words(aa)
+    return sum((vec(w)*vec(w).conjugate().T for w in ww.values()), sp.zeros(4))
+
+
+def rank_words(aa, length=3):
+    return sp.Matrix.hstack(*(vec(w) for w in words(aa, length).values())).rank()
+
+
+def check_balancing():
+    h = sp.diag(sp.Rational(1, 2), 2)
+    aa = [4*E12, E21]
+    assert balanced_sum(aa, h) == ZERO
+    assert balanced_sum(aa, I) != ZERO
+    S = sp.Matrix([[1, 2*sp.I], [1, 1+2*sp.I]])
+    hs = S.inv().conjugate().T*h*S.inv()
+    transformed = [S*a*S.inv() for a in aa]
+    assert sp.simplify(hs.det()) == 1
+    assert balanced_sum(transformed, hs) == ZERO
+    probe = sp.Matrix([[2+sp.I, 3], [1-sp.I, -2]])
+    assert sp.simplify(star(S*probe*S.inv(), hs)-S*star(probe, h)*S.inv()) == ZERO
+    assert sp.simplify(balanced_sum(transformed, h)) != ZERO
+    # Four distinct diagonal conjugations, including a determinant not equal to one.
+    checks = []
+    for s in [sp.Rational(1, 3), sp.Rational(1, 2), 2, 3]:
+        T = sp.diag(s, 1)
+        ht = abs(T.det())*T.inv().T*h*T.inv()
+        assert ht.det() == 1
+        assert balanced_sum([T*a*T.inv() for a in aa], ht) == ZERO
+        checks.append(str(s))
+    t = sp.symbols('t', real=True)
+    ff = 16*sp.exp(2*t)+sp.exp(-2*t)
+    assert sp.simplify(sp.diff(ff,t).subs(t,-sp.log(2))) == 0
+    assert sp.simplify(sp.diff(ff,t,2).subs(t,-sp.log(2))) == 32
+    return {'balanced_form':str(h), 'nonunitary_cases':5,
+            'diagonal_scales':checks,'exact_stationary_hessian':32}
+
+
+def check_word_support():
+    cases = [('blank', [ZERO]*6, 1),
+             ('central', [2*I, -I]+[ZERO]*4, 1),
+             ('diagonal', [Z, I+2*Z]+[ZERO]*4, 2),
+             ('nilpotent', [E12]+[ZERO]*5, 2),
+             ('upper_triangular_noncommuting', [Z,E12]+[ZERO]*4, 3),
+             ('irreducible_nilpotent_pair', [E12,E21]+[ZERO]*4, 4),
+             ('pauli', [Z,E12+E21,sp.I*(E21-E12)]+[ZERO]*3, 4)]
+    result=[]
+    for name, aa, expected in cases:
+        actual=rank_words(aa)
+        assert actual==expected, (name,actual)
+        assert word_covariance(aa).rank()==expected
+        result.append({'case':name,'rank':actual})
+    # Length one misses E11/E22 for the nilpotent pair. Products are load-bearing.
+    assert rank_words([E12,E21],1)==3
+    assert rank_words([E12,E21],2)==4
+    # The noncommuting reducible pair has scalar joint commutant, yet word rank three.
+    a,b,c,d=sp.symbols('a b c d'); x=sp.Matrix([[a,b],[c,d]])
+    equations=list(x*Z-Z*x)+list(x*E12-E12*x)
+    null=sp.linear_eq_to_matrix(equations,[a,b,c,d])[0].nullspace()
+    assert len(null)==1 and null[0]==sp.Matrix([1,0,0,1])
+    return {'cases':result,'words_six_slots':len(words([ZERO]*6)),
+            'single_length_failure':3,'reducible_noncommuting_stabilizer_dimension':1}
+
+
+def check_word_covariance():
+    aa=[Z,E12,E21,I,2*E12+E21,Z+E12]
+    S=sp.Matrix([[1,2],[sp.I,1+2*sp.I]])
+    ww=words(aa); transformed=words([S*a*S.inv() for a in aa])
+    for w,a in ww.items():
+        assert sp.simplify(transformed[w]-S*a*S.inv())==ZERO
+    basis=[sp.Matrix([[int(i==0),int(i==1)],[int(i==2),int(i==3)]]) for i in range(4)]
+    L=sp.Matrix.hstack(*(vec(S*b*S.inv()) for b in basis))
+    assert sp.simplify(L.det())==1
+    q=word_covariance(aa)
+    assert sp.simplify(word_covariance([S*a*S.inv() for a in aa])-L*q*L.conjugate().T)==sp.zeros(4)
+    assert sp.simplify(L*q*L.conjugate().T-q)!=sp.zeros(4)
+    # All 24 proper signed cubic axis permutations induce permutations of six slots.
+    axes=[(axis,sign) for axis in range(3) for sign in [-1,1]]
+    seen=set()
+    for p in itertools.permutations(range(3)):
+        inversions=sum(p[i]>p[j] for i in range(3) for j in range(i+1,3))
+        for signs in itertools.product([-1,1],repeat=3):
+            if (-1)**inversions*math.prod(signs)!=1: continue
+            perm=tuple(axes.index((p[a],s*signs[a])) for a,s in axes)
+            seen.add(perm)
+            # Exact word bijection, not a sampling approximation to law covariance.
+            for w,a in ww.items():
+                mapped=tuple(perm[i] for i in w)
+                rearranged=[aa[perm.index(i)] for i in range(6)]
+                prod=I
+                for i in mapped: prod=prod*rearranged[i]
+                assert prod==a
+    assert len(seen)==24
+    return {'word_similarity_checks':len(ww),'proper_cubic_permutations':len(seen),
+            'complex_similarity_jacobian':str(L.det()),'covariance_rank':q.rank()}
+
+
+def check_degeneration():
+    rows=[]
+    # Exact word covariance stays polynomial as balancing Gaussian covariance diverges.
+    for b in [sp.Rational(1,2),sp.Rational(1,4),sp.Rational(1,16),sp.Rational(1,256),0]:
+        aa=[E12,b*E21]+[ZERO]*4
+        q=word_covariance(aa)
+        rows.append({'b':str(b),'word_variance_12':str(q[1,1]),
+                     'balanced_variance_12':str(1/b) if b else 'undefined'})
+        assert q[1,1]==1+b*b
+    q0=word_covariance([E12]+[ZERO]*5)
+    assert q0==sp.Matrix([[1,0,0,1],[0,1,0,0],[0,0,0,0],[1,0,0,1]])
+    n=sp.symbols('n',integer=True)
+    a,b,c,d=sp.symbols('a b c d'); x=sp.Matrix([[a,b],[c,d]])
+    u=I+n*E12
+    orbit=sp.expand(u*x*u.inv())
+    expected=sp.Matrix([[a+n*c,b+n*(d-a)-n*n*c],[c,d-n*c]])
+    assert orbit==expected
+    assert sp.simplify(orbit.subs({c:0,d:a})-x.subs({c:0,d:a}))==ZERO
+    return {'degeneration':rows,'nilpotent_limit_covariance':str(q0),'unipotent_orbit':str(orbit)}
+
+
+def check_clock_orders():
+    # A line with one seed: influence to its nth site requires the unique increasing order.
+    rows=[]
+    for n in range(1,9):
+        hits=0
+        for order in itertools.permutations(range(1,n+1)):
+            reached={0}
+            for x in order:
+                if x-1 in reached or x+1 in reached: reached.add(x)
+            hits+=n in reached
+        assert hits==1
+        rows.append({'line_length':n,'orders':math.factorial(n),'reaches_endpoint':hits})
+    # A nontrivial cycle: compare forward propagation with backward dependency recursion.
+    edges=[(0,1),(1,2),(2,3),(3,0),(1,4),(3,4)]
+    nbr={i:set() for i in range(5)}
+    for a,b in edges: nbr[a].add(b);nbr[b].add(a)
+    endpoint_hits=0
+    for order in itertools.permutations(range(1,5)):
+        rank={0:-1,**{v:i for i,v in enumerate(order)}}
+        reached={0}
+        for v in order:
+            if nbr[v]&reached:reached.add(v)
+        def ancestor(v):
+            return v==0 or any(ancestor(u) for u in nbr[v] if rank[u]<rank[v])
+        assert reached=={v for v in range(5) if ancestor(v)}
+        endpoint_hits+=4 in reached
+    assert endpoint_hits==16
+    return {'line_order_counts':rows,'diamond_orders':24,'diamond_endpoint_hits':endpoint_hits}
+
+
+def check_transmission_growth():
+    # Independently solve finite directed passage times by path minimization and relaxation.
+    vertices=list(itertools.product(range(2),repeat=3))
+    edges={}
+    for x in vertices:
+        for y in vertices:
+            if sum(abs(a-b) for a,b in zip(x,y))==1:
+                edges[(x,y)]=sp.Rational(1+sum((i+2)*(x[i]+3*y[i]) for i in range(3)),17)
+    root=(0,0,0); distance={x:sp.oo for x in vertices};distance[root]=0
+    for _ in vertices:
+        for (x,y),v in edges.items():distance[y]=min(distance[y],distance[x]+v)
+    brute={root:sp.Rational(0)}
+    def visit(path,cost):
+        x=path[-1];brute[x]=min(brute.get(x,sp.oo),cost)
+        for (a,b),v in edges.items():
+            if a==x and b not in path:visit(path+[b],cost+v)
+    visit([root],sp.Rational(0))
+    assert distance==brute
+    weights={root:sp.Rational(1)}
+    for x in sorted(vertices,key=lambda v:distance[v]):
+        if x==root:continue
+        parents=[y for y in vertices if (y,x) in edges and distance[y]<distance[x]]
+        assert parents
+        weights[x]=sum(weights[y] for y in parents)/6
+        assert weights[x]>0
+    mp.mp.dps=60;bounds=[]
+    for rate_time in [mp.mpf('0.5'),mp.mpf(2),mp.mpf(8)]:
+        r=int(mp.ceil(2*mp.e*rate_time))
+        tail=mp.nsum(lambda n: rate_time**n/mp.factorial(n),[r,mp.inf])
+        assert tail<=2*mp.power(2,-r)
+        bounds.append({'lambda_t':str(rate_time),'r':r,'path_tail':str(tail),'bound':str(2*mp.power(2,-r))})
+    return {'vertices':len(vertices),'directed_edges':len(edges),'two_passage_solvers_agree':True,
+            'smallest_copied_signal':str(min(weights.values())),'outer_bound_controls':bounds}
+
+
+def main():
+    result={'status':'finite author controls, no independent review or physical-law selection','checks':{}}
+    for fn in [check_balancing,check_word_support,check_word_covariance,check_degeneration,
+               check_clock_orders,check_transmission_growth]:
+        answer=fn();result['checks'][fn.__name__]=answer
+        print('PASS '+fn.__name__+': '+json.dumps(answer,sort_keys=True),flush=True)
+    Path(__file__).with_name('BLOCK25_RELATIONAL_CHECKS.json').write_text(json.dumps(result,indent=2)+'\n')
+    print('TOTAL: PASS=6 FAIL=0')
+
+if __name__=='__main__':main()

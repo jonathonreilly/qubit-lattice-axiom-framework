@@ -46,3 +46,9 @@ Gaussian routing map. No public candidate yet.
   note, runner, canonical cache, manifest and pack,16paths. Ten finite families,
   sixteen actual faults. Independent review and combined gates pending.
   Exact remote and clean science state verified before delivery checkout removal.
+
+- Block25 remains a private research checkpoint. Its continuous relational
+  kernel and formation-law influence comparison are useful constructions,
+  but no stronger physical sector or selector is identified. No PR is forced
+  by the checkpoint. Independent review remains unavailable in this personal
+  execution run; no existing public PR is merged or promoted.

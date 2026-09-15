@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8054-8055-8056-8057",
+  "tree": "eac96794fe7042f7a941643a15014ad8849989b1",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md",
+      "claim_id": "native_even_torus_flux_isolation_note_2026-09-08",
+      "primary_runner": "scripts/native_even_torus_flux_isolation_2026_09_08.py",
+      "helpers": [
+        "scripts/native_even_torus_flux_isolation_controls_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_even_torus_flux_isolation_controls_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_even_torus_flux_isolation_controls_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8054-evidence/kept/pr8054-HANDOFF-9ef67db77ea9ef6f.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_FLUX_DEFECT_COMPARISON_AND_WINDING_GAP_NOTE_2026-09-08.md",
+      "claim_id": "native_flux_defect_comparison_and_winding_gap_note_2026-09-08",
+      "primary_runner": "scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py",
+      "helpers": [
+        "scripts/native_flux_defect_combinatorics_2026_09_08.py",
+        "scripts/native_flux_defect_geometry_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_flux_defect_combinatorics_2026_09_08.py",
+        "scripts/native_flux_defect_geometry_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_flux_defect_combinatorics_2026_09_08.py",
+        "scripts/native_flux_defect_geometry_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8055-evidence/kept/pr8055-HANDOFF-9ef67db77ea9ef6f.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "claim_id": "native_uniform_cubic_flux_defect_stiffness_note_2026-09-08",
+      "primary_runner": "scripts/native_uniform_cubic_flux_defect_stiffness_2026_09_08.py",
+      "helpers": [
+        "scripts/native_uniform_cubic_flux_certificate_2026_09_08.py",
+        "scripts/native_uniform_cubic_flux_matrix_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_uniform_cubic_flux_certificate_2026_09_08.py",
+        "scripts/native_uniform_cubic_flux_matrix_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_uniform_cubic_flux_certificate_2026_09_08.py",
+        "scripts/native_uniform_cubic_flux_matrix_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md",
+        "docs/NATIVE_FLUX_DEFECT_COMPARISON_AND_WINDING_GAP_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md",
+        "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-DERIVATION-56a9efd9c26e932a.md",
+        "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-DERIVATION-d6dd768171696f18.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+      "claim_id": "native_weak_electric_defect_density_note_2026-09-08",
+      "primary_runner": "scripts/native_weak_electric_defect_density_2026_09_08.py",
+      "helpers": [
+        "scripts/native_weak_electric_defect_density_controls_2026_09_08.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_weak_electric_defect_density_controls_2026_09_08.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_weak_electric_defect_density_controls_2026_09_08.py"
+      ],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-DERIVATION-56a9efd9c26e932a.md",
+      "canonical_note": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "citations": [],
+      "rationale": "CURRENT supporting scientific proof, fully read and independently checked under the canonical8056 theorem. Rational trigonometric enclosure or gap-free spectral arithmetic derivation; not an autonomous claim and not historical-only.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8057-support-fixture-dispositions.json",
+        "sha256": "9736a38e089fe27b22eefefb72f78f3da9be07d04d1e859b5bff110f87d48df9"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8056-evidence/kept/pr8056-DERIVATION-d6dd768171696f18.md",
+      "canonical_note": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "citations": [],
+      "rationale": "CURRENT supporting scientific proof, fully read and independently checked under the canonical8056 theorem. Rational trigonometric enclosure or gap-free spectral arithmetic derivation; not an autonomous claim and not historical-only.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/review-8057-support-fixture-dispositions.json",
+        "sha256": "9736a38e089fe27b22eefefb72f78f3da9be07d04d1e859b5bff110f87d48df9"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8758,
+      "misses": 4367
+    },
+    "packet_imports": {
+      "hits": 8739,
+      "misses": 4365
+    },
+    "declared_inputs": {
+      "hits": 8789,
+      "misses": 4498
+    }
+  },
+  "record_sha256": "802f3789b8bec899ee21e9cacfed602bad94c8d0e672b8561e606facaa66f145",
+  "checker_sha256": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c"
+}

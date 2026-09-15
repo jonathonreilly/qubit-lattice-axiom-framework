@@ -1,0 +1,73 @@
+{
+  "base": "7925eb36cae77ba2eda929e0065269dc2f1a45e8",
+  "source_tree": "df23bc477d98dc7082c883fba6b83a32f59288b5",
+  "source_paths": {
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+    "docs/audit/scripts/tests/test_review_receipt.py": "dc5fb63697416f56bfe08deba2069c9a539f445c869fcf2faad8434306a10ad0"
+  },
+  "inputs": {
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+  },
+  "status": "PASS",
+  "independent_tests": {
+    "initial_suite": {
+      "count": 44,
+      "seconds": 20.695
+    },
+    "fixed_suite": {
+      "count": 45,
+      "seconds": 22.443
+    },
+    "latest_targeted": {
+      "count": 3,
+      "seconds": 2.053
+    },
+    "extra_forward_controls": 4
+  },
+  "author_final_suite": {
+    "count": 47,
+    "seconds": 22.917
+  },
+  "resolved_finding": "Explicit unknown Type accepted by normalized[1] guard; final raw[0]/metadata/runner-label guard closes this case.",
+  "verdict": "PASS \u2014 bounded independent source review",
+  "reviewer_session": "/root/backlog_topology",
+  "scope": "Four changed methodology/helper/test files only. No scientific execution, full pipeline, source commit, or remote mutation.",
+  "actual_forward_regression": {
+    "status": "ok",
+    "record_schema_version": 2,
+    "source_tree": "eac96794fe7042f7a941643a15014ad8849989b1",
+    "supporting_proofs": 2,
+    "cache_checked": false,
+    "boundary": "External final checker against preserved older methodology checkout; fixture-only validation, not final science preexecution authority."
+  },
+  "findings": [
+    {
+      "severity": "material",
+      "status": "resolved",
+      "description": "Explicit unknown Type accepted by normalized[1] guard; final raw[0]/metadata/runner-label guard closes this case.",
+      "confirmation": "Unknown Type, unknown frontmatter claim_type, and unresolved runner label rejected; full canonical normalized-Type checks unchanged."
+    }
+  ],
+  "performance_scope": "Added work is proportional to explicitly listed supporting fragments and owner helpers; existing memoized global discovery remains intact. Real repository forward check succeeded; no exact speedup claim.",
+  "acceptance_boundary": "Mechanical proof ownership/input/citation identity validation does not certify scientific truth, replace independent review, weaken integration gates, or automatically retag past science reviews.",
+  "evidence": {
+    "/private/tmp/review-drain-20260915/receipt-support-reviewed-final.diff": "4ea5a04d418ea4fcb72862d8d24e9827be1a2ace643b641747db9780415577c3",
+    "/private/tmp/review-drain-20260915/receipt-support-independent-controls.py": "6c34055f1c9a2ed9694b477d3b1ebe7b832c1d110db888596127ded9cfd6594d",
+    "/private/tmp/review-drain-20260915/receipt-support-independent-controls.json": "9e1570eb6184756187b4946f7ed8c640817118f1d046fae68ede62e14abb43fb",
+    "/private/tmp/review-drain-20260915/receipt-support-unknown-type-control.json": "b97475114153d247db5f6f7b216fe89ead51c1b978295997c73fc2a6c85e853d",
+    "/private/tmp/review-drain-20260915/receipt-support-review-findings.md": "1b018cdbc3e87804cd179c5edf73d1abc4b420f4eb2f0946bb0afc6712033e1a",
+    "/private/tmp/review-drain-20260915/8057-support-schema2-mechanical-fixture.json": "d44ca902594c516481fc0239ff23a67d6fc58e623f8eaacddf2ff23cc5bd5042",
+    "/private/tmp/review-drain-20260915/receipt-support-actual8056-regression.json": "d031733d3b5bd4250fe93a23a6662d693e2c28cf2241bf4998f36a14d1967472",
+    "/private/tmp/review-drain-20260915/8057-support-schema2-mechanical-fixture-corrected.json": "802f3789b8bec899ee21e9cacfed602bad94c8d0e672b8561e606facaa66f145",
+    "/private/tmp/review-drain-20260915/receipt-support-actual8056-regression-corrected.json": "dd2d913612ff25064e44f458d3aa7599762888c60b0dd0ad144333b085468146",
+    "/private/tmp/review-drain-20260915/review-8057-support-fixture-dispositions.json": "9736a38e089fe27b22eefefb72f78f3da9be07d04d1e859b5bff110f87d48df9"
+  }
+}

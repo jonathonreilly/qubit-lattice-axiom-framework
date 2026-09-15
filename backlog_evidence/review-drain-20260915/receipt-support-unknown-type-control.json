@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "test",
+  "tree": "f51230bd96839cc141f2db32e5269b16455d781c",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NOTE.md",
+      "claim_id": "note",
+      "primary_runner": "scripts/primary.py",
+      "helpers": [
+        "scripts/helper.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/helper.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/helper.py"
+      ],
+      "citations": [
+        "docs/PARENT.md",
+        "docs/PROOF.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/PROOF.md",
+      "canonical_note": "docs/NOTE.md",
+      "citations": [],
+      "rationale": "Current proof fully reviewed as part of NOTE; no autonomous claim.",
+      "review_reference": {
+        "path": "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpkp9f73qu/support-review.json",
+        "sha256": "18cf5257db15802eabc71b57c68b0099df3c4e167b3c2dcfb4736a82b44f6299"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 2,
+      "misses": 2
+    },
+    "packet_imports": {
+      "hits": 0,
+      "misses": 2
+    },
+    "declared_inputs": {
+      "hits": 4,
+      "misses": 2
+    }
+  },
+  "record_sha256": "65cb80d51738bd5051b5d1c12c282f432fff428b4d66251177166c3d6f2884f3",
+  "checker_sha256": "d8cd4f6316917ec46376ce350588e096deb66ca489780e31b484b0c84f7017a6"
+}

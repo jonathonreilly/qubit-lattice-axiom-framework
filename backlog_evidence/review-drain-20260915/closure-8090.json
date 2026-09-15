@@ -1,0 +1,19 @@
+{
+  "pr": 8090,
+  "original_head": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+  "branch": "physics-loop/native-interacting-weyl-20260913",
+  "landing": "afef2639523b881ae550dbaea6937fb15b02461c",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/native-interacting-weyl-20260913",
+    "headRefOid": "004b5c083745f56e0c00cd72294e0efc28a0bece",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8090,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8090"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "units": [
+    {
+      "unit": "receipt-support-fix",
+      "prs": [],
+      "commits": [
+        "a8cfd34e9ebc879c1d4466831eb30acc9228f49e"
+      ],
+      "final_head": "a8cfd34e9ebc879c1d4466831eb30acc9228f49e",
+      "source_paths": {
+        "docs/ai_methodology/skills/review-loop/SKILL.md": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+        "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+        "docs/audit/scripts/tests/test_review_receipt.py": "dc5fb63697416f56bfe08deba2069c9a539f445c869fcf2faad8434306a10ad0"
+      },
+      "inputs": {
+        "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+        "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+        "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+        "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+        "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+        "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+        "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+        "docs/ai_methodology/skills/review-loop/SKILL.md": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+        "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "ca9a2b6a7e971e472608ccb0e4e5b4716946778c6664e0c746532aa858f80671",
+        "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "53a8a0cb3c7fc0ccf53a11b5dbf09a5daecf52b935ceda759647b448d1a0790c",
+        "docs/audit/scripts/tests/test_review_receipt.py": "dc5fb63697416f56bfe08deba2069c9a539f445c869fcf2faad8434306a10ad0"
+      },
+      "reports": [
+        "8057-support-schema2-mechanical-fixture-corrected.json",
+        "8057-support-schema2-mechanical-fixture.json",
+        "receipt-support-actual8056-regression-corrected.json",
+        "receipt-support-actual8056-regression.json",
+        "receipt-support-independent-controls.json",
+        "receipt-support-independent-controls.py",
+        "receipt-support-review-findings.md",
+        "receipt-support-review-freeze.json",
+        "receipt-support-review.json",
+        "receipt-support-review.md",
+        "receipt-support-reviewed-final.diff",
+        "receipt-support-skill-validation.log",
+        "receipt-support-tests-final.log",
+        "receipt-support-unknown-type-control.json",
+        "receipt-support-vocab.json",
+        "review-8057-support-fixture-dispositions.json"
+      ],
+      "review_evidence_hashes": {
+        "8057-support-schema2-mechanical-fixture-corrected.json": "802f3789b8bec899ee21e9cacfed602bad94c8d0e672b8561e606facaa66f145",
+        "8057-support-schema2-mechanical-fixture.json": "d44ca902594c516481fc0239ff23a67d6fc58e623f8eaacddf2ff23cc5bd5042",
+        "receipt-support-actual8056-regression-corrected.json": "dd2d913612ff25064e44f458d3aa7599762888c60b0dd0ad144333b085468146",
+        "receipt-support-actual8056-regression.json": "d031733d3b5bd4250fe93a23a6662d693e2c28cf2241bf4998f36a14d1967472",
+        "receipt-support-independent-controls.json": "9e1570eb6184756187b4946f7ed8c640817118f1d046fae68ede62e14abb43fb",
+        "receipt-support-independent-controls.py": "6c34055f1c9a2ed9694b477d3b1ebe7b832c1d110db888596127ded9cfd6594d",
+        "receipt-support-review-findings.md": "1b018cdbc3e87804cd179c5edf73d1abc4b420f4eb2f0946bb0afc6712033e1a",
+        "receipt-support-review-freeze.json": "40b0f452a66a39c4f35b27a4550318652e1387e014b89ff51e809a4fe96e4920",
+        "receipt-support-review.json": "f98d077154133a229a33631d4e81f1e85077d434a47345acd2509b2f1b76beaf",
+        "receipt-support-review.md": "21291a45b47432364ae0d1f7b5d00a2f2e1e7b127ffe2ac32eb0e2d08418a2d2",
+        "receipt-support-reviewed-final.diff": "4ea5a04d418ea4fcb72862d8d24e9827be1a2ace643b641747db9780415577c3",
+        "receipt-support-skill-validation.log": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0",
+        "receipt-support-tests-final.log": "293fe6285251ac5d5a48f236fec85bfc629c005166bd969c6867e4b1fb2e4903",
+        "receipt-support-unknown-type-control.json": "b97475114153d247db5f6f7b216fe89ead51c1b978295997c73fc2a6c85e853d",
+        "receipt-support-vocab.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+        "review-8057-support-fixture-dispositions.json": "9736a38e089fe27b22eefefb72f78f3da9be07d04d1e859b5bff110f87d48df9"
+      },
+      "procedural_only": true,
+      "procedural_review": "receipt-support-review.json",
+      "validated_source_tree": "df23bc477d98dc7082c883fba6b83a32f59288b5"
+    }
+  ],
+  "science_notes": 0,
+  "source_count": 4,
+  "collection_closed": "Independently reviewed supporting-proof schema is ready; integration gate is free. Earlier failed fixture and Type finding remain preserved."
+}

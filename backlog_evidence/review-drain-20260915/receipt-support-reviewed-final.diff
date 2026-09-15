@@ -1,0 +1,313 @@
+diff --git a/docs/ai_methodology/skills/review-loop/SKILL.md b/docs/ai_methodology/skills/review-loop/SKILL.md
+index 247a8c52ba..e3f8a9fa0d 100644
+--- a/docs/ai_methodology/skills/review-loop/SKILL.md
++++ b/docs/ai_methodology/skills/review-loop/SKILL.md
+@@ -301,6 +301,9 @@ Prefer one canonical unit record with immutable evidence references and
+ generated handoff/status summaries over several manually repeated packets.
+ For new units, use the versioned schema in `references/UNIT_RECEIPT.md` and
+ `scripts/review_receipt.py` for shared preflight against actual repository APIs.
++Current proof fragments that belong to a canonical claim use the version-2
++`supporting_proofs` relationship, with full scientific review and owner input
++pins; they are never non-science exemptions.
+ Run the cheap source/publication/input checks before final execution, then the
+ cache check against the final frozen evidence. Keep reviewer reports immutable;
+ adapt an older valid record once with its original hashes and explicit mappings,
+diff --git a/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md b/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md
+index b8972a77c5..49a3e0aadb 100644
+--- a/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md
++++ b/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md
+@@ -1,4 +1,4 @@
+-# Unit receipt version 1
++# Unit receipts: version 1 and supporting-proof version 2
+ 
+ This handoff format binds an existing independent review to concrete source and
+ input bytes. It does not create a review, infer PASS, or replace the original
+@@ -37,7 +37,10 @@ source, input, index and evidence identities before returning.
+ 
+ ## Required record
+ 
+-All keys below are required. All five input categories are explicit lists,
++All keys below are required. Version 1 remains valid for existing units.
++Version 2 additionally requires `supporting_proofs`, described below; old
++checkers reject version 2 rather than silently skip its scientific coverage.
++All five input categories are explicit lists,
+ including when empty. File entries use repository-relative `path` and a SHA-256
+ `sha256`. Paths cannot escape the repository or name a final symlink. Evidence
+ references use existing absolute paths and SHA-256. Git identities are full
+@@ -143,6 +146,42 @@ required rows and a hash reference to the original evidence. Point the constitue
+ source identities. An adapter must not fill an absent judgment with PASS or infer
+ reading coverage from a successful runner.
+ 
++## Current supporting proofs
++
++A proof fragment can belong to a canonical claim without being an autonomous
++claim note. Keep it as current scientific source: do not label it historical or
++non-scientific, fabricate a standalone claim/runner, or duplicate its argument
++solely to satisfy the record format. Use **schema version 2** and an explicit
++`supporting_proofs` list:
++
++```json
++{"path":"docs/PROOF_FRAGMENT.md","canonical_note":"docs/NOTE.md",
++ "citations":[],
++ "rationale":"Current supporting proof, fully reviewed under NOTE's stated hypotheses and conclusion; not an autonomous claim.",
++ "review_reference":{"path":"/absolute/review.json","sha256":"REPORT_SHA256"}}
++```
++
++The owner must be a full reviewed `notes` entry, including its ordinary runner,
++helper, premise and cache checks. Each supporting proof must be discovered
++Markdown, hash-bound in `inputs.runtime`, directly linked from that owner, and
++declared as an input of its primary or registered helper. Its own actual Markdown
++citations must exactly match `citations` and have bound target bytes; unresolved
++links fail. Its full argument, imported premises and interactions remain part of
++the owner's independent scientific review. The reviewer must explain that
++coverage and bind the corresponding report. The helper checks the recorded
++relationship, not the truth or completeness of that scientific judgment.
++
++An autonomous `claim_id`, extracted Type or primary runner requires a full
++`notes` entry instead. Duplicate classifications, absent/unreviewed owners,
++missing links/pins, missing input hashes and changed reports fail. Supporting
++proofs never belong in `non_science_notes`; that category retains its historical
++or non-scientific boundary. Version 1 cannot carry `supporting_proofs`. Version 2
++may use an empty list. Success output retains its envelope `schema_version: 1`
++and explicitly reports `record_schema_version` and the checked supporting proof
++relationships. Evidence remains immutable across versions.
++
++## Canonical and declared identities
++
+ Each note maps its exact source path and `declared_claim_id` (the actual frontmatter
+ value, or null when absent) to the graph API's canonical `claim_id`. A legitimate
+ legacy short ID may differ from the canonical ID; neither source renaming nor a
+@@ -157,7 +196,8 @@ unregistered collisions fail; the registry bytes remain receipt-bound.
+ Markdown has complete explicit non-science dispositions. A nonempty source delta
+ is still required. The checker independently inventories discovered Markdown changed by the proposal
+ and unchanged notes affected by a changed primary, packet/transitive helper or
+-literal declared input. Every such note must appear in `notes`, or have an explicit
++literal declared input. Every such note must appear in `notes`, be a checked
++version-2 supporting proof, or have an explicit
+ entry in `non_science_notes` with `path`, a nonempty reviewer `rationale`, and a
+ hash-bound absolute `review_reference`. The latter is for reviewed historical or
+ non-scientific material, not an automatic directory exemption. Its source bytes
+diff --git a/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py b/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py
+index 5c77c8dd78..ddae4595d3 100644
+--- a/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py
++++ b/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py
+@@ -170,7 +170,13 @@ def memoized_discovery(repo, graph, cache, packet):
+ 
+ 
+ def check(repo, record, require_cache=False):
+-    require(type(record['schema_version']) is int and record['schema_version'] == 1, 'unknown receipt schema version')
++    require(type(record['schema_version']) is int and record['schema_version'] in (1, 2), 'unknown receipt schema version')
++    if record['schema_version'] == 1:
++        require('supporting_proofs' not in record, 'supporting_proofs requires receipt schema version 2')
++        supporting_proofs = []
++    else:
++        supporting_proofs = record['supporting_proofs']
++        require(isinstance(supporting_proofs, list), 'supporting_proofs must be explicit')
+     require(isinstance(record['unit_id'], str) and record['unit_id'].strip(), 'unit_id required')
+     source = record['source']
+     for name in ('base', 'commit', 'tree'):
+@@ -299,6 +305,43 @@ def check(repo, record, require_cache=False):
+             require(isinstance(item['rationale'], str) and item['rationale'].strip(), 'non-science rationale required')
+             evidence(item['review_reference'])
+             exempt_paths.add(name)
++        # Current proof fragments belong to an explicitly reviewed claim. They
++        # are scientific inputs, never historical/non-science exemptions.
++        support_paths = set()
++        notes_by_path = {note['path']: note for note in discovered}
++        for item in supporting_proofs:
++            name, owner = item['path'], item['canonical_note']
++            require(name in bound and name not in seen | exempt_paths | support_paths,
++                    'unbound/duplicate supporting proof')
++            path = repo_file(repo, name)
++            require(path in all_notes, 'supporting proof must be discovered Markdown')
++            require(owner in notes_by_path, 'supporting proof owner must be a reviewed canonical note')
++            require(name in categories['runtime'], 'supporting proof must be a bound scientific runtime input')
++            parent = notes_by_path[owner]
++            require(name in parent['citations'], 'supporting proof must be linked by its canonical note')
++            declared_inputs = set()
++            for runner in {parent['primary_runner']} | set(parent['helpers']):
++                declared_inputs.update(cache.declared_input_paths(runner) or ())
++            require(name in declared_inputs, 'supporting proof must be pinned by its canonical runner/helper')
++            body = path.read_text()
++            require(not re.search(r'^\s*(?:claim_id|claim_type|runner|primary_runner):\s*\S+', body, re.M | re.I)
++                    and graph.extract_claim_type_hint(body)[0] is None
++                    and not any(graph.RUNNER_LABEL_RE.search(line) for line in body.splitlines())
++                    and graph.extract_runner(body, path.relative_to(repo / 'docs').as_posix()) is None,
++                    'autonomous claim metadata/runner requires a full note record')
++            cid = graph.claim_id_from_path(path)
++            require(len(ids.get(cid, [])) == 1, 'ambiguous supporting proof ID')
++            for target in graph.LINK_RE.findall(body):
++                if not re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:|#', target) and target.split('#')[0].endswith('.md'):
++                    require(graph.resolve_link_target(target.split('#')[0], path) is not None,
++                            f'unresolved supporting proof citation: {target}')
++            citations = {p.relative_to(repo).as_posix() for p in graph.extract_citations(body, path)}
++            require(isinstance(item['citations'], list) and citations == set(item['citations'])
++                    and citations <= bound.keys(), 'supporting proof citation path/hash mapping mismatch')
++            require(isinstance(item['rationale'], str) and item['rationale'].strip(),
++                    'supporting proof coverage rationale required')
++            evidence(item['review_reference'])
++            support_paths.add(name)
+         affected = set()
+         for path in all_notes:
+             name = path.relative_to(repo).as_posix()
+@@ -315,7 +358,7 @@ def check(repo, record, require_cache=False):
+                     runner_inputs.update(cache.declared_input_paths(runner) or ())
+                 if (runners | runner_inputs) & changed:
+                     affected.add(name)
+-        require(affected <= seen | exempt_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths)))
++        require(affected <= seen | exempt_paths | support_paths, 'uncovered changed/runner-affected notes: ' + ', '.join(sorted(affected - seen - exempt_paths - support_paths)))
+         require(exempt_paths <= affected, 'non-science disposition outside affected note closure')
+         for name, expected in bound.items():
+             require(digest(repo_file(repo, name).read_bytes()) == expected, f'input changed during preflight: {name}')
+@@ -329,9 +372,11 @@ def check(repo, record, require_cache=False):
+         evidence(reviewer['report'])
+         for item in exemptions:
+             evidence(item['review_reference'])
++        for item in supporting_proofs:
++            evidence(item['review_reference'])
+         for ref in reviewer['references']:
+             evidence(ref)
+-        return {'schema_version': 1, 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'discovery_cache': discovery_statistics}
++        return {'schema_version': 1, 'record_schema_version': record['schema_version'], 'mechanical_status': 'ok', 'authority': 'mechanical checks only; independent science review and combined integration gate remain separate', 'unit_id': record['unit_id'], 'tree': source['tree'], 'cache_checked': require_cache, 'notes': discovered, 'supporting_proofs': supporting_proofs, 'discovery_cache': discovery_statistics}
+ 
+ 
+ def main():
+diff --git a/docs/audit/scripts/tests/test_review_receipt.py b/docs/audit/scripts/tests/test_review_receipt.py
+index 2a85e7d18e..13ea86316f 100644
+--- a/docs/audit/scripts/tests/test_review_receipt.py
++++ b/docs/audit/scripts/tests/test_review_receipt.py
+@@ -139,7 +139,7 @@ class ReceiptTests(unittest.TestCase):
+         self.invalid(contains='evidence hash changed')
+ 
+     def test_unknown_version_and_missing_category(self):
+-        self.record['schema_version'] = 2
++        self.record['schema_version'] = 3
+         self.invalid(contains='schema version')
+         self.record['schema_version'] = 1
+         del self.record['inputs']['context']
+@@ -248,6 +248,125 @@ class ReceiptTests(unittest.TestCase):
+         self.add_source('docs/SECOND.md', '# Science\n**Type:** bounded_theorem\n')
+         self.invalid(contains='uncovered changed/runner-affected')
+ 
++    def supporting_proof_fixture(self, linked=True, pinned=True, body='# Supporting proof\nComplete argument.\n'):
++        self.add_source('docs/PROOF.md', body)
++        if linked:
++            self.write('docs/NOTE.md', (self.repo / 'docs/NOTE.md').read_text() + '[proof](PROOF.md)\n')
++            self.record['notes'][0]['citations'].append('docs/PROOF.md')
++        if pinned:
++            self.write('scripts/primary.py', (self.repo / 'scripts/primary.py').read_text().replace(
++                '("data/input.txt",)', '("data/input.txt", "docs/PROOF.md")'))
++        self.git('add', '.')
++        self.record['source']['tree'] = self.git('write-tree')
++        self.record['source']['paths'] = self.bind(row['path'] for row in self.record['source']['paths'])
++        self.record['inputs']['runtime'] += self.bind(['docs/PROOF.md'])
++        # A fresh reviewer record maps the corrected canonical note/runner;
++        # the original constituent hashes and old report stay unchanged.
++        report = json.loads(Path(self.record['reviewer']['report']['path']).read_text())
++        for row in report['original_dispositions']:
++            row['final_sha256'] = self.hash(row['final_path'])
++        path = self.home / 'support-review.json'
++        path.write_text(json.dumps(report))
++        ref = {'path': str(path), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
++        self.record['reviewer']['report'] = ref
++        self.record['constituents'][0]['dispositions'] = dict(ref, json_pointer='/original_dispositions')
++        self.record['schema_version'] = 2
++        self.record['supporting_proofs'] = [{'path': 'docs/PROOF.md', 'canonical_note': 'docs/NOTE.md',
++            'citations': [], 'rationale': 'Current proof fully reviewed as part of NOTE; no autonomous claim.',
++            'review_reference': ref}]
++
++    def test_current_supporting_proof_has_scientific_owner(self):
++        self.supporting_proof_fixture()
++        status, result = self.check()
++        self.assertEqual(status, 0, result)
++        self.assertEqual(result['record_schema_version'], 2)
++        self.assertEqual(result['supporting_proofs'][0]['canonical_note'], 'docs/NOTE.md')
++        self.assertEqual(self.record['non_science_notes'], [])
++        self.assertNotIn('verdict', result)
++
++    def test_supporting_proof_cannot_use_old_schema(self):
++        self.supporting_proof_fixture()
++        self.record['schema_version'] = 1
++        self.invalid(contains='requires receipt schema version 2')
++
++    def test_supporting_proof_requires_explicit_new_schema_list(self):
++        self.record['schema_version'] = 2
++        self.invalid(contains='supporting_proofs')
++        self.record['supporting_proofs'] = {}
++        self.invalid(contains='supporting_proofs must be explicit')
++
++    def test_supporting_proof_requires_reviewed_owner(self):
++        self.supporting_proof_fixture()
++        self.record['supporting_proofs'][0]['canonical_note'] = 'docs/PARENT.md'
++        self.invalid(contains='owner must be a reviewed canonical note')
++
++    def test_supporting_proof_requires_link_and_pin(self):
++        self.supporting_proof_fixture(linked=False)
++        self.invalid(contains='must be linked')
++
++    def test_supporting_proof_requires_actual_runner_pin(self):
++        self.supporting_proof_fixture(pinned=False)
++        self.invalid(contains='must be pinned')
++
++    def test_supporting_proof_requires_runtime_binding(self):
++        self.supporting_proof_fixture()
++        self.record['inputs']['runtime'] = self.bind(['data/input.txt'])
++        self.invalid(contains='scientific runtime input')
++
++    def test_supporting_proof_cannot_hide_autonomous_type(self):
++        self.supporting_proof_fixture(body='# Separate claim\n**Type:** bounded_theorem\n')
++        self.invalid(contains='autonomous claim')
++
++    def test_supporting_proof_cannot_hide_unknown_explicit_type(self):
++        self.supporting_proof_fixture(body='# Separate claim\n**Type:** novel_theorem\n')
++        self.invalid(contains='autonomous claim')
++
++    def test_supporting_proof_cannot_hide_own_runner(self):
++        self.supporting_proof_fixture(body='# Separate claim\nRunner: `scripts/primary.py`\n')
++        self.invalid(contains='autonomous claim')
++
++    def test_supporting_proof_cannot_hide_unresolved_runner_label(self):
++        self.supporting_proof_fixture(body='# Separate claim\n**Runner:** `scripts/absent.py`\n')
++        self.invalid(contains='autonomous claim')
++
++    def test_supporting_proof_cannot_hide_frontmatter_type(self):
++        self.supporting_proof_fixture(body='---\nclaim_type: invented_theorem\n---\n# Separate claim\n')
++        self.invalid(contains='autonomous claim')
++
++    def test_supporting_proof_cannot_hide_declared_claim_id(self):
++        self.supporting_proof_fixture(body='---\nclaim_id: proof\n---\n# Separate claim\n')
++        self.invalid(contains='autonomous claim')
++
++    def test_supporting_proof_coverage_requires_unique_category(self):
++        self.supporting_proof_fixture()
++        self.record['non_science_notes'] = [self.record['supporting_proofs'][0]]
++        self.invalid(contains='duplicate supporting proof')
++
++    def test_supporting_proof_requires_complete_citations(self):
++        self.supporting_proof_fixture(body='# Supporting proof\n[parent](PARENT.md)\n')
++        self.invalid(contains='supporting proof citation')
++        self.record['supporting_proofs'][0]['citations'] = ['docs/PARENT.md']
++        status, result = self.check()
++        self.assertEqual(status, 0, result)
++
++    def test_supporting_proof_rejects_missing_citation(self):
++        self.supporting_proof_fixture(body='# Supporting proof\n[missing](MISSING.md)\n')
++        self.invalid(contains='unresolved supporting proof citation')
++
++    def test_supporting_proof_requires_coverage_and_unchanged_evidence(self):
++        self.supporting_proof_fixture()
++        item = self.record['supporting_proofs'][0]
++        item['rationale'] = ''
++        self.invalid(contains='coverage rationale')
++        item['rationale'] = 'Current proof reviewed under NOTE.'
++        item['review_reference'] = dict(item['review_reference'], sha256='0' * 64)
++        self.invalid(contains='evidence hash changed')
++
++    def test_supporting_proof_source_drift_rejected(self):
++        self.supporting_proof_fixture()
++        self.write('docs/PROOF.md', '# Changed proof\n')
++        self.invalid(contains='hash changed')
++
+     def test_explicit_historical_disposition(self):
+         self.add_source('docs/HISTORY.md', '# Historical prose\n')
+         self.record['non_science_notes'] = [{'path': 'docs/HISTORY.md',

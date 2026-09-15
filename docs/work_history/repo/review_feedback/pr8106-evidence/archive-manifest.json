@@ -1,0 +1,535 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "gzip",
+      "git_blob": "fb10b5c3b85886378049f2571afa830ac52f4847",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/BLOCK1_CORRECTIONS.md",
+      "raw_bytes": 1779,
+      "raw_sha256": "28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce",
+      "stored_path": "_objects/28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce.gz",
+      "stored_sha256": "ac1b33747c8cff73c6a1a489ee4d9903bbae177124e230f27056e7cb0e916fd6"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0d0e231672c510b5fa2d437237de64d5b8c95ab2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/HANDOFF.md",
+      "raw_bytes": 2228,
+      "raw_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999",
+      "stored_path": "kept/pr8106-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "d3f96e5b4c90d7423e8acb7d374e61490e061c37",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/MUTATION_RESULTS.json",
+      "raw_bytes": 8072,
+      "raw_sha256": "4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd",
+      "stored_path": "_objects/4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd.gz",
+      "stored_sha256": "683ea0ebae26d329cea281d489241cf098617d207c3204307294598f25ca0cb7"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "31eeec9824685490e7ad06c066b9ab5b1a76badb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/PRIMARY_EXECUTION_RESULT.json",
+      "raw_bytes": 10541,
+      "raw_sha256": "372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1",
+      "stored_path": "_objects/372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1.gz",
+      "stored_sha256": "202ee35b6817f4c0bcc3b50fd1627469b348ec048e3a68d49217b12950f03c48"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "525028ff4537240e13e4122f19d5ec295240284a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/READING_LEDGER.json",
+      "raw_bytes": 2477,
+      "raw_sha256": "43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca",
+      "stored_path": "_objects/43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca.gz",
+      "stored_sha256": "d13dae997e16218c568fae4b4345b775a129c24365ac3408ac579d9c4d258952"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8c76e2d5ab35a7a678abcb787e9243aafedf3341",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/REVIEW_HISTORY.md",
+      "raw_bytes": 3593,
+      "raw_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95",
+      "stored_path": "kept/pr8106-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b8a730f73d7fe28ed570fb6bf5731bb2d5fc7b0a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/STATE.yaml",
+      "raw_bytes": 464,
+      "raw_sha256": "a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995",
+      "stored_path": "_objects/a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995.gz",
+      "stored_sha256": "098f729d68695d4f5f558eb48b4751b57fbc9a185396ce0083c2509b9392782d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c9a9d154fae2da55b72f359b8c1872c902fab959",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/TRACE_GATE.md",
+      "raw_bytes": 1003,
+      "raw_sha256": "d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a",
+      "stored_path": "_objects/d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a.gz",
+      "stored_sha256": "12d0bb9c33062b45505b4093ea62f12abb5ae64c9afbd77cb7b7b68fc72febf5"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "7bb0d8a022a9931461dfa171257bf0f08b45b818",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stderr.attempt1.gz",
+      "raw_bytes": 375,
+      "raw_sha256": "92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066",
+      "stored_path": "_objects/92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066.gz",
+      "stored_sha256": "6fce321d481e7d69be83acdedcc5be451bbfdf392730b92fdde1e1929398af52"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "de3bc41d8cb45400986f975b8b081dcf7379748c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace.stdout.attempt1.gz",
+      "raw_bytes": 20,
+      "raw_sha256": "3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596",
+      "stored_path": "_objects/3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596.gz",
+      "stored_sha256": "4ab8a471d9b92296057bff2572cad1144f586915e2b8e4a2033e42c14fff6deb"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bb1d4eeed03a8059c7ed38ab9dbff34517a6aa88",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/block1_positive_trace_check.py.attempt1.gz",
+      "raw_bytes": 1633,
+      "raw_sha256": "5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca",
+      "stored_path": "_objects/5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca.gz",
+      "stored_sha256": "8135146057b2b51fff333966bf6169c3a058518f61d7231273e00a7fb8c5fbd1"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4eb8369359e6e95b3a5517a731d9f076fa5ba356",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.source.py.gz",
+      "raw_bytes": 8241,
+      "raw_sha256": "431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4",
+      "stored_path": "_objects/431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4.gz",
+      "stored_sha256": "c4dd77f5794e511417216d1b68c9abcaed7c680cbb6e9b265b756e19fd149a72"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "4216fc6e65a8dd2a2803fc0ea6cc82a8a5dd1867",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stderr.gz",
+      "raw_bytes": 297,
+      "raw_sha256": "2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45",
+      "stored_path": "_objects/2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45.gz",
+      "stored_sha256": "534c8c06abdfadfe81c543cf72d93d8d21fb33ad30ded247520d0cf8dcbfae0e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "55166daf52a57e958e7fb8e540e1751546a979fe",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/antiunitary_pairing.stdout.gz",
+      "raw_bytes": 121,
+      "raw_sha256": "1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd",
+      "stored_path": "_objects/1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd.gz",
+      "stored_sha256": "1297ab173221249f55485cf8850ae288e6416cb6d3499edc1289ffbb54e11ef2"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "777e8ab16cf0a412c5e802d829d0c7dea54635eb",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.source.py.gz",
+      "raw_bytes": 8240,
+      "raw_sha256": "274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251",
+      "stored_path": "_objects/274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251.gz",
+      "stored_sha256": "ce9f6a1de72a33931655f01f6ba877671263d503f549ba2919d3fe63f0dfb641"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1289d02b8088c6e0b04b5db50712f672dd22859b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stderr.gz",
+      "raw_bytes": 339,
+      "raw_sha256": "42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062",
+      "stored_path": "_objects/42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062.gz",
+      "stored_sha256": "10d6afddda5f7c1d40beca0014c999fba74c05f2b6cbe1f2f3ea86a9c7014f8b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "b112bc6081852e9be206a5b80b28f06f024598c0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/charge_interaction.stdout.gz",
+      "raw_bytes": 116,
+      "raw_sha256": "3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2",
+      "stored_path": "_objects/3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2.gz",
+      "stored_sha256": "ab904122ca6f16b809f9af17b9391113ce1d7d5654e5c44b30f065fbfd6bac00"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ddf2156252100b357672b051f1123696cba0f030",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.source.py.gz",
+      "raw_bytes": 8235,
+      "raw_sha256": "ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f",
+      "stored_path": "_objects/ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f.gz",
+      "stored_sha256": "773df74d939ac70e1c8306d5a2af5b7e6dadba3c1fc734d08977d963c128edc0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c423c0e6d7a7f8a4fe6f36147c0c1c0f46d460b7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stderr.gz",
+      "raw_bytes": 287,
+      "raw_sha256": "24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2",
+      "stored_path": "_objects/24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2.gz",
+      "stored_sha256": "ac817d36f062a001e81e2836dcdd1dcc38e85b092da566d1ab34942b950d418b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "ba1813c7938516774323cd4603223eb1a5181c14",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/clock_rotor.stdout.gz",
+      "raw_bytes": 104,
+      "raw_sha256": "807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d",
+      "stored_path": "_objects/807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d.gz",
+      "stored_sha256": "e643259714e0357f1ce2641cd2b751437c821beadedcd1f1f37589d7aa2eaa56"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f3a5537462e5c78254bc71140acde1670a3bba09",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.source.py.gz",
+      "raw_bytes": 8225,
+      "raw_sha256": "6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e",
+      "stored_path": "_objects/6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e.gz",
+      "stored_sha256": "20fe932672ca27630d08b285107685acb80523a3e498e3838a69ab04ec5415f9"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "103b9b5adc688309d63fb06fffed32d00d864059",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stderr.gz",
+      "raw_bytes": 297,
+      "raw_sha256": "bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16",
+      "stored_path": "_objects/bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16.gz",
+      "stored_sha256": "f94a14cab0ff13b299d829092031e3e1371fbe3369f0264fbccba7e4b044316d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "03f76e72dae3127fb758fe4875006e7b45d34358",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/fourier_pairing.stdout.gz",
+      "raw_bytes": 112,
+      "raw_sha256": "db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e",
+      "stored_path": "_objects/db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e.gz",
+      "stored_sha256": "cacba6af45a0d0e340382b5023577851f0c98d9e7b20e577c7f8afec83774495"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1d44d8aef2ab9bf02053b8fddcfde5a9b71115e0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.source.py.gz",
+      "raw_bytes": 8242,
+      "raw_sha256": "beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca",
+      "stored_path": "_objects/beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca.gz",
+      "stored_sha256": "490fd4830313f2ada2712ef0acf6e4fd2a2166fe51a9fdddd3c03b565a435f5d"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "bfa89880e8d784d16ad123d10a24027ecfc94d1f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stderr.gz",
+      "raw_bytes": 287,
+      "raw_sha256": "e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558",
+      "stored_path": "_objects/e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558.gz",
+      "stored_sha256": "608da7966c03b6b742522c2d21b323b7380e753347b33621bd28e46b8f02fa0e"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "a991a24da77db751da28e454b4383028214223c7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/generator_bound.stdout.gz",
+      "raw_bytes": 110,
+      "raw_sha256": "8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8",
+      "stored_path": "_objects/8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8.gz",
+      "stored_sha256": "641015ef0a849cbfc5cbc0c52440c317505739ef2905ba6cf720c8e640e63ccd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "0645ffe391f6513b1b98340d1af798caf5d5260b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.source.py.gz",
+      "raw_bytes": 8238,
+      "raw_sha256": "ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9",
+      "stored_path": "_objects/ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9.gz",
+      "stored_sha256": "851b18328190c5922f1abc383fefb8d0d5f7be24b0037f3f1c515153ef757f6f"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "47bb7b408ca8b30151573e1ad88ebbb66a1e665e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stderr.gz",
+      "raw_bytes": 294,
+      "raw_sha256": "ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8",
+      "stored_path": "_objects/ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8.gz",
+      "stored_sha256": "aae46a2e2bae4015158ab9e5234308f75bdba2f2e15141065a5fa8b6ef602323"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "f0cf90f368322ad11db6aa5282eacdb0af45bb1d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/plaquette_trace.stdout.gz",
+      "raw_bytes": 112,
+      "raw_sha256": "a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12",
+      "stored_path": "_objects/a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12.gz",
+      "stored_sha256": "e2221e901c6a6ed1a68157385a499821ec9d1125b7b80b8960b3208219aaf844"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "5e2b97e8a7be4e32ed716201a524a5dda383ce5b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.source.py.gz",
+      "raw_bytes": 8236,
+      "raw_sha256": "83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527",
+      "stored_path": "_objects/83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527.gz",
+      "stored_sha256": "b23eaf85191b439950eacd61205b51f530749e4ff86b42d1a119d3ae69ef8ebd"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "df35b1989828052c9ced6672ccf7e279653cd21e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stderr.gz",
+      "raw_bytes": 334,
+      "raw_sha256": "d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196",
+      "stored_path": "_objects/d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196.gz",
+      "stored_sha256": "7452fc02afbeb1310cc893adfda2802d1f9b42db8606dc86efac774b891a367c"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "78b02bcd7d489d7ef333b9e20fa411cda844690b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/positive_trace.stdout.gz",
+      "raw_bytes": 110,
+      "raw_sha256": "c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2",
+      "stored_path": "_objects/c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2.gz",
+      "stored_sha256": "7cb6f07b5e787bdbc8648f71616cba685f9757a1c215aa1b552479f23b23d864"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "c3c132d1efeaa962c2552be673be16baeb66e3a6",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.source.py.gz",
+      "raw_bytes": 8231,
+      "raw_sha256": "05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad",
+      "stored_path": "_objects/05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad.gz",
+      "stored_sha256": "d8f6c9c5efa231bfebf82a32ff94963be43ae5282e0dd9541ed71d10cdd1b9c0"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "1d5473280b7fdfffd48378e9f1258266e02e0ee5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stderr.gz",
+      "raw_bytes": 296,
+      "raw_sha256": "14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97",
+      "stored_path": "_objects/14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97.gz",
+      "stored_sha256": "3b5cd11ae0c1ed1ed5af95fbca6a906d5f3c2db38cce1a4d262de8689fbcba8b"
+    },
+    {
+      "encoding": "gzip",
+      "git_blob": "8fa18d38d19265393fbaa42df353ca34e58d01d1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/toe-charged-phase-20260914/mutation_evidence/wilson_fock.stdout.gz",
+      "raw_bytes": 105,
+      "raw_sha256": "79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4",
+      "stored_path": "_objects/79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4.gz",
+      "stored_sha256": "d872c0097dde58e6a039e2ffd78c95e66c68d8f8ff592929137740d2ab24afe8"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/toe-charged-phase-20260914/",
+  "revision": "9030fd24ea1c9acf5b2694c23b203355cc66d6c6",
+  "schema_version": 1,
+  "unique_blobs": {
+    "03f76e72dae3127fb758fe4875006e7b45d34358": {
+      "occurrences": 1,
+      "raw_bytes": 112,
+      "raw_sha256": "db62e1a1e2e9402e150eb021563850273bc7fa3a2cc55118383b0389e4c5b31e"
+    },
+    "0645ffe391f6513b1b98340d1af798caf5d5260b": {
+      "occurrences": 1,
+      "raw_bytes": 8238,
+      "raw_sha256": "ea26254601f8a5ab51d377b02363d6076174b09f202cd94a829b7e3d65e703a9"
+    },
+    "0d0e231672c510b5fa2d437237de64d5b8c95ab2": {
+      "occurrences": 1,
+      "raw_bytes": 2228,
+      "raw_sha256": "3b4b068f2f277c3e812f6f1e54728aa4a39dd67b2c6920646fb3774958cf1999"
+    },
+    "103b9b5adc688309d63fb06fffed32d00d864059": {
+      "occurrences": 1,
+      "raw_bytes": 297,
+      "raw_sha256": "bf3259a96e7cace7fa69b9ac90f070812b15f2c64328384e7697d34447eb1c16"
+    },
+    "1289d02b8088c6e0b04b5db50712f672dd22859b": {
+      "occurrences": 1,
+      "raw_bytes": 339,
+      "raw_sha256": "42bb299a9c5d3221877de7e63dc6a5af66f74b5fb5a8387cc824d91bd0149062"
+    },
+    "1d44d8aef2ab9bf02053b8fddcfde5a9b71115e0": {
+      "occurrences": 1,
+      "raw_bytes": 8242,
+      "raw_sha256": "beac2d255ff411843225d1bf69087d3dd9cc51cba046a328b1516073f9b9a5ca"
+    },
+    "1d5473280b7fdfffd48378e9f1258266e02e0ee5": {
+      "occurrences": 1,
+      "raw_bytes": 296,
+      "raw_sha256": "14c602e1351b90106f68f5ed4050fd1ba868744bbbf7e7a4e8b65b533baffd97"
+    },
+    "31eeec9824685490e7ad06c066b9ab5b1a76badb": {
+      "occurrences": 1,
+      "raw_bytes": 10541,
+      "raw_sha256": "372b48a2a173ab7fd1db8d4d5eed36a950968983c4488d4554f1008f09fc20d1"
+    },
+    "4216fc6e65a8dd2a2803fc0ea6cc82a8a5dd1867": {
+      "occurrences": 1,
+      "raw_bytes": 297,
+      "raw_sha256": "2bdacc7c5295a292ad44c440809c6c2e6ed14d413c7991cccdbb8ff92f34ba45"
+    },
+    "47bb7b408ca8b30151573e1ad88ebbb66a1e665e": {
+      "occurrences": 1,
+      "raw_bytes": 294,
+      "raw_sha256": "ca3d87754e543cdb8623ce0ce23fde81fb6162c46156542a938359804e16f1a8"
+    },
+    "4eb8369359e6e95b3a5517a731d9f076fa5ba356": {
+      "occurrences": 1,
+      "raw_bytes": 8241,
+      "raw_sha256": "431fa9ef9d04efacc5fcf832fdb9da8d46fb99e53938174177967ca755cfe6c4"
+    },
+    "525028ff4537240e13e4122f19d5ec295240284a": {
+      "occurrences": 1,
+      "raw_bytes": 2477,
+      "raw_sha256": "43dfea72662fbb7ff274e8a960184ff01eb53f2c9bbb7ba8cfc5df15fb97d8ca"
+    },
+    "55166daf52a57e958e7fb8e540e1751546a979fe": {
+      "occurrences": 1,
+      "raw_bytes": 121,
+      "raw_sha256": "1a50e2eaf08336db7c7fe749d39e9d43a0cbc23793ccf5db4753291a4cea4bcd"
+    },
+    "5e2b97e8a7be4e32ed716201a524a5dda383ce5b": {
+      "occurrences": 1,
+      "raw_bytes": 8236,
+      "raw_sha256": "83fc7af1b615b9b3ccb459bd0e91d538afa5a11bfe4478fdc57097b9a679c527"
+    },
+    "777e8ab16cf0a412c5e802d829d0c7dea54635eb": {
+      "occurrences": 1,
+      "raw_bytes": 8240,
+      "raw_sha256": "274d4f2c59dc32c63a06fc47deef2d40c97178b84d4a2f5139d6738f3530a251"
+    },
+    "78b02bcd7d489d7ef333b9e20fa411cda844690b": {
+      "occurrences": 1,
+      "raw_bytes": 110,
+      "raw_sha256": "c5b0e2eaeda95a11277e889ef7e2c0931c8872a26e151fc55b881d45451674d2"
+    },
+    "7bb0d8a022a9931461dfa171257bf0f08b45b818": {
+      "occurrences": 1,
+      "raw_bytes": 375,
+      "raw_sha256": "92c88eec38f89c2a79ff6a1c9e9ec1f69d133d4533877f3a5a69bc839b594066"
+    },
+    "8c76e2d5ab35a7a678abcb787e9243aafedf3341": {
+      "occurrences": 1,
+      "raw_bytes": 3593,
+      "raw_sha256": "00585bb50ad34740655a5584e107102a1088fd4741880d1a65c6849c8be79f95"
+    },
+    "8fa18d38d19265393fbaa42df353ca34e58d01d1": {
+      "occurrences": 1,
+      "raw_bytes": 105,
+      "raw_sha256": "79548881869e5e11d99bca1b0cb686cc29f0f17dfc9ffdd8dbc670ac11e36bf4"
+    },
+    "a991a24da77db751da28e454b4383028214223c7": {
+      "occurrences": 1,
+      "raw_bytes": 110,
+      "raw_sha256": "8db2dbc0deb1414f6fd9051b7144e4d54786ce3062c06552f18777aabd5e6ec8"
+    },
+    "b112bc6081852e9be206a5b80b28f06f024598c0": {
+      "occurrences": 1,
+      "raw_bytes": 116,
+      "raw_sha256": "3fe18656765b8da8ffca89d91060607bf3d7dcfb62632d552b875498ab1c55d2"
+    },
+    "b8a730f73d7fe28ed570fb6bf5731bb2d5fc7b0a": {
+      "occurrences": 1,
+      "raw_bytes": 464,
+      "raw_sha256": "a1ced26c0837472cecba78dcad42a7bbf23ebc67e92c93159025996d5412b995"
+    },
+    "ba1813c7938516774323cd4603223eb1a5181c14": {
+      "occurrences": 1,
+      "raw_bytes": 104,
+      "raw_sha256": "807b67760f85f27e72d347a75d433d15a51a4ba4eb3b01f580124bfbdd3e097d"
+    },
+    "bb1d4eeed03a8059c7ed38ab9dbff34517a6aa88": {
+      "occurrences": 1,
+      "raw_bytes": 1633,
+      "raw_sha256": "5a31f9f7b6b5b009e11d8ced4e66fe2bc5f923acc54f2331b8d5c5afe53194ca"
+    },
+    "bfa89880e8d784d16ad123d10a24027ecfc94d1f": {
+      "occurrences": 1,
+      "raw_bytes": 287,
+      "raw_sha256": "e1ccf7879a2499b536261b06ba2ea1eee05b28b72943c3ff9b4abcdb1c74c558"
+    },
+    "c3c132d1efeaa962c2552be673be16baeb66e3a6": {
+      "occurrences": 1,
+      "raw_bytes": 8231,
+      "raw_sha256": "05e2ec0bb82a336f17e685dab04530493c22797dcf6a17df83f0f24e929d4fad"
+    },
+    "c423c0e6d7a7f8a4fe6f36147c0c1c0f46d460b7": {
+      "occurrences": 1,
+      "raw_bytes": 287,
+      "raw_sha256": "24b95e1da669bc82d2410708c2449b791f8827bb3918117734129233f789f7c2"
+    },
+    "c9a9d154fae2da55b72f359b8c1872c902fab959": {
+      "occurrences": 1,
+      "raw_bytes": 1003,
+      "raw_sha256": "d89902af6ad6156fa5413998cc069594b7aa4fbd80aff1468e34fc670792c74a"
+    },
+    "d3f96e5b4c90d7423e8acb7d374e61490e061c37": {
+      "occurrences": 1,
+      "raw_bytes": 8072,
+      "raw_sha256": "4589b63b4d50b29934d5ca34796d97eadb60767293927fd890aa85222b147afd"
+    },
+    "ddf2156252100b357672b051f1123696cba0f030": {
+      "occurrences": 1,
+      "raw_bytes": 8235,
+      "raw_sha256": "ea296c23835375ca5b40f5534684f98b7e6b3ca2f2e82d9224d26cfff78fa46f"
+    },
+    "de3bc41d8cb45400986f975b8b081dcf7379748c": {
+      "occurrences": 1,
+      "raw_bytes": 20,
+      "raw_sha256": "3a0a946fec617703b4cf3a06de56c0d854c41a0ce4aef32d6d595ffe5b47d596"
+    },
+    "df35b1989828052c9ced6672ccf7e279653cd21e": {
+      "occurrences": 1,
+      "raw_bytes": 334,
+      "raw_sha256": "d74404d4e7c6577f1fbdd2e57d2cadda49e6b9937a43fdf9246ed11cbd298196"
+    },
+    "f0cf90f368322ad11db6aa5282eacdb0af45bb1d": {
+      "occurrences": 1,
+      "raw_bytes": 112,
+      "raw_sha256": "a25e9d26c03e965fae12742c31ddf2f1171192ab2d028f8bc8e5dd16da81ba12"
+    },
+    "f3a5537462e5c78254bc71140acde1670a3bba09": {
+      "occurrences": 1,
+      "raw_bytes": 8225,
+      "raw_sha256": "6ab3e242e1ee05710be2d47c0ce323664c82bf08a7711bd0318aef3dd7a5a88e"
+    },
+    "fb10b5c3b85886378049f2571afa830ac52f4847": {
+      "occurrences": 1,
+      "raw_bytes": 1779,
+      "raw_sha256": "28cb7044c9339621e55789a1999e256fd7e900e6ccc0aa67cde1e5426c91c6ce"
+    }
+  }
+}

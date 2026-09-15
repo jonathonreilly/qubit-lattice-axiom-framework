@@ -1,6 +1,6 @@
 {
- "edge_count": 13383,
- "node_count": 5821,
+ "edge_count": 13395,
+ "node_count": 5829,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13178,6 +13178,10 @@
    "deps_hash": "b78f2672dca6",
    "out_degree": 2
   },
+  "native_star_thermodynamic_limit_note_2026-09-09": {
+   "deps_hash": "a5940e8607f3",
+   "out_degree": 5
+  },
   "native_third_order_star_vertex_note_2026-09-08": {
    "deps_hash": "9b33929562fe",
    "out_degree": 5
@@ -13189,6 +13193,10 @@
   "native_uniform_cubic_flux_defect_stiffness_note_2026-09-08": {
    "deps_hash": "f80083cc05df",
    "out_degree": 7
+  },
+  "native_uniform_quasilocal_star_vertex_note_2026-09-09": {
+   "deps_hash": "5fa114a3f881",
+   "out_degree": 5
   },
   "native_virtual_pair_ring_mechanism_note_2026-09-08": {
    "deps_hash": "5c958ba514c0",
@@ -21885,6 +21893,30 @@
   "work_history.repo.review_feedback.pr8061-proof-sources.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8062-evidence.kept.pr8062-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8062-evidence.kept.pr8062-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8062-evidence.readme": {
+   "deps_hash": "7e80ee66ea5b",
+   "out_degree": 1
+  },
+  "work_history.repo.review_feedback.pr8063-evidence.kept.pr8063-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8063-evidence.kept.pr8063-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8063-evidence.readme": {
+   "deps_hash": "fbfad8d3bcd9",
+   "out_degree": 1
   },
   "work_history.repo.review_feedback.pr8065-charged-history-evidence.final_root_review.pr8065-final_root_review-packaging_note": {
    "deps_hash": "e3b0c44298fc",

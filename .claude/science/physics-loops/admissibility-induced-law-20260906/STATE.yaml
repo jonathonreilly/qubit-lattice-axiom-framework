@@ -122,5 +122,5 @@ source_review_correction:
 # refuted_on_the_way: "every arrow points away from the root (538 of 4308 executed trees have a kept pole reached from below); dropped, both directions kept in the count"
 # final_certificate: "TOTAL: PASS=22 FAIL=0; 13 mutations (certificate_wrong replaces series_constant_wrong), census 13/13 in-family; sharpening refuter consistent on five routes; cache re-pinned; gates re-run"
 # strongest_unresolved_proof_obligation: "the true threshold (the route's edge is near 7.4e-6 for this accounting; the arrow budget 3(n-1) against 12/7 observed; simulation near 0.05); the band between block 08's uniqueness region and this one"
-# next_exact_action: "queue refresh 2026-09-16 (block 25 sharpened): the arrow budget; the intermediate band; normalization; X4"
+# next_exact_action: "queue refresh 2026-09-16 (block 25 sharpened): the arrow budget dropped (7/3 observed: a <= 2(n-1) is false); remaining items — the intermediate band, normalization, X4 — hard; value gate reached for the lane's proof-shaped items; lane assessment in HANDOFF"
 # lock: held (owner: keep going on the highest-leverage science)

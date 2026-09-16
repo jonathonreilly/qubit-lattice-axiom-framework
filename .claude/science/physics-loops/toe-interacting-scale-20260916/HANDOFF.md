@@ -43,3 +43,30 @@ Next: examine whether a frequency-separated current response or stronger
 compact-field control can remove the coupling-dependent floor. Avoid another
 one-loop restatement or treating the mean defect bound as phase control.
 Continue personally through13:45:03 UTC; the prior01:45 deadline is obsolete.
+
+
+New stretch (active, unproved): BLOCK02_WORKING_JOINT_LIMIT.md contains the
+complete proposed mechanism and exact pending obligations. It combines a
+positive-square gauge identity, optimized integer Gaussian/dual pressure
+bound and a finite-block Gauss-dressed Slater trial. If valid, it may establish
+a joint g->0,L->infinity equal-time limit; it does not close the fixed-g phase.
+Continue with topology/dressing/energy first, not an all-orders RG assertion.
+
+02:20 UTC checkpoint: the topology, optimized integer Gaussian, exact positive
+squares, block Slater dressing and energy comparison are written in
+notes/BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md. Two selective
+author runners completed: integer Gaussian/positive-square and tree/Slater.
+The latter directly checks charged Gauss law and the dressing sign, and uses
+determinant overlap curvature to challenge the variance formula. No fixed-g
+claim. Crucial scope correction: Block02 assumes no extra onsite charge
+interaction, unlike the broader optional hypothesis in Block01. Next prove
+the local characteristic-function step; energy alone does not establish it.
+
+02:28 UTC: Block03 supplies the local single-exponential characteristic proof,
+using positive Fourier covariance, the exact approximate-annihilator
+commutator, and an explicitly controlled angle translation inside Duhamel.
+The weighted commutator and single-rotor ODE check completed; source and
+paired output are in evidence/. Both Blocks02--03 received a personal review
+in review/BLOCK02_03_PERSONAL_REVIEW.md. Next complete finite products of gauge
+exponentials and identify the limiting matter state before declaring the
+joint observable milestone. No dynamics or fixed-g conclusion is implicit.

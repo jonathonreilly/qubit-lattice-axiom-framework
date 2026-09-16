@@ -28,3 +28,11 @@ Constructive-literature route: current source screen provides no matching
 full theorem. The closest massless noncompact lattice construction examined
 controls perturbative orders and leaves nonperturbative cutoff removal open.
 This is not a theorem that the compact model fails.
+
+Blocks02--03: an optimized integer Gaussian plus block Slater dressing gives
+a provisional simultaneous weak-g/large-L energy bound. Positive squares and
+a characteristic ODE then remove the iterated-limit restriction for fixed
+local gauge probes. This is a new uniform proof mechanism, not a substitution
+of g(L) into the previous fixed-box theorem. Next complete the local algebra
+and free matter identification as one coherent milestone. After that, reassess
+fixed-g leverage; further weak-g relabelings would not close the actual phase.

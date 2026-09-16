@@ -1,0 +1,4 @@
+Integer boundary lattice, weighted Gaussian, and positive-square challenges completed.
+Full hard-cutoff discrepancy (expected): 17.0293
+Wrong divergence sign discrepancy: 24.1079
+TOTAL: PASS=37 FAIL=0

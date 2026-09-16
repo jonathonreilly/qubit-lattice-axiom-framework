@@ -1,0 +1,6 @@
+Weighted cubic commutator, Fourier normalization, and single-rotor characteristic challenge completed.
+g=0.60: characteristic error=0.00758392, ODE residual=0.0194424
+g=0.40: characteristic error=0.00337154, ODE residual=0.00860415
+g=0.25: characteristic error=0.00131736, ODE residual=0.00335366
+g=0.16: characteristic error=0.000539649, ODE residual=0.00137248
+TOTAL: PASS=22 FAIL=0

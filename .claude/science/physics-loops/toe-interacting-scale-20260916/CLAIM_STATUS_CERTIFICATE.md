@@ -15,3 +15,13 @@ combined electric/magnetic inelastic spectral weight at a stated energy scale.
 The fixed-positive-coupling massless phase, state selection, fermion stability,
 continuum identification and axiomatic law selection remain open. No retained
 status, independent review receipt or axiom update is asserted.
+
+Blocks02--03: provisional author bounded-theorem proposals, pending independent
+review and audit. Block02 restricts to the quadratic paired Wilson matter
+Hamiltonian without any additional fixed onsite charge interaction. It gives
+a uniform ground-energy comparison and a positive oscillator-defect density
+bound O(sqrt(g)+1/L). Block03 derives the equal-time single-exponential
+gauge characteristic limit along arbitrary joint g->0,L->infinity sequences.
+The normalized full ground trace and fixed local smears are essential stated
+hypotheses. The rate is not a fixed-g infrared theorem, a claim about growing
+smears, a fermion-correlation result, or a real-time limit.

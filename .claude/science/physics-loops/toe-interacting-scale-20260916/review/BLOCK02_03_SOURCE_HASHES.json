@@ -1,0 +1,22 @@
+{
+  "scope": "Frozen Blocks02-03 author sources and evidence; no independent review",
+  "files": {
+    "evidence/block02_integer_gaussian_square_check.json": "66ece2006115ac7c2fcec72a0d473c9a3e6409a0eac8f370092760faf24760de",
+    "evidence/block02_integer_gaussian_square_check.py": "01f1eb3bbcd38f185a12aa7071d20c2f29eddb26a61bb732a786f3dc333e8e64",
+    "evidence/block02_integer_gaussian_square_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block02_integer_gaussian_square_check.txt": "814e754b0d7bde867a04e9dedbe45ddc1c2aa300a3ad3fc4f689acf32b489825",
+    "evidence/block02_tree_slater_check.json": "8cabed5ab4ab84e3cc74ea431dfaa4a64a9fa8174c0b2d99031aa9dae0232790",
+    "evidence/block02_tree_slater_check.py": "b7bb0087c71ae6deb539825a111871acb5e986acba7503c5ada91e893607cc4a",
+    "evidence/block02_tree_slater_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block02_tree_slater_check.txt": "05b5f9a4c21645a6e0401f32031c7f4b0827413fcbf470d7779f4757dddd1968",
+    "evidence/block03_characteristic_check.json": "bb27a20c34d7e9cfe7cda15e53fa3a4b920ee21bf9afeee350114fb93c5a8e55",
+    "evidence/block03_characteristic_check.py": "c9689432c14549c8558e69a389943823016ecf4f4e00021cba46d73f7773433e",
+    "evidence/block03_characteristic_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block03_characteristic_check.txt": "086306631188cc4ae7b3c218a37ff0167d027eab55aa64294b9e13b290b353d6",
+    "notes/BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md": "585146ff451fc9349e1ab37f7dadc6e4ec0887213ab3fa0e95ab8f00fe48a872",
+    "notes/BLOCK02_WORKING_JOINT_LIMIT.md": "ddb0df664ae439808cdfdcff6bea5a18fab8575500e21272dd7c4ec83282e92e",
+    "notes/BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md": "72328fdb1066580d2bba90f6993330a746efd345c85b725fe281f584638ffb36",
+    "review/BLOCK02_03_PERSONAL_REVIEW.md": "b17bdf7a94e85a892961234beff2136e88dbb190f159b0de61979fa57d076a9e",
+    "review/BLOCK02_03_VOCAB.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  }
+}

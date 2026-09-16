@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.py", line 244, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.py", line 237, in main
+    geometry=geometry(),parameters=trial_and_parameters(),rotor=rotor_checks())
+             ~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.py", line 85, in geometry
+    anchor, ij, sign = lookup[signature(mapped_face(transformed, L))]
+                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: ((((0, 0, 0), 0), 1), (((0, 0, 0), 1), 1), (((0, 1, 0), 0), 1), (((1, 0, 0), 1), 1))

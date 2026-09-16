@@ -1,0 +1,23 @@
+{
+  "slug": "toe-compact-ground-path-20260916",
+  "status": "milestone_author_checks_completed",
+  "actual_current_surface_status": "conditional-support",
+  "created_utc": "2026-09-16T09:30:39.475640+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "branch": "physics-loop/toe-compact-ground-path-20260916",
+  "previous_pr": 8164,
+  "previous_head": "c4a31d8d1bc43096080bd5f88b16ffcf24344146",
+  "agents": "none; personal execution required",
+  "active_target": "Exact smooth-field/current coupling or nonlocal electric-response construction",
+  "next_action": "Preserve draft milestone, verify remote head, clean checkout, then resume a concrete response-bridge probe",
+  "strongest_unresolved_proof_obligation": "Uniform fixed-g transverse response or full physical-source phase in growing spatial volume",
+  "target_claim_type": "bounded_theorem",
+  "completed_proof_parts": 4,
+  "primary_check_programs": 3,
+  "formula_faults_rejected": 11,
+  "independent_review": "pending",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false
+}

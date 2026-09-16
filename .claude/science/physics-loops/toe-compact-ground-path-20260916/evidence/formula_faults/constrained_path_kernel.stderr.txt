@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.py", line 173, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.py", line 165, in main
+    reflection=clock_strip(),constrained_kernel=constrained_kernel_control(),
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.py", line 101, in constrained_kernel_control
+    assert K.min()>0 and spectrum[0]<-.05
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

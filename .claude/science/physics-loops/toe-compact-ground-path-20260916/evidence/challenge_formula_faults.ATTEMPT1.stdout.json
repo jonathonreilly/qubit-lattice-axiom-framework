@@ -1,0 +1,118 @@
+{
+  "cases": [
+    {
+      "final_error_line": "KeyError: ((((0, 0, 0), 0), 1), (((0, 0, 0), 1), 1), (((0, 1, 0), 0), 1), (((1, 0, 0), 1), 1))",
+      "mutant_sha256": "5a7a65ed2dc9c1b5414b4e3e29942338ca4bee2417e3ba2589000ebf6ccd9197",
+      "name": "reflected_face_orientation",
+      "new": "ans[(y, i)] += 1",
+      "old": "ans[(y, i)] -= 1",
+      "returncode": 1,
+      "source": "block01_geometry_and_rotor_check.py",
+      "source_sha256": "8e81fb84f5aa9b7a3ca2769e53c175a3bd688ce513c99f2796d906b6cb31c2be"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "bed0759221a0755831cb5042fa7a18bda3a8040e75b9939ddda30f83729e3ada",
+      "name": "trial_variance",
+      "new": "v = 1/3 - 1/math.pi**2",
+      "old": "v = 1/3 - 2/math.pi**2",
+      "returncode": 1,
+      "source": "block01_geometry_and_rotor_check.py",
+      "source_sha256": "8e81fb84f5aa9b7a3ca2769e53c175a3bd688ce513c99f2796d906b6cb31c2be"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "c3fbde7e9384a5d2b2345807de0c5dbd8bef8591aff3d31e287bc1967d23e150",
+      "name": "plaquette_diffusivity",
+      "new": "diag = .5*g*g*n*n + 1/(g*g)",
+      "old": "diag = 2*g*g*n*n + 1/(g*g)",
+      "returncode": 1,
+      "source": "block01_geometry_and_rotor_check.py",
+      "source_sha256": "8e81fb84f5aa9b7a3ca2769e53c175a3bd688ce513c99f2796d906b6cb31c2be"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "3aa721dec478fb344314f63041c6398f7e03393c87a5843ca55b782c319ee522",
+      "name": "reduced_clock_edge_count",
+      "new": "r*(single+pair).toarray()",
+      "old": "r*(2*single+pair).toarray()",
+      "returncode": 1,
+      "source": "block02_reflection_and_path_check.py",
+      "source_sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "880a769522242a1b26074736c0e711c6e57e76dd3d47abb9351a331113f7245d",
+      "name": "shared_boundary_reflection",
+      "new": "reflected=[0,3,2,6,7,11,10]",
+      "old": "reflected=[0,3,2,7,6,11,10]",
+      "returncode": 1,
+      "source": "block02_reflection_and_path_check.py",
+      "source_sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "73dce18ca7e71bfa0b0300b54b638fdfc416d1447376caffdde14877dab4c43c",
+      "name": "constrained_path_kernel",
+      "new": "K=heat-np.diag([.5*math.exp(-r*T),0])",
+      "old": "K=heat-np.diag([math.exp(-r*T),0])",
+      "returncode": 1,
+      "source": "block02_reflection_and_path_check.py",
+      "source_sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "8dc9fe3fec4afdd67ee133ff7fdf8f44f3ccdc7d5533926648319f89f1e23e3f",
+      "name": "ground_path_diffusivity",
+      "new": "2*g*g*n*n+1/(g*g)",
+      "old": "g*g*n*n/2+1/(g*g)",
+      "returncode": 1,
+      "source": "block02_reflection_and_path_check.py",
+      "source_sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "94f74fdec6e7b2f25c5ba1efc394b6a2044a4752cdc47a8e4f5cc7360fb64e18",
+      "name": "binary_clock_tail_coefficient",
+      "new": "r=2*g*g;v=1/(g*g)",
+      "old": "r=4*g*g;v=1/(g*g)",
+      "returncode": 1,
+      "source": "block02_reflection_and_path_check.py",
+      "source_sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "87b066c3fda489fb96ee09ae945849162970128973610818c8641cba1ffe4d3b",
+      "name": "cochain_boundary_sign",
+      "new": "sum((1)**r*(form",
+      "old": "sum((-1)**r*(form",
+      "returncode": 1,
+      "source": "block03_coarse_current_check.py",
+      "source_sha256": "21ac6c020136e057ee9212741818d2349313e3c07475a2adfbc657436e812d1e"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "bf2ae053043cf36a113b990fdb19a64ca580acad20597496541da69e53e0dec3",
+      "name": "dual_current_Hodge_sign",
+      "new": "dual={(x,i):(1)**i*J",
+      "old": "dual={(x,i):(-1)**i*J",
+      "returncode": 1,
+      "source": "block03_coarse_current_check.py",
+      "source_sha256": "21ac6c020136e057ee9212741818d2349313e3c07475a2adfbc657436e812d1e"
+    },
+    {
+      "final_error_line": "AssertionError",
+      "mutant_sha256": "9b6b04a295b7eb49f2dabec77b85c94976d2e6afee98f4c2a41f5358ace1a462",
+      "name": "current_witness_exponent",
+      "new": "p=min(1,6*mp.exp(logstar/12))",
+      "old": "p=min(1,6*mp.exp(logstar/24))",
+      "returncode": 1,
+      "source": "block03_coarse_current_check.py",
+      "source_sha256": "21ac6c020136e057ee9212741818d2349313e3c07475a2adfbc657436e812d1e"
+    }
+  ],
+  "elapsed_seconds": 3.840304124983959,
+  "limitations": "No fault test proves its parent theorem; check actual failing line before assigning sensitivity to a later assertion.",
+  "source_sha256": "4d97ffd69f2e6db2024c130412fca3fc73df8124c1ee72f1dc59690bf821c995",
+  "status": "ALL_SPECIFIED_FAULTS_REJECTED"
+}

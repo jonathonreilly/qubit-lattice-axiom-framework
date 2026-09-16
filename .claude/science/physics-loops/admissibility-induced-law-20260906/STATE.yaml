@@ -108,7 +108,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 26 close (2026-09-16)
 # block: 26
 # branch: physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-25 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168)
-# pr_status: PR_PLACEHOLDER
+# pr_status: opened for review — PR #8170 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8170); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=20 FAIL=0; 14 mutations, census 14/14 in-family; refuting pass consistent on seven routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: exploration (the sphere and six-axis laws simulated at the same weight) -> exact control -> contract with a lens pass -> primary (T1-T5, runner) -> refuting pass (independent sampler; FFT return sums; the linear recursion on a torus; linear vs nonlinear; finite-size series) -> fold (the memory observable corrected to the projection on the initial direction)"
 # review_findings: "the sphere formation law: gain-one spin waves with exact variance A(3 beta)/(3 beta); the level walk's constant 3 sqrt3/(4 pi) with explicit errors; finite planes forget; gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta); executed: the nonlinear law loses its initial plane at beta = 3, 6, 12, 24 (no plateau; exponents above gamma), the six-axis law at (e^beta, e^-beta, 1) keeps it"

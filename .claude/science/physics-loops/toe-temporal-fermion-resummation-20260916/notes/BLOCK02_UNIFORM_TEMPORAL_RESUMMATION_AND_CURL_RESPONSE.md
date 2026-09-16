@@ -138,7 +138,7 @@ At ell2 the spatial word traverses one edge and returns. If both temporal runs h
 Counting the two edge directions and the two time orderings in(6) gives exactly
 
     L_2(theta)=2kappa^2 sum_(positive spatial edges e)
-                    sum_(t,r>=1, t+r<M_t) w_r^2 cos Phi_(e,t,r). (16)
+                    sum_(t>=0,r>=1, t+r<M_t) w_r^2 cos Phi_(e,t,r). (16)
 
 The finite matrix program checks this coefficient and sign by direct traces of(RK_s)^2, independently of the rectangle sum.
 
@@ -170,4 +170,4 @@ The proof uses exactly the same weighted absolute sum, retaining these two geome
 
 This closes a supplied-model uniform-time estimate under an explicit heavy-mass condition. It supplies an extensive action-density bound and an absolute local curl extension; neither implies nonnegative Fourier currents or an independently verified phase. The bounds apply pointwise to both continuous and finite-cyclic gauge links before any gauge averaging.
 
-Open time boundaries are essential to the exact triangular normalization and to the absence of winding loops. Antiperiodic finite-temperature time requires a separate winding analysis. The formal continuous-time one-particle expression gamma_0(mu-K_s) is Hermitian, but a fermionic boundary-state/transfer/source identification remains to be derived. The inverse-logarithmic spatial Villain matching of the previous campaign also remains distinct from an isotropic fixed-beta phase theorem. Gapless matter, a fixed-payload photon phase, native-law selection and any axiom-forcing contradiction are not established.
+Open time boundaries are essential to the exact triangular normalization and to the absence of winding loops. Antiperiodic finite-temperature time requires a separate winding analysis. The companion [Block03 model-match proposal](BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md) derives the open-boundary Fock transfer and its normalization for the Hermitian one-particle expression gamma_0(mu-K_s). That proposal remains author-checked and does not supply a dynamical gauge phase. The inverse-logarithmic spatial Villain matching of the previous campaign also remains distinct from an isotropic fixed-beta phase theorem. Gapless matter, a fixed-payload photon phase, native-law selection and any axiom-forcing contradiction are not established.

@@ -1,0 +1,84 @@
+{
+  "source_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+  "continuum_fock_amplitude": [
+    1.008713339137356,
+    8.08663339240488e-20
+  ],
+  "one_particle_vs_fock_amplitude_error": 3.212208277147993e-11,
+  "finite_fock_check": [
+    {
+      "Nt": 4,
+      "fock_dimension": 70,
+      "amplitude_error": 1.1102232305791272e-15,
+      "minimum_slice_transfer_eigenvalue": 0.011346791564032694
+    }
+  ],
+  "joint_open_boundary_checks": [
+    {
+      "Nt": 4,
+      "delta": 0.125,
+      "full_matrix_dimension": 32,
+      "normalized_log_determinant": 0.0015581313837742528,
+      "schur_error": 3.552713678800501e-15,
+      "complementary_minor_error": 7.105427357601002e-15,
+      "noncommuting_slice_norm": 0.011291442398908814,
+      "paired_boundary_weight": 1.0031211233620185,
+      "continuum_paired_weight": 1.0175026005536345,
+      "paired_weight_error": 0.014381477191615977,
+      "scalar_log_prefactor": -8.956404034192982
+    },
+    {
+      "Nt": 8,
+      "delta": 0.0625,
+      "full_matrix_dimension": 64,
+      "normalized_log_determinant": 0.003408141858344038,
+      "schur_error": 7.105427357601002e-15,
+      "complementary_minor_error": 0.0,
+      "noncommuting_slice_norm": 0.003852735530821588,
+      "paired_boundary_weight": 1.0068395674513246,
+      "continuum_paired_weight": 1.0175026005536345,
+      "paired_weight_error": 0.010663033102309871,
+      "scalar_log_prefactor": -10.192585644908137
+    },
+    {
+      "Nt": 16,
+      "delta": 0.03125,
+      "full_matrix_dimension": 128,
+      "normalized_log_determinant": 0.005300059440152438,
+      "schur_error": 7.105427357601002e-15,
+      "complementary_minor_error": 3.552713678800501e-15,
+      "noncommuting_slice_norm": 0.001178104426052259,
+      "paired_boundary_weight": 1.0106564991769615,
+      "continuum_paired_weight": 1.0175026005536345,
+      "paired_weight_error": 0.006846101376672964,
+      "scalar_log_prefactor": -10.99980151483236
+    },
+    {
+      "Nt": 32,
+      "delta": 0.015625,
+      "full_matrix_dimension": 256,
+      "normalized_log_determinant": 0.00672986073613302,
+      "schur_error": 1.0658141036401503e-14,
+      "complementary_minor_error": 1.0658141036401503e-14,
+      "noncommuting_slice_norm": 0.0003313938954311055,
+      "paired_boundary_weight": 1.0135507112975883,
+      "continuum_paired_weight": 1.0175026005536345,
+      "paired_weight_error": 0.0039518892560461705,
+      "scalar_log_prefactor": -11.471172644016784
+    },
+    {
+      "Nt": 64,
+      "delta": 0.0078125,
+      "full_matrix_dimension": 512,
+      "normalized_log_determinant": 0.007625275750747562,
+      "schur_error": 6.394884621840902e-14,
+      "complementary_minor_error": 1.2079226507921703e-13,
+      "noncommuting_slice_norm": 8.834815763441372e-05,
+      "paired_boundary_weight": 1.0153674345833037,
+      "continuum_paired_weight": 1.0175026005536345,
+      "paired_weight_error": 0.00213516597033081,
+      "scalar_log_prefactor": -11.72768675831309
+    }
+  ],
+  "seconds": 0.14871692657470703
+}

@@ -1,0 +1,102 @@
+{"g": 0.16, "dimension": 4030, "ground_residual": 2.5772065469525067e-14, "electric_variance": 0.2506937413479793, "magnetic_variance": 0.9836783991320425, "symmetric_characteristic": [0.7729584705651311, 0.00015862910623559712], "characteristic_target": 0.7710515858035663, "characteristic_error": 0.001913471370894635, "spin_z": 0.9400368571331268, "probe_spin_connected": 0.0010013054968643403, "magnetic_response": [0.7304817885010686, -0.6576834562026033], "magnetic_response_target": [0.7384685587295879, -0.674287911628145], "magnetic_response_error": 0.018425429131012583}
+{"g": 0.1, "dimension": 7878, "ground_residual": 1.7685050499884284e-11, "electric_variance": 0.2509988957572438, "magnetic_variance": 0.9936270035499425, "symmetric_characteristic": [0.7716157833237751, 4.02592187049855e-05], "characteristic_target": 0.7710515858035663, "characteristic_error": 0.0005656320769728038, "spin_z": 0.9617204164816157, "probe_spin_connected": 0.0004154840054981805, "magnetic_response": [0.7354208365288639, -0.667784236868922], "magnetic_response_target": [0.7384685587295879, -0.674287911628145], "magnetic_response_error": 0.00718236701836808}
+{"g": 0.05, "dimension": 22110, "ground_residual": 2.701070660764483e-13, "electric_variance": 0.25074097242775717, "magnetic_variance": 0.9984055372970214, "symmetric_characteristic": [0.7710719511242095, 5.202330913001152e-06], "characteristic_target": 0.7710515858035663, "characteristic_error": 2.1019289517696594e-05, "spin_z": 0.9805381691103767, "probe_spin_connected": 0.00010939029984314621, "magnetic_response": [0.7377142335614706, -0.6726609625073692], "magnetic_response_target": [0.7384685587295879, -0.674287911628145], "magnetic_response_error": 0.0017933125496824795}
+{
+  "status": "author_checks_not_independent_audit",
+  "curl_checks": [
+    {
+      "L": 3,
+      "positive_modes": 52,
+      "covariance_symbol_error": 3.3306699122545248e-15,
+      "longitudinal_harmonic_residual": 3.524958103184872e-15,
+      "spectral_inverse_error": 7.771561172376096e-16
+    },
+    {
+      "L": 4,
+      "positive_modes": 126,
+      "covariance_symbol_error": 3.1086244689504383e-15,
+      "longitudinal_harmonic_residual": 4.463443503688325e-15,
+      "spectral_inverse_error": 3.219646771412954e-15
+    }
+  ],
+  "fixture_rows": [
+    {
+      "g": 0.16,
+      "dimension": 4030,
+      "ground_residual": 2.5772065469525067e-14,
+      "electric_variance": 0.2506937413479793,
+      "magnetic_variance": 0.9836783991320425,
+      "symmetric_characteristic": [
+        0.7729584705651311,
+        0.00015862910623559712
+      ],
+      "characteristic_target": 0.7710515858035663,
+      "characteristic_error": 0.001913471370894635,
+      "spin_z": 0.9400368571331268,
+      "probe_spin_connected": 0.0010013054968643403,
+      "magnetic_response": [
+        0.7304817885010686,
+        -0.6576834562026033
+      ],
+      "magnetic_response_target": [
+        0.7384685587295879,
+        -0.674287911628145
+      ],
+      "magnetic_response_error": 0.018425429131012583
+    },
+    {
+      "g": 0.1,
+      "dimension": 7878,
+      "ground_residual": 1.7685050499884284e-11,
+      "electric_variance": 0.2509988957572438,
+      "magnetic_variance": 0.9936270035499425,
+      "symmetric_characteristic": [
+        0.7716157833237751,
+        4.02592187049855e-05
+      ],
+      "characteristic_target": 0.7710515858035663,
+      "characteristic_error": 0.0005656320769728038,
+      "spin_z": 0.9617204164816157,
+      "probe_spin_connected": 0.0004154840054981805,
+      "magnetic_response": [
+        0.7354208365288639,
+        -0.667784236868922
+      ],
+      "magnetic_response_target": [
+        0.7384685587295879,
+        -0.674287911628145
+      ],
+      "magnetic_response_error": 0.00718236701836808
+    },
+    {
+      "g": 0.05,
+      "dimension": 22110,
+      "ground_residual": 2.701070660764483e-13,
+      "electric_variance": 0.25074097242775717,
+      "magnetic_variance": 0.9984055372970214,
+      "symmetric_characteristic": [
+        0.7710719511242095,
+        5.202330913001152e-06
+      ],
+      "characteristic_target": 0.7710515858035663,
+      "characteristic_error": 2.1019289517696594e-05,
+      "spin_z": 0.9805381691103767,
+      "probe_spin_connected": 0.00010939029984314621,
+      "magnetic_response": [
+        0.7377142335614706,
+        -0.6726609625073692
+      ],
+      "magnetic_response_target": [
+        0.7384685587295879,
+        -0.674287911628145
+      ],
+      "magnetic_response_error": 0.0017933125496824795
+    }
+  ],
+  "targets": {
+    "electric_variance": 0.25,
+    "magnetic_variance": 1.0
+  },
+  "shared_input": "Block21 Fourier matrix; its literal position-space check is separate",
+  "limits": "noncubic finite fixture and exact free curl matrices; no fixed-g phase proof"
+}

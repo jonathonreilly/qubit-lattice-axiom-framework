@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-16T00:29:46.407070+00:00",
+  "status": "personal_provisional_review_no_independent_audit",
+  "checked": [
+    "ground norm convergence from simple leading ladder",
+    "bounded physical unitary probe convergence rather than moment inference",
+    "charge and harmonic electric scale",
+    "normal energy-form convergence for two-field vectors",
+    "fixed-time Duhamel generator comparison on Schwartz cores",
+    "curl covariance and zero-mode prescription",
+    "free neutral matter correlations and shifted Riemann sums",
+    "order of limits and fixed lattice spacing explicit"
+  ],
+  "risks": [
+    "depends on provisional Blocks20 and21",
+    "no fixed-positive-coupling phase",
+    "no time or volume uniformity",
+    "no generic unbounded moment convergence"
+  ],
+  "inputs": {
+    "notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md": "b404e997eae301a5e5ef91917dc55686c69bc6c4d77db3dc5007977ac927967f",
+    "notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md": "0ebdd04b3445596bc99ac7a723edc0e87600f9a8974c06a79be154eb024392bf",
+    "evidence/block22_physical_probe_check.py": "b216b8e28d5feddc38c5069ae4f3f8bc9e8336464cc5b934638150add930be34",
+    "evidence/block22_physical_probe_check.json": "9f84244d0cec94af4dab58c6d55e00c0b00014d7aa069cdf4f2f6143dea19f84",
+    "evidence/block22_physical_probe_check.txt": "5b6ab814329845b415f51b72cf2e7c8c635aa5d0c11811dab82327d1cde488d7"
+  }
+}

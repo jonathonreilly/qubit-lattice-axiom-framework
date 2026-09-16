@@ -779,3 +779,20 @@ joint g(L) rate, fixed-g phase, or finite-payload theorem. A noncommuting
 two-coordinate fixture checks the principal metric and coefficients; exact
 Fourier integration matches the assembled matrix. Initial convention and
 dtype records are preserved. All proof review is personal.
+
+
+## Block22 — physical local state and finite-time response in the iterated limit
+
+The full coupled ground state from Block21 has an explicit physical local
+comparator when g->0 at fixed L and only then L->infinity. Bounded symmetric
+products of electric translations and magnetic sine multipliers converge to
+the transverse Maxwell characteristic functional. Neutral matter probes
+converge to the paired Wilson Slater correlations; their limiting field/matter
+correlations factorize. Ground energy-form convergence additionally controls
+two-field vectors, and a fixed-time Duhamel argument gives the free response.
+
+The lattice spacing stays fixed. The result is NOT the positive-g charged phase,
+and the chosen bare photon and Weyl metrics differ. The alternating global
+twist is compatible with the common local iterated state. Exact curl/Fourier
+checks and new physical probes in the shared two-coordinate fixture pass; no
+initial checker failure occurred. All theorem status remains provisional.

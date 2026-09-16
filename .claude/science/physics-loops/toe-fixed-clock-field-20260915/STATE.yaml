@@ -10,9 +10,9 @@ execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
 block: 22
-current_target: local observable content of the iterated weak-coupling state
+current_target: full campaign claim-map and load-bearing proof review
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-16T00:22:24.093806+00:00'
-next_step: derive the local physical observable limit before taking volume,
-  while retaining the fixed-positive-coupling phase as an open obligation
+last_checkpoint_utc: '2026-09-16T00:29:46.407070+00:00'
+next_step: review cross-block assumptions and failures, produce a readable result map,
+  and pursue any consequential unresolved check until the deadline

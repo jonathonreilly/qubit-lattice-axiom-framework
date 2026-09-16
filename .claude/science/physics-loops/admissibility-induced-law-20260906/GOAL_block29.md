@@ -1,0 +1,15 @@
+# GOAL — block 29: the normalization of the transverse kernel in the ordered sphere static law — measured between block 19's bounds, with the transverse sum rule and the spin-wave reference as exact anchors (2026-09-16)
+
+**Directive.** Owner 2026-09-16: keep running the campaign twelve more hours. Blocks 19–23 placed the gravity node's Green-function kernel in the transverse channel of the ordered sphere static law: for `β > 76/100` the transverse structure factor obeys `(M²/3)²/(βE(k)) ≤ ⟨|ŝ¹(k)|²⟩ ≤ 1/(βE(k))` (block 19's G5 with block 22's threshold), a window of a factor nine or more in the normalization. The queue's item "the kernel's normalization on `Z³`" is hard as a theorem; it is cheap to measure. The map (block 28) puts the sphere static law's strength at `β ∈ (0.66, 0.72)`, so `β = 0.8, 1, 1.5, 2, 3` are in the ordered regime.
+
+**Exact target (claim type `bounded_theorem`; trace class `frontier_discovery` for the measured normalization).**
+- T1 (the spin-wave reference): for the quadratic transverse model on the periodic `L³` lattice, `H = (β/2) Σ_{bonds} |θ_x − θ_y|²` with `θ ∈ R²`, the structure factor is exactly `⟨|θ̂(k)|²⟩ = 1/(βE(k))` per component for `k ≠ 0`, `E(k) = 2Σ_j(1 − cos k_j)`, and the real-space correlation is `G_L(r)/β` with `G_L` the torus Green function; so `βE(k)⟨|θ̂(k)|²⟩ = 1` is the spin-wave value of the normalization.
+- T2 (the transverse sum rule in a field): for the sphere static law on any finite torus with a field `h > 0` along `e_3`, `βh · N⟨(m̂¹)²⟩ = ⟨m̂³⟩` exactly (`m̂ = N^{−1}Σ_x s_x`), by integration by parts on the sphere; hence the transverse response at `k = 0` is `⟨m̂³⟩/(βh)`, unbounded as `h → 0` whenever the magnetization persists: the kernel's soft mode at `k = 0`.
+- T3 (Parseval): `N^{−1}Σ_{k} ⟨|ŝ^⊥(k)|²⟩ = ⟨|s_x^⊥|²⟩` per component, so the transverse structure factor's average is fixed by the local transverse moment `(1 − ⟨(s·û)²⟩)/2`; with block 19's upper bound this is block 19's sum rule.
+- Executed, not proved: the normalization `c(β, k) := βE(k) S_⊥(k)` measured on `16³`, `24³`, `32³` at `β = 0.8, 1, 1.5, 2, 3` for `k` along an axis, against the bounds `(m²/3)²` and `1` and the spin-wave value `1`; the real-space transverse correlation against `G(r)/β`.
+
+**Falsifiers.** A structure factor of the quadratic model other than `1/(βE(k))`; a sum-rule violation on the single-site instance or on random configurations; a measured `c(β, k)` outside `[(m²/3)², 1]` beyond its statistical error.
+
+**Lens pass.** *"Spin-wave theory is textbook."* Yes; it is the reference, named as such, and the measured `c` is the content. *"The bounds are from open PRs."* Cited as evidence addresses and re-quoted; nothing here depends on them as premises — the measurement stands alone. *"Why does the gravity lane care?"* The kernel's normalization is the number that lane would need if the transverse channel were its source; this note gives it as a measured function of `β` with the exact soft-mode anchor at `k = 0`.
+
+**Forbidden phrases:** the standing list plus "Goldstone", "spontaneous symmetry breaking", "converge", "critical", "certified".

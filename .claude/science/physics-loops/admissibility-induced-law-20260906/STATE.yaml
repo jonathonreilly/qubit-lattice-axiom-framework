@@ -105,3 +105,13 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+# ---------------------------------------------------------------- block 29 close (2026-09-16)
+# block: 29
+# branch: physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-28 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170-#8172)
+# pr_status: opened for review — PR #8173 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8173); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=14 FAIL=0; 7 mutations, census 7/7 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
+# seats: "supervisor-run: measurement (three lattices, five couplings) -> exact control -> contract with a lens pass -> primary (T1-T3, runner) -> refuting pass (real-space estimator; a second chain; the sum rule in a field) -> fold (a name folded out of the theorem sections)"
+# review_findings: "the transverse kernel's normalization c(beta, k) is 0.86-1.01 for modes n >= 2 (0.91 at beta 0.8-1, 0.94 at 1.5-2, 0.97 at 3): the infrared bound is the kernel up to a tenth; the lower bound (m^2/3)^2 is 10-100 times below; the spin-wave value 1 (proved for the quadratic model) is the large-beta limit; the k = 0 end is fixed by the sum rule <m^3>/(beta h)"
+# strongest_unresolved_proof_obligation: "c(beta, k) -> 1 as beta -> infinity at fixed k as a theorem (spin-wave theory rigorous); the sphere formation law's loss of memory at strong coupling; the six-axis order threshold toward the located strength"
+# next_exact_action: "queue refresh 2026-09-16 (block 29 opening): the twelve-hour continuation's remaining items are hard; the lane's proof-shaped and decisive-artifact items are exhausted at this date — see OPPORTUNITY_QUEUE"
+# lock: held (owner: keep running the campaign for 12 more hours from 2026-09-16 ~09:50)

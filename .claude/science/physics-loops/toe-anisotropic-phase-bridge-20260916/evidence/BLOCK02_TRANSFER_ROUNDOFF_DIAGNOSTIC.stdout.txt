@@ -1,0 +1,55 @@
+16 0.4355213529323723 0.43552135293241856 4.624078897563777e-14 1.0616748178289522e-13
+32 0.4320847501811204 0.4320847501811096 1.0824674490095276e-14 1.1716039229406006e-14
+64 0.43029474995940625 0.4302947499595704 1.641464741908294e-13 5.4843786752531995e-14
+128 0.4293820486351939 0.4293820486356933 4.993783164763954e-13 7.487648544343636e-14
+{
+  "cyclic_electric_regulator": 65,
+  "g": 0.6,
+  "T": 0.4,
+  "rows": [
+    {
+      "slices": 16,
+      "amplitude_identity_error": 4.624078897563777e-14,
+      "missing_endpoint_error": 0.017530094631313387,
+      "minimum_sqrtB_entry": -0.00014524550429220664,
+      "one_step_jump_operator_error": 0.002150012046538023,
+      "one_step_sufficient_bound": 0.02893518518518519,
+      "coupled_block_operator_error": 0.009355394091837386,
+      "block_sufficient_bound": 0.462962962962963,
+      "Hamiltonian_boundary_vector_error": 0.00805565819469547
+    },
+    {
+      "slices": 32,
+      "amplitude_identity_error": 1.0824674490095276e-14,
+      "missing_endpoint_error": 0.008651082385622677,
+      "minimum_sqrtB_entry": -3.700777496089448e-05,
+      "one_step_jump_operator_error": 0.0005690681143075099,
+      "one_step_sufficient_bound": 0.007233796296296297,
+      "coupled_block_operator_error": 0.004784238468554904,
+      "block_sufficient_bound": 0.2314814814814815,
+      "Hamiltonian_boundary_vector_error": 0.0041152064633902495
+    },
+    {
+      "slices": 64,
+      "amplitude_identity_error": 1.641464741908294e-13,
+      "missing_endpoint_error": 0.004297338508856718,
+      "minimum_sqrtB_entry": -9.336357689964934e-06,
+      "one_step_jump_operator_error": 0.000146381774586066,
+      "one_step_sufficient_bound": 0.0018084490740740743,
+      "coupled_block_operator_error": 0.002418402782447235,
+      "block_sufficient_bound": 0.11574074074074076,
+      "Hamiltonian_boundary_vector_error": 0.0020792072345479054
+    },
+    {
+      "slices": 128,
+      "amplitude_identity_error": 4.993783164763954e-13,
+      "missing_endpoint_error": 0.0021416494217733617,
+      "minimum_sqrtB_entry": -2.3444757245435374e-06,
+      "one_step_jump_operator_error": 3.712091300116168e-05,
+      "one_step_sufficient_bound": 0.0004521122685185186,
+      "coupled_block_operator_error": 0.0012157288310887715,
+      "block_sufficient_bound": 0.05787037037037038,
+      "Hamiltonian_boundary_vector_error": 0.0010449747322561298
+    }
+  ]
+}

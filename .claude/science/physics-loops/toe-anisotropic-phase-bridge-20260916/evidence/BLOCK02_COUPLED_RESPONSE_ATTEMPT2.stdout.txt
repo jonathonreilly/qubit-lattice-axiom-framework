@@ -1,0 +1,620 @@
+{
+  "source_sha256": "5981a5204073001efa670d996adfb45be698275e5a6ae8914ba88755e70f280b",
+  "transfer": {
+    "cyclic_electric_regulator": 65,
+    "g": 0.6,
+    "T": 0.4,
+    "rows": [
+      {
+        "slices": 16,
+        "amplitude_identity_error": 1.3877787807814457e-15,
+        "structured_square_root_residual": 9.671771962766485e-16,
+        "generic_eigendecomposition_square_root_residual": 1.0616748178289522e-13,
+        "missing_endpoint_error": 0.017530094631358573,
+        "minimum_sqrtB_entry": -0.00014524550429041654,
+        "one_step_jump_operator_error": 0.002150012046538023,
+        "one_step_sufficient_bound": 0.02893518518518519,
+        "coupled_block_operator_error": 0.009355394091837386,
+        "block_sufficient_bound": 0.462962962962963,
+        "Hamiltonian_boundary_vector_error": 0.00805565819469547
+      },
+      {
+        "slices": 32,
+        "amplitude_identity_error": 1.6653345369377348e-15,
+        "structured_square_root_residual": 7.370731783787357e-16,
+        "generic_eigendecomposition_square_root_residual": 1.1716039229406006e-14,
+        "missing_endpoint_error": 0.008651082385610409,
+        "minimum_sqrtB_entry": -3.700777496058186e-05,
+        "one_step_jump_operator_error": 0.0005690681143075099,
+        "one_step_sufficient_bound": 0.007233796296296297,
+        "coupled_block_operator_error": 0.004784238468554904,
+        "block_sufficient_bound": 0.2314814814814815,
+        "Hamiltonian_boundary_vector_error": 0.0041152064633902495
+      },
+      {
+        "slices": 64,
+        "amplitude_identity_error": 1.0602629885170245e-14,
+        "structured_square_root_residual": 1.4849909546212428e-15,
+        "generic_eigendecomposition_square_root_residual": 5.4843786752531995e-14,
+        "missing_endpoint_error": 0.004297338509029303,
+        "minimum_sqrtB_entry": -9.336357688598702e-06,
+        "one_step_jump_operator_error": 0.000146381774586066,
+        "one_step_sufficient_bound": 0.0018084490740740743,
+        "coupled_block_operator_error": 0.002418402782447235,
+        "block_sufficient_bound": 0.11574074074074076,
+        "Hamiltonian_boundary_vector_error": 0.0020792072345479054
+      },
+      {
+        "slices": 128,
+        "amplitude_identity_error": 8.826273045769994e-15,
+        "structured_square_root_residual": 8.557400727143284e-16,
+        "generic_eigendecomposition_square_root_residual": 7.487648544343636e-14,
+        "missing_endpoint_error": 0.002141649422278069,
+        "minimum_sqrtB_entry": -2.3444757218843008e-06,
+        "one_step_jump_operator_error": 3.712091300116168e-05,
+        "one_step_sufficient_bound": 0.0004521122685185186,
+        "coupled_block_operator_error": 0.0012157288310887715,
+        "block_sufficient_bound": 0.05787037037037038,
+        "Hamiltonian_boundary_vector_error": 0.0010449747322561298
+      }
+    ]
+  },
+  "electric_response": {
+    "incidence_shape": [
+      6,
+      7
+    ],
+    "cycle_gram": [
+      [
+        4,
+        -1
+      ],
+      [
+        -1,
+        4
+      ]
+    ],
+    "rows": [
+      {
+        "cutoff": 8,
+        "g": 0.4,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 1.9438660168166924,
+        "ground_residual": 1.774667459433914e-14,
+        "m_minus_1": 1.249999954689431,
+        "m_1": 5.753764114320849,
+        "double_commutator_error": 1.0658141036401503e-14,
+        "eta": 0.9999999637515448,
+        "rho": 3.624845523741982e-08,
+        "offset_curvature_spectral": 2.319901160063864e-09,
+        "offset_curvature_finite_difference": [
+          2.1834386150961413e-09,
+          1.578983857244667e-09
+        ],
+        "curvature_difference": 7.409173028191971e-10,
+        "visible_lowest_energy": 2.1433305076857674,
+        "spectral_ratio_energy_bound": 2.145462993926657,
+        "geometric_energy_bound": 2.2360680180267956
+      },
+      {
+        "cutoff": 8,
+        "g": 0.4,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 1.9438660168166924,
+        "ground_residual": 1.774667459433914e-14,
+        "m_minus_1": 0.4999999716808964,
+        "m_1": 1.5247474902950278,
+        "double_commutator_error": 0.0,
+        "eta": 0.999999943361793,
+        "rho": 5.663820701329314e-08,
+        "offset_curvature_spectral": 1.4499381001398248e-09,
+        "offset_curvature_finite_difference": [
+          1.30759600678074e-09,
+          0.0
+        ],
+        "curvature_difference": 1.4499381001398248e-09,
+        "visible_lowest_energy": 1.6603318252442198,
+        "spectral_ratio_energy_bound": 1.7462803764882644,
+        "geometric_energy_bound": 1.820027523861678
+      },
+      {
+        "cutoff": 8,
+        "g": 0.6,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 1.890666984934089,
+        "ground_residual": 3.7475276645557165e-14,
+        "m_minus_1": 0.5542181185649666,
+        "m_1": 2.279859383347366,
+        "double_commutator_error": 2.220446049250313e-14,
+        "eta": 0.9975926134169396,
+        "rho": 0.002407386583060389,
+        "offset_curvature_spectral": 0.0003466636679606838,
+        "offset_curvature_finite_difference": [
+          0.00034666089751864447,
+          0.00034665830699825366
+        ],
+        "curvature_difference": 5.360962430163603e-09,
+        "visible_lowest_energy": 2.015413259441648,
+        "spectral_ratio_energy_bound": 2.028213508467281,
+        "geometric_energy_bound": 2.238764386976578
+      },
+      {
+        "cutoff": 8,
+        "g": 0.6,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 1.890666984934089,
+        "ground_residual": 3.7475276645557165e-14,
+        "m_minus_1": 0.2213886618044495,
+        "m_1": 0.6041627365870496,
+        "double_commutator_error": 8.215650382226158e-15,
+        "eta": 0.9962489781200229,
+        "rho": 0.0037510218799771122,
+        "offset_curvature_spectral": 0.00021605886028668725,
+        "offset_curvature_finite_difference": [
+          0.0002160568144146977,
+          0.00021605433491660934
+        ],
+        "curvature_difference": 4.5253700779084374e-09,
+        "visible_lowest_energy": 1.563155204176661,
+        "spectral_ratio_energy_bound": 1.6519590600497747,
+        "geometric_energy_bound": 1.8234505869047197
+      },
+      {
+        "cutoff": 8,
+        "g": 0.9,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 1.683992903098487,
+        "ground_residual": 4.7604336111914677e-14,
+        "m_minus_1": 0.15934351091418228,
+        "m_1": 0.6735865607216693,
+        "double_commutator_error": 2.220446049250313e-15,
+        "eta": 0.6453412192024381,
+        "rho": 0.35465878079756186,
+        "offset_curvature_spectral": 0.11490944497841007,
+        "offset_curvature_finite_difference": [
+          0.11490892847120114,
+          0.11490931662984218
+        ],
+        "curvature_difference": 1.283485678987839e-07,
+        "visible_lowest_energy": 2.0427894624177974,
+        "spectral_ratio_energy_bound": 2.056030324482974,
+        "geometric_energy_bound": 2.7834940644725243
+      },
+      {
+        "cutoff": 8,
+        "g": 0.9,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 1.683992903098487,
+        "ground_residual": 4.7604336111914677e-14,
+        "m_minus_1": 0.053956733618585766,
+        "m_1": 0.17850043859124254,
+        "double_commutator_error": 7.771561172376096e-16,
+        "eta": 0.546311927888181,
+        "rho": 0.45368807211181905,
+        "offset_curvature_spectral": 0.05879797414569175,
+        "offset_curvature_finite_difference": [
+          0.05879783841293099,
+          0.05879794172535134
+        ],
+        "curvature_difference": 3.242034041228692e-08,
+        "visible_lowest_energy": 1.7449305721648471,
+        "spectral_ratio_energy_bound": 1.8188497232613718,
+        "geometric_energy_bound": 2.462394327835919
+      },
+      {
+        "cutoff": 8,
+        "g": 1.4,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 0.954452001019119,
+        "ground_residual": 1.277155090116406e-13,
+        "m_minus_1": 0.004178065966165105,
+        "m_1": 0.0655127570266375,
+        "double_commutator_error": 9.71445146547012e-17,
+        "eta": 0.04094504646841802,
+        "rho": 0.959054953531582,
+        "offset_curvature_spectral": 0.7518990835687603,
+        "offset_curvature_finite_difference": [
+          0.7518988098377378,
+          0.7518990165797688
+        ],
+        "curvature_difference": 6.698899157608906e-08,
+        "visible_lowest_energy": 3.9583613840822194,
+        "spectral_ratio_energy_bound": 3.9598186063881595,
+        "geometric_energy_bound": 11.05056078995437
+      },
+      {
+        "cutoff": 8,
+        "g": 1.4,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 0.954452001019119,
+        "ground_residual": 1.277155090116406e-13,
+        "m_minus_1": 0.001123511926299577,
+        "m_1": 0.017360880612058992,
+        "double_commutator_error": 9.71445146547012e-17,
+        "eta": 0.02752604219433964,
+        "rho": 0.9724739578056604,
+        "offset_curvature_spectral": 0.30496783316785503,
+        "offset_curvature_finite_difference": [
+          0.30496779890309966,
+          0.3049678254127583
+        ],
+        "curvature_difference": 7.755096731454358e-09,
+        "visible_lowest_energy": 3.915925860775708,
+        "spectral_ratio_energy_bound": 3.9309455828979405,
+        "geometric_energy_bound": 10.969985608870623
+      },
+      {
+        "cutoff": 8,
+        "g": 3.0,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 0.22153636172830174,
+        "ground_residual": 4.897185411879316e-13,
+        "m_minus_1": 2.1167230743140074e-06,
+        "m_1": 0.0006858499318371004,
+        "double_commutator_error": 1.842059491052872e-16,
+        "eta": 9.525253834413032e-05,
+        "rho": 0.9999047474616559,
+        "offset_curvature_spectral": 3.5996570908619616,
+        "offset_curvature_finite_difference": [
+          3.599657089505455,
+          3.5996570969655375
+        ],
+        "curvature_difference": 6.103575866944766e-09,
+        "visible_lowest_energy": 18.000400082619077,
+        "spectral_ratio_energy_bound": 18.000415414048696,
+        "geometric_energy_bound": 229.11141273414802
+      },
+      {
+        "cutoff": 8,
+        "g": 3.0,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 0.22153636172830174,
+        "ground_residual": 4.897185411879316e-13,
+        "m_minus_1": 5.609506709304211e-07,
+        "m_1": 0.00018175023193683237,
+        "double_commutator_error": 4.8057261295419984e-17,
+        "eta": 6.310695047967239e-05,
+        "rho": 0.9999368930495204,
+        "offset_curvature_spectral": 1.439909125991309,
+        "offset_curvature_finite_difference": [
+          1.4399091273194065,
+          1.4399091326746907
+        ],
+        "curvature_difference": 6.683381625904872e-09,
+        "visible_lowest_energy": 17.999942880637306,
+        "spectral_ratio_energy_bound": 18.00010966247642,
+        "geometric_energy_bound": 229.1075210920349
+      },
+      {
+        "cutoff": 12,
+        "g": 0.4,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 1.9438660143431126,
+        "ground_residual": 3.6404855316242906e-14,
+        "m_minus_1": 1.2499999931985486,
+        "m_1": 5.753764126429332,
+        "double_commutator_error": 4.440892098500626e-14,
+        "eta": 0.9999999945588389,
+        "rho": 5.441161077257561e-09,
+        "offset_curvature_spectral": 3.48234330260766e-10,
+        "offset_curvature_finite_difference": [
+          4.810966440042345e-10,
+          1.0855514018557086e-09
+        ],
+        "curvature_difference": 7.373170715949426e-10,
+        "visible_lowest_energy": 2.143330483796386,
+        "spectral_ratio_energy_bound": 2.1454629631362065,
+        "geometric_energy_bound": 2.2360679835831925,
+        "cutoff_energy_change": 2.473579785444713e-09,
+        "cutoff_chi_change": 7.701823534489449e-08
+      },
+      {
+        "cutoff": 12,
+        "g": 0.4,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 1.9438660143431126,
+        "ground_residual": 3.6404855316242906e-14,
+        "m_minus_1": 0.4999999957490914,
+        "m_1": 1.5247474935037748,
+        "double_commutator_error": 1.354472090042691e-14,
+        "eta": 0.9999999914981831,
+        "rho": 8.501816917139138e-09,
+        "offset_curvature_spectral": 2.1764651886302389e-10,
+        "offset_curvature_finite_difference": [
+          5.057682667736824e-10,
+          1.578983857244667e-09
+        ],
+        "curvature_difference": 1.3613373383816432e-09,
+        "visible_lowest_energy": 1.6603317895796172,
+        "spectral_ratio_energy_bound": 1.746280336295922,
+        "geometric_energy_bound": 1.8200274800568998,
+        "cutoff_energy_change": 2.473579785444713e-09,
+        "cutoff_chi_change": 4.81363899851317e-08
+      },
+      {
+        "cutoff": 12,
+        "g": 0.6,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 1.8906669849340687,
+        "ground_residual": 4.580410672140865e-14,
+        "m_minus_1": 0.5542181185649602,
+        "m_1": 2.2798593833473815,
+        "double_commutator_error": 6.217248937900877e-15,
+        "eta": 0.9975926134169281,
+        "rho": 0.0024073865830719354,
+        "offset_curvature_spectral": 0.00034666366796234915,
+        "offset_curvature_finite_difference": [
+          0.0003466618227044983,
+          0.00034666304394982537
+        ],
+        "curvature_difference": 6.240125237822088e-10,
+        "visible_lowest_energy": 2.0154132594416607,
+        "spectral_ratio_energy_bound": 2.0282135084673003,
+        "geometric_energy_bound": 2.238764386976591,
+        "cutoff_energy_change": 2.020605904817785e-14,
+        "cutoff_chi_change": 1.2878587085651816e-14
+      },
+      {
+        "cutoff": 12,
+        "g": 0.6,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 1.8906669849340687,
+        "ground_residual": 4.580410672140865e-14,
+        "m_minus_1": 0.22138866180444586,
+        "m_1": 0.6041627365870536,
+        "double_commutator_error": 4.107825191113079e-15,
+        "eta": 0.9962489781200065,
+        "rho": 0.0037510218799935435,
+        "offset_curvature_spectral": 0.00021605886028763094,
+        "offset_curvature_finite_difference": [
+          0.0002160576162424377,
+          0.00021605872646546231
+        ],
+        "curvature_difference": 1.3382216862423135e-10,
+        "visible_lowest_energy": 1.5631552041766354,
+        "spectral_ratio_energy_bound": 1.6519590600497938,
+        "geometric_energy_bound": 1.8234505869047348,
+        "cutoff_energy_change": 2.020605904817785e-14,
+        "cutoff_chi_change": 7.271960811294775e-15
+      },
+      {
+        "cutoff": 12,
+        "g": 0.9,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 1.6839929030984968,
+        "ground_residual": 9.435059842473604e-14,
+        "m_minus_1": 0.15934351091417942,
+        "m_1": 0.6735865607216487,
+        "double_commutator_error": 1.0769163338864018e-14,
+        "eta": 0.6453412192024266,
+        "rho": 0.3546587807975734,
+        "offset_curvature_spectral": 0.11490944497841382,
+        "offset_curvature_finite_difference": [
+          0.11490892787908219,
+          0.11490931490282857
+        ],
+        "curvature_difference": 1.3007558524735785e-07,
+        "visible_lowest_energy": 2.042789462417743,
+        "spectral_ratio_energy_bound": 2.0560303244829607,
+        "geometric_energy_bound": 2.783494064472549,
+        "cutoff_energy_change": 9.769962616701378e-15,
+        "cutoff_chi_change": 5.717648576819556e-15
+      },
+      {
+        "cutoff": 12,
+        "g": 0.9,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 1.6839929030984968,
+        "ground_residual": 9.435059842473604e-14,
+        "m_minus_1": 0.05395673361858447,
+        "m_1": 0.1785004385912361,
+        "double_commutator_error": 3.608224830031759e-15,
+        "eta": 0.5463119278881678,
+        "rho": 0.45368807211183215,
+        "offset_curvature_spectral": 0.058797974145693446,
+        "offset_curvature_finite_difference": [
+          0.05879783748774514,
+          0.05879793985030801
+        ],
+        "curvature_difference": 3.42953854343131e-08,
+        "visible_lowest_energy": 1.744930572164868,
+        "spectral_ratio_energy_bound": 1.818849723261361,
+        "geometric_energy_bound": 2.4623943278359484,
+        "cutoff_energy_change": 9.769962616701378e-15,
+        "cutoff_chi_change": 2.5951463200613034e-15
+      },
+      {
+        "cutoff": 12,
+        "g": 1.4,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 0.9544520010191182,
+        "ground_residual": 3.1877186010027056e-13,
+        "m_minus_1": 0.004178065966164951,
+        "m_1": 0.06551275702663506,
+        "double_commutator_error": 7.216449660063518e-16,
+        "eta": 0.040945046468416506,
+        "rho": 0.9590549535315835,
+        "offset_curvature_spectral": 0.7518990835687615,
+        "offset_curvature_finite_difference": [
+          0.7518988099857675,
+          0.7518990163330525
+        ],
+        "curvature_difference": 6.723570900035725e-08,
+        "visible_lowest_energy": 3.9583613840822425,
+        "spectral_ratio_energy_bound": 3.9598186063881586,
+        "geometric_energy_bound": 11.050560789954575,
+        "cutoff_energy_change": 7.771561172376096e-16,
+        "cutoff_chi_change": 3.0878077872387166e-16
+      },
+      {
+        "cutoff": 12,
+        "g": 1.4,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 0.9544520010191182,
+        "ground_residual": 3.1877186010027056e-13,
+        "m_minus_1": 0.0011235119262995165,
+        "m_1": 0.017360880612058205,
+        "double_commutator_error": 2.740863092043355e-16,
+        "eta": 0.027526042194338154,
+        "rho": 0.9724739578056618,
+        "offset_curvature_spectral": 0.3049678331678555,
+        "offset_curvature_finite_difference": [
+          0.30496779892160336,
+          0.304967826152907
+        ],
+        "curvature_difference": 7.014948455452696e-09,
+        "visible_lowest_energy": 3.9159258607757508,
+        "spectral_ratio_energy_bound": 3.9309455828979574,
+        "geometric_energy_bound": 10.96998560887092,
+        "cutoff_energy_change": 7.771561172376096e-16,
+        "cutoff_chi_change": 1.209969624493823e-16
+      },
+      {
+        "cutoff": 12,
+        "g": 3.0,
+        "curl_test": [
+          1.0,
+          -1.0
+        ],
+        "ground_energy": 0.221536361727867,
+        "ground_residual": 9.719650569408119e-13,
+        "m_minus_1": 2.116723074317011e-06,
+        "m_1": 0.0006858499318381075,
+        "double_commutator_error": 3.3219954564955856e-16,
+        "eta": 9.525253834426548e-05,
+        "rho": 0.9999047474616557,
+        "offset_curvature_spectral": 3.599657090861961,
+        "offset_curvature_finite_difference": [
+          3.5996571136034627,
+          3.599657193505597
+        ],
+        "curvature_difference": 1.0264363581313773e-07,
+        "visible_lowest_energy": 18.00040008261878,
+        "spectral_ratio_energy_bound": 18.00041541404914,
+        "geometric_energy_bound": 229.11141273398545,
+        "cutoff_energy_change": 4.3473558086759567e-13,
+        "cutoff_chi_change": 6.007157661927498e-18
+      },
+      {
+        "cutoff": 12,
+        "g": 3.0,
+        "curl_test": [
+          0.7,
+          0.2
+        ],
+        "ground_energy": 0.221536361727867,
+        "ground_residual": 9.719650569408119e-13,
+        "m_minus_1": 5.609506709312032e-07,
+        "m_1": 0.00018175023193709589,
+        "double_commutator_error": 8.546223624616989e-17,
+        "eta": 6.310695047976037e-05,
+        "rho": 0.9999368930495203,
+        "offset_curvature_spectral": 1.4399091259913088,
+        "offset_curvature_finite_difference": [
+          1.4399091515083906,
+          1.4399092293442766
+        ],
+        "curvature_difference": 1.0335296773966718e-07,
+        "visible_lowest_energy": 17.999942880637224,
+        "spectral_ratio_energy_bound": 18.00010966247692,
+        "geometric_energy_bound": 229.10752109187518,
+        "cutoff_energy_change": 4.3473558086759567e-13,
+        "cutoff_chi_change": 1.5642580953418792e-18
+      }
+    ]
+  },
+  "ground_tail": {
+    "g": "0.7",
+    "continued_fraction_cutoff": 160,
+    "working_decimal_digits": 90,
+    "ground_energy": "0.931717535266060021995354888988730817121766742418751652138963139571941496365702384110385301",
+    "rows": [
+      {
+        "n": 5,
+        "log_amplitude_relative_to_zero": "-10.4723456416882717600942905165379531145162731159853416968824428363870964337840998157056392",
+        "log_factorial_lower_bound": "-15.0016054572699633518237203859772270495570425094133316155713069990624234202721058728911291",
+        "minus_log_amplitude_over_n_squared": "0.418893825667530870403771620661518124580650924639413667875297713455483857351363992628225569"
+      },
+      {
+        "n": 10,
+        "log_amplitude_relative_to_zero": "-30.9992690439859324743045303722793038390010005665915641873442752160276954652550132283000292",
+        "log_factorial_lower_bound": "-41.0620690895627733171080556923636226492802172467224044314828916705235582268015650112754915",
+        "minus_log_amplitude_over_n_squared": "0.309992690439859324743045303722793038390010005665915641873442752160276954652550132283000292"
+      },
+      {
+        "n": 20,
+        "log_amplitude_relative_to_zero": "-85.1097427337102661390596360979486361099899097370545318130907070525890220913097670348073374",
+        "log_factorial_lower_bound": "-106.377720808330455512633026009142807525767549176050825674394125767191938079687459809176202",
+        "minus_log_amplitude_over_n_squared": "0.212774356834275665347649090244871590274974774342636329532726767631472555228274417587018343"
+      },
+      {
+        "n": 50,
+        "log_amplitude_relative_to_zero": "-296.214607789301867058790775288957472527121614617389119388321287157086959297325893970260798",
+        "log_factorial_lower_bound": "-351.221753620604777768357572871066456371802330171217755624717351684321981129473515155930701",
+        "minus_log_amplitude_over_n_squared": "0.118485843115720746823516310115582989010848645846955647755328514862834783718930357588104319"
+      },
+      {
+        "n": 100,
+        "log_amplitude_relative_to_zero": "-724.728699341299393031919194877517497344654219000615245971576471785436832744097595452660556",
+        "log_factorial_lower_bound": "-836.011190545244407554726357077926095110804999707159864326409747591126191427986122153170997",
+        "minus_log_amplitude_over_n_squared": "0.0724728699341299393031919194877517497344654219000615245971576471785436832744097595452660556"
+      }
+    ],
+    "scope": "finite continued-fraction diagnostic; the all-n tail statement uses the exact positive recurrence"
+  },
+  "seconds": 0.37569403648376465
+}

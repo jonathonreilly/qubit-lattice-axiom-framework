@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-16T00:05:35.882570+00:00",
+  "status": "analytic draft frozen before checks",
+  "source_sha256": "58fc632b9c56ffb127b2fc38a4d81be5c2c0b2aa688b90a2717285b262e7675c",
+  "target": "free finite-size holonomy minimum and volume arithmetic in supplied paired Wilson comparator",
+  "planned_checks": [
+    "theta dual representations",
+    "literal charged Bloch energies",
+    "heat and band Hessians",
+    "gap and Casimir scaling"
+  ],
+  "risks": [
+    "energy Fourier series cannot be twice differentiated absolutely",
+    "free comparator is not the gauge ground energy",
+    "global uniqueness only proved on stated arithmetic subsequences for sufficiently large L",
+    "g/L effective dynamics remains conditional"
+  ]
+}

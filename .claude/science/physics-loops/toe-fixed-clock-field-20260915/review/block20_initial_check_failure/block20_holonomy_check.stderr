@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.py", line 151, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.py", line 101, in main
+    e,gap,grad,hess=band(L,phistar,derivatives=True)
+                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.py", line 57, in band
+    dot=np.einsum('an,jan->jn',d,dj)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/numpy/_core/einsumfunc.py", line 1610, in einsum
+    return c_einsum(*operands, **kwargs)
+ValueError: operands could not be broadcast together with remapped shapes [original->remapped]: (3,729)->(729,3) (3,729,3)->(3,3,729) 

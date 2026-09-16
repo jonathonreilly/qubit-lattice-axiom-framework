@@ -334,3 +334,21 @@ them with residuals below6.2e-15. Deleting charge offsets produces the
 wrong23/128 coefficient instead of39/128. No scientific check failed.
 Simon1983's simple-level methodology and its1984 degenerate-parity erratum
 were checked; the coupled quasimode correction is explicit here.
+
+
+## Block20 — free Weyl finite-size twist selection
+
+The free occupied-band trace has a universal L^-1 holonomy Casimir term determined
+by isolated elliptic Weyl cones. Its negative norm cusp excludes node-hit minima,
+uniformly over the node phase torus. For the supplied paired Wilson comparator at
+b=kappa=pi/3, all four cones share G=diag(1,1,3/4). A positive theta-product proof
+gives unique minimizing twists (pi,pi,pi) for L=6m and (0,pi,0) for L=6m+3, exactly
+for sufficiently large sizes. Local C2 control is proved separately from energy
+convergence. L times the free particle gap tends to pi sqrt11/2.
+
+The alternating global twist coexists with convergence of all fixed-support free
+correlations. Literal paired Bloch sums and heat-integral coefficients converge
+with visible finite-size errors. The initial derivative-array shape exception is
+frozen and fixed without changing tolerances. The harmonic electric metric gives
+a conditional g/L slow scale only if an interacting effective reduction is proved;
+that reduction is not supplied. No phase or axiom closure.

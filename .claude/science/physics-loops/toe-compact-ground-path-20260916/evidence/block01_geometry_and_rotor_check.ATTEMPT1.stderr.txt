@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.py", line 238, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.py", line 231, in main
+    geometry=geometry(),parameters=trial_and_parameters(),rotor=rotor_checks())
+                                                                ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.py", line 208, in rotor_checks
+    assert abs(f32-f48) < 1e-10
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError

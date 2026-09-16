@@ -1,0 +1,122 @@
+{
+  "status": "FOCUSED_AUTHOR_CHECKS_COMPLETED",
+  "primary": [
+    {
+      "source": "evidence/block01_geometry_and_rotor_check.py",
+      "sha256": "8e81fb84f5aa9b7a3ca2769e53c175a3bd688ce513c99f2796d906b6cb31c2be",
+      "output_sha256": "899cd7312f79045e152afe1505077b94d89bdb983badd768e6fe35785b3b0c4a"
+    },
+    {
+      "source": "evidence/block02_reflection_and_path_check.py",
+      "sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149",
+      "output_sha256": "02c3efa883f51a21470d02a1585e716632bc4e4dc1847f89cf9835964311ddad"
+    },
+    {
+      "source": "evidence/block03_coarse_current_check.py",
+      "sha256": "21ac6c020136e057ee9212741818d2349313e3c07475a2adfbc657436e812d1e",
+      "output_sha256": "93a176f344c2ef8339aad66bf710768c77ea116a7de9bb3bce660dc8802c9d40"
+    }
+  ],
+  "formula_fault_count": 11,
+  "compiled_python_count": 20,
+  "markdown_count": 20,
+  "relative_links": [
+    {
+      "source": "LITERATURE_BRIDGES.md",
+      "target": "READING_LEDGER.md"
+    },
+    {
+      "source": "NO_GO_LEDGER.md",
+      "target": "NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK03_SPATIAL_PATH_LIMIT.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "TRACE_GATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "source": "README.md",
+      "target": "STATE.yaml"
+    },
+    {
+      "source": "REVIEW_HISTORY.md",
+      "target": "review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md",
+      "target": "../review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md",
+      "target": "BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md"
+    },
+    {
+      "source": "notes/BLOCK03_SPATIAL_PATH_LIMIT.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK03_SPATIAL_PATH_LIMIT.md",
+      "target": "BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md"
+    },
+    {
+      "source": "notes/BLOCK03_SPATIAL_PATH_LIMIT.md",
+      "target": "BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md"
+    },
+    {
+      "source": "notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md",
+      "target": "BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md"
+    },
+    {
+      "source": "notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md",
+      "target": "BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md"
+    },
+    {
+      "source": "notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md",
+      "target": "BLOCK03_SPATIAL_PATH_LIMIT.md"
+    }
+  ],
+  "limitations": "No independent review, canonical cache/readiness, N-gate or integrated landing-pipeline PASS."
+}

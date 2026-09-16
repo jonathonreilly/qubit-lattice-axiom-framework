@@ -1,0 +1,83 @@
+{
+  "covariance": [
+    {
+      "L": 4,
+      "M": 3,
+      "T": 0.2,
+      "matrix_dimension": 576,
+      "maximum_matrix_Fourier_error": 1.214306433183765e-14,
+      "spectrum": {
+        "maximum": 81.00000000000001,
+        "minimum_positive": 1.9999999999999574,
+        "nullity": 66
+      },
+      "test_variances": [
+        149.59785567377725,
+        146.8967345457756,
+        154.1890707455364
+      ],
+      "wrong_one_slice_error": 0.008927686063548879
+    },
+    {
+      "L": 4,
+      "M": 4,
+      "T": 0.1,
+      "matrix_dimension": 768,
+      "maximum_matrix_Fourier_error": 4.157785227221211e-14,
+      "spectrum": {
+        "maximum": 404.00000000000006,
+        "minimum_positive": 1.9999999999999538,
+        "nullity": 66
+      },
+      "test_variances": [
+        134.27057240555146,
+        136.46065772331104,
+        163.51515898209254
+      ],
+      "wrong_one_slice_error": 0.000853520259107815
+    }
+  ],
+  "elapsed_seconds": 0.35079066699836403,
+  "majorant": {
+    "L": 4,
+    "T": 0.2,
+    "column_sum": 0.07111111111111114,
+    "input_l3_norms": [
+      2.7507626262358085,
+      2.848610337915093,
+      2.988247844387091
+    ],
+    "physical_grid": 3,
+    "row_sum": 0.07111111111111112,
+    "row_upper": 0.08000000000000002,
+    "scope": "Static coefficient response; not the tilted stochastic bridge.",
+    "space_time_cubic_bound": 30.070406150009696,
+    "static_cubic": 0.002821762234554817
+  },
+  "replication": [
+    {
+      "T": 0.7071067811865476,
+      "larger_dimension": 36,
+      "ratio_residual": 2.1371793224034263e-15,
+      "spatial_copies": 1,
+      "temporal_copies": 2
+    },
+    {
+      "T": 1.4142135623730951,
+      "larger_dimension": 48,
+      "ratio_residual": 2.7755575615628914e-15,
+      "spatial_copies": 2,
+      "temporal_copies": 1
+    },
+    {
+      "T": 0.816496580927726,
+      "larger_dimension": 432,
+      "ratio_residual": 2.1649348980190553e-15,
+      "spatial_copies": 2,
+      "temporal_copies": 3
+    }
+  ],
+  "scope": "Independent matrix/Fourier covariance, rate-replication and majorant checks.\n\nAll matrices are finite test objects. The static response calculation challenges\nthe transport majorant but is not a stochastic bridge or phase simulation.\n",
+  "source_sha256": "7158fcae794beb5da99f60163db99da80d6c045484d545c07b5580147d186153",
+  "status": "PERSONAL_CHECKS_COMPLETED"
+}

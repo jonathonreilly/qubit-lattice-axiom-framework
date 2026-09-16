@@ -1,0 +1,154 @@
+{
+  "status": "FOCUSED_AUTHOR_CHECKS_COMPLETED",
+  "primary": [
+    {
+      "source": "evidence/bridge_cubic_check.py",
+      "sha256": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3",
+      "output_sha256": "069eb44dd40431dea8e49661d2e87819d12fec1ae8da77aeb4327bed786476ee"
+    },
+    {
+      "source": "evidence/convex_carrier_check.py",
+      "sha256": "3feabc811783f391540f24dc7a81b5914f63114aa35e58211b66307fbe5c0126",
+      "output_sha256": "e052c1e426b5d3b27e383a01124f75e342da751e323e150444f92f1f46a11fcc"
+    },
+    {
+      "source": "evidence/integer_filling_check.py",
+      "sha256": "ebb2df536ebc1d31ea65980d17a7b8d703566f132ae31552b081ae10ec9eabf5",
+      "output_sha256": "7a92b965578f617f37d71e3390d1cb4cc6c37fb7ead5e50a385721f2d9d81b5a"
+    },
+    {
+      "source": "evidence/magnetic_covariance_check.py",
+      "sha256": "7158fcae794beb5da99f60163db99da80d6c045484d545c07b5580147d186153",
+      "output_sha256": "f141c798d5cab29ce7d5b9161b20df524b72fc81c17cb9a364c1adfa622109dc"
+    }
+  ],
+  "histories": [
+    {
+      "source": "bridge_cubic_check.ATTEMPT1_SOURCE.py",
+      "sha256": "8588c80b9dba58caba655b3fbc0392d7aebcd61411eba76f9b1c759439a502e7",
+      "status": "previous_success_preserved"
+    },
+    {
+      "source": "convex_carrier_check.ATTEMPT1_SOURCE.py",
+      "sha256": "57bc0c3ac04bce903fbad06972a5a55d5607c6bc0af967c7fbd8b3b1f019913d",
+      "status": "previous_success_preserved"
+    },
+    {
+      "source": "integer_filling_check.ATTEMPT2_SOURCE.py",
+      "sha256": "c0eab74be77745618842e6a5af6266323b27edff4abe65d8133fec0291d1a861",
+      "status": "previous_success_preserved"
+    },
+    {
+      "source": "integer_filling_check.ATTEMPT1_SOURCE.py",
+      "sha256": "add23751eb93322ed63ecdd1ed61d2ce0a04bdd51a4b4370a53076ea2c2e8ccb",
+      "status": "failed_attempt_preserved"
+    },
+    {
+      "source": "run_formula_faults.ATTEMPT1_SOURCE.py",
+      "sha256": "438207465cdff5e77974057b35a8e2385eead0dfce30e3ad66d63e62d751c580",
+      "status": "failed_attempt_preserved"
+    }
+  ],
+  "formula_fault_count": 12,
+  "compiled_python_count": 29,
+  "markdown_count": 21,
+  "relative_links": [
+    {
+      "source": "ASSUMPTIONS_AND_IMPORTS.md",
+      "target": "READING_LEDGER.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BRIDGE_CUBIC_SOURCE_BOUND.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/CONVEX_EXTENSION_OF_LIFTED_KERNEL.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/SPARSE_INTEGER_FILLINGS_AND_REAL_LIFTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "TRACE_GATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "source": "notes/BRIDGE_CUBIC_SOURCE_BOUND.md",
+      "target": "../review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "notes/BRIDGE_CUBIC_SOURCE_BOUND.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BRIDGE_CUBIC_SOURCE_BOUND.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/CONVEX_EXTENSION_OF_LIFTED_KERNEL.md",
+      "target": "BRIDGE_CUBIC_SOURCE_BOUND.md"
+    },
+    {
+      "source": "notes/CONVEX_EXTENSION_OF_LIFTED_KERNEL.md",
+      "target": "../review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "notes/CONVEX_EXTENSION_OF_LIFTED_KERNEL.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/CONVEX_EXTENSION_OF_LIFTED_KERNEL.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md",
+      "target": "CONVEX_EXTENSION_OF_LIFTED_KERNEL.md"
+    },
+    {
+      "source": "notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md",
+      "target": "BRIDGE_CUBIC_SOURCE_BOUND.md"
+    },
+    {
+      "source": "notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md",
+      "target": "../review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/SPARSE_INTEGER_FILLINGS_AND_REAL_LIFTS.md",
+      "target": "../review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "notes/SPARSE_INTEGER_FILLINGS_AND_REAL_LIFTS.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/SPARSE_INTEGER_FILLINGS_AND_REAL_LIFTS.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    }
+  ],
+  "limitations": "No independent review, canonical cache/readiness, formal N-gate or integrated landing-pipeline PASS."
+}

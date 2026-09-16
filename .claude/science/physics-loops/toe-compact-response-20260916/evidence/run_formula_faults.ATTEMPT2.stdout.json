@@ -1,0 +1,239 @@
+{
+  "cases": [
+    {
+      "exit_code": 1,
+      "mutant_sha256": "b1a379f3b8fc6cdb71d86a215f5630b3b1de0a408bc3e60e25b0db7e18a244d4",
+      "name": "bridge_cumulant_sign",
+      "new": "+3*covariance(A,B,w)/(g*g)",
+      "old": "-3*covariance(A,B,w)/(g*g)",
+      "original_file": "bridge_cubic_check.py",
+      "original_sha256": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3",
+      "stderr_file": "formula_faults/bridge_cumulant_sign.stderr.txt",
+      "stderr_tail": [
+        "    scope=__doc__,time_precision=time_precision(),single_face=one_face_checks(),",
+        "                                                              ~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_cumulant_sign.py\", line 65, in one_face_checks",
+        "    assert abs(b64['cubic']-q48['cubic'])<5e-9",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/bridge_cumulant_sign.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "6676782ecc7553ad82772c247d9f42f270cf3b05070fffbab1f770efc49ee6d5",
+      "name": "bridge_four_link_variance",
+      "new": "math.sqrt(2*g*g*T/4)*nodes",
+      "old": "math.sqrt(2*g*g*T)*nodes",
+      "original_file": "bridge_cubic_check.py",
+      "original_sha256": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3",
+      "stderr_file": "formula_faults/bridge_four_link_variance.stderr.txt",
+      "stderr_tail": [
+        "    scope=__doc__,time_precision=time_precision(),single_face=one_face_checks(),",
+        "                                                              ~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_four_link_variance.py\", line 65, in one_face_checks",
+        "    assert abs(b64['cubic']-q48['cubic'])<5e-9",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/bridge_four_link_variance.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "312126cf2a936293ba50a08d9b9ace64532c3078e6e7f402e71a8c8e746bc8cb",
+      "name": "bridge_noise_time_weight",
+      "new": "noise=2*g*g",
+      "old": "noise=2*g*g/delta",
+      "original_file": "bridge_cubic_check.py",
+      "original_sha256": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3",
+      "stderr_file": "formula_faults/bridge_noise_time_weight.stderr.txt",
+      "stderr_tail": [
+        "    scope=__doc__,time_precision=time_precision(),single_face=one_face_checks(),",
+        "                                 ~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_noise_time_weight.py\", line 89, in time_precision",
+        "    assert residual<2e-10",
+        "           ^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/bridge_noise_time_weight.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "a2e119b5a9dd99efaba8e5e4894fc5784c6fe5b198d606e3b06d14a3ac6e75f3",
+      "name": "bridge_shared_link_metric",
+      "new": "[0,0,0,-1,1,-1,-1]",
+      "old": "[0,0,0,1,1,-1,-1]",
+      "original_file": "bridge_cubic_check.py",
+      "original_sha256": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3",
+      "stderr_file": "formula_faults/bridge_shared_link_metric.stderr.txt",
+      "stderr_tail": [
+        "    eta,base,metric=two_face_nodes(g,T,order)",
+        "                    ~~~~~~~~~~~~~~^^^^^^^^^^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_shared_link_metric.py\", line 100, in two_face_nodes",
+        "    assert np.array_equal(metric,np.array([[4,-1],[-1,4]]))",
+        "           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/bridge_shared_link_metric.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "24518a29909448c388cb017fb94aa681b0e39f07a892f834cd06cebf9501de4b",
+      "name": "convex_transition_polynomial",
+      "new": "1+u-u**3+u**4/3",
+      "old": "1+u-u**3+u**4/2",
+      "original_file": "convex_carrier_check.py",
+      "original_sha256": "3feabc811783f391540f24dc7a81b5914f63114aa35e58211b66307fbe5c0126",
+      "stderr_file": "formula_faults/convex_transition_polynomial.stderr.txt",
+      "stderr_tail": [
+        "    extension=extension_checks(),carrier=carrier_checks(),",
+        "              ~~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/convex_transition_polynomial.py\", line 43, in extension_checks",
+        "    assert abs((cp-cm)/(2*step)-d)<2e-7",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/convex_transition_polynomial.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "b5dfb4a76a22d4faf72e8513bc3538794741fc29cbffe7211769aaca251ea055",
+      "name": "convex_carrier_fourier",
+      "new": "b=(1+np.cos(omega))/3",
+      "old": "b=(2+np.cos(omega))/3",
+      "original_file": "convex_carrier_check.py",
+      "original_sha256": "3feabc811783f391540f24dc7a81b5914f63114aa35e58211b66307fbe5c0126",
+      "stderr_file": "formula_faults/convex_carrier_fourier.stderr.txt",
+      "stderr_tail": [
+        "    extension=extension_checks(),carrier=carrier_checks(),",
+        "                                         ~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/convex_carrier_fourier.py\", line 68, in carrier_checks",
+        "    assert abs(integral-algebra)<1e-12 and abs(spectral-algebra)<1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/convex_carrier_fourier.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "576645698a039b623fcb03db932aca0f36e7794334716c81643c997474b95cfd",
+      "name": "integer_commutation_sign",
+      "new": "out[(cursor,(mu,nu))]+=1",
+      "old": "out[(cursor,(mu,nu))]-=1",
+      "original_file": "integer_filling_check.py",
+      "original_sha256": "ebb2df536ebc1d31ea65980d17a7b8d703566f132ae31552b081ae10ec9eabf5",
+      "stderr_file": "formula_faults/integer_commutation_sign.stderr.txt",
+      "stderr_tail": [
+        "    scope=__doc__,edge_fill=edge_fill_checks(),current_fill=cycles_and_duality(),",
+        "                            ~~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_commutation_sign.py\", line 66, in edge_fill_checks",
+        "    assert b==dict(expected)",
+        "           ^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/integer_commutation_sign.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "adee36433ee804a0b013c3b3f7c019685a2401f1d41be30d98e6766e2633536a",
+      "name": "integer_dual_orientation",
+      "new": "assert derivative==three",
+      "old": "assert derivative=={key:-val for key,val in three.items()}",
+      "original_file": "integer_filling_check.py",
+      "original_sha256": "ebb2df536ebc1d31ea65980d17a7b8d703566f132ae31552b081ae10ec9eabf5",
+      "stderr_file": "formula_faults/integer_dual_orientation.stderr.txt",
+      "stderr_tail": [
+        "    hodge=hodge_checks(),witness_geometry=witness_geometry(),constants=numerical_constants(),",
+        "          ~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_dual_orientation.py\", line 140, in hodge_checks",
+        "    assert derivative==three",
+        "           ^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/integer_dual_orientation.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "99510f5400220e4db7d16b8e0cd75e860a17e3f8354fa5c5a6bc6c1a7eba0262",
+      "name": "integer_witness_exponent",
+      "new": "exponent=mp.mpf(1)/12",
+      "old": "exponent=mp.mpf(1)/24",
+      "original_file": "integer_filling_check.py",
+      "original_sha256": "ebb2df536ebc1d31ea65980d17a7b8d703566f132ae31552b081ae10ec9eabf5",
+      "stderr_file": "formula_faults/integer_witness_exponent.stderr.txt",
+      "stderr_tail": [
+        "    hodge=hodge_checks(),witness_geometry=witness_geometry(),constants=numerical_constants(),",
+        "                                                                       ~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_witness_exponent.py\", line 189, in numerical_constants",
+        "    assert exponent==mp.mpf(1)/(geometry['orientation_classes']*geometry['maximum_cells_per_witness'])",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/integer_witness_exponent.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "bc3e2730af032e04cbbe27a4e1a29c3ce18793c81f6220e6044c0c8f3fb6b1ea",
+      "name": "magnetic_direct_carrier",
+      "new": "G=(3/3)*np.eye(M)",
+      "old": "G=(2/3)*np.eye(M)",
+      "original_file": "magnetic_covariance_check.py",
+      "original_sha256": "7158fcae794beb5da99f60163db99da80d6c045484d545c07b5580147d186153",
+      "stderr_file": "formula_faults/magnetic_direct_carrier.stderr.txt",
+      "stderr_tail": [
+        "    covariance=covariance_checks(),replication=replication_checks(),",
+        "               ~~~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_direct_carrier.py\", line 84, in covariance_checks",
+        "    assert maxerr<2e-10 and kmax<=1+1e-12",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/magnetic_direct_carrier.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "21ca32e387b9f53caa771e7afea7c33cb3477e8c28d83dbf81cf1aaefa6d6cc3",
+      "name": "magnetic_replication_rate",
+      "new": "small=(m+1)*base_ops[0]+n*base_ops[1]",
+      "old": "small=m*base_ops[0]+n*base_ops[1]",
+      "original_file": "magnetic_covariance_check.py",
+      "original_sha256": "7158fcae794beb5da99f60163db99da80d6c045484d545c07b5580147d186153",
+      "stderr_file": "formula_faults/magnetic_replication_rate.stderr.txt",
+      "stderr_tail": [
+        "    covariance=covariance_checks(),replication=replication_checks(),",
+        "                                               ~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_replication_rate.py\", line 112, in replication_checks",
+        "    assert np.max(abs(big@phi-phi@small))<1e-13",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/magnetic_replication_rate.stdout.txt"
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "46c9294b0ad07f80ec9b8aaffb38b37409f337d6a57be503b7cab5ac2a80f7a1",
+      "name": "magnetic_positive_majorant",
+      "new": "B=C;P=len(C)",
+      "old": "B=abs(C);P=len(C)",
+      "original_file": "magnetic_covariance_check.py",
+      "original_sha256": "7158fcae794beb5da99f60163db99da80d6c045484d545c07b5580147d186153",
+      "stderr_file": "formula_faults/magnetic_positive_majorant.stderr.txt",
+      "stderr_tail": [
+        "    majorant=positive_majorant_checks(),status='PERSONAL_CHECKS_COMPLETED')",
+        "             ~~~~~~~~~~~~~~~~~~~~~~~~^^",
+        "  File \"/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_positive_majorant.py\", line 133, in positive_majorant_checks",
+        "    assert major.min()>=0 and W.min()>-1e-14",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ],
+      "stdout_file": "formula_faults/magnetic_positive_majorant.stdout.txt"
+    }
+  ],
+  "elapsed_seconds": 3.1587190839927644,
+  "helper_sha256": {
+    "bridge_cubic_check.py": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3"
+  },
+  "scope": "Run declared formula perturbations against the actual finite challenges.\n\nThis is author evidence of discrimination, not independent review or an audit.\nEach perturbed source, stdout and stderr is preserved with its source identity.\n",
+  "source_sha256": "e75459d7a5aa2152d6ebe7d804c19178e30d9841f2e4a5b28d49f4170d8e622b",
+  "status": "DECLARED_FORMULA_FAULTS_REJECTED"
+}

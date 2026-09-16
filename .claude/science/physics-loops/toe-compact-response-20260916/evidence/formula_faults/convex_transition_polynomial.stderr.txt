@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/convex_transition_polynomial.py", line 123, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/convex_transition_polynomial.py", line 117, in main
+    extension=extension_checks(),carrier=carrier_checks(),
+              ~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/convex_transition_polynomial.py", line 43, in extension_checks
+    assert abs((cp-cm)/(2*step)-d)<2e-7
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

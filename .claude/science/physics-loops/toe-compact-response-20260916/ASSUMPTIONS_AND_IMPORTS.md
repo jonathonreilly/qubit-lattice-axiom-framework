@@ -1,0 +1,9 @@
+# Premises and source identity
+
+The Hamiltonian H=-(g^2/2)Delta+g^(-2)sum(1-cos Ctheta), continuous compact links, real Brownian bridge cover, positive g, cubic incidence and boundary/domain choices are supplied mathematical model data. None is selected by the framework axioms. The comparison's alpha,T,g are fixed sufficient parameters, not empirical values or registered primitives. No axiom, primitive, prompt, governance file, or audit status is changed.
+
+Main source revision: e0ef7cf4633034a8c1e6d57f5812cc4275bf1349. Planning revision:068e916ca37b004757ad3a3c082857a91dc37215. Prior draft8164:c4a31d8d1bc43096080bd5f88b16ffcf24344146, lifted Hessian note reread and reconstructed here. Prior draft8165:c228dbcfc0a6b71639316915f460c32dbf479723, proposed joint magnetic/temporal events. Its event bounds enter only the conditional application of the independent geometric premise P(A bad)<=p^|A|; independent review is pending.
+
+Mathematical tools: finite-dimensional stochastic flows with additive noise and checked strong convexity; Brascamp-Lieb covariance under the displayed Hessian lower bound; positive Dirichlet Green kernels; integer cubical chain contractions; the diagonal discrete Riesz theorem on product cyclic groups; standard spatial Calderon-Zygmund/Riesz estimates. See [reading ledger](READING_LEDGER.md) for exact inspected scope. The anisotropic weighted-rate extension is derived here by an explicit pullback, not attributed to an unchecked mixed-transform theorem.
+
+Open dependency: the three analytic comparison notes form one author chain. Their Gaussian conclusion belongs only to the real comparison measure. The geometry uses a separately explicit probability premise and does not prove a normalized change of measure. Neither terminal hypothesis is renamed as a phase theorem.

@@ -26,7 +26,7 @@
     "native_edge_record_local_quench_finite_ladder_bounded_theorem_note_2026-09-07",
     "native_edge_record_ambient_generator_erasure_bounded_theorem_note_2026-09-07"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -35,7 +35,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.322,
+  "load_bearing_score": 4.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/native_edge_record_finite_collision_2026_09_07.py",
   "title": "Finite unitary collisions for the rounded complete Record model",
-  "transitive_descendants": 4,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "extensional_nearest_neighbor_rule_deep_probe_2026-07-13",
     "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/role_pattern_next_nearest_neighbour_rule_roles_not_records_check_2026_09_04.py",
   "title": "The superlattice role pattern is a next-nearest-neighbour support rule over roles, and roles are not record values",
-  "transitive_descendants": 0,
+  "transitive_descendants": 4,
   "verdict_rationale": null
 }

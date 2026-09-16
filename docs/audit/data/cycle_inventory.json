@@ -1,5 +1,5 @@
 {
-  "cycle_count": 60,
+  "cycle_count": 63,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -8673,6 +8673,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14",
+          "to": "work_history.repo.review_feedback.pr8109-compact-current-evidence.readme"
+        },
+        {
+          "from": "work_history.repo.review_feedback.pr8109-compact-current-evidence.readme",
+          "to": "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "title": "Compact determinant currents, signed sectors and finite-cyclic transfer",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": null,
+          "claim_id": "work_history.repo.review_feedback.pr8109-compact-current-evidence.readme",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/work_history/repo/review_feedback/pr8109-compact-current-evidence/README.md",
+          "title": "Historical compact current evidence",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0056",
+      "decision": null,
+      "edges": [
+        {
           "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
           "to": "ep_record_stiffness_context_independence_no_go_note_2026-06-17"
         },
@@ -8706,7 +8743,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0056",
+      "cycle_id": "cycle-0057",
       "decision": null,
       "edges": [
         {
@@ -8743,7 +8780,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0057",
+      "cycle_id": "cycle-0058",
       "decision": null,
       "edges": [
         {
@@ -8780,7 +8817,44 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0058",
+      "cycle_id": "cycle-0059",
+      "decision": null,
+      "edges": [
+        {
+          "from": "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14",
+          "to": "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.readme"
+        },
+        {
+          "from": "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.readme",
+          "to": "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_bounded_theorem_note_2026-09-14",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/MASSIVE_WILSON_LOOP_CURVATURE_NONCOMPACT_COVARIANCE_AND_COMPACT_DEFECT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "title": "Massive Wilson loop curvature, noncompact covariance and compact defect bounds",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": null,
+          "claim_id": "work_history.repo.review_feedback.pr8108-massive-gauge-evidence.readme",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/work_history/repo/review_feedback/pr8108-massive-gauge-evidence/README.md",
+          "title": "Historical massive gauge evidence",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0060",
       "decision": null,
       "edges": [
         {
@@ -8817,7 +8891,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0059",
+      "cycle_id": "cycle-0061",
       "decision": null,
       "edges": [
         {
@@ -8854,7 +8928,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0060",
+      "cycle_id": "cycle-0062",
       "decision": null,
       "edges": [
         {
@@ -8889,6 +8963,43 @@
         }
       ],
       "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0063",
+      "decision": null,
+      "edges": [
+        {
+          "from": "spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14",
+          "to": "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.readme"
+        },
+        {
+          "from": "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.readme",
+          "to": "spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SPATIAL_LATTICE_GAUGE_FERMION_LOGARITHMS_AND_METRIC_ATTRACTION_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "title": "Spatial-lattice gauge\u2013fermion logarithms and metric-attraction limits",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": null,
+          "claim_id": "work_history.repo.review_feedback.pr8111-lattice-metric-evidence.readme",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/work_history/repo/review_feedback/pr8111-lattice-metric-evidence/README.md",
+          "title": "Historical lattice metric evidence",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
     }
   ],
   "length_counts": {
@@ -8896,7 +9007,7 @@
     "12": 2,
     "13": 16,
     "14": 11,
-    "2": 10,
+    "2": 13,
     "3": 1,
     "30": 1,
     "31": 1,

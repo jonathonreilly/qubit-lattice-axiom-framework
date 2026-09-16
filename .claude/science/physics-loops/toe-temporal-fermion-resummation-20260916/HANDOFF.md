@@ -1,0 +1,7 @@
+# Active personal campaign
+
+Checkout /Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916; branchphysics-loop/toe-temporal-fermion-resummation-20260916. Main and planning revisions are in STATE.yaml and unchanged after fetch. Cooperative physics-loop lock holder01a097f1-c7c7-7b51-8f2e-399bbbf0c311 acquired05:29:44UTC, expiry17:29:44UTC. Authorized campaign deadline13:45:03UTC. No subagents.
+
+Main COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md PartIII explicitly leaves temporal-run resummation open. Its complete PartI and PartIII relevant scope were read. The existing absolute spacetime walk count fails as delta->0 despite a uniform Wilson singular-value bound. The current attempt sums each temporal run exactly before counting spatial hops and retains the loop's time-closure constraint, which may recover one factor of delta per root. The Clifford projectors may cancel the apparent factor2 per temporal direction. These points still require complete derivation and checks.
+
+Prior milestone8162 contains calibrated joint clock/time strong and norm-resolvent/state proposals at fixed finite graph. It is provisional and not automatically a premise of this separate determinant expansion. External recovery stores all immutable prior heads. A primary Frohlich-Spencer preprint PDF and extracted text are in external recovery/literature; not yet fully read. Continue personally through the deadline, preserve actual failures, and remove this checkout only after exact pushed durability.

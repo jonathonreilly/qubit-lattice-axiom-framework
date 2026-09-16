@@ -1,0 +1,5 @@
+# Reading and source pins
+
+Main e0ef7cf4633034a8c1e6d57f5812cc4275bf1349 and ai/execution068e916ca37b004757ad3a3c082857a91dc37215 are unchanged. Standing AGENTS and SCIENCE_WORKFLOW were read at these exact revisions earlier in the personal campaign. The prior three final PR8163 notes are f950bab266a2c2c82321b49d94e21f0f8d2bcf61; their detailed scopes and failures are preserved there.
+
+Frohlich-Spencer IHES/P/81/40 primary PDF: https://archives.ihes.fr/files/original/c59d65f61f9b1aba2d8eb6f4c01ceb88.pdf . SHA256e4b1c8fa75881a7817aadf0417bdd59301118c2ea24545e2c8b9f6101a97db17. Local external PDF85pages. Extracted pages1-23 and beginning24 have been read in this campaign. Displayed equations missing from extraction are not treated as read or verified. The introduction describes uniform-coupling four-dimensional U(1) and sufficiently-large-N intermediate phases, with a separate photon criterion beyond Wilson perimeter behavior; this alone does not settle the anisotropic Hamiltonian limit.

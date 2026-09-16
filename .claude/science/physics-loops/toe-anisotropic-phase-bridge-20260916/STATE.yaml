@@ -1,0 +1,16 @@
+{
+  "slug": "toe-anisotropic-phase-bridge-20260916",
+  "status": "active_personal_discovery",
+  "updated_utc": "2026-09-16T06:35:16.225000+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "branch": "physics-loop/toe-anisotropic-phase-bridge-20260916",
+  "previous_pr": 8163,
+  "previous_head": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+  "agents": "none; personal execution required",
+  "actual_current_surface_status": "discovery_in_progress",
+  "active_target": "Read and match actual anisotropic or Hamiltonian compact-gauge phase theorems; derive the strongest missing estimate",
+  "next_action": "Read the primary Frohlich-Spencer proof with equations visually checked and search direct Hamiltonian/anisotropic extensions",
+  "strongest_unresolved_proof_obligation": "Thermodynamic interacting phase of the actual supplied compact gauge model with physical time and field sources"
+}

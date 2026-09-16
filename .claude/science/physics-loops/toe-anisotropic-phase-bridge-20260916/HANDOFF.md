@@ -1,0 +1,7 @@
+# Active personal phase campaign
+
+Checkout /Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916; branchphysics-loop/toe-anisotropic-phase-bridge-20260916. Main and standing instruction revisions are in STATE.yaml and were freshly fetched before creation. Disk preflight142.294GiB. Three other clean unlanded worktrees were preserved in the completion sweep; no archives or garbage collection touched. Cooperative physics-loop lock holder01a097f1-c7c7-7b51-8f2e-399bbbf0c311. Authorized deadline13:45:03UTC; no subagents.
+
+PR8163 is a draft at f950bab266a2c2c82321b49d94e21f0f8d2bcf61, with165 tracked files and164 verified manifest entries; its checkout is removed. PR8162 at0f02dc5127416f347e231bbd8aa7c2a8b58a02fa supplies the provisional calibrated fixed-graph clock/time state machinery. Neither is retained or a phase proof.
+
+The next target is to match a real compact phase result to the supplied anisotropic Hamiltonian model, or derive its actual missing estimate. The primary Frohlich-Spencer IHES/P/81/40 PDF and text are in /Users/jonreilly/Documents/Codex/toe-campaign-recovery/literature. Text pages1-23 and the opening of24 have now been read; many displayed equations are absent from extraction and must be checked visually. No anisotropic/Hamiltonian theorem scope has yet been inferred. Read the relevant complete proof and check later literature. Continue personally after each milestone until the deadline.

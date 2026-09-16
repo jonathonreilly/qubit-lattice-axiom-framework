@@ -9,8 +9,10 @@ planning_revision: 068e916ca37b004757ad3a3c082857a91dc37215
 branch: physics-loop/toe-interacting-scale-20260916
 execution: personal_no_subagents
 checkpoint_minutes: 30
-block: 0
-current_target: source-hypothesis review for fixed-coupling infrared control
+block: 1
+current_target: volume-uniform compact-field concentration and low-energy response
 previous_campaign_commit: ccca36e505a4cc5d0cd4735b377c15d69042fc41
 review_status: author_exploration_no_independent_review
-next_step: finish old milestone publication and cleanup, then check constructive theorem hypotheses
+next_step: attack the spectral floor with frequency-separated current or stronger compact-field estimates
+block01_status: provisional_bounded_theorem_personally_reviewed
+last_checkpoint_utc: 2026-09-16T01:50:52.007989+00:00

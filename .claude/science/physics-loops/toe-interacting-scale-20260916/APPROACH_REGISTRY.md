@@ -14,3 +14,17 @@
 
 Ranking is provisional. Record actual gains/failures and rerank after a
 substantive result; prefer connected missing obligations to easy corollaries.
+
+
+Block01: the discrete-Gaussian variational route plus a two-probe spectral
+inequality gives a new candidate volume-uniform bound. It reaches a local
+wavepacket scale R~g^-1 and excitation energy O(g), not the fixed-g infrared
+limit. Do not produce repeated corollaries as new blocks. The next useful
+step must change the unresolved remainder: frequency-filter the charged
+response, control compact fluctuations beyond their average, or derive a
+stronger physical magnetic spectral estimate in the same state.
+
+Constructive-literature route: current source screen provides no matching
+full theorem. The closest massless noncompact lattice construction examined
+controls perturbative orders and leaves nonperturbative cutoff removal open.
+This is not a theorem that the compact model fails.

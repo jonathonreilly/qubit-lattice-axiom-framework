@@ -1,6 +1,6 @@
 {
- "edge_count": 13568,
- "node_count": 6014,
+ "edge_count": 13570,
+ "node_count": 6015,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -732,6 +732,10 @@
   },
   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
    "deps_hash": "e54933eecd76",
+   "out_degree": 2
+  },
+  "admissibility_rule_frame_attached_four_point_menu_covariant_weights_gibbs_linear_family_and_sequential_support_obstruction_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "d0249e15a42a",
    "out_degree": 2
   },
   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {

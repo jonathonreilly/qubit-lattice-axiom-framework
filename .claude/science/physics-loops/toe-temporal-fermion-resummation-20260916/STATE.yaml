@@ -1,7 +1,7 @@
 {
   "slug": "toe-temporal-fermion-resummation-20260916",
   "status": "active_personal_discovery",
-  "updated_utc": "2026-09-16T05:32:24.062769+00:00",
+  "updated_utc": "2026-09-16T05:50:15.915913+00:00",
   "deadline_utc": "2026-09-16T13:45:03Z",
   "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
   "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
@@ -10,8 +10,8 @@
   "previous_head": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
   "agents": "none; personal execution required",
   "actual_current_surface_status": "conditional-support",
-  "active_target": "Resum exact temporal Wilson runs before counting spatial loops; test physical-time-density and curl-response bounds uniform as delta shrinks",
+  "active_target": "Uniform temporal-run/curl theorem proposed; verify source geometry and exact open-boundary Hamiltonian match",
   "strongest_unresolved_proof_obligation": "Prove a local physical field/source bound uniform in time step and volume; then match the physical Hamiltonian and compact phase",
-  "next_action": "Derive the closed-time prefactor and spin-projector improvement; verify the first nontrivial temporal rectangle term against exact determinants",
-  "claim_status": "working derivation only; no new theorem claimed yet"
+  "next_action": "Prove the determinant Schur prefactor, challenge noncommuting histories against Fock evolution, and run formula mutations before milestone review",
+  "claim_status": "one complete author uniform-time curl theorem proposal and two successful finite programs; Hamiltonian matching still working; no independent review"
 }

@@ -109,7 +109,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 25 close (2026-09-16)
 # block: 25
 # branch: physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-24 are open PRs #8034, #8035, #8138-#8142, #8146-#8158)
-# pr_status: opened for review (number recorded at close-out); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8168 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8168); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=22 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: controls (the construction implemented and run exhaustively; the fork-fork slip fixed) -> contract with a lens pass -> primary (T0-T7, runner) -> refuting pass (abstract instances; float enumeration; independent graph checks; direct summation; simulation) -> fold"
 # review_findings: "the noisy majority automaton of the 3D formation law in level time is stable: explanation trees with n noise nodes and <= 4(n-1) edges (clusters, excuses along M_k = z_k - tau/3, the spanning lemma, refinement); marked subtrees <= 2 96^k; P(eta_x = 1) <= (192/95) eps/(1 - 96^4 eps); for eps(p,q,r) <= 1/(2 96^4) the formation law has six invariant laws (p >= 339738628 at (p,1,2)); S6 closed"

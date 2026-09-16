@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from pathlib import Path; import sys; p=Path(sys.argv[1]); original=Path(sys.argv[2]); scope={'__name__':'formula_challenge','__file__':str(original)}; exec(compile(p.read_text(),str(p),'exec'),scope); scope[sys.argv[3]]()
+                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/tail_wrong_factorial_power.py", line 141, in factorial_tail_check
+    assert logpsi>=lower
+           ^^^^^^^^^^^^^
+AssertionError

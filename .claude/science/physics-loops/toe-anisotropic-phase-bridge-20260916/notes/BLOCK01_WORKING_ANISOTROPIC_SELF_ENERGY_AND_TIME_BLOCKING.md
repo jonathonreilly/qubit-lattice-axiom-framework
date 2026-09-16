@@ -130,3 +130,11 @@ Resumming independent jumps alone does not control(4), because the weight exp[-i
 Integrating a whole temporal strip in the Gaussian dual field improves suppression of an isolated low-frequency current, but nearby opposite currents can cancel that gain. Microscopic temporal dipoles must be resummed; estimating isolated charges is not sufficient. This has not been turned into a no-go theorem.
 
 A fixed microscopic Euclidean model followed by a macroscopic space/time scaling limit is another route to photons and need not equal the specific Kogut-Susskind Hamiltonian at fixed spatial lattice spacing. Main's provisional fixed-beta Haar full-score proposal and its finite-clock electric extension remain relevant alternatives. Composing the two-defect finite-clock carrier is a separate obligation; neither Gaussian smoothing nor a closed-current central limit theorem alone supplies the full photon field. If the Hamiltonian route does not produce a decisive estimate, reassess these alternatives rather than treating its failure as an axiom contradiction.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

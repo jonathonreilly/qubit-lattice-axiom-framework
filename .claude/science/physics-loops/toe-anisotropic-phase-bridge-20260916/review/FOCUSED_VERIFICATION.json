@@ -1,0 +1,233 @@
+{
+  "checked_utc": "2026-09-16T09:26:49.921306+00:00",
+  "verifier_sha256": "745e8b6c88d65f9e73c4045309e497b0fee3264ab4a799faea63f2ef812fe7e8",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "scope": "focused author verification; no formal audit verdict",
+  "primary_pairs": [
+    {
+      "source": "block01_anisotropic_conditional_and_poisson_check.py",
+      "source_sha256": "aea3ae5a0a70098f5da129a35572104f8d915cc523c95f761091f595c8fecc7b",
+      "output": "BLOCK01_ANISOTROPIC_POISSON_ATTEMPT2.stdout.txt",
+      "output_sha256": "ad32f2395c74ff218bf9839b743900ce31832e3e462801446f415c78323024d0",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block02_coupled_jump_and_response_check.py",
+      "source_sha256": "5981a5204073001efa670d996adfb45be698275e5a6ae8914ba88755e70f280b",
+      "output": "BLOCK02_COUPLED_RESPONSE_ATTEMPT2.stdout.txt",
+      "output_sha256": "d317c75bbd11e77cf501c2907f714bd2a40ab82cc762f30027d0692517ed40d5",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block03_phase_corrector_check.py",
+      "source_sha256": "ed9a617e7b3ad75d7854b74d9381ad5f325f7cf10203ae2503a1c02cf30ac58c",
+      "output": "block03_phase_corrector_check.ATTEMPT3.stdout.json",
+      "output_sha256": "4ec951a89df5a384654b9f3adb90688c30e564cfb55721fed8609cc54635e1be",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block04_local_heat_and_orthogonality_check.py",
+      "source_sha256": "b44b81c44689f4833b7b2d8f9f854af2746eda96895052a6db3ff7833398e5b4",
+      "output": "block04_local_heat_and_orthogonality_check.ATTEMPT2.stdout.json",
+      "output_sha256": "01bbfc8ef82a7144277df9f4daafd521c3f1c7a3b0e768dba950fd7d3df35cae",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block05_quantum_comparison_check.py",
+      "source_sha256": "4f574d2448f79a3bed93c884aa8d6ef3508f7100adcdbe7fd1d5284adf91043a",
+      "output": "block05_quantum_comparison_check.FINAL.stdout.json",
+      "output_sha256": "425d7a7771e005ca397eba85f49935e006fa141906c203d49235563c6c133120",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block06_raw_curl_counterexample.py",
+      "source_sha256": "823a8a7e989aba461b3522cbd09fc9ae6c30f37fabc57d85a666fced4997f115",
+      "output": "block06_raw_curl_counterexample.FINAL.stdout.json",
+      "output_sha256": "a33a12cfaf0ae14563a8010199759514856720fbf3d5fd0b55c51a05d2ab07aa",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block07_positive_mixture_check.py",
+      "source_sha256": "f11c894ca38aac8de32d4b05c5a7998354ac0286f3f9d629a3b2aca7984f512e",
+      "output": "block07_positive_mixture_check.FINAL.stdout.json",
+      "output_sha256": "b9823a5ab4ed23f2912283e9ea28236152ebc2066b414ca81180e7e0a11eb029",
+      "timeout_sec": 180
+    },
+    {
+      "source": "block08_bridge_action_check.py",
+      "source_sha256": "ed55f86a73921f15240fc21ef3342e0a8d37e7f32250ecfdd893c8ceac641908",
+      "output": "block08_bridge_action_check.FINAL.stdout.json",
+      "output_sha256": "1ebf0037f520683098dec83023886bc41f4d708c27ff3b24ba53f91a4c7e00a0",
+      "timeout_sec": 180
+    }
+  ],
+  "fault_harness_sha256": "712e2c7befe25a81a1264db9119da9d8382cc284ed8df7a3ac12ee2463abdd29",
+  "formula_faults": 23,
+  "fault_output_sha256": "8c9f08a8c260428db1d8361823060b889bee1c2a45e4325f4eabc013dc3c0833",
+  "python_files_compiled": 48,
+  "markdown_files": 29,
+  "relative_links": [
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/FOCUSED_VERIFICATION.json"
+    },
+    {
+      "source": "README.md",
+      "target": "review/NUMERICAL_HISTORY.md"
+    },
+    {
+      "source": "README.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "TRACE_GATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PERSONAL_PROOF_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "REVIEW_HISTORY.md"
+    },
+    {
+      "source": "README.md",
+      "target": "NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK01_WORKING_ANISOTROPIC_SELF_ENERGY_AND_TIME_BLOCKING.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK02_ELECTRIC_RESPONSE_AND_GAUSSIAN_REFERENCE_TESTS.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK03_WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_TESTS.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK04_LOCAL_DENSITY_AND_FINITE_LOOP_TEST_FAMILY_BOUND.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK05_GROUND_STATE_CORRELATION_COMPARISON.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK06_COMPACT_STABILITY_COMPARISON_READING.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK07_POSITIVE_WILSON_MIXTURE_AND_WEAK_REGION_COMPARISON.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md",
+      "target": "../CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "notes/BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md",
+      "target": "../ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "notes/BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    }
+  ],
+  "full_base_diff_check_exit": 0,
+  "pending": "canonical registration and caches, independent review, integrated landing gates"
+}

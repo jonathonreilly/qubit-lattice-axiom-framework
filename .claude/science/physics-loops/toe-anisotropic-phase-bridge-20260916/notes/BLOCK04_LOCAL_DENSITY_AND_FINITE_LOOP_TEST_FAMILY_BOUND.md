@@ -208,3 +208,11 @@ field at the microscopic cutoff does not apply to this ground state. A
 coarse-grained magnetic conservation law can still emerge if the appropriate
 extended defect correlations are controlled. That is the remaining phase
 task; (9) does not settle it.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

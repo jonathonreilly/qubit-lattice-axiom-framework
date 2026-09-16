@@ -5,6 +5,7 @@ Rational arithmetic verifies the connection and its face curls; a rational
 lower bound pi > 3 certifies the violated inequality without floating error.
 This does not evaluate any theorem beyond the displayed comparison.
 """
+AUDIT_TIMEOUT_SEC = 180
 from fractions import Fraction as F
 from hashlib import sha256
 from itertools import product

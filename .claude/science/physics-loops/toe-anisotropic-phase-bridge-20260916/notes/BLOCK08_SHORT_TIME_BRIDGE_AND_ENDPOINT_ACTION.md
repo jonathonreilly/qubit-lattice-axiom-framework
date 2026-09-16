@@ -247,3 +247,11 @@ interpolation; replacing it by one midpoint or one endpoint Wilson
 factor has not been justified here. No native law, coupling selection,
 relativistic limit, matter theorem or axiom update follows from these
 short-time estimates.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

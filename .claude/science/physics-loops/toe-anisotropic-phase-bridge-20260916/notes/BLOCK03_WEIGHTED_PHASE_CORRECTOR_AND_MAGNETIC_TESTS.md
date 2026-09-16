@@ -166,3 +166,11 @@ finite-volume convergence of a test basis, or independent plaquette
 concentration cannot be substituted for (10). The derivation supplies a way
 to challenge and improve candidate correctors, not a claimed solution of
 their many-body bound.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

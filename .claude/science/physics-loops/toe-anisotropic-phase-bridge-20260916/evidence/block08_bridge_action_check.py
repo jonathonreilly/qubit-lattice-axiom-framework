@@ -5,6 +5,7 @@ the shared-link metric retained. Time quadrature is explicitly finite and
 uses its own Dirichlet eigenvalue, not the continuum pi^2/T^2 constant.
 No result here establishes a phase or a uniform time-quadrature error.
 """
+AUDIT_TIMEOUT_SEC = 180
 from hashlib import sha256
 from pathlib import Path
 import json

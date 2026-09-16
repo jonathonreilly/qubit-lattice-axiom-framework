@@ -265,3 +265,11 @@ The concrete next obligation is to obtain a positive comparison of the
 actual physical-time block that preserves a bound such as(8), or another
 uniform defect estimate after blocking. No Hamiltonian phase conclusion
 is being imported through an unproved interchange of these operations.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

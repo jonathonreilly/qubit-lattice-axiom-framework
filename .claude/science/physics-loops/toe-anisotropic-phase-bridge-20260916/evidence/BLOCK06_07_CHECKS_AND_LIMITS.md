@@ -17,7 +17,7 @@ pi>3. No conclusion about the source's final theorem is tested.
 
 ## Positive mixture comparison
 
-The current `block07_positive_mixture_check.py` has SHA256
+The pre-metadata `block07_positive_mixture_check.py` has SHA256
 `771a38fcb8977d0b6d6743341cc6ea9949ff18b571a7728a95b9ca4e731787d0`.
 Its ATTEMPT2 run passed in5.336seconds and stderr is empty. It contains
 four distinct finite challenges:
@@ -82,3 +82,16 @@ criterion. No assertion threshold was relaxed.
 Reproduction: run the named program with python3 from the checkout root,
 redirecting stdout and stderr to a new attempt pair. NumPy, SciPy and
 mpmath are required for block07; block06 uses only the standard library.
+
+## Final metadata-only refresh
+
+The preceding attempt receipts remain historical evidence. Timeout declarations
+were added before packaging, and the mixture docstring was made descriptive.
+The complete previous sources are preserved as BEFORE_TIMEOUT_METADATA files.
+The mathematical formulas and criteria were unchanged in this refresh.
+
+Current `block06_raw_curl_counterexample.py` has SHA256`823a8a7e989aba461b3522cbd09fc9ae6c30f37fabc57d85a666fced4997f115`;
+its `block06_raw_curl_counterexample.FINAL.stdout.json` records a successful rerun with empty stderr.
+
+Current `block07_positive_mixture_check.py` has SHA256`f11c894ca38aac8de32d4b05c5a7998354ac0286f3f9d629a3b2aca7984f512e`;
+its `block07_positive_mixture_check.FINAL.stdout.json` records a successful rerun with empty stderr.

@@ -193,3 +193,11 @@ interaction sets, but a useful fixed-coupling phase comparator has yet to
 be constructed. A perimeter estimate, even if obtained, must separately
 be connected to the electric spectral target or a full physical-source
 limit. The conditional susceptibility criterion in BLOCK02 remains open.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

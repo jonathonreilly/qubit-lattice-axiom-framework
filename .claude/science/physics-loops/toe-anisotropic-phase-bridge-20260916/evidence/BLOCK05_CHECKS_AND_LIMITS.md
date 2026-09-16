@@ -1,6 +1,6 @@
 # Quantum comparison checks and limits
 
-The current source `block05_quantum_comparison_check.py` has SHA256
+The pre-metadata source `block05_quantum_comparison_check.py` has SHA256
 `1c65f11cb8e46352c69d23a68de57aa0f9a5679cadded97801d02649698299cb`.
 Its first recorded run passed with empty stderr. It is an author check,
 not independent review or a proof of the infinite-volume phase.
@@ -34,3 +34,13 @@ No electric-susceptibility monotonicity, thermal physical Gauss-sector
 comparison, full quantum-state uniqueness, photon pole, or fermion extension
 has been checked or proved here. Equal-time angle marginals and electric
 second moments have the limited convergence stated in the working note.
+
+## Final metadata-only refresh
+
+The preceding attempt receipts remain historical evidence. Timeout declarations
+were added before packaging, and the mixture docstring was made descriptive.
+The complete previous sources are preserved as BEFORE_TIMEOUT_METADATA files.
+The mathematical formulas and criteria were unchanged in this refresh.
+
+Current `block05_quantum_comparison_check.py` has SHA256`4f574d2448f79a3bed93c884aa8d6ef3508f7100adcdbe7fd1d5284adf91043a`;
+its `block05_quantum_comparison_check.FINAL.stdout.json` records a successful rerun with empty stderr.

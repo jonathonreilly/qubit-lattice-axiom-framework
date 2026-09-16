@@ -102,3 +102,11 @@ limit, uniformly in growing spatial volume. The ground-state comparison
 in BLOCK05 supplies equal-time limits but does not supply that response.
 No axiom, primitive, phase assignment, retained status or external paper
 has been changed.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

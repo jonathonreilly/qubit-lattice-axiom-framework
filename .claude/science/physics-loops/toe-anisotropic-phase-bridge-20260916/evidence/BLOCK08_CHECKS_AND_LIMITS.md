@@ -1,6 +1,6 @@
 # Personal checks of the short-time bridge action
 
-The current `block08_bridge_action_check.py` has SHA256
+The pre-metadata `block08_bridge_action_check.py` has SHA256
 `9cefefd665591e4c2961f42aef1dbd3503bdd476715e8405291e77ec8be02d2f`.
 ATTEMPT2 passed in1.115seconds with empty stderr. These are author checks,
 not an independent review or a phase computation.
@@ -50,3 +50,13 @@ locality is justified by the analytic vector-component Neumann argument;
 this runner does not separately check long-distance locality. All results
 remain supplied-Hamiltonian statements, with compact periodization and
 long-time composition still explicit obligations.
+
+## Final metadata-only refresh
+
+The preceding attempt receipts remain historical evidence. Timeout declarations
+were added before packaging, and the mixture docstring was made descriptive.
+The complete previous sources are preserved as BEFORE_TIMEOUT_METADATA files.
+The mathematical formulas and criteria were unchanged in this refresh.
+
+Current `block08_bridge_action_check.py` has SHA256`ed55f86a73921f15240fc21ef3342e0a8d37e7f32250ecfdd893c8ceac641908`;
+its `block08_bridge_action_check.FINAL.stdout.json` records a successful rerun with empty stderr.

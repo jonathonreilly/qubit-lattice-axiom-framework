@@ -93,3 +93,11 @@ For a single plaquette this is the familiar discrete rotor/Mathieu recurrence. N
 ## 4. Next decision
 
 The exact positive path representation remains available. A viable continuation must either control the non-Gaussian electric tails together with the coupled response, prove TARGET through a uniform offset-energy estimate, or use a different compact phase representation. The direct one-link dual estimate, the independent Poisson limit and the Gaussian trial compression do not supply that estimate. These are dependencies of one unresolved thermodynamic problem, not multiple independent axiom walls.
+
+## Review and proposal status
+
+The [claim-status contract](../CLAIM_STATUS_CERTIFICATE.md) and
+[premise inventory](../ASSUMPTIONS_AND_IMPORTS.md) apply to this author
+proposal. The [negative-claim checklist](../NO_GO_DISCIPLINE_CHECKLIST.md)
+records the scoped comparison restrictions and untested alternatives.
+Independent review, formal registration and retained landing are pending.

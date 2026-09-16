@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from pathlib import Path; import sys; p=Path(sys.argv[1]); original=Path(sys.argv[2]); scope={'__name__':'formula_challenge','__file__':str(original)}; exec(compile(p.read_text(),str(p),'exec'),scope); scope[sys.argv[3]]()
+                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/kernel_drops_lower_weight.py", line 41, in heat_comparison
+    assert lower_margin>=-2e-14 and upper_margin>=-2e-14
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

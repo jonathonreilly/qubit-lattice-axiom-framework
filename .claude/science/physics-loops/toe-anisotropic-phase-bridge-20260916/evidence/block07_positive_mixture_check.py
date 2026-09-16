@@ -1,10 +1,11 @@
-"""Finite challenges for BLOCK07, not a gauge-phase computation.
+"""Finite challenges for positive Wilson mixtures, not a gauge-phase computation.
 
 The radial finite-volume heat equation checks the Hartman-Watson transform
 through a different implementation from Bessel order formulas. Cube sums
 challenge the partition tilt and dilution comparison on an actual incidence
 matrix, using a finite two-point mixing law, not sampled Hartman-Watson tails.
 """
+AUDIT_TIMEOUT_SEC = 180
 from hashlib import sha256
 from itertools import product, combinations
 from pathlib import Path

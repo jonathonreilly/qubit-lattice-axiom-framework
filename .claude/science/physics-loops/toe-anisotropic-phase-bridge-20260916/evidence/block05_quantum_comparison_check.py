@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Finite checks of the compact doubled-ground argument, not a phase computation."""
+AUDIT_TIMEOUT_SEC = 180
 from pathlib import Path
 import hashlib
 import itertools

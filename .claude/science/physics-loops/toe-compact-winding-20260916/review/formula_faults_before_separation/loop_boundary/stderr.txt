@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py", line 161, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py", line 155, in main
+    geometry=geometry_checks(),moments=exact_moment_checks(),scaling=analytic_scaling_checks(),
+             ~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py", line 61, in geometry_checks
+    assert dict(mapped)=={k:int(sign)*v for k,v in expected.items()}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

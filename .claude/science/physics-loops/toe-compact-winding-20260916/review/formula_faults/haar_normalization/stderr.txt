@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py", line 139, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py", line 134, in main
+    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')
+           ~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py", line 50, in circle_checks
+    assert errors[key]<mp.mpf('1e-60')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

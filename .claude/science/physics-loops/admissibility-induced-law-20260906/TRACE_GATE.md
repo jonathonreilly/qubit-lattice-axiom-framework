@@ -74,3 +74,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "S6 closed at scope: P(eta_x = 1) <= (192/95) eps/(1 - 96^4 eps); for eps(p,q,r) <= 1/(2 96^4) (p >= 339738628 at (p,1,2)) the formation law's level automaton has at least six invariant laws, one per value, within 1/42024960 of a constant plane at every site. Next: sharpen the threshold; the band between block 08's region and this one. Consumers: #8093's assembly (record dynamics closed at the theorem level: both readings order at strong coupling on Z^3)"
 ```
+
+# Trace gate — block 25, sharpened on the open PR (2026-09-16)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 12's obligation S6 (PR #8146): stability of the noisy majority eroder in level time; whether the formation reading orders in three dimensions"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "S6 closed at scope with the sharpened constants: P(eta_x = 1) <= (391/100) eps <= 3/10^5 for eps <= 7/10^6; p_0 = 285718 at (p,1,2). Next: the arrow budget; the band between block 08's region and this one. Consumers unchanged (#8093's assembly; the decision record)"
+```

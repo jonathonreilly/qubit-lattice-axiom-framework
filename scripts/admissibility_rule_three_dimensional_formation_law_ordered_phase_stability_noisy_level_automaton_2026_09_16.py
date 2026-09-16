@@ -7,7 +7,10 @@ the exact maximum over the 216 triples with two entries a, the domination inequa
 excuse identity.  T4: the explanation-tree construction (clusters, cause graph, spanning lemma, refinement) executed exhaustively on
 the depth-2 backward cone, on every depth-3 configuration with at most four noise sites, on random deeper cones (integer
 randomness) and on line and triangle seeds, with the tree property, the marks, the spanning identity and edges <= 4(n - 1) checked.
-T5: exact subtree counts for k <= 3 against 48^k.  T6-T7: the series constant, the bound at epsilon_0, the thresholds p_0, the
+T4 (refined): at most one arrow to a predecessor at each node, the marks read off the tree, forks = n - 1, arrows <= 3(n - 1).  T5: the
+subtrees of G with at most four edges and at most one arrow to a predecessor per node, counted by (arrows, forks), their lifts to the
+typed regular tree (pairwise distinct) and the exact coefficients of the generating-function recursion; the rational super-solution
+certificate at (t, s) = (91/1000, 1000/107653).  T6-T7: the bound (391/100) epsilon at epsilon_0 = 7/10^6, the thresholds p_0, the
 Cesaro identity on a finite chain, the distinctness arithmetic.  Exact arithmetic only (integers, Fractions and sympy); the runner
 scans its own source for floating-point literals.
 """
@@ -51,7 +54,7 @@ MUTATION_GATE = {
     "edge_bound_claimed_tighter": "D",
     "spanning_identity_wrong": "D",
     "subtree_bound_wrong": "D",
-    "series_constant_wrong": "E",
+    "certificate_wrong": "E",
     "threshold_p0_wrong": "E",
     "claim_transition_located_injected": "F",
     "claim_classical_name_in_theorem": "F",
@@ -373,6 +376,16 @@ def test_config(x, sites, zeta, stats, ratio_bound):
     n = len(noise_nodes)
     ok = n >= 1 and check_tree(nodes, edges, x, ex) and noise_nodes <= ex.noise and all(zeta.get(z, 0) == 1 for z in noise_nodes)
     ok = ok and ident and len(edges) <= ratio_bound * (n - 1)
+    downs = {v: 0 for v in nodes}
+    arrows = forks = 0
+    for e, kind in edges.items():
+        if kind == "arrow":
+            p, c = tuple(e)
+            downs[p if c in preds(p) else c] += 1
+            arrows += 1
+        else:
+            forks += 1
+    ok = ok and max(downs.values()) <= 1 and {v for v in nodes if downs[v] == 0} == noise_nodes and forks == n - 1 and arrows <= 3 * (n - 1)
     stats["cases"] += 1
     stats["max_ratio"] = max(stats["max_ratio"], Fraction(len(edges), max(n - 1, 1)))
     return ok
@@ -503,6 +516,89 @@ def family_c(checks: Checks) -> None:
     checks.check("C2", ok2, "T2(b): every fork pair has Size = 1 and every assignment of its two points as poles has Span <= 1")
 
 
+# ------------------------------------------------------------------------------------------- the typed tree (T5)
+TYPES = [("down", j) for j in range(3)] + [("up", j) for j in range(3)] + [("fork", (i, j)) for i in range(3) for j in range(3) if i != j]
+
+
+def step(v, ty):
+    kind, d = ty
+    if kind == "down":
+        return sub(v, E3[d])
+    if kind == "up":
+        return add(v, E3[d])
+    return add(sub(v, E3[d[1]]), E3[d[0]])
+
+
+def reverse(ty):
+    kind, d = ty
+    if kind == "down":
+        return ("up", d)
+    if kind == "up":
+        return ("down", d)
+    return ("fork", (d[1], d[0]))
+
+
+def gf_coefficients(A, FM, up_slots=3):
+    """Exact coefficients [t^a s^f] of the recursion D = (1+tU)^2 (1+3tD)(1+sF)^6, U = (1+tU)^{up_slots} (1+sF)^6,
+    F = (1+tU)^3 (1+3tD)(1+sF)^5, R = (1+tU)^3 (1+3tD)(1+sF)^6, truncated at a <= A, f <= FM (heights up to A + FM + 1)."""
+
+    def pmul(P, Q):
+        R = {}
+        for (a1, f1), c1 in P.items():
+            for (a2, f2), c2 in Q.items():
+                if a1 + a2 <= A and f1 + f2 <= FM:
+                    R[(a1 + a2, f1 + f2)] = R.get((a1 + a2, f1 + f2), 0) + c1 * c2
+        return R
+
+    def ppow(P, n):
+        R = {(0, 0): 1}
+        for _ in range(n):
+            R = pmul(R, P)
+        return R
+
+    def one_plus(P, c, da, df):
+        R = {(0, 0): 1}
+        for (a, f), v in P.items():
+            if a + da <= A and f + df <= FM:
+                R[(a + da, f + df)] = R.get((a + da, f + df), 0) + c * v
+        return R
+
+    D = U = F = {(0, 0): 1}
+    for _ in range(A + FM + 1):
+        xU, xD3, yF = one_plus(U, 1, 1, 0), one_plus(D, 3, 1, 0), one_plus(F, 1, 0, 1)
+        D, U, F = pmul(pmul(ppow(xU, 2), xD3), ppow(yF, 6)), pmul(ppow(xU, up_slots), ppow(yF, 6)), pmul(pmul(ppow(xU, 3), xD3), ppow(yF, 5))
+    xU, xD3, yF = one_plus(U, 1, 1, 0), one_plus(D, 3, 1, 0), one_plus(F, 1, 0, 1)
+    return pmul(pmul(ppow(xU, 3), xD3), ppow(yF, 6))
+
+
+def enumerate_typed_tree(kmax):
+    """Admissible rooted subtrees of the typed tree with at most kmax edges, counted by (arrows, forks); vertices are type words."""
+    trees = {frozenset([()])}
+    counts = {}
+    for _ in range(kmax):
+        nxt = set()
+        for T in trees:
+            downs = {w: 0 for w in T}
+            for w in T:
+                if w and w[-1][0] == "down":
+                    downs[w[:-1]] += 1
+                if w and w[-1][0] == "up":
+                    downs[w] += 1
+            for w in T:
+                last = w[-1] if w else None
+                for ty in TYPES:
+                    if (last is not None and ty == reverse(last)) or (ty[0] == "down" and downs[w] >= 1):
+                        continue
+                    nw = w + (ty,)
+                    if nw not in T:
+                        nxt.add(T | {nw})
+        trees = nxt
+        for T in trees:
+            a = sum(1 for w in T if w and w[-1][0] != "fork")
+            counts[(a, len(T) - 1 - a)] = counts.get((a, len(T) - 1 - a), 0) + 1
+    return counts
+
+
 # ============================================================================================ family D
 def family_d(checks: Checks) -> None:
     x = (0, 0, 0)
@@ -515,7 +611,7 @@ def family_d(checks: Checks) -> None:
     for bits in product((0, 1), repeat=len(sites2)):
         zeta = {z: b for z, b in zip(sites2, bits) if b}
         ok1 = ok1 and test_config(x, sites2, zeta, stats, ratio_bound)
-    checks.check("D1", ok1 and stats["cases"] == 932, f"T4: on all 1024 noise configurations of the depth-2 backward cone ({stats['cases']} with a one at x) the refinement builds a tree of arrows and forks through 1-sites rooted at x, its marked nodes are noise sites, the spanning identity holds at every refinement, and edges <= 4(n-1) (largest ratio {stats['max_ratio']})")
+    checks.check("D1", ok1 and stats["cases"] == 932, f"T4: on all 1024 noise configurations of the depth-2 backward cone ({stats['cases']} with a one at x) the refinement builds a tree of arrows and forks through 1-sites rooted at x, its marked nodes are noise sites, the spanning identity holds at every refinement, edges <= 4(n-1) (largest ratio {stats['max_ratio']}), every node has at most one arrow to a predecessor, the nodes without one are exactly the noise nodes, forks = n-1 and arrows <= 3(n-1)")
     stats3 = {"cases": 0, "max_ratio": Fraction(0)}
     sites3 = cone(x, 3)
     ok2 = True
@@ -545,50 +641,69 @@ def family_d(checks: Checks) -> None:
     _, _, _, _, ident = ex.explain(x)
     checks.check("D3", ok3 and stats5["cases"] == 14 and ident, f"T4: line seeds (n + 1 noise sites n levels down, n <= 8) and triangle seeds (n <= 6) are explained with the bound (largest ratio {stats5['max_ratio']}); the spanning identity sum_X Span(X) = sum_k M_k(u_k) holds at every refinement of the depth-4 triangle seed")
 
-    def nbrs(z):
-        return [add(z, e) for e in E3] + [sub(z, e) for e in E3] + [add(z, o) for o in FORK_OFFSETS]
-
-    def count_subtrees(root, k):
-        level_trees = {frozenset()}
-        for _ in range(k):
-            nxt = set()
-            for T in level_trees:
-                nodes = {root} | {v for e in T for v in e}
-                for v in nodes:
-                    for w in nbrs(v):
-                        if w in nodes:
-                            continue
-                        nxt.add(T | {frozenset([v, w])})
-            level_trees = nxt
-        return len(level_trees)
-
-    base = 48
-    if mut("subtree_bound_wrong"):
-        base = 12
-    counts = [count_subtrees(x, k) for k in (1, 2, 3)]
-    checks.check("D4", counts == [12, 198, 3688] and all(c <= base ** k for c, k in zip(counts, (1, 2, 3))), f"T5: the numbers of subtrees with 1, 2, 3 edges containing the origin are {counts}, each at most 48^k (the depth-first encoding bound)")
+    # T5: the subtrees of G containing the origin with at most one arrow to a predecessor at each node, by (arrows, forks); their lifts
+    trees = {frozenset()}
+    counts = {(0, 0): 1}
+    lifts = set()
+    inj = True
+    for _ in range(4):
+        nxt = set()
+        for T in trees:
+            nodes = {x} | {c for (_p, c, _ty) in T}
+            downs = {v: 0 for v in nodes}
+            for (p, c, ty) in T:
+                if ty[0] == "down":
+                    downs[p] += 1
+                if ty[0] == "up":
+                    downs[c] += 1
+            for v in nodes:
+                for ty in TYPES:
+                    w = step(v, ty)
+                    if w in nodes or (ty[0] == "down" and downs[v] >= 1):
+                        continue
+                    nxt.add(T | {(v, w, ty)})
+        trees = nxt
+        for T in trees:
+            a = sum(1 for e in T if e[2][0] != "fork")
+            counts[(a, len(T) - a)] = counts.get((a, len(T) - a), 0) + 1
+            parent = {c: (p, ty) for (p, c, ty) in T}
+            words = set()
+            for v in list(parent) + [x]:
+                w = []
+                while v in parent:
+                    p, ty = parent[v]
+                    w.append(ty)
+                    v = p
+                words.add(tuple(reversed(w)))
+            key = frozenset(words)
+            inj = inj and key not in lifts
+            lifts.add(key)
+    total = sum(counts.values())
+    coeff = gf_coefficients(5, 5, up_slots=2 if mut("subtree_bound_wrong") else 3)
+    within = all(c <= coeff.get(k, 0) for k, c in counts.items())
+    equal_small = all(c == coeff.get(k, 0) for k, c in counts.items() if sum(k) <= 2)
+    strict_four = all(c < coeff.get(k, 0) for k, c in counts.items() if sum(k) == 4)
+    direct = enumerate_typed_tree(3)
+    agree = all(direct.get(k, 0) == coeff.get(k, 0) for k in set(direct) | {k for k in coeff if 1 <= sum(k) <= 3})
+    checks.check("D4", total == 66103 and inj and within and equal_small and strict_four and agree, f"T5: the subtrees of G containing the origin with at most four edges and at most one arrow to a predecessor at each node number {total}; their lifts to the typed tree are pairwise distinct; by (arrows, forks) each count is at most the recursion's coefficient (equal for at most two edges, below it for every pair with four edges); the coefficients with at most three edges agree with a direct enumeration of admissible subtrees of the typed tree")
 
 
 # ============================================================================================ family E
 def family_e(checks: Checks) -> None:
-    K = sp.symbols("K", integer=True, positive=True)
-    e = sp.symbols("epsilon", positive=True)
-    const = sp.Rational(192, 95)
-    if mut("series_constant_wrong"):
-        const = sp.Rational(192, 96)
-    s1 = sp.simplify(2 * (96 ** (K + 1) - 1) / 95 - const * 96 ** K) == -sp.Rational(2, 95)
-    # the partial sums of the series in n: sum_{n=1}^{N} c 96^{4(n-1)} eps^n = c eps (1 - rho^N)/(1 - rho), rho = 96^4 eps, exactly
-    closed = True
-    for eps_val in (Fraction(1, 2 * 96 ** 4), Fraction(1, 10 ** 9), Fraction(1, 10 ** 8)):
-        rho = 96 ** 4 * eps_val
-        c_val = Fraction(192, 95) if not mut("series_constant_wrong") else Fraction(192, 96)
-        for N in range(1, 9):
-            partial = sum((c_val * 96 ** (4 * (m - 1)) * eps_val ** m for m in range(1, N + 1)), Fraction(0))
-            closed = closed and partial == c_val * eps_val * (1 - rho ** N) / (1 - rho) and partial <= c_val * eps_val / (1 - rho)
-    eps0 = Fraction(1, 2 * 96 ** 4)
-    bound = Fraction(192, 95) * eps0 / (1 - 96 ** 4 * eps0)
-    checks.check("E1", s1 and closed and bound == Fraction(1, 42024960) and bound < Fraction(1, 2), "T6: sum_{k<=K} 2 96^k = 2(96^(K+1) - 1)/95 <= (192/95) 96^K; the partial sums of the series in n equal (192/95) eps (1 - rho^N)/(1 - rho) and stay below (192/95) eps/(1 - rho), rho = 96^4 eps, exactly; at epsilon_0 = 1/(2 96^4) the bound is 1/42024960 < 1/2")
-    eps0 = Fraction(1, 2 * 96 ** 4)
+    t = Fraction(91, 1000)
+    s = Fraction(1000, 107653)
+    if mut("certificate_wrong"):
+        s = Fraction(1, 100)
+    Db, Ub, Fb = Fraction(3290957526219, 10 ** 12), Fraction(514547476033, 25 * 10 ** 10), Fraction(943741493637, 25 * 10 ** 10)
+    rD = (1 + t * Ub) ** 2 * (1 + 3 * t * Db) * (1 + s * Fb) ** 6
+    rU = (1 + t * Ub) ** 3 * (1 + s * Fb) ** 6
+    rF = (1 + t * Ub) ** 3 * (1 + 3 * t * Db) * (1 + s * Fb) ** 5
+    Rbar = (1 + t * Ub) ** 3 * (1 + 3 * t * Db) * (1 + s * Fb) ** 6
+    eps0 = t ** 3 * s
+    cert = Db >= rD and Ub >= rU and Fb >= rF and min(Db, Ub, Fb) >= 1 and t <= 1
+    partial = sum((c * t ** a * s ** f for (a, f), c in gf_coefficients(5, 5).items()), Fraction(0))
+    checks.check("E1", cert and Rbar < Fraction(391, 100) and eps0 == Fraction(7, 10 ** 6) and eps0 * Rbar <= Fraction(3, 10 ** 5) and Fraction(391, 100) * eps0 == Fraction(2737, 10 ** 8) and partial <= Rbar, "T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exact inequalities; entries >= 1; t <= 1), R-bar = (1 + t U-bar)^3 (1 + 3 t D-bar)(1 + s F-bar)^6 < 391/100, t^3 s = 7/10^6 = epsilon_0, epsilon_0 R-bar <= 3/10^5 ((391/100) epsilon_0 = 2737/10^8), and the recursion's partial sum over at most five edges stays below R-bar")
+    eps0 = Fraction(7, 10 ** 6)
 
     def least_p(q, r):
         lo, hi = 1, 10 ** 12
@@ -600,12 +715,12 @@ def family_e(checks: Checks) -> None:
                 lo = mid + 1
         return lo
 
-    p0 = {(1, 2): 339738628, (1, 1): 169869315, (2, 4): 679477255, (1, 3): 509607941}
+    p0 = {(1, 2): 285718, (1, 1): 142861, (2, 4): 571436, (1, 3): 428576}
     if mut("threshold_p0_wrong"):
-        p0[(1, 2)] = 339738627
+        p0[(1, 2)] = 285717
     ok2 = all(least_p(q, r) == v and max(deviations(v, q, r)) <= eps0 < max(deviations(v - 1, q, r)) for (q, r), v in p0.items())
-    checks.check("E2", ok2, "T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 are 339738628 at (1,2), 169869315 at (1,1), 679477255 at (2,4), 509607941 at (1,3), each with epsilon(p_0 - 1) > epsilon_0")
-    delta = Fraction(1, 42024960)
+    checks.check("E2", ok2, "T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 = 7/10^6 are 285718 at (1,2), 142861 at (1,1), 571436 at (2,4), 428576 at (1,3), each with epsilon(p_0 - 1) > epsilon_0")
+    delta = Fraction(3, 10 ** 5)
     Pm = sp.Matrix([[sp.Rational(1, 2), sp.Rational(1, 4), sp.Rational(1, 4)], [sp.Rational(1, 3), sp.Rational(1, 3), sp.Rational(1, 3)], [sp.Rational(1, 6), sp.Rational(1, 6), sp.Rational(2, 3)]])
     lam = sp.Matrix([[1, 0, 0]])
     f = sp.Matrix([1, -1, sp.Rational(1, 2)])
@@ -619,7 +734,7 @@ def family_e(checks: Checks) -> None:
 
 # ============================================================================================ family F
 FENCES = (
-    "This note proves, for the noisy majority automaton of the three-dimensional formation law in level time, that the density of ones from the all-zero level is at most `(192/95)ε/(1 − 96⁴ε)` for `96⁴ε < 1`, and hence that the formation law of the six-axis product rule started from a constant plane keeps every later site within `1/42024960` of that value whenever `ε(p, q, r) ≤ 1/(2·96⁴)`, with at least six distinct invariant laws; it does not locate the true threshold, does not treat couplings between block 08's uniqueness region and this one, does not treat other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause.",
+    "This note proves, for the noisy majority automaton of the three-dimensional formation law in level time, that the density of ones from the all-zero level is at most `(391/100)ε` for `ε ≤ 7/10⁶`, and hence that the formation law of the six-axis product rule started from a constant plane keeps every later site within `3/10⁵` of that value whenever `ε(p, q, r) ≤ 7/10⁶`, with at least six distinct invariant laws; it does not locate the true threshold, does not treat couplings between block 08's uniqueness region and this one, does not treat other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause.",
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
     "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
 )
@@ -670,9 +785,9 @@ def family_f(checks: Checks, note_text: str) -> None:
 N5_LINES = (
     "per_element: executed — the kernel's closed forms; the increments 1/3 - delta_jk; the fork size; the derivatives of the deviations",
     "per_site: executed — the coupling inequality at all 216 triples with two entries a; the exact least couplings p_0 at four weight pairs",
-    "per_mode: executed — the refinement on all 1024 depth-2 and all 2321 explained depth-3 configurations with at most four noise sites, on 1200 random cones and on structured seeds; the subtree counts 12, 198, 3688",
-    "per_block: executed — the series constant 192/95; the bound 1/42024960 at epsilon_0; the Cesaro identity on a finite chain",
-    "lattice_wide: T4-T7 proved for every epsilon <= 1/(2 96^4) and every coupling with epsilon(p, q, r) <= epsilon_0; the true threshold not claimed",
+    "per_mode: executed — the refinement on all 1024 depth-2 and all 2321 explained depth-3 configurations with at most four noise sites, on 1200 random cones and on structured seeds; the 66103 trees with at most four edges against the recursion's coefficients",
+    "per_block: executed — the super-solution certificate at (91/1000, 1000/107653); the bound (391/100) epsilon <= 3/10^5 at epsilon_0 = 7/10^6; the Cesaro identity on a finite chain",
+    "lattice_wide: T4-T7 proved for every epsilon <= 7/10^6 and every coupling with epsilon(p, q, r) <= epsilon_0; the true threshold not claimed",
 )
 
 

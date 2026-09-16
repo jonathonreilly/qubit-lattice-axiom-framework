@@ -1,0 +1,9 @@
+(a) float fixed point at (t, s): [3.290875, 2.058161, 3.774866]; certificate (3.290958, 2.058190, 3.774966) lies above it: True
+(a) at s * 1.06 the iteration diverges: True; at s * 1.03: still bounded
+(b) binomial-split bound sum_{a<=3f} C(a+f,a) 24^(a+f) <= (24/23) 3145728^f for f <= 11: True; its threshold 1/(2 3145728) = 1.589e-07 < 7e-6 (the recursion wins by 44.0)
+(c) trees of G with 1-4 edges in the family (forks = n-1, arrows <= 3(n-1)): 64490; their Peierls sum at eps_0: 6.6210e-07 <= eps_0 R-bar = 2.7370e-05: True
+(d) independent recount: 32 of 3253 exhaustive trees (depth-2 cone and depth-3 with <= 4 noise sites) contain an arrow traversed upward from the root
+(e) simulation at eps = 7e-6, 300x300 torus, levels 200-400: mean density of ones 8.333e-06 (bound 3e-5; noise alone 7e-6)
+real 4.69
+user 4.67
+sys 0.01

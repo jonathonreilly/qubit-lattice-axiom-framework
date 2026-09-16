@@ -87,3 +87,12 @@ Block 25 opened for review (independent PR against main): block 12's S6 closed �
 2. **The band between block 08's region and block 25's** (uniqueness at moderate coupling; the formation law's transition) — hard.
 3. **The kernel's normalization on `Z³`** — hard.
 4. **Value-dependent order laws (block 16, X4)** — hard; unchanged.
+
+## Refresh at block 25 sharpening (2026-09-16)
+
+Item 1 of the previous refresh executed on the open PR: `ε_0` from `1/(2·96⁴)` to `7/10⁶` (factor `1189`), `p_0` at `(p, 1, 2)` from `3.4·10⁸` to `285718`. The count is now near the edge of its own domain (`7.4·10^{−6}`); what remains of the route's slack is the arrow budget `3(n − 1)` (executed trees never exceed `12/7`) and the union bound itself. Ranked next:
+
+1. **The arrow budget** — prove `arrows ≤ 2(n − 1)` or a per-refinement accounting that charges each kept pole to a span increment; would move `ε_0` to about `3·10^{−5}` — medium, uncertain (a refinement with three kept poles and all excuses in one cluster raises the span by exactly one).
+2. **The band between block 08's region and block 25's** — hard.
+3. **The kernel's normalization on `Z³`** — hard.
+4. **Value-dependent order laws (block 16, X4)** — hard; unchanged.

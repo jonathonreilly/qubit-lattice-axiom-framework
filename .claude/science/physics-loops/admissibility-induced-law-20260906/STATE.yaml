@@ -116,3 +116,11 @@ source_review_correction:
 # strongest_unresolved_proof_obligation: "the true threshold (the route's constant is crude; simulation near 0.05); the band between block 08's uniqueness region and this one"
 # next_exact_action: "queue refresh 2026-09-16 (block 25 opening): sharpen the threshold; the intermediate band; normalization; X4"
 # lock: held (owner: keep going on the highest-leverage science)
+# ---------------------------------------------------------------- block 25 sharpened (2026-09-16, same PR #8168)
+# sharpening: "T5 count replaced: lift to the typed regular tree; marks read off the tree; <= 1 arrow to a predecessor per node; forks = n-1, arrows <= 3(n-1); exact rational super-solution at (91/1000, 1000/107653): sum_T t^a s^f < 391/100"
+# new_constants: "P(eta_x = 1) <= (391/100) eps <= 3/10^5 for eps <= 7/10^6; p_0 = 285718 at (p,1,2), 142861 at (p,1,1), 571436 at (p,2,4), 428576 at (p,1,3); threshold factor 1189 over the first count"
+# refuted_on_the_way: "every arrow points away from the root (538 of 4308 executed trees have a kept pole reached from below); dropped, both directions kept in the count"
+# final_certificate: "TOTAL: PASS=22 FAIL=0; 13 mutations (certificate_wrong replaces series_constant_wrong), census 13/13 in-family; sharpening refuter consistent on five routes; cache re-pinned; gates re-run"
+# strongest_unresolved_proof_obligation: "the true threshold (the route's edge is near 7.4e-6 for this accounting; the arrow budget 3(n-1) against 12/7 observed; simulation near 0.05); the band between block 08's uniqueness region and this one"
+# next_exact_action: "queue refresh 2026-09-16 (block 25 sharpened): the arrow budget; the intermediate band; normalization; X4"
+# lock: held (owner: keep going on the highest-leverage science)

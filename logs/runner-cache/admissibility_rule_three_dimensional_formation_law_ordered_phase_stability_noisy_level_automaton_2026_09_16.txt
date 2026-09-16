@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py
-runner_sha256: 5e5c27022f2c214616b2d38d79620af28563c7f646ac871ada6fbf82a1b1b14c
-input_fingerprint_sha256: 75dcb54515c323cd339c43e5908a8cf1420c3566a281db08b9ed088a658aea84
+runner_sha256: 9c0100b33b9ed876b101113e2b45dfa0d9257864cfacd01ca7c1b2a91de15dd3
+input_fingerprint_sha256: 655a1a093cfa91b429ce44c8c556a5220bc3ee08cc76440e2c2f7a19dd3b3fcf
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.06
+elapsed_sec: 1.44
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -24,12 +24,12 @@ PASS: B3 T0(a): epsilon(p, q, r) as the exact maximum over all triples with at l
 PASS: B4 T0(c): at every triple with at least two entries a, 1 - K(a | triple) <= epsilon(p, q, r), at three couplings (the coupling's per-site inequality)
 PASS: C1 T2(a): M_k(x - e_j) - M_k(x) = 1/3 - delta_jk; sum_k M_k = 0 on the depth-3 cone; every pair of indices contains one differing from each k
 PASS: C2 T2(b): every fork pair has Size = 1 and every assignment of its two points as poles has Span <= 1
-PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and forks through 1-sites rooted at x, its marked nodes are noise sites, the spanning identity holds at every refinement, and edges <= 4(n-1) (largest ratio 2)
+PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and forks through 1-sites rooted at x, its marked nodes are noise sites, the spanning identity holds at every refinement, edges <= 4(n-1) (largest ratio 2), every node has at most one arrow to a predecessor, the nodes without one are exactly the noise nodes, forks = n-1 and arrows <= 3(n-1)
 PASS: D2 T4: every depth-3 configuration with at most four noise sites (2321 explained) and 1200 random cones of depth 3-7 (907 explained) pass the same checks (largest ratios 7/3, 11/4)
 PASS: D3 T4: line seeds (n + 1 noise sites n levels down, n <= 8) and triangle seeds (n <= 6) are explained with the bound (largest ratio 2); the spanning identity sum_X Span(X) = sum_k M_k(u_k) holds at every refinement of the depth-4 triangle seed
-PASS: D4 T5: the numbers of subtrees with 1, 2, 3 edges containing the origin are [12, 198, 3688], each at most 48^k (the depth-first encoding bound)
-PASS: E1 T6: sum_{k<=K} 2 96^k = 2(96^(K+1) - 1)/95 <= (192/95) 96^K; the partial sums of the series in n equal (192/95) eps (1 - rho^N)/(1 - rho) and stay below (192/95) eps/(1 - rho), rho = 96^4 eps, exactly; at epsilon_0 = 1/(2 96^4) the bound is 1/42024960 < 1/2
-PASS: E2 T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 are 339738628 at (1,2), 169869315 at (1,1), 679477255 at (2,4), 509607941 at (1,3), each with epsilon(p_0 - 1) > epsilon_0
+PASS: D4 T5: the subtrees of G containing the origin with at most four edges and at most one arrow to a predecessor at each node number 66103; their lifts to the typed tree are pairwise distinct; by (arrows, forks) each count is at most the recursion's coefficient (equal for at most two edges, below it for every pair with four edges); the coefficients with at most three edges agree with a direct enumeration of admissible subtrees of the typed tree
+PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exact inequalities; entries >= 1; t <= 1), R-bar = (1 + t U-bar)^3 (1 + 3 t D-bar)(1 + s F-bar)^6 < 391/100, t^3 s = 7/10^6 = epsilon_0, epsilon_0 R-bar <= 3/10^5 ((391/100) epsilon_0 = 2737/10^8), and the recursion's partial sum over at most five edges stays below R-bar
+PASS: E2 T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 = 7/10^6 are 285718 at (1,2), 142861 at (1,1), 571436 at (2,4), 428576 at (1,3), each with epsilon(p_0 - 1) > epsilon_0
 PASS: E3 T7(c): on a three-state chain the Cesaro average satisfies mu_T(Pf) - mu_T(f) = (lambda_{T+1}(f) - lambda_1(f))/T, bounded by 2||f||/T; and 1 - delta > delta for the distinctness
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
@@ -37,9 +37,9 @@ PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
 PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record; Feller, Bernoulli and Markov name standard objects (0 offenders)
 per_element: executed — the kernel's closed forms; the increments 1/3 - delta_jk; the fork size; the derivatives of the deviations
 per_site: executed — the coupling inequality at all 216 triples with two entries a; the exact least couplings p_0 at four weight pairs
-per_mode: executed — the refinement on all 1024 depth-2 and all 2321 explained depth-3 configurations with at most four noise sites, on 1200 random cones and on structured seeds; the subtree counts 12, 198, 3688
-per_block: executed — the series constant 192/95; the bound 1/42024960 at epsilon_0; the Cesaro identity on a finite chain
-lattice_wide: T4-T7 proved for every epsilon <= 1/(2 96^4) and every coupling with epsilon(p, q, r) <= epsilon_0; the true threshold not claimed
+per_mode: executed — the refinement on all 1024 depth-2 and all 2321 explained depth-3 configurations with at most four noise sites, on 1200 random cones and on structured seeds; the 66103 trees with at most four edges against the recursion's coefficients
+per_block: executed — the super-solution certificate at (91/1000, 1000/107653); the bound (391/100) epsilon <= 3/10^5 at epsilon_0 = 7/10^6; the Cesaro identity on a finite chain
+lattice_wide: T4-T7 proved for every epsilon <= 7/10^6 and every coupling with epsilon(p, q, r) <= epsilon_0; the true threshold not claimed
 PASS: G1 the five N5 resolution lines are printed
 TOTAL: PASS=22 FAIL=0
 

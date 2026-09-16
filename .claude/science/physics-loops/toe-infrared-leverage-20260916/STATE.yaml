@@ -1,0 +1,15 @@
+{
+  "slug": "toe-infrared-leverage-20260916",
+  "status": "active_personal_discovery",
+  "updated_utc": "2026-09-16T04:02:12.030826+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "branch": "physics-loop/toe-infrared-leverage-20260916",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "previous_milestone": "3210315c2cddeb5b0a9e32c9b35e30c196eaa65a",
+  "previous_pr": 8160,
+  "agents": "none; user explicitly requires personal execution",
+  "active_target": "Challenge global Gauss-dressing proof and pursue actual transverse leakage beyond variational compression",
+  "claim_status": "author theorem proposal; independent check pending",
+  "next_action": "Cold-read BLOCK01 final proposal, challenge topology/cluster constants and mutate decisive finite checks; then derive a photon-excitation extension or identify the first nontrivial dynamic residual."
+}

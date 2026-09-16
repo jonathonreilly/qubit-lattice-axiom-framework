@@ -1,0 +1,19 @@
+gram_factor REJECTED
+midpoint_mean_missing REJECTED
+final_mean_missing REJECTED
+raising_vertex_sign REJECTED
+vertex_gram_normalization REJECTED
+vertex_root_two REJECTED
+transverse_projector REJECTED
+inverse_energy_power REJECTED
+jacobian_power REJECTED
+quartic_coefficient REJECTED
+quadratic_coefficient REJECTED
+logarithmic_coefficient REJECTED
+paired_factor REJECTED
+photon_only_denominator REJECTED
+current_midpoint_phase REJECTED
+current_reverse_sign REJECTED
+pauli_projector_factor REJECTED
+photon_normalization REJECTED
+All18 actual changes rejected at assertions. A particle-hole basis phase is not tested by a squared norm.

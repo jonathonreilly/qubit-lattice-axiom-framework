@@ -1,0 +1,49 @@
+{
+  "source_sha256": "e58d78b156269e37509c4ad57655043646df89718cae5379bbfe59d1ca9b09a3",
+  "helper_sha256": "a6605ca12cc6b29d29dddf7d413218823f758ff4791537f23edd3a1783fed2a6",
+  "rank_five_charge_sector_checks": [
+    {
+      "g": 0.8,
+      "cutoff": 8,
+      "gram_formula_error": 1.5833123512042286e-14,
+      "final_gram_formula_error": 1.5716992269803187e-14,
+      "orthogonality_error": 2.951620768104597e-16,
+      "orthonormality_error": 9.098221805734117e-15,
+      "one_photon_vertex_formula_error": 7.823429787032434e-16,
+      "leading_vertex_norm": 0.24098294572720028,
+      "compact_vertex_difference": 6.786742235631481e-06,
+      "omitted_affine_means_error": 8.27468125755505e-06,
+      "wrong_vertex_sign_error": 0.4819707152457285,
+      "smallest_raw_gram_eigenvalue": 0.9999786798373944
+    },
+    {
+      "g": 1.2,
+      "cutoff": 6,
+      "gram_formula_error": 4.144185118997134e-15,
+      "final_gram_formula_error": 3.554582165649832e-15,
+      "orthogonality_error": 4.381971420874308e-16,
+      "orthonormality_error": 3.116215692390225e-15,
+      "one_photon_vertex_formula_error": 4.646469054731874e-16,
+      "leading_vertex_norm": 0.3477844871472784,
+      "compact_vertex_difference": 0.010080828260738457,
+      "omitted_affine_means_error": 0.01237160961489668,
+      "wrong_vertex_sign_error": 0.702476401650733,
+      "smallest_raw_gram_eigenvalue": 0.9870971608281599
+    },
+    {
+      "g": 1.6,
+      "cutoff": 6,
+      "gram_formula_error": 8.700024298879037e-15,
+      "final_gram_formula_error": 3.0802899726585885e-14,
+      "orthogonality_error": 3.128668291943534e-16,
+      "orthonormality_error": 2.2864661631071844e-15,
+      "one_photon_vertex_formula_error": 6.585737798272913e-16,
+      "leading_vertex_norm": 0.4393135889498481,
+      "compact_vertex_difference": 0.09055579591532541,
+      "omitted_affine_means_error": 0.10801955903885603,
+      "wrong_vertex_sign_error": 0.943467923455183,
+      "smallest_raw_gram_eigenvalue": 0.937972636964754
+    }
+  ],
+  "seconds": 1.979395866394043
+}

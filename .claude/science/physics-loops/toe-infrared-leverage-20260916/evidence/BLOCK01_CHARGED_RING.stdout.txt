@@ -1,0 +1,66 @@
+{
+  "source_sha256": "b5280dd96b7f65c8537c0a5f64ef4b70aa050b7ec0eb4ae28a6c83313bab501e",
+  "charged_ring": [
+    {
+      "g": 0.3,
+      "cutoff": 37,
+      "dimension": 2700,
+      "isometry_error": 1.3322676295501878e-15,
+      "exact_compression_error": 2.0971299467069714e-15,
+      "compact_remainder_norm": 1.917396163211819e-15,
+      "exponential_scale": 1.709613268059757e-23,
+      "leakage_operator_norm": 0.22367405723831082,
+      "true_ground_energy": -1.9184728447951744,
+      "variational_ground_energy": -1.9064957360887553,
+      "variational_excess": 0.011977108706419104,
+      "max_affine_transverse_mean": 5.37090848341617e-23,
+      "tail_mass_outer_three": 1.025810818722666e-91
+    },
+    {
+      "g": 0.5,
+      "cutoff": 23,
+      "dimension": 1692,
+      "isometry_error": 7.691850745534255e-16,
+      "exact_compression_error": 1.3703785768443539e-15,
+      "compact_remainder_norm": 6.796556959196408e-08,
+      "exponential_scale": 1.0701151964296972e-08,
+      "leakage_operator_norm": 0.3813612157728416,
+      "true_ground_energy": -1.8884915217715628,
+      "variational_ground_energy": -1.8523181355691687,
+      "variational_excess": 0.036173386202394076,
+      "max_affine_transverse_mean": 3.361866039598335e-08,
+      "tail_mass_outer_three": 5.520948339521539e-88
+    },
+    {
+      "g": 0.8,
+      "cutoff": 16,
+      "dimension": 1188,
+      "isometry_error": 1.3322676295501878e-15,
+      "exact_compression_error": 1.3072226910783106e-15,
+      "compact_remainder_norm": 0.004925999503839171,
+      "exponential_scale": 0.0007000622238041694,
+      "leakage_operator_norm": 0.6342878997243117,
+      "true_ground_energy": -1.8455713376997847,
+      "variational_ground_energy": -1.7237773442095095,
+      "variational_excess": 0.1217939934902752,
+      "max_affine_transverse_mean": 0.0021993103393590898,
+      "tail_mass_outer_three": 7.212050099972184e-95
+    },
+    {
+      "g": 1.1,
+      "cutoff": 13,
+      "dimension": 972,
+      "isometry_error": 1.0053497077208614e-15,
+      "exact_compression_error": 8.226995222060105e-16,
+      "compact_remainder_norm": 0.11403554113968462,
+      "exponential_scale": 0.013996201806952607,
+      "leakage_operator_norm": 0.896824238788833,
+      "true_ground_energy": -1.9149657214643774,
+      "variational_ground_energy": -1.5798731806496231,
+      "variational_excess": 0.33509254081475426,
+      "max_affine_transverse_mean": 0.04397037200877992,
+      "tail_mass_outer_three": 6.754633411064712e-106
+    }
+  ],
+  "seconds": 0.2590148448944092
+}

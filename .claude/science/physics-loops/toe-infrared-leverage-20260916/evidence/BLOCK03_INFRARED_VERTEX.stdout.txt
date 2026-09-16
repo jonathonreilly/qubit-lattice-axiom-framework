@@ -1,0 +1,85 @@
+{
+  "source_sha256": "b8df5e5fd2888a72f11b19d47cd5266c547651aed94cabd5b90a7d864ed5c2ed",
+  "periodic_bulk_sums": [
+    {
+      "N": 16,
+      "local_vertex_norm_squared": 0.302388430474843,
+      "inverse_half_energy_norm_squared": 0.15908687907001226,
+      "inverse_energy_norm_squared": 0.1114963495463802
+    },
+    {
+      "N": 32,
+      "local_vertex_norm_squared": 0.3032688143034452,
+      "inverse_half_energy_norm_squared": 0.16378436745767228,
+      "inverse_energy_norm_squared": 0.13491638746190723
+    },
+    {
+      "N": 64,
+      "local_vertex_norm_squared": 0.30348920986397093,
+      "inverse_half_energy_norm_squared": 0.16613552259586986,
+      "inverse_energy_norm_squared": 0.1583292566116711
+    },
+    {
+      "N": 128,
+      "local_vertex_norm_squared": 0.303544327073575,
+      "inverse_half_energy_norm_squared": 0.1673113902206615,
+      "inverse_energy_norm_squared": 0.18174011155001163
+    },
+    {
+      "N": 256,
+      "local_vertex_norm_squared": 0.3035581075147912,
+      "inverse_half_energy_norm_squared": 0.16789935994549302,
+      "inverse_energy_norm_squared": 0.205150449376574
+    }
+  ],
+  "inverse_energy_logarithmic_slopes": [
+    0.03378797255816235,
+    0.033777630215346535,
+    0.03377472432251478,
+    0.03377397828791686
+  ],
+  "logarithmic_coefficient_target": 0.03377372788077926,
+  "sharp_low_frequency_quadratures": [
+    {
+      "lambda": 0.5,
+      "spectral_mass": 0.004289236562915104,
+      "quadrature_change": 4.336808689942018e-18,
+      "quadratic_coefficient": 0.017156946251660418,
+      "quadratic_coefficient_target": 0.01688686394038963,
+      "positive_correction": 6.752057781769707e-05,
+      "rigorous_correction_upper": 0.0005277144981371759,
+      "quartic_coefficient_ratio": 1.0235925381022302
+    },
+    {
+      "lambda": 0.25,
+      "spectral_mass": 0.0010595755555886399,
+      "quadrature_change": 1.3010426069826053e-18,
+      "quadratic_coefficient": 0.016953208889418238,
+      "quadratic_coefficient_target": 0.01688686394038963,
+      "positive_correction": 4.146559314288038e-06,
+      "rigorous_correction_upper": 3.2982156133573495e-05,
+      "quartic_coefficient_ratio": 1.005770343817428
+    },
+    {
+      "lambda": 0.125,
+      "spectral_mass": 0.00026411529188541166,
+      "quadrature_change": 2.710505431213761e-19,
+      "quadratic_coefficient": 0.016903378680666346,
+      "quadratic_coefficient_target": 0.01688686394038963,
+      "positive_correction": 2.58042816823705e-07,
+      "rigorous_correction_upper": 2.0613847583483434e-06,
+      "quartic_coefficient_ratio": 1.0014348491853926
+    },
+    {
+      "lambda": 0.0625,
+      "spectral_mass": 6.598042260475175e-05,
+      "quadrature_change": 5.421010862427522e-20,
+      "quadratic_coefficient": 0.016890988186816447,
+      "quadratic_coefficient_target": 0.01688686394038963,
+      "positive_correction": 1.6110337604756386e-08,
+      "rigorous_correction_upper": 1.2883654739677146e-07,
+      "quartic_coefficient_ratio": 1.000358232521844
+    }
+  ],
+  "seconds": 0.2152271270751953
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-16T04:02:12.030826+00:00",
+  "status": "personal evidence only",
+  "files": {
+    "evidence/BLOCK01_CHARGED_RING.stdout.txt": "3dffd1bd7b62d4d74d0bcdb6938850b07d1a3b832f218de87831de87718117e2",
+    "evidence/block01_affine_theta_check.py": "a6605ca12cc6b29d29dddf7d413218823f758ff4791537f23edd3a1783fed2a6",
+    "evidence/BLOCK01_AFFINE_THETA.stdout.txt": "f3894a979798aea7d2485a0899dc8fb2b04085fb1d1aabf0263ea4776639830e",
+    "evidence/block01_charged_ring_compression.py": "b5280dd96b7f65c8537c0a5f64ef4b70aa050b7ec0eb4ae28a6c83313bab501e",
+    "evidence/BLOCK01_CHARGED_RING.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/BLOCK01_AFFINE_THETA.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "missing": [
+    "cold complete proof review",
+    "mutation checks",
+    "independent review",
+    "actual-state or dynamical reduction theorem"
+  ]
+}

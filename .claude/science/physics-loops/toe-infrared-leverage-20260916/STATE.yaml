@@ -1,0 +1,17 @@
+{
+  "slug": "toe-infrared-leverage-20260916",
+  "status": "draft_milestone_ready_for_preservation",
+  "updated_utc": "2026-09-16T04:39:57.789308+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "branch": "physics-loop/toe-infrared-leverage-20260916",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "previous_milestone": "3210315c2cddeb5b0a9e32c9b35e30c196eaa65a",
+  "previous_pr": 8160,
+  "agents": "none; user explicitly requires personal execution",
+  "active_target": "Four-note Gauss-dressing and coupled-reference milestone",
+  "claim_status": "four author proposals; five finite programs; thirty actual rejected source mutations; no independent review",
+  "next_action": "Create draft PR and verify exact remote head; preserve recovery externally; release/remove this checkout. Continue personally with the continuous-time compact-gauge bridge, checking the transfer law before transporting any phase theorem.",
+  "actual_current_surface_status": "conditional-support",
+  "strongest_unresolved_proof_obligation": "Uniform actual-state and dynamical control at fixed nonzero coupling"
+}

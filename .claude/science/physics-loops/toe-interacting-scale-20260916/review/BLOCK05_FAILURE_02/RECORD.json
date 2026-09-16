@@ -1,0 +1,10 @@
+{
+  "failure": "AssertionError: charged ground cutoff-tail check",
+  "status": "Preserved failure resolved by enlarging the basis from ceil(6/g) to ceil(8/g); the 1e-16 boundary threshold is unchanged.",
+  "files": {
+    "block05_generator_propagation_check.py": "477678cf5c30afab804d2984bc51b84dd15337d9f898b4283428e70851292f9c",
+    "block05_generator_propagation_check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "block05_generator_propagation_check.stderr": "90a177400badf45061a6a4985598321f0b858ec01a9f7a7ebb9bab86a065f010"
+  },
+  "final_boundary_mass_at_g_0_6": 4.159846155393039e-30
+}

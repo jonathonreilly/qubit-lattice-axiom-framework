@@ -82,3 +82,16 @@ vectors, avoiding the invalid inference from form convergence alone. Next
 check the current sign, derive the l1 kernel bound for exp(-it Omega), and
 prove electric two-point propagation. Magnetic recovery may use controlled
 approximations of Mv, not an assumed l1 Riesz bound. Deadline13:45:03 UTC.
+
+02:58 UTC: Block05 is now written and personally reviewed. It proves the
+proposed uniform finite-time gauge two-point limit by the exact electric
+equation and a norm generator residual; a new H2/l1 kernel argument controls
+evolved smears. Magnetic two-point functions use Fejer approximation in the
+Omega-weighted norm, not a false l1 M estimate. The charged-ring checker
+retains two failures and their corrections (scalar extraction and flux-basis
+refinement), with unchanged thresholds and a stable dynamic comparison.
+Next attempt bounded matter dynamics via the rooted CAR commutator route
+described at the end of BLOCK05_WORKING_REAL_TIME_ELECTRIC.md. After that
+coherent bridge, prepare one milestone PR and reassess fixed-g leverage.
+Do not extend this branch indefinitely with weak-g corollaries. Continue
+personally through13:45:03 UTC and obey checkout teardown after publication.

@@ -31,5 +31,14 @@ all fixed finite words of gauge exponentials and neutral finite-path matter
 polynomials. It proves the proposed equal-time product of the Gaussian gauge
 state and pure free filled-band Slater state along arbitrary joint g0,Linf
 sequences. The positivity, path independence, projection covariance and
-factorization steps are explicit. No real-time or fixed-g conclusion follows;
-Block05 is a separate unfinished route.
+factorization steps are explicit. No real-time or fixed-g conclusion follows
+from Block04 itself; the separate Block05 result is scoped below.
+
+Block05: the real-time gauge TWO-POINT route has a complete
+provisional author proof and personal review. It derives second moments
+separately, proves a norm generator residual using the exact electric
+equation, and controls finite-time propagation by an l1 bound for Omega.
+Magnetic fields follow by bounded Fourier/L2 approximation without an l1
+claim for M. All limits still send g->0 jointly with L->infinity and keep
+local probes and time intervals fixed. Full nonlinear gauge dynamics,
+fixed-g infrared behavior and axiomatic law selection are not established.

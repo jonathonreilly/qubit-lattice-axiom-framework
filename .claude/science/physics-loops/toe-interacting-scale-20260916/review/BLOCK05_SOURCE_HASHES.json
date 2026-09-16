@@ -1,0 +1,22 @@
+{
+  "scope": "Provisional Block05 author proof, challenge and retained failures",
+  "files": {
+    "evidence/block05_generator_propagation_check.json": "2f4b79b7439b558cb53c1174f97b180f4afc8f099ab6a1c319012ac1f74e1eae",
+    "evidence/block05_generator_propagation_check.py": "b624860cd648a43cadebced52466505edbecaf875e6af01c54ed5f03a7e43209",
+    "evidence/block05_generator_propagation_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block05_generator_propagation_check.txt": "4d2794daf699d6c986d95866a8a306f36fb9adb5399ef925fb84106b512bb158",
+    "notes/BLOCK05_JOINT_REAL_TIME_GAUGE_TWO_POINT.md": "9daefb0dea615c5c3a821ad092380f1da4883ef6f8f715cf2e720857d63ea459",
+    "notes/BLOCK05_WORKING_REAL_TIME_ELECTRIC.md": "eb9c392b58ceb8a736bd579df05dfaa5edb56444d2d5179b93fd67ea0b4c580b",
+    "review/BLOCK05_FAILURE_01/RECORD.json": "4351ba5e7e8c8fc2b1832381b00c3aa1145e64dc5c4bfffd06f2829e4eb7c9ff",
+    "review/BLOCK05_FAILURE_01/block05_generator_propagation_check.py": "55783704d68587ae741f86ef8a09a086f16cfa87055c0bb9d2d572bddfab453d",
+    "review/BLOCK05_FAILURE_01/block05_generator_propagation_check.stderr": "3b7cc6a6b70199cf0140853ead1ef3da965f01782caa4146ff71ee17d7a81155",
+    "review/BLOCK05_FAILURE_01/block05_generator_propagation_check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review/BLOCK05_FAILURE_02/DIAGNOSTIC.json": "5bd72345246ad591c3da8f46c46b514f1c65945a809cfe22fbfd06d56172ead5",
+    "review/BLOCK05_FAILURE_02/RECORD.json": "f142970e74e5478851922571e99fd0d9a23e2255493941c44070fc8a188d45ee",
+    "review/BLOCK05_FAILURE_02/block05_generator_propagation_check.py": "477678cf5c30afab804d2984bc51b84dd15337d9f898b4283428e70851292f9c",
+    "review/BLOCK05_FAILURE_02/block05_generator_propagation_check.stderr": "90a177400badf45061a6a4985598321f0b858ec01a9f7a7ebb9bab86a065f010",
+    "review/BLOCK05_FAILURE_02/block05_generator_propagation_check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review/BLOCK05_PERSONAL_REVIEW.md": "fa423c0098d25e4f2db5a1694b7b48ea7fd4f2d254e2526c9f7da7ab124a9142",
+    "review/BLOCK05_VOCAB.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  }
+}

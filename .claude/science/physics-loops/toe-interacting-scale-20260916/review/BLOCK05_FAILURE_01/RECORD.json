@@ -1,0 +1,10 @@
+{
+  "failure": "TypeError: only 0-dimensional arrays can be converted to Python scalars",
+  "cause": "S@u has shape (1,), while the installed NumPy requires scalar extraction before float().",
+  "disposition": "Fix explicit [0] extraction; no mathematical check, input or threshold is changed.",
+  "files": {
+    "block05_generator_propagation_check.py": "55783704d68587ae741f86ef8a09a086f16cfa87055c0bb9d2d572bddfab453d",
+    "block05_generator_propagation_check.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "block05_generator_propagation_check.stderr": "3b7cc6a6b70199cf0140853ead1ef3da965f01782caa4146ff71ee17d7a81155"
+  }
+}

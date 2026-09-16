@@ -33,3 +33,12 @@ next_trace_action: "Complete the local observable algebra and matter-state ident
 The new proposed mechanism controls all joint sequences for fixed local gauge
 characteristic probes in the specified model. It still weakens the microscopic
 coupling and does not answer the fixed-g long-distance phase question.
+
+## Blocks04--05
+
+The proposed joint limit now includes the neutral finite-path matter state,
+gauge/matter equal-time factorization, and finite-time gauge two-point
+propagation. The new propagation obligation is handled by a norm generator
+residual rather than energy-form convergence. This completes more of the
+same conditional weak-g bridge; it does not close the fixed-positive-g phase
+or supply the Hamiltonian, weights, clock or state from axioms.

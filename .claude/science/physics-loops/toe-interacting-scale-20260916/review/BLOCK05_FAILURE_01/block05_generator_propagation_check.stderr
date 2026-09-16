@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-interacting-scale-20260916/.claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block05_generator_propagation_check.py", line 230, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-interacting-scale-20260916/.claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block05_generator_propagation_check.py", line 216, in main
+    row=charged_ring(g)
+  File "/Users/jonreilly/Documents/Codex/toe-interacting-scale-20260916/.claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block05_generator_propagation_check.py", line 105, in charged_ring
+    rhs = 1j*float(S@u)*Z-1j*g*current
+             ~~~~~^^^^^
+TypeError: only 0-dimensional arrays can be converted to Python scalars

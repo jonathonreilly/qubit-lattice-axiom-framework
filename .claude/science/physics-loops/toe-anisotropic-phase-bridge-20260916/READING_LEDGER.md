@@ -23,3 +23,7 @@ At the pinned main revision, the complete scientific arguments in PRECONDITIONED
 - NIST DLMF10.27.2 and10.27.5 read at https://dlmf.nist.gov/10.27 ; these give the Bessel connection and zero-order derivative used in the infinite-mean check.
 
 All downloaded PDFs and extracts are outside the worktree under the campaign-recovery/literature directory. Sources above were used as mathematical machinery or applicability checks, not as additional physical axioms. Focused searches did not find a ready checked anisotropic Hamiltonian theorem; that is a search limit, not a statement that none exists. Borgs-Seiler's full primary proof remains unavailable in this read set despite primary abstract/metadata access.
+
+## Short-time bridge covariance source
+
+Carlen, Cordero-Erausquin and Lieb, arXiv1106.0709v2 (2011), PDF1-8 read including the covariance bound and gradient commutator proof in sections1-2. External PDF SHA256f51623643f84a9b412ee9a4b098f177f7952b3ff38ec8d067a99a1b35ab7d4cc. Applied only with the explicit finite-mode positive Hessian; cutoff passage is supplied in BLOCK08. No whole-paper read or phase theorem import is claimed.

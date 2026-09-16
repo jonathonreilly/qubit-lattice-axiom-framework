@@ -43,7 +43,14 @@ an expectation reconstructed from these few sample configurations.
 ## Block04 checks
 
 `block04_local_heat_and_orthogonality_check.py` passed on its first recorded
-run. A two-angle,81-dimensional finite-difference Hamiltonian checks both
+run. That exact source is preserved as `.ATTEMPT1.py`. Attempt2 adds the
+principal cube-charge open-set check and also passes. Its source SHA256 is
+`b44b81c44689f4833b7b2d8f9f854af2746eda96895052a6db3ff7833398e5b4`.
+The4096 corner configurations all have principal charge1 and raw charge0
+within4e-16; the event floor follows from the analytic neighborhood and local
+density argument, not from treating these corners as random samples.
+
+ A two-angle,81-dimensional finite-difference Hamiltonian checks both
 sides of the positive-kernel sandwich directly with matrix exponentials,
 and checks the same inequalities on its positive ground vector. This
 structural comparison model is declared explicitly; it is not silently used

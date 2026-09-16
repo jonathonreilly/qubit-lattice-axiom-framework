@@ -1,0 +1,118 @@
+{
+  "scope": "finite two-angle electric Galerkin checks and exact covering combinatorics",
+  "connected": [
+    {
+      "g": 0.55,
+      "cutoff": 5,
+      "dimension": 121,
+      "cosine_means": [
+        0.7782911024041702,
+        0.7432601761429277,
+        0.6337828133671859,
+        0.5328902669750684,
+        0.24073926471828655
+      ],
+      "min_connected_cosine_by_tau": [
+        0.004863758307730157,
+        0.004167509072583883,
+        0.001759056286291874,
+        0.0002949051741554041
+      ],
+      "min_cosine_coupling_derivative": 0.006775546750629625,
+      "min_electric_square_derivative": 0.026800253203612016,
+      "cosine_finite_difference_error": 4.564550126762157e-11,
+      "electric_square_finite_difference_error": 3.4406366644645914e-12,
+      "lifted_kernel_compression_min_eigenvalue": -1.146903654912216e-16,
+      "lifted_kernel_symmetry_error": 3.455402225285772e-15
+    },
+    {
+      "g": 0.55,
+      "cutoff": 7,
+      "dimension": 225,
+      "cosine_means": [
+        0.7782911036245422,
+        0.743260176338873,
+        0.6337828147242711,
+        0.5328902679901001,
+        0.24073927371962978
+      ],
+      "min_connected_cosine_by_tau": [
+        0.004863758434231924,
+        0.004167509195282279,
+        0.0017590563647609237,
+        0.00029490519126391327
+      ],
+      "min_cosine_coupling_derivative": 0.006775547031142814,
+      "min_electric_square_derivative": 0.02680025950201038,
+      "cosine_finite_difference_error": 6.480474490366817e-11,
+      "electric_square_finite_difference_error": 4.412720189250763e-12,
+      "lifted_kernel_compression_min_eigenvalue": -1.2261638274205679e-16,
+      "lifted_kernel_symmetry_error": 1.909201418966267e-15,
+      "cutoff_change_cosine_means": 9.001343226344716e-09
+    },
+    {
+      "g": 1.1,
+      "cutoff": 5,
+      "dimension": 121,
+      "cosine_means": [
+        0.45760015560183526,
+        0.37338952821446364,
+        0.23494561617947018,
+        0.16410633802629904,
+        0.03266755548462579
+      ],
+      "min_connected_cosine_by_tau": [
+        0.009547291104453261,
+        0.008208452655734493,
+        0.0011318504883368473,
+        1.879836137630923e-05
+      ],
+      "min_cosine_coupling_derivative": 0.01027282014992016,
+      "min_electric_square_derivative": 0.012670215657088138,
+      "cosine_finite_difference_error": 1.241250435768393e-10,
+      "electric_square_finite_difference_error": 2.4212454957650564e-11,
+      "lifted_kernel_compression_min_eigenvalue": -7.394568414644088e-17,
+      "lifted_kernel_symmetry_error": 7.517008712557689e-15
+    },
+    {
+      "g": 1.1,
+      "cutoff": 7,
+      "dimension": 225,
+      "cosine_means": [
+        0.4576001556018409,
+        0.3733895282144678,
+        0.234945616179476,
+        0.16410633802630317,
+        0.03266755548469115
+      ],
+      "min_connected_cosine_by_tau": [
+        0.009547291106339985,
+        0.008208452656246427,
+        0.001131850488344553,
+        1.8798361376452012e-05
+      ],
+      "min_cosine_coupling_derivative": 0.010272820150271684,
+      "min_electric_square_derivative": 0.0126702156571971,
+      "cosine_finite_difference_error": 5.044126227815582e-11,
+      "electric_square_finite_difference_error": 4.436180589539873e-12,
+      "lifted_kernel_compression_min_eigenvalue": -1.0326271500937182e-16,
+      "lifted_kernel_symmetry_error": 4.4222038573260645e-15,
+      "cutoff_change_cosine_means": 6.535744168090218e-14
+    }
+  ],
+  "covering": {
+    "beta": 1.3,
+    "U": 0.7,
+    "original_doubled_trace": 6.904599249147704,
+    "unrestricted_lifted_trace": 13.809198477317775,
+    "parity_restricted_lifted_trace": 6.9045992491477035,
+    "restriction_error": 8.881784197001252e-16,
+    "scope": "free one-angle thermal control; the proof uses ground-state uniqueness"
+  },
+  "negative_coupling_control": {
+    "derivative_cos_theta1_plus_theta2_wrt_J2": -0.09026949956998345,
+    "scope": "negative J1 violates the theorem hypothesis; no physical phase inference"
+  },
+  "source_sha256": "1c65f11cb8e46352c69d23a68de57aa0f9a5679cadded97801d02649698299cb",
+  "seconds": 0.13207006454467773
+}

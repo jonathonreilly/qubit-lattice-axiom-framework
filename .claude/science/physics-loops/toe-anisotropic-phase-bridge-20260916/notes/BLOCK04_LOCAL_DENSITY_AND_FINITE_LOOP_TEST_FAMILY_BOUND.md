@@ -162,3 +162,49 @@ tests can look successful in a small box yet fail to settle arbitrarily long
 wavelengths. The next construction must resolve how extended physical loops
 or a nonlinear phase corrector retain response in the actual fixed-g state.
 The ground-state phase, matter bridge and native model selection remain open.
+
+## 5. A ground-state defect floor after removing the electric cutoff
+
+This is a corollary of (3), not a separate phase obstruction. The current-main
+note `docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md`
+at base `e0ef7cf4633034a8c1e6d57f5812cc4275bf1349` already defines the principal
+cube-charge statistic and proves a floor for its finite-bandwidth angle POVM
+in every state. Its finite-dimensional Fourier argument does not give a
+positive floor after the electric cutoff is removed. The present argument
+instead applies specifically to actual rotor ground states at fixed g.
+
+For a complete elementary cube c, let z be its signed boundary and set
+
+    q_c(theta)=(1/(2pi))sum_(faces p of c) z_p principal(F_p).
+
+Choose raw signed face values (-5pi/3,pi/3,pi/3,pi/3,pi/3,pi/3). Their sum
+vanishes and the cube curl has rank five, so some real link angles realize
+them. Reducing each link angle modulo2pi does not change the principal flux.
+Their signed principal values all equal pi/3, hence q_c=1. Varying each of
+the twelve cube-link angles by less than pi/48 changes each raw face angle
+by less than pi/12. No principal branch changes, so the entire product
+neighborhood still has q_c=1. Its normalized Haar measure is 48^(-12).
+
+The twelve links touch at most48 plaquettes. Applying (3) therefore gives
+the explicit, volume-uniform fixed-g ground-state bound
+
+    Prob(q_c=1)>=48^(-12) exp(-192t/g^2)
+                              (k_min/k_max)^24>0, t>0. (9)
+
+Inversion gives the same result for q_c=-1. These probabilities refer to the
+principal-angle measurement statistic. They are not a density of asymptotic
+monopole particles or a count of unbound worldlines. The bound can be
+extremely small and does not compete with a weak-coupling upper density
+bound. In particular, a dilute-defect Coulomb phase remains compatible.
+
+The finite-region angle marginals have volume-uniform upper and lower
+density bounds by (3). Thus any weak local limit of these marginals inherits
+the bounds, and the branch surfaces have zero measure in that limit. The
+same positive event lower bound survives such a limit. No uniqueness or
+quantum ground-state reconstruction is needed for this marginal statement.
+
+Consequently a proof invoking an *exactly* defect-free principal magnetic
+field at the microscopic cutoff does not apply to this ground state. A
+coarse-grained magnetic conservation law can still emerge if the appropriate
+extended defect correlations are controlled. That is the remaining phase
+task; (9) does not settle it.

@@ -123,39 +123,10 @@ def circle_kernel_bounds():
     return rows
 
 
-
-def principal_cube_event():
-    C=cubic_complex((2,2,2))
-    _,_,Vh=np.linalg.svd(C.T,full_matrices=True)
-    z=np.sign(Vh[-1]).astype(int)
-    assert np.array_equal(C.T@z,np.zeros(12,dtype=int))
-    target=z*np.array([-5*math.pi/3]+[math.pi/3]*5)
-    theta=np.linalg.lstsq(C,target,rcond=None)[0]
-    assert np.linalg.norm(C@theta-target)<1e-14
-    epsilon=math.pi/48
-    corners=np.array(list(itertools.product([-1,1],repeat=12)))
-    angle_corners=theta[None,:]+.999*epsilon*corners
-    raw=angle_corners@C.T
-    principal=(raw+math.pi)%(2*math.pi)-math.pi
-    charge=principal@z/(2*math.pi)
-    assert np.max(abs(charge-1))<2e-14
-    raw_charge=raw@z/(2*math.pi)
-    assert np.max(abs(raw_charge))<2e-14
-    branch_margin=float(np.min(math.pi-abs(principal)))
-    assert branch_margin>0
-    return {'cube_links':12,'corners_checked':len(corners),
-            'signed_raw_center':(z*(C@theta)).tolist(),
-            'charge_one_max_error':float(np.max(abs(charge-1))),
-            'unwrapped_zero_charge_max_error':float(np.max(abs(raw_charge))),
-            'principal_branch_margin_at_corners':branch_margin,
-            'guaranteed_product_neighborhood_Haar_measure':48.**(-12),
-            'scope':'all corner checks challenge the explicit open-set witness; the probability floor uses the analytic local-density bound'}
-
-
 def run():
     start=time.time()
     d={'heat_comparison':heat_comparison(),'geometry':local_geometry_and_orthogonality(),
-       'circle_bounds':circle_kernel_bounds(),'principal_cube_event':principal_cube_event(),
+       'circle_bounds':circle_kernel_bounds(),
        'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
     d['seconds']=time.time()-start
     print(json.dumps(d,indent=2))

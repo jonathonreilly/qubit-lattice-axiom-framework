@@ -9,12 +9,14 @@ planning_revision: 068e916ca37b004757ad3a3c082857a91dc37215
 branch: physics-loop/toe-interacting-scale-20260916
 execution: personal_no_subagents
 checkpoint_minutes: 30
-block: 3
-current_target: simultaneous weak-coupling and large-volume ground limit via positive squares and dressed Slater trial
+block: 5
+current_target: uniform real-time gauge two-point propagation via exact electric equation
 previous_campaign_commit: ccca36e505a4cc5d0cd4735b377c15d69042fc41
 review_status: author_exploration_no_independent_review
-next_step: complete local gauge Weyl algebra and matter correlation/factorization argument
+next_step: prove norm generator residual and volume-uniform l1 propagator bound for electric smears
 block01_status: provisional_bounded_theorem_personally_reviewed
-last_checkpoint_utc: 2026-09-16T02:28:44+00:00
+last_checkpoint_utc: 2026-09-16T02:42:46+00:00
 block02_status: provisional_uniform_energy_theorem_personally_reviewed
 block03_status: provisional_joint_gauge_characteristic_theorem_personally_reviewed
+block04_status: provisional_joint_equal_time_state_theorem_personally_reviewed
+block05_status: active_unproved_exact_electric_equation_route

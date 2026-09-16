@@ -25,3 +25,11 @@ gauge characteristic limit along arbitrary joint g->0,L->infinity sequences.
 The normalized full ground trace and fixed local smears are essential stated
 hypotheses. The rate is not a fixed-g infrared theorem, a claim about growing
 smears, a fermion-correlation result, or a real-time limit.
+
+Block04: provisional author theorem extending the same restricted model to
+all fixed finite words of gauge exponentials and neutral finite-path matter
+polynomials. It proves the proposed equal-time product of the Gaussian gauge
+state and pure free filled-band Slater state along arbitrary joint g0,Linf
+sequences. The positivity, path independence, projection covariance and
+factorization steps are explicit. No real-time or fixed-g conclusion follows;
+Block05 is a separate unfinished route.

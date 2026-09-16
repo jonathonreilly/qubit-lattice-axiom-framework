@@ -1,0 +1,9 @@
+g=0.60: Weyl error=0.0477977, wrong-sign error=0.583474
+g=0.40: Weyl error=0.0215688, wrong-sign error=0.598011
+g=0.25: Weyl error=0.00848626, wrong-sign error=0.605337
+g=0.16: Weyl error=0.00348531, wrong-sign error=0.608151
+L=8: local zero-mode ambiguity=0.25, global norm=1
+L=16: local zero-mode ambiguity=0.125, global norm=1
+L=32: local zero-mode ambiguity=0.0625, global norm=1
+L=64: local zero-mode ambiguity=0.03125, global norm=1
+TOTAL: PASS=46 FAIL=0

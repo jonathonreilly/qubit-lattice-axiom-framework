@@ -1,0 +1,13 @@
+{
+  "scope": "Block04 author sources and evidence only; Block05 is an unfinished route",
+  "files": {
+    "evidence/block04_weyl_zero_mode_check.json": "1ef7bc8173dc9252b7e6a80a4e23b2dcbeb35639493999d0fdeb3592d724b5cf",
+    "evidence/block04_weyl_zero_mode_check.py": "cb24af24828ea6cbabd6bb9692c5dcc1c5145dca5580a49ec6335200e9743df4",
+    "evidence/block04_weyl_zero_mode_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block04_weyl_zero_mode_check.txt": "f66fbfb9f46e83fec7ca596a690951efdf38aaf0418de7cea526eef882863e7c",
+    "notes/BLOCK04_JOINT_GAUGE_AND_MATTER_STATE.md": "887f05749ebad399d0cc922546f7e5354e635e45083a19ddb67bf0518c314004",
+    "notes/BLOCK04_WORKING_MIXED_STATE.md": "73a90e9856be7217b0823c476d0028c8e03aa4911f446804360888e380358f21",
+    "review/BLOCK04_PERSONAL_REVIEW.md": "d828c211adf495f996f9eb65bc097de8a3472cf882fe9ec63c6be5044b5e5343",
+    "review/BLOCK04_VOCAB.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  }
+}

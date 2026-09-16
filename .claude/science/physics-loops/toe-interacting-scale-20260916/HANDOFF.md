@@ -70,3 +70,15 @@ paired output are in evidence/. Both Blocks02--03 received a personal review
 in review/BLOCK02_03_PERSONAL_REVIEW.md. Next complete finite products of gauge
 exponentials and identify the limiting matter state before declaring the
 joint observable milestone. No dynamics or fixed-g conclusion is implicit.
+
+02:42 UTC: Block04 completes the proposed joint equal-time observable state:
+Weyl products, finite-path neutral CAR, translation-invariant filled-band
+covariance, its purity, and gauge/matter factorization. It has a personal
+review and a Weyl/zero-mode discriminator in evidence/. Finite-volume
+zero-mode ambiguity is preserved, not assumed away. The real-time stretch
+is written in BLOCK05_WORKING_REAL_TIME_ELECTRIC.md: the exact electric
+equation gives a potential NORM generator residual on one-field ground
+vectors, avoiding the invalid inference from form convergence alone. Next
+check the current sign, derive the l1 kernel bound for exp(-it Omega), and
+prove electric two-point propagation. Magnetic recovery may use controlled
+approximations of Mv, not an assumed l1 Riesz bound. Deadline13:45:03 UTC.

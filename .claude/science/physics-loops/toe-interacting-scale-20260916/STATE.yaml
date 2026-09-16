@@ -10,14 +10,14 @@ branch: physics-loop/toe-interacting-scale-20260916
 execution: personal_no_subagents
 checkpoint_minutes: 30
 block: 6
-current_target: joint weak-coupling and large-volume bounded matter dynamics via rooted CAR commutators
+current_target: package joint-limit milestone and select next fixed-interaction or native-law target
 previous_campaign_commit: ccca36e505a4cc5d0cd4735b377c15d69042fc41
 review_status: author_exploration_no_independent_review
-next_step: derive rooted CAR electric/hopping residual and control truncated free evolution on fixed balls
+next_step: finish frozen-source validation, open draft milestone PR, preserve and remove checkout, then continue personally
 block01_status: provisional_bounded_theorem_personally_reviewed
-last_checkpoint_utc: 2026-09-16T02:58:24+00:00
+last_checkpoint_utc: 2026-09-16T03:22:58+00:00
 block02_status: provisional_uniform_energy_theorem_personally_reviewed
 block03_status: provisional_joint_gauge_characteristic_theorem_personally_reviewed
 block04_status: provisional_joint_equal_time_state_theorem_personally_reviewed
 block05_status: provisional_joint_real_time_gauge_two_point_theorem_personally_reviewed
-block06_status: active_unproved_rooted_CAR_dynamics_route
+block06_status: provisional_joint_bounded_matter_dynamics_theorem_personally_reviewed

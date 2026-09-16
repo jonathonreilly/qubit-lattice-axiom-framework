@@ -109,7 +109,7 @@
   ],
   "scope": "Author finite algebra and one-rotor challenges, not a charged-volume simulation or independent review.",
   "tolerance": 2e-08,
-  "runner_sha256": "c9689432c14549c8558e69a389943823016ecf4f4e00021cba46d73f7773433e",
-  "geometry_helper_sha256": "01f1eb3bbcd38f185a12aa7071d20c2f29eddb26a61bb732a786f3dc333e8e64",
+  "runner_sha256": "653860a1ca3723b8d7dbfd64cfacca8f9fb7a5105f446b1816473769a1a4a862",
+  "geometry_helper_sha256": "2388f8c57c18e8ea916010e1fb44ddbb6914162392587c3961067e7bfeea0f82",
   "checks": 22
 }

@@ -10,6 +10,9 @@ from scipy import sparse
 from sympy import Matrix, ZZ
 from sympy.matrices.normalforms import smith_normal_form
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = []
+# No external scientific data are read. The source self-hash is an integrity read.
 
 TOL = 3e-9
 out = {}

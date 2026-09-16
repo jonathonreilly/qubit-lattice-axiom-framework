@@ -8,14 +8,20 @@ from pathlib import Path
 import numpy as np
 from scipy import sparse
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = []
+# No external scientific data are read. The source self-hash is an integrity read.
 
 TOL = 2e-10
 results = {}
+checks = 0
 
 
 def must(condition, message):
+    global checks
     if not bool(condition):
         raise AssertionError(message)
+    checks += 1
 
 
 def theta_challenges():
@@ -262,10 +268,11 @@ def main():
     results["scope"] = "Finite author checks only; no independent review or phase proof."
     results["tolerance"] = TOL
     results["runner_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    results["checks"] = checks
     output = Path(__file__).with_suffix(".json")
     output.write_text(json.dumps(results, indent=2)+"\n")
-    print(json.dumps({"checks": list(results)[:-3], "scope": results["scope"],
-                      "output": str(output)}, indent=2))
+    print("Discrete Gaussian, Wilson hopping, wavepacket, compact mode, and spectral challenges completed.")
+    print(f"TOTAL: PASS={checks} FAIL=0")
 
 
 if __name__ == "__main__":

@@ -42,3 +42,11 @@ Magnetic fields follow by bounded Fourier/L2 approximation without an l1
 claim for M. All limits still send g->0 jointly with L->infinity and keep
 local probes and time intervals fixed. Full nonlinear gauge dynamics,
 fixed-g infrared behavior and axiomatic law selection are not established.
+
+Block06: provisional author theorem for finite multi-time words of bounded
+neutral finite-path CAR observables in the same joint limit. The generator
+residual is controlled in ground-vector norm, with weighted free-spreading
+and truncation bounds. The initial state is fixed-number; neutral operators
+that change numbers use the same Hamiltonian on its full Gauss Hilbert
+space. No full nonlinear gauge or arbitrary mixed unbounded multi-time
+claim follows. All six notes remain pending independent mathematical review.

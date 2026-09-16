@@ -7,6 +7,8 @@ All remain provisional pending independent review. The model is exactly
 Block02's supplied quadratic paired Wilson/compact-rotor Hamiltonian, with
 no additional unscaled onsite charge interaction.
 
+Load-bearing proofs in this proposal: [compact-field concentration](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md), [uniform energy](BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md), and [gauge characteristic functions](BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md).
+
 ## 1. Statement
 
 Let g->0 and L->infinity jointly along any sequence. At each finite g,L use

@@ -1,0 +1,12 @@
+{
+  "scope": "Current provisional bounded matter dynamics author sources and evidence",
+  "files": {
+    "evidence/block06_rooted_matter_check.json": "38cdfd73bc07c3d0fcd13556cc179bd3cf41e5a8792f3ed2c61c190b20365110",
+    "evidence/block06_rooted_matter_check.py": "bf9b752270a8437d346849f98c0e0d3cee9486c0f16198380f9f3534884d943e",
+    "evidence/block06_rooted_matter_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block06_rooted_matter_check.txt": "3dd861f463e0ed2ab0d9ecd96115678ca8fc37ab6cc7cde00619b29e142ce2ad",
+    "notes/BLOCK06_JOINT_BOUNDED_MATTER_DYNAMICS.md": "615736c29e556179144bb9c853b2b59abfcf3c7383b1c8f173ab0a609e608517",
+    "notes/BLOCK06_WORKING_BOUNDED_MATTER_DYNAMICS.md": "7d526f8fcace25409176a689cfca752189a2448f11f40ba96eece9df983a9a8c",
+    "review/BLOCK06_PERSONAL_REVIEW.md": "f93450cd83d2a993647ea2514328cdd8583886af35aae7f30c351b49b48b53c9"
+  }
+}

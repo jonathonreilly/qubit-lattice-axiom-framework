@@ -95,3 +95,16 @@ described at the end of BLOCK05_WORKING_REAL_TIME_ELECTRIC.md. After that
 coherent bridge, prepare one milestone PR and reassess fixed-g leverage.
 Do not extend this branch indefinitely with weak-g corollaries. Continue
 personally through13:45:03 UTC and obey checkout teardown after publication.
+
+03:22 UTC milestone: Block06 now provides the proposed bounded neutral
+multi-time matter limit. Rooted CAR commutators, weighted free spreading and
+fixed-radius comparisons remove the finite-box gap and wrapping assumptions.
+The charged-ring source checks the electric quadratic path term, closing
+plaquette loop, and free time sign. Its paired result is in evidence/.
+The README and MILESTONE_PERSONAL_REVIEW organize the complete six-note
+proposal. All active programs now declare timeouts and helper inputs; final
+raw evidence was rerun after that metadata change. Twenty-eight deliberate
+mutations returned nonzero at their intended assertions. No independent
+review, claim registration or audit is being asserted. Complete the manifest,
+commit/push and open one draft milestone PR; then preserve/remove this
+checkout and continue on the next high-value question. Deadline is unchanged.

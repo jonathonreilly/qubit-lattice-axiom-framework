@@ -7,6 +7,8 @@ addresses equal-time gauge characteristic functions. Fixed-g infrared phases,
 fermion correlations, real-time dynamics, finite clocks, and law selection
 are separate questions.
 
+Load-bearing dependencies: the [uniform energy and oscillator-defect estimate](BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md) and [compact-field bound](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md), both proved in this proposal.
+
 ## 1. Statement and normalization
 
 Keep the finite-volume operators P,Z,Q,M,Omega,Omega_p of Block02 and its

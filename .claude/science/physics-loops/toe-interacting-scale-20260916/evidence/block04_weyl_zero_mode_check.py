@@ -11,6 +11,9 @@ from pathlib import Path
 import numpy as np
 from scipy.linalg import eigh_tridiagonal, expm
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = []
+# No external scientific data are read. The source self-hash is an integrity read.
 
 TOL = 2e-8
 checks = 0

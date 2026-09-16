@@ -317,5 +317,6 @@
   },
   "scope": "Finite author checks only; no independent review or phase proof.",
   "tolerance": 2e-10,
-  "runner_sha256": "edcfc22c5a79db9f57987b30446ab33f5d57e55edc9b80dc04b65e5013938db1"
+  "runner_sha256": "3192efa11e00c998c1873006d6a1dd186dbdbb7d0e9d27fab44acd7dc6d26b89",
+  "checks": 62
 }

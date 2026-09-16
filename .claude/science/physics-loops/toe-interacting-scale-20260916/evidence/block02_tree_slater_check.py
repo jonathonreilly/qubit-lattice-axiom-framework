@@ -7,6 +7,9 @@ from pathlib import Path
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = []
+# No external scientific data are read. The source self-hash is an integrity read.
 
 TOL = 2e-9
 report = {}

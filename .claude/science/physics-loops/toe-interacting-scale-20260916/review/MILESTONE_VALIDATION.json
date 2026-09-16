@@ -1,0 +1,19 @@
+{
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "scope": "Focused author checks, not integrated landing or independent audit",
+  "active_source_output_pairs": 7,
+  "source_hashes_match": true,
+  "helper_hashes_match": true,
+  "active_stderr_empty": true,
+  "active_stdout_under_6000_bytes": true,
+  "mutation_expected_nonzero_exits": 28,
+  "mutated_programs_reported_as_successful_science": false,
+  "historical_failures_preserved": true,
+  "python_files_compiled": 11,
+  "source_outside_packet_changed": false,
+  "local_markdown_links_verified": 34,
+  "base_diff_check": "clean",
+  "delta_file_count": 86,
+  "packet_files_excluding_manifest": 85,
+  "link_scan_note": "Scans prose Markdown links, excluding fenced/indented code and inline code; an earlier raw-regex false positive on mathematical [W(w)psi](theta) was corrected."
+}

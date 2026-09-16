@@ -5,6 +5,8 @@ Depends on the supplied model and provisional estimates of Blocks01--02.
 It uses an additional argument for second moments, not merely Block03's
 characteristic convergence. No independent review or audit has occurred.
 
+Load-bearing proofs in this proposal: [compact-field concentration](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md) and [uniform energy/oscillator-defect control](BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md).
+
 ## 1. Domain and result
 
 Use Block02's paired quadratic Wilson/compact-rotor Hamiltonian, fixed

@@ -15,6 +15,9 @@ from scipy import sparse
 from scipy.linalg import expm
 from scipy.sparse.linalg import eigsh, expm_multiply
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = []
+# No external scientific data are read. The source self-hash is an integrity read.
 
 TOL = 3e-8
 checks = 0

@@ -6,6 +6,8 @@ possible simultaneous weak-coupling and large-volume field limit. It does not
 yet assert convergence of field characteristic functions, fermion correlations,
 or real-time dynamics. It does not treat fixed-positive-coupling infrared physics.
 
+Load-bearing dependency: the [uniform compact-field bound](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md), proved in this same proposal.
+
 ## 1. Model, restriction, and proposed result
 
 Use the exact integer charged rotor and normalized full ground-space trace

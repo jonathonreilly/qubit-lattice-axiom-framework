@@ -13,6 +13,12 @@ from scipy.linalg import eigh_tridiagonal, expm
 
 from block02_integer_gaussian_square_check import periodic_complex, psd_functions
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = [
+    ".claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block02_integer_gaussian_square_check.py",
+]
+# Scientific helper: the declared package-local geometry and matrix functions.
+# Integrity reads: this source and the helper source for hashes. No external data.
 
 TOL = 2e-8
 data = {}

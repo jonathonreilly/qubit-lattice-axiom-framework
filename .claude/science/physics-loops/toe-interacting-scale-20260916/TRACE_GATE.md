@@ -25,7 +25,7 @@ surrounding volume. It closes neither the k->0 fixed-g phase nor a particle pole
 trace_class: upstream_support
 target_claim_id: null
 target_blocker_text: "Remove the prescribed order of weak-coupling and large-volume limits for local equal-time gauge fields."
-source_of_blocker_text: prior_campaign_Block22_and_current_user_scale_question
+source_of_blocker_text: handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "Complete the local observable algebra and matter-state identification, then return to the fixed-positive-g infrared remainder."

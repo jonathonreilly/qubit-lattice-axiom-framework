@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py", line 139, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py", line 134, in main
+    circle=circle_checks(),rotors=rotor_checks(),status='PERSONAL_CHECKS_COMPLETED')
+                                  ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py", line 122, in rotor_checks
+    a=rotor_model(g,cuts[0],G,h);b=rotor_model(g,cuts[1],G,h)
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py", line 85, in rotor_model
+    assert abs(inverse_moment-contact)<2e-11
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

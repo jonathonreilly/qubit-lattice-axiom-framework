@@ -1,0 +1,458 @@
+{
+  "elapsed_seconds": 3.607232250040397,
+  "gapped_comparator": [
+    {
+      "beta": 0.8,
+      "cutoff": 18,
+      "g": 0.5,
+      "rows": [
+        {
+          "amplitude_log_mgf": 0.2473888728398631,
+          "copies": 1,
+          "error": 0.008913425775469663,
+          "gaussian_target": 0.25630229861534,
+          "log_mgf": 0.24738887283987032
+        },
+        {
+          "amplitude_log_mgf": 0.2557070687543108,
+          "copies": 16,
+          "error": 0.0005952298613204898,
+          "gaussian_target": 0.25630229861534,
+          "log_mgf": 0.2557070687540195
+        },
+        {
+          "amplitude_log_mgf": 0.2562649343750536,
+          "copies": 256,
+          "error": 3.736423937689137e-05,
+          "gaussian_target": 0.25630229861534,
+          "log_mgf": 0.2562649343759631
+        },
+        {
+          "amplitude_log_mgf": 0.25629996281759304,
+          "copies": 4096,
+          "error": 2.3358195748168775e-06,
+          "gaussian_target": 0.25630229861534,
+          "log_mgf": 0.25629996279576517
+        }
+      ],
+      "single_rotor_gap": 1.8655712164165723,
+      "variance": 0.6328451817662715
+    },
+    {
+      "beta": 0.5,
+      "cutoff": 14,
+      "g": 1.1,
+      "rows": [
+        {
+          "amplitude_log_mgf": 0.03346963553069027,
+          "copies": 1,
+          "error": 0.00027306872912342267,
+          "gaussian_target": 0.033742704259834784,
+          "log_mgf": 0.03346963553071136
+        },
+        {
+          "amplitude_log_mgf": 0.033725402239027424,
+          "copies": 16,
+          "error": 1.730202060929581e-05,
+          "gaussian_target": 0.033742704259834784,
+          "log_mgf": 0.03372540223922549
+        },
+        {
+          "amplitude_log_mgf": 0.03374162196412556,
+          "copies": 256,
+          "error": 1.0822914743927048e-06,
+          "gaussian_target": 0.033742704259834784,
+          "log_mgf": 0.03374162196836039
+        },
+        {
+          "amplitude_log_mgf": 0.03374263659247845,
+          "copies": 4096,
+          "error": 6.7680544009463e-08,
+          "gaussian_target": 0.033742704259834784,
+          "log_mgf": 0.033742636579290775
+        }
+      ],
+      "single_rotor_gap": 2.5311280969408827,
+      "variance": 0.08331531916008587
+    }
+  ],
+  "scope": "Finite compact score challenges, not a photon or thermodynamic proof.\n\nThe torus test is a Fourier-cutoff zero-harmonic electric sector of an actual\n2x2 plaquette complex. The independent-rotor limit is a gapped comparator.\n",
+  "source_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+  "status": "PERSONAL_CHECKS_COMPLETED",
+  "torus": [
+    {
+      "beta": 0.4,
+      "cutoffs": [
+        {
+          "N": 3,
+          "cases": [
+            {
+              "h": [
+                1.0,
+                -0.4,
+                0.2,
+                -0.8
+              ],
+              "kind": "exact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.21945271241687905,
+                  "delta": 0.04325376000000002,
+                  "gaussian_bound": 0.2355200000000001,
+                  "log_mgf": 0.06721448051231715,
+                  "matrix_error": 1.2412670766236366e-16,
+                  "remainder_norm": 0.09645352228866233,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.06722088996515074,
+                  "ward_taylor_log_ratio": 0.005401738607082818
+                },
+                {
+                  "amplitude_bound": 0.07273489097618739,
+                  "delta": 0.007698240000000002,
+                  "gaussian_bound": 0.07452000000000003,
+                  "log_mgf": 0.02135851038106229,
+                  "matrix_error": 1.1443916996305594e-16,
+                  "remainder_norm": 0.01724349306992229,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.02135876784705726,
+                  "ward_taylor_log_ratio": 0.0005413382229586539
+                },
+                {
+                  "amplitude_bound": 0.39408320972033495,
+                  "delta": 0.11244288000000006,
+                  "gaussian_bound": 0.4452800000000002,
+                  "log_mgf": 0.12637853789353604,
+                  "matrix_error": 1.1102230246251565e-16,
+                  "remainder_norm": 0.24928755847633313,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.12641183058207361,
+                  "ward_taylor_log_ratio": 0.01926074103181552
+                }
+              ],
+              "variance": 0.21137115844704446,
+              "ward_contact": 0.21137115844704413
+            },
+            {
+              "h": [
+                1.0,
+                0.3,
+                -0.1,
+                0.2
+              ],
+              "kind": "nonexact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.1348347390995183,
+                  "gaussian_bound": 0.14592000000000005,
+                  "log_mgf": 0.0366481696469958,
+                  "matrix_error": 1.2412670766236366e-16,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.04159583984690607
+                },
+                {
+                  "amplitude_bound": 0.04492372026771898,
+                  "gaussian_bound": 0.04617000000000002,
+                  "log_mgf": 0.011651270276813674,
+                  "matrix_error": 1.1188630228279524e-16,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.013265706763685214
+                },
+                {
+                  "amplitude_bound": 0.2409759808488629,
+                  "gaussian_bound": 0.27588000000000007,
+                  "log_mgf": 0.06886458537603746,
+                  "matrix_error": 1.1102230246251565e-16,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.07791117424786642
+                }
+              ],
+              "variance": 0.11533179295652506,
+              "ward_contact": 0.13154029782514298
+            }
+          ],
+          "dimension": 343,
+          "log_partition": 0.910318841292143
+        },
+        {
+          "N": 4,
+          "cases": [
+            {
+              "h": [
+                1.0,
+                -0.4,
+                0.2,
+                -0.8
+              ],
+              "kind": "exact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.21945271241687905,
+                  "delta": 0.04325376000000002,
+                  "gaussian_bound": 0.2355200000000001,
+                  "log_mgf": 0.06870972321683477,
+                  "matrix_error": 1.2412670766236366e-16,
+                  "remainder_norm": 0.10032139011497775,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.06871632927430782,
+                  "ward_taylor_log_ratio": 0.005521587008255224
+                },
+                {
+                  "amplitude_bound": 0.07273489097618739,
+                  "delta": 0.007698240000000002,
+                  "gaussian_bound": 0.07452000000000003,
+                  "log_mgf": 0.0218346201559374,
+                  "matrix_error": 1.1443916996305594e-16,
+                  "remainder_norm": 0.01793475613030457,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.021834885615470423,
+                  "ward_taylor_log_ratio": 0.0005533539961750655
+                },
+                {
+                  "amplitude_bound": 0.39408320972033495,
+                  "delta": 0.11244288000000006,
+                  "gaussian_bound": 0.4452800000000002,
+                  "log_mgf": 0.12918267711151366,
+                  "matrix_error": 1.1102230246251565e-16,
+                  "remainder_norm": 0.25928825959122087,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.12921697540498878,
+                  "ward_taylor_log_ratio": 0.019687644399371873
+                }
+              ],
+              "variance": 0.216087446078497,
+              "ward_contact": 0.216087446078497
+            },
+            {
+              "h": [
+                1.0,
+                0.3,
+                -0.1,
+                0.2
+              ],
+              "kind": "nonexact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.1348347390995183,
+                  "gaussian_bound": 0.14592000000000005,
+                  "log_mgf": 0.037245170940745975,
+                  "matrix_error": 1.2412670766236366e-16,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.042346122431452526
+                },
+                {
+                  "amplitude_bound": 0.04492372026771898,
+                  "gaussian_bound": 0.04617000000000002,
+                  "log_mgf": 0.011841655894022862,
+                  "matrix_error": 1.1188630228279524e-16,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.01350637342695915
+                },
+                {
+                  "amplitude_bound": 0.2409759808488629,
+                  "gaussian_bound": 0.27588000000000007,
+                  "log_mgf": 0.06998205377091193,
+                  "matrix_error": 1.1102230246251565e-16,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.07930707689337191
+                }
+              ],
+              "variance": 0.11721910212235959,
+              "ward_contact": 0.13393369250724937
+            }
+          ],
+          "dimension": 729,
+          "log_partition": 0.9303669568399169
+        }
+      ],
+      "g": 0.8,
+      "maximum_refinement_change": 0.0028041392179776192
+    },
+    {
+      "beta": 0.7,
+      "cutoffs": [
+        {
+          "N": 3,
+          "cases": [
+            {
+              "h": [
+                1.0,
+                -0.4,
+                0.2,
+                -0.8
+              ],
+              "kind": "exact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.354670522754295,
+                  "delta": 0.11827200000000003,
+                  "gaussian_bound": 0.41216000000000014,
+                  "log_mgf": 0.06541697309202887,
+                  "matrix_error": 7.850462293418876e-17,
+                  "remainder_norm": 0.14929713610926335,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.06542848380948618,
+                  "ward_taylor_log_ratio": 0.012804067987721046
+                },
+                {
+                  "amplitude_bound": 0.12330811248889986,
+                  "delta": 0.021049875000000006,
+                  "gaussian_bound": 0.13041,
+                  "log_mgf": 0.020766589127423796,
+                  "matrix_error": 6.206335383118183e-17,
+                  "remainder_norm": 0.02686279224684138,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.020767159567671167,
+                  "ward_taylor_log_ratio": 0.0012842626197281382
+                },
+                {
+                  "amplitude_bound": 0.6116030300843415,
+                  "delta": 0.3074610000000001,
+                  "gaussian_bound": 0.7792400000000002,
+                  "log_mgf": 0.1231534918014966,
+                  "matrix_error": 5.721958498152797e-17,
+                  "remainder_norm": 0.38265124136197515,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.12320392556245463,
+                  "ward_taylor_log_ratio": 0.04554685346432552
+                }
+              ],
+              "variance": 0.2054163075882475,
+              "ward_contact": 0.20541630758824841
+            },
+            {
+              "h": [
+                1.0,
+                0.3,
+                -0.1,
+                0.2
+              ],
+              "kind": "nonexact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.21639998378646869,
+                  "gaussian_bound": 0.2553600000000001,
+                  "log_mgf": 0.03821970288214027,
+                  "matrix_error": 7.850462293418876e-17,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.040296375681500685
+                },
+                {
+                  "amplitude_bound": 0.07587992355016965,
+                  "gaussian_bound": 0.08079750000000001,
+                  "log_mgf": 0.012152186869701653,
+                  "matrix_error": 2.7755575615628914e-17,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.01283815887373374
+                },
+                {
+                  "amplitude_bound": 0.37114726105122403,
+                  "gaussian_bound": 0.4827900000000001,
+                  "log_mgf": 0.07180807807627942,
+                  "matrix_error": 5.721958498152797e-17,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.07559479894421006
+                }
+              ],
+              "variance": 0.12029626564729516,
+              "ward_contact": 0.12726889584772952
+            }
+          ],
+          "dimension": 343,
+          "log_partition": -0.7507334961760772
+        },
+        {
+          "N": 4,
+          "cases": [
+            {
+              "h": [
+                1.0,
+                -0.4,
+                0.2,
+                -0.8
+              ],
+              "kind": "exact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.354670522754295,
+                  "delta": 0.11827200000000003,
+                  "gaussian_bound": 0.41216000000000014,
+                  "log_mgf": 0.06541862306564239,
+                  "matrix_error": 7.850462293418876e-17,
+                  "remainder_norm": 0.15528801134729345,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.06543013406888298,
+                  "ward_taylor_log_ratio": 0.012804363725505308
+                },
+                {
+                  "amplitude_bound": 0.12330811248889986,
+                  "delta": 0.021049875000000006,
+                  "gaussian_bound": 0.13041,
+                  "log_mgf": 0.020767047756764745,
+                  "matrix_error": 6.206335383118183e-17,
+                  "remainder_norm": 0.02793990116137756,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.020767618208915928,
+                  "ward_taylor_log_ratio": 0.0012842911491822706
+                },
+                {
+                  "amplitude_bound": 0.6116030300843415,
+                  "delta": 0.3074610000000001,
+                  "gaussian_bound": 0.7792400000000002,
+                  "log_mgf": 0.1231571154698119,
+                  "matrix_error": 5.721958498152797e-17,
+                  "remainder_norm": 0.39802115477392774,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.12320755077776713,
+                  "ward_taylor_log_ratio": 0.04554802180028006
+                }
+              ],
+              "variance": 0.20542055139212703,
+              "ward_contact": 0.2054205513921251
+            },
+            {
+              "h": [
+                1.0,
+                0.3,
+                -0.1,
+                0.2
+              ],
+              "kind": "nonexact",
+              "tests": [
+                {
+                  "amplitude_bound": 0.21639998378646869,
+                  "gaussian_bound": 0.2553600000000001,
+                  "log_mgf": 0.03822053533128422,
+                  "matrix_error": 7.850462293418876e-17,
+                  "t": -0.8,
+                  "unphased_log_ratio": 0.04029725393700179
+                },
+                {
+                  "amplitude_bound": 0.07587992355016965,
+                  "gaussian_bound": 0.08079750000000001,
+                  "log_mgf": 0.01215243664825949,
+                  "matrix_error": 2.7755575615628914e-17,
+                  "t": 0.45,
+                  "unphased_log_ratio": 0.012838422067991573
+                },
+                {
+                  "amplitude_bound": 0.37114726105122403,
+                  "gaussian_bound": 0.4827900000000001,
+                  "log_mgf": 0.07180975706727677,
+                  "matrix_error": 5.721958498152797e-17,
+                  "t": 1.1,
+                  "unphased_log_ratio": 0.07559657392008012
+                }
+              ],
+              "variance": 0.120298670037958,
+              "ward_contact": 0.12727142858490903
+            }
+          ],
+          "dimension": 729,
+          "log_partition": -0.7507321828708973
+        }
+      ],
+      "g": 1.25,
+      "maximum_refinement_change": 3.6236683153001437e-06
+    }
+  ]
+}

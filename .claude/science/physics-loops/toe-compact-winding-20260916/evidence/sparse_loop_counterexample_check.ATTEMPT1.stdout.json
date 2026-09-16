@@ -1,0 +1,128 @@
+{
+  "elapsed_seconds": 0.27241020801011473,
+  "geometry": {
+    "bad_vertices": 64,
+    "current_edges": 64,
+    "hyperoctahedral_maps": 384,
+    "maximum_current": 1,
+    "neighboring_blocks": 16,
+    "oriented_cases": 18432,
+    "single_block_marks": 48
+  },
+  "moments": {
+    "L": 2,
+    "environment_assignments": 256,
+    "exact_moments": [
+      {
+        "fourth_cumulant": "251/55296",
+        "fourth_moment": "1403/55296",
+        "limiting_fourth_cumulant": "13/3456",
+        "rho": "1/12"
+      },
+      {
+        "fourth_cumulant": "7164007/69120000000",
+        "fourth_moment": "7740007/69120000000",
+        "limiting_fourth_cumulant": "13/21600000000",
+        "rho": "1/600"
+      },
+      {
+        "fourth_cumulant": "57456007/1105920000000",
+        "fourth_moment": "59760007/1105920000000",
+        "limiting_fourth_cumulant": "13/345600000000",
+        "rho": "1/1200"
+      }
+    ],
+    "independent_sign_coefficients": {
+      "1": 16,
+      "2": 720
+    },
+    "ordered_tuple_coefficients": {
+      "1": 16,
+      "2": 720,
+      "4": 3360
+    },
+    "sign_sum_counts": {
+      "-16": 8,
+      "0": 240,
+      "16": 8
+    },
+    "sites": 16
+  },
+  "scaling": [
+    {
+      "L": 2,
+      "fourth_cumulant": "251/55296",
+      "limit": "13/3456",
+      "log_MGF_lower_at_t1": -5.211844111146229,
+      "rho": "1/12",
+      "source_l3_cubed": "1/4",
+      "variance": "1/12"
+    },
+    {
+      "L": 8,
+      "fourth_cumulant": "37211/14155776",
+      "limit": "13/3456",
+      "log_MGF_lower_at_t1": -16.847376444584917,
+      "rho": "1/12",
+      "source_l3_cubed": "1/64",
+      "variance": "1/12"
+    },
+    {
+      "L": 32,
+      "fourth_cumulant": "12488411/3623878656",
+      "limit": "13/3456",
+      "log_MGF_lower_at_t1": -3.389505778339668,
+      "rho": "1/12",
+      "source_l3_cubed": "1/1024",
+      "variance": "1/12"
+    },
+    {
+      "L": 128,
+      "fourth_cumulant": "3414751451/927712935936",
+      "limit": "13/3456",
+      "log_MGF_lower_at_t1": 1010.4419768866412,
+      "rho": "1/12",
+      "source_l3_cubed": "1/16384",
+      "variance": "1/12"
+    },
+    {
+      "L": 2,
+      "fourth_cumulant": "7164007/69120000000",
+      "limit": "13/21600000000",
+      "log_MGF_lower_at_t1": -5.5385107778128955,
+      "rho": "1/600",
+      "source_l3_cubed": "1/4",
+      "variance": "1/600"
+    },
+    {
+      "L": 8,
+      "fourth_cumulant": "7171399/17694720000000",
+      "limit": "13/21600000000",
+      "log_MGF_lower_at_t1": -22.074043111251584,
+      "rho": "1/600",
+      "source_l3_cubed": "1/64",
+      "variance": "1/600"
+    },
+    {
+      "L": 32,
+      "fourth_cumulant": "9661639/4529848320000000",
+      "limit": "13/21600000000",
+      "log_MGF_lower_at_t1": -87.01617244500633,
+      "rho": "1/600",
+      "source_l3_cubed": "1/1024",
+      "variance": "1/600"
+    },
+    {
+      "L": 128,
+      "fourth_cumulant": "690114247/1159641169920000000",
+      "limit": "13/21600000000",
+      "log_MGF_lower_at_t1": -327.5846897800253,
+      "rho": "1/600",
+      "source_l3_cubed": "1/16384",
+      "variance": "1/600"
+    }
+  ],
+  "scope": "Exact finite-law and oriented-geometry challenges to the sparse-loop example.\n\nNo Hamiltonian measure is sampled. The all-volume and limiting statements are\ncarried by the written counterexample, not by these finite calculations.\n",
+  "source_sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d",
+  "status": "PERSONAL_CHECKS_COMPLETED"
+}

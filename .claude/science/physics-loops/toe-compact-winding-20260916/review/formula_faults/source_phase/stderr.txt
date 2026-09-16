@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py", line 159, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py", line 153, in main
+    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),
+                        ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py", line 87, in torus_checks
+    assert matrix_error<2e-12
+           ^^^^^^^^^^^^^^^^^^
+AssertionError

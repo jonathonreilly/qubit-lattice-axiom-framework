@@ -1,0 +1,13 @@
+fractional_kernel REJECTED
+gaussian_split_sign REJECTED
+mean_sign REJECTED
+covariance_factor REJECTED
+hopping_midpoint REJECTED
+poisson_prefactor REJECTED
+electric_coulomb_factor REJECTED
+hop_gaussian_factor REJECTED
+magnetic_midpoint REJECTED
+mean_square_missing REJECTED
+charge_transport_sign REJECTED
+theta_dual_width REJECTED
+All 12 actual changes rejected at assertions. Personal checks only.

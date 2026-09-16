@@ -86,7 +86,7 @@ If the support reaches an opposite pair, use the whole physical cube: cubic geom
 
     H=h_1+P_1 h_2+P_1 P_2 h_3
 
-has the usual degree signs and satisfies boundary H+H boundary=I-P_1 P_2 P_3. The product projection is supported only in degree three, so it vanishes on the one-cycle. Each input cell contributes coefficient at most one to a specified output in each coordinate term, giving the bound 3s. Dualizing back gives the stated loose support bound. Choosing one filling for each sign pair and negating it makes the rule odd. This argument uses cubic boxes; arbitrary thin rectangles are not included.
+has the usual degree signs and satisfies boundary H+H boundary=I-P_1 P_2 P_3. The product projection is supported only in degree three, so it vanishes on the one-cycle. Each input cell contributes coefficient at most one to a specified output in each coordinate term, giving the bound 3s. Dualizing back gives the stated loose support bound. More specifically, every filled edge is within s+4<=5s in base-cell distance of each face in the connected carrier; in the opposite-face case the whole cube already has side at most s+2. For a connected cluster the same argument uses its total mass and connected union, retaining that5S anchor radius after summing its fillings. Choosing one filling for each sign pair and negating it makes the rule odd. This argument uses cubic boxes; arbitrary thin rectangles are not included.
 
 For q=sum gamma define z(q)=sum z_gamma. On S,
 
@@ -149,7 +149,7 @@ on S and kernel S-perpendicular. It is positive on S and ||T||<=sqrt(12)/(2g^2)=
 
     F_ext(a)=log E_(u~Gaussian(T)) exp U(u+a).          (8)
 
-It agrees with log Theta_g on S. Each finite volume has a proper positive integral. Under epsilon0||T||<1/2, the negative log density on S has Hessian at least (1-epsilon0||T||)T^-1. The finite-dimensional Brascamp-Lieb variance bound therefore applies on S. Differentiation gives
+It agrees with log Theta_g on S. Each finite volume has a proper positive integral. Under epsilon0||T||<1/2, the negative log density on S has Hessian at least (1-epsilon0||T||)T^-1. The finite-dimensional Brascamp-Lieb variance bound therefore applies on S: Var(h)<=E[grad h.(Hess W)^(-1)grad h] for density proportional to exp(-W). The precise form and hypotheses are in equation(1.3) of [Carlen, Cordero-Erausquin and Lieb (2013)](https://www.numdam.org/article/AIHPB_2013__49_1_1_0.pdf), pages1-2, checked here in an orthonormal coordinate system on S. W is smooth, has a positive Hessian, and has an integrable Gaussian tail; DU[h] is bounded and smooth. This is a mathematical inequality, not a physical-model import. Differentiation gives
 
     grad F_ext=E grad U,
     F_ext''[h,h]=E U''[h,h]+Var(DU[h]).

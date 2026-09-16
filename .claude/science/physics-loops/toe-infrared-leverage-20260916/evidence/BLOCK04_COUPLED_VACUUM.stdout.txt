@@ -1,0 +1,62 @@
+{
+  "source_sha256": "83f09802c0e9ad9857acf0a6eaf6bafafed66b18757070f406a2396fb3d321b8",
+  "real_space_CAR_vs_momentum": {
+    "L": 3,
+    "fermion_modes": 54,
+    "occupied_modes": 27,
+    "one_photon_particle_hole_basis_entries": 37908,
+    "physical_current_band_matrix_error": 4.126162952233366e-16,
+    "vacuum_current_trace_error": 7.507862052449958e-16,
+    "paired_direct_CAR_norm_density": 0.005304443526256934,
+    "paired_momentum_norm_density": 0.005304443526256925,
+    "difference": 8.673617379884035e-18
+  },
+  "finite_reference_coefficients": [
+    {
+      "L": 4,
+      "volume": 64,
+      "paired_first_correction_norm_density": 0.0056577375543437735,
+      "paired_second_energy_coefficient_magnitude": 0.038618198538765476,
+      "photon_frequency_below_one_norm_density": 0.0,
+      "exact_node_count": 0,
+      "ward_max_error": 8.881784197001252e-16
+    },
+    {
+      "L": 6,
+      "volume": 216,
+      "paired_first_correction_norm_density": 0.00604012627951545,
+      "paired_second_energy_coefficient_magnitude": 0.04030210200699285,
+      "photon_frequency_below_one_norm_density": 0.0008529175801781833,
+      "exact_node_count": 2,
+      "ward_max_error": 2.7241126021806753e-15
+    },
+    {
+      "L": 8,
+      "volume": 512,
+      "paired_first_correction_norm_density": 0.006063992618211095,
+      "paired_second_energy_coefficient_magnitude": 0.040577694005953,
+      "photon_frequency_below_one_norm_density": 0.0005386579610557097,
+      "exact_node_count": 0,
+      "ward_max_error": 3.552713678800501e-15
+    },
+    {
+      "L": 10,
+      "volume": 1000,
+      "paired_first_correction_norm_density": 0.0061767868671155565,
+      "paired_second_energy_coefficient_magnitude": 0.04103547769848116,
+      "photon_frequency_below_one_norm_density": 0.0008171224310859141,
+      "exact_node_count": 0,
+      "ward_max_error": 1.7763568394002505e-15
+    },
+    {
+      "L": 12,
+      "volume": 1728,
+      "paired_first_correction_norm_density": 0.006256693946153074,
+      "paired_second_energy_coefficient_magnitude": 0.041305748383124875,
+      "photon_frequency_below_one_norm_density": 0.0008907064906669946,
+      "exact_node_count": 2,
+      "ward_max_error": 3.552713678800501e-15
+    }
+  ],
+  "seconds": 1.476635217666626
+}

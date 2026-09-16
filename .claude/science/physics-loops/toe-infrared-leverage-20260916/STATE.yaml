@@ -1,7 +1,7 @@
 {
   "slug": "toe-infrared-leverage-20260916",
   "status": "active_personal_discovery",
-  "updated_utc": "2026-09-16T04:02:12.030826+00:00",
+  "updated_utc": "2026-09-16T04:17:06.338581+00:00",
   "deadline_utc": "2026-09-16T13:45:03Z",
   "branch": "physics-loop/toe-infrared-leverage-20260916",
   "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
@@ -9,7 +9,7 @@
   "previous_milestone": "3210315c2cddeb5b0a9e32c9b35e30c196eaa65a",
   "previous_pr": 8160,
   "agents": "none; user explicitly requires personal execution",
-  "active_target": "Challenge global Gauss-dressing proof and pursue actual transverse leakage beyond variational compression",
-  "claim_status": "author theorem proposal; independent check pending",
-  "next_action": "Cold-read BLOCK01 final proposal, challenge topology/cluster constants and mutate decisive finite checks; then derive a photon-excitation extension or identify the first nontrivial dynamic residual."
+  "active_target": "Coupled fermion/photon vacuum denominator after global Gauss dressing",
+  "claim_status": "three author proposals; first has 12 source mutations; no independent review",
+  "next_action": "Derive BLOCK04 keeping the actual free Weyl particle-hole energy, challenge exact lattice current Ward identity and first-order Fock normalization. Cold review all final proofs before milestone PR."
 }

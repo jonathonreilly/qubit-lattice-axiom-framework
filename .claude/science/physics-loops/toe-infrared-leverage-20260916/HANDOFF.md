@@ -7,3 +7,9 @@ Next: derive and independently challenge the scalar theta identities, construct 
 ## 04:xx UTC checkpoint
 
 BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md is the new complete author proposal. The earlier WORKING note preserves the route. Both finite programs ran successfully with raw stdout/stderr, hashes in stdout. No failed run so far. The rank-five affine check at g=1.8 retains a roughly1.8e-7 derivative error from its smaller dual cutoff; this is a finite-cutoff comparison, not a rigorous interval. The ring direct compression agrees with exact theta formulas near1e-15 and exposes non-negligible off-space leakage. Next cold-review the proof, then extend the charge-sector representation to transverse excitations / actual dynamics. The deadline remains13:45:03UTC.
+
+## New blocks and live target
+
+BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md constructs the exact centered first polynomial sector, normalizes its charge-dependent Gram matrix, and proposes a per-link12epsilon/g approximation to the order-g transverse current vertex. Its new direct rank-five check passed with actual stdout/helper hashes. BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md derives the sharp low-frequency profile and the logarithmic norm of the bare photon energy inverse. Its Cartesian sums and spherical quadratures passed. These are reference/variational results, not actual interacting phase claims.
+
+BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md is now the live stretch: the current creates a Weyl particle-hole pair, so the true first perturbative denominator contains its energy. A phase-space bound may remove the bare-photon logarithm for the vacuum correction per volume. Derive/check this rather than reasserting a no-go. No subagents; continue to13:45:03UTC.

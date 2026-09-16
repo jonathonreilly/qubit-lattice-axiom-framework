@@ -761,3 +761,21 @@ with visible finite-size errors. The initial derivative-array shape exception is
 frozen and fixed without changing tolerances. The harmonic electric metric gives
 a conditional g/L slow scale only if an interacting effective reduction is proved;
 that reduction is not supplied. No phase or axiom closure.
+
+
+## Block21 — fixed-box interacting slow spectrum
+
+Under a unique simple nondegenerate flat-matter minimum, the full integer-rotor
+operator has a leading slow ladder E_j=(Eperp+e_min+g mu_j+o(g))/a. The exact
+even normal ground removes the first normal displacement expectation; its
+off-diagonal matter coupling costs O(g²) through the fixed normal gap. Local
+Berry and derivative couplings are bounded at o(g), and min-max compactness
+counts levels with multiplicity. The correct tangent metric is its Schur
+complement, equal to W_E/L for a homogeneous cubic box.
+
+Applied to Block20's paired Wilson example this proves the leading fixed-L
+gap and then an ITERATED L->infinity, g->0 coefficient. It does not give a
+joint g(L) rate, fixed-g phase, or finite-payload theorem. A noncommuting
+two-coordinate fixture checks the principal metric and coefficients; exact
+Fourier integration matches the assembled matrix. Initial convention and
+dtype records are preserved. All proof review is personal.

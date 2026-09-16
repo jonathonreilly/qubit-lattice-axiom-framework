@@ -1,0 +1,15 @@
+# Refuting pass — block 25 (supervisor-run, disjoint machinery; 2026-09-16)
+
+Routes compared (controls `specs/supervisor_control_block25_toom_core.py` and `specs/supervisor_control_block25_toom_stability.py`, refuting pass `specs/supervisor_control_block25_refuter.py`, outputs in `.out.txt`):
+
+| item | runner's route | refuting route | result |
+|---|---|---|---|
+| the spanning lemma (T3) | asserted at every refinement of the automaton's explanation trees | 169 random abstract systems (random points of a level plane, random clusters, all cross-cluster sibling forks, random poles), the lemma's construction re-implemented from scratch, the identity checked with exact rationals | holds in every instance |
+| the noise map (T0) | exact maximum over the `216` triples at integer weights | direct floating-point enumeration at 200 random real weights against the three closed forms | agrees to `4·10^{−16}` |
+| the explanation tree (T4) | the embedded construction with its own tree check | an independent graph implementation (numpy predecessor and sibling tests) on 363 explained random cones of depth `3`–`7`: arrows and forks of `G`, one-sites only, marked nodes are noise sites, tree, `edges ≤ 4(n − 1)` | passes throughout |
+| the series constant (T6) | the symbolic identity and the exact partial sums | direct summation of `Σ_{k≤K} 2·96^k/96^K` for `K ≤ 40`; the bound at `ε_0` in floats | `2.021052632 = 192/95`; `2.379538·10^{−8} = 1/42024960` |
+| stability (T6, physics sanity) | — | the noisy automaton on a periodic `96×96` level plane from all-zero for 300 levels | final densities `0.011, 0.021, 0.033, 0.064` at `ε = 0.01, 0.02, 0.03, 0.05` and `1.000` at `ε = 0.08` |
+
+Findings: one, before the contract, folded. The first draft of the construction made two forks sharing a point adjacent in the cause graph's search; the minimal tree then skipped the cluster between them, two noise sites were never counted, and the very first depth-2 configuration (four noise sites at level `−2`) gave `5` edges for `2` counted noise nodes. The cause graph must alternate clusters and forks (T3's bipartite hypothesis); with that, every configuration tested passes, and the observation is recorded in the note's Review record and Prior art.
+
+Attempts to refute (nothing else refuted): a cluster added twice to the tree (impossible: a cluster's parents all lie in one cluster, by the definition of clusters through the past); a processed point receiving two arrows (one arrow per kept point, the least charge); a fork added twice (one fork per adjacent cluster pair, only in the parent's refinement); the marked nodes coinciding as sites (a subtree's nodes are distinct points); whether `n = 1` trees exist with edges (`x` itself a noise site: the one-node tree); the count's overlap of *up* arrows (the encoding allows any of the `12` incident edges at each step, so the direction of traversal is covered); the Cesàro limit's invariance (the kernel is a finite product at each cylinder, hence Feller); the distinctness at `δ = 1/42024960`. Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.

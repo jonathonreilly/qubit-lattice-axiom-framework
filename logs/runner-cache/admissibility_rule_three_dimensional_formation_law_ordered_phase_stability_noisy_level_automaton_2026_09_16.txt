@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py
+runner_sha256: 5e5c27022f2c214616b2d38d79620af28563c7f646ac871ada6fbf82a1b1b14c
+input_fingerprint_sha256: 75dcb54515c323cd339c43e5908a8cf1420c3566a281db08b9ed088a658aea84
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.06
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the three-dimensional formation law's ordered phase — the noisy level automaton's explanation trees executed exhaustively on small cones, the subtree count, the series bound, the coupling thresholds, the six invariant laws; exact
+mutation: none
+PASS: A1 the three declared inputs exist (this note, the axiom memo, block 01's note on main)
+PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
+PASS: A3 block 01's claim id and its section on the static law of a product rule are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 T0(a): the three-predecessor conditional of block 01's rule at the unanimous, orthogonal 2:1 and antipodal 2:1 patterns has the stated closed forms, symbolically
+PASS: B2 T0(b): the numerators of the three deviations' derivatives in p are -3p^2(q^3 + 4r^3), -q^3 p^2 - 8 q r^3 p and -r^3 p^2 - 2 r C p, all negative: epsilon is strictly decreasing in p
+PASS: B3 T0(a): epsilon(p, q, r) as the exact maximum over all triples with at least two entries a equals max(d1, d2, d3) at (3,1,2), (10,1,2) and (30,1,2) (the antipodal deviation attains it at p = 3, 10, the orthogonal one at p = 30)
+PASS: B4 T0(c): at every triple with at least two entries a, 1 - K(a | triple) <= epsilon(p, q, r), at three couplings (the coupling's per-site inequality)
+PASS: C1 T2(a): M_k(x - e_j) - M_k(x) = 1/3 - delta_jk; sum_k M_k = 0 on the depth-3 cone; every pair of indices contains one differing from each k
+PASS: C2 T2(b): every fork pair has Size = 1 and every assignment of its two points as poles has Span <= 1
+PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and forks through 1-sites rooted at x, its marked nodes are noise sites, the spanning identity holds at every refinement, and edges <= 4(n-1) (largest ratio 2)
+PASS: D2 T4: every depth-3 configuration with at most four noise sites (2321 explained) and 1200 random cones of depth 3-7 (907 explained) pass the same checks (largest ratios 7/3, 11/4)
+PASS: D3 T4: line seeds (n + 1 noise sites n levels down, n <= 8) and triangle seeds (n <= 6) are explained with the bound (largest ratio 2); the spanning identity sum_X Span(X) = sum_k M_k(u_k) holds at every refinement of the depth-4 triangle seed
+PASS: D4 T5: the numbers of subtrees with 1, 2, 3 edges containing the origin are [12, 198, 3688], each at most 48^k (the depth-first encoding bound)
+PASS: E1 T6: sum_{k<=K} 2 96^k = 2(96^(K+1) - 1)/95 <= (192/95) 96^K; the partial sums of the series in n equal (192/95) eps (1 - rho^N)/(1 - rho) and stay below (192/95) eps/(1 - rho), rho = 96^4 eps, exactly; at epsilon_0 = 1/(2 96^4) the bound is 1/42024960 < 1/2
+PASS: E2 T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 are 339738628 at (1,2), 169869315 at (1,1), 679477255 at (2,4), 509607941 at (1,3), each with epsilon(p_0 - 1) > epsilon_0
+PASS: E3 T7(c): on a three-state chain the Cesaro average satisfies mu_T(Pf) - mu_T(f) = (lambda_{T+1}(f) - lambda_1(f))/T, bounded by 2||f||/T; and 1 - delta > delta for the distinctness
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record; Feller, Bernoulli and Markov name standard objects (0 offenders)
+per_element: executed — the kernel's closed forms; the increments 1/3 - delta_jk; the fork size; the derivatives of the deviations
+per_site: executed — the coupling inequality at all 216 triples with two entries a; the exact least couplings p_0 at four weight pairs
+per_mode: executed — the refinement on all 1024 depth-2 and all 2321 explained depth-3 configurations with at most four noise sites, on 1200 random cones and on structured seeds; the subtree counts 12, 198, 3688
+per_block: executed — the series constant 192/95; the bound 1/42024960 at epsilon_0; the Cesaro identity on a finite chain
+lattice_wide: T4-T7 proved for every epsilon <= 1/(2 96^4) and every coupling with epsilon(p, q, r) <= epsilon_0; the true threshold not claimed
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

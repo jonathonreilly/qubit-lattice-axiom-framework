@@ -1,0 +1,5 @@
+depth 2 exhaustive (1024 configs): explained cases 932, max edges/(n-1) = 2.000, max edges 5, max n 4 (0.1s)
+depth 3, all configs with <= 4 noise sites: explained cases 2321, max ratio 2.333, max edges 7, max n 4 (0.3s)
+random cones depth 3-6 (3000 trials): explained cases 2236, max ratio 2.800, max edges 26, max n 14, max refinements 10 (1.2s)
+structured seeds: explained cases 14, max ratio 2.000, max edges 16, max n 9
+deep random cones (depth 7-10, 1500 trials): explained 967, failures 0, worst ratio 2.875 at (depth, dens, n, edges, refinements) = (9, 0.1, 9, 23, 7), 2s

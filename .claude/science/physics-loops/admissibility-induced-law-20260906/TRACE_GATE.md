@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 25, at PR opening (2026-09-16)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 12's obligation S6 (PR #8146): stability of the noisy majority eroder in level time; whether the formation reading orders in three dimensions"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "S6 closed at scope: P(eta_x = 1) <= (192/95) eps/(1 - 96^4 eps); for eps(p,q,r) <= 1/(2 96^4) (p >= 339738628 at (p,1,2)) the formation law's level automaton has at least six invariant laws, one per value, within 1/42024960 of a constant plane at every site. Next: sharpen the threshold; the band between block 08's region and this one. Consumers: #8093's assembly (record dynamics closed at the theorem level: both readings order at strong coupling on Z^3)"
+```

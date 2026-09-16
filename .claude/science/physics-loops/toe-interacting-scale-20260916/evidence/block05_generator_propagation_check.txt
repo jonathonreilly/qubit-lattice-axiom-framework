@@ -1,0 +1,4 @@
+g=0.60: charged generator residual=0.572925, t=1.4 norm error=0.565832
+g=0.40: charged generator residual=0.360846, t=1.4 norm error=0.37649
+g=0.25: charged generator residual=0.22047, t=1.4 norm error=0.237059
+TOTAL: PASS=17776 FAIL=0

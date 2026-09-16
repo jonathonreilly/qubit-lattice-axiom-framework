@@ -1,0 +1,2 @@
+Discrete Gaussian, Wilson hopping, wavepacket, compact mode, and spectral challenges completed.
+TOTAL: PASS=62 FAIL=0

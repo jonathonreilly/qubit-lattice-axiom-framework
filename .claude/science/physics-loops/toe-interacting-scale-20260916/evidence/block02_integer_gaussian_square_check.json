@@ -1,0 +1,134 @@
+{
+  "periodic_integer_metric": {
+    "L": 3,
+    "rank": 52,
+    "nonzero_smith_invariants": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "constraints_rank": 29,
+    "errors": {
+      "riccati": 1.5156423271618426e-13,
+      "restricted_inverse": 1.2452424546615969e-14,
+      "plaquette_metric": 4.2542925559536325e-14,
+      "trace": 2.842170943040401e-14
+    },
+    "dual": [
+      {
+        "energy": 255.75934858992593,
+        "curl_formula": 255.75934858992585,
+        "coarse_lower": 106.70854832540029
+      },
+      {
+        "energy": 248.52125776590995,
+        "curl_formula": 248.52125776590998,
+        "coarse_lower": 104.74458731327636
+      },
+      {
+        "energy": 184.115592890029,
+        "curl_formula": 184.11559289002906,
+        "coarse_lower": 70.04794276575356
+      },
+      {
+        "energy": 236.20079704186165,
+        "curl_formula": 236.20079704186173,
+        "coarse_lower": 95.90676275871866
+      }
+    ]
+  },
+  "positive_square": {
+    "cutoff": 7,
+    "dimension": 225,
+    "g": 0.37,
+    "core_error": 2.5425319268896725e-14,
+    "full_cutoff_discrepancy": 17.029281558619093,
+    "exact_boundary_formula_error": 5.686748305534762e-14,
+    "wrong_sign_core_error": 24.107937362143755
+  },
+  "optimized_theta_trial": [
+    {
+      "g": 0.18,
+      "cutoff": 42,
+      "dual_cutoff": 1,
+      "electric": 1.137417154191508,
+      "magnetic": 1.1277784320659925,
+      "free_energy": 2.2748343083830145,
+      "upper": 2.2748343083830145,
+      "overlap_error": 1.1102230246251565e-16
+    },
+    {
+      "g": 0.4,
+      "cutoff": 19,
+      "dual_cutoff": 2,
+      "electric": 1.137417154038829,
+      "magnetic": 1.0908810868704937,
+      "free_energy": 2.2748343083830145,
+      "upper": 2.2748343084912777,
+      "overlap_error": 2.220446049250313e-16
+    },
+    {
+      "g": 0.8,
+      "cutoff": 10,
+      "dual_cutoff": 4,
+      "electric": 1.117192844725665,
+      "magnetic": 0.9716762892090136,
+      "free_energy": 2.2748343083830145,
+      "upper": 2.288008547266023,
+      "overlap_error": 2.220446049250313e-16
+    }
+  ],
+  "scope": "Finite author checks; the positive-square rotor identity is tested on a padded core, not at a hard boundary.",
+  "tolerance": 3e-09,
+  "runner_sha256": "2388f8c57c18e8ea916010e1fb44ddbb6914162392587c3961067e7bfeea0f82",
+  "checks": 37
+}

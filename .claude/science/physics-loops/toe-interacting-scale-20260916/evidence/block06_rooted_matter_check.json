@@ -1,0 +1,96 @@
+{
+  "charged_rooted_matter": [
+    {
+      "g": 0.6,
+      "cutoff": 14,
+      "dimension": 1044,
+      "ground_energy": -2.4329043310784977,
+      "B_norm": 1.08309518948453,
+      "electric_residual_norm": 0.19424479636207317,
+      "loop_residual_norm": 0.3069372849717893,
+      "total_residual_norm": 0.43446527177483935,
+      "electric_upper": 8.358840889803062,
+      "loop_upper": 3.9419719429534097,
+      "omitted_quadratic_path_discrepancy": 7.723069855957538,
+      "plaquette_unitary_defect": 0.6499184633778069,
+      "boundary_mass": 4.159846155393039e-30,
+      "dynamics": [
+        {
+          "t": 0.7,
+          "error": 0.2033015467048977,
+          "upper": 8.61056898292953,
+          "wrong_time_sign_error": 0.3935174375649086
+        },
+        {
+          "t": 1.4,
+          "error": 0.15587604600595623,
+          "upper": 17.22113796585906,
+          "wrong_time_sign_error": 0.35992513806832427
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "cutoff": 20,
+      "dimension": 1476,
+      "ground_energy": -2.444137848156393,
+      "B_norm": 1.08309518948453,
+      "electric_residual_norm": 0.13119260342078248,
+      "loop_residual_norm": 0.2031140479867873,
+      "total_residual_norm": 0.2928775069617301,
+      "electric_upper": 4.31610038292216,
+      "loop_upper": 2.555895818700822,
+      "omitted_quadratic_path_discrepancy": 4.081317434358668,
+      "plaquette_unitary_defect": 0.4213941415826644,
+      "boundary_mass": 2.7082856039207993e-30,
+      "dynamics": [
+        {
+          "t": 0.7,
+          "error": 0.1358003883175976,
+          "upper": 4.810397341136087,
+          "wrong_time_sign_error": 0.38843419384997585
+        },
+        {
+          "t": 1.4,
+          "error": 0.08929131586932819,
+          "upper": 9.620794682272175,
+          "wrong_time_sign_error": 0.3553793144778028
+        }
+      ]
+    },
+    {
+      "g": 0.25,
+      "cutoff": 32,
+      "dimension": 2340,
+      "ground_energy": -2.453275913786688,
+      "B_norm": 1.08309518948453,
+      "electric_residual_norm": 0.08238657745983635,
+      "loop_residual_norm": 0.12673235014679843,
+      "total_residual_norm": 0.184176214398202,
+      "electric_upper": 2.1088373373173197,
+      "loop_upper": 1.5832869530922713,
+      "omitted_quadratic_path_discrepancy": 2.007359506291785,
+      "plaquette_unitary_defect": 0.2610387487610844,
+      "boundary_mass": 1.0854191974125521e-30,
+      "dynamics": [
+        {
+          "t": 0.7,
+          "error": 0.08533211348746776,
+          "upper": 2.5844870032867138,
+          "wrong_time_sign_error": 0.38694769833646525
+        },
+        {
+          "t": 1.4,
+          "error": 0.05156453161668476,
+          "upper": 5.1689740065734275,
+          "wrong_time_sign_error": 0.35341107595063165
+        }
+      ]
+    }
+  ],
+  "scope": "Finite author challenge of rooted CAR residual and free time sign; not a thermodynamic phase calculation.",
+  "tolerance": 3e-08,
+  "runner_sha256": "bf9b752270a8437d346849f98c0e0d3cee9486c0f16198380f9f3534884d943e",
+  "car_helper_sha256": "17c08782dfd6d1f6cc9d2e916071548f7b0e6090d795092a85c916918c2d5633",
+  "checks": 33
+}

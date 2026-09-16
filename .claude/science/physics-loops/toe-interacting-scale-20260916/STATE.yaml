@@ -1,0 +1,23 @@
+campaign: toe-interacting-scale-20260916
+status: active_discovery
+actual_claim_status: provisional
+continuation_started_utc: '2026-09-16T01:19:17.253870+00:00'
+original_window_start_utc: 2026-09-15 13:45:03 UTC
+deadline_utc: 2026-09-16 13:45:03 UTC
+base_main: e0ef7cf4633034a8c1e6d57f5812cc4275bf1349
+planning_revision: 068e916ca37b004757ad3a3c082857a91dc37215
+branch: physics-loop/toe-interacting-scale-20260916
+execution: personal_no_subagents
+checkpoint_minutes: 30
+block: 6
+current_target: package joint-limit milestone and select next fixed-interaction or native-law target
+previous_campaign_commit: ccca36e505a4cc5d0cd4735b377c15d69042fc41
+review_status: author_exploration_no_independent_review
+next_step: finish frozen-source validation, open draft milestone PR, preserve and remove checkout, then continue personally
+block01_status: provisional_bounded_theorem_personally_reviewed
+last_checkpoint_utc: 2026-09-16T03:22:58+00:00
+block02_status: provisional_uniform_energy_theorem_personally_reviewed
+block03_status: provisional_joint_gauge_characteristic_theorem_personally_reviewed
+block04_status: provisional_joint_equal_time_state_theorem_personally_reviewed
+block05_status: provisional_joint_real_time_gauge_two_point_theorem_personally_reviewed
+block06_status: provisional_joint_bounded_matter_dynamics_theorem_personally_reviewed

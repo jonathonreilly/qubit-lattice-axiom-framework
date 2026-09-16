@@ -1,0 +1,21 @@
+{
+  "assertion": "charged ground cutoff-tail check",
+  "g": 0.6,
+  "cutoff": 10,
+  "boundary_mass": 4.984945699760506e-16,
+  "eigen_residual": 2.698271532631727e-13,
+  "electric_equation_error": 3.521367719148232e-14,
+  "residual_identity_error": 1.1458441627993415e-12,
+  "dynamics": [
+    {
+      "t": 0.7,
+      "error": 0.3656193908938123,
+      "upper": 2.961321906075618
+    },
+    {
+      "t": 1.4,
+      "error": 0.5658321036229421,
+      "upper": 5.922643812151236
+    }
+  ]
+}

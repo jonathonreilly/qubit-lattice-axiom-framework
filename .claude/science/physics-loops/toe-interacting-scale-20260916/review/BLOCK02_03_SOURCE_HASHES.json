@@ -1,0 +1,23 @@
+{
+  "scope": "Frozen Blocks02-03 author sources and evidence; no independent review",
+  "files": {
+    "evidence/block02_integer_gaussian_square_check.json": "5791546bb732adb74088745bd57d76de64f5197d3deaaafb48a38e64ad4e14f7",
+    "evidence/block02_integer_gaussian_square_check.py": "2388f8c57c18e8ea916010e1fb44ddbb6914162392587c3961067e7bfeea0f82",
+    "evidence/block02_integer_gaussian_square_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block02_integer_gaussian_square_check.txt": "814e754b0d7bde867a04e9dedbe45ddc1c2aa300a3ad3fc4f689acf32b489825",
+    "evidence/block02_tree_slater_check.json": "4d9e8b45dd7fdc1db98a009030ed0652162145077a9c1a6209b56c7a3e562dff",
+    "evidence/block02_tree_slater_check.py": "617442f6d272f7f21786d33d082abc05fa21fe3cfdf66d4874c22221f992e526",
+    "evidence/block02_tree_slater_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block02_tree_slater_check.txt": "05b5f9a4c21645a6e0401f32031c7f4b0827413fcbf470d7779f4757dddd1968",
+    "evidence/block03_characteristic_check.json": "7acdda06263d789f853f553214f0b7f9c4fb77b3f2001c9e9dd97234c956ae7d",
+    "evidence/block03_characteristic_check.py": "653860a1ca3723b8d7dbfd64cfacca8f9fb7a5105f446b1816473769a1a4a862",
+    "evidence/block03_characteristic_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block03_characteristic_check.txt": "086306631188cc4ae7b3c218a37ff0167d027eab55aa64294b9e13b290b353d6",
+    "notes/BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md": "c4bd1947ed8f8d8bcdf3aaf8faf5e99bf9704dfd4dfe5c2effbba4d0447d3881",
+    "notes/BLOCK02_WORKING_JOINT_LIMIT.md": "ddb0df664ae439808cdfdcff6bea5a18fab8575500e21272dd7c4ec83282e92e",
+    "notes/BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md": "ac31c2936ab853b3acf94de5c47b7d6e74ddccdb9c6c094545b6c58d2faafefe",
+    "review/BLOCK02_03_PERSONAL_REVIEW.md": "b17bdf7a94e85a892961234beff2136e88dbb190f159b0de61979fa57d076a9e",
+    "review/BLOCK02_03_VOCAB.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  },
+  "refresh_reason": "Final author packaging: declared timeouts/helper inputs and explicit proof links; raw evidence rerun on current programs."
+}

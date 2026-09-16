@@ -1,0 +1,29 @@
+{
+  "utc": "2026-09-16T01:22:09.577417+00:00",
+  "main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "rows": [
+    {
+      "path": "/private/tmp/toe-formation-order-20260913-wt",
+      "HEAD": "d57291602d909246756f30975f0d862a08e8f836",
+      "contained_in_main": false,
+      "dirty": false,
+      "decision": "preserved unlanded or dirty checkout"
+    },
+    {
+      "path": "/private/tmp/toe-poss-sym-order-20260915-wt",
+      "HEAD": "d15d5d9074e343563700691afcfddb5afc761a21",
+      "contained_in_main": false,
+      "dirty": false,
+      "decision": "preserved unlanded or dirty checkout"
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/.claude/worktrees/focused-noyce-9a3983",
+      "HEAD": "f8c83049fead8db6f9594df243168cd5edeb19e2",
+      "contained_in_main": false,
+      "dirty": false,
+      "decision": "preserved unlanded or dirty checkout"
+    }
+  ],
+  "archive_touched": false,
+  "git_gc_run": false
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "Block04 author sources and evidence only; Block05 is an unfinished route",
+  "files": {
+    "evidence/block04_weyl_zero_mode_check.json": "a2e33563109832a6cb2a487c4d8c78d1f1a56a398f601439205d856c51ab2a87",
+    "evidence/block04_weyl_zero_mode_check.py": "cd29c3fb3b00b6febc009245416d3084f16a88db7f1bbd32b5d048c2e1b752f8",
+    "evidence/block04_weyl_zero_mode_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/block04_weyl_zero_mode_check.txt": "f66fbfb9f46e83fec7ca596a690951efdf38aaf0418de7cea526eef882863e7c",
+    "notes/BLOCK04_JOINT_GAUGE_AND_MATTER_STATE.md": "f829fc3c516d7b66353b4c0cdcb9807c3abc0f44aa9331cafeb666cf4a2e620f",
+    "notes/BLOCK04_WORKING_MIXED_STATE.md": "73a90e9856be7217b0823c476d0028c8e03aa4911f446804360888e380358f21",
+    "review/BLOCK04_PERSONAL_REVIEW.md": "d828c211adf495f996f9eb65bc097de8a3472cf882fe9ec63c6be5044b5e5343",
+    "review/BLOCK04_VOCAB.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  },
+  "refresh_reason": "Final author packaging: declared timeouts/helper inputs and explicit proof links; raw evidence rerun on current programs."
+}

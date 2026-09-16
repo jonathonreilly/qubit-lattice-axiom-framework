@@ -1,0 +1,53 @@
+{
+  "utc": "2026-09-16T01:19:17.253870+00:00",
+  "commit": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+  "branch": "physics-loop/toe-fixed-clock-field-20260915",
+  "status": "provisional personal source, not independent acceptance",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/README.md",
+      "sha256": "737307eb2ad529ad5bef4261ba91067558239790d89eb071e2fa9509748effc5",
+      "bytes": 11618
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.md",
+      "sha256": "0a8b2a06dca5db755a0e89621200f86286234cff936c80908f37e97d5a62b93a",
+      "bytes": 7729
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md",
+      "sha256": "5c4619f904c5206e571e6e2241a73e191378fb20d376c0d9658a94ac12118528",
+      "bytes": 18102
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md",
+      "sha256": "1a94fed13d6f42c62828886c46966f1c397c70f792916afe73a2793722a3c323",
+      "bytes": 16288
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md",
+      "sha256": "58fc632b9c56ffb127b2fc38a4d81be5c2c0b2aa688b90a2717285b262e7675c",
+      "bytes": 10363
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md",
+      "sha256": "a8add7399b6fba2370056230299378887c2dda0a8473b3961903c226bf261ed2",
+      "bytes": 11197
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md",
+      "sha256": "b404e997eae301a5e5ef91917dc55686c69bc6c4d77db3dc5007977ac927967f",
+      "bytes": 11426
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md",
+      "sha256": "445359d13dc7d1076e4363bc359152e503e732425a78485a785fe90ce8969c38",
+      "bytes": 8642
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md",
+      "sha256": "3a8acd9549cdde98091abb9efd9fd17e1ec13d9dd7ee9ea1b76fbcf0ab5218fd",
+      "bytes": 10118
+    }
+  ]
+}

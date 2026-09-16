@@ -1,0 +1,16 @@
+campaign: toe-interacting-scale-20260916
+status: active_discovery
+actual_claim_status: provisional
+continuation_started_utc: '2026-09-16T01:19:17.253870+00:00'
+original_window_start_utc: 2026-09-15 13:45:03 UTC
+deadline_utc: 2026-09-16 13:45:03 UTC
+base_main: e0ef7cf4633034a8c1e6d57f5812cc4275bf1349
+planning_revision: 068e916ca37b004757ad3a3c082857a91dc37215
+branch: physics-loop/toe-interacting-scale-20260916
+execution: personal_no_subagents
+checkpoint_minutes: 30
+block: 0
+current_target: source-hypothesis review for fixed-coupling infrared control
+previous_campaign_commit: ccca36e505a4cc5d0cd4735b377c15d69042fc41
+review_status: author_exploration_no_independent_review
+next_step: finish old milestone publication and cleanup, then check constructive theorem hypotheses

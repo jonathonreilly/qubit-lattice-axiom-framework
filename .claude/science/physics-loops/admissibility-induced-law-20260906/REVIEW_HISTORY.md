@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 28 — V1-V5 (supervisor, 2026-09-16)
+- V1: the campaign's decision record lacked the located strengths at which the four laws keep memory; the proved regions (03, 08, 17, 21, 22, 25, 27) and block 26's runs framed the question.
+- V2: the lens pass in `GOAL_block28.md` ("numerics again" — labelled executed with brackets; the theorems small and exact; "finite size and hysteresis" — two plane sizes, three lattice sizes, two starts, two algorithms; "the sphere static law is the classical Heisenberg model" — named as reference only; names in the allowed sections).
+- V3: T1–T3 proved; the skeleton executed exactly (14 checks, 8 mutations); the refuting pass agreed on five routes; the crude region count replaced by the exact one before the note was finished.
+- V4: no reading, menu, rule or coupling selected; the strengths are brackets; the order of the static change not claimed.
+- V5: consumers named — the campaign's decision record (the map); #8093's assembly; the queue.
+
+## block 28 — supervisor controls, primary, refuting pass and fold (2026-09-16)
+Controls: the scans (`128²`/`256²` planes for the formation law, `16³`/`24³`/`32³` lattices for the static laws, fine scans around the changes); the exact control (block 08's bracket at `37/10` and `19/5`; the eroder bound on `300` random islands; the exact region count, largest ratio `4.04(D+1)³`; the influence recursion). Primary: the note and the runner (14 checks, 8 mutations). Refuting pass (`CHECKER_block28_findings.md`): the formation law from a random start, the static six-axis law by single-site proposals, the sphere law from a random start, the healing bound tested at `ε = 10^{−3}` — no findings against the theorems; two observations folded (the crude region count; the frozen-domain artifact at strong preference from a random start). Author checks only; independent review pending.
+
+## block 28 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the menus, readings and the level automaton declared in the note; the proved regions re-computed where a number is used (T1) and otherwise evidence addresses. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the strengths marked executed brackets; the theorems as stated; the literature value named as reference only. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

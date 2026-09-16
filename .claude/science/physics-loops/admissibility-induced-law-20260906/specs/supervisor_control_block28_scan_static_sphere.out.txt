@@ -1,0 +1,21 @@
+===== stat_sphere_L16.txt =====
+sphere static law, L=16, sweeps=1500; |m| over the last half, aligned start
+  beta=0.500: |m| = 0.0355   (1s)
+  beta=0.600: |m| = 0.0569   (1s)
+  beta=0.650: |m| = 0.0915   (1s)
+  beta=0.700: |m| = 0.3050   (1s)
+  beta=0.750: |m| = 0.4607   (1s)
+  beta=0.800: |m| = 0.5362   (1s)
+  beta=0.900: |m| = 0.6269   (1s)
+===== stat_sphere_L24.txt =====
+sphere static law, L=24, sweeps=1500; |m| over the last half, aligned start
+  beta=0.600: |m| = 0.0305   (4s)
+  beta=0.650: |m| = 0.0580   (4s)
+  beta=0.700: |m| = 0.2343   (4s)
+  beta=0.750: |m| = 0.4413   (4s)
+===== stat_sphere_L24_fine.txt =====
+sphere static law, L=24, sweeps=2000; |m| over the last half, aligned start
+  beta=0.660: |m| = 0.0676   (6s)
+  beta=0.680: |m| = 0.1144   (5s)
+  beta=0.700: |m| = 0.2534   (5s)
+  beta=0.720: |m| = 0.3607   (5s)

@@ -105,3 +105,13 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+# ---------------------------------------------------------------- block 28 close (2026-09-16)
+# block: 28
+# branch: physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-27 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170, #8171)
+# pr_status: opened for review — PR #8172 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8172); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=14 FAIL=0; 8 mutations, census 8/8 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
+# seats: "supervisor-run: scans (two plane sizes, three lattice sizes, two starts) -> exact control -> contract with a lens pass -> primary (T1-T3, runner) -> refuting pass (random starts; a different chain; the healing bound tested) -> fold (the crude region count replaced; the frozen-domain artifact noted)"
+# review_findings: "the map: six-axis static p in (3.6, 3.7), six-axis formation p in (10.5, 11) at (p,1,2), sphere static beta in (0.66, 0.72), sphere formation never; proved regions 10^2-10^4 away on the six-axis menu; T1 brackets exact; T2 healing bound 18(D+1)^3 eps; T3 influence bound 2(sqrt3 beta)^t p_t"
+# strongest_unresolved_proof_obligation: "the located strengths as theorems (the proved regions are two to four orders of magnitude away on the six-axis menu); a proof of the sphere formation law's loss of memory at strong coupling"
+# next_exact_action: "queue refresh 2026-09-16 (block 28 opening): the six-axis order threshold sharpened toward the located strengths (a pair-noise or block renormalization of block 25's count); a proof at strong coupling for the sphere formation law; the six-axis memory time on a torus; the band; normalization; X4"
+# lock: held (owner: keep running the campaign for 12 more hours from 2026-09-16 ~09:50)

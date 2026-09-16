@@ -1,0 +1,157 @@
+{
+  "source_sha256": "1645e505240ff08a09cc0c1fcd8bec4cf9df3eb0aadfacaa87b6749960e65c2c",
+  "physical_invariant_sector_dimension": 1296,
+  "electric_charge_range": [
+    -4,
+    4
+  ],
+  "exact_finite_path_check": {
+    "N": 3,
+    "time_slices": 3,
+    "delta": 0.08,
+    "histories": 27,
+    "direct_four_component_path_sum": 1.0016056500616617,
+    "physical_fock_transfer_amplitude": 1.0016056500616752,
+    "difference": 1.354472090042691e-14,
+    "maximum_spin_reduction_error": 5.10702591327572e-15,
+    "amplitude_without_endpoint_factors": 1.0006494537589783,
+    "endpoint_error": 0.0009561963026969433,
+    "calibrated_c": 5.131952458643825
+  },
+  "continuum_hamiltonian_nonzeros": 15119,
+  "joint_refinements": [
+    {
+      "joint_path_power": 1,
+      "values": [
+        {
+          "N": 3,
+          "Nt": 3,
+          "delta": 0.16666666666666666,
+          "calibrated_c": 4.3851135664618015,
+          "actual_boundary_amplitude": 1.001875851568098,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.015269576756207881
+        },
+        {
+          "N": 5,
+          "Nt": 5,
+          "delta": 0.1,
+          "calibrated_c": 3.857563917177291,
+          "actual_boundary_amplitude": 1.0040729771997978,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.013072451124508166
+        },
+        {
+          "N": 9,
+          "Nt": 9,
+          "delta": 0.05555555555555555,
+          "calibrated_c": 3.235619684855463,
+          "actual_boundary_amplitude": 1.0072966397556546,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.009848788568651345
+        },
+        {
+          "N": 17,
+          "Nt": 17,
+          "delta": 0.029411764705882353,
+          "calibrated_c": 2.5291256083056917,
+          "actual_boundary_amplitude": 1.010673041653022,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.006472386671283914
+        },
+        {
+          "N": 33,
+          "Nt": 33,
+          "delta": 0.015151515151515152,
+          "calibrated_c": 1.7286708624149878,
+          "actual_boundary_amplitude": 1.0133365469999525,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0038088813243535302
+        }
+      ]
+    },
+    {
+      "joint_path_power": 2,
+      "values": [
+        {
+          "N": 3,
+          "Nt": 9,
+          "delta": 0.05555555555555555,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.0073644632396712,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.009780965084634774
+        },
+        {
+          "N": 5,
+          "Nt": 25,
+          "delta": 0.02,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.0123843607341987,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.004761067590107304
+        },
+        {
+          "N": 9,
+          "Nt": 81,
+          "delta": 0.006172839506172839,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.015460628134842,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0016848001894640419
+        },
+        {
+          "N": 17,
+          "Nt": 289,
+          "delta": 0.0017301038062283738,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.01665061531956,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0004948130047459642
+        }
+      ]
+    },
+    {
+      "joint_path_power": 3,
+      "values": [
+        {
+          "N": 3,
+          "Nt": 27,
+          "delta": 0.018518518518518517,
+          "calibrated_c": 6.604242340252273,
+          "actual_boundary_amplitude": 1.0127386565767171,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.004406771747588856
+        },
+        {
+          "N": 5,
+          "Nt": 125,
+          "delta": 0.004,
+          "calibrated_c": 7.116151056738452,
+          "actual_boundary_amplitude": 1.0160637111846174,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0010817171396886316
+        },
+        {
+          "N": 9,
+          "Nt": 729,
+          "delta": 0.0006858710562414266,
+          "calibrated_c": 7.704659135712891,
+          "actual_boundary_amplitude": 1.0169599430866345,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.00018548523767147884
+        },
+        {
+          "N": 17,
+          "Nt": 4913,
+          "delta": 0.0001017708121310808,
+          "calibrated_c": 8.34107202139951,
+          "actual_boundary_amplitude": 1.017119697785957,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 2.5730538349089116e-05
+        }
+      ]
+    }
+  ],
+  "seconds": 1.0031211376190186
+}

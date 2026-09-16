@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/run_weight_missing_x.py", line 115, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/run_weight_missing_x.py", line 111, in run
+    start=time.time();spin=spin_checks();matrices=[lattice((3,2,2,2),.1,6.,.5,271),lattice((5,2,1,1),.05,6.,.5,314)]
+                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/run_weight_missing_x.py", line 48, in lattice
+    err=float(np.linalg.norm(R-direct));assert err<3e-13
+                                               ^^^^^^^^^
+AssertionError

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/time_closure_discarded.py", line 115, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/time_closure_discarded.py", line 112, in run
+    print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'spin_checks':spin,'finite_matrices':matrices,'time_closure':closure_checks(),'continuum_rectangle':continuum_rectangle(),'seconds':time.time()-start},indent=2))
+                                                                                                                                                           ~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/time_closure_discarded.py", line 90, in closure_checks
+    bound=delta*mu_b**(-(ell-1));assert closed<=bound
+                                        ^^^^^^^^^^^^^
+AssertionError

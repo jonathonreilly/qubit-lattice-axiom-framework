@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/filling_wrong_negative_displacement.py", line 97, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/filling_wrong_negative_displacement.py", line 65, in run
+    assert boundary(fill)==chain,(trial,'integer boundary mismatch')
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (1, 'integer boundary mismatch')

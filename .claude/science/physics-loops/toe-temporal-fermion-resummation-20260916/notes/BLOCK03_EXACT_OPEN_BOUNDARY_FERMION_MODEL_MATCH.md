@@ -113,6 +113,6 @@ Each X_t, its block determinants and F_delta transform covariantly under spatial
 
 ## 6. What this match closes
 
-Block02's uniform physical-curl bounds concern exactly the boundary weight(7), with its scalar normalization and filled boundary state now identified. They do not yet describe a thermal trace, arbitrary fermionic insertions, a gapless-matter determinant or a large-volume ground-state phase. An actual dynamical gauge join must still include its gauge transfer weights and physical Gauss projection; these cannot be inferred from the determinant alone.
+Block02's uniform physical-curl bounds concern exactly the boundary weight(7), with its scalar normalization and filled boundary state now identified. They do not yet describe a thermal trace, arbitrary fermionic insertions, a gapless-matter determinant or a large-volume ground-state phase. The companion [Block04 dynamical gauge proposal](BLOCK04_ACTUAL_GAUGE_MATTER_TRANSFER_AND_STATE_JOIN.md) supplies the gauge transfer weights, endpoint factors and physical Gauss restriction explicitly; they are not inferred from the determinant alone. Its fixed-volume regulator/state limits depend on the frozen provisional PR8162 proofs.
 
 The mathematical machinery in this note is classical and the generic anisotropic block transfer has direct prior art. The bounded campaign outcome is the model/source/boundary match needed to interpret the preceding uniform-time estimate, not a claim to have discovered Wilson transfer theory.

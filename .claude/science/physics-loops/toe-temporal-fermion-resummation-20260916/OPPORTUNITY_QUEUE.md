@@ -1,0 +1,11 @@
+# Next personal research priorities
+
+This is a leverage assessment after the temporal-fermion milestone, not a success forecast. Continue personally until2026-09-16 13:45:03UTC. No agents, early campaign termination, axiom edits or author-retained landing.
+
+1. **Actual Hamiltonian/anisotropic compact phase.** Read the precise primary constructive phase theorems and their hypotheses, including the retrieved Frohlich-Spencer preprint. Determine whether they already control an anisotropic limit matching the calibrated temporal kernel and inverse-logarithmic spatial Villain factor. If not, identify and attempt the particular missing magnetic-defect estimate. A keyword screen is insufficient. This is the preferred next campaign because it addresses the surviving state/phase bridge rather than another finite-volume approximation.
+2. **Compose heavy matter with a proved phase carrier.** The current C3 physical-time bound is a possible input only after the pure-gauge measure, norms, boundaries and thermodynamic state are matched. A direct counting-norm conversion introduces delta^-1/2 in the third derivative; it cannot be ignored. A weighted remainder theorem or a sharper nonlocal norm may be needed.
+3. **Open-to-thermal boundary join.** Antiperiodic winding loops and Polyakov sources need separate treatment. They might be controllable at large duration for massive matter, but the open-time proof does not already contain that statement. This is useful if the actual phase route requires thermal rather than neutral boundary states.
+4. **Gapless charged matter.** The heavy-mass absolute expansion does not reach the Weyl-node model used earlier. Prior PR8161 current/Ward phase-space control suggests a distinct multiscale route; it must not be smuggled into this massive determinant theorem.
+5. **Native selection or axiom necessity.** Return to a first-principles axiom/primitive analysis only with a precise incompatibility or distinguishing construction. Failure to finish one technical estimate is not an axiom wall. No such contradiction has been found in this campaign.
+
+Avoid repeating classical Wilson block reduction, previously completed fixed-volume rotor limits, weak-coupling-before-volume Gaussian limits or the already-derived one-loop anisotropic coframe calculation as new progress.

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/complementary_missing_prefactor.py", line 97, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/complementary_missing_prefactor.py", line 79, in run
+    assert abs(exact-schur)<3e-11 and abs(exact-complementary)<3e-11
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

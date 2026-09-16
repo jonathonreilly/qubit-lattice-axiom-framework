@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_pair_factor.py", line 91, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_pair_factor.py", line 83, in run
+    start=time.time();rows=[make((3,2,2,2),d,6.,.5,927) for d in [.1,.05,.01]]
+                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_pair_factor.py", line 78, in make
+    extrap=(4*half-fd)/3;assert abs(extrap-expected)<3e-8
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

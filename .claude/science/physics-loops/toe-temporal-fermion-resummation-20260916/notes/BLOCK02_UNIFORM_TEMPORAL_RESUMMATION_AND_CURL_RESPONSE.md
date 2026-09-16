@@ -83,7 +83,7 @@ Here a_gamma is the coefficient before the unit loop phase, including the paired
 
 ## 4. A boundary-compatible physical-area filling
 
-Treat a loop word as an integer1-cycle in the rectangular spacetime cell complex, based at(x_0,t_0). Project it to the spatial slice at t_0. Each spatial hop at time t_j is connected to its projected hop by a temporal plaquette strip. The boundary of the sum of strips is the original cycle minus its spatial projection: vertical edges cancel at consecutive endpoints, including repeated visits. Equivalently this is the interval chain homotopy between the identity and projection to t_0. The sum of strip lengths, weighted by delta, is at most
+Treat a loop word as an integer1-cycle in the rectangular spacetime cell complex, based at(x_0,t_0). In this paragraph t_j denotes physical time, namely delta times the integer time index. Project it to the spatial slice at t_0. Each spatial hop at time t_j is connected to its projected hop by a temporal plaquette strip. The boundary of the sum of strips is the original cycle minus its spatial projection: vertical edges cancel at consecutive endpoints, including repeated visits. Equivalently this is the interval chain homotopy between the identity and projection to t_0. The sum of strip lengths, weighted by delta, is at most
 
     sum_(spatial hops j)|t_j-t_0|<=ell S.            (11)
 

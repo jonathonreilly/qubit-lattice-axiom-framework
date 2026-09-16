@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/third_variation_wrong_mixed_factor.py", line 81, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/third_variation_wrong_mixed_factor.py", line 77, in run
+    start=time.time();rows=[check(n) for n in [3,6,12]]
+                            ~~~~~^^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/third_variation_wrong_mixed_factor.py", line 66, in check
+    assert abs(richardson-third)<max(1e-10,.002*abs(third)),(Nt,third,richardson)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (3, np.float64(2.9524045241033857e-05), np.float64(5.5232796555041906e-05))

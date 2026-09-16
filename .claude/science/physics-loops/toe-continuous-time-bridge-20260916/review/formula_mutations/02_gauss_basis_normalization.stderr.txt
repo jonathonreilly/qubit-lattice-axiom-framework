@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_gauss_basis_normalization.py", line 154, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_gauss_basis_normalization.py", line 151, in run
+    physical=[full_ring_angle_check(N,.7,.03) for N in [3,5]]
+              ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_gauss_basis_normalization.py", line 74, in full_ring_angle_check
+    assert np.linalg.norm(phi.conj().T@phi-np.eye(N))<2e-12
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

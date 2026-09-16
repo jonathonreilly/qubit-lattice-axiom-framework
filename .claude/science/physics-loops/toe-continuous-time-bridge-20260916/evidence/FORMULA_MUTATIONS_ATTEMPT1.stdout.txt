@@ -1,0 +1,132 @@
+{
+  "harness_sha256": "43accb9e8013131bb5f82544b88972cb16018bb6d6c32cce021ae9e5ca529967",
+  "rows": [
+    {
+      "mutation": "02_variance_factor",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "b321b8f994e57780be0133bd0921a05c57d0e4cb131ddc4666fe86629e00f1c2",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.6923341751098633
+    },
+    {
+      "mutation": "02_alias_normalization",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "6af17b010954c4c67f0bd7c80b09e5e33b4ec6efbd482c86d545bf8c6343db1e",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.3033871650695801
+    },
+    {
+      "mutation": "02_poisson_variance_factor",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "b5d5486f3b8abfebffb2d6db208de200d3559b4d8726a5064d35778b957c9ac8",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.31815004348754883
+    },
+    {
+      "mutation": "02_four_links_as_one",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "993cb29828d7a8aee6b8dd591ab6ae1ac80fa63d3a17726b92c6973712098b25",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.3106861114501953
+    },
+    {
+      "mutation": "02_spatial_factor",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "07683408ee87aeb7d0c72f8a00d07dad82879d6261a6b8fa54ec60f9ed93146a",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.3084261417388916
+    },
+    {
+      "mutation": "02_gauss_basis_normalization",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "9566e7c668870b2c3116b6182108b9ea8303b310e9480a4d4beba314bd8dc4fc",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.29959917068481445
+    },
+    {
+      "mutation": "02_restore_tiny_gap_roundoff",
+      "original_source": "evidence/block02_calibrated_transfer_check.py",
+      "original_sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "mutant_sha256": "ff38e3d0428b2c57aaed707027f57095a10d8461ca8c9a6a1fc2dcf22a3652f1",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.3149092197418213
+    },
+    {
+      "mutation": "03_product_factor",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "4ca3c1472bb84502ccaf8d94967c29d51f182ca706c283d49866288d761f0a24",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.31435513496398926
+    },
+    {
+      "mutation": "03_false_strong_floor",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "88bd64a233876974c63cc0e756c4100b2818e084ab15c722c9cad0bd2530fe97",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.29831814765930176
+    },
+    {
+      "mutation": "03_reversed_charge_offset",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "1de1a355820900505178501cf8a561cb56e4651720e08b3ba224a4e1d8fc439f",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.31026792526245117
+    },
+    {
+      "mutation": "03_reversed_winding_hop",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "7c4d9a0137d039bf0b4965c2f3773298cf8b28afd46c9082f6fa48a9d8fb6719",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.3058040142059326
+    },
+    {
+      "mutation": "03_unsandwiched_transfer",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "abd33ceddf0c5dc0a24c8757e923a3d5c052f66957e1ebb964f0eab993ccd686",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.3019411563873291
+    },
+    {
+      "mutation": "03_missing_gibbs_normalization",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "640229fee765dc892bd859198a00423063df96be3c5e30a8ac51a52207ddf44e",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.4629631042480469
+    },
+    {
+      "mutation": "03_wrong_gauss_charge",
+      "original_source": "evidence/block03_all_mode_and_states_check.py",
+      "original_sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "mutant_sha256": "5606f39ac27244565bed7209ef1d09dde8b7bfeb607f025fa782bb563343027a",
+      "exit": 1,
+      "assertion_rejection": true,
+      "seconds": 0.30880308151245117
+    }
+  ],
+  "all_assertion_rejections": true
+}

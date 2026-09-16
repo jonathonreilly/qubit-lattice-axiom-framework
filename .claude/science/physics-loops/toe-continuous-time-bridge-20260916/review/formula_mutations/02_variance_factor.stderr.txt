@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_variance_factor.py", line 154, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_variance_factor.py", line 149, in run
+    assert abs(observed-target)<=bound+2e-6,(N,power,r,observed,target,bound)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (65, 2, 1, 0.4896469347298503, 0.24499999999999997, 0.06912189349112424)

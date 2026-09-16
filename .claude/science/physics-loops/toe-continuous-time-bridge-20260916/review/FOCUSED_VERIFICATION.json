@@ -1,0 +1,138 @@
+{
+  "checked_utc": "2026-09-16T05:25:46.545907+00:00",
+  "status": "personal focused verification; no independent audit",
+  "source_outputs": [
+    {
+      "source": "evidence/block02_calibrated_transfer_check.py",
+      "sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "stdout": "BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stdout.txt",
+      "stderr_empty": true
+    },
+    {
+      "source": "evidence/block03_all_mode_and_states_check.py",
+      "sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "stdout": "BLOCK03_ALL_MODE_STATES_ATTEMPT4.stdout.txt",
+      "stderr_empty": true
+    }
+  ],
+  "mutations": [
+    {
+      "mutation": "02_variance_factor",
+      "assertion": "assert abs(observed-target)<=bound+2e-6,(N,power,r,observed,target,bound)"
+    },
+    {
+      "mutation": "02_alias_normalization",
+      "assertion": "assert np.max(abs(direct_lam-alias_lam))<2e-13"
+    },
+    {
+      "mutation": "02_poisson_variance_factor",
+      "assertion": "assert -1e-13<D<1+1e-13 and abs(D-dual)<2e-13"
+    },
+    {
+      "mutation": "02_four_links_as_one",
+      "assertion": "assert err<2e-12"
+    },
+    {
+      "mutation": "02_spatial_factor",
+      "assertion": "assert err<2e-12"
+    },
+    {
+      "mutation": "02_gauss_basis_normalization",
+      "assertion": "assert np.linalg.norm(phi.conj().T@phi-np.eye(N))<2e-12"
+    },
+    {
+      "mutation": "02_restore_tiny_gap_roundoff",
+      "assertion": "assert abs(energy/pred-1)<2e-5"
+    },
+    {
+      "mutation": "03_product_factor",
+      "assertion": "assert abs(vp/vs-1)<2e-13"
+    },
+    {
+      "mutation": "03_false_strong_floor",
+      "assertion": "assert energy>=g*g*r*r*(1-3e-12)"
+    },
+    {
+      "mutation": "03_reversed_charge_offset",
+      "assertion": "err=float(np.linalg.norm(actual-expected));assert err<3e-12"
+    },
+    {
+      "mutation": "03_reversed_winding_hop",
+      "assertion": "err=float(np.linalg.norm(actual-expected));assert err<3e-12"
+    },
+    {
+      "mutation": "03_unsandwiched_transfer",
+      "assertion": "assert np.linalg.norm(T-T.conj().T)<2e-12"
+    },
+    {
+      "mutation": "03_missing_gibbs_normalization",
+      "assertion": "assert errors[-1]<errors[0]/6"
+    },
+    {
+      "mutation": "03_wrong_gauss_charge",
+      "assertion": "assert np.array_equal(div,charge)"
+    }
+  ],
+  "python_sources_compiled": [
+    "evidence/block02_calibrated_transfer_check.py",
+    "evidence/block03_all_mode_and_states_check.py",
+    "review/block02_calibrated_transfer_attempt1_source.py",
+    "review/block03_all_mode_states_attempt1_source.py",
+    "review/block03_all_mode_states_attempt2_source.py",
+    "review/block03_all_mode_states_attempt3_source.py",
+    "review/block03_commutator_diagnostic.py",
+    "review/block03_resolution_diagnostic.py",
+    "review/formula_mutations/02_alias_normalization.py",
+    "review/formula_mutations/02_four_links_as_one.py",
+    "review/formula_mutations/02_gauss_basis_normalization.py",
+    "review/formula_mutations/02_poisson_variance_factor.py",
+    "review/formula_mutations/02_restore_tiny_gap_roundoff.py",
+    "review/formula_mutations/02_spatial_factor.py",
+    "review/formula_mutations/02_variance_factor.py",
+    "review/formula_mutations/03_false_strong_floor.py",
+    "review/formula_mutations/03_missing_gibbs_normalization.py",
+    "review/formula_mutations/03_product_factor.py",
+    "review/formula_mutations/03_reversed_charge_offset.py",
+    "review/formula_mutations/03_reversed_winding_hop.py",
+    "review/formula_mutations/03_unsandwiched_transfer.py",
+    "review/formula_mutations/03_wrong_gauss_charge.py",
+    "review/run_formula_mutations.py"
+  ],
+  "local_links_checked": [
+    {
+      "from": "README.md",
+      "to": "notes/BLOCK02_CALIBRATED_CLOCK_ROTOR_TRANSFER_THEOREM.md"
+    },
+    {
+      "from": "README.md",
+      "to": "notes/BLOCK03_ALL_MODE_COERCIVITY_AND_FINITE_VOLUME_STATES.md"
+    },
+    {
+      "from": "README.md",
+      "to": "notes/BLOCK03_CHARGED_RING_CHECK_CONVENTIONS.md"
+    },
+    {
+      "from": "README.md",
+      "to": "review/NUMERICAL_HISTORY.md"
+    },
+    {
+      "from": "README.md",
+      "to": "CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "from": "README.md",
+      "to": "review/PERSONAL_PROOF_REVIEW.md"
+    },
+    {
+      "from": "README.md",
+      "to": "review/PREMISES_AND_BOUNDARIES.md"
+    },
+    {
+      "from": "README.md",
+      "to": "READING_LEDGER.md"
+    }
+  ],
+  "vocab_returncode": 0,
+  "scientific_source_reads": "The two primary programs read no scientific files; self-file reads record integrity hashes. The mutation harness reads the two declared source programs.",
+  "deferred": "Formal registration, canonical audit caches/mapping, integrated landing gates and independent audit."
+}

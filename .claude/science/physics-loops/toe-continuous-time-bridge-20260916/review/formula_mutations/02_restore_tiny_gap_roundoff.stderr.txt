@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_restore_tiny_gap_roundoff.py", line 154, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_restore_tiny_gap_roundoff.py", line 140, in run
+    assert abs(energy/pred-1)<2e-5
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

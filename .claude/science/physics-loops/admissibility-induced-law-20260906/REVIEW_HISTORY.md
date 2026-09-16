@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 29 — V1-V5 (supervisor, 2026-09-16)
+- V1: the queue's item "the kernel's normalization on Z^3" (blocks 19–23 left a factor-nine window); cheap to measure with two exact anchors.
+- V2: the lens pass in `GOAL_block29.md` ("spin-wave theory is textbook" — named as the reference, proved for the quadratic model; "the bounds are from open PRs" — evidence addresses, re-quoted, the measurement stands alone; "why the gravity lane cares" — the number with its `k = 0` anchor; names in the allowed sections — one folded at the scan).
+- V3: T1–T3 proved; the skeleton executed exactly (14 checks, 7 mutations); the refuting pass agreed on five routes.
+- V4: no reading, menu, rule or coupling selected; `c → 1` not claimed as a theorem; the longest mode's behaviour not claimed.
+- V5: consumers named — the gravity lane's kernel question (blocks 19–23); the campaign's decision record; the queue.
+
+## block 29 — supervisor controls, primary, refuting pass and fold (2026-09-16)
+Controls: the measurement (`supervisor_control_block29_kernel.py`) on `16³`, `24³`, `32³` at five couplings; the exact control (the plane-wave eigenvalues, the one-site sum rule, the mode sum). Primary: the note and the runner (14 checks, 7 mutations; the identity's author's name folded out of the theorem sections at the scan). Refuting pass (`CHECKER_block29_findings.md`): the real-space estimator against the torus Green function, a single-site chain, the sum rule in a field — consistent; the slowest mode's scatter noted. Author checks only; independent review pending.
+
+## block 29 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the sphere law and the static reading declared in the note; the bounds re-quoted as evidence addresses. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the normalization marked measured; the theorems as stated; the reference values named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

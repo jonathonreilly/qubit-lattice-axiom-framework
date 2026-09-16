@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 29, at PR opening (2026-09-16)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "the campaign queue's item 'the kernel's normalization on Z^3' (blocks 19-23)"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem_plus_decisive_artifact
+next_trace_action: "the normalization measured at 0.86-1.01 of the infrared bound for modes n >= 2 (0.91, 0.94, 0.97 at beta 0.8-1, 1.5-2, 3), the k = 0 end fixed by the sum rule; next: spin-wave theory as a theorem; the lane's queue otherwise hard. Consumers: the gravity lane's kernel question; the decision record"
+```

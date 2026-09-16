@@ -1,0 +1,13 @@
+# Refuting pass — block 29 (supervisor-run, disjoint machinery; 2026-09-16)
+
+Routes compared (controls `specs/supervisor_control_block29_exact.py`, `specs/supervisor_control_block29_kernel.py`; refuting pass `specs/supervisor_control_block29_refuter.py`; outputs in `.out.txt`):
+
+| item | control's route | refuting route | result |
+|---|---|---|---|
+| the normalization `c(β, k)` | the transverse structure factor by FFT in the instantaneous frame, `k` along an axis, three lattices, five couplings | the real-space transverse correlation `T(r)` against the torus Green function `G_L(r)` computed by FFT: `c = βT(r)/G_L(r)` for `r = 1 … 4` on `16³` | `0.91, 0.91, 0.91, 0.94` at `β = 1`; `0.96, 0.96, 0.97, 1.00` at `1.5`; `0.96, 0.95, 0.94, 0.91` at `2` — the same constant as the structure factor's modes `n ≥ 2` |
+| the sampler | heat bath with the exact conditional | single-site proposals accepted with the weight ratio, `β = 1.5`, `16³` | `c = 0.80, 1.08, 0.94, 0.94, 1.01, 0.99` for `n = 1 … 6`: agrees within the scatter |
+| the sum rule (T2) | the one-site instance symbolically; the generator's action; the vanishing surface integral | the field runs at `β = 1.5`, `16³`, `h = 0.05, 0.1, 0.2`, `2000` measured sweeps | `βh·N⟨(m̂¹)²⟩ = 1.01, 0.71, 0.96` against `⟨m̂³⟩ = 0.82, 0.83, 0.84`: the exact identity is met within the scatter of the slowest mode (about `±20 %` at this run length), which the finite-size and autocorrelation of the `k = 0` transverse mode explain; not a finding against T2 |
+| the spin-wave reference (T1) | the eigenvalues and the ring modes symbolically | the measured `c` at the largest coupling (`0.97` at `β = 3`) approaching `1` from below | consistent with `1` as the large-`β` limit |
+| the placement against block 19's bounds | `(m²/3)²` from the measured `m` | — | the lower bound is `12` (at `β = 3`) to `110` (at `β = 0.8`) times below the measured `c`; the upper bound `1` is above every mode `n ≥ 2` except within the scatter |
+
+Findings: none against the theorems. One scan finding folded: the identity's author's name appeared in the theorem sections and was replaced by "the mode sum". Attempts to refute (nothing refuted): whether the instantaneous frame biases the structure factor (a rigid rotation leaves `k ≠ 0` modes unchanged; the real-space estimator agrees); whether the aligned start biases `c` (the single-site chain from the same start agrees; block 28's random-start runs order at these couplings); whether the sum rule's scatter hides a violation (three fields straddle the exact value on both sides). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard for T1–T3; the normalization is measured, not proved, and is labelled so; pending the owner's independent review.

@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 29 opening (2026-09-16)
+
+Block 29 opened for review (independent PR against main): the transverse kernel's normalization measured at `0.9`–`1.0` of the infrared bound (rising toward the spin-wave value `1`), with the `k = 0` end fixed exactly by the sum rule `⟨m̂³⟩/(βh)`. The twelve-hour continuation has now taken every item of the queue that had a route or a decisive artifact (blocks 25 sharpened, 26, 27, 28, 29). Remaining, all hard with no route in hand:
+
+1. **The six-axis order threshold toward the located strength** (`285718` proved against `11` located at `(p, 1, 2)`) — a renormalized contour argument; the domination lemma is the obstacle.
+2. **A proof of the loss of memory at strong coupling for the sphere formation law** — the twist argument fails in level time; a dynamical route through the exact one-step identities is untried in depth.
+3. **Spin-wave theory as a theorem** for the sphere static law (`c(β, k) → 1` as `β → ∞` at fixed `k`) — a low-temperature expansion with control of the nonlinearity.
+4. **The six-axis memory time on a torus** — needs a disjoint-trees step.
+5. **The band, the normalization as a theorem, X4** — hard; unchanged.

@@ -1,0 +1,3 @@
+(1) the torus Laplacian has the plane waves as eigenvectors with eigenvalue E(k) = 2 sum (1 - cos k_j): True -> for the Gaussian law with precision beta*Lap the k-mode variance is 1/(beta E(k)) per component
+(2) kappa * E[(s^1)^2] - E[s^3] = 0 (kappa = beta h)
+(3) Parseval on a 4-site ring with rational data: True

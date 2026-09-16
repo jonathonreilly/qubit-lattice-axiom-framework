@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_commutation_sign.py", line 221, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_commutation_sign.py", line 214, in main
+    scope=__doc__,edge_fill=edge_fill_checks(),current_fill=cycles_and_duality(),
+                            ~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_commutation_sign.py", line 66, in edge_fill_checks
+    assert b==dict(expected)
+           ^^^^^^^^^^^^^^^^^
+AssertionError

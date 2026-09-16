@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_shared_link_metric.py", line 169, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_shared_link_metric.py", line 164, in main
+    adjacent_faces=two_face_checks())
+                   ~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_shared_link_metric.py", line 137, in two_face_checks
+    a=two_face_quantities(g,T,ends,h,k,l,12)
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_shared_link_metric.py", line 112, in two_face_quantities
+    eta,base,metric=two_face_nodes(g,T,order)
+                    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_shared_link_metric.py", line 100, in two_face_nodes
+    assert np.array_equal(metric,np.array([[4,-1],[-1,4]]))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,159 @@
+{
+  "bridge": {
+    "examples": [
+      {
+        "T": 0.1,
+        "alpha": 0.1,
+        "cubic_chain_coefficient": 0.0013915263641792023,
+        "g": 0.003,
+        "relative_contrast": 0.05163754451293736
+      },
+      {
+        "T": 0.1,
+        "alpha": 0.2,
+        "cubic_chain_coefficient": 0.0022680188093056443,
+        "g": 0.003,
+        "relative_contrast": 0.08507213332337363
+      },
+      {
+        "T": 0.05,
+        "alpha": 0.1,
+        "cubic_chain_coefficient": 0.0033918380895495764,
+        "g": 0.01,
+        "relative_contrast": 0.021256560254912533
+      }
+    ],
+    "hessian": [
+      {
+        "correction": -0.00015551164670455503,
+        "correction_bound": 0.007952451439201395,
+        "hessian": 0.013341590956351658,
+        "shift": 0.0,
+        "straight": 0.013497102603056213
+      },
+      {
+        "correction": 0.00046631373736647115,
+        "correction_bound": 0.007952451439201395,
+        "hessian": -0.008049138715326814,
+        "shift": 1.0,
+        "straight": -0.008515452452693285
+      },
+      {
+        "correction": 0.00026118372995647884,
+        "correction_bound": 0.007952451439201395,
+        "hessian": -0.015751942840765257,
+        "shift": 3.0,
+        "straight": -0.016013126570721736
+      }
+    ]
+  },
+  "carrier": [
+    {
+      "T": 0.08,
+      "algebra": 0.2959897975662404,
+      "integrated": 0.2959897975662403,
+      "kinetic": 93.97069422518851,
+      "kinetic_spectral": 93.97069422518854,
+      "slices": 3,
+      "spectral": 0.2959897975662405,
+      "wrong_one_slice": 0.39622520473977474
+    },
+    {
+      "T": 0.25,
+      "algebra": 1.516035203053484,
+      "integrated": 1.5160352030534838,
+      "kinetic": 43.90938937832304,
+      "kinetic_spectral": 43.90938937832306,
+      "slices": 3,
+      "spectral": 1.5160352030534838,
+      "wrong_one_slice": 1.973424675744349
+    },
+    {
+      "T": 0.08,
+      "algebra": 0.3905670193848596,
+      "integrated": 0.3905670193848596,
+      "kinetic": 182.51598106773935,
+      "kinetic_spectral": 182.51598106773935,
+      "slices": 4,
+      "spectral": 0.3905670193848596,
+      "wrong_one_slice": 0.5852507325237815
+    },
+    {
+      "T": 0.25,
+      "algebra": 1.9756270040964636,
+      "integrated": 1.9756270040964634,
+      "kinetic": 58.37662826539646,
+      "kinetic_spectral": 58.37662826539648,
+      "slices": 4,
+      "spectral": 1.9756270040964639,
+      "wrong_one_slice": 2.5837168818610103
+    },
+    {
+      "T": 0.08,
+      "algebra": 0.5046484223978879,
+      "integrated": 0.5046484223978878,
+      "kinetic": 286.0420362789123,
+      "kinetic_spectral": 286.0420362789123,
+      "slices": 7,
+      "spectral": 0.5046484223978878,
+      "wrong_one_slice": 0.809759927762061
+    },
+    {
+      "T": 0.25,
+      "algebra": 3.412255835477105,
+      "integrated": 3.412255835477105,
+      "kinetic": 160.39516477708713,
+      "kinetic_spectral": 160.39516477708713,
+      "slices": 7,
+      "spectral": 3.412255835477104,
+      "wrong_one_slice": 5.083038801905095
+    },
+    {
+      "T": 0.08,
+      "algebra": 1.1587170818193167,
+      "integrated": 1.1587170818193162,
+      "kinetic": 559.7612298119924,
+      "kinetic_spectral": 559.7612298119924,
+      "slices": 12,
+      "spectral": 1.1587170818193169,
+      "wrong_one_slice": 1.7557957269521083
+    },
+    {
+      "T": 0.25,
+      "algebra": 4.340828755000439,
+      "integrated": 4.340828755000439,
+      "kinetic": 205.96576231456368,
+      "kinetic_spectral": 205.96576231456368,
+      "slices": 12,
+      "spectral": 4.340828755000441,
+      "wrong_one_slice": 6.486305445777145
+    }
+  ],
+  "elapsed_seconds": 0.10671333398204297,
+  "extension": [
+    {
+      "alpha": 0.05,
+      "cubic_upper": 0.07492970727274235,
+      "minimum_curvature": 0.9971888181122075,
+      "sample_count": 121
+    },
+    {
+      "alpha": 0.2,
+      "cubic_upper": 0.2955202066613396,
+      "minimum_curvature": 0.955336489125606,
+      "sample_count": 121
+    },
+    {
+      "alpha": 0.6,
+      "cubic_upper": 0.7833269096274833,
+      "minimum_curvature": 0.6216099682706645,
+      "sample_count": 121
+    }
+  ],
+  "input_sha256": {
+    "bridge_cubic_check.py": "8588c80b9dba58caba655b3fbc0392d7aebcd61411eba76f9b1c759439a502e7",
+    "convex_carrier_check.py": "57bc0c3ac04bce903fbad06972a5a55d5607c6bc0af967c7fbd8b3b1f019913d"
+  },
+  "scope": "Check the explicit extension and the actual interpolated time carrier.\n\nThis checks algebra, derivative matching, Fourier normalization and selected\nfinite-grid bridge Hessians. It does not certify a compact-measure comparison.\n",
+  "status": "PERSONAL_CHECKS_COMPLETED"
+}

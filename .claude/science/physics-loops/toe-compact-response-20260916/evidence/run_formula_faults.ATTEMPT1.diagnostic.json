@@ -1,0 +1,4 @@
+{
+  "source_sha256": "438207465cdff5e77974057b35a8e2385eead0dfce30e3ad66d63e62d751c580",
+  "diagnosis": "Mutation harness stopped at convex transition case because the primary checker hashes a sibling helper path. The helper was available via PYTHONPATH for import, but not at the source-identity path. This is an infrastructure failure, not a rejected mathematical fault. Four earlier cases reached AssertionError. Preserve all partial outputs and supply a byte-identical sibling helper on retry."
+}

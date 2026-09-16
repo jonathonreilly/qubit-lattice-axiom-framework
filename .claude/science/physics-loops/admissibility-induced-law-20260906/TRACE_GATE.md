@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 28, at PR opening (2026-09-16)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "the campaign's decision record: which reading and which menu keep memory at what strength of preference"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem_plus_decisive_artifact
+next_trace_action: "the map located (six-axis static (3.6, 3.7), six-axis formation (10.5, 11) at (p,1,2); sphere static (0.66, 0.72); sphere formation never) with T1-T3 exact. Next: the six-axis order threshold toward the located strength; a proof at strong coupling for the sphere formation law. Consumers: the campaign's decision record; #8093's assembly"
+```

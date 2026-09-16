@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 28 opening (2026-09-16)
+
+Block 28 opened for review (independent PR against main): the map of memory located — six-axis static `p ∈ (3.6, 3.7)`, six-axis formation `p ∈ (10.5, 11)` at `(p, 1, 2)`, sphere static `β ∈ (0.66, 0.72)`, sphere formation never — against proved regions two to four orders of magnitude away on the six-axis menu. Ranked next:
+
+1. **The six-axis order threshold sharpened toward the located strength** — block 25's count is at its own edge (`7·10^{−6}` against a located `ε ≈ 0.07` at `p = 11`); the remaining route is a renormalized contour argument (pairs of noise events or blocks as the effective noise), whose domination lemma is the obstacle — hard.
+2. **A proof of the loss of memory at strong coupling for the sphere formation law** — hard (block 26's N1).
+3. **The six-axis memory time on a torus** — medium-hard (needs a disjoint-trees step).
+4. **The band, the normalization, X4** — hard; unchanged.

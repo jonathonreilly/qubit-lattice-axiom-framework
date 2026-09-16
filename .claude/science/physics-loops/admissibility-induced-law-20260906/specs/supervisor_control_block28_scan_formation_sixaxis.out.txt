@@ -1,0 +1,34 @@
+===== form_sixaxis_L128.txt =====
+six-axis formation law at (p,1,2), L=128, T=4000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
+  p=   4.0: memory mean 0.1666  final 0.1677   (4s)
+  p=   6.0: memory mean 0.1662  final 0.1674   (3s)
+  p=   8.0: memory mean 0.1670  final 0.1617   (3s)
+  p=  10.0: memory mean 0.1660  final 0.1752   (4s)
+  p=  12.0: memory mean 0.9325  final 0.9348   (3s)
+  p=  15.0: memory mean 0.9792  final 0.9811   (3s)
+  p=  18.0: memory mean 0.9902  final 0.9918   (3s)
+  p=  22.0: memory mean 0.9953  final 0.9946   (3s)
+  p=  26.0: memory mean 0.9974  final 0.9978   (3s)
+  p=  30.0: memory mean 0.9984  final 0.9987   (4s)
+  p=  35.0: memory mean 0.9990  final 0.9990   (3s)
+  p=  40.0: memory mean 0.9994  final 0.9992   (3s)
+  p=  50.0: memory mean 0.9997  final 0.9995   (4s)
+  p=  60.0: memory mean 0.9998  final 0.9999   (3s)
+  p=  80.0: memory mean 0.9999  final 0.9999   (3s)
+===== form_sixaxis_L256.txt =====
+six-axis formation law at (p,1,2), L=256, T=8000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
+  p=  15.0: memory mean 0.9793  final 0.9791   (29s)
+  p=  18.0: memory mean 0.9902  final 0.9907   (29s)
+  p=  22.0: memory mean 0.9954  final 0.9958   (30s)
+  p=  26.0: memory mean 0.9974  final 0.9979   (29s)
+  p=  30.0: memory mean 0.9984  final 0.9982   (31s)
+  p=  35.0: memory mean 0.9990  final 0.9992   (32s)
+===== form_sixaxis_L256_fine.txt =====
+six-axis formation law at (p,1,2), L=256, T=8000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
+  p=   9.0: memory mean 0.1663  final 0.1628   (32s)
+  p=  10.0: memory mean 0.1670  final 0.1781   (32s)
+  p=  10.5: memory mean 0.1706  final 0.1633   (32s)
+  p=  11.0: memory mean 0.8443  final 0.8402   (30s)
+  p=  11.5: memory mean 0.9064  final 0.9041   (30s)
+  p=  12.0: memory mean 0.9324  final 0.9309   (30s)
+  p=  13.0: memory mean 0.9582  final 0.9589   (29s)

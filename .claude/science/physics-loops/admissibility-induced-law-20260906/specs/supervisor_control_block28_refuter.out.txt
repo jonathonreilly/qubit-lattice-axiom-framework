@@ -1,0 +1,24 @@
+(a) six-axis formation law at (p,1,2), L=128, T=4000, random start: fraction of the majority value over the last half
+  p=   9: majority fraction 0.1761   (4s)
+  p=  10: majority fraction 0.1827   (3s)
+  p=  11: majority fraction 0.2207   (3s)
+  p=  12: majority fraction 0.3887   (4s)
+  p=  13: majority fraction 0.3674   (3s)
+  p=  15: majority fraction 0.6861   (3s)
+(b) six-axis static law at (p,1,2), L=16, Metropolis single-site proposals (2000 sweeps), aligned start: fraction of the majority value over the last half
+  p= 3.4: order 0.1943   (1s)
+  p= 3.6: order 0.2239   (1s)
+  p= 3.8: order 0.7839   (1s)
+  p= 4.0: order 0.8777   (1s)
+  p= 4.5: order 0.9550   (1s)
+(c) sphere static law, L=16, heat bath, RANDOM start (1500 sweeps): |m| over the last half
+  beta=0.60: |m| = 0.0559   (1s)
+  beta=0.66: |m| = 0.1239   (1s)
+  beta=0.70: |m| = 0.2936   (2s)
+  beta=0.74: |m| = 0.4356   (1s)
+  beta=0.80: |m| = 0.5358   (2s)
+(d) healing: the noisy majority automaton at eps = 10^-3 from an island (a filled triangle of side k at level 0) on a 64x64 plane; survival = a one in the island's forward cone at level D+1; 400 trials each
+  triangle side 1 (D = 0): survival frequency 0.003 against the bound 18 (D+1)^3 eps = 0.018
+  triangle side 2 (D = 2): survival frequency 0.055 against the bound 18 (D+1)^3 eps = 0.486
+  triangle side 3 (D = 4): survival frequency 0.098 against the bound 18 (D+1)^3 eps = 2.250
+  triangle side 4 (D = 6): survival frequency 0.198 against the bound 18 (D+1)^3 eps = 6.174

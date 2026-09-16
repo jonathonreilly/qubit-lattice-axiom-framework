@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_poisson_variance_factor.py", line 154, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_poisson_variance_factor.py", line 136, in run
+    assert -1e-13<D<1+1e-13 and abs(D-dual)<2e-13
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

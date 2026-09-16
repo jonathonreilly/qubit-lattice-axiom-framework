@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/block03_all_mode_and_states_check.py", line 185, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/block03_all_mode_and_states_check.py", line 181, in run
+    start=time.time();theta=theta_checks();physical=[full_physical_check(N,.7,.23,.03) for N in [3,4]];states=charged_paths()
+                                                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/block03_all_mode_and_states_check.py", line 120, in full_physical_check
+    expected,_=charged_transfer(N,delta,g,hop)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-continuous-time-bridge-20260916/.claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/block03_all_mode_and_states_check.py", line 92, in charged_transfer
+    assert comm/delta**2>1.
+           ^^^^^^^^^^^^^^^^
+AssertionError

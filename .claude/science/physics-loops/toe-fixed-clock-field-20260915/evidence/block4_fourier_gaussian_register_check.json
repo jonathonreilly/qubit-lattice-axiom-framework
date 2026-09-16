@@ -1,0 +1,177 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "symbol": {
+    "momentum_degree_cases": 240,
+    "maximum_hodge_symbol_error": 3.788973251351083e-15
+  },
+  "fourier_samples": [
+    {
+      "fixture": "one_edge",
+      "samples": [
+        {
+          "grid": 12,
+          "energy": 0.15396515761529947,
+          "analytic_infinite_bound": 0.4042125687670212,
+          "sampled_ratio": 0.3809014600534142
+        },
+        {
+          "grid": 20,
+          "energy": 0.15458314018963207,
+          "analytic_infinite_bound": 0.4042125687670212,
+          "sampled_ratio": 0.3824303154678256
+        },
+        {
+          "grid": 28,
+          "energy": 0.15475446370487322,
+          "analytic_infinite_bound": 0.4042125687670212,
+          "sampled_ratio": 0.38285416056438887
+        }
+      ]
+    },
+    {
+      "fixture": "plaquette_current",
+      "samples": [
+        {
+          "grid": 12,
+          "energy": 0.499975887345679,
+          "analytic_infinite_bound": 3.2337005501361697,
+          "sampled_ratio": 0.15461415786462515
+        },
+        {
+          "grid": 20,
+          "energy": 0.499996875,
+          "analytic_infinite_bound": 3.2337005501361697,
+          "sampled_ratio": 0.1546206481546182
+        },
+        {
+          "grid": 28,
+          "energy": 0.49999918653685965,
+          "analytic_infinite_bound": 3.2337005501361697,
+          "sampled_ratio": 0.1546213629817408
+        }
+      ]
+    },
+    {
+      "fixture": "separated_integer_currents",
+      "samples": [
+        {
+          "grid": 12,
+          "energy": 2.508877942529014,
+          "analytic_infinite_bound": 21.69232274694883,
+          "sampled_ratio": 0.11565741353732645
+        },
+        {
+          "grid": 20,
+          "energy": 2.509022697729214,
+          "analytic_infinite_bound": 21.69232274694883,
+          "sampled_ratio": 0.11566408664476122
+        },
+        {
+          "grid": 28,
+          "energy": 2.5090418701573793,
+          "analytic_infinite_bound": 21.69232274694883,
+          "sampled_ratio": 0.11566497047948879
+        }
+      ]
+    }
+  ],
+  "feature_registers": {
+    "cases": 576,
+    "maximum_inner_product_error": 2.6645352591003757e-15,
+    "maximum_local_norm_error": 8.881784197001252e-16
+  },
+  "source": {
+    "source_checks": [
+      {
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "source_distributions": 35,
+        "maximum": 4.487329552896175e-07,
+        "bound": 0.24250912684057585,
+        "ratio": 1.8503755348746607e-06,
+        "direct_vertex_norm_bound": 0.0012792288191100804,
+        "direct_vertex_norm_ratio": 0.00035078396342085776
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "source_distributions": 35,
+        "maximum": 9.760824394834549e-08,
+        "bound": 1.8651569507304977,
+        "ratio": 5.233245594163899e-08,
+        "direct_vertex_norm_bound": 0.0017020322867075663,
+        "direct_vertex_norm_ratio": 5.734805662068853e-05
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "source_distributions": 35,
+        "maximum": 1.6752213017472662e-07,
+        "bound": 19.443351274203245,
+        "ratio": 8.615908225501697e-09,
+        "direct_vertex_norm_bound": 0.002677895309283892,
+        "direct_vertex_norm_ratio": 6.255738586715866e-05
+      },
+      {
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "source_distributions": 35,
+        "maximum": 4.556091578640822e-07,
+        "bound": 1.109028958202744,
+        "ratio": 4.1081808954964304e-07,
+        "direct_vertex_norm_bound": 0.0016980639163908444,
+        "direct_vertex_norm_ratio": 0.0002683109590082205
+      }
+    ],
+    "leibniz_identity_error": 2.220446049250313e-16,
+    "rejected_product_of_derivatives_gap": 1.009446805663532
+  },
+  "reserves": {
+    "degree_pairs": 861,
+    "maximum_ratio": 1.0,
+    "H": 0.4042125687670212,
+    "old_H": 2.4830261002723395,
+    "source_mass_reserve_at_32768": 60.920558458320166
+  },
+  "limitations": [
+    "initial random-feature energy-premise failure is preserved under review/",
+    "Fourier grid sums are not infinite-volume error certificates",
+    "finite source tests use generic labels, x=1, and no physical convergence assertion",
+    "determinant jets and source compositions share earlier helpers",
+    "complete Gaussian/contact derivative of one prescribed graph only",
+    "no residual mixed-pair representation or physical graph sum"
+  ]
+}

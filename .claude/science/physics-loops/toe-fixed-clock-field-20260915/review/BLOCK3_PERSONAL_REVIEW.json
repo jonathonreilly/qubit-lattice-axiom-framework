@@ -1,0 +1,33 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T18:34:58.970223+00:00",
+  "current_main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "broad_all_foundation_claim": "FAIL_open_kinetic_carrier_and_interpretation_obligations",
+  "checked_hypotheses": [
+    "full domain and proper support are distinguished",
+    "all automorphisms fix the exact kernel support and content test",
+    "unused local marks remain independent of generated past",
+    "finite ancestors give consistent global histories",
+    "coalescence formula and local degree-six rank probability prove infinite pair separation",
+    "standard Borel countable determining class justifies simultaneous a.e. equality",
+    "two-site detailed balance is essential to selfadjoint square argument",
+    "direction-sensitive and null-profile escapes are preserved"
+  ],
+  "verification_limits": [
+    "same-author review only",
+    "finite blank-exterior laws are not infinite marginals",
+    "general existence and measure statements rest on analytic proofs",
+    "no matter kinetic carrier, selected physical law, or axiom-update verdict"
+  ],
+  "inputs": {
+    "notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md": "98bbc343a8a2a9c12c667f43fc648288388f4b6f4a69c7567817c955604579da",
+    "notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md": "09316b9328d0d9027a5d3573a85d8977021c619c15296607e6a371e078b55824",
+    "notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md": "6f2d582a4f82106c9d06c4cc887e019758c7d50643fd2b35a05fc0416d259adf",
+    "evidence/block3_record_pair_check.py": "1773bb397872aa2ff185ef76cc06ad143401ff85dee40ade82ff1c27686cfe93",
+    "evidence/block3_record_pair_check.json": "64d0687af1b0c7e07fe866ebc66b8f9c3059f739a76db8b7ad032af9d7cc0291",
+    "evidence/block3_record_pair_check.txt": "ec0fe991f7132d1f7c2f997034b96da567edb4ae3196f57e668c0fb510a89f64",
+    "evidence/block3_general_order_check.py": "f2bf8cd03beb300bed675129a5eb416b129e78191e70cf42855a215ff3b72695",
+    "evidence/block3_general_order_check.json": "84356aa19c943bae1767bce62fa132bcaae396545ccfc7d5e18e2df168b2a598",
+    "evidence/block3_general_order_check.txt": "74c355b551663616646445bac1d27ced8c8792b032925546c2e4a92002a7e84d"
+  }
+}

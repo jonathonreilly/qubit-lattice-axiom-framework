@@ -1,0 +1,8 @@
+{
+  "status": "structural_symbolic_equality_failure",
+  "location": "nilpotent commutator characteristic polynomial",
+  "actual_factorization": "-(c-lambda)*(c+lambda)",
+  "expected_factorization": "(-c+lambda)*(c+lambda)",
+  "exact_difference": 0,
+  "fix": "compare canonical polynomial coefficients [1,0,-c**2], no tolerance or formula change"
+}

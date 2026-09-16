@@ -1,0 +1,36 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T21:35:14.898573+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "full note and paired checker read",
+    "four-dimensional self-energy trace versus spatial constitutive trace",
+    "node-local self-energy and half-Dirac Weyl bubble count",
+    "weighted star conservation, energy identity and charge-zero exception",
+    "quadratic positive tensor variance without simultaneous diagonalization",
+    "actual quartet coframe coefficient from full four-band projections",
+    "initial birefringence remainder scoped as second order",
+    "separated-node annular matching and finite hard terms kept",
+    "isotropic variance and zero coupling exceptions",
+    "one-loop scope versus interacting phase and all-orders limits"
+  ],
+  "limits": [
+    "formal supplied weak-coupling action",
+    "small anisotropy and untilted spatial sector",
+    "unbroken time reversal and nonmerging nodes assumed",
+    "no fixed finite-link charged Coulomb phase",
+    "no independent audit"
+  ],
+  "inputs": {
+    "notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md": "2e94b2852b71956822239767aa451b04f3251374545d9e9bf9164606c6c717c0",
+    "notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md": "0b56900fd5803c100f6ca8a365bfe3e0fcfd1bd9f1e32e2bb6783ac5515c5890",
+    "evidence/block11_quartet_metric_check.py": "88df4a71cc376722579575378cace794c676c5be8ce641fc1df53fd038a1a2c8",
+    "evidence/block11_quartet_metric_check.json": "2fe82730d6384cf218f20e5cf73e35f03fb9e54b78e7b7d17e43500411668a1e",
+    "evidence/block11_quartet_metric_check.txt": "2fe82730d6384cf218f20e5cf73e35f03fb9e54b78e7b7d17e43500411668a1e"
+  },
+  "immutable_source_hashes": {
+    "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db",
+    "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d",
+    "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4"
+  }
+}

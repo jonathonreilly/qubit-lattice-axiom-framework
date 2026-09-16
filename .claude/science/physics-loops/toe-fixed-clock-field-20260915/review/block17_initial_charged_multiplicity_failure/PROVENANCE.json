@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-15T23:19:28.914192+00:00",
+  "failure": "Fourth charged-cycle eigenvalue differs from the limiting triply degenerate level by about 0.067 without improvement; small eigenpair residuals do not certify multiplicity or ordered completeness. No assertion originally guarded that comparison.",
+  "hypothesis": "single-vector sparse Krylov search missed one vector of a degenerate cluster; test by dense conserved-number blocks before accepting",
+  "planned_correction": "retain four ordered levels with multiplicity and all original fixture sizes, add explicit convergence gate after resolving discrepancy",
+  "hashes": {
+    "notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md": "0feb8d558e5e84bfd9e2c038808d526d91fce567e47c3e576f9ca98262568934",
+    "evidence/block17_cyclic_scaling_check.py": "482651c81e8527e1f857ca5189404118924396f95898ee5bd5519f5872b2cc3b",
+    "evidence/block17_cyclic_scaling_check.json": "d0247bbb0f6e1489e36c8bc3902fbd78328c442b301cb24ea54bae61e1bbeefe",
+    "evidence/block17_cyclic_scaling_check.txt": "d0247bbb0f6e1489e36c8bc3902fbd78328c442b301cb24ea54bae61e1bbeefe",
+    "evidence/block17_cyclic_scaling_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

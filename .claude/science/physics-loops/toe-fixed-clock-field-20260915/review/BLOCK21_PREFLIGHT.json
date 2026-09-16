@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-16T00:16:47.982537+00:00",
+  "status": "analytic draft frozen before check",
+  "source_sha256": "a8add7399b6fba2370056230299378887c2dda0a8473b3961903c226bf261ed2",
+  "target": "leading fixed-box slow spectrum with actual normal gauge modes",
+  "fixture": {
+    "K": [
+      [
+        4,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "m": 2.0,
+    "v": 0.7,
+    "lambda": 0.9,
+    "Aq_sigma_z": 0.15,
+    "At_sigma_z": 0.23
+  },
+  "checks": [
+    "exact coordinate shear and principal coefficient",
+    "matrix Fourier Hamiltonian Hermiticity",
+    "fast floor and slow coefficient",
+    "noncommuting coupling and connection retained",
+    "cutoff refinement and residuals"
+  ],
+  "tolerances": {
+    "residual": 2e-08,
+    "cutoff_refinement": 2e-07,
+    "coefficient_comparison": "report errors and require systematic approach across decreasing g, not a certified asymptotic bound"
+  },
+  "risks": [
+    "o(g) fixed graph only",
+    "normal evenness is load bearing",
+    "Schur complement belongs to tangent",
+    "matter gap local only",
+    "no exchange of g and L limits"
+  ]
+}

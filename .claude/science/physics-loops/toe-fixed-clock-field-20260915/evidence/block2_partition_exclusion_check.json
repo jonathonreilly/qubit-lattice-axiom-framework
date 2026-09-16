@@ -1,0 +1,59 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "new_interpolation_value": [
+    0.516,
+    0.6839999999999999
+  ],
+  "old_affine_value": [
+    0.6,
+    0.9
+  ],
+  "derivative_at_compatible_pair": [
+    -0.41999999999999993,
+    -0.27
+  ],
+  "maximum_derivative_variation_ratio": 1.0000000000000002,
+  "cochain_face_triple": [
+    0,
+    6,
+    1
+  ],
+  "incompatibility": [
+    0,
+    1,
+    0
+  ],
+  "gram_eigenvalues": [
+    7.447587003486868,
+    9.975495978941003,
+    13.70308965858681
+  ],
+  "connected_reference": {
+    "real": -2.4152690339152255e-08,
+    "imag": -9.899838659532903e-12
+  },
+  "quadrature": [
+    {
+      "order": 12,
+      "absolute_error": 1.6543617299769576e-23,
+      "relative_error": 6.849595501680915e-16
+    },
+    {
+      "order": 20,
+      "absolute_error": 1.6543617299769576e-23,
+      "relative_error": 6.849595501680915e-16
+    },
+    {
+      "order": 28,
+      "absolute_error": 6.617468763423578e-24,
+      "relative_error": 2.7398472445981596e-16
+    }
+  ],
+  "wrong_local_contact_routing_error": 9.278429135188323e-09,
+  "limitations": [
+    "three-component identity fixture only",
+    "shared float cochain inputs",
+    "no spatial routing or full convergence theorem"
+  ]
+}

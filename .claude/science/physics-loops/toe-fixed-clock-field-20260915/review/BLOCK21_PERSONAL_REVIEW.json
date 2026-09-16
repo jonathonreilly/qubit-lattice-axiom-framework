@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-16T00:22:24.093806+00:00",
+  "status": "personal_provisional_review_no_independent_audit",
+  "checked": [
+    "fixed graph and local simple band hypotheses",
+    "normal exact ground parity and uniform moments at fixed graph",
+    "P/Q off-diagonal g term gives g squared energy error",
+    "tangent Schur complement versus normal metric",
+    "local connection and Berry error form estimate",
+    "strong compactness preserves multiplicities",
+    "cubic harmonic electric normalization",
+    "iterated limit order explicit"
+  ],
+  "risks": [
+    "all constants depend on volume",
+    "new localization and two-scale min-max argument needs independent review",
+    "no finite payload or fixed positive coupling phase"
+  ],
+  "inputs": {
+    "notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md": "a8add7399b6fba2370056230299378887c2dda0a8473b3961903c226bf261ed2",
+    "notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md": "7b0c2492f27f5038cb319f0e730f56102740354d4c22e7917f2a467f15929145",
+    "evidence/block21_slow_fast_check.py": "d73fc24eee2cc1afb330ec5b8692328506ae710ae20d0cbae232d663978c770c",
+    "evidence/block21_slow_fast_check.json": "f0731d10fb593dac793af7a9b91103120abf45cc8ac52591e7851070b7c71a3e",
+    "evidence/block21_slow_fast_check.txt": "4765433805675b216a4cdf638140ac90393faec5997be999eb5cebd53eb382bc"
+  }
+}

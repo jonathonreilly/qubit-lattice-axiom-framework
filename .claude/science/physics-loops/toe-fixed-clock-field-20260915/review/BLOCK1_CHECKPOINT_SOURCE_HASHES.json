@@ -1,0 +1,23 @@
+{
+  "captured_utc": "2026-09-15T14:14:37.923847+00:00",
+  "files": {
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/STATE.yaml": "ff5df5a49a03ab01e59f784b59aa32e192ff02337093d3555da76d9d4c1e8546",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/READING_LEDGER.md": "4d9259c2e3522953c36f243f5060ba40656344f0f251a919e134a8af27703cf4",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/APPROACH_REGISTRY.md": "b7332b5ce937d054ef2ce9c74199da4e617f1b296b126c887ff1c2b5afe6eb5e",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/TRACE_GATE.md": "b30ad028d85dd3b1e83ec29ad9248ddf97876f69f3382167f06aecd0b63d8aa9",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/GOAL.md": "eb07cd7ad8e81e4d07195f2a577a32ed92bb7cf824fd27469dac6105489aa469",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/OPPORTUNITY_QUEUE.md": "342f9afdfcd0427e5ff22877e3cdcebef7c4e07e9adaa8986793a34dc216f50e",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/HANDOFF.md": "f61c95473d26ce31944abc399199e53ae35be80b59034852a983d9f4d1a44354",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_generator_check.py": "2f12fa7be53742b085ccadf09ca2b64542fed3fa27f5e79662ec97538c45aaaf",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_generator_check.json": "4daa3faa6aba988f564f2ae48a47a9fb0991a867bb491364a3ea1e2235a8e4d4",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md": "2e7b7f7d142d2e6828becdcf82cb31456cba8f49feb1cd2d4dd9d58d89579535",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/missing_smoothing_noise.stderr": "80ed7932cb5da615bc506d8e0936a8cd1a9e1799b55d2770d85d203f33d1d8f8",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/RESULTS.json": "328f731e82b395e0b6cbaeb9541a891a4e0683367c2b6e119755a7cc3296664d",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_rate_energy.stderr": "ce49a6ffec5218370b869dc49b5fde9ec72f311af9e4ea7a467c1e19f4bb78c1",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/missing_smoothing_noise.py.gz": "b9c205d2b69832759e34dd3a9f41b871da9ebef0fea8d8d05abbbf957ba3d1ed",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_shift_phase.py.gz": "3e9561520d9623f9f8ef1fcea50dfc89b19a485ed8d41b119b32f1b2df12ca96",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_rate_energy.py.gz": "f2633dcee87e1292f846f2955d6b7e0f754464db09c3111c7a58fd510258348e",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block1_mutants/wrong_shift_phase.stderr": "52db65520ae4444c7c41867675601300258e80a678d9c644e2f132cbb640051b"
+  },
+  "review": "personal derivation and checks only"
+}

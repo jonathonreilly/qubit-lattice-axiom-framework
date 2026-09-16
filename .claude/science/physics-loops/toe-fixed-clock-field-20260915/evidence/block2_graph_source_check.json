@@ -1,0 +1,52 @@
+{
+  "status": "finite_graph_source_checks_passed",
+  "patterns": {
+    "connected_bond_state_patterns": 624,
+    "parity_matched_remainder_patterns": 23556,
+    "maximum_augmented_edges": 28,
+    "minimum_spatial_one_minus_alpha": 0.00033333333333340764,
+    "minimum_actual_source_power": 3.928571428571429,
+    "unmarked_bridge_negative_control": true
+  },
+  "finite_group_holder": [
+    {
+      "group_order": 5,
+      "graph_edges": 10,
+      "actual": 0.9070277462346402,
+      "bound": 5.763564351048295
+    },
+    {
+      "group_order": 5,
+      "graph_edges": 10,
+      "actual": 0.22338057774508885,
+      "bound": 1.5616776644096708
+    },
+    {
+      "group_order": 5,
+      "graph_edges": 10,
+      "actual": 1.8627686893485502,
+      "bound": 8.252718883398817
+    }
+  ],
+  "physical_bond_source_identities": [
+    {
+      "case": "compatible",
+      "subtracted_real": "0.00000860227659845972188482574248290547924377309454072629386319535",
+      "subtracted_imag": "0.0000178682225172188397727111613415745467116388185789539834349553",
+      "parity_expansion_error": "6.16731171436983129095827933694410149153741137618425039964848e-61"
+    },
+    {
+      "case": "electric_overlap",
+      "subtracted_real": "0.00017266475598544308358813438558104848650611592076357453040796",
+      "subtracted_imag": "0.000353142809648131481850114181929037465112565567416883441452971",
+      "parity_expansion_error": "2.76100022394063760534253811693644829291929296717423360332281e-62"
+    },
+    {
+      "case": "double_overlap",
+      "subtracted_real": "0.00013085124767016776909726132243417913034626885806697858125374",
+      "subtracted_imag": "0.000266443851788741920458246402628657118622069101112100363524365",
+      "parity_expansion_error": "3.96177117642640261068218242231067006658325581933336036799965e-62"
+    }
+  ],
+  "scope": "Exhaustive four-label parity bookkeeping, finite tree mixtures and source identities. No infinite-volume numerical limit, all-order coefficient bound, interval arithmetic or independent review."
+}

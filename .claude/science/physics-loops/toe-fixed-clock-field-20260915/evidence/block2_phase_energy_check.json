@@ -1,0 +1,155 @@
+{
+  "status": "finite_exact_cochain_and_phase_checks_passed",
+  "phase_periodicity_max_error": "6.791759309120034275631839468165843835511898398604353642186961167451626e-70",
+  "gauge_dependent_wrong_energy_ratios": [
+    "21641/7",
+    "2975",
+    "20009/7",
+    "2975"
+  ],
+  "rooted_checks": [
+    {
+      "species": "electric",
+      "root": 0,
+      "integral": 4.6123129537354535,
+      "frame_bound": 31.04880566067852,
+      "physical_energy": "17/24",
+      "energy_bound": 125.83745611388932
+    },
+    {
+      "species": "magnetic",
+      "root": 0,
+      "integral": 3.708827170627726,
+      "frame_bound": 21.616219593083084,
+      "physical_energy": "7/24",
+      "energy_bound": 51.815423105719134
+    },
+    {
+      "species": "electric",
+      "root": 5,
+      "integral": 2.455946837813608,
+      "frame_bound": 14.34443759423128,
+      "physical_energy": "17/24",
+      "energy_bound": 125.83745611388932
+    },
+    {
+      "species": "magnetic",
+      "root": 5,
+      "integral": 3.5412543287256857,
+      "frame_bound": 9.27066702016967,
+      "physical_energy": "7/24",
+      "energy_bound": 51.815423105719134
+    },
+    {
+      "species": "electric",
+      "root": 13,
+      "integral": 1.813963278864132,
+      "frame_bound": 8.377335003504825,
+      "physical_energy": "17/24",
+      "energy_bound": 125.83745611388932
+    },
+    {
+      "species": "magnetic",
+      "root": 13,
+      "integral": 4.22279585366456,
+      "frame_bound": 8.902269360727514,
+      "physical_energy": "7/24",
+      "energy_bound": 51.815423105719134
+    },
+    {
+      "species": "electric",
+      "root": 23,
+      "integral": 4.718240010563446,
+      "frame_bound": 38.64115410115777,
+      "physical_energy": "17/24",
+      "energy_bound": 125.83745611388932
+    },
+    {
+      "species": "magnetic",
+      "root": 23,
+      "integral": 1.2322056123449594,
+      "frame_bound": 2.795041326253594,
+      "physical_energy": "7/24",
+      "energy_bound": 51.815423105719134
+    }
+  ],
+  "mixed_four_cycle": {
+    "electric_labels": [
+      0,
+      6
+    ],
+    "magnetic_labels": [
+      0,
+      18
+    ],
+    "width": [
+      4,
+      1,
+      1,
+      1
+    ],
+    "same_species_compatible": true,
+    "fill_cells": [
+      [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "exact_P_entries": [
+      "3256681/4643045",
+      "-211582/4643045",
+      "496/3905",
+      "63/3905"
+    ],
+    "average_real": -0.4564196014534977,
+    "empty_term": -0.3625533208193221,
+    "cycle_term": -0.09386628063417557
+  },
+  "noninteger_N_periodicity_failure": 1.2175228580174413,
+  "uniform_reserve_upper_at_x2048": 0.005187242215518125,
+  "scope": "Author finite diagnostic; no complete gas sum, continuum limit, interval certification, or independent review."
+}

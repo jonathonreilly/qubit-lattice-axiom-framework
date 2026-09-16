@@ -1,0 +1,32 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T23:06:43.746007+00:00",
+  "latest_main_seen": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "checked": [
+    "uniform centered cyclic coercivity",
+    "balanced onsite physical trial",
+    "relative entropy reference is full-space and does not discard coherent states",
+    "modular support, not gauge invariance alone, suppresses aliases",
+    "local alias statement has no hidden global volume claim",
+    "gentle projection uses subnormalized states",
+    "finite-time comparison applied after local tail control",
+    "finite-core correlations and local normal approximation precede spectral limit",
+    "detailed balance sign and negative-frequency cooling bound",
+    "weak-continuity qualification for KMS and rotor dynamics",
+    "fixed-graph liminf uses positive electric Fatou bound and bounded strong remainder",
+    "all alias sectors included in independent finite fixture"
+  ],
+  "risks": [
+    "new local compactness and spectral-limit synthesis needs independent review",
+    "fixed positive couplings only",
+    "no uniqueness, rate, fixed-payload phase, or particle-pole claim",
+    "source history positivity does not make every observable a positive estimator"
+  ],
+  "inputs": {
+    "notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md": "1a94fed13d6f42c62828886c46966f1c397c70f792916afe73a2793722a3c323",
+    "notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md": "1d7541fdfb1e057736301edd05fa2e2603d6759641b17feb7e65ab3313090fde",
+    "evidence/block16_cyclic_equilibrium_check.py": "f662d1aa523462d7374f4ee3e79c252e4806bd0720330cc40bfccd55bef835a8",
+    "evidence/block16_cyclic_equilibrium_check.json": "80d937743c39be05359aabbae36d3395babdb07224dd5c31472b09499ede0aef",
+    "evidence/block16_cyclic_equilibrium_check.txt": "80d937743c39be05359aabbae36d3395babdb07224dd5c31472b09499ede0aef"
+  }
+}

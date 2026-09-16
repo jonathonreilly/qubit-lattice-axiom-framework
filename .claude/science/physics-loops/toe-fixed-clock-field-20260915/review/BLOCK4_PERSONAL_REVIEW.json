@@ -1,0 +1,40 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T18:52:07.590259+00:00",
+  "current_main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "checked_hypotheses": [
+    "infinite cubic cochain normalization and ball inside Brillouin cube",
+    "square-root form domain and real isonormal replica family",
+    "actual feature-register endpoint norms and cyclic scalar realizations",
+    "contact signs remain on independent contact registers",
+    "all degree losses absorbed with the same graph-independent activity reserve",
+    "Leibniz partitions rather than product of derivatives",
+    "fixed-graph cutoff scope only",
+    "Prufer normalizations and exact rational generating-series bound",
+    "path-only count distinguishes multiplicity issue from high vertex degrees",
+    "divergent common-majorant series is not a physical lower bound"
+  ],
+  "remaining_obligations": [
+    "mixed residual representation",
+    "actual connected graph grouping and summation",
+    "physical thermodynamic state and full field/score limit"
+  ],
+  "verification_limits": [
+    "same author proof and finite checks",
+    "synthetic fixture energy-premise failure preserved and normalization declared",
+    "Fourier samples do not certify infinite-volume errors",
+    "shared determinant-jet helpers",
+    "no full physical expansion evaluated"
+  ],
+  "inputs": {
+    "notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md": "ad0c667546fd02f159ce668981af1ac74e683b92bb4e389d6f2c9d3a035b8126",
+    "notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md": "6b6d61addfaa4047d93f300c0063b326055763bbb2c6c596ad633899248ef66b",
+    "evidence/block4_fourier_gaussian_register_check.py": "c7b801465c0abcc9a000077ec3a8d2b496f41ab6b8b69f2c4c88c6178f604d26",
+    "evidence/block4_fourier_gaussian_register_check.json": "00dc854fb7fb5435da31b0b8e9d8dee7b4a8d0845097dd251dc068a53d404da3",
+    "evidence/block4_fourier_gaussian_register_check.txt": "00dc854fb7fb5435da31b0b8e9d8dee7b4a8d0845097dd251dc068a53d404da3",
+    "evidence/block4_tree_count_check.py": "28297887e230ef56a214122949ec173e242555a8d1dd19211adc512d5c06d6f8",
+    "evidence/block4_tree_count_check.json": "ec18f3edeb8317767e433c1564b09969f3810c3460e0e6d525924744db7881bf",
+    "review/block4_initial_fixture_failure/block4_fourier_gaussian_register_check.py": "538e1b1726e9ad6cc36f3e80a84527fc5ac3bf95fa98541cfdfe1a1d88077ceb",
+    "review/block4_initial_fixture_failure/failure.json": "8d834e4629c09d56908e5ce28f8fe733ad2b1ff7a503fa4aeb3f5c4e53a4549f"
+  }
+}

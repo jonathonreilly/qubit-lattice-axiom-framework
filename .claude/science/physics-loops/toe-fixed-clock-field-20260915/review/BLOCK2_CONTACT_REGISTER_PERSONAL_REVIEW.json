@@ -1,0 +1,34 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T18:04:41.329638+00:00",
+  "current_main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "checked_hypotheses": [
+    "cofactor signs factor locally for every vertex order",
+    "one-sided maps are explicitly noncommuting; cyclic realizations concern the same scalar function",
+    "edge contact registers are inactive outside endpoint intervals",
+    "all matching inversions have overlapping intervals and can be evaluated with live registers",
+    "repeated selected rows/columns vanish at their common endpoint",
+    "block Schur estimate contains only endpoint footprint counts",
+    "exponential footprint reserve yields square-root factorial degrees",
+    "prescribed-graph source bound does not sum arbitrary extra forests or identify physical multiplicities"
+  ],
+  "remaining_obligations": [
+    "non-cycle mixed phase factors",
+    "branching and physical connected combinatorics",
+    "selected-state and full physical Gaussian characteristic functional"
+  ],
+  "verification_limits": [
+    "author checks and personal proof review only",
+    "generic finite matrices test lemmas rather than physical continuum limits",
+    "shared CAR and parity helpers declared",
+    "Fourier-energy route in reassessment is uncompleted"
+  ],
+  "inputs": {
+    "notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md": "0e1056fc6324a5f791e682535b13acddff293817e0decf12b4ff92c4b29b847a",
+    "notes/BLOCK2_CONTACT_REGISTER_SUM.md": "56b56e185658ae4fceb179cc5c11edaf8ebdb04f6a3b8496d1f0dd5b9d833350",
+    "evidence/block2_cofactor_cyclic_check.py": "15443bca5f8224de92d9f93916d14c4fa1e0e55bf76805216ab9977e9ffd9e33",
+    "evidence/block2_cofactor_cyclic_check.json": "b4994afbe319717ab482292ae8d1bceb974888a911f7cbfb17a63070380aee84",
+    "evidence/block2_contact_register_check.py": "3e33d454e6ce1794da86835cd55b19a162b5294a42a0d0e91a9038d231978721",
+    "evidence/block2_contact_register_check.json": "d9ec22f9087b3da21337e307300ea7fdf5e1c90ee2a40ae536aae8c15f113bc4"
+  }
+}

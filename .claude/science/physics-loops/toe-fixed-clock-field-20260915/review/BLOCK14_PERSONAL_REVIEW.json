@@ -1,0 +1,32 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T22:23:42.619325+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "canonical spinor/current/photon normalization",
+    "Weyl versus Dirac multiplicity",
+    "number rate distinct from radiated power",
+    "phase versus group speed and strict thresholds",
+    "positive anisotropic photon tensor via direct Pauli phase space",
+    "physical branch of fermion cap root",
+    "generic angular margin and its failure at shear boundary",
+    "boundary rational integral from original tensor",
+    "actual quartet rates do not cancel with chirality",
+    "first failures frozen before repairs; tolerances unchanged",
+    "running approximation does not imply finite residue or isolated pole"
+  ],
+  "limits": [
+    "leading coupling order in a supplied massless action",
+    "continuum cones, not an interacting finite-link ground state",
+    "running substitution is a leading-log approximation",
+    "no pole residue, soft-photon dressing or all-order lifetime theorem",
+    "same-author verification"
+  ],
+  "inputs": {
+    "notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md": "39f8bcb1dab63a3c0dcaab82efd39258d0f846f9c0aecf784fc92a4e52c20c4d",
+    "notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md": "9ab6e2df6c4b952cd4820a6098a5f8fd78de0ffc9b3e213279f898eef31eac89",
+    "evidence/block14_decay_check.py": "44d253afb88ab26cd58bbf88998544cb284f5a396e899432d11e4d03bc03b210",
+    "evidence/block14_decay_check.json": "1a379dcda35c26af0c2f63566129ee9d515d3b096f8cf04bf5d45394d6cd75ea",
+    "evidence/block14_decay_check.txt": "1a379dcda35c26af0c2f63566129ee9d515d3b096f8cf04bf5d45394d6cd75ea"
+  }
+}

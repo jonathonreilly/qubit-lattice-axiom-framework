@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/toe-clock-missing_smoothing_noise.py", line 141, in <module>
+    main()
+    ~~~~^^
+  File "/tmp/toe-clock-missing_smoothing_noise.py", line 105, in main
+    assert error < 4e-12
+           ^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,53 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "exclusion": {
+    "words": 9330,
+    "maximum_error": 1.1102230246251565e-16,
+    "projector_overlap_wrong_value": 1.9999999999999996,
+    "missing_boost_single_wrong_value": 0.4999999999999999,
+    "auxiliary_groups": 4
+  },
+  "generic_source_cycle": {
+    "length": 4,
+    "source_patterns": 35,
+    "groups": 4,
+    "auxiliary_dimension": 16,
+    "rho": 0.14241027894225602,
+    "source_bound": 0.01294795249972012,
+    "maximum_operator_vs_exclusion_error": 4.092663644423101e-23,
+    "maximum_source_bound_ratio": 8.509173167871135e-06
+  },
+  "six_cycle": {
+    "length": 6,
+    "source_patterns": 5,
+    "groups": 6,
+    "auxiliary_dimension": 64,
+    "rho": 0.17702974524260576,
+    "source_bound": 0.0009717085503500432,
+    "maximum_operator_vs_exclusion_error": 1.2626364062055999e-23,
+    "maximum_source_bound_ratio": 3.080918936513304e-05
+  },
+  "cochain_footprints": {
+    "support_pairs": 12168,
+    "footprint_bound": "size <= 3 l1-current mass",
+    "finite_free_fixture_scope": "incidence identity only; no finite-boundary scaling assertion",
+    "actual_cycle": {
+      "length": 4,
+      "source_patterns": 35,
+      "groups": 4,
+      "auxiliary_dimension": 16,
+      "rho": 19.123973887090163,
+      "source_bound": 0.40992127884169777,
+      "maximum_operator_vs_exclusion_error": 4.217810084673521e-24,
+      "maximum_source_bound_ratio": 7.74534433785278e-09
+    }
+  },
+  "fixed_parameter_bound": {
+    "endpoint_x": "32768.0",
+    "operator_norm_upper": "3.8614003908013783908095257910050408997306835666725125389464e-33",
+    "example_beta": 1024,
+    "example_N": 8192,
+    "scope": "sufficient restricted loop bound, not a phase window"
+  }
+}

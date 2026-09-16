@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-16T00:09:03.144892+00:00",
+  "status": "personal_provisional_review_no_independent_audit",
+  "checked": [
+    "Fourier sign and Weyl multiplicity",
+    "uniform energy versus C2 expansion distinguished",
+    "compact uniform node avoidance",
+    "positive heat product gives unique diagonal-metric minimum",
+    "exact lattice reflection stationarity plus C2 stability",
+    "paired opposite-charge energies add",
+    "gap coefficient includes all three half-grid offsets",
+    "local Riemann-sum limit distinct from global twist",
+    "g/L dynamics expressly conditional"
+  ],
+  "risks": [
+    "new asymptotic proof needs independent audit",
+    "no interacting reduction or uniform gauge fluctuation remainder"
+  ],
+  "inputs": {
+    "notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md": "58fc632b9c56ffb127b2fc38a4d81be5c2c0b2aa688b90a2717285b262e7675c",
+    "notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md": "43f00a6d8bc92c3070c3fd6508f6ecc457e172576069dade281fa100bef7898f",
+    "evidence/block20_holonomy_check.py": "70414572435bddda43cfbc6e4277f107d9410f0ac0a1e118d0538704bea224fa",
+    "evidence/block20_holonomy_check.json": "ba1ccec5379118fe73c950b450bdd4fca53117b4f446ab918b23595f8d79f452",
+    "evidence/block20_holonomy_check.txt": "ba1ccec5379118fe73c950b450bdd4fca53117b4f446ab918b23595f8d79f452"
+  }
+}

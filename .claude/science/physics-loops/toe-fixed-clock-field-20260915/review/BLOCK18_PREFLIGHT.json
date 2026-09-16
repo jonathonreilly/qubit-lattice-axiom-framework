@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-15T23:29:59.278527+00:00",
+  "status": "analytic draft frozen before companion checks",
+  "target": "full nonnegative cyclic phase-generator cone and calibrated dispersion accuracy",
+  "source_sha256": "fcbd4389bcb37d1a2ba69e93699dd2574751bf1c79e5df3bf76b3ac14c0110db",
+  "planned_checks": [
+    "rate/symbol/phase matrix dictionary",
+    "all-character pointwise envelope",
+    "positive jump heat kernels",
+    "improved positive Hamiltonian with negative small-time kernel",
+    "periodic spectral errors and exact Gaussian sixth moment"
+  ],
+  "scope": "single-link translation-invariant all-time positive kernel; no axiom or universal phase no-go"
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.py", line 145, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.py", line 136, in main
+    rows = [check(beta) for beta in [1., 2., 4.]]
+            ~~~~~^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-fixed-clock-field-20260915/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.py", line 113, in check
+    assert relative < 4e-12
+           ^^^^^^^^^^^^^^^^
+AssertionError

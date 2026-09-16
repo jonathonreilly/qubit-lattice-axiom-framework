@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-16T01:07:56.797564+00:00",
+  "status": "derivation frozen before finite checks",
+  "source_sha256": "c7f61997953db00a0e2aabc8f6e9936234443d95cbc86a57d9ef2ebf7e0fc7ba",
+  "checks": [
+    "full three-letter operator versus reducing binary embedding",
+    "same local symmetric source",
+    "off-diagonal signs and connected word graph including c=0",
+    "direct tensor texture overlaps versus product formula",
+    "positive texture Rayleigh bounds"
+  ],
+  "tolerances": {
+    "embedding": 2e-12,
+    "tensor_overlap": 2e-12,
+    "rayleigh_bound": 2e-12
+  },
+  "scope": "real nonnegative overlap momenta and J>0 only; positivity proof supplies infinite support, finite matrices do not"
+}

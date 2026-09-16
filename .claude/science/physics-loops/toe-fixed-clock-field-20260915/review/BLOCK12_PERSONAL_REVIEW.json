@@ -1,0 +1,31 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T21:48:51.812724+00:00",
+  "latest_main_seen": "083a58b4e7faca5839a7b31fab553f6fa1f2c254",
+  "checked": [
+    "actual onsite negative levels and exact physical N2 zero-flux trial",
+    "translation averaging needed for local electric bound",
+    "subnormalized gentle projection and trace-one local compactness",
+    "physical Gauss support retained under local trace-norm convergence",
+    "off-cutoff Hpsi explicitly retained in core identity",
+    "same-state dynamics comparison with local rather than global projection",
+    "polarization states inherit tail bound",
+    "spectral positivity via integrable negative-energy test functions",
+    "strong local core approximation using stationarity",
+    "no full-algebra norm-continuity assumption for unbounded onsite rotor phases"
+  ],
+  "limits": [
+    "joint volume and cutoff subsequence, no uniqueness or convergence rate",
+    "symmetry-averaged states may mix ordered pure states",
+    "no fixed-S phase",
+    "eight of nine finite dynamics bounds trivial",
+    "same-author verification only"
+  ],
+  "inputs": {
+    "notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md": "15c5caffb98556395b6a6aa2bbc4b794355a4914d9fa1b81e73e9fdeac649f6b",
+    "notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md": "b33ec2ad916518b2e5556fa7adee7d7ac9f5bd343276d7a7eb657320990834f1",
+    "evidence/block12_ground_cutoff_check.py": "ab702b2e95d5ba4269b7703d617d8bca7520e284b8ad26a15648fe4b18d10ecc",
+    "evidence/block12_ground_cutoff_check.json": "c3416003cbba2f86bf5b3cf022a7bf87ffba218e0960215a43bcbd42bbe57a12",
+    "evidence/block12_ground_cutoff_check.txt": "c3416003cbba2f86bf5b3cf022a7bf87ffba218e0960215a43bcbd42bbe57a12"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "cause": "double precision cancellation in 1-c*c, amplified by soft final energy",
+  "maximum_double_error": {
+    "fixture": 1,
+    "degree": 128,
+    "p": 0.9954633537799564,
+    "q": 0.004536646220043572,
+    "K": 0.9918417212438688,
+    "omega": 1.0,
+    "cosine": 0.9999962196806945,
+    "error": 3.6697311855959924e-12
+  },
+  "same_scalar_geometry_70_digit_norm_residual": "1.405260279452329225190065131559967528526315191327231464259430178620191e-67",
+  "repair": "symmetric longitudinal components and factored transverse product; unchanged 2e-12 normalization tolerance",
+  "rate_formula_changed": false
+}

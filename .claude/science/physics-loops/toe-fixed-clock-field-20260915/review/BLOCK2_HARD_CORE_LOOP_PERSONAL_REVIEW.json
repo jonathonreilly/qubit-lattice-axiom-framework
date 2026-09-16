@@ -1,0 +1,33 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T17:15:30.268279+00:00",
+  "current_main": "b64cd9c7599a8149666506c65c3fa9bfe55442ee",
+  "checked_hypotheses": [
+    "actual common-endpoint/common-four-cell support graph matches footprint intersection",
+    "operator lowering, normalization and complete overlap exclusion are exact",
+    "resource boundary vectors have norm one; no partial trace over resource dimension",
+    "commutation required only for source-vertex rotation; all lowering entries commute",
+    "source interpolation has bounded scalar analytic strip functions and zero regularization at finite cutoff",
+    "fixed-length rooted graph Holder supplies ordinary cutoff convergence; geometric operator norm controls length tail",
+    "two-source coefficient symbols are continuous at each length and converge uniformly by operator-norm summability",
+    "separate species flip invariance belongs to the restricted loop weight, not arbitrary residual mixed factors"
+  ],
+  "remaining_obligations": [
+    "physical connected graph combinatorial identification",
+    "residual mixed factors and branching networks",
+    "softened forest exclusions",
+    "full physical state, quadratic coefficient and free-boundary matching"
+  ],
+  "verification_limits": [
+    "personal derivation and checks only",
+    "shared cochain construction is declared",
+    "finite fixture parameters test identities outside the small-norm range",
+    "no finite numerical loop value is interpreted as a physical covariance"
+  ],
+  "inputs": {
+    "notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md": "5b1b49c2262d447c74970a97cb55f51230ecd8ad4d30620a523fd9b1f6bc0f3e",
+    "notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md": "af7c4c31b458592270de30f45a0eb959721c960e639aa3c6a0792604de63d5c6",
+    "evidence/block2_hard_core_cycle_check.py": "0fb87aba27390f2b9b5dbf07e433c3a72b049ec9999ef99d5184709ff21c9abb",
+    "evidence/block2_hard_core_cycle_check.json": "c677b893df290e4efd956c0f2cd5534bea66d65ec67879321e0f64fe162fc1ce"
+  }
+}

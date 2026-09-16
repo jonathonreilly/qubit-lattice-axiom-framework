@@ -1,0 +1,128 @@
+{
+  "status": "PASS_personal_quadratic_loop_challenges",
+  "checks": {
+    "parameter integral full quadratic coefficient": 4,
+    "unshifted exact S3 moments independently recover the parameter integral": 4,
+    "temporal normalization removes scalar quadratic wavefunction terms": 3,
+    "exact scalar velocity formula has matching quadratic expansion": 1,
+    "full positive coframe parameter quadrature comparison": 6,
+    "full coframe pair has derived quadratic mean self-energy": 3,
+    "mean fermion solution obeys derived quadratic self-energy": 5,
+    "photon metric solution obeys derived quadratic tensor increment": 5,
+    "positive constitutive history independently recovers photon mean drift": 5,
+    "N3 quadratic relative-source cancellation is retained": 1,
+    "quartet resonant relative mode is not purely homogeneous": 1,
+    "constitutive-history quadrature cutoff comparison": 9,
+    "reflected pair cancels off-diagonal mixture entries": 9,
+    "exact positive metric extraction matches quadratic common drift": 9,
+    "quadratic mean backreaction leaves prior polarization coefficient unchanged": 9
+  },
+  "full_matrix_quadrature": [
+    {
+      "shear": 0.04,
+      "quadratic_source_error": 0.0007544886750950684
+    },
+    {
+      "shear": 0.02,
+      "quadratic_source_error": 0.000188576895905399
+    },
+    {
+      "shear": 0.01,
+      "quadratic_source_error": 4.714139929358299e-05
+    }
+  ],
+  "flow_solutions": [
+    {
+      "N": 1,
+      "relative_coefficient": "-1/z**3 + z**(-4)",
+      "common_coefficient": "-5/24 + 5/(24*z**4)"
+    },
+    {
+      "N": 2,
+      "relative_coefficient": "-log(z)/(4*z**2)",
+      "common_coefficient": "-5/16 + 5/(16*z**2)"
+    },
+    {
+      "N": 3,
+      "relative_coefficient": "0",
+      "common_coefficient": "-3/8 + 3/(8*z**(4/3))"
+    },
+    {
+      "N": 4,
+      "relative_coefficient": "1/(4*z) - 1/(4*z**(3/2))",
+      "common_coefficient": "-5/12 + 5/(12*z)"
+    },
+    {
+      "N": 6,
+      "relative_coefficient": "3/(8*z**(2/3)) - 3/(8*z**(4/3))",
+      "common_coefficient": "-15/32 + 15/(32*z**(2/3))"
+    }
+  ],
+  "full_constitutive_mixtures": [
+    {
+      "shear": 0.04,
+      "z": 2.0,
+      "metric_error": 2.1573011541467224e-07,
+      "W_error": 9.890915003808354e-07
+    },
+    {
+      "shear": 0.04,
+      "z": 5.0,
+      "metric_error": 1.2884592517751776e-07,
+      "W_error": 5.571463109559337e-07
+    },
+    {
+      "shear": 0.04,
+      "z": 10.0,
+      "metric_error": 7.054153922688084e-08,
+      "W_error": 2.8493589887909966e-07
+    },
+    {
+      "shear": 0.02,
+      "z": 2.0,
+      "metric_error": 1.3475129503065237e-08,
+      "W_error": 6.173635114047552e-08
+    },
+    {
+      "shear": 0.02,
+      "z": 5.0,
+      "metric_error": 8.049746975465843e-09,
+      "W_error": 3.478173349111181e-08
+    },
+    {
+      "shear": 0.02,
+      "z": 10.0,
+      "metric_error": 4.407289191884534e-09,
+      "W_error": 1.7789929692989854e-08
+    },
+    {
+      "shear": 0.01,
+      "z": 2.0,
+      "metric_error": 8.420708922625053e-10,
+      "W_error": 3.8572454416981985e-09
+    },
+    {
+      "shear": 0.01,
+      "z": 5.0,
+      "metric_error": 5.030608399985524e-10,
+      "W_error": 2.173236953132918e-09
+    },
+    {
+      "shear": 0.01,
+      "z": 10.0,
+      "metric_error": 2.7543145195170965e-10,
+      "W_error": 1.1115807655998646e-09
+    }
+  ],
+  "seconds": 1.7666948330588639,
+  "limits": [
+    "one-loop coefficient expansion only",
+    "two algebraic derivations by the same author",
+    "constitutive trajectories use the quadratic truncation",
+    "no uniform higher-order remainder or physical phase theorem"
+  ],
+  "sha256": {
+    "evidence/block13_quadratic_coframe_check.py": "67358d628834300d42cc1ff99b4f8431ac149ddde41142f5ede52c880540702e",
+    "notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md": "3158c18451fef988b12c5ff6e9d463ee895748c8e67238626d24ede9df48bbe2"
+  }
+}

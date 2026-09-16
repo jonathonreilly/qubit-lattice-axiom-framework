@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-16T00:49:18.617582+00:00",
+  "status": "derivation frozen before checks",
+  "source_sha256": "445359d13dc7d1076e4363bc359152e503e732425a78485a785fe90ce8969c38",
+  "target": "positive diagonal gauge weights giving a matched free optical metric",
+  "checks": [
+    "symbolic characteristic polynomial of general proportional weights",
+    "literal periodic weighted curl spectra versus lattice formula",
+    "axis necessity counterexample",
+    "independent Bloch derivative for both species and four nodes"
+  ],
+  "tolerances": {
+    "symbolic": "exact zero",
+    "matrix_spectrum": 2e-11,
+    "bloch_metric": 2e-08
+  },
+  "risks": [
+    "standard constitutive algebra not new general optical theory",
+    "weighted variant explicitly changes supplied coefficients",
+    "free leading cones only",
+    "same iterated limit as Block22",
+    "no positivity-selected metric"
+  ]
+}

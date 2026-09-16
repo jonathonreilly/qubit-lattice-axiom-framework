@@ -1,0 +1,334 @@
+{
+  "status": "PASS_personal_decay_and_kinematic_challenges",
+  "checks": {
+    "exact canonical Cherenkov number rate integral": 1,
+    "energy-weighted integral gives distinct radiated power": 1,
+    "Cherenkov leading massless coefficient": 1,
+    "radiated-power leading massless coefficient": 1,
+    "isotropic number rate agrees with separate fermion beta comparator": 1,
+    "Dirac photon rate agrees with separate photon beta comparator": 1,
+    "positive coframe fixture": 30,
+    "actual Pauli transverse trace matches general-coframe formula": 30,
+    "general Cherenkov cap has a physical positive-energy root": 281728,
+    "cap root satisfies actual anisotropic energy conservation": 281728,
+    "cap spin-weighted energy is nonnegative": 281728,
+    "independent angular cap recovers exact isotropic number rate": 4,
+    "symmetric phase-space triangle conserves vector momentum": 8192,
+    "photon final rescaled spin directions satisfy energy constraint": 8192,
+    "full Pauli phase-space integral matches anisotropic photon decay tensor": 4,
+    "anisotropic photon probability-decay matrix positive": 4,
+    "one-Weyl isotropic photon rate has half Dirac multiplicity": 3,
+    "superluminal cone cannot receive a photon pair": 1,
+    "native quartet photon leading contrast and Weyl count": 9,
+    "native fast-cone Cherenkov leading angular coefficient": 9,
+    "zero mean and chirality cancellation do not cancel allowed rates": 9,
+    "phase-contrast zero can still have superluminal group velocity": 3,
+    "exact angular-boundary emission escapes a zero-first-order-rate inference": 3,
+    "unchanged y direction remains at exact no-emission threshold": 3,
+    "analytic boundary coefficient agrees with exact cap integral": 3,
+    "original coframe current gives boundary cap rational integrand": 1,
+    "boundary cap polynomial division exact": 1,
+    "boundary integrated coefficient equals seven pi over three": 1,
+    "phase-speed-one collinear ray is an exceptional cap boundary": 1
+  },
+  "isotropic_fermion": [
+    {
+      "v": 1.01,
+      "rate_per_energy": 0.0010544540571958425,
+      "error": 1.3010426069826053e-18
+    },
+    {
+      "v": 1.1,
+      "rate_per_energy": 0.009995713460179486,
+      "error": 2.6020852139652106e-17
+    },
+    {
+      "v": 1.5,
+      "rate_per_energy": 0.041026607552577456,
+      "error": 6.938893903907228e-18
+    },
+    {
+      "v": 2.0,
+      "rate_per_energy": 0.06778821650210365,
+      "error": 8.326672684688674e-17
+    }
+  ],
+  "anisotropic_photon": [
+    {
+      "metric": [
+        [
+          0.6400000000000001,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6400000000000001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.6400000000000001
+        ]
+      ],
+      "momentum": [
+        0.2672612419124244,
+        0.5345224838248488,
+        0.8017837257372732
+      ],
+      "tensor": [
+        [
+          0.005968310365946072,
+          5.3782946391032175e-20
+        ],
+        [
+          4.8021363015722164e-20,
+          0.005968310365946074
+        ]
+      ],
+      "phase_space_error": 1.0496805317753323e-18
+    },
+    {
+      "metric": [
+        [
+          0.81,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.2100000000000002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9025
+        ]
+      ],
+      "momentum": [
+        0.2672612419124244,
+        0.5345224838248488,
+        0.8017837257372732
+      ],
+      "tensor": [
+        [
+          0.0005193538302257077,
+          0.00010163017818396779
+        ],
+        [
+          0.00010163017818396779,
+          0.0002214282007567779
+        ]
+      ],
+      "phase_space_error": 3.62790575278252e-18
+    },
+    {
+      "metric": [
+        [
+          1.0169,
+          0.0,
+          -0.26
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.26,
+          0.0,
+          1.0169
+        ]
+      ],
+      "momentum": [
+        0.2672612419124244,
+        0.5345224838248488,
+        0.8017837257372732
+      ],
+      "tensor": [
+        [
+          0.0013603770514597827,
+          -0.00011201933349285257
+        ],
+        [
+          -0.00011201933349285262,
+          0.001969125050605655
+        ]
+      ],
+      "phase_space_error": 4.38022068939595e-18
+    },
+    {
+      "metric": [
+        [
+          0.8294,
+          0.036699999999999997,
+          0.0577
+        ],
+        [
+          0.036699999999999997,
+          0.8840999999999999,
+          -0.019
+        ],
+        [
+          0.0577,
+          -0.019,
+          1.0414
+        ]
+      ],
+      "momentum": [
+        0.8164965809277261,
+        0.4082482904638631,
+        0.4082482904638631
+      ],
+      "tensor": [
+        [
+          0.0011474274057021374,
+          7.868698573843907e-05
+        ],
+        [
+          7.86869857384391e-05,
+          0.0009231188638217364
+        ]
+      ],
+      "phase_space_error": 1.1192660969238981e-18
+    }
+  ],
+  "native_quartet": [
+    {
+      "d": 0.04,
+      "z": 1.0,
+      "photon_rate_eigenvalues": [
+        0.0008805504711662344,
+        0.0010019571264735135
+      ],
+      "leading_photon_rate": 0.0009094568176679735,
+      "fermion_rate_per_energy": 0.001963979097116649,
+      "leading_fermion_rate": 0.001818913635335947
+    },
+    {
+      "d": 0.04,
+      "z": 3.0,
+      "photon_rate_eigenvalues": [
+        9.994573945546929e-05,
+        0.00010443748315985608
+      ],
+      "leading_photon_rate": 0.00010105075751866371,
+      "fermion_rate_per_energy": 0.00020759197911868996,
+      "leading_fermion_rate": 0.00020210151503732742
+    },
+    {
+      "d": 0.04,
+      "z": 10.0,
+      "photon_rate_eigenvalues": [
+        9.064397979791327e-06,
+        9.185660343967915e-06
+      ],
+      "leading_photon_rate": 9.094568176679735e-06,
+      "fermion_rate_per_energy": 1.8338498992344738e-05,
+      "leading_fermion_rate": 1.818913635335947e-05
+    },
+    {
+      "d": 0.02,
+      "z": 1.0,
+      "photon_rate_eigenvalues": [
+        0.0004473285334334586,
+        0.0004776528588965175
+      ],
+      "leading_photon_rate": 0.00045472840883398674,
+      "fermion_rate_per_energy": 0.0009463180424717886,
+      "leading_fermion_rate": 0.0009094568176679735
+    },
+    {
+      "d": 0.02,
+      "z": 3.0,
+      "photon_rate_eigenvalues": [
+        5.024691540690769e-05,
+        5.136973902942945e-05
+      ],
+      "leading_photon_rate": 5.0525378759331856e-05,
+      "fermion_rate_per_energy": 0.00010243077803580319,
+      "leading_fermion_rate": 0.00010105075751866371
+    },
+    {
+      "d": 0.02,
+      "z": 10.0,
+      "photon_rate_eigenvalues": [
+        4.539723440419768e-06,
+        4.570038758621413e-06
+      ],
+      "leading_photon_rate": 4.547284088339867e-06,
+      "fermion_rate_per_energy": 9.13196896542714e-06,
+      "leading_fermion_rate": 9.094568176679735e-06
+    },
+    {
+      "d": 0.01,
+      "z": 1.0,
+      "photon_rate_eigenvalues": [
+        0.00022549205191870608,
+        0.00023307142719996364
+      ],
+      "leading_photon_rate": 0.00022736420441699337,
+      "fermion_rate_per_energy": 0.0004640185415533493,
+      "leading_fermion_rate": 0.00045472840883398674
+    },
+    {
+      "d": 0.01,
+      "z": 3.0,
+      "photon_rate_eigenvalues": [
+        2.5192795162444744e-05,
+        2.5473494050271598e-05
+      ],
+      "leading_photon_rate": 2.5262689379665928e-05,
+      "fermion_rate_per_energy": 5.087131114884645e-05,
+      "leading_fermion_rate": 5.0525378759331856e-05
+    },
+    {
+      "d": 0.01,
+      "z": 10.0,
+      "photon_rate_eigenvalues": [
+        2.2717496142159786e-06,
+        2.2793284267139894e-06
+      ],
+      "leading_photon_rate": 2.2736420441699336e-06,
+      "fermion_rate_per_energy": 4.556641805568638e-06,
+      "leading_fermion_rate": 4.547284088339867e-06
+    }
+  ],
+  "angular_boundary_escape": [
+    {
+      "d": 0.04,
+      "group_speed_squared": 1.0079897763578274,
+      "rate_per_energy": 0.00029666884768770826,
+      "leading_boundary_rate": 0.00029708922710487137,
+      "refinement_error": 2.583209254142238e-14
+    },
+    {
+      "d": 0.02,
+      "group_speed_squared": 1.0019993602558976,
+      "rate_per_energy": 7.424600315322994e-05,
+      "leading_boundary_rate": 7.427230677621784e-05,
+      "refinement_error": 6.671705831025332e-15
+    },
+    {
+      "d": 0.01,
+      "group_speed_squared": 1.0004999600039997,
+      "rate_per_energy": 1.856643225073892e-05,
+      "leading_boundary_rate": 1.856807669405446e-05,
+      "refinement_error": 1.6946452650445226e-15
+    }
+  ],
+  "seconds": 4.678268167073838,
+  "limits": [
+    "leading coupling order in a supplied massless action",
+    "continuum cones, not an interacting finite-link ground state",
+    "running substitution is a leading-log approximation",
+    "no pole residue, soft-photon dressing or all-order lifetime theorem",
+    "same-author verification"
+  ],
+  "sha256": {
+    "evidence/block14_decay_check.py": "44d253afb88ab26cd58bbf88998544cb284f5a396e899432d11e4d03bc03b210",
+    "notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md": "39f8bcb1dab63a3c0dcaab82efd39258d0f846f9c0aecf784fc92a4e52c20c4d"
+  }
+}

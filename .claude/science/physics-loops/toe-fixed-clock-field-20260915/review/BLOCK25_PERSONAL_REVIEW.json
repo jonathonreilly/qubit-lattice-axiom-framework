@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-16T01:12:32.798294+00:00",
+  "status": "personal_provisional_review_no_independent_audit",
+  "checked": [
+    "exact same local source and signed translation frame",
+    "binary reducing carrier with real nonnegative endpoint overlap",
+    "connectivity including orthogonal endpoints",
+    "horizontal positive texture within binary carrier",
+    "bounded Dyson perturbation of unbounded swap Laplacian",
+    "finite-vector domination followed by large-time Jensen contradiction",
+    "absence of atom distinguished from a spectral density theorem"
+  ],
+  "risks": [
+    "specified momentum slice only",
+    "no uniform lower weight or exponent",
+    "polarized boundary representation supplied",
+    "not the periodic vacuum or charged rotor phase"
+  ],
+  "inputs": {
+    "notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md": "c7f61997953db00a0e2aabc8f6e9936234443d95cbc86a57d9ef2ebf7e0fc7ba",
+    "notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md": "14f09388247ac3b8c4548bfc36e9dfcd6952b8c53e96f31e293507412da88500",
+    "evidence/block25_visible_threshold_check.py": "cebba632c3975013b31ddd090c409557b0fd6f08cf63038344bb3e21d24aed9e",
+    "evidence/block25_visible_threshold_check.json": "f3507f77889f2a8daf97ef98fe0e06e2ad941cb9b5b1343728433f53714d3905",
+    "evidence/block25_visible_threshold_check.txt": "f3507f77889f2a8daf97ef98fe0e06e2ad941cb9b5b1343728433f53714d3905",
+    "evidence/block25_visible_threshold_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

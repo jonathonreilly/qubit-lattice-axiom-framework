@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-16T01:01:21.359597+00:00",
+  "status": "personal_provisional_review_no_independent_audit",
+  "checked": [
+    "canonical Gauss-preserving transformation and weighted curl kernel",
+    "axis necessity and cross-product sufficiency",
+    "five matching conditions with one positive normalization parameter",
+    "all four Wilson node metrics",
+    "weighted extension uses same fixed-box premises and limit order",
+    "positive unequal-weight counterexample retains allowed family"
+  ],
+  "risks": [
+    "chosen matching not axiom selection",
+    "free leading cones only",
+    "no fixed-positive-coupling phase",
+    "primary classification abstract used only as context"
+  ],
+  "inputs": {
+    "notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md": "445359d13dc7d1076e4363bc359152e503e732425a78485a785fe90ce8969c38",
+    "notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md": "49917884714c8022edd74ceb14f9ec71452a6d63466ae15ad2164a9379b0d196",
+    "evidence/block23_matched_cone_check.py": "a9ef499ba1dc59906d2477ed6d4a534206bb068f86d98a72835710e97b60133e",
+    "evidence/block23_matched_cone_check.json": "7be28d91c9bb4ed70221cd1af0d6ea61eca89c24ccd5f68ff69117724e0ae28c",
+    "evidence/block23_matched_cone_check.txt": "7be28d91c9bb4ed70221cd1af0d6ea61eca89c24ccd5f68ff69117724e0ae28c",
+    "evidence/block23_matched_cone_check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

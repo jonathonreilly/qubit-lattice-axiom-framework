@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-16T00:25:54.873719+00:00",
+  "status": "derivation frozen before checks",
+  "source_sha256": "6e9352d3a022fa86d2a2cfffa7ba4a4cee86b82f15d9d3329bc733fca6a963e7",
+  "target": "physical local bounded-probe and fixed-time limits in iterated g then volume limit",
+  "checks": [
+    "real-space curl versus independent Fourier covariance",
+    "two transverse modes and harmonic omission",
+    "scaled electric/magnetic bounded probes in coupled fixture",
+    "probe-matter factorization diagnostic",
+    "finite-time magnetic response diagnostic"
+  ],
+  "risks": [
+    "bounded characteristic convergence distinct from arbitrary moments",
+    "local physical neutral matter only",
+    "lattice spacing fixed",
+    "no exchange of g and volume or time scales",
+    "shared Block21 fixture declared"
+  ]
+}

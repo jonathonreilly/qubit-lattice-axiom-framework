@@ -1,0 +1,37 @@
+{
+  "status": "personal_provisional_review_no_independent_audit",
+  "utc": "2026-09-15T20:14:47.614177+00:00",
+  "current_main": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "checked": [
+    "native phase and D2 scope",
+    "coherent positive-hop column orthogonality",
+    "off-plaquette commutation via ambient cycle algebra",
+    "ring charge preservation and volume-independent commutator count",
+    "unitary integral remainder without extensive Hamiltonian norm",
+    "staggered translation group and signed identities",
+    "symmetry averaging without connectivity or uniqueness",
+    "direct ring-positivity proof of hopping expectation lower bound",
+    "spectral mean versus lowest-band bound",
+    "position propagation distance and weighted norm bounds",
+    "rational untruncated path expansion with rigorous operator-tail bound"
+  ],
+  "verification_limits": [
+    "same author; independently implemented algebra is not independent scientific review",
+    "selected native columns only, no full D2 census",
+    "no native ground spectrum diagonalized",
+    "separate toy validates generic spectral identity only",
+    "no long-time transport, physical mass, clock identification or selected Hamiltonian"
+  ],
+  "inputs": {
+    "notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md": "3ad0d8e593d6c471e315afa9de17e2dad1388a52a1d29800dc9e7c5c140942f6",
+    "evidence/block7_native_motion_check.txt": "9818a6dcf4b5e15aa1058a2a2fb202e1b3f6fd8aa0447d6c515976d6cad93864",
+    "evidence/block7_native_motion_check.json": "9818a6dcf4b5e15aa1058a2a2fb202e1b3f6fd8aa0447d6c515976d6cad93864",
+    "evidence/block7_native_motion_check.py": "5f134dcf2ab4e5a262c461e1a1c16a7d14abfd0f2a6dc32d087219c0ec017407"
+  },
+  "conditional_parent_bytes": {
+    "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+    "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+    "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+  }
+}

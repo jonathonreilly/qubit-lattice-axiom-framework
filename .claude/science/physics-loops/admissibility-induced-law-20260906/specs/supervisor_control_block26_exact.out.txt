@@ -1,0 +1,12 @@
+(1) E[w] - A = 0 ; E[w^2] - (1 - 2A/k) = 0
+(1) sinh^2 k - k^2 - k^4/3 series (all coefficients >= 0): 2*kappa**10/14175 + kappa**8/315 + 2*kappa**6/45 ; A' == 1/k^2 - 1/sinh^2: True
+(2) two-sided bounds hold for k <= 300: True; k^2 (c0/k - P_k) max = 0.103; k^2 (P_k - c0/k) max = 0.000; k P_k at 300 = 0.41315 vs c0 = 0.41350
+(2) quadrature k P_k at k=300: 0.41315
+(2) quadrature k P_k at k=1000: 0.41339
+(2) quadrature k P_k at k=3000: 0.41346
+(2) quadrature k P_k at k=10000: 0.41349
+(3) gamma_lin(beta=3) = 0.04084  (A(3beta) = 0.88889; sqrt3/(4 pi beta) = 0.04594)
+(3) gamma_lin(beta=6) = 0.02170  (A(3beta) = 0.94444; sqrt3/(4 pi beta) = 0.02297)
+(3) gamma_lin(beta=12) = 0.01117  (A(3beta) = 0.97222; sqrt3/(4 pi beta) = 0.01149)
+(3) gamma_lin(beta=24) = 0.00566  (A(3beta) = 0.98611; sqrt3/(4 pi beta) = 0.00574)
+(3) gamma_lin(beta=48) = 0.00285  (A(3beta) = 0.99306; sqrt3/(4 pi beta) = 0.00287)

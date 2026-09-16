@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 26 opening (2026-09-16)
+
+Block 26 opened for review (independent PR against main): the sphere formation law in level time — exact linear theory with the local-limit constant, finite planes forget, and the executed loss of the initial plane's memory at every coupling tried, against the six-axis law keeping its plane at the same weight. The campaign's memory map now reads: six-axis static keeps (17), six-axis formation keeps (25), sphere static keeps (19), sphere formation loses (26, executed). Ranked next:
+
+1. **A proof that the sphere formation law loses its plane** — the twist argument fails in level time (block 26's N1); the natural route is dynamical, through the exact one-step identity `m_{t+1} = E[A(β|S|)(S·e)/|S|]` and the transverse second-moment identity of T1, seeking a strict decrease that the linear theory only gives at second order — hard, uncertain.
+2. **The six-axis memory time on a torus** — an exact lower bound exponential in `L` from block 25's trees (a dissenting torus needs a wrapping explanation), the exact counterpart of T4's `L²` scale — medium.
+3. **The band between block 08's region and block 25's** — hard.
+4. **The kernel's normalization on `Z³`** — hard.
+5. **Value-dependent order laws (block 16, X4)** — hard; unchanged.

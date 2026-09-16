@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 26, at PR opening (2026-09-16)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 13's open item (PR #8147): whether an aligned region of the sphere formation law exists at all; the campaign's record-dynamics row for the continuous menu"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem_plus_decisive_artifact
+next_trace_action: "T1-T5 exact (gain one with the exact variance; the local-limit constant; finite planes forget; the exponent gamma(beta)); the nonlinear decay executed at four couplings and named a conjecture for the infinite plane; the six-axis law keeps its plane at the same weight. Next: a dynamical proof of the decay; the six-axis memory time on a torus. Consumers: the campaign's decision record; #8093's assembly"
+```

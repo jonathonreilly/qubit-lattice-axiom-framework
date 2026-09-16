@@ -13,3 +13,9 @@ Policy: reference and converge, never borrow; every statement used is re-proved 
 - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
 - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
 - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
+
+## Block 25 (2026-09-16) — references named; three standard facts imported at definition level
+- Toom (1980): the stability theorem for monotone eroders — re-proved at scope for this automaton with explicit constants.
+- Berman–Simon (1988) and Gács (2021): the explanation-tree proof for the north-east-center rule — its structure (spanned clusters, excuses, the spanning lemma, refinement) followed and re-proved in the level-time coordinates; executed exhaustively on small cones.
+- Swart–Szabó–Toninelli (2022): the Toom-contour formulation with the bound `3^{−21}`; Bramson–Gray (1991): the continuum route — named only.
+- Weak compactness and the Krylov–Bogolyubov construction; the extremal decomposition; independence and the union bound — imported at definition level.

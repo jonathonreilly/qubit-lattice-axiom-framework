@@ -1,0 +1,137 @@
+{
+  "heat_comparison": {
+    "regulator_points_per_angle": 9,
+    "scope": "two coupled angles with a positive finite-difference kinetic generator",
+    "rows": [
+      {
+        "g": 0.7,
+        "t": 0.1,
+        "min_lower_kernel_margin": 4.667494818969054e-15,
+        "min_upper_kernel_margin": 7.951801480093121e-15,
+        "max_ground_amplitude_conditional_ratio": 3914.3701258216593,
+        "heat_comparison_ratio_bound": 8435388.123021208
+      },
+      {
+        "g": 0.7,
+        "t": 0.4,
+        "min_lower_kernel_margin": 1.01057455512712e-10,
+        "min_upper_kernel_margin": 1.0182134915479636e-09,
+        "max_ground_amplitude_conditional_ratio": 3914.3701258216593,
+        "heat_comparison_ratio_bound": 381667.13618139614
+      },
+      {
+        "g": 1.5,
+        "t": 0.1,
+        "min_lower_kernel_margin": 2.0511274004331586e-10,
+        "min_upper_kernel_margin": 2.141734309325697e-10,
+        "max_ground_amplitude_conditional_ratio": 3.143941323464666,
+        "heat_comparison_ratio_bound": 10068.294348110756
+      },
+      {
+        "g": 1.5,
+        "t": 0.4,
+        "min_lower_kernel_margin": 4.811371087009332e-06,
+        "min_upper_kernel_margin": 7.215320364683869e-06,
+        "max_ground_amplitude_conditional_ratio": 3.143941323464666,
+        "heat_comparison_ratio_bound": 98.89004458356192
+      },
+      {
+        "g": 3.0,
+        "t": 0.1,
+        "min_lower_kernel_margin": 5.178806219186772e-07,
+        "min_upper_kernel_margin": 5.043088842256521e-07,
+        "max_ground_amplitude_conditional_ratio": 1.0776527650538499,
+        "heat_comparison_ratio_bound": 50.77184179109694
+      },
+      {
+        "g": 3.0,
+        "t": 0.4,
+        "min_lower_kernel_margin": 0.00030104917714740293,
+        "min_upper_kernel_margin": 0.000345262730251426,
+        "max_ground_amplitude_conditional_ratio": 1.0776527650538499,
+        "heat_comparison_ratio_bound": 2.4258670452696203
+      }
+    ]
+  },
+  "geometry": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "links": 12,
+      "plaquettes": 6,
+      "maximum_incident_plaquettes": 2,
+      "maximum_local_support": 7,
+      "maximum_touching_plaquettes": 6,
+      "Haar_gradient_identity_error": 0.0
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "links": 54,
+      "plaquettes": 36,
+      "maximum_incident_plaquettes": 4,
+      "maximum_local_support": 13,
+      "maximum_touching_plaquettes": 24,
+      "Haar_gradient_identity_error": 0.0
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "links": 144,
+      "plaquettes": 108,
+      "maximum_incident_plaquettes": 4,
+      "maximum_local_support": 13,
+      "maximum_touching_plaquettes": 30,
+      "Haar_gradient_identity_error": 0.0
+    }
+  ],
+  "circle_bounds": [
+    {
+      "g": 0.3,
+      "t": 0.2,
+      "sampled_heat_min": 3.2224458100448384e-118,
+      "explicit_lower": 1.6112229050224192e-118,
+      "sampled_heat_max": 18.683304054659764,
+      "explicit_upper": 19.683304054659764,
+      "log_sufficient_local_c": -7591.625497522471
+    },
+    {
+      "g": 0.7,
+      "t": 1.0,
+      "sampled_heat_min": 0.00030285262970941937,
+      "explicit_lower": 0.00015142631485470968,
+      "sampled_heat_max": 3.5808975351871433,
+      "explicit_upper": 4.580897535187143,
+      "log_sufficient_local_c": -692.7397615184941
+    },
+    {
+      "g": 1.5,
+      "t": 0.4,
+      "sampled_heat_min": 0.02196406468403762,
+      "explicit_lower": 0.01098203234201881,
+      "sampled_heat_max": 2.642218199981092,
+      "explicit_upper": 3.642218198404007,
+      "log_sufficient_local_c": -187.88405684251174
+    },
+    {
+      "g": 3.0,
+      "t": 1.0,
+      "sampled_heat_min": 0.9777820373834748,
+      "explicit_lower": 0.4828809620539565,
+      "sampled_heat_max": 1.0222180235364442,
+      "explicit_upper": 1.8355427582103334,
+      "log_sufficient_local_c": -57.8295696883164
+    }
+  ],
+  "source_sha256": "8e8b1a59934af2e566b108b6c92b66be0ea0a007eca5aa28327fc09d245c39aa",
+  "seconds": 0.09074568748474121
+}

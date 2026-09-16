@@ -1,0 +1,31 @@
+{
+  "slug": "toe-anisotropic-phase-bridge-20260916",
+  "status": "milestone_draft_checkpoint",
+  "updated_utc": "2026-09-16T09:26:49.349741+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "branch": "physics-loop/toe-anisotropic-phase-bridge-20260916",
+  "previous_pr": 8163,
+  "previous_head": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+  "agents": "none; personal execution required",
+  "actual_current_surface_status": "conditional-support",
+  "active_target": "Control compact endpoint and winding events for the actual coupled Hamiltonian at fixed g",
+  "next_action": "Open and verify draft milestone, preserve exact remote HEAD, release lock/remove checkout; continue personally on the compact ground-path and reflection-positivity route from fresh main until13:45:03UTC",
+  "strongest_unresolved_proof_obligation": "Uniform positive transverse electric susceptibility, or a full compact physical-source Gaussian limit, at fixed supplied coupling and growing volume",
+  "completed_working_blocks": [
+    "Weighted anisotropic conditional Gaussian identity and explicit integer-to-Poisson L1 bound",
+    "Actual coupled finite-graph Feynman-Kac and endpoint transfer identity",
+    "Exact electric offset susceptibility, spectral soft-energy criterion, and factorial-tail reference control",
+    "Exact weighted phase-corrector identity, magnetic character Gram tests, and cube nonlinear Bianchi discriminator",
+    "Volume-uniform local conditional density estimate and finite loop-template variational restriction",
+    "Quantum ground-state cosine and electric-square comparison; cofinal free-box angle-marginal limit at fixed g",
+    "Compact raw-curl comparison counterexample and fixed-m replacement",
+    "Positive Wilson mixtures, coupled weak-plaquette domination and diluted Villain comparison",
+    "Continuous-time short-block fluctuation convexity, curl-relative endpoint Hessian bound and spatial derivative decay"
+  ],
+  "delivery_mode": "milestone",
+  "review_state": "personal source review and finite challenges; independent review pending",
+  "main_refresh": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_refresh": "068e916ca37b004757ad3a3c082857a91dc37215"
+}

@@ -1,0 +1,126 @@
+COVARIANCE_DIAGNOSTIC 0.6 0.4264825625475002 0.4000000000000001 0.026482562547500203 -5.898059818321144e-17
+COVARIANCE_DIAGNOSTIC 0.9 0.6899808411239186 0.4000000000000001 0.28998084112391864 -1.6653345369377348e-16
+COVARIANCE_DIAGNOSTIC 1.4 9.847116019953493 0.4000000000000001 9.447116019953492 0.0
+COVARIANCE_DIAGNOSTIC 3.0 4199.441335023202 0.4000000000000001 4199.041335023201 9.094947017729282e-13
+[
+  {
+    "g": 0.6,
+    "eta_spectral": 0.9975926134169396,
+    "character_bounds": [
+      {
+        "radius": 1,
+        "characters": 4,
+        "eta_lower": 0.9423903567800147,
+        "smallest_Gram_eigenvalue": 0.2738610243538321,
+        "Gram_condition": 32.836773984566705
+      },
+      {
+        "radius": 2,
+        "characters": 12,
+        "eta_lower": 0.9877616394356795,
+        "smallest_Gram_eigenvalue": 0.01072107814990714,
+        "Gram_condition": 4511.964184261648
+      },
+      {
+        "radius": 3,
+        "characters": 24,
+        "eta_lower": 0.9947237848219073,
+        "smallest_Gram_eigenvalue": 0.0012816898726444377,
+        "Gram_condition": 112884.04605863153
+      }
+    ],
+    "specified_plaquette_eta_lower": 0.9379047002782193,
+    "cosine_covariance_cost": 0.026482562547500203,
+    "f_norm_squared": 0.4000000000000001
+  },
+  {
+    "g": 0.9,
+    "eta_spectral": 0.645341219202443,
+    "character_bounds": [
+      {
+        "radius": 1,
+        "characters": 4,
+        "eta_lower": 0.5881874267022761,
+        "smallest_Gram_eigenvalue": 1.0643635751108265,
+        "Gram_condition": 5.912740616113013
+      },
+      {
+        "radius": 2,
+        "characters": 12,
+        "eta_lower": 0.6392827827773467,
+        "smallest_Gram_eigenvalue": 0.5341098324752477,
+        "Gram_condition": 60.64262593961153
+      },
+      {
+        "radius": 3,
+        "characters": 24,
+        "eta_lower": 0.6447706082165373,
+        "smallest_Gram_eigenvalue": 0.43195346131835394,
+        "Gram_condition": 203.67841226238738
+      }
+    ],
+    "specified_plaquette_eta_lower": 0.5797262418887386,
+    "cosine_covariance_cost": 0.28998084112391864,
+    "f_norm_squared": 0.4000000000000001
+  },
+  {
+    "g": 1.4,
+    "eta_spectral": 0.04094504646841367,
+    "character_bounds": [
+      {
+        "radius": 1,
+        "characters": 4,
+        "eta_lower": 0.04068463650785801,
+        "smallest_Gram_eigenvalue": 1.9252922057503623,
+        "Gram_condition": 2.6326591613413473
+      },
+      {
+        "radius": 2,
+        "characters": 12,
+        "eta_lower": 0.04094390446648488,
+        "smallest_Gram_eigenvalue": 1.8803490431866705,
+        "Gram_condition": 11.11078731629142
+      },
+      {
+        "radius": 3,
+        "characters": 24,
+        "eta_lower": 0.04094504241198635,
+        "smallest_Gram_eigenvalue": 1.8797511736993364,
+        "Gram_condition": 25.705926801845035
+      }
+    ],
+    "specified_plaquette_eta_lower": 0.04062103048135806,
+    "cosine_covariance_cost": 9.447116019953492,
+    "f_norm_squared": 0.4000000000000001
+  },
+  {
+    "g": 3.0,
+    "eta_spectral": 9.525253834421296e-05,
+    "character_bounds": [
+      {
+        "radius": 1,
+        "characters": 4,
+        "eta_lower": 9.525112070007754e-05,
+        "smallest_Gram_eigenvalue": 1.9998177727778454,
+        "Gram_condition": 2.500307190149169
+      },
+      {
+        "radius": 2,
+        "characters": 12,
+        "eta_lower": 9.525253833010264e-05,
+        "smallest_Gram_eigenvalue": 1.9997161605961316,
+        "Gram_condition": 10.002491051687821
+      },
+      {
+        "radius": 3,
+        "characters": 24,
+        "eta_lower": 9.52525383442136e-05,
+        "smallest_Gram_eigenvalue": 1.999716157595695,
+        "Gram_condition": 22.50731500821874
+      }
+    ],
+    "specified_plaquette_eta_lower": 9.52507650634415e-05,
+    "cosine_covariance_cost": 4199.041335023201,
+    "f_norm_squared": 0.4000000000000001
+  }
+]

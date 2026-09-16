@@ -1,0 +1,41 @@
+{
+  "failed_source_sha256": "37d77a415c820c22af78a3cb1e024d3429c35a608e6dab4ec320b43ddf76e4f4",
+  "diagnostic": "Direct moment evaluation after the final0.001 relative variance assertion failed; no target relaxed",
+  "rows": [
+    {
+      "M": 64,
+      "variance": 5.696542631314188,
+      "target": 6.249999999999999,
+      "relative_error": 0.08855317898972992,
+      "real_gaussian_variance": 10.597960792772673
+    },
+    {
+      "M": 256,
+      "variance": 6.10109274421657,
+      "target": 6.249999999999999,
+      "relative_error": 0.02382516092534881,
+      "real_gaussian_variance": 29.05298727456615
+    },
+    {
+      "M": 1024,
+      "variance": 6.2120851506840795,
+      "target": 6.249999999999999,
+      "relative_error": 0.006066375890547149,
+      "real_gaussian_variance": 88.39721739006734
+    },
+    {
+      "M": 4096,
+      "variance": 6.240477797661628,
+      "target": 6.249999999999999,
+      "relative_error": 0.0015235523741394807,
+      "real_gaussian_variance": 285.3030527466502
+    },
+    {
+      "M": 8192,
+      "variance": 6.245235265009791,
+      "target": 6.249999999999999,
+      "relative_error": 0.0007623575984332387,
+      "real_gaussian_variance": 520.3596384681545
+    }
+  ]
+}

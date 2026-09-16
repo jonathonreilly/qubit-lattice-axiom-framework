@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from pathlib import Path; import sys; p=Path(sys.argv[1]); original=Path(sys.argv[2]); scope={'__name__':'formula_challenge','__file__':str(original)}; exec(compile(p.read_text(),str(p),'exec'),scope); scope[sys.argv[3]]()
+                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/formula_faults/bridge_wrong_kinetic_metric.py", line 152, in time_limit_check
+    assert abs(k24 - k36) < 1e-11
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

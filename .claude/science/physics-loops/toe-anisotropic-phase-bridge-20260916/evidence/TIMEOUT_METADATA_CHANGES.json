@@ -1,0 +1,26 @@
+[
+  {
+    "source": "block05_quantum_comparison_check.py",
+    "previous_sha256": "1c65f11cb8e46352c69d23a68de57aa0f9a5679cadded97801d02649698299cb",
+    "current_sha256": "4f574d2448f79a3bed93c884aa8d6ef3508f7100adcdbe7fd1d5284adf91043a",
+    "change": "timeout declaration"
+  },
+  {
+    "source": "block06_raw_curl_counterexample.py",
+    "previous_sha256": "165e47cec92cdc7228c8df483aebacce99e3c329817672fbe5fc04a7d44ed80c",
+    "current_sha256": "823a8a7e989aba461b3522cbd09fc9ae6c30f37fabc57d85a666fced4997f115",
+    "change": "timeout declaration"
+  },
+  {
+    "source": "block07_positive_mixture_check.py",
+    "previous_sha256": "771a38fcb8977d0b6d6743341cc6ea9949ff18b571a7728a95b9ca4e731787d0",
+    "current_sha256": "f11c894ca38aac8de32d4b05c5a7998354ac0286f3f9d629a3b2aca7984f512e",
+    "change": "timeout declaration; descriptive mixture docstring"
+  },
+  {
+    "source": "block08_bridge_action_check.py",
+    "previous_sha256": "9cefefd665591e4c2961f42aef1dbd3503bdd476715e8405291e77ec8be02d2f",
+    "current_sha256": "ed55f86a73921f15240fc21ef3342e0a8d37e7f32250ecfdd893c8ceac641908",
+    "change": "timeout declaration"
+  }
+]

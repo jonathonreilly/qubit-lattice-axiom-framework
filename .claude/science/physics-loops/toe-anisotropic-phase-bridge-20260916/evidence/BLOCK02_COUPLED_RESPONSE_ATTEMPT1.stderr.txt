@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_coupled_jump_and_response_check.py", line 143, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_coupled_jump_and_response_check.py", line 140, in run
+    start=time.time();transfer=transfer_checks();response=response_checks();tail=factorial_tail_check()
+                               ~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block02_coupled_jump_and_response_check.py", line 36, in transfer_checks
+    assert abs(lhs-rhs)<2e-13
+           ^^^^^^^^^^^^^^^^^^
+AssertionError

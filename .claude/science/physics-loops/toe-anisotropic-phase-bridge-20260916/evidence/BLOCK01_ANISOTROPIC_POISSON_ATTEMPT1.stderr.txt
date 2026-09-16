@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block01_anisotropic_conditional_and_poisson_check.py", line 78, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block01_anisotropic_conditional_and_poisson_check.py", line 75, in run
+    start=time.time();gaussian=weighted_curl();blocking=integer_blocking()
+                                                        ~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block01_anisotropic_conditional_and_poisson_check.py", line 70, in integer_blocking
+    assert abs(rows[-1]['blocked_integer_variance']/(T/g**2)-1)<.001
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.py", line 204, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.py", line 190, in main
+    result["radial_heat"] = heat_checks()
+                            ~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-anisotropic-phase-bridge-20260916/.claude/science/physics-loops/toe-anisotropic-phase-bridge-20260916/evidence/block07_positive_mixture_check.py", line 55, in heat_checks
+    assert error < 8e-5, rows[-1]
+           ^^^^^^^^^^^^
+AssertionError: {'a': 1.0, 'nu': 0.5, 'resolution': 256, 'heat_ratio': 0.740847952299944, 'bessel_ratio': 0.7406209303345246, 'absolute_error': 0.00022702196541946051, 'modes': 36}

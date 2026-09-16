@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-16T00:58:28.558003+00:00",
+  "status": "derivation frozen before finite checks",
+  "source_sha256": "b59be576c42df5b13018e8825147956666f936f9f3ddc234bbd68595081c3b7e",
+  "checks": [
+    "literal Gauss-reduced charged CAR ring and exact shift increments",
+    "electric double commutator versus analytic magnetic and hopping terms",
+    "magnetic double commutator on an interior electric core",
+    "flat-twist unitary equality and diamagnetic/paramagnetic cancellation",
+    "massive oscillator with vanishing static source stiffness"
+  ],
+  "tolerances": {
+    "matrix_identity": 2e-11,
+    "ground_spectral_identity": 2e-10
+  },
+  "boundary_handling": "magnetic angle-polynomial commutators tested inside padded hard flux cutoff; flat pure-matter twists exact at all cutoff states",
+  "risks": [
+    "finite ring is not cubic phase evidence",
+    "opposite charges add in f-sum",
+    "external dynamical twist distinct from fixed internal holonomy",
+    "Ward identity does not imply gapless photon"
+  ]
+}

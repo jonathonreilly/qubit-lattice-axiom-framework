@@ -1,18 +1,17 @@
 campaign: toe-fixed-clock-field-20260915
-status: active_discovery
+status: milestone_ready_for_review_campaign_continues
 actual_claim_status: provisional
 start_utc: 2026-09-15 13:45:03 UTC
-deadline_utc: 2026-09-16 01:45:03 UTC
+deadline_utc: 2026-09-16 13:45:03 UTC
 base_main: 6ad6a2184b7c2067e597528e0964753874493b4a
 planning_revision: 6e143f6c6a76ad1cf783adf9310bb822b2c841b2
 branch: physics-loop/toe-fixed-clock-field-20260915
 execution: personal_no_subagents
 delivery: milestone
 checkpoint_minutes: 30
-block: 22
-current_target: full campaign claim-map and load-bearing proof review
+block: 25
+current_target: preserve this reviewed milestone; continue the extended window in toe-interacting-scale-20260916
 review_status: author_exploration_no_independent_review
 previous_campaign_commit: e3fc0b7707dce894ef98e7981a9feaf6041708f8
-last_checkpoint_utc: '2026-09-16T00:29:46.407070+00:00'
-next_step: review cross-block assumptions and failures, produce a readable result map,
-  and pursue any consequential unresolved check until the deadline
+last_checkpoint_utc: '2026-09-16T01:01:21.359597+00:00'
+next_step: continue personally in /Users/jonreilly/Documents/Codex/toe-interacting-scale-20260916 until the extended deadline

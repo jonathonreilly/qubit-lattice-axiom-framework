@@ -39,3 +39,11 @@ Block16 closes the cyclic equilibrium bridge at fixed couplings. Next compare si
 Block17 next: determine whether a different nonnegative phase-kernel electric generator can improve the cyclic cosine error at fixed curvature. Use the full positive jump cone and explicit escape conditions, not a finite menu of stencils.
 
 Block19 closes the explicit ring slow-gap obligation. Next prioritize volume dependence of global holonomy response or a genuinely interacting native obstruction; do not recount the ring as a bulk photon theorem. Reserve time for a full campaign claim/dependency review and durable PR packaging.
+
+End-stage ranking: prioritize a uniform-in-volume local Ward/response estimate for the same coupled charged model, or a local joint active/spectator reduction for the native sixth-order problem. Blocks20–22 now provide the fixed-box and iterated local comparator, not the fixed-positive-coupling phase. A new exact ring coefficient or more finite-size spectra would add less. The original fixed-clock full field target remains open at physical graph summation/state matching; revisit only with a mechanism that retains the residual signed phases and branching. See README.md for the six review units.
+
+Block24 sharpens the next charged-phase contract: exact Ward cancellation
+for a flat EXTERNAL charge twist is available but cannot certify a photon.
+Target inelastic transverse spectral weight or a resolvent lower estimate,
+with the charged current and compact corrections retained. Block23 provides
+an explicitly matched positive-weight free comparator without selecting it.

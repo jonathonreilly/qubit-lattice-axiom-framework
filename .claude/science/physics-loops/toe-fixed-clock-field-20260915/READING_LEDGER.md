@@ -428,3 +428,15 @@ Block19: main e0ef7c flat-holonomy/periodic spectral-floor source read in full (
 Block20: Bellucci–Saharian arXiv0902.3726 HTML introduction, setup and energy-tensor section through equation48 read; equation47 checked for normalization. Nanotube applications and appendix not read. https://arxiv.org/html/0902.3726 . DLMF20.2.3 and20.5.3 formulas read, https://dlmf.nist.gov/20.2.E3 and https://dlmf.nist.gov/20.5.E3 . The lattice Poisson/cusp/C2 arguments are supplied directly, not attributed as an interacting theorem from these sources.
 
 Block21: the full periodic-holonomy parent was reread, including exact Gauss representation, normal/tangent metric warning and existing floor proof. The new two-scale argument is supplied directly using previously read semiclassical methodology, not attributed as a new uniform theorem in that literature.
+
+End-stage refresh 2026-09-16T00:38:19.022123+00:00: main remains e0ef7cf4633034a8c1e6d57f5812cc4275bf1349. All nine newly added September9 canonical native notes (pair chart, imaginary time, mixed transitions, Green scalars, gap-free propagation, sparse action, compression boundary, rho4 moments and generalized action boundary) read in full; truncated middle ranges recovered separately. Their historical source/payload archives were not fully re-audited. These are precise analytical/saved-certificate scopes, not new native executions. September9 statements that their own machinery does not compute alpha do not reopen the later September13 positive Ward theorem. Source hashes: review/END_STAGE_NEW_MAIN_READING.json.
+
+
+End-stage constitutive context: Favaro--Bergamin arXiv:1008.2343v4 abstract
+only; no general classification theorem imported. The diagonal criterion in
+Block23 is derived directly. Re-read exact-Gauss parent sections through its
+Hamiltonian to verify both positive weight freedoms. Re-read native low-energy
+star operator sections1--7 to avoid duplicating its double-compression theorem;
+its high-energy leakage and extensive-sum obligations remain open. A fresh
+broad web search on fixed-clock field scaling recovered prior phase literature,
+not a checked full characteristic-functional theorem; no new theorem was imported.

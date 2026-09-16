@@ -387,3 +387,38 @@ and the chosen bare photon and Weyl metrics differ. The alternating global
 twist is compatible with the common local iterated state. Exact curl/Fourier
 checks and new physical probes in the shared two-coordinate fixture pass; no
 initial checker failure occurred. All theorem status remains provisional.
+
+
+## Blocks23--24 — a matched free comparator and a precise phase test
+
+The weighted rotor family admits a common leading free photon/Weyl cone:
+W_E=eta sqrt(det G)G^-1 and W_B=eta^-1 sqrt(det G)G^-1. Within positive
+uniform diagonal weights this is the complete matching family. It is a
+model choice, not selection by positivity or an interacting Lorentz theorem.
+Literal weighted curls, symbolic characteristic polynomials and all four
+Wilson node derivatives check the algebra. The earlier iterated state proof
+extends with weighted covariances and the same order-of-limits restrictions.
+
+Exact finite-volume electric and magnetic f-sums retain respectively the
+charged hopping term and compact cos(theta) fluctuation term. A flat external
+charge twist is absorbed by a physical link-translation unitary: its full
+spectrum is unchanged. This differs from fixing an internal holonomy in
+Block20. A separate massive oscillator has the same vanishing static twist
+response, so this Ward cancellation is not a photon witness. The next phase
+target needs an inelastic spectral lower estimate or a stronger resolvent
+bound in the same positive-g state. Degenerate elastic ground-space weight
+is explicitly removed. Finite CAR/commutator checks pass; the hard-cutoff
+boundary discrepancy and initial prose clarification are preserved.
+
+
+## Block25 — the same local source reaches a threshold on another momentum slice
+
+For positive J and real nonnegative overlap c=<u,v(k)><1, including
+k=(theta,-theta,0),0<|theta|<=2pi/3, the exact word fiber has a connected
+positive binary representation containing the same symmetric local source.
+A horizontal binary texture approaches E_pol and heat-semigroup domination
+forces that source to have weight in every interval immediately above it.
+There is no atom at the floor, by the inherited isometry proof. No edge
+exponent, generic-momentum statement or physical vacuum selection follows.
+Full three-letter/binary intertwiners and direct tensor products pass.
+The earlier diagonal-line dark interval is not an all-momentum obstruction.

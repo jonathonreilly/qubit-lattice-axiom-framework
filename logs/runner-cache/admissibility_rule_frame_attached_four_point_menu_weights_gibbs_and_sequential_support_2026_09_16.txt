@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py
+runner_sha256: 5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1
+input_fingerprint_sha256: 675bdf237d504e1fee971c130157c255681e01dfa706497b56f417a75f75ef2c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms and the landed possibility-covariance note
+PASS: A1-inputs the note, axiom memo, and possibility-covariance note are the declared packet
+PASS: A2-axioms the Qubit, Admissibility, and Record sentences used are present verbatim
+PASS: A3-parent the landed possibility-covariance note supplies the two readings
+PASS: A4-note-contract the note states the four-point weight family, the Born obstruction, and the support obstruction
+PASS: B1-orthogonal-four-distinct the reference orthogonal pair has inner product 0 and four distinct support points
+PASS: B2-swap-maps-pair the 180-degree Aut about the bisector swaps the two neighbours and preserves the four-point set
+PASS: B3-flip-second-preserves-set the 180-degree Aut about q sends the second neighbour to its opposite and preserves the four-point set
+PASS: B4-cubic-group the proper cubic group has 24 elements
+PASS: C1-two-function-family Aut-plus-swap covariant four-point laws are the copy/flip family 2α+2γ=1
+PASS: C2-gibbs-at-orthogonal pair-Gibbs with e^{2β}=2 at t=0 has copy mass 1/3, flip mass 1/6, inside the two-function family
+PASS: C3-gibbs-beta-zero-is-uniform pair-Gibbs at B=e^{2β}=1 (β=0) is the uniform four-point law
+PASS: C4-linear-family the linear family (1+λ s·(q+q'))/4 interpolates uniform, deterministic copy, and deterministic flip at t=0
+PASS: D1-born-not-four-point the two-outcome Born overlap on the four-point set sums to 2 and is not a four-point probability
+PASS: D2-born-ignores-second-neighbour Born-about-q is deterministic on {q,-q} and does not depend on q' as a recorded neighbour
+PASS: E1-chain-support-two in the chain order the middle's one-neighbour finite support is the antipodal pair of the left end
+PASS: E2-ends-support-four in the ends-first order the middle's two-neighbour support is the four-point set, a strict superset
+PASS: E3-cardinalities-differ the middle's support has two points in the chain and four in ends-first, so the sequential products cannot agree
+PASS: E4-collinear-control when the two ends are collinear the four-point set collapses to the antipodal pair; the obstruction is for non-collinear ends, which Haar-empty ends realise almost surely
+PASS: F1-quotes the note quotes the Gibbs masses, the Born sum, and the support cardinalities
+PASS: F2-no-selection the note selects neither a menu, a rule, nor an order
+PASS: F3-open-sibling the open menus note is named as a sibling, not used as a landed premise
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

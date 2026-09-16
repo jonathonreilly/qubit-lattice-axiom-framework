@@ -108,7 +108,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 28 close (2026-09-16)
 # block: 28
 # branch: physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-27 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170, #8171)
-# pr_status: PR_PLACEHOLDER
+# pr_status: opened for review — PR #8172 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8172); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=14 FAIL=0; 8 mutations, census 8/8 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: scans (two plane sizes, three lattice sizes, two starts) -> exact control -> contract with a lens pass -> primary (T1-T3, runner) -> refuting pass (random starts; a different chain; the healing bound tested) -> fold (the crude region count replaced; the frozen-domain artifact noted)"
 # review_findings: "the map: six-axis static p in (3.6, 3.7), six-axis formation p in (10.5, 11) at (p,1,2), sphere static beta in (0.66, 0.72), sphere formation never; proved regions 10^2-10^4 away on the six-axis menu; T1 brackets exact; T2 healing bound 18(D+1)^3 eps; T3 influence bound 2(sqrt3 beta)^t p_t"

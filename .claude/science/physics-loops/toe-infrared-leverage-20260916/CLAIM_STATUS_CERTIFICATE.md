@@ -1,7 +1,14 @@
-# Claim status
+# Personal proposal status, 2026-09-16
 
-BLOCK01: author-proposed conditional theorem for a supplied compact rotor/fermion model on free cubic boxes. Exact charge-sector isometry and normalized Gaussian matrix elements; proposed uniform all-affine theta derivative estimate and Coulomb variational compression for 0<g<=0.1. Neither an effective low-energy Hamiltonian nor a fixed-g phase theorem. No independent reviewer, formal audit or retained promotion.
+All four final notes have actual current surface status `conditional-support` and proposed target type `bounded_theorem`. They are supplied-model mathematics with no axiom derivation, independent review, formal audit, or retained promotion. No observed values or new primitives are used.
 
-Personal evidence: direct rank-five primal and dual Gaussian sums, free-cube spectra L=1..4, actual charged ring Gauss basis and Hamiltonian compression. The ring uses g=0.3,0.5,0.8,1.1 to challenge exact identities and omitted-sector behavior, not to establish the small-g all-volume theorem. At g=0.3 the compact remainder is below double precision resolution while off-space operator norm is about0.224 and the trial ground energy exceeds the actual finite ground by0.01198. These are finite diagnostics, not thermodynamic evidence.
+| Proposal | Mathematical result proposed | Open bridge |
+| --- | --- | --- |
+| Global Gauss dressing | Exact all-neutral-matter isometry and charge-uniform Coulomb variational compression for free cubes and 0<g<=0.1 | True ground state and off-space dynamics |
+| Orthogonal transverse sector | Exact centered Gram normalization and uniform per-link current vertex; depends on the first proposal | Actual excitation spectrum and current correlations |
+| Infrared reference profile | Sharp local spectral mass, finite half-energy norm, logarithmic bare inverse-energy norm | Coupled physical matrix elements and running interaction |
+| Coupled vacuum forms | First reference correction and exchange-form densities remain finite and converge with volume, including Weyl-node choices | All-order or nonperturbative fixed-g control |
 
-Remaining author work: cold proof review, explicit failure controls, uniform constant review, and follow-on dynamical target selection.
+Five finite programs have separate mathematical calculation paths. Thirty actual altered sources were rejected by assertions. Those are author checks, not independent reviews. The rank-five affine test at g=1.8 retains a roughly1.8e-7 derivative discrepancy from its smaller dual cutoff; no interval certification is claimed. The charged ring retains non-negligible off-space leakage despite tiny compact compression error. The squared Fock norm does not certify relative basis phases.
+
+All formal audit packet registration, canonical evidence, helper mapping, integrated-tree pipeline gates and independent ratification remain hard landing conditions. No global fixed-g phase, physical wall or required axiom update is established.

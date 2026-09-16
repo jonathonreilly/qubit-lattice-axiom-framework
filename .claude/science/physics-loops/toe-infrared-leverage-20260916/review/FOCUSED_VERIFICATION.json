@@ -1,0 +1,138 @@
+{
+  "checked_utc": "2026-09-16T04:38:53.415070+00:00",
+  "status": "personal focused verification; no independent audit",
+  "source_outputs": [
+    {
+      "source": "evidence/block01_affine_theta_check.py",
+      "sha256": "a6605ca12cc6b29d29dddf7d413218823f758ff4791537f23edd3a1783fed2a6",
+      "stdout": "evidence/BLOCK01_AFFINE_THETA.stdout.txt",
+      "stderr_empty": true
+    },
+    {
+      "source": "evidence/block01_charged_ring_compression.py",
+      "sha256": "b5280dd96b7f65c8537c0a5f64ef4b70aa050b7ec0eb4ae28a6c83313bab501e",
+      "stdout": "evidence/BLOCK01_CHARGED_RING.stdout.txt",
+      "stderr_empty": true
+    },
+    {
+      "source": "evidence/block02_one_photon_vertex_check.py",
+      "sha256": "e58d78b156269e37509c4ad57655043646df89718cae5379bbfe59d1ca9b09a3",
+      "stdout": "evidence/BLOCK02_ONE_PHOTON.stdout.txt",
+      "stderr_empty": true
+    },
+    {
+      "source": "evidence/block03_infrared_vertex_check.py",
+      "sha256": "b8df5e5fd2888a72f11b19d47cd5266c547651aed94cabd5b90a7d864ed5c2ed",
+      "stdout": "evidence/BLOCK03_INFRARED_VERTEX.stdout.txt",
+      "stderr_empty": true
+    },
+    {
+      "source": "evidence/block04_coupled_vacuum_check.py",
+      "sha256": "83f09802c0e9ad9857acf0a6eaf6bafafed66b18757070f406a2396fb3d321b8",
+      "stdout": "evidence/BLOCK04_COUPLED_VACUUM.stdout.txt",
+      "stderr_empty": true
+    }
+  ],
+  "mutations_rejected": [
+    "fractional_kernel",
+    "gaussian_split_sign",
+    "mean_sign",
+    "covariance_factor",
+    "hopping_midpoint",
+    "poisson_prefactor",
+    "electric_coulomb_factor",
+    "hop_gaussian_factor",
+    "magnetic_midpoint",
+    "mean_square_missing",
+    "charge_transport_sign",
+    "theta_dual_width",
+    "gram_factor",
+    "midpoint_mean_missing",
+    "final_mean_missing",
+    "raising_vertex_sign",
+    "vertex_gram_normalization",
+    "vertex_root_two",
+    "transverse_projector",
+    "inverse_energy_power",
+    "jacobian_power",
+    "quartic_coefficient",
+    "quadratic_coefficient",
+    "logarithmic_coefficient",
+    "paired_factor",
+    "photon_only_denominator",
+    "current_midpoint_phase",
+    "current_reverse_sign",
+    "pauli_projector_factor",
+    "photon_normalization"
+  ],
+  "python_sources_compiled": 7,
+  "local_file_links_checked": [
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md"
+    },
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md"
+    },
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md"
+    },
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md"
+    },
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_04_PERSONAL_PROOF_REVIEW.md"
+    },
+    {
+      "from": "README.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BOUNDARY_STRESS_TEST.md"
+    },
+    {
+      "from": "notes/BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md"
+    },
+    {
+      "from": "notes/BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block03_infrared_vertex_check.py"
+    },
+    {
+      "from": "notes/BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_affine_theta_check.py"
+    },
+    {
+      "from": "notes/BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_charged_ring_compression.py"
+    },
+    {
+      "from": "notes/BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md"
+    },
+    {
+      "from": "notes/BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block04_coupled_vacuum_check.py"
+    },
+    {
+      "from": "notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md"
+    },
+    {
+      "from": "notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block02_one_photon_vertex_check.py"
+    },
+    {
+      "from": "notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md",
+      "to": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_affine_theta_check.py"
+    }
+  ],
+  "vocab_returncode": 0,
+  "runner_scientific_reads": "Only BLOCK02 imports BLOCK01 affine helper. Scientific inputs are generated within the five programs; self-file reads and helper hash reads are integrity metadata. Mutation harnesses read the declared numerical sources.",
+  "deferred": "formal registration, restricted audit packet mapping, canonical runner caches, combined integrated landing pipeline and independent audit"
+}

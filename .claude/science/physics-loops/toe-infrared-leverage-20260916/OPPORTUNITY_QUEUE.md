@@ -7,3 +7,7 @@
 5. **Full-premise law/formation discrimination.** Potentially high leverage but needs an actual construction satisfying the kinetic-isotropy primitive as well as all four axioms. Previous reduced record kernels do not establish that.
 
 Rejected immediate tasks: another one-loop beta coefficient; a relabeling of the weak-g limit; assuming volume dilutes local couplings; treating absent literature as an impossibility theorem.
+
+## Milestone reassessment
+
+The selected global dressing route produced four author proposals and finite checks. The actual fixed-g phase remains open. The next fresh target is the continuous-time compact-gauge bridge: derive the exact temporal transfer kernel and the spatial plaquette weight needed for the supplied rotor Hamiltonian, then determine what anisotropic defect estimates can remain uniform. A fixed-step Euclidean phase theorem cannot be transported by assuming its Villain action has the same Hamiltonian limit. This is upstream support for the compact sector; gapless matter still requires separate control.

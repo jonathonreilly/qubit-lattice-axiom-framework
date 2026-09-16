@@ -147,6 +147,36 @@ This establishes a useful first step for a ground-state expansion around the glo
 
 ## Personal evidence
 
-The runner first constructs the actual real-space Wilson hopping/current matrices on L=3, rotates them into the band basis, and acts with CAR bilinears on the filled 54-mode reference. Its37,908 one-photon/particle-hole basis entries reproduce the momentum expression; the difference in paired norm density is about8.7e-18. This checks normalization, momentum routing and fermion signs by a distinct implementation.
+The runner first constructs the actual real-space Wilson hopping/current matrices on L=3, rotates them into the band basis, and acts with CAR bilinears on the filled 54-mode reference. Its37,908 one-photon/particle-hole basis entries reproduce the momentum expression; the difference in paired norm density is about8.7e-18. This checks normalization and momentum routing by a distinct implementation. The program retains the CAR occupation-ordering signs, but this squared norm is insensitive to a phase change of an individual particle-hole basis state; it does not independently certify those relative phases.
 
 It then evaluates the finite reference expressions for L=4,6,8,10,12, including exact Weyl nodes at L=6 and12. The Ward residual is near machine precision. These finite sums are diagnostics; the all-volume bound and convergence follow from the written phase-space proof. The printed cutoff at frequency1 is a floating comparison and is not used as an exact shell-count certificate or to fit a uniform constant. No actual compact three-dimensional ground state is solved here.
+
+## Dependency and proposal record
+
+Exact target: prove the stated coupled free-vacuum resolvent densities under the supplied finite-volume and reference assumptions of this note.
+
+Specified Maxwell/Wilson reference -> exact midpoint current and Ward identity -> orthogonal Fock sum -> Weyl-node counting with grid atom -> photon shell bounds -> cutoff convergence. All steps are derived here; the linear reference Hamiltonian is specified directly, so BLOCK02 motivates but is not required to define this calculation.
+
+Strongest missing downstream lemma: All-order or nonperturbative control at fixed g in the actual compact coupled model. This is an open physical bridge, not a lemma that the present result claims to have reduced to a smaller equivalent problem. Boundary conventions, zero modes, coupling ranges and finite-cutoff limitations are specified above and are not extended by this record.
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Control the fixed-interaction, large-system physics of the supplied coupled model."
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+conditional_surface_status: "Author proposal under explicitly supplied model/reference assumptions; independent review outstanding."
+hypothetical_axiom_status: "none proposed"
+admitted_observation_status: "none used"
+claim_type_reason: "Bounded supplied-model mathematics; no derivation of the model from the framework axioms."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_trace_action: "Check the written proof independently, then address the named actual-state bridge."
+```
+
+Personal evidence sources: [block04_coupled_vacuum_check.py](../evidence/block04_coupled_vacuum_check.py). The author's finite checks challenge the written formulas; they do not establish a uniform theorem by sampling. The scientific imports are the explicitly supplied rotor/CAR or Gaussian/Wilson model and stated boundary conventions. No observed values, fitted selectors, new axioms or new approved primitives are imported. Mathematical tools and their use are specified in the proof.
+
+Hard landing conditions: these are unregistered draft research surfaces. Before any formal retained-grade landing, assign claim identities, declare the complete restricted runner packets (including the BLOCK01 helper used by BLOCK02), review the exact helper mapping under the current dependency policy, establish citation reachability and current canonical evidence, and run the combined integrated-tree landing gates. None of those pending steps is represented as an author audit verdict.

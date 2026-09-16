@@ -233,3 +233,33 @@ The separate programs in ../evidence use actual integer cochains and an actual c
 The analytic theorem uses g<=0.1 and arbitrary free cubes. The finite identity challenges deliberately include larger g, where dropping the affine normalization gives visible errors; they do not certify the theorem by sampling its asymptotic regime. Floating cutoff comparisons are not rigorous tail intervals, and no three-dimensional phase is simulated. All checks are by the author and grant no independent review status.
 
 Proof-method provenance: the current-main carrier and free-cube filling proposals at e0ef7cf4633034a8c1e6d57f5812cc4275bf1349 suggested the cluster argument. The needed d=3, p=2 filling, square-root covariance, affine-source estimate and compression are stated and derived here. The prior charged-rotor draft PR8160 is context, not a theorem input to this construction.
+
+## Dependency and proposal record
+
+Exact target: prove the stated global Gauss dressing and Coulomb variational compression under the supplied finite-volume and reference assumptions of this note.
+
+Exact charge-sector isometry -> square-root dual kernel -> local integer fillings -> convergent real-source cluster extension -> Gaussian variance estimate -> affine moments and overlaps -> whole-matter compression. Each arrow is proved in this note; the finite-dimensional Brascamp-Lieb inequality is imported with checked hypotheses. The supplied Hamiltonian is an explicit model assumption.
+
+Strongest missing downstream lemma: Uniform control of the true compact coupled state and its transverse dynamics at fixed g. This is an open physical bridge, not a lemma that the present result claims to have reduced to a smaller equivalent problem. Boundary conventions, zero modes, coupling ranges and finite-cutoff limitations are specified above and are not extended by this record.
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Control the fixed-interaction, large-system physics of the supplied coupled model."
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+conditional_surface_status: "Author proposal under explicitly supplied model/reference assumptions; independent review outstanding."
+hypothetical_axiom_status: "none proposed"
+admitted_observation_status: "none used"
+claim_type_reason: "Bounded supplied-model mathematics; no derivation of the model from the framework axioms."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_trace_action: "Check the written proof independently, then address the named actual-state bridge."
+```
+
+Personal evidence sources: [block01_affine_theta_check.py](../evidence/block01_affine_theta_check.py), [block01_charged_ring_compression.py](../evidence/block01_charged_ring_compression.py). The author's finite checks challenge the written formulas; they do not establish a uniform theorem by sampling. The scientific imports are the explicitly supplied rotor/CAR or Gaussian/Wilson model and stated boundary conventions. No observed values, fitted selectors, new axioms or new approved primitives are imported. Mathematical tools and their use are specified in the proof.
+
+Hard landing conditions: these are unregistered draft research surfaces. Before any formal retained-grade landing, assign claim identities, declare the complete restricted runner packets (including the BLOCK01 helper used by BLOCK02), review the exact helper mapping under the current dependency policy, establish citation reachability and current canonical evidence, and run the combined integrated-tree landing gates. None of those pending steps is represented as an author audit verdict.

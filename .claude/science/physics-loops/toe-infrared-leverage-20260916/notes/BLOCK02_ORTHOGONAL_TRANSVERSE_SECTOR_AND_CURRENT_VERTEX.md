@@ -96,3 +96,33 @@ The mode profile v_e involves A^(-1/2). A dynamical elimination also needs energ
 The separate rank-five cube implementation constructs the electric sums and centered polynomial wave functions directly, then compares their Gram matrix, orthogonality, orthonormalization and charged-hop projection to dual-theta derivatives. It uses g=0.8,1.2,1.6 to expose charge-dependent corrections in finite identities. These values are outside the conservative uniform theorem range and are not used to validate an all-volume small-coupling bound by sampling.
 
 Observed Gram and vertex discrepancies are near floating arithmetic precision; omitting the affine means gives a visible error, about0.108 in the last case. The comparison retains its actual finite cutoffs. It is an author calculation, not an independent mathematical review or a computation of an infinite-volume phase.
+
+## Dependency and proposal record
+
+Exact target: prove the stated orthogonal transverse reference sector and current vertex under the supplied finite-volume and reference assumptions of this note.
+
+BLOCK01 exact covariance and uniform affine Hessian (provisional dependency) -> centered Gram matrix -> inverse square-root normalization -> exact shifted overlap -> uniform mean-difference bound -> current vertex. The last five steps are derived here.
+
+Strongest missing downstream lemma: Control of all interacting excitation sectors and physical current correlations, beyond a chosen reference matrix element. This is an open physical bridge, not a lemma that the present result claims to have reduced to a smaller equivalent problem. Boundary conventions, zero modes, coupling ranges and finite-cutoff limitations are specified above and are not extended by this record.
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Control the fixed-interaction, large-system physics of the supplied coupled model."
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+conditional_surface_status: "Author proposal under explicitly supplied model/reference assumptions; independent review outstanding."
+hypothetical_axiom_status: "none proposed"
+admitted_observation_status: "none used"
+claim_type_reason: "Bounded supplied-model mathematics; no derivation of the model from the framework axioms."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_trace_action: "Check the written proof independently, then address the named actual-state bridge."
+```
+
+Personal evidence sources: [block02_one_photon_vertex_check.py](../evidence/block02_one_photon_vertex_check.py), [block01_affine_theta_check.py](../evidence/block01_affine_theta_check.py). The author's finite checks challenge the written formulas; they do not establish a uniform theorem by sampling. The scientific imports are the explicitly supplied rotor/CAR or Gaussian/Wilson model and stated boundary conventions. No observed values, fitted selectors, new axioms or new approved primitives are imported. Mathematical tools and their use are specified in the proof.
+
+Hard landing conditions: these are unregistered draft research surfaces. Before any formal retained-grade landing, assign claim identities, declare the complete restricted runner packets (including the BLOCK01 helper used by BLOCK02), review the exact helper mapping under the current dependency policy, establish citation reachability and current canonical evidence, and run the combined integrated-tree landing gates. None of those pending steps is represented as an author audit verdict.

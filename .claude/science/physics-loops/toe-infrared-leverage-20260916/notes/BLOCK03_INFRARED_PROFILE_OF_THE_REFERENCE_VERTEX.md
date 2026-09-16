@@ -91,3 +91,33 @@ No route to the actual phase is ruled out here. In particular, the calculation d
 The runner uses two distinct calculations: direct Cartesian sums of the lattice dispersion on periodic grids N=16,32,64,128,256, and spherical quadrature after the exact low-frequency coordinate change. The successive logarithmic slopes approach the analytically derived 1/(3pi^2). The low-frequency quadrature resolves the quadratic and quartic terms. These are numerical challenges of the formulas; the integrability and divergence conclusions follow from equations(3)-(5).
 
 Finite grids exclude their exact zero mode, as required by the transverse reference convention. They are not samples of the compact interacting ground state. A divergence in this positive reference norm cannot be cancelled by a sign choice; a physical matrix element with an additional soft factor is a different object and remains open. The earlier campaign's bounded-time weak-coupling propagation theorem did not apply an inverse photon energy, so this calculation does not contradict it.
+
+## Dependency and proposal record
+
+Exact target: prove the stated infrared norms of the cubic reference vertex under the supplied finite-volume and reference assumptions of this note.
+
+Specified cubic symbol -> exact q-coordinate integral -> angular factor and Jacobian bounds -> energy-weighted domains. The local free-cube matching additionally uses the explicit tensor spectral bound restated here. These are reference spectral statements; they require no actual interacting state theorem.
+
+Strongest missing downstream lemma: An estimate on the actual coupled state or an effective interaction under infrared rescaling. This is an open physical bridge, not a lemma that the present result claims to have reduced to a smaller equivalent problem. Boundary conventions, zero modes, coupling ranges and finite-cutoff limitations are specified above and are not extended by this record.
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "Control the fixed-interaction, large-system physics of the supplied coupled model."
+source_of_blocker_text: user_goal
+reachability_to_target: supports
+artifact_role: theorem
+conditional_surface_status: "Author proposal under explicitly supplied model/reference assumptions; independent review outstanding."
+hypothetical_axiom_status: "none proposed"
+admitted_observation_status: "none used"
+claim_type_reason: "Bounded supplied-model mathematics; no derivation of the model from the framework axioms."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+next_trace_action: "Check the written proof independently, then address the named actual-state bridge."
+```
+
+Personal evidence sources: [block03_infrared_vertex_check.py](../evidence/block03_infrared_vertex_check.py). The author's finite checks challenge the written formulas; they do not establish a uniform theorem by sampling. The scientific imports are the explicitly supplied rotor/CAR or Gaussian/Wilson model and stated boundary conventions. No observed values, fitted selectors, new axioms or new approved primitives are imported. Mathematical tools and their use are specified in the proof.
+
+Hard landing conditions: these are unregistered draft research surfaces. Before any formal retained-grade landing, assign claim identities, declare the complete restricted runner packets (including the BLOCK01 helper used by BLOCK02), review the exact helper mapping under the current dependency policy, establish citation reachability and current canonical evidence, and run the combined integrated-tree landing gates. None of those pending steps is represented as an author audit verdict.

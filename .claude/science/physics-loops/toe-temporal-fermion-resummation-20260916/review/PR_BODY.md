@@ -1,0 +1,7 @@
+The naive absolute spacetime hopping count fails as the temporal spacing vanishes. This draft proposes exact temporal Wilson resummation and a local physical-curl bound uniform in time resolution and spatial volume for a supplied heavy-fermion determinant on open slabs. It then identifies the precise Fock boundary state, normalization and dynamical gauge transfer controlled by that bound.
+
+The coupled transfer/state join explicitly depends on provisional PR8162 at0f02dc5127416f347e231bbd8aa7c2a8b58a02fa and remains a fixed-spatial-volume result. Generic Wilson transfer/determinant reduction is prior art, credited in the notes. No gapless interacting phase, fixed finite-payload photon, native action/time law, axiom update or complete TOE is claimed.
+
+Six personal finite programs compare distinct matrix, CAR, chain and gauge-history constructions;23 final formula-fault tests reject their declared changes. A coarse-refinement failure and an initially equivalent orientation mutation are preserved with their actual sources and outputs. The sufficient derivative constants are deliberately loose. Focused source-hash, syntax, relative-link, vocabulary and diff checks accompany the pack.
+
+All three final notes are author proposals with current status `conditional-support`. Formal claim registration, canonical audit evidence, integrated landing checks and independent review remain pending. This draft contains only the campaign pack and grants no retained or audit status. No axioms, primitives, editable prompts or main science surfaces were changed.

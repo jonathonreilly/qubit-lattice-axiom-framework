@@ -1,0 +1,17 @@
+{
+  "slug": "toe-temporal-fermion-resummation-20260916",
+  "status": "milestone_packaged_continuing_personally",
+  "updated_utc": "2026-09-16T06:29:31.720458+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "branch": "physics-loop/toe-temporal-fermion-resummation-20260916",
+  "previous_pr": 8162,
+  "previous_head": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+  "agents": "none; personal execution required",
+  "actual_current_surface_status": "conditional-support",
+  "active_target": "Package the uniform heavy-fermion bound, exact boundary model and coupled gauge transfer for independent review",
+  "strongest_unresolved_proof_obligation": "Actual anisotropic/continuous-time thermodynamic gauge phase with matched physical sources; then compose heavy matter",
+  "next_action": "Finish focused verification, push a draft milestone, remove the durable checkout and begin the next personal phase-leverage campaign",
+  "claim_status": "Three final author proposals, six primary finite programs and23 final rejected formula tests; failures and the initially equivalent orientation mutation preserved; no independent review"
+}

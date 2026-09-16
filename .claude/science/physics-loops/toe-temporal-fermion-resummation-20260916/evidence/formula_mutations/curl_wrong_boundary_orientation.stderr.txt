@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/curl_wrong_boundary_orientation.py", line 91, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/curl_wrong_boundary_orientation.py", line 83, in run
+    start=time.time();rows=[make((3,2,2,2),d,6.,.5,927) for d in [.1,.05,.01]]
+                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/curl_wrong_boundary_orientation.py", line 53, in make
+    C=np.array(rows);assert np.linalg.norm(C@G)==0
+                            ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

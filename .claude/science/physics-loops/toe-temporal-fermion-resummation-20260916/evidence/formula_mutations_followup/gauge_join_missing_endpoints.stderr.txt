@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations_followup/gauge_join_missing_endpoints.py", line 167, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations_followup/gauge_join_missing_endpoints.py", line 148, in run
+    paths=explicit_paths(mu,kappa,g);H=continuum_hamiltonian(mu,kappa,g)
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations_followup/gauge_join_missing_endpoints.py", line 118, in explicit_paths
+    assert abs(path_sum-physical)<3e-12
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,28 @@
+{
+  "N": 3,
+  "time_slices": 3,
+  "delta": 0.08,
+  "histories": 27,
+  "direct_four_component_path_sum": 1.0016056500616617,
+  "physical_fock_transfer_amplitude": 1.0016056500616752,
+  "difference": 1.354472090042691e-14,
+  "maximum_spin_reduction_error": 5.10702591327572e-15,
+  "amplitude_without_endpoint_factors": 1.0006494537589783,
+  "endpoint_error": 0.0009561963026969433,
+  "calibrated_c": 5.131952458643825
+}
+{"power": 1, "N": 3, "Nt": 3, "amplitude": 1.001875851568098, "reference": 1.017145428324306, "error": 0.015269576756207881, "without_endpoint_factors": 1.0008192447166577}
+{"power": 1, "N": 5, "Nt": 5, "amplitude": 1.0040729771997978, "reference": 1.017145428324306, "error": 0.013072451124508166, "without_endpoint_factors": 1.0028857401523095}
+{"power": 1, "N": 9, "Nt": 9, "amplitude": 1.0072966397556546, "reference": 1.017145428324306, "error": 0.009848788568651345, "without_endpoint_factors": 1.0062196300301522}
+{"power": 1, "N": 17, "Nt": 17, "amplitude": 1.010673041653022, "reference": 1.017145428324306, "error": 0.006472386671283914, "without_endpoint_factors": 1.0098798556597008}
+{"power": 1, "N": 33, "Nt": 33, "amplitude": 1.0133365469999525, "reference": 1.017145428324306, "error": 0.0038088813243535302, "without_endpoint_factors": 1.0128388229570804}
+{"power": 2, "N": 3, "Nt": 9, "amplitude": 1.0073644632396712, "reference": 1.017145428324306, "error": 0.009780965084634774, "without_endpoint_factors": 1.0062774387613402}
+{"power": 2, "N": 5, "Nt": 25, "amplitude": 1.0123843607341987, "reference": 1.017145428324306, "error": 0.004761067590107304, "without_endpoint_factors": 1.0117688042780233}
+{"power": 2, "N": 9, "Nt": 81, "amplitude": 1.015460628134842, "reference": 1.017145428324306, "error": 0.0016848001894640419, "without_endpoint_factors": 1.0152290688807633}
+{"power": 2, "N": 17, "Nt": 289, "amplitude": 1.01665061531956, "reference": 1.017145428324306, "error": 0.0004948130047459642, "without_endpoint_factors": 1.016581234369847}
+{"power": 2, "N": 33, "Nt": 1089, "amplitude": 1.017012309815165, "reference": 1.017145428324306, "error": 0.00013311850914088375, "without_endpoint_factors": 1.0169935366478398}
+{"power": 3, "N": 3, "Nt": 27, "amplitude": 1.0127386565767171, "reference": 1.017145428324306, "error": 0.004406771747588856, "without_endpoint_factors": 1.0121535052427244}
+{"power": 3, "N": 5, "Nt": 125, "amplitude": 1.0160637111846174, "reference": 1.017145428324306, "error": 0.0010817171396886316, "without_endpoint_factors": 1.01590830279334}
+{"power": 3, "N": 9, "Nt": 729, "amplitude": 1.0169599430866345, "reference": 1.017145428324306, "error": 0.00018548523767147884, "without_endpoint_factors": 1.016931970400643}
+{"power": 3, "N": 17, "Nt": 4913, "amplitude": 1.017119697785957, "reference": 1.017145428324306, "error": 2.5730538349089116e-05, "without_endpoint_factors": 1.0171155125462126}
+{"power": 3, "N": 33, "Nt": 35937, "amplitude": 1.0171424430019818, "reference": 1.017145428324306, "error": 2.9853223242337634e-06, "without_endpoint_factors": 1.0171418701751522}

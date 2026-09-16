@@ -1,0 +1,105 @@
+{
+  "checked_utc": "2026-09-16T06:31:26.758179+00:00",
+  "kind": "focused author verification; no canonical audit status",
+  "primary_hash_receipts": [
+    {
+      "source": "block01_temporal_resummation_check.py",
+      "source_sha256": "cee1ae079230a2ef22fd15fc53256a4cd87be4d146a90a75ae4f37305b83e521",
+      "output": "BLOCK01_TEMPORAL_RESUMMATION_ATTEMPT1.stdout.txt",
+      "output_sha256": "a8963badc792169da77d9da313a6748926945b2926032fbbb80a87cd6d87e3aa"
+    },
+    {
+      "source": "block02_physical_curl_hessian_check.py",
+      "source_sha256": "3ef63a575b5ba0cf59f6bdcd2f516aaa12a58dc76611d89c76addaa32e5db59d",
+      "output": "BLOCK02_CURL_HESSIAN_ATTEMPT1.stdout.txt",
+      "output_sha256": "8fb948265adb365eae7c60a14a51a8ba10bccd85cdedd2de3c21a573d1409a03"
+    },
+    {
+      "source": "block03_open_boundary_hamiltonian_check.py",
+      "source_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+      "output": "BLOCK03_OPEN_HAMILTONIAN_ATTEMPT1.stdout.txt",
+      "output_sha256": "dd0e196595d5aac7d74341ae03dd733fb2703a6017f61b963f8d7948b17186d8"
+    },
+    {
+      "source": "block04_dynamical_gauge_join_check.py",
+      "source_sha256": "864d6ece3868b35a0ff7f87efd62fc5c7a3c50eb539069c4ee449e16394c2a05",
+      "output": "BLOCK04_DYNAMICAL_GAUGE_ATTEMPT3.stdout.txt",
+      "output_sha256": "71f825614fdb4f5d154d7c7d26c3a87a4c301da3985a1e22d0f2dfbe7dedc46b"
+    },
+    {
+      "source": "block05_integer_local_filling_check.py",
+      "source_sha256": "9aa46872c133b09cb801e02ab7c885765d4fff2f9e8284078375175aa9cf55a2",
+      "output": "BLOCK05_INTEGER_FILLING_ATTEMPT2.stdout.txt",
+      "output_sha256": "83979aa1bab82198e5cd78f7fca4607d5e5b091863541578a9f3b25ed43ab93e"
+    },
+    {
+      "source": "block06_third_curl_variation_check.py",
+      "source_sha256": "0827382ea444db852980b95e4e5c32933885ca83eb277e78ea1b3c53220a1057",
+      "output": "BLOCK06_THIRD_VARIATION_ATTEMPT1.stdout.txt",
+      "output_sha256": "c2c3ed2059094e74f510d4c1b3d9be6aa870b4b19103a39d336dcb312d94dc8c"
+    }
+  ],
+  "mutation_receipts": [
+    {
+      "harness": "challenge_blocks01_03.py",
+      "faults_rejected": 12,
+      "output": "BLOCKS01_03_MUTATIONS_ATTEMPT1.stdout.txt"
+    },
+    {
+      "harness": "challenge_blocks04_06.py",
+      "faults_rejected": 11,
+      "output": "BLOCKS04_06_MUTATIONS_ATTEMPT2.stdout.txt"
+    }
+  ],
+  "python_files_compiled": 47,
+  "markdown_files_checked": 16,
+  "relative_links_checked": [
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK02_UNIFORM_TEMPORAL_RESUMMATION_AND_CURL_RESPONSE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/BLOCK04_ACTUAL_GAUGE_MATTER_TRANSFER_AND_STATE_JOIN.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/NUMERICAL_HISTORY.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PERSONAL_PROOF_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PREMISES_AND_BOUNDARIES.md"
+    },
+    {
+      "source": "README.md",
+      "target": "READING_LEDGER.md"
+    },
+    {
+      "source": "notes/BLOCK02_UNIFORM_TEMPORAL_RESUMMATION_AND_CURL_RESPONSE.md",
+      "target": "BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md"
+    },
+    {
+      "source": "notes/BLOCK03_EXACT_OPEN_BOUNDARY_FERMION_MODEL_MATCH.md",
+      "target": "BLOCK04_ACTUAL_GAUGE_MATTER_TRANSFER_AND_STATE_JOIN.md"
+    }
+  ],
+  "base_diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "vocab_report": "FOCUSED_VOCAB.stdout.txt",
+  "registration_and_integrated_audit": "pending"
+}

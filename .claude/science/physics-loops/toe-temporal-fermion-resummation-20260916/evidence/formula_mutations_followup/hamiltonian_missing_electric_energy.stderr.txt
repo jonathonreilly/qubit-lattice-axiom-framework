@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations_followup/hamiltonian_missing_electric_energy.py", line 167, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations_followup/hamiltonian_missing_electric_energy.py", line 149, in run
+    generators=generator_check(H,mu,kappa,g)
+  File "/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations_followup/hamiltonian_missing_electric_energy.py", line 142, in generator_check
+    assert rows[-1]['generator_vector_error']<.001,rows
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [{'N': 64, 'delta': 2.44140625e-07, 'generator_vector_error': 0.7441738012778644, 'hamiltonian_vector_norm': 50.065127951192686}, {'N': 128, 'delta': 6.103515625e-08, 'generator_vector_error': 0.7471396780723126, 'hamiltonian_vector_norm': 50.065127951192686}, {'N': 256, 'delta': 1.52587890625e-08, 'generator_vector_error': 0.7478833728029914, 'hamiltonian_vector_norm': 50.065127951192686}]

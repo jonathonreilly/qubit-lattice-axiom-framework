@@ -1,0 +1,113 @@
+{
+  "harness_sha256": "1d43cef23c25b368c9cbad1703301c3df8006cb8348f05de03c61cc322f9481f",
+  "formula_faults": [
+    {
+      "fault": "run_weight_missing_x",
+      "original_source": "block01_temporal_resummation_check.py",
+      "original_sha256": "cee1ae079230a2ef22fd15fc53256a4cd87be4d146a90a75ae4f37305b83e521",
+      "mutant_sha256": "b0d9c2d676025d8af9f0afd91c32cf47e1e1d0c86f6f0d586e537bdafb52bace",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/run_weight_missing_x.py\", line 111, in run\n    start=time.time();spin=spin_checks();matrices=[lattice((3,2,2,2),.1,6.,.5,271),lattice((5,2,1,1),.05,6.,.5,314)]\n                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/run_weight_missing_x.py\", line 48, in lattice\n    err=float(np.linalg.norm(R-direct));assert err<3e-13\n                                               ^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "rectangle_missing_pair_factor",
+      "original_source": "block01_temporal_resummation_check.py",
+      "original_sha256": "cee1ae079230a2ef22fd15fc53256a4cd87be4d146a90a75ae4f37305b83e521",
+      "mutant_sha256": "afc1704ffcb73435510c70211a4c887a6e9397901b5da4c05c05a587d72bdb77",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "n-resummation-20260916/evidence/formula_mutations/rectangle_missing_pair_factor.py\", line 111, in run\n    start=time.time();spin=spin_checks();matrices=[lattice((3,2,2,2),.1,6.,.5,271),lattice((5,2,1,1),.05,6.,.5,314)]\n                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/rectangle_missing_pair_factor.py\", line 74, in lattice\n    second=terms[1]['trace_log_term'];assert abs(second-rectangle)<3e-13\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "time_closure_discarded",
+      "original_source": "block01_temporal_resummation_check.py",
+      "original_sha256": "cee1ae079230a2ef22fd15fc53256a4cd87be4d146a90a75ae4f37305b83e521",
+      "mutant_sha256": "4a1dc606b2eb4898598aae1c57f98ae4192eab6f2ae1a42ebdf1d0251e2cbcb9",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "est(),'spin_checks':spin,'finite_matrices':matrices,'time_closure':closure_checks(),'continuum_rectangle':continuum_rectangle(),'seconds':time.time()-start},indent=2))\n                                                                                                                                                           ~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/time_closure_discarded.py\", line 90, in closure_checks\n    bound=delta*mu_b**(-(ell-1));assert closed<=bound\n                                        ^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "continuum_response_wrong_mass_power",
+      "original_source": "block01_temporal_resummation_check.py",
+      "original_sha256": "cee1ae079230a2ef22fd15fc53256a4cd87be4d146a90a75ae4f37305b83e521",
+      "mutant_sha256": "e47864d7709a79da40a66a497748a5ba2a41f8aa0a2e97b977dd22447c5ec200",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "closure_checks(),'continuum_rectangle':continuum_rectangle(),'seconds':time.time()-start},indent=2))\n                                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/continuum_response_wrong_mass_power.py\", line 105, in continuum_rectangle\n    assert abs(rows[-1]['finite_curvature']/hess-1)<.01\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "hessian_missing_contact",
+      "original_source": "block02_physical_curl_hessian_check.py",
+      "original_sha256": "3ef63a575b5ba0cf59f6bdcd2f516aaa12a58dc76611d89c76addaa32e5db59d",
+      "mutant_sha256": "c6f1b765023dc01ed88e6aeb349f70bf5f452ff079202c17b7b3cdfb8e563996",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_contact.py\", line 83, in run\n    start=time.time();rows=[make((3,2,2,2),d,6.,.5,927) for d in [.1,.05,.01]]\n                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_contact.py\", line 62, in make\n    gauge_residual=float(np.linalg.norm(H@G));assert gauge_residual<2e-10\n                                                     ^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "hessian_missing_pair_factor",
+      "original_source": "block02_physical_curl_hessian_check.py",
+      "original_sha256": "3ef63a575b5ba0cf59f6bdcd2f516aaa12a58dc76611d89c76addaa32e5db59d",
+      "mutant_sha256": "bd6a0ef699eef63ae13708dcc0c7558389ae32b6df334cae061eb947c7ece94a",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "ments/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_pair_factor.py\", line 83, in run\n    start=time.time();rows=[make((3,2,2,2),d,6.,.5,927) for d in [.1,.05,.01]]\n                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/hessian_missing_pair_factor.py\", line 78, in make\n    extrap=(4*half-fd)/3;assert abs(extrap-expected)<3e-8\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "curl_wrong_boundary_orientation",
+      "original_source": "block02_physical_curl_hessian_check.py",
+      "original_sha256": "3ef63a575b5ba0cf59f6bdcd2f516aaa12a58dc76611d89c76addaa32e5db59d",
+      "mutant_sha256": "19f822cceb49a6e2f0aa45a5c11e500fd7a0daf86124a76bfedb2d968d0a0f45",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "y/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/curl_wrong_boundary_orientation.py\", line 83, in run\n    start=time.time();rows=[make((3,2,2,2),d,6.,.5,927) for d in [.1,.05,.01]]\n                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/curl_wrong_boundary_orientation.py\", line 53, in make\n    C=np.array(rows);assert np.linalg.norm(C@G)==0\n                            ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "schur_missing_prefactor",
+      "original_source": "block03_open_boundary_hamiltonian_check.py",
+      "original_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+      "mutant_sha256": "65799f611cf826dc0a3d112ae2e40da939feb77b1fc8961e7bb210f50675f84f",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": " recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/schur_missing_prefactor.py\", line 97, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/schur_missing_prefactor.py\", line 79, in run\n    assert abs(exact-schur)<3e-11 and abs(exact-complementary)<3e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "complementary_missing_prefactor",
+      "original_source": "block03_open_boundary_hamiltonian_check.py",
+      "original_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+      "mutant_sha256": "abe28aadf265e579db46832da801f46d4dcc830186f2e2b851405547261797cb",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "t):\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/complementary_missing_prefactor.py\", line 97, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/complementary_missing_prefactor.py\", line 79, in run\n    assert abs(exact-schur)<3e-11 and abs(exact-complementary)<3e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "fock_missing_energy_shift",
+      "original_source": "block03_open_boundary_hamiltonian_check.py",
+      "original_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+      "mutant_sha256": "28e607d16ae157eb083c4688380c961b16975f9507b23ff0692f80201d751d9a",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/fock_missing_energy_shift.py\", line 97, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/fock_missing_energy_shift.py\", line 60, in run\n    assert abs(minor_amplitude-fock_amplitude)<3e-10\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "car_missing_creation_parity",
+      "original_source": "block03_open_boundary_hamiltonian_check.py",
+      "original_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+      "mutant_sha256": "b995951cfbba6478864dce04f35a75d3e168f44732d3218a4f791ca54d156995",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/car_missing_creation_parity.py\", line 97, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/car_missing_creation_parity.py\", line 60, in run\n    assert abs(minor_amplitude-fock_amplitude)<3e-10\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fault": "exterior_missing_scalar_prefactor",
+      "original_source": "block03_open_boundary_hamiltonian_check.py",
+      "original_sha256": "87a9b40d3c599074f58cae9f44dd6300a59378de0afe052e8d211c93a9904a80",
+      "mutant_sha256": "31cf0a70652da92b3e9a1e21e26282ee85e9d722bf4d4bdfa4c1847f01741c25",
+      "exit_code": 1,
+      "assertion_rejected": true,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/exterior_missing_scalar_prefactor.py\", line 97, in <module>\n    if __name__=='__main__':run()\n                            ~~~^^\n  File \"/Users/jonreilly/Documents/Codex/toe-temporal-fermion-resummation-20260916/.claude/science/physics-loops/toe-temporal-fermion-resummation-20260916/evidence/formula_mutations/exterior_missing_scalar_prefactor.py\", line 89, in run\n    assert abs(state[omega]-canonical)<3e-11\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

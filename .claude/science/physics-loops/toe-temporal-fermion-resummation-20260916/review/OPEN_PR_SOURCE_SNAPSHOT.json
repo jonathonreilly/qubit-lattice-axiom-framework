@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-09-16T06:30:35.893670+00:00",
+  "pr8162": {
+    "baseRefName": "main",
+    "headRefOid": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+    "isDraft": true,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8162"
+  },
+  "main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "ai_execution": "068e916ca37b004757ad3a3c082857a91dc37215"
+}

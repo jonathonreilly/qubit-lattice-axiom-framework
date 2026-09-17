@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 31 opening (2026-09-16)
+
+Block 31 opened for review (independent PR against main): the sharper bad-pair budget is false for block 30's extended explanation tree (witnesses at ratio `8/5`, `5/3`, `5/3`; the two-level period has ratio exactly `2`); item 1 of the previous refresh is closed in the negative and block 30's ceiling stands. Ranked next:
+
+1. **Counting the amplification part by clusters** — the union bound over sub-structures caps the amplification at `ε₂ < 4/27` while the branching dies out below `1/3`; a cluster-expansion-type count would move the ceiling; the accounting of the tree is not the lever (block 31) — hard.
+2. **A tree with a different pole or excuse rule** — the period uses only the spanning identity and the one-arrow-per-kept-pole rule; a construction that keeps fewer poles at the two-bad refinements or excuses the bad pole through a processed neighbour (when the bad pole is not a strict charge-maximiser) might lower the constant; W1–W3 are its test cases — medium-hard, no route in hand.
+3. **The overlap-free tree of trees** — unchanged; blocked by overlaps.
+4. **A proof of the loss of memory at strong coupling for the sphere formation law; spin-wave theory as a theorem; the torus memory time** — hard; unchanged.

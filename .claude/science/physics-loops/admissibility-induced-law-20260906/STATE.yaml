@@ -105,3 +105,13 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+# ---------------------------------------------------------------- block 31 close (2026-09-16)
+# block: 31
+# branch: physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-30 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170-#8174)
+# pr_status: opened for review — PR pending at this commit (recorded in the close-out commit); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=20 FAIL=0; 9 mutations, census 9/9 in-family; refuting pass consistent on seven items; gates: see HANDOFF.md"
+# seats: "supervisor-run: proof search on the accounting (equality cases (1,1,2), (2,2,1), (3,3,0); 40 000 random trees at ratio <= 1; a hand chain collapsed by the one-arrow-per-kept-pole rule) -> hill-climb on the ratio (5/3 in both windows) -> witnesses verified, W1 reduced to its own marks -> the stake's certificates -> contract with a lens pass -> primary (T1-T3, runner) -> refuting pass (edge-list rebuild; numpy rule; the accounting enumerated; simulated annealing at 8/5) -> fold (a crashing mutation guarded)"
+# review_findings: "the sharper bad-pair budget is false for block 30's construction: witnesses (16,10,1), (20,12,1), (23,12,2) with ratio 8/5, 5/3, 5/3 inside block 30's budget; c >= 5/3; the two-level period has ratio exactly 2; block 30's executed 2/3 was a sampling artefact; the stake (p >= 453 on (p,1,2); ceiling 4/729) recorded, not claimed; block 30's ceiling stands"
+# strongest_unresolved_proof_obligation: "whether the constant 2 is attained (chains of arbitrary length not constructed; executed 5/3); a count of the amplification part by clusters (branching threshold 1/3 against 4/27); a tree with a different pole rule judged on the witnesses"
+# next_exact_action: "queue refresh 2026-09-16 (block 31 opening): the cluster count for the amplification part; a differently built tree tested on W1-W3; the strong-coupling proof for the sphere formation law; spin-wave theory as a theorem; the torus memory time"
+# lock: held (owner: keep going, the sharper bad-pair budget next)

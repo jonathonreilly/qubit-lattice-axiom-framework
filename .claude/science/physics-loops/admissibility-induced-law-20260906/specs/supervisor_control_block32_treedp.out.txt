@@ -1,0 +1,14 @@
+level 9: 4 states
+level 8: 14 states
+level 7: 14 states
+level 6: 51 states
+level 5: 202 states
+level 4: 202 states
+level 3: 202 states
+level 2: 51 states
+level 1: 14 states
+level 0: 1 states
+W1: c = 1: exact min cost over all trees = -2   (0.6s)   [MILP: c* = 3/4 with (E,|A|,|S|,F) = (6,8,1,0): cost at c = 6 - 8c]
+W1: c = 3/4: exact min cost over all trees = 0   (0.6s)   [MILP: c* = 3/4 with (E,|A|,|S|,F) = (6,8,1,0): cost at c = 6 - 8c]
+W1: c = 1/2: exact min cost over all trees = 2   (0.6s)   [MILP: c* = 3/4 with (E,|A|,|S|,F) = (6,8,1,0): cost at c = 6 - 8c]
+W1: c = 0: exact min cost over all trees = 6   (0.6s)   [MILP: c* = 3/4 with (E,|A|,|S|,F) = (6,8,1,0): cost at c = 6 - 8c]

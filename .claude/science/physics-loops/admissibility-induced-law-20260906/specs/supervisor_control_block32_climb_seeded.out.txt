@@ -1,0 +1,8 @@
+seed 21 5x5x8: start c* 1
+seed 21: done best=1
+seed 22 6x6x8: start c* 1
+seed 22: done best=1
+seed 23 5x5x8: start c* 1
+seed 23: done best=1
+seed 24 6x5x9: start c* 1
+seed 24: done best=1

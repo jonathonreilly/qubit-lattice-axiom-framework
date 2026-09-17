@@ -1,0 +1,206 @@
+---
+claim_id: admissibility_rule_six_axis_formation_threshold_the_minimal_marked_tree_the_counted_familys_constant_is_at_least_one_exact_certificates_and_the_tree_routes_floor_bounded_theorem_note_2026-09-17
+claim_type: bounded_theorem
+claim_scope: "For the two-level noisy majority automaton of block 30 (PR #8174) in level time on Z^3 and the family of marked explanation trees counted by block 25's recursion (PR #8168) — subtrees of G through 1-sites containing x with at most one downward arrow per node, the marks read off (seeds without a downward arrow, amplified nodes with an amplification arrow to their single 1-predecessor, processed nodes with an excuse arrow to a 1-predecessor), forks between siblings, so that forks = |S| - 1 — and the budget E <= 3(|S| - 1) + c|A| under which the count gives P(eta'_x = 1) <= epsilon_1 R(t + epsilon_2/t^c, epsilon_1/t^3): (T1) every tree of the family lies in the component of x in G restricted to the 1-sites; if that component holds one seed, the trees are exactly the node sets N containing x in which every non-seed node has a 1-predecessor in N (an amplified node its single one), and min over the family of E - 3(|S| - 1) - c|A| is an exact dynamic program over levels, checked against a brute-force enumeration of the full family on tiny realizations (proved; executed); (T2) on two explicit realizations (windows 4x4x7 with 20 marks and 5x5x8 with 108 marks) the component of the root holds one seed and the exact minimum is 0 at c = 1 and positive at c = 99/100: every tree of the family satisfies E >= 3(|S| - 1) + |A| there, so no construction within the family — whatever its rule — achieves a budget with c < 1, and the family's constant c* := sup over realizations of min over trees of (E - 3(|S| - 1))/|A| is at least 1; the optimal trees are exhibited with E = |A| = 6 and E = |A| = 9 (proved by exhibition and exact enumeration); (T3) block 31's witnesses (PR #8175) have cheap trees: c* = 3/4 exactly on W1 (single seed), and verified trees with ratio 4/11 on W2 and E - 3(|S| - 1) = -12 on W3 — the obstruction of block 31 was the construction's, not the family's (proved by exhibition); (T4) the stake and the floor: if a construction attains c = 1 the exact super-solutions give p >= 453 at (p, 1, 2), 232 at (p, 1, 1), 905 at (p, 2, 4), 677 at (p, 1, 3); and since t^c <= t for c >= 1, every budget of the family needs epsilon_2 < max_t t (4/27 - t) = 4/729, crossed on (p, 1, 2) between p = 367 and 368: the tree route counted by block 25's recursion cannot prove the ordered phase below p = 368 on (p, 1, 2) (proved). Executed and not claimed: twelve hill-climbs on c* over windows from 4x4x7 to 6x6x8 (about 10^4 realizations evaluated by an integer program) never exceed c* = 1 and reach it in four of them — the conjecture that the family's constant is exactly 1. Not claimed: a construction with c = 1; any lowering of block 30's region; other counts of the family; other menus or orders. No reading, rule or coupling is selected as physical; exact arithmetic throughout the runner."
+upstream_dependencies:
+  - minimal_axioms
+  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+runner: scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py
+---
+
+# The minimal marked tree: the counted family's constant is at least one (exact certificates), block 31's witnesses have cheap trees, and the tree route's floor at `p = 368` on `(p, 1, 2)`
+
+**Date:** 2026-09-17
+**Type:** bounded_theorem
+**Status:** bounded-support (exact; a family-level lower bound by exhibition and exact enumeration; conditional on the named supplied readings; unaudited)
+
+## Result up front
+
+Block 30 proved the six-axis formation law keeps its plane for `p ≥ 4165` at
+`(p, 1, 2)` by counting marked explanation trees under the budget
+`E ≤ 3(|S| − 1) + 2|A|`, and block 31 showed that block 30's *construction*
+cannot do better than the constant `2`. That left the real question open: is
+the constant a property of the construction or of the counted family itself?
+Any construction produces, for each realization of the automaton, some tree of
+the family; the best a construction could ever do at a realization is the
+cheapest tree of the family there. This note computes that cheapest tree
+exactly.
+
+The family's constant is at least one. On two explicit realizations of the
+two-level automaton the component of the root contains a single seed, every
+tree of the family is then one arborescence, and an exact dynamic program over
+levels shows that every tree has `E ≥ 3(|S| − 1) + |A|`: the minimum of
+`E − 3(|S| − 1) − c|A|` is exactly `0` at `c = 1` and positive at `c = 99/100`.
+So no construction whatsoever within the family — block 30's, a smarter one,
+or the minimal tree itself — reaches a budget with `c < 1`. The witnesses of
+block 31, on the other hand, have cheap trees (`c* = 3/4`, `4/11`, and a tree
+inside block 25's pure seed budget): the obstruction of block 31 was the
+construction's. Twelve hill-climbs on the family's constant over windows up to
+`6×6×8` never exceed `1` and reach it in four of them; that `1` is exactly the
+family's constant is recorded as a conjecture, not claimed.
+
+Two consequences are exact. If a construction attaining `c = 1` exists, block
+31's certificates give `p ≥ 453` on `(p, 1, 2)` — the best the tree route can
+ever do. And since `t^c ≤ t` for `c ≥ 1`, every budget of the family needs
+`ε₂ < max_t t(4/27 − t) = 4/729`, which on `(p, 1, 2)` is crossed between
+`p = 367` and `368`: the route of marked explanation trees counted by block
+25's recursion cannot prove the ordered phase below `p = 368` there, while the
+strength is located at `p ≈ 11` (block 28). The remaining factor of about
+`35` is beyond every tree construction and every budget of this family; it
+lies in the count itself — the union bound over sub-structures — or in a
+different object.
+
+In plain words: the earlier proofs explained each dissent by a family tree of
+causes and charged the explanation at a fixed rate. We asked whether a cleverer
+family tree could be cheaper. We found the cheapest family tree there is, on
+every configuration we could build, and on some configurations it still costs
+one full explanation per cheap dissent — so no cleverness in drawing the tree
+gets below that rate. The remaining distance to the truth must come from
+changing how the trees are counted, not how they are drawn.
+
+Exactly: the reduction (T1); the family-level lower bound (T2); the witnesses'
+cheap trees (T3); the stake and the floor (T4). Executed with exact
+arithmetic: 19 checks, 8 mutations; the exact minima in a fraction of a second.
+
+## Machine status and trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 31's queue: a differently built explanation tree, judged on the witnesses W1-W3 (would the family admit a constant below 2, and how far below?)"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the family's constant is at least 1 (exact, two realizations); block 31's witnesses have cheap trees; the tree route's floor is p = 368 on (p, 1, 2) and its best case p >= 453 (if c = 1 is attained: open, executed minima never above 1). Next: a construction attaining c = 1 (the minimal tree exists; a rule with a proof is the obligation), or a count of the family that is not a union bound over sub-structures. Consumers: the campaign's decision record; block 30's and 31's open items"
+conditional_surface_status: "T1 proved (the component lemma; the single-seed characterization; the dynamic program) and executed against brute force; T2 proved by exhibition with exact enumeration on two realizations; T3 by exhibition; T4 exact (the certificates conditional on a construction with c = 1, which is not claimed; the floor unconditional for the family counted by block 25's recursion); conditional on the records-only reading, positivity, the six-axis menu and the monotone order as supplied conditions for the automaton's meaning; the standard mathematical imports named at definition level"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+```
+
+## Premises and declared objects
+
+The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule and its one-site conditional given a recorded set; the level automaton, the two-level domination, the counted family and its recursion are the objects of blocks 25, 30 and 31 (PRs #8168, #8174, #8175, open hand-offs referenced as evidence addresses), restated here as declared objects and re-executed by the runner. All proposed and unaudited.
+
+Declared objects.
+- **Level time and the one-sided automaton.** Sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`, siblings `x ± (e_i − e_j)`. A **realization** is the output `η` of the one-sided two-level majority rule from a finite set of noise marks `ζ` in a box: `η_x = 1` if at least two predecessors are `1`, otherwise `η_x = 1` iff `x ∈ ζ`; sites outside the box are `0` (the same as the infinite lattice with marks only inside the box). A **seed** is a 1-site with no 1-predecessor, an **amplified site** one with exactly one, a **processed-type site** one with at least two.
+- **The graph `G` and the counted family.** Arrows `{x, x − e_j}`, forks `{x, x ± (e_i − e_j)}`. A **marked tree of the family** at a realization is a subtree `T` of `G` through 1-sites containing `x` such that every non-seed node of `T` has exactly one downward arrow in `T`, to one of its 1-predecessors (an amplified node: to its single one), seeds have none, and the remaining edges are forks; `E(T)` counts the arrows at processed-type nodes, `A(T)` the amplified nodes, `S(T)` the seeds, `F(T)` the forks. The arrows of `T` form one arborescence per seed (levels decrease along arrows), and the forks join these arborescences into a tree, so `F = |S| − 1`. The **cost** at parameter `c` is `E − 3(|S| − 1) − c|A|`; the **family's value at a realization and a root** is `c*(η, x) := min over trees with |A| ≥ 1 of (E − 3(|S| − 1))/|A|`; the **family's constant** is `c* := sup over realizations and roots`.
+- **Why this is the right quantity.** Block 30's count reads `P(η'_x = 1) ≤ Σ_T ε₁^{|S|} ε₂^{|A|}` over the trees `T ∈ 𝓔_c` realized at `x`, where `𝓔_c` is the family with the budget `E ≤ 3(|S| − 1) + c|A|`, and gives `ε₁ R(t + ε₂/t^c, ε₁/t³)` by the weights `t` per excuse arrow, `ε₂/t^c` per amplified node and `ε₁/t³` per fork. The count is valid at `c` iff every realization with `η_x = 1` realizes some tree of `𝓔_c`, i.e. iff `c ≥ c*`. A **construction** is any rule producing such a tree; its constant is at least `c*`.
+- **The component.** `C(η, x)` is the connected component of `x` in `G` restricted to the 1-sites of `η`.
+- **The realizations.** `Z_A`: box `[0,4)²×[0,7)`, root `(3, 3, 3)`, marks `(0,0,0), (0,0,1), (0,1,0), (0,1,1), (1,0,0), (1,0,2), (1,0,5), (1,2,0), (1,2,5), (1,3,1), (2,0,0), (2,1,3), (2,2,3), (2,3,3), (3,0,1), (3,0,2), (3,1,0), (3,1,3), (3,3,5), (3,3,6)` (46 ones). `Z_B`: box `[0,5)²×[0,8)`, root `(4, 4, 4)`, the 108 marks listed in the runner (69 ones). `W1`, `W2`, `W3`: block 31's witnesses, restated in the runner.
+- **The recursion.** `D = (1 + xU)²(1 + 3xD)(1 + yF)⁶`, `U = (1 + xU)³(1 + yF)⁶`, `F = (1 + xU)³(1 + 3xD)(1 + yF)⁵`, `R = (1 + xU)³(1 + 3xD)(1 + yF)⁶`; its domain at `y = 0` is `x < 4/27`; `ε₁ = d_1`, `ε₂ = max(d_2, d_3)` with block 30's closed forms.
+
+## Prior art and what is new
+
+Blocks 25, 30 and 31 carried Toom's stability theorem (in the Berman–Simon route as exposed by Gács) into level time with explicit thresholds, a two-level domination, and the refutation of a sharper budget for block 30's construction. What is new: (i) the question is moved from the construction to the family — the cheapest tree of the family at a realization is computed exactly (T1), which is the quantity every construction is measured against; (ii) the family's constant is bounded below by `1` with exact certificates (T2), which no search over constructions could have shown; (iii) block 31's obstruction is located in its construction, not in the family (T3); (iv) the whole tree route is given a floor, `p = 368` on `(p, 1, 2)`, and a best case, `p ≥ 453` (T4) — the first statement in the campaign about a class of proofs rather than one proof.
+
+## Exact target and obligation graph
+
+| Obligation | Statement | Route | Runner family |
+|---|---|---|---|
+| T1 | the component lemma; the single-seed characterization; the exact dynamic program | structure of the family; brute force on tiny realizations | B |
+| T2 | on `Z_A`, `Z_B` every tree has `E ≥ 3(|S| − 1) + |A|`; `c* ≥ 1` | the dynamic program at `c = 1` and `99/100`; the optimal trees | C |
+| T3 | `c*(W1) = 3/4`; cheap trees on `W2`, `W3` | the dynamic program; verified trees | D |
+| T4 | the stake `p ≥ 453` if `c = 1`; the floor `p = 368` | exact super-solutions; `t^c ≤ t`; a one-variable maximum | E |
+
+## Theorem T1 — the reduction
+
+**T1.1 (the component lemma).** Every marked tree of the family at `(η, x)` lies in `C(η, x)`. *Proof.* A tree is a connected subgraph of `G` through 1-sites containing `x`. ∎
+
+**T1.2 (one seed).** If `C(η, x)` holds exactly one seed `s`, then every tree of the family at `x` has `S(T) = {s}` and `F(T) = 0`, and a set `N` of 1-sites is the node set of a tree iff `x ∈ N` and every non-seed node of `N` has a 1-predecessor in `N` (an amplified node: its single one). *Proof.* The seeds of `T` are 1-sites of `C(η, x)` without a 1-predecessor, so `S(T) ⊆ {s}`; every arrow chain from a non-seed node descends and ends at a seed, so `s ∈ T` and the arrows form one arborescence, which is already connected: no fork can be added without a cycle, and `F = |S| − 1 = 0`. Conversely, given such `N`, choosing one arrow per non-seed node into `N` gives an acyclic graph (levels decrease) in which every node's chain ends at `s`; it is a tree containing `x`, and it is a subtree of `G` through 1-sites. ∎
+
+**T1.3 (the dynamic program).** Under T1.2, `min_T [E − 3(|S| − 1) − c|A|]` equals the minimum over such node sets `N` of `Σ_{z ∈ N} cost(z)` with `cost = +1` (processed-type), `−c` (amplified), `0` (the seed). Ordering the levels of the component from the top down, the minimum is computed exactly by a dynamic program whose state at level `ℓ` is `N ∩ {level ℓ}`, with the transition requiring every non-seed node of the state to have a 1-predecessor in the next state, the root forced at its level, and the terminal state `{s}` at the seed's level (no 1-site of the component lies below `s`, since its chain could not reach `s`). *Proof.* The constraints on `N` are local between consecutive levels, and the cost is a sum over levels. ∎ Executed: on `90` tiny realizations whose component holds one seed, the program equals a brute-force enumeration of the full family (node sets, arrow choices, fork forests between arborescences) in every case; on `51` tiny realizations with several seeds, forks lower the minimum or are needed for any tree in all `51` — the multi-seed part of the family is real, and the reduction is used only where T1.2 applies (B1–B2).
+
+## Theorem T2 — the family's constant is at least one
+
+**T2.1 (`Z_A`).** In the realization `Z_A` the component of the root `(3, 3, 3)` has `42` of the `46` ones and exactly one seed, `(0, 0, 0)` (the other three seeds sit in components not joined to the root's by any arrow or fork). The exact minimum of `E − 3(|S| − 1) − c|A|` over every tree of the family is `6` at `c = 0`, `3/2` at `c = 3/4`, `3/50` at `c = 99/100`, `0` at `c = 1` and `−1/10` at `c = 101/100`; it is non-increasing and concave in `c` (a minimum of affine functions). Hence every tree of the family at `Z_A` satisfies `E ≥ 3(|S| − 1) + |A|`, and for every `c < 1` no tree satisfies `E ≤ 3(|S| − 1) + c|A|` (the minimum is positive on `[0, 1)` by concavity between `99/100` and `1`). An optimal tree at `c = 1` has `E = |A| = 6` and is exhibited and verified (C1, C3).
+
+**T2.2 (`Z_B`).** In `Z_B` the component of `(4, 4, 4)` has `60` of the `69` ones and one seed; the minimum is `0` at `c = 1` and `2/25` at `c = 99/100`; an optimal tree has `E = |A| = 9` (C2).
+
+**T2.3 (the constant).** `c* ≥ 1`. Any construction of marked trees of the family, and any budget `E ≤ 3(|S| − 1) + c|A|` valid for all realizations, has `c ≥ 1`. *Proof.* T2.1: at `Z_A` a valid budget must be satisfied by some tree, and every tree has `E − 3(|S| − 1) ≥ |A| ≥ 1`. ∎
+
+*Remark (what the realizations look like).* In `Z_A` the seed's three successors are amplified and the root sits nine levels up; the optimal tree descends through processed-type nodes, harvesting one amplified node per processed node along chains such as `(2, 2, 3) → (2, 1, 3) → (2, 1, 2) → (1, 1, 2) → (1, 0, 2) → (1, 0, 1) → (0, 0, 1) → (0, 0, 0)`, and no cheaper harvest exists: every amplified node not on such a chain costs a processed node to reach. Block 30's construction gives ratio `8/5` on block 31's `W1`; the family gives `3/4` there — the two numbers measure different things, and only the second is a property of the route.
+
+## Theorem T3 — block 31's witnesses have cheap trees
+
+`W1` has a single-seed component; the minimum is `0` at `c = 3/4` and positive at `74/100`, with an optimal tree `E = 6`, `|A| = 8`: `c*(W1) = 3/4` exactly (D1). `W2` carries a verified tree with `E = 7`, `|A| = 11`, `|S| = 2` and one fork, ratio `4/11` (D2). `W3` carries a verified tree with `E = 9`, `|A| = 17`, `|S| = 8` and seven forks, `E − 3(|S| − 1) = −12`: it lies inside block 25's seed budget with no amplification credit at all (D3). Block 31's ratios `8/5`, `5/3`, `5/3` were the construction's; the family's values at those realizations are below `1`.
+
+## Theorem T4 — the stake and the floor
+
+**T4.1 (the stake).** If a construction attains `c = 1`, block 30's count reads `P(η'_x = 1) ≤ ε₁ R(t + ε₂/t, ε₁/t³)`, and block 31's rational triples are exact super-solutions at `(453, 1, 2)`, `(232, 1, 1)`, `(905, 2, 4)`, `(677, 1, 3)` with `ε₁ R̄ < 10⁻⁵` (E1): the ordered phase would follow there, a factor `8` to `10` below block 30. Whether such a construction exists is open; the executed minima (T2, and the climbs below) never exceed `1`.
+
+**T4.2 (the floor).** For `c ≥ 1` and `0 < t < 1`, `t^c ≤ t`, so the domain condition `t + ε₂/t^c < 4/27` needs `ε₂ < t(4/27 − t) ≤ 4/729` (at `t = 2/27`). On `(p, 1, 2)`, `d_3 = (2p + 11)/(p² + 2p + 11)` crosses `4/729` between `p = 367` and `368` (E2). Since every valid budget has `c ≥ 1` (T2.3), no marked-tree construction counted by block 25's recursion proves the ordered phase for `p ≤ 367` on `(p, 1, 2)`. ∎
+
+**Executed, not claimed.** Twelve hill-climbs maximizing `c*(η, x)` (evaluated by an integer program over the family, `specs/supervisor_control_block32_mintree.py`, and cross-checked by the exact program) over boxes `4×4×7`, `4×4×8`, `5×5×8`, `5×5×9`, `6×5×9`, `6×6×8`, about `10⁴` realizations in total, reach `c* = 1` in four runs and never exceed it; four further perturbation climbs seeded at the two extremal realizations stay at `1`. The conjecture that `c* = 1` — that a tree with `E ≤ 3(|S| − 1) + |A|` always exists — is recorded with this evidence and without a proof.
+
+## No-Go Discipline Gate
+
+The note's main sentence is a lower bound that prunes every construction below `c = 1`; the gate applies.
+
+### N1 — Routes by which the negative sentence could fail, and the routes beyond it
+1. *A tree outside the component, or with a second seed, on `Z_A`* — closed by T1.1–T1.2 (the component computed; one seed in it).
+2. *The dynamic program missing a tree* — closed by T1.3 and the brute-force cross-check on `90` single-seed realizations (B1); the refuting pass re-derives the minima with an integer program and a numpy rule.
+3. *A different family* — not covered: a family with other marks, arrows to non-predecessors, or a count other than block 25's recursion (a cluster-type count) is outside this note's sentence; the floor `p = 368` is for this family and this recursion.
+4. *The constant `1` attained by a construction* — not proved; the minimal tree exists at every realization, and a rule producing a tree within `E ≤ 3(|S| − 1) + |A|` with a proof is the open obligation (T4.1).
+5. *`c* > 1`* — not excluded: the climbs are finite; a realization with `c* > 1` would raise the floor further, not lower it.
+6. *The stake's certificates* — exact (E1), conditional on the open construction.
+
+### N2 — Wall-independence audit
+No no-go wall of the repository is used.
+
+### N3 — Hidden-wall scan
+No hidden dependence: the inputs are the axioms' sentences, block 01's rule, and blocks 25/30/31's automaton, family and recursion as declared and re-executed.
+
+### N4 — Per-citation table
+| Citation | Role | Load-bearing? |
+|---|---|---|
+| `minimal_axioms` | the four sentences under Premises | yes (premise) |
+| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
+| block 25 (open PR #8168) | the family and its recursion; the domain edge `4/27` | yes (the counted family; the recursion restated) |
+| block 30 (open PR #8174) | the two-level automaton and the budget's role in the count | yes (restated) |
+| block 31 (open PR #8175) | the witnesses; the certificates at `c = 1` | yes (data restated; certificates re-verified) |
+| block 28 (open PR #8172) | the located strength `p ≈ 11` | placement only (evidence address) |
+
+### N5 — Resolution audit
+| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+|---|---|---|---|---|---|
+| "the counted family's constant is at least one; the tree route's floor is `p = 368` on `(p, 1, 2)`" | executed: the dynamic program against brute force; the component lemma; the concavity of the minimum | executed: `Z_A`, `Z_B` rebuilt from their marks; the components and their single seeds; the crossing of `4/729` at `367`/`368` | executed: the exact minima `0` at `c = 1`, positive at `99/100`; the optimal trees `E = |A|`; the witnesses' cheap trees verified | executed: the four certificates at `c = 1`; `4/729` symbolically; `t^c ≤ t` | the lower bound is a statement about realizations of the automaton (any weights); the constant's attainment, other counts and the true strength are not claimed |
+
+### N6 — Partial-closure paths and primitive scan
+The registered primitives supply no coupling or order; none is a wall.
+
+### N7 — Steelman
+Hostile reviewer: "A lower bound of `1` from two hand-picked configurations says nothing about typical realizations, where the family is cheap." Reply: the count is a union bound over all realizations; its validity at `c` is decided by the worst realization, and two suffice to fix the floor — that is exactly what makes the statement route-level rather than construction-level. Conceded: the floor is for this family and this recursion; a count that is not a union bound over sub-structures is untouched, and that is where the note sends the campaign.
+
+### N8 — Cross-cycle echo
+Block 31 refuted a budget for one construction and asked for a better construction; this note answers that the question was posed at the wrong level: the family's value at the witnesses is small, the family's constant is nevertheless at least one, and the tree route has a floor. The pattern of block 04 (a route closed at every coupling rather than at one) recurs one level up: a class of proofs closed rather than one proof.
+
+## Falsifiers
+- A tiny realization with a single-seed component on which the dynamic program and the brute force disagree; a multi-seed batch in which forks never matter (B1–B2).
+- `Z_A` or `Z_B` rebuilt with a component of another size or seed count; a minimum other than `0` at `c = 1`, `3/50` or `2/25` at `99/100`, `−1/10` at `101/100` on `Z_A`; an exhibited tree failing verification or with counts other than `(6, 6, 1)`, `(9, 9, 1)`; a minimum increasing in `c` (C1–C3).
+- `c*(W1) ≠ 3/4`; the trees on `W2`, `W3` failing verification or with other counts (D1–D3).
+- A super-solution inequality failing at one of the four points; `t(4/27 − t)` exceeding `4/729`; the crossing not between `367` and `368` (E1–E2).
+
+## Boundaries and non-claims
+This note proves that the counted family of marked explanation trees has constant at least one: on two explicit realizations of the two-level noisy majority automaton every tree of the family satisfies `E ≥ 3(|S| − 1) + |A|` (exact enumeration by the single-seed dynamic program, checked against a brute-force enumeration of the full family on tiny realizations), so no construction whatsoever within the family reaches a budget `E ≤ 3(|S| − 1) + c|A|` with `c < 1`, and the tree route counted by block 25's recursion cannot prove the ordered phase below `p = 368` on `(p, 1, 2)`; it shows that block 31's witnesses have cheap trees, so the obstruction there was the construction's; it does not prove that a construction with `c = 1` exists (the executed minima never exceed one, which is recorded as a conjecture), does not lower block 30's region, does not treat other counts or other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
+
+## Imports
+- `minimal_axioms`: the sentences quoted under Premises.
+- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. Blocks 25, 30, 31 (PRs #8168, #8174, #8175, open) supply the family, the automaton, the recursion, the witnesses and the certificates, restated as declared objects and data and re-executed; block 28 (PR #8172, open) the located strength. All referenced as evidence addresses.
+- Named standard imports at definition level (never as authority for physics): finite dynamic programming over a layered graph; the union bound implicit in block 30's count (used only in T4); the concavity of a minimum of affine functions.
+- Reference only (named, not used): Toom (1980); Berman–Simon (1988); Gács (2021).
+
+## Review record
+Supervisor-run block (owner directive 2026-09-17, morning: "pick up the next in the queue"). The queue's item was a differently built tree judged on block 31's witnesses; the lens pass replaced it by the family-level quantity — the cheapest tree at a realization — since every construction is bounded by it. Controls: an integer program over the family (node, arrow, fork and flow variables; `specs/supervisor_control_block32_mintree.py`) gave the cheapest trees of `W1`–`W3` (`3/4`, `4/11`, `−12/17`) and drove twelve hill-climbs on `c*` (`..._climb.py`, `..._climb_seeded.py`) that found the two extremal realizations; a general dynamic program with partition states (`..._treedp.py`) was written, found too slow at seven sites per level, and replaced by the single-seed program after the component lemma; both programs and the integer program were cross-checked against brute force on tiny realizations (`..._crosscheck.py`: the general program was off by a constant `3`, corrected). Facts settled while executing: the family's value at the witnesses is small; the family's constant is at least `1`; the floor. The refuting pass (`CHECKER_block32_findings.md`, `..._refuter.py`) recomputes the extremal minima with the integer program in floating point, re-runs the rule with a numpy array, enumerates the family by brute force on further tiny realizations against both programs, and searches for `c* > 1` by simulated annealing with different moves.
+
+## Verification
+
+```bash
+python3 scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py
+python3 scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py --list-mutations
+python3 scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py --mutation family_bound_asserted
+```
+
+Families: A authority and inputs; B the reduction against brute force; C the extremal realizations; D the witnesses' cheap trees; E the stake and the floor; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 8 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=19 FAIL=0`.

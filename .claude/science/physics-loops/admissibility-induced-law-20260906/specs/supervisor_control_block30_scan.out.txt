@@ -1,0 +1,5 @@
+route ceiling (eps1 -> 0): need eps2 < max_t t^2 (x_c - t) with x_c(y=0) = 4/27: 0.0004817090739027511
+(p,1,2): new p0 ~ 4166 (was 285718; factor 69); eps1 = 4.564e-10, eps2 = 4.805e-04 (d2 2.418e-04, d3 4.805e-04); a feasible t = 0.0984 -> x = 0.1480, y = 4.792e-07
+(p,1,1): new p0 ~ 2085 (was 142861; factor 69); eps1 = 5.516e-10, eps2 = 4.803e-04 (d2 4.803e-04, d3 4.803e-04); a feasible t = 0.0984 -> x = 0.1480, y = 5.792e-07
+(p,2,4): new p0 ~ 8331 (was 571436; factor 69); eps1 = 4.566e-10, eps2 = 4.805e-04 (d2 2.419e-04, d3 4.805e-04); a feasible t = 0.0984 -> x = 0.1480, y = 4.794e-07
+(p,1,3): new p0 ~ 6247 (was 428576; factor 69); eps1 = 4.471e-10, eps2 = 4.806e-04 (d2 1.628e-04, d3 4.806e-04); a feasible t = 0.0984 -> x = 0.1480, y = 4.695e-07

@@ -1,0 +1,1 @@
+4290 explained configurations (exhaustive depth-2, depth-3 with <= 4 noise, 1500 random): all checks pass: True; trees with A-nodes: 2692; max |A| = 13; total bad pairs 4622; worst (E - 2|A|)/(|S| - 1) = 4/3 = 1.333 (budget 3)

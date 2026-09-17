@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 31, at PR opening (2026-09-16)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 30's first open item: the sharper bad-pair budget E <= 3(|S| - 1) + |A| for the extended explanation tree (p of order 500 at (p, 1, 2))"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the item closed in the negative by exhibition (witnesses at 8/5, 5/3, 5/3; the two-level period at ratio 2; c >= 5/3 for this construction); the stake (p >= 453) recorded, not claimed; block 30's ceiling stands. Next: the cluster count for the amplification part; a differently built tree judged on the three witnesses. Consumers: the campaign's decision record; block 30's N1 item 5"
+```

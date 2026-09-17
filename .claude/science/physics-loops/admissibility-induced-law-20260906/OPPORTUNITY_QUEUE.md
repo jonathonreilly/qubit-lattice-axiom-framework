@@ -78,3 +78,11 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 32 opening (2026-09-17)
+
+Block 32 opened for review (independent PR against main): the counted family's constant is at least `1` (exact certificates), block 31's witnesses have cheap trees, and the tree route has a floor at `p = 368` on `(p, 1, 2)` with a best case `p ≥ 453` if a construction attains `c = 1`. Item 2 of the previous refresh (a differently built tree) is answered at the family level. Ranked next:
+
+1. **A construction attaining `c = 1`, with a proof** — the minimal tree exists at every realization and the executed minima never exceed `1`; a rule producing a tree with `E ≤ 3(|S| − 1) + |A|` and an argument (a potential on the family's cheapest tree, or a harvesting rule with a charging scheme) would give `p ≥ 453` on `(p, 1, 2)` — medium-hard; the exact program is the oracle for candidate rules.
+2. **A count of the family that is not a union bound over sub-structures** — the only lever below `p = 368` on this route: the union bound caps the amplification at `ε₂ < 4/27` (ternary trees of arrows) while the branching dies out below `1/3`; a count of clusters or of canonical (minimal) trees would move the domain edge — hard.
+3. **A proof of the loss of memory at strong coupling for the sphere formation law; spin-wave theory as a theorem; the torus memory time** — hard; unchanged.

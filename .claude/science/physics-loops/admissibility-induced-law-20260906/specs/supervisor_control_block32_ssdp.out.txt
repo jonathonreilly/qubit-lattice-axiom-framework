@@ -1,0 +1,5 @@
+Z_A: component 42 of 46 ones, one seed (0, 0, 0); exact min cost at c=1: 0 (c=1.01: -1/10; c=0.99: 3/50); optimal tree E=6 |A|=6 -> c* = 1; 0.21s
+Z_B: component 60 of 69 ones, one seed (0, 0, 0); exact min cost at c=1: 0 (c=1.01: -7/50; c=0.99: 2/25); optimal tree E=9 |A|=9 -> c* = 1; 0.24s
+W1: component 36 of 36 ones, one seed (0, 0, 0); exact min cost at c=1: -2 (c=1.01: -21/10; c=0.99: -48/25); optimal tree E=6 |A|=8 -> c* = 3/4; 0.02s
+W2: component 50 nodes, seeds in component 2 -> multi-seed (subset DP not applicable)
+W3: component 98 nodes, seeds in component 8 -> multi-seed (subset DP not applicable)

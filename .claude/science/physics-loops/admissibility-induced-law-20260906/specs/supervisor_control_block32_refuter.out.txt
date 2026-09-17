@@ -1,0 +1,8 @@
+== (1)+(2)+(5): the extremal realizations
+Z_A: numpy rule agrees on all 112 sites: True; component by union-find = runner's: True (42 nodes, seeds in it: 1); integer program at c=1: cost 0 with (E,|A|,|S|,F)=(7,7,1,0) verified=True [exact DP: 0]; at c=99/100: 3/50 (E,|A|,|S|,F)=(6,6,1,0) [exact DP: 3/50]
+Z_B: numpy rule agrees on all 200 sites: True; component by union-find = runner's: True (60 nodes, seeds in it: 1); integer program at c=1: cost 0 with (E,|A|,|S|,F)=(9,9,1,0) verified=True [exact DP: 0]; at c=99/100: 2/25 (E,|A|,|S|,F)=(8,8,1,0) [exact DP: 2/25]
+== (3): brute force on further tiny realizations (window 3x3x5, seed 99)
+single-seed realizations 39 (brute = exact program = integer program), multi-seed 21 (brute = integer program); disagreements 0
+== (4): simulated annealing on c* (4x4x7, 240 s)
+simulated annealing best c*: 1/3 = 0.3333333333333333
+== verdict: consistent — the exact minima are reproduced by the integer program; nothing above c* = 1 found

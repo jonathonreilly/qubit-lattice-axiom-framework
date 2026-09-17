@@ -1,0 +1,23 @@
+== (1): covariance recursion vs mode sum, L = 8, floating point
+largest discrepancy over t <= 400: 1.39e-13
+== (2): memory time and rate, floating point vs the exact enclosures
+  beta=6 L=16: tau = 4879.06 (exact enclosure [4879.06, 4879.06]); rate = 2.0496e-04
+  beta=6 L=32: tau = 19516.24 (exact enclosure [19516.24, 19516.24]); rate = 5.1239e-05
+  beta=6 L=64: tau = 78064.94 (exact enclosure [78064.94, 78064.94]); rate = 1.2810e-05
+  beta=12 L=16: tau = 9479.31 (exact enclosure [9479.31, 9479.31]); rate = 1.0549e-04
+  beta=12 L=32: tau = 37917.26 (exact enclosure [37917.26, 37917.26]); rate = 2.6373e-05
+  beta=12 L=64: tau = 151669.03 (exact enclosure [151669.03, 151669.03]); rate = 6.5933e-06
+  beta=24 L=16: tau = 18691.61 (exact enclosure [18691.61, 18691.61]); rate = 5.3500e-05
+  beta=24 L=32: tau = 74766.42 (exact enclosure [74766.42, 74766.42]); rate = 1.3375e-05
+  beta=24 L=64: tau = 299065.69 (exact enclosure [299065.69, 299065.69]); rate = 3.3437e-06
+  beta=48 L=16: tau = 37121.79 (exact enclosure [37121.79, 37121.79]); rate = 2.6938e-05
+  beta=48 L=32: tau = 148487.16 (exact enclosure [148487.16, 148487.16]); rate = 6.7346e-06
+  beta=48 L=64: tau = 593948.64 (exact enclosure [593948.64, 593948.64]); rate = 1.6836e-06
+== (3): independent sampler on the torus L = 16, beta = 6
+independent sampler: early-window rate 2.616e-04, sigma^2/L^2 = 2.050e-04, ratio 1.28 (31s)
+== (4): V_L by direct summation vs the bracket and 2 gamma log L
+  L=16: V_L/sigma^2 = 2.6443; bracket [1.241, 9.185]; 2 c0 log L = 2.2929; V_L - 2 c0 log L = 0.3514
+  L=32: V_L/sigma^2 = 3.2186; bracket [1.573, 11.640]; 2 c0 log L = 2.8661; V_L - 2 c0 log L = 0.3525
+  L=64: V_L/sigma^2 = 3.7921; bracket [1.904, 14.091]; 2 c0 log L = 3.4394; V_L - 2 c0 log L = 0.3527
+  L=128: V_L/sigma^2 = 4.3654; bracket [nan, nan]; 2 c0 log L = 4.0126; V_L - 2 c0 log L = 0.3528
+== verdict: consistent

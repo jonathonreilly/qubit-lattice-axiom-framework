@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 34 opening (2026-09-17)
+
+Block 34 opened for review (independent PR against main): the linearized torus memory time exact, the nonlinear law's direction diffusing `1/|m|²` faster. Ranked next:
+
+1. **The tight-sibling lemma** (six-axis; `p ≥ 453` at `(p, 1, 2)`) — unchanged from block 33.
+2. **Existence of a restricted tree with the budget** (six-axis; `p ≥ 2921`) — unchanged.
+3. **Spin-wave theory as a theorem for the sphere formation law** — the executed `D₁ = σ²/(L²|m|²)` (within a few percent) is a concrete second-order target: the transverse noise of the average vector divided by its stationary length; a proof would need control of the nonlinear terms at the stationary law of the torus — hard.
+4. **The infinite-plane loss of memory for the sphere law** — block 26's conjecture; the torus result gives the finite-size form to match — hard.
+5. **A count that is not a union bound over sub-structures** — hard; unchanged.

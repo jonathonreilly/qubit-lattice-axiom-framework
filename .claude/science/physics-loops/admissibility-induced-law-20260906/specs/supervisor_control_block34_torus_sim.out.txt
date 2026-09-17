@@ -1,0 +1,85 @@
+# the exponential-fit estimator (kept as the record of its unreliability at these seed counts; see the note and CHECKER_block34_findings.md)
+beta=6.0 L=16 T=30000 seeds=32 (94s): zero-mode rate sigma^2/L^2 = 2.050e-04; memory time L^2/sigma^2 = 4879; nonlinear fitted rate of E[m_z] over the early window (to 0.2 of the start, 72 records) = 2.792e-04 (ratio to sigma^2/L^2: 1.36); linear model measured zero-mode rate 1.996e-04 (ratio 0.97)
+  t=     75  E[m_z]=0.8314  E|m|=0.8461  lin: |theta_bar|^2=0.0318  site var=0.3067
+  t=   2550  E[m_z]=0.4505  E|m|=0.8386  lin: |theta_bar|^2=0.9189  site var=1.1956
+  t=   5025  E[m_z]=0.2151  E|m|=0.8427  lin: |theta_bar|^2=2.0939  site var=2.3705
+  t=   7500  E[m_z]=-0.0292  E|m|=0.8399  lin: |theta_bar|^2=2.9792  site var=3.2543
+  t=   9975  E[m_z]=0.1437  E|m|=0.8453  lin: |theta_bar|^2=3.9194  site var=4.1903
+  t=  12450  E[m_z]=0.0050  E|m|=0.8487  lin: |theta_bar|^2=5.0984  site var=5.3756
+  t=  14925  E[m_z]=0.1000  E|m|=0.8460  lin: |theta_bar|^2=6.8323  site var=7.0995
+  t=  17400  E[m_z]=-0.0001  E|m|=0.8398  lin: |theta_bar|^2=6.5665  site var=6.8403
+  t=  19875  E[m_z]=0.1208  E|m|=0.8436  lin: |theta_bar|^2=6.7188  site var=6.9936
+  t=  22350  E[m_z]=0.2715  E|m|=0.8395  lin: |theta_bar|^2=7.3593  site var=7.6369
+  t=  24825  E[m_z]=0.1327  E|m|=0.8481  lin: |theta_bar|^2=9.2428  site var=9.5168
+  t=  27300  E[m_z]=0.1258  E|m|=0.8420  lin: |theta_bar|^2=9.3446  site var=9.6179
+  t=  29775  E[m_z]=0.0743  E|m|=0.8409  lin: |theta_bar|^2=10.1043  site var=10.3776
+beta=6.0 L=32 T=120000 seeds=12 (253s): zero-mode rate sigma^2/L^2 = 5.124e-05; memory time L^2/sigma^2 = 19516; nonlinear fitted rate of E[m_z] over the early window (to 0.2 of the start, 48 records) = 9.791e-05 (ratio to sigma^2/L^2: 1.91); linear model measured zero-mode rate 2.790e-05 (ratio 0.54)
+  t=    300  E[m_z]=0.8020  E|m|=0.8151  lin: |theta_bar|^2=0.0424  site var=0.3578
+  t=  10200  E[m_z]=0.3323  E|m|=0.8178  lin: |theta_bar|^2=0.7460  site var=1.0758
+  t=  20100  E[m_z]=0.1573  E|m|=0.8106  lin: |theta_bar|^2=0.8401  site var=1.1778
+  t=  30000  E[m_z]=0.0613  E|m|=0.8101  lin: |theta_bar|^2=2.0157  site var=2.3519
+  t=  39900  E[m_z]=0.0311  E|m|=0.8067  lin: |theta_bar|^2=1.8727  site var=2.2105
+  t=  49800  E[m_z]=-0.1533  E|m|=0.8142  lin: |theta_bar|^2=2.2304  site var=2.5719
+  t=  59700  E[m_z]=0.0115  E|m|=0.8027  lin: |theta_bar|^2=2.6758  site var=3.0105
+  t=  69600  E[m_z]=-0.3246  E|m|=0.8139  lin: |theta_bar|^2=5.5123  site var=5.8381
+  t=  79500  E[m_z]=-0.2923  E|m|=0.8078  lin: |theta_bar|^2=6.8999  site var=7.2331
+  t=  89400  E[m_z]=-0.0192  E|m|=0.8065  lin: |theta_bar|^2=7.3828  site var=7.7257
+  t=  99300  E[m_z]=0.0905  E|m|=0.8090  lin: |theta_bar|^2=7.8188  site var=8.1497
+  t= 109200  E[m_z]=0.1269  E|m|=0.8104  lin: |theta_bar|^2=8.5640  site var=8.9015
+  t= 119100  E[m_z]=0.0962  E|m|=0.8117  lin: |theta_bar|^2=7.9304  site var=8.2525
+beta=12.0 L=16 T=60000 seeds=32 (183s): zero-mode rate sigma^2/L^2 = 1.055e-04; memory time L^2/sigma^2 = 9479; nonlinear fitted rate of E[m_z] over the early window (to 0.2 of the start, 116 records) = 7.283e-05 (ratio to sigma^2/L^2: 0.69); linear model measured zero-mode rate 1.081e-04 (ratio 1.02)
+  t=    150  E[m_z]=0.9069  E|m|=0.9217  lin: |theta_bar|^2=0.0359  site var=0.1764
+  t=   5100  E[m_z]=0.5101  E|m|=0.9240  lin: |theta_bar|^2=1.0432  site var=1.1882
+  t=  10050  E[m_z]=0.3526  E|m|=0.9245  lin: |theta_bar|^2=2.0133  site var=2.1531
+  t=  15000  E[m_z]=0.2136  E|m|=0.9254  lin: |theta_bar|^2=3.4320  site var=3.5732
+  t=  19950  E[m_z]=0.2546  E|m|=0.9251  lin: |theta_bar|^2=3.5367  site var=3.6800
+  t=  24900  E[m_z]=0.2624  E|m|=0.9244  lin: |theta_bar|^2=4.9144  site var=5.0550
+  t=  29850  E[m_z]=0.2845  E|m|=0.9252  lin: |theta_bar|^2=5.1814  site var=5.3294
+  t=  34800  E[m_z]=0.0710  E|m|=0.9262  lin: |theta_bar|^2=5.2899  site var=5.4312
+  t=  39750  E[m_z]=0.0827  E|m|=0.9219  lin: |theta_bar|^2=7.5795  site var=7.7316
+  t=  44700  E[m_z]=0.1585  E|m|=0.9237  lin: |theta_bar|^2=8.5408  site var=8.6808
+  t=  49650  E[m_z]=0.1810  E|m|=0.9238  lin: |theta_bar|^2=10.2382  site var=10.3845
+  t=  54600  E[m_z]=0.1140  E|m|=0.9268  lin: |theta_bar|^2=10.2353  site var=10.3814
+  t=  59550  E[m_z]=-0.0185  E|m|=0.9268  lin: |theta_bar|^2=11.0977  site var=11.2359
+beta=12.0 L=32 T=240000 seeds=6 (253s): zero-mode rate sigma^2/L^2 = 2.637e-05; memory time L^2/sigma^2 = 37917; nonlinear fitted rate of E[m_z] over the early window (to 0.2 of the start, 48 records) = 2.943e-05 (ratio to sigma^2/L^2: 1.12); linear model measured zero-mode rate 1.741e-05 (ratio 0.66)
+  t=    600  E[m_z]=0.8990  E|m|=0.9158  lin: |theta_bar|^2=0.0253  site var=0.1837
+  t=  20400  E[m_z]=0.5294  E|m|=0.9086  lin: |theta_bar|^2=0.5685  site var=0.7356
+  t=  40200  E[m_z]=0.3690  E|m|=0.9122  lin: |theta_bar|^2=0.8655  site var=1.0350
+  t=  60000  E[m_z]=0.1746  E|m|=0.9115  lin: |theta_bar|^2=1.1374  site var=1.3218
+  t=  79800  E[m_z]=0.1767  E|m|=0.9026  lin: |theta_bar|^2=2.5405  site var=2.7323
+  t=  99600  E[m_z]=0.1807  E|m|=0.9037  lin: |theta_bar|^2=2.8601  site var=3.0459
+  t= 119400  E[m_z]=0.1987  E|m|=0.9135  lin: |theta_bar|^2=3.5934  site var=3.7688
+  t= 139200  E[m_z]=0.0293  E|m|=0.9046  lin: |theta_bar|^2=2.5901  site var=2.7617
+  t= 159000  E[m_z]=-0.0480  E|m|=0.9080  lin: |theta_bar|^2=2.0047  site var=2.1693
+  t= 178800  E[m_z]=0.1147  E|m|=0.9089  lin: |theta_bar|^2=1.6017  site var=1.7715
+  t= 198600  E[m_z]=-0.1664  E|m|=0.9087  lin: |theta_bar|^2=3.6541  site var=3.8168
+  t= 218400  E[m_z]=-0.4350  E|m|=0.9123  lin: |theta_bar|^2=5.8502  site var=6.0224
+  t= 238200  E[m_z]=-0.1918  E|m|=0.9102  lin: |theta_bar|^2=5.2959  site var=5.4697
+beta=24.0 L=16 T=120000 seeds=16 (182s): zero-mode rate sigma^2/L^2 = 5.350e-05; memory time L^2/sigma^2 = 18692; nonlinear fitted rate of E[m_z] over the early window (to 0.2 of the start, 111 records) = 2.609e-05 (ratio to sigma^2/L^2: 0.49); linear model measured zero-mode rate 2.715e-05 (ratio 0.51)
+  t=    300  E[m_z]=0.9483  E|m|=0.9637  lin: |theta_bar|^2=0.0269  site var=0.1009
+  t=  10200  E[m_z]=0.5335  E|m|=0.9608  lin: |theta_bar|^2=0.9028  site var=0.9731
+  t=  20100  E[m_z]=0.3612  E|m|=0.9632  lin: |theta_bar|^2=1.8231  site var=1.8964
+  t=  30000  E[m_z]=0.3340  E|m|=0.9636  lin: |theta_bar|^2=1.8105  site var=1.8819
+  t=  39900  E[m_z]=0.0048  E|m|=0.9626  lin: |theta_bar|^2=2.9670  site var=3.0403
+  t=  49800  E[m_z]=0.1629  E|m|=0.9628  lin: |theta_bar|^2=4.3535  site var=4.4244
+  t=  59700  E[m_z]=0.1017  E|m|=0.9627  lin: |theta_bar|^2=4.2401  site var=4.3157
+  t=  69600  E[m_z]=0.1856  E|m|=0.9635  lin: |theta_bar|^2=4.4203  site var=4.4932
+  t=  79500  E[m_z]=0.0699  E|m|=0.9630  lin: |theta_bar|^2=4.7656  site var=4.8357
+  t=  89400  E[m_z]=-0.1063  E|m|=0.9618  lin: |theta_bar|^2=6.8014  site var=6.8756
+  t=  99300  E[m_z]=-0.1021  E|m|=0.9616  lin: |theta_bar|^2=7.7997  site var=7.8735
+  t= 109200  E[m_z]=0.0348  E|m|=0.9624  lin: |theta_bar|^2=9.8248  site var=9.8974
+  t= 119100  E[m_z]=0.0462  E|m|=0.9615  lin: |theta_bar|^2=12.3217  site var=12.3967
+beta=48.0 L=16 T=240000 seeds=8 (184s): zero-mode rate sigma^2/L^2 = 2.694e-05; memory time L^2/sigma^2 = 37122; nonlinear fitted rate of E[m_z] over the early window (to 0.2 of the start, 139 records) = 1.204e-05 (ratio to sigma^2/L^2: 0.45); linear model measured zero-mode rate 8.704e-06 (ratio 0.32)
+  t=    600  E[m_z]=0.9688  E|m|=0.9818  lin: |theta_bar|^2=0.0244  site var=0.0610
+  t=  20400  E[m_z]=0.5897  E|m|=0.9819  lin: |theta_bar|^2=0.9996  site var=1.0330
+  t=  40200  E[m_z]=0.3563  E|m|=0.9814  lin: |theta_bar|^2=1.5339  site var=1.5712
+  t=  60000  E[m_z]=0.2333  E|m|=0.9798  lin: |theta_bar|^2=1.4292  site var=1.4669
+  t=  79800  E[m_z]=0.4004  E|m|=0.9820  lin: |theta_bar|^2=1.7634  site var=1.8001
+  t=  99600  E[m_z]=-0.1366  E|m|=0.9811  lin: |theta_bar|^2=3.3400  site var=3.3747
+  t= 119400  E[m_z]=-0.1271  E|m|=0.9822  lin: |theta_bar|^2=5.0209  site var=5.0579
+  t= 139200  E[m_z]=0.0891  E|m|=0.9817  lin: |theta_bar|^2=2.8301  site var=2.8669
+  t= 159000  E[m_z]=0.3554  E|m|=0.9800  lin: |theta_bar|^2=2.8228  site var=2.8593
+  t= 178800  E[m_z]=-0.0508  E|m|=0.9817  lin: |theta_bar|^2=3.5371  site var=3.5725
+  t= 198600  E[m_z]=-0.5082  E|m|=0.9823  lin: |theta_bar|^2=3.5211  site var=3.5559
+  t= 218400  E[m_z]=-0.3371  E|m|=0.9818  lin: |theta_bar|^2=5.2547  site var=5.2890
+  t= 238200  E[m_z]=-0.1016  E|m|=0.9808  lin: |theta_bar|^2=4.9229  site var=4.9571

@@ -1,0 +1,14 @@
+== Z_A: root (3, 3, 3) (tight); its 1-predecessors and their optimal rooted sets
+   pred (2, 3, 3): v = -1, set size 12 (E=5, A=6)
+   pred (3, 2, 3): v = -1, set size 12 (E=5, A=6)
+   pred (3, 3, 2): v = -1, set size 14 (E=6, A=7)
+   pair (2, 3, 3),(3, 2, 3): overlap 11 nodes (E_O=4, A_O=6, E_O-A_O=-2); union with root: E-A = 1
+   pair (2, 3, 3),(3, 3, 2): overlap 7 nodes (E_O=1, A_O=5, E_O-A_O=-4); union with root: E-A = 3
+   pair (3, 2, 3),(3, 3, 2): overlap 7 nodes (E_O=1, A_O=5, E_O-A_O=-4); union with root: E-A = 3
+== Z_B: root (4, 4, 4) (tight); its 1-predecessors and their optimal rooted sets
+   pred (3, 4, 4): v = -1, set size 18 (E=8, A=9)
+   pred (4, 3, 4): v = -1, set size 18 (E=8, A=9)
+   pred (4, 4, 3): v = 0, set size 19 (E=9, A=9)
+   pair (3, 4, 4),(4, 3, 4): overlap 16 nodes (E_O=6, A_O=9, E_O-A_O=-3); union with root: E-A = 2
+   pair (3, 4, 4),(4, 4, 3): overlap 16 nodes (E_O=6, A_O=9, E_O-A_O=-3); union with root: E-A = 3
+   pair (4, 3, 4),(4, 4, 3): overlap 16 nodes (E_O=6, A_O=9, E_O-A_O=-3); union with root: E-A = 3

@@ -1,0 +1,16 @@
+hard cases (processed z with all 1-preds seeds or tight): 116; pred-kind patterns: {('seed', 'seed'): 115, ('seed', 'seed', 'seed'): 1}
+mechanism (v(z), #preds in tree, seeds, forks): [((-17, 2, 6, 5), 1), ((-12, 2, 5, 4), 1), ((-11, 2, 4, 3), 1), ((-9, 2, 4, 3), 9), ((-8, 2, 4, 3), 7), ((-7, 2, 3, 2), 2), ((-7, 2, 4, 3), 2), ((-6, 2, 3, 2), 6), ((-5, 2, 3, 2), 21), ((-5, 3, 3, 2), 1), ((-4, 2, 2, 1), 2), ((-3, 2, 2, 1), 11), ((-2, 2, 2, 1), 52)]
+seed 1 5x5x8 from Z_A: start (unrooted, rooted) max cost = (0, 0) at ((3, 3, 3), 0, 0, (7, 7, 1, 0))
+seed 1: done best=(0, 0)
+hard cases (processed z with all 1-preds seeds or tight): 116; pred-kind patterns: {('seed', 'seed'): 115, ('seed', 'seed', 'seed'): 1}
+mechanism (v(z), #preds in tree, seeds, forks): [((-17, 2, 6, 5), 1), ((-12, 2, 5, 4), 1), ((-11, 2, 4, 3), 1), ((-9, 2, 4, 3), 9), ((-8, 2, 4, 3), 7), ((-7, 2, 3, 2), 2), ((-7, 2, 4, 3), 2), ((-6, 2, 3, 2), 6), ((-5, 2, 3, 2), 21), ((-5, 3, 3, 2), 1), ((-4, 2, 2, 1), 2), ((-3, 2, 2, 1), 11), ((-2, 2, 2, 1), 52)]
+seed 2 6x6x8 from Z_A: start (unrooted, rooted) max cost = (0, 0) at ((3, 3, 3), 0, 0, (7, 7, 1, 0))
+seed 2: done best=(0, 0)
+hard cases (processed z with all 1-preds seeds or tight): 116; pred-kind patterns: {('seed', 'seed'): 115, ('seed', 'seed', 'seed'): 1}
+mechanism (v(z), #preds in tree, seeds, forks): [((-17, 2, 6, 5), 1), ((-12, 2, 5, 4), 1), ((-11, 2, 4, 3), 1), ((-9, 2, 4, 3), 9), ((-8, 2, 4, 3), 7), ((-7, 2, 3, 2), 2), ((-7, 2, 4, 3), 2), ((-6, 2, 3, 2), 6), ((-5, 2, 3, 2), 21), ((-5, 3, 3, 2), 1), ((-4, 2, 2, 1), 2), ((-3, 2, 2, 1), 11), ((-2, 2, 2, 1), 52)]
+seed 3 5x5x9 from Z_B: start (unrooted, rooted) max cost = (0, 0) at ((4, 4, 3), 0, 0, (8, 8, 1, 0))
+seed 3: done best=(0, 0)
+hard cases (processed z with all 1-preds seeds or tight): 116; pred-kind patterns: {('seed', 'seed'): 115, ('seed', 'seed', 'seed'): 1}
+mechanism (v(z), #preds in tree, seeds, forks): [((-17, 2, 6, 5), 1), ((-12, 2, 5, 4), 1), ((-11, 2, 4, 3), 1), ((-9, 2, 4, 3), 9), ((-8, 2, 4, 3), 7), ((-7, 2, 3, 2), 2), ((-7, 2, 4, 3), 2), ((-6, 2, 3, 2), 6), ((-5, 2, 3, 2), 21), ((-5, 3, 3, 2), 1), ((-4, 2, 2, 1), 2), ((-3, 2, 2, 1), 11), ((-2, 2, 2, 1), 52)]
+seed 4 6x6x9 from Z_B: start (unrooted, rooted) max cost = (0, 0) at ((4, 4, 3), 0, 0, (8, 8, 1, 0))
+seed 4: done best=(0, 0)

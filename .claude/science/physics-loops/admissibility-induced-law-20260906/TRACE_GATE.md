@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 33, at PR opening (2026-09-17)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 32's queue: a construction attaining c = 1 with a proof (p >= 453 at (p, 1, 2)); a count of the family that is not a union bound over sub-structures"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the unit budget reduced to the tight-sibling lemma with the other inductive cases proved and the open case never observed; the one-processed-child count with exact certificates (2921 at c = 2, 405 at c = 1), unclaimed pending an existence proof (the restriction is not cost-free at c = 2). Next: the tight-sibling lemma; the restricted-tree existence proof. Consumers: the campaign's decision record; block 32's open items"
+```

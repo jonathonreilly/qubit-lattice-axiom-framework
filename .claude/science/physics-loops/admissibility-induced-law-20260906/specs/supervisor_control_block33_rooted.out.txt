@@ -1,0 +1,8 @@
+  R1 fails on Z_B: cost 1 counts (8, 7); exact min: 0.0
+  R1 fails on rand0: cost 1 counts (1, 0); exact min: -2.0
+  R1 fails on rand1: cost 2 counts (4, 2); exact min: -10.0
+  R1 fails on rand4: cost 2 counts (2, 0); exact min: -8.0
+  R1 fails on rand8: cost 1 counts (1, 0); exact min: -9.0
+63 realizations, 758 rooted sites in 6s: max rooted v over processed = 0, over amplified = -1; violations of (proc <= 0, amp <= -1): 0
+distribution (kind, v): [(('amp', -15), 2), (('amp', -14), 2), (('amp', -13), 3), (('amp', -12), 5), (('amp', -11), 9), (('amp', -10), 9), (('amp', -9), 11), (('amp', -8), 11), (('amp', -7), 23), (('amp', -6), 7), (('amp', -5), 11), (('amp', -4), 40), (('amp', -3), 19), (('amp', -2), 12), (('amp', -1), 32), (('proc', -18), 1), (('proc', -17), 5), (('proc', -16), 6), (('proc', -15), 7), (('proc', -14), 13), (('proc', -13), 23), (('proc', -12), 28), (('proc', -11), 39), (('proc', -10), 46), (('proc', -9), 43), (('proc', -8), 51), (('proc', -7), 41), (('proc', -6), 51), (('proc', -5), 39), (('proc', -4), 17), (('proc', -3), 78), (('proc', -2), 58), (('proc', -1), 13), (('proc', 0), 3)]
+R1 (single-seed cases): tested 63, cost > 0 in 33

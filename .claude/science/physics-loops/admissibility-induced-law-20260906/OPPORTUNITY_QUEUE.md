@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 33 opening (2026-09-17)
+
+Block 33 opened for review (independent PR against main): the unit budget is equivalent to the tight-sibling lemma (every other inductive case proved), and the one-processed-child count has exact certificates a third below block 30 at the proved budget, unclaimed for want of an existence proof. Ranked next:
+
+1. **The tight-sibling lemma** — a processed site all of whose 1-predecessors are tight has a rooted tree of cost `≤ 0`; in a one-seed component this is a statement about the marks around a site whose supports are saturated (some amplified site at the site's own level must hang off a support); the exact programs are the oracle; would give `p ≥ 453` at `(p, 1, 2)` — medium-hard.
+2. **Existence of a restricted tree with the budget** — a tree with `E ≤ 3(|S| − 1) + 2|A|` and at most one processed child per node at every realization; not by exchange on minimal trees (`W3`); would give `p ≥ 2921` at `(p, 1, 2)` with block 30's proved budget — medium-hard.
+3. **A count that is not a union bound over sub-structures** — the only lever below block 32's floor `p = 368` — hard.
+4. **A proof of the loss of memory at strong coupling for the sphere formation law; spin-wave theory as a theorem; the torus memory time** — hard; unchanged.

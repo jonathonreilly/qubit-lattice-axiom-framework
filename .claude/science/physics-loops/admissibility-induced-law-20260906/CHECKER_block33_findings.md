@@ -1,0 +1,12 @@
+# Refuting pass — block 33 (supervisor-run, disjoint machinery; 2026-09-17)
+
+Routes compared (controls `specs/supervisor_control_block33_*.py`; refuting pass `specs/supervisor_control_block33_refuter.py`, run from `scripts/` as `python3 <specs>/supervisor_control_block33_refuter.py .`; outputs in `.out.txt`):
+
+| item | runner's route | refuting route | result |
+|---|---|---|---|
+| the tight roots' rooted values (T2) | the exact single-seed program with a level cap | the integer program with a level cap (scipy `milp`, floating point), forks and several seeds allowed | `Z_A`: root `0`, predecessors `−1, −1, −1`; `Z_B`: root `0`, predecessors `−1, −1, 0` — equal to the exact program |
+| the seed lemma's construction (T1) | proved; instances by brute force | for `25` processed sites with a seed and another predecessor on tiny realizations, the tree `{z, w, s} ∪ T(p)` (with `T(p)` from the integer program) assembled explicitly and passed to the runner's tree verifier; its cost compared to `v(p) − 1` (or `v(q) − 3`) | `25` verified, `0` failures |
+| the restricted count (T3) | the three-variable recursion with exact certificates | the eight-variable kind-typed recursion with the restriction at every node kind, iterated in floating point, and the three-variable recursion iterated | at `(2921,1,2)`, `c = 2`, `t = 121/1000`: `R = 411.4017` by both iterations; the exact certificate's `R̄ = 411.4018` dominates |
+| the extension lemma (T1) | proved; instances | an adversarial climb maximizing `v(z) − 1 − min_u v(u)` for `120` s (must stay `≤ 0`) | largest value `0` |
+
+Findings: nothing refuted. Fold items: the runner's rooted-inequality check first required `v = 0` at seeds; sibling seeds joined by a fork give `v(s) = −3`, so the correct statement is `v(s) ≤ 0` (the induction uses only that); the eight-variable count first diverged for two tooling reasons (an own-arrow term that let processed nodes have no arrow; iteration from `1` instead of from the empty family) and, in the refuting pass, because the restriction had been applied to processed and amplified nodes only while the certificates restrict every node — the family of the note is the latter. Facts settled while executing: the greedy harvesting rule is far from the minimum (forks are essential), which is why the proof is by existence; the restriction "at most two children at non-seed nodes" adds almost nothing to the count; `W3` shows the one-child restriction is not cost-free at `c = 2`.

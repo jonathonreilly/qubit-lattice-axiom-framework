@@ -1,0 +1,24 @@
+124 realizations in 5s
+children patterns (node kind, sorted kinds of nodes whose arrow points to it) -> count:
+    ('amp', ()) 69
+    ('amp', ('amp',)) 13
+    ('amp', ('proc',)) 57
+    ('amp', ('amp', 'amp')) 1
+    ('amp', ('amp', 'proc')) 2
+    ('proc', ()) 63
+    ('proc', ('amp',)) 38
+    ('proc', ('proc',)) 48
+    ('proc', ('amp', 'amp')) 1
+    ('proc', ('amp', 'proc')) 4
+    ('seed', ()) 126
+    ('seed', ('amp',)) 50
+    ('seed', ('proc',)) 39
+    ('seed', ('amp', 'amp')) 7
+    ('seed', ('amp', 'proc')) 3
+    ('seed', ('amp', 'amp', 'amp')) 4
+    ('seed', ('amp', 'amp', 'proc')) 1
+fork incidence (kind, #forks at node): [(('amp', 0), 111), (('amp', 1), 30), (('amp', 2), 1), (('proc', 0), 127), (('proc', 1), 26), (('proc', 2), 1), (('seed', 0), 94), (('seed', 1), 121), (('seed', 2), 14), (('seed', 3), 1)]
+realizations where the restriction raises the minimum cost: {'R1': 0, 'R2': 0, 'R3': 29, 'R4': 19}
+   loss: W3 c=2.0 R1: base -62.0 restricted -61.0
+   loss: W3 c=2.0 R12: base -62.0 restricted -61.0
+125 realizations (6s); realizations where a restriction raises the minimum: {(1.0, 'R1'): 0, (1.0, 'R2'): 0, (1.0, 'R12'): 0, (2.0, 'R1'): 1, (2.0, 'R2'): 0, (2.0, 'R12'): 1}

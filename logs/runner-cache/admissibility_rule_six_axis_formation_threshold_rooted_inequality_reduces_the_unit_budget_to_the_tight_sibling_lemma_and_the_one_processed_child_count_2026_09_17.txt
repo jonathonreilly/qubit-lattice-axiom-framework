@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py
+runner_sha256: 5788f0f7c0049c16ea18eec83deabcc8428152ac6528fb4a89a196cbb27dff65
+input_fingerprint_sha256: 89039c98af63ff9e09c8b36da7438b61e9a94534e66e5045c2865118223361bf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.39
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0
+PASS: B1 T1 (extension lemma, instances): on 140 tiny realizations, v(z) <= 1 + v(u) for every 1-predecessor u of every non-seed site (357 pairs) and v(z) <= -1 + v(u) at every amplified site (121); exact rooted brute force
+PASS: B2 T1 (seed lemma, instances): a processed site with one seed 1-predecessor and another 1-predecessor has v <= -1 (15 cases), with two seed 1-predecessors v <= -2 (78 cases)
+PASS: B3 T1 (the rooted inequality, executed): v <= 0 at seeds, v <= -1 at amplified and v <= 0 at processed sites on all 788 sites; processed sites whose 1-predecessors are all tight processed sites (the one case the lemmas leave open): 0
+PASS: C1 T2: on Z_A and Z_B the root is tight (rooted value 0, exact single-seed program with a level cap) and all three of its 1-predecessors are processed with rooted value -1: the root is not a tight-sibling case; Z_A: v(root) = 0, the three processed 1-predecessors have v = ['-1', '-1', '-1']; Z_B: v(root) = 0, the three processed 1-predecessors have v = ['-1', '-1', '0']
+PASS: C2 T2: Z_B's second tight site (4,4,3) has rooted value 0 with 1-predecessors at ['-1', '-1', '-1']; a tight site may be a predecessor of a tight site, but never all of them
+PASS: D1 T3: the up-factor of the restricted count, (1 + x_A U)^n + n x_P U (1 + x_A U)^(n-1), is the sum over the successor configurations with at most one processed child, for n = 2 and 3 (symbolic)
+PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) with c = 2 and at (405,1,2), (208,1,1), (810,2,4), (605,1,3) with c = 1, each with epsilon_1 R-bar < 10^-5
+PASS: D3 T3: with the full up-factor the same code is block 25/30's recursion and block 30's certificate at (4165,1,2) passes it; the same triple also dominates the restricted recursion (the restricted count is termwise smaller)
+PASS: E1 T4 (executed): on 60 tiny realizations at c = 1 and 2, whenever a tree with the budget exists (120 cases) a tree with at most one processed child per node and the budget exists too; the restricted minimum equals the unrestricted one in 120 cases and differs in 0
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the extension and seed lemmas as instances on 70 tiny realizations by exact rooted brute force; the up-factor identity symbolically
+per_site: executed — the rooted inequality at every site of the tiny realizations; the tight roots of Z_A and Z_B with their predecessors' rooted values by the exact single-seed program with a level cap
+per_mode: executed — no processed site with all predecessors tight in the tiny realizations; the restriction's admissibility on 60 tiny realizations at c = 1 and 2
+per_block: executed — the eight super-solution certificates of the restricted count with epsilon_1 R-bar < 10^-5; block 30's certificate under the same code
+lattice_wide: the lemmas hold for every realization (any weights); the tight-sibling lemma and the restriction's admissibility are open, so no region is claimed
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

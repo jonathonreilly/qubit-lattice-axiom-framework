@@ -1,0 +1,10 @@
+== (1): rooted values at the tight roots, integer program vs the exact program
+Z_A: root (3, 3, 3): integer program 0 / exact 0; predecessors: integer program [-1, -1, -1] / exact ['-1', '-1', '-1']
+Z_B: root (4, 4, 4): integer program 0 / exact 0; predecessors: integer program [-1, -1, 0] / exact ['-1', '-1', '0']
+== (2): the seed lemma's construction verified by the runner's tree verifier on tiny realizations
+seed-lemma constructions verified: 25, failures 0
+== (3): the restricted count at (2921,1,2), c=2, t=121/1000: eight-variable and three-variable iterations vs the exact certificate
+eight-variable R/eps1 = 411.4017; three-variable R = 411.4017; exact certificate R-bar = 411.4018 (must be >= the fixed points): True
+== (4): adversarial climb on v(z) - 1 - min_u v(u) (120 s; must stay <= 0)
+largest v(z) - 1 - min_u v(u) found: 0
+== verdict: consistent — nothing refuted

@@ -108,7 +108,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 30 close (2026-09-16)
 # block: 30
 # branch: physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-29 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170-#8173)
-# pr_status: PR_PLACEHOLDER
+# pr_status: opened for review — PR #8174 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8174); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=20 FAIL=0; 11 mutations, census 11/11 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
 # seats: "supervisor-run: analysis of the loose step (the domination, not the count) -> controls (the extended construction on 4290 configurations; the scan; the certificates; the budget) -> contract with a lens pass -> primary (T1-T5, runner) -> refuting pass (coupled simulation with shared uniforms; independent graph checks; exact margins; bisected edge) -> fold (a crashing mutation made to fail a check)"
 # review_findings: "two-level domination (seed d_1, amplification max(d_2,d_3)); extended explanation tree with amplified nodes, forks = |S|-1, E <= 3(|S|-1) + 2|A|; P <= eps1 R(t + eps2/t^2, eps1/t^3); p >= 4165 at (p,1,2) (was 285718), 2085/8330/6247 on the other lines; ceiling eps2 < 256/531441 reached; remaining factor 380 to the located 11 attributed to the bad-pair allowance and the union bound's overcounting"

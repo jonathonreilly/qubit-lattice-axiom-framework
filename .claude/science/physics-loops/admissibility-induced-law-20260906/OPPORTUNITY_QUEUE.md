@@ -87,3 +87,5 @@ Block 33 opened for review (independent PR against main): the unit budget is equ
 2. **Existence of a restricted tree with the budget** — a tree with `E ≤ 3(|S| − 1) + 2|A|` and at most one processed child per node at every realization; not by exchange on minimal trees (`W3`); would give `p ≥ 2921` at `(p, 1, 2)` with block 30's proved budget — medium-hard.
 3. **A count that is not a union bound over sub-structures** — the only lever below block 32's floor `p = 368` — hard.
 4. **A proof of the loss of memory at strong coupling for the sphere formation law; spin-wave theory as a theorem; the torus memory time** — hard; unchanged.
+
+Note (block 33 addendum): block 30's construction produces two processed children at a node in about one tree per thousand, never three, and the pattern is forced in the remaining cases; "at most two" is worth 3 % in the count. Item 2 is an existence statement, not a modification of block 30's construction.

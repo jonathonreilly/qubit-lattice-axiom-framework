@@ -1,0 +1,13 @@
+# block 30's construction (supervisor_control_block33_core30.py) on random cones, depth 3-8/9, densities 10-65 %:
+# nodes receiving arrows from two PROCESSED kept poles ("two processed children"), by the kind of the target node.
+seed 1: 2103 trees; double-processed-child nodes: block 30's rule 2, modified rule 2; forced shared excuses 194; avoided by the modified rule 6
+seed 2: 2087 trees; double-processed-child nodes: block 30's rule 0, modified rule 0; forced shared excuses 196; avoided by the modified rule 4
+seed 3: 2101 trees; double-processed-child nodes: block 30's rule 3, modified rule 2; forced shared excuses 190; avoided by the modified rule 7
+seed 4: 2096 trees; double-processed-child nodes: block 30's rule 2, modified rule 2; forced shared excuses 194; avoided by the modified rule 8
+seed 11: 3089 trees; nodes with >= 2 processed children by kind: {'seed': 1, 'amp': 0, 'proc': 0}; with 3: 0
+seed 12: 3082 trees; nodes with >= 2 processed children by kind: {'seed': 4, 'amp': 0, 'proc': 3}; with 3: 0
+seed 13: 3073 trees; nodes with >= 2 processed children by kind: {'seed': 1, 'amp': 0, 'proc': 2}; with 3: 0
+seed 14: 3063 trees; nodes with >= 2 processed children by kind: {'seed': 2, 'amp': 1, 'proc': 4}; with 3: 0
+# the modified excuse rule (prefer an excuse not already used by another kept processed pole of the same refinement, when both
+# winning-pair members are valid) does not remove the pattern: in the remaining cases both poles have a single valid excuse (forced).
+# count variants at c = 2 on (p,1,2): full 4165; at most two processed children per node 4041; at most one 2921.

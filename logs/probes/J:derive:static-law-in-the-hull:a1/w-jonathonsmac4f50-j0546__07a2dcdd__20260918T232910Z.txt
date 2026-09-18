@@ -1,0 +1,42 @@
+C1 Hoelder: Z_1^k K_k(v_A) <= N_k for all v_A in M^k (k <= 6), equality exactly on aligned tuples (or one antipodal pair when p = q), strict somewhere for k >= 2:
+   (3, 1, 2): bound True, equality set as stated True, strict for every k >= 2 True
+   (5, 2, 4): bound True, equality set as stated True, strict for every k >= 2 True
+   (7, 3, 5): bound True, equality set as stated True, strict for every k >= 2 True
+   (1, 3, 2): bound True, equality set as stated True, strict for every k >= 2 True
+   (2, 2, 1): bound True, equality set as stated True, strict for every k >= 2 True
+C2-C4 windows:
+   plaquette     n=4 |E|=4 (3, 1, 2): Z = 20784; D = 22464 (order [0, 1, 2, 3]; all-orders check True); Z < D: True; Z/D = 0.925214; max over adapted S of mu_S(constant) = p^|E|/D = 3.6058e-03 < mu_stat(constant) = 3.8972e-03
+   plaquette     n=4 |E|=4 (5, 2, 4): Z = 280086; D = 295182 (order [0, 1, 2, 3]; all-orders check True); Z < D: True; Z/D = 0.948859; max over adapted S of mu_S(constant) = p^|E|/D = 2.1173e-03 < mu_stat(constant) = 2.2315e-03
+   plaquette     n=4 |E|=4 (7, 3, 5): Z = 810768; D = 853200 (order [0, 1, 2, 3]; all-orders check True); Z < D: True; Z/D = 0.950267; max over adapted S of mu_S(constant) = p^|E|/D = 2.8141e-03 < mu_stat(constant) = 2.9614e-03
+   plaquette     n=4 |E|=4 (1, 3, 2): Z = 20784; D = 22464 (order [0, 1, 2, 3]; all-orders check True); Z < D: True; Z/D = 0.925214; max over adapted S of mu_S(constant) = p^|E|/D = 4.4516e-05 < mu_stat(constant) = 4.8114e-05
+   plaquette     n=4 |E|=4 (2, 2, 1): Z = 4128; D = 4608 (order [0, 1, 2, 3]; all-orders check True); Z < D: True; Z/D = 0.895833; max over adapted S of mu_S(constant) = p^|E|/D = 3.4722e-03 < mu_stat(constant) = 3.8760e-03
+   rectangle 2x3 n=6 |E|=7 (3, 1, 2): Z = 6000000; D = 7008768 (order [0, 1, 2, 3, 4, 5]; all-orders check True); Z < D: True; Z/D = 0.856071; max over adapted S of mu_S(constant) = p^|E|/D = 3.1204e-04 < mu_stat(constant) = 3.6450e-04
+   rectangle 2x3 n=6 |E|=7 (5, 2, 4): Z = 568472046; D = 631394298 (order [0, 1, 2, 3, 4, 5]; all-orders check True); Z < D: True; Z/D = 0.900344; max over adapted S of mu_S(constant) = p^|E|/D = 1.2373e-04 < mu_stat(constant) = 1.3743e-04
+   rectangle 2x3 n=6 |E|=7 (7, 3, 5): Z = 3651973440; D = 4044168000 (order [0, 1, 2, 3, 4, 5]; all-orders check True); Z < D: True; Z/D = 0.903022; max over adapted S of mu_S(constant) = p^|E|/D = 2.0364e-04 < mu_stat(constant) = 2.2551e-04
+   rectangle 2x3 n=6 |E|=7 (1, 3, 2): Z = 6000000; D = 7008768 (order [0, 1, 2, 3, 4, 5]; all-orders check True); Z < D: True; Z/D = 0.856071; max over adapted S of mu_S(constant) = p^|E|/D = 1.4268e-07 < mu_stat(constant) = 1.6667e-07
+   rectangle 2x3 n=6 |E|=7 (2, 2, 1): Z = 355200; D = 442368 (order [0, 1, 2, 3, 4, 5]; all-orders check True); Z < D: True; Z/D = 0.802951; max over adapted S of mu_S(constant) = p^|E|/D = 2.8935e-04 < mu_stat(constant) = 3.6036e-04
+   cube          n=8 |E|=12 (3, 1, 2): Z = 6982520832; D = 10933678080 (order [0, 1, 2, 3, 4, 5, 6, 7]; all-orders check True); Z < D: True; Z/D = 0.638625; max over adapted S of mu_S(constant) = p^|E|/D = 4.8606e-05 < mu_stat(constant) = 7.6110e-05
+   cube          n=8 |E|=12 (5, 2, 4): Z = 17002040556294; D = 22841951518746 (order [0, 1, 2, 3, 4, 5, 6, 7]; all-orders check True); Z < D: True; Z/D = 0.744334; max over adapted S of mu_S(constant) = p^|E|/D = 1.0688e-05 < mu_stat(constant) = 1.4359e-05
+   cube          n=8 |E|=12 (7, 3, 5): Z = 412507735200000; D = 555911333280000 (order [0, 1, 2, 3, 4, 5, 6, 7]; all-orders check True); Z < D: True; Z/D = 0.742039; max over adapted S of mu_S(constant) = p^|E|/D = 2.4898e-05 < mu_stat(constant) = 3.3554e-05
+   cube          n=8 |E|=12 (1, 3, 2): Z = 6982520832; D = 10933678080 (order [0, 1, 2, 3, 4, 5, 6, 7]; all-orders check True); Z < D: True; Z/D = 0.638625; max over adapted S of mu_S(constant) = p^|E|/D = 9.1461e-11 < mu_stat(constant) = 1.4321e-10
+   cube          n=8 |E|=12 (2, 2, 1): Z = 56074752; D = 106168320 (order [0, 1, 2, 3, 4, 5, 6, 7]; all-orders check True); Z < D: True; Z/D = 0.528168; max over adapted S of mu_S(constant) = p^|E|/D = 3.8580e-05 < mu_stat(constant) = 7.3045e-05
+   square 3x3    n=9 |E|=12 (3, 1, 2): Z = 41671876608; D = 56855126016 (order [0, 1, 2, 3, 4, 5, 6, 7, 8]; all-orders check True); Z < D: True; Z/D = 0.732948; max over adapted S of mu_S(constant) = p^|E|/D = 9.3473e-06 < mu_stat(constant) = 1.2753e-05
+   square 3x3    n=9 |E|=12 (5, 2, 4): Z = 101817524096742; D = 125601373518246 (order [0, 1, 2, 3, 4, 5, 6, 7, 8]; all-orders check True); Z < D: True; Z/D = 0.810640; max over adapted S of mu_S(constant) = p^|E|/D = 1.9438e-06 < mu_stat(constant) = 2.3978e-06
+   square 3x3    n=9 |E|=12 (7, 3, 5): Z = 2469880198080000; D = 3028758298560000 (order [0, 1, 2, 3, 4, 5, 6, 7, 8]; all-orders check True); Z < D: True; Z/D = 0.815476; max over adapted S of mu_S(constant) = p^|E|/D = 4.5700e-06 < mu_stat(constant) = 5.6040e-06
+   square 3x3    n=9 |E|=12 (1, 3, 2): Z = 41671876608; D = 56855126016 (order [0, 1, 2, 3, 4, 5, 6, 7, 8]; all-orders check True); Z < D: True; Z/D = 0.732948; max over adapted S of mu_S(constant) = p^|E|/D = 1.7589e-11 < mu_stat(constant) = 2.3997e-11
+   square 3x3    n=9 |E|=12 (2, 2, 1): Z = 328977408; D = 509607936 (order [0, 1, 2, 3, 4, 5, 6, 7, 8]; all-orders check True); Z < D: True; Z/D = 0.645550; max over adapted S of mu_S(constant) = p^|E|/D = 8.0376e-06 < mu_stat(constant) = 1.2451e-05
+C5 explicit value-dependent schemes, exact full laws:
+   plaquette     (3, 1, 2) agree-next        : total mass 1; mu_S(constant) = 3.6058e-03 (<= p^|E|/D = 3.6058e-03 < mu_stat = 3.8972e-03: True); TV(mu_S, mu_stat) = 0.014595
+   plaquette     (3, 1, 2) spread-then-close : total mass 1; mu_S(constant) = 3.3284e-03 (<= p^|E|/D = 3.6058e-03 < mu_stat = 3.8972e-03: True); TV(mu_S, mu_stat) = 0.028483
+   plaquette     (5, 2, 4) agree-next        : total mass 1; mu_S(constant) = 2.1173e-03 (<= p^|E|/D = 2.1173e-03 < mu_stat = 2.2315e-03: True); TV(mu_S, mu_stat) = 0.009475
+   plaquette     (5, 2, 4) spread-then-close : total mass 1; mu_S(constant) = 2.0073e-03 (<= p^|E|/D = 2.1173e-03 < mu_stat = 2.2315e-03: True); TV(mu_S, mu_stat) = 0.018612
+   plaquette     (7, 3, 5) agree-next        : total mass 1; mu_S(constant) = 2.8141e-03 (<= p^|E|/D = 2.8141e-03 < mu_stat = 2.9614e-03: True); TV(mu_S, mu_stat) = 0.009188
+   plaquette     (7, 3, 5) spread-then-close : total mass 1; mu_S(constant) = 2.6716e-03 (<= p^|E|/D = 2.8141e-03 < mu_stat = 2.9614e-03: True); TV(mu_S, mu_stat) = 0.018077
+   rectangle 2x3 (3, 1, 2) agree-next        : total mass 1; mu_S(constant) = 3.1204e-04 (<= p^|E|/D = 3.1204e-04 < mu_stat = 3.6450e-04: True); TV(mu_S, mu_stat) = 0.026043
+   rectangle 2x3 (3, 1, 2) spread-then-close : total mass 1; mu_S(constant) = 2.4963e-04 (<= p^|E|/D = 3.1204e-04 < mu_stat = 3.6450e-04: True); TV(mu_S, mu_stat) = 0.038174
+   rectangle 2x3 (5, 2, 4) agree-next        : total mass 1; mu_S(constant) = 1.2373e-04 (<= p^|E|/D = 1.2373e-04 < mu_stat = 1.3743e-04: True); TV(mu_S, mu_stat) = 0.016543
+   rectangle 2x3 (5, 2, 4) spread-then-close : total mass 1; mu_S(constant) = 1.0750e-04 (<= p^|E|/D = 1.2373e-04 < mu_stat = 1.3743e-04: True); TV(mu_S, mu_stat) = 0.023332
+   rectangle 2x3 (7, 3, 5) agree-next        : total mass 1; mu_S(constant) = 2.0364e-04 (<= p^|E|/D = 2.0364e-04 < mu_stat = 2.2551e-04: True); TV(mu_S, mu_stat) = 0.016328
+   rectangle 2x3 (7, 3, 5) spread-then-close : total mass 1; mu_S(constant) = 1.7555e-04 (<= p^|E|/D = 2.0364e-04 < mu_stat = 2.2551e-04: True); TV(mu_S, mu_stat) = 0.024114
+HIT: on every finite window whose graph has a cycle and for every non-constant positive six-axis rule (p,q,r), every adapted sequential formation scheme (value-dependent, possibly randomized next-site choice) gives each constant pattern at most (Z/D) times its static probability, with D = min over orders of 6^{n0} prod N_{k_x} > Z (Hoelder); so f = 1[constant pattern] separates the static law from the convex hull of all adapted formation laws (checked exactly on the plaquette, 2x3, cube, 3x3 at five rules)
+SUMMARY: PROVED (for referee) - the static law is not in the hull of value-dependent (adapted) formation laws on any window with a cycle, for every non-constant rule; separating functional: the indicator of the constant patterns; exact margins: see C2-C4

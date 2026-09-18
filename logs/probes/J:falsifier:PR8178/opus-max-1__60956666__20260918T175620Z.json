@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8178",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block34-sphere",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8178/c1c2_tori_beyond_tiny_exact.py",
+ "seed": 54180,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60956666",
+ "started_utc": "20260918T175620Z",
+ "elapsed_s": 235.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "C1 exact on L = 2..48 x t = 1..64 (3008 pairs; path counts vs Laurent coefficients): 3008 equal, 0 differ; C2 exact V_L (real-space solve) on L = 2..20: 19 inside the bracket [3/(4 pi^2), 9/16] S_L, 0 outside; falsifier does not fire"
+ },
+ "review": "C1 path counts (real space) equal the Laurent-coefficient mode formula exactly at all 3008 (L, t) pairs for L = 2..48, t = 1..64, with the plane-average variance t/L^2 at every level; C2 exact V_L from a real-space linear solve lies inside [3/(4 pi^2), 9/16] S_L on all 19 tori L = 2..20 (V_L/S_L falling from 0.3375 to 0.1595, at 0.17-0.54 of the bracket width) and matches the rational-cosine mode sum on L = 2, 3, 4, 6; the falsifier does not fire.",
+ "what": "PR #8178 (ail34: the torus memory time of the sphere formation law \u2014 t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917; git show origin/physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917:<note>. Create probes/work/pr8178/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8178/<script>.py\"",
+ "stdout_sha256": "f2b2c496de2efe04654138a314c72e3de08de6741a27241a254b4890df2e3fe2",
+ "stdout_tail": "True (position 0.180 of the bracket; 5.7s)\n[C2] L=15: V_L/sigma^2 = 2.590696961571 (exact, denominator 16 digits), S_L = 15.9438904069, V_L/S_L = 0.162488 in [0.075991, 0.562500]: True (position 0.178 of the bracket; 9.5s)\n[C2] L=16: V_L/sigma^2 = 2.644271002586 (exact, denominator 12 digits), S_L = 16.3284514687, V_L/S_L = 0.161943 in [0.075991, 0.562500]: True (position 0.177 of the bracket; 14.1s)\n[C2] L=17: V_L/sigma^2 = 2.694573909369 (exact, denominator 17 digits), S_L = 16.7286375305, V_L/S_L = 0.161076 in [0.075991, 0.562500]: True (position 0.175 of the bracket; 24.7s)\n[C2] L=18: V_L/sigma^2 = 2.741983322410 (exact, denominator 17 digits), S_L = 17.0713019181, V_L/S_L = 0.160619 in [0.075991, 0.562500]: True (position 0.174 of the bracket; 35.6s)\n[C2] L=19: V_L/sigma^2 = 2.786814889422 (exact, denominator 20 digits), S_L = 17.4263119848, V_L/S_L = 0.159920 in [0.075991, 0.562500]: True (position 0.173 of the bracket; 57.9s)\n[C2] L=20: V_L/sigma^2 = 2.829335159974 (exact, denominator 21 digits), S_L = 17.7353045837, V_L/S_L = 0.159531 in [0.075991, 0.562500]: True (position 0.172 of the bracket; 80.1s)\n[C2] cross-check with the rational-cosine mode sum on L = 2, 3, 4, 6: [(2, True), (3, True), (4, True), (6, True)]\n[time] 235.9s\nSUMMARY: C1 exact on L = 2..48 x t = 1..64 (3008 pairs; path counts vs Laurent coefficients): 3008 equal, 0 differ; C2 exact V_L (real-space solve) on L = 2..20: 19 inside the bracket [3/(4 pi^2), 9/16] S_L, 0 outside; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T180023Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+== C1: site variance and plane-average variance, process side (path counts) vs mode formula (Laurent coefficients); L = 2..48, t = 1..64
+[C1] L= 2: equal at t = 1..64; v_64 = 16.843750000000 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 3: equal at t = 1..64; v_64 = 8.333333333333 (denominator 31 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 4: equal at t = 1..64; v_64 = 5.476562500000 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 5: equal at t = 1..64; v_64 = 4.229090909041 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 6: equal at t = 1..64; v_64 = 3.602083255742 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 7: equal at t = 1..64; v_64 = 3.260607008064 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 8: equal at t = 1..64; v_64 = 3.066589528014 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L= 9: equal at t = 1..64; v_64 = 2.954796844793 (denominator 51 digits); plane-average variance t/L^2 at every t: True
+[C1] L=10: equal at t = 1..64; v_64 = 2.890889036557 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=11: equal at t = 1..64; v_64 = 2.855197419885 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=12: equal at t = 1..64; v_64 = 2.835909096318 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=13: equal at t = 1..64; v_64 = 2.825877713489 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=14: equal at t = 1..64; v_64 = 2.820872610597 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=15: equal at t = 1..64; v_64 = 2.818481393556 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=16: equal at t = 1..64; v_64 = 2.817388971612 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=17: equal at t = 1..64; v_64 = 2.816912266464 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=18: equal at t = 1..64; v_64 = 2.816713761431 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=19: equal at t = 1..64; v_64 = 2.816634956211 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=20: equal at t = 1..64; v_64 = 2.816605156503 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=21: equal at t = 1..64; v_64 = 2.816594432454 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=22: equal at t = 1..64; v_64 = 2.816590762925 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=23: equal at t = 1..64; v_64 = 2.816589570103 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=24: equal at t = 1..64; v_64 = 2.816589202097 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=25: equal at t = 1..64; v_64 = 2.816589094443 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=26: equal at t = 1..64; v_64 = 2.816589064611 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=27: equal at t = 1..64; v_64 = 2.816589056788 (denominator 58 digits); plane-average variance t/L^2 at every t: True
+[C1] L=28: equal at t = 1..64; v_64 = 2.816589054849 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=29: equal at t = 1..64; v_64 = 2.816589054395 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=30: equal at t = 1..64; v_64 = 2.816589054295 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=31: equal at t = 1..64; v_64 = 2.816589054274 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=32: equal at t = 1..64; v_64 = 2.816589054270 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=33: equal at t = 1..64; v_64 = 2.816589054270 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=34: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=35: equal at t = 1..64; v_64 = 2.816589054269 (denominator 57 digits); plane-average variance t/L^2 at every t: True
+[C1] L=36: equal at t = 1..64; v_64 = 2.816589054269 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=37: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=38: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=39: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=40: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=41: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=42: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=43: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=44: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=45: equal at t = 1..64; v_64 = 2.816589054269 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+[C1] L=46: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=47: equal at t = 1..64; v_64 = 2.816589054269 (denominator 59 digits); plane-average variance t/L^2 at every t: True
+[C1] L=48: equal at t = 1..64; v_64 = 2.816589054269 (denominator 60 digits); plane-average variance t/L^2 at every t: True
+== C2: V_L exact by a real-space linear solve; S_L exact; bracket (3/(4 pi^2)) S_L <= V_L <= (9/16) S_L; L = 2..20
+[C2] L= 2: V_L/sigma^2 = 0.843750000000 (exact, denominator 2 digits), S_L = 2.5000000000, V_L/S_L = 0.337500 in [0.075991, 0.562500]: True (position 0.538 of the bracket; 0.0s)
+[C2] L= 3: V_L/sigma^2 = 1.222222222222 (exact, denominator 1 digits), S_L = 6.0000000000, V_L/S_L = 0.203704 in [0.075991, 0.562500]: True (position 0.263 of the bracket; 0.0s)
+[C2] L= 4: V_L/sigma^2 = 1.476562500000 (exact, denominator 3 digits), S_L = 7.4250000000, V_L/S_L = 0.198864 in [0.075991, 0.562500]: True (position 0.253 of the bracket; 0.0s)
+[C2] L= 5: V_L/sigma^2 = 1.669090909091 (exact, denominator 3 digits), S_L = 9.1000000000, V_L/S_L = 0.183417 in [0.075991, 0.562500]: True (position 0.221 of the bracket; 0.0s)
+[C2] L= 6: V_L/sigma^2 = 1.824305555556 (exact, denominator 4 digits), S_L = 10.0854700855, V_L/S_L = 0.180885 in [0.075991, 0.562500]: True (position 0.216 of the bracket; 0.0s)
+[C2] L= 7: V_L/sigma^2 = 1.954490507004 (exact, denominator 5 digits), S_L = 11.1820512821, V_L/S_L = 0.174788 in [0.075991, 0.562500]: True (position 0.203 of the bracket; 0.1s)
+[C2] L= 8: V_L/sigma^2 = 2.066685267857 (exact, denominator 4 digits), S_L = 11.9335953997, V_L/S_L = 0.173182 in [0.075991, 0.562500]: True (position 0.200 of the bracket; 0.1s)
+[C2] L= 9: V_L/sigma^2 = 2.165305859277 (exact, denominator 6 digits), S_L = 12.7476395173, V_L/S_L = 0.169859 in [0.075991, 0.562500]: True (position 0.193 of the bracket; 0.3s)
+[C2] L=10: V_L/sigma^2 = 2.253309478634 (exact, denominator 7 digits), S_L = 13.3546247401, V_L/S_L = 0.168729 in [0.075991, 0.562500]: True (position 0.191 of the bracket; 0.6s)
+[C2] L=11: V_L/sigma^2 = 2.332776109961 (exact, denominator 8 digits), S_L = 14.0016099629, V_L/S_L = 0.166608 in [0.075991, 0.562500]: True (position 0.186 of the bracket; 1.1s)
+[C2] L=12: V_L/sigma^2 = 2.405225744968 (exact, denominator 9 digits), S_L = 14.5105482517, V_L/S_L = 0.165757 in [0.075991, 0.562500]: True (position 0.185 of the bracket; 1.8s)
+[C2] L=13: V_L/sigma^2 = 2.471803663834 (exact, denominator 10 digits), S_L = 15.0472643184, V_L/S_L = 0.164269 in [0.075991, 0.562500]: True (position 0.181 of the bracket; 3.5s)
+[C2] L=14: V_L/sigma^2 = 2.533394709956 (exact, denominator 12 digits), S_L = 15.4853732810, V_L/S_L = 0.163599 in [0.075991, 0.562500]: True (position 0.180 of the bracket; 5.7s)
+[C2] L=15: V_L/sigma^2 = 2.590696961571 (exact, denominator 16 digits), S_L = 15.9438904069, V_L/S_L = 0.162488 in [0.075991, 0.562500]: True (position 0.178 of the bracket; 9.5s)
+[C2] L=16: V_L/sigma^2 = 2.644271002586 (exact, denominator 12 digits), S_L = 16.3284514687, V_L/S_L = 0.161943 in [0.075991, 0.562500]: True (position 0.177 of the bracket; 14.1s)
+[C2] L=17: V_L/sigma^2 = 2.694573909369 (exact, denominator 17 digits), S_L = 16.7286375305, V_L/S_L = 0.161076 in [0.075991, 0.562500]: True (position 0.175 of the bracket; 24.7s)
+[C2] L=18: V_L/sigma^2 = 2.741983322410 (exact, denominator 17 digits), S_L = 17.0713019181, V_L/S_L = 0.160619 in [0.075991, 0.562500]: True (position 0.174 of the bracket; 35.6s)
+[C2] L=19: V_L/sigma^2 = 2.786814889422 (exact, denominator 20 digits), S_L = 17.4263119848, V_L/S_L = 0.159920 in [0.075991, 0.562500]: True (position 0.173 of the bracket; 57.9s)
+[C2] L=20: V_L/sigma^2 = 2.829335159974 (exact, denominator 21 digits), S_L = 17.7353045837, V_L/S_L = 0.159531 in [0.075991, 0.562500]: True (position 0.172 of the bracket; 80.1s)
+[C2] cross-check with the rational-cosine mode sum on L = 2, 3, 4, 6: [(2, True), (3, True), (4, True), (6, True)]
+[time] 235.9s
+SUMMARY: C1 exact on L = 2..48 x t = 1..64 (3008 pairs; path counts vs Laurent coefficients): 3008 equal, 0 differ; C2 exact V_L (real-space solve) on L = 2..20: 19 inside the bracket [3/(4 pi^2), 9/16] S_L, 0 outside; falsifier does not fire

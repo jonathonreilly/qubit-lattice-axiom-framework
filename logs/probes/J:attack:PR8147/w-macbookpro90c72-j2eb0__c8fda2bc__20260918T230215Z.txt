@@ -1,0 +1,9 @@
+n=1 P_n=1/3 C(2n,n)/4^n * P_n=1/6 SRW u_{2n}=1/6 eq=True
+n=2 P_n=5/27 C(2n,n)/4^n * P_n=5/72 SRW u_{2n}=5/72 eq=True
+n=3 P_n=31/243 C(2n,n)/4^n * P_n=155/3888 SRW u_{2n}=155/3888 eq=True
+n=4 P_n=71/729 C(2n,n)/4^n * P_n=2485/93312 SRW u_{2n}=2485/93312 eq=True
+n=5 P_n=517/6561 C(2n,n)/4^n * P_n=3619/186624 SRW u_{2n}=3619/186624 eq=True
+n=6 P_n=11723/177147 C(2n,n)/4^n * P_n=902671/60466176 SRW u_{2n}=902671/60466176 eq=True
+n=7 P_n=10105/177147 C(2n,n)/4^n * P_n=1445015/120932352 SRW u_{2n}=1445015/120932352 eq=True
+n=8 P_n=26639/531441 C(2n,n)/4^n * P_n=19046885/1934917632 SRW u_{2n}=19046885/1934917632 eq=True
+SUMMARY: attack pattern (c) EXECUTED NUMBERS on T3 SRW identity - u_{2n} = C(2n,n)/4^n P_n for n=1..8; does not fire

@@ -1,0 +1,35 @@
+{
+ "task": "R:ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "ward",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
+ "seed": 74278,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233118Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea7821e106e9d2f3e599c6f26c9840ac9e124add628aba33eaf9cc66cbc5fca3",
+ "stdout_tail": "^dag}> = N^2/2  (sum = 40.500000)\n  [PASS] [B5] assembled bound m^2 S(h|m|) <= beta/4  (m^2 S = 0.2077 <= beta/4 = 0.5000)\n\n----------------------------------------------------------------------------\n[IR] threshold composition (retained C-MW row scope)\n----------------------------------------------------------------------------\n  [PASS] [IR] d=1: (1/N) sum_{k!=0} 1/E(k) grows strictly with L  (S = ['1.33', '2.66', '5.33'])\n  [PASS] [IR] d=2: grows strictly with L  (S = ['0.38', '0.49', '0.55'])\n  [PASS] [IR] d=3: L-stable (ratio largest/smallest < 1.5; converging)  (S = ['0.215', '0.230', '0.237'])\n  [PASS] [IR] (B5) ceiling (beta/4)/S(h) -> 0 along h -> 0 at large L, d=1 (m is squeezed to 0 in the weak-field limit after the thermodynamic limit)  (ceiling = ['0.10012', '0.03163', '0.01000'])\n\n----------------------------------------------------------------------------\n[F] falsifiers\n----------------------------------------------------------------------------\n  [PASS] [F] falsifier (i): with U(1)-breaking anisotropy and h = 0, the k = 0 kernel bound N(J E(0) + h|m|) = 0 FAILS (the symmetry input is load-bearing)  (<[[Q_0,H],Q_0^dag]> = 1.8557 > 0 = bound)\n  [PASS] [F] falsifier (ii): (B1) is not vacuously slack -- constructed instance achieves a finite fraction of the bound  (saturation ratio = 0.924)\n\n============================================================================\nTOTAL: PASS=26 FAIL=0\n============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233119Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

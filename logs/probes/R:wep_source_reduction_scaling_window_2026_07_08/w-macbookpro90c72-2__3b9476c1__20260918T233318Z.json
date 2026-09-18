@@ -1,0 +1,35 @@
+{
+ "task": "R:wep_source_reduction_scaling_window_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "wep",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/wep_source_reduction_scaling_window_2026_07_08.py",
+ "seed": 74398,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233318Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "80d15dd6bf535223f85b5029cf59a59729611599b41ce901ff75363c8a4f0a5f",
+ "stdout_tail": "FREE SOURCE-FUNCTION FORMULAS AND FINITE CONTACT COMPARATOR\nCHECK-01 CONDITIONAL-SINGLE-FORMULA: PASS residual=0.000e+00 symbolic_residual=0\nCHECK-02 FREE-COMPOSITE-FORMULA: PASS residual=0.000e+00 identity_residual=0 series=2*x**2 + 2*x**4/3 + O(x**6)\nCHECK-03 SMALL-PARAMETER-FORMULAS: PASS residual=0.000e+00 coefficients=(1/2, 2/3, 2)\nCHECK-04 FINITE-SAME-ENERGY-COMPARATOR: PASS residual=0.000e+00 L=64 target=8.661812851073e-01 relative_mass_separation=4.661369e-01 max_fit_residual=2.853e-07 fit_residual_tolerance=1.0e-06 fitted_masses_positive_finite=true rows=[m=0.5,U=3.7250327997e-01,E0=8.661812851073e-01,Mcurv=1.550948918546e+00,fit_resid=2.853e-07; m=0.6,U=5.9883401443e-01,E0=8.661812851073e-01,Mcurv=2.905143452026e+00,fit_resid=3.045e-08]\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233319Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

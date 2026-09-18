@@ -1,0 +1,35 @@
+{
+ "task": "R:weak_field_optical_metric_ansatz_diagnostic_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "weak",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/weak_field_optical_metric_ansatz_diagnostic_2026_06_09.py",
+ "seed": 74398,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233318Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5ac5fc5f498ced0e5f9474572d1d2ca3be5e7b70fd2554d2bfe853607b75f320",
+ "stdout_tail": "WEAK-FIELD OPTICAL METRIC ANSATZ DIAGNOSTIC\n========================================================================\n[PASS] M1 supplied weak-field ansatz has isotropic spatial part and scalar g_00 perturbation\n       g = diag(-(1 + 2 epsilon Phi(x)), 1, 1, 1)\n[PASS] M2 linearized curvature has R_00 = d^2 Phi / dx^2 in the one-direction model\n       R_00 / epsilon = Derivative(Phi(x), (x, 2))\n[PASS] M3 geodesic kinematics follows the supplied potential gradient\n       Gamma^x_00 = d Phi / dx, so nonrelativistic acceleration is -d Phi / dx\n[PASS] M4 Poisson compatibility: 1/r is harmonic off-source and lattice resolvent trends downward near 1/r\n       Delta(1/r) = 0; finite-lattice log-log slope = -1.37\n[PASS] M5 boundary is explicit\n       No record-density->metric derivation, source/action normalization, gravity sign, TT graviton dynamics, or nonlinear Einstein closure is supplied here.\n\nTOTAL: PASS=5 FAIL=0\nBoundary: ansatz diagnostic only; no gravity-sign or metric-dynamics derivation.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233318Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

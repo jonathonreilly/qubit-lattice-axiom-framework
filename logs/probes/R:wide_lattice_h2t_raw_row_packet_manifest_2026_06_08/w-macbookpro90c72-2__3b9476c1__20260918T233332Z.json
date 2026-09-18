@@ -1,0 +1,35 @@
+{
+ "task": "R:wide_lattice_h2t_raw_row_packet_manifest_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "wide",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/wide_lattice_h2t_raw_row_packet_manifest_2026_06_08.py",
+ "seed": 74412,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233332Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d45efe331f418fc2f75b485a29d539450f1d6bea84b561d3709df44738460b0a",
+ "stdout_tail": "en_log=logs/2026-04-05-wide-lattice-h2t-distance-replay.txt\nfrozen_sha256=2faf31bf9b1015df87adaadbfa8393c4a26e100abdc6ccaf6daf70308a30e024\nPASS frozen log sha pinned\nPASS note names frozen sha\nPASS note names verifier cache\nPASS note names raw-row manifest cache\nPASS distance row count :: count=10\nPASS distance row z=2 exposed :: | 2 | `+0.000188` | TOWARD |\nPASS distance row z=3 exposed :: | 3 | `+0.000232` | TOWARD |\nPASS distance row z=4 exposed :: | 4 | `+0.000245` | TOWARD |\nPASS distance row z=5 exposed :: | 5 | `+0.000220` | TOWARD |\nPASS distance row z=6 exposed :: | 6 | `+0.000183` | TOWARD |\nPASS distance row z=7 exposed :: | 7 | `+0.000159` | TOWARD |\nPASS distance row z=8 exposed :: | 8 | `+0.000142` | TOWARD |\nPASS distance row z=9 exposed :: | 9 | `+0.000124` | TOWARD |\nPASS distance row z=10 exposed :: | 10 | `+0.000108` | TOWARD |\nPASS distance row z=11 exposed :: | 11 | `+0.000093` | TOWARD |\nPASS F~M row count :: count=6\nPASS F~M row s=1e-06 exposed :: | `1e-06` | `+4.636762e-06` | TOWARD |\nPASS F~M row s=2e-06 exposed :: | `2e-06` | `+9.273526e-06` | TOWARD |\nPASS F~M row s=5e-06 exposed :: | `5e-06` | `+2.318384e-05` | TOWARD |\nPASS F~M row s=1e-05 exposed :: | `1e-05` | `+4.636775e-05` | TOWARD |\nPASS F~M row s=2e-05 exposed :: | `2e-05` | `+9.273579e-05` | TOWARD |\nPASS F~M row s=5e-05 exposed :: | `5e-05` | `+2.318416e-04` | TOWARD |\nPASS peak-tail recompute visible\nPASS far-tail recompute visible\nPASS F~M exponent visible\nRAW_ROW_PACKET PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233332Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:vortex_two_dimensional_record_time_single_weyl_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "vortex",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/vortex_two_dimensional_record_time_single_weyl_check_2026_09_04.py",
+ "seed": 74255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233055Z",
+ "elapsed_s": 22.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3b7c18ebcc57dfa467c48d5065cf75d7203b387e8c8f69b49a185d73d0a03a7d",
+ "stdout_tail": "a winding, with its seventh Clifford generator and the 8-component embedding.  Rebuilt from them alone it reproduces the winding-1 operator at residual 0.0, and deleting each displayed term changes the operator by 33.226, 33.226, 110.278, 27.153; this is not an independent-necessity proof\nSCOPE: auxiliary grid and coefficients are supplied; no Record history, phase formation, physical species selection, minimal supplier count or gauge inflow is established.\nSUMMARY: finite signed cancellation, vortex localization and paired dispersion; local masked traces are scale dependent and the balanced global index is zero.\nPASS R1 real wall N12: 8 light states, 4 chiral directions of each sign; signed density 7.286e-16\nPASS R2 chiral vector is not an energy eigenmode: N12 mean E 0.000e+00, residual 0.0015583545647, splitting 0.0015583545647\nPASS R3 local heat trace depends on lambda: core at 0.1,1,10 = [0.9680684683808982, 0.25346332267533966, -3.4084119229903925e-06]; full traces remain zero\nPASS R4 pair N24: compressed boundary eigenvalues [0.0018551839681902977, 0.0018551839681903086], unsigned trace 0.00371036793638, max pointwise signed 0.000278696210853; all low-space directions have boundary weight below declared localization threshold 0.5\nPASS R5 finite rectangular 2x3 block has nullities 1 and 0, so finiteness alone does not force index zero\nPASS R6 separate uniform symbol: E^2-M^2 minimum -1.110e-16 on control grid; analytic bound holds for rs=1, 0<M<=1\nTOTAL: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

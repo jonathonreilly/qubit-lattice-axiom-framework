@@ -1,0 +1,157 @@
+
+===============================================================================
+A - Published transition matrices and exact staggered character
+===============================================================================
+PASS A BCC positive generators have one relator
+PASS A BCC step set has eight displacements
+PASS A eta-plus/eta-minus ratio is i
+PASS A eta-minus/eta-plus ratio is -i
+PASS A h1 branch relation is +i
+PASS A -h1 branch relation is -i
+PASS A character(h1)=i
+PASS A character(-h1)=-i
+PASS A h2 branch relation is +i
+PASS A -h2 branch relation is -i
+PASS A character(h2)=i
+PASS A character(-h2)=-i
+PASS A h3 branch relation is +i
+PASS A -h3 branch relation is -i
+PASS A character(h3)=i
+PASS A character(-h3)=-i
+PASS A h4 branch relation is +i
+PASS A -h4 branch relation is -i
+PASS A character(h4)=i
+PASS A character(-h4)=-i
+PASS A character respects tetrahedral relator
+PASS A plus source normalization sum A†A=I
+PASS A plus source normalization sum AA†=I
+PASS A plus off-diagonal AA† unitarity sums vanish :: classes=26
+PASS A plus off-diagonal A†A unitarity sums vanish :: classes=26
+PASS A minus source normalization sum A†A=I
+PASS A minus source normalization sum AA†=I
+PASS A minus off-diagonal AA† unitarity sums vanish :: classes=26
+PASS A minus off-diagonal A†A unitarity sums vanish :: classes=26
+
+===============================================================================
+B - Exact endpoint-kernel equivalence and boundary price
+===============================================================================
+PASS B step 0 branches have same endpoint support
+PASS B step 0 kernels differ only by endpoint character :: endpoints=1
+PASS B step 0 endpoint-local probabilities agree
+PASS B step 1 branches have same endpoint support
+PASS B step 1 kernels differ only by endpoint character :: endpoints=8
+PASS B step 1 endpoint-local probabilities agree
+PASS B step 2 branches have same endpoint support
+PASS B step 2 kernels differ only by endpoint character :: endpoints=27
+PASS B step 2 endpoint-local probabilities agree
+PASS B step 3 branches have same endpoint support
+PASS B step 3 kernels differ only by endpoint character :: endpoints=64
+PASS B step 3 endpoint-local probabilities agree
+PASS B step 4 branches have same endpoint support
+PASS B step 4 kernels differ only by endpoint character :: endpoints=125
+PASS B step 4 endpoint-local probabilities agree
+PASS B character torus condition L=1 :: phase=-I
+PASS B character torus condition L=2 :: phase=-1
+PASS B character torus condition L=3 :: phase=I
+PASS B character torus condition L=4 :: phase=1
+PASS B character torus condition L=5 :: phase=-I
+PASS B character torus condition L=6 :: phase=-1
+PASS B character torus condition L=7 :: phase=I
+PASS B character torus condition L=8 :: phase=1
+
+===============================================================================
+C - Mirror/parity identities, proper-rotation invariant, and cubic test
+===============================================================================
+PASS C one-axis mirror maps the two products
+PASS C complex-conjugate parity identity is exact
+PASS C unitary parity identity is exact
+PASS C handedness +1 linear Weyl generators
+PASS C handedness +1 triple sign :: 1
+PASS C handedness -1 linear Weyl generators
+PASS C handedness -1 triple sign :: -1
+PASS C proper-orientation triple signs differ
+PASS C handedness +1 exact pi-z covariance
+PASS C handedness +1 exact pi/2-z covariance fails
+PASS C handedness -1 exact pi-z covariance
+PASS C handedness -1 exact pi/2-z covariance fails
+
+===============================================================================
+D - Smallest tested same-context coherent separators
+===============================================================================
+PASS D plus branch h1 endpoint component
+PASS D plus branch -h1 endpoint component
+PASS D minus branch h1 endpoint component
+PASS D minus branch -h1 endpoint component
+PASS D coherent two-endpoint effect clicks with p=1/4 on plus :: 1/4
+PASS D same effect clicks with p=0 on minus :: 0
+PASS D one-endpoint norm agrees at (1, 1, 1)
+PASS D one-endpoint norm agrees at (-1, -1, -1)
+PASS D oriented momentum protocol gives p(0)=0 on right :: 0
+PASS D oriented momentum protocol gives p(0)=1 on left :: 1
+
+===============================================================================
+E - BCC/cardinal embedding and schedule dependence
+===============================================================================
+PASS E every BCC generator has cardinal Manhattan length three
+PASS E BCC generator sum is zero
+PASS E schedule xyz is exactly unitary
+PASS E schedule xzy is exactly unitary
+PASS E schedule yxz is exactly unitary
+PASS E schedule yzx is exactly unitary
+PASS E schedule zxy is exactly unitary
+PASS E schedule zyx is exactly unitary
+PASS E XYZ factorization equals one Weyl product
+PASS E all six generic axis schedules are distinct :: distinct_pairs=15
+PASS E schedule difference appears at mixed second order :: Matrix([
+[-2*I,   0],
+[   0, 2*I]])
+PASS E six schedule program sectors have dimension 12
+PASS E exact binary carrier for 12 dimensions needs at least four qubits
+PASS E six schedules split three even and three odd
+
+===============================================================================
+F - Same one-particle Weyl sector, different generated collision law
+===============================================================================
+PASS F identity collision is unitary
+PASS F phase collision is unitary
+PASS F collisions agree on vacuum and entire one-particle sector :: basis_states=5
+PASS F collisions preserve particle number
+PASS F identity retains two-particle plus state
+PASS F phase collision maps plus to minus up to global sign
+PASS F same fixed-N coherent record separates collisions with 1 versus 0
+
+===============================================================================
+G - Finite reversible permanence obstruction
+===============================================================================
+PASS G finite permutation census has invariant record cases :: 72
+PASS G no invariant finite record sector receives a blank state :: tested=72
+PASS G exact A†B=0 block equation forces blank-to-record block B=0 :: [{b11: 0, b12: 0, b21: 0, b22: 0}]
+PASS G record block A is invertible
+
+===============================================================================
+H - Note, source, premise-price, and combined-intersection contracts
+===============================================================================
+FAIL H companion note exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/WEYL_PAIR_PHYSICAL_EQUIVALENCE_AND_COMBINED_INTERSECTION_NOTE_2026-07-14.md
+
+===============================================================================
+I - N1-N8 discipline contract
+===============================================================================
+FAIL I companion note required
+
+===============================================================================
+J - Independent recomputations
+===============================================================================
+PASS J direct character h1
+PASS J direct character h2
+PASS J exact separator arithmetic plus
+PASS J exact separator arithmetic minus
+PASS J Pauli triple orientation
+PASS J mirror Pauli triple orientation
+PASS J four-site torus phase closes
+PASS J three-site torus phase does not close
+
+===============================================================================
+SUMMARY
+===============================================================================
+PASS=107
+FAIL=2

@@ -1,0 +1,62 @@
+=== BEGIN INDEPENDENT SCALAR-TRACE RECHECK ===
+Independent scalar-trace and execution-evidence recheck (bounded finite object)
+implementation rule: no import/call of the primary runner
+[PASS] E1.real-mode-normalization :: sum cos^2=V/2=648; action factor gives V/4=324
+[PASS] E2.su2-factors :: T_F=tr[(sigma_a/2)^2]=1/2; C_F=sum_a sigma_a^2/4=3/4
+[PASS] E3.midpoint-wti-factor :: max scalar identity residual = 5.551e-17
+[PASS] E4.fermion-response :: scalar trace gives rainbow=-0.00210365, tadpole=+0.00079666, dv_B=+0.05131497, dv_F/g^2=+0.00098024
+[PASS] E5.gauge-response :: analytic spin trace plus T_F=1/2 gives Ward_max=6.200e-16, q=0.52359878, dv_F=+0.10526316, dv_B/g^2=+0.02176818
+[PASS] E6.proxy-arithmetic :: a_proxy=+0.01910241, b_proxy=+0.20679771, a+b=+0.22590012
+[PASS] E7.proxy-matrix :: row sums=[0.0, 0.0], det=+0.0, eigenvalues={0,-0.22590012}
+TOTAL: PASS=7 FAIL=0
+=== END INDEPENDENT SCALAR-TRACE RECHECK ===
+Four-dimensional Euclidean gauge tensor, exact WTI, xi-affine static proxies -- bounded runner
+(exact tier V1-V3; labeled finite-grid witness tier V4-V7; standalone N^4 naive-Dirac reconstruction; see companion note)
+
+-- V1: exact gauge tensor block (plaquette form, zero mode, xi-inverse) --
+[PASS] V1.01 plaquette tensor and V/4 normalization
+[PASS] V1.02 site-centered negative control
+[PASS] V1.03 SU(2) trace normalization
+[PASS] V1.04 gauge-orbit zero mode
+[PASS] V1.05 covariant-gauge closed inverse
+
+-- V2: exact lattice Ward-Takahashi identity (anisotropic velocities) --
+[PASS] V2.01 midpoint anisotropic WTI
+[PASS] V2.02 no-half-shift negative control
+
+-- V3: rainbow a(xi) exactly affine; tadpole closed form; WTI slope --
+[PASS] V3.01 rainbow xi-affinity
+[PASS] V3.02 WTI longitudinal slope
+[PASS] V3.03 tadpole closed form
+[PASS] V3.04 sampled-window total sign
+
+-- V4: small-probe gauge-line constant; IR-finite (C_s - C_t) split --
+[PASS] V4.01 small-probe gauge-line match
+[PASS] V4.02 individual C terms grow
+[PASS] V4.03 C_s-C_t increments shrink
+
+-- V5: xi-shift constant-dominated (fit diagnostic); TOTAL xi-slope decreasing through the probe ladder --
+  xi=0.0: A_F(log)=+0.00020  B_F(const)=-0.00236  raw=-0.00223, -0.00214, -0.00207, -0.00203
+  xi=1.0: A_F(log)=+0.00009  B_F(const)=-0.00137  raw=-0.00131, -0.00127, -0.00124, -0.00121
+[PASS] V5.01 constant-dominated xi shift
+[PASS] V5.02 rainbow slope approaches split
+[PASS] V5.03 total xi-slope decreases
+
+-- V6: standalone static-proxy directions, BOTH sectors, one shared sign-bookkeeping convention (two Euclidean reconstructions) --
+[PASS] V6.01 C_F=3/4 from generators
+  Convention (shared Euclidean sign bookkeeping, two proxy reconstructions; sign chain in the note):
+    carrier: one declared 4x4 naive-Dirac block on periodic N^4; no taste, N_f, or blocked-carrier multiplicity
+    fermion: S^-1 = S0^-1 - Sigma (rainbow + tadpole); kinetic coeffs v_mu -> v_mu - g^2 C_F out_mu (linear in v)
+    gauge:   Gamma_2 = M/g^2 + Pi (Pi = second variation of -tr log Dslash); c_mu -> w_mu + g^2 Pi_T/qhat^2
+[PASS] V6.02 positive fermion response
+[PASS] V6.03 finite-torus transversality
+[PASS] V6.04 positive gauge response
+[PASS] V6.05 positive proxy pair
+[PASS] V6.06 2x2 proxy eigenstructure
+
+-- V7: finite-grid robustness proxies (labeled; no continuum claim) --
+[PASS] V7.01 N=10 to 12 sign stability
+[PASS] V7.02 half-deformation sign stability
+
+-- SCORECARD --
+TOTAL: PASS=25 FAIL=0

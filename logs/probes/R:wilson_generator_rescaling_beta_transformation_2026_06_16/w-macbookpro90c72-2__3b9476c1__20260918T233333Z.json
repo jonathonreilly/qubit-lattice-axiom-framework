@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_generator_rescaling_beta_transformation_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
+ "seed": 74413,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233333Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=91 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "06fd844090b27f323705ad7f7840ddf06ae2f2244db52569bcde256232a4e6ac",
+ "stdout_tail": "y scalar map preserves q at w=7/2, s^2=25/9, c=5/2  [q'=35/36]\n[PASS] paired scalar product cancels c^2 at c=5/2\n[PASS] fixed-family scalar map preserves q at w=7/2, s^2=25/9, c=3  [q'=35/36]\n[PASS] paired scalar product cancels c^2 at c=3\n\nPart 3: exponent-product preservation and Gram change\n[PASS] s'T'=sT under c=1/2\n[PASS] half-Gram transforms by c^2 under c=1/2  [diagonal=1/8]\n[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=1/2\n[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=1/2\n[PASS] nontrivial c=1/2 changes the half-Gram value\n[PASS] s'T'=sT under c=1\n[PASS] half-Gram transforms by c^2 under c=1  [diagonal=1/2]\n[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=1\n[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=1\n[PASS] s'T'=sT under c=2\n[PASS] half-Gram transforms by c^2 under c=2  [diagonal=2]\n[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=2\n[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=2\n[PASS] nontrivial c=2 changes the half-Gram value\n[PASS] s'T'=sT under c=3\n[PASS] half-Gram transforms by c^2 under c=3  [diagonal=9/2]\n[PASS] generator covariance preserves the quadratic coefficient at fixed w under c=3\n[PASS] adding w'=c^2 w scales the generator-transformed coefficient by c^2 under c=3\n[PASS] nontrivial c=3 changes the half-Gram value\n\nTOTAL: PASS=91 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233333Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29",
+ "type": "runner-reexecution",
+ "lane": "velocity",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py",
+ "seed": 74253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233053Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "80a8c7e2947231d7249930b0fc51fa538d12c2108d9c3b22211091e92adfdf7b",
+ "stdout_tail": "Independent scalar-trace and execution-evidence recheck (bounded finite object)\nimplementation rule: no import/call of the primary runner\n[PASS] E1.real-mode-normalization :: sum cos^2=V/2=648; action factor gives V/4=324\n[PASS] E2.su2-factors :: T_F=tr[(sigma_a/2)^2]=1/2; C_F=sum_a sigma_a^2/4=3/4\n[PASS] E3.midpoint-wti-factor :: max scalar identity residual = 5.551e-17\n[PASS] E4.fermion-response :: scalar trace gives rainbow=-0.00210365, tadpole=+0.00079666, dv_B=+0.05131497, dv_F/g^2=+0.00098024\n[PASS] E5.gauge-response :: analytic spin trace plus T_F=1/2 gives Ward_max=6.200e-16, q=0.52359878, dv_F=+0.10526316, dv_B/g^2=+0.02176818\n[PASS] E6.proxy-arithmetic :: a_proxy=+0.01910241, b_proxy=+0.20679771, a+b=+0.22590012\n[PASS] E7.proxy-matrix :: row sums=[0.0, 0.0], det=+0.0, eigenvalues={0,-0.22590012}\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233053Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:ut_unit_placement_table_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "ut",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/ut_unit_placement_table_2026_06_11.py",
+ "seed": 74242,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233042Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "84fee016510fd01fc9ab029b1cf6d0bf2be56c15c787bbe15697fd3833f45c48",
+ "stdout_tail": " --  every reading used in the chain is a rational placement: within that class the family cannot carry the H-cone\n\nPART D -- U-T collapses; the two-species structure\n==============================================================================\n  [PASS] D1 the unique rational-placement solution over the exhibited set is (per-axis, tick = tau): U-T's freedom collapses to the single-tick placement  --  one reading (R-P-class) closes both the U-T door and the realization door; the family persists as a second species\n  [PASS] D2 the two-species cone ratio is EXACTLY 1/sqrt(3) (quantized, moduli-rigid by block06)  --  a derived two-species kinematics at one carrier density: ratio sqrt(3), not tunable\n\nPART E -- honest walls\n==============================================================================\n  [PASS] E1 the family's generic symmetric point is a DRIFT (odd first-order form) vs the H-form's even cone: no clock rate maps one onto the other  --  the E3 cone points are the only candidate comparison loci for the family -- used; not a hidden choice\n  [PASS] E2 the block06 consumed-datum equality is placement-covariant: both vectors recomputed from source, rescaled by symbolic c -- equal for EVERY clock ratio  --  U-T moves the absolute scale only; the candidate-comparison conclusion is untouched\n\n==============================================================================\nSCORECARD: PASS=9 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233043Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

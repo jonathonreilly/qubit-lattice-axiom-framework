@@ -1,0 +1,35 @@
+{
+ "task": "R:when_the_odds_are_an_energy_rank_one_detailed_balance_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "when",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/when_the_odds_are_an_energy_rank_one_detailed_balance_check_2026_09_03.py",
+ "seed": 74409,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233329Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a0a1f7aa1d4d656aae5bbf5950fa6734c7375da0f7c81e22cdae61255c214b5",
+ "stdout_tail": "74 at g = 2 and 4\nPASS C4 [finite] THE NULL RESULT: table C, keyed to the TARGET's crowding, has equal dimensionless slopes on the bent trimer at the tested kappa (a(1) = a(2)/2 = 1.000000000000 at kappa = 0, 1/2, 1) because all 12 of its breaking proposals land on a site with no occupied neighbour (m_t = 0), so C's extended rank2 does not imply a rebinding signature\nPASS C5 [finite] THE TWO DISCRIMINATORS, a factor of two apart: the Kolmogorov defect is 4 kappa and the channel slope gap 2 kappa, so defect = 2 x gap exactly -- 2.000000000000 against 2 x 1.000000000000 at kappa = 1/2, 4.000000000000 against 2 x 2.000000000000 at kappa = 1; the rectangular rank-one departure 5.018675e-02 is a separate extension diagnostic\nPASS D1 [finite] CONSISTENCY with PR #7899, dimer: table B reproduces 2 e^{g}(5 + e^{h})/(9 + e^{h}) aligned and e^{g}(5 + e^{h})/(4 + e^{h}) transverse over six (g, h) cells to 2.22e-16 relative -- both (6/5) e^{g} at h = 0 -- and 6/(6 + 505 e^{-g}) to 1.94e-16 at the tested h (|pi P - pi| <= 6.0e-17)\nPASS D2 [finite] CONSISTENCY with PR #7899, bent trimer: with the 1/n record-choice factor and D = B(new) - B(old) = A(old) - A(new) both as declared, table B returns 18/(8 e^{-g} + 4 e^{-2g}) to 1.78e-15 -- 5.165916817967, 15.571677528219, 121.731046628774 ticks at g = 1, 2, 4\nSUMMARY: declared rectangular activation factorization, attained transition odds and graph reversibility are distinct; no physical temperature or energy is derived.\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233332Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

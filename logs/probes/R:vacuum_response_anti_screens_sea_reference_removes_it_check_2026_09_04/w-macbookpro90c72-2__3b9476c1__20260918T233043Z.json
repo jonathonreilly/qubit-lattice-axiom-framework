@@ -1,0 +1,35 @@
+{
+ "task": "R:vacuum_response_anti_screens_sea_reference_removes_it_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "vacuum",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/vacuum_response_anti_screens_sea_reference_removes_it_check_2026_09_04.py",
+ "seed": 74243,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233043Z",
+ "elapsed_s": 4.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cd364228888a95047dbf2d1271bed6372ebeaf09d25734b9ccc602200a903c96",
+ "stdout_tail": "v)=[(2.0217, np.float64(0.7033016632003334), np.float64(1.0002483596945304)), (1.0, np.float64(1.0), np.float64(0.9998596620698507)), (0.1, np.float64(3.162277660168379), np.float64(0.8808279660403668)), (0.01, np.float64(10.0), np.float64(0.36352793469871825)), (0.001, np.float64(31.622776601683796), np.float64(0.05714515617671434)), (0.0001, np.float64(100.0), np.float64(0.006095485210354523)), (1e-06, np.float64(1000.0), np.float64(6.141129413217428e-05))]; first sampled <1percent row=(0.0001, np.float64(100.0), np.float64(0.006095485210354523)). Not a necessary threshold, infinite-volume bound, or negative-mass calibration.\nPASS E1 Defined unit-normalized inverse graph Laplacian: controls=[(32, np.float64(0.33070467016913907)), (64, np.float64(0.32749952803973187))], near-source=[(1, np.float64(1.0371937108149942)), (2, np.float64(0.9893286055930227)), (3, np.float64(0.9056511503473642)), (4, np.float64(0.8430209692453146))]. Continuum asymptotic coefficient1/(4pi) in these units is not physical G_Newton.\nPASS E2 AXIAL fitted coefficient differs from mass fraction: (m,chi0,c,wm)=[(0.0, -2.3830212332853957, 0.18817015836921366, 0.0), (1.0, -2.397940485344827, 0.17808928215120282, 0.15519955863606294), (2.0, -2.4887276932883453, 0.15046198568350994, 0.41360698148838826)]; no full-zone derivative expansion inferred.\nSUMMARY: finite conditional identities and declared-fixture calculations only; physical source, carrier, metric and cosmology remain open.\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

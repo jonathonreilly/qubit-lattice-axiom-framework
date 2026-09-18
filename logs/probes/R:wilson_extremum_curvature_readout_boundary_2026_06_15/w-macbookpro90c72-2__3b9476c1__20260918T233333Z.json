@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_extremum_curvature_readout_boundary_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/wilson_extremum_curvature_readout_boundary_2026_06_15.py",
+ "seed": 74413,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233333Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "086f7824e008dac1bbbbdff92b038997898a99b59a570acce64e383a71e0b358",
+ "stdout_tail": " 5: square-root Taylor residual check\n----------------------------------------------------------------------------------------\n  r=0.010, x=3.895184e-04, closed=0.999805221809, e1=1.897e-08, e2=3.695e-12\n  r=0.020, x=1.558074e-03, closed=0.999220659428, e1=3.037e-07, e2=2.366e-10\n  r=0.040, x=6.232295e-03, closed=0.996878982079, e1=4.870e-06, e2=1.519e-08\n  [PASS] second Taylor truncation improves over first at all sampled r\n  [PASS] first residual coefficient is near 1/8  ([0.12502435094686065, 0.125097474564901, 0.12539104233882237])\n  [PASS] second residual coefficient is near 1/16  ([0.06251487547843632, 0.06256092966571172, 0.06274451579312454])\n\n----------------------------------------------------------------------------------------\n Part 6: import and scope guard\n----------------------------------------------------------------------------------------\n  [PASS] stdlib-only imports  (clean)\n  [PASS] forbidden overclaim absent: derives the physical Higgs pole\n  [PASS] forbidden overclaim absent: derives r\n  [PASS] forbidden overclaim absent: retained by this source note\n\n========================================================================================\n TOTAL: PASS=28, FAIL=0\n========================================================================================\n VERDICT: Wilson extremum curvature readout boundary certified; native\n leading coefficient and Taylor residuals verified, with physical\n Higgs-pole and Wilson-coefficient readings explicitly outside scope.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233333Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:velocity_rg_logflow_framework_internal_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "velocity",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/velocity_rg_logflow_framework_internal_2026_06_21.py",
+ "seed": 74253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b9476c1",
+ "started_utc": "20260918T233053Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "57357706b90ca4017f0992f46b6b334658e1cab97857deeb3ffd00433b951fd1",
+ "stdout_tail": " S''(0)=1.70000=beta, even in theta -> k-structure = lattice curl only\n[PASS] HK denominator NONZERO at every BZ-edge corner k in {0,pi}^4\\{0} (no doubler) -- min corner = 4.0 (fermion sin^2 = 0 here)\n[PASS] HK gauge free line == the lattice Laplacian used above (k_hat^2)\n[PASS] HK power-divergent form-factor ratio matches Wilson (action-robust negative) -- UV ratio HK=4.0324 vs Wilson=4.0324\n\n============================================================================\nSUMMARY\n============================================================================\ngroup weights: SU(3) C_F=4/3, T_F=1/2, C_A=3 factor EXACTLY -> the\n    form-factor question reduces to whether the kinematic cores coincide.\nsoft/IR -> gauge and fermion lines coincide (both ~k^2) -> common form factor;\n    both log-flow drags positive -> eta=v_F/v_b -> 1 FRAMEWORK-INTERNALLY,\n    corroborating the literature (Chadha-Nielsen/graphene) form for the log piece.\nBZ-edge -> gauge line = 4/dir (no doubler), fermion line = 0 (doublers);\n    SAME for Wilson and heat-kernel (canonical group Laplacian) -> ROBUST.\nregion split IR a/b ~ O(1) (common) vs UV a/b off (NO common form factor);\n    line-swap proves the mismatch is purely the internal-line shape.\nNET: log-flow attractor framework-internal; power-divergent residual D has NO\n     common form factor (action-robust). Proxy-level drag; full counterterm +\n     residual D (lambda, ~1e-20 sufficiency) stay OPEN. Support + route no-go, NOT closure.\n\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

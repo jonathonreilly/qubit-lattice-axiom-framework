@@ -1,0 +1,32 @@
+{
+ "task": "R:radius_two_incident_car_quadratic_tournament_cycle258_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "radius",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/radius_two_incident_car_quadratic_tournament_cycle258_2026_07_17.py",
+ "seed": 74656,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2348295",
+ "started_utc": "20260918T233736Z",
+ "elapsed_s": 13.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a278e82e354da0ea671267d9e6bee7a79bb1ca9378738b7be10ade4841098efc",
+ "stdout_tail": ": 8, (12960, 10368): 8}, 'incident_relations': 12960, 'disjoint_relations': 5234220, 'local_pairs_replayed': 105624, 'support_discharged_pairs': 5141556, 'covariance_ambiguities': 0, 'maximum_support': 12, 'witnessed_assignments': 64}]}\nPASS all 24 proper-cubic frames and coarse translations give single-valued bounded families :: {'proper_cubic_frames': 24, 'coarse_translations': {3: 27, 4: 64, 5: 125, 6: 216}, 'covariance_ambiguities': {3: 0, 4: 0, 5: 0, 6: 0}, 'marked_reference': False, 'global_order': False, 'maximum_support': {3: 12, 4: 12, 5: 12, 6: 12}}\nPASS every quotient representative stays in the lawful local code and has exactly the two endpoint occupation-parity incidences :: {'local_code_commutator_failures': 0, 'occupation_incidence_failures': 0, 'representatives': 80}\nPASS the fixed Cycle-230 parameters and predecessor fixtures remain separate because the CAR truth table has no model :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'three_topological_joins': 'remain separate', 'mass_seam_intertwining': 'not claimed'}\nPASS the ANF enumeration is a compiler certificate, not physical time or a general no-go :: {'compiler_layers_are_not_physical_time': True, 'radius_2_Pauli_grammar': 'exhausted after exact generated-check quotient', 'radius_3_or_general_Clifford': 'not exhausted', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 7 FAIL 1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233749Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

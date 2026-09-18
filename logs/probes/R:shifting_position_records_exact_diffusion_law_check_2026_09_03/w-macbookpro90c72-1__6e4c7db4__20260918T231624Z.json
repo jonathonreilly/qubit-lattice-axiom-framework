@@ -1,0 +1,35 @@
+{
+ "task": "R:shifting_position_records_exact_diffusion_law_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "shifting",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+ "seed": 73384,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e4c7db4",
+ "started_utc": "20260918T231624Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e053a4522fd2862ea6b991965b7dcb65cbe337673ce750342bf81841256df6f5",
+ "stdout_tail": "rical 1e-12 code] distinct stationary (I+S)/896, trace distance1/2; ambient min -4.828427, +code dim28 and U(pi)=I\nPASS F1 [numerical, 1e-14] M5's tick map rho -> mask(U(tau) rho U(tau)^dag), mask = Lueders on the 28 corner patterns, agrees with EXPLICIT coarse-outcome trees -- 312 branches after tick 1, 5824 after tick 2 -- to L1 = 2.6e-16 and 6.0e-16\nPASS F2 [numerical, 1e-3 rounded targets] sampled marginal from chosen +code ground vector the forbidden mass at ticks 1, 2, 5, 8 is 0.2655, 0.3430, 0.4161, 0.4267 (tau = 0.5); 0.3101, 0.3638, 0.4228, 0.4280 (1); 0.2148, 0.3065, 0.4016, 0.4223 (2)\nPASS F3 [numerical, 1e-15] I/896 is an EXACT fixed point: max |map(I/896) - I/896| = 5.6e-18, 6.3e-18, 4.8e-18 at tau = 0.5, 1, 2, odds uniform on the 28 corner pairs to 6.6e-16, forbidden mass exactly 12/28 = 0.428571429\nPASS F4 [numerical, 5e-3 rounded targets] sampled tick12/tick11 MARGINAL L1 ratios at 0.5294, 0.4560, 0.6156 for tau = 0.5, 1, 2, no all-time rate or full-state attraction follows\nPASS F5 [numerical, 1e-12] for the tabulated cap-bounded marginals: L1 from the coarse odds to the pre-record Born diagonal (1/16 on 16 pairs, 0 on 12) is exactly 2x the forbidden mass at all 24 ticks (max residual 1.9e-15)\nSUMMARY: finite torus position is bounded; centered additive lifts are separate. Fits remain uncontrolled diagnostics; five adjacent-detuning rows and coarse +code marginals give no all-strength, physical-CoM or unique full-state-attractor theorem.\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231647Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

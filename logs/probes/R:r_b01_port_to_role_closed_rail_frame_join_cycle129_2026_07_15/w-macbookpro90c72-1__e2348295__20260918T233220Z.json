@@ -1,0 +1,32 @@
+{
+ "task": "R:r_b01_port_to_role_closed_rail_frame_join_cycle129_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "r",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/r_b01_port_to_role_closed_rail_frame_join_cycle129_2026_07_15.py",
+ "seed": 74340,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2348295",
+ "started_utc": "20260918T233220Z",
+ "elapsed_s": 199.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0b098b26d958ddfadbb1852711035c8ca839412c4d67449e864b0a1a008d2ff1",
+ "stdout_tail": "24 terminals=(13,)\n\n===============================================================================\nD - Head absence and two-parent guard controls\n===============================================================================\nPASS D01 removing R_B01 leaves only preallocated guard, not head-descended bridge :: []\nPASS D02 GU alone cannot write JOINT; adding W1+T_N0 guard enables it :: before_joint=None guard=frozenset({'R_C01'}) after_joint=frozenset({'JOINT'})\nPASS D03 head phase without B_0_2 cannot write final frame contact :: None\nPASS D04 unguarded compiler partitions one terminal and two transient aliases :: factor=((3, 2, 5),) full=((3, 2, 5), (3, 3, 4), (5, 2, 3))\nPASS D05 unguarded full graph rejects a JOINT alias at source state zero :: ((0, (3, 3, 4), frozenset({'JOINT'})),)\n\n===============================================================================\nE - Exact scope and constitutional boundary\n===============================================================================\nFAIL E01 note names the exact bounded positive\nFAIL E02 note preserves post-terminal factor separately from full history\nFAIL E03 note carries refreshed N1-N8 discipline\nFAIL E04 note denies recurrence theorem and exact-law selection\nFAIL E05 note makes no axiom addition\nPASS E06 Cycle 129 writes only runner and review note\n\nBRIDGE_CANONICAL=16 BRIDGE_RAW=366 BRIDGE_RECORDS=17 UNION_RAW=9110\nFACTOR_STATES=618 FACTOR_EDGES=1653 FULL_STATES=6541456 FULL_EDGES=51107588\nPASS=25 FAIL=6\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233540Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:readout_bridge_frame_extension_unification_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "readout",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/readout_bridge_frame_extension_unification_2026_07_06.py",
+ "seed": 74713,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2348295",
+ "started_utc": "20260918T233833Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=5 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e9f35ec7fa2b2eab4052e5648f06bfac2a9162ec00b35ae3141881da4432617",
+ "stdout_tail": "[FAIL] source quote audit -- missing source quote in docs/MINIMAL_AXIOMS_2026-06-29.md: 'For any finite collection of pairwise-disjoint records, scalar readout\\n`I` is additive, with `I(empty)=0`.'\n[PASS] T1 partial-trace restriction -- basis_pairs=128 over_Q both_factors\n[PASS] T1 registered-factor bookkeeping -- typed_subalgebra_closure_products=16\n[PASS] T2 M2 frame additivity and no-density obstruction -- antipodal_pairs=6 rankA=3 rankAug=4\n[PASS] AST self-scan -- ast_calls=134 read_only\n[PASS] declaration inputs -- Gleason_external_not_reproved Born_not_derived\nDECLARATION FRAME-EXT=conditional_premise gap=FINITE-ADDITIVITY-TO-FRAME composite_REP_requires_external_Gleason\nTOTAL PASS=5 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233833Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=5 FAIL=1' vs cache 'PASS=6 FAIL=0'"
+  ]
+ }
+}

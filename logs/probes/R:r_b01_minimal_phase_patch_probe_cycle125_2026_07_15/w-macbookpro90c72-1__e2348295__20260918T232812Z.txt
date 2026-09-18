@@ -1,0 +1,36 @@
+
+===============================================================================
+A - Exact intended-order patch
+===============================================================================
+FAIL A01 Cycle 125 note exists
+PASS A02 orientation 20 maps old port exactly onto fresh R_B01 port :: old=(4, 1, -2) new=(5, 4, -3) mapped=(5, 4, -3)
+PASS A03 all fourteen transformed extension sites are initially open
+PASS A04 intended records decode literal R_B01=10010001 :: (1, 0, 0, 1, 0, 0, 0, 1)
+PASS A05 early D5 is present before D4 and inherited H1 still fires :: X=(((-1, 0, 0), 'H0'), ((0, 0, -1), 'H0'))->frozenset({'H1'})
+PASS A06 R_C01 phase label removes the old R_B00 completion collision
+
+===============================================================================
+B - Full-table and subset failure
+===============================================================================
+PASS B01 thirteen explicit rows quotient to twelve canonical / 159 raw :: canonical=12 raw=159
+PASS B02 8,903-row union is single-valued
+PASS B03 translated tail creates the empty local rule -> R_B41 :: frozenset({'R_B41'})
+PASS B04 candidate also contributes thirty unary raw signatures :: [((((1, 0, 0), 'R_B01'),), frozenset({'H1'}))]
+PASS B05 full subset compilation exposes 130 unexpected targets :: [(-2, 5, 3)]
+PASS B06 asynchronous graph is bad at source before any candidate write :: ((0, (5, 4, 2), frozenset({'R_B41'})),)
+PASS B07 intended R_B01 completion is unreachable
+
+===============================================================================
+C - Scope and no-go-discipline boundary
+===============================================================================
+FAIL C01 note names exact bounded negative
+FAIL C02 note names exact next repair target
+FAIL C03 note carries refreshed N1-N8 discipline
+FAIL C04 note denies broad writer or recurrence no-go
+FAIL C05 note makes no axiom addition
+PASS C06 Cycle 125 writes only runner and review note
+
+CANDIDATE_CANONICAL=12 CANDIDATE_RAW=159 UNION_RAW=8903
+UNEXPECTED=130 STATES=1 EDGES=0
+PASS=13 FAIL=6
+RESULT=FAIL

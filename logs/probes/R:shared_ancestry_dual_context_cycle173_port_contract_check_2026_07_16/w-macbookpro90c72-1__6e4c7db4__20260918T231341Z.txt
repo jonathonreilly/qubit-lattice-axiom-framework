@@ -1,0 +1,6 @@
+PASS frozen Cycle-173 runner hash 92afd28e4cf8b36b98b90b8cf919e13052716a056c64377396da304cb42acc11
+PASS cable-fed input/root (-241, 0, 0) (-240, 0, 0)
+PASS first-comb path group (11, 28)
+PASS functional nonremovable MARK guards (((-241, 1, 0), 'MARK'), ((-241, -1, 0), 'MARK'))
+PASS guard deletions stall first branch formations [((-240, 1, 0), (-241, 1, 0), 'A_0_2', frozenset()), ((-240, -1, 0), (-241, -1, 0), 'A_0_2', frozenset())]
+RESULT CYCLE173_CABLE_FED_PORT_CONTRACT

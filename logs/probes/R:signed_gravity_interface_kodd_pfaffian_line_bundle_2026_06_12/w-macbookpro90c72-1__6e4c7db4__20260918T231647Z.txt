@@ -1,0 +1,39 @@
+MEASURE: gate theta=pi size=20x30 profile=step
+MEASURE: O-real residuals O2=0.000e+00 O_anticomm=0.000e+00 B_imag=6.589e-18 B_asym=0.000e+00
+MEASURE: interface localization rows=[13, 14, 15, 16] min_top4_weight=0.981816969333 peak_rows=[14, 15, 15, 14] pair_res=1.943e-16
+PASS: O^2 residual :: 0.000e+00
+PASS: O anticommutes with K_odd :: 0.000e+00
+PASS: O-real B imaginary residual :: 6.589e-18
+PASS: O-real B antisymmetry residual :: 0.000e+00
+PASS: top |K_odd| states are interface-localized :: min_top4_weight=0.981816969333
+PASS: K_odd spectrum has +/- pairing :: 1.943e-16
+MEASURE: line 20x30:step:rel0.05 theta_count=63 rank_changes=[0.050000->36] gap_rel_above_min=0.151986776508 gap_rel_tol=0.05 gap_rel_below_max=0.0171563748597 gap_ratio_min=8.85891 raw_svd_orientation_flips=34 transport_events=0 sign_changes=[] min_overlap_sv=0.999999981849 min_support_abs_eig=0.000379536904315 min_support_theta=0.05 max_support_abs_eig=0.153060830405
+PASS: 20x30:step:rel0.05 relative tol lies inside measured gap :: above_min=0.151987 tol=0.05 below_max=0.0171564
+PASS: 20x30:step:rel0.05 rank is constant on grid :: changes=[0.050000->36]
+PASS: 20x30:step:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 20x30:step:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 20x30:step:rel0.05 support spectrum stays away from zero :: min_abs_eig=0.000379537 at theta=0.05
+MEASURE: line 28x44:step:rel0.05 theta_count=63 rank_changes=[0.050000->52] gap_rel_above_min=0.106880650901 gap_rel_tol=0.05 gap_rel_below_max=0.0171565154639 gap_ratio_min=6.22974 raw_svd_orientation_flips=41 transport_events=0 sign_changes=[] min_overlap_sv=0.99999999015 min_support_abs_eig=0.00019064288515 min_support_theta=0.05 max_support_abs_eig=0.110657816789
+PASS: 28x44:step:rel0.05 relative tol lies inside measured gap :: above_min=0.106881 tol=0.05 below_max=0.0171565
+PASS: 28x44:step:rel0.05 rank is constant on grid :: changes=[0.050000->52]
+PASS: 28x44:step:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 28x44:step:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 28x44:step:rel0.05 support spectrum stays away from zero :: min_abs_eig=0.000190643 at theta=0.05
+MEASURE: line 20x30:smooth:rel0.05 theta_count=63 rank_changes=[0.050000->96] gap_rel_above_min=0.0518695190328 gap_rel_tol=0.05 gap_rel_below_max=0.0479502111248 gap_ratio_min=1.08382 raw_svd_orientation_flips=26 transport_events=0 sign_changes=[] min_overlap_sv=0.999984365884 min_support_abs_eig=6.32107821065e-05 min_support_theta=0.05 max_support_abs_eig=0.0755620825626
+PASS: 20x30:smooth:rel0.05 relative tol lies inside measured gap :: above_min=0.0518695 tol=0.05 below_max=0.0479502
+PASS: 20x30:smooth:rel0.05 rank is constant on grid :: changes=[0.050000->96]
+PASS: 20x30:smooth:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 20x30:smooth:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 20x30:smooth:rel0.05 support spectrum stays away from zero :: min_abs_eig=6.32108e-05 at theta=0.05
+MEASURE: line 28x44:smooth:rel0.05 theta_count=63 rank_changes=[0.050000->144] gap_rel_above_min=0.0513005797941 gap_rel_tol=0.05 gap_rel_below_max=0.0414476259237 gap_ratio_min=1.2397 raw_svd_orientation_flips=30 transport_events=0 sign_changes=[] min_overlap_sv=0.999992390839 min_support_abs_eig=4.49267256432e-05 min_support_theta=0.05 max_support_abs_eig=0.0542697333235
+PASS: 28x44:smooth:rel0.05 relative tol lies inside measured gap :: above_min=0.0513006 tol=0.05 below_max=0.0414476
+PASS: 28x44:smooth:rel0.05 rank is constant on grid :: changes=[0.050000->144]
+PASS: 28x44:smooth:rel0.05 alignment has no orientation-transport event :: events=[]
+PASS: 28x44:smooth:rel0.05 transported Pf sign has no flip :: sign_changes=[]
+PASS: 28x44:smooth:rel0.05 support spectrum stays away from zero :: min_abs_eig=4.49267e-05 at theta=0.05
+MEASURE: absolute_tol_trap tol=1.0e-10 sample_ranks=0.3->140, 1->148, 2->156, 3.14159265359->164
+MEASURE: absolute_tol_trap_line rank_changes=[0.050000->128, 0.150000->132, 0.300000->140, 0.450000->148, 1.600000->156, 2.450000->164] refined_rank_crossings=[0.10867963,0.10867963]:128->130, [0.10867999,0.10867999]:130->132, [0.29468394,0.29468395]:132->134, [0.29468395,0.29468396]:134->136, [0.29468396,0.29468396]:136->134, [0.29468396,0.29468397]:134->132, [0.29468397,0.29468397]:132->134, [0.29468457,0.29468457]:134->132, [0.29468458,0.29468458]:132->134, [0.29468459,0.29468460]:134->136, [0.29468694,0.29468694]:136->138, [0.29468805,0.29468805]:138->140, [0.44964808,0.44964809]:140->142, [0.44964961,0.44964962]:142->144, [0.44964965,0.44964966]:144->142, [0.44964980,0.44964981]:142->146, [0.44964981,0.44964982]:146->144, [0.44964982,0.44964982]:144->142, [0.44964982,0.44964983]:142->144, [0.44964985,0.44964986]:144->142, [0.44964991,0.44964992]:142->144, [0.44965095,0.44965096]:144->146, [0.44965237,0.44965238]:146->144, [0.44965238,0.44965239]:144->148, [1.55013314,1.55013314]:148->150, [1.55013315,1.55013316]:150->152, [1.55013316,1.55013316]:152->150, [1.55013685,1.55013685]:150->152, [1.55014123,1.55014123]:152->154, [1.55014213,1.55014213]:154->152, [1.55014315,1.55014315]:152->154, [1.55014328,1.55014329]:154->156, [2.40919016,2.40919017]:156->158, [2.40919437,2.40919438]:158->156, [2.40919438,2.40919439]:156->160, [2.40919878,2.40919879]:160->162, [2.40920109,2.40920110]:162->164 transport_events=0 same-rank_sign_changes=[] min_included_abs_eig=1.00086433966e-10 min_included_theta=0.45
+PASS: absolute 1e-10 reproduces reviewer rank-jump scale :: 0.3->140, 1->148, 2->156, 3.14159265359->164
+PASS: absolute 1e-10 lane has rank-policy crossings :: [0.10867963,0.10867963]:128->130, [0.10867999,0.10867999]:130->132, [0.29468394,0.29468395]:132->134, [0.29468395,0.29468396]:134->136, [0.29468396,0.29468396]:136->134, [0.29468396,0.29468397]:134->132, [0.29468397,0.29468397]:132->134, [0.29468457,0.29468457]:134->132, [0.29468458,0.29468458]:132->134, [0.29468459,0.29468460]:134->136, [0.29468694,0.29468694]:136->138, [0.29468805,0.29468805]:138->140, [0.44964808,0.44964809]:140->142, [0.44964961,0.44964962]:142->144, [0.44964965,0.44964966]:144->142, [0.44964980,0.44964981]:142->146, [0.44964981,0.44964982]:146->144, [0.44964982,0.44964982]:144->142, [0.44964982,0.44964983]:142->144, [0.44964985,0.44964986]:144->142, [0.44964991,0.44964992]:142->144, [0.44965095,0.44965096]:144->146, [0.44965237,0.44965238]:146->144, [0.44965238,0.44965239]:144->148, [1.55013314,1.55013314]:148->150, [1.55013315,1.55013316]:150->152, [1.55013316,1.55013316]:152->150, [1.55013685,1.55013685]:150->152, [1.55014123,1.55014123]:152->154, [1.55014213,1.55014213]:154->152, [1.55014315,1.55014315]:152->154, [1.55014328,1.55014329]:154->156, [2.40919016,2.40919017]:156->158, [2.40919437,2.40919438]:158->156, [2.40919438,2.40919439]:156->160, [2.40919878,2.40919879]:160->162, [2.40920109,2.40920110]:162->164
+PASS: absolute 1e-10 crossings are threshold events not zero modes :: min_included_abs_eig=1.00086e-10
+TOTAL: PASS=29, FAIL=0

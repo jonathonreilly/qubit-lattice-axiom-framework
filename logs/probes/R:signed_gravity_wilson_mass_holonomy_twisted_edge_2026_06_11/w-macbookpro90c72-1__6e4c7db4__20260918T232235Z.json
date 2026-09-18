@@ -1,0 +1,35 @@
+{
+ "task": "R:signed_gravity_wilson_mass_holonomy_twisted_edge_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "signed",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/signed_gravity_wilson_mass_holonomy_twisted_edge_2026_06_11.py",
+ "seed": 73755,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e4c7db4",
+ "started_utc": "20260918T232235Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b2d7f47075cbc2d323bf8b7d6016f5b0188e0bc1ac4ed89df7e15391d734b79",
+ "stdout_tail": " [PASS] [W1] theta = +0.7: chi_bottom = +1 (h_delta = 0, eta = +1)  (eta = +1, n_states = 3)\n  [PASS] [W1] theta = -0.7: chi_bottom = -1 (sign tracks the holonomy)  (eta = -1)\n  [PASS] [W1] theta = pi: eta_delta = 0 on each edge (the symmetric half-twist point) -> label undefined  (eta_bottom = +0, eta_top = +0)\n\n----------------------------------------------------------------------------\n[W2] orientation pairing: the two edges carry opposite labels\n----------------------------------------------------------------------------\n  [PASS] [W2] chi_top = -chi_bottom at every defined theta (orientation pair realized geometrically)  (theta=+0.7: (+1, -1); theta=-0.7: (-1, +1))\n\n----------------------------------------------------------------------------\n[W3] controls: trivial window; size stability\n----------------------------------------------------------------------------\n  [PASS] [W3] trivial window m = +1: the in-gap edge set is EMPTY (no label can be defined; the gapped-window structure is load-bearing)  (in-gap states = 0)\n  [PASS] [W3] size stability: L_x = 20 -> 40 grows the edge tower while the label stays chi = +1 (quantized, not drifting)  (n_states 3 -> 7, eta stays +1)\n  [PASS] [W3] quantization across a fine holonomy sweep: |eta| <= 1 on every defined point (the label is a sign, not a magnitude)\n\n============================================================================\nTOTAL: PASS=13 FAIL=0\n============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T232235Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

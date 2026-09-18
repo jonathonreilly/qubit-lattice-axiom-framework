@@ -1,0 +1,56 @@
+
+===============================================================================
+A - Exact phase bridge and guarded frame contact
+===============================================================================
+FAIL A01 Cycle 129 note exists
+PASS A02 sixteen canonical rows expand to 366 proper-cubic raw rows :: canonical=16 raw=366
+PASS A03 new raw domain is disjoint from Cycle 124
+PASS A04 9,110-row union is single-valued and alphabet-closed
+PASS A05 sixteen generations grow exactly seventeen physical bridge records
+PASS A06 first phase literally consumes the fresh R_B01 head :: (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01'))
+PASS A07 fresh guard sees exactly fixed W1 and T_N0 parents :: (((0, 0, 1), 'W1'), ((1, 0, 0), 'T_N0'))
+PASS A08 JOINT is two-parent GU plus R_C01, never unary GU :: (((0, 1, 0), 'R_C01'), ((1, 0, 0), 'GU'))
+PASS A09 final Y2 literally joins T_N0 head phase to B_0_2 frame :: (((0, 0, 1), 'B_0_2'), ((1, 0, 0), 'T_N0'))
+
+===============================================================================
+B - Post-head factor and exact full-history exhaustion
+===============================================================================
+PASS B01 factor compiler has 30 targets and zero unexpected target :: conditions=30 unexpected=frozenset()
+PASS B02 post-C124 factor is 618 states / 1,653 edges / one 29-write terminal :: states=618 edges=1653 terminals=1 max=4
+PASS B03 full compiler has 131 targets and zero unexpected target :: conditions=131 unexpected=frozenset()
+PASS B04 all full histories reach one complete 130-write terminal :: states=6541456 edges=51107588 terminals=1 max=14 bad=()
+PASS B05 CONTACT never precedes any primary head phase or B_0_2 frame parent :: ()
+PASS B06 complete bridge leaves only the next ordered rail record :: {(-3, 1, 2): frozenset({'R_B21'})}
+
+===============================================================================
+C - Continued renewal, late rail, and proper-cubic covariance
+===============================================================================
+PASS C01 remaining 84 writes through eight slices stay singleton fronts :: ()
+PASS C02 late control reaches 101 complete slices / 1,212 rail records :: []
+PASS C03 all 218,640 proper-cubic raw images preserve output :: []
+PASS C04 every rotated completed history exposes only rotated ninth-slice start :: []
+PASS C05 deleting one launch orientation is detected and blocks the factor :: mismatches=24 terminals=(13,)
+
+===============================================================================
+D - Head absence and two-parent guard controls
+===============================================================================
+PASS D01 removing R_B01 leaves only preallocated guard, not head-descended bridge :: []
+PASS D02 GU alone cannot write JOINT; adding W1+T_N0 guard enables it :: before_joint=None guard=frozenset({'R_C01'}) after_joint=frozenset({'JOINT'})
+PASS D03 head phase without B_0_2 cannot write final frame contact :: None
+PASS D04 unguarded compiler partitions one terminal and two transient aliases :: factor=((3, 2, 5),) full=((3, 2, 5), (3, 3, 4), (5, 2, 3))
+PASS D05 unguarded full graph rejects a JOINT alias at source state zero :: ((0, (3, 3, 4), frozenset({'JOINT'})),)
+
+===============================================================================
+E - Exact scope and constitutional boundary
+===============================================================================
+FAIL E01 note names the exact bounded positive
+FAIL E02 note preserves post-terminal factor separately from full history
+FAIL E03 note carries refreshed N1-N8 discipline
+FAIL E04 note denies recurrence theorem and exact-law selection
+FAIL E05 note makes no axiom addition
+PASS E06 Cycle 129 writes only runner and review note
+
+BRIDGE_CANONICAL=16 BRIDGE_RAW=366 BRIDGE_RECORDS=17 UNION_RAW=9110
+FACTOR_STATES=618 FACTOR_EDGES=1653 FULL_STATES=6541456 FULL_EDGES=51107588
+PASS=25 FAIL=6
+RESULT=FAIL

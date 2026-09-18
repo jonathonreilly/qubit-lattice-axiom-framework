@@ -1,0 +1,31 @@
+{
+ "task": "R:shared_ancestry_dual_context_cycle173_port_contract_check_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "shared",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/shared_ancestry_dual_context_cycle173_port_contract_check_2026_07_16.py",
+ "seed": 73221,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e4c7db4",
+ "started_utc": "20260918T231341Z",
+ "elapsed_s": 90.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3aae49182f5823ac4df83681905bf54d6fe099746804e0c9b925103b1e8c814f",
+ "stdout_tail": "PASS frozen Cycle-173 runner hash 92afd28e4cf8b36b98b90b8cf919e13052716a056c64377396da304cb42acc11\nPASS cable-fed input/root (-241, 0, 0) (-240, 0, 0)\nPASS first-comb path group (11, 28)\nPASS functional nonremovable MARK guards (((-241, 1, 0), 'MARK'), ((-241, -1, 0), 'MARK'))\nPASS guard deletions stall first branch formations [((-240, 1, 0), (-241, 1, 0), 'A_0_2', frozenset()), ((-240, -1, 0), (-241, -1, 0), 'A_0_2', frozenset())]\nRESULT CYCLE173_CABLE_FED_PORT_CONTRACT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231512Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:r_b01_cycle129_bridge_orientation13_interface_cycle130_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "r",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/r_b01_cycle129_bridge_orientation13_interface_cycle130_2026_07_15.py",
+ "seed": 73901,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2348295",
+ "started_utc": "20260918T232501Z",
+ "elapsed_s": 190.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9a0cb6c06038b5ca0beb0ffdab07fe6224b04a153d89b900a2dc85cb8254c847",
+ "stdout_tail": ",)),), (((-1, 0, 0), 'T_H3'), ((0, 0, 1), 'H0'), ((0, 1, 0), 'R_A01'), ((1, 0, 0), 'OZ')))\nPASS C04 rotation 3 would occupy required writer sites D1 and D4\nPASS C05 rotation 7 fails at OZ launch on writer D0 :: ('local-mismatch', 0, 'OZ', ((6, 4, -3),), (((6, 4, -3), (((-1, 0, 0), 'R_B01'),)),), (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01')))\nPASS C06 rotation-7 OZ target sees unary R_B01, not H1 plus R_B01 :: ((((6, 4, -3), (((-1, 0, 0), 'R_B01'),)),), (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01')))\nPASS C07 rotation 11 fails because OZ launch target is occupied R_B00 :: ('occupied', 0, 'OZ', ((5, 4, -2),), (((5, 4, -2), 'R_B00'),))\nPASS C08 rotation-11 TY coincidence would occupy required writer D6\n\n===============================================================================\nD - Bounded interface scope and N1-N8 discipline\n===============================================================================\nFAIL D01 note names exact bounded interface object\nFAIL D02 note carries refreshed N1-N8 discipline\nFAIL D03 note preserves causally forced connector\nFAIL D04 note preserves writer relocation\nFAIL D05 note denies provenance-mechanism and broad writer no-go\nFAIL D06 note makes no axiom addition\nPASS D07 Cycle 130 writes runner and review note only\n\nPLACEMENTS=408 G0_HITS=0 G1_HITS=3 HIT_ROTATIONS=(3, 7, 11)\nPREFIX_FAILURES={3: ('local-mismatch', 1, 'W3', ((6, 3, -3),)), 7: ('local-mismatch', 0, 'OZ', ((6, 4, -3),)), 11: ('occupied', 0, 'OZ', ((5, 4, -2),))}\nPASS=20 FAIL=7\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T232812Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

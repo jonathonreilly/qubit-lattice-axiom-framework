@@ -1,0 +1,31 @@
+{
+ "task": "R:single_clock_baxis_consumer_firewall_check_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/single_clock_baxis_consumer_firewall_check_2026_06_17.py",
+ "seed": 73756,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e4c7db4",
+ "started_utc": "20260918T232236Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "534f3b4888bcafd838764e05fd647c2df02d1a28aa6751d862165c5c635ba216",
+ "stdout_tail": "_2026-05-27.md exists\nPASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md contains required marker -- single-clock codimension-1 evolution theorem which derives, conditional\nPASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md contains required marker -- on B-AXIS, an axis-relative strongly-continuous one-parameter unitary\nPASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md contains required marker -- conditional on B-AXIS supplying the blocked time unit\nPASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md excludes withdrawn/stale marker -- single-clock codimension-1 evolution theorem which derives a\nstrongly-continuous one-parameter unitary group\nPASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md exists\nPASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md contains required marker -- the B-AXIS boundary gives the conditional cap `d_t <= 1`\nPASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md contains required marker -- not derived\n   from RP uniqueness\nPASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md excludes withdrawn/stale marker -- single-clock codimension-1 evolution excludes `d_t > 1`\n\nSUMMARY: PASS=50 FAIL=0\nAUDIT_LEDGER_WRITTEN=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\nB_AXIS_DERIVED=FALSE\nB_AXIS_CONSUMED_AS_PREMISE=TRUE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T232236Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

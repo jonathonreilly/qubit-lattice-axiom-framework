@@ -1,0 +1,32 @@
+{
+ "task": "R:r_b01_orientation13_neighbor_guard_family_cycle128_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "r",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/r_b01_orientation13_neighbor_guard_family_cycle128_2026_07_15.py",
+ "seed": 74150,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2348295",
+ "started_utc": "20260918T232910Z",
+ "elapsed_s": 67.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0fc7c876c29c4a621f4266ab111b5d5b6ec8efa2acf06aad6eb3a1dd5eebe2f4",
+ "stdout_tail": "=====================================================\nPASS D01 all five alternate D2 neighbour coordinates are open :: ((4, 2, -3), (5, 2, -4), (5, 2, -2), (5, 3, -3), (6, 2, -3))\nPASS D02 exactly three are independently source-supported and two empty :: {(4, 2, -3): (((0, -1, 0), 'L6'), ((0, 0, 1), 'T_H3')), (5, 2, -4): (), (5, 2, -2): (((-1, 0, 0), 'T_H3'), ((0, 0, 1), 'H1'), ((0, 1, 0), 'H1')), (5, 3, -3): (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01')), (6, 2, -3): ()}\nPASS D03 no alternate D2 neighbour can directly gate G0\nPASS D04 G0-first preserves the unary G1/D2 alias for all 153 roles\nPASS D05 independent source support does not force gate-before-G0 order\n\n===============================================================================\nE - Bounded scope and N1-N8 discipline\n===============================================================================\nFAIL E01 note names the exact bounded object\nFAIL E02 note carries refreshed N1-N8 discipline\nFAIL E03 note preserves relocated and nonlocal cages\nFAIL E04 note preserves orientation-20 redesign\nFAIL E05 note names causally forced multi-parent guard as preferred\nFAIL E06 note preserves separately executable guarded-renewal detour\nFAIL E07 note denies broad writer and axiom conclusions\nPASS E08 Cycle 128 writes runner and review note only\n\nP_HISTORY_TARGETS=36 P_PRIOR_COLLISIONS=3 ALL_ROLES=153\nUNUSED_ROLE_PAIRS=306 STATIC_SURVIVORS=304 MIN_UNEXPECTED=9\nREP_GRAPH=701/1330 TERMINALS=0 D2_SUPPORTED=3\nPASS=25 FAIL=8\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233018Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

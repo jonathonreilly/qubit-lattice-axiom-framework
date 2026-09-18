@@ -1,0 +1,59 @@
+
+===============================================================================
+A - Fixed orientation-13 neighbouring-parent geometry
+===============================================================================
+FAIL A01 Cycle 128 review note exists
+PASS A02 fixed G1 has exactly five alternate nearest neighbours :: ((6, 0, -3), (6, 1, -4), (6, 1, -2), (6, 2, -3), (7, 1, -3))
+PASS A03 only P=(6,0,-3) has Cycle-124 source support :: {(6, 0, -3): (((-1, 0, 0), 'L6'),), (6, 1, -4): (), (6, 1, -2): (), (6, 2, -3): (), (7, 1, -3): ()}
+PASS A04 P has exactly the canonical unary-L6 local :: (((-1, 0, 0), 'L6'),)
+PASS A05 unary-L6 proper-cubic row has 31 terminal targets
+PASS A06 G0 L6+L6 anchor has five terminal targets
+
+===============================================================================
+B - Full-history unary-L6 incompatibility
+===============================================================================
+PASS B01 subset-complete history scan finds 36 unary-L6 targets :: ((-2, -4, -3), (-2, -2, -5), (-1, -4, -4), (-1, -4, -2), (-1, -3, -5), (-1, -1, -5), (0, -6, -3), (0, -5, -4), (0, -5, -2), (0, -3, -6), (0, -2, -7), (0, -1, -6), (1, -5, -1), (1, -4, 0), (1, 0, -6), (1, 1, -5), (2, -6, -1), (2, -4, 1), (2, 0, -7), (2, 2, -5), (3, -5, -1), (3, -4, 0), (3, 0, -6), (3, 1, -5), (4, -3, 0), (4, -2, 1), (4, -1, 0), (4, 1, -4), (4, 1, -2), (4, 2, -3), (5, -3, -1), (5, -1, -1), (5, 0, -4), (5, 0, -2), (6, -2, -1), (6, 0, -3))
+PASS B02 exact source state already exposes three incompatible outputs :: (((4, -1, 0), 'OPEN_B'), ((4, 1, -2), 'R_B00'), ((5, -1, -1), 'H0'))
+PASS B03 the three historical targets require three distinct contents :: ['H0', 'OPEN_B', 'R_B00']
+PASS B04 all 153 output roles fail at least two historical targets
+PASS B05 the obstruction is output-label independent
+
+===============================================================================
+C - Terminal-only role-pair and asynchronous controls
+===============================================================================
+PASS C01 exactly 18 unused onsite roles give 306 ordered distinct pairs :: ('B_0_2', 'B_1_2', 'R_C01', 'R_C02', 'R_C10', 'R_C11', 'R_C12', 'R_C13', 'R_C20', 'R_C21', 'R_C22', 'R_C23', 'R_C30', 'R_C32', 'R_C33', 'R_C40', 'R_C41', 'R_LB')
+PASS C02 304 terminal-only pairs survive local single-value screening
+PASS C03 every terminal-only survivor has at least nine unexpected targets
+PASS C04 deterministic representative is B_0_2/B_1_2 :: ('B_0_2', 'B_1_2')
+PASS C05 representative has 45 outputs, 55 conditions, nine unexpected :: ((-1, -5, -4), (-1, -5, -2), (-1, -3, -6), (-1, -1, -6), (1, -5, 0), (1, 1, -6), (3, -5, 0), (3, 1, -6), (5, 1, -4))
+PASS C06 representative exact graph is 701 states / 1330 edges
+PASS C07 representative has no terminal and reaches 36 proposed sites
+PASS C08 representative first bad transition is the remote H1 shell :: ((160, (-1, -5, -2), frozenset({'H1'})),)
+PASS C09 all nine unexpected condition targets are reported :: ((-1, -5, -4), (-1, -5, -2), (-1, -3, -6), (-1, -1, -6), (1, -5, 0), (1, 1, -6), (3, -5, 0), (3, 1, -6), (5, 1, -4))
+
+===============================================================================
+D - Single D2-side gate is not causally prior
+===============================================================================
+PASS D01 all five alternate D2 neighbour coordinates are open :: ((4, 2, -3), (5, 2, -4), (5, 2, -2), (5, 3, -3), (6, 2, -3))
+PASS D02 exactly three are independently source-supported and two empty :: {(4, 2, -3): (((0, -1, 0), 'L6'), ((0, 0, 1), 'T_H3')), (5, 2, -4): (), (5, 2, -2): (((-1, 0, 0), 'T_H3'), ((0, 0, 1), 'H1'), ((0, 1, 0), 'H1')), (5, 3, -3): (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01')), (6, 2, -3): ()}
+PASS D03 no alternate D2 neighbour can directly gate G0
+PASS D04 G0-first preserves the unary G1/D2 alias for all 153 roles
+PASS D05 independent source support does not force gate-before-G0 order
+
+===============================================================================
+E - Bounded scope and N1-N8 discipline
+===============================================================================
+FAIL E01 note names the exact bounded object
+FAIL E02 note carries refreshed N1-N8 discipline
+FAIL E03 note preserves relocated and nonlocal cages
+FAIL E04 note preserves orientation-20 redesign
+FAIL E05 note names causally forced multi-parent guard as preferred
+FAIL E06 note preserves separately executable guarded-renewal detour
+FAIL E07 note denies broad writer and axiom conclusions
+PASS E08 Cycle 128 writes runner and review note only
+
+P_HISTORY_TARGETS=36 P_PRIOR_COLLISIONS=3 ALL_ROLES=153
+UNUSED_ROLE_PAIRS=306 STATIC_SURVIVORS=304 MIN_UNEXPECTED=9
+REP_GRAPH=701/1330 TERMINALS=0 D2_SUPPORTED=3
+PASS=25 FAIL=8
+RESULT=FAIL

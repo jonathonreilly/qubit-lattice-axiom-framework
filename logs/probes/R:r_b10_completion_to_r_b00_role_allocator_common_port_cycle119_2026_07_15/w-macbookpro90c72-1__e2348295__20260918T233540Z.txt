@@ -1,0 +1,57 @@
+
+===============================================================================
+A - Exact guard, allocator, and R_B00 port
+===============================================================================
+FAIL A01 Cycle 119 note exists
+PASS A02 adapter is three canonical / 72 proper-cubic raw rows :: canonical=3 raw=72
+PASS A03 adapter raw domain is disjoint from Cycle 117
+PASS A04 complete 8,384-row union is single-valued and alphabet-closed
+PASS A05 extension adds zero supplied records to the exact 264 boundary
+PASS A06 guard sees exactly L10, T_H0, and T_H2 :: (((-1, 0, 0), 'L10'), ((0, 0, 1), 'T_H0'), ((0, 1, 0), 'T_H2'))
+PASS A07 allocator sees exactly S8, L7, GY, and the fresh H0 guard :: (((0, -1, 0), 'S8'), ((0, 0, -1), 'L7'), ((0, 0, 1), 'GY'), ((0, 1, 0), 'H0'))
+PASS A08 R_B00 port sees R_A00, R_B10 completion, and L6 :: (((-1, 0, 0), 'R_A00'), ((0, -1, 0), 'R_B10'), ((0, 0, -1), 'L6'))
+
+===============================================================================
+B - Full-history graph and exact prerequisite order
+===============================================================================
+PASS B01 variable corpus is 82 inherited plus three adapter writes
+PASS B02 every compiled local subset has zero unexpected target :: frozenset()
+PASS B03 all schedules reach one complete 85-write terminal :: states=228296 edges=1477702 terminals=1 max=12
+PASS B04 allocator never precedes guard; port never precedes full R_B10 completion :: ()
+PASS B05 inherited Cycle-112 completion barrier remains exact :: ()
+PASS B06 terminal contains guard, fresh R_A00, and fresh R_B00 port
+PASS B07 completed adapter leaves only the repaired-rail frontier :: {(-2, 1, 1): frozenset({'R_C02'})}
+
+===============================================================================
+C - 96-prefix product, late rail, and covariance
+===============================================================================
+PASS C01 all 96 rail appends remain exact singleton fronts :: ()
+PASS C02 rail-only prefixes expose only the intended preallocated guard :: distance=7 hits=97 targets=[(3, 2, -2)]
+PASS C03 exact locality product is 22,144,712 states / 165,253,510 edges :: states=22144712 edges=165253510
+PASS C04 late control grows 101 complete slices / 1,212 records :: []
+PASS C05 all 201,216 proper-cubic raw images preserve output :: []
+PASS C06 every rotated completed history exposes only rotated next rail :: []
+
+===============================================================================
+D - Wrong-word, VALID/READY, and typed-H0 controls
+===============================================================================
+PASS D01 all corrupt boundaries grow only guard/allocator and stop before R_B00 :: []
+PASS D02 corrupted graph census remains pinned :: [(3240, 12726, (32,)), (2760, 10654, (31,)), (2280, 8582, (30,)), (1560, 5354, (29,)), (360, 954, (22,)), (600, 1870, (22,)), (240, 616, (20,)), (180, 447, (19,)), (120, 278, (18,)), (60, 109, (17,))]
+PASS D03 typed-H0 grows only guard/allocator and never reaches R_B00 :: states=132 edges=379 sizes=(8, 9) bad=() reached=[(3, 1, -2), (3, 2, -2)]
+
+===============================================================================
+E - Scope and no-go-discipline boundary
+===============================================================================
+FAIL E01 note names exact bounded positive
+FAIL E02 note names exact next object
+FAIL E03 note states Cycle 118 contributes zero rows
+FAIL E04 note carries refreshed N1-N8 discipline
+FAIL E05 note denies generic addressability and unbounded recurrence
+FAIL E06 note makes no axiom addition
+PASS E07 Cycle 119 writes only runner and review note
+
+ADAPTER_CANONICAL=3 ADAPTER_RAW=72 UNION_RAW=8384
+GROWN=85 LOCAL_STATES=228296 LOCAL_EDGES=1477702
+PRODUCT_STATES=22144712 PRODUCT_EDGES=165253510
+PASS=24 FAIL=7
+RESULT=FAIL

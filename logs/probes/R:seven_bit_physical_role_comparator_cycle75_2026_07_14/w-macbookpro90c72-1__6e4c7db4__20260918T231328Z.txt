@@ -1,0 +1,79 @@
+
+===============================================================================
+A - Exact selected-compiler role inventory and information bound
+===============================================================================
+PASS A01 selected union has 147 canonical rows
+PASS A02 exact output inventory has 62 roles :: ['ALL', 'AUXY', 'AUXZ', 'B0', 'B1', 'BTG', 'BTP', 'BTQ', 'B_0_2', 'COMP6', 'C_Q', 'D0', 'D1', 'DONE', 'E', 'F', 'FP', 'H0', 'H1', 'I1', 'I2', 'J6', 'L1', 'L10', 'L11', 'L12', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9', 'MARK', 'OPEN_B', 'OPEN_C', 'OY', 'OZ', 'P0', 'P1', 'P2', 'P3', 'PAIR', 'R1', 'R2', 'S7', 'S8', 'START', 'TJ', 'TY', 'TZ', 'U', 'W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'X_B', 'Z_A', 'Z_C']
+PASS A03 output inventory digest is pinned
+PASS A04 output-only lower bound is six bits
+PASS A05 every output is also consumed as an input
+PASS A06 active exact-law alphabet has 69 roles :: ['ALL', 'ARM', 'AUXY', 'AUXZ', 'A_0_2', 'B0', 'B1', 'BTG', 'BTP', 'BTQ', 'B_0_2', 'B_1_2', 'COMP6', 'COMPLETE', 'C_Q', 'D0', 'D1', 'DONE', 'E', 'F', 'FP', 'H0', 'H1', 'I1', 'I2', 'J6', 'JOIN', 'L1', 'L10', 'L11', 'L12', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9', 'MARK', 'OPEN_B', 'OPEN_C', 'OY', 'OZ', 'P0', 'P1', 'P2', 'P3', 'PAIR', 'R1', 'R2', 'RING', 'S7', 'S8', 'START', 'TJ', 'TY', 'TZ', 'U', 'W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'X_B', 'Z0', 'Z_A', 'Z_C']
+PASS A07 active alphabet digest is pinned
+PASS A08 seven exact input-only roles close the 62-to-69 gap
+PASS A09 six bits cannot injectively replace the active alphabet
+PASS A10 concrete source has 66 contents and pinned digest
+PASS A11 fourteen source-only contents are exact
+PASS A12 full bounded replacement inventory has 83 roles
+PASS A13 full replacement inventory digest is pinned
+PASS A14 seven bits are also sufficient and necessary for all 83
+PASS A15 union row arities are exact
+
+===============================================================================
+B - Injective seven-bit words and seed-relative physical geometry
+===============================================================================
+PASS B01 all 83 roles have distinct seven-bit words
+PASS B02 exact capacity leaves 45 reserved words
+PASS B03 assigned and reserved words partition all 128
+PASS B04 diagnostic inverse is exact
+PASS B05 candidate/reference/certificate spines each contain seven sites
+PASS B06 each spine is nearest-neighbour connected
+PASS B07 each certificate site touches its two bits and two cage rails
+PASS B08 every comparator harness has exactly 34 supplied records
+PASS B09 supplied harness contains only physical H0/H1
+PASS B10 fixed cage has trivial proper-cubic stabilizer
+
+===============================================================================
+C - Naive collision rejected and five/six-neighbour repair
+===============================================================================
+PASS C01 one-rail 0/1 mismatch collides with Cycle-58
+PASS C02 naive collision would append parasitic H0
+PASS C03 naive collision affects exactly 8,128 ordered pairs
+PASS C04 repaired comparator has three canonical rows
+PASS C05 equality rows have five neighbours and MATCH has six
+PASS C06 repaired proper-cubic table has 56 raw rows
+PASS C07 every repaired raw row writes physical H1
+PASS C08 repaired input and output alphabet is only H0/H1
+PASS C09 repaired raw domain is disjoint from Cycle-58
+PASS C10 repaired raw domain is disjoint from selected extensional union
+PASS C11 Cycle-58 and selected extensional domains are disjoint
+PASS C12 full provisional union has 3,394 raw rows
+PASS C13 full provisional union is output-single-valued
+
+===============================================================================
+D - Collision-complete all-pairs physical comparison
+===============================================================================
+PASS D01 first-difference census is exact :: Counter({0: 8192, 1: 4096, 2: 2048, 3: 1024, 4: 512, 5: 256, 7: 128, 6: 128})
+PASS D02 all 32,768 reachable states have exact frontier :: []
+PASS D03 all-pairs graph has 16,384 append edges :: 16384
+PASS D04 every ordered pair has exactly one terminal
+PASS D05 exactly 128 equal pairs reach physical MATCH
+PASS D06 no unequal pair reaches MATCH
+PASS D07 no state exposes more than one comparator write
+PASS D08 mismatch terminal retains exactly the common-prefix certificates
+
+===============================================================================
+E - Proper-cubic covariance and exact remaining obligations
+===============================================================================
+PASS E01 all 120 transformed sample states have exact transformed frontier :: []
+PASS E02 note exists
+PASS E03 note states authority none
+PASS E04 note names supplied-harness residual
+PASS E05 note names multiword rule-port residual
+PASS E06 note names output construction residual
+PASS E07 note does not claim the harness is seed-grown
+PASS E08 note denies symbolic role input to the comparator
+PASS E09 note denies constitutional consequence
+
+OUTPUT_ROLES=62 ACTIVE_ROLES=69 FULL_ROLES=83 BITS=7 RESERVED=45
+COMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 ALL_PAIR_STATES=32768 ALL_PAIR_EDGES=16384
+SUMMARY: 55 PASS / 0 FAIL

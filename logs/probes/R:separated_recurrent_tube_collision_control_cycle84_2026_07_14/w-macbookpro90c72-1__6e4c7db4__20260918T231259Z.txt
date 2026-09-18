@@ -1,0 +1,46 @@
+PASS A01 Cycle-80 recurrent table remains 51 rows
+PASS A02 two independent transverse offsets are declared
+PASS B (0, 6, 0)/h3 supports are disjoint at strict-NN distance two
+PASS B (0, 6, 0)/h3 condition set is the disjoint union :: (144, 72, 72)
+PASS B (0, 6, 0)/h3 reachable graph is the exact Cartesian product :: (2704, 2704)
+PASS B (0, 6, 0)/h3 append-edge count factorizes :: (5408, 52, 52)
+PASS B (0, 6, 0)/h3 exposes exactly the two next seeds :: [((4, 1, 1), 'R_B11'), ((4, 7, 1), 'R_B11')]
+PASS B (0, 6, 0)/h3 has no conflict or hidden dead terminal :: (frozenset(), ())
+PASS B (0, 6, 0)/h6 supports are disjoint at strict-NN distance two
+PASS B (0, 6, 0)/h6 condition set is the disjoint union :: (338, 169, 169)
+PASS B (0, 6, 0)/h6 reachable graph is the exact Cartesian product :: (10609, 10609)
+PASS B (0, 6, 0)/h6 append-edge count factorizes :: (21218, 103, 103)
+PASS B (0, 6, 0)/h6 exposes exactly the two next seeds :: [((7, 1, 1), 'R_B11'), ((7, 7, 1), 'R_B11')]
+PASS B (0, 6, 0)/h6 has no conflict or hidden dead terminal :: (frozenset(), ())
+PASS B (0, 6, 0)/h9 supports are disjoint at strict-NN distance two
+PASS B (0, 6, 0)/h9 condition set is the disjoint union :: (532, 266, 266)
+PASS B (0, 6, 0)/h9 reachable graph is the exact Cartesian product :: (23716, 23716)
+PASS B (0, 6, 0)/h9 append-edge count factorizes :: (47432, 154, 154)
+PASS B (0, 6, 0)/h9 exposes exactly the two next seeds :: [((10, 1, 1), 'R_B11'), ((10, 7, 1), 'R_B11')]
+PASS B (0, 6, 0)/h9 has no conflict or hidden dead terminal :: (frozenset(), ())
+PASS B (0, 0, 5)/h3 supports are disjoint at strict-NN distance two
+PASS B (0, 0, 5)/h3 condition set is the disjoint union :: (144, 72, 72)
+PASS B (0, 0, 5)/h3 reachable graph is the exact Cartesian product :: (2704, 2704)
+PASS B (0, 0, 5)/h3 append-edge count factorizes :: (5408, 52, 52)
+PASS B (0, 0, 5)/h3 exposes exactly the two next seeds :: [((4, 1, 1), 'R_B11'), ((4, 1, 6), 'R_B11')]
+PASS B (0, 0, 5)/h3 has no conflict or hidden dead terminal :: (frozenset(), ())
+PASS B (0, 0, 5)/h6 supports are disjoint at strict-NN distance two
+PASS B (0, 0, 5)/h6 condition set is the disjoint union :: (338, 169, 169)
+PASS B (0, 0, 5)/h6 reachable graph is the exact Cartesian product :: (10609, 10609)
+PASS B (0, 0, 5)/h6 append-edge count factorizes :: (21218, 103, 103)
+PASS B (0, 0, 5)/h6 exposes exactly the two next seeds :: [((7, 1, 1), 'R_B11'), ((7, 1, 6), 'R_B11')]
+PASS B (0, 0, 5)/h6 has no conflict or hidden dead terminal :: (frozenset(), ())
+PASS B (0, 0, 5)/h9 supports are disjoint at strict-NN distance two
+PASS B (0, 0, 5)/h9 condition set is the disjoint union :: (532, 266, 266)
+PASS B (0, 0, 5)/h9 reachable graph is the exact Cartesian product :: (23716, 23716)
+PASS B (0, 0, 5)/h9 append-edge count factorizes :: (47432, 154, 154)
+PASS B (0, 0, 5)/h9 exposes exactly the two next seeds :: [((10, 1, 1), 'R_B11'), ((10, 1, 6), 'R_B11')]
+PASS B (0, 0, 5)/h9 has no conflict or hidden dead terminal :: (frozenset(), ())
+PASS C01 all 24 proper-cubic images preserve the product graph :: []
+FAIL D01 note exists and carries no authority
+FAIL D02 note identifies a positive separation control
+FAIL D03 note does not claim adjacent collision resolution
+FAIL D04 note denies an axiom consequence
+
+OFFSETS=2 HORIZONS=3 ROTATIONS=24
+SUMMARY: 39 PASS / 4 FAIL

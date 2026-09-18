@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_full_fock_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_full_fock_independent_check_2026_07_28.py",
+ "seed": 58245,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190405Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4bd943a487cab0a5db66ac4d83229a6b8fde4dfebf823d1944d284a10ac6d2ba",
+ "stdout_tail": "PASS actual bounded primary conventions :: {'N_MAX': 2, 'AUDIT_TIMEOUT_SEC': 30, 'NOTE_PATH': 'docs/FULL_FOCK_UNIT_WEIGHT_SOURCE_SUPPORT_NOTE_2026-07-28.md'}\nPASS independent occupied-list CAR signs and binomial channels :: [0, 6, 24]\nPASS all-entry signed-star versus actual dense exponential :: 1.1102230246251565e-16\nPASS all-entry cross-sector zero and exact generator number law :: 0.0\nPASS per-channel probabilities and unit-weight recoil :: {1: (0.1258992161287137, 0.12589921612871374), 2: (0.1204261679086943, 0.12042616790869433)}\nPASS six one-carrier link rows and supplied angle anchor :: {'maximum_residual': 0.0, 'probability': 0.12589921612871374}\nPASS actual mis-embedding rejected by unchanged number predicate :: {'clean': 0.0, 'changed': 1.4142135623730951}\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

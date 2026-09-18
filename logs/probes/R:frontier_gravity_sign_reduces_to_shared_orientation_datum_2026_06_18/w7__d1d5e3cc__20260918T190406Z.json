@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gravity_sign_reduces_to_shared_orientation_datum_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gravity_sign_reduces_to_shared_orientation_datum_2026_06_18.py",
+ "seed": 58246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190406Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "27fd1232a7003dfc95848894505c40fc6b419fefab896738fec23dc90a356eef",
+ "stdout_tail": "s sign-symmetric (orbit pair, not a selector) ==\n[PASS] Brannen-phase Vandermonde is K-odd: Delta(+delta) = -Delta(-delta) (K acts as delta->-delta, SWAPPING the two orientation branches) :: Delta(+d)=+0.04674385, Delta(-d)=-0.04674385\n[PASS] reproduces the landed magnitude |Delta| = 0.04674385 (SCALAR_I runner) :: |Delta| = 0.04674385\n[PASS] symmetrization (rho+rho_K)/2 is K-real for K^2=+1 (K is an involution on the Z2, cannot select a branch) :: ||K sym - sym|| = 0.00e+00\n[PASS] symmetrization (rho+rho_K)/2 is K-real for K^2=-1 (K is an involution on the Z2, cannot select a branch) :: ||K sym - sym|| = 0.00e+00\n\n== B5: parity grading Gamma5 H Gamma5 = -H => eta = 0 (label undefined) ==\n[PASS] Gamma5 H Gamma5 = -H (canonical parity grading is parity-odd)\n[PASS] => spectrum is +/- symmetric => eta = sum sign(eigs) = 0 (the branch label is NEVER DEFINED in the canonical grading) :: eta = 0.0, eigs = [-1.8641 -0.8787  0.8787  1.8641]\n\n== B6: color 3-vs-3bar = the SU(3)^3 cubic anomaly, a DIFFERENT carrier ==\n[PASS] SU(3)^3 cubic anomaly is nonzero (3 is a genuinely complex rep, 3 != 3bar) :: ||D_3||^2 = 3.3333\n[PASS] A(3bar) = -A(3): the color 3-vs-3bar grading is the anomaly SIGN flip (D_3bar = -D_3, exact) :: <D_3bar,D_3>/<D_3,D_3> = -1.000000\n[PASS] color carrier = 8 internal su(3) generators on a 3-dim internal space, space-decoupled from the Cl(3,1) e_4 / spatial volume element (=> at most 2 of 3 Z2's share the e_4 datum; color is separate)\n\n==== 16 passed, 0 failed ====\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

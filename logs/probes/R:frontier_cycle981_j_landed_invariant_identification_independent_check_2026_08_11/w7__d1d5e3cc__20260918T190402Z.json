@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.py",
+ "seed": 58242,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190402Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bbc3be94993eb62d42fd81aae8f8f69615248b0455e7cf17a790230118611531",
+ "stdout_tail": "CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION_INDEPENDENT_CHECK\nR0_PRIMARY_AST_TEXT_AND_PINS PASS :: reads=4<=9; sha_pins=True; primary_executed=false\nR1_INDEPENDENT_SHARED_INPUTS PASS :: witnesses=21; orbit_table=[{\"J\":1,\"class\":\"CNOT\",\"control_arity\":1,\"member_count\":6,\"off_diagonal_control_gram_sum\":0},{\"J\":2,\"class\":\"TOF_PERPENDICULAR_CONTROLS\",\"control_arity\":2,\"member_count\":12,\"off_diagonal_control_gram_sum\":0},{\"J\":0,\"class\":\"TOF_OPPOSITE_CONTROLS\",\"control_arity\":2,\"member_count\":3,\"off_diagonal_control_gram_sum\":-1}]; rotations=24; J_invariant=True\nR2_CANDIDATE_OUTCOMES PASS :: outcomes={\"COINCIDES\":0,\"DISAGREES\":2,\"NOT_COMPARABLE\":9}; verdict=NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN\nR3_RECEIPT_CACHE_NOTE_BINDING PASS :: bound=True\nR4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=13/13\nR5_CONTROLS PASS :: determinism=True; runtime_s=0.015<300; stdout_bytes=928<6000<150000\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190402Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

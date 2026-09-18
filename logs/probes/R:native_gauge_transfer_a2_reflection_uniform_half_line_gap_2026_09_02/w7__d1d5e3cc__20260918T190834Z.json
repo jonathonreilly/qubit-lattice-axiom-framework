@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_a2_reflection_uniform_half_line_gap_2026_09_02.py",
+ "seed": 58514,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190834Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "45027a84c76b6ddabbc923be7470ed4d4e35d4d98dcad0787a53b906a4b1509f",
+ "stdout_tail": "39460490079, K_W=18.151461040286\n  [PASS] [THEOREM] rho shift fixes dimension and Casimir exactly\n         tested weights; failures=[]\n  [PASS] [THEOREM] mutation: square-lattice covariance is rejected\n         square covariance=[[1/2, 0], [0, 1/2]]\n\nC. independent Wilson-coefficient comparison\n  [PASS] [SUPPORT] reflection coefficients match independent Bessel determinants\n         10 samples; max scaled error=5.396e-16\n  [PASS] [SUPPORT] mutation: fixed Taylor cutoff fails as beta grows\n         beta=12, N=12 relative error=1.060e-01\n  [PASS] [SUPPORT] finite control at beta=2 is entrywise positive with a strict top gap\n         lambda1/lambda0=0.392271233008\n  [PASS] [SUPPORT] finite control at beta=6 is entrywise positive with a strict top gap\n         lambda1/lambda0=0.254279729696\n\nD. common-space and scope typing\n  [PASS] [THEOREM] cell embedding U_beta e_p=h^-1 1_Cp is isometric\n  [PASS] [THEOREM] diffusive generator is L=(dxx-dxy+dyy)/3\n         second-order matrix=[[1/3, -1/6], [-1/6, 1/3]]\n  [PASS] [THEOREM] V=H exp(-Q) is integrable by the radial Gaussian bound\n         Q-3(x+y)^2/4=(x-y)^2/4\n  [PASS] [THEOREM] the proof-side large-beta threshold and multiplier constant are explicit\n         beta0=1.280000e+02, K_W=1.815146e+01\n  [PASS] [THEOREM] normalization firewall separates the native packet from physical convolution\n         for lambda=(1,0), c_lambda/c_0 is three times c_lambda/(d_lambda c_0)\n\nBREAKDOWN: THEOREM_PASS=21 SUPPORT_PASS=4\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190836Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

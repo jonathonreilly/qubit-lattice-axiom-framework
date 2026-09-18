@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
+ "seed": 58246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190406Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "78011b3564fd5bc3432241cfa83daca89340036c37a1f554820e8c7127e34b8a",
+ "stdout_tail": "rces the homomorphic coefficient c=0\nPASS D5d the forced (c=0) functional evaluates to 0 on generic sector data\nPASS D6 log-modulus datum survives as finite nonconstant data\nPASS D7 delta=2/9 is included as an ordinary finite grid point\nPASS E1 cos(theta) is K-even, phase-dependent, nonzero, and non-homomorphic\nPASS E2 sum_j cos(theta_j) is K-even, phase-dependent, nonzero, and non-homomorphic\nPASS F1 note contains required phrase: supplied\nPASS F1 note contains required phrase: not derived\nPASS F1 note contains required phrase: source artifact\nPASS F1 note contains required phrase: effective status is pipeline-derived after independent audit ratification and dependency closure\nPASS F1 note contains required phrase: context handle, not a citation-graph dependency\nPASS F2 note excludes forbidden completion phrase: discharges\nPASS F2 note excludes forbidden completion phrase: retires\nPASS F2 note excludes forbidden completion phrase: closes the admission\nPASS F2 note excludes forbidden completion phrase: retained bridge\nPASS F2 note excludes forbidden completion phrase: this note is that bridge\nPASS F2 note excludes forbidden completion phrase: status certificate\nPASS F2 note excludes forbidden completion phrase: audit_required_before_effective_retained\nPASS F2 note excludes forbidden completion phrase: bare_retained_allowed\nPASS F3 only markdown doc-note citation target is MINIMAL_AXIOMS_2026-06-29.md -- doc_targets=['MINIMAL_AXIOMS_2026-06-29.md']\nSUMMARY PASS=33 FAIL=0\nDONE\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

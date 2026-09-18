@@ -1,0 +1,8 @@
+per_element: exact22face/17cycle quadratic geometry; all raw matrices in --json
+per_site: actual two omitted source loops, not a diagonal one-link packet
+per_mode: eight trace-orthonormal Lie colors; central projection required
+per_block: exact Haar/Mehler constants and fixed-branch ratio; nonlinear limit imported
+lattice_wide: finite supplied cube only; no thermodynamic or physical coupling selection
+source_sha256: 6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4
+TOTAL: PASS=32 FAIL=0
+Resources: 0.375827s; 64.688 MiB; limits180s/180MiB.

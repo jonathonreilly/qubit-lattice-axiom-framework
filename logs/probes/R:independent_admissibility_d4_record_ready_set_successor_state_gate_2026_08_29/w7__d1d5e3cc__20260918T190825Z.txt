@@ -1,0 +1,5 @@
+PASS A_primary_identity: primary cache matches current primary source
+PASS B_independent_graph_control: independent four-vertex enumeration checks 864 ready appends
+PASS C_local_information_deficit: one fixed reciprocal bit leaves five independent bits and 9216 active compatibility rows
+INDEPENDENT: n=4; ready_appends=864; direct_target_status=occupied.
+TOTAL: PASS=3 FAIL=0

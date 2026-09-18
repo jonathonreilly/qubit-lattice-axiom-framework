@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_kernel_kreal_readout_face_classification_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kcpt_kernel_kreal_readout_face_classification_2026_07_18.py",
+ "seed": 58505,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190825Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=79 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b136ace68000cd0af294bf98d1abf42600b4a8cd586e1fd9171cae50dd1000c",
+ "stdout_tail": "batim fragment present in source AND in the new note\n[B7.Q2] PASS verbatim fragment present in source AND in the new note\n[B7.Q3] PASS verbatim fragment present in source AND in the new note\n[B7.Q4] PASS verbatim fragment present in source AND in the new note\n[B7.Q5] PASS verbatim fragment present in source AND in the new note\n[B7.Q6] PASS verbatim fragment present in source AND in the new note\n[B7.Q7] PASS verbatim fragment present in source AND in the new note\n[B7.Q8] PASS verbatim fragment present in source AND in the new note\n[B7.Q9] PASS verbatim fragment present in source AND in the new note\n[B7.Q10] PASS verbatim fragment present in source AND in the new note\n[B7.Q11] PASS verbatim fragment present in source AND in the new note\n== B8 sharded-ledger existence ==\n[B8.1] PASS ledger shard exists: kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17.json\n[B8.2] PASS ledger shard exists: kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16.json\n[B8.3] PASS ledger shard exists: minimal_axioms.json\n== B9 note hygiene ==\n[B9.1] PASS forbidden route/status strings absent (found: [])\n[B9.2] PASS no bare-decimal literal [0-9].[0-9] in note (match: None)\n[B9.3] PASS link set == exactly the 4 dependencies + 2 artifacts; each dependency exists in docs/\n[B9.4] PASS required strings present (missing: [])\n[B9.5] PASS PRESERVE-VERBATIM math strings present (missing: [])\nTOTAL: PASS=79 FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190833Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

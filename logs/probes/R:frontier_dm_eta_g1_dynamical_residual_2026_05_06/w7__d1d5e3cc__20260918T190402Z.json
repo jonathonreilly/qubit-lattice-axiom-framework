@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_eta_g1_dynamical_residual_2026_05_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_eta_g1_dynamical_residual_2026_05_06.py",
+ "seed": 58242,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190402Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1750f7f342e1622d29fc2eb14a3fd46dbf90271a2b18b6e11af3a45139e90e2b",
+ "stdout_tail": "t  5 (rho_{adj/c} = 2*sum Tr[T^aT^a]/N_c = 8/3): PASS\n  Test  6 (Singlet:Adjoint ratio = 1:8 = dim(adj)): PASS\n  Test  7 (Scalar-trace closure: 6 * 8/3 = 16 = N_sites): PASS\n  Test  8 (Wrong-channel candidates ALL distinct from 8/3): PASS\n  Test  9 (Composition: m_DM = 16 v on canonical surface): PASS\n  Test 10 (Dimension observation: dim(C^8) = dim(adj_3) = 8): PASS\n  Test 11 (Counterfactual Pass: (c) wins 5-way scoring): PASS\n  Test 12 (Status firewall: parent scope unchanged): PASS\n\n  PASS = 12, FAIL = 0\n\nDERIVATION SUMMARY (DYNAMICAL RESIDUAL ROUTE C)\n==============================================================================\n  rho_{adj/c} = dim(adj_3)/N_c = 8/3 emerges as the per-row\n  scalar trace density 2*sum_a Tr[T^aT^a]/N_c on End(C^N_c).\n\n  m_DM = bare_wilson_mass * rho_{adj/c} * v\n       = 6 * 8/3 * v = 16 v  (on canonical surface)\n\n  Counterfactual Pass: 5 dynamical candidates scored, route (c)\n  [per-row scalar trace + Wilson-hop doubling] is the unique tractable\n  route within the cited primitive set. (a) ruled out by\n  obstruction note, (b) is naming, (d) subsumed by (c), (e)\n  gives wrong factor.\n\n  HONEST BOUNDARY: The scalar-trace arithmetic is supported by\n  this runner. The scalar self-energy sum_a T^aT^a = C_F I is\n  singlet-channel, so this runner does not assert an adjoint\n  Fierz projection of the dark mass operator.\n\n  STATUS: bounded_support_theorem on the scalar-trace mechanism\n  for the G1 dynamical step. Downstream status remains audit-owned.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190402Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_local_quench_finite_ladder_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_local_quench_finite_ladder_2026_09_07.py",
+ "seed": 58514,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190834Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cc0c335eb0e27b08aa5ecc8cc4b469dc7f0f5cfc1ada8000d54021b4cbb7e040",
+ "stdout_tail": " many-qubit numerical propagation\", \"supplied_markov_bath_included\": false, \"total_native_storage_qubits\": 48, \"total_rate_bound\": 3, \"trace_upper\": \"221/2240\", \"width\": 1}\nMALFORMED_CONTROLS {\"NaN_JSON\": true, \"NaN_norm\": true, \"bool_order\": true, \"bool_threads\": true, \"bool_time\": true, \"duplicate_JSON_key\": true, \"duplicate_row\": true, \"exceeded_RSS\": true, \"extra_top_status\": true, \"missing_resources\": true, \"missing_row\": true, \"overflow_JSON\": true, \"wrong_hash\": true, \"wrong_norm\": true, \"wrong_scope\": true, \"zero_RSS\": true}\nper_element: explicit CAR matrices and all five whole hopping terms; all32 cut/time echo and drift norms.\nper_site: six chain modes and four omitted-edge distance calculations; no ambient edge-qubit matrix claim.\nper_mode: full64-Fock matrices versus independent6x6 exterior spectral identities over all occupation subsets.\nper_block: four truncations, eight Fourier times, evolved-feedback control and exact rational resource arithmetic.\nlattice_wide: checked and not executed -- no infinite-volume dynamics, full48-qubit numerical evolution or physical bath realization.\nSOURCE_SHA256 2acd42de00726da4c1d3cf39149725fd4d4b059033be3403ba7dd0b9c0d7d17d\nDEPENDENCIES {\"scripts/native_edge_record_quench_orbital_check_2026_09_07.py\": \"8b5070cb511dad23814c7b0de65013dd0306f63919df698999d5bc991416ab56\"}\nRESOURCES {\"resources\": {\"blas_threads\": 1, \"rss_limit_MiB\": 180, \"timeout_seconds\": 180}, \"rss_MiB\": 61.6875, \"seconds\": 0.31108191597741097}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_local_quench_finite_ladder_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

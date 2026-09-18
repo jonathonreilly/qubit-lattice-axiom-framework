@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_gauge_vacuum_three_sample_radical_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_gauge_vacuum_three_sample_radical_2026_06_05.py",
+ "seed": 57238,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T184718Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0afb2271bcb26f8d5c8b9ab873eb7d0971445c39cde2822647765d2aeb3e29dd",
+ "stdout_tail": "\n  [PASS] C1: F_(A,2) = chi_(1,1)(W_A) = 0 exactly (antipodal eigenvalue collapse)\n         exp(-13*pi*i/16) = -exp(3*pi*i/16); fundamental char collapses, chi_(1,1)=chi_(1,0)*chi_(0,1)-1=0\n  [PASS] C2: sign separation c = 16+8\u03a3-8x-8y > 0 and e = 16-8\u03a3-8x+8y < 0 (exact surds)\n         c ~ 1.78599423688817712 > 0,  e ~ -1.17112320979155149 < 0\n  [PASS] C3: lower 2x2 block (rows B,C; cols chi_1,chi_11) is nonsingular\n         det(block) ~ -4.02048256755807723\n\nPart D: scope guard -- the beta=6 PF-seam application is conditional on four bridges\n  [PASS] D1: the narrowed note names all four bridge authorities as the conditional premise set\n         Wilson one-slab kernel / Haar rim-lift / compression / rim-evaluation\n  [PASS] D2: the note marks the beta=6 PF-seam application as NOT load-bearing and conditional\n         the rim-lift bridge is itself audited_conditional; the seam claim is conditional\n  [PASS] D3: the abstract reconstruction consumes NO beta=6 / Wilson coefficient / Haar / Monte-Carlo numeric input\n         abstract sample symbols + pure surds only; the integers are character-identity multipliers\n  [PASS] D4: the load-bearing map is proven over free symbols, hence independent of the four bridges\n         Part A used abstract a,b,c,d,e and abstract Z; no bridge premise entered the proof\n\n==============================================================================\nTOTAL: 21 PASS / 0 FAIL\n==============================================================================\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T184719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

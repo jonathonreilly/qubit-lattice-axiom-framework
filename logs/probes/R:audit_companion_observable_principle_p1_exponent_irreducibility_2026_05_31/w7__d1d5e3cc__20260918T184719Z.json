@@ -1,0 +1,38 @@
+{
+ "task": "R:audit_companion_observable_principle_p1_exponent_irreducibility_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_observable_principle_p1_exponent_irreducibility_2026_05_31.py",
+ "seed": 57239,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T184719Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=17 FAIL=0",
+   "PASS=17, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "016ba4bcedb93d5fd2d98c0a60aa67850e62c9c0480f03c879313fb49cb62c9f",
+ "stdout_tail": "======\nT9: source-note boundary declarations present\n==============================================================================\n  [PASS] source-note boundary declarations present\n         missing: []\n\n==============================================================================\nSCORECARD: PASS=17 FAIL=0\n==============================================================================\n\nA passing run supports ONLY the bounded irreducibility finding: the\ndet-vs-tr FORM is a theorem on the operator-composition axis, while the\nEXPONENT-FIXING step is P1-equivalent under every selector that fixes it\n((Add)/(Loc)/(Pot)), and the one exponent-blind selector (normalized\nBorn gradient) is too weak. It does NOT close P1, does NOT promote any\nrow, and consumes no fitted or observed numerical targets.\nper_element: checked \u2014 exact determinant-versus-trace scalar tests T1-T2 executed; aggregate runner FAIL=0.\nper_site: checked \u2014 independent block perturbations in T4 were differentiated explicitly; aggregate runner FAIL=0.\nper_mode: checked \u2014 the exponent family F_p and normalized-gradient exponent blindness were evaluated in T3/T6; aggregate runner FAIL=0.\nper_block: checked \u2014 block-diagonal factorization and the (Add)/(Loc)/(Pot) equivalence tests ran symbolically; aggregate runner FAIL=0.\nlattice_wide: checked and not executed \u2014 the finite-block theorem supplies no lattice realization; the executed scope/firewall tests bind the conclusion to bounded irreducibility with PASS=17, FAIL=0.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T184720Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

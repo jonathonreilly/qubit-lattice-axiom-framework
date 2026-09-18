@@ -1,0 +1,35 @@
+{
+ "task": "R:p3_vacuum_stability_pressure_test_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "p3",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/p3_vacuum_stability_pressure_test_2026_06_08.py",
+ "seed": 58522,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190842Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f58f6a6cf41e8df36efbdce97762222f7fb4cfda12503e1a6d7e42cc1ea87570",
+ "stdout_tail": " SM running + the 3% systematic. So the stability SIGN rides on an un-closed relation, not a retained theorem.\n       1/sqrt(6)=0.40825; e.g. g_s(M_Pl)~0.5 -> y_t(M_Pl)~0.2041; status=open-gate (not retained)\n[PASS] V4 (verdict): P3 is a genuine BEYOND-SM signature (predicts y_t LOWER than the SM extraction 0.94 -> if tight, stable) but NOT a robust prediction -- the headline binary is unresolved within the framework's own y_t systematic (V2), and conditional on the open-gate Ward identity (V3). Honest framing: 'central-value stable; not robust within the y_t band; a ~0.75sigma beyond-SM signature pending a tighter y_t.'\n       like the rest of the floor, the stability VERDICT is gated on an admitted coupling (y_t) whose band is wider than the margin to the boundary\n\nTOTAL: PASS=4 FAIL=0\nVERDICT: P3 'absolutely stable' is NOT a robust prediction. It hinges on y_t(v)=0.918 < boundary\n~0.93, but the framework's OWN +-3pct systematic band [0.890, 0.946] straddles the\nboundary (0.44 sigma_sys above center; Gaussian-tail diagnostic ~33pct metastable; hard-interval fraction ~28pct),\nand y_t=0.918 itself rests on the open-gate Ward identity y_t(M_Pl)/g_s=1/sqrt6 (not\nretained). It IS a genuine beyond-SM signature (framework y_t < SM y_t), but the headline stable/\nmetastable binary is unresolved within the framework's systematic -- a knife-edge, not a closure.\nHonest reframing: state P3 as a conditional beyond-SM signature pending a tighter (audited) y_t,\nnot as 'absolutely stable'.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190843Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

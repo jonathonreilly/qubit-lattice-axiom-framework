@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_erosion_exact_recurrence_path_product_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_erosion_exact_recurrence_path_product_2026_06_12.py",
+ "seed": 58243,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190403Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=16 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "77526bb12c8d5b6109338704128f4ad584437e8f4f31a67ebfbd3192c713ede2",
+ "stdout_tail": "own pointer-fragment correlator and its own connected correlator, the threshold indicator |c_i| >= 0.5 is evaluated separately per fragment, and every crossing event in the ledger is tagged with the fragment index that crossed.\nper_mode: checked and not executed \u2014 no spectral or normal-mode decomposition is formed anywhere in this runner. The single-branch Kraus operators are diagonal in Z, so the recurrence closes exactly on a fixed Pauli-Z observable set (pointer polarization, per-fragment polarization, and their correlator); there is no diagonalizing mode basis to introduce and none is used.\nper_block: checked \u2014 the outcome tree is resolved in two labelled blocks that are tracked separately on every branch. The phase-1 label records the three pointer-to-fragment broadcast measurements and the phase-2 label records the subsequent 10 pointer-only steps, and the direct and recurrence constructions are required to agree branch by branch on both labels, not merely on aggregate counts.\nlattice_wide: checked and executed only at fixed register size \u2014 R-bar is a genuine whole-register aggregate, summing over all branches the branch weight times the number of fragment sites above threshold. It is bounded evidence: the register is fixed at 4 qubits, the depth at 10 phase-2 steps and the coupling at eps in (0.6, 0.9). No large-register or asymptotic limit is taken, so the absent single-ratio envelope is a checked-table statement and not a proof of nonexistence.\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

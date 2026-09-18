@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_kz_su3_beta6_convention_split_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py",
+ "seed": 58246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190406Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f233134125ac28cb051b58b0480341db34b69fc9f3805e2efed0f5ae257fba0c",
+ "stdout_tail": " each source path: endpoints are matched pairwise, monotonicity is tested on every consecutive pair, and each bracket value comes from the single segment that contains the queried x.\nper_site: checked and not executed -- no lattice configuration is ever built here; the inputs are page-space coordinates of two vector paths in an EPS figure, so no site, link or field variable exists on which a per-site statement could be made.\nper_mode: checked and not executed -- the only quantity carried is the scalar plaquette coordinate u_p read off the figure; there is no operator, spectrum or momentum variable anywhere in this checker, so no mode decomposition is available to resolve.\nper_block: checked -- resolution is by evaluation block in the lambda coordinate: the Wilson beta=6 image at lambda = N^2/beta = 1.5 gives width 0.245195, the plotted lambda = 3.0 block gives width 0.048725, and the mismatch between these two blocks is the pruning.\nlattice_wide: checked and not executed -- nothing is simulated on a lattice at any size; the SU(3) beta=6 bracket is inherited from an external figure, and the named acceptable remedy, a repo-owned beta=6 reproduction, is exactly the work this runner does not do.\n\nSCORECARD: PASS=13 FAIL=0\nVERDICT: W_lift ~= 0.05 is supported by the source figure at plotted lambda=3, but not by the same figure at Wilson beta=6 under the paper's action coefficient. The K-Z external-lift route needs an explicit convention bridge or a repo-owned beta=6 reproduction.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190407Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

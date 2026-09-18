@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_bksf_sign_and_superlattice_marker_census_check_2026_09_02.py",
+ "seed": 57885,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T185805Z",
+ "elapsed_s": 70.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e302395df446cab145e27572d9b1ec5da24edd1f214e20589f64425427e44300",
+ "stdout_tail": "gn classes\nPASS E3 [exact] the finite mutual-sign table over those classes, each loop grown out of reach of any hop window and every exit route checked: +1-1-1; -1+1-1; -1-1+1 -- equals the declared diagonal +1/off-diagonal -1 target\nPASS F1 [exact] census of nonidentity unit-cube-support translation-invariant one-qubit Pauli patterns on Z^3: of 4^8 - 1 patterns, 1011 commute with all translates, 735 have support >= 4; modulo the 48 cubic vertex maps, the six common onsite Clifford relabellings, and pattern exchange, 21 one-pattern (28 at support >= 1) and 423 two-pattern representatives\nPASS F2 [exact] for the 21 one-pattern representatives, each pair (f_X,f_Z) has an explicitly evaluated common zero with three nonzero coordinates over GF(2^k), k <= 2; hence each displayed Laurent ideal is proper\nPASS F3 [exact] declared finite-window calculation, 2x2x2 cell block, margin 3, cluster shape solved for with the operator: over the 21 rules axes with some mobile cluster distribute 0:10 1:5 2:2 3:4, yet 0 have one cluster returned mobile along all three within this window\nPASS F4 [exact] the same declared 2x2x2/margin-3 calculation on all 423 two-pattern representatives returns 0 with a cluster mobile along all three axes within that finite window\nSUMMARY: exact finite BKSF operator/sign checks, a separate finite marker zero-set census, a finite 2D sign table, and a bounded 3D unit-cube-rule census; no framework-law, formation, or infinite-volume conclusion.\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T185915Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

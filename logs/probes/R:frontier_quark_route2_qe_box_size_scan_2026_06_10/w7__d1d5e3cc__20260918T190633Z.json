@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_qe_box_size_scan_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py",
+ "seed": 58393,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190633Z",
+ "elapsed_s": 104.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c94f2bdd2991cda4555e3826bd6ba3f3d9a8756080d2886774654a150dc18647",
+ "stdout_tail": "itive, it only closes one escape route.\n       closes the bulk-limit hatch (both limits miss 15/8); naturality no-go unchanged; pin remains a fixed-box selection gap\n\nTOTAL: PASS=7 FAIL=0\nVERDICT (two-part framing): the box-size scan, anchored exactly to the\nlanded N=15 cache (~1e-13), shows the readout target chain {5/6, 15/8, -2, -8/9} is realized\nONLY at N=15. The shell normalization a_aniso is identical at center and shell (cancels in q_X),\nso q_X is a bare beta ratio; the bare finite-difference beta_E(shell) makes an ISOLATED one-box\ndownward excursion to negative at N=15 while staying positive in the bulk -- so q_E=15/8 is a\nsingle-box numerator coincidence, EPS- and step-robust, with a smooth well-behaved base\nobservable. NO infinite-volume limit recovers 15/8: the fixed-radius (boundary-removal) limit\nruns q_E to ~ -11, and the box-proportional limit converges to q_E -> 1 (and q_T -> 1), not\n15/8. CONCLUSION (two-part): (i) this CLOSES the bulk-limit escape hatch the relocation\nnote floated -- 15/8 is not the infinite-volume value under any limit of this functional --\nvindicating that note's flagged caution; (ii) it does NOT sharpen the standing 2026-04-28\nnaturality no-go, which never claimed convergence and is unchanged. The 21/4 pin remains a\nfixed-box structural-selection gap (rho_E free unless a stronger readout-map primitive is\nsupplied); this scan supplies none -- it only rules out the bulk-limit promotion of the N=15\ncoincidence. No PDG/fitted value consumed.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190818Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_quark_route2_qe_box_size_scan_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

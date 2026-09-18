@@ -1,0 +1,35 @@
+{
+ "task": "R:kraus_choi_normalization_convention_check_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "kraus",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
+ "seed": 58513,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190833Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "39ea1d05f050c05b690f1f3a9e8b737e97454e81fcde08ad54c86088882287f7",
+ "stdout_tail": "MALIZATION CONVENTION CHECK\n========================================================================================\n[PASS] note marker present: unnormalized convention\n[PASS] note marker present: normalized Choi scale\n[PASS] note marker present: normalized inverse factor\n[PASS] note marker present: unnormalized Kraus unvec factor\n[PASS] note marker present: primary runner link\n[PASS] Kraus TP condition sum K^dagger K = I\n       [[1.+0.j 0.+0.j]\n [0.+0.j 1.+0.j]]\n[PASS] normalized Choi is unnormalized Choi divided by d\n[PASS] unnormalized Choi matrix is positive semidefinite\n       min_eig=+0.000e+00\n[PASS] TP iff output partial trace of unnormalized Choi is I\n[PASS] unnormalized convention inverse has no extra factor\n       max_error=0.000e+00\n[PASS] normalized convention inverse requires factor d\n       max_error=0.000e+00\n[PASS] normalized convention without factor d fails on nonzero map\n       max_missing_factor_error=5.000e-01\n[PASS] finite qubit-lattice region |Lambda|=1 has matrix dimension d=2^1\n       d=2\n[PASS] finite qubit-lattice region |Lambda|=2 has matrix dimension d=2^2\n       d=4\n[PASS] finite qubit-lattice region |Lambda|=3 has matrix dimension d=2^3\n       d=8\n[PASS] finite qubit-lattice region |Lambda|=4 has matrix dimension d=2^4\n       d=16\n========================================================================================\nTOTAL: PASS=16 FAIL=0\nASSERTIONS: PASS\n========================================================================================\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190833Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py",
+ "seed": 58498,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T190818Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b1e8ca54d72fed767a2a193efebddb7783cc64874dc2419bdb624f6513a27f9c",
+ "stdout_tail": "l Axioms non-supply clause present - Record supplies no weighting/probability/occupancy rule\n[PASS] B2 separatrix note contains retained sharpening map - r -> 2r^2 source pinned\n[PASS] B3 thermalizing-arrow note contains retained inverse map - g(r)=sqrt(r/2) source pinned\n[PASS] B4 firewall sentence present: the atom is named, not discharged\n[PASS] B4 firewall sentence present: does not import a probability rule\n[PASS] B4 firewall sentence present: the occupancy binary stays open\n[PASS] B5 closing/adoption language absent - absent=[]\n[PASS] B6 markdown link inventory is exactly the three dependencies - links=3\n[PASS] B7 companion/context names are backticked only - no companion markdown links\n[PASS] B8 No-promotion statement present\n[PASS] B9 standard status-authority lines present\n[PASS] B10 runner cache is named\n\nTOTAL: PASS=20 FAIL=0\nACCEPTANCE: PASS>=14 satisfied; FAIL=0\n\ngit diff --stat (local new-file inventory; git not invoked)\n docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md | 172 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py | 285 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 457 insertions(+)\nSUMMARY: G1 pinching idempotence is exact; G2 agreement-conditioned independent double registration is the retained r -> 2r^2 flow with inverse g(r)=sqrt(r/2); G3 leaves exactly one named statistics atom undischarged.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T190818Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

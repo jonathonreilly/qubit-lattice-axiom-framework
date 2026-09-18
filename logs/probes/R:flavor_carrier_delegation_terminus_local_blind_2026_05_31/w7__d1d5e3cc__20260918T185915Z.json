@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_carrier_delegation_terminus_local_blind_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w7",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_carrier_delegation_terminus_local_blind_2026_05_31.py",
+ "seed": 57955,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T185915Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple M3 Mac15,3 (8 GB), Darwin 25.6.0, Python 3.13.5 with numpy 2.4.4 / scipy 1.17.1 / sympy 1.14.0 (not the README's 3.12); each runner's verdict line compared by check_log against its pinned logs/runner-cache entry [batch 7/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "023084b63ed95bf5b9292be856b1486fed1b6255180018cf62683ebc1fea7db3",
+ "stdout_tail": "the flavor factor\n       so the carrier identification is NOT reachable from A2/\u00a79; it remains a genuine open input\n\nSCORECARD PASS=6 FAIL=0\nVERDICT: the flavor-carrier delegation chain (PHYSICAL_LATTICE_NECESSITY Parts 7/9) terminates in\nNON-RETAINED notes (single_axiom_hilbert=audited_renaming, single_axiom_information=meta,\nchirality_boundary/continuum_identification=unaudited); EVERY retained generation/lattice note\nbrackets the physical-species/flavor bridge out-of-scope. The one candidate mechanism (\u00a79\nlocality=tensor-factorization carrier) is GENERATION-BLIND: the generation/flavor label is a\nnon-local MOMENTUM-space structure (corners uniformly delocalized; local per-site observable\nidentical across generations), so A2's POSITION factorization cannot carry the flavor observable\non the generation factor. The carrier is a structurally-isolated open input -- not reachable from\nthe current retained surface; the named upstream blocker is the non-retained single-axiom-Hilbert\ntensor-factorization narrative (and even granted, it gives the position factor, not the flavor one).\nProvenance verified vs origin/main 2026-05-31: open_gate lepton_brannen_bae_delta_two_ninths;\nretained_no_go physical_lattice_necessity_note / koide_q_delta_residual_cohomology_obstruction;\nretained generation_axiom_boundary_note(_bounded) + three_generation_observable_* (all bracket species);\naudited_renaming single_axiom_hilbert_note; meta single_axiom_information_note; unaudited chirality/continuum.\n",
+ "checked": {
+  "by": "w7",
+  "at_utc": "20260918T185915Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

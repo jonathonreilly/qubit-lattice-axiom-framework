@@ -22,14 +22,21 @@
  "stdout_tail": "FAIL 1/5 contract_and_source_pins :: CertificateError: one or more declared runtime inputs are absent\nPASS 2/5 exact_projector_oracle :: vectors=102; maximum_entry_error=2.78e-17\nPASS 3/5 schema_and_refusal_boundary :: landed ValueError=3/3; Boolean landed-returned; schema/registry provenance=12/12\nFAIL 4/5 hermetic_primary_and_sandbox :: CertificateError: primary clean exit=1\nFAIL 5/5 independent_comparator_adversaries :: CertificateError: primary hermetic run must precede comparator inspection\nSUMMARY 2/5 FAIL\nRUNTIME 3.697114s\nRESULT BORN_PROJECTOR_FIXTURE_INDEPENDENT_CHECK_GREEN\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T222032Z",
+  "at_utc": "20260918T222227Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 068a0866 differs from the current HEAD 4dfc80c3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_born_acceptance_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Check 1 fails 'one or more declared runtime inputs are absent' because it re-declares the harness inputs, 12 of the 52 declared AUDIT_INPUT_PATHS (the 2026-07-11 instrument-nonselection notes and ten cycle211-287 review_feedback notes) were moved to archive/ by the 2026-09-05 densify-freeze migration (#8198); checks 4-5 fail only as cascades (primary harness clean exit=1, comparator gated on it); the harness failure is itself archive plus a Python-version ast.dump digest pin; no physics change.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222227Z"
  }
 }

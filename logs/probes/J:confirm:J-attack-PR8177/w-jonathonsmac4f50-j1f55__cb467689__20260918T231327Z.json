@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8177",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j1f55",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8177/rooted_values_milp.py",
+ "seed": 73207,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cb467689",
+ "started_utc": "20260918T231327Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - recomputed single-seed rooted values: Z_A root 0 with predecessors [-1, -1, -1], Z_B root 0 with predecessors [-1, -1, 0], Z_B's (4,4,3) 0 with [-1, -1, -1]; the claim_scope's 'three ... of rooted value -1' holds on Z_A and not on Z_B; the tight-sibling conclusion survives on both"
+ },
+ "review": "Recomputed the single-seed rooted values with a 0-1 integer program (scipy milp) on my own run of the two-level majority automaton from the runner's marks: Z_A's tight root (3,3,3) has 1-predecessors at -1, -1, -1 but Z_B's tight root (4,4,4) has 1-predecessors at -1, -1, 0 (and (4,4,3) is 0 with -1, -1, -1 below it), matching the note's body and the runner's printed values, so the claim_scope's T2 sentence 'the tight roots have three processed 1-predecessors of rooted value -1' (repeated in the runner's C1 text) is false on Z_B while its conclusion 'not a tight-sibling case' holds on both; finder confirmed.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8177/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "e4a618112c9f4373d2b938c5029916ec10fc917325a318c35dd35b069fc3d7c8",
+ "stdout_tail": "[inputs] at 9e98fd7514: claim_scope T2 'the tight roots have three processed 1-predecessors of rooted value -1': True; body on Z_B: 'predecessors at \u22121, \u22121, 0'; runner C1 text 'all three ... with rooted value -1': True; C1 prints {'Z_A': \"['-1', '-1', '-1']\", 'Z_B': \"['-1', '-1', '0']\"}\n[recomputed] Z_A: 46 ones, root (3, 3, 3) (proc) rooted value 0 (integer program over 44 sites); its 1-predecessors (2, 3, 3) proc v = -1, (3, 2, 3) proc v = -1, (3, 3, 2) proc v = -1 | Z_B: 69 ones, root (4, 4, 4) (proc) rooted value 0 (integer program over 69 sites); its 1-predecessors (3, 4, 4) proc v = -1, (4, 3, 4) proc v = -1, (4, 4, 3) proc v = 0 | Z_B's (4, 4, 3): v = 0, its 1-predecessors [-1, -1, -1]\nHIT: confirmed - the claim_scope's T2 ('the tight roots have three processed 1-predecessors of rooted value -1') fails on Z_B: its tight root (4, 4, 4) has 1-predecessors at [-1, -1, 0] (0-1 integer program on my own realization of the automaton; the note's body and the runner's printed values agree, the runner's C1 text repeats the claim_scope's wording); the conclusion 'not a tight-sibling case' still holds (not all predecessors tight)\nSUMMARY: confirmed - recomputed single-seed rooted values: Z_A root 0 with predecessors [-1, -1, -1], Z_B root 0 with predecessors [-1, -1, 0], Z_B's (4,4,3) 0 with [-1, -1, -1]; the claim_scope's 'three ... of rooted value -1' holds on Z_A and not on Z_B; the tight-sibling conclusion survives on both\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1f55",
+  "at_utc": "20260918T231328Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: claim_scope T2 says the extremal tight roots have three processed 1-predecessors of rooted value -1; an independent 0-1 integer program on a re-run automaton gives Z_B's root predecessors -1, -1, 0 (as the body and the runner print; the runner's C1 text repeats the wrong wording); the tight-sibling conclusion survives.",
+  "by": "w-jonathonsmac4f50-j1f55",
+  "at_utc": "20260918T231328Z"
+ }
+}

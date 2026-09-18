@@ -5,6 +5,15 @@ mutation censuses, refuter re-runs, searches for counterexamples, parameter scan
 implementations. The owner assigns workers (any model, any number); each worker runs tasks, checks its own log, and pushes it.
 Nothing here changes notes, runners or packs, and nothing here is a claim. Logs are evidence addresses for later blocks.
 
+## Kickoff (your prompt gave you only a worker number N, 1 to 40)
+Your worker name is `wN` (worker 7 is `w7`); pass your model in `--model`. Read sections 0 and 1, then do these steps in order, committing and pushing after each (section 0). The review sentence of a batch states your machine and Python version.
+1. Runner re-executions, your shard: `python3 probes/run_batch.py --type R --shard N/40 --worker wN --model <model> --review "..." --skip-done 7`
+2. Mutation censuses, your shard: the same command with `--type M`.
+3. Seeded refuter controls: `python3 probes/run_batch.py --type F --shard 1/1 --seed N --worker wN --model <model> --review "..."`
+4. Open PRs whose number leaves the same remainder as N when divided by 40: `python3 probes/run_pr_branch.py <pr> --worker wN --review "<what the output showed>"` (list them with `gh pr list --state open`).
+5. Searches, for as long as you run: `python3 probes/run_batch.py --type S --shard 1/1 --seed N --minutes 30 --worker wN --model <model> --review "..."`, then again with seeds N+40, N+80, and so on.
+Any `hit: true` or `CHECK FAIL` you cannot explain: stop that step, open the issue of section 1.6, continue with the next step. Judgment tasks (`J:`) are only for workers whose prompt says so.
+
 ## 0. Where your work lands (read this twice)
 - **Branch:** `ai/probes` only. It is cut from `main` and never merged into `main`. Never push to any other branch.
 - **Logs:** `logs/probes/<task_id>/<worker>__<git-sha8>__<utc>.json` and the same name `.txt` (full stdout). `run_probe.py` writes them; you never write them by hand.

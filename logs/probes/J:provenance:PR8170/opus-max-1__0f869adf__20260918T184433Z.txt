@@ -1,0 +1,55 @@
+PR #8170 head f9e1177003; cache 30 stdout lines; statement sections: claim_scope, Theorem T1, Theorem T2, Theorem T3, Theorem T4, Theorem T5
+[EXCLUDED] ref | claim_scope | reference (block 13)
+[DEFINITION] preds | claim_scope,Theorem T1,Theorem T2 | the three predecessors | declared under Premises and declared objects
+[EXCLUDED] Z3Z2 | claim_scope | structural: the lattices
+[DEFINITION] T1-kappa | claim_scope | the kernel's concentration | declared under Premises and declared objects
+[CACHE] T1-mean | claim_scope | T1(a) mean | cache stdout line 9: PASS: B1 T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine
+[CACHE] T1-second | claim_scope,Theorem T1 | T1(a) second moment | cache stdout line 9: PASS: B1 T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine
+[DEFINITION] T1-A | claim_scope | A(kappa) | declared under Premises and declared objects
+[CACHE] T1-Abound | claim_scope,Theorem T1 | T1(b) | cache stdout line 10: PASS: B2 T1: A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa; sinh^2 kappa = sum_{n>=1} 2^{2n-1} kappa^{2n}/(2n)! has the terms kappa^2 + kappa^4/3 +
+[CACHE] T1-Aprime | Theorem T1 | T1(b) | cache stdout line 10: PASS: B2 T1: A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa; sinh^2 kappa = sum_{n>=1} 2^{2n-1} kappa^{2n}/(2n)! has the terms kappa^2 + kappa^4/3 +
+[CACHE] T1-w2 | Theorem T1 | T1(a) E[w^2] | cache stdout line 9: PASS: B1 T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine
+[DERIVED] T1-transverse | Theorem T1 | T1(a) transverse moment | E|s - (s.u)u|^2 = 1 - E[(s.u)^2] = 2A/kappa (from E[w^2] = 1 - 2A/kappa, cache B1)
+[CACHE] T1-m1 | claim_scope,Theorem T1 | T1(c) | cache stdout line 11: PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722
+[CACHE] T1-trans1 | claim_scope,Theorem T1 | T1(c) | cache stdout line 11: PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722
+[CACHE] T1-general | Theorem T1 | T1(c) tower identity (from the mean) | cache stdout line 9: PASS: B1 T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine
+[CACHE] T1-encl | Theorem T1 | T1 enclosures of A(3 beta) | cache stdout line 11: PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722
+[CACHE] T1-betas | claim_scope,Theorem T1 | T1 couplings of the enclosures | cache stdout line 11: PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722
+[CACHE] T2-gain | claim_scope,Theorem T2 | T2 gain one | cache stdout line 12: PASS: C1 T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the a
+[CACHE] T2-var | claim_scope,Theorem T2 | T2 one-step variance | cache stdout line 12: PASS: C1 T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the a
+[CACHE] T2-expansion | Theorem T2 | T2 expansion | cache stdout line 12: PASS: C1 T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the a
+[DEFINITION] T2-coords | Theorem T2 | transverse coordinates | declared under Premises and declared objects
+[CACHE] T2-average | Theorem T2 | T2 minimizer and Hessian | cache stdout line 12: PASS: C1 T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the a
+[CACHE] T3-bounds | claim_scope,Theorem T3 | T3 two-sided bound | cache stdout line 14: PASS: D2 T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e
+[EXCLUDED] T3-k | Theorem T3 | structural: index range
+[EXCLUDED] walk-name | claim_scope | name of the walk
+[CACHE] T1-encl-betas | Theorem T1 | T1 enclosure route (B3) | cache stdout line 11: PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722
+[CACHE] T3-D2 | Theorem T3 | T3 exact range (D2) | cache stdout line 14: PASS: D2 T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e
+[CACHE] T3-D2b | Theorem T3 | T3 D2 second-order check | cache stdout line 14: PASS: D2 T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e
+[CACHE] T4-E1 | Theorem T4 | T4 E1 route | cache stdout line 16: PASS: E1 T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta
+[DERIVED] T3-limit | claim_scope,Theorem T3 | T3 local-limit constant | k times each side of the two-sided bound tends to 3 sqrt3/(4 pi) (sympy limits): k P_k -> 3 sqrt3/(4 pi)
+[CACHE] T3-harm | claim_scope,Theorem T3 | T3 harmonic bound | cache stdout line 15: PASS: D3 T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M
+[DERIVED] T3-logt | Theorem T3 | T3 log form | H_t >= log t for t >= 1 (the note's last proof line), so the harmonic bound gives the log form
+[CACHE] T3-exact150 | claim_scope | T3 exact range | cache stdout line 14: PASS: D2 T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e
+[CACHE] T4-unique | claim_scope,Theorem T4 | T4 uniqueness (from the minorization) | cache stdout line 17: PASS: E2 T4: the kernel's density against the uniform law on the sphere is at least 2 kappa/(e^{2 kappa} - 1) >= 2 kappa e^{-2 kappa}, decre
+[EXCLUDED] T4-LxL | claim_scope,Theorem T4 | structural: the torus
+[EXCLUDED] T4-zero | claim_scope,Theorem T4 | structural: limit value
+[CACHE] T4-onesite | claim_scope,Theorem T4 | T4 one-site rate | cache stdout line 16: PASS: E1 T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta
+[DERIVED] T4-bound | Theorem T4 | T4 minorization rate | the density floor 2 kappa/(e^{2 kappa} - 1) (cache E2) at kappa = 3 beta (|S| <= 3) is 6 beta/(e^{6 beta} - 1) = delta_L
+[CACHE] T5-var | claim_scope,Theorem T5 | T5 variance (the D3 line prints the sum bound) | cache stdout line 15: PASS: D3 T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M
+[CACHE] T5-gamma | claim_scope,Theorem T5 | T5 gamma | cache stdout line 18: PASS: E3 T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 
+[CACHE] T5-log | claim_scope,Theorem T5 | T5 growth | cache stdout line 18: PASS: E3 T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 
+[DERIVED] T5-sandwich | Theorem T5 | T5 two-sided bound | sum_k 27/k^2 = 27 pi^2/6 = 44.41 and sum_(k>=1) e^(-sqrt k/7) <= int_0^oo e^(-sqrt x/7) dx = 98 (decreasing terms), total 142.41 < 150 (the runner's D3 prints '27 pi^2/6 + 98 is below 150')
+[DEFINITION] T5-sigma | Theorem T5 | noise variance | declared under Premises and declared objects
+[CACHE] T5-encl | Theorem T5 | T5 enclosures of gamma | cache stdout line 18: PASS: E3 T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 
+[DERIVED] T5-glim | Theorem T5 | T5 large-beta form | beta gamma(beta) -> (3 sqrt3/(4 pi))/3 = sqrt3/(4 pi) since A(3 beta) -> 1 (sympy limit)
+[CACHE] T5-proxy | Theorem T5 | T5 proxy decay | cache stdout line 18: PASS: E3 T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 
+[EXCLUDED] T5-nostat | claim_scope,Theorem T5 | structural: statement without numbers beyond 'finite'
+[CACHE] exec-runs | claim_scope | executed: runs (the runner's N5 line) | cache stdout line 28: lattice_wide: T1-T5 proved for every beta > 0; the nonlinear decay on the infinite plane simulated at beta = 3, 6, 12, 24 (control and refut
+[CACHE] exec-sixaxis | claim_scope | executed: six-axis side-by-side (the runner prints the deviations) | cache stdout line 19: PASS: E4 side-by-side: at the six-axis weights (e^beta, e^-beta, 1) the three deviations are (e^{-3 beta} + 4)/(e^{3 beta} + e^{-3 beta} + 4
+[EXCLUDED] exec-names | claim_scope | wording
+[CONTROL] local exponents vs gamma(beta): MISMATCH: note table (control): beta=24 L=512 exp[500,5000] = 0.0055 < gamma = 0.00566; note table (refuter (independent sampler)): beta=12 L=512 exp[500,20000] = 0.0103 < gamma = 0.01117; note table (refuter (independent sampler)): beta=12 L=512 exp[5000,20000] = 0.0076 < gamma = 0.01117
+[CONTROL] runner N5 per_block line prints 'H_t - 3 for t <= 150' while its D3 check and the note state '- 6/25'
+HIT: exec-exponents | claim_scope | executed-not-claimed: exponents relative to gamma | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block26_fit.out.txt lines 2; MISMATCH: note table (control): beta=24 L=512 exp[500,5000] = 0.0055 < gamma = 0.00566; note table (refuter (independent sampler)): beta=12 L=512 exp[500,20000] = 0.0103 < gamma = 0.01117; note table (refuter (independent sampler)): beta=12 L=512 exp[5000,20000] = 0.0076 < gamma = 0.01117
+[COVERAGE] 149 numeric tokens in the statement text; uncovered 0
+SUMMARY: 50 items over claim_scope + 5 theorem sections (149 numeric tokens, 0 uncovered): cache-sourced 30, derived here from the note's formulas 6, definitions 5, excluded 8; unsourced 1 = 0 in the proved statements (none) + 1 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-exponents

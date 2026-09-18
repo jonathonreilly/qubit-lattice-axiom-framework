@@ -1,0 +1,6 @@
+t0=0 |I|=1 M=(0, 0, 0) bound=1 counts=[1, 0, 0, 0] dead_at=1
+t0=3 |I|=4 M=(3, 3, 0) bound=4 counts=[4, 3, 2, 1, 0, 0, 0] dead_at=4
+t0=4 |I|=15 M=(4, 4, 4) bound=9 counts=[15, 18, 19, 18, 15, 10, 6, 3, 1, 0, 0, 0] dead_at=9
+t0=5 |I|=1 M=(5, 0, 0) bound=1 counts=[1, 0, 0, 0] dead_at=1
+t0=2 |I|=6 M=(2, 2, 2) bound=5 counts=[6, 7, 6, 3, 1, 0, 0, 0] dead_at=5
+SUMMARY: attack pattern (a) WITNESS REALIZABILITY on S2 eroder - all tested islands died within M1+M2+M3-t0+1 levels; does not fire

@@ -1,0 +1,11 @@
+d=2 S=4: orbit 8 bonds; even-transverse dir-1 8; N=16; equal=True
+d=2 S=6: orbit 18 bonds; even-transverse dir-1 18; N=36; equal=True
+d=2 S=8: orbit 32 bonds; even-transverse dir-1 32; N=64; equal=True
+d=3 S=4: orbit 16 bonds; even-transverse dir-1 16; N=64; equal=True
+d=3 S=6: orbit 54 bonds; even-transverse dir-1 54; N=216; equal=True
+3D S=4: N=64 bad=48 fraction=3/4 event=True
+3D S=6: N=216 bad=162 fraction=3/4 event=True
+exact: at p/m = 1679616+1, (m/p)^{3}/6^4 = 1/6140953182946666034448 vs 6^4 (m/p)^4 = 1296/7958680063488680837022721; left>right True
+exact equality at p/m=36^4: 1/6140942214464815497216 == 1/6140942214464815497216: True
+HIT: confirmed - affine group orbit of the seed dir-1 bond is the even-transverse dir-1 bonds (N/2 in 2D, N/4 in 3D), not every dir-1 bond; explicit 3D configs have exactly 3N/4 bad bonds; (m/p)^{3/4}/6 > 6m/p for p/m > 36^4 = 1679616
+SUMMARY: confirmed T3 witness is the even-transverse sublattice, not every direction-i bond; 3D D_even has 3N/4-bad configs so T4's 6m/p does not bound it for p/m > 36^4

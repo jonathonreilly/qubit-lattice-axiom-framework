@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8151",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j1dc2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8151/orbit_as_affine_group.py",
+ "seed": 67911,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5e94fb1e",
+ "started_utc": "20260918T214511Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed T3 witness is the even-transverse sublattice, not every direction-i bond; 3D D_even has 3N/4-bad configs so T4's 6m/p does not bound it for p/m > 36^4"
+ },
+ "review": "Independent affine-group orbit of the seed dir-1 bond equals even-transverse dir-1 bonds (N/2 in 2D, N/4 in 3D); 3D witness has exactly 3N/4 bad bonds; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8151/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "9916a8b12e55b6673d808f179c175dcb100dce0746174b9a681587b0825b6015",
+ "stdout_tail": "d=2 S=4: orbit 8 bonds; even-transverse dir-1 8; N=16; equal=True\nd=2 S=6: orbit 18 bonds; even-transverse dir-1 18; N=36; equal=True\nd=2 S=8: orbit 32 bonds; even-transverse dir-1 32; N=64; equal=True\nd=3 S=4: orbit 16 bonds; even-transverse dir-1 16; N=64; equal=True\nd=3 S=6: orbit 54 bonds; even-transverse dir-1 54; N=216; equal=True\n3D S=4: N=64 bad=48 fraction=3/4 event=True\n3D S=6: N=216 bad=162 fraction=3/4 event=True\nexact: at p/m = 1679616+1, (m/p)^{3}/6^4 = 1/6140953182946666034448 vs 6^4 (m/p)^4 = 1296/7958680063488680837022721; left>right True\nexact equality at p/m=36^4: 1/6140942214464815497216 == 1/6140942214464815497216: True\nHIT: confirmed - affine group orbit of the seed dir-1 bond is the even-transverse dir-1 bonds (N/2 in 2D, N/4 in 3D), not every dir-1 bond; explicit 3D configs have exactly 3N/4 bad bonds; (m/p)^{3/4}/6 > 6m/p for p/m > 36^4 = 1679616\nSUMMARY: confirmed T3 witness is the even-transverse sublattice, not every direction-i bond; 3D D_even has 3N/4-bad configs so T4's 6m/p does not bound it for p/m > 36^4\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1dc2",
+  "at_utc": "20260918T214517Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent affine maps x->\u00b1x+2m send the seed dir-1 bond to even-transverse dir-1 bonds only; 3D configs have 3N/4 bad bonds so T4's 6m/p does not bound the realized event for p/m>36^4",
+  "by": "w-macbookpro90c72-j1dc2",
+  "at_utc": "20260918T214517Z"
+ }
+}

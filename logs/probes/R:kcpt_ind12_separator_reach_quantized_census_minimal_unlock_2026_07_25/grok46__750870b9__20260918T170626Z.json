@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25.py",
+ "seed": 51186,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170626Z",
+ "elapsed_s": 43.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=49 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3ce3bfd55cec6a7dd692b5d4a7b3e0407701c20b905d445f7cf4d4d8dea3e7b6",
+ "stdout_tail": "lit; shells 1,2,3 split in two)\n[PASS] UNLOCK-SHELL2-IDEMPOTENTS: the two shell-2 minimal central idempotents match {Pa,Pb}: min-matching max||E-P||_F=3.159562559164e-13 (<1e-8)\n[PASS] UNLOCK-SEPARATOR-IDEMPOTENTS: sep = e_a - e_b: ||sep-(Ea-Eb)||_F=3.259795005464e-13 (<1e-8) => sep is a difference of minimal central idempotents of A28\n[PASS] SHIFT-REACH-NINTH: g_ninth in G_amb=True; dim<A_nat,g_ninth>=28 (=28) closed=True; omega=1.111111111111e-01 (|omega-1/9|=3.886e-16<1e-9)\n[PASS] SHIFT-REACH-ZERO: g_zero in G_amb=True; dim<A_nat,g_zero>=48 (=48) closed=True; omega=0.000000000000e+00 (|omega|<=1e-10)\n[PASS] SHIFT-DIMENSION-CONTRAST: g_ninth and g1 extension dims are both 28 (28, 28): extension dimension does NOT determine reach\n[PASS] ROTATION-FULL-REACH: g_ur1,g_ur3 in G_amb; orders=12,12 (=12); dims=76,76 (=76) closed=True,True; omega=1.000000000000e+00,1.000000000000e+00 (=1); H-class sizes=64,64 (=64)\n[PASS] REACH-IN-FRAME-CONTROL: membership detector sanity: overlap^2(A_nat, Pf[0]-Pf[3])=1.000000000000e+00 (=1 within 1e-9: an in-frame central difference IS seen by the same resid machinery)\n[PASS] REACH-DIAL-CONTRAST: wrong-value rejector: |omega(g1)-1/3|=0.666667 (>0.5) and |omega(g_zero)-1|=1 (>0.9): the reach contrast is nonconstant\n[PASS] REACH-SIGNFIELD-PERTURBATION: perturbation rejector: gp=diag((-1)^{x1}).T(1,1,1) is NOT in G_amb (gp in G_amb=False): a wrong sign field is not even an admissible extension, so it cannot reproduce the unlock\nTOTAL: PASS=49 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170709Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

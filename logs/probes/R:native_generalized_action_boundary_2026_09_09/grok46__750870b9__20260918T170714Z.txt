@@ -1,0 +1,7 @@
+{"generalized_saved_post": "ACCEPTED_INDEPENDENT_SAVED_STAGE_RECONSTRUCTION", "native_matrix_replay": false, "predicates": 11381, "status": "PASS_COMPACT_EXACT_SUPPORT"}
+TOTAL: PASS=11381 FAIL=0
+per_element: saved rational lower-bound fields and a tiny Schur example checked; original matrix arithmetic not rerun
+per_site: no sitewise physical calculation performed in this compact evidence verifier
+per_mode: fixed paired trial-space rank and target fields checked; no full-band computation performed
+per_block: five selected spaces and ten impurity outcomes checked against immutable historical source identities
+lattice_wide: supplied fixed-family boundary only; arbitrary trial spaces and physical impossibility are not asserted

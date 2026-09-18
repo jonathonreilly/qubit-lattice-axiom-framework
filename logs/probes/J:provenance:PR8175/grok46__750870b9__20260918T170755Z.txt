@@ -1,0 +1,23 @@
+cache path used: logs/runner-cache/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.txt
+4165 | block 30 region restated | cache: PASS: D3 T3 (the stake): the refuted budget would have moved every line by a factor between 8 and 10 (4165 -> 453, 2085 -> 232, 8330 -> 905, | OK
+8/5 | W1 ratio | cache: PASS: C1 T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 1 | OK
+5/3 | W2/W3 ratio | cache: PASS: C2 T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S|  | OK
+16 | W1 E | cache: runner: scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_20 | OK
+10 | W1 |A| | cache: PASS: C1 T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 1 | OK
+20 | W2 E / checks | cache: PASS: C1 T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 1 | OK
+12 | W2 |A| | cache: PASS: C2 T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S|  | OK
+23 | W3 E | cache: PASS: C2 T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S|  | OK
+2 | period ratio / |S| W3 | cache: PASS: B1 T1: an amplified site's excuse (its single predecessor v - e_j) raises the charges k != j by 1/3 and lowers the charge j by 2/3: a  | OK
+453 | stake (p,1,2) | cache: PASS: D1 T3 (the stake): had the sharper budget held, the amplification weight would be epsilon_2/t and the rational triples at (453,1,2), ( | OK
+232 | stake (p,1,1) | cache: PASS: D1 T3 (the stake): had the sharper budget held, the amplification weight would be epsilon_2/t and the rational triples at (453,1,2), ( | OK
+905 | stake (p,2,4) | cache: PASS: D1 T3 (the stake): had the sharper budget held, the amplification weight would be epsilon_2/t and the rational triples at (453,1,2), ( | OK
+677 | stake (p,1,3) | cache: PASS: D1 T3 (the stake): had the sharper budget held, the amplification weight would be epsilon_2/t and the rational triples at (453,1,2), ( | OK
+4/729 | false-budget ceiling | cache: PASS: D2 T3 (the stake): under the sharper budget the ceiling would be max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between  | OK
+367 | crossing lo | cache: PASS: D2 T3 (the stake): under the sharper budget the ceiling would be max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between  | OK
+368 | crossing hi | cache: PASS: D2 T3 (the stake): under the sharper budget the ceiling would be max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between  | OK
+256/531441 | block 30 ceiling restated | cache: PASS: D2 T3 (the stake): under the sharper budget the ceiling would be max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between  | OK
+300 | random cones in runner | cache: PASS: C4 T2: 300 uniformly random cones of depth 3-8 (214 explained) never exceed the ratio 1 (worst 1/2), while the witnesses reach 8/5 and | OK
+40000 | control cones | NOT IN CACHE | UNSOURCED
+9 | mutations | cache: PASS: C2 T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S|  | OK
+SUMMARY: 20 numbers, 1 unsourced
+HIT: unsourced numbers

@@ -1,0 +1,5 @@
+six-axis static law at (p,1,2), L=24, sweeps=400; order = mean fraction of the majority value over the last half (aligned start | random start)
+  p= 3.50: order 0.1862 | 0.1824   (2s per start)
+  p= 3.60: order 0.1902 | 0.1911   (3s per start)
+  p= 3.70: order 0.6758 | 0.6712   (2s per start)
+  p= 3.80: order 0.7809 | 0.4332   (2s per start)

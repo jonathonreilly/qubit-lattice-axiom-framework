@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_admissibility_d4_record_content_oriented_safe_front_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/independent_admissibility_d4_record_content_oriented_safe_front_2026_08_29.py",
+ "seed": 51136,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170536Z",
+ "elapsed_s": 49.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e3cf55674c930ef28cfdce8f8eec96abe277b5927a1061c80018c93ae44789b1",
+ "stdout_tail": "resolve to current working-tree paths\nPASS B_exact_content_decoder: 84 exact Q(1/sqrt(3)) contents decode uniquely with the full 24-frame covariance census\nPASS C_long_oriented_trails: 18816 trails of lengths 2..17 have one forward tip with reflected and lateral rejection\nPASS D_guarded_controller: all 37632 maps continue by five disjoint swaps or preserve the entire blocked state\nPASS E_complete_blocked_frontier: all 2976 longer blocked components and every obstacle direction have zero local continuation\nPASS F_probability_and_runtime: 2688 formal fourteen-way laws conserve continue-or-STOP mass without a host oracle or feedback\nPASS G_scoped_adjudication: CONTENT-ORIENTED-SAFE-FRONT is effective and local; microscopic, concurrent, rate, gravity, and TOE claims remain false\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=25/25\nCONTROL_KIND: assertion_guard; detected=1/1\nCONTROL_KIND: syntax_guard; detected=9/9\nCONTROL_KIND: scope_guard; detected=12/12\nMUTATIONS: rejected=47/47\nVERDICT: CONTENT-ORIENTED-SAFE-FRONT independently reconstructed on the longer exact census\nCOUNTS: contents=84; frames=24; covariance=2016; trails=18816; controller=37632; blocked_components=2976; blocked_direction_checks=229728; probability_cases=2688\nBOUNDARY: effective local single-lineage readout only; pointer/control, seed generation, interacting fronts, occurrence/rate/time, gravity, retention, obligations, and TOE closure remain unproved\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170626Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

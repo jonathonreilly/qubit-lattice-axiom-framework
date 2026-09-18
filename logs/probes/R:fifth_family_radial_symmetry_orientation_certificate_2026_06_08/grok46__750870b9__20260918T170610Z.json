@@ -1,0 +1,35 @@
+{
+ "task": "R:fifth_family_radial_symmetry_orientation_certificate_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "fifth",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py",
+ "seed": 51170,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170610Z",
+ "elapsed_s": 19.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "af36536990908a3e832052dc4028d3772c151d7326cb1116687b1a54ac4e0f72",
+ "stdout_tail": "================================================================================================\nFIFTH FAMILY RADIAL SYMMETRY/ORIENTATION CERTIFICATE\n================================================================================================\nrow: drift=0.20 seed=0\nmethod: source-field linearity + zero-field variational recurrence\n\nPASS source note links this independent certificate\nPASS empty-source field is exactly zero componentwise\nPASS +1 and -1 same-point source fields cancel exactly\n\nzero_delta     = +0.000000000000e+00\nneutral_delta  = +0.000000000000e+00\nplus_delta     = -2.028481895566e-06\nminus_delta    = +2.028191385950e-06\nlinear_slope   = -2.028336655911e-06\n\nPASS zero-source centroid delta is exact\nPASS neutral same-point centroid delta is exact\nPASS first-order positive-source radial response is negative\nPASS finite +1 source has same negative sign as variational slope\nPASS finite -1 source has opposite positive sign\nPASS plus/minus signs certify orientation boundary, not control leak\n\nSCORECARD PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

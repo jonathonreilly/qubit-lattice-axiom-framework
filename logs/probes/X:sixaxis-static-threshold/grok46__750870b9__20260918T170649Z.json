@@ -1,0 +1,37 @@
+{
+ "task": "X:sixaxis-static-threshold",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/scan_static_sixaxis.py 24 400 3.5 3.6 3.7 3.8",
+ "seed": 51209,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170649Z",
+ "elapsed_s": 18.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  p= 3.50: order 0.1862 | 0.1824   (2s per start)",
+   "  p= 3.60: order 0.1902 | 0.1911   (3s per start)",
+   "  p= 3.70: order 0.6758 | 0.6712   (2s per start)",
+   "  p= 3.80: order 0.7809 | 0.4332   (2s per start)"
+  ]
+ },
+ "review": "L=24 400 sweeps (p,1,2): order jumps 0.19 at p=3.6 to 0.67 at p=3.7 from both starts, matching block 28's (3.6,3.7) location; p=3.8 random start 0.43 shows hysteresis. Scan table, not a HIT",
+ "what": "block 28's static six-axis scan (arguments as the script header states); located p in (3.6, 3.7) at (p,1,2); extend sizes and lines.",
+ "stdout_sha256": "c9ffe015cb58f71d703cdb3db90bb2d0f90168dfa7069738cf0d26bf3b265ddd",
+ "stdout_tail": "six-axis static law at (p,1,2), L=24, sweeps=400; order = mean fraction of the majority value over the last half (aligned start | random start)\n  p= 3.50: order 0.1862 | 0.1824   (2s per start)\n  p= 3.60: order 0.1902 | 0.1911   (3s per start)\n  p= 3.70: order 0.6758 | 0.6712   (2s per start)\n  p= 3.80: order 0.7809 | 0.4332   (2s per start)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,40 @@
+ROUTE-2 POSITIVE-DIAGONAL E-CENTER SELECTOR NO-GO
+==============================================================================
+
+A. Source surfaces
+------------------------------------------------------------------------------
+[FAIL] new_note exists
+       docs/QUARK_ROUTE2_POSITIVE_DIAGONAL_E_CENTER_SELECTOR_NO_GO_NOTE_2026-06-21.md
+[PASS] readout exists
+       docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+[FAIL] positivity exists
+       docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md
+[PASS] classifier exists
+       docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md
+[PASS] axioms exists
+       docs/MINIMAL_AXIOMS_2026-06-05.md
+[PASS] primitive_chain exists
+       docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md
+[PASS] theta_slice exists
+       docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/private/tmp/ai-probes-grok-wt/scripts/frontier_quark_route2_positive_diagonal_e_center_selector_no_go_2026_06_21.py", line 240, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/private/tmp/ai-probes-grok-wt/scripts/frontier_quark_route2_positive_diagonal_e_center_selector_no_go_2026_06_21.py", line 93, in main
+    note = read(paths["new_note"])
+  File "/private/tmp/ai-probes-grok-wt/scripts/frontier_quark_route2_positive_diagonal_e_center_selector_no_go_2026_06_21.py", line 35, in read
+    return path.read_text(encoding="utf-8", errors="replace")
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/ai-probes-grok-wt/docs/QUARK_ROUTE2_POSITIVE_DIAGONAL_E_CENTER_SELECTOR_NO_GO_NOTE_2026-06-21.md'

@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8175",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block31-sharpe",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8175/falsifier_period.py",
+ "seed": 51275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170755Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PR8175 period/floor falsifier did not fire: period (r,e,a)=(0,4,2) ratio 2; W1/W2/W3 ratios 8/5,5/3,5/3 inside proved budget and outside sharper; d3 crosses 4/729 at 367/368"
+ },
+ "review": "T1.3 period arithmetic (r,e,a)=(0,4,2) ratio 2 and W1/W2/W3 (E,A,S) ratios 8/5,5/3,5/3 sit inside the proved budget and outside the sharper one; T3 floor 367/368 vs 4/729 holds. Falsifier did not fire",
+ "what": "PR #8175 (ail31: the sharper bad-pair budget is false for the extended): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916; git show origin/physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916:<note>. Create probes/work/pr8175/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8175/<script>.py\"",
+ "stdout_sha256": "1e46db03bdd689ecb07335158052ac54118010e4cc726ef90b09e5d68d9353ae",
+ "stdout_tail": "period sum (r,e,a)=(0,4,2)\n(e-3r)/a = 2\nW1 ratio 8/5 (claimed 8/5=8/5)\nW2 ratio 5/3 (claimed 5/3=5/3)\nW3 ratio 5/3 (claimed 5/3=5/3)\nW1: E=16 sharp 16<=10 is False; proved 16<=20 is True\nW2: E=20 sharp 20<=12 is False; proved 20<=24 is True\nW3: E=23 sharp 23<=15 is False; proved 23<=27 is True\nSUMMARY: PR8175 period/floor falsifier did not fire: period (r,e,a)=(0,4,2) ratio 2; W1/W2/W3 ratios 8/5,5/3,5/3 inside proved budget and outside sharper; d3 crosses 4/729 at 367/368\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

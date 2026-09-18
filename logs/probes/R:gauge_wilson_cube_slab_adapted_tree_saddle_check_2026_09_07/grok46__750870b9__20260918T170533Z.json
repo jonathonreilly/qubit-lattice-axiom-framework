@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+ "seed": 51133,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170533Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "250ba68ee0de40d4eeb3b533be957e2d06d1b5d7bfd32b3c85936eec5ca84d70",
+ "stdout_tail": "TOTAL: PASS=25 FAIL=0; geometry7, positive LDL pivots17 and determinant1.\nper_element: Actual32edge22face slab, adapted15edge gauge tree and17SU3chords.\nper_site: Sourceholonomies are literal separate chordvariables after treegauge.\nper_mode: Exact17 rational positive Hessian pivots; eight trace-orthonormal Lie colors.\nper_block: Nonlinear localization and HS proof are analytical; no Gaussian proxy substitution.\nlattice_wide: Supplied finite cube only; no physicalbeta selection or thermodynamicgap claim. Source SHA ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5\nResources: 0.028394s; 22.047 MiB; limits180s/180MiB.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

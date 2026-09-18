@@ -1,0 +1,7 @@
+TOTAL: PASS=25 FAIL=0; geometry7, positive LDL pivots17 and determinant1.
+per_element: Actual32edge22face slab, adapted15edge gauge tree and17SU3chords.
+per_site: Sourceholonomies are literal separate chordvariables after treegauge.
+per_mode: Exact17 rational positive Hessian pivots; eight trace-orthonormal Lie colors.
+per_block: Nonlinear localization and HS proof are analytical; no Gaussian proxy substitution.
+lattice_wide: Supplied finite cube only; no physicalbeta selection or thermodynamicgap claim. Source SHA ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5
+Resources: 0.028394s; 22.047 MiB; limits180s/180MiB.

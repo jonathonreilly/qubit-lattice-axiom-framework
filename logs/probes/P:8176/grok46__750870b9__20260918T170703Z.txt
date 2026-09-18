@@ -1,0 +1,12 @@
+PR #8176: ail32: the minimal marked tree — the counted family's constant is at least one (exact certificates), block 31's witnesses have cheap trees, the tree route's floor at p = 368 on (p,1,2)
+branch physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py: rc=0 TOTAL: PASS=19 FAIL=0
+   mutation forks_dropped_in_family: expected B observed B ok
+   mutation extremal_marks_wrong: expected C observed C ok
+   mutation family_bound_asserted: expected C observed C ok
+   mutation witness_tree_wrong: expected D observed D ok
+   mutation certificate_wrong: expected E observed E ok
+   mutation floor_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

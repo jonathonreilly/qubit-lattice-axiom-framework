@@ -1,0 +1,37 @@
+{
+ "task": "P:8176",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block32-minima",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8176",
+ "pr": 8176,
+ "branch": "physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917",
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170703Z",
+ "elapsed_s": 31.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=19 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR 8176 isolated worktree: runner TOTAL PASS=19 FAIL=0, 8/8 mutations match expected families, not a HIT",
+ "stdout_sha256": "fc1f861a6d02bb81404190730741709867f2a530e211dfbbed180c628900f6ec",
+ "stdout_tail": "PR #8176: ail32: the minimal marked tree \u2014 the counted family's constant is at least one (exact certificates), block 31's witnesses have cheap trees, the tree route's floor at p = 368 on (p,1,2)\nbranch physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py: rc=0 TOTAL: PASS=19 FAIL=0\n   mutation forks_dropped_in_family: expected B observed B ok\n   mutation extremal_marks_wrong: expected C observed C ok\n   mutation family_bound_asserted: expected C observed C ok\n   mutation witness_tree_wrong: expected D observed D ok\n   mutation certificate_wrong: expected E observed E ok\n   mutation floor_wrong: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170807Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

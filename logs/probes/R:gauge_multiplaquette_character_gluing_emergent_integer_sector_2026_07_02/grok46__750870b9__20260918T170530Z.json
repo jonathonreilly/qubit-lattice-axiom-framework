@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
+ "seed": 51130,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170530Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ffee01f6fdb2b6f3594aed815fb74e7cfeb07e1ce72e37af2aa6073ea2978ed",
+ "stdout_tail": "\n  [PASS] D4 closed surface: sum_p theta_p = 0 identically (link cancellation), so Q = sum_p k_p is an exact integer\n  [PASS] D5 total Q invariant under refundamentalizing any link; regional splits shift compensatingly (boundary chart covariance)\nSection E: selector interface arithmetic\n  [PASS] E1 at theta=pi odd winding sectors carry negative weight; at theta=0 all sector weights nonnegative\nSection F: nonabelian matched-label contrast\n  [PASS] F1 SU(2) gluing identity int dV chi_a(AV) chi_b(V^dag B) = delta_ab chi_a(AB)/d_a (S^3 quadrature)\n  [PASS] F2 SU(2) character orthogonality under the Weyl class measure\n  [PASS] F3 SU(2) matched-label decomposition on the 1-cell torus: Z = sum_j c_j/d_j with every sector weight positive\n         beta=6: Z(1-cell torus) = sum_j c_j/d_j = 56.032398\n  [PASS] F4 SU(3) dual coefficients at beta=6: positive on every matched label, conjugation-paired\n         c00=3.44144 c10=4.36235 c11=4.46726 c20=2.80743\n  [PASS] F5 Z-valued conjugation-odd functions on the SU(3) matched labels exist with odd support and are NON-unique (p-q vs (p-q)^3)\nSection G: source-boundary guards\n  [PASS] G1 note declares canonical bounded_theorem claim type\n  [PASS] G2 note separates scope from claim type\n  [PASS] G3 note does not use runner PASS as source status\n  [PASS] G4 note does not expose effective_status metadata\n  [PASS] G5 note does not lean on in-flight PR wording as authority\n  [PASS] G6 witness-surface is explicitly not physical\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

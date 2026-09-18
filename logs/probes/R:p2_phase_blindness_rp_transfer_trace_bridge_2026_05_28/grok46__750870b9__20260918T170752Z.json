@@ -1,0 +1,35 @@
+{
+ "task": "R:p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "p2",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
+ "seed": 51272,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "750870b9",
+ "started_utc": "20260918T170752Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2fc5e10a0cbd611eb8fa097523b1a7ae468ae7c39a0a42c2b3371d562b385351",
+ "stdout_tail": " phase to blind to)\n    C4 = PASS\n\n------------------------------------------------------------------------------\nSTAYS ADMITTED (NOT closed here): interacting/gauge realization\n------------------------------------------------------------------------------\n    The identification of the framework Dirac operator D with the\n    staggered KS operator on the interacting/gauge surface rides on the\n    ALREADY-registered Tier-A staggered-Dirac realization gate AC_phi_lambda\n    (staggered_dirac_realization_gate_note_2026-05-03, audited_renaming).\n    This runner checks the zero-source FREE staggered surface only;\n    AC_phi_lambda is NOT removed and P1/P2 parent conditions are not retagged.\n\n==============================================================================\nVERDICT\n==============================================================================\n  C1 det = Z_vac.Tr    : PASS  (max res 5.09e-11)\n  C2 T^2 = exp(-2aH)   : PASS  (min spec H 0.00e+00)\n  C3 Z real-positive   : PASS  (max |Im Z| 0.00e+00)\n  C4 zero-source W     : PASS  (max res 0.00e+00)\n\nPASS=4 FAIL=0\n\n  PASS -- on the free staggered surface det(M_KS+mI) =\n  Z_vac * Tr(e^{-beta H_hat}) with H_hat self-adjoint and >= 0 (RP). Hence Z is\n  manifestly real-positive, so the modulus in log|det| is automatic on\n  this zero-source free determinant surface. This gives bounded support\n  for the qubit-trace phase-positive route via RP; it does not retire\n  the full P2 scalar-generator premise or the interacting/gauge gate.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170753Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.txt against the .txt beside this log"
+  ]
+ }
+}

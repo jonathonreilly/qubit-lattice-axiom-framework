@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 35, at PR opening (2026-09-18)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the decision record's consequence (2026-09-18): the gravity node's Green-function kernel was located in the comparator (block 19) and must be re-derived in the formation reading or given up"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the linearized kernel under the formation reading given exactly (plane Green function x level-time heat kernel; diffusive; three-fold symmetric) and shown not to be the comparator's; the nonlinear normalization measured. Next: the gravity lane re-runs its construction with this kernel. Consumers: the gravity lane; the campaign's decision record"
+```

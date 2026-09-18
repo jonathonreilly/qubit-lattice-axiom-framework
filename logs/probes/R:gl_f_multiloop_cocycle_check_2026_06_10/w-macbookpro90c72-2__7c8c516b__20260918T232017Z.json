@@ -1,0 +1,34 @@
+{
+ "task": "R:gl_f_multiloop_cocycle_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "gl",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gl_f_multiloop_cocycle_check_2026_06_10.py",
+ "seed": 73617,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8c516b",
+ "started_utc": "20260918T232017Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e2a3e750acc8f8f6613b1296a851d14a28f29a2f6c3d0e3c7f8d3d5c21366b4e",
+ "stdout_tail": " assignments on the qubit net = exactly\n        the SYMMETRIC ones (exhaustive at N=3 dense, N=4 mask+dense);\n        eps==+1 (commuting / hard-core) is in the consistent set;\n    [B] multi-loop cocycle consistency is AUTOMATIC for every symmetric\n        eps: all exchange-groupoid loops (S_4 Cayley certificate, 64/64),\n        plaquettes generate all lattice loops, closed-loop transport and\n        doubled-exchange holonomy frame-blind; only the exchange loop\n        itself is frame-odd and its consistency condition (square = +1)\n        admits BOTH characters;\n    [C] theta graph / 2x2x2 cube / linked 16-site loops: both frames\n        jointly consistent, sector-wise T-positive, framing-coherent;\n        spectra differ (sign physical) but nothing rejects eps==+1;\n    [D] the Kawamoto-Smit Clifford -1 plaquette cocycle is c-number\n        coefficient cohomology, consumed identically by both frames:\n        it does not transfer to the exchange sign.\n  CONCLUSION: multi-loop graded-net cocycle consistency does NOT force\n  GL(F). The commuting assignment passes every condition; consistency\n  classifies the set {symmetric eps} and, under uniformity, {+1, -1}.\n  The route closes as a NO-GO; relative to the exercised route\n  portfolio, GL(F) remains an admission/migration candidate.\n\n========================================================================================\nTOTAL: PASS=44 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232018Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

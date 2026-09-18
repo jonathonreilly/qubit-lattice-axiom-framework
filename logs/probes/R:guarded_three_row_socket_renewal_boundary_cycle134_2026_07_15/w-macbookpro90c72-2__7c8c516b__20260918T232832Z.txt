@@ -1,0 +1,50 @@
+
+===============================================================================
+A - Exact predecessor and search surface
+===============================================================================
+FAIL A01 Cycle 134 note exists
+PASS A02 exact Cycle-129 bridge reconstructs 16 canonical / 366 raw rows :: canonical=16 raw=366
+PASS A03 reconstructed terminal is exact 394-record C129 terminal :: terminal=394 union=9110
+PASS A04 old launch remains exact H1 + R_B01 -> OZ :: (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01'))
+
+===============================================================================
+B - One- and two-row outward socket census
+===============================================================================
+PASS B01 no one-row fresh H1/R_B01 socket exists
+PASS B02 exactly twelve two-row geometric sockets exist :: 12
+PASS B03 no two-row socket survives full-source target/value screening :: clean=0
+PASS B04 two-row failures are exact old/transient alias sites :: ((-2, 1, -1), (-2, 2, -2), (-1, 1, -2))
+
+===============================================================================
+C - Attractive three-row guard and earliest exact counterexample
+===============================================================================
+PASS C01 terminal-side topology has 296 candidates / 244 unexpected-target-clean :: candidates=296 unexpected_clean=244
+PASS C02 fresh-label filter leaves sixteen variants :: ('R_C11', 'R_C13', 'R_C21', 'R_C23', 'R_C30', 'R_C32', 'R_C33', 'R_C41')
+PASS C03 declared score/tie-break chooses R_C11 with 54 raw rows :: ('R_C11', 54)
+PASS C04 terminal-only factor has the misleading 7-state completion :: states=7 edges=8 terminals=1
+PASS C05 expected-target screen catches R_C11 demand at future Y2 contact :: (((-2, 2, -1), (('OZ',), ('R_C11',))), ((0, 6, 2), (('R_B23',),)), ((2, 4, 3), (('H1',),)), ((3, 5, 3), (('H1',), ('R_A31',), ('R_B02',))), ((3, 6, 1), (('BACKSTOP',), ('R_B11',), ('R_B21',))), ((3, 6, 2), (('T_H1',),)), ((4, -1, 0), (('H0',),)), ((4, 1, -1), (('T_H0',),)), ((4, 2, -2), (('H1',),)), ((4, 3, -2), (('T_N1',),)), ((4, 4, 1), (('H1',),)), ((4, 4, 3), (('OZ',), ('R_A31',), ('R_B02',), ('T_N1',))), ((4, 5, 1), (('BACKSTOP',), ('R_B11',))), ((4, 5, 2), (('R_A31',),)), ((4, 5, 3), (('T_H2',),)), ((4, 6, 3), (('R_A31',),)), ((5, 0, 0), (('P2',),)), ((5, 3, -3), (('A_2_0',), ('W4',))), ((5, 3, -2), (('T_H3',),)), ((5, 3, -1), (('H1',),)), ((5, 3, 0), (('H1',),)), ((5, 4, -2), (('OZ',),)), ((5, 4, -1), (('H1',), ('T_H3',))), ((5, 4, 2), (('R_B10',),)))
+PASS C06 full graph stops at exact earliest wrong-value transition :: ((25088, (-2, 2, -1), frozenset({'R_C11'})),)
+PASS C07 deleting the guard row removes the false factor completion :: terminal_sizes=(1,) reached=1
+PASS C08 all 1,296 added-row covariance checks are exact :: delta=54 controls=1296
+
+===============================================================================
+D - Causally late centered family and direct launch route
+===============================================================================
+PASS D01 centered search has five late centers and eleven fresh roles :: centers=((-2, 1, -1), (-2, 2, -2), (-2, 3, -1), (-1, 1, -2), (1, 2, -1)) fresh=('R_C11', 'R_C12', 'R_C13', 'R_C21', 'R_C22', 'R_C23', 'R_C30', 'R_C32', 'R_C33', 'R_C41', 'R_LB')
+PASS D02 singleton-center/all-arm-coimage census is exact :: {'arm1_rows': 146, 'arm2_rows': 102, 'centers': 5, 'direction_pairs': 396, 'factor_unexpected': 32, 'fresh_roles': 11, 'full_unexpected': 48, 'full_wrong_value': 48, 'guard_attempts': 55, 'guard_rows': 55, 'open_geometries': 88, 'role_assignments': 176, 'singleton_guards': 33, 'socket_geometries': 48}
+PASS D03 none of 48 centered socket geometries survives full value screen :: ()
+PASS D04 all five direct late-interface OZ rows also fail exact screen :: targets=((-2, 1, -1), (-2, 2, -2), (-2, 3, -1), (-1, 1, -2), (1, 2, -1)) survivors=()
+
+===============================================================================
+E - Bounded scope and constitutional boundary
+===============================================================================
+FAIL E01 note names guarded three-row socket renewal boundary
+FAIL E02 note keeps four-row and bridge redesign routes live
+FAIL E03 note preserves bridge-row recurrence separately
+FAIL E04 note carries complete N1-N8 discipline
+FAIL E05 note denies socket/recurrence no-go and axiom addition
+PASS E06 Cycle 134 writes only runner and review note
+
+ONE_ROW=0 TWO_ROW=12 SIDE=296 SIDE_UNEXPECTED_CLEAN=244 CENTER_SOCKET_GEOMETRIES=48
+PASS=20 FAIL=6
+RESULT=FAIL

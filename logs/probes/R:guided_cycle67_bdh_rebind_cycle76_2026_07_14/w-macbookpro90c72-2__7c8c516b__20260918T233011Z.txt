@@ -1,0 +1,23 @@
+FAIL A01 note exists
+PASS A02 source is exactly the Cycle-67 terminal
+PASS A03 YS is the exact fourfold E/L8/L10 class
+PASS A04 YG is the exact fourfold OPEN_B/YS class
+PASS A05 DY is singleton X_B/YG
+PASS A06 DZ remains singleton X_B/L10
+PASS A07 H pair is exact
+PASS A08 guided extension has 39 additions :: 39
+PASS B01 every rotated union input is single-valued
+PASS B02 component raw domains are pairwise disjoint
+PASS C01 official map is exact Cycle-14 B/D/H :: {(2, 1, 0): 'D1', (2, 0, 1): 'D1', (3, 0, 1): 'H1', (3, 1, 0): 'H1', (1, 1, 0): 'B1', (1, 0, 1): 'B1', (1, 2, 0): 'B0', (1, 0, 2): 'B0', (1, 3, 0): 'B1', (2, 2, 0): 'D0', (2, 0, 2): 'D0', (2, 3, 0): 'D1', (2, 1, 1): 'B1', (3, 1, 1): 'D1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}
+PASS C02 auxiliaries avoid current official support
+PASS C03 additions avoid next-only support
+PASS D01 every conditional schedule reaches one complete terminal :: (13095, 62667, 1)
+PASS D02 conditional graph has no parasite :: frozenset()
+PASS D03 conditional graph has no conflict :: frozenset()
+PASS E01 translated next header is complete
+PASS E02 translated preparation interface is ready
+PASS E03 next q/a/b/c remain open
+
+NEW_ROWS=29 UNION_ROWS=149 RAW=3,272
+CONDITIONS=57 STATES=13,095 EDGES=62,667
+SUMMARY: 18 PASS / 1 FAIL

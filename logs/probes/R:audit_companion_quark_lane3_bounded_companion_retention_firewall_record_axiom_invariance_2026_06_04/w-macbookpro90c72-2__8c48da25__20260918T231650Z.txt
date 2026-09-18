@@ -1,0 +1,137 @@
+
+========================================================================
+Quark Lane 3 retention firewall Record-axiom companion
+========================================================================
+Parent note: docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md
+Parent runner: scripts/frontier_quark_lane3_bounded_companion_retention_firewall.py
+Scope: meta evidence only; no theorem claim and no audit-status change.
+Audit-lane values are informational metadata, not pass/fail targets.
+
+========================================================================
+Block 1: live parent runner
+========================================================================
+PASS parent_runner_exit_zero :: exit=0
+PASS parent_runner_tally_present
+PASS parent_runner_pass_count_at_least_17 :: pass=17
+PASS parent_runner_fail_count_zero :: fail=0
+PASS parent_runner_reports_bounded_support_not_five_mass_retention
+PASS parent_runner_reports_lane3_open_boundary
+
+========================================================================
+Block 2: ledger row presence and live metadata
+========================================================================
+PASS parent_ledger_row_present
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS companion_ledger_row_present
+PASS companion_status_fields_present :: effective_status=meta audit_status=unaudited
+PASS companion_claim_type_field_present :: claim_type=meta
+PASS staggered_ledger_row_present
+PASS staggered_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS staggered_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS companion_note_exists
+PASS staggered_note_exists
+PASS parent_runner_path_expected
+PASS parent_note_hash_matches_ledger
+PASS staggered_note_hash_matches_ledger
+
+========================================================================
+Block 3: parent firewall source content
+========================================================================
+PASS parent_anchor_present_question
+PASS parent_anchor_present_result
+PASS parent_anchor_present_theorem
+PASS parent_anchor_present_ratio_boundary
+PASS parent_anchor_present_ckm_mass_type_boundary
+PASS parent_anchor_present_retired_fast_upgrades
+PASS parent_anchor_present_open_work
+PASS parent_anchor_present_verification
+PASS parent_anchor_present_input_roles
+PASS parent_anchor_present_safe_wording
+PASS parent_formula_present_m_d/m_s = alpha_s(v) / 2
+PASS parent_formula_present_m_s/m_b = [alpha_s(v) / sqrt(6)]^(6/5)
+PASS parent_formula_present_m_d/m_b = (m_d/m_s)(m_s/m_b)
+PASS loadbearing_section_found :: start=726 end=3473
+PASS zero_record_axiom_tokens_in_parent_loadbearing_section :: matches=[]
+PASS parent_keeps_ratio_and_firewall_content
+PASS parent_marks_pdg_values_as_comparator_only
+PASS support_note_present_QUARK_MASS_RATIO_NOTE_2026-04-18.md :: QUARK_MASS_RATIO_NOTE_2026-04-18.md
+PASS support_note_present_DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md :: DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md
+PASS support_note_present_QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md :: QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md
+PASS support_note_present_YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md :: YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md
+
+========================================================================
+Block 4: current staggered-Dirac source boundary
+========================================================================
+PASS staggered_note_declares_independent_status_authority
+PASS staggered_note_declares_source_note_proposal_boundary
+PASS staggered_note_contains_bounded_synthesis_content
+PASS staggered_note_names_labeling_residual
+PASS staggered_note_does_not_supply_lane3_mass_law
+
+========================================================================
+Block 5: axiom memo content boundary
+========================================================================
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-05-03.md :: MINIMAL_AXIOMS_2026-05-03.md
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-05-20.md :: MINIMAL_AXIOMS_2026-05-20.md
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-06-04.md :: MINIMAL_AXIOMS_2026-06-04.md
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-06-29.md :: MINIMAL_AXIOMS_2026-06-29.md
+PASS reset_memo_has_lattice_content
+PASS reset_memo_has_quantum_content
+PASS current_memo_has_lattice_content
+PASS current_memo_has_quantum_content
+PASS current_memo_has_record_additivity
+PASS record_scope_excludes_firewall_missing_bridges
+PASS record_adoption_memo_has_historical_additivity
+
+========================================================================
+Block 6: ratio and comparator arithmetic
+========================================================================
+PASS rescale_0.5_preserves_m_d_over_m_s
+PASS rescale_0.5_preserves_m_s_over_m_b
+PASS rescale_0.5_preserves_m_d_over_m_b
+PASS rescale_0.5_moves_absolute_anchor_when_nonunit :: m_b=2.0900000000
+PASS rescale_1.0_preserves_m_d_over_m_s
+PASS rescale_1.0_preserves_m_s_over_m_b
+PASS rescale_1.0_preserves_m_d_over_m_b
+PASS rescale_1.0_moves_absolute_anchor_when_nonunit :: m_b=4.1800000000
+PASS rescale_2.0_preserves_m_d_over_m_s
+PASS rescale_2.0_preserves_m_s_over_m_b
+PASS rescale_2.0_preserves_m_d_over_m_b
+PASS rescale_2.0_moves_absolute_anchor_when_nonunit :: m_b=8.3600000000
+PASS rescale_10.0_preserves_m_d_over_m_s
+PASS rescale_10.0_preserves_m_s_over_m_b
+PASS rescale_10.0_preserves_m_d_over_m_b
+PASS rescale_10.0_moves_absolute_anchor_when_nonunit :: m_b=41.8000000000
+PASS top_channel_ward_ratio_exact
+PASS species_uniform_bottom_comparator_overshoot_gt_30 :: overshoot=34.71
+PASS species_uniform_bottom_comparator_overshoot_about_35
+
+========================================================================
+Block 7: Record-axiom counterfactual
+========================================================================
+PASS with_record_blocks_retention
+PASS with_record_ratio_invariant
+PASS with_record_overshoot_large
+PASS without_record_blocks_retention
+PASS without_record_ratio_invariant
+PASS without_record_overshoot_large
+PASS counterfactual_boolean_outputs_identical
+PASS counterfactual_numeric_outputs_identical :: diff=0.000e+00
+
+========================================================================
+Block 8: companion note content
+========================================================================
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_status_change
+PASS companion_marks_audit_values_informational
+PASS companion_documents_current_staggered_boundary
+PASS companion_disclaims_mass_derivation
+
+========================================================================
+Summary
+========================================================================
+TOTAL: PASS=92, FAIL=0

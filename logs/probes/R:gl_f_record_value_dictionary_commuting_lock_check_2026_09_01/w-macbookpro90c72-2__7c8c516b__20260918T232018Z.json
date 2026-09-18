@@ -1,0 +1,35 @@
+{
+ "task": "R:gl_f_record_value_dictionary_commuting_lock_check_2026_09_01",
+ "type": "runner-reexecution",
+ "lane": "gl",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gl_f_record_value_dictionary_commuting_lock_check_2026_09_01.py",
+ "seed": 73618,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8c516b",
+ "started_utc": "20260918T232018Z",
+ "elapsed_s": 3.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b3a5433d829dda4490456c973e00fd45640dceb778ec55c661c84f40c6869ee",
+ "stdout_tail": "= lam**2/(lam**4 + 27)\nPASS C8 lam=0: edge two-point = 0\nPASS C9 lam=0: distance-2 two-point = 0\nPASS C10 sandwiched anticommutator = 2|F|^2x|F|^2 = 1/18, ALL lam (P2)\nPASS C11 sandwiched witness nonzero at lam=0\nPASS D P2: induced state has exact unit trace\nPASS D P2: tr(rho_lam sp^0 sm^1) = classical two-point\nPASS D P3: induced state has exact unit trace\nPASS D P3: tr(rho_lam sp^0 sm^2) = classical two-point\nPASS E1 JW family: exact CAR (cross-site anticommutators are the ZERO operator => every state annihilates every sandwiched insertion)\nPASS E2 vacuum: c_x |0> = 0 for all x\nPASS E3 graded cross-site two-point <c0^dag c1> = 1/2 != 0 in state chi\nPASS E4 same state, anticommutator insertion = 0 (operator identity)\nper_element: checked and executed -- pointwise scalar commutation and the exact polynomial sandwich identity were evaluated\nper_site: checked and executed -- declared cross-site pairs and every pair of the N=3 Jordan-Wigner comparator were checked\nper_mode: checked and not executed -- no momentum, spectral, continuum, propagator, or dynamical mode claim is made\nper_block: checked and executed -- P2, P3, C4, and the N=3 tensor carrier were evaluated with exact arithmetic\nlattice_wide: checked and not executed -- the universal result is algebraic; no infinite-volume or physical-lattice lift is claimed\nSUMMARY pointwise scalar frame: anticommutator moment == 2 x product moment; graded comparator: anticommutator == 0 with static two-point 1/2.\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

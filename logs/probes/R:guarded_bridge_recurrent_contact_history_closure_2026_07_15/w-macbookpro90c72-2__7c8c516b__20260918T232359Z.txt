@@ -1,0 +1,6 @@
+ITER 0 ROWS 13 RAW 9422 GRAPH 1002 3285 0 6 BAD ((12, 'diamond', (-1, 2, -1), (-1, 2, -2)),) REACHED 28
+DIAMOND_VARIANT (-1, 2, -1) THEN (-1, 2, -2) True ((-1, 2, -2), 'JOINT', (((0, 0, 1), 'T_H3'), ((0, 1, 0), 'R_C01'), ((1, 0, 0), 'GU')))
+DIAMOND_VARIANT (-1, 2, -2) THEN (-1, 2, -1) True ((-1, 2, -1), 'T_H3', (((0, 0, -1), 'JOINT'), ((0, 0, 1), 'A_0_2'), ((0, 1, 0), 'W1'), ((1, 0, 0), 'W3')))
+ITER 1 ROWS 15 RAW 9470 GRAPH 232960 1191560 1 8 BAD () REACHED 155
+ADDED [((-1, 2, -2), 'JOINT', (((0, 0, 1), 'T_H3'), ((0, 1, 0), 'R_C01'), ((1, 0, 0), 'GU'))), ((-1, 2, -1), 'T_H3', (((0, 0, -1), 'JOINT'), ((0, 0, 1), 'A_0_2'), ((0, 1, 0), 'W1'), ((1, 0, 0), 'W3')))]
+RESULT GUARDED_BRIDGE_RECURRENT_HISTORY_CLOSED

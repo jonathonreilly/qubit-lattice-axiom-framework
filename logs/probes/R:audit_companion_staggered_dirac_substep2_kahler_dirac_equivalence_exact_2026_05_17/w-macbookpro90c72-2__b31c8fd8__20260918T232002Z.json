@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
+ "seed": 73602,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T232002Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=64, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9e238b6f4cc4e2945828d026801905bcdab9fd1306b3826c258fc787441d8d91",
+ "stdout_tail": "Neuberger PLB 417 (1998) 141; non-local sits outside narrow uniqueness frame)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (E1) per-hypercube Z\u2082^d-indexed component count = 2^d (d = 1..4)\n         at d = 4, 16 matches cited substep-3 BZ-corner count\n    (E2) form-complex total dim \u2211_p binom(d, p) = 2^d (d = 1..6)\n    (E3) Hamming-weight \u2194 form-degree bijection card{hw=p} = binom(d, p)\n    (E4) d\u00b2 = 0 on \u039b^*(C^d) at d = 2, 3, 4 (sympy exact matrices)\n    (E4) \u03b4\u00b2 = 0 on \u039b^*(C^d) at d = 2, 3, 4\n    (E4) \u03b4 = d^T adjointness on orthonormal basis\n    (E4) D_KD = d - \u03b4 reverses form-degree parity (zero diagonal blocks)\n    (E4) D_KD\u00b2 = -(d\u03b4 + \u03b4d) Hodge-Laplacian decomposition\n    (E5) 2^d = N_spinor \u00b7 N_taste factorization at even d (d = 2, 4, 6, 8)\n    (E5) at d = 4, spinor-count 4 matches Cl(3) chirality-pair dim sum 2+2=4\n    (E6) D_KD\u2020 = -D_KD, (i\u00b7D_KD)\u2020 = i\u00b7D_KD (Hermitian Dirac)\n    (E7) Wilson D_W = D_KD + r\u00b7I has nonzero \u039b^p\u2192\u039b^p blocks (parity broken)\n    (E8) substep-1 JW Fock dim \u2260 form-complex dim (input boundary preserved)\n    Counter-examples: odd d (no N_spin \u00b7 N_taste); overlap (non-local)\n\n========================================================================================\nTOTAL: PASS=64, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232002Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

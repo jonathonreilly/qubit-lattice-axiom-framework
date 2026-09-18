@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py",
+ "seed": 73366,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231606Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "87fb5a54299ba782ae3bf4cd0246ed7439b18849ccdc507acb47368f9d53a390",
+ "stdout_tail": "-----------------------------\n  [PASS] [R10] At ORDER=48 the (r=2, d=10) matching matrix has rank == num_unknowns  (rank = 33, num_unknowns = 33, kernel_dim = 0)\n  [PASS] [R11] At ORDER=48 the (r=2, d=11) matching matrix has rank == num_unknowns  (rank = 36, num_unknowns = 36, kernel_dim = 0, slack = 8)\n\n----------------------------------------------------------------------------------------\nPart 5: [R12B] cross-check at ORDER=52 (stability under depth)\n----------------------------------------------------------------------------------------\n  [PASS] [J0-52] a_0 == 1 (re-normalized at ORDER=52)  (a_0 = 1)\n  [PASS] [J2-52] a_2 == 1/36 (re-normalized at ORDER=52)  (a_2 = 1/36)\n  [PASS] [R12B] At ORDER=52 the (r=2, d=12) matching matrix has rank == num_unknowns  (rank = 39, num_unknowns = 39, kernel_dim = 0)\n  [PASS] [R12B] Conclusion is stable under increasing Taylor depth (ORDER=48 and ORDER=52 agree)  (both ORDER values yield kernel_dim = 0 at (r=2, d=12))\n\n----------------------------------------------------------------------------------------\nPart 6: bookkeeping write-out\n----------------------------------------------------------------------------------------\n    Output written: outputs/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.json\n\n========================================================================================\nTOTAL: PASS=15, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231607Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

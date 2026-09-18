@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
+ "seed": 73411,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231651Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d3e14083763eb585e41ecab04e8ab8a4c47963de0a35bbfd612ff11bbe4da48f",
+ "stdout_tail": "REAL-DIAGONAL-SOURCE DETERMINANT POSITIVITY + READOUT-BRIDGE FIREWALL\n============================================================================\n[PASS] L1: det(S+D)>0 is real on positive-diagonal S + real antisymmetric D\n       400 deterministic-seed cases; minimum determinant=0.3146\n[PASS] L1 mechanism: real antisymmetric spectrum is imaginary-paired and det(I+B)>=1\n       n=5: max|Re eig|=5.4e-16, det(I+B)=73.531566; n=6: max|Re eig|=7.1e-17, det(I+B)=46.824172\n[PASS] L2: ||D^{-1}J||<1 keeps det(D+tJ)>0 on t in [0,1]\n       200 deterministic-seed invertible patches\n[PASS] L3 firewall premise check: determinant remains multiplicative on direct sums\n       det(S1 direct_sum S2)=16.0\n[PASS] L3 firewall countermodel: continuous block-additive readout need not be determinant-only\n       det(S1)=det(S2)=4.0; Tr(S1)=5.0, Tr(S2)=4.0; W_eps(S1)=2.636294, W_eps(S2)=2.386294\n[PASS] Scope guard: the bounded-theorem block contains only L1/L2 determinant positivity\n       Record/readout bridge vocabulary is confined to the separate open boundary\n[PASS] Scope guard: the note explicitly leaves both L3 bridges conditional/open\n       required determinant-only, source-to-record, and normalization firewalls are present\n\nSCORECARD PASS=7 FAIL=0\nRESULT: L1/L2 determinant positivity checks pass. The exact countermodel and source-scope guards prevent this runner or note from licensing a determinant-only readout, a source-block-to-record bridge, or c log det. Independent audit lane owns status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231651Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

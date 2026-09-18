@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_pmns_right_conjugacy_invariant_record_axiom_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_pmns_right_conjugacy_invariant_record_axiom_invariance_2026_06_04.py",
+ "seed": 73368,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231608Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f935cc92e125ece56ffae4fc452e518f49955c6026b7ac19aebacd39a590e67",
+ "stdout_tail": "R_BRIDGE_NONREALIZATION_NOTE.md\n  PASS upstream_observable_principle_note_present :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md\n  PASS scalar_bridge_string_match_at_least_one_variant :: v1=True; v2=True\n  PASS observable_principle_string_match_at_least_one_variant :: v1=True; v2=False\n\n========================================================================\nTOTAL PASS: 70\nTOTAL FAIL: 1\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing chain of PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md\n  (right-orbit invariance of K's spectral signature + explicit\n  parent-runner witnesses showing m_R and |K_12| vary on the orbit\n  + direct contraposition) uses ONLY finite-dimensional matrix\n  algebra over C (Hermitian conjugation, U(3) action, spectral\n  invariants) plus the Lattice + Quantum axiom context.\n  The Record axiom (additive scalar record-readout functional) is\n  neither used nor invoked. The numeric outputs of the load-bearing\n  chain are identical under both 'Record axiom asserted' and\n  'Record axiom not asserted' outer scopes.\n\nThe audit lane decides whether this evidence is sufficient to\nre-honor the prior judicial verdict pattern (algebra-clean\nconditional on upstream-naming inputs) on the new premise hash,\nor whether a fresh per-claim audit is warranted. This companion\nsupplies machine-checkable evidence; it does not set status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231608Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_pmns_right_conjugacy_invariant_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

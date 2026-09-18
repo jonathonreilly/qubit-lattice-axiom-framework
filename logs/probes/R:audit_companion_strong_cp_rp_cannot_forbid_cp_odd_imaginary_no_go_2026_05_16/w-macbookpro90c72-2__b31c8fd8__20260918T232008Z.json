@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_strong_cp_rp_cannot_forbid_cp_odd_imaginary_no_go_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_strong_cp_rp_cannot_forbid_cp_odd_imaginary_no_go_2026_05_16.py",
+ "seed": 73608,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T232008Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16  FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f7058b3a17f209278584cb3c6d098e990f198b5a0d96f9ff7692a46a12e8f7d2",
+ "stdout_tail": "r acceptance window of 50 to 200 around a predicted ratio of 100, and the comparison tolerances 1e-12 and 1e-14. The residual magnitudes those tolerances judge are floating quantities that move between environments, so none of them is reproduced here; the structural statements above rest on the tolerances themselves.\nDeterminism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in this runner. The coupling values form a fixed three-element list rather than a sampled sweep, orbit enumeration is deduplicated by an explicit frozenset key so no traversal order can double count an orbit, the exact legs run in sympy rational and symbolic arithmetic, and both carriers are enumerated in ascending index order.\n==============================================================================\nPASS=16  FAIL=0\n==============================================================================\n\nAll checks passed. On the cited retained Theta-invariant real RP half-action\ncarrier, a CP-odd imaginary addition S_CP = i c h (c != 0, h real\nTheta-anti-invariant) does NOT break the symmetric half-square reflected\nexpectation's real non-negativity; the single-side diagnostic remains real.\nThis realises the\nnarrow no-go: the 'no bare \u03b8 slot' premise of strong_cp_theta_zero_note\ncannot be derived from retained RP alone. Reusable negative evidence: a\ndifferent ingredient (closed-form Z_Q positivity, action-class\ntightening, or measure-theoretic primitive) is needed to close the gap.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232009Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

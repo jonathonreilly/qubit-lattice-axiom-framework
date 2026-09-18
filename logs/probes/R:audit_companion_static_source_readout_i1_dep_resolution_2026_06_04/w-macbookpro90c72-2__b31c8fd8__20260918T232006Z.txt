@@ -1,0 +1,114 @@
+
+========================================================================
+Static-source readout I1 current-source hygiene companion
+========================================================================
+Parent note: docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md
+Parent runner: scripts/static_source_readout_i1_accepted_premise_runner.py
+Companion note: docs/STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+Scope: meta evidence only; no theorem claim and no audit-status change.
+Audit-lane values are informational metadata, not pass/fail targets.
+
+========================================================================
+Block 1: live parent runner
+========================================================================
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_verdict_present
+PASS parent_runner_exact_summary_present
+PASS parent_runner_bounded_summary_present
+PASS parent_runner_total_summary_present
+PASS parent_runner_exact_pass_count_at_least_48 :: pass=48
+PASS parent_runner_exact_fail_count_zero :: fail=0
+PASS parent_runner_bounded_pass_count_at_least_11 :: pass=11
+PASS parent_runner_bounded_fail_count_zero :: fail=0
+PASS parent_runner_total_pass_count_at_least_59 :: pass=59
+PASS parent_runner_total_fail_count_zero :: fail=0
+PASS parent_runner_no_stderr_traceback
+
+========================================================================
+Block 2: ledger row presence and live metadata
+========================================================================
+PASS parent_row_present
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS companion_row_present
+PASS companion_status_fields_present :: effective_status=meta audit_status=unaudited
+PASS companion_claim_type_field_present :: claim_type=meta
+PASS alpha_dep_row_present
+PASS alpha_dep_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS alpha_dep_claim_type_field_present :: claim_type=bounded_theorem
+PASS gbare_dep_row_present
+PASS gbare_dep_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS gbare_dep_claim_type_field_present :: claim_type=bounded_theorem
+PASS green_dep_row_present
+PASS green_dep_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS green_dep_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_runner_path_expected
+PASS parent_deps_include_current_required_sources :: deps=3
+PASS parent_note_hash_matches_ledger
+PASS alpha_dep_note_hash_matches_ledger
+
+========================================================================
+Block 3: parent runner source boundary
+========================================================================
+PASS parent_source_firewall_list_stripped
+PASS parent_runner_no_audit_status_field_outside_source_firewall_list
+PASS parent_runner_no_effective_status_field_outside_source_firewall_list
+PASS parent_runner_no_intrinsic_status_field_outside_source_firewall_list
+PASS parent_runner_no_audit_ledger_name_outside_source_firewall_list
+PASS parent_runner_no_audit_grade_phrase_outside_source_firewall_list
+PASS parent_runner_no_retained-bounded-value_outside_source_firewall_list
+PASS parent_runner_no_audited-clean-value_outside_source_firewall_list
+PASS parent_runner_no_audited-conditional-value_outside_source_firewall_list
+
+========================================================================
+Block 4: parent and dependency source content
+========================================================================
+PASS parent_declares_independent_status_authority
+PASS parent_registers_static_source_premise
+PASS parent_proof_walk_has_B1_to_B4
+PASS parent_names_exact_substitution_arithmetic
+PASS parent_note_no_dep_grade_dependency_phrase_0
+PASS parent_note_no_dep_grade_dependency_phrase_1
+PASS parent_note_no_dep_grade_dependency_phrase_2
+PASS parent_note_no_dep_grade_dependency_phrase_3
+PASS parent_note_no_dep_grade_dependency_phrase_4
+PASS alpha_dep_contains_dimensionless_coupling_identity
+PASS alpha_dep_keeps_i1_isolation_boundary
+
+========================================================================
+Block 5: symbolic substitution chain
+========================================================================
+PASS sympy_importable
+PASS B1_substitution_residual_zero
+PASS B2_alpha_definition_holds
+PASS B3_alpha_form_consistent_with_B1
+PASS B4_alpha_at_gbare_one_equals_one_over_four_pi
+PASS B4_V_at_gbare_one_equals_minus_C_over_four_pi_r
+PASS B1_to_B3_composite_chain_identity
+
+========================================================================
+Block 6: numerical alpha and Casimir checks
+========================================================================
+PASS alpha_num_matches_expected
+PASS alpha_num_recomputed_matches
+PASS C_F_at_N_c_3_equals_four_thirds
+PASS V_chain_equals_V_alpha_form_at_r_5 :: err=3.469e-18
+PASS V_chain_equals_V_alpha_form_at_r_10 :: err=1.735e-18
+PASS V_chain_equals_V_alpha_form_at_r_20 :: err=8.674e-19
+PASS V_chain_equals_V_alpha_form_at_r_50 :: err=4.337e-19
+
+========================================================================
+Block 7: companion note content
+========================================================================
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_status_change
+PASS companion_marks_audit_values_informational
+PASS companion_documents_current_parent_tally
+PASS companion_disclaims_static_source_premise_resolution
+
+========================================================================
+Summary
+========================================================================
+SUMMARY: PASS=71 FAIL=0
+FINAL_TAG: STATIC_SOURCE_READOUT_I1_DEP_RESOLUTION_HYGIENE_OK

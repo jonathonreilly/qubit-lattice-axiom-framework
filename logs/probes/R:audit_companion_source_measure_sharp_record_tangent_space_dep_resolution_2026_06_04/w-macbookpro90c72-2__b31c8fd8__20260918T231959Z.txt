@@ -1,0 +1,77 @@
+========================================================================
+Source/Measure Sharp-Record Tangent-Space
+Dep-Resolution Hygiene Companion Runner (2026-06-04)
+========================================================================
+
+Repo root: <repo>
+Parent note: docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md
+Parent runner: scripts/frontier_source_measure_sharp_record_tangent_space.py
+Dep note: docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md
+Companion source note: docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md
+
+Goal: verify the parent's load-bearing substantive content does
+      not load-bear on the *audit grade* of its dep
+      `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+      (which moved from bounded treatment into pending handling).
+
+Scope: pure audit-companion evidence; no theorem claim,
+       no direct status change, no verdict content asserted.
+
+========================================================================
+BLOCK 1: Re-execute parent runner on current head; expect PASS=38 FAIL=0
+========================================================================
+  FAIL parent_runner_exit_zero :: returncode=1
+  FAIL parent_runner_summary_thirty_eight_pass_zero_fail :: looking for 'SUMMARY: PASS=38 FAIL=0' in stdout
+  FAIL parent_runner_no_stderr_errors :: stderr length=1875
+  PASS parent_runner_wrote_outputs_json :: outputs JSON exists at outputs/source_measure_sharp_record_tangent_space_2026-05-30.json
+
+========================================================================
+BLOCK 2: Re-verify load-bearing finite-probability algebra directly
+========================================================================
+  PASS sympy_importable :: imported sympy
+  PASS probability_tangent_sums_to_zero :: sum(dp)=0
+  PASS rn_score_zero_reference_mean :: E_0[s]=0
+  PASS fisher_norm_generic_two_outcome_is_4a_squared :: E_0[s^2]=4*a**2
+  PASS primitive_score_is_signed_record :: score_prim=[1, -1]
+  PASS primitive_dp_sums_to_zero :: sum(dp_prim)=0
+  PASS primitive_signed_record_fisher_norm_one :: E_0[s^2]=1
+  PASS lambda_scaled_fisher_norm_is_lambda_squared :: fisher_lam=lambda**2
+  PASS unit_fisher_condition_selects_lambda_one :: lambda solves to [1]
+
+========================================================================
+BLOCK 3: Parent runner contains zero generated-status or verdict references
+========================================================================
+  FAIL parent_runner_no_forbidden_token_audit_state_field :: absent from parent runner source
+  FAIL parent_runner_no_forbidden_token_effective_state_field :: absent from parent runner source
+  PASS parent_runner_no_forbidden_token_intrinsic_state_field :: absent from parent runner source
+  FAIL parent_runner_no_forbidden_token_bounded_grade_field :: absent from parent runner source
+  FAIL parent_runner_no_forbidden_token_clean_verdict_field :: absent from parent runner source
+  PASS parent_runner_no_forbidden_token_conditional_verdict_field :: absent from parent runner source
+  PASS parent_runner_no_forbidden_token_no_go_grade_field :: absent from parent runner source
+  FAIL parent_runner_no_forbidden_token_audit_ledger_reference :: absent from parent runner source
+  PASS parent_runner_no_forbidden_token_audit_grade_reference :: absent from parent runner source
+
+========================================================================
+BLOCK 4: Parent note contains no claim of dep-grade dependency
+========================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_source_measure_sharp_record_tangent_space_dep_resolution_2026_06_04.py", line 596, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_source_measure_sharp_record_tangent_space_dep_resolution_2026_06_04.py", line 578, in main
+    block4_parent_note_no_grade_dependency_claim()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_source_measure_sharp_record_tangent_space_dep_resolution_2026_06_04.py", line 295, in block4_parent_note_no_grade_dependency_claim
+    note_text = PARENT_NOTE.read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md'

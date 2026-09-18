@@ -1,0 +1,56 @@
+BOUNDARY: conjugate-pair cancellation is an explicit supplied condition, not a consequence of finite Record additivity.
+PASS: D1 symbolic conjugation reverses the determinant phase
+PASS: D2 circle witnesses are branch-independent and two-pi periodic
+PASS: D3 odd plus even forces the real scalar phase contribution to zero
+PASS: C1 supplied conjugate-pair cancellation implies oddness
+PASS: C2 sine finite-record readout is additive under disjoint union
+PASS: C3 sine readout cancels every tested conjugate pair exactly
+PASS: C4 sine readout registers phase
+PASS: C5 sine readout is not K/CPT-orbit-constant
+PASS: C6 sine witness is smooth on the phase circle
+PASS: H1 symbolic independent-block determinant multiplication
+PASS: H2 k=1 character respects arbitrary finite block composition
+PASS: H3 k=1 character registers phase
+PASS: H4 k=1 character is not K/CPT-orbit-constant
+PASS: H5 k=1 character is smooth and single-valued
+PASS: H6 character orbit constancy for every phase forces k=0
+PASS: O1 cosine finite-record readout is additive under disjoint union
+PASS: O2 cosine finite-record readout is exactly orbit-constant
+PASS: O3 cosine violates conjugate-pair cancellation
+PASS: O4 cosine violates the determinant-character product law
+PASS: O5 cosine registers phase
+PASS: O6 cosine witness is real, smooth, and circle-periodic
+PASS: T1 route-relative minimality uses full predicates, not parity labels
+PASS: N1 obligation physical closure criterion
+PASS: N2 phase-erasure hostile guard
+PASS: N3 Record-additivity non-supply boundary
+PASS: N4 orbit bridge assigns work to the homomorphism boundary, not Record
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py", line 318, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py", line 303, in main
+    checks.needle(
+    ~~~~~~~~~~~~~^
+        "N5 target note carries the narrowed theorem and discipline result",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        ),
+        ^^
+    )
+    ^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/theta_cross_sector_determinant_forcing_property_characterization_2026_07_17.py", line 43, in needle
+    haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/THETA_CROSS_SECTOR_DETERMINANT_FORCING_PROPERTY_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md'

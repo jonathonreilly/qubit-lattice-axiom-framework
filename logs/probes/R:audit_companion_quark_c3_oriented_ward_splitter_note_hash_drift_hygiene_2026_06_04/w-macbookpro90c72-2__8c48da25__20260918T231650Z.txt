@@ -1,0 +1,90 @@
+
+========================================================================
+Quark C3 Ward splitter current-source hygiene companion
+========================================================================
+Parent note: docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md
+Parent runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py
+Scope: meta evidence only; no theorem claim and no audit-status change.
+Audit-lane values are informational metadata, not pass/fail targets.
+
+========================================================================
+Block 1: live parent runner
+========================================================================
+FAIL parent_runner_exit_zero :: exit=1
+PASS parent_runner_total_line_present
+FAIL parent_runner_pass_count_at_least_58 :: pass=57
+FAIL parent_runner_fail_count_zero :: fail=1
+FAIL parent_runner_reports_support_boundary_result
+PASS parent_runner_reports_dependency_graph_repair_block
+
+========================================================================
+Block 2: ledger row presence and live metadata
+========================================================================
+PASS parent_ledger_row_present
+PASS parent_note_exists
+PASS parent_runner_exists
+FAIL companion_note_exists
+PASS parent_runner_path_expected
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_criticality_field_present :: criticality=leaf
+PASS parent_load_field_present :: load=1.5
+PASS parent_note_hash_field_present
+PASS parent_note_hash_matches_ledger
+FAIL parent_deps_include_current_required_sources :: required=4 row_deps=3
+PASS staggered_gate_not_a_current_row_dependency :: staggered_dep_present=False
+PASS helper_runner_paths_field_present :: count=0
+FAIL required_dep_row_present_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18
+FAIL required_dep_status_fields_present_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 :: missing row
+PASS required_dep_row_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28
+PASS required_dep_status_fields_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: effective_status=unaudited audit_status=unaudited
+PASS required_dep_row_present_s3_taste_cube_decomposition_note
+PASS required_dep_status_fields_present_s3_taste_cube_decomposition_note :: effective_status=unaudited audit_status=unaudited
+PASS required_dep_row_present_three_generation_observable_theorem_note
+PASS required_dep_status_fields_present_three_generation_observable_theorem_note :: effective_status=unaudited audit_status=unaudited
+PASS previous_audit_history_field_present
+
+========================================================================
+Block 3: current parent note content
+========================================================================
+PASS parent_declares_independent_status_authority
+PASS parent_has_dependency_rewire_section
+PASS parent_has_dependency_repair_section
+PASS parent_has_machine_visible_dependency_links
+PASS parent_note_markdown_links_required_dep_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 :: QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+PASS parent_note_markdown_links_required_dep_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
+PASS parent_note_markdown_links_required_dep_s3_taste_cube_decomposition_note :: S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
+PASS parent_note_markdown_links_required_dep_three_generation_observable_theorem_note :: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+PASS staggered_gate_kept_as_plain_text_pointer
+PASS parent_notes_staggered_gate_not_load_bearing
+PASS parent_note_keeps_finite_c3_scope
+PASS parent_note_keeps_lane3_open_boundary
+PASS parent_note_disclaims_numerical_quark_ratios
+PASS parent_note_disclaims_absolute_non_top_scale
+PASS parent_note_disclaims_status_change
+
+========================================================================
+Block 4: companion note content
+========================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_quark_c3_oriented_ward_splitter_note_hash_drift_hygiene_2026_06_04.py", line 380, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_quark_c3_oriented_ward_splitter_note_hash_drift_hygiene_2026_06_04.py", line 370, in main
+    block4_companion_note_content()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_quark_c3_oriented_ward_splitter_note_hash_drift_hygiene_2026_06_04.py", line 268, in block4_companion_note_content
+    text = COMPANION_NOTE.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md'

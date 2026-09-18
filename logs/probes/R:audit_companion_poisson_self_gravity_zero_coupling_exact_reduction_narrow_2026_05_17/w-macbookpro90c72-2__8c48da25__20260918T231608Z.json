@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17.py",
+ "seed": 73368,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231608Z",
+ "elapsed_s": 41.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "46a851db7c43b2fb059b900bf9782c015607ab3b33d8a9d6905e341706ae0a8e",
+ "stdout_tail": "------------------------------------------------------------------\nPart 4: cross-check vs cached run\n----------------------------------------------------------------------------------------\n  [PASS (A)] Part 4 \u2014 cached run: zero-epsilon shift = +0.000000e+00 (matches theorem)  (zero-epsilon centroid shift: +0.000000e+00)\n  [PASS (A)] Part 4 \u2014 cached run: zero-epsilon escape = 1.000000 (matches theorem)  (zero-epsilon escape ratio:   1.000000)\n  [PASS (A)] Part 4 \u2014 cached run: iter count <= 2 (matches Part 2)  (zero-epsilon iters/residual:  2 / 0.000e+00)\n\n----------------------------------------------------------------------------------------\nSCORECARD\n----------------------------------------------------------------------------------------\n\n  PASS = 33\n  FAIL = 0\n\n  [BOUNDARY] explicit boundary guards (printed only):\n    - Does NOT promote poisson_self_gravity_loop_note or change its independent audit posture.\n    - Does NOT claim nonzero-coupling convergence, weak-field saturation, or backreaction.\n    - Does NOT ratify the upstream minimal_source_driven_field_probe_note.\n    - Does NOT depend on V3 sibling's _run_loop (different runner, different short-circuit).\n    - Holds on standards-compliant IEEE-754 float64 implementations (CPython on x86_64/arm64).\n\n  STATUS: ALL EXACT-IDENTITY CHECKS PASS\n  CLOSURE: Zero-coupling reduction of the Poisson self-gravity loop\n           runner is a bit-exact code identity, not a numerical\n           coincidence. Class A narrow theorem.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231649Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

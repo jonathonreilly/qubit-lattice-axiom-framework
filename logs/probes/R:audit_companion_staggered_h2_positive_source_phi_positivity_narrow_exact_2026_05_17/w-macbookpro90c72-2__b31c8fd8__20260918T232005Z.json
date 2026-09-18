@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py",
+ "seed": 73605,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T232005Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "444234428a01f556c7740ec186faf10110a7cf45ab04d12792881b21a165f052",
+ "stdout_tail": " >= 0  (min entry = 4.762e-02)\n  [PASS (A)] Part 5 -- spectrum of (I + L/mu^2) lies in [1, 1 + lambda_max(L)/mu^2]  (min=1.000000, max=4.414214)\n\n----------------------------------------------------------------------------------------\nPart 6: Boundary guard -- what this theorem does NOT claim\n----------------------------------------------------------------------------------------\n    NOT-claim: Does NOT derive H1 (screened-Poisson bridge); H1 remains imported.\n    NOT-claim: Does NOT derive H3 (G > 0) or H4 (mu^2 > 0); both are card operating points.\n    NOT-claim: Does NOT touch H5 (static lattice), H6 (graph family enumeration),\n    NOT-claim:   H7 (eigensolve gate), or H9 (staggered-Dirac structure).\n    NOT-claim: Does NOT prove force-direction H8; H8 is the separate well/hill claim.\n    NOT-claim:   This note only certifies the unsigned chain rho >= 0 ==> Phi >= 0.\n    NOT-claim: Does NOT claim universality outside finite simple undirected graphs.\n    NOT-claim: Does NOT replace the staggered fermion card; it narrows the admitted\n    NOT-claim:   bundle from {H1,...,H9} to {H1,H3,H4,H5,H6,H7,H8,H9} for the\n    NOT-claim:   positivity sub-chain after independent audit ratifies this row.\n  [PASS (A)] Part 6 -- boundary guard printed (8 explicit NOT-claims)\n\n========================================================================================\nAudit-companion summary: 47 PASS, 0 FAIL\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232006Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

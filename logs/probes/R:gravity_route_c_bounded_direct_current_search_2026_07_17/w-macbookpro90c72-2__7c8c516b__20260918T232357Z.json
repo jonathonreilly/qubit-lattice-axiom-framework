@@ -1,0 +1,32 @@
+{
+ "task": "R:gravity_route_c_bounded_direct_current_search_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "gravity",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gravity_route_c_bounded_direct_current_search_2026_07_17.py",
+ "seed": 73837,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8c516b",
+ "started_utc": "20260918T232357Z",
+ "elapsed_s": 2.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9f233506e729e1e080a7b8ee03ce00168429c543b04357d51795b3c28841bc84",
+ "stdout_tail": "748852, 'fixed_N_branch_charge': [1.8136226166995408, 1.8136226166995408]}\nPASS the equal-N Cycle-289 contact branches separate number charge from contact action :: {'number_charge': [1.8136226166995408, 1.8136226166995408], 'contact_action_coordinate': [0.37, 2.2199999999999998]}\nPASS the candidate mass/source charge is spectator invariant :: {'base': 0.4534056541748852, 'with_spectator': 0.4534056541748854}\n\nFINITE-COIN STATIC SOURCE / RESPONSE FIXTURE\nPASS the mass-normalized number charge matches the Cycle-216 scalar source port and exact static Green response :: {'mass_charge': 0.4534056541748852, 'green_match_residual': 3.9972584646685294e-15, 'composition_residual': 0.0}\nPASS the direct number current is phase robust but the selected Cycle-216 stiffness response retains its explicit phase-reference import :: {'base_scalar_response': 12.133172216206441, 'phase_shifted_scalar_response': 41.05831967362574, 'alpha': 0.4}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS invalid size, radius, and beta inputs are rejected rather than extrapolated :: {'rejected': 3}\nPASS the runner keeps the action, source, stiffness, clock, phase zero, state, and physical interpretation supplied :: {'supplied': 'Cycle-269 mapped even-CAR code; six-direction coins; beta and mass map; contact coupling/order; diagonal separation basis and radius; periodic boundary; Q=mN source identification; Cycle-216 stiffness/action and phase zero; zero-mode subtraction; prepared source/state'}\n\nTOTAL PASS=22 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232359Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

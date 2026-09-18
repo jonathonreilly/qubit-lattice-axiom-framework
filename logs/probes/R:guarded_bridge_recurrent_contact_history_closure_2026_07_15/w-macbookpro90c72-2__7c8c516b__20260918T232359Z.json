@@ -1,0 +1,31 @@
+{
+ "task": "R:guarded_bridge_recurrent_contact_history_closure_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "guarded",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/guarded_bridge_recurrent_contact_history_closure_2026_07_15.py",
+ "seed": 73839,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8c516b",
+ "started_utc": "20260918T232359Z",
+ "elapsed_s": 65.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e8926e177f8e750f0647c99d600790156ef6b31138ed4405b1c6d23d823e99fe",
+ "stdout_tail": "ITER 0 ROWS 13 RAW 9422 GRAPH 1002 3285 0 6 BAD ((12, 'diamond', (-1, 2, -1), (-1, 2, -2)),) REACHED 28\nDIAMOND_VARIANT (-1, 2, -1) THEN (-1, 2, -2) True ((-1, 2, -2), 'JOINT', (((0, 0, 1), 'T_H3'), ((0, 1, 0), 'R_C01'), ((1, 0, 0), 'GU')))\nDIAMOND_VARIANT (-1, 2, -2) THEN (-1, 2, -1) True ((-1, 2, -1), 'T_H3', (((0, 0, -1), 'JOINT'), ((0, 0, 1), 'A_0_2'), ((0, 1, 0), 'W1'), ((1, 0, 0), 'W3')))\nITER 1 ROWS 15 RAW 9470 GRAPH 232960 1191560 1 8 BAD () REACHED 155\nADDED [((-1, 2, -2), 'JOINT', (((0, 0, 1), 'T_H3'), ((0, 1, 0), 'R_C01'), ((1, 0, 0), 'GU'))), ((-1, 2, -1), 'T_H3', (((0, 0, -1), 'JOINT'), ((0, 0, 1), 'A_0_2'), ((0, 1, 0), 'W1'), ((1, 0, 0), 'W3')))]\nRESULT GUARDED_BRIDGE_RECURRENT_HISTORY_CLOSED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232505Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

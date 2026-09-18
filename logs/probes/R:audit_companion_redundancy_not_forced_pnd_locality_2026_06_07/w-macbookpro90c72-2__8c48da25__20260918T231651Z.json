@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_redundancy_not_forced_pnd_locality_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py",
+ "seed": 73411,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231651Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b0a871f5c315d87fd334e8a44485aff8636338ece399fe2686a5e8df71d19cb3",
+ "stdout_tail": "R_delta is a whole-environment count over all disjoint single-site fragments, evaluated on a fixed 5-site Qubit chain in section A and a fixed 3-site chain in sections B and C. No size is extrapolated, no sequence in N is compared and no thermodynamic limit is taken; the runner's own docstring frames the genericity result as a bounded empirical statement rather than a measure-zero claim, and this certificate keeps it there.\n  provenance: section B is Monte Carlo over a seeded stream, np.random.seed(0) with 300 Gaussian coupling draws at each of two times (t = 1 and t = pi/4), scored against the deficit delta = 0.1 and a hit-rate threshold of 0.05. No sampled hit rate is quoted in the certificate above; only draw count, times, thresholds and seed are named, and this block draws no random number of its own.\n\nSCORECARD PASS=7 FAIL=0\nVERDICT (NO-GO): redundant broadcast / local observability is NOT forced by {durability/PND (clean, redundancy-free) + Z^3-locality + leading-range}. Under the sampled coupling family and times it is rare and fine-tuned (pure single-site-sum monitoring at the CNOT time); a randomly sampled pointer-non-demolition coupling is non-redundant. The premise that does force it -- a pure sum of independent single-site monitorings (conditional independence / multiplicity) -- IS local observability restated. This CONFIRMS + QUANTIFIES the landed open-gate note: local observability is a NAMED OPEN PREMISE not supplied by the axioms. Audit lane sets the verdict.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231652Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

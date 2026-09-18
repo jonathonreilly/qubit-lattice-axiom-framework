@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_2026_06_04.py",
+ "seed": 73410,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231650Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=92, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18709b4eb20cbb89db57b664ba832f26cac0e0ea764528c049bb26f1daab805c",
+ "stdout_tail": "nunit :: m_b=8.3600000000\nPASS rescale_10.0_preserves_m_d_over_m_s\nPASS rescale_10.0_preserves_m_s_over_m_b\nPASS rescale_10.0_preserves_m_d_over_m_b\nPASS rescale_10.0_moves_absolute_anchor_when_nonunit :: m_b=41.8000000000\nPASS top_channel_ward_ratio_exact\nPASS species_uniform_bottom_comparator_overshoot_gt_30 :: overshoot=34.71\nPASS species_uniform_bottom_comparator_overshoot_about_35\n\n========================================================================\nBlock 7: Record-axiom counterfactual\n========================================================================\nPASS with_record_blocks_retention\nPASS with_record_ratio_invariant\nPASS with_record_overshoot_large\nPASS without_record_blocks_retention\nPASS without_record_ratio_invariant\nPASS without_record_overshoot_large\nPASS counterfactual_boolean_outputs_identical\nPASS counterfactual_numeric_outputs_identical :: diff=0.000e+00\n\n========================================================================\nBlock 8: companion note content\n========================================================================\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_status_change\nPASS companion_marks_audit_values_informational\nPASS companion_documents_current_staggered_boundary\nPASS companion_disclaims_mass_derivation\n\n========================================================================\nSummary\n========================================================================\nTOTAL: PASS=92, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

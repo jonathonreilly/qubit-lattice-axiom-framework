@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_s1_rep_dimension_readoff_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_s1_rep_dimension_readoff_exact_2026_05_10.py",
+ "seed": 73527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231847Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6aba3319929df3d83a9243ff82d30fce7f6e2c2c8b55b9e8ba22b8d22221adc3",
+ "stdout_tail": "----------\n  [PASS (A)] non-framework (4, 7): n_pair = 4, n_color = 7, n_quark = 28  (A^2 = 4/7)\n  [PASS (A)] non-framework (4, 7): A^2 = 4/7  (got A^2 = 4/7)\n  [PASS (A)] non-framework (4, 7): A^4 = 16/49  (got A^4 = 16/49)\n\n----------------------------------------------------------------------------------------\nPart 10: independence-from-framework checks (free_symbols)\n----------------------------------------------------------------------------------------\n  [PASS (A)] parametric A^2 has free_symbols {p, c}  (free_symbols of A^2 = {c, p})\n  [PASS (A)] parametric n_quark has free_symbols {p, c}  (free_symbols of n_quark = {c, p})\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (R1) n_pair = p parametric\n    (R2) n_color = c parametric\n    (R3) n_quark = p * c parametric\n    (R4) A^2 = p / c parametric\n    (C1) A^4 = p^2 / c^2 parametric\n    (C2), (C3) cross-check identities\n    Framework (2, 3): (n_pair, n_color, n_quark, A^2, A^4) = (2, 3, 6, 2/3, 4/9)\n    Non-framework (3, 5): (3, 5, 15, 3/5, 9/25)\n    Non-framework (4, 7): (4, 7, 28, 4/7, 16/49)\n    Free-symbols independence-from-framework checks\n\n========================================================================================\nTOTAL: PASS=20, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231847Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

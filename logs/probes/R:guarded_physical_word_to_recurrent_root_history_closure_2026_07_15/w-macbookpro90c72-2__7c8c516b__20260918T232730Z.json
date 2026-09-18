@@ -1,0 +1,31 @@
+{
+ "task": "R:guarded_physical_word_to_recurrent_root_history_closure_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "guarded",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/guarded_physical_word_to_recurrent_root_history_closure_2026_07_15.py",
+ "seed": 74050,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8c516b",
+ "started_utc": "20260918T232730Z",
+ "elapsed_s": 62.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bb913457e7f0a11bf8b4e2f8c0ac258e4a201641800da28e158ea24412d428d8",
+ "stdout_tail": "ell') (((1, 0, 0), 'R_A21'),)\nITER 0 ROWS 28 RAW 9740 OUTPUTS 172 GRAPH 3402 12019 0 6 BAD ((24, 'diamond', (-2, 0, -1), (-1, 0, -1)),) REACHED 48\nDIAMOND_VARIANT (-2, 0, -1) THEN (-1, 0, -1) True ((-1, 0, -1), 'T_H1', (((-1, 0, 0), 'JOINT'), ((0, 0, -1), 'J2'), ((0, 0, 1), 'A_0_0'), ((0, 1, 0), 'W3'), ((1, 0, 0), 'W5')))\nDIAMOND_VARIANT (-1, 0, -1) THEN (-2, 0, -1) True ((-2, 0, -1), 'JOINT', (((0, 0, 1), 'R_C10'), ((0, 1, 0), 'AUXZ'), ((1, 0, 0), 'T_H1')))\nITER 1 ROWS 30 RAW 9788 OUTPUTS 172 GRAPH 3943 14009 0 6 BAD ((26, 'diamond', (-2, -1, -1), (-2, 0, -1)),) REACHED 50\nDIAMOND_VARIANT (-2, -1, -1) THEN (-2, 0, -1) True ((-2, 0, -1), 'JOINT', (((0, -1, 0), 'T_H2'), ((0, 0, 1), 'R_C10'), ((0, 1, 0), 'AUXZ'), ((1, 0, 0), 'T_H1')))\nDIAMOND_VARIANT (-2, 0, -1) THEN (-2, -1, -1) True ((-2, -1, -1), 'T_H2', (((0, 0, -1), 'L11'), ((0, 1, 0), 'JOINT'), ((1, 0, 0), 'T_H1')))\nITER 2 ROWS 32 RAW 9836 OUTPUTS 172 GRAPH 68736 330024 1 9 BAD () REACHED 172\nROOT_REQUIRES_ALL_ADAPTER True SECOND_REQUIRES_SIDECAR True\nADDED [((-1, 0, -1), 'T_H1', (((-1, 0, 0), 'JOINT'), ((0, 0, -1), 'J2'), ((0, 0, 1), 'A_0_0'), ((0, 1, 0), 'W3'), ((1, 0, 0), 'W5'))), ((-2, 0, -1), 'JOINT', (((0, 0, 1), 'R_C10'), ((0, 1, 0), 'AUXZ'), ((1, 0, 0), 'T_H1'))), ((-2, 0, -1), 'JOINT', (((0, -1, 0), 'T_H2'), ((0, 0, 1), 'R_C10'), ((0, 1, 0), 'AUXZ'), ((1, 0, 0), 'T_H1'))), ((-2, -1, -1), 'T_H2', (((0, 0, -1), 'L11'), ((0, 1, 0), 'JOINT'), ((1, 0, 0), 'T_H1')))]\nRESULT PHYSICAL_R_B01_CAUSALLY_BOUND_RECURRENT_ROOT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

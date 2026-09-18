@@ -1,0 +1,36 @@
+{
+ "task": "R:theta_gauge_winding_axiom_update_no_go_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py",
+ "seed": 73581,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "137a6a14",
+ "started_utc": "20260918T231941Z",
+ "elapsed_s": 1.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=151 FAIL=6",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "178c8d0d34b7d85f96b43da16229cf80eb7b17a47d5664ac258139c30a582d26",
+ "stdout_tail": "ling-limit sector functional `Q`\n[PASS] note carries boundary phrase: No branch/section choice or topological-sector r\n[PASS] note carries boundary phrase: derive the action, integer-Q, branch-readout, an\n[PASS] forbidden phrase absent: Theta is retired\n[PASS] forbidden phrase absent: theta_bar = 0 is derived\n[PASS] forbidden phrase absent: audited_clean\n[PASS] forbidden phrase absent: effective_status = retained\n[PASS] forbidden phrase absent: neutron electric dipole\n[PASS] forbidden phrase absent: uses a fitted value\n[PASS] forbidden phrase absent: registry is edited\n[PASS] no wall names introduced\n\n========================================================================================\nI. markdown dependency and context control\n========================================================================================\n[PASS] markdown link inventory is controlled\n[PASS] context note not markdown-linked: THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_E\n[PASS] context note not markdown-linked: THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STAB\n[PASS] context note not markdown-linked: STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_I\n[PASS] context note not markdown-linked: STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2\n[PASS] note line count is bounded\n[PASS] verification block states fail-zero threshold\n\n========================================================================================\nTOTAL: PASS=151 FAIL=6\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231943Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=151 FAIL=6' vs cache 'TOTAL: PASS=157 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_gauge_positive_route_stretch_status_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py",
+ "seed": 73578,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "137a6a14",
+ "started_utc": "20260918T231938Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=126 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a5f2d8d15bc33a00f625e887149fc674e33096b92de91ffea79dcd111deea0c3",
+ "stdout_tail": "] A2 Weyl fixed Cartan subspace is zero\n\n========================================================================================\nG. fixed-grading paired-shift bookkeeping\n========================================================================================\n[PASS] balanced fixed grading has tr(eps)=0\n[PASS] balanced paired shift cancels exactly\n[PASS] synthetic unbalanced grading can carry nonzero bookkeeping integer\n[PASS] unbalanced paired shift still cancels as bookkeeping\n\n========================================================================================\nH. note discipline\n========================================================================================\n[PASS] forbidden phrase absent: Theta is retired\n[PASS] forbidden phrase absent: theta_bar = 0 is derived\n[PASS] forbidden phrase absent: audit_status is changed\n[PASS] forbidden phrase absent: effective_status is changed\n[PASS] forbidden phrase absent: registry is edited\n[PASS] forbidden phrase absent: This is a positive retained-grade proposal\n[PASS] attack plan item 1 present\n[PASS] attack plan item 2 present\n[PASS] attack plan item 3 present\n[PASS] attack plan item 4 present\n[PASS] markdown link inventory is controlled\n[PASS] note line count is bounded\n[PASS] verification block states fail-zero threshold\n\n========================================================================================\nTOTAL: PASS=126 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231941Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

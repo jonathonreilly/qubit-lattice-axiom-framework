@@ -1,0 +1,35 @@
+{
+ "task": "R:gl_f_identification_bridge_check_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "gl",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gl_f_identification_bridge_check_2026_06_11.py",
+ "seed": 73617,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8c516b",
+ "started_utc": "20260918T232017Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f311dae9ad16e1517aae3cc7105af1aee0acfaabe4ca2b895b0c5287595f9158",
+ "stdout_tail": "dness, the same number operators)  (kernel dim = 0)\n[D] PASS: N = 3: the witness relation: {theta_0, theta_1} != 0 on the hard-core net while omega forces {psi_0, psi_1} = 0 in every realization (functional-level certificate [C]); a single functional value separates the frames\n[D] PASS: N = 2: MIRROR LEG -- the SAME functor on the ungraded (commuting-nilpotent) integrand reconstructs a PSD rank-2^N theory with cross-site COMMUTING operators (nonzero anticommutator): the identification machinery is branch-sensitive -- the functional clause (I-4) decides the frame, the discharged kinematic clauses do not\n[D] PASS: N = 2: the ungraded reconstruction admits NO intertwiner onto the CAR/JW net (kernel dim = 0) -- mirror-symmetric to the hard-core escape; each integrand class identifies only with its own frame\n[D] PASS: N = 3: PARITY ESCAPE -- an involution with unbalanced multiplicities (trace 2^N - 2 = 6) can never be unitarily aligned with F-hat (trace 0): conjugation preserves the trace, so the formal balanced-multiplicity fact from the parity theorem is load-bearing for the parity clause\n[D] PASS: N = 2: CYCLICITY ESCAPE -- restricting to the EVEN (parity-preserving) word subalgebra, the vacuum spans only dim 2^{N-1} = 2 < 2^N: the full-field cyclicity certificate in [C] is load-bearing for the operator-identity transport; a rival who consumes only the even observable subalgebra does not get the field dictionary forced (declared in the note's boundaries)\n\nTOTAL: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232017Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

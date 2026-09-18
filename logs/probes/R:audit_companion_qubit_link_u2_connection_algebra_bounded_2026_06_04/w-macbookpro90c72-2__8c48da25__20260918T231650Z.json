@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py",
+ "seed": 73410,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231650Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1d8e6bdc826abe6054706099d5f239b94e4b1c78980937ba1edbf9a665e7250d",
+ "stdout_tail": "============================================================\nQubit-link U(2) connection algebra bounded checks\n========================================================================\nPASS Pauli matrices are Hermitian\nPASS Pauli matrices satisfy Cl(3) anticommutation\nPASS S_i = sigma_i/2 closes as su(2)\nPASS central phase generator commutes with every S_i\nPASS central phase generator is anti-Hermitian\nPASS i sigma_i generators are anti-Hermitian\nPASS anti-Hermitian C^2 endomorphism basis has real rank 4\nPASS u(2) dimension decomposes as 3 + 1\nPASS central u(1) line is independent from su(2) generators\nPASS traceless Hermitian M_2(C) space has real rank 3\nPASS traceless Hermitian M_2(C) is dimension-obstructed from su(3) dimension 8\nPASS full u(2) is dimension-obstructed from faithful su(3) embedding\nPASS spin-half Casimir is 3/4 I_2\nPASS C^2 carrier dimension is 2, not the color fundamental dimension 3\nPASS source-note firewall present: does not derive a physical Standard Model gauge group\nPASS source-note firewall present: does not identify the central `u(1)` with hypercharge assignments\nPASS source-note firewall present: does not derive the chiral `SU(2)_L` restriction\nPASS source-note firewall present: does not derive gauge invariance of observables\nPASS source-note firewall present: does not derive color\n========================================================================\nSUMMARY: PASS=19 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231651Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

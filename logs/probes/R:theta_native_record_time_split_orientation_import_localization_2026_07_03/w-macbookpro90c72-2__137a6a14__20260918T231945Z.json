@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_native_record_time_split_orientation_import_localization_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/theta_native_record_time_split_orientation_import_localization_2026_07_03.py",
+ "seed": 73585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "137a6a14",
+ "started_utc": "20260918T231945Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a862b22a9fa8bc64366214f75727d58b956d1ac4bcf593a3ca6810916c28e76",
+ "stdout_tail": "(1, 3), -1), ((0, 3), (1, 2), 1)]\nSection B: exact transformation law\n  [PASS] B1 cell pullback totals agree with matrix flux action\n         sheet total normalization=16\n  [PASS] B2 spatial inversion flips e and Q while preserving b\n  [PASS] B3 record-order reversal flips e and Q while preserving b\n  [PASS] B4 combined spatial and record reversal preserves Q\n  [PASS] B5 full cubic sweep gives vector and pseudovector laws\nSection C: orientation non-supply\n  [PASS] C1 determinant is similarity-invariant for named cubic structure\n  [PASS] C2 proper cubic subset is stable under improper conjugation\n         proper=24 improper=24\n  [PASS] C3 nearest-neighbor spatial edge set is invariant under improper maps\n         edges=375\nSection D: Cl(3,0) bridge\n  [PASS] D1 orientation volume element supplies the complex unit\n  [PASS] D2 inversion extension matches conjugation model\n  [PASS] D3 inversion is antilinear and flips omega\n  [PASS] D4 single reflection is automorphic and antilinear\n  [PASS] D5 full sweep measures linear versus antilinear parity\n         group size=48\nSection E: seed direction and imported orientation\n  [PASS] E1 alpha-odd SU(3) insertion equals trace-imaginary readout\n  [PASS] E2 conjugation and loop reversal flip the odd holonomy read\n  [PASS] E3 swap-closed ensemble cancels odd part but leaves even part\n         even count=20/20\n  [PASS] E4 imported orientation frame makes the odd pairing constructible\n         nonzero density count=20/20\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

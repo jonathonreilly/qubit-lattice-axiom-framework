@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
+ "seed": 73367,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c48da25",
+ "started_utc": "20260918T231607Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "40f0f9d1dcf0882c1e43f8e0efb1e292fd7179b97759dd254566572650cddba6",
+ "stdout_tail": "--- (B6) R-anti preserves the forward-cycle channel ---\n  PASS  R_anti(forward-cycle vector) has zero leakage outside forward-cycle channel\n\n--- (B7) Involutions and S_3 generation by (CYCLE, P_23) ---\n  PASS  R_anti is an involution on the forward-cycle channel: R o R = id\n  PASS  <CYCLE, P_23> generates the full S_3 standard permutation rep :: |gen|=6, |S_3|=6\n\n--- (B8) Generic non-fixedness of R-anti ---\n  PASS  Generic forward-cycle vector is NOT fixed by R-anti\n  PASS  Fixed-locus point (c_1 = conj(c_3), c_2 real) IS fixed by R-anti\n\n--- (B9) Numerical cross-check vs primary runner's matrices ---\n  PASS  Primary-runner CYCLE matches the sympy-derived CYCLE = P_{(1 3 2)}\n  PASS  Primary-runner P23 matches the sympy-derived P_23\n  PASS  E_11 . np_CYCLE = E_12 (numerical agreement)\n  PASS  E_22 . np_CYCLE = E_23 (numerical agreement)\n  PASS  E_33 . np_CYCLE = E_31 (numerical agreement)\n  PASS  np_R(E_12) = E_31 (numerical residual antiunitary swap)\n  PASS  np_R(E_23) = E_23 (numerical, E_23 fixed)\n  PASS  np_R(E_31) = E_12 (numerical residual antiunitary swap)\n\n--- (B10) Negative control ---\n  PASS  A purely diagonal matrix is NOT in the forward-cycle channel\n  PASS  P_23 . diag(1,2,2) . P_23 = diag(1,2,2) (Z_2-invariant diagonal)\n  PASS  P_23 . diag(1,2,3) . P_23 != diag(1,2,3) (non-Z_2-invariant)\n\n================================================================================\nPASS=55 FAIL=0\n================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231607Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py",
+ "seed": 73604,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T232004Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=51 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "06745dec7a462d2565e989810cb83b0322f15d9056cee8657b2d7bf3a02ca4bb",
+ "stdout_tail": "ects being a 3x3 carrier and a 9x9 auxiliary layout. Beyond that, the exhaustiveness taxonomy that would close the argument globally is by the runner's own comment the note's SS2.3 case analysis and is not runner-provable; what executes mechanically is only its interior half, the commutant result above, together with text checks confirming the declared argument and its citations are present. No global closure is computed in this file.\nScope: forty-six of the fifty-one checks evaluate an exact symbolic condition. The other five are text or file-existence tests -- that the five A3 obstruction notes sit on disk, and that the note records the A3-campaign rejection of P2, the retained-grade-rule foreclosure of P3, the declared SS2.3 case analysis, and the exclusion of the HK+DHR appeal. Those five resolve nothing quantitative and are citation-grade only.\nDeterminism: sympy exact integer, rational, and symbolic arithmetic throughout, with no floating-point tolerance anywhere in the file. There is no RNG, optimizer, root-finding, grid scan, Monte Carlo, or flow integration. Eigenvalue triples are compared as explicitly sorted lists and the symbolic diagonal entries are sorted by string form before comparison, so no ordering internal to sympy can reach a verdict. The P3 sort keys 1/2, 3/2 and 7/2 are deliberate stand-in rationals; the runner's own comment records that importing real PDG values at that step is precisely what the grade rule forbids.\n\n=== SCORECARD ===\n  PASS=51 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

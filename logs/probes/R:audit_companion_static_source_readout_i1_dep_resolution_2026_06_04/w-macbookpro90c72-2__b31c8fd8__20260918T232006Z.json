@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_static_source_readout_i1_dep_resolution_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_static_source_readout_i1_dep_resolution_2026_06_04.py",
+ "seed": 73606,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T232006Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=71 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18c8917cae336ccf7d2de38e748c2dba4acc06ae89c48ee48e0631fb9ce5e02e",
+ "stdout_tail": "=======================\nPASS sympy_importable\nPASS B1_substitution_residual_zero\nPASS B2_alpha_definition_holds\nPASS B3_alpha_form_consistent_with_B1\nPASS B4_alpha_at_gbare_one_equals_one_over_four_pi\nPASS B4_V_at_gbare_one_equals_minus_C_over_four_pi_r\nPASS B1_to_B3_composite_chain_identity\n\n========================================================================\nBlock 6: numerical alpha and Casimir checks\n========================================================================\nPASS alpha_num_matches_expected\nPASS alpha_num_recomputed_matches\nPASS C_F_at_N_c_3_equals_four_thirds\nPASS V_chain_equals_V_alpha_form_at_r_5 :: err=3.469e-18\nPASS V_chain_equals_V_alpha_form_at_r_10 :: err=1.735e-18\nPASS V_chain_equals_V_alpha_form_at_r_20 :: err=8.674e-19\nPASS V_chain_equals_V_alpha_form_at_r_50 :: err=4.337e-19\n\n========================================================================\nBlock 7: companion note content\n========================================================================\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_status_change\nPASS companion_marks_audit_values_informational\nPASS companion_documents_current_parent_tally\nPASS companion_disclaims_static_source_premise_resolution\n\n========================================================================\nSummary\n========================================================================\nSUMMARY: PASS=71 FAIL=0\nFINAL_TAG: STATIC_SOURCE_READOUT_I1_DEP_RESOLUTION_HYGIENE_OK\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232007Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_static_source_readout_i1_dep_resolution_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

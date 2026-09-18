@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+ "seed": 73602,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T232002Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c541f9a75c19207d49153e3d1ffb7f14fa43e74732a4ec7ee59022894ab48ea0",
+ "stdout_tail": ") is all 8 vectors (single orbit)\n  [PASS (A)] (H6 counter) coord-flip orbit count (1) != S_3 orbit count (4)\n\n-- Part 10: General-n cross-check, n \u2208 {1, 2, 3, 4, 5}\n  [PASS (A)] (general-n) at n = 1, Hamming-weight cardinalities equal binom(1, k)  (observed = expected = (1, 1))\n  [PASS (A)] (general-n) at n = 1, sum of level sizes = 2^1 = 2\n  [PASS (A)] (general-n) at n = 2, Hamming-weight cardinalities equal binom(2, k)  (observed = expected = (1, 2, 1))\n  [PASS (A)] (general-n) at n = 2, sum of level sizes = 2^2 = 4\n  [PASS (A)] (general-n) at n = 3, Hamming-weight cardinalities equal binom(3, k)  (observed = expected = (1, 3, 3, 1))\n  [PASS (A)] (general-n) at n = 3, sum of level sizes = 2^3 = 8\n  [PASS (A)] (general-n) at n = 4, Hamming-weight cardinalities equal binom(4, k)  (observed = expected = (1, 4, 6, 4, 1))\n  [PASS (A)] (general-n) at n = 4, sum of level sizes = 2^4 = 16\n  [PASS (A)] (general-n) at n = 5, Hamming-weight cardinalities equal binom(5, k)  (observed = expected = (1, 5, 10, 10, 5, 1))\n  [PASS (A)] (general-n) at n = 5, sum of level sizes = 2^5 = 32\n\n-- Summary\n  Verified at exact-symbolic precision:\n    (H1) 8 = 2^3; (H2) levels (1, 3, 3, 1); (H3) sum_k binomial(3, k) = 8\n    (H4) S_3 preserves hw (48 pairs); (H5) transitive on each L_k\n    (H6) S_3 orbits = (L_0, L_1, L_2, L_3) = (1, 3, 3, 1)\n    (H7) c involution, L_0\u2194L_3, L_1\u2194L_2; S_3 x Z_2 orbits (2, 6)\n    Counter-examples: S_3 load-bearing; general-n n in {1..5} binomial\n\nTOTAL: PASS=55, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232003Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

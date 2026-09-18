@@ -1,0 +1,38 @@
+
+=== (C) flavor: real C3-invariant record algebra is 2-dim -> 2-sector ===
+[PASS] real C3-invariant operator a*I + b*S has a DEGENERATE doublet (1 + 2 equal eigs)  [eigs=[0.6 0.6 1.8]]
+[PASS] chirality generator K=i(U-U^T) is HERMITIAN but PURELY IMAGINARY (not a real op)
+[PASS] adding the imaginary i (K) SPLITS the doublet -> 3 distinct modes (r=1 regime)  [eigs=[0.08 1.12 1.8 ]]
+[PASS] => real record (no i): 2-parameter algebra {I, U+U^T} resolves ONLY singlet|doublet  [the unique nontrivial real C3-invariant partition (rep theory: real irreps = 1 + 2)]
+
+=== (B) phase-blindness/P2: a real readout cannot carry arg Z (the i-part) ===
+[PASS] log|Z| (real part) is additive over independent amplitudes; arg (i-part) wraps mod 2pi
+[PASS] real single-valued readout kills the phase: continuous additive U(1)->R forces c=0  [solve -> [0]  (so readout depends on |Z| only = P2)]
+
+=== (A) gauge: the real/relational record strips the unfixed local FRAME ===
+[PASS] documented: gauge invariance of observables is the existing Record corollary (#2667)  [frame (gauge) / phase (P2) / chirality (flavor) = the SAME imaginary part dropped]
+
+=== (Layer 2, RESIDUAL) r=1/2 = the 2-sector full bit (to be derived, not axiomatized) ===
+[PASS] the 2-sector record-bit entropy is MAXIMAL at r=1/2 (full bit = equipartition)  [argmax_r S2=0.5002]
+[PASS] HONEST: the clarification forces the 2-sector BASIS (Layer 1), not r=1/2 itself (Layer 2)  [Layer 2 (full-bit/equipartition) is the explicit open residual, to be derived]
+
+=== consistency: Q is delta-blind (chirality/delta lives in the masses, not the record) ===
+[PASS] Q(r=1/2)=2/3 for ALL delta (comparator 2/9=0.2222): record value survives delta-splitting
+
+=== scope / honesty flags ===
+[PASS] does NOT touch beta=6 / the gauge coupling / the absolute mass scale (dynamical sector)
+[PASS] does NOT apply the axiom change; PROPOSAL only; status authority = audit lane
+[PASS] no PDG / fitted / beta=6 inputs consumed; delta=2/9 is comparator-only
+
+======================================================================
+TOTAL: 13 PASS / 0 FAIL
+======================================================================
+
+LOAD-BEARING CLAIM (Layer 1, forced by the proposed clarification):
+  a REAL record (no intrinsic i) strips frame (=> gauge), phase (=> P2/|Z|), and
+  doublet chirality (=> the unique real C3 record is singlet|doublet = 2-sector,
+  Koide Q=2/3 structure). One principle, three consequences; the imaginary unit i
+  is the Quantum axiom's, the Record is its real readout.
+RESIDUAL (Layer 2, explicitly NOT forced here): r=1/2 EXACTLY = the 2-sector
+  full bit (equipartition) -- to be derived (max-entropy), not axiomatized.
+

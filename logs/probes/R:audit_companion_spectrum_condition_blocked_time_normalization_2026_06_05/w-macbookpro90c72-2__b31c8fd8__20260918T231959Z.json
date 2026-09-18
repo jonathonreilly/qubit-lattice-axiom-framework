@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py",
+ "seed": 73599,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b31c8fd8",
+ "started_utc": "20260918T231959Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "64a092641d628813265d5b2ba1661b4a8f3524b4fbed10768e15d3fd46b990ae",
+ "stdout_tail": "icle energy == E(p)/a_tau; 1/a_tau gives twice that  ::  m=0.5,a_tau=1.0: max|E(c=2)-E_ref|=8.9e-16, max|E(c=1)-2E_ref|=1.8e-15\n\n--- B7: corrected gap m_gap=-(1/(2 a_tau)) log(lambda_1/M_T); forward cone ---\n  [PASS] corrected m_gap>0, E_0=0, spectrum in forward cone (E_n>=0); old gap=2*corrected  ::  Ls=4,a_tau=1.0: E_0=-0.0e+00, m_gap(c=2)=0.4812, m_gap(c=1)=0.9624, cone(E>=0)=True\n\n--- B8: reconstructed H self-adjoint & H>=0 on full Fock space (SC1+SC2) ---\n  [PASS] H=-(1/(2 a_tau)) logm(T_hat^2/M_T) self-adjoint, spec(H) >= 0  ::  Ls=4,a_tau=1.0: ||H-H^dag||=0.0e+00, min spec(H)=-0.0e+00, max=2.8873\n\n--- B9: no forbidden inputs (m, a_tau are free; E(p) is comparator only) ---\n  [PASS] positivity built from action only (independent of the E(p) comparator)  ::  T_hat^2 positive Hermitian without invoking the dispersion formula\n\n==============================================================================\nSUMMARY\n==============================================================================\n  B1 two lattice steps per block               PASS\n  B2 faithfulness (e^-2E factor-2 exponent)    PASS\n  B3 single-step non-positive                  PASS\n  B4 T_hat^2 positive Hermitian                PASS\n  B5 CORE BRIDGE H(c=2)=H_hat                  PASS\n  B6 single-particle dispersion                PASS\n  B7 corrected gap + forward cone              PASS\n  B8 self-adjoint H>=0 (Fock space)            PASS\n  B9 no forbidden inputs                       PASS\n\nTOTAL: 9 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232000Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py",
+ "seed": 70561,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2875d031",
+ "started_utc": "20260918T222921Z",
+ "elapsed_s": 565.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "94658cf4c7ec58360b8b66f51b1ed55f0fa92738425d5da47710fd0a0d38b589",
+ "stdout_tail": " C_N:   0.44796   0.44802   0.44803   depth:   2.5180   2.5964   2.6425\n       biharmonic  C_N:   1.15613   1.34469   1.45532   depth:   2.5637   3.7835   5.0018\n         screened  C_N:   0.18568   0.18544   0.18543   depth:  20.7065  20.7065  20.7065\n  [PASS] R14: the observable choice matters: across the same boxes the biharmonic shell contrast C_N over the fixed window runs 1.15613 -> 1.45532 and is fit by the bounded family, while its well depth runs 2.5637 -> 5.0018 and prefers the linear model; the finite-volume separation is about absolute well depth under the Dirichlet-zero reference, not the shell contrast (poisson C_N 0.44796 -> 0.44803, screened 0.18568 -> 0.18543)\n\nTHESIS\n  [PASS] T: On the supplied four-operator family and Dirichlet lattice, with the source sign normalized so no operator is handed a repulsive well, the tested finite-volume sequences produce converged self-consistent states. At the scored couplings, Poisson g=50 and screened Poisson prefer a+c/M for absolute well depth, biharmonic prefers a+b*M, and the local V=0-start sweep is discontinuous. These are finite-range model preferences under an explicit potential reference, not proofs of limits, physical binding energies, operator uniqueness, or the parent susceptibility bridge.\n\n==============================================================================\nSUMMARY: SELF-CONSISTENT WELL DEPTH PASS=14 FAIL=0\nelapsed 565.0s\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T223847Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

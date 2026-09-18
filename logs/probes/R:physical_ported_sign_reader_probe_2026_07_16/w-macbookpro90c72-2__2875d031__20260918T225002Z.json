@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_ported_sign_reader_probe_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_ported_sign_reader_probe_2026_07_16.py",
+ "seed": 71802,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2875d031",
+ "started_utc": "20260918T225002Z",
+ "elapsed_s": 83.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2398764edf90d6aeb7040200a3e1f350a3de3029b7ca805f991ffc72b938d126",
+ "stdout_tail": "LAW 97388 32 768 0 98156 0\nGRAPHS 768 [(2, 1, 1, 23, ())] 0\nDELETIONS 160 0\nRESULT PHYSICAL_PORTED_SIGN_READER\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225126Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

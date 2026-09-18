@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_minus_branch_response_floor_assembly_defect_law_cycle709_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_minus_branch_response_floor_assembly_defect_law_cycle709_2026_08_02.py",
+ "seed": 70462,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2875d031",
+ "started_utc": "20260918T222742Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=73 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fff0edbe56228cef04a582f7b6812eee8799c7e4e5e4b6230d5ac87bdc56d8ed",
+ "stdout_tail": "c4.cos.L3 minus cos 1.0e+00\nok   c4.resid.L7 minus rel residual 8.7e-04\nok   c4.cos.L7 minus cos 1.0e+00\nok   c4.reject.L3 plus-branch rejector residual 1.1e+00\nok   c4.reject.L7 plus-branch rejector residual 9.8e-01\n== C5 step sweep: measured step direction of E over the sampled decade ==\nok   c5.mono.1 |E|_F 9.8e-09 > 2.0e-09\nok   c5.mono.2 |E|_F 2.0e-09 > 1.5e-09\nok   c5.mono.3 |E|_F 1.5e-09 > 8.2e-10\nok   c5.mono.4 |E|_F 8.2e-10 > 3.9e-10\nok   c5.ratio F(smallest)/F(largest) 2.5e+01\nok   c5.plus.1 |E_plus|_F 5.0e-15 at step 2.5e-05\nok   c5.plus.2 |E_plus|_F 0.0e+00 at step 5.0e-05\nok   c5.plus.3 |E_plus|_F 2.0e-14 at step 1.0e-04\nok   c5.plus.4 |E_plus|_F 3.5e-14 at step 2.0e-04\nok   c5.plus.5 |E_plus|_F 3.4e-14 at step 4.0e-04\nok   c5.scale dQ*2s/u 2.2e+02\n== C6 size scaling: how much of the floor growth the response carries ==\nok   c6.lam lam_min softening 4.3e+01\nok   c6.floor minus floor growth 2.2e+01\nok   c6.attrib max local entry flat while the floor grows; the response is a substantial contributor, and the forcing |E eps0|_2 grows by 4.6e+00 so the growth is NOT assigned to the response alone\nok   c6.scale_cmp.L3 heuristic: floor / (u kappa_2(Q) |eps0|_2) 4.8e+02 (no stability factor pinned; not an exclusion)\nok   c6.scale_cmp.L7 heuristic: floor / (u kappa_2(Q) |eps0|_2) 9.6e+01 (no stability factor pinned; not an exclusion)\nRECEIPT: outputs/physical_minus_branch_response_floor_assembly_defect_law_cycle709_2026_08_02_receipt_2026-08-02.json\nTOTAL: PASS=73 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T222748Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_minus_branch_response_floor_assembly_defect_law_cycle709_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

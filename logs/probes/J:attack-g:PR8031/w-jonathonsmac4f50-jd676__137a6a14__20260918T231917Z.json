@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-jonathonsmac4f50-jd676",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8031/fusion_rule_gt_enumeration.py",
+ "seed": 73557,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "137a6a14",
+ "started_utc": "20260918T231917Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (g) PROOF STEP BY BRUTE FORCE on section 2's fusion step - both fusion rules hold with exactly the stated omissions for all 120 labels with p + q <= 14 by Gelfand-Tsetlin weight enumeration (dimensions and the shell statement included), and the witness psi_R is normalized as stated (E|g_11|^(2R) = 1/d_(R,0) exactly, Monte Carlo within 1.1 s.e.); 0 failures; the step holds as written"
+ },
+ "review": "Pattern (g) on section 2's fusion step, verified literally by Gelfand-Tsetlin weight enumeration: (1,0) x (p,q) = (p+1,q) + (p-1,q+1) + (p,q-1) and the conjugate rule (0,1) x (p,q) = (p,q+1) + (p+1,q-1) + (p-1,q), each with exactly the stated omissions of labels with a negative entry, hold as SU(3) weight multisets for all 120 labels with p + q <= 14 (dimensions and the shell containment included), and the witness normalization E|g_11|^(2R) = 1/d_(R,0) holds exactly (Beta(1,2) moments, R <= 10) and by Monte Carlo over 400000 Haar matrices within 1.1 standard errors; the step holds as written (the shell, norm-one, energy and path statements were brute-forced in this PR's earlier pattern-(f) unit).",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): attack GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "c03a4e7ace376d601d5e50f75582ef8e12c8e247cd269151cfb2782579ba09b7",
+ "stdout_tail": "[fusion] 120 labels (p, q) with p + q <= 14: (1,0) x (p,q) equals the stated sum with its omissions in 120 (failures []); (0,1) x (p,q) equals the conjugate rule in 120 (failures []); dimensions 3 d(p,q) = sum of the kept summands' dimensions everywhere: True; every summand of a label with p + q <= R - 1 lies in p + q <= R: True; e.g. (1,0) x (0,0) -> [(1, 0)], (1,0) x (0,2) -> [(1, 2), (0, 1)]\n[witness] E|g_11|^(2R) = B(R+1, 2)/B(1, 2) = 2 R!/(R+2)! equals 1/d_(R,0) for R = 0..10: True; Monte Carlo over 400000 Haar SU(3) matrices agrees within 1.09 standard errors (R = 0..10; R = 3: 0.099859 vs 0.100000); dim Sym^(R+1)(C^3) = C(R+3, 2) = d_(R+1,0) for R < 40: True\nSUMMARY: pattern (g) PROOF STEP BY BRUTE FORCE on section 2's fusion step - both fusion rules hold with exactly the stated omissions for all 120 labels with p + q <= 14 by Gelfand-Tsetlin weight enumeration (dimensions and the shell statement included), and the witness psi_R is normalized as stated (E|g_11|^(2R) = 1/d_(R,0) exactly, Monte Carlo within 1.1 s.e.); 0 failures; the step holds as written\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd676",
+  "at_utc": "20260918T231918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,117 @@
+{
+  "status": "AUTHOR_SOURCE_INTEGRITY_CHECKED",
+  "source_sha256": "64466bd013ee4f0aaa16db9c97e4c08c2cae2ee78b9aba2aac9d18c6937ee660",
+  "primary_pairs": [
+    {
+      "source": "evidence/sparse_loop_counterexample_check.py",
+      "source_sha256": "cfee7b31f5e8276145c9000669739abafd3549dbc27572ce3161727e3a594810",
+      "stdout_sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "evidence/compact_cover_source_check.py",
+      "source_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "stdout_sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "evidence/compact_score_check.py",
+      "source_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "stdout_sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "rejected_formula_faults": 9,
+  "preserved_failed_refinement_source_sha256": "a37534021caa4d8b6818316e778fd7f1128123df754ae1f169c356f691d8f5cb",
+  "syntax_files": [
+    "evidence/compact_cover_source_check.py",
+    "evidence/compact_score_check.py",
+    "evidence/run_formula_faults.py",
+    "evidence/sparse_loop_counterexample_check.py",
+    "review/focused_verify.py",
+    "review/formula_faults/curl_premise/compact_score_check.py",
+    "review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py",
+    "review/formula_faults/ground_ward_factor/compact_cover_source_check.py",
+    "review/formula_faults/haar_normalization/compact_cover_source_check.py",
+    "review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py",
+    "review/formula_faults/sign_environment/sparse_loop_counterexample_check.py",
+    "review/formula_faults/source_phase/compact_score_check.py",
+    "review/formula_faults/thermal_time_measure/compact_score_check.py",
+    "review/formula_faults/winding_cubic/compact_cover_source_check.py",
+    "review/formula_faults_before_separation/curl_premise/compact_score_check.py",
+    "review/formula_faults_before_separation/fourth_moment/sparse_loop_counterexample_check.py",
+    "review/formula_faults_before_separation/ground_ward_factor/compact_cover_source_check.py",
+    "review/formula_faults_before_separation/haar_normalization/compact_cover_source_check.py",
+    "review/formula_faults_before_separation/loop_boundary/sparse_loop_counterexample_check.py",
+    "review/formula_faults_before_separation/sign_environment/sparse_loop_counterexample_check.py",
+    "review/formula_faults_before_separation/source_phase/compact_score_check.py",
+    "review/formula_faults_before_separation/thermal_time_measure/compact_score_check.py",
+    "review/formula_faults_before_separation/winding_cubic/compact_cover_source_check.py",
+    "review/initial_box_separation/sparse_loop_counterexample_check.py",
+    "review/initial_score_refinement_failure/compact_score_check.py"
+  ],
+  "relative_links": [
+    {
+      "source": "README.md",
+      "target": "notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md"
+    },
+    {
+      "source": "README.md",
+      "target": "notes/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "review/FOCUSED_VERIFY.json"
+    },
+    {
+      "source": "README.md",
+      "target": "review/PERSONAL_REVIEW.md"
+    },
+    {
+      "source": "README.md",
+      "target": "REVIEW_HISTORY.md"
+    },
+    {
+      "source": "README.md",
+      "target": "ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "source": "README.md",
+      "target": "NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "README.md",
+      "target": "CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "TRACE_GATE.md"
+    },
+    {
+      "source": "README.md",
+      "target": "HANDOFF.md"
+    },
+    {
+      "source": "notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "source": "notes/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "target": "../NO_GO_DISCIPLINE_CHECKLIST.md"
+    }
+  ],
+  "historical_links": "Original copied note retains its original relative-link context; only current authored Markdown is link-checked.",
+  "scope": "No independent review, audit cache, formal N-packet or integration pipeline is asserted."
+}

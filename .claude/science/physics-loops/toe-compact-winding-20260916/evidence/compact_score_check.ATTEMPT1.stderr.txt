@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py", line 159, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py", line 153, in main
+    scope=__doc__,torus=torus_checks(),gapped_comparator=independent_rotors(),
+                        ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-winding-20260916/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py", line 120, in torus_checks
+    assert delta<.003
+           ^^^^^^^^^^
+AssertionError

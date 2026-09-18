@@ -1,0 +1,87 @@
+{
+  "status": "DECLARED_FORMULA_FAULTS_REJECTED",
+  "faults": [
+    {
+      "name": "loop_boundary",
+      "source": "review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py",
+      "sha256": "7727bd0055e4b989ea71e6ebe98c55407b4a230a91503fbf44263dc79e4ec21b",
+      "original_sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d",
+      "returncode": 1,
+      "elapsed_seconds": 0.18283625005278736,
+      "stderr_sha256": "477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7"
+    },
+    {
+      "name": "sign_environment",
+      "source": "review/formula_faults/sign_environment/sparse_loop_counterexample_check.py",
+      "sha256": "6884ae63b57d286bcbc530b7b4ee0fefa977199264f274b7e5c7f6c7fd5084f7",
+      "original_sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d",
+      "returncode": 1,
+      "elapsed_seconds": 0.344915832974948,
+      "stderr_sha256": "8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af"
+    },
+    {
+      "name": "fourth_moment",
+      "source": "review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py",
+      "sha256": "7d77f158eae4c0d4154f941e739833b71cbf6c196f2c4c116ca6c72091d68e54",
+      "original_sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d",
+      "returncode": 1,
+      "elapsed_seconds": 0.32752454199362546,
+      "stderr_sha256": "07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e"
+    },
+    {
+      "name": "haar_normalization",
+      "source": "review/formula_faults/haar_normalization/compact_cover_source_check.py",
+      "sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "original_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "returncode": 1,
+      "elapsed_seconds": 0.39198441605549306,
+      "stderr_sha256": "49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81"
+    },
+    {
+      "name": "winding_cubic",
+      "source": "review/formula_faults/winding_cubic/compact_cover_source_check.py",
+      "sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "original_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "returncode": 1,
+      "elapsed_seconds": 0.2484233749564737,
+      "stderr_sha256": "fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0"
+    },
+    {
+      "name": "ground_ward_factor",
+      "source": "review/formula_faults/ground_ward_factor/compact_cover_source_check.py",
+      "sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "original_sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "returncode": 1,
+      "elapsed_seconds": 0.44556216604541987,
+      "stderr_sha256": "8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01"
+    },
+    {
+      "name": "source_phase",
+      "source": "review/formula_faults/source_phase/compact_score_check.py",
+      "sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "original_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "returncode": 1,
+      "elapsed_seconds": 0.2733896669233218,
+      "stderr_sha256": "5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0"
+    },
+    {
+      "name": "thermal_time_measure",
+      "source": "review/formula_faults/thermal_time_measure/compact_score_check.py",
+      "sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "original_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "returncode": 1,
+      "elapsed_seconds": 0.2607539580203593,
+      "stderr_sha256": "c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712"
+    },
+    {
+      "name": "curl_premise",
+      "source": "review/formula_faults/curl_premise/compact_score_check.py",
+      "sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "original_sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "returncode": 1,
+      "elapsed_seconds": 0.25095883291214705,
+      "stderr_sha256": "32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a"
+    }
+  ],
+  "harness_sha256": "bdd7e535fdd44b30749d3afbcbbc79f170cc4889cb82cdd43afa6172d0be2cd6"
+}

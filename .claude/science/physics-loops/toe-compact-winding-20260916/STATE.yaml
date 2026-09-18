@@ -1,0 +1,35 @@
+{
+  "slug": "toe-compact-winding-20260916",
+  "status": "paused_by_user_after_packaged_milestone",
+  "actual_current_surface_status": "conditional-support",
+  "created_utc": "2026-09-16T11:35:23.591187+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "base_main": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "branch": "physics-loop/toe-compact-winding-20260916",
+  "agents": "none; personal execution required",
+  "previous_pr": 8166,
+  "previous_head": "02bfa4eb99fce8329619a476775299567f735d4b",
+  "active_target": "Exact compact winding weights and normalized physical-source matching",
+  "next_action": "After publication and cleanup, remain paused. On a later explicit resume, start from the physical electric-response obligation in HANDOFF.md.",
+  "pr_readiness_policy": "User directs completed personally reviewed and source-verified scoped milestones to be ready for independent review; readiness is not acceptance or retained status.",
+  "completed_prs_ready": [
+    8159,
+    8160,
+    8161,
+    8162,
+    8163,
+    8164,
+    8165,
+    8166
+  ],
+  "target_claim_type": "bounded_theorem",
+  "stop_reason": "User requests pause after this milestone is packaged because tokens are nearly exhausted.",
+  "verification": {
+    "primary_programs": 3,
+    "current_formula_faults": 9,
+    "compiled_python_including_history": 25,
+    "current_markdown_links": 15,
+    "independent_review": "pending"
+  }
+}

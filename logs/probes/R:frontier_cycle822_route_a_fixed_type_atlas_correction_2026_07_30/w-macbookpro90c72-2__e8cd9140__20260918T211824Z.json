@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle822_route_a_fixed_type_atlas_correction_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle822_route_a_fixed_type_atlas_correction_2026_07_30.py",
+ "seed": 66304,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T211824Z",
+ "elapsed_s": 121.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6ba03ab6a80c32fd9e43670bf7b739b0f8f8811dc5ceac27ff4b7bdfc4a5f804",
+ "stdout_tail": " \"shape\": [\n          5,\n          3,\n          2\n        ]\n      }\n    ],\n    \"diagnosis\": \"the old runner charged every local support; with matter-only seam charge it mixes charged and neutral FSWAP routes, pairs one charged and one neutral X/Y site, and reuses coordinates across incompatible route types\",\n    \"elementary_failure_kind_census\": {\n      \"route_FSWAP\": 9784,\n      \"seam_pair_U\": 164,\n      \"seam_pair_U_dagger\": 164\n    },\n    \"totals\": {\n      \"charged_neutral_type_conflict_coordinates\": 1445,\n      \"charged_neutral_type_conflict_demand_events\": 1445,\n      \"elementary_fixed_P_ext_failures\": 10112,\n      \"elementary_primitives\": 337496,\n      \"prefix_factorwise_certificate_failures\": 337496,\n      \"seam_factors\": 328\n    },\n    \"valid_Cycle821_fixed_P_ext_certificate\": false\n  },\n  \"mixed_typed_accumulator\": {\n    \"charged_control_neutral_token_Fredkin_P_ext_residual\": 0.0,\n    \"charged_controls\": 2,\n    \"control_orders\": 2,\n    \"maximum_dense_clean_isometry_residual\": 0.0,\n    \"maximum_dense_fixed_P_ext_prefix_residual\": 0.0,\n    \"neutral_controls\": 2\n  },\n  \"status\": \"PASS\",\n  \"typed_controlled_pair\": {\n    \"cases\": 8,\n    \"maximum_dense_residual\": 1.78534970688577e-15,\n    \"maximum_elementary_fixed_P_ext_residual\": 0.0,\n    \"maximum_fixed_P_ext_prefix_residual\": 0.0,\n    \"minimum_deleted_return_dense_residual\": 8.0,\n    \"minimum_deleted_return_label_mismatches\": 2,\n    \"minimum_wrong_SWAP_residual\": 7.999999999999999,\n    \"mixed_type_route_FSWAPs\": 0\n  }\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T212025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

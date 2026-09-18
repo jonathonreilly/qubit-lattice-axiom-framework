@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py",
+ "seed": 66003,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T211323Z",
+ "elapsed_s": 15.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9bbabce58fef19793ed9e2b78056bbfce551a38ebaf0906153ef8dacd5444529",
+ "stdout_tail": "REM_NOTE_2026-07-30.md\": \"569a7c7a646ae336166178448d2f6108165cc11e703cf546de2f21b4a6fde854\",\n    \"scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py\": \"102f8bc31e60fd4a452a1cfab176129f922665e10b564f0421dc26ffb11ee152\",\n    \"scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py\": \"42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5\",\n    \"scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py\": \"808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c\",\n    \"scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py\": \"6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205\",\n    \"scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py\": \"2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d\",\n    \"scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py\": \"74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18\",\n    \"scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py\": \"1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa\",\n    \"scripts/frontier_full128_cycle_encoder_2026_07_24.py\": \"17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935\",\n    \"scripts/frontier_full128_two_cell_even_car_frame_core_2026_07_30.py\": \"e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0\"\n  },\n  \"status\": \"PASS\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T211338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

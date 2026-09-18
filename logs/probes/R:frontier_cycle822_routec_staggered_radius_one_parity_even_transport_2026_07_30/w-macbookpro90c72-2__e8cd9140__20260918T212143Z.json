@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py",
+ "seed": 66503,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T212143Z",
+ "elapsed_s": 240.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0e02b1510eb1ea0024ae63e350f9d492e7a5bc6ef609c0f79bc3243fa8a42720",
+ "stdout_tail": "tact_vacuum_and_one_particle_residual\": 0.0, \"one_particle_coin_eigen_residual\": 2.594441202963249e-16, \"one_particle_extended_even_sector_present\": true, \"one_particle_mass\": 0.45340565417488515, \"one_particle_mass_residual\": 5.551115123125783e-17}, \"open\": [\"autonomous genesis or renewal of the clean route and accumulator M2, syndrome banks, carrier typing, coframe, and stage occurrence\", \"a dense full held-width executor; exactness here is Pauli diagonalisation, local matrix identities, returned label transport, and signed landed channel substitution\", \"translation-invariant duplicate-view gluing, periodic/fault repair, and carrier/syndrome renewal\", \"physical time, duration, source/gravity, Record/Born/history, and prediction bridges\"], \"ordinary_vs_FSWAP_control\": {\"clean_route_FSWAP_vs_SWAP_residual\": 0.0, \"dirty_route_FSWAP_vs_SWAP_residual\": 1.4142135623730947}, \"report_sha256\": \"f9656ba3d7b50adba32985bd7c4e316f407e9e4efe3935eab546309e36559c40\", \"route\": \"C_staggered_time_multiplexed_literal_radius_one\", \"status\": \"PASS\", \"supplied\": [\"the landed Cycle720/789/794/821 finite fixture, code domain, O/I/L banks, carrier placement, private atlas, and clean syndrome controls\", \"one clean owner-local accumulator M2 per cell and clean returned fermionic/work route rails\", \"the finite stage/colour/slot/ordinal circuit order and transported proper-cubic coframe\", \"the finite boundary, chart, total extended-parity observable domain, and permission to retain the dirty carrier\"]}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T212543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

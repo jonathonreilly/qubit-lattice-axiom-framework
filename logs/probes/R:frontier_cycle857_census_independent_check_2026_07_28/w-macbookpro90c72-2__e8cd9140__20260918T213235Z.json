@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle857_census_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle857_census_independent_check_2026_07_28.py",
+ "seed": 67155,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T213235Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9d0d3ce8c8122c7656be33cf531e67e14b1c8d7ed85f8a0cddbb0aae6d4d15f1",
+ "stdout_tail": "2fd45bc4a0d5c\",\"git_blob_exact\":true,\"path\":\"scripts/frontier_cycle857_census_theorem_2026_07_28.py\",\"sha256\":\"01075b9f0b875b3f480641ea247de3a891744b61e39d38d43e194fbefac26142\",\"sha256_exact\":true,\"worktree_relative\":true}],\"stdout_bytes\":12767,\"stdout_limit_bytes\":153600}\nFINDING CONTROLS :: Both the Cycle-719 source primary and Cycle-857 target are exact SHA-256/Git-blob matches, read only as worktree-relative text/AST, and BLOCKLISTED from import. Full derivation replay is deterministic; runtime is below 1400 s and stdout below 150 KB.\nSTRUCTURE k=2 :: C(8,1)*4*11/2=176 enumeration=176 integral=True bijection=True\nSTRUCTURE k=3 :: C(7,2)*4*11/3=308 enumeration=308 integral=True bijection=True\nSTRUCTURE k=4 :: C(6,3)*4*11/4=220 enumeration=220 integral=True bijection=True\nSTRUCTURE k=5 :: C(5,4)*4*11/5=44 enumeration=44 integral=True bijection=True\nCONSTRAINT MIN_MULTISOURCE_k_ge_2 :: base=748 relaxed=792 tightened=572\nCONSTRAINT PACKING_WINDOW_k_le_5 :: base=748 relaxed=748 tightened=704\nCONSTRAINT PAIRWISE_SEPARATION_distance_ge_2 :: base=748 relaxed=4048 tightened=220\nCONSTRAINT CORE_PHASE_MEMBERSHIP_phase_lt_4 :: base=748 relaxed=935 tightened=561\nSUMMARY_JSON {\"checker\":\"INDEPENDENT_ADVERSARIAL_CHECKER\",\"cycle\":857,\"orbit_count\":68,\"pass\":false,\"primary_structure_verdict\":\"STRUCTURE_CERTIFIED\",\"runtime_seconds\":0.207698,\"stdout_bytes\":12767,\"stdout_limit_bytes\":153600,\"stratum_counts\":{\"2\":176,\"3\":308,\"4\":220,\"5\":44},\"total\":748}\nCYCLE857_CENSUS_INDEPENDENT_CHECK_FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213236Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE857_CENSUS_INDEPENDENT_CHECK_FAIL' vs cache 'CYCLE857_CENSUS_INDEPENDENT_CHECK_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle857_census_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

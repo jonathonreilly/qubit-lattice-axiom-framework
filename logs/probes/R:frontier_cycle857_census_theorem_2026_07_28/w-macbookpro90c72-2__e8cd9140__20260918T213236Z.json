@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle857_census_theorem_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle857_census_theorem_2026_07_28.py",
+ "seed": 67156,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T213236Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a0dc6f25ab6f2ea54be1ecf5013de65f42c17e729e0ebfff90d0bd0ff5d1107",
+ "stdout_tail": "_CONTROLS :: The sole cited primary is SHA/blob pinned and parsed as text/AST only; its module is BLOCKLISTED and never imported. Literal AUDIT_INPUT_PATHS exist worktree-relative; full replay is exact; runtime is below 1400 s and stdout below 150 KB.\nFORMULA k=2 :: 4 site-shape choices x 4 phases x 11 origins = 176\nFORMULA k=3 :: 7 site-shape choices x 4 phases x 11 origins = 308\nFORMULA k=4 :: 5 site-shape choices x 4 phases x 11 origins = 220\nFORMULA k=5 :: 1 site-shape choices x 4 phases x 11 origins = 44\nBITS total :: log2(748)=log2(68)+log2(11) :: 6.087462841250339 + 3.459431618637297 = 9.546894459887637\nCONSTRAINT MIN_MULTISOURCE_k_ge_2 :: base=748 relaxed=792 excluded=44 tightened=572 tightened_excluded=176\nCONSTRAINT PACKING_WINDOW_k_le_5 :: base=748 relaxed=748 excluded=0 tightened=704 tightened_excluded=44\nCONSTRAINT PAIRWISE_SEPARATION_distance_ge_2 :: base=748 relaxed=4048 excluded=3300 tightened=220 tightened_excluded=528\nCONSTRAINT CORE_PHASE_MEMBERSHIP_phase_lt_4 :: base=748 relaxed=935 excluded=187 tightened=561 tightened_excluded=187\nSUMMARY_JSON {\"cycle\":857,\"formula\":\"N_k=[binom(10-k,k-1)/k]*4*11\",\"free_C11_families\":68,\"pass\":false,\"question\":\"conditional census theorem: why exactly 748 setups under the named bounded generator premises\",\"runtime_seconds\":0.11195,\"selection_bit_identity\":\"log2(748)=log2(68)+log2(11)\",\"stdout_bytes\":17610,\"stdout_limit_bytes\":153600,\"stratum_counts\":{\"2\":176,\"3\":308,\"4\":220,\"5\":44},\"total\":748}\nCYCLE857_CENSUS_THEOREM_FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213236Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE857_CENSUS_THEOREM_FAIL' vs cache 'CYCLE857_CENSUS_THEOREM_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle857_census_theorem_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

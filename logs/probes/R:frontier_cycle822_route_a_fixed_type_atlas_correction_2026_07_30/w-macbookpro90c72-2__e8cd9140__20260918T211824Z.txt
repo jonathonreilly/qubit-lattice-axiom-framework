@@ -1,0 +1,281 @@
+{
+  "checks": {
+    "complete_mixed_seam_dictionary_has_one_conflict_free_atlas": true,
+    "legacy_all_charged_certificate_is_rejected_exactly": true,
+    "mixed_control_dual_rail_accumulator_commutes_with_fixed_P_ext": true,
+    "typed_controlled_pair_commutes_with_one_fixed_P_ext": true,
+    "typed_mutations_remain_active": true
+  },
+  "claim_boundary": "the old all-modes-charged Route-A claim is demoted; the corrected 328-factor statement is conditional on the explicitly counted charged carrier-relay and neutral-work atlas in each held box, not on the landed Cycle821 65-M2/cell palette alone",
+  "corrected_typed_seam_compiler": {
+    "boxes": [
+      {
+        "cells": 2,
+        "charged_carrier_relay_M2": 94,
+        "edges": 1,
+        "elementary_fixed_P_ext_failures": 0,
+        "global_type_atlas_conflicts": 0,
+        "mixed_type_route_FSWAPs": 0,
+        "neutral_route_work_M2_including_token": 66,
+        "prefix_fixed_P_ext_failures_by_induction": 0,
+        "program_sha256": "8be70e416d2005e3b10791be189faa8d416d99693dc214d1dcc5bc4a66c0564a",
+        "radius_one_failures": 0,
+        "route_operand_failures": 0,
+        "route_return_failures": 0,
+        "seam_factors": 4,
+        "shape": [
+          2,
+          1,
+          1
+        ],
+        "typed_atlas_coordinates": 178
+      },
+      {
+        "cells": 3,
+        "charged_carrier_relay_M2": 122,
+        "edges": 2,
+        "elementary_fixed_P_ext_failures": 0,
+        "global_type_atlas_conflicts": 0,
+        "mixed_type_route_FSWAPs": 0,
+        "neutral_route_work_M2_including_token": 83,
+        "prefix_fixed_P_ext_failures_by_induction": 0,
+        "program_sha256": "8dda74352b0f41740565cd3e62b718c01e11279312969192e32ac1eb034d0494",
+        "radius_one_failures": 0,
+        "route_operand_failures": 0,
+        "route_return_failures": 0,
+        "seam_factors": 8,
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "typed_atlas_coordinates": 232
+      },
+      {
+        "cells": 12,
+        "charged_carrier_relay_M2": 1205,
+        "edges": 20,
+        "elementary_fixed_P_ext_failures": 0,
+        "global_type_atlas_conflicts": 0,
+        "mixed_type_route_FSWAPs": 0,
+        "neutral_route_work_M2_including_token": 726,
+        "prefix_fixed_P_ext_failures_by_induction": 0,
+        "program_sha256": "3f649dc36c0373e8bf1a4a58761fb628c37c7709b9e1abc51615d6c3a3828912",
+        "radius_one_failures": 0,
+        "route_operand_failures": 0,
+        "route_return_failures": 0,
+        "seam_factors": 80,
+        "shape": [
+          3,
+          2,
+          2
+        ],
+        "typed_atlas_coordinates": 2039
+      },
+      {
+        "cells": 30,
+        "charged_carrier_relay_M2": 2751,
+        "edges": 59,
+        "elementary_fixed_P_ext_failures": 0,
+        "global_type_atlas_conflicts": 0,
+        "mixed_type_route_FSWAPs": 0,
+        "neutral_route_work_M2_including_token": 1634,
+        "prefix_fixed_P_ext_failures_by_induction": 0,
+        "program_sha256": "5f07b1db40b04b738535272d971a37d292ab6ed85136e443fe7929299785fa78",
+        "radius_one_failures": 0,
+        "route_operand_failures": 0,
+        "route_return_failures": 0,
+        "seam_factors": 236,
+        "shape": [
+          5,
+          3,
+          2
+        ],
+        "typed_atlas_coordinates": 4655
+      }
+    ],
+    "literal_seam_factors": 328,
+    "maximum_elementary_fixed_P_ext_residual": 0.0,
+    "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+    "maximum_primitives_per_factor": 22939,
+    "maximum_route_hops": 281,
+    "minimum_deleted_return_label_mismatches": 2,
+    "minimum_dirty_opposite_rail_residual": 1.4142135623730947,
+    "program_family_sha256": "a2abe0623d0fc2c2b9390514a64a1ebe9248f8fcbbc8498bcb62235aa89e05e5",
+    "resource_boundary": "charged network coordinates are added carrier-relay M2 and are included in P_ext; neutral network coordinates and both token rails are work modes outside P_ext",
+    "template_certificates": [
+      {
+        "dirty_opposite_rail_residual": 1.414213562373095,
+        "letters": "Z",
+        "maximum_exhaustive_operator_residual": 0.0,
+        "phase": 0,
+        "pivot_order_variants": 4,
+        "support": 1,
+        "type_word": "C"
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "XYZXY",
+        "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+        "phase": 0,
+        "pivot_order_variants": 4,
+        "support": 5,
+        "type_word": "CNCNC"
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "YYZXX",
+        "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+        "phase": 2,
+        "pivot_order_variants": 4,
+        "support": 5,
+        "type_word": "CNCNC"
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZXYZXYZZZZ",
+        "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+        "phase": 0,
+        "pivot_order_variants": 4,
+        "support": 11,
+        "type_word": "CCCNCNCNNCC"
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZYYZXXZZZZ",
+        "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+        "phase": 2,
+        "pivot_order_variants": 4,
+        "support": 11,
+        "type_word": "CCCNCNCNNCC"
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZZZXYZXYZZZZZZZZ",
+        "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+        "phase": 0,
+        "pivot_order_variants": 4,
+        "support": 17,
+        "type_word": "CCCCCNCNCNNCCNNCC"
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZZZYYZXXZZZZZZZZ",
+        "maximum_exhaustive_operator_residual": 3.1401849173675503e-16,
+        "phase": 2,
+        "pivot_order_variants": 4,
+        "support": 17,
+        "type_word": "CCCCCNCNCNNCCNNCC"
+      }
+    ],
+    "totals": {
+      "elementary_fixed_P_ext_failures": 0,
+      "global_type_atlas_conflicts": 0,
+      "mixed_type_route_FSWAPs": 0,
+      "prefix_fixed_P_ext_failures_by_induction": 0,
+      "radius_one_failures": 0,
+      "route_operand_failures": 0,
+      "route_return_failures": 0,
+      "seam_factors": 328
+    },
+    "unique_typed_templates": 7
+  },
+  "input_sha256": {
+    "docs/ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md": "fe50851eb54eb25e135e42e07a63d031459722bead29b95f5728405d96772f61",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d",
+    "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68",
+    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py": "e010b4d407e38c7832ff94b8d7886bf5369e06be4eef44c01e35688f56d103bd",
+    "scripts/frontier_cycle822_route_a_fixed_type_atlas_correction_2026_07_30.py": "4f7e7b435b5d13cf1e00a0fd5daa5297a07b4d6cae78aeb27dc58d49dd47af8d",
+    "scripts/frontier_cycle822_route_a_radius_one_parity_even_compiler_2026_07_30.py": "50c766315db98c6eb791e857c2f034733b22f23c2ea85ef32a896695e4cc55b4"
+  },
+  "legacy_framework_typing_audit": {
+    "boxes": [
+      {
+        "charged_neutral_type_conflict_coordinates": 8,
+        "charged_neutral_type_conflict_demand_events": 8,
+        "elementary_fixed_P_ext_failures": 36,
+        "elementary_primitives": 1564,
+        "prefix_factorwise_certificate_failures": 1564,
+        "seam_factors": 4,
+        "shape": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "charged_neutral_type_conflict_coordinates": 16,
+        "charged_neutral_type_conflict_demand_events": 16,
+        "elementary_fixed_P_ext_failures": 72,
+        "elementary_primitives": 3128,
+        "prefix_factorwise_certificate_failures": 3128,
+        "seam_factors": 8,
+        "shape": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "charged_neutral_type_conflict_coordinates": 371,
+        "charged_neutral_type_conflict_demand_events": 371,
+        "elementary_fixed_P_ext_failures": 2640,
+        "elementary_primitives": 87008,
+        "prefix_factorwise_certificate_failures": 87008,
+        "seam_factors": 80,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "charged_neutral_type_conflict_coordinates": 1050,
+        "charged_neutral_type_conflict_demand_events": 1050,
+        "elementary_fixed_P_ext_failures": 7364,
+        "elementary_primitives": 245796,
+        "prefix_factorwise_certificate_failures": 245796,
+        "seam_factors": 236,
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      }
+    ],
+    "diagnosis": "the old runner charged every local support; with matter-only seam charge it mixes charged and neutral FSWAP routes, pairs one charged and one neutral X/Y site, and reuses coordinates across incompatible route types",
+    "elementary_failure_kind_census": {
+      "route_FSWAP": 9784,
+      "seam_pair_U": 164,
+      "seam_pair_U_dagger": 164
+    },
+    "totals": {
+      "charged_neutral_type_conflict_coordinates": 1445,
+      "charged_neutral_type_conflict_demand_events": 1445,
+      "elementary_fixed_P_ext_failures": 10112,
+      "elementary_primitives": 337496,
+      "prefix_factorwise_certificate_failures": 337496,
+      "seam_factors": 328
+    },
+    "valid_Cycle821_fixed_P_ext_certificate": false
+  },
+  "mixed_typed_accumulator": {
+    "charged_control_neutral_token_Fredkin_P_ext_residual": 0.0,
+    "charged_controls": 2,
+    "control_orders": 2,
+    "maximum_dense_clean_isometry_residual": 0.0,
+    "maximum_dense_fixed_P_ext_prefix_residual": 0.0,
+    "neutral_controls": 2
+  },
+  "status": "PASS",
+  "typed_controlled_pair": {
+    "cases": 8,
+    "maximum_dense_residual": 1.78534970688577e-15,
+    "maximum_elementary_fixed_P_ext_residual": 0.0,
+    "maximum_fixed_P_ext_prefix_residual": 0.0,
+    "minimum_deleted_return_dense_residual": 8.0,
+    "minimum_deleted_return_label_mismatches": 2,
+    "minimum_wrong_SWAP_residual": 7.999999999999999,
+    "mixed_type_route_FSWAPs": 0
+  }
+}

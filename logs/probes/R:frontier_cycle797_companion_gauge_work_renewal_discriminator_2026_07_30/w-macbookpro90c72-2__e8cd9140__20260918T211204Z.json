@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle797_companion_gauge_work_renewal_discriminator_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle797_companion_gauge_work_renewal_discriminator_2026_07_30.py",
+ "seed": 65924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T211204Z",
+ "elapsed_s": 39.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "300295d64e8d6ba3fb65667b94b6a11ca004fc581e863c7622b64788c8f608bf",
+ "stdout_tail": "er/gauge renewal rule and a reversible destination for retained syndrome\", \"synthesis of a multi-row local inverse Clifford or gauge-refresh channel after that bookkeeping question is resolved\", \"renewal of the supplied O/I Choi resource and clean Bell ancillas from the preceding physical epoch\", \"translation-compatible genesis/enforcement of local coframe, cell colours and legal character sector\", \"one literal returned NN epoch composing preparation, Cycle-789 prefix, Cycle-720 G and cleanup\"], \"report_sha256\": \"8a987b2eed17d232ca9187a588d6e7b8e5c73aed2cb47cca870773212eed805f\", \"status\": \"PASS\", \"supplied\": [\"Cycle-789 Choi resource on O/I, live character code on L, private-dual atlas, clean Bell syndrome ancillas\", \"finite fixture boundary and transported local cell labels\", \"the landed Cycle-794 literal prefix and G remain separate acceptance evidence\"], \"verdict\": \"The repaired one-mode Bell/correction work is exactly recyclable, and the maximal environment-only subgroup of the landed multi-row channel is radius-one generated. The landed retained even-CAR tableau still has output-environment cross correlations, so a clean recurrent work return is not yet licensed. Every one of those correlations is gauge-only under the actual Cycle-720 factorization, and radius-one moves span the nonparity center slice. What remains is not logical-channel fidelity but a translation-local reversible bookkeeping law that refreshes gauge/center work without accumulating retained syndrome.\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T211243Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

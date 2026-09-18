@@ -1,0 +1,200 @@
+{
+  "algorithm": {
+    "controlled_pair": "returned-route pivot beside partner; U_dagger; return; returned-route control beside pivot; CZ; return; returned-route pivot beside partner; U; return",
+    "parity": "each elementary factor commutes with product-Z P_ext, hence every cumulative prefix does by induction",
+    "seam_rotation": "pair all X/Y letters; apply returned U_dagger macros; accumulate every pivot and Z singleton into clean |10> token by returned local Fredkins; apply exp(+i sign*pi*Z_left/4); uncompute Fredkins; apply returned U macros",
+    "tensor_route_hop": "chronological FSWAP then CZ, so the state operator is CZ*FSWAP=SWAP; reverse the same factors"
+  },
+  "checks": {
+    "Cycle821_controlled_pair_has_literal_radius_one_even_compiler": true,
+    "all_landed_recurrent_seam_factors_compile_without_semantic_rotation": true,
+    "dual_rail_accumulator_is_exact_order_independent_and_parity_even": true,
+    "held_shapes_and_order_pivot_variants_pass": true,
+    "mutations_are_active": true
+  },
+  "controlled_pair_compiler": {
+    "letter_pair_pivot_cases": 8,
+    "maximum_Cycle821_U_conjugacy_residual": 4.463374267214424e-16,
+    "maximum_dense_compiled_residual": 1.2624328845283428e-15,
+    "maximum_dense_cumulative_prefix_parity_residual": 0.0,
+    "maximum_elementary_parity_commutator_residual": 0.0,
+    "maximum_primitives_per_compiled_pair": 23,
+    "minimum_deleted_return_dense_residual": 5.656854249492381,
+    "minimum_deleted_return_label_mismatches": 2,
+    "minimum_wrong_SWAP_for_FSWAP_mutation_residual": 5.65685424949238,
+    "route_operand_failures": 0,
+    "route_return_failures": 0,
+    "transposition_factor_residual_CZ_FSWAP_minus_SWAP": 0.0
+  },
+  "derived": "literal radius-one parity-even elementary words for the Cycle821 controlled two-target atom and every up-to-17-M2 recurrent seam rotation, with returned labels and token",
+  "dual_rail_accumulator": {
+    "control_orders": 2,
+    "controls": 4,
+    "maximum_clean_dense_isometry_residual": 0.0,
+    "maximum_dense_cumulative_prefix_parity_residual": 0.0,
+    "minimum_dirty_opposite_rail_residual": 5.65685424949238
+  },
+  "framework_typing_warning": "this first probe charges every routed/token coordinate; use frontier_cycle822_route_a_fixed_type_atlas_correction_2026_07_30.py",
+  "input_sha256": {
+    "docs/LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md": "33eda00e3cc1587d8a2f36ffff54ed0fc3c04b2c2a4d268f1250d1ba06343a09",
+    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md": "7af11f4904c32cfac40ef7a6f14534be4619d980a7fc1e575f94cd4092755cf7",
+    "docs/RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md": "fb54e3476dcbf2a8becca1b93fa327bcefd5a17f06f55b2bebcbeea234993b9e",
+    "docs/ROUTE_A_RADIUS_ONE_PARITY_EVEN_COMPILER_CYCLE822_NOTE_2026-07-30.md": "b9d969ee8a48c947d5f4f97a257e98c0bb82dde3ee0bb473bddb17e96b387318",
+    "docs/THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md": "73dc4a31f43750443c8daa7f98516191ae6a81cbdb3bd4134b5202df2815f5e8",
+    "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py": "3064da20e961cea6c4c07a8317028ac9657d6fdd0643bd938a770491e5fad1fc",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d",
+    "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py": "dee1557eca4b88af75c469413290801577415cdf4ebfa3d970ceaa5ea15a2a8b",
+    "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68",
+    "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+    "scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009",
+    "scripts/frontier_cycle794_literal_three_bank_prefix_core_2026_07_30.py": "f6e820f7e4c4aaafbaa5751bd35989b97fe3b86c767bb724e783b67ee4197c6d",
+    "scripts/frontier_cycle821_local_parity_exchange_carrier_independent_2026_07_30.py": "8238883786018351bc5fd98bf4cc770d6613384c349382ca18af172836a00130",
+    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py": "e010b4d407e38c7832ff94b8d7886bf5369e06be4eef44c01e35688f56d103bd",
+    "scripts/frontier_cycle822_route_a_radius_one_parity_even_compiler_2026_07_30.py": "50c766315db98c6eb791e857c2f034733b22f23c2ea85ef32a896695e4cc55b4"
+  },
+  "open": "genesis/renewal and autonomous scheduling of token/workspace modes; a two-body-only decomposition of the allowed radius-one Fredkin; translation-invariant enforcement and physical time",
+  "recurrent_seam_compiler": {
+    "boxes": [
+      {
+        "cells": 2,
+        "compiled_local_primitives": 1564,
+        "edges": 1,
+        "program_sha256": "c642c8d7757cd7d7ab65fe7dc5df5cdbb6a433106033113d05c779003452b05e",
+        "seam_factors": 4,
+        "shape": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "cells": 3,
+        "compiled_local_primitives": 3128,
+        "edges": 2,
+        "program_sha256": "9489360ed26b6ab37c76ab28f59a03ca4b860842c3aeaff90da6d9e2c0ce1d13",
+        "seam_factors": 8,
+        "shape": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "cells": 12,
+        "compiled_local_primitives": 87008,
+        "edges": 20,
+        "program_sha256": "8ad978ab387ca3ddcd95e4354a2cfdfd248c8395bdd79488f1eddbe060620c99",
+        "seam_factors": 80,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "cells": 30,
+        "compiled_local_primitives": 245796,
+        "edges": 59,
+        "program_sha256": "e64f1b21000cf502925f2ab8d82cc2f8b9d53d2edc7b92f9a2ce3df5c9ec1ee8",
+        "seam_factors": 236,
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      }
+    ],
+    "cumulative_prefix_parity_failures_by_induction": 0,
+    "held_shapes": 4,
+    "literal_seam_factors": 328,
+    "maximum_direct_seam_M2_manhattan_diameter": 24,
+    "maximum_direct_seam_support_M2": 17,
+    "maximum_elementary_parity_commutator_residual": 0.0,
+    "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+    "maximum_primitives_per_seam_factor": 3907,
+    "maximum_route_hops": 44,
+    "minimum_deleted_return_label_mismatches": 2,
+    "minimum_dirty_opposite_rail_residual": 1.4142135623730947,
+    "primitive_kind_census": {
+      "route_CZ_sign_firewall": 166784,
+      "route_FSWAP": 166784,
+      "seam_pair_U": 328,
+      "seam_pair_U_dagger": 328,
+      "token_Fredkin": 2944,
+      "token_Z_phase": 328
+    },
+    "program_family_sha256": "371a1e69f9ed5ff44ac546a74a571e7e977d5524590a374ccc61f70da51883a0",
+    "radius_one_gate_failures": 0,
+    "route_operand_failures": 0,
+    "route_return_failures": 0,
+    "semantic_multi_site_rotation_primitives": 0,
+    "template_dense_certificates": [
+      {
+        "dirty_opposite_rail_residual": 1.414213562373095,
+        "letters": "Z",
+        "maximum_exhaustive_sparse_column_dense_residual": 0.0,
+        "phase": 0,
+        "pivot_and_order_variants": 4,
+        "support": 1,
+        "x_weight": 0
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "XYZXY",
+        "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+        "phase": 0,
+        "pivot_and_order_variants": 4,
+        "support": 5,
+        "x_weight": 4
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "YYZXX",
+        "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+        "phase": 2,
+        "pivot_and_order_variants": 4,
+        "support": 5,
+        "x_weight": 4
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZXYZXYZZZZ",
+        "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+        "phase": 0,
+        "pivot_and_order_variants": 4,
+        "support": 11,
+        "x_weight": 4
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZYYZXXZZZZ",
+        "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+        "phase": 2,
+        "pivot_and_order_variants": 4,
+        "support": 11,
+        "x_weight": 4
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZZZXYZXYZZZZZZZZ",
+        "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+        "phase": 0,
+        "pivot_and_order_variants": 4,
+        "support": 17,
+        "x_weight": 4
+      },
+      {
+        "dirty_opposite_rail_residual": 1.4142135623730947,
+        "letters": "ZZZZYYZXXZZZZZZZZ",
+        "maximum_exhaustive_sparse_column_dense_residual": 3.1401849173675503e-16,
+        "phase": 2,
+        "pivot_and_order_variants": 4,
+        "support": 17,
+        "x_weight": 4
+      }
+    ],
+    "unique_translated_factor_templates": 7
+  },
+  "status": "SUPERSEDED_INVALID_FIXED_P_EXT",
+  "supplied": "two clean dual-rail token M2 in |10> for each serialized seam factor; routing workspace modes; fixed chart, factor order, route program, and occurrence; the landed Cycle720/789/794/821 registers"
+}

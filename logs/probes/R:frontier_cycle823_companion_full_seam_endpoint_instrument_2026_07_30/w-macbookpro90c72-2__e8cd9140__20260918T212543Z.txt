@@ -1,0 +1,780 @@
+{
+  "algebra": {
+    "OR_Toffoli_deletion_trials_detected": 164,
+    "dirty_ancilla_unlawful_inputs_per_edge": 7,
+    "endpoint_pair_overlap_failures": 0,
+    "expected_mutation_trials_per_control": 164,
+    "factor_deletion_trials_detected": 164,
+    "four_plus_four_row_cardinality_failures": 0,
+    "full_seam_endpoint_swap_failures": 0,
+    "held_shapes": 4,
+    "instrument_clean_domain_cases": 1312,
+    "instrument_isometry_failures": 0,
+    "matched_physical_target_row_pairs": 328,
+    "maximum_instrument_isometry_residual": 0.0,
+    "monomial_full_seam_failures": 0,
+    "old_Cycle713_swap_specific_cleanup_equivalence_failures": 0,
+    "per_shape": [
+      {
+        "cells": 2,
+        "edges": 1,
+        "endpoint_pair_overlap_failures": 0,
+        "full_seam_endpoint_swap_failures": 0,
+        "physical_and_target_signature_classes": 16,
+        "row_tuple_sha256": "826df9e3245bb67149341e39ffb375a9f1e632f988bfebe03ecbde7b54574c75",
+        "shape": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "cells": 3,
+        "edges": 2,
+        "endpoint_pair_overlap_failures": 0,
+        "full_seam_endpoint_swap_failures": 0,
+        "physical_and_target_signature_classes": 32,
+        "row_tuple_sha256": "a4c43dfbbfac2f026c4d1cf09d4ca17a88993590d41646fcf5cb1dd19733bf31",
+        "shape": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "cells": 12,
+        "edges": 20,
+        "endpoint_pair_overlap_failures": 0,
+        "full_seam_endpoint_swap_failures": 0,
+        "physical_and_target_signature_classes": 320,
+        "row_tuple_sha256": "58d7c3e1e4757ee713bc11e14b26a608e0a8ddb951fb34fa3df17edaeb4f97d9",
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "cells": 30,
+        "edges": 59,
+        "endpoint_pair_overlap_failures": 0,
+        "full_seam_endpoint_swap_failures": 0,
+        "physical_and_target_signature_classes": 944,
+        "row_tuple_sha256": "791788d3d29b738b9ccc201447ae2fdb28f448eef385342bcd71e087a40c3c68",
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      }
+    ],
+    "physical_and_target_signature_classes": 1312,
+    "pointer_cleanup_deletion_trials_detected": 164,
+    "row_endpoint_mask_failures": 0,
+    "single_endpoint_mutation_trials_detected": 164
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boxes": [
+    {
+      "base_bell_atoms": {
+        "atom_parity_failures": 0,
+        "controlled_rows": 69,
+        "maximum_targets_excluding_control": 2,
+        "parity_even_atoms": 196,
+        "row_replay_failures": 0
+      },
+      "base_primitives": 9956,
+      "base_recurrent_nonseam": {
+        "charged_parity_failures": 0,
+        "expected_29_per_cell_nonseam_factors": 58,
+        "expected_stage_factor_census": {
+          "recurrent_coin": 22,
+          "recurrent_contact": 30,
+          "recurrent_reverse_FSWAP": 6
+        },
+        "landed_kind_census": {
+          "coin_coin_givens": 20,
+          "coin_coin_phase": 2,
+          "onsite_contact": 30,
+          "reverse_FSWAP": 6
+        },
+        "landed_local_dictionary_sha256": "e778afeda360ccb834fafd4e8c782e2482e8b4f3cf5aca78c9d0d317fce07d14",
+        "landed_nonseam_factors": 58,
+        "landed_nonseam_sequence_sha256": "a80e735470b7ddc575b3496330ea0a172c7bbc9e2a635f2c5bae94a525883fe2",
+        "matrix_binding_failures": 0,
+        "nonseam_FSWAP_route_macros": 56,
+        "one_site_phase_factors": 2,
+        "opcode_census": {
+          "G_coin_coin_givens_0194efd7b89065ea": 2,
+          "G_coin_coin_givens_26e43159960c12f2": 2,
+          "G_coin_coin_givens_368c70fb3187b93b": 2,
+          "G_coin_coin_givens_592fd45186842023": 2,
+          "G_coin_coin_givens_8bbb6a4263ed02e0": 2,
+          "G_coin_coin_givens_938574d8b1f94dcd": 2,
+          "G_coin_coin_givens_b45094ee4507a094": 2,
+          "G_coin_coin_givens_dbd9d946a9335b75": 2,
+          "G_coin_coin_givens_f6588399edafe956": 2,
+          "G_coin_coin_givens_f6c5f4b90fe109c3": 2,
+          "G_coin_coin_phase_6d4473e4904e1bb4": 2,
+          "G_onsite_contact_1b6ae8c174ba92e2": 30,
+          "G_reverse_FSWAP_e06a37d25124c2fb": 6
+        },
+        "routed_literal_radius_one_primitives": 930,
+        "stage_factor_census": {
+          "recurrent_coin": 22,
+          "recurrent_contact": 30,
+          "recurrent_reverse_FSWAP": 6
+        },
+        "two_site_charged_factors": 56,
+        "unique_opcode_coverage": 13
+      },
+      "base_recurrent_seam": {
+        "diagonalisation_failures": 0,
+        "direct_even_seam_factors": 4,
+        "maximum_post_diagonal_Z_support_M2": 4,
+        "maximum_source_support_M2": 5,
+        "maximum_work_route_distance": 43,
+        "semantic_parity_failures": 0
+      },
+      "base_route_macros": 412,
+      "cells": 2,
+      "collision_graph": {
+        "edges": 0,
+        "sample_edges": [],
+        "tested_block_ordinals": 10199,
+        "vertices": 133
+      },
+      "combined_primitives": 10199,
+      "covariance": {
+        "colour_transport_bijection_failures": 0,
+        "context_collision_graph_failures": 0,
+        "context_fixed_type_assignment_failures": 0,
+        "context_nearest_neighbour_failures": 0,
+        "context_palette_bijection_failures": 0,
+        "fixed_laboratory_carrier_offset_detected_frames": 23,
+        "frame_origin_contexts": 192,
+        "ordered_frame_products": 576,
+        "product_colour_failures": 0,
+        "product_coordinate_failures": 0,
+        "proper_cubic_frames": 24,
+        "translation_origins": 8
+      },
+      "edges": 1,
+      "endpoint_palette_collision_failures": 0,
+      "expected_instrument_route_macros_per_edge": 14,
+      "fixed_type_assignment": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "1bb05bf43bb3e99da7e87e29c23d8a89f468f0b6e36840e5d3f88c9efce8ef69",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 459,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 459,
+        "global_neutral_coordinate_count": 1353,
+        "neutral_route_atlas_M2": 1249,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 38,
+        "persistent_neutral_M2": 97,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 135,
+        "sample_cross_typed_coordinates": []
+      },
+      "global_P_ext": {
+        "P_ext_coordinate_sha256": "1bb05bf43bb3e99da7e87e29c23d8a89f468f0b6e36840e5d3f88c9efce8ef69",
+        "elementary_global_P_ext_commutator_failures": 0,
+        "elementary_primitives_tested": 10199,
+        "maximum_elementary_global_P_ext_commutator_residual": 0.0,
+        "prefix_commutant_certificate_failures": 0,
+        "primitive_untyped_coordinate_uses": 0,
+        "single_global_P_ext": true
+      },
+      "instrument_primitives": 243,
+      "instrument_route_macros": 14,
+      "persistent_endpoint_auxiliary_M2": 3,
+      "persistent_endpoint_auxiliary_M2_per_edge": 3,
+      "pre_repair_type_audit": {
+        "charged_atlas_coordinates_added_by_nonseam": 73,
+        "charged_atlas_coordinates_before_nonseam": 386,
+        "charged_routes_changed_by_port_reservation": 42,
+        "frozen_charged_atlas_recompile_coordinate_mismatches": 0,
+        "pre_repair_charged_route_coordinates": 377,
+        "pre_repair_cross_typed_coordinate_collisions": 155,
+        "pre_repair_neutral_route_coordinates": 1163,
+        "reserved_neutral_access_ports": 135
+      },
+      "routes": {
+        "exchange_census": {
+          "FSWAP": 196,
+          "SWAP": 230
+        },
+        "internal_persistent_palette_hits": 0,
+        "maximum_route_distance": 43,
+        "nearest_neighbour_failures": 0,
+        "returned_label_failures": 0,
+        "route_macros": 426,
+        "routes_with_active_return_deletion_control": 364
+      },
+      "shape": [
+        2,
+        1,
+        1
+      ],
+      "stage_labels_are_physical_time": false,
+      "stage_order": [
+        "pump",
+        "bell_measure",
+        "bell_correction",
+        "recurrent_coin",
+        "recurrent_reverse_FSWAP",
+        "endpoint_pre",
+        "recurrent_seam",
+        "endpoint_post_or_clean",
+        "recurrent_contact"
+      ]
+    },
+    {
+      "base_bell_atoms": {
+        "atom_parity_failures": 0,
+        "controlled_rows": 105,
+        "maximum_targets_excluding_control": 2,
+        "parity_even_atoms": 304,
+        "row_replay_failures": 0
+      },
+      "base_primitives": 16103,
+      "base_recurrent_nonseam": {
+        "charged_parity_failures": 0,
+        "expected_29_per_cell_nonseam_factors": 87,
+        "expected_stage_factor_census": {
+          "recurrent_coin": 33,
+          "recurrent_contact": 45,
+          "recurrent_reverse_FSWAP": 9
+        },
+        "landed_kind_census": {
+          "coin_coin_givens": 30,
+          "coin_coin_phase": 3,
+          "onsite_contact": 45,
+          "reverse_FSWAP": 9
+        },
+        "landed_local_dictionary_sha256": "e778afeda360ccb834fafd4e8c782e2482e8b4f3cf5aca78c9d0d317fce07d14",
+        "landed_nonseam_factors": 87,
+        "landed_nonseam_sequence_sha256": "539b35078ba30b2cc8b878bda8c10c6fa71c7fbe73c32948e5168d3d21728ceb",
+        "matrix_binding_failures": 0,
+        "nonseam_FSWAP_route_macros": 84,
+        "one_site_phase_factors": 3,
+        "opcode_census": {
+          "G_coin_coin_givens_0194efd7b89065ea": 3,
+          "G_coin_coin_givens_26e43159960c12f2": 3,
+          "G_coin_coin_givens_368c70fb3187b93b": 3,
+          "G_coin_coin_givens_592fd45186842023": 3,
+          "G_coin_coin_givens_8bbb6a4263ed02e0": 3,
+          "G_coin_coin_givens_938574d8b1f94dcd": 3,
+          "G_coin_coin_givens_b45094ee4507a094": 3,
+          "G_coin_coin_givens_dbd9d946a9335b75": 3,
+          "G_coin_coin_givens_f6588399edafe956": 3,
+          "G_coin_coin_givens_f6c5f4b90fe109c3": 3,
+          "G_coin_coin_phase_6d4473e4904e1bb4": 3,
+          "G_onsite_contact_1b6ae8c174ba92e2": 45,
+          "G_reverse_FSWAP_e06a37d25124c2fb": 9
+        },
+        "routed_literal_radius_one_primitives": 1395,
+        "stage_factor_census": {
+          "recurrent_coin": 33,
+          "recurrent_contact": 45,
+          "recurrent_reverse_FSWAP": 9
+        },
+        "two_site_charged_factors": 84,
+        "unique_opcode_coverage": 13
+      },
+      "base_recurrent_seam": {
+        "diagonalisation_failures": 0,
+        "direct_even_seam_factors": 8,
+        "maximum_post_diagonal_Z_support_M2": 4,
+        "maximum_source_support_M2": 5,
+        "maximum_work_route_distance": 43,
+        "semantic_parity_failures": 0
+      },
+      "base_route_macros": 644,
+      "cells": 3,
+      "collision_graph": {
+        "edges": 0,
+        "sample_edges": [],
+        "tested_block_ordinals": 16581,
+        "vertices": 204
+      },
+      "combined_primitives": 16581,
+      "covariance": {
+        "colour_transport_bijection_failures": 0,
+        "context_collision_graph_failures": 0,
+        "context_fixed_type_assignment_failures": 0,
+        "context_nearest_neighbour_failures": 0,
+        "context_palette_bijection_failures": 0,
+        "fixed_laboratory_carrier_offset_detected_frames": 23,
+        "frame_origin_contexts": 192,
+        "ordered_frame_products": 576,
+        "product_colour_failures": 0,
+        "product_coordinate_failures": 0,
+        "proper_cubic_frames": 24,
+        "translation_origins": 8
+      },
+      "edges": 2,
+      "endpoint_palette_collision_failures": 0,
+      "expected_instrument_route_macros_per_edge": 14,
+      "fixed_type_assignment": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "9e439005a6edf8883d55636878c9542d75a940978a93b832b7171222d485cd24",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 702,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 702,
+        "global_neutral_coordinate_count": 2185,
+        "neutral_route_atlas_M2": 2029,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 57,
+        "persistent_neutral_M2": 147,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 204,
+        "sample_cross_typed_coordinates": []
+      },
+      "global_P_ext": {
+        "P_ext_coordinate_sha256": "9e439005a6edf8883d55636878c9542d75a940978a93b832b7171222d485cd24",
+        "elementary_global_P_ext_commutator_failures": 0,
+        "elementary_primitives_tested": 16581,
+        "maximum_elementary_global_P_ext_commutator_residual": 0.0,
+        "prefix_commutant_certificate_failures": 0,
+        "primitive_untyped_coordinate_uses": 0,
+        "single_global_P_ext": true
+      },
+      "instrument_primitives": 478,
+      "instrument_route_macros": 28,
+      "persistent_endpoint_auxiliary_M2": 6,
+      "persistent_endpoint_auxiliary_M2_per_edge": 3,
+      "pre_repair_type_audit": {
+        "charged_atlas_coordinates_added_by_nonseam": 101,
+        "charged_atlas_coordinates_before_nonseam": 601,
+        "charged_routes_changed_by_port_reservation": 68,
+        "frozen_charged_atlas_recompile_coordinate_mismatches": 0,
+        "pre_repair_charged_route_coordinates": 586,
+        "pre_repair_cross_typed_coordinate_collisions": 259,
+        "pre_repair_neutral_route_coordinates": 1919,
+        "reserved_neutral_access_ports": 204
+      },
+      "routes": {
+        "exchange_census": {
+          "FSWAP": 300,
+          "SWAP": 372
+        },
+        "internal_persistent_palette_hits": 0,
+        "maximum_route_distance": 43,
+        "nearest_neighbour_failures": 0,
+        "returned_label_failures": 0,
+        "route_macros": 672,
+        "routes_with_active_return_deletion_control": 576
+      },
+      "shape": [
+        3,
+        1,
+        1
+      ],
+      "stage_labels_are_physical_time": false,
+      "stage_order": [
+        "pump",
+        "bell_measure",
+        "bell_correction",
+        "recurrent_coin",
+        "recurrent_reverse_FSWAP",
+        "endpoint_pre",
+        "recurrent_seam",
+        "endpoint_post_or_clean",
+        "recurrent_contact"
+      ]
+    },
+    {
+      "base_bell_atoms": {
+        "atom_parity_failures": 0,
+        "controlled_rows": 456,
+        "maximum_targets_excluding_control": 2,
+        "parity_even_atoms": 2224,
+        "row_replay_failures": 0
+      },
+      "base_primitives": 144272,
+      "base_recurrent_nonseam": {
+        "charged_parity_failures": 0,
+        "expected_29_per_cell_nonseam_factors": 348,
+        "expected_stage_factor_census": {
+          "recurrent_coin": 132,
+          "recurrent_contact": 180,
+          "recurrent_reverse_FSWAP": 36
+        },
+        "landed_kind_census": {
+          "coin_coin_givens": 120,
+          "coin_coin_phase": 12,
+          "onsite_contact": 180,
+          "reverse_FSWAP": 36
+        },
+        "landed_local_dictionary_sha256": "e778afeda360ccb834fafd4e8c782e2482e8b4f3cf5aca78c9d0d317fce07d14",
+        "landed_nonseam_factors": 348,
+        "landed_nonseam_sequence_sha256": "fe260bb7668efe651e6ce8c146ddc7481eb9ca99fa314e8ce6bd71c0fe34444b",
+        "matrix_binding_failures": 0,
+        "nonseam_FSWAP_route_macros": 336,
+        "one_site_phase_factors": 12,
+        "opcode_census": {
+          "G_coin_coin_givens_0194efd7b89065ea": 12,
+          "G_coin_coin_givens_26e43159960c12f2": 12,
+          "G_coin_coin_givens_368c70fb3187b93b": 12,
+          "G_coin_coin_givens_592fd45186842023": 12,
+          "G_coin_coin_givens_8bbb6a4263ed02e0": 12,
+          "G_coin_coin_givens_938574d8b1f94dcd": 12,
+          "G_coin_coin_givens_b45094ee4507a094": 12,
+          "G_coin_coin_givens_dbd9d946a9335b75": 12,
+          "G_coin_coin_givens_f6588399edafe956": 12,
+          "G_coin_coin_givens_f6c5f4b90fe109c3": 12,
+          "G_coin_coin_phase_6d4473e4904e1bb4": 12,
+          "G_onsite_contact_1b6ae8c174ba92e2": 180,
+          "G_reverse_FSWAP_e06a37d25124c2fb": 36
+        },
+        "routed_literal_radius_one_primitives": 5580,
+        "stage_factor_census": {
+          "recurrent_coin": 132,
+          "recurrent_contact": 180,
+          "recurrent_reverse_FSWAP": 36
+        },
+        "two_site_charged_factors": 336,
+        "unique_opcode_coverage": 13
+      },
+      "base_recurrent_seam": {
+        "diagonalisation_failures": 0,
+        "direct_even_seam_factors": 80,
+        "maximum_post_diagonal_Z_support_M2": 16,
+        "maximum_source_support_M2": 17,
+        "maximum_work_route_distance": 43,
+        "semantic_parity_failures": 0
+      },
+      "base_route_macros": 4400,
+      "cells": 12,
+      "collision_graph": {
+        "edges": 0,
+        "sample_edges": [],
+        "tested_block_ordinals": 112820,
+        "vertices": 924
+      },
+      "combined_primitives": 149108,
+      "covariance": {
+        "colour_transport_bijection_failures": 0,
+        "context_collision_graph_failures": 0,
+        "context_fixed_type_assignment_failures": 0,
+        "context_nearest_neighbour_failures": 0,
+        "context_palette_bijection_failures": 0,
+        "fixed_laboratory_carrier_offset_detected_frames": 23,
+        "frame_origin_contexts": 192,
+        "ordered_frame_products": 576,
+        "product_colour_failures": 0,
+        "product_coordinate_failures": 0,
+        "proper_cubic_frames": 24,
+        "translation_origins": 8
+      },
+      "edges": 20,
+      "endpoint_palette_collision_failures": 0,
+      "expected_instrument_route_macros_per_edge": 14,
+      "fixed_type_assignment": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "270545d934058de3b8454af5174a5dc7fd9e2b0c45e93f6b358be317e7aa1004",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 3433,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 3433,
+        "global_neutral_coordinate_count": 14054,
+        "neutral_route_atlas_M2": 13508,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 228,
+        "persistent_neutral_M2": 624,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 852,
+        "sample_cross_typed_coordinates": []
+      },
+      "global_P_ext": {
+        "P_ext_coordinate_sha256": "270545d934058de3b8454af5174a5dc7fd9e2b0c45e93f6b358be317e7aa1004",
+        "elementary_global_P_ext_commutator_failures": 0,
+        "elementary_primitives_tested": 149108,
+        "maximum_elementary_global_P_ext_commutator_residual": 0.0,
+        "prefix_commutant_certificate_failures": 0,
+        "primitive_untyped_coordinate_uses": 0,
+        "single_global_P_ext": true
+      },
+      "instrument_primitives": 4836,
+      "instrument_route_macros": 280,
+      "persistent_endpoint_auxiliary_M2": 60,
+      "persistent_endpoint_auxiliary_M2_per_edge": 3,
+      "pre_repair_type_audit": {
+        "charged_atlas_coordinates_added_by_nonseam": 302,
+        "charged_atlas_coordinates_before_nonseam": 3131,
+        "charged_routes_changed_by_port_reservation": 414,
+        "frozen_charged_atlas_recompile_coordinate_mismatches": 0,
+        "pre_repair_charged_route_coordinates": 3171,
+        "pre_repair_cross_typed_coordinate_collisions": 2035,
+        "pre_repair_neutral_route_coordinates": 12230,
+        "reserved_neutral_access_ports": 852
+      },
+      "routes": {
+        "exchange_census": {
+          "FSWAP": 1344,
+          "SWAP": 3336
+        },
+        "internal_persistent_palette_hits": 0,
+        "maximum_route_distance": 43,
+        "nearest_neighbour_failures": 0,
+        "returned_label_failures": 0,
+        "route_macros": 4680,
+        "routes_with_active_return_deletion_control": 4224
+      },
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "stage_labels_are_physical_time": false,
+      "stage_order": [
+        "pump",
+        "bell_measure",
+        "bell_correction",
+        "recurrent_coin",
+        "recurrent_reverse_FSWAP",
+        "endpoint_pre",
+        "recurrent_seam",
+        "endpoint_post_or_clean",
+        "recurrent_contact"
+      ]
+    },
+    {
+      "base_bell_atoms": {
+        "atom_parity_failures": 0,
+        "controlled_rows": 1167,
+        "maximum_targets_excluding_control": 2,
+        "parity_even_atoms": 5860,
+        "row_replay_failures": 0
+      },
+      "base_primitives": 394640,
+      "base_recurrent_nonseam": {
+        "charged_parity_failures": 0,
+        "expected_29_per_cell_nonseam_factors": 870,
+        "expected_stage_factor_census": {
+          "recurrent_coin": 330,
+          "recurrent_contact": 450,
+          "recurrent_reverse_FSWAP": 90
+        },
+        "landed_kind_census": {
+          "coin_coin_givens": 300,
+          "coin_coin_phase": 30,
+          "onsite_contact": 450,
+          "reverse_FSWAP": 90
+        },
+        "landed_local_dictionary_sha256": "e778afeda360ccb834fafd4e8c782e2482e8b4f3cf5aca78c9d0d317fce07d14",
+        "landed_nonseam_factors": 870,
+        "landed_nonseam_sequence_sha256": "2abe278603aaa58dc9508c7342facf4062fae4fc9312e7ce8712ba4d2d0ded01",
+        "matrix_binding_failures": 0,
+        "nonseam_FSWAP_route_macros": 840,
+        "one_site_phase_factors": 30,
+        "opcode_census": {
+          "G_coin_coin_givens_0194efd7b89065ea": 30,
+          "G_coin_coin_givens_26e43159960c12f2": 30,
+          "G_coin_coin_givens_368c70fb3187b93b": 30,
+          "G_coin_coin_givens_592fd45186842023": 30,
+          "G_coin_coin_givens_8bbb6a4263ed02e0": 30,
+          "G_coin_coin_givens_938574d8b1f94dcd": 30,
+          "G_coin_coin_givens_b45094ee4507a094": 30,
+          "G_coin_coin_givens_dbd9d946a9335b75": 30,
+          "G_coin_coin_givens_f6588399edafe956": 30,
+          "G_coin_coin_givens_f6c5f4b90fe109c3": 30,
+          "G_coin_coin_phase_6d4473e4904e1bb4": 30,
+          "G_onsite_contact_1b6ae8c174ba92e2": 450,
+          "G_reverse_FSWAP_e06a37d25124c2fb": 90
+        },
+        "routed_literal_radius_one_primitives": 13950,
+        "stage_factor_census": {
+          "recurrent_coin": 330,
+          "recurrent_contact": 450,
+          "recurrent_reverse_FSWAP": 90
+        },
+        "two_site_charged_factors": 840,
+        "unique_opcode_coverage": 13
+      },
+      "base_recurrent_seam": {
+        "diagonalisation_failures": 0,
+        "direct_even_seam_factors": 236,
+        "maximum_post_diagonal_Z_support_M2": 16,
+        "maximum_source_support_M2": 17,
+        "maximum_work_route_distance": 43,
+        "semantic_parity_failures": 0
+      },
+      "base_route_macros": 11708,
+      "cells": 30,
+      "collision_graph": {
+        "edges": 0,
+        "sample_edges": [],
+        "tested_block_ordinals": 177145,
+        "vertices": 2391
+      },
+      "combined_primitives": 408929,
+      "covariance": {
+        "colour_transport_bijection_failures": 0,
+        "context_collision_graph_failures": 0,
+        "context_fixed_type_assignment_failures": 0,
+        "context_nearest_neighbour_failures": 0,
+        "context_palette_bijection_failures": 0,
+        "fixed_laboratory_carrier_offset_detected_frames": 23,
+        "frame_origin_contexts": 192,
+        "ordered_frame_products": 576,
+        "product_colour_failures": 0,
+        "product_coordinate_failures": 0,
+        "proper_cubic_frames": 24,
+        "translation_origins": 8
+      },
+      "edges": 59,
+      "endpoint_palette_collision_failures": 0,
+      "expected_instrument_route_macros_per_edge": 14,
+      "fixed_type_assignment": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "8844cd75a6e507523439fec776db6cc4c9280bd853b101a2c423a7f733282390",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 8985,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 8985,
+        "global_neutral_coordinate_count": 37062,
+        "neutral_route_atlas_M2": 35760,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 570,
+        "persistent_neutral_M2": 1587,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 2157,
+        "sample_cross_typed_coordinates": []
+      },
+      "global_P_ext": {
+        "P_ext_coordinate_sha256": "8844cd75a6e507523439fec776db6cc4c9280bd853b101a2c423a7f733282390",
+        "elementary_global_P_ext_commutator_failures": 0,
+        "elementary_primitives_tested": 408929,
+        "maximum_elementary_global_P_ext_commutator_residual": 0.0,
+        "prefix_commutant_certificate_failures": 0,
+        "primitive_untyped_coordinate_uses": 0,
+        "single_global_P_ext": true
+      },
+      "instrument_primitives": 14289,
+      "instrument_route_macros": 826,
+      "persistent_endpoint_auxiliary_M2": 177,
+      "persistent_endpoint_auxiliary_M2_per_edge": 3,
+      "pre_repair_type_audit": {
+        "charged_atlas_coordinates_added_by_nonseam": 748,
+        "charged_atlas_coordinates_before_nonseam": 8237,
+        "charged_routes_changed_by_port_reservation": 1122,
+        "frozen_charged_atlas_recompile_coordinate_mismatches": 0,
+        "pre_repair_charged_route_coordinates": 8281,
+        "pre_repair_cross_typed_coordinate_collisions": 5306,
+        "pre_repair_neutral_route_coordinates": 32041,
+        "reserved_neutral_access_ports": 2157
+      },
+      "routes": {
+        "exchange_census": {
+          "FSWAP": 3468,
+          "SWAP": 9066
+        },
+        "internal_persistent_palette_hits": 0,
+        "maximum_route_distance": 43,
+        "nearest_neighbour_failures": 0,
+        "returned_label_failures": 0,
+        "route_macros": 12534,
+        "routes_with_active_return_deletion_control": 11340
+      },
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "stage_labels_are_physical_time": false,
+      "stage_order": [
+        "pump",
+        "bell_measure",
+        "bell_correction",
+        "recurrent_coin",
+        "recurrent_reverse_FSWAP",
+        "endpoint_pre",
+        "recurrent_seam",
+        "endpoint_post_or_clean",
+        "recurrent_contact"
+      ]
+    }
+  ],
+  "checks": {
+    "all_instrument_routes_are_returned_nearest_neighbour_and_bounded": true,
+    "coherent_endpoint_instrument_is_exact_on_clean_domain": true,
+    "complete_physical_and_target_seams_swap_declared_endpoints": true,
+    "declared_inputs_are_unique_existing_repo_relative_files": true,
+    "edge_endpoint_pairs_are_pairwise_disjoint_in_every_held_box": true,
+    "fixed_stage_colour_slot_schedule_has_no_collisions": true,
+    "hostile_algebra_mutations_are_active": true,
+    "inherited_one_particle_mass_and_contact_regression_is_rerun": true,
+    "one_single_global_parity_operator_survives_every_prefix": true,
+    "proper_cubic_transport_and_all_products_preserve_the_program": true,
+    "three_neutral_M2_per_edge_are_collision_free_and_locally_typed": true
+  },
+  "claim_scope": "finite held-box coherent endpoint-opportunity instrument on the landed Cycle822 companion seam; not an autonomous occurrence law",
+  "cycle": 823,
+  "inventory": {
+    "derived": [
+      "complete four-factor companion seam swaps its declared matter endpoints",
+      "three-neutral-M2 coherent XOR/OR pointer with clean returned scratch",
+      "14 returned nearest-neighbour route macros per edge",
+      "same fixed P_ext, proper-cubic transported program, and held-shape closure"
+    ],
+    "open": [
+      "translation-local query-free atlas generation or intrinsic recurrent law",
+      "autonomous clean-auxiliary genesis/enforcement and update occurrence",
+      "actuality/admissibility, irreversible Record, Born weighting, and realized history",
+      "physical causal-time attachment, conserved source/gravity response, and prediction bridge",
+      "a composed matter-only mass/contact theorem after retaining or discarding the pointer"
+    ],
+    "supplied": [
+      "Cycle822 finite offline route atlas and fixed stage/colour/slot program",
+      "clean endpoint auxiliaries and neutral route inputs",
+      "Cycle720 companion code sector and total-parity superselection label",
+      "finite box shape, coframe, bank genesis, and occurrence of the update"
+    ]
+  },
+  "one_particle_mass_fixture": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_extended_even_sector_present": true,
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "runtime_seconds": 294.91588592529297,
+  "source_sha256": {
+    "docs/COMPANION_FULL_SEAM_ENDPOINT_INSTRUMENT_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-30.md": "8679f0f737a399b024193bb000158f86049ea10932cccfe1965b5d403ca310f4",
+    "docs/PHYSICAL_M2_TYPED_RADIUS_ONE_COMPILER_TOURNAMENT_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md": "ebf33c18e3e7a82ba6781e066471dae37558428b553bc437cce2c2ce80353f6e",
+    "docs/RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md": "fb54e3476dcbf2a8becca1b93fa327bcefd5a17f06f55b2bebcbeea234993b9e",
+    "docs/ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md": "0854139458f823ef6b64bb5bb8ad3f676e913abc859165c0be78dbbd10f6b7ec",
+    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+    "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py": "17af3e27463c94a1e98f6bfe578b6d7b1a575af50bccd96b472ab0ede44f775c",
+    "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py": "1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737"
+  },
+  "status": "cycle823-companion-full-seam-endpoint-instrument-bounded-positive",
+  "toffoli_decomposition": {
+    "elementary_one_and_two_M2_factors": 15,
+    "maximum_matrix_residual": 7.346882794269506e-16
+  }
+}
+CHECK declared_inputs_are_unique_existing_repo_relative_files: PASS
+CHECK complete_physical_and_target_seams_swap_declared_endpoints: PASS
+CHECK edge_endpoint_pairs_are_pairwise_disjoint_in_every_held_box: PASS
+CHECK coherent_endpoint_instrument_is_exact_on_clean_domain: PASS
+CHECK hostile_algebra_mutations_are_active: PASS
+CHECK three_neutral_M2_per_edge_are_collision_free_and_locally_typed: PASS
+CHECK all_instrument_routes_are_returned_nearest_neighbour_and_bounded: PASS
+CHECK fixed_stage_colour_slot_schedule_has_no_collisions: PASS
+CHECK one_single_global_parity_operator_survives_every_prefix: PASS
+CHECK proper_cubic_transport_and_all_products_preserve_the_program: PASS
+CHECK inherited_one_particle_mass_and_contact_regression_is_rerun: PASS
+CYCLE823_COMPANION_FULL_SEAM_ENDPOINT_INSTRUMENT_BOUNDED_EXACT_PASS

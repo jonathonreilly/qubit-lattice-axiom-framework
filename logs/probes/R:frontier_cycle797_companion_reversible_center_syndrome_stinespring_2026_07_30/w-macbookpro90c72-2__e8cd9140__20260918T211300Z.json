@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle797_companion_reversible_center_syndrome_stinespring_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle797_companion_reversible_center_syndrome_stinespring_2026_07_30.py",
+ "seed": 65980,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T211300Z",
+ "elapsed_s": 15.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c60de6771c83369f67f25570dc3a71af2004db87d63d473764b4fc1cf80eb70",
+ "stdout_tail": "], \"syndrome_register_return_failures\": 0, \"test_kind\": \"basis+all+deterministic-held\", \"tested_center_sectors\": 4128}], \"open\": [\"literal nearest-neighbor routing, returned work, and collision coloring of every controlled-Pauli and syndrome-update macro\", \"derive the axial frame, boundary corner, and triangular front from a translation-compatible recurrent law\", \"autonomous clean-auxiliary genesis, fault repair, renewal, and occurrence\", \"compose this center pump with the raw-to-L logical insertion and recurrent free/seam/contact G\"], \"report_sha256\": \"7ef9d1c9e249a85ae40781a8201d5d6f09e7de8d5bf1df1e03bfe924535a8cb2\", \"source_sha256\": {\"frontier_cycle797_companion_axial_center_core_2026_07_30.py\": \"3bf26e9a75086bdbfe3b14c23507c097b44642f18d4b709805b9559ee3a06bb9\", \"frontier_cycle797_companion_center_local_pump_discriminator_2026_07_30.py\": \"8a44e417ffd4c2fde44b9d0e7e63178e3d8c658d07f8979f57913cf1bba433f3\", \"frontier_cycle797_companion_priority_center_preparation_2026_07_30.py\": \"783441416eba8d538f388bb8560fe2d4021324880dde5b7dff04b2f91927b36a\"}, \"status\": \"PASS_EXECUTED_REVERSIBLE_CENTER_SYNDROME_STINESPRING__FRAME_FRONT_AND_NN_ROUTING_SUPPLIED\", \"supplied\": [\"one axial proper-cubic frame, open-boundary corner, and finite triangular priority/front atlas\", \"clean syndrome and retained-outcome M2 registers\", \"bounded controlled-Pauli measurement/correction primitives and a route chart\"]}\nPASS_EXECUTED_REVERSIBLE_CENTER_SYNDROME_STINESPRING__FRAME_FRONT_AND_NN_ROUTING_SUPPLIED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T211316Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

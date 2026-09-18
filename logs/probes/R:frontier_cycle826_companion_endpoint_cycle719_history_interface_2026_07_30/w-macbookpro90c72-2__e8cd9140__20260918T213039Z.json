@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30.py",
+ "seed": 67039,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T213039Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dabfbfef1f0c75827f7dc58184a902b1c8eace638f36c2766d198519663749b3",
+ "stdout_tail": "conds\": 0.5676290988922119,\n  \"source_sha256\": {\n    \"docs/COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_CYCLE826_BOUNDED_THEOREM_NOTE_2026-07-30.md\": \"75a6e9757178d0d9f42e971b6e2efcdec0e98b359497b2d60571a03b05302d8a\",\n    \"docs/COMPANION_FULL_SEAM_ENDPOINT_INSTRUMENT_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-30.md\": \"8679f0f737a399b024193bb000158f86049ea10932cccfe1965b5d403ca310f4\",\n    \"docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md\": \"d1b33aa0e892494027a64b4908446bf7f871b899d6de69cd65e0d05a9317e9be\",\n    \"scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py\": \"ef9398b3f27dcbb540446d6c5c165c5803014cffa37da59071751810a7ac9978\",\n    \"scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py\": \"1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737\",\n    \"scripts/frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30.py\": \"7132c530e8ff55e9015094b3eaba48b50eabf3ebf85aee31d4b126a5879e8af5\"\n  },\n  \"status\": \"cycle826-companion-endpoint-cycle719-history-interface-bounded-positive\"\n}\nCHECK declared_inputs_are_unique_existing_repo_relative_files: PASS\nCHECK cycle719_controller_consumes_all_four_endpoint_rows_exactly: PASS\nCHECK cycle823_full_seam_composes_with_history_interface_on_all_classes: PASS\nCHECK success_finalizer_deletion_is_active: PASS\nCHECK dirty_pointer_and_token_sector_controls_are_active: PASS\nCYCLE826_COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_BOUNDED_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

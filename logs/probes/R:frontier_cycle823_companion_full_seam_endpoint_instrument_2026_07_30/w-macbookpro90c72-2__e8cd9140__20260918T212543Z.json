@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py",
+ "seed": 66743,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T212543Z",
+ "elapsed_s": 295.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b527c512e573ed435506ff91fa42a70b35fb3b705b7831033d4ab66790e5cd35",
+ "stdout_tail": "ipts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py\": \"f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982\",\n    \"scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py\": \"17af3e27463c94a1e98f6bfe578b6d7b1a575af50bccd96b472ab0ede44f775c\",\n    \"scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py\": \"1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737\"\n  },\n  \"status\": \"cycle823-companion-full-seam-endpoint-instrument-bounded-positive\",\n  \"toffoli_decomposition\": {\n    \"elementary_one_and_two_M2_factors\": 15,\n    \"maximum_matrix_residual\": 7.346882794269506e-16\n  }\n}\nCHECK declared_inputs_are_unique_existing_repo_relative_files: PASS\nCHECK complete_physical_and_target_seams_swap_declared_endpoints: PASS\nCHECK edge_endpoint_pairs_are_pairwise_disjoint_in_every_held_box: PASS\nCHECK coherent_endpoint_instrument_is_exact_on_clean_domain: PASS\nCHECK hostile_algebra_mutations_are_active: PASS\nCHECK three_neutral_M2_per_edge_are_collision_free_and_locally_typed: PASS\nCHECK all_instrument_routes_are_returned_nearest_neighbour_and_bounded: PASS\nCHECK fixed_stage_colour_slot_schedule_has_no_collisions: PASS\nCHECK one_single_global_parity_operator_survives_every_prefix: PASS\nCHECK proper_cubic_transport_and_all_products_preserve_the_program: PASS\nCHECK inherited_one_particle_mass_and_contact_regression_is_rerun: PASS\nCYCLE823_COMPANION_FULL_SEAM_ENDPOINT_INSTRUMENT_BOUNDED_EXACT_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213039Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

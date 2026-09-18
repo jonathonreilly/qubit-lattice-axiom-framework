@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle800_full_physical_coherent_live_transfer_reset_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle800_full_physical_coherent_live_transfer_reset_2026_07_30.py",
+ "seed": 65997,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd9140",
+ "started_utc": "20260918T211317Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1abe8ee0e50c6026b1effb7a6ccba7b4bc9d4e2c8140edd089c960c77a7d2789",
+ "stdout_tail": "5f00416\", \"reconstructed_O_digest\": \"6dae8b3a8c9443752e7ee611440821bff94f8aea1973392ae5835900b5f00416\", \"shape\": [3, 1, 1]}], \"report_sha256\": \"e152717e469902d734e2726fad00b6b12afa1c7f2c3e926b752304e387b1f4aa\", \"route_semantics\": {\"arbitrary_five_site_endpoint_swap_residual\": 0.0, \"deleted_return_residual\": 0.9206126451685925, \"three_CNOT_adjacent_SWAP_residual\": 0.0}, \"source_sha256\": \"8bd7001e2f5e544677e176537a8035a63583e3a2932e3d149ca24eb57068e168\", \"status\": \"PASS\", \"supplied\": [\"clean O input\", \"already companion-encoded L\", \"fixed code/coframe sector\", \"finite chart and transfer-before-G program order\", \"Cycle720 recurrent intertwiner\", \"Cycle789 palette interface\"], \"transfer\": {\"coherent_vs_direct_clean_residual\": 4.732681091546602e-16, \"direct_swap_isometry_residual\": 0.0, \"dirty_I_domain_residual\": 1.9999999999999996, \"dirty_O_domain_residual\": 1.9999999999999996, \"dirty_O_second_use_clean_L_residual\": 1.4142135623730951, \"external_reference_residual\": 3.1569827355773645e-16, \"gate_deletion_residuals\": {\"CNOT_IO\": 1.414213562373095, \"CNOT_LI\": 1.414213562373095, \"CNOT_OI\": 1.414213562373095, \"CZ_LO\": 1.414213562373095, \"H_I_reset\": 1.0823922002923938, \"H_L_pre\": 2.0, \"H_L_reset\": 1.0823922002923938, \"H_O\": 1.0823922002923938}, \"hostile_order_residual\": 1.414213562373095, \"isometry_residual\": 4.732681091546602e-16, \"minimum_gate_deletion_residual\": 1.0823922002923938, \"two_slot_entangled_residual\": 6.297190057159811e-16, \"unitarity_residual\": 1.893072436618641e-15}}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T211318Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

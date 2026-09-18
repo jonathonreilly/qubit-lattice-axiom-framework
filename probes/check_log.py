@@ -81,7 +81,7 @@ def main():
             if not re.findall(pat, stdout):
                 fail(f"parse field {name!r} found nothing in the stdout: the run may not have reached its summary")
         if task.get("expect_pattern") and not re.search(task["expect_pattern"], stdout):
-            fail("expected pattern absent (for a runner: no `TOTAL: PASS=n FAIL=0` line)")
+            fail("expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)")
         if task["type"] == "runner-reexecution":
             name = task["command"].split("scripts/")[1].split(".py")[0]
             csha, cbody = cache_stdout(name)
@@ -90,18 +90,29 @@ def main():
                 note("no pinned cache for this runner (nothing to compare)")
             else:
                 same_runner = (csha == rsha)
-                cache_total = re.findall(r"TOTAL: PASS=\d+ FAIL=\d+", cbody)
-                run_total = re.findall(r"TOTAL: PASS=\d+ FAIL=\d+", stdout)
+                VERDICT = r"(?:TOTAL: |SUMMARY:[^\n]*?|SCORECARD )?PASS=\d+[^\n]{0,40}FAIL=\d+"
+                cache_total = re.findall(VERDICT, cbody)
+                run_total = re.findall(VERDICT, stdout)
                 if cache_total and run_total and cache_total[-1] != run_total[-1]:
-                    fail(f"TOTAL line differs from the pinned cache: run {run_total[-1]} vs cache {cache_total[-1]}")
+                    fail(f"verdict line differs from the pinned cache: run {run_total[-1]!r} vs cache {cache_total[-1]!r}")
+                elif cache_total and not run_total:
+                    fail(f"the pinned cache ends with the verdict {cache_total[-1]!r} and this run printed none")
+                elif task.get("verdict_line") is not None:
+                    rl = [l.rstrip() for l in stdout.split("\n[stderr]")[0].splitlines() if len(re.findall(r"[A-Za-z0-9]", l)) >= 3]
+                    if not rl or rl[-1] != task["verdict_line"]:
+                        fail(f"last line differs from the pinned cache: run {(rl[-1] if rl else '')[:80]!r} vs cache {task['verdict_line'][:80]!r}")
+                    else:
+                        note("last line identical to the pinned cache (this runner prints no PASS/FAIL count)")
+                if cache_total and run_total and cache_total[-1] != run_total[-1]:
+                    pass
                 elif not same_runner:
-                    note("runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); TOTAL lines compared only")
+                    note("runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only")
                 else:
                     # compare stdout bodies modulo trailing whitespace
                     if cbody.strip() == stdout.split("\n[stderr]")[0].strip():
                         note("stdout identical to the pinned cache")
                     else:
-                        note("stdout differs from the pinned cache in some lines (TOTAL lines agree); a reviewer should diff logs/runner-cache/" + name + ".txt against the .txt beside this log")
+                        note("stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/" + name + ".txt against the .txt beside this log")
                     log.setdefault("summary", {})["cache_stdout_identical"] = (cbody.strip() == stdout.split("\n[stderr]")[0].strip())
         if task["type"] == "judgment":
             cmd = log.get("command", "")

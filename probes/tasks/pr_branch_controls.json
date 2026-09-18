@@ -1,0 +1,47 @@
+[
+ {
+  "id": "F:block30-refuter-seeded",
+  "type": "refuter-rerun",
+  "lane": "admissibility-block30",
+  "tier": 1,
+  "command": "python3 probes/lib/block30_refuter.py {SEED}",
+  "cwd": ".",
+  "timeout_s": 3600,
+  "hit_pattern": "(?m)domination violations [1-9]\\d* of|independent checks pass: False|certificate minus fixed point None|exact margins.*\\b[DUF] -\\d",
+  "parse": {
+   "violations": "domination violations (\\d+) of",
+   "checks": "independent checks pass: (\\w+)",
+   "edge": "domain edge at y = 0 by bisection: ([0-9.]+)"
+  },
+  "what": "block 30's refuting control (six-axis law vs the two-level automaton under the SAME uniforms at (p,1,2); independent graph checks of extended trees on random cones; certificate fixed points; the domain edge) with a NEW seed. A HIT is any domination violation, a failed graph check, a certificate without a fixed point, or a negative exact margin. Sweep --seed over 1..200."
+ },
+ {
+  "id": "F:block27-refuter-seeded",
+  "type": "refuter-rerun",
+  "lane": "admissibility-block27",
+  "tier": 1,
+  "command": "python3 probes/lib/block27_refuter.py {SEED}",
+  "cwd": ".",
+  "timeout_s": 3600,
+  "hit_pattern": "max TV/\\|V - V'\\| = 0\\.(29|3|4|5|6|7|8|9)",
+  "parse": {
+   "tv": "max TV/\\|V - V'\\| = ([0-9.]+) against the bound ([0-9.]+)"
+  },
+  "what": "block 27's refuting control (coupled antipodal runs; Monte-Carlo TV sensitivity at random pairs against the bound 1/(2 sqrt 3) = 0.2887; the one-site chain; the near-zero sensitivity) with a NEW seed. A HIT is a measured TV sensitivity above the proved bound 0.2887 (the pattern fires at 0.29 and above; a reviewer confirms with the parsed numbers). Sweep --seed over 1..200."
+ },
+ {
+  "id": "X:sphere-static-kernel-grid",
+  "type": "scan",
+  "lane": "admissibility-block29",
+  "tier": 1,
+  "command": "python3 probes/lib/block29_kernel.py {L} {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "m": "beta=\\s*([0-9.]+): m = ([0-9.]+)",
+   "kernel": "n  beta E\\(k\\) S_perp\\(k\\): (.*)"
+  },
+  "what": "block 29's kernel normalization measurement in the ordered sphere static law on the L^3 torus: beta E(k) S_perp(k) against the bounds (m^2/3)^2 .. 1 (block 19). Fill the grid L in {8, 12, 16, 24}, beta in {0.8, 1.0, 1.5, 2.0, 3.0, 6.0}; run e.g. --L 16 --extra '4000 1000 1.0 2.0 3.0' (sweeps, thermalisation, betas). Value: the table; no hit pattern (a value above 1 is reported to the reviewer as a HIT by hand)."
+ }
+]

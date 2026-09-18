@@ -23,3 +23,7 @@ Hand-written (`probes/tasks/*.json` has the exact commands, hit patterns and par
 | `J:refuting-reimplementation` | 2 | a disagreement with a note's central number | any note |
 | `J:provenance-audit` | 2 | an unsourced number in a note's theorems | any note; open PRs first |
 | `J:refuter-rerun-new-seeds` | 2 | a refuting control's verdict changing under new seeds or sizes | any open PR with a refuter spec |
+| `F:block30-refuter-seeded` | 1 | a domination violation, a failed tree check, a certificate without a fixed point, a negative margin | `--seed` 1..200 (copied from PR #8174's branch, seed override added) |
+| `F:block27-refuter-seeded` | 1 | a measured TV sensitivity above the proved 0.2887 | `--seed` 1..200 (copied from PR #8171's branch) |
+| `X:sphere-static-kernel-grid` | 1 | none; the table of beta E(k) S_perp(k) against its bounds | `--L 8..24 --extra 'sweeps therm betas...'` (copied from PR #8173's branch) |
+| `J:falsifier:PR<n>`, `J:provenance:PR<n>` | 2 | a falsifier that fires; a number without a source | generated for every open science PR from its changed notes |

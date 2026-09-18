@@ -29,10 +29,10 @@ Nothing here changes notes, runners or packs, and nothing here is a claim. Logs 
 | mutation census | `M:` | 0 | a mutation that fails no family or the wrong family | any worker |
 | PR re-execution | `P:` | 0 | on an open science PR: a FAIL, a census mismatch, a runner that does not run (isolated worktree) | any worker; every open PR, weekly |
 | lints | `L:` | 0 | any lint error on the checkout | any worker; daily |
-| refuter re-run | `F:` | 1 | an inconsistency reported by a refuting control | any worker (controls live on PR branches: see `J:refuter-rerun-new-seeds`) |
+| refuter re-run | `F:` | 1 | an inconsistency reported by a refuting control | any worker; the two seeded controls under `probes/lib/` (blocks 27 and 30) take `--seed`; other controls live on PR branches (see `J:refuter-rerun-new-seeds`) |
 | search | `S:` | 1 | a counterexample to an open conjecture of blocks 32–33 (a site whose cheapest tree costs more than 0; a tight sibling pair; a non-admissible restriction; `c* > 1`) | any worker; broad seed and box sweeps — the best return per CPU-hour |
 | scan | `X:` | 1 | none; the value is the table (threshold locations on every weight line; the `1/|m|²` and `c(β)` grids; long plane runs) | any worker; fill the grids stated in `what` |
-| judgment | `J:` | 2 | a falsifier that fires; an unsourced number; a refuter inconsistency; a disagreeing re-implementation | capable models; the return is a committed script plus numbers, never a verdict |
+| judgment | `J:` | 2 | a falsifier that fires; an unsourced number; a refuter inconsistency; a disagreeing re-implementation | capable models; the return is a committed script plus numbers, never a verdict. Two per open PR are generated (`J:falsifier:PR<n>`, `J:provenance:PR<n>`), plus the generic ones |
 
 ## 3. Strategy
 - Tier 0 first and continuously: it is cheap and it turns every open PR into something independently executed on another machine, which the review loop can cite.
@@ -48,3 +48,8 @@ Create `probes/work/<stub>/<script>.py`; it must print a final line starting wit
 
 ## 6. Extending the catalog
 Add a task to `probes/tasks/<file>.json` (id, type, lane, tier, command with `{SEED} {SECONDS} {A} {B} {L} {EXTRA}` placeholders, `hit_pattern`, `parse`, `what`), then `python3 probes/generate_tasks.py`. Controls of a lane that live on a PR branch: `git show origin/<branch>:<path> > probes/lib/<name>.py`, make it self-contained, and reference it. Counts at the last generation are printed by the generator.
+
+## 7. Batch mode (tier 0 at volume)
+One command runs a shard of the mechanical tasks and writes one checked log per task:
+`python3 probes/run_batch.py --type R --shard 3/40 --worker <name> --review "<sentence about the shard: machine, python version>" --skip-done 7`.
+Shard `k/n` takes every n-th task of that type; `--skip-done D` skips tasks with a passing, hit-free log younger than D days by any worker, so many workers can share the 3177 re-executions without coordination (pick distinct shards, or the same shard on a different day). The last line is `BATCH: ran= pass= fail= hits= skipped=`; commit `logs/probes` when it finishes. `--type M` runs the mutation censuses the same way; `--type F --seed <s>` the seeded refuter controls.

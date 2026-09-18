@@ -1,0 +1,11 @@
+PR #8180: ail35: the gravity node's kernel under the axiom's reading — a heat kernel in level time times a plane Green function, diffusive and three-fold symmetric; not the comparator's three-dimensional Green function
+branch physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py: rc=0 TOTAL: PASS=15 FAIL=0
+   mutation space_time_covariance_wrong: expected B observed B ok
+   mutation cross_level_recursion_wrong: expected B observed B ok
+   mutation small_k_form_wrong: expected C observed C ok
+   mutation symmetry_wrong: expected C observed C ok
+   mutation decay_rate_wrong: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

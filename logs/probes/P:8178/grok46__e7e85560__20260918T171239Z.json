@@ -1,0 +1,37 @@
+{
+ "task": "P:8178",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block34-sphere",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8178",
+ "pr": 8178,
+ "branch": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+ "git_sha": "e7e85560",
+ "started_utc": "20260918T171239Z",
+ "elapsed_s": 11.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=16 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR 8178 isolated worktree: TOTAL PASS=16 FAIL=0, 6/6 mutations match expected families, not a HIT",
+ "stdout_sha256": "fa1ec0396b660b23531d9eb00fb7da6e7b35d849b1ac76b2f18c04c948bb4838",
+ "stdout_tail": "PR #8178: ail34: the torus memory time of the sphere formation law \u2014 the linearized zero mode gives tau_L = 3 beta L^2 / A(3 beta) exactly, the other modes are stationary and bracketed, and the nonlinear direction diffuses 1/|m|^2 faster (executed)\nbranch physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py: rc=0 TOTAL: PASS=16 FAIL=0\n   mutation multiplier_wrong: expected B observed B ok\n   mutation covariance_recursion_wrong: expected C observed C ok\n   mutation memory_time_wrong: expected D observed D ok\n   mutation lattice_sum_bounds_wrong: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171429Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

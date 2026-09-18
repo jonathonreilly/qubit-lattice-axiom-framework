@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_depolarization_adm2_admission_collapse_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_color_depolarization_adm2_admission_collapse_2026_06_09.py",
+ "seed": 51514,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d304a4e2",
+ "started_utc": "20260918T171154Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "417ad788c649409d2627676d85bb9da3aa337e08901976bb4823940a660b3996",
+ "stdout_tail": "3 (not primitive)\nPASS  G3.2 scalar U is frame-INDEPENDENT: S = I3 in every frame (no frame rescue)\nPASS  G3.3 generic link V != I3 => primitive S => rho -> I3/3 (P -> 0)\nPASS  G3.4 the depolarizing U is a non-diagonal link (S != I3 = a connection)\nPASS  G3.5 free lane (V = I3): rho stays polarized (P unchanged = 2/3)\nPASS  G4.1 theta=0 (U scalar, no connection content): does NOT depolarize\nPASS  G4.2 theta generic (U off-diagonal = connection content): DOES depolarize\nPASS  G4.3 S = I3 exactly at theta = 0 (scalar) and != I3 for generic theta\nPASS  G5.1 q-qbar singlet marginal = I3/3 (P = 0)\nPASS  G5.2 Schur: generic GLOBAL-invariant joint state has marginal I3/3\nPASS  G5.3 the Schur premise really is GLOBAL-action invariance g (x) conj(g)\nPASS  G5.4 non-singlet product state => POLARIZED marginal (P = 2/3 > 0)\nPASS  G5.5 total-color Casimir = 0 on the singlet, > 0 on the charged state\nPASS  G5.6 total color Casimir invariant under the global unitary orbit (group-orbit invariance, not a no-depolarization claim)\nPASS  G6.1 Schur on C^3 (EXACT): commutant of the SU(3) generators is 1-dimensional (= C.I3)\nPASS  G7.1 no hat discharged: free-hop + product-state default stays POLARIZED on both lanes\nPASS  G7.2 admissions distinct: global action alone leaves a non-neutral marginal polarized\nPASS  G7.3 weight-leak guard: I3/3 forced (invariant->mixed, non-invariant->polarized)\nPASS  G7.4 not-a-no-go witness: supplying the named object (a link) DOES depolarize\n\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171154Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

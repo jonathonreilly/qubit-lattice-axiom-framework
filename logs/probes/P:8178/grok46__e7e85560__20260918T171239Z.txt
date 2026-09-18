@@ -1,0 +1,10 @@
+PR #8178: ail34: the torus memory time of the sphere formation law — the linearized zero mode gives tau_L = 3 beta L^2 / A(3 beta) exactly, the other modes are stationary and bracketed, and the nonlinear direction diffuses 1/|m|^2 faster (executed)
+branch physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_nonlinear_law_measured_2026_09_17.py: rc=0 TOTAL: PASS=16 FAIL=0
+   mutation multiplier_wrong: expected B observed B ok
+   mutation covariance_recursion_wrong: expected C observed C ok
+   mutation memory_time_wrong: expected D observed D ok
+   mutation lattice_sum_bounds_wrong: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

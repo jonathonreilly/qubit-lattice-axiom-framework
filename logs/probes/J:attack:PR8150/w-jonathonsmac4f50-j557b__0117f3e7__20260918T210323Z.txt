@@ -1,0 +1,9 @@
+[X1] plaquette: 96 order-site pairs, 48 strict, 0 failures of monotonicity or of the strictness criterion; 4 multiset classes (14 distinct recorded-set structures), 16 class-site pairs, 8 strict  (0s)
+[X1] 2x3: 4320 order-site pairs, 2592 strict, 0 failures of monotonicity or of the strictness criterion; 28 multiset classes (98 distinct recorded-set structures), 168 class-site pairs, 102 strict  (0s)
+[X1] cube: 322560 order-site pairs, 230400 strict, 0 failures of monotonicity or of the strictness criterion; 542 multiset classes (1862 distinct recorded-set structures), 4336 class-site pairs, 3184 strict  (3s)
+[X2] path3: 4 of 6 orders qualify (direct search); uniform mixture over them equals the static law: True; a mixture giving weight 1/1000 to the non-qualifying order (0, 2, 1) is at TV 1.389e-05
+[X2] star4: 48 of 120 orders qualify (direct search); uniform mixture over them equals the static law: True; a mixture giving weight 1/1000 to the non-qualifying order (1, 2, 0, 3, 4) is at TV 1.389e-05
+[X2] 2x3: uniform mixture over 720 orders (28 classes; class laws coincide within a class: True): TV from the static law = 372254646387017/12790481418000000 = 0.029104037152; stated 372254646387017/12790481418000000: equal True  (12s)
+[X3] domino in the all-+x environment: K_6(first, five +x) = 493/1492992 (first = +x) vs 251/1492992 (first = -x); stated 493/1492992 and 251/1492992
+[time] 12s
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - block 16's executed counts and values recomputed independently (flip ratios from the full sequential laws; direct searches; exact rationals): plaquette 96/48, 2x3 4320/2592, cube 322560/230400 with 542 classes, 4336 class-site pairs, 3184 strict; path 4/6, star 48/120 with exact equality of the qualifying mixtures; 2x3 uniform-mixture TV 372254646387017/12790481418000000; domino 493/1492992 vs 251/1492992; 0 discrepancies; attack does not fire

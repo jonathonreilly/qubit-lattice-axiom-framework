@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_symplectic_tableau_compression_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle48_symplectic_tableau_compression_probe_2026_07_15.py",
+ "seed": 70930,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T223530Z",
+ "elapsed_s": 69.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bcb18b2cb0494ed5392cb7118b4bb3415184862e4976c085a70e6d74253aff96",
+ "stdout_tail": "STATE_KEYS 60 60\nBASES 360\nGATES 420 0 2520 0\nMEASURE 1800 0 10800 0\nDERIVED (0, 1, 4, 0, 1) (4, 5, 4) 0\nRESULT SYMPLECTIC_TABLEAU_RECONSTRUCTION\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T223639Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

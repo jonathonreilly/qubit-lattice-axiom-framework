@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_chirality_record_typing_interface_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_chirality_record_typing_interface_2026_06_05.py",
+ "seed": 70520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "097f58b4",
+ "started_utc": "20260918T222840Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d58e07dc54c512b416f68c6e7f6620ca15ab8751450e6ee0d24416fee33a7e9c",
+ "stdout_tail": "----------------------------------------\n  [PASS] six routes classified\n  [PASS] signed_eigenvalues_imply_chirality: pruned\n  [PASS] hermiticity_forces_signed_readout: pruned\n  [PASS] post_record_counts_select_chiral_weighting: pruned\n  [PASS] ungraded_qubits_select_car: pruned\n  [PASS] emergent_spacetime_chirality_transports_generation: pruned\n  [PASS] positive composition remains open, not closed\n\n------------------------------------------------------------------------------\n6. Note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/CHIRALITY_RECORD_TYPING_INTERFACE_2026-06-05.md)\n  [PASS] note contains marker: Claim type:** meta support map\n  [PASS] note contains marker: Trace class:** negative route-pruning support map\n  [PASS] note contains marker: No-Go Discipline Gate (N1-N8)\n  [PASS] note contains marker: Does not derive chirality.\n  [PASS] note contains marker: Does not select signed over absolute square-root readout.\n  [PASS] note contains marker: Does not select a Koide/generation dial location.\n  [PASS] forbidden wording absent: chirality closure\n  [PASS] forbidden wording absent: signed readout closure\n  [PASS] forbidden wording absent: CAR closure\n  [PASS] forbidden wording absent: dial-location closure\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:cross_sector_front_speed_b4_two_surface_alignment_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "cross",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cross_sector_front_speed_b4_two_surface_alignment_2026_07_16.py",
+ "seed": 70055,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "390b7301",
+ "started_utc": "20260918T222055Z",
+ "elapsed_s": 6.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab32c622bdbb802544352b4f91af574971478d870ff4d0ce70f7bbcdf679ac14",
+ "stdout_tail": "  rank=1; all rows equal\n[PASS] JOINT time-fixing S3 invariant rank = 6 (six (taste-type, axis-role) orbits)  ::  rank=6\n[PASS] uniform hw2 averaging o time-fixing S3 Reynolds: rank 2 -- time-fixing symmetry alone does NOT force c_t = c_s (symmetry counting only)  ::  rank=2\n\n==============================================================================\nEuclidean marginal-ratio arithmetic: Z cancellation and two surfaces (V6)\n==============================================================================\n[PASS] overall kinetic normalizations Z_F, Z_G CANCEL in R=r_F/r_G (exact)  ::  R = sqrt(c_sF c_tG / (c_tF c_sG)) -- no Z dependence\n[PASS] on the B4-pinned surface (c_t=c_s per sector) R = 1 IDENTICALLY  ::  residual=0\n[PASS] broken-B4 surface: R = sqrt(a_F/a_G) -- two independent per-sector anisotropies; symmetry fixes neither quotient (scale-invariant)  ::  ratio=sqrt(a_F)/sqrt(a_G); ratio(lam aF, lam aG) == ratio\n[PASS] NUMERIC R-1=sqrt(rF2/rG2)-1 = 0 on-surface -- gauged cos-vertex (primary)  ::  |rF^2 ratio - 1| < 1e-6 AND |rG^2 ratio - 1| < 1e-8 AND |delta| < 1e-6 (bounds hold; residuals suppressed)\n[PASS] NUMERIC R-1=sqrt(rF2/rG2)-1 = 0 on-surface -- rainbow (robustness)  ::  |rF^2 ratio - 1| < 1e-6 AND |rG^2 ratio - 1| < 1e-8 AND |delta| < 1e-6 (bounds hold; residuals suppressed)\n\n==============================================================================\nSCORECARD\n==============================================================================\nTOTAL: PASS=41 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222102Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

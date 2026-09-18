@@ -1,0 +1,35 @@
+{
+ "task": "R:cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+ "seed": 70063,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "390b7301",
+ "started_utc": "20260918T222103Z",
+ "elapsed_s": 4.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b01a37724e24f0b24d25459387812e9fc6a889531c02bb8b3a74d1ecbf574410",
+ "stdout_tail": "802e-31}, {'V': 1.3, 'beta': 0.4, 'history_curvature': 0.15895026185323877, 'spectral_curvature': 0.15895026185323757, 'Taylor_ratio_tail_bound': 3.6843942472424717e-47}, {'V': 1.3, 'beta': 1.0, 'history_curvature': 1.087529401468107, 'spectral_curvature': 1.0875294014681027, 'Taylor_ratio_tail_bound': 6.306192443645286e-29}], 'actual_RK_thermal_sector': [{'beta': 4.0, 'mobile_chi': 0.2740141816474043, 'full_zero_flux_chi': 0.017716695772546386, 'mobile_thermal_weight': 0.06465612716112576}, {'beta': 12.0, 'mobile_chi': 0.28504782186703137, 'full_zero_flux_chi': 0.0167678826320404, 'mobile_thermal_weight': 0.05882480533340913}, {'beta': 32.0, 'mobile_chi': 0.2850500282417457, 'full_zero_flux_chi': 0.016767648720103286, 'mobile_thermal_weight': 0.05882352941176681}], 'thermal_limit': 0.016767648720102904, 'global_ground_curvature_at_RK': 0}\nPASS positive_history_and_sector_limits declared exact identities and finite tolerances checked\nTOTAL: PASS=8 FAIL=0\nper_element: rational correctors, integer chain periods and actual geometric source signs are checked.\nper_site: every local degree and Gauss condition is checked in the exhaustive L=2 state census.\nper_mode: complete finite Kubo spectra and the exact six-rate current channel are examined.\nper_block: positive closed histories, degenerate sectors and explicit membrane sequences are compared.\nlattice_wide: checked and not executed \u2014 quantified finite-volume identities use written proofs; no uniform photon phase is established.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

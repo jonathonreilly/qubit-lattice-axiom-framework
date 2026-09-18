@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle67_terminal_bdh_rebind_cycle72_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "cycle67",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle67_terminal_bdh_rebind_cycle72_2026_07_14.py",
+ "seed": 71610,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T224651Z",
+ "elapsed_s": 1.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "578982981fb4c58f8a59d913ab4ef3a8af9db7246247d190a9422c42b74ca912",
+ "stdout_tail": "', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}\nPASS E02 role census is exact six B / six D / six H\nPASS E03 all thirteen new auxiliaries avoid current official support\nPASS F01 compiled condition count is 49 :: 49\nPASS F02 reachable-state count is 465 :: 465\nPASS F03 append-edge count is 1,307 :: 1307\nPASS F04 all schedules join one complete terminal :: (31,)\nPASS F05 graph has no parasite :: []\nPASS F06 graph has no output conflict :: frozenset()\nPASS G01 D_y and D_z are the only two initial writes and genuinely commute\nPASS G02 each early H signal requires its own D signal\nPASS G03 each first B requires its own D signal\nPASS G04 first B and first H commute independently after each D\nPASS G05 chronology is not strict B<D<H\nPASS G06 isolated B5 is always the last B\nPASS G07 D5 never precedes B5 and H5 never precedes D5\nPASS G08 complete next header implies every B and D record\nPASS H01 six final H writes are exactly the translated next header\nPASS H02 next q/a/b/c remain open :: q'=(3, -1, 0), data'=((4, 0, 0), (5, 0, 0), (6, 0, 0))\nPASS H03 translated Cycle-14 preparation interface is ready\nPASS H04 all new auxiliaries avoid the fresh next-only block\nPASS H05 terminal decodes exactly current and translated programs :: (Program(trigger=(0, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0)), Program(trigger=(3, 0, 0), forward=(1, 0, 0), transverse=(0, 1, 0)))\n\nNEW_ROWS=27 UNION_ROWS=147 ADDITIONS=31 CONDITIONS=49\nSTATES=465 EDGES=1307 TERMINALS=1\nSUMMARY: 42 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224652Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

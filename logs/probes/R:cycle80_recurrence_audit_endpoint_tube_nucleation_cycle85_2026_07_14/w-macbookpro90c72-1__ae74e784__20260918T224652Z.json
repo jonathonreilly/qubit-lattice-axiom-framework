@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle80_recurrence_audit_endpoint_tube_nucleation_cycle85_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "cycle80",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle80_recurrence_audit_endpoint_tube_nucleation_cycle85_2026_07_14.py",
+ "seed": 71612,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T224652Z",
+ "elapsed_s": 46.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1d34c8af5b41279d21e89a2be494f96aa064641e22ae202d9bbd46f70ad5421d",
+ "stdout_tail": "e_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=312, feasible_phase_blockers=0)\nPASS J01 composite has 73 downstream records / 18 availability masks :: (73, 18)\nPASS J02 full mixed scan exhausts 115,957 contexts :: 115,957\nPASS J03 all 1,143 apparent wrong contexts are ancestry-certified :: (1143, 60)\nPASS J04 no feasible mixed wrong/off-footprint write remains :: ()\nPASS J05 no feasible mixed conflict or blocker remains\nPASS K00 recurrence is quiescent before the all-ancestor launcher\nPASS K01 transformed horizon counters are exact :: (54, 308, 797)\nPASS K01 transformed horizon exposes only its next seed\nPASS K02 transformed horizon counters are exact :: (86, 325, 814)\nPASS K02 transformed horizon exposes only its next seed\nPASS K03 transformed horizon counters are exact :: (119, 342, 831)\nPASS K03 transformed horizon exposes only its next seed\nPASS K06 transformed horizon counters are exact :: (216, 393, 882)\nPASS K06 transformed horizon exposes only its next seed\nPASS K09 transformed horizon counters are exact :: (313, 444, 933)\nPASS K09 transformed horizon exposes only its next seed\nPASS L01 live selected endpoint inventory is 93 roles\nPASS L02 recurrence and endpoint alphabets are disjoint\nPASS L03 corrected endpoint/bridge/recurrence inventory is 153 roles :: 153\nPASS L04 corrected selected route still requires exactly eight bits\n\nBRIDGE_ROWS=26 BRIDGE_RECORDS=26\nCOMPOSED_ROWS=236 RAW=5240 ROLES=153\nSUMMARY: 64 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224739Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

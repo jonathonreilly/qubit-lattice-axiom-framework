@@ -1,0 +1,35 @@
+{
+ "task": "R:declared_imaginary_trace_functional_hermitian_kernel_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "declared",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/declared_imaginary_trace_functional_hermitian_kernel_2026_08_13.py",
+ "seed": 71677,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T224757Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "296539beb43f82d35b5842420bb9b3a64ca8951d921d5a7cb71607af50c46a0b",
+ "stdout_tail": "rmitian matrix has J=0, so non-Hermiticity alone is not claimed sufficient\nPASS: pairing-discriminator the two-argument trace pairing gives 1/4 and 3/10 while J of both densities is zero\nPASS: real-linearity J is additive and real-homogeneous on exact matrix controls\nPASS: note-current-record-boundary the note explicitly denies that current Record supplies J, additivity, or a value at absence\nPASS: note-proof-contract the note states the universal kernel, fixed-J corollary, and explicit anti-Hermitian escape\nPASS: note-no-go-packet the committed note carries complete N1 through N8 headings and a narrow PASS disposition\nPASS: note-machine-trace the source carries complete bounded machine status without an audit verdict\nPASS: note-dependency-contract the only external scientific authority is the current minimal-axiom memo\nPASS: note-nonclaims the note keeps physical readout, writing, formation, and framework-wide no-go outside scope\nN5_CERTIFICATE:\nper_element: checked \u2014 the proof covers every Hermitian 2x2 matrix, with exact rational mutation controls\nper_site: checked \u2014 the theorem is exactly one-site M_2(C) algebra and asserts no composite-site lift\nper_mode: checked and not executed \u2014 no spectral-mode, eigenmode, or momentum decomposition is claimed\nper_block: checked \u2014 the Hermitian subspace and central anti-Hermitian line are separated explicitly\nlattice_wide: checked and not executed \u2014 no lattice history, writing process, or global no-go is claimed\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224758Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

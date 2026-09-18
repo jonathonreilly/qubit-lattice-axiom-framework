@@ -1,0 +1,31 @@
+{
+ "task": "R:d3_cubic_orbit_engine_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "d3",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/d3_cubic_orbit_engine_2026_07_09.py",
+ "seed": 71659,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T224739Z",
+ "elapsed_s": 17.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c73620b2458852d1f6c14774565e116de586611ba2dca28e450b4918e7b502d",
+ "stdout_tail": "orbit-count: cube=5605504 expected=5605504 group=24 OK\ntables: slab-basis=built slab-H=built group=D4/8 orbits=33168 cache=2.2MiB wall=16.8s\nHermiticity: sparse=0.00e+00 random-red=1.73e-16 random-dense=1.43e-16 GS-dE=4.26e-14 GS-res=1.97e-10\nslab-maxdev: pointer=3.55e-13 fragment=1.42e-14 pair=1.29e-13 center-bond=3.16e-13 direct-P=4.55e-13\nnorm/info: dense=2.24e-13 reduced=2.66e-15 t0-chi=7.94e-13 rho-worst=2.69e-13\nRSS peak: 0.477 GiB (guard=10.0, validation-cap=4.0)\nTOTAL: ENGINE-VALID\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

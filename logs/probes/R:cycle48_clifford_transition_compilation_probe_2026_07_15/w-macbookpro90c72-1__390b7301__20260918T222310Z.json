@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_clifford_transition_compilation_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle48_clifford_transition_compilation_probe_2026_07_15.py",
+ "seed": 70190,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "390b7301",
+ "started_utc": "20260918T222310Z",
+ "elapsed_s": 64.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "735eddab5e71a250dd5bb66d52cdafd6c496d30875b9fd630fa57d93f3f7c567",
+ "stdout_tail": "TABLE 480 11520 24380 0\nPAIR_CENSUS 3840 11040 7200 [39] 0\nRESULT LOCAL_CLIFFORD_TRANSITION_GRAMMAR\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222414Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

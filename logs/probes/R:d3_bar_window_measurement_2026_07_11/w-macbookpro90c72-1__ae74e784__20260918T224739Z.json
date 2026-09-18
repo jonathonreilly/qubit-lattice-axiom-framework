@@ -1,0 +1,34 @@
+{
+ "task": "R:d3_bar_window_measurement_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "d3",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/d3_bar_window_measurement_2026_07_11.py",
+ "seed": 71659,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T224739Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "de193916650a41cdd8160aefdbecd254405756e6e6f424833d11b56278f784eb",
+ "stdout_tail": "(0.1,0.2) Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.\nCHECKS+MACHINERY CHECK-01=ok CHECK-02=ok(comm=True,drift=True,X=True) CHECK-03=ok(window-size=True,locality=True,witness=True,drift=True) CHECK-04=ok(tolerance=True,field=True) CHECK-05=inside-declared-floor MACHINERY=ok(GSres=4.88e-09,norm=2.46e-12,entropy=6.11e-14,density=2.36e-15,symmetry=1.97e-13,dt=OK/shift=0.05/theta-rel=0.00171814,RSS=4.39793GiB,wall=6.728h) Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.\nTOTAL BOUNDED-MEASURED-SUPPORT theta*=0.500752 window=[0.02,0.05,0.1] boundary=(0.1,0.2) persistence=partial flags=none failed=none SPEC-NOTE frozen-protocol=D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md; inherited-parent=D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md. SPEC-NOTE frozen-memo-wins: excess=chi(t)-chi(t=0); the ground doublet is stationary-control-plus-diagnostic-only; fine-grid=0:0.05:1.10; missing off-subgrid pair data is never independence. SPEC-NOTE validation-RSS: two-state k=2 Lanczos uses ncv=5 with the frozen tolerance/maxiter/residual gates. SPEC-NOTE zero-weight-X: the exact t=0 X-minus block has p=0; I/d is a marked diagnostic placeholder with zero weight in every scalar and gate. Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224739Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

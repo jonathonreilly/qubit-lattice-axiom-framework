@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle67_endpoint_bdh_composition_cycle73_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "cycle67",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle67_endpoint_bdh_composition_cycle73_2026_07_14.py",
+ "seed": 71606,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T224646Z",
+ "elapsed_s": 4.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0a5b0aa3f8f79f9ce9d3c240c95de619cd6abda8f43c43765260d43461965017",
+ "stdout_tail": "7 terminal\nPASS A03 endpoint extension declares 57 additions :: 57\nPASS A04 orientation fan census is 4/4/6/12\nPASS A05 first endpoint H records are singleton classes\nPASS A06 new table has 139 canonical rows :: 139\nPASS A07 live union has 259 canonical rows :: 259\nPASS B01 live union has 5,876 raw rows :: 5876\nPASS B02 every rotated input is single-valued\nPASS B03 generated official map is exactly Cycle-14 B/D/H :: {(3, 1, 0): 'H1', (3, 0, 1): 'H1', (2, 1, 0): 'D1', (2, 0, 1): 'D1', (1, 1, 0): 'B1', (1, 0, 1): 'B1', (1, 2, 0): 'B0', (1, 0, 2): 'B0', (1, 3, 0): 'B1', (2, 2, 0): 'D0', (2, 0, 2): 'D0', (2, 3, 0): 'D1', (2, 1, 1): 'B1', (3, 1, 1): 'D1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}\nPASS B04 all endpoint auxiliaries avoid current official support\nPASS B05 endpoint additions avoid next-only official support\nPASS B06 next q/a/b/c remain open\nPASS C01 every apparent bad condition has an absent-ancestor witness :: 16/16\nPASS C02 every declared target has a correct condition\nPASS C03 correct-condition census is nonzero :: 194\nPASS C04 every within-rank prefix retains all missing writes :: 529,482 tests\nPASS C05 causal safety plus rank closure proves one terminal\nPASS D01 complete endpoint has translated next header\nPASS D02 translated preparation interface is ready\nPASS D03 terminal decodes current and next programs\nPASS D04 chronology is explicitly projection-equivalent, not strict B<D<H\n\nCONDITIONS=210 GOOD=194 BAD=16\nSUMMARY: 21 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224650Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

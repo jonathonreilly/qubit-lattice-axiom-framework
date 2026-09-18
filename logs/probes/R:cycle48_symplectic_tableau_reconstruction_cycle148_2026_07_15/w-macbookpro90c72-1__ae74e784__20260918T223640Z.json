@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle48_symplectic_tableau_reconstruction_cycle148_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle48_symplectic_tableau_reconstruction_cycle148_2026_07_15.py",
+ "seed": 70999,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T223640Z",
+ "elapsed_s": 72.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0a945674cb0b162512de37a326b19adee3214f5e654e5042c5c96ce3ef062765",
+ "stdout_tail": "AUTHORITY AND REPRESENTATION\nFAIL review note exists :: \nPASS five tableau bits encode all sixteen signed two-qubit Paulis :: \nPASS sixty Cycle-48 labels give sixty distinct stabilizer groups :: \nPASS each state has exactly six ordered generator bases :: \n\nBIT ALGEBRA AGAINST MATRICES\nPASS every commuting signed-Pauli product matches matrix multiplication :: (544, [])\nPASS all 224 signed-Pauli gate updates match conjugation matrices :: []\n\nFULL TABLE RECONSTRUCTION\nPASS compact formulas reconstruct all 420 Clifford state transitions :: []\nPASS all 2,520 generator-basis gate presentations agree :: []\nPASS commutation/pivot reconstructs all 1,800 conditional branches :: []\nPASS all 10,800 generator-basis measurement presentations agree :: []\n\nGENERATOR REDUNDANCY\nPASS reverse-CNOT and SWAP are derived from H and forward-CNOT :: []\nPASS 2,280 compiled transition rows are reconstructed rather than independent :: \n\nSCOPE\nFAIL note contains: exact table reconstruction :: \nFAIL note contains: does not derive the tableau algebra from the axioms :: \nFAIL note contains: equal anticommuting weights remain quantum input :: \nFAIL note contains: physical bitwise record compiler remains open :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 11 FAIL 8\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T223752Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

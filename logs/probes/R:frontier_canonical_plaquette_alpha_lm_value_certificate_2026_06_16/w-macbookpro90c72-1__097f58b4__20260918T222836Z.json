@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py",
+ "seed": 70516,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "097f58b4",
+ "started_utc": "20260918T222836Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f8a41187efa0337eba9bd15f73abf16df66d062f637088225cc4f947d26d547f",
+ "stdout_tail": "r cites parent note\n\n========================================================================\nBLOCK 3: canonical arithmetic\n========================================================================\n  P              = 0.593400000000000\n  u_0            = 0.877681381198684\n  alpha_bare     = 0.079577471545948\n  alpha_LM       = 0.090667836017286\n  alpha_LM/(4pi) = 0.007215117140798\n  alpha_s(v)     = 0.103303816122267\n  [PASS] P equals canonical 0.5934\n  [PASS] u_0 equals P^(1/4)\n  [PASS] u_0^4 equals P\n  [PASS] alpha_bare equals 1/(4pi)\n  [PASS] alpha_LM equals alpha_bare/u_0\n  [PASS] alpha_LM*u_0 equals alpha_bare\n  [PASS] alpha_s(v) equals alpha_bare/u_0^2\n  [PASS] alpha_s(v)*u_0^2 equals alpha_bare\n  [PASS] alpha_LM/(4pi) matches displayed value\n\n========================================================================\nBLOCK 4: downstream-use firewall\n========================================================================\n  [PASS] note forbids MC-certificate interpretation\n  [PASS] note forbids analytic beta=6 closure interpretation\n  [PASS] note keeps physical bridge requirements live\n  [PASS] runner does not edit audit files  (source verifier only)\n\n========================================================================\nSUMMARY: PASS=25  FAIL=0\n========================================================================\n\nRESULT:\n  Canonical alpha/plaquette arithmetic certificate is complete iff FAIL=0.\n  The parent plaquette value and all retained effects remain audit-owned.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

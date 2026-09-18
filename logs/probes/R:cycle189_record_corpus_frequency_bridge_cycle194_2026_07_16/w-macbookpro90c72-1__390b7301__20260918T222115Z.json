@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle189_record_corpus_frequency_bridge_cycle194_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "cycle189",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle189_record_corpus_frequency_bridge_cycle194_2026_07_16.py",
+ "seed": 70075,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "390b7301",
+ "started_utc": "20260918T222115Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cdd68c1eb29dbc1c359ff3e5d9e28ee29faf2c7bbf889e13ba72666f9d1b6e16",
+ "stdout_tail": "FROZEN PREDECESSORS\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/cycle189_record_corpus_frequency_bridge_cycle194_2026_07_16.py\", line 496, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/cycle189_record_corpus_frequency_bridge_cycle194_2026_07_16.py\", line 276, in main\n    observed = {path: digest(path) for path in FROZEN}\n                      ~~~~~~^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/cycle189_record_corpus_frequency_bridge_cycle194_2026_07_16.py\", line 82, in digest\n    return sha256(path.read_bytes()).hexdigest()\n                  ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/STOCHASTIC_RECORD_HISTORY_ACTUALITY_SEMANTICS_CYCLE27_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222115Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

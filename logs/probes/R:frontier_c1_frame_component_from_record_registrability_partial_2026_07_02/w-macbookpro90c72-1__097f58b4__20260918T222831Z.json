@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_c1_frame_component_from_record_registrability_partial_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_c1_frame_component_from_record_registrability_partial_2026_07_02.py",
+ "seed": 70511,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "097f58b4",
+ "started_utc": "20260918T222831Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a16ec2d32d7c4996cff925ac5f47c39a5d16fa7e802dfbb4de153a705564aa0",
+ "stdout_tail": "PASS: T1 Hadamard sends (1,1) to (sqrt(2),0) -- Matrix([[sqrt(2)], [0]])\nPASS: T1 S2 verdict true in original imported basis\nPASS: T1 S2 verdict false in Hadamard imported basis\nPASS: T1 S2 verdicts differ on same vector orbit\nPASS: T2 ||I||^2 = 3\nPASS: T2 ||B||^2 = 6\nPASS: T2 <I,B> = 0\nPASS: T2 S1 equal HS energy gives r=1/2 -- 1/2\nPASS: T2 Hadamard first mixed cell is not unit\nPASS: T2 Hadamard second mixed cell not HS-orthogonal to unit\nPASS: T3 parent S3 spectral relation holds\nPASS: T3 S3 r equals 17/2 - 6*sqrt(2)\nPASS: T3 trace formula recovers S3 r\nPASS: T3 S3 trace value is unchanged by imported-basis relabeling\nPASS: T4 Hadamard/sign subgroup has 16 elements -- 16\nPASS: T4 every subgroup element is orthogonal\nPASS: T4 averaged first per-mode square is invariant total/2\nPASS: T4 averaged second per-mode square is invariant total/2\nPASS: T4 averaged S2 split is equal by construction\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

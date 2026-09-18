@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_unified_clifford_luders_machine_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cycle48_unified_clifford_luders_machine_probe_2026_07_15.py",
+ "seed": 71072,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T223752Z",
+ "elapsed_s": 154.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c62bf1fe07ce208d808053e0f1ebfc8b208f1bb0449d4dc0a1c72dabfbcfe306",
+ "stdout_tail": "EVENTS 8 30 38\nRAW 67580 0\nPAIR 86640 250800 164160 [42] 0\nRESULT UNIFIED_CONDITIONAL_STABILIZER_EVENT_TAPE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

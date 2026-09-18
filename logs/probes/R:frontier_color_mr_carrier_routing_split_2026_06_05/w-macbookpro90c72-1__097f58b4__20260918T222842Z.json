@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_mr_carrier_routing_split_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_mr_carrier_routing_split_2026_06_05.py",
+ "seed": 70522,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "097f58b4",
+ "started_utc": "20260918T222842Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=53 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4ad11ea7b0d739b6658cdf2399e5d811750b63180b3176462253c9a9f2c37c3d",
+ "stdout_tail": "-----------------------------------------------------------------\n  [PASS] route table has six consumer classes\n  [PASS] structural rows classified as support consumers\n  [PASS] quark label rows keep naming convention\n  [PASS] record rows keep readout antecedent\n  [PASS] Wilson/Gauss rows keep link routing\n  [PASS] QCD dynamics rows keep formation/action\n  [PASS] history/count rows are after realized atoms\n\n------------------------------------------------------------------------------\n6. Note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/COLOR_MR_CARRIER_ROUTING_SPLIT_2026-06-05.md)\n  [PASS] note contains marker: **Claim type:** meta\n  [PASS] note contains marker: Trace class:** upstream support map\n  [PASS] note contains marker: No-go discipline result:\n  [PASS] note contains marker: Does not derive physical color.\n  [PASS] note contains marker: Does not route the base-`SU(3)` index onto link variables.\n  [PASS] note contains marker: Does not select a Koide/generation dial location.\n  [PASS] forbidden wording absent: physical color closure\n  [PASS] forbidden wording absent: species derivation closure\n  [PASS] forbidden wording absent: link routing closure\n  [PASS] forbidden wording absent: dial selector closure\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=53 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

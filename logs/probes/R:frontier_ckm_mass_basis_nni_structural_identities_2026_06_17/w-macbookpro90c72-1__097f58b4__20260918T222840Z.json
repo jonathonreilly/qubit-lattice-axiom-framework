@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_ckm_mass_basis_nni_structural_identities_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_ckm_mass_basis_nni_structural_identities_2026_06_17.py",
+ "seed": 70520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "097f58b4",
+ "started_utc": "20260918T222840Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31031c21ee02eb9c0d8ebf60f0546fd58688e3f7bf3dc88af82184656dfbd1aa",
+ "stdout_tail": "CKM mass-basis NNI structural identities\nNo PDG masses, CKM comparators, fitted coefficients, or observed targets are used.\n\n[PASS] T1 symbolic chain rule  (sqrt(m1/m3) - sqrt(m1/m2)*sqrt(m2/m3) = 0)\n[PASS] T2 symbolic geometric normalization  (M13/(M12*M23) - 1/m2 = 0)\n[PASS] T3 symbolic phys-map closure  (c13_phys - c12_phys*c23_phys = 0)\n[PASS] T4 symbolic gap ratio  (c13_phys/c13_geom - sqrt(m1/m3) = 0)\n[PASS] T4 coefficient independence in c12  (d/dc12 gap = 0)\n[PASS] T4 coefficient independence in c23  (d/dc23 gap = 0)\n\nDeterministic exact rational controls\n[PASS] control 1: T1\n[PASS] control 1: T2\n[PASS] control 1: T3\n[PASS] control 1: T4\n[PASS] control 2: T1\n[PASS] control 2: T2\n[PASS] control 2: T3\n[PASS] control 2: T4\n[PASS] control 3: T1\n[PASS] control 3: T2\n[PASS] control 3: T3\n[PASS] control 3: T4\n\nCompanion note boundary checks\n[PASS] note uses canonical positive_theorem metadata\n[PASS] note links this runner and cached output\n[PASS] note keeps calibrated Cabibbo value outside the theorem\n\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_capture_tail_exact_law_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_capture_tail_exact_law_2026_06_12.py",
+ "seed": 70517,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "097f58b4",
+ "started_utc": "20260918T222837Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "41a4a825a88a125f41b8f567384d5ef8e9964c6be5df50a23e20bf55d16e801f",
+ "stdout_tail": "_energy=2190.498061563065 total_hankel_energy=21721.55199095869 tail_law_error=2.220e-16\n  K=6: tail_fraction=0.005063483108690719 tail_energy=173.0983967980533 total_hankel_energy=34185.63725451271 tail_law_error=1.501e-16\n  [PASS] S3: Hankel-Frobenius tail fractions reproduce the frozen table  (K3:0.101869911436, K4:0.222380442657, K5:0.100844454507, K6:0.00506348310869)\n  [PASS] S3: deficit equals the order-4 Hankel-Frobenius tail fraction  (K3:1.193e-15, K4:4.163e-16, K5:2.220e-16, K6:1.501e-16)\n  [PASS] S3: retained tail energies are nonzero, so the deficit is not fabricated by zero mass  (K3:2540.37, K4:5342.32, K5:2190.5, K6:173.098)\n\nS4 depth ordering as tail arithmetic\n------------------------------------------------------------------------------\n  capture descending: (6, 5, 3, 4)\n  tail ascending:     (6, 5, 3, 4)\n  [PASS] S4: capture ordering reproduces the frozen landed depth order  (capture_order=(6, 5, 3, 4))\n  [PASS] S4: tail-mass ordering is the same arithmetic order K6,K5,K3,K4  (tail_order=(6, 5, 3, 4))\n==============================================================================\nTOTAL: PASS=15 FAIL=0\n==============================================================================\nSCOPE: exact finite one-body L=3 gauge-link system, realized seeds only.\nCLAIM TESTED: capture deficit is exactly the order-4 Hankel-Frobenius\n  tail fraction of the full sampled determinant-phase tone sum; the\n  depth ordering is the ascending tail-mass arithmetic on these states.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_capture_tail_exact_law_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

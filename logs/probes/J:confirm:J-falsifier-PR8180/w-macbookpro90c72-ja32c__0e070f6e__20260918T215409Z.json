@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-falsifier-PR8180",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-ja32c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8180/cross_ratio_L4.py",
+ "seed": 68449,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e070f6e",
+ "started_utc": "20260918T215409Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed T3/D2 product-form test does not separate the kernels at L=4: both fail exact cross-ratio separability; identity 1/G^=3(1/C^+1-u) holds"
+ },
+ "review": "Independent L=4 Fraction census: formation 557/630 and 1/E 390/630 and 541/630 fail plane x axis product form; identity 1/G=3(1/C+1-u) holds; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:falsifier:PR8180/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "cecb5b2258d1796a2c8f390f0655edce31f722ffc95f7f8475e5f66249494276",
+ "stdout_tail": "identity E(q1+w,q2+w,w)=3(Dform+1-u) on L=4: True over 64 points\nL=4 formation: quadruples=630 R!=1 557 first_R=4\nL=4 comparator_e3: quadruples=630 R!=1 390 first_R=4/3\nL=4 comparator_111: quadruples=630 R!=1 541 first_R=8/3\nHIT: confirmed - at L=4 both the formation spectral density and 1/E fail the exact plane x axis cross-ratio test (formation 557/630, comparator e3 390/630, 111 541/630); T3/D2's product-form separation does not hold in this representation\nSUMMARY: confirmed T3/D2 product-form test does not separate the kernels at L=4: both fail exact cross-ratio separability; identity 1/G^=3(1/C^+1-u) holds\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja32c",
+  "at_utc": "20260918T215434Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "L=4 exact cross-ratios: both formation and 1/E fail plane x axis product form, so T3/D2 does not separate them in that representation",
+  "by": "w-macbookpro90c72-ja32c",
+  "at_utc": "20260918T215434Z"
+ }
+}

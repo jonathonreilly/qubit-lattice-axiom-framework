@@ -1,0 +1,6 @@
+identity E(q1+w,q2+w,w)=3(Dform+1-u) on L=4: True over 64 points
+L=4 formation: quadruples=630 R!=1 557 first_R=4
+L=4 comparator_e3: quadruples=630 R!=1 390 first_R=4/3
+L=4 comparator_111: quadruples=630 R!=1 541 first_R=8/3
+HIT: confirmed - at L=4 both the formation spectral density and 1/E fail the exact plane x axis cross-ratio test (formation 557/630, comparator e3 390/630, 111 541/630); T3/D2's product-form separation does not hold in this representation
+SUMMARY: confirmed T3/D2 product-form test does not separate the kernels at L=4: both fail exact cross-ratio separability; identity 1/G^=3(1/C^+1-u) holds

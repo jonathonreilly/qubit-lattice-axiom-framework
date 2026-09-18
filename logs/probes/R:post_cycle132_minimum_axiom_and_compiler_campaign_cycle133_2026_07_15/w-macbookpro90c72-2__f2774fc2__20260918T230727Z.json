@@ -20,13 +20,20 @@
  "stdout_tail": "slot-2/scripts/post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py\", line 360, in scope_contract\n    c126_note = normalized(C126_NOTE)\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py\", line 131, in normalized\n    text = path.read_text(encoding=\"utf-8\").lower()\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/POST_CYCLE124_MINIMUM_AXIOM_AND_COMPILER_DELTA_CYCLE126_NOTE_2026-07-15.md'\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260918T231317Z",
+  "at_utc": "20260918T232826Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f2774fc2 differs from the current HEAD e2348295 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, stale foundation-hash pins: FOUNDATIONS pins docs/MINIMAL_AXIOMS_2026-06-29.md 53175250..., docs/AXIOM_MINIMALITY_POLICY 35e9235c... and docs/audit/data/axiom_premise_nodes.json 56fde913... (re-pinned by fb5e056ddf, 2026-08-05); 634b1de2f8 / 574346c636 (2026-08-13, Record additivity clause dropped) changed all three, which now hash 93af34cf... / acf7c264... / 615f13aa...; no runner cache; the run also reads notes moved to archive/ (#8198). Reproduces on any clone of main.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T232826Z"
  }
 }

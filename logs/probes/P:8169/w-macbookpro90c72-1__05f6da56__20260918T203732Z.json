@@ -1,0 +1,36 @@
+{
+ "task": "P:8169",
+ "type": "pr-reexecution",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8169",
+ "pr": 8169,
+ "branch": "physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916",
+ "git_sha": "05f6da56",
+ "started_utc": "20260918T203732Z",
+ "elapsed_s": 5.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+    "returncode": 0,
+    "total": "PASS=21 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "8a986effdf2dbed45a69c2bca70bfac58dfe1c04bc97039431b6ca2c646e5029",
+ "stdout_tail": "PR #8169: [physics-loop] frame-attached four-point weights: Born is not a four-point law; sequential supports 2 vs 4\nbranch physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py: rc=0 PASS=21 FAIL=0",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T203738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

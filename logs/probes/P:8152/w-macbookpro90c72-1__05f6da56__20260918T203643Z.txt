@@ -1,0 +1,12 @@
+PR #8152: [physics-loop] admissibility-induced-law block18 — bounded_theorem — bounded-support: menus — unsoldered finite supports are neighbour-generated (antipodal for one neighbour; no site-independent finite menu), soldered menus are unions of the cube's orbits 6/8/12/24 with the six axes minimal; Born deterministic on the antipodal pair
+branch physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py: rc=0 PASS=15 FAIL=0
+   mutation rotation_orbit_finite_claimed: expected B observed B ok
+   mutation frame_not_equivariant_claimed: expected B observed B ok
+   mutation orbit_sizes_wrong: expected C observed C ok
+   mutation mixed_set_invariant_claimed: expected C observed C ok
+   mutation record_off_seed_axis_claimed: expected D observed D ok
+   mutation born_nontrivial_on_antipodal_claimed: expected D observed D ok
+   mutation finite_menu_unsoldered_claimed: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

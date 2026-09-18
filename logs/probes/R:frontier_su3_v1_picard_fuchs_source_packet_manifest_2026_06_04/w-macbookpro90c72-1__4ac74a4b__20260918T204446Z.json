@@ -1,0 +1,40 @@
+{
+ "task": "R:frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.py",
+ "seed": 64286,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204446Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=5 FAIL=0",
+   "PASS=5 FAIL=0",
+   "PASS=6 FAIL=0",
+   "PASS=54 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "88a8cd648a380ab3f7d595d02a08bee5342c6a406822ec605d2e3c95d6e14a18",
+ "stdout_tail": "5fb117ae4f76e88ad4aa3b4fe76c03ed64155c\n[PASS] cache_exit_ok:finite_window_cache: exit_code=0 status=ok\n[PASS] cache_summary_present:finite_window_cache: SUMMARY: CERTIFICATE PASS=5 FAIL=0\n[PASS] cache_runner_matches:extended_minimality_cache: scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py == scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py\n[PASS] cache_sha_fresh:extended_minimality_cache: cache sha b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0 current sha b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0\n[PASS] cache_exit_ok:extended_minimality_cache: exit_code=0 status=ok\n[PASS] cache_summary_present:extended_minimality_cache: SUMMARY: CERTIFICATE PASS=6 FAIL=0\n[PASS] all_order_json_finite_window_boundary_passes: summary.finite_window_boundary_passed is true\n[PASS] all_order_json_all_order_not_certified: summary.all_order_certificate_passed is false\n[PASS] all_order_json_all_degree_minimality_not_certified: summary.all_degree_minimality_certified is false\n[PASS] all_order_json_threshold: T3 Bostan-Salvy-Schost threshold is 17\n[PASS] note_has_2026_06_04_source_packet_section: source packet exposure section present\n==============================================================================\nSUMMARY: SOURCE PACKET MANIFEST PASS=54 FAIL=0\n==============================================================================\nOutput written: outputs/su3_v1_picard_fuchs_source_packet_manifest_2026_06_04.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204446Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

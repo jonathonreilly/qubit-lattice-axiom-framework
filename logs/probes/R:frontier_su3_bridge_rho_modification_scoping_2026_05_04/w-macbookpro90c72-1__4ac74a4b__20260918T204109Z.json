@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_bridge_rho_modification_scoping_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_bridge_rho_modification_scoping_2026_05_04.py",
+ "seed": 64069,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204109Z",
+ "elapsed_s": 64.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=2 SUPPORT=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5aee193e94e057ee97c2e0a63d1b8093a42601ca82a1ca07c2a8dd28ffdd3f19",
+ "stdout_tail": " a CONTINUUM-LIMIT\n      RG flow factor.\n\n  M2: TOPOLOGICAL POWER N_components \u2208 { different value }\n      Would require: a different cube topology or boundary condition\n      that changes the index-graph component count from 8 to 12.\n      \u2192 Best N gives P = 0.5888; near-miss.\n\n  M3: PER-SECTOR \u03c1 MODIFICATION (single sector)\n      7 sectors can be forced to hit the comparator with an appropriate \u03c1 value.\n      Smallest required modification: \u03c1_(1, 1) \u2192 \u00d7 4.26e+04.\n      Would require: a non-perturbative correction to a SPECIFIC\n      irrep's contribution. Could correspond to vacuum-polarization or\n      condensate amplitude in that channel.\n\n  CONCLUSION: To hit P(\u03b2=6) = 0.5934 from the tested\n  candidate family, one would need ONE OF:\n    (i) An L_s \u2265 3 cube with the framework's correct BC (different \u03c1).\n    (ii) A renormalization-group flow primitive (\u03b1 multiplier).\n    (iii) A non-perturbative correction to a specific irrep sector.\n    (iv) An identification that the relevant observable is NOT 'P' but\n         something else that equals 0.5934 when the candidate-\u03c1 structure\n         is interpreted differently.\n\n  None of these is supplied by this runner. Each is an open\n  science item that would need explicit derivation and review before\n  it could be used as repo authority.\n\n==============================================================================\nSUMMARY: THEOREM PASS=2 SUPPORT=2 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204213Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_su3_bridge_rho_modification_scoping_2026_05_04.txt against the .txt beside this log"
+  ]
+ }
+}

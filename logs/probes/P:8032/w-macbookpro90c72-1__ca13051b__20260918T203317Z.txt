@@ -1,0 +1,5 @@
+PR #8032: [physics-loop] finite-pw-energy block42 conditional-support
+branch codex/finite-pw-energy-block42-20260907 (base codex/finite-transporter-block41-20260907)
+runners in the PR: 2
+== scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)

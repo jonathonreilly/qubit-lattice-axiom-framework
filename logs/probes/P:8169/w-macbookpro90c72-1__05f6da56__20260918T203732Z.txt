@@ -1,0 +1,4 @@
+PR #8169: [physics-loop] frame-attached four-point weights: Born is not a four-point law; sequential supports 2 vs 4
+branch physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py: rc=0 PASS=21 FAIL=0

@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_supplied_three_label_target_apportionment_comparator_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_supplied_three_label_target_apportionment_comparator_2026_07_30.py",
+ "seed": 64303,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204503Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "291ac5e3b0c1b6a452763565f3a7b00a978bd0cc4204ef1c4e5560fcfac7e407",
+ "stdout_tail": " in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_supplied_three_label_target_apportionment_comparator_2026_07_30.py\", line 121, in main\n    hashes_before = declared_hashes()\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_supplied_three_label_target_apportionment_comparator_2026_07_30.py\", line 69, in declared_hashes\n    return {relative: digest(ROOT / relative) for relative in AUDIT_INPUT_PATHS}\n                      ~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_supplied_three_label_target_apportionment_comparator_2026_07_30.py\", line 65, in digest\n    return sha256(path.read_bytes()).hexdigest()\n                  ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/SUPPLIED_THREE_LABEL_TARGET_APPORTIONMENT_COMPARATOR_BOUNDED_THEOREM_NOTE_2026-07-30.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204503Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

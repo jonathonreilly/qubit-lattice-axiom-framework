@@ -1,0 +1,12 @@
+PR #8023: [physics-loop] compact-cutoff block32 conditional-support
+branch codex/compact-cutoff-block32-20260907 (base main)
+runners in the PR: 9
+== scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py: rc=0 PASS=24 FAIL=0
+== scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py: rc=0 PASS=28 FAIL=0
+== scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py: rc=0 PASS=31 FAIL=0

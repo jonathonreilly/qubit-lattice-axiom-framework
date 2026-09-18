@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_finite_range_h_bridge_2026_05_09",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
+ "seed": 63976,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203936Z",
+ "elapsed_s": 34.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5cbd4293aae3c0d2607bf71354ccaf1dfe938c7d1f7c7d8e6be500e34e1b8c61",
+ "stdout_tail": "ange, W = |m| + 6\n         unconditional Z^3 leg: v_LR \u2264 4\u00b7e\u00b7(|m| + 2d) = 68.5007 at m = 0.3\n\n========================================================================\nSUMMARY\n========================================================================\n  F0  note manifest / proved-lemma surface guard:          PASS\n  F1  action-density local support:                        PASS\n  F2  explicit J_max bound from action coefficients:       PASS\n  F2b carrier-faithful Wilson branch bracket:              PASS\n  F2c per-site overlap weights W (lemma input):            PASS\n  F3  proved LR lemma vs exact commutators (framework H):  PASS\n  F4  outside-lightcone exponential decay:                 PASS\n  F5  falsification: long-range bond breaks the bound:     PASS\n  F6  Z^3 block: Hermitian, finite-range, W = |m| + 6:     PASS\n\n  PASS=14, FAIL=0\n  OVERALL: PASS\n\nScope notes for the auditor:\n  - The LR velocity is DERIVED in the companion note (v_LR = 2eqWR);\n    this runner checks the derived bound against exact commutator norms\n    on the actual framework hopping Hamiltonian (class C compute).\n  - The exact reconstructed logarithmic H = -log(T)/a_tau is NOT\n    constructed; the carrier-velocity corollary remains conditional.\n  - Cited authority chain: parent RP note (staggered-only surface names),\n    hopping_bilinear_hermiticity (B1-B6 hopping Hamiltonian),\n    staggered_wilson_det_positivity_bridge (supplied M_W = r_W d I\n    surface; F2 branch value only \u2014 non-load-bearing after F2b).\n\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204010Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/microcausality_finite_range_h_bridge_2026_05_09.txt against the .txt beside this log"
+  ]
+ }
+}

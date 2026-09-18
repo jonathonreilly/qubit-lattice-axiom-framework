@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_wigner_l3_treewidth_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_wigner_l3_treewidth_2026_05_04.py",
+ "seed": 64301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204501Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=2 SUPPORT=1 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cd91b66a48d895ace434875725e29faa75ed158072f5feadabbdeb2878928462",
+ "stdout_tail": "der ---\n  [0.03s] min-fill completed\n  Max clique size during elimination: 30\n  Treewidth UPPER BOUND (min-fill): 29\n  Worst intermediate size: 8^30 = 1,237,940,039,285,380,274,899,124,224 entries = 18446744073709551616.00 GiB\n\n--- Section E: feasibility verdict ---\n\n  Memory budget:                   4.0 GiB\n  Min-degree max intermediate:     18446744073709551616.00 GiB\n  Min-fill max intermediate:       18446744073709551616.00 GiB\n\n  Best heuristic: min-degree with treewidth bound 29\n  Best max intermediate: 8^30 = 18446744073709551616.00 GiB\n\n  TESTED HEURISTICS EXCEED BUDGET: best tested heuristic gives 18446744073709551616.0 GiB intermediate, exceeds 4 GiB budget by 4611686018427387904\u00d7.\n  Closure path: alternative methods needed:\n    - tensor-train / matrix-product-state ansatz\n    - hierarchical tucker decomposition\n    - adopt opt_einsum library (changes import policy)\n\n==============================================================================\nSUMMARY: THEOREM PASS=2 SUPPORT=1 FAIL=0\n==============================================================================\n\nHeadline:\n  L_s=3 PBC cube link adjacency graph: 81 nodes, 324 edges, degree stats 8-8\n  Min-degree treewidth bound: 29 (intermediate 8^30 = 18446744073709551616.00 GiB)\n  Min-fill treewidth bound:   29 (intermediate 8^30 = 18446744073709551616.00 GiB)\n  Best heuristic intermediate: 18446744073709551616.00 GiB\n  Memory budget: 4.0 GiB\n  Verdict: TESTED HEURISTICS NEED BETTER ORDERING or alternative method\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204502Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_su3_wigner_l3_treewidth_2026_05_04.txt against the .txt beside this log"
+  ]
+ }
+}

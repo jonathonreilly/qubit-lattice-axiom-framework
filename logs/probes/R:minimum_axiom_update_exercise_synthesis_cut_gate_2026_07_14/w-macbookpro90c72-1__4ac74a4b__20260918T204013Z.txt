@@ -1,0 +1,104 @@
+
+===============================================================================
+A - Source, authority, and current-foundation boundary
+===============================================================================
+FAIL A source exists: synthesis :: docs/work_history/repo/review_feedback/MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md
+PASS A source exists: axioms :: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A source exists: registry :: docs/audit/data/axiom_premise_nodes.json
+PASS A source exists: policy :: docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS A source exists: axiom runner :: scripts/audit_companion_minimal_axioms_clean_base_exact.py
+FAIL A source exists: contract :: docs/work_history/repo/review_feedback/CANONICAL_LAW_COMPLETENESS_CONTRACT_NOTE_2026-07-13.md
+FAIL A source exists: predictive :: docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md
+FAIL A source exists: irreducible :: docs/work_history/repo/review_feedback/EXACT_LAW_IRREDUCIBLE_CONTENT_INDEPENDENCE_TOURNAMENT_NOTE_2026-07-14.md
+FAIL A source exists: sampled_pair :: docs/work_history/repo/review_feedback/COMPLETE_SAMPLED_LAW_PAIR_AXIOM_UNDERDETERMINATION_NOTE_2026-07-14.md
+FAIL A source exists: actualization :: docs/work_history/repo/review_feedback/BARE_METAL_RECORD_ACTUALIZATION_PRIMARY_SOURCE_AUDIT_2026-07-14.md
+FAIL A source exists: deterministic :: docs/work_history/repo/review_feedback/CAUSAL_REVERSIBLE_ACTUALITY_WEIGHT_INDEPENDENCE_NOTE_2026-07-14.md
+FAIL A source exists: deterministic_sectors :: docs/work_history/repo/review_feedback/DETERMINISTIC_UNIQUE_EXTENSION_RECORD_SECTOR_NOTE_2026-07-14.md
+FAIL A source exists: wolfram :: docs/work_history/repo/review_feedback/CAUSAL_SCHEDULE_EQUIVALENCE_WOLFRAM_INSPIRATION_PROBE_NOTE_2026-07-14.md
+FAIL A source exists: language :: docs/work_history/repo/review_feedback/QUALITATIVE_SUBSTRATE_EXACT_LAW_SELECTION_NOTE_2026-07-14.md
+FAIL A source exists: bell :: docs/work_history/repo/review_feedback/CFSI_Q_BELL_COHERENT_CAUSAL_FRONT_LAW_NOTE_2026-07-14.md
+FAIL A source exists: nucleation :: docs/work_history/repo/review_feedback/AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14.md
+PASS A source exists: resource :: docs/work_history/repo/review_feedback/LOCAL_CONSERVATIVE_COMMIT_RESOURCE_GRAVITY_CYCLE9_NOTE_2026-07-14.md
+FAIL A source exists: reversible :: docs/work_history/repo/review_feedback/REVERSIBLE_DILATION_CLOSED_CYCLE_GRAVITY_CYCLE10_NOTE_2026-07-14.md
+FAIL A source exists: cubic :: docs/work_history/repo/review_feedback/CUBIC_COVARIANCE_EXACT_REPAIR_TOURNAMENT_NOTE_2026-07-14.md
+FAIL A source exists: matter :: docs/work_history/repo/review_feedback/MATTER_COUNTING_CHIRALITY_EXACT_LAW_PLACEMENT_NOTE_2026-07-14.md
+PASS A source exists: infinite_qca :: docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md
+FAIL A source exists: existence :: docs/work_history/repo/review_feedback/EXISTENCE_UNIQUENESS_AND_EXACT_LAW_REFERENCE_NOTE_2026-07-14.md
+FAIL A source exists: selection :: docs/work_history/repo/review_feedback/FIRST_PRINCIPLES_LAW_SELECTION_TOURNAMENT_NOTE_2026-07-14.md
+FAIL A source exists: impact_map :: docs/work_history/repo/review_feedback/ONE_CUT_FOUNDATION_SURFACE_IMPACT_MAP_NOTE_2026-07-14.md
+FAIL A source exists: fundamental_qca :: docs/work_history/repo/review_feedback/FUNDAMENTAL_ONE_QUBIT_QCA_COMPILATION_CYCLE12_NOTE_2026-07-14.md
+FAIL A source exists: literature_selection :: docs/work_history/repo/review_feedback/EXACT_LAW_UNIQUENESS_SELECTION_PRIMARY_SOURCE_AUDIT_NOTE_2026-07-14.md
+FAIL A source exists: relational_selector :: docs/work_history/repo/review_feedback/RELATIONAL_QUBIT_DISAGREEMENT_CANONICAL_LAW_ESCALATION_NOTE_2026-07-14.md
+FAIL A source exists: placement :: docs/work_history/repo/review_feedback/EXACT_LAW_CONSTITUTIONAL_PLACEMENT_SCHEMA_PROBE_NOTE_2026-07-14.md
+FAIL A source exists: append_wire :: docs/work_history/repo/review_feedback/APPEND_ONLY_CAUSAL_BELL_WIRE_CYCLE13_NOTE_2026-07-14.md
+FAIL A source exists: weyl_equivalence :: docs/work_history/repo/review_feedback/WEYL_PAIR_PHYSICAL_EQUIVALENCE_AND_COMBINED_INTERSECTION_NOTE_2026-07-14.md
+FAIL A source exists: single_action :: docs/work_history/repo/review_feedback/SINGLE_INVARIANT_ACTION_STEELMAN_ATTACK_NOTE_2026-07-14.md
+FAIL A source exists: self_writing :: docs/work_history/repo/review_feedback/SELF_WRITING_APPEND_ONLY_BELL_FRONT_CYCLE14_NOTE_2026-07-14.md
+FAIL A source exists: licensed_equivalence :: docs/work_history/repo/review_feedback/FOUNDATION_LICENSED_PHYSICAL_EQUIVALENCE_WEYL_PAIR_NOTE_2026-07-14.md
+FAIL A source exists: topological_action :: docs/work_history/repo/review_feedback/TOPOLOGICAL_CONSERVATION_RG_ACTION_STEELMAN_NOTE_2026-07-14.md
+FAIL A source exists: simulation_equivalence :: docs/work_history/repo/review_feedback/INTRINSIC_SIMULATION_OBSERVER_EQUIVALENCE_RECORD_COST_NOTE_2026-07-14.md
+FAIL A source exists: qca_ward :: docs/work_history/repo/review_feedback/PROPER_CUBIC_QUBIT_QCA_WARD_IDENTITY_STEELMAN_NOTE_2026-07-14.md
+FAIL A source exists: instrument_selection :: docs/work_history/repo/review_feedback/RECORD_INSTRUMENT_SELECTION_LUDERS_PRIMARY_SOURCE_AUDIT_NOTE_2026-07-14.md
+FAIL A source exists: abelian_merge :: docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md
+FAIL A source exists: infinite_sector :: docs/work_history/repo/review_feedback/INFINITE_REDUNDANCY_QUASILOCAL_RECORD_SECTOR_NOTE_2026-07-14.md
+FAIL A source exists: relational_pointer :: docs/work_history/repo/review_feedback/RELATIONAL_POINTER_CONTEXT_SELECTION_CYCLE16_NOTE_2026-07-14.md
+FAIL A source exists: dynamic_boundary_index :: docs/work_history/repo/review_feedback/DYNAMIC_RECORD_BOUNDARY_INDEX_QCA_STEELMAN_NOTE_2026-07-14.md
+FAIL A source exists: delayed_lock :: docs/work_history/repo/review_feedback/DELAYED_LOCKING_CAUSAL_CLOSE_CYCLE16_NOTE_2026-07-14.md
+FAIL A source exists: universal_rule_space :: docs/work_history/repo/review_feedback/UNIVERSAL_RULE_SPACE_MULTIWAY_LAW_STEELMAN_NOTE_2026-07-14.md
+FAIL A source exists: chiral_triad_context :: docs/work_history/repo/review_feedback/CHIRAL_TRIAD_TRANSVERSE_CONTEXT_CYCLE17_NOTE_2026-07-14.md
+FAIL A source exists: three_d_anomaly :: docs/work_history/repo/review_feedback/THREE_DIMENSIONAL_ANOMALOUS_BULK_CATEGORY_INDEX_STEELMAN_NOTE_2026-07-14.md
+FAIL A source exists: autonomous_close :: docs/work_history/repo/review_feedback/AUTONOMOUS_SELF_CLOSING_DIAMOND_CYCLE17_NOTE_2026-07-14.md
+FAIL A source exists: primitive_protocol_equivalence :: docs/work_history/repo/review_feedback/PRIMITIVE_QCA_RECORD_PROTOCOL_FULL_EQUIVALENCE_STEELMAN_NOTE_2026-07-14.md
+PASS A source exists: actual_header_decoder :: docs/work_history/repo/review_feedback/ACTUAL_HEADER_ROLE_DECODER_PARITY_SELECTION_CYCLE18_NOTE_2026-07-14.md
+FAIL A source exists: adaptive_full_abstraction :: docs/work_history/repo/review_feedback/ADAPTIVE_RECORD_PROTOCOL_QCA_FULL_ABSTRACTION_THEOREM_NOTE_2026-07-14.md
+PASS A source exists: invariant_seed_field :: docs/work_history/repo/review_feedback/INVARIANT_FIRST_SEED_HARD_CORE_CYCLE18_NOTE_2026-07-14.md
+PASS A source exists: site_net_equivalence :: docs/work_history/repo/review_feedback/FOUNDATION_SITE_NET_RECORD_EQUIVALENCE_CLASSIFICATION_CYCLE21_NOTE_2026-07-14.md
+FAIL A source exists: named_site_equivalence :: docs/work_history/repo/review_feedback/NAMED_SITE_RECORD_FAITHFUL_EQUIVALENCE_CLASSIFICATION_NOTE_2026-07-14.md
+FAIL A source exists: foundation_sort_equivalence :: docs/work_history/repo/review_feedback/FOUNDATION_SORT_PRESERVING_EQUIVALENCE_AND_DYNAMICAL_GAUGE_COLLAPSE_NOTE_2026-07-14.md
+FAIL A source exists: operational_parity :: docs/work_history/repo/review_feedback/COMPLETE_FUTURE_OPERATIONAL_PARITY_CERTIFICATE_CYCLE19_NOTE_2026-07-14.md
+FAIL A source exists: commit_clock :: docs/work_history/repo/review_feedback/CLOCK_AS_COMMIT_COUNT_AND_RATE_CLASSIFICATION_CYCLE22_NOTE_2026-07-14.md
+FAIL A source exists: seed_compilation :: docs/work_history/repo/review_feedback/NEAREST_NEIGHBOR_SEED_COMPILATION_CYCLE19_NOTE_2026-07-14.md
+FAIL A source exists: born_affinity :: docs/work_history/repo/review_feedback/OPERATIONAL_QUOTIENT_BORN_AFFINITY_CYCLE20_NOTE_2026-07-14.md
+FAIL A source exists: dissipative_seed_escape :: docs/work_history/repo/review_feedback/QUANTUM_DISSIPATIVE_SEED_ESCAPE_CYCLE20_NOTE_2026-07-14.md
+PASS A source exists: frequency_corpus :: docs/work_history/repo/review_feedback/CERTIFIED_RECORD_CORPUS_ERGODIC_FREQUENCY_CYCLE21_NOTE_2026-07-14.md
+FAIL A source exists: residual_packing :: docs/work_history/repo/review_feedback/BLIND_RESIDUAL_ATOM_PACKING_AND_ONE_LAW_CONSTITUTIONAL_SCHEMA_NOTE_2026-07-14.md
+PASS A source exists: record_state_bell_type :: docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md
+FAIL A source exists: actuality_semantics :: docs/work_history/repo/review_feedback/STOCHASTIC_RECORD_HISTORY_ACTUALITY_SEMANTICS_CYCLE27_NOTE_2026-07-14.md
+PASS A source exists: record_state_fortress :: docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md
+FAIL A source exists: global_record_process :: docs/work_history/repo/review_feedback/GLOBAL_RECORD_HISTORY_PROCESS_LAW_CYCLE30_NOTE_2026-07-14.md
+FAIL A source exists: admissibility_definability :: docs/work_history/repo/review_feedback/ADMISSIBILITY_SYMBOL_DEFINABILITY_AND_EXACT_LAW_REFERENCE_CHALLENGE_NOTE_2026-07-14.md
+PASS A source exists: constitutional_lower_bound :: docs/work_history/repo/review_feedback/CONSTITUTIONAL_LOWER_BOUND_CLOSURE_AND_CLAUSE_DELETION_CYCLE31_NOTE_2026-07-14.md
+PASS A source exists: long_run_append :: docs/work_history/repo/review_feedback/LONG_RUN_RECORD_ONLY_APPEND_ARCHITECTURE_CYCLE32_NOTE_2026-07-14.md
+PASS A source exists: local_global_glue :: docs/work_history/repo/review_feedback/LOCAL_TO_GLOBAL_CUBIC_PROCESS_GLUE_CYCLE33_NOTE_2026-07-14.md
+FAIL A source exists: moving_logical_front :: docs/work_history/repo/review_feedback/MOVING_LOGICAL_APPARATUS_APPEND_FRONT_CYCLE34_NOTE_2026-07-14.md
+FAIL A source exists: final_missing_census :: docs/work_history/repo/review_feedback/FINAL_MISSING_CONTENT_CENSUS_AND_CONSTITUTIONAL_EDIT_GATE_CYCLE35_NOTE_2026-07-14.md
+FAIL A source exists: cubic_cz_selection :: docs/work_history/repo/review_feedback/CUBIC_CZ_EDGE_RULE_UNIQUENESS_SELECTION_CYCLE36_NOTE_2026-07-14.md
+FAIL A source exists: temporal_equivalence :: docs/work_history/repo/review_feedback/TEMPORAL_PROTOCOL_EQUIVALENCE_ALTERNATING_FRAME_CYCLE39_NOTE_2026-07-14.md
+FAIL A source exists: cubic_clifford :: docs/work_history/repo/review_feedback/CUBIC_ONE_QUBIT_CLIFFORD_QCA_UNIQUENESS_CYCLE40_NOTE_2026-07-14.md
+FAIL A source exists: candidate_assembly :: docs/work_history/repo/review_feedback/COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md
+FAIL A source exists: history_identifiability :: docs/work_history/repo/review_feedback/REALIZED_HISTORY_EXACT_LAW_IDENTIFIABILITY_CYCLE42_NOTE_2026-07-14.md
+FAIL A source exists: exhaustion_ledger :: docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py", line 584, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py", line 568, in main
+    source_and_authority_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py", line 216, in source_and_authority_contract
+    note = normalized(NOTE)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py", line 198, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md'

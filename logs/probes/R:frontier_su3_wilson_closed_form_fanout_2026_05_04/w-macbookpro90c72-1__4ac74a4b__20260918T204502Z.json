@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_wilson_closed_form_fanout_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py",
+ "seed": 64302,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204502Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 SUPPORT=1 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e93b2812a47868c2f197c613e4438ed0b68b7bd0b570d67c86ed1153a9108662",
+ "stdout_tail": "an-field\n                            (M5, M4) is a good asymptotic.\n\n  beta = 6 is the SU(3) crossover regime where the correlation\n  length exceeds 2 lattice spacings (so L_s=2 fails per the\n  SU(3) Wigner L_s=2 PBC orientation verdict, legacy Block 5)\n  AND no single-plaquette / leading-perturbative method captures\n  the connected multi-plaquette structure that drives <P> to\n  ~ 0.59. Exact closure would need a full lattice tensor-network\n  contraction route, a different audited derivation, or numerical MC.\n\nPASS: comparator-independent (M1, M2, M4, M5) closed-form table matches the bounded internal record in the note.\n\nNOTE (provenance): the MC reference value 0.5934 and the epsilon_witness target 3.03e-4 are external comparator-only inputs. The 'ruling-out at epsilon_witness' reading inherits their provenance and is not promoted as a standalone theorem.\n==============================================================================\nSUMMARY: THEOREM PASS=4 SUPPORT=1 FAIL=0\n==============================================================================\n\nHeadline:\n  Closed-form fan-out at beta = 6 for SU(3) Wilson plaquette:\n    M1 single-plaquette = 0.4225  (gap 564x eps)\n    M2 SC leading       = 0.3333  (gap 858x eps)\n    M4 mean-field       = 0.8740  (gap 926x eps)\n    M5 WC 1-loop        = 0.6667  (gap 242x eps)\n    MC reference        = 0.5934\n  Verdict: 4 simpler closed-form paths miss the comparator;\n  L_s>=3 Wigner-Racah remains a non-load-bearing planning candidate.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204502Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

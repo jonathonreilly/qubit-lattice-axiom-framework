@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
+ "seed": 64209,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204329Z",
+ "elapsed_s": 12.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9387ce6a12889e7d0631cc06d2fe1c9da53249d69c56526135b1b02b79f7798c",
+ "stdout_tail": "uess:\n    Koutschan guess: minimal annihilator at (r=3, d=2), kernel_dim=1, matches published L (after primitive integer normalization)\n    minimal_r = 3, minimal_d = 2, kernel_dim = 1\n    primitive-integer kernel signature: {'k=0,m=1': -10, 'k=0,m=2': -1, 'k=1,m=0': 120, 'k=1,m=1': -2, 'k=1,m=2': -4, 'k=2,m=1': 60, 'k=2,m=2': -1, 'k=3,m=2': 6}\n\n[S] Operator signature primitive-integer match:\n    Operator signature sanity: PRIMITIVE-INTEGER MATCH (8/8 monomials)\n\n[OA] Optional SageMath/ore_algebra cross-check:\n    ore_algebra unavailable (SageMath/ore_algebra not installed)\n\n==============================================================================\nSUMMARY: CERTIFICATE PASS=6 FAIL=0\n==============================================================================\n\nFinite-window Picard-Fuchs certificate PASS.\n- Lower-order exclusion to (r <= 2, d <= 30): no checked annihilator\n- (r=3, d) higher-degree consistency to d=12: polynomial-multiple bound exact in the checked window\n- Algorithmic Koutschan guess: first checked hit at (r=3, d=2), matches PR #541 L\n- Primitive-integer signature: 8/8 coefficient match\n\nCombined with the deep Taylor annihilation (depth 100), the algorithmic\nverification path is self-contained over Q. The Bernstein-Sato existence\ninput from D-module theory remains philosophical context; this runner does\nnot claim arbitrary-degree lower-order exclusion or all-order minimality.\nOutput written: outputs/su3_v1_picard_fuchs_minimality_extended_2026_05_06.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+PR #8146: [physics-loop] admissibility-induced-law block12 — bounded_theorem — bounded-support: the strong-coupling side of the 3D formation law — a noisy majority eroder in level time; finite-W metastability; the ordered phase as one exact obligation
+branch physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915 (base physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915)
+runners in the PR: 1
+== scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py: rc=0 PASS=20 FAIL=0
+   mutation projection_offsets_wrong: expected B observed B ok
+   mutation closed_form_forged: expected B observed B ok
+   mutation noise_values_off: expected B observed B ok
+   mutation majority_preference_wrong: expected B observed B ok
+   mutation epsilon_max_wrong: expected B observed B ok
+   mutation eroder_bound_violated_claimed: expected C observed C ok
+   mutation island_survives_claimed: expected C observed C ok
+   mutation memory_table_forged: expected D observed D ok
+   mutation contraction_table_forged: expected D observed D ok
+   mutation absorbing_limit_denied: expected D observed D ok
+   mutation two_d_eigenvalue_ge_one_claimed: expected D observed D ok
+   mutation claim_ordered_phase_proved: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

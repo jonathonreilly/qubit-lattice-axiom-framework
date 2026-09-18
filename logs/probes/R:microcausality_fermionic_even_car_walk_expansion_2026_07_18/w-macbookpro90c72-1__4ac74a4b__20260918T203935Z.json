@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_fermionic_even_car_walk_expansion_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/microcausality_fermionic_even_car_walk_expansion_2026_07_18.py",
+ "seed": 63975,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203935Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e9ff0c2ec473eb2a457bd44d812b05937d49b452a16b3ea20c6662ccca788e1",
+ "stdout_tail": "s do not obey a distance-three start\nPASS: Even-bond inhomogeneity reaches the odd probe only at recursive order two\nPASS: Odd-source flow splits exactly into homogeneous transport and inhomogeneity\nPASS: Unitary homogeneous transport preserves the initial commutator norm\nPASS: Even Hamiltonian adjoints preserve both even and odd parity sectors\nPASS: Fermionic boundary reduction removes both far bonds from the local density flow\nPASS: Self-bond deletion leaves the adjacent reduced generator contribution\nPASS: Reduced generator sums remain Hermitian and even\nPASS: Fixed-order JW image of a nonadjacent hop is not supported on its endpoint qubits\nPASS: The same nonadjacent hop remains intrinsically CAR-local at the intermediate site\nPASS: Cubic nearest-neighbor geometry gives six first bonds and ten nonself continuations\nPASS: Four-site exact chains distinguish below-cone orders from distance-three arrival\nPASS: Walk coefficient assembles as (2J)^k n_X 10^(k-1)=(n_X/10)(20J)^k\nPASS: Factorial-tail coefficient domination holds on an exact integer grid\nPASS: Exponential reweighting identity is exact at every tested tail order\nPASS: Disconnected components have zero graded and inhomogeneous cross-component tails\nPASS: Disconnected odd observables retain a nonzero ordinary statistical initial term\nPASS: Empty Hamiltonian leaves the ordinary commutator equal to its initial datum\nPASS: Family use distinguishes finite J-star from the algebraically unbounded J_n=n\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T203936Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

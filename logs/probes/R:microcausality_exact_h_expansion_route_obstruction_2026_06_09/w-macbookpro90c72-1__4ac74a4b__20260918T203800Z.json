@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_exact_h_expansion_route_obstruction_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py",
+ "seed": 63880,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203800Z",
+ "elapsed_s": 95.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c275b77260db0cf7ba369e81d87c8766ecedf9268baa6eba13ccd0da84d90dc8",
+ "stdout_tail": "metic)\n========================================================================\n\n  matter floor 2.3 vs BCH ball ln 2: gap factor = 3.3182  (> 3.0)\n  matter floor 2.3 vs pair radius 1.8012: gap factor = 1.27695  (> 1.2)\n  full budget 78 vs BCH ball ln 2: gap factor = 112.53  (> 112.0)\n  full budget 78 vs pair radius 1.8012: gap factor = 43.3051  (> 43.0)\n  [PASS] budget arithmetic \u2014 every expansion threshold is exceeded on the canonical surface\n         gaps 1.28x (floor/pair) to 112.5x (full/ball)\n  xi needed for expansion guarantees: >= 43.305 (pair radius) to >= 112.53 (BCH ball); canonical surface has xi = 1\n  [PASS] xi line \u2014 expansion route requires xi >= 43-113, off the canonical xi = 1 surface\n         the route lives off the canonical xi = 1 surface\n\n========================================================================\nSUMMARY\n========================================================================\n  Minimal-pair radius derived (1.8012, closed form):      PASS\n  Series converges inside / diverges at 2.3 and 78:       PASS\n  Method fails while object stays quasilocal (chain):     PASS\n  Budget-vs-threshold gaps 1.28x-112.5x + xi-line:        PASS\n\n  PASS=13, FAIL=0\n  OVERALL: PASS\n\nThe runner derives every asserted number (radius, gaps, tails) from closed\nforms, exact arithmetic, or explicit matrices. Literature thresholds (BCH\nln 2 ball, Magnus pi criterion, small-step effective-Hamiltonian bounds)\nare comparator citations in the note, not derivation inputs here.\n\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T203935Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

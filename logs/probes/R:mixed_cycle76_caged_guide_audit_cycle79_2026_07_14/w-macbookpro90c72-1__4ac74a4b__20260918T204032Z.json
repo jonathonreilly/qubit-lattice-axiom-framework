@@ -1,0 +1,31 @@
+{
+ "task": "R:mixed_cycle76_caged_guide_audit_cycle79_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "mixed",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/mixed_cycle76_caged_guide_audit_cycle79_2026_07_14.py",
+ "seed": 64032,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204032Z",
+ "elapsed_s": 27.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "468eebbc5e37268656e83a589760d058788158ab175015740312b599adb5f52e",
+ "stdout_tail": "PASS G01 cage graph has 53 conditions :: 53\nPASS G02 cage graph has 1,455 states / 5,023 edges :: (1455, 5023)\nPASS G03 every conditional cage schedule reaches one complete terminal\nPASS G04 cage graph has no parasite or conflict\nCAGED ScanResult(interface_candidates=435, retained_candidates=207, contexts=69447, certified_wrong_contexts=496, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=106, feasible_phase_blockers=0)\nPASS H01 cage has 11 downstream availability masks\nPASS H02 cage scan exhausts 69,447 contexts :: 69,447\nPASS H03 all 496 apparent wrong contexts are static false positives\nPASS H04 cage has no feasible wrong or off-footprint write :: ()\nPASS H05 cage has no feasible conflict or blocker\nBY_FIRST ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)\nPASS I01 BY-first comparator has three availability masks\nPASS I02 BY-first comparator has no feasible mixed defect\nPASS I03 BY-first comparator exhausts 19,240 contexts\nPASS I04 neither small repair claims joint-endpoint B ancestry :: (False, False)\n\nSUMMARY: 43 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204059Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

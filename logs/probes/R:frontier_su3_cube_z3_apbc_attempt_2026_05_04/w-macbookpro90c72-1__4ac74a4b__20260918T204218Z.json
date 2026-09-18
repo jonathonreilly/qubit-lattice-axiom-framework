@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_cube_z3_apbc_attempt_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_cube_z3_apbc_attempt_2026_05_04.py",
+ "seed": 64138,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204218Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=1 SUPPORT=1 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6830a8a2c6a544f327615ed5c0217b131688c07c9236bbdad582419842e050af",
+ "stdout_tail": "ction B: APBC variants ---\n  Variant 'apbc-symmetric': P(6) = 0.4291049969\n  Variant 'apbc-1dir': P(6) = 0.4191656069\n  Variant 'cocycle': P(6) = 0.4291049969\n\n--- Section C: rho values for apbc-1dir variant ---\n  rho_(0, 0)(6) = 1.000000e+00  [Z3 charge = 0]\n  rho_(0, 1)(6) = -1.062312e-01  [Z3 charge = 2]\n  rho_(1, 0)(6) = -1.062312e-01  [Z3 charge = 1]\n  rho_(1, 1)(6) = 5.587932e-03  [Z3 charge = 0]\n  rho_(2, 0)(6) = -3.351044e-05  [Z3 charge = 2]\n  rho_(0, 2)(6) = -3.351044e-05  [Z3 charge = 1]\n  rho_(1, 2)(6) = -2.059571e-07  [Z3 charge = 2]\n  rho_(2, 1)(6) = -2.059571e-07  [Z3 charge = 1]\n\n--- Section D: bridge comparison ---\n  P_triv (rho = delta):      0.4225317396\n  P_loc (rho = 1):           0.4524071590\n  P_PBC (existing impl):     0.4291049969\n  Bridge support upper:      0.5935306800\n  epsilon_witness:           3.030e-04\n    pbc                  P(6) = 0.4291049969  gap = 0.1644 = 543x epsilon_witness\n    apbc-symmetric       P(6) = 0.4291049969  gap = 0.1644 = 543x epsilon_witness\n    apbc-1dir            P(6) = 0.4191656069  gap = 0.1744 = 575x epsilon_witness\n    cocycle              P(6) = 0.4291049969  gap = 0.1644 = 543x epsilon_witness\n\n  No named Z3 APBC variant closes within epsilon_witness or 0.05.\n  The tested variants stay near the landed full-rho value.\n==============================================================================\nSUMMARY: THEOREM PASS=1 SUPPORT=1 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204220Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

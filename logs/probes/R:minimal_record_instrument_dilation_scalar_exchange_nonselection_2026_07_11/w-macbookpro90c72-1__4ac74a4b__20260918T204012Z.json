@@ -1,0 +1,36 @@
+{
+ "task": "R:minimal_record_instrument_dilation_scalar_exchange_nonselection_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "minimal",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/minimal_record_instrument_dilation_scalar_exchange_nonselection_2026_07_11.py",
+ "seed": 64012,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204012Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=44 FAIL=9",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "75d5d2b671e2a29ab5a886d8734dd17a1a8de290f18e9f0cb3c7e6b1e0bcd690",
+ "stdout_tail": " dilation gauge\nPASS H09: absorbing eventual first-nonempty-outcome right weight is 1/5 at theta=pi/4\nPASS H10: absorbing eventual first-nonempty-outcome right weight is 1/4 at theta=pi/2\nPASS H11: exchange angle changes the eventual absorbing label distribution\nPASS H12: eventual first-nonempty-outcome labels normalize at theta=pi/4\nPASS H13: eventual first-nonempty-outcome labels normalize at theta=pi/2\nFAIL S01: source note exists\nFAIL S02: source contains boundary marker: invariant one-excitation sector\nFAIL S03: source contains boundary marker: fresh append-only outcome register\nFAIL S04: source contains boundary marker: does not construct a simultaneous translation-covariant cubic QCA\nFAIL S05: source contains boundary marker: does not derive the Born rule\nFAIL S06: source contains boundary marker: does not establish that the axioms require amendment\nFAIL S07: source contains boundary marker: per-fixed-channel Stinespring/Kraus minimality\nFAIL S08: source contains boundary marker: prefer the exchange-free points\nFAIL S09: source contains boundary marker: zero framework premise weight\nBOUNDARY: minimality is relative to the supplied finite CP instrument/channel, not a derivation of that instrument from the axioms.\nBOUNDARY: absorbing label histories use a fresh append-only register that is not derived as a framework Record.\nBOUNDARY: the witness is a supplied one-excitation edge sector, not the full edge algebra, a cubic QCA, or a continuum theory.\nTOTAL: PASS=44 FAIL=9\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204013Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=44 FAIL=9' vs cache 'TOTAL: PASS=53 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+PR #8140: [physics-loop] clock-static-charge: bounded_theorem, bounded-support
+branch physics-loop/clock-static-charge-20260915 (base main)
+runners in the PR: 5
+== scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py: rc=0 PASS=12 FAIL=0
+== scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py: rc=0 no PASS/FAIL count line (verdict by exit code)

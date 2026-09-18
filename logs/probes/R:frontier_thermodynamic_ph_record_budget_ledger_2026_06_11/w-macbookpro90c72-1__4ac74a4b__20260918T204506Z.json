@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_thermodynamic_ph_record_budget_ledger_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_thermodynamic_ph_record_budget_ledger_2026_06_11.py",
+ "seed": 64305,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204506Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9f50a115a7c62866f388a3145967860e3c77adb6405cf4a29eadd6432d17f346",
+ "stdout_tail": "8 FAIL=0\n==============================================================================\nSCOPE: In the broadcast record model, the thermodynamic past hypothesis's\n  quantitative clause is treated as a consistency relation among realized-state\n  data: realized record depth N implies boundary register-sector deficit >= N\n  bits (L4).  At full Z-alignment, count and marginal-sum entropy coincide,\n  but that exactness is a FULL-ALIGNMENT coincidence: off alignment,\n  marginal-sum entropy is smooth and the record count is thresholded (L1).\n  marginal-sum entropy (generated total correlation; un-produces under the\n  inverse step -- correlation bookkeeping, not Clausius production) names the\n  coarse register-sector quantity.  Alignment is basis-relative and unitarily\n  mutable: the aligned-count bound fails under closed Hadamard pre-processing,\n  while the basis-free register deficit bound survives (L2d).  The sink\n  escape conserves the ledger (L3).  The boundary was wound up by AT LEAST as\n  much as the world has registered.  NOT claimed: heat bath, temperature,\n  rate, cost law, boundary preparation dynamics, derivation of N, anything\n  outside the broadcast model.\n  the past hypothesis's specialness/atypicality claim (low-entropy AMONG PERMITTED STATES -- which needs a measure over states, exactly what the realized-state primitive forbids supplying) is NOT derived; the existing carve-out stands unchanged.\n  No new axiom/primitive/measure/weight; r untouched.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204506Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+PASS A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 Cycle-67 first-bad certificate remains exact
+PASS A04 all Cycle-60 states are retained :: 242,033
+PASS A05 exact Cycle-67 availability has 67 masks
+BASELINE ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=1, feasible_wrong_classes=(((3, 0, 0), 'DOWN', ('D1',), 'Z_C'),), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)
+PASS B01 early BY row is base-H1 pair plus Z_A singleton
+PASS B02 repaired DY row is X_B+B1 singleton
+PASS B03 DZ remains X_B+L10 singleton
+PASS C01 repaired table is 27 canonical / 630 raw rows :: (27, 630)
+PASS C02 repaired union is 147 canonical / 3,224 raw rows :: (147, 3224)
+PASS C03 all repaired raw domains are pairwise disjoint
+PASS C04 repair adds no record or site
+PASS D01 repaired terminal graph has 50 conditions :: 50
+PASS D02 repaired terminal graph has 475 states :: 475
+PASS D03 repaired terminal graph has 1,339 edges :: 1,339
+PASS D04 repaired terminal graph has one complete terminal
+PASS D05 repaired terminal graph has no parasite/conflict
+REPAIRED ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)
+PASS E01 baseline census is 19,240 contexts / 203 apparent / one feasible :: ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=1, feasible_wrong_classes=(((3, 0, 0), 'DOWN', ('D1',), 'Z_C'),), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)
+PASS E02 baseline feasible class is the Z_C theft :: (((3, 0, 0), 'DOWN', ('D1',), 'Z_C'),)
+PASS E03 repaired census preserves 19,240 / 203 / 48 and removes the feasible write :: ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)
+PASS E04 repaired scan has no feasible wrong class :: ()
+PASS E05 repaired scan has no feasible raw conflict
+PASS E06 repaired scan has no feasible comb blocker
+PASS E07 repaired scan has no feasible Cycle-67 blocker
+
+SUMMARY: 24 PASS / 0 FAIL

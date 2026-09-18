@@ -1,0 +1,76 @@
+{
+ "task": "P:8023",
+ "type": "pr-reexecution",
+ "lane": "compact-cutoff-block32-20260907",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8023",
+ "pr": 8023,
+ "branch": "codex/compact-cutoff-block32-20260907",
+ "git_sha": "7c940cf9",
+ "started_utc": "20260918T203748Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "PASS=24 FAIL=0"
+   },
+   {
+    "runner": "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py",
+    "returncode": 0,
+    "total": "PASS=28 FAIL=0"
+   },
+   {
+    "runner": "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "PASS=31 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "74550019b9bb7dc9b29dd698497b369bbb086742635bd3a860bb1c83f970c754",
+ "stdout_tail": "PR #8023: [physics-loop] compact-cutoff block32 conditional-support\nbranch codex/compact-cutoff-block32-20260907 (base main)\nrunners in the PR: 9\n== scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py: rc=0 PASS=24 FAIL=0\n== scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py: rc=0 PASS=28 FAIL=0\n== scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py: rc=0 PASS=31 FAIL=0",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T203753Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

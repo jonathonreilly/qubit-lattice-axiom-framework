@@ -1,0 +1,46 @@
+PASS: G1 terms per site: 6 bonds and 12 faces (radii 4 and 5)
+PASS: G2 bond degrees: (10 bonds, 20 faces) for EVERY bond orientation (radii 4 and 5)
+PASS: G3 face degrees: (20 bonds, 32 faces) for EVERY face orientation, box-stable, and the hand inclusion-exclusion 48-18+4-1 = 33 minus self = 32 agrees
+PASS: G4 carrier diameters: bond 1, face 2
+PASS: G5 mixed length-2 walks from one site: 804 <= 936 = 18*52
+PASS: G6 reach is exactly 2k at k = 1, 2, 3
+PASS: R1 series start: 2k >= d iff k >= ceil(d/2) — symbolic even/odd ceiling cases with the k = r boundary failure, plus instances d = 1..5
+PASS: R2 face-jump sharpness: one adjoint step reaches distance 2 (k=0 commutes, k=1 does not)
+PASS: M1 mixed-dim reduction: [h23, A] = 0 and [H, A] = [h12, A] != 0
+PASS: M2 mixed-dim cone: k = 0, 1 below (d = 2), k = 2 arrives
+PASS: M3 mixed-dim terms Hermitian with exact Kronecker norms (||X ⊗ diag(1,2,3)|| = 3)
+PASS: M4 mixed-dim FOUR-SITE face term: Hermitian, commutes with the far factor, and one adjoint step reaches the opposite corner
+PASS: Z1 magnetic operator lies in the declared face carrier algebra, with strict three-site minimal support, and commutes with the far link
+PASS: Z2 electric operator lies in the declared bond carrier algebra, with strict one-site minimal support and identity padding
+PASS: Z3 the gauge dynamics is nontrivial: [B_p, E_l1] != 0
+PASS: T1 coefficient assembly (2J)^k n 52^(k-1) = (n/52)(104J)^k
+PASS: T2 tail mechanism re-gate: binomial domination d!/k! <= 1/(k-d)! plus an exact 38-term partial-sum instance below the closed form
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py", line 464, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py", line 390, in main
+    checks.needle(
+    ~~~~~~~~~~~~~^
+        "N1 target declares nonminimal carriers, identity padding, and "
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        ),
+        ^^
+    )
+    ^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/microcausality_finite_range_plaquette_class_walk_expansion_2026_07_18.py", line 53, in needle
+    haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/MICROCAUSALITY_FINITE_RANGE_PLAQUETTE_CLASS_WALK_EXPANSION_LIEB_ROBINSON_BOUNDED_THEOREM_NOTE_2026-07-18.md'

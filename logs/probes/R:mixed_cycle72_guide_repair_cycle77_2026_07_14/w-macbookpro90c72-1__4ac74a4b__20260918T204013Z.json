@@ -1,0 +1,31 @@
+{
+ "task": "R:mixed_cycle72_guide_repair_cycle77_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "mixed",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/mixed_cycle72_guide_repair_cycle77_2026_07_14.py",
+ "seed": 64013,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204013Z",
+ "elapsed_s": 18.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "43d43f169a8c71bc366b91e4bc6209e2541087f72c55a529063f276db2271b07",
+ "stdout_tail": "ts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)\nPASS E01 baseline census is 19,240 contexts / 203 apparent / one feasible :: ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=1, feasible_wrong_classes=(((3, 0, 0), 'DOWN', ('D1',), 'Z_C'),), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)\nPASS E02 baseline feasible class is the Z_C theft :: (((3, 0, 0), 'DOWN', ('D1',), 'Z_C'),)\nPASS E03 repaired census preserves 19,240 / 203 / 48 and removes the feasible write :: ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)\nPASS E04 repaired scan has no feasible wrong class :: ()\nPASS E05 repaired scan has no feasible raw conflict\nPASS E06 repaired scan has no feasible comb blocker\nPASS E07 repaired scan has no feasible Cycle-67 blocker\n\nSUMMARY: 24 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

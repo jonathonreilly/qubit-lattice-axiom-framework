@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_gauged_kernel_weighted_activity_feed_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/microcausality_gauged_kernel_weighted_activity_feed_2026_07_18.py",
+ "seed": 64011,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204011Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ad43aebbcd2291153bec65edeaee22b9199fb2ea7e02c8207475dfeb3da23685",
+ "stdout_tail": "PASS: scalar-car-pair-norm exact |k|=1/2, size-two envelope=1, even Hermitian\nPASS: linf-shell-count exact 24r^2+2 values 26,98,218\nPASS: ambient-metric-conversion l1<=3linf on open Z3 subsets with equality\nPASS: activity-factor-assembly pair-norm two times support-size two and closed shell sum\nPASS: activity-closed-values envelope=585 scalar=293 reject missing-factor=147\nPASS: decay-threshold mu<eta/3 gives q<1 while above threshold gives q>1\nPASS: finite-open-region-envelope truncated ambient shells lie below infinite envelope\nPASS: background-sign-uniformity eight sign backgrounds give envelope 11/2 and exact 13/4\nPASS: zero-activity-branch zero Hamiltonian gives identity evolution without dividing by kappa\nPASS: uniform-corollary-monotonicity growth increases with kappa and coarse support ratio\nPASS: gaussian-identity-shift scalar log-factor drops from every commutator\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204011Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "task": "P:8146",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8146",
+ "pr": 8146,
+ "branch": "physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915",
+ "git_sha": "ca13051b",
+ "started_utc": "20260918T203329Z",
+ "elapsed_s": 178.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+    "returncode": 0,
+    "total": "PASS=20 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "3029eb5cd86bbae095e36fd48005265cbe529526f7fafc54dd390a0430cdb424",
+ "stdout_tail": "PR #8146: [physics-loop] admissibility-induced-law block12 \u2014 bounded_theorem \u2014 bounded-support: the strong-coupling side of the 3D formation law \u2014 a noisy majority eroder in level time; finite-W metastability; the ordered phase as one exact obligation\nbranch physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915 (base physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915)\nrunners in the PR: 1\n== scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py: rc=0 PASS=20 FAIL=0\n   mutation projection_offsets_wrong: expected B observed B ok\n   mutation closed_form_forged: expected B observed B ok\n   mutation noise_values_off: expected B observed B ok\n   mutation majority_preference_wrong: expected B observed B ok\n   mutation epsilon_max_wrong: expected B observed B ok\n   mutation eroder_bound_violated_claimed: expected C observed C ok\n   mutation island_survives_claimed: expected C observed C ok\n   mutation memory_table_forged: expected D observed D ok\n   mutation contraction_table_forged: expected D observed D ok\n   mutation absorbing_limit_denied: expected D observed D ok\n   mutation two_d_eigenvalue_ge_one_claimed: expected D observed D ok\n   mutation claim_ordered_phase_proved: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T203628Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

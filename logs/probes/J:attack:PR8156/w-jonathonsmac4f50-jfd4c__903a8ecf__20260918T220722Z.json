@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-jonathonsmac4f50-jfd4c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8156/return_sum_normalization.py",
+ "seed": 69242,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "903a8ecf",
+ "started_utc": "20260918T220722Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (f) NORMALIZATION - block 19's torus constant N^-1 sum 1/E(k) on L = 4..256 extrapolates to G(0) = 0.252731009859 (difference 4e-11); DP closed-walk counts to 2n = 24 equal the closed form; the grid quadratures give P_2n and the paired series; E = 6(1 - phi); S_1000 recomputed exactly (floor 10^6 S = 1501637, denominator 1553 digits); both majorants hold at the true pi; both rational comparisons hold; V2 holds at every n <= 1000 (max P/bound 0.8773); the true tail 0.014749 < T_1 + T_2 = 0.0168116 and (S_1000 + tail)/2 matches 3G(0) = 0.75819303 to 3e-11; 0 failures; attack does not fire"
+ },
+ "review": "Recomputed every normalization factor by brute force: block 19's torus sums N^-1 sum_{k!=0} 1/E(k) for L = 4..256 extrapolate to G(0) = 0.252731009859 (4e-11 from the Bessel-integral value), DP closed-walk counts to 2n = 24 equal the note's closed form, S_1000 recomputed exactly gives floor(10^6 S) = 1501637 with a 1553-digit reduced denominator, both majorants and both rational comparisons hold, V2 holds for n = 1..1000 (max P/bound 0.877), and the true tail 0.014749 is below T_1 + T_2 = 0.016812 with (S_1000 + tail)/2 = 3G(0) = 0.7581930 to 3e-11; the attack does not fire.",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "7785996164d6e107315c34f5e0f61df49ef28ed611419101ddd3ac8e9c464a1d",
+ "stdout_tail": "termediate <= bound resolved at 658 of 1000 n (40 digits), violated at 0; bound's first term / P at n = 1000: 1.1398; min (1 - cos u)/(11u^2/24) on [-1,1] without 0 = 1.002977 (1 - cos 1 = 0.459698 vs 11/24 = 0.458333); on the 161^3 grid min (1 - phi) - g = 0.0e+00 (at k = 0), min (1 - phi)/g over k != 0 = 1.006055\n[tail] true sum_{n > 1000} P_2n = 0.01474906 (recurrence in floating point to n = 10^6, start error 1.1e-16, plus c zeta(3/2, 10^6+1), c = 2(3/(4 pi))^3/2 = 0.23329051) vs T_1 + T_2 = 0.016811634; (S_1000 + true tail)/2 = 0.7581930296 vs 3G(0) = 0.75819302958 (difference 2.9e-11)\n[numbers] 3G(0) = 0.7581930296 in (75/100, 76/100): True (margins 0.008193 and 0.001807); window width 76/100 - sqrt3/6 = 0.471325 < 1/2: True; 3 sqrt3 pi/8 = 2.04052 < 21/10: True; the old band's factor (3 sqrt3 pi/8)/(sqrt3/6) = 7.0686; tail bound T_1 + T_2 < 0.019: True\n[time] 1s\nSUMMARY: attack pattern (f) NORMALIZATION - block 19's torus constant N^-1 sum 1/E(k) on L = 4..256 extrapolates to G(0) = 0.252731009859 (difference 4e-11); DP closed-walk counts to 2n = 24 equal the closed form; the grid quadratures give P_2n and the paired series; E = 6(1 - phi); S_1000 recomputed exactly (floor 10^6 S = 1501637, denominator 1553 digits); both majorants hold at the true pi; both rational comparisons hold; V2 holds at every n <= 1000 (max P/bound 0.8773); the true tail 0.014749 < T_1 + T_2 = 0.0168116 and (S_1000 + tail)/2 matches 3G(0) = 0.75819303 to 3e-11; 0 failures; attack does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jfd4c",
+  "at_utc": "20260918T220731Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

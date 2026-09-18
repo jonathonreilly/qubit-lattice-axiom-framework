@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8155",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block21-unsold",
+ "worker": "w-macbookpro90c72-j23ad",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8155/executed_threshold_and_ratios.py",
+ "seed": 72873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e98c2967",
+ "started_utc": "20260918T230754Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (c) EXECUTED NUMBERS; sqrt(3)/6 threshold, alpha=2 sqrt(3) beta, coefficient ratios 6/(n(2n-1)) and 3/(2n+1), artanh(1/6), antipodal tanh(beta/2) and L/x=1/3 all match the control and exact arithmetic"
+ },
+ "review": "Pattern (c) EXECUTED NUMBERS: sqrt(3)/6, alpha=2 sqrt(3) beta, coefficient ratios, artanh(1/6), antipodal tanh(beta/2) and L/x=1/3 all match; no executed-number defect.",
+ "what": "PR #8155 ([physics-loop] admissibility-induced-law block21 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915; git show origin/physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915:<note>. Create probes/work/pr8155/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8155/<script>.py\"",
+ "stdout_sha256": "11c9f2c3475121a6036e72f87e101171342e7a7ecea566571393a806515cf6e1",
+ "stdout_tail": "sqrt(3)/6 = 0.288675134595; 1/(2 sqrt3) = 0.288675134595\nbeta=0.1: alpha=0.346410 vs 6b/sqrt3=0.346410\nbeta=1/8: alpha=0.433013 vs 6b/sqrt3=0.433013\nn=2: 6/(n(2n-1))=1 stated 1\nn=3: 6/(n(2n-1))=2/5 stated 2/5\nn=4: 6/(n(2n-1))=3/14 stated 3/14\nn=5: 6/(n(2n-1))=2/15 stated 2/15\nn=6: 6/(n(2n-1))=1/11 stated 1/11\nn=7: 6/(n(2n-1))=6/91 stated 6/91\nn=1: 3/(2n+1)=1 stated 1\nn=2: 3/(2n+1)=3/5 stated 3/5\nn=3: 3/(2n+1)=3/7 stated 3/7\nn=4: 3/(2n+1)=1/3 stated 1/3\nn=5: 3/(2n+1)=3/11 stated 3/11\nn=6: 3/(2n+1)=3/13 stated 3/13\nartanh(1/6) control 0.168236 exact 0.168236; (1/2)log(7/5) 0.168236 exact 0.168236\n  artanh(1/6)=0.168236 vs sqrt(3)/6=0.288675 (distinct routes)\nbeta=0.1: tanh(beta/2)=0.0500 control TV~0.05\nbeta=0.5: tanh(beta/2)=0.2449 control TV~0.2449\nbeta=1.0: tanh(beta/2)=0.4621 control TV~0.4621\nL(x)/x at x=1e-8: 0.3333333333 (stated 1/3)\nSUMMARY: pattern (c) EXECUTED NUMBERS; sqrt(3)/6 threshold, alpha=2 sqrt(3) beta, coefficient ratios 6/(n(2n-1)) and 3/(2n+1), artanh(1/6), antipodal tanh(beta/2) and L/x=1/3 all match the control and exact arithmetic\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j23ad",
+  "at_utc": "20260918T230754Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

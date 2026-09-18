@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_link_index_routing_matter_bilinear_unitarization_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_color_link_index_routing_matter_bilinear_unitarization_2026_06_08.py",
+ "seed": 59018,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191658Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1f5589cd95a3d145924a8c25ff24e59e27d35f784ec4aceaf45e382541cc27b",
+ "stdout_tail": "e Tr(U_xy U_yz U_zw U_wx) is LOCALLY gauge-invariant\n==============================================================================\n  [PASS] composite plaquette trace is invariant under INDEPENDENT local rotations g_x..g_w  (|dTr| = 1.9e-14)\n  [PASS] an OPEN composite link is NOT locally invariant (gauge content = closed loops)\n==============================================================================\nTOTAL: PASS=11 FAIL=0\n==============================================================================\nSCOPE: GIVEN the supplied per-cube C^3 color carrier (the MR_color residual -- the\n  same conditionality as the sister carrier notes), the cross-site matter bilinear\n  natively carries the link law M -> g_x M g_y^dag; its polar unitarization is an\n  exactly-unitary link with the same law (SU(3) up to the Z_3 center), and composite\n  Wilson loops are exactly locally gauge-invariant.  This routes the color index onto\n  links (the residual map's named residual) with NO edge DOF / quantum-link import --\n  the qubit-link u(2) boundary is respected, the routing lives on matter bilinears.\n  BOUNDARIES: full-rank bilinear required (single-mode FAILS, Part 4); Z_3\n  center ambiguity; KINEMATIC routing only -- supplies NO dynamics (the ST1/ST2\n  same-wall continuous-time gauge-link dynamics residual is UNTOUCHED), NO selection\n  (does not claim the physical link IS this composite -- the gauging-selection gate\n  stays open), does NOT discharge ADM-1.  No new axiom; no ranking of gates.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191658Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_color_link_index_routing_matter_bilinear_unitarization_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

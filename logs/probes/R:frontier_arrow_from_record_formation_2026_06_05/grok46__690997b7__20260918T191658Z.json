@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_arrow_from_record_formation_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_arrow_from_record_formation_2026_06_05.py",
+ "seed": 59018,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191658Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "db25de72d4f0540faf232671522bde611fcc149274ed408f726d946798b7e552",
+ "stdout_tail": "CT.\n[PASS] past hypothesis (low entropy) is distinct from rho=I/d (max entropy) -- low-record S=0.00 vs I/d S=6.00 = opposite extremes\n  (narration, not scored) the past hypothesis is a STATE SELECTION (a\n  low-entropy boundary condition), whereas Born typicality is a WEIGHT on\n  within-sector outcomes -- conceptually distinct roles.\n\n========================================================================\nVERDICT\n========================================================================\n  Arrow DIRECTION is record-formation-derived = the direction of monotone\n  record accumulation, 'away from the low-record boundary'. The microdynamics\n  (T=e^{-H} self-adjoint; Theta U Theta = U^{-1}) carries NO direction; the\n  arrow reverses (2a) / vanishes (2b,2c) when the initial condition changes.\n  IRREDUCIBLE RESIDUAL = the existence of a low-record (low-entropy) initial\n  = the PAST HYPOTHESIS, an explicit open boundary condition; standard\n  time-symmetric physics needs the same low-entropy past boundary\n  (an external comparator, not derived from the finite toy controls here).\n  It is DISTINCT from rho=I/d (max-entropy reference; opposite extreme) and\n  from Born typicality (a weight, not a boundary). NOT a from-nothing arrow.\n\n========================================================================\nSELF-CHECK\n========================================================================\nPASS=19 FAIL=0\nPEAK_RSS_MB=60.8\n\n[log written] logs/frontier_arrow_from_record_formation_2026_06_05.txt\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191658Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_arrow_from_record_formation_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

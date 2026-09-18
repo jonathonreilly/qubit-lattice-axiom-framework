@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_record_content_oriented_safe_front_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_d4_record_content_oriented_safe_front_2026_08_29.py",
+ "seed": 58703,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191143Z",
+ "elapsed_s": 174.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f7a1df6ff1ca97d9c340ca1edd0b01ed5a5b66126787d7d2179f9144f2d56bc",
+ "stdout_tail": "cal trail/obstacle configurations have zero eligible continuation sites without claiming global absorption\nPASS H_probability_and_open_dynamics: continue or local STOP carries total mass one while site/rate/clock/concurrency/microscopic control remain unsupplied\nPASS I_registered_adjudication: the registered effective target reaches CONTENT-ORIENTED-SAFE-FRONT from a supplied oriented seed\nPASS J_scope: the note and N1--N8 sidecar preserve microscopic pointer, seed, concurrency, gravity, axiom, audit, and TOE boundaries\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=0/0\nCONTROL_KIND: assertion_guard; detected=24/24\nCONTROL_KIND: syntax_guard; detected=9/9\nCONTROL_KIND: scope_guard; detected=12/12\nMUTATIONS: rejected=45/45\nper_element: checked all 84 locked Record contents, each source/destination state, and every occupied-Record permanence identity\nper_site: checked complete frontiers for 9408 clear trails and 1488 blocked local components\nper_mode: checked nine carrier coordinates, fourteen outcomes, six signed fronts, and 2016 cubic covariance cases; no continuum mode claim\nper_block: checked 37632 guarded controller cases, including 1176 clear and 36456 blocked maps\nlattice_wide: checked and not executed; unrelated or simultaneous fronts, global scheduling, formation rate, and gravity remain open\nVERDICT: CONTENT-ORIENTED-SAFE-FRONT; the fixed Record decoder removes reflection and composes with the collision guard\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191437Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

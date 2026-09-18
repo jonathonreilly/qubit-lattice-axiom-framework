@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_live_constants_canonical_edge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py",
+ "seed": 59157,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191917Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=59  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9aa042e61d73ab67d196b65c7e535afbf794bf89132dffb624c919c162331796",
+ "stdout_tail": "========================================\n  ETA_OBS        = 6.120000000000000e-10\n  Omega_b h^2    = 0.022347180000000\n  H_PARAM        = 0.674000000000000\n  Omega_b        = 0.049192957585257\n  OMEGA_DM_OBS   = 0.268000000000000\n  Omega_DM/Omega_b = 5.447934280745940\n  [PASS] ETA_OBS equals supplied observed comparator\n  [PASS] OMEGA_DM_OBS equals supplied observed comparator\n  [PASS] H_PARAM equals helper value\n  [PASS] Omega_b h^2 arithmetic matches displayed formula\n  [PASS] omega_b_from_eta divides by H_PARAM^2\n  [PASS] Omega_DM/Omega_b arithmetic matches displayed value\n  [PASS] target ratio is finite and positive\n  [PASS] eta helper source exposes ETA_OBS\n  [PASS] thermal helper source exposes OMEGA_DM_OBS\n\n============================================================================\nBLOCK 5: falsifiers and firewalls\n============================================================================\n  [PASS] perturbing P changes alpha_LM\n  [PASS] perturbing ETA_OBS changes Omega_b\n  [PASS] ALPHA_LO is not alpha_bare\n  [PASS] ALPHA_LO is not alpha_s(v)\n  [PASS] note keeps observed constants supplied\n  [PASS] declared source surfaces avoid protected audit tree\n\n============================================================================\nSUMMARY: PASS=59  FAIL=0\n============================================================================\n\nRESULT:\n  DM live-constant edge certificate is complete iff FAIL=0.\n  Parent DM closure still needs selector/completeness authority and audit.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

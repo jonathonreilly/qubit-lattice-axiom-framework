@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_two_adjacent_seam_chart_transition_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_two_adjacent_seam_chart_transition_2026_07_25.py",
+ "seed": 59362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T192242Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "291b6916094b32cc923091ad9ff29b1b1c2b7232573b6cd73bd25412d8900a67",
+ "stdout_tail": "time_parity_queries\": 0, \"transition_CZ_M2_support\": 2, \"transition_work_M2\": 0}, \"same_encoding\": {\"Gram_raw_maximum\": 6.661338147750939e-16, \"dense_code_completion_used\": false, \"encoding_nonzeros\": 2836, \"logical_columns_n_le_2\": 172, \"physical_carrier_rays\": 2836, \"two_seam_code_leakage\": 0.0, \"two_seam_code_leakage_raw_maximum\": 1.3877787807814457e-16, \"two_seam_same_E_intertwiner\": 0.0, \"two_seam_same_E_raw_maximum\": 0.0, \"uncorrected_mismatch_columns\": 12, \"uncorrected_residual\": 2.0}, \"single_star_extension\": {\"closed_form\": \"6 k (k-1) total; 12 (k-1) new at edge k\", \"closed_form_failures\": 0, \"full_six_edge_star_transition_CZ_terms\": 180, \"maximal_star_edge_prefixes\": [1, 2, 3, 4, 5, 6], \"maximum_cell_radius\": 2, \"nested_transition_failures\": 0, \"new_CZ_terms_per_added_edge\": [0, 12, 24, 36, 48, 60], \"transition_CZ_terms\": [0, 12, 36, 72, 120, 180]}, \"status\": \"bounded-adjacent-chart-transition-certificate\", \"supplied\": [\"Cycle655 decoded local occupation coordinates and bounded encoder/decoder word\", \"E_refresh seven-rail carrier amplitudes and locally copied qutrit charts\", \"the Route-B signed-carrier single-seam word and clean edge-role scratch\", \"Route-C's owned seam schedule, exterior target fixture and proper-cubic frames\", \"a finite circuit ordinal, explicitly not physical time\"], \"terminal\": \"ADJACENT_PAIR_TRANSITION_CLOSED_RECURRENT_TWO_STAR_GLUE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 9}\nRESULT ADJACENT_PAIR_TRANSITION_CLOSED_RECURRENT_TWO_STAR_GLUE_OPEN\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T192246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

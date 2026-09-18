@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_observable_principle_p1_symmetry_type_energy_readout_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_observable_principle_p1_symmetry_type_energy_readout_2026_06_02.py",
+ "seed": 58907,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191507Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0aaf538e895e484b7a92f7118947e0aa91babc4d01ea6eab2605b18abdc29b41",
+ "stdout_tail": "o in its own detail strings. The non-additivity of F_p is tested at the single representative p = 1, with uniqueness of log left to the Cauchy classifier under continuity or measurability, which is not carried out here; and the third synthesis check is the conjunction of the two preceding ones rather than new content, with no classification of the full readout space.\n  scope: of the 26 scored checks, 6 are substring scans over live Markdown notes and 20 compute. The ledger section is explicitly diagnostic and unscored, and the interacting-spectrum leg compares floating-point evalf values against an exact list. The runner is fully deterministic: no RNG stream and no optimizer anywhere.\n\n==============================================================================\nSCORECARD: PASS=26 FAIL=0\n==============================================================================\n\nA passing run supports ONLY the bounded finding: the symmetry-type\nreadout law is a representation-theory THEOREM (additive generators on\ntensor products give additive eigenvalues; discrete-group elements give\nmultiplicative characters; exp/log is the bridge), but the energy route\nto the v-chain ADDITIVE readout does NOT escape the #2504 sector-\ncomposition selector class C: both pivots (energies-add; W-is-the-free-\nenergy) land in face ADD = P1 or relocate the SAME orbit dichotomy one\nlevel up. Diagnosis: reduces to P1. It does NOT close P1, does\nNOT promote any row, and consumes no fitted or observed targets.\n\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191508Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

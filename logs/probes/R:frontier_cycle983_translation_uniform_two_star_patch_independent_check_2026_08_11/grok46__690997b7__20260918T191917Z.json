@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py",
+ "seed": 59157,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191917Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "343b7f426f0285746408cf5bf691c56e1a0cdb1d56f4e01ee3af9b5c0c11d471",
+ "stdout_tail": "CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH_INDEPENDENT_CHECK\nA_INDEPENDENT_RECONSTRUCTION PASS :: targets=2; support=12; witnesses=[21, 21]; agreement=True\nB_REFUTATION_POWER PASS :: rejected=15/15; outcome_neutral=[true,true]\nC_ARTIFACT_BINDING PASS :: pins=True; clean_bookkeeping=True\nD_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False\nE_CONTROLS PASS :: source_reads=4<=6; determinism=True; runtime_lt_300=True\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

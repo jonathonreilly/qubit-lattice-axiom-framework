@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/finite_clock_direct_maxwell_scaling_and_coulomb_wilson_interactions_2026_09_14.py",
+ "seed": 59015,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191655Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "78842116433e86e6877041f8a960e500d8c8cb3942045e55fa09b4208cb3285c",
+ "stdout_tail": "      \"characteristic_imag\": 0.1214679887161233,\n      \"characteristic_real\": 0.42475673491831106,\n      \"sigma\": 0.15\n    },\n    {\n      \"characteristic_imag\": 0.015666561464803636,\n      \"characteristic_real\": 0.6256362210019604,\n      \"sigma\": 0.4\n    },\n    {\n      \"characteristic_imag\": 4.424833914540294e-05,\n      \"characteristic_real\": 0.6504619155259875,\n      \"sigma\": 1.0\n    },\n    {\n      \"characteristic_imag\": -1.9623101504898456e-17,\n      \"characteristic_real\": 0.6505090947233163,\n      \"sigma\": 12.0\n    }\n  ]\n}\nper_element: scalar theta tails, integer character lifts, score identities and Coulomb time integrals are checked in their specified finite domains.\nper_site: the side-four integral cochain contraction and Fourier Hodge identities check topology and the shortest-vector mechanisms on actual torus cells.\nper_mode: Fourier Green inverses, cell averages, electric-magnetic contact signs and the rank-two Gaussian reflected kernel are checked personally.\nper_block: finite composite-clock toys, side-four topology, and disjoint-loop Green sums through side thirty-two are checked; no phase simulation is performed.\nlattice_wide: checked and not executed \u2014 the volume-dependent theta bound, random-distribution convergence and relative Wilson continuum limits rest on the written derivation.\nTOTAL: PASS=10 FAIL=0\nscope: finite mathematical challenges only; arbitrary-volume proofs and physical identification require independent review, and formal audit remains pending.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191656Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

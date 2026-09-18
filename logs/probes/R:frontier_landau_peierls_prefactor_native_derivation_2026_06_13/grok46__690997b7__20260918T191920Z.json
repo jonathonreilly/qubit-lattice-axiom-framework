@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_landau_peierls_prefactor_native_derivation_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py",
+ "seed": 59160,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191920Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8d573b9f1b277a5d643cff4b2a9003c9b3f340eb37277ca498532f80ec1dd13f",
+ "stdout_tail": "n gives the LP response prefactor exactly  (prefactor=-1/12)\n  [PASS] periodic divergence reduction is symbolic, not a fitted scalar  (residual=0)\n  [PASS] wrong prefactor discriminator rejects -1/11  (wrong residual=(Derivative(E(x, y), (x, 2))*Derivative(E(x, y), (y, 2)) - Derivative(E(x, y), x, y)**2)*Derivative(G(E(x, y)), (E(x, y), 2))/132)\n\nS2 derived LP Brillouin-zone integral\n  LP kgrid 48: -1.54931076443342586e-02\n  LP kgrid 96: -1.54931076443342274e-02\n  [PASS] derived LP integral is converged under k-grid refinement  (|fine-coarse|=3.123e-17, tol=1.0e-13)\n\nS0 independent finite-lattice Peierls diagonalization\n  exact L=24, nflux=1: -1.54902341422116629e-02\n  exact L=24, nflux=2: -1.54924629038020369e-02\n  exact L=24, nflux=3: -1.54929624909283161e-02\n  [PASS] exact Peierls response is nonzero real diagonalization data  (|response|=1.549e-02)\n  [PASS] finite Peierls B-step is converging  (|r2-r1|=2.229e-06, |r3-r2|/|r2-r1|=0.224)\n\nS2 exact-vs-derived thermodynamic comparison\n  exact L=20, nflux=1: -1.54820823091538530e-02  err=1.103e-05\n  exact L=24, nflux=1: -1.54902341422116629e-02  err=2.874e-06\n  exact L=28, nflux=1: -1.54932179671260113e-02  err=1.103e-07\n  derived LP thermodynamic value: -1.54931076443342274e-02\n  [PASS] finite-size Peierls sequence converges toward derived LP integral  (err_medium=2.874e-06, err_large/err_medium=0.038)\n  [PASS] derived -1/12 LP integral matches exact Peierls reference  (err_large=1.103e-07, tol=1.0e-06)\n\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191921Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

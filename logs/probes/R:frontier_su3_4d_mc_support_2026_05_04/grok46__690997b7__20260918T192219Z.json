@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_4d_mc_support_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_su3_4d_mc_support_2026_05_04.py",
+ "seed": 59339,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T192219Z",
+ "elapsed_s": 22.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "94e4f053df955af6c10c5b56904bb7f7fe7df5192176accebe8491c93a0c284a",
+ "stdout_tail": "\n\n4D periodic Wilson MC: Ls=2, Lt=2\n  sites=16, links=64, plaquettes=96\n  thermalize 100: P=0.6168, t=1s\n  thermalize 200: P=0.6201, t=1s\n  thermalize 300: P=0.5619, t=1s\n  thermalize 400: P=0.5972, t=2s\n  thermalize 500: P=0.6423, t=2s\n  measure 100: P=0.6274 +/- 0.0054, t=3s\n  measure 200: P=0.6361 +/- 0.0036, t=3s\n  measure 300: P=0.6257 +/- 0.0035, t=4s\n  result Ls=2, Lt=2: P = 0.6257 +/- 0.0035\n\n4D periodic Wilson MC: Ls=3, Lt=3\n  sites=81, links=324, plaquettes=486\n  thermalize 100: P=0.6131, t=3s\n  thermalize 200: P=0.5953, t=5s\n  thermalize 300: P=0.5801, t=8s\n  thermalize 400: P=0.5948, t=10s\n  thermalize 500: P=0.5898, t=13s\n  measure 100: P=0.6000 +/- 0.0016, t=16s\n  measure 200: P=0.5970 +/- 0.0013, t=19s\n  result Ls=3, Lt=3: P = 0.5970 +/- 0.0013\n\nBounded checks\n  [PASS] L=2 full 3+1D periodic Wilson run remains in the expected small-volume beta=6 band\n         P22=0.6257 +/- 0.0035\n  [PASS] L=3 full 3+1D periodic Wilson run is in the canonical plaquette region\n         P33=0.5970 +/- 0.0013\n  [PASS] the L=3 value is close to, but does not prove, the canonical L->infinity comparator\n         delta=+0.0036\n  [PASS] the finite-volume result supports the full 3+1D surface rather than a spatial-only minimal-block reading\n         support-only numerical separation; not an analytic closure\n\n==============================================================================\nSUMMARY: PASS=4 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T192242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_su3_4d_mc_support_2026_05_04.txt against the .txt beside this log"
+  ]
+ }
+}

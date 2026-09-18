@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py",
+ "seed": 59336,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T192216Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "952e9d8b957fd43060657d74dbb528582312f18ecea4cdba198800610024f8d4",
+ "stdout_tail": "m^2(perm6) against 0 in Lambda^2(perm6) and 1 in perm6 itself, all computed by exact character sums over the group; and the corroborating box block covers 6 rungs, one anchor at N=15 against 5 bulk rungs, judged by the named thresholds 0.01 at the anchor and 1.0 in the bulk.\nlattice_wide: executed, and certified strictly as a finite statement -- the Reynolds projector is a true average over all 48 group elements acting on the whole 6-arm star, so the decomposition is global across that star, while the box corroboration spans 6 finite boxes up to N=25 read from an upstream scan; no infinite-volume extrapolation, no thermodynamic limit and no larger star is constructed anywhere in this runner.\n\n================================================================================================\nPASS=11 FAIL=0\n\nVERDICT: open_readout_datum. The VALUE 9/4 = kappa^2 is a same-domain O_h theorem output\n(K1), but the BRIDGE lambda = q_E/q_T = kappa^2 is forced by NOTHING named: equivariance leaves\nE,T1 scales independent (K3), the carrier is channel-blind (K5), and now (Q1) even a quadratic\nO_h-invariant functional has a FREE E:T1 ratio by Schur -- kappa^2 is one point on a continuum.\nThe gap is exactly q_X ~ w_X^{-2} (Q2), realized by no named functional; the live box-scan ratio\nis the LEAST box-stable quantity (Q3). rho_E = beta_E/alpha_E is a FREE DIRECTION in the readout\nplane: an open supplied datum, not adopted here. (Does NOT prove impossibility over future nonlinear observables.)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T192217Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

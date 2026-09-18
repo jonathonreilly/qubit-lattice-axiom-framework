@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_g3_outcome_factorization_unraveled_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_g3_outcome_factorization_unraveled_2026_07_11.py",
+ "seed": 59159,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191919Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=22 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "893b8b5772c2ba3a1d9066710107cc6cc3d4e77ab7950925831466e883e5f089",
+ "stdout_tail": "d two outcomes only; no lattice site index appears anywhere in the 4x4 carrier, so this runner produces no site-resolved statement about the factorization law.\nper_mode: checked \u2014 the two outcome modes s and d are resolved separately: the single-registration Born weights are (p, 1-p) on both witnesses, and under agreement-conditioning the product stack sends p_s to p_s^2/(p_s^2+p_d^2) while the correlated stack leaves each mode fixed at its input weight.\nper_block: checked \u2014 the two registration copies are the block units: Tr_2 and Tr_1 both reduce to diag(p, 1-p) on each witness, a 475-observable Hermitian battery finds a maximum copy-1 discrepancy of 0.00e+00 between the two witnesses, and the unequal-marginal witness splits copy-1 weight p1 from copy-2 weight p2.\nlattice_wide: checked and not executed \u2014 the argument is a finite two-registration quotient plus a three-atom coupling lemma; no extension to many edges, to a lattice, or to a thermodynamic limit is executed, so the no-go is certified only at that scope, with PASS=22, FAIL=0.\n\nTOTAL: PASS=22 FAIL=0\nVERDICT: narrow no-go passes. The source-note results constrain the complete one-edge marginal trajectory law but not its cross-edge coupling. Product and shared-draw couplings preserve that law while only one factorizes. Cross-edge independence (residual 4) + identical marginals (residuals 1+3) is the exact escape set; residual 4 is the factorization-critical residual and is precisely the one the lane leaves untested.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

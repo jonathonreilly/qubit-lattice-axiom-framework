@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle885_gbw1_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py",
+ "seed": 59157,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191917Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a7e2426f24db8be56d7bd8dcda2005f80c1b0f289430630d014e0822607110f",
+ "stdout_tail": "[PASS] nonempty disjoint shell violates all-superset monotonicity\n[PASS] DFS reproduces actual depth-four seed and walk counts\nTOTAL: PASS=2 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

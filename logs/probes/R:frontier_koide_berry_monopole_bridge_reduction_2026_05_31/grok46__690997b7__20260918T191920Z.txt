@@ -1,0 +1,52 @@
+
+========================================================================================
+Koide Berry-monopole finite-matrix support: Q-branch selection remains open
+========================================================================================
+
+========================================================================================
+F1 — index-map native: b = the C3-doublet Fourier amplitude of H
+========================================================================================
+[PASS] F1.1 the C3 DFT diagonalizes the shift C (F^dag C F = diag(1,w,w^2))
+       max off-diag = 1.2e-16
+[PASS] F1.2 Fourier-grade projection (1/3)Tr(C^-1 H) = b (the doublet amplitude); grade-0 = a (singlet)
+       grade1 = 0.300+0.200j = b; grade0 = 0.700+0.000j = a
+
+========================================================================================
+F2 — native circulant mass: Berry curvature = 0 (eigenvector rigidity)
+========================================================================================
+[PASS] F2.1 eigenvectors of H_circ(b) are the b-INDEPENDENT Fourier modes (eigenvector rigidity)
+       |<Fourier_k | eigvec_j>| = ['1.0000', '1.0000', '1.0000'] (all 1)
+[PASS] F2.2 Berry curvature of the filled band on the native doublet plane = 0 (finite native algebra; no Q-branch selection)
+       plaquette Berry = ['9.9e-32', '-2.5e-32'] (= 0)
+
+========================================================================================
+F3 — finite comparator: Gamma_chi-ANTICOMMUTING coupling -> nonzero Berry monopole
+========================================================================================
+[PASS] F3.1 the b-coupling sigma_x, sigma_y ANTICOMMUTE with Gamma_chi=sigma_z; the mass m sigma_z COMMUTES
+       {sx,sz}={sy,sz}=0 (chiral coupling); [sz,sz]=0 (commuting mass)
+[PASS] F3.2 chiral (Gamma_chi-anticommuting) coupling has NONZERO Berry; non-chiral (commuting) has ZERO Berry
+       Berry(chiral) = -0.0024 (!=0, monopole); Berry(non-chiral) = 0.0e+00 (=0)
+
+========================================================================================
+F4 — native circulant mass COMMUTES with Gamma_chi; Q(r) identities are separate
+========================================================================================
+[PASS] F4.1 [H_circ, Gamma_chi] = 0 (both circulant) -> {H_circ, Gamma_chi} != 0 -> the native mass NEVER anticommutes -> non-chiral -> Berry=0
+       |[H,Gamma_chi]| = 1.1e-16; |{H,Gamma_chi}| = 1.21 (!=0)
+[PASS] F4.2 finite Koide algebra identities: Q(r=1/2)=2/3 and Q(r=1)=1 (no branch-selection rule asserted)
+       Q(r=1/2) = 0.666667; Q(r=1) = 1.000000
+
+========================================================================================
+SUMMARY
+========================================================================================
+  8/8 checks passed
+
+  BOUNDED FINITE-MATRIX SUPPORT:
+    native circulant generation mass: C3-native, Fourier-rigid, Berry=0
+    toy anticommuting two-band comparator: nonzero Berry monopole
+    finite Koide algebra: Q(r=1/2)=2/3 and Q(r=1)=1
+  No Berry/chirality-to-r weighting rule or physical Q branch is derived.
+  The generation R^3 circulant algebra cannot supply the anticommuting
+  operator. Next route remains an off-generation factor plus a retained
+  readout/weighting bridge.
+
+ALL CHECKS PASSED

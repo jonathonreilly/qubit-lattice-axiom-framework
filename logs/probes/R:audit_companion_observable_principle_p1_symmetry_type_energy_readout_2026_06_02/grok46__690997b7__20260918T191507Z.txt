@@ -1,0 +1,128 @@
+
+==============================================================================
+RUNNER: observable-principle P1 symmetry-type / energy-readout note
+==============================================================================
+
+==============================================================================
+T1: structure survey — both ledgers present and consistent
+==============================================================================
+  [PASS] additive readout = log|det| present (parent + Matsubara free-energy)
+         OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md: log|det|=True; HIERARCHY_MATSUBARA_FREE_ENERGY_DENSITY_NARROW_THEOREM_NOTE_2026-05-16.md: log|det|=True
+  [PASS] multiplicative readout = Z3 character present (Koide / DM / color-gen)
+         KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md: Z3-character=True; DM_NEUTRINO_Z3_CHARACTER_TRANSFER_THEOREM_NOTE_2026-04-15.md: Z3-character=True; Z3_CHARACTER_ISOMORPHISM_COLOR_GENERATION_OPEN_GATE_NOTE_2026-05-10.md: Z3-character=True
+  [PASS] both ledgers used consistently (multiplicative gate open / Koide 'not a derivation')
+         Z3 color-generation is an open gate; Koide recasting disclaims derivation
+
+==============================================================================
+T2: additive (continuous-symmetry) generator H_A(x)I + I(x)H_B adds eigenvalues
+==============================================================================
+  [PASS] spec(H_A(x)I + I(x)H_B) = { e_a + e_b } (eigenvalues ADD)
+         got [e_A0 + e_B0, e_A0 + e_B1, e_A1 + e_B0, e_A1 + e_B1]
+  [PASS] numeric instance: {1,5}(+){2,11} -> {3,7,12,16}
+         got [3, 7, 12, 16], expected [3, 7, 12, 16]
+
+==============================================================================
+T3: discrete-symmetry element g_A(x)g_B has MULTIPLICATIVE character
+==============================================================================
+  [PASS] Z3 regular-rep character vector (3,0,0)
+         {0: 3, 1: 0, 2: 0}
+  [PASS] chi(g_A (x) g_B) = chi(g_A).chi(g_B) (characters MULTIPLY on tensor product)
+         chiAB=1, chiA*chiB=1
+  [PASS] tr(M (x) N) = tr M . tr N (tensor-character multiplicativity, generic 2x2)
+         tr(M(x)N)=30, trM.trN=30
+
+==============================================================================
+T4: exp/log bridge — group=exp(algebra) and Z=exp(log Z) coincide
+==============================================================================
+  [PASS] exp(H_A(x)I + I(x)H_B) = exp(H_A) (x) exp(H_B) (additive -> multiplicative)
+         algebra->group bridge on commuting tensor summands
+  [PASS] Z = det(D_A (+) D_B) = Z_A . Z_B ; log Z = log Z_A + log Z_B
+         partition-function->free-energy bridge is the SAME (R_+,x)->(R,+) homomorphism
+  [PASS] same exp/log: log exp(x+y)=x+y and exp log(uv)=uv
+         group=exp(algebra) and Z=exp(log Z) are one exp/log
+
+==============================================================================
+T5: PIVOT 1 — 'energies add' is the {r->r^s} orbit move at the transfer level
+==============================================================================
+  [PASS] H = -log(T2)/2 = E1.n1 + E2.n2 (ADDITIVE number-operator form)
+         H additive <=> T2 = (x)_p diag(1,e^{-2E}) multiplicative: the exp/log move
+  [PASS] (T2)^s = (x)_p diag(1,e^{-2 s E(p)}) multiplicative for EVERY s (single orbit)
+         the additive generator is the normalized s->0 derivative -log((T2)^s)/(2s); energies-add is face ADD
+  [PASS] additive coordinate -log((T2)^s)/(2s) = H for every s (the log readout)
+         energies-add reduces to choosing the log member of the orbit = (Add)
+
+==============================================================================
+T6: PIVOT 1 steelman — H additivity holds ONLY in the independent class
+==============================================================================
+  [PASS] free H spectrum ADDS: {1,-1}(+){1,-1} = {2,0,0,-2}
+         got [-2, 0, 0, 2]
+  [PASS] interacting H_int (g != 0) does NOT have the additive spectrum
+         charpoly - additive = g**2*(g**2 - 2*lambda**2 + 4) (carries g)
+  [PASS] numeric g=1: spectrum != {-2,0,0,2}
+         spec(g=1)=[-2.23606797749979, -1.0, 1.0, 2.23606797749979]
+
+==============================================================================
+T7: PIVOT 2 — 'W is the free energy' = content (II.b), and (II.b) <=> P1
+==============================================================================
+  [PASS] Delta f := ln|det(D+m)| - ln|det D| reproduces the Matsubara density (presupposes log|det|)
+         ln(m^2+c)-ln(c) = ln(1+m^2/c): free-energy = a NAME for the log-det convention
+  [PASS] (II.b) W = log|Z| => additivity W(A(+)B) = W(A) + W(B)
+         the free-energy/log-Z identification gives additivity
+  [PASS] F_p is not additive at the tested representative p=1; log is an additive representative (the p->0 normalized limit (r^p-1)/p, not the p->0 member r^p->1)
+         tested at p=1 only; uniqueness of log as THE additive readout needs the multiplicative Cauchy theorem under continuity/measurability, not classified here
+
+==============================================================================
+T8: SYNTHESIS — the energy route = face ADD (P1); the intensive density = face BLIND
+==============================================================================
+  [PASS] face ADD: energy readout = bare additivity Phi(r_A r_B)=Phi(r_A)+Phi(r_B) (log)
+         the energy ledger references the BARE additive value -> face ADD = P1
+  [PASS] face BLIND: intensive (normalized) energy = E for every s (singles nothing)
+         the per-site/Born energy density is orbit-invariant -> face BLIND
+  [PASS] the two constructed readouts (bare-additive log; intensive normalized) both hold on the tested surface
+         tested faces of #2504 {face ADD = P1, face BLIND = nothing}; a full readout-space classification is not carried out here
+
+==============================================================================
+T9: live-ledger context presence (no dependency status consumed)
+==============================================================================
+  [diagnostic, not scored] audit ledger presence recorded (not load-bearing) -- ledger present with 4880 rows; status NOT consumed as load-bearing
+
+==============================================================================
+T10: note honest-scope strings present; forbidden overclaim strings absent
+==============================================================================
+  [PASS] required honest-scope strings present
+         missing: []
+  [PASS] forbidden status-promotion / overclaim strings absent
+         present: []
+
+==============================================================================
+T11: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         missing: []
+
+==============================================================================
+N5 execution certificate: what this runner resolves
+==============================================================================
+per_element: resolved symbolically, entry by entry, and the identities are certified as exact zero matrices rather than at sample points. Every operator is written out explicitly - the Z3 cyclic shift, the generic 2 x 2 pair [[2, 1], [0, 3]] and [[5, 0], [7, 1]], sigma_z and sigma_x, the block [[j_A, a], [-a, j_A]] - the Kronecker products are formed, and the load-bearing comparisons collapse to the 4 x 4 zero matrix: H = -log(T2)/2 against E1 n1 + E2 n2, and (T2)^s against its direct diagonal form, both entrywise.
+per_site: resolved with amplitudes, but only at 2 sites. Each factor carries its own explicit local operator on the Qubit one-site baseline of dimension 2 - H_A = diag(e_A0, e_A1) against H_B = diag(e_B0, e_B1), instantiated at the numeric spectra {1, 5} and {2, 11} to give {3, 7, 12, 16}, and sigma_z on each site coupled by g sigma_x (x) sigma_x in the steelman. That is genuine per-site data, but the 'lattice' is a two-factor split with no coordinate, no adjacency and no volume; nothing here is indexed by position.
+per_mode: resolved with amplitudes over 2 modes. The realized transfer operator is built as a product over modes, T2 = (x)_p diag(1, e^{-2 E(p)}), giving the explicit diagonal (1, e^{-2E2}, e^{-2E1}, e^{-2(E1+E2)}); the generator is then read out in mode-resolved number-operator form E1 n1 + E2 n2 with a separate number operator per mode; and the whole exponent family (T2)^s is shown to stay a product over the same modes for every s, which is the orbit statement the pivot turns on.
+per_block: resolved with amplitudes, and it is where the independent-subsystem hypothesis is actually exercised. The substrate is the block-diagonal D = D_A (+) D_B with the two block determinants computed in closed form as Z_A = j_A^2 + a^2 and Z_B = j_B^2 + b^2, and the multiplicative-to-additive bridge is certified on exactly that split: det factorizes as Z_A . Z_B and log Z separates as log Z_A + log Z_B. The discrete side resolves the three group-element classes of the Z3 regular representation as the character vector (3, 0, 0).
+lattice_wide: checked and not executed, and the missing global object is this note's own obstruction. No volume, no sequence and no limit is taken anywhere; the entire argument runs on two factors and two modes. The finding the runner supports is that the energy route reduces to P1 rather than closing it, so the prior additive structure that a global argument would have to supply - one independent of the log choice - is precisely what is shown to be absent. Execution can relocate the dichotomy one level up; it cannot escape it.
+  scope: the exp/log bridge is certified on the abelian slice only. _matlog_diag refuses anything but a diagonal matrix, and the algebra-to-group step is stated and tested for commuting tensor summands, so the non-commuting case - where exp(A + B) and exp(A) exp(B) genuinely differ - is never exercised in this runner.
+  scope: two legs are narrower than their labels suggest, and the source says so in its own detail strings. The non-additivity of F_p is tested at the single representative p = 1, with uniqueness of log left to the Cauchy classifier under continuity or measurability, which is not carried out here; and the third synthesis check is the conjunction of the two preceding ones rather than new content, with no classification of the full readout space.
+  scope: of the 26 scored checks, 6 are substring scans over live Markdown notes and 20 compute. The ledger section is explicitly diagnostic and unscored, and the interacting-spectrum leg compares floating-point evalf values against an exact list. The runner is fully deterministic: no RNG stream and no optimizer anywhere.
+
+==============================================================================
+SCORECARD: PASS=26 FAIL=0
+==============================================================================
+
+A passing run supports ONLY the bounded finding: the symmetry-type
+readout law is a representation-theory THEOREM (additive generators on
+tensor products give additive eigenvalues; discrete-group elements give
+multiplicative characters; exp/log is the bridge), but the energy route
+to the v-chain ADDITIVE readout does NOT escape the #2504 sector-
+composition selector class C: both pivots (energies-add; W-is-the-free-
+energy) land in face ADD = P1 or relocate the SAME orbit dichotomy one
+level up. Diagnosis: reduces to P1. It does NOT close P1, does
+NOT promote any row, and consumes no fitted or observed targets.
+

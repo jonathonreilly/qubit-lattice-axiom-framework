@@ -1,0 +1,10 @@
+CHECK 01: PASS — T1: Record sentence defines records as admissible local possibilities
+CHECK 02: PASS — T1: toy model rejects an unavailable lock as a record and accepts an available one
+CHECK 03: PASS — T1: a configuration containing the unavailable lock is not a configuration of records, hence not a state
+CHECK 04: PASS — T2: current Record text supplies optional presence plus one-record-per-site uniqueness
+CHECK 05: PASS — T2: the per-site field is none-or-one-record; a two-lock assignment is not an instance
+CHECK 06: PASS — T3: the empty configuration is vacuously a configuration of records under any conditions
+CHECK 07: PASS — T3: I(empty)=0 is verbatim Record text
+CHECK 08: PASS — T4: the law sentence qualifies its condition as supplied
+CHECK 09: PASS — T4: Admissibility's conditions carry no 'supplied' qualifier; the texts disambiguate themselves
+TOTAL: PASS=9 FAIL=0

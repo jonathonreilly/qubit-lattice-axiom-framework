@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_link_index_routing_carrier_budget_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_color_link_index_routing_carrier_budget_2026_06_05.py",
+ "seed": 59129,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191849Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=51 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 8/40 vs runner-cache [batch 8/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2d3c1d35efa553c4964ed95a0a066cb3496b959f5177a54f9eea09a0a1b928ba",
+ "stdout_tail": "ssification\n------------------------------------------------------------------------------\n  [PASS] five route classes recorded\n  [PASS] one-qubit route classified as obstruction\n  [PASS] two-qubit route classified as carrier support\n  [PASS] generic U4 route needs block constraint\n  [PASS] post-record count route is wrong layer\n  [PASS] full link routing remains open construction\n\n------------------------------------------------------------------------------\n7. Note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/COLOR_LINK_INDEX_ROUTING_CARRIER_BUDGET_2026-06-05.md)\n  [PASS] note contains marker: Claim type:** meta support map\n  [PASS] note contains marker: Trace class:** negative route-pruning support map\n  [PASS] note contains marker: No-Go Discipline Gate (N1-N8)\n  [PASS] note contains marker: Does not derive physical color.\n  [PASS] note contains marker: Does not establish a repo-wide quantum-link ontology.\n  [PASS] note contains marker: Does not select a Koide/generation dial location.\n  [PASS] forbidden wording absent: physical color closure\n  [PASS] forbidden wording absent: link ontology closure\n  [PASS] forbidden wording absent: projection closure\n  [PASS] forbidden wording absent: dial selector closure\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=51 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191849Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

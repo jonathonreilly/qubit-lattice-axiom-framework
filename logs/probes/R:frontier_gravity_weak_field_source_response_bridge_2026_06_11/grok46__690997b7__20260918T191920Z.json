@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gravity_weak_field_source_response_bridge_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py",
+ "seed": 59160,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191920Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7c7f95b8c7f42f020a4a8c9e84aef66a87f805964d7e38e5fabfa1cd65919b2c",
+ "stdout_tail": " derived\nPASS: note excludes forbidden phrase: G_Newton in SI units is derived\nPASS: note excludes forbidden phrase: proportional to `-m grad phi(x)`\nPASS: note excludes forbidden phrase: F_x = -grad_x Delta S_test\nPASS: H is symmetric\nPASS: H has one constant zero mode (zero_modes=1)\nPASS: H is positive on neutral sector (lambda_min=1.38197)\nPASS: G0 is symmetric\nPASS: H G0 equals P0\nPASS: G0 H equals P0\nPASS: Euler equation H phi = P0 rho at phi=G0 P0 rho (norm=2.340e-14)\nPASS: quadratic action increase is 1/2 eta.H.eta (diff=1.137e-13)\nPASS: stationary point is a minimum on neutral sector (increase=355.823)\nPASS: perturbed kernel K != G0 fails Euler equation (residual=3.663e+00)\nPASS: translation-covariant local weights have one-dimensional nullspace (null_dim=1)\nPASS: constant weight satisfies translation constraints\nPASS: Born density is local phase invariant\nPASS: Born density normalizes to ||psi||^2\nPASS: normalization fixes constant local weight a=1\nPASS: Born density is translation covariant\nPASS: Poisson solve with neutral Born density closes\nPASS: test action response is S=L(1-phi)\nPASS: force is m times gradient of background potential\nPASS: U=-m phi gives F=-grad U=+m grad phi\nPASS: test potential energy is -m phi\nPASS: force response is bilinear in source and test mass (case 1)\nPASS: force response is bilinear in source and test mass (case 2)\nPASS: integrated-out action equals -1/2 rho.G0.rho\nPASS: test-source derivative equals -M G0(x,y)\n\nTOTAL: PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gravity_weak_field_source_response_bridge_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

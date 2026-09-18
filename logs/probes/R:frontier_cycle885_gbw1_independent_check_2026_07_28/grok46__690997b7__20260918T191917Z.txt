@@ -1,0 +1,3 @@
+[PASS] nonempty disjoint shell violates all-superset monotonicity
+[PASS] DFS reproduces actual depth-four seed and walk counts
+TOTAL: PASS=2 FAIL=0

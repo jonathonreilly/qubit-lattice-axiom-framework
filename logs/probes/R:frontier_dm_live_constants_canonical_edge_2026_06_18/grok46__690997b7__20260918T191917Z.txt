@@ -1,0 +1,105 @@
+============================================================================
+DM live constants canonical edge certificate
+============================================================================
+Claim boundary: bounded support for helper constant wiring only.
+No audit verdict or effective status is changed by this runner.
+
+============================================================================
+BLOCK 1: source surfaces
+============================================================================
+  [PASS] docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md exists  (present)
+  [PASS] docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md exists  (present)
+  [PASS] docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md exists  (present)
+  [PASS] scripts/canonical_plaquette_surface.py exists  (present)
+  [PASS] scripts/dm_leptogenesis_exact_common.py exists  (present)
+  [PASS] scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py exists  (present)
+  [PASS] scripts/dm_full_closure_same_surface_thermal_support_common.py exists  (present)
+
+============================================================================
+BLOCK 2: boundary and trace text
+============================================================================
+  [PASS] claim type is bounded_theorem
+  [PASS] status is bounded support only
+  [PASS] independent audit owns status
+  [PASS] note forbids audit status mutation
+  [PASS] note says no new axiom
+  [PASS] note does not derive plaquette value
+  [PASS] note does not derive ETA/Omega observations
+  [PASS] note does not close selector authority
+  [PASS] note cites canonical certificate
+  [PASS] note names parent DM theorem as trace target
+  [PASS] note avoids a markdown dependency edge back to parent
+  [PASS] note links source runner
+  [PASS] parent records new constants edge certificate
+  [PASS] parent preserves conditional boundary
+  [PASS] canonical certificate keeps P underived
+  [PASS] canonical certificate forbids physical coupling derivation
+
+============================================================================
+BLOCK 3: canonical plaquette arithmetic edge
+============================================================================
+  P              = 0.593400000000000
+  u_0            = 0.877681381198684
+  alpha_bare     = 0.079577471545948
+  alpha_LM       = 0.090667836017286
+  alpha_s(v)     = 0.103303816122267
+  DM ALPHA_LO    = 0.090667836017286
+  DM ALPHA_HI    = 0.092264992618360
+  [PASS] P equals canonical 0.5934
+  [PASS] u_0 equals P^(1/4)
+  [PASS] u_0^4 equals P
+  [PASS] alpha_bare equals 1/(4pi)
+  [PASS] alpha_LM equals alpha_bare/u_0
+  [PASS] alpha_LM*u_0 equals alpha_bare
+  [PASS] alpha_s(v) equals alpha_bare/u_0^2
+  [PASS] alpha_s(v)*u_0^2 equals alpha_bare
+  [PASS] DM PLAQ_MC equals canonical P
+  [PASS] DM u0 equals canonical u_0
+  [PASS] DM alpha_bare equals canonical alpha_bare
+  [PASS] DM ALPHA_LM equals canonical alpha_LM
+  [PASS] thermal ALPHA_LO equals canonical alpha_LM
+  [PASS] short-distance p1 stays in logarithm domain
+  [PASS] thermal ALPHA_HI equals plaquette-supported formula
+  [PASS] helper function returns same ALPHA_HI
+  [PASS] thermal endpoint interval has positive width
+  [PASS] plaquette helper contains canonical constant
+  [PASS] leptogenesis helper contains PLAQ_MC constant
+  [PASS] thermal helper imports CANONICAL_ALPHA_LM
+  [PASS] map helper imports CANONICAL_ALPHA_BARE
+
+============================================================================
+BLOCK 4: eta/Omega observed-input bookkeeping
+============================================================================
+  ETA_OBS        = 6.120000000000000e-10
+  Omega_b h^2    = 0.022347180000000
+  H_PARAM        = 0.674000000000000
+  Omega_b        = 0.049192957585257
+  OMEGA_DM_OBS   = 0.268000000000000
+  Omega_DM/Omega_b = 5.447934280745940
+  [PASS] ETA_OBS equals supplied observed comparator
+  [PASS] OMEGA_DM_OBS equals supplied observed comparator
+  [PASS] H_PARAM equals helper value
+  [PASS] Omega_b h^2 arithmetic matches displayed formula
+  [PASS] omega_b_from_eta divides by H_PARAM^2
+  [PASS] Omega_DM/Omega_b arithmetic matches displayed value
+  [PASS] target ratio is finite and positive
+  [PASS] eta helper source exposes ETA_OBS
+  [PASS] thermal helper source exposes OMEGA_DM_OBS
+
+============================================================================
+BLOCK 5: falsifiers and firewalls
+============================================================================
+  [PASS] perturbing P changes alpha_LM
+  [PASS] perturbing ETA_OBS changes Omega_b
+  [PASS] ALPHA_LO is not alpha_bare
+  [PASS] ALPHA_LO is not alpha_s(v)
+  [PASS] note keeps observed constants supplied
+  [PASS] declared source surfaces avoid protected audit tree
+
+============================================================================
+SUMMARY: PASS=59  FAIL=0
+============================================================================
+
+RESULT:
+  DM live-constant edge certificate is complete iff FAIL=0.
+  Parent DM closure still needs selector/completeness authority and audit.

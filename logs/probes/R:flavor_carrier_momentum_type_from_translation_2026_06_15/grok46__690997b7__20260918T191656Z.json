@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_carrier_momentum_type_from_translation_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
+ "seed": 59016,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191656Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7b1d06b4af519635c7c9b6cb8eda0c03f8017ac1b1a2b8c2fecd416c49fd37df",
+ "stdout_tail": "k: all 256 site-subset diagonal projectors have expectation |B|/8 in every character, exhausting the blocks of the supplied cell)\n  [PASS] A20 N5 resolution class lattice_wide  (lattice_wide: summing all eight site projectors gives I_8 and expectation 1 in every character on the entire supplied periodic cell; no larger-cell or infinite-lattice assertion is tested)\n  N3 hidden-wall scan: explicit scoped definitions are the finite cell, full character family, linear expectation, diagonal operator class, and supplied K_1; none is an unlisted wall, axiom, or physical bridge.\n  N4 residual matching: no prior residual witness is cited and no N1 route is marked RULED OUT BY PRIOR; witnesses=[]; unresolved=[]\n  N6 partial-closure handoff: the orchestrator must disposition every indexed primitive, gate, convention, and scope reframe against position-diagonal linear operator on the supplied finite-cell site basis. This runner establishes only the finite algebra, makes no new-axiom claim, and leaves the physical observable/readout bridge as a separate obligation.\n  N7 steelman route_translation_observable: if the physical observable algebra contains T_x,T_y,T_z, their joint signatures separate all labels. The note supplies the distinct resolution surface for the scoped N2 wall.\n  N8 cross-cycle echo: dynamic candidate comparison, universe count, digest, retirement state, and applicability are orchestrator-owned; this runner makes no static corpus-exhaustion claim.\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191657Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

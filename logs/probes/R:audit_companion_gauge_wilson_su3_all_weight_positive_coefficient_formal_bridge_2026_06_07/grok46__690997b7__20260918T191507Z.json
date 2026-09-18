@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
+ "seed": 58907,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "690997b7",
+ "started_utc": "20260918T191507Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=50 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "45ed5774c0aac19177ee1093c881c9c5dbdd5b549e470d005b938f0f1880c3b9",
+ "stdout_tail": " 1/d_mu only on lambda=mu\n[PASS] finite Haar convolution gives z_mu chi_mu as a full matrix polynomial\n[PASS] finite convolution action stabilizes when the kernel packet is enlarged :: support size=4, enlarged packet size=16\n\n-- Part 7: hostile controls for convolution normalization\n[PASS] hostile control rejects omission of the Schur 1/d_mu factor\n[PASS] hostile control rejects omission of d_lambda from the central polynomial\n[PASS] hostile control rejects returning only z_mu without chi_mu(V)\n[PASS] hostile control rejects the dual-irrep pairing caused by an inverse/conjugation mutation\n\n-- Part 8: source-scope checks\n[PASS] source-note marker present: v_(p,q)\n[PASS] source-note marker present: e_1^(tensor p) tensor (e^3)^(tensor q)\n[PASS] source-note marker present: The Weierstrass M-test\n[PASS] source-note marker present: m_(p,q)(n)/n!\n[PASS] source-note marker present: Matrix-element Schur orthogonality then contracts all indices\n[PASS] source-note marker present: The right side is unchanged when `F` is enlarged.\n[PASS] source-note marker present: No strict all-weight positivity is claimed at `beta=0`.\n[PASS] source-note marker present: The second statement is algebraic-dual/finite-test-vector only.\n[PASS] source-note marker present: assert an all-weight `L^2` class function\n[PASS] source-note marker present: The current-main direct source consumers were inspected.\n[PASS] source-note marker present: its downstream prose is not an executable premise\nTOTAL: PASS=50 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191507Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

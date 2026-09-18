@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8169/four_point_menu_beyond_reference.py",
+ "seed": 57108,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4774174b",
+ "started_utc": "20260918T184508Z",
+ "elapsed_s": 135.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "bisector swap, S preserved, stabilizer {I, R}, Born sum 2 exact at all 1078980 rational non-collinear pairs (7943 values of t, denominators <= 30); Gibbs 1/3, 1/6 and the linear family symbolic; supports on paths n = 3..7 over all orders: chain != ends-first for every n, distinct signatures n=3: 4, n=4: 8, n=5: 16, n=6: 32, n=7: 64; falsifier does not fire"
+ },
+ "review": "Beyond the orthogonal reference pair and the three-site path: at all 1078980 non-collinear pairs of rational unit vectors (denominators <= 30, 7943 values of t) the bisector half-turn is an exact proper rotation that swaps q and q', preserves S and is the only non-trivial stabilizer, and the Born four-tuple 1, (1+t)/2, 0, (1-t)/2 sums to 2; the Gibbs ratio exp(2 beta(1+t)) and 1/3, 1/6 at t = 0, e^{2 beta} = 2 hold symbolically; on paths of 3-7 sites over all formation orders the chain and ends-first supports differ (2^(n-1) distinct support signatures); the falsifier does not fire.",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "6a3d64b2f1377c20662cb682bdd3ecf8eb604ca12d0e7ef040b433fd245fdfcf",
+ "stdout_tail": ".3193, t=-0.003: 0.3331, t=+0.176: 0.3466, t=+0.355: 0.3595, t=+0.532: 0.3715, t=+0.702: 0.3824, t=+0.866: 0.3923, t=+0.998: 0.3999\n[4] path of 3 sites: 4 distinct support signatures over 6 orders; chain ('inf', 2, 2), ends-first ('inf', 4, 'inf'); interior supports chain [2] vs ends-first [4]: differ\n[4] path of 4 sites: 8 distinct support signatures over 24 orders; chain ('inf', 2, 2, 2), ends-first ('inf', 2, 4, 'inf'); interior supports chain [2, 2] vs ends-first [2, 4]: differ\n[4] path of 5 sites: 16 distinct support signatures over 120 orders; chain ('inf', 2, 2, 2, 2), ends-first ('inf', 2, 2, 4, 'inf'); interior supports chain [2, 2, 2] vs ends-first [2, 2, 4]: differ\n[4] path of 6 sites: 32 distinct support signatures over 720 orders; chain ('inf', 2, 2, 2, 2, 2), ends-first ('inf', 2, 2, 2, 4, 'inf'); interior supports chain [2, 2, 2, 2] vs ends-first [2, 2, 2, 4]: differ\n[4] path of 7 sites: 64 distinct support signatures over 5040 orders; chain ('inf', 2, 2, 2, 2, 2, 2), ends-first ('inf', 2, 2, 2, 2, 4, 'inf'); interior supports chain [2, 2, 2, 2, 2] vs ends-first [2, 2, 2, 2, 4]: differ\n[time] 135.1s\nSUMMARY: bisector swap, S preserved, stabilizer {I, R}, Born sum 2 exact at all 1078980 rational non-collinear pairs (7943 values of t, denominators <= 30); Gibbs 1/3, 1/6 and the linear family symbolic; supports on paths n = 3..7 over all orders: chain != ends-first for every n, distinct signatures n=3: 4, n=4: 8, n=5: 16, n=6: 32, n=7: 64; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T184734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

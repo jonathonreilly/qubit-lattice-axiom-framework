@@ -1,0 +1,11 @@
+[1] 1470 rational unit vectors (denominators <= 30); 1078980 non-collinear pairs over 7943 values of t in [-0.9988, 0.9988]: failures {'rotation': 0, 'swap': 0, 'set': 0, 'stabilizer': 0, 'born': 0, 'distinct': 0}
+[3] Born overlap (1 + s.q)/2 on S: values 1, (1 + t)/2, 0, (1 - t)/2 summing to 2 at every pair: True
+[2] pair-Gibbs: alpha/gamma = exp(2 beta (1 + t)) symbolically: True; alpha = 1/3, gamma = 1/6 at t = 0, e^(2 beta) = 2: True; uniform at beta = 0: True; linear family sums to 1 and gives 1/4, 1/2, 0 at lambda = 0, 1, -1 (t = 0): True
+[2] copy mass alpha(t) at e^(2 beta) = 2 on sample rational t: t=-0.999: 0.2501, t=-0.868: 0.2614, t=-0.704: 0.2755, t=-0.536: 0.2899, t=-0.357: 0.3048, t=-0.179: 0.3193, t=-0.003: 0.3331, t=+0.176: 0.3466, t=+0.355: 0.3595, t=+0.532: 0.3715, t=+0.702: 0.3824, t=+0.866: 0.3923, t=+0.998: 0.3999
+[4] path of 3 sites: 4 distinct support signatures over 6 orders; chain ('inf', 2, 2), ends-first ('inf', 4, 'inf'); interior supports chain [2] vs ends-first [4]: differ
+[4] path of 4 sites: 8 distinct support signatures over 24 orders; chain ('inf', 2, 2, 2), ends-first ('inf', 2, 4, 'inf'); interior supports chain [2, 2] vs ends-first [2, 4]: differ
+[4] path of 5 sites: 16 distinct support signatures over 120 orders; chain ('inf', 2, 2, 2, 2), ends-first ('inf', 2, 2, 4, 'inf'); interior supports chain [2, 2, 2] vs ends-first [2, 2, 4]: differ
+[4] path of 6 sites: 32 distinct support signatures over 720 orders; chain ('inf', 2, 2, 2, 2, 2), ends-first ('inf', 2, 2, 2, 4, 'inf'); interior supports chain [2, 2, 2, 2] vs ends-first [2, 2, 2, 4]: differ
+[4] path of 7 sites: 64 distinct support signatures over 5040 orders; chain ('inf', 2, 2, 2, 2, 2, 2), ends-first ('inf', 2, 2, 2, 2, 4, 'inf'); interior supports chain [2, 2, 2, 2, 2] vs ends-first [2, 2, 2, 2, 4]: differ
+[time] 135.1s
+SUMMARY: bisector swap, S preserved, stabilizer {I, R}, Born sum 2 exact at all 1078980 rational non-collinear pairs (7943 values of t, denominators <= 30); Gibbs 1/3, 1/6 and the linear family symbolic; supports on paths n = 3..7 over all orders: chain != ends-first for every n, distinct signatures n=3: 4, n=4: 8, n=5: 16, n=6: 32, n=7: 64; falsifier does not fire

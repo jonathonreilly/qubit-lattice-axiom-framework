@@ -20,13 +20,20 @@
  "stdout_tail": "plicit :: {'schedule': 'candidate full schedule: matter/field onsite coins; local matter-controlled reservoir-field exchange; matter and direction-field streams; arrival-cell contact; moving matter is not executed in the reservoir-field matrix control', 'remaining': 'the reservoir is attached to a lattice cell; transporting it with a moving matter body needs a new bounded carrier/compiler'}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the declared domain rejects aliased and mistyped fixtures :: {'rejected': 4}\nPASS the supplied structure inventory is explicit :: {'supplied': ('Cycle-269 sectorwise mapped matter code and B representatives', 'beta=-0.3 and m=-3 tan(beta/2)', 'one site-local reservoir M2 per coarse cell', 'six physical directional field M2 per coarse cell', 'full field-coin extension outside the zero/one sector', 'uniform scalar creation convention', 'coupling 0.8 and coin-vertex-stream-contact schedule', 'prepared total reservoir-plus-field excitation sector'), 'derived': ('full local physical-M2 exchange gate', 'operator-level source-field balance', 'zero/one mediator invariance without occupancy queries', 'bounded support, zero leakage, covariance, deletion, and composition'), 'not_earned': ('reservoir transport with moving matter', 'energy/stress/gravity-source interpretation', 'field work or matter recoil', 'clock normalization or metric response', 'prepared full-Fock matter encoder')}\n\nSUMMARY PASS 19 FAIL 1\nRESULT LOCAL_CONJUGATE_RESERVOIR_LEDGER_REPAIR_OPEN\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T220421Z",
+  "at_utc": "20260918T220633Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha aaf70495 differs from the current HEAD 068a0866 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL the conjugate-reservoir note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220633Z"
  }
 }

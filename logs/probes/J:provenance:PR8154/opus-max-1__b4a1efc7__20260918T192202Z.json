@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8154/provenance_theorem_numbers.py",
+ "seed": 59322,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a1efc7",
+ "started_utc": "20260918T192202Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "23 items over claim_scope + 4 theorem sections (129 numeric tokens, 0 uncovered): cache-sourced 14, runner-checked (not printed) 0, derived here from the note's formulas 5, definitions 1, excluded 3; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none"
+ },
+ "review": "Provenance of every numeric token in block 20's statement text (claim_scope + H1-H3 + Corollary H4; 129 tokens, 0 uncovered) at PR head e128162557: 14 items located in the runner's cached stdout (B1-B3, C1-C3, D3-D5), 5 re-derived exactly here from the note's own steps (H2(a)'s scaling with B1 re-checked for L = 2..12, H2(b)'s monotone consequence, H3's dyadic form, the L = 1 remark, the limits), 1 definition, 3 exclusions (blocks 17/19 references and their constants, wording); 0 unsourced items; the engine's alternative separator was changed from '|' to a broken bar, and the PR8155/PR8156 provenance runs were re-executed with the fix and give identical counts.",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "31218b18b842d0a0aab4973f24ce741b6095861372e0602a3a2ad84c0a13ae6b",
+ "stdout_tail": "L) \n[DERIVED] H3dyadic | Theorem H3 | H3, the dyadic form | (3 pi^2 beta + 1)/H_(L-1) <= (3 pi^2 beta + 1)/(1 + m/2) by H2(b): with H = 1 + m/2 + t the difference is (3 pi^2 beta + 1) t/((1 + m/2)(1 + m/2 + t)) >= 0 (sympy)\n[DERIVED] H3L1 | Theorem H3 | H3 at L = 1 | at L = 1 the line bound minus 1 is 6 pi^2 beta + 3 > 0, while M_N^4 <= 1\n[DERIVED] limit | claim_scope,Corollary H4,Theorem H3 | the limit | (6 pi^2 beta + 4)/sqrt L -> 0 and H_n -> oo (sympy): both bounds on M_N^4 tend to 0\n[CACHE] D5exec | Theorem H3 | D5, C3 executed | cache stdout line 22: PASS: D5 H3 (the sum rule): the sphere average of (s^1)^2 is 1/3; Parseval sum_k |s^(k)|^2 = sum_x s_x^2 with symbolic site values on the 4x\n[EXCLUDED] refs | claim_scope,Corollary H4,Theorem H1 | references to blocks 19 and 17 (PRs #8153, #8151; their constants are theirs, cited as evidence addresses) and the check labels\n[EXCLUDED] notclaimed | Corollary H4 | not claimed (block 19's bound)\n[EXCLUDED] words | claim_scope,Corollary H4,Theorem H3 | wording and conditions (number words; beta > 0)\n[COVERAGE] 129 numeric tokens in the statement text; uncovered 0\nSUMMARY: 23 items over claim_scope + 4 theorem sections (129 numeric tokens, 0 uncovered): cache-sourced 14, runner-checked (not printed) 0, derived here from the note's formulas 5, definitions 1, excluded 3; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T192210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

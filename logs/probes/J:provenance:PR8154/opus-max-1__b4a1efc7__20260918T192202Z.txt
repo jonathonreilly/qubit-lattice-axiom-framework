@@ -1,0 +1,26 @@
+PR #8154 head e128162557; cache 33 stdout lines; statement sections: claim_scope, Theorem H1, Theorem H2, Theorem H3, Corollary H4
+[DEFINITION] defs | claim_scope | the transform, the symbol and the order parameter | declared under Premises and declared objects
+[CACHE] H1 | claim_scope,Theorem H1 | H1 (the root and its simplification, D3) | cache stdout line 20: PASS: D3 H1(v)/(vi): the displayed root solves v^2/N + sqrt(a) v - M^2/3 = 0; 4b^2 - (sqrt a + b)^2 = (b - sqrt a)(3b + sqrt a) >= 0 with b 
+[CACHE] H1-dim | claim_scope,Theorem H1 | H1's domain (the bond count, D4) | cache stdout line 21: PASS: D4 H1(iii): |1 - e^{-i theta}|^2 = 2(1 - cos theta); the 4x4 torus has 2N = 32 bonds (N per direction) and the 8-torus has N = 8: the 
+[DERIVED] H2a | claim_scope,Theorem H2 | H2(a) (B1 in n-variables, scaled) | sum_k |k|^-2 = (L/pi)^2 sum_n |n|^-2 >= (4L^2/pi^2) H_(L-1) = (N/pi^2) H_(L-1) at N = 4L^2 (sympy), with sum_n |n|^-2 >= 4 H_(L-1) re-checked exactly for L = 2..12
+[CACHE] H2c | claim_scope,Theorem H2 | H2(c) | cache stdout line 15: PASS: C1 H2(c): 2(1 - cos u) = 4 sin^2(u/2) (so E(k) <= |k|^2 by |sin t| <= |t|); u^2 - 2(1 - cos u) >= 0 at 21 sample points of [-pi, pi]
+[CACHE] H2d | claim_scope,Theorem H2 | H2(d) | cache stdout line 16: PASS: C2 H2(d)/(e): 4/(3N) = (pi/L)^2/(3 pi^2) at N = 4L^2 (the plane) and 4/(3N) = 2/(3L) at N = 2L (the line)
+[CACHE] H2e | claim_scope,Theorem H2 | H2(e) | cache stdout line 14: PASS: B3 H2(e): 4 floor(sqrt L)^2 >= L for L = 1..400 (so 2 floor(sqrt L) >= sqrt L); exactly 2 floor(sqrt L) wavevectors in the block for L
+[CACHE] H2b | claim_scope,Theorem H2 | H2(b) | cache stdout line 13: PASS: B2 H2(b): H_(2^m) >= 1 + m/2 for m = 0..12, exactly (each dyadic block contributes at least 1/2)
+[DERIVED] H2b-hence | Theorem H2 | H2(b), the consequence | H_n increasing and L - 1 >= 2^m give H_(L-1) >= H_(2^m) >= 1 + m/2 (exact for m <= 7 and the 40 sides from 2^m + 1)
+[CACHE] B1exec | Theorem H2 | B1 executed | cache stdout line 12: PASS: B1 H2(a): on {-L+1..L}^2 the sup-norm shell j has 8j points (j < L) and 4L-1 points (j = L), |n|^2 <= 2j^2 on every shell, and sum_{n 
+[CACHE] B2exec | Theorem H2 | B2 executed | cache stdout line 13: PASS: B2 H2(b): H_(2^m) >= 1 + m/2 for m = 0..12, exactly (each dyadic block contributes at least 1/2)
+[CACHE] B3exec | Theorem H2 | B3 executed | cache stdout line 14: PASS: B3 H2(e): 4 floor(sqrt L)^2 >= L for L = 1..400 (so 2 floor(sqrt L) >= sqrt L); exactly 2 floor(sqrt L) wavevectors in the block for L
+[CACHE] Cexec | Theorem H2 | C1-C2 executed | cache stdout line 15: PASS: C1 H2(c): 2(1 - cos u) = 4 sin^2(u/2) (so E(k) <= |k|^2 by |sin t| <= |t|); u^2 - 2(1 - cos u) >= 0 at 21 sample points of [-pi, pi]
+[CACHE] sumrule | claim_scope | the sum rule (D5) | cache stdout line 22: PASS: D5 H3 (the sum rule): the sphere average of (s^1)^2 is 1/3; Parseval sum_k |s^(k)|^2 = sum_x s_x^2 with symbolic site values on the 4x
+[CACHE] H3plane | claim_scope,Theorem H3 | H3, the plane (C3) | cache stdout line 17: PASS: C3 H3: 9 pi^2 (beta + 1/(3 pi^2))/(3H) = (3 pi^2 beta + 1)/H (the plane); 3 (beta pi^2 + 2/3)/(sqrt(L)/2) = (6 pi^2 beta + 4)/sqrt(L) 
+[CACHE] H3line | claim_scope,Theorem H3 | H3, the line (C3) | cache stdout line 17: PASS: C3 H3: 9 pi^2 (beta + 1/(3 pi^2))/(3H) = (3 pi^2 beta + 1)/H (the plane); 3 (beta pi^2 + 2/3)/(sqrt(L)/2) = (6 pi^2 beta + 4)/sqrt(L) 
+[DERIVED] H3dyadic | Theorem H3 | H3, the dyadic form | (3 pi^2 beta + 1)/H_(L-1) <= (3 pi^2 beta + 1)/(1 + m/2) by H2(b): with H = 1 + m/2 + t the difference is (3 pi^2 beta + 1) t/((1 + m/2)(1 + m/2 + t)) >= 0 (sympy)
+[DERIVED] H3L1 | Theorem H3 | H3 at L = 1 | at L = 1 the line bound minus 1 is 6 pi^2 beta + 3 > 0, while M_N^4 <= 1
+[DERIVED] limit | claim_scope,Corollary H4,Theorem H3 | the limit | (6 pi^2 beta + 4)/sqrt L -> 0 and H_n -> oo (sympy): both bounds on M_N^4 tend to 0
+[CACHE] D5exec | Theorem H3 | D5, C3 executed | cache stdout line 22: PASS: D5 H3 (the sum rule): the sphere average of (s^1)^2 is 1/3; Parseval sum_k |s^(k)|^2 = sum_x s_x^2 with symbolic site values on the 4x
+[EXCLUDED] refs | claim_scope,Corollary H4,Theorem H1 | references to blocks 19 and 17 (PRs #8153, #8151; their constants are theirs, cited as evidence addresses) and the check labels
+[EXCLUDED] notclaimed | Corollary H4 | not claimed (block 19's bound)
+[EXCLUDED] words | claim_scope,Corollary H4,Theorem H3 | wording and conditions (number words; beta > 0)
+[COVERAGE] 129 numeric tokens in the statement text; uncovered 0
+SUMMARY: 23 items over claim_scope + 4 theorem sections (129 numeric tokens, 0 uncovered): cache-sourced 14, runner-checked (not printed) 0, derived here from the note's formulas 5, definitions 1, excluded 3; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

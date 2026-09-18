@@ -1,0 +1,22 @@
+[ok] n=2 mixture weights and mean 3==3
+[ok] n=2 Stieltjes Lipschitz 1/85 <= 4 p^2=1
+[ok] n=4 mixture weights and mean 3==3
+[ok] n=4 Stieltjes Lipschitz 1/185 <= 4 p^2=1/4
+[ok] n=8 mixture weights and mean 3==3
+[ok] n=8 Stieltjes Lipschitz 1/505 <= 4 p^2=1/16
+[ok] 2<3
+[ok] dim=4 local resolvent at 1,1
+[ok] dim=4 finite bottom 0 vs all-1 bottom 1
+[ok] dim=6 local resolvent at 1,1
+[ok] dim=6 finite bottom 0 vs all-1 bottom 1
+[ok] Z3 projector P=[0, 0, 1] idempotent
+[ok] P supported on q=2
+[ok] projector does not increase l2
+[ok] wrong projector [1, 0, 0] != P
+recomputed scientific checks: 15 (stated 15)
+[ok] nine-dimensional E = 3 x 3-bar
+[ok] (4/a)(1-1/2)d=28/5 == 2d/a=28/5
+[ok] lower 28/5 <= upper 56/5
+[ok] shortest path (0, 0, 0)->(2, 1, 0) length 3 (graph distance 3)
+[ok] bipartite distance parity
+SUMMARY: pattern (c) EXECUTED NUMBERS; 15 exact Stieltjes/resolvent/Z3 controls, 9=3*3, (4/a)(1-1/2)d=2d/a, and a length-d shortest path on Z^3 all match

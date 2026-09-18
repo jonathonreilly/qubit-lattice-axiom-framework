@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-j1457",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/executed_exact_controls.py",
+ "seed": 72727,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230527Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (c) EXECUTED NUMBERS; 15 exact Stieltjes/resolvent/Z3 controls, 9=3*3, (4/a)(1-1/2)d=2d/a, and a length-d shortest path on Z^3 all match"
+ },
+ "review": "Pattern (c) EXECUTED NUMBERS: 15 exact Stieltjes/resolvent/Z3 controls, 9=3*3, (4/a)(1-1/2)d=2d/a and a length-d shortest path on Z^3 all match; no executed-number defect.",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): attack GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "03083edc3f3bb9fd9dfe027109dccb6ac14309adefa403b12c93e2c349649c29",
+ "stdout_tail": "[ok] n=2 mixture weights and mean 3==3\n[ok] n=2 Stieltjes Lipschitz 1/85 <= 4 p^2=1\n[ok] n=4 mixture weights and mean 3==3\n[ok] n=4 Stieltjes Lipschitz 1/185 <= 4 p^2=1/4\n[ok] n=8 mixture weights and mean 3==3\n[ok] n=8 Stieltjes Lipschitz 1/505 <= 4 p^2=1/16\n[ok] 2<3\n[ok] dim=4 local resolvent at 1,1\n[ok] dim=4 finite bottom 0 vs all-1 bottom 1\n[ok] dim=6 local resolvent at 1,1\n[ok] dim=6 finite bottom 0 vs all-1 bottom 1\n[ok] Z3 projector P=[0, 0, 1] idempotent\n[ok] P supported on q=2\n[ok] projector does not increase l2\n[ok] wrong projector [1, 0, 0] != P\nrecomputed scientific checks: 15 (stated 15)\n[ok] nine-dimensional E = 3 x 3-bar\n[ok] (4/a)(1-1/2)d=28/5 == 2d/a=28/5\n[ok] lower 28/5 <= upper 56/5\n[ok] shortest path (0, 0, 0)->(2, 1, 0) length 3 (graph distance 3)\n[ok] bipartite distance parity\nSUMMARY: pattern (c) EXECUTED NUMBERS; 15 exact Stieltjes/resolvent/Z3 controls, 9=3*3, (4/a)(1-1/2)d=2d/a, and a length-d shortest path on Z^3 all match\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1457",
+  "at_utc": "20260918T230527Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+n=0 recurrence vs series: True
+n=1 recurrence vs series: True
+n=2 recurrence vs series: True
+n=3 recurrence vs series: True
+n=4 recurrence vs series: True
+n=5 recurrence vs series: True
+n=6 recurrence vs series: True
+n=7 recurrence vs series: True
+n=8 recurrence vs series: True
+A_0=I feeding recurrence vs U series fails at [] (count 0)
+A_1 from series [[Fraction(0, 1), Fraction(-2, 1)], [Fraction(0, 1), Fraction(0, 1)]] (expect -V = [[Fraction(0, 1), Fraction(-2, 1)], [Fraction(0, 1), Fraction(0, 1)]])
+SUMMARY: attack-g brute force n A_n=[h0,A_{n-1}]-A_{n-1}V - with the constant identity at order zero the recurrence matches U through order 8 on a 2x2 integer pair, and U-I matches from n>=1; does not fire

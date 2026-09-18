@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-j10af",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/an_recurrence.py",
+ "seed": 73557,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8cd35381",
+ "started_utc": "20260918T231917Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-g brute force n A_n=[h0,A_{n-1}]-A_{n-1}V - with the constant identity at order zero the recurrence matches U through order 8 on a 2x2 integer pair, and U-I matches from n>=1; does not fire"
+ },
+ "review": "Attack-g: coefficient recurrence n A_n=[h0,A_{n-1}]-A_{n-1}V with A_0=I matches U series through order 8 on 2x2 integer matrices; does not fire",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): attack NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "ecb6e90d12c7aac76d5d62d6e961be1ab3a90d44583214fc15d72a62f05d8382",
+ "stdout_tail": "n=0 recurrence vs series: True\nn=1 recurrence vs series: True\nn=2 recurrence vs series: True\nn=3 recurrence vs series: True\nn=4 recurrence vs series: True\nn=5 recurrence vs series: True\nn=6 recurrence vs series: True\nn=7 recurrence vs series: True\nn=8 recurrence vs series: True\nA_0=I feeding recurrence vs U series fails at [] (count 0)\nA_1 from series [[Fraction(0, 1), Fraction(-2, 1)], [Fraction(0, 1), Fraction(0, 1)]] (expect -V = [[Fraction(0, 1), Fraction(-2, 1)], [Fraction(0, 1), Fraction(0, 1)]])\nSUMMARY: attack-g brute force n A_n=[h0,A_{n-1}]-A_{n-1}V - with the constant identity at order zero the recurrence matches U through order 8 on a 2x2 integer pair, and U-I matches from n>=1; does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j10af",
+  "at_utc": "20260918T231917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

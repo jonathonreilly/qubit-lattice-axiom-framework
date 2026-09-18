@@ -1,0 +1,5 @@
+[W1] 2464 pairs: TV/(beta |h - h'|) at most 0.249999 (bound 1/(2 sqrt3) = 0.288675), attained at beta = 0.1, h = [0.0, 0.0, 0.1], h' = [-0.0, -0.0, -0.1] (TV 4.999984e-03); largest quadrature-error estimate 1.5e-05; violations 0
+[W2] TV(P_e, P_-e) vs tanh(beta/2): beta=0.05: 0.0249949211 vs 0.0249947930 (quadrature error estimate 3.8e-07); beta=0.2886: 0.1433074403 vs 0.1433067105 (quadrature error estimate 2.2e-06); beta=1.0: 0.4621193388 vs 0.4621171573 (quadrature error estimate 6.5e-06); beta=2.0: 0.7615969835 vs 0.7615941560 (quadrature error estimate 8.5e-06); beta=5.0: 0.9866151619 vs 0.9866142982 (quadrature error estimate 2.6e-06)
+[W1ii] coefficient ratios 6/(n(2n-1)) (n = 2..400) and 3/(2n+1) (n = 1..400) exact and at most 1: True (0 exceptions)
+[time] 19s
+SUMMARY: W1 at 2464 pairs (finite field changes, beta |h| up to 12): max TV/(beta|h - h'|) = 0.2500 <= 1/(2 sqrt3) = 0.2887, 0 violations; W2's tanh(beta/2) reproduced at 5 couplings (max deviation 2.8e-06); W1(ii) ratios exact to n = 400; falsifier does not fire

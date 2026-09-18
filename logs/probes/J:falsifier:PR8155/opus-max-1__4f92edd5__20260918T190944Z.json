@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8155",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block21-unsold",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8155/w1_total_variation_response.py",
+ "seed": 58584,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4f92edd5",
+ "started_utc": "20260918T190944Z",
+ "elapsed_s": 19.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "W1 at 2464 pairs (finite field changes, beta |h| up to 12): max TV/(beta|h - h'|) = 0.2500 <= 1/(2 sqrt3) = 0.2887, 0 violations; W2's tanh(beta/2) reproduced at 5 couplings (max deviation 2.8e-06); W1(ii) ratios exact to n = 400; falsifier does not fire"
+ },
+ "review": "W1 tested on the total variation itself for finite field changes: at 2464 pairs (random, antipodal, orthogonal and parallel; beta|h| up to 12) the ratio TV(P_h, P_h')/(beta|h - h'|) never exceeds 0.2500 (attained near h = 0), below the bound 1/(2 sqrt3) = 0.2887, with quadrature errors at most 1.5e-5; W2's TV(P_e, P_-e) = tanh(beta/2) is reproduced at five couplings within the rule's own error (at most 2.8e-6); the W1(ii) coefficient ratios 6/(n(2n-1)) and 3/(2n+1) are exact and at most 1 to n = 400; the falsifier does not fire.",
+ "what": "PR #8155 ([physics-loop] admissibility-induced-law block21 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915; git show origin/physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915:<note>. Create probes/work/pr8155/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8155/<script>.py\"",
+ "stdout_sha256": "1b24e5f6ab6eb591aa6e271dd81d9025ff6fe8bd18793fc6d10d86d233ea6b51",
+ "stdout_tail": "[W1] 2464 pairs: TV/(beta |h - h'|) at most 0.249999 (bound 1/(2 sqrt3) = 0.288675), attained at beta = 0.1, h = [0.0, 0.0, 0.1], h' = [-0.0, -0.0, -0.1] (TV 4.999984e-03); largest quadrature-error estimate 1.5e-05; violations 0\n[W2] TV(P_e, P_-e) vs tanh(beta/2): beta=0.05: 0.0249949211 vs 0.0249947930 (quadrature error estimate 3.8e-07); beta=0.2886: 0.1433074403 vs 0.1433067105 (quadrature error estimate 2.2e-06); beta=1.0: 0.4621193388 vs 0.4621171573 (quadrature error estimate 6.5e-06); beta=2.0: 0.7615969835 vs 0.7615941560 (quadrature error estimate 8.5e-06); beta=5.0: 0.9866151619 vs 0.9866142982 (quadrature error estimate 2.6e-06)\n[W1ii] coefficient ratios 6/(n(2n-1)) (n = 2..400) and 3/(2n+1) (n = 1..400) exact and at most 1: True (0 exceptions)\n[time] 19s\nSUMMARY: W1 at 2464 pairs (finite field changes, beta |h| up to 12): max TV/(beta|h - h'|) = 0.2500 <= 1/(2 sqrt3) = 0.2887, 0 violations; W2's tanh(beta/2) reproduced at 5 couplings (max deviation 2.8e-06); W1(ii) ratios exact to n = 400; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T191012Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

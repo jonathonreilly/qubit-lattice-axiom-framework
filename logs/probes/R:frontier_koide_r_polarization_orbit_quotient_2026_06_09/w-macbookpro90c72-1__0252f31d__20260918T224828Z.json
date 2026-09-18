@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_r_polarization_orbit_quotient_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_r_polarization_orbit_quotient_2026_06_09.py",
+ "seed": 71708,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T224828Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2193ccc37145f367102df505122e6a9a0a32cd1dce7219015530472f4db21255",
+ "stdout_tail": "lomorphic cell Q = 2/3 to ~2e-5 (and the real cell Q = 1 is excluded by ~50%)  --  Q_PDG = 0.666661 vs 2/3 = 0.666667 (diff 6.2e-06)\n  [PASS] honest tension stated: the supplied CW/fluctuation-modulus dynamical route favors the REAL cell (r = 1, refs #2624/#2688) but does not select the readout here; the selector is the named open atom\n\n----------------------------------------------------------------------------------------\nK5: scope\n----------------------------------------------------------------------------------------\n  [PASS] NOT a derivation of r = 1/2; NOT a polarization-selector closure; NOT a mass prediction; the landed fork note's open gate remains open, SHARPENED\n  [PASS] no re-walk of refuted routes: chiral->r=1/2 (refuted), Dyson/Pfaffian det_C (refuted; landed table cross-checked verbatim above), charge-forecloses-r=1/2 (refuted)\n  [PASS] the K3 entailment is NARROW: conjugation-invariance of the doublet record readout, NOT full P2/modulus (which remains its own atom; the earlier 'P2 not Record-derivable' result concerned full modulus and is untouched)\n  [PASS] named next target (sharp, new): does orbit granularity constrain the orbit-space MEASURE class (one-complex-slot vs two-real-slot weights)? -- the precise remaining question, possibly independence-provable\n\n========================================================================================\nSUMMARY: PASS=23 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

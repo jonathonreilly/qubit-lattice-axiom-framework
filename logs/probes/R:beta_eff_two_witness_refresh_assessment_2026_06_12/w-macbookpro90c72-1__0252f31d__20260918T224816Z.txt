@@ -1,0 +1,35 @@
+beta_eff two-witness refresh assessment
+original a = 1/26244
+original c = 1/10000000
+beta_eff_minus(6) = 170/27 ~= 6.296296296296297
+beta_eff_plus(6) = 26582183/4218750 ~= 6.300961896296296
+delta beta_eff(6) = 729/156250 ~= 0.004665600000000
+R_O(beta_eff_minus(6)) ~= 0.441402699435447
+R_O(beta_eff_plus(6)) ~= 0.441694136647056
+delta R_O ~= 2.914372116087915e-04
+PASS: retained packet pins beta_eff only through beta^5 -- no-go section 1 contains the retained onset datum
+PASS: original witnesses differ first at beta^6 -- delta_beta=729/156250
+PASS: original witnesses are analytic polynomials -- exact Fraction coefficients at integer powers 1, 5, and 6
+PASS: original witnesses are strictly increasing on [0,6] -- derivatives are 1 + nonnegative beta powers for beta >= 0
+PASS: original R_O spread is positive -- delta_R_O=2.914372116087915e-04
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/beta_eff_two_witness_refresh_assessment_2026_06_12.py", line 230, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/beta_eff_two_witness_refresh_assessment_2026_06_12.py", line 172, in main
+    statuses = ledger_statuses()
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/beta_eff_two_witness_refresh_assessment_2026_06_12.py", line 84, in ledger_statuses
+    data = json.loads(LEDGER.read_text(encoding="utf-8"))
+                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json'

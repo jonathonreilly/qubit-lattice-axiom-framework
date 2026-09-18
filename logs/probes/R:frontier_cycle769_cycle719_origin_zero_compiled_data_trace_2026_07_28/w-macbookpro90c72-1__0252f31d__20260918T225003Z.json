@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle769_cycle719_origin_zero_compiled_data_trace_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle769_cycle719_origin_zero_compiled_data_trace_2026_07_28.py",
+ "seed": 71803,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T225003Z",
+ "elapsed_s": 60.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "942816e639a28f253837c3aeef1a2f42102b6b595c35295590643697c546c90b",
+ "stdout_tail": "[],\"final_decode_status\":\"decoded\",\"inverse_exact\":true,\"mode\":5,\"transitions\":[]},{\"cleanup\":{\"A0_return\":true,\"B_vacuum_return\":true,\"work_return\":true},\"final_cells\":[{\"binder\":1,\"carry\":0,\"identity\":0,\"orientation\":1,\"predecessor\":null,\"rotor\":15,\"valid\":1}],\"final_decode_status\":\"decoded\",\"inverse_exact\":true,\"mode\":6,\"transitions\":[{\"changed_data_bits\":3,\"decode_status\":\"refused\",\"decoded_cells\":[],\"kind\":\"source\",\"program_index\":0,\"step\":0},{\"changed_data_bits\":32,\"decode_status\":\"refused\",\"decoded_cells\":[],\"kind\":\"bank\",\"program_index\":1,\"step\":1},{\"changed_data_bits\":3,\"decode_status\":\"decoded\",\"decoded_cells\":[{\"binder\":1,\"carry\":0,\"identity\":0,\"orientation\":1,\"predecessor\":null,\"rotor\":15,\"valid\":1}],\"kind\":\"finalizer\",\"program_index\":125,\"step\":125}]}]}\nREPORT_JSON {\"audit\":\"unset\",\"authority\":\"none\",\"checks\":{\"declared_inputs_exact\":true,\"deterministic_trace\":true,\"expected_field_mutation_detected\":true,\"final_api_cell_exact\":true,\"five_empty_traces_exact\":true,\"full_contract\":true,\"inverse_exact_all_six\":true,\"mode6_transition_contract_exact\":true,\"register_cleanup_exact\":true,\"six_support_modes_exact\":true,\"source_bank_finalizer_deletions_active\":true},\"claim_type\":\"bounded_theorem\",\"mutations\":{\"bank\":{\"program_index\":1,\"trace_changed\":true},\"finalizer\":{\"program_index\":125,\"trace_changed\":true},\"source\":{\"program_index\":0,\"trace_changed\":true}},\"trace_sha256\":\"16266219b0e17b64e21c5089da6f82bd8f43f41cd936b3053134b969228c493e\"}\nSUMMARY {'PASS': 11, 'FAIL': 0}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

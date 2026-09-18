@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30.py",
+ "seed": 72032,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T225352Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e02f5b3e0ca4ec25cbe4ef1a73cc26cc99406a5bde7c367fae155f45c7b38ec0",
+ "stdout_tail": "t_is_input_independent\": true, \"third_live_bank_repairs_dense_identity_channel\": true}, \"claim_boundary\": \"Route-specific semantic collision and constructive one-mode repair, not a no-go or, by itself, a full compiler.\", \"dense_one_mode_discriminator\": {\"existing_two-bank_identity_channel_residual\": 0.7071067811865476, \"existing_two-bank_output_pairwise_residual\": 7.850462293418876e-17, \"registers\": \"O,I,L,aZ,aX\", \"repaired_three-bank_identity_channel_residual\": 7.771561172376096e-16, \"tested_input_states\": [\"zero\", \"one\", \"plus\", \"plus_i\"]}, \"fixture\": {\"Choi_input_half_overlap\": [9, 10, 11, 12, 13, 14], \"cells\": 1, \"claimed_live_bank\": [9, 18], \"claimed_live_registers_not_written_by_A\": [], \"encoded_bank_supply_overlap\": [15, 16, 17], \"matter\": 6, \"overlap_equals_entire_claimed_live_bank\": true, \"q\": 9, \"stage_A_written_overlap\": [9, 10, 11, 12, 13, 14, 15, 16, 17], \"stage_A_written_overlap_count\": 9}, \"report_sha256\": \"9eb12464642f8fea1919c84a084d8a355d5d7bf0d8c9d8cc8542f473c4673219\", \"status\": \"PASS\", \"verdict\": \"The landed two-register epoch has no independent live-input register: stage A writes all of [q,2q) before B (Choi initialization on its matter part and encoded-bank supply on the rest). Its Bell-character leg is therefore a self-comparison of the Choi halves, not arbitrary input injection.  A third independent live bank repairs the one-mode character channel exactly; the separate fixed-schedule runner in this package tests the conditional 9N/cell construction.\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225401Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

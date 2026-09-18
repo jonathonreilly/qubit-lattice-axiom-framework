@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_reality_type_permitted_not_forced_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_reality_type_permitted_not_forced_2026_05_30.py",
+ "seed": 71710,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T224830Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2f958d8f0f19712199167ea89ae8b4ac4e2b62460b01a446b5b964e5ef05654c",
+ "stdout_tail": "[H, Jcs] = 0 and H has 3 DISTINCT REAL eigenvalues (generic complex b) -> real measure-face compatible with 'Dirac-looking' charged leptons\n       |[H,Jcs]| = 6.3e-18; eig(H) = [0.3263 1.0537 1.62  ] (3 distinct real)\n\n========================================================================================\nF5 \u2014 the whole value reduces to b/a: per-block r=1/2 vs per-dim r=1\n========================================================================================\n[PASS] F5.1 Q=(1+2r)/3: per-block (1,1) -> r=1/2 -> Q=2/3; per-dim (1,2) -> r=1 -> Q=1\n       Q(1/2) = 2/3, Q(1) = 1; E_+=3a^2, E_perp=6|b|^2 -> r=|b|^2/a^2 the single unsourced scalar\n\n========================================================================================\nSUMMARY\n========================================================================================\n  10/10 checks passed\n\n  cpt_exact real-D = real MATRIX on a complex space: one D admits BOTH the\n    symplectic (Q=2/3) and Hermitian (Q=1) Wick faces -> necessary-not-sufficient.\n  cited complex/Dirac comparison gives the per-dim Q=1 side (substep1 independent\n    pair, substep2 central-i, cl3 complexified module). Q=2/3 is algebraically\n    coherent EXCEPT for the one field-reality / Wick-face selection.\n  => the whole charged-lepton Koide value = the single scalar b/a (r=1/2 vs r=1).\n  next path: a C3-invariant first-order Berry/WZ term B^T Jcs B-dot (writable\n    WITHOUT continuous U(1)_b, dodging C^3=I) -- is it source-generated?\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

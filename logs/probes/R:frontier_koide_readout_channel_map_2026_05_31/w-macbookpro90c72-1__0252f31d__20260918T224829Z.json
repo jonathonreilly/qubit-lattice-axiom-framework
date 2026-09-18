@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_readout_channel_map_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_readout_channel_map_2026_05_31.py",
+ "seed": 71709,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T224829Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3ef670b679b2e358c38ec144a24e5764053b0e1209f93b7b9d47140d9c52b5e8",
+ "stdout_tail": "4 - readout 'asymmetry' (r=1, dimension (1,2)): spectral 2/9 + phase\n========================================================================================\n[PASS] F4.1 finite spectral-asymmetry readout: L_3(1,2) = 2/9\n       L_3(1,2) = 2/9 = 2/9\n[PASS] F4.2 doublet phase is Q-orthogonal: Q depends only on |b|\n       Q(theta) = ['0.6667', '0.6667', '0.6667', '0.6667'] (constant in theta -> phase is independent)\n\n========================================================================================\nF5 \u2014 one operator H, three complementary readouts (not competitors)\n========================================================================================\n[PASS] F5.1 scale, Q-readout, spectral-asymmetry readout, and phase are finite projections of the same H\n       magnitudes -> scale + ratio; signs/spectral-flow -> asymmetry; phase is Q-orthogonal\n\n========================================================================================\nSUMMARY\n========================================================================================\n  7/7 checks passed\n\n  ONE generation operator H = aI + bC + b-bar C^2, finite readouts:\n    r=0   SCALE     (singlet a, generation-uniform)   -> Q=1/3 (degenerate base)\n    r=1/2 RATIO     (doublet |b|, flavor splitting)    -> Q=2/3 (Koide mass ratio)\n    r=1   ASYMMETRY (doublet sign, spectral flow)      -> 2/9  (eta / L_3)\n    (+ doublet phase is Q-orthogonal)\n\n  This is a finite bookkeeping map, not a channel-closure theorem.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

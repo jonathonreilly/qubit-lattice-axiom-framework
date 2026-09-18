@@ -1,0 +1,13 @@
+PASS c35_closed_formula_matches_declared_strata :: True
+PASS c35_fraction_form_matches_closed_formula :: True
+PASS c35_path_split_matches_closed_formula :: True
+PASS c35_strata_sum_matches_declared_total :: True
+PASS c35_total_matches_lucas_recurrence :: True
+PASS adjacent_pair_mask_census_is_exact :: True
+PASS adjacent_pair_masks_have_two_occupied_vertices :: True
+PASS adjacent_pair_masks_are_rotations_of_one_labelled_mask :: True
+PASS each_pair_has_two_occupied_endpoint_incidences :: True
+PASS occupied_endpoint_incidence_total_is_seventy :: True
+PASS note_declares_finite_graph_only_scope :: True
+{"adjacent_pair_masks":35,"claim":"c35_independent_set_census_and_adjacent_pair_incidences","cycle":756,"failed":0,"independent_set_total":20633239,"lucas_number":20633239,"occupied_endpoint_incidences":70,"pair_mask_sha256":"f1726623158a5fcfcb2677daf14ddad80c552b624f464d38745337ebefefac99","passed":11,"runtime_sec":0.001479,"stations":35,"strata":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],"terminal":"CYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS"}
+CYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS

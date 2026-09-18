@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_readout_lane_demarcation_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_readout_lane_demarcation_2026_05_30.py",
+ "seed": 71709,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T224829Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c33cab84fa0000e1bfe366026e02303191b477981ceeca5681687764861c5445",
+ "stdout_tail": " The mode structure is also what limits the residue freedom: the only residue choices that remove the amplitude dependence are the collapses that switch a mode off entirely, which destroys the three distinct masses and returns Q = 1.\n  per_block: resolved \u2014 the C_3 singlet and doublet blocks are formed explicitly and weighted separately. The singlet projector (I + C + C^2)/3 against the tracial reference returns the block weight pair (1/3, 2/3), which is the dimension count (1, 2), and the two block energies 3 a^2 and 6 b^2 are then extremized under a fixed total by Lagrange multiplier, giving r = 1/2 for the (1, 1) weighting and r = 1 for the (1, 2) weighting. That is precisely the choice the readout does not make.\n  lattice_wide: checked and not executed \u2014 there is no volume, site sum or limit, and none could help, which is the sharpest statement this runner makes. The unit readout gives Q = (1 + 2 r)/3 with dQ/dr identically equal to 2/3, a nonzero constant, so the readout lane has no stationary point in r anywhere. Aggregating a function with constant nonzero slope over any extent still leaves no extremum at r = 1/2 to be found.\n\n========================================================================\nSummary\n========================================================================\nPASS=13 FAIL=0\nReadout supplies the formula Q=(1+2r)/3 + theta-independence + signed class;\ntested readout freedoms do NOT supply r=1/2.\nThe F1-vs-F3 (1,1)-vs-(1,2) choice is the dynamics lane.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

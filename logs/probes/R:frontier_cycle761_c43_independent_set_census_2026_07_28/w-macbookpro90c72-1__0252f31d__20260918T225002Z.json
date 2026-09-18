@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle761_c43_independent_set_census_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle761_c43_independent_set_census_2026_07_28.py",
+ "seed": 71802,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T225002Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d5793b94bcd662343e7f5e17f80da018588902e96a56613e00979aca70da26f1",
+ "stdout_tail": "rence :: True\nPASS adjacent_pair_mask_census_is_exact :: True\nPASS adjacent_pair_masks_have_two_occupied_vertices :: True\nPASS adjacent_pair_masks_are_rotations_of_one_labelled_mask :: True\nPASS each_pair_has_two_occupied_endpoint_incidences :: True\nPASS occupied_endpoint_incidence_total_is_eighty_six :: True\nPASS one_edge_family_has_exact_structural_row_count :: True\nPASS one_edge_family_masks_are_pairwise_distinct :: True\nPASS one_edge_family_rows_have_declared_cardinality :: True\nPASS one_edge_family_rows_have_exactly_the_labelled_edge :: True\nPASS one_edge_family_has_exact_occupied_endpoint_incidence_total :: True\nPASS note_declares_finite_graph_only_scope :: True\n{\"adjacent_pair_masks\":43,\"claim\":\"c43_independent_set_census_and_adjacent_pair_incidences\",\"cycle\":761,\"failed\":0,\"independent_set_total\":969323029,\"lucas_number\":969323029,\"occupied_endpoint_incidences\":86,\"one_edge_mask_sha256\":\"e1292969540f7336891fe53aadbc4bad394a2106f3f53120f6b9d1f1359a1a51\",\"one_edge_masks\":860,\"one_edge_occupied_endpoint_incidences\":1720,\"one_edge_occupied_range\":[12,21],\"one_edge_phases\":[0,1],\"pair_mask_sha256\":\"60b78d32e28c99ec325399498938c5ca26a064f1da0e9212a30ff82f06397f8a\",\"passed\":16,\"runtime_sec\":0.009789,\"stations\":43,\"strata\":[1,43,860,10621,90687,567987,2701776,9970840,28915436,66335412,120609840,173376645,195747825,171655785,115000920,57500460,20764055,5167525,826804,76153,3311,43],\"terminal\":\"CYCLE761_C43_INDEPENDENT_SET_CENSUS_PASS\"}\nCYCLE761_C43_INDEPENDENT_SET_CENSUS_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225002Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle761_c43_independent_set_census_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

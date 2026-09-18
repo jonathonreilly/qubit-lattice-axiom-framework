@@ -1,0 +1,18 @@
+PASS declared_inputs_exact :: 
+PASS six_support_modes_exact :: 
+PASS five_empty_traces_exact :: 
+PASS mode6_transition_contract_exact :: 
+PASS final_landed_api_cell_exact :: 
+PASS final_packed_cell_second_route_exact :: 
+PASS register_cleanup_exact :: 
+PASS inverse_exact_all_six :: 
+PASS source_bank_finalizer_deletions_active :: 
+PASS expected_field_mutation_detected :: 
+PASS opcode_truth_tables_are_involutions :: 
+PASS hostile_full_word_inverse_exact :: 
+PASS primary_black_box_exit_zero :: 
+PASS primary_black_box_stderr_empty :: 
+PASS primary_trace_matches_independent :: 
+TRACE_JSON {"modes":[0,2,3,4,5,6],"rows":[{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":0,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":2,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":3,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":4,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":5,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[{"binder":1,"carry":0,"identity":0,"orientation":1,"predecessor":null,"rotor":15,"valid":1}],"final_decode_status":"decoded","inverse_exact":true,"mode":6,"transitions":[{"changed_data_bits":3,"decode_status":"refused","decoded_cells":[],"kind":"source","program_index":0,"step":0},{"changed_data_bits":32,"decode_status":"refused","decoded_cells":[],"kind":"bank","program_index":1,"step":1},{"changed_data_bits":3,"decode_status":"decoded","decoded_cells":[{"binder":1,"carry":0,"identity":0,"orientation":1,"predecessor":null,"rotor":15,"valid":1}],"kind":"finalizer","program_index":125,"step":125}]}]}
+REPORT_JSON {"audit":"unset","authority":"none","checks":{"declared_inputs_exact":true,"expected_field_mutation_detected":true,"final_landed_api_cell_exact":true,"final_packed_cell_second_route_exact":true,"five_empty_traces_exact":true,"hostile_full_word_inverse_exact":true,"inverse_exact_all_six":true,"mode6_transition_contract_exact":true,"opcode_truth_tables_are_involutions":true,"primary_black_box_exit_zero":true,"primary_black_box_stderr_empty":true,"primary_trace_matches_independent":true,"register_cleanup_exact":true,"six_support_modes_exact":true,"source_bank_finalizer_deletions_active":true},"mutations":{"bank":true,"finalizer":true,"source":true}}
+SUMMARY {'PASS': 15, 'FAIL': 0}

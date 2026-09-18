@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py",
+ "seed": 71710,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T224830Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b0fd889ee50d754b45e2f1c5fdd2668bf154c42966cd4da5fcf028e16a18ee3",
+ "stdout_tail": "eals, distinct from one another and with nonzero derivative in b_im, rather than a complex-conjugate pair. The contrast case is run explicitly: a non-Hermitian real circulant does produce a conjugate pair with clearly nonzero imaginary parts.\n  per_block: resolved \u2014 the singlet and doublet projectors are built and their ranks confirmed as 1 and 2, the real determinant of a block-diagonal combination is verified to factor as alpha times beta squared at three separate (alpha, beta) pairs, exhibiting the (1, 2) weighting inside a genuine real determinant, and the block Gram diag(3, 6, 6) is checked positive-definite and invariant under both the C_3 rotation and Theta.\n  lattice_wide: checked and not executed \u2014 no volume, site sum or limit is formed, and the logical shape of the claim makes one unnecessary. This is a permitted-not-forced result, established by exhibiting one explicit object, the diag(3, 6, 6) witness, that satisfies every listed constraint while carrying the (1, 2) weighting. A single surviving witness cannot be removed by extending the system; only an additional constraint could remove it, which is the open handle the note names.\n\n========================================================================\nSummary\n========================================================================\nPASS=15 FAIL=0\nThe listed real-structure constraints do NOT forbid (1,2); (1,1) is permitted-not-forced.\nRemaining open handle named by the note: SO(2)/U(1)_b doublet-frame quotient.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T224830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

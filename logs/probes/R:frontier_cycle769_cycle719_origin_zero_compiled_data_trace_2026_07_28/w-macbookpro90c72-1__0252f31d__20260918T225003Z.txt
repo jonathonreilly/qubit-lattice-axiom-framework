@@ -1,0 +1,14 @@
+PASS declared_inputs_exact :: 
+PASS six_support_modes_exact :: 
+PASS five_empty_traces_exact :: 
+PASS mode6_transition_contract_exact :: 
+PASS final_api_cell_exact :: 
+PASS register_cleanup_exact :: 
+PASS inverse_exact_all_six :: 
+PASS deterministic_trace :: 
+PASS source_bank_finalizer_deletions_active :: 
+PASS expected_field_mutation_detected :: 
+PASS full_contract :: 
+TRACE_JSON {"modes":[0,2,3,4,5,6],"rows":[{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":0,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":2,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":3,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":4,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[],"final_decode_status":"decoded","inverse_exact":true,"mode":5,"transitions":[]},{"cleanup":{"A0_return":true,"B_vacuum_return":true,"work_return":true},"final_cells":[{"binder":1,"carry":0,"identity":0,"orientation":1,"predecessor":null,"rotor":15,"valid":1}],"final_decode_status":"decoded","inverse_exact":true,"mode":6,"transitions":[{"changed_data_bits":3,"decode_status":"refused","decoded_cells":[],"kind":"source","program_index":0,"step":0},{"changed_data_bits":32,"decode_status":"refused","decoded_cells":[],"kind":"bank","program_index":1,"step":1},{"changed_data_bits":3,"decode_status":"decoded","decoded_cells":[{"binder":1,"carry":0,"identity":0,"orientation":1,"predecessor":null,"rotor":15,"valid":1}],"kind":"finalizer","program_index":125,"step":125}]}]}
+REPORT_JSON {"audit":"unset","authority":"none","checks":{"declared_inputs_exact":true,"deterministic_trace":true,"expected_field_mutation_detected":true,"final_api_cell_exact":true,"five_empty_traces_exact":true,"full_contract":true,"inverse_exact_all_six":true,"mode6_transition_contract_exact":true,"register_cleanup_exact":true,"six_support_modes_exact":true,"source_bank_finalizer_deletions_active":true},"claim_type":"bounded_theorem","mutations":{"bank":{"program_index":1,"trace_changed":true},"finalizer":{"program_index":125,"trace_changed":true},"source":{"program_index":0,"trace_changed":true}},"trace_sha256":"16266219b0e17b64e21c5089da6f82bd8f43f41cd936b3053134b969228c493e"}
+SUMMARY {'PASS': 11, 'FAIL': 0}

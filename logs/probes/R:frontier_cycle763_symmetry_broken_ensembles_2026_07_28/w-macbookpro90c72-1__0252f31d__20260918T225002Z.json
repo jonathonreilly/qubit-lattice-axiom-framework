@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle763_symmetry_broken_ensembles_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py",
+ "seed": 71802,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0252f31d",
+ "started_utc": "20260918T225002Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "057d83b988abfec759cdcf3acb6a3cee95e5079452196b8f3d15fad7ec7e0e02",
+ "stdout_tail": "r_l1\":{\"decimal\":\"0.549991577709215\",\"exact\":\"56717881451262799/103125000000000000\"},\"comparator_tv\":{\"decimal\":\"0.274995788854608\",\"exact\":\"56717881451262799/206250000000000000\"},\"coordinate_row\":1,\"counts\":[97,1,232],\"simplex\":[\"97/330\",\"1/330\",\"116/165\"],\"simplex_sum\":\"1\",\"uniform_l1\":{\"decimal\":\"0.739393939393939\",\"exact\":\"122/165\"},\"uniform_tv\":{\"decimal\":\"0.369696969696970\",\"exact\":\"61/165\"}},{\"closer_to_comparator\":false,\"comparator_l1\":{\"decimal\":\"0.838916369689298\",\"exact\":\"1528400761027690551/1821875000000000000\"},\"comparator_tv\":{\"decimal\":\"0.419458184844649\",\"exact\":\"1528400761027690551/3643750000000000000\"},\"coordinate_row\":2,\"counts\":[432,146,5],\"simplex\":[\"432/583\",\"146/583\",\"5/583\"],\"simplex_sum\":\"1\",\"uniform_l1\":{\"decimal\":\"0.815323041738136\",\"exact\":\"1426/1749\"},\"uniform_tv\":{\"decimal\":\"0.407661520869068\",\"exact\":\"713/1749\"}}],\"pass\":true,\"permutation_rows\":[{\"all_three_closer\":false,\"closer_to_comparator\":[false,true,false],\"permutation\":[0,1,2]},{\"all_three_closer\":false,\"closer_to_comparator\":[false,false,true],\"permutation\":[0,2,1]},{\"all_three_closer\":false,\"closer_to_comparator\":[true,true,false],\"permutation\":[1,0,2]},{\"all_three_closer\":false,\"closer_to_comparator\":[false,false,true],\"permutation\":[1,2,0]},{\"all_three_closer\":false,\"closer_to_comparator\":[true,false,false],\"permutation\":[2,0,1]},{\"all_three_closer\":false,\"closer_to_comparator\":[false,true,true],\"permutation\":[2,1,0]}],\"terminal\":\"CYCLE763_CONDITIONAL_FINITE_VECTOR_PERMUTATION_PASS\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225002Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

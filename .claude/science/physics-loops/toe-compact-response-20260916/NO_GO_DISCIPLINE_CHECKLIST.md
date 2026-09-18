@@ -1,0 +1,5 @@
+# Negative-claim discipline
+
+This is a positive conditional packet with open physical identifications, not a no-go submission. N1: actual alternatives and failed calculations are in the approach registry and failed-source evidence; no five-route impossibility claim is manufactured. N2: the analytic and geometric parts share supplied-model premises and are not counted as independent physical walls. N3: compact links, lift, domain, time discretization, coupling and comparison modification are explicit. N4: finite checks use the stated objects or label their static/finite analogues. N5: no finite check executes an infinite-volume theorem. N6: exact winding weights, direct response and native matching remain positive routes. N7: the strongest objection is the unproved normalized compact comparison, which is explicitly left open. N8: this adds the C3/operator join missing from8164 and geometry beyond8165, without retiring their review obligations.
+
+No formal N-gate certificate is claimed. If later canonical registration requires one, its exact validator obligations remain pending. This checklist supplies no independent scientific verdict.

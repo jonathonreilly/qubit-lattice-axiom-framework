@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_replication_rate.py", line 171, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_replication_rate.py", line 165, in main
+    covariance=covariance_checks(),replication=replication_checks(),
+                                               ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_replication_rate.py", line 112, in replication_checks
+    assert np.max(abs(big@phi-phi@small))<1e-13
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

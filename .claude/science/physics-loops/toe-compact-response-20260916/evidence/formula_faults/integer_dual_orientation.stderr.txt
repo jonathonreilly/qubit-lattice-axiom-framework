@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_dual_orientation.py", line 221, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_dual_orientation.py", line 215, in main
+    hodge=hodge_checks(),witness_geometry=witness_geometry(),constants=numerical_constants(),
+          ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/integer_dual_orientation.py", line 140, in hodge_checks
+    assert derivative==three
+           ^^^^^^^^^^^^^^^^^
+AssertionError

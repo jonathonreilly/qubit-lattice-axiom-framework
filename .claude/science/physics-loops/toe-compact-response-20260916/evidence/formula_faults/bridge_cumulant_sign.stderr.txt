@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_cumulant_sign.py", line 169, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_cumulant_sign.py", line 163, in main
+    scope=__doc__,time_precision=time_precision(),single_face=one_face_checks(),
+                                                              ~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/bridge_cumulant_sign.py", line 65, in one_face_checks
+    assert abs(b64['cubic']-q48['cubic'])<5e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

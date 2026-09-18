@@ -1,0 +1,45 @@
+{
+  "slug": "toe-compact-response-20260916",
+  "status": "draft_checkpoint_personal_review_complete",
+  "actual_current_surface_status": "conditional-support",
+  "created_utc": "2026-09-16T10:29:23.858310+00:00",
+  "deadline_utc": "2026-09-16T13:45:03Z",
+  "base_main": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "planning_revision": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "branch": "physics-loop/toe-compact-response-20260916",
+  "previous_pr": 8165,
+  "previous_head": "c228dbcfc0a6b71639316915f460c32dbf479723",
+  "agents": "none; user requires personal execution",
+  "active_target": "Source derivative control and smooth-field/current matching for the actual compact Hamiltonian kernel",
+  "next_action": "After verified push and checkout cleanup, continue personally on exact compact winding weights and normalized source matching until 2026-09-16T13:45:03Z.",
+  "strongest_unresolved_proof_obligation": "Uniform fixed-g transverse response or full physical-source phase in growing spatial volume",
+  "written_notes": [
+    "BRIDGE_CUBIC_SOURCE_BOUND.md",
+    "CONVEX_EXTENSION_OF_LIFTED_KERNEL.md",
+    "SPARSE_INTEGER_FILLINGS_AND_REAL_LIFTS.md",
+    "GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md"
+  ],
+  "primary_checks_completed": [
+    "bridge_cubic_check.py ATTEMPT2",
+    "convex_carrier_check.py ATTEMPT2",
+    "integer_filling_check.py ATTEMPT3",
+    "magnetic_covariance_check.py ATTEMPT1"
+  ],
+  "preserved_failures": [
+    "integer_filling_check.py ATTEMPT1: wrong Hodge sign in checker; corrected using explicit oriented unit-face boundary, original source and diagnostic preserved"
+  ],
+  "review_status": "personal checks only; no independent review",
+  "latest_main_observed": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "latest_main_delta": "Automated audit/generated refresh only; used science and workflow sources unchanged. Base remains pinned e0ef7.",
+  "formula_faults": "12 rejected on retry2; first harness infrastructure failure preserved",
+  "verification": {
+    "primary_programs": 4,
+    "formula_faults_rejected": 12,
+    "compiled_python": 29,
+    "markdown": 21,
+    "relative_links": 24,
+    "independent_review": false,
+    "canonical_caches": false,
+    "integrated_landing_pipeline": false
+  }
+}

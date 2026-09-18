@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_positive_majorant.py", line 171, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_positive_majorant.py", line 166, in main
+    majorant=positive_majorant_checks(),status='PERSONAL_CHECKS_COMPLETED')
+             ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/formula_faults/magnetic_positive_majorant.py", line 133, in positive_majorant_checks
+    assert major.min()>=0 and W.min()>-1e-14
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

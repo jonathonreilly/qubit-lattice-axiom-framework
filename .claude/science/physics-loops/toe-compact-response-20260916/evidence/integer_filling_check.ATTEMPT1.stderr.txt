@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/integer_filling_check.py", line 190, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/integer_filling_check.py", line 184, in main
+    hodge=hodge_checks(),constants=numerical_constants(),
+          ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-response-20260916/.claude/science/physics-loops/toe-compact-response-20260916/evidence/integer_filling_check.py", line 140, in hodge_checks
+    assert derivative==three
+           ^^^^^^^^^^^^^^^^^
+AssertionError

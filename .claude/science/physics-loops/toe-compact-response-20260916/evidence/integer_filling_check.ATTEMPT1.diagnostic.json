@@ -1,0 +1,6 @@
+{
+  "source_sha256": "add23751eb93322ed63ecdd1ed61d2ce0a04bdd51a4b4370a53076ea2c2e8ccb",
+  "derivative": "{((0, 1, 0, 0), (0, 2, 3)): 1, ((1, 0, 0, 0), (1, 2, 3)): 1, ((1, 1, 0, 0), (0, 2, 3)): -1, ((1, 1, 0, 0), (1, 2, 3)): -1}",
+  "dual_boundary": "{((1, 1, 0, 0), (0, 2, 3)): 1, ((0, 1, 0, 0), (0, 2, 3)): -1, ((1, 1, 0, 0), (1, 2, 3)): 1, ((1, 0, 0, 0), (1, 2, 3)): -1}",
+  "diagnosis": "The selected primal/dual orientation gives d I_2(Q) = -I_3(boundary Q), not plus. This is the sign required for dm_dagger=-J."
+}

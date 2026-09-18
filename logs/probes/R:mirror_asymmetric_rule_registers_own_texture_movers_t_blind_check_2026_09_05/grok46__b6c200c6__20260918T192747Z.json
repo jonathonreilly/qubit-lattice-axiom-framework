@@ -1,0 +1,35 @@
+{
+ "task": "R:mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "mirror",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05.py",
+ "seed": 59667,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6c200c6",
+ "started_utc": "20260918T192747Z",
+ "elapsed_s": 9.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b0bf33185fb248f4baa9f4a303e8258a0cb268b3df6eeb8778c3ca935c98615c",
+ "stdout_tail": " the same control: rule and mirror rule on the two sublattices of the slab give Delta = 2.2e-16 for both mover types, |chi| <= 1.3e-15; on the 6^3 torus a 2x2x4 column with a z-wall keeps |chi| <= 1.1e-15, through-plane partners 2.2e-16, perpendicular +2.28e-02, +2.89e-02, -7.58e-02\nPASS H1 actual slab current maximizer is a wavepacket, not an energy eigenvector: E 1.707106781187 residual 0.292893218813\nPASS H2 complex Slater amplitudes obey fixed-basis conjugation; tick completion mass is explicit\nTICK_COMPLETION_MASS {'cases': 480, 'minimum': 0.7866195120773589, 'maximum': 1.0000000000000004, 'lost_minimum': -4.440892098500626e-16, 'lost_maximum': 0.21338048792264108, 'convention': 'zero at dead prefixes, normalize final law conditional on completion'}\nSUMMARY: Finite chiral tables, fixed-basis DPP conjugation and supplied static/tick/wall examples. No physical time-reversal or universal handed-mode exclusion.\nper_element: the actual finite algebra and counterexample values are exercised; no physical input is derived.\nper_site: only the stated local menus or site-summed observables are measured; permanent formation is supplied.\nper_mode: selected finite eigenvectors and returned subspaces only; no complete infinite spectrum is claimed.\nper_block: the declared finite boxes, schedules and full small counters are checked at their stated tolerances.\nlattice_wide: no infinite-volume, general-index, universal physical no-go or asymptotic claim is certified.\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T192805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

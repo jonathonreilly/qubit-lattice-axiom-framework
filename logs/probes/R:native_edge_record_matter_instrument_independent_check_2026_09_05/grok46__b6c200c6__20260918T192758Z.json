@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_matter_instrument_independent_check_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/native_edge_record_matter_instrument_independent_check_2026_09_05.py",
+ "seed": 59678,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6c200c6",
+ "started_utc": "20260918T192758Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "28ffafe338018d15805551a9bf933e23a871605a8858120b91b988b982894e3a",
+ "stdout_tail": "PASS direct_dictionary: square/path dictionaries, full tree algebra, and length-6 phase verified\nPASS nonbridge_instrument: fair physical Z branches and faithful full surviving CAR algebra verified\nPASS bridge_and_history: 2+2, 1+3, deterministic, zero, and signed old-boundary branches verified\nPASS uniform_history_moments: 384 actual edge/outcome histories obey uniform mean, second moment, variance, N, and Records\nPASS bipartite_energy_bound: square/path verify E0<=-L t/d from pairing, trace square, and row-sum norm\nPASS placement_and_support: cubic placement has 11-site union, radius 2, diameter 4, and one-site Record\nPASS shared_battery_native_history: integer native square lift reuses one correlated battery for two events; conditional_matter_distance=5.194e-01, full_history_distance=5.194e-01, purity=0.600000\nPASS fibre_moment_identity: first/second fibre identities hold at q=4,3,2 and on a correlated input\nPASS source_contract: AST import/write firewall and execution envelope verified; bytes=66090\nsource_sha256=ebfef71248595e1cf621ee0464622fbc1d104f8028595d5334a30eab2ad314df\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T192805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

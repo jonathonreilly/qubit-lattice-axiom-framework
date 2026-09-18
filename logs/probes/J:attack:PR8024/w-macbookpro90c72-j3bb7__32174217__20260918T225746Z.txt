@@ -1,0 +1,24 @@
+L=1: vertices 1 triangles 0
+  whole-group 0 (want 0); indiv 0 (want 0)
+  open L=1: edges 12 want 12; faces 6 want 6
+L=2: vertices 8 triangles 0
+  whole-group 3 (want 3); indiv 6 (want 6)
+  open L=2: edges 54 want 54; faces 36 want 36
+L=3: vertices 27 triangles 0
+  whole-group 24 (want 24); indiv 36 (want 36)
+  open L=3: edges 144 want 144; faces 108 want 108
+L=4: vertices 64 triangles 0
+  whole-group 81 (want 81); indiv 108 (want 108)
+  open L=4: edges 300 want 300; faces 240 want 240
+L=5: vertices 125 triangles 0
+  whole-group 192 (want 192); indiv 240 (want 240)
+  open L=5: edges 540 want 540; faces 450 want 450
+L=6: vertices 216 triangles 0
+  whole-group 375 (want 375); indiv 450 (want 450)
+Casimir (p,q)=(0,0): C=0 K_e=0 E=0
+Casimir (p,q)=(1,0): C=8/3 K_e=8/5 E=8/5
+Casimir (p,q)=(0,1): C=8/3 K_e=8/5 E=8/5
+Casimir (p,q)=(1,1): C=6 K_e=18/5 E=18/5
+Casimir (p,q)=(2,0): C=20/3 K_e=4 E=4
+Casimir (p,q)=(3,1): C=50/3 K_e=10 E=10
+SUMMARY: pattern (a) WITNESS REALIZABILITY; cube graphs are triangle-free 4-cycle plaquette complexes; whole-group/indiv/open-box counts match 3(L-1)^3, 3L(L-1)^2 and 3L(L+1)^2 through L=6; K_e=(3/(2a))C equals E=(p^2+pq+q^2+3p+3q)/a

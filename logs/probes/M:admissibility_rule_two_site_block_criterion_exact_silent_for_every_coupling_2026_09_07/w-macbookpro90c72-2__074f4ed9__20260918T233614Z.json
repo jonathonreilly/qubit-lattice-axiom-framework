@@ -1,0 +1,69 @@
+{
+ "task": "M:admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "for m in $(python3 scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 74574,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "074f4ed9",
+ "started_utc": "20260918T233614Z",
+ "elapsed_s": 1210.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "expected": [
+   "B",
+   "B",
+   "B",
+   "B",
+   "C",
+   "C",
+   "C",
+   "C",
+   "B",
+   "C",
+   "C",
+   "D",
+   "D",
+   "E",
+   "E",
+   "E",
+   "E"
+  ],
+  "observed": [
+   "B",
+   "B",
+   "B",
+   "B",
+   "C",
+   "C",
+   "C",
+   "C",
+   "B",
+   "C",
+   "C",
+   "D",
+   "D",
+   "E",
+   "E",
+   "E",
+   "E"
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "b135a9746012797012eb3f2faf2432a7395b6e61aee309567f200be5d00720be",
+ "stdout_tail": "ly_observed: B\nTOTAL: PASS=21 FAIL=1\n== sequential_upper_bound_forged\nmutation_family_expected: B\nmutation_family_observed: B\nTOTAL: PASS=21 FAIL=1\n== rho_literal_off\nmutation_family_expected: C\nmutation_family_observed: C\nTOTAL: PASS=21 FAIL=1\n== rho_prime_literal_off\nmutation_family_expected: C\nmutation_family_observed: C\nTOTAL: PASS=21 FAIL=1\n== ratio_bounded_by_one_claimed\nmutation_family_expected: C\nmutation_family_observed: C\nTOTAL: PASS=21 FAIL=1\n== block_sum_literal_off\nmutation_family_expected: C\nmutation_family_observed: C\nTOTAL: PASS=21 FAIL=1\n== optimal_coupling_not_optimal\nmutation_family_expected: B\nmutation_family_observed: B\nTOTAL: PASS=21 FAIL=1\n== region_upper_bound_forged\nmutation_family_expected: C\nmutation_family_observed: C\nTOTAL: PASS=21 FAIL=1\n== c1_literal_off\nmutation_family_expected: C\nmutation_family_observed: C\nTOTAL: PASS=21 FAIL=1\n== crossing_cell_wrong\nmutation_family_expected: D\nmutation_family_observed: D\nTOTAL: PASS=21 FAIL=1\n== ratio_beyond_one_denied\nmutation_family_expected: D\nmutation_family_observed: D\nTOTAL: PASS=21 FAIL=1\n== claim_two_site_decides\nmutation_family_expected: E\nmutation_family_observed: E\nTOTAL: PASS=21 FAIL=1\n== claim_nonunique_at_silent\nmutation_family_expected: E\nmutation_family_observed: E\nTOTAL: PASS=21 FAIL=1\n== claim_phase_transition\nmutation_family_expected: E\nmutation_family_observed: E\nTOTAL: PASS=21 FAIL=1\n== claim_author_in_theorem\nmutation_family_expected: E\nmutation_family_observed: E\nTOTAL: PASS=21 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T235624Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

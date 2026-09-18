@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8157/p2c_bond_sum_all_sites.py",
+ "seed": 57833,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "94ba9392",
+ "started_utc": "20260918T185713Z",
+ "elapsed_s": 23.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "P2(c) evaluated bond by bond at 44815 plane pairs (43620 non-integer R) and 14500 torus triples: 0 violations; largest ratio of the bond sum to 2 gamma^2 cosh(gamma)(1 + 8 H_R) = 0.1418; falsifier does not fire"
+ },
+ "review": "P2(c)'s bond-sum inequality evaluated bond by bond holds at all 44815 (site, gamma) pairs on Z^2 with 1 <= d(x) <= 150 (43620 with non-integer R, where the proof's 'j < R + 1, i.e. j <= R' step is not literal) and all 14500 torus triples up to L = 64, with the largest ratio of left to right 0.142, so the falsifier does not fire; INFO: P3's final bound (3/2)e^{9/16}(1 + d)^{-kappa} is below 1 only from 1 + d > 10^{0.84} at beta = 5/256, 10^{4.3} at beta = 0.1 and 10^{43} at beta = 1.",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "87f2e356d29c7c56b41316185fb805e7d79f6fb41c95e7cde57125f9f8e6a66e",
+ "stdout_tail": "[plane] 44815 (site, gamma) pairs with 1 <= d(x) <= 150 (43620 with non-integer R), gamma in (0.01, 0.1, 0.5, 1.0, 2.0): violations 0; largest ratio left/right = 0.141842 at x = (109, 103), gamma = 0.01, R = 149.9667 (left 1.295822e-03, right 9.135679e-03)\n[torus] 14500 (L, site, gamma) triples on (Z/2LZ)^2, L in (8, 16, 32, 64): violations 0; largest ratio 0.133202 at L = 64, x = (64, 16), gamma = 0.01, R = 65.9697\n[INFO] P3's bound (3/2) e^(9/16) (1 + d)^(-kappa(beta)) is below 1 only from a distance: beta=0.005: kappa=0.87200, bound < 1 from 1 + d > 10^0.48; beta=0.0195312: kappa=0.50000, bound < 1 from 1 + d > 10^0.84; beta=0.05: kappa=0.19531, bound < 1 from 1 + d > 10^2.15; beta=0.1: kappa=0.09766, bound < 1 from 1 + d > 10^4.30; beta=0.5: kappa=0.01953, bound < 1 from 1 + d > 10^21.52; beta=1: kappa=0.00977, bound < 1 from 1 + d > 10^43.05; beta=5: kappa=0.00195, bound < 1 from 1 + d > 10^215.24\n[time] 23s\nSUMMARY: P2(c) evaluated bond by bond at 44815 plane pairs (43620 non-integer R) and 14500 torus triples: 0 violations; largest ratio of the bond sum to 2 gamma^2 cosh(gamma)(1 + 8 H_R) = 0.1418; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T185747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

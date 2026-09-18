@@ -1,0 +1,5 @@
+[plane] 44815 (site, gamma) pairs with 1 <= d(x) <= 150 (43620 with non-integer R), gamma in (0.01, 0.1, 0.5, 1.0, 2.0): violations 0; largest ratio left/right = 0.141842 at x = (109, 103), gamma = 0.01, R = 149.9667 (left 1.295822e-03, right 9.135679e-03)
+[torus] 14500 (L, site, gamma) triples on (Z/2LZ)^2, L in (8, 16, 32, 64): violations 0; largest ratio 0.133202 at L = 64, x = (64, 16), gamma = 0.01, R = 65.9697
+[INFO] P3's bound (3/2) e^(9/16) (1 + d)^(-kappa(beta)) is below 1 only from a distance: beta=0.005: kappa=0.87200, bound < 1 from 1 + d > 10^0.48; beta=0.0195312: kappa=0.50000, bound < 1 from 1 + d > 10^0.84; beta=0.05: kappa=0.19531, bound < 1 from 1 + d > 10^2.15; beta=0.1: kappa=0.09766, bound < 1 from 1 + d > 10^4.30; beta=0.5: kappa=0.01953, bound < 1 from 1 + d > 10^21.52; beta=1: kappa=0.00977, bound < 1 from 1 + d > 10^43.05; beta=5: kappa=0.00195, bound < 1 from 1 + d > 10^215.24
+[time] 23s
+SUMMARY: P2(c) evaluated bond by bond at 44815 plane pairs (43620 non-integer R) and 14500 torus triples: 0 violations; largest ratio of the bond sum to 2 gamma^2 cosh(gamma)(1 + 8 H_R) = 0.1418; falsifier does not fire

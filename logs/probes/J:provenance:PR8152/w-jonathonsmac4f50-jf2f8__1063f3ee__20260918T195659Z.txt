@@ -1,0 +1,15 @@
+PR #8152 head 70f28178c4; cache 28 stdout lines; statement sections: claim_scope, Theorem M1, Theorem M2, Theorem M3, Theorem M4, Theorem M5
+[CACHE] M3sizes | claim_scope | M3 orbit sizes | cache stdout line 14: PASS: C1 M3: the 24 proper rotations of the cube; orbit sizes and stabilizer orders (6,4), (8,3), (12,2), (24,1), (24,1) for the axis, diago
+[CACHE] M3orbits | Theorem M3 | M3 orbits and stabilizers | cache stdout line 14: PASS: C1 M3: the 24 proper rotations of the cube; orbit sizes and stabilizer orders (6,4), (8,3), (12,2), (24,1), (24,1) for the axis, diago
+[DERIVED] M3smallest | claim_scope,Theorem M3 | M3 smallest menu | the 24 signed permutations of det 1: axis points of the 23 non-identity rotations number 26 = 6 + 8 + 12 in three orbits with (size, stabilizer) (6,4), (8,3), (12,2); a point off the axes has orbit 24; the only orbit of size 6 is the axes, so the six-axis menu is the unique smallest nontrivial union of orbits (sympy, exact)
+[CACHE] M3exec24 | claim_scope,Theorem M3 | M3 executed (C1) | cache stdout line 14: PASS: C1 M3: the 24 proper rotations of the cube; orbit sizes and stabilizer orders (6,4), (8,3), (12,2), (24,1), (24,1) for the axis, diago
+[CACHE] M3exec5 | Theorem M3 | M3 executed (C1, the five sample directions) | cache stdout line 23: per_site: executed — the five sample directions' orbits and stabilizers
+[CACHE] M3exec2 | Theorem M3 | M3 executed (C2) | cache stdout line 15: PASS: C2 M3: the six axes, the eight diagonals, the twelve edge directions and their unions are invariant; three axes plus one diagonal are 
+[CACHE] M1exec | Theorem M1 | M1 executed (B1) | cache stdout line 12: PASS: B1 M1: a rational rotation about the pole (cosine 3/5) fixes the pole and moves the unit point (3/5, 0, 4/5) through 12 distinct posit
+[RUNNER] M1sine | Theorem M1 | M1's rotation sine (runner source) | present and checked in the runner source (not printed)
+[EXCLUDED] M2range | Theorem M2 | structural: the inner product of two non-collinear unit vectors ranges over (-1, 1)
+[CACHE] M5 | claim_scope,Theorem M5 | M5 (D2) | cache stdout line 17: PASS: D2 M5: the Born overlap (1 + s.q)/2 equals 1 at s = q and 0 at s = -q: deterministic copying on the antipodal pair
+[CACHE] M4exec | Theorem M4 | M4 executed (D1) | cache stdout line 16: PASS: D1 M4: on a path of five with the antipodal support every record is +/- the symbolic seed (32 patterns), i.e. on the seed's axis
+[EXCLUDED] words | claim_scope,Theorem M1,Theorem M2,Theorem M4,Theorem M5 | wording, conditions and notation (number words; the group SO(3))
+[COVERAGE] 45 numeric tokens in the statement text; uncovered 0
+SUMMARY: 12 items over claim_scope + 5 theorem sections (45 numeric tokens, 0 uncovered): cache-sourced 8, runner-checked (not printed) 1, derived here from the note's formulas 1, definitions 0, excluded 2; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

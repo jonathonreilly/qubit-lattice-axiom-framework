@@ -1,0 +1,9 @@
+claim_scope ranges: {6: (Decimal('0.83'), Decimal('0.89')), 12: (Decimal('0.90'), Decimal('0.94')), 24: (Decimal('0.94'), Decimal('0.97'))}
+beta=6: shells [('[0,0.3)', '0.8304'), ('[0.3,0.6)', '0.8549'), ('[0.6,1.0)', '0.8605'), ('[1.0,1.5)', '0.8699'), ('[1.5,2.2)', '0.8780'), ('[2.2,3.2)', '0.8843'), ('[3.2,5.0)', '0.8873')]
+  min 0.8304 max 0.8873; stated 0.83-0.89; in_range=True; monotone=True
+beta=12: shells [('[0,0.3)', '0.8975'), ('[0.3,0.6)', '0.9477'), ('[0.6,1.0)', '0.9343'), ('[1.0,1.5)', '0.9335'), ('[1.5,2.2)', '0.9362'), ('[2.2,3.2)', '0.9376'), ('[3.2,5.0)', '0.9379')]
+  min 0.8975 max 0.9477; stated 0.90-0.94; in_range=False; monotone=False
+beta=24: shells [('[0,0.3)', '0.9397'), ('[0.3,0.6)', '0.9714'), ('[0.6,1.0)', '0.9671'), ('[1.0,1.5)', '0.9675'), ('[1.5,2.2)', '0.9663'), ('[2.2,3.2)', '0.9664'), ('[3.2,5.0)', '0.9668')]
+  min 0.9397 max 0.9714; stated 0.94-0.97; in_range=False; monotone=False
+HIT: confirmed - beta=12 control 0.8975..0.9477 vs stated 0.90-0.94; beta=12 shell ratios not increasing in |k|; beta=24 control 0.9397..0.9714 vs stated 0.94-0.97; beta=24 shell ratios not increasing in |k|
+SUMMARY: confirmed control mismatch: beta=12 control 0.8975..0.9477 vs stated 0.90-0.94; beta=12 shell ratios not increasing in |k|; beta=24 control 0.9397..0.9714 vs stated 0.94-0.97; beta=24 shell ratios not increasing in |k|

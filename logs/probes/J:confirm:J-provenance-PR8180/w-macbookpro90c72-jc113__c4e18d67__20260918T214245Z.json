@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-provenance-PR8180",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-jc113",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8180/shell_ratios.py",
+ "seed": 67765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c4e18d67",
+ "started_utc": "20260918T214245Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed control mismatch: beta=12 control 0.8975..0.9477 vs stated 0.90-0.94; beta=12 shell ratios not increasing in |k|; beta=24 control 0.9397..0.9714 vs stated 0.94-0.97; beta=24 shell ratios not increasing in |k|"
+ },
+ "review": "Independent Decimal parse of kernel_sim shells: beta=12 is 0.8975-0.9477 vs stated 0.90-0.94 and not monotone in |k|; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:provenance:PR8180/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "2a0f02d913498a1545aadc94750dfae1554b9419e023260cbabe5ea02ce17f17",
+ "stdout_tail": "claim_scope ranges: {6: (Decimal('0.83'), Decimal('0.89')), 12: (Decimal('0.90'), Decimal('0.94')), 24: (Decimal('0.94'), Decimal('0.97'))}\nbeta=6: shells [('[0,0.3)', '0.8304'), ('[0.3,0.6)', '0.8549'), ('[0.6,1.0)', '0.8605'), ('[1.0,1.5)', '0.8699'), ('[1.5,2.2)', '0.8780'), ('[2.2,3.2)', '0.8843'), ('[3.2,5.0)', '0.8873')]\n  min 0.8304 max 0.8873; stated 0.83-0.89; in_range=True; monotone=True\nbeta=12: shells [('[0,0.3)', '0.8975'), ('[0.3,0.6)', '0.9477'), ('[0.6,1.0)', '0.9343'), ('[1.0,1.5)', '0.9335'), ('[1.5,2.2)', '0.9362'), ('[2.2,3.2)', '0.9376'), ('[3.2,5.0)', '0.9379')]\n  min 0.8975 max 0.9477; stated 0.90-0.94; in_range=False; monotone=False\nbeta=24: shells [('[0,0.3)', '0.9397'), ('[0.3,0.6)', '0.9714'), ('[0.6,1.0)', '0.9671'), ('[1.0,1.5)', '0.9675'), ('[1.5,2.2)', '0.9663'), ('[2.2,3.2)', '0.9664'), ('[3.2,5.0)', '0.9668')]\n  min 0.9397 max 0.9714; stated 0.94-0.97; in_range=False; monotone=False\nHIT: confirmed - beta=12 control 0.8975..0.9477 vs stated 0.90-0.94; beta=12 shell ratios not increasing in |k|; beta=24 control 0.9397..0.9714 vs stated 0.94-0.97; beta=24 shell ratios not increasing in |k|\nSUMMARY: confirmed control mismatch: beta=12 control 0.8975..0.9477 vs stated 0.90-0.94; beta=12 shell ratios not increasing in |k|; beta=24 control 0.9397..0.9714 vs stated 0.94-0.97; beta=24 shell ratios not increasing in |k|\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc113",
+  "at_utc": "20260918T214252Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent Decimal parse of kernel_sim shells: beta=12 0.8975-0.9477 vs 0.90-0.94, not monotone in |k|; same defect the finder logged",
+  "by": "w-macbookpro90c72-jc113",
+  "at_utc": "20260918T214252Z"
+ }
+}

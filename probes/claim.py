@@ -23,7 +23,8 @@ R_SHARD = 20           # runner re-executions per unit
 F_SEEDS, F_BLOCK = 200, 20
 S_SEEDS, S_BOXES, S_MINUTES = 200, ["", "5x5x8"], 30
 PRIORITY = ["P", "R", "M", "F", "X", "S"]      # the loop's order; J is claimed by hand
-J_ORDER = ["J-confirm", "J-attack", "J-falsifier", "J-provenance"]      # inside kind J: confirmations of hits first
+J_ORDER = ["J-confirm", "J-attack-g", "J-attack-a", "J-attack-b", "J-attack", "J-falsifier", "J-provenance", "J-note"]      # inside kind J: confirmations first, then the attack patterns by their yield so far
+KIND_WEIGHT = {"P": 8, "R": 4, "M": 4, "F": 2, "X": 3, "S": 2}      # the loop draws the kind at random with these weights, so cheap kinds do not starve behind a long one
 
 GIT_CWD = ROOT if os.path.exists(os.path.join(ROOT, ".git")) else os.getcwd()
 def git(*a, cwd=None, check=True, env=None, quiet=False):
@@ -73,11 +74,24 @@ def units(tasks, idx=None):
         for g, point in enumerate(t.get("grid", [])):
             out.append({"unit": "X-" + safe(t["id"][2:]) + f"-g{g+1:02d}", "kind": "X", "fresh": False, "runs": [{"task": t["id"], "extra": point["extra"], "box": point.get("box", "")}]})
     for t in tasks:
-        if t["id"].startswith("J:") and ":PR" in t["id"]: out.append({"unit": "J-" + safe(t["id"][2:]), "kind": "J", "runs": [{"task": t["id"]}], "fresh": False})
+        if t["id"].startswith("J:") and (":PR" in t["id"] or t["id"].startswith("J:note:")): out.append({"unit": "J-" + safe(t["id"][2:]), "kind": "J", "runs": [{"task": t["id"]}], "fresh": False})
     # derived units: every hit on a judgment or search task that no reader has triaged as a false positive gets ONE independent confirmation
-    for tid, logs in idx.items():
+    def defect_class(tid):      # executed-number defects are found by provenance audits AND by attack pattern (c): one confirmation per PR is enough
+        revs = " ".join(l.get("review", "") for l in idx.get(tid, []) if l.get("hit"))
+        return "executed" if tid.startswith("J:provenance") or re.search(r"\(c\)|EXECUTED NUMBERS", revs) else tid
+    def pr_of(tid):
+        m = re.search(r"PR(\d+)$", tid); return m.group(1) if m else tid
+    confirmed = set()
+    for tid in idx:
+        if tid and tid.startswith("J:confirm:"):
+            src = next((t for t in idx if t and safe(t) == tid[len("J:confirm:"):]), None)
+            if src: confirmed.add((pr_of(src), defect_class(src)))
+    for tid, logs in sorted(idx.items(), key=lambda kv: str(kv[0])):
         if tid and tid[:2] in ("J:", "S:") and not tid.startswith("J:confirm:"):
             hits = [l for l in logs if l.get("hit") and l.get("verdict") != "false-positive"]
+            key = (pr_of(tid), defect_class(tid))
+            if hits and key in confirmed and not idx.get("J:confirm:" + safe(tid)): continue      # the same defect on the same PR already has its confirmation
+            if hits: confirmed.add(key)
             if hits: out.append({"unit": "J-confirm-" + safe(tid), "kind": "J", "fresh": False, "runs": [{"task": "J:confirm:" + safe(tid)}], "finder_families": sorted({fam(l.get("model")) for l in hits} - {""})})
     return out
 def fam(model):
@@ -89,7 +103,7 @@ def fam(model):
 def entry(L, when):
     verdict = L.get("triage", {}).get("verdict", "")
     ok = (L.get("checked", {}).get("result") == "PASS" if "checked" in L else L.get("returncode") == 0) and (not L.get("hit") or verdict == "false-positive")
-    return {"when": when, "worker": L.get("worker"), "ok": ok, "seed": L.get("seed"), "box": L.get("box") or "", "hit": bool(L.get("hit")), "model": L.get("model", ""), "verdict": verdict, "command": L.get("command", "")}
+    return {"when": when, "worker": L.get("worker"), "ok": ok, "seed": L.get("seed"), "box": L.get("box") or "", "hit": bool(L.get("hit")), "model": L.get("model", ""), "verdict": verdict, "command": L.get("command", ""), "review": (L.get("review") or "")[:400]}
 def log_index(root=ROOT):
     idx = {}
     for f in glob.glob(os.path.join(root, "logs", "probes", "*", "*.json")):
@@ -104,7 +118,7 @@ def run_done(run, idx, fresh):
     if "extra" in run: logs = [l for l in logs if run["extra"] in l.get("command", "") and (not run.get("box") or l["box"] == run["box"])]
     if fresh:
         cut = now() - datetime.timedelta(days=FRESH_DAYS); logs = [l for l in logs if l["when"] and l["when"] > cut]
-        return any(l["ok"] for l in logs) or len({l["worker"] for l in logs}) >= 2      # a failing task gets one second opinion, not endless re-runs
+        return any(l["ok"] or l.get("verdict") == "stale" for l in logs) or len({l["worker"] for l in logs}) >= 2      # a failing task gets one second opinion, not endless re-runs; a stale runner (its input file is gone) gets none
     return bool(logs)
 def unit_done(u, idx): return all(run_done(r, idx, u["fresh"]) for r in u["runs"])
 
@@ -161,7 +175,12 @@ def pick_and_claim(worker, kinds, tasks, idx, exclude=(), model=""):
     workers starting together do not all race for the same ref)."""
     claims = remote_claims(worker)
     us = [u for u in units(tasks, idx) if u["kind"] in kinds and u["unit"] not in exclude and not (model and fam(model) in u.get("finder_families", []))]
-    for kind in kinds:
+    order = list(kinds)
+    if len(order) > 1:
+        order = []; pool = list(kinds)
+        while pool:
+            k = random.choices(pool, weights=[KIND_WEIGHT.get(x, 1) for x in pool])[0]; order.append(k); pool.remove(k)
+    for kind in order:
         free = []
         for u in (x for x in us if x["kind"] == kind):
             c = claims.get(u["unit"])
@@ -212,6 +231,12 @@ def main():
         if tid.startswith("J:confirm:"):
             sys.path.insert(0, os.path.join(wt, "probes")); import importlib; tl = importlib.import_module("tasklib"); t = tl.synth(tid, [x["id"] for x in tasks])
         else: t = {x["id"]: x for x in tasks}[tid]
+        m = re.search(r"PR(\d+)$", u["unit"])
+        known = [(k, l) for k, ls in idx.items() if m and k and k.endswith("PR" + m.group(1)) for l in ls if l.get("hit") and l.get("verdict") != "false-positive"] if m else []
+        if known and not tid.startswith("J:confirm:"):
+            print("KNOWN HITS ON THIS PR - do not re-find them; a unit that only repeats one of these is wasted. Find something else or report none:")
+            for k, l in known: print(f"   {k}: {l.get('review', '')[:260]}")
+            print()
         print(f"UNIT {u['unit']}\nTASK {t['id']}\nWORKER {worker}   <- pass this as --worker\nWORKTREE {wt}   <- cd there; do ALL work for this unit in that directory and nowhere else\n\n{t['what']}\n\nRead probes/README.md sections 0, 1 and 4 in that directory. When the log says CHECK PASS: git add logs/probes probes/work; git commit -m 'probe: {u['unit']}'; python3 probes/claim.py finish {u['unit']}")
         return 0
     h = held(a.unit)

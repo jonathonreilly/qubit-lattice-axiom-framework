@@ -7,7 +7,7 @@ It takes a free slot on this machine (a file lock), creates or reuses a PRIVATE 
 under ~/.probe-workers/<repo>/slot-<k> (so workers never share a checkout), and then repeats: claim a free unit atomically
 (probes/claim.py), run its tasks through run_probe.py (every log self-checked), commit the logs, push every few minutes, release
 the claims.  It stops when no unit is free or after --hours.  Lines starting with ATTENTION name logs that need a reader."""
-import argparse, fcntl, json, os, platform, random, shutil, subprocess, sys, time
+import argparse, fcntl, json, os, re, platform, random, shutil, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import claim as C
 PUSH_EVERY = 600
@@ -68,6 +68,15 @@ def inner(a):
                 try: hit = bool(json.load(open(os.path.join(root, lp[-1]))).get("hit"))
                 except Exception: hit = '"hit": true' in out
                 ok += good; hits += bool(hit)
+                if (hit or not good) and lp and r["task"].startswith("R:"):
+                    try:
+                        tail = json.load(open(os.path.join(root, lp[-1]))).get("stdout_tail") or ""
+                        gone = re.search(r"No such file or directory: '([^']+)'|note-missing[^\n]*?(docs/\S+)|missing (?:note|file)[^\n]*?(docs/\S+)", tail)
+                        if gone:
+                            path = next(g for g in gone.groups() if g)
+                            subprocess.run([sys.executable, "probes/check_log.py", lp[-1], "--reviewer", worker, "--verdict", "stale", "--triage-note", f"automatic: the runner reads {path}, which is not in the tree at that path"], cwd=root, capture_output=True)
+                            print(f"STALE {r['task']}: reads {path}", flush=True); continue
+                    except Exception: pass
                 if hit or not good:
                     logline = [l for l in out.splitlines() if l.startswith("log: ")]
                     print(f"ATTENTION {'HIT' if hit else 'CHECK FAIL'} {r['task']}" + (f" seed {r['seed']}" if "seed" in r else "") + f"  {logline[-1] if logline else '(no log written: ' + out.strip().splitlines()[-1][:120] + ')' if out.strip() else ''}", flush=True)

@@ -32,7 +32,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("log"); ap.add_argument("--reviewer", default=""); ap.add_argument("--review", default="", help="add or replace the review sentence in the log before checking")
     ap.add_argument("--triage-note", default="", help="the reader's sentence for a triage; the finder's review sentence is kept")
-    ap.add_argument("--verdict", default="", choices=["", "science", "false-positive", "machine"], help="triage of a hit or a failed check by a reader: science (open ONE issue per task), false-positive (the task's pattern is wrong: no issue), machine (missing package, timeout: no issue)")
+    ap.add_argument("--verdict", default="", choices=["", "science", "false-positive", "machine", "stale"], help="triage of a hit or a failed check by a reader: science (open ONE issue per task), false-positive (the task's pattern is wrong: no issue), machine (missing package, timeout: no issue)")
     a = ap.parse_args()
     findings, ok = [], True
     def fail(msg):

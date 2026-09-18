@@ -33,7 +33,7 @@ kinds = collections.Counter(L.get("task", "?").split(":")[0] for L in logs)
 print("runs by kind:", dict(kinds), " workers:", len({L.get("worker") for L in logs}))
 hits = [L for L in logs if L.get("hit")]
 for title, sel in (("HITS NOT TRIAGED (read these first)", lambda L: not verdict(L)), ("HITS triaged as SCIENCE", lambda L: verdict(L) == "science"),
-                   ("hits triaged as false positives of a pattern (supervisor: fix the pattern)", lambda L: verdict(L) == "false-positive"), ("hits triaged as machine problems", lambda L: verdict(L) == "machine")):
+                   ("hits triaged as false positives of a pattern (supervisor: fix the pattern)", lambda L: verdict(L) == "false-positive"), ("hits triaged as machine problems", lambda L: verdict(L) == "machine"), ("stale runners (input file gone; automatic triage)", lambda L: verdict(L) == "stale")):
     sel_hits = [L for L in hits if sel(L)]
     print(f"\n== {title}: {len(sel_hits)}")
     for L in sorted(sel_hits, key=lambda L: L.get("task", "")):

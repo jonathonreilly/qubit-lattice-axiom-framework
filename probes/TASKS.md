@@ -30,3 +30,5 @@ Hand-written (`probes/tasks/*.json` has the exact commands, hit patterns and par
 | `J:attack:PR<n>` | 2 | a defect the script demonstrates, by one of six attack patterns that have fired here before | generated for every open science PR |
 | `J:confirm:<task>` | 2 | an independent reproduction of a logged hit by a different model family | derived from the logs at claim time; never listed in TASKS.json |
 | scan grids (`grid` field of `X:` tasks) | 1 | none; 108 grid points claimed by the work loop | `X:sixaxis-*-threshold-lines`, `X:sphere-torus-memory-grid`, `X:sphere-kernel-grid`, `X:sphere-plane-decay-long`, `X:sphere-static-kernel-grid` |
+| `J:attack-{g,a,b,d,e,f}:PR<n>` | 2 | a defect the script demonstrates with that one pattern; `g` = a proof step verified literally by brute force (found block 17's chessboard defect) | generated per open PR per pattern; known hits are printed at claim time |
+| `J:note:<stub>` | 2 | a falsifier of a note already on main that fires | 82 notes with a Falsifiers section; lowest judgment priority |

@@ -73,6 +73,18 @@ try:
                                   "(d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. "
                                   "(e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. "
                                   "(f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates." + common})
+            PATTERNS = {
+                "g": "PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them",
+                "a": "WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes)",
+                "b": "SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing",
+                "d": "QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails",
+                "e": "SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way)",
+                "f": "NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force",
+            }
+            for key, text in PATTERNS.items():
+                tasks.append({"id": f"J:attack-{key}:PR{p['number']}", "type": "judgment", "lane": p["headRefName"].split("/")[-1][:40], "tier": 2,
+                              "command": "{EXTRA}", "cwd": ".", "timeout_s": 7200, "hit_pattern": r"(?mi)^HIT", "parse": {"summary": r"(?m)^SUMMARY: (.*)"},
+                              "what": f"PR #{p['number']} ({p['title'][:60]}): attack {shown} with this ONE pattern. {text}. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result." + common})
             tasks.append({"id": f"J:provenance:PR{p['number']}", "type": "judgment", "lane": p["headRefName"].split("/")[-1][:40], "tier": 2,
                           "command": "{EXTRA}", "cwd": ".", "timeout_s": 7200, "hit_pattern": r"(?mi)^HIT", "parse": {"summary": r"(?m)^SUMMARY: (.*)"},
                           "what": f"PR #{p['number']} ({p['title'][:60]}): for every number in the theorem statements of {shown}, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms." + common})
@@ -82,6 +94,15 @@ try:
                       "what": f"re-execute the runners of PR #{p['number']} ({p['title'][:70]}) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py {p['number']} --worker <name> --review \"...\""})
 except Exception as e:
     print("open PRs not enumerated (gh unavailable?):", e)
+# type J per note on main that declares falsifiers: the lowest judgment priority, a deep backlog
+for f in sorted(glob.glob(os.path.join(ROOT, "docs", "*.md"))):
+    try: text = open(f, encoding="utf-8", errors="ignore").read()
+    except Exception: continue
+    if "\n## Falsifiers" not in text: continue
+    stub = re.sub(r"[^A-Za-z0-9]+", "_", os.path.basename(f)[:-3]).strip("_")[:90]
+    tasks.append({"id": f"J:note:{stub}", "type": "judgment", "lane": stub.split("_")[0].lower(), "tier": 2, "command": "{EXTRA}", "cwd": ".", "timeout_s": 7200,
+                  "hit_pattern": r"(?mi)^HIT", "parse": {"summary": r"(?m)^SUMMARY: (.*)"},
+                  "what": f"Note on main: docs/{os.path.basename(f)}. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_{stub[:40]}/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_{stub[:40]}/<script>.py\""})
 for f in sorted(glob.glob(os.path.join(ROOT, "probes", "tasks", "*.json"))):
     tasks.extend(json.load(open(f)))
 json.dump(tasks, open(os.path.join(ROOT, "probes", "TASKS.json"), "w"), indent=1)

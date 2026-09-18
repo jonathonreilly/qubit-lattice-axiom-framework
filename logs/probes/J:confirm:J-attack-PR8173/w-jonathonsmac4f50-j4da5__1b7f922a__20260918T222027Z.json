@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8173",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j4da5",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8173/kernel_range_independent_chain.py",
+ "seed": 70027,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b7f922a",
+ "started_utc": "20260918T222027Z",
+ "elapsed_s": 29.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed in part - 2 of the finder's 3 parts reproduced: the n >= 2 range (6 control values round above 0.98, up to 1.013; the body says 0.86-1.01; my own chain at (16, 3) averages 0.980 over n = 2..8 with 2 of 7 modes rounding above 0.98) and the grid under the product reading (4 of 15 pairs not run); not reproduced: the single-site chain's values (1.077, 0.935, 0.938, 1.009, 0.993 for n = 2..6) are not the claim_scope's measurement (the heat-bath control on the three sizes); my independent chain at (16, 1.5) gives c(2) = 0.951 +- 0.016, so its n = 2 value 1.077 is 8 of my standard errors away: a noisy check, not evidence against the range"
+ },
+ "review": "Independent test at the claim's two-decimal precision plus my own heat-bath chain (Householder-frame vMF, plane-sum transform, 8 replicas; magnetization 0.9153 and 0.8165 against the control's 0.9154 and 0.8166): the claim_scope's n >= 2 range 0.86-0.98 disagrees with the kernel control (6 of 77 values round to 0.99-1.01, max 1.013 at (24, 2) n = 4; the note's own body says 0.86-1.01), and read as a product grid the claim_scope names 15 (L, beta) pairs of which 4 were not run, so both parts are confirmed; my chain gives c at (16, 3) averaging 0.980 over n = 2..8 (2 of 7 modes rounding above 0.98) and c(2) = 0.951 +- 0.016 at (16, 1.5), so the finder's third part (Metropolis values 1.077/1.009/0.993 outside the range) is chain noise in a check the claim_scope does not cite, and is not reproduced.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8173/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "ed3781cf165b5e07b41e5c2968606601b80b9fc3d5a65fabc20c02c90a440350",
+ "stdout_tail": "] at (16, 3): mean over n = 2..8 of c = 0.980; modes whose c exceeds 0.985 by more than two standard errors: []; values rounding above 0.98: 2 of 7; at (12, 3): n = 2..6 0.981 0.975 0.986 0.981 0.969; at (16, 1.5): c(2) = 0.951 +- 0.016, n = 2..6 range 0.921-0.955; the refuter's single-site chain at (16, 1.5): 0.796 1.077 0.935 0.938 1.009 0.993\n[time] 29s\nHIT: confirmed - the claim_scope's n >= 2 range 0.86-0.98 disagrees with the kernel control: 6 values round above 0.98 (max 1.013 at (L, beta) = (24, 2), n = 4), while the note's own body states 0.86-1.01 and its table prints entries up to 1.01\nHIT: confirmed - read as the product of its three sizes and five couplings, the claim_scope's grid names 15 (L, beta) pairs of which 4 were not executed: [(24, '3'), (32, '0.8'), (32, '2'), (32, '3')] (the note's table lists the 11 run)\nSUMMARY: confirmed in part - 2 of the finder's 3 parts reproduced: the n >= 2 range (6 control values round above 0.98, up to 1.013; the body says 0.86-1.01; my own chain at (16, 3) averages 0.980 over n = 2..8 with 2 of 7 modes rounding above 0.98) and the grid under the product reading (4 of 15 pairs not run); not reproduced: the single-site chain's values (1.077, 0.935, 0.938, 1.009, 0.993 for n = 2..6) are not the claim_scope's measurement (the heat-bath control on the three sizes); my independent chain at (16, 1.5) gives c(2) = 0.951 +- 0.016, so its n = 2 value 1.077 is 8 of my standard errors away: a noisy check, not evidence against the range\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4da5",
+  "at_utc": "20260918T222111Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed in part: the claim_scope's n>=2 range 0.86-0.98 disagrees with its kernel control (6 of 77 values round above 0.98, up to 1.013; the note's body says 0.86-1.01), and its grid read as sizes x couplings names 4 (L,beta) pairs never run; not reproduced: the single-site chain's out-of-range values (independent chain gives c(2)=0.951+-0.016 at (16,1.5)).",
+  "by": "w-jonathonsmac4f50-j4da5",
+  "at_utc": "20260918T222111Z"
+ }
+}

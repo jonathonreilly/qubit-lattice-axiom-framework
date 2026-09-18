@@ -23,7 +23,7 @@ R_SHARD = 20           # runner re-executions per unit
 F_SEEDS, F_BLOCK = 200, 20
 S_SEEDS, S_BOXES, S_MINUTES = 200, ["", "5x5x8"], 30
 PRIORITY = ["P", "R", "M", "F", "X", "S"]      # the loop's order; J is claimed by hand
-J_ORDER = ["J-confirm", "J-attack-g", "J-attack-a", "J-attack-b", "J-attack", "J-falsifier", "J-provenance", "J-note"]      # inside kind J: confirmations first, then the attack patterns by their yield so far
+J_ORDER = ["J-confirm", "J-derive", "J-attack-g", "J-attack-a", "J-attack-b", "J-attack", "J-falsifier", "J-provenance", "J-note"]      # inside kind J: confirmations first, then the attack patterns by their yield so far
 KIND_WEIGHT = {"P": 8, "R": 4, "M": 4, "F": 2, "X": 3, "S": 2}      # the loop draws the kind at random with these weights, so cheap kinds do not starve behind a long one
 
 GIT_CWD = ROOT if os.path.exists(os.path.join(ROOT, ".git")) else os.getcwd()
@@ -74,7 +74,7 @@ def units(tasks, idx=None):
         for g, point in enumerate(t.get("grid", [])):
             out.append({"unit": "X-" + safe(t["id"][2:]) + f"-g{g+1:02d}", "kind": "X", "fresh": False, "runs": [{"task": t["id"], "extra": point["extra"], "box": point.get("box", "")}]})
     for t in tasks:
-        if t["id"].startswith("J:") and (":PR" in t["id"] or t["id"].startswith("J:note:")): out.append({"unit": "J-" + safe(t["id"][2:]), "kind": "J", "runs": [{"task": t["id"]}], "fresh": False})
+        if t["id"].startswith("J:") and (":PR" in t["id"] or t["id"].startswith(("J:note:", "J:derive:"))): out.append({"unit": "J-" + safe(t["id"][2:]), "kind": "J", "runs": [{"task": t["id"]}], "fresh": False})
     # derived units: every hit on a judgment or search task that no reader has triaged as a false positive gets ONE independent confirmation
     def defect_class(tid):      # executed-number defects are found by provenance audits AND by attack pattern (c): one confirmation per PR is enough
         revs = " ".join(l.get("review", "") for l in idx.get(tid, []) if l.get("hit"))
@@ -233,6 +233,12 @@ def main():
         else: t = {x["id"]: x for x in tasks}[tid]
         m = re.search(r"PR(\d+)$", u["unit"])
         known = [(k, l) for k, ls in idx.items() if m and k and k.endswith("PR" + m.group(1)) for l in ls if l.get("hit") and l.get("verdict") != "false-positive"] if m else []
+        if tid.startswith("J:derive:"):
+            prob = tid.split(":")[2]; prior = [(k, l) for k, ls in idx.items() if k and k.startswith("J:derive:" + prob + ":") for l in ls]
+            if prior:
+                print("PRIOR ATTEMPTS ON THIS PROBLEM (form your own plan first; then build on a refereed partial result or take another route). Their files: probes/work/derive/" + prob + "/<worker>/ATTEMPT.md")
+                for k, l in prior: print(f"   {k} [{l.get('worker')}, {l.get('model') or '?'}] {'HIT' if l.get('hit') else 'no claim'}: {l.get('review', '')[:300]}")
+                print()
         if known and not tid.startswith("J:confirm:"):
             print("KNOWN HITS ON THIS PR - do not re-find them; a unit that only repeats one of these is wasted. Find something else or report none:")
             for k, l in known: print(f"   {k}: {l.get('review', '')[:260]}")

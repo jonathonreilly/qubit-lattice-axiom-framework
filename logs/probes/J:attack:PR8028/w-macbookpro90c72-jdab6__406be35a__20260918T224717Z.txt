@@ -1,0 +1,2 @@
+sector TOTAL 32 stated 32; Dirichlet TOTAL 42 stated 42
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - sector 32 and Dirichlet 42 match cache; does not fire

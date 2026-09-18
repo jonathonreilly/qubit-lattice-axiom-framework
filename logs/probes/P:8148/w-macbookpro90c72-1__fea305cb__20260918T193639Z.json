@@ -1,0 +1,28 @@
+{
+ "task": "P:8148",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block14-format",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8148",
+ "pr": 8148,
+ "branch": "physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915",
+ "git_sha": "fea305cb",
+ "started_utc": "20260918T193639Z",
+ "elapsed_s": 324.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=22 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "31ccfcbbb701e1e8159106643db0fd2014a0754aa8ea90165ac8b0b309e7774a",
+ "stdout_tail": "PR #8148: [physics-loop] admissibility-induced-law block14 \u2014 bounded_theorem \u2014 bounded-support: the formation-rate clause witness \u2014 every covariant clock law gives a mixture over orders that is the static law on trees and never on a plaquette\nbranch physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py: rc=0 TOTAL: PASS=22 FAIL=0\n   mutation jump_probability_wrong: expected B observed B ok\n   mutation class_mixture_differs_from_enumeration: expected B observed B ok\n   mutation rate_laws_give_same_law_claimed: expected C observed C ok\n   mutation census_rational_mismatch: expected C observed C ok\n   mutation cube_probabilities_equal_claimed: expected C observed C ok\n   mutation seeded_tree_not_static_claimed: expected D observed D ok\n   mutation plaquette_identity_wrong: expected E observed E ok\n   mutation static_reached_on_plaquette_claimed: expected E observed E ok\n   mutation type_assignment_wrong: expected E observed E ok\n   mutation class_ratios_not_monotone_claimed: expected E observed E ok\n   mutation parallel_law_in_span_claimed: expected E observed E ok\n   mutation claim_rate_clause_adopted: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

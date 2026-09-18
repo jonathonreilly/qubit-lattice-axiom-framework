@@ -1,0 +1,28 @@
+{
+ "task": "P:8151",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block17-static",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8151",
+ "pr": 8151,
+ "branch": "physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915",
+ "git_sha": "bc294bc0",
+ "started_utc": "20260918T194238Z",
+ "elapsed_s": 337.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=20 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "f64814c5402fff6f2657f5b31829d5b5ef9a69d0d3e53bcb64efe9e0b93598b7",
+ "stdout_tail": "PR #8151: [physics-loop] admissibility-induced-law block17 \u2014 bounded_theorem \u2014 bounded-support: the static six-axis law at strong coupling has long-range order and several Gibbs states on Z\u00b2 and Z\u00b3 for p \u2265 216 max(q,r) \u2014 reflection positivity through site planes, chessboard, contour counting (3D by the in-plane count)\nbranch physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0\n   mutation eigenvalues_wrong: expected B observed B ok\n   mutation symmetry_not_preserved_claimed: expected B observed B ok\n   mutation rp_negative_claimed: expected B observed B ok\n   mutation chessboard_violated_claimed: expected B observed B ok\n   mutation disseminated_bound_wrong: expected C observed C ok\n   mutation contour_count_bound_wrong: expected C observed C ok\n   mutation series_value_wrong: expected C observed C ok\n   mutation winding_bound_wrong: expected C observed C ok\n   mutation threshold_wrong: expected C observed C ok\n   mutation unique_state_above_threshold_claimed: expected C observed C ok\n   mutation three_d_disseminated_bound_wrong: expected D observed D ok\n   mutation claim_sharp_threshold: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

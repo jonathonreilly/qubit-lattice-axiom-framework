@@ -1,0 +1,28 @@
+{
+ "task": "P:8173",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8173",
+ "pr": 8173,
+ "branch": "physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916",
+ "git_sha": "bc294bc0",
+ "started_utc": "20260918T194220Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "48c1b8772c8b68f2c71d90bc367ba9c1286d2aacbde12114448489bbb21db915",
+ "stdout_tail": "PR #8173: [physics-loop] admissibility-induced-law block29 \u2014 bounded_theorem \u2014 bounded-support: the transverse kernel's normalization in the ordered sphere static law \u2014 measured between the bounds, with the transverse sum rule and the spin-wave reference\nbranch physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py: rc=0 TOTAL: PASS=14 FAIL=0\n   mutation eigenvalue_wrong: expected B observed B ok\n   mutation spin_wave_normalization_wrong: expected B observed B ok\n   mutation sum_rule_wrong: expected C observed C ok\n   mutation integration_by_parts_wrong: expected C observed C ok\n   mutation parseval_wrong: expected D observed D ok\n   mutation claim_source_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

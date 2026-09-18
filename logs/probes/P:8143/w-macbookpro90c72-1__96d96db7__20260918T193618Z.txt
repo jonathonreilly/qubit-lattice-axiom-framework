@@ -1,0 +1,4 @@
+PR #8143: [physics-loop] full-domain-projective-corridor: bounded_theorem, conditional-support
+branch physics-loop/full-domain-projective-corridor-20260915 (base main)
+runners in the PR: 1
+== scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py: rc=0 TOTAL: PASS=8 FAIL=0

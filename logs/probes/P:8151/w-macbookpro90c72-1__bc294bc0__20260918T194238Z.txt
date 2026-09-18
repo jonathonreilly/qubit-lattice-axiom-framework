@@ -1,0 +1,17 @@
+PR #8151: [physics-loop] admissibility-induced-law block17 — bounded_theorem — bounded-support: the static six-axis law at strong coupling has long-range order and several Gibbs states on Z² and Z³ for p ≥ 216 max(q,r) — reflection positivity through site planes, chessboard, contour counting (3D by the in-plane count)
+branch physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation eigenvalues_wrong: expected B observed B ok
+   mutation symmetry_not_preserved_claimed: expected B observed B ok
+   mutation rp_negative_claimed: expected B observed B ok
+   mutation chessboard_violated_claimed: expected B observed B ok
+   mutation disseminated_bound_wrong: expected C observed C ok
+   mutation contour_count_bound_wrong: expected C observed C ok
+   mutation series_value_wrong: expected C observed C ok
+   mutation winding_bound_wrong: expected C observed C ok
+   mutation threshold_wrong: expected C observed C ok
+   mutation unique_state_above_threshold_claimed: expected C observed C ok
+   mutation three_d_disseminated_bound_wrong: expected D observed D ok
+   mutation claim_sharp_threshold: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

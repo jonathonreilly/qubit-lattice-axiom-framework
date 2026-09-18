@@ -1,0 +1,27 @@
+{
+ "task": "P:8143",
+ "type": "pr-reexecution",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8143",
+ "pr": 8143,
+ "branch": "physics-loop/full-domain-projective-corridor-20260915",
+ "git_sha": "96d96db7",
+ "started_utc": "20260918T193618Z",
+ "elapsed_s": 7.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=8 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "d9e7953596dd63162fe140534e1ead5e12fdff43774ce1aa06d05c42a7f09fbe",
+ "stdout_tail": "PR #8143: [physics-loop] full-domain-projective-corridor: bounded_theorem, conditional-support\nbranch physics-loop/full-domain-projective-corridor-20260915 (base main)\nrunners in the PR: 1\n== scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py: rc=0 TOTAL: PASS=8 FAIL=0"
+}

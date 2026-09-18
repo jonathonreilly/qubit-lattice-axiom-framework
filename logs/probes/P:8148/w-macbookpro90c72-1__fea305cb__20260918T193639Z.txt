@@ -1,0 +1,17 @@
+PR #8148: [physics-loop] admissibility-induced-law block14 — bounded_theorem — bounded-support: the formation-rate clause witness — every covariant clock law gives a mixture over orders that is the static law on trees and never on a plaquette
+branch physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py: rc=0 TOTAL: PASS=22 FAIL=0
+   mutation jump_probability_wrong: expected B observed B ok
+   mutation class_mixture_differs_from_enumeration: expected B observed B ok
+   mutation rate_laws_give_same_law_claimed: expected C observed C ok
+   mutation census_rational_mismatch: expected C observed C ok
+   mutation cube_probabilities_equal_claimed: expected C observed C ok
+   mutation seeded_tree_not_static_claimed: expected D observed D ok
+   mutation plaquette_identity_wrong: expected E observed E ok
+   mutation static_reached_on_plaquette_claimed: expected E observed E ok
+   mutation type_assignment_wrong: expected E observed E ok
+   mutation class_ratios_not_monotone_claimed: expected E observed E ok
+   mutation parallel_law_in_span_claimed: expected E observed E ok
+   mutation claim_rate_clause_adopted: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

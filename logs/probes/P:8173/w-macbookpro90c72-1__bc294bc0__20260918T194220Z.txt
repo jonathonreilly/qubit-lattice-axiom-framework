@@ -1,0 +1,11 @@
+PR #8173: [physics-loop] admissibility-induced-law block29 — bounded_theorem — bounded-support: the transverse kernel's normalization in the ordered sphere static law — measured between the bounds, with the transverse sum rule and the spin-wave reference
+branch physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py: rc=0 TOTAL: PASS=14 FAIL=0
+   mutation eigenvalue_wrong: expected B observed B ok
+   mutation spin_wave_normalization_wrong: expected B observed B ok
+   mutation sum_rule_wrong: expected C observed C ok
+   mutation integration_by_parts_wrong: expected C observed C ok
+   mutation parseval_wrong: expected D observed D ok
+   mutation claim_source_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,16 @@
+claim_scope range: 0.86-0.98 (stated 0.86-0.98)
+control rows: 88 values, 11 (L,beta) pairs, n>=2 count 77
+n>=2 min 0.861 at L=24 beta=1.00 n=2
+n>=2 max 1.013 at L=24 beta=2.00 n=4
+n=1 min 0.647 max 1.047
+note table n>=2 min 0.86 max 1.01
+note 'What the runs say (i)': 0.86-1.01
+n>=2 values outside claim_scope [0.86,0.98]: 7
+  outside: L=24 beta=2.00 n=4 c=1.013
+  outside: L=16 beta=1.50 n=8 c=1.012
+  outside: L=16 beta=3.00 n=6 c=0.995
+  outside: L=16 beta=3.00 n=7 c=0.993
+  outside: L=16 beta=3.00 n=4 c=0.989
+  outside: L=16 beta=1.50 n=4 c=0.987
+HIT: confirmed - claim_scope states 0.86-0.98 for n>=2 but kernel control has min 0.861 max 1.013 (max at L=24 beta=2.00 n=4); 7 of 77 n>=2 values leave the interval
+SUMMARY: confirmed range mismatch: executed c(beta,k) for n>=2 spans 0.861-1.013 against claim_scope 0.86-0.98

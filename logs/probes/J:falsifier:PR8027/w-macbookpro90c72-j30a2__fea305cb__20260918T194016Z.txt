@@ -1,0 +1,21 @@
+haar 1/3 * 1/6 = 0.05555555555555555
+named rho_(2,2) = 2.23606797749979 expected 2.23606797749979
+named rho_(1,1) = 1.0 expected 1.0
+named rho_(2,1) = 1.4142135623730954 expected 1.4142135623730951
+planar (0,5) paths=1 want=1 rho=0.000000000000 formula=0.000000000000
+planar (5,0) paths=1 want=1 rho=0.000000000000 formula=0.000000000000
+planar (3,3) paths=20 want=20 rho=3.493959207435 formula=3.493959207435
+planar (4,3) paths=35 want=35 rho=4.027339492126 formula=4.027339492126
+planar (5,3) paths=56 want=56 rho=4.411474127810 formula=4.411474127810
+planar (4,4) paths=70 want=70 rho=4.758770483144 formula=4.758770483144
+planar (6,4) paths=210 want=210 rho=5.742044506786 formula=5.742044506786
+planar (5,5) paths=252 want=252 rho=6.026674183332 formula=6.026674183332
+planar (8,4) paths=495 want=495 rho=6.345946675963 formula=6.345946675963
+planar (7,1) paths=8 want=8 rho=1.879385241572 formula=1.879385241572
+3d (2, 2, 1) geodesics=30 want=30 undirected_flips=48
+3d (3, 2, 1) geodesics=60 want=60 undirected_flips=110
+3d (2, 2, 2) geodesics=90 want=90 undirected_flips=180
+3d (3, 3, 1) geodesics=140 want=140 undirected_flips=300
+3d (4, 2, 1) geodesics=105 want=105 undirected_flips=210
+riemann (40,40) formula/L=0.63211792 (2/pi)sin(pi eta)=0.63661977
+SUMMARY: PR8027 planar/3d geodesic falsifier did not fire: named rho 1, sqrt2, sqrt5; cosine formula and multinomial counts beyond runner sizes ((0,5):n=1,rho=0.000000, (5,0):n=1,rho=0.000000, (3,3):n=20,rho=3.493959, (4,3):n=35,rho=4.027339, (5,3):n=56,rho=4.411474, (4,4):n=70,rho=4.758770, (6,4):n=210,rho=5.742045, (5,5):n=252,rho=6.026674, (8,4):n=495,rho=6.345947, (7,1):n=8,rho=1.879385, (2, 2, 1):n=30,flips=48, (3, 2, 1):n=60,flips=110, (2, 2, 2):n=90,flips=180, (3, 3, 1):n=140,flips=300, (4, 2, 1):n=105,flips=210)

@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8154/h1_h3_exact_ring.py",
+ "seed": 59088,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "27cdaa7e",
+ "started_utc": "20260918T191808Z",
+ "elapsed_s": 54.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "exact ring (transfer operator, 40 digits, 98 rings, L up to 5000, beta 0.1..30): H1's two inequalities at 168770 (beta, L, k) cases, largest ratio bound/u = 0.159338; H3's line bound largest ratio 0.0101787; sum rule to 6.2e-39; B1 to L = 400, B2 to m = 60, B3 to L = 10^6: 0 failures; falsifier does not fire"
+ },
+ "review": "Exact ring (d = 1) check of H1 and of H3's line bound by the transfer operator (Funk-Hecke eigenvalues i_l(beta), 40 digits; closed form cross-checked against the direct sum to 7e-38 and the long ring's nearest-neighbour correlation against coth(beta) - 1/beta): no violation of H1's two inequalities at 168770 (beta, L, k) cases (beta 0.1..30, L up to 5000; largest ratio bound/u = 0.159 at beta = 30, L = 2), no violation of the line bound (largest ratio M_N^4 / bound = 0.0102 at beta = 0.1, L = 2), sum rule to 6e-39; B1 extended to L = 400, B2 to m = 60, B3 to L = 10^6 without failure; the plane half of H3 and H1 for d = 2, 3 are not tested here.",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "b2a2faf612a8999e370e976dd18b70923453708336a94ccd561334680025c155",
+ "stdout_tail": "ta) - 1/beta = 0.800090803982019  (38s)\n[ring] beta = 10: 14 sides L = 2..5000; M_N^2 at L = 5000: 0.001900000082; <s_0.s_1> = 0.900000004122307 vs coth(beta) - 1/beta = 0.900000004122307  (46s)\n[ring] beta = 30: 14 sides L = 2..5000; M_N^2 at L = 5000: 0.0059; <s_0.s_1> = 0.966666666666667 vs coth(beta) - 1/beta = 0.966666666666667  (53s)\n[cross] closed form vs direct sum over x (L <= 30): largest relative difference 6.71e-38; sum rule sum_k u(k) = N/3 to 6.16e-39\n[H1] 168770 (beta, L, k != 0) cases on 98 rings: largest ratio of H1's first bound to u(k) = 0.1593380801 at beta = 30, L = 2, n = -1 (u = 0.011111917); largest ratio second/first bound = 0.9999988922\n[H3] line: largest ratio M_N^4 / ((6 pi^2 beta + 4)/sqrt L) = 0.010178711 at beta = 0.1, L = 2 (M_N^2 = 0.26722882; ratio to the proof's 3(beta pi^2 + 2/3)/floor(sqrt L): 0.014394871)\n[B1] L = 2..400: shells 8j / 4L-1, |n|^2 <= 2j^2 and sum |n|^-2 >= 4 H_(L-1): 0 failures; smallest ratio sum/(4 H_(L-1)) = 1.554733  (1s)\n[B2] H_(2^m) >= 1 + m/2 for m = 0..60: 0 failures; H_(2^60) = 42.1660464985 vs 31\n[B3] L = 2..10^6: 4 floor(sqrt L)^2 >= L and the block count 2 floor(sqrt L): 0 failures  (0s)\n[time] 54s\nSUMMARY: exact ring (transfer operator, 40 digits, 98 rings, L up to 5000, beta 0.1..30): H1's two inequalities at 168770 (beta, L, k) cases, largest ratio bound/u = 0.159338; H3's line bound largest ratio 0.0101787; sum rule to 6.2e-39; B1 to L = 400, B2 to m = 60, B3 to L = 10^6: 0 failures; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T192031Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

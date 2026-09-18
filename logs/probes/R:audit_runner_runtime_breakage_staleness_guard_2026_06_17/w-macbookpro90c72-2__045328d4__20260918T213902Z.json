@@ -22,14 +22,21 @@
  "stdout_tail": "xt\n  - nonzero_exit: scripts/frontier_tensor_block_closure_test.py: fresh ok logs/runner-cache/frontier_tensor_block_closure_test.txt\n  - timeout: scripts/frontier_tensor_support_center_excess_law.py: fresh ok logs/runner-cache/frontier_tensor_support_center_excess_law.txt\n  - timeout: scripts/frontier_wilson_mu2_distance_sweep.py: fresh ok logs/runner-cache/frontier_wilson_mu2_distance_sweep.txt\n  - timeout: scripts/frontier_yt_bridge_uv_class_uniqueness.py: fresh ok logs/runner-cache/frontier_yt_bridge_uv_class_uniqueness.txt\n  - timeout: scripts/frontier_yt_qfp_insensitivity.py: fresh ok logs/runner-cache/frontier_yt_qfp_insensitivity.txt\nFAIL: live runtime-failure entries remain:\n  - timeout: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py: cache_status=execution_error path=logs/runner-cache/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.txt\n  - timeout: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py: cache_status=execution_error path=logs/runner-cache/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.txt\n  - timeout: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py: cache_status=sha_mismatch path=logs/runner-cache/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.txt\n  - nonzero_exit: scripts/frontier_self_consistent_field_equation.py: cache_status=sha_mismatch path=logs/runner-cache/frontier_self_consistent_field_equation.txt\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260918T213902Z",
+  "at_utc": "20260918T214912Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 045328d4 differs from the current HEAD 50ad2af9 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run '  - nonzero_exit: scripts/frontier_self_consistent_field_equation.py: cache_stat' vs cache 'Scope note: missing_runner_file entries are intentionally out of scope for this '",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_runner_runtime_breakage_staleness_guard_2026_06_17.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: 4 of 39 inventory entries are no longer fresh-ok (cache 39/39 PASS): the committed caches of the two DM-leptogenesis PMNS runners record status nonzero_exit (their own FAIL), and the dm_wilson canonical-path selector and self-consistent-field-equation scripts no longer match their caches' runner_sha256.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T214912Z"
  }
 }

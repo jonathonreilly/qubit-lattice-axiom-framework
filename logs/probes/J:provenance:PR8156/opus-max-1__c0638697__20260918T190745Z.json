@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8156/provenance_theorem_numbers.py",
+ "seed": 58465,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0638697",
+ "started_utc": "20260918T190745Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "30 items over claim_scope + 4 theorem sections (143 numeric tokens, 0 uncovered): cache-sourced 18, runner-checked (not printed) 0, derived here from the note's formulas 5, definitions 3, excluded 4; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none"
+ },
+ "review": "All 143 numeric tokens of the claim_scope, V1-V3 and Corollary V4 are sourced: 18 by runner-cache lines (the closed-walk counts 1, 6, 90, 1860, the Vandermonde range 12, the V2 constant and inequalities, S_1000's 1553-digit denominator and floor 1501637, T_1 < 181/10^4, T_2's 225/14 and 197/225, the two comparisons), 5 by derivations re-executed here (the exponent 4n/(3 pi^2), the log bound, 3 sqrt3 pi/8 = 2.0405, the width 0.471 < 1/2, the 1/100), 3 definitions and 4 exclusions; no number is unsourced.",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "d1246787ea7961363113cf95d8483f90c49aee8a010d95fa4de4d1be9ce80c98",
+ "stdout_tail": "or 1553 digits); floor(10^6 S) = 1501637\n[CACHE] 181 | Theorem V3 | V3 executed | cache stdout line 20: PASS: D2 V3: T_1(N)^2 = (36/11)^3/(108 N) with pi >= 3 (floor(10^12 T_1^2) = 324567993, so T_1 < 181/10^4 at N = 1000); T_2(N) = (225/14)(19\n[CACHE] pi3 | claim_scope | V3 enclosures | cache stdout line 18: PASS: C4 V3: 1 - x + x^2/2 - e^{-x} vanishes at 0 with derivative -1 + x + e^{-x} (itself vanishing at 0 with derivative 1 - e^{-x} >= 0), s\n[CACHE] window | claim_scope,Corollary V4 | V4 window (sqrt3/6 is block 21's) | cache stdout line 6: scope: block 19's constant 3 G(0) as half the return sum of the cubic walk \u2014 closed-walk counts, the paired series, the tail bound's inequal\n[DERIVED] width | Corollary V4 | V4 | 76/100 - sqrt3/6 = 0.4713 < 1/2\n[DERIVED] 100th | Corollary V4 | V4 | 76/100 - 75/100 = 1/100: the route's constant lies in (75/100, 76/100)\n[DERIVED] 204 | claim_scope | V4 block 19's former constant | 3 sqrt(3) pi/8 = 2.04052 (block 19's constant, 'about 2.04')\n[EXCLUDED] imports | claim_scope,Corollary V4,Theorem V3 | wording\n[COVERAGE] 143 numeric tokens in the statement text; uncovered 0\nSUMMARY: 30 items over claim_scope + 4 theorem sections (143 numeric tokens, 0 uncovered): cache-sourced 18, runner-checked (not printed) 0, derived here from the note's formulas 5, definitions 3, excluded 4; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T190755Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+PR #8156 head 5296e20cab; cache 33 stdout lines; statement sections: claim_scope, Theorem V1, Theorem V2, Theorem V3, Corollary V4
+[DEFINITION] G0-def | claim_scope | 3G(0) | declared under Premises and declared objects
+[DEFINITION] E-def | claim_scope | E(k) | declared under Premises and declared objects
+[EXCLUDED] ref | claim_scope,Corollary V4 | references
+[EXCLUDED] beta3G | claim_scope,Corollary V4 | placement (block 19's route)
+[CACHE] V1 | claim_scope,Theorem V1 | V1 identity | cache stdout line 14: PASS: B3 V1(i)-(ii): (1 + phi)/(1 - phi^2) = 1/(1 - phi); the cosine moments int cos^m = 2 pi C(m, m/2)/2^m (m <= 6, symbolic); (2 pi)^{-3} 
+[CACHE] P2n | claim_scope,Theorem V1 | V1 closed-walk count | cache stdout line 12: PASS: B1 V1(iii): closed walks of length 2n on Z^3 by enumeration of all 6^(2n) walks, n <= 3: [1, 6, 90, 1860] = C(2n,n) sum_a C(n,a)^2 C(2
+[EXCLUDED] nge0 | claim_scope,Theorem V1,Theorem V2 | structural
+[DEFINITION] SN | claim_scope | the partial sum S_N | inline in the statement
+[CACHE] enum | claim_scope,Theorem V1 | B1/B2 | cache stdout line 12: PASS: B1 V1(iii): closed walks of length 2n on Z^3 by enumeration of all 6^(2n) walks, n <= 3: [1, 6, 90, 1860] = C(2n,n) sum_a C(n,a)^2 C(2
+[CACHE] V2 | claim_scope,Theorem V2 | V2 (C2 prints the constant) | cache stdout line 16: PASS: C2 V2(iv): int_R^3 e^{-a|k|^2} = (pi/a)^{3/2}; at a = 11n/36 this is (36 pi/(11 n))^{3/2}; 2 (2 pi)^{-3} (36 pi/11)^{3/2} = (36/11)^{3
+[DERIVED] V2-exp | claim_scope,Theorem V2 | V2 exponential term | on the outer region 1 - |phi| >= 2/(3 pi^2) (cache C3), so e^{-2n(1 - |phi|)} <= e^{-4n/(3 pi^2)}
+[CACHE] cos1 | claim_scope,Corollary V4,Theorem V1,Theorem V2,Theorem V3 | V2 inequality 1 | cache stdout line 15: PASS: C1 V2(i): g = 1 - u^2/2 + u^4/24 - cos u has g(0) = g'(0) = 0 and g'' = cos u - 1 + u^2/2 =: h with h' = u - sin u; 1 - cos u >= 11 u^
+[CACHE] cos2 | claim_scope | V2 inequality 2 | cache stdout line 15: PASS: C1 V2(i): g = 1 - u^2/2 + u^4/24 - cos u has g(0) = g'(0) = 0 and g'' = cos u - 1 + u^2/2 =: h with h' = u - sin u; 1 - cos u >= 11 u^
+[DERIVED] logb | claim_scope,Corollary V4,Theorem V1,Theorem V2,Theorem V3 | V2 exponential form | log|phi| <= |phi| - 1 (log(1 - x) <= -x, derivative -x/(1-x) <= 0), so |phi|^{2n} <= e^{-2n(1 - |phi|)}
+[CACHE] two-region | claim_scope,Theorem V2 | V2 split | cache stdout line 28: per_site: executed — the two-region step on the symbol at nine wavevectors; the shift identity phi(k - pi) = -phi(k)
+[CACHE] N1000 | claim_scope,Theorem V3 | V3 N | cache stdout line 19: PASS: D1 V3: S_1000 = sum_{n<=1000} P_2n as one rational (denominator 1553 digits); floor(10^6 S) = 1501637
+[CACHE] V3up | Theorem V3 | V3 upper bound | cache stdout line 21: PASS: D3 V3: X = 2 (76/100) - S_N - T_2 = 18362 x 10^-6 > 0 and X^2 > (36/11)^3/(108 N): hence 3 G(0) <= (S_N + T_1 + T_2)/2 < 76/100
+[CACHE] T1 | Theorem V3 | V3 T_1 | cache stdout line 20: PASS: D2 V3: T_1(N)^2 = (36/11)^3/(108 N) with pi >= 3 (floor(10^12 T_1^2) = 324567993, so T_1 < 181/10^4 at N = 1000); T_2(N) = (225/14)(19
+[CACHE] T2 | Theorem V3 | V3 T_2 | cache stdout line 20: PASS: D2 V3: T_1(N)^2 = (36/11)^3/(108 N) with pi >= 3 (floor(10^12 T_1^2) = 324567993, so T_1 < 181/10^4 at N = 1000); T_2(N) = (225/14)(19
+[CACHE] V3low | claim_scope,Theorem V3 | V3 lower bound | cache stdout line 22: PASS: D4 V3: S_N > 150/100, so 3 G(0) >= S_N/2 > 75/100; the partial sums increase (floor(10^6 S_250) = 1486921)
+[CACHE] 76 | claim_scope,Corollary V4 | V3/V4 upper value | cache stdout line 6: scope: block 19's constant 3 G(0) as half the return sum of the cubic walk — closed-walk counts, the paired series, the tail bound's inequal
+[CACHE] 1553 | Theorem V3 | V3 executed | cache stdout line 19: PASS: D1 V3: S_1000 = sum_{n<=1000} P_2n as one rational (denominator 1553 digits); floor(10^6 S) = 1501637
+[CACHE] 1501637 | Theorem V3 | V3 executed | cache stdout line 19: PASS: D1 V3: S_1000 = sum_{n<=1000} P_2n as one rational (denominator 1553 digits); floor(10^6 S) = 1501637
+[CACHE] 181 | Theorem V3 | V3 executed | cache stdout line 20: PASS: D2 V3: T_1(N)^2 = (36/11)^3/(108 N) with pi >= 3 (floor(10^12 T_1^2) = 324567993, so T_1 < 181/10^4 at N = 1000); T_2(N) = (225/14)(19
+[CACHE] pi3 | claim_scope | V3 enclosures | cache stdout line 18: PASS: C4 V3: 1 - x + x^2/2 - e^{-x} vanishes at 0 with derivative -1 + x + e^{-x} (itself vanishing at 0 with derivative 1 - e^{-x} >= 0), s
+[CACHE] window | claim_scope,Corollary V4 | V4 window (sqrt3/6 is block 21's) | cache stdout line 6: scope: block 19's constant 3 G(0) as half the return sum of the cubic walk — closed-walk counts, the paired series, the tail bound's inequal
+[DERIVED] width | Corollary V4 | V4 | 76/100 - sqrt3/6 = 0.4713 < 1/2
+[DERIVED] 100th | Corollary V4 | V4 | 76/100 - 75/100 = 1/100: the route's constant lies in (75/100, 76/100)
+[DERIVED] 204 | claim_scope | V4 block 19's former constant | 3 sqrt(3) pi/8 = 2.04052 (block 19's constant, 'about 2.04')
+[EXCLUDED] imports | claim_scope,Corollary V4,Theorem V3 | wording
+[COVERAGE] 143 numeric tokens in the statement text; uncovered 0
+SUMMARY: 30 items over claim_scope + 4 theorem sections (143 numeric tokens, 0 uncovered): cache-sourced 18, runner-checked (not printed) 0, derived here from the note's formulas 5, definitions 3, excluded 4; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

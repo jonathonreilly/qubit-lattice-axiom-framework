@@ -1,0 +1,32 @@
+PR #8157 head debbd76649; cache 33 stdout lines; statement sections: claim_scope, Theorem P1, Theorem P2, Theorem P3, Theorem P4
+[DEFINITION] torus | claim_scope,Theorem P4 | the torus | declared under Premises and declared objects
+[DEFINITION] HR | claim_scope | H_R | declared under Premises and declared objects
+[CACHE] kappa | claim_scope,Theorem P3 | kappa(beta) | cache stdout line 19: PASS: D2 P3 (beta >= 5/256): gamma - (128/5) beta gamma^2 is concave with maximizer gamma* = 5/(256 beta) and maximum 5/(512 beta); the pref
+[EXCLUDED] components | claim_scope,Theorem P1 | component labels
+[DERIVED] three-halves | claim_scope,Theorem P1 | P1 factor 3/2 | the three pair sums add to 2 s_0.s_x, each bounded by the same exponential, so |<s_0.s_x>| <= (3/2) x bound (sympy)
+[CACHE] P1 | claim_scope,Theorem P1 | P1 (B1 the modulus identity behind it) | cache stdout line 12: PASS: B1 P1(iii): cos(phi + i a) = cos phi cosh a - i sin phi sinh a, so |e^{c cos(phi + i a)}| = e^{c cos phi cosh a} for real c
+[DERIVED] P2b | claim_scope,Theorem P2 | P2(b) | |log(1+p) - log(1+q)| <= |p - q|/(1 + min(p, q)) from (log(1+t))' = 1/(1+t) (cache C2 prints the derivative)
+[DERIVED] P2c | claim_scope,Theorem P2 | P2(c) constant | (gamma^2 cosh(gamma)/2) x 4 (four bonds per site) x (1 + 8 H_R) = 2 gamma^2 cosh(gamma) (1 + 8 H_R) (sympy)
+[DEFINITION] shift | claim_scope,Theorem P2 | the shift function (defined in P2's statement) | inline in the statement
+[DERIVED] P3gen | claim_scope,Theorem P3 | P3 general gamma | -gamma log(1+R) + 2 beta gamma^2 cosh(gamma)(1 + 8(1 + log(1+R))) = 18 beta gamma^2 cosh(gamma) - (gamma - 16 beta gamma^2 cosh(gamma)) log(1+R)
+[CACHE] gamma-choice | claim_scope,Theorem P3 | P3 choice of gamma | cache stdout line 19: PASS: D2 P3 (beta >= 5/256): gamma - (128/5) beta gamma^2 is concave with maximizer gamma* = 5/(256 beta) and maximum 5/(512 beta); the pref
+[CACHE] cosh1 | claim_scope,Theorem P3 | P3 constant | cache stdout line 18: PASS: D1 P3: 1 + 1 + 1/2 + 1/6 = 8/3 <= e; the tail sum_{k>=5} 1/k! <= (1/120)(6/5) = 1/100, so e <= 65/24 + 1/100 <= 11/4; cosh 1 <= (11/4 
+[CACHE] P3final | claim_scope,Theorem P3 | P3 final bound (9/16) | cache stdout line 19: PASS: D2 P3 (beta >= 5/256): gamma - (128/5) beta gamma^2 is concave with maximizer gamma* = 5/(256 beta) and maximum 5/(512 beta); the pref
+[DERIVED] P4a | claim_scope,Theorem P4 | P4(a) constants | 4 C_1 = 4 (3/2) e^{9/16} = 6 e^{9/16} (the runner's D3 prints 4 C_1); the x = 0 term 1/N with N = 4L^2 gives 1/(4L^2)
+[DEFINITION] kprime | Theorem P4 | kappa' (defined in P4's statement) | inline in the statement
+[RUNNER] P4-exec | Theorem P4 | P4 executed range (the cache prints the two exponents, not L <= 40) | present and checked in the runner source (not printed)
+[CACHE] P4-exp | Theorem P4 | D3 exponents | cache stdout line 20: PASS: D3 P4(a): sum_{j<=L} 8j(1+j)^{-kappa'} <= 8 L (1+L)^{1-kappa'} at kappa' = 1 (exact sums) and kappa' = 1/2 (termwise j^2 <= (1+j)(1+L)
+[CACHE] B4 | Theorem P1 | P1 executed polynomial | cache stdout line 15: PASS: B4 P1(ii): for the trigonometric polynomial F = (sum_{m<=4} (c cos phi)^m/m!) e^{i phi}, the period integral pi c (c^2 + 8)/8 is uncha
+[CACHE] ineq | Theorem P1 | B2 | cache stdout line 13: PASS: B2 P1(iii): cos phi + (cosh a - 1) - cos phi cosh a = (1 - cos phi)(cosh a - 1) >= 0
+[CACHE] R60 | Theorem P2 | C1 | cache stdout line 16: PASS: C1 P2(c): sup-norm shells have 8j sites on Z^2 (j < 30) and on the torus 8j (j < L), 4L-1 (j = L) <= 8j for L <= 12; sum_{j<=R} 8j/(1+
+[EXCLUDED] P2a | Theorem P2 | structural: values of the defined shift
+[EXCLUDED] P2-zero | Theorem P2 | structural
+[EXCLUDED] conds | claim_scope,Theorem P1,Theorem P2,Theorem P3,Theorem P4 | structural: conditions and limits
+[EXCLUDED] dims | claim_scope,Theorem P1,Theorem P2,Theorem P4 | structural
+[EXCLUDED] labels | Theorem P1,Theorem P2,Theorem P3,Theorem P4 | labels and references
+[EXCLUDED] imports | claim_scope,Theorem P3,Theorem P4 | wording
+[CACHE] two-site | Theorem P4 | E1 | cache stdout line 6: scope: the unsoldered sphere static law on a plane — the complex-shift identities, the shift function's shell sums, the explicit constants o
+[CACHE] P4b | Theorem P4 | P4(b) | cache stdout line 31: lattice_wide: P1-P4 proved for every beta > 0 on every window containing the disc, on tori and for infinite-volume laws on the plane; the tr
+[CONTROL] INFO (numbers only): beta=1: a decay (1+d)^-1 satisfies the bound (3/2)e^(9/16)(1+d)^-0.00977 at d = 1..10^8: True; beta=5: a decay (1+d)^-1 satisfies the bound (3/2)e^(9/16)(1+d)^-0.00195 at d = 1..10^8: True - the bound in P3/P4(b) is an upper bound whose exponent kappa(beta) -> 0 as beta grows
+[COVERAGE] 117 numeric tokens in the statement text; uncovered 0
+SUMMARY: 28 items over claim_scope + 4 theorem sections (117 numeric tokens, 0 uncovered): cache-sourced 11, runner-checked (not printed) 1, derived here from the note's formulas 5, definitions 4, excluded 7; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

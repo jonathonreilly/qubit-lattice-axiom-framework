@@ -1,0 +1,18 @@
+1/4 | psi equals 1 for u<=1/4 | runner: if u<=sp.Rational(1,4):return sp.Integer(1) | OK
+17 | program tag trace 17 = tr(8I+P) | runner: return (psi(abs(tr-5)**2),psi(abs(tr-17)**2+abs((A-8*I).det())**2), | OK
+8I | program encoding B=8I+P | runner: return (psi(abs(tr-5)**2),psi(abs(tr-17)**2+abs((A-8*I).det())**2), | OK
+2I | carrier A=2I+rho and scalar marker | runner: P=present[j]-8*I;x=sp.simplify(sp.re(sp.trace((present[i]-2*I)*P))) | OK
+tr A-5 | r(A)=psi(|tr A-5|^2) | runner: return (psi(abs(tr-5)**2),psi(abs(tr-17)**2+abs((A-8*I).det())**2), | OK
+3/4 | Z>=3/4 and lambda denominator | note: of continuous terms divided by Z>=3/4. For a smooth f, smooth compactly | OK
+6n | at most 6n blank sites of rate <=1 | note: present, there are at most6n such blank sites, each of rate at most1. The | OK
+exp(6t) | Gronwall bound n0 exp(6t) | note: count satisfies E N(t wedge tau_M)<=n_0 exp(6t) by its rate bound and Gronwall. | OK
+8/3 | f_S(1/4)=1/(1+exp(8/3)) | cache: EVIDENCE_JSON: {"diverse_projective_history": {"all_frontier_states_checked": 187, "guard_records": 87, "histories": [{"labels": [0, 0, 0, 0 | OK
+1+5L | |C|=1+5L seed sites | note: There are at most6|C| guard sites and |C|=1+5L. The bound is deliberately | OK
+3L | 3L writes / Erlang shape / E tau | cache: EVIDENCE_JSON: {"diverse_projective_history": {"all_frontier_states_checked": 187, "guard_records": 87, "histories": [{"labels": [0, 0, 0, 0 | OK
+1+2L | 1+2L nonzero seed records | note: Let C consist of T and these1+2L seed sites. Put a permanent zero-valued | OK
+187 | all_frontier_states_checked (executed L=5) | cache: EVIDENCE_JSON: {"diverse_projective_history": {"all_frontier_states_checked": 187, "guard_records": 87, "histories": [{"labels": [0, 0, 0, 0 | OK
+87 | guard_records (executed) | cache: EVIDENCE_JSON: {"diverse_projective_history": {"all_frontier_states_checked": 187, "guard_records": 87, "histories": [{"labels": [0, 0, 0, 0 | OK
+8 | TOTAL PASS checks | cache: TOTAL: PASS=8 FAIL=0 | OK
+IDENTITY | 1/(1+exp(8/3))=0.064969169129 != 1/4=0.25 | OK
+IDENTITY | |C|=1+5L and 3L writes for L=1..7 | OK
+SUMMARY: 15 theorem numbers, 0 unsourced

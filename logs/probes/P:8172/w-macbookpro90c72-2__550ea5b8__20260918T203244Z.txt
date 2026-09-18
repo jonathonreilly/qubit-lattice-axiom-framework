@@ -1,0 +1,12 @@
+PR #8172: [physics-loop] admissibility-induced-law block28 — bounded_theorem — bounded-support: the map of memory — where each of the four laws keeps its plane, located against the proved regions, with the healing and influence bounds
+branch physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py: rc=0 PASS=14 FAIL=0
+   mutation criterion_bracket_wrong: expected B observed B ok
+   mutation threshold_p0_wrong: expected B observed B ok
+   mutation eroder_bound_wrong: expected C observed C ok
+   mutation region_count_wrong: expected C observed C ok
+   mutation polynomial_wrong: expected C observed C ok
+   mutation influence_wrong: expected D observed D ok
+   mutation claim_reading_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

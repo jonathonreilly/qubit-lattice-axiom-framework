@@ -1,0 +1,15 @@
+PR #8142: [physics-loop] admissibility-induced-law block11 — bounded_theorem — bounded-support: the three-body term vanishes at exactly five nonconstant weight ratios — the exact exceptional locus
+branch physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915 (base physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915)
+runners in the PR: 1
+== scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py: rc=0 PASS=20 FAIL=0
+   mutation pattern_values_wrong: expected B observed B ok
+   mutation k2_ratio_factor_wrong: expected B observed B ok
+   mutation line_pq_factor_wrong: expected B observed B ok
+   mutation line_pr_values_wrong: expected B observed B ok
+   mutation declared_triple_on_locus_claimed: expected B observed B ok
+   mutation h_factor_wrong: expected C observed C ok
+   mutation psi_not_root_claimed: expected C observed C ok
+   mutation offline_pair_denied: expected C observed C ok
+   mutation numerators_nonzero_at_point_claimed: expected C observed C ok
+   mutation claim_physical_rule: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

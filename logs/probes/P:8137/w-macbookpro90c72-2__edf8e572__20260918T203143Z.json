@@ -1,0 +1,36 @@
+{
+ "task": "P:8137",
+ "type": "pr-reexecution",
+ "lane": "possibility-symmetric-order-dependence-2",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8137",
+ "pr": 8137,
+ "branch": "physics-loop/possibility-symmetric-order-dependence-20260915",
+ "git_sha": "edf8e572",
+ "started_utc": "20260918T203143Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py",
+    "returncode": 0,
+    "total": "PASS=31 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "988ae3b2a96dc4b8815ff394c6c528cbb6454dd511aac36799a46d887cca4346",
+ "stdout_tail": "PR #8137: [physics-loop] possibility-symmetric-order-dependence bounded_theorem bounded-support\nbranch physics-loop/possibility-symmetric-order-dependence-20260915 (base main)\nrunners in the PR: 1\n== scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py: rc=0 PASS=31 FAIL=0",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

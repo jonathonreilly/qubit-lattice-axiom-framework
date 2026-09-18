@@ -1,0 +1,4 @@
+PR #8137: [physics-loop] possibility-symmetric-order-dependence bounded_theorem bounded-support
+branch physics-loop/possibility-symmetric-order-dependence-20260915 (base main)
+runners in the PR: 1
+== scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py: rc=0 PASS=31 FAIL=0

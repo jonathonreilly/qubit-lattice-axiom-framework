@@ -1,0 +1,17 @@
+PR #8168: [physics-loop] admissibility-induced-law block25 — bounded_theorem — bounded-support: the three-dimensional formation law has an ordered phase — stability of the noisy level automaton with an explicit threshold; six invariant laws; block 12's S6 closed
+branch physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py: rc=0 PASS=22 FAIL=0
+   mutation kernel_closed_form_wrong: expected B observed B ok
+   mutation monotonicity_wrong: expected B observed B ok
+   mutation noise_map_max_wrong: expected B observed B ok
+   mutation domination_inequality_wrong: expected B observed B ok
+   mutation increment_wrong: expected C observed C ok
+   mutation fork_size_wrong: expected C observed C ok
+   mutation edge_bound_claimed_tighter: expected D observed D ok
+   mutation spanning_identity_wrong: expected D observed D ok
+   mutation subtree_bound_wrong: expected D observed D ok
+   mutation certificate_wrong: expected E observed E ok
+   mutation threshold_p0_wrong: expected E observed E ok
+   mutation claim_transition_located_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

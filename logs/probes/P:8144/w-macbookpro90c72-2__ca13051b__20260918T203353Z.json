@@ -1,0 +1,36 @@
+{
+ "task": "P:8144",
+ "type": "pr-reexecution",
+ "lane": "static-charge-transfer-sector-20260915",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8144",
+ "pr": 8144,
+ "branch": "physics-loop/static-charge-transfer-sector-20260915",
+ "git_sha": "ca13051b",
+ "started_utc": "20260918T203353Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "5d40ca84843caf3b3538a9e832956065b377226ee992a25dbb71c7eabeab03c5",
+ "stdout_tail": "PR #8144: [physics-loop] static-charge-transfer-sector: bounded_theorem, bounded-support\nbranch physics-loop/static-charge-transfer-sector-20260915 (base physics-loop/clock-static-charge-20260915)\nrunners in the PR: 1\n== scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+PR #8144: [physics-loop] static-charge-transfer-sector: bounded_theorem, bounded-support
+branch physics-loop/static-charge-transfer-sector-20260915 (base physics-loop/clock-static-charge-20260915)
+runners in the PR: 1
+== scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py: rc=0 PASS=4 FAIL=0

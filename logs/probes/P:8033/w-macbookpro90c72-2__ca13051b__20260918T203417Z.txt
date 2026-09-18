@@ -1,0 +1,4 @@
+PR #8033: [physics-loop] finite-pw-confinement block43 conditional-support
+branch codex/finite-pw-confinement-block43-20260907 (base codex/finite-pw-energy-block42-20260907)
+runners in the PR: 1
+== scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)

@@ -1,0 +1,36 @@
+{
+ "task": "P:8031",
+ "type": "pr-reexecution",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8031",
+ "pr": 8031,
+ "branch": "codex/finite-transporter-block41-20260907",
+ "git_sha": "ca13051b",
+ "started_utc": "20260918T203428Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "e3a562566490e1fe2f39a4eecd525ab588294a831d846b465596773a810836c7",
+ "stdout_tail": "PR #8031: [physics-loop] finite-transporter block41 conditional-support\nbranch codex/finite-transporter-block41-20260907 (base codex/continuum-boundary-block40-20260907)\nrunners in the PR: 1\n== scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203432Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

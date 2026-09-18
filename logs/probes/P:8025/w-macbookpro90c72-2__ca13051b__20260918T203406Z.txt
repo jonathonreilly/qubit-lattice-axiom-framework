@@ -1,0 +1,5 @@
+PR #8025: [physics-loop] local-observable block35 conditional-support
+branch codex/local-observable-block35-20260907 (base codex/volume-uniform-gap-block34-20260907)
+runners in the PR: 2
+== scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_local_observable_finite_region_pw_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)

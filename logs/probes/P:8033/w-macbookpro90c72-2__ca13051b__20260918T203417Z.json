@@ -1,0 +1,36 @@
+{
+ "task": "P:8033",
+ "type": "pr-reexecution",
+ "lane": "finite-pw-confinement-block43-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8033",
+ "pr": 8033,
+ "branch": "codex/finite-pw-confinement-block43-20260907",
+ "git_sha": "ca13051b",
+ "started_utc": "20260918T203417Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "9c4413bcba51fba8db037ab34032c0247133a522b09042dfa9b77d2f5e00f59e",
+ "stdout_tail": "PR #8033: [physics-loop] finite-pw-confinement block43 conditional-support\nbranch codex/finite-pw-confinement-block43-20260907 (base codex/finite-pw-energy-block42-20260907)\nrunners in the PR: 1\n== scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203419Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

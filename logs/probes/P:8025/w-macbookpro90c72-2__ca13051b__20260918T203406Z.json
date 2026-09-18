@@ -1,0 +1,41 @@
+{
+ "task": "P:8025",
+ "type": "pr-reexecution",
+ "lane": "local-observable-block35-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8025",
+ "pr": 8025,
+ "branch": "codex/local-observable-block35-20260907",
+ "git_sha": "ca13051b",
+ "started_utc": "20260918T203406Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_local_observable_finite_region_pw_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "e145162e3d9cbb01f6901979560087416def0319582346b9e4a0cee956ae98d0",
+ "stdout_tail": "PR #8025: [physics-loop] local-observable block35 conditional-support\nbranch codex/local-observable-block35-20260907 (base codex/volume-uniform-gap-block34-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_local_observable_finite_region_pw_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203408Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

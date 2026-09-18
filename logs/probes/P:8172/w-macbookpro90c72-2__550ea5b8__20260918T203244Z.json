@@ -1,0 +1,37 @@
+{
+ "task": "P:8172",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block28-map-of",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8172",
+ "pr": 8172,
+ "branch": "physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916",
+ "git_sha": "550ea5b8",
+ "started_utc": "20260918T203244Z",
+ "elapsed_s": 58.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "4baeef1456ce917e41f7a3e61b08c5a33ca35d4074d66d5b4dd4a43f68d6ab03",
+ "stdout_tail": "PR #8172: [physics-loop] admissibility-induced-law block28 \u2014 bounded_theorem \u2014 bounded-support: the map of memory \u2014 where each of the four laws keeps its plane, located against the proved regions, with the healing and influence bounds\nbranch physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py: rc=0 PASS=14 FAIL=0\n   mutation criterion_bracket_wrong: expected B observed B ok\n   mutation threshold_p0_wrong: expected B observed B ok\n   mutation eroder_bound_wrong: expected C observed C ok\n   mutation region_count_wrong: expected C observed C ok\n   mutation polynomial_wrong: expected C observed C ok\n   mutation influence_wrong: expected D observed D ok\n   mutation claim_reading_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203342Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

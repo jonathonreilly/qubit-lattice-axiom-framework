@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8178",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jec0f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8178/estimator_exact_variance.py",
+ "seed": 69674,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9f63e66e",
+ "started_utc": "20260918T221434Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed in part - the linear-model calibration range: reproduced (0.960 at (12, 32) lag 1000 rounds to 0.96 < 0.97; the calibration ratio at lag 1000 has exact sd up to 0.036, so the stated range is the sample's, not the estimator's); not reproduced: (12, 32) D_1 = 1.18: the claim_scope names no lag and the note defines D_1 at any lag short against tau_L = 37917; 1.18 is reproduced by the lag-[50] control value and lies inside the executed short-lag range; it is not the lag-25 value 1.165 (the note's own lag-25 column says 1.17, and the other five claim_scope numbers are that column), an internal inconsistency of 0.01 rather than a number the control contradicts | the upper end: the largest executed ratio 1.014 rounds to 1.01 = the stated 1.01; the finder compared three decimals with the claim's two"
+ },
+ "review": "Independent test at the claim's two-decimal precision plus the exact sampling law of the calibration estimator: the linear-model range 0.97-1.01 in the claim_scope disagrees with the control output (0.960 at (12,32) lag 1000 rounds to 0.96 under both roundings, as the note's own table prints; 0.960 and 0.965 also break the body's 'within three percent at every coupling and lag'; the exact estimator sd at lag 1000 is 0.030-0.042, Monte Carlo 0.0360 vs exact 0.0362), so that part of the finder's HIT is confirmed; the (12,32) D_1 = 1.18 is not contradicted by the control (the claim names no lag; the lag-50 value 1.175 rounds to it, and the executed short-lag range is 1.165-1.225), and the upper-end 1.014 rounds to the stated 1.01.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8178/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "4a2ed279566261747c3cde37b17b86f7f85e3df11ab9ce27ea010590a0d7de17",
+ "stdout_tail": " |z| over all 36 entries -1.60 at ((6, 16), 200); Monte Carlo of the zero-mode walk at (12, 32), 1000 replicas of the 4-seed estimator: lag 25 mean 0.9999 sd 0.0069 (exact 0.0070), lag 1000 mean 0.9994 sd 0.0360 (exact 0.0362); probability that the lag-1000 ratio at (12, 32) falls outside the stated two-decimal range [0.965, 1.015): 0.47\nHIT: confirmed - the claim_scope's linear-model range 0.97-1.01 disagrees with the control output: 0.960 at (beta, L) = (12, 32), lag 1000 rounds below 0.97 under both roundings (the note's own table lists 0.96); the body's 'within three percent at every coupling and lag' fails at 0.965 at (6, 32), lag 1000; 0.960 at (12, 32), lag 1000\nSUMMARY: confirmed in part - the linear-model calibration range: reproduced (0.960 at (12, 32) lag 1000 rounds to 0.96 < 0.97; the calibration ratio at lag 1000 has exact sd up to 0.036, so the stated range is the sample's, not the estimator's); not reproduced: (12, 32) D_1 = 1.18: the claim_scope names no lag and the note defines D_1 at any lag short against tau_L = 37917; 1.18 is reproduced by the lag-[50] control value and lies inside the executed short-lag range; it is not the lag-25 value 1.165 (the note's own lag-25 column says 1.17, and the other five claim_scope numbers are that column), an internal inconsistency of 0.01 rather than a number the control contradicts | the upper end: the largest executed ratio 1.014 rounds to 1.01 = the stated 1.01; the finder compared three decimals with the claim's two\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jec0f",
+  "at_utc": "20260918T221444Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed in part: the claim_scope's linear-model calibration range 0.97-1.01 disagrees with its control output (0.960 at (beta,L)=(12,32), lag 1000; the note's own table lists 0.96); not reproduced: (12,32) D_1=1.18 (no lag named; lag-50 control value 1.175 rounds to it) and the upper end 1.014 (rounds to 1.01). Same numbers as #8192/#8224/#8238.",
+  "by": "w-jonathonsmac4f50-jec0f",
+  "at_utc": "20260918T221444Z"
+ }
+}

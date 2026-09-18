@@ -1,0 +1,32 @@
+PR #8169 head 7e268bd96e; cache 29 stdout lines; statement sections: claim_scope, Theorem 1, Theorem 2, Theorem 3, Theorem 4, Theorem 5
+[DEFINITION] S-def | claim_scope,Theorem 1 | the four-point set | declared under Premises and declared objects
+[EXCLUDED] two-nbr | claim_scope | name of the support class
+[CACHE] four-pts | claim_scope,Theorem 1,Theorem 4,Theorem 5 | four distinct points (B1) | cache stdout line 12: PASS: B1-orthogonal-four-distinct the reference orthogonal pair has inner product 0 and four distinct support points
+[CACHE] family | claim_scope,Theorem 3 | C1 two-function family | cache stdout line 16: PASS: C1-two-function-family Aut-plus-swap covariant four-point laws are the copy/flip family 2α+2γ=1
+[CACHE] sum1 | claim_scope,Theorem 2 | C1 normalization | cache stdout line 16: PASS: C1-two-function-family Aut-plus-swap covariant four-point laws are the copy/flip family 2α+2γ=1
+[CACHE] rot180 | claim_scope,Theorem 2 | B2/B3 the half-turns | cache stdout line 13: PASS: B2-swap-maps-pair the 180-degree Aut about the bisector swaps the two neighbours and preserves the four-point set
+[CACHE] t0-gibbs | claim_scope,Theorem 3 | C2 the coupling | cache stdout line 17: PASS: C2-gibbs-at-orthogonal pair-Gibbs with e^{2β}=2 at t=0 has copy mass 1/3, flip mass 1/6, inside the two-function family
+[CACHE] gibbs-masses | claim_scope,Theorem 3 | C2 Gibbs masses | cache stdout line 17: PASS: C2-gibbs-at-orthogonal pair-Gibbs with e^{2β}=2 at t=0 has copy mass 1/3, flip mass 1/6, inside the two-function family
+[CACHE] linear | claim_scope,Theorem 3 | C4 linear family | cache stdout line 19: PASS: C4-linear-family the linear family (1+λ s·(q+q'))/4 interpolates uniform, deterministic copy, and deterministic flip at t=0
+[CACHE] born | claim_scope,Theorem 4 | D1/D2 the overlap | cache stdout line 11: PASS: A4-note-contract the note states the four-point weight family, the Born obstruction, and the support obstruction
+[DERIVED] born-values | claim_scope,Theorem 4 | Born values at the orthogonal pair | (1 + s.q)/2 at q, q', -q, -q' for the orthogonal pair: ['1', '1/2', '0', '1/2'], sum 2
+[CACHE] born-sum | claim_scope,Theorem 4 | D1 Born sum | cache stdout line 20: PASS: D1-born-not-four-point the two-outcome Born overlap on the four-point set sums to 2 and is not a four-point probability
+[DEFINITION] path3 | claim_scope,Theorem 5 | the three-site path (declared scaffolding) | declared under Premises and declared objects
+[CACHE] supports | claim_scope,Theorem 5 | E1-E3 support cardinalities | cache stdout line 24: PASS: E3-cardinalities-differ the middle's support has two points in the chain and four in ends-first, so the sequential products cannot agr
+[CACHE] ortho-ref | Theorem 1 | B1 the reference pair | cache stdout line 12: PASS: B1-orthogonal-four-distinct the reference orthogonal pair has inner product 0 and four distinct support points
+[DERIVED] map | Theorem 2 | Theorem 2's explicit half-turn | the 180-degree rotation about (e_x + e_z)/sqrt2 is 2bb^T - I, sending (x, y, z) to (z, -y, x), determinant 1 (sympy)
+[EXCLUDED] nonneg | Theorem 2 | structural: probabilities are non-negative
+[CACHE] t0-flip | Theorem 2 | B3 | cache stdout line 14: PASS: B3-flip-second-preserves-set the 180-degree Aut about q sends the second neighbour to its opposite and preserves the four-point set
+[DERIVED] ratio | Theorem 3 | Theorem 3 ratio | p(q)/p(-q) = exp(beta(1 + t))/exp(-beta(1 + t)) = exp(2 beta (1 + t)) since s.(q + q') = +-(1 + t) on the copy/flip points
+[DERIVED] beta0 | Theorem 3 | Theorem 3 beta = 0 | beta = 0: all four weights equal, alpha = gamma = 1/4 (the runner's C3 prints 'the uniform four-point law')
+[DERIVED] linalpha | Theorem 3 | Theorem 3 linear alpha | normalizing 1 + lambda s.(q + q') over S (total 4) gives alpha = (1 + lambda(1 + t))/4 (sympy)
+[CACHE] lambdas | Theorem 3 | C4 the three values of lambda | cache stdout line 19: PASS: C4-linear-family the linear family (1+λ s·(q+q'))/4 interpolates uniform, deterministic copy, and deterministic flip at t=0
+[CACHE] e-z-x | Theorem 5 | E the executed ends | cache stdout line 22: PASS: E1-chain-support-two in the chain order the middle's one-neighbour finite support is the antipodal pair of the left end
+[CACHE] one-nbr | claim_scope,Theorem 5 | E1 | cache stdout line 22: PASS: E1-chain-support-two in the chain order the middle's one-neighbour finite support is the antipodal pair of the left end
+[CACHE] two-rec | claim_scope,Theorem 4,Theorem 5 | E2 | cache stdout line 23: PASS: E2-ends-support-four in the ends-first order the middle's two-neighbour support is the four-point set, a strict superset
+[EXCLUDED] two-outcome | claim_scope,Theorem 4 | name of the overlap
+[EXCLUDED] pair-word | claim_scope,Theorem 2,Theorem 3,Theorem 5 | wording ('pair' as a noun; the two neighbours)
+[EXCLUDED] SO3 | Theorem 1 | group name
+[EXCLUDED] pronoun-one | Theorem 3 | wording ('one' as a pronoun)
+[COVERAGE] 94 numeric tokens in the statement text; uncovered 0
+SUMMARY: 29 items over claim_scope + 5 theorem sections (94 numeric tokens, 0 uncovered): cache-sourced 16, derived here from the note's formulas 5, definitions 2, excluded 6; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

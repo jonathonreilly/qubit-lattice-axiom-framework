@@ -1,0 +1,29 @@
+PR #8155 head c286f2fc6a; cache 34 stdout lines; statement sections: claim_scope, Theorem W1, Theorem W2, Theorem W3, Theorem W4, Theorem W5, Corollary W6
+[CACHE] defs | claim_scope,Theorem W2 | the constants (C2) | cache stdout line 17: PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha =
+[DEFINITION] six | claim_scope | h the sum of the six neighbours | declared under Premises and declared objects
+[EXCLUDED] ref | claim_scope,Corollary W6 | references
+[CACHE] W1 | claim_scope,Corollary W6,Theorem W1,Theorem W2,Theorem W3,Theorem W4,Theorem W5 | W1 | cache stdout line 17: PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha =
+[CACHE] cov-half | claim_scope,Corollary W6,Theorem W1,Theorem W2,Theorem W3,Theorem W4,Theorem W5 | W1(iii) | cache stdout line 16: PASS: C1 W1(iii): on a three-point weighted space, d/dt P_t(A) = beta [E_t(X 1_A) - P_t(A) E_t(X)] = beta Cov_t(X, 1_A) symbolically; p(1-p)
+[CACHE] eig | claim_scope | W1(ii) | cache stdout line 17: PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha =
+[CACHE] ratios | claim_scope | W1(ii) ratios | cache stdout line 14: PASS: B2 W1(ii): the coefficient ratios of (3 sinh^2 x - 3x^2)/(x^2 sinh^2 x) and (x cosh x - sinh x)/((x^2/3) sinh x) are 6/(n(2n-1)) and 3
+[CACHE] W2 | claim_scope,Theorem W2 | W2 | cache stdout line 17: PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha =
+[DERIVED] W2row | Theorem W2 | W2 row sum | six neighbours times beta/sqrt3 = 2 sqrt3 beta = alpha; alpha < 1 iff beta < 1/(2 sqrt3) = sqrt3/6
+[CACHE] tanh | Theorem W2 | W2 antipodal value | cache stdout line 18: PASS: C3 W2: at zero field the antipodal change has TV(P_e, P_-e) = (2 pi/Z) int_0^1 (e^{beta t} - e^{-beta t}) dt = tanh(beta/2); tanh(beta
+[DERIVED] factor | Theorem W2 | W2 factor | tanh(beta/2)/(beta/sqrt3) -> sqrt3/2 (sympy), i.e. the bound beta/sqrt3 is within the factor 2/sqrt3 of the antipodal truth
+[CACHE] W3 | claim_scope,Corollary W6,Theorem W1,Theorem W2,Theorem W3,Theorem W4,Theorem W5 | W3 (D2) | cache stdout line 20: PASS: D2 W3 step 3: on the cube window at alpha = 9/10, D = (I - C)^{-1} is entrywise nonnegative, u* = D b is the fixed point of Phi, the i
+[CACHE] walks | Theorem W3 | W3 walk bound (D3) | cache stdout line 21: PASS: D3 W3/W5 walk bounds on the 7^3 box at alpha = 9/10: sum_y (C^k)_{0y} <= alpha^k, (C^k)_{0x} = 0 for k < |x|_1, and sum_{k<=16} (C^k)_
+[EXCLUDED] W3cond | Theorem W3 | structural
+[DERIVED] W4a | claim_scope,Corollary W6,Theorem W1,Theorem W2,Theorem W3,Theorem W4,Theorem W5 | W4(a) | sites of Delta_ell have |x|_inf <= ell and exterior sites of Lambda_L have |y|_inf = L + 1, so |x - y|_1 >= L - ell + 1; W3's walk bound gives alpha^(L - ell + 1)/(1 - alpha)
+[CACHE] W4 | claim_scope,Corollary W6,Theorem W2,Theorem W4,Theorem W5 | the threshold | cache stdout line 17: PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha =
+[EXCLUDED] W4-exp | Theorem W4 | structural: rotation invariance
+[CACHE] W5a | claim_scope,Corollary W6,Theorem W1,Theorem W2,Theorem W3,Theorem W4,Theorem W5 | W5(a)/(b) | cache stdout line 21: PASS: D3 W3/W5 walk bounds on the 7^3 box at alpha = 9/10: sum_y (C^k)_{0y} <= alpha^k, (C^k)_{0x} = 0 for k < |x|_1, and sum_{k<=16} (C^k)_
+[CACHE] W5c | claim_scope,Theorem W5 | W5(c) (D4) | cache stdout line 22: PASS: D4 W5(c): 1 + 2 sum_{j=1}^{L-1} a^j + a^L = (1+a)/(1-a) - a^L (1+a)/(1-a) <= (1+a)/(1-a) symbolically for L = 1..12; 1 + 2a/(1-a) = (1
+[DERIVED] W5d | claim_scope,Theorem W5 | W5(d) | sum_x |<s_0.s_x>| <= (1 - alpha)^(-1) sum_x alpha^(d_T) <= ((1 + alpha)/(1 - alpha))^3/(1 - alpha) (D4's torus sum)
+[EXCLUDED] torus | Theorem W5 | structural
+[EXCLUDED] W6 | claim_scope,Corollary W6 | reference: block 19's constant (placement)
+[EXCLUDED] imports | claim_scope | wording
+[EXCLUDED] words | claim_scope,Corollary W6,Theorem W2,Theorem W3,Theorem W4 | wording and notation (number words; the indicator 1_A; limits; block 19's 1/(beta E(k)))
+[CACHE] C2exec | Theorem W2 | W2 executed | cache stdout line 17: PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha =
+[CACHE] dT | Theorem W5 | W5(b) (the torus distance in place of |x|_1) | cache stdout line 21: PASS: D3 W3/W5 walk bounds on the 7^3 box at alpha = 9/10: sum_y (C^k)_{0y} <= alpha^k, (C^k)_{0x} = 0 for k < |x|_1, and sum_{k<=16} (C^k)_
+[COVERAGE] 74 numeric tokens in the statement text; uncovered 0
+SUMMARY: 26 items over claim_scope + 6 theorem sections (74 numeric tokens, 0 uncovered): cache-sourced 14, runner-checked (not printed) 0, derived here from the note's formulas 4, definitions 1, excluded 7; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

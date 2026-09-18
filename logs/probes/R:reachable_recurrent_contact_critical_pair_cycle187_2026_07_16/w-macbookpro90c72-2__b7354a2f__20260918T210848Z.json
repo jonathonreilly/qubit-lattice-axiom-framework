@@ -1,0 +1,32 @@
+{
+ "task": "R:reachable_recurrent_contact_critical_pair_cycle187_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "reachable",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/reachable_recurrent_contact_critical_pair_cycle187_2026_07_16.py",
+ "seed": 65728,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T210848Z",
+ "elapsed_s": 19.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b1a2ce52781118a013b43dd47f94f2f881c27bf214647a875df8a3d5a41420c6",
+ "stdout_tail": "e immediate predecessor :: 20\nPASS the shared predecessor enables exactly two adjacent record writes :: (((1, 2, 3), 'R_B23', (((-1, 0, 0), 'R_A23'), ((0, -1, 0), 'R_B13'))), ((1, 2, 4), 'R_B30', (((-1, 0, 0), 'R_A30'), ((0, 0, 1), 'R_B31'), ((0, 1, 0), 'R_B40'))))\nPASS either adjacent write permanently disables every remaining write :: [(), ()]\nPASS the two permanent terminals differ only by the competing record :: frozenset({frozenset({((1, 2, 3), 'R_B23')}), frozenset({((1, 2, 4), 'R_B30')})})\n\nHORIZON AND COVARIANCE CONTROLS\nPASS the same early split survives horizons three, six, and nine :: {3: (144, 952, 1820, 2, (21, 21), 2, 0), 6: (338, 1972, 3758, 2, (21, 21), 2, 0), 9: (532, 2992, 5696, 2, (21, 21), 2, 0)}\nPASS all 24 proper-cubic images preserve the reachable split :: ()\n\nSCOPE\nFAIL the note carries the bounded reachability and no-go discipline :: ('supplied two-tube boundary', 'not a cosmological-boundary reachability theorem', 'n1 \u2014 alternative routes', 'n8 \u2014 cross-cycle echo', 'no axiom addition follows')\n\nACCOUNTING\nCONTACT_OFFSETS 28\nTERMINAL_HISTOGRAM Counter({0: 14, 1: 12, 2: 2})\nWITNESS_OFFSET (0, -1, 4)\nWITNESS_WRITES (((1, 2, 3), 'R_B23', (((-1, 0, 0), 'R_A23'), ((0, -1, 0), 'R_B13'))), ((1, 2, 4), 'R_B30', (((-1, 0, 0), 'R_A30'), ((0, 0, 1), 'R_B31'), ((0, 1, 0), 'R_B40'))))\nHORIZON_COUNTS {3: (144, 952, 1820, 2, (21, 21), 2, 0), 6: (338, 1972, 3758, 2, (21, 21), 2, 0), 9: (532, 2992, 5696, 2, (21, 21), 2, 0)}\nPASS 12 FAIL 2\nRESULT CYCLE187_NEEDS_REPAIR\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T210908Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

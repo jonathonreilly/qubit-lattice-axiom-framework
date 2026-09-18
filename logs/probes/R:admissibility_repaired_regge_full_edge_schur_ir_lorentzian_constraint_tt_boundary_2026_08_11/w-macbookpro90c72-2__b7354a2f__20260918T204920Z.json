@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_repaired_regge_full_edge_schur_ir_lorentzian_constraint_tt_boundary_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_repaired_regge_full_edge_schur_ir_lorentzian_constraint_tt_boundary_2026_08_11.py",
+ "seed": 64560,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T204920Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b6107467cdf7cf9640d44fad5bcf2a8fdc74ae71a88d926de157811f919ee059",
+ "stdout_tail": "7\n[PASS] conditional-lorentzian-static-continuity: the candidate Lorentzian constraint solve preserves the positive-source h_tt residue inh...\n       h_tt=2.000000000000; residual=4.041e-16\n[PASS] axiom-dynamics-selection-boundary: the source note keeps the Lorentzian continuation conditional because the axioms supply ...\n[PASS] fresh-no-go-discipline-packet: the narrow current-axiom boundary passes N1 through N8 while preserving constructive dyn...\nN5_CERTIFICATE: fifteen edge coordinates, ten metric coordinates, five nonmetric directions, ten momentum monomials, and the full candidate constraint block are resolved\nper_element: checked all fifteen edge classes, all ten metric components, and every entry of each quadratic-momentum coefficient\nper_site: checked the flat unit-cell tangent split and one Ward-compatible unit static tick source\nper_mode: checked all ten quadratic momentum monomials, one generic finite-momentum sequence, and shell/off-shell TT samples\nper_block: checked the complete 15=(10+5) stationary Schur block, Lorentzian multiplier block, null shell, and Bianchi identity\nlattice_wide: the translation-invariant real-space kernel fixes the infrared coefficient only; no full-zone, full-Z3 phase, or causal update theorem is claimed\nscope_boundary: supplied repaired flat action and conditional standard Lorentzian continuation; action selection, Record update, physical inner product, nonlinear constraints, and stable nonflat phase remain open\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+PASS seeded control is unitary
+PASS every tested kernel is doubly stochastic
+PASS channel representation equals K_(m+n)-K_m K_n
+PASS entrywise defect equals distinct-intermediate-path cross terms
+PASS cadence defect has zero row and column sums
+PASS interval order is non-vacuous on the seeded control
+PASS monomial unitary closes every tested cadence pair
+PASS finite-order nonmonomial recurrence does not imply kernel semigroup closure
+PASS Hadamard determinant bound is strict on the seeded nonmonomial kernel
+PASS determinant-bound saturation gives one unit entry per column
+TOTAL PASS=10 FAIL=0
+BOUNDARY: finite supplied unitaries and a declared rank-one frame; no instrument, Record, probability law, clock, or mass law is derived

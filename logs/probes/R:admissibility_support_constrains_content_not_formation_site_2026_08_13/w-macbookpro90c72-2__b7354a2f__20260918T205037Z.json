@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_support_constrains_content_not_formation_site_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_support_constrains_content_not_formation_site_2026_08_13.py",
+ "seed": 64637,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205037Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "02b3da14109dad6094b8a69e090bde52f6ce3ee7930e95b2b2e8408a42f5b49a",
+ "stdout_tail": "SS: theorem1-a-and-b-are-lockable\nPASS: mutation-positive-c-defeats-exclusion\nPASS: mutation-zero-a-removes-a-from-support\nPASS: extension-x-well-typed\nPASS: extension-y-well-typed\nPASS: extension-xy-well-typed\nPASS: theorem2-site-distinct-extensions\nPASS: theorem2-same-content-projection\nPASS: theorem3-multiplicity-distinct-extensions\nPASS: theorem3-same-content-projection\nPASS: complete-fiber-has-eight-extensions\nPASS: complete-fiber-site-sets-and-multiplicities\nPASS: mutation-empty-extension-rejected\nPASS: mutation-zero-mass-lock-rejected\nPASS: mutation-lock-domain-mismatch-rejected\nPASS: mutation-duplicate-site-lock-rejected\nPASS: note-machine-status-complete\nPASS: note-one-hop-dependency-current\nPASS: note-does-not-claim-two-vertex-z3-fragment\nPASS: note-distinguishes-multiplicity-from-rate\nPASS: note-post-reset-absence-boundary\nPASS: note-no-go-n1-through-n8\nPASS: note-no-go-route-enumeration\nPASS: note-steelman-accepts-full-rule-route\nPASS: note-live-partial-closure-routes\nPASS: note-n5-five-line-certificate\nN5_CERTIFICATE:\nper-element: executed \u2014 support and every displayed lock are checked\nper-site: executed \u2014 the two abstract labels x and y are enumerated\nper-mode: not applicable \u2014 no modal or spectral decomposition is used\nper-block: executed \u2014 only the declared two-label extension fiber is checked\nlattice-wide: not executed \u2014 no Z^3 history or formation process is claimed\nPASS: note-explicit-nonclaims\nPASS: note-does-not-upgrade-finite-scope\nTOTAL: PASS=42 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205037Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

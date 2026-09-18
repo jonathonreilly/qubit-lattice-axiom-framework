@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_selective_instrument_atom_criterion_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_selective_instrument_atom_criterion_2026_06_05.py",
+ "seed": 64705,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205145Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a7daca11591aab302a8251e8f3a6a3036abe154a3e47e226e9d10d0bdf484ba",
+ "stdout_tail": " gate\n------------------------------------------------------------------------------\n  [PASS] empty history has no atom\n  [PASS] selected atom appends to history\n  [PASS] second selected atom appends in order\n  [PASS] nonselective density is not appended as atom\n  [PASS] history length counts selected atoms\n\n------------------------------------------------------------------------------\n4. Source note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/RECORD_SELECTIVE_INSTRUMENT_ATOM_CRITERION_2026-06-05.md)\n  [PASS] note contains marker: actual_current_surface_status: bounded-support\n  [PASS] note contains marker: trace_class: upstream_support\n  [PASS] note contains marker: selective atom criterion\n  [PASS] note contains marker: Does not derive outcome selection\n  [PASS] note contains marker: nonselective state `sum_i M_i(rho)` is not a single atom\n  [PASS] note contains marker: audit_required_before_effective_retained: true\n  [PASS] forbidden wording absent: selection closure\n  [PASS] forbidden wording absent: born closure\n  [PASS] forbidden wording absent: collapse closure\n  [PASS] forbidden wording absent: rate closure\n  [PASS] forbidden wording absent: dial closure\n  [PASS] forbidden wording absent: audit verdict\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

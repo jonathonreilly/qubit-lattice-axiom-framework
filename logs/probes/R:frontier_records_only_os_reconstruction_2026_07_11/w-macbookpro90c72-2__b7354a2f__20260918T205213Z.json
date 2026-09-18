@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_records_only_os_reconstruction_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_records_only_os_reconstruction_2026_07_11.py",
+ "seed": 64733,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205213Z",
+ "elapsed_s": 35.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "37d827f89bc93000e5b2f8408220d1a56e2dd51489b943ca57851ec3ed624261",
+ "stdout_tail": "egistrable=additive/K-even/phase-free with the bridge-carried orbit clause (REGISTRABLE_READOUT_..._2026-06-10); file 7 K-odd not registered (ACPHILAMBDA_K_ODD_CARRIER_..._2026-07-03); file 8 axioms + Qualification (MINIMAL_AXIOMS_2026-06-29); block 9 enforcer localization.\nRESIDUAL (declared-open): the C_3[111] rotation-channel circulant W = a I + b C + c C^2 is a DECLARED probe coupling (PR #3551, per block 9), not a derived Yukawa; channel-independence of the holomorphy/tie split is the channel-space companion's result, cited by block 9.\n\nTOTAL: PASS=24 FAIL=0\nVERDICT: BOUNDED TWO-BRANCH RECONSTRUCTION.  Conditional on the same W on both slices, the stated OS reflection/crossing, and the P-even record span, the normalized records-only Gram is Hermitian exactly on W^dagger IN {W,PWP}: the K-tied branch (a real,c=conj(b)) and the all-real branch (a,b,c real).  The tied branch is PD on its whole domain.  The all-real branch is PSD exactly for (Im lambda_1)^2<=1/8 and PD for strict inequality, equivalently (b-c)^2<=1/6 and <1/6 at the stated crossing.  A spectral-readout identification plus a three-distinct-value comparator selects the tie by excluding the all-real conjugate-pair degeneracy.  The W^dagger,W alternating placement is an exact positive escape after dropping time-homogeneity, so no universal emergent-time no-go is claimed. The |b|^2 and |lambda_1|^2 identities do not supply an equipartition law and do not derive r=1 or r=1/2.  No premise adopted; no audit status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205249Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

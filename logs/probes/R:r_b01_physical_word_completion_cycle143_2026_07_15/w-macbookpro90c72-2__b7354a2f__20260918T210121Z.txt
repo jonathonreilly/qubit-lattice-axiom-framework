@@ -1,0 +1,30 @@
+PHYSICAL WORD
+FAIL review note exists :: 
+PASS eight data records are literal R_B01=10010001 :: (1, 0, 0, 1, 0, 0, 0, 1)
+PASS writer remains twelve canonical / 288 raw rows :: (12, 288)
+PASS completion is one canonical / 24 raw rows :: 24
+PASS 8,696-row union is single-valued and alphabet-closed :: 
+PASS D7 and completion are the only semantic retargets from Cycle 121 :: 
+
+EXACT HISTORY
+PASS all schedules reach one complete 99-write terminal :: (247144, 1586166, 12)
+PASS R_B01 completion never precedes any physical bit :: (247144, ())
+PASS terminal decodes the word and carries R_B01 completion :: 
+
+CORRUPTION AND COVARIANCE
+PASS all 459 completion-parent mutations suppress R_B01 completion :: (459, ())
+PASS alternate valid roles are typed alternate fronts, not false R_B01 :: 5
+PASS eight source-bit flips plus wrong VALID/READY reach no new writer record :: ()
+PASS all 208,704 proper-cubic raw images preserve output :: []
+FAIL note carries N1-N8 discipline :: 
+FAIL note makes no axiom addition :: 
+
+ACCOUNTING
+WORD 10010001
+WRITER_CANONICAL 12
+WRITER_RAW 288
+COMPLETION_RAW 24
+STATES 247144
+EDGES 1586166
+PASS 12 FAIL 3
+RESULT FAIL

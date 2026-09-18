@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_covariance_extension_classification_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_rule_covariance_extension_classification_2026_07_03.py",
+ "seed": 64563,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T204923Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3cbf314dab9860c962f919ed0dceef2b6a2c5e2dfe8c70674107eb76489ba1d8",
+ "stdout_tail": "S: B1 openness patterns achiral | Burnside proper/full=10/10; direct proper/full=10/10; p-related=64\nPASS: B2 ternary chiral pair count | Burnside proper/full=57/56; difference=1; direct chiral orbit sizes=[24, 24]; representative=(0, 1, 0, 2, 1, 2) (every axis bi-colored, every color used twice)\nPASS: B3 quaternary chiral pair count | Burnside proper/full=240/220; difference=20; direct chiral pairs=20\nPASS: B4 oriented frame witness membership | witness=(1, 0, 2, 0, 3, 0); k=4 orbit pair=(65, 72)\nPASS: B5 witness P-image separation | proper maps found=0\nPASS: C1 frame_sign proper split | full orbit=48; proper split=24/24\nPASS: C2 chiral orbit odd channel dimension | proper-invariant rank=2; P-odd factors=0.5,-0.5\nPASS: D0 antilinear value premise | Pauli generators map to their negatives; scalar coefficients conjugate\nPASS: D1 twisted imaginary sign invariant | group elements checked=48; orbit size=48\nPASS: D2 real sign determinant character | group elements checked=48; orbit size=48\nPASS: D3 achiral scalar readout zero | nonzero imaginary example=(0, 1, 0, 2, 0, 3)\nPASS: D4 twist load-bearing | P under untwisted action sends R0 to -R0 on 48 colorings\nPASS: E1 chiral rule pair exchange | proper-fixed pair is distinct and exchanged by inversion\nPASS: E2 theta seed transport | draws=50; nonzero D=49; signs=1/-1\nPASS: E3 scalar and pair cancellation | pair sum=0; readable real zero=True\nPASS: E4 one orientation bit | draws=20; base sign=1; flipped sign=-1\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

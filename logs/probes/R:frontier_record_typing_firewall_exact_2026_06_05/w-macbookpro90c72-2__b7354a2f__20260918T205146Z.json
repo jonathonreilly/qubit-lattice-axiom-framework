@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_typing_firewall_exact_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_typing_firewall_exact_2026_06_05.py",
+ "seed": 64706,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205146Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "664aff72a5d6b9310f6997e0f46eca3914d665b4288e6fae5da3f526854bbaac",
+ "stdout_tail": "n.\nper_mode: exercised, at sector granularity and no finer -- the fixed K/CPT action is verified sector by sector, each of the 3 central sectors separately satisfying K(K(s)) = s, and the record alphabet is then derived from that per-sector action rather than assumed. These are central sectors, however: no spectrum is computed and no dynamical mode is separated, and the certificate claims nothing beyond the sector level.\nper_block: exercised, and the firewall is stated at exactly this granularity -- the sectors fall into 2 K/CPT orbit blocks, a singlet block and a doublet block, and those blocks are the record atoms. The additive readout is checked to split over disjoint blocks with I(empty)=0, and the whole type-level result is that a block is an event while a probability is a separate normalized state that assigns numbers to blocks.\nlattice_wide: checked and not executed -- nothing here has spatial extent, so no whole-lattice quantity exists and no finite-N or limiting statement is available. The one exhaustive global check present is Boolean closure over all 4x4 pairs of events in the powerset algebra, which is a statement about an algebra over record atoms and carries no volume, no size parameter and no limit.\n\n=== Scorecard ===\nPASS=27 FAIL=0\nFINDING: from the Record axiom plus a supplied finite readout context, a realized record is an orbit/atom. A probability is a separate normalized state on the event algebra. Record supplies the former and explicitly not the latter.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205146Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

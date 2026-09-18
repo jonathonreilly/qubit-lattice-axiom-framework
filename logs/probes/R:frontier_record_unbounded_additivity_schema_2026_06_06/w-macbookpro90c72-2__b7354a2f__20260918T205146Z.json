@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_record_unbounded_additivity_schema_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py",
+ "seed": 64706,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205146Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=51 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "113589785a4954688e02df7400272c90e06be2dd726a8e287f9ad113761be9f1",
+ "stdout_tail": "id_typicality: open\n    clock_rate: open\n    dial_selection: open\n\nF. dependency-edge and supplied-context firewall\n[PASS] source note states open_gate / conditional-support status\n[PASS] source note has post-audit claim-type repair\n[PASS] source note has dependency-edge firewall\n[PASS] source note cites a minimal-axioms memo (all such paths alias the stable minimal_axioms premise node)\n[PASS] source note cites local finite readout-atom availability theorem\n[PASS] record-history monoid parent is not a markdown/YAML dependency -- forbidden dependency markers absent\n[PASS] record-history monoid is named as parallel context only\n[PASS] downstream citation rule is explicit\n[FAIL] minimal Record language supplies permanence, content-only readout, and finite additivity\n[FAIL] minimal Record boundary leaves readout contexts and dynamics downstream\n[PASS] source note locally proves finite word/count surface\n[PASS] source note locally proves arbitrary finite Z^3 slots\n[PASS] local availability theorem supplies nonzero readout atoms\n[PASS] local availability theorem does not claim production or physical selection\n[PASS] source note says Record does not supply producer/readout/probability\n[PASS] source note says physical context selection remains open\n[PASS] source note says production is not inferred from slots/readout atoms\n[PASS] downstream retained-authority firewall is explicit\n\nSCORECARD: PASS=51 FAIL=2\nVERDICT: record unbounded-additivity schema failed; do not use this artifact.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205146Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=51 FAIL=2' vs cache 'PASS=53 FAIL=0'"
+  ]
+ }
+}

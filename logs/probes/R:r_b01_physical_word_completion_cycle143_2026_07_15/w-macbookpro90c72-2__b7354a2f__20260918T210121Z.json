@@ -1,0 +1,32 @@
+{
+ "task": "R:r_b01_physical_word_completion_cycle143_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "r",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/r_b01_physical_word_completion_cycle143_2026_07_15.py",
+ "seed": 65281,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T210121Z",
+ "elapsed_s": 64.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f9d8c2fdc4e5dcaf24a6b0301ee2dc1ae484384b5f2e8c2b9699ade675dcfa1",
+ "stdout_tail": "PHYSICAL WORD\nFAIL review note exists :: \nPASS eight data records are literal R_B01=10010001 :: (1, 0, 0, 1, 0, 0, 0, 1)\nPASS writer remains twelve canonical / 288 raw rows :: (12, 288)\nPASS completion is one canonical / 24 raw rows :: 24\nPASS 8,696-row union is single-valued and alphabet-closed :: \nPASS D7 and completion are the only semantic retargets from Cycle 121 :: \n\nEXACT HISTORY\nPASS all schedules reach one complete 99-write terminal :: (247144, 1586166, 12)\nPASS R_B01 completion never precedes any physical bit :: (247144, ())\nPASS terminal decodes the word and carries R_B01 completion :: \n\nCORRUPTION AND COVARIANCE\nPASS all 459 completion-parent mutations suppress R_B01 completion :: (459, ())\nPASS alternate valid roles are typed alternate fronts, not false R_B01 :: 5\nPASS eight source-bit flips plus wrong VALID/READY reach no new writer record :: ()\nPASS all 208,704 proper-cubic raw images preserve output :: []\nFAIL note carries N1-N8 discipline :: \nFAIL note makes no axiom addition :: \n\nACCOUNTING\nWORD 10010001\nWRITER_CANONICAL 12\nWRITER_RAW 288\nCOMPLETION_RAW 24\nSTATES 247144\nEDGES 1586166\nPASS 12 FAIL 3\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T210226Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

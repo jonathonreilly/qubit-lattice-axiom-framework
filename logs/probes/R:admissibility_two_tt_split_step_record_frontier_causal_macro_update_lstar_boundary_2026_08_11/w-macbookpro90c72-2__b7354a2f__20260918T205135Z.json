@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_two_tt_split_step_record_frontier_causal_macro_update_lstar_boundary_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_two_tt_split_step_record_frontier_causal_macro_update_lstar_boundary_2026_08_11.py",
+ "seed": 64695,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205135Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0376655678b102345ab797573dbdd805fe0f1b00f122c791b723fc76a197e10c",
+ "stdout_tail": "maps, group velocities, the full 250-dimensional L=5 phase-space map, one six-color even-torus local-gate schedule, one sourced constraint/TT mode, and one conserved Record-frontier macro event are resolved\nper_element: checked each symmetric-tensor and staggered-momentum coordinate, four constraint rows, two TT amplitudes, every two-by-two mode transfer entry, and all source/stress components\nper_site: checked every L=5 site and oriented edge, complete global kick/drift matrices, exact radius-two support, one frontier edge, and its endpoint source cone\nper_mode: checked 4,913 full-zone momenta for depth-two positivity and depths one through six stability, plus all 728 nonzero L=9 TT modes and depth-two/three velocities\nper_block: checked local layer factorization, minimal equal-step depth, positive shadow energy, TT constraints, physical group cone, strict circuit cone, finite-depth fork, sourced rows, and Record composition\nlattice_wide: the kick/drift formulas and conserved straight frontier extend translation/proper-cubic covariantly to Z3 with finite macro radius two, but no selected depth/order, general Record path, massive source, nonlinear geometry, full history measure, or axiom adoption is inferred\nscope_boundary: a depth-two equal-substep linear split-step two-TT/straight-frontier candidate and depth-one failure in that class; not a unique law, radius-one QCA classification, nonlinear Einstein theory, axiom necessity, adoption, or TOE closure\nTOTAL: PASS=12 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205135Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

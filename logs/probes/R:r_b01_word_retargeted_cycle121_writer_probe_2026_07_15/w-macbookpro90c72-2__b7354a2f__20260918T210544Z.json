@@ -1,0 +1,31 @@
+{
+ "task": "R:r_b01_word_retargeted_cycle121_writer_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "r",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/r_b01_word_retargeted_cycle121_writer_probe_2026_07_15.py",
+ "seed": 65544,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T210544Z",
+ "elapsed_s": 55.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b0909f67a677236a8bc1e4243fb1730a2dcf4901f2c9a3fff5cec96b44913aa",
+ "stdout_tail": "WORD (1, 0, 0, 1, 0, 0, 0, 1)\nINHERITED (((-1, 0, 0), 'H0'), ((0, 0, 1), 'H0')) frozenset({'H1'})\nCOMPLETION_LOCAL (((-1, 0, 0), 'R_C00'), ((0, -1, 0), 'H1'), ((0, 0, 1), 'H0'))\nTABLE 12 288 24 8696\nCONFLICTS 0 ()\nUNEXPECTED 0 ()\nGRAPH 247144 1586166 1 (99,) 12 0 99\nBAD ()\nRESULT RETARGETED_R_B01_WORD_COMPLETION\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T210640Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

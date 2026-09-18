@@ -1,0 +1,9 @@
+WORD (1, 0, 0, 1, 0, 0, 0, 1)
+INHERITED (((-1, 0, 0), 'H0'), ((0, 0, 1), 'H0')) frozenset({'H1'})
+COMPLETION_LOCAL (((-1, 0, 0), 'R_C00'), ((0, -1, 0), 'H1'), ((0, 0, 1), 'H0'))
+TABLE 12 288 24 8696
+CONFLICTS 0 ()
+UNEXPECTED 0 ()
+GRAPH 247144 1586166 1 (99,) 12 0 99
+BAD ()
+RESULT RETARGETED_R_B01_WORD_COMPLETION

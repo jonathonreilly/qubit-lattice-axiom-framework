@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
+ "seed": 64769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205249Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "98699c6143af5d5dc0af3576e6d9cb9688b708039c48b5d845274b4264f300f7",
+ "stdout_tail": "orientation readout\n  [PASS] split note carries boundary phrase: does not identify AC_phi_lambda species data\n  [PASS] split note carries boundary phrase: does not derive the determinant-character/log-character boundary\n  [PASS] split note carries boundary phrase: effective status is pipeline-derived after independent audit ratification and dependency closure\n  [PASS] split note has no markdown dependency edge to parent target\n  [PASS] parent still names conditional boundary: post-audit source firewall removes bridge-discharge language\n  [PASS] parent still names conditional boundary: physical-readout\n  [PASS] parent still names conditional boundary: determinant-character / log-character\n  [PASS] bridge-discharge wording absent: discharges the physical\n  [PASS] bridge-discharge wording absent: closes strong-CP\n  [PASS] bridge-discharge wording absent: closes AC_phi_lambda\n  [PASS] bridge-discharge wording absent: retire any Tier-A admission\n  [PASS] bridge-discharge wording absent: promoted to retained\n  [PASS] bridge-discharge wording absent: retained on the actual surface\n  [PASS] bridge-discharge wording absent: Status Certificate\n  [PASS] bridge-discharge wording absent: audit_required_before_effective_retained\n  [PASS] bridge-discharge wording absent: bare_retained_allowed\n\n========================================================================================\nTOTAL: PASS=38 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205249Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

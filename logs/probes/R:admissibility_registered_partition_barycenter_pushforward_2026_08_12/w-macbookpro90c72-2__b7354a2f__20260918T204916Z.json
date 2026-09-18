@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_registered_partition_barycenter_pushforward_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_registered_partition_barycenter_pushforward_2026_08_12.py",
+ "seed": 64556,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T204916Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f4185edaa12ce52440ddfb3f7a46adc1a17173be9ba048feea401d3be36ee664",
+ "stdout_tail": "h menus normalize\nPASS: biased-pushforward E_0 lengths 3/10 and 2/5 in both menus at the two biased states; menus normalize\nPASS: disagree-restriction pushforward E_0 values disagree with restriction 25/142 and 2/11\nPASS: spectral-endpoints at \u03b4_P(z) the E_0 length is 1/2; at \u03b4_P(-z) the length is 0\nPASS: mixture-equals-barycenter pushforward of 3/5 \u03b4_P(z)+2/5 \u03b4_P(-z) equals pairing of the barycenter on every menu member\nPASS: order-independence reversed M_A gives the same three lengths as a multiset; E_0 length unchanged\nPASS: embedding-optional \u03b9(\u03c1,t)=\u03c1+i(t-1/2)I is injective on the finite sample of (\u03c1,t) pairs\nPASS: singleton-mass-two raw singleton normalization of the z and x projective menus still forces mass two\nPASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold\nPASS: no-go-discipline-contract the source carries N1 through N8, distinct live routes, and the narrowed gate disposition\nper_element: E_0 and remaining declared menu members checked by fiber lengths and restriction controls\nper_site: Dirac obstruction, product partition, and pushforward identity are one-site statements\nper_mode: checked and not executed \u2014 no spectral-mode or harmonic-mode exhaustion claim is part of the theorem\nper_block: only the atomic-support partition obstruction and the product registration block are executed\nlattice_wide: checked and not executed \u2014 no lattice-wide dynamics, formation rate, or Record identification is claimed\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204916Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

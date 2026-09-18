@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13.py",
+ "seed": 64771,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205251Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9cd358a26e8945404599a2b78766d7b2e7ee917fad6679b0be4fd25f381dc957",
+ "stdout_tail": "_mu^4 is B4-INVARIANT (survives the orbit average; power div lands here)  --  orbit-self=8.242e-13, nontrivial std=6.834e+00\n  [PASS] the surviving dim-6 residual is Planck-suppressed at 1 GeV via the scale primitive a^-1=M_Pl  --  (1/3)(1 GeV/M_Pl)^2=2.240e-39\n\n========================================================================================\nNARRATION (interpretation, not a check):\n  On the OS0 discrete-tick B4 regulator the power-divergent (a^-2) feed-through\n  is B4-isotropic: its marginal projection delta_c_s = 0 (Part C). Breaking the\n  temporal direction's B4-covariance regenerates a nonzero marginal delta_c_s --\n  dominantly via the non-B4-covariant continuum temporal BLOCK (Part D, CASE 1:\n  the block alone breaks it even with a fully cut measure), with the uncut range\n  adding to it (CASE 3). So the protection is the discrete-tick B4-covariance\n  (all four directions on the same lattice block + cut BZ), which the\n  continuous-time limit breaks; it is NOT the integration range alone. On OS0\n  the power divergence is confined to the Planck-suppressed dim-6 cubic harmonic\n  (Part E).\n\n  KEY NUMBERS: delta_c_s_marginal(B4-cut) = 6.939e-18\n               delta_c_s(continuous-time)  = +3.45326e-03\n               power-divergent scaling fit = a^(-2.0000) (expect a^-2)\n========================================================================================\nSUMMARY: PASS=17 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205252Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

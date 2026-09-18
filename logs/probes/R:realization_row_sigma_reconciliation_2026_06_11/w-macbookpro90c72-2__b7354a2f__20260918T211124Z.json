@@ -1,0 +1,35 @@
+{
+ "task": "R:realization_row_sigma_reconciliation_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "realization",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/realization_row_sigma_reconciliation_2026_06_11.py",
+ "seed": 65884,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T211124Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9ad626452f43b9111f6f174f950d553c7e63a299aa1d01dfbcf659adc08cc57c",
+ "stdout_tail": "T are named in the note)\n  [PASS] E2 the candidates' differences are OUTSIDE the consumed surface: transverse first-order flatness (computed ~0) + off-locus curvature (nonzero)  --  transverse slope 0.0e+00; off-locus curvature 0.096: shape content, not W-IR content\n  [PASS] E3 the within-block touchings are exactly ISOTROPIC 3D cones: Phi = |q|/sqrt(3) in all directions (theta-slope 1/(2 sqrt 3))  --  an isotropic cone EXISTS in the family at quantized slope 1/(2 sqrt 3) -- found in review; the H-slope-1/2 cone remains unrealized (sqrt 3 mismatch)\n\nPART F -- the sigma kinship and the honest cone row\n==============================================================================\n  [PASS] F1 the landed staggered H is sigma-driven too: E(k) = +-sqrt((3 - Re sigma)/2) on the 8-cell (computed)  --  the walk family is the tick-native cos-law sibling of the landed H-law: one structure function, two readings\n  [PASS] F2 the H-cone is isotropic with slope 1/2; the family's cone (E3) is isotropic with slope 1/(2 sqrt 3): same geometry, slopes split by sqrt 3 -- the H-slope cone is realized by neither candidate  --  the matter-cone row RE-OPENS positively: an isotropic 3D cone exists in the covariant family at quantized slope 1/(2 sqrt 3); matching the H-slope 1/2 remains larger-cell/unit-premise content\n\n==============================================================================\nSCORECARD: PASS=13 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T211128Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

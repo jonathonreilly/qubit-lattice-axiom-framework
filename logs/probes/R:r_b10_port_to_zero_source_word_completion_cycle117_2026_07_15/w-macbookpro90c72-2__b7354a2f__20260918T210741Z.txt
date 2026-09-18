@@ -1,0 +1,58 @@
+
+===============================================================================
+A - R_B10 physical writer, inherited cages, and completion row
+===============================================================================
+FAIL A01 Cycle 117 note exists
+PASS A02 writer is eight canonical / 192 proper-cubic raw rows :: canonical=8 raw=192
+PASS A03 completion is one canonical / 24 raw rows :: canonical=1 raw=24
+PASS A04 new raw domains are disjoint from Cycle 115
+PASS A05 complete 8,312-row union is single-valued and alphabet-closed
+PASS A06 extension adds zero supplied records to the exact 264 boundary
+PASS A07 X0=TZ and X1=H1 are inherited images, not new rows :: X0=(((-1, 0, 0), 'OY'), ((0, 0, 1), 'H1'))->frozenset({'TZ'}) X1=(((0, -1, 0), 'H0'), ((0, 0, 1), 'H0'))->frozenset({'H1'})
+PASS A08 eight physical records decode literal R_B10=10010011 :: (1, 0, 0, 1, 0, 0, 1, 1)
+PASS A09 completion is the common join of D6, D7, S8, and L5 :: (((-1, 0, 0), 'S8'), ((0, -1, 0), 'H1'), ((0, 0, -1), 'L5'), ((0, 0, 1), 'H1'))
+
+===============================================================================
+B - All-current-rows asynchronous exhaustion and exact barrier
+===============================================================================
+PASS B01 variable corpus is 71 inherited plus 11 Cycle-117 writes
+PASS B02 every compiled local subset has zero unexpected target :: frozenset()
+PASS B03 all schedules reach one complete 82-write terminal :: states=76056 edges=441682 terminals=1 max=11
+PASS B04 no reachable completion precedes any of the eight R_B10 bits :: ()
+PASS B05 inherited Cycle-112 completion barrier also remains exact :: ()
+PASS B06 terminal carries word, both cages, and fresh R_B10 completion
+PASS B07 completed writer leaves only the repaired-rail frontier :: {(-2, 1, 1): frozenset({'R_C02'})}
+
+===============================================================================
+C - 96-prefix product, late rail, and covariance
+===============================================================================
+PASS C01 all 96 rail appends remain exact singleton fronts :: ()
+PASS C02 Cycle-117 support is rail-separated with zero 97-prefix aliases :: distance=7 hits=[]
+PASS C03 exact locality product is 7,377,432 states / 50,144,530 edges :: states=7377432 edges=50144530
+PASS C04 late control grows 101 complete slices / 1,212 records :: []
+PASS C05 all 199,488 proper-cubic raw images preserve output :: []
+PASS C06 every rotated completed history exposes only rotated next rail :: []
+
+===============================================================================
+D - Wrong-word, VALID/READY, and typed-H0 controls
+===============================================================================
+PASS D01 all eight flips plus wrong VALID/READY stop before Cycle 117 :: []
+PASS D02 corrupted graph census remains pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]
+PASS D03 exhausted typed-H0 alternate reaches no Cycle-117 record :: states=44 edges=97 sizes=(6, 7) bad=() reached=[]
+
+===============================================================================
+E - Scope and no-go-discipline boundary
+===============================================================================
+FAIL E01 note names exact bounded positive
+FAIL E02 note names exact next object
+FAIL E03 note states Cycle 116 contributes zero rows
+FAIL E04 note carries refreshed N1-N8 discipline
+FAIL E05 note denies generic addressability and unbounded recurrence
+FAIL E06 note makes no axiom addition
+PASS E07 Cycle 117 writes only runner and review note
+
+WRITER_CANONICAL=8 WRITER_RAW=192 INHERITED=2 COMPLETION_CANONICAL=1 COMPLETION_RAW=24
+GROWN=82 UNION_RAW=8312 LOCAL_STATES=76056 LOCAL_EDGES=441682
+PRODUCT_STATES=7377432 PRODUCT_EDGES=50144530
+PASS=25 FAIL=7
+RESULT=FAIL

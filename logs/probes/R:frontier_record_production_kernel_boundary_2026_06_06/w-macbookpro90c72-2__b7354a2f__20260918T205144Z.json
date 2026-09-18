@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_production_kernel_boundary_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_production_kernel_boundary_2026_06_06.py",
+ "seed": 64704,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b7354a2f",
+ "started_utc": "20260918T205144Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "07e8f76f151e8cc29ee998c10cb32e858150b36a3ee5021c5359d42f37e393de",
+ "stdout_tail": "ernels are conditional distributions over a two-letter alphabet, including one history-dependent and one scripted producer; they are compared as functions of the prefix, never diagonalized, and no spectral or modal quantity is computed at any point.\nper_block: exercised at letter-class granularity -- count() projects a word onto its two letter blocks and the run certifies that projection additive under concatenation, so the block counts of a concatenated history are exactly the sums of the parts. The kernels are also separated blockwise into the scripted producer, which realizes the target with probability one, and the non-scripted ones, which spread likelihood across several distinct values for the very same word.\nlattice_wide: checked and not executed -- nothing spatial is constructed and no size is varied. The only global object is the whole 6-atom history, over which each kernel's likelihood is accumulated end to end, and that is extent in production order rather than in volume. No finite-N statement is available and no limit is taken or implied by anything in this file.\n\n========================================================================\nScorecard\n========================================================================\nPASS=29 FAIL=0\nFINDING: post-record append/count dynamics consumes realized atoms. The production kernel, likelihood law, expected update, transition rate, and stable dial point are supplied dynamics inputs, not outputs of the finite record alphabet.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T205144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

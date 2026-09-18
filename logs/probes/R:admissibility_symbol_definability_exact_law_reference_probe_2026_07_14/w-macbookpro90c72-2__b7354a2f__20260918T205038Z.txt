@@ -1,0 +1,99 @@
+
+===============================================================================
+A - One named interpretation per model is not one interpretation across models
+===============================================================================
+PASS A exactly 24 proper cubic rotations are enumerated
+PASS A each rotation permutes the six neighbor directions
+PASS A majority is fixed, nonempty, covariant, label-neutral, and varying
+PASS A minority is fixed, nonempty, covariant, label-neutral, and varying
+PASS A each expansion contains exactly one interpretation of the named symbol
+PASS A both expansions use the identical rule-free reduct object
+PASS A both expansions satisfy the displayed finite foundation fragment
+PASS A their extensional distribution tables differ
+PASS A the current structural property has two witnesses, not unique existence
+
+===============================================================================
+B - Paired expansions refute implicit definability and separate a record
+===============================================================================
+PASS B the test condition has a four-to-two neighbor split
+PASS B majority and minority give singleton menus
+PASS B one common write bridge gives different next records
+PASS B same reduct plus different A is an implicit-definability counterexample
+PASS B the neutral existing record is admissible in both expansions
+PASS B both completions contain a genuine record-formation append
+PASS B both record histories are one-per-site and permanent
+PASS B readout is content-only and empty-normalized
+PASS B scalar readout is additive on disjoint records
+
+===============================================================================
+C - Unique existence relative to a parameter does not fix the parameter
+===============================================================================
+PASS C parameter 0 gives unique existence within its model
+PASS C selected rule 0 still satisfies the structural property
+PASS C parameter 1 gives unique existence within its model
+PASS C selected rule 1 still satisfies the structural property
+PASS C the unfixed parameter leaves two record predictions across models
+PASS C fixing the parameter is additional extensional model data
+
+===============================================================================
+D - Extensional admissibility does not fill the complete predictive-law type
+===============================================================================
+PASS D both record-law completions share the identical A object
+PASS D shared A has both outcomes available at the tie
+PASS D shared A supplies one normalized lock-outcome distribution
+PASS D record-law completions disagree only on supplied formation rate
+PASS D exact A digest is identical
+PASS D record-law completion digests differ
+
+===============================================================================
+E - A content-addressed reference selects, but does not retrospectively derive
+===============================================================================
+PASS E two extensional rule tables have two stable content digests
+PASS E resolving the stable identifier selects one exact A
+PASS E adding that selection reduces two admissibility expansions to one
+PASS E an A-only artifact still admits two formation-rate completions
+PASS E a complete-law digest selects one complete law
+
+===============================================================================
+F - Live-source and documentation contract
+===============================================================================
+PASS F source exists: MINIMAL_AXIOMS_2026-06-29.md
+FAIL F source exists: EXISTENCE_UNIQUENESS_AND_EXACT_LAW_REFERENCE_NOTE_2026-07-14.md
+FAIL F source exists: EXACT_LAW_CONSTITUTIONAL_PLACEMENT_SCHEMA_PROBE_NOTE_2026-07-14.md
+FAIL F source exists: BLIND_RESIDUAL_ATOM_PACKING_AND_ONE_LAW_CONSTITUTIONAL_SCHEMA_NOTE_2026-07-14.md
+FAIL F source exists: EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md
+FAIL F source exists: QUALITATIVE_SUBSTRATE_EXACT_LAW_SELECTION_NOTE_2026-07-14.md
+PASS F source exists: SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS F source exists: KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS F source exists: REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+PASS F exact singular Admissibility sentence is live
+PASS F exact availability sentence is live
+PASS F live memo says Admissibility is not dynamics
+PASS F live memo withholds transition weights
+PASS F live memo withholds record production
+PASS F minimal-axioms registry path is current
+PASS F scale primitive path is current
+PASS F kinetic primitive path is current
+PASS F realized-state primitive path is current
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py", line 442, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py", line 434, in main
+    source_and_documentation_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py", line 405, in source_and_documentation_contract
+    note = normalize(NOTE.read_text(encoding="utf-8"))
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/ADMISSIBILITY_SYMBOL_DEFINABILITY_AND_EXACT_LAW_REFERENCE_CHALLENGE_NOTE_2026-07-14.md'

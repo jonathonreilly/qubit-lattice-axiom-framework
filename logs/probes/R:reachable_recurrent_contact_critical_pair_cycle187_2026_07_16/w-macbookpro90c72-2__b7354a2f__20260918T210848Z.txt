@@ -1,0 +1,32 @@
+AUTHORITY AND PREDECESSOR
+FAIL Cycle-187 review note exists :: 
+PASS the consumed recurrent table is the unchanged 51-row Cycle-80 law :: 51
+
+ALL DISJOINT DISTANCE-ONE PLACEMENTS
+PASS the bounded transverse census contains exactly 28 contact placements :: ((0, -5, -1), (0, -5, 0), (0, -5, 1), (0, -5, 2), (0, -4, -3), (0, -4, -2), (0, -4, 3), (0, -3, -4), (0, -3, 4), (0, -2, -4), (0, -2, 4), (0, -1, -4), (0, -1, 4), (0, 0, -4), (0, 0, 4), (0, 1, -4), (0, 1, 4), (0, 2, -4), (0, 2, 4), (0, 3, -4), (0, 3, 4), (0, 4, -3), (0, 4, 2), (0, 4, 3), (0, 5, -2), (0, 5, -1), (0, 5, 0), (0, 5, 1))
+PASS no contact placement reaches both complete recurrent tubes :: []
+PASS contact yields fourteen open escapes, twelve single terminals, and two split terminals :: Counter({0: 14, 1: 12, 2: 2})
+PASS all contact placements expose cross-talk without same-site output conflict :: (Counter({2: 28}), Counter({0: 28}))
+
+EXACT REACHABLE CRITICAL PAIR
+PASS the witness graph has two distinct incomplete maximal histories :: (144, 952, 1820, 2, (21, 21), frozenset({((4, 0, 5), 'R_B11'), ((4, 1, 1), 'R_B11')}), frozenset())
+PASS the two terminal histories share one reachable immediate predecessor :: 20
+PASS the shared predecessor enables exactly two adjacent record writes :: (((1, 2, 3), 'R_B23', (((-1, 0, 0), 'R_A23'), ((0, -1, 0), 'R_B13'))), ((1, 2, 4), 'R_B30', (((-1, 0, 0), 'R_A30'), ((0, 0, 1), 'R_B31'), ((0, 1, 0), 'R_B40'))))
+PASS either adjacent write permanently disables every remaining write :: [(), ()]
+PASS the two permanent terminals differ only by the competing record :: frozenset({frozenset({((1, 2, 3), 'R_B23')}), frozenset({((1, 2, 4), 'R_B30')})})
+
+HORIZON AND COVARIANCE CONTROLS
+PASS the same early split survives horizons three, six, and nine :: {3: (144, 952, 1820, 2, (21, 21), 2, 0), 6: (338, 1972, 3758, 2, (21, 21), 2, 0), 9: (532, 2992, 5696, 2, (21, 21), 2, 0)}
+PASS all 24 proper-cubic images preserve the reachable split :: ()
+
+SCOPE
+FAIL the note carries the bounded reachability and no-go discipline :: ('supplied two-tube boundary', 'not a cosmological-boundary reachability theorem', 'n1 — alternative routes', 'n8 — cross-cycle echo', 'no axiom addition follows')
+
+ACCOUNTING
+CONTACT_OFFSETS 28
+TERMINAL_HISTOGRAM Counter({0: 14, 1: 12, 2: 2})
+WITNESS_OFFSET (0, -1, 4)
+WITNESS_WRITES (((1, 2, 3), 'R_B23', (((-1, 0, 0), 'R_A23'), ((0, -1, 0), 'R_B13'))), ((1, 2, 4), 'R_B30', (((-1, 0, 0), 'R_A30'), ((0, 0, 1), 'R_B31'), ((0, 1, 0), 'R_B40'))))
+HORIZON_COUNTS {3: (144, 952, 1820, 2, (21, 21), 2, 0), 6: (338, 1972, 3758, 2, (21, 21), 2, 0), 9: (532, 2992, 5696, 2, (21, 21), 2, 0)}
+PASS 12 FAIL 2
+RESULT CYCLE187_NEEDS_REPAIR

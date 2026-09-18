@@ -1,0 +1,5 @@
+PR #8028: [physics-loop] static-uniform block38 conditional-support
+branch codex/static-uniform-block38-20260907 (base codex/static-geodesic-block37-20260907)
+runners in the PR: 2
+== scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)

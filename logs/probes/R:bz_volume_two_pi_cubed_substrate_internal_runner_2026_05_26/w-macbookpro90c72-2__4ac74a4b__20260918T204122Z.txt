@@ -1,0 +1,46 @@
+SECTION source claim boundary
+  PASS [EXACT] source states explicit angular pairing
+  PASS [EXACT] source states coordinate-conditioned boundary
+  PASS [EXACT] source states current lattice axiom
+  PASS [EXACT] source states unit-coordinate disclaimer
+  PASS [EXACT] source states reparameterized density
+  PASS [EXACT] source states full-rank condition
+  PASS [EXACT] source states independent audit authority
+  PASS [EXACT] source excludes stale minimal-axiom memo
+  PASS [EXACT] source excludes bare substrate-internal promotion
+  PASS [EXACT] source excludes authored audit verdict
+  PASS [EXACT] source excludes authored effective status
+SECTION angular character period
+  PASS [EXACT] character period sample 1
+  PASS [EXACT] character period sample 2
+  PASS [EXACT] character period sample 3
+  PASS [EXACT] exponent-sign reversal preserves the period
+  PASS [EXACT] half-open cell endpoints represent the same character
+SECTION standard-coordinate covolume and Haar density
+  PASS [EXACT] half-open axis length is 2 pi
+  PASS [EXACT] standard reciprocal-cell volume is (2 pi)^3
+  PASS [EXACT] Haar coordinate density is 1/(8 pi^3)
+  PASS [EXACT] standard Haar total mass is one
+SECTION coordinate reparameterization
+  PASS [EXACT] xi=k/(2 pi) removes the written denominator
+  PASS [EXACT] unit xi-cell has Haar mass one
+  PASS [EXACT] coordinate density changes while normalized measure does not
+SECTION variable spacing
+  PASS [EXACT] spacing-dependent reciprocal volume
+  PASS [EXACT] spacing-dependent Haar density
+  PASS [EXACT] spacing-dependent Haar mass is one
+  PASS [EXACT] changing spacing changes coordinate covolume
+SECTION non-orthogonal full-rank lattice
+  PASS [EXACT] non-orthogonal test basis has determinant six
+  PASS [EXACT] direct and reciprocal bases pair to 2 pi identity
+  PASS [EXACT] reciprocal covolume is (2 pi)^3/det(A)
+  PASS [EXACT] general full-rank Haar mass is one
+  PASS [EXACT] non-orthogonal reciprocal shift has integral character phase
+  PASS [EXACT] non-orthogonal character is periodic under reciprocal shifts
+SECTION rank and boundary guards
+  PASS [EXACT] rank-deficient basis is detected
+  PASS [EXACT] three-dimensional reciprocal-cell formula is excluded when rank is below three
+  PASS [EXACT] shifted half-open cells preserve covolume
+SUMMARY
+TOTAL: PASS=36 FAIL=0
+CHECK RESULT: coordinate-conditioned Haar algebra passes.

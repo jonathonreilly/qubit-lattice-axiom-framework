@@ -1,0 +1,41 @@
+{
+ "task": "P:8026",
+ "type": "pr-reexecution",
+ "lane": "spatial-area-block36-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8026",
+ "pr": 8026,
+ "branch": "codex/spatial-area-block36-20260907",
+ "git_sha": "05f6da56",
+ "started_utc": "20260918T203536Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "23cfebee72649dfbea4a593cd0434a3ab089c7a55402bf44a10e71d8dd35430c",
+ "stdout_tail": "PR #8026: [physics-loop] spatial-area block36 conditional-support\nbranch codex/spatial-area-block36-20260907 (base codex/local-observable-block35-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

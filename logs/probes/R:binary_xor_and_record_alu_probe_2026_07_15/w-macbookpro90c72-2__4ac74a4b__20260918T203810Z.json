@@ -1,0 +1,31 @@
+{
+ "task": "R:binary_xor_and_record_alu_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "binary",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/binary_xor_and_record_alu_probe_2026_07_15.py",
+ "seed": 63890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203810Z",
+ "elapsed_s": 69.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a93cc678959c6e43f646b9887a30b4df509aca6bf022fadcba79ad67f20957ea",
+ "stdout_tail": "TABLE 8 192 70844 0\nPROGRAMS 3072 12288 9216 [57] 0\nRESULT BINARY_XOR_AND_RECORD_ALU\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

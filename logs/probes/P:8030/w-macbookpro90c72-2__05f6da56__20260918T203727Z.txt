@@ -1,0 +1,5 @@
+PR #8030: [physics-loop] continuum-boundary block40 conditional-support
+branch codex/continuum-boundary-block40-20260907 (base codex/infinite-static-block39-20260907)
+runners in the PR: 2
+== scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)

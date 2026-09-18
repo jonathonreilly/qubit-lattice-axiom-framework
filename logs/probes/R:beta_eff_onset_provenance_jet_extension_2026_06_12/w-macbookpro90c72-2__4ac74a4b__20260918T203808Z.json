@@ -1,0 +1,35 @@
+{
+ "task": "R:beta_eff_onset_provenance_jet_extension_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "beta",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/beta_eff_onset_provenance_jet_extension_2026_06_12.py",
+ "seed": 63888,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203808Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "357b2e37c03a75ee56ac1edd84969b7f6e3f086a44b55c7f04b055c68bd27cd8",
+ "stdout_tail": " the consumed d6 through d11 fractions\n      d6 from BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md, d7 from BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md, d8 from BETA6_PLAQUETTE_D8_COEFFICIENT_AND_SINGLE_PAIR_VERDICT_BOUNDED_NOTE_2026-05-30.md, d9 from BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md, d10 from BETA6_PLAQUETTE_D10_COEFFICIENT_AND_RADIUS_EVIDENCE_BOUNDED_NOTE_2026-06-04.md, d11 from BETA6_PLAQUETTE_D11_COEFFICIENT_AND_CONTINUATION_SPREAD_BOUNDED_NOTE_2026-06-04.md\nPASS: local one-plaquette response jet is stable under a wider mode cutoff\n      mode_bound 20 equals mode_bound 24 through beta^11\nPASS: local response slope is exactly 1/18\n      slope=1/18\nPASS: all exact jet expressions contain no sympy Float atoms\n      R_O jet, Delta jet, and beta_eff coefficients are Rational-only\nPASS: beta_eff coefficients match the exact triangular inversion result\n      a5=1/26244, a6=5/314928, a7=5/1889568, a8=5/136048896, a9=-955/14693280768, a10=-4207/528958107648, a11=5579/3173748645888\nPASS: composition residual R_O(beta_eff(beta))-R_O(beta)-Delta(beta) vanishes through beta^11\n      residual=0\nPASS: onset coefficient reproduces 1/26244\n      a5=1/26244\nPASS: refreshed minimal witnesses first differ at beta^12 for the c-scale analog\n      new_gap=17006112/78125, old_gap=729/156250\nPASS: framework-point beta_eff polynomial value is exact\n      minus=32111/4374, plus=76893405763/341718750\nTOTAL: PASS=12, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203810Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/beta_eff_onset_provenance_jet_extension_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

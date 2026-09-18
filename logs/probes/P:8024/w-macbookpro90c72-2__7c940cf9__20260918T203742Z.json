@@ -1,0 +1,36 @@
+{
+ "task": "P:8024",
+ "type": "pr-reexecution",
+ "lane": "volume-uniform-gap-block34-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8024",
+ "pr": 8024,
+ "branch": "codex/volume-uniform-gap-block34-20260907",
+ "git_sha": "7c940cf9",
+ "started_utc": "20260918T203742Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "e35299ac3ac0e94c4b32b9946d821f3aa35e696061a41ceb03ed23640b6b0e2d",
+ "stdout_tail": "PR #8024: [physics-loop] volume-uniform-gap block34 conditional-support\nbranch codex/volume-uniform-gap-block34-20260907 (base codex/compact-cutoff-block32-20260907)\nrunners in the PR: 1\n== scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203743Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

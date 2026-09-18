@@ -1,0 +1,35 @@
+{
+ "task": "R:bw_bridge_reduction_os0_ir_slope_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "bw",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/bw_bridge_reduction_os0_ir_slope_2026_06_10.py",
+ "seed": 64081,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204121Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4743fa29f0c15db2597c2f3ffd8ee954ef670bb8956a712957d7318b09d89a05",
+ "stdout_tail": "7e-02; a=0.6: |U[0,2]|=4.367e-02; a=1.0: |U[0,2]|=1.149e-01\n  [PASS] E2 contrapositive: a strict radius-1 tick has distance-2 amplitude EXACTLY 0, the exponential tick does not -- they are different maps  --  W-IR asserts only first-order cone-point agreement -- the minimal surviving identification\n\nPART F -- end-to-end chain instance: |v| = 1 (dichotomy band) + W-IR => xi = 1\n==============================================================================\n  [PASS] F[D=0.0, w=+1] saturating dichotomy band through the bridge: xi = 1 exactly  --  xi = 1.000000000165\n  [PASS] F[D=0.8, w=-1] saturating dichotomy band through the bridge: xi = 1 exactly  --  xi = 1.000000000165\n  [PASS] F3 chain consistency: v = 1 is the unique fixed point where BOTH carrier reads give xi = 1  --  first- and second-order reads agree at, and only at, the isotropic point\n\nPART G -- scope honesty: what is NOT proved here\n==============================================================================\n  [PASS] G1 W-IR is a NAMED premise: nothing in Parts A-F derives cone-point agreement between the strict tick and the transfer  --  its grounding is the one-spectrum question (scope-boundary N5 slot), a separate row\n  [PASS] G2 tau is SUPPLIED (blocked-time normalization), not derived: the tau-relativity check C3 is the guard\n\n==============================================================================\nSCORECARD: PASS=20 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204122Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,46 @@
+PR #8078: Prove the native direct Ward overlap exceeds 160/h²
+branch codex/native-ward-direct-overlap-20260910 (base main)
+runners in the PR: 43
+== scripts/native_certified_imaginary_time_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_certified_local_green_scalars_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_compression_action_boundary_2026_09_09.py: rc=0 PASS=539 FAIL=0
+== scripts/native_dynamical_cycle_dictionary_2026_09_08.py: rc=0 PASS=7919 FAIL=0
+== scripts/native_dynamical_cycle_dictionary_author_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_even_torus_flux_isolation_2026_09_08.py: rc=0 PASS=5957 FAIL=0
+== scripts/native_even_torus_flux_isolation_controls_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_finite_excitation_ward_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_finite_excitation_ward_controls_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_flux_defect_combinatorics_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py: rc=0 PASS=105615 FAIL=0
+== scripts/native_flux_defect_geometry_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_gapfree_generator_propagation_2026_09_09.py: rc=0 PASS=44 FAIL=0
+== scripts/native_generalized_action_boundary_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_infinite_star_node_algebra_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_infinite_star_node_gap_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_infinite_star_node_orbits_tail_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_infinite_star_node_reduction_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_infinite_star_node_shift_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_mixed_gaussian_transition_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_pair_vacuum_chart_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_pair_vacuum_chart_controls_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_rho4_moment_certificates_2026_09_09.py: rc=0 PASS=270 FAIL=0
+== scripts/native_sparse_first_action_frame_2026_09_09.py: rc=0 PASS=95 FAIL=0
+== scripts/native_star_thermodynamic_controls_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_star_thermodynamic_limit_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_uniform_cubic_flux_certificate_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_uniform_cubic_flux_defect_stiffness_2026_09_08.py: rc=0 PASS=49192 FAIL=0
+== scripts/native_uniform_cubic_flux_matrix_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_uniform_quasilocal_star_controls_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_uniform_quasilocal_star_vertex_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_ward_direct_overlap_2026_09_10.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_weak_electric_defect_density_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_weak_electric_defect_density_controls_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_weak_electric_joint_defect_controls_2026_09_09.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_zero_penalty_dispersion_exact_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_zero_penalty_endpoint_2026_09_08.py: rc=0 PASS=80 FAIL=0
+== scripts/native_zero_penalty_endpoint_exact_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py: rc=0 PASS=7059 FAIL=0
+== scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py: rc=0 no PASS/FAIL count line (verdict by exit code)

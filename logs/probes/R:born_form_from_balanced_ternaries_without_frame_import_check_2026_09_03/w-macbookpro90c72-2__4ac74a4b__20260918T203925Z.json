@@ -1,0 +1,35 @@
+{
+ "task": "R:born_form_from_balanced_ternaries_without_frame_import_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "born",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/born_form_from_balanced_ternaries_without_frame_import_check_2026_09_03.py",
+ "seed": 63965,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203925Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f8f141f5a55eb5e988e2da64c8ab1cae427dcfecfcdfa9c80bb79b8686cc7c86",
+ "stdout_tail": "= 1 the covered interior carries Born c and h(1) is free\nPASS: T4-cont-high at k = 3, 5, 7 the interior is killed by the non-collinear ternaries alone\nPASS: T4-all-even M_all: rank 24 and nullity 0 at k = 0, 3, 5, 7\nPASS: T4-all-k1 M_all: nullity 1 at k = 1, the vector h_1(c) = c with h_1(1) = 1\nARG: T4-modes UNESTABLISHED: reflected equations and all-radius zero propagation are not supplied by these finite matrices\nARG: T4-ae UNESTABLISHED: surface measurability does not justify arbitrary great-circle restriction or all-scale gluing\nPASS: gate-parent-family the 2026-08-09 note's low-arity family M_all, verbatim\nPASS: gate-parent-lift its ancilla frame lift, verbatim\nPASS: gate-parent-gleason its dimension-three frame step, verbatim\nPASS: gate-axiom-domain the axiom file's one-site M_2(C) presentation\nPASS: gate-correction the note records the homogeneous-ansatz correction, quoted\nPASS: gate-surface the note keeps its conditional surface and its audit line\nper_element: exact declared indexed effects, weights and finite rank rows; no physical Record identification\nper_site: one supplied M_2(C) site and the explicit homogeneous mathematical hypothesis\nper_mode: finite circle modes 0..8 and scale grid j/24; no all-mode certificate claimed\nper_block: homogeneous proof, corrected rogue and finite full-family comparisons only\nlattice_wide: checked and not executed; no physical or infinite-lattice Born law is derived\nrecorded_arguments: 6 printed, none counted\nTOTAL: PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

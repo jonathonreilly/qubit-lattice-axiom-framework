@@ -1,0 +1,4 @@
+PR #8024: [physics-loop] volume-uniform-gap block34 conditional-support
+branch codex/volume-uniform-gap-block34-20260907 (base codex/compact-cutoff-block32-20260907)
+runners in the PR: 1
+== scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)

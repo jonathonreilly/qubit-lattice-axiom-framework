@@ -1,0 +1,7 @@
+Koide Berezin det_C versus det_R fork mechanism
+Scope: bounded theorem under POLARIZATION-SELECT; no selector claimed.
+LOAD-BEARING CHECKS: PASS=35 FAIL=0
+MOTIVATION-TIER (non-load-bearing; does not affect exit status)
+MOTIVATION: PASS=1 FAIL=0
+TOTAL: PASS=35 FAIL=0
+DECLARATION: POLARIZATION-SELECT supplied; no polarization derived.

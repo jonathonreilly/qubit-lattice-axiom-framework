@@ -1,0 +1,43 @@
+PASS: S1a G(0)=2G(0) forces G(0)=0
+PASS: S1b the additive pair to zero gives G(-u)=-G(u)
+PASS: S1c integer iteration gives G(nu)=nG(u) (n=3 elimination)
+PASS: S1d rational scaling G((2/5)u)=(2/5)G(u) by combining integers
+PASS: S2a the centered value decomposes exactly as G(w+a)-G(a)
+PASS: S2b exact finite sign cases are consistent with the triangle bound
+PASS: S3-n1 exact residual identity and window membership
+PASS: S3-n2 exact residual identity and window membership
+PASS: S3-n3 exact residual identity and window membership
+PASS: S3-n4 exact residual identity and window membership
+PASS: S3e the sandwich elimination isolates G(u)-(r/n)G(1) as tail/n
+PASS: S4a the bound c/n has exact limit zero
+PASS: S4b an integer witness n=floor(c/X)+1 gives c/n<X exactly
+PASS: R1 finite proof guard: a positive mesh fits only a positive window
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/bounded_additive_on_interval_linearity_rebuilt_2026_07_18.py", line 190, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/bounded_additive_on_interval_linearity_rebuilt_2026_07_18.py", line 174, in main
+    checks.needle(
+    ~~~~~~~~~~~~~^
+        "N1 target identifier, statement, and step labels",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        ),
+        ^^
+    )
+    ^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/bounded_additive_on_interval_linearity_rebuilt_2026_07_18.py", line 32, in needle
+    haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/BOUNDED_ADDITIVE_ON_INTERVAL_LINEARITY_REBUILT_SUPPORT_NOTE_2026-07-18.md'

@@ -1,0 +1,35 @@
+{
+ "task": "R:born_form_binary_ternary_scaled_projector_frame_lift_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "born",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/born_form_binary_ternary_scaled_projector_frame_lift_2026_08_09.py",
+ "seed": 63961,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203921Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "833cf64e4b1b0f9edc5b75d5a6d3a1d04469af444a76e24d7ab13fd843ea694e",
+ "stdout_tail": "ds and determinant zero\nPASS: rational-unitary the independent rational columns form an exact orthonormal basis\nPASS: rational-compression the independent rational compression is a three-member scaled rank-one resolution\nPASS: cubic-hostile-control the smooth binary cubic grading gives exact trine sum five-fourths rather than one\nPASS: ancilla-positive-factor the ancilla expectation is exactly the squared norm of the last factor column\nPASS: polynomial-basis the odd sphere-polynomial normal form through degree nine has fifty-five coefficients per radius\nPASS: polynomial-born-kernel the three independent radius-weighted linear Born modes lie in the exact ternary kernel\nPASS: polynomial-rank one exact rational ternary orbit leaves only the three linear Born modes through degree nine\nper_element: exact scaled rank-one compression, zero-effect handling, trace, determinant, and cubic-weight identities are checked element by element\nper_site: one complete M_2(C) site and its one-dimensional qutrit dilation are checked; no multi-site carrier is asserted\nper_mode: odd sphere-polynomial sections through degree nine are checked by exact modular rank; the general frame theorem is named, not executed\nper_block: this single theorem block checks the compression, hostile control, source boundaries, and conditional claim surface together\nlattice_wide: checked and not executed \u2014 the theorem is one-site conditional mathematics and makes no lattice-wide registration claim\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

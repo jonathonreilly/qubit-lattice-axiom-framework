@@ -1,0 +1,126 @@
+BARE-METAL RECORD FORMATION - MINIMUM VIABLE PROBE HARNESS
+Finite toy discriminators only; no axiom, primitive, or audit status is changed.
+
+==============================================================================
+P1 - A unitary clock tag is correlation, not irreversible commit
+==============================================================================
+PASS source is locally dephased while the tagged global state remains pure
+PASS the full unitary read-plus-clock tag reverses exactly
+PASS an outcome-blind clock tick carries no outcome correlation
+PASS an outcome-conditioned clock register is another outcome witness
+PASS adding a nonunitary/superselected commit changes the reversal result
+
+==============================================================================
+P2 - One/two witnesses distinguish local robustness, not global permanence
+==============================================================================
+PASS undoing one witness leaves the source decohered through the other
+PASS coherent access to both witnesses globally restores the source
+PASS a single controlled copy is adjoint-revocable
+PASS the two disjoint witnesses have matching local outcome statistics
+
+==============================================================================
+P3 - Bell, no-signaling, and spacelike commit-order controls
+==============================================================================
+PASS quantum two-site carrier reaches the Tsirelson value :: S=2.828427124746
+PASS preassigned local binary outcomes remain at the classical CHSH bound
+PASS remote unread commits do not change Alice's local state
+PASS commuting local nonselective instruments are order-independent
+
+==============================================================================
+P4 - Clock readings supply order only after a monotone ledger map
+==============================================================================
+PASS one record word admits inequivalent physical rates :: {'uniform': 1.0, 'slow': 0.5, 'accelerating': 0.4}
+PASS a periodic reference phase aliases distinct events :: phases=(1, 1)
+PASS a monotone ledger index removes the phase alias
+
+==============================================================================
+P5 - Permanent first-registration capacity and site reuse
+==============================================================================
+PASS committing every visit saturates a fixed N-site region after N first registrations :: [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+PASS recurrent reversible motion revisits sites after the permanent ledger is full
+PASS one-commit-per-tick continuation works if fresh capacity grows by assumption
+PASS a finite sink supports only finitely many arbitrary clean reuse cycles
+
+==============================================================================
+P6 - Formation form, frame form, and prepared-state identity are separate
+==============================================================================
+PASS the controlled-copy write is an isometry
+PASS the same write form permits different input outcome weights :: [(np.float64(0.19999999999999998), np.float64(0.7999999999999999)), (np.float64(0.7999999999999999), np.float64(0.19999999999999993))]
+PASS a one-qubit non-Born frame assignment normalizes every antipodal menu
+PASS that assignment is not representable by one density-matrix Bloch vector :: max residual=0.125000
+PASS density-form alone does not identify the frame state with the preparation
+
+==============================================================================
+P7 - A universal commit criterion cannot silently name a gauge frame
+==============================================================================
+PASS fixed-basis dephasing fails covariance under a basis rotation :: norm=0.707107
+PASS trace-only record content is invariant under the same rotation
+
+==============================================================================
+P8 - Record append semantics does not select equilibrium or temperature
+==============================================================================
+PASS two valid one-record-per-step kernels have different stationary states :: uniform=[0.5 0.5], biased=[0.75 0.25]
+PASS the biased kernel is Gibbs only after a detailed-balance rate ratio is supplied :: beta=1.098612, pi=[0.75 0.25]
+
+==============================================================================
+P9 - Storage and throughput are distinct; archive sourcing leaves trails
+==============================================================================
+PASS monotone formation-rate laws give different local lapse responses :: {'linear': 1.0, 'square_root': 0.5, 'saturating': 0.3333333333333333}
+PASS an undifferentiated permanent archive produces a field at an abandoned source site :: trail=1.242659
+PASS universal time dilation requires every clock species to consume the same rate law
+
+==============================================================================
+P10 - Record occupancy does not select matter statistics or chirality
+==============================================================================
+PASS identical endpoint occupancy permits different exchange interference
+PASS an ordered source-reader-clock frame is orientation-sensitive
+PASS the two mirror orientations remain distinct candidate branches
+
+==============================================================================
+P11 - Fundamental commit and branch-relative record controls
+==============================================================================
+PASS a Z-commit channel need not conserve a noncommuting X-Hamiltonian energy
+PASS the same commit conserves a commuting Z pointer eigenstate
+PASS the friend has a locally classical record after the unitary write
+PASS an external coherent reversal erases that unitary friend record globally
+
+==============================================================================
+P12 - Local causal order does not itself choose a global update foliation
+==============================================================================
+PASS disjoint local updates commute
+PASS overlapping local updates require an ordering rule :: commutator norm=2.828427
+
+==============================================================================
+P13 - Multiplicative history weights permit additive costs but do not select one
+==============================================================================
+PASS independent supplied history weights give additive negative-log cost
+PASS composition algebra alone leaves multiple action-cost assignments :: (1.4271163556401458, 1.2729656758128876, 1.7147984280919266)
+
+==============================================================================
+P14 - Composite context consistency and PREP-FRAME discriminator
+==============================================================================
+PASS Born-linear weight of a shared projector is context-independent
+PASS a normalized power-law alternative is context-dependent on M_4 :: shared weights=0.133333,0.117647
+PASS a valid frame state can fail prepared-state eigenstate certainty
+PASS two states can have identical agreement-basis data but different phase-sensitive reads :: phase-sensitive weights=1.000000,0.500000
+
+==============================================================================
+P15 - A local reference can timestamp a commit without already being a record
+==============================================================================
+PASS phase-copy map is unitary
+PASS a definite reversible reference phase is copied into a blank timestamp register
+PASS the timestamp correlation remains globally reversible
+PASS copying an unresolved reference phase entangles clock and timestamp
+
+==============================================================================
+P16 - Minimal semantic consistency filter for formation vocabularies
+==============================================================================
+PASS strict permanence conflicts with calling a globally reversible stage a record
+PASS strict fundamental append and local/relational readings survive the syntax filter
+PASS the syntax filter leaves multiple physical routes and therefore selects no axiom wording :: {'first_unitary_write_strict': False, 'two_witness_strict': False, 'two_witness_local': True, 'unitary_clock_strict': False, 'fundamental_append_strict': True, 'relational_record_local': True, 'sink_export_local': True}
+
+==============================================================================
+SCORECARD
+==============================================================================
+TOTAL: PASS=54 FAIL=0
+INTERPRETATION: use the accompanying probe map; passing a toy check is not a framework derivation.

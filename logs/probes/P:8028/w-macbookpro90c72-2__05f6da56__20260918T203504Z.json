@@ -1,0 +1,41 @@
+{
+ "task": "P:8028",
+ "type": "pr-reexecution",
+ "lane": "static-uniform-block38-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8028",
+ "pr": 8028,
+ "branch": "codex/static-uniform-block38-20260907",
+ "git_sha": "05f6da56",
+ "started_utc": "20260918T203504Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "e5f574c16c9c5e62bd8f097f9e045e542785d55c464b8ade3501abe226abeb17",
+ "stdout_tail": "PR #8028: [physics-loop] static-uniform block38 conditional-support\nbranch codex/static-uniform-block38-20260907 (base codex/static-geodesic-block37-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203506Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

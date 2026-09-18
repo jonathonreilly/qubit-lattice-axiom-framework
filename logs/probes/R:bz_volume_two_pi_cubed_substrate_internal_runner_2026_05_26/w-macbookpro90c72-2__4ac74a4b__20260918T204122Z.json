@@ -1,0 +1,35 @@
+{
+ "task": "R:bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "bz",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
+ "seed": 64082,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T204122Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c70fe80f3041046110c5fd2c9e0c2dc0fd1b1adc5bc60bac7c6eb986494d201e",
+ "stdout_tail": "pen cell endpoints represent the same character\nSECTION standard-coordinate covolume and Haar density\n  PASS [EXACT] half-open axis length is 2 pi\n  PASS [EXACT] standard reciprocal-cell volume is (2 pi)^3\n  PASS [EXACT] Haar coordinate density is 1/(8 pi^3)\n  PASS [EXACT] standard Haar total mass is one\nSECTION coordinate reparameterization\n  PASS [EXACT] xi=k/(2 pi) removes the written denominator\n  PASS [EXACT] unit xi-cell has Haar mass one\n  PASS [EXACT] coordinate density changes while normalized measure does not\nSECTION variable spacing\n  PASS [EXACT] spacing-dependent reciprocal volume\n  PASS [EXACT] spacing-dependent Haar density\n  PASS [EXACT] spacing-dependent Haar mass is one\n  PASS [EXACT] changing spacing changes coordinate covolume\nSECTION non-orthogonal full-rank lattice\n  PASS [EXACT] non-orthogonal test basis has determinant six\n  PASS [EXACT] direct and reciprocal bases pair to 2 pi identity\n  PASS [EXACT] reciprocal covolume is (2 pi)^3/det(A)\n  PASS [EXACT] general full-rank Haar mass is one\n  PASS [EXACT] non-orthogonal reciprocal shift has integral character phase\n  PASS [EXACT] non-orthogonal character is periodic under reciprocal shifts\nSECTION rank and boundary guards\n  PASS [EXACT] rank-deficient basis is detected\n  PASS [EXACT] three-dimensional reciprocal-cell formula is excluded when rank is below three\n  PASS [EXACT] shifted half-open cells preserve covolume\nSUMMARY\nTOTAL: PASS=36 FAIL=0\nCHECK RESULT: coordinate-conditioned Haar algebra passes.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204122Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

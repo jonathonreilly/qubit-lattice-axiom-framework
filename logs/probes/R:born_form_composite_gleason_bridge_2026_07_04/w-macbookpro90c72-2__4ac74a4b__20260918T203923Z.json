@@ -1,0 +1,35 @@
+{
+ "task": "R:born_form_composite_gleason_bridge_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "born",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/born_form_composite_gleason_bridge_2026_07_04.py",
+ "seed": 63963,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203923Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2096adfff644fa4771232e31518537d37aab986c56369850b786f12e206a84fe",
+ "stdout_tail": "ipodal M_2 menus resolve the identity\nCHECK 12: PASS - R1 rogue frame function normalizes and adds on every sampled menu\nCHECK 13: PASS - R1 secondary bound: sampled Hermitian trace-form fit (superset of Born forms) leaves residual > 0.05\nCHECK 14: PASS - R1 exact three-direction contradiction: trace form forces 1/2 at (e_x-e_z)/sqrt(2), rogue assigns 0\nCHECK 15: PASS - R1 rogue rank-0/rank-2 extension: g(0)=0, g(I)=1 completes every menu to w(I)\nCHECK 16: PASS - R1 least-squares control recovers genuine 2x2 Born-form data\nCHECK 17: PASS - R2 bookkeeping (implementation identity): embedded P tensor I weights equal partial-trace single-site weights\nCHECK 18: PASS - R2 bookkeeping (implementation identity): embedded composite menus normalize for product, entangled, and mixed states\nCHECK 19: PASS - R2 bookkeeping (implementation identity): Bell entangled menu resolves identity and normalizes/adds\nCHECK 20: PASS - R3 corollary support: exact R1 contradiction bars any composite Gleason extension (bridge input carries the corollary)\nCHECK 21: PASS - R4 consequence check (full-symmetry premise supplied separately): maximally mixed gives 1/2 on embedded rank-1 site projections\nCHECK 22: PASS - R4 consequence check (full-symmetry premise supplied separately): maximally mixed gives 1/4 on every Bell-basis element\nCHECK 23: PASS - rejector detects broken additivity on a binary menu\nCHECK 24: PASS - rejector detects context-dependent weights on a shared projection\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

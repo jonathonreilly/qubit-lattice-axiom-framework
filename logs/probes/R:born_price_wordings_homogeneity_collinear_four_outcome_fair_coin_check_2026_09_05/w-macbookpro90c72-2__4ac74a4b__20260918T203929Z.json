@@ -1,0 +1,35 @@
+{
+ "task": "R:born_price_wordings_homogeneity_collinear_four_outcome_fair_coin_check_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "born",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/born_price_wordings_homogeneity_collinear_four_outcome_fair_coin_check_2026_09_05.py",
+ "seed": 63969,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203929Z",
+ "elapsed_s": 110.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=61 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b0876bd82722900ddf28d04d85cec46b94bfcd9a72de5573000614f03f2d921",
+ "stdout_tail": "9, \"window_count\": 48}\nPASS S6c_1/6 [float64] full 1152-state eigensystem and complete fixed window\nPASS S6b [float64, model] flip density 1/2 (mean +0.000) leaves 0 core modes; none, 1/9, ~1/6 keep 2, 2, 2\nPASS R13 [exact] L_CONT + L_FIB satisfies the clause in fibre e_x on all 126 ternaries and their binaries\nPASS R14 [exact] the counting rogue violates it, 2/3 against 1/2, while normalised on all 126 ternaries\nPASS R15 [exact] L_BIN with c(1 + u_z^3)/2: homogeneous, normalised on every binary, not Born (64/125 against 4/5)\nPASS R17 [exact] finite certificates only: F_CONT rogue, F_A mode kernels, F_4 ray rank; continuum conclusions require the separate stated proof and hypotheses\nPASS Q1_L_CONT [exact] indexed mass 1; content mass 1 after multiplicity pushforward; one-grade-per-distinct-effect mass 1/2\nPASS Q1_L_A [exact] indexed mass 1; content mass 1 after multiplicity pushforward; one-grade-per-distinct-effect mass 3/4\nPASS Q1_L_4 [exact] indexed mass 1; content mass 1 after multiplicity pushforward; one-grade-per-distinct-effect mass 7/8\nPASS Q2 [exact] actual duplicate menu detects the multiplicity lost by set comparison\nPASS Q3 [exact] scale-blind collinear competitor: a=1/5, all 6 orders x 24 rotations; not a classification or physical selection\nPASS Q4 [exact] actual mixed menu raw odds 1/4,1/4,1/2; conditional + is 1/2\nPASS Q5 [exact] every bit conditional on any six is fair, but even-parity all-zero mass 1/128 differs from independent 1/256\nTOTAL: PASS=61 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204119Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

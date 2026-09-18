@@ -1,0 +1,35 @@
+{
+ "task": "R:boost_cone_apbc_sign_neutral_2026_06_23",
+ "type": "runner-reexecution",
+ "lane": "boost",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/boost_cone_apbc_sign_neutral_2026_06_23.py",
+ "seed": 63961,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ac74a4b",
+ "started_utc": "20260918T203921Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d7ecdd7fce29c92afe290ce7513c808bbcc2ecf92331c6158869326fe1ba954",
+ "stdout_tail": "] the faithful K=-i sigma/2 closes so(3,1) but REQUIRES the explicit i (not forced by Quantum alone) -- boost-faith no-go: the i + a matter-attachment selector are the import\n\n============================================================================\nSUMMARY\n============================================================================\nThe named checked sub-routes to eps=e_4^2=-1 from the boundary datum / cone are mapped:\n  (A) for the compared diagonal forms, using the target stabilizer to derive its sign is circular;\n  (B) the selected hyperbolic boost fails to preserve the chosen l1 reachability polytope\n      for spatial dim >= 2; no full automorphism-group classification is claimed;\n  (C) the base scalar subgroup has no sqrt(-1), while the selected exchange is real-orthogonal;\n      the full matrix group is open and explicitly has (C^3)^2=-I at L=6;\n  (D) the sampled SO(2) matrix is not the sampled SO(1,1) boost; no exhaustive claim;\n  (E) and independently, the on-site local algebra does not force the boost.\nSo eps=-1 remains a separate conditional input with no premise weight if the lane uses Lorentzian signature.\nA remaining firewall-clean opening is an EMERGENT non-compact symmetry of the\nrecord-formation DYNAMICS (the S4-transport note's open gate, owner-framing-gated),\northogonal to the static cone, the boundary datum, and the peripheral phase checked here.\nMaps sub-routes only; no primitive or derivation obligation changed; no axiom/import.\n\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T203921Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

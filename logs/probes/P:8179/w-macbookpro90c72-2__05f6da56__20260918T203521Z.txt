@@ -1,0 +1,3 @@
+PR #8179: ail: decision record for blocks 01–34 — the state of knowledge for the axiom decision, the proved-vs-located map, the integration order (proposals; nothing adopted)
+branch physics-loop/admissibility-induced-law-decision-record-blocks-01-34-20260918 (base main)
+runners in the PR: 0

@@ -1,0 +1,28 @@
+{
+ "task": "P:8158",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block24-unreco",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8158",
+ "pr": 8158,
+ "branch": "physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915",
+ "git_sha": "c6b573e0",
+ "started_utc": "20260918T200751Z",
+ "elapsed_s": 78.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=20 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "3059f7f0819305217cef227c676908958494e0b4181b2ae98809f793972af011",
+ "stdout_tail": "PR #8158: [physics-loop] admissibility-induced-law block24 \u2014 bounded_theorem \u2014 bounded-support: unrecorded sites \u2014 the free-window and integrated-exterior readings differ iff an unrecorded component touches two recorded sites; exact witnesses; the clause pair recorded\nbranch physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0\n   mutation spectral_decomposition_wrong: expected B observed B ok\n   mutation constancy_criterion_wrong: expected B observed B ok\n   mutation path_eigenvalue_wrong: expected B observed B ok\n   mutation one_attachment_nonconstant_claimed: expected B observed B ok\n   mutation sphere_one_attachment_wrong: expected C observed C ok\n   mutation sphere_series_sign_wrong: expected C observed C ok\n   mutation plaquette_tv_wrong: expected D observed D ok\n   mutation cube_tv_wrong: expected D observed D ok\n   mutation forest_tv_nonzero_claimed: expected D observed D ok\n   mutation average_identity_wrong: expected D observed D ok\n   mutation hadamard_component_constant_claimed: expected E observed E ok\n   mutation claim_reading_selected_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

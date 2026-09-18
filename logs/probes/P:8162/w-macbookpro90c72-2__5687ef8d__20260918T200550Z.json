@@ -1,0 +1,21 @@
+{
+ "task": "P:8162",
+ "type": "pr-reexecution",
+ "lane": "toe-continuous-time-bridge-20260916",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8162",
+ "pr": 8162,
+ "branch": "physics-loop/toe-continuous-time-bridge-20260916",
+ "git_sha": "5687ef8d",
+ "started_utc": "20260918T200550Z",
+ "elapsed_s": 3.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "84997ca069b760a50807bd9bd20c8ad5de408b49f41f4f8d9049d31cdb5a9b24",
+ "stdout_tail": "PR #8162: Calibrated clock transfer and joint finite-volume physical state limits\nbranch physics-loop/toe-continuous-time-bridge-20260916 (base main)\nrunners in the PR: 0"
+}

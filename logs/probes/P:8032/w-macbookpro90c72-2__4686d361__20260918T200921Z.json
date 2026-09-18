@@ -1,0 +1,32 @@
+{
+ "task": "P:8032",
+ "type": "pr-reexecution",
+ "lane": "finite-pw-energy-block42-20260907",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8032",
+ "pr": 8032,
+ "branch": "codex/finite-pw-energy-block42-20260907",
+ "git_sha": "4686d361",
+ "started_utc": "20260918T200921Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   },
+   {
+    "runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "69b94ebb872147a5cb0d0757e6a067e8d7a3f027b56eedf093b579fc79b69e2a",
+ "stdout_tail": "SS gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py\nper_element: 5 checks; actual Haar Gram/magnetic entries and source-normalization/isometry adverse controls\nper_site: 5 checks; actual neutral character matrices and full-carrier ground identification\nper_mode: 5 checks; accepted norm, shell/local budgets and strict finite excess\nper_block: 4 checks; three exact rational radical enclosures and local energy theorem comparison\nlattice_wide: 3 checks; failed crude sufficient budget, failed exact-four transfer and distant vacuum normalization adverse; one plaquette only\nTOTAL: 22\nseconds: 0.04197166592348367; rss_MiB: 22.46875\nsource_sha256: 9d43e55cc41384e4f98398cc599655d881bfdfb2cba545781b501fa9024bdf70\n\n== scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py\nper_element: 20 checks; exact shell minimum for each R=1..20\nper_site: 9 checks; actual three cubic boxes: incidence, touching faces and distinct paths\nper_mode: 6 checks; exact nonzero compression commutator and sign/naive commutation adverse\nper_block: 3 checks; sufficient and insufficient normalization budgets, positive denominator\nlattice_wide: 2 checks; restricted-ground premise adverse and generator convention discriminator; no numerical SU3 spectral validation\nTOTAL: 40\nseconds: 0.19444341596681625; rss_MiB: 58.59375\nsource_sha256: 2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433\n"
+}

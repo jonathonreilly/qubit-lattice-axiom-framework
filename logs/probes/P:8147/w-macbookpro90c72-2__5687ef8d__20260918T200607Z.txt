@@ -1,0 +1,19 @@
+PR #8147: [physics-loop] admissibility-induced-law block13 — bounded_theorem — bounded-support: the record two-point function of a causal Gaussian formation law is a heat kernel in level time, never the lattice Green function; massless iff value-covariant, then no stationary law
+branch physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py: rc=0 TOTAL: PASS=23 FAIL=0
+   mutation kernel_formula_wrong: expected B observed B ok
+   mutation level_sum_not_gain_power: expected B observed B ok
+   mutation coincidence_bounds_violated: expected C observed C ok
+   mutation stationary_law_at_g1_claimed: expected C observed C ok
+   mutation massive_variance_unbounded_claimed: expected C observed C ok
+   mutation downstream_bound_wrong: expected C observed C ok
+   mutation symbol_graph_wrong: expected D observed D ok
+   mutation transverse_expansion_quadratic_claimed: expected D observed D ok
+   mutation walk_identity_wrong: expected D observed D ok
+   mutation formation_series_bounded_claimed: expected D observed D ok
+   mutation binomial_bounds_violated: expected E observed E ok
+   mutation born_curvature_wrong: expected E observed E ok
+   mutation block07_gain_wrong: expected E observed E ok
+   mutation claim_green_function_reproduced: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

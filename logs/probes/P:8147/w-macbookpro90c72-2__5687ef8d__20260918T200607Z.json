@@ -1,0 +1,28 @@
+{
+ "task": "P:8147",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block13-causal",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8147",
+ "pr": 8147,
+ "branch": "physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915",
+ "git_sha": "5687ef8d",
+ "started_utc": "20260918T200607Z",
+ "elapsed_s": 52.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=23 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "7f5852d5647bb22961e40b5b971e2413d74e7e2381b49f09d910d0a77d44bd84",
+ "stdout_tail": " admissibility-induced-law block13 \u2014 bounded_theorem \u2014 bounded-support: the record two-point function of a causal Gaussian formation law is a heat kernel in level time, never the lattice Green function; massless iff value-covariant, then no stationary law\nbranch physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py: rc=0 TOTAL: PASS=23 FAIL=0\n   mutation kernel_formula_wrong: expected B observed B ok\n   mutation level_sum_not_gain_power: expected B observed B ok\n   mutation coincidence_bounds_violated: expected C observed C ok\n   mutation stationary_law_at_g1_claimed: expected C observed C ok\n   mutation massive_variance_unbounded_claimed: expected C observed C ok\n   mutation downstream_bound_wrong: expected C observed C ok\n   mutation symbol_graph_wrong: expected D observed D ok\n   mutation transverse_expansion_quadratic_claimed: expected D observed D ok\n   mutation walk_identity_wrong: expected D observed D ok\n   mutation formation_series_bounded_claimed: expected D observed D ok\n   mutation binomial_bounds_violated: expected E observed E ok\n   mutation born_curvature_wrong: expected E observed E ok\n   mutation block07_gain_wrong: expected E observed E ok\n   mutation claim_green_function_reproduced: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

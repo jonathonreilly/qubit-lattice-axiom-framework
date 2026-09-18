@@ -1,0 +1,153 @@
+PR #8140: [physics-loop] clock-static-charge: bounded_theorem, bounded-support
+branch physics-loop/clock-static-charge-20260915 (base main)
+runners in the PR: 5
+== scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py: rc=0 no TOTAL line
+ure": -0.00408411332280359,
+      "positive_variance_term": 0.004084113311877866,
+      "combined": -1.0925723867294401e-11,
+      "direct_charge_curvature": -1.092560619106681e-11,
+      "error": 1.176762275918418e-16
+    },
+    {
+      "beta": 2.0,
+      "sigma": 0.13,
+      "mean_curvature": -0.004084106887846092,
+      "positive_variance_term": 0.0040841068803669014,
+      "combined": -7.479190877734965e-12,
+      "direct_charge_curvature": -7.479092098613607e-12,
+      "error": 9.877912135759783e-17
+    },
+    {
+      "beta": 2.0,
+      "sigma": 0.37,
+      "mean_curvature": -0.004084103720664137,
+      "positive_variance_term": 0.004084103728143397,
+      "combined": 7.479259399312266e-12,
+      "direct_charge_curvature": 7.479092098613227e-12,
+      "error": 1.6730069903834468e-16
+    }
+  ]
+}
+per_element: executed exact exterior derivatives and closure in six carrier-cancellation examples in3D and4D.
+per_site: executed positive theta kernels, Poisson Hessians and multiprecision action differences; positive kernels can coexist with negative effective curvature.
+per_mode: executed finite Gaussian covariance splits and precision series, plus Eulerian moment-tail polynomial identities.
+per_block: executed hard-core graph indices and source Gaussian quadratures with the positive source-variance term retained.
+lattice_wide: checked and not executed: infinite rooted cluster sums, arbitrary integer fillings and volume-uniform convexity rely on the written analytic hypotheses.
+
+== scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py: rc=0 no TOTAL line
+rect_imag": -1.4210854715202005e-19,
+        "dual": 0.002827276442278023,
+        "absolute_error": 4.563703926694018e-19,
+        "omitting_phase_error": 0.0001019583955198162,
+        "min_magnetic_character": 0.9254863297884355
+      }
+    ],
+    "alias_error": 1.7521252633077577e-18,
+    "representative_integer_shift": 13,
+    "cutoff_comparison": 6.938893903907228e-18,
+    "cube_r": 5,
+    "cube_P": 6,
+    "Q_det": 6,
+    "magnetic_Q": "1/6"
+  },
+  "four_cube": {
+    "r": 17,
+    "P": 24,
+    "Q_det": 82944,
+    "magnetic_rank": 7,
+    "phase_turns": "51/8",
+    "phase_real": "-sqrt(2)/2",
+    "electric_energy": "17/24",
+    "magnetic_energy": "21/8",
+    "magnetic_charge": [
+      -3,
+      0,
+      -3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "integer_completion_determinant": 1
+  }
+}
+per_element: executed integer boundary-of-boundary identities and exact rational curl projections on single three- and four-cubes.
+per_site: executed exact tree gauge counts and direct finite-clock sums up to3125states with the supplied Villain weight.
+per_mode: executed electric aliases, integer representative shifts and an exact negative mixed phase at N=3 on the four-cube.
+per_block: executed ten direct/dual three-cube comparisons, a shifted-cutoff comparison and positive complete magnetic phase-class sums.
+lattice_wide: checked and not executed: the general coupled-defect identity and positive marginal follow from the written proof; fixed-law phase control remains open.
+
+== scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py: rc=0 TOTAL: PASS=12 FAIL=0
+== scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py: rc=0 no TOTAL line
+   },
+    {
+      "beta": 4.0,
+      "x": 0.0,
+      "hessian": 1.8759510027421968,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.9539925233402755e-14,
+      "beta_delta": 0.0006086487926853883
+    },
+    {
+      "beta": 4.0,
+      "x": 0.23,
+      "hessian": 1.874152644931754,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.7541523789077473e-14,
+      "beta_delta": 0.0006086487926853883
+    },
+    {
+      "beta": 4.0,
+      "x": 0.61,
+      "hessian": 1.8740606985732895,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.9317880628477724e-14,
+      "beta_delta": 0.0006086487926853883
+    }
+  ]
+}
+per_element: executed exact integer interval/tensor homotopies with absolute, one-face-relative and full-relative boundaries.
+per_site: executed top-degree unit-charge and thin-rectangle mass2 controls whose least fillings grow beyond a fixed local carrier.
+per_mode: executed exact three/four-cube Hodge spectra, conserved-current source norms and integer versus half-current phase shifts.
+per_block: executed fifteen exact one-mode magnetic quotient Hessians and multiprecision finite differences for real electric-current extensions.
+lattice_wide: checked and not executed: cubic local filling, source-curvature and exact positive-marginal convexity rely on the stated proofs; the integer-current infrared limit remains open.
+
+== scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py: rc=0 no TOTAL line
+  "alpha": 64.0,
+        "centered_variance": 2.532833109818771e-14,
+        "tilted_variance": 0.25,
+        "continuous_bound": 0.015625,
+        "alpha_times_centered_variance": 1.6210131902840135e-12,
+        "mgf": 1.9999999999999494
+      }
+    ],
+    "signed_mixture_variance": 0.8793673556079585,
+    "signed_mixture_gaussian_bound": 0.125,
+    "positive_mixture_negative_weight": -0.01831563888873418
+  },
+  "local_edge_bounds": [
+    {
+      "d": 3,
+      "edges": 12,
+      "max_H_diagonal": 4,
+      "max_conserved_diagonal": "2",
+      "tail_denominator": 8
+    },
+    {
+      "d": 4,
+      "edges": 32,
+      "max_H_diagonal": 5,
+      "max_conserved_diagonal": "3",
+      "tail_denominator": 12
+    }
+  ]
+}
+per_element: executed exact finite-cube incidence, integer current basis and Hodge projector identities with charge-N aliases.
+per_site: executed local edge diagonal bounds and half-shifted scalar controls; the arbitrary-volume density estimate is a written Chernoff proof.
+per_mode: executed nonorthogonal-lattice Gaussian Poisson transforms, moment generating functions, covariance identities and distinct Wilson variables.
+per_block: executed actual single-three-cube current, shifted dual, direct32-state clock and constrained plaquette-Fourier evaluations at identical parameters.
+lattice_wide: checked and not executed: general full-rank lattice identities and all-volume centered bounds rely on the written proof; nondegenerate fixed-law photon correlations remain open.

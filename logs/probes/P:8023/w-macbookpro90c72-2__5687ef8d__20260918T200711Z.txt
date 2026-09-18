@@ -1,0 +1,74 @@
+PR #8023: [physics-loop] compact-cutoff block32 conditional-support
+branch codex/compact-cutoff-block32-20260907 (base main)
+runners in the PR: 9
+== scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py: rc=0 no TOTAL line
+PASS finite physical cube gap certificate; TOTAL=11
+per_element: Rational degree12 exponential lower bound and all-shell tail ratio.
+per_site: Physical Gauss constraints at all8 fixed cube vertices are an explicit premise.
+per_mode: Twelve-link product kernel bounds; no finite representation truncation proves the tail.
+per_block: Exact scalar constants; ground positivity and weighted form estimates proved analytically.
+lattice_wide: One fixed finite cube, every finite v>=0; no volume-uniform or QCD gap.
+nonconstant_heat_bound=889/2187; half_margin=409/4374
+gap_lower=16/282429536481/a * exp(-24av)
+resources: elapsed_sec=0.2946527920430526 rss_MiB=60.09375; limits=180sec/180MiB
+source_sha256=0a3fd8b67e52d5e4402757394cc6f0962177c4423318fdcc0f7989a449c35f91
+
+== scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py: rc=0 no TOTAL line
+PASS finite carrier and energy-cutoff checks; TOTAL=32 (31 scientific +1 resource)
+per_element: Exact Peter-Weyl shell sum and dimension polynomial.
+per_site: Full8-vertex Gauss action preserved analytically; no lattice-state simulation.
+per_mode: Five fixed cutoffs R=0,1,2,4,10 with exact link dimensions and12-link storage.
+per_block: Balanced omitted thresholds and actual-Haar R0 leakage coefficient1/3.
+lattice_wide: Fixed finite cube; four-link support on retained carrier, not four-qubit compiled controls.
+cutoff_rows=[{"R": 0, "dimension": 1, "gap_times_a": 4, "qubits_per_link": 0, "total_storage_qubits": 0}, {"R": 1, "dimension": 19, "gap_times_a": 9, "qubits_per_link": 5, "total_storage_qubits": 60}, {"R": 2, "dimension": 155, "gap_times_a": 16, "qubits_per_link": 8, "total_storage_qubits": 96}, {"R": 4, "dimension": 3136, "gap_times_a": 34, "qubits_per_link": 12, "total_storage_qubits": 144}, {"R": 10, "dimension": 611611, "gap_times_a": 124, "qubits_per_link": 20, "total_storage_qubits": 240}]
+resources: elapsed_sec=0.25095116696320474 rss_MiB=63.078125; limits=180sec/180MiB
+source_sha256=9e10d5d45b3df028004094d26db438ec9358cdbe195a7f051ad09d907af1b670
+
+== scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py: rc=0 no TOTAL line
+PASS exact Schur/Ritz interval controls; TOTAL=43
+per_element: Exact rational matrices, principal-minor positivity and Sturm root enclosures.
+per_site: No whole-cube eigenvalue calculation; operator theorem uses full physical or link space.
+per_mode: Four coupled2/3-dimensional fixtures plus one uncoupled interleaving adverse case.
+per_block: Both directions of finite-gap error; actual-Haar R0 ground-only coupling imported explicitly.
+lattice_wide: Fixed compact cube cutoff theorem; no full-spectrum uniform rate or thermodynamic claim.
+actual_R0={"b_squared": "v\u00b2/3", "condition": "6v<4/a; no second Ritz eigenvalue at R=0", "g0": "4/a", "mu0": "6v"}
+three_level certified_gap_interval=["16249538182239/8268906708479", "13165442555549/5386818745220"]
+ground_only_coupling certified_gap_interval=["7/8", "10/9"]
+resources: elapsed_sec=0.1342984160874039 rss_MiB=60.453125; limits=180sec/180MiB
+source_sha256=f1c0c48eff5a5618fc2d4879e015ccb7041be58526bd49ed869027ccd6960576
+
+== scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py: rc=0 no TOTAL line
+PASS finite physical cube gap certificate; TOTAL=18
+per_element: Exact SU3 weight-metric and Ritz arithmetic; all-label spectrum argument is analytic.
+per_site: All8 cube vertices with full vertex Gauss constraints; no external charges.
+per_mode: All4096 supports of12 links, retaining every degree census.
+per_block: All144 face-character pairs and1728 triples; Haar survivor values proved analytically.
+lattice_wide: One fixed physical cube only; no thermodynamic or continuum gap.
+support_histogram={"4": 6, "6": 16, "7": 12, "8": 33, "9": 52, "10": 42, "11": 12, "12": 1}
+Ritz_gap_lower(x)/a=(-71*x/12 + sqrt(4*x**2/3 + (16 - x/6)**2)/2 + 8)/a; x=av
+resources: elapsed_sec=0.18876079202163965 rss_MiB=63.5; limits=180sec/180MiB
+source_sha256=a044cc86420444dded3da0d9a1757f0218a70f44bc158c3b735953337ff891e4
+
+== scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py: rc=0 TOTAL: PASS=24 FAIL=0
+== scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py: rc=0 TOTAL: PASS=28 FAIL=0
+== scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py: rc=0 no TOTAL line
+PASS: TOTAL16 exact checks (word2, arithmetic10, adverse4).
+N5: Fixed finite-character windows of the actual bare-Haar cube slab.
+N5: Exact word/arithmetic support; analytical concentration and character proof remain load bearing.
+N5: Side-removal control changes both slice copies, not the theorem fixture.
+N5: No high-label uniformity, spectral-gap or physical coupling selection.
+N5: No runtime file inputs; source SHA 6106a45ec14c0676dd7047c13156b6e4eaf4a13674d4a5e2b9e4983538155e0b
+Resources: 0.007801s; 21.453 MiB; limits 180s/180MiB.
+
+== scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py: rc=0 no TOTAL line
+PASS: exact compact Wilson Hamiltonian algebra support
+per_element: eight trace-normalized generators; fundamental kinetic coefficient4/a
+per_site: cube incidence verifies twelve physical links and six closed faces
+per_mode: covariance3 and radial Gaussian moments are finite algebra checks
+per_block: exact nonlinear compact potential and transfer scalar retained
+lattice_wide: fixed cube only; no numerical certification of strong convergence or continuum limit
+TOTAL: 31
+resources: seconds=0.155630 RSS_MiB=60.531250 limits180/180
+source_sha256: c4ba66af265f24ea4090186e278f2588a378d16fca3469f0cc2a24f96f076b00
+
+== scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py: rc=0 TOTAL: PASS=31 FAIL=0

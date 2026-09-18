@@ -1,0 +1,17 @@
+PR #8155: [physics-loop] admissibility-induced-law block21 — bounded_theorem — bounded-support: the unsoldered sphere static law at weak coupling on Z^3 — one law, exponential decay, no massless channel below beta = sqrt(3)/6
+branch physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation covariance_identity_wrong: expected B observed B ok
+   mutation series_ratio_wrong: expected B observed B ok
+   mutation coefficient_formula_wrong: expected B observed B ok
+   mutation derivative_identity_wrong: expected C observed C ok
+   mutation variance_bound_wrong: expected C observed C ok
+   mutation threshold_wrong: expected C observed C ok
+   mutation antipodal_tv_wrong: expected C observed C ok
+   mutation maximal_coupling_wrong: expected D observed D ok
+   mutation fixed_point_wrong: expected D observed D ok
+   mutation walk_bound_wrong: expected D observed D ok
+   mutation geometric_sum_wrong: expected D observed D ok
+   mutation claim_channel_below_threshold_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

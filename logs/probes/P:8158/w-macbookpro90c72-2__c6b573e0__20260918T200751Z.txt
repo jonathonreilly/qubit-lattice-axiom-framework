@@ -1,0 +1,17 @@
+PR #8158: [physics-loop] admissibility-induced-law block24 — bounded_theorem — bounded-support: unrecorded sites — the free-window and integrated-exterior readings differ iff an unrecorded component touches two recorded sites; exact witnesses; the clause pair recorded
+branch physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation spectral_decomposition_wrong: expected B observed B ok
+   mutation constancy_criterion_wrong: expected B observed B ok
+   mutation path_eigenvalue_wrong: expected B observed B ok
+   mutation one_attachment_nonconstant_claimed: expected B observed B ok
+   mutation sphere_one_attachment_wrong: expected C observed C ok
+   mutation sphere_series_sign_wrong: expected C observed C ok
+   mutation plaquette_tv_wrong: expected D observed D ok
+   mutation cube_tv_wrong: expected D observed D ok
+   mutation forest_tv_nonzero_claimed: expected D observed D ok
+   mutation average_identity_wrong: expected D observed D ok
+   mutation hadamard_component_constant_claimed: expected E observed E ok
+   mutation claim_reading_selected_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

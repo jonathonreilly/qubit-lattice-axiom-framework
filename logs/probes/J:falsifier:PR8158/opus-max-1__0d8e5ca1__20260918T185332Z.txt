@@ -1,0 +1,14 @@
+== Q4 witnesses recomputed by brute-force integer enumeration
+[Q4a] plaquette + one unrecorded site on two adjacent corners at (3, 1, 2): TV = 78621/4563820 (stated 78621/4563820): agrees
+[Q4a] plaquette + one unrecorded site on two adjacent corners at (5, 2, 4): TV = 675203620/64463986907 (stated 675203620/64463986907): agrees
+[Q4a] plaquette + one unrecorded site on two adjacent corners at (2, 1, 2): TV = 221667/30063356 (stated 221667/30063356): agrees
+[Q4b] unit cube, top face unrecorded, at (3, 1, 2): TV = 9778807/1312253264 (stated 9778807/1312253264): agrees
+[Q4c] plaquette + pendant path of two + pendant site at (2, 1, 2): TV = 0 (stated 0): agrees
+[Q4+] more couplings (plaquette+bridge TV; forest TV): (1, 1, 1): 0.000e+00, 0; (2, 2, 2): 0.000e+00, 0; (4, 1, 2): 4.012e-02, 0; (7, 3, 5): 1.075e-02, 0; (1, 3, 2): 1.772e-02, 0; (6, 6, 1): 9.004e-02, 0; (2, 5, 5): 5.080e-03, 0
+[Q4a-geom] the graph 'plaquette + one site on two adjacent corners' is bipartite: False; it contains the triangle c0-c1-x: True; every subgraph of Z^3 is bipartite, so it is not a window of Z^3 (the declared setting)
+[Q4a-Z3] realizable analogues, TV(R1, R2): L-path of three corners with the fourth corner unrecorded; two recorded pairs with one unrecorded site bridging a straight gap: (3, 1, 2): 455/31176, 1/72; (5, 2, 4): 233988/24694249, 29/3174; (2, 1, 2): 2100/295361, 5/726
+[Q1] average identity R2 = sum_omega P(omega) R3(.|omega) exact on two windows (bent path + bridging site; square + two-site bridge): True
+[R] 300 random windows (6-8 sites in a 3x3x3 box, |W| <= 5, couplings in [1,7]^3): {'pendant': 91, 'bridging': 209, 'pendant_nonzero': 0, 'bridging_zero': 0, 'bridging_zero_construle': 3}; first exceptions: []
+[time] 14s
+HIT: Q4(a) - the stated witness configuration (one unrecorded site adjacent to two adjacent corners of a plaquette) is not a window of Z^3: its graph contains the triangle c0-c1-x and Z^3 is bipartite; the stated TV values are reproduced on that abstract graph (see [Q4a])
+SUMMARY: Q4 values recomputed by integer enumeration (all agree; Q4(a)'s graph is not a Z^3 window); average identity holds; 7 more couplings on the plaquette/forest behave as the criterion says; 300 random windows: 91 pendant (0 with TV != 0), 209 bridging (0 with TV = 0 at a non-constant rule; 3 at p = q = r); falsifier FIRES

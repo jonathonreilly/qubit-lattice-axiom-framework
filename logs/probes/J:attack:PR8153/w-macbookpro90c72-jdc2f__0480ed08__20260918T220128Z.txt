@@ -1,0 +1,18 @@
+k=2pi(0,1)/4  E=2  1-u=4/9  E/(1-u)=9/2
+k=2pi(0,2)/4  E=4  1-u=8/9  E/(1-u)=9/2
+k=2pi(0,3)/4  E=2  1-u=4/9  E/(1-u)=9/2
+k=2pi(1,0)/4  E=2  1-u=4/9  E/(1-u)=9/2
+k=2pi(1,1)/4  E=4  1-u=4/9  E/(1-u)=9
+k=2pi(1,2)/4  E=6  1-u=8/9  E/(1-u)=27/4
+k=2pi(1,3)/4  E=4  1-u=8/9  E/(1-u)=9/2
+k=2pi(2,0)/4  E=4  1-u=8/9  E/(1-u)=9/2
+k=2pi(2,1)/4  E=6  1-u=8/9  E/(1-u)=27/4
+k=2pi(2,2)/4  E=8  1-u=8/9  E/(1-u)=9
+k=2pi(2,3)/4  E=6  1-u=8/9  E/(1-u)=27/4
+k=2pi(3,0)/4  E=2  1-u=4/9  E/(1-u)=9/2
+k=2pi(3,1)/4  E=4  1-u=8/9  E/(1-u)=9/2
+k=2pi(3,2)/4  E=6  1-u=8/9  E/(1-u)=27/4
+k=2pi(3,3)/4  E=4  1-u=4/9  E/(1-u)=9
+static S=1/E products {Fraction(1, 1)}
+formation E/(1-u) values [Fraction(9, 2), Fraction(27, 4), Fraction(9, 1)]
+SUMMARY: attack pattern (b) SAME TEST BOTH SIDES on G5 - static S=1/E has constant S E ({Fraction(1, 1)}); formation 1/(1-u) has E/(1-u) in [Fraction(9, 2), Fraction(27, 4), Fraction(9, 1)]; the objects differ as G5 states; attack does not fire

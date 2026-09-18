@@ -1,0 +1,14 @@
+[corridor L=1] |C| = 6 (1 + 5L = 6), |G| = 23 (<= 6|C|: True), seed Records 26; 2 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 7 distinct frontier states; 0 order issues  (0s)
+[corridor L=2] |C| = 11 (1 + 5L = 11), |G| = 39 (<= 6|C|: True), seed Records 44; 4 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 19 distinct frontier states; 0 order issues  (0s)
+[corridor L=3] |C| = 16 (1 + 5L = 16), |G| = 55 (<= 6|C|: True), seed Records 62; 8 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 43 distinct frontier states; 0 order issues  (0s)
+[corridor L=4] |C| = 21 (1 + 5L = 21), |G| = 71 (<= 6|C|: True), seed Records 80; 16 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 91 distinct frontier states; 0 order issues  (0s)
+[corridor L=5] |C| = 26 (1 + 5L = 26), |G| = 87 (<= 6|C|: True), seed Records 98; 32 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 187 distinct frontier states; 0 order issues  (0s)
+[corridor L=6] |C| = 31 (1 + 5L = 31), |G| = 103 (<= 6|C|: True), seed Records 116; 64 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 379 distinct frontier states; 0 order issues  (1s)
+[corridor L=7] |C| = 36 (1 + 5L = 36), |G| = 119 (<= 6|C|: True), seed Records 134; 128 transcripts, total probability 1, largest |Pr - tr[R..rho..R]| = 0; 763 distinct frontier states; 0 order issues  (2s)
+[counts L=5] seed Records 98 (note 98), zero guards 87 (note 87), branches 32 (note 32), distinct frontier states 187 (note 187), Records added per branch 15 (note 15)
+[rotations] 24 proper cubic rotations of the L = 3 seed: rotated single-active-site order and identical transcript law: True
+[similarity] nonunitary GL2 similarity of every Record (L = 3): same order, conjugated outcomes, identical probabilities: True
+[control] without the zero guards: 1 stages with other than one active site (the note: extra enabled sites), e.g. stage 0: 2 active sites, rates [Fraction(1, 1), Fraction(1, 1)]
+[zero context] a blank site seeing only zero Records: rate 0; non-binary psi arguments met anywhere: 0
+[time] 3s
+SUMMARY: attack pattern (a) WITNESS REALIZABILITY - the note's seed, guards and corridor built literally in Z^3 and run with an independent exact implementation of (1)-(2) for L = 1..7 over all 2^L branches: exactly one active site of rate 1 at every stage in the stated order, transcript law equal to the ordered products exactly, total probability 1; at L = 5 the seed has 98 Records of which 87 zero guards and 187 distinct frontier states over 32 branches (note: 98, 87, 187, 32); 24 rotations and a GL2 similarity covariant; guards necessary; 0 defects; attack does not fire

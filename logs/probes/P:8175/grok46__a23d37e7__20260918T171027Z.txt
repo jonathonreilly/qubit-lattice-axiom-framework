@@ -1,0 +1,13 @@
+PR #8175: ail31: the sharper bad-pair budget is false for the extended explanation tree — witnesses at 8/5 and 5/3, the two-level period of ratio 2, the stake recorded
+branch physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation rise_identity_wrong: expected B observed B ok
+   mutation period_arithmetic_wrong: expected B observed B ok
+   mutation witness_marks_wrong: expected C observed C ok
+   mutation sharper_budget_asserted: expected C observed C ok
+   mutation witness_ratio_wrong: expected C observed C ok
+   mutation certificate_wrong: expected D observed D ok
+   mutation ceiling_c1_wrong: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

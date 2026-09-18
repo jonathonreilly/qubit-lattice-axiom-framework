@@ -1,0 +1,37 @@
+{
+ "task": "P:8177",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8177",
+ "pr": 8177,
+ "branch": "physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917",
+ "git_sha": "a23d37e7",
+ "started_utc": "20260918T170950Z",
+ "elapsed_s": 26.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=18 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR 8177 isolated worktree: TOTAL PASS=18 FAIL=0, 7/7 mutations match expected families, not a HIT",
+ "stdout_sha256": "ea027a683b50b8b5cc293214de0e4404d83ecb66d0879f47e50ed61bb42bd6a0",
+ "stdout_tail": "PR #8177: ail33: the rooted inequality reduces the unit budget to the tight-sibling lemma; the one-processed-child count with exact certificates at p \u2265 2921 (c = 2) and p \u2265 405 (c = 1), neither claimed\nbranch physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py: rc=0 TOTAL: PASS=18 FAIL=0\n   mutation extension_lemma_wrong: expected B observed B ok\n   mutation seed_lemma_wrong: expected B observed B ok\n   mutation tightness_wrong: expected C observed C ok\n   mutation certificate_wrong: expected D observed D ok\n   mutation upfactor_wrong: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171124Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

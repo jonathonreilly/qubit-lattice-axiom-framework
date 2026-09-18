@@ -1,0 +1,3 @@
+polynomial: 9*D**2 + 17*D + 8
+coeffs (high to low): [9, 17, 8]
+SUMMARY: healing-polynomial falsifier did not fire: 9*D**2 + 17*D + 8 has all nonnegative coefficients and is nonnegative at D=0..39

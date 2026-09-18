@@ -1,0 +1,11 @@
+PR #8177: ail33: the rooted inequality reduces the unit budget to the tight-sibling lemma; the one-processed-child count with exact certificates at p ≥ 2921 (c = 2) and p ≥ 405 (c = 1), neither claimed
+branch physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py: rc=0 TOTAL: PASS=18 FAIL=0
+   mutation extension_lemma_wrong: expected B observed B ok
+   mutation seed_lemma_wrong: expected B observed B ok
+   mutation tightness_wrong: expected C observed C ok
+   mutation certificate_wrong: expected D observed D ok
+   mutation upfactor_wrong: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,15 @@
+PR #8174: [physics-loop] admissibility-induced-law block30 — bounded_theorem — bounded-support: the six-axis formation threshold lifted by a two-level domination — seeds and amplified nodes in the explanation tree; p ≥ 4165 at (p,1,2) from 285718; the route's ceiling
+branch physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation deviation_closed_form_wrong: expected B observed B ok
+   mutation domination_state_wrong: expected B observed B ok
+   mutation spanning_identity_wrong: expected C observed C ok
+   mutation budget_amplified_dropped: expected C observed C ok
+   mutation bad_pairs_wrong: expected C observed C ok
+   mutation forks_identity_wrong: expected C observed C ok
+   mutation subtree_bound_wrong: expected D observed D ok
+   mutation certificate_wrong: expected D observed D ok
+   mutation ceiling_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

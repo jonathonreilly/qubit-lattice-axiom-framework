@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8172",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block28-map-of",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8172/falsifier_healing_poly.py",
+ "seed": 51388,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a23d37e7",
+ "started_utc": "20260918T170948Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "healing-polynomial falsifier did not fire: 9*D**2 + 17*D + 8 has all nonnegative coefficients and is nonnegative at D=0..39"
+ },
+ "review": "T2 healing polynomial expands to 9D^2+17D+8 with all nonnegative coeffs and is nonnegative at D=0..39; falsifier did not fire",
+ "what": "PR #8172 ([physics-loop] admissibility-induced-law block28 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916; git show origin/physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916:<note>. Create probes/work/pr8172/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8172/<script>.py\"",
+ "stdout_sha256": "b4ffeff6a13c70c27092a82779b704386746a556c3cae7d83011d7a66cd5f938",
+ "stdout_tail": "polynomial: 9*D**2 + 17*D + 8\ncoeffs (high to low): [9, 17, 8]\nSUMMARY: healing-polynomial falsifier did not fire: 9*D**2 + 17*D + 8 has all nonnegative coefficients and is nonnegative at D=0..39\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170958Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

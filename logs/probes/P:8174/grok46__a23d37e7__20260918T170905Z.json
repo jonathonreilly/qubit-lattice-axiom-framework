@@ -1,0 +1,37 @@
+{
+ "task": "P:8174",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8174",
+ "pr": 8174,
+ "branch": "physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916",
+ "git_sha": "a23d37e7",
+ "started_utc": "20260918T170905Z",
+ "elapsed_s": 35.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=20 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR 8174 isolated worktree: runner TOTAL with FAIL=0 and all listed mutations matching expected families, not a HIT",
+ "stdout_sha256": "b754a17cbcae103b85e83c906bc86c148a54803e14e8ba95e895fc0f96b9be53",
+ "stdout_tail": "PR #8174: [physics-loop] admissibility-induced-law block30 \u2014 bounded_theorem \u2014 bounded-support: the six-axis formation threshold lifted by a two-level domination \u2014 seeds and amplified nodes in the explanation tree; p \u2265 4165 at (p,1,2) from 285718; the route's ceiling\nbranch physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py: rc=0 TOTAL: PASS=20 FAIL=0\n   mutation deviation_closed_form_wrong: expected B observed B ok\n   mutation domination_state_wrong: expected B observed B ok\n   mutation spanning_identity_wrong: expected C observed C ok\n   mutation budget_amplified_dropped: expected C observed C ok\n   mutation bad_pairs_wrong: expected C observed C ok\n   mutation forks_identity_wrong: expected C observed C ok\n   mutation subtree_bound_wrong: expected D observed D ok\n   mutation certificate_wrong: expected D observed D ok\n   mutation ceiling_wrong: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170958Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "X:sixaxis-static-threshold-lines",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/scan_static_sixaxis.py 24 400 4 5 6 7 8 --qr 1 1",
+ "seed": 51414,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a23d37e7",
+ "started_utc": "20260918T171014Z",
+ "elapsed_s": 20.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  p= 4.00: order 0.9987 | 0.9987   (2s per start)",
+   "  p= 5.00: order 0.9997 | 0.6863   (2s per start)",
+   "  p= 6.00: order 0.9999 | 0.3619   (2s per start)",
+   "  p= 7.00: order 1.0000 | 0.2546   (2s per start)",
+   "  p= 8.00: order 1.0000 | 0.9790   (2s per start)"
+  ]
+ },
+ "review": "L=24 400 sweeps static six-axis on (p,1,1) p=4-8 to locate the unlocated line",
+ "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32.",
+ "stdout_sha256": "d8949a9b8501bab759bafca024058065e26b667fcd479c147f965b3faf204e6c",
+ "stdout_tail": "six-axis static law at (p,1,2), L=24, sweeps=400; order = mean fraction of the majority value over the last half (aligned start | random start)\n  p= 4.00: order 0.9987 | 0.9987   (2s per start)\n  p= 5.00: order 0.9997 | 0.6863   (2s per start)\n  p= 6.00: order 0.9999 | 0.3619   (2s per start)\n  p= 7.00: order 1.0000 | 0.2546   (2s per start)\n  p= 8.00: order 1.0000 | 0.9790   (2s per start)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171035Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

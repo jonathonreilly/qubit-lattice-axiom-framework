@@ -1,0 +1,6 @@
+max t(4/27-t) at t=2/27 is 4/729 stated 4/729 True
+p=367 d3=745/135434 > 4/729 True; p=368 d3=747/136171 < 4/729 True
+cache has 'exactly 3/4': True
+cache has 'ratio 4/11': True
+cache has 'E - 3(|S|-1) = -12': True
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - 4/729 identity, 367/368 straddle, W1 3/4 W2 4/11 W3 -12 in cache; does not fire

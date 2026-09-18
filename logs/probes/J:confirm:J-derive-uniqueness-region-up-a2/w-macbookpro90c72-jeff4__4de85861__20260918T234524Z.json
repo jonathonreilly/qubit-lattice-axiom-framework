@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-uniqueness-region-up-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jeff4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/uniqueness-region-up/referee_w-macbookpro90c72-jeff4/check.py",
+ "seed": 75124,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234524Z",
+ "elapsed_s": 25.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - PARTIAL uniqueness/exponential memory loss on (p,1,2) at p=3.7..5.1 by averaged W_rho contraction at alpha=5/4; independent true-W certificates hold"
+ },
+ "review": "referee confirms PARTIAL: true W_rho 3kbar<1 on p=37/10..51/10 at alpha=5/4 (0.99744869 at 51/10), plan=true W at maximizers, 3c bracket matches block 08, does not reach 10.5-11",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:uniqueness-region-up:a2/; its files are probes/work/derive/uniqueness-region-up/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/uniqueness-region-up/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "855a7e1940964feaef591f6cf3e2762fd312fb1740b1240ca69abc48acf5e9d5",
+ "stdout_tail": ": 3kbar=0.76887200 <1 True\n  p=3.9: 3kbar=0.79266866 <1 True\n  p=4.0: 3kbar=0.81532544 <1 True\n  p=4.1: 3kbar=0.83674938 <1 True\n  p=4.2: 3kbar=0.85686755 <1 True\n  p=4.3: 3kbar=0.87562637 <1 True\n  p=4.4: 3kbar=0.89299045 <1 True\n  p=4.5: 3kbar=0.90894109 <1 True\n  p=4.6: 3kbar=0.92347467 <1 True\n  p=4.7: 3kbar=0.93660080 <1 True\n  p=4.8: 3kbar=0.94834053 <1 True\n  p=4.9: 3kbar=0.95872462 <1 True\n  p=5.0: 3kbar=0.97364025 <1 True\n  p=5.1: 3kbar=0.99744869 <1 True\n  plan feasible and >= true W on every grid call: True\nT4 edge p=51/10, all 30 ordered pairs, true W:\n  kbar=52187574259076840991934694/156963184970376094931272779 float=0.33248290; 3kbar=0.99744869 <1 True\n  #distinct pair values 2 (want 2); 3 kappa_max=1.068206\n  author's stated kbar vs true: stated=0.33248290 true=0.33248290 stated>=true True\nHIT: confirmed - the claim survives; independently: rho is a metric; true W_rho (min-cost transport, Fractions) gives 3 kbar < 1 at every p = 37/10..51/10 with alpha=5/4 (3 kbar = 0.99744869 at 51/10); author's orthogonal-then-antipodal plan is feasible and >= true W; 30 ordered pairs take exactly two values; block 08 3c < 1 at 37/10 and >= 1 at 19/5; 3 kappa_max > 1 > 3 kbar so the first level may expand then contracts; this enlarges the proved no-memory region past 19/5 to 51/10 and does not reach 10.5-11\nSUMMARY: confirmed - PARTIAL uniqueness/exponential memory loss on (p,1,2) at p=3.7..5.1 by averaged W_rho contraction at alpha=5/4; independent true-W certificates hold\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jeff4",
+  "at_utc": "20260918T234556Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "independent true-W_rho certificates confirm 3kbar<1 on p=37/10..51/10 at alpha=5/4, enlarging the proved no-memory region past block 08; does not reach 10.5-11",
+  "by": "w-macbookpro90c72-jeff4",
+  "at_utc": "20260918T234556Z"
+ }
+}

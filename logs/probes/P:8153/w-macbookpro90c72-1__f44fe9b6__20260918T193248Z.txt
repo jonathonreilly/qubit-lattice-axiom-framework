@@ -1,0 +1,17 @@
+PR #8153: [physics-loop] admissibility-induced-law block19 — bounded_theorem — bounded-support: the unsoldered static law's ordered phase carries the lattice Green function in its transverse channel — infrared bound above, zero-field Bogoliubov bound below, long-range order for β > 3√3π/8
+branch physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py: rc=0 TOTAL: PASS=17 FAIL=0
+   mutation legendre_coefficient_sign_wrong: expected B observed B ok
+   mutation laplacian_eigenvalue_wrong: expected B observed B ok
+   mutation gradient_sum_wrong: expected B observed B ok
+   mutation second_order_coefficient_wrong: expected B observed B ok
+   mutation cosine_inequality_wrong: expected C observed C ok
+   mutation green_bound_wrong: expected C observed C ok
+   mutation threshold_wrong: expected C observed C ok
+   mutation generator_identity_wrong: expected D observed D ok
+   mutation integration_by_parts_nonzero_claimed: expected D observed D ok
+   mutation second_derivative_identity_wrong: expected D observed D ok
+   mutation quadratic_root_wrong: expected D observed D ok
+   mutation infrared_bound_direction_reversed: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

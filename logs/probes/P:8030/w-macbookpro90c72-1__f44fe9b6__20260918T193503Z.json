@@ -1,0 +1,32 @@
+{
+ "task": "P:8030",
+ "type": "pr-reexecution",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8030",
+ "pr": 8030,
+ "branch": "codex/continuum-boundary-block40-20260907",
+ "git_sha": "f44fe9b6",
+ "started_utc": "20260918T193503Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   },
+   {
+    "runner": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "3950a768ad340e92728a82a9fc7646d061f95dbbb0c4b052967e3c3237568833",
+ "stdout_tail": "ontinuum-boundary block40 conditional-support\nbranch codex/continuum-boundary-block40-20260907 (base codex/infinite-static-block39-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_haar_contact_fdd_controls_2026_09_07.py\nper_element: 4 checks; supplied Haar character moments and normalization\nper_site: 3 checks; actual27-plaquette disjointness and repeated-plaquette adverse\nper_mode: 2 checks; small-argument threshold and Taylor deviation\nper_block: 3 checks; exact logarithmic remainder constants\nlattice_wide: 1 checks; mesh remainder exponent; resource/interface guards not added to mathematical count\nTOTAL: 13\nseconds: 0.006323917070403695; rss_MiB: 21.0\nsource_sha256: a3c70b423be1b8714bfe823cae5b46dad10c022b8b357b7760f0979fbac42656\n\n== scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py\nper_element: 6 checks; three exact exponential-series degree/coefficient certificates\nper_site: 3 checks; weighted Riemann norm bookkeeping\nper_mode: 3 checks; clock-rescaled gap/LR ratio identities\nper_block: 4 checks; wrong degree, wrong clock and missing gap-premise adverse controls\nlattice_wide: 2 checks; fixed-scale LR upper and positive resources; no convergence validation\nTOTAL: 18\nseconds: 0.003553916933014989; rss_MiB: 21.546875\nsource_sha256: 5abcf47d9bccfd37aa18af1edbcac19199bb814993d39f17cd0730e3eb417d44\n"
+}

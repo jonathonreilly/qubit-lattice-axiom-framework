@@ -1,0 +1,14 @@
+PR #8150: [physics-loop] admissibility-induced-law block16 — bounded_theorem — bounded-support: the static law is not a mixture of formation laws on any window with a cycle — a one-record flip raises every order's weight; the exact criterion on cycle-free windows
+branch physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py: rc=0 TOTAL: PASS=17 FAIL=0
+   mutation flip_inequality_wrong: expected B observed B ok
+   mutation strictness_criterion_wrong: expected B observed B ok
+   mutation normalizer_lemma_wrong: expected B observed B ok
+   mutation qualifying_mixture_not_static_claimed: expected C observed C ok
+   mutation mixture_equals_static_claimed: expected C observed C ok
+   mutation census_value_mismatch: expected C observed C ok
+   mutation cycle_lemma_wrong: expected C observed C ok
+   mutation environment_mixture_equals_joint_claimed: expected D observed D ok
+   mutation claim_static_law_derived: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

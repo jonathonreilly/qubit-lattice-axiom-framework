@@ -1,0 +1,28 @@
+{
+ "task": "P:8153",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8153",
+ "pr": 8153,
+ "branch": "physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915",
+ "git_sha": "f44fe9b6",
+ "started_utc": "20260918T193248Z",
+ "elapsed_s": 16.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=17 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "391315bd020324df3db0b3d5ad0e0346664cf3d766fea45154ed1c551c93cc5f",
+ "stdout_tail": "PR #8153: [physics-loop] admissibility-induced-law block19 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered static law's ordered phase carries the lattice Green function in its transverse channel \u2014 infrared bound above, zero-field Bogoliubov bound below, long-range order for \u03b2 > 3\u221a3\u03c0/8\nbranch physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py: rc=0 TOTAL: PASS=17 FAIL=0\n   mutation legendre_coefficient_sign_wrong: expected B observed B ok\n   mutation laplacian_eigenvalue_wrong: expected B observed B ok\n   mutation gradient_sum_wrong: expected B observed B ok\n   mutation second_order_coefficient_wrong: expected B observed B ok\n   mutation cosine_inequality_wrong: expected C observed C ok\n   mutation green_bound_wrong: expected C observed C ok\n   mutation threshold_wrong: expected C observed C ok\n   mutation generator_identity_wrong: expected D observed D ok\n   mutation integration_by_parts_nonzero_claimed: expected D observed D ok\n   mutation second_derivative_identity_wrong: expected D observed D ok\n   mutation quadratic_root_wrong: expected D observed D ok\n   mutation infrared_bound_direction_reversed: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

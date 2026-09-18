@@ -1,0 +1,21 @@
+{
+ "task": "P:8161",
+ "type": "pr-reexecution",
+ "lane": "toe-infrared-leverage-20260916",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8161",
+ "pr": 8161,
+ "branch": "physics-loop/toe-infrared-leverage-20260916",
+ "git_sha": "f44fe9b6",
+ "started_utc": "20260918T193320Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "afa28c33c2eea4b4fe77e1fb50dc2f49b7fefaf5b5f9a436e3932bf5f80211da",
+ "stdout_tail": "PR #8161: Global Gauss dressing and finite coupled vacuum corrections\nbranch physics-loop/toe-infrared-leverage-20260916 (base main)\nrunners in the PR: 0"
+}

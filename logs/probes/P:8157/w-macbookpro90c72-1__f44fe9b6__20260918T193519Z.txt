@@ -1,0 +1,17 @@
+PR #8157: [physics-loop] admissibility-induced-law block23 — bounded_theorem — bounded-support: on a plane the unsoldered sphere static law's correlations decay at least algebraically at every coupling — complex rotations with explicit exponent
+branch physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation complex_cosine_identity_wrong: expected B observed B ok
+   mutation cosine_cosh_inequality_wrong: expected B observed B ok
+   mutation cosh_series_ratio_wrong: expected B observed B ok
+   mutation shift_lemma_wrong: expected B observed B ok
+   mutation shell_count_wrong: expected C observed C ok
+   mutation harmonic_log_bound_wrong: expected C observed C ok
+   mutation e_bounds_wrong: expected D observed D ok
+   mutation optimization_wrong: expected D observed D ok
+   mutation torus_sum_wrong: expected D observed D ok
+   mutation small_beta_branch_wrong: expected D observed D ok
+   mutation chain_identity_wrong: expected E observed E ok
+   mutation claim_plane_kernel_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

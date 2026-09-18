@@ -1,0 +1,14 @@
+PR #8171: [physics-loop] admissibility-induced-law block27 — bounded_theorem — bounded-support: the unsoldered formation law at weak coupling — the causal coupling contracts, one invariant law, and exponential loss of memory below 1/√3 (the four-way uniqueness table complete)
+branch physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py: rc=0 TOTAL: PASS=16 FAIL=0
+   mutation variance_identity_wrong: expected B observed B ok
+   mutation directional_moment_wrong: expected B observed B ok
+   mutation sign_lemma_wrong: expected B observed B ok
+   mutation sensitivity_bound_wrong: expected B observed B ok
+   mutation contraction_constant_wrong: expected C observed C ok
+   mutation one_site_rate_wrong: expected C observed C ok
+   mutation reach_wrong: expected D observed D ok
+   mutation reach_upper_wrong: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

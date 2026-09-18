@@ -1,0 +1,3 @@
+PR #8164: [physics-loop] compact-hamiltonian-phase-tools bounded_theorem conditional-support
+branch physics-loop/toe-anisotropic-phase-bridge-20260916 (base main)
+runners in the PR: 0

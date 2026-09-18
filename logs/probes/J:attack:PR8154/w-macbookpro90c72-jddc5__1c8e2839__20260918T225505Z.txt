@@ -1,0 +1,20 @@
+L=2: shells j<L 8j ok=True; j=L 7; sum 1/|n|^2=297/40 >= 4 H_{L-1}=4: True
+  4/(3N)=1/12 vs |k_min|^2/(3 pi^2)=1/12
+L=3: shells j<L 8j ok=True; j=L 11; sum 1/|n|^2=1180/117 >= 4 H_{L-1}=6: True
+  4/(3N)=1/27 vs |k_min|^2/(3 pi^2)=1/27
+L=4: shells j<L 8j ok=True; j=L 15; sum 1/|n|^2=6329579/530400 >= 4 H_{L-1}=22/3: True
+  4/(3N)=1/48 vs |k_min|^2/(3 pi^2)=1/48
+L=5: shells j<L 8j ok=True; j=L 19; sum 1/|n|^2=2105508833/157661400 >= 4 H_{L-1}=25/3: True
+  4/(3N)=1/75 vs |k_min|^2/(3 pi^2)=1/75
+L=6: shells j<L 8j ok=True; j=L 23; sum 1/|n|^2=16549549089/1140518525 >= 4 H_{L-1}=137/15: True
+  4/(3N)=1/108 vs |k_min|^2/(3 pi^2)=1/108
+L=7: shells j<L 8j ok=True; j=L 27; sum 1/|n|^2=42931080670488947/2772363306421800 >= 4 H_{L-1}=49/5: True
+  4/(3N)=1/147 vs |k_min|^2/(3 pi^2)=1/147
+L=8: shells j<L 8j ok=True; j=L 31; sum 1/|n|^2=531748697504482971896633/32565776278494961756800 >= 4 H_{L-1}=363/35: True
+  4/(3N)=1/192 vs |k_min|^2/(3 pi^2)=1/192
+Parseval L=2 (4-vector? side 4): residual 3.553e-15+0.000e+00j
+Parseval L=3 (4-vector? side 6): residual -1.421e-14+0.000e+00j
+Parseval L=4 (4-vector? side 8): residual 1.421e-14+0.000e+00j
+E(k)=|1-e^{-ik}|^2 and E<=|k|^2 on sample angles: ok
+line small-n counts and 4 floor(sqrt L)^2 >= L for L=2..49 checked
+SUMMARY: pattern (f) NORMALIZATION; N^{-1/2} Parseval, E(k)=|1-e^{-ik}|^2 <= |k|^2, plane shells 8j / 4L-1, sum 1/|n|^2 >= 4 H_{L-1}, 4/(3N)=|k_min|^2/(3 pi^2), bond counts 2N (plane) and N (line), and line 2 floor(sqrt L) all hold at small L

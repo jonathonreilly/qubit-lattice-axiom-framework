@@ -1,0 +1,16 @@
+19 | R=1 Haar multiplication basis states | note: The [canonical helper](../scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py) constructs the actual R=1 Haar multiplicati | OK
+3 colors | color dimension of the transporter | note: The [canonical helper](../scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py) constructs the actual R=1 Haar multiplicati | OK
+57 | matrix columns checked | cache: per_element: 3 checks; actual57 dimension, trace-square offset and R0 block | OK
+17 | named helper checks | cache: TOTAL: 17 | OK
+dim(H) Tr T^2 | Cartan trace-square obstruction | note: Tr Qbar²=Tr(Qbar+Tbar)²=Tr Qbar²+dim(H) Tr T², | OK
+||D_R||=1 | defect operator norm for every R>=0 | cache: lattice_wide: 4 checks; norm-one witness, energy-shell control, fake-unitary adverse and resources; no all-R proof by finite test | OK
+(R+1)(R+2)/2 | d_(R,0) highest-weight dimension | note: psi_R(g)=sqrt(d_(R,0)) g_11^R, d_(R,0)=(R+1)(R+2)/2, | OK
+g_(R-1) | R^2-floor(R^2/4)+3R over a | note: g_(R−1)=[R²−floor(R²/4)+3R]/a. | OK
+p^2+pq+q^2+3p+3q | electric energy E(p,q)/a | note: This is the exact minimum electric energy on the shell p+q=R, from E(p,q)=[p²+pq+q²+3p+3q]/a and maximal pq=floor(R²/4). Therefore T_R<=K/g_ | OK
+(1,0) | fundamental fusion (1,0) tensor (p,q) | note: (1,0) tensor(p,q)=(p+1,q) plus(p−1,q+1) plus(p,q−1), | OK
+2(1-sqrt(p)) | normalized output error bound | note: If epsilon bounds the right side of(4), the accepted output norm squared is at least1−epsilon. When nonzero, normalizing the projected outpu | OK
+R>=1 | low-energy bound excludes R=0 | note: For R>=1 define | OK
+IDENTITY | 19 x 3 = 57 | OK
+IDENTITY | d_(R,0)=(R+1)(R+2)/2 [(0, 1), (1, 3), (2, 6), (3, 10), (4, 15), (5, 21), (6, 28), (7, 36)] | OK
+IDENTITY | g_(R-1) numerator R=1..7 [4, 9, 16, 24, 34, 45, 58] | OK
+SUMMARY: 12 theorem numbers, 0 unsourced

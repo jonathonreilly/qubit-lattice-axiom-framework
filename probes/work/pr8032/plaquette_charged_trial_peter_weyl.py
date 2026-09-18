@@ -292,6 +292,8 @@ def main():
     worst8 = (0.0, None)
     worst9 = (0.0, None)
     worst1 = (0.0, None)
+    worst8p = (0.0, None)
+    worst9p = (0.0, None)
     n8 = n9 = nprem = 0
     for R, Mo in models.items():
         eR = R * R - (R * R) // 4 + 3 * R
@@ -332,6 +334,8 @@ def main():
                     b8 = (4 * d + math.sqrt(theta) * (4 * d + 4 * math.sqrt(d * Epath)) + 2 * v * (math.sqrt(Eface / eR) + math.sqrt(theta))) / (1 - theta)
                     if Delta / b8 > worst8[0]:
                         worst8 = (Delta / b8, (R, d, v, Delta, b8))
+                    if v > 0 and Delta / b8 > worst8p[0]:
+                        worst8p = (Delta / b8, (R, d, v, Delta, b8))
                     if Delta > b8 * (1 + TOL):
                         hits.append(f"bound (8) fails: R = {R}, d = {d}, v = {v}: Delta = {Delta:.9f} > {b8:.9f}")
                 th0 = 8 * v * d / eR
@@ -341,6 +345,8 @@ def main():
                     b9 = (4 * d + math.sqrt(th0) * (4 * d + 4 * d * math.sqrt(8 * v)) + 8 * v * d * (math.sqrt(32 * v / eR) + math.sqrt(th0))) / (1 - th0)
                     if Delta / b9 > worst9[0]:
                         worst9 = (Delta / b9, (R, d, v, Delta, b9))
+                    if v > 0 and Delta / b9 > worst9p[0]:
+                        worst9p = (Delta / b9, (R, d, v, Delta, b9))
                     if Delta > b9 * (1 + TOL):
                         hits.append(f"bound (9) fails: R = {R}, d = {d}, v = {v}: Delta = {Delta:.9f} > {b9:.9f}")
                 rows.append((R, d, v, E0, Ee, q, Delta, b8, b9))
@@ -353,6 +359,9 @@ def main():
           f"{worst8[0]:.6f} at R = {worst8[1][0]}, d = {worst8[1][1]}, v = {worst8[1][2]} (Delta {worst8[1][3]:.6f}, bound {worst8[1][4]:.6f}); bound (9) "
           f"(theta_0 < 1) in {n9}: largest ratio {worst9[0]:.6f} at R = {worst9[1][0]}, d = {worst9[1][1]}, v = {worst9[1][2]}; (1): largest E_e/(8v) = "
           f"{worst1[0]:.6f} at R = {worst1[1][0]}, v = {worst1[1][1]}")
+    print(f"[bounds] v > 0 only (v = 0 is the equality Delta = 4d = bound): largest Delta/(8) = {worst8p[0]:.6f} at R = {worst8p[1][0]}, d = "
+          f"{worst8p[1][1]}, v = {worst8p[1][2]} (Delta {worst8p[1][3]:.6f}, bound {worst8p[1][4]:.6f}); largest Delta/(9) = {worst9p[0]:.6f} at "
+          f"R = {worst9p[1][0]}, d = {worst9p[1][1]}, v = {worst9p[1][2]}")
     print(f"[time] {time.time() - t0:.0f}s")
     for u in unreliable:
         print(f"UNRELIABLE: {u}")
@@ -360,7 +369,7 @@ def main():
         print("HIT: " + h)
     print(f"SUMMARY: single plaquette in the Peter-Weyl basis (explicit SU(3) irreps and CG isometries; R = 1 fixture reproduced: "
           f"{'yes' if val_ok else 'NO'}): R = 1, 2, 3, paths d = 1, 2, 3, {len(vs)} couplings; bound (8) at {n8} cases, largest Delta_R/bound "
-          f"{worst8[0]:.4f}; bound (9) at {n9} cases, largest ratio {worst9[0]:.4f}; (1) largest E_e/(8v) {worst1[0]:.4f}; v = 0 excess = 4d; "
+          f"{worst8[0]:.4f} (the v = 0 equality; {worst8p[0]:.6f} at v > 0); bound (9) at {n9} cases, largest ratio {worst9[0]:.4f} ({worst9p[0]:.6f} at v > 0); (1) largest E_e/(8v) {worst1[0]:.4f}; v = 0 excess = 4d; "
           f"{len(hits)} violations; falsifier {'FIRES' if hits else 'does not fire'}{' (UNRELIABLE run)' if unreliable else ''}")
     return 0
 

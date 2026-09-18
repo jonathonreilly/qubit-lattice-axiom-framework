@@ -28,6 +28,19 @@ for spec in sorted(glob.glob(os.path.join(ROOT, ".claude", "science", "**", "spe
                   "command": f"cd scripts && python3 ../{rel} . {{EXTRA}}", "cwd": ".", "timeout_s": 3600,
                   "hit_pattern": r"INCONSISTENC|refuted|FAIL", "parse": {"verdict": r"== verdict: (.*)"},
                   "what": "re-run the refuting control (its own seeds; pass --extra for other arguments); a hit is an inconsistency it reports"})
+# type P: every open science PR, re-executed in an isolated worktree by probes/run_pr_branch.py (a direct task)
+try:
+    import subprocess
+    prs = json.loads(subprocess.check_output(["gh", "pr", "list", "--state", "open", "--limit", "200", "--json", "number,title,headRefName"], cwd=ROOT, text=True, timeout=60))
+    for p in sorted(prs, key=lambda x: x["number"]):
+        if p["headRefName"].startswith("ai/"):
+            continue
+        tasks.append({"id": f"P:{p['number']}", "type": "pr-reexecution", "lane": p["headRefName"].split("/")[-1][:40], "tier": 0, "direct": True,
+                      "command": f"python3 probes/run_pr_branch.py {p['number']}", "cwd": ".", "timeout_s": 7200,
+                      "hit_pattern": r"MISMATCH|FAIL=[1-9]|no TOTAL line", "parse": {"totals": r"TOTAL: PASS=\d+ FAIL=\d+"},
+                      "what": f"re-execute the runners of PR #{p['number']} ({p['title'][:70]}) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py {p['number']} --worker <name> --review \"...\""})
+except Exception as e:
+    print("open PRs not enumerated (gh unavailable?):", e)
 for f in sorted(glob.glob(os.path.join(ROOT, "probes", "tasks", "*.json"))):
     tasks.extend(json.load(open(f)))
 json.dump(tasks, open(os.path.join(ROOT, "probes", "TASKS.json"), "w"), indent=1)

@@ -3397,37 +3397,6 @@
   "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)"
  },
  {
-  "id": "R:admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18",
-  "type": "runner-reexecution",
-  "lane": "admissibility",
-  "tier": 0,
-  "command": "python3 scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py",
-  "cwd": ".",
-  "timeout_s": 1200,
-  "expect_pattern": "TOTAL: PASS=\\d+ FAIL=0",
-  "parse": {
-   "total": "TOTAL: PASS=\\d+ FAIL=\\d+"
-  },
-  "hit_pattern": "TOTAL: PASS=\\d+ FAIL=[1-9]",
-  "cached": true,
-  "what": "re-execute the runner; a hit is any FAIL (compare with logs/runner-cache/<name>.txt)"
- },
- {
-  "id": "M:admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18",
-  "type": "mutation-census",
-  "lane": "admissibility",
-  "tier": 0,
-  "command": "for m in $(python3 scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_rule_gravity_node_kernel_under_the_formation_reading_heat_kernel_in_level_time_times_plane_green_function_2026_09_18.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
-  "cwd": ".",
-  "timeout_s": 3600,
-  "parse": {
-   "expected": "mutation_family_expected: (\\S+)",
-   "observed": "mutation_family_observed: (\\S+)"
-  },
-  "hit_pattern": "mutation_family_observed: -",
-  "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)"
- },
- {
   "id": "R:admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07",
   "type": "runner-reexecution",
   "lane": "admissibility",
@@ -51148,6 +51117,936 @@
   "what": "re-execute the runner; a hit is any FAIL (compare with logs/runner-cache/<name>.txt)"
  },
  {
+  "id": "P:8023",
+  "type": "pr-reexecution",
+  "lane": "compact-cutoff-block32-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8023",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8023 ([physics-loop] compact-cutoff block32 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8023 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8024",
+  "type": "pr-reexecution",
+  "lane": "volume-uniform-gap-block34-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8024",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8024 ([physics-loop] volume-uniform-gap block34 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8024 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8025",
+  "type": "pr-reexecution",
+  "lane": "local-observable-block35-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8025",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8025 ([physics-loop] local-observable block35 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8025 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8026",
+  "type": "pr-reexecution",
+  "lane": "spatial-area-block36-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8026",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8026 ([physics-loop] spatial-area block36 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8026 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8027",
+  "type": "pr-reexecution",
+  "lane": "static-geodesic-block37-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8027",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8027 ([physics-loop] static-geodesic block37 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8027 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8028",
+  "type": "pr-reexecution",
+  "lane": "static-uniform-block38-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8028",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8028 ([physics-loop] static-uniform block38 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8028 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8029",
+  "type": "pr-reexecution",
+  "lane": "infinite-static-block39-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8029",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8029 ([physics-loop] infinite-static block39 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8029 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8030",
+  "type": "pr-reexecution",
+  "lane": "continuum-boundary-block40-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8030",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8030 ([physics-loop] continuum-boundary block40 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8030 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8031",
+  "type": "pr-reexecution",
+  "lane": "finite-transporter-block41-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8031",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8031 ([physics-loop] finite-transporter block41 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8031 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8032",
+  "type": "pr-reexecution",
+  "lane": "finite-pw-energy-block42-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8032",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8032 ([physics-loop] finite-pw-energy block42 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8032 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8033",
+  "type": "pr-reexecution",
+  "lane": "finite-pw-confinement-block43-20260907",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8033",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8033 ([physics-loop] finite-pw-confinement block43 conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8033 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8077",
+  "type": "pr-reexecution",
+  "lane": "native-global-projector-certificate-2026",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8077",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8077 (Certify the native global projector descriptor below 2e-13) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8077 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8078",
+  "type": "pr-reexecution",
+  "lane": "native-ward-direct-overlap-20260910",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8078",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8078 (Prove the native direct Ward overlap exceeds 160/h\u00b2) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8078 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8079",
+  "type": "pr-reexecution",
+  "lane": "native-finite-moment-ward-20260910",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8079",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p boundary (co) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8079 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8080",
+  "type": "pr-reexecution",
+  "lane": "native-stronger-ward-20260910",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8080",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8080 ([physics-loop] Stronger native Ward bounds (conditional-support)) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8080 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8081",
+  "type": "pr-reexecution",
+  "lane": "native-correlated-ward-20260910",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8081",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8081 ([physics-loop] Correlated native Ward bounds (conditional-support)) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8081 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8082",
+  "type": "pr-reexecution",
+  "lane": "native-gaussian-moment-jet-20260910",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8082",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8082 ([physics-loop] Gaussian local moment jets (conditional-support)) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8082 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8083",
+  "type": "pr-reexecution",
+  "lane": "native-quartic-ward-20260910",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8083",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8083 ([physics-loop] Quartic Ward error bounds (conditional-support)) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8083 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8137",
+  "type": "pr-reexecution",
+  "lane": "possibility-symmetric-order-dependence-2",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8137",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8137 ([physics-loop] possibility-symmetric-order-dependence bounded_theorem ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8137 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8138",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block08-z3-for",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8138",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8138 ([physics-loop] admissibility-induced-law block08 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8138 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8139",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block09-z3-mar",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8139",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8139 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8140",
+  "type": "pr-reexecution",
+  "lane": "clock-static-charge-20260915",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8140",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8140 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8141",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block10-record",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8141",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8141 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8142",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block11-three-",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8142",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8142 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8143",
+  "type": "pr-reexecution",
+  "lane": "full-domain-projective-corridor-20260915",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8143",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theorem, condi) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8143 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8144",
+  "type": "pr-reexecution",
+  "lane": "static-charge-transfer-sector-20260915",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8144",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8144 ([physics-loop] static-charge-transfer-sector: bounded_theorem, bounded) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8144 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8145",
+  "type": "pr-reexecution",
+  "lane": "clock-history-field-20260915",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8145",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8145 ([physics-loop] clock-history-field: bounded_theorem, bounded-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8145 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8146",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block12-strong",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8146",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8146 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8147",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block13-causal",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8147",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8147 ([physics-loop] admissibility-induced-law block13 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8147 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8148",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block14-format",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8148",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8148 ([physics-loop] admissibility-induced-law block14 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8148 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8149",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block15-format",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8149",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8149 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8150",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block16-static",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8150",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8150 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8151",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block17-static",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8151",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8151 ([physics-loop] admissibility-induced-law block17 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8151 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8152",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block18-menus-",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8152",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8152 ([physics-loop] admissibility-induced-law block18 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8152 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8153",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block19-sphere",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8153",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8153 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8154",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block20-unsold",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8154",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8154 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8155",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block21-unsold",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8155",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8155 ([physics-loop] admissibility-induced-law block21 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8155 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8156",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block22-sphere",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8156",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8156 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8157",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block23-unsold",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8157",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8157 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8158",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block24-unreco",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8158",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8158 ([physics-loop] admissibility-induced-law block24 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8158 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8159",
+  "type": "pr-reexecution",
+  "lane": "toe-fixed-clock-field-20260915",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8159",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8159 (Personal TOE derivation milestone: rotor limits, native response, and ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8159 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8160",
+  "type": "pr-reexecution",
+  "lane": "toe-interacting-scale-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8160",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8160 (Joint weak-coupling and volume limit for charged rotor fields and matt) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8160 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8161",
+  "type": "pr-reexecution",
+  "lane": "toe-infrared-leverage-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8161",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8161 (Global Gauss dressing and finite coupled vacuum corrections) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8161 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8162",
+  "type": "pr-reexecution",
+  "lane": "toe-continuous-time-bridge-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8162",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8162 (Calibrated clock transfer and joint finite-volume physical state limit) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8162 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8163",
+  "type": "pr-reexecution",
+  "lane": "toe-temporal-fermion-resummation-2026091",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8163",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8163 (Heavy Wilson fermions: uniform temporal curl bounds and exact gauge tr) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8163 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8164",
+  "type": "pr-reexecution",
+  "lane": "toe-anisotropic-phase-bridge-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8164",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8164 ([physics-loop] compact-hamiltonian-phase-tools bounded_theorem conditi) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8164 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8165",
+  "type": "pr-reexecution",
+  "lane": "toe-compact-ground-path-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8165",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8165 ([physics-loop] compact-ground-path bounded_theorem conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8165 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8166",
+  "type": "pr-reexecution",
+  "lane": "toe-compact-response-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8166",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8166 ([physics-loop] compact-response bounded_theorem conditional-support) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8166 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8167",
+  "type": "pr-reexecution",
+  "lane": "toe-compact-winding-20260916",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8167",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8167 ([physics-loop] compact-source-weights bounded_theorem conditional-supp) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8167 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8168",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block25-format",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8168",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8168 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8169",
+  "type": "pr-reexecution",
+  "lane": "frame-attached-four-point-weights-born-a",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8169",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8169 ([physics-loop] frame-attached four-point weights: Born is not a four-p) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8169 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8170",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block26-unsold",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8170",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8170 ([physics-loop] admissibility-induced-law block26 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8170 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8171",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block27-unsold",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8171",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8171 ([physics-loop] admissibility-induced-law block27 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8171 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8172",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block28-map-of",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8172",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8172 ([physics-loop] admissibility-induced-law block28 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8172 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8173",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block29-transv",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8173",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8173 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8174",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block30-six-ax",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8174",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_theorem \u2014 b) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8174 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8175",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block31-sharpe",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8175",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8175 (ail31: the sharper bad-pair budget is false for the extended explanati) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8175 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8176",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block32-minima",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8176",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8176 (ail32: the minimal marked tree \u2014 the counted family's constant is at l) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8176 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8177",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block33-rooted",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8177",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8177 (ail33: the rooted inequality reduces the unit budget to the tight-sibl) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8177 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8178",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block34-sphere",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8178",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8178 (ail34: the torus memory time of the sphere formation law \u2014 the lineari) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8178 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8179",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-decision-recor",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8179",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8179 (ail: decision record for blocks 01\u201334 \u2014 the state of knowledge for the) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8179 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8180",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block35-gravit",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8180",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "MISMATCH|FAIL=[1-9]|no TOTAL line",
+  "parse": {
+   "totals": "TOTAL: PASS=\\d+ FAIL=\\d+"
+  },
+  "what": "re-execute the runners of PR #8180 (ail35: the gravity node's kernel under the axiom's reading \u2014 a heat ke) in a temporary worktree of its branch, with their mutation censuses; a HIT is a FAIL, a census mismatch or a runner that does not run. Run: python3 probes/run_pr_branch.py 8180 --worker <name> --review \"...\""
+ },
+ {
   "id": "S:tight-sibling-violation",
   "type": "search",
   "lane": "admissibility-induced-law",
@@ -51342,5 +52241,129 @@
    "summary": "(?m)^SUMMARY: (.*)"
   },
   "what": "For a chosen note: reimplement its central computation from the note's statement alone, without reading the runner, in a different method; compare the numbers; print 'HIT: ...' on disagreement and a 'SUMMARY: ...' line; run through run_probe with --extra as above. Disagreement is reported, not resolved."
+ },
+ {
+  "id": "X:sixaxis-formation-threshold-lines",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_formation_sixaxis.py 256 4000 {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "lines": "(?m)^ *p=.*$"
+  },
+  "what": "the six-axis formation law's memory scan on OTHER weight lines: --extra '<p values> --qr q r', e.g. '4 5 6 7 8 --qr 1 1' (block 28 located p in (10.5, 11) at (p,1,2); the lines (p,1,1), (p,2,4), (p,1,3) are unlocated). Report the p where the memory fraction at T crosses 1/2 and where it reaches 0; then refine with a finer p grid and L = 512."
+ },
+ {
+  "id": "X:sixaxis-static-threshold-lines",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_static_sixaxis.py 24 400 {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "lines": "(?m)^ *p=.*$"
+  },
+  "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32."
+ },
+ {
+  "id": "X:sphere-torus-memory-grid",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_torus_msd.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "ratios": "ratio to sigma\\^2/L\\^2: ([0-9.]+)",
+   "mabs": "mean \\|m\\| in the stationary regime ([0-9.]+)"
+  },
+  "what": "the (beta, L) grid for the 1/|m|^2 law of block 34: one point per run, --extra 'beta L T seeds' with T >= 3 * 3 beta L^2 / A(3 beta) (A(k) = coth k - 1/k) and seeds >= 8; grid beta in {3, 4, 6, 8, 12, 16, 24, 48}, L in {16, 24, 32, 48, 64}. The log's ratios and |m| fill the table D_1/(sigma^2/L^2) vs 1/|m|^2; a systematic deviation from 1/|m|^2 beyond 10 % at any point is worth an issue."
+ },
+ {
+  "id": "X:sphere-kernel-grid",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_kernel.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "shells": "mean ratio ([0-9.]+)",
+   "mabs": "mean \\|m\\| = ([0-9.]+)"
+  },
+  "what": "the normalization c(beta, |k|) of block 35 on a grid: --extra 'beta L T T0 seed' with L in {128, 256, 512}, beta in {3, 4, 6, 8, 12, 16, 24, 48}, T0 >= 2000, T - T0 >= 2000. Report the shell ratios; the questions are whether c depends on L at fixed beta (block 35: 0.83 at |k| < 0.3 for L = 256, beta = 6) and how c(beta) approaches 1."
+ },
+ {
+  "id": "X:sphere-plane-decay-long",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_plane_decay.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 86400,
+  "parse": {
+   "last": "t= *\\d+ +\\|m\\|=[0-9.]+ +m_z=[-0-9.]+"
+  },
+  "what": "block 26's open question on the infinite plane: does |m| ever plateau? --extra 'beta L T' with L >= 1024 and T >= 100000 at beta in {12, 24, 48} (block 26: no plateau to 2e4 levels at L = 512). Log the whole table; a plateau (|m| flat over a decade of t while L^2 >> t) is a HIT-worthy observation to report by issue even though no pattern is set."
+ },
+ {
+  "id": "S:construction-children",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "cd probes/lib && python3 construction_children.py {SEED} 4000",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "with 3: [1-9]",
+  "parse": {
+   "line": "(?m)^seed .*$"
+  },
+  "what": "block 30's construction on random cones: nodes receiving arrows from two or three processed poles, by kind (block 33 addendum: two happens about once per thousand trees, three never). A HIT is a node with three processed children (it would matter for the count). Vary the seed; 4000 cones per run."
+ },
+ {
+  "id": "L:lints",
+  "type": "lint",
+  "lane": "repo",
+  "tier": 0,
+  "command": "python3 docs/audit/scripts/audit_lint.py --strict; python3 scripts/vocab_lint.py --report-only | tail -5; git diff --check && echo DIFF-CHECK-CLEAN",
+  "cwd": ".",
+  "timeout_s": 1800,
+  "expect_pattern": "OK: no errors",
+  "hit_pattern": "(?m)^(ERROR|error:|FAIL)",
+  "parse": {
+   "lint": "OK: no errors|error"
+  },
+  "what": "the repository's audit lint (strict), the vocabulary lint report and the whitespace check on the current checkout; a HIT is any error. Cheap; run once per day."
+ },
+ {
+  "id": "J:provenance-audit",
+  "type": "judgment",
+  "lane": "any",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Provenance audit of one note: list every number that appears in the note's theorem statements and 'Result up front' (thresholds, constants, counts), and for each find the line of the runner's stdout (logs/runner-cache/<runner>.txt or a fresh run) or the spec output that produces it. Write the table as a script under probes/work/<stub>/provenance.py that prints one line per number: `<number> | <where produced> | OK/UNSOURCED` and a final `SUMMARY: n numbers, m unsourced`; print `HIT: unsourced numbers` if m > 0. Run it through run_probe with --extra 'python3 probes/work/<stub>/provenance.py'. Never edit the note."
+ },
+ {
+  "id": "J:refuter-rerun-new-seeds",
+  "type": "judgment",
+  "lane": "any",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "For one open science PR: fetch its refuting control (`git show origin/<branch>:.claude/science/physics-loops/<pack>/specs/<name>_refuter.py > probes/work/<stub>/refuter.py`), change its random seeds and, where it has them, its sizes or couplings, run it, and compare its verdict lines with the committed .out.txt on the branch. Print `HIT: ...` on any inconsistency and a `SUMMARY:` line; run through run_probe with --extra. Commit the fetched script with the log so the run is reproducible."
  }
 ]

@@ -1,0 +1,126 @@
+[
+ {
+  "id": "X:sixaxis-formation-threshold-lines",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_formation_sixaxis.py 256 4000 {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "lines": "(?m)^ *p=.*$"
+  },
+  "what": "the six-axis formation law's memory scan on OTHER weight lines: --extra '<p values> --qr q r', e.g. '4 5 6 7 8 --qr 1 1' (block 28 located p in (10.5, 11) at (p,1,2); the lines (p,1,1), (p,2,4), (p,1,3) are unlocated). Report the p where the memory fraction at T crosses 1/2 and where it reaches 0; then refine with a finer p grid and L = 512."
+ },
+ {
+  "id": "X:sixaxis-static-threshold-lines",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_static_sixaxis.py 24 400 {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "lines": "(?m)^ *p=.*$"
+  },
+  "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32."
+ },
+ {
+  "id": "X:sphere-torus-memory-grid",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_torus_msd.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "ratios": "ratio to sigma\\^2/L\\^2: ([0-9.]+)",
+   "mabs": "mean \\|m\\| in the stationary regime ([0-9.]+)"
+  },
+  "what": "the (beta, L) grid for the 1/|m|^2 law of block 34: one point per run, --extra 'beta L T seeds' with T >= 3 * 3 beta L^2 / A(3 beta) (A(k) = coth k - 1/k) and seeds >= 8; grid beta in {3, 4, 6, 8, 12, 16, 24, 48}, L in {16, 24, 32, 48, 64}. The log's ratios and |m| fill the table D_1/(sigma^2/L^2) vs 1/|m|^2; a systematic deviation from 1/|m|^2 beyond 10 % at any point is worth an issue."
+ },
+ {
+  "id": "X:sphere-kernel-grid",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_kernel.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "shells": "mean ratio ([0-9.]+)",
+   "mabs": "mean \\|m\\| = ([0-9.]+)"
+  },
+  "what": "the normalization c(beta, |k|) of block 35 on a grid: --extra 'beta L T T0 seed' with L in {128, 256, 512}, beta in {3, 4, 6, 8, 12, 16, 24, 48}, T0 >= 2000, T - T0 >= 2000. Report the shell ratios; the questions are whether c depends on L at fixed beta (block 35: 0.83 at |k| < 0.3 for L = 256, beta = 6) and how c(beta) approaches 1."
+ },
+ {
+  "id": "X:sphere-plane-decay-long",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_plane_decay.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 86400,
+  "parse": {
+   "last": "t= *\\d+ +\\|m\\|=[0-9.]+ +m_z=[-0-9.]+"
+  },
+  "what": "block 26's open question on the infinite plane: does |m| ever plateau? --extra 'beta L T' with L >= 1024 and T >= 100000 at beta in {12, 24, 48} (block 26: no plateau to 2e4 levels at L = 512). Log the whole table; a plateau (|m| flat over a decade of t while L^2 >> t) is a HIT-worthy observation to report by issue even though no pattern is set."
+ },
+ {
+  "id": "S:construction-children",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "cd probes/lib && python3 construction_children.py {SEED} 4000",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "with 3: [1-9]",
+  "parse": {
+   "line": "(?m)^seed .*$"
+  },
+  "what": "block 30's construction on random cones: nodes receiving arrows from two or three processed poles, by kind (block 33 addendum: two happens about once per thousand trees, three never). A HIT is a node with three processed children (it would matter for the count). Vary the seed; 4000 cones per run."
+ },
+ {
+  "id": "L:lints",
+  "type": "lint",
+  "lane": "repo",
+  "tier": 0,
+  "command": "python3 docs/audit/scripts/audit_lint.py --strict; python3 scripts/vocab_lint.py --report-only | tail -5; git diff --check && echo DIFF-CHECK-CLEAN",
+  "cwd": ".",
+  "timeout_s": 1800,
+  "expect_pattern": "OK: no errors",
+  "hit_pattern": "(?m)^(ERROR|error:|FAIL)",
+  "parse": {
+   "lint": "OK: no errors|error"
+  },
+  "what": "the repository's audit lint (strict), the vocabulary lint report and the whitespace check on the current checkout; a HIT is any error. Cheap; run once per day."
+ },
+ {
+  "id": "J:provenance-audit",
+  "type": "judgment",
+  "lane": "any",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "Provenance audit of one note: list every number that appears in the note's theorem statements and 'Result up front' (thresholds, constants, counts), and for each find the line of the runner's stdout (logs/runner-cache/<runner>.txt or a fresh run) or the spec output that produces it. Write the table as a script under probes/work/<stub>/provenance.py that prints one line per number: `<number> | <where produced> | OK/UNSOURCED` and a final `SUMMARY: n numbers, m unsourced`; print `HIT: unsourced numbers` if m > 0. Run it through run_probe with --extra 'python3 probes/work/<stub>/provenance.py'. Never edit the note."
+ },
+ {
+  "id": "J:refuter-rerun-new-seeds",
+  "type": "judgment",
+  "lane": "any",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "For one open science PR: fetch its refuting control (`git show origin/<branch>:.claude/science/physics-loops/<pack>/specs/<name>_refuter.py > probes/work/<stub>/refuter.py`), change its random seeds and, where it has them, its sizes or couplings, run it, and compare its verdict lines with the committed .out.txt on the branch. Print `HIT: ...` on any inconsistency and a `SUMMARY:` line; run through run_probe with --extra. Commit the fetched script with the log so the run is reproducible."
+ }
+]

@@ -1,12 +1,17 @@
 # Six-axis static law on a periodic L^3 lattice at (p, q, r) = (p, 1, 2): heat-bath (Gibbs) checkerboard sweeps; the fraction of the
 # majority value after equilibration, from an aligned start and from a random start.
 import numpy as np, sys, time
+_argv = sys.argv[:]
+QR = (1.0, 2.0)
+if '--qr' in _argv:
+    i = _argv.index('--qr'); QR = (float(_argv[i + 1]), float(_argv[i + 2])); del _argv[i:i + 3]
+sys.argv = _argv
 L, sweeps = int(sys.argv[1]), int(sys.argv[2]); ps = [float(x) for x in sys.argv[3:]]
 rng = np.random.default_rng(2)
 idx = np.indices((L, L, L)).sum(0) % 2
 print(f"six-axis static law at (p,1,2), L={L}, sweeps={sweeps}; order = mean fraction of the majority value over the last half (aligned start | random start)")
 for p in ps:
-    q, r = 1.0, 2.0
+    q, r = QR
     phi = np.full((6, 6), r)
     for v in range(6):
         phi[v, v] = p; phi[v, v ^ 1] = q

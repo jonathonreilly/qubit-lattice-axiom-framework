@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8171",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block27-unsold",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8171/provenance_theorem_numbers.py",
+ "seed": 56929,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d145cbdf",
+ "started_utc": "20260918T184209Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "31 items over claim_scope + 4 theorem sections (57 numeric tokens, 0 uncovered): cache-sourced 17, derived here from the note's formulas 4, definitions 3, excluded 7; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none"
+ },
+ "review": "All 57 numeric tokens of the claim_scope and T1-T4 are sourced: 17 by runner-cache lines (the TV and W1 sensitivities, Var(w) = A', the directional moment, the sign lemma, sqrt3 beta and its crossing between 5773/10^4 and 5774/10^4, A(3 beta) <= beta, the T4 series bounds), 4 by derivations in the note re-executed here (the 2(sqrt3 beta)^t distance, the dual bound, the per-predecessor bound, the 1/4 TV rate at V = 0 and the 2/3 reach), 3 definitions and 7 exclusions; no number is unsourced.",
+ "what": "PR #8171 ([physics-loop] admissibility-induced-law block27 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916; git show origin/physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916:<note>. Create probes/work/pr8171/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8171/<script>.py\"",
+ "stdout_sha256": "afba69c442ade79f1a677c1f8a8362153ad87b086dc8b24519b39ccb86533f5c",
+ "stdout_tail": "s_1 - s'_1| gives c >= (beta/3)(1 - 3 beta^2 |s_1 - s'_1|^2/45) (sympy)\n[EXCLUDED] T4-3c | Theorem T4 | structural: the contraction criterion (3 predecessors)\n[DERIVED] T4-quarter | claim_scope | claim_scope: TV rate at V = 0 and the TV route's reach | TV rate at V = 0 = (1/2) E|w| = 1/4 (uniform w on [-1, 1]; the note's T1 reading); the total-variation route contracts while 3 beta (2 x 1/4) < 1, i.e. beta < 2/3 (T4 reading)\n[CACHE] T4-between | claim_scope | claim_scope: placement | cache stdout line 12: PASS: B4 T1(d): d/dV log f_V = s - A(|V|) V/|V| (symbolic); A(kappa) < kappa/3 at ten rational points by exact enclosure, so the directional\n[CACHE] route-const | claim_scope | claim_scope | cache stdout line 13: PASS: C1 T2: the contraction factor is 3 (beta/sqrt3) = sqrt3 beta; it is below 1 at beta = 5773/10^4 and above 1 at beta = 5774/10^4 (sqrt3\n[CONTROL] TV sensitivity executed: control quadrature max 0.2499 over 300 pairs; refuter Monte Carlo max 0.2509 (the claim_scope's 1/4 at small |V| is derived exactly in the note; 'never larger' is executed, in the T4 reading only)\n[COVERAGE] 57 numeric tokens in the statement text; uncovered 0\nSUMMARY: 31 items over claim_scope + 4 theorem sections (57 numeric tokens, 0 uncovered): cache-sourced 17, derived here from the note's formulas 4, definitions 3, excluded 7; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T184219Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

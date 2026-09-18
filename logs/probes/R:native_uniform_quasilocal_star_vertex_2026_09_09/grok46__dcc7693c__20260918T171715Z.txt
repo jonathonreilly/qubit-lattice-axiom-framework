@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": 11896,
+  "geometry": {
+    "4": {
+      "faces": 192,
+      "pairs": 960
+    },
+    "6": {
+      "faces": 648,
+      "pairs": 3240
+    }
+  },
+  "coefficient": "19/96",
+  "matrix_scope": "exact small Gaussian dyadics; no eigensolver",
+  "physical_runs": 0,
+  "input_sha256": {
+    "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd",
+    "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "docs/NATIVE_WEAK_ELECTRIC_JOINT_DEFECT_BOUNDS_NOTE_2026-09-09.md": "0db93bb1365a24debba2bf36d184c8b1895c482f998962187b89526216059a61",
+    "scripts/native_uniform_quasilocal_star_controls_2026_09_09.py": "93edcf203c5119db96a9f94c338eef525d2c9ac0d5757793c1cc9fbec982eff1"
+  },
+  "source_sha256": "44d15e9abc5c02a211b7b79d3f038fc03eff6323534417b6c059fd5203870a7c",
+  "elapsed_seconds": 0.0577802499756217,
+  "peak_rss_bytes": 27082752,
+  "actual_current_surface_status": "conditional-support"
+}
+TOTAL: PASS=11896 FAIL=0
+per_element: exact finite Gaussian-dyadic matrix and CAR predicates are executed; general Wick extraction is analytical.
+per_site: periodic L4 and L6 face-pair incidence is executed; arbitrary-volume geometric claims use the proof.
+per_mode: shifted-shell arithmetic is executed on declared finite sizes; no node value or band amplitude is computed.
+per_block: the smooth-filter cocycle and spatial truncation bounds are analytical, not finite numerical locality measurements.
+lattice_wide: uniform quasi-locality and the ordered perturbative limit are analytical; no interacting ground state is solved.

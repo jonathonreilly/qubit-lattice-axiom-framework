@@ -1,0 +1,35 @@
+{
+ "task": "R:graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "graph",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py",
+ "seed": 51869,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171749Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2762f6246c1ecea18550d1c283bb9b2a3c7cf3bfc457bfa639b1fd2f94c0487d",
+ "stdout_tail": "------------------\n(B) Z^3 cubic-box witnesses for side L in {3,4}: NON-PLANAR by bipartite Euler obstruction and 3-CONNECTED\n    These checks do not prove the all-L or infinite-lattice exchange-generator theorem.\n------------------------------------------------------------------------\n[PASS] (B) Z^3 cube L=3: bipartite planar bound is violated  V=27, E=54, 2V-4=50\n[PASS] (B) Z^3 cube L=3: no one- or two-vertex cut disconnects it  first smaller cut=None\n[PASS] (B) Z^3 cube L=3: three corner neighbors form a cut, so connectivity = 3  cut=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]\n[PASS] (B) Z^3 cube L=4: bipartite planar bound is violated  V=64, E=144, 2V-4=124\n[PASS] (B) Z^3 cube L=4: no one- or two-vertex cut disconnects it  first smaller cut=None\n[PASS] (B) Z^3 cube L=4: three corner neighbors form a cut, so connectivity = 3  cut=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]\n[PASS] (B) contrast: 2x2x2 cube Q_3 does not violate the bipartite planar bound  V=8, E=12, 2V-4=12\n========================================================================\nSCORECARD: PASS=25 FAIL=0\nVERDICT: bounded witness packet only. Exact UD_2 homology checks show Z_2 torsion for K_5 and K_{3,3}; L=3,4 cubic boxes violate the bipartite planar bound and are 3-connected graph witnesses; Hom(Z_2,U(1)) gives sign phases for an already-established order-2 class. This runner does not prove the quantified all-L or infinite-Z^3 exchange-generator theorem.\n========================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py",
+ "seed": 51854,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171734Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1c6a5c75c8971daec70775dd5fa4e25d8e0ac3fdd4c8f2797bd6f4c205681ca",
+ "stdout_tail": "A-cor: full group makes {Ps,P1,P2} a single orbit; uniformity there is forced\nCHECK 09: PASS -- B: rho=I/3 => w=(1/3,2/3), odds x=2, r=x/2=1 (dimension-weighting point)\nCHECK 10: PASS -- B: rho=diag(1/2,1/4,1/4) => w=(1/2,1/2), x=1, r=1/2 (equipartition point)\nCHECK 11: PASS -- B: exhibited automorphism X breaks diag(1/2,1/4,1/4); fixes I/3\nCHECK 12: PASS -- B: commutant of <Z,X> is 1-dimensional (scalar) => I/3 is the unique invariant rho\nCHECK 13: PASS -- B-fwd (sanity): supplied C_3 + doublet exchange fix diag(p_s,p_d/2,p_d/2) only\nCHECK 14: PASS -- C: R4 symmetry pays r=1; r=1/2 needs designation + equipartition (extra supply)\nCHECK 15: PASS -- C: rank(Ps)=1 != rank(Pd)=2; no automorphism maps Ps->Pd (menu not symmetric)\nCHECK 16: PASS -- dict: r=|b|^2/a^2=p_d/(2p_s); channel energies (3a^2,6|b|^2); odds x=2r\nCHECK 17: PASS -- dict: r=1 at |b|^2=a^2 (I/3); r=1/2 at a^2=2|b|^2 (equipartition)\nCHECK 18: PASS -- tie: DFT is unitary and carries J/3 (position) to diag(1,0,0)=Ps (character)\nSUMMARY note: docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md\nSUMMARY A: 'uniform on every menu' contradicts H2+H3 (2-menu 1/2 vs 3-menu 1/3).\nSUMMARY B: C_3 zero-information point under full symmetry is rho=I/3 => r=1; r=1/2 is diag(1/2,1/4,1/4), not full-group invariant.\nSUMMARY C: r=1/2 requires menu designation + per-cell equipartition; the two-cell menu is not symmetric (rank 1 vs rank 2 cells).\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171735Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

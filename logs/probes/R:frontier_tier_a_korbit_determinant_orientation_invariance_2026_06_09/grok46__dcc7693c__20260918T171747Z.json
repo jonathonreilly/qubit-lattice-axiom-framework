@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
+ "seed": 51867,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171747Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c95dec83554c80d1023d03fe16e43c576d2f9611034cecb5b124bd7613d0d8c4",
+ "stdout_tail": "K/CPT orientation invariance checks for the AC_phi_lambda gate\n============================================================================\nPASS source states historical taxonomy has no authority\nPASS source avoids the rejected theta shortcut\nPASS source names the AC_phi_lambda conditional registrability bridge\nPASS source keeps audit status authority external\nPASS source points at the moved determinant-character lemma note\nPASS conjugation maps the AC_phi_lambda circulant H(delta) exactly to H(-delta)\nPASS elementary symmetric polynomials of the AC_phi_lambda spectrum match at +/-delta\nPASS delta -> -delta permutes eigenvalue labels by k -> -k\nPASS source stipulates the supplied circulant class in-note\nPASS staggered gate is cited as context only, not a load-bearing markdown link\nPASS all local markdown dependency links resolve\n============================================================================\nSUMMARY: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

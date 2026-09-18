@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+ "seed": 51799,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171639Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "30b27d781529f24f2d42c3fc6d521e20242ca0829d5121281e50b23481e9b60b",
+ "stdout_tail": "PASS finite physical cube gap certificate\nTOTAL: PASS=18 FAIL=0\nper_element: Exact SU3 weight-metric and Ritz arithmetic; all-label spectrum argument is analytic.\nper_site: All8 cube vertices with full vertex Gauss constraints; no external charges.\nper_mode: All4096 supports of12 links, retaining every degree census.\nper_block: All144 face-character pairs and1728 triples; Haar survivor values proved analytically.\nlattice_wide: One fixed physical cube only; no thermodynamic or continuum gap.\nsupport_histogram={\"4\": 6, \"6\": 16, \"7\": 12, \"8\": 33, \"9\": 52, \"10\": 42, \"11\": 12, \"12\": 1}\nRitz_gap_lower(x)/a=(-71*x/12 + sqrt(4*x**2/3 + (16 - x/6)**2)/2 + 8)/a; x=av\nresources: elapsed_sec=0.2767229169839993 rss_MiB=63.703125; limits=180sec/180MiB\nsource_sha256=0cd413d2737d0cc9ee7f4000d682588138b5ff3d2c1de693c854455b8e6129eb\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171640Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

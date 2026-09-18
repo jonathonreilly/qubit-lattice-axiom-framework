@@ -1,0 +1,44 @@
+========================================================================
+GRAPH-BRAID Z^3 ANYON-EXCLUSION WITNESS PACKET
+Note: GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md
+Claim: finite graph-braid witnesses plus Hom(Z_2,U(1)) sign-phase algebra
+       no all-L or infinite-Z^3 exchange-generator theorem is proven here.
+========================================================================
+------------------------------------------------------------------------
+(A) Graph-braid B_2(Gamma) abelianization H_1(UD_2(Gamma)) via Smith normal form
+    planar => torsion-free (continuous anyon phase ALLOWED);
+    non-planar => Z_2 torsion (exchange forced to +-1).
+------------------------------------------------------------------------
+[PASS] (A) C_3 triangle: d1.d2 = 0 (valid chain complex)
+[PASS] (A) C_3 triangle: H_1 = Z^1  (planar=True, torsion-free)  |C0,C1,C2|=(3, 3, 0)
+[PASS] (A) C_3 triangle: torsion-free => U(1) exchange phase allowed (anyon ok)
+[PASS] (A) C_4 cycle: d1.d2 = 0 (valid chain complex)
+[PASS] (A) C_4 cycle: H_1 = Z^1  (planar=True, torsion-free)  |C0,C1,C2|=(6, 8, 2)
+[PASS] (A) C_4 cycle: torsion-free => U(1) exchange phase allowed (anyon ok)
+[PASS] (A) C_5 cycle: d1.d2 = 0 (valid chain complex)
+[PASS] (A) C_5 cycle: H_1 = Z^1  (planar=True, torsion-free)  |C0,C1,C2|=(10, 15, 5)
+[PASS] (A) C_5 cycle: torsion-free => U(1) exchange phase allowed (anyon ok)
+[PASS] (A) K_4 (planar): d1.d2 = 0 (valid chain complex)
+[PASS] (A) K_4 (planar): H_1 = Z^4  (planar=True, torsion-free)  |C0,C1,C2|=(6, 12, 3)
+[PASS] (A) K_4 (planar): torsion-free => U(1) exchange phase allowed (anyon ok)
+[PASS] (A) K_5: d1.d2 = 0 (valid chain complex)
+[PASS] (A) K_5: H_1 = Z^6 (+) Z_2  (non-planar, Z_2 torsion)  |C0,C1,C2|=(10, 30, 15)
+[PASS] (A) K_5: Hom(Z_2, U(1)) = {+1, -1} only (exchange forced to +-1 => boson/fermion)  images=[-1.0, 1.0]
+[PASS] (A) K_{3,3}: d1.d2 = 0 (valid chain complex)
+[PASS] (A) K_{3,3}: H_1 = Z^4 (+) Z_2  (non-planar, Z_2 torsion)  |C0,C1,C2|=(15, 36, 18)
+[PASS] (A) K_{3,3}: Hom(Z_2, U(1)) = {+1, -1} only (exchange forced to +-1 => boson/fermion)  images=[-1.0, 1.0]
+------------------------------------------------------------------------
+(B) Z^3 cubic-box witnesses for side L in {3,4}: NON-PLANAR by bipartite Euler obstruction and 3-CONNECTED
+    These checks do not prove the all-L or infinite-lattice exchange-generator theorem.
+------------------------------------------------------------------------
+[PASS] (B) Z^3 cube L=3: bipartite planar bound is violated  V=27, E=54, 2V-4=50
+[PASS] (B) Z^3 cube L=3: no one- or two-vertex cut disconnects it  first smaller cut=None
+[PASS] (B) Z^3 cube L=3: three corner neighbors form a cut, so connectivity = 3  cut=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+[PASS] (B) Z^3 cube L=4: bipartite planar bound is violated  V=64, E=144, 2V-4=124
+[PASS] (B) Z^3 cube L=4: no one- or two-vertex cut disconnects it  first smaller cut=None
+[PASS] (B) Z^3 cube L=4: three corner neighbors form a cut, so connectivity = 3  cut=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+[PASS] (B) contrast: 2x2x2 cube Q_3 does not violate the bipartite planar bound  V=8, E=12, 2V-4=12
+========================================================================
+SCORECARD: PASS=25 FAIL=0
+VERDICT: bounded witness packet only. Exact UD_2 homology checks show Z_2 torsion for K_5 and K_{3,3}; L=3,4 cubic boxes violate the bipartite planar bound and are 3-connected graph witnesses; Hom(Z_2,U(1)) gives sign phases for an already-established order-2 class. This runner does not prove the quantified all-L or infinite-Z^3 exchange-generator theorem.
+========================================================================

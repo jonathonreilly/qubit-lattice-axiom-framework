@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_interacting_rp_full_algebra_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
+ "seed": 51855,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171735Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff24a938120f579c13870c973daacffda48e596ea87295a7e41ef3784d5f2375",
+ "stdout_tail": "2  +4.979756e-02  +1.058102e+00   4.48e-16\n     0.1  +5.081488e-02  +1.193335e-02  +1.122072e-03  +4.128454e-01   4.50e-16\n    0.05  +1.390673e-01  +8.161180e-03  +2.325715e-04  +6.786240e-01   2.29e-16\n    0.01  +1.493433e-01  +3.740771e-03  +1.341242e-05  +6.957707e-01   8.88e-16\n[PASS] mass scan remains positive through m=0.01\n       det(M)>0, U-averaged and per-config Grams PSD, baryon diagonal nonzero\n\nNON-CONJUGATING LINK-REFLECTION CONTROL\n--------------------------------------------------------------------------------------\n cfg    correct_min     wrong_herm  wrong_sym_min\n   0  +2.444223e-02   1.803781e+00  -4.463580e-01\n   1  +2.749807e-02   2.420059e+00  -9.459007e-01\n   2  +2.050881e-02   1.825917e+00  -5.986215e-01\n   3  +2.218813e-02   2.011435e+00  -8.276097e-01\n   4  +2.401240e-02   1.479453e+00  -2.816341e-01\n[PASS] non-conjugating link reflection breaks Hermiticity and PSD\n       correct_min=+2.050881e-02; wrong_herm=2.420059e+00; wrong_min=-9.459007e-01\n\nCOMPANION SCORECARD: PASS=4 FAIL=0\n==================================================================================\nGROUP SCORECARD: PASS=4/4 group-sectors\n  Each sector: full-algebra OS Gram PSD (CORRECT reflection), non-vacuous\n  meson/baryon diagonals>0, naive op m.e. vacuous, WRONG reflection non-PSD,\n  per-config 2-step transfer PSD (OS-theorem input), gauge-invariant, det>0.\n  Companion controls: PASS\n  OVERALL: PASS\n==================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171743Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_interacting_rp_full_algebra_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

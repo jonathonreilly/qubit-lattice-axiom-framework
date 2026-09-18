@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_letter_action_orbit_census_cycle797_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cell_cutting_letter_action_orbit_census_cycle797_2026_08_15.py",
+ "seed": 51841,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171721Z",
+ "elapsed_s": 23.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d70afc797aba37a47a7a6cfdd6771c534615305e9c46b7609517fb259e370543",
+ "stdout_tail": " [(4, 200), (12, 18), (12, 18), (12, 90), (12, 100), (12, 104), (48, 36), (48, 50), (48, 52), (48, 92)]\nPAIR_ORBITS detail: value 18 has 2 transpose-held orbits with 6 unordered pairs each\nPAIR_ORBITS detail: first value-18 orbit [(0, 7), (2, 13), (3, 5), (4, 11), (9, 12), (10, 14)]\nPAIR_ORBITS detail: second value-18 orbit [(0, 12), (2, 11), (3, 10), (4, 13), (5, 14), (7, 9)]\nPAIR_ORBITS detail: value census over 256 entries {18: 24, 36: 48, 50: 48, 52: 48, 90: 12, 92: 48, 100: 12, 104: 12, 200: 4}\nPASS VALUE36_GRAPH the 48 value-36 entries are one orbit and the letter formula gives all 4608 induced entry maps\nVALUE36_GRAPH detail: unordered graph has 24 edges on 12 incident letters, each of degree 4\nPASS PIECE_PROFILE every one of the 400 kept pieces has a point count of exactly 5 times its unit, and the unit spectrum [1, 3, 7, 14] sums to 25\nPIECE_PROFILE detail: kept unit census {1: 24, 3: 176, 7: 176, 14: 24}; used 192-piece census {1: 8, 3: 88, 7: 88, 14: 8}\nPIECE_PROFILE detail: all 15800 cuttings have counts 1 at unit 1, 11 at 3, 11 at 7, 1 at 14\nPIECE_PROFILE detail: profile totals 125 units = 625 points, the whole grid\nPASS EXCHANGE_PROFILE all 192 equal-union exchanges across 48 fibers follow the union-size half-profile law\nEXCHANGE_PROFILE detail: unions 50, 100, 175 give halves (1, 3, 3, 3), (3, 3, 7, 7), (7, 7, 7, 14); exceptions 0\nEXCHANGE_PROFILE detail: one broken-count-2 exchange per fiber; 48-fiber union census {50: 8, 100: 32, 175: 8}\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171744Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

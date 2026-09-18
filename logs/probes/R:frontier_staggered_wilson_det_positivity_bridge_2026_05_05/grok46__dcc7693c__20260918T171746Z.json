@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_staggered_wilson_det_positivity_bridge_2026_05_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
+ "seed": 51866,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171746Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "911f73ebbf727e5a9e8dd6b46f4b271c04b67059e1a35c4bbad3bd0c7e891044",
+ "stdout_tail": "iticity)\n    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00\n  m=0.10 alpha=4.10 ldd=+1125.029076 ldb=+1125.029076 dif=1.82e-12 sre=+1.000 sim=+4.46e-17\n  m=0.50 alpha=4.50 ldd=+1190.023277 ldb=+1190.023277 dif=1.36e-12 sre=+1.000 sim=-6.79e-17\n  m=1.00 alpha=5.00 ldd=+1264.730075 ldb=+1264.730075 dif=1.14e-12 sre=+1.000 sim=-9.78e-17\n  m=2.00 alpha=6.00 ldd=+1396.389684 ldb=+1396.389684 dif=2.27e-13 sre=+1.000 sim=+7.25e-17\nBridge assertions\n  [PASS] balanced sublattice n_+ = n_- on L=2\n    n_+=24, n_-=24\n  [PASS] balanced sublattice n_+ = n_- on L=2\n    n_+=24, n_-=24\n  [PASS] balanced sublattice n_+ = n_- on L=2\n    n_+=24, n_-=24\n  [PASS] balanced sublattice n_+ = n_- on L=4\n    n_+=384, n_-=384\n  [PASS] balanced sublattice n_+ = n_- on L=4\n    n_+=384, n_-=384\n  [PASS] balanced sublattice n_+ = n_- on L=4\n    n_+=384, n_-=384\n  [PASS] every (L, scale, m) case has det(M) > 0\n    checked 24 (L, scale, m) configurations\n  [PASS] bridge factorisation det(M) = prod (alpha^2 + sigma_i^2) matches direct det\n    max log_diff over all cases = 1.82e-12 (tol 1e-7)\n  [PASS] L=2 K block has n_+ = 24 singular values\n    got 24\n  [PASS] L=2 K block has n_+ = 24 singular values\n    got 24\n  [PASS] L=2 K block has n_+ = 24 singular values\n    got 24\n  [PASS] L=4 K block has n_+ = 384 singular values\n    got 384\n  [PASS] L=4 K block has n_+ = 384 singular values\n    got 384\n  [PASS] L=4 K block has n_+ = 384 singular values\n    got 384\nSUMMARY: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

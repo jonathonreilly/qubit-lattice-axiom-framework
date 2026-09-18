@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+ "seed": 51756,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171556Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d29ab484e671953e03af15aabc33b4e080e6c4925eba593e09eae4e61df5ccef",
+ "stdout_tail": "vs-reference c_aniso difference = 5.551e-17\n[FINITE] PASS: all seven point-Green columns carry unit total charge\n    max |Q-1| across columns = 4.441e-16\n[FINITE] PASS: all seven point-Green columns induce the same radial shell kernel per unit charge\n    max radial-profile difference = 8.882e-16\n[FINITE] PASS: all seven point-Green columns induce the same anisotropic orbit mode per unit charge\n    max orbit-mode difference = 1.943e-16\n[FINITE] PASS: all seven point-Green columns induce the same shell-mean exterior response per unit charge\n    max total-field difference = 2.602e-18, max anisotropic-field difference = 1.924e-18\n[FINITE] PASS: the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one computed finite-lattice constant\n    c_aniso = 0.081435402995901\n[FINITE] PASS: self-contained c_aniso reproduces the registered reduced-shell constant\n    c_aniso = 0.081435402995901\n[FINITE] PASS: the admitted local O_h and finite-rank source-family comparators satisfy the same one-parameter reduced shell law\n    radial=4.441e-16, orbit=1.665e-16, shell=2.168e-18, aniso=1.708e-18, c_diff=5.551e-17\n[BOUNDED] PASS: on the reduced surface the sewing-shell law behaves like one isotropic shell density plus one cubic shear mode tied to total charge\n    c_aniso = 0.081435402995901\n\n========================================================================\nSUMMARY\n========================================================================\nPASS=10 FAIL=0 TOTAL=10\nAll checks passed.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171557Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.txt against the .txt beside this log"
+  ]
+ }
+}

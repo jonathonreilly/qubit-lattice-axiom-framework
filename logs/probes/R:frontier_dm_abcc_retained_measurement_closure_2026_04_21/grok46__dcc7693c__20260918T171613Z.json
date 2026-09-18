@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_abcc_retained_measurement_closure_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_abcc_retained_measurement_closure_2026_04_21.py",
+ "seed": 51773,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171613Z",
+ "elapsed_s": 60.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b617cee3c493359a90cc94570576f99f8fe834a2b49ac76f33cd3cd9349f0238",
+ "stdout_tail": "\n  [PASS] Dependency runner passes: PMNS nonsingularity reduction  (rc=0, PASS=49, FAIL=0)\n  [PASS] Dependency runner passes: Sylvester signature forcing  (rc=0, PASS=43, FAIL=0)\n  [PASS] Dependency runner passes: sigma-chain attack cascade  (rc=0, PASS=34, FAIL=0)\n\nPart 2: Direct basin-level endpoint checks\n  [PASS] Basin 1 satisfies the retained chamber bound  (q+delta=1.648848673346, sqrt(8/3)=1.632993161855)\n  [PASS] Basin 1 endpoint lies in C_base  (det=0.959173815867)\n  [PASS] Basin 2 endpoint lies in C_neg  (det=-70536.043217097103)\n  [PASS] Basin X endpoint lies in C_neg  (det=-20296.107088688987)\n\nPart 3: Integration consequences\n  [PASS] sigma-chain runner explicitly derives PNS from the retained measurement framework\n  [PASS] sigma-chain runner explicitly closes the basin-selection gate\n  [PASS] signature-forcing runner records the reduction A-BCC <- PNS + Sylvester inertia\n  [PASS] nonsingularity runner confirms all C_neg basins violate PNS\n\nPart 4: Closure-grade statement\n  [summary] A-BCC is closed on the retained measurement framework.\n  [summary] The stricter axiom-native A-BCC target remains outside this closure grade.\n  [summary] The only live DM blocker on the review surface is the finer right-sensitive microscopic selector law.\n\n========================================================================\nTOTAL: PASS=15 FAIL=0\nSTATUS: ALL PASS \u2014 retained-measurement A-BCC closure verified\n========================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171713Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:gravity_attraction_sign_from_source_positivity_and_symmetric_mediator_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gravity",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gravity_attraction_sign_from_source_positivity_and_symmetric_mediator_2026_06_08.py",
+ "seed": 51800,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171640Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dbcb50403dde66375736227d8bca355b5ce963673baa7e2a6ee1292c3a23b334",
+ "stdout_tail": "GRAVITY ATTRACTION SIGN: bounded source/action exchange reduction\n==============================================================================\n[PASS] E0 exchange sign derived by finite quadratic on-shell elimination\n       cross_term=-1/(K*sigma); for sigma=+/-1 this has sign -sigma when K>0\n[PASS] E1 numerator contractions\n       scalar=+1.0, vector=-1.0, tensor=+0.5\n[PASS] E2 healthy exchange signs\n       signs={'scalar_same_source': -1.0, 'vector_like_charge': 1.0, 'tensor_positive_source': -1.0} (-1 attraction, +1 repulsion)\n[PASS] E3 tensor attraction iff healthy kinetic sign for positive sources\n       healthy sign=-1, ghost sign=+1\n[PASS] E4 source note keeps the exchange premises explicit\n       guardrails present for kinetic sign, source/action normalization, local energy, and primitive scope\n[PASS] E5 source note treats textbook QFT only as parallel reference\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: PASS for the bounded sign reduction only. The exchange sign is derived by\nfinite quadratic on-shell elimination inside the displayed source/action model.\nPositive sources plus a healthy spin-2 kinetic sign give attraction; flipping the\nkinetic sign flips the force. The runner does not derive the kinetic sign or the\nsource/action normalization.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171640Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

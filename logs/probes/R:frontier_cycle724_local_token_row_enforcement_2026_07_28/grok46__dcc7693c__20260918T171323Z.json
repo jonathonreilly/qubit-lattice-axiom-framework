@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle724_local_token_row_enforcement_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+ "seed": 51603,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171323Z",
+ "elapsed_s": 85.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a9d005b10b7b189df471370b68a040fd9606fdc971d70efebbb8f50d379f8d3d",
+ "stdout_tail": ",\n    \"forward_routed_NN_gates\": 18020978,\n    \"inverse_physical_primitives\": 1431562,\n    \"inverse_route_sha256\": \"1f033ad107fd1440a27b4aa7f373918c135eea26b085ec170a00f5e95cbd8e98\",\n    \"inverse_routed_NN_gates\": 18020978,\n    \"or_cascade_scratch_M2\": 520,\n    \"semantic_gates\": 98034,\n    \"total_declared_M2\": 7116\n  },\n  \"radius1_census\": {\n    \"census_size\": 546,\n    \"dirt_kinds_per_station\": 6,\n    \"dirt_survival_failures\": 0,\n    \"literal_branches_compiled\": 546,\n    \"literal_local_identity_failures\": 0,\n    \"literal_target_syndrome_failures\": 0,\n    \"nonidentity_stations\": 91,\n    \"observed_host_refusals\": 33948,\n    \"predicted_refusals\": 33948,\n    \"prediction_mismatch_census\": 0,\n    \"refusal_event_mismatches\": 0,\n    \"syndrome_scratch_return_failures\": 0,\n    \"target_station_refusal_failures\": 0,\n    \"target_station_refusal_mismatches\": 0,\n    \"target_station_refusals_witnessed\": 546\n  },\n  \"report_sha256\": \"216e073d38267f0b957cfe939377b4dd816439130575f6b5a830a26781263df0\",\n  \"runtime_seconds\": 84.73219387501013,\n  \"science_checks_pass\": true,\n  \"supplied_inventory\": \"One source controller token; zero B/work/syndrome rows; two clean MCX scratch bits and four clean OR-cascade intermediate bits per station; oriented program ring and clean data genesis.\",\n  \"w1_closed\": false,\n  \"word_size_comparison\": {\n    \"Cycle723_semantic_gates\": 95850,\n    \"Cycle724_semantic_gates\": 98034,\n    \"Cycle724_to_Cycle723_ratio\": 1.0227856025039124,\n    \"added_semantic_gates\": 2184\n  }\n}\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171449Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle724_local_token_row_enforcement_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

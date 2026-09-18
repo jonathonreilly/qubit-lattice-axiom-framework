@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.py",
+ "seed": 51864,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171744Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "26566c8d040d7677c444575bdc7b305e73c8344a729d795b1316d3b3c00bd3d6",
+ "stdout_tail": ", so no site-resolved quantity exists for it to evaluate.\nper_mode: genuinely resolved on the color channel content -- the 3 x 3bar product splits as 1 + 8 = 9, the adjoint fraction is exactly F_adj = 8/9, and the isotropic adjoint block is confirmed to have rank 8 with a spectrum flat to within 1e-10, so no single mode inside the adjoint is distinguished; that flatness is exactly why a channel count cannot stand in for a ray.\nper_block: the blocks here are the adjoint decomposition and the typed reachability graph -- a supplied ray's line projector has rank 1 against a complement of rank 7 inside the 8-dimensional adjoint, giving the exact fraction 7/8, while the graph side sweeps 8 current-bank edges, 6 conditional ray edges and one bridging primitive edge; the ranks are computed at a 1e-09 threshold and the edge counts are inventory rather than amplitude.\nlattice_wide: checked and not executed -- the ad-invariant traceless subspace is found to be zero-dimensional, so there is not even a global invariant direction inside the internal factor to certify, and past that the file carries no lattice, no volume and no limit; what it does assert is current-bank reachability, which is by construction a claim about the present source bank and not about all possible sources.\n\nPASS=26 FAIL=0 TOTAL=26\nVERDICT: current source bank does not supply a physical color-ray source primitive; adding such a primitive would conditionally reach rho_E=21/4 through the adjoint-line complement route.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171744Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

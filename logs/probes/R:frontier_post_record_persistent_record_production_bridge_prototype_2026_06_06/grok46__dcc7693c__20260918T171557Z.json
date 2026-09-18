@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py",
+ "seed": 51757,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171557Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f5efdeaf81f58118cc6b906894ead10ab21ac232b1271eea0a32d82735e5e11",
+ "stdout_tail": "rt theorem does not require symmetry\nPASS transport theorem does not require unit bounds\nPASS transport theorem does not require diagonal one\n\n------------------------------------------------------------------------------\nDefined word/count example\n------------------------------------------------------------------------------\nPASS word/count image packet is exact :: (('2:0:L', Fraction(1, 2)), ('1:1:L', Fraction(1, 4)), ('1:1:R', Fraction(1, 8)), ('0:2:R', Fraction(1, 8)))\nPASS defined word kernel is symmetric\nPASS defined word kernel is positive and at most one\nPASS defined word kernel equals one on the diagonal\nPASS defined word example product expectation is 169/320 :: 169/320\nPASS word example also closes through source-product transport\nPASS defined capped counts are componentwise nondecreasing :: [(0, 0, 'none'), (0, 1, 'R'), (1, 1, 'R'), (2, 1, 'R'), (2, 2, 'R')]\nPASS defined first marker is unchanged after its first assignment :: [(0, 0, 'none'), (0, 1, 'R'), (1, 1, 'R'), (2, 1, 'R'), (2, 2, 'R')]\n\n------------------------------------------------------------------------------\nOrdering and carrier permutations\n------------------------------------------------------------------------------\nPASS pushforward is permutation-equivariant by target label\nPASS observable identity is permutation-invariant\nPASS kernel identity is permutation-invariant\n\nSUMMARY: MODE=normal PASS=42 FAIL=0\nTHEOREM_SCOPE=EXACT_FINITE_DETERMINISTIC_PUSHFORWARD_OBSERVABLE_AND_PRODUCT_KERNEL_TRANSPORT\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171557Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

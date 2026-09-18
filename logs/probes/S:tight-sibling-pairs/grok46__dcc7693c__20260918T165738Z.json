@@ -1,0 +1,32 @@
+{
+ "task": "S:tight-sibling-pairs",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/tightpairs.py 31 1200 5 5 8",
+ "seed": 31,
+ "minutes": 20.0,
+ "box": "5x5x8",
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T165738Z",
+ "elapsed_s": 1201.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "-2"
+ },
+ "review": "seed 31 box 5x5x8 20min climb for tight sibling pair (block 33 open case)",
+ "what": "random-start climb maximizing min(v(w1), v(w2)) over sibling processed predecessors of a processed site; a HIT (value 0) is a tight sibling pair, the open case of block 33's lemma; then run S:tight-sibling-violation from it. Vary seed, box, minutes.",
+ "stdout_sha256": "3c65b741ef80f0f7b5d5bb7ae99578cee54656d91c3ef9f26ed6f42a17dbe8f9",
+ "stdout_tail": "2, 4), (3, 4, 1), (3, 4, 7), (4, 0, 1), (4, 0, 6), (4, 1, 0), (4, 2, 1), (4, 2, 4), (4, 2, 5), (4, 3, 5), (4, 4, 0), (4, 4, 2), (4, 4, 7)]\nseed 31: max over sibling processed pred pairs of min(v) = -3: detail ((2, 2, 7), (1, 2, 7), -3, (2, 1, 7), -3, -3); H3 violation: None; ones=60; zeta=[(0, 0, 0), (0, 0, 3), (0, 0, 5), (0, 0, 7), (0, 1, 0), (0, 1, 1), (0, 1, 3), (0, 1, 7), (0, 2, 7), (0, 4, 1), (0, 4, 3), (1, 0, 7), (1, 1, 2), (1, 1, 5), (1, 3, 0), (1, 3, 5), (1, 3, 7), (1, 4, 1), (1, 4, 3), (1, 4, 4), (1, 4, 5), (2, 0, 0), (2, 0, 1), (2, 0, 4), (2, 0, 7), (2, 2, 5), (2, 3, 1), (2, 3, 2), (2, 3, 3), (2, 3, 5), (2, 3, 7), (2, 4, 0), (2, 4, 5), (3, 0, 2), (3, 2, 2), (3, 2, 5), (3, 3, 2), (3, 3, 3), (3, 3, 5), (3, 3, 7), (3, 4, 2), (3, 4, 3), (3, 4, 4), (4, 0, 0), (4, 0, 3), (4, 0, 5), (4, 1, 1), (4, 1, 6), (4, 2, 6), (4, 4, 7)]\nseed 31: max over sibling processed pred pairs of min(v) = -2: detail ((2, 4, 2), (1, 4, 2), -2, (2, 3, 2), -2, -1); H3 violation: None; ones=59; zeta=[(0, 0, 1), (0, 0, 3), (0, 0, 5), (0, 1, 3), (0, 1, 5), (0, 2, 0), (0, 3, 4), (1, 0, 3), (1, 1, 0), (1, 2, 6), (1, 3, 1), (1, 3, 2), (1, 3, 5), (1, 3, 7), (1, 4, 1), (1, 4, 2), (2, 0, 1), (2, 0, 5), (2, 0, 6), (2, 1, 6), (2, 2, 5), (2, 3, 1), (2, 3, 4), (2, 3, 6), (2, 4, 2), (3, 0, 2), (3, 0, 7), (3, 1, 2), (3, 2, 3), (3, 2, 5), (3, 3, 5), (3, 4, 7), (4, 0, 0), (4, 0, 1), (4, 0, 2), (4, 0, 6), (4, 1, 0), (4, 2, 5), (4, 2, 6), (4, 2, 7), (4, 3, 4), (4, 3, 5), (4, 3, 7)]\nseed 31: done restarts=17 best=-2\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

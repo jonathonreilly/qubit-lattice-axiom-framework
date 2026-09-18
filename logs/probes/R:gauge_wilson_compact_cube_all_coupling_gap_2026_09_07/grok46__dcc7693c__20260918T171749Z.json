@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_compact_cube_all_coupling_gap_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+ "seed": 51869,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171749Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8fa2bf682ad21a12501e629726a770f3c9f42ef152d66fc4431df0778e716fa9",
+ "stdout_tail": "PASS finite physical cube gap certificate\nTOTAL: PASS=11 FAIL=0\nper_element: Rational degree12 exponential lower bound and all-shell tail ratio.\nper_site: Physical Gauss constraints at all8 fixed cube vertices are an explicit premise.\nper_mode: Twelve-link product kernel bounds; no finite representation truncation proves the tail.\nper_block: Exact scalar constants; ground positivity and weighted form estimates proved analytically.\nlattice_wide: One fixed finite cube, every finite v>=0; no volume-uniform or QCD gap.\nnonconstant_heat_bound=889/2187; half_margin=409/4374\ngap_lower=16/282429536481/a * exp(-24av)\nresources: elapsed_sec=0.1686753329122439 rss_MiB=60.328125; limits=180sec/180MiB\nsource_sha256=9fd599c5040f137ede2ffcf5d219534b8673c9deda086d784b90753b587178ca\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171749Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

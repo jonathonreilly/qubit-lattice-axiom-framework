@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle879_b4_relation_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
+ "seed": 51549,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171229Z",
+ "elapsed_s": 122.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1cb844b5069ec76cdcba560a09fb156471fc401a4c9a6d0bcf2ebb8be3f36d34",
+ "stdout_tail": "ess\":427,\"pass\":true,\"published_identity_like\":427,\"published_value_moving\":69,\"published_witness_records_reverified\":531,\"recomputed_identity_class_equals_published\":true,\"witness_record_mismatches\":0}}\nPASS H_CONTROLS :: {\"audit_input_paths_exist\":true,\"audit_input_paths_literal\":[\"scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py\",\"logs/runner-cache/frontier_cycle879_b4_clock_relation_2026_07_28.txt\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\",\"logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt\"],\"audit_input_paths_repo_relative\":true,\"blocklisted_modules\":[\"frontier_cycle879_b4_clock_relation_2026_07_28\"],\"blocklisted_modules_loaded\":[],\"checker_sha256\":\"2d14d90fea56382826fbf5f8cb12d6622d9adbe2d9d12c50d25bc5c7cf4c3326\",\"firewall_hits\":[],\"input_shas\":{\"logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt\":\"586fd6a628142250c7fa859448e004fd445d9f479c71813afd50d0674a67b0fe\",\"logs/runner-cache/frontier_cycle879_b4_clock_relation_2026_07_28.txt\":\"0d4184440a95ed13e451da55631fc014061b6fcf17adced30613579ca2729f4f\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\",\"scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py\":\"5ed813c21b22a8076a48a279f606f0099c9426b6375b0972d80b5cc4fec48f90\"},\"runtime_seconds\":122.025,\"runtime_under_1400s\":true,\"stdout_bytes\":24028,\"stdout_under_150KB\":true}\nCYCLE879_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171432Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle879_b4_relation_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_current_bank_quantitative_mapping_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_current_bank_quantitative_mapping_2026_04_21.py",
+ "seed": 51691,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171451Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "81ccce9e5e838817747f3c891d22ee89a381ee4eac191235b9d0765a49a1a8b5",
+ "stdout_tail": "_passed: 17/17\n  [C] PASS: A.1 \u03b3 = 1/2 retained\n  [C] PASS: A.2 E_1 = \u221a(8/3) retained\n  [C] PASS: A.3 E_2 = \u221a8/3 retained\n  [C] PASS: A.4 cp_1 = -2\u03b3E_1/3 from retained bank\n  [C] PASS: A.5 cp_2 = +2\u03b3E_2/3 from retained bank\n  [C] PASS: B.1 All three heavy-neutrino masses finite and retained\n  [C] PASS: B.2 M_2 > M_1 (non-degenerate quasi-pair splitting)\n  [C] PASS: B.3 M_3 >> M_1 (hierarchical 2+1 pattern)\n  [C] PASS: C.1 \u03b5_1 and \u03b5_DI both finite from current bank\n  [C] PASS: C.2 \u03b5_1/\u03b5_DI ratio is physically reasonable (0 < r < 10)\n  [C] PASS: D.1 Effective mass m\u0303 finite and positive\n  [C] PASS: D.2 Equilibrium washout scale m_* finite and positive\n  [C] PASS: D.3 k_decay falls in sensible physical range (0.1 < k < 1000)\n  [D] PASS: E.1 \u03b7_fit/\u03b7_obs is finite and O(1)\n  [D] PASS: F.1 All cosmological constants finite\n  [C] PASS: H.1 All retained current-bank quantities mapped to DM observables\n  [C] PASS: I.1 Current-bank quantitative mapping explicit and consistent\n\nVERDICT:\n  Current-bank quantitative DM mapping is explicit and internally consistent.\n\n  This closes the reviewer-facing mapping item: the retained bank is now\n  exposed as one complete quantitative table. The leptogenesis prediction\n  \u03b7_fit/\u03b7_obs = 0.5579 is of the\n  correct order of magnitude, so the assembled map is physically sensible.\n\n  This does not close the full DM flagship gate. The branch-choice law,\n  microscopic selector law, and rigorous carrier-side dominance item\n  remain separate open problems.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171452Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

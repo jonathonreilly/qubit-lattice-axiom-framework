@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_blind_space_carrier_span_cycle756_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cell_cutting_blind_space_carrier_span_cycle756_2026_08_09.py",
+ "seed": 51836,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171716Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eccb24e07efe1be6c92493c3949910dbb981a7ccdb12172641240e687755db1b",
+ "stdout_tail": " and off every face, and the named subgroup is 24 proper spatial cubic rotations times an optional fourth-coordinate reflection\nPASS C1  every row has the same size, every column has the same incidence count, and the two incidence totals agree\neight-column row-intersection-at-most-one sets: 192; row intersections range from 1 to 1\nPASS C2  each of the 192 carriers meets every one of the 15800 rows exactly once, so the incidence matrix sends every carrier to the all-ones column\ncarrier pairs by shared pieces: 0:15072 1:1920 2:960 4:384\nPASS C3  all 18336 carrier pairs have the exact overlap profile 0:15072, 1:1920, 2:960, 4:384\nsupports of the differences by shared pieces: 0:16 1:14 2:12 4:8\nPASS C4  the 384 overlap-four pairs give signed integer kernel vectors of support 8\nbounded arithmetic ranks: carriers 105 and 105, table 88 and 88\nPASS C5  the same elimination routine gives carrier rank 105 and incidence rank 88 over each of two prime fields\nPASS C6  containment and the dimension squeeze establish characteristic-zero incidence rank 88 and kernel dimension 104\neach sharing class alone spans: 0:104 1:104 2:104 4:104\nPASS C7  each populated overlap class of carrier differences has rank 104 and spans the characteristic-zero incidence kernel\n\nruntime contract: under 900 s; memory contract: under 2500 MiB\nPASS C8  measured runtime and normalized peak resident memory satisfy the contracts\nPASS C9  complete deterministic stdout stays under 6000 characters\n\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171721Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

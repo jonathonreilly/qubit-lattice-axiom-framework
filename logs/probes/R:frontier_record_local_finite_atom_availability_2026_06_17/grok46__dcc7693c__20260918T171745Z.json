@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_local_finite_atom_availability_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+ "seed": 51865,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171745Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=58 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d0ea6a85ff11eac5b73dc81f42d42056c816f73222ca8e3581005a31176fb2e1",
+ "stdout_tail": "port\n[PASS] C2 symbolic bound escape uses finite B+1\n[PASS] C3 no fixed finite atom cap B=0 -- constructed n=1\n[PASS] C3 no fixed finite atom cap B=1 -- constructed n=2\n[PASS] C3 no fixed finite atom cap B=7 -- constructed n=8\n[PASS] C3 no fixed finite atom cap B=25 -- constructed n=26\n[PASS] C3 no fixed finite atom cap B=100 -- constructed n=101\n\nD. finite Boolean unit-count readout\n[PASS] D1 empty unit-count readout is zero\n[PASS] D2 finite support tags are disjoint before additivity\n[PASS] D3 unit-count readout is additive on disjoint finite collections -- 9=4+5\n[PASS] D4 unit-count readout of n atoms is n\n[PASS] D5 finite prefixes remain bounded by their chosen length\n\nE. boundary classifier\n[PASS] E1 local readout-atom availability closes only under the declared instance\n[PASS] E2 declared unit-count context is the closed finite algebra part\n[PASS] E3 record production remains open\n[PASS] E4 measurement/decoherence instrument remains open\n[PASS] E5 Born probability remains open\n[PASS] E6 physical context selection remains open\n[PASS] E7 clock/rate remains open\n[PASS] E8 dial selection remains open\n[PASS] E9 admissibility-instance selection remains open\n\nSCORECARD: PASS=58 FAIL=0\nVERDICT: exact finite local readout-atom/context availability closes only under the declared admissibility instance, diagonal readout context, K/conjugation context, and unit-count normalization; selection of those inputs, production, Born-rule values, clock/rate, and dial selection remain open.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171745Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

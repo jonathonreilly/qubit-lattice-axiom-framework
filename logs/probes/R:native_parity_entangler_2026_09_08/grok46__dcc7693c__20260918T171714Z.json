@@ -1,0 +1,35 @@
+{
+ "task": "R:native_parity_entangler_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/native_parity_entangler_2026_09_08.py",
+ "seed": 51834,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171714Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9fc970c92fee0dd71f1a10be1328f07c74050bace1f5df492d885a7bff7ee50a",
+ "stdout_tail": "   \"1\"\n        ]\n      ],\n      \"CHSH_exact\": [\n        [\n          \"sqrt(2)/2\",\n          \"sqrt(2)/2\"\n        ],\n        [\n          \"sqrt(2)/2\",\n          \"-sqrt(2)/2\"\n        ]\n      ],\n      \"witness_eigenvalues\": {\n        \"-2\": 1,\n        \"0\": 2,\n        \"2\": 1\n      },\n      \"source_sha256\": \"399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee\"\n    }\n  },\n  \"executed_assertions\": 37,\n  \"elapsed_seconds\": 0.31437308294698596,\n  \"peak_rss_mib\": 73.890625,\n  \"source_sha256\": \"99a4fac86cd36e92caa5f2c11b32bb8f6b89668d7a53da46f7fdffa8b866118a\",\n  \"scope\": \"Finite native physical matrix construction; preparation, signed hopping controls, Born Record schedule and CHSH settings supplied. Nonbridge lemma is analytic.\"\n}\nper_element: executed full complex success and failure columns on all four input basis states; both middle Z outcomes retained.\nper_site: executed the eight-dimensional carrier of three physical edge qubits; midpoint placement and control admissibility supplied.\nper_mode: executed four even-parity modes, crossed input rails, regrouped output rails and the complete prepared Bell vector.\nper_block: executed numeric and independent exact full instrument, witness spectrum and all four CHSH correlations on the finite three-qubit block.\nlattice_wide: checked and not executed \u2014 nonbridge scope is analytic; no spatial scaling, occurrence dynamics or arbitrary protocol simulation.\nTOTAL: PASS=37 FAIL=0\nResources: 0.314373s, 73.891MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171715Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_parity_entangler_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

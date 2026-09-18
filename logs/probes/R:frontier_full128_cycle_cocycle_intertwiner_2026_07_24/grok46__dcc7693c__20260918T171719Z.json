@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_full128_cycle_cocycle_intertwiner_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+ "seed": 51839,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171719Z",
+ "elapsed_s": 15.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "32332360f73129266076bed637efcd6d03b1f40b1339cfbc2eb5ac8d1b9ed7c5",
+ "stdout_tail": "y is NN and preserves gate/matrix order; covariance is on the declared code and rotated seam family. It is not equality of every rotated off-code circuit to the single canonical coordinate word\"}, \"source_dependency_closure\": [\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md\", \"scripts/frontier_full128_cycle_encoder_2026_07_24.py\", \"scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py\", \"scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py\", \"scripts/frontier_full128_code_projectors_2026_07_24.py\"], \"status\": \"bounded-full128-cycle-cocycle-compositional-certificate\", \"supplied\": [\"ordinary repo-local cycle, nearest-neighbor and pair-cocycle source modules\", \"six signed-direction mode labels, one seam-port label and the bounded decoded wire order\", \"25-site cycle/repetition shell and 30 ordered-pair plus six corridor/work coordinates\", \"fifteen cycle |+> auxiliaries, three repetition blanks and thirty register blanks\", \"one returned flag at 4*d_(+x), a fixed fifteen-pair preparation order and Clifford+T factors\", \"beta/contact fixtures and the fixed free/reverse/seam factor order\", \"a fixed Manhattan axis-order routing convention and the finite combined gate word\", \"standard translations/proper-cubic coordinate action and numerical tolerances\"], \"terminal\": \"FULL128_CYCLE_COCYCLE_BARE_FRAME_INTERTWINER_CERTIFICATE\", \"tests_failed\": 0, \"tests_passed\": 13}\nRESULT FULL128_CYCLE_COCYCLE_BARE_FRAME_INTERTWINER_CERTIFICATE\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

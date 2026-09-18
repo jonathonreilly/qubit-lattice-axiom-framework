@@ -1,0 +1,32 @@
+{
+ "task": "S:tight-sibling-violation",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/violate.py 7 1200 6 6 8 A",
+ "seed": 7,
+ "minutes": 20.0,
+ "box": "6x6x8",
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T165738Z",
+ "elapsed_s": 1201.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "(0, 0)"
+ },
+ "review": "seed 7 box 6x6x8 20min climb from Z_A for c*=1 counterexample",
+ "what": "seeded climb from the extremal realization Z_A for a processed site whose cheapest tree costs more than 0 at c = 1 (unrooted, rooted). A HIT refutes block 32's conjecture c* = 1 and raises the tree route's floor. Vary --seed, --box (5x5x8 .. 8x8x10), --minutes (20-120). To start from Z_B, use S:tight-sibling-violation-B.",
+ "stdout_sha256": "7ed5031258ce9ee8d6d72c6cec1b16396e5e968d6495ad7d4795da91a6381fdd",
+ "stdout_tail": "seed 7 6x6x8 from Z_A: start (unrooted, rooted) max cost = (0, 0) at ((3, 3, 3), 0, 0, (7, 7, 1, 0))\nseed 7: done best=(0, 0)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

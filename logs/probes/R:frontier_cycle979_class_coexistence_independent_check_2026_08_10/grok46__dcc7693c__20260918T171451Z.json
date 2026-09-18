@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle979_class_coexistence_independent_check_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle979_class_coexistence_independent_check_2026_08_10.py",
+ "seed": 51691,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171451Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6dedd551441528852bcda0d4ae99011132e129aa9efc07a6002d67f60ea104e1",
+ "stdout_tail": "CYCLE979_CLASS_COEXISTENCE_INDEPENDENT_CHECK\nR0_PRIMARY_AST_AND_PINS PASS :: source_reads=4<=6; pins=True; primary_imported=false\nR1_INDEPENDENT_COEXISTENCE_CENSUS PASS :: programs=155; class_counts={\"CNOT\":6,\"TOF_OPPOSITE_CONTROLS\":3,\"TOF_PERPENDICULAR_CONTROLS\":12}; classless=134; multi_class=0; proper_cubic=True\nR2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST PASS :: premise=P_instance(non-axiom); conditional=PER_INSTANCE; axiom_implication=NOT_DERIVED; survivors/5=5/5; neighbour_variation=true; proper_cubic=true; exclusions=[]\nR3_NONUNIFORM_INPUT PASS :: p_zero=1/4; TV_by_class={\"CNOT\":\"1/2\",\"TOF_OPPOSITE_CONTROLS\":\"1/2\",\"TOF_PERPENDICULAR_CONTROLS\":\"1/2\"}\nR4_RECEIPT_CACHE_BINDING PASS :: semantic_headlines_bound=true\nR5_ACTIVE_CORRUPTION_PROBES PASS :: rejected=8/8; ids=[\"CACHE_WEIGHT_HEADLINE_CORRUPTED\",\"CLASS_COUNT_CORRUPTED\",\"COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED\",\"EXCLUSION_WITHOUT_WITNESS\",\"NONUNIFORM_TV_CORRUPTED\",\"PROGRAM_REMOVED\",\"SURROGATE_DEPENDENCE_FLIPPED\",\"SURVIVOR_REMOVED\"]\nR6_CONTROLS PASS :: runtime_s=0.337<300; stdout_bytes=1118<6000; determinism=True\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171451Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle979_class_coexistence_independent_check_2026_08_10.txt against the .txt beside this log"
+  ]
+ }
+}

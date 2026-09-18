@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_record_sign_agnostic_eta_refuted_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/koide_record_sign_agnostic_eta_refuted_2026_06_04.py",
+ "seed": 51830,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcc7693c",
+ "started_utc": "20260918T171710Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3390cea1095bdd4d94be7fe239bab9165e1168f252383cfb37878f2d679ae3ee",
+ "stdout_tail": "========================================================================\nKoide Record sign route diagnosis\n========================================================================\nScope: open-gate route diagnosis; no readout rule adopted.\nPASS tested_functionals_add_over_direct_sum\nPASS squaring_erases_single_sign\nPASS eta_count_does_not_fix_q :: eta=3 for both; q_a=0.3333, q_b=0.5000\nPASS charged_lepton_comparator_sign_homogeneous :: q_signed=q_unsigned=0.666661\nPASS r_half_maps_to_q_two_thirds\nPASS note_declares_open_gate\nPASS pdg_comparator_non_load_bearing\nPASS not_no_go_against_all_signed_readouts\nPASS future_route_requires_framework_native_readout\nPASS refutes_only_tested_shortcuts\n========================================================================\nSCORECARD: PASS=10 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171710Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

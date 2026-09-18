@@ -1,0 +1,13 @@
+== (1) recursion coefficients up to total degree 6 (0.0s)
+[1] direct enumeration of admissible typed subtrees up to 5 edges vs the recursion: agree at every (a, f): True (1440073 typed subtrees, 1.4s)
+== (2) lattice subtrees of G containing the origin with at most one arrow to a predecessor per node, up to 6 edges (35s)
+[2] 0 edges: 1 lattice trees vs 1 typed (recursion) = ratio 1.0000; by (a, f): (0,0): 1/1
+[2] 1 edges: 12 lattice trees vs 12 typed (recursion) = ratio 1.0000; by (a, f): (0,1): 6/6, (1,0): 6/6
+[2] 2 edges: 189 lattice trees vs 189 typed (recursion) = ratio 1.0000; by (a, f): (0,2): 45/45, (1,1): 108/108, (2,0): 36/36
+[2] 3 edges: 3336 lattice trees vs 3408 typed (recursion) = ratio 0.9789; by (a, f): (0,3): 356/380, (1,2): 1512/1512, (2,1): 1248/1296, (3,0): 220/220
+[2] 4 edges: 62565 lattice trees vs 66555 typed (recursion) = ratio 0.9400; by (a, f): (0,4): 2880/3450, (1,3): 18780/19500, (2,2): 27405/29160, (3,1): 12150/13080, (4,0): 1350/1365
+[2] 5 edges: 1217628 lattice trees vs 1369908 typed (recursion) = ratio 0.8888; by (a, f): (0,5): 23580/32886, (1,4): 217026/242730, (2,3): 482580/535680, (3,2): 379098/430056, (4,1): 107028/119988, (5,0): 8316/8568
+[2] 6 edges: 24289979 lattice trees vs 29267035 typed (recursion) = ratio 0.8299; by (a, f): (0,6): 194474/324632, (1,5): 2388960/2968812, (2,4): 7431228/8811180, (3,3): 8879094/10668728, (4,2): 4459854/5402943, (5,1): 885066/1036476, (6,0): 51303/54264
+[2] cumulative lattice trees with at most four edges: 66103 (the note: 66103); lifts collected up to 5 edges: 0 collisions
+[time] 36s
+SUMMARY: D4 beyond four edges: lattice subtree counts up to 6 edges (25573710 trees; 66103 with <= 4 edges, note 66103) never exceed the recursion's coefficients (0 cells above); lift collisions up to 5 edges: 0; typed enumeration matches the recursion to 5 edges: True; falsifier does not fire

@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8168/d4_tree_counts_beyond_four_edges.py",
+ "seed": 57282,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c36c00cc",
+ "started_utc": "20260918T184802Z",
+ "elapsed_s": 36.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "D4 beyond four edges: lattice subtree counts up to 6 edges (25573710 trees; 66103 with <= 4 edges, note 66103) never exceed the recursion's coefficients (0 cells above); lift collisions up to 5 edges: 0; typed enumeration matches the recursion to 5 edges: True; falsifier does not fire"
+ },
+ "review": "An independent embedded-tree enumerator reproduces the note's 66103 subtrees with at most four edges and extends D4 to six edges: 25573710 lattice subtrees (24289979 with six edges) never exceed the recursion's coefficient at any (a, f) (lattice/typed ratio 0.83 at six edges), no two lattice trees share a lift up to five edges, and a direct enumeration of admissible typed subtrees (1440073 up to five edges) equals the recursion's coefficients; the D4 falsifier does not fire.",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "e2a354073a17f87408fab87eb008bd7122bbbde848c3d269add246c7e0f96a01",
+ "stdout_tail": " ratio 1.0000; by (a, f): (0,0): 1/1\n[2] 1 edges: 12 lattice trees vs 12 typed (recursion) = ratio 1.0000; by (a, f): (0,1): 6/6, (1,0): 6/6\n[2] 2 edges: 189 lattice trees vs 189 typed (recursion) = ratio 1.0000; by (a, f): (0,2): 45/45, (1,1): 108/108, (2,0): 36/36\n[2] 3 edges: 3336 lattice trees vs 3408 typed (recursion) = ratio 0.9789; by (a, f): (0,3): 356/380, (1,2): 1512/1512, (2,1): 1248/1296, (3,0): 220/220\n[2] 4 edges: 62565 lattice trees vs 66555 typed (recursion) = ratio 0.9400; by (a, f): (0,4): 2880/3450, (1,3): 18780/19500, (2,2): 27405/29160, (3,1): 12150/13080, (4,0): 1350/1365\n[2] 5 edges: 1217628 lattice trees vs 1369908 typed (recursion) = ratio 0.8888; by (a, f): (0,5): 23580/32886, (1,4): 217026/242730, (2,3): 482580/535680, (3,2): 379098/430056, (4,1): 107028/119988, (5,0): 8316/8568\n[2] 6 edges: 24289979 lattice trees vs 29267035 typed (recursion) = ratio 0.8299; by (a, f): (0,6): 194474/324632, (1,5): 2388960/2968812, (2,4): 7431228/8811180, (3,3): 8879094/10668728, (4,2): 4459854/5402943, (5,1): 885066/1036476, (6,0): 51303/54264\n[2] cumulative lattice trees with at most four edges: 66103 (the note: 66103); lifts collected up to 5 edges: 0 collisions\n[time] 36s\nSUMMARY: D4 beyond four edges: lattice subtree counts up to 6 edges (25573710 trees; 66103 with <= 4 edges, note 66103) never exceed the recursion's coefficients (0 cells above); lift collisions up to 5 edges: 0; typed enumeration matches the recursion to 5 edges: True; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T184846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

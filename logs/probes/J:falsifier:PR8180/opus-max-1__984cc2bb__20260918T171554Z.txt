@@ -1,0 +1,39 @@
+== T-a: separability (plane) x (axis) in full momentum space, exact cross-ratios on the rational-cosine grids
+[T-a] L=4 comparator_e3   quadruples=  630 with R != 1:   390; first: q=2pi(0, 1)/4, q'=2pi(0, 2)/4, w=2pi*0/4, w'=2pi*1/4, R=4/3
+[T-a] L=4 comparator_111  quadruples=  630 with R != 1:   541; first: q=2pi(0, 1)/4, q'=2pi(0, 2)/4, w=2pi*0/4, w'=2pi*1/4, R=8/3
+[T-a] L=4 formation       quadruples=  630 with R != 1:   557; first: q=2pi(0, 1)/4, q'=2pi(0, 2)/4, w=2pi*0/4, w'=2pi*1/4, R=4
+[T-a] L=6 comparator_e3   quadruples= 8925 with R != 1:  6682; first: q=2pi(0, 1)/6, q'=2pi(0, 2)/6, w=2pi*0/6, w'=2pi*1/6, R=3/2
+[T-a] L=6 comparator_111  quadruples= 8925 with R != 1:  8026; first: q=2pi(0, 1)/6, q'=2pi(0, 2)/6, w=2pi*0/6, w'=2pi*1/6, R=5/2
+[T-a] L=6 formation       quadruples= 8925 with R != 1:  8164; first: q=2pi(0, 1)/6, q'=2pi(0, 2)/6, w=2pi*0/6, w'=2pi*1/6, R=13/4
+[INFO] exact identity 1/G^(q,w) = 3 (1/C^(q,w) + 1 - u(q)) (comparator along (1,1,1) vs formation, sigma^2 = beta = 1): 280/280 grid points (L = 4, 6), 0 failures
+== T-c exact: the closed-form propagators solve each kernel's three-term recurrence in tau (sympy radicals, L = 4, 6 grids)
+[T-c] exact: 50/50 grid modes where all three closed forms (formation; comparator along (1,1,1) and along e3) solve their recurrences with |r| < 1 and the tau = 0 normalization holds
+== T-b / T-c: mixed representation (q, tau) by FFT quadrature, L = 96 (9215 nonzero modes), M = 131072, tau = -64..64
+[T-c] quadrature done in 57.2s
+[T-c] formation       max_tau |(C(tau+1)/C(tau))/(C(1)/C(0)) - 1| = 1.89e-10 over 275481 (q, tau) pairs; quadrature vs closed form: max |r/r_closed - 1| = 3.58e-13, max |C(0)/C0_closed - 1| = 7.52e-10
+[T-c] comparator_111  max_tau |(C(tau+1)/C(tau))/(C(1)/C(0)) - 1| = 1.70e-10 over 139644 (q, tau) pairs; quadrature vs closed form: max |r/r_closed - 1| = 1.41e-14, max |C(0)/C0_closed - 1| = 6.97e-14
+[T-c] comparator_e3   max_tau |(C(tau+1)/C(tau))/(C(1)/C(0)) - 1| = 8.25e-11 over 88346 (q, tau) pairs; quadrature vs closed form: max |r/r_closed - 1| = 5.77e-15, max |C(0)/C0_closed - 1| = 2.62e-14
+[INFO] formation       max_q,tau |C(q,-tau) - conj C(q,tau)|/|C(q,0)| = 4.53e-16
+[INFO] comparator_111  max_q,tau |C(q,-tau) - conj C(q,tau)|/|C(q,0)| = 3.78e-16
+[INFO] comparator_e3   max_q,tau |C(q,-tau) - conj C(q,tau)|/|C(q,0)| = 3.51e-16
+[INFO] per-level phase along (1,1,1): max_q |arg r_comparator - arg r_formation| = 2.93e-14 rad (9213 modes with phi(q) != 0)
+== T-b: separability (plane) x (tau), cross-ratios on the 63 modes of the L = 8 sub-grid, tau in (0, 1, 2, 3)
+[T-b] formation       quadruples=11718 with |R - 1| > 1e-06: 11366 (max |R - 1| = 309.204)
+[T-b] comparator_111  quadruples=11718 with |R - 1| > 1e-06: 11366 (max |R - 1| = 965.482)
+[T-b] comparator_e3   quadruples=11718 with |R - 1| > 1e-06: 10548 (max |R - 1| = 101.908)
+[INFO] decay per level along (1,1,1) at q = 2pi(n, 0)/96:  n, |q|, 1 - |r_formation|, 1 - |r_comparator|
+[INFO]    1  0.06545  4.7591e-04  3.0386e-02
+[INFO]    2  0.13090  1.9030e-03  5.9874e-02
+[INFO]    4  0.26180  7.6009e-03  1.1634e-01
+[INFO]    8  0.52360  3.0229e-02  2.2045e-01
+[INFO]   16  1.04720  1.1808e-01  4.0063e-01
+== decisions (product form holds?)
+[DEC] formation       T-a separable: False   T-b separable: False   T-c plane factor x propagator^tau: True
+[DEC] comparator_e3   T-a separable: False   T-b separable: False   T-c plane factor x propagator^tau: True
+[DEC] comparator_111  T-a separable: False   T-b separable: False   T-c plane factor x propagator^tau: True
+[DEC] exact closed forms verified on all L = 4, 6 modes: True; exact identity 1/G^ = 3(1/C^ + 1 - u): True
+[DEC] representations in which the formation kernel has the product form and the comparator lacks it: none
+HIT: T3/D2 - the note's own test (plane x axis separability in full momentum, exact cross-ratios) finds the formation kernel's spectral density 1/|1 - phi e^(iw)|^2 non-product in 8721/9555 quadruples (L = 4: R = 4 at q = 2pi(0, 1)/4, q' = 2pi(0, 2)/4, w = 2pi*0/4, w' = 2pi*1/4), as it finds 1/E (7072/9555 along e3, 8567/9555 along (1,1,1))
+HIT: T3/D2 - in the mixed (q, tau) representation the comparator's Z^3 Green function is (plane factor) x (propagator)^tau along (1,1,1) [r = conj(phi)/(1 + sqrt(1-u)), C0 = 1/(6 sqrt(1-u))] and along e3 [r = lambda(k_perp)]: max |r_tau/r_0 - 1| = 1.7e-10 / 8.3e-11 over 9215 modes, tau <= 64 (formation: 1.9e-10); closed forms exact on all L = 4, 6 grid modes
+[time] 61.4s
+SUMMARY: T3/D2 product-form test on both kernels - T-a full-momentum separability: formation non-product 8721/9555, comparator 7072/9555 (e3) and 8567/9555 (1,1,1); T-b (q, tau) separability: formation 11366/11718, comparator 11366/11718 non-product; T-c propagator form holds for both (max dev 1.9e-10 formation, 1.7e-10 (1,1,1), 8.3e-11 e3; L = 96, M = 131072, tau <= 64); distinguishing representations: none; exact identity 1/G^ = 3(1/C^ + 1 - u) on all grid points

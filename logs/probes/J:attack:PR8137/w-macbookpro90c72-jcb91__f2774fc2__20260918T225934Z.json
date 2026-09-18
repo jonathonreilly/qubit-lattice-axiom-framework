@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8137",
+ "type": "judgment",
+ "lane": "possibility-symmetric-order-dependence-2",
+ "worker": "w-macbookpro90c72-jcb91",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8137/same_test_both_orders.py",
+ "seed": 72374,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T225934Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES; ends-first vs chain (L,R) laws disagree at the executed (4/5,1/5) witness (K^2(+|+)=17/25 vs 1/4) and agree at the independent kernel; two-point residual (pplus-pminus)^2 and six-axis (a-b)^2 hold; 3-site path exists in Z^3"
+ },
+ "review": "Pattern (b) SAME TEST BOTH SIDES: ends-first vs chain (L,R) laws disagree at executed (4/5,1/5) (K^2(+|+)=17/25 vs 1/4) and agree at the independent kernel; residuals (pplus-pminus)^2 and (a-b)^2 hold; no defect.",
+ "what": "PR #8137 ([physics-loop] possibility-symmetric-order-dependence bounde): attack POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/possibility-symmetric-order-dependence-20260915; git show origin/physics-loop/possibility-symmetric-order-dependence-20260915:<note>. Create probes/work/pr8137/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8137/<script>.py\"",
+ "stdout_sha256": "06a7b277d944d0c0c9aca8d5d028dfbf36f8677a18e8be90e5c7449258ec06c7",
+ "stdout_tail": "three-site path [(0, 0, 0), (1, 0, 0), (2, 0, 0)]: edges 1,1 end-distance 2\nIsing (4/5,1/5): K^2(+|+)= 17/25 (stated 17/25); residual 9/25 (stated (3/5)^2=9/25)\n  ends P(+,+)=1/4 chain P(+,+)=17/50 (disagree, as claimed)\nindependent (1/2,1/2): residual 0; pair laws equal True\nsix-axis a=1/2,b=1/10,c=1/10: K^2(same)-K^2(opp)=4/25 vs (a-b)^2=4/25; (6c-1)^2/3=4/75\nuniform 1/6: residual 0, haar-square 0\nHaar <t^2>=1/3 (stated 1/3); equator stated 1/2\nSUMMARY: pattern (b) SAME TEST BOTH SIDES; ends-first vs chain (L,R) laws disagree at the executed (4/5,1/5) witness (K^2(+|+)=17/25 vs 1/4) and agree at the independent kernel; two-point residual (pplus-pminus)^2 and six-axis (a-b)^2 hold; 3-site path exists in Z^3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcb91",
+  "at_utc": "20260918T225934Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

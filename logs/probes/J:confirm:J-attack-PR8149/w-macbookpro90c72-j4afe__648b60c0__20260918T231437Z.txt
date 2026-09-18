@@ -1,0 +1,7 @@
+outside 18 six_cycle True free True leaf_outdeg {5}
+orbits 3 sizes [6, 6, 6]
+equivariant envs 216; constant prod D at (3,1,2): 216/216
+example products [11553049709379584, 11553049709379584, 11553049709379584, 11553049709379584, 11553049709379584, 11553049709379584]
+all-+x products constant False values [918885693020585536, 16003770060096064, 169604594650054656]...
+HIT: confirmed - every sigma-equivariant environment has prod_leaf D_leaf(v_c) independent of v_c at (3,1,2) (216 envs); all-+x is not constant; each leaf records the centre plus five outside sites
+SUMMARY: confirmed U2/U4 fail in sigma-equivariant environments: centre-first star sequential=joint by exact integer normalizer products; all-+x still differs

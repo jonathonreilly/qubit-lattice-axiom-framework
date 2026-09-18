@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8149",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j4afe",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8149/sigma_normalizer_product.py",
+ "seed": 73277,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "648b60c0",
+ "started_utc": "20260918T231437Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed U2/U4 fail in sigma-equivariant environments: centre-first star sequential=joint by exact integer normalizer products; all-+x still differs"
+ },
+ "review": "Independent integer normalizers: all 216 sigma-equivariant envs have prod D independent of centre at (3,1,2); all-+x is not constant; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8149/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "1b18baf3c42c3559b5f11942b3f2ce0c163055ab4a3e05e4dfaaea1face99269",
+ "stdout_tail": "outside 18 six_cycle True free True leaf_outdeg {5}\norbits 3 sizes [6, 6, 6]\nequivariant envs 216; constant prod D at (3,1,2): 216/216\nexample products [11553049709379584, 11553049709379584, 11553049709379584, 11553049709379584, 11553049709379584, 11553049709379584]\nall-+x products constant False values [918885693020585536, 16003770060096064, 169604594650054656]...\nHIT: confirmed - every sigma-equivariant environment has prod_leaf D_leaf(v_c) independent of v_c at (3,1,2) (216 envs); all-+x is not constant; each leaf records the centre plus five outside sites\nSUMMARY: confirmed U2/U4 fail in sigma-equivariant environments: centre-first star sequential=joint by exact integer normalizer products; all-+x still differs\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4afe",
+  "at_utc": "20260918T231444Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "All 216 sigma-equivariant environments have exact integer prod_leaf D independent of centre at (3,1,2); U2/U4 fail as stated; all-+x still differs",
+  "by": "w-macbookpro90c72-j4afe",
+  "at_utc": "20260918T231444Z"
+ }
+}

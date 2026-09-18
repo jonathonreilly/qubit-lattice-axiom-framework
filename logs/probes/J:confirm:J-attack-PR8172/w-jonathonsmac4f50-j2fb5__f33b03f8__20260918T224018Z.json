@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8172",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j2fb5",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8172/region_count_downset.py",
+ "seed": 71218,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f33b03f8",
+ "started_utc": "20260918T224018Z",
+ "elapsed_s": 50.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed as an attribution slip, not a false bound - runner's 120 islands largest 3.8605, spec's 200 islands largest 4.0430, stated 'at most 81/20 on 120 islands' (true on both sets: True); the finder's test compared an upper bound as an equality, so the bound's truth is not in question; new: the proof box y_j <= 2D + 1 fails for islands with a coordinate maximum above D and the runner undercounts |U| on 11 of 120 islands (the largest ratios are unaffected); the bound survives via y_j <= D + 1 + M_j, |U| <= 8(D+1)^3; the hill-climb reaches 4.453 (D = 8)"
+ },
+ "review": "Both island sets regenerated from their seeds and recounted by an explicit forward-cone down-set: the runner's 120 islands peak at 6671/1728 = 3.8605 and the spec's 200 at 1035/256 = 4.043, so the note's 'at most 4.05(D+1)^3 on 120 random islands' is the spec's maximum rounded up attached to the runner's island count (a true bound, misattributed: finder confirmed in that sense); new while recounting: the proof's box x_j <= D + 1 + i_j <= 2D + 1 needs i_j <= D and fails for islands with a coordinate maximum above D (i = (1, 0, -1), D = 0, x = (2, 0, -1) in F_1), the runner's C2 count uses that box and undercounts |U| on 11 of its 120 islands (84 vs 69 at D = 2; 3 vs 0 for the one-site island (-1, -1, 2)), while the stated 18(D+1)^3 survives through the box y_j <= D + 1 + M_j (|U| <= 8(D+1)^3, met by every recount).",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8172/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "23e059514d26d766b6d6e381d705ad2a93ff43e17e2ea4de738c7e76367aa003",
+ "stdout_tail": ", 1), (1, 4), (2, 1), (3, -3), (3, -2), (3, 3), (4, -4), (4, 0), (4, 3), (4, 4)]; the proved constant is 18\nHIT: confirmed - the note's executed bound '81/20(D+1)^3 on 120 random islands' is the spec's 200-island largest ratio 4.0430 rounded up, not the runner's 120-island largest 6671/1728 = 3.8605 (both island sets regenerated and recounted by the down-set); the bound itself holds on both sets\nHIT: new - T2's count bounds every site of U(I) by y_j <= 2D + 1 through x_j <= D + 1 + i_j <= 2D + 1, whose second step needs i_j <= D and fails when a coordinate maximum exceeds D (i = (1, 0, -1): D = 0 and x = (2, 0, -1) in F_1 has x_1 = 2 > 1); the runner's C2 count uses that box and undercounts |U| on 11 of its 120 islands (true 84 vs 69 at D = 2; 3 vs 0 for the one-site island (-1, -1, 2)); the stated 18(D+1)^3 survives: the box y_j <= D + 1 + M_j gives |U| <= (D+1)(4D+4)(4D+3)/2 <= 8(D+1)^3, met by every recount: True\nSUMMARY: confirmed as an attribution slip, not a false bound - runner's 120 islands largest 3.8605, spec's 200 islands largest 4.0430, stated 'at most 81/20 on 120 islands' (true on both sets: True); the finder's test compared an upper bound as an equality, so the bound's truth is not in question; new: the proof box y_j <= 2D + 1 fails for islands with a coordinate maximum above D and the runner undercounts |U| on 11 of 120 islands (the largest ratios are unaffected); the bound survives via y_j <= D + 1 + M_j, |U| <= 8(D+1)^3; the hill-climb reaches 4.453 (D = 8)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2fb5",
+  "at_utc": "20260918T224120Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed as an attribution slip (4.05 is the spec's 200-island maximum 4.043, not the runner's 120-island 3.8605; the bound holds on both). New: T2's box step x_j <= D+1+i_j <= 2D+1 fails when a coordinate maximum exceeds D (i=(1,0,-1), D=0, x=(2,0,-1)); the runner's region count uses that box and undercounts |U| on 11/120 islands; the theorem's 18(D+1)^3 survives via y_j <= D+1+M_j (|U| <= 8(D+1)^3).",
+  "by": "w-jonathonsmac4f50-j2fb5",
+  "at_utc": "20260918T224120Z"
+ }
+}

@@ -20,13 +20,20 @@
  "stdout_tail": "FAIL A01 note exists\nPASS A02 source is exactly the Cycle-67 terminal\nPASS A03 YS is the exact fourfold E/L8/L10 class\nPASS A04 YG is the exact fourfold OPEN_B/YS class\nPASS A05 DY is singleton X_B/YG\nPASS A06 DZ remains singleton X_B/L10\nPASS A07 H pair is exact\nPASS A08 guided extension has 39 additions :: 39\nPASS B01 every rotated union input is single-valued\nPASS B02 component raw domains are pairwise disjoint\nPASS C01 official map is exact Cycle-14 B/D/H :: {(2, 1, 0): 'D1', (2, 0, 1): 'D1', (3, 0, 1): 'H1', (3, 1, 0): 'H1', (1, 1, 0): 'B1', (1, 0, 1): 'B1', (1, 2, 0): 'B0', (1, 0, 2): 'B0', (1, 3, 0): 'B1', (2, 2, 0): 'D0', (2, 0, 2): 'D0', (2, 3, 0): 'D1', (2, 1, 1): 'B1', (3, 1, 1): 'D1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}\nPASS C02 auxiliaries avoid current official support\nPASS C03 additions avoid next-only support\nPASS D01 every conditional schedule reaches one complete terminal :: (13095, 62667, 1)\nPASS D02 conditional graph has no parasite :: frozenset()\nPASS D03 conditional graph has no conflict :: frozenset()\nPASS E01 translated next header is complete\nPASS E02 translated preparation interface is ready\nPASS E03 next q/a/b/c remain open\n\nNEW_ROWS=29 UNION_ROWS=149 RAW=3,272\nCONDITIONS=57 STATES=13,095 EDGES=62,667\nSUMMARY: 18 PASS / 1 FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260918T233013Z",
+  "at_utc": "20260918T233906Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c8c516b differs from the current HEAD 074f4ed9 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL A01 note exists'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T233906Z"
  }
 }

@@ -1,0 +1,11 @@
+PR #8029: [physics-loop] infinite-static block39 conditional-support
+branch codex/infinite-static-block39-20260907 (base codex/static-uniform-block38-20260907)
+runners in the PR: 1
+== scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py: rc=0 no TOTAL line
+PASS: 15 exact scientific controls; 1 separate resource guard
+per_element: 3 exact rational spectral-measure cases
+per_site: 3 finite Z3 charge labels, explicitly a toy
+per_mode: 2 fixed local resolvent modes
+per_block: 3 distinct adverse-control families
+lattice_wide: 0 numerical infinite-volume simulations; theorem is analytical
+resources: 0.004898s / 180s; 20.438MiB / 180MiB

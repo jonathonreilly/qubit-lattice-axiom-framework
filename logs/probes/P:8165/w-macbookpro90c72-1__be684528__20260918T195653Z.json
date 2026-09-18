@@ -1,0 +1,21 @@
+{
+ "task": "P:8165",
+ "type": "pr-reexecution",
+ "lane": "toe-compact-ground-path-20260916",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8165",
+ "pr": 8165,
+ "branch": "physics-loop/toe-compact-ground-path-20260916",
+ "git_sha": "be684528",
+ "started_utc": "20260918T195653Z",
+ "elapsed_s": 3.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "07efb5b87c5aa8aeeb1ca0d4a7672dd57891f6961b9d0bdc60ad7a4e40223ce1",
+ "stdout_tail": "PR #8165: [physics-loop] compact-ground-path bounded_theorem conditional-support\nbranch physics-loop/toe-compact-ground-path-20260916 (base main)\nrunners in the PR: 0"
+}

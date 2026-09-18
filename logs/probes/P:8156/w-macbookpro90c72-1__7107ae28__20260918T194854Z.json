@@ -1,0 +1,28 @@
+{
+ "task": "P:8156",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8156",
+ "pr": 8156,
+ "branch": "physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915",
+ "git_sha": "7107ae28",
+ "started_utc": "20260918T194854Z",
+ "elapsed_s": 403.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=20 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "f97833c01fc8e6fd7ba4d32cc11cb6b71f12248317eb4b85e83647e68495b974",
+ "stdout_tail": "PR #8156: [physics-loop] admissibility-induced-law block22 \u2014 bounded_theorem \u2014 bounded-support: block 19's ordering threshold sharpened to beta > 76/100 \u2014 3G(0) pinned between 75/100 and 76/100 by exact return counts of the cubic walk\nbranch physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0\n   mutation walk_count_wrong: expected B observed B ok\n   mutation vandermonde_wrong: expected B observed B ok\n   mutation paired_series_wrong: expected B observed B ok\n   mutation cosine_quartic_wrong: expected C observed C ok\n   mutation gaussian_integral_wrong: expected C observed C ok\n   mutation two_region_wrong: expected C observed C ok\n   mutation exp_bound_wrong: expected C observed C ok\n   mutation partial_sum_wrong: expected D observed D ok\n   mutation majorant_wrong: expected D observed D ok\n   mutation certificate_target_wrong: expected D observed D ok\n   mutation lower_bound_wrong: expected D observed D ok\n   mutation claim_true_threshold_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

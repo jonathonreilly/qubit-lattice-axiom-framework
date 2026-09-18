@@ -1,0 +1,17 @@
+PR #8156: [physics-loop] admissibility-induced-law block22 — bounded_theorem — bounded-support: block 19's ordering threshold sharpened to beta > 76/100 — 3G(0) pinned between 75/100 and 76/100 by exact return counts of the cubic walk
+branch physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation walk_count_wrong: expected B observed B ok
+   mutation vandermonde_wrong: expected B observed B ok
+   mutation paired_series_wrong: expected B observed B ok
+   mutation cosine_quartic_wrong: expected C observed C ok
+   mutation gaussian_integral_wrong: expected C observed C ok
+   mutation two_region_wrong: expected C observed C ok
+   mutation exp_bound_wrong: expected C observed C ok
+   mutation partial_sum_wrong: expected D observed D ok
+   mutation majorant_wrong: expected D observed D ok
+   mutation certificate_target_wrong: expected D observed D ok
+   mutation lower_bound_wrong: expected D observed D ok
+   mutation claim_true_threshold_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

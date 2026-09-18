@@ -1,0 +1,19 @@
+PR #8139: [physics-loop] admissibility-induced-law block09 — bounded_theorem — bounded-support: the 3D formation law is a Markov field for the face-diagonal graph, not the nearest-neighbor one — eight corner laws and the sweep's imprint
+branch physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915 (base physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915)
+runners in the PR: 1
+== scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py: rc=0 TOTAL: PASS=22 FAIL=0
+   mutation diagonal_dependence_denied: expected B observed B ok
+   mutation excluded_site_dependence_claimed: expected B observed B ok
+   mutation third_difference_forged: expected B observed B ok
+   mutation dependency_sets_all_distinct_claimed: expected C observed C ok
+   mutation groupings_coincide_claimed: expected C observed C ok
+   mutation pair_witness_denied: expected C observed C ok
+   mutation rotation_orbit_wrong: expected C observed C ok
+   mutation joint_law_symmetric_claimed: expected D observed D ok
+   mutation constant_rule_irreversible_claimed: expected D observed D ok
+   mutation inplane_reflection_invariance_claimed: expected D observed D ok
+   mutation one_plane_law_count_wrong: expected D observed D ok
+   mutation column_laws_not_distinct_claimed: expected D observed D ok
+   mutation claim_physical_order: expected F observed F ok
+   mutation claim_arrow_of_time: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

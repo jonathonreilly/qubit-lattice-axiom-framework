@@ -1,0 +1,14 @@
+PR #8141: [physics-loop] admissibility-induced-law block10 — bounded_theorem — bounded-support: the recorded-set Gibbs theorem — every formation law's Markov graph is the recorded-set graph; nearest-neighbor Markov iff no site records two neighbors
+branch physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915 (base physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915)
+runners in the PR: 1
+== scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py: rc=0 TOTAL: PASS=18 FAIL=0
+   mutation product_form_wrong: expected B observed B ok
+   mutation mixed_difference_forged: expected B observed B ok
+   mutation constant_rule_difference_claimed: expected B observed B ok
+   mutation recorded_pairs_adjacent_claimed: expected B observed B ok
+   mutation plaquette_nonedge_term_claimed: expected C observed C ok
+   mutation plaquette_diagonal_term_denied: expected C observed C ok
+   mutation star_three_body_denied: expected C observed C ok
+   mutation markov_test_disagrees: expected C observed C ok
+   mutation claim_physical_order: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

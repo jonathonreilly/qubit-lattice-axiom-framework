@@ -1,0 +1,28 @@
+{
+ "task": "P:8141",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8141",
+ "pr": 8141,
+ "branch": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+ "git_sha": "7f0ede5a",
+ "started_utc": "20260918T195602Z",
+ "elapsed_s": 21.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=18 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "5385ca102d41ff742917d0e80d54a05962cb7ee5f93680b0fa91045c3cfb9b36",
+ "stdout_tail": "PR #8141: [physics-loop] admissibility-induced-law block10 \u2014 bounded_theorem \u2014 bounded-support: the recorded-set Gibbs theorem \u2014 every formation law's Markov graph is the recorded-set graph; nearest-neighbor Markov iff no site records two neighbors\nbranch physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915 (base physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915)\nrunners in the PR: 1\n== scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py: rc=0 TOTAL: PASS=18 FAIL=0\n   mutation product_form_wrong: expected B observed B ok\n   mutation mixed_difference_forged: expected B observed B ok\n   mutation constant_rule_difference_claimed: expected B observed B ok\n   mutation recorded_pairs_adjacent_claimed: expected B observed B ok\n   mutation plaquette_nonedge_term_claimed: expected C observed C ok\n   mutation plaquette_diagonal_term_denied: expected C observed C ok\n   mutation star_three_body_denied: expected C observed C ok\n   mutation markov_test_disagrees: expected C observed C ok\n   mutation claim_physical_order: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

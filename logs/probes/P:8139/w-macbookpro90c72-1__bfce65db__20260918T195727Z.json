@@ -1,0 +1,28 @@
+{
+ "task": "P:8139",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8139",
+ "pr": 8139,
+ "branch": "physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915",
+ "git_sha": "bfce65db",
+ "started_utc": "20260918T195727Z",
+ "elapsed_s": 1020.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=22 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "516a85985a9c5a086b230479b1097644473327653964c459b8bc46077d404b33",
+ "stdout_tail": "eorem \u2014 bounded-support: the 3D formation law is a Markov field for the face-diagonal graph, not the nearest-neighbor one \u2014 eight corner laws and the sweep's imprint\nbranch physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915 (base physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915)\nrunners in the PR: 1\n== scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py: rc=0 TOTAL: PASS=22 FAIL=0\n   mutation diagonal_dependence_denied: expected B observed B ok\n   mutation excluded_site_dependence_claimed: expected B observed B ok\n   mutation third_difference_forged: expected B observed B ok\n   mutation dependency_sets_all_distinct_claimed: expected C observed C ok\n   mutation groupings_coincide_claimed: expected C observed C ok\n   mutation pair_witness_denied: expected C observed C ok\n   mutation rotation_orbit_wrong: expected C observed C ok\n   mutation joint_law_symmetric_claimed: expected D observed D ok\n   mutation constant_rule_irreversible_claimed: expected D observed D ok\n   mutation inplane_reflection_invariance_claimed: expected D observed D ok\n   mutation one_plane_law_count_wrong: expected D observed D ok\n   mutation column_laws_not_distinct_claimed: expected D observed D ok\n   mutation claim_physical_order: expected F observed F ok\n   mutation claim_arrow_of_time: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

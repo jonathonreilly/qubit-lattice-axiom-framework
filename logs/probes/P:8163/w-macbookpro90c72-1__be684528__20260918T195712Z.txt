@@ -1,0 +1,3 @@
+PR #8163: Heavy Wilson fermions: uniform temporal curl bounds and exact gauge transfer
+branch physics-loop/toe-temporal-fermion-resummation-20260916 (base main)
+runners in the PR: 0

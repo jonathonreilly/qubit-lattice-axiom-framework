@@ -1,0 +1,24 @@
+PR #8026: [physics-loop] spatial-area block36 conditional-support
+branch codex/spatial-area-block36-20260907 (base codex/local-observable-block35-20260907)
+runners in the PR: 2
+== scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py: rc=0 no TOTAL line
+PASS gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py
+per_element: 1 checks; actual 192-face projection chain map
+per_site: 2 checks; projected rank and constant-sheet kernel
+per_mode: 4 checks; four frozen affine filling cases
+per_block: 8 checks; four minima and four actual lifted boundaries
+lattice_wide: 4 checks; three adverse controls and positive resources; no polymer proof
+TOTAL: 19
+seconds: 0.002714875037781894; rss_MiB: 21.703125
+source_sha256: f171aa356f6e7d07992dc28c48f2ee96c65873c709d1d22c0f3dbc1506070d69
+
+== scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py: rc=0 no TOTAL line
+PASS gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py
+per_element: 4 checks; finite Haar-index/arithmetic controls; analytic Haar identity is imported
+per_site: 3 checks; actual two-cube graph and shared link
+per_mode: 4 checks; orders zero to two center census
+per_block: 4 checks; two coefficients, wrong denominator and normalization
+lattice_wide: 18 checks; ten planar, seven periodic and one resource controls; no uniform analytic radius
+TOTAL: 33
+seconds: 0.00541787501424551; rss_MiB: 22.171875
+source_sha256: d80f58cfe852b06ab3c298fe29d3784f6371576710806a5488363c642a1645cf

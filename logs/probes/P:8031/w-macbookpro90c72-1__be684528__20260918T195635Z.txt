@@ -1,0 +1,13 @@
+PR #8031: [physics-loop] finite-transporter block41 conditional-support
+branch codex/finite-transporter-block41-20260907 (base codex/continuum-boundary-block40-20260907)
+runners in the PR: 1
+== scripts/gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py: rc=0 no TOTAL line
+PASS gauge_wilson_finite_transporter_pw_defect_check_2026_09_07.py
+per_element: 3 checks; actual57 dimension, trace-square offset and R0 block
+per_site: 2 checks; literal Cartan covariance and wrong-sign adverse
+per_mode: 4 checks; exact Gram Hermiticity/projection/rank and defect projection
+per_block: 4 checks; defect rank/shell, interior isometry and highest-weight kernel
+lattice_wide: 4 checks; norm-one witness, energy-shell control, fake-unitary adverse and resources; no all-R proof by finite test
+TOTAL: 17
+seconds: 2.557504583033733; rss_MiB: 63.890625
+source_sha256: a49d3902e7d8f82d7a81aa103c8f89628b991f8c7112de06695d12d8855ff1e0

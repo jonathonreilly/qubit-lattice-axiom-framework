@@ -1,0 +1,27 @@
+{
+ "task": "P:8029",
+ "type": "pr-reexecution",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8029",
+ "pr": 8029,
+ "branch": "codex/infinite-static-block39-20260907",
+ "git_sha": "7107ae28",
+ "started_utc": "20260918T194840Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "60ed2a5316c3dc839238447bf50ccf3b0a0ba0abe4f042f2b2d9f89d849c0752",
+ "stdout_tail": "PR #8029: [physics-loop] infinite-static block39 conditional-support\nbranch codex/infinite-static-block39-20260907 (base codex/static-uniform-block38-20260907)\nrunners in the PR: 1\n== scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py: rc=0 no TOTAL line\nPASS: 15 exact scientific controls; 1 separate resource guard\nper_element: 3 exact rational spectral-measure cases\nper_site: 3 finite Z3 charge labels, explicitly a toy\nper_mode: 2 fixed local resolvent modes\nper_block: 3 distinct adverse-control families\nlattice_wide: 0 numerical infinite-volume simulations; theorem is analytical\nresources: 0.004898s / 180s; 20.438MiB / 180MiB\n"
+}

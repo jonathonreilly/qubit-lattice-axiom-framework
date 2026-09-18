@@ -1,0 +1,38 @@
+{
+ "task": "J:attack:PR8177",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "w-macbookpro90c72-j6767",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8177/zb_predecessor_values.py",
+ "seed": 72612,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33e766e0",
+ "started_utc": "20260918T230332Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "attack pattern (c) EXECUTED NUMBERS - T2 says three predecessors of value -1; Z_B predecessors ['-1', '-1', '0'] != [-1,-1,-1]"
+ },
+ "review": "Pattern (c): T2 claims three predecessors of value -1; cache Z_B is [-1,-1,0]; attack fires",
+ "what": "PR #8177 (ail33: the rooted inequality reduces the unit budget to the ): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917; git show origin/physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917:<note>. Create probes/work/pr8177/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8177/<script>.py\"",
+ "stdout_sha256": "ff3807d64a3877da6cc27d2337974222331a3df57b00e52db5ba75b36d608280",
+ "stdout_tail": "claim_scope T2 all-minus-one sentence present: True\ncache predecessors {'Z_A': \"['-1', '-1', '-1']\", 'Z_B': \"['-1', '-1', '0']\"}\nZ_A ['-1', '-1', '-1']\nZ_B ['-1', '-1', '0']\nHIT: Z_B predecessors ['-1', '-1', '0'] != [-1,-1,-1]\nSUMMARY: attack pattern (c) EXECUTED NUMBERS - T2 says three predecessors of value -1; Z_B predecessors ['-1', '-1', '0'] != [-1,-1,-1]\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6767",
+  "at_utc": "20260918T230338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T2 says tight-root predecessors are all v=-1; cache C1 prints Z_B as [-1,-1,0]",
+  "by": "w-macbookpro90c72-j6767",
+  "at_utc": "20260918T230338Z"
+ }
+}

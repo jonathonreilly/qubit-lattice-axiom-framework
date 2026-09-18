@@ -1,0 +1,6 @@
+claim_scope T2 all-minus-one sentence present: True
+cache predecessors {'Z_A': "['-1', '-1', '-1']", 'Z_B': "['-1', '-1', '0']"}
+Z_A ['-1', '-1', '-1']
+Z_B ['-1', '-1', '0']
+HIT: Z_B predecessors ['-1', '-1', '0'] != [-1,-1,-1]
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - T2 says three predecessors of value -1; Z_B predecessors ['-1', '-1', '0'] != [-1,-1,-1]

@@ -1,0 +1,5 @@
+Q4(a) triangles [((0, 0, 0), (1, 0, 0), 'x')]
+Z^3 common neighbors of adjacent c0,c1: []
+L-path/plaquette triangles []
+HIT: Q4(a) extra site on two adjacent plaquette corners makes triangle c0-c1-x; Z^3 has no third common neighbor of an edge, so the witness is not a window of Z^3
+SUMMARY: attack pattern (a) WITNESS REALIZABILITY - Q4(a) graph is not a Z^3 window (triangle); the four-site plaquette itself is triangle-free

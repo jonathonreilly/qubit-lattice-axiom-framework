@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_derived_word_chain_end_to_end_composition_bounded_theorem_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_derived_word_chain_end_to_end_composition_bounded_theorem_2026_06_12.py",
+ "seed": 72946,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230906Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5c909290e1f4bef730d6e6655e9a6d37ccf7277de926537365f8a38378c2eb8f",
+ "stdout_tail": "-box sensitivity is named, not hidden\n================================================================================================================\nsource NMAX=5: P_inf_pair = 0.615191040446003\nsource NMAX=7: P_inf_pair = 0.615191992185898\nsource NMAX=9: P_inf_pair = 0.615191992282189\nsource NMAX 5->7 drift = 9.517398946723432e-07\nsource NMAX 7->9 drift = 9.629075314876445e-11\nPASS: the theorem surface is the source NMAX=7 pair-support value\nPASS: source-box drift is much smaller than the fenced comparator distance\n      max_source_drift=9.517399e-07\n\n================================================================================================================\nPart 5: note content and checked numeric ledger\n================================================================================================================\nPASS: composition note exists\n      /Users/jonreilly/.probe-workers/Physics/slot-1/docs/GAUGE_VACUUM_PLAQUETTE_DERIVED_WORD_CHAIN_END_TO_END_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-12.md\nPASS: note delegates status to the independent audit lane\nPASS: one-hop authority inputs are markdown links\nPASS: source dependency pointers use repo markdown links, not temp handles\nPASS: note avoids banned overreach phrases\nPASS: checked numeric ledger has no missing or unknown rows\n      missing=[], unknown=[]\nPASS: every checked numeric ledger row matches recomputed values\n      mismatches=[]\nPASS: residual table names the required open targets\n\nTOTAL: PASS=18, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_derived_word_chain_end_to_end_composition_bounded_theorem_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

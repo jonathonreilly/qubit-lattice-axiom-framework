@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py",
+ "seed": 72945,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230905Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8efe02e484628f07d0912ef536e5c3de13c70ff87b14885b1a43758eabe6e581",
+ "stdout_tail": "15413259920, P_loc=0.452407159044565\n\n================================================================================================\nPart 4: hostile control for a lossy diag-only interface\n================================================================================================\nexplicit perturbation entries:\n  E[(1,0),(1,1)] = 0.125000\n  E[(0,2),(2,0)] = -0.062500\nmax off-diagonal perturbation magnitude = 0.125000\nP after central interface projection = 0.434215413259920\nPASS: perturbation is a nonzero off-diagonal environment direction\nPASS: diag-only extraction leaves every tensor rho coefficient fixed\nPASS: the raw environment operators are nevertheless different\nPASS: the embedded rho vector is unchanged only after the lossy diagonal projection\nPASS: unchanged projected readout demonstrates helper information loss rather than raw-operator completeness\n      base=0.43421541325991964, perturbed=0.43421541325991964\n\n================================================================================================\nPart 5: durable interface semantics\n================================================================================================\nPASS: paired theorem note exists as a durable repository file\nPASS: copying an equal supplied rho vector leaves the operator readout unchanged\nPASS: diagonal extraction is idempotent on an already diagonal supplied operator\nPASS: the hostile raw operator cannot be reconstructed from its diagonal interface\n\nTOTAL: PASS=17, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230906Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

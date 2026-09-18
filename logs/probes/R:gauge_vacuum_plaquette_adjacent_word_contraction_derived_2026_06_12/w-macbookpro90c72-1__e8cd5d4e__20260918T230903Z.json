@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py",
+ "seed": 72943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230903Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f39b619332a54d912df03b1df9e389cfc058344d5550590e367758e86450df7a",
+ "stdout_tail": "============================================================================\nStatus authority: independent audit lane only. This source note does not set or predict an audit outcome.\nNamed residuals: finite word count; finite dominant-weight box; finite Bessel mode support; no physical 3D environment computation; no untruncated convergence proof; no L_perp limit; no full rim-boundary eta evaluation; no canonical repinning; no analytic P(6).\nPASS: derived finite readouts are positive\n\n\n================================================================================================\nPart R: reviewer checks \u2014 measured stationarity and non-factorization\n================================================================================================\nPASS: measured stationarity: derived trivial-slice readout agrees at two and three words\n      P2=0.429196712321, P3=0.429196712321, |diff|=5.551e-17\nPASS: non-factorization guard: the three-word Perron vector is NOT rank-one across the outer word\n      second/top singular ratio = 2.419e-02 -- the stationarity is a property of the slice components, not of vector factorization\nPASS: measured slice proportionality: the all-trivial-except-word0 slice of the three-word Perron vector is a scalar multiple of the two-word slice\n      common ratio = 0.025986536153; per-weight ratio spread = 1.388e-16; the k-independence of the derived readout follows; the closed slice eigen-identity behind it is the named follow-up lemma\nTOTAL: PASS=28, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230905Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

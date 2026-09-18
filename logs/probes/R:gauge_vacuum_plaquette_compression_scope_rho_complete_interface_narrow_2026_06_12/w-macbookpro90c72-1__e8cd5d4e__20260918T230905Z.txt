@@ -1,0 +1,63 @@
+Gauge-vacuum plaquette compression-scope rho-complete interface runner
+Status authority: independent audit lane only. This source runner does not set or predict an audit outcome.
+No new imports: repo-internal finite packet quantities only.
+tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200
+
+================================================================================================
+Part 1: build finite source and packet interfaces
+================================================================================================
+tensor packet size = 25
+source packet size = 64
+tensor Perron residual = 1.665334536938e-16
+PASS: finite tensor packet has 25 character weights
+PASS: finite source packet has 64 character weights
+PASS: tensor Perron residual is small
+      residual=1.665e-16
+PASS: packet rho is normalized at the trivial coefficient
+
+================================================================================================
+Part 2: finite rail trivial-channel collapse
+================================================================================================
+one-line consequence: rho = delta_(0,0) => P = P_triv
+P_triv direct delta = 0.422531739647132
+P_triv existing Perron reference = 0.422531739647132
+PASS: delta rho readout equals the existing Perron-solve P_triv value
+      direct=0.42253173964713153, anchor=0.42253173964713153
+PASS: delta rho readout agrees with the printed P_triv anchor
+      delta=5.551e-16
+
+================================================================================================
+Part 3: one-word rho_packet to source readout
+================================================================================================
+rho_packet(1,0) = 0.378514922317117
+rho_packet(1,1) = 0.171042019091802
+P_packet = 0.434215413259920
+PASS: one-word rho_packet to P chain reproduces the composed-readout value
+      delta=3.886e-16
+PASS: packet readout lies between the trivial and local rho=1 anchors
+      P_triv=0.422531739647132, P_packet=0.434215413259920, P_loc=0.452407159044565
+
+================================================================================================
+Part 4: hostile control for a lossy diag-only interface
+================================================================================================
+explicit perturbation entries:
+  E[(1,0),(1,1)] = 0.125000
+  E[(0,2),(2,0)] = -0.062500
+max off-diagonal perturbation magnitude = 0.125000
+P after central interface projection = 0.434215413259920
+PASS: perturbation is a nonzero off-diagonal environment direction
+PASS: diag-only extraction leaves every tensor rho coefficient fixed
+PASS: the raw environment operators are nevertheless different
+PASS: the embedded rho vector is unchanged only after the lossy diagonal projection
+PASS: unchanged projected readout demonstrates helper information loss rather than raw-operator completeness
+      base=0.43421541325991964, perturbed=0.43421541325991964
+
+================================================================================================
+Part 5: durable interface semantics
+================================================================================================
+PASS: paired theorem note exists as a durable repository file
+PASS: copying an equal supplied rho vector leaves the operator readout unchanged
+PASS: diagonal extraction is idempotent on an already diagonal supplied operator
+PASS: the hostile raw operator cannot be reconstructed from its diagonal interface
+
+TOTAL: PASS=17, FAIL=0

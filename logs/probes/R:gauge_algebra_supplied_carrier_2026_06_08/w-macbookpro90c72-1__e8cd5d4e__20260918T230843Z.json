@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_algebra_supplied_carrier_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
+ "seed": 72923,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230843Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47f5156e666481a3645a90b0a2a2db326d2f6804a051a051441948d8b99677d0",
+ "stdout_tail": "and su(3) on C^3 act IRREDUCIBLY (commutant = scalars, dim 1) -> each defines an equally-good gauge/Gauss structure; the carrier + Record + Gauss do NOT discriminate WHICH symmetry is gauged. The gauging selection (MR_color + chiral su(2)_L) remains open.\n       commutant(su(2) on C^2) = 1; commutant(su(3) on C^3) = 1 (both scalars -> irreducible -> equally gaugeable)\n\nSCORECARD PASS=6 FAIL=0\nrunner_check_breakdown = {A: 6, B: 0, C: 0, D: 0, total_pass: 6}\nVERDICT (bounded support, GIVEN the supplied carrier): su(3)(+)su(2)(+)u(1) (dim 12) is the FACTOR-PRESERVING algebra of the SUPPLIED C^3(base)(x)C^2(fiber) carrier (su(2)=Aut M_2 on the fiber; su(3) on the 3-dim base; commuting). The unrestricted carrier algebra is full u(6) (dim 36); the missing selection of the factor-preserving algebra rather than u(6) is exactly the supplied factor-locality/MR_color premise. The carrier factorization itself is a SUPPLIED realization (cited to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the weak-axis selection, with local-frame link-connection kinematics (currently unaudited per ledger)), NOT derived from the Lattice, Qubit, Admissibility, and Record axioms. The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

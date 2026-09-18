@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_admissibility_finite_state_markov_completion_independent_check_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_admissibility_finite_state_markov_completion_independent_check_2026_09_09.py",
+ "seed": 72912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0300f7c3",
+ "started_utc": "20260918T230832Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1663e6e846bab069fe03b04b2c2f7555bc8212de2fa9a2700e63b83123499f54",
+ "stdout_tail": "independent_route: stdlib integer frontier/covariance and rational seed normalization\nscientific_imports: none\nPASS A-source-cache-and-input-pins: the exact primary and corrected parent source/cache pairs plus five literal checker inputs are present\nPASS B-independent-frontier-and-growth: an asymmetric seven-site host gives 128 valid frontier cases and 127 extreme-site witnesses\nPASS C-independent-proper-cubic-geometry: direct signed-permutation generation transports frontiers and directions on 32 domains\nPASS D-independent-local-and-seed-normalization: 26 local directions have k<9 and the independently enumerated 64-atom seed mass is one\nPASS E-independent-scheduler-operand: an actual in-place first write exposes five sites outside the frozen six-site frontier\nPASS F-independent-patch-boundary: the restricted patch waves, full-lattice outside frontier, and first six seed shells match the claimed values\nPASS G-primary-claims-and-proof-boundary: the exact primary claims are reproduced and the note keeps finite proof, physical-law, time, infinite-state, and audit scopes explicit\nCHECKER_JSON {\"audit_status\": \"unset\", \"claim_type\": \"bounded_theorem\", \"dynamic_extra_sites\": 5, \"growth_witnesses\": 127, \"host_domains\": 128, \"patch_outside\": 32, \"proper_rotations\": 24, \"seed_atoms\": 64}\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

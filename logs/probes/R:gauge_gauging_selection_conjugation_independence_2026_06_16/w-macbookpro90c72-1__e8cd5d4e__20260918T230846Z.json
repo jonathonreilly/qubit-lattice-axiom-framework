@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_gauging_selection_conjugation_independence_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py",
+ "seed": 72926,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230846Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "906150ca4efdbe1b5fc13ed09f3671c083eb6f7bc82d77a312f594a7ad0cf19f",
+ "stdout_tail": "commutant_dim u(6)=1; commutant_dim dim-12=1\n[PASS] conjugation-invariant algebraic data cannot choose one dim-12 embedding\n       both embeddings have dim=12, closure residual <1e-10, scalar commutant; yet combined_span_dim=21\n[PASS] selection principle required: factorization/gauging input is not produced by Lattice + Quantum + Record\n\nSCORECARD PASS=8 FAIL=0\nrunner_check_breakdown = {A: 8, B: 0, C: 0, D: 0, total_pass: 8}\nVERDICT: exact negative boundary / route-pruning support.  The finite witness proves that irreducibility, scalar commutant, closure, and conjugation-invariant carrier algebra data do not select the supplied factorwise su(3)+su(2)+u(1) embedding.  A factorization/gauging principle, MR_color bridge, and chiral su(2)_L bridge remain required.\nper_element: PASS | the executed factorwise generators span a closed twelve-dimensional carrier algebra elementwise\nper_site: PASS | checked and not executed \u2014 the certificate acts on one six-dimensional internal carrier and defines no spatial sites or link variables\nper_mode: PASS | both factorwise and entangling-conjugate embedding modes have the same scalar commutant and one-dimensional center\nper_block: PASS | the combined embedding block has dimension above twelve and a resolved residual, proving the two invariant-equivalent embeddings are distinct\nlattice_wide: PASS | checked and not executed \u2014 the full finite carrier profile was executed, but no lattice gauging dynamics or global bundle selection was constructed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_gauging_selection_conjugation_independence_2026_06_16.txt against the .txt beside this log"
+  ]
+ }
+}

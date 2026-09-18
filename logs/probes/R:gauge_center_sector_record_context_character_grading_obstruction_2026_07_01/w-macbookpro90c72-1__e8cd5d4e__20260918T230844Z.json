@@ -1,0 +1,34 @@
+{
+ "task": "R:gauge_center_sector_record_context_character_grading_obstruction_2026_07_01",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py",
+ "seed": 72924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230844Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=56 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8b71cbeefb9e60bb79e2c8988923de392719465bb63ece684082eb4017414539",
+ "stdout_tail": "f no-go row\n  [PASS] F1 unaudited no-winding-carrier note is non-load-bearing context\nSection G: N5 execution certificate -- what this runner resolves\n  per_element: checked -- irreps are resolved one label at a time: the center identity is verified for each of (1,0), (0,1), (1,1), (2,0), (3,1), (2,2) at four torus points, each fusion channel of rule_F and rule_Fb is listed, and F.(1,0) carries raw labels {2, -1}.\n  per_site: checked and not executed -- no lattice site index exists in this runner; the only locality structure is the disjoint-region pair of E1, where the center acts as Delta x Delta and labels add mod 3, which is a region-level statement carrying no site geometry.\n  per_mode: checked -- the transfer vector is resolved mode by mode over the irrep cone: the full cone p+q <= 30 is compared against the retained sub-cone p+q <= 24 with drift at most 1.1e-16 at beta = 1, 6, 12, and the SU(2) ladder is carried out to spin n = 20.\n  per_block: checked -- the three center sectors are the blocks: P_k are orthogonal, idempotent and complete, P_k' J6 P_k vanishes unless k' = k +- 1 with no diagonal block at all, and each block carries strictly positive weight with Z_1 = Z_2 exactly at every beta.\n  lattice_wide: checked and not executed -- the transfer vector is a single exp(beta J/2) applied to the trivial irrep, not a lattice partition function; no volume, no multi-link geometry and no infinite-volume or continuum limit is formed at any point here.\nTOTAL: PASS=56 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

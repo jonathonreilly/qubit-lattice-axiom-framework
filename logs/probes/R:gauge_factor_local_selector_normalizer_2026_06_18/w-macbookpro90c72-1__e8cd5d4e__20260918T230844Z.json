@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_factor_local_selector_normalizer_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
+ "seed": 72924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230844Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c0987bcbf96e0bc4a01e5e77b96f2078d41d235c47078509dd1d0813e08dafaa",
+ "stdout_tail": "36\n[PASS] factor-algebra preservation constraints have nullity 12 inside u(6)\n       constraint_rank=24; nullity=12\n[PASS] every local generator preserves both factor observable algebras\n       max residual=1.855e-15\n[PASS] every nonzero su(3) x su(2) cross tensor fails factor-algebra preservation\n       minimum cross residual=4.000e+00\n[PASS] local factor-preserving span is Lie closed\n       max Lie residual=1.371e-15\n[PASS] su(3) x I_2 and I_3 x su(2) commute inside the selected local span\n       max commutator norm=0.000e+00\n[PASS] source-note firewall present: does **not** supply that physical bridge\n[PASS] source-note firewall present: It does not derive why gauge generators must preserve the factor observable\n[PASS] source-note firewall present: It does not derive chiral `su(2)_L`\n[PASS] source-note firewall present: It does not update audit ledgers\n[PASS] source note names parent as trace target without markdown back-edge\n[PASS] parent note records the factor-local normalizer addendum\n========================================================================\nSCORECARD PASS=14 FAIL=0\nVERDICT (exact-support boundary): on the supplied C^3 x C^2 carrier, factor-observable preservation has the unique 12-dimensional normalizer su(3)+su(2)+u(1). The 24 cross tensors are precisely the nonlocal complement to full u(6). This proves the finite algebra once a factor-local rule is supplied; it does not derive MR_color, the rule's physical source, chiral su(2)_L, or any audit status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230845Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_factor_local_selector_normalizer_2026_06_18.txt against the .txt beside this log"
+  ]
+ }
+}

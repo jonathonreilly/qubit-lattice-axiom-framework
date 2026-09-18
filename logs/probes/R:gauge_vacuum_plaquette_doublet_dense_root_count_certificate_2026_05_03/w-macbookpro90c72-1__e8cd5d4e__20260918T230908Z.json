@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.py",
+ "seed": 72948,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230908Z",
+ "elapsed_s": 29.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e691ff36d198dcdd87673ba213b1b7f2ef766c69069934fefebda3459a97c7b6",
+ "stdout_tail": "  root[1] residual_norm       = 1.592e-14\n   root[1] jacobian_sigmas     = [13.376154378, 1.081935978, 0.557547192]\n   root[1] n_seeds_clustered   = 42\n\n   wrote JSON certificate -> outputs/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.json\n\n  [PASS] Dense seed search returns exactly two distinct roots in the bounded chart  (count=2)\n  [PASS] Substantial fraction of seeds converge to a root in the bounded chart  (converged=2204/3660 = 0.6022)\n  [PASS] All converged seeds cluster onto the two distinct roots (no orphan cluster)  (sum_cluster=2204 == n_converged=2204)\n  [PASS] The two roots are well-separated as projective complement lines  (sep=1.143665)\n  [PASS] Each root is locally nondegenerate (min Jacobian singular value > 1e-3)  (min_sigma=0.252161)\n  [PASS] JSON certificate written to outputs/ for audit-packet inspection  (path=outputs/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.json)\n\n Honest scope of this certificate:\n   - With 3660 seeds at one seed per ~8.47e-03 rad^3, no additional\n     root was found beyond the documented two. This is empirical,\n     not symbolic, evidence for the bounded chart's root count.\n   - Strict symbolic / interval-arithmetic exhaustiveness remains\n     genuine open work and is NOT closed by this runner.\n\n================================================================================\n SUMMARY: PASS=6, FAIL=0\n================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.txt against the .txt beside this log"
+  ]
+ }
+}

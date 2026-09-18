@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_internal_link_contraction_derived_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_internal_link_contraction_derived_2026_06_12.py",
+ "seed": 72983,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230943Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3939a3fa7c172729a5941f9c0c4eb3edc51197c6ca84dbce92d4c1e3696bbe2c",
+ "stdout_tail": "derived strip readout reproduces the W38 dimension-stripped P value\n      P=0.439904783618901\nPASS: W38 full-character readout remains the distinct unselected finite branch\n      P_full=0.447034890458825, P_derived=0.439904783618901\n\n========================================================================================================\nPart 4: readout table\n========================================================================================================\n```text\nP(rho_word) = 0.434215413259920\nP(rho_strip derived internal-link convention) = 0.439904783618901\nP(W38 full-character branch, unselected here) = 0.447034890458825\nP_strip_derived - P_word = 0.005689370358981\nrho_derived(1,0) = 0.573562917034962\nrho_derived(1,1) = 0.204646875517536\n```\nPASS: one-word anchor reproduces the W38 finite value\n      P_word=0.434215413259920, residual=1.665e-16\nPASS: derived two-strip value is finite and inside the source anchor interval\n\n========================================================================================================\nPart 5: note hygiene\n========================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note states the derived branch as dimension-stripped\nPASS: note keeps context refs as plain-text paths\nPASS: note avoids banned status/overreach phrases\nPASS: runner names the remaining full-tensor normalization object without using it\n\nTOTAL: PASS=32, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230944Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_internal_link_contraction_derived_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

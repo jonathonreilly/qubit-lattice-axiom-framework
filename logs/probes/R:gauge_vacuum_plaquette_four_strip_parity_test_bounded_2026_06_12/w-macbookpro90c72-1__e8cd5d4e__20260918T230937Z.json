@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_plaquette_four_strip_parity_test_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_four_strip_parity_test_bounded_2026_06_12.py",
+ "seed": 72977,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230937Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f96d03b89d52c818e4e6b73d4c7dfc396c7824f93c2b897a759a546657c0c636",
+ "stdout_tail": "ed two-sided tail bracket = [0.441391418390689, 0.443683201450925]\n  bracket note: measured from P(3) and P(4) only; no extrapolation\n  |P(1) - 0.5934| = 0.159184586740080\n  |P(2) - 0.5934| = 0.146365109541175\n  |P(3) - 0.5934| = 0.152008581609311\n  |P(4) - 0.5934| = 0.149716798549075\n```\nPASS: dimension-stripped ladder diagnostics are finite\nPASS: full-character control ladder diagnostics are finite\nPASS: dimension-stripped even and odd subsequence monotonicity gates pass as measured\nPASS: dimension-stripped measured tails move toward each other\nPASS: dimension-stripped measured bracket is ordered\nPASS: dimension-stripped density diagnostic is finite\n\n================================================================================================================\nPart 6: note hygiene\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: note uses durable repo context pointers instead of branch-local temp refs\nPASS: note avoids overreach closure language\nNamed residuals: finite four-strip width rung; finite B4 weight box; finite Bessel support; product-orientation internal-link contraction; future all-link 6j/intertwiner normalization; strip-depth direction; wider slab limit; 3D stack; L_perp limit; analytic P(6); no repinning.\nPASS: runner names residuals without retiring them\n\nTOTAL: PASS=45, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230939Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_plaquette_four_strip_parity_test_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

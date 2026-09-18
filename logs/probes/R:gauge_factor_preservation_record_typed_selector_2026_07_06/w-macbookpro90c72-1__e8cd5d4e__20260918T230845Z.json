@@ -1,0 +1,36 @@
+{
+ "task": "R:gauge_factor_preservation_record_typed_selector_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_factor_preservation_record_typed_selector_2026_07_06.py",
+ "seed": 72925,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230845Z",
+ "elapsed_s": 1.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=7 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2b14031aa5f68303d7e90787b45d845e61ae5cd0497eabaec50880ba4543fa7a",
+ "stdout_tail": "[PASS] u6_dim_36_exact\n[PASS] factorwise_dim_12_center_overlap\n[PASS] stabilizer_equals_factorwise_both_containments\n[PASS] decomposition_bookkeeping_exact\n[PASS] lie_structure_closure_cross_zero_abelian_central\n[PASS] killing_form_nondegenerate_block_diagonal\n[FAIL] quoted_source_sentences_text_audit\n[PASS] ast_self_scan_readonly_no_network_no_subprocess\nDECLARATION premises=minimal_axioms_context; REGISTERED-FACTOR(named conditional, not axiom content); supplied C^3 tensor C^2 model surface; exact finite matrix algebra\nDIMENSIONS u6=36 factorwise=12 stabilizer=12 su3=8 su2=3 semisimple=11 abelian_image=1 relative_identity_kernel=1\nTOTAL PASS=7 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230846Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

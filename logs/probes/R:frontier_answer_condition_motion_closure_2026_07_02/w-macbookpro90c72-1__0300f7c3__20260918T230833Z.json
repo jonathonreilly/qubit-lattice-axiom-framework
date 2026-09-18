@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_answer_condition_motion_closure_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_answer_condition_motion_closure_2026_07_02.py",
+ "seed": 72912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0300f7c3",
+ "started_utc": "20260918T230833Z",
+ "elapsed_s": 1.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a873d74d41387d4668975ceacb91c932d02e8a940f44c6e60f007b94d1a618b2",
+ "stdout_tail": "ain\nCHECK 13: PASS \u2014 two verdict objects at one in-domain state are rejected\nCHECK 14: PASS \u2014 absence-referencing predicate is statewise and well-defined\nCHECK 15: PASS \u2014 non-state-dependent condition has no state set\nCHECK 16: PASS \u2014 readability is exercised on values only, not condition domains\nCHECK 17: PASS \u2014 motion action preserves statehood under the covariant admissibility rule\nCHECK 18: PASS \u2014 N=3 lattice has six distinct nearest neighbors per site\nCHECK 19: PASS \u2014 sampled N=3 states: statehood and pattern closure under proper, sign-bearing, and translated motions\nCHECK 20: PASS \u2014 pattern condition 'some site carries a record' is motion-closed\nCHECK 21: PASS \u2014 pattern condition 'a record has a record-free neighbor' is motion-closed\nCHECK 22: PASS \u2014 pattern condition 'the unique record has possibility p' is motion-closed\nCHECK 23: PASS \u2014 per-site universally quantified structural rule is motion-closed\nCHECK 24: PASS \u2014 bare site anchor fails motion closure and is recoverable from its own extension\nCHECK 25: PASS \u2014 rigid state-list fails motion closure while the empty singleton is the honest exception\nCHECK 26: PASS \u2014 co-extensional toy conditions receive identical axiom-expressible verdicts\nCHECK 27: PASS \u2014 vocabulary-sensitive judge requires a condition attribute no axiom text supplies\nCHECK 28: FAIL \u2014 note contains boundary phrases for adjudication, procedure, escape, and genericity\nCHECK 29: PASS \u2014 note avoids disallowed audit-result vocabulary\nTOTAL: PASS=26 FAIL=3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230834Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

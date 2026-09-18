@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py",
+ "seed": 72914,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0300f7c3",
+ "started_utc": "20260918T230834Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=69 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47e7e696e868e950f8b8cdd633b07ee76bced8fbfca9d3c3e340b31c69c53b30",
+ "stdout_tail": "ow_repair_verifier.py\nPASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt exits zero -- exit_code=0\nPASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt status ok -- status=ok\nPASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt sha matches source -- cache=a6e0a2a2fb580072c6af6bbc07c8ebd00a5d9c26773156fa0c0e620ef8bff0e1, live=a6e0a2a2fb580072c6af6bbc07c8ebd00a5d9c26773156fa0c0e620ef8bff0e1\nPASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt contains 'PASS=28'\nPASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt contains 'FAIL=0'\nPASS logs/runner-cache/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt contains 'All checks passed'\nPASS note cites cache frontier_atomic_hydrogen_lattice_companion.txt\nPASS note cites cache frontier_atomic_helium_hartree_companion.txt\nPASS note cites cache frontier_atomic_helium_jastrow_companion.txt\nPASS note cites cache frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.txt\nPASS note leaves status authority external\nPASS note says no status lift\n========================================================================\nTOTAL: PASS=69 FAIL=0\nPacket visibility is complete; audit/review owns status movement.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

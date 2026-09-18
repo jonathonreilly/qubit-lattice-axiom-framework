@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_invariant_effect_instrument_generator_boundary_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py",
+ "seed": 72926,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T230846Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=85 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f0165544564afbe7529f4608f1909d905f5dec9a189b1342ef03fd5cb803f6e9",
+ "stdout_tail": "ng\nPASS SU3 electric Casimir is unbounded by formula :: C2(100,0)=10300/3\nPASS one Wilson plaquette multiplier is nonzero and nonconstant\nPASS sampled Wilson deficits respect the analytic magnetic bound\nPASS Wilson tangent Hessian beta=6 :: coef=1\nPASS Wilson tangent Hessian beta=24 :: coef=4\nPASS supplied unit Hessian condition locates beta=2Nc=6\nSUMMARY\nCOMMUTANT_NULLITY=2\nINVARIANT_EFFECT_CONE={(a,b): 0<=a,b<=1}\nSHARP_NONTRIVIAL_EFFECTS={P3,P1} up to labels\nREPEATABLE_COVARIANT_INSTRUMENTS=continuum(lambda in [0,1])\nHAMILTONIAN_RELATIVE_COEFFICIENT=free(g^2>0) on the stated nondegenerate full-L2 domain\nRAW_EB_SAME_CARRIER_DUALITY=excluded with at least one edge on full L2\nWILSON_UNIT_HESSIAN_CONDITION=>beta=2Nc=6 (supplied condition, not a derived tick law)\nper_element: checked \u2014 canonical generator Gram, invariant effects, Choi positivity, center bound, and identity-tangent Wilson Hessian\nper_site: checked \u2014 the supplied 3+1 carrier instrument was tested for completeness, repeatability, covariance, and distinct post-states\nper_mode: checked and not executed \u2014 no momentum-space mode or continuum spectral claim is made by this finite-carrier packet\nper_block: checked \u2014 exact coefficient algebra, degenerate-domain controls, and spectral witnesses support the stated nondegenerate lift\nlattice_wide: checked and not executed \u2014 no reduced/truncated physical carrier, thermodynamic, continuum, confinement, mass-gap, or full Standard Model claim was simulated\nTOTAL: PASS=85 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

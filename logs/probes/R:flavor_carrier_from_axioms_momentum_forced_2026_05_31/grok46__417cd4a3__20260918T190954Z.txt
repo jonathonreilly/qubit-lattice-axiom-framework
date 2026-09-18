@@ -1,0 +1,41 @@
+[PASS] A1 the 3 hw=1 corners carry DISTINCT joint translation characters (-1,1,1),(1,-1,1),(1,1,-1)
+       characters = [(1, 1, -1), (1, -1, 1), (-1, 1, 1)] (joint spectrum of commuting T_x,T_y,T_z)
+[PASS] A2 C_3[111] axis-shift acts transitively on the hw=1 triplet (a single 3-orbit)
+       R-permutation = [2, 0, 1]
+[PASS] A3 supplied hw=1 characters have uniform site profiles and projector row delta_(k0,k)
+       <P_site0>=[0.125, 0.125, 0.125]; <P_k0>=[1.0, 0.0, 0.0]
+[PASS] B1 naive/first-order |D|^2=sum sin^2(k) has all 8 corners as zeros with grading (1,3,3,1)
+       zeros=8, Hamming multiplicities [1, 3, 3, 1]
+[PASS] B2 displayed Wilson/2nd-difference comparison has staircase (0,2r,4r,6r)
+       Wilson mass by hw = {0:0, 1:2, 2:4, 3:6} on this supplied comparison operator
+[PASS] C1 delta=L_3(1,2)=2/9 (equivariant-eta/Atiyah-Bott density), distinct from the bare doublet character omega+omega^2=-1
+       L_3(1,2)=0.222222; bare char=-1.0
+[PASS] D1 derive Q(F)=Tr(F^2)/Tr(F)^2 = 1/3 + (2/3)b^2/a^2 for real F=aI+b(J-I)
+       Tr F=3*a_sym, Tr F^2=3*a_sym**2 + 6*b_sym**2, Q=(a_sym**2 + 2*b_sym**2)/(3*a_sym**2)
+[PASS] D2 basepoint r=b^2/a^2 is FREE: r=1/2->Q=2/3, r=1->Q=1; unconstrained by corner kinematics
+       discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input
+[PASS] E0 parent source declares the canonical open_gate author hint
+       source metadata keeps the combined parent open
+[PASS] E1 parent note records the 2026-07-18 positive-scope repair
+       source-side narrowing section present
+[PASS] E2 parent delegates exact finite character formulas to the 2026-06-15 theorem
+       the historical path now carries a positive finite theorem
+[PASS] E3 parent keeps physical locus, r, and readout identification outside the finite theorem
+       physical integrations remain open
+[PASS] E4 parent assigns no physical interpretation to the finite equalities
+       finite algebra and physical interpretation remain distinct
+[PASS] E5 comparison formulas are conditional-route context rather than route exhaustion
+       the parent makes no alternative-route foreclosure
+[PASS] E6 finite theorem states positive_theorem scope and its authority limit
+       finite theorem remains an abstract positive construction
+
+SCORECARD PASS=15 FAIL=0
+SUMMARY: Layer A is the exact finite translation-character profile/projector construction.
+The supplied hw=1 characters have uniform 1/8 profiles, distinct joint characters, a transitive
+C_3 orbit, and the displayed Kronecker projector row. These equalities assign no physical role.
+Layer B records one conditional staggered/Kawamoto-Smit route and two finite operator comparisons;
+it does not exhaust physical routes or select the supplied hw=1 subset as a physical generation locus.
+BASEPOINT r=1/2 and the density/readout identification remain separate open inputs.
+Sources: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+(BlockT1 + {epsilon,D}=0), KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md,
+and KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md.

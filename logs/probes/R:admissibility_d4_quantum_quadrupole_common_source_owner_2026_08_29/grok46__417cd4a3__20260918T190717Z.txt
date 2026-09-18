@@ -1,0 +1,12 @@
+PASS: normalized rank-five moment identity | (1, 5, 5)
+PASS: uniform Bloch-domain probability floors | ((4/3, 4/3, 4/3), (1, 1, 1), 1/18, 1/64)
+PASS: all 24 simultaneous address/Bloch frames | 24
+PASS: exact H1 and H2 preparations and source moment | {'H1': (27/32, sqrt(2)/16 + 3/16, True, True), 'H2': (27*sqrt(3)/128 + 81/128, 3*sqrt(2)/64 + sqrt(3)/16 + 3/16, True, True)}
+PASS: all 32 vertices of the five-parameter box | (27/128, 9/128)
+PASS: mixtures differ from fixed pure outcome menu | Q=0: auxiliary mixtures I/2; fixed outcomes pure
+TOTAL: 6 passed, 0 failed
+per_element: exact finite matrix, coefficient or probability predicates named above were executed.
+per_site: supplied six-neighbor condition identities only; no generated physical-site update executed.
+per_mode: checked and not executed — no universal momentum or dynamical mode campaign is claimed.
+per_block: finite conditional source, carrier or channel scope is exactly the named predicates above.
+lattice_wide: checked and not executed — no whole-stencil dynamics, infinite history or physical selection is claimed.

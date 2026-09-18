@@ -1,0 +1,17 @@
+15 | two-link defects | runner: labels=list(combinations(range(6),2));degrees=[sum(not(set(a)&set(c))for c in labels)for a in labels];check(degrees==[6] | OK
+90 | ordered disjoint pairs | runner: for x in r['rows']:integer(x['ordered_words'],90) | OK
+6 | ||T|| / adjacency degree | runner: PACK=ROOT/'.claude/science/physics-loops/native-finite-moment-ward-20260910' | OK
+8 | 8α / J*J=8h^2 | runner: for x in [w['rss_bytes'],a['external_rss_bytes'],a['sampled_whole_tree_peak'],rr['sampled_whole_tree_peak']]:need(type(x | OK
+h/4 | δ | note: Use the original supplied infinite Gaussian reference, CAR and normalization of the [direct overlap note](NATIVE_WARD_DI | OK
+2√2 | j | note: e_A=r_A/δ,   f_A=(j e_A+t_A)/δ,   j=2√2h. | OK
+31/128 | ellipse positivity | note: The existing catalog has1742 Gauss nodes and3484 endpoint oracle evaluations, each returning A and A′. No new oracle was | OK
+1742 | Gauss nodes | runner: for key,v in [('nodes',1742),('panels',67),('moments_count',41),('tail_terms',40),('endpoint_oracles_reused',3484),('ora | OK
+3484 | endpoint oracles | runner: for key,v in [('nodes',1742),('panels',67),('moments_count',41),('tail_terms',40),('endpoint_oracles_reused',3484),('ora | OK
+67 | panels | runner: for key,v in [('nodes',1742),('panels',67),('moments_count',41),('tail_terms',40),('endpoint_oracles_reused',3484),('ora | OK
+2^{-64} | ε | NOT IN RUNNER OR NOTE LINE | UNSOURCED
+1904 | conservative radius prefactor | note: The existing catalog has1742 Gauss nodes and3484 endpoint oracle evaluations, each returning A and A′. No new oracle was | OK
+4^{-52} | radius power | NOT IN RUNNER OR NOTE LINE | UNSOURCED
+10^{-24} | width target | runner: need(r['observable']=='omega5=E_X_power_5_over_2' and r['target']=='1/1000000000000000000000000') | OK
+205 | saved events | runner: for key,v in [('choices',2),('events',205),('oracle_calls',0),('new_covariance_calls',0)]:integer(r[key],v) | OK
+SUMMARY: 15 numbers, 2 unsourced; no logs/runner-cache on PR branch
+HIT: unsourced numbers

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_refinement_census_stationary_kernel_2026_08_21",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_dirac_kahler_refinement_census_stationary_kernel_2026_08_21.py",
+ "seed": 58437,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190717Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 8/40 vs runner-cache [batch 8/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1dd5214309e058342f914b2300d82fe7c891415cb78354dacccfaff861109c53",
+ "stdout_tail": "533150774904045696188713102422756316253802139695616126220516427754409667668992233860466273781942274628470559681963053279772202408014148541000077550998320308014218589480764868100208989906347820079929478212559114750684963020843568122937601340029332753365205375938230916527381726523538179066783115529211458385527082391025130661765091727987086301157688814390219358359034141353549408622694459423958307049303274620266605212338931701), ('b172_8x4', -279188079176821360070364731995624308312943804328405460266917967545957203693967050623810894045312873160691072269457490659459593953181246841926948440878173648227513566538392032488251206385134095972502655789467562231/2293228572029935882309151794329353340545247995630032732856064587943965186993672219525541845845415193111071644107399658675603507434881153584370190066894177539568399567887511379544156693722913054270768916570235684166)]; positive weights (3,1,1) give the opposite sign\n[PASS] E-reciprocal-intervals: N=floor(1/|delta|) gives strict-lower/weak-upper brackets=[('b172_12x4', (16, 1/17, 1/16)), ('b172_8x4', (8, 1/9, 1/8))]\n[PASS] F-density-phase-order: PSD trace-one complex example gives -6/25 with phi*rho_ij+conj(phi)*rho_ji; the real slice gives 6/25\n[PASS] G-positive-diagonal-is-not-PSD: [[1,2],[2,1]] has positive diagonal, determinant -3, and inertia (1,0,1)\n[PASS] H-exact-bounded-scope: two finite tables, two finite defects, and two-state density identities only; no deep census, global refinement verdict, or axiom\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

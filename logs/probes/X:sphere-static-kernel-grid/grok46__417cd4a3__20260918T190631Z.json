@@ -1,0 +1,55 @@
+{
+ "task": "X:sphere-static-kernel-grid",
+ "type": "scan",
+ "lane": "admissibility-block29",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/block29_kernel.py 8 600 150 0.8 1.0 1.5 2.0",
+ "seed": 58391,
+ "minutes": 10,
+ "box": "8x8x8",
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190631Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "m": [
+   [
+    "0.80",
+    "0.5598"
+   ],
+   [
+    "1.00",
+    "0.7045"
+   ],
+   [
+    "1.50",
+    "0.8275"
+   ],
+   [
+    "2.00",
+    "0.8774"
+   ]
+  ],
+  "kernel": [
+   "1.112 0.966 1.041 0.954",
+   "1.019 0.970 0.990 1.008",
+   "0.930 0.932 0.983 0.930",
+   "0.946 0.895 0.988 0.944"
+  ]
+ },
+ "review": "L=8: beta E S_perp ~0.93-1.11 at beta 0.8-2.0 vs bounds (m^2/3)^2..1; first mode 1.112 at beta 0.8 slightly above 1. Scan table, not a HIT",
+ "what": "block 29's kernel normalization measurement in the ordered sphere static law on the L^3 torus: beta E(k) S_perp(k) against the bounds (m^2/3)^2 .. 1 (block 19). Fill the grid L in {8, 12, 16, 24}, beta in {0.8, 1.0, 1.5, 2.0, 3.0, 6.0}; run e.g. --L 16 --extra '4000 1000 1.0 2.0 3.0' (sweeps, thermalisation, betas). Value: the table; no hit pattern (a value above 1 is reported to the reviewer as a HIT by hand).",
+ "stdout_sha256": "fb51835e487a4fd67b893b4cebea944b59f4e4224a191c74ca716562ef5516c1",
+ "stdout_tail": "sphere static law, L=8, sweeps=600 (thermalisation 150); k = 2 pi n/L along e_1; E(k) = 2(1 - cos k)\n  beta=0.80: m = 0.5598, m^2 = 0.3133, (m^2/3)^2 = 0.0109   (0s)\n    n  beta E(k) S_perp(k): 1.112 0.966 1.041 0.954\n    T(r) r=0..8: 0.2674 0.0695 0.0191 0.0040 -0.0001\n  beta=1.00: m = 0.7045, m^2 = 0.4963, (m^2/3)^2 = 0.0274   (0s)\n    n  beta E(k) S_perp(k): 1.019 0.970 0.990 1.008\n    T(r) r=0..8: 0.2130 0.0550 0.0144 0.0027 -0.0005\n  beta=1.50: m = 0.8275, m^2 = 0.6848, (m^2/3)^2 = 0.0521   (0s)\n    n  beta E(k) S_perp(k): 0.930 0.932 0.983 0.930\n    T(r) r=0..8: 0.1437 0.0368 0.0105 0.0024 0.0005\n  beta=2.00: m = 0.8774, m^2 = 0.7698, (m^2/3)^2 = 0.0658   (0s)\n    n  beta E(k) S_perp(k): 0.946 0.895 0.988 0.944\n    T(r) r=0..8: 0.1080 0.0281 0.0080 0.0021 0.0004\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

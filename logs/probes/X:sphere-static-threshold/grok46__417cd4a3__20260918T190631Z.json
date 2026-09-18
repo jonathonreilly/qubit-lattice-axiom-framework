@@ -1,0 +1,38 @@
+{
+ "task": "X:sphere-static-threshold",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/scan_static_sphere.py 12 300 0.60 0.66 0.70 0.72 0.76",
+ "seed": 58391,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190631Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  beta=0.600: |m| = 0.0931   (0s)",
+   "  beta=0.660: |m| = 0.1837   (0s)",
+   "  beta=0.700: |m| = 0.3278   (0s)",
+   "  beta=0.720: |m| = 0.4048   (0s)",
+   "  beta=0.760: |m| = 0.4960   (0s)"
+  ]
+ },
+ "review": "L=12 300 sweeps: |m| = 0.09,0.18,0.33,0.40,0.50 at beta 0.60,0.66,0.70,0.72,0.76; rising through block 28's (0.66,0.72) window. Scan table, not a HIT",
+ "what": "block 28's static sphere scan; located beta in (0.66, 0.72); extend sizes.",
+ "stdout_sha256": "8270a2985ea048b9a470f91f9a4ddce29b11e62c1554a843293bc011c77a4175",
+ "stdout_tail": "sphere static law, L=12, sweeps=300; |m| over the last half, aligned start\n  beta=0.600: |m| = 0.0931   (0s)\n  beta=0.660: |m| = 0.1837   (0s)\n  beta=0.700: |m| = 0.3278   (0s)\n  beta=0.720: |m| = 0.4048   (0s)\n  beta=0.760: |m| = 0.4960   (0s)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

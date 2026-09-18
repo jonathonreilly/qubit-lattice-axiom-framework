@@ -1,0 +1,36 @@
+{
+ "task": "P:8081",
+ "type": "pr-reexecution",
+ "lane": "native-correlated-ward-20260910",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8081",
+ "pr": 8081,
+ "branch": "codex/native-correlated-ward-20260910",
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190652Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/native_correlated_ward_certificates_2026_09_10.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=241 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 8081 isolated worktree: TOTAL PASS=241 FAIL=0, not a HIT",
+ "stdout_sha256": "91cf576ff3a057361fd84a8bd598c4ffac623c250aaac061068eb5117d2ebf60",
+ "stdout_tail": "PR #8081: [physics-loop] Correlated native Ward bounds (conditional-support)\nbranch codex/native-correlated-ward-20260910 (base codex/native-stronger-ward-20260910)\nrunners in the PR: 1\n== scripts/native_correlated_ward_certificates_2026_09_10.py: rc=0 TOTAL: PASS=241 FAIL=0",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

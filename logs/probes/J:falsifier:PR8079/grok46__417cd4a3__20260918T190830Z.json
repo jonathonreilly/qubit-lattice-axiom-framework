@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/falsifier_ellipse_q5.py",
+ "seed": 58510,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190830Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PR8079 ellipse/Q5/adjacency falsifier did not fire: 31/128, 15 defects of degree 6 summing to 90, and the Q5 polynomial-division identity at 20 test points"
+ },
+ "review": "Independent Fraction checks: ellipse=31/128, 15 defects of degree 6 sum to 90, Q5 division identity at 20 points; falsifier did not fire",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "415e74d14a98385f59821c8ca4ecb5b781af835eb97c74db20b33ec9dc37f642",
+ "stdout_tail": "ellipse (3/2)^2-(17/16)^2-(15/16)^2 = 31/128\ntwo-link defects 15; degrees [6, 6, 6]...; sum 90\n(2\u221a2)^2 = 8 holds\nSUMMARY: PR8079 ellipse/Q5/adjacency falsifier did not fire: 31/128, 15 defects of degree 6 summing to 90, and the Q5 polynomial-division identity at 20 test points\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

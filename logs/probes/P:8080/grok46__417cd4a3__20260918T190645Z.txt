@@ -1,0 +1,4 @@
+PR #8080: [physics-loop] Stronger native Ward bounds (conditional-support)
+branch codex/native-stronger-ward-20260910 (base codex/native-finite-moment-ward-20260910)
+runners in the PR: 1
+== scripts/native_stronger_ward_estimators_2026_09_10.py: rc=0 TOTAL: PASS=28 FAIL=0

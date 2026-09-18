@@ -1,0 +1,4 @@
+PR #8081: [physics-loop] Correlated native Ward bounds (conditional-support)
+branch codex/native-correlated-ward-20260910 (base codex/native-stronger-ward-20260910)
+runners in the PR: 1
+== scripts/native_correlated_ward_certificates_2026_09_10.py: rc=0 TOTAL: PASS=241 FAIL=0

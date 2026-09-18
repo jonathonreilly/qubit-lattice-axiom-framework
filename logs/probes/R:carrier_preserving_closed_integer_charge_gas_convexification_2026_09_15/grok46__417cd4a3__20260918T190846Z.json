@@ -1,0 +1,35 @@
+{
+ "task": "R:carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "carrier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+ "seed": 58526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190846Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 8/40 vs runner-cache [batch 8/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b741ae03237f2d25514869404c86f4080987abb148a21a8f23cb5796a6612c71",
+ "stdout_tail": "80359,\n      \"positive_variance_term\": 0.004084113311877866,\n      \"combined\": -1.0925723867294401e-11,\n      \"direct_charge_curvature\": -1.092560619106681e-11,\n      \"error\": 1.176762275918418e-16\n    },\n    {\n      \"beta\": 2.0,\n      \"sigma\": 0.13,\n      \"mean_curvature\": -0.004084106887846092,\n      \"positive_variance_term\": 0.0040841068803669014,\n      \"combined\": -7.479190877734965e-12,\n      \"direct_charge_curvature\": -7.479092098613607e-12,\n      \"error\": 9.877912135759783e-17\n    },\n    {\n      \"beta\": 2.0,\n      \"sigma\": 0.37,\n      \"mean_curvature\": -0.004084103720664137,\n      \"positive_variance_term\": 0.004084103728143397,\n      \"combined\": 7.479259399312266e-12,\n      \"direct_charge_curvature\": 7.479092098613227e-12,\n      \"error\": 1.6730069903834468e-16\n    }\n  ]\n}\nTOTAL: PASS=6 FAIL=0\nper_element: executed exact exterior derivatives and closure in six carrier-cancellation examples in3D and4D.\nper_site: executed positive theta kernels, Poisson Hessians and multiprecision action differences; positive kernels can coexist with negative effective curvature.\nper_mode: executed finite Gaussian covariance splits and precision series, plus Eulerian moment-tail polynomial identities.\nper_block: executed hard-core graph indices and source Gaussian quadratures with the positive source-variance term retained.\nlattice_wide: checked and not executed: infinite rooted cluster sums, arbitrary integer fillings and volume-uniform convexity rely on the written analytic hypotheses.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt against the .txt beside this log"
+  ]
+ }
+}

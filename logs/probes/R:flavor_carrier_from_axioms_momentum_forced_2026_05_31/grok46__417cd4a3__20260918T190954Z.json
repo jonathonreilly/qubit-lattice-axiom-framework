@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_carrier_from_axioms_momentum_forced_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
+ "seed": 58594,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190954Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 8/40 vs runner-cache [batch 8/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "210c1f1e57e1649e514d4d0ddd14ae0b171ae917ec44c3b07a17156d8dd0424a",
+ "stdout_tail": "mulas to the 2026-06-15 theorem\n       the historical path now carries a positive finite theorem\n[PASS] E3 parent keeps physical locus, r, and readout identification outside the finite theorem\n       physical integrations remain open\n[PASS] E4 parent assigns no physical interpretation to the finite equalities\n       finite algebra and physical interpretation remain distinct\n[PASS] E5 comparison formulas are conditional-route context rather than route exhaustion\n       the parent makes no alternative-route foreclosure\n[PASS] E6 finite theorem states positive_theorem scope and its authority limit\n       finite theorem remains an abstract positive construction\n\nSCORECARD PASS=15 FAIL=0\nSUMMARY: Layer A is the exact finite translation-character profile/projector construction.\nThe supplied hw=1 characters have uniform 1/8 profiles, distinct joint characters, a transitive\nC_3 orbit, and the displayed Kronecker projector row. These equalities assign no physical role.\nLayer B records one conditional staggered/Kawamoto-Smit route and two finite operator comparisons;\nit does not exhaust physical routes or select the supplied hw=1 subset as a physical generation locus.\nBASEPOINT r=1/2 and the density/readout identification remain separate open inputs.\nSources: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md\n(BlockT1 + {epsilon,D}=0), KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md,\nand KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

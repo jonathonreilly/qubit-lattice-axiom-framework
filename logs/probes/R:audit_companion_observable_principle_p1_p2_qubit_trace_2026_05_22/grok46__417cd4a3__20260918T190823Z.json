@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
+ "seed": 58503,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190823Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 8/40 vs runner-cache [batch 8/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "be26592fe825c586f3c305c07a1a85fc5cfe0c4313315bdc439a1d13171c416b",
+ "stdout_tail": "------\nT8: CPT-equivariance shape check Tr(Theta^-1 exp(-(H+J)) Theta) = Tr(exp(-(H+J')))\n----------------------------------------------------------------------------------------\n  [PASS] Tr((exp(-(H+J)))*) = Tr(exp(-(H + J*))) for real H + Hermitian J (complex-conjugation Theta numeric check)  (|lhs - rhs| = 0.000e+00)\n  [PASS] |Z[J]| = |Z[Theta J Theta^{-1}]| (modulus equivariance, numeric)  (|Z| = 8.799958, |Z_T| = 8.799958)\n\n----------------------------------------------------------------------------------------\nT9: source-note boundary check (claim type, status authority, no overclaim)\n----------------------------------------------------------------------------------------\n  [PASS] all required source-note boundary strings are present  (all present)\n  [PASS] no forbidden declarative overclaim phrases present in the source note  (none)\n\n----------------------------------------------------------------------------------------\nT10: independence \u2014 [J_A (x) I, I (x) J_B] = 0 (microcausality input)\n----------------------------------------------------------------------------------------\n  [PASS] J_A is Hermitian (symbolic)\n  [PASS] J_B is Hermitian (symbolic)\n  [PASS] [J_A (x) I, I (x) J_B] = 0 for arbitrary 2x2 Hermitian J_A, J_B (exact symbolic, disjoint-register microcausality)\n\n========================================================================================\nTOTAL: PASS=23 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190824Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.txt against the .txt beside this log"
+  ]
+ }
+}

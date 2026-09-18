@@ -1,0 +1,6 @@
+sphere static law, L=12, sweeps=300; |m| over the last half, aligned start
+  beta=0.600: |m| = 0.0931   (0s)
+  beta=0.660: |m| = 0.1837   (0s)
+  beta=0.700: |m| = 0.3278   (0s)
+  beta=0.720: |m| = 0.4048   (0s)
+  beta=0.760: |m| = 0.4960   (0s)

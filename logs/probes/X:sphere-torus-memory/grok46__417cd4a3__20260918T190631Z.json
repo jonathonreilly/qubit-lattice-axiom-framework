@@ -1,0 +1,39 @@
+{
+ "task": "X:sphere-torus-memory",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/sphere_torus_msd.py 6 16 8000 4",
+ "seed": 58391,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "417cd4a3",
+ "started_utc": "20260918T190631Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "ratios": [
+   "1.331",
+   "1.362",
+   "1.356",
+   "1.286",
+   "1.287",
+   "1.259"
+  ]
+ },
+ "review": "beta=6 L=16 T=8000 seeds=4: D1/(sigma^2/L^2)=1.33 at lag 25 (block 34 quoted 1.34 at beta 6); linear model ~1.04. Scan table, not a HIT",
+ "what": "block 34's angular-diffusion estimator: --extra 'beta L T seeds' (e.g. '6 32 100000 8'); reports D_1/(sigma^2/L^2) at several lags (block 34: 1.34, 1.14, 1.06, 1.02 at beta 6/12/24/48, ~1/|m|^2). Fill the (beta, L) table: beta in {3,4,6,8,12,16,24,48}, L in {16,32,64}.",
+ "stdout_sha256": "abd2e4c757cfbcf2afd2329ce1c0ba2d9304217842e745be685bc8fd95a57f07",
+ "stdout_tail": "beta=6.0 L=16 T=8000 seeds=4 (3s): sigma^2/L^2 = 2.0496e-04; memory time 4879; mean |m| in the stationary regime 0.8442\n  lag    25: nonlinear MSD 1.3638e-02 -> D_1 = 2.7276e-04 (ratio to sigma^2/L^2: 1.331 +- 0.029); linear model MSD 1.0644e-02 (ratio 1.039 +- 0.014)\n  lag    50: nonlinear MSD 2.7921e-02 -> D_1 = 2.7921e-04 (ratio to sigma^2/L^2: 1.362 +- 0.024); linear model MSD 2.0849e-02 (ratio 1.017 +- 0.020)\n  lag   100: nonlinear MSD 5.5599e-02 -> D_1 = 2.7800e-04 (ratio to sigma^2/L^2: 1.356 +- 0.013); linear model MSD 4.2201e-02 (ratio 1.030 +- 0.020)\n  lag   200: nonlinear MSD 1.0547e-01 -> D_1 = 2.6367e-04 (ratio to sigma^2/L^2: 1.286 +- 0.076); linear model MSD 8.1936e-02 (ratio 0.999 +- 0.042)\n  lag   400: nonlinear MSD 2.1095e-01 -> D_1 = 2.6369e-04 (ratio to sigma^2/L^2: 1.287 +- 0.105); linear model MSD 1.6081e-01 (ratio 0.981 +- 0.091)\n  lag  1000: nonlinear MSD 5.1619e-01 -> D_1 = 2.5809e-04 (ratio to sigma^2/L^2: 1.259 +- 0.124); linear model MSD 3.3330e-01 (ratio 0.813 +- 0.163)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T190900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

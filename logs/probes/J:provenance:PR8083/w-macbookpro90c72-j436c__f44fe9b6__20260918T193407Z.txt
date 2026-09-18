@@ -1,0 +1,40 @@
+1.3838 | residual E upper (4 dp) | note: | residual | 1.3838 | 66.6052 | [-465.2922, 609.3813] | | OK
+66.6052 | residual F upper (4 dp) | note: | residual | 1.3838 | 66.6052 | [-465.2922, 609.3813] | | OK
+-465.2922 | residual alpha lo (4 dp) | note: | residual | 1.3838 | 66.6052 | [-465.2922, 609.3813] | | OK
+609.3813 | residual alpha hi (4 dp) | note: | residual | 1.3838 | 66.6052 | [-465.2922, 609.3813] | | OK
+1.1428 | variational E upper (4 dp) | note: | variational | 1.1428 | 66.7061 | [-468.7459, 629.7689] | | OK
+66.7061 | variational F upper (4 dp) | note: | variational | 1.1428 | 66.7061 | [-468.7459, 629.7689] | | OK
+-468.7459 | variational alpha lo (4 dp) | note: | variational | 1.1428 | 66.7061 | [-468.7459, 629.7689] | | OK
+629.7689 | variational alpha hi (4 dp) | note: | variational | 1.1428 | 66.7061 | [-468.7459, 629.7689] | | OK
+1/4 | δ in D≥δI and quartic envelope | note: Use the supplied dimensionless bound \(D\ge\delta I\), with \(\delta=1/4\). For positive rational \(t,u\), define | OK
+15 | unordered pairs with repetition from {1,2,4,8,16} | note: Repeated parameters cause no singularity. The final fixed schedule uses all fifteen unordered pairs with repetition from \(\{1,2,4,8,16\}\). | OK
+60 | fixed quartic candidates (15×2 modes×2 P/O) | note: The minimum over the fifteen valid upper bounds and the retained same-trial gap alternative is valid. No accepted trial is reoptimized or re | OK
+√8 | F_A bound √8 E_A | note: F_A\le\delta^{-1}\bigl(\sqrt8 E_A+\sqrt{t_A^2}\bigr). | OK
+12 | P channels combined by sums of squares | note: Combine twelve P channels and three O channels by sums of squares. This step propagates the improved first-residual estimate into the second | OK
+3 | O channels combined by sums of squares | note: Combine twelve P channels and three O channels by sums of squares. This step propagates the improved first-residual estimate into the second | OK
+4√15 | X in posterior enclosure | note: Let \(a,b\) be accepted upper bounds on the unchanged trial norms. With \(X=4\sqrt{15}\), \(V=32\sqrt{30}\), set \(\chi=\min(X,a+E)\), \(\ps | OK
+32√30 | V in posterior enclosure | note: Let \(a,b\) be accepted upper bounds on the unchanged trial norms. With \(X=4\sqrt{15}\), \(V=32\sqrt{30}\), set \(\chi=\min(X,a+E)\), \(\ps | OK
+6 | posterior prefactor ℰ=6{…} | note: \mathcal E=6\{E(a+\chi)+\min(Eb+\chi F,E\psi+aF)\}. | OK
+8 | alpha interval denominator /8 | note: Outward roots and arithmetic produce the certified new interval \([(N_- -\mathcal E)/8,(N_+ +\mathcal E)/8]\). Its intersection with the acc | OK
+255 | original degree20 event chronology | note: The loader authenticates three accepted families: original degree20, its posterior certificate, and the new high-moment pilot. Both later fa | OK
+97 | new output events | note: The independent root separately reconstructed the source-to-INPUTS mapping, signed residual sums, closed-form quartic coefficients, all cand | OK
+8 files | output hash membership | note: The independent root separately reconstructed the source-to-INPUTS mapping, signed residual sums, closed-form quartic coefficients, all cand | OK
+1.72 | external seconds | note: The fixed protocol completed once in 1.72 seconds externally, with 54,951,936 bytes external RSS and 101,793,792 bytes sampled tree peak, wi | OK
+54951936 | external RSS bytes | note: The fixed protocol completed once in 1.72 seconds externally, with 54,951,936 bytes external RSS and 101,793,792 bytes sampled tree peak, wi | OK
+101793792 | sampled tree peak bytes | note: The fixed protocol completed once in 1.72 seconds externally, with 54,951,936 bytes external RSS and 101,793,792 bytes sampled tree peak, wi | OK
+30 | time cap seconds | note: The fixed protocol completed once in 1.72 seconds externally, with 54,951,936 bytes external RSS and 101,793,792 bytes sampled tree peak, wi | OK
+384 | MiB RSS cap | note: The fixed protocol completed once in 1.72 seconds externally, with 54,951,936 bytes external RSS and 101,793,792 bytes sampled tree peak, wi | OK
+6 mutants | coherent metadata/interval/identity mutants | note: The supporting compact checker verifies copied hashes, accepted root/worker/source identities, source-family linkage, resource fields, exact | OK
+TABLE | 1.3838 equals packet float4 | OK
+TABLE | 66.6052 equals packet float4 | OK
+TABLE | -465.2922 equals packet float4 | OK
+TABLE | 609.3813 equals packet float4 | OK
+TABLE | 1.1428 equals packet float4 | OK
+TABLE | 66.7061 equals packet float4 | OK
+TABLE | -468.7459 equals packet float4 | OK
+TABLE | 629.7689 equals packet float4 | OK
+CENSUS | events=97 majorant_candidates=60 | OK
+RESOURCES | 1.72s 54951936 RSS 101793792 peak | OK
+FILES | eight output hashes | OK
+IDENTITY | 15 unordered pairs with repetition; 15×2×2=60 | OK
+SUMMARY: 27 theorem numbers, 0 unsourced, 0 packet mismatches; runner-cache present=False

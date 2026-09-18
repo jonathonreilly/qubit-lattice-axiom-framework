@@ -56205,6 +56205,96 @@
   "what": "WORKED COMPUTATION (independent run 2 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\""
  },
  {
+  "id": "C:kernel-by-predecessor-set:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-by-predecessor-set",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Which pasts give a Newtonian kernel. For the linear gain-one formation model on a 3+1 event lattice whose record at (t+1, x) averages the records at (t, x + p), p in a finite set P, the equal-time kernel is sigma^2/(1 - |phi|^2), phi(k) = |P|^-1 sum_p e^{ik.p}. For P = (a) the site and its 6 neighbours, (b) the 6 neighbours only, (c) site + 6 + 12 face diagonals, (d) the 8 cube corners, (e) the backward set {0, e1, e2, e3}, (f) the site and 3 backward + 3 forward neighbours chosen asymmetrically: compute with sympy the small-k form 1 - |phi|^2 = k^T M k + ..., whether M is isotropic, the drift (the imaginary linear term of phi), and ALL zeros of 1 - |phi|^2 on the Brillouin zone (a zero away from k = 0 is a second massless mode, a doubler: expected for (b) and (d) at k = (pi,pi,pi), since phi = -1 there). Table: set, isotropic?, drift?, doublers?, the bounded factor relating the kernel to 1/E(k). Expectation: cube-symmetric sets containing the site itself give an isotropic, drift-free, doubler-free Green-function kernel. DELIVERABLE in your unit worktree: probes/work/compute/kernel-by-predecessor-set/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/kernel-by-predecessor-set/<name>/run.py\""
+ },
+ {
+  "id": "C:kernel-by-predecessor-set:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-by-predecessor-set",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Which pasts give a Newtonian kernel. For the linear gain-one formation model on a 3+1 event lattice whose record at (t+1, x) averages the records at (t, x + p), p in a finite set P, the equal-time kernel is sigma^2/(1 - |phi|^2), phi(k) = |P|^-1 sum_p e^{ik.p}. For P = (a) the site and its 6 neighbours, (b) the 6 neighbours only, (c) site + 6 + 12 face diagonals, (d) the 8 cube corners, (e) the backward set {0, e1, e2, e3}, (f) the site and 3 backward + 3 forward neighbours chosen asymmetrically: compute with sympy the small-k form 1 - |phi|^2 = k^T M k + ..., whether M is isotropic, the drift (the imaginary linear term of phi), and ALL zeros of 1 - |phi|^2 on the Brillouin zone (a zero away from k = 0 is a second massless mode, a doubler: expected for (b) and (d) at k = (pi,pi,pi), since phi = -1 there). Table: set, isotropic?, drift?, doublers?, the bounded factor relating the kernel to 1/E(k). Expectation: cube-symmetric sets containing the site itself give an isotropic, drift-free, doubler-free Green-function kernel. DELIVERABLE in your unit worktree: probes/work/compute/kernel-by-predecessor-set/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/kernel-by-predecessor-set/<name>/run.py\""
+ },
+ {
+  "id": "C:two-pin-interaction-linear:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-pin-interaction-linear",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Newton's law between two records, in the linear model. Take the Gaussian field on the periodic L^3 lattice with covariance C = sigma^2/(1 - phi^2), phi = 1 - E(k)/7 (zero mode removed), the stationary equal-time law of linear light-cone formation. Condition on theta(x_1) = a and theta(x_2) = b. (1) Show the log-probability of the pair of pins is -(1/2) v^T K^-1 v with v = (a, b) and K the 2x2 matrix [[C(0), C(r)], [C(r), C(0)]]; expand the interaction part: -a b C(r)/(C(0)^2 - C(r)^2) ~ -a b C(r)/C(0)^2. (2) With C(r) ~ c/r this is a 1/r attraction between like pins: compute c exactly (7 sigma^2/(8 pi)) and tabulate the exact interaction for r = 1..L/2 along three directions at L = 32, 64, 128 by FFT, against c/r with the finite-size image correction. (3) Do the same for the backward lattice, phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M): give the equipotential surfaces. Expectation: 1/r within a few percent for 3 <= r <= L/6. DELIVERABLE in your unit worktree: probes/work/compute/two-pin-interaction-linear/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-pin-interaction-linear/<name>/run.py\""
+ },
+ {
+  "id": "C:two-pin-interaction-linear:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-pin-interaction-linear",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Newton's law between two records, in the linear model. Take the Gaussian field on the periodic L^3 lattice with covariance C = sigma^2/(1 - phi^2), phi = 1 - E(k)/7 (zero mode removed), the stationary equal-time law of linear light-cone formation. Condition on theta(x_1) = a and theta(x_2) = b. (1) Show the log-probability of the pair of pins is -(1/2) v^T K^-1 v with v = (a, b) and K the 2x2 matrix [[C(0), C(r)], [C(r), C(0)]]; expand the interaction part: -a b C(r)/(C(0)^2 - C(r)^2) ~ -a b C(r)/C(0)^2. (2) With C(r) ~ c/r this is a 1/r attraction between like pins: compute c exactly (7 sigma^2/(8 pi)) and tabulate the exact interaction for r = 1..L/2 along three directions at L = 32, 64, 128 by FFT, against c/r with the finite-size image correction. (3) Do the same for the backward lattice, phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M): give the equipotential surfaces. Expectation: 1/r within a few percent for 3 <= r <= L/6. DELIVERABLE in your unit worktree: probes/work/compute/two-pin-interaction-linear/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-pin-interaction-linear/<name>/run.py\""
+ },
+ {
+  "id": "C:static-against-lightcone-kernel:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "static-against-lightcone-kernel",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The comparator and the formation kernel side by side. For the sphere menu at matched magnetization: run probes/lib/block29_kernel.py (static law, heat bath on L^3; arguments L sweeps therm betas) at L = 16 for beta in {1.0, 1.5, 2.0, 3.0} and probes/lib/formation_levelplane.py in light-cone mode (3s sphere beta 16 T T0 seed) at couplings chosen so the magnetizations match within 0.01 (bisect on beta). Compare beta_static E(k) S_static(k) with S_formation(k) (1 - phi^2)/sigma^2 shell by shell. Expectation: both close to 1 at small k with corrections of the same sign; report the numbers, not a verdict. DELIVERABLE in your unit worktree: probes/work/compute/static-against-lightcone-kernel/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-against-lightcone-kernel/<name>/run.py\""
+ },
+ {
+  "id": "C:static-against-lightcone-kernel:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "static-against-lightcone-kernel",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The comparator and the formation kernel side by side. For the sphere menu at matched magnetization: run probes/lib/block29_kernel.py (static law, heat bath on L^3; arguments L sweeps therm betas) at L = 16 for beta in {1.0, 1.5, 2.0, 3.0} and probes/lib/formation_levelplane.py in light-cone mode (3s sphere beta 16 T T0 seed) at couplings chosen so the magnetizations match within 0.01 (bisect on beta). Compare beta_static E(k) S_static(k) with S_formation(k) (1 - phi^2)/sigma^2 shell by shell. Expectation: both close to 1 at small k with corrections of the same sign; report the numbers, not a verdict. DELIVERABLE in your unit worktree: probes/work/compute/static-against-lightcone-kernel/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-against-lightcone-kernel/<name>/run.py\""
+ },
+ {
   "id": "J:derive:tight-sibling-lemma:a1",
   "type": "judgment",
   "lane": "derivation",
@@ -57099,6 +57189,150 @@
   "problem": "kernel-normalization-in-3plus1",
   "title": "The normalization of the equal-level kernel in the ordered 3+1 formation law",
   "what": "DERIVATION, independent attempt 3 of 3: The normalization of the equal-level kernel in the ordered 3+1 formation law. Executed (first look): in the ordered sphere formation law on three-dimensional level planes the low-k structure factor is 0.96-0.97 of the linear kernel sigma^2/(1 - |phi|^2) at beta = 2 and 6; in 2+1 block 35 (PR #8180) found 0.83-0.97 rising with beta. TASK: derive the leading correction: S(k) (1 - |phi(k)|^2)/sigma^2 = 1 - a/beta + O(1/beta^2) as k -> 0, with a explicit (expected to involve the plateau |m|^2 and the return sum G_3 = (2 pi)^-3 Int 1/(1 - |phi|^2)); route: expand the one-step map of the transverse field to third order in the fluctuations (the record is a von Mises-Fisher draw about S/|S| with concentration beta |S|), close the hierarchy at Gaussian order, and compare with the simulator's shells (probes/lib/formation_levelplane.py) at beta = 3, 6, 12, 24. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/kernel-normalization-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/kernel-normalization-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:two-source-interaction:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-source-interaction",
+  "title": "The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?",
+  "what": "DERIVATION, independent attempt 1 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:two-source-interaction:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-source-interaction",
+  "title": "The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?",
+  "what": "DERIVATION, independent attempt 2 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:two-source-interaction:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-source-interaction",
+  "title": "The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?",
+  "what": "DERIVATION, independent attempt 3 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:two-source-interaction:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-source-interaction",
+  "title": "The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?",
+  "what": "DERIVATION, independent attempt 4 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:two-source-interaction:a5",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-source-interaction",
+  "title": "The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?",
+  "what": "DERIVATION, independent attempt 5 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-order-independence:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-order-independence",
+  "title": "Does the law depend on the order in which causally unrelated records form?",
+  "what": "DERIVATION, independent attempt 1 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-order-independence:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-order-independence",
+  "title": "Does the law depend on the order in which causally unrelated records form?",
+  "what": "DERIVATION, independent attempt 2 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-order-independence:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-order-independence",
+  "title": "Does the law depend on the order in which causally unrelated records form?",
+  "what": "DERIVATION, independent attempt 3 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-order-independence:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-order-independence",
+  "title": "Does the law depend on the order in which causally unrelated records form?",
+  "what": "DERIVATION, independent attempt 4 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\""
  },
  {
   "id": "X:formation-3plus1-sphere-memory",

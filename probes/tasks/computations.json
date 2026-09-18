@@ -418,5 +418,95 @@
   },
   "problem": "two-point-function-response-table",
   "what": "WORKED COMPUTATION (independent run 2 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\""
+ },
+ {
+  "id": "C:kernel-by-predecessor-set:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-by-predecessor-set",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Which pasts give a Newtonian kernel. For the linear gain-one formation model on a 3+1 event lattice whose record at (t+1, x) averages the records at (t, x + p), p in a finite set P, the equal-time kernel is sigma^2/(1 - |phi|^2), phi(k) = |P|^-1 sum_p e^{ik.p}. For P = (a) the site and its 6 neighbours, (b) the 6 neighbours only, (c) site + 6 + 12 face diagonals, (d) the 8 cube corners, (e) the backward set {0, e1, e2, e3}, (f) the site and 3 backward + 3 forward neighbours chosen asymmetrically: compute with sympy the small-k form 1 - |phi|^2 = k^T M k + ..., whether M is isotropic, the drift (the imaginary linear term of phi), and ALL zeros of 1 - |phi|^2 on the Brillouin zone (a zero away from k = 0 is a second massless mode, a doubler: expected for (b) and (d) at k = (pi,pi,pi), since phi = -1 there). Table: set, isotropic?, drift?, doublers?, the bounded factor relating the kernel to 1/E(k). Expectation: cube-symmetric sets containing the site itself give an isotropic, drift-free, doubler-free Green-function kernel. DELIVERABLE in your unit worktree: probes/work/compute/kernel-by-predecessor-set/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/kernel-by-predecessor-set/<name>/run.py\""
+ },
+ {
+  "id": "C:kernel-by-predecessor-set:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-by-predecessor-set",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Which pasts give a Newtonian kernel. For the linear gain-one formation model on a 3+1 event lattice whose record at (t+1, x) averages the records at (t, x + p), p in a finite set P, the equal-time kernel is sigma^2/(1 - |phi|^2), phi(k) = |P|^-1 sum_p e^{ik.p}. For P = (a) the site and its 6 neighbours, (b) the 6 neighbours only, (c) site + 6 + 12 face diagonals, (d) the 8 cube corners, (e) the backward set {0, e1, e2, e3}, (f) the site and 3 backward + 3 forward neighbours chosen asymmetrically: compute with sympy the small-k form 1 - |phi|^2 = k^T M k + ..., whether M is isotropic, the drift (the imaginary linear term of phi), and ALL zeros of 1 - |phi|^2 on the Brillouin zone (a zero away from k = 0 is a second massless mode, a doubler: expected for (b) and (d) at k = (pi,pi,pi), since phi = -1 there). Table: set, isotropic?, drift?, doublers?, the bounded factor relating the kernel to 1/E(k). Expectation: cube-symmetric sets containing the site itself give an isotropic, drift-free, doubler-free Green-function kernel. DELIVERABLE in your unit worktree: probes/work/compute/kernel-by-predecessor-set/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/kernel-by-predecessor-set/<name>/run.py\""
+ },
+ {
+  "id": "C:two-pin-interaction-linear:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-pin-interaction-linear",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Newton's law between two records, in the linear model. Take the Gaussian field on the periodic L^3 lattice with covariance C = sigma^2/(1 - phi^2), phi = 1 - E(k)/7 (zero mode removed), the stationary equal-time law of linear light-cone formation. Condition on theta(x_1) = a and theta(x_2) = b. (1) Show the log-probability of the pair of pins is -(1/2) v^T K^-1 v with v = (a, b) and K the 2x2 matrix [[C(0), C(r)], [C(r), C(0)]]; expand the interaction part: -a b C(r)/(C(0)^2 - C(r)^2) ~ -a b C(r)/C(0)^2. (2) With C(r) ~ c/r this is a 1/r attraction between like pins: compute c exactly (7 sigma^2/(8 pi)) and tabulate the exact interaction for r = 1..L/2 along three directions at L = 32, 64, 128 by FFT, against c/r with the finite-size image correction. (3) Do the same for the backward lattice, phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M): give the equipotential surfaces. Expectation: 1/r within a few percent for 3 <= r <= L/6. DELIVERABLE in your unit worktree: probes/work/compute/two-pin-interaction-linear/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-pin-interaction-linear/<name>/run.py\""
+ },
+ {
+  "id": "C:two-pin-interaction-linear:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-pin-interaction-linear",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Newton's law between two records, in the linear model. Take the Gaussian field on the periodic L^3 lattice with covariance C = sigma^2/(1 - phi^2), phi = 1 - E(k)/7 (zero mode removed), the stationary equal-time law of linear light-cone formation. Condition on theta(x_1) = a and theta(x_2) = b. (1) Show the log-probability of the pair of pins is -(1/2) v^T K^-1 v with v = (a, b) and K the 2x2 matrix [[C(0), C(r)], [C(r), C(0)]]; expand the interaction part: -a b C(r)/(C(0)^2 - C(r)^2) ~ -a b C(r)/C(0)^2. (2) With C(r) ~ c/r this is a 1/r attraction between like pins: compute c exactly (7 sigma^2/(8 pi)) and tabulate the exact interaction for r = 1..L/2 along three directions at L = 32, 64, 128 by FFT, against c/r with the finite-size image correction. (3) Do the same for the backward lattice, phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M): give the equipotential surfaces. Expectation: 1/r within a few percent for 3 <= r <= L/6. DELIVERABLE in your unit worktree: probes/work/compute/two-pin-interaction-linear/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-pin-interaction-linear/<name>/run.py\""
+ },
+ {
+  "id": "C:static-against-lightcone-kernel:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "static-against-lightcone-kernel",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The comparator and the formation kernel side by side. For the sphere menu at matched magnetization: run probes/lib/block29_kernel.py (static law, heat bath on L^3; arguments L sweeps therm betas) at L = 16 for beta in {1.0, 1.5, 2.0, 3.0} and probes/lib/formation_levelplane.py in light-cone mode (3s sphere beta 16 T T0 seed) at couplings chosen so the magnetizations match within 0.01 (bisect on beta). Compare beta_static E(k) S_static(k) with S_formation(k) (1 - phi^2)/sigma^2 shell by shell. Expectation: both close to 1 at small k with corrections of the same sign; report the numbers, not a verdict. DELIVERABLE in your unit worktree: probes/work/compute/static-against-lightcone-kernel/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-against-lightcone-kernel/<name>/run.py\""
+ },
+ {
+  "id": "C:static-against-lightcone-kernel:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "static-against-lightcone-kernel",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The comparator and the formation kernel side by side. For the sphere menu at matched magnetization: run probes/lib/block29_kernel.py (static law, heat bath on L^3; arguments L sweeps therm betas) at L = 16 for beta in {1.0, 1.5, 2.0, 3.0} and probes/lib/formation_levelplane.py in light-cone mode (3s sphere beta 16 T T0 seed) at couplings chosen so the magnetizations match within 0.01 (bisect on beta). Compare beta_static E(k) S_static(k) with S_formation(k) (1 - phi^2)/sigma^2 shell by shell. Expectation: both close to 1 at small k with corrections of the same sign; report the numbers, not a verdict. DELIVERABLE in your unit worktree: probes/work/compute/static-against-lightcone-kernel/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-against-lightcone-kernel/<name>/run.py\""
  }
 ]

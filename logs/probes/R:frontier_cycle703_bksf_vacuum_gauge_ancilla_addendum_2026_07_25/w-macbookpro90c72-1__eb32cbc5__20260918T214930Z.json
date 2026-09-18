@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_bksf_vacuum_gauge_ancilla_addendum_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle703_bksf_vacuum_gauge_ancilla_addendum_2026_07_25.py",
+ "seed": 68170,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T214930Z",
+ "elapsed_s": 11.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a922c32521922d3d047e5078ed37b772b9c9863877b092aac87bbac4765fcad",
+ "stdout_tail": "expectations\": 2250, \"face_ancilla_conflict_colors\": 29, \"fixed_vacuum_stabilizer_rank\": 3000, \"full_cycle_rank\": 2126, \"local_loop_rank\": 2123, \"local_loop_rows\": 2250, \"maximum_dense_Z_weight\": 413, \"maximum_local_loop_Pauli_weight\": 36, \"periodic\": true, \"phase_failures\": 0, \"postselection_log2_success_fixed_sector\": -2126, \"postselection_log2_success_local\": -2123, \"target_cycle_rank\": 2126, \"vertices\": 875}]}, \"claim_ceiling\": \"Dense coherent correction proves exact finite vacuum preparation and Wilson sectors are inert typed gauge qubits. The tested bounded face-ancilla and translation-linear fixed-radius routes do not produce the original fixed-loop vacuum without growing/global correction. No general local-Clifford, nonlinear-decoder, recurrent-dynamics, or axiom-pressure claim follows.\", \"cycle\": 703, \"equations\": [\"A_s P_s |0_Z> = P_+ |0_Z>\", \"H R H = H on lawful loop syndromes\", \"E_direct_sum: H_matter tensor C^8_gauge -> H_local_code\", \"U_physical E_direct_sum = E_direct_sum (U_matter tensor I_8)\"], \"pass\": true, \"resources\": {\"certificate_sha256\": \"f3df92574675cfeebc8362dbe10d1589d59c9e73cd177fef190a79801524650f\", \"elapsed_seconds\": 11.221700332942419, \"peak_rss_mb\": 279.78125}, \"status\": \"vacuum-gauge-ancilla-partial-with-route-specific-held-failure\", \"terminal\": \"DENSE_COHERENT_VACUUM_AND_WILSON_GAUGE_POSITIVE_FIXED_RADIUS_LOCAL_PREP_OPEN\", \"tests_failed\": 0, \"tests_passed\": 8}\nRESULT DENSE_COHERENT_VACUUM_AND_WILSON_GAUGE_POSITIVE_FIXED_RADIUS_LOCAL_PREP_OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T214942Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

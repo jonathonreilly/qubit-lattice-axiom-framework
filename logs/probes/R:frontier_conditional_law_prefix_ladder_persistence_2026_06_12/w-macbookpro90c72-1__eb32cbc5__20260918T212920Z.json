@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_conditional_law_prefix_ladder_persistence_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.py",
+ "seed": 66959,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212920Z",
+ "elapsed_s": 6.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3bce42df03bf4820e461c7b62c2f3430635ac3976aac47a0107b8d60123b6ec",
+ "stdout_tail": "128/required_active=128/empty=128; seed=7/k=8/min_active=4/active=256/required_active=128/empty=0\n[PASS] X3c literal full-label coverage exposes exactly the seed-99 k=8 empty-sector obstruction: empty_full_label_pairs=[(99, 8)]; expected=[(99, 8)]\nX3d ADEQUATE VERDICT seed=4242 adequate_k_max=6 adequate=[2, 3, 4, 5, 6] theorem_clears=[2, 3, 4, 5, 6] adequate_does_not_clear=[] reported_family_inadequate=[7, 8]\nX3d ADEQUATE VERDICT seed=99 adequate_k_max=4 adequate=[2, 3, 4] theorem_clears=[2, 3, 4] adequate_does_not_clear=[] reported_family_inadequate=[5, 6, 7, 8]\nX3d ADEQUATE VERDICT seed=7 adequate_k_max=7 adequate=[2, 3, 4, 5, 6, 7] theorem_clears=[2, 3, 4, 5, 6, 7] adequate_does_not_clear=[] reported_family_inadequate=[8]\n[PASS] X3d adequate-grade verdict is no exhaustion through each seed's adequate-family range and all higher-k entries are reported family-inadequate: observed_adequate_sets={4242:[2, 3, 4, 5, 6], 99:[2, 3, 4], 7:[2, 3, 4, 5, 6, 7]}; observed_theorem_clear_sets={4242:[2, 3, 4, 5, 6], 99:[2, 3, 4], 7:[2, 3, 4, 5, 6, 7]}; observed_family_inadequate_sets={4242:[7, 8], 99:[5, 6, 7, 8], 7:[8]}; observed_adequate_kmax={4242: 6, 99: 4, 7: 7}; expected_adequate_kmax={4242: 6, 99: 4, 7: 7}\n[PASS] X3e cap-11 vs cap-12 depth-stability of the selected event and k-ladder: seed=4242:cap11_row=9,cap12_row=9,max_ladder_diff=0.000e+00; seed=99:cap11_row=7,cap12_row=7,max_ladder_diff=0.000e+00; seed=7:cap11_row=10,cap12_row=10,max_ladder_diff=0.000e+00\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_conditional_law_prefix_ladder_persistence_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

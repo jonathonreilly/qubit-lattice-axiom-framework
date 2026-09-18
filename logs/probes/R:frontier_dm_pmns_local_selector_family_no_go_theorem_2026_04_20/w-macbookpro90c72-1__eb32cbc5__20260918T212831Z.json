@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_pmns_local_selector_family_no_go_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_local_selector_family_no_go_theorem_2026_04_20.py",
+ "seed": 66911,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212831Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6e0df0cdb8e9f3770ee60387041a90e8bf1589451f0cf92f17d566ca1d518dbc",
+ "stdout_tail": "tely rather than only in aggregate. Part 2 rests on the solar mode s12^2 alone, whose Schur-line floor 0.331582718643 exceeds the target 0.307, so the no-go already holds on that single mode; Part 3 then combines all three modes into chi^2_line and still misses at 0.011428083950.\n  per_block: checked in a limited sense -- the block form is the premise of the two imported theorems, not something this runner rebuilds. What is executed here is that the parity-compatible family on D = diag(A,B,B) and the broader 23-symmetric active-curvature family on the same singlet-plus-degenerate-doublet block return the identical selected line delta_* = q_+* = sqrt(6)/3 to 1e-12.\n  lattice_wide: checked and not executed -- there is no lattice and no asymptotic limit. The widest thing executed is a one-dimensional dial scan over m on [-2000,2000] (4001 samples) and [-200,200] (8001 samples) with endpoint comparison, which bounds the selected line's behaviour on those intervals only and is parameter extent, not lattice extent.\n\n========================================================================================\nRESULT\n========================================================================================\n  Current exact local selector families do NOT close the PMNS angle pin.\n  The strongest exact local route fixes delta = q_+ = sqrt(6)/3,\n  but the entire selected line misses the physical PMNS triple.\n  Remaining target: a nonlocal point-selection law on the live branch.\n\nPASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

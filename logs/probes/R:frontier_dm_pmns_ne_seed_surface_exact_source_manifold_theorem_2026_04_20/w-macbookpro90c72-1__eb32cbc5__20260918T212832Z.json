@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py",
+ "seed": 66912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212832Z",
+ "elapsed_s": 30.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "428ca511060ed2edc452d0ec61afb6467b691e8406846620e91b06384175dd39",
+ "stdout_tail": "favored column  (eta_0 range=(0.769933,0.778188))\n  [PASS] The exact PMNS manifold carries both source-cubic orientations  (cubic range=(-2.243511e-03,2.143836e-03))\n\n========================================================================================\nPART 5: THE NOTE RECORDS THE CORRECT I5 REDUCTION\n========================================================================================\n  [PASS] The note records exact PMNS realizability on the fixed native N_e seed surface\n  [PASS] The note records the regular 2-real source-manifold consequence\n  [PASS] The note records the current nonlocal selector-family miss\n  [PASS] The note records the sharpened I5 target as a new 2-real point-selection law\n  [PASS] The note explicitly cites the empirical-comparator role of the target triple\n  [PASS] The note lists explicit framework-authority citations for every imported routine\n\n========================================================================================\nRESULT\n========================================================================================\n  Exact reduction answer:\n    - the fixed native N_e seed surface already contains exact physical\n      PMNS points\n    - on the verified regular patch those points form a local 2-real\n      source manifold\n    - current exact nonlocal seed-surface selector families do not pick\n      that manifold\n    - so the remaining I5 object is a new 2-real point-selection law on\n      the exact N_e PMNS source manifold\n\nPASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212903Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.txt against the .txt beside this log"
+  ]
+ }
+}

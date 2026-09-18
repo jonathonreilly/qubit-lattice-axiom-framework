@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_2026_04_18.py",
+ "seed": 66898,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212818Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0a366c952822ac55efa92e3b3fc400388f0d5229f22d076083180532f3965eaa",
+ "stdout_tail": "PASS] min_{t in [0,1]} p(t) > 0  [certifies det(H(t)) > 0]  (min = 0.878309)\n[PASS] min p = 0.878309... (matches theorem note)  (min = 0.878309)\n[PASS] signature(H_base) = (2, 0, 1)  [convention (n_-, n_0, n_+)]  (eigs = [-1.984569687716825, -0.8834375738166761, 2.868007261533502])\n[PASS] signature(H_base + J_*) = (2, 0, 1)  [direct independent check]  (eigs = [-1.309094153811965, -0.32043373926198115, 2.286588893073946])\n\n========================================================================\nSylvester Linear-Path Theorem \u2014 certification summary\n========================================================================\n\ndet(H(t)) is the exact cubic\n  p(t) = A3 t^3 + A2 t^2 + A1 t + A0\n  A0 = 32*sqrt(2)/9\n  A1 ~ -13.886142\n  A2 ~ 15.110887\n  A3 ~ -5.293887\n\nCritical points of p(t) come from the quadratic p'(t) = 0, solved\nexactly.  The extremum of p on the closed interval [0, 1] is taken\nfrom the finite set {0, 1} union {critical points in (0, 1)}.\n\nmin_{t in [0,1]} p(t) = 0.878309  >  0\n\nBy Sylvester's law of inertia, signature(H(t)) is constant on [0, 1],\nso signature(H_base + J_*) = signature(H_base) = (2, 0, 1).\n\nScope:\n  - Unconditional: H_pin lies on the same connected component of\n    {det(H) != 0} as H_base (the baseline-connected component), and\n    hence has signature (2, 0, 1).\n  - Still imposed: the identification of the baseline-connected\n    component as the physical live sheet.  Basin-2/X exclusion\n    remains conditional on this identification.\n\nPASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

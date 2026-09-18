@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_graph_first_ordered_chain_nonzero_current_closure_2026_04_21.py",
+ "seed": 66911,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212831Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "954ccaf63ed024c6316a5100117d11a57f42a8ff70301ba73b94bf27a9ce855a",
+ "stdout_tail": "  [PASS] The prior last-mile reduction note records nonzero J_chi production as the exact remaining strict/native burden\n  [PASS] The ordered-chain theorem supplies one explicit sole-axiom nonzero-current law  (J_chi(A_ord)=1.000000000000+0.000000000000j)\n  [PASS] So the reduced constructive target is met on the retained hw=1 response family  (reduction target + exact current activation)\n\n========================================================================================\nPART 6: CIRCULARITY GUARD\n========================================================================================\n  [PASS] The chain grading takes no PMNS-side target values as inputs  (bad=[])\n  [PASS] The ordered-chain active law takes no PMNS-side target values as inputs  (bad=[])\n\n========================================================================================\nRESULT\n========================================================================================\n  Exact same-branch current-activation theorem on the retained hw=1 response family:\n    - graph-first selection and cycle-frame support fix the ordered carrier\n    - the adjacent chain has a unique normalized grading N = diag(1,2,3)\n    - the canonical ordered-chain law A_ord = N + C produces J_chi = 1\n    - that current survives exactly on the retained response family\n\n  Therefore one explicit sole-axiom nonzero-current law is derived on\n  the retained hw=1 response family, meeting the reduced constructive target.\n\nSUMMARY: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212831Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

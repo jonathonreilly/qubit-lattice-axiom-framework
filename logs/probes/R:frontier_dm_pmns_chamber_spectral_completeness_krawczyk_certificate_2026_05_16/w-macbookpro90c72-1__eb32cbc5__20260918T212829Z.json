@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_chamber_spectral_completeness_krawczyk_certificate_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_chamber_spectral_completeness_krawczyk_certificate_2026_05_16.py",
+ "seed": 66909,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212829Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f893056e11e88763580a91dbcaf3def4756c0342d78d76f017676f20c6c7d38e",
+ "stdout_tail": "3626e+01, +1.313627e+01])\n\nPart 6: certified off-chamber sign on (Basin N, Basin P, X_a, X_b, X_c).\n  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over Basin N Krawczyk box  (interval = [-3.535383e-01, -3.535284e-01])\n  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over Basin P Krawczyk box  (interval = [-1.529559e+00, -1.529486e+00])\n  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over X_a Krawczyk box  (interval = [-1.637325e+00, -1.637181e+00])\n  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over X_b Krawczyk box  (interval = [-2.786845e-01, -2.786497e-01])\n  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over X_c Krawczyk box  (interval = [-4.968046e-01, -4.967833e-01])\n\nPart 7: scope statement.\n        This certificate proves EXISTENCE and LOCAL UNIQUENESS of\n        the listed 4+4 ordered-eigenvalue roots (Krawczyk on disjoint boxes)\n        and CHAMBER-SIDE SIGN on Basin 1, Basin 2, Basin X (in-chamber) and\n        Basin N, Basin P, X_a, X_b, X_c (off-chamber).\n        It does NOT certify an upper bound on the number of additional real\n        ordered roots outside the listed 8 boxes; that upper bound is still\n        only supported by the parent runner's all-permutation chamber multistart\n        search and is therefore not part of this certificate.\n        See docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md.\n\n========================================================================================\nPASS=18  FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+DM leptogenesis PMNS transport selector firewall
+PASS: parent endpoint interval brackets eta/eta_obs = 1 -- seed=0.719082664368, overshoot=1.052220313050
+PASS: linear crossing root lies in the open interval -- lambda=0.843247038405
+PASS: linear crossing evaluates exactly to the target level -- value=1.000000000000
+PASS: a different supplied overshoot endpoint gives a different root -- root=0.843247038405, alternate=0.529116901594
+PASS: the equality point is target-defined unless an independent selector is supplied
+PASS: firewall forbids using the observed comparator as the selector
+PASS: firewall preserves future positive selector routes
+PASS: parent cites the selector firewall companion
+PASS: parent scopes the exact root as diagnostic rather than selected
+PASS: parent keeps the bounded interval support claim
+PASS: parent out-of-scope list rejects lambda-star selection
+PASS: companion claims no audit status authority
+N5 execution certificate -- resolution classes exercised here
+per_element: checked -- each scalar and each documentary clause is resolved on its own: the two replayed parent endpoints f(0) = 0.719082664368 and f(1) = 1.052220313050, the linear crossing root lambda = 0.843247038405, and the alternate-endpoint root 0.529116901594 at b = 1.25; the eight documentary checks each pin one literal clause in one of the two notes.
+per_site: checked and not executed -- the entire state of this runner is two supplied floats plus the text of two markdown notes, and the transport functional is imported as replayed endpoint numbers rather than re-evaluated on any configuration, so no quantity here carries a site index and nothing is resolved site by site.
+per_mode: checked and not executed -- the off-seed source is a five-real family in the parent note, but this runner never decomposes it: it consumes one sampled endpoint 1.052220313050 and one hypothetical alternate 1.25 as opaque scalars, so no individual mode of that family is separated out -- which is precisely the firewall's point that no theorem selects an endpoint.
+per_block: checked -- the twelve checks partition into three blocks of four: an interval-arithmetic block (bracketing, root inside (0,1), exact evaluation to the target level, endpoint-dependence of the root), a firewall-note block (target-defined equality, forbidden comparator selector, preserved positive routes, no audit-status authority), and a parent-note block (companion citation, diagnostic scoping, bounded-interval support, lambda_* rejection).
+lattice_wide: checked and not executed -- everything lives on the one-dimensional straight-line interpolation lambda in [0,1] between two supplied numbers; no extended system, volume, or limit is instantiated, so the crossing at lambda = 0.843247038405 is certified only as interval arithmetic against the observed ETA_OBS comparator and never at global scope.
+PASS=12 FAIL=0

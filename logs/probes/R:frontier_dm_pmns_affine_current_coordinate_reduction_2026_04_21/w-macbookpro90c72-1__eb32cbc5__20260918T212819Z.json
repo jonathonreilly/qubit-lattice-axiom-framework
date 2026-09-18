@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_affine_current_coordinate_reduction_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_affine_current_coordinate_reduction_2026_04_21.py",
+ "seed": 66899,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212819Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "22b4f454459fe12524879698a5ed374fae2dfe99193e1a643559410b608a1571",
+ "stdout_tail": "================================================\n  [PASS] The fixed-N_e theorem still records that the physical PMNS target lives on an exact local 2-real source manifold\n  [PASS] The ordered-chain theorem still lands one exact sole-axiom nonzero-current route on hw=1\n  [PASS] The doublet-block theorem still records delta as the shifted imaginary K12 coordinate\n  [PASS] Therefore current activation is not yet the full physical PMNS last mile at this theorem stage  (equivalently the current-blind shifted Im(K_Z3[1,2]) law on the retained hw=1 family remained to be closed)\n  [PASS] The later ordered-chain graded-current theorem closes that remaining affine scalar exactly  (this affine reduction is a historical precursor, not the final strict/native state)\n\n========================================================================================\nRESULT\n========================================================================================\n  Exact affine-current sharpening:\n    - on H(m, delta, q_+) the native current is J_chi(H) = q_+ - i/4\n    - graph-first current activation therefore closes the q_+ coordinate\n    - the shifted Im(K_Z3[1,2]) / delta coordinate remained open at\n      this theorem stage\n\n  So this theorem isolates the remaining affine scalar exactly, but does\n  not by itself finish the strict/native DM last mile. The later\n  ordered-chain graded-current closure theorem closes that remaining\n  scalar on the retained hw=1 response family.\n\nSUMMARY: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212820Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

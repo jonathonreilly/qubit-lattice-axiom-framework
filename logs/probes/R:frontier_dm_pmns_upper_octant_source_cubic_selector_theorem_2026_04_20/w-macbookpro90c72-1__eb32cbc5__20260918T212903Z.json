@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_upper_octant_source_cubic_selector_theorem_2026_04_20.py",
+ "seed": 66943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212903Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5def610b85a3cb2ab53c29902d00c3f05ee4878a7f303b92af80eee92e474cac",
+ "stdout_tail": "=-0.418782532965\n  [PASS] The exact chamber root set has exactly three upper-octant survivors  (survivors=[('Basin 1', (2, 1, 0)), ('Basin 2', (2, 1, 0)), ('Basin X', (2, 0, 1))])\n  [PASS] Every upper-octant survivor carries the same target s23^2 = 0.545\n\nPart 3: source-cubic orientation selects Basin 1 uniquely\n   Basin 1: I_src=+0.303560489497\n   Basin 2: I_src=-225.763564069262\n   Basin X: I_src=-99.766107123954\n  [PASS] Basin 1 has positive source cubic orientation\n  [PASS] Basin 2 has negative source cubic orientation\n  [PASS] Basin X has negative source cubic orientation\n  [PASS] Among upper-octant chamber roots, I_src > 0 selects Basin 1 uniquely  (selected=[('Basin 1', (2, 1, 0))])\n\nPart 4: physical consequence\n  [PASS] The selected branch is sigma_hier = (2,1,0)\n  [PASS] The selected branch has negative CP sign  (sin_dcp=-0.987360974089)\n  [PASS] The selected branch reproduces the pinned PMNS triple  ((s12,s13,s23)=(0.307000000000,0.021800000000,0.545000000000))\n\n========================================================================================\nRESULT\n========================================================================================\n  Exact selector system on the active chamber:\n    - upper-octant chamber law\n    - source cubic orientation law I_src(H) > 0\n\n  Consequence:\n    - Basin 1 is the unique physical chamber root\n    - sigma_hier = (2,1,0)\n    - sin(delta_CP) < 0\n    - the remaining I5 gap is only the PMNS angle derivation itself\n\nPASS=14  FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212904Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

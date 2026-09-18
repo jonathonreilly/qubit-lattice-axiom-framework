@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_asymptotic_source_no_go_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_asymptotic_source_no_go_2026_04_20.py",
+ "seed": 66900,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212820Z",
+ "elapsed_s": 9.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1e6061a66d2e6dd98c36d5e350bd60915f660bff01ba13c3a83ca5f682ea1a04",
+ "stdout_tail": "(min singular value=0.706486)\n[PASS] ((2, 1, 0), delta_CP=1 pi): constraint matrix has full rank  (min singular value=0.852543)\n[PASS] ((2, 1, 0), delta_CP=1 pi): only lambda=0 solves A lambda = 0  (min singular value=0.852543)\n\n=== Part 2: numerical asymptotic chamber-sphere floor ===\n[PASS] Pure-source chamber-sphere minimum stays strictly above zero  (best chi^2_inf=0.001079584 at perm=(0, 1, 2), dir=(-0.9956212725653529, 0.09341957044909154, -0.003326480490627972))\n[PASS] The asymptotic floor is near the observed 1e-3 scale, not numerical zero  (best chi^2_inf=0.001079584)\n\nInterpretation:\n  No exact PMNS-fit basin can escape to infinity, because the\n  pure-source limit admits no nonzero solution with the target angles.\n  The remaining basin-enumeration problem is therefore compact.\n\nPASS=26 FAIL=0\nper_element: checked \u2014 every target-angle constraint-matrix entry was assembled from rank-one PMNS projectors; aggregate FAIL=0.\nper_site: checked \u2014 all six row permutations at delta_CP=0 and pi were evaluated as distinct source-label assignments; aggregate FAIL=0.\nper_mode: checked \u2014 each 3x3 constraint matrix has full singular-value rank in the executed permutation/phase sweep; aggregate FAIL=0.\nper_block: checked \u2014 the compact chamber-sphere minimization found chi2_inf=0.001079584 at permutation (0, 1, 2).\nlattice_wide: checked and not executed \u2014 the PMNS source-family claim asserts no spatial lattice lift; the executed asymptotic scan leaves a strictly positive floor=True.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

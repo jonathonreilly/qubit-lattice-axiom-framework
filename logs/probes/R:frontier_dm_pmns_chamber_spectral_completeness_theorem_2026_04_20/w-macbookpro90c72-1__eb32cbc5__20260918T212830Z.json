@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.py",
+ "seed": 66910,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212830Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "933953a4d72636cc479b63d5788d64fa82421e7a77559dfbe4d269f9050236ab",
+ "stdout_tail": "7)  margin=+0.015855511491  (s12^2,s13^2,s23^2)=(0.307000000000, 0.021800000000, 0.545000000000)\n   sigma=(2, 1, 0)  (m,delta,q)=(+28.006188289565, +20.721831213931, +5.011599458305)  margin=+24.100437510381  (s12^2,s13^2,s23^2)=(0.307000000000, 0.021800000000, 0.545000000000)\n  [PASS] finite direct chamber sweep returns the three listed (point, sigma) roots  (count=3; not a global upper-bound certificate)\n  [PASS] the direct chamber roots match Basin 1, Basin 2, and Basin X with the expected sigmas\n  [PASS] finite direct chamber sweep finds no listed roots on the other four row permutations  (perms=[(2, 0, 1), (2, 1, 0)])\n\nPart 5: source-support boundary\n  [PASS] bounded listed-root support only; chamber upper-bound exclusion remains open  (reduced spectral solve + finite all-permutation chamber sweep agree on the listed survivors)\n\n========================================================================================\nRESULT\n========================================================================================\n  The supported listed chamber chi^2 = 0 PMNS packet contains:\n    - Basin 1 on sigma=(2,1,0)\n    - Basin 2 on sigma=(2,1,0)\n    - Basin X on sigma=(2,0,1)\n\n  Off-chamber listed real roots still exist on both parity branches, but\n  they are not part of the active chamber-side packet.\n\n  DM_PMNS_CHAMBER_LISTED_ROOTS_SUPPORTED=TRUE\n  DM_PMNS_CHAMBER_COMPLETENESS_UPPER_BOUND_CERTIFIED=FALSE\n  RESIDUAL_DM_PMNS_CHAMBER=global_upper_bound_no_other_roots\n\nPASS=11  FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212831Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_pmns_chamber_spectral_completeness_theorem_2026_04_20.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_correlator_cycle_phases_dichotomy_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py",
+ "seed": 66968,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212928Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9a52aca5af849416a71bbcc6d83cdb16b0cc76eb9f9d060e5f26f2005bb5be1",
+ "stdout_tail": ": markdown link inventory is <= 3 and exactly the chosen dependency links :: links=[('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md'), ('`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`', 'REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md')]\nPASS B8: context references are backticked\nPASS B9: target files exist and no runner cache path is declared\nPASS B10: No-Go Discipline Gate is present and surface-local\nPASS B11: carrier-class exhaustion remains explicit future work\nPASS B12: title and N2 are scoped to the tested classes, not surface-wide exhaustion\nPASS B13: 2026-06-20 repair section narrows to the bounded checks and frames exhaustion as an open bridge\n\n========================================================================================\nManual git diff --stat equivalent (no git invoked)\n========================================================================================\n docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md | 261 +\n scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py | 377 +\n 2 files changed, 638 insertions(+)\n\nSUMMARY:\n  Identity phases are readback: phi=3 delta exactly.\n  Spectral projector phases are delta-blind because Fourier projectors do not move.\n  Thermal phases are K-odd and state-contingent registered data, not universal readout identifications.\n  Symmetric data recover |delta| through the derived cos(3 delta) inversion, leaving the named next paths open.\n\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_correlator_cycle_phases_dichotomy_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

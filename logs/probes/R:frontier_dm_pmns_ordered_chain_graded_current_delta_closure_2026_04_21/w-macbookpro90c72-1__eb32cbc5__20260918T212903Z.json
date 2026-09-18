@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21.py",
+ "seed": 66943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eb32cbc5",
+ "started_utc": "20260918T212903Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4cedacf9e4b3e0e3d4b3e1ace69221e5f94c110c05f90925ae95fc97bf5be9e0",
+ "stdout_tail": "strict/native object as one additional real delta-law beyond current activation\n  [PASS] The same reduction note still records that q_+ was already closed by the native current\n  [PASS] The ordered-chain graded current closes that remaining real affine coordinate on the physical chamber point  (delta_phys=0.933806343759)\n  [PASS] So the strict/native DM last mile now closes on the physical affine/source family  (q_+ and delta both recovered natively)\n\n========================================================================================\nPART 6: CIRCULARITY GUARD\n========================================================================================\n  [PASS] The graded current takes no PMNS-side target values as inputs  (bad=[])\n  [PASS] The delta recovery law takes no PMNS-side target values as inputs  (bad=[])\n\n========================================================================================\nRESULT\n========================================================================================\n  Exact ordered-chain graded-current closure:\n    - graph-first structure already fixes the canonical grading N = diag(1,2,3)\n    - the graded current J_N(H) = J_chi(i[N,H]) reads the current-blind affine direction\n    - together with J_chi(H) = q_+ - i/4, it recovers q_+ and delta exactly\n    - the same two-current law survives exactly on the retained hw=1 response family\n\n  So the stricter/native DM last mile is closed on the physical affine/source family.\n\nSUMMARY: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212903Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

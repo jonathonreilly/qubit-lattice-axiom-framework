@@ -1,0 +1,17 @@
+beta=5/256: kappa from large-beta formula 1/2; from small-beta 1/2
+gamma at 5/256: 1 (stated 1)
+18 beta gamma^2 (8/5) at 5/256 = 9/16 (stated 9/16)
+cosh(1)=1.543081 <= 8/5=1.6: True
+k=1: 2/((2k)(2k-1))=1 stated 1
+k=2: 2/((2k)(2k-1))=1/6 stated 1/6
+k=3: 2/((2k)(2k-1))=1/15 stated 1/15
+k=4: 2/((2k)(2k-1))=1/28 stated 1/28
+k=5: 2/((2k)(2k-1))=1/45 stated 1/45
+k=6: 2/((2k)(2k-1))=1/66 stated 1/66
+k=7: 2/((2k)(2k-1))=1/91 stated 1/91
+k=8: 2/((2k)(2k-1))=1/120 stated 1/120
+k=9: 2/((2k)(2k-1))=1/153 stated 1/153
+kappa(1)=5/512 = 5/512
+kappa(5/512)=3/4 (small-beta branch)
+(3/2) e^{9/16} = 2.632582
+SUMMARY: pattern (c) EXECUTED NUMBERS; kappa pieces meet at 1/2 at beta=5/256, 18 beta gamma^2 (8/5)=9/16, cosh 1 <= 8/5, and (cosh t-1) ratios 2/((2k)(2k-1)) all match

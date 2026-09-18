@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-j605e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/executed_kappa_constants.py",
+ "seed": 73015,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5d4e",
+ "started_utc": "20260918T231015Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (c) EXECUTED NUMBERS; kappa pieces meet at 1/2 at beta=5/256, 18 beta gamma^2 (8/5)=9/16, cosh 1 <= 8/5, and (cosh t-1) ratios 2/((2k)(2k-1)) all match"
+ },
+ "review": "Pattern (c) EXECUTED NUMBERS: kappa pieces meet at 1/2 at beta=5/256, 18 beta gamma^2 (8/5)=9/16, cosh 1 <= 8/5 and (cosh t-1) ratios all match; no executed-number defect.",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "03d61cd8a44b874427169375501a7d999cb9d3977ffbde6aa98b15c1049d6fbe",
+ "stdout_tail": "beta=5/256: kappa from large-beta formula 1/2; from small-beta 1/2\ngamma at 5/256: 1 (stated 1)\n18 beta gamma^2 (8/5) at 5/256 = 9/16 (stated 9/16)\ncosh(1)=1.543081 <= 8/5=1.6: True\nk=1: 2/((2k)(2k-1))=1 stated 1\nk=2: 2/((2k)(2k-1))=1/6 stated 1/6\nk=3: 2/((2k)(2k-1))=1/15 stated 1/15\nk=4: 2/((2k)(2k-1))=1/28 stated 1/28\nk=5: 2/((2k)(2k-1))=1/45 stated 1/45\nk=6: 2/((2k)(2k-1))=1/66 stated 1/66\nk=7: 2/((2k)(2k-1))=1/91 stated 1/91\nk=8: 2/((2k)(2k-1))=1/120 stated 1/120\nk=9: 2/((2k)(2k-1))=1/153 stated 1/153\nkappa(1)=5/512 = 5/512\nkappa(5/512)=3/4 (small-beta branch)\n(3/2) e^{9/16} = 2.632582\nSUMMARY: pattern (c) EXECUTED NUMBERS; kappa pieces meet at 1/2 at beta=5/256, 18 beta gamma^2 (8/5)=9/16, cosh 1 <= 8/5, and (cosh t-1) ratios 2/((2k)(2k-1)) all match\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j605e",
+  "at_utc": "20260918T231015Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

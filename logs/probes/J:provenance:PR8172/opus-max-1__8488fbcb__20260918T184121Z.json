@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8172",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block28-map-of",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8172/provenance_theorem_numbers.py",
+ "seed": 56881,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8488fbcb",
+ "started_utc": "20260918T184121Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "35 items over claim_scope + 3 theorem sections (90 numeric tokens, 0 uncovered): cache-sourced 13, derived here from the note's formulas 4, definitions 2, excluded 10; unsourced 6 = 0 in the proved statements (none) + 6 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-T2-405, exec-static"
+ },
+ "review": "All 90 numeric tokens of the claim_scope and T1-T3 are accounted for (13 printed by the runner cache, 4 derived here incl. T1's 3c values recomputed from the definition over 216 x 5 pairs and the eps thresholds 285718/285717, 2 definitions, 10 exclusions); the proved statements have no unsourced number; 6 executed numbers are printed only by controls, two of them disagreeing with those outputs (T2's '120 random islands ... at most 4.05' where the runner's 120 islands give 6671/1728 = 3.861 and 4.043 comes from the spec's 200 islands; the static six-axis bracket (3.6, 3.7) resolved only on 24^3 and 32^3 heat bath, with no p = 3.7 run on 16^3 or with single-site proposals); INFO: the T2 derivation step 'D + 1 + i_j <= 2D + 1' fails on 137 of 292 enumerated islands (e.g. I = {(1, 1, -2)}), while the stated 18(D+1)^3 bound holds (max |U|/(D+1)^3 = 1375/343 there).",
+ "what": "PR #8172 ([physics-loop] admissibility-induced-law block28 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916; git show origin/physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916:<note>. Create probes/work/pr8172/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8172/<script>.py\"",
+ "stdout_sha256": "67319ced7d76b99d304636d3e0e3f4431f6ff8fbce8d32e1bab0b37937765ecd",
+ "stdout_tail": ", no derivation in this note; printed by supervisor_control_block28_scan_static_sixaxis.out.txt lines 22,23,29,30; control brackets of the order: stat_sixaxis_L16.txt: (3.5, 4.0); stat_sixaxis_L24.txt: (3.5, 4.0); stat_sixaxis_L24_fine.txt: (3.6, 3.7); stat_sixaxis_L32_fine.txt: (3.6, 3.7); single-site proposals (refuter, L=16): (3.6, 3.8); runs at p = 3.7: stat_sixaxis_L24_fine.txt, stat_sixaxis_L32_fine.txt only (none on 16^3, none with single-site proposals): MISMATCH with the stated run list '16^3, 24^3, 32^3 ... heat bath and single-site proposals' for the bracket (3.6, 3.7)\nHIT: exec-sphere | claim_scope | executed-not-claimed: static sphere bracket | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block28_scan_static_sphere.out.txt lines 6,14,18,19,20,21; control |m| on 24^3 fine: 0.66: 0.0676, 0.68: 0.1144, 0.70: 0.2534, 0.72: 0.3607\nHIT: exec-third | claim_scope | executed-not-claimed: static/formation ratio | not printed by the runner (cache), no derivation in this note; printed by no other file of the PR\n[COVERAGE] 90 numeric tokens in the statement text; uncovered 0\nSUMMARY: 35 items over claim_scope + 3 theorem sections (90 numeric tokens, 0 uncovered): cache-sourced 13, derived here from the note's formulas 4, definitions 2, excluded 10; unsourced 6 = 0 in the proved statements (none) + 6 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-T2-405, exec-static\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T184132Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

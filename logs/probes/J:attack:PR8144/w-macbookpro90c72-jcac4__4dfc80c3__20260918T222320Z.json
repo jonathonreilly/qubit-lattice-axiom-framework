@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8144",
+ "type": "judgment",
+ "lane": "static-charge-transfer-sector-20260915",
+ "worker": "w-macbookpro90c72-jcac4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8144/path_independence.py",
+ "seed": 70200,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4dfc80c3",
+ "started_utc": "20260918T222320Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (c) EXECUTED NUMBERS - 12 (T,grid) pairs path-independent; inverse moments match spectra; does not fire"
+ },
+ "review": "Pattern (c): 12 (T,grid) pairs have path-independent reduced energy; inverse moments match spectra; attack did not fire",
+ "what": "PR #8144 ([physics-loop] static-charge-transfer-sector: bounded_theore): attack FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/static-charge-transfer-sector-20260915; git show origin/physics-loop/static-charge-transfer-sector-20260915:<note>. Create probes/work/pr8144/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8144/<script>.py\"",
+ "stdout_sha256": "876e0f7786f0c2774eb92c3ff1329a6eab60da97ae53abb7ce49afb328efcc76",
+ "stdout_tail": "T=1 L=24 paths {0: 1.11782487526517, 1: 1.11782487526517}\nT=1 L=40 paths {0: 1.1178266111423543, 1: 1.1178266111423545}\nT=1 L=64 paths {0: 1.1178268281952752, 1: 1.1178268281952752}\nT=2 L=24 paths {0: 1.6789328688782765, 1: 1.6789328688782765}\nT=2 L=40 paths {0: 1.6789397624640665, 1: 1.6789397624640665}\nT=2 L=64 paths {0: 1.6789406284232107, 1: 1.6789406284232107}\nT=5 L=24 paths {0: 3.0251161457423015, 1: 3.0251161457423015}\nT=5 L=40 paths {0: 3.0251571510383104, 1: 3.0251571510383104}\nT=5 L=64 paths {0: 3.0251624664468477, 1: 3.0251624664468477}\nT=12 L=24 paths {0: 6.0660377592359485, 1: 6.0660377592359485}\nT=12 L=40 paths {0: 6.066221542805823, 1: 6.066221542805823}\nT=12 L=64 paths {0: 6.0662492955988165, 1: 6.0662492955988165}\nSUMMARY: attack pattern (c) EXECUTED NUMBERS - 12 (T,grid) pairs path-independent; inverse moments match spectra; does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcac4",
+  "at_utc": "20260918T222320Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

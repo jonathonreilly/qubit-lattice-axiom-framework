@@ -1,0 +1,45 @@
+
+===============================================================================
+A - Source, authority, and Cycle-85 correction
+===============================================================================
+PASS A cycle91 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/LIVE_SELECTED_COMPILER_CLOSURE_REVISION_CYCLE91_NOTE_2026-07-15.md
+PASS A axioms exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+FAIL A cycle83 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/CONSTRUCTIVE_CONSTITUTIONAL_DELTA_AUDIT_CYCLE83_NOTE_2026-07-14.md
+FAIL A cycle84 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/SEPARATED_RECURRENT_TUBE_COLLISION_CONTROL_CYCLE84_NOTE_2026-07-14.md
+FAIL A cycle85 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/CYCLE80_RECURRENCE_AUDIT_ENDPOINT_TUBE_NUCLEATION_CYCLE85_NOTE_2026-07-14.md
+PASS A cycle86 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/OPEN_DIRECTION_EMPTY_SLOT_CYCLE86_NOTE_2026-07-14.md
+PASS A cycle87 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/PHYSICAL_BIT_ROUTER_PATRICIA_SELECTOR_CYCLE87_NOTE_2026-07-14.md
+FAIL A cycle88 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/EXACT_COMPILER_CLOSURE_LEDGER_CYCLE88_NOTE_2026-07-14.md
+FAIL A cycle89 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/LIVE_EIGHT_BIT_PHYSICAL_COMPARATOR_CYCLE89_NOTE_2026-07-15.md
+FAIL A cycle90 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/LIVE_DIRECTIONAL_PROGRAM_WRITER_CYCLE90_NOTE_2026-07-15.md
+PASS A cycle92 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/LIVE_EMPTY_CAGED_ROUTER_PATRICIA_CYCLE92_NOTE_2026-07-15.md
+PASS A cycle93 exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/TOTAL_STATUS_SERIAL_REJECT_SELECTOR_CYCLE93_NOTE_2026-07-15.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_selected_compiler_closure_revision_cycle91_2026_07_15.py", line 961, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_selected_compiler_closure_revision_cycle91_2026_07_15.py", line 947, in main
+    source_and_live_law_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_selected_compiler_closure_revision_cycle91_2026_07_15.py", line 470, in source_and_live_law_contract
+    texts = {name: normalized(path) for name, path in SOURCES.items()}
+                   ~~~~~~~~~~^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_selected_compiler_closure_revision_cycle91_2026_07_15.py", line 88, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/CONSTRUCTIVE_CONSTITUTIONAL_DELTA_AUDIT_CYCLE83_NOTE_2026-07-14.md'

@@ -1,0 +1,35 @@
+{
+ "task": "R:local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_2026_09_14.py",
+ "seed": 69062,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T220422Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "52c84feb46c355b0e36bec9dcaf664104a3137a08f743f02e97eb566d9266e97",
+ "stdout_tail": "6293064286, 14.484398528457103, 20.786933887245684, 21.10677426505333], \"k\": 0.2, \"rescaled_operator_norm\": 25.74961310280059}, {\"direction\": [0.2672612419124244, 0.5345224838248488, -0.8017837257372732], \"frequency_over_k_cubed\": [12.232662930642858, 14.48439852845711, 20.78693388724568, 21.106774265053335], \"k\": 0.1, \"rescaled_operator_norm\": 25.749613102800588}, {\"direction\": [0.2672612419124244, 0.5345224838248488, -0.8017837257372732], \"frequency_over_k_cubed\": [12.23266293064286, 14.48439852845713, 20.78693388724567, 21.106774265053357], \"k\": 0.05, \"rescaled_operator_norm\": 25.7496131028006}, {\"direction\": [0.2672612419124244, 0.5345224838248488, -0.8017837257372732], \"frequency_over_k_cubed\": [12.23266293064286, 14.484398528457103, 20.78693388724568, 21.106774265053325], \"k\": 0.025, \"rescaled_operator_norm\": 25.74961310280059}]}\nPASS: check_mixed_character_scaling\nper_element: exact polynomial constraints and scalar Jordan identities challenge derivative order and penalty claims\nper_site: integer site-face stencils and actual clock-character syndromes test the declared local Hamiltonian\nper_mode: non-axial transverse-traceless reduction and Hermitian mixed dynamics challenge the dispersion comparison\nper_block: real-space constrained minimization is checked against the actual Fourier metric field and source incidence\nlattice_wide: analytic moment and stencil proofs have stated quantifiers; no interacting finite-N phase follows from finite examples\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220423Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

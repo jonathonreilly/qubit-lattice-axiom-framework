@@ -1,0 +1,52 @@
+============================================================================
+CRANK-NICOLSON LIGHT-CONE BRIDGE -- cone inheritance + withdrawal
+(2026-06-11 audit-failed repair: W_mu(H^n) <= W_mu(H)^n is FALSE;
+ corrected content = cone-inheritance theorem CN-C')
+============================================================================
+
+----------------------------------------------------------------------------
+[A] Cayley unitarity + spectral generator identity
+----------------------------------------------------------------------------
+  [PASS] [A] unitarity (L=8, seed=7)
+  [PASS] [A] U_CN = exp(-i a H_CN) spectrally (L=8, seed=7)
+  [PASS] [A] unitarity (L=8, seed=11)
+  [PASS] [A] U_CN = exp(-i a H_CN) spectrally (L=8, seed=11)
+
+----------------------------------------------------------------------------
+[W] withdrawal witnesses -- the old quasilocality claim is false
+----------------------------------------------------------------------------
+  [PASS] [W] three-site commuting H: c_3 matches the closed form (1/(2a))[arctan(3a/2) - 3 arctan(a/2)]  (c_3 = -0.01887291)
+  [PASS] [W] c_3 != 0 (arctan strictly concave) -> H_CN has a genuine 3-site term at ANY mutual distances; W_mu(H_CN) >= |c_3| e^{mu diam} is unbounded in the diameter  (|c_3| = 0.018873)
+  [PASS] [W] exact decomposition H_CN = c_1 (Z+Z+Z) + c_3 ZZZ (no other terms for the commuting model)  (residual = 3.3e-16)
+  [PASS] [W] subcritical x_mu < 1 (the old bound's own premise holds here)  (x_mu = 0.5060)
+  [PASS] [W] FALSIFIED: computed W_mu(H_CN) EXCEEDS the old claimed bound (2/a) artanh(x_mu)  (W_mu(H_CN) = 8.2892 > old bound = 5.5736)
+  [PASS] [W] withdrawn fixed-step envelope is unavailable: far tail (d=9) is NOT small relative to mid-chain (d=4) at a = 0.2  (d=9: 2.089e-02 vs d=4: 3.270e-02)
+  [PASS] [W] tail plateau scales like a^3 under refinement (a=0.2 -> 0.1 gives ratio ~ 8)  (ratio = 6.35)
+
+----------------------------------------------------------------------------
+[C'] cone-inheritance theorem (corrected content), with margins
+----------------------------------------------------------------------------
+  [PASS] [C'] (a) per-step defect <= zeta  (L=8, a=0.2)  (defect = 4.414e-02, zeta = 1.346e-01)
+  [PASS] [C'] (a) per-step defect <= zeta  (L=8, a=0.1)  (defect = 6.282e-03, zeta = 1.258e-02)
+  [PASS] [C'] (a) per-step defect <= zeta  (L=8, a=0.05)  (defect = 8.138e-04, zeta = 1.480e-03)
+  [PASS] [C'] (a) per-step defect <= zeta  (L=10, a=0.2)  (defect = 7.277e-02, zeta = 3.060e-01)
+  [PASS] [C'] (a) per-step defect <= zeta  (L=10, a=0.1)  (defect = 1.125e-02, zeta = 2.166e-02)
+  [PASS] [C'] (a) per-step defect <= zeta  (L=10, a=0.05)  (defect = 1.495e-03, zeta = 2.443e-03)
+  [PASS] [C'] (a) subcriticality y = a||H||/2 < 1 on the whole grid
+  [PASS] [C'] (b) ||[H, alpha_s(A)]|| = ||[H, A]|| at s = 0.05  (|delta| = 3.6e-15)
+  [PASS] [C'] (b) ||[H, alpha_s(A)]|| = ||[H, A]|| at s = 0.1  (|delta| = 4.0e-15)
+  [PASS] [C'] (c) n-step defect <= n zeta  (n = 5)  (5.622e-02 <= 1.083e-01)
+  [PASS] [C'] (c) n-step defect <= n zeta  (n = 10)  (1.124e-01 <= 2.166e-01)
+  [PASS] [C'] (c) n-step defect <= n zeta  (n = 20)  (2.241e-01 <= 4.332e-01)
+  [PASS] [C'] (d) cone transfer ||[a_CN^n(A),B_d]|| <= ||[a_t(A),B_d]|| + 2||B|| n zeta at every distance (n = 10, t = 1)  (all distances satisfied)
+  [PASS] [C'] (e) fixed-t defect is O(a^2): halving a quarters the n-step defect (ratio in [3, 6])  (defect(a=0.1)/defect(a=0.05) = 3.76)
+
+----------------------------------------------------------------------------
+[D] small-step agreement of CN and continuous commutators
+----------------------------------------------------------------------------
+  [PASS] [D] U_CN^n -> exp(-itH) on observables at small a (t = 0.1)  (defect = 4.89e-06)
+  [PASS] [D] CN and continuous commutators agree at small a  (|delta| = 6.02e-08)
+
+============================================================================
+TOTAL: PASS=27 FAIL=0
+============================================================================

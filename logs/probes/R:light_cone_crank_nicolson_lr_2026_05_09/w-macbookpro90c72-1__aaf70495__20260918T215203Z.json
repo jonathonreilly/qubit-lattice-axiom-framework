@@ -1,0 +1,35 @@
+{
+ "task": "R:light_cone_crank_nicolson_lr_2026_05_09",
+ "type": "runner-reexecution",
+ "lane": "light",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
+ "seed": 68323,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T215203Z",
+ "elapsed_s": 15.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "32ade3fb9d6040da6e815df5ed9d435b741182d0ee88d1b834caab3a5dd5c868",
+ "stdout_tail": "] (a) per-step defect <= zeta  (L=10, a=0.1)  (defect = 1.125e-02, zeta = 2.166e-02)\n  [PASS] [C'] (a) per-step defect <= zeta  (L=10, a=0.05)  (defect = 1.495e-03, zeta = 2.443e-03)\n  [PASS] [C'] (a) subcriticality y = a||H||/2 < 1 on the whole grid\n  [PASS] [C'] (b) ||[H, alpha_s(A)]|| = ||[H, A]|| at s = 0.05  (|delta| = 3.6e-15)\n  [PASS] [C'] (b) ||[H, alpha_s(A)]|| = ||[H, A]|| at s = 0.1  (|delta| = 4.0e-15)\n  [PASS] [C'] (c) n-step defect <= n zeta  (n = 5)  (5.622e-02 <= 1.083e-01)\n  [PASS] [C'] (c) n-step defect <= n zeta  (n = 10)  (1.124e-01 <= 2.166e-01)\n  [PASS] [C'] (c) n-step defect <= n zeta  (n = 20)  (2.241e-01 <= 4.332e-01)\n  [PASS] [C'] (d) cone transfer ||[a_CN^n(A),B_d]|| <= ||[a_t(A),B_d]|| + 2||B|| n zeta at every distance (n = 10, t = 1)  (all distances satisfied)\n  [PASS] [C'] (e) fixed-t defect is O(a^2): halving a quarters the n-step defect (ratio in [3, 6])  (defect(a=0.1)/defect(a=0.05) = 3.76)\n\n----------------------------------------------------------------------------\n[D] small-step agreement of CN and continuous commutators\n----------------------------------------------------------------------------\n  [PASS] [D] U_CN^n -> exp(-itH) on observables at small a (t = 0.1)  (defect = 4.89e-06)\n  [PASS] [D] CN and continuous commutators agree at small a  (|delta| = 6.02e-08)\n\n============================================================================\nTOTAL: PASS=27 FAIL=0\n============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T215219Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/light_cone_crank_nicolson_lr_2026_05_09.txt against the .txt beside this log"
+  ]
+ }
+}

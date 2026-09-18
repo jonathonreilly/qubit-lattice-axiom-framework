@@ -1,0 +1,35 @@
+{
+ "task": "R:link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "link",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+ "seed": 68552,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T215552Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e14bdf04d14930580f7e605a5481d4692d8f2f5e6e9483abaccade28132f7cf",
+ "stdout_tail": ", with total first-level weight 3.468e-31; an observed decay must name its observable and protocol\nPASS E4 [source/readout scope check] the scope kept: the 4^3 rows of the source computation are a restricted-sub-ensemble baseline and no phase is read off them. Where this update can be checked against an exact answer -- the 2x2x2 torus, C4 -- it is 10.1 per cent short in |E|, so nothing is claimed here, either way, about whether the three-dimensional link sector is gapped or gapless\nper_element: checked E_e squared equals 1/4 at equal time; supplied off-diagonal readout is separate.\nper_site: checked every enumerated Gauss state and vertex; C checks explicit equations at bounded checkpoints.\nper_mode: checked full/component finite spectra; positive-lag code and observable decay extraction are not validated.\nper_block: checked finite cycle parity ranks and a legal odd-parity word; algebraic index is not thermal mass.\nlattice_wide: checked two finite geometries and the stated analytic even-L seed; no infinite-volume phase or mixing result.\nN1 packet limitation: five-route procedural minimum is unmet; only real executed families and open alternatives are recorded.\nSUMMARY: 937 flip components and 125 winding classes; finite full/component gaps differ. The same-face pair switch preserves parity; rank 0/10 does not fix weighted mass or mixing. Original seeded discrepancies remain diagnostics. No phase or physical Record dynamics is derived; audit is deferred.\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T215614Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

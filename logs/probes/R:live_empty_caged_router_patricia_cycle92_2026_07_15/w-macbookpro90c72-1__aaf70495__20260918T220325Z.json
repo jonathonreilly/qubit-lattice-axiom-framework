@@ -1,0 +1,31 @@
+{
+ "task": "R:live_empty_caged_router_patricia_cycle92_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "live",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/live_empty_caged_router_patricia_cycle92_2026_07_15.py",
+ "seed": 69005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T220325Z",
+ "elapsed_s": 6.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d5febe72ad9828865947128f6bc7b7bdeeb0f661fa5548a48c5e70407eefe09b",
+ "stdout_tail": "=======================================\nPASS E01 bank has 236 distinct 48-bit leaves\nPASS E02 explicit prefix trie has 8,239 nodes and 8,238 edges\nPASS E03 explicit trie has 235 branch and 7,768 unary nodes :: Counter({1: 7768, 2: 235})\nPASS E04 maximum width is 236 at depths 46-48\nPASS E05 compressed Patricia trie has 471 nodes and 470 edges\nPASS E06 compressed labels total 8,238 bits\nPASS E07 longest compressed edge is 43 bits\nPASS E08 every live program classifies to its unique row\nPASS E09 every selected leaf retains its output association\nPASS E10 all 11,328 one-bit perturbations classify exactly or reject\nPASS E11 exactly 28 directed one-bit flips reach another live row\n\n===============================================================================\nF - Bounded result and residual interfaces\n===============================================================================\nPASS F01 note exists and carries authority none\nPASS F02 note states both supplied-source sizes\nPASS F03 note names candidate-bit bus residual\nPASS F04 note names physical embedding residual\nPASS F05 note denies a seed-grown selector\nPASS F06 note preserves historical routes\nPASS F07 note denies foundation and axiom effects\n\nEMPTY_SOURCE=59 EMPTY_RAW=36 EMPTY_UNION_RAW=5488 EXTRA_CONTROLS=3850\nGATE_SOURCE=12 GATE_RAW=84 COMPLETE_UNION_RAW=5572 MIXED_CONTEXTS=26904\nPROGRAMS=236 PREFIX_NODES=8239 PATRICIA_NODES=471 PATRICIA_EDGES=470\nPERTURBATIONS=11328 ACCEPTED_DIRECTED_FLIPS=28\nSUMMARY: 53 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220332Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

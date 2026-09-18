@@ -1,0 +1,32 @@
+{
+ "task": "R:literal_bit_alu_symplectic_commutation_cycle150_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "literal",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/literal_bit_alu_symplectic_commutation_cycle150_2026_07_15.py",
+ "seed": 68574,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T215614Z",
+ "elapsed_s": 359.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "154b2b411f85f5bad78deb2081a3dae8118ef134d6596f2aed6b53e1861e7c79",
+ "stdout_tail": "sts :: \nPASS XOR/AND truth tables are exact :: []\nPASS XOR, AND, and recorded one express NOT and OR :: \n\nRECURRENT LITERAL-BIT ALU\nPASS eight five-parent rows implement both binary operations :: Counter({5: 8})\nPASS 192 covariant ALU rows merge conflict-free with Cycle 149 :: (70652, 192, 70844)\nPASS all 3,072 rotated three-instruction programs are exact :: (12288, 9216, [])\nPASS deleting any ALU parent suppresses its output :: (40, ())\n\nPHYSICAL SYMPLECTIC COMMUTATION\nPASS rotational parity quotient collapses sixteen words to six rows :: Counter({6: 6})\nPASS 48 parity rows yield a 70,892-row single-valued union :: (48, 70892)\nPASS all 24,576 signed-row graphs are exact four-AND/parity diamonds :: (417792, 811008, [])\nPASS every output equals the signed-tableau symplectic parity :: \nPASS deleting any parity parent suppresses its output :: (36, ())\n\nMIXED-DEVICE CLOSURE\nPASS ALU/parity rows preserve all 86,640 unified event histories :: []\nPASS Cycle-144 terminal remains at exactly two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: literal-bit alu :: \nFAIL note contains: physical symplectic commutation :: \nFAIL note contains: commuting multiplication and pivot remain open :: \nFAIL note contains: does not derive equal outcome weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 13 FAIL 8\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220214Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

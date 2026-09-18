@@ -1,0 +1,35 @@
+{
+ "task": "R:linear_response_true_kubo_convergence_closure_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "linear",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/linear_response_true_kubo_convergence_closure_2026_06_10.py",
+ "seed": 68339,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T215219Z",
+ "elapsed_s": 212.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "76505142cf61a500ede5c0702c5923195c1fcbd4b1b677ff702da52f9b271ba8",
+ "stdout_tail": "d VERIFIED as the s->0 limit of the\n  finite-difference response: the parallel perturbation propagator with the lane's own\n  endpoint-averaged edge field factor g_edge = (1/(r_i+0.1)+1/(r_j+0.1))/2 is the\n  exact derivative d(cz)/ds at s=0 (O(s) forward / O(s^2) centered convergence on all 16 ladder\n  families incl. the three residual cases; Richardson and 5-point O(s^4) cross-checks agree to\n  <= 1e-5 relative; live-panel sign agreement 39/39 at both tested steps; r and slope walk to 1\n  as s decreases). The landed runner's midpoint r_edge variant is the exact derivative of a\n  DIFFERENT (midpoint-sampled) discretization: its per-family offset is s-independent and is the\n  dominant part of the cached magnitude gaps; on R1_kreg_k15 it produced the one real sign miss,\n  now resolved by the matched derivative. The open-gate note's detector-only heuristic is\n  characterized as a coarse approximation (its three residual sign misses are exactly where it\n  drops the path-phase cross terms the derivative keeps). BOUNDARIES: graph-family toy\n  linear-response lane only (NOT the cubic-Coxeter geometric rows); first order in s at s=0;\n  4 detector-dead families and 1 prune-zone family (R2_kreg_k8) are classified out with their\n  free detector probabilities printed; convergence is exhibited on the 16-family ladder subset\n  and the panel statistics on all 39 live families at s in {1e-3, 5e-4}. No audit grade is\n  authored here; the independent audit lane adjudicates all ledger statuses.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T215551Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+
+===============================================================================
+A - Actual recurrent row, five open directions, and live codebook
+===============================================================================
+FAIL A01 Cycle 94 note exists
+PASS A02 selected row is the actual arity-one B seed row
+PASS A03 next row is the actual arity-two B continuation
+PASS A04 actual Cycle-85 target is pinned
+PASS A05 target sees R_LA and exactly five open directions
+PASS A06 corrected live alphabet is exactly 153 roles
+PASS A07 all 153 roles retain distinct eight-bit words
+PASS A08 EMPTY is the reserved all-one word
+PASS A09 candidate has R_LA then exactly five EMPTY slots
+PASS A10 selected output word is R_B11=10010100
+
+===============================================================================
+B - One-row lift and readable physical table
+===============================================================================
+PASS B01 lift changes exactly one canonical output
+PASS B02 lifted row keeps the exact arity-one input and writes H1
+PASS B03 readable adapter has twelve canonical rows
+PASS B04 readable adapter has 252 proper-cubic raw rows
+PASS B05 readable rows are disjoint from lifted live/binary/comparator rows
+PASS B06 complete lifted union has 5,680 raw inputs
+PASS B07 every raw input has one output
+PASS B08 adapter uses only existing live contents
+PASS B09 no onsite role is added beyond the corrected 153
+PASS B10 Cycle-90 DATA is locally sealed at terminal
+PASS B11 Cycle-94 leaves one fresh tap beside every DATA bit
+
+===============================================================================
+C - Actual endpoint through output word to next recurrent front
+===============================================================================
+PASS C01 a proper-cubic placement exists
+PASS C02 apparatus source is disjoint from the generated endpoint
+PASS C03 physical source initially enables only the lifted seed port
+PASS C04 every reachable stage has its exact singleton frontier :: []
+PASS C05 macrostep has 133 states and 132 append edges
+PASS C06 terminal is quiet and conflict-free
+PASS C07 terminal DATA block is exactly R_B11
+PASS C08 value-verified MATCH forms after all eight DATA taps
+PASS C09 MATCH starts the complete actual R_B10 comparator
+PASS C10 actual next candidate contains R_B11 in its second slot
+PASS C11 verified word immediately seeds the first next-row certificate
+
+===============================================================================
+D - Row selection, openness, value, and rotation controls
+===============================================================================
+PASS D01 all 236 live programs have the exact seed-reference prefix stop :: []
+PASS D02 only the selected recurrent row reaches bit 48
+PASS D03 all 5x153 extra-neighbour controls block seed-port formation
+PASS D04 all 256 output-program words expose MATCH iff R_B11 :: []
+PASS D05 all 941,784 stage/signature/rotation controls retain the exact raw frontier :: []
+
+===============================================================================
+E - Supplied/grown boundary and no-go discipline surface
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_seed_row_readable_macrostep_cycle94_2026_07_15.py", line 589, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_seed_row_readable_macrostep_cycle94_2026_07_15.py", line 579, in main
+    scope_contract()
+    ~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/live_seed_row_readable_macrostep_cycle94_2026_07_15.py", line 563, in scope_contract
+    note = NOTE.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/LIVE_SEED_ROW_READABLE_MACROSTEP_CYCLE94_NOTE_2026-07-15.md'

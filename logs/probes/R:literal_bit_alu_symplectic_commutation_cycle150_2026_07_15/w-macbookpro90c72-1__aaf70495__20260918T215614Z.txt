@@ -1,0 +1,34 @@
+AUTHORITY AND BOOLEAN BASIS
+FAIL review note exists :: 
+PASS XOR/AND truth tables are exact :: []
+PASS XOR, AND, and recorded one express NOT and OR :: 
+
+RECURRENT LITERAL-BIT ALU
+PASS eight five-parent rows implement both binary operations :: Counter({5: 8})
+PASS 192 covariant ALU rows merge conflict-free with Cycle 149 :: (70652, 192, 70844)
+PASS all 3,072 rotated three-instruction programs are exact :: (12288, 9216, [])
+PASS deleting any ALU parent suppresses its output :: (40, ())
+
+PHYSICAL SYMPLECTIC COMMUTATION
+PASS rotational parity quotient collapses sixteen words to six rows :: Counter({6: 6})
+PASS 48 parity rows yield a 70,892-row single-valued union :: (48, 70892)
+PASS all 24,576 signed-row graphs are exact four-AND/parity diamonds :: (417792, 811008, [])
+PASS every output equals the signed-tableau symplectic parity :: 
+PASS deleting any parity parent suppresses its output :: (36, ())
+
+MIXED-DEVICE CLOSURE
+PASS ALU/parity rows preserve all 86,640 unified event histories :: []
+PASS Cycle-144 terminal remains at exactly two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+
+SCOPE
+FAIL note contains: literal-bit alu :: 
+FAIL note contains: physical symplectic commutation :: 
+FAIL note contains: commuting multiplication and pivot remain open :: 
+FAIL note contains: does not derive equal outcome weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 13 FAIL 8
+RESULT FAIL

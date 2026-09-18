@@ -1,0 +1,34 @@
+{
+ "task": "R:lepton_phase_modulus_separation_no_go_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "lepton",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/lepton_phase_modulus_separation_no_go_2026_06_06.py",
+ "seed": 68322,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaf70495",
+ "started_utc": "20260918T215202Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f0b1ef2084ac86a8659439d2245c5bcd2a6fdf93cb158370b304f4384a1581ed",
+ "stdout_tail": "d no local algebra, neighbour or spatial coordinate is constructed at any point.\nper_mode: checked - this is the runner's native grain and where the separation result lives. The three C_3 Fourier modes are written out explicitly as sqrt(m_k) = a (1 + 2 sqrt(r) cos(delta + 2 pi k / 3)) for k = 0, 1, 2, and every conclusion is a symmetric function of exactly those three: e1 = 3a, e2 = 3 a^2 (1 - r) with d e2/d delta verified to vanish identically, and e3 = a^3 (1 - 3r + 2 r^{3/2} cos 3delta) whose phase derivative is checked equal to -6 a^3 r^{3/2} sin 3delta, which is what forces stationary phases onto delta = n pi / 3 and leaves 2/9 out.\nper_block: checked and not executed - the C_3 isotype blocks are never constructed and no amplitude is evaluated on a trivial or doublet block. The block-level statement this note leans on, that the register-not-read partition map delivers the weight ratio r but never the within-block phase delta, is recorded in Section C as literal strings whose checks are substring and length tests on those labels; it is bookkeeping of the claim's scope, not a computation on a block.\nlattice_wide: checked and not executed - no lattice, no volume and no limit appear. The runner is exact symbolic algebra in three symbols over a single 3-dimensional generation space; the only domain it ever sweeps is the phase itself, via solveset for sin(3 delta) = 0 on [0, 2 pi), so there is no extensive quantity that a lattice-wide sum could produce.\n\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T215203Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

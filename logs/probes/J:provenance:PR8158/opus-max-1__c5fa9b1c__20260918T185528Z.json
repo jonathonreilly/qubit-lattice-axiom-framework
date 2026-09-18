@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8158",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block24-unreco",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8158/provenance_theorem_numbers.py",
+ "seed": 57728,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c5fa9b1c",
+ "started_utc": "20260918T185528Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "38 items over claim_scope + 5 theorem sections (108 numeric tokens, 0 uncovered): cache-sourced 21, runner-checked (not printed) 0, derived here from the note's formulas 4, definitions 3, excluded 10; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none"
+ },
+ "review": "All 108 numeric tokens of the claim_scope, Q1-Q4 and Corollary Q5 are sourced: 21 by runner-cache lines (the Q4 values, the sector eigenvalues, the phi^2 differences, phi^{k+2}, the sphere factors, the pendant-path polynomials), 4 by derivations re-executed here (the phi^2 entries and sectors, the sphere integral), 3 definitions and 10 exclusions (labels, block references, number words naming objects); no number is unsourced (the non-lattice geometry of Q4(a) is recorded in the falsifier log, issue #8196).",
+ "what": "PR #8158 ([physics-loop] admissibility-induced-law block24 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915; git show origin/physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915:<note>. Create probes/work/pr8158/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8158/<script>.py\"",
+ "stdout_sha256": "895b2ed02e92263ef1ad020e63bb890341403bb6f15e06bf37f01386b6c80291",
+ "stdout_tail": " PASS: B2 Q3(b): phi^2_same - phi^2_orth = (p - r)^2 + (q - r)^2 and phi^2_anti - phi^2_orth = 2 (p - r)(q - r); both vanish iff p = q = r\n[CACHE] k3 | Theorem Q3 | Q3(c) executed range | cache stdout line 15: PASS: B3 Q3(c): a bridging path of k internal bonds contributes phi^{k+2}, with nontrivial eigenvalues (p - q)^{k+2} and (p + q - 2r)^{k+2},\n[CACHE] two-corners | Theorem Q3 | E1 geometry | cache stdout line 23: PASS: E1 Q3(d): the two unrecorded corners of a plaquette contribute the entrywise square of phi^2, a covariant matrix with sector eigenvalu\n[EXCLUDED] labels2 | Theorem Q1,Theorem Q2,Theorem Q4 | reading labels mu^(1), mu^(2), mu^(3); the normalizer Z^{-1}\n[EXCLUDED] wording | claim_scope,Corollary Q5,Theorem Q1,Theorem Q2,Theorem Q3 | wording (number words naming objects)\n[CACHE] three-eig | Theorem Q3 | B1 | cache stdout line 13: PASS: B1 Q3(a): phi has eigenvalue Z1 = p + q + 4r on constants, p - q on the three odd vectors delta_{e_i} - delta_{-e_i}, and p + q - 2r o\n[EXCLUDED] blocks | Corollary Q5 | references to other blocks\n[COVERAGE] 108 numeric tokens in the statement text; uncovered 0\nSUMMARY: 38 items over claim_scope + 5 theorem sections (108 numeric tokens, 0 uncovered): cache-sourced 21, runner-checked (not printed) 0, derived here from the note's formulas 4, definitions 3, excluded 10; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T185535Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}
